@@ -2,15 +2,13 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Basic extends StObject {
   
-  var basic: js.UndefOr[Username] = js.native
+  var basic: js.UndefOr[Username] = js.undefined
   
-  var bearer: js.UndefOr[String] = js.native
+  var bearer: js.UndefOr[String] = js.undefined
 }
 object Basic {
   

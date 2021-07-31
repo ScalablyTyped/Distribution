@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleRenderer
-  extends Renderer
+  extends StObject
+     with Renderer
      with VisualVariablesMixin
      with RendererWithVisualVariables
      with typings.arcgisJsApi.esri.renderers.RendererWithVisualVariables {

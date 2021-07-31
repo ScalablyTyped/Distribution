@@ -2,7 +2,6 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,7 @@ trait StoreStatic extends StObject {
   
   var enable: Boolean = js.native
   
-  def forEach[T](cb: js.Function2[/* key */ String, /* value */ T, _]): js.Any = js.native
+  def forEach[T](cb: js.Function2[/* key */ String, /* value */ T, js.Any]): js.Any = js.native
   
   def get[T](key: String): T = js.native
   

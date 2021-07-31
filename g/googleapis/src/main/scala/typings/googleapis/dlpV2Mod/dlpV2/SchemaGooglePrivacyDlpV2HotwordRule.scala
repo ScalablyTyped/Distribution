@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The rule that adjusts the likelihood of findings within a certain proximity
   * of hotwords.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2HotwordRule extends StObject {
   
   /**
     * Regular expression pattern defining what qualifies as a hotword.
     */
-  var hotwordRegex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.native
+  var hotwordRegex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.undefined
   
   /**
     * Likelihood adjustment to apply to all matching findings.
     */
-  var likelihoodAdjustment: js.UndefOr[SchemaGooglePrivacyDlpV2LikelihoodAdjustment] = js.native
+  var likelihoodAdjustment: js.UndefOr[SchemaGooglePrivacyDlpV2LikelihoodAdjustment] = js.undefined
   
   /**
     * Proximity of the finding within which the entire hotword must reside. The
@@ -32,7 +30,7 @@ trait SchemaGooglePrivacyDlpV2HotwordRule extends StObject {
     * of a company office using the hotword regex &quot;\(xxx\)&quot;, where
     * &quot;xxx&quot; is the area code in question.
     */
-  var proximity: js.UndefOr[SchemaGooglePrivacyDlpV2Proximity] = js.native
+  var proximity: js.UndefOr[SchemaGooglePrivacyDlpV2Proximity] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2HotwordRule {
   

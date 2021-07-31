@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbeddedChart extends StObject {
   
   /** The ID of the chart. */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /** The position of the chart. */
-  var position: js.UndefOr[EmbeddedObjectPosition] = js.native
+  var position: js.UndefOr[EmbeddedObjectPosition] = js.undefined
   
   /** The specification of the chart. */
-  var spec: js.UndefOr[ChartSpec] = js.native
+  var spec: js.UndefOr[ChartSpec] = js.undefined
 }
 object EmbeddedChart {
   

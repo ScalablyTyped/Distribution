@@ -2,28 +2,26 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsTransactionEntityMetadataArgsMod {
   
-  @js.native
   trait TransactionEntityMetadataArgs extends StObject {
     
     /**
       * Index of the parameter on which decorator is used.
       */
-    val index: Double = js.native
+    val index: Double
     
     /**
       * Method on which decorator is used.
       */
-    val methodName: String = js.native
+    val methodName: String
     
     /**
       * Target class on which decorator is used.
       */
-    val target: js.Function = js.native
+    val target: js.Function
   }
   object TransactionEntityMetadataArgs {
     

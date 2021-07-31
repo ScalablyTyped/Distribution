@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data type and Profile for this element
   */
-@js.native
-trait ElementDefinitionType extends Element {
+trait ElementDefinitionType
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'aggregation'.
     */
-  var _aggregation: js.UndefOr[js.Array[Element]] = js.native
+  var _aggregation: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'profile'.
     */
-  var _profile: js.UndefOr[Element] = js.native
+  var _profile: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'targetProfile'.
     */
-  var _targetProfile: js.UndefOr[Element] = js.native
+  var _targetProfile: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'versioning'.
     */
-  var _versioning: js.UndefOr[Element] = js.native
+  var _versioning: js.UndefOr[Element] = js.undefined
   
   /**
     * contained | referenced | bundled - how aggregated
     */
-  var aggregation: js.UndefOr[js.Array[code]] = js.native
+  var aggregation: js.UndefOr[js.Array[code]] = js.undefined
   
   /**
     * Data type or Resource (reference to definition)
     */
-  var code: uri = js.native
+  var code: uri
   
   /**
     * Profile (StructureDefinition) to apply (or IG)
     */
-  var profile: js.UndefOr[uri] = js.native
+  var profile: js.UndefOr[uri] = js.undefined
   
   /**
     * Profile (StructureDefinition) to apply to reference target (or IG)
     */
-  var targetProfile: js.UndefOr[uri] = js.native
+  var targetProfile: js.UndefOr[uri] = js.undefined
   
   /**
     * either | independent | specific
     */
-  var versioning: js.UndefOr[code] = js.native
+  var versioning: js.UndefOr[code] = js.undefined
 }
 object ElementDefinitionType {
   

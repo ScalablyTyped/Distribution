@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites")
@@ -32,7 +31,7 @@ class ResourceSites protected () extends StObject {
     */
   def getConfig(): GaxiosPromise[SchemaSiteConfig] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
-  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteConfig] = js.native
+  def getConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteConfig] = js.native
   def getConfig(params: ParamsResourceSitesGetconfig): GaxiosPromise[SchemaSiteConfig] = js.native
   def getConfig(params: ParamsResourceSitesGetconfig, callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
   def getConfig(
@@ -65,7 +64,7 @@ class ResourceSites protected () extends StObject {
     */
   def updateConfig(): GaxiosPromise[SchemaSiteConfig] = js.native
   def updateConfig(callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
-  def updateConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteConfig] = js.native
+  def updateConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteConfig] = js.native
   def updateConfig(params: ParamsResourceSitesUpdateconfig): GaxiosPromise[SchemaSiteConfig] = js.native
   def updateConfig(params: ParamsResourceSitesUpdateconfig, callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
   def updateConfig(

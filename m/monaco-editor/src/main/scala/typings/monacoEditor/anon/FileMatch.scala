@@ -2,26 +2,24 @@ package typings.monacoEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileMatch extends StObject {
   
   /**
     * A list of file names that are associated to the schema. The '*' wildcard can be used. For example '*.schema.json', 'package.json'
     */
-  val fileMatch: js.UndefOr[js.Array[String]] = js.native
+  val fileMatch: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The schema for the given URI.
     */
-  val schema: js.UndefOr[js.Any] = js.native
+  val schema: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URI of the schema, which is also the identifier of the schema.
     */
-  val uri: String = js.native
+  val uri: String
 }
 object FileMatch {
   

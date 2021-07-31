@@ -8,15 +8,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionEnd
 import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionStart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `20`[EventName /* <: Extract[
 /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
 String] */] extends StObject {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['data'] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['data'] */ js.Any
 }
 object `20` {
   
@@ -32,10 +30,10 @@ object `20` {
   }
   
   @scala.inline
-  implicit class `20MutableBuilder`[Self <: `20`[_], EventName /* <: Extract[
+  implicit class `20MutableBuilder`[Self <: `20`[?], EventName /* <: Extract[
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
-  ] */] (val x: Self with `20`[EventName]) extends AnyVal {
+  ] */] (val x: Self & `20`[EventName]) extends AnyVal {
     
     @scala.inline
     def setData(

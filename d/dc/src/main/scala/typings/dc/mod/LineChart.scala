@@ -2,23 +2,23 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LineChart
-  extends CoordinateGridMixin[LineChart]
-     with StackMixin[LineChart] {
+  extends StObject
+     with StackMixin[LineChart]
+     with CoordinateGridMixin[LineChart] {
   
   def dashStyle(): js.Array[Double] = js.native
   def dashStyle(t: js.Array[Double]): LineChart = js.native
   @JSName("dashStyle")
   var dashStyle_Original: IGetSet[js.Array[Double], LineChart] = js.native
   
-  def defined(): Accessor[_, Boolean] = js.native
-  def defined(t: Accessor[_, Boolean]): LineChart = js.native
+  def defined(): Accessor[js.Any, Boolean] = js.native
+  def defined(t: Accessor[js.Any, Boolean]): LineChart = js.native
   @JSName("defined")
-  var defined_Original: IGetSet[Accessor[_, Boolean], LineChart] = js.native
+  var defined_Original: IGetSet[Accessor[js.Any, Boolean], LineChart] = js.native
   
   def dotRadius(): Double = js.native
   def dotRadius(t: Double): LineChart = js.native

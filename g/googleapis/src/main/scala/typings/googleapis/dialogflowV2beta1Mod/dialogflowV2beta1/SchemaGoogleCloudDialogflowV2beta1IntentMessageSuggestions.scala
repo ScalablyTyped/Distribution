@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The collection of suggestions.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions extends StObject {
   
   /**
     * Required. The list of suggested replies.
     */
-  var suggestions: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions {
   

@@ -12,7 +12,7 @@ HTML entity utilities for WordPress.
 | Keywords           | wordpress, gutenberg, html, entities |
 | # releases         | 13 |
 | # dependents       | 8 |
-| # downloads        | 452871 |
+| # downloads        | 678356 |
 | # stars            | 0 |
 
 ## Links

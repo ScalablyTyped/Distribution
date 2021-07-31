@@ -7,23 +7,21 @@ import typings.lokijs.lokijsStrings.`shallow-recurse-objects`
 import typings.lokijs.lokijsStrings.shallow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataOptions extends StObject {
   
-  var forceCloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` | Null = js.native
+  var forceCloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` | Null
   
-  var forceClones: Boolean = js.native
+  var forceClones: Boolean
   
-  var removeMeta: Boolean = js.native
+  var removeMeta: Boolean
 }
 object GetDataOptions {
   
   @scala.inline
   def apply(forceClones: Boolean, removeMeta: Boolean): GetDataOptions = {
-    val __obj = js.Dynamic.literal(forceClones = forceClones.asInstanceOf[js.Any], removeMeta = removeMeta.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(forceClones = forceClones.asInstanceOf[js.Any], removeMeta = removeMeta.asInstanceOf[js.Any], forceCloneMethod = null)
     __obj.asInstanceOf[GetDataOptions]
   }
   

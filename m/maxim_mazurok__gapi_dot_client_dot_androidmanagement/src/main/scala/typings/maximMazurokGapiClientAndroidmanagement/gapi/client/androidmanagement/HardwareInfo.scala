@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HardwareInfo extends StObject {
   
   /** Battery shutdown temperature thresholds in Celsius for each battery on the device. */
-  var batteryShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var batteryShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Battery throttling temperature thresholds in Celsius for each battery on the device. */
-  var batteryThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var batteryThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Brand of the device. For example, Google. */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /** CPU shutdown temperature thresholds in Celsius for each CPU on the device. */
-  var cpuShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var cpuShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** CPU throttling temperature thresholds in Celsius for each CPU on the device. */
-  var cpuThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var cpuThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Baseband version. For example, MDM9625_104662.22.05.34p. */
-  var deviceBasebandVersion: js.UndefOr[String] = js.native
+  var deviceBasebandVersion: js.UndefOr[String] = js.undefined
   
   /** GPU shutdown temperature thresholds in Celsius for each GPU on the device. */
-  var gpuShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var gpuShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** GPU throttling temperature thresholds in Celsius for each GPU on the device. */
-  var gpuThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var gpuThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Name of the hardware. For example, Angler. */
-  var hardware: js.UndefOr[String] = js.native
+  var hardware: js.UndefOr[String] = js.undefined
   
   /** Manufacturer. For example, Motorola. */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /** The model of the device. For example, Asus Nexus 7. */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /** The device serial number. */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
   
   /** Device skin shutdown temperature thresholds in Celsius. */
-  var skinShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var skinShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Device skin throttling temperature thresholds in Celsius. */
-  var skinThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.native
+  var skinThrottlingTemperatures: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object HardwareInfo {
   

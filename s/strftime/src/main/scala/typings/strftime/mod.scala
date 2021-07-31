@@ -3,7 +3,6 @@ package typings.strftime
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,50 +12,48 @@ object mod {
     * @param {string} format A format.
     * @return {string} Returns a string formatted.
     */
-  @JSImport("strftime", JSImport.Namespace)
-  @js.native
-  def apply(format: String): String = js.native
+  @scala.inline
+  def apply(format: String): String = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Format a local time/date according to locale settings
     * @param {string} format A format.
     * @param {Date}   date   A date.
     * @return {string} Returns a string formatted according format using the given date or the current local time.
     */
+  @scala.inline
+  def apply(format: String, date: Date): String = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("strftime", JSImport.Namespace)
   @js.native
-  def apply(format: String, date: Date): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("strftime", "localize")
-  @js.native
-  def localize(locale: Locale): strftimeFunction = js.native
+  @scala.inline
+  def localize(locale: Locale): strftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("localize")(locale.asInstanceOf[js.Any]).asInstanceOf[strftimeFunction]
   
-  @JSImport("strftime", "timezone")
-  @js.native
-  def timezone(offset: String): strftimeFunction = js.native
-  @JSImport("strftime", "timezone")
-  @js.native
-  def timezone(offset: Double): strftimeFunction = js.native
+  @scala.inline
+  def timezone(offset: String): strftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("timezone")(offset.asInstanceOf[js.Any]).asInstanceOf[strftimeFunction]
+  @scala.inline
+  def timezone(offset: Double): strftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("timezone")(offset.asInstanceOf[js.Any]).asInstanceOf[strftimeFunction]
   
-  @js.native
   trait Locale extends StObject {
     
-    var AM: js.UndefOr[String] = js.native
+    var AM: js.UndefOr[String] = js.undefined
     
-    var PM: js.UndefOr[String] = js.native
+    var PM: js.UndefOr[String] = js.undefined
     
-    var am: js.UndefOr[String] = js.native
+    var am: js.UndefOr[String] = js.undefined
     
-    var days: js.UndefOr[js.Array[String]] = js.native
+    var days: js.UndefOr[js.Array[String]] = js.undefined
     
-    var formats: LocaleFormats = js.native
+    var formats: LocaleFormats
     
-    var months: js.UndefOr[js.Array[String]] = js.native
+    var months: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pm: js.UndefOr[String] = js.native
+    var pm: js.UndefOr[String] = js.undefined
     
-    var shortDays: js.UndefOr[js.Array[String]] = js.native
+    var shortDays: js.UndefOr[js.Array[String]] = js.undefined
     
-    var shortMonths: js.UndefOr[js.Array[String]] = js.native
+    var shortMonths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Locale {
     
@@ -122,26 +119,25 @@ object mod {
     }
   }
   
-  @js.native
   trait LocaleFormats extends StObject {
     
-    var D: js.UndefOr[String] = js.native
+    var D: js.UndefOr[String] = js.undefined
     
-    var F: js.UndefOr[String] = js.native
+    var F: js.UndefOr[String] = js.undefined
     
-    var R: js.UndefOr[String] = js.native
+    var R: js.UndefOr[String] = js.undefined
     
-    var T: js.UndefOr[String] = js.native
+    var T: js.UndefOr[String] = js.undefined
     
-    var X: js.UndefOr[String] = js.native
+    var X: js.UndefOr[String] = js.undefined
     
-    var c: js.UndefOr[String] = js.native
+    var c: js.UndefOr[String] = js.undefined
     
-    var r: js.UndefOr[String] = js.native
+    var r: js.UndefOr[String] = js.undefined
     
-    var v: js.UndefOr[String] = js.native
+    var v: js.UndefOr[String] = js.undefined
     
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
   }
   object LocaleFormats {
     

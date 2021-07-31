@@ -2,17 +2,15 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RNFetchBlobStream extends StObject {
   
-  def onData(): Unit = js.native
+  def onData(): Unit
   
-  def onEnd(): Unit = js.native
+  def onEnd(): Unit
   
-  def onError(): Unit = js.native
+  def onError(): Unit
 }
 object RNFetchBlobStream {
   

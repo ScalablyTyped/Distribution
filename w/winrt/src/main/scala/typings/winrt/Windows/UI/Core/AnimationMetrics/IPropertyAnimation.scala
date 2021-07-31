@@ -3,21 +3,19 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyAnimation extends StObject {
   
-  var control1: Point = js.native
+  var control1: Point
   
-  var control2: Point = js.native
+  var control2: Point
   
-  var delay: Double = js.native
+  var delay: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var `type`: PropertyAnimationType = js.native
+  var `type`: PropertyAnimationType
 }
 object IPropertyAnimation {
   

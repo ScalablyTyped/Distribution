@@ -5,18 +5,16 @@ import typings.sentryTypes.eventprocessorMod.EventProcessor
 import typings.sentryTypes.hubMod.Hub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationMod {
   
-  @js.native
   trait Integration extends StObject {
     
     /**
       * Returns {@link IntegrationClass.id}
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Sets the integration up only once.
@@ -25,7 +23,7 @@ object integrationMod {
     def setupOnce(
       addGlobalEventProcessor: js.Function1[/* callback */ EventProcessor, Unit],
       getCurrentHub: js.Function0[Hub]
-    ): Unit = js.native
+    ): Unit
   }
   object Integration {
     
@@ -51,7 +49,8 @@ object integrationMod {
   
   @js.native
   trait IntegrationClass[T]
-    extends Instantiable1[/* args (repeated) */ js.Any, T] {
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, T] {
     
     /**
       * Property that holds the integration name

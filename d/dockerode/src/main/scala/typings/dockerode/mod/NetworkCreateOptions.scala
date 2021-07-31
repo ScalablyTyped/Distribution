@@ -3,31 +3,29 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkCreateOptions extends StObject {
   
-  var Attachable: js.UndefOr[Boolean] = js.native
+  var Attachable: js.UndefOr[Boolean] = js.undefined
   
-  var CheckDuplicate: js.UndefOr[Boolean] = js.native
+  var CheckDuplicate: js.UndefOr[Boolean] = js.undefined
   
-  var Driver: js.UndefOr[String] = js.native
+  var Driver: js.UndefOr[String] = js.undefined
   
-  var EnableIPv6: js.UndefOr[Boolean] = js.native
+  var EnableIPv6: js.UndefOr[Boolean] = js.undefined
   
-  var IPAM: js.UndefOr[typings.dockerode.mod.IPAM] = js.native
+  var IPAM: js.UndefOr[typings.dockerode.mod.IPAM] = js.undefined
   
-  var Ingress: js.UndefOr[Boolean] = js.native
+  var Ingress: js.UndefOr[Boolean] = js.undefined
   
-  var Internal: js.UndefOr[Boolean] = js.native
+  var Internal: js.UndefOr[Boolean] = js.undefined
   
-  var Labels: js.UndefOr[StringDictionary[String]] = js.native
+  var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Name: String = js.native
+  var Name: String
   
-  var Options: js.UndefOr[StringDictionary[String]] = js.native
+  var Options: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object NetworkCreateOptions {
   

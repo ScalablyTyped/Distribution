@@ -2,19 +2,17 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Redeliveries extends StObject {
   
-  var publications: Confirm = js.native
+  var publications: Confirm
   
-  var redeliveries: Counters = js.native
+  var redeliveries: Counters
   
-  var subscriptions: DeferCloseChannel = js.native
+  var subscriptions: DeferCloseChannel
   
-  var vhosts: Connection = js.native
+  var vhosts: Connection
 }
 object Redeliveries {
   

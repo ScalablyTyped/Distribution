@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupCount extends StObject {
   
   /**
     * The total number of findings in the group of query results.
     */
-  var count: js.UndefOr[long] = js.native
+  var count: js.UndefOr[long] = js.undefined
   
   /**
     * The name of the property that defines the group in the query results, as specified by the groupBy property in the query request.
     */
-  var groupKey: js.UndefOr[string] = js.native
+  var groupKey: js.UndefOr[string] = js.undefined
 }
 object GroupCount {
   

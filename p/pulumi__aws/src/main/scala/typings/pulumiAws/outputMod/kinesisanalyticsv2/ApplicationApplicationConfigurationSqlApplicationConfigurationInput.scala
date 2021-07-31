@@ -2,20 +2,18 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInput extends StObject {
   
-  var inAppStreamNames: js.Array[String] = js.native
+  var inAppStreamNames: js.Array[String]
   
-  var inputId: String = js.native
+  var inputId: String
   
   /**
     * Describes the number of in-application streams to create.
     */
-  var inputParallelism: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism = js.native
+  var inputParallelism: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism
   
   /**
     * The input processing configuration for the input.
@@ -23,35 +21,35 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInput extend
     */
   var inputProcessingConfiguration: js.UndefOr[
     ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.
     */
-  var inputSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema = js.native
+  var inputSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema
   
   var inputStartingPositionConfigurations: js.Array[
     ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration
-  ] = js.native
+  ]
   
   /**
     * If the streaming source is a [Kinesis Data Firehose delivery stream](https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html), identifies the delivery stream's ARN.
     */
   var kinesisFirehoseInput: js.UndefOr[
     ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If the streaming source is a [Kinesis data stream](https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html), identifies the stream's Amazon Resource Name (ARN).
     */
   var kinesisStreamsInput: js.UndefOr[
     ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name prefix to use when creating an in-application stream.
     */
-  var namePrefix: String = js.native
+  var namePrefix: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInput {
   

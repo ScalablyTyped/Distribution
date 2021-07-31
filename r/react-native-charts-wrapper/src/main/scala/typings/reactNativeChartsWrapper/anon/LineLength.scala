@@ -2,17 +2,15 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineLength extends StObject {
   
-  var lineLength: js.UndefOr[Double] = js.native
+  var lineLength: js.UndefOr[Double] = js.undefined
   
-  var phase: js.UndefOr[Double] = js.native
+  var phase: js.UndefOr[Double] = js.undefined
   
-  var spaceLength: js.UndefOr[Double] = js.native
+  var spaceLength: js.UndefOr[Double] = js.undefined
 }
 object LineLength {
   

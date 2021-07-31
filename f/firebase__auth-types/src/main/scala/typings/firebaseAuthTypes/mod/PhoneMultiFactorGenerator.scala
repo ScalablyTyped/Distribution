@@ -2,7 +2,6 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "PhoneMultiFactorGenerator")
@@ -21,7 +20,6 @@ object PhoneMultiFactorGenerator {
   @scala.inline
   def FACTOR_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
   
-  @JSImport("@firebase/auth-types", "PhoneMultiFactorGenerator.assertion")
-  @js.native
-  def assertion(phoneAuthCredential: PhoneAuthCredential): PhoneMultiFactorAssertion = js.native
+  @scala.inline
+  def assertion(phoneAuthCredential: PhoneAuthCredential): PhoneMultiFactorAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("assertion")(phoneAuthCredential.asInstanceOf[js.Any]).asInstanceOf[PhoneMultiFactorAssertion]
 }

@@ -10,9 +10,9 @@ Offical NodeJS SDK for ImageKit.io integration
 | ------------------ | :-------------: |
 | Full name          | imagekit |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 4 |
-| # downloads        | 45840 |
+| # releases         | 14 |
+| # dependents       | 5 |
+| # downloads        | 84204 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -30,7 +29,10 @@ class Script () extends Property[ScriptDefinition] {
 /* static members */
 object Script {
   
-  @JSImport("postman-collection", "Script.isScript")
+  @JSImport("postman-collection", "Script")
   @js.native
-  def isScript(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isScript(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScript")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

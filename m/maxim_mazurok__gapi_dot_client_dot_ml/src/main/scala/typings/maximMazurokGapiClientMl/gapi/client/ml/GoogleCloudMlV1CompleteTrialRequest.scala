@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1CompleteTrialRequest extends StObject {
   
   /** Optional. If provided, it will be used as the completed trial's final_measurement; Otherwise, the service will auto-select a previously reported measurement as the final-measurement */
-  var finalMeasurement: js.UndefOr[GoogleCloudMlV1Measurement] = js.native
+  var finalMeasurement: js.UndefOr[GoogleCloudMlV1Measurement] = js.undefined
   
   /** Optional. A human readable reason why the trial was infeasible. This should only be provided if `trial_infeasible` is true. */
-  var infeasibleReason: js.UndefOr[String] = js.native
+  var infeasibleReason: js.UndefOr[String] = js.undefined
   
   /** Optional. True if the trial cannot be run with the given Parameter, and final_measurement will be ignored. */
-  var trialInfeasible: js.UndefOr[Boolean] = js.native
+  var trialInfeasible: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudMlV1CompleteTrialRequest {
   

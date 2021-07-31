@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSourceInit extends StObject {
   
-  var withCredentials: js.UndefOr[scala.Boolean] = js.native
+  var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 object EventSourceInit {
   

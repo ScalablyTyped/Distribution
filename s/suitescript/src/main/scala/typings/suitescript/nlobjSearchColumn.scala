@@ -2,7 +2,6 @@ package typings.suitescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @since 2007.0
   */
-@js.native
 trait nlobjSearchColumn extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait nlobjSearchColumn extends StObject {
     * @since 2009.2
     * @return
     */
-  def getFormula(): String = js.native
+  def getFormula(): String
   
   /**
     * return the join id for this search column.
@@ -41,7 +39,7 @@ trait nlobjSearchColumn extends StObject {
     * @since 2008.1
     * @return
     */
-  def getJoin(): String = js.native
+  def getJoin(): String
   
   /**
     * return the label of this search column.
@@ -53,7 +51,7 @@ trait nlobjSearchColumn extends StObject {
     * @since 2009.1
     * @return
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
   
   /**
     * return the name of this search column.
@@ -64,7 +62,7 @@ trait nlobjSearchColumn extends StObject {
     * @since 2008.1
     * @return
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * return the summary type (avg,group,sum,count) of this search column.
@@ -75,9 +73,9 @@ trait nlobjSearchColumn extends StObject {
     * @since 2008.1
     * @return
     */
-  def getSummary(): String = js.native
+  def getSummary(): String
   
-  def setLabel(label: String): nlobjSearchColumn = js.native
+  def setLabel(label: String): nlobjSearchColumn
   
   /**
     * return nlobjSearchColumn sorted in either ascending or descending order.
@@ -91,7 +89,7 @@ trait nlobjSearchColumn extends StObject {
     * @param order
     * @return
     */
-  def setSort(order: js.Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit] = js.native
+  def setSort(order: js.Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
 }
 object nlobjSearchColumn {
   

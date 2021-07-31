@@ -3,15 +3,13 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileUsage extends StObject {
   
-  var lastSyncTime: Date = js.native
+  var lastSyncTime: Date
   
-  var usageInMegabytes: Double = js.native
+  var usageInMegabytes: Double
 }
 object ProfileUsage {
   

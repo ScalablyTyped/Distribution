@@ -2,21 +2,19 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSummary extends StObject {
   
   /**
     *  Name of the project. 
     */
-  var name: js.UndefOr[ProjectName] = js.native
+  var name: js.UndefOr[ProjectName] = js.undefined
   
   /**
     *  Unique project identifier. 
     */
-  var projectId: js.UndefOr[ProjectId] = js.native
+  var projectId: js.UndefOr[ProjectId] = js.undefined
 }
 object ProjectSummary {
   

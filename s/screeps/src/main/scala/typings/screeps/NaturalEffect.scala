@@ -2,24 +2,24 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Natural effect applied to room object
   */
-@js.native
-trait NaturalEffect extends RoomObjectEffect {
+trait NaturalEffect
+  extends StObject
+     with RoomObjectEffect {
   
   /**
     * Effect ID of the applied effect. `EFFECT_*` constant.
     */
-  var effect: EffectConstant = js.native
+  var effect: EffectConstant
   
   /**
     * How many ticks will the effect last.
     */
-  var ticksRemaining: Double = js.native
+  var ticksRemaining: Double
 }
 object NaturalEffect {
   

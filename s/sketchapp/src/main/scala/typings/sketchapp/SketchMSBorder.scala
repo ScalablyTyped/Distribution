@@ -3,36 +3,33 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.border
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSBorder extends StObject {
   
-  var _class: border = js.native
+  var _class: border
   
-  var color: SketchMSColor = js.native
+  var color: SketchMSColor
   
-  var fillType: SketchMSFillTypeEnum = js.native
+  var fillType: SketchMSFillTypeEnum
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var position: SketchMSBorderPositionEnum = js.native
+  var position: SketchMSBorderPositionEnum
   
-  var thickness: Double = js.native
+  var thickness: Double
 }
 object SketchMSBorder {
   
   @scala.inline
   def apply(
-    _class: border,
     color: SketchMSColor,
     fillType: SketchMSFillTypeEnum,
     isEnabled: Boolean,
     position: SketchMSBorderPositionEnum,
     thickness: Double
   ): SketchMSBorder = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "border", color = color.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSBorder]
   }
   

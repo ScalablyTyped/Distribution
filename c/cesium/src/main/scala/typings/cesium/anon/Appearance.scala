@@ -5,37 +5,35 @@ import typings.cesium.mod.Matrix4
 import typings.cesium.mod.ShadowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appearance extends StObject {
   
-  var allowPicking: js.UndefOr[Boolean] = js.native
+  var allowPicking: js.UndefOr[Boolean] = js.undefined
   
-  var appearance: js.UndefOr[typings.cesium.mod.Appearance] = js.native
+  var appearance: js.UndefOr[typings.cesium.mod.Appearance] = js.undefined
   
-  var asynchronous: js.UndefOr[Boolean] = js.native
+  var asynchronous: js.UndefOr[Boolean] = js.undefined
   
-  var compressVertices: js.UndefOr[Boolean] = js.native
+  var compressVertices: js.UndefOr[Boolean] = js.undefined
   
-  var cull: js.UndefOr[Boolean] = js.native
+  var cull: js.UndefOr[Boolean] = js.undefined
   
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.native
+  var geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.undefined
   
-  var interleave: js.UndefOr[Boolean] = js.native
+  var interleave: js.UndefOr[Boolean] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   
-  var releaseGeometryInstances: js.UndefOr[Boolean] = js.native
+  var releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined
   
-  var shadows: js.UndefOr[ShadowMode] = js.native
+  var shadows: js.UndefOr[ShadowMode] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var vertexCacheOptimize: js.UndefOr[Boolean] = js.native
+  var vertexCacheOptimize: js.UndefOr[Boolean] = js.undefined
 }
 object Appearance {
   

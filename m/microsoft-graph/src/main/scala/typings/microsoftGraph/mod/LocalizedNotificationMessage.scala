@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalizedNotificationMessage extends Entity {
+trait LocalizedNotificationMessage
+  extends StObject
+     with Entity {
   
   /**
     * Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset,
     * set this property to true on another Localized Notification Message.
     */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   // DateTime the object was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // The Locale for which this message is destined.
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   // The Message Template content.
-  var messageTemplate: js.UndefOr[String] = js.native
+  var messageTemplate: js.UndefOr[String] = js.undefined
   
   // The Message Template Subject.
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
 }
 object LocalizedNotificationMessage {
   

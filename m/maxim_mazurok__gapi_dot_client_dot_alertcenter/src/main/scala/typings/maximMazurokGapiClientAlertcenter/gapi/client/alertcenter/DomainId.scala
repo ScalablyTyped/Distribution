@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainId extends StObject {
   
   /** The primary domain for the customer. */
-  var customerPrimaryDomain: js.UndefOr[String] = js.native
+  var customerPrimaryDomain: js.UndefOr[String] = js.undefined
 }
 object DomainId {
   

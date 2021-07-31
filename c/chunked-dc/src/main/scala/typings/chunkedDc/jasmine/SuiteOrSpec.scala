@@ -2,19 +2,17 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuiteOrSpec extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var env: Env = js.native
+  var env: Env
   
-  var id: Double = js.native
+  var id: Double
   
-  var queue: Queue = js.native
+  var queue: Queue
 }
 object SuiteOrSpec {
   

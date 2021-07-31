@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,9 @@ trait ContentControlListEntries extends StObject {
     * @param number [Index=0]
     */
   def Add(Text: String): ContentControlListEntry = js.native
-  def Add(Text: String, Value: js.UndefOr[scala.Nothing], Index: Double): ContentControlListEntry = js.native
   def Add(Text: String, Value: String): ContentControlListEntry = js.native
   def Add(Text: String, Value: String, Index: Double): ContentControlListEntry = js.native
+  def Add(Text: String, Value: Unit, Index: Double): ContentControlListEntry = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

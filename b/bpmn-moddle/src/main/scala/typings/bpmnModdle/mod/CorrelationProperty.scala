@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CorrelationProperty extends BaseElement {
+trait CorrelationProperty
+  extends StObject
+     with BaseElement {
   
-  var correlationPropertyRetrievalExpression: CorrelationPropertyRetrievalExpression = js.native
+  var correlationPropertyRetrievalExpression: CorrelationPropertyRetrievalExpression
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: ItemDefinition = js.native
+  var `type`: ItemDefinition
 }
 object CorrelationProperty {
   

@@ -2,17 +2,15 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
-  def getPassword(service: String, user: User): String | Null = js.native
+  def getPassword(service: String, user: User): String | Null
   
-  def removePassword(service: String, user: User): Null = js.native
+  def removePassword(service: String, user: User): Null
   
-  def setPassword(service: String, user: User, password: String): Null = js.native
+  def setPassword(service: String, user: User, password: String): Null
 }
 object Credentials {
   

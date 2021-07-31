@@ -4,34 +4,32 @@ import typings.react.mod.ReactElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseRule extends StObject {
   
-  var enum: js.UndefOr[js.Array[StoreValue]] = js.native
+  var `enum`: js.UndefOr[js.Array[StoreValue]] = js.undefined
   
-  var len: js.UndefOr[Double] = js.native
+  var len: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[String | ReactElement] = js.native
+  var message: js.UndefOr[String | ReactElement] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var pattern: js.UndefOr[RegExp] = js.native
+  var pattern: js.UndefOr[RegExp] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var transform: js.UndefOr[js.Function1[/* value */ StoreValue, StoreValue]] = js.native
+  var transform: js.UndefOr[js.Function1[/* value */ StoreValue, StoreValue]] = js.undefined
   
-  var `type`: js.UndefOr[RuleType] = js.native
+  var `type`: js.UndefOr[RuleType] = js.undefined
   
   /** Customize rule level `validateTrigger`. Must be subset of Field `validateTrigger` */
-  var validateTrigger: js.UndefOr[String | js.Array[String]] = js.native
+  var validateTrigger: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var whitespace: js.UndefOr[Boolean] = js.native
+  var whitespace: js.UndefOr[Boolean] = js.undefined
 }
 object BaseRule {
   

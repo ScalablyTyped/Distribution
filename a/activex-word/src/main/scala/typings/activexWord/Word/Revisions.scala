@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Revisions extends StObject {
   
-  def AcceptAll(): Unit = js.native
+  def AcceptAll(): Unit
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): Revision = js.native
+  def Item(Index: Double): Revision
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def RejectAll(): Unit = js.native
+  def RejectAll(): Unit
   
   @JSName("Word.Revisions_typekey")
-  var WordDotRevisions_typekey: Revisions = js.native
+  var WordDotRevisions_typekey: Revisions
 }
 object Revisions {
   

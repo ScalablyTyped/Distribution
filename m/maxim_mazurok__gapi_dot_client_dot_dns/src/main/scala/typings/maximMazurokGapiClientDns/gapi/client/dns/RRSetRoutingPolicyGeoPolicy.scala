@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RRSetRoutingPolicyGeoPolicy extends StObject {
   
   /**
     * If the health check for the primary target for a geo location returns an unhealthy status, the failover target is returned instead. This failover configuration is not mandatory. If
     * a failover is not provided, the primary target won't be healthchecked - we'll return the primarily configured rrdata irrespective of whether it is healthy or not.
     */
-  var failovers: js.UndefOr[js.Array[RRSetRoutingPolicyGeoPolicyGeoPolicyItem]] = js.native
+  var failovers: js.UndefOr[js.Array[RRSetRoutingPolicyGeoPolicyGeoPolicyItem]] = js.undefined
   
   /** The primary geo routing configuration. If there are multiple items with the same location, an error is returned instead. */
-  var items: js.UndefOr[js.Array[RRSetRoutingPolicyGeoPolicyGeoPolicyItem]] = js.native
+  var items: js.UndefOr[js.Array[RRSetRoutingPolicyGeoPolicyGeoPolicyItem]] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object RRSetRoutingPolicyGeoPolicy {
   

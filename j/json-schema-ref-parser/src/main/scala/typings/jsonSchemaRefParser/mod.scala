@@ -3,13 +3,14 @@ package typings.jsonSchemaRefParser
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonSchema.mod.JSONSchema4
 import typings.jsonSchema.mod.JSONSchema4Type
-import typings.jsonSchemaRefParser.anon.Dereference
+import typings.jsonSchemaRefParser.anon.Circular
+import typings.jsonSchemaRefParser.anon.External
+import typings.jsonSchemaRefParser.anon.Json
 import typings.node.Buffer
 import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +22,9 @@ object mod {
     */
   @JSImport("json-schema-ref-parser", JSImport.Namespace)
   @js.native
-  class ^ () extends RefParser
+  class ^ ()
+    extends StObject
+       with RefParser
   
   @JSImport("json-schema-ref-parser", "$Refs")
   @js.native
@@ -79,29 +82,29 @@ object mod {
     def values(types: String*): StringDictionary[JSONSchema4] = js.native
   }
   
-  @js.native
   trait FileInfo extends StObject {
     
     /**
       * The raw file contents, in whatever form they were returned by the resolver that read the file.
       */
-    var data: String | Buffer = js.native
+    var data: String | Buffer
     
     /**
       * The lowercase file extension, such as ".json", ".yaml", ".txt", etc.
       */
-    var extension: String = js.native
+    var `extension`: String
     
     /**
       * The full URL of the file. This could be any type of URL, including "http://", "https://", "file://", "ftp://", "mongodb://", or even a local filesystem path (when running in Node.js).
       */
-    var url: String = js.native
+    var url: String
   }
   object FileInfo {
     
     @scala.inline
-    def apply(data: String | Buffer, extension: String, url: String): FileInfo = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(data: String | Buffer, `extension`: String, url: String): FileInfo = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileInfo]
     }
     
@@ -120,7 +123,9 @@ object mod {
   }
   
   @js.native
-  trait HTTPResolverOptions extends ResolverOptions {
+  trait HTTPResolverOptions
+    extends StObject
+       with ResolverOptions {
     
     /**
       * You can specify any HTTP headers that should be sent when downloading files. For example, some servers may require you to set the `Accept` or `Referrer` header.
@@ -143,9 +148,59 @@ object mod {
     var withCredentials: js.UndefOr[Boolean] = js.native
   }
   
-  type Options = js.Object with Dereference
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped object */ trait Options extends StObject {
+    
+    /**
+      * The `dereference` options control how JSON Schema `$Ref` Parser will dereference `$ref` pointers within the JSON schema.
+      */
+    var dereference: js.UndefOr[Circular] = js.undefined
+    
+    /**
+      * The `parse` options determine how different types of files will be parsed.
+      *
+      * JSON Schema `$Ref` Parser comes with built-in JSON, YAML, plain-text, and binary parsers, any of which you can configure or disable. You can also add your own custom parsers if you want.
+      */
+    var parse: js.UndefOr[Json] = js.undefined
+    
+    /**
+      * The `resolve` options control how JSON Schema $Ref Parser will resolve file paths and URLs, and how those files will be read/downloaded.
+      *
+      * JSON Schema `$Ref` Parser comes with built-in support for HTTP and HTTPS, as well as support for local files (when running in Node.js). You can configure or disable either of these built-in resolvers. You can also add your own custom resolvers if you want.
+      */
+    var resolve: js.UndefOr[External] = js.undefined
+  }
+  object Options {
+    
+    @scala.inline
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    @scala.inline
+    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDereference(value: Circular): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      
+      @scala.inline
+      def setParse(value: Json): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      
+      @scala.inline
+      def setResolve(value: External): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    }
+  }
   
-  @js.native
   trait ParserOptions extends StObject {
     
     /**
@@ -153,7 +208,7 @@ object mod {
       *
       * You can set `allowEmpty: false` on any parser, which will cause an error to be thrown if a file empty.
       */
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines which parsers will be used for which files.
@@ -162,14 +217,14 @@ object mod {
       */
     var canParse: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Parsers run in a specific order, relative to other parsers. For example, a parser with `order: 5` will run before a parser with `order: 10`. If a parser is unable to successfully parse a file, then the next parser is tried, until one succeeds or they all fail.
       *
       * You can change the order in which parsers run, which is useful if you know that most of your referenced files will be a certain type, or if you add your own custom parser that you want to run first.
       */
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object ParserOptions {
     
@@ -240,39 +295,39 @@ object mod {
     def bundle(schema: String): js.Promise[JSONSchema4] = js.native
     def bundle(
       schema: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def bundle(schema: String, options: Options): js.Promise[JSONSchema4] = js.native
     def bundle(
       schema: String,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def bundle(schema: JSONSchema4): js.Promise[JSONSchema4] = js.native
     def bundle(
       schema: JSONSchema4,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def bundle(schema: JSONSchema4, options: Options): js.Promise[JSONSchema4] = js.native
     def bundle(
       schema: JSONSchema4,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     
     def dereference(path: String): js.Promise[JSONSchema4] = js.native
     def dereference(
       path: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def dereference(path: String, options: Options): js.Promise[JSONSchema4] = js.native
     def dereference(
       path: String,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     /**
       * Dereferences all `$ref` pointers in the JSON Schema, replacing each reference with its resolved value. This results in a schema object that does not contain any `$ref` pointers. Instead, it's a normal JavaScript object tree that can easily be crawled and used just like any other JavaScript object. This is great for programmatic usage, especially when using tools that don't understand JSON references.
@@ -289,41 +344,41 @@ object mod {
     def dereference(
       path: String,
       schema: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def dereference(path: String, schema: String, options: Options): js.Promise[JSONSchema4] = js.native
     def dereference(
       path: String,
       schema: String,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def dereference(path: String, schema: JSONSchema4): js.Promise[JSONSchema4] = js.native
     def dereference(
       path: String,
       schema: JSONSchema4,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def dereference(path: String, schema: JSONSchema4, options: Options): js.Promise[JSONSchema4] = js.native
     def dereference(
       path: String,
       schema: JSONSchema4,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def dereference(schema: JSONSchema4): js.Promise[JSONSchema4] = js.native
     def dereference(
       schema: JSONSchema4,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def dereference(schema: JSONSchema4, options: Options): js.Promise[JSONSchema4] = js.native
     def dereference(
       schema: JSONSchema4,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     
     /**
@@ -340,26 +395,26 @@ object mod {
     def parse(schema: String): js.Promise[JSONSchema4] = js.native
     def parse(
       schema: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def parse(schema: String, options: Options): js.Promise[JSONSchema4] = js.native
     def parse(
       schema: String,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def parse(schema: JSONSchema4): js.Promise[JSONSchema4] = js.native
     def parse(
       schema: JSONSchema4,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     def parse(schema: JSONSchema4, options: Options): js.Promise[JSONSchema4] = js.native
     def parse(
       schema: JSONSchema4,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* schema */ JSONSchema4 | Null, js.Any]
     ): js.Promise[JSONSchema4] = js.native
     
     /**
@@ -376,26 +431,26 @@ object mod {
     def resolve(schema: String): js.Promise[Refs] = js.native
     def resolve(
       schema: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, js.Any]
     ): js.Promise[Refs] = js.native
     def resolve(schema: String, options: Options): js.Promise[Refs] = js.native
     def resolve(
       schema: String,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, js.Any]
     ): js.Promise[Refs] = js.native
     def resolve(schema: JSONSchema4): js.Promise[Refs] = js.native
     def resolve(
       schema: JSONSchema4,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, _]
+      options: Unit,
+      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, js.Any]
     ): js.Promise[Refs] = js.native
     def resolve(schema: JSONSchema4, options: Options): js.Promise[Refs] = js.native
     def resolve(
       schema: JSONSchema4,
       options: Options,
-      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, _]
+      callback: js.Function2[/* err */ Error | Null, /* $refs */ Refs | Null, js.Any]
     ): js.Promise[Refs] = js.native
     
     /**
@@ -427,6 +482,6 @@ object mod {
       * Unlike the `canRead` function, the `read` method can also be asynchronous. This might be important if your resolver needs to read data from a database or some other external source. You can return your asynchronous value using either an ES6 Promise or a Node.js-style error-first callback. Of course, if your resolver has the ability to return its data synchronously, then that's fine too. Here are examples of all three approaches:
       */
     def read(file: FileInfo): String | Buffer | (js.Promise[String | Buffer]) = js.native
-    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, _]): String | Buffer | (js.Promise[String | Buffer]) = js.native
+    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): String | Buffer | (js.Promise[String | Buffer]) = js.native
   }
 }

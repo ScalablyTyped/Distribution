@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object VpnChannelRequestCredentialsOptions extends StObject {
   
   /** None. */
   @js.native
-  sealed trait none extends VpnChannelRequestCredentialsOptions
+  sealed trait none
+    extends StObject
+       with VpnChannelRequestCredentialsOptions
   
   /** Retrying. */
   @js.native
-  sealed trait retrying extends VpnChannelRequestCredentialsOptions
+  sealed trait retrying
+    extends StObject
+       with VpnChannelRequestCredentialsOptions
   
   /** Use for single sign on. */
   @js.native
-  sealed trait useForSingleSignIn extends VpnChannelRequestCredentialsOptions
+  sealed trait useForSingleSignIn
+    extends StObject
+       with VpnChannelRequestCredentialsOptions
 }

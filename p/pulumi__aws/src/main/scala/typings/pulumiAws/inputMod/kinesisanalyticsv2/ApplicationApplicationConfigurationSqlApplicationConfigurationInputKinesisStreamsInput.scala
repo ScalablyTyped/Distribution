@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput extends StObject {
   
   /**
     * The ARN of the input Kinesis data stream to read.
     */
-  var resourceArn: Input[String] = js.native
+  var resourceArn: Input[String]
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput {
   

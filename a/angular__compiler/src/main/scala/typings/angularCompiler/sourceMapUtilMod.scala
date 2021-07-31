@@ -4,27 +4,27 @@ import typings.angularCompiler.anon.Column
 import typings.angularCompiler.sourceMapMod.SourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceMapUtilMod {
   
-  @JSImport("@angular/compiler/testing/src/output/source_map_util", "extractSourceMap")
+  @JSImport("@angular/compiler/testing/src/output/source_map_util", JSImport.Namespace)
   @js.native
-  def extractSourceMap(source: String): SourceMap | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/testing/src/output/source_map_util", "originalPositionFor")
-  @js.native
-  def originalPositionFor(sourceMap: SourceMap, genPosition: Column): SourceLocation = js.native
+  @scala.inline
+  def extractSourceMap(source: String): SourceMap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSourceMap")(source.asInstanceOf[js.Any]).asInstanceOf[SourceMap | Null]
   
-  @js.native
+  @scala.inline
+  def originalPositionFor(sourceMap: SourceMap, genPosition: Column): SourceLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("originalPositionFor")(sourceMap.asInstanceOf[js.Any], genPosition.asInstanceOf[js.Any])).asInstanceOf[SourceLocation]
+  
   trait SourceLocation extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var source: String = js.native
+    var source: String
   }
   object SourceLocation {
     

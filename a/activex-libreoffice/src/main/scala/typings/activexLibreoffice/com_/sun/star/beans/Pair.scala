@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure allows for conveniently packing together two values of any type, and could be useful as the result type of methods.
   * @since OOo 3.0
   */
-@js.native
 trait Pair[T, U] extends StObject {
   
-  var First: T = js.native
+  var First: T
   
-  var Second: U = js.native
+  var Second: U
 }
 object Pair {
   
@@ -27,7 +25,7 @@ object Pair {
   }
   
   @scala.inline
-  implicit class PairMutableBuilder[Self <: Pair[_, _], T, U] (val x: Self with (Pair[T, U])) extends AnyVal {
+  implicit class PairMutableBuilder[Self <: Pair[?, ?], T, U] (val x: Self & (Pair[T, U])) extends AnyVal {
     
     @scala.inline
     def setFirst(value: T): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])

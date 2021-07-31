@@ -4,12 +4,14 @@ import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSel
 import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peoplePickerItemStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.styles", "getStyles")
+  @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.styles", JSImport.Namespace)
   @js.native
-  def getStyles(props: IPeoplePickerItemSelectedStyleProps): IPeoplePickerItemSelectedStyles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getStyles(props: IPeoplePickerItemSelectedStyleProps): IPeoplePickerItemSelectedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPeoplePickerItemSelectedStyles]
 }

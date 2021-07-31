@@ -8,12 +8,11 @@ import typings.reactVirtualized.mod.Alignment
 import typings.reactVirtualized.mod.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridCoreProps
-  extends /**
+  extends StObject
+     with /**
   * PLEASE NOTE
   * The [key: string]: any; line is here on purpose
   * This is due to the need of force re-render of PureComponent
@@ -22,27 +21,27 @@ trait GridCoreProps
   */
 /* key */ StringDictionary[js.Any] {
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the width of the inner scrollable container to 'auto'.
     * This is useful for single-column Grids to ensure that the column doesn't extend below a vertical scrollbar.
     */
-  var autoContainerWidth: js.UndefOr[Boolean] = js.native
+  var autoContainerWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Removes fixed height from the scrollingContainer so that the total height of rows can stretch the window.
     * Intended for use with WindowScroller
     */
-  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Removes fixed width from the scrollingContainer so that the total width of rows can stretch the window.
     * Intended for use with WindowScroller
     */
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Responsible for rendering a group of cells given their index ranges.
@@ -60,90 +59,90 @@ trait GridCoreProps
     *   scrollTop: number
     * }): Array<PropTypes.node>
     */
-  var cellRangeRenderer: js.UndefOr[GridCellRangeRenderer] = js.native
+  var cellRangeRenderer: js.UndefOr[GridCellRangeRenderer] = js.undefined
   
   /**
     * Optional custom CSS class name to attach to root Grid element.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /** Unfiltered props for the Grid container. */
-  var containerProps: js.UndefOr[js.Object] = js.native
+  var containerProps: js.UndefOr[js.Object] = js.undefined
   
   /** ARIA role for the cell-container.  */
-  var containerRole: js.UndefOr[String] = js.native
+  var containerRole: js.UndefOr[String] = js.undefined
   
   /** Optional inline style applied to inner cell-container */
-  var containerStyle: js.UndefOr[CSSProperties] = js.native
+  var containerStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * If CellMeasurer is used to measure this Grid's children, this should be a pointer to its CellMeasurerCache.
     * A shared CellMeasurerCache reference enables Grid and CellMeasurer to share measurement data.
     */
-  var deferredMeasurementCache: js.UndefOr[CellMeasurerCache] = js.native
+  var deferredMeasurementCache: js.UndefOr[CellMeasurerCache] = js.undefined
   
   /**
     * Used to estimate the total width of a Grid before all of its columns have actually been measured.
     * The estimated total width is adjusted as columns are rendered.
     */
-  var estimatedColumnSize: js.UndefOr[Double] = js.native
+  var estimatedColumnSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Used to estimate the total height of a Grid before all of its rows have actually been measured.
     * The estimated total height is adjusted as rows are rendered.
     */
-  var estimatedRowSize: js.UndefOr[Double] = js.native
+  var estimatedRowSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Exposed for testing purposes only.
     */
-  var getScrollbarSize: js.UndefOr[js.Function0[Double]] = js.native
+  var getScrollbarSize: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /**
     * Height of Grid; this property determines the number of visible (vs virtualized) rows.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Optional custom id to attach to root Grid element.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Override internal is-scrolling state tracking.
     * This property is primarily intended for use with the WindowScroller component.
     */
-  var isScrolling: js.UndefOr[Boolean] = js.native
+  var isScrolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional renderer to be used in place of rows when either :rowCount or :columnCount is 0.
     */
-  var noContentRenderer: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var noContentRenderer: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   
   /**
     * Callback invoked whenever the scroll offset changes within the inner scrollable region.
     * This callback can be used to sync scrolling between lists, tables, or grids.
     * ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
     */
-  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, _]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, js.Any]] = js.undefined
   
   /**
     * Called whenever a horizontal or vertical scrollbar is added or removed.
     * ({ horizontal: boolean, size: number, vertical: boolean }): void
     */
-  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, _]] = js.native
+  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, js.Any]] = js.undefined
   
   /**
     * Callback invoked with information about the section of the Grid that was just rendered.
     * ({ columnStartIndex, columnStopIndex, rowStartIndex, rowStopIndex }): void
     */
-  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, _]] = js.native
+  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, js.Any]] = js.undefined
   
   /**
     * Number of columns to render before/after the visible section of the grid.
     * These columns can help for smoother scrolling on touch devices or browsers that send scroll events infrequently.
     */
-  var overscanColumnCount: js.UndefOr[Double] = js.native
+  var overscanColumnCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Calculates the number of cells to overscan before and after a specified range.
@@ -156,66 +155,66 @@ trait GridCoreProps
     *   stopIndex: number
     * }): {overscanStartIndex: number, overscanStopIndex: number}
     */
-  var overscanIndicesGetter: js.UndefOr[OverscanIndicesGetter] = js.native
+  var overscanIndicesGetter: js.UndefOr[OverscanIndicesGetter] = js.undefined
   
   /**
     * Number of rows to render above/below the visible section of the grid.
     * These rows can help for smoother scrolling on touch devices or browsers that send scroll events infrequently.
     */
-  var overscanRowCount: js.UndefOr[Double] = js.native
+  var overscanRowCount: js.UndefOr[Double] = js.undefined
   
   /**
     * ARIA role for the grid element.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * Number of rows in grid.
     */
-  var rowCount: Double = js.native
+  var rowCount: Double
   
   /**
     * Either a fixed row height (number) or a function that returns the height of a row given its index.
     * Should implement the following interface: ({ index: number }): number
     */
-  var rowHeight: Double | (js.Function1[/* params */ Index, Double]) = js.native
+  var rowHeight: Double | (js.Function1[/* params */ Index, Double])
   
   /** Horizontal offset. */
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls scroll-to-cell behavior of the Grid.
     * The default ("auto") scrolls the least amount possible to ensure that the specified cell is fully visible.
     * Use "start" to align cells to the top/left of the Grid and "end" to align bottom/right.
     */
-  var scrollToAlignment: js.UndefOr[Alignment] = js.native
+  var scrollToAlignment: js.UndefOr[Alignment] = js.undefined
   
   /**
     * Column index to ensure visible (by forcefully scrolling if necessary)
     */
-  var scrollToColumn: js.UndefOr[Double] = js.native
+  var scrollToColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * Row index to ensure visible (by forcefully scrolling if necessary)
     */
-  var scrollToRow: js.UndefOr[Double] = js.native
+  var scrollToRow: js.UndefOr[Double] = js.undefined
   
   /** Vertical offset. */
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
   /** Wait this amount of time after the last scroll event before resetting Grid `pointer-events`. */
-  var scrollingResetTimeInterval: js.UndefOr[Double] = js.native
+  var scrollingResetTimeInterval: js.UndefOr[Double] = js.undefined
   
   /** Optional inline style */
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   /** Tab index for focus */
-  var tabIndex: js.UndefOr[Double | Null] = js.native
+  var tabIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Width of Grid; this property determines the number of visible (vs virtualized) columns.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object GridCoreProps {
   
@@ -339,19 +338,19 @@ object GridCoreProps {
     def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: /* params */ ScrollParams => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    def setOnScroll(value: /* params */ ScrollParams => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => _): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
+    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => js.Any): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnScrollbarPresenceChangeUndefined: Self = StObject.set(x, "onScrollbarPresenceChange", js.undefined)
     
     @scala.inline
-    def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+    def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)

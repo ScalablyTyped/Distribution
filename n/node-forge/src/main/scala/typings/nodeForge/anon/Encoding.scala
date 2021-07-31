@@ -5,15 +5,15 @@ import typings.nodeForge.nodeForgeStrings.binary
 import typings.nodeForge.nodeForgeStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Encoding extends ToNativeBufferParameters {
+trait Encoding
+  extends StObject
+     with ToNativeBufferParameters {
   
-  var encoding: binary | utf8 = js.native
+  var encoding: binary | utf8
   
-  var message: String = js.native
+  var message: String
 }
 object Encoding {
   

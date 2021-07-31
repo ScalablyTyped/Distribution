@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoDescription extends StObject {
   
   /**
     * Video codec settings.
     */
-  var CodecSettings: js.UndefOr[VideoCodecSettings] = js.native
+  var CodecSettings: js.UndefOr[VideoCodecSettings] = js.undefined
   
   /**
     * Output video height, in pixels. Must be an even number. For most codecs, you can leave this field and width blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required.
     */
-  var Height: js.UndefOr[integer] = js.native
+  var Height: js.UndefOr[integer] = js.undefined
   
   /**
     * The name of this VideoDescription. Outputs will use this name to uniquely identify this Description.  Description names should be unique within this Live Event.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Indicates how MediaLive will respond to the AFD values that might be in the input video. If you do not know what AFD signaling is, or if your downstream system has not given you guidance, choose PASSTHROUGH.
@@ -29,22 +27,22 @@ trait VideoDescription extends StObject {
   PASSTHROUGH: MediaLive ignores the AFD values and does not clip the video. But MediaLive does include the values in the output.
   NONE: MediaLive does not clip the input video and does not include the AFD values in the output
     */
-  var RespondToAfd: js.UndefOr[VideoDescriptionRespondToAfd] = js.native
+  var RespondToAfd: js.UndefOr[VideoDescriptionRespondToAfd] = js.undefined
   
   /**
     * STRETCH_TO_OUTPUT configures the output position to stretch the video to the specified output resolution (height and width). This option will override any position value. DEFAULT may insert black boxes (pillar boxes or letter boxes) around the video to provide the specified output resolution.
     */
-  var ScalingBehavior: js.UndefOr[VideoDescriptionScalingBehavior] = js.native
+  var ScalingBehavior: js.UndefOr[VideoDescriptionScalingBehavior] = js.undefined
   
   /**
     * Changes the strength of the anti-alias filter used for scaling. 0 is the softest setting, 100 is the sharpest. A setting of 50 is recommended for most content.
     */
-  var Sharpness: js.UndefOr[integerMin0Max100] = js.native
+  var Sharpness: js.UndefOr[integerMin0Max100] = js.undefined
   
   /**
     * Output video width, in pixels. Must be an even number. For most codecs, you can leave this field and height blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required.
     */
-  var Width: js.UndefOr[integer] = js.native
+  var Width: js.UndefOr[integer] = js.undefined
 }
 object VideoDescription {
   

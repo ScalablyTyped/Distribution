@@ -10,9 +10,9 @@ Collects all values from an async iterator and returns them as an array
 | ------------------ | :-------------: |
 | Full name          | it-all |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 203466 |
+| # releases         | 6 |
+| # dependents       | 35 |
+| # downloads        | 522367 |
 | # stars            | 0 |
 
 ## Links

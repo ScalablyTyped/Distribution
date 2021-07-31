@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesSetMachineResourcesRequest extends StObject {
   
   /** A list of the type and count of accelerator cards attached to the instance. */
-  var guestAccelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
 }
 object InstancesSetMachineResourcesRequest {
   

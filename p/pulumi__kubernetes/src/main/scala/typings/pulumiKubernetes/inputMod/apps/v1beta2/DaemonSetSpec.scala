@@ -5,39 +5,37 @@ import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DaemonSetSpec is the specification of a daemon set.
   */
-@js.native
 trait DaemonSetSpec extends StObject {
   
   /**
     * The minimum number of seconds for which a newly created DaemonSet pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready).
     */
-  var minReadySeconds: js.UndefOr[Input[Double]] = js.native
+  var minReadySeconds: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The number of old history to retain to allow rollback. This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
     */
-  var revisionHistoryLimit: js.UndefOr[Input[Double]] = js.native
+  var revisionHistoryLimit: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * A label query over pods that are managed by the daemon set. Must match in order to be controlled. It must match the pod template's labels. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
     */
-  var selector: Input[LabelSelector] = js.native
+  var selector: Input[LabelSelector]
   
   /**
     * An object that describes the pod that will be created. The DaemonSet will create exactly one copy of this pod on every node that matches the template's node selector (or on every node if no node selector is specified). More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
     */
-  var template: Input[PodTemplateSpec] = js.native
+  var template: Input[PodTemplateSpec]
   
   /**
     * An update strategy to replace existing DaemonSet pods with new pods.
     */
-  var updateStrategy: js.UndefOr[Input[DaemonSetUpdateStrategy]] = js.native
+  var updateStrategy: js.UndefOr[Input[DaemonSetUpdateStrategy]] = js.undefined
 }
 object DaemonSetSpec {
   

@@ -2,30 +2,28 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single data point from a collectd-based plugin.
   */
-@js.native
 trait SchemaCollectdValue extends StObject {
   
   /**
     * The data source for the collectd value. For example there are two data
     * sources for network measurements: &quot;rx&quot; and &quot;tx&quot;.
     */
-  var dataSourceName: js.UndefOr[String] = js.native
+  var dataSourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of measurement.
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * The measurement value.
     */
-  var value: js.UndefOr[SchemaTypedValue] = js.native
+  var value: js.UndefOr[SchemaTypedValue] = js.undefined
 }
 object SchemaCollectdValue {
   

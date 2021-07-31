@@ -3,22 +3,22 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IIdGenerator extends IBase {
+trait IIdGenerator
+  extends StObject
+     with IBase {
   
   /** [Method] Generates and returns the next id
     * @returns String The next id.
     */
-  var generate: js.UndefOr[js.Function0[String]] = js.native
+  var generate: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Property] (Boolean) */
-  var isGenerator: js.UndefOr[Boolean] = js.native
+  var isGenerator: js.UndefOr[Boolean] = js.undefined
 }
 object IIdGenerator {
   

@@ -3,12 +3,14 @@ package typings.octokitEndpoint
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object omitMod {
   
-  @JSImport("@octokit/endpoint/dist-types/util/omit", "omit")
+  @JSImport("@octokit/endpoint/dist-types/util/omit", JSImport.Namespace)
   @js.native
-  def omit(`object`: StringDictionary[js.Any], keysToOmit: js.Array[String]): StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def omit(`object`: StringDictionary[js.Any], keysToOmit: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(`object`.asInstanceOf[js.Any], keysToOmit.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
 }

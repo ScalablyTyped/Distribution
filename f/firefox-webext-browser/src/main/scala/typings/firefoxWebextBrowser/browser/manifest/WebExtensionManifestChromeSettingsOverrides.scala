@@ -2,15 +2,13 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestChromeSettingsOverrides extends StObject {
   
-  var homepage: js.UndefOr[String] = js.native
+  var homepage: js.UndefOr[String] = js.undefined
   
-  var search_provider: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProvider] = js.native
+  var search_provider: js.UndefOr[WebExtensionManifestChromeSettingsOverridesSearchProvider] = js.undefined
 }
 object WebExtensionManifestChromeSettingsOverrides {
   

@@ -2,7 +2,6 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Intersection")
@@ -23,31 +22,31 @@ class Intersection () extends StObject {
 /* static members */
 object Intersection {
   
+  @JSImport("fabric/fabric-impl", "Intersection")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Checks if one line intersects another
     */
-  @JSImport("fabric/fabric-impl", "Intersection.intersectLineLine")
-  @js.native
-  def intersectLineLine(a1: Point, a2: Point, b1: Point, b2: Point): Intersection = js.native
+  @scala.inline
+  def intersectLineLine(a1: Point, a2: Point, b1: Point, b2: Point): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectLineLine")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
   
   /**
     * Checks if line intersects polygon
     */
-  @JSImport("fabric/fabric-impl", "Intersection.intersectLinePolygon")
-  @js.native
-  def intersectLinePolygon(a1: Point, a2: Point, points: js.Array[Point]): Intersection = js.native
+  @scala.inline
+  def intersectLinePolygon(a1: Point, a2: Point, points: js.Array[Point]): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectLinePolygon")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Intersection]
   
   /**
     * Checks if polygon intersects another polygon
     */
-  @JSImport("fabric/fabric-impl", "Intersection.intersectPolygonPolygon")
-  @js.native
-  def intersectPolygonPolygon(points1: js.Array[Point], points2: js.Array[Point]): Intersection = js.native
+  @scala.inline
+  def intersectPolygonPolygon(points1: js.Array[Point], points2: js.Array[Point]): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonPolygon")(points1.asInstanceOf[js.Any], points2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
   
   /**
     * Checks if polygon intersects rectangle
     */
-  @JSImport("fabric/fabric-impl", "Intersection.intersectPolygonRectangle")
-  @js.native
-  def intersectPolygonRectangle(points: js.Array[Point], r1: Double, r2: Double): Intersection = js.native
+  @scala.inline
+  def intersectPolygonRectangle(points: js.Array[Point], r1: Double, r2: Double): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
 }

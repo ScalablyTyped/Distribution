@@ -2,17 +2,15 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaPov extends StObject {
   
-  var fov: Double = js.native
+  var fov: Double
   
-  var pan: Double = js.native
+  var pan: Double
   
-  var tilt: Double = js.native
+  var tilt: Double
 }
 object PanoramaPov {
   

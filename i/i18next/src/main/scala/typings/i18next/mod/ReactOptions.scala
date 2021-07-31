@@ -4,29 +4,27 @@ import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.fallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactOptions extends StObject {
   
   /**
     * Set which events trigger a re-render, can be set to false or string of events
     * @default 'languageChanged'
     */
-  var bindI18n: js.UndefOr[String | `false`] = js.native
+  var bindI18n: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * Set which events on store trigger a re-render, can be set to false or string of events
     * @default ''
     */
-  var bindI18nStore: js.UndefOr[String | `false`] = js.native
+  var bindI18nStore: js.UndefOr[String | `false`] = js.undefined
   
   /**
     * Set it to the default parent element created by the Trans component.
     * @default 'div'
     */
-  var defaultTransParent: js.UndefOr[String] = js.native
+  var defaultTransParent: js.UndefOr[String] = js.undefined
   
   /**
     * Function to generate an i18nKey from the defaultValue (or Trans children)
@@ -36,44 +34,44 @@ trait ReactOptions extends StObject {
     * that always throws an error.
     * @default undefined
     */
-  var hashTransKey: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[js.Any], js.UndefOr[_]]] = js.native
+  var hashTransKey: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[js.Any], js.UndefOr[js.Any]]] = js.undefined
   
   /**
     * Set it to fallback to let passed namespaces to translated hoc act as fallbacks
     * @default 'default'
     */
-  var nsMode: js.UndefOr[typings.i18next.i18nextStrings.default | fallback] = js.native
+  var nsMode: js.UndefOr[typings.i18next.i18nextStrings.default | fallback] = js.undefined
   
   /**
     * Set fallback value for Trans components without children
     * @default undefined
     */
-  var transEmptyNodeValue: js.UndefOr[String] = js.native
+  var transEmptyNodeValue: js.UndefOr[String] = js.undefined
   
   /**
     * Which nodes not to convert in defaultValue generation in the Trans component.
     * @default ['br', 'strong', 'i', 'p']
     */
-  var transKeepBasicHtmlNodesFor: js.UndefOr[js.Array[String]] = js.native
+  var transKeepBasicHtmlNodesFor: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Convert eg. <br/> found in translations to a react component of type br
     * @default true
     */
-  var transSupportBasicHtmlNodes: js.UndefOr[Boolean] = js.native
+  var transSupportBasicHtmlNodes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set it to false if you do not want to use Suspense
     * @default true
     */
-  var useSuspense: js.UndefOr[Boolean] = js.native
+  var useSuspense: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true if you like to wait for loaded in every translated hoc
     * @default false
     */
   @JSName("wait")
-  var wait_FReactOptions: js.UndefOr[Boolean] = js.native
+  var wait_FReactOptions: js.UndefOr[Boolean] = js.undefined
 }
 object ReactOptions {
   
@@ -105,7 +103,7 @@ object ReactOptions {
     def setDefaultTransParentUndefined: Self = StObject.set(x, "defaultTransParent", js.undefined)
     
     @scala.inline
-    def setHashTransKey(value: /* defaultValue */ js.UndefOr[js.Any] => js.UndefOr[_]): Self = StObject.set(x, "hashTransKey", js.Any.fromFunction1(value))
+    def setHashTransKey(value: /* defaultValue */ js.UndefOr[js.Any] => js.UndefOr[js.Any]): Self = StObject.set(x, "hashTransKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHashTransKeyUndefined: Self = StObject.set(x, "hashTransKey", js.undefined)

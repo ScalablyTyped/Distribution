@@ -2,66 +2,64 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Firewall extends StObject {
   
   /**
     * A flag indicating whether it is possible to delete the firewall. A setting of TRUE indicates that the firewall is protected against deletion. Use this setting to protect against accidentally deleting a firewall that is in use. When you create a firewall, the operation initializes this flag to TRUE.
     */
-  var DeleteProtection: js.UndefOr[Boolean] = js.native
+  var DeleteProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A description of the firewall.
     */
-  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the firewall.
     */
-  var FirewallArn: js.UndefOr[ResourceArn] = js.native
+  var FirewallArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The unique identifier for the firewall. 
     */
-  var FirewallId: ResourceId = js.native
+  var FirewallId: ResourceId
   
   /**
     * The descriptive name of the firewall. You can't change the name of a firewall after you create it.
     */
-  var FirewallName: js.UndefOr[ResourceName] = js.native
+  var FirewallName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the firewall policy. The relationship of firewall to firewall policy is many to one. Each firewall requires one firewall policy association, and you can use the same firewall policy for multiple firewalls. 
     */
-  var FirewallPolicyArn: ResourceArn = js.native
+  var FirewallPolicyArn: ResourceArn
   
   /**
     * A setting indicating whether the firewall is protected against a change to the firewall policy association. Use this setting to protect against accidentally modifying the firewall policy for a firewall that is in use. When you create a firewall, the operation initializes this setting to TRUE.
     */
-  var FirewallPolicyChangeProtection: js.UndefOr[Boolean] = js.native
+  var FirewallPolicyChangeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A setting indicating whether the firewall is protected against changes to the subnet associations. Use this setting to protect against accidentally modifying the subnet associations for a firewall that is in use. When you create a firewall, the operation initializes this setting to TRUE.
     */
-  var SubnetChangeProtection: js.UndefOr[Boolean] = js.native
+  var SubnetChangeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The public subnets that Network Firewall is using for the firewall. Each subnet must belong to a different Availability Zone. 
     */
-  var SubnetMappings: typings.awsSdk.networkfirewallMod.SubnetMappings = js.native
+  var SubnetMappings: typings.awsSdk.networkfirewallMod.SubnetMappings
   
   /**
     * 
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The unique identifier of the VPC where the firewall is in use. 
     */
-  var VpcId: typings.awsSdk.networkfirewallMod.VpcId = js.native
+  var VpcId: typings.awsSdk.networkfirewallMod.VpcId
 }
 object Firewall {
   

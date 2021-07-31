@@ -3,84 +3,82 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxConfiguration Class */
-@js.native
 trait FaxConfiguration extends StObject {
   
   /** Are personal cover pages allowed */
-  var AllowPersonalCoverPages: Boolean = js.native
+  var AllowPersonalCoverPages: Boolean
   
   /** Indicates how long the fax message is kept on the server */
-  var ArchiveAgeLimit: Double = js.native
+  var ArchiveAgeLimit: Double
   
   /** Location of the archive on the server */
-  var ArchiveLocation: String = js.native
+  var ArchiveLocation: String
   
   /** The high 32-bit value of the archive size */
-  val ArchiveSizeHigh: Double = js.native
+  val ArchiveSizeHigh: Double
   
   /** The low 32-bit value of the archive size */
-  val ArchiveSizeLow: Double = js.native
+  val ArchiveSizeLow: Double
   
   /** Does the server auto-create fax account on connect */
-  var AutoCreateAccountOnConnect: Boolean = js.native
+  var AutoCreateAccountOnConnect: Boolean
   
   /** Does the server generate a brand */
-  var Branding: Boolean = js.native
+  var Branding: Boolean
   
   /** End of the discount rate period */
-  var DiscountRateEnd: VarDate = js.native
+  var DiscountRateEnd: VarDate
   
   /** Start of the discount rate period */
-  var DiscountRateStart: VarDate = js.native
+  var DiscountRateStart: VarDate
   
   @JSName("FAXCOMEXLib.FaxConfiguration_typekey")
-  var FAXCOMEXLibDotFaxConfiguration_typekey: FaxConfiguration = js.native
+  var FAXCOMEXLibDotFaxConfiguration_typekey: FaxConfiguration
   
   /** High quota water mark */
-  var HighQuotaWaterMark: Double = js.native
+  var HighQuotaWaterMark: Double
   
   /** Are incoming faxes viewable by everyone */
-  var IncomingFaxesArePublic: Boolean = js.native
+  var IncomingFaxesArePublic: Boolean
   
   /** Is queue blocked for incoming faxes */
-  var IncomingQueueBlocked: Boolean = js.native
+  var IncomingQueueBlocked: Boolean
   
   /** Low quota water mark */
-  var LowQuotaWaterMark: Double = js.native
+  var LowQuotaWaterMark: Double
   
   /** How long the failed fax job is kept on the server */
-  var OutgoingQueueAgeLimit: Double = js.native
+  var OutgoingQueueAgeLimit: Double
   
   /** Is queue blocked for outgoing faxes */
-  var OutgoingQueueBlocked: Boolean = js.native
+  var OutgoingQueueBlocked: Boolean
   
   /** Is queue paused for outgoing faxes */
-  var OutgoingQueuePaused: Boolean = js.native
+  var OutgoingQueuePaused: Boolean
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Number of retries */
-  var Retries: Double = js.native
+  var Retries: Double
   
   /** Retry delay */
-  var RetryDelay: Double = js.native
+  var RetryDelay: Double
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
   
   /** Is size quota warning on */
-  var SizeQuotaWarning: Boolean = js.native
+  var SizeQuotaWarning: Boolean
   
   /** Whether faxes should be archived */
-  var UseArchive: Boolean = js.native
+  var UseArchive: Boolean
   
   /** Is device Transmitting Station ID used */
-  var UseDeviceTSID: Boolean = js.native
+  var UseDeviceTSID: Boolean
 }
 object FaxConfiguration {
   

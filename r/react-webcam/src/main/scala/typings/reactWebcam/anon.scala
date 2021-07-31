@@ -2,29 +2,27 @@ package typings.reactWebcam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audio extends StObject {
     
-    var audio: Boolean = js.native
+    var audio: Boolean
     
-    var forceScreenshotSourceSize: Boolean = js.native
+    var forceScreenshotSourceSize: Boolean
     
-    var imageSmoothing: Boolean = js.native
+    var imageSmoothing: Boolean
     
-    var mirrored: Boolean = js.native
+    var mirrored: Boolean
     
-    def onUserMedia(): js.UndefOr[scala.Nothing] = js.native
+    def onUserMedia(): Unit
     
-    def onUserMediaError(): js.UndefOr[scala.Nothing] = js.native
+    def onUserMediaError(): Unit
     
-    var screenshotFormat: String = js.native
+    var screenshotFormat: String
     
-    var screenshotQuality: Double = js.native
+    var screenshotQuality: Double
   }
   object Audio {
     
@@ -34,8 +32,8 @@ object anon {
       forceScreenshotSourceSize: Boolean,
       imageSmoothing: Boolean,
       mirrored: Boolean,
-      onUserMedia: () => js.UndefOr[scala.Nothing],
-      onUserMediaError: () => js.UndefOr[scala.Nothing],
+      onUserMedia: () => Unit,
+      onUserMediaError: () => Unit,
       screenshotFormat: String,
       screenshotQuality: Double
     ): Audio = {
@@ -59,10 +57,10 @@ object anon {
       def setMirrored(value: Boolean): Self = StObject.set(x, "mirrored", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnUserMedia(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onUserMedia", js.Any.fromFunction0(value))
+      def setOnUserMedia(value: () => Unit): Self = StObject.set(x, "onUserMedia", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setOnUserMediaError(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onUserMediaError", js.Any.fromFunction0(value))
+      def setOnUserMediaError(value: () => Unit): Self = StObject.set(x, "onUserMediaError", js.Any.fromFunction0(value))
       
       @scala.inline
       def setScreenshotFormat(value: String): Self = StObject.set(x, "screenshotFormat", value.asInstanceOf[js.Any])

@@ -2,35 +2,33 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing a video.
   */
-@js.native
 trait SchemaVideo extends StObject {
   
   /**
     * The video source&#39;s unique identifier for this video.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The video source.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * An URL to a video. The URL is valid as long as the source video exists
     * and sharing settings do not change.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * The properties of the video.
     */
-  var videoProperties: js.UndefOr[SchemaVideoProperties] = js.native
+  var videoProperties: js.UndefOr[SchemaVideoProperties] = js.undefined
 }
 object SchemaVideo {
   

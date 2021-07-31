@@ -4,7 +4,6 @@ import typings.jsforce.anon.Scope
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauth2Mod {
@@ -41,40 +40,39 @@ object oauth2Mod {
     
     var revokeServiceUrl: String = js.native
     
-    def revokeToken(accessToken: String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-    def revokeToken(accessToken: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def revokeToken(accessToken: String): js.Promise[Unit] = js.native
+    def revokeToken(accessToken: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] = js.native
     
     var tokenServiceUrl: String = js.native
   }
   
-  @js.native
   trait OAuth2Options extends StObject {
     
-    var authCode: js.UndefOr[String] = js.native
+    var authCode: js.UndefOr[String] = js.undefined
     
-    var authzServiceUrl: js.UndefOr[String] = js.native
+    var authzServiceUrl: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var httpProxy: js.UndefOr[String] = js.native
+    var httpProxy: js.UndefOr[String] = js.undefined
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var privateKey: js.UndefOr[String] = js.native
+    var privateKey: js.UndefOr[String] = js.undefined
     
-    var privateKeyFile: js.UndefOr[String] = js.native
+    var privateKeyFile: js.UndefOr[String] = js.undefined
     
-    var proxyUrl: js.UndefOr[String] = js.native
+    var proxyUrl: js.UndefOr[String] = js.undefined
     
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
     
-    var revokeServiceUrl: js.UndefOr[String] = js.native
+    var revokeServiceUrl: js.UndefOr[String] = js.undefined
     
-    var tokenServiceUrl: js.UndefOr[String] = js.native
+    var tokenServiceUrl: js.UndefOr[String] = js.undefined
   }
   object OAuth2Options {
     
@@ -167,12 +165,11 @@ object oauth2Mod {
     }
   }
   
-  @js.native
   trait TokenResponse extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var refresh_token: String = js.native
+    var refresh_token: String
   }
   object TokenResponse {
     

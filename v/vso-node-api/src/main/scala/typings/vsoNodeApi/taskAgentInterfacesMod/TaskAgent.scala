@@ -4,47 +4,47 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskAgent extends TaskAgentReference {
+trait TaskAgent
+  extends StObject
+     with TaskAgentReference {
   
   /**
     * Gets the request which is currently assigned to this agent.
     */
-  var assignedRequest: TaskAgentJobRequest = js.native
+  var assignedRequest: TaskAgentJobRequest
   
   /**
     * Gets or sets the authorization information for this agent.
     */
-  var authorization: TaskAgentAuthorization = js.native
+  var authorization: TaskAgentAuthorization
   
   /**
     * Gets the date on which this agent was created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets or sets the maximum job parallelism allowed on this host.
     */
-  var maxParallelism: Double = js.native
+  var maxParallelism: Double
   
   /**
     * Gets the pending update for this agent.
     */
-  var pendingUpdate: TaskAgentUpdate = js.native
+  var pendingUpdate: TaskAgentUpdate
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * Gets the date on which the last connectivity status change occurred.
     */
-  var statusChangedOn: Date = js.native
+  var statusChangedOn: Date
   
-  var systemCapabilities: StringDictionary[String] = js.native
+  var systemCapabilities: StringDictionary[String]
   
-  var userCapabilities: StringDictionary[String] = js.native
+  var userCapabilities: StringDictionary[String]
 }
 object TaskAgent {
   

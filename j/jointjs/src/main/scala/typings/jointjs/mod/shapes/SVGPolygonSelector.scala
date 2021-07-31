@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGPolygonAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPolygonSelector extends Selectors {
+trait SVGPolygonSelector
+  extends StObject
+     with Selectors {
   
-  var polygon: js.UndefOr[SVGPolygonAttributes] = js.native
+  var polygon: js.UndefOr[SVGPolygonAttributes] = js.undefined
 }
 object SVGPolygonSelector {
   

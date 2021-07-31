@@ -3,34 +3,32 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreeBusyResponse extends StObject {
   
   /** List of free/busy information for calendars. */
   var calendars: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Expansion of groups. */
   var groups: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Type of the resource ("calendar#freeBusy"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The end of the interval. */
-  var timeMax: js.UndefOr[String] = js.native
+  var timeMax: js.UndefOr[String] = js.undefined
   
   /** The start of the interval. */
-  var timeMin: js.UndefOr[String] = js.native
+  var timeMin: js.UndefOr[String] = js.undefined
 }
 object FreeBusyResponse {
   
@@ -47,7 +45,7 @@ object FreeBusyResponse {
     def setCalendars(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -57,7 +55,7 @@ object FreeBusyResponse {
     def setGroups(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline

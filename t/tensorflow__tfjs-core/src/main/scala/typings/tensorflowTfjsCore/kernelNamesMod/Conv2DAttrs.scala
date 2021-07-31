@@ -10,21 +10,19 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conv2DAttrs extends StObject {
   
-  var dataFormat: NHWC | NCHW = js.native
+  var dataFormat: NHWC | NCHW
   
-  var dilations: (js.Tuple2[Double, Double]) | Double = js.native
+  var dilations: (js.Tuple2[Double, Double]) | Double
   
-  var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.native
+  var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.undefined
   
-  var pad: valid_ | same_ | Double | ExplicitPadding = js.native
+  var pad: valid_ | same_ | Double | ExplicitPadding
   
-  var strides: (js.Tuple2[Double, Double]) | Double = js.native
+  var strides: (js.Tuple2[Double, Double]) | Double
 }
 object Conv2DAttrs {
   

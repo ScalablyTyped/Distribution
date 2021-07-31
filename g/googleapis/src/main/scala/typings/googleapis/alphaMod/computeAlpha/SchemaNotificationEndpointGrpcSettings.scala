@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a gRPC setting that describes one gRPC notification endpoint and
   * the retry duration attempting to send notification to this endpoint.
   */
-@js.native
 trait SchemaNotificationEndpointGrpcSettings extends StObject {
   
   /**
@@ -17,26 +15,26 @@ trait SchemaNotificationEndpointGrpcSettings extends StObject {
     * the sender of notifications. See
     * https://tools.ietf.org/html/rfc7540#section-8.1.2.3
     */
-  var authority: js.UndefOr[String] = js.native
+  var authority: js.UndefOr[String] = js.undefined
   
   /**
     * Endpoint to which gRPC notifications are sent. This must be a valid
     * gRPCLB DNS name.
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. If specified, this field is used to populate the ?name? field
     * in gRPC requests.
     */
-  var payloadName: js.UndefOr[String] = js.native
+  var payloadName: js.UndefOr[String] = js.undefined
   
   /**
     * How much time (in seconds) is spent attempting notification retries until
     * a successful response is received. Default is 30s. Limit is 20m (1200s).
     * Must be a positive number.
     */
-  var retryDurationSec: js.UndefOr[Double] = js.native
+  var retryDurationSec: js.UndefOr[Double] = js.undefined
 }
 object SchemaNotificationEndpointGrpcSettings {
   

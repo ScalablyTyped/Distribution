@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ui
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,59 +12,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * toolbox working with the same item descriptor.
   * @since OOo 2.0
   */
-@js.native
 trait ItemDescriptor extends StObject {
   
   /** contains the command URL which specifies which action should be accomplished. */
-  var CommandURL: String = js.native
+  var CommandURL: String
   
   /** contains the a URL that points to a help text. */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * specifies if this item is visible or not.
     *
     * This property is only valid if the item describes a toolbar or statusbar item.
     */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /**
     * specifies an optional sub container.
     *
     * This property is valid for menus only. It can be used to define sub menus.
     */
-  var ItemDescriptorContainer: XIndexAccess = js.native
+  var ItemDescriptorContainer: XIndexAccess
   
   /** the text of the user interface item. */
-  var Label: String = js.native
+  var Label: String
   
   /**
     * specifies the pixel distance by which the text of the item is shifted on the x-axis.
     *
     * This property is only valid if the item describes a statusbar item.
     */
-  var Offset: Double = js.native
+  var Offset: Double
   
   /**
     * different styles which influence the appearance of the item and its behavior.
     *
     * This property is only valid if the item describes a toolbar or statusbar item. See {@link ItemStyle} for more information about possible styles.
     */
-  var Style: Double = js.native
+  var Style: Double
   
   /**
     * specifies which type this item descriptor belongs to.
     *
     * See constant definition {@link ItemType} .
     */
-  var Type: Double = js.native
+  var Type: Double
   
   /**
     * specifies a pixel width for this item inside the user interface element.
     *
     * This property is only valid if the item describes a toolbar or statusbar item.
     */
-  var Width: Double = js.native
+  var Width: Double
 }
 object ItemDescriptor {
   

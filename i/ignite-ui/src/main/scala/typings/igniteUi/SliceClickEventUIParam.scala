@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliceClickEventUIParam extends StObject {
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to slice object.
     */
-  var slice: js.UndefOr[js.Any] = js.native
+  var slice: js.UndefOr[js.Any] = js.undefined
 }
 object SliceClickEventUIParam {
   

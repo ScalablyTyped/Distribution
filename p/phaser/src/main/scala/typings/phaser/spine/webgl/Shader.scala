@@ -7,75 +7,74 @@ import typings.std.WebGLProgram
 import typings.std.WebGLUniformLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shader
-  extends Disposable
+  extends StObject
+     with Disposable
      with Restorable {
   
-  def bind(): Unit = js.native
+  def bind(): Unit
   
-  var compile: js.Any = js.native
+  var compile: js.Any
   
-  var compileProgram: js.Any = js.native
+  var compileProgram: js.Any
   
-  var compileShader: js.Any = js.native
+  var compileShader: js.Any
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var fragmentShader: js.Any = js.native
+  var fragmentShader: js.Any
   
-  var fs: js.Any = js.native
+  var fs: js.Any
   
-  var fsSource: js.Any = js.native
+  var fsSource: js.Any
   
-  def getAttributeLocation(attribute: String): Double = js.native
+  def getAttributeLocation(attribute: String): Double
   
-  def getFragmentShader(): String = js.native
+  def getFragmentShader(): String
   
-  def getFragmentSource(): String = js.native
+  def getFragmentSource(): String
   
-  def getProgram(): WebGLProgram = js.native
+  def getProgram(): WebGLProgram
   
-  def getUniformLocation(uniform: String): WebGLUniformLocation = js.native
+  def getUniformLocation(uniform: String): WebGLUniformLocation
   
-  def getVertexShader(): String = js.native
+  def getVertexShader(): String
   
-  def getVertexShaderSource(): String = js.native
+  def getVertexShaderSource(): String
   
-  var program: js.Any = js.native
+  var program: js.Any
   
-  def setUniform2f(uniform: String, value: Double, value2: Double): Unit = js.native
+  def setUniform2f(uniform: String, value: Double, value2: Double): Unit
   
-  def setUniform2x2f(uniform: String, value: ArrayLike[Double]): Unit = js.native
+  def setUniform2x2f(uniform: String, value: ArrayLike[Double]): Unit
   
-  def setUniform3f(uniform: String, value: Double, value2: Double, value3: Double): Unit = js.native
+  def setUniform3f(uniform: String, value: Double, value2: Double, value3: Double): Unit
   
-  def setUniform3x3f(uniform: String, value: ArrayLike[Double]): Unit = js.native
+  def setUniform3x3f(uniform: String, value: ArrayLike[Double]): Unit
   
-  def setUniform4f(uniform: String, value: Double, value2: Double, value3: Double, value4: Double): Unit = js.native
+  def setUniform4f(uniform: String, value: Double, value2: Double, value3: Double, value4: Double): Unit
   
-  def setUniform4x4f(uniform: String, value: ArrayLike[Double]): Unit = js.native
+  def setUniform4x4f(uniform: String, value: ArrayLike[Double]): Unit
   
-  def setUniformf(uniform: String, value: Double): Unit = js.native
+  def setUniformf(uniform: String, value: Double): Unit
   
-  def setUniformi(uniform: String, value: Double): Unit = js.native
+  def setUniformi(uniform: String, value: Double): Unit
   
-  var tmp2x2: js.Any = js.native
+  var tmp2x2: js.Any
   
-  var tmp3x3: js.Any = js.native
+  var tmp3x3: js.Any
   
-  var tmp4x4: js.Any = js.native
+  var tmp4x4: js.Any
   
-  def unbind(): Unit = js.native
+  def unbind(): Unit
   
-  var vertexShader: js.Any = js.native
+  var vertexShader: js.Any
   
-  var vs: js.Any = js.native
+  var vs: js.Any
   
-  var vsSource: js.Any = js.native
+  var vsSource: js.Any
 }
 object Shader {
   

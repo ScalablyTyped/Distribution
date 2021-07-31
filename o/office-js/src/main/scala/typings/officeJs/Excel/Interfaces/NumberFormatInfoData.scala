@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
-@js.native
 trait NumberFormatInfoData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait NumberFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var numberDecimalSeparator: js.UndefOr[String] = js.native
+  var numberDecimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait NumberFormatInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var numberGroupSeparator: js.UndefOr[String] = js.native
+  var numberGroupSeparator: js.UndefOr[String] = js.undefined
 }
 object NumberFormatInfoData {
   

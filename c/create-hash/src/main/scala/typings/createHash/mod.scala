@@ -13,17 +13,18 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(algorithm: algorithm): HashAlgorithm = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[HashAlgorithm]
+  @scala.inline
+  def apply(algorithm: algorithm, options: js.Any): HashAlgorithm = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HashAlgorithm]
+  
   @JSImport("create-hash", JSImport.Namespace)
   @js.native
-  def apply(algorithm: algorithm): HashAlgorithm = js.native
-  @JSImport("create-hash", JSImport.Namespace)
-  @js.native
-  def apply(algorithm: algorithm, options: js.Any): HashAlgorithm = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait HashAlgorithm extends StObject {

@@ -2,26 +2,24 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLSubmit extends StObject {
   
-  var Action: String = js.native
+  var Action: String
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var Encoding: String = js.native
+  var Encoding: String
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
-  var HTMLType: String = js.native
+  var HTMLType: String
   
   @JSName("MSForms.HTMLSubmit_typekey")
-  var MSFormsDotHTMLSubmit_typekey: HTMLSubmit = js.native
+  var MSFormsDotHTMLSubmit_typekey: HTMLSubmit
   
-  var Method: String = js.native
+  var Method: String
 }
 object HTMLSubmit {
   

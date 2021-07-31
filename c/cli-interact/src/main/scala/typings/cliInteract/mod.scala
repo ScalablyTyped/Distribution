@@ -6,79 +6,65 @@ import typings.cliInteract.cliInteractBooleans.`true`
 import typings.readlineSync.mod.BasicOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cli-interact", "getChar")
+  @JSImport("cli-interact", JSImport.Namespace)
   @js.native
-  def getChar(promptText: String, allowedCharsAsString: String): String = js.native
-  @JSImport("cli-interact", "getChar")
-  @js.native
-  def getChar(promptText: String, allowedCharsAsString: String, flagAllowNoAnswer: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cli-interact", "getChoice")
-  @js.native
-  def getChoice(title: String, choices: js.Array[String]): String = js.native
-  @JSImport("cli-interact", "getChoice")
-  @js.native
-  def getChoice(title: String, choices: js.Array[String], opts: ChoiceOptionsreturnNumeri): Double = js.native
-  @JSImport("cli-interact", "getChoice")
-  @js.native
-  def getChoice(title: String, choices: js.Array[String], opts: ChoiceOptions): String = js.native
+  @scala.inline
+  def getChar(promptText: String, allowedCharsAsString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getChar")(promptText.asInstanceOf[js.Any], allowedCharsAsString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getChar(promptText: String, allowedCharsAsString: String, flagAllowNoAnswer: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getChar")(promptText.asInstanceOf[js.Any], allowedCharsAsString.asInstanceOf[js.Any], flagAllowNoAnswer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cli-interact", "getChoiceByChar")
-  @js.native
-  def getChoiceByChar(title: String, choices: js.Array[String]): String = js.native
-  @JSImport("cli-interact", "getChoiceByChar")
-  @js.native
-  def getChoiceByChar(title: String, choices: js.Array[String], flagAllowNoAnswer: Boolean): String = js.native
+  @scala.inline
+  def getChoice(title: String, choices: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getChoice")(title.asInstanceOf[js.Any], choices.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getChoice(title: String, choices: js.Array[String], opts: ChoiceOptionsreturnNumeri): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getChoice")(title.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getChoice(title: String, choices: js.Array[String], opts: ChoiceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getChoice")(title.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cli-interact", "getIPversion")
-  @js.native
-  def getIPversion(): String = js.native
-  @JSImport("cli-interact", "getIPversion")
-  @js.native
-  def getIPversion(flagAllowNoAnswer: Boolean): String = js.native
+  @scala.inline
+  def getChoiceByChar(title: String, choices: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getChoiceByChar")(title.asInstanceOf[js.Any], choices.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getChoiceByChar(title: String, choices: js.Array[String], flagAllowNoAnswer: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getChoiceByChar")(title.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], flagAllowNoAnswer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cli-interact", "getInteger")
-  @js.native
-  def getInteger(promptText: String): Double = js.native
+  @scala.inline
+  def getIPversion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIPversion")().asInstanceOf[String]
+  @scala.inline
+  def getIPversion(flagAllowNoAnswer: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIPversion")(flagAllowNoAnswer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cli-interact", "getNumber")
-  @js.native
-  def getNumber(promptText: String): Double = js.native
-  @JSImport("cli-interact", "getNumber")
-  @js.native
-  def getNumber(promptText: String, opts: Boolean): Double = js.native
-  @JSImport("cli-interact", "getNumber")
-  @js.native
-  def getNumber(promptText: String, opts: NumberOptions): Double = js.native
+  @scala.inline
+  def getInteger(promptText: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger")(promptText.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("cli-interact", "getYesNo")
-  @js.native
-  def getYesNo(title: String): Boolean = js.native
-  @JSImport("cli-interact", "getYesNo")
-  @js.native
-  def getYesNo_false(title: String, flagAllowNoAnswer: `false`): Boolean = js.native
-  @JSImport("cli-interact", "getYesNo")
-  @js.native
-  def getYesNo_true(title: String, flagAllowNoAnswer: `true`): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def getNumber(promptText: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumber")(promptText.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getNumber(promptText: String, opts: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumber")(promptText.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getNumber(promptText: String, opts: NumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumber")(promptText.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("cli-interact", "question")
-  @js.native
-  def question(prompt: String): String = js.native
-  @JSImport("cli-interact", "question")
-  @js.native
-  def question(prompt: String, options: BasicOptions): String = js.native
+  @scala.inline
+  def getYesNo(title: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getYesNo")(title.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def getYesNo_false(title: String, flagAllowNoAnswer: `false`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getYesNo")(title.asInstanceOf[js.Any], flagAllowNoAnswer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def getYesNo_true(title: String, flagAllowNoAnswer: `true`): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getYesNo")(title.asInstanceOf[js.Any], flagAllowNoAnswer.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  
+  @scala.inline
+  def question(prompt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(prompt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def question(prompt: String, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("question")(prompt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ChoiceOptions extends StObject {
     
-    var allowNoAnswer: js.UndefOr[Boolean] = js.native
+    var allowNoAnswer: js.UndefOr[Boolean] = js.undefined
     
-    var returnNumeric: js.UndefOr[Boolean] = js.native
+    var returnNumeric: js.UndefOr[Boolean] = js.undefined
   }
   object ChoiceOptions {
     
@@ -105,12 +91,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NumberOptions extends StObject {
     
-    var allowNoAnswer: js.UndefOr[Boolean] = js.native
+    var allowNoAnswer: js.UndefOr[Boolean] = js.undefined
     
-    var requireInteger: js.UndefOr[Boolean] = js.native
+    var requireInteger: js.UndefOr[Boolean] = js.undefined
   }
   object NumberOptions {
     

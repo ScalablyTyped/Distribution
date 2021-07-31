@@ -3,21 +3,19 @@ package typings.webix.webix
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Touch extends StObject {
   
-  var config: js.Any = js.native
+  var config: js.Any
   
-  def disable(): Unit = js.native
+  def disable(): Unit
   
-  def enable(): Unit = js.native
+  def enable(): Unit
   
-  def limit(mode: Boolean): Unit = js.native
+  def limit(mode: Boolean): Unit
   
-  def scrollTo(node: HTMLElement, x: Double, y: Double, speed: String): Unit = js.native
+  def scrollTo(node: HTMLElement, x: Double, y: Double, speed: String): Unit
 }
 object Touch {
   

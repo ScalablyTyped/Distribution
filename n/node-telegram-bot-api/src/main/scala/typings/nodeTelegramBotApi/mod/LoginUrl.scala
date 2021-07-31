@@ -2,19 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginUrl extends StObject {
   
-  var bot_username: js.UndefOr[String] = js.native
+  var bot_username: js.UndefOr[String] = js.undefined
   
-  var forward_text: js.UndefOr[String] = js.native
+  var forward_text: js.UndefOr[String] = js.undefined
   
-  var request_write_acces: js.UndefOr[Boolean] = js.native
+  var request_write_acces: js.UndefOr[Boolean] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object LoginUrl {
   

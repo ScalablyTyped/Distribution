@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.contrastCheckerMod.ContrastChecker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contrastCheckerMod {
@@ -24,22 +23,21 @@ object contrastCheckerMod {
   
   object ContrastChecker {
     
-    @js.native
     trait Props extends StObject {
       
-      var backgroundColor: js.UndefOr[String] = js.native
+      var backgroundColor: js.UndefOr[String] = js.undefined
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var fallbackBackgroundColor: js.UndefOr[String] = js.native
+      var fallbackBackgroundColor: js.UndefOr[String] = js.undefined
       
-      var fallbackTextColor: js.UndefOr[String] = js.native
+      var fallbackTextColor: js.UndefOr[String] = js.undefined
       
-      var fontSize: js.UndefOr[Double] = js.native
+      var fontSize: js.UndefOr[Double] = js.undefined
       
-      var isLargeText: js.UndefOr[Boolean] = js.native
+      var isLargeText: js.UndefOr[Boolean] = js.undefined
       
-      var textColor: js.UndefOr[String] = js.native
+      var textColor: js.UndefOr[String] = js.undefined
     }
     object Props {
       

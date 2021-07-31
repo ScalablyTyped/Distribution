@@ -4,29 +4,27 @@ import typings.glaze.glazeNumbers.`4`
 import typings.glaze.glazeNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  val `1`: typings.glaze.glazeNumbers.`1` = js.native
+  val `1`: typings.glaze.glazeNumbers.`1`
   
-  val `2`: typings.glaze.glazeNumbers.`2` = js.native
+  val `2`: typings.glaze.glazeNumbers.`2`
   
-  val `4`: typings.glaze.glazeNumbers.`4` = js.native
+  val `4`: typings.glaze.glazeNumbers.`4`
   
-  val `8`: typings.glaze.glazeNumbers.`8` = js.native
+  val `8`: typings.glaze.glazeNumbers.`8`
 }
 object `2` {
   
   @scala.inline
-  def apply(`1`: typings.glaze.glazeNumbers.`1`, `2`: typings.glaze.glazeNumbers.`2`, `4`: `4`, `8`: `8`): `2` = {
+  def apply(): `2` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
-    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(1)
+    __obj.updateDynamic("2")(2)
+    __obj.updateDynamic("4")(4)
+    __obj.updateDynamic("8")(8)
     __obj.asInstanceOf[`2`]
   }
   

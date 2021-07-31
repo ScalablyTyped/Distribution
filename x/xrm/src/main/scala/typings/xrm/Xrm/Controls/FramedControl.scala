@@ -4,7 +4,6 @@ import typings.std.HTMLIFrameElement
 import typings.xrm.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @remarks     An Iframe control provides additional methods, so use {@link IframeControl} where
   *              appropriate.  Silverlight controls should use {@link SilverlightControl}.
   */
-@js.native
-trait FramedControl extends Control {
+trait FramedControl
+  extends StObject
+     with Control {
   
   /**
     * Returns the content window that represents an IFRAME or web resource.
@@ -23,28 +23,28 @@ trait FramedControl extends Control {
     * a custom function within the returned window that will receive the Xrm and formContext objects as
     * parameters.
     */
-  def getContentWindow(): js.Promise[Window] = js.native
+  def getContentWindow(): js.Promise[Window]
   
   /**
     * Gets the DOM element containing the control.
     * @returns The container object.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def getObject(): HTMLIFrameElement = js.native
+  def getObject(): HTMLIFrameElement
   
   /**
     * Gets the URL value of the control.
     * @returns The source URL.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def getSrc(): String = js.native
+  def getSrc(): String
   
   /**
     * Sets the URL value of the control.
     * @param src The source URL.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def setSrc(src: String): Unit = js.native
+  def setSrc(src: String): Unit
 }
 object FramedControl {
   

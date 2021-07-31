@@ -4,35 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.urllib.mod.RequestOptions2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HttpClientConfig extends HttpClientBaseConfig {
+trait HttpClientConfig
+  extends StObject
+     with HttpClientBaseConfig {
   
   /** DNS cache lookup interval */
-  var dnsCacheLookupInterval: js.UndefOr[Double] = js.native
+  var dnsCacheLookupInterval: js.UndefOr[Double] = js.undefined
   
   /** DNS cache max age */
-  var dnsCacheMaxLength: js.UndefOr[Double] = js.native
+  var dnsCacheMaxLength: js.UndefOr[Double] = js.undefined
   
   /** Whether enable dns cache */
-  var enableDNSCache: js.UndefOr[Boolean] = js.native
+  var enableDNSCache: js.UndefOr[Boolean] = js.undefined
   
   /** Enable proxy request, default is false. */
-  var enableProxy: js.UndefOr[Boolean] = js.native
+  var enableProxy: js.UndefOr[Boolean] = js.undefined
   
   /** http.Agent */
-  var httpAgent: js.UndefOr[HttpClientBaseConfig] = js.native
+  var httpAgent: js.UndefOr[HttpClientBaseConfig] = js.undefined
   
   /** https.Agent */
-  var httpsAgent: js.UndefOr[HttpClientBaseConfig] = js.native
+  var httpsAgent: js.UndefOr[HttpClientBaseConfig] = js.undefined
   
   /** proxy agent uri or options, default is null. */
-  var proxy: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+  var proxy: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
   
   /** Default request args for httpclient */
-  var request: js.UndefOr[RequestOptions2] = js.native
+  var request: js.UndefOr[RequestOptions2] = js.undefined
 }
 object HttpClientConfig {
   

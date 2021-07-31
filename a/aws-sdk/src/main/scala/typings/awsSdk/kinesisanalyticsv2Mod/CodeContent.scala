@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeContent extends StObject {
   
   /**
     * Information about the Amazon S3 bucket containing the application code.
     */
-  var S3ContentLocation: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ContentLocation] = js.native
+  var S3ContentLocation: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ContentLocation] = js.undefined
   
   /**
     * The text-format code for a Flink-based Kinesis Data Analytics application.
     */
-  var TextContent: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.TextContent] = js.native
+  var TextContent: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.TextContent] = js.undefined
   
   /**
     * The zip-format code for a Flink-based Kinesis Data Analytics application.
     */
-  var ZipFileContent: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ZipFileContent] = js.native
+  var ZipFileContent: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ZipFileContent] = js.undefined
 }
 object CodeContent {
   

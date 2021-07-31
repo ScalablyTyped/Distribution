@@ -4,12 +4,10 @@ import typings.opentelemetryApi.metricMod.Labels
 import typings.opentelemetryApi.observationMod.Observation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batchObserverResultMod {
   
-  @js.native
   trait BatchObserverResult extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object batchObserverResultMod {
       * @param labels
       * @param observations
       */
-    def observe(labels: Labels, observations: js.Array[Observation]): Unit = js.native
+    def observe(labels: Labels, observations: js.Array[Observation]): Unit
   }
   object BatchObserverResult {
     

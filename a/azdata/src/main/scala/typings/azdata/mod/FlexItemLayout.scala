@@ -3,27 +3,25 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexItemLayout extends StObject {
   
   /**
     * Matches the CSS style key and its available values.
     */
-  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.native
+  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Matches the flex CSS property and its available values.
     * Default is "1 1 auto".
     */
-  var flex: js.UndefOr[String] = js.native
+  var flex: js.UndefOr[String] = js.undefined
   
   /**
     * Matches the order CSS property and its available values.
     */
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
 }
 object FlexItemLayout {
   

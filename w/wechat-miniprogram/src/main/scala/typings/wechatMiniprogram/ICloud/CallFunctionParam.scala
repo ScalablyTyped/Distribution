@@ -2,17 +2,17 @@ package typings.wechatMiniprogram.ICloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallFunctionParam extends ICloudAPIParam[CallFunctionResult] {
+trait CallFunctionParam
+  extends StObject
+     with ICloudAPIParam[CallFunctionResult] {
   
-  var data: js.UndefOr[CallFunctionData] = js.native
+  var data: js.UndefOr[CallFunctionData] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var slow: js.UndefOr[Boolean] = js.native
+  var slow: js.UndefOr[Boolean] = js.undefined
 }
 object CallFunctionParam {
   

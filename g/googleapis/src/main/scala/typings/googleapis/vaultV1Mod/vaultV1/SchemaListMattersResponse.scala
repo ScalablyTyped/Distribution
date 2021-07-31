@@ -2,24 +2,22 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the list of matters.
   */
-@js.native
 trait SchemaListMattersResponse extends StObject {
   
   /**
     * List of matters.
     */
-  var matters: js.UndefOr[js.Array[SchemaMatter]] = js.native
+  var matters: js.UndefOr[js.Array[SchemaMatter]] = js.undefined
   
   /**
     * Page token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListMattersResponse {
   

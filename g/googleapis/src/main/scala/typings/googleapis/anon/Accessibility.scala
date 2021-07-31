@@ -3,21 +3,19 @@ package typings.googleapis.anon
 import typings.googleapis.v5Mod.pagespeedonlineV5.SchemaLighthouseCategoryV5
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accessibility extends StObject {
   
-  var accessibility: js.UndefOr[SchemaLighthouseCategoryV5] = js.native
+  var accessibility: js.UndefOr[SchemaLighthouseCategoryV5] = js.undefined
   
-  var `best-practices`: js.UndefOr[SchemaLighthouseCategoryV5] = js.native
+  var `best-practices`: js.UndefOr[SchemaLighthouseCategoryV5] = js.undefined
   
-  var performance: js.UndefOr[SchemaLighthouseCategoryV5] = js.native
+  var performance: js.UndefOr[SchemaLighthouseCategoryV5] = js.undefined
   
-  var pwa: js.UndefOr[SchemaLighthouseCategoryV5] = js.native
+  var pwa: js.UndefOr[SchemaLighthouseCategoryV5] = js.undefined
   
-  var seo: js.UndefOr[SchemaLighthouseCategoryV5] = js.native
+  var seo: js.UndefOr[SchemaLighthouseCategoryV5] = js.undefined
 }
 object Accessibility {
   

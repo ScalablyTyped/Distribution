@@ -10,9 +10,9 @@ Detect character encoding using ICU
 | ------------------ | :-------------: |
 | Full name          | detect-character-encoding |
 | Keywords           | detect, character, encoding, charset, icu |
-| # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 144211 |
+| # releases         | 2 |
+| # dependents       | 16 |
+| # downloads        | 160020 |
 | # stars            | 2 |
 
 ## Links

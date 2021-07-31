@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatchRecorderSupplier
   * @since OOo 1.1.2
   */
-@js.native
-trait XDispatchRecorder extends XInterface {
+trait XDispatchRecorder
+  extends StObject
+     with XInterface {
   
   /**
     * returns the recorded source code
@@ -29,7 +29,7 @@ trait XDispatchRecorder extends XInterface {
     * This method must be used before {@link endRecording()} is called! Otherwise the macro will be released.
     * @returns the recorded data as a string which can be interpreted as a script
     */
-  val RecordedMacro: String = js.native
+  val RecordedMacro: String
   
   /**
     * stops the recording process
@@ -37,7 +37,7 @@ trait XDispatchRecorder extends XInterface {
     * Must be called in pairs with {@link XDispatchRecorder.startRecording()} .
     * @see getRecordedMacro()
     */
-  def endRecording(): Unit = js.native
+  def endRecording(): Unit
   
   /**
     * returns the recorded source code
@@ -45,14 +45,14 @@ trait XDispatchRecorder extends XInterface {
     * This method must be used before {@link endRecording()} is called! Otherwise the macro will be released.
     * @returns the recorded data as a string which can be interpreted as a script
     */
-  def getRecordedMacro(): String = js.native
+  def getRecordedMacro(): String
   
   /**
     * records a single dispatch call identified by its command URL
     * @param URL the full parsed command URL
     * @param Arguments optional arguments for the command URL ;  (see {@link com.sun.star.document.MediaDescriptor} for further information)
     */
-  def recordDispatch(URL: URL, Arguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def recordDispatch(URL: URL, Arguments: SeqEquiv[PropertyValue]): Unit
   
   /**
     * records a single dispatch call identified by its command URL, but comments it out
@@ -61,13 +61,13 @@ trait XDispatchRecorder extends XInterface {
     * @param URL the full parsed command URL
     * @param Arguments optional arguments for the command URL ;  (see {@link com.sun.star.document.MediaDescriptor} for further information)
     */
-  def recordDispatchAsComment(URL: URL, Arguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def recordDispatchAsComment(URL: URL, Arguments: SeqEquiv[PropertyValue]): Unit
   
   /**
     * initializes the recorder by passing the frame for which all macro statements shall be recorded
     * @param Frame it includes the document on which such requests shall be recorded
     */
-  def startRecording(Frame: XFrame): Unit = js.native
+  def startRecording(Frame: XFrame): Unit
 }
 object XDispatchRecorder {
   

@@ -2,7 +2,6 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait AttachmentType extends StObject
 object AttachmentType extends StObject {
   
   @js.native
-  sealed trait BoundingBox extends AttachmentType
+  sealed trait BoundingBox
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Clipping extends AttachmentType
+  sealed trait Clipping
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait LinkedMesh extends AttachmentType
+  sealed trait LinkedMesh
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Mesh extends AttachmentType
+  sealed trait Mesh
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Path extends AttachmentType
+  sealed trait Path
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Point extends AttachmentType
+  sealed trait Point
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Region extends AttachmentType
+  sealed trait Region
+    extends StObject
+       with AttachmentType
 }

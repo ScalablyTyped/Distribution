@@ -2,7 +2,6 @@ package typings.wordpressApiFetch.mod.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EmbedKeys {
@@ -19,7 +18,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.`type`
   */
   trait Block
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Block
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Block
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -32,7 +32,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.taxonomy
   */
   trait Category
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Category
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Category
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.wordpressApiFetchStrings._embedded
@@ -49,7 +50,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.`type`
   */
   trait Comment
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Comment
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Comment
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.wordpressApiFetchStrings._embedded
@@ -69,7 +71,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.`type`
   */
   trait Media
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Media
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Media
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.wordpressApiFetchStrings._embedded
@@ -85,7 +88,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.`type`
   */
   trait Page
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Page
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.wordpressApiFetchStrings._embedded
@@ -101,7 +105,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.`type`
   */
   trait Post
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Post
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -116,7 +121,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.title
   */
   trait PostRevision
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.PostRevision
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -126,7 +132,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.slug
   */
   trait Status
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Status
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Status
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -149,7 +156,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.slug
   */
   trait Taxonomy
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Taxonomy
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Taxonomy
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -160,7 +168,8 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.slug
   */
   trait Type
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.Type
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.Type
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -175,5 +184,6 @@ object EmbedKeys {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.url
   */
   trait User
-    extends typings.wordpressApiFetch.mod.Schema.ViewKeys.User
+    extends StObject
+       with typings.wordpressApiFetch.mod.Schema.ViewKeys.User
 }

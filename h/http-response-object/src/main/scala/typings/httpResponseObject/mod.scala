@@ -3,7 +3,6 @@ package typings.httpResponseObject
 import typings.node.httpMod.IncomingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
     */
   @JSImport("http-response-object", JSImport.Namespace)
   @js.native
-  class ^[TBody] protected () extends Response[TBody] {
+  class ^[TBody] protected ()
+    extends StObject
+       with Response[TBody] {
     def this(statusCode: Double, headers: IncomingHttpHeaders, body: TBody, url: String) = this()
   }
   

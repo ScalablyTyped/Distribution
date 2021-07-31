@@ -2,21 +2,19 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The root node in the resource hierarchy to which a particular entity&#39;s
   * (e.g., company) resources belong.
   */
-@js.native
 trait SchemaOrganization extends StObject {
   
   /**
     * Timestamp when the Organization was created. Assigned by the server.
     * @OutputOnly
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable string that refers to the Organization in the GCP
@@ -25,13 +23,13 @@ trait SchemaOrganization extends StObject {
     * &quot;google.com&quot;) of the G Suite customer that owns the
     * organization. @OutputOnly
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The organization&#39;s current lifecycle state. Assigned by the server.
     * @OutputOnly
     */
-  var lifecycleState: js.UndefOr[String] = js.native
+  var lifecycleState: js.UndefOr[String] = js.undefined
   
   /**
     * Output Only. The resource name of the organization. This is the
@@ -39,13 +37,13 @@ trait SchemaOrganization extends StObject {
     * &quot;organizations/[organization_id]&quot;. For example,
     * &quot;organizations/1234&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of this Organization. The owner should be specified on
     * creation. Once set, it cannot be changed. This field is required.
     */
-  var owner: js.UndefOr[SchemaOrganizationOwner] = js.native
+  var owner: js.UndefOr[SchemaOrganizationOwner] = js.undefined
 }
 object SchemaOrganization {
   

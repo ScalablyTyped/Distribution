@@ -5,23 +5,23 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReorderingRule extends ClientValueObject {
+trait ReorderingRule
+  extends StObject
+     with ClientValueObject {
   
-  def get_boost(): Double = js.native
+  def get_boost(): Double
   
-  def get_matchType(): ReorderingRuleMatchType = js.native
+  def get_matchType(): ReorderingRuleMatchType
   
-  def get_matchValue(): String = js.native
+  def get_matchValue(): String
   
-  def set_boost(value: Double): Unit = js.native
+  def set_boost(value: Double): Unit
   
-  def set_matchType(value: ReorderingRuleMatchType): Unit = js.native
+  def set_matchType(value: ReorderingRuleMatchType): Unit
   
-  def set_matchValue(value: String): Unit = js.native
+  def set_matchValue(value: String): Unit
 }
 object ReorderingRule {
   

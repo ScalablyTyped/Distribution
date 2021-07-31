@@ -3,21 +3,19 @@ package typings.reduxFirstRouter.mod
 import typings.reduxFirstRouter.anon.NotFoundPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReceivedActionMeta extends StObject {
   
-  var meta: NotFoundPath = js.native
+  var meta: NotFoundPath
   
-  var navKey: js.UndefOr[Nullable[String]] = js.native
+  var navKey: js.UndefOr[Nullable[String]] = js.undefined
   
-  var payload: Payload = js.native
+  var payload: Payload
   
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ReceivedActionMeta {
   

@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
@@ -29,7 +28,7 @@ object eventMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EventArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EventArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -120,6 +119,10 @@ object eventMod {
   /* static members */
   object Event {
     
+    @JSImport("@pulumi/kubernetes/core/v1/event", "Event")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Event resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -128,109 +131,105 @@ object eventMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/event", "Event.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Event = js.native
-    @JSImport("@pulumi/kubernetes/core/v1/event", "Event.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Event = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Event]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Event]
     
     /**
       * Returns true if the given object is an instance of Event.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/event", "Event.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/event.Event */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/event.Event */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/event.Event */ Boolean]
   }
   
-  @js.native
   trait EventArgs extends StObject {
     
     /**
       * What action was taken/failed regarding to the Regarding object.
       */
-    val action: js.UndefOr[Input[String]] = js.native
+    val action: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * The number of times this event has occurred.
       */
-    val count: js.UndefOr[Input[Double]] = js.native
+    val count: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Time when this Event was first observed.
       */
-    val eventTime: js.UndefOr[Input[String]] = js.native
+    val eventTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time at which the event was first recorded. (Time of server receipt is in TypeMeta.)
       */
-    val firstTimestamp: js.UndefOr[Input[String]] = js.native
+    val firstTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The object that this event is about.
       */
-    val involvedObject: Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference] = js.native
+    val involvedObject: Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Event]] = js.undefined
     
     /**
       * The time at which the most recent occurrence of this event was recorded.
       */
-    val lastTimestamp: js.UndefOr[Input[String]] = js.native
+    val lastTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A human-readable description of the status of this operation.
       */
-    val message: js.UndefOr[Input[String]] = js.native
+    val message: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta] = js.native
+    val metadata: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]
     
     /**
       * This should be a short, machine understandable string that gives the reason for the transition into the object's current status.
       */
-    val reason: js.UndefOr[Input[String]] = js.native
+    val reason: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Optional secondary object for more complex actions.
       */
-    val related: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]] = js.native
+    val related: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]] = js.undefined
     
     /**
       * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
       */
-    val reportingComponent: js.UndefOr[Input[String]] = js.native
+    val reportingComponent: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the controller instance, e.g. `kubelet-xyzf`.
       */
-    val reportingInstance: js.UndefOr[Input[String]] = js.native
+    val reportingInstance: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Data about the Event series this event represents or nil if it's a singleton Event.
       */
-    val series: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.EventSeries]] = js.native
+    val series: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.EventSeries]] = js.undefined
     
     /**
       * The component reporting this event. Should be a short machine understandable string.
       */
-    val source: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.EventSource]] = js.native
+    val source: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.core.v1.EventSource]] = js.undefined
     
     /**
       * Type of this event (Normal, Warning), new types could be added in the future
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object EventArgs {
     

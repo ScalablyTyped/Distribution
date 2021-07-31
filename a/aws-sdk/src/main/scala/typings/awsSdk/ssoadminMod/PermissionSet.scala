@@ -2,41 +2,39 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionSet extends StObject {
   
   /**
     * The date that the permission set was created.
     */
-  var CreatedDate: js.UndefOr[Date] = js.native
+  var CreatedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The description of the PermissionSet.
     */
-  var Description: js.UndefOr[PermissionSetDescription] = js.native
+  var Description: js.UndefOr[PermissionSetDescription] = js.undefined
   
   /**
     * The name of the permission set.
     */
-  var Name: js.UndefOr[PermissionSetName] = js.native
+  var Name: js.UndefOr[PermissionSetName] = js.undefined
   
   /**
     * The ARN of the permission set. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var PermissionSetArn: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSetArn] = js.native
+  var PermissionSetArn: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSetArn] = js.undefined
   
   /**
     * Used to redirect users within the application during the federation authentication process.
     */
-  var RelayState: js.UndefOr[typings.awsSdk.ssoadminMod.RelayState] = js.native
+  var RelayState: js.UndefOr[typings.awsSdk.ssoadminMod.RelayState] = js.undefined
   
   /**
     * The length of time that the application user sessions are valid for in the ISO-8601 standard.
     */
-  var SessionDuration: js.UndefOr[Duration] = js.native
+  var SessionDuration: js.UndefOr[Duration] = js.undefined
 }
 object PermissionSet {
   

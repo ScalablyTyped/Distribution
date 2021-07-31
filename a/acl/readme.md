@@ -12,7 +12,7 @@ An Access Control List module, based on Redis with Express middleware support
 | Keywords           | middleware, acl, web |
 | # releases         | 0 |
 | # dependents       | 53 |
-| # downloads        | 342059 |
+| # downloads        | 313514 |
 | # stars            | 60 |
 
 ## Links

@@ -5,23 +5,21 @@ import typings.rcAlign.anon.AdjustY
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
   type AlignPoint = String
   
-  @js.native
   trait AlignResult extends StObject {
     
-    var offset: js.Array[Double] = js.native
+    var offset: js.Array[Double]
     
-    var overflow: AdjustY = js.native
+    var overflow: AdjustY
     
-    var points: js.Array[AlignPoint] = js.native
+    var points: js.Array[AlignPoint]
     
-    var targetOffset: js.Array[Double] = js.native
+    var targetOffset: js.Array[Double]
   }
   object AlignResult {
     
@@ -62,48 +60,47 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait AlignType extends StObject {
     
     /**
       * offset source node by offset[0] in x and offset[1] in y.
       * If offset contains percentage string value, it is relative to sourceNode region.
       */
-    var offset: js.UndefOr[js.Array[Double]] = js.native
+    var offset: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * If adjustX field is true, will adjust source node in x direction if source node is invisible.
       * If adjustY field is true, will adjust source node in y direction if source node is invisible.
       */
-    var overflow: js.UndefOr[AdjustX] = js.native
+    var overflow: js.UndefOr[AdjustX] = js.undefined
     
     /**
       * move point of source node to align with point of target node.
       * Such as ['tr','cc'], align top right point of source node with center point of target node.
       * Point can be 't'(top), 'b'(bottom), 'c'(center), 'l'(left), 'r'(right) */
-    var points: js.UndefOr[js.Array[AlignPoint]] = js.native
+    var points: js.UndefOr[js.Array[AlignPoint]] = js.undefined
     
     /**
       * offset target node by offset[0] in x and offset[1] in y.
       * If targetOffset contains percentage string value, it is relative to targetNode region.
       */
-    var targetOffset: js.UndefOr[js.Array[Double]] = js.native
+    var targetOffset: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Whether use css bottom instead of top to position
       */
-    var useCssBottom: js.UndefOr[Boolean] = js.native
+    var useCssBottom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether use css right instead of left to position
       */
-    var useCssRight: js.UndefOr[Boolean] = js.native
+    var useCssRight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether use css transform instead of left/top/right/bottom to position if browser supports.
       * Defaults to false.
       */
-    var useCssTransform: js.UndefOr[Boolean] = js.native
+    var useCssTransform: js.UndefOr[Boolean] = js.undefined
   }
   object AlignType {
     
@@ -169,16 +166,15 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait TargetPoint extends StObject {
     
-    var clientX: js.UndefOr[Double] = js.native
+    var clientX: js.UndefOr[Double] = js.undefined
     
-    var clientY: js.UndefOr[Double] = js.native
+    var clientY: js.UndefOr[Double] = js.undefined
     
-    var pageX: js.UndefOr[Double] = js.native
+    var pageX: js.UndefOr[Double] = js.undefined
     
-    var pageY: js.UndefOr[Double] = js.native
+    var pageY: js.UndefOr[Double] = js.undefined
   }
   object TargetPoint {
     

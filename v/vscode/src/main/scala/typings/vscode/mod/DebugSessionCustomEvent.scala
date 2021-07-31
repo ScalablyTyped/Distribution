@@ -2,26 +2,24 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugSessionCustomEvent extends StObject {
   
   /**
     * Event specific information.
     */
-  val body: js.UndefOr[js.Any] = js.native
+  val body: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Type of event.
     */
-  val event: String = js.native
+  val event: String
   
   /**
     * The [debug session](#DebugSession) for which the custom event was received.
     */
-  val session: DebugSession = js.native
+  val session: DebugSession
 }
 object DebugSessionCustomEvent {
   

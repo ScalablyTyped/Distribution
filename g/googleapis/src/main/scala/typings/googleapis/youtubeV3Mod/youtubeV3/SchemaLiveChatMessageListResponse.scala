@@ -2,58 +2,56 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveChatMessageListResponse extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Serialized EventId of the request which produced this response.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of live chat messages.
     */
-  var items: js.UndefOr[js.Array[SchemaLiveChatMessage]] = js.native
+  var items: js.UndefOr[js.Array[SchemaLiveChatMessage]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#liveChatMessageListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The token that can be used as the value of the pageToken parameter to
     * retrieve the next page in the result set.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the underlying stream went offline. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var offlineAt: js.UndefOr[String] = js.native
+  var offlineAt: js.UndefOr[String] = js.undefined
   
-  var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
+  var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   /**
     * The amount of time the client should wait before polling again.
     */
-  var pollingIntervalMillis: js.UndefOr[Double] = js.native
+  var pollingIntervalMillis: js.UndefOr[Double] = js.undefined
   
-  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.native
+  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
   
   /**
     * The visitorId identifies the visitor.
     */
-  var visitorId: js.UndefOr[String] = js.native
+  var visitorId: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveChatMessageListResponse {
   

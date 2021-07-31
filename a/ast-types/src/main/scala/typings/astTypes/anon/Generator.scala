@@ -14,37 +14,35 @@ import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Generator extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var body: BlockStatementKind | ExpressionKind = js.native
+  var body: BlockStatementKind | ExpressionKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var defaults: js.UndefOr[js.Array[ExpressionKind | Null]] = js.native
+  var defaults: js.UndefOr[js.Array[ExpressionKind | Null]] = js.undefined
   
-  var expression: js.UndefOr[Boolean] = js.native
+  var expression: js.UndefOr[Boolean] = js.undefined
   
-  var generator: js.UndefOr[`false`] = js.native
+  var generator: js.UndefOr[`false`] = js.undefined
   
-  var id: js.UndefOr[Null] = js.native
+  var id: js.UndefOr[Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var params: js.Array[PatternKind] = js.native
+  var params: js.Array[PatternKind]
   
-  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.native
+  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.undefined
   
-  var rest: js.UndefOr[IdentifierKind | Null] = js.native
+  var rest: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.native
+  var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object Generator {
   

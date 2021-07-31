@@ -14,7 +14,6 @@ import typings.firebaseStorage.taskenumsMod.InternalTaskState
 import typings.firebaseStorage.taskenumsMod.TaskEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcTaskMod {
@@ -139,38 +138,32 @@ object srcTaskMod {
       * @param type - The type of event to listen for.
       */
     def on(`type`: TaskEvent): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      error: Unit,
       completed: CompleteFn
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: js.UndefOr[scala.Nothing], error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      error: ErrorFn
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
       error: ErrorFn,
       completed: CompleteFn
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(
-      `type`: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
-      error: js.UndefOr[scala.Nothing],
-      completed: CompleteFn
-    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _], error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(
-      `type`: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
-      error: ErrorFn,
-      completed: CompleteFn
-    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: Unit, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: ErrorFn, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshot]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
-      error: js.UndefOr[scala.Nothing],
+      error: Unit,
       completed: CompleteFn
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshot], error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
@@ -202,15 +195,12 @@ object srcTaskMod {
       * @param onRejected - The rejection callback.
       */
     def `then`[U](): js.Promise[U] = js.native
-    def `then`[U](
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]
-    ): js.Promise[U] = js.native
     def `then`[U](onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]]): js.Promise[U] = js.native
     def `then`[U](
       onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]],
       onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]
     ): js.Promise[U] = js.native
     def `then`[U](onFulfilled: Null, onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]): js.Promise[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]): js.Promise[U] = js.native
   }
 }

@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.InterfaceTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `8` extends StObject {
   
-  var `type`: InterfaceTypeAnnotation = js.native
+  var `type`: InterfaceTypeAnnotation
 }
 object `8` {
   
   @scala.inline
-  def apply(`type`: InterfaceTypeAnnotation): `8` = {
+  def apply(): `8` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("InterfaceTypeAnnotation")
     __obj.asInstanceOf[`8`]
   }
   

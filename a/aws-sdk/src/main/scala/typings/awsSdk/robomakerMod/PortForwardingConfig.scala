@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortForwardingConfig extends StObject {
   
   /**
     * The port mappings for the configuration.
     */
-  var portMappings: js.UndefOr[PortMappingList] = js.native
+  var portMappings: js.UndefOr[PortMappingList] = js.undefined
 }
 object PortForwardingConfig {
   

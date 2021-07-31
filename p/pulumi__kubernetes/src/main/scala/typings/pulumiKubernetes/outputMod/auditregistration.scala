@@ -4,7 +4,6 @@ import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import typings.pulumiKubernetes.pulumiKubernetesStrings.auditregistrationDotk8sDotioSlashv1alpha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auditregistration {
@@ -14,36 +13,30 @@ object auditregistration {
     /**
       * AuditSink represents a cluster level audit sink
       */
-    @js.native
     trait AuditSink extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: auditregistrationDotk8sDotioSlashv1alpha1 = js.native
+      var apiVersion: auditregistrationDotk8sDotioSlashv1alpha1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink
       
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Spec defines the audit configuration spec
         */
-      var spec: AuditSinkSpec = js.native
+      var spec: AuditSinkSpec
     }
     object AuditSink {
       
       @scala.inline
-      def apply(
-        apiVersion: auditregistrationDotk8sDotioSlashv1alpha1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink,
-        metadata: ObjectMeta,
-        spec: AuditSinkSpec
-      ): AuditSink = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: AuditSinkSpec): AuditSink = {
+        val __obj = js.Dynamic.literal(apiVersion = "auditregistration.k8s.io/v1alpha1", kind = "AuditSink", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[AuditSink]
       }
       
@@ -67,18 +60,17 @@ object auditregistration {
     /**
       * AuditSinkSpec holds the spec for the audit sink
       */
-    @js.native
     trait AuditSinkSpec extends StObject {
       
       /**
         * Policy defines the policy for selecting which events should be sent to the webhook required
         */
-      var policy: Policy = js.native
+      var policy: Policy
       
       /**
         * Webhook to send events required
         */
-      var webhook: Webhook = js.native
+      var webhook: Webhook
     }
     object AuditSinkSpec {
       
@@ -102,18 +94,17 @@ object auditregistration {
     /**
       * Policy defines the configuration of how audit events are logged
       */
-    @js.native
     trait Policy extends StObject {
       
       /**
         * The Level that all requests are recorded at. available options: None, Metadata, Request, RequestResponse required
         */
-      var level: String = js.native
+      var level: String
       
       /**
         * Stages is a list of stages for which events are created.
         */
-      var stages: js.Array[String] = js.native
+      var stages: js.Array[String]
     }
     object Policy {
       
@@ -140,28 +131,27 @@ object auditregistration {
     /**
       * ServiceReference holds a reference to Service.legacy.k8s.io
       */
-    @js.native
     trait ServiceReference extends StObject {
       
       /**
         * `name` is the name of the service. Required
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * `namespace` is the namespace of the service. Required
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * `path` is an optional URL path which will be sent in any request to this service.
         */
-      var path: String = js.native
+      var path: String
       
       /**
         * If specified, the port on the service that hosting webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive).
         */
-      var port: Double = js.native
+      var port: Double
     }
     object ServiceReference {
       
@@ -191,18 +181,17 @@ object auditregistration {
     /**
       * Webhook holds the configuration of the webhook
       */
-    @js.native
     trait Webhook extends StObject {
       
       /**
         * ClientConfig holds the connection parameters for the webhook required
         */
-      var clientConfig: WebhookClientConfig = js.native
+      var clientConfig: WebhookClientConfig
       
       /**
         * Throttle holds the options for throttling the webhook
         */
-      var throttle: WebhookThrottleConfig = js.native
+      var throttle: WebhookThrottleConfig
     }
     object Webhook {
       
@@ -226,20 +215,19 @@ object auditregistration {
     /**
       * WebhookClientConfig contains the information to make a connection with the webhook
       */
-    @js.native
     trait WebhookClientConfig extends StObject {
       
       /**
         * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server certificate. If unspecified, system trust roots on the apiserver are used.
         */
-      var caBundle: String = js.native
+      var caBundle: String
       
       /**
         * `service` is a reference to the service for this webhook. Either `service` or `url` must be specified.
         *
         * If the webhook is running within the cluster, then you should use `service`.
         */
-      var service: ServiceReference = js.native
+      var service: ServiceReference
       
       /**
         * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`). Exactly one of `url` or `service` must be specified.
@@ -254,7 +242,7 @@ object auditregistration {
         *
         * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments ("#...") and query parameters ("?...") are not allowed, either.
         */
-      var url: String = js.native
+      var url: String
     }
     object WebhookClientConfig {
       
@@ -281,18 +269,17 @@ object auditregistration {
     /**
       * WebhookThrottleConfig holds the configuration for throttling events
       */
-    @js.native
     trait WebhookThrottleConfig extends StObject {
       
       /**
         * ThrottleBurst is the maximum number of events sent at the same moment default 15 QPS
         */
-      var burst: Double = js.native
+      var burst: Double
       
       /**
         * ThrottleQPS maximum number of batches per second default 10 QPS
         */
-      var qps: Double = js.native
+      var qps: Double
     }
     object WebhookThrottleConfig {
       

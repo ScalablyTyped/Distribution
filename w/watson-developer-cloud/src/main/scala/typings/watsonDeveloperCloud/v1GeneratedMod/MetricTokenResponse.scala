@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The response generated from a call to a **metrics** method that evaluates tokens. */
-@js.native
 trait MetricTokenResponse extends StObject {
   
   /** Array of metric token aggregations. */
-  var aggregations: js.UndefOr[js.Array[MetricTokenAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[MetricTokenAggregation]] = js.undefined
 }
 object MetricTokenResponse {
   

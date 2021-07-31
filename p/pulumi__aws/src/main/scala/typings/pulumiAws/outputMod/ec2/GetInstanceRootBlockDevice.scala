@@ -2,45 +2,43 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceRootBlockDevice extends StObject {
   
   /**
     * If the root block device will be deleted on termination.
     */
-  var deleteOnTermination: Boolean = js.native
+  var deleteOnTermination: Boolean
   
   /**
     * The physical name of the device.
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * If the EBS volume is encrypted.
     */
-  var encrypted: Boolean = js.native
+  var encrypted: Boolean
   
   /**
     * `0` If the volume is not a provisioned IOPS image, otherwise the supported IOPS count.
     */
-  var iops: Double = js.native
+  var iops: Double
   
-  var kmsKeyId: String = js.native
+  var kmsKeyId: String
   
-  var volumeId: String = js.native
+  var volumeId: String
   
   /**
     * The size of the volume, in GiB.
     */
-  var volumeSize: Double = js.native
+  var volumeSize: Double
   
   /**
     * The type of the volume.
     */
-  var volumeType: String = js.native
+  var volumeType: String
 }
 object GetInstanceRootBlockDevice {
   

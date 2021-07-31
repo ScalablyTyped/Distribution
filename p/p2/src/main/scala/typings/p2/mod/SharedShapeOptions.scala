@@ -2,23 +2,21 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedShapeOptions extends StObject {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var collisionGroup: js.UndefOr[Double] = js.native
+  var collisionGroup: js.UndefOr[Double] = js.undefined
   
-  var collisionMask: js.UndefOr[Double] = js.native
+  var collisionMask: js.UndefOr[Double] = js.undefined
   
-  var collisionResponse: js.UndefOr[Boolean] = js.native
+  var collisionResponse: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var position: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var sensor: js.UndefOr[Boolean] = js.native
+  var sensor: js.UndefOr[Boolean] = js.undefined
 }
 object SharedShapeOptions {
   

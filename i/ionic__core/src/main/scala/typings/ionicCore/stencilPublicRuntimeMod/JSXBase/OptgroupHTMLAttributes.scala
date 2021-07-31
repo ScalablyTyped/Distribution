@@ -2,15 +2,15 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptgroupHTMLAttributes[T] extends HTMLAttributes[T] {
+trait OptgroupHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object OptgroupHTMLAttributes {
   
@@ -21,7 +21,7 @@ object OptgroupHTMLAttributes {
   }
   
   @scala.inline
-  implicit class OptgroupHTMLAttributesMutableBuilder[Self <: OptgroupHTMLAttributes[_], T] (val x: Self with OptgroupHTMLAttributes[T]) extends AnyVal {
+  implicit class OptgroupHTMLAttributesMutableBuilder[Self <: OptgroupHTMLAttributes[?], T] (val x: Self & OptgroupHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])

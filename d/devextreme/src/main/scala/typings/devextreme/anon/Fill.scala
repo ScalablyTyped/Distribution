@@ -5,19 +5,17 @@ import typings.devextreme.devextremeStrings.normal
 import typings.devextreme.devextremeStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var state: js.UndefOr[normal | hovered | selected] = js.native
+  var state: js.UndefOr[normal | hovered | selected] = js.undefined
 }
 object Fill {
   

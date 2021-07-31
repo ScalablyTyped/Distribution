@@ -22,144 +22,144 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait colorCreateAgeRendererParams extends Object {
+trait colorCreateAgeRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var colorMixMode: js.UndefOr[String] = js.native
+  var colorMixMode: js.UndefOr[String] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var colorScheme: js.UndefOr[ColorScheme] = js.native
+  var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.native
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to add edges to the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var edgesType: js.UndefOr[solid | none] = js.native
+  var edgesType: js.UndefOr[solid | none] = js.undefined
   
   /**
     * The name of the field, or a date value representing the end time in the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var endTime: Date | String | Double = js.native
+  var endTime: Date | String | Double
   
   /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var legendOptions: js.UndefOr[colorCreateAgeRendererParamsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[colorCreateAgeRendererParamsLegendOptions] = js.undefined
   
   /**
     * Sets a maximum age for the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets a minimum age for the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * For polygon layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * For point and polyline layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the field, or a date value representing the start time in the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var startTime: Date | String | Double = js.native
+  var startTime: Date | String | Double
   
   /**
     * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var statistics: js.UndefOr[SummaryStatisticsResult] = js.native
+  var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
   
   /**
     * The type of symbol to generate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.native
+  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
     * Determines which values will be emphasized in the continuous ramp and the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var theme: js.UndefOr[`high-to-low` | `above-and-below` | `centered-on` | extremes] = js.native
+  var theme: js.UndefOr[`high-to-low` | `above-and-below` | `centered-on` | extremes] = js.undefined
   
   /**
     * The time unit used to calculate the difference between `endTime` and `startTime`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.native
+  var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.undefined
   
   /**
     * The view where the input layer is rendered.
     *
     * [Read more...](global.html)
     */
-  var view: View = js.native
+  var view: View
 }
 object colorCreateAgeRendererParams {
   

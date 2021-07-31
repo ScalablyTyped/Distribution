@@ -2,7 +2,6 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,21 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * paused if has_buyer_paused || has_seller_paused. Each of the
   * has_buyer_paused or the has_seller_paused bits can be set independently.
   */
-@js.native
 trait SchemaDealServingMetadataDealPauseStatus extends StObject {
   
-  var buyerPauseReason: js.UndefOr[String] = js.native
+  var buyerPauseReason: js.UndefOr[String] = js.undefined
   
   /**
     * If the deal is paused, records which party paused the deal first.
     */
-  var firstPausedBy: js.UndefOr[String] = js.native
+  var firstPausedBy: js.UndefOr[String] = js.undefined
   
-  var hasBuyerPaused: js.UndefOr[Boolean] = js.native
+  var hasBuyerPaused: js.UndefOr[Boolean] = js.undefined
   
-  var hasSellerPaused: js.UndefOr[Boolean] = js.native
+  var hasSellerPaused: js.UndefOr[Boolean] = js.undefined
   
-  var sellerPauseReason: js.UndefOr[String] = js.native
+  var sellerPauseReason: js.UndefOr[String] = js.undefined
 }
 object SchemaDealServingMetadataDealPauseStatus {
   

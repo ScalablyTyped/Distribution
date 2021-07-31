@@ -2,14 +2,15 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a directory on a file system.
   */
 @js.native
-trait DirectoryEntrySync extends EntrySync {
+trait DirectoryEntrySync
+  extends StObject
+     with EntrySync {
   
   /**
     * Creates a new DirectoryReaderSync to read EntrySyncs from this DirectorySync.

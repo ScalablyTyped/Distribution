@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConcurrentAccessRestriction extends StObject {
   
   /** Whether access is granted for this (user, device, volume). */
-  var deviceAllowed: js.UndefOr[Boolean] = js.native
+  var deviceAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The maximum number of concurrent access licenses for this volume. */
-  var maxConcurrentDevices: js.UndefOr[Double] = js.native
+  var maxConcurrentDevices: js.UndefOr[Double] = js.undefined
   
   /** Error/warning message. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** Client nonce for verification. Download access and client-validation only. */
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
   /** Error/warning reason code. */
-  var reasonCode: js.UndefOr[String] = js.native
+  var reasonCode: js.UndefOr[String] = js.undefined
   
   /** Whether this volume has any concurrent access restrictions. */
-  var restricted: js.UndefOr[Boolean] = js.native
+  var restricted: js.UndefOr[Boolean] = js.undefined
   
   /** Response signature. */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
   
   /** Client app identifier for verification. Download access and client-validation only. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** Time in seconds for license auto-expiration. */
-  var timeWindowSeconds: js.UndefOr[Double] = js.native
+  var timeWindowSeconds: js.UndefOr[Double] = js.undefined
   
   /** Identifies the volume for which this entry applies. */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object ConcurrentAccessRestriction {
   

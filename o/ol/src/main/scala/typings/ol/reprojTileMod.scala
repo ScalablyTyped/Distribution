@@ -4,7 +4,6 @@ import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reprojTileMod {
@@ -45,19 +44,6 @@ object reprojTileMod {
       pixelRatio: Double,
       gutter: Double,
       getTileFunction: FunctionType,
-      opt_errorThreshold: js.UndefOr[scala.Nothing],
-      opt_renderEdges: Boolean
-    ) = this()
-    def this(
-      sourceProj: typings.ol.projectionMod.default,
-      sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
-      targetTileGrid: typings.ol.tilegridTileGridMod.default,
-      tileCoord: TileCoord,
-      wrappedTileCoord: TileCoord,
-      pixelRatio: Double,
-      gutter: Double,
-      getTileFunction: FunctionType,
       opt_errorThreshold: Double,
       opt_renderEdges: Boolean
     ) = this()
@@ -71,9 +57,8 @@ object reprojTileMod {
       pixelRatio: Double,
       gutter: Double,
       getTileFunction: FunctionType,
-      opt_errorThreshold: js.UndefOr[scala.Nothing],
-      opt_renderEdges: js.UndefOr[scala.Nothing],
-      opt_contextOptions: js.Any
+      opt_errorThreshold: Unit,
+      opt_renderEdges: Boolean
     ) = this()
     def this(
       sourceProj: typings.ol.projectionMod.default,
@@ -85,7 +70,7 @@ object reprojTileMod {
       pixelRatio: Double,
       gutter: Double,
       getTileFunction: FunctionType,
-      opt_errorThreshold: js.UndefOr[scala.Nothing],
+      opt_errorThreshold: Double,
       opt_renderEdges: Boolean,
       opt_contextOptions: js.Any
     ) = this()
@@ -100,7 +85,7 @@ object reprojTileMod {
       gutter: Double,
       getTileFunction: FunctionType,
       opt_errorThreshold: Double,
-      opt_renderEdges: js.UndefOr[scala.Nothing],
+      opt_renderEdges: Unit,
       opt_contextOptions: js.Any
     ) = this()
     def this(
@@ -113,8 +98,22 @@ object reprojTileMod {
       pixelRatio: Double,
       gutter: Double,
       getTileFunction: FunctionType,
-      opt_errorThreshold: Double,
+      opt_errorThreshold: Unit,
       opt_renderEdges: Boolean,
+      opt_contextOptions: js.Any
+    ) = this()
+    def this(
+      sourceProj: typings.ol.projectionMod.default,
+      sourceTileGrid: typings.ol.tilegridTileGridMod.default,
+      targetProj: typings.ol.projectionMod.default,
+      targetTileGrid: typings.ol.tilegridTileGridMod.default,
+      tileCoord: TileCoord,
+      wrappedTileCoord: TileCoord,
+      pixelRatio: Double,
+      gutter: Double,
+      getTileFunction: FunctionType,
+      opt_errorThreshold: Unit,
+      opt_renderEdges: Unit,
       opt_contextOptions: js.Any
     ) = this()
   }

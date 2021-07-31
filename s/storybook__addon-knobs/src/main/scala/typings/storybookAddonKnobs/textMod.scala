@@ -2,10 +2,10 @@ package typings.storybookAddonKnobs
 
 import typings.react.mod.Component
 import typings.storybookAddonKnobs.anon.OnChange
+import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
@@ -26,9 +26,8 @@ object textMod {
     @scala.inline
     def defaultProps_=(x: TextTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Text", "default.deserialize")
-    @js.native
-    def deserialize(value: TextTypeKnobValue): String = js.native
+    @scala.inline
+    def deserialize(value: TextTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Text", "default.propTypes")
     @js.native
@@ -36,9 +35,8 @@ object textMod {
     @scala.inline
     def propTypes_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Text", "default.serialize")
-    @js.native
-    def serialize(value: TextTypeKnobValue): String = js.native
+    @scala.inline
+    def serialize(value: TextTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -51,21 +49,18 @@ object textMod {
     def shouldComponentUpdate_MTextType(nextProps: TextTypeProps): Boolean = js.native
   }
   
-  /* Inlined @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/types.KnobControlConfig<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Text.TextTypeKnobValue> & {  value :@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Text.TextTypeKnobValue | undefined} */
-  @js.native
-  trait TextTypeKnob extends StObject {
+  trait TextTypeKnob
+    extends StObject
+       with KnobControlConfig[TextTypeKnobValue] {
     
-    var defaultValue: js.UndefOr[TextTypeKnobValue] = js.native
-    
-    var name: String = js.native
-    
-    var value: TextTypeKnobValue with js.UndefOr[TextTypeKnobValue] = js.native
+    @JSName("value")
+    var value_TextTypeKnob: js.UndefOr[TextTypeKnobValue] = js.undefined
   }
   object TextTypeKnob {
     
     @scala.inline
-    def apply(name: String, value: TextTypeKnobValue with js.UndefOr[TextTypeKnobValue]): TextTypeKnob = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(name: String): TextTypeKnob = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextTypeKnob]
     }
     
@@ -73,16 +68,10 @@ object textMod {
     implicit class TextTypeKnobMutableBuilder[Self <: TextTypeKnob] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDefaultValue(value: TextTypeKnobValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setValue(value: TextTypeKnobValue with js.UndefOr[TextTypeKnobValue]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

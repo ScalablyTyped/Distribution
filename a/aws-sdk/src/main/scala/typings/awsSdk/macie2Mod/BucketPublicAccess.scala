@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketPublicAccess extends StObject {
   
   /**
     *  Specifies whether the bucket is publicly accessible due to the combination of permissions settings that apply to the bucket. Possible values are: NOT_PUBLIC - The bucket isn't publicly accessible. PUBLIC - The bucket is publicly accessible. UNKNOWN - Amazon Macie can't determine whether the bucket is publicly accessible.
     */
-  var effectivePermission: js.UndefOr[EffectivePermission] = js.native
+  var effectivePermission: js.UndefOr[EffectivePermission] = js.undefined
   
   /**
     * The account-level and bucket-level permissions for the bucket.
     */
-  var permissionConfiguration: js.UndefOr[BucketPermissionConfiguration] = js.native
+  var permissionConfiguration: js.UndefOr[BucketPermissionConfiguration] = js.undefined
 }
 object BucketPublicAccess {
   

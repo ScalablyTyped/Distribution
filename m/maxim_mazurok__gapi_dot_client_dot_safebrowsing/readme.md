@@ -10,9 +10,9 @@ TypeScript typings for Safe Browsing API v4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.safebrowsing |
 | Keywords           | - |
-| # releases         | 31 |
+| # releases         | 35 |
 | # dependents       | 1 |
-| # downloads        | 1968 |
+| # downloads        | 2346 |
 | # stars            | 0 |
 
 ## Links

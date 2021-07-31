@@ -1,19 +1,21 @@
 package typings.agGrid
 
+import typings.agGrid.dragAndDropServiceMod.DragSourceType
 import typings.agGrid.dragAndDropServiceMod.DraggingEvent
 import typings.agGrid.dragAndDropServiceMod.DropTarget
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyDropTargetMod {
   
   @JSImport("ag-grid/dist/lib/headerRendering/bodyDropTarget", "BodyDropTarget")
   @js.native
-  class BodyDropTarget protected () extends DropTarget {
+  class BodyDropTarget protected ()
+    extends StObject
+       with DropTarget {
     def this(pinned: String, eContainer: HTMLElement) = this()
     
     var columnController: js.Any = js.native
@@ -30,6 +32,10 @@ object bodyDropTargetMod {
     
     var eSecondaryContainers: js.Any = js.native
     
+    /** The main container that will get the drop. */
+    /* CompleteClass */
+    override def getContainer(): HTMLElement = js.native
+    
     /* private */ def getDropType(draggingEvent: js.Any): js.Any = js.native
     
     @JSName("getIconName")
@@ -41,6 +47,9 @@ object bodyDropTargetMod {
     var gridPanel: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def isInterestedIn(`type`: DragSourceType): Boolean = js.native
     
     var moveColumnController: js.Any = js.native
     
@@ -61,18 +70,17 @@ object bodyDropTargetMod {
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
   }
   
-  @js.native
   trait DropListener extends StObject {
     
-    def getIconName(): String = js.native
+    def getIconName(): String
     
-    def onDragEnter(params: DraggingEvent): Unit = js.native
+    def onDragEnter(params: DraggingEvent): Unit
     
-    def onDragLeave(params: DraggingEvent): Unit = js.native
+    def onDragLeave(params: DraggingEvent): Unit
     
-    def onDragStop(params: DraggingEvent): Unit = js.native
+    def onDragStop(params: DraggingEvent): Unit
     
-    def onDragging(params: DraggingEvent): Unit = js.native
+    def onDragging(params: DraggingEvent): Unit
   }
   object DropListener {
     

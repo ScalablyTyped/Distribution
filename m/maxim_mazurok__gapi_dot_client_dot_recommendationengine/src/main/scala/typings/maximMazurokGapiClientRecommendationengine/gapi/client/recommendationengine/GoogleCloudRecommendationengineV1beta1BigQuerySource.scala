@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1BigQuerySource extends StObject {
   
   /**
@@ -15,19 +13,19 @@ trait GoogleCloudRecommendationengineV1beta1BigQuerySource extends StObject {
     * https://cloud.google.com/recommendations-ai/docs/manage-user-events#import (Default for userEvents.import) 2. "user_events_ga360" using
     * https://support.google.com/analytics/answer/3437719?hl=en
     */
-  var dataSchema: js.UndefOr[String] = js.native
+  var dataSchema: js.UndefOr[String] = js.undefined
   
   /** Required. The BigQuery data set to copy the data from. */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /** Optional. Intermediate Cloud Storage directory used for the import. Can be specified if one wants to have the BigQuery export to a specific Cloud Storage directory. */
-  var gcsStagingDir: js.UndefOr[String] = js.native
+  var gcsStagingDir: js.UndefOr[String] = js.undefined
   
   /** Optional. The project id (can be project # or id) that the BigQuery source is in. If not specified, inherits the project id from the parent request. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Required. The BigQuery table to copy the data from. */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1BigQuerySource {
   

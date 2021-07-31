@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadControlDropZoneEnterEventArgs extends EventArgs {
+trait UploadControlDropZoneEnterEventArgs
+  extends StObject
+     with EventArgs {
   
-  val dropZone: js.Any = js.native
+  val dropZone: js.Any
 }
 object UploadControlDropZoneEnterEventArgs {
   

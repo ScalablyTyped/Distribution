@@ -2,21 +2,19 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsStored extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var isStored: js.UndefOr[Boolean] = js.native
+  var isStored: js.UndefOr[Boolean] = js.undefined
   
-  var playableDuration: Double = js.native
+  var playableDuration: Double
   
-  var uri: String = js.native
+  var uri: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object IsStored {
   

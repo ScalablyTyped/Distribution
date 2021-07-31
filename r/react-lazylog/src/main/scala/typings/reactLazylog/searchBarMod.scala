@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactLazylog.anon.PartialSearchBarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBarMod {
@@ -29,20 +28,19 @@ object searchBarMod {
   
   type SearchBar = Component[SearchBarProps, js.Object, js.Any]
   
-  @js.native
   trait SearchBarProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var filterActive: js.UndefOr[Boolean] = js.native
+    var filterActive: js.UndefOr[Boolean] = js.undefined
     
-    var onClearSearch: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClearSearch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFilterLinesWithMatches: js.UndefOr[js.Function1[/* isFiltered */ Boolean, Unit]] = js.native
+    var onFilterLinesWithMatches: js.UndefOr[js.Function1[/* isFiltered */ Boolean, Unit]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* keyword */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* keyword */ String, Unit]] = js.undefined
     
-    var resultsCount: js.UndefOr[Double] = js.native
+    var resultsCount: js.UndefOr[Double] = js.undefined
   }
   object SearchBarProps {
     

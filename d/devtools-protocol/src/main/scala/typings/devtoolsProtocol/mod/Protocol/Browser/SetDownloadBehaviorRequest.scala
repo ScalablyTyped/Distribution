@@ -6,10 +6,8 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.default_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.deny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDownloadBehaviorRequest extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SetDownloadBehaviorRequest extends StObject {
     * available (otherwise deny). |allowAndName| allows download and names files according to
     * their dowmload guids. (SetDownloadBehaviorRequestBehavior enum)
     */
-  var behavior: deny | allow | allowAndName | default_ = js.native
+  var behavior: deny | allow | allowAndName | default_
   
   /**
     * BrowserContext to set download behavior. When omitted, default browser context is used.
     */
-  var browserContextId: js.UndefOr[BrowserContextID] = js.native
+  var browserContextId: js.UndefOr[BrowserContextID] = js.undefined
   
   /**
     * The default path to save downloaded files to. This is requred if behavior is set to 'allow'
     * or 'allowAndName'.
     */
-  var downloadPath: js.UndefOr[String] = js.native
+  var downloadPath: js.UndefOr[String] = js.undefined
 }
 object SetDownloadBehaviorRequest {
   

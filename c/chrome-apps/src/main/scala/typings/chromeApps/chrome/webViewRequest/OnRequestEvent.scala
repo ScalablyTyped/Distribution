@@ -2,7 +2,6 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,7 +39,7 @@ trait OnRequestEvent extends StObject {
     * @param [callback] Called when rules were unregistered.
     */
   def removeRules(): Unit = js.native
-  def removeRules(ruleIdentifiers: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def removeRules(ruleIdentifiers: js.Array[String]): Unit = js.native
   def removeRules(ruleIdentifiers: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+  def removeRules(ruleIdentifiers: Unit, callback: js.Function0[Unit]): Unit = js.native
 }

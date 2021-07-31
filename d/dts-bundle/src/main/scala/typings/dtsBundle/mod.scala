@@ -3,53 +3,54 @@ package typings.dtsBundle
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dts-bundle", "bundle")
+  @JSImport("dts-bundle", JSImport.Namespace)
   @js.native
-  def bundle(opts: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def bundle(opts: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
-    var emitOnIncludedFileNotFound: js.UndefOr[Boolean] = js.native
+    var emitOnIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined
     
-    var emitOnNoIncludedFileNotFound: js.UndefOr[Boolean] = js.native
+    var emitOnNoIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])] = js.native
+    var exclude: js.UndefOr[RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])] = js.undefined
     
-    var externals: js.UndefOr[Boolean] = js.native
+    var externals: js.UndefOr[Boolean] = js.undefined
     
-    var headerPath: js.UndefOr[String] = js.native
+    var headerPath: js.UndefOr[String] = js.undefined
     
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var main: String = js.native
+    var main: String
     
-    var name: String = js.native
+    var name: String
     
-    var newLine: js.UndefOr[String] = js.native
+    var newLine: js.UndefOr[String] = js.undefined
     
-    var out: js.UndefOr[String] = js.native
+    var out: js.UndefOr[String] = js.undefined
     
-    var outputAsModuleFolder: js.UndefOr[Boolean] = js.native
+    var outputAsModuleFolder: js.UndefOr[Boolean] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var referenceExternals: js.UndefOr[Boolean] = js.native
+    var referenceExternals: js.UndefOr[Boolean] = js.undefined
     
-    var removeSource: js.UndefOr[Boolean] = js.native
+    var removeSource: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

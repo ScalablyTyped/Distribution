@@ -2,33 +2,31 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends StObject {
   
   /** Suggested client side action: Dial a phone number */
   var dial: js.UndefOr[
     GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial
-  ] = js.native
+  ] = js.undefined
   
   /** Suggested client side action: Open a URI on device */
   var openUrl: js.UndefOr[
     GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Opaque payload that the Dialogflow receives in a user event when the user taps the suggested action. This data will be also forwarded to webhook to allow performing custom business
     * logic.
     */
-  var postbackData: js.UndefOr[String] = js.native
+  var postbackData: js.UndefOr[String] = js.undefined
   
   /** Suggested client side action: Share user location */
-  var shareLocation: js.UndefOr[js.Any] = js.native
+  var shareLocation: js.UndefOr[js.Any] = js.undefined
   
   /** Text to display alongside the action. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction {
   

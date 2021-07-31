@@ -7,15 +7,13 @@ import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  var x: js.UndefOr[center | left | right] = js.native
+  var x: js.UndefOr[center | left | right] = js.undefined
   
-  var y: js.UndefOr[bottom | center | top] = js.native
+  var y: js.UndefOr[bottom | center | top] = js.undefined
 }
 object X {
   

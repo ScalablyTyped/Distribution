@@ -1,41 +1,43 @@
 package typings.extjs.Ext
 
 import typings.extjs.Ext.enums.IWidget
-import typings.extjs.Ext.state.IStateful
 import typings.extjs.Ext.util.IPositionable
 import typings.extjs.Ext.util.IRegion
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
+- typings.extjs.Ext.IClass because Already inherited
+- typings.extjs.Ext.util.IObservable because var conflicts: addEvents, addListener, addManagedListener, alias, alternateClassName, callOverridden, callParent, callSuper, clearListeners, clearManagedListeners, config, enableBubble, extend, fireEvent, fireEventArgs, getInitialConfig, hasListener, inheritableStatics, initConfig, mixins, mon, mun, on, relayEvents, removeListener, removeManagedListener, requires, resumeEvent, resumeEvents, self, singleton, statics, suspendEvent, suspendEvents, un, uses. Inlined listeners, hasListeners, isObservable
+- typings.extjs.Ext.IBase because Already inherited
+- typings.extjs.Ext.state.IStateful because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined saveDelay, stateEvents, stateId, stateful, addEvents, addListener, addManagedListener, addStateEvents, applyState, clearListeners, clearManagedListeners, destroy, enableBubble, fireEvent, fireEventArgs, getState, hasListener, mon, mun, on, relayEvents, removeListener, removeManagedListener, resumeEvent, resumeEvents, savePropToState, savePropsToState, saveState, suspendEvent, suspendEvents, un
 - typings.extjs.Ext.util.IRenderable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined afterRender, doAutoRender, ensureAttachedToBody, getInsertPosition, initRenderData, onRender, render
 - typings.extjs.Ext.util.IElementContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined addChildEls, removeChildEls
-- typings.extjs.Ext.util.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx
-- typings.extjs.Ext.util.IPositionable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined alignTo, anchorTo, calculateConstrainedPosition, getAlignToXY, getAnchorXY, getBox, getConstrainVector, getLocalX, getLocalXY, getLocalY, getOffsetsTo, getRegion, getViewRegion, getX, getXY, getY, move, removeAnchor, setBox, setLocalX, setLocalXY, setLocalY, setRegion, setX, setXY, setY, translatePoints */ @js.native
-trait IAbstractComponent extends IStateful {
+- typings.extjs.Ext.util.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx */ trait IAbstractComponent
+  extends StObject
+     with IPositionable {
   
   /** [Property] (Boolean) */
-  var _isLayoutRoot: js.UndefOr[Boolean] = js.native
+  var _isLayoutRoot: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Adds each argument passed to this method to the childEls array  */
-  var addChildEls: js.UndefOr[js.Function0[Unit]] = js.native
+  var addChildEls: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Adds a CSS class to the top level element representing this component
     * @param cls String/String[] The CSS class name to add.
     * @returns Ext.Component Returns the Component to allow method chaining.
     */
-  var addClass: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.native
+  var addClass: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.undefined
   
   /** [Method] Adds a CSS class to the top level element representing this component
     * @param cls String/String[] The CSS class name to add.
     * @returns Ext.Component Returns the Component to allow method chaining.
     */
-  var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.native
+  var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.undefined
   
   /** [Method] Adds a cls to the uiCls array which will also call addUIClsToElement and adds to all elements of this component
     * @param classes String/String[] A string or an array of strings to add to the uiCls.
@@ -43,7 +45,42 @@ trait IAbstractComponent extends IStateful {
     */
   var addClsWithUI: js.UndefOr[
     js.Function2[/* classes */ js.UndefOr[js.Any], /* skip */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
+  
+  /** [Method] Adds the specified events to the list of events which this Observable may fire
+    * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
+    */
+  var addEvents: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  /** [Method] Appends an event handler to this object
+    * @param element Object
+    * @param listeners Object
+    * @param scope Object
+    * @param options Object
+    * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+    */
+  var addListener: js.UndefOr[
+    js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
+  
+  /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
+    * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
+    * @param ename Object/String The event name, or an object containing event name properties.
+    * @param fn Function If the ename parameter was an event name, this is the handler function.
+    * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+    * @param options Object If the ename parameter was an event name, this is the addListener options.
+    * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+    */
+  var addManagedListener: js.UndefOr[
+    js.Function5[
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.Any
+    ]
+  ] = js.undefined
   
   /** [Method] Save a property to the given state object if it is not its default or configured value
     * @param state Object The state object.
@@ -58,12 +95,17 @@ trait IAbstractComponent extends IStateful {
       /* value */ js.UndefOr[java.lang.String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
+  
+  /** [Method] Add events that will trigger the state to be saved
+    * @param events String/String[] The event name or an array of event names.
+    */
+  var addStateEvents: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Method which adds a specified UI  uiCls to the components element
     * @param ui String The UI to remove from the element.
     */
-  var addUIClsToElement: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var addUIClsToElement: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Called by the layout system after the Component has been laid out
     * @param width Number The width that was set
@@ -79,16 +121,16 @@ trait IAbstractComponent extends IStateful {
       /* oldHeight */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Allows addition of behavior after rendering is complete  */
-  var afterRender: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Template method called after a Component has been positioned
     * @param x Number
     * @param y Number
     */
-  var afterSetPosition: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+  var afterSetPosition: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Aligns the element with another element relative to the specified anchor points
     * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
@@ -97,15 +139,16 @@ trait IAbstractComponent extends IStateful {
     * @param animate Boolean/Object true for the default animation or a standard Element animation config object
     * @returns Ext.util.Positionable this
     */
-  var alignTo: js.UndefOr[
+  @JSName("alignTo")
+  var alignTo_IAbstractComponent: js.UndefOr[
     js.Function4[
-      js.UndefOr[js.Any], 
-      js.UndefOr[java.lang.String], 
-      js.UndefOr[Array], 
-      js.UndefOr[js.Any], 
-      this.type | IPositionable
+      /* element */ js.UndefOr[js.Any], 
+      /* position */ js.UndefOr[java.lang.String], 
+      /* offsets */ js.UndefOr[Array], 
+      /* animate */ js.UndefOr[js.Any], 
+      IPositionable
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Anchors an element to another element and realigns it when the window is resized
     * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
@@ -116,40 +159,46 @@ trait IAbstractComponent extends IStateful {
     * @param callback Function The function to call after the animation finishes
     * @returns Ext.util.Positionable this
     */
-  var anchorTo: js.UndefOr[
+  @JSName("anchorTo")
+  var anchorTo_IAbstractComponent: js.UndefOr[
     js.Function6[
-      js.UndefOr[js.Any], 
-      js.UndefOr[java.lang.String], 
-      js.UndefOr[Array], 
-      js.UndefOr[js.Any], 
-      js.UndefOr[js.Any], 
-      js.UndefOr[js.Any], 
-      this.type | IPositionable
+      /* element */ js.UndefOr[js.Any], 
+      /* position */ js.UndefOr[java.lang.String], 
+      /* offsets */ js.UndefOr[Array], 
+      /* animate */ js.UndefOr[js.Any], 
+      /* monitorScroll */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      IPositionable
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Performs custom animation on this object. ... */
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
+  
+  /** [Method] Applies the state to the object
+    * @param state Object The state
+    */
+  var applyState: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var autoEl: js.UndefOr[js.Any] = js.native
+  var autoEl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.ComponentLoader/Object/String/Boolean) */
-  var autoLoad: js.UndefOr[js.Any] = js.native
+  var autoLoad: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean/String/HTMLElement/Ext.Element) */
-  var autoRender: js.UndefOr[js.Any] = js.native
+  var autoRender: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoShow: js.UndefOr[Boolean] = js.native
+  var autoShow: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var baseCls: js.UndefOr[java.lang.String] = js.native
+  var baseCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Template method to do any pre blur processing
     * @param e Ext.EventObject The event object
     */
-  var beforeBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var beforeBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Method] Occurs before componentLayout is run
     * @param adjWidth Number The box-adjusted width that was set.
@@ -157,345 +206,298 @@ trait IAbstractComponent extends IStateful {
     */
   var beforeComponentLayout: js.UndefOr[
     js.Function2[/* adjWidth */ js.UndefOr[Double], /* adjHeight */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Invoked before the Component is destroyed  */
-  var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Template method to do any pre focus processing
     * @param e Ext.EventObject The event object
     */
-  var beforeFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var beforeFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Method] Occurs before componentLayout is run  */
-  var beforeLayout: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number/String/Boolean) */
-  var border: js.UndefOr[js.Any] = js.native
-  
-  /** [Method] Calculates the new x y position to move this Positionable into a constrain region
-    * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this Positionable was rendered, or this Component's {@link Ext.Component.constrainTo.
-    * @param proposedPosition Number[] A proposed [X, Y] position to test for validity and to coerce into constraints instead of using this Positionable's current position.
-    * @param local Boolean The proposedPosition is local (relative to floatParent if a floating Component)
-    * @param proposedSize Number[] A proposed [width, height] size to use when calculating constraints instead of using this Positionable's current size.
-    * @returns Number[] If the element needs to be translated, the new [X, Y] position within constraints if possible, giving priority to keeping the top and left edge in the constrain region. Otherwise, false.
-    */
-  var calculateConstrainedPosition: js.UndefOr[
-    js.Function4[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Boolean], js.UndefOr[Array], Array]
-  ] = js.native
+  var border: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object[]) */
-  var childEls: js.UndefOr[Array] = js.native
+  var childEls: js.UndefOr[Array] = js.undefined
+  
+  /** [Method] Removes all listeners for this object including the managed listeners */
+  var clearListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** [Method] Removes all managed listeners for this object  */
+  var clearManagedListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var cls: js.UndefOr[java.lang.String] = js.native
+  var cls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var componentCls: js.UndefOr[java.lang.String] = js.native
+  var componentCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var componentLayout: js.UndefOr[js.Any] = js.native
+  var componentLayout: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var contentEl: js.UndefOr[java.lang.String] = js.native
+  var contentEl: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Property] (String) */
-  var contentPaddingProperty: js.UndefOr[java.lang.String] = js.native
+  var contentPaddingProperty: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
+  
+  /** [Method] Destroys the Component  */
+  var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Disable the component
     * @param silent Boolean Passing true will suppress the disable event from being fired.
     */
-  var disable: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+  var disable: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var disabledCls: js.UndefOr[java.lang.String] = js.native
+  var disabledCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Handles autoRender  */
-  var doAutoRender: js.UndefOr[js.Function0[Unit]] = js.native
+  var doAutoRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] This method needs to be called whenever you change something on this component that requires the Component s layout t
     * @returns Ext.container.Container this
     */
-  var doComponentLayout: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.native
+  var doComponentLayout: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Enable the component
     * @param silent Boolean Passing true will suppress the enable event from being fired.
     */
-  var enable: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+  var enable: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
+  /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
+    * @param eventNames String/String[] The event name to bubble, or an Array of event names.
+    */
+  var enableBubble: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Ensures that this component is attached to document body
     * @param runLayout Boolean True to run the component's layout.
     */
-  var ensureAttachedToBody: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.native
+  var ensureAttachedToBody: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Retrieves plugin from this component s collection by its ptype
     * @param ptype String The Plugin's ptype as specified by the class's alias configuration.
     * @returns Ext.AbstractPlugin plugin instance.
     */
-  var findPlugin: js.UndefOr[js.Function1[/* ptype */ js.UndefOr[java.lang.String], IAbstractPlugin]] = js.native
+  var findPlugin: js.UndefOr[js.Function1[/* ptype */ js.UndefOr[java.lang.String], IAbstractPlugin]] = js.undefined
+  
+  /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
+    * @param eventName String The name of the event to fire.
+    * @param args Object... Variable number of parameters are passed to handlers.
+    * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
+    */
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
+  
+  /** [Method] Fires the specified event with the passed parameter list
+    * @param eventName String The name of the event to fire.
+    * @param args Object[] An array of parameters which are passed to handlers.
+    * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
+    */
+  var fireEventArgs: js.UndefOr[js.Function2[js.UndefOr[java.lang.String], js.UndefOr[Array], Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var floating: js.UndefOr[Boolean] = js.native
+  var floating: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Forces this component to redo its componentLayout  */
-  var forceComponentLayout: js.UndefOr[js.Function0[Unit]] = js.native
+  var forceComponentLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var frame: js.UndefOr[Boolean] = js.native
+  var frame: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Object) */
-  var frameSize: js.UndefOr[js.Any] = js.native
+  var frameSize: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
     * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
     */
-  var getActiveAnimation: js.UndefOr[js.Function0[_]] = js.native
-  
-  /** [Method] Gets the x y coordinates to align this element with another element
-    * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
-    * @param position String The position to align to
-    * @param offsets Number[] Offset the positioning by [x, y]
-    * @returns Number[] [x, y]
-    */
-  var getAlignToXY: js.UndefOr[
-    js.Function3[js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[Array], Array]
-  ] = js.native
-  
-  /** [Method] Gets the x y coordinates specified by the anchor position on the element
-    * @param anchor String The specified anchor position. See alignTo for details on supported anchor positions.
-    * @param local Boolean True to get the local (element top/left-relative) anchor position instead of page coordinates
-    * @param size Object An object containing the size to use for calculating anchor position {width: (target width), height: (target height)} (defaults to the element's current size)
-    * @returns Number[] [x, y] An array containing the element's x and y coordinates
-    */
-  var getAnchorXY: js.UndefOr[
-    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[Boolean], js.UndefOr[js.Any], Array]
-  ] = js.native
-  
-  /** [Method] Return an object defining the area of this Element which can be passed to setBox to set another Element s size locati
-    * @param contentBox Boolean If true a box for the content of the element is returned.
-    * @param local Boolean If true the element's left and top relative to its offsetParent are returned instead of page x/y.
-    * @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
-    */
-  var getBox: js.UndefOr[js.Function2[js.UndefOr[Boolean], js.UndefOr[Boolean], _]] = js.native
+  var getActiveAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Provides the link for Observable s fireEvent method to bubble up the ownership hierarchy
     * @returns Ext.container.Container the Container which owns this Component.
     */
-  var getBubbleTarget: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.native
-  
-  /** [Method] Returns the X Y vector by which this Positionable s element must be translated to make a best attempt to constrain
-    * @param constrainTo Ext.util.Positionable/HTMLElement/String/Ext.util.Region The Positionable, HTMLElement, element id, or Region into which the element is to be constrained.
-    * @param proposedPosition Number[] A proposed [X, Y] position to test for validity and to produce a vector for instead of using the element's current position
-    * @param proposedSize Number[] A proposed [width, height] size to constrain instead of using the element's current size
-    * @returns Number[]/Boolean If the element needs to be translated, an [X, Y] vector by which this element must be translated. Otherwise, false.
-    */
-  var getConstrainVector: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Array], _]] = js.native
+  var getBubbleTarget: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.undefined
   
   /** [Method] Retrieves the top level element representing this component
     * @returns Ext.dom.Element
     */
-  var getEl: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.native
+  var getEl: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Gets the current height of the component s underlying element
     * @returns Number
     */
-  var getHeight: js.UndefOr[js.Function0[Double]] = js.native
+  var getHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Retrieves the id of this component
     * @returns String
     */
-  var getId: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] This function takes the position argument passed to onRender and returns a DOM element that you can use in the insert
     * @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
     * @returns HTMLElement DOM element that you can use in the insertBefore
     */
-  var getInsertPosition: js.UndefOr[js.Function1[js.UndefOr[js.Any], HTMLElement]] = js.native
+  var getInsertPosition: js.UndefOr[js.Function1[js.UndefOr[js.Any], HTMLElement]] = js.undefined
   
   /** [Method] Returns the value of itemId assigned to this component or when that is not set returns the value of id
     * @returns String
     */
-  var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Gets the Ext ComponentLoader for this Component
     * @returns Ext.ComponentLoader The loader instance, null if it doesn't exist.
     */
-  var getLoader: js.UndefOr[js.Function0[IComponentLoader]] = js.native
-  
-  /** [Method] Overridden in Ext rtl AbstractComponent
-    * @returns Number The local x coordinate
-    */
-  var getLocalX: js.UndefOr[js.Function0[Double]] = js.native
-  
-  /** [Method] Overridden in Ext rtl AbstractComponent
-    * @returns Number[] The local XY position of the element
-    */
-  var getLocalXY: js.UndefOr[js.Function0[Array]] = js.native
-  
-  /** [Method] Returns the y coordinate of this element reletive to its offsetParent
-    * @returns Number The local y coordinate
-    */
-  var getLocalY: js.UndefOr[js.Function0[Double]] = js.native
-  
-  /** [Method] Returns the offsets of this element from the passed element
-    * @param offsetsTo Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or element id to get get the offsets from.
-    * @returns Number[] The XY page offsets (e.g. [100, -200])
-    */
-  var getOffsetsTo: js.UndefOr[js.Function1[js.UndefOr[js.Any], Array]] = js.native
+  var getLoader: js.UndefOr[js.Function0[IComponentLoader]] = js.undefined
   
   /** [Method] Retrieves a plugin from this component s collection by its pluginId
     * @param pluginId String
     * @returns Ext.AbstractPlugin plugin instance.
     */
-  var getPlugin: js.UndefOr[js.Function1[/* pluginId */ js.UndefOr[java.lang.String], IAbstractPlugin]] = js.native
-  
-  /** [Method] Returns a region object that defines the area of this element
-    * @returns Ext.util.Region A Region containing "top, left, bottom, right" properties.
-    */
-  var getRegion: js.UndefOr[js.Function0[IRegion]] = js.native
+  var getPlugin: js.UndefOr[js.Function1[/* pluginId */ js.UndefOr[java.lang.String], IAbstractPlugin]] = js.undefined
   
   /** [Method] Gets the current size of the component s underlying element
     * @returns Object An object containing the element's size {width: (element width), height: (element height)}
     */
-  var getSize: js.UndefOr[js.Function0[_]] = js.native
+  var getSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns an object that describes how this component s width and height are managed
     * @param ownerCtSizeModel Object
     * @returns Object The size model for this component.
     */
-  var getSizeModel: js.UndefOr[js.Function1[/* ownerCtSizeModel */ js.UndefOr[js.Any], _]] = js.native
+  var getSizeModel: js.UndefOr[js.Function1[/* ownerCtSizeModel */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
-  /** [Method] Returns the content region of this element
-    * @returns Ext.util.Region A Region containing "top, left, bottom, right" member data.
+  /** [Method] The supplied default state gathering method for the AbstractComponent class
+    * @returns Object
     */
-  var getViewRegion: js.UndefOr[js.Function0[IRegion]] = js.native
+  var getState: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the current width of the component s underlying element
     * @returns Number
     */
-  var getWidth: js.UndefOr[js.Function0[Double]] = js.native
-  
-  /** [Method] Gets the current X position of the DOM element based on page coordinates
-    * @returns Number The X position of the element
-    */
-  var getX: js.UndefOr[js.Function0[Double]] = js.native
+  var getWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
     * @returns String The xtype hierarchy string
     */
-  var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.native
-  
-  /** [Method] Gets the current position of the DOM element based on page coordinates
-    * @returns Number[] The XY position of the element
-    */
-  var getXY: js.UndefOr[js.Function0[Array]] = js.native
-  
-  /** [Method] Gets the current Y position of the DOM element based on page coordinates
-    * @returns Number The Y position of the element
-    */
-  var getY: js.UndefOr[js.Function0[Double]] = js.native
+  var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
     * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
     */
-  var hasActiveFx: js.UndefOr[js.Function0[_]] = js.native
+  var hasActiveFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Checks if the specified CSS class exists on this element s DOM node
     * @param className String The CSS class to check for.
     * @returns Boolean true if the class exists, else false.
     */
-  var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], Boolean]] = js.native
+  var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  
+  /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
+    * @param eventName String The name of the event to check for
+    * @returns Boolean true if the event is being listened for or bubbles, else false
+    */
+  var hasListener: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  
+  /** [Property] (Object) */
+  var hasListeners: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Checks if there is currently a specified uiCls
     * @param cls String The cls to check.
     */
-  var hasUICls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var hasUICls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var hideMode: js.UndefOr[java.lang.String] = js.native
+  var hideMode: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var html: js.UndefOr[js.Any] = js.native
+  var html: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.native
+  var id: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Initialize any events on this component */
-  var initEvents: js.UndefOr[js.Function0[Unit]] = js.native
+  var initEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
-  var initRenderData: js.UndefOr[js.Function0[_]] = js.native
+  var initRenderData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Tests whether this Component matches the selector string
     * @param selector String The selector string to test against.
     * @returns Boolean true if this Component matches the selector.
     */
-  var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.native
+  var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isComponent: js.UndefOr[Boolean] = js.native
+  var isComponent: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Determines whether this component is the descendant of a particular container
     * @param container Ext.Container
     * @returns Boolean true if the component is the descendant of a particular container, otherwise false.
     */
-  var isDescendantOf: js.UndefOr[js.Function1[/* container */ js.UndefOr[IContainer], Boolean]] = js.native
+  var isDescendantOf: js.UndefOr[js.Function1[/* container */ js.UndefOr[IContainer], Boolean]] = js.undefined
   
   /** [Method] Method to determine whether this Component is currently disabled
     * @returns Boolean the disabled state of this Component.
     */
-  var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Method to determine whether this Component is draggable
     * @returns Boolean the draggable state of this component.
     */
-  var isDraggable: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDraggable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Method to determine whether this Component is droppable
     * @returns Boolean the droppable state of this component.
     */
-  var isDroppable: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDroppable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Method to determine whether this Component is floating
     * @returns Boolean the floating state of this component.
     */
-  var isFloating: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFloating: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Method to determine whether this Component is currently set to hidden
     * @returns Boolean the hidden state of this Component.
     */
-  var isHidden: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Determines whether this Component is the root of a layout  */
-  var isLayoutRoot: js.UndefOr[js.Function0[Unit]] = js.native
+  var isLayoutRoot: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns true if layout is suspended for this component
     * @returns Boolean true layout of this component is suspended.
     */
-  var isLayoutSuspended: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLayoutSuspended: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
+  /** [Property] (Boolean) */
+  var isObservable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns true if this component is visible
     * @param deep Boolean Pass true to interrogate the visibility status of all parent Containers to determine whether this Component is truly visible to the user. Generally, to determine whether a Component is hidden, the no argument form is needed. For example when creating dynamically laid out UIs in a hidden Container before showing them.
     * @returns Boolean true if this component is visible, false otherwise.
     */
-  var isVisible: js.UndefOr[js.Function1[/* deep */ js.UndefOr[Boolean], Boolean]] = js.native
+  var isVisible: js.UndefOr[js.Function1[/* deep */ js.UndefOr[Boolean], Boolean]] = js.undefined
   
   /** [Method] Tests whether or not this Component is of a specific xtype
     * @param xtype String The xtype to check for this Component
@@ -504,52 +506,86 @@ trait IAbstractComponent extends IStateful {
     */
   var isXType: js.UndefOr[
     js.Function2[/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean], Boolean]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var itemId: js.UndefOr[java.lang.String] = js.native
+  var itemId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /** [Config Option] (Object) */
+  var listeners: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.ComponentLoader/Object) */
-  var loader: js.UndefOr[js.Any] = js.native
+  var loader: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Boolean) */
-  var maskOnDisable: js.UndefOr[Boolean] = js.native
+  var maskOnDisable: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  /** [Method] Move the element relative to its current position
-    * @param direction String Possible values are:  "l" (or "left") "r" (or "right") "t" (or "top", or "up") "b" (or "bottom", or "down")
-    * @param distance Number How far to move the element in pixels
-    * @param animate Boolean/Object true for the default animation or a standard Element animation config object
+  /** [Method] Shorthand for addManagedListener
+    * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
+    * @param ename Object/String The event name, or an object containing event name properties.
+    * @param fn Function If the ename parameter was an event name, this is the handler function.
+    * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+    * @param options Object If the ename parameter was an event name, this is the addListener options.
+    * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
-  var move: js.UndefOr[
-    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[Double], js.UndefOr[js.Any], Unit]
-  ] = js.native
+  var mon: js.UndefOr[
+    js.Function5[
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.Any
+    ]
+  ] = js.undefined
+  
+  /** [Method] Shorthand for removeManagedListener
+    * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
+    * @param ename Object/String The event name, or an object containing event name properties.
+    * @param fn Function If the ename parameter was an event name, this is the handler function.
+    * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+    */
+  var mun: js.UndefOr[
+    js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
+  ] = js.undefined
   
   /** [Method] Returns the next node in the Component tree in tree traversal order
     * @param selector String A ComponentQuery selector to filter the following nodes.
     * @returns Ext.Component The next node (or the next node which matches the selector). Returns null if there is no matching node.
     */
-  var nextNode: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.native
+  var nextNode: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   
   /** [Method] Returns the next sibling of this Component
     * @param selector String A ComponentQuery selector to filter the following items.
     * @returns Ext.Component The next sibling (or the next sibling which matches the selector). Returns null if there is no matching sibling.
     */
-  var nextSibling: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.native
+  var nextSibling: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
+  
+  /** [Method] Shorthand for addListener
+    * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
+    * @param fn Function The method the event invokes, or if scope is specified, the name* of the method within the specified scope. Will be called with arguments given to Ext.util.Observable.fireEvent plus the options parameter described below.
+    * @param scope Object The scope (this reference) in which the handler function is executed. If omitted, defaults to the object which fired the event.
+    * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
+    * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+    */
+  var on: js.UndefOr[
+    js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Method] Method to manage awareness of when components are added to their respective Container firing an added event
     * @param container Ext.container.Container Container which holds the component.
@@ -561,24 +597,24 @@ trait IAbstractComponent extends IStateful {
       /* pos */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Allows addition of behavior to the disable operation  */
-  var onDisable: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDisable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Allows addition of behavior to the enable operation  */
-  var onEnable: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEnable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Called after the component is moved this method is empty by default but can be implemented by any subclass that need
     * @param x Number The new x position.
     * @param y Number The new y position.
     */
-  var onPosition: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+  var onPosition: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Method to manage awareness of when components are removed from their respective Container firing a removed event
     * @param destroying Boolean Will be passed as true if the Container performing the remove operation will delete this Component upon remove.
     */
-  var onRemoved: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[Boolean], Unit]] = js.native
+  var onRemoved: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Template method called when this Component s DOM structure is created
     * @param parentNode Ext.core.Element The parent Element in which this Component's encapsulating element is contained.
@@ -586,7 +622,7 @@ trait IAbstractComponent extends IStateful {
     */
   var onRender: js.UndefOr[
     js.Function2[js.UndefOr[typings.extjs.Ext.core.IElement], js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Allows addition of behavior to the resize operation
     * @param width Object
@@ -602,113 +638,182 @@ trait IAbstractComponent extends IStateful {
       /* oldHeight */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var overCls: js.UndefOr[java.lang.String] = js.native
+  var overCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Property] (Ext.Container) */
-  var ownerCt: js.UndefOr[IContainer] = js.native
+  var ownerCt: js.UndefOr[IContainer] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.AbstractPlugin[]/Ext.AbstractPlugin/Object[]/Object/Ext.enums.Plugin[]/Ext.enums.Plugin) */
-  var plugins: js.UndefOr[js.Any] = js.native
+  var plugins: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Template method to do any post blur processing
     * @param e Ext.EventObject The event object
     */
-  var postBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var postBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Method] Returns the previous node in the Component tree in tree traversal order
     * @param selector String A ComponentQuery selector to filter the preceding nodes.
     * @returns Ext.Component The previous node (or the previous node which matches the selector). Returns null if there is no matching node.
     */
-  var previousNode: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.native
+  var previousNode: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   
   /** [Method] Returns the previous sibling of this Component
     * @param selector String A ComponentQuery selector to filter the preceding items.
     * @returns Ext.Component The previous sibling (or the previous sibling which matches the selector). Returns null if there is no matching sibling.
     */
-  var previousSibling: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.native
+  var previousSibling: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   
   /** [Method] Called by Component doAutoRender Register a Container configured floating true with this Component s ZIndexManager
     * @param cmp Object
     */
-  var registerFloatingItem: js.UndefOr[js.Function1[/* cmp */ js.UndefOr[js.Any], Unit]] = js.native
+  var registerFloatingItem: js.UndefOr[js.Function1[/* cmp */ js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  /** [Method] Relays selected events from the specified Observable as if the events were fired by this
+    * @param origin Object The Observable whose events this object is to relay.
+    * @param events String[] Array of event names to relay.
+    * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
+    * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
+    */
+  var relayEvents: js.UndefOr[
+    js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[java.lang.String], js.Any]
+  ] = js.undefined
   
   /** [Method] Remove any anchor to this element
     * @returns Ext.util.Positionable this
     */
-  var removeAnchor: js.UndefOr[js.Function0[this.type | IPositionable]] = js.native
+  @JSName("removeAnchor")
+  var removeAnchor_IAbstractComponent: js.UndefOr[js.Function0[IPositionable]] = js.undefined
   
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
     * @param testFn Function The test function.
     */
-  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Removes a CSS class from the top level element representing this component
     * @param cls String/String[] The CSS class name to remove.
     * @returns Ext.Component Returns the Component to allow method chaining.
     */
-  var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.native
+  var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.undefined
   
   /** [Method] Removes a cls to the uiCls array which will also call removeUIClsFromElement and removes it from all elements of thi
     * @param cls String/String[] A string or an array of strings to remove to the uiCls.
     */
-  var removeClsWithUI: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.native
+  var removeClsWithUI: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  /** [Method] Removes an event handler
+    * @param eventName String The type of event the handler was associated with.
+    * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
+    * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
+    */
+  var removeListener: js.UndefOr[
+    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
+  ] = js.undefined
+  
+  /** [Method] Removes listeners that were added by the mon method
+    * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
+    * @param ename Object/String The event name, or an object containing event name properties.
+    * @param fn Function If the ename parameter was an event name, this is the handler function.
+    * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+    */
+  var removeManagedListener: js.UndefOr[
+    js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
+  ] = js.undefined
   
   /** [Method] Method which removes a specified UI  uiCls from the components element
     * @param ui String The UI to add to the element.
     */
-  var removeUIClsFromElement: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var removeUIClsFromElement: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Renders the Component into the passed HTML element
     * @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
     * @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
     */
-  var render: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.native
+  var render: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var renderData: js.UndefOr[js.Any] = js.native
+  var renderData: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var renderSelectors: js.UndefOr[js.Any] = js.native
+  var renderSelectors: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var renderTo: js.UndefOr[js.Any] = js.native
+  var renderTo: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.XTemplate/String/String[]) */
-  var renderTpl: js.UndefOr[js.Any] = js.native
+  var renderTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Boolean) */
-  var rendered: js.UndefOr[Boolean] = js.native
+  var rendered: js.UndefOr[Boolean] = js.undefined
+  
+  /** [Method] Resumes firing of the named event s
+    * @param eventName String... Multiple event names to resume.
+    */
+  var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  
+  /** [Method] Resumes firing events see suspendEvents */
+  var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
+  
+  /** [Config Option] (Number) */
+  var saveDelay: js.UndefOr[Double] = js.undefined
+  
+  /** [Method] Conditionally saves a single property from this object to the given state object
+    * @param propName String The name of the property to save.
+    * @param state Object The state object in to which to save the property.
+    * @param stateName String The name to use for the property in state.
+    * @returns Boolean True if the property was saved, false if not.
+    */
+  var savePropToState: js.UndefOr[
+    js.Function3[
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[java.lang.String], 
+      Boolean
+    ]
+  ] = js.undefined
+  
+  /** [Method] Gathers additional named properties of the instance and adds their current values to the passed state object
+    * @param propNames String/String[] The name (or array of names) of the property to save.
+    * @param state Object The state object in to which to save the property values.
+    * @returns Object state
+    */
+  var savePropsToState: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]] = js.undefined
+  
+  /** [Method] Saves the state of the object to the persistence store  */
+  var saveState: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
     * @returns Object this
     */
-  var sequenceFx: js.UndefOr[js.Function0[_]] = js.native
+  var sequenceFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method]
     * @param border String/Number The border, see border. If a falsey value is passed the border will be removed.
     */
-  var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.native
+  var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the element s box
     * @param box Object The box to fill {x, y, width, height}
     * @param animate Boolean/Object true for the default animation or a standard Element animation config object
     * @returns Ext.util.Positionable this
     */
-  var setBox: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], this.type | IPositionable]] = js.native
+  @JSName("setBox")
+  var setBox_IAbstractComponent: js.UndefOr[
+    js.Function2[/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], IPositionable]
+  ] = js.undefined
   
   /** [Method] Enable or disable the component
     * @param disabled Boolean true to disable.
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the dock position of this component in its parent panel
     * @param dock Object The dock position.
@@ -717,46 +822,52 @@ trait IAbstractComponent extends IStateful {
     */
   var setDocked: js.UndefOr[
     js.Function2[/* dock */ js.UndefOr[js.Any], /* layoutParent */ js.UndefOr[Boolean], IComponent]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the height of the component
     * @param height Number The new height to set. This may be one of:  A Number specifying the new height in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS height style. undefined to leave the height unchanged.
     * @returns Ext.Component this
     */
-  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], IComponent]] = js.native
-  
-  /** [Method] Overridden in Ext rtl AbstractComponent
-    * @param x Object
-    * @returns Ext.util.Positionable this
-    */
-  var setLocalX: js.UndefOr[js.Function1[js.UndefOr[js.Any | Double], this.type | IPositionable]] = js.native
+  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], IComponent]] = js.undefined
   
   /** [Method] Overridden in Ext rtl AbstractComponent
     * @param x Object
     * @param y Object
     * @returns Ext.util.Positionable this
     */
-  var setLocalXY: js.UndefOr[
-    js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any | Double], this.type | IPositionable]
-  ] = js.native
+  @JSName("setLocalXY")
+  var setLocalXY_IAbstractComponent: js.UndefOr[
+    js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], IPositionable]
+  ] = js.undefined
+  
+  /** [Method] Overridden in Ext rtl AbstractComponent
+    * @param x Object
+    * @returns Ext.util.Positionable this
+    */
+  @JSName("setLocalX")
+  var setLocalX_IAbstractComponent: js.UndefOr[js.Function1[/* x */ js.UndefOr[js.Any], IPositionable]] = js.undefined
   
   /** [Method] Sets the local y coordinate of this element using CSS style
     * @param y Object
     * @returns Ext.util.Positionable this
     */
-  var setLocalY: js.UndefOr[js.Function1[js.UndefOr[js.Any | Double], this.type | IPositionable]] = js.native
+  @JSName("setLocalY")
+  var setLocalY_IAbstractComponent: js.UndefOr[js.Function1[/* y */ js.UndefOr[js.Any], IPositionable]] = js.undefined
   
   /** [Method] Sets the margin on the target element
     * @param margin Number/String The margin to set. See the margin config.
     */
-  var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the element s position and size to the specified region
     * @param region Ext.util.Region The region to fill
     * @param animate Boolean/Object true for the default animation or a standard Element animation config object
     * @returns Ext.util.Positionable this
     */
-  var setRegion: js.UndefOr[js.Function2[js.UndefOr[IRegion], js.UndefOr[js.Any], this.type | IPositionable]] = js.native
+  @JSName("setRegion")
+  var setRegion_IAbstractComponent: js.UndefOr[
+    js.Function2[/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any], IPositionable]
+  ] = js.undefined
   
   /** [Method] Sets the width and height of this Component
     * @param width Number/String/Object The new width to set. This may be one of:  A Number specifying the new width in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS width style. A size object in the format {width: widthValue, height: heightValue}. undefined to leave the width unchanged.
@@ -765,88 +876,112 @@ trait IAbstractComponent extends IStateful {
     */
   var setSize: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], IComponent]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the UI for the component
     * @param ui String The new UI for the component.
     */
-  var setUI: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setUI: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Convenience function to hide or show this component by Boolean
     * @param visible Boolean true to show, false to hide.
     * @returns Ext.Component this
     */
-  var setVisible: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IComponent]] = js.native
+  var setVisible: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IComponent]] = js.undefined
   
   /** [Method] Sets the width of the component
     * @param width Number The new width to setThis may be one of:  A Number specifying the new width in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS width style.
     * @returns Ext.Component this
     */
-  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], IComponent]] = js.native
-  
-  /** [Method] Sets the X position of the DOM element based on page coordinates
-    * @param x Object
-    * @param animate Object
-    * @returns Ext.util.Positionable this
-    */
-  var setX: js.UndefOr[
-    js.Function2[js.UndefOr[js.Any | Double], js.UndefOr[js.Any], this.type | IPositionable]
-  ] = js.native
+  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], IComponent]] = js.undefined
   
   /** [Method] Sets the position of the DOM element in page coordinates
     * @param xy Object
     * @param animate Object
     * @returns Ext.util.Positionable this
     */
-  var setXY: js.UndefOr[
-    js.Function2[js.UndefOr[js.Any | Array], js.UndefOr[js.Any], this.type | IPositionable]
-  ] = js.native
+  @JSName("setXY")
+  var setXY_IAbstractComponent: js.UndefOr[
+    js.Function2[/* xy */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], IPositionable]
+  ] = js.undefined
+  
+  /** [Method] Sets the X position of the DOM element based on page coordinates
+    * @param x Object
+    * @param animate Object
+    * @returns Ext.util.Positionable this
+    */
+  @JSName("setX")
+  var setX_IAbstractComponent: js.UndefOr[
+    js.Function2[/* x */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], IPositionable]
+  ] = js.undefined
   
   /** [Method] Sets the Y position of the DOM element based on page coordinates
     * @param y Object
     * @param animate Object
     * @returns Ext.util.Positionable this
     */
-  var setY: js.UndefOr[
-    js.Function2[js.UndefOr[js.Any | Double], js.UndefOr[js.Any], this.type | IPositionable]
-  ] = js.native
+  @JSName("setY")
+  var setY_IAbstractComponent: js.UndefOr[
+    js.Function2[/* y */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], IPositionable]
+  ] = js.undefined
   
   /** [Config Option] (Boolean/Number) */
-  var shrinkWrap: js.UndefOr[js.Any] = js.native
+  var shrinkWrap: js.UndefOr[js.Any] = js.undefined
+  
+  /** [Config Option] (String[]) */
+  var stateEvents: js.UndefOr[Array] = js.undefined
+  
+  /** [Config Option] (String) */
+  var stateId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /** [Config Option] (Boolean) */
+  var stateful: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
     * @returns Ext.Element The Element
     */
-  var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.native
+  var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
     * @returns Ext.Element The Element
     */
-  var stopFx: js.UndefOr[js.Function0[IElement]] = js.native
+  var stopFx: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
+  
+  /** [Method] Suspends firing of the named event s
+    * @param eventName String... Multiple event names to suspend.
+    */
+  var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  
+  /** [Method] Suspends the firing of all events
+    * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
+    */
+  var suspendEvents: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
     * @returns Object this
     */
-  var syncFx: js.UndefOr[js.Function0[_]] = js.native
+  var syncFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Ext.XTemplate/Ext.Template/String/String[]) */
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var tplWriteMode: js.UndefOr[java.lang.String] = js.native
+  var tplWriteMode: js.UndefOr[java.lang.String] = js.undefined
   
-  /** [Method] Translates the passed page coordinates into left top css values for the element
-    * @param x Number/Array The page x or an array containing [x, y]
-    * @param y Number The page y, required if x is not an array
-    * @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
+  /** [Config Option] (String) */
+  var ui: js.UndefOr[java.lang.String] = js.undefined
+  
+  /** [Method] Shorthand for removeListener
+    * @param eventName String The type of event the handler was associated with.
+    * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
+    * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
-  var translatePoints: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Double], _]] = js.native
-  
-  /** [Config Option] (String) */
-  var ui: js.UndefOr[java.lang.String] = js.native
+  var un: js.UndefOr[
+    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
+  ] = js.undefined
   
   /** [Method] Navigates up the ownership hierarchy searching for an ancestor Container which matches any passed simple selector or
     * @param selector String/Ext.Component The simple selector component or actual component to test. If not passed the immediate owner/activater is returned.
@@ -859,7 +994,7 @@ trait IAbstractComponent extends IStateful {
       /* limit */ js.UndefOr[js.Any], 
       typings.extjs.Ext.container.IContainer
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Update the content area of a component
     * @param htmlOrData String/Object If this component has been configured with a template via the tpl config then it will use this argument as data to populate the template. If this component was not configured with a template, the components content area will be updated via Ext.Element update.
@@ -873,18 +1008,18 @@ trait IAbstractComponent extends IStateful {
       /* callback */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Updates this component s layout
     * @param options Object An object with layout options.
     */
-  var updateLayout: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var updateLayout: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Ext.enums.Widget) */
-  var xtype: js.UndefOr[IWidget] = js.native
+  var xtype: js.UndefOr[IWidget] = js.undefined
 }
 object IAbstractComponent {
   
@@ -922,12 +1057,38 @@ object IAbstractComponent {
     def setAddClsWithUIUndefined: Self = StObject.set(x, "addClsWithUI", js.undefined)
     
     @scala.inline
+    def setAddEvents(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
+    
+    @scala.inline
+    def setAddListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
+    
+    @scala.inline
+    def setAddManagedListener(
+      value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any
+    ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
+    
+    @scala.inline
+    def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
+    
+    @scala.inline
     def setAddPropertyToState(
       value: (/* state */ js.UndefOr[js.Any], /* propName */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean
     ): Self = StObject.set(x, "addPropertyToState", js.Any.fromFunction3(value))
     
     @scala.inline
     def setAddPropertyToStateUndefined: Self = StObject.set(x, "addPropertyToState", js.undefined)
+    
+    @scala.inline
+    def setAddStateEvents(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addStateEvents", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setAddStateEventsUndefined: Self = StObject.set(x, "addStateEvents", js.undefined)
     
     @scala.inline
     def setAddUIClsToElement(value: /* ui */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "addUIClsToElement", js.Any.fromFunction1(value))
@@ -957,7 +1118,7 @@ object IAbstractComponent {
     
     @scala.inline
     def setAlignTo(
-      value: (js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[Array], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable
+      value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable
     ): Self = StObject.set(x, "alignTo", js.Any.fromFunction4(value))
     
     @scala.inline
@@ -965,7 +1126,7 @@ object IAbstractComponent {
     
     @scala.inline
     def setAnchorTo(
-      value: (js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[Array], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable
+      value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any], /* monitorScroll */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any]) => IPositionable
     ): Self = StObject.set(x, "anchorTo", js.Any.fromFunction6(value))
     
     @scala.inline
@@ -976,6 +1137,12 @@ object IAbstractComponent {
     
     @scala.inline
     def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    @scala.inline
+    def setApplyState(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
     
     @scala.inline
     def setAutoEl(value: js.Any): Self = StObject.set(x, "autoEl", value.asInstanceOf[js.Any])
@@ -1044,16 +1211,22 @@ object IAbstractComponent {
     def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def setCalculateConstrainedPosition(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Boolean], js.UndefOr[Array]) => Array): Self = StObject.set(x, "calculateConstrainedPosition", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setCalculateConstrainedPositionUndefined: Self = StObject.set(x, "calculateConstrainedPosition", js.undefined)
-    
-    @scala.inline
     def setChildEls(value: Array): Self = StObject.set(x, "childEls", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildElsUndefined: Self = StObject.set(x, "childEls", js.undefined)
+    
+    @scala.inline
+    def setClearListeners(value: () => Unit): Self = StObject.set(x, "clearListeners", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setClearListenersUndefined: Self = StObject.set(x, "clearListeners", js.undefined)
+    
+    @scala.inline
+    def setClearManagedListeners(value: () => Unit): Self = StObject.set(x, "clearManagedListeners", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setClearManagedListenersUndefined: Self = StObject.set(x, "clearManagedListeners", js.undefined)
     
     @scala.inline
     def setCls(value: java.lang.String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
@@ -1090,6 +1263,12 @@ object IAbstractComponent {
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    @scala.inline
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
     def setDisable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
@@ -1131,6 +1310,12 @@ object IAbstractComponent {
     def setEnable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
     
     @scala.inline
+    def setEnableBubble(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
+    
+    @scala.inline
     def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
@@ -1144,6 +1329,18 @@ object IAbstractComponent {
     
     @scala.inline
     def setFindPluginUndefined: Self = StObject.set(x, "findPlugin", js.undefined)
+    
+    @scala.inline
+    def setFireEvent(value: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setFireEventArgs(value: (js.UndefOr[java.lang.String], js.UndefOr[Array]) => Boolean): Self = StObject.set(x, "fireEventArgs", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setFireEventArgsUndefined: Self = StObject.set(x, "fireEventArgs", js.undefined)
+    
+    @scala.inline
+    def setFireEventUndefined: Self = StObject.set(x, "fireEvent", js.undefined)
     
     @scala.inline
     def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
@@ -1170,40 +1367,16 @@ object IAbstractComponent {
     def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def setGetActiveAnimation(value: () => _): Self = StObject.set(x, "getActiveAnimation", js.Any.fromFunction0(value))
+    def setGetActiveAnimation(value: () => js.Any): Self = StObject.set(x, "getActiveAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetActiveAnimationUndefined: Self = StObject.set(x, "getActiveAnimation", js.undefined)
-    
-    @scala.inline
-    def setGetAlignToXY(value: (js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[Array]) => Array): Self = StObject.set(x, "getAlignToXY", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetAlignToXYUndefined: Self = StObject.set(x, "getAlignToXY", js.undefined)
-    
-    @scala.inline
-    def setGetAnchorXY(value: (js.UndefOr[java.lang.String], js.UndefOr[Boolean], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getAnchorXY", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetAnchorXYUndefined: Self = StObject.set(x, "getAnchorXY", js.undefined)
-    
-    @scala.inline
-    def setGetBox(value: (js.UndefOr[Boolean], js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetBoxUndefined: Self = StObject.set(x, "getBox", js.undefined)
     
     @scala.inline
     def setGetBubbleTarget(value: () => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "getBubbleTarget", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetBubbleTargetUndefined: Self = StObject.set(x, "getBubbleTarget", js.undefined)
-    
-    @scala.inline
-    def setGetConstrainVector(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Array]) => _): Self = StObject.set(x, "getConstrainVector", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetConstrainVectorUndefined: Self = StObject.set(x, "getConstrainVector", js.undefined)
     
     @scala.inline
     def setGetEl(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
@@ -1242,46 +1415,16 @@ object IAbstractComponent {
     def setGetLoaderUndefined: Self = StObject.set(x, "getLoader", js.undefined)
     
     @scala.inline
-    def setGetLocalX(value: () => Double): Self = StObject.set(x, "getLocalX", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocalXUndefined: Self = StObject.set(x, "getLocalX", js.undefined)
-    
-    @scala.inline
-    def setGetLocalXY(value: () => Array): Self = StObject.set(x, "getLocalXY", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocalXYUndefined: Self = StObject.set(x, "getLocalXY", js.undefined)
-    
-    @scala.inline
-    def setGetLocalY(value: () => Double): Self = StObject.set(x, "getLocalY", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocalYUndefined: Self = StObject.set(x, "getLocalY", js.undefined)
-    
-    @scala.inline
-    def setGetOffsetsTo(value: js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetOffsetsToUndefined: Self = StObject.set(x, "getOffsetsTo", js.undefined)
-    
-    @scala.inline
     def setGetPlugin(value: /* pluginId */ js.UndefOr[java.lang.String] => IAbstractPlugin): Self = StObject.set(x, "getPlugin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetPluginUndefined: Self = StObject.set(x, "getPlugin", js.undefined)
     
     @scala.inline
-    def setGetRegion(value: () => IRegion): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
+    def setGetSize(value: () => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
-    
-    @scala.inline
-    def setGetSize(value: () => _): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSizeModel(value: /* ownerCtSizeModel */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getSizeModel", js.Any.fromFunction1(value))
+    def setGetSizeModel(value: /* ownerCtSizeModel */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getSizeModel", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetSizeModelUndefined: Self = StObject.set(x, "getSizeModel", js.undefined)
@@ -1290,10 +1433,10 @@ object IAbstractComponent {
     def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
     
     @scala.inline
-    def setGetViewRegion(value: () => IRegion): Self = StObject.set(x, "getViewRegion", js.Any.fromFunction0(value))
+    def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetViewRegionUndefined: Self = StObject.set(x, "getViewRegion", js.undefined)
+    def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
     def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
@@ -1302,31 +1445,13 @@ object IAbstractComponent {
     def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
     
     @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
-    
-    @scala.inline
     def setGetXTypes(value: () => java.lang.String): Self = StObject.set(x, "getXTypes", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetXTypesUndefined: Self = StObject.set(x, "getXTypes", js.undefined)
     
     @scala.inline
-    def setGetXUndefined: Self = StObject.set(x, "getX", js.undefined)
-    
-    @scala.inline
-    def setGetXY(value: () => Array): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
-    
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetYUndefined: Self = StObject.set(x, "getY", js.undefined)
-    
-    @scala.inline
-    def setHasActiveFx(value: () => _): Self = StObject.set(x, "hasActiveFx", js.Any.fromFunction0(value))
+    def setHasActiveFx(value: () => js.Any): Self = StObject.set(x, "hasActiveFx", js.Any.fromFunction0(value))
     
     @scala.inline
     def setHasActiveFxUndefined: Self = StObject.set(x, "hasActiveFx", js.undefined)
@@ -1336,6 +1461,18 @@ object IAbstractComponent {
     
     @scala.inline
     def setHasClsUndefined: Self = StObject.set(x, "hasCls", js.undefined)
+    
+    @scala.inline
+    def setHasListener(value: js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setHasListenerUndefined: Self = StObject.set(x, "hasListener", js.undefined)
+    
+    @scala.inline
+    def setHasListeners(value: js.Any): Self = StObject.set(x, "hasListeners", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHasListenersUndefined: Self = StObject.set(x, "hasListeners", js.undefined)
     
     @scala.inline
     def setHasUICls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "hasUICls", js.Any.fromFunction1(value))
@@ -1380,7 +1517,7 @@ object IAbstractComponent {
     def setInitEventsUndefined: Self = StObject.set(x, "initEvents", js.undefined)
     
     @scala.inline
-    def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
@@ -1443,6 +1580,12 @@ object IAbstractComponent {
     def setIsLayoutSuspendedUndefined: Self = StObject.set(x, "isLayoutSuspended", js.undefined)
     
     @scala.inline
+    def setIsObservable(value: Boolean): Self = StObject.set(x, "isObservable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsObservableUndefined: Self = StObject.set(x, "isObservable", js.undefined)
+    
+    @scala.inline
     def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
     @scala.inline
@@ -1462,6 +1605,12 @@ object IAbstractComponent {
     
     @scala.inline
     def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    
+    @scala.inline
+    def setListeners(value: js.Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
     @scala.inline
     def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
@@ -1506,10 +1655,18 @@ object IAbstractComponent {
     def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setMove(value: (js.UndefOr[java.lang.String], js.UndefOr[Double], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
+    def setMon(
+      value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any
+    ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
+    
+    @scala.inline
+    def setMun(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
     
     @scala.inline
     def setNextNode(value: /* selector */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "nextNode", js.Any.fromFunction1(value))
@@ -1522,6 +1679,9 @@ object IAbstractComponent {
     
     @scala.inline
     def setNextSiblingUndefined: Self = StObject.set(x, "nextSibling", js.undefined)
+    
+    @scala.inline
+    def setOn(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
     
     @scala.inline
     def setOnAdded(
@@ -1568,6 +1728,9 @@ object IAbstractComponent {
     
     @scala.inline
     def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    
+    @scala.inline
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
     def setOverCls(value: java.lang.String): Self = StObject.set(x, "overCls", value.asInstanceOf[js.Any])
@@ -1618,7 +1781,13 @@ object IAbstractComponent {
     def setRegisterFloatingItemUndefined: Self = StObject.set(x, "registerFloatingItem", js.undefined)
     
     @scala.inline
-    def setRemoveAnchor(value: () => IAbstractComponent | IPositionable): Self = StObject.set(x, "removeAnchor", js.Any.fromFunction0(value))
+    def setRelayEvents(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[java.lang.String]) => js.Any): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    
+    @scala.inline
+    def setRemoveAnchor(value: () => IPositionable): Self = StObject.set(x, "removeAnchor", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRemoveAnchorUndefined: Self = StObject.set(x, "removeAnchor", js.undefined)
@@ -1640,6 +1809,18 @@ object IAbstractComponent {
     
     @scala.inline
     def setRemoveClsWithUIUndefined: Self = StObject.set(x, "removeClsWithUI", js.undefined)
+    
+    @scala.inline
+    def setRemoveListener(value: (js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
+    
+    @scala.inline
+    def setRemoveManagedListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
     
     @scala.inline
     def setRemoveUIClsFromElement(value: /* ui */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "removeUIClsFromElement", js.Any.fromFunction1(value))
@@ -1684,13 +1865,49 @@ object IAbstractComponent {
     def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
+    def setResumeEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setResumeEventUndefined: Self = StObject.set(x, "resumeEvent", js.undefined)
+    
+    @scala.inline
+    def setResumeEvents(value: () => Unit): Self = StObject.set(x, "resumeEvents", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setResumeEventsUndefined: Self = StObject.set(x, "resumeEvents", js.undefined)
+    
+    @scala.inline
     def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     
     @scala.inline
-    def setSequenceFx(value: () => _): Self = StObject.set(x, "sequenceFx", js.Any.fromFunction0(value))
+    def setSaveDelay(value: Double): Self = StObject.set(x, "saveDelay", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSaveDelayUndefined: Self = StObject.set(x, "saveDelay", js.undefined)
+    
+    @scala.inline
+    def setSavePropToState(value: (js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "savePropToState", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setSavePropToStateUndefined: Self = StObject.set(x, "savePropToState", js.undefined)
+    
+    @scala.inline
+    def setSavePropsToState(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "savePropsToState", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setSavePropsToStateUndefined: Self = StObject.set(x, "savePropsToState", js.undefined)
+    
+    @scala.inline
+    def setSaveState(value: () => Unit): Self = StObject.set(x, "saveState", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setSaveStateUndefined: Self = StObject.set(x, "saveState", js.undefined)
+    
+    @scala.inline
+    def setSequenceFx(value: () => js.Any): Self = StObject.set(x, "sequenceFx", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSequenceFxUndefined: Self = StObject.set(x, "sequenceFx", js.undefined)
@@ -1702,7 +1919,7 @@ object IAbstractComponent {
     def setSetBorderUndefined: Self = StObject.set(x, "setBorder", js.undefined)
     
     @scala.inline
-    def setSetBox(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable): Self = StObject.set(x, "setBox", js.Any.fromFunction2(value))
+    def setSetBox(value: (/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setBox", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
@@ -1726,19 +1943,19 @@ object IAbstractComponent {
     def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
     @scala.inline
-    def setSetLocalX(value: js.UndefOr[js.Any | Double] => IAbstractComponent | IPositionable): Self = StObject.set(x, "setLocalX", js.Any.fromFunction1(value))
+    def setSetLocalX(value: /* x */ js.UndefOr[js.Any] => IPositionable): Self = StObject.set(x, "setLocalX", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetLocalXUndefined: Self = StObject.set(x, "setLocalX", js.undefined)
     
     @scala.inline
-    def setSetLocalXY(value: (js.UndefOr[js.Any], js.UndefOr[js.Any | Double]) => IAbstractComponent | IPositionable): Self = StObject.set(x, "setLocalXY", js.Any.fromFunction2(value))
+    def setSetLocalXY(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setLocalXY", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetLocalXYUndefined: Self = StObject.set(x, "setLocalXY", js.undefined)
     
     @scala.inline
-    def setSetLocalY(value: js.UndefOr[js.Any | Double] => IAbstractComponent | IPositionable): Self = StObject.set(x, "setLocalY", js.Any.fromFunction1(value))
+    def setSetLocalY(value: /* y */ js.UndefOr[js.Any] => IPositionable): Self = StObject.set(x, "setLocalY", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetLocalYUndefined: Self = StObject.set(x, "setLocalY", js.undefined)
@@ -1750,7 +1967,7 @@ object IAbstractComponent {
     def setSetMarginUndefined: Self = StObject.set(x, "setMargin", js.undefined)
     
     @scala.inline
-    def setSetRegion(value: (js.UndefOr[IRegion], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable): Self = StObject.set(x, "setRegion", js.Any.fromFunction2(value))
+    def setSetRegion(value: (/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setRegion", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
@@ -1780,19 +1997,19 @@ object IAbstractComponent {
     def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
     
     @scala.inline
-    def setSetX(value: (js.UndefOr[js.Any | Double], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable): Self = StObject.set(x, "setX", js.Any.fromFunction2(value))
+    def setSetX(value: (/* x */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setX", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
     
     @scala.inline
-    def setSetXY(value: (js.UndefOr[js.Any | Array], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable): Self = StObject.set(x, "setXY", js.Any.fromFunction2(value))
+    def setSetXY(value: (/* xy */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setXY", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
     
     @scala.inline
-    def setSetY(value: (js.UndefOr[js.Any | Double], js.UndefOr[js.Any]) => IAbstractComponent | IPositionable): Self = StObject.set(x, "setY", js.Any.fromFunction2(value))
+    def setSetY(value: (/* y */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setY", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
@@ -1802,6 +2019,24 @@ object IAbstractComponent {
     
     @scala.inline
     def setShrinkWrapUndefined: Self = StObject.set(x, "shrinkWrap", js.undefined)
+    
+    @scala.inline
+    def setStateEvents(value: Array): Self = StObject.set(x, "stateEvents", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStateEventsUndefined: Self = StObject.set(x, "stateEvents", js.undefined)
+    
+    @scala.inline
+    def setStateId(value: java.lang.String): Self = StObject.set(x, "stateId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStateIdUndefined: Self = StObject.set(x, "stateId", js.undefined)
+    
+    @scala.inline
+    def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
     
     @scala.inline
     def setStopAnimation(value: () => IElement): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
@@ -1822,7 +2057,19 @@ object IAbstractComponent {
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setSyncFx(value: () => _): Self = StObject.set(x, "syncFx", js.Any.fromFunction0(value))
+    def setSuspendEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSuspendEventUndefined: Self = StObject.set(x, "suspendEvent", js.undefined)
+    
+    @scala.inline
+    def setSuspendEvents(value: js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "suspendEvents", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSuspendEventsUndefined: Self = StObject.set(x, "suspendEvents", js.undefined)
+    
+    @scala.inline
+    def setSyncFx(value: () => js.Any): Self = StObject.set(x, "syncFx", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSyncFxUndefined: Self = StObject.set(x, "syncFx", js.undefined)
@@ -1840,16 +2087,16 @@ object IAbstractComponent {
     def setTplWriteModeUndefined: Self = StObject.set(x, "tplWriteMode", js.undefined)
     
     @scala.inline
-    def setTranslatePoints(value: (js.UndefOr[js.Any], js.UndefOr[Double]) => _): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTranslatePointsUndefined: Self = StObject.set(x, "translatePoints", js.undefined)
-    
-    @scala.inline
     def setUi(value: java.lang.String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    
+    @scala.inline
+    def setUn(value: (js.UndefOr[java.lang.String], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
     
     @scala.inline
     def setUp(

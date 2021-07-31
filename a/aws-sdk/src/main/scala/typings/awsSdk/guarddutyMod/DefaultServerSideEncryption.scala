@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultServerSideEncryption extends StObject {
   
   /**
     * The type of encryption used for objects within the S3 bucket.
     */
-  var EncryptionType: js.UndefOr[String] = js.native
+  var EncryptionType: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the KMS encryption key. Only available if the bucket EncryptionType is aws:kms.
     */
-  var KmsMasterKeyArn: js.UndefOr[String] = js.native
+  var KmsMasterKeyArn: js.UndefOr[String] = js.undefined
 }
 object DefaultServerSideEncryption {
   

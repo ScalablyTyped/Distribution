@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayConfig extends StObject {
   
   /** Indicates how to authorize and/or authenticate devices to access the gateway. */
-  var gatewayAuthMethod: js.UndefOr[String] = js.native
+  var gatewayAuthMethod: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the device is a gateway. */
-  var gatewayType: js.UndefOr[String] = js.native
+  var gatewayType: js.UndefOr[String] = js.undefined
   
   /** [Output only] The ID of the gateway the device accessed most recently. */
-  var lastAccessedGatewayId: js.UndefOr[String] = js.native
+  var lastAccessedGatewayId: js.UndefOr[String] = js.undefined
   
   /** [Output only] The most recent time at which the device accessed the gateway specified in `last_accessed_gateway`. */
-  var lastAccessedGatewayTime: js.UndefOr[String] = js.native
+  var lastAccessedGatewayTime: js.UndefOr[String] = js.undefined
 }
 object GatewayConfig {
   

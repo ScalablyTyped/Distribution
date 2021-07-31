@@ -6,25 +6,24 @@ import typings.aliApp.aliAppStrings.none
 import typings.aliApp.aliAppStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 文字内容
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * 显示时长，单位为 ms，默认 2000
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** toast 类型，展示相应图标，默认 none，支持 success / fail / exception / none’。其中 exception 类型必须传文字信息 */
-  var `type`: js.UndefOr[none | success | fail | exception | String] = js.native
+  var `type`: js.UndefOr[none | success | fail | exception | String] = js.undefined
 }
 object ToastOptions {
   

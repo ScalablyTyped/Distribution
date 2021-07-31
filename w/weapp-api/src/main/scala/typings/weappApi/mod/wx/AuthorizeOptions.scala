@@ -2,14 +2,14 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AuthorizeOptions extends CommonCallbackOptions {
+trait AuthorizeOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  需要获取权限的 scope，详见 scope 列表
-  var scope: Scope = js.native
+  var scope: Scope
 }
 object AuthorizeOptions {
   

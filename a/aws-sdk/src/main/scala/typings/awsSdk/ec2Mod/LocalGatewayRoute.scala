@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalGatewayRoute extends StObject {
   
   /**
     * The CIDR block used for destination matches.
     */
-  var DestinationCidrBlock: js.UndefOr[String] = js.native
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the local gateway route table.
     */
-  var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.native
+  var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayRoutetableId] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayRoutetableId] = js.undefined
   
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.native
+  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.undefined
   
   /**
     * The AWS account ID that owns the local gateway route.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the route.
     */
-  var State: js.UndefOr[LocalGatewayRouteState] = js.native
+  var State: js.UndefOr[LocalGatewayRouteState] = js.undefined
   
   /**
     * The route type.
     */
-  var Type: js.UndefOr[LocalGatewayRouteType] = js.native
+  var Type: js.UndefOr[LocalGatewayRouteType] = js.undefined
 }
 object LocalGatewayRoute {
   

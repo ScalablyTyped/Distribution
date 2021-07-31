@@ -4,52 +4,50 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a user to import to Firebase Auth via the
   * {@link auth.Auth.importUsers `importUsers()`} method.
   */
-@js.native
 trait UserImportRecord extends StObject {
   
   /**
     * The user's custom claims object if available, typically used to define
     * user roles and propagated to an authenticated user's ID token.
     */
-  var customClaims: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var customClaims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Whether or not the user is disabled: `true` for disabled; `false` for
     * enabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user's display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The user's primary email, if set.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the user's primary email is verified.
     */
-  var emailVerified: js.UndefOr[Boolean] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional metadata about the user.
     */
-  var metadata: js.UndefOr[UserMetadataRequest] = js.native
+  var metadata: js.UndefOr[UserMetadataRequest] = js.undefined
   
   /**
     * The user's multi-factor related properties.
     */
-  var multiFactor: js.UndefOr[MultiFactorUpdateSettings] = js.native
+  var multiFactor: js.UndefOr[MultiFactorUpdateSettings] = js.undefined
   
   /**
     * The buffer of bytes representing the user's hashed password.
@@ -57,27 +55,27 @@ trait UserImportRecord extends StObject {
     * {@link auth.UserImportOptions `UserImportOptions`} are required to be
     * specified to identify the hashing algorithm used to generate this hash.
     */
-  var passwordHash: js.UndefOr[Buffer] = js.native
+  var passwordHash: js.UndefOr[Buffer] = js.undefined
   
   /**
     * The buffer of bytes representing the user's password salt.
     */
-  var passwordSalt: js.UndefOr[Buffer] = js.native
+  var passwordSalt: js.UndefOr[Buffer] = js.undefined
   
   /**
     * The user's primary phone number, if set.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The user's photo URL.
     */
-  var photoURL: js.UndefOr[String] = js.native
+  var photoURL: js.UndefOr[String] = js.undefined
   
   /**
     * An array of providers (for example, Google, Facebook) linked to the user.
     */
-  var providerData: js.UndefOr[js.Array[UserProviderRequest]] = js.native
+  var providerData: js.UndefOr[js.Array[UserProviderRequest]] = js.undefined
   
   /**
     * The identifier of the tenant where user is to be imported to.
@@ -86,12 +84,12 @@ trait UserImportRecord extends StObject {
     * When not provided in an `admin.auth.TenantAwareAuth` context, the user is uploaded
     * to the tenant corresponding to that `TenantAwareAuth` instance's tenant ID.
     */
-  var tenantId: js.UndefOr[String] = js.native
+  var tenantId: js.UndefOr[String] = js.undefined
   
   /**
     * The user's `uid`.
     */
-  var uid: String = js.native
+  var uid: String
 }
 object UserImportRecord {
   

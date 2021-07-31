@@ -3,13 +3,11 @@ package typings.reactNativeMaterialUi.anon
 import typings.reactNativeMaterialUi.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackedActionsContainer extends StObject {
   
-  var stackedActionsContainer: js.UndefOr[ViewStyle] = js.native
+  var stackedActionsContainer: js.UndefOr[ViewStyle] = js.undefined
 }
 object StackedActionsContainer {
   

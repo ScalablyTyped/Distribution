@@ -6,39 +6,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait symbolUtilsRenderColorRampPreviewHTMLOptions extends Object {
+trait symbolUtilsRenderColorRampPreviewHTMLOptions
+  extends StObject
+     with Object {
   
   /**
     * Specifies the alignment of the color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
-  var align: js.UndefOr[horizontal | vertical] = js.native
+  var align: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * Indicates whether to render the color ramp with a continuous gradient.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
-  var gradient: js.UndefOr[Boolean] = js.native
+  var gradient: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The height of the ramp in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the ramp in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object symbolUtilsRenderColorRampPreviewHTMLOptions {
   

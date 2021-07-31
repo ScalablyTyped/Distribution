@@ -2,146 +2,144 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderableDBInstanceOption extends StObject {
   
   /**
     * The Availability Zone group for a DB instance.
     */
-  var AvailabilityZoneGroup: js.UndefOr[String] = js.native
+  var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Availability Zones for a DB instance.
     */
-  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
+  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
   
   /**
     * A list of the available processor features for the DB instance class of a DB instance.
     */
-  var AvailableProcessorFeatures: js.UndefOr[AvailableProcessorFeatureList] = js.native
+  var AvailableProcessorFeatures: js.UndefOr[AvailableProcessorFeatureList] = js.undefined
   
   /**
     * The DB instance class for a DB instance.
     */
-  var DBInstanceClass: js.UndefOr[String] = js.native
+  var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * The engine type of a DB instance.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The engine version of a DB instance.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The license model for a DB instance.
     */
-  var LicenseModel: js.UndefOr[String] = js.native
+  var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum total provisioned IOPS for a DB instance.
     */
-  var MaxIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.native
+  var MaxIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Maximum provisioned IOPS per GiB for a DB instance.
     */
-  var MaxIopsPerGib: js.UndefOr[DoubleOptional] = js.native
+  var MaxIopsPerGib: js.UndefOr[DoubleOptional] = js.undefined
   
   /**
     * Maximum storage size for a DB instance.
     */
-  var MaxStorageSize: js.UndefOr[IntegerOptional] = js.native
+  var MaxStorageSize: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Minimum total provisioned IOPS for a DB instance.
     */
-  var MinIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.native
+  var MinIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Minimum provisioned IOPS per GiB for a DB instance.
     */
-  var MinIopsPerGib: js.UndefOr[DoubleOptional] = js.native
+  var MinIopsPerGib: js.UndefOr[DoubleOptional] = js.undefined
   
   /**
     * Minimum storage size for a DB instance.
     */
-  var MinStorageSize: js.UndefOr[IntegerOptional] = js.native
+  var MinStorageSize: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Indicates whether a DB instance is Multi-AZ capable.
     */
-  var MultiAZCapable: js.UndefOr[Boolean] = js.native
+  var MultiAZCapable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether a DB instance supports RDS on Outposts. For more information about RDS on Outposts, see Amazon RDS on AWS Outposts in the Amazon RDS User Guide. 
     */
-  var OutpostCapable: js.UndefOr[Boolean] = js.native
+  var OutpostCapable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a DB instance can have a read replica.
     */
-  var ReadReplicaCapable: js.UndefOr[Boolean] = js.native
+  var ReadReplicaCapable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the storage type for a DB instance.
     */
-  var StorageType: js.UndefOr[String] = js.native
+  var StorageType: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the supported DB engine modes.
     */
-  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.native
+  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
   
   /**
     * Indicates whether a DB instance supports Enhanced Monitoring at intervals from 1 to 60 seconds.
     */
-  var SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.native
+  var SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether you can use Aurora global databases with a specific combination of other DB engine attributes.
     */
-  var SupportsGlobalDatabases: js.UndefOr[Boolean] = js.native
+  var SupportsGlobalDatabases: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a DB instance supports IAM database authentication.
     */
-  var SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.native
+  var SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a DB instance supports provisioned IOPS.
     */
-  var SupportsIops: js.UndefOr[Boolean] = js.native
+  var SupportsIops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether a DB instance supports Kerberos Authentication.
     */
-  var SupportsKerberosAuthentication: js.UndefOr[BooleanOptional] = js.native
+  var SupportsKerberosAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * True if a DB instance supports Performance Insights, otherwise false.
     */
-  var SupportsPerformanceInsights: js.UndefOr[Boolean] = js.native
+  var SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether Amazon RDS can automatically scale storage for DB instances that use the specified DB instance class.
     */
-  var SupportsStorageAutoscaling: js.UndefOr[BooleanOptional] = js.native
+  var SupportsStorageAutoscaling: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Indicates whether a DB instance supports encrypted storage.
     */
-  var SupportsStorageEncryption: js.UndefOr[Boolean] = js.native
+  var SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a DB instance is in a VPC.
     */
-  var Vpc: js.UndefOr[Boolean] = js.native
+  var Vpc: js.UndefOr[Boolean] = js.undefined
 }
 object OrderableDBInstanceOption {
   

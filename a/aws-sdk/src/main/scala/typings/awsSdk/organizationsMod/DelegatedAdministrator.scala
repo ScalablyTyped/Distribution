@@ -2,51 +2,49 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DelegatedAdministrator extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the delegated administrator's account.
     */
-  var Arn: js.UndefOr[AccountArn] = js.native
+  var Arn: js.UndefOr[AccountArn] = js.undefined
   
   /**
     * The date when the account was made a delegated administrator.
     */
-  var DelegationEnabledDate: js.UndefOr[Timestamp] = js.native
+  var DelegationEnabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The email address that is associated with the delegated administrator's AWS account.
     */
-  var Email: js.UndefOr[typings.awsSdk.organizationsMod.Email] = js.native
+  var Email: js.UndefOr[typings.awsSdk.organizationsMod.Email] = js.undefined
   
   /**
     * The unique identifier (ID) of the delegated administrator's account.
     */
-  var Id: js.UndefOr[AccountId] = js.native
+  var Id: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The method by which the delegated administrator's account joined the organization.
     */
-  var JoinedMethod: js.UndefOr[AccountJoinedMethod] = js.native
+  var JoinedMethod: js.UndefOr[AccountJoinedMethod] = js.undefined
   
   /**
     * The date when the delegated administrator's account became a part of the organization.
     */
-  var JoinedTimestamp: js.UndefOr[Timestamp] = js.native
+  var JoinedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The friendly name of the delegated administrator's account.
     */
-  var Name: js.UndefOr[AccountName] = js.native
+  var Name: js.UndefOr[AccountName] = js.undefined
   
   /**
     * The status of the delegated administrator's account in the organization.
     */
-  var Status: js.UndefOr[AccountStatus] = js.native
+  var Status: js.UndefOr[AccountStatus] = js.undefined
 }
 object DelegatedAdministrator {
   

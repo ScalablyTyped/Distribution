@@ -10,7 +10,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -140,18 +139,14 @@ object mod {
     @scala.inline
     def disableSearch_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableSearch")(x.asInstanceOf[js.Any])
     
-    @JSImport("kue", "Job.get")
-    @js.native
-    def get(id: Double, `type`: String): Unit = js.native
-    @JSImport("kue", "Job.get")
-    @js.native
-    def get(id: Double, `type`: String, fn: JobCallback): Unit = js.native
-    @JSImport("kue", "Job.get")
-    @js.native
-    def get(id: Double, `type`: JobCallback): Unit = js.native
-    @JSImport("kue", "Job.get")
-    @js.native
-    def get(id: Double, `type`: JobCallback, fn: JobCallback): Unit = js.native
+    @scala.inline
+    def get(id: Double, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: Double, `type`: String, fn: JobCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: Double, `type`: JobCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: Double, `type`: JobCallback, fn: JobCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("kue", "Job.jobEvents")
     @js.native
@@ -159,9 +154,8 @@ object mod {
     @scala.inline
     def jobEvents_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jobEvents")(x.asInstanceOf[js.Any])
     
-    @JSImport("kue", "Job.log")
-    @js.native
-    def log(id: Double, fn: js.Function): Unit = js.native
+    @scala.inline
+    def log(id: Double, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("kue", "Job.priorities")
     @js.native
@@ -169,28 +163,22 @@ object mod {
     @scala.inline
     def priorities_=(x: Priorities): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("priorities")(x.asInstanceOf[js.Any])
     
-    @JSImport("kue", "Job.range")
-    @js.native
-    def range(from: Double, to: Double, order: String, fn: js.Function): Unit = js.native
+    @scala.inline
+    def range(from: Double, to: Double, order: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], order.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("kue", "Job.rangeByState")
-    @js.native
-    def rangeByState(state: String, from: Double, to: Double, order: String, fn: js.Function): Unit = js.native
+    @scala.inline
+    def rangeByState(state: String, from: Double, to: Double, order: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeByState")(state.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], order.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("kue", "Job.rangeByType")
-    @js.native
-    def rangeByType(`type`: String, state: String, from: Double, to: Double, order: String, fn: js.Function): Unit = js.native
+    @scala.inline
+    def rangeByType(`type`: String, state: String, from: Double, to: Double, order: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeByType")(`type`.asInstanceOf[js.Any], state.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], order.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("kue", "Job.remove")
-    @js.native
-    def remove(id: Double): Unit = js.native
-    @JSImport("kue", "Job.remove")
-    @js.native
-    def remove(id: Double, fn: js.Function): Unit = js.native
+    @scala.inline
+    def remove(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def remove(id: Double, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("kue", "Job.removeBadJob")
-    @js.native
-    def removeBadJob(id: Double): Unit = js.native
+    @scala.inline
+    def removeBadJob(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBadJob")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("kue", "Queue")
@@ -288,12 +276,10 @@ object mod {
   @scala.inline
   def app_=(x: Application_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("app")(x.asInstanceOf[js.Any])
   
-  @JSImport("kue", "createQueue")
-  @js.native
-  def createQueue(): Queue = js.native
-  @JSImport("kue", "createQueue")
-  @js.native
-  def createQueue(options: js.Object): Queue = js.native
+  @scala.inline
+  def createQueue(): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueue")().asInstanceOf[Queue]
+  @scala.inline
+  def createQueue(options: js.Object): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueue")(options.asInstanceOf[js.Any]).asInstanceOf[Queue]
   
   object redisClientFactory {
     
@@ -348,30 +334,22 @@ object mod {
     class ReplyError ()
       extends typings.redis.mod.ReplyError
     
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(options: ClientOpts): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(port: Double): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(port: Double, host: js.UndefOr[scala.Nothing], options: ClientOpts): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(port: Double, host: String): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(unix_socket: String): typings.redis.mod.RedisClient = js.native
-    @JSImport("kue", "redisClientFactory.createClient")
-    @js.native
-    def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
+    @scala.inline
+    def createClient(): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(options: ClientOpts): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(port: Double): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(port: Double, host: String): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(port: Double, host: Unit, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(unix_socket: String): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+    @scala.inline
+    def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
     
     @JSImport("kue", "redisClientFactory.debug_mode")
     @js.native
@@ -380,12 +358,10 @@ object mod {
     @scala.inline
     def debugMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug_mode")(x.asInstanceOf[js.Any])
     
-    @JSImport("kue", "redisClientFactory.print")
-    @js.native
-    def print(err: Null, reply: js.Any): Unit = js.native
-    @JSImport("kue", "redisClientFactory.print")
-    @js.native
-    def print(err: Error, reply: js.Any): Unit = js.native
+    @scala.inline
+    def print(err: Null, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def print(err: Error, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("kue", "workers")
@@ -398,18 +374,17 @@ object mod {
   
   type JobCallback = js.Function2[/* err */ js.UndefOr[js.Any], /* job */ js.UndefOr[Job], Unit]
   
-  @js.native
   trait Priorities extends StObject {
     
-    var critical: Double = js.native
+    var critical: Double
     
-    var high: Double = js.native
+    var high: Double
     
-    var low: Double = js.native
+    var low: Double
     
-    var medium: Double = js.native
+    var medium: Double
     
-    var normal: Double = js.native
+    var normal: Double
   }
   object Priorities {
     
@@ -441,20 +416,19 @@ object mod {
   
   type ProcessCallback = (js.Function2[/* job */ Job, /* cb */ DoneCallback, Unit]) | (js.Function3[/* job */ Job, /* ctx */ WorkerCtx, /* cb */ DoneCallback, Unit])
   
-  @js.native
   trait Redis extends StObject {
     
-    def client(): RedisClient = js.native
+    def client(): RedisClient
     
-    def configureFactory(options: js.Object, queue: Queue): Unit = js.native
+    def configureFactory(options: js.Object, queue: Queue): Unit
     
-    def createClient(): RedisClient = js.native
+    def createClient(): RedisClient
     
-    def createClientFactory(options: js.Object): RedisClient = js.native
+    def createClientFactory(options: js.Object): RedisClient
     
-    def pubsubClient(): RedisClient = js.native
+    def pubsubClient(): RedisClient
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object Redis {
     

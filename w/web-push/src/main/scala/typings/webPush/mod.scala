@@ -16,14 +16,19 @@ import typings.webPush.webPushStrings.aesgcm
 import typings.webPush.webPushStrings.aws128gcm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("web-push", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("web-push", "WebPushError")
   @js.native
-  class WebPushError protected () extends Error {
+  class WebPushError protected ()
+    extends StObject
+       with Error {
     def this(message: String, statusCode: Double, headers: Headers, body: String, endpoint: String) = this()
     
     val body: String = js.native
@@ -32,77 +37,65 @@ object mod {
     
     val headers: Headers = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
     val statusCode: Double = js.native
   }
   
-  @JSImport("web-push", "encrypt")
-  @js.native
-  def encrypt(userPublicKey: String, userAuth: String, payload: String, contentEncoding: ContentEncoding): EncryptionResult = js.native
-  @JSImport("web-push", "encrypt")
-  @js.native
-  def encrypt(userPublicKey: String, userAuth: String, payload: Buffer, contentEncoding: ContentEncoding): EncryptionResult = js.native
+  @scala.inline
+  def encrypt(userPublicKey: String, userAuth: String, payload: String, contentEncoding: ContentEncoding): EncryptionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(userPublicKey.asInstanceOf[js.Any], userAuth.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[EncryptionResult]
+  @scala.inline
+  def encrypt(userPublicKey: String, userAuth: String, payload: Buffer, contentEncoding: ContentEncoding): EncryptionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(userPublicKey.asInstanceOf[js.Any], userAuth.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[EncryptionResult]
   
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription): RequestDetailsbodynull = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription, payload: js.UndefOr[scala.Nothing], options: RequestOptions): RequestDetailsbodynull = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription, payload: String): RequestDetails = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetails = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription, payload: Null, options: RequestOptions): RequestDetailsbodynull = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription, payload: Buffer): RequestDetails = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetails = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetails(subscription: PushSubscription): RequestDetails = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetails(subscription: PushSubscription, payload: js.UndefOr[scala.Nothing], options: RequestOptions): RequestDetails = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription): RequestDetailsbodyBuffer = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: js.UndefOr[scala.Nothing], options: RequestOptions): RequestDetailsbodyBuffer = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String): RequestDetailsbodyBuffer = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetailsbodyBuffer = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer): RequestDetailsbodyBuffer = js.native
-  @JSImport("web-push", "generateRequestDetails")
-  @js.native
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetailsbodyBuffer = js.native
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription): RequestDetailsbodynull = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetailsbodynull]
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription, payload: String): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription, payload: Null, options: RequestOptions): RequestDetailsbodynull = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodynull]
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetailsbodynull = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodynull]
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription, payload: Buffer): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  @scala.inline
+  def generateRequestDetails(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
   
-  @JSImport("web-push", "generateVAPIDKeys")
-  @js.native
-  def generateVAPIDKeys(): VapidKeys = js.native
+  @scala.inline
+  def generateRequestDetails_RequestDetails(subscription: PushSubscription): RequestDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetails]
+  @scala.inline
+  def generateRequestDetails_RequestDetails(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
   
-  @JSImport("web-push", "getVapidHeaders")
-  @js.native
+  @scala.inline
+  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription): RequestDetailsbodyBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetailsbodyBuffer]
+  @scala.inline
+  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  @scala.inline
+  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  @scala.inline
+  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  @scala.inline
+  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  @scala.inline
+  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  
+  @scala.inline
+  def generateVAPIDKeys(): VapidKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVAPIDKeys")().asInstanceOf[VapidKeys]
+  
+  @scala.inline
   def getVapidHeaders(
     audience: String,
     subject: String,
     publicKey: String,
     privateKey: String,
     contentEncoding: ContentEncoding
-  ): AuthorizationCryptoKey = js.native
-  @JSImport("web-push", "getVapidHeaders")
-  @js.native
+  ): AuthorizationCryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[AuthorizationCryptoKey]
+  @scala.inline
   def getVapidHeaders(
     audience: String,
     subject: String,
@@ -110,18 +103,17 @@ object mod {
     privateKey: String,
     contentEncoding: ContentEncoding,
     expiration: Double
-  ): AuthorizationCryptoKey = js.native
-  @JSImport("web-push", "getVapidHeaders")
-  @js.native
+  ): AuthorizationCryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any], expiration.asInstanceOf[js.Any])).asInstanceOf[AuthorizationCryptoKey]
+  
+  @scala.inline
   def getVapidHeaders_aes128gcm(
     audience: String,
     subject: String,
     publicKey: String,
     privateKey: String,
     contentEncoding: aes128gcm
-  ): Authorization = js.native
-  @JSImport("web-push", "getVapidHeaders")
-  @js.native
+  ): Authorization = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[Authorization]
+  @scala.inline
   def getVapidHeaders_aes128gcm(
     audience: String,
     subject: String,
@@ -129,12 +121,11 @@ object mod {
     privateKey: String,
     contentEncoding: aes128gcm,
     expiration: Double
-  ): Authorization = js.native
-  @JSImport("web-push", "getVapidHeaders")
-  @js.native
-  def getVapidHeaders_aesgcm(audience: String, subject: String, publicKey: String, privateKey: String, contentEncoding: aesgcm): CryptoKey = js.native
-  @JSImport("web-push", "getVapidHeaders")
-  @js.native
+  ): Authorization = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any], expiration.asInstanceOf[js.Any])).asInstanceOf[Authorization]
+  
+  @scala.inline
+  def getVapidHeaders_aesgcm(audience: String, subject: String, publicKey: String, privateKey: String, contentEncoding: aesgcm): CryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[CryptoKey]
+  @scala.inline
   def getVapidHeaders_aesgcm(
     audience: String,
     subject: String,
@@ -142,50 +133,40 @@ object mod {
     privateKey: String,
     contentEncoding: aesgcm,
     expiration: Double
-  ): CryptoKey = js.native
+  ): CryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any], expiration.asInstanceOf[js.Any])).asInstanceOf[CryptoKey]
   
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = js.native
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription, payload: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[SendResult] = js.native
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription, payload: String): js.Promise[SendResult] = js.native
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription, payload: String, options: RequestOptions): js.Promise[SendResult] = js.native
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription, payload: Null, options: RequestOptions): js.Promise[SendResult] = js.native
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription, payload: Buffer): js.Promise[SendResult] = js.native
-  @JSImport("web-push", "sendNotification")
-  @js.native
-  def sendNotification(subscription: PushSubscription, payload: Buffer, options: RequestOptions): js.Promise[SendResult] = js.native
+  @scala.inline
+  def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SendResult]]
+  @scala.inline
+  def sendNotification(subscription: PushSubscription, payload: String): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  @scala.inline
+  def sendNotification(subscription: PushSubscription, payload: String, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  @scala.inline
+  def sendNotification(subscription: PushSubscription, payload: Null, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  @scala.inline
+  def sendNotification(subscription: PushSubscription, payload: Unit, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  @scala.inline
+  def sendNotification(subscription: PushSubscription, payload: Buffer): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  @scala.inline
+  def sendNotification(subscription: PushSubscription, payload: Buffer, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
   
-  @JSImport("web-push", "setGCMAPIKey")
-  @js.native
-  def setGCMAPIKey(): Unit = js.native
-  @JSImport("web-push", "setGCMAPIKey")
-  @js.native
-  def setGCMAPIKey(apiKey: String): Unit = js.native
+  @scala.inline
+  def setGCMAPIKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCMAPIKey")().asInstanceOf[Unit]
+  @scala.inline
+  def setGCMAPIKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCMAPIKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("web-push", "setVapidDetails")
-  @js.native
-  def setVapidDetails(subject: String, publicKey: String, privateKey: String): Unit = js.native
+  @scala.inline
+  def setVapidDetails(subject: String, publicKey: String, privateKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVapidDetails")(subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object supportedContentEncodings {
     
     @JSImport("web-push", "supportedContentEncodings.AES_128_GCM")
     @js.native
-    val AES_128_GCM: aws128gcm with ContentEncoding = js.native
+    val AES_128_GCM: aws128gcm & ContentEncoding = js.native
     
     @JSImport("web-push", "supportedContentEncodings.AES_GCM")
     @js.native
-    val AES_GCM: aesgcm with ContentEncoding = js.native
+    val AES_GCM: aesgcm & ContentEncoding = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -202,14 +183,13 @@ object mod {
     def aesgcm: typings.webPush.webPushStrings.aesgcm = "aesgcm".asInstanceOf[typings.webPush.webPushStrings.aesgcm]
   }
   
-  @js.native
   trait EncryptionResult extends StObject {
     
-    var cipherText: Buffer = js.native
+    var cipherText: Buffer
     
-    var localPublicKey: String = js.native
+    var localPublicKey: String
     
-    var salt: String = js.native
+    var salt: String
   }
   object EncryptionResult {
     
@@ -235,12 +215,11 @@ object mod {
   
   type Headers = StringDictionary[String]
   
-  @js.native
   trait PushSubscription extends StObject {
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var keys: Auth = js.native
+    var keys: Auth
   }
   object PushSubscription {
     
@@ -261,24 +240,23 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestDetails extends StObject {
     
-    var body: Buffer | Null = js.native
+    var body: Buffer | Null
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var method: POST = js.native
+    var method: POST
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
   }
   object RequestDetails {
     
     @scala.inline
-    def apply(endpoint: String, headers: Headers, method: POST): RequestDetails = {
-      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    def apply(endpoint: String, headers: Headers): RequestDetails = {
+      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST", body = null)
       __obj.asInstanceOf[RequestDetails]
     }
     
@@ -308,23 +286,22 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var TTL: js.UndefOr[Double] = js.native
+    var TTL: js.UndefOr[Double] = js.undefined
     
     // a value in seconds that describes how long a push message is retained by the push service (by default, four weeks).
-    var contentEncoding: js.UndefOr[ContentEncoding] = js.native
+    var contentEncoding: js.UndefOr[ContentEncoding] = js.undefined
     
-    var gcmAPIKey: js.UndefOr[String] = js.native
+    var gcmAPIKey: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     // the type of push encoding to use (e.g. 'aesgcm', by default, or 'aes128gcm').
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
     // can be a GCM API key to be used for this request and this request only. This overrides any API key set via setGCMAPIKey().
-    var vapidDetails: js.UndefOr[PrivateKey] = js.native
+    var vapidDetails: js.UndefOr[PrivateKey] = js.undefined
   }
   object RequestOptions {
     
@@ -375,14 +352,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SendResult extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object SendResult {
     
@@ -406,12 +382,11 @@ object mod {
     }
   }
   
-  @js.native
   trait VapidKeys extends StObject {
     
-    var privateKey: String = js.native
+    var privateKey: String
     
-    var publicKey: String = js.native
+    var publicKey: String
   }
   object VapidKeys {
     

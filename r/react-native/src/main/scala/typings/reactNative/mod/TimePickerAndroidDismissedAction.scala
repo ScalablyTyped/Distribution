@@ -3,19 +3,19 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.dismissedAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimePickerAndroidDismissedAction extends TimePickerAndroidOpenReturn {
+trait TimePickerAndroidDismissedAction
+  extends StObject
+     with TimePickerAndroidOpenReturn {
   
-  var action: dismissedAction = js.native
+  var action: dismissedAction
 }
 object TimePickerAndroidDismissedAction {
   
   @scala.inline
-  def apply(action: dismissedAction): TimePickerAndroidDismissedAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  def apply(): TimePickerAndroidDismissedAction = {
+    val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[TimePickerAndroidDismissedAction]
   }
   

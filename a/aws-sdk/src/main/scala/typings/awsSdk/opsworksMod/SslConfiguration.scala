@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslConfiguration extends StObject {
   
   /**
     * The contents of the certificate's domain.crt file.
     */
-  var Certificate: String = js.native
+  var Certificate: String
   
   /**
     * Optional. Can be used to specify an intermediate certificate authority key or client authentication.
     */
-  var Chain: js.UndefOr[String] = js.native
+  var Chain: js.UndefOr[String] = js.undefined
   
   /**
     * The private key; the contents of the certificate's domain.kex file.
     */
-  var PrivateKey: String = js.native
+  var PrivateKey: String
 }
 object SslConfiguration {
   

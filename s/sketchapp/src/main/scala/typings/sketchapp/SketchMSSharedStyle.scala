@@ -3,23 +3,21 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.sharedStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSSharedStyle extends StObject {
   
-  var _class: sharedStyle = js.native
+  var _class: sharedStyle
   
-  var name: String = js.native
+  var name: String
   
-  var value: SketchMSStyle = js.native
+  var value: SketchMSStyle
 }
 object SketchMSSharedStyle {
   
   @scala.inline
-  def apply(_class: sharedStyle, name: String, value: SketchMSStyle): SketchMSSharedStyle = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(name: String, value: SketchMSStyle): SketchMSSharedStyle = {
+    val __obj = js.Dynamic.literal(_class = "sharedStyle", name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSSharedStyle]
   }
   

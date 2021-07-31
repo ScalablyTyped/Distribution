@@ -6,29 +6,30 @@ import typings.reactToastify.typesMod.Toast
 import typings.reactToastify.typesMod.ToastContainerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useToastContainerMod {
   
-  @JSImport("react-toastify/dist/hooks/useToastContainer", "useToastContainer")
+  @JSImport("react-toastify/dist/hooks/useToastContainer", JSImport.Namespace)
   @js.native
-  def useToastContainer(props: ToastContainerProps): Collection = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useToastContainer(props: ToastContainerProps): Collection = ^.asInstanceOf[js.Dynamic].applyDynamic("useToastContainer")(props.asInstanceOf[js.Any]).asInstanceOf[Collection]
+  
   trait ContainerInstance extends StObject {
     
-    var containerId: js.UndefOr[Id | Null] = js.native
+    var containerId: js.UndefOr[Id | Null] = js.undefined
     
-    var displayedToast: Double = js.native
+    var displayedToast: Double
     
-    def getToast(id: Id): Toast | Null = js.native
+    def getToast(id: Id): Toast | Null
     
-    def isToastActive(toastId: Id): Boolean = js.native
+    def isToastActive(toastId: Id): Boolean
     
-    var props: ToastContainerProps = js.native
+    var props: ToastContainerProps
     
-    var toastKey: Double = js.native
+    var toastKey: Double
   }
   object ContainerInstance {
     

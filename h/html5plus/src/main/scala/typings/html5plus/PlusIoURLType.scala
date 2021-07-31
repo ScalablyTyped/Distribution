@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-@js.native
 trait PlusIoURLType extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusIoURLType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var LocalURL: js.UndefOr[PlusIoLocalURL] = js.native
+  var LocalURL: js.UndefOr[PlusIoLocalURL] = js.undefined
   
   /**
     * 相对路径URL
@@ -28,7 +26,7 @@ trait PlusIoURLType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var RelativeURL: js.UndefOr[PlusIoRelativeURL] = js.native
+  var RelativeURL: js.UndefOr[PlusIoRelativeURL] = js.undefined
   
   /**
     * 网络路径URL
@@ -36,7 +34,7 @@ trait PlusIoURLType extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var RomoteURL: js.UndefOr[String] = js.native
+  var RomoteURL: js.UndefOr[String] = js.undefined
 }
 object PlusIoURLType {
   

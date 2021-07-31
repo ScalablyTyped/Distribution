@@ -2,19 +2,19 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathAttachment extends VertexAttachment {
+trait PathAttachment
+  extends StObject
+     with VertexAttachment {
   
-  var closed: Boolean = js.native
+  var closed: Boolean
   
-  var color: Color = js.native
+  var color: Color
   
-  var constantSpeed: Boolean = js.native
+  var constantSpeed: Boolean
   
-  var lengths: js.Array[Double] = js.native
+  var lengths: js.Array[Double]
 }
 object PathAttachment {
   

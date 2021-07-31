@@ -12,7 +12,7 @@ Context Oriented Programming (COP) for ECMAScript 6
 | Keywords           | COP, Context, Oriented, Programming |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 474 |
+| # downloads        | 634 |
 | # stars            | 0 |
 
 ## Links

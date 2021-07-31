@@ -2,7 +2,6 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.FieldPath")
@@ -12,8 +11,11 @@ class FieldPath protected () extends StObject {
 }
 object FieldPath {
   
-  /* static member */
-  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldPath.documentId")
+  @JSImport("react-native-firebase", "RNFirebase.firestore.FieldPath")
   @js.native
-  def documentId(): FieldPath = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def documentId(): FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[FieldPath]
 }

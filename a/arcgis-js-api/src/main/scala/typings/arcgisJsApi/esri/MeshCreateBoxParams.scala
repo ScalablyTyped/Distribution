@@ -15,39 +15,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshCreateBoxParams extends Object {
+trait MeshCreateBoxParams
+  extends StObject
+     with Object {
   
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The face for generating image uv coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
     */
-  var imageFace: js.UndefOr[String] = js.native
+  var imageFace: js.UndefOr[String] = js.undefined
   
   /**
     * The material to be used for the mesh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
     */
-  var material: js.UndefOr[MeshMaterial] = js.native
+  var material: js.UndefOr[MeshMaterial] = js.undefined
   
   /**
     * A uniform size value or an object containing individual values width, height and depth.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
     */
-  var size: js.UndefOr[Double | MeshCreateBoxParamsSize] = js.native
+  var size: js.UndefOr[Double | MeshCreateBoxParamsSize] = js.undefined
   
   /**
     * The unit of the size (defaults to the unit of the location's spatial reference).
@@ -56,7 +56,7 @@ trait MeshCreateBoxParams extends Object {
     */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
-  ] = js.native
+  ] = js.undefined
 }
 object MeshCreateBoxParams {
   

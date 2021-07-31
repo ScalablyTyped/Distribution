@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstanceLimitPrice extends StObject {
   
   /**
     * Used for Reserved Instance Marketplace offerings. Specifies the limit price on the total order (instanceCount * price).
     */
-  var Amount: js.UndefOr[Double] = js.native
+  var Amount: js.UndefOr[Double] = js.undefined
   
   /**
     * The currency in which the limitPrice amount is specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
 }
 object ReservedInstanceLimitPrice {
   

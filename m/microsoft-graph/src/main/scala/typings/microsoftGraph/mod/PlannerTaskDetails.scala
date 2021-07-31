@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlannerTaskDetails extends Entity {
+trait PlannerTaskDetails
+  extends StObject
+     with Entity {
   
   // The collection of checklist items on the task.
-  var checklist: js.UndefOr[NullableOption[PlannerChecklistItems]] = js.native
+  var checklist: js.UndefOr[NullableOption[PlannerChecklistItems]] = js.undefined
   
   // Description of the task
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist,
     * description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
     */
-  var previewType: js.UndefOr[NullableOption[PlannerPreviewType]] = js.native
+  var previewType: js.UndefOr[NullableOption[PlannerPreviewType]] = js.undefined
   
   // The collection of references on the task.
-  var references: js.UndefOr[NullableOption[PlannerExternalReferences]] = js.native
+  var references: js.UndefOr[NullableOption[PlannerExternalReferences]] = js.undefined
 }
 object PlannerTaskDetails {
   

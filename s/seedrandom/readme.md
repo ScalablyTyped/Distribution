@@ -11,8 +11,8 @@ Seeded random number generator for Javascript.
 | Full name          | seedrandom |
 | Keywords           | seed, random, crypto |
 | # releases         | 7 |
-| # dependents       | 335 |
-| # downloads        | 11103490 |
+| # dependents       | 399 |
+| # downloads        | 14193953 |
 | # stars            | 10 |
 
 ## Links

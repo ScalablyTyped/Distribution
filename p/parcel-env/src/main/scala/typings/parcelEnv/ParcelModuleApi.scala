@@ -3,23 +3,21 @@ package typings.parcelEnv
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ParcelModuleApi {
   
-  @js.native
   trait AcceptOptions extends StObject {
     
     /**
       * Indicates that apply() is automatically called by check function
       */
-    var autoApply: js.UndefOr[Boolean] = js.native
+    var autoApply: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the update process continues even if some modules are not accepted (and would bubble to the entry point).
       */
-    var ignoreUnaccepted: js.UndefOr[Boolean] = js.native
+    var ignoreUnaccepted: js.UndefOr[Boolean] = js.undefined
   }
   object AcceptOptions {
     
@@ -181,7 +179,7 @@ object ParcelModuleApi {
   @js.native
   trait Module extends StObject {
     
-    var children: js.Array[_] = js.native
+    var children: js.Array[js.Any] = js.native
     
     var exports: js.Any = js.native
     
@@ -205,10 +203,9 @@ object ParcelModuleApi {
   /**
     * Inside env you can pass any variable
     */
-  @js.native
   trait NodeProcess extends StObject {
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
   }
   object NodeProcess {
     
@@ -242,5 +239,12 @@ object ParcelModuleApi {
     def apply(path: String): js.Any = js.native
   }
   
-  type RequireLambda = Require1 with Require2
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
+  - js.Any because Already inherited
+  - js.Object because Already inherited
+  - js.Function because Already inherited
+  - typings.parcelEnv.ParcelModuleApi.Require2 because Already inherited */ @js.native
+  trait RequireLambda extends Require1
 }

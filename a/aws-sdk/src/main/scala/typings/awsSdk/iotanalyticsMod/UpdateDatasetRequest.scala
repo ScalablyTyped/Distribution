@@ -2,46 +2,44 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDatasetRequest extends StObject {
   
   /**
     * A list of DatasetAction objects.
     */
-  var actions: DatasetActions = js.native
+  var actions: DatasetActions
   
   /**
     * When dataset contents are created, they are delivered to destinations specified here.
     */
-  var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.native
+  var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
   
   /**
     * The name of the data set to update.
     */
-  var datasetName: DatasetName = js.native
+  var datasetName: DatasetName
   
   /**
     * A list of data rules that send notifications to Amazon CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
     */
-  var lateDataRules: js.UndefOr[LateDataRules] = js.native
+  var lateDataRules: js.UndefOr[LateDataRules] = js.undefined
   
   /**
     * How long, in days, dataset contents are kept for the dataset.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
     * A list of DatasetTrigger objects. The list can be empty or can contain up to five DatasetTrigger objects.
     */
-  var triggers: js.UndefOr[DatasetTriggers] = js.native
+  var triggers: js.UndefOr[DatasetTriggers] = js.undefined
   
   /**
     * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see Keeping Multiple Versions of AWS IoT Analytics Data Sets in the AWS IoT Analytics User Guide.
     */
-  var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.native
+  var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
 }
 object UpdateDatasetRequest {
   

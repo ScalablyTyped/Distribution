@@ -2,34 +2,33 @@ package typings.jsonic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(text: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("jsonic", JSImport.Namespace)
   @js.native
-  def apply(text: String): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsonic", "stringify")
-  @js.native
-  def stringify(`val`: js.Any): String = js.native
-  @JSImport("jsonic", "stringify")
-  @js.native
-  def stringify(`val`: js.Any, opts: Options): String = js.native
+  @scala.inline
+  def stringify(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(`val`: js.Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxchars: js.UndefOr[Double] = js.native
+    var maxchars: js.UndefOr[Double] = js.undefined
     
-    var maxitems: js.UndefOr[Double] = js.native
+    var maxitems: js.UndefOr[Double] = js.undefined
     
-    var omit: js.UndefOr[js.Array[String]] = js.native
+    var omit: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

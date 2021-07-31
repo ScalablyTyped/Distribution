@@ -3,15 +3,13 @@ package typings.screeps.anon
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationLevel extends StObject {
   
-  var className: operator = js.native
+  var className: operator
   
-  var cooldown: typings.screeps.screepsNumbers.`5` = js.native
+  var cooldown: typings.screeps.screepsNumbers.`5`
   
   var duration: js.Tuple5[
     typings.screeps.screepsNumbers.`1`, 
@@ -19,7 +17,7 @@ trait DurationLevel extends StObject {
     typings.screeps.screepsNumbers.`3`, 
     typings.screeps.screepsNumbers.`4`, 
     typings.screeps.screepsNumbers.`5`
-  ] = js.native
+  ]
   
   var level: js.Tuple5[
     typings.screeps.screepsNumbers.`0`, 
@@ -27,18 +25,16 @@ trait DurationLevel extends StObject {
     typings.screeps.screepsNumbers.`7`, 
     typings.screeps.screepsNumbers.`14`, 
     typings.screeps.screepsNumbers.`22`
-  ] = js.native
+  ]
   
-  var ops: typings.screeps.screepsNumbers.`10` = js.native
+  var ops: typings.screeps.screepsNumbers.`10`
   
-  var range: typings.screeps.screepsNumbers.`20` = js.native
+  var range: typings.screeps.screepsNumbers.`20`
 }
 object DurationLevel {
   
   @scala.inline
   def apply(
-    className: operator,
-    cooldown: typings.screeps.screepsNumbers.`5`,
     duration: js.Tuple5[
       typings.screeps.screepsNumbers.`1`, 
       typings.screeps.screepsNumbers.`2`, 
@@ -52,11 +48,9 @@ object DurationLevel {
       typings.screeps.screepsNumbers.`7`, 
       typings.screeps.screepsNumbers.`14`, 
       typings.screeps.screepsNumbers.`22`
-    ],
-    ops: typings.screeps.screepsNumbers.`10`,
-    range: typings.screeps.screepsNumbers.`20`
+    ]
   ): DurationLevel = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = "operator", cooldown = 5, duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = 10, range = 20)
     __obj.asInstanceOf[DurationLevel]
   }
   

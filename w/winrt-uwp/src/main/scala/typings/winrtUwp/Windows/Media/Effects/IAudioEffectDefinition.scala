@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Effects
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes the methods and properties of an AudioEffectDefinition object. Implement this interface when you create a custom audio effect definition. */
-@js.native
 trait IAudioEffectDefinition extends StObject {
   
   /** The activatable class ID of the audio effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** The set of properties for configuring an AudioEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object IAudioEffectDefinition {
   

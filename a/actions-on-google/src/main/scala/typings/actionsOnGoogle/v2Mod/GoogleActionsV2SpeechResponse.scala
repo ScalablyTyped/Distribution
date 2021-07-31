@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2SpeechResponse extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait GoogleActionsV2SpeechResponse extends StObject {
     * 'https://www.pullstring.com/moo.mps' />, what’s the animal?  </speak>\".
     * Mutually exclusive with text_to_speech.
     */
-  var ssml: js.UndefOr[String] = js.native
+  var ssml: js.UndefOr[String] = js.undefined
   
   /**
     * Plain text of the speech output, e.g., \"where do you want to go?\"/
     */
-  var textToSpeech: js.UndefOr[String] = js.native
+  var textToSpeech: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2SpeechResponse {
   

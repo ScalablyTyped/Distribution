@@ -2,23 +2,21 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacePhoto extends StObject {
   
   /** the maximum height of the image. */
-  var height: Double = js.native
+  var height: Double
   
   /** contains any required attributions. This field will always be present, but may be empty. */
-  var html_attributions: js.Array[String] = js.native
+  var html_attributions: js.Array[String]
   
   /** a string used to identify the photo when you perform a Photo request. */
-  var photo_reference: String = js.native
+  var photo_reference: String
   
   /** the maximum width of the image. */
-  var width: Double = js.native
+  var width: Double
 }
 object PlacePhoto {
   

@@ -11,8 +11,8 @@ URL friendly JSON-like formatting and parsing
 | Full name          | jsurl |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 246724 |
+| # dependents       | 15 |
+| # downloads        | 262548 |
 | # stars            | 0 |
 
 ## Links

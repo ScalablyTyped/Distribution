@@ -2,23 +2,21 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullOptions extends StObject {
   
-  var error: js.UndefOr[js.Function] = js.native
+  var error: js.UndefOr[js.Function] = js.undefined
   
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
-  var progress: js.UndefOr[js.Function] = js.native
+  var progress: js.UndefOr[js.Function] = js.undefined
   
-  var sessionToken: js.UndefOr[String] = js.native
+  var sessionToken: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[js.Function] = js.native
+  var success: js.UndefOr[js.Function] = js.undefined
   
-  var useMasterKey: js.UndefOr[Boolean] = js.native
+  var useMasterKey: js.UndefOr[Boolean] = js.undefined
 }
 object FullOptions {
   

@@ -2,14 +2,14 @@ package typings.senchaTouch.Ext.draw.sprite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPath extends ISprite {
+trait IPath
+  extends StObject
+     with ISprite {
   
   /** [Config Option] (String) */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** [Method] Render method
     * @param surface Object
@@ -17,7 +17,9 @@ trait IPath extends ISprite {
     * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
     */
   @JSName("render")
-  var render_IPath: js.UndefOr[js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], _]] = js.native
+  var render_IPath: js.UndefOr[
+    js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Method] Update the path
     * @param path Ext.draw.Path An empty path to draw on using path API.
@@ -25,13 +27,13 @@ trait IPath extends ISprite {
     */
   var updatePath: js.UndefOr[
     js.Function2[/* path */ js.UndefOr[this.type], /* attr */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Subclass will fill the plain object with x y width height information of the transformed bounding box of this sprite
     * @param transform Object
     */
   @JSName("updateTransformedBBox")
-  var updateTransformedBBox_IPath: js.UndefOr[js.Function1[/* transform */ js.UndefOr[js.Any], Unit]] = js.native
+  var updateTransformedBBox_IPath: js.UndefOr[js.Function1[/* transform */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IPath {
   
@@ -51,7 +53,7 @@ object IPath {
     def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

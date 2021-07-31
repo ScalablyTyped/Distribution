@@ -2,17 +2,16 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentTable
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var layout: js.UndefOr[TableLayout] = js.native
+  var layout: js.UndefOr[TableLayout] = js.undefined
   
-  var table: Table = js.native
+  var table: Table
 }
 object ContentTable {
   

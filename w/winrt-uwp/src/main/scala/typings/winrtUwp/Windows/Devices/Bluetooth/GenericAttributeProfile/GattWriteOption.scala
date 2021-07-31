@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object GattWriteOption extends StObject {
   
   /** The default GATT write procedure shall be used. */
   @js.native
-  sealed trait writeWithResponse extends GattWriteOption
+  sealed trait writeWithResponse
+    extends StObject
+       with GattWriteOption
   
   /** The Write Without Response procedure shall be used. */
   @js.native
-  sealed trait writeWithoutResponse extends GattWriteOption
+  sealed trait writeWithoutResponse
+    extends StObject
+       with GattWriteOption
 }

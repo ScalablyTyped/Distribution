@@ -3,53 +3,51 @@ package typings.amapJsSdk.AMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerOptions extends StObject {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var autoRotation: js.UndefOr[Boolean] = js.native
+  var autoRotation: js.UndefOr[Boolean] = js.undefined
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | HTMLElement] = js.native
+  var content: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var extData: js.UndefOr[js.Any] = js.native
+  var extData: js.UndefOr[js.Any] = js.undefined
   
-  var icon: js.UndefOr[String | Icon] = js.native
+  var icon: js.UndefOr[String | Icon] = js.undefined
   
-  var label: js.UndefOr[typings.amapJsSdk.anon.Content] = js.native
+  var label: js.UndefOr[typings.amapJsSdk.anon.Content] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var offset: js.UndefOr[Pixel] = js.native
+  var offset: js.UndefOr[Pixel] = js.undefined
   
-  var position: js.UndefOr[LngLat] = js.native
+  var position: js.UndefOr[LngLat] = js.undefined
   
-  var raiseOnDrag: js.UndefOr[Boolean] = js.native
+  var raiseOnDrag: js.UndefOr[Boolean] = js.undefined
   
-  var shadow: js.UndefOr[Icon] = js.native
+  var shadow: js.UndefOr[Icon] = js.undefined
   
-  var shape: js.UndefOr[MarkerShape] = js.native
+  var shape: js.UndefOr[MarkerShape] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var topWhenClick: js.UndefOr[Boolean] = js.native
+  var topWhenClick: js.UndefOr[Boolean] = js.undefined
   
-  var topWhenMouseOver: js.UndefOr[Boolean] = js.native
+  var topWhenMouseOver: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MarkerOptions {
   

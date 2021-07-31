@@ -2,10 +2,8 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowDuplication extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait AllowDuplication extends StObject {
     * full history (requires at least mongodb 2.6).
     *   config.seedProjects.allowDuplication = true;
     */
-  var allowDuplication: Boolean = js.native
+  var allowDuplication: Boolean
   
   /**
     * List of directories where project seeds are stored.
     *   config.seedProjects.basePaths = ['./seeds'];
     */
-  var basePaths: js.Array[String] = js.native
+  var basePaths: js.Array[String]
   
   /**
     * Used by the GUI when highlighting/selecting
     * the default project to seed from.
     *   config.seedProjects.defaultProject = 'EmptyProject';
     */
-  var defaultProject: String = js.native
+  var defaultProject: String
   
   /**
     * Enables creation of new projects using seeds.
     *   config.seedProjects.enable = true;
     */
-  var enable: Boolean = js.native
+  var enable: Boolean
 }
 object AllowDuplication {
   

@@ -2,21 +2,19 @@ package typings.emojione
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fname extends StObject {
     
-    var fname: String = js.native
+    var fname: String
     
-    var isCanonical: Boolean = js.native
+    var isCanonical: Boolean
     
-    var uc: String = js.native
+    var uc: String
     
-    var unicode: js.Array[String] = js.native
+    var unicode: js.Array[String]
   }
   object Fname {
     

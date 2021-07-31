@@ -3,10 +3,13 @@ package typings.xmlchars
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ed5Mod {
+  
+  @JSImport("xmlchars/xml/1.0/ed5", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xmlchars/xml/1.0/ed5", "CHAR")
   @js.native
@@ -52,19 +55,15 @@ object ed5Mod {
   @js.native
   val S_RE: RegExp = js.native
   
-  @JSImport("xmlchars/xml/1.0/ed5", "isChar")
-  @js.native
-  def isChar(c: Double): Boolean = js.native
+  @scala.inline
+  def isChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("xmlchars/xml/1.0/ed5", "isNameChar")
-  @js.native
-  def isNameChar(c: Double): Boolean = js.native
+  @scala.inline
+  def isNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("xmlchars/xml/1.0/ed5", "isNameStartChar")
-  @js.native
-  def isNameStartChar(c: Double): Boolean = js.native
+  @scala.inline
+  def isNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("xmlchars/xml/1.0/ed5", "isS")
-  @js.native
-  def isS(c: Double): Boolean = js.native
+  @scala.inline
+  def isS(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isS")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

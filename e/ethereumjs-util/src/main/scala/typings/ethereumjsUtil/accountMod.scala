@@ -1,15 +1,17 @@
 package typings.ethereumjsUtil
 
-import typings.bnJs.mod.^
 import typings.ethereumjsUtil.typesMod.BNLike
 import typings.ethereumjsUtil.typesMod.BufferLike
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountMod {
+  
+  @JSImport("ethereumjs-util/dist/account", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ethereumjs-util/dist/account", "Account")
   @js.native
@@ -18,45 +20,25 @@ object accountMod {
     * Use the static factory methods to assist in creating an Account from varying data types.
     */
   class Account () extends StObject {
-    def this(nonce: ^) = this()
-    def this(nonce: js.UndefOr[scala.Nothing], balance: ^) = this()
-    def this(nonce: ^, balance: ^) = this()
-    def this(nonce: js.UndefOr[scala.Nothing], balance: js.UndefOr[scala.Nothing], stateRoot: Buffer) = this()
-    def this(nonce: js.UndefOr[scala.Nothing], balance: ^, stateRoot: Buffer) = this()
-    def this(nonce: ^, balance: js.UndefOr[scala.Nothing], stateRoot: Buffer) = this()
-    def this(nonce: ^, balance: ^, stateRoot: Buffer) = this()
-    def this(
-      nonce: js.UndefOr[scala.Nothing],
-      balance: js.UndefOr[scala.Nothing],
-      stateRoot: js.UndefOr[scala.Nothing],
-      codeHash: Buffer
-    ) = this()
-    def this(
-      nonce: js.UndefOr[scala.Nothing],
-      balance: js.UndefOr[scala.Nothing],
-      stateRoot: Buffer,
-      codeHash: Buffer
-    ) = this()
-    def this(
-      nonce: js.UndefOr[scala.Nothing],
-      balance: ^,
-      stateRoot: js.UndefOr[scala.Nothing],
-      codeHash: Buffer
-    ) = this()
-    def this(nonce: js.UndefOr[scala.Nothing], balance: ^, stateRoot: Buffer, codeHash: Buffer) = this()
-    def this(
-      nonce: ^,
-      balance: js.UndefOr[scala.Nothing],
-      stateRoot: js.UndefOr[scala.Nothing],
-      codeHash: Buffer
-    ) = this()
-    def this(nonce: ^, balance: js.UndefOr[scala.Nothing], stateRoot: Buffer, codeHash: Buffer) = this()
-    def this(nonce: ^, balance: ^, stateRoot: js.UndefOr[scala.Nothing], codeHash: Buffer) = this()
-    def this(nonce: ^, balance: ^, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^) = this()
+    def this(nonce: Unit, balance: typings.bnJs.mod.^) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^) = this()
+    def this(nonce: Unit, balance: Unit, stateRoot: Buffer) = this()
+    def this(nonce: Unit, balance: typings.bnJs.mod.^, stateRoot: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: Unit, stateRoot: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^, stateRoot: Buffer) = this()
+    def this(nonce: Unit, balance: Unit, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: Unit, balance: Unit, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: Unit, balance: typings.bnJs.mod.^, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: Unit, balance: typings.bnJs.mod.^, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: Unit, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: Unit, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^, stateRoot: Buffer, codeHash: Buffer) = this()
     
     var _validate: js.Any = js.native
     
-    var balance: ^ = js.native
+    var balance: typings.bnJs.mod.^ = js.native
     
     var codeHash: Buffer = js.native
     
@@ -72,7 +54,7 @@ object accountMod {
       */
     def isEmpty(): Boolean = js.native
     
-    var nonce: ^ = js.native
+    var nonce: typings.bnJs.mod.^ = js.native
     
     /**
       * Returns a Buffer Array of the raw Buffers for the account, in order.
@@ -89,100 +71,81 @@ object accountMod {
   /* static members */
   object Account {
     
-    @JSImport("ethereumjs-util/dist/account", "Account.fromAccountData")
+    @JSImport("ethereumjs-util/dist/account", "Account")
     @js.native
-    def fromAccountData(accountData: AccountData): Account = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ethereumjs-util/dist/account", "Account.fromRlpSerializedAccount")
-    @js.native
-    def fromRlpSerializedAccount(serialized: Buffer): Account = js.native
+    @scala.inline
+    def fromAccountData(accountData: AccountData): Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAccountData")(accountData.asInstanceOf[js.Any]).asInstanceOf[Account]
     
-    @JSImport("ethereumjs-util/dist/account", "Account.fromValuesArray")
-    @js.native
-    def fromValuesArray(values: js.Array[Buffer]): Account = js.native
+    @scala.inline
+    def fromRlpSerializedAccount(serialized: Buffer): Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRlpSerializedAccount")(serialized.asInstanceOf[js.Any]).asInstanceOf[Account]
+    
+    @scala.inline
+    def fromValuesArray(values: js.Array[Buffer]): Account = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValuesArray")(values.asInstanceOf[js.Any]).asInstanceOf[Account]
   }
   
-  @JSImport("ethereumjs-util/dist/account", "generateAddress")
-  @js.native
-  def generateAddress(from: Buffer, nonce: Buffer): Buffer = js.native
+  @scala.inline
+  def generateAddress(from: Buffer, nonce: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAddress")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "generateAddress2")
-  @js.native
-  def generateAddress2(from: Buffer, salt: Buffer, initCode: Buffer): Buffer = js.native
+  @scala.inline
+  def generateAddress2(from: Buffer, salt: Buffer, initCode: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAddress2")(from.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], initCode.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "importPublic")
-  @js.native
-  def importPublic(publicKey: Buffer): Buffer = js.native
+  @scala.inline
+  def importPublic(publicKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("importPublic")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "isValidAddress")
-  @js.native
-  def isValidAddress(hexAddress: String): Boolean = js.native
+  @scala.inline
+  def isValidAddress(hexAddress: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereumjs-util/dist/account", "isValidChecksumAddress")
-  @js.native
-  def isValidChecksumAddress(hexAddress: String): Boolean = js.native
-  @JSImport("ethereumjs-util/dist/account", "isValidChecksumAddress")
-  @js.native
-  def isValidChecksumAddress(hexAddress: String, eip1191ChainId: Double): Boolean = js.native
+  @scala.inline
+  def isValidChecksumAddress(hexAddress: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidChecksumAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidChecksumAddress(hexAddress: String, eip1191ChainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidChecksumAddress")(hexAddress.asInstanceOf[js.Any], eip1191ChainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ethereumjs-util/dist/account", "isValidPrivate")
-  @js.native
-  def isValidPrivate(privateKey: Buffer): Boolean = js.native
+  @scala.inline
+  def isValidPrivate(privateKey: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPrivate")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereumjs-util/dist/account", "isValidPublic")
-  @js.native
-  def isValidPublic(publicKey: Buffer): Boolean = js.native
-  @JSImport("ethereumjs-util/dist/account", "isValidPublic")
-  @js.native
-  def isValidPublic(publicKey: Buffer, sanitize: Boolean): Boolean = js.native
+  @scala.inline
+  def isValidPublic(publicKey: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPublic")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidPublic(publicKey: Buffer, sanitize: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPublic")(publicKey.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ethereumjs-util/dist/account", "isZeroAddress")
-  @js.native
-  def isZeroAddress(hexAddress: String): Boolean = js.native
+  @scala.inline
+  def isZeroAddress(hexAddress: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isZeroAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethereumjs-util/dist/account", "privateToAddress")
-  @js.native
-  def privateToAddress(privateKey: Buffer): Buffer = js.native
+  @scala.inline
+  def privateToAddress(privateKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("privateToAddress")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "privateToPublic")
-  @js.native
-  def privateToPublic(privateKey: Buffer): Buffer = js.native
+  @scala.inline
+  def privateToPublic(privateKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("privateToPublic")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "pubToAddress")
-  @js.native
-  def pubToAddress(pubKey: Buffer): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/account", "pubToAddress")
-  @js.native
-  def pubToAddress(pubKey: Buffer, sanitize: Boolean): Buffer = js.native
+  @scala.inline
+  def pubToAddress(pubKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pubToAddress")(pubKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def pubToAddress(pubKey: Buffer, sanitize: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pubToAddress")(pubKey.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "publicToAddress")
-  @js.native
-  def publicToAddress(pubKey: Buffer): Buffer = js.native
-  @JSImport("ethereumjs-util/dist/account", "publicToAddress")
-  @js.native
-  def publicToAddress(pubKey: Buffer, sanitize: Boolean): Buffer = js.native
+  @scala.inline
+  def publicToAddress(pubKey: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicToAddress")(pubKey.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def publicToAddress(pubKey: Buffer, sanitize: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicToAddress")(pubKey.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-util/dist/account", "toChecksumAddress")
-  @js.native
-  def toChecksumAddress(hexAddress: String): String = js.native
-  @JSImport("ethereumjs-util/dist/account", "toChecksumAddress")
-  @js.native
-  def toChecksumAddress(hexAddress: String, eip1191ChainId: Double): String = js.native
+  @scala.inline
+  def toChecksumAddress(hexAddress: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toChecksumAddress(hexAddress: String, eip1191ChainId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(hexAddress.asInstanceOf[js.Any], eip1191ChainId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ethereumjs-util/dist/account", "zeroAddress")
-  @js.native
-  def zeroAddress(): String = js.native
+  @scala.inline
+  def zeroAddress(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroAddress")().asInstanceOf[String]
   
-  @js.native
   trait AccountData extends StObject {
     
-    var balance: js.UndefOr[BNLike] = js.native
+    var balance: js.UndefOr[BNLike] = js.undefined
     
-    var codeHash: js.UndefOr[BufferLike] = js.native
+    var codeHash: js.UndefOr[BufferLike] = js.undefined
     
-    var nonce: js.UndefOr[BNLike] = js.native
+    var nonce: js.UndefOr[BNLike] = js.undefined
     
-    var stateRoot: js.UndefOr[BufferLike] = js.native
+    var stateRoot: js.UndefOr[BufferLike] = js.undefined
   }
   object AccountData {
     

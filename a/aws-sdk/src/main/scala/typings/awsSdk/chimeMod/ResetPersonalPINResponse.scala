@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetPersonalPINResponse extends StObject {
   
   /**
     * The user details and new personal meeting PIN.
     */
-  var User: js.UndefOr[typings.awsSdk.chimeMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.chimeMod.User] = js.undefined
 }
 object ResetPersonalPINResponse {
   

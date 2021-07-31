@@ -7,39 +7,39 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use service {@link FrameLoaderFactory} instead of this
   * @deprecated Deprecated
   */
-@js.native
-trait XFrameLoaderQuery extends XInterface {
+trait XFrameLoaderQuery
+  extends StObject
+     with XInterface {
   
   /**
     * use member {@link com.sun.star.container.XNameAccess.getElementNames()} provided by service {@link FrameLoaderFactory} instead of this
     * @deprecated Deprecated
     */
-  val AvailableFilterNames: SafeArray[String] = js.native
+  val AvailableFilterNames: SafeArray[String]
   
   /**
     * use member {@link com.sun.star.container.XNameAccess.getElementNames()} provided by service {@link FrameLoaderFactory} instead of this
     * @deprecated Deprecated
     */
-  def getAvailableFilterNames(): SafeArray[String] = js.native
+  def getAvailableFilterNames(): SafeArray[String]
   
   /**
     * use member {@link com.sun.star.container.XNameAccess.getByName()} provided by service {@link FrameLoaderFactory} instead of this
     * @deprecated Deprecated
     */
-  def getLoaderProperties(sFilterName: String): SafeArray[PropertyValue] = js.native
+  def getLoaderProperties(sFilterName: String): SafeArray[PropertyValue]
   
   /**
     * use member {@link com.sun.star.container.XContainerQuery} provided by service {@link FrameLoaderFactory} instead of this
     * @deprecated Deprecated
     */
-  def searchFilter(sURL: String, seqArguments: SeqEquiv[PropertyValue]): String = js.native
+  def searchFilter(sURL: String, seqArguments: SeqEquiv[PropertyValue]): String
 }
 object XFrameLoaderQuery {
   

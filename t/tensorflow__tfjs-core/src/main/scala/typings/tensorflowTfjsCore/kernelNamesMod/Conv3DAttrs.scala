@@ -6,19 +6,17 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conv3DAttrs extends StObject {
   
-  var dataFormat: NDHWC | NCDHW = js.native
+  var dataFormat: NDHWC | NCDHW
   
-  var dilations: (js.Tuple3[Double, Double, Double]) | Double = js.native
+  var dilations: (js.Tuple3[Double, Double, Double]) | Double
   
-  var pad: valid_ | same_ = js.native
+  var pad: valid_ | same_
   
-  var strides: (js.Tuple3[Double, Double, Double]) | Double = js.native
+  var strides: (js.Tuple3[Double, Double, Double]) | Double
 }
 object Conv3DAttrs {
   

@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlEntryContainer extends StObject {
   
-  def Add(AccessControlEntryKey: IAccessControlEntryKey, AccessControlEntryData: IAccessControlEntryData): Unit = js.native
+  def Add(AccessControlEntryKey: IAccessControlEntryKey, AccessControlEntryData: IAccessControlEntryData): Unit
   
-  def At(AccessControlEntryKey: IAccessControlEntryKey): IAccessControlEntryData = js.native
+  def At(AccessControlEntryKey: IAccessControlEntryKey): IAccessControlEntryData
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  def Clone(): IAccessControlEntryContainer = js.native
+  def Clone(): IAccessControlEntryContainer
   
-  def GetKeys(): IAccessControlEntryKeys = js.native
+  def GetKeys(): IAccessControlEntryKeys
   
-  def GetKeysWithPseudoUserDefinitions(): IAccessControlEntryKeys = js.native
+  def GetKeysWithPseudoUserDefinitions(): IAccessControlEntryKeys
   
-  def HasKey(AccessControlEntryKey: IAccessControlEntryKey): Boolean = js.native
+  def HasKey(AccessControlEntryKey: IAccessControlEntryKey): Boolean
   
-  val IsEmpty: Boolean = js.native
+  val IsEmpty: Boolean
   
-  def Remove(AccessControlEntryKey: IAccessControlEntryKey): Unit = js.native
+  def Remove(AccessControlEntryKey: IAccessControlEntryKey): Unit
 }
 object IAccessControlEntryContainer {
   

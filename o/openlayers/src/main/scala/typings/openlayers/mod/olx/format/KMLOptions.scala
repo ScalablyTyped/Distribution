@@ -3,19 +3,17 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KMLOptions extends StObject {
   
-  var defaultStyle: js.UndefOr[js.Array[Style]] = js.native
+  var defaultStyle: js.UndefOr[js.Array[Style]] = js.undefined
   
-  var extractStyles: js.UndefOr[Boolean] = js.native
+  var extractStyles: js.UndefOr[Boolean] = js.undefined
   
-  var showPointNames: js.UndefOr[Boolean] = js.native
+  var showPointNames: js.UndefOr[Boolean] = js.undefined
   
-  var writeStyles: js.UndefOr[Boolean] = js.native
+  var writeStyles: js.UndefOr[Boolean] = js.undefined
 }
 object KMLOptions {
   

@@ -3,13 +3,11 @@ package typings.googleAppsScript.GoogleAppsScript.Events
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddonOnInstall extends StObject {
   
-  var authMode: AuthMode = js.native
+  var authMode: AuthMode
 }
 object AddonOnInstall {
   

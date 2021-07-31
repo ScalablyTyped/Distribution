@@ -5,23 +5,21 @@ import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var actions: js.UndefOr[Actions[TContext, TEvent]] = js.native
+  var actions: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   
-  var cond: js.UndefOr[Condition[TContext, TEvent]] = js.native
+  var cond: js.UndefOr[Condition[TContext, TEvent]] = js.undefined
   
-  var in: js.UndefOr[StateValue] = js.native
+  var in: js.UndefOr[StateValue] = js.undefined
   
-  var internal: js.UndefOr[Boolean] = js.native
+  var internal: js.UndefOr[Boolean] = js.undefined
   
-  var meta: js.UndefOr[Record[String, _]] = js.native
+  var meta: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var target: js.UndefOr[TransitionTarget[TContext, TEvent]] = js.native
+  var target: js.UndefOr[TransitionTarget[TContext, TEvent]] = js.undefined
 }
 object TransitionConfig {
   
@@ -32,7 +30,7 @@ object TransitionConfig {
   }
   
   @scala.inline
-  implicit class TransitionConfigMutableBuilder[Self <: TransitionConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (TransitionConfig[TContext, TEvent])) extends AnyVal {
+  implicit class TransitionConfigMutableBuilder[Self <: TransitionConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (TransitionConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActions(value: Actions[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
@@ -68,7 +66,7 @@ object TransitionConfig {
     def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
     @scala.inline
-    def setMeta(value: Record[String, _]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: Record[String, js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)

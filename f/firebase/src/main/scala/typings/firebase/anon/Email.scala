@@ -3,23 +3,21 @@ package typings.firebase.anon
 import typings.firebase.mod.firebase.auth.MultiFactorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: js.UndefOr[String | Null] = js.native
+  var email: js.UndefOr[String | Null] = js.undefined
   
   /**
     * @deprecated
     * This field is deprecated in favor of previousEmail.
     */
-  var fromEmail: js.UndefOr[String | Null] = js.native
+  var fromEmail: js.UndefOr[String | Null] = js.undefined
   
-  var multiFactorInfo: js.UndefOr[MultiFactorInfo | Null] = js.native
+  var multiFactorInfo: js.UndefOr[MultiFactorInfo | Null] = js.undefined
   
-  var previousEmail: js.UndefOr[String | Null] = js.native
+  var previousEmail: js.UndefOr[String | Null] = js.undefined
 }
 object Email {
   

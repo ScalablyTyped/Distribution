@@ -2,21 +2,19 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitTransactionRequest extends StObject {
   
   /**
     * Specifies the commit digest for the transaction to commit. For every active transaction, the commit digest must be passed. QLDB validates CommitDigest and rejects the commit with an error if the digest computed on the client does not match the digest computed by QLDB.
     */
-  var CommitDigest: typings.awsSdk.qldbsessionMod.CommitDigest = js.native
+  var CommitDigest: typings.awsSdk.qldbsessionMod.CommitDigest
   
   /**
     * Specifies the transaction ID of the transaction to commit.
     */
-  var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId = js.native
+  var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId
 }
 object CommitTransactionRequest {
   

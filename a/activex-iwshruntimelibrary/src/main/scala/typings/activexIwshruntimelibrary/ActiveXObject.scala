@@ -4,14 +4,12 @@ import typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshEnvironment
 import typings.activexIwshruntimelibrary.activexIwshruntimelibraryStrings.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObject extends StObject {
   
   @JSName("set")
-  def set_Item(obj: WshEnvironment, propertyName: Item, parameterTypes: js.Array[String], newValue: String): Unit = js.native
+  def set_Item(obj: WshEnvironment, propertyName: Item, parameterTypes: js.Array[String], newValue: String): Unit
 }
 object ActiveXObject {
   

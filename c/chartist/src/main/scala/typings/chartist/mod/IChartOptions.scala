@@ -2,18 +2,16 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChartOptions extends StObject {
   
-  var plugins: js.UndefOr[js.Array[_]] = js.native
+  var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * If true the whole data is reversed including labels, the series order as well as the whole series data arrays.
     */
-  var reverseData: js.UndefOr[Boolean] = js.native
+  var reverseData: js.UndefOr[Boolean] = js.undefined
 }
 object IChartOptions {
   
@@ -27,7 +25,7 @@ object IChartOptions {
   implicit class IChartOptionsMutableBuilder[Self <: IChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)

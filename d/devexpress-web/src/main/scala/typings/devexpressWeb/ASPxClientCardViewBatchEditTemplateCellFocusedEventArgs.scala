@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditTemplateCellFocused event.
   */
-@js.native
-trait ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the currently processed column.
     */
-  var column: ASPxClientCardViewColumn = js.native
+  var column: ASPxClientCardViewColumn
   
   /**
     * Gets or sets a value specifying whether the event was handled.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
 object ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs {
   

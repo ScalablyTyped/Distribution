@@ -6,13 +6,14 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/treewalker
 @JSImport("@ckeditor/ckeditor5-engine", "model.TreeWalker")
 @js.native
-class TreeWalker () extends Iterable[TreeWalkerValue] {
+class TreeWalker ()
+  extends StObject
+     with Iterable[TreeWalkerValue] {
   def this(options: Boundaries) = this()
   
   val boundaries: Range = js.native

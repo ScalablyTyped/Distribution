@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Players")
@@ -32,7 +31,7 @@ class ResourcePlayers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPlayer] = js.native
   def get(callback: BodyResponseCallback[SchemaPlayer]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayer] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayer] = js.native
   def get(params: ParamsResourcePlayersGet): GaxiosPromise[SchemaPlayer] = js.native
   def get(params: ParamsResourcePlayersGet, callback: BodyResponseCallback[SchemaPlayer]): Unit = js.native
   def get(
@@ -64,7 +63,7 @@ class ResourcePlayers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPlayerListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlayerListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerListResponse] = js.native
   def list(params: ParamsResourcePlayersList): GaxiosPromise[SchemaPlayerListResponse] = js.native
   def list(params: ParamsResourcePlayersList, callback: BodyResponseCallback[SchemaPlayerListResponse]): Unit = js.native
   def list(

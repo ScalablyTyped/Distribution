@@ -7,62 +7,60 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.keyCodesMod.KeyCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autofillTypesMod {
   
-  @js.native
   trait IAutofill extends StObject {
     
     /**
       * Clear all text in the input. Sets value to '';
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * The current index of the cursor in the input area. Returns -1 if the input element
       * is not ready.
       */
-    var cursorLocation: Double | Null = js.native
+    var cursorLocation: Double | Null
     
     /**
       * Focus the input element.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /**
       * The current input element.
       */
-    var inputElement: HTMLInputElement | Null = js.native
+    var inputElement: HTMLInputElement | Null
     
     /**
       * A boolean for whether or not there is a value selected in the input area.
       */
-    var isValueSelected: Boolean = js.native
+    var isValueSelected: Boolean
     
     /**
       * the current index of where the selection ends. Returns -1 if the input element
       * is not ready.
       */
-    var selectionEnd: Double | Null = js.native
+    var selectionEnd: Double | Null
     
     /**
       * The current index of where the selection starts. Returns -1 if the input element
       * is not ready.
       */
-    var selectionStart: Double | Null = js.native
+    var selectionStart: Double | Null
     
     /**
       * The current text value that the user has entered.
       */
-    var value: String = js.native
+    var value: String
   }
   object IAutofill {
     
     @scala.inline
     def apply(clear: () => Unit, focus: () => Unit, isValueSelected: Boolean, value: String): IAutofill = {
-      val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), focus = js.Any.fromFunction0(focus), isValueSelected = isValueSelected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), focus = js.Any.fromFunction0(focus), isValueSelected = isValueSelected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], cursorLocation = null, inputElement = null, selectionEnd = null, selectionStart = null)
       __obj.asInstanceOf[IAutofill]
     }
     
@@ -107,13 +105,14 @@ object autofillTypesMod {
     }
   }
   
-  @js.native
-  trait IAutofillProps extends InputHTMLAttributes[HTMLInputElement | Autofill] {
+  trait IAutofillProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement | Autofill] {
     
     /**
       * Gets the compoonent ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IAutofill]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IAutofill]] = js.undefined
     
     /**
       * The default value to be visible. This is different from placeholder
@@ -121,7 +120,7 @@ object autofillTypesMod {
       * Note: This will only be set upon component creation
       * and will not update with subsequent prop updates.
       */
-    var defaultVisibleValue: js.UndefOr[String] = js.native
+    var defaultVisibleValue: js.UndefOr[String] = js.undefined
     
     /**
       * When the user uses left arrow, right arrow, clicks, or deletes text autofill is disabled
@@ -130,7 +129,7 @@ object autofillTypesMod {
       * autofill.
       * @defaultvalue [KeyCodes.down, KeyCodes.up]
       */
-    var enableAutofillOnKeyPress: js.UndefOr[js.Array[KeyCodes]] = js.native
+    var enableAutofillOnKeyPress: js.UndefOr[js.Array[KeyCodes]] = js.undefined
     
     /**
       * A callback used to modify the input string.
@@ -139,7 +138,7 @@ object autofillTypesMod {
       * inner input was in the middle of a multi-character composition.
       * (for example, jp-hiragana IME input)
       */
-    var onInputChange: js.UndefOr[js.Function2[/* value */ String, /* composing */ Boolean, String]] = js.native
+    var onInputChange: js.UndefOr[js.Function2[/* value */ String, /* composing */ Boolean, String]] = js.undefined
     
     /**
       * A callback for when the current input value changes.
@@ -150,14 +149,14 @@ object autofillTypesMod {
       */
     var onInputValueChange: js.UndefOr[
         js.Function2[/* newValue */ js.UndefOr[String], /* composing */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Should the value of the input be selected? True if we're focused on our input, false otherwise.
       * We need to explicitly not select the text in the autofill if we are no longer focused.
       * In IE11, selecting a input will also focus the input, causing other element's focus to be stolen.
       */
-    var preventValueSelection: js.UndefOr[Boolean] = js.native
+    var preventValueSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Handler for checking if the full value of the input should
@@ -165,12 +164,12 @@ object autofillTypesMod {
       *
       * @returns - should the full value of the input be selected?
       */
-    var shouldSelectFullInputValueInComponentDidUpdate: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldSelectFullInputValueInComponentDidUpdate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /**
       * The suggested autofill value that will display.
       */
-    var suggestedDisplayValue: js.UndefOr[String] = js.native
+    var suggestedDisplayValue: js.UndefOr[String] = js.undefined
     
     /**
       * Handler for checking and updating the value if needed
@@ -178,7 +177,7 @@ object autofillTypesMod {
       *
       * @returns - the updated value to set, if needed
       */
-    var updateValueInWillReceiveProps: js.UndefOr[js.Function0[String | Null]] = js.native
+    var updateValueInWillReceiveProps: js.UndefOr[js.Function0[String | Null]] = js.undefined
   }
   object IAutofillProps {
     

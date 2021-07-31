@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTriggerDefinition extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for any local Amazon S3 resource that is an AWS Lambda function's event trigger associated with this job.
     */
-  var EventResourceARN: js.UndefOr[ResourceARN] = js.native
+  var EventResourceARN: js.UndefOr[ResourceARN] = js.undefined
 }
 object EventTriggerDefinition {
   

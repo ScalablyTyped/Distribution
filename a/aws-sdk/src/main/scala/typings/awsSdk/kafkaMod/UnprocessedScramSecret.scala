@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnprocessedScramSecret extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait UnprocessedScramSecret extends StObject {
     Error code for associate/disassociate failure.
     
     */
-  var ErrorCode: js.UndefOr[string] = js.native
+  var ErrorCode: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Error message for associate/disassociate failure.
     
     */
-  var ErrorMessage: js.UndefOr[string] = js.native
+  var ErrorMessage: js.UndefOr[string] = js.undefined
   
   /**
     * 
     AWS Secrets Manager secret ARN.
     
     */
-  var SecretArn: js.UndefOr[string] = js.native
+  var SecretArn: js.UndefOr[string] = js.undefined
 }
 object UnprocessedScramSecret {
   

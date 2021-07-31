@@ -2,10 +2,8 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBackendServiceFailoverPolicy extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaBackendServiceFailoverPolicy extends StObject {
     * drain timeout of 10 min.  This can be set to true only if the protocol is
     * TCP.  The default is false.
     */
-  var disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.native
+  var disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option is used only when no healthy VMs are detected in the primary
@@ -25,7 +23,7 @@ trait SchemaBackendServiceFailoverPolicy extends StObject {
     * set to false, new connections are sent across all VMs in the primary
     * group.  The default is false.
     */
-  var dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.native
+  var dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the field must be in [0, 1]. If the ratio of the healthy VMs
@@ -37,7 +35,7 @@ trait SchemaBackendServiceFailoverPolicy extends StObject {
     * the healthy VMs with the best effort, or to all VMs when no VM is
     * healthy.  This field is only used with l4 load balancing.
     */
-  var failoverRatio: js.UndefOr[Double] = js.native
+  var failoverRatio: js.UndefOr[Double] = js.undefined
 }
 object SchemaBackendServiceFailoverPolicy {
   

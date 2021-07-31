@@ -8,71 +8,69 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCTabBarScrollerAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def addClassToBackIndicator(className: String): Unit = js.native
+    def addClassToBackIndicator(className: String): Unit
     
-    def addClassToForwardIndicator(className: String): Unit = js.native
+    def addClassToForwardIndicator(className: String): Unit
     
     @JSName("deregisterBackIndicatorClickHandler")
-    def deregisterBackIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit = js.native
+    def deregisterBackIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit
     
-    def deregisterCapturedInteractionHandler[K /* <: EventType */](evt: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterCapturedInteractionHandler[K /* <: EventType */](evt: K, handler: SpecificEventListener[K]): Unit
     
     @JSName("deregisterForwardIndicatorClickHandler")
-    def deregisterForwardIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit = js.native
+    def deregisterForwardIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit
     
     @JSName("deregisterWindowResizeHandler")
-    def deregisterWindowResizeHandler_resize(handler: SpecificEventListener[resize]): Unit = js.native
+    def deregisterWindowResizeHandler_resize(handler: SpecificEventListener[resize]): Unit
     
-    def eventTargetHasClass(target: Element, className: String): Boolean = js.native
+    def eventTargetHasClass(target: Element, className: String): Boolean
     
-    def getComputedLeftForTabAtIndex(index: Double): Double = js.native
+    def getComputedLeftForTabAtIndex(index: Double): Double
     
-    def getComputedWidthForTabAtIndex(index: Double): Double = js.native
+    def getComputedWidthForTabAtIndex(index: Double): Double
     
-    def getNumberOfTabs(): Double = js.native
+    def getNumberOfTabs(): Double
     
-    def getOffsetLeftForEventTarget(target: HTMLElement): Double = js.native
+    def getOffsetLeftForEventTarget(target: HTMLElement): Double
     
-    def getOffsetWidthForEventTarget(target: HTMLElement): Double = js.native
+    def getOffsetWidthForEventTarget(target: HTMLElement): Double
     
-    def getOffsetWidthForScrollFrame(): Double = js.native
+    def getOffsetWidthForScrollFrame(): Double
     
-    def getOffsetWidthForTabBar(): Double = js.native
+    def getOffsetWidthForTabBar(): Double
     
-    def getScrollLeftForScrollFrame(): Double = js.native
+    def getScrollLeftForScrollFrame(): Double
     
-    def isRTL(): Boolean = js.native
+    def isRTL(): Boolean
     
     @JSName("registerBackIndicatorClickHandler")
-    def registerBackIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit = js.native
+    def registerBackIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit
     
-    def registerCapturedInteractionHandler[K /* <: EventType */](evt: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerCapturedInteractionHandler[K /* <: EventType */](evt: K, handler: SpecificEventListener[K]): Unit
     
     @JSName("registerForwardIndicatorClickHandler")
-    def registerForwardIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit = js.native
+    def registerForwardIndicatorClickHandler_click(handler: SpecificEventListener[click]): Unit
     
     @JSName("registerWindowResizeHandler")
-    def registerWindowResizeHandler_resize(handler: SpecificEventListener[resize]): Unit = js.native
+    def registerWindowResizeHandler_resize(handler: SpecificEventListener[resize]): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def removeClassFromBackIndicator(className: String): Unit = js.native
+    def removeClassFromBackIndicator(className: String): Unit
     
-    def removeClassFromForwardIndicator(className: String): Unit = js.native
+    def removeClassFromForwardIndicator(className: String): Unit
     
-    def setScrollLeftForScrollFrame(scrollLeftAmount: Double): Unit = js.native
+    def setScrollLeftForScrollFrame(scrollLeftAmount: Double): Unit
     
-    def setTransformStyleForTabBar(value: String): Unit = js.native
+    def setTransformStyleForTabBar(value: String): Unit
   }
   object MDCTabBarScrollerAdapter {
     

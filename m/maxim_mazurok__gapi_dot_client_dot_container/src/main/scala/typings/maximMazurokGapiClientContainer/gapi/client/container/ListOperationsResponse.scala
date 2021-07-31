@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOperationsResponse extends StObject {
   
   /** If any zones are listed here, the list of operations returned may be missing the operations from those zones. */
-  var missingZones: js.UndefOr[js.Array[String]] = js.native
+  var missingZones: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of operations in the project in the specified zone. */
-  var operations: js.UndefOr[js.Array[Operation]] = js.native
+  var operations: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 object ListOperationsResponse {
   

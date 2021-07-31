@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TermsFacet")
 @js.native
-class TermsFacet protected () extends Facet {
+class TermsFacet protected ()
+  extends StObject
+     with Facet {
   /*
     A facet which returns the N most frequent terms within a collection
     or set of collections.
@@ -60,7 +61,7 @@ class TermsFacet protected () extends Facet {
   /*
     Aggregate statistical info across a set of fields.
     */
-  def fields(aFieldName: js.Array[_]): TermsFacet = js.native
+  def fields(aFieldName: js.Array[js.Any]): TermsFacet = js.native
   
   /*
     Computes values across the entire index

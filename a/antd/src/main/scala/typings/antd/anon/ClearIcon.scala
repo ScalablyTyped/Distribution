@@ -3,25 +3,23 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearIcon extends StObject {
   
-  var clearIcon: js.UndefOr[ReactNode] = js.native
+  var clearIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var menuItemSelectedIcon: js.UndefOr[ReactNode] = js.native
+  var menuItemSelectedIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var removeIcon: js.UndefOr[ReactNode] = js.native
+  var removeIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var suffixIcon: js.UndefOr[ReactNode] = js.native
+  var suffixIcon: js.UndefOr[ReactNode] = js.undefined
 }
 object ClearIcon {
   

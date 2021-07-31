@@ -2,38 +2,38 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.CustomizeExportOptions and ASPxClientReportDesigner.PreviewCustomizeExportOptions events.
   */
-@js.native
-trait ASPxClientCustomizeExportOptionsEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCustomizeExportOptionsEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Returns the export options model for the specified export format. An export options model.
     * @param format An object that specifies the export format whose model should be returned.
     */
-  def GetExportOptionsModel(format: js.Any): js.Any = js.native
+  def GetExportOptionsModel(format: js.Any): js.Any
   
   /**
     * Hides the entire <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel from the Web Document Viewer.
     */
-  def HideExportOptionsPanel(): Unit = js.native
+  def HideExportOptionsPanel(): Unit
   
   /**
     * Hides the specified export format from the Export To drop-down list and the corresponding category from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel.
     * @param format An object that specifies the export format to hide.
     */
-  def HideFormat(format: js.Any): Unit = js.native
+  def HideFormat(format: js.Any): Unit
   
   /**
     * Hides the specified options for the specified export format from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel.
     * @param format An object that specifies the export format whose options should be hidden.
     * @param properties An array of properties to hide.
     */
-  def HideProperties(format: js.Any, properties: js.Any*): Unit = js.native
+  def HideProperties(format: js.Any, properties: js.Any*): Unit
 }
 object ASPxClientCustomizeExportOptionsEventArgs {
   

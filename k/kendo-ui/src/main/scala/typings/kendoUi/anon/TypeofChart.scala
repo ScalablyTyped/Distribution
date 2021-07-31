@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.Chart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofChart extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Chart = js.native
+  def extend(proto: js.Object): Chart
   
   /* static member */
-  var fn: Chart = js.native
+  var fn: Chart
 }
 object TypeofChart {
   

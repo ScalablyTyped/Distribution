@@ -2,56 +2,54 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDestinationInput extends StObject {
   
   /**
     * Obtain this value from the VersionId result of DeliveryStreamDescription. This value is required, and helps the service perform conditional operations. For example, if there is an interleaving update and this value is null, then the update destination fails. After the update is successful, the VersionId value is updated. The service then performs a merge of the old configuration with the new configuration.
     */
-  var CurrentDeliveryStreamVersionId: DeliveryStreamVersionId = js.native
+  var CurrentDeliveryStreamVersionId: DeliveryStreamVersionId
   
   /**
     * The name of the delivery stream.
     */
-  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName = js.native
+  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName
   
   /**
     * The ID of the destination.
     */
-  var DestinationId: typings.awsSdk.firehoseMod.DestinationId = js.native
+  var DestinationId: typings.awsSdk.firehoseMod.DestinationId
   
   /**
     * Describes an update for a destination in Amazon ES.
     */
-  var ElasticsearchDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.ElasticsearchDestinationUpdate] = js.native
+  var ElasticsearchDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.ElasticsearchDestinationUpdate] = js.undefined
   
   /**
     * Describes an update for a destination in Amazon S3.
     */
-  var ExtendedS3DestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationUpdate] = js.native
+  var ExtendedS3DestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationUpdate] = js.undefined
   
   /**
     * Describes an update to the specified HTTP endpoint destination.
     */
-  var HttpEndpointDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationUpdate] = js.native
+  var HttpEndpointDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationUpdate] = js.undefined
   
   /**
     * Describes an update for a destination in Amazon Redshift.
     */
-  var RedshiftDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.RedshiftDestinationUpdate] = js.native
+  var RedshiftDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.RedshiftDestinationUpdate] = js.undefined
   
   /**
     * [Deprecated] Describes an update for a destination in Amazon S3.
     */
-  var S3DestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.S3DestinationUpdate] = js.native
+  var S3DestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.S3DestinationUpdate] = js.undefined
   
   /**
     * Describes an update for a destination in Splunk.
     */
-  var SplunkDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.SplunkDestinationUpdate] = js.native
+  var SplunkDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.SplunkDestinationUpdate] = js.undefined
 }
 object UpdateDestinationInput {
   

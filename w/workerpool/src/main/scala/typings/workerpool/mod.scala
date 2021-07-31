@@ -15,10 +15,13 @@ import typings.workerpool.workerpoolStrings.thread
 import typings.workerpool.workerpoolStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("workerpool", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("workerpool", "Promise")
   @js.native
@@ -36,33 +39,50 @@ object mod {
     
     val resolved: Boolean = js.native
     
-    def `then`[TT, TE](result: js.Function1[/* r */ T, TT]): Promise[TT | TE, _] = js.native
-    def `then`[TT, TE](result: js.Function1[/* r */ T, TT], err: js.Function1[/* r */ E, TE]): Promise[TT | TE, _] = js.native
+    def `then`[TT, TE](result: js.Function1[/* r */ T, TT]): Promise[TT | TE, js.Any] = js.native
+    def `then`[TT, TE](result: js.Function1[/* r */ T, TT], err: js.Function1[/* r */ E, TE]): Promise[TT | TE, js.Any] = js.native
     
     def timeout(delay: Double): this.type = js.native
   }
   /* static members */
   object Promise {
     
+    @JSImport("workerpool", "Promise")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("workerpool", "Promise.CancellationError")
     @js.native
-    class CancellationError () extends Error {
+    class CancellationError ()
+      extends StObject
+         with Error {
       
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       @JSName("name")
       var name_CancellationError: typings.workerpool.workerpoolStrings.CancellationError = js.native
     }
     
     @JSImport("workerpool", "Promise.TimeoutError")
     @js.native
-    class TimeoutError () extends Error {
+    class TimeoutError ()
+      extends StObject
+         with Error {
       
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       @JSName("name")
       var name_TimeoutError: typings.workerpool.workerpoolStrings.TimeoutError = js.native
     }
     
-    @JSImport("workerpool", "Promise.all")
-    @js.native
-    def all(promises: js.Array[Promise[_, _]]): Promise[js.Array[_], _] = js.native
+    @scala.inline
+    def all(promises: js.Array[Promise[js.Any, js.Any]]): Promise[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[js.Any], js.Any]]
   }
   
   @JSImport("workerpool", "cpus")
@@ -77,32 +97,25 @@ object mod {
   @js.native
   val platform: node | browser = js.native
   
-  @JSImport("workerpool", "pool")
-  @js.native
-  def pool(): WorkerPool = js.native
-  @JSImport("workerpool", "pool")
-  @js.native
-  def pool(options: WorkerPoolOptions): WorkerPool = js.native
-  @JSImport("workerpool", "pool")
-  @js.native
-  def pool(pathToScript: js.UndefOr[scala.Nothing], options: WorkerPoolOptions): WorkerPool = js.native
-  @JSImport("workerpool", "pool")
-  @js.native
-  def pool(pathToScript: String): WorkerPool = js.native
-  @JSImport("workerpool", "pool")
-  @js.native
-  def pool(pathToScript: String, options: WorkerPoolOptions): WorkerPool = js.native
+  @scala.inline
+  def pool(): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[WorkerPool]
+  @scala.inline
+  def pool(options: WorkerPoolOptions): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")(options.asInstanceOf[js.Any]).asInstanceOf[WorkerPool]
+  @scala.inline
+  def pool(pathToScript: String): WorkerPool = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any]).asInstanceOf[WorkerPool]
+  @scala.inline
+  def pool(pathToScript: String, options: WorkerPoolOptions): WorkerPool = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WorkerPool]
+  @scala.inline
+  def pool(pathToScript: Unit, options: WorkerPoolOptions): WorkerPool = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(pathToScript.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WorkerPool]
   
-  @JSImport("workerpool", "worker")
-  @js.native
-  def worker(): js.Any = js.native
-  @JSImport("workerpool", "worker")
-  @js.native
-  def worker(methods: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): js.Any = js.native
+  @scala.inline
+  def worker(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")().asInstanceOf[js.Any]
+  @scala.inline
+  def worker(methods: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  type Proxy[T /* <: StringDictionary[js.Function1[/* repeated */ js.Any, _]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Proxy[T /* <: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ M in keyof T ]: (args : std.Parameters<T[M]>): workerpool.workerpool.Promise<std.ReturnType<T[M]>, std.Error>}
-    */ typings.workerpool.workerpoolStrings.Proxy with TopLevel[js.Any]
+    */ typings.workerpool.workerpoolStrings.Proxy & TopLevel[js.Any]
   
   @js.native
   trait WorkerPool extends StObject {
@@ -116,10 +129,10 @@ object mod {
       * and executed there with the provided parameters. The provided function must be static,
       * it must not depend on variables in a surrounding scope.
       */
-    def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T): Promise[ReturnType[T], Error] = js.native
-    def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
-    def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: String): Promise[ReturnType[T], Error] = js.native
-    def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: String, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
+    def exec[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](method: T): Promise[ReturnType[T], Error] = js.native
+    def exec[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](method: T, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
+    def exec[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](method: String): Promise[ReturnType[T], Error] = js.native
+    def exec[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](method: String, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
     
     /**
       * Create a proxy for the worker pool.
@@ -127,7 +140,7 @@ object mod {
       * All methods return promises resolving the methods result.
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    def proxy[T /* <: StringDictionary[js.Function1[/* repeated */ js.Any, _]] */](): Promise[Proxy[T], Error] = js.native
+    def proxy[T /* <: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] */](): Promise[Proxy[T], Error] = js.native
     
     /** Retrieve statistics on workers, and active and pending tasks. */
     def stats(): WorkerPoolStats = js.native
@@ -137,31 +150,30 @@ object mod {
       * When force is true, all workers are terminated immediately without finishing running tasks.
       * If timeout is provided, worker will be forced to terminal when the timeout expires and the worker has not finished.
       */
-    def terminate(): Promise[js.Array[_], Error] = js.native
-    def terminate(force: js.UndefOr[scala.Nothing], timeout: Double): Promise[js.Array[_], Error] = js.native
-    def terminate(force: Boolean): Promise[js.Array[_], Error] = js.native
-    def terminate(force: Boolean, timeout: Double): Promise[js.Array[_], Error] = js.native
+    def terminate(): Promise[js.Array[js.Any], Error] = js.native
+    def terminate(force: Boolean): Promise[js.Array[js.Any], Error] = js.native
+    def terminate(force: Boolean, timeout: Double): Promise[js.Array[js.Any], Error] = js.native
+    def terminate(force: Unit, timeout: Double): Promise[js.Array[js.Any], Error] = js.native
   }
   
-  @js.native
   trait WorkerPoolOptions extends StObject {
     
     /** 2nd argument to pass to childProcess.fork() */
-    var forkArgs: js.UndefOr[js.Array[String]] = js.native
+    var forkArgs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var forkOpts: js.UndefOr[ForkOptions] = js.native
+    var forkOpts: js.UndefOr[ForkOptions] = js.undefined
     
     /**
       * The default number of maxWorkers is the number of CPU's minus one.
       * When the number of CPU's could not be determined (for example in older browsers), maxWorkers is set to 3.
       */
-    var maxWorkers: js.UndefOr[Double] = js.native
+    var maxWorkers: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum number of workers that must be initialized and kept available.
       * Setting this to 'max' will create maxWorkers default workers.
       */
-    var minWorkers: js.UndefOr[Double | max] = js.native
+    var minWorkers: js.UndefOr[Double | max] = js.undefined
     
     /**
       * - In case of `'auto'` (default), workerpool will automatically pick a suitable type of worker:
@@ -172,7 +184,7 @@ object mod {
       * - In case of `'thread'`, `worker_threads` will be used. If `worker_threads` are not available, an error is thrown.
       *   Only available in a node.js environment.
       */
-    var workerType: js.UndefOr[auto | web | process | thread] = js.native
+    var workerType: js.UndefOr[auto | web | process | thread] = js.undefined
   }
   object WorkerPoolOptions {
     
@@ -220,18 +232,17 @@ object mod {
     }
   }
   
-  @js.native
   trait WorkerPoolStats extends StObject {
     
-    var activeTasks: Double = js.native
+    var activeTasks: Double
     
-    var busyWorkers: Double = js.native
+    var busyWorkers: Double
     
-    var idleWorkers: Double = js.native
+    var idleWorkers: Double
     
-    var pendingTasks: Double = js.native
+    var pendingTasks: Double
     
-    var totalWorkers: Double = js.native
+    var totalWorkers: Double
   }
   object WorkerPoolStats {
     

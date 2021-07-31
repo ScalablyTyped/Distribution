@@ -6,25 +6,25 @@ import typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule
 import typings.awsSdkClientPinpointBrowser.typesScheduleMod.UnmarshalledSchedule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWriteTreatmentResourceMod {
   
-  @js.native
-  trait UnmarshalledWriteTreatmentResource extends WriteTreatmentResource {
+  trait UnmarshalledWriteTreatmentResource
+    extends StObject
+       with WriteTreatmentResource {
     
     /**
       * The message configuration settings.
       */
     @JSName("MessageConfiguration")
-    var MessageConfiguration_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledMessageConfiguration] = js.native
+    var MessageConfiguration_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledMessageConfiguration] = js.undefined
     
     /**
       * The campaign schedule.
       */
     @JSName("Schedule")
-    var Schedule_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledSchedule] = js.native
+    var Schedule_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledSchedule] = js.undefined
   }
   object UnmarshalledWriteTreatmentResource {
     
@@ -51,7 +51,6 @@ object typesWriteTreatmentResourceMod {
     }
   }
   
-  @js.native
   trait WriteTreatmentResource extends StObject {
     
     /**
@@ -59,27 +58,27 @@ object typesWriteTreatmentResourceMod {
       */
     var MessageConfiguration: js.UndefOr[
         typings.awsSdkClientPinpointBrowser.typesMessageConfigurationMod.MessageConfiguration
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The campaign schedule.
       */
-    var Schedule: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule] = js.native
+    var Schedule: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule] = js.undefined
     
     /**
       * The allocated percentage of users for this treatment.
       */
-    var SizePercent: js.UndefOr[Double] = js.native
+    var SizePercent: js.UndefOr[Double] = js.undefined
     
     /**
       * A custom description for the treatment.
       */
-    var TreatmentDescription: js.UndefOr[String] = js.native
+    var TreatmentDescription: js.UndefOr[String] = js.undefined
     
     /**
       * The custom name of a variation of the campaign used for A/B testing.
       */
-    var TreatmentName: js.UndefOr[String] = js.native
+    var TreatmentName: js.UndefOr[String] = js.undefined
   }
   object WriteTreatmentResource {
     

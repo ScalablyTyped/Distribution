@@ -2,19 +2,17 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventCall[T] extends StObject {
   
-  var headers: EventHttpHeaders = js.native
+  var headers: EventHttpHeaders
   
-  var params: T = js.native
+  var params: T
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var url: EventUrl = js.native
+  var url: EventUrl
 }
 object EventCall {
   
@@ -25,7 +23,7 @@ object EventCall {
   }
   
   @scala.inline
-  implicit class EventCallMutableBuilder[Self <: EventCall[_], T] (val x: Self with EventCall[T]) extends AnyVal {
+  implicit class EventCallMutableBuilder[Self <: EventCall[?], T] (val x: Self & EventCall[T]) extends AnyVal {
     
     @scala.inline
     def setHeaders(value: EventHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

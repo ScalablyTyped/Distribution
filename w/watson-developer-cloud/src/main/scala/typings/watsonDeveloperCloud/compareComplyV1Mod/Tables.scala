@@ -2,36 +2,34 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The contents of the tables extracted from a document. */
-@js.native
 trait Tables extends StObject {
   
   /** An array of cells that are neither table header nor column header nor row header cells, of the current table with corresponding row and column header associations. */
-  var body_cells: js.UndefOr[js.Array[BodyCells]] = js.native
+  var body_cells: js.UndefOr[js.Array[BodyCells]] = js.undefined
   
   /** An array of column-level cells, each applicable as a header to other cells in the same column as itself, of the current table. */
-  var column_headers: js.UndefOr[js.Array[ColumnHeaders]] = js.native
+  var column_headers: js.UndefOr[js.Array[ColumnHeaders]] = js.undefined
   
   /** An array of key-value pairs identified in the current table. */
-  var key_value_pairs: js.UndefOr[js.Array[KeyValuePair]] = js.native
+  var key_value_pairs: js.UndefOr[js.Array[KeyValuePair]] = js.undefined
   
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** An array of row-level cells, each applicable as a header to other cells in the same row as itself, of the current table. */
-  var row_headers: js.UndefOr[js.Array[RowHeaders]] = js.native
+  var row_headers: js.UndefOr[js.Array[RowHeaders]] = js.undefined
   
   /** The table's section title, if identified. */
-  var section_title: js.UndefOr[SectionTitle] = js.native
+  var section_title: js.UndefOr[SectionTitle] = js.undefined
   
   /** An array of table-level cells that apply as headers to all the other cells in the current table. */
-  var table_headers: js.UndefOr[js.Array[TableHeaders]] = js.native
+  var table_headers: js.UndefOr[js.Array[TableHeaders]] = js.undefined
   
   /** The textual contents of the current table from the input document without associated markup content. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Tables {
   

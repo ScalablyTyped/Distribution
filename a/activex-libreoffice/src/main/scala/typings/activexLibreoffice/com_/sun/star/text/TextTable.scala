@@ -24,7 +24,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TableRows
   * @see com.sun.star.text.TextTableCursor
   */
-@js.native
 trait TextTable
-  extends TextContent
+  extends StObject
+     with TextContent
      with UserDefinedAttributesSupplier
      with XTextTable
      with XNamed
@@ -59,112 +58,112 @@ trait TextTable
      with XCellRangeData {
   
   /** contains the color of the background. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** contains the name of the file filter for the background graphic. */
-  var BackGraphicFilter: String = js.native
+  var BackGraphicFilter: String
   
   /**
     * determines the position of the background graphic.
     * @see GraphicLocation
     */
-  var BackGraphicLocation: GraphicLocation = js.native
+  var BackGraphicLocation: GraphicLocation
   
   /** contains the URL for the background graphic. */
-  var BackGraphicURL: String = js.native
+  var BackGraphicURL: String
   
   /** determines if the background color is transparent. */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /** determines the bottom margin. */
-  var BottomMargin: Double = js.native
+  var BottomMargin: Double
   
   /**
     * determines the type of break that is applied at the beginning of the table.
     * @see com.sun.star.style.BreakType
     */
-  var BreakType: typings.activexLibreoffice.com_.sun.star.style.BreakType = js.native
+  var BreakType: typings.activexLibreoffice.com_.sun.star.style.BreakType
   
   /** determines if the first column of the table should be treated as axis labels when a chart is to be created. */
-  var ChartColumnAsLabel: Boolean = js.native
+  var ChartColumnAsLabel: Boolean
   
   /** determines if the first row of the table should be treated as axis labels when a chart is to be created. */
-  var ChartRowAsLabel: Boolean = js.native
+  var ChartRowAsLabel: Boolean
   
   /** determines whether borders of neighboring table cells are collapsed into one */
-  var CollapsingBorders: Boolean = js.native
+  var CollapsingBorders: Boolean
   
   /** determines the number of rows of the table repeated on every new page. */
-  var HeaderRowCount: Double = js.native
+  var HeaderRowCount: Double
   
   /**
     * contains the horizontal orientation.
     * @see com.sun.star.text.HoriOrientation
     */
-  var HoriOrient: Double = js.native
+  var HoriOrient: Double
   
   /** determines if the value of the relative width is valid. */
-  var IsWidthRelative: Boolean = js.native
+  var IsWidthRelative: Boolean
   
   /** Setting this property to TRUE prevents page or column breaks between this table and the following paragraph or text table. */
-  var KeepTogether: Boolean = js.native
+  var KeepTogether: Boolean
   
   /** contains the left margin of the table. */
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
   /** If this property is set, it creates a page break before the table and assigns the value as the name of the new page style sheet to use. */
-  var PageDescName: String = js.native
+  var PageDescName: String
   
   /** If a page break property is set at the table, this property contains the new value for the page number. */
-  var PageNumberOffset: Double = js.native
+  var PageNumberOffset: Double
   
   /** determines the width of the table relative to its environment. */
-  var RelativeWidth: Double = js.native
+  var RelativeWidth: Double
   
   /** determines if the first row of the table is repeated on every new page. */
-  var RepeatHeadline: Boolean = js.native
+  var RepeatHeadline: Boolean
   
   /** contains the right margin of the table. */
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
   /**
     * determines the type, color and size of the shadow.
     * @see com.sun.star.table.ShadowFormat
     */
-  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat = js.native
+  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
   
   /** Setting this property to FALSE prevents the table from getting spread on two pages. */
-  var Split: Boolean = js.native
+  var Split: Boolean
   
   /**
     * contains the description of the table borders.
     * @see com.sun.star.table.TableBorder
     */
-  var TableBorder: typings.activexLibreoffice.com_.sun.star.table.TableBorder = js.native
+  var TableBorder: typings.activexLibreoffice.com_.sun.star.table.TableBorder
   
   /** contains the sum of the column width values used in TableColumnSeparators. */
-  var TableColumnRelativeSum: Double = js.native
+  var TableColumnRelativeSum: Double
   
   /**
     * contains the column description of the table.
     * @see com.sun.star.text.TableColumnSeparator
     */
-  var TableColumnSeparators: SafeArray[TableColumnSeparator] = js.native
+  var TableColumnSeparators: SafeArray[TableColumnSeparator]
   
   /**
     * Grab bag of table properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.3  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var TableInteropGrabBag: SafeArray[PropertyValue] = js.native
+  var TableInteropGrabBag: SafeArray[PropertyValue]
   
   /**
     * contains the name of table style used by the table.
     * @since LibreOffice 5.3
     */
-  var TableTemplateName: String = js.native
+  var TableTemplateName: String
   
   /** determines the top margin. */
-  var TopMargin: Double = js.native
+  var TopMargin: Double
   
   /**
     * contains the absolute table width.
@@ -172,7 +171,7 @@ trait TextTable
     * As this is only a describing property the value of the actual table may vary depending on the environment the table is located in and the settings of
     * LeftMargin, RightMargin and HoriOrient.
     */
-  var Width: Double = js.native
+  var Width: Double
 }
 object TextTable {
   
@@ -195,7 +194,7 @@ object TextTable {
     ColumnDescriptions: SafeArray[String],
     Columns: XTableColumns,
     Data: SafeArray[SafeArray[Double]],
-    DataArray: SafeArray[SafeArray[_]],
+    DataArray: SafeArray[SafeArray[js.Any]],
     HeaderRowCount: Double,
     HoriOrient: Double,
     IsWidthRelative: Boolean,
@@ -238,7 +237,7 @@ object TextTable {
     getColumnDescriptions: () => SafeArray[String],
     getColumns: () => XTableColumns,
     getData: () => SafeArray[SafeArray[Double]],
-    getDataArray: () => SafeArray[SafeArray[_]],
+    getDataArray: () => SafeArray[SafeArray[js.Any]],
     getName: () => String,
     getNotANumber: () => Double,
     getRowDescriptions: () => SafeArray[String],
@@ -251,7 +250,7 @@ object TextTable {
     removeEventListener: XEventListener => Unit,
     setColumnDescriptions: SeqEquiv[String] => Unit,
     setData: SeqEquiv[SeqEquiv[Double]] => Unit,
-    setDataArray: SeqEquiv[SeqEquiv[_]] => Unit,
+    setDataArray: SeqEquiv[SeqEquiv[js.Any]] => Unit,
     setName: String => Unit,
     setRowDescriptions: SeqEquiv[String] => Unit,
     sort: SeqEquiv[PropertyValue] => Unit

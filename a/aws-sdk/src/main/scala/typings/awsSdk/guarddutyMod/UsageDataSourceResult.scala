@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageDataSourceResult extends StObject {
   
   /**
     * The data source type that generated usage.
     */
-  var DataSource: js.UndefOr[typings.awsSdk.guarddutyMod.DataSource] = js.native
+  var DataSource: js.UndefOr[typings.awsSdk.guarddutyMod.DataSource] = js.undefined
   
   /**
     * Represents the total of usage for the specified data source.
     */
-  var Total: js.UndefOr[typings.awsSdk.guarddutyMod.Total] = js.native
+  var Total: js.UndefOr[typings.awsSdk.guarddutyMod.Total] = js.undefined
 }
 object UsageDataSourceResult {
   

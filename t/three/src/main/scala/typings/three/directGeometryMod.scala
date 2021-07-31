@@ -11,7 +11,6 @@ import typings.three.vector3Mod.Vector3
 import typings.three.vector4Mod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directGeometryMod {

@@ -3,14 +3,15 @@ package typings.filewriter
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface expands on the FileSaver interface to allow for multiple write actions, rather than just saving a single Blob.
   */
 @js.native
-trait FileWriter extends FileSaver {
+trait FileWriter
+  extends StObject
+     with FileSaver {
   
   /**
     * The length of the file. If the user does not have read access to the file, this must be the highest byte offset at which the user has written.

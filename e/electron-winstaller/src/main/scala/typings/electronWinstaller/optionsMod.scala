@@ -2,31 +2,29 @@ package typings.electronWinstaller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait Metadata extends StObject {
     
-    var author: js.UndefOr[String | PersonMetadata] = js.native
+    var author: js.UndefOr[String | PersonMetadata] = js.undefined
     
-    var authors: js.UndefOr[String | js.Array[PersonMetadata]] = js.native
+    var authors: js.UndefOr[String | js.Array[PersonMetadata]] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var owners: js.UndefOr[String | js.Array[PersonMetadata]] = js.native
+    var owners: js.UndefOr[String | js.Array[PersonMetadata]] = js.undefined
     
-    var productName: js.UndefOr[String] = js.native
+    var productName: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Metadata {
     
@@ -101,55 +99,54 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The folder path of your Electron app
       */
-    var appDirectory: String = js.native
+    var appDirectory: String
     
     /**
       * The authors value for the nuget package metadata.
       *
       * Defaults to the `author` field from your app's package.json file when unspecified.
       */
-    var authors: js.UndefOr[String] = js.native
+    var authors: js.UndefOr[String] = js.undefined
     
     /**
       * The path to an Authenticode Code Signing Certificate
       */
-    var certificateFile: js.UndefOr[String] = js.native
+    var certificateFile: js.UndefOr[String] = js.undefined
     
     /**
       * The password to decrypt the certificate given in `certificateFile`
       */
-    var certificatePassword: js.UndefOr[String] = js.native
+    var certificatePassword: js.UndefOr[String] = js.undefined
     
     /**
       * The copyright value for the nuget package metadata.
       *
       * Defaults to a generated copyright with `authors` or `owners`.
       */
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
     /**
       * The description value for the nuget package metadata.
       *
       * Defaults to the `description` field from your app's package.json file when unspecified.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The name of your app's main `.exe` file.
       *
       * This uses the `name` field in your app's package.json file with an added `.exe` extension when unspecified.
       */
-    var exe: js.UndefOr[String] = js.native
+    var exe: js.UndefOr[String] = js.undefined
     
-    var fixUpPaths: js.UndefOr[Boolean] = js.native
+    var fixUpPaths: js.UndefOr[Boolean] = js.undefined
     
-    var frameworkVersion: js.UndefOr[String] = js.native
+    var frameworkVersion: js.UndefOr[String] = js.undefined
     
     /**
       * A publicly accessible, fully qualified HTTP(S) URL to an ICO file, used as the application icon
@@ -160,93 +157,93 @@ object optionsMod {
       *
       * Defaults to the Electron icon.
       */
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The local path to a `.gif` file to display during install.
       */
-    var loadingGif: js.UndefOr[String] = js.native
+    var loadingGif: js.UndefOr[String] = js.undefined
     
     /**
       * Windows Application Model ID (appId).
       *
       * Defaults to the name field in your app's package.json file.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Should Squirrel.Windows delta packages? (disable only if necessary, they are a Good Thing)
       */
-    var noDelta: js.UndefOr[Boolean] = js.native
+    var noDelta: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should Squirrel.Windows create an MSI installer?
       */
-    var noMsi: js.UndefOr[Boolean] = js.native
+    var noMsi: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The folder path to create the .exe installer in.
       *
       * Defaults to the installer folder at the project root.
       */
-    var outputDirectory: js.UndefOr[String] = js.native
+    var outputDirectory: js.UndefOr[String] = js.undefined
     
     /**
       * The owners value for the nuget package metadata.
       *
       * Defaults to the `authors` field when unspecified.
       */
-    var owners: js.UndefOr[String] = js.native
+    var owners: js.UndefOr[String] = js.undefined
     
     /**
       * A URL to your existing updates. If given, these will be downloaded to create delta updates
       */
-    var remoteReleases: js.UndefOr[String] = js.native
+    var remoteReleases: js.UndefOr[String] = js.undefined
     
     /**
       * Authentication token for remote updates
       */
-    var remoteToken: js.UndefOr[String] = js.native
+    var remoteToken: js.UndefOr[String] = js.undefined
     
     /**
       * The name to use for the generated Setup.exe file
       */
-    var setupExe: js.UndefOr[String] = js.native
+    var setupExe: js.UndefOr[String] = js.undefined
     
     /**
       * The ICO file to use as the icon for the generated Setup.exe
       */
-    var setupIcon: js.UndefOr[String] = js.native
+    var setupIcon: js.UndefOr[String] = js.undefined
     
     /**
       * The name to use for the generated Setup.msi file
       */
-    var setupMsi: js.UndefOr[String] = js.native
+    var setupMsi: js.UndefOr[String] = js.undefined
     
     /**
       * Params to pass to signtool.
       *
       * Overrides `certificateFile` and `certificatePassword`.
       */
-    var signWithParams: js.UndefOr[String] = js.native
+    var signWithParams: js.UndefOr[String] = js.undefined
     
-    var skipUpdateIcon: js.UndefOr[Boolean] = js.native
+    var skipUpdateIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The title value for the nuget package metadata.
       *
       * Defaults to the `productName` field and then the `name` field from your app's package.json file when unspecified.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var usePackageJson: js.UndefOr[Boolean] = js.native
+    var usePackageJson: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The version value for the nuget package metadata.
       *
       * Defaults to the `version` field from your app's package.json file when unspecified.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -414,14 +411,13 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait PersonMetadata extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object PersonMetadata {
     

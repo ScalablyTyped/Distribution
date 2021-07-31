@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResourceRole extends BaseElement {
+trait ResourceRole
+  extends StObject
+     with BaseElement {
   
-  var ResourceParameterBindings: js.Array[ResourceParameterBinding] = js.native
+  var ResourceParameterBindings: js.Array[ResourceParameterBinding]
   
-  var name: String = js.native
+  var name: String
   
-  var resourceAssignmentExpression: ResourceAssignmentExpression = js.native
+  var resourceAssignmentExpression: ResourceAssignmentExpression
   
-  var resourceRef: Resource = js.native
+  var resourceRef: Resource
 }
 object ResourceRole {
   

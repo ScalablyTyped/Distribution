@@ -10,13 +10,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a service that allows to get access to a storage hierarchy. */
-@js.native
 trait BaseStorage
-  extends XStorage
+  extends StObject
+     with XStorage
      with XPropertySet {
   
   /**
@@ -24,10 +23,10 @@ trait BaseStorage
     *
     * Can be a combination of values from {@link ElementModes} .
     */
-  var OpenMode: Double = js.native
+  var OpenMode: Double
   
   /** allows to retrieve URL the storage is based on. */
-  var URL: String = js.native
+  var URL: String
 }
 object BaseStorage {
   

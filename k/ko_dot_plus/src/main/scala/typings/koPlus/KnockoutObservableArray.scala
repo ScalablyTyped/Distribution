@@ -2,7 +2,6 @@ package typings.koPlus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Sortable type extensions
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // extends the KnockoutObservableArray to add sorting methods
 // see https://github.com/stevegreatrex/ko.plus#properties-and-functions
 //
-@js.native
 trait KnockoutObservableArray[T] extends StObject {
   
-  def setSourceKey(key: String): Unit = js.native
+  def setSourceKey(key: String): Unit
   
-  var sortDescending: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var sortDescending: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
   
-  var sortKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any = js.native
+  var sortKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
 }
 object KnockoutObservableArray {
   
@@ -32,7 +30,7 @@ object KnockoutObservableArray {
   }
   
   @scala.inline
-  implicit class KnockoutObservableArrayMutableBuilder[Self <: KnockoutObservableArray[_], T] (val x: Self with KnockoutObservableArray[T]) extends AnyVal {
+  implicit class KnockoutObservableArrayMutableBuilder[Self <: KnockoutObservableArray[?], T] (val x: Self & KnockoutObservableArray[T]) extends AnyVal {
     
     @scala.inline
     def setSetSourceKey(value: String => Unit): Self = StObject.set(x, "setSourceKey", js.Any.fromFunction1(value))

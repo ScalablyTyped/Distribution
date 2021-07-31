@@ -2,26 +2,24 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A form action describes the behavior when the form is submitted. For
   * example, an Apps Script can be invoked to handle the form.
   */
-@js.native
 trait SchemaFormAction extends StObject {
   
   /**
     * Apps Script function to invoke when the containing element is
     * clicked/activated.
     */
-  var actionMethodName: js.UndefOr[String] = js.native
+  var actionMethodName: js.UndefOr[String] = js.undefined
   
   /**
     * List of action parameters.
     */
-  var parameters: js.UndefOr[js.Array[SchemaActionParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[SchemaActionParameter]] = js.undefined
 }
 object SchemaFormAction {
   

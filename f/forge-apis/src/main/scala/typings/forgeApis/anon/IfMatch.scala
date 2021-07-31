@@ -2,17 +2,15 @@ package typings.forgeApis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfMatch extends StObject {
   
-  var contentDisposition: js.UndefOr[String] = js.native
+  var contentDisposition: js.UndefOr[String] = js.undefined
   
-  var ifMatch: js.UndefOr[String] = js.native
+  var ifMatch: js.UndefOr[String] = js.undefined
   
-  var xAdsRegion: js.UndefOr[String] = js.native
+  var xAdsRegion: js.UndefOr[String] = js.undefined
 }
 object IfMatch {
   

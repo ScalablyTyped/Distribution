@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInstanceUserMembershipSummary extends StObject {
   
   /**
     * The time at which a summary was last read.
     */
-  var ReadMarkerTimestamp: js.UndefOr[Timestamp] = js.native
+  var ReadMarkerTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of channel summary, 
     */
-  var Type: js.UndefOr[ChannelMembershipType] = js.native
+  var Type: js.UndefOr[ChannelMembershipType] = js.undefined
 }
 object AppInstanceUserMembershipSummary {
   

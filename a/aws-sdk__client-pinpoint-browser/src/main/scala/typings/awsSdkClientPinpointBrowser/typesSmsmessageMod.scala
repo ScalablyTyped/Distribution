@@ -6,45 +6,43 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.TR
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSmsmessageMod {
   
-  @js.native
   trait SMSMessage extends StObject {
     
     /**
       * The body of the SMS message.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * The SMS program name that you provided to AWS Support when you requested your dedicated number.
       */
-    var Keyword: js.UndefOr[String] = js.native
+    var Keyword: js.UndefOr[String] = js.undefined
     
     /**
       * Is this a transaction priority message or lower priority.
       */
-    var MessageType: js.UndefOr[TRANSACTIONAL | PROMOTIONAL | String] = js.native
+    var MessageType: js.UndefOr[TRANSACTIONAL | PROMOTIONAL | String] = js.undefined
     
     /**
       * The phone number that the SMS message originates from. Specify one of the dedicated long codes or short codes that you requested from AWS Support and that is assigned to your account. If this attribute is not specified, Amazon Pinpoint randomly assigns a long code.
       */
-    var OriginationNumber: js.UndefOr[String] = js.native
+    var OriginationNumber: js.UndefOr[String] = js.undefined
     
     /**
       * The sender ID that is shown as the message sender on the recipient's device. Support for sender IDs varies by country or region.
       */
-    var SenderId: js.UndefOr[String] = js.native
+    var SenderId: js.UndefOr[String] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
   }
   object SMSMessage {
     
@@ -97,14 +95,15 @@ object typesSmsmessageMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSMSMessage extends SMSMessage {
+  trait UnmarshalledSMSMessage
+    extends StObject
+       with SMSMessage {
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     @JSName("Substitutions")
-    var Substitutions_UnmarshalledSMSMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Substitutions_UnmarshalledSMSMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object UnmarshalledSMSMessage {
     

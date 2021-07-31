@@ -2,24 +2,22 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarListListParameters extends StObject {
   
-  var maxResults: js.UndefOr[integer] = js.native
+  var maxResults: js.UndefOr[integer] = js.undefined
   
   // The minimum access role for the user in the returned entries. Optional. The default is no restriction. Acceptable values are:
-  var minAccessRole: js.UndefOr[AccessRoleWithoutNone] = js.native
+  var minAccessRole: js.UndefOr[AccessRoleWithoutNone] = js.undefined
   
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
-  var showHidden: js.UndefOr[Boolean] = js.native
+  var showHidden: js.UndefOr[Boolean] = js.undefined
   
-  var syncToken: js.UndefOr[String] = js.native
+  var syncToken: js.UndefOr[String] = js.undefined
 }
 object CalendarListListParameters {
   

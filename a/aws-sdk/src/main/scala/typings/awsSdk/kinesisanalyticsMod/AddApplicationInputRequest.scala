@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddApplicationInputRequest extends StObject {
   
   /**
     * Name of your existing Amazon Kinesis Analytics application to which you want to add the streaming source.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
   
   /**
     * Current version of your Amazon Kinesis Analytics application. You can use the DescribeApplication operation to find the current application version.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
   
   /**
     * The Input to add.
     */
-  var Input: typings.awsSdk.kinesisanalyticsMod.Input = js.native
+  var Input: typings.awsSdk.kinesisanalyticsMod.Input
 }
 object AddApplicationInputRequest {
   

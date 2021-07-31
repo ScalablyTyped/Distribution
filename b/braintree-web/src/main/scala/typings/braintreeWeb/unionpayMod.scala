@@ -7,7 +7,6 @@ import typings.braintreeWeb.anon.HostedFields
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unionpayMod {
@@ -29,7 +28,7 @@ object unionpayMod {
       *   // ...
       * });
       */
-    def create(options: Client, callback: callback[_]): Unit = js.native
+    def create(options: Client, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Enrolls a UnionPay card. Use {@link UnionPay#fetchCapabilities|fetchCapabilities} to determine if the SMS enrollment
@@ -80,7 +79,7 @@ object unionpayMod {
       *   }
       * });
       */
-    def enroll(options: HostedFields, callback: callback[_]): Unit = js.native
+    def enroll(options: HostedFields, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Fetches the capabilities of a card, including whether or not the SMS enrollment process is required.
@@ -146,7 +145,7 @@ object unionpayMod {
       *   });
       * });
       */
-    def fetchCapabilities(options: Card, callback: callback[_]): Unit = js.native
+    def fetchCapabilities(options: Card, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Cleanly tear down anything set up by {@link module:braintree-web/unionpay.create|create}.
@@ -161,7 +160,7 @@ object unionpayMod {
       * });
       */
     def teardown(): Unit = js.native
-    def teardown(callback: callback[_]): Unit = js.native
+    def teardown(callback: callback[js.Any]): Unit = js.native
     
     /**
       * Tokenizes a UnionPay card and returns a nonce payload.
@@ -197,17 +196,16 @@ object unionpayMod {
       *   // Send response.nonce to your server
       * });
       */
-    def tokenize(options: EnrollmentId, callback: callback[_]): Unit = js.native
+    def tokenize(options: EnrollmentId, callback: callback[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait UnionPayAccountDetails extends StObject {
     
-    var cardType: String = js.native
+    var cardType: String
     
-    var description: String = js.native
+    var description: String
     
-    var lastTwo: String = js.native
+    var lastTwo: String
   }
   object UnionPayAccountDetails {
     
@@ -231,12 +229,11 @@ object unionpayMod {
     }
   }
   
-  @js.native
   trait UnionPayEnrollPayload extends StObject {
     
-    var enrollmentId: String = js.native
+    var enrollmentId: String
     
-    var smsCodeRequired: Boolean = js.native
+    var smsCodeRequired: Boolean
   }
   object UnionPayEnrollPayload {
     
@@ -257,14 +254,13 @@ object unionpayMod {
     }
   }
   
-  @js.native
   trait UnionPayFetchCapabilitiesPayload extends StObject {
     
-    var isDebit: Boolean = js.native
+    var isDebit: Boolean
     
-    var isUnionPay: Boolean = js.native
+    var isUnionPay: Boolean
     
-    var unionPay: UnionPayProperties = js.native
+    var unionPay: UnionPayProperties
   }
   object UnionPayFetchCapabilitiesPayload {
     
@@ -288,12 +284,11 @@ object unionpayMod {
     }
   }
   
-  @js.native
   trait UnionPayProperties extends StObject {
     
-    var isSupported: Boolean = js.native
+    var isSupported: Boolean
     
-    var supportsTwoStepAuthAndCapture: Boolean = js.native
+    var supportsTwoStepAuthAndCapture: Boolean
   }
   object UnionPayProperties {
     
@@ -314,14 +309,13 @@ object unionpayMod {
     }
   }
   
-  @js.native
   trait UnionPayTokenizePayload extends StObject {
     
-    var details: UnionPayAccountDetails = js.native
+    var details: UnionPayAccountDetails
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object UnionPayTokenizePayload {
     

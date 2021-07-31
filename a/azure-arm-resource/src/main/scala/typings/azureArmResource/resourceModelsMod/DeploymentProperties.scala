@@ -2,16 +2,14 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentProperties extends StObject {
   
   /**
     * The debug setting of the deployment.
     */
-  var debugSetting: js.UndefOr[DebugSetting] = js.native
+  var debugSetting: js.UndefOr[DebugSetting] = js.undefined
   
   /**
     * The mode that is used to deploy resources. This value can be either Incremental or Complete.
@@ -21,12 +19,12 @@ trait DeploymentProperties extends StObject {
     * Complete mode as you may unintentionally delete resources. Possible values include:
     * 'Incremental', 'Complete'
     */
-  var mode: String = js.native
+  var mode: String
   
   /**
     * The deployment on error behavior.
     */
-  var onErrorDeployment: js.UndefOr[OnErrorDeployment] = js.native
+  var onErrorDeployment: js.UndefOr[OnErrorDeployment] = js.undefined
   
   /**
     * Name and value pairs that define the deployment parameters for the template. You use this
@@ -34,26 +32,26 @@ trait DeploymentProperties extends StObject {
     * to an existing parameter file. Use either the parametersLink property or the parameters
     * property, but not both. It can be a JObject or a well formed JSON string.
     */
-  var parameters: js.UndefOr[js.Any] = js.native
+  var parameters: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URI of parameters file. You use this element to link to an existing parameters file. Use
     * either the parametersLink property or the parameters property, but not both.
     */
-  var parametersLink: js.UndefOr[ParametersLink] = js.native
+  var parametersLink: js.UndefOr[ParametersLink] = js.undefined
   
   /**
     * The template content. You use this element when you want to pass the template syntax directly
     * in the request rather than link to an existing template. It can be a JObject or well-formed
     * JSON string. Use either the templateLink property or the template property, but not both.
     */
-  var template: js.UndefOr[js.Any] = js.native
+  var template: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URI of the template. Use either the templateLink property or the template property, but
     * not both.
     */
-  var templateLink: js.UndefOr[TemplateLink] = js.native
+  var templateLink: js.UndefOr[TemplateLink] = js.undefined
 }
 object DeploymentProperties {
   

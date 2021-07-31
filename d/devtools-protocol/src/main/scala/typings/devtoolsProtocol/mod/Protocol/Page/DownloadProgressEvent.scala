@@ -5,31 +5,29 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.completed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.inProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadProgressEvent extends StObject {
   
   /**
     * Global unique identifier of the download.
     */
-  var guid: String = js.native
+  var guid: String
   
   /**
     * Total bytes received.
     */
-  var receivedBytes: Double = js.native
+  var receivedBytes: Double
   
   /**
     * Download status. (DownloadProgressEventState enum)
     */
-  var state: inProgress | completed | canceled = js.native
+  var state: inProgress | completed | canceled
   
   /**
     * Total expected bytes to download.
     */
-  var totalBytes: Double = js.native
+  var totalBytes: Double
 }
 object DownloadProgressEvent {
   

@@ -2,14 +2,13 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait XLSXUtils extends StObject {
   
-  def aoa_to_sheet(data: js.Array[js.Array[_]]): WorkSheet = js.native
-  def aoa_to_sheet(data: js.Array[js.Array[_]], opts: AOA2SheetOpts): WorkSheet = js.native
+  def aoa_to_sheet(data: js.Array[js.Array[js.Any]]): WorkSheet = js.native
+  def aoa_to_sheet(data: js.Array[js.Array[js.Any]], opts: AOA2SheetOpts): WorkSheet = js.native
   /* --- Import Functions --- */
   /** Converts an array of arrays of JS data to a worksheet. */
   @JSName("aoa_to_sheet")
@@ -75,20 +74,20 @@ trait XLSXUtils extends StObject {
   
   /** Format cell */
   def format_cell(cell: CellObject): String = js.native
-  def format_cell(cell: CellObject, v: js.UndefOr[scala.Nothing], opts: js.Any): String = js.native
   def format_cell(cell: CellObject, v: js.Any): String = js.native
   def format_cell(cell: CellObject, v: js.Any, opts: js.Any): String = js.native
+  def format_cell(cell: CellObject, v: Unit, opts: js.Any): String = js.native
   
-  def json_to_sheet(data: js.Array[_]): WorkSheet = js.native
-  def json_to_sheet(data: js.Array[_], opts: JSON2SheetOpts): WorkSheet = js.native
+  def json_to_sheet(data: js.Array[js.Any]): WorkSheet = js.native
+  def json_to_sheet(data: js.Array[js.Any], opts: JSON2SheetOpts): WorkSheet = js.native
   /** Converts an array of JS objects to a worksheet. */
   @JSName("json_to_sheet")
   def json_to_sheet_T[T](data: js.Array[T]): WorkSheet = js.native
   @JSName("json_to_sheet")
   def json_to_sheet_T[T](data: js.Array[T], opts: JSON2SheetOpts): WorkSheet = js.native
   
-  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[_]]): WorkSheet = js.native
-  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[_]], opts: SheetAOAOpts): WorkSheet = js.native
+  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[js.Any]]): WorkSheet = js.native
+  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[js.Any]], opts: SheetAOAOpts): WorkSheet = js.native
   /** Add an array of arrays of JS data to a worksheet */
   @JSName("sheet_add_aoa")
   def sheet_add_aoa_T[T](ws: WorkSheet, data: js.Array[js.Array[T]]): WorkSheet = js.native
@@ -99,8 +98,8 @@ trait XLSXUtils extends StObject {
   def sheet_add_dom(ws: WorkSheet, data: js.Any, opts: Table2SheetOpts): WorkSheet = js.native
   
   /** Add an array of JS objects to a worksheet */
-  def sheet_add_json(ws: WorkSheet, data: js.Array[_]): WorkSheet = js.native
-  def sheet_add_json(ws: WorkSheet, data: js.Array[_], opts: SheetJSONOpts): WorkSheet = js.native
+  def sheet_add_json(ws: WorkSheet, data: js.Array[js.Any]): WorkSheet = js.native
+  def sheet_add_json(ws: WorkSheet, data: js.Array[js.Any], opts: SheetJSONOpts): WorkSheet = js.native
   @JSName("sheet_add_json")
   def sheet_add_json_T[T](ws: WorkSheet, data: js.Array[T]): WorkSheet = js.native
   @JSName("sheet_add_json")
@@ -129,8 +128,8 @@ trait XLSXUtils extends StObject {
   def sheet_to_html(worksheet: WorkSheet): String = js.native
   def sheet_to_html(worksheet: WorkSheet, options: Sheet2HTMLOpts): String = js.native
   
-  def sheet_to_json(worksheet: WorkSheet): js.Array[js.Array[_]] = js.native
-  def sheet_to_json(worksheet: WorkSheet, opts: Sheet2JSONOpts): js.Array[js.Array[_]] = js.native
+  def sheet_to_json(worksheet: WorkSheet): js.Array[js.Array[js.Any]] = js.native
+  def sheet_to_json(worksheet: WorkSheet, opts: Sheet2JSONOpts): js.Array[js.Array[js.Any]] = js.native
   /* --- Export Functions --- */
   /** Converts a worksheet object to an array of JSON objects */
   @JSName("sheet_to_json")

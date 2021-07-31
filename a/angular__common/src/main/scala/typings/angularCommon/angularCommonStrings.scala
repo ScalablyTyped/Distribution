@@ -3,7 +3,6 @@ package typings.angularCommon
 import typings.angularCommon.httpHttpMod.HttpObserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCommonStrings {
@@ -69,7 +68,9 @@ object angularCommonStrings {
   def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
-  sealed trait body extends HttpObserve
+  sealed trait body
+    extends StObject
+       with HttpObserve
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   
@@ -79,7 +80,9 @@ object angularCommonStrings {
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait events extends HttpObserve
+  sealed trait events
+    extends StObject
+       with HttpObserve
   @scala.inline
   def events: events = "events".asInstanceOf[events]
   
@@ -104,7 +107,9 @@ object angularCommonStrings {
   def narrow: narrow = "narrow".asInstanceOf[narrow]
   
   @js.native
-  sealed trait response extends HttpObserve
+  sealed trait response
+    extends StObject
+       with HttpObserve
   @scala.inline
   def response: response = "response".asInstanceOf[response]
   

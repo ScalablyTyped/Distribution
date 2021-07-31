@@ -2,51 +2,49 @@ package typings.phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaderboardScore extends StObject {
   
   /**
     * The developer-specified payload associated with the score, or null if one was not set.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * The game's unique identifier for the player.
     */
-  var playerID: String = js.native
+  var playerID: String
   
   /**
     * The player's localized display name.
     */
-  var playerName: String = js.native
+  var playerName: String
   
   /**
     * A url to the player's public profile photo.
     */
-  var playerPhotoURL: String = js.native
+  var playerPhotoURL: String
   
   /**
     * The entry's leaderboard ranking.
     */
-  var rank: integer = js.native
+  var rank: integer
   
   /**
     * An integer score value.
     */
-  var score: integer = js.native
+  var score: integer
   
   /**
     * The score value, formatted with the score format associated with the leaderboard.
     */
-  var scoreFormatted: String = js.native
+  var scoreFormatted: String
   
   /**
     * The Unix timestamp of when the leaderboard entry was last updated.
     */
-  var timestamp: integer = js.native
+  var timestamp: integer
 }
 object LeaderboardScore {
   

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonType extends StObject {
   
   // The type of data source, such as Person.
-  var `class`: js.UndefOr[NullableOption[String]] = js.native
+  var `class`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The secondary type of data source, such as OrganizationUser.
-  var subclass: js.UndefOr[NullableOption[String]] = js.native
+  var subclass: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PersonType {
   

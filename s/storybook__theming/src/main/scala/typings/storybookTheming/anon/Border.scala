@@ -2,19 +2,17 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
-  var background: String = js.native
+  var background: String
   
-  var border: String = js.native
+  var border: String
   
-  var borderRadius: Double = js.native
+  var borderRadius: Double
   
-  var color: String = js.native
+  var color: String
 }
 object Border {
   

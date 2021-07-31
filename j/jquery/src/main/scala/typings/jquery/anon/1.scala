@@ -3,13 +3,13 @@ package typings.jquery.anon
 import typings.jquery.JQuery._ValHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `1`[TElement] extends _ValHook[TElement] {
+trait `1`[TElement]
+  extends StObject
+     with _ValHook[TElement] {
   
-  def set(elem: TElement, value: js.Any): js.Any = js.native
+  def set(elem: TElement, value: js.Any): js.Any
 }
 object `1` {
   
@@ -20,7 +20,7 @@ object `1` {
   }
   
   @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`[_], TElement] (val x: Self with `1`[TElement]) extends AnyVal {
+  implicit class `1MutableBuilder`[Self <: `1`[?], TElement] (val x: Self & `1`[TElement]) extends AnyVal {
     
     @scala.inline
     def setSet(value: (TElement, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))

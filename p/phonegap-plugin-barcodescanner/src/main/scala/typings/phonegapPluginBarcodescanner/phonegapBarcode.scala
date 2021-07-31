@@ -4,35 +4,33 @@ import typings.phonegapPluginBarcodescanner.phonegapPluginBarcodescannerStrings.
 import typings.phonegapPluginBarcodescanner.phonegapPluginBarcodescannerStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phonegapBarcode {
   
-  @js.native
   trait BarcodeScanOptions extends StObject {
     
-    var disableAnimations: Boolean = js.native
+    var disableAnimations: Boolean
     
-    var disableSuccessBeep: js.UndefOr[Boolean] = js.native
+    var disableSuccessBeep: js.UndefOr[Boolean] = js.undefined
     
-    var formats: js.UndefOr[String] = js.native
+    var formats: js.UndefOr[String] = js.undefined
     
-    var orientation: js.UndefOr[landscape | portrait] = js.native
+    var orientation: js.UndefOr[landscape | portrait] = js.undefined
     
-    var preferFrontCamera: js.UndefOr[Boolean] = js.native
+    var preferFrontCamera: js.UndefOr[Boolean] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var resultDisplayDuration: js.UndefOr[Double] = js.native
+    var resultDisplayDuration: js.UndefOr[Double] = js.undefined
     
-    var saveHistory: js.UndefOr[Boolean] = js.native
+    var saveHistory: js.UndefOr[Boolean] = js.undefined
     
-    var showFlipCameraButton: js.UndefOr[Boolean] = js.native
+    var showFlipCameraButton: js.UndefOr[Boolean] = js.undefined
     
-    var showTorchButton: js.UndefOr[Boolean] = js.native
+    var showTorchButton: js.UndefOr[Boolean] = js.undefined
     
-    var torchOn: js.UndefOr[Boolean] = js.native
+    var torchOn: js.UndefOr[Boolean] = js.undefined
   }
   object BarcodeScanOptions {
     
@@ -110,14 +108,13 @@ object phonegapBarcode {
     }
   }
   
-  @js.native
   trait BarcodeScanResult extends StObject {
     
-    var cancelled: Boolean = js.native
+    var cancelled: Boolean
     
-    var format: String = js.native
+    var format: String
     
-    var text: String = js.native
+    var text: String
   }
   object BarcodeScanResult {
     
@@ -146,41 +143,40 @@ object phonegapBarcode {
     
     var Encode: EncodingType = js.native
     
-    def encode(encodingType: EncodingType, data: String, success: js.Function1[/* result */ js.Any, _]): Unit = js.native
+    def encode(encodingType: EncodingType, data: String, success: js.Function1[/* result */ js.Any, js.Any]): Unit = js.native
     def encode(
       encodingType: EncodingType,
       data: String,
-      success: js.Function1[/* result */ js.Any, _],
-      failure: js.Function1[/* err */ js.Any, _]
+      success: js.Function1[/* result */ js.Any, js.Any],
+      failure: js.Function1[/* err */ js.Any, js.Any]
     ): Unit = js.native
     
-    def scan(success: js.Function1[/* result */ BarcodeScanResult, _]): Unit = js.native
+    def scan(success: js.Function1[/* result */ BarcodeScanResult, js.Any]): Unit = js.native
     def scan(
-      success: js.Function1[/* result */ BarcodeScanResult, _],
-      failure: js.UndefOr[scala.Nothing],
+      success: js.Function1[/* result */ BarcodeScanResult, js.Any],
+      failure: js.Function1[/* err */ js.Any, js.Any]
+    ): Unit = js.native
+    def scan(
+      success: js.Function1[/* result */ BarcodeScanResult, js.Any],
+      failure: js.Function1[/* err */ js.Any, js.Any],
       opts: BarcodeScanOptions
     ): Unit = js.native
     def scan(
-      success: js.Function1[/* result */ BarcodeScanResult, _],
-      failure: js.Function1[/* err */ js.Any, _]
-    ): Unit = js.native
-    def scan(
-      success: js.Function1[/* result */ BarcodeScanResult, _],
-      failure: js.Function1[/* err */ js.Any, _],
+      success: js.Function1[/* result */ BarcodeScanResult, js.Any],
+      failure: Unit,
       opts: BarcodeScanOptions
     ): Unit = js.native
   }
   
-  @js.native
   trait EncodingType extends StObject {
     
-    var EMAIL_TYPE: js.Any = js.native
+    var EMAIL_TYPE: js.Any
     
-    var PHONE_TYPE: js.Any = js.native
+    var PHONE_TYPE: js.Any
     
-    var SMS_TYPE: js.Any = js.native
+    var SMS_TYPE: js.Any
     
-    var TEXT_TYPE: js.Any = js.native
+    var TEXT_TYPE: js.Any
   }
   object EncodingType {
     

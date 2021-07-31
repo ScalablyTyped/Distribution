@@ -1,8 +1,19 @@
 package typings.coinbaseCommerceNode.mod
 
+import typings.coinbaseCommerceNode.anon.Block
+import typings.coinbaseCommerceNode.anon.Context
+import typings.coinbaseCommerceNode.anon.PartialRecordCryptoNamest
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonconfirmed
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColoncreated
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColondelayed
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonfailed
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonpending
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonresolved
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.checkout
+import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resources {
@@ -24,52 +35,135 @@ object resources {
       * Charge constructor.
       */
     def this(data: CreateCharge) = this()
+    
+    /**
+      * Set of addresses associated with the charge.
+      */
+    /* CompleteClass */
+    var addresses: PartialRecordCryptoNamest = js.native
+    
+    /**
+      * User fiendly primary key.
+      */
+    /* CompleteClass */
+    var code: String = js.native
+    
+    /**
+      * Charge creation time.
+      */
+    /* CompleteClass */
+    var created_at: Timestamp = js.native
+    
+    /**
+      * More detailed description of the charge.
+      * 200 characters or less.
+      */
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /**
+      * Charge expiration time.
+      */
+    /* CompleteClass */
+    var expires_at: Timestamp = js.native
+    
+    /**
+      * Hosted charge URL.
+      */
+    /* CompleteClass */
+    var hosted_url: String = js.native
+    
+    /**
+      * Charge UUID
+      */
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /**
+      * Charge metadata provided by you, the developer.
+      */
+    /* CompleteClass */
+    @JSName("metadata")
+    var metadata_ChargeResource: KeyVal = js.native
+    
+    /**
+      * Charge name.
+      * 100 characters or less.
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * Array of charge payment objects.
+      */
+    /* CompleteClass */
+    var payments: js.Array[Block] = js.native
+    
+    /**
+      * Charge price information object.
+      */
+    /* CompleteClass */
+    var pricing: Pricing = js.native
+    
+    /**
+      * Charge pricing type.
+      */
+    /* CompleteClass */
+    var pricing_type: PricingType = js.native
+    
+    /**
+      * Resource name.
+      */
+    /* CompleteClass */
+    var resource: charge = js.native
+    
+    /**
+      * Array of status update objects.
+      */
+    /* CompleteClass */
+    var timeline: js.Array[Context] = js.native
   }
   object Charge {
+    
+    @JSImport("coinbase-commerce-node", "resources.Charge")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Fetch all charges.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Charge.all")
-    @js.native
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Charge]] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Charge.all")
-    @js.native
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Charge]]): js.Promise[js.Array[Charge]] = js.native
+    @scala.inline
+    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Charge]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Charge]]]
+    @scala.inline
+    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Charge]]): js.Promise[js.Array[Charge]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Charge]]]
     
     /**
       * Create a charge.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Charge.create")
-    @js.native
-    def create(chargeData: CreateCharge): js.Promise[Charge] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Charge.create")
-    @js.native
-    def create(chargeData: CreateCharge, callback: Callback[Charge]): js.Promise[Charge] = js.native
+    @scala.inline
+    def create(chargeData: CreateCharge): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
+    @scala.inline
+    def create(chargeData: CreateCharge, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
     
     /**
       * List charges.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Charge.list")
-    @js.native
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Charge.list")
-    @js.native
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Charge]): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = js.native
+    @scala.inline
+    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
+    @scala.inline
+    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Charge]): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
     
     /**
       * Retrieve a charge by ID.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Charge.retrieve")
-    @js.native
-    def retrieve(chargeId: String): js.Promise[Charge] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Charge.retrieve")
-    @js.native
-    def retrieve(chargeId: String, callback: Callback[Charge]): js.Promise[Charge] = js.native
+    @scala.inline
+    def retrieve(chargeId: String): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
+    @scala.inline
+    def retrieve(chargeId: String, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
   }
   
   /**
@@ -89,74 +183,98 @@ object resources {
       * Charge constructor.
       */
     def this(data: CreateCheckout) = this()
+    
+    /**
+      * More detailed description.
+      * 200 characters or less.
+      */
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /**
+      * Checkout UUID.
+      */
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /**
+      * Checkout name.
+      * 100 characters or less.
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * Checkout pricing type.
+      */
+    /* CompleteClass */
+    var pricing_type: PricingType = js.native
+    
+    /**
+      * Resource name.
+      */
+    /* CompleteClass */
+    var resource: checkout = js.native
   }
   object Checkout {
+    
+    @JSImport("coinbase-commerce-node", "resources.Checkout")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Fetch all checkouts.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Checkout.all")
-    @js.native
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Checkout]] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Checkout.all")
-    @js.native
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Checkout]]): js.Promise[js.Array[Checkout]] = js.native
+    @scala.inline
+    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Checkout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Checkout]]]
+    @scala.inline
+    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Checkout]]): js.Promise[js.Array[Checkout]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Checkout]]]
     
     /**
       * Create a checkout.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Checkout.create")
-    @js.native
-    def create(checkoutData: CreateCheckout): js.Promise[Checkout] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Checkout.create")
-    @js.native
-    def create(checkoutData: CreateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
+    @scala.inline
+    def create(checkoutData: CreateCheckout): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    @scala.inline
+    def create(checkoutData: CreateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
     
     /**
       * Delete a checkout by ID.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Checkout.deleteById")
-    @js.native
-    def deleteById(checkoutId: String): js.Promise[Checkout] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Checkout.deleteById")
-    @js.native
-    def deleteById(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
+    @scala.inline
+    def deleteById(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    @scala.inline
+    def deleteById(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
     
     /**
       * List checkouts.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Checkout.list")
-    @js.native
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Checkout.list")
-    @js.native
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Checkout]): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = js.native
+    @scala.inline
+    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
+    @scala.inline
+    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Checkout]): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
     
     /**
       * Retrieve a checkout by ID.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Checkout.retrieve")
-    @js.native
-    def retrieve(checkoutId: String): js.Promise[Checkout] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Checkout.retrieve")
-    @js.native
-    def retrieve(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
+    @scala.inline
+    def retrieve(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    @scala.inline
+    def retrieve(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
     
     /**
       * Update a checkout by ID.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Checkout.updateById")
-    @js.native
-    def updateById(checkoutId: String, update: UpdateCheckout): js.Promise[Checkout] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Checkout.updateById")
-    @js.native
-    def updateById(checkoutId: String, update: UpdateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
+    @scala.inline
+    def updateById(checkoutId: String, update: UpdateCheckout): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    @scala.inline
+    def updateById(checkoutId: String, update: UpdateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
   }
   
   /**
@@ -176,41 +294,76 @@ object resources {
       * Charge constructor.
       */
     def this(data: EventResource[ChargeResource | CheckoutResource]) = this()
+    
+    /**
+      * API version of the `data` payload.
+      */
+    /* CompleteClass */
+    var api_version: String = js.native
+    
+    /**
+      * Event creation time.
+      */
+    /* CompleteClass */
+    var created_at: Timestamp = js.native
+    
+    /**
+      * Event Payload.
+      * Resource of the associated object at the time of the event.
+      */
+    /* CompleteClass */
+    var data: ChargeResource | CheckoutResource = js.native
+    
+    /**
+      * Event UUID.
+      */
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /**
+      * Resource name.
+      */
+    /* CompleteClass */
+    var resource: event = js.native
+    
+    /**
+      * Event type.
+      */
+    /* CompleteClass */
+    var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved = js.native
   }
   object Event {
+    
+    @JSImport("coinbase-commerce-node", "resources.Event")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Fetch all events.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Event.all")
-    @js.native
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Event]] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Event.all")
-    @js.native
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Event]]): js.Promise[js.Array[Event]] = js.native
+    @scala.inline
+    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Event]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Event]]]
+    @scala.inline
+    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Event]]): js.Promise[js.Array[Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Event]]]
     
     /**
       * List events.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Event.list")
-    @js.native
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Event.list")
-    @js.native
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Event]): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = js.native
+    @scala.inline
+    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
+    @scala.inline
+    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Event]): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
     
     /**
       * Retrieve a event by ID.
       */
     /* static member */
-    @JSImport("coinbase-commerce-node", "resources.Event.retrieve")
-    @js.native
-    def retrieve(eventId: String): js.Promise[Event] = js.native
-    @JSImport("coinbase-commerce-node", "resources.Event.retrieve")
-    @js.native
-    def retrieve(eventId: String, callback: Callback[Event]): js.Promise[Event] = js.native
+    @scala.inline
+    def retrieve(eventId: String): js.Promise[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Event]]
+    @scala.inline
+    def retrieve(eventId: String, callback: Callback[Event]): js.Promise[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Event]]
   }
   
   /**

@@ -10,7 +10,6 @@ import typings.vegaLite.utilMod.Dict
 import typings.vegaTypings.transformMod.TimeUnitTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeunitMod {
@@ -38,36 +37,23 @@ object timeunitMod {
   /* static members */
   object TimeUnitNode {
     
-    @JSImport("vega-lite/build/src/compile/data/timeunit", "TimeUnitNode.makeFromEncoding")
+    @JSImport("vega-lite/build/src/compile/data/timeunit", "TimeUnitNode")
     @js.native
-    def makeFromEncoding(parent: DataFlowNode, model: ModelWithField): TimeUnitNode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("vega-lite/build/src/compile/data/timeunit", "TimeUnitNode.makeFromTransform")
-    @js.native
-    def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.TimeUnitTransform): TimeUnitNode = js.native
+    @scala.inline
+    def makeFromEncoding(parent: DataFlowNode, model: ModelWithField): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
+    
+    @scala.inline
+    def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.TimeUnitTransform): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
   }
   
-  /* Inlined vega-lite.vega-lite/build/src/transform.TimeUnitTransform & {  band :boolean | undefined} */
-  @js.native
-  trait TimeUnitComponent extends StObject {
-    
-    /**
-      * The output field to write the timeUnit value.
-      */
-    var as: FieldName = js.native
+  trait TimeUnitComponent
+    extends StObject
+       with typings.vegaLite.transformMod.TimeUnitTransform {
     
     /** whether to output time unit as a band (generate two formula including start and end) */
-    var band: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The data field to apply time unit.
-      */
-    var field: FieldName = js.native
-    
-    /**
-      * The timeUnit.
-      */
-    var timeUnit: TimeUnit | TimeUnitParams = js.native
+    var band: js.UndefOr[Boolean] = js.undefined
   }
   object TimeUnitComponent {
     
@@ -81,19 +67,10 @@ object timeunitMod {
     implicit class TimeUnitComponentMutableBuilder[Self <: TimeUnitComponent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setBand(value: Boolean): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
-      
-      @scala.inline
-      def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     }
   }
 }

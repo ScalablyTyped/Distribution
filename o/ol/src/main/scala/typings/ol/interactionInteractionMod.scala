@@ -7,10 +7,13 @@ import typings.ol.olStrings.changeColonactive
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactionInteractionMod {
+  
+  @JSImport("ol/interaction/Interaction", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/interaction/Interaction", JSImport.Default)
   @js.native
@@ -18,30 +21,19 @@ object interactionInteractionMod {
     def this(opt_options: InteractionOptions) = this()
   }
   
-  @JSImport("ol/interaction/Interaction", "pan")
-  @js.native
-  def pan(view: typings.ol.viewMod.default, delta: Coordinate): Unit = js.native
-  @JSImport("ol/interaction/Interaction", "pan")
-  @js.native
-  def pan(view: typings.ol.viewMod.default, delta: Coordinate, opt_duration: Double): Unit = js.native
+  @scala.inline
+  def pan(view: typings.ol.viewMod.default, delta: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def pan(view: typings.ol.viewMod.default, delta: Coordinate, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/interaction/Interaction", "zoomByDelta")
-  @js.native
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double): Unit = js.native
-  @JSImport("ol/interaction/Interaction", "zoomByDelta")
-  @js.native
-  def zoomByDelta(
-    view: typings.ol.viewMod.default,
-    delta: Double,
-    opt_anchor: js.UndefOr[scala.Nothing],
-    opt_duration: Double
-  ): Unit = js.native
-  @JSImport("ol/interaction/Interaction", "zoomByDelta")
-  @js.native
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate): Unit = js.native
-  @JSImport("ol/interaction/Interaction", "zoomByDelta")
-  @js.native
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate, opt_duration: Double): Unit = js.native
+  @scala.inline
+  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Unit, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Interaction
@@ -84,10 +76,9 @@ object interactionInteractionMod {
     def un_changeactive(`type`: changeColonactive, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   }
   
-  @js.native
   trait InteractionOptions extends StObject {
     
-    def handleEvent(p0: typings.ol.mapBrowserEventMod.default[UIEvent]): Boolean = js.native
+    def handleEvent(p0: typings.ol.mapBrowserEventMod.default[UIEvent]): Boolean
   }
   object InteractionOptions {
     

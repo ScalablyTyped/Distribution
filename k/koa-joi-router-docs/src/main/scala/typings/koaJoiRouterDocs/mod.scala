@@ -8,7 +8,6 @@ import typings.koaJoiRouterDocs.mod.koaJoiRouterDocs.SpecConfig
 import typings.koaJoiRouterDocs.mod.koaJoiRouterDocs.SpecOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,14 +27,13 @@ object mod {
     
     type RouterOptions = js.Object | String
     
-    @js.native
     trait SpecConfig extends StObject {
       
-      var basePath: String = js.native
+      var basePath: String
       
-      var info: Description = js.native
+      var info: Description
       
-      var tags: js.Array[Name] = js.native
+      var tags: js.Array[Name]
     }
     object SpecConfig {
       
@@ -62,12 +60,11 @@ object mod {
       }
     }
     
-    @js.native
     trait SpecOptions extends StObject {
       
-      var defaultResponses: js.UndefOr[js.Object] = js.native
+      var defaultResponses: js.UndefOr[js.Object] = js.undefined
       
-      var warnFunc: js.UndefOr[js.Function0[Unit]] = js.native
+      var warnFunc: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object SpecOptions {
       

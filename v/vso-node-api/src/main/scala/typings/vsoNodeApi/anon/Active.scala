@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: scala.Double = js.native
+  var active: scala.Double
   
-  var byDesign: scala.Double = js.native
+  var byDesign: scala.Double
   
-  var closed: scala.Double = js.native
+  var closed: scala.Double
   
-  var fixed: scala.Double = js.native
+  var fixed: scala.Double
   
-  var pending: scala.Double = js.native
+  var pending: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
   
-  var wontFix: scala.Double = js.native
+  var wontFix: scala.Double
 }
 object Active {
   

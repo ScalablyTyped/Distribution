@@ -2,13 +2,11 @@ package typings.cordovaPluginFileOpener2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
-  var fileOpener2: CordovaPluginsFileOpener2 = js.native
+  var fileOpener2: CordovaPluginsFileOpener2
 }
 object CordovaPlugins {
   

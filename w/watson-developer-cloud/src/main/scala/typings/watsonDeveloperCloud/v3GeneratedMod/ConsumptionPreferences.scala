@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ConsumptionPreferences. */
-@js.native
 trait ConsumptionPreferences extends StObject {
   
   /** The unique, non-localized identifier of the consumption preference to which the results pertain. IDs have the form `consumption_preferences_{preference}`. */
-  var consumption_preference_id: String = js.native
+  var consumption_preference_id: String
   
   /** The user-visible, localized name of the consumption preference. */
-  var name: String = js.native
+  var name: String
   
   /** The score for the consumption preference: * `0.0`: Unlikely * `0.5`: Neutral * `1.0`: Likely The scores for some preferences are binary and do not allow a neutral value. The score is an indication of preference based on the results inferred from the input text, not a normalized percentile. */
-  var score: Double = js.native
+  var score: Double
 }
 object ConsumptionPreferences {
   

@@ -10,9 +10,9 @@ A package for detecting all duplicated property keys of a JSON string.
 | ------------------ | :-------------: |
 | Full name          | find-duplicated-property-keys |
 | Keywords           | JSON, duplicate, property, key, validate, validation, validator |
-| # releases         | 19 |
+| # releases         | 17 |
 | # dependents       | 2 |
-| # downloads        | 164447 |
+| # downloads        | 179418 |
 | # stars            | 0 |
 
 ## Links

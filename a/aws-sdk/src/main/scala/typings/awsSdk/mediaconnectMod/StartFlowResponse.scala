@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartFlowResponse extends StObject {
   
   /**
     * The ARN of the flow that you started.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
   
   /**
     * The status of the flow when the StartFlow process begins.
     */
-  var Status: js.UndefOr[typings.awsSdk.mediaconnectMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.mediaconnectMod.Status] = js.undefined
 }
 object StartFlowResponse {
   

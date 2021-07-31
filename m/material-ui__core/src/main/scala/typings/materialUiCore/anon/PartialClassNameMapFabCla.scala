@@ -2,32 +2,30 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Fab/Fab.FabClassKey>> */
-@js.native
 trait PartialClassNameMapFabCla extends StObject {
   
-  var colorInherit: js.UndefOr[String] = js.native
+  var colorInherit: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var extended: js.UndefOr[String] = js.native
+  var extended: js.UndefOr[String] = js.undefined
   
-  var focusVisible: js.UndefOr[String] = js.native
+  var focusVisible: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var primary: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var secondary: js.UndefOr[String] = js.native
+  var secondary: js.UndefOr[String] = js.undefined
   
-  var sizeMedium: js.UndefOr[String] = js.native
+  var sizeMedium: js.UndefOr[String] = js.undefined
   
-  var sizeSmall: js.UndefOr[String] = js.native
+  var sizeSmall: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapFabCla {
   

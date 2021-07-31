@@ -9,23 +9,25 @@ import typings.intlMessageformatParser.srcTypesMod.NumberSkeletonToken
 import typings.std.Intl.DateTimeFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcSkeletonMod {
   
-  @JSImport("intl-messageformat-parser/src/skeleton", "parseDateTimeSkeleton")
+  @JSImport("intl-messageformat-parser/src/skeleton", JSImport.Namespace)
   @js.native
-  def parseDateTimeSkeleton(skeleton: String): ExtendedDateTimeFormatOptions = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("intl-messageformat-parser/src/skeleton", "parseNumberSkeleton")
-  @js.native
-  def parseNumberSkeleton(tokens: js.Array[NumberSkeletonToken]): NumberFormatOptions = js.native
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String): ExtendedDateTimeFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any]).asInstanceOf[ExtendedDateTimeFormatOptions]
   
-  @js.native
-  trait ExtendedDateTimeFormatOptions extends DateTimeFormatOptions {
+  @scala.inline
+  def parseNumberSkeleton(tokens: js.Array[NumberSkeletonToken]): NumberFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumberSkeleton")(tokens.asInstanceOf[js.Any]).asInstanceOf[NumberFormatOptions]
+  
+  trait ExtendedDateTimeFormatOptions
+    extends StObject
+       with DateTimeFormatOptions {
     
-    var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.native
+    var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.undefined
   }
   object ExtendedDateTimeFormatOptions {
     

@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data will persist when the DICOM store from which it was exported is
   * deleted.
   */
-@js.native
 trait SchemaExportDicomDataRequest extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait SchemaExportDicomDataRequest extends StObject {
     * the current project is supported  The BigQuery location requires two IAM
     * roles: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.
     */
-  var bigqueryDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination] = js.undefined
   
   /**
     * The Cloud Storage output destination.  The Cloud Storage location
     * requires the `roles/storage.objectAdmin` Cloud IAM role.
     */
-  var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination] = js.native
+  var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination] = js.undefined
 }
 object SchemaExportDicomDataRequest {
   

@@ -7,7 +7,6 @@ import typings.agGrid.iCellEditorMod.ICellEditorComp
 import typings.agGrid.iCellEditorMod.ICellEditorParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupEditorWrapperMod {
@@ -33,6 +32,10 @@ object popupEditorWrapperMod {
     def focusOut_MPopupEditorWrapper(): Unit = js.native
     
     var getGuiCalledOnChild: js.Any = js.native
+    
+    /** Return the final value - called by the grid once after editing is complete */
+    /* CompleteClass */
+    override def getValue(): js.Any = js.native
     
     var gridOptionsWrapper: GridOptionsWrapper = js.native
     

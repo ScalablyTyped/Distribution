@@ -2,56 +2,54 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssetModelResponse extends StObject {
   
   /**
     * The ARN of the asset model, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:asset-model/${AssetModelId} 
     */
-  var assetModelArn: ARN = js.native
+  var assetModelArn: ARN
   
   /**
     * The date the asset model was created, in Unix epoch time.
     */
-  var assetModelCreationDate: Timestamp = js.native
+  var assetModelCreationDate: Timestamp
   
   /**
     * The asset model's description.
     */
-  var assetModelDescription: Description = js.native
+  var assetModelDescription: Description
   
   /**
     * A list of asset model hierarchies that each contain a childAssetModelId and a hierarchyId (named id). A hierarchy specifies allowed parent/child asset relationships for an asset model.
     */
-  var assetModelHierarchies: AssetModelHierarchies = js.native
+  var assetModelHierarchies: AssetModelHierarchies
   
   /**
     * The ID of the asset model.
     */
-  var assetModelId: ID = js.native
+  var assetModelId: ID
   
   /**
     * The date the asset model was last updated, in Unix epoch time.
     */
-  var assetModelLastUpdateDate: Timestamp = js.native
+  var assetModelLastUpdateDate: Timestamp
   
   /**
     * The name of the asset model.
     */
-  var assetModelName: Name = js.native
+  var assetModelName: Name
   
   /**
     * The list of asset properties for the asset model.
     */
-  var assetModelProperties: AssetModelProperties = js.native
+  var assetModelProperties: AssetModelProperties
   
   /**
     * The current status of the asset model, which contains a state and any error message.
     */
-  var assetModelStatus: AssetModelStatus = js.native
+  var assetModelStatus: AssetModelStatus
 }
 object DescribeAssetModelResponse {
   

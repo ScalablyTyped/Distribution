@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.richMod._RichResponseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsLinkOutSuggestion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkoutMod {
@@ -12,8 +11,9 @@ object linkoutMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/linkout", "LinkOutSuggestion")
   @js.native
   class LinkOutSuggestion protected ()
-    extends _RichResponseItem
-       with GoogleActionsV2UiElementsLinkOutSuggestion {
+    extends StObject
+       with GoogleActionsV2UiElementsLinkOutSuggestion
+       with _RichResponseItem {
     /**
       * @param options LinkOutSuggestion options
       * @public
@@ -21,20 +21,19 @@ object linkoutMod {
     def this(options: LinkOutSuggestionOptions) = this()
   }
   
-  @js.native
   trait LinkOutSuggestionOptions extends StObject {
     
     /**
       * Text shown on the suggestion chip.
       * @public
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * String URL to open.
       * @public
       */
-    var url: String = js.native
+    var url: String
   }
   object LinkOutSuggestionOptions {
     

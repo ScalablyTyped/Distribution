@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeployablePatchSnapshotForInstanceResult extends StObject {
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * Returns the specific operating system (for example Windows Server 2012 or Amazon Linux 2015.09) on the instance for the specified patch snapshot.
     */
-  var Product: js.UndefOr[typings.awsSdk.ssmMod.Product] = js.native
+  var Product: js.UndefOr[typings.awsSdk.ssmMod.Product] = js.undefined
   
   /**
     * A pre-signed Amazon S3 URL that can be used to download the patch snapshot.
     */
-  var SnapshotDownloadUrl: js.UndefOr[typings.awsSdk.ssmMod.SnapshotDownloadUrl] = js.native
+  var SnapshotDownloadUrl: js.UndefOr[typings.awsSdk.ssmMod.SnapshotDownloadUrl] = js.undefined
   
   /**
     * The user-defined snapshot ID.
     */
-  var SnapshotId: js.UndefOr[typings.awsSdk.ssmMod.SnapshotId] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ssmMod.SnapshotId] = js.undefined
 }
 object GetDeployablePatchSnapshotForInstanceResult {
   

@@ -11,8 +11,8 @@ Move an array item to a different position
 | Full name          | array-move |
 | Keywords           | array, move, change, position, index |
 | # releases         | 8 |
-| # dependents       | 113 |
-| # downloads        | 3412221 |
+| # dependents       | 149 |
+| # downloads        | 4835863 |
 | # stars            | 3 |
 
 ## Links

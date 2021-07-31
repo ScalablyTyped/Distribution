@@ -6,7 +6,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -99,22 +98,21 @@ object mod {
     def _renderChildren(props: TableWrapperProps): ReactChildren = js.native
   }
   
-  @js.native
   trait CellProps extends StObject {
     
-    var borderStyle: js.UndefOr[ViewStyle] = js.native
+    var borderStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var flex: js.UndefOr[Double] = js.native
+    var flex: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CellProps {
     
@@ -171,18 +169,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ColProps extends StObject {
     
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var heightArr: js.UndefOr[js.Array[Double]] = js.native
+    var heightArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ColProps {
     
@@ -196,7 +193,7 @@ object mod {
     implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -233,20 +230,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ColsProps extends StObject {
     
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var flexArr: js.UndefOr[js.Array[Double]] = js.native
+    var flexArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var heightArr: js.UndefOr[js.Array[Double]] = js.native
+    var heightArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var widthArr: js.UndefOr[js.Array[Double]] = js.native
+    var widthArr: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object ColsProps {
     
@@ -260,7 +256,7 @@ object mod {
     implicit class ColsPropsMutableBuilder[Self <: ColsProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -309,20 +305,19 @@ object mod {
     }
   }
   
-  @js.native
   trait RowProps extends StObject {
     
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var flexArr: js.UndefOr[js.Array[Double]] = js.native
+    var flexArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var widthArr: js.UndefOr[js.Array[Double]] = js.native
+    var widthArr: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object RowProps {
     
@@ -336,7 +331,7 @@ object mod {
     implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -382,20 +377,19 @@ object mod {
     }
   }
   
-  @js.native
   trait RowsProps extends StObject {
     
-    var data: js.UndefOr[js.Array[js.Array[_]]] = js.native
+    var data: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
     
-    var flexArr: js.UndefOr[js.Array[Double]] = js.native
+    var flexArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var heightArr: js.UndefOr[js.Array[Double]] = js.native
+    var heightArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var widthArr: js.UndefOr[js.Array[Double]] = js.native
+    var widthArr: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object RowsProps {
     
@@ -409,7 +403,7 @@ object mod {
     implicit class RowsPropsMutableBuilder[Self <: RowsProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -458,12 +452,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TableProps extends StObject {
     
-    var borderStyle: js.UndefOr[ViewStyle] = js.native
+    var borderStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
   }
   object TableProps {
     
@@ -490,12 +483,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TableWrapperProps extends StObject {
     
-    var borderStyle: js.UndefOr[ViewStyle] = js.native
+    var borderStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
   }
   object TableWrapperProps {
     

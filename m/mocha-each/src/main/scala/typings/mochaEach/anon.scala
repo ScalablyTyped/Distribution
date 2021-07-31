@@ -7,22 +7,38 @@ import typings.mochaEach.mod.ForEachDescribeDefinition
 import typings.mochaEach.mod.ForEachTestFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Describe extends StObject {
     
-    def describe(expectation: String): Suite_ = js.native
-    def describe(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Suite_ = js.native
+    def describe(expectation: String): Suite_
+    def describe(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, js.Any]): Suite_
     @JSName("describe")
-    var describe_Original: ForEachDescribeDefinition = js.native
+    var describe_Original: ForEachDescribeDefinition
     
-    def it(expectation: String): Test_ = js.native
-    def it(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Test_ = js.native
+    def it(expectation: String): Test_
+    def it(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, js.Any]): Test_
     @JSName("it")
-    var it_Original: ForEachTestFunction = js.native
+    var it_Original: ForEachTestFunction
+  }
+  object Describe {
+    
+    @scala.inline
+    def apply(describe: ForEachDescribeDefinition, it: ForEachTestFunction): Describe = {
+      val __obj = js.Dynamic.literal(describe = describe.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Describe]
+    }
+    
+    @scala.inline
+    implicit class DescribeMutableBuilder[Self <: Describe] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDescribe(value: ForEachDescribeDefinition): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIt(value: ForEachTestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+    }
   }
 }

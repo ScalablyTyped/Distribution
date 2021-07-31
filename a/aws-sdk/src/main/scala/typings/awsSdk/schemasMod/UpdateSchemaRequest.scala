@@ -2,41 +2,39 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSchemaRequest extends StObject {
   
   /**
     * The ID of the client token.
     */
-  var ClientTokenId: js.UndefOr[stringMin0Max36] = js.native
+  var ClientTokenId: js.UndefOr[stringMin0Max36] = js.undefined
   
   /**
     * The source of the schema definition.
     */
-  var Content: js.UndefOr[stringMin1Max100000] = js.native
+  var Content: js.UndefOr[stringMin1Max100000] = js.undefined
   
   /**
     * The description of the schema.
     */
-  var Description: js.UndefOr[stringMin0Max256] = js.native
+  var Description: js.UndefOr[stringMin0Max256] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: string = js.native
+  var RegistryName: string
   
   /**
     * The name of the schema.
     */
-  var SchemaName: string = js.native
+  var SchemaName: string
   
   /**
     * The schema type for the events schema.
     */
-  var Type: js.UndefOr[typings.awsSdk.schemasMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.schemasMod.Type] = js.undefined
 }
 object UpdateSchemaRequest {
   

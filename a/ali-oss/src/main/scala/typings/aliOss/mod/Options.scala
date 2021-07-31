@@ -2,40 +2,38 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var accessKeyId: String = js.native
+  var accessKeyId: String
   
   // access secret you create
-  var accessKeySecret: String = js.native
+  var accessKeySecret: String
   
   // used by temporary authorization
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   // instance level timeout for all operations, default is 60s
-  var cname: js.UndefOr[Boolean] = js.native
+  var cname: js.UndefOr[Boolean] = js.undefined
   
   //  the default bucket you want to access If you don't have any bucket, please use putBucket() create one first.
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   // the bucket data region location, please see Data Regions, default is oss-cn-hangzhou.
-  var internal: js.UndefOr[Boolean] = js.native
+  var internal: js.UndefOr[Boolean] = js.undefined
   
   // oss region domain. It takes priority over region.
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   //  access OSS with aliyun internal network or not, default is false. If your servers are running on aliyun too, you can set true to save lot of money.
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   // access secret you create
-  var stsToken: js.UndefOr[String] = js.native
+  var stsToken: js.UndefOr[String] = js.undefined
   
   // instruct OSS client to use HTTPS (secure: true) or HTTP (secure: false) protocol.
-  var timeout: js.UndefOr[String | Double] = js.native
+  var timeout: js.UndefOr[String | Double] = js.undefined
 }
 object Options {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
   /**
     * The ARN of the model.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * Timestamp of when the model was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The model description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The name of the event type.
     */
-  var eventTypeName: js.UndefOr[String] = js.native
+  var eventTypeName: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp of last time the model was updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[modelIdentifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.undefined
   
   /**
     * The model type.
     */
-  var modelType: js.UndefOr[ModelTypeEnum] = js.native
+  var modelType: js.UndefOr[ModelTypeEnum] = js.undefined
 }
 object Model {
   

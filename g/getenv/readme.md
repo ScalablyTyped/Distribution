@@ -11,8 +11,8 @@ Get and typecast environment variables.
 | Full name          | getenv |
 | Keywords           | env, environment, config, configuration, 12factor |
 | # releases         | 2 |
-| # dependents       | 58 |
-| # downloads        | 2729965 |
+| # dependents       | 65 |
+| # downloads        | 3768929 |
 | # stars            | 3 |
 
 ## Links

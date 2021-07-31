@@ -6,21 +6,19 @@ import typings.devextreme.devextremeStrings.longDash
 import typings.devextreme.devextremeStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderColor extends StObject {
   
-  var border: js.UndefOr[ColorDashStyle] = js.native
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
   
-  var hatching: js.UndefOr[Step] = js.native
+  var hatching: js.UndefOr[Step] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BorderColor {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsOutput extends StObject {
   
   /**
     * The ID of the tagged ML object.
     */
-  var ResourceId: js.UndefOr[EntityId] = js.native
+  var ResourceId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The type of the tagged ML object.
     */
-  var ResourceType: js.UndefOr[TaggableResourceType] = js.native
+  var ResourceType: js.UndefOr[TaggableResourceType] = js.undefined
   
   /**
     * A list of tags associated with the ML object.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object DescribeTagsOutput {
   

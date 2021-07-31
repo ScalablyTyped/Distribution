@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingOptions extends StObject {
   
   /**
     * Information that identifies those detector models and their detectors (instances) for which the logging level is given.
     */
-  var detectorDebugOptions: js.UndefOr[DetectorDebugOptions] = js.native
+  var detectorDebugOptions: js.UndefOr[DetectorDebugOptions] = js.undefined
   
   /**
     * If TRUE, logging is enabled for AWS IoT Events.
     */
-  var enabled: LoggingEnabled = js.native
+  var enabled: LoggingEnabled
   
   /**
     * The logging level.
     */
-  var level: LoggingLevel = js.native
+  var level: LoggingLevel
   
   /**
     * The ARN of the role that grants permission to AWS IoT Events to perform logging.
     */
-  var roleArn: AmazonResourceName = js.native
+  var roleArn: AmazonResourceName
 }
 object LoggingOptions {
   

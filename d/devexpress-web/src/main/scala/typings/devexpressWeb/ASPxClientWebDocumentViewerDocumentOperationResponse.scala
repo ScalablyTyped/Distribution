@@ -2,19 +2,17 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientWebDocumentViewerDocumentOperationResponse extends StObject {
   
-  var customData: String = js.native
+  var customData: String
   
-  var documentId: String = js.native
+  var documentId: String
   
-  var message: String = js.native
+  var message: String
   
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
 }
 object ASPxClientWebDocumentViewerDocumentOperationResponse {
   

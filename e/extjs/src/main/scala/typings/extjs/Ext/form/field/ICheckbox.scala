@@ -3,103 +3,103 @@ package typings.extjs.Ext.form.field
 import typings.extjs.Ext.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICheckbox extends IBase {
+trait ICheckbox
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBoxLabelTextTpl: js.UndefOr[js.Any] = js.native
+  var afterBoxLabelTextTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBoxLabelTpl: js.UndefOr[js.Any] = js.native
+  var afterBoxLabelTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBoxLabelTextTpl: js.UndefOr[js.Any] = js.native
+  var beforeBoxLabelTextTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBoxLabelTpl: js.UndefOr[js.Any] = js.native
+  var beforeBoxLabelTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var boxLabel: js.UndefOr[String] = js.native
+  var boxLabel: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var boxLabelAlign: js.UndefOr[String] = js.native
+  var boxLabelAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var boxLabelAttrTpl: js.UndefOr[js.Any] = js.native
+  var boxLabelAttrTpl: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var boxLabelCls: js.UndefOr[String] = js.native
+  var boxLabelCls: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var boxLabelEl: js.UndefOr[IElement] = js.native
+  var boxLabelEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var checkedCls: js.UndefOr[String] = js.native
+  var checkedCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the checked state of the checkbox
     * @returns Boolean True if checked, else false
     */
   @JSName("getRawValue")
-  var getRawValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getRawValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the checked state of the checkbox
     * @returns Boolean True if checked, else false
     */
   @JSName("getValue")
-  var getValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.native
+  var handler: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Initializes the field s value based on the initial config  */
   @JSName("initValue")
-  var initValue_ICheckbox: js.UndefOr[js.Function0[Unit]] = js.native
+  var initValue_ICheckbox: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
   /** [Method] Resets the field s originalValue property so it matches the current value
     * @param fromBoxInGroup Object
     */
   @JSName("resetOriginalValue")
-  var resetOriginalValue_ICheckbox: js.UndefOr[js.Function1[/* fromBoxInGroup */ js.UndefOr[js.Any], Unit]] = js.native
+  var resetOriginalValue_ICheckbox: js.UndefOr[js.Function1[/* fromBoxInGroup */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Sets the boxLabel for this checkbox
     * @param boxLabel String The new label
     */
-  var setBoxLabel: js.UndefOr[js.Function1[/* boxLabel */ js.UndefOr[String], Unit]] = js.native
+  var setBoxLabel: js.UndefOr[js.Function1[/* boxLabel */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the checked state of the checkbox
     * @param value Boolean/String/Number The following values will check the checkbox: true, 'true', '1', 1, or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
     * @returns Boolean the new checked state of the checkbox
     */
   @JSName("setRawValue")
-  var setRawValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.native
+  var setRawValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.undefined
   
   /** [Method] Sets the read only state of this field
     * @param readOnly Object
     */
   @JSName("setReadOnly")
-  var setReadOnly_ICheckbox: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[js.Any], Unit]] = js.native
+  var setReadOnly_ICheckbox: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the checked state of the checkbox and invokes change detection
     * @param checked Boolean/String The following values will check the checkbox: true, 'true', '1', or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
     * @returns Ext.form.field.Checkbox this
     */
   @JSName("setValue")
-  var setValue_ICheckbox: js.UndefOr[js.Function1[/* checked */ js.UndefOr[js.Any], this.type]] = js.native
+  var setValue_ICheckbox: js.UndefOr[js.Function1[/* checked */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var uncheckedValue: js.UndefOr[String] = js.native
+  var uncheckedValue: js.UndefOr[String] = js.undefined
 }
 object ICheckbox {
   

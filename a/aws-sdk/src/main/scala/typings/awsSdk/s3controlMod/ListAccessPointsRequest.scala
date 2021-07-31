@@ -2,31 +2,29 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAccessPointsRequest extends StObject {
   
   /**
     * The AWS account ID for owner of the bucket whose access points you want to list.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The name of the bucket whose associated access points you want to list. For using this parameter with Amazon S3 on Outposts with the REST API, you must specify the name and the x-amz-outpost-id as well. For using this parameter with S3 on Outposts with the AWS SDK and CLI, you must specify the ARN of the bucket accessed in the format arn:aws:s3-outposts:&lt;Region&gt;:&lt;account-id&gt;:outpost/&lt;outpost-id&gt;/bucket/&lt;my-bucket-name&gt;. For example, to access the bucket reports through outpost my-outpost owned by account 123456789012 in Region us-west-2, use the URL encoding of arn:aws:s3-outposts:us-west-2:123456789012:outpost/my-outpost/bucket/reports. The value must be URL encoded. 
     */
-  var Bucket: js.UndefOr[BucketName] = js.native
+  var Bucket: js.UndefOr[BucketName] = js.undefined
   
   /**
     * The maximum number of access points that you want to include in the list. If the specified bucket has more than this number of access points, then the response will include a continuation token in the NextToken field that you can use to retrieve the next page of access points.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.s3controlMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.s3controlMod.MaxResults] = js.undefined
   
   /**
     * A continuation token. If a previous call to ListAccessPoints returned a continuation token in the NextToken field, then providing that value here causes Amazon S3 to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
 }
 object ListAccessPointsRequest {
   

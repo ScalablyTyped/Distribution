@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayApiConfig extends StObject {
   
   /** Output only. Created time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. Display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Immutable. Gateway specific configuration. If not specified, backend authentication will be set to use OIDC authentication using the default compute service account. */
-  var gatewayConfig: js.UndefOr[ApigatewayGatewayConfig] = js.native
+  var gatewayConfig: js.UndefOr[ApigatewayGatewayConfig] = js.undefined
   
   /** Optional. gRPC service definition files. If specified, openapi_documents must not be included. */
-  var grpcServices: js.UndefOr[js.Array[ApigatewayApiConfigGrpcServiceDefinition]] = js.native
+  var grpcServices: js.UndefOr[js.Array[ApigatewayApiConfigGrpcServiceDefinition]] = js.undefined
   
   /** Optional. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. Service Configuration files. At least one must be included when using gRPC service definitions. See https: //cloud.google.com/endpoints/docs/grpc/g //
@@ -34,22 +32,22 @@ trait ApigatewayApiConfig extends StObject {
     * scalar fields are merged using "last one wins" semantics in the order of the files uploaded. * Repeated fields are concatenated. * Singular embedded messages are merged using these
     * rules for nested fields.
     */
-  var managedServiceConfigs: js.UndefOr[js.Array[ApigatewayApiConfigFile]] = js.native
+  var managedServiceConfigs: js.UndefOr[js.Array[ApigatewayApiConfigFile]] = js.undefined
   
   /** Output only. Resource name of the API Config. Format: projects/{project}/locations/global/apis/{api}/configs/{api_config} */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Optional. OpenAPI specification documents. If specified, grpc_services and managed_service_config must not be included. */
-  var openapiDocuments: js.UndefOr[js.Array[ApigatewayApiConfigOpenApiDocument]] = js.native
+  var openapiDocuments: js.UndefOr[js.Array[ApigatewayApiConfigOpenApiDocument]] = js.undefined
   
   /** Output only. The ID of the associated Service Config ( https://cloud.google.com/service-infrastructure/docs/glossary#config). */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
   
   /** Output only. State of the API Config. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Updated time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object ApigatewayApiConfig {
   
@@ -93,7 +91,7 @@ object ApigatewayApiConfig {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

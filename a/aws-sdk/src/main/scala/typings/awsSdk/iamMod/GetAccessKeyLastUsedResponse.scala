@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessKeyLastUsedResponse extends StObject {
   
   /**
     * Contains information about the last time the access key was used.
     */
-  var AccessKeyLastUsed: js.UndefOr[typings.awsSdk.iamMod.AccessKeyLastUsed] = js.native
+  var AccessKeyLastUsed: js.UndefOr[typings.awsSdk.iamMod.AccessKeyLastUsed] = js.undefined
   
   /**
     * The name of the AWS IAM user that owns this access key. 
     */
-  var UserName: js.UndefOr[existingUserNameType] = js.native
+  var UserName: js.UndefOr[existingUserNameType] = js.undefined
 }
 object GetAccessKeyLastUsedResponse {
   

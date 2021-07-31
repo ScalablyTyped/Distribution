@@ -5,29 +5,28 @@ import typings.estree.estreeStrings.init
 import typings.estree.estreeStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Property
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var key: Expression = js.native
+  var key: Expression
   
   // Could be an AssignmentProperty
-  var kind: init | get | set = js.native
+  var kind: init | get | set
   
-  var method: Boolean = js.native
+  var method: Boolean
   
-  var shorthand: Boolean = js.native
+  var shorthand: Boolean
   
   @JSName("type")
-  var type_Property: typings.estree.estreeStrings.Property = js.native
+  var type_Property: typings.estree.estreeStrings.Property
   
-  var value: Expression | Pattern = js.native
+  var value: Expression | Pattern
 }
 object Property {
   
@@ -38,11 +37,10 @@ object Property {
     kind: init | get | set,
     method: Boolean,
     shorthand: Boolean,
-    `type`: typings.estree.estreeStrings.Property,
     value: Expression | Pattern
   ): Property = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Property")
     __obj.asInstanceOf[Property]
   }
   

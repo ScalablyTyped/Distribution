@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that additional arguments may be supplied by the system to the container at
   * runtime.
   */
-@js.native
 trait SchemaContainer extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
     * +optional
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Entrypoint array. Not executed within a shell. The docker image&#39;s
@@ -38,13 +36,13 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
     * +optional
     */
-  var command: js.UndefOr[js.Array[String]] = js.native
+  var command: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of environment variables to set in the container. Cannot be updated.
     * +optional
     */
-  var env: js.UndefOr[js.Array[SchemaEnvVar]] = js.native
+  var env: js.UndefOr[js.Array[SchemaEnvVar]] = js.undefined
   
   /**
     * List of sources to populate environment variables in the container. The
@@ -54,13 +52,13 @@ trait SchemaContainer extends StObject {
     * will take precedence. Values defined by an Env with a duplicate key will
     * take precedence. Cannot be updated. +optional
     */
-  var envFrom: js.UndefOr[js.Array[SchemaEnvFromSource]] = js.native
+  var envFrom: js.UndefOr[js.Array[SchemaEnvFromSource]] = js.undefined
   
   /**
     * Docker image name. More info:
     * https://kubernetes.io/docs/concepts/containers/images
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always
@@ -69,13 +67,13 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/concepts/containers/images#updating-images
     * +optional
     */
-  var imagePullPolicy: js.UndefOr[String] = js.native
+  var imagePullPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * Actions that the management system should take in response to container
     * lifecycle events. Cannot be updated. +optional
     */
-  var lifecycle: js.UndefOr[SchemaLifecycle] = js.native
+  var lifecycle: js.UndefOr[SchemaLifecycle] = js.undefined
   
   /**
     * Periodic probe of container liveness. Container will be restarted if the
@@ -83,13 +81,13 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     * +optional
     */
-  var livenessProbe: js.UndefOr[SchemaProbe] = js.native
+  var livenessProbe: js.UndefOr[SchemaProbe] = js.undefined
   
   /**
     * Name of the container specified as a DNS_LABEL. Each container must have
     * a unique name (DNS_LABEL). Cannot be updated.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * List of ports to expose from the container. Exposing a port here gives
@@ -99,7 +97,7 @@ trait SchemaContainer extends StObject {
     * listening on the default &quot;0.0.0.0&quot; address inside a container
     * will be accessible from the network. Cannot be updated. +optional
     */
-  var ports: js.UndefOr[js.Array[SchemaContainerPort]] = js.native
+  var ports: js.UndefOr[js.Array[SchemaContainerPort]] = js.undefined
   
   /**
     * Periodic probe of container service readiness. Container will be removed
@@ -107,7 +105,7 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     * +optional
     */
-  var readinessProbe: js.UndefOr[SchemaProbe] = js.native
+  var readinessProbe: js.UndefOr[SchemaProbe] = js.undefined
   
   /**
     * Compute Resources required by this container. Cannot be updated. More
@@ -115,7 +113,7 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
     * +optional
     */
-  var resources: js.UndefOr[SchemaResourceRequirements] = js.native
+  var resources: js.UndefOr[SchemaResourceRequirements] = js.undefined
   
   /**
     * Security options the pod should run with. More info:
@@ -123,14 +121,14 @@ trait SchemaContainer extends StObject {
     * https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
     * +optional
     */
-  var securityContext: js.UndefOr[SchemaSecurityContext] = js.native
+  var securityContext: js.UndefOr[SchemaSecurityContext] = js.undefined
   
   /**
     * Whether this container should allocate a buffer for stdin in the
     * container runtime. If this is not set, reads from stdin in the container
     * will always result in EOF. Default is false. +optional
     */
-  var stdin: js.UndefOr[Boolean] = js.native
+  var stdin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the container runtime should close the stdin channel after it has
@@ -143,7 +141,7 @@ trait SchemaContainer extends StObject {
     * processes that reads from stdin will never receive an EOF. Default is
     * false +optional
     */
-  var stdinOnce: js.UndefOr[Boolean] = js.native
+  var stdinOnce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional: Path at which the file to which the container&#39;s termination
@@ -154,7 +152,7 @@ trait SchemaContainer extends StObject {
     * limited to 12kb. Defaults to /dev/termination-log. Cannot be updated.
     * +optional
     */
-  var terminationMessagePath: js.UndefOr[String] = js.native
+  var terminationMessagePath: js.UndefOr[String] = js.undefined
   
   /**
     * Indicate how the termination message should be populated. File will use
@@ -165,32 +163,32 @@ trait SchemaContainer extends StObject {
     * to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot
     * be updated. +optional
     */
-  var terminationMessagePolicy: js.UndefOr[String] = js.native
+  var terminationMessagePolicy: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this container should allocate a TTY for itself, also requires
     * &#39;stdin&#39; to be true. Default is false. +optional
     */
-  var tty: js.UndefOr[Boolean] = js.native
+  var tty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * volumeDevices is the list of block devices to be used by the container.
     * This is an alpha feature and may change in the future. +optional
     */
-  var volumeDevices: js.UndefOr[js.Array[SchemaVolumeDevice]] = js.native
+  var volumeDevices: js.UndefOr[js.Array[SchemaVolumeDevice]] = js.undefined
   
   /**
     * Pod volumes to mount into the container&#39;s filesystem. Cannot be
     * updated. +optional
     */
-  var volumeMounts: js.UndefOr[js.Array[SchemaVolumeMount]] = js.native
+  var volumeMounts: js.UndefOr[js.Array[SchemaVolumeMount]] = js.undefined
   
   /**
     * Container&#39;s working directory. If not specified, the container
     * runtime&#39;s default will be used, which might be configured in the
     * container image. Cannot be updated. +optional
     */
-  var workingDir: js.UndefOr[String] = js.native
+  var workingDir: js.UndefOr[String] = js.undefined
 }
 object SchemaContainer {
   

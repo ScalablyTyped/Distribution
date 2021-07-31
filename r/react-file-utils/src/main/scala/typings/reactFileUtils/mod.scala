@@ -17,10 +17,13 @@ import typings.std.DataTransferItem
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-file-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-file-utils", "AttachmentIcon")
   @js.native
@@ -166,26 +169,23 @@ object mod {
     def this(props: Multiple, context: js.Any) = this()
   }
   
-  @JSImport("react-file-utils", "dataTransferItemsHaveFiles")
-  @js.native
-  def dataTransferItemsHaveFiles(): Boolean = js.native
-  @JSImport("react-file-utils", "dataTransferItemsHaveFiles")
-  @js.native
-  def dataTransferItemsHaveFiles(items: js.Array[DataTransferItem]): Boolean = js.native
+  @scala.inline
+  def dataTransferItemsHaveFiles(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")().asInstanceOf[Boolean]
+  @scala.inline
+  def dataTransferItemsHaveFiles(items: js.Array[DataTransferItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-file-utils", "dataTransferItemsToFiles")
-  @js.native
-  def dataTransferItemsToFiles(): js.Promise[js.Array[FileLike]] = js.native
-  @JSImport("react-file-utils", "dataTransferItemsToFiles")
-  @js.native
-  def dataTransferItemsToFiles(items: js.Array[DataTransferItem]): js.Promise[js.Array[FileLike]] = js.native
+  @scala.inline
+  def dataTransferItemsToFiles(): js.Promise[js.Array[FileLike]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsToFiles")().asInstanceOf[js.Promise[js.Array[FileLike]]]
+  @scala.inline
+  def dataTransferItemsToFiles(items: js.Array[DataTransferItem]): js.Promise[js.Array[FileLike]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsToFiles")(items.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileLike]]]
   
   type FileLike = Blob | File
   
-  @js.native
-  trait FileUpload extends UploadInfo {
+  trait FileUpload
+    extends StObject
+       with UploadInfo {
     
-    var file: File = js.native
+    var file: File
   }
   object FileUpload {
     
@@ -203,12 +203,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait ImageUpload extends UploadInfo {
+  trait ImageUpload
+    extends StObject
+       with UploadInfo {
     
-    var file: Blob | File = js.native
+    var file: Blob | File
     
-    var previewUri: js.UndefOr[String] = js.native
+    var previewUri: js.UndefOr[String] = js.undefined
   }
   object ImageUpload {
     
@@ -232,14 +233,13 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadInfo extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var state: UploadState = js.native
+    var state: UploadState
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object UploadInfo {
     

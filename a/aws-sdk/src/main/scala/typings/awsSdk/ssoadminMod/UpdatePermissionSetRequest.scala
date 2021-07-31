@@ -2,36 +2,34 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePermissionSetRequest extends StObject {
   
   /**
     * The description of the PermissionSet.
     */
-  var Description: js.UndefOr[PermissionSetDescription] = js.native
+  var Description: js.UndefOr[PermissionSetDescription] = js.undefined
   
   /**
     * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn = js.native
+  var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
   /**
     * The ARN of the permission set.
     */
-  var PermissionSetArn: typings.awsSdk.ssoadminMod.PermissionSetArn = js.native
+  var PermissionSetArn: typings.awsSdk.ssoadminMod.PermissionSetArn
   
   /**
     * Used to redirect users within the application during the federation authentication process.
     */
-  var RelayState: js.UndefOr[typings.awsSdk.ssoadminMod.RelayState] = js.native
+  var RelayState: js.UndefOr[typings.awsSdk.ssoadminMod.RelayState] = js.undefined
   
   /**
     * The length of time that the application user sessions are valid for in the ISO-8601 standard.
     */
-  var SessionDuration: js.UndefOr[Duration] = js.native
+  var SessionDuration: js.UndefOr[Duration] = js.undefined
 }
 object UpdatePermissionSetRequest {
   

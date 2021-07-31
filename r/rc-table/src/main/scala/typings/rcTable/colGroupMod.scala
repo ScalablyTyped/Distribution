@@ -4,23 +4,24 @@ import typings.rcTable.interfaceMod.ColumnType
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colGroupMod {
   
-  @JSImport("rc-table/lib/ColGroup", JSImport.Default)
+  @JSImport("rc-table/lib/ColGroup", JSImport.Namespace)
   @js.native
-  def default[RecordType](hasColWidthsColumnsColumCount: ColGroupProps[RecordType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[RecordType](hasColWidthsColumnsColumCount: ColGroupProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColWidthsColumnsColumCount.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait ColGroupProps[RecordType] extends StObject {
     
-    var colWidths: js.Array[Double | String] = js.native
+    var colWidths: js.Array[Double | String]
     
-    var columCount: js.UndefOr[Double] = js.native
+    var columCount: js.UndefOr[Double] = js.undefined
     
-    var columns: js.UndefOr[js.Array[ColumnType[RecordType]]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnType[RecordType]]] = js.undefined
   }
   object ColGroupProps {
     
@@ -31,7 +32,7 @@ object colGroupMod {
     }
     
     @scala.inline
-    implicit class ColGroupPropsMutableBuilder[Self <: ColGroupProps[_], RecordType] (val x: Self with ColGroupProps[RecordType]) extends AnyVal {
+    implicit class ColGroupPropsMutableBuilder[Self <: ColGroupProps[?], RecordType] (val x: Self & ColGroupProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setColWidths(value: js.Array[Double | String]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])

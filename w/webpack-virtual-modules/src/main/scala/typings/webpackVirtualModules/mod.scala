@@ -3,7 +3,6 @@ package typings.webpackVirtualModules
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,15 +13,32 @@ object mod {
     */
   @JSImport("webpack-virtual-modules", JSImport.Namespace)
   @js.native
-  class ^ () extends VirtualModulesPlugin {
+  class ^ ()
+    extends StObject
+       with VirtualModulesPlugin {
     def this(modules: Record[String, String]) = this()
+    
+    /**
+      * Attaches necessary hooks, in particular, `afterEnvironment`, `afterResolvers`, and `watchRun` hooks,
+      * to ensure that the virtual files are added dynamically.
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
+    ): Unit = js.native
+    
+    /**
+      * Writes a static or dynamic virtual module to a path.
+      */
+    /* CompleteClass */
+    override def writeModule(filePath: String, fileContents: String): Unit = js.native
   }
   
   /**
     * Plugin that allows dynamic generation of in-memory virtual modules for JavaScript builds
     * created with webpack.
     */
-  @js.native
   trait VirtualModulesPlugin extends StObject {
     
     /**
@@ -32,12 +48,12 @@ object mod {
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Writes a static or dynamic virtual module to a path.
       */
-    def writeModule(filePath: String, fileContents: String): Unit = js.native
+    def writeModule(filePath: String, fileContents: String): Unit
   }
   object VirtualModulesPlugin {
     

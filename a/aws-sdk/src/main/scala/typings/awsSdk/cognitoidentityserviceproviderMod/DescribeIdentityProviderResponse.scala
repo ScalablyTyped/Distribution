@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIdentityProviderResponse extends StObject {
   
   /**
     * The identity provider that was deleted.
     */
-  var IdentityProvider: IdentityProviderType = js.native
+  var IdentityProvider: IdentityProviderType
 }
 object DescribeIdentityProviderResponse {
   

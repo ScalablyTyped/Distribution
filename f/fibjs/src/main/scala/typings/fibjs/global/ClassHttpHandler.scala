@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_HttpHandler")
 @js.native
 class ClassHttpHandler protected ()
-  extends typings.fibjs.ClassHttpHandler {
+  extends StObject
+     with typings.fibjs.ClassHttpHandler {
   /**
     * 
     * @brief 创建一个 http 协议处理器对象，将流对象的数据转变为 http 消息对象

@@ -2,15 +2,13 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Feature extends StObject {
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
   
-  var geometry: Geometry = js.native
+  var geometry: Geometry
 }
 object Feature {
   

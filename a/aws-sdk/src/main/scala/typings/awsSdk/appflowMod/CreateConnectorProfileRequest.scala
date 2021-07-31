@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConnectorProfileRequest extends StObject {
   
   /**
     *  Indicates the connection mode and specifies whether it is public or private. Private flows use AWS PrivateLink to route data over AWS infrastructure without exposing it to the public internet. 
     */
-  var connectionMode: ConnectionMode = js.native
+  var connectionMode: ConnectionMode
   
   /**
     *  Defines the connector-specific configuration and credentials. 
     */
-  var connectorProfileConfig: ConnectorProfileConfig = js.native
+  var connectorProfileConfig: ConnectorProfileConfig
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in your AWS account. 
     */
-  var connectorProfileName: ConnectorProfileName = js.native
+  var connectorProfileName: ConnectorProfileName
   
   /**
     *  The type of connector, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorType: ConnectorType = js.native
+  var connectorType: ConnectorType
   
   /**
     *  The ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key. 
     */
-  var kmsArn: js.UndefOr[KMSArn] = js.native
+  var kmsArn: js.UndefOr[KMSArn] = js.undefined
 }
 object CreateConnectorProfileRequest {
   

@@ -3,19 +3,17 @@ package typings.twineSugarcube.anon
 import typings.twineSugarcube.extensionsMod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var own: js.UndefOr[Boolean] = js.native
+  var own: js.UndefOr[Boolean] = js.undefined
   
-  var sources: js.UndefOr[Array[String]] = js.native
+  var sources: js.UndefOr[Array[String]] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object Id {
   

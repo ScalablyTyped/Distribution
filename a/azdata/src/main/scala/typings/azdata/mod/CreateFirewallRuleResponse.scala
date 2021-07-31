@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFirewallRuleResponse extends StObject {
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object CreateFirewallRuleResponse {
   

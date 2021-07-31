@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolUsernameConfiguration extends StObject {
   
   /**
     * Specifies whether username case sensitivity will be applied for all users in the user pool through Cognito APIs.
     */
-  var caseSensitive: Boolean = js.native
+  var caseSensitive: Boolean
 }
 object UserPoolUsernameConfiguration {
   

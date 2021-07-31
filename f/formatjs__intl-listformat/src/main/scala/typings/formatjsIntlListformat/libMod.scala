@@ -16,19 +16,29 @@ import typings.formatjsIntlListformat.formatjsIntlListformatStrings.unit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
   
   @JSImport("@formatjs/intl-listformat/lib", JSImport.Default)
   @js.native
-  class default () extends ListFormat {
+  class default ()
+    extends StObject
+       with ListFormat {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
-    def this(locales: js.UndefOr[scala.Nothing], options: IntlListFormatOptions) = this()
     def this(locales: String, options: IntlListFormatOptions) = this()
     def this(locales: js.Array[String], options: IntlListFormatOptions) = this()
+    def this(locales: Unit, options: IntlListFormatOptions) = this()
+    
+    /* CompleteClass */
+    override def format(elements: js.Array[String]): String = js.native
+    
+    /* CompleteClass */
+    override def formatToParts(elements: js.Array[String]): js.Array[Part] = js.native
+    
+    /* CompleteClass */
+    override def resolvedOptions(): ResolvedIntlListFormatOptions = js.native
   }
   /* static members */
   object default {
@@ -41,9 +51,8 @@ object libMod {
     @js.native
     val __INTERNAL_SLOT_MAP__ : js.Any = js.native
     
-    @JSImport("@formatjs/intl-listformat/lib", "default.__addLocaleData")
-    @js.native
-    def __addLocaleData(data: ListPatternLocaleData*): Unit = js.native
+    @scala.inline
+    def __addLocaleData(data: ListPatternLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-listformat/lib", "default.__defaultLocale")
     @js.native
@@ -81,33 +90,28 @@ object libMod {
     @scala.inline
     def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
     
-    @JSImport("@formatjs/intl-listformat/lib", "default.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: String): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-listformat/lib", "default.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: String, options: PickIntlListFormatOptions): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-listformat/lib", "default.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-listformat/lib", "default.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: js.Array[String], options: PickIntlListFormatOptions): js.Array[String] = js.native
+    @scala.inline
+    def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: String, options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: js.Array[String], options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
-  @js.native
   trait ElementPart extends StObject {
     
-    var `type`: element = js.native
+    var `type`: element
     
-    var value: String = js.native
+    var value: String
   }
   object ElementPart {
     
     @scala.inline
-    def apply(`type`: element, value: String): ElementPart = {
+    def apply(value: String): ElementPart = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[ElementPart]
     }
     
@@ -122,7 +126,6 @@ object libMod {
     }
   }
   
-  @js.native
   trait IntlListFormatOptions extends StObject {
     
     /**
@@ -131,7 +134,7 @@ object libMod {
       * For information about this option, see
       * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_negotiation.
       */
-    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.native
+    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
     
     /**
       * The length of the internationalized message. Possible values are:
@@ -140,7 +143,7 @@ object libMod {
       * - or "narrow" (e.g., in 1 mo.).
       * The narrow style could be similar to the short style for some locales.
       */
-    var style: js.UndefOr[long | short | narrow] = js.native
+    var style: js.UndefOr[long | short | narrow] = js.undefined
     
     /**
       * The format of output message. Possible values are:
@@ -149,7 +152,7 @@ object libMod {
       * The "auto" value allows to not always have to
       * use numeric values in the output.
       */
-    var `type`: js.UndefOr[conjunction | disjunction | unit] = js.native
+    var `type`: js.UndefOr[conjunction | disjunction | unit] = js.undefined
   }
   object IntlListFormatOptions {
     
@@ -182,14 +185,13 @@ object libMod {
     }
   }
   
-  @js.native
   trait ListFormat extends StObject {
     
-    def format(elements: js.Array[String]): String = js.native
+    def format(elements: js.Array[String]): String
     
-    def formatToParts(elements: js.Array[String]): js.Array[Part] = js.native
+    def formatToParts(elements: js.Array[String]): js.Array[Part]
     
-    def resolvedOptions(): ResolvedIntlListFormatOptions = js.native
+    def resolvedOptions(): ResolvedIntlListFormatOptions
   }
   object ListFormat {
     
@@ -219,7 +221,6 @@ object libMod {
   
   type Part = LiteralPart | ElementPart
   
-  @js.native
   trait ResolvedIntlListFormatOptions extends StObject {
     
     /**
@@ -229,7 +230,7 @@ object libMod {
       * the key-value pairs that were requested and are
       * supported for this locale are included in locale.
       */
-    var locale: String = js.native
+    var locale: String
     
     /**
       * The length of the internationalized message. Possible values are:
@@ -238,7 +239,7 @@ object libMod {
       * - or "narrow" (e.g., in 1 mo.).
       * The narrow style could be similar to the short style for some locales.
       */
-    var style: long | short | narrow = js.native
+    var style: long | short | narrow
     
     /**
       * The format of output message. Possible values are:
@@ -247,7 +248,7 @@ object libMod {
       * The "auto" value allows to not always have to
       * use numeric values in the output.
       */
-    var `type`: conjunction | disjunction | unit = js.native
+    var `type`: conjunction | disjunction | unit
   }
   object ResolvedIntlListFormatOptions {
     

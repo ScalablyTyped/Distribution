@@ -2,26 +2,24 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitiateJobOutput extends StObject {
   
   /**
     * The ID of the job.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the location of where the select results are stored.
     */
-  var jobOutputPath: js.UndefOr[String] = js.native
+  var jobOutputPath: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URI path of the job.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object InitiateJobOutput {
   

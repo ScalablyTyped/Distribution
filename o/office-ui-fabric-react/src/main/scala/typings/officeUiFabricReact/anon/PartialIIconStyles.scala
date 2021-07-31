@@ -3,16 +3,14 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/Icon/Icon.types.IIconStyles> */
-@js.native
 trait PartialIIconStyles extends StObject {
   
-  var imageContainer: js.UndefOr[IStyle] = js.native
+  var imageContainer: js.UndefOr[IStyle] = js.undefined
   
-  var root: js.UndefOr[IStyle] = js.native
+  var root: js.UndefOr[IStyle] = js.undefined
 }
 object PartialIIconStyles {
   

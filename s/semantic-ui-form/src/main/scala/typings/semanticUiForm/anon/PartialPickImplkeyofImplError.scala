@@ -3,16 +3,14 @@ package typings.semanticUiForm.anon
 import typings.semanticUiForm.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.TemplatesSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.TemplatesSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplError extends StObject {
   
-  var error: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.native
+  var error: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.undefined
   
-  var prompt: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.native
+  var prompt: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.undefined
 }
 object PartialPickImplkeyofImplError {
   

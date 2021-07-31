@@ -11,8 +11,8 @@ fast string hashing function
 | Full name          | string-hash |
 | Keywords           | string, hashing |
 | # releases         | 0 |
-| # dependents       | 329 |
-| # downloads        | 47711516 |
+| # dependents       | 359 |
+| # downloads        | 68333272 |
 | # stars            | 5 |
 
 ## Links

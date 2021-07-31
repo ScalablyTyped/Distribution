@@ -5,42 +5,40 @@ import typings.microsoftLiveConnect.Microsoft.Live.IFolder
 import typings.microsoftLiveConnect.Microsoft.Live.IPostalAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Account extends StObject {
     
     /**
       * The email address that is associated with the account.
       */
-    var account: String = js.native
+    var account: String
     
     /**
       * The user's business email address, or null if one is not
       * specified.
       */
-    var business: String = js.native
+    var business: String
     
     /**
       * The user's "alternate" email address, or null if one is not
       * specified.
       */
-    var other: String = js.native
+    var other: String
     
     /**
       * The user's personal email address, or null if one is not
       * specified.
       */
-    var personal: String = js.native
+    var personal: String
     
     /**
       * The user's preferred email address, or null if one is not
       * specified.
       */
-    var preferred: String = js.native
+    var preferred: String
   }
   object Account {
     
@@ -70,28 +68,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Business extends StObject {
     
     /**
       * The contact's business email address.
       */
-    var business: js.UndefOr[String] = js.native
+    var business: js.UndefOr[String] = js.undefined
     
     /**
       * The contact's "alternate" email address.
       */
-    var other: js.UndefOr[String] = js.native
+    var other: js.UndefOr[String] = js.undefined
     
     /**
       * The contact's personal email address.
       */
-    var personal: js.UndefOr[String] = js.native
+    var personal: js.UndefOr[String] = js.undefined
     
     /**
       * The contact's preferred email address.
       */
-    var preferred: js.UndefOr[String] = js.native
+    var preferred: js.UndefOr[String] = js.undefined
   }
   object Business {
     
@@ -130,18 +127,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
     /**
       * The error code.
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * The error message.
       */
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -162,10 +158,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Employer extends StObject {
     
-    var employer: Name = js.native
+    var employer: Name
   }
   object Employer {
     
@@ -183,18 +178,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Files extends StObject {
     
     /**
       * Information on files choden in the picker.
       */
-    var files: js.UndefOr[js.Array[IFile]] = js.native
+    var files: js.UndefOr[js.Array[IFile]] = js.undefined
     
     /**
       * Information on folders chosen in the picker.
       */
-    var folders: js.UndefOr[js.Array[IFolder]] = js.native
+    var folders: js.UndefOr[js.Array[IFolder]] = js.undefined
   }
   object Files {
     
@@ -227,25 +221,24 @@ object anon {
     }
   }
   
-  @js.native
   trait Mobile extends StObject {
     
     /**
       * The user's business phone number, or null if one is not
       * specified.
       */
-    var business: String = js.native
+    var business: String
     
     /**
       * The user's mobile phone number, or null if one is not specified.
       */
-    var mobile: String = js.native
+    var mobile: String
     
     /**
       * The user's personal phone number, or null if one is not
       * specified.
       */
-    var personal: String = js.native
+    var personal: String
   }
   object Mobile {
     
@@ -269,14 +262,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
       * The name of the user's work position, or null if the name of the
       * work position is not specified.
       */
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -294,18 +286,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Next extends StObject {
     
     /**
       * Path string for the next set of results.
       */
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
     /**
       * Path string for the previous set of results.
       */
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
   }
   object Next {
     
@@ -332,18 +323,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Personal extends StObject {
     
     /**
       * The user's business postal address.
       */
-    var business: IPostalAddress = js.native
+    var business: IPostalAddress
     
     /**
       * The user's personal postal address.
       */
-    var personal: IPostalAddress = js.native
+    var personal: IPostalAddress
   }
   object Personal {
     

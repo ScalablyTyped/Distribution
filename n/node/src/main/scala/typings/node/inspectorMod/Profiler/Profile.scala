@@ -2,39 +2,37 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Profile.
   */
-@js.native
 trait Profile extends StObject {
   
   /**
     * Profiling end timestamp in microseconds.
     */
-  var endTime: Double = js.native
+  var endTime: Double
   
   /**
     * The list of profile nodes. First item is the root node.
     */
-  var nodes: js.Array[ProfileNode] = js.native
+  var nodes: js.Array[ProfileNode]
   
   /**
     * Ids of samples top nodes.
     */
-  var samples: js.UndefOr[js.Array[Double]] = js.native
+  var samples: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Profiling start timestamp in microseconds.
     */
-  var startTime: Double = js.native
+  var startTime: Double
   
   /**
     * Time intervals between adjacent samples in microseconds. The first delta is relative to the profile startTime.
     */
-  var timeDeltas: js.UndefOr[js.Array[Double]] = js.native
+  var timeDeltas: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Profile {
   

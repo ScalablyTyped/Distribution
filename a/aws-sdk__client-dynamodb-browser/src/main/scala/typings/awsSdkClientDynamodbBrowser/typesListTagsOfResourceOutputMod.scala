@@ -5,29 +5,29 @@ import typings.awsSdkClientDynamodbBrowser.typesTagMod.UnmarshalledTag
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListTagsOfResourceOutputMod {
   
-  @js.native
-  trait ListTagsOfResourceOutput extends OutputTypesUnion {
+  trait ListTagsOfResourceOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>If this value is returned, there are additional results to be displayed. To retrieve them, call ListTagsOfResource again, with NextToken set to this value.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The tags currently associated with the Amazon DynamoDB resource.</p>
       */
-    var Tags: js.UndefOr[js.Array[UnmarshalledTag]] = js.native
+    var Tags: js.UndefOr[js.Array[UnmarshalledTag]] = js.undefined
   }
   object ListTagsOfResourceOutput {
     

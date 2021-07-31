@@ -2,17 +2,15 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Text {
   

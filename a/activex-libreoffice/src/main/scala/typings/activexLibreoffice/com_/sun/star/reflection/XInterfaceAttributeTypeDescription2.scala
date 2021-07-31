@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,38 +13,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type supersedes {@link XInterfaceAttributeTypeDescription} , which does not support extended attributes.
   * @since OOo 2.0
   */
-@js.native
-trait XInterfaceAttributeTypeDescription2 extends XInterfaceAttributeTypeDescription {
+trait XInterfaceAttributeTypeDescription2
+  extends StObject
+     with XInterfaceAttributeTypeDescription {
   
   /**
     * Returns the exceptions that can be raised by the attribute's getter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's getter (if any), in no particular order; a
     */
-  val GetExceptions: SafeArray[XCompoundTypeDescription] = js.native
+  val GetExceptions: SafeArray[XCompoundTypeDescription]
   
   /**
     * Returns the exceptions that can be raised by the attribute's setter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's setter (if any), in no particular order; a
     */
-  val SetExceptions: SafeArray[XCompoundTypeDescription] = js.native
+  val SetExceptions: SafeArray[XCompoundTypeDescription]
   
   /**
     * Returns the exceptions that can be raised by the attribute's getter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's getter (if any), in no particular order; a
     */
-  def getGetExceptions(): SafeArray[XCompoundTypeDescription] = js.native
+  def getGetExceptions(): SafeArray[XCompoundTypeDescription]
   
   /**
     * Returns the exceptions that can be raised by the attribute's setter.
     * @returns the reflections of all the exceptions that are listed in the `raises` specification of the attribute's setter (if any), in no particular order; a
     */
-  def getSetExceptions(): SafeArray[XCompoundTypeDescription] = js.native
+  def getSetExceptions(): SafeArray[XCompoundTypeDescription]
   
   /**
     * Returns whether this object reflects a bound attribute.
     * @returns `TRUE` iff this object reflects a bound attribute
     */
-  def isBound(): Boolean = js.native
+  def isBound(): Boolean
 }
 object XInterfaceAttributeTypeDescription2 {
   

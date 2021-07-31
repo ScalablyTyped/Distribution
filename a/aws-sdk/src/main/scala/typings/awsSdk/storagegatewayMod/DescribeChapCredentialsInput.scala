@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChapCredentialsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
     */
-  var TargetARN: typings.awsSdk.storagegatewayMod.TargetARN = js.native
+  var TargetARN: typings.awsSdk.storagegatewayMod.TargetARN
 }
 object DescribeChapCredentialsInput {
   

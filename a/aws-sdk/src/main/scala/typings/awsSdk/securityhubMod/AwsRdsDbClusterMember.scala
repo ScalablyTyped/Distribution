@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbClusterMember extends StObject {
   
   /**
     * The status of the DB cluster parameter group for this member of the DB cluster.
     */
-  var DbClusterParameterGroupStatus: js.UndefOr[NonEmptyString] = js.native
+  var DbClusterParameterGroupStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The instance identifier for this member of the DB cluster.
     */
-  var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the cluster member is the primary instance for the DB cluster.
     */
-  var IsClusterWriter: js.UndefOr[Boolean] = js.native
+  var IsClusterWriter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the order in which an Aurora replica is promoted to the primary instance when the existing primary instance fails.
     */
-  var PromotionTier: js.UndefOr[Integer] = js.native
+  var PromotionTier: js.UndefOr[Integer] = js.undefined
 }
 object AwsRdsDbClusterMember {
   

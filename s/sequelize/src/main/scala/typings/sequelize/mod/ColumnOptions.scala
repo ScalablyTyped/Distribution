@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -17,24 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Define
   * @see AssociationForeignKeyOptions
   */
-@js.native
 trait ColumnOptions extends StObject {
   
   /**
     * If false, the column will have a NOT NULL constraint, and a not null validation will be run before an
     * instance is saved.
     */
-  var allowNull: js.UndefOr[Boolean] = js.native
+  var allowNull: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A literal default value, a JavaScript function, or an SQL function (see `sequelize.fn`)
     */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     *  If set, sequelize will map the attribute name to a different name in the database
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
 }
 object ColumnOptions {
   

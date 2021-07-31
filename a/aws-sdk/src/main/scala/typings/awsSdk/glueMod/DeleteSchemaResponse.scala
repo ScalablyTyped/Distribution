@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSchemaResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the schema being deleted.
     */
-  var SchemaArn: js.UndefOr[GlueResourceArn] = js.native
+  var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the schema being deleted.
     */
-  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The status of the schema.
     */
-  var Status: js.UndefOr[SchemaStatus] = js.native
+  var Status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object DeleteSchemaResponse {
   

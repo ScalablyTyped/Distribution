@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.CallFunctionOnRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CallFunctionOnResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCallFunctionOnResponse extends StObject {
   
-  var paramsType: js.Array[CallFunctionOnRequest] = js.native
+  var paramsType: js.Array[CallFunctionOnRequest]
   
-  var returnType: CallFunctionOnResponse = js.native
+  var returnType: CallFunctionOnResponse
 }
 object ReturnTypeCallFunctionOnResponse {
   

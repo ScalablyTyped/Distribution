@@ -5,23 +5,34 @@ import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
 import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badRequestErrorMessageResultMod {
   
   @JSImport("inversify-express-utils/dts/results/BadRequestErrorMessageResult", JSImport.Default)
   @js.native
-  class default protected () extends BadRequestErrorMessageResult {
+  class default protected ()
+    extends StObject
+       with BadRequestErrorMessageResult {
     def this(message: String, apiController: BaseHttpController) = this()
-  }
-  
-  @js.native
-  trait BadRequestErrorMessageResult extends IHttpActionResult {
     
+    /* CompleteClass */
     var apiController: js.Any = js.native
     
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
+    
+    /* CompleteClass */
     var message: js.Any = js.native
+  }
+  
+  trait BadRequestErrorMessageResult
+    extends StObject
+       with IHttpActionResult {
+    
+    var apiController: js.Any
+    
+    var message: js.Any
   }
   object BadRequestErrorMessageResult {
     

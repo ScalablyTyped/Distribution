@@ -2,29 +2,27 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accidental extends StObject {
   
-  var accidental: String = js.native
+  var accidental: String
   
-  var code: Double = js.native
+  var code: Double
   
-  var displaced: Boolean = js.native
+  var displaced: Boolean
   
-  var int_value: Double = js.native
+  var int_value: Double
   
-  var key: String = js.native
+  var key: String
   
-  var line: Double = js.native
+  var line: Double
   
-  var octave: Double = js.native
+  var octave: Double
   
-  var shift_right: Double = js.native
+  var shift_right: Double
   
-  var stroke: Double = js.native
+  var stroke: Double
 }
 object Accidental {
   

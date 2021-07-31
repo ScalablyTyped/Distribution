@@ -2,25 +2,23 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the Google Tag Manager Container access permissions.
   */
-@js.native
 trait SchemaContainerAccess extends StObject {
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * List of Container permissions. Valid container permissions are: read,
     * edit, delete, publish.
     */
-  var permission: js.UndefOr[js.Array[String]] = js.native
+  var permission: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaContainerAccess {
   

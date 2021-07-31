@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerFailure extends StObject {
   
   /**
     * The failure code associated with the failure.
     */
-  var failureCode: js.UndefOr[LayerFailureCode] = js.native
+  var failureCode: js.UndefOr[LayerFailureCode] = js.undefined
   
   /**
     * The reason for the failure.
     */
-  var failureReason: js.UndefOr[LayerFailureReason] = js.native
+  var failureReason: js.UndefOr[LayerFailureReason] = js.undefined
   
   /**
     * The layer digest associated with the failure.
     */
-  var layerDigest: js.UndefOr[BatchedOperationLayerDigest] = js.native
+  var layerDigest: js.UndefOr[BatchedOperationLayerDigest] = js.undefined
 }
 object LayerFailure {
   

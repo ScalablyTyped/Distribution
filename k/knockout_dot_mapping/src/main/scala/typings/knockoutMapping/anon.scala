@@ -2,23 +2,21 @@ package typings.knockoutMapping
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Copy extends StObject {
     
-    var copy: js.UndefOr[js.Array[String]] = js.native
+    var copy: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
-    var parentName: js.UndefOr[String] = js.native
+    var parentName: js.UndefOr[String] = js.undefined
     
-    var visitedObjects: js.UndefOr[js.Any] = js.native
+    var visitedObjects: js.UndefOr[js.Any] = js.undefined
   }
   object Copy {
     

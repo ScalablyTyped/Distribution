@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait LeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StO
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/left)
     */
-  var left: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var left: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object LeftProps {
   
@@ -25,7 +23,7 @@ object LeftProps {
   }
   
   @scala.inline
-  implicit class LeftPropsMutableBuilder[Self <: LeftProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (LeftProps[ThemeType, TVal])) extends AnyVal {
+  implicit class LeftPropsMutableBuilder[Self <: LeftProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LeftProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])

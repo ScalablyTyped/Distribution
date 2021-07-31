@@ -14,15 +14,14 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link Content} is a service that provides access to data of a content provided by an implementation of the service {@link ContentProvider} . */
-@js.native
 trait Content
-  extends XCommandProcessor2
+  extends StObject
      with XContent
      with XComponent
+     with XCommandProcessor2
      with XPropertiesChangeNotifier
      with XPropertyContainer
      with XPropertySetInfoChangeNotifier

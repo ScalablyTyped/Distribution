@@ -10,7 +10,6 @@ import typings.libraCore.transactionPbMod.SignedTransactionsBlock
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse")
@@ -33,13 +32,11 @@ object GetBlockResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): GetBlockResponse = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): GetBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockResponse]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: GetBlockResponse, reader: BinaryReader): GetBlockResponse = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: GetBlockResponse, reader: BinaryReader): GetBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetBlockResponse]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse.extensions")
   @js.native
@@ -54,18 +51,15 @@ object GetBlockResponse {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: GetBlockResponse, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: GetBlockResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: GetBlockResponse): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: GetBlockResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var block: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransactionsBlock.AsObject] = js.native
+    var block: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransactionsBlock.AsObject] = js.undefined
   }
   object AsObject {
     

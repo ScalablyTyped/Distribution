@@ -2,30 +2,28 @@ package typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Temporal asset. In addition to the asset, the temporal asset includes the
   * status of the asset and valid from and to time of it.
   */
-@js.native
 trait SchemaTemporalAsset extends StObject {
   
   /**
     * Asset.
     */
-  var asset: js.UndefOr[SchemaAsset] = js.native
+  var asset: js.UndefOr[SchemaAsset] = js.undefined
   
   /**
     * If the asset is deleted or not.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time window when the asset data and state was observed.
     */
-  var window: js.UndefOr[SchemaTimeWindow] = js.native
+  var window: js.UndefOr[SchemaTimeWindow] = js.undefined
 }
 object SchemaTemporalAsset {
   

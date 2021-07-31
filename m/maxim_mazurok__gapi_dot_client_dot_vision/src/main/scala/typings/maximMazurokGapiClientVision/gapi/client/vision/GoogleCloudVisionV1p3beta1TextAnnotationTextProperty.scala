@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1TextAnnotationTextProperty extends StObject {
   
   /** Detected start or end of a text segment. */
-  var detectedBreak: js.UndefOr[GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak] = js.native
+  var detectedBreak: js.UndefOr[GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak] = js.undefined
   
   /** A list of detected languages together with confidence. */
-  var detectedLanguages: js.UndefOr[js.Array[GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage]] = js.native
+  var detectedLanguages: js.UndefOr[js.Array[GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage]] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1TextAnnotationTextProperty {
   

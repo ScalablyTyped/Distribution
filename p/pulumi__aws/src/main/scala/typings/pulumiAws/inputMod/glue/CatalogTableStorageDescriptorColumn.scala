@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogTableStorageDescriptorColumn extends StObject {
   
   /**
     * Free-form text comment.
     */
-  var comment: js.UndefOr[Input[String]] = js.native
+  var comment: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Name of the SerDe.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * A map of initialization parameters for the SerDe, in key-value form.
     */
-  var parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * The datatype of data in the Column.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object CatalogTableStorageDescriptorColumn {
   

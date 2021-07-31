@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EdgeSearchEngineCustom extends EdgeSearchEngineBase {
+trait EdgeSearchEngineCustom
+  extends StObject
+     with EdgeSearchEngineBase {
   
   /**
     * Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the
     * search Engine.
     */
-  var edgeSearchEngineOpenSearchXmlUrl: js.UndefOr[String] = js.native
+  var edgeSearchEngineOpenSearchXmlUrl: js.UndefOr[String] = js.undefined
 }
 object EdgeSearchEngineCustom {
   

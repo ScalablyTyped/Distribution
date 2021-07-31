@@ -2,26 +2,24 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteMutedState extends StObject {
   
   /** 是否静音 */
-  var audioMuted: Boolean = js.native
+  var audioMuted: Boolean
   
   /** 是否有视频 */
-  var hasAudio: Boolean = js.native
+  var hasAudio: Boolean
   
   /** 是否有音频 */
-  var hasVideo: Boolean = js.native
+  var hasVideo: Boolean
   
   /** 远端用户ID */
-  var userId: String = js.native
+  var userId: String
   
   /** 是否关闭摄像头 */
-  var videoMuted: Boolean = js.native
+  var videoMuted: Boolean
 }
 object RemoteMutedState {
   

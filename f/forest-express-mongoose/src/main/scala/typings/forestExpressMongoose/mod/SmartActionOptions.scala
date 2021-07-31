@@ -3,25 +3,23 @@ package typings.forestExpressMongoose.mod
 import typings.forestExpressMongoose.anon.Description
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartActionOptions extends StObject {
   
-  var download: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[Boolean] = js.undefined
   
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
-  var fields: js.UndefOr[js.Array[Description]] = js.native
+  var fields: js.UndefOr[js.Array[Description]] = js.undefined
   
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[SmartActionValuesInjector] = js.native
+  var values: js.UndefOr[SmartActionValuesInjector] = js.undefined
 }
 object SmartActionOptions {
   

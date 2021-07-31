@@ -2,36 +2,34 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEnvironmentRequest extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * A description of the environment.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The environment ID.
     */
-  var EnvironmentId: Id = js.native
+  var EnvironmentId: Id
   
   /**
     * Amazon CloudWatch alarms to monitor during the deployment process.
     */
-  var Monitors: js.UndefOr[MonitorList] = js.native
+  var Monitors: js.UndefOr[MonitorList] = js.undefined
   
   /**
     * The name of the environment.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
 }
 object UpdateEnvironmentRequest {
   

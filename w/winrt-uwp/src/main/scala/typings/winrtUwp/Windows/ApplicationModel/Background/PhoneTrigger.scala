@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a phone event that triggers a background task. */
-@js.native
 trait PhoneTrigger extends StObject {
   
   /** Gets a Boolean value indicating if the trigger is a one-shot notification. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
   
   /** Gets the type of phone event indicated by the trigger. */
-  var triggerType: PhoneTriggerType = js.native
+  var triggerType: PhoneTriggerType
 }
 object PhoneTrigger {
   

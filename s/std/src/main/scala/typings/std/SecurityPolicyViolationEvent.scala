@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Inherits from Event, and represents the event object of an event sent on a document or worker when its content security policy is violated. */
 @js.native
-trait SecurityPolicyViolationEvent extends Event {
+trait SecurityPolicyViolationEvent
+  extends StObject
+     with Event {
   
   val blockedURI: java.lang.String = js.native
   

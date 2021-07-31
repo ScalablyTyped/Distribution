@@ -23,54 +23,48 @@ import typings.reactPlacesAutocomplete.reactPlacesAutocompleteStrings.text
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ariaactivedescendant extends StObject {
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-autocomplete`: list = js.native
+    var `aria-autocomplete`: list
     
-    var `aria-expanded`: Boolean = js.native
+    var `aria-expanded`: Boolean
     
-    var autoComplete: off = js.native
+    var autoComplete: off
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var onBlur: FocusEventHandler[Element] = js.native
+    var onBlur: FocusEventHandler[Element]
     
-    def onChange(ev: Target): Unit = js.native
+    def onChange(ev: Target): Unit
     
-    var onKeyDown: KeyboardEventHandler[Element] = js.native
+    var onKeyDown: KeyboardEventHandler[Element]
     
-    var role: combobox = js.native
+    var role: combobox
     
-    var `type`: text = js.native
+    var `type`: text
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Ariaactivedescendant {
     
     @scala.inline
     def apply(
-      `aria-autocomplete`: list,
       `aria-expanded`: Boolean,
-      autoComplete: off,
       disabled: Boolean,
       onBlur: FocusEvent[Element] => Unit,
       onChange: Target => Unit,
-      onKeyDown: KeyboardEvent[Element] => Unit,
-      role: combobox,
-      `type`: text
+      onKeyDown: KeyboardEvent[Element] => Unit
     ): Ariaactivedescendant = {
-      val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role.asInstanceOf[js.Any])
-      __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(autoComplete = "off", disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onKeyDown = js.Any.fromFunction1(onKeyDown), role = "combobox")
+      __obj.updateDynamic("aria-autocomplete")("list")
       __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[Ariaactivedescendant]
     }
     
@@ -118,22 +112,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Bounds extends StObject {
     
-    var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.native
+    var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
     
-    var componentRestrictions: js.UndefOr[GeocoderComponentRestrictions] = js.native
+    var componentRestrictions: js.UndefOr[GeocoderComponentRestrictions] = js.undefined
     
-    var location: js.UndefOr[LatLng | LatLngLiteral] = js.native
+    var location: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var radius: js.UndefOr[Double | String] = js.native
+    var radius: js.UndefOr[Double | String] = js.undefined
     
-    var sessionToken: js.UndefOr[js.Any] = js.native
+    var sessionToken: js.UndefOr[js.Any] = js.undefined
     
-    var types: js.UndefOr[js.Array[String]] = js.native
+    var types: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Bounds {
     
@@ -193,28 +186,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var key: Double = js.native
+    var key: Double
     
-    var onClick: MouseEventHandler[Element] = js.native
+    var onClick: MouseEventHandler[Element]
     
-    var onMouseDown: MouseEventHandler[Element] = js.native
+    var onMouseDown: MouseEventHandler[Element]
     
-    var onMouseEnter: MouseEventHandler[Element] = js.native
+    var onMouseEnter: MouseEventHandler[Element]
     
-    var onMouseLeave: MouseEventHandler[Element] = js.native
+    var onMouseLeave: MouseEventHandler[Element]
     
-    var onMouseUp: MouseEventHandler[Element] = js.native
+    var onMouseUp: MouseEventHandler[Element]
     
-    var onTouchEnd: TouchEventHandler[Element] = js.native
+    var onTouchEnd: TouchEventHandler[Element]
     
-    var onTouchStart: TouchEventHandler[Element] = js.native
+    var onTouchStart: TouchEventHandler[Element]
     
-    var role: option = js.native
+    var role: option
   }
   object Id {
     
@@ -227,10 +219,9 @@ object anon {
       onMouseLeave: MouseEvent[Element, NativeMouseEvent] => Unit,
       onMouseUp: MouseEvent[Element, NativeMouseEvent] => Unit,
       onTouchEnd: TouchEvent[Element] => Unit,
-      onTouchStart: TouchEvent[Element] => Unit,
-      role: option
+      onTouchStart: TouchEvent[Element] => Unit
     ): Id = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), role = role.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), role = "option")
       __obj.asInstanceOf[Id]
     }
     
@@ -272,12 +263,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MainText extends StObject {
     
-    var mainText: String = js.native
+    var mainText: String
     
-    var secondaryText: String = js.native
+    var secondaryText: String
   }
   object MainText {
     
@@ -299,23 +289,22 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  loading :boolean,   suggestions :std.ReadonlyArray<react-places-autocomplete.react-places-autocomplete.Suggestion>, getInputProps <InputProps extends {}>(options : InputProps | undefined): {  type :'text',   autoComplete :'off',   role :'combobox',   aria-autocomplete :'list',   aria-expanded :boolean,   aria-activedescendant :string | undefined,   disabled :boolean,   onKeyDown :react.react.KeyboardEventHandler<std.Element>,   onBlur :react.react.FocusEventHandler<std.Element>,   value :string | undefined, onChange (ev : {  target :{  value :string}}): void} & InputProps, getSuggestionItemProps <SuggestionProps extends {}>(suggestion : react-places-autocomplete.react-places-autocomplete.Suggestion, options : SuggestionProps | undefined): {  key :number,   id :string | undefined,   role :'option',   onMouseEnter :react.react.MouseEventHandler<std.Element>,   onMouseLeave :react.react.MouseEventHandler<std.Element>,   onMouseDown :react.react.MouseEventHandler<std.Element>,   onMouseUp :react.react.MouseEventHandler<std.Element>,   onTouchStart :react.react.TouchEventHandler<std.Element>,   onTouchEnd :react.react.TouchEventHandler<std.Element>,   onClick :react.react.MouseEventHandler<std.Element>} & SuggestionProps}> */
-  @js.native
   trait Readonlyloadingbooleansug extends StObject {
     
-    val getInputProps: js.Function1[/* options */ js.UndefOr[js.Object], Ariaactivedescendant with js.Object] = js.native
+    val getInputProps: js.Function1[/* options */ js.UndefOr[js.Object], Ariaactivedescendant & js.Object]
     
-    val getSuggestionItemProps: js.Function2[/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object], Id with js.Object] = js.native
+    val getSuggestionItemProps: js.Function2[/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object], Id & js.Object]
     
-    val loading: Boolean = js.native
+    val loading: Boolean
     
-    val suggestions: js.Array[Suggestion] = js.native
+    val suggestions: js.Array[Suggestion]
   }
   object Readonlyloadingbooleansug {
     
     @scala.inline
     def apply(
-      getInputProps: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant with js.Object,
-      getSuggestionItemProps: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id with js.Object,
+      getInputProps: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant & js.Object,
+      getSuggestionItemProps: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id & js.Object,
       loading: Boolean,
       suggestions: js.Array[Suggestion]
     ): Readonlyloadingbooleansug = {
@@ -327,10 +316,10 @@ object anon {
     implicit class ReadonlyloadingbooleansugMutableBuilder[Self <: Readonlyloadingbooleansug] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetInputProps(value: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant with js.Object): Self = StObject.set(x, "getInputProps", js.Any.fromFunction1(value))
+      def setGetInputProps(value: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant & js.Object): Self = StObject.set(x, "getInputProps", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetSuggestionItemProps(value: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id with js.Object): Self = StObject.set(x, "getSuggestionItemProps", js.Any.fromFunction2(value))
+      def setGetSuggestionItemProps(value: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id & js.Object): Self = StObject.set(x, "getSuggestionItemProps", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
@@ -343,10 +332,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: Value = js.native
+    var target: Value
   }
   object Target {
     
@@ -364,10 +352,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

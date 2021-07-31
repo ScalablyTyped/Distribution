@@ -4,34 +4,32 @@ import typings.typeorm.columnOptionsMod.ColumnOptions
 import typings.typeorm.typeormStrings.STI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inheritanceMetadataArgsMod {
   
-  @js.native
   trait InheritanceMetadataArgs extends StObject {
     
     /**
       * Column used as inheritance discriminator column.
       */
-    val column: js.UndefOr[ColumnOptions] = js.native
+    val column: js.UndefOr[ColumnOptions] = js.undefined
     
     /**
       * Inheritance pattern.
       */
-    val pattern: STI = js.native
+    val pattern: STI
     
     /**
       * Class to which inheritance is applied.
       */
-    val target: js.UndefOr[js.Function | String] = js.native
+    val target: js.UndefOr[js.Function | String] = js.undefined
   }
   object InheritanceMetadataArgs {
     
     @scala.inline
-    def apply(pattern: STI): InheritanceMetadataArgs = {
-      val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    def apply(): InheritanceMetadataArgs = {
+      val __obj = js.Dynamic.literal(pattern = "STI")
       __obj.asInstanceOf[InheritanceMetadataArgs]
     }
     

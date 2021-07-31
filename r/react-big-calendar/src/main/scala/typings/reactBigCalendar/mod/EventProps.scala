@@ -2,15 +2,13 @@ package typings.reactBigCalendar.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventProps[TEvent /* <: js.Object */] extends StObject {
   
-  var event: TEvent = js.native
+  var event: TEvent
   
-  var title: String = js.native
+  var title: String
 }
 object EventProps {
   
@@ -21,7 +19,7 @@ object EventProps {
   }
   
   @scala.inline
-  implicit class EventPropsMutableBuilder[Self <: EventProps[_], TEvent /* <: js.Object */] (val x: Self with EventProps[TEvent]) extends AnyVal {
+  implicit class EventPropsMutableBuilder[Self <: EventProps[?], TEvent /* <: js.Object */] (val x: Self & EventProps[TEvent]) extends AnyVal {
     
     @scala.inline
     def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])

@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageStatistics extends StObject {
   
   /**
     * The usage statistic sum organized by account ID.
     */
-  var SumByAccount: js.UndefOr[UsageAccountResultList] = js.native
+  var SumByAccount: js.UndefOr[UsageAccountResultList] = js.undefined
   
   /**
     * The usage statistic sum organized by on data source.
     */
-  var SumByDataSource: js.UndefOr[UsageDataSourceResultList] = js.native
+  var SumByDataSource: js.UndefOr[UsageDataSourceResultList] = js.undefined
   
   /**
     * The usage statistic sum organized by resource.
     */
-  var SumByResource: js.UndefOr[UsageResourceResultList] = js.native
+  var SumByResource: js.UndefOr[UsageResourceResultList] = js.undefined
   
   /**
     * Lists the top 50 resources that have generated the most GuardDuty usage, in order from most to least expensive.
     */
-  var TopResources: js.UndefOr[UsageResourceResultList] = js.native
+  var TopResources: js.UndefOr[UsageResourceResultList] = js.undefined
 }
 object UsageStatistics {
   

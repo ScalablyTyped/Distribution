@@ -537,40 +537,38 @@ import typings.devtoolsProtocol.mod.Protocol.WebAudio.NodesConnectedEvent
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.NodesDisconnectedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolMappingMod {
   
   object ProtocolMapping {
     
-    @js.native
     trait Commands extends StObject {
       
       /**
         * Disables the accessibility domain.
         */
       @JSName("Accessibility.disable")
-      var AccessibilityDotdisable: ParamsType = js.native
+      var AccessibilityDotdisable: ParamsType
       
       /**
         * Enables the accessibility domain which causes `AXNodeId`s to remain consistent between method calls.
         * This turns on accessibility for the page, which can impact performance until accessibility is disabled.
         */
       @JSName("Accessibility.enable")
-      var AccessibilityDotenable: ParamsType = js.native
+      var AccessibilityDotenable: ParamsType
       
       /**
         * Fetches the entire accessibility tree
         */
       @JSName("Accessibility.getFullAXTree")
-      var AccessibilityDotgetFullAXTree: ReturnTypeGetFullAXTreeResponse = js.native
+      var AccessibilityDotgetFullAXTree: ReturnTypeGetFullAXTreeResponse
       
       /**
         * Fetches the accessibility node and partial accessibility tree for this DOM node, if it exists.
         */
       @JSName("Accessibility.getPartialAXTree")
-      var AccessibilityDotgetPartialAXTree: ReturnTypeGetPartialAXTreeResponse = js.native
+      var AccessibilityDotgetPartialAXTree: ReturnTypeGetPartialAXTreeResponse
       
       /**
         * Query a DOM node's accessibility subtree for accessible name and role.
@@ -580,376 +578,376 @@ object protocolMappingMod {
         * `accessibleName` or `role` is specified, it returns all the accessibility nodes in the subtree.
         */
       @JSName("Accessibility.queryAXTree")
-      var AccessibilityDotqueryAXTree: ReturnTypeQueryAXTreeResponse = js.native
+      var AccessibilityDotqueryAXTree: ReturnTypeQueryAXTreeResponse
       
       /**
         * Disables animation domain notifications.
         */
       @JSName("Animation.disable")
-      var AnimationDotdisable: ParamsType = js.native
+      var AnimationDotdisable: ParamsType
       
       /**
         * Enables animation domain notifications.
         */
       @JSName("Animation.enable")
-      var AnimationDotenable: ParamsType = js.native
+      var AnimationDotenable: ParamsType
       
       /**
         * Returns the current time of the an animation.
         */
       @JSName("Animation.getCurrentTime")
-      var AnimationDotgetCurrentTime: ReturnTypeGetCurrentTimeResponse = js.native
+      var AnimationDotgetCurrentTime: ReturnTypeGetCurrentTimeResponse
       
       /**
         * Gets the playback rate of the document timeline.
         */
       @JSName("Animation.getPlaybackRate")
-      var AnimationDotgetPlaybackRate: ReturnTypeGetPlaybackRateResponse = js.native
+      var AnimationDotgetPlaybackRate: ReturnTypeGetPlaybackRateResponse
       
       /**
         * Releases a set of animations to no longer be manipulated.
         */
       @JSName("Animation.releaseAnimations")
-      var AnimationDotreleaseAnimations: `24` = js.native
+      var AnimationDotreleaseAnimations: `24`
       
       /**
         * Gets the remote object of the Animation.
         */
       @JSName("Animation.resolveAnimation")
-      var AnimationDotresolveAnimation: ReturnTypeResolveAnimationResponse = js.native
+      var AnimationDotresolveAnimation: ReturnTypeResolveAnimationResponse
       
       /**
         * Seek a set of animations to a particular time within each animation.
         */
       @JSName("Animation.seekAnimations")
-      var AnimationDotseekAnimations: `25` = js.native
+      var AnimationDotseekAnimations: `25`
       
       /**
         * Sets the paused state of a set of animations.
         */
       @JSName("Animation.setPaused")
-      var AnimationDotsetPaused: `26` = js.native
+      var AnimationDotsetPaused: `26`
       
       /**
         * Sets the playback rate of the document timeline.
         */
       @JSName("Animation.setPlaybackRate")
-      var AnimationDotsetPlaybackRate: `27` = js.native
+      var AnimationDotsetPlaybackRate: `27`
       
       /**
         * Sets the timing of an animation node.
         */
       @JSName("Animation.setTiming")
-      var AnimationDotsetTiming: `28` = js.native
+      var AnimationDotsetTiming: `28`
       
       /**
         * Enables application cache domain notifications.
         */
       @JSName("ApplicationCache.enable")
-      var ApplicationCacheDotenable: ParamsType = js.native
+      var ApplicationCacheDotenable: ParamsType
       
       /**
         * Returns relevant application cache data for the document in given frame.
         */
       @JSName("ApplicationCache.getApplicationCacheForFrame")
-      var ApplicationCacheDotgetApplicationCacheForFrame: ReturnTypeGetApplicationCacheForFrameResponse = js.native
+      var ApplicationCacheDotgetApplicationCacheForFrame: ReturnTypeGetApplicationCacheForFrameResponse
       
       /**
         * Returns array of frame identifiers with manifest urls for each frame containing a document
         * associated with some application cache.
         */
       @JSName("ApplicationCache.getFramesWithManifests")
-      var ApplicationCacheDotgetFramesWithManifests: ReturnTypeGetFramesWithManifestsResponse = js.native
+      var ApplicationCacheDotgetFramesWithManifests: ReturnTypeGetFramesWithManifestsResponse
       
       /**
         * Returns manifest URL for document in the given frame.
         */
       @JSName("ApplicationCache.getManifestForFrame")
-      var ApplicationCacheDotgetManifestForFrame: ReturnTypeGetManifestForFrameResponse = js.native
+      var ApplicationCacheDotgetManifestForFrame: ReturnTypeGetManifestForFrameResponse
       
       /**
         * Disables issues domain, prevents further issues from being reported to the client.
         */
       @JSName("Audits.disable")
-      var AuditsDotdisable: ParamsType = js.native
+      var AuditsDotdisable: ParamsType
       
       /**
         * Enables issues domain, sends the issues collected so far to the client by means of the
         * `issueAdded` event.
         */
       @JSName("Audits.enable")
-      var AuditsDotenable: ParamsType = js.native
+      var AuditsDotenable: ParamsType
       
       /**
         * Returns the response body and size if it were re-encoded with the specified settings. Only
         * applies to images.
         */
       @JSName("Audits.getEncodedResponse")
-      var AuditsDotgetEncodedResponse: ReturnTypeGetEncodedResponseResponse = js.native
+      var AuditsDotgetEncodedResponse: ReturnTypeGetEncodedResponseResponse
       
       /**
         * Clears all stored data for the service.
         */
       @JSName("BackgroundService.clearEvents")
-      var BackgroundServiceDotclearEvents: `32` = js.native
+      var BackgroundServiceDotclearEvents: `32`
       
       /**
         * Set the recording state for the service.
         */
       @JSName("BackgroundService.setRecording")
-      var BackgroundServiceDotsetRecording: `31` = js.native
+      var BackgroundServiceDotsetRecording: `31`
       
       /**
         * Enables event updates for the service.
         */
       @JSName("BackgroundService.startObserving")
-      var BackgroundServiceDotstartObserving: `29` = js.native
+      var BackgroundServiceDotstartObserving: `29`
       
       /**
         * Disables event updates for the service.
         */
       @JSName("BackgroundService.stopObserving")
-      var BackgroundServiceDotstopObserving: `30` = js.native
+      var BackgroundServiceDotstopObserving: `30`
       
       /**
         * Close browser gracefully.
         */
       @JSName("Browser.close")
-      var BrowserDotclose: ParamsType = js.native
+      var BrowserDotclose: ParamsType
       
       /**
         * Crashes browser on the main thread.
         */
       @JSName("Browser.crash")
-      var BrowserDotcrash: ParamsType = js.native
+      var BrowserDotcrash: ParamsType
       
       /**
         * Crashes GPU process.
         */
       @JSName("Browser.crashGpuProcess")
-      var BrowserDotcrashGpuProcess: ParamsType = js.native
+      var BrowserDotcrashGpuProcess: ParamsType
       
       /**
         * Returns the command line switches for the browser process if, and only if
         * --enable-automation is on the commandline.
         */
       @JSName("Browser.getBrowserCommandLine")
-      var BrowserDotgetBrowserCommandLine: ReturnTypeGetBrowserCommandLineResponse = js.native
+      var BrowserDotgetBrowserCommandLine: ReturnTypeGetBrowserCommandLineResponse
       
       /**
         * Get a Chrome histogram by name.
         */
       @JSName("Browser.getHistogram")
-      var BrowserDotgetHistogram: ReturnTypeGetHistogramResponse = js.native
+      var BrowserDotgetHistogram: ReturnTypeGetHistogramResponse
       
       /**
         * Get Chrome histograms.
         */
       @JSName("Browser.getHistograms")
-      var BrowserDotgetHistograms: ReturnTypeGetHistogramsResponse = js.native
+      var BrowserDotgetHistograms: ReturnTypeGetHistogramsResponse
       
       /**
         * Returns version information.
         */
       @JSName("Browser.getVersion")
-      var BrowserDotgetVersion: ReturnTypeGetVersionResponse = js.native
+      var BrowserDotgetVersion: ReturnTypeGetVersionResponse
       
       /**
         * Get position and size of the browser window.
         */
       @JSName("Browser.getWindowBounds")
-      var BrowserDotgetWindowBounds: ReturnTypeGetWindowBoundsResponse = js.native
+      var BrowserDotgetWindowBounds: ReturnTypeGetWindowBoundsResponse
       
       /**
         * Get the browser window that contains the devtools target.
         */
       @JSName("Browser.getWindowForTarget")
-      var BrowserDotgetWindowForTarget: ReturnTypeGetWindowForTargetResponse = js.native
+      var BrowserDotgetWindowForTarget: ReturnTypeGetWindowForTargetResponse
       
       /**
         * Grant specific permissions to the given origin and reject all others.
         */
       @JSName("Browser.grantPermissions")
-      var BrowserDotgrantPermissions: `34` = js.native
+      var BrowserDotgrantPermissions: `34`
       
       /**
         * Reset all permission management for all origins.
         */
       @JSName("Browser.resetPermissions")
-      var BrowserDotresetPermissions: `35` = js.native
+      var BrowserDotresetPermissions: `35`
       
       /**
         * Set dock tile details, platform-specific.
         */
       @JSName("Browser.setDockTile")
-      var BrowserDotsetDockTile: `38` = js.native
+      var BrowserDotsetDockTile: `38`
       
       /**
         * Set the behavior when downloading a file.
         */
       @JSName("Browser.setDownloadBehavior")
-      var BrowserDotsetDownloadBehavior: `36` = js.native
+      var BrowserDotsetDownloadBehavior: `36`
       
       /**
         * Set permission settings for given origin.
         */
       @JSName("Browser.setPermission")
-      var BrowserDotsetPermission: `33` = js.native
+      var BrowserDotsetPermission: `33`
       
       /**
         * Set position and/or size of the browser window.
         */
       @JSName("Browser.setWindowBounds")
-      var BrowserDotsetWindowBounds: `37` = js.native
+      var BrowserDotsetWindowBounds: `37`
       
       /**
         * Inserts a new rule with the given `ruleText` in a stylesheet with given `styleSheetId`, at the
         * position specified by `location`.
         */
       @JSName("CSS.addRule")
-      var CSSDotaddRule: ReturnTypeAddRuleResponse = js.native
+      var CSSDotaddRule: ReturnTypeAddRuleResponse
       
       /**
         * Returns all class names from specified stylesheet.
         */
       @JSName("CSS.collectClassNames")
-      var CSSDotcollectClassNames: ReturnTypeCollectClassNamesResponse = js.native
+      var CSSDotcollectClassNames: ReturnTypeCollectClassNamesResponse
       
       /**
         * Creates a new special "via-inspector" stylesheet in the frame with given `frameId`.
         */
       @JSName("CSS.createStyleSheet")
-      var CSSDotcreateStyleSheet: ReturnTypeCreateStyleSheetResponse = js.native
+      var CSSDotcreateStyleSheet: ReturnTypeCreateStyleSheetResponse
       
       /**
         * Disables the CSS agent for the given page.
         */
       @JSName("CSS.disable")
-      var CSSDotdisable: ParamsType = js.native
+      var CSSDotdisable: ParamsType
       
       /**
         * Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been
         * enabled until the result of this command is received.
         */
       @JSName("CSS.enable")
-      var CSSDotenable: ParamsType = js.native
+      var CSSDotenable: ParamsType
       
       /**
         * Ensures that the given node will have specified pseudo-classes whenever its style is computed by
         * the browser.
         */
       @JSName("CSS.forcePseudoState")
-      var CSSDotforcePseudoState: `39` = js.native
+      var CSSDotforcePseudoState: `39`
       
       @JSName("CSS.getBackgroundColors")
-      var CSSDotgetBackgroundColors: ReturnTypeGetBackgroundColorsResponse = js.native
+      var CSSDotgetBackgroundColors: ReturnTypeGetBackgroundColorsResponse
       
       /**
         * Returns the computed style for a DOM node identified by `nodeId`.
         */
       @JSName("CSS.getComputedStyleForNode")
-      var CSSDotgetComputedStyleForNode: ReturnTypeGetComputedStyleForNodeResponse = js.native
+      var CSSDotgetComputedStyleForNode: ReturnTypeGetComputedStyleForNodeResponse
       
       /**
         * Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM
         * attributes) for a DOM node identified by `nodeId`.
         */
       @JSName("CSS.getInlineStylesForNode")
-      var CSSDotgetInlineStylesForNode: ReturnTypeGetInlineStylesForNodeResponse = js.native
+      var CSSDotgetInlineStylesForNode: ReturnTypeGetInlineStylesForNodeResponse
       
       /**
         * Returns requested styles for a DOM node identified by `nodeId`.
         */
       @JSName("CSS.getMatchedStylesForNode")
-      var CSSDotgetMatchedStylesForNode: ReturnTypeGetMatchedStylesForNodeResponse = js.native
+      var CSSDotgetMatchedStylesForNode: ReturnTypeGetMatchedStylesForNodeResponse
       
       /**
         * Returns all media queries parsed by the rendering engine.
         */
       @JSName("CSS.getMediaQueries")
-      var CSSDotgetMediaQueries: ReturnTypeGetMediaQueriesResponse = js.native
+      var CSSDotgetMediaQueries: ReturnTypeGetMediaQueriesResponse
       
       /**
         * Requests information about platform fonts which we used to render child TextNodes in the given
         * node.
         */
       @JSName("CSS.getPlatformFontsForNode")
-      var CSSDotgetPlatformFontsForNode: ReturnTypeGetPlatformFontsForNodeResponse = js.native
+      var CSSDotgetPlatformFontsForNode: ReturnTypeGetPlatformFontsForNodeResponse
       
       /**
         * Returns the current textual content for a stylesheet.
         */
       @JSName("CSS.getStyleSheetText")
-      var CSSDotgetStyleSheetText: ReturnTypeGetStyleSheetTextResponse = js.native
+      var CSSDotgetStyleSheetText: ReturnTypeGetStyleSheetTextResponse
       
       /**
         * Find a rule with the given active property for the given node and set the new value for this
         * property
         */
       @JSName("CSS.setEffectivePropertyValueForNode")
-      var CSSDotsetEffectivePropertyValueForNode: `41` = js.native
+      var CSSDotsetEffectivePropertyValueForNode: `41`
       
       /**
         * Modifies the keyframe rule key text.
         */
       @JSName("CSS.setKeyframeKey")
-      var CSSDotsetKeyframeKey: ReturnTypeSetKeyframeKeyResponse = js.native
+      var CSSDotsetKeyframeKey: ReturnTypeSetKeyframeKeyResponse
       
       /**
         * Enables/disables rendering of local CSS fonts (enabled by default).
         */
       @JSName("CSS.setLocalFontsEnabled")
-      var CSSDotsetLocalFontsEnabled: `42` = js.native
+      var CSSDotsetLocalFontsEnabled: `42`
       
       /**
         * Modifies the rule selector.
         */
       @JSName("CSS.setMediaText")
-      var CSSDotsetMediaText: ReturnTypeSetMediaTextResponse = js.native
+      var CSSDotsetMediaText: ReturnTypeSetMediaTextResponse
       
       /**
         * Modifies the rule selector.
         */
       @JSName("CSS.setRuleSelector")
-      var CSSDotsetRuleSelector: ReturnTypeSetRuleSelectorResponse = js.native
+      var CSSDotsetRuleSelector: ReturnTypeSetRuleSelectorResponse
       
       /**
         * Sets the new stylesheet text.
         */
       @JSName("CSS.setStyleSheetText")
-      var CSSDotsetStyleSheetText: ReturnTypeSetStyleSheetTextResponse = js.native
+      var CSSDotsetStyleSheetText: ReturnTypeSetStyleSheetTextResponse
       
       /**
         * Applies specified style edits one after another in the given order.
         */
       @JSName("CSS.setStyleTexts")
-      var CSSDotsetStyleTexts: ReturnTypeSetStyleTextsResponse = js.native
+      var CSSDotsetStyleTexts: ReturnTypeSetStyleTextsResponse
       
       /**
         * Enables the selector recording.
         */
       @JSName("CSS.startRuleUsageTracking")
-      var CSSDotstartRuleUsageTracking: ParamsType = js.native
+      var CSSDotstartRuleUsageTracking: ParamsType
       
       /**
         * Stop tracking rule usage and return the list of rules that were used since last call to
         * `takeCoverageDelta` (or since start of coverage instrumentation)
         */
       @JSName("CSS.stopRuleUsageTracking")
-      var CSSDotstopRuleUsageTracking: ReturnTypeStopRuleUsageTrackingResponse = js.native
+      var CSSDotstopRuleUsageTracking: ReturnTypeStopRuleUsageTrackingResponse
       
       /**
         * Polls the next batch of computed style updates.
         */
       @JSName("CSS.takeComputedStyleUpdates")
-      var CSSDottakeComputedStyleUpdates: ReturnTypeTakeComputedStyleUpdatesResponse = js.native
+      var CSSDottakeComputedStyleUpdates: ReturnTypeTakeComputedStyleUpdatesResponse
       
       /**
         * Obtain list of rules that became used since last call to this method (or since start of coverage
         * instrumentation)
         */
       @JSName("CSS.takeCoverageDelta")
-      var CSSDottakeCoverageDelta: ReturnTypeTakeCoverageDeltaResponse = js.native
+      var CSSDottakeCoverageDelta: ReturnTypeTakeCoverageDeltaResponse
       
       /**
         * Starts tracking the given computed styles for updates. The specified array of properties
@@ -960,43 +958,43 @@ object protocolMappingMod {
         * to the front-end, no updates will be issued for the node.
         */
       @JSName("CSS.trackComputedStyleUpdates")
-      var CSSDottrackComputedStyleUpdates: `40` = js.native
+      var CSSDottrackComputedStyleUpdates: `40`
       
       /**
         * Deletes a cache.
         */
       @JSName("CacheStorage.deleteCache")
-      var CacheStorageDotdeleteCache: `43` = js.native
+      var CacheStorageDotdeleteCache: `43`
       
       /**
         * Deletes a cache entry.
         */
       @JSName("CacheStorage.deleteEntry")
-      var CacheStorageDotdeleteEntry: `44` = js.native
+      var CacheStorageDotdeleteEntry: `44`
       
       /**
         * Requests cache names.
         */
       @JSName("CacheStorage.requestCacheNames")
-      var CacheStorageDotrequestCacheNames: ReturnTypeRequestCacheNamesResponse = js.native
+      var CacheStorageDotrequestCacheNames: ReturnTypeRequestCacheNamesResponse
       
       /**
         * Fetches cache entry.
         */
       @JSName("CacheStorage.requestCachedResponse")
-      var CacheStorageDotrequestCachedResponse: ReturnTypeRequestCachedResponseResponse = js.native
+      var CacheStorageDotrequestCachedResponse: ReturnTypeRequestCachedResponseResponse
       
       /**
         * Requests data from cache.
         */
       @JSName("CacheStorage.requestEntries")
-      var CacheStorageDotrequestEntries: ReturnTypeRequestEntriesResponse = js.native
+      var CacheStorageDotrequestEntries: ReturnTypeRequestEntriesResponse
       
       /**
         * Stops observing for sinks and issues.
         */
       @JSName("Cast.disable")
-      var CastDotdisable: ParamsType = js.native
+      var CastDotdisable: ParamsType
       
       /**
         * Starts observing for sinks that can be used for tab mirroring, and if set,
@@ -1006,176 +1004,176 @@ object protocolMappingMod {
         * an |issueUpdated| event is fired.
         */
       @JSName("Cast.enable")
-      var CastDotenable: `45` = js.native
+      var CastDotenable: `45`
       
       /**
         * Sets a sink to be used when the web page requests the browser to choose a
         * sink via Presentation API, Remote Playback API, or Cast SDK.
         */
       @JSName("Cast.setSinkToUse")
-      var CastDotsetSinkToUse: `46` = js.native
+      var CastDotsetSinkToUse: `46`
       
       /**
         * Starts mirroring the tab to the sink.
         */
       @JSName("Cast.startTabMirroring")
-      var CastDotstartTabMirroring: `47` = js.native
+      var CastDotstartTabMirroring: `47`
       
       /**
         * Stops the active Cast session on the sink.
         */
       @JSName("Cast.stopCasting")
-      var CastDotstopCasting: `48` = js.native
+      var CastDotstopCasting: `48`
       
       /**
         * Does nothing.
         */
       @JSName("Console.clearMessages")
-      var ConsoleDotclearMessages: ParamsType = js.native
+      var ConsoleDotclearMessages: ParamsType
       
       /**
         * Disables console domain, prevents further console messages from being reported to the client.
         */
       @JSName("Console.disable")
-      var ConsoleDotdisable: ParamsType = js.native
+      var ConsoleDotdisable: ParamsType
       
       /**
         * Enables console domain, sends the messages collected so far to the client by means of the
         * `messageAdded` notification.
         */
       @JSName("Console.enable")
-      var ConsoleDotenable: ParamsType = js.native
+      var ConsoleDotenable: ParamsType
       
       /**
         * Returns event listeners of the given object.
         */
       @JSName("DOMDebugger.getEventListeners")
-      var DOMDebuggerDotgetEventListeners: ReturnTypeGetEventListenersResponse = js.native
+      var DOMDebuggerDotgetEventListeners: ReturnTypeGetEventListenersResponse
       
       /**
         * Removes DOM breakpoint that was set using `setDOMBreakpoint`.
         */
       @JSName("DOMDebugger.removeDOMBreakpoint")
-      var DOMDebuggerDotremoveDOMBreakpoint: `62` = js.native
+      var DOMDebuggerDotremoveDOMBreakpoint: `62`
       
       /**
         * Removes breakpoint on particular DOM event.
         */
       @JSName("DOMDebugger.removeEventListenerBreakpoint")
-      var DOMDebuggerDotremoveEventListenerBreakpoint: `63` = js.native
+      var DOMDebuggerDotremoveEventListenerBreakpoint: `63`
       
       /**
         * Removes breakpoint on particular native event.
         */
       @JSName("DOMDebugger.removeInstrumentationBreakpoint")
-      var DOMDebuggerDotremoveInstrumentationBreakpoint: `64` = js.native
+      var DOMDebuggerDotremoveInstrumentationBreakpoint: `64`
       
       /**
         * Removes breakpoint from XMLHttpRequest.
         */
       @JSName("DOMDebugger.removeXHRBreakpoint")
-      var DOMDebuggerDotremoveXHRBreakpoint: `65` = js.native
+      var DOMDebuggerDotremoveXHRBreakpoint: `65`
       
       /**
         * Sets breakpoint on particular operation with DOM.
         */
       @JSName("DOMDebugger.setDOMBreakpoint")
-      var DOMDebuggerDotsetDOMBreakpoint: `66` = js.native
+      var DOMDebuggerDotsetDOMBreakpoint: `66`
       
       /**
         * Sets breakpoint on particular DOM event.
         */
       @JSName("DOMDebugger.setEventListenerBreakpoint")
-      var DOMDebuggerDotsetEventListenerBreakpoint: `67` = js.native
+      var DOMDebuggerDotsetEventListenerBreakpoint: `67`
       
       /**
         * Sets breakpoint on particular native event.
         */
       @JSName("DOMDebugger.setInstrumentationBreakpoint")
-      var DOMDebuggerDotsetInstrumentationBreakpoint: `68` = js.native
+      var DOMDebuggerDotsetInstrumentationBreakpoint: `68`
       
       /**
         * Sets breakpoint on XMLHttpRequest.
         */
       @JSName("DOMDebugger.setXHRBreakpoint")
-      var DOMDebuggerDotsetXHRBreakpoint: `69` = js.native
+      var DOMDebuggerDotsetXHRBreakpoint: `69`
       
       /**
         * Collects class names for the node with given id and all of it's child nodes.
         */
       @JSName("DOM.collectClassNamesFromSubtree")
-      var DOMDotcollectClassNamesFromSubtree: ReturnTypeCollectClassNamesFromSubtreeResponse = js.native
+      var DOMDotcollectClassNamesFromSubtree: ReturnTypeCollectClassNamesFromSubtreeResponse
       
       /**
         * Creates a deep copy of the specified node and places it into the target container before the
         * given anchor.
         */
       @JSName("DOM.copyTo")
-      var DOMDotcopyTo: ReturnTypeCopyToResponse = js.native
+      var DOMDotcopyTo: ReturnTypeCopyToResponse
       
       /**
         * Describes node given its id, does not require domain to be enabled. Does not start tracking any
         * objects, can be used for automation.
         */
       @JSName("DOM.describeNode")
-      var DOMDotdescribeNode: ReturnTypeDescribeNodeResponse = js.native
+      var DOMDotdescribeNode: ReturnTypeDescribeNodeResponse
       
       /**
         * Disables DOM agent for the given page.
         */
       @JSName("DOM.disable")
-      var DOMDotdisable: ParamsType = js.native
+      var DOMDotdisable: ParamsType
       
       /**
         * Discards search results from the session with the given id. `getSearchResults` should no longer
         * be called for that search.
         */
       @JSName("DOM.discardSearchResults")
-      var DOMDotdiscardSearchResults: `50` = js.native
+      var DOMDotdiscardSearchResults: `50`
       
       /**
         * Enables DOM agent for the given page.
         */
       @JSName("DOM.enable")
-      var DOMDotenable: ParamsType = js.native
+      var DOMDotenable: ParamsType
       
       /**
         * Focuses the given element.
         */
       @JSName("DOM.focus")
-      var DOMDotfocus: `51` = js.native
+      var DOMDotfocus: `51`
       
       /**
         * Returns attributes for the specified node.
         */
       @JSName("DOM.getAttributes")
-      var DOMDotgetAttributes: ReturnTypeGetAttributesResponse = js.native
+      var DOMDotgetAttributes: ReturnTypeGetAttributesResponse
       
       /**
         * Returns boxes for the given node.
         */
       @JSName("DOM.getBoxModel")
-      var DOMDotgetBoxModel: ReturnTypeGetBoxModelResponse = js.native
+      var DOMDotgetBoxModel: ReturnTypeGetBoxModelResponse
       
       /**
         * Returns quads that describe node position on the page. This method
         * might return multiple quads for inline nodes.
         */
       @JSName("DOM.getContentQuads")
-      var DOMDotgetContentQuads: ReturnTypeGetContentQuadsResponse = js.native
+      var DOMDotgetContentQuads: ReturnTypeGetContentQuadsResponse
       
       /**
         * Returns the root DOM node (and optionally the subtree) to the caller.
         */
       @JSName("DOM.getDocument")
-      var DOMDotgetDocument: ReturnTypeGetDocumentResponse = js.native
+      var DOMDotgetDocument: ReturnTypeGetDocumentResponse
       
       /**
         * Returns file information for the given
         * File wrapper.
         */
       @JSName("DOM.getFileInfo")
-      var DOMDotgetFileInfo: ReturnTypeGetFileInfoResponse = js.native
+      var DOMDotgetFileInfo: ReturnTypeGetFileInfoResponse
       
       /**
         * Returns the root DOM node (and optionally the subtree) to the caller.
@@ -1183,130 +1181,130 @@ object protocolMappingMod {
         * Use DOMSnapshot.captureSnapshot instead.
         */
       @JSName("DOM.getFlattenedDocument")
-      var DOMDotgetFlattenedDocument: ReturnTypeGetFlattenedDocumentResponse = js.native
+      var DOMDotgetFlattenedDocument: ReturnTypeGetFlattenedDocumentResponse
       
       /**
         * Returns iframe node that owns iframe with the given domain.
         */
       @JSName("DOM.getFrameOwner")
-      var DOMDotgetFrameOwner: ReturnTypeGetFrameOwnerResponse = js.native
+      var DOMDotgetFrameOwner: ReturnTypeGetFrameOwnerResponse
       
       /**
         * Returns node id at given location. Depending on whether DOM domain is enabled, nodeId is
         * either returned or not.
         */
       @JSName("DOM.getNodeForLocation")
-      var DOMDotgetNodeForLocation: ReturnTypeGetNodeForLocationResponse = js.native
+      var DOMDotgetNodeForLocation: ReturnTypeGetNodeForLocationResponse
       
       /**
         * Gets stack traces associated with a Node. As of now, only provides stack trace for Node creation.
         */
       @JSName("DOM.getNodeStackTraces")
-      var DOMDotgetNodeStackTraces: ReturnTypeGetNodeStackTracesResponse = js.native
+      var DOMDotgetNodeStackTraces: ReturnTypeGetNodeStackTracesResponse
       
       /**
         * Finds nodes with a given computed style in a subtree.
         */
       @JSName("DOM.getNodesForSubtreeByStyle")
-      var DOMDotgetNodesForSubtreeByStyle: ReturnTypeGetNodesForSubtreeByStyleResponse = js.native
+      var DOMDotgetNodesForSubtreeByStyle: ReturnTypeGetNodesForSubtreeByStyleResponse
       
       /**
         * Returns node's HTML markup.
         */
       @JSName("DOM.getOuterHTML")
-      var DOMDotgetOuterHTML: ReturnTypeGetOuterHTMLResponse = js.native
+      var DOMDotgetOuterHTML: ReturnTypeGetOuterHTMLResponse
       
       /**
         * Returns the id of the nearest ancestor that is a relayout boundary.
         */
       @JSName("DOM.getRelayoutBoundary")
-      var DOMDotgetRelayoutBoundary: ReturnTypeGetRelayoutBoundaryResponse = js.native
+      var DOMDotgetRelayoutBoundary: ReturnTypeGetRelayoutBoundaryResponse
       
       /**
         * Returns search results from given `fromIndex` to given `toIndex` from the search with the given
         * identifier.
         */
       @JSName("DOM.getSearchResults")
-      var DOMDotgetSearchResults: ReturnTypeGetSearchResultsResponse = js.native
+      var DOMDotgetSearchResults: ReturnTypeGetSearchResultsResponse
       
       /**
         * Hides any highlight.
         */
       @JSName("DOM.hideHighlight")
-      var DOMDothideHighlight: ParamsType = js.native
+      var DOMDothideHighlight: ParamsType
       
       /**
         * Highlights DOM node.
         */
       @JSName("DOM.highlightNode")
-      var DOMDothighlightNode: ParamsType = js.native
+      var DOMDothighlightNode: ParamsType
       
       /**
         * Highlights given rectangle.
         */
       @JSName("DOM.highlightRect")
-      var DOMDothighlightRect: ParamsType = js.native
+      var DOMDothighlightRect: ParamsType
       
       /**
         * Marks last undoable state.
         */
       @JSName("DOM.markUndoableState")
-      var DOMDotmarkUndoableState: ParamsType = js.native
+      var DOMDotmarkUndoableState: ParamsType
       
       /**
         * Moves node into the new container, places it before the given anchor.
         */
       @JSName("DOM.moveTo")
-      var DOMDotmoveTo: ReturnTypeMoveToResponse = js.native
+      var DOMDotmoveTo: ReturnTypeMoveToResponse
       
       /**
         * Searches for a given string in the DOM tree. Use `getSearchResults` to access search results or
         * `cancelSearch` to end this search session.
         */
       @JSName("DOM.performSearch")
-      var DOMDotperformSearch: ReturnTypePerformSearchResponse = js.native
+      var DOMDotperformSearch: ReturnTypePerformSearchResponse
       
       /**
         * Requests that the node is sent to the caller given its path. // FIXME, use XPath
         */
       @JSName("DOM.pushNodeByPathToFrontend")
-      var DOMDotpushNodeByPathToFrontend: ReturnTypePushNodeByPathToFrontendResponse = js.native
+      var DOMDotpushNodeByPathToFrontend: ReturnTypePushNodeByPathToFrontendResponse
       
       /**
         * Requests that a batch of nodes is sent to the caller given their backend node ids.
         */
       @JSName("DOM.pushNodesByBackendIdsToFrontend")
-      var DOMDotpushNodesByBackendIdsToFrontend: ReturnTypePushNodesByBackendIdsToFrontendResponse = js.native
+      var DOMDotpushNodesByBackendIdsToFrontend: ReturnTypePushNodesByBackendIdsToFrontendResponse
       
       /**
         * Executes `querySelector` on a given node.
         */
       @JSName("DOM.querySelector")
-      var DOMDotquerySelector: ReturnTypeQuerySelectorResponse = js.native
+      var DOMDotquerySelector: ReturnTypeQuerySelectorResponse
       
       /**
         * Executes `querySelectorAll` on a given node.
         */
       @JSName("DOM.querySelectorAll")
-      var DOMDotquerySelectorAll: ReturnTypeQuerySelectorAllResponse = js.native
+      var DOMDotquerySelectorAll: ReturnTypeQuerySelectorAllResponse
       
       /**
         * Re-does the last undone action.
         */
       @JSName("DOM.redo")
-      var DOMDotredo: ParamsType = js.native
+      var DOMDotredo: ParamsType
       
       /**
         * Removes attribute with given name from an element with given id.
         */
       @JSName("DOM.removeAttribute")
-      var DOMDotremoveAttribute: `52` = js.native
+      var DOMDotremoveAttribute: `52`
       
       /**
         * Removes node with given id.
         */
       @JSName("DOM.removeNode")
-      var DOMDotremoveNode: `53` = js.native
+      var DOMDotremoveNode: `53`
       
       /**
         * Requests that children of the node with given id are returned to the caller in form of
@@ -1314,7 +1312,7 @@ object protocolMappingMod {
         * the specified depth.
         */
       @JSName("DOM.requestChildNodes")
-      var DOMDotrequestChildNodes: `54` = js.native
+      var DOMDotrequestChildNodes: `54`
       
       /**
         * Requests that the node is sent to the caller given the JavaScript node object reference. All
@@ -1322,13 +1320,13 @@ object protocolMappingMod {
         * `setChildNodes` notifications.
         */
       @JSName("DOM.requestNode")
-      var DOMDotrequestNode: ReturnTypeRequestNodeResponse = js.native
+      var DOMDotrequestNode: ReturnTypeRequestNodeResponse
       
       /**
         * Resolves the JavaScript node object for a given NodeId or BackendNodeId.
         */
       @JSName("DOM.resolveNode")
-      var DOMDotresolveNode: ReturnTypeResolveNodeResponse = js.native
+      var DOMDotresolveNode: ReturnTypeResolveNodeResponse
       
       /**
         * Scrolls the specified rect of the given node into view if not already visible.
@@ -1336,63 +1334,63 @@ object protocolMappingMod {
         * to identify the node.
         */
       @JSName("DOM.scrollIntoViewIfNeeded")
-      var DOMDotscrollIntoViewIfNeeded: `49` = js.native
+      var DOMDotscrollIntoViewIfNeeded: `49`
       
       /**
         * Sets attribute for an element with given id.
         */
       @JSName("DOM.setAttributeValue")
-      var DOMDotsetAttributeValue: `55` = js.native
+      var DOMDotsetAttributeValue: `55`
       
       /**
         * Sets attributes on element with given id. This method is useful when user edits some existing
         * attribute value and types in several attribute name/value pairs.
         */
       @JSName("DOM.setAttributesAsText")
-      var DOMDotsetAttributesAsText: `56` = js.native
+      var DOMDotsetAttributesAsText: `56`
       
       /**
         * Sets files for the given file input element.
         */
       @JSName("DOM.setFileInputFiles")
-      var DOMDotsetFileInputFiles: `57` = js.native
+      var DOMDotsetFileInputFiles: `57`
       
       /**
         * Enables console to refer to the node with given id via $x (see Command Line API for more details
         * $x functions).
         */
       @JSName("DOM.setInspectedNode")
-      var DOMDotsetInspectedNode: `59` = js.native
+      var DOMDotsetInspectedNode: `59`
       
       /**
         * Sets node name for a node with given id.
         */
       @JSName("DOM.setNodeName")
-      var DOMDotsetNodeName: ReturnTypeSetNodeNameResponse = js.native
+      var DOMDotsetNodeName: ReturnTypeSetNodeNameResponse
       
       /**
         * Sets if stack traces should be captured for Nodes. See `Node.getNodeStackTraces`. Default is disabled.
         */
       @JSName("DOM.setNodeStackTracesEnabled")
-      var DOMDotsetNodeStackTracesEnabled: `58` = js.native
+      var DOMDotsetNodeStackTracesEnabled: `58`
       
       /**
         * Sets node value for a node with given id.
         */
       @JSName("DOM.setNodeValue")
-      var DOMDotsetNodeValue: `60` = js.native
+      var DOMDotsetNodeValue: `60`
       
       /**
         * Sets node HTML markup, returns new node id.
         */
       @JSName("DOM.setOuterHTML")
-      var DOMDotsetOuterHTML: `61` = js.native
+      var DOMDotsetOuterHTML: `61`
       
       /**
         * Undoes the last performed action.
         */
       @JSName("DOM.undo")
-      var DOMDotundo: ParamsType = js.native
+      var DOMDotundo: ParamsType
       
       /**
         * Returns a document snapshot, including the full DOM tree of the root node (including iframes,
@@ -1401,19 +1399,19 @@ object protocolMappingMod {
         * flattened.
         */
       @JSName("DOMSnapshot.captureSnapshot")
-      var DOMSnapshotDotcaptureSnapshot: ReturnTypeCaptureSnapshotResponse = js.native
+      var DOMSnapshotDotcaptureSnapshot: ReturnTypeCaptureSnapshotResponse
       
       /**
         * Disables DOM snapshot agent for the given page.
         */
       @JSName("DOMSnapshot.disable")
-      var DOMSnapshotDotdisable: ParamsType = js.native
+      var DOMSnapshotDotdisable: ParamsType
       
       /**
         * Enables DOM snapshot agent for the given page.
         */
       @JSName("DOMSnapshot.enable")
-      var DOMSnapshotDotenable: ParamsType = js.native
+      var DOMSnapshotDotenable: ParamsType
       
       /**
         * Returns a document snapshot, including the full DOM tree of the root node (including iframes,
@@ -1422,144 +1420,144 @@ object protocolMappingMod {
         * flattened.
         */
       @JSName("DOMSnapshot.getSnapshot")
-      var DOMSnapshotDotgetSnapshot: ReturnTypeGetSnapshotResponse = js.native
+      var DOMSnapshotDotgetSnapshot: ReturnTypeGetSnapshotResponse
       
       @JSName("DOMStorage.clear")
-      var DOMStorageDotclear: `70` = js.native
+      var DOMStorageDotclear: `70`
       
       /**
         * Disables storage tracking, prevents storage events from being sent to the client.
         */
       @JSName("DOMStorage.disable")
-      var DOMStorageDotdisable: ParamsType = js.native
+      var DOMStorageDotdisable: ParamsType
       
       /**
         * Enables storage tracking, storage events will now be delivered to the client.
         */
       @JSName("DOMStorage.enable")
-      var DOMStorageDotenable: ParamsType = js.native
+      var DOMStorageDotenable: ParamsType
       
       @JSName("DOMStorage.getDOMStorageItems")
-      var DOMStorageDotgetDOMStorageItems: ReturnTypeGetDOMStorageItemsResponse = js.native
+      var DOMStorageDotgetDOMStorageItems: ReturnTypeGetDOMStorageItemsResponse
       
       @JSName("DOMStorage.removeDOMStorageItem")
-      var DOMStorageDotremoveDOMStorageItem: `71` = js.native
+      var DOMStorageDotremoveDOMStorageItem: `71`
       
       @JSName("DOMStorage.setDOMStorageItem")
-      var DOMStorageDotsetDOMStorageItem: `72` = js.native
+      var DOMStorageDotsetDOMStorageItem: `72`
       
       /**
         * Disables database tracking, prevents database events from being sent to the client.
         */
       @JSName("Database.disable")
-      var DatabaseDotdisable: ParamsType = js.native
+      var DatabaseDotdisable: ParamsType
       
       /**
         * Enables database tracking, database events will now be delivered to the client.
         */
       @JSName("Database.enable")
-      var DatabaseDotenable: ParamsType = js.native
+      var DatabaseDotenable: ParamsType
       
       @JSName("Database.executeSQL")
-      var DatabaseDotexecuteSQL: ReturnTypeExecuteSQLResponse = js.native
+      var DatabaseDotexecuteSQL: ReturnTypeExecuteSQLResponse
       
       @JSName("Database.getDatabaseTableNames")
-      var DatabaseDotgetDatabaseTableNames: ReturnTypeGetDatabaseTableNamesResponse = js.native
+      var DatabaseDotgetDatabaseTableNames: ReturnTypeGetDatabaseTableNamesResponse
       
       /**
         * Continues execution until specific location is reached.
         */
       @JSName("Debugger.continueToLocation")
-      var DebuggerDotcontinueToLocation: ReturnType = js.native
+      var DebuggerDotcontinueToLocation: ReturnType
       
       /**
         * Disables debugger for given page.
         */
       @JSName("Debugger.disable")
-      var DebuggerDotdisable: ParamsType = js.native
+      var DebuggerDotdisable: ParamsType
       
       /**
         * Enables debugger for the given page. Clients should not assume that the debugging has been
         * enabled until the result for this command is received.
         */
       @JSName("Debugger.enable")
-      var DebuggerDotenable: ParamsTypeReturnType = js.native
+      var DebuggerDotenable: ParamsTypeReturnType
       
       /**
         * Evaluates expression on a given call frame.
         */
       @JSName("Debugger.evaluateOnCallFrame")
-      var DebuggerDotevaluateOnCallFrame: ReturnTypeEvaluateOnCallFrameResponse = js.native
+      var DebuggerDotevaluateOnCallFrame: ReturnTypeEvaluateOnCallFrameResponse
       
       /**
         * Execute a Wasm Evaluator module on a given call frame.
         */
       @JSName("Debugger.executeWasmEvaluator")
-      var DebuggerDotexecuteWasmEvaluator: ReturnTypeExecuteWasmEvaluatorResponse = js.native
+      var DebuggerDotexecuteWasmEvaluator: ReturnTypeExecuteWasmEvaluatorResponse
       
       /**
         * Returns possible locations for breakpoint. scriptId in start and end range locations should be
         * the same.
         */
       @JSName("Debugger.getPossibleBreakpoints")
-      var DebuggerDotgetPossibleBreakpoints: ReturnTypeGetPossibleBreakpointsResponse = js.native
+      var DebuggerDotgetPossibleBreakpoints: ReturnTypeGetPossibleBreakpointsResponse
       
       /**
         * Returns source for the script with given id.
         */
       @JSName("Debugger.getScriptSource")
-      var DebuggerDotgetScriptSource: ReturnTypeGetScriptSourceResponse = js.native
+      var DebuggerDotgetScriptSource: ReturnTypeGetScriptSourceResponse
       
       /**
         * Returns stack trace with given `stackTraceId`.
         */
       @JSName("Debugger.getStackTrace")
-      var DebuggerDotgetStackTrace: ReturnTypeGetStackTraceResponse = js.native
+      var DebuggerDotgetStackTrace: ReturnTypeGetStackTraceResponse
       
       /**
         * This command is deprecated. Use getScriptSource instead.
         */
       @JSName("Debugger.getWasmBytecode")
-      var DebuggerDotgetWasmBytecode: ReturnTypeGetWasmBytecodeResponse = js.native
+      var DebuggerDotgetWasmBytecode: ReturnTypeGetWasmBytecodeResponse
       
       /**
         * Stops on the next JavaScript statement.
         */
       @JSName("Debugger.pause")
-      var DebuggerDotpause: ParamsType = js.native
+      var DebuggerDotpause: ParamsType
       
       @JSName("Debugger.pauseOnAsyncCall")
-      var DebuggerDotpauseOnAsyncCall: ReturnTypeVoid = js.native
+      var DebuggerDotpauseOnAsyncCall: ReturnTypeVoid
       
       /**
         * Removes JavaScript breakpoint.
         */
       @JSName("Debugger.removeBreakpoint")
-      var DebuggerDotremoveBreakpoint: ParamsTypeReturnTypeVoid = js.native
+      var DebuggerDotremoveBreakpoint: ParamsTypeReturnTypeVoid
       
       /**
         * Restarts particular call frame from the beginning.
         */
       @JSName("Debugger.restartFrame")
-      var DebuggerDotrestartFrame: ReturnTypeRestartFrameResponse = js.native
+      var DebuggerDotrestartFrame: ReturnTypeRestartFrameResponse
       
       /**
         * Resumes JavaScript execution.
         */
       @JSName("Debugger.resume")
-      var DebuggerDotresume: `0` = js.native
+      var DebuggerDotresume: `0`
       
       /**
         * Searches for given string in script content.
         */
       @JSName("Debugger.searchInContent")
-      var DebuggerDotsearchInContent: ReturnTypeSearchInContentResponse = js.native
+      var DebuggerDotsearchInContent: ReturnTypeSearchInContentResponse
       
       /**
         * Enables or disables async call stacks tracking.
         */
       @JSName("Debugger.setAsyncCallStackDepth")
-      var DebuggerDotsetAsyncCallStackDepth: `1` = js.native
+      var DebuggerDotsetAsyncCallStackDepth: `1`
       
       /**
         * Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in
@@ -1567,7 +1565,7 @@ object protocolMappingMod {
         * performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
         */
       @JSName("Debugger.setBlackboxPatterns")
-      var DebuggerDotsetBlackboxPatterns: `2` = js.native
+      var DebuggerDotsetBlackboxPatterns: `2`
       
       /**
         * Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted
@@ -1576,13 +1574,13 @@ object protocolMappingMod {
         * blackboxed. Array should be sorted.
         */
       @JSName("Debugger.setBlackboxedRanges")
-      var DebuggerDotsetBlackboxedRanges: `3` = js.native
+      var DebuggerDotsetBlackboxedRanges: `3`
       
       /**
         * Sets JavaScript breakpoint at a given location.
         */
       @JSName("Debugger.setBreakpoint")
-      var DebuggerDotsetBreakpoint: ReturnTypeSetBreakpointResponse = js.native
+      var DebuggerDotsetBreakpoint: ReturnTypeSetBreakpointResponse
       
       /**
         * Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this
@@ -1591,7 +1589,7 @@ object protocolMappingMod {
         * `breakpointResolved` events issued. This logical breakpoint will survive page reloads.
         */
       @JSName("Debugger.setBreakpointByUrl")
-      var DebuggerDotsetBreakpointByUrl: ReturnTypeSetBreakpointByUrlResponse = js.native
+      var DebuggerDotsetBreakpointByUrl: ReturnTypeSetBreakpointByUrlResponse
       
       /**
         * Sets JavaScript breakpoint before each call to the given function.
@@ -1599,124 +1597,124 @@ object protocolMappingMod {
         * calling it will also trigger the breakpoint.
         */
       @JSName("Debugger.setBreakpointOnFunctionCall")
-      var DebuggerDotsetBreakpointOnFunctionCall: ReturnTypeSetBreakpointOnFunctionCallResponse = js.native
+      var DebuggerDotsetBreakpointOnFunctionCall: ReturnTypeSetBreakpointOnFunctionCallResponse
       
       /**
         * Activates / deactivates all breakpoints on the page.
         */
       @JSName("Debugger.setBreakpointsActive")
-      var DebuggerDotsetBreakpointsActive: `4` = js.native
+      var DebuggerDotsetBreakpointsActive: `4`
       
       /**
         * Sets instrumentation breakpoint.
         */
       @JSName("Debugger.setInstrumentationBreakpoint")
-      var DebuggerDotsetInstrumentationBreakpoint: ReturnTypeSetInstrumentationBreakpointResponse = js.native
+      var DebuggerDotsetInstrumentationBreakpoint: ReturnTypeSetInstrumentationBreakpointResponse
       
       /**
         * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or
         * no exceptions. Initial pause on exceptions state is `none`.
         */
       @JSName("Debugger.setPauseOnExceptions")
-      var DebuggerDotsetPauseOnExceptions: `5` = js.native
+      var DebuggerDotsetPauseOnExceptions: `5`
       
       /**
         * Changes return value in top frame. Available only at return break position.
         */
       @JSName("Debugger.setReturnValue")
-      var DebuggerDotsetReturnValue: `6` = js.native
+      var DebuggerDotsetReturnValue: `6`
       
       /**
         * Edits JavaScript source live.
         */
       @JSName("Debugger.setScriptSource")
-      var DebuggerDotsetScriptSource: ReturnTypeSetScriptSourceResponse = js.native
+      var DebuggerDotsetScriptSource: ReturnTypeSetScriptSourceResponse
       
       /**
         * Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).
         */
       @JSName("Debugger.setSkipAllPauses")
-      var DebuggerDotsetSkipAllPauses: `7` = js.native
+      var DebuggerDotsetSkipAllPauses: `7`
       
       /**
         * Changes value of variable in a callframe. Object-based scopes are not supported and must be
         * mutated manually.
         */
       @JSName("Debugger.setVariableValue")
-      var DebuggerDotsetVariableValue: `8` = js.native
+      var DebuggerDotsetVariableValue: `8`
       
       /**
         * Steps into the function call.
         */
       @JSName("Debugger.stepInto")
-      var DebuggerDotstepInto: `9` = js.native
+      var DebuggerDotstepInto: `9`
       
       /**
         * Steps out of the function call.
         */
       @JSName("Debugger.stepOut")
-      var DebuggerDotstepOut: ParamsType = js.native
+      var DebuggerDotstepOut: ParamsType
       
       /**
         * Steps over the statement.
         */
       @JSName("Debugger.stepOver")
-      var DebuggerDotstepOver: `10` = js.native
+      var DebuggerDotstepOver: `10`
       
       /**
         * Clears the overridden Device Orientation.
         */
       @JSName("DeviceOrientation.clearDeviceOrientationOverride")
-      var DeviceOrientationDotclearDeviceOrientationOverride: ParamsType = js.native
+      var DeviceOrientationDotclearDeviceOrientationOverride: ParamsType
       
       /**
         * Overrides the Device Orientation.
         */
       @JSName("DeviceOrientation.setDeviceOrientationOverride")
-      var DeviceOrientationDotsetDeviceOrientationOverride: `73` = js.native
+      var DeviceOrientationDotsetDeviceOrientationOverride: `73`
       
       /**
         * Tells whether emulation is supported.
         */
       @JSName("Emulation.canEmulate")
-      var EmulationDotcanEmulate: ReturnTypeCanEmulateResponse = js.native
+      var EmulationDotcanEmulate: ReturnTypeCanEmulateResponse
       
       /**
         * Clears the overriden device metrics.
         */
       @JSName("Emulation.clearDeviceMetricsOverride")
-      var EmulationDotclearDeviceMetricsOverride: ParamsType = js.native
+      var EmulationDotclearDeviceMetricsOverride: ParamsType
       
       /**
         * Clears the overriden Geolocation Position and Error.
         */
       @JSName("Emulation.clearGeolocationOverride")
-      var EmulationDotclearGeolocationOverride: ParamsType = js.native
+      var EmulationDotclearGeolocationOverride: ParamsType
       
       /**
         * Clears Idle state overrides.
         */
       @JSName("Emulation.clearIdleOverride")
-      var EmulationDotclearIdleOverride: ParamsType = js.native
+      var EmulationDotclearIdleOverride: ParamsType
       
       /**
         * Requests that page scale factor is reset to initial values.
         */
       @JSName("Emulation.resetPageScaleFactor")
-      var EmulationDotresetPageScaleFactor: ParamsType = js.native
+      var EmulationDotresetPageScaleFactor: ParamsType
       
       /**
         * Enables CPU throttling to emulate slow CPUs.
         */
       @JSName("Emulation.setCPUThrottlingRate")
-      var EmulationDotsetCPUThrottlingRate: `75` = js.native
+      var EmulationDotsetCPUThrottlingRate: `75`
       
       /**
         * Sets or clears an override of the default background color of the frame. This override is used
         * if the content does not specify one.
         */
       @JSName("Emulation.setDefaultBackgroundColorOverride")
-      var EmulationDotsetDefaultBackgroundColorOverride: `76` = js.native
+      var EmulationDotsetDefaultBackgroundColorOverride: `76`
       
       /**
         * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
@@ -1724,96 +1722,96 @@ object protocolMappingMod {
         * query results).
         */
       @JSName("Emulation.setDeviceMetricsOverride")
-      var EmulationDotsetDeviceMetricsOverride: `77` = js.native
+      var EmulationDotsetDeviceMetricsOverride: `77`
       
       @JSName("Emulation.setDocumentCookieDisabled")
-      var EmulationDotsetDocumentCookieDisabled: `79` = js.native
+      var EmulationDotsetDocumentCookieDisabled: `79`
       
       @JSName("Emulation.setEmitTouchEventsForMouse")
-      var EmulationDotsetEmitTouchEventsForMouse: `80` = js.native
+      var EmulationDotsetEmitTouchEventsForMouse: `80`
       
       /**
         * Emulates the given media type or media feature for CSS media queries.
         */
       @JSName("Emulation.setEmulatedMedia")
-      var EmulationDotsetEmulatedMedia: `81` = js.native
+      var EmulationDotsetEmulatedMedia: `81`
       
       /**
         * Emulates the given vision deficiency.
         */
       @JSName("Emulation.setEmulatedVisionDeficiency")
-      var EmulationDotsetEmulatedVisionDeficiency: `82` = js.native
+      var EmulationDotsetEmulatedVisionDeficiency: `82`
       
       /**
         * Enables or disables simulating a focused and active page.
         */
       @JSName("Emulation.setFocusEmulationEnabled")
-      var EmulationDotsetFocusEmulationEnabled: `74` = js.native
+      var EmulationDotsetFocusEmulationEnabled: `74`
       
       /**
         * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
         * unavailable.
         */
       @JSName("Emulation.setGeolocationOverride")
-      var EmulationDotsetGeolocationOverride: `83` = js.native
+      var EmulationDotsetGeolocationOverride: `83`
       
       /**
         * Overrides the Idle state.
         */
       @JSName("Emulation.setIdleOverride")
-      var EmulationDotsetIdleOverride: `84` = js.native
+      var EmulationDotsetIdleOverride: `84`
       
       /**
         * Overrides default host system locale with the specified one.
         */
       @JSName("Emulation.setLocaleOverride")
-      var EmulationDotsetLocaleOverride: `89` = js.native
+      var EmulationDotsetLocaleOverride: `89`
       
       /**
         * Overrides value returned by the javascript navigator object.
         */
       @JSName("Emulation.setNavigatorOverrides")
-      var EmulationDotsetNavigatorOverrides: `85` = js.native
+      var EmulationDotsetNavigatorOverrides: `85`
       
       /**
         * Sets a specified page scale factor.
         */
       @JSName("Emulation.setPageScaleFactor")
-      var EmulationDotsetPageScaleFactor: `86` = js.native
+      var EmulationDotsetPageScaleFactor: `86`
       
       /**
         * Switches script execution in the page.
         */
       @JSName("Emulation.setScriptExecutionDisabled")
-      var EmulationDotsetScriptExecutionDisabled: `87` = js.native
+      var EmulationDotsetScriptExecutionDisabled: `87`
       
       @JSName("Emulation.setScrollbarsHidden")
-      var EmulationDotsetScrollbarsHidden: `78` = js.native
+      var EmulationDotsetScrollbarsHidden: `78`
       
       /**
         * Overrides default host system timezone with the specified one.
         */
       @JSName("Emulation.setTimezoneOverride")
-      var EmulationDotsetTimezoneOverride: `90` = js.native
+      var EmulationDotsetTimezoneOverride: `90`
       
       /**
         * Enables touch on platforms which do not support them.
         */
       @JSName("Emulation.setTouchEmulationEnabled")
-      var EmulationDotsetTouchEmulationEnabled: `88` = js.native
+      var EmulationDotsetTouchEmulationEnabled: `88`
       
       /**
         * Allows overriding user agent with the given string.
         */
       @JSName("Emulation.setUserAgentOverride")
-      var EmulationDotsetUserAgentOverride: `92` = js.native
+      var EmulationDotsetUserAgentOverride: `92`
       
       /**
         * Turns on virtual time for all frames (replacing real-time with a synthetic time source) and sets
         * the current virtual time policy.  Note this supersedes any previous time budget.
         */
       @JSName("Emulation.setVirtualTimePolicy")
-      var EmulationDotsetVirtualTimePolicy: ReturnTypeSetVirtualTimePolicyResponse = js.native
+      var EmulationDotsetVirtualTimePolicy: ReturnTypeSetVirtualTimePolicyResponse
       
       /**
         * Resizes the frame/viewport of the page. Note that this does not affect the frame's container
@@ -1821,44 +1819,44 @@ object protocolMappingMod {
         * on Android.
         */
       @JSName("Emulation.setVisibleSize")
-      var EmulationDotsetVisibleSize: `91` = js.native
+      var EmulationDotsetVisibleSize: `91`
       
       /**
         * Continues the request, optionally modifying some of its parameters.
         */
       @JSName("Fetch.continueRequest")
-      var FetchDotcontinueRequest: `205` = js.native
+      var FetchDotcontinueRequest: `205`
       
       /**
         * Continues a request supplying authChallengeResponse following authRequired event.
         */
       @JSName("Fetch.continueWithAuth")
-      var FetchDotcontinueWithAuth: `206` = js.native
+      var FetchDotcontinueWithAuth: `206`
       
       /**
         * Disables the fetch domain.
         */
       @JSName("Fetch.disable")
-      var FetchDotdisable: ParamsType = js.native
+      var FetchDotdisable: ParamsType
       
       /**
         * Enables issuing of requestPaused events. A request will be paused until client
         * calls one of failRequest, fulfillRequest or continueRequest/continueWithAuth.
         */
       @JSName("Fetch.enable")
-      var FetchDotenable: `202` = js.native
+      var FetchDotenable: `202`
       
       /**
         * Causes the request to fail with specified reason.
         */
       @JSName("Fetch.failRequest")
-      var FetchDotfailRequest: `203` = js.native
+      var FetchDotfailRequest: `203`
       
       /**
         * Provides response to the request.
         */
       @JSName("Fetch.fulfillRequest")
-      var FetchDotfulfillRequest: `204` = js.native
+      var FetchDotfulfillRequest: `204`
       
       /**
         * Causes the body of the response to be received from the server and
@@ -1869,7 +1867,7 @@ object protocolMappingMod {
         * results in an undefined behavior.
         */
       @JSName("Fetch.getResponseBody")
-      var FetchDotgetResponseBody: ParamsTypeReturnTypeGetResponseBodyResponse = js.native
+      var FetchDotgetResponseBody: ParamsTypeReturnTypeGetResponseBodyResponse
       
       /**
         * Returns a handle to the stream representing the response body.
@@ -1884,7 +1882,7 @@ object protocolMappingMod {
         * domain before body is received results in an undefined behavior.
         */
       @JSName("Fetch.takeResponseBodyAsStream")
-      var FetchDottakeResponseBodyAsStream: ReturnTypeTakeResponseBodyAsStreamResponse = js.native
+      var FetchDottakeResponseBodyAsStream: ReturnTypeTakeResponseBodyAsStreamResponse
       
       /**
         * Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
@@ -1893,379 +1891,379 @@ object protocolMappingMod {
         * https://goo.gl/3zHXhB for more background.
         */
       @JSName("HeadlessExperimental.beginFrame")
-      var HeadlessExperimentalDotbeginFrame: ReturnTypeBeginFrameResponse = js.native
+      var HeadlessExperimentalDotbeginFrame: ReturnTypeBeginFrameResponse
       
       /**
         * Disables headless events for the target.
         */
       @JSName("HeadlessExperimental.disable")
-      var HeadlessExperimentalDotdisable: ParamsType = js.native
+      var HeadlessExperimentalDotdisable: ParamsType
       
       /**
         * Enables headless events for the target.
         */
       @JSName("HeadlessExperimental.enable")
-      var HeadlessExperimentalDotenable: ParamsType = js.native
+      var HeadlessExperimentalDotenable: ParamsType
       
       /**
         * Enables console to refer to the node with given id via $x (see Command Line API for more details
         * $x functions).
         */
       @JSName("HeapProfiler.addInspectedHeapObject")
-      var HeapProfilerDotaddInspectedHeapObject: `11` = js.native
+      var HeapProfilerDotaddInspectedHeapObject: `11`
       
       @JSName("HeapProfiler.collectGarbage")
-      var HeapProfilerDotcollectGarbage: ParamsType = js.native
+      var HeapProfilerDotcollectGarbage: ParamsType
       
       @JSName("HeapProfiler.disable")
-      var HeapProfilerDotdisable: ParamsType = js.native
+      var HeapProfilerDotdisable: ParamsType
       
       @JSName("HeapProfiler.enable")
-      var HeapProfilerDotenable: ParamsType = js.native
+      var HeapProfilerDotenable: ParamsType
       
       @JSName("HeapProfiler.getHeapObjectId")
-      var HeapProfilerDotgetHeapObjectId: ReturnTypeGetHeapObjectIdResponse = js.native
+      var HeapProfilerDotgetHeapObjectId: ReturnTypeGetHeapObjectIdResponse
       
       @JSName("HeapProfiler.getObjectByHeapObjectId")
-      var HeapProfilerDotgetObjectByHeapObjectId: ReturnTypeGetObjectByHeapObjectIdResponse = js.native
+      var HeapProfilerDotgetObjectByHeapObjectId: ReturnTypeGetObjectByHeapObjectIdResponse
       
       @JSName("HeapProfiler.getSamplingProfile")
-      var HeapProfilerDotgetSamplingProfile: ReturnTypeGetSamplingProfileResponse = js.native
+      var HeapProfilerDotgetSamplingProfile: ReturnTypeGetSamplingProfileResponse
       
       @JSName("HeapProfiler.startSampling")
-      var HeapProfilerDotstartSampling: `12` = js.native
+      var HeapProfilerDotstartSampling: `12`
       
       @JSName("HeapProfiler.startTrackingHeapObjects")
-      var HeapProfilerDotstartTrackingHeapObjects: `13` = js.native
+      var HeapProfilerDotstartTrackingHeapObjects: `13`
       
       @JSName("HeapProfiler.stopSampling")
-      var HeapProfilerDotstopSampling: ReturnTypeStopSamplingResponse = js.native
+      var HeapProfilerDotstopSampling: ReturnTypeStopSamplingResponse
       
       @JSName("HeapProfiler.stopTrackingHeapObjects")
-      var HeapProfilerDotstopTrackingHeapObjects: `14` = js.native
+      var HeapProfilerDotstopTrackingHeapObjects: `14`
       
       @JSName("HeapProfiler.takeHeapSnapshot")
-      var HeapProfilerDottakeHeapSnapshot: `15` = js.native
+      var HeapProfilerDottakeHeapSnapshot: `15`
       
       /**
         * Close the stream, discard any temporary backing storage.
         */
       @JSName("IO.close")
-      var IODotclose: `93` = js.native
+      var IODotclose: `93`
       
       /**
         * Read a chunk of the stream
         */
       @JSName("IO.read")
-      var IODotread: ReturnTypeReadResponse = js.native
+      var IODotread: ReturnTypeReadResponse
       
       /**
         * Return UUID of Blob object specified by a remote object id.
         */
       @JSName("IO.resolveBlob")
-      var IODotresolveBlob: ReturnTypeResolveBlobResponse = js.native
+      var IODotresolveBlob: ReturnTypeResolveBlobResponse
       
       /**
         * Clears all entries from an object store.
         */
       @JSName("IndexedDB.clearObjectStore")
-      var IndexedDBDotclearObjectStore: `94` = js.native
+      var IndexedDBDotclearObjectStore: `94`
       
       /**
         * Deletes a database.
         */
       @JSName("IndexedDB.deleteDatabase")
-      var IndexedDBDotdeleteDatabase: `95` = js.native
+      var IndexedDBDotdeleteDatabase: `95`
       
       /**
         * Delete a range of entries from an object store
         */
       @JSName("IndexedDB.deleteObjectStoreEntries")
-      var IndexedDBDotdeleteObjectStoreEntries: `96` = js.native
+      var IndexedDBDotdeleteObjectStoreEntries: `96`
       
       /**
         * Disables events from backend.
         */
       @JSName("IndexedDB.disable")
-      var IndexedDBDotdisable: ParamsType = js.native
+      var IndexedDBDotdisable: ParamsType
       
       /**
         * Enables events from backend.
         */
       @JSName("IndexedDB.enable")
-      var IndexedDBDotenable: ParamsType = js.native
+      var IndexedDBDotenable: ParamsType
       
       /**
         * Gets metadata of an object store
         */
       @JSName("IndexedDB.getMetadata")
-      var IndexedDBDotgetMetadata: ReturnTypeGetMetadataResponse = js.native
+      var IndexedDBDotgetMetadata: ReturnTypeGetMetadataResponse
       
       /**
         * Requests data from object store or index.
         */
       @JSName("IndexedDB.requestData")
-      var IndexedDBDotrequestData: ReturnTypeRequestDataResponse = js.native
+      var IndexedDBDotrequestData: ReturnTypeRequestDataResponse
       
       /**
         * Requests database with given name in given frame.
         */
       @JSName("IndexedDB.requestDatabase")
-      var IndexedDBDotrequestDatabase: ReturnTypeRequestDatabaseResponse = js.native
+      var IndexedDBDotrequestDatabase: ReturnTypeRequestDatabaseResponse
       
       /**
         * Requests database names for given security origin.
         */
       @JSName("IndexedDB.requestDatabaseNames")
-      var IndexedDBDotrequestDatabaseNames: ReturnTypeRequestDatabaseNamesResponse = js.native
+      var IndexedDBDotrequestDatabaseNames: ReturnTypeRequestDatabaseNamesResponse
       
       /**
         * Dispatches a key event to the page.
         */
       @JSName("Input.dispatchKeyEvent")
-      var InputDotdispatchKeyEvent: `97` = js.native
+      var InputDotdispatchKeyEvent: `97`
       
       /**
         * Dispatches a mouse event to the page.
         */
       @JSName("Input.dispatchMouseEvent")
-      var InputDotdispatchMouseEvent: `99` = js.native
+      var InputDotdispatchMouseEvent: `99`
       
       /**
         * Dispatches a touch event to the page.
         */
       @JSName("Input.dispatchTouchEvent")
-      var InputDotdispatchTouchEvent: `100` = js.native
+      var InputDotdispatchTouchEvent: `100`
       
       /**
         * Emulates touch event from the mouse event parameters.
         */
       @JSName("Input.emulateTouchFromMouseEvent")
-      var InputDotemulateTouchFromMouseEvent: `101` = js.native
+      var InputDotemulateTouchFromMouseEvent: `101`
       
       /**
         * This method emulates inserting text that doesn't come from a key press,
         * for example an emoji keyboard or an IME.
         */
       @JSName("Input.insertText")
-      var InputDotinsertText: `98` = js.native
+      var InputDotinsertText: `98`
       
       /**
         * Ignores input events (useful while auditing page).
         */
       @JSName("Input.setIgnoreInputEvents")
-      var InputDotsetIgnoreInputEvents: `102` = js.native
+      var InputDotsetIgnoreInputEvents: `102`
       
       /**
         * Synthesizes a pinch gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizePinchGesture")
-      var InputDotsynthesizePinchGesture: `103` = js.native
+      var InputDotsynthesizePinchGesture: `103`
       
       /**
         * Synthesizes a scroll gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizeScrollGesture")
-      var InputDotsynthesizeScrollGesture: `104` = js.native
+      var InputDotsynthesizeScrollGesture: `104`
       
       /**
         * Synthesizes a tap gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizeTapGesture")
-      var InputDotsynthesizeTapGesture: `105` = js.native
+      var InputDotsynthesizeTapGesture: `105`
       
       /**
         * Disables inspector domain notifications.
         */
       @JSName("Inspector.disable")
-      var InspectorDotdisable: ParamsType = js.native
+      var InspectorDotdisable: ParamsType
       
       /**
         * Enables inspector domain notifications.
         */
       @JSName("Inspector.enable")
-      var InspectorDotenable: ParamsType = js.native
+      var InspectorDotenable: ParamsType
       
       /**
         * Provides the reasons why the given layer was composited.
         */
       @JSName("LayerTree.compositingReasons")
-      var LayerTreeDotcompositingReasons: ReturnTypeCompositingReasonsResponse = js.native
+      var LayerTreeDotcompositingReasons: ReturnTypeCompositingReasonsResponse
       
       /**
         * Disables compositing tree inspection.
         */
       @JSName("LayerTree.disable")
-      var LayerTreeDotdisable: ParamsType = js.native
+      var LayerTreeDotdisable: ParamsType
       
       /**
         * Enables compositing tree inspection.
         */
       @JSName("LayerTree.enable")
-      var LayerTreeDotenable: ParamsType = js.native
+      var LayerTreeDotenable: ParamsType
       
       /**
         * Returns the snapshot identifier.
         */
       @JSName("LayerTree.loadSnapshot")
-      var LayerTreeDotloadSnapshot: ReturnTypeLoadSnapshotResponse = js.native
+      var LayerTreeDotloadSnapshot: ReturnTypeLoadSnapshotResponse
       
       /**
         * Returns the layer snapshot identifier.
         */
       @JSName("LayerTree.makeSnapshot")
-      var LayerTreeDotmakeSnapshot: ReturnTypeMakeSnapshotResponse = js.native
+      var LayerTreeDotmakeSnapshot: ReturnTypeMakeSnapshotResponse
       
       @JSName("LayerTree.profileSnapshot")
-      var LayerTreeDotprofileSnapshot: ReturnTypeProfileSnapshotResponse = js.native
+      var LayerTreeDotprofileSnapshot: ReturnTypeProfileSnapshotResponse
       
       /**
         * Releases layer snapshot captured by the back-end.
         */
       @JSName("LayerTree.releaseSnapshot")
-      var LayerTreeDotreleaseSnapshot: `106` = js.native
+      var LayerTreeDotreleaseSnapshot: `106`
       
       /**
         * Replays the layer snapshot and returns the resulting bitmap.
         */
       @JSName("LayerTree.replaySnapshot")
-      var LayerTreeDotreplaySnapshot: ReturnTypeReplaySnapshotResponse = js.native
+      var LayerTreeDotreplaySnapshot: ReturnTypeReplaySnapshotResponse
       
       /**
         * Replays the layer snapshot and returns canvas log.
         */
       @JSName("LayerTree.snapshotCommandLog")
-      var LayerTreeDotsnapshotCommandLog: ReturnTypeSnapshotCommandLogResponse = js.native
+      var LayerTreeDotsnapshotCommandLog: ReturnTypeSnapshotCommandLogResponse
       
       /**
         * Clears the log.
         */
       @JSName("Log.clear")
-      var LogDotclear: ParamsType = js.native
+      var LogDotclear: ParamsType
       
       /**
         * Disables log domain, prevents further log entries from being reported to the client.
         */
       @JSName("Log.disable")
-      var LogDotdisable: ParamsType = js.native
+      var LogDotdisable: ParamsType
       
       /**
         * Enables log domain, sends the entries collected so far to the client by means of the
         * `entryAdded` notification.
         */
       @JSName("Log.enable")
-      var LogDotenable: ParamsType = js.native
+      var LogDotenable: ParamsType
       
       /**
         * start violation reporting.
         */
       @JSName("Log.startViolationsReport")
-      var LogDotstartViolationsReport: `107` = js.native
+      var LogDotstartViolationsReport: `107`
       
       /**
         * Stop violation reporting.
         */
       @JSName("Log.stopViolationsReport")
-      var LogDotstopViolationsReport: ParamsType = js.native
+      var LogDotstopViolationsReport: ParamsType
       
       /**
         * Disables the Media domain.
         */
       @JSName("Media.disable")
-      var MediaDotdisable: ParamsType = js.native
+      var MediaDotdisable: ParamsType
       
       /**
         * Enables the Media domain
         */
       @JSName("Media.enable")
-      var MediaDotenable: ParamsType = js.native
+      var MediaDotenable: ParamsType
       
       /**
         * Simulate OomIntervention by purging V8 memory.
         */
       @JSName("Memory.forciblyPurgeJavaScriptMemory")
-      var MemoryDotforciblyPurgeJavaScriptMemory: ParamsType = js.native
+      var MemoryDotforciblyPurgeJavaScriptMemory: ParamsType
       
       /**
         * Retrieve native memory allocations profile
         * collected since renderer process startup.
         */
       @JSName("Memory.getAllTimeSamplingProfile")
-      var MemoryDotgetAllTimeSamplingProfile: ReturnTypeGetAllTimeSamplingProfileResponse = js.native
+      var MemoryDotgetAllTimeSamplingProfile: ReturnTypeGetAllTimeSamplingProfileResponse
       
       /**
         * Retrieve native memory allocations profile
         * collected since browser process startup.
         */
       @JSName("Memory.getBrowserSamplingProfile")
-      var MemoryDotgetBrowserSamplingProfile: ReturnTypeGetBrowserSamplingProfileResponse = js.native
+      var MemoryDotgetBrowserSamplingProfile: ReturnTypeGetBrowserSamplingProfileResponse
       
       @JSName("Memory.getDOMCounters")
-      var MemoryDotgetDOMCounters: ReturnTypeGetDOMCountersResponse = js.native
+      var MemoryDotgetDOMCounters: ReturnTypeGetDOMCountersResponse
       
       /**
         * Retrieve native memory allocations profile collected since last
         * `startSampling` call.
         */
       @JSName("Memory.getSamplingProfile")
-      var MemoryDotgetSamplingProfile: ParamsTypeReturnTypeGetSamplingProfileResponse = js.native
+      var MemoryDotgetSamplingProfile: ParamsTypeReturnTypeGetSamplingProfileResponse
       
       @JSName("Memory.prepareForLeakDetection")
-      var MemoryDotprepareForLeakDetection: ParamsType = js.native
+      var MemoryDotprepareForLeakDetection: ParamsType
       
       /**
         * Enable/disable suppressing memory pressure notifications in all processes.
         */
       @JSName("Memory.setPressureNotificationsSuppressed")
-      var MemoryDotsetPressureNotificationsSuppressed: `108` = js.native
+      var MemoryDotsetPressureNotificationsSuppressed: `108`
       
       /**
         * Simulate a memory pressure notification in all processes.
         */
       @JSName("Memory.simulatePressureNotification")
-      var MemoryDotsimulatePressureNotification: `109` = js.native
+      var MemoryDotsimulatePressureNotification: `109`
       
       /**
         * Start collecting native memory profile.
         */
       @JSName("Memory.startSampling")
-      var MemoryDotstartSampling: `110` = js.native
+      var MemoryDotstartSampling: `110`
       
       /**
         * Stop collecting native memory profile.
         */
       @JSName("Memory.stopSampling")
-      var MemoryDotstopSampling: ParamsType = js.native
+      var MemoryDotstopSampling: ParamsType
       
       /**
         * Tells whether clearing browser cache is supported.
         */
       @JSName("Network.canClearBrowserCache")
-      var NetworkDotcanClearBrowserCache: ReturnTypeCanClearBrowserCacheResponse = js.native
+      var NetworkDotcanClearBrowserCache: ReturnTypeCanClearBrowserCacheResponse
       
       /**
         * Tells whether clearing browser cookies is supported.
         */
       @JSName("Network.canClearBrowserCookies")
-      var NetworkDotcanClearBrowserCookies: ReturnTypeCanClearBrowserCookiesResponse = js.native
+      var NetworkDotcanClearBrowserCookies: ReturnTypeCanClearBrowserCookiesResponse
       
       /**
         * Tells whether emulation of network conditions is supported.
         */
       @JSName("Network.canEmulateNetworkConditions")
-      var NetworkDotcanEmulateNetworkConditions: ReturnTypeCanEmulateNetworkConditionsResponse = js.native
+      var NetworkDotcanEmulateNetworkConditions: ReturnTypeCanEmulateNetworkConditionsResponse
       
       /**
         * Clears browser cache.
         */
       @JSName("Network.clearBrowserCache")
-      var NetworkDotclearBrowserCache: ParamsType = js.native
+      var NetworkDotclearBrowserCache: ParamsType
       
       /**
         * Clears browser cookies.
         */
       @JSName("Network.clearBrowserCookies")
-      var NetworkDotclearBrowserCookies: ParamsType = js.native
+      var NetworkDotclearBrowserCookies: ParamsType
       
       /**
         * Response to Network.requestIntercepted which either modifies the request to continue with any
@@ -2275,81 +2273,81 @@ object protocolMappingMod {
         * Deprecated, use Fetch.continueRequest, Fetch.fulfillRequest and Fetch.failRequest instead.
         */
       @JSName("Network.continueInterceptedRequest")
-      var NetworkDotcontinueInterceptedRequest: `111` = js.native
+      var NetworkDotcontinueInterceptedRequest: `111`
       
       /**
         * Deletes browser cookies with matching name and url or domain/path pair.
         */
       @JSName("Network.deleteCookies")
-      var NetworkDotdeleteCookies: `112` = js.native
+      var NetworkDotdeleteCookies: `112`
       
       /**
         * Disables network tracking, prevents network events from being sent to the client.
         */
       @JSName("Network.disable")
-      var NetworkDotdisable: ParamsType = js.native
+      var NetworkDotdisable: ParamsType
       
       /**
         * Activates emulation of network conditions.
         */
       @JSName("Network.emulateNetworkConditions")
-      var NetworkDotemulateNetworkConditions: `113` = js.native
+      var NetworkDotemulateNetworkConditions: `113`
       
       /**
         * Enables network tracking, network events will now be delivered to the client.
         */
       @JSName("Network.enable")
-      var NetworkDotenable: `114` = js.native
+      var NetworkDotenable: `114`
       
       /**
         * Returns all browser cookies. Depending on the backend support, will return detailed cookie
         * information in the `cookies` field.
         */
       @JSName("Network.getAllCookies")
-      var NetworkDotgetAllCookies: ReturnTypeGetAllCookiesResponse = js.native
+      var NetworkDotgetAllCookies: ReturnTypeGetAllCookiesResponse
       
       /**
         * Returns the DER-encoded certificate.
         */
       @JSName("Network.getCertificate")
-      var NetworkDotgetCertificate: ReturnTypeGetCertificateResponse = js.native
+      var NetworkDotgetCertificate: ReturnTypeGetCertificateResponse
       
       /**
         * Returns all browser cookies for the current URL. Depending on the backend support, will return
         * detailed cookie information in the `cookies` field.
         */
       @JSName("Network.getCookies")
-      var NetworkDotgetCookies: ReturnTypeGetCookiesResponse = js.native
+      var NetworkDotgetCookies: ReturnTypeGetCookiesResponse
       
       /**
         * Returns post data sent with the request. Returns an error when no data was sent with the request.
         */
       @JSName("Network.getRequestPostData")
-      var NetworkDotgetRequestPostData: ReturnTypeGetRequestPostDataResponse = js.native
+      var NetworkDotgetRequestPostData: ReturnTypeGetRequestPostDataResponse
       
       /**
         * Returns content served for the given request.
         */
       @JSName("Network.getResponseBody")
-      var NetworkDotgetResponseBody: ReturnTypeGetResponseBodyResponse = js.native
+      var NetworkDotgetResponseBody: ReturnTypeGetResponseBodyResponse
       
       /**
         * Returns content served for the given currently intercepted request.
         */
       @JSName("Network.getResponseBodyForInterception")
-      var NetworkDotgetResponseBodyForInterception: ReturnTypeGetResponseBodyForInterceptionResponse = js.native
+      var NetworkDotgetResponseBodyForInterception: ReturnTypeGetResponseBodyForInterceptionResponse
       
       /**
         * Returns information about the COEP/COOP isolation status.
         */
       @JSName("Network.getSecurityIsolationStatus")
-      var NetworkDotgetSecurityIsolationStatus: ReturnTypeGetSecurityIsolationStatusResponse = js.native
+      var NetworkDotgetSecurityIsolationStatus: ReturnTypeGetSecurityIsolationStatusResponse
       
       /**
         * Fetches the resource and returns the content.
         */
       @JSName("Network.loadNetworkResource")
-      var NetworkDotloadNetworkResource: ReturnTypeLoadNetworkResourceResponse = js.native
+      var NetworkDotloadNetworkResource: ReturnTypeLoadNetworkResourceResponse
       
       /**
         * This method sends a new XMLHttpRequest which is identical to the original one. The following
@@ -2357,74 +2355,74 @@ object protocolMappingMod {
         * attribute, user, password.
         */
       @JSName("Network.replayXHR")
-      var NetworkDotreplayXHR: `115` = js.native
+      var NetworkDotreplayXHR: `115`
       
       /**
         * Searches for given string in response content.
         */
       @JSName("Network.searchInResponseBody")
-      var NetworkDotsearchInResponseBody: ReturnTypeSearchInResponseBodyResponse = js.native
+      var NetworkDotsearchInResponseBody: ReturnTypeSearchInResponseBodyResponse
       
       /**
         * Specifies whether to sned a debug header to all outgoing requests.
         */
       @JSName("Network.setAttachDebugHeader")
-      var NetworkDotsetAttachDebugHeader: `122` = js.native
+      var NetworkDotsetAttachDebugHeader: `122`
       
       /**
         * Blocks URLs from loading.
         */
       @JSName("Network.setBlockedURLs")
-      var NetworkDotsetBlockedURLs: `116` = js.native
+      var NetworkDotsetBlockedURLs: `116`
       
       /**
         * Toggles ignoring of service worker for each request.
         */
       @JSName("Network.setBypassServiceWorker")
-      var NetworkDotsetBypassServiceWorker: `117` = js.native
+      var NetworkDotsetBypassServiceWorker: `117`
       
       /**
         * Toggles ignoring cache for each request. If `true`, cache will not be used.
         */
       @JSName("Network.setCacheDisabled")
-      var NetworkDotsetCacheDisabled: `118` = js.native
+      var NetworkDotsetCacheDisabled: `118`
       
       /**
         * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
         */
       @JSName("Network.setCookie")
-      var NetworkDotsetCookie: ReturnTypeSetCookieResponse = js.native
+      var NetworkDotsetCookie: ReturnTypeSetCookieResponse
       
       /**
         * Sets given cookies.
         */
       @JSName("Network.setCookies")
-      var NetworkDotsetCookies: `119` = js.native
+      var NetworkDotsetCookies: `119`
       
       /**
         * For testing.
         */
       @JSName("Network.setDataSizeLimitsForTest")
-      var NetworkDotsetDataSizeLimitsForTest: `120` = js.native
+      var NetworkDotsetDataSizeLimitsForTest: `120`
       
       /**
         * Specifies whether to always send extra HTTP headers with the requests from this page.
         */
       @JSName("Network.setExtraHTTPHeaders")
-      var NetworkDotsetExtraHTTPHeaders: `121` = js.native
+      var NetworkDotsetExtraHTTPHeaders: `121`
       
       /**
         * Sets the requests to intercept that match the provided patterns and optionally resource types.
         * Deprecated, please use Fetch.enable instead.
         */
       @JSName("Network.setRequestInterception")
-      var NetworkDotsetRequestInterception: `123` = js.native
+      var NetworkDotsetRequestInterception: `123`
       
       /**
         * Allows overriding user agent with the given string.
         */
       @JSName("Network.setUserAgentOverride")
-      var NetworkDotsetUserAgentOverride: `124` = js.native
+      var NetworkDotsetUserAgentOverride: `124`
       
       /**
         * Returns a handle to the stream representing the response body. Note that after this command,
@@ -2433,367 +2431,367 @@ object protocolMappingMod {
         * is specified.
         */
       @JSName("Network.takeResponseBodyForInterceptionAsStream")
-      var NetworkDottakeResponseBodyForInterceptionAsStream: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse = js.native
+      var NetworkDottakeResponseBodyForInterceptionAsStream: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse
       
       /**
         * Disables domain notifications.
         */
       @JSName("Overlay.disable")
-      var OverlayDotdisable: ParamsType = js.native
+      var OverlayDotdisable: ParamsType
       
       /**
         * Enables domain notifications.
         */
       @JSName("Overlay.enable")
-      var OverlayDotenable: ParamsType = js.native
+      var OverlayDotenable: ParamsType
       
       /**
         * For Persistent Grid testing.
         */
       @JSName("Overlay.getGridHighlightObjectsForTest")
-      var OverlayDotgetGridHighlightObjectsForTest: ReturnTypeGetGridHighlightObjectsForTestResponse = js.native
+      var OverlayDotgetGridHighlightObjectsForTest: ReturnTypeGetGridHighlightObjectsForTestResponse
       
       /**
         * For testing.
         */
       @JSName("Overlay.getHighlightObjectForTest")
-      var OverlayDotgetHighlightObjectForTest: ReturnTypeGetHighlightObjectForTestResponse = js.native
+      var OverlayDotgetHighlightObjectForTest: ReturnTypeGetHighlightObjectForTestResponse
       
       /**
         * For Source Order Viewer testing.
         */
       @JSName("Overlay.getSourceOrderHighlightObjectForTest")
-      var OverlayDotgetSourceOrderHighlightObjectForTest: ReturnTypeGetSourceOrderHighlightObjectForTestResponse = js.native
+      var OverlayDotgetSourceOrderHighlightObjectForTest: ReturnTypeGetSourceOrderHighlightObjectForTestResponse
       
       /**
         * Hides any highlight.
         */
       @JSName("Overlay.hideHighlight")
-      var OverlayDothideHighlight: ParamsType = js.native
+      var OverlayDothideHighlight: ParamsType
       
       /**
         * Highlights owner element of the frame with given id.
         */
       @JSName("Overlay.highlightFrame")
-      var OverlayDothighlightFrame: `125` = js.native
+      var OverlayDothighlightFrame: `125`
       
       /**
         * Highlights DOM node with given id or with the given JavaScript object wrapper. Either nodeId or
         * objectId must be specified.
         */
       @JSName("Overlay.highlightNode")
-      var OverlayDothighlightNode: `126` = js.native
+      var OverlayDothighlightNode: `126`
       
       /**
         * Highlights given quad. Coordinates are absolute with respect to the main frame viewport.
         */
       @JSName("Overlay.highlightQuad")
-      var OverlayDothighlightQuad: `127` = js.native
+      var OverlayDothighlightQuad: `127`
       
       /**
         * Highlights given rectangle. Coordinates are absolute with respect to the main frame viewport.
         */
       @JSName("Overlay.highlightRect")
-      var OverlayDothighlightRect: `128` = js.native
+      var OverlayDothighlightRect: `128`
       
       /**
         * Highlights the source order of the children of the DOM node with given id or with the given
         * JavaScript object wrapper. Either nodeId or objectId must be specified.
         */
       @JSName("Overlay.highlightSourceOrder")
-      var OverlayDothighlightSourceOrder: `129` = js.native
+      var OverlayDothighlightSourceOrder: `129`
       
       /**
         * Enters the 'inspect' mode. In this mode, elements that user is hovering over are highlighted.
         * Backend then generates 'inspectNodeRequested' event upon element selection.
         */
       @JSName("Overlay.setInspectMode")
-      var OverlayDotsetInspectMode: `130` = js.native
+      var OverlayDotsetInspectMode: `130`
       
       @JSName("Overlay.setPausedInDebuggerMessage")
-      var OverlayDotsetPausedInDebuggerMessage: `132` = js.native
+      var OverlayDotsetPausedInDebuggerMessage: `132`
       
       /**
         * Highlights owner element of all frames detected to be ads.
         */
       @JSName("Overlay.setShowAdHighlights")
-      var OverlayDotsetShowAdHighlights: `131` = js.native
+      var OverlayDotsetShowAdHighlights: `131`
       
       /**
         * Requests that backend shows debug borders on layers
         */
       @JSName("Overlay.setShowDebugBorders")
-      var OverlayDotsetShowDebugBorders: `133` = js.native
+      var OverlayDotsetShowDebugBorders: `133`
       
       /**
         * Requests that backend shows the FPS counter
         */
       @JSName("Overlay.setShowFPSCounter")
-      var OverlayDotsetShowFPSCounter: `134` = js.native
+      var OverlayDotsetShowFPSCounter: `134`
       
       /**
         * Highlight multiple elements with the CSS Grid overlay.
         */
       @JSName("Overlay.setShowGridOverlays")
-      var OverlayDotsetShowGridOverlays: `135` = js.native
+      var OverlayDotsetShowGridOverlays: `135`
       
       /**
         * Add a dual screen device hinge
         */
       @JSName("Overlay.setShowHinge")
-      var OverlayDotsetShowHinge: `141` = js.native
+      var OverlayDotsetShowHinge: `141`
       
       /**
         * Requests that backend shows hit-test borders on layers
         */
       @JSName("Overlay.setShowHitTestBorders")
-      var OverlayDotsetShowHitTestBorders: `139` = js.native
+      var OverlayDotsetShowHitTestBorders: `139`
       
       /**
         * Requests that backend shows layout shift regions
         */
       @JSName("Overlay.setShowLayoutShiftRegions")
-      var OverlayDotsetShowLayoutShiftRegions: `137` = js.native
+      var OverlayDotsetShowLayoutShiftRegions: `137`
       
       /**
         * Requests that backend shows paint rectangles
         */
       @JSName("Overlay.setShowPaintRects")
-      var OverlayDotsetShowPaintRects: `136` = js.native
+      var OverlayDotsetShowPaintRects: `136`
       
       /**
         * Requests that backend shows scroll bottleneck rects
         */
       @JSName("Overlay.setShowScrollBottleneckRects")
-      var OverlayDotsetShowScrollBottleneckRects: `138` = js.native
+      var OverlayDotsetShowScrollBottleneckRects: `138`
       
       /**
         * Paints viewport size upon main frame resize.
         */
       @JSName("Overlay.setShowViewportSizeOnResize")
-      var OverlayDotsetShowViewportSizeOnResize: `140` = js.native
+      var OverlayDotsetShowViewportSizeOnResize: `140`
       
       /**
         * Seeds compilation cache for given url. Compilation cache does not survive
         * cross-process navigation.
         */
       @JSName("Page.addCompilationCache")
-      var PageDotaddCompilationCache: `163` = js.native
+      var PageDotaddCompilationCache: `163`
       
       /**
         * Deprecated, please use addScriptToEvaluateOnNewDocument instead.
         */
       @JSName("Page.addScriptToEvaluateOnLoad")
-      var PageDotaddScriptToEvaluateOnLoad: ReturnTypeAddScriptToEvaluateOnLoadResponse = js.native
+      var PageDotaddScriptToEvaluateOnLoad: ReturnTypeAddScriptToEvaluateOnLoadResponse
       
       /**
         * Evaluates given script in every frame upon creation (before loading frame's scripts).
         */
       @JSName("Page.addScriptToEvaluateOnNewDocument")
-      var PageDotaddScriptToEvaluateOnNewDocument: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse = js.native
+      var PageDotaddScriptToEvaluateOnNewDocument: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse
       
       /**
         * Brings page to front (activates tab).
         */
       @JSName("Page.bringToFront")
-      var PageDotbringToFront: ParamsType = js.native
+      var PageDotbringToFront: ParamsType
       
       /**
         * Capture page screenshot.
         */
       @JSName("Page.captureScreenshot")
-      var PageDotcaptureScreenshot: ReturnTypeCaptureScreenshotResponse = js.native
+      var PageDotcaptureScreenshot: ReturnTypeCaptureScreenshotResponse
       
       /**
         * Returns a snapshot of the page as a string. For MHTML format, the serialization includes
         * iframes, shadow DOM, external resources, and element-inline styles.
         */
       @JSName("Page.captureSnapshot")
-      var PageDotcaptureSnapshot: ParamsTypeReturnTypeCaptureSnapshotResponse = js.native
+      var PageDotcaptureSnapshot: ParamsTypeReturnTypeCaptureSnapshotResponse
       
       /**
         * Clears seeded compilation cache.
         */
       @JSName("Page.clearCompilationCache")
-      var PageDotclearCompilationCache: ParamsType = js.native
+      var PageDotclearCompilationCache: ParamsType
       
       /**
         * Clears the overriden device metrics.
         */
       @JSName("Page.clearDeviceMetricsOverride")
-      var PageDotclearDeviceMetricsOverride: ParamsType = js.native
+      var PageDotclearDeviceMetricsOverride: ParamsType
       
       /**
         * Clears the overridden Device Orientation.
         */
       @JSName("Page.clearDeviceOrientationOverride")
-      var PageDotclearDeviceOrientationOverride: ParamsType = js.native
+      var PageDotclearDeviceOrientationOverride: ParamsType
       
       /**
         * Clears the overriden Geolocation Position and Error.
         */
       @JSName("Page.clearGeolocationOverride")
-      var PageDotclearGeolocationOverride: ParamsType = js.native
+      var PageDotclearGeolocationOverride: ParamsType
       
       /**
         * Tries to close page, running its beforeunload hooks, if any.
         */
       @JSName("Page.close")
-      var PageDotclose: ParamsType = js.native
+      var PageDotclose: ParamsType
       
       /**
         * Crashes renderer on the IO thread, generates minidumps.
         */
       @JSName("Page.crash")
-      var PageDotcrash: ParamsType = js.native
+      var PageDotcrash: ParamsType
       
       /**
         * Creates an isolated world for the given frame.
         */
       @JSName("Page.createIsolatedWorld")
-      var PageDotcreateIsolatedWorld: ReturnTypeCreateIsolatedWorldResponse = js.native
+      var PageDotcreateIsolatedWorld: ReturnTypeCreateIsolatedWorldResponse
       
       /**
         * Deletes browser cookie with given name, domain and path.
         */
       @JSName("Page.deleteCookie")
-      var PageDotdeleteCookie: `142` = js.native
+      var PageDotdeleteCookie: `142`
       
       /**
         * Disables page domain notifications.
         */
       @JSName("Page.disable")
-      var PageDotdisable: ParamsType = js.native
+      var PageDotdisable: ParamsType
       
       /**
         * Enables page domain notifications.
         */
       @JSName("Page.enable")
-      var PageDotenable: ParamsType = js.native
+      var PageDotenable: ParamsType
       
       /**
         * Generates a report for testing.
         */
       @JSName("Page.generateTestReport")
-      var PageDotgenerateTestReport: `164` = js.native
+      var PageDotgenerateTestReport: `164`
       
       @JSName("Page.getAppManifest")
-      var PageDotgetAppManifest: ReturnTypeGetAppManifestResponse = js.native
+      var PageDotgetAppManifest: ReturnTypeGetAppManifestResponse
       
       /**
         * Returns all browser cookies. Depending on the backend support, will return detailed cookie
         * information in the `cookies` field.
         */
       @JSName("Page.getCookies")
-      var PageDotgetCookies: ParamsTypeReturnTypeGetCookiesResponse = js.native
+      var PageDotgetCookies: ParamsTypeReturnTypeGetCookiesResponse
       
       /**
         * Returns present frame tree structure.
         */
       @JSName("Page.getFrameTree")
-      var PageDotgetFrameTree: ReturnTypeGetFrameTreeResponse = js.native
+      var PageDotgetFrameTree: ReturnTypeGetFrameTreeResponse
       
       @JSName("Page.getInstallabilityErrors")
-      var PageDotgetInstallabilityErrors: ReturnTypeGetInstallabilityErrorsResponse = js.native
+      var PageDotgetInstallabilityErrors: ReturnTypeGetInstallabilityErrorsResponse
       
       /**
         * Returns metrics relating to the layouting of the page, such as viewport bounds/scale.
         */
       @JSName("Page.getLayoutMetrics")
-      var PageDotgetLayoutMetrics: ReturnTypeGetLayoutMetricsResponse = js.native
+      var PageDotgetLayoutMetrics: ReturnTypeGetLayoutMetricsResponse
       
       @JSName("Page.getManifestIcons")
-      var PageDotgetManifestIcons: ReturnTypeGetManifestIconsResponse = js.native
+      var PageDotgetManifestIcons: ReturnTypeGetManifestIconsResponse
       
       /**
         * Returns navigation history for the current page.
         */
       @JSName("Page.getNavigationHistory")
-      var PageDotgetNavigationHistory: ReturnTypeGetNavigationHistoryResponse = js.native
+      var PageDotgetNavigationHistory: ReturnTypeGetNavigationHistoryResponse
       
       /**
         * Returns content of the given resource.
         */
       @JSName("Page.getResourceContent")
-      var PageDotgetResourceContent: ReturnTypeGetResourceContentResponse = js.native
+      var PageDotgetResourceContent: ReturnTypeGetResourceContentResponse
       
       /**
         * Returns present frame / resource tree structure.
         */
       @JSName("Page.getResourceTree")
-      var PageDotgetResourceTree: ReturnTypeGetResourceTreeResponse = js.native
+      var PageDotgetResourceTree: ReturnTypeGetResourceTreeResponse
       
       /**
         * Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
         */
       @JSName("Page.handleJavaScriptDialog")
-      var PageDothandleJavaScriptDialog: `143` = js.native
+      var PageDothandleJavaScriptDialog: `143`
       
       /**
         * Navigates current page to the given URL.
         */
       @JSName("Page.navigate")
-      var PageDotnavigate: ReturnTypeNavigateResponse = js.native
+      var PageDotnavigate: ReturnTypeNavigateResponse
       
       /**
         * Navigates current page to the given history entry.
         */
       @JSName("Page.navigateToHistoryEntry")
-      var PageDotnavigateToHistoryEntry: `144` = js.native
+      var PageDotnavigateToHistoryEntry: `144`
       
       /**
         * Print page as PDF.
         */
       @JSName("Page.printToPDF")
-      var PageDotprintToPDF: ReturnTypePrintToPDFResponse = js.native
+      var PageDotprintToPDF: ReturnTypePrintToPDFResponse
       
       /**
         * Reloads given page optionally ignoring the cache.
         */
       @JSName("Page.reload")
-      var PageDotreload: `145` = js.native
+      var PageDotreload: `145`
       
       /**
         * Deprecated, please use removeScriptToEvaluateOnNewDocument instead.
         */
       @JSName("Page.removeScriptToEvaluateOnLoad")
-      var PageDotremoveScriptToEvaluateOnLoad: `146` = js.native
+      var PageDotremoveScriptToEvaluateOnLoad: `146`
       
       /**
         * Removes given script from the list.
         */
       @JSName("Page.removeScriptToEvaluateOnNewDocument")
-      var PageDotremoveScriptToEvaluateOnNewDocument: `147` = js.native
+      var PageDotremoveScriptToEvaluateOnNewDocument: `147`
       
       /**
         * Resets navigation history for the current page.
         */
       @JSName("Page.resetNavigationHistory")
-      var PageDotresetNavigationHistory: ParamsType = js.native
+      var PageDotresetNavigationHistory: ParamsType
       
       /**
         * Acknowledges that a screencast frame has been received by the frontend.
         */
       @JSName("Page.screencastFrameAck")
-      var PageDotscreencastFrameAck: `148` = js.native
+      var PageDotscreencastFrameAck: `148`
       
       /**
         * Searches for given string in resource content.
         */
       @JSName("Page.searchInResource")
-      var PageDotsearchInResource: ReturnTypeSearchInResourceResponse = js.native
+      var PageDotsearchInResource: ReturnTypeSearchInResourceResponse
       
       /**
         * Enable Chrome's experimental ad filter on all sites.
         */
       @JSName("Page.setAdBlockingEnabled")
-      var PageDotsetAdBlockingEnabled: `149` = js.native
+      var PageDotsetAdBlockingEnabled: `149`
       
       /**
         * Enable page Content Security Policy by-passing.
         */
       @JSName("Page.setBypassCSP")
-      var PageDotsetBypassCSP: `150` = js.native
+      var PageDotsetBypassCSP: `150`
       
       /**
         * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
@@ -2801,44 +2799,44 @@ object protocolMappingMod {
         * query results).
         */
       @JSName("Page.setDeviceMetricsOverride")
-      var PageDotsetDeviceMetricsOverride: `151` = js.native
+      var PageDotsetDeviceMetricsOverride: `151`
       
       /**
         * Overrides the Device Orientation.
         */
       @JSName("Page.setDeviceOrientationOverride")
-      var PageDotsetDeviceOrientationOverride: `152` = js.native
+      var PageDotsetDeviceOrientationOverride: `152`
       
       /**
         * Sets given markup as the document's HTML.
         */
       @JSName("Page.setDocumentContent")
-      var PageDotsetDocumentContent: `155` = js.native
+      var PageDotsetDocumentContent: `155`
       
       /**
         * Set the behavior when downloading a file.
         */
       @JSName("Page.setDownloadBehavior")
-      var PageDotsetDownloadBehavior: `156` = js.native
+      var PageDotsetDownloadBehavior: `156`
       
       /**
         * Set generic font families.
         */
       @JSName("Page.setFontFamilies")
-      var PageDotsetFontFamilies: `153` = js.native
+      var PageDotsetFontFamilies: `153`
       
       /**
         * Set default font sizes.
         */
       @JSName("Page.setFontSizes")
-      var PageDotsetFontSizes: `154` = js.native
+      var PageDotsetFontSizes: `154`
       
       /**
         * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
         * unavailable.
         */
       @JSName("Page.setGeolocationOverride")
-      var PageDotsetGeolocationOverride: `157` = js.native
+      var PageDotsetGeolocationOverride: `157`
       
       /**
         * Intercept file chooser requests and transfer control to protocol clients.
@@ -2846,25 +2844,25 @@ object protocolMappingMod {
         * Instead, a protocol event `Page.fileChooserOpened` is emitted.
         */
       @JSName("Page.setInterceptFileChooserDialog")
-      var PageDotsetInterceptFileChooserDialog: `165` = js.native
+      var PageDotsetInterceptFileChooserDialog: `165`
       
       /**
         * Controls whether page will emit lifecycle events.
         */
       @JSName("Page.setLifecycleEventsEnabled")
-      var PageDotsetLifecycleEventsEnabled: `158` = js.native
+      var PageDotsetLifecycleEventsEnabled: `158`
       
       /**
         * Forces compilation cache to be generated for every subresource script.
         */
       @JSName("Page.setProduceCompilationCache")
-      var PageDotsetProduceCompilationCache: `162` = js.native
+      var PageDotsetProduceCompilationCache: `162`
       
       /**
         * Toggles mouse event-based touch event emulation.
         */
       @JSName("Page.setTouchEmulationEnabled")
-      var PageDotsetTouchEmulationEnabled: `159` = js.native
+      var PageDotsetTouchEmulationEnabled: `159`
       
       /**
         * Tries to update the web lifecycle state of the page.
@@ -2872,49 +2870,49 @@ object protocolMappingMod {
         * https://github.com/WICG/web-lifecycle/
         */
       @JSName("Page.setWebLifecycleState")
-      var PageDotsetWebLifecycleState: `161` = js.native
+      var PageDotsetWebLifecycleState: `161`
       
       /**
         * Starts sending each frame using the `screencastFrame` event.
         */
       @JSName("Page.startScreencast")
-      var PageDotstartScreencast: `160` = js.native
+      var PageDotstartScreencast: `160`
       
       /**
         * Force the page stop all navigations and pending resource fetches.
         */
       @JSName("Page.stopLoading")
-      var PageDotstopLoading: ParamsType = js.native
+      var PageDotstopLoading: ParamsType
       
       /**
         * Stops sending each frame in the `screencastFrame`.
         */
       @JSName("Page.stopScreencast")
-      var PageDotstopScreencast: ParamsType = js.native
+      var PageDotstopScreencast: ParamsType
       
       /**
         * Pauses page execution. Can be resumed using generic Runtime.runIfWaitingForDebugger.
         */
       @JSName("Page.waitForDebugger")
-      var PageDotwaitForDebugger: ParamsType = js.native
+      var PageDotwaitForDebugger: ParamsType
       
       /**
         * Disable collecting and reporting metrics.
         */
       @JSName("Performance.disable")
-      var PerformanceDotdisable: ParamsType = js.native
+      var PerformanceDotdisable: ParamsType
       
       /**
         * Enable collecting and reporting metrics.
         */
       @JSName("Performance.enable")
-      var PerformanceDotenable: `166` = js.native
+      var PerformanceDotenable: `166`
       
       /**
         * Retrieve current values of run-time metrics.
         */
       @JSName("Performance.getMetrics")
-      var PerformanceDotgetMetrics: ReturnTypeGetMetricsResponse = js.native
+      var PerformanceDotgetMetrics: ReturnTypeGetMetricsResponse
       
       /**
         * Sets time domain to use for collecting and reporting duration metrics.
@@ -2922,65 +2920,65 @@ object protocolMappingMod {
         * this method while metrics collection is enabled returns an error.
         */
       @JSName("Performance.setTimeDomain")
-      var PerformanceDotsetTimeDomain: `167` = js.native
+      var PerformanceDotsetTimeDomain: `167`
       
       @JSName("Profiler.disable")
-      var ProfilerDotdisable: ParamsType = js.native
+      var ProfilerDotdisable: ParamsType
       
       /**
         * Disable counters collection.
         */
       @JSName("Profiler.disableCounters")
-      var ProfilerDotdisableCounters: ParamsType = js.native
+      var ProfilerDotdisableCounters: ParamsType
       
       /**
         * Disable run time call stats collection.
         */
       @JSName("Profiler.disableRuntimeCallStats")
-      var ProfilerDotdisableRuntimeCallStats: ParamsType = js.native
+      var ProfilerDotdisableRuntimeCallStats: ParamsType
       
       @JSName("Profiler.enable")
-      var ProfilerDotenable: ParamsType = js.native
+      var ProfilerDotenable: ParamsType
       
       /**
         * Enable counters collection.
         */
       @JSName("Profiler.enableCounters")
-      var ProfilerDotenableCounters: ParamsType = js.native
+      var ProfilerDotenableCounters: ParamsType
       
       /**
         * Enable run time call stats collection.
         */
       @JSName("Profiler.enableRuntimeCallStats")
-      var ProfilerDotenableRuntimeCallStats: ParamsType = js.native
+      var ProfilerDotenableRuntimeCallStats: ParamsType
       
       /**
         * Collect coverage data for the current isolate. The coverage data may be incomplete due to
         * garbage collection.
         */
       @JSName("Profiler.getBestEffortCoverage")
-      var ProfilerDotgetBestEffortCoverage: ReturnTypeGetBestEffortCoverageResponse = js.native
+      var ProfilerDotgetBestEffortCoverage: ReturnTypeGetBestEffortCoverageResponse
       
       /**
         * Retrieve counters.
         */
       @JSName("Profiler.getCounters")
-      var ProfilerDotgetCounters: ReturnTypeGetCountersResponse = js.native
+      var ProfilerDotgetCounters: ReturnTypeGetCountersResponse
       
       /**
         * Retrieve run time call stats.
         */
       @JSName("Profiler.getRuntimeCallStats")
-      var ProfilerDotgetRuntimeCallStats: ReturnTypeGetRuntimeCallStatsResponse = js.native
+      var ProfilerDotgetRuntimeCallStats: ReturnTypeGetRuntimeCallStatsResponse
       
       /**
         * Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.
         */
       @JSName("Profiler.setSamplingInterval")
-      var ProfilerDotsetSamplingInterval: `16` = js.native
+      var ProfilerDotsetSamplingInterval: `16`
       
       @JSName("Profiler.start")
-      var ProfilerDotstart: ParamsType = js.native
+      var ProfilerDotstart: ParamsType
       
       /**
         * Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code
@@ -2988,42 +2986,42 @@ object protocolMappingMod {
         * counters.
         */
       @JSName("Profiler.startPreciseCoverage")
-      var ProfilerDotstartPreciseCoverage: ReturnTypeStartPreciseCoverageResponse = js.native
+      var ProfilerDotstartPreciseCoverage: ReturnTypeStartPreciseCoverageResponse
       
       /**
         * Enable type profile.
         */
       @JSName("Profiler.startTypeProfile")
-      var ProfilerDotstartTypeProfile: ParamsType = js.native
+      var ProfilerDotstartTypeProfile: ParamsType
       
       @JSName("Profiler.stop")
-      var ProfilerDotstop: ReturnTypeStopResponse = js.native
+      var ProfilerDotstop: ReturnTypeStopResponse
       
       /**
         * Disable precise code coverage. Disabling releases unnecessary execution count records and allows
         * executing optimized code.
         */
       @JSName("Profiler.stopPreciseCoverage")
-      var ProfilerDotstopPreciseCoverage: ParamsType = js.native
+      var ProfilerDotstopPreciseCoverage: ParamsType
       
       /**
         * Disable type profile. Disabling releases type profile data collected so far.
         */
       @JSName("Profiler.stopTypeProfile")
-      var ProfilerDotstopTypeProfile: ParamsType = js.native
+      var ProfilerDotstopTypeProfile: ParamsType
       
       /**
         * Collect coverage data for the current isolate, and resets execution counters. Precise code
         * coverage needs to have started.
         */
       @JSName("Profiler.takePreciseCoverage")
-      var ProfilerDottakePreciseCoverage: ReturnTypeTakePreciseCoverageResponse = js.native
+      var ProfilerDottakePreciseCoverage: ReturnTypeTakePreciseCoverageResponse
       
       /**
         * Collect type profile.
         */
       @JSName("Profiler.takeTypeProfile")
-      var ProfilerDottakeTypeProfile: ReturnTypeTakeTypeProfileResponse = js.native
+      var ProfilerDottakeTypeProfile: ReturnTypeTakeTypeProfileResponse
       
       /**
         * If executionContextId is empty, adds binding with the given name on the
@@ -3036,38 +3034,38 @@ object protocolMappingMod {
         * Each binding function call produces Runtime.bindingCalled notification.
         */
       @JSName("Runtime.addBinding")
-      var RuntimeDotaddBinding: `22` = js.native
+      var RuntimeDotaddBinding: `22`
       
       /**
         * Add handler to promise with given promise object id.
         */
       @JSName("Runtime.awaitPromise")
-      var RuntimeDotawaitPromise: ReturnTypeAwaitPromiseResponse = js.native
+      var RuntimeDotawaitPromise: ReturnTypeAwaitPromiseResponse
       
       /**
         * Calls function with given declaration on the given object. Object group of the result is
         * inherited from the target object.
         */
       @JSName("Runtime.callFunctionOn")
-      var RuntimeDotcallFunctionOn: ReturnTypeCallFunctionOnResponse = js.native
+      var RuntimeDotcallFunctionOn: ReturnTypeCallFunctionOnResponse
       
       /**
         * Compiles expression.
         */
       @JSName("Runtime.compileScript")
-      var RuntimeDotcompileScript: ReturnTypeCompileScriptResponse = js.native
+      var RuntimeDotcompileScript: ReturnTypeCompileScriptResponse
       
       /**
         * Disables reporting of execution contexts creation.
         */
       @JSName("Runtime.disable")
-      var RuntimeDotdisable: ParamsType = js.native
+      var RuntimeDotdisable: ParamsType
       
       /**
         * Discards collected exceptions and console API calls.
         */
       @JSName("Runtime.discardConsoleEntries")
-      var RuntimeDotdiscardConsoleEntries: ParamsType = js.native
+      var RuntimeDotdiscardConsoleEntries: ParamsType
       
       /**
         * Enables reporting of execution contexts creation by means of `executionContextCreated` event.
@@ -3075,290 +3073,290 @@ object protocolMappingMod {
         * context.
         */
       @JSName("Runtime.enable")
-      var RuntimeDotenable: ParamsType = js.native
+      var RuntimeDotenable: ParamsType
       
       /**
         * Evaluates expression on global object.
         */
       @JSName("Runtime.evaluate")
-      var RuntimeDotevaluate: ReturnTypeEvaluateResponse = js.native
+      var RuntimeDotevaluate: ReturnTypeEvaluateResponse
       
       /**
         * Returns the JavaScript heap usage.
         * It is the total usage of the corresponding isolate not scoped to a particular Runtime.
         */
       @JSName("Runtime.getHeapUsage")
-      var RuntimeDotgetHeapUsage: ReturnTypeGetHeapUsageResponse = js.native
+      var RuntimeDotgetHeapUsage: ReturnTypeGetHeapUsageResponse
       
       /**
         * Returns the isolate id.
         */
       @JSName("Runtime.getIsolateId")
-      var RuntimeDotgetIsolateId: ReturnTypeGetIsolateIdResponse = js.native
+      var RuntimeDotgetIsolateId: ReturnTypeGetIsolateIdResponse
       
       /**
         * Returns properties of a given object. Object group of the result is inherited from the target
         * object.
         */
       @JSName("Runtime.getProperties")
-      var RuntimeDotgetProperties: ReturnTypeGetPropertiesResponse = js.native
+      var RuntimeDotgetProperties: ReturnTypeGetPropertiesResponse
       
       /**
         * Returns all let, const and class variables from global scope.
         */
       @JSName("Runtime.globalLexicalScopeNames")
-      var RuntimeDotglobalLexicalScopeNames: ReturnTypeGlobalLexicalScopeNamesResponse = js.native
+      var RuntimeDotglobalLexicalScopeNames: ReturnTypeGlobalLexicalScopeNamesResponse
       
       @JSName("Runtime.queryObjects")
-      var RuntimeDotqueryObjects: ReturnTypeQueryObjectsResponse = js.native
+      var RuntimeDotqueryObjects: ReturnTypeQueryObjectsResponse
       
       /**
         * Releases remote object with given id.
         */
       @JSName("Runtime.releaseObject")
-      var RuntimeDotreleaseObject: `17` = js.native
+      var RuntimeDotreleaseObject: `17`
       
       /**
         * Releases all remote objects that belong to a given group.
         */
       @JSName("Runtime.releaseObjectGroup")
-      var RuntimeDotreleaseObjectGroup: `18` = js.native
+      var RuntimeDotreleaseObjectGroup: `18`
       
       /**
         * This method does not remove binding function from global object but
         * unsubscribes current runtime agent from Runtime.bindingCalled notifications.
         */
       @JSName("Runtime.removeBinding")
-      var RuntimeDotremoveBinding: `23` = js.native
+      var RuntimeDotremoveBinding: `23`
       
       /**
         * Tells inspected instance to run if it was waiting for debugger to attach.
         */
       @JSName("Runtime.runIfWaitingForDebugger")
-      var RuntimeDotrunIfWaitingForDebugger: ParamsType = js.native
+      var RuntimeDotrunIfWaitingForDebugger: ParamsType
       
       /**
         * Runs script with given id in a given context.
         */
       @JSName("Runtime.runScript")
-      var RuntimeDotrunScript: ReturnTypeRunScriptResponse = js.native
+      var RuntimeDotrunScript: ReturnTypeRunScriptResponse
       
       /**
         * Enables or disables async call stacks tracking.
         */
       @JSName("Runtime.setAsyncCallStackDepth")
-      var RuntimeDotsetAsyncCallStackDepth: `19` = js.native
+      var RuntimeDotsetAsyncCallStackDepth: `19`
       
       @JSName("Runtime.setCustomObjectFormatterEnabled")
-      var RuntimeDotsetCustomObjectFormatterEnabled: `20` = js.native
+      var RuntimeDotsetCustomObjectFormatterEnabled: `20`
       
       @JSName("Runtime.setMaxCallStackSizeToCapture")
-      var RuntimeDotsetMaxCallStackSizeToCapture: `21` = js.native
+      var RuntimeDotsetMaxCallStackSizeToCapture: `21`
       
       /**
         * Terminate current or next JavaScript execution.
         * Will cancel the termination when the outer-most script execution ends.
         */
       @JSName("Runtime.terminateExecution")
-      var RuntimeDotterminateExecution: ParamsType = js.native
+      var RuntimeDotterminateExecution: ParamsType
       
       /**
         * Returns supported domains.
         */
       @JSName("Schema.getDomains")
-      var SchemaDotgetDomains: ReturnTypeGetDomainsResponse = js.native
+      var SchemaDotgetDomains: ReturnTypeGetDomainsResponse
       
       /**
         * Disables tracking security state changes.
         */
       @JSName("Security.disable")
-      var SecurityDotdisable: ParamsType = js.native
+      var SecurityDotdisable: ParamsType
       
       /**
         * Enables tracking security state changes.
         */
       @JSName("Security.enable")
-      var SecurityDotenable: ParamsType = js.native
+      var SecurityDotenable: ParamsType
       
       /**
         * Handles a certificate error that fired a certificateError event.
         */
       @JSName("Security.handleCertificateError")
-      var SecurityDothandleCertificateError: `169` = js.native
+      var SecurityDothandleCertificateError: `169`
       
       /**
         * Enable/disable whether all certificate errors should be ignored.
         */
       @JSName("Security.setIgnoreCertificateErrors")
-      var SecurityDotsetIgnoreCertificateErrors: `168` = js.native
+      var SecurityDotsetIgnoreCertificateErrors: `168`
       
       /**
         * Enable/disable overriding certificate errors. If enabled, all certificate error events need to
         * be handled by the DevTools client and should be answered with `handleCertificateError` commands.
         */
       @JSName("Security.setOverrideCertificateErrors")
-      var SecurityDotsetOverrideCertificateErrors: `170` = js.native
+      var SecurityDotsetOverrideCertificateErrors: `170`
       
       @JSName("ServiceWorker.deliverPushMessage")
-      var ServiceWorkerDotdeliverPushMessage: `171` = js.native
+      var ServiceWorkerDotdeliverPushMessage: `171`
       
       @JSName("ServiceWorker.disable")
-      var ServiceWorkerDotdisable: ParamsType = js.native
+      var ServiceWorkerDotdisable: ParamsType
       
       @JSName("ServiceWorker.dispatchPeriodicSyncEvent")
-      var ServiceWorkerDotdispatchPeriodicSyncEvent: `173` = js.native
+      var ServiceWorkerDotdispatchPeriodicSyncEvent: `173`
       
       @JSName("ServiceWorker.dispatchSyncEvent")
-      var ServiceWorkerDotdispatchSyncEvent: `172` = js.native
+      var ServiceWorkerDotdispatchSyncEvent: `172`
       
       @JSName("ServiceWorker.enable")
-      var ServiceWorkerDotenable: ParamsType = js.native
+      var ServiceWorkerDotenable: ParamsType
       
       @JSName("ServiceWorker.inspectWorker")
-      var ServiceWorkerDotinspectWorker: `174` = js.native
+      var ServiceWorkerDotinspectWorker: `174`
       
       @JSName("ServiceWorker.setForceUpdateOnPageLoad")
-      var ServiceWorkerDotsetForceUpdateOnPageLoad: `175` = js.native
+      var ServiceWorkerDotsetForceUpdateOnPageLoad: `175`
       
       @JSName("ServiceWorker.skipWaiting")
-      var ServiceWorkerDotskipWaiting: `176` = js.native
+      var ServiceWorkerDotskipWaiting: `176`
       
       @JSName("ServiceWorker.startWorker")
-      var ServiceWorkerDotstartWorker: `177` = js.native
+      var ServiceWorkerDotstartWorker: `177`
       
       @JSName("ServiceWorker.stopAllWorkers")
-      var ServiceWorkerDotstopAllWorkers: ParamsType = js.native
+      var ServiceWorkerDotstopAllWorkers: ParamsType
       
       @JSName("ServiceWorker.stopWorker")
-      var ServiceWorkerDotstopWorker: `178` = js.native
+      var ServiceWorkerDotstopWorker: `178`
       
       @JSName("ServiceWorker.unregister")
-      var ServiceWorkerDotunregister: `179` = js.native
+      var ServiceWorkerDotunregister: `179`
       
       @JSName("ServiceWorker.updateRegistration")
-      var ServiceWorkerDotupdateRegistration: `180` = js.native
+      var ServiceWorkerDotupdateRegistration: `180`
       
       /**
         * Clears cookies.
         */
       @JSName("Storage.clearCookies")
-      var StorageDotclearCookies: `184` = js.native
+      var StorageDotclearCookies: `184`
       
       /**
         * Clears storage for origin.
         */
       @JSName("Storage.clearDataForOrigin")
-      var StorageDotclearDataForOrigin: `181` = js.native
+      var StorageDotclearDataForOrigin: `181`
       
       /**
         * Returns all browser cookies.
         */
       @JSName("Storage.getCookies")
-      var StorageDotgetCookies: `182` = js.native
+      var StorageDotgetCookies: `182`
       
       /**
         * Returns usage and quota in bytes.
         */
       @JSName("Storage.getUsageAndQuota")
-      var StorageDotgetUsageAndQuota: ReturnTypeGetUsageAndQuotaResponse = js.native
+      var StorageDotgetUsageAndQuota: ReturnTypeGetUsageAndQuotaResponse
       
       /**
         * Override quota for the specified origin
         */
       @JSName("Storage.overrideQuotaForOrigin")
-      var StorageDotoverrideQuotaForOrigin: `185` = js.native
+      var StorageDotoverrideQuotaForOrigin: `185`
       
       /**
         * Sets given cookies.
         */
       @JSName("Storage.setCookies")
-      var StorageDotsetCookies: `183` = js.native
+      var StorageDotsetCookies: `183`
       
       /**
         * Registers origin to be notified when an update occurs to its cache storage list.
         */
       @JSName("Storage.trackCacheStorageForOrigin")
-      var StorageDottrackCacheStorageForOrigin: `186` = js.native
+      var StorageDottrackCacheStorageForOrigin: `186`
       
       /**
         * Registers origin to be notified when an update occurs to its IndexedDB.
         */
       @JSName("Storage.trackIndexedDBForOrigin")
-      var StorageDottrackIndexedDBForOrigin: `187` = js.native
+      var StorageDottrackIndexedDBForOrigin: `187`
       
       /**
         * Unregisters origin from receiving notifications for cache storage.
         */
       @JSName("Storage.untrackCacheStorageForOrigin")
-      var StorageDotuntrackCacheStorageForOrigin: `188` = js.native
+      var StorageDotuntrackCacheStorageForOrigin: `188`
       
       /**
         * Unregisters origin from receiving notifications for IndexedDB.
         */
       @JSName("Storage.untrackIndexedDBForOrigin")
-      var StorageDotuntrackIndexedDBForOrigin: `189` = js.native
+      var StorageDotuntrackIndexedDBForOrigin: `189`
       
       /**
         * Returns information about the system.
         */
       @JSName("SystemInfo.getInfo")
-      var SystemInfoDotgetInfo: ReturnTypeGetInfoResponse = js.native
+      var SystemInfoDotgetInfo: ReturnTypeGetInfoResponse
       
       /**
         * Returns information about all running processes.
         */
       @JSName("SystemInfo.getProcessInfo")
-      var SystemInfoDotgetProcessInfo: ReturnTypeGetProcessInfoResponse = js.native
+      var SystemInfoDotgetProcessInfo: ReturnTypeGetProcessInfoResponse
       
       /**
         * Activates (focuses) the target.
         */
       @JSName("Target.activateTarget")
-      var TargetDotactivateTarget: `190` = js.native
+      var TargetDotactivateTarget: `190`
       
       /**
         * Attaches to the browser target, only uses flat sessionId mode.
         */
       @JSName("Target.attachToBrowserTarget")
-      var TargetDotattachToBrowserTarget: ReturnTypeAttachToBrowserTargetResponse = js.native
+      var TargetDotattachToBrowserTarget: ReturnTypeAttachToBrowserTargetResponse
       
       /**
         * Attaches to the target with given id.
         */
       @JSName("Target.attachToTarget")
-      var TargetDotattachToTarget: ReturnTypeAttachToTargetResponse = js.native
+      var TargetDotattachToTarget: ReturnTypeAttachToTargetResponse
       
       /**
         * Closes the target. If the target is a page that gets closed too.
         */
       @JSName("Target.closeTarget")
-      var TargetDotcloseTarget: ReturnTypeCloseTargetResponse = js.native
+      var TargetDotcloseTarget: ReturnTypeCloseTargetResponse
       
       /**
         * Creates a new empty BrowserContext. Similar to an incognito profile but you can have more than
         * one.
         */
       @JSName("Target.createBrowserContext")
-      var TargetDotcreateBrowserContext: ReturnTypeCreateBrowserContextResponse = js.native
+      var TargetDotcreateBrowserContext: ReturnTypeCreateBrowserContextResponse
       
       /**
         * Creates a new page.
         */
       @JSName("Target.createTarget")
-      var TargetDotcreateTarget: ReturnTypeCreateTargetResponse = js.native
+      var TargetDotcreateTarget: ReturnTypeCreateTargetResponse
       
       /**
         * Detaches session with given id.
         */
       @JSName("Target.detachFromTarget")
-      var TargetDotdetachFromTarget: `192` = js.native
+      var TargetDotdetachFromTarget: `192`
       
       /**
         * Deletes a BrowserContext. All the belonging pages will be closed without calling their
         * beforeunload hooks.
         */
       @JSName("Target.disposeBrowserContext")
-      var TargetDotdisposeBrowserContext: `193` = js.native
+      var TargetDotdisposeBrowserContext: `193`
       
       /**
         * Inject object to the target's main frame that provides a communication
@@ -3371,25 +3369,25 @@ object protocolMappingMod {
         * - `binding.onmessage = json => handleMessage(json)` - a callback that will be called for the protocol notifications and command responses.
         */
       @JSName("Target.exposeDevToolsProtocol")
-      var TargetDotexposeDevToolsProtocol: `191` = js.native
+      var TargetDotexposeDevToolsProtocol: `191`
       
       /**
         * Returns all browser contexts created with `Target.createBrowserContext` method.
         */
       @JSName("Target.getBrowserContexts")
-      var TargetDotgetBrowserContexts: ReturnTypeGetBrowserContextsResponse = js.native
+      var TargetDotgetBrowserContexts: ReturnTypeGetBrowserContextsResponse
       
       /**
         * Returns information about a target.
         */
       @JSName("Target.getTargetInfo")
-      var TargetDotgetTargetInfo: ReturnTypeGetTargetInfoResponse = js.native
+      var TargetDotgetTargetInfo: ReturnTypeGetTargetInfoResponse
       
       /**
         * Retrieves a list of available targets.
         */
       @JSName("Target.getTargets")
-      var TargetDotgetTargets: ReturnTypeGetTargetsResponse = js.native
+      var TargetDotgetTargets: ReturnTypeGetTargetsResponse
       
       /**
         * Sends protocol message over session with given id.
@@ -3397,7 +3395,7 @@ object protocolMappingMod {
         * and crbug.com/991325.
         */
       @JSName("Target.sendMessageToTarget")
-      var TargetDotsendMessageToTarget: `194` = js.native
+      var TargetDotsendMessageToTarget: `194`
       
       /**
         * Controls whether to automatically attach to new targets which are considered to be related to
@@ -3405,151 +3403,151 @@ object protocolMappingMod {
         * automatically detaches from all currently attached targets.
         */
       @JSName("Target.setAutoAttach")
-      var TargetDotsetAutoAttach: `195` = js.native
+      var TargetDotsetAutoAttach: `195`
       
       /**
         * Controls whether to discover available targets and notify via
         * `targetCreated/targetInfoChanged/targetDestroyed` events.
         */
       @JSName("Target.setDiscoverTargets")
-      var TargetDotsetDiscoverTargets: `196` = js.native
+      var TargetDotsetDiscoverTargets: `196`
       
       /**
         * Enables target discovery for the specified locations, when `setDiscoverTargets` was set to
         * `true`.
         */
       @JSName("Target.setRemoteLocations")
-      var TargetDotsetRemoteLocations: `197` = js.native
+      var TargetDotsetRemoteLocations: `197`
       
       /**
         * Request browser port binding.
         */
       @JSName("Tethering.bind")
-      var TetheringDotbind: `198` = js.native
+      var TetheringDotbind: `198`
       
       /**
         * Request browser port unbinding.
         */
       @JSName("Tethering.unbind")
-      var TetheringDotunbind: `199` = js.native
+      var TetheringDotunbind: `199`
       
       /**
         * Stop trace events collection.
         */
       @JSName("Tracing.end")
-      var TracingDotend: ParamsType = js.native
+      var TracingDotend: ParamsType
       
       /**
         * Gets supported tracing categories.
         */
       @JSName("Tracing.getCategories")
-      var TracingDotgetCategories: ReturnTypeGetCategoriesResponse = js.native
+      var TracingDotgetCategories: ReturnTypeGetCategoriesResponse
       
       /**
         * Record a clock sync marker in the trace.
         */
       @JSName("Tracing.recordClockSyncMarker")
-      var TracingDotrecordClockSyncMarker: `200` = js.native
+      var TracingDotrecordClockSyncMarker: `200`
       
       /**
         * Request a global memory dump.
         */
       @JSName("Tracing.requestMemoryDump")
-      var TracingDotrequestMemoryDump: ReturnTypeRequestMemoryDumpResponse = js.native
+      var TracingDotrequestMemoryDump: ReturnTypeRequestMemoryDumpResponse
       
       /**
         * Start trace events collection.
         */
       @JSName("Tracing.start")
-      var TracingDotstart: `201` = js.native
+      var TracingDotstart: `201`
       
       /**
         * Disables the WebAudio domain.
         */
       @JSName("WebAudio.disable")
-      var WebAudioDotdisable: ParamsType = js.native
+      var WebAudioDotdisable: ParamsType
       
       /**
         * Enables the WebAudio domain and starts sending context lifetime events.
         */
       @JSName("WebAudio.enable")
-      var WebAudioDotenable: ParamsType = js.native
+      var WebAudioDotenable: ParamsType
       
       /**
         * Fetch the realtime data from the registered contexts.
         */
       @JSName("WebAudio.getRealtimeData")
-      var WebAudioDotgetRealtimeData: ReturnTypeGetRealtimeDataResponse = js.native
+      var WebAudioDotgetRealtimeData: ReturnTypeGetRealtimeDataResponse
       
       /**
         * Adds the credential to the specified authenticator.
         */
       @JSName("WebAuthn.addCredential")
-      var WebAuthnDotaddCredential: `208` = js.native
+      var WebAuthnDotaddCredential: `208`
       
       /**
         * Creates and adds a virtual authenticator.
         */
       @JSName("WebAuthn.addVirtualAuthenticator")
-      var WebAuthnDotaddVirtualAuthenticator: ReturnTypeAddVirtualAuthenticatorResponse = js.native
+      var WebAuthnDotaddVirtualAuthenticator: ReturnTypeAddVirtualAuthenticatorResponse
       
       /**
         * Clears all the credentials from the specified device.
         */
       @JSName("WebAuthn.clearCredentials")
-      var WebAuthnDotclearCredentials: `210` = js.native
+      var WebAuthnDotclearCredentials: `210`
       
       /**
         * Disable the WebAuthn domain.
         */
       @JSName("WebAuthn.disable")
-      var WebAuthnDotdisable: ParamsType = js.native
+      var WebAuthnDotdisable: ParamsType
       
       /**
         * Enable the WebAuthn domain and start intercepting credential storage and
         * retrieval with a virtual authenticator.
         */
       @JSName("WebAuthn.enable")
-      var WebAuthnDotenable: ParamsType = js.native
+      var WebAuthnDotenable: ParamsType
       
       /**
         * Returns a single credential stored in the given virtual authenticator that
         * matches the credential ID.
         */
       @JSName("WebAuthn.getCredential")
-      var WebAuthnDotgetCredential: ReturnTypeGetCredentialResponse = js.native
+      var WebAuthnDotgetCredential: ReturnTypeGetCredentialResponse
       
       /**
         * Returns all the credentials stored in the given virtual authenticator.
         */
       @JSName("WebAuthn.getCredentials")
-      var WebAuthnDotgetCredentials: ReturnTypeGetCredentialsResponse = js.native
+      var WebAuthnDotgetCredentials: ReturnTypeGetCredentialsResponse
       
       /**
         * Removes a credential from the authenticator.
         */
       @JSName("WebAuthn.removeCredential")
-      var WebAuthnDotremoveCredential: `209` = js.native
+      var WebAuthnDotremoveCredential: `209`
       
       /**
         * Removes the given authenticator.
         */
       @JSName("WebAuthn.removeVirtualAuthenticator")
-      var WebAuthnDotremoveVirtualAuthenticator: `207` = js.native
+      var WebAuthnDotremoveVirtualAuthenticator: `207`
       
       /**
         * Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setAutomaticPresenceSimulation")
-      var WebAuthnDotsetAutomaticPresenceSimulation: `212` = js.native
+      var WebAuthnDotsetAutomaticPresenceSimulation: `212`
       
       /**
         * Sets whether User Verification succeeds or fails for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setUserVerified")
-      var WebAuthnDotsetUserVerified: `211` = js.native
+      var WebAuthnDotsetUserVerified: `211`
     }
     object Commands {
       
@@ -5567,244 +5565,243 @@ object protocolMappingMod {
       }
     }
     
-    @js.native
     trait Events extends StObject {
       
       /**
         * Event for when an animation has been cancelled.
         */
       @JSName("Animation.animationCanceled")
-      var AnimationDotanimationCanceled: js.Array[AnimationCanceledEvent] = js.native
+      var AnimationDotanimationCanceled: js.Array[AnimationCanceledEvent]
       
       /**
         * Event for each animation that has been created.
         */
       @JSName("Animation.animationCreated")
-      var AnimationDotanimationCreated: js.Array[AnimationCreatedEvent] = js.native
+      var AnimationDotanimationCreated: js.Array[AnimationCreatedEvent]
       
       /**
         * Event for animation that has been started.
         */
       @JSName("Animation.animationStarted")
-      var AnimationDotanimationStarted: js.Array[AnimationStartedEvent] = js.native
+      var AnimationDotanimationStarted: js.Array[AnimationStartedEvent]
       
       @JSName("ApplicationCache.applicationCacheStatusUpdated")
-      var ApplicationCacheDotapplicationCacheStatusUpdated: js.Array[ApplicationCacheStatusUpdatedEvent] = js.native
+      var ApplicationCacheDotapplicationCacheStatusUpdated: js.Array[ApplicationCacheStatusUpdatedEvent]
       
       @JSName("ApplicationCache.networkStateUpdated")
-      var ApplicationCacheDotnetworkStateUpdated: js.Array[NetworkStateUpdatedEvent] = js.native
+      var ApplicationCacheDotnetworkStateUpdated: js.Array[NetworkStateUpdatedEvent]
       
       @JSName("Audits.issueAdded")
-      var AuditsDotissueAdded: js.Array[IssueAddedEvent] = js.native
+      var AuditsDotissueAdded: js.Array[IssueAddedEvent]
       
       /**
         * Called with all existing backgroundServiceEvents when enabled, and all new
         * events afterwards if enabled and recording.
         */
       @JSName("BackgroundService.backgroundServiceEventReceived")
-      var BackgroundServiceDotbackgroundServiceEventReceived: js.Array[BackgroundServiceEventReceivedEvent] = js.native
+      var BackgroundServiceDotbackgroundServiceEventReceived: js.Array[BackgroundServiceEventReceivedEvent]
       
       /**
         * Called when the recording state for the service has been updated.
         */
       @JSName("BackgroundService.recordingStateChanged")
-      var BackgroundServiceDotrecordingStateChanged: js.Array[RecordingStateChangedEvent] = js.native
+      var BackgroundServiceDotrecordingStateChanged: js.Array[RecordingStateChangedEvent]
       
       /**
         * Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
         * web font
         */
       @JSName("CSS.fontsUpdated")
-      var CSSDotfontsUpdated: js.Array[FontsUpdatedEvent] = js.native
+      var CSSDotfontsUpdated: js.Array[FontsUpdatedEvent]
       
       /**
         * Fires whenever a MediaQuery result changes (for example, after a browser window has been
         * resized.) The current implementation considers only viewport-dependent media features.
         */
       @JSName("CSS.mediaQueryResultChanged")
-      var CSSDotmediaQueryResultChanged: js.Array[js.Any] = js.native
+      var CSSDotmediaQueryResultChanged: js.Array[js.Any]
       
       /**
         * Fired whenever an active document stylesheet is added.
         */
       @JSName("CSS.styleSheetAdded")
-      var CSSDotstyleSheetAdded: js.Array[StyleSheetAddedEvent] = js.native
+      var CSSDotstyleSheetAdded: js.Array[StyleSheetAddedEvent]
       
       /**
         * Fired whenever a stylesheet is changed as a result of the client operation.
         */
       @JSName("CSS.styleSheetChanged")
-      var CSSDotstyleSheetChanged: js.Array[StyleSheetChangedEvent] = js.native
+      var CSSDotstyleSheetChanged: js.Array[StyleSheetChangedEvent]
       
       /**
         * Fired whenever an active document stylesheet is removed.
         */
       @JSName("CSS.styleSheetRemoved")
-      var CSSDotstyleSheetRemoved: js.Array[StyleSheetRemovedEvent] = js.native
+      var CSSDotstyleSheetRemoved: js.Array[StyleSheetRemovedEvent]
       
       /**
         * This is fired whenever the outstanding issue/error message changes.
         * |issueMessage| is empty if there is no issue.
         */
       @JSName("Cast.issueUpdated")
-      var CastDotissueUpdated: js.Array[IssueUpdatedEvent] = js.native
+      var CastDotissueUpdated: js.Array[IssueUpdatedEvent]
       
       /**
         * This is fired whenever the list of available sinks changes. A sink is a
         * device or a software surface that you can cast to.
         */
       @JSName("Cast.sinksUpdated")
-      var CastDotsinksUpdated: js.Array[SinksUpdatedEvent] = js.native
+      var CastDotsinksUpdated: js.Array[SinksUpdatedEvent]
       
       /**
         * Issued when new console message is added.
         */
       @JSName("Console.messageAdded")
-      var ConsoleDotmessageAdded: js.Array[MessageAddedEvent] = js.native
+      var ConsoleDotmessageAdded: js.Array[MessageAddedEvent]
       
       /**
         * Fired when `Element`'s attribute is modified.
         */
       @JSName("DOM.attributeModified")
-      var DOMDotattributeModified: js.Array[AttributeModifiedEvent] = js.native
+      var DOMDotattributeModified: js.Array[AttributeModifiedEvent]
       
       /**
         * Fired when `Element`'s attribute is removed.
         */
       @JSName("DOM.attributeRemoved")
-      var DOMDotattributeRemoved: js.Array[AttributeRemovedEvent] = js.native
+      var DOMDotattributeRemoved: js.Array[AttributeRemovedEvent]
       
       /**
         * Mirrors `DOMCharacterDataModified` event.
         */
       @JSName("DOM.characterDataModified")
-      var DOMDotcharacterDataModified: js.Array[CharacterDataModifiedEvent] = js.native
+      var DOMDotcharacterDataModified: js.Array[CharacterDataModifiedEvent]
       
       /**
         * Fired when `Container`'s child node count has changed.
         */
       @JSName("DOM.childNodeCountUpdated")
-      var DOMDotchildNodeCountUpdated: js.Array[ChildNodeCountUpdatedEvent] = js.native
+      var DOMDotchildNodeCountUpdated: js.Array[ChildNodeCountUpdatedEvent]
       
       /**
         * Mirrors `DOMNodeInserted` event.
         */
       @JSName("DOM.childNodeInserted")
-      var DOMDotchildNodeInserted: js.Array[ChildNodeInsertedEvent] = js.native
+      var DOMDotchildNodeInserted: js.Array[ChildNodeInsertedEvent]
       
       /**
         * Mirrors `DOMNodeRemoved` event.
         */
       @JSName("DOM.childNodeRemoved")
-      var DOMDotchildNodeRemoved: js.Array[ChildNodeRemovedEvent] = js.native
+      var DOMDotchildNodeRemoved: js.Array[ChildNodeRemovedEvent]
       
       /**
         * Called when distrubution is changed.
         */
       @JSName("DOM.distributedNodesUpdated")
-      var DOMDotdistributedNodesUpdated: js.Array[DistributedNodesUpdatedEvent] = js.native
+      var DOMDotdistributedNodesUpdated: js.Array[DistributedNodesUpdatedEvent]
       
       /**
         * Fired when `Document` has been totally updated. Node ids are no longer valid.
         */
       @JSName("DOM.documentUpdated")
-      var DOMDotdocumentUpdated: js.Array[js.Any] = js.native
+      var DOMDotdocumentUpdated: js.Array[js.Any]
       
       /**
         * Fired when `Element`'s inline style is modified via a CSS property modification.
         */
       @JSName("DOM.inlineStyleInvalidated")
-      var DOMDotinlineStyleInvalidated: js.Array[InlineStyleInvalidatedEvent] = js.native
+      var DOMDotinlineStyleInvalidated: js.Array[InlineStyleInvalidatedEvent]
       
       /**
         * Called when a pseudo element is added to an element.
         */
       @JSName("DOM.pseudoElementAdded")
-      var DOMDotpseudoElementAdded: js.Array[PseudoElementAddedEvent] = js.native
+      var DOMDotpseudoElementAdded: js.Array[PseudoElementAddedEvent]
       
       /**
         * Called when a pseudo element is removed from an element.
         */
       @JSName("DOM.pseudoElementRemoved")
-      var DOMDotpseudoElementRemoved: js.Array[PseudoElementRemovedEvent] = js.native
+      var DOMDotpseudoElementRemoved: js.Array[PseudoElementRemovedEvent]
       
       /**
         * Fired when backend wants to provide client with the missing DOM structure. This happens upon
         * most of the calls requesting node ids.
         */
       @JSName("DOM.setChildNodes")
-      var DOMDotsetChildNodes: js.Array[SetChildNodesEvent] = js.native
+      var DOMDotsetChildNodes: js.Array[SetChildNodesEvent]
       
       /**
         * Called when shadow root is popped from the element.
         */
       @JSName("DOM.shadowRootPopped")
-      var DOMDotshadowRootPopped: js.Array[ShadowRootPoppedEvent] = js.native
+      var DOMDotshadowRootPopped: js.Array[ShadowRootPoppedEvent]
       
       /**
         * Called when shadow root is pushed into the element.
         */
       @JSName("DOM.shadowRootPushed")
-      var DOMDotshadowRootPushed: js.Array[ShadowRootPushedEvent] = js.native
+      var DOMDotshadowRootPushed: js.Array[ShadowRootPushedEvent]
       
       @JSName("DOMStorage.domStorageItemAdded")
-      var DOMStorageDotdomStorageItemAdded: js.Array[DomStorageItemAddedEvent] = js.native
+      var DOMStorageDotdomStorageItemAdded: js.Array[DomStorageItemAddedEvent]
       
       @JSName("DOMStorage.domStorageItemRemoved")
-      var DOMStorageDotdomStorageItemRemoved: js.Array[DomStorageItemRemovedEvent] = js.native
+      var DOMStorageDotdomStorageItemRemoved: js.Array[DomStorageItemRemovedEvent]
       
       @JSName("DOMStorage.domStorageItemUpdated")
-      var DOMStorageDotdomStorageItemUpdated: js.Array[DomStorageItemUpdatedEvent] = js.native
+      var DOMStorageDotdomStorageItemUpdated: js.Array[DomStorageItemUpdatedEvent]
       
       @JSName("DOMStorage.domStorageItemsCleared")
-      var DOMStorageDotdomStorageItemsCleared: js.Array[DomStorageItemsClearedEvent] = js.native
+      var DOMStorageDotdomStorageItemsCleared: js.Array[DomStorageItemsClearedEvent]
       
       @JSName("Database.addDatabase")
-      var DatabaseDotaddDatabase: js.Array[AddDatabaseEvent] = js.native
+      var DatabaseDotaddDatabase: js.Array[AddDatabaseEvent]
       
       /**
         * Fired when breakpoint is resolved to an actual script and location.
         */
       @JSName("Debugger.breakpointResolved")
-      var DebuggerDotbreakpointResolved: js.Array[BreakpointResolvedEvent] = js.native
+      var DebuggerDotbreakpointResolved: js.Array[BreakpointResolvedEvent]
       
       /**
         * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
         */
       @JSName("Debugger.paused")
-      var DebuggerDotpaused: js.Array[PausedEvent] = js.native
+      var DebuggerDotpaused: js.Array[PausedEvent]
       
       /**
         * Fired when the virtual machine resumed execution.
         */
       @JSName("Debugger.resumed")
-      var DebuggerDotresumed: js.Array[js.Any] = js.native
+      var DebuggerDotresumed: js.Array[js.Any]
       
       /**
         * Fired when virtual machine fails to parse the script.
         */
       @JSName("Debugger.scriptFailedToParse")
-      var DebuggerDotscriptFailedToParse: js.Array[ScriptFailedToParseEvent] = js.native
+      var DebuggerDotscriptFailedToParse: js.Array[ScriptFailedToParseEvent]
       
       /**
         * Fired when virtual machine parses script. This event is also fired for all known and uncollected
         * scripts upon enabling debugger.
         */
       @JSName("Debugger.scriptParsed")
-      var DebuggerDotscriptParsed: js.Array[ScriptParsedEvent] = js.native
+      var DebuggerDotscriptParsed: js.Array[ScriptParsedEvent]
       
       /**
         * Notification sent after the virtual time budget for the current VirtualTimePolicy has run out.
         */
       @JSName("Emulation.virtualTimeBudgetExpired")
-      var EmulationDotvirtualTimeBudgetExpired: js.Array[js.Any] = js.native
+      var EmulationDotvirtualTimeBudgetExpired: js.Array[js.Any]
       
       /**
         * Issued when the domain is enabled with handleAuthRequests set to true.
         * The request is paused until client responds with continueWithAuth.
         */
       @JSName("Fetch.authRequired")
-      var FetchDotauthRequired: js.Array[AuthRequiredEvent] = js.native
+      var FetchDotauthRequired: js.Array[AuthRequiredEvent]
       
       /**
         * Issued when the domain is enabled and the request URL matches the
@@ -5815,7 +5812,7 @@ object protocolMappingMod {
         * of these fields is present and in the request stage otherwise.
         */
       @JSName("Fetch.requestPaused")
-      var FetchDotrequestPaused: js.Array[RequestPausedEvent] = js.native
+      var FetchDotrequestPaused: js.Array[RequestPausedEvent]
       
       /**
         * Issued when the target starts or stops needing BeginFrames.
@@ -5823,16 +5820,16 @@ object protocolMappingMod {
         * beginFrame to detect whether the frames were suppressed.
         */
       @JSName("HeadlessExperimental.needsBeginFramesChanged")
-      var HeadlessExperimentalDotneedsBeginFramesChanged: js.Array[NeedsBeginFramesChangedEvent] = js.native
+      var HeadlessExperimentalDotneedsBeginFramesChanged: js.Array[NeedsBeginFramesChangedEvent]
       
       @JSName("HeapProfiler.addHeapSnapshotChunk")
-      var HeapProfilerDotaddHeapSnapshotChunk: js.Array[AddHeapSnapshotChunkEvent] = js.native
+      var HeapProfilerDotaddHeapSnapshotChunk: js.Array[AddHeapSnapshotChunkEvent]
       
       /**
         * If heap objects tracking has been started then backend may send update for one or more fragments
         */
       @JSName("HeapProfiler.heapStatsUpdate")
-      var HeapProfilerDotheapStatsUpdate: js.Array[HeapStatsUpdateEvent] = js.native
+      var HeapProfilerDotheapStatsUpdate: js.Array[HeapStatsUpdateEvent]
       
       /**
         * If heap objects tracking has been started then backend regularly sends a current value for last
@@ -5840,69 +5837,69 @@ object protocolMappingMod {
         * then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
         */
       @JSName("HeapProfiler.lastSeenObjectId")
-      var HeapProfilerDotlastSeenObjectId: js.Array[LastSeenObjectIdEvent] = js.native
+      var HeapProfilerDotlastSeenObjectId: js.Array[LastSeenObjectIdEvent]
       
       @JSName("HeapProfiler.reportHeapSnapshotProgress")
-      var HeapProfilerDotreportHeapSnapshotProgress: js.Array[ReportHeapSnapshotProgressEvent] = js.native
+      var HeapProfilerDotreportHeapSnapshotProgress: js.Array[ReportHeapSnapshotProgressEvent]
       
       @JSName("HeapProfiler.resetProfiles")
-      var HeapProfilerDotresetProfiles: js.Array[js.Any] = js.native
+      var HeapProfilerDotresetProfiles: js.Array[js.Any]
       
       /**
         * Fired when remote debugging connection is about to be terminated. Contains detach reason.
         */
       @JSName("Inspector.detached")
-      var InspectorDotdetached: js.Array[DetachedEvent] = js.native
+      var InspectorDotdetached: js.Array[DetachedEvent]
       
       /**
         * Fired when debugging target has crashed
         */
       @JSName("Inspector.targetCrashed")
-      var InspectorDottargetCrashed: js.Array[js.Any] = js.native
+      var InspectorDottargetCrashed: js.Array[js.Any]
       
       /**
         * Fired when debugging target has reloaded after crash
         */
       @JSName("Inspector.targetReloadedAfterCrash")
-      var InspectorDottargetReloadedAfterCrash: js.Array[js.Any] = js.native
+      var InspectorDottargetReloadedAfterCrash: js.Array[js.Any]
       
       @JSName("LayerTree.layerPainted")
-      var LayerTreeDotlayerPainted: js.Array[LayerPaintedEvent] = js.native
+      var LayerTreeDotlayerPainted: js.Array[LayerPaintedEvent]
       
       @JSName("LayerTree.layerTreeDidChange")
-      var LayerTreeDotlayerTreeDidChange: js.Array[LayerTreeDidChangeEvent] = js.native
+      var LayerTreeDotlayerTreeDidChange: js.Array[LayerTreeDidChangeEvent]
       
       /**
         * Issued when new message was logged.
         */
       @JSName("Log.entryAdded")
-      var LogDotentryAdded: js.Array[EntryAddedEvent] = js.native
+      var LogDotentryAdded: js.Array[EntryAddedEvent]
       
       /**
         * Send a list of any errors that need to be delivered.
         */
       @JSName("Media.playerErrorsRaised")
-      var MediaDotplayerErrorsRaised: js.Array[PlayerErrorsRaisedEvent] = js.native
+      var MediaDotplayerErrorsRaised: js.Array[PlayerErrorsRaisedEvent]
       
       /**
         * Send events as a list, allowing them to be batched on the browser for less
         * congestion. If batched, events must ALWAYS be in chronological order.
         */
       @JSName("Media.playerEventsAdded")
-      var MediaDotplayerEventsAdded: js.Array[PlayerEventsAddedEvent] = js.native
+      var MediaDotplayerEventsAdded: js.Array[PlayerEventsAddedEvent]
       
       /**
         * Send a list of any messages that need to be delivered.
         */
       @JSName("Media.playerMessagesLogged")
-      var MediaDotplayerMessagesLogged: js.Array[PlayerMessagesLoggedEvent] = js.native
+      var MediaDotplayerMessagesLogged: js.Array[PlayerMessagesLoggedEvent]
       
       /**
         * This can be called multiple times, and can be used to set / override /
         * remove player properties. A null propValue indicates removal.
         */
       @JSName("Media.playerPropertiesChanged")
-      var MediaDotplayerPropertiesChanged: js.Array[PlayerPropertiesChangedEvent] = js.native
+      var MediaDotplayerPropertiesChanged: js.Array[PlayerPropertiesChangedEvent]
       
       /**
         * Called whenever a player is created, or when a new agent joins and recieves
@@ -5910,31 +5907,31 @@ object protocolMappingMod {
         * list of player ids and all events again.
         */
       @JSName("Media.playersCreated")
-      var MediaDotplayersCreated: js.Array[PlayersCreatedEvent] = js.native
+      var MediaDotplayersCreated: js.Array[PlayersCreatedEvent]
       
       /**
         * Fired when data chunk was received over the network.
         */
       @JSName("Network.dataReceived")
-      var NetworkDotdataReceived: js.Array[DataReceivedEvent] = js.native
+      var NetworkDotdataReceived: js.Array[DataReceivedEvent]
       
       /**
         * Fired when EventSource message is received.
         */
       @JSName("Network.eventSourceMessageReceived")
-      var NetworkDoteventSourceMessageReceived: js.Array[EventSourceMessageReceivedEvent] = js.native
+      var NetworkDoteventSourceMessageReceived: js.Array[EventSourceMessageReceivedEvent]
       
       /**
         * Fired when HTTP request has failed to load.
         */
       @JSName("Network.loadingFailed")
-      var NetworkDotloadingFailed: js.Array[LoadingFailedEvent] = js.native
+      var NetworkDotloadingFailed: js.Array[LoadingFailedEvent]
       
       /**
         * Fired when HTTP request has finished loading.
         */
       @JSName("Network.loadingFinished")
-      var NetworkDotloadingFinished: js.Array[LoadingFinishedEvent] = js.native
+      var NetworkDotloadingFinished: js.Array[LoadingFinishedEvent]
       
       /**
         * Details of an intercepted HTTP request, which must be either allowed, blocked, modified or
@@ -5942,19 +5939,19 @@ object protocolMappingMod {
         * Deprecated, use Fetch.requestPaused instead.
         */
       @JSName("Network.requestIntercepted")
-      var NetworkDotrequestIntercepted: js.Array[RequestInterceptedEvent] = js.native
+      var NetworkDotrequestIntercepted: js.Array[RequestInterceptedEvent]
       
       /**
         * Fired if request ended up loading from cache.
         */
       @JSName("Network.requestServedFromCache")
-      var NetworkDotrequestServedFromCache: js.Array[RequestServedFromCacheEvent] = js.native
+      var NetworkDotrequestServedFromCache: js.Array[RequestServedFromCacheEvent]
       
       /**
         * Fired when page is about to send HTTP request.
         */
       @JSName("Network.requestWillBeSent")
-      var NetworkDotrequestWillBeSent: js.Array[RequestWillBeSentEvent] = js.native
+      var NetworkDotrequestWillBeSent: js.Array[RequestWillBeSentEvent]
       
       /**
         * Fired when additional information about a requestWillBeSent event is available from the
@@ -5963,19 +5960,19 @@ object protocolMappingMod {
         * or requestWillBeSentExtraInfo will be fired first for the same request.
         */
       @JSName("Network.requestWillBeSentExtraInfo")
-      var NetworkDotrequestWillBeSentExtraInfo: js.Array[RequestWillBeSentExtraInfoEvent] = js.native
+      var NetworkDotrequestWillBeSentExtraInfo: js.Array[RequestWillBeSentExtraInfoEvent]
       
       /**
         * Fired when resource loading priority is changed
         */
       @JSName("Network.resourceChangedPriority")
-      var NetworkDotresourceChangedPriority: js.Array[ResourceChangedPriorityEvent] = js.native
+      var NetworkDotresourceChangedPriority: js.Array[ResourceChangedPriorityEvent]
       
       /**
         * Fired when HTTP response is available.
         */
       @JSName("Network.responseReceived")
-      var NetworkDotresponseReceived: js.Array[ResponseReceivedEvent] = js.native
+      var NetworkDotresponseReceived: js.Array[ResponseReceivedEvent]
       
       /**
         * Fired when additional information about a responseReceived event is available from the network
@@ -5983,235 +5980,235 @@ object protocolMappingMod {
         * it, and responseReceivedExtraInfo may be fired before or after responseReceived.
         */
       @JSName("Network.responseReceivedExtraInfo")
-      var NetworkDotresponseReceivedExtraInfo: js.Array[ResponseReceivedExtraInfoEvent] = js.native
+      var NetworkDotresponseReceivedExtraInfo: js.Array[ResponseReceivedExtraInfoEvent]
       
       /**
         * Fired when a signed exchange was received over the network
         */
       @JSName("Network.signedExchangeReceived")
-      var NetworkDotsignedExchangeReceived: js.Array[SignedExchangeReceivedEvent] = js.native
+      var NetworkDotsignedExchangeReceived: js.Array[SignedExchangeReceivedEvent]
       
       /**
         * Fired when WebSocket is closed.
         */
       @JSName("Network.webSocketClosed")
-      var NetworkDotwebSocketClosed: js.Array[WebSocketClosedEvent] = js.native
+      var NetworkDotwebSocketClosed: js.Array[WebSocketClosedEvent]
       
       /**
         * Fired upon WebSocket creation.
         */
       @JSName("Network.webSocketCreated")
-      var NetworkDotwebSocketCreated: js.Array[WebSocketCreatedEvent] = js.native
+      var NetworkDotwebSocketCreated: js.Array[WebSocketCreatedEvent]
       
       /**
         * Fired when WebSocket message error occurs.
         */
       @JSName("Network.webSocketFrameError")
-      var NetworkDotwebSocketFrameError: js.Array[WebSocketFrameErrorEvent] = js.native
+      var NetworkDotwebSocketFrameError: js.Array[WebSocketFrameErrorEvent]
       
       /**
         * Fired when WebSocket message is received.
         */
       @JSName("Network.webSocketFrameReceived")
-      var NetworkDotwebSocketFrameReceived: js.Array[WebSocketFrameReceivedEvent] = js.native
+      var NetworkDotwebSocketFrameReceived: js.Array[WebSocketFrameReceivedEvent]
       
       /**
         * Fired when WebSocket message is sent.
         */
       @JSName("Network.webSocketFrameSent")
-      var NetworkDotwebSocketFrameSent: js.Array[WebSocketFrameSentEvent] = js.native
+      var NetworkDotwebSocketFrameSent: js.Array[WebSocketFrameSentEvent]
       
       /**
         * Fired when WebSocket handshake response becomes available.
         */
       @JSName("Network.webSocketHandshakeResponseReceived")
-      var NetworkDotwebSocketHandshakeResponseReceived: js.Array[WebSocketHandshakeResponseReceivedEvent] = js.native
+      var NetworkDotwebSocketHandshakeResponseReceived: js.Array[WebSocketHandshakeResponseReceivedEvent]
       
       /**
         * Fired when WebSocket is about to initiate handshake.
         */
       @JSName("Network.webSocketWillSendHandshakeRequest")
-      var NetworkDotwebSocketWillSendHandshakeRequest: js.Array[WebSocketWillSendHandshakeRequestEvent] = js.native
+      var NetworkDotwebSocketWillSendHandshakeRequest: js.Array[WebSocketWillSendHandshakeRequestEvent]
       
       /**
         * Fired when user cancels the inspect mode.
         */
       @JSName("Overlay.inspectModeCanceled")
-      var OverlayDotinspectModeCanceled: js.Array[js.Any] = js.native
+      var OverlayDotinspectModeCanceled: js.Array[js.Any]
       
       /**
         * Fired when the node should be inspected. This happens after call to `setInspectMode` or when
         * user manually inspects an element.
         */
       @JSName("Overlay.inspectNodeRequested")
-      var OverlayDotinspectNodeRequested: js.Array[InspectNodeRequestedEvent] = js.native
+      var OverlayDotinspectNodeRequested: js.Array[InspectNodeRequestedEvent]
       
       /**
         * Fired when the node should be highlighted. This happens after call to `setInspectMode`.
         */
       @JSName("Overlay.nodeHighlightRequested")
-      var OverlayDotnodeHighlightRequested: js.Array[NodeHighlightRequestedEvent] = js.native
+      var OverlayDotnodeHighlightRequested: js.Array[NodeHighlightRequestedEvent]
       
       /**
         * Fired when user asks to capture screenshot of some area on the page.
         */
       @JSName("Overlay.screenshotRequested")
-      var OverlayDotscreenshotRequested: js.Array[ScreenshotRequestedEvent] = js.native
+      var OverlayDotscreenshotRequested: js.Array[ScreenshotRequestedEvent]
       
       /**
         * Issued for every compilation cache generated. Is only available
         * if Page.setGenerateCompilationCache is enabled.
         */
       @JSName("Page.compilationCacheProduced")
-      var PageDotcompilationCacheProduced: js.Array[CompilationCacheProducedEvent] = js.native
+      var PageDotcompilationCacheProduced: js.Array[CompilationCacheProducedEvent]
       
       @JSName("Page.domContentEventFired")
-      var PageDotdomContentEventFired: js.Array[DomContentEventFiredEvent] = js.native
+      var PageDotdomContentEventFired: js.Array[DomContentEventFiredEvent]
       
       /**
         * Fired when download makes progress. Last call has |done| == true.
         */
       @JSName("Page.downloadProgress")
-      var PageDotdownloadProgress: js.Array[DownloadProgressEvent] = js.native
+      var PageDotdownloadProgress: js.Array[DownloadProgressEvent]
       
       /**
         * Fired when page is about to start a download.
         */
       @JSName("Page.downloadWillBegin")
-      var PageDotdownloadWillBegin: js.Array[DownloadWillBeginEvent] = js.native
+      var PageDotdownloadWillBegin: js.Array[DownloadWillBeginEvent]
       
       /**
         * Emitted only when `page.interceptFileChooser` is enabled.
         */
       @JSName("Page.fileChooserOpened")
-      var PageDotfileChooserOpened: js.Array[FileChooserOpenedEvent] = js.native
+      var PageDotfileChooserOpened: js.Array[FileChooserOpenedEvent]
       
       /**
         * Fired when frame has been attached to its parent.
         */
       @JSName("Page.frameAttached")
-      var PageDotframeAttached: js.Array[FrameAttachedEvent] = js.native
+      var PageDotframeAttached: js.Array[FrameAttachedEvent]
       
       /**
         * Fired when frame no longer has a scheduled navigation.
         */
       @JSName("Page.frameClearedScheduledNavigation")
-      var PageDotframeClearedScheduledNavigation: js.Array[FrameClearedScheduledNavigationEvent] = js.native
+      var PageDotframeClearedScheduledNavigation: js.Array[FrameClearedScheduledNavigationEvent]
       
       /**
         * Fired when frame has been detached from its parent.
         */
       @JSName("Page.frameDetached")
-      var PageDotframeDetached: js.Array[FrameDetachedEvent] = js.native
+      var PageDotframeDetached: js.Array[FrameDetachedEvent]
       
       /**
         * Fired once navigation of the frame has completed. Frame is now associated with the new loader.
         */
       @JSName("Page.frameNavigated")
-      var PageDotframeNavigated: js.Array[FrameNavigatedEvent] = js.native
+      var PageDotframeNavigated: js.Array[FrameNavigatedEvent]
       
       /**
         * Fired when a renderer-initiated navigation is requested.
         * Navigation may still be cancelled after the event is issued.
         */
       @JSName("Page.frameRequestedNavigation")
-      var PageDotframeRequestedNavigation: js.Array[FrameRequestedNavigationEvent] = js.native
+      var PageDotframeRequestedNavigation: js.Array[FrameRequestedNavigationEvent]
       
       @JSName("Page.frameResized")
-      var PageDotframeResized: js.Array[js.Any] = js.native
+      var PageDotframeResized: js.Array[js.Any]
       
       /**
         * Fired when frame schedules a potential navigation.
         */
       @JSName("Page.frameScheduledNavigation")
-      var PageDotframeScheduledNavigation: js.Array[FrameScheduledNavigationEvent] = js.native
+      var PageDotframeScheduledNavigation: js.Array[FrameScheduledNavigationEvent]
       
       /**
         * Fired when frame has started loading.
         */
       @JSName("Page.frameStartedLoading")
-      var PageDotframeStartedLoading: js.Array[FrameStartedLoadingEvent] = js.native
+      var PageDotframeStartedLoading: js.Array[FrameStartedLoadingEvent]
       
       /**
         * Fired when frame has stopped loading.
         */
       @JSName("Page.frameStoppedLoading")
-      var PageDotframeStoppedLoading: js.Array[FrameStoppedLoadingEvent] = js.native
+      var PageDotframeStoppedLoading: js.Array[FrameStoppedLoadingEvent]
       
       /**
         * Fired when interstitial page was hidden
         */
       @JSName("Page.interstitialHidden")
-      var PageDotinterstitialHidden: js.Array[js.Any] = js.native
+      var PageDotinterstitialHidden: js.Array[js.Any]
       
       /**
         * Fired when interstitial page was shown
         */
       @JSName("Page.interstitialShown")
-      var PageDotinterstitialShown: js.Array[js.Any] = js.native
+      var PageDotinterstitialShown: js.Array[js.Any]
       
       /**
         * Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been
         * closed.
         */
       @JSName("Page.javascriptDialogClosed")
-      var PageDotjavascriptDialogClosed: js.Array[JavascriptDialogClosedEvent] = js.native
+      var PageDotjavascriptDialogClosed: js.Array[JavascriptDialogClosedEvent]
       
       /**
         * Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) is about to
         * open.
         */
       @JSName("Page.javascriptDialogOpening")
-      var PageDotjavascriptDialogOpening: js.Array[JavascriptDialogOpeningEvent] = js.native
+      var PageDotjavascriptDialogOpening: js.Array[JavascriptDialogOpeningEvent]
       
       /**
         * Fired for top level page lifecycle events such as navigation, load, paint, etc.
         */
       @JSName("Page.lifecycleEvent")
-      var PageDotlifecycleEvent: js.Array[LifecycleEventEvent] = js.native
+      var PageDotlifecycleEvent: js.Array[LifecycleEventEvent]
       
       @JSName("Page.loadEventFired")
-      var PageDotloadEventFired: js.Array[LoadEventFiredEvent] = js.native
+      var PageDotloadEventFired: js.Array[LoadEventFiredEvent]
       
       /**
         * Fired when same-document navigation happens, e.g. due to history API usage or anchor navigation.
         */
       @JSName("Page.navigatedWithinDocument")
-      var PageDotnavigatedWithinDocument: js.Array[NavigatedWithinDocumentEvent] = js.native
+      var PageDotnavigatedWithinDocument: js.Array[NavigatedWithinDocumentEvent]
       
       /**
         * Compressed image data requested by the `startScreencast`.
         */
       @JSName("Page.screencastFrame")
-      var PageDotscreencastFrame: js.Array[ScreencastFrameEvent] = js.native
+      var PageDotscreencastFrame: js.Array[ScreencastFrameEvent]
       
       /**
         * Fired when the page with currently enabled screencast was shown or hidden `.
         */
       @JSName("Page.screencastVisibilityChanged")
-      var PageDotscreencastVisibilityChanged: js.Array[ScreencastVisibilityChangedEvent] = js.native
+      var PageDotscreencastVisibilityChanged: js.Array[ScreencastVisibilityChangedEvent]
       
       /**
         * Fired when a new window is going to be opened, via window.open(), link click, form submission,
         * etc.
         */
       @JSName("Page.windowOpen")
-      var PageDotwindowOpen: js.Array[WindowOpenEvent] = js.native
+      var PageDotwindowOpen: js.Array[WindowOpenEvent]
       
       /**
         * Current values of the metrics.
         */
       @JSName("Performance.metrics")
-      var PerformanceDotmetrics: js.Array[MetricsEvent] = js.native
+      var PerformanceDotmetrics: js.Array[MetricsEvent]
       
       @JSName("Profiler.consoleProfileFinished")
-      var ProfilerDotconsoleProfileFinished: js.Array[ConsoleProfileFinishedEvent] = js.native
+      var ProfilerDotconsoleProfileFinished: js.Array[ConsoleProfileFinishedEvent]
       
       /**
         * Sent when new profile recording is started using console.profile() call.
         */
       @JSName("Profiler.consoleProfileStarted")
-      var ProfilerDotconsoleProfileStarted: js.Array[ConsoleProfileStartedEvent] = js.native
+      var ProfilerDotconsoleProfileStarted: js.Array[ConsoleProfileStartedEvent]
       
       /**
         * Reports coverage delta since the last poll (either from an event like this, or from
@@ -6220,56 +6217,56 @@ object protocolMappingMod {
         * trigger collection of coverage data immediatelly at a certain point in time.
         */
       @JSName("Profiler.preciseCoverageDeltaUpdate")
-      var ProfilerDotpreciseCoverageDeltaUpdate: js.Array[PreciseCoverageDeltaUpdateEvent] = js.native
+      var ProfilerDotpreciseCoverageDeltaUpdate: js.Array[PreciseCoverageDeltaUpdateEvent]
       
       /**
         * Notification is issued every time when binding is called.
         */
       @JSName("Runtime.bindingCalled")
-      var RuntimeDotbindingCalled: js.Array[BindingCalledEvent] = js.native
+      var RuntimeDotbindingCalled: js.Array[BindingCalledEvent]
       
       /**
         * Issued when console API was called.
         */
       @JSName("Runtime.consoleAPICalled")
-      var RuntimeDotconsoleAPICalled: js.Array[ConsoleAPICalledEvent] = js.native
+      var RuntimeDotconsoleAPICalled: js.Array[ConsoleAPICalledEvent]
       
       /**
         * Issued when unhandled exception was revoked.
         */
       @JSName("Runtime.exceptionRevoked")
-      var RuntimeDotexceptionRevoked: js.Array[ExceptionRevokedEvent] = js.native
+      var RuntimeDotexceptionRevoked: js.Array[ExceptionRevokedEvent]
       
       /**
         * Issued when exception was thrown and unhandled.
         */
       @JSName("Runtime.exceptionThrown")
-      var RuntimeDotexceptionThrown: js.Array[ExceptionThrownEvent] = js.native
+      var RuntimeDotexceptionThrown: js.Array[ExceptionThrownEvent]
       
       /**
         * Issued when new execution context is created.
         */
       @JSName("Runtime.executionContextCreated")
-      var RuntimeDotexecutionContextCreated: js.Array[ExecutionContextCreatedEvent] = js.native
+      var RuntimeDotexecutionContextCreated: js.Array[ExecutionContextCreatedEvent]
       
       /**
         * Issued when execution context is destroyed.
         */
       @JSName("Runtime.executionContextDestroyed")
-      var RuntimeDotexecutionContextDestroyed: js.Array[ExecutionContextDestroyedEvent] = js.native
+      var RuntimeDotexecutionContextDestroyed: js.Array[ExecutionContextDestroyedEvent]
       
       /**
         * Issued when all executionContexts were cleared in browser
         */
       @JSName("Runtime.executionContextsCleared")
-      var RuntimeDotexecutionContextsCleared: js.Array[js.Any] = js.native
+      var RuntimeDotexecutionContextsCleared: js.Array[js.Any]
       
       /**
         * Issued when object should be inspected (for example, as a result of inspect() command line API
         * call).
         */
       @JSName("Runtime.inspectRequested")
-      var RuntimeDotinspectRequested: js.Array[InspectRequestedEvent] = js.native
+      var RuntimeDotinspectRequested: js.Array[InspectRequestedEvent]
       
       /**
         * There is a certificate error. If overriding certificate errors is enabled, then it should be
@@ -6278,198 +6275,198 @@ object protocolMappingMod {
         * certificate errors at the same time.
         */
       @JSName("Security.certificateError")
-      var SecurityDotcertificateError: js.Array[CertificateErrorEvent] = js.native
+      var SecurityDotcertificateError: js.Array[CertificateErrorEvent]
       
       /**
         * The security state of the page changed.
         */
       @JSName("Security.securityStateChanged")
-      var SecurityDotsecurityStateChanged: js.Array[SecurityStateChangedEvent] = js.native
+      var SecurityDotsecurityStateChanged: js.Array[SecurityStateChangedEvent]
       
       /**
         * The security state of the page changed.
         */
       @JSName("Security.visibleSecurityStateChanged")
-      var SecurityDotvisibleSecurityStateChanged: js.Array[VisibleSecurityStateChangedEvent] = js.native
+      var SecurityDotvisibleSecurityStateChanged: js.Array[VisibleSecurityStateChangedEvent]
       
       @JSName("ServiceWorker.workerErrorReported")
-      var ServiceWorkerDotworkerErrorReported: js.Array[WorkerErrorReportedEvent] = js.native
+      var ServiceWorkerDotworkerErrorReported: js.Array[WorkerErrorReportedEvent]
       
       @JSName("ServiceWorker.workerRegistrationUpdated")
-      var ServiceWorkerDotworkerRegistrationUpdated: js.Array[WorkerRegistrationUpdatedEvent] = js.native
+      var ServiceWorkerDotworkerRegistrationUpdated: js.Array[WorkerRegistrationUpdatedEvent]
       
       @JSName("ServiceWorker.workerVersionUpdated")
-      var ServiceWorkerDotworkerVersionUpdated: js.Array[WorkerVersionUpdatedEvent] = js.native
+      var ServiceWorkerDotworkerVersionUpdated: js.Array[WorkerVersionUpdatedEvent]
       
       /**
         * A cache's contents have been modified.
         */
       @JSName("Storage.cacheStorageContentUpdated")
-      var StorageDotcacheStorageContentUpdated: js.Array[CacheStorageContentUpdatedEvent] = js.native
+      var StorageDotcacheStorageContentUpdated: js.Array[CacheStorageContentUpdatedEvent]
       
       /**
         * A cache has been added/deleted.
         */
       @JSName("Storage.cacheStorageListUpdated")
-      var StorageDotcacheStorageListUpdated: js.Array[CacheStorageListUpdatedEvent] = js.native
+      var StorageDotcacheStorageListUpdated: js.Array[CacheStorageListUpdatedEvent]
       
       /**
         * The origin's IndexedDB object store has been modified.
         */
       @JSName("Storage.indexedDBContentUpdated")
-      var StorageDotindexedDBContentUpdated: js.Array[IndexedDBContentUpdatedEvent] = js.native
+      var StorageDotindexedDBContentUpdated: js.Array[IndexedDBContentUpdatedEvent]
       
       /**
         * The origin's IndexedDB database list has been modified.
         */
       @JSName("Storage.indexedDBListUpdated")
-      var StorageDotindexedDBListUpdated: js.Array[IndexedDBListUpdatedEvent] = js.native
+      var StorageDotindexedDBListUpdated: js.Array[IndexedDBListUpdatedEvent]
       
       /**
         * Issued when attached to target because of auto-attach or `attachToTarget` command.
         */
       @JSName("Target.attachedToTarget")
-      var TargetDotattachedToTarget: js.Array[AttachedToTargetEvent] = js.native
+      var TargetDotattachedToTarget: js.Array[AttachedToTargetEvent]
       
       /**
         * Issued when detached from target for any reason (including `detachFromTarget` command). Can be
         * issued multiple times per target if multiple sessions have been attached to it.
         */
       @JSName("Target.detachedFromTarget")
-      var TargetDotdetachedFromTarget: js.Array[DetachedFromTargetEvent] = js.native
+      var TargetDotdetachedFromTarget: js.Array[DetachedFromTargetEvent]
       
       /**
         * Notifies about a new protocol message received from the session (as reported in
         * `attachedToTarget` event).
         */
       @JSName("Target.receivedMessageFromTarget")
-      var TargetDotreceivedMessageFromTarget: js.Array[ReceivedMessageFromTargetEvent] = js.native
+      var TargetDotreceivedMessageFromTarget: js.Array[ReceivedMessageFromTargetEvent]
       
       /**
         * Issued when a target has crashed.
         */
       @JSName("Target.targetCrashed")
-      var TargetDottargetCrashed: js.Array[TargetCrashedEvent] = js.native
+      var TargetDottargetCrashed: js.Array[TargetCrashedEvent]
       
       /**
         * Issued when a possible inspection target is created.
         */
       @JSName("Target.targetCreated")
-      var TargetDottargetCreated: js.Array[TargetCreatedEvent] = js.native
+      var TargetDottargetCreated: js.Array[TargetCreatedEvent]
       
       /**
         * Issued when a target is destroyed.
         */
       @JSName("Target.targetDestroyed")
-      var TargetDottargetDestroyed: js.Array[TargetDestroyedEvent] = js.native
+      var TargetDottargetDestroyed: js.Array[TargetDestroyedEvent]
       
       /**
         * Issued when some information about a target has changed. This only happens between
         * `targetCreated` and `targetDestroyed`.
         */
       @JSName("Target.targetInfoChanged")
-      var TargetDottargetInfoChanged: js.Array[TargetInfoChangedEvent] = js.native
+      var TargetDottargetInfoChanged: js.Array[TargetInfoChangedEvent]
       
       /**
         * Informs that port was successfully bound and got a specified connection id.
         */
       @JSName("Tethering.accepted")
-      var TetheringDotaccepted: js.Array[AcceptedEvent] = js.native
+      var TetheringDotaccepted: js.Array[AcceptedEvent]
       
       @JSName("Tracing.bufferUsage")
-      var TracingDotbufferUsage: js.Array[BufferUsageEvent] = js.native
+      var TracingDotbufferUsage: js.Array[BufferUsageEvent]
       
       /**
         * Contains an bucket of collected trace events. When tracing is stopped collected events will be
         * send as a sequence of dataCollected events followed by tracingComplete event.
         */
       @JSName("Tracing.dataCollected")
-      var TracingDotdataCollected: js.Array[DataCollectedEvent] = js.native
+      var TracingDotdataCollected: js.Array[DataCollectedEvent]
       
       /**
         * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
         * delivered via dataCollected events.
         */
       @JSName("Tracing.tracingComplete")
-      var TracingDottracingComplete: js.Array[TracingCompleteEvent] = js.native
+      var TracingDottracingComplete: js.Array[TracingCompleteEvent]
       
       /**
         * Notifies that the construction of an AudioListener has finished.
         */
       @JSName("WebAudio.audioListenerCreated")
-      var WebAudioDotaudioListenerCreated: js.Array[AudioListenerCreatedEvent] = js.native
+      var WebAudioDotaudioListenerCreated: js.Array[AudioListenerCreatedEvent]
       
       /**
         * Notifies that a new AudioListener has been created.
         */
       @JSName("WebAudio.audioListenerWillBeDestroyed")
-      var WebAudioDotaudioListenerWillBeDestroyed: js.Array[AudioListenerWillBeDestroyedEvent] = js.native
+      var WebAudioDotaudioListenerWillBeDestroyed: js.Array[AudioListenerWillBeDestroyedEvent]
       
       /**
         * Notifies that a new AudioNode has been created.
         */
       @JSName("WebAudio.audioNodeCreated")
-      var WebAudioDotaudioNodeCreated: js.Array[AudioNodeCreatedEvent] = js.native
+      var WebAudioDotaudioNodeCreated: js.Array[AudioNodeCreatedEvent]
       
       /**
         * Notifies that an existing AudioNode has been destroyed.
         */
       @JSName("WebAudio.audioNodeWillBeDestroyed")
-      var WebAudioDotaudioNodeWillBeDestroyed: js.Array[AudioNodeWillBeDestroyedEvent] = js.native
+      var WebAudioDotaudioNodeWillBeDestroyed: js.Array[AudioNodeWillBeDestroyedEvent]
       
       /**
         * Notifies that a new AudioParam has been created.
         */
       @JSName("WebAudio.audioParamCreated")
-      var WebAudioDotaudioParamCreated: js.Array[AudioParamCreatedEvent] = js.native
+      var WebAudioDotaudioParamCreated: js.Array[AudioParamCreatedEvent]
       
       /**
         * Notifies that an existing AudioParam has been destroyed.
         */
       @JSName("WebAudio.audioParamWillBeDestroyed")
-      var WebAudioDotaudioParamWillBeDestroyed: js.Array[AudioParamWillBeDestroyedEvent] = js.native
+      var WebAudioDotaudioParamWillBeDestroyed: js.Array[AudioParamWillBeDestroyedEvent]
       
       /**
         * Notifies that existing BaseAudioContext has changed some properties (id stays the same)..
         */
       @JSName("WebAudio.contextChanged")
-      var WebAudioDotcontextChanged: js.Array[ContextChangedEvent] = js.native
+      var WebAudioDotcontextChanged: js.Array[ContextChangedEvent]
       
       /**
         * Notifies that a new BaseAudioContext has been created.
         */
       @JSName("WebAudio.contextCreated")
-      var WebAudioDotcontextCreated: js.Array[ContextCreatedEvent] = js.native
+      var WebAudioDotcontextCreated: js.Array[ContextCreatedEvent]
       
       /**
         * Notifies that an existing BaseAudioContext will be destroyed.
         */
       @JSName("WebAudio.contextWillBeDestroyed")
-      var WebAudioDotcontextWillBeDestroyed: js.Array[ContextWillBeDestroyedEvent] = js.native
+      var WebAudioDotcontextWillBeDestroyed: js.Array[ContextWillBeDestroyedEvent]
       
       /**
         * Notifies that an AudioNode is connected to an AudioParam.
         */
       @JSName("WebAudio.nodeParamConnected")
-      var WebAudioDotnodeParamConnected: js.Array[NodeParamConnectedEvent] = js.native
+      var WebAudioDotnodeParamConnected: js.Array[NodeParamConnectedEvent]
       
       /**
         * Notifies that an AudioNode is disconnected to an AudioParam.
         */
       @JSName("WebAudio.nodeParamDisconnected")
-      var WebAudioDotnodeParamDisconnected: js.Array[NodeParamDisconnectedEvent] = js.native
+      var WebAudioDotnodeParamDisconnected: js.Array[NodeParamDisconnectedEvent]
       
       /**
         * Notifies that two AudioNodes are connected.
         */
       @JSName("WebAudio.nodesConnected")
-      var WebAudioDotnodesConnected: js.Array[NodesConnectedEvent] = js.native
+      var WebAudioDotnodesConnected: js.Array[NodesConnectedEvent]
       
       /**
         * Notifies that AudioNodes are disconnected. The destination can be null, and it means all the outgoing connections from the source are disconnected.
         */
       @JSName("WebAudio.nodesDisconnected")
-      var WebAudioDotnodesDisconnected: js.Array[NodesDisconnectedEvent] = js.native
+      var WebAudioDotnodesDisconnected: js.Array[NodesDisconnectedEvent]
     }
     object Events {
       

@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TlsConfig extends StObject {
   
   /**
     * If you specify a server name, API Gateway uses it to verify the hostname on the integration's certificate. The server name is also included in the TLS handshake to support Server Name Indication (SNI) or virtual hosting.
     */
-  var ServerNameToVerify: js.UndefOr[StringWithLengthBetween1And512] = js.native
+  var ServerNameToVerify: js.UndefOr[StringWithLengthBetween1And512] = js.undefined
 }
 object TlsConfig {
   

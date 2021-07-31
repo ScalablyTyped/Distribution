@@ -3,51 +3,49 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewReply extends StObject {
   
   /**
     * Id of the reply
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Flag for soft deletion
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
   /**
     * Version of the product when the reply was submitted or updated
     */
-  var productVersion: String = js.native
+  var productVersion: String
   
   /**
     * Content of the reply
     */
-  var replyText: String = js.native
+  var replyText: String
   
   /**
     * Id of the review, to which this reply belongs
     */
-  var reviewId: Double = js.native
+  var reviewId: Double
   
   /**
     * Title of the reply
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Date the reply was submitted or updated
     */
-  var updatedDate: Date = js.native
+  var updatedDate: Date
   
   /**
     * Id of the user who left the reply
     */
-  var userId: String = js.native
+  var userId: String
 }
 object ReviewReply {
   

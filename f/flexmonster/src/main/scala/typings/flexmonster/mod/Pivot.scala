@@ -8,7 +8,6 @@ import typings.flexmonster.anon.IgnoreScroll
 import typings.flexmonster.anon.IsRemoved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,15 +38,6 @@ trait Pivot extends StObject {
     callbackHandler: String,
     cubeId: String,
     measuresGroupId: String,
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
-  def clearXMLACache(
-    proxyUrl: String,
-    databaseId: String,
-    callbackHandler: String,
-    cubeId: String,
-    measuresGroupId: String,
     username: String
   ): Unit = js.native
   def clearXMLACache(
@@ -57,6 +47,15 @@ trait Pivot extends StObject {
     cubeId: String,
     measuresGroupId: String,
     username: String,
+    password: String
+  ): Unit = js.native
+  def clearXMLACache(
+    proxyUrl: String,
+    databaseId: String,
+    callbackHandler: String,
+    cubeId: String,
+    measuresGroupId: String,
+    username: Unit,
     password: String
   ): Unit = js.native
   def clearXMLACache(
@@ -72,15 +71,6 @@ trait Pivot extends StObject {
     callbackHandler: js.Function1[/* reponse */ js.Object, Unit],
     cubeId: String,
     measuresGroupId: String,
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
-  def clearXMLACache(
-    proxyUrl: String,
-    databaseId: String,
-    callbackHandler: js.Function1[/* reponse */ js.Object, Unit],
-    cubeId: String,
-    measuresGroupId: String,
     username: String
   ): Unit = js.native
   def clearXMLACache(
@@ -90,6 +80,15 @@ trait Pivot extends StObject {
     cubeId: String,
     measuresGroupId: String,
     username: String,
+    password: String
+  ): Unit = js.native
+  def clearXMLACache(
+    proxyUrl: String,
+    databaseId: String,
+    callbackHandler: js.Function1[/* reponse */ js.Object, Unit],
+    cubeId: String,
+    measuresGroupId: String,
+    username: Unit,
     password: String
   ): Unit = js.native
   
@@ -120,12 +119,8 @@ trait Pivot extends StObject {
   def expandData(hierarchyName: String): Unit = js.native
   
   def exportTo(`type`: String): Unit = js.native
-  def exportTo(`type`: String, exportOptions: js.UndefOr[scala.Nothing], callbackHandler: String): Unit = js.native
-  def exportTo(
-    `type`: String,
-    exportOptions: js.UndefOr[scala.Nothing],
-    callbackHandler: js.Function1[/* result */ js.Object, Unit]
-  ): Unit = js.native
+  def exportTo(`type`: String, exportOptions: Unit, callbackHandler: String): Unit = js.native
+  def exportTo(`type`: String, exportOptions: Unit, callbackHandler: js.Function1[/* result */ js.Object, Unit]): Unit = js.native
   def exportTo(`type`: String, exportOptions: ExportOptions): Unit = js.native
   def exportTo(`type`: String, exportOptions: ExportOptions, callbackHandler: String): Unit = js.native
   def exportTo(
@@ -197,23 +192,10 @@ trait Pivot extends StObject {
   def getSort(hierarchyName: String): String = js.native
   
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String): Unit = js.native
-  def getXMLACatalogs(
-    proxyURL: String,
-    dataSource: String,
-    callbackHandler: String,
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String, username: String): Unit = js.native
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String, username: String, password: String): Unit = js.native
+  def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String, username: Unit, password: String): Unit = js.native
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def getXMLACatalogs(
-    proxyURL: String,
-    dataSource: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
   def getXMLACatalogs(
     proxyURL: String,
     dataSource: String,
@@ -227,16 +209,15 @@ trait Pivot extends StObject {
     username: String,
     password: String
   ): Unit = js.native
-  
-  def getXMLACubes(proxyURL: String, dataSource: String, catalog: String, callbackHandler: String): Unit = js.native
-  def getXMLACubes(
+  def getXMLACatalogs(
     proxyURL: String,
     dataSource: String,
-    catalog: String,
-    callbackHandler: String,
-    username: js.UndefOr[scala.Nothing],
+    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    username: Unit,
     password: String
   ): Unit = js.native
+  
+  def getXMLACubes(proxyURL: String, dataSource: String, catalog: String, callbackHandler: String): Unit = js.native
   def getXMLACubes(proxyURL: String, dataSource: String, catalog: String, callbackHandler: String, username: String): Unit = js.native
   def getXMLACubes(
     proxyURL: String,
@@ -250,15 +231,15 @@ trait Pivot extends StObject {
     proxyURL: String,
     dataSource: String,
     catalog: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit]
+    callbackHandler: String,
+    username: Unit,
+    password: String
   ): Unit = js.native
   def getXMLACubes(
     proxyURL: String,
     dataSource: String,
     catalog: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
-    username: js.UndefOr[scala.Nothing],
-    password: String
+    callbackHandler: js.Function1[/* response */ js.Any, Unit]
   ): Unit = js.native
   def getXMLACubes(
     proxyURL: String,
@@ -275,18 +256,20 @@ trait Pivot extends StObject {
     username: String,
     password: String
   ): Unit = js.native
-  
-  def getXMLADataSources(proxyURL: String, callbackHandler: String): Unit = js.native
-  def getXMLADataSources(proxyURL: String, callbackHandler: String, username: js.UndefOr[scala.Nothing], password: String): Unit = js.native
-  def getXMLADataSources(proxyURL: String, callbackHandler: String, username: String): Unit = js.native
-  def getXMLADataSources(proxyURL: String, callbackHandler: String, username: String, password: String): Unit = js.native
-  def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def getXMLADataSources(
+  def getXMLACubes(
     proxyURL: String,
+    dataSource: String,
+    catalog: String,
     callbackHandler: js.Function1[/* response */ js.Any, Unit],
-    username: js.UndefOr[scala.Nothing],
+    username: Unit,
     password: String
   ): Unit = js.native
+  
+  def getXMLADataSources(proxyURL: String, callbackHandler: String): Unit = js.native
+  def getXMLADataSources(proxyURL: String, callbackHandler: String, username: String): Unit = js.native
+  def getXMLADataSources(proxyURL: String, callbackHandler: String, username: String, password: String): Unit = js.native
+  def getXMLADataSources(proxyURL: String, callbackHandler: String, username: Unit, password: String): Unit = js.native
+  def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
   def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit], username: String): Unit = js.native
   def getXMLADataSources(
     proxyURL: String,
@@ -294,23 +277,29 @@ trait Pivot extends StObject {
     username: String,
     password: String
   ): Unit = js.native
-  
-  def getXMLAProviderName(proxyURL: String, callbackHandler: String): String = js.native
-  def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: js.UndefOr[scala.Nothing], password: String): String = js.native
-  def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: String): String = js.native
-  def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: String, password: String): String = js.native
-  def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): String = js.native
-  def getXMLAProviderName(
+  def getXMLADataSources(
     proxyURL: String,
     callbackHandler: js.Function1[/* response */ js.Any, Unit],
-    username: js.UndefOr[scala.Nothing],
+    username: Unit,
     password: String
-  ): String = js.native
+  ): Unit = js.native
+  
+  def getXMLAProviderName(proxyURL: String, callbackHandler: String): String = js.native
+  def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: String): String = js.native
+  def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: String, password: String): String = js.native
+  def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: Unit, password: String): String = js.native
+  def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): String = js.native
   def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit], username: String): String = js.native
   def getXMLAProviderName(
     proxyURL: String,
     callbackHandler: js.Function1[/* response */ js.Any, Unit],
     username: String,
+    password: String
+  ): String = js.native
+  def getXMLAProviderName(
+    proxyURL: String,
+    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    username: Unit,
     password: String
   ): String = js.native
   
@@ -323,22 +312,19 @@ trait Pivot extends StObject {
   
   def off(eventType: String): Unit = js.native
   def off(eventType: String, handler: String): Unit = js.native
-  def off(eventType: String, handler: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def off(eventType: String, handler: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   def on(eventType: String, handler: String): Unit = js.native
-  def on(eventType: String, handler: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def on(eventType: String, handler: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   def open(): Unit = js.native
   
   def openCalculatedValueEditor(): Unit = js.native
-  def openCalculatedValueEditor(uniqueName: js.UndefOr[scala.Nothing], callbackHandler: String): Unit = js.native
-  def openCalculatedValueEditor(
-    uniqueName: js.UndefOr[scala.Nothing],
-    callbackHandler: js.Function1[/* response */ IsRemoved, Unit]
-  ): Unit = js.native
   def openCalculatedValueEditor(uniqueName: String): Unit = js.native
   def openCalculatedValueEditor(uniqueName: String, callbackHandler: String): Unit = js.native
   def openCalculatedValueEditor(uniqueName: String, callbackHandler: js.Function1[/* response */ IsRemoved, Unit]): Unit = js.native
+  def openCalculatedValueEditor(uniqueName: Unit, callbackHandler: String): Unit = js.native
+  def openCalculatedValueEditor(uniqueName: Unit, callbackHandler: js.Function1[/* response */ IsRemoved, Unit]): Unit = js.native
   
   def openFieldsList(): Unit = js.native
   
@@ -362,39 +348,11 @@ trait Pivot extends StObject {
   def runQuery(slice: Slice): Unit = js.native
   
   def save(filename: String, destination: String): String = js.native
-  def save(
-    filename: String,
-    destination: String,
-    callbackHandler: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    embedData: Boolean
-  ): String = js.native
-  def save(filename: String, destination: String, callbackHandler: js.UndefOr[scala.Nothing], url: String): String = js.native
-  def save(
-    filename: String,
-    destination: String,
-    callbackHandler: js.UndefOr[scala.Nothing],
-    url: String,
-    embedData: Boolean
-  ): String = js.native
   def save(filename: String, destination: String, callbackHandler: String): String = js.native
-  def save(
-    filename: String,
-    destination: String,
-    callbackHandler: String,
-    url: js.UndefOr[scala.Nothing],
-    embedData: Boolean
-  ): String = js.native
   def save(filename: String, destination: String, callbackHandler: String, url: String): String = js.native
   def save(filename: String, destination: String, callbackHandler: String, url: String, embedData: Boolean): String = js.native
+  def save(filename: String, destination: String, callbackHandler: String, url: Unit, embedData: Boolean): String = js.native
   def save(filename: String, destination: String, callbackHandler: js.Function0[Unit]): String = js.native
-  def save(
-    filename: String,
-    destination: String,
-    callbackHandler: js.Function0[Unit],
-    url: js.UndefOr[scala.Nothing],
-    embedData: Boolean
-  ): String = js.native
   def save(filename: String, destination: String, callbackHandler: js.Function0[Unit], url: String): String = js.native
   def save(
     filename: String,
@@ -403,6 +361,16 @@ trait Pivot extends StObject {
     url: String,
     embedData: Boolean
   ): String = js.native
+  def save(
+    filename: String,
+    destination: String,
+    callbackHandler: js.Function0[Unit],
+    url: Unit,
+    embedData: Boolean
+  ): String = js.native
+  def save(filename: String, destination: String, callbackHandler: Unit, url: String): String = js.native
+  def save(filename: String, destination: String, callbackHandler: Unit, url: String, embedData: Boolean): String = js.native
+  def save(filename: String, destination: String, callbackHandler: Unit, url: Unit, embedData: Boolean): String = js.native
   
   def setFilter(hierarchyName: String, filter: Filter): Unit = js.native
   
@@ -416,20 +384,20 @@ trait Pivot extends StObject {
   def setSort(hierarchyName: String, sortName: String, customSorting: js.Array[String]): Unit = js.native
   
   def showCharts(): Unit = js.native
-  def showCharts(`type`: js.UndefOr[scala.Nothing], multiple: Boolean): Unit = js.native
   def showCharts(`type`: String): Unit = js.native
   def showCharts(`type`: String, multiple: Boolean): Unit = js.native
+  def showCharts(`type`: Unit, multiple: Boolean): Unit = js.native
   
   def showGrid(): Unit = js.native
   
   def showGridAndCharts(): Unit = js.native
-  def showGridAndCharts(`type`: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], multiple: Boolean): Unit = js.native
-  def showGridAndCharts(`type`: js.UndefOr[scala.Nothing], position: String): Unit = js.native
-  def showGridAndCharts(`type`: js.UndefOr[scala.Nothing], position: String, multiple: Boolean): Unit = js.native
   def showGridAndCharts(`type`: String): Unit = js.native
-  def showGridAndCharts(`type`: String, position: js.UndefOr[scala.Nothing], multiple: Boolean): Unit = js.native
   def showGridAndCharts(`type`: String, position: String): Unit = js.native
   def showGridAndCharts(`type`: String, position: String, multiple: Boolean): Unit = js.native
+  def showGridAndCharts(`type`: String, position: Unit, multiple: Boolean): Unit = js.native
+  def showGridAndCharts(`type`: Unit, position: String): Unit = js.native
+  def showGridAndCharts(`type`: Unit, position: String, multiple: Boolean): Unit = js.native
+  def showGridAndCharts(`type`: Unit, position: Unit, multiple: Boolean): Unit = js.native
   
   def sortValues(axisName: String, `type`: String, tuple: js.Array[Double], measure: MeasureObject): Unit = js.native
   

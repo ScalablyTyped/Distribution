@@ -2,56 +2,54 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHapgResponse extends StObject {
   
   /**
     * The ARN of the high-availability partition group.
     */
-  var HapgArn: js.UndefOr[typings.awsSdk.cloudhsmMod.HapgArn] = js.native
+  var HapgArn: js.UndefOr[typings.awsSdk.cloudhsmMod.HapgArn] = js.undefined
   
   /**
     * The serial number of the high-availability partition group.
     */
-  var HapgSerial: js.UndefOr[String] = js.native
+  var HapgSerial: js.UndefOr[String] = js.undefined
   
   /**
     * 
     */
-  var HsmsLastActionFailed: js.UndefOr[HsmList] = js.native
+  var HsmsLastActionFailed: js.UndefOr[HsmList] = js.undefined
   
   /**
     * 
     */
-  var HsmsPendingDeletion: js.UndefOr[HsmList] = js.native
+  var HsmsPendingDeletion: js.UndefOr[HsmList] = js.undefined
   
   /**
     * 
     */
-  var HsmsPendingRegistration: js.UndefOr[HsmList] = js.native
+  var HsmsPendingRegistration: js.UndefOr[HsmList] = js.undefined
   
   /**
     * The label for the high-availability partition group.
     */
-  var Label: js.UndefOr[typings.awsSdk.cloudhsmMod.Label] = js.native
+  var Label: js.UndefOr[typings.awsSdk.cloudhsmMod.Label] = js.undefined
   
   /**
     * The date and time the high-availability partition group was last modified.
     */
-  var LastModifiedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The list of partition serial numbers that belong to the high-availability partition group.
     */
-  var PartitionSerialList: js.UndefOr[typings.awsSdk.cloudhsmMod.PartitionSerialList] = js.native
+  var PartitionSerialList: js.UndefOr[typings.awsSdk.cloudhsmMod.PartitionSerialList] = js.undefined
   
   /**
     * The state of the high-availability partition group.
     */
-  var State: js.UndefOr[CloudHsmObjectState] = js.native
+  var State: js.UndefOr[CloudHsmObjectState] = js.undefined
 }
 object DescribeHapgResponse {
   

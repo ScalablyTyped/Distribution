@@ -2,51 +2,49 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishLayerVersionResponse extends StObject {
   
   /**
     * The layer's compatible runtimes.
     */
-  var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.native
+  var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.undefined
   
   /**
     * Details about the layer version.
     */
-  var Content: js.UndefOr[LayerVersionContentOutput] = js.native
+  var Content: js.UndefOr[LayerVersionContentOutput] = js.undefined
   
   /**
     * The date that the layer version was created, in ISO-8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
     */
-  var CreatedDate: js.UndefOr[Timestamp] = js.native
+  var CreatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the version.
     */
-  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.lambdaMod.Description] = js.undefined
   
   /**
     * The ARN of the layer.
     */
-  var LayerArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerArn] = js.native
+  var LayerArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerArn] = js.undefined
   
   /**
     * The ARN of the layer version.
     */
-  var LayerVersionArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerVersionArn] = js.native
+  var LayerVersionArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerVersionArn] = js.undefined
   
   /**
     * The layer's software license.
     */
-  var LicenseInfo: js.UndefOr[typings.awsSdk.lambdaMod.LicenseInfo] = js.native
+  var LicenseInfo: js.UndefOr[typings.awsSdk.lambdaMod.LicenseInfo] = js.undefined
   
   /**
     * The version number.
     */
-  var Version: js.UndefOr[LayerVersionNumber] = js.native
+  var Version: js.UndefOr[LayerVersionNumber] = js.undefined
 }
 object PublishLayerVersionResponse {
   

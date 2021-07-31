@@ -5,16 +5,14 @@ import typings.chrome.chrome.tabs.Tab
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sidebarAction {
   
-  @js.native
   trait BadgeBackgroundColorDetails extends StObject {
     
     /** 색상값 배열([255, 0, 0, 255]) 혹은 HEX 색상 표현 문자열(#FF0000). */
-    var color: String | ColorArray = js.native
+    var color: String | ColorArray
   }
   object BadgeBackgroundColorDetails {
     
@@ -36,11 +34,10 @@ object sidebarAction {
   
   type ColorArray = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait SidebarBadgeDetail extends StObject {
     
     /** 설정할 badge 문자열 */
-    var text: String = js.native
+    var text: String
   }
   object SidebarBadgeDetail {
     
@@ -58,11 +55,10 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SidebarDockDetail extends StObject {
     
     /** 부모 윈도우의 ID. 지정하지 않으면 마지막 사용된 윈도우에 도킹합니다. */
-    var targetWindowId: js.UndefOr[Double] = js.native
+    var targetWindowId: js.UndefOr[Double] = js.undefined
   }
   object SidebarDockDetail {
     
@@ -83,13 +79,12 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SidebarIconDetail extends StObject {
     
     /**
       * 아이콘 이미지 데이터입니다. @see https://developer.chrome.com/extensions/pageAction#type-ImageDataType
       * */
-    var icon: ImageData = js.native
+    var icon: ImageData
   }
   object SidebarIconDetail {
     
@@ -107,11 +102,10 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SidebarPageDetail extends StObject {
     
     /** html 파일의 리소스 경로. 빈 문자열(‘’)로 설정하면 사이드바에 빈화면이 보입니다. */
-    var page: String = js.native
+    var page: String
   }
   object SidebarPageDetail {
     
@@ -129,17 +123,16 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SidebarShowDetail extends StObject {
     
     /**
       * Optional. url 인자와 현재 URL이 같을 때에도 페이지를 새로고침 할 것인지 여부.
       * @default false
       */
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. 사이드바 영역에 표시할 페이지 URL. 지정하지 않으면 매니페스트에 정의한 default_page. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object SidebarShowDetail {
     
@@ -166,10 +159,9 @@ object sidebarAction {
     }
   }
   
-  @js.native
   trait SidebarTitleDetail extends StObject {
     
-    var title: String = js.native
+    var title: String
   }
   object SidebarTitleDetail {
     

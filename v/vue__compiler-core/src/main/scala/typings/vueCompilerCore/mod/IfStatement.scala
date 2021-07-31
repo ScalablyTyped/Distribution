@@ -3,29 +3,28 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`23`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfStatement
-  extends SSRCodegenNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with SSRCodegenNode {
   
-  var alternate: js.UndefOr[IfStatement | BlockStatement | ReturnStatement] = js.native
+  var alternate: js.UndefOr[IfStatement | BlockStatement | ReturnStatement] = js.undefined
   
-  var consequent: BlockStatement = js.native
+  var consequent: BlockStatement
   
-  var test: ExpressionNode = js.native
+  var test: ExpressionNode
   
   @JSName("type")
-  var type_IfStatement: `23` = js.native
+  var type_IfStatement: `23`
 }
 object IfStatement {
   
   @scala.inline
-  def apply(consequent: BlockStatement, loc: SourceLocation, test: ExpressionNode, `type`: `23`): IfStatement = {
+  def apply(consequent: BlockStatement, loc: SourceLocation, test: ExpressionNode): IfStatement = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(23)
     __obj.asInstanceOf[IfStatement]
   }
   

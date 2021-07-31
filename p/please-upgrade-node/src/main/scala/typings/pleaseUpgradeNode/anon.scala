@@ -2,18 +2,16 @@ package typings.pleaseUpgradeNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<please-upgrade-node.please-upgrade-node.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var exitCode: js.UndefOr[Double] = js.native
+    var exitCode: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[js.Function1[/* version */ String, String]] = js.native
+    var message: js.UndefOr[js.Function1[/* version */ String, String]] = js.undefined
   }
   object PartialOptions {
     

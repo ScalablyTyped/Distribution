@@ -6,12 +6,10 @@ import typings.awsSdkClientPinpointBrowser.typesChannelResponseMod.UnmarshalledC
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesChannelsResponseMod {
   
-  @js.native
   trait ChannelsResponse extends StObject {
     
     /**
@@ -19,7 +17,7 @@ object typesChannelsResponseMod {
       */
     var Channels: js.UndefOr[
         StringDictionary[ChannelResponse] | (Iterable[js.Tuple2[String, ChannelResponse]])
-      ] = js.native
+      ] = js.undefined
   }
   object ChannelsResponse {
     
@@ -40,14 +38,15 @@ object typesChannelsResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledChannelsResponse extends ChannelsResponse {
+  trait UnmarshalledChannelsResponse
+    extends StObject
+       with ChannelsResponse {
     
     /**
       * A map of channels, with the ChannelType as the key and the Channel as the value.
       */
     @JSName("Channels")
-    var Channels_UnmarshalledChannelsResponse: js.UndefOr[StringDictionary[UnmarshalledChannelResponse]] = js.native
+    var Channels_UnmarshalledChannelsResponse: js.UndefOr[StringDictionary[UnmarshalledChannelResponse]] = js.undefined
   }
   object UnmarshalledChannelsResponse {
     

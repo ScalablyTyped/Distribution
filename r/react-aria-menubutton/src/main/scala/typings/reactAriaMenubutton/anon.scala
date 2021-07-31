@@ -2,19 +2,17 @@ package typings.reactAriaMenubutton
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FocusButton extends StObject {
     
     /**
       * If `true`, the widget's button will receive focus when the
       * menu closes. Default: `false`.
       */
-    var focusButton: Boolean = js.native
+    var focusButton: Boolean
   }
   object FocusButton {
     
@@ -32,14 +30,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FocusMenu extends StObject {
     
     /**
       * If `true`, the menu's first item will receive focus when the
       * menu opens. Default: `false`.
       */
-    var focusMenu: Boolean = js.native
+    var focusMenu: Boolean
   }
   object FocusMenu {
     
@@ -57,10 +54,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsOpen extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
   }
   object IsOpen {
     

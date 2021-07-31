@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the recently swiped vendor card. */
-@js.native
 trait MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs extends StObject {
   
   /** Gets data for the recently swiped vendor card. */
-  var report: MagneticStripeReaderReport = js.native
+  var report: MagneticStripeReaderReport
 }
 object MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs {
   

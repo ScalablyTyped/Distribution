@@ -2,19 +2,17 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A GcRule which deletes cells matching all of the given rules.
   */
-@js.native
 trait SchemaIntersection extends StObject {
   
   /**
     * Only delete cells which would be deleted by every element of `rules`.
     */
-  var rules: js.UndefOr[js.Array[SchemaGcRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaGcRule]] = js.undefined
 }
 object SchemaIntersection {
   

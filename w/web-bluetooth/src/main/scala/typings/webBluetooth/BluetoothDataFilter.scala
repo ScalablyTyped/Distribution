@@ -3,15 +3,13 @@ package typings.webBluetooth
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothDataFilter extends StObject {
   
-  val dataPrefix: DataView = js.native
+  val dataPrefix: DataView
   
-  val mask: DataView = js.native
+  val mask: DataView
 }
 object BluetoothDataFilter {
   

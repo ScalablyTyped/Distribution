@@ -2,21 +2,19 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var footnotes: js.UndefOr[js.Array[Footnote]] = js.native
+  var footnotes: js.UndefOr[js.Array[Footnote]] = js.undefined
   
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var summary: String = js.native
+  var summary: String
 }
 object Metadata {
   

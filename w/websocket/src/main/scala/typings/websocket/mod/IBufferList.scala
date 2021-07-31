@@ -6,7 +6,6 @@ import typings.websocket.websocketStrings.advance
 import typings.websocket.websocketStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

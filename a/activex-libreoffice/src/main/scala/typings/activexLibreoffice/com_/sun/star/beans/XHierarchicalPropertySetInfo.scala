@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The specification only describes the properties, it does not contain any values.
   */
-@js.native
-trait XHierarchicalPropertySetInfo extends XInterface {
+trait XHierarchicalPropertySetInfo
+  extends StObject
+     with XInterface {
   
   /**
     * @param aHierarchicalName specifies the nested name of the property.
@@ -21,14 +21,14 @@ trait XHierarchicalPropertySetInfo extends XInterface {
     * @throws UnknownPropertyException if the property does not exist.
     * @throws com::sun::star::lang::IllegalArgumentException if **aHierarchicalName** is not a well-formed nested name for this hierarchy. An implementation is
     */
-  def getPropertyByHierarchicalName(aHierarchicalName: String): Property = js.native
+  def getPropertyByHierarchicalName(aHierarchicalName: String): Property
   
   /**
     * @param aHierarchicalName specifies the name of the property.
     * @returns `TRUE` if a property with the specified name exists; otherwise `FALSE` is returned.
     * @throws com::sun::star::lang::IllegalArgumentException if **aHierarchicalName** is not a well-formed nested name for this hierarchy. An implementation is
     */
-  def hasPropertyByHierarchicalName(aHierarchicalName: String): Boolean = js.native
+  def hasPropertyByHierarchicalName(aHierarchicalName: String): Boolean
 }
 object XHierarchicalPropertySetInfo {
   

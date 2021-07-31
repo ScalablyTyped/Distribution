@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceProvenance extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SourceProvenance extends StObject {
   var fileHashes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[js.Any]
+  ] = js.undefined
   
   /** A copy of the build's `source.repo_source`, if exists, with any revisions resolved. */
-  var resolvedRepoSource: js.UndefOr[RepoSource] = js.native
+  var resolvedRepoSource: js.UndefOr[RepoSource] = js.undefined
   
   /** A copy of the build's `source.storage_source`, if exists, with any generations resolved. */
-  var resolvedStorageSource: js.UndefOr[StorageSource] = js.native
+  var resolvedStorageSource: js.UndefOr[StorageSource] = js.undefined
 }
 object SourceProvenance {
   
@@ -41,7 +39,7 @@ object SourceProvenance {
     def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[js.Any]
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     @scala.inline

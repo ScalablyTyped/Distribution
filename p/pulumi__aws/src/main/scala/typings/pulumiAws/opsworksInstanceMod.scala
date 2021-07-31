@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opsworksInstanceMod {
@@ -210,6 +209,10 @@ object opsworksInstanceMod {
   /* static members */
   object Instance {
     
+    @JSImport("@pulumi/aws/opsworks/instance", "Instance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Instance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -219,62 +222,56 @@ object opsworksInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Instance = js.native
-    @JSImport("@pulumi/aws/opsworks/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Instance = js.native
-    @JSImport("@pulumi/aws/opsworks/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState): Instance = js.native
-    @JSImport("@pulumi/aws/opsworks/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
     
     /**
       * Returns true if the given object is an instance of Instance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/instance", "Instance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/instance.Instance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/instance.Instance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/instance.Instance */ Boolean]
   }
   
-  @js.native
   trait InstanceArgs extends StObject {
     
     /**
       * The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
       */
-    val agentVersion: js.UndefOr[Input[String]] = js.native
+    val agentVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
       */
-    val amiId: js.UndefOr[Input[String]] = js.native
+    val amiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Machine architecture for created instances.  Can be either `"x8664"` (the default) or `"i386"`
       */
-    val architecture: js.UndefOr[Input[String]] = js.native
+    val architecture: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
       */
-    val autoScalingType: js.UndefOr[Input[String]] = js.native
+    val autoScalingType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the availability zone where instances will be created
       * by default.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
-    val createdAt: js.UndefOr[Input[String]] = js.native
+    val createdAt: js.UndefOr[Input[String]] = js.undefined
     
-    val deleteEbs: js.UndefOr[Input[Boolean]] = js.native
+    val deleteEbs: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val deleteEip: js.UndefOr[Input[Boolean]] = js.native
+    val deleteEip: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Additional EBS block devices to attach to the
@@ -282,16 +279,16 @@ object opsworksInstanceMod {
       */
     val ebsBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.InstanceEbsBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true, the launched EC2 instance will be EBS-optimized.
       */
-    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val ecsClusterArn: js.UndefOr[Input[String]] = js.native
+    val ecsClusterArn: js.UndefOr[Input[String]] = js.undefined
     
-    val elasticIp: js.UndefOr[Input[String]] = js.native
+    val elasticIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customize Ephemeral (also known as
@@ -301,73 +298,73 @@ object opsworksInstanceMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.opsworks.InstanceEphemeralBlockDevice]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The instance's host name.
       */
-    val hostname: js.UndefOr[Input[String]] = js.native
+    val hostname: js.UndefOr[Input[String]] = js.undefined
     
-    val infrastructureClass: js.UndefOr[Input[String]] = js.native
+    val infrastructureClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
       */
-    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.native
+    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val instanceProfileArn: js.UndefOr[Input[String]] = js.native
+    val instanceProfileArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of instance to start
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
-    val lastServiceErrorId: js.UndefOr[Input[String]] = js.native
+    val lastServiceErrorId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ids of the layers the instance will belong to.
       */
-    val layerIds: Input[js.Array[Input[String]]] = js.native
+    val layerIds: Input[js.Array[Input[String]]]
     
     /**
       * Name of operating system that will be installed.
       */
-    val os: js.UndefOr[Input[String]] = js.native
+    val os: js.UndefOr[Input[String]] = js.undefined
     
-    val platform: js.UndefOr[Input[String]] = js.native
+    val platform: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private DNS name assigned to the instance. Can only be
       * used inside the Amazon EC2, and only available if you've enabled DNS hostnames
       * for your VPC
       */
-    val privateDns: js.UndefOr[Input[String]] = js.native
+    val privateDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private IP address assigned to the instance
       */
-    val privateIp: js.UndefOr[Input[String]] = js.native
+    val privateIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public DNS name assigned to the instance. For EC2-VPC, this
       * is only available if you've enabled DNS hostnames for your VPC
       */
-    val publicDns: js.UndefOr[Input[String]] = js.native
+    val publicDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public IP address assigned to the instance, if applicable.
       */
-    val publicIp: js.UndefOr[Input[String]] = js.native
+    val publicIp: js.UndefOr[Input[String]] = js.undefined
     
-    val registeredBy: js.UndefOr[Input[String]] = js.native
+    val registeredBy: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedAgentVersion: js.UndefOr[Input[String]] = js.native
+    val reportedAgentVersion: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedOsFamily: js.UndefOr[Input[String]] = js.native
+    val reportedOsFamily: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedOsName: js.UndefOr[Input[String]] = js.native
+    val reportedOsName: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedOsVersion: js.UndefOr[Input[String]] = js.native
+    val reportedOsVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customize details about the root block
@@ -375,56 +372,56 @@ object opsworksInstanceMod {
       */
     val rootBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.InstanceRootBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
       */
-    val rootDeviceType: js.UndefOr[Input[String]] = js.native
+    val rootDeviceType: js.UndefOr[Input[String]] = js.undefined
     
-    val rootDeviceVolumeId: js.UndefOr[Input[String]] = js.native
+    val rootDeviceVolumeId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The associated security groups.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val sshHostDsaKeyFingerprint: js.UndefOr[Input[String]] = js.native
+    val sshHostDsaKeyFingerprint: js.UndefOr[Input[String]] = js.undefined
     
-    val sshHostRsaKeyFingerprint: js.UndefOr[Input[String]] = js.native
+    val sshHostRsaKeyFingerprint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the SSH keypair that instances will have by default.
       */
-    val sshKeyName: js.UndefOr[Input[String]] = js.native
+    val sshKeyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the stack the instance will belong to.
       */
-    val stackId: Input[String] = js.native
+    val stackId: Input[String]
     
     /**
       * The desired state of the instance.  Can be either `"running"` or `"stopped"`.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subnet ID to attach to
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
       */
-    val tenancy: js.UndefOr[Input[String]] = js.native
+    val tenancy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Keyword to choose what virtualization mode created instances
       * will use. Can be either `"paravirtual"` or `"hvm"`.
       */
-    val virtualizationType: js.UndefOr[Input[String]] = js.native
+    val virtualizationType: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceArgs {
     
@@ -716,40 +713,39 @@ object opsworksInstanceMod {
     }
   }
   
-  @js.native
   trait InstanceState extends StObject {
     
     /**
       * The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
       */
-    val agentVersion: js.UndefOr[Input[String]] = js.native
+    val agentVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AMI to use for the instance.  If an AMI is specified, `os` must be `"Custom"`.
       */
-    val amiId: js.UndefOr[Input[String]] = js.native
+    val amiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Machine architecture for created instances.  Can be either `"x8664"` (the default) or `"i386"`
       */
-    val architecture: js.UndefOr[Input[String]] = js.native
+    val architecture: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
       */
-    val autoScalingType: js.UndefOr[Input[String]] = js.native
+    val autoScalingType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the availability zone where instances will be created
       * by default.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
-    val createdAt: js.UndefOr[Input[String]] = js.native
+    val createdAt: js.UndefOr[Input[String]] = js.undefined
     
-    val deleteEbs: js.UndefOr[Input[Boolean]] = js.native
+    val deleteEbs: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val deleteEip: js.UndefOr[Input[Boolean]] = js.native
+    val deleteEip: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Additional EBS block devices to attach to the
@@ -757,21 +753,21 @@ object opsworksInstanceMod {
       */
     val ebsBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.InstanceEbsBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true, the launched EC2 instance will be EBS-optimized.
       */
-    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * EC2 instance ID
       */
-    val ec2InstanceId: js.UndefOr[Input[String]] = js.native
+    val ec2InstanceId: js.UndefOr[Input[String]] = js.undefined
     
-    val ecsClusterArn: js.UndefOr[Input[String]] = js.native
+    val ecsClusterArn: js.UndefOr[Input[String]] = js.undefined
     
-    val elasticIp: js.UndefOr[Input[String]] = js.native
+    val elasticIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customize Ephemeral (also known as
@@ -781,73 +777,73 @@ object opsworksInstanceMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.opsworks.InstanceEphemeralBlockDevice]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The instance's host name.
       */
-    val hostname: js.UndefOr[Input[String]] = js.native
+    val hostname: js.UndefOr[Input[String]] = js.undefined
     
-    val infrastructureClass: js.UndefOr[Input[String]] = js.native
+    val infrastructureClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
       */
-    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.native
+    val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val instanceProfileArn: js.UndefOr[Input[String]] = js.native
+    val instanceProfileArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of instance to start
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
-    val lastServiceErrorId: js.UndefOr[Input[String]] = js.native
+    val lastServiceErrorId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ids of the layers the instance will belong to.
       */
-    val layerIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val layerIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Name of operating system that will be installed.
       */
-    val os: js.UndefOr[Input[String]] = js.native
+    val os: js.UndefOr[Input[String]] = js.undefined
     
-    val platform: js.UndefOr[Input[String]] = js.native
+    val platform: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private DNS name assigned to the instance. Can only be
       * used inside the Amazon EC2, and only available if you've enabled DNS hostnames
       * for your VPC
       */
-    val privateDns: js.UndefOr[Input[String]] = js.native
+    val privateDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private IP address assigned to the instance
       */
-    val privateIp: js.UndefOr[Input[String]] = js.native
+    val privateIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public DNS name assigned to the instance. For EC2-VPC, this
       * is only available if you've enabled DNS hostnames for your VPC
       */
-    val publicDns: js.UndefOr[Input[String]] = js.native
+    val publicDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public IP address assigned to the instance, if applicable.
       */
-    val publicIp: js.UndefOr[Input[String]] = js.native
+    val publicIp: js.UndefOr[Input[String]] = js.undefined
     
-    val registeredBy: js.UndefOr[Input[String]] = js.native
+    val registeredBy: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedAgentVersion: js.UndefOr[Input[String]] = js.native
+    val reportedAgentVersion: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedOsFamily: js.UndefOr[Input[String]] = js.native
+    val reportedOsFamily: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedOsName: js.UndefOr[Input[String]] = js.native
+    val reportedOsName: js.UndefOr[Input[String]] = js.undefined
     
-    val reportedOsVersion: js.UndefOr[Input[String]] = js.native
+    val reportedOsVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customize details about the root block
@@ -855,56 +851,56 @@ object opsworksInstanceMod {
       */
     val rootBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.InstanceRootBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
       */
-    val rootDeviceType: js.UndefOr[Input[String]] = js.native
+    val rootDeviceType: js.UndefOr[Input[String]] = js.undefined
     
-    val rootDeviceVolumeId: js.UndefOr[Input[String]] = js.native
+    val rootDeviceVolumeId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The associated security groups.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val sshHostDsaKeyFingerprint: js.UndefOr[Input[String]] = js.native
+    val sshHostDsaKeyFingerprint: js.UndefOr[Input[String]] = js.undefined
     
-    val sshHostRsaKeyFingerprint: js.UndefOr[Input[String]] = js.native
+    val sshHostRsaKeyFingerprint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the SSH keypair that instances will have by default.
       */
-    val sshKeyName: js.UndefOr[Input[String]] = js.native
+    val sshKeyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the stack the instance will belong to.
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The desired state of the instance.  Can be either `"running"` or `"stopped"`.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subnet ID to attach to
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`
       */
-    val tenancy: js.UndefOr[Input[String]] = js.native
+    val tenancy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Keyword to choose what virtualization mode created instances
       * will use. Can be either `"paravirtual"` or `"hvm"`.
       */
-    val virtualizationType: js.UndefOr[Input[String]] = js.native
+    val virtualizationType: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceState {
     

@@ -2,24 +2,22 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional details about the URL, set only when calling get().
   */
-@js.native
 trait SchemaUrlSampleDetails extends StObject {
   
   /**
     * List of sitemaps pointing at this URL.
     */
-  var containingSitemaps: js.UndefOr[js.Array[String]] = js.native
+  var containingSitemaps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A sample set of URLs linking to this URL.
     */
-  var linkedFromUrls: js.UndefOr[js.Array[String]] = js.native
+  var linkedFromUrls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUrlSampleDetails {
   

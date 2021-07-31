@@ -10,93 +10,83 @@ import typings.textract.anon.Crop
 import typings.textract.anon.Lang
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("textract", "fromBufferWithMime")
+  @JSImport("textract", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def fromBufferWithMime(
     mimeType: String,
     buffer: Buffer,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
-  ): Unit = js.native
-  @JSImport("textract", "fromBufferWithMime")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithMime")(mimeType.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromBufferWithMime(
     mimeType: String,
     buffer: Buffer,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithMime")(mimeType.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("textract", "fromBufferWithName")
-  @js.native
-  def fromBufferWithName(name: String, buffer: Buffer, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
-  @JSImport("textract", "fromBufferWithName")
-  @js.native
+  @scala.inline
+  def fromBufferWithName(name: String, buffer: Buffer, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromBufferWithName(
     name: String,
     buffer: Buffer,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("textract", "fromFileWithMimeAndPath")
-  @js.native
+  @scala.inline
   def fromFileWithMimeAndPath(
     mimeType: String,
     filePath: String,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
-  ): Unit = js.native
-  @JSImport("textract", "fromFileWithMimeAndPath")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithMimeAndPath")(mimeType.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromFileWithMimeAndPath(
     mimeType: String,
     filePath: String,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithMimeAndPath")(mimeType.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("textract", "fromFileWithPath")
-  @js.native
-  def fromFileWithPath(filePath: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
-  @JSImport("textract", "fromFileWithPath")
-  @js.native
+  @scala.inline
+  def fromFileWithPath(filePath: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fromFileWithPath(
     filePath: String,
     config: Config,
     callback: js.Function2[/* error */ Error, /* text */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("textract", "fromUrl")
-  @js.native
-  def fromUrl(url: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
-  @JSImport("textract", "fromUrl")
-  @js.native
-  def fromUrl(url: String, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
-  @JSImport("textract", "fromUrl")
-  @js.native
-  def fromUrl(url: URL_, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
-  @JSImport("textract", "fromUrl")
-  @js.native
-  def fromUrl(url: URL_, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
+  @scala.inline
+  def fromUrl(url: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromUrl(url: String, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromUrl(url: URL_, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromUrl(url: URL_, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Config extends StObject {
     
     /**
       * Doc extractor options for non OS X.
       * See `drawingtotext` manual for available options
       */
-    var doc: js.UndefOr[extractorExecOpts] = js.native
+    var doc: js.UndefOr[extractorExecOpts] = js.undefined
     
     /**
       * DXF extractor options.
       * See `antiword` manual for available options
       */
-    var dxf: js.UndefOr[extractorExecOpts] = js.native
+    var dxf: js.UndefOr[extractorExecOpts] = js.undefined
     
     /**
       * Some extractors (dxf) use node's exec functionality.
@@ -104,19 +94,19 @@ object mod {
       * One reason you might want to provide this config is if you are dealing with very large files.
       * You might want to increase the exec maxBuffer setting.
       */
-    var exec: js.UndefOr[ExecException] = js.native
+    var exec: js.UndefOr[ExecException] = js.undefined
     
     /**
       * Images (png, jpg, gif) extractor options.
       * See `tesseract` manual for available options
       */
-    var images: js.UndefOr[extractorExecOpts] = js.native
+    var images: js.UndefOr[extractorExecOpts] = js.undefined
     
     /**
       * When extracting HTML, whether or not to include `alt` text with the extracted text.
       * @default false
       */
-    var includeAltText: js.UndefOr[Boolean] = js.native
+    var includeAltText: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is a proxy options object to the library textract uses for pdf extraction: pdf-text-extract.
@@ -125,13 +115,13 @@ object mod {
       * It is not suggested you modify this without understanding what trouble that might get you in.
       * See [this GH issue](https://github.com/dbashford/textract/issues/75) for why textract overrides that library's default.
       */
-    var pdftotextOptions: js.UndefOr[Crop] = js.native
+    var pdftotextOptions: js.UndefOr[Crop] = js.undefined
     
     /**
       * Pass this in as true and textract will not strip any line breaks.
       * @default false
       */
-    var preserveLineBreaks: js.UndefOr[Boolean] = js.native
+    var preserveLineBreaks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Some extractors, like PDF, insert line breaks at the end of every line, even if the middle of a sentence.
@@ -139,15 +129,15 @@ object mod {
       * Check your output with this option, though, this doesn't preserve paragraphs unless there are multiple breaks.
       * @default false
       */
-    var preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.native
+    var preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * RTF extractor options.
       * See `unrtf` manual for available options
       */
-    var rtf: js.UndefOr[extractorExecOpts] = js.native
+    var rtf: js.UndefOr[extractorExecOpts] = js.undefined
     
-    var tesseract: js.UndefOr[Lang | Cmd] = js.native
+    var tesseract: js.UndefOr[Lang | Cmd] = js.undefined
   }
   object Config {
     
@@ -222,13 +212,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait URLConfig extends Config {
+  trait URLConfig
+    extends StObject
+       with Config {
     
     /**
       * Used with fromUrl, if set, rather than using the content-type from the URL request, will use the provided typeOverride.
       */
-    var typeOverride: js.UndefOr[String] = js.native
+    var typeOverride: js.UndefOr[String] = js.undefined
   }
   object URLConfig {
     
@@ -249,10 +240,9 @@ object mod {
     }
   }
   
-  @js.native
   trait extractorExecOpts extends StObject {
     
-    var exec: StringDictionary[String] = js.native
+    var exec: StringDictionary[String]
   }
   object extractorExecOpts {
     

@@ -16,19 +16,24 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useDescriptorsMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useDescriptors", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useDescriptors", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](
     hasStateScreensNavigationScreenOptionsOnActionGetStateSetStateAddListenerAddKeyedListenerOnRouteFocusRouterEmitter: Options[State, ScreenOptions, EventMap]
   ): Record[
     String, 
     Descriptor[Record[String, js.UndefOr[js.Object]], String, State, ScreenOptions, js.Object]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateScreensNavigationScreenOptionsOnActionGetStateSetStateAddListenerAddKeyedListenerOnRouteFocusRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[Record[
+    String, 
+    Descriptor[Record[String, js.UndefOr[js.Object]], String, State, ScreenOptions, js.Object]
+  ]]
   
   @js.native
   trait Options[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] extends StObject {
@@ -37,7 +42,7 @@ object useDescriptorsMod {
     
     var addListener: AddListener = js.native
     
-    var emitter: NavigationEventEmitter[_] = js.native
+    var emitter: NavigationEventEmitter[js.Any] = js.native
     
     def getState(): State = js.native
     

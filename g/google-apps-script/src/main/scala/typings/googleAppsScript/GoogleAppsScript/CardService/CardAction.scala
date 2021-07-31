@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setText("Card action")
   *         .setOnClickAction(action);
   */
-@js.native
 trait CardAction extends StObject {
   
-  def setAuthorizationAction(action: AuthorizationAction): CardAction = js.native
+  def setAuthorizationAction(action: AuthorizationAction): CardAction
   
-  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): CardAction = js.native
+  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): CardAction
   
-  def setOnClickAction(action: Action): CardAction = js.native
+  def setOnClickAction(action: Action): CardAction
   
-  def setOnClickOpenLinkAction(action: Action): CardAction = js.native
+  def setOnClickOpenLinkAction(action: Action): CardAction
   
-  def setOpenLink(openLink: OpenLink): CardAction = js.native
+  def setOpenLink(openLink: OpenLink): CardAction
   
-  def setText(text: String): CardAction = js.native
+  def setText(text: String): CardAction
 }
 object CardAction {
   

@@ -2,10 +2,13 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sanitizationMod {
+  
+  @JSImport("@ionic/core/dist/types/utils/sanitization", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/core/dist/types/utils/sanitization", "IonicSafeString")
   @js.native
@@ -15,13 +18,10 @@ object sanitizationMod {
     var value: String = js.native
   }
   
-  @JSImport("@ionic/core/dist/types/utils/sanitization", "sanitizeDOMString")
-  @js.native
-  def sanitizeDOMString(): js.UndefOr[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/sanitization", "sanitizeDOMString")
-  @js.native
-  def sanitizeDOMString(untrustedString: String): js.UndefOr[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/sanitization", "sanitizeDOMString")
-  @js.native
-  def sanitizeDOMString(untrustedString: IonicSafeString): js.UndefOr[String] = js.native
+  @scala.inline
+  def sanitizeDOMString(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeDOMString")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def sanitizeDOMString(untrustedString: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeDOMString")(untrustedString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def sanitizeDOMString(untrustedString: IonicSafeString): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeDOMString")(untrustedString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

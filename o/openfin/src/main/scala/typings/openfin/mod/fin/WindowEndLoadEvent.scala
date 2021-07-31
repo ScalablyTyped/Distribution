@@ -2,15 +2,15 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowEndLoadEvent extends WindowEvent {
+trait WindowEndLoadEvent
+  extends StObject
+     with WindowEvent {
   
-  var documentName: String = js.native
+  var documentName: String
   
-  var isMain: Boolean = js.native
+  var isMain: Boolean
 }
 object WindowEndLoadEvent {
   

@@ -5,17 +5,15 @@ import typings.node.nodeStrings.pkcs1
 import typings.node.nodeStrings.spki
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyInput extends StObject {
   
-  var format: js.UndefOr[KeyFormat] = js.native
+  var format: js.UndefOr[KeyFormat] = js.undefined
   
-  var key: String | Buffer = js.native
+  var key: String | Buffer
   
-  var `type`: js.UndefOr[pkcs1 | spki] = js.native
+  var `type`: js.UndefOr[pkcs1 | spki] = js.undefined
 }
 object PublicKeyInput {
   

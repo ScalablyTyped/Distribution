@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object specifying the Keyword enrichment and related parameters. */
-@js.native
 trait NluEnrichmentKeywords extends StObject {
   
   /** When `true`, emotion detection of keywords will be performed on the specified field. */
-  var emotion: js.UndefOr[Boolean] = js.native
+  var emotion: js.UndefOr[Boolean] = js.undefined
   
   /** The maximum number of keywords to extract for each instance of the specified field. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** When `true`, sentiment analysis of keywords will be performed on the specified field. */
-  var sentiment: js.UndefOr[Boolean] = js.native
+  var sentiment: js.UndefOr[Boolean] = js.undefined
 }
 object NluEnrichmentKeywords {
   

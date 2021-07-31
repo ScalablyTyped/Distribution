@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/source-map |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 21 |
 | # dependents       | 2 |
-| # downloads        | 316767878 |
+| # downloads        | 436380733 |
 | # stars            | 0 |
 
 ## Links

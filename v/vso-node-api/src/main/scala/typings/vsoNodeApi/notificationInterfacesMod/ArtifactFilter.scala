@@ -2,17 +2,17 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArtifactFilter extends BaseSubscriptionFilter {
+trait ArtifactFilter
+  extends StObject
+     with BaseSubscriptionFilter {
   
-  var artifactId: String = js.native
+  var artifactId: String
   
-  var artifactType: String = js.native
+  var artifactType: String
   
-  var artifactUri: String = js.native
+  var artifactUri: String
 }
 object ArtifactFilter {
   

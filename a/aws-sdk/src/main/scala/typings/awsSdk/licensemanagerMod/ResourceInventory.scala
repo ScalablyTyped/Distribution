@@ -2,41 +2,39 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceInventory extends StObject {
   
   /**
     * Platform of the resource.
     */
-  var Platform: js.UndefOr[String] = js.native
+  var Platform: js.UndefOr[String] = js.undefined
   
   /**
     * Platform version of the resource in the inventory.
     */
-  var PlatformVersion: js.UndefOr[String] = js.native
+  var PlatformVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: js.UndefOr[String] = js.native
+  var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the account that owns the resource.
     */
-  var ResourceOwningAccountId: js.UndefOr[String] = js.native
+  var ResourceOwningAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of resource.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceType] = js.undefined
 }
 object ResourceInventory {
   

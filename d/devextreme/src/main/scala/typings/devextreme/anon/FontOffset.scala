@@ -7,21 +7,19 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontOffset extends StObject {
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
   
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
 }
 object FontOffset {
   

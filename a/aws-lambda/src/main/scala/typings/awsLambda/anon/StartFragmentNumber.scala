@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartFragmentNumber extends StObject {
   
-  var StartFragmentNumber: js.UndefOr[String] = js.native
+  var StartFragmentNumber: js.UndefOr[String] = js.undefined
   
-  var StartTimestamp: js.UndefOr[String] = js.native
+  var StartTimestamp: js.UndefOr[String] = js.undefined
   
-  var StreamARN: js.UndefOr[String] = js.native
+  var StreamARN: js.UndefOr[String] = js.undefined
 }
 object StartFragmentNumber {
   

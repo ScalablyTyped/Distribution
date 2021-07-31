@@ -7,7 +7,6 @@ import typings.antDesignReactNative.anon.TypeofCardHeader
 import typings.antDesignReactNative.cardMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Card")

@@ -2,13 +2,11 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetingValueDemogAgeCriteria extends StObject {
   
-  var demogAgeCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var demogAgeCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTargetingValueDemogAgeCriteria {
   

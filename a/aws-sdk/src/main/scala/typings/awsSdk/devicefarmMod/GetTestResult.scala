@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTestResult extends StObject {
   
   /**
     * A test condition that is evaluated.
     */
-  var test: js.UndefOr[Test] = js.native
+  var test: js.UndefOr[Test] = js.undefined
 }
 object GetTestResult {
   

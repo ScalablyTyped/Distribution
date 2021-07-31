@@ -1,9 +1,17 @@
 package typings.winrtUwp.global.Windows.Media
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
+import typings.winrtUwp.Windows.Media.IMediaMarker
+import typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender
+import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import typings.winrtUwp.Windows.Storage.Streams.IInputStream
+import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
+import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
+import typings.winrtUwp.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for initializing and configuring a speech synthesis engine (voice) to convert a text string to an audio stream, also known as text-to-speech (TTS). Voice characteristics, pronunciation, volume, pitch, rate or speed, emphasis, and so on are customized through Speech Synthesis Markup Language (SSML). */
@@ -13,14 +21,125 @@ object SpeechSynthesis {
   @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesisStream")
   @js.native
   abstract class SpeechSynthesisStream ()
-    extends typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesisStream
+    extends StObject
+       with typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesisStream {
+    
+    /** Gets whether SpeechSynthesisStream can be read from. */
+    /* CompleteClass */
+    var canRead: Boolean = js.native
+    
+    /** Gets a value that indicates whether SpeechSynthesisStream can be written to. */
+    /* CompleteClass */
+    var canWrite: Boolean = js.native
+    
+    /**
+      * Creates a copy of SpeechSynthesisStream that references the same bytes as the original stream.
+      * @return The new stream.
+      */
+    /* CompleteClass */
+    override def cloneStream(): IRandomAccessStream = js.native
+    
+    /** Releases system resources that are exposed by SpeechSynthesisStream . */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /** Gets the MIME type of the content of SpeechSynthesisStream . */
+    /* CompleteClass */
+    var contentType: String = js.native
+    
+    /**
+      * Flushes data asynchronously in a sequential stream.
+      * @return An asynchronous operation. For more information, see FlushAsync method.
+      */
+    /* CompleteClass */
+    override def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+    
+    /**
+      * Retrieves an input stream at a specified location in SpeechSynthesisStream .
+      * @param position The location in the stream at which to begin.
+      * @return The input stream.
+      */
+    /* CompleteClass */
+    override def getInputStreamAt(position: Double): IInputStream = js.native
+    
+    /**
+      * Retrieves an output stream at a specified location in SpeechSynthesisStream .
+      * @param position The location in the stream at which to begin.
+      * @return The output stream.
+      */
+    /* CompleteClass */
+    override def getOutputStreamAt(position: Double): IOutputStream = js.native
+    
+    /** Gets the collection of timeline markers associated with SpeechSynthesisStream . */
+    /* CompleteClass */
+    var markers: IVectorView[IMediaMarker] = js.native
+    
+    /** Gets the position within SpeechSynthesisStream . */
+    /* CompleteClass */
+    var position: Double = js.native
+    
+    /**
+      * Reads data asynchronously in a sequential stream.
+      * @param buffer The buffer into which the asynchronous read operation places the bytes that are read.
+      * @param count The number of bytes to read that is less than or equal to the Capacity value.
+      * @param options Specifies the type of the asynchronous read operation.
+      * @return An asynchronous operation that includes progress updates. For more information, see ReadAsync method.
+      */
+    /* CompleteClass */
+    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+    
+    /**
+      * Goes to the specified position within SpeechSynthesisStream .
+      * @param position The desired position within the stream.
+      */
+    /* CompleteClass */
+    override def seek(position: Double): Unit = js.native
+    
+    /** Gets or sets the size of the SpeechSynthesisStream . */
+    /* CompleteClass */
+    var size: Double = js.native
+    
+    /**
+      * Writes data asynchronously in a sequential stream.
+      * @param buffer The buffer into which the asynchronous writer operation places the bytes to write.
+      * @return An asynchronous operation that includes progress updates. For more information, see WriteAsync method.
+      */
+    /* CompleteClass */
+    override def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  }
   
   /** Provides access to the functionality of an installed speech synthesis engine (voice). */
   @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesizer")
   @js.native
   /** Initializes a new instance of a SpeechSynthesizer object. */
   class SpeechSynthesizer ()
-    extends typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesizer
+    extends StObject
+       with typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesizer {
+    
+    /** Closes the SpeechSynthesizer and releases system resources. */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /**
+      * Asynchronously generate speech output from a string containing Speech Synthesis Markup Language (SSML).
+      * @param Ssml The SSML-modified text to speak.
+      * @return A SpeechSynthesisStream that represents the speech generated from the Speech Synthesis Markup Language (SSML).
+      */
+    /* CompleteClass */
+    override def synthesizeSsmlToStreamAsync(Ssml: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesisStream] = js.native
+    
+    /**
+      * Asynchronously generate speech output from a string.
+      * @param text The text to speak.
+      * @return A SpeechSynthesisStream that represents the speech generated from the text.
+      */
+    /* CompleteClass */
+    override def synthesizeTextToStreamAsync(text: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesisStream] = js.native
+    
+    /** Gets or sets the speech synthesis engine (voice). */
+    /* CompleteClass */
+    var voice: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation = js.native
+  }
   object SpeechSynthesizer {
     
     @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesizer")
@@ -50,16 +169,38 @@ object SpeechSynthesis {
   object VoiceGender extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender & Double] = js.native
     
-    /* 1 */ val female: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender.female with Double = js.native
+    /* 1 */ val female: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender.female & Double = js.native
     
-    /* 0 */ val male: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender.male with Double = js.native
+    /* 0 */ val male: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceGender.male & Double = js.native
   }
   
   /** Provides info about an installed speech synthesis engine (voice). */
   @JSGlobal("Windows.Media.SpeechSynthesis.VoiceInformation")
   @js.native
   abstract class VoiceInformation ()
-    extends typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation
+    extends StObject
+       with typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation {
+    
+    /** Gets the description of the speech synthesis engine (voice). */
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /** Gets the display name associated with the speech synthesis engine (voice). */
+    /* CompleteClass */
+    var displayName: String = js.native
+    
+    /** Gets the gender setting of the speech synthesis engine (voice). */
+    /* CompleteClass */
+    var gender: VoiceGender = js.native
+    
+    /** Gets the unique ID of the speech synthesis engine (voice). */
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /** Gets the normalized BCP-47 language tag of the speech synthesis engine (voice). */
+    /* CompleteClass */
+    var language: String = js.native
+  }
 }

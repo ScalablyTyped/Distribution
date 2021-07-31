@@ -4,155 +4,125 @@ import typings.matrixJsSdk.anon.Promise
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("matrix-js-sdk/lib/utils", "checkObjectHasKeys")
+  @JSImport("matrix-js-sdk/lib/utils", JSImport.Namespace)
   @js.native
-  def checkObjectHasKeys(obj: js.Object, keys_ : js.Array[String]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("matrix-js-sdk/lib/utils", "checkObjectHasNoAdditionalKeys")
-  @js.native
-  def checkObjectHasNoAdditionalKeys(obj: js.Object, allowedKeys: js.Array[String]): Unit = js.native
+  @scala.inline
+  def checkObjectHasKeys(obj: js.Object, keys_ : js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkObjectHasKeys")(obj.asInstanceOf[js.Any], keys_.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "deepCompare")
-  @js.native
-  def deepCompare(x: js.Any, y: js.Any): Boolean = js.native
+  @scala.inline
+  def checkObjectHasNoAdditionalKeys(obj: js.Object, allowedKeys: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkObjectHasNoAdditionalKeys")(obj.asInstanceOf[js.Any], allowedKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "deepCopy")
-  @js.native
-  def deepCopy[T](obj: T): T = js.native
+  @scala.inline
+  def deepCompare(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompare")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("matrix-js-sdk/lib/utils", "defer")
-  @js.native
-  def defer(): Promise = js.native
+  @scala.inline
+  def deepCopy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("matrix-js-sdk/lib/utils", "encodeParams")
-  @js.native
-  def encodeParams(params: Record[String, String]): String = js.native
+  @scala.inline
+  def defer(): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Promise]
   
-  @JSImport("matrix-js-sdk/lib/utils", "encodeUri")
-  @js.native
-  def encodeUri(pathTemplate: String, variables: Record[String, String]): String = js.native
+  @scala.inline
+  def encodeParams(params: Record[String, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("matrix-js-sdk/lib/utils", "ensureNoTrailingSlash")
-  @js.native
-  def ensureNoTrailingSlash(url: String): String = js.native
+  @scala.inline
+  def encodeUri(pathTemplate: String, variables: Record[String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeUri")(pathTemplate.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("matrix-js-sdk/lib/utils", "escapeRegExp")
-  @js.native
-  def escapeRegExp(string: String): String = js.native
+  @scala.inline
+  def ensureNoTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("matrix-js-sdk/lib/utils", "extend")
-  @js.native
-  def extend(restParams: js.Any*): js.Any = js.native
+  @scala.inline
+  def escapeRegExp(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeRegExp")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("matrix-js-sdk/lib/utils", "filter")
-  @js.native
+  @scala.inline
+  def extend(restParams: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(restParams.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
   def filter[T](
     array: js.Array[T],
     fn: js.Function3[/* t */ T, /* i */ js.UndefOr[Double], /* a */ js.UndefOr[js.Array[T]], Boolean]
-  ): js.Array[T] = js.native
+  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("matrix-js-sdk/lib/utils", "findElement")
-  @js.native
+  @scala.inline
   def findElement[T](
     array: js.Array[T],
     fn: js.Function3[/* t */ T, /* i */ js.UndefOr[Double], /* a */ js.UndefOr[js.Array[T]], Boolean]
-  ): T = js.native
-  @JSImport("matrix-js-sdk/lib/utils", "findElement")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def findElement[T](
     array: js.Array[T],
     fn: js.Function3[/* t */ T, /* i */ js.UndefOr[Double], /* a */ js.UndefOr[js.Array[T]], Boolean],
     reverse: Boolean
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("matrix-js-sdk/lib/utils", "forEach")
-  @js.native
-  def forEach[T](array: js.Array[T], fn: js.Function2[/* t */ T, /* i */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def forEach[T](array: js.Array[T], fn: js.Function2[/* t */ T, /* i */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "getCrypto")
-  @js.native
-  def getCrypto(): js.Object = js.native
+  @scala.inline
+  def getCrypto(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getCrypto")().asInstanceOf[js.Object]
   
-  @JSImport("matrix-js-sdk/lib/utils", "globToRegexp")
-  @js.native
-  def globToRegexp(glob: String, extended: js.Any): String = js.native
+  @scala.inline
+  def globToRegexp(glob: String, extended: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("globToRegexp")(glob.asInstanceOf[js.Any], extended.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("matrix-js-sdk/lib/utils", "inherits")
-  @js.native
-  def inherits(ctor: js.Function, superCtor: js.Function): Unit = js.native
+  @scala.inline
+  def inherits(ctor: js.Function, superCtor: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(ctor.asInstanceOf[js.Any], superCtor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "isArray")
-  @js.native
-  def isArray(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("matrix-js-sdk/lib/utils", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("matrix-js-sdk/lib/utils", "isNullOrUndefined")
-  @js.native
-  def isNullOrUndefined(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isNullOrUndefined(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefined")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("matrix-js-sdk/lib/utils", "isNumber")
-  @js.native
-  def isNumber(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("matrix-js-sdk/lib/utils", "keys")
-  @js.native
-  def keys(obj: js.Object): js.Array[String] = js.native
+  @scala.inline
+  def keys(obj: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("matrix-js-sdk/lib/utils", "map")
-  @js.native
-  def map[T, S](array: js.Array[T], fn: js.Function1[/* t */ T, S]): js.Array[S] = js.native
+  @scala.inline
+  def map[T, S](array: js.Array[T], fn: js.Function1[/* t */ T, S]): js.Array[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[S]]
   
-  @JSImport("matrix-js-sdk/lib/utils", "polyfillSuper")
-  @js.native
-  def polyfillSuper(thisArg: js.Any, SuperType: js.Any, params: js.Any*): Unit = js.native
+  @scala.inline
+  def polyfillSuper(thisArg: js.Any, SuperType: js.Any, params: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("polyfillSuper")(thisArg.asInstanceOf[js.Any], SuperType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "promiseMapSeries")
-  @js.native
-  def promiseMapSeries[T](promises: js.Array[js.Promise[T]], fn: js.Function1[/* t */ T, Unit]): js.Promise[Unit] = js.native
+  @scala.inline
+  def promiseMapSeries[T](promises: js.Array[js.Promise[T]], fn: js.Function1[/* t */ T, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseMapSeries")(promises.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("matrix-js-sdk/lib/utils", "promiseTry")
-  @js.native
-  def promiseTry[T](fn: js.Function0[T]): js.Promise[T] = js.native
+  @scala.inline
+  def promiseTry[T](fn: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseTry")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @JSImport("matrix-js-sdk/lib/utils", "removeElement")
-  @js.native
+  @scala.inline
   def removeElement[T](
     array: js.Array[T],
     fn: js.Function3[/* t */ T, /* i */ js.UndefOr[Double], /* a */ js.UndefOr[js.Array[T]], Boolean]
-  ): js.Any = js.native
-  @JSImport("matrix-js-sdk/lib/utils", "removeElement")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElement")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def removeElement[T](
     array: js.Array[T],
     fn: js.Function3[/* t */ T, /* i */ js.UndefOr[Double], /* a */ js.UndefOr[js.Array[T]], Boolean],
     reverse: Boolean
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElement")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("matrix-js-sdk/lib/utils", "removeHiddenChars")
-  @js.native
-  def removeHiddenChars(str: String): String = js.native
+  @scala.inline
+  def removeHiddenChars(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHiddenChars")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("matrix-js-sdk/lib/utils", "runPolyfills")
-  @js.native
-  def runPolyfills(): Unit = js.native
+  @scala.inline
+  def runPolyfills(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runPolyfills")().asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "setCrypto")
-  @js.native
-  def setCrypto(c: js.Object): Unit = js.native
+  @scala.inline
+  def setCrypto(c: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCrypto")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/utils", "sleep")
-  @js.native
-  def sleep[T](ms: Double, value: T): js.Promise[T] = js.native
+  @scala.inline
+  def sleep[T](ms: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("matrix-js-sdk/lib/utils", "values")
-  @js.native
-  def values[T](obj: Record[String, T]): js.Array[T] = js.native
+  @scala.inline
+  def values[T](obj: Record[String, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

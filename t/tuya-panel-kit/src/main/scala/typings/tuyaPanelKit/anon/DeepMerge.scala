@@ -7,26 +7,24 @@ import typings.tuyaPanelKit.mod.ThemeConsumerProps
 import typings.tuyaPanelKit.mod.ThemeProviderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeepMerge extends StObject {
   
-  var ThemeConsumer: ElementType[ThemeConsumerProps] = js.native
+  var ThemeConsumer: ElementType[ThemeConsumerProps]
   
-  var ThemeProvider: ElementType[ThemeProviderProps] = js.native
+  var ThemeProvider: ElementType[ThemeProviderProps]
   
-  def deepMerge(target: js.Object, args: js.Object*): js.Object = js.native
+  def deepMerge(target: js.Object, args: js.Object*): js.Object
   
-  def getTheme(props: js.Object, `type`: String, defaultValue: js.Any): js.Any = js.native
+  def getTheme(props: js.Object, `type`: String, defaultValue: js.Any): js.Any
   
-  def parseToCss(values: js.Array[Double], key: String): StringDictionary[Double] = js.native
+  def parseToCss(values: js.Array[Double], key: String): StringDictionary[Double]
   
-  def parseToStyle(values: js.Array[Double], key: String): StringDictionary[Double] = js.native
+  def parseToStyle(values: js.Array[Double], key: String): StringDictionary[Double]
   
   // tslint:disable-next-line no-unnecessary-generics
-  def withTheme[P /* <: Theme[T] */, T](component: ComponentType[P]): ComponentType[P] = js.native
+  def withTheme[P /* <: Theme[T] */, T](component: ComponentType[P]): ComponentType[P]
 }
 object DeepMerge {
   

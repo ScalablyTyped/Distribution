@@ -2,7 +2,6 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Helper")
@@ -26,6 +25,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Helper () extends StObject
 object Helper {
   
+  @JSImport("node-mysql-wrapper", "Helper")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create and return a copy of an object.
     * @param {T} object the object you want to copy.
@@ -33,9 +36,8 @@ object Helper {
     * @return {T}
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.copyObject")
-  @js.native
-  def copyObject[T](`object`: T): T = js.native
+  @scala.inline
+  def copyObject[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copyObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Iterate object's keys and return their names to the callback.
@@ -45,9 +47,8 @@ object Helper {
     * @return {U}
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.forEachKey")
-  @js.native
-  def forEachKey[T, U](map: Map[T], callback: js.Function1[/* key */ String, U]): U = js.native
+  @scala.inline
+  def forEachKey[T, U](map: Map[T], callback: js.Function1[/* key */ String, U]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachKey")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[U]
   
   /**
     * Iterate object's keys and return their values to the callback.
@@ -57,9 +58,8 @@ object Helper {
     * @return {U}
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.forEachValue")
-  @js.native
-  def forEachValue[T, U](map: T, callback: js.Function1[/* value */ T, U]): U = js.native
+  @scala.inline
+  def forEachValue[T, U](map: T, callback: js.Function1[/* value */ T, U]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachValue")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[U]
   
   /**
     * Checks if an object has 'tableRules' property.
@@ -67,9 +67,8 @@ object Helper {
     * @return boolean
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.hasRules")
-  @js.native
-  def hasRules(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def hasRules(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRules")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Checks if anything is a function.
@@ -77,9 +76,8 @@ object Helper {
     * @return boolean
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.isFunction")
-  @js.native
-  def isFunction(functionToCheck: js.Any): Boolean = js.native
+  @scala.inline
+  def isFunction(functionToCheck: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(functionToCheck.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Converts any_string to anyString and returns it.
@@ -88,9 +86,8 @@ object Helper {
     * @return {string}
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.toObjectProperty")
-  @js.native
-  def toObjectProperty(columnKey: String): String = js.native
+  @scala.inline
+  def toObjectProperty(columnKey: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjectProperty")(columnKey.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts anyString to any_string and returns it.
@@ -99,7 +96,6 @@ object Helper {
     * @return {string}
     */
   /* static member */
-  @JSImport("node-mysql-wrapper", "Helper.toRowProperty")
-  @js.native
-  def toRowProperty(objectKey: String): String = js.native
+  @scala.inline
+  def toRowProperty(objectKey: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRowProperty")(objectKey.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object MicroflowParameterType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowParameterType.create")
-  @js.native
-  def create(model: IModel): MicroflowParameterType = js.native
+  @scala.inline
+  def create(model: IModel): MicroflowParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowParameterType]
   
   /**
     * Creates and returns a new MicroflowParameterType instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object MicroflowParameterType {
     *  6.9.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowParameterType.createIn")
-  @js.native
-  def createIn(container: JavaActionParameter): MicroflowParameterType = js.native
+  @scala.inline
+  def createIn(container: JavaActionParameter): MicroflowParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowParameterType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.MicroflowParameterType.structureTypeName")

@@ -2,31 +2,29 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Forecast extends StObject {
   
-  var date: String = js.native
+  var date: String
   
-  var dayTemp: Double = js.native
+  var dayTemp: Double
   
-  var dayWeather: String = js.native
+  var dayWeather: String
   
-  var dayWindDir: String = js.native
+  var dayWindDir: String
   
-  var dayWindPower: String = js.native
+  var dayWindPower: String
   
-  var nightTemp: Double = js.native
+  var nightTemp: Double
   
-  var nightWeather: String = js.native
+  var nightWeather: String
   
-  var nightWindDir: String = js.native
+  var nightWindDir: String
   
-  var nightWindPower: String = js.native
+  var nightWindPower: String
   
-  var week: String = js.native
+  var week: String
 }
 object Forecast {
   

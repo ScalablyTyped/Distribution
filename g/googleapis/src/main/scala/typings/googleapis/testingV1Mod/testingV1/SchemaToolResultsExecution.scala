@@ -2,30 +2,28 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a tool results execution resource.  This has the results of a
   * TestMatrix.
   */
-@js.native
 trait SchemaToolResultsExecution extends StObject {
   
   /**
     * Output only. A tool results execution ID.
     */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A tool results history ID.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The cloud project that owns the tool results execution.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object SchemaToolResultsExecution {
   

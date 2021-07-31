@@ -3,13 +3,11 @@ package typings.jaegerClient.mod
 import typings.opentracing.mod.SpanContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extractor extends StObject {
   
-  def extract(carrier: js.Any): SpanContext | Null = js.native
+  def extract(carrier: js.Any): SpanContext | Null
 }
 object Extractor {
   

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleRangeLayer extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ScaleRangeLayer extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
     */
-  var maxScale: Double = js.native
+  var maxScale: Double
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */
-  var minScale: Double = js.native
+  var minScale: Double
 }
 object ScaleRangeLayer {
   

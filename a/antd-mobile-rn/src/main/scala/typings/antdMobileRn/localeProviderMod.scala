@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeProviderMod {
@@ -43,12 +42,11 @@ object localeProviderMod {
     def getChildContext(): AntLocaleDatePickerView = js.native
   }
   
-  @js.native
   trait LocaleProviderProps extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var locale: DatePicker = js.native
+    var locale: DatePicker
   }
   object LocaleProviderProps {
     

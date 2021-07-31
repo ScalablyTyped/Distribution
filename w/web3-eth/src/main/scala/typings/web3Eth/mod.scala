@@ -35,7 +35,6 @@ import typings.web3Net.mod.Network
 import typings.web3Utils.mod.AbiItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -95,7 +94,7 @@ object mod {
       callback: js.Function2[/* error */ Error, /* gas */ Double, Unit]
     ): js.Promise[Double] = js.native
     
-    def extend(extension: Extension): js.Any = js.native
+    def extend(`extension`: Extension): js.Any = js.native
     
     def getAccounts(): js.Promise[js.Array[String]] = js.native
     def getAccounts(callback: js.Function2[/* error */ Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
@@ -494,10 +493,11 @@ object mod {
     val providers: Providers = js.native
   }
   
-  @js.native
-  trait Block extends BlockTransactionBase {
+  trait Block
+    extends StObject
+       with BlockTransactionBase {
     
-    var transactions: js.Array[String | Transaction] = js.native
+    var transactions: js.Array[String | Transaction]
   }
   object Block {
     
@@ -538,36 +538,35 @@ object mod {
     }
   }
   
-  @js.native
   trait BlockHeader extends StObject {
     
-    var extraData: String = js.native
+    var extraData: String
     
-    var gasLimit: Double = js.native
+    var gasLimit: Double
     
-    var gasUsed: Double = js.native
+    var gasUsed: Double
     
-    var hash: String = js.native
+    var hash: String
     
-    var logsBloom: String = js.native
+    var logsBloom: String
     
-    var miner: String = js.native
+    var miner: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var number: Double = js.native
+    var number: Double
     
-    var parentHash: String = js.native
+    var parentHash: String
     
-    var receiptRoot: String = js.native
+    var receiptRoot: String
     
-    var sha3Uncles: String = js.native
+    var sha3Uncles: String
     
-    var stateRoot: String = js.native
+    var stateRoot: String
     
-    var timestamp: Double | String = js.native
+    var timestamp: Double | String
     
-    var transactionRoot: String = js.native
+    var transactionRoot: String
   }
   object BlockHeader {
     
@@ -639,16 +638,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait BlockTransactionBase extends BlockHeader {
+  trait BlockTransactionBase
+    extends StObject
+       with BlockHeader {
     
-    var difficulty: Double = js.native
+    var difficulty: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var totalDifficulty: Double = js.native
+    var totalDifficulty: Double
     
-    var uncles: js.Array[String] = js.native
+    var uncles: js.Array[String]
   }
   object BlockTransactionBase {
     
@@ -697,10 +697,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait BlockTransactionObject extends BlockTransactionBase {
+  trait BlockTransactionObject
+    extends StObject
+       with BlockTransactionBase {
     
-    var transactions: js.Array[Transaction] = js.native
+    var transactions: js.Array[Transaction]
   }
   object BlockTransactionObject {
     
@@ -741,10 +742,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait BlockTransactionString extends BlockTransactionBase {
+  trait BlockTransactionString
+    extends StObject
+       with BlockTransactionBase {
     
-    var transactions: js.Array[String] = js.native
+    var transactions: js.Array[String]
   }
   object BlockTransactionString {
     
@@ -785,22 +787,21 @@ object mod {
     }
   }
   
-  @js.native
   trait GetProof extends StObject {
     
-    var accountProof: js.Array[String] = js.native
+    var accountProof: js.Array[String]
     
-    var address: String = js.native
+    var address: String
     
-    var balance: String = js.native
+    var balance: String
     
-    var codeHash: String = js.native
+    var codeHash: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var storageHash: String = js.native
+    var storageHash: String
     
-    var storageProof: js.Array[StorageProof] = js.native
+    var storageProof: js.Array[StorageProof]
   }
   object GetProof {
     
@@ -850,14 +851,13 @@ object mod {
     }
   }
   
-  @js.native
   trait StorageProof extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var proof: js.Array[String] = js.native
+    var proof: js.Array[String]
     
-    var value: String = js.native
+    var value: String
   }
   object StorageProof {
     
@@ -884,18 +884,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Syncing extends StObject {
     
-    var CurrentBlock: Double = js.native
+    var CurrentBlock: Double
     
-    var HighestBlock: Double = js.native
+    var HighestBlock: Double
     
-    var KnownStates: Double = js.native
+    var KnownStates: Double
     
-    var PulledStates: Double = js.native
+    var PulledStates: Double
     
-    var StartingBlock: Double = js.native
+    var StartingBlock: Double
   }
   object Syncing {
     

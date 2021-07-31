@@ -12,7 +12,7 @@ A parameter validation library for Koa routes
 | Keywords           | validation, koa |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 11342 |
+| # downloads        | 12007 |
 | # stars            | 2 |
 
 ## Links

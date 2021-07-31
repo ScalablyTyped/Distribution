@@ -2,21 +2,19 @@ package typings.vegaTypings.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
   var data: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* object */ js.UndefOr[js.Any], Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var recurse: js.UndefOr[Boolean] = js.native
+  var recurse: js.UndefOr[Boolean] = js.undefined
   
   var signals: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* operator */ js.UndefOr[js.Any], Boolean]
-  ] = js.native
+  ] = js.undefined
 }
 object Data {
   

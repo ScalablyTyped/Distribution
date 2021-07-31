@@ -10,9 +10,9 @@ Get date property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-date |
 | Keywords           | date, metascraper |
-| # releases         | 90 |
+| # releases         | 103 |
 | # dependents       | 13 |
-| # downloads        | 161284 |
+| # downloads        | 174084 |
 | # stars            | 0 |
 
 ## Links

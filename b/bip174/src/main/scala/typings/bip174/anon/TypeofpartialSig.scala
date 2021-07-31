@@ -5,21 +5,19 @@ import typings.bip174.interfacesMod.PartialSig
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofpartialSig extends StObject {
   
-  def canAddToArray(array: js.Array[PartialSig], item: PartialSig, dupeSet: Set[String]): Boolean = js.native
+  def canAddToArray(array: js.Array[PartialSig], item: PartialSig, dupeSet: Set[String]): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean
   
-  def decode(keyVal: KeyValue): PartialSig = js.native
+  def decode(keyVal: KeyValue): PartialSig
   
-  def encode(pSig: PartialSig): KeyValue = js.native
+  def encode(pSig: PartialSig): KeyValue
   
-  val expected: /* "{ pubkey: Buffer; signature: Buffer; }" */ String = js.native
+  val expected: /* "{ pubkey: Buffer; signature: Buffer; }" */ String
 }
 object TypeofpartialSig {
   

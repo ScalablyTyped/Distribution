@@ -2,19 +2,17 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Firestore.RunQuery.
   */
-@js.native
 trait SchemaRunQueryResponse extends StObject {
   
   /**
     * A query result. Not set when reporting partial progress.
     */
-  var document: js.UndefOr[SchemaDocument] = js.native
+  var document: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * The time at which the document was read. This may be monotonically
@@ -24,20 +22,20 @@ trait SchemaRunQueryResponse extends StObject {
     * `document` will be sent, and this represents the time at which the query
     * was run.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * The number of results that have been skipped due to an offset between the
     * last response and the current response.
     */
-  var skippedResults: js.UndefOr[Double] = js.native
+  var skippedResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The transaction that was started as part of this request. Can only be set
     * in the first response, and only if RunQueryRequest.new_transaction was
     * set in the request. If set, no other fields will be set in this response.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object SchemaRunQueryResponse {
   

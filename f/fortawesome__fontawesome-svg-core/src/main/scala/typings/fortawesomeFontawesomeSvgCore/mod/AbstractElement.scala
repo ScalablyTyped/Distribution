@@ -2,17 +2,15 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractElement extends StObject {
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
   
-  var children: js.UndefOr[js.Array[AbstractElement]] = js.native
+  var children: js.UndefOr[js.Array[AbstractElement]] = js.undefined
   
-  var tag: String = js.native
+  var tag: String
 }
 object AbstractElement {
   

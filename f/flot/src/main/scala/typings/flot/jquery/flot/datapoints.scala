@@ -2,17 +2,15 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait datapoints extends StObject {
   
-  var format: js.Array[datapointFormat] = js.native
+  var format: js.Array[datapointFormat]
   
-  var points: js.Array[Double] = js.native
+  var points: js.Array[Double]
   
-  var pointsize: Double = js.native
+  var pointsize: Double
 }
 object datapoints {
   

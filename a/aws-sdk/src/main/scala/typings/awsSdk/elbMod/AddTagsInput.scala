@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsInput extends StObject {
   
   /**
     * The name of the load balancer. You can specify one load balancer only.
     */
-  var LoadBalancerNames: typings.awsSdk.elbMod.LoadBalancerNames = js.native
+  var LoadBalancerNames: typings.awsSdk.elbMod.LoadBalancerNames
   
   /**
     * The tags.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object AddTagsInput {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,9 +52,9 @@ trait PlusIos extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   def implements(): PlusIosInstanceObject = js.native
-  def implements(name: js.UndefOr[scala.Nothing], obj: js.Any): PlusIosInstanceObject = js.native
   def implements(name: String): PlusIosInstanceObject = js.native
   def implements(name: String, obj: js.Any): PlusIosInstanceObject = js.native
+  def implements(name: Unit, obj: js.Any): PlusIosInstanceObject = js.native
   
   /**
     * 导入Objective-C类对象
@@ -74,13 +73,13 @@ trait PlusIos extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   def invoke(): js.Any = js.native
-  def invoke(obj: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
-  def invoke(obj: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
-  def invoke(obj: js.UndefOr[scala.Nothing], name: String, args: js.Any): js.Any = js.native
+  def invoke(obj: Unit, name: String): js.Any = js.native
+  def invoke(obj: Unit, name: String, args: js.Any): js.Any = js.native
+  def invoke(obj: Unit, name: Unit, args: js.Any): js.Any = js.native
   def invoke(obj: PlusIosInstanceObject): js.Any = js.native
-  def invoke(obj: PlusIosInstanceObject, name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def invoke(obj: PlusIosInstanceObject, name: String): js.Any = js.native
   def invoke(obj: PlusIosInstanceObject, name: String, args: js.Any): js.Any = js.native
+  def invoke(obj: PlusIosInstanceObject, name: Unit, args: js.Any): js.Any = js.native
   
   /**
     * 创建实例对象
@@ -88,7 +87,7 @@ trait PlusIos extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
     */
   def newObject(): PlusIosInstanceObject = js.native
-  def newObject(classname: js.UndefOr[scala.Nothing], args: js.Any): PlusIosInstanceObject = js.native
   def newObject(classname: String): PlusIosInstanceObject = js.native
   def newObject(classname: String, args: js.Any): PlusIosInstanceObject = js.native
+  def newObject(classname: Unit, args: js.Any): PlusIosInstanceObject = js.native
 }

@@ -2,28 +2,26 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/issue-collection/
-@js.native
 trait IssueCollection extends StObject {
   
-  def append(uri: String, issues: js.Array[Issue]): Unit = js.native
+  def append(uri: String, issues: js.Array[Issue]): Unit
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  def get(uri: String): js.Array[Issue] = js.native
+  def get(uri: String): js.Array[Issue]
   
-  def has(uri: String): Boolean = js.native
+  def has(uri: String): Boolean
   
-  var name: String = js.native
+  var name: String
   
-  def remove(uri: String): Unit = js.native
+  def remove(uri: String): Unit
   
-  def set(uri: String, issues: js.Array[Issue]): Unit = js.native
+  def set(uri: String, issues: js.Array[Issue]): Unit
 }
 object IssueCollection {
   

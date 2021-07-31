@@ -4,26 +4,24 @@ import typings.domAccessibilityApi.accessibleNameAndDescriptionMod.ComputeTextAl
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dom-accessibility-api/dist", "computeAccessibleDescription")
+  @JSImport("dom-accessibility-api/dist", JSImport.Namespace)
   @js.native
-  def computeAccessibleDescription(root: Element): String = js.native
-  @JSImport("dom-accessibility-api/dist", "computeAccessibleDescription")
-  @js.native
-  def computeAccessibleDescription(root: Element, options: ComputeTextAlternativeOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dom-accessibility-api/dist", "computeAccessibleName")
-  @js.native
-  def computeAccessibleName(root: Element): String = js.native
-  @JSImport("dom-accessibility-api/dist", "computeAccessibleName")
-  @js.native
-  def computeAccessibleName(root: Element, options: ComputeTextAlternativeOptions): String = js.native
+  @scala.inline
+  def computeAccessibleDescription(root: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleDescription")(root.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computeAccessibleDescription(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleDescription")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("dom-accessibility-api/dist", "getRole")
-  @js.native
-  def getRole(element: Element): String | Null = js.native
+  @scala.inline
+  def computeAccessibleName(root: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleName")(root.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computeAccessibleName(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleName")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getRole(element: Element): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRole")(element.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

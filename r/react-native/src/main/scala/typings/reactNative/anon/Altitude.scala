@@ -2,21 +2,19 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Altitude extends StObject {
   
-  var altitude: Double = js.native
+  var altitude: Double
   
-  var heading: Double = js.native
+  var heading: Double
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var speed: Double = js.native
+  var speed: Double
 }
 object Altitude {
   

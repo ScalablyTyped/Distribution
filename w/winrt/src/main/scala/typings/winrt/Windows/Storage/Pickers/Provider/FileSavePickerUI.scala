@@ -3,11 +3,11 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileSavePickerUI extends IFileSavePickerUI
+trait FileSavePickerUI
+  extends StObject
+     with IFileSavePickerUI
 object FileSavePickerUI {
   
   @scala.inline

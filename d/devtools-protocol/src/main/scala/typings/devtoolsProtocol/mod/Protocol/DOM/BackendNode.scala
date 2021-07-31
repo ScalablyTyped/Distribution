@@ -3,23 +3,21 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackendNode extends StObject {
   
-  var backendNodeId: BackendNodeId = js.native
+  var backendNodeId: BackendNodeId
   
   /**
     * `Node`'s nodeName.
     */
-  var nodeName: String = js.native
+  var nodeName: String
   
   /**
     * `Node`'s nodeType.
     */
-  var nodeType: integer = js.native
+  var nodeType: integer
 }
 object BackendNode {
   

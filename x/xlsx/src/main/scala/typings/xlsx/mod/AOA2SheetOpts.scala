@@ -2,12 +2,11 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AOA2SheetOpts
-  extends CommonOptions
+  extends StObject
+     with CommonOptions
      with DateNFOption
 object AOA2SheetOpts {
   

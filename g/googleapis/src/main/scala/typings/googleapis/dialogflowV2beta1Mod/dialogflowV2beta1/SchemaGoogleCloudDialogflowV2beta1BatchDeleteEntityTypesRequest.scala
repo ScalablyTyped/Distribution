@@ -2,20 +2,18 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for EntityTypes.BatchDeleteEntityTypes.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest extends StObject {
   
   /**
     * Required. The names entity types to delete. All names must point to the
     * same agent as `parent`.
     */
-  var entityTypeNames: js.UndefOr[js.Array[String]] = js.native
+  var entityTypeNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest {
   

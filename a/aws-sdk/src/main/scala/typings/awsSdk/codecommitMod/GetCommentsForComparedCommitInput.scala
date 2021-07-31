@@ -2,36 +2,34 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCommentsForComparedCommitInput extends StObject {
   
   /**
     * To establish the directionality of the comparison, the full commit ID of the after commit.
     */
-  var afterCommitId: CommitId = js.native
+  var afterCommitId: CommitId
   
   /**
     * To establish the directionality of the comparison, the full commit ID of the before commit.
     */
-  var beforeCommitId: js.UndefOr[CommitId] = js.native
+  var beforeCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * A non-zero, non-negative integer used to limit the number of returned results. The default is 100 comments, but you can configure up to 500.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * An enumeration token that when provided in a request, returns the next batch of the results. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The name of the repository where you want to compare commits.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object GetCommentsForComparedCommitInput {
   

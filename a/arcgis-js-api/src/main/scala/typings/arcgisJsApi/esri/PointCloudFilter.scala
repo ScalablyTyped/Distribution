@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.bitfield
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointCloudFilter
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

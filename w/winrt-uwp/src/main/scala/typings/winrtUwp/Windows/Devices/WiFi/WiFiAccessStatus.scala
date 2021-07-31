@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object WiFiAccessStatus extends StObject {
   
   /** Access has been allowed. */
   @js.native
-  sealed trait allowed extends WiFiAccessStatus
+  sealed trait allowed
+    extends StObject
+       with WiFiAccessStatus
   
   /** Access has been denied by the system. */
   @js.native
-  sealed trait deniedBySystem extends WiFiAccessStatus
+  sealed trait deniedBySystem
+    extends StObject
+       with WiFiAccessStatus
   
   /** Access has been denied by the user, through the user interface. */
   @js.native
-  sealed trait deniedByUser extends WiFiAccessStatus
+  sealed trait deniedByUser
+    extends StObject
+       with WiFiAccessStatus
   
   /** The asynchronous request has not completed yet. */
   @js.native
-  sealed trait unspecified extends WiFiAccessStatus
+  sealed trait unspecified
+    extends StObject
+       with WiFiAccessStatus
 }

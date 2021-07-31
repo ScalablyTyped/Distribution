@@ -18,17 +18,15 @@ import typings.vscodeLanguageserverProtocol.mod.Proposed.SemanticTokensRangePara
 import typings.vscodeLanguageserverTypes.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait On extends StObject {
     
     def on(
       handler: ServerRequestHandler[SemanticTokensParams, SemanticTokens, SemanticTokensPartialResult, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def onEdits(
       handler: ServerRequestHandler[
@@ -37,11 +35,11 @@ object anon {
           SemanticTokensEditsPartialResult, 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
     
     def onRange(
       handler: ServerRequestHandler[SemanticTokensRangeParams, SemanticTokens, SemanticTokensPartialResult, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object On {
     
@@ -85,7 +83,6 @@ object anon {
     }
   }
   
-  @js.native
   trait OnIncomingCalls extends StObject {
     
     def onIncomingCalls(
@@ -95,7 +92,7 @@ object anon {
           js.Array[CallHierarchyIncomingCall], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
     
     def onOutgoingCalls(
       handler: ServerRequestHandler[
@@ -104,11 +101,11 @@ object anon {
           js.Array[CallHierarchyOutgoingCall], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
     
     def onPrepare(
       handler: ServerRequestHandler[CallHierarchyPrepareParams, js.Array[CallHierarchyItem] | Null, scala.Nothing, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object OnIncomingCalls {
     
@@ -162,12 +159,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Placeholder extends StObject {
     
-    var placeholder: String = js.native
+    var placeholder: String
     
-    var range: Range = js.native
+    var range: Range
   }
   object Placeholder {
     
@@ -188,10 +184,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Window extends StObject {
     
-    var window: RemoteWindow = js.native
+    var window: RemoteWindow
   }
   object Window {
     

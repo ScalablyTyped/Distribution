@@ -3,10 +3,13 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferutilsMod {
+  
+  @JSImport("bitcoinjs-lib/types/bufferutils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bitcoinjs-lib/types/bufferutils", "BufferReader")
   @js.native
@@ -62,19 +65,15 @@ object bufferutilsMod {
     def writeVector(vector: js.Array[Buffer]): Unit = js.native
   }
   
-  @JSImport("bitcoinjs-lib/types/bufferutils", "cloneBuffer")
-  @js.native
-  def cloneBuffer(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def cloneBuffer(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bitcoinjs-lib/types/bufferutils", "readUInt64LE")
-  @js.native
-  def readUInt64LE(buffer: Buffer, offset: Double): Double = js.native
+  @scala.inline
+  def readUInt64LE(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt64LE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bitcoinjs-lib/types/bufferutils", "reverseBuffer")
-  @js.native
-  def reverseBuffer(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def reverseBuffer(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bitcoinjs-lib/types/bufferutils", "writeUInt64LE")
-  @js.native
-  def writeUInt64LE(buffer: Buffer, value: Double, offset: Double): Double = js.native
+  @scala.inline
+  def writeUInt64LE(buffer: Buffer, value: Double, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt64LE")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

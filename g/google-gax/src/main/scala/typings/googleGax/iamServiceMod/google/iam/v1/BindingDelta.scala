@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a BindingDelta. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BindingDelta.
   * @param [properties] Properties to set
   */
-class BindingDelta () extends IBindingDelta {
+class BindingDelta ()
+  extends StObject
+     with IBindingDelta {
   def this(properties: IBindingDelta) = this()
   
   /** BindingDelta action. */
@@ -41,6 +42,10 @@ class BindingDelta () extends IBindingDelta {
 }
 object BindingDelta {
   
+  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Action extends StObject
   /** Action enum. */
@@ -49,19 +54,25 @@ object BindingDelta {
   object Action extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Action with Double] = js.native
+    def apply(value: Double): js.UndefOr[Action & Double] = js.native
     
     @js.native
-    sealed trait ACTION_UNSPECIFIED extends Action
-    /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ACTION_UNSPECIFIED with Double = js.native
+    sealed trait ACTION_UNSPECIFIED
+      extends StObject
+         with Action
+    /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ACTION_UNSPECIFIED & Double = js.native
     
     @js.native
-    sealed trait ADD extends Action
-    /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ADD with Double = js.native
+    sealed trait ADD
+      extends StObject
+         with Action
+    /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ADD & Double = js.native
     
     @js.native
-    sealed trait REMOVE extends Action
-    /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.REMOVE with Double = js.native
+    sealed trait REMOVE
+      extends StObject
+         with Action
+    /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.REMOVE & Double = js.native
   }
   
   /**
@@ -70,12 +81,10 @@ object BindingDelta {
     * @returns BindingDelta instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.create")
-  @js.native
-  def create(): BindingDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.create")
-  @js.native
-  def create(properties: IBindingDelta): BindingDelta = js.native
+  @scala.inline
+  def create(): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BindingDelta]
+  @scala.inline
+  def create(properties: IBindingDelta): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BindingDelta]
   
   /**
     * Decodes a BindingDelta message from the specified reader or buffer.
@@ -86,18 +95,14 @@ object BindingDelta {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.decode")
-  @js.native
-  def decode(reader: Reader): BindingDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): BindingDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.decode")
-  @js.native
-  def decode(reader: Uint8Array): BindingDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): BindingDelta = js.native
+  @scala.inline
+  def decode(reader: Reader): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BindingDelta]
+  @scala.inline
+  def decode(reader: Reader, length: Double): BindingDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BindingDelta]
+  @scala.inline
+  def decode(reader: Uint8Array): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BindingDelta]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): BindingDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BindingDelta]
   
   /**
     * Decodes a BindingDelta message from the specified reader or buffer, length delimited.
@@ -107,12 +112,10 @@ object BindingDelta {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): BindingDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): BindingDelta = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BindingDelta]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BindingDelta]
   
   /**
     * Encodes the specified BindingDelta message. Does not implicitly {@link google.iam.v1.BindingDelta.verify|verify} messages.
@@ -121,12 +124,10 @@ object BindingDelta {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.encode")
-  @js.native
-  def encode(message: IBindingDelta): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.encode")
-  @js.native
-  def encode(message: IBindingDelta, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IBindingDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IBindingDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BindingDelta message, length delimited. Does not implicitly {@link google.iam.v1.BindingDelta.verify|verify} messages.
@@ -135,12 +136,10 @@ object BindingDelta {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBindingDelta): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBindingDelta, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IBindingDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IBindingDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BindingDelta message from a plain object. Also converts values to their respective internal types.
@@ -148,9 +147,8 @@ object BindingDelta {
     * @returns BindingDelta
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): BindingDelta = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BindingDelta]
   
   /**
     * Creates a plain object from a BindingDelta message. Also converts values to other types if specified.
@@ -159,12 +157,10 @@ object BindingDelta {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.toObject")
-  @js.native
-  def toObject(message: BindingDelta): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.toObject")
-  @js.native
-  def toObject(message: BindingDelta, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: BindingDelta): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: BindingDelta, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BindingDelta message.
@@ -172,7 +168,6 @@ object BindingDelta {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.BindingDelta.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

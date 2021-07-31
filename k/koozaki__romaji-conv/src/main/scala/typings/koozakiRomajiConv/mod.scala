@@ -2,7 +2,6 @@ package typings.koozakiRomajiConv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,9 +12,12 @@ object mod {
     * @param someString 変換対象の文字列
     * @return のインスタンス
     */
+  @scala.inline
+  def apply(someString: String): RomajiConv = ^.asInstanceOf[js.Dynamic].apply(someString.asInstanceOf[js.Any]).asInstanceOf[RomajiConv]
+  
   @JSImport("@koozaki/romaji-conv", JSImport.Namespace)
   @js.native
-  def apply(someString: String): RomajiConv = js.native
+  val ^ : js.Any = js.native
   
   /**
     * 変換後のひらがなを返す
@@ -23,9 +25,8 @@ object mod {
     * @param someString 変換対象の文字列
     * @return 変換後のひらがな
     */
-  @JSImport("@koozaki/romaji-conv", "toHiragana")
-  @js.native
-  def toHiragana(someString: String): String = js.native
+  @scala.inline
+  def toHiragana(someString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(someString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * 変換後のカタカナを返す
@@ -33,11 +34,9 @@ object mod {
     * @param someString 変換対象の文字列
     * @return 変換後のカタカナ
     */
-  @JSImport("@koozaki/romaji-conv", "toKatakana")
-  @js.native
-  def toKatakana(someString: String): String = js.native
+  @scala.inline
+  def toKatakana(someString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(someString.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait RomajiConv extends StObject {
     
     /**
@@ -47,28 +46,28 @@ object mod {
       * @param mapObject マッピングオブジェクト
       * @return ひらがな or カタカナ
       */
-    def convert(someString: String, mapObject: js.Object): String = js.native
+    def convert(someString: String, mapObject: js.Object): String
     
     /**
       * 変換前の文字列を返す
       *
       * @return 変換前の文字列
       */
-    def string(): String = js.native
+    def string(): String
     
     /**
       * 変換後のひらがなを返す
       *
       * @return 変換後のひらがな
       */
-    def toHiragana(): String = js.native
+    def toHiragana(): String
     
     /**
       * 変換後のカタカナを返す
       *
       * @return 変換後のカタカナ
       */
-    def toKatakana(): String = js.native
+    def toKatakana(): String
   }
   object RomajiConv {
     

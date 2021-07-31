@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to modify a text box' relative size settings.
   */
-@js.native
-trait ChangeTextBoxRelativeSizeCommand extends ChangeFloatingObjectPropertyCommandBase[TextBoxRelativeSizeSettings]
+trait ChangeTextBoxRelativeSizeCommand
+  extends StObject
+     with ChangeFloatingObjectPropertyCommandBase[TextBoxRelativeSizeSettings]
 object ChangeTextBoxRelativeSizeCommand {
   
   @scala.inline

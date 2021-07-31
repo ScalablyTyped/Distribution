@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxDateBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentDate extends StObject {
   
-  var component: js.UndefOr[dxDateBox] = js.native
+  var component: js.UndefOr[dxDateBox] = js.undefined
   
-  var date: js.UndefOr[typings.std.Date] = js.native
+  var date: js.UndefOr[typings.std.Date] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ComponentDate {
   

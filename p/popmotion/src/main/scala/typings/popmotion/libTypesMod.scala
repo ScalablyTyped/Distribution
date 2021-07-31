@@ -2,7 +2,6 @@ package typings.popmotion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libTypesMod {
@@ -27,12 +26,13 @@ object libTypesMod {
     }
   }
   
-  @js.native
-  trait Point2D extends Point {
+  trait Point2D
+    extends StObject
+       with Point {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point2D {
     
@@ -53,15 +53,12 @@ object libTypesMod {
     }
   }
   
-  /* Inlined popmotion.popmotion/lib/types.Point2D & {  z :number} */
-  @js.native
-  trait Point3D extends Point {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.popmotion.libTypesMod.Point because Already inherited */ trait Point3D
+    extends StObject
+       with Point2D {
     
-    var x: Double = js.native
-    
-    var y: Double = js.native
-    
-    var z: Double = js.native
+    var z: Double
   }
   object Point3D {
     
@@ -73,12 +70,6 @@ object libTypesMod {
     
     @scala.inline
     implicit class Point3DMutableBuilder[Self <: Point3D] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])

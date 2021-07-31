@@ -3,33 +3,31 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dms {
   
-  @js.native
   trait EndpointElasticsearchSettings extends StObject {
     
     /**
       * Endpoint for the Elasticsearch cluster.
       */
-    var endpointUri: Input[String] = js.native
+    var endpointUri: Input[String]
     
     /**
       * Maximum number of seconds for which DMS retries failed API requests to the Elasticsearch cluster. Defaults to `300`.
       */
-    var errorRetryDuration: js.UndefOr[Input[Double]] = js.native
+    var errorRetryDuration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Maximum percentage of records that can fail to be written before a full load operation stops. Defaults to `10`.
       */
-    var fullLoadErrorPercentage: js.UndefOr[Input[Double]] = js.native
+    var fullLoadErrorPercentage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role with permissions to write to the Elasticsearch cluster.
       */
-    var serviceAccessRoleArn: Input[String] = js.native
+    var serviceAccessRoleArn: Input[String]
   }
   object EndpointElasticsearchSettings {
     
@@ -62,18 +60,17 @@ object dms {
     }
   }
   
-  @js.native
   trait EndpointKafkaSettings extends StObject {
     
     /**
       * Kafka broker location. Specify in the form broker-hostname-or-ip:port.
       */
-    var broker: Input[String] = js.native
+    var broker: Input[String]
     
     /**
       * Kafka topic for migration. Defaults to `kafka-default-topic`.
       */
-    var topic: js.UndefOr[Input[String]] = js.native
+    var topic: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointKafkaSettings {
     
@@ -97,23 +94,22 @@ object dms {
     }
   }
   
-  @js.native
   trait EndpointKinesisSettings extends StObject {
     
     /**
       * Output format for the records created. Defaults to `json`. Valid values are `json` and `jsonUnformatted` (a single line with no tab).
       */
-    var messageFormat: js.UndefOr[Input[String]] = js.native
+    var messageFormat: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role with permissions to write to the Kinesis data stream.
       */
-    var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.native
+    var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the Kinesis data stream.
       */
-    var streamArn: js.UndefOr[Input[String]] = js.native
+    var streamArn: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointKinesisSettings {
     
@@ -146,38 +142,37 @@ object dms {
     }
   }
   
-  @js.native
   trait EndpointMongodbSettings extends StObject {
     
     /**
       * Authentication mechanism to access the MongoDB source endpoint. Defaults to `default`.
       */
-    var authMechanism: js.UndefOr[Input[String]] = js.native
+    var authMechanism: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Authentication database name. Not used when `authType` is `no`. Defaults to `admin`.
       */
-    var authSource: js.UndefOr[Input[String]] = js.native
+    var authSource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Authentication type to access the MongoDB source endpoint. Defaults to `password`.
       */
-    var authType: js.UndefOr[Input[String]] = js.native
+    var authType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Number of documents to preview to determine the document organization. Use this setting when `nestingLevel` is set to `one`. Defaults to `1000`.
       */
-    var docsToInvestigate: js.UndefOr[Input[String]] = js.native
+    var docsToInvestigate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Document ID. Use this setting when `nestingLevel` is set to `none`. Defaults to `false`.
       */
-    var extractDocId: js.UndefOr[Input[String]] = js.native
+    var extractDocId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies either document or table mode. Defaults to `none`. Valid values are `one` (table mode) and `none` (document mode).
       */
-    var nestingLevel: js.UndefOr[Input[String]] = js.native
+    var nestingLevel: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointMongodbSettings {
     
@@ -228,43 +223,42 @@ object dms {
     }
   }
   
-  @js.native
   trait EndpointS3Settings extends StObject {
     
     /**
       * S3 Bucket Object prefix.
       */
-    var bucketFolder: js.UndefOr[Input[String]] = js.native
+    var bucketFolder: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 Bucket name.
       */
-    var bucketName: js.UndefOr[Input[String]] = js.native
+    var bucketName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set to compress target files. Defaults to `NONE`. Valid values are `GZIP` and `NONE`.
       */
-    var compressionType: js.UndefOr[Input[String]] = js.native
+    var compressionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Delimiter used to separate columns in the source files. Defaults to `,`.
       */
-    var csvDelimiter: js.UndefOr[Input[String]] = js.native
+    var csvDelimiter: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Delimiter used to separate rows in the source files. Defaults to `\n`.
       */
-    var csvRowDelimiter: js.UndefOr[Input[String]] = js.native
+    var csvRowDelimiter: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * JSON document that describes how AWS DMS should interpret the data.
       */
-    var externalTableDefinition: js.UndefOr[Input[String]] = js.native
+    var externalTableDefinition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role with permissions to read from or write to the S3 Bucket.
       */
-    var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.native
+    var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointS3Settings {
     

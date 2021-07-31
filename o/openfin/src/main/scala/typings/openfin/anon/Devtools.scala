@@ -2,19 +2,17 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Devtools extends StObject {
   
-  var devtools: Boolean = js.native
+  var devtools: Boolean
   
-  var reload: Boolean = js.native
+  var reload: Boolean
   
-  var reloadIgnoringCache: Boolean = js.native
+  var reloadIgnoringCache: Boolean
   
-  var zoom: Boolean = js.native
+  var zoom: Boolean
 }
 object Devtools {
   

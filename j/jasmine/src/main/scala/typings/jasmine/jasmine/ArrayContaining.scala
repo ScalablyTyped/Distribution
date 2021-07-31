@@ -2,14 +2,13 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayContaining[T]
-  extends AsymmetricMatcher[js.Any] {
+  extends StObject
+     with AsymmetricMatcher[js.Any] {
   
-  var `new`: js.UndefOr[js.Function1[/* sample */ ArrayLike[T], ArrayLike[T]]] = js.native
+  var `new`: js.UndefOr[js.Function1[/* sample */ ArrayLike[T], ArrayLike[T]]] = js.undefined
 }
 object ArrayContaining {
   
@@ -20,7 +19,7 @@ object ArrayContaining {
   }
   
   @scala.inline
-  implicit class ArrayContainingMutableBuilder[Self <: ArrayContaining[_], T] (val x: Self with ArrayContaining[T]) extends AnyVal {
+  implicit class ArrayContainingMutableBuilder[Self <: ArrayContaining[?], T] (val x: Self & ArrayContaining[T]) extends AnyVal {
     
     @scala.inline
     def setNew(value: /* sample */ ArrayLike[T] => ArrayLike[T]): Self = StObject.set(x, "new", js.Any.fromFunction1(value))

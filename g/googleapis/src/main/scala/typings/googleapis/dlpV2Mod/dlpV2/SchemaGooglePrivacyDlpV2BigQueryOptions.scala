@@ -2,26 +2,24 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options defining BigQuery table and row identifiers.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2BigQueryOptions extends StObject {
   
   /**
     * References to fields excluded from scanning. This allows you to skip
     * inspection of entire columns which you know have no findings.
     */
-  var excludedFields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.native
+  var excludedFields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
   /**
     * References to fields uniquely identifying rows within the table. Nested
     * fields in the format, like `person.birthdate.year`, are allowed.
     */
-  var identifyingFields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.native
+  var identifyingFields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
   /**
     * Max number of rows to scan. If the table has more rows than this value,
@@ -29,7 +27,7 @@ trait SchemaGooglePrivacyDlpV2BigQueryOptions extends StObject {
     * will be scanned. Only one of rows_limit and rows_limit_percent can be
     * specified. Cannot be used in conjunction with TimespanConfig.
     */
-  var rowsLimit: js.UndefOr[String] = js.native
+  var rowsLimit: js.UndefOr[String] = js.undefined
   
   /**
     * Max percentage of rows to scan. The rest are omitted. The number of rows
@@ -38,14 +36,14 @@ trait SchemaGooglePrivacyDlpV2BigQueryOptions extends StObject {
     * rows_limit_percent can be specified. Cannot be used in conjunction with
     * TimespanConfig.
     */
-  var rowsLimitPercent: js.UndefOr[Double] = js.native
+  var rowsLimitPercent: js.UndefOr[Double] = js.undefined
   
-  var sampleMethod: js.UndefOr[String] = js.native
+  var sampleMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Complete BigQuery table reference.
     */
-  var tableReference: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.native
+  var tableReference: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2BigQueryOptions {
   

@@ -2,19 +2,17 @@ package typings.vegaTypings.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait As extends StObject {
   
-  var as: js.Array[String] = js.native
+  var as: js.Array[String]
   
-  var cross: js.UndefOr[Boolean] = js.native
+  var cross: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
-  var ops: js.Array[String] = js.native
+  var ops: js.Array[String]
 }
 object As {
   

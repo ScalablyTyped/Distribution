@@ -2,46 +2,44 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationConformancePack extends StObject {
   
   /**
     * A list of ConformancePackInputParameter objects.
     */
-  var ConformancePackInputParameters: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackInputParameters] = js.native
+  var ConformancePackInputParameters: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackInputParameters] = js.undefined
   
   /**
     * Location of an Amazon S3 bucket where AWS Config can deliver evaluation results and conformance pack template that is used to create a pack. 
     */
-  var DeliveryS3Bucket: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3Bucket] = js.native
+  var DeliveryS3Bucket: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3Bucket] = js.undefined
   
   /**
     * Any folder structure you want to add to an Amazon S3 bucket.
     */
-  var DeliveryS3KeyPrefix: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3KeyPrefix] = js.native
+  var DeliveryS3KeyPrefix: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3KeyPrefix] = js.undefined
   
   /**
     * A comma-separated list of accounts excluded from organization conformance pack.
     */
-  var ExcludedAccounts: js.UndefOr[typings.awsSdk.configserviceMod.ExcludedAccounts] = js.native
+  var ExcludedAccounts: js.UndefOr[typings.awsSdk.configserviceMod.ExcludedAccounts] = js.undefined
   
   /**
     * Last time when organization conformation pack was updated.
     */
-  var LastUpdateTime: Date = js.native
+  var LastUpdateTime: Date
   
   /**
     * Amazon Resource Name (ARN) of organization conformance pack.
     */
-  var OrganizationConformancePackArn: StringWithCharLimit256 = js.native
+  var OrganizationConformancePackArn: StringWithCharLimit256
   
   /**
     * The name you assign to an organization conformance pack.
     */
-  var OrganizationConformancePackName: typings.awsSdk.configserviceMod.OrganizationConformancePackName = js.native
+  var OrganizationConformancePackName: typings.awsSdk.configserviceMod.OrganizationConformancePackName
 }
 object OrganizationConformancePack {
   

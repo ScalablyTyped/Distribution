@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SpeechModel. */
-@js.native
 trait SpeechModel extends StObject {
   
   /** A brief description of the model. */
-  var description: String = js.native
+  var description: String
   
   /** The language identifier of the model (for example, `en-US`). */
-  var language: String = js.native
+  var language: String
   
   /** The name of the model for use as an identifier in calls to the service (for example, `en-US_BroadbandModel`). */
-  var name: String = js.native
+  var name: String
   
   /** The sampling rate (minimum acceptable rate for audio) used by the model in Hertz. */
-  var rate: Double = js.native
+  var rate: Double
   
   /** Describes the additional service features that are supported with the model. */
-  var supported_features: SupportedFeatures = js.native
+  var supported_features: SupportedFeatures
   
   /** The URI for the model. */
-  var url: String = js.native
+  var url: String
 }
 object SpeechModel {
   

@@ -2,63 +2,74 @@ package typings.uuidJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("uuid-js", JSImport.Namespace)
   @js.native
-  class ^ () extends uuid
+  class ^ ()
+    extends StObject
+       with uuid {
+    
+    /* CompleteClass */
+    override def equals(uuid: uuid): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromParts(
+      timeLow: js.Any,
+      timeMid: js.Any,
+      timeHiAndVersion: js.Any,
+      clockSeqHiAndReserved: js.Any,
+      clockSeqLow: js.Any,
+      node: js.Any
+    ): uuid = js.native
+    
+    /* CompleteClass */
+    override def toBytes(): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def toURN(): String = js.native
+  }
   @JSImport("uuid-js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("uuid-js", "create")
-  @js.native
-  def create(): uuid = js.native
-  @JSImport("uuid-js", "create")
-  @js.native
-  def create(version: Double): uuid = js.native
+  @scala.inline
+  def create(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[uuid]
+  @scala.inline
+  def create(version: Double): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(version.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "firstFromTime")
-  @js.native
-  def firstFromTime(time: Double): uuid = js.native
+  @scala.inline
+  def firstFromTime(time: Double): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("firstFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "fromBinary")
-  @js.native
-  def fromBinary(binary: js.Any): uuid = js.native
+  @scala.inline
+  def fromBinary(binary: js.Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(binary.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "fromBytes")
-  @js.native
-  def fromBytes(ints: js.Array[Double]): uuid = js.native
+  @scala.inline
+  def fromBytes(ints: js.Array[Double]): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(ints.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "fromTime")
-  @js.native
-  def fromTime(time: Double): uuid = js.native
-  @JSImport("uuid-js", "fromTime")
-  @js.native
-  def fromTime(time: Double, last: Boolean): uuid = js.native
+  @scala.inline
+  def fromTime(time: Double): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTime")(time.asInstanceOf[js.Any]).asInstanceOf[uuid]
+  @scala.inline
+  def fromTime(time: Double, last: Boolean): uuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTime")(time.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "fromURN")
-  @js.native
-  def fromURN(strId: js.Any): uuid = js.native
+  @scala.inline
+  def fromURN(strId: js.Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURN")(strId.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "getTimeFieldValues")
-  @js.native
-  def getTimeFieldValues(time: js.Any): js.Any = js.native
+  @scala.inline
+  def getTimeFieldValues(time: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeFieldValues")(time.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("uuid-js", "lastFromTime")
-  @js.native
-  def lastFromTime(time: js.Any): uuid = js.native
+  @scala.inline
+  def lastFromTime(time: js.Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("lastFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
   @JSImport("uuid-js", "limitUI04")
@@ -124,69 +135,56 @@ object mod {
   def limitUI48_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("limitUI48")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("uuid-js", "maxFromBits")
-  @js.native
-  def maxFromBits(bits: Double): uuid = js.native
+  @scala.inline
+  def maxFromBits(bits: Double): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("maxFromBits")(bits.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "newTS")
-  @js.native
-  def newTS(): uuid = js.native
+  @scala.inline
+  def newTS(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("newTS")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "paddedString")
-  @js.native
-  def paddedString(string: js.Any, length: js.Any, z: js.Any): uuid = js.native
+  @scala.inline
+  def paddedString(string: js.Any, length: js.Any, z: js.Any): uuid = (^.asInstanceOf[js.Dynamic].applyDynamic("paddedString")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI04")
-  @js.native
-  def randomUI04(): uuid = js.native
+  @scala.inline
+  def randomUI04(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI04")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI06")
-  @js.native
-  def randomUI06(): uuid = js.native
+  @scala.inline
+  def randomUI06(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI06")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI08")
-  @js.native
-  def randomUI08(): uuid = js.native
+  @scala.inline
+  def randomUI08(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI08")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI12")
-  @js.native
-  def randomUI12(): uuid = js.native
+  @scala.inline
+  def randomUI12(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI12")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI14")
-  @js.native
-  def randomUI14(): uuid = js.native
+  @scala.inline
+  def randomUI14(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI14")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI16")
-  @js.native
-  def randomUI16(): uuid = js.native
+  @scala.inline
+  def randomUI16(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI16")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI32")
-  @js.native
-  def randomUI32(): uuid = js.native
+  @scala.inline
+  def randomUI32(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI32")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI40")
-  @js.native
-  def randomUI40(): uuid = js.native
+  @scala.inline
+  def randomUI40(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI40")().asInstanceOf[uuid]
   
   /* static member */
-  @JSImport("uuid-js", "randomUI48")
-  @js.native
-  def randomUI48(): uuid = js.native
+  @scala.inline
+  def randomUI48(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI48")().asInstanceOf[uuid]
   
-  @js.native
   trait uuid extends StObject {
     
-    def equals(uuid: uuid): Boolean = js.native
+    def equals(uuid: uuid): Boolean
     
     def fromParts(
       timeLow: js.Any,
@@ -195,11 +193,11 @@ object mod {
       clockSeqHiAndReserved: js.Any,
       clockSeqLow: js.Any,
       node: js.Any
-    ): uuid = js.native
+    ): uuid
     
-    def toBytes(): js.Array[_] = js.native
+    def toBytes(): js.Array[js.Any]
     
-    def toURN(): String = js.native
+    def toURN(): String
   }
   object uuid {
     
@@ -207,7 +205,7 @@ object mod {
     def apply(
       equals_ : uuid => Boolean,
       fromParts: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => uuid,
-      toBytes: () => js.Array[_],
+      toBytes: () => js.Array[js.Any],
       toURN: () => String
     ): uuid = {
       val __obj = js.Dynamic.literal(fromParts = js.Any.fromFunction6(fromParts), toBytes = js.Any.fromFunction0(toBytes), toURN = js.Any.fromFunction0(toURN))
@@ -225,7 +223,7 @@ object mod {
       def setFromParts(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => uuid): Self = StObject.set(x, "fromParts", js.Any.fromFunction6(value))
       
       @scala.inline
-      def setToBytes(value: () => js.Array[_]): Self = StObject.set(x, "toBytes", js.Any.fromFunction0(value))
+      def setToBytes(value: () => js.Array[js.Any]): Self = StObject.set(x, "toBytes", js.Any.fromFunction0(value))
       
       @scala.inline
       def setToURN(value: () => String): Self = StObject.set(x, "toURN", js.Any.fromFunction0(value))

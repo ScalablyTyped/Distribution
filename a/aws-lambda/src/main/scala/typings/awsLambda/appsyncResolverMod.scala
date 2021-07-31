@@ -6,25 +6,23 @@ import typings.awsLambda.anon.Headers
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appsyncResolverMod {
   
-  @js.native
   trait AppSyncIdentityCognito extends StObject {
     
-    var claims: js.Any = js.native
+    var claims: js.Any
     
-    var defaultAuthStrategy: String = js.native
+    var defaultAuthStrategy: String
     
-    var issuer: String = js.native
+    var issuer: String
     
-    var sourceIp: js.Array[String] = js.native
+    var sourceIp: js.Array[String]
     
-    var sub: String = js.native
+    var sub: String
     
-    var username: String = js.native
+    var username: String
   }
   object AppSyncIdentityCognito {
     
@@ -67,24 +65,23 @@ object appsyncResolverMod {
     }
   }
   
-  @js.native
   trait AppSyncIdentityIAM extends StObject {
     
-    var accountId: String = js.native
+    var accountId: String
     
-    var cognitoIdentityAuthProvider: String = js.native
+    var cognitoIdentityAuthProvider: String
     
-    var cognitoIdentityAuthType: String = js.native
+    var cognitoIdentityAuthType: String
     
-    var cognitoIdentityId: String = js.native
+    var cognitoIdentityId: String
     
-    var cognitoIdentityPoolId: String = js.native
+    var cognitoIdentityPoolId: String
     
-    var sourceIp: js.Array[String] = js.native
+    var sourceIp: js.Array[String]
     
-    var userArn: String = js.native
+    var userArn: String
     
-    var username: String = js.native
+    var username: String
   }
   object AppSyncIdentityIAM {
     
@@ -135,18 +132,17 @@ object appsyncResolverMod {
     }
   }
   
-  @js.native
   trait AppSyncResolverEvent[T] extends StObject {
     
-    var arguments: T = js.native
+    var arguments: T
     
-    var identity: js.UndefOr[AppSyncIdentityIAM | AppSyncIdentityCognito] = js.native
+    var identity: js.UndefOr[AppSyncIdentityIAM | AppSyncIdentityCognito] = js.undefined
     
-    var info: FieldName = js.native
+    var info: FieldName
     
-    var request: Headers = js.native
+    var request: Headers
     
-    var source: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var source: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object AppSyncResolverEvent {
     
@@ -157,7 +153,7 @@ object appsyncResolverMod {
     }
     
     @scala.inline
-    implicit class AppSyncResolverEventMutableBuilder[Self <: AppSyncResolverEvent[_], T] (val x: Self with AppSyncResolverEvent[T]) extends AnyVal {
+    implicit class AppSyncResolverEventMutableBuilder[Self <: AppSyncResolverEvent[?], T] (val x: Self & AppSyncResolverEvent[T]) extends AnyVal {
       
       @scala.inline
       def setArguments(value: T): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])

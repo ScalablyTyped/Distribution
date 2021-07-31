@@ -2,71 +2,69 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operation extends StObject {
   
   /**
     * The timestamp when the operation was initialized (e.g., 1479816991.349).
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The error code.
     */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The error details.
     */
-  var errorDetails: js.UndefOr[String] = js.native
+  var errorDetails: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the operation.
     */
-  var id: js.UndefOr[NonEmptyString] = js.native
+  var id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A Boolean value indicating whether the operation is terminal.
     */
-  var isTerminal: js.UndefOr[Boolean] = js.native
+  var isTerminal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The AWS Region and Availability Zone.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * Details about the operation (e.g., Debian-1GB-Ohio-1).
     */
-  var operationDetails: js.UndefOr[String] = js.native
+  var operationDetails: js.UndefOr[String] = js.undefined
   
   /**
     * The type of operation. 
     */
-  var operationType: js.UndefOr[OperationType] = js.native
+  var operationType: js.UndefOr[OperationType] = js.undefined
   
   /**
     * The resource name.
     */
-  var resourceName: js.UndefOr[ResourceName] = js.native
+  var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The resource type. 
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The status of the operation. 
     */
-  var status: js.UndefOr[OperationStatus] = js.native
+  var status: js.UndefOr[OperationStatus] = js.undefined
   
   /**
     * The timestamp when the status was changed (e.g., 1479816991.349).
     */
-  var statusChangedAt: js.UndefOr[IsoDate] = js.native
+  var statusChangedAt: js.UndefOr[IsoDate] = js.undefined
 }
 object Operation {
   

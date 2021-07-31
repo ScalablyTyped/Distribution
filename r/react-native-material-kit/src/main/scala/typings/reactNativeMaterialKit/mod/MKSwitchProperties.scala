@@ -4,35 +4,35 @@ import typings.reactNative.mod.TouchableWithoutFeedbackProps
 import typings.reactNativeMaterialKit.anon.Checked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MKSwitchProperties extends TouchableWithoutFeedbackProps {
+trait MKSwitchProperties
+  extends StObject
+     with TouchableWithoutFeedbackProps {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var offColor: js.UndefOr[String] = js.native
+  var offColor: js.UndefOr[String] = js.undefined
   
-  var onCheckedChange: js.UndefOr[js.Function1[/* opts */ Checked, Unit]] = js.native
+  var onCheckedChange: js.UndefOr[js.Function1[/* opts */ Checked, Unit]] = js.undefined
   
-  var onColor: js.UndefOr[String] = js.native
+  var onColor: js.UndefOr[String] = js.undefined
   
-  var rippleAniDuration: js.UndefOr[Double] = js.native
+  var rippleAniDuration: js.UndefOr[Double] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
   
-  var thumbAniDuration: js.UndefOr[Double] = js.native
+  var thumbAniDuration: js.UndefOr[Double] = js.undefined
   
-  var thumbOffColor: js.UndefOr[String] = js.native
+  var thumbOffColor: js.UndefOr[String] = js.undefined
   
-  var thumbOnColor: js.UndefOr[String] = js.native
+  var thumbOnColor: js.UndefOr[String] = js.undefined
   
-  var thumbRadius: js.UndefOr[Double] = js.native
+  var thumbRadius: js.UndefOr[Double] = js.undefined
   
-  var trackLength: js.UndefOr[Double] = js.native
+  var trackLength: js.UndefOr[Double] = js.undefined
   
-  var trackSize: js.UndefOr[Double] = js.native
+  var trackSize: js.UndefOr[Double] = js.undefined
 }
 object MKSwitchProperties {
   

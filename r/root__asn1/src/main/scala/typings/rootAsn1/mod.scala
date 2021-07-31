@@ -9,67 +9,53 @@ import typings.rootAsn1.anon.`0`
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@root/asn1", "Any")
+  @JSImport("@root/asn1", JSImport.Namespace)
   @js.native
-  def Any(hexType: String, hexBytes: String*): String = js.native
-  @JSImport("@root/asn1", "Any")
-  @js.native
-  def Any(hexType: Double, hexBytes: String*): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@root/asn1", "BitStr")
-  @js.native
-  def BitStr(hexBitStream: String): String = js.native
+  @scala.inline
+  def Any(hexType: String, hexBytes: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Any")(hexType.asInstanceOf[js.Any], hexBytes.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Any(hexType: Double, hexBytes: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Any")(hexType.asInstanceOf[js.Any], hexBytes.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@root/asn1", "UInt")
-  @js.native
-  def UInt(hexBigInt: String): String = js.native
+  @scala.inline
+  def BitStr(hexBitStream: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("BitStr")(hexBitStream.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@root/asn1", "pack")
-  @js.native
-  def pack(asn1: ArrInput): Uint8Array = js.native
-  @JSImport("@root/asn1", "pack")
-  @js.native
-  def pack(asn1: ArrInput, opts: Json): Uint8Array = js.native
-  @JSImport("@root/asn1", "pack")
-  @js.native
-  def pack(asn1: ArrInput, opts: `0`): String = js.native
-  @JSImport("@root/asn1", "pack")
-  @js.native
-  def pack(asn1: ElementInput): Uint8Array = js.native
-  @JSImport("@root/asn1", "pack")
-  @js.native
-  def pack(asn1: ElementInput, opts: Json): Uint8Array = js.native
-  @JSImport("@root/asn1", "pack")
-  @js.native
-  def pack(asn1: ElementInput, opts: `0`): String = js.native
+  @scala.inline
+  def UInt(hexBigInt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UInt")(hexBigInt.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@root/asn1", "parse")
-  @js.native
-  def parse(opts: Der): ArrJson = js.native
-  @JSImport("@root/asn1", "parse")
-  @js.native
-  def parse(opts: DerJson): ElementHex = js.native
-  @JSImport("@root/asn1", "parse")
-  @js.native
-  def parse(opts: JsonVerbose): ElementBuffer = js.native
-  @JSImport("@root/asn1", "parse")
-  @js.native
-  def parse(opts: Verbose): ArrBuffer = js.native
+  @scala.inline
+  def pack(asn1: ArrInput): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(asn1.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pack(asn1: ArrInput, opts: Json): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(asn1.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pack(asn1: ArrInput, opts: `0`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(asn1.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def pack(asn1: ElementInput): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(asn1.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pack(asn1: ElementInput, opts: Json): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(asn1.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pack(asn1: ElementInput, opts: `0`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(asn1.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@root/asn1", "parseVerbose")
-  @js.native
-  def parseVerbose(buf: Uint8Array): ElementBuffer = js.native
-  @JSImport("@root/asn1", "parseVerbose")
-  @js.native
-  def parseVerbose(buf: Uint8Array, opts: Json): ElementBuffer = js.native
-  @JSImport("@root/asn1", "parseVerbose")
-  @js.native
-  def parseVerbose(buf: Uint8Array, opts: `0`): ElementHex = js.native
+  @scala.inline
+  def parse(opts: Der): ArrJson = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ArrJson]
+  @scala.inline
+  def parse(opts: DerJson): ElementHex = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ElementHex]
+  @scala.inline
+  def parse(opts: JsonVerbose): ElementBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ElementBuffer]
+  @scala.inline
+  def parse(opts: Verbose): ArrBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ArrBuffer]
+  
+  @scala.inline
+  def parseVerbose(buf: Uint8Array): ElementBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVerbose")(buf.asInstanceOf[js.Any]).asInstanceOf[ElementBuffer]
+  @scala.inline
+  def parseVerbose(buf: Uint8Array, opts: Json): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVerbose")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
+  @scala.inline
+  def parseVerbose(buf: Uint8Array, opts: `0`): ElementHex = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVerbose")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ElementHex]
   
   type ArrBuffer = js.Tuple2[
     Double, 
@@ -92,18 +78,17 @@ object mod {
     ])
   ]
   
-  @js.native
   trait Element[V /* <: String | Uint8Array */] extends StObject {
     
-    var children: js.UndefOr[js.Array[Element[V]]] = js.native
+    var children: js.UndefOr[js.Array[Element[V]]] = js.undefined
     
-    var length: Double = js.native
+    var length: Double
     
-    var lengthSize: Double = js.native
+    var lengthSize: Double
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var value: js.UndefOr[V] = js.native
+    var value: js.UndefOr[V] = js.undefined
   }
   object Element {
     
@@ -115,7 +100,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element[_], V /* <: String | Uint8Array */] (val x: Self with Element[V]) extends AnyVal {
+    implicit class ElementMutableBuilder[Self <: Element[?], V /* <: String | Uint8Array */] (val x: Self & Element[V]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: js.Array[Element[V]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -147,14 +132,13 @@ object mod {
   
   type ElementHex = Element[String]
   
-  @js.native
   trait ElementInput extends StObject {
     
-    var children: js.UndefOr[js.Array[ElementInput]] = js.native
+    var children: js.UndefOr[js.Array[ElementInput]] = js.undefined
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var value: js.UndefOr[String | Uint8Array] = js.native
+    var value: js.UndefOr[String | Uint8Array] = js.undefined
   }
   object ElementInput {
     

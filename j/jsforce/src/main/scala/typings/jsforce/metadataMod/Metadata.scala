@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsforce/api/metadata", "Metadata")
@@ -15,9 +14,9 @@ class Metadata protected () extends StObject {
   def this(conn: Connection) = this()
   
   def checkDeployStatus(id: String): js.Promise[DeployResult] = js.native
-  def checkDeployStatus(id: String, includeDetails: js.UndefOr[scala.Nothing], callback: Callback[DeployResult]): js.Promise[DeployResult] = js.native
   def checkDeployStatus(id: String, includeDetails: Boolean): js.Promise[DeployResult] = js.native
   def checkDeployStatus(id: String, includeDetails: Boolean, callback: Callback[DeployResult]): js.Promise[DeployResult] = js.native
+  def checkDeployStatus(id: String, includeDetails: Unit, callback: Callback[DeployResult]): js.Promise[DeployResult] = js.native
   
   def checkRetrieveStatus(id: String): js.Promise[RetrieveResult] = js.native
   def checkRetrieveStatus(id: String, callback: Callback[RetrieveResult]): js.Promise[RetrieveResult] = js.native
@@ -83,30 +82,22 @@ class Metadata protected () extends StObject {
   def deploy(zipInput: Stream, options: DeployOptions, callback: Callback[AsyncResult]): DeployResultLocator[AsyncResult] = js.native
   
   def describe(): js.Promise[DescribeMetadataResult] = js.native
-  def describe(version: js.UndefOr[scala.Nothing], callback: Callback[DescribeMetadataResult]): js.Promise[DescribeMetadataResult] = js.native
   def describe(version: String): js.Promise[DescribeMetadataResult] = js.native
   def describe(version: String, callback: Callback[DescribeMetadataResult]): js.Promise[DescribeMetadataResult] = js.native
+  def describe(version: Unit, callback: Callback[DescribeMetadataResult]): js.Promise[DescribeMetadataResult] = js.native
   
   def list(queries: js.Array[ListMetadataQuery]): js.Promise[js.Array[FileProperties]] = js.native
-  def list(
-    queries: js.Array[ListMetadataQuery],
-    version: js.UndefOr[scala.Nothing],
-    callback: Callback[js.Array[FileProperties]]
-  ): js.Promise[js.Array[FileProperties]] = js.native
   def list(queries: js.Array[ListMetadataQuery], version: String): js.Promise[js.Array[FileProperties]] = js.native
   def list(
     queries: js.Array[ListMetadataQuery],
     version: String,
     callback: Callback[js.Array[FileProperties]]
   ): js.Promise[js.Array[FileProperties]] = js.native
+  def list(queries: js.Array[ListMetadataQuery], version: Unit, callback: Callback[js.Array[FileProperties]]): js.Promise[js.Array[FileProperties]] = js.native
   def list(queries: ListMetadataQuery): js.Promise[js.Array[FileProperties]] = js.native
-  def list(
-    queries: ListMetadataQuery,
-    version: js.UndefOr[scala.Nothing],
-    callback: Callback[js.Array[FileProperties]]
-  ): js.Promise[js.Array[FileProperties]] = js.native
   def list(queries: ListMetadataQuery, version: String): js.Promise[js.Array[FileProperties]] = js.native
   def list(queries: ListMetadataQuery, version: String, callback: Callback[js.Array[FileProperties]]): js.Promise[js.Array[FileProperties]] = js.native
+  def list(queries: ListMetadataQuery, version: Unit, callback: Callback[js.Array[FileProperties]]): js.Promise[js.Array[FileProperties]] = js.native
   
   var pollInterval: Double = js.native
   

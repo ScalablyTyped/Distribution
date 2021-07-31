@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MasterUserOptions extends StObject {
   
   /**
     * ARN for the master user (if IAM is enabled).
     */
-  var MasterUserARN: js.UndefOr[ARN] = js.native
+  var MasterUserARN: js.UndefOr[ARN] = js.undefined
   
   /**
     * The master user's username, which is stored in the Amazon Elasticsearch Service domain's internal database.
     */
-  var MasterUserName: js.UndefOr[Username] = js.native
+  var MasterUserName: js.UndefOr[Username] = js.undefined
   
   /**
     * The master user's password, which is stored in the Amazon Elasticsearch Service domain's internal database.
     */
-  var MasterUserPassword: js.UndefOr[Password] = js.native
+  var MasterUserPassword: js.UndefOr[Password] = js.undefined
 }
 object MasterUserOptions {
   

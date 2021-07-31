@@ -12,7 +12,7 @@ Displaying photos with pinch-to-zoom
 | Keywords           | react-native, react-component, ios, android, gallery, lightbox, pinch, pinch-to-zoom, mobile |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 75405 |
+| # downloads        | 40764 |
 | # stars            | 4 |
 
 ## Links

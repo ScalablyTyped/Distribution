@@ -2,15 +2,13 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontSizeMargin extends StObject {
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var margin: js.Array[js.Array[String]] = js.native
+  var margin: js.Array[js.Array[String]]
 }
 object FontSizeMargin {
   

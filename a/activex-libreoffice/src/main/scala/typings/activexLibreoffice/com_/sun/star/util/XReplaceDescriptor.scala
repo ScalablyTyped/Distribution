@@ -6,21 +6,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a string replace operation. */
-@js.native
-trait XReplaceDescriptor extends XSearchDescriptor {
+trait XReplaceDescriptor
+  extends StObject
+     with XSearchDescriptor {
   
   /** @returns the string which replaces the found occurrences. */
-  var ReplaceString: String = js.native
+  var ReplaceString: String
   
   /** @returns the string which replaces the found occurrences. */
-  def getReplaceString(): String = js.native
+  def getReplaceString(): String
   
   /** sets the string which replaces the found occurrences. */
-  def setReplaceString(aReplaceString: String): Unit = js.native
+  def setReplaceString(aReplaceString: String): Unit
 }
 object XReplaceDescriptor {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,20 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentIdentifier
   * @version 1.0
   */
-@js.native
-trait XContentAccess extends XInterface {
+trait XContentAccess
+  extends StObject
+     with XInterface {
   
   /**
     * returns the content ( "most expensive method" ).
     * @returns the content.
     */
-  def queryContent(): XContent = js.native
+  def queryContent(): XContent
   
   /**
     * returns the identifier object of the content.
     * @returns the identifier object.
     */
-  def queryContentIdentifier(): XContentIdentifier = js.native
+  def queryContentIdentifier(): XContentIdentifier
   
   /**
     * returns the identifier string of the content ( "cheap method" ).
@@ -39,7 +39,7 @@ trait XContentAccess extends XInterface {
     * Note that this string can be used later to recreate the content.
     * @returns the identifier string.
     */
-  def queryContentIdentifierString(): String = js.native
+  def queryContentIdentifierString(): String
 }
 object XContentAccess {
   

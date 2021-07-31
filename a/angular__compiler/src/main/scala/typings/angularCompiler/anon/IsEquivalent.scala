@@ -2,13 +2,11 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsEquivalent[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */] extends StObject {
   
-  def isEquivalent(other: T): Boolean = js.native
+  def isEquivalent(other: T): Boolean
 }
 object IsEquivalent {
   
@@ -19,7 +17,7 @@ object IsEquivalent {
   }
   
   @scala.inline
-  implicit class IsEquivalentMutableBuilder[Self <: IsEquivalent[_], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */] (val x: Self with IsEquivalent[T]) extends AnyVal {
+  implicit class IsEquivalentMutableBuilder[Self <: IsEquivalent[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */] (val x: Self & IsEquivalent[T]) extends AnyVal {
     
     @scala.inline
     def setIsEquivalent(value: T => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))

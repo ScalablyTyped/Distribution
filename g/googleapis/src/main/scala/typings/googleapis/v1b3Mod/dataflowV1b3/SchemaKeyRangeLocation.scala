@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Currently we only support UTF-8 character splits to simplify encoding into
   * JSON.
   */
-@js.native
 trait SchemaKeyRangeLocation extends StObject {
   
   /**
@@ -19,29 +17,29 @@ trait SchemaKeyRangeLocation extends StObject {
     * disk within that project, for example
     * &quot;myproject-1014-104817-4c2-harness-0-disk-1&quot;.
     */
-  var dataDisk: js.UndefOr[String] = js.native
+  var dataDisk: js.UndefOr[String] = js.undefined
   
   /**
     * The physical location of this range assignment to be used for streaming
     * computation cross-worker message delivery.
     */
-  var deliveryEndpoint: js.UndefOr[String] = js.native
+  var deliveryEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED. The location of the persistent state for this range, as a
     * persistent directory in the worker local filesystem.
     */
-  var deprecatedPersistentDirectory: js.UndefOr[String] = js.native
+  var deprecatedPersistentDirectory: js.UndefOr[String] = js.undefined
   
   /**
     * The end (exclusive) of the key range.
     */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /**
     * The start (inclusive) of the key range.
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object SchemaKeyRangeLocation {
   

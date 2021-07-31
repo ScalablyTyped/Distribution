@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositingReasonsResponse extends StObject {
   
   /**
     * A list of strings specifying reason IDs for the given layer to become composited.
     */
-  var compositingReasonIds: js.Array[String] = js.native
+  var compositingReasonIds: js.Array[String]
   
   /**
     * A list of strings specifying reasons for the given layer to become composited.
     */
-  var compositingReasons: js.Array[String] = js.native
+  var compositingReasons: js.Array[String]
 }
 object CompositingReasonsResponse {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /** The name of a carrier rate referring to a carrier rate defined in the same rate group. Can only be set if all other fields are not set. */
-  var carrierRateName: js.UndefOr[String] = js.native
+  var carrierRateName: js.UndefOr[String] = js.undefined
   
   /** A flat rate. Can only be set if all other fields are not set. */
-  var flatRate: js.UndefOr[Price] = js.native
+  var flatRate: js.UndefOr[Price] = js.undefined
   
   /** If true, then the product can't ship. Must be true when set, can only be set if all other fields are not set. */
-  var noShipping: js.UndefOr[Boolean] = js.native
+  var noShipping: js.UndefOr[Boolean] = js.undefined
   
   /** A percentage of the price represented as a number in decimal notation (e.g., `"5.4"`). Can only be set if all other fields are not set. */
-  var pricePercentage: js.UndefOr[String] = js.native
+  var pricePercentage: js.UndefOr[String] = js.undefined
   
   /** The name of a subtable. Can only be set in table cells (i.e., not for single values), and only if all other fields are not set. */
-  var subtableName: js.UndefOr[String] = js.native
+  var subtableName: js.UndefOr[String] = js.undefined
 }
 object Value {
   

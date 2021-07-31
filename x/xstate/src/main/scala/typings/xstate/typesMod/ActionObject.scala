@@ -3,22 +3,21 @@ package typings.xstate.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionObject[TContext, TEvent /* <: EventObject */]
-  extends /* option */ StringDictionary[js.Any] {
+  extends StObject
+     with /* option */ StringDictionary[js.Any] {
   
   /**
     * The implementation for executing the action.
     */
-  var exec: js.UndefOr[ActionFunction[TContext, TEvent]] = js.native
+  var exec: js.UndefOr[ActionFunction[TContext, TEvent]] = js.undefined
   
   /**
     * The type of action that is executed.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ActionObject {
   
@@ -30,7 +29,7 @@ object ActionObject {
   }
   
   @scala.inline
-  implicit class ActionObjectMutableBuilder[Self <: ActionObject[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ActionObject[TContext, TEvent])) extends AnyVal {
+  implicit class ActionObjectMutableBuilder[Self <: ActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActionObject[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setExec(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))

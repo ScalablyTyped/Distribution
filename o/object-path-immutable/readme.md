@@ -10,9 +10,9 @@ Modify deep object properties without modifying the original object (immutabilit
 | ------------------ | :-------------: |
 | Full name          | object-path-immutable |
 | Keywords           | deep, path, access, get, property, dot, prop, object, obj, notation, segment, value, nested, key, immutable, immutability, react, redux, state |
-| # releases         | 8 |
-| # dependents       | 64 |
-| # downloads        | 2486131 |
+| # releases         | 9 |
+| # dependents       | 70 |
+| # downloads        | 2842712 |
 | # stars            | 5 |
 
 ## Links

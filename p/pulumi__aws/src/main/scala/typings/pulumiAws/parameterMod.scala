@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parameterMod {
@@ -91,6 +90,10 @@ object parameterMod {
   /* static members */
   object Parameter {
     
+    @JSImport("@pulumi/aws/ssm/parameter", "Parameter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Parameter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,86 +103,80 @@ object parameterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/parameter", "Parameter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Parameter = js.native
-    @JSImport("@pulumi/aws/ssm/parameter", "Parameter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Parameter = js.native
-    @JSImport("@pulumi/aws/ssm/parameter", "Parameter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ParameterState): Parameter = js.native
-    @JSImport("@pulumi/aws/ssm/parameter", "Parameter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ParameterState, opts: CustomResourceOptions): Parameter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Parameter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Parameter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ParameterState): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Parameter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ParameterState, opts: CustomResourceOptions): Parameter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Parameter]
     
     /**
       * Returns true if the given object is an instance of Parameter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/parameter", "Parameter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/parameter.Parameter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/parameter.Parameter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/parameter.Parameter */ Boolean]
   }
   
-  @js.native
   trait ParameterArgs extends StObject {
     
     /**
       * A regular expression used to validate the parameter value.
       */
-    val allowedPattern: js.UndefOr[Input[String]] = js.native
+    val allowedPattern: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the parameter.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The dataType of the parameter. Valid values: text and aws:ec2:image for AMI format, see the [Native parameter support for Amazon Machine Image IDs
       * ](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-ec2-aliases.html)
       */
-    val dataType: js.UndefOr[Input[String]] = js.native
+    val dataType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the parameter.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The KMS key id or arn for encrypting a SecureString.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the parameter. If the name contains a path (e.g. any forward slashes (`/`)), it must be fully qualified with a leading forward slash (`/`). For additional requirements and constraints, see the [AWS SSM User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-parameter-name-constraints.html).
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Overwrite an existing parameter. If not specified, will default to `false` if the resource has not been created by this provider to avoid overwrite of existing resource and will default to `true` otherwise (lifecycle rules should then be used to manage the update behavior).
       */
-    val overwrite: js.UndefOr[Input[Boolean]] = js.native
+    val overwrite: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A map of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The tier of the parameter. If not specified, will default to `Standard`. Valid tiers are `Standard` and `Advanced`. For more information on parameter tiers, see the [AWS SSM Parameter tier comparison and guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html).
       */
-    val tier: js.UndefOr[Input[String]] = js.native
+    val tier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
       */
-    val `type`: Input[ParameterType] = js.native
+    val `type`: Input[ParameterType]
     
     /**
       * The value of the parameter.
       */
-    val value: Input[String] = js.native
+    val value: Input[String]
   }
   object ParameterArgs {
     
@@ -255,69 +252,68 @@ object parameterMod {
     }
   }
   
-  @js.native
   trait ParameterState extends StObject {
     
     /**
       * A regular expression used to validate the parameter value.
       */
-    val allowedPattern: js.UndefOr[Input[String]] = js.native
+    val allowedPattern: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the parameter.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The dataType of the parameter. Valid values: text and aws:ec2:image for AMI format, see the [Native parameter support for Amazon Machine Image IDs
       * ](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-ec2-aliases.html)
       */
-    val dataType: js.UndefOr[Input[String]] = js.native
+    val dataType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the parameter.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The KMS key id or arn for encrypting a SecureString.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the parameter. If the name contains a path (e.g. any forward slashes (`/`)), it must be fully qualified with a leading forward slash (`/`). For additional requirements and constraints, see the [AWS SSM User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-parameter-name-constraints.html).
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Overwrite an existing parameter. If not specified, will default to `false` if the resource has not been created by this provider to avoid overwrite of existing resource and will default to `true` otherwise (lifecycle rules should then be used to manage the update behavior).
       */
-    val overwrite: js.UndefOr[Input[Boolean]] = js.native
+    val overwrite: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A map of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The tier of the parameter. If not specified, will default to `Standard`. Valid tiers are `Standard` and `Advanced`. For more information on parameter tiers, see the [AWS SSM Parameter tier comparison and guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html).
       */
-    val tier: js.UndefOr[Input[String]] = js.native
+    val tier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
       */
-    val `type`: js.UndefOr[Input[ParameterType]] = js.native
+    val `type`: js.UndefOr[Input[ParameterType]] = js.undefined
     
     /**
       * The value of the parameter.
       */
-    val value: js.UndefOr[Input[String]] = js.native
+    val value: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the parameter.
       */
-    val version: js.UndefOr[Input[Double]] = js.native
+    val version: js.UndefOr[Input[Double]] = js.undefined
   }
   object ParameterState {
     

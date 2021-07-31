@@ -5,13 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides interfaces to find cells with specific properties. */
-@js.native
 trait SheetRangesQuery
-  extends XCellRangesQuery
+  extends StObject
+     with XCellRangesQuery
      with XFormulaQuery
 object SheetRangesQuery {
   

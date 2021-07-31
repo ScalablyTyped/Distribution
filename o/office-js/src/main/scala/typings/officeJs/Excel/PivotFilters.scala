@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait PivotFilters extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PivotFilters extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var dateFilter: js.UndefOr[PivotDateFilter] = js.native
+  var dateFilter: js.UndefOr[PivotDateFilter] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait PivotFilters extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var labelFilter: js.UndefOr[PivotLabelFilter] = js.native
+  var labelFilter: js.UndefOr[PivotLabelFilter] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait PivotFilters extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var manualFilter: js.UndefOr[PivotManualFilter] = js.native
+  var manualFilter: js.UndefOr[PivotManualFilter] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait PivotFilters extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var valueFilter: js.UndefOr[PivotValueFilter] = js.native
+  var valueFilter: js.UndefOr[PivotValueFilter] = js.undefined
 }
 object PivotFilters {
   

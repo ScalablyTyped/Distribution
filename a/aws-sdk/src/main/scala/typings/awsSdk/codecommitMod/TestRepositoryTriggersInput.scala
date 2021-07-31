@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRepositoryTriggersInput extends StObject {
   
   /**
     * The name of the repository in which to test the triggers.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The list of triggers to test.
     */
-  var triggers: RepositoryTriggersList = js.native
+  var triggers: RepositoryTriggersList
 }
 object TestRepositoryTriggersInput {
   

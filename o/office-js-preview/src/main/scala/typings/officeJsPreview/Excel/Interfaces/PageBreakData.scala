@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
-@js.native
 trait PageBreakData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PageBreakData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageBreakData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 object PageBreakData {
   

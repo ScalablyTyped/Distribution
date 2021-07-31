@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ruler extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Levels: RulerLevels = js.native
+  val Levels: RulerLevels
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Ruler_typekey")
-  var PowerPointDotRuler_typekey: Ruler = js.native
+  var PowerPointDotRuler_typekey: Ruler
   
-  val TabStops: typings.activexPowerpoint.PowerPoint.TabStops = js.native
+  val TabStops: typings.activexPowerpoint.PowerPoint.TabStops
 }
 object Ruler {
   

@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnzipOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[UnzipCompleteCallback] = js.native
+  var complete: js.UndefOr[UnzipCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[UnzipFailCallback] = js.native
+  var fail: js.UndefOr[UnzipFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[UnzipSuccessCallback] = js.native
+  var success: js.UndefOr[UnzipSuccessCallback] = js.undefined
   
   /** 目标目录路径, 支持本地路径 */
-  var targetPath: String = js.native
+  var targetPath: String
   
   /** 源文件路径，支持本地路径, 只可以是 zip 压缩文件 */
-  var zipFilePath: String = js.native
+  var zipFilePath: String
 }
 object UnzipOption {
   

@@ -13,37 +13,39 @@ import typings.webpackBlocksAssets.webpackBlocksAssetsStrings.dashes
 import typings.webpackBlocksAssets.webpackBlocksAssetsStrings.dashesOnly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@webpack-blocks/assets", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object css {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: CssOptions): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("@webpack-blocks/assets", "css")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("@webpack-blocks/assets", "css")
-    @js.native
-    def apply(options: CssOptions): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@webpack-blocks/assets", "css.modules")
-    @js.native
-    def modules(): js.Any = js.native
-    @JSImport("@webpack-blocks/assets", "css.modules")
-    @js.native
-    def modules(options: ModuleOptions): js.Any = js.native
+    @scala.inline
+    def modules(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")().asInstanceOf[js.Any]
+    @scala.inline
+    def modules(options: ModuleOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @js.native
     trait CssOptions extends StObject {
       
-      var `import`: js.UndefOr[Boolean | ImportFilter] = js.native
+      var `import`: js.UndefOr[Boolean | ImportFilter] = js.undefined
       
-      var modules: js.UndefOr[Boolean | String | ModuleOptions] = js.native
+      var modules: js.UndefOr[Boolean | String | ModuleOptions] = js.undefined
       
-      var sourceMap: js.UndefOr[Boolean] = js.native
+      var sourceMap: js.UndefOr[Boolean] = js.undefined
       
-      var url: js.UndefOr[Boolean | UrlFilter] = js.native
+      var url: js.UndefOr[Boolean | UrlFilter] = js.undefined
     }
     object CssOptions {
       
@@ -88,22 +90,21 @@ object mod {
       }
     }
     
-    @js.native
     trait FileOptions extends StObject {
       
-      var context: js.UndefOr[String] = js.native
+      var context: js.UndefOr[String] = js.undefined
       
-      var emitFile: js.UndefOr[Boolean] = js.native
+      var emitFile: js.UndefOr[Boolean] = js.undefined
       
-      var name: js.UndefOr[String | NameFunction] = js.native
+      var name: js.UndefOr[String | NameFunction] = js.undefined
       
-      var outputPath: js.UndefOr[String | PathFunction] = js.native
+      var outputPath: js.UndefOr[String | PathFunction] = js.undefined
       
-      var postTransformPublicPath: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
+      var postTransformPublicPath: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
       
-      var publicPath: js.UndefOr[String | PathFunction] = js.native
+      var publicPath: js.UndefOr[String | PathFunction] = js.undefined
       
-      var regExp: js.UndefOr[RegExp] = js.native
+      var regExp: js.UndefOr[RegExp] = js.undefined
     }
     object FileOptions {
       
@@ -179,31 +180,30 @@ object mod {
     
     type ImportFilter = js.Function2[/* parseImport */ ParseImportOptions, /* resourcePath */ String, Boolean]
     
-    @js.native
     trait ModuleOptions extends StObject {
       
-      var context: js.UndefOr[String] = js.native
+      var context: js.UndefOr[String] = js.undefined
       
-      var getLocalIdent: js.UndefOr[GetLocalIdent] = js.native
+      var getLocalIdent: js.UndefOr[GetLocalIdent] = js.undefined
       
-      var hashPrefix: js.UndefOr[String] = js.native
+      var hashPrefix: js.UndefOr[String] = js.undefined
       
       /**
         * 0 => no loaders (default);
         * 1 => postcss-loader;
         * 2 => postcss-loader, sass-loader
         */
-      var importLoaders: js.UndefOr[`0` | `1` | `2`] = js.native
+      var importLoaders: js.UndefOr[`0` | `1` | `2`] = js.undefined
       
-      var localIdentName: js.UndefOr[String] = js.native
+      var localIdentName: js.UndefOr[String] = js.undefined
       
-      var localIdentRegExp: js.UndefOr[String | RegExp] = js.native
+      var localIdentRegExp: js.UndefOr[String | RegExp] = js.undefined
       
-      var localsConvention: js.UndefOr[asIs | camelCase | camelCaseOnly | dashes | dashesOnly] = js.native
+      var localsConvention: js.UndefOr[asIs | camelCase | camelCaseOnly | dashes | dashesOnly] = js.undefined
       
-      var mode: js.UndefOr[String] = js.native
+      var mode: js.UndefOr[String] = js.undefined
       
-      var onlyLocals: js.UndefOr[Boolean] = js.native
+      var onlyLocals: js.UndefOr[Boolean] = js.undefined
     }
     object ModuleOptions {
       
@@ -276,12 +276,11 @@ object mod {
     
     type NameFunction = js.Function1[/* file */ String, js.Any]
     
-    @js.native
     trait ParseImportOptions extends StObject {
       
-      var media: String = js.native
+      var media: String
       
-      var url: String = js.native
+      var url: String
     }
     object ParseImportOptions {
       
@@ -306,14 +305,13 @@ object mod {
     
     type UrlFilter = js.Function2[/* url */ String, /* resourcePath */ String, Boolean]
     
-    @js.native
     trait UrlOptions extends StObject {
       
-      var fallback: js.UndefOr[String] = js.native
+      var fallback: js.UndefOr[String] = js.undefined
       
-      var limit: js.UndefOr[Double | Boolean | String] = js.native
+      var limit: js.UndefOr[Double | Boolean | String] = js.undefined
       
-      var mimetype: js.UndefOr[String] = js.native
+      var mimetype: js.UndefOr[String] = js.undefined
     }
     object UrlOptions {
       
@@ -347,17 +345,13 @@ object mod {
     }
   }
   
-  @JSImport("@webpack-blocks/assets", "file")
-  @js.native
-  def file(): js.Any = js.native
-  @JSImport("@webpack-blocks/assets", "file")
-  @js.native
-  def file(options: FileOptions): js.Any = js.native
+  @scala.inline
+  def file(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[js.Any]
+  @scala.inline
+  def file(options: FileOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@webpack-blocks/assets", "url")
-  @js.native
-  def url(): js.Any = js.native
-  @JSImport("@webpack-blocks/assets", "url")
-  @js.native
-  def url(options: UrlOptions): js.Any = js.native
+  @scala.inline
+  def url(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[js.Any]
+  @scala.inline
+  def url(options: UrlOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

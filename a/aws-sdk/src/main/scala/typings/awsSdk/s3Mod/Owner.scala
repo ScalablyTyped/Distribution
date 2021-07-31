@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Owner extends StObject {
   
   /**
     * Container for the display name of the owner.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.s3Mod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.s3Mod.DisplayName] = js.undefined
   
   /**
     * Container for the ID of the owner.
     */
-  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.native
+  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.undefined
 }
 object Owner {
   

@@ -8,19 +8,20 @@ import typings.std.KeyboardEvent
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object events {
     
-    @JSImport("@material/dom", "events.applyPassive")
+    @JSImport("@material/dom", "events")
     @js.native
-    def applyPassive(): Boolean | EventListenerOptions = js.native
-    @JSImport("@material/dom", "events.applyPassive")
-    @js.native
-    def applyPassive(globalObj: Window): Boolean | EventListenerOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def applyPassive(): Boolean | EventListenerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("applyPassive")().asInstanceOf[Boolean | EventListenerOptions]
+    @scala.inline
+    def applyPassive(globalObj: Window): Boolean | EventListenerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("applyPassive")(globalObj.asInstanceOf[js.Any]).asInstanceOf[Boolean | EventListenerOptions]
   }
   
   object focusTrap {
@@ -35,6 +36,10 @@ object mod {
   }
   
   object keyboard {
+    
+    @JSImport("@material/dom", "keyboard")
+    @js.native
+    val ^ : js.Any = js.native
     
     object KEY {
       
@@ -127,27 +132,26 @@ object mod {
       def UNKNOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("@material/dom", "keyboard.isNavigationEvent")
-    @js.native
-    def isNavigationEvent(evt: KeyboardEvent): Boolean = js.native
+    @scala.inline
+    def isNavigationEvent(evt: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigationEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@material/dom", "keyboard.normalizeKey")
-    @js.native
-    def normalizeKey(evt: KeyboardEvent): String = js.native
+    @scala.inline
+    def normalizeKey(evt: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKey")(evt.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object ponyfill {
     
-    @JSImport("@material/dom", "ponyfill.closest")
+    @JSImport("@material/dom", "ponyfill")
     @js.native
-    def closest(element: Element, selector: String): Element | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@material/dom", "ponyfill.estimateScrollWidth")
-    @js.native
-    def estimateScrollWidth(element: Element): Double = js.native
+    @scala.inline
+    def closest(element: Element, selector: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
-    @JSImport("@material/dom", "ponyfill.matches")
-    @js.native
-    def matches(element: Element, selector: String): Boolean = js.native
+    @scala.inline
+    def estimateScrollWidth(element: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("estimateScrollWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

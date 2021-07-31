@@ -2,16 +2,14 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotTypeConfiguration extends StObject {
   
   /**
     * A regular expression used to validate the value of a slot.
     */
-  var regexConfiguration: js.UndefOr[SlotTypeRegexConfiguration] = js.native
+  var regexConfiguration: js.UndefOr[SlotTypeRegexConfiguration] = js.undefined
 }
 object SlotTypeConfiguration {
   

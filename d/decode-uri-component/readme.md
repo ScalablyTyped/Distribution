@@ -11,8 +11,8 @@ A better decodeURIComponent
 | Full name          | decode-uri-component |
 | Keywords           | decode, uri, component, decodeuricomponent, components, decoder, url |
 | # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 550267820 |
+| # dependents       | 172 |
+| # downloads        | 707795935 |
 | # stars            | 0 |
 
 ## Links

@@ -5,18 +5,17 @@ import typings.hapiPino.mod.Serializers
 import typings.pino.mod.Level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var level: js.UndefOr[Level | String] = js.native
+    var level: js.UndefOr[Level | String] = js.undefined
     
-    var serializers: js.UndefOr[Serializers] = js.native
+    var serializers: js.UndefOr[Serializers] = js.undefined
   }
   object Dictkey {
     
@@ -44,20 +43,19 @@ object anon {
   }
   
   /* Inlined {[ key in pino.pino.Level ]:? string} */
-  @js.native
   trait keyinLevelstring extends StObject {
     
-    var debug: js.UndefOr[String] = js.native
+    var debug: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var fatal: js.UndefOr[String] = js.native
+    var fatal: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var trace: js.UndefOr[String] = js.native
+    var trace: js.UndefOr[String] = js.undefined
     
-    var warn: js.UndefOr[String] = js.native
+    var warn: js.UndefOr[String] = js.undefined
   }
   object keyinLevelstring {
     

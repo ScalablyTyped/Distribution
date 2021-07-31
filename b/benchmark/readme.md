@@ -10,9 +10,9 @@ A benchmarking library that supports high-resolution timers & returns statistica
 | ------------------ | :-------------: |
 | Full name          | benchmark |
 | Keywords           | benchmark, performance, speed |
-| # releases         | 1 |
-| # dependents       | 166 |
-| # downloads        | 7763941 |
+| # releases         | 0 |
+| # dependents       | 171 |
+| # downloads        | 7727480 |
 | # stars            | 89 |
 
 ## Links

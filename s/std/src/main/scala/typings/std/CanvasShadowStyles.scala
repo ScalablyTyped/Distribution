@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasShadowStyles extends StObject {
   
-  var shadowBlur: Double = js.native
+  var shadowBlur: Double
   
-  var shadowColor: java.lang.String = js.native
+  var shadowColor: java.lang.String
   
-  var shadowOffsetX: Double = js.native
+  var shadowOffsetX: Double
   
-  var shadowOffsetY: Double = js.native
+  var shadowOffsetY: Double
 }
 object CanvasShadowStyles {
   

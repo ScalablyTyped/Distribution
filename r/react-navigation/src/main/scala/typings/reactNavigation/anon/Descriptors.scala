@@ -7,10 +7,8 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Descriptors[Options, ScreenProps] extends StObject {
   
   var descriptors: StringDictionary[
@@ -19,11 +17,11 @@ trait Descriptors[Options, ScreenProps] extends StObject {
       js.Object, 
       NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
     ]
-  ] = js.native
+  ]
   
-  var navigationConfig: Options = js.native
+  var navigationConfig: Options
   
-  var screenProps: js.UndefOr[ScreenProps] = js.native
+  var screenProps: js.UndefOr[ScreenProps] = js.undefined
 }
 object Descriptors {
   
@@ -43,7 +41,7 @@ object Descriptors {
   }
   
   @scala.inline
-  implicit class DescriptorsMutableBuilder[Self <: Descriptors[_, _], Options, ScreenProps] (val x: Self with (Descriptors[Options, ScreenProps])) extends AnyVal {
+  implicit class DescriptorsMutableBuilder[Self <: Descriptors[?, ?], Options, ScreenProps] (val x: Self & (Descriptors[Options, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setDescriptors(

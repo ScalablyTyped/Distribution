@@ -5,29 +5,30 @@ import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
 import typings.opentracing.mod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterProgressMod {
   
-  @JSImport("gatsby-cli/lib/reporter/reporter-progress", "createProgressReporter")
+  @JSImport("gatsby-cli/lib/reporter/reporter-progress", JSImport.Namespace)
   @js.native
-  def createProgressReporter(hasIdTextStartTotalSpanReporter: ICreateProgressReporterArguments): IProgressReporter = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createProgressReporter(hasIdTextStartTotalSpanReporter: ICreateProgressReporterArguments): IProgressReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressReporter")(hasIdTextStartTotalSpanReporter.asInstanceOf[js.Any]).asInstanceOf[IProgressReporter]
+  
   trait ICreateProgressReporterArguments extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var reporter: Reporter_ = js.native
+    var reporter: Reporter_
     
-    var span: Span = js.native
+    var span: Span
     
-    var start: Double = js.native
+    var start: Double
     
-    var text: String = js.native
+    var text: String
     
-    var total: Double = js.native
+    var total: Double
   }
   object ICreateProgressReporterArguments {
     

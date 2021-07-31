@@ -2,29 +2,27 @@ package typings.rmcDialog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AfterClose extends StObject {
     
-    var afterClose: js.Function0[Unit] = js.native
+    var afterClose: js.Function0[Unit]
     
-    var className: String = js.native
+    var className: String
     
-    var closable: Boolean = js.native
+    var closable: Boolean
     
-    var mask: Boolean = js.native
+    var mask: Boolean
     
-    var maskClosable: Boolean = js.native
+    var maskClosable: Boolean
     
-    var onClose: js.Function0[Unit] = js.native
+    var onClose: js.Function0[Unit]
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object AfterClose {
     
@@ -72,14 +70,13 @@ object anon {
     }
   }
   
-  @js.native
   trait OnClose extends StObject {
     
-    var onClose: js.Function0[Unit] = js.native
+    var onClose: js.Function0[Unit]
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object OnClose {
     
@@ -103,10 +100,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Visible extends StObject {
     
-    var visible: js.Any = js.native
+    var visible: js.Any
   }
   object Visible {
     

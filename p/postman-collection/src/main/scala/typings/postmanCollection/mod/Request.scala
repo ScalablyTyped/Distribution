@@ -4,7 +4,6 @@ import typings.postmanCollection.anon.Enabled
 import typings.postmanCollection.anon.IgnoreCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -66,7 +65,10 @@ class Request protected () extends Property[RequestDefinition] {
 /* static members */
 object Request {
   
-  @JSImport("postman-collection", "Request.isRequest")
+  @JSImport("postman-collection", "Request")
   @js.native
-  def isRequest(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isRequest(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequest")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

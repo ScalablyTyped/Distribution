@@ -2,20 +2,20 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeedOptions extends RequestOptions {
+trait FeedOptions
+  extends StObject
+     with RequestOptions {
   
   /** Opaque token for continuing the enumeration. */
-  var continuation: js.UndefOr[String] = js.native
+  var continuation: js.UndefOr[String] = js.undefined
   
   /** Allow scan on the queries which couldn't be served as indexing was opted out on the requested paths. */
-  var enableScanInQuery: js.UndefOr[Boolean] = js.native
+  var enableScanInQuery: js.UndefOr[Boolean] = js.undefined
   
   /** Max number of items to be returned in the enumeration operation. */
-  var maxItemCount: js.UndefOr[Double] = js.native
+  var maxItemCount: js.UndefOr[Double] = js.undefined
 }
 object FeedOptions {
   

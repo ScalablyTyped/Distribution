@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMStorageEvent extends StObject {
   
   @JSName("MSHTML.DOMStorageEvent_typekey")
-  var MSHTMLDotDOMStorageEvent_typekey: DOMStorageEvent = js.native
+  var MSHTMLDotDOMStorageEvent_typekey: DOMStorageEvent
   
-  val bubbles: Boolean = js.native
+  val bubbles: Boolean
   
-  var cancelBubble: Boolean = js.native
+  var cancelBubble: Boolean
   
-  val cancelable: Boolean = js.native
+  val cancelable: Boolean
   
-  val currentTarget: IEventTarget = js.native
+  val currentTarget: IEventTarget
   
-  val defaultPrevented: Boolean = js.native
+  val defaultPrevented: Boolean
   
-  val eventPhase: Double = js.native
+  val eventPhase: Double
   
-  def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit
   
   def initStorageEvent(
     eventType: String,
@@ -34,33 +32,33 @@ trait DOMStorageEvent extends StObject {
     newValueArg: String,
     urlArg: String,
     storageAreaArg: IHTMLStorage
-  ): Unit = js.native
+  ): Unit
   
-  val isTrusted: Boolean = js.native
+  val isTrusted: Boolean
   
-  val key: String = js.native
+  val key: String
   
-  val newValue: String = js.native
+  val newValue: String
   
-  val oldValue: String = js.native
+  val oldValue: String
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  val srcElement: IHTMLElement = js.native
+  val srcElement: IHTMLElement
   
-  def stopImmediatePropagation(): Unit = js.native
+  def stopImmediatePropagation(): Unit
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  val storageArea: IHTMLStorage = js.native
+  val storageArea: IHTMLStorage
   
-  val target: IEventTarget = js.native
+  val target: IEventTarget
   
-  val timeStamp: Double = js.native
+  val timeStamp: Double
   
-  val `type`: String = js.native
+  val `type`: String
   
-  val url: String = js.native
+  val url: String
 }
 object DOMStorageEvent {
   

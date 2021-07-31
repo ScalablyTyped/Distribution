@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemixInfo extends StObject {
   
   /** Resource ids for the sources of this remix, of the form: `assets/{ASSET_ID}` */
-  var sourceAsset: js.UndefOr[js.Array[String]] = js.native
+  var sourceAsset: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemixInfo {
   

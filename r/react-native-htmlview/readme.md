@@ -11,8 +11,8 @@ A component which renders HTML content as native views
 | Full name          | react-native-htmlview |
 | Keywords           | react, html, react-native, react-component, react-native-component, mobile, ui |
 | # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 1099195 |
+| # dependents       | 20 |
+| # downloads        | 1262134 |
 | # stars            | 5 |
 
 ## Links

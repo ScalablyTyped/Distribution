@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookPivotTable extends Entity {
+trait WorkbookPivotTable
+  extends StObject
+     with Entity {
   
   // Name of the PivotTable.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The worksheet containing the current PivotTable. Read-only.
-  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.native
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
 object WorkbookPivotTable {
   

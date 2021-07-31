@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-reanimated" : "1.13.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-reanimated" : "1.13.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

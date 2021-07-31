@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystraceSetup extends StObject {
   
   /** Systrace duration in seconds. Should be between 1 and 30 seconds. 0 disables systrace. */
-  var durationSeconds: js.UndefOr[Double] = js.native
+  var durationSeconds: js.UndefOr[Double] = js.undefined
 }
 object SystraceSetup {
   

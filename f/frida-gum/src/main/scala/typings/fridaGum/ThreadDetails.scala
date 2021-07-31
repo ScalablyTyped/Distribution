@@ -2,26 +2,24 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadDetails extends StObject {
   
   /**
     * Snapshot of CPU registers.
     */
-  var context: CpuContext = js.native
+  var context: CpuContext
   
   /**
     * OS-specific ID.
     */
-  var id: ThreadId = js.native
+  var id: ThreadId
   
   /**
     * Snapshot of state.
     */
-  var state: ThreadState = js.native
+  var state: ThreadState
 }
 object ThreadDetails {
   

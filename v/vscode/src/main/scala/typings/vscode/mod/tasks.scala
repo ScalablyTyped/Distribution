@@ -3,21 +3,21 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tasks {
   
-  @JSImport("vscode", "tasks.executeTask")
+  @JSImport("vscode", "tasks")
   @js.native
-  def executeTask(task: Task): Thenable[TaskExecution] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vscode", "tasks.fetchTasks")
-  @js.native
-  def fetchTasks(): Thenable[js.Array[Task]] = js.native
-  @JSImport("vscode", "tasks.fetchTasks")
-  @js.native
-  def fetchTasks(filter: TaskFilter): Thenable[js.Array[Task]] = js.native
+  @scala.inline
+  def executeTask(task: Task): Thenable[TaskExecution] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeTask")(task.asInstanceOf[js.Any]).asInstanceOf[Thenable[TaskExecution]]
+  
+  @scala.inline
+  def fetchTasks(): Thenable[js.Array[Task]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchTasks")().asInstanceOf[Thenable[js.Array[Task]]]
+  @scala.inline
+  def fetchTasks(filter: TaskFilter): Thenable[js.Array[Task]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchTasks")(filter.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[Task]]]
   
   @JSImport("vscode", "tasks.onDidEndTask")
   @js.native
@@ -35,9 +35,8 @@ object tasks {
   @js.native
   val onDidStartTaskProcess: Event[TaskProcessStartEvent] = js.native
   
-  @JSImport("vscode", "tasks.registerTaskProvider")
-  @js.native
-  def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = js.native
+  @scala.inline
+  def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTaskProvider")(`type`.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   @JSImport("vscode", "tasks.taskExecutions")
   @js.native

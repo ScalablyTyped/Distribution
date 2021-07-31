@@ -2,19 +2,17 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `10` extends StObject {
   
-  var fatigue: typings.screeps.screepsNumbers.`3` = js.native
+  var fatigue: typings.screeps.screepsNumbers.`3`
 }
 object `10` {
   
   @scala.inline
-  def apply(fatigue: typings.screeps.screepsNumbers.`3`): `10` = {
-    val __obj = js.Dynamic.literal(fatigue = fatigue.asInstanceOf[js.Any])
+  def apply(): `10` = {
+    val __obj = js.Dynamic.literal(fatigue = 3)
     __obj.asInstanceOf[`10`]
   }
   

@@ -3,17 +3,15 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointsFilter extends StObject {
   
-  var configurationNames: js.Array[String] = js.native
+  var configurationNames: js.Array[String]
   
-  var testcaseIds: js.Array[Double] = js.native
+  var testcaseIds: js.Array[Double]
   
-  var testers: js.Array[IdentityRef] = js.native
+  var testers: js.Array[IdentityRef]
 }
 object PointsFilter {
   

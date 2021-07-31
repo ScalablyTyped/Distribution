@@ -1,47 +1,37 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.`Sail CI`
 import typings.envCi.envCiStrings.sail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SailEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var name: `Sail CI` = js.native
+  var name: `Sail CI`
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var root: String = js.native
+  var root: String
   
-  var service: sail = js.native
+  var service: sail
   
-  var slug: String = js.native
+  var slug: String
 }
 object SailEnv {
   
   @scala.inline
-  def apply(
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: `Sail CI`,
-    root: String,
-    service: sail,
-    slug: String
-  ): SailEnv = {
-    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  def apply(commit: String, isPr: Boolean, root: String, slug: String): SailEnv = {
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Sail CI", root = root.asInstanceOf[js.Any], service = "sail", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[SailEnv]
   }
   

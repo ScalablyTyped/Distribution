@@ -2,19 +2,17 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statement[T] extends StObject {
   
-  def bind(name: String, value: js.Any): Unit = js.native
+  def bind(name: String, value: js.Any): Unit
   
-  def execute(): Cursor[T] = js.native
+  def execute(): Cursor[T]
   
-  def getBatchSize(): Double = js.native
+  def getBatchSize(): Double
   
-  def setBatchSize(size: Double): Unit = js.native
+  def setBatchSize(size: Double): Unit
 }
 object Statement {
   
@@ -30,7 +28,7 @@ object Statement {
   }
   
   @scala.inline
-  implicit class StatementMutableBuilder[Self <: Statement[_], T] (val x: Self with Statement[T]) extends AnyVal {
+  implicit class StatementMutableBuilder[Self <: Statement[?], T] (val x: Self & Statement[T]) extends AnyVal {
     
     @scala.inline
     def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))

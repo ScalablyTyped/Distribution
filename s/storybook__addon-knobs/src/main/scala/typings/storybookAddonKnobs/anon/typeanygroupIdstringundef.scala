@@ -2,34 +2,32 @@ package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  type :any,   groupId :string | undefined,   disableDebounce :boolean | undefined,   disableForceUpdate :boolean | undefined,   name :string,   label :string,   used :boolean | undefined,   defaultValue :any | undefined,   hideLabel :boolean | undefined,   callback :(): any | undefined} & std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.ObjectTypeKnob<any>, 'value'> */
-@js.native
 trait typeanygroupIdstringundef extends StObject {
   
-  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var disableDebounce: js.UndefOr[Boolean] = js.native
+  var disableDebounce: js.UndefOr[Boolean] = js.undefined
   
-  var disableForceUpdate: js.UndefOr[Boolean] = js.native
+  var disableForceUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
-  var hideLabel: js.UndefOr[Boolean] = js.native
+  var hideLabel: js.UndefOr[Boolean] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var used: js.UndefOr[Boolean] = js.native
+  var used: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object typeanygroupIdstringundef {
   
@@ -44,7 +42,7 @@ object typeanygroupIdstringundef {
   implicit class typeanygroupIdstringundefMutableBuilder[Self <: typeanygroupIdstringundef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlatColorPickerOptions extends StObject {
   
-  var autoupdate: js.UndefOr[Boolean] = js.native
+  var autoupdate: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[Boolean] = js.native
+  var buttons: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ FlatColorPickerChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ FlatColorPickerChangeEvent, Unit]] = js.undefined
   
-  var messages: js.UndefOr[FlatColorPickerMessages] = js.native
+  var messages: js.UndefOr[FlatColorPickerMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Boolean] = js.undefined
   
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object FlatColorPickerOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSatelliteRequest extends StObject {
   
   /**
     * UUID of a satellite.
     */
-  var satelliteId: String = js.native
+  var satelliteId: String
 }
 object GetSatelliteRequest {
   

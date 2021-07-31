@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.BatchEditStartEditing event.
   */
-@js.native
-trait ASPxClientGridViewBatchEditStartEditingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientGridViewBatchEditStartEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the grid column that owns a cell that is about to be edited.
     */
-  var focusedColumn: ASPxClientGridViewColumn = js.native
+  var focusedColumn: ASPxClientGridViewColumn
   
   /**
     * Gets the row's key.
     */
-  var key: js.Any = js.native
+  var key: js.Any
   
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var rowValues: js.Any = js.native
+  var rowValues: js.Any
   
   /**
     * Gets the visible index of the row whose cells are about to be edited.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientGridViewBatchEditStartEditingEventArgs {
   

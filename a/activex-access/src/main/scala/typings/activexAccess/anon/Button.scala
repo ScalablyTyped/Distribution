@@ -2,19 +2,17 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Button extends StObject {
   
-  var Button: Double = js.native
+  var Button: Double
   
-  var Shift: Double = js.native
+  var Shift: Double
   
-  var X: Double = js.native
+  var X: Double
   
-  var Y: Double = js.native
+  var Y: Double
 }
 object Button {
   

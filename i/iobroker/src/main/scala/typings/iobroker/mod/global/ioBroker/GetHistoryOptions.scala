@@ -9,37 +9,35 @@ import typings.iobroker.iobrokerStrings.none
 import typings.iobroker.iobrokerStrings.total
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHistoryOptions extends StObject {
   
-  var ack: js.UndefOr[Boolean] = js.native
+  var ack: js.UndefOr[Boolean] = js.undefined
   
-  var addID: js.UndefOr[Boolean] = js.native
+  var addID: js.UndefOr[Boolean] = js.undefined
   
-  var aggregate: js.UndefOr[minmax | min | max | average | total | count | none] = js.native
+  var aggregate: js.UndefOr[minmax | min | max | average | total | count | none] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var from: js.UndefOr[Boolean] = js.native
+  var from: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreNull: js.UndefOr[Boolean] = js.native
+  var ignoreNull: js.UndefOr[Boolean] = js.undefined
   
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var q: js.UndefOr[Boolean] = js.native
+  var q: js.UndefOr[Boolean] = js.undefined
   
-  var sessionId: js.UndefOr[js.Any] = js.native
+  var sessionId: js.UndefOr[js.Any] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
 }
 object GetHistoryOptions {
   

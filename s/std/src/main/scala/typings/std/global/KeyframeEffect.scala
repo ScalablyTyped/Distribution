@@ -5,14 +5,14 @@ import typings.std.KeyframeEffectOptions
 import typings.std.PropertyIndexedKeyframes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("KeyframeEffect")
 @js.native
 class KeyframeEffect ()
-  extends typings.std.KeyframeEffect {
+  extends StObject
+     with typings.std.KeyframeEffect {
   def this(source: typings.std.KeyframeEffect) = this()
   def this(target: typings.std.Element) = this()
   def this(target: Null, keyframes: js.Array[Keyframe]) = this()

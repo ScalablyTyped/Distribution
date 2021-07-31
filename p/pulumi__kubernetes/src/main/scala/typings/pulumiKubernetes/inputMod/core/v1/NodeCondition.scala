@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeCondition contains condition information for a node.
   */
-@js.native
 trait NodeCondition extends StObject {
   
   /**
     * Last time we got an update on a given condition.
     */
-  var lastHeartbeatTime: js.UndefOr[Input[String]] = js.native
+  var lastHeartbeatTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Last time the condition transit from one status to another.
     */
-  var lastTransitionTime: js.UndefOr[Input[String]] = js.native
+  var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Human readable message indicating details about last transition.
     */
-  var message: js.UndefOr[Input[String]] = js.native
+  var message: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * (brief) reason for the condition's last transition.
     */
-  var reason: js.UndefOr[Input[String]] = js.native
+  var reason: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: Input[String] = js.native
+  var status: Input[String]
   
   /**
     * Type of node condition.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object NodeCondition {
   

@@ -5,313 +5,311 @@ import typings.fluids.mod.FluidValue
 import typings.reactSpringShared.typesMod.InterpolatorArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aliceblue extends StObject {
     
-    var aliceblue: Double = js.native
+    var aliceblue: Double
     
-    var antiquewhite: Double = js.native
+    var antiquewhite: Double
     
-    var aqua: Double = js.native
+    var aqua: Double
     
-    var aquamarine: Double = js.native
+    var aquamarine: Double
     
-    var azure: Double = js.native
+    var azure: Double
     
-    var beige: Double = js.native
+    var beige: Double
     
-    var bisque: Double = js.native
+    var bisque: Double
     
-    var black: Double = js.native
+    var black: Double
     
-    var blanchedalmond: Double = js.native
+    var blanchedalmond: Double
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var blueviolet: Double = js.native
+    var blueviolet: Double
     
-    var brown: Double = js.native
+    var brown: Double
     
-    var burlywood: Double = js.native
+    var burlywood: Double
     
-    var burntsienna: Double = js.native
+    var burntsienna: Double
     
-    var cadetblue: Double = js.native
+    var cadetblue: Double
     
-    var chartreuse: Double = js.native
+    var chartreuse: Double
     
-    var chocolate: Double = js.native
+    var chocolate: Double
     
-    var coral: Double = js.native
+    var coral: Double
     
-    var cornflowerblue: Double = js.native
+    var cornflowerblue: Double
     
-    var cornsilk: Double = js.native
+    var cornsilk: Double
     
-    var crimson: Double = js.native
+    var crimson: Double
     
-    var cyan: Double = js.native
+    var cyan: Double
     
-    var darkblue: Double = js.native
+    var darkblue: Double
     
-    var darkcyan: Double = js.native
+    var darkcyan: Double
     
-    var darkgoldenrod: Double = js.native
+    var darkgoldenrod: Double
     
-    var darkgray: Double = js.native
+    var darkgray: Double
     
-    var darkgreen: Double = js.native
+    var darkgreen: Double
     
-    var darkgrey: Double = js.native
+    var darkgrey: Double
     
-    var darkkhaki: Double = js.native
+    var darkkhaki: Double
     
-    var darkmagenta: Double = js.native
+    var darkmagenta: Double
     
-    var darkolivegreen: Double = js.native
+    var darkolivegreen: Double
     
-    var darkorange: Double = js.native
+    var darkorange: Double
     
-    var darkorchid: Double = js.native
+    var darkorchid: Double
     
-    var darkred: Double = js.native
+    var darkred: Double
     
-    var darksalmon: Double = js.native
+    var darksalmon: Double
     
-    var darkseagreen: Double = js.native
+    var darkseagreen: Double
     
-    var darkslateblue: Double = js.native
+    var darkslateblue: Double
     
-    var darkslategray: Double = js.native
+    var darkslategray: Double
     
-    var darkslategrey: Double = js.native
+    var darkslategrey: Double
     
-    var darkturquoise: Double = js.native
+    var darkturquoise: Double
     
-    var darkviolet: Double = js.native
+    var darkviolet: Double
     
-    var deeppink: Double = js.native
+    var deeppink: Double
     
-    var deepskyblue: Double = js.native
+    var deepskyblue: Double
     
-    var dimgray: Double = js.native
+    var dimgray: Double
     
-    var dimgrey: Double = js.native
+    var dimgrey: Double
     
-    var dodgerblue: Double = js.native
+    var dodgerblue: Double
     
-    var firebrick: Double = js.native
+    var firebrick: Double
     
-    var floralwhite: Double = js.native
+    var floralwhite: Double
     
-    var forestgreen: Double = js.native
+    var forestgreen: Double
     
-    var fuchsia: Double = js.native
+    var fuchsia: Double
     
-    var gainsboro: Double = js.native
+    var gainsboro: Double
     
-    var ghostwhite: Double = js.native
+    var ghostwhite: Double
     
-    var gold: Double = js.native
+    var gold: Double
     
-    var goldenrod: Double = js.native
+    var goldenrod: Double
     
-    var gray: Double = js.native
+    var gray: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var greenyellow: Double = js.native
+    var greenyellow: Double
     
-    var grey: Double = js.native
+    var grey: Double
     
-    var honeydew: Double = js.native
+    var honeydew: Double
     
-    var hotpink: Double = js.native
+    var hotpink: Double
     
-    var indianred: Double = js.native
+    var indianred: Double
     
-    var indigo: Double = js.native
+    var indigo: Double
     
-    var ivory: Double = js.native
+    var ivory: Double
     
-    var khaki: Double = js.native
+    var khaki: Double
     
-    var lavender: Double = js.native
+    var lavender: Double
     
-    var lavenderblush: Double = js.native
+    var lavenderblush: Double
     
-    var lawngreen: Double = js.native
+    var lawngreen: Double
     
-    var lemonchiffon: Double = js.native
+    var lemonchiffon: Double
     
-    var lightblue: Double = js.native
+    var lightblue: Double
     
-    var lightcoral: Double = js.native
+    var lightcoral: Double
     
-    var lightcyan: Double = js.native
+    var lightcyan: Double
     
-    var lightgoldenrodyellow: Double = js.native
+    var lightgoldenrodyellow: Double
     
-    var lightgray: Double = js.native
+    var lightgray: Double
     
-    var lightgreen: Double = js.native
+    var lightgreen: Double
     
-    var lightgrey: Double = js.native
+    var lightgrey: Double
     
-    var lightpink: Double = js.native
+    var lightpink: Double
     
-    var lightsalmon: Double = js.native
+    var lightsalmon: Double
     
-    var lightseagreen: Double = js.native
+    var lightseagreen: Double
     
-    var lightskyblue: Double = js.native
+    var lightskyblue: Double
     
-    var lightslategray: Double = js.native
+    var lightslategray: Double
     
-    var lightslategrey: Double = js.native
+    var lightslategrey: Double
     
-    var lightsteelblue: Double = js.native
+    var lightsteelblue: Double
     
-    var lightyellow: Double = js.native
+    var lightyellow: Double
     
-    var lime: Double = js.native
+    var lime: Double
     
-    var limegreen: Double = js.native
+    var limegreen: Double
     
-    var linen: Double = js.native
+    var linen: Double
     
-    var magenta: Double = js.native
+    var magenta: Double
     
-    var maroon: Double = js.native
+    var maroon: Double
     
-    var mediumaquamarine: Double = js.native
+    var mediumaquamarine: Double
     
-    var mediumblue: Double = js.native
+    var mediumblue: Double
     
-    var mediumorchid: Double = js.native
+    var mediumorchid: Double
     
-    var mediumpurple: Double = js.native
+    var mediumpurple: Double
     
-    var mediumseagreen: Double = js.native
+    var mediumseagreen: Double
     
-    var mediumslateblue: Double = js.native
+    var mediumslateblue: Double
     
-    var mediumspringgreen: Double = js.native
+    var mediumspringgreen: Double
     
-    var mediumturquoise: Double = js.native
+    var mediumturquoise: Double
     
-    var mediumvioletred: Double = js.native
+    var mediumvioletred: Double
     
-    var midnightblue: Double = js.native
+    var midnightblue: Double
     
-    var mintcream: Double = js.native
+    var mintcream: Double
     
-    var mistyrose: Double = js.native
+    var mistyrose: Double
     
-    var moccasin: Double = js.native
+    var moccasin: Double
     
-    var navajowhite: Double = js.native
+    var navajowhite: Double
     
-    var navy: Double = js.native
+    var navy: Double
     
-    var oldlace: Double = js.native
+    var oldlace: Double
     
-    var olive: Double = js.native
+    var olive: Double
     
-    var olivedrab: Double = js.native
+    var olivedrab: Double
     
-    var orange: Double = js.native
+    var orange: Double
     
-    var orangered: Double = js.native
+    var orangered: Double
     
-    var orchid: Double = js.native
+    var orchid: Double
     
-    var palegoldenrod: Double = js.native
+    var palegoldenrod: Double
     
-    var palegreen: Double = js.native
+    var palegreen: Double
     
-    var paleturquoise: Double = js.native
+    var paleturquoise: Double
     
-    var palevioletred: Double = js.native
+    var palevioletred: Double
     
-    var papayawhip: Double = js.native
+    var papayawhip: Double
     
-    var peachpuff: Double = js.native
+    var peachpuff: Double
     
-    var peru: Double = js.native
+    var peru: Double
     
-    var pink: Double = js.native
+    var pink: Double
     
-    var plum: Double = js.native
+    var plum: Double
     
-    var powderblue: Double = js.native
+    var powderblue: Double
     
-    var purple: Double = js.native
+    var purple: Double
     
-    var rebeccapurple: Double = js.native
+    var rebeccapurple: Double
     
-    var red: Double = js.native
+    var red: Double
     
-    var rosybrown: Double = js.native
+    var rosybrown: Double
     
-    var royalblue: Double = js.native
+    var royalblue: Double
     
-    var saddlebrown: Double = js.native
+    var saddlebrown: Double
     
-    var salmon: Double = js.native
+    var salmon: Double
     
-    var sandybrown: Double = js.native
+    var sandybrown: Double
     
-    var seagreen: Double = js.native
+    var seagreen: Double
     
-    var seashell: Double = js.native
+    var seashell: Double
     
-    var sienna: Double = js.native
+    var sienna: Double
     
-    var silver: Double = js.native
+    var silver: Double
     
-    var skyblue: Double = js.native
+    var skyblue: Double
     
-    var slateblue: Double = js.native
+    var slateblue: Double
     
-    var slategray: Double = js.native
+    var slategray: Double
     
-    var slategrey: Double = js.native
+    var slategrey: Double
     
-    var snow: Double = js.native
+    var snow: Double
     
-    var springgreen: Double = js.native
+    var springgreen: Double
     
-    var steelblue: Double = js.native
+    var steelblue: Double
     
-    var tan: Double = js.native
+    var tan: Double
     
-    var teal: Double = js.native
+    var teal: Double
     
-    var thistle: Double = js.native
+    var thistle: Double
     
-    var tomato: Double = js.native
+    var tomato: Double
     
-    var transparent: Double = js.native
+    var transparent: Double
     
-    var turquoise: Double = js.native
+    var turquoise: Double
     
-    var violet: Double = js.native
+    var violet: Double
     
-    var wheat: Double = js.native
+    var wheat: Double
     
-    var white: Double = js.native
+    var white: Double
     
-    var whitesmoke: Double = js.native
+    var whitesmoke: Double
     
-    var yellow: Double = js.native
+    var yellow: Double
     
-    var yellowgreen: Double = js.native
+    var yellowgreen: Double
   }
   object Aliceblue {
     
@@ -930,22 +928,21 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply[In, Out](source: OneOrMore[FluidValue[_, _]], args: InterpolatorArgs[In, Out]): FluidValue[Out, _] = js.native
+    def apply[In, Out](source: OneOrMore[FluidValue[js.Any, js.Any]], args: InterpolatorArgs[In, Out]): FluidValue[Out, js.Any] = js.native
   }
   
   @js.native
   trait FnCallSourceArgs extends StObject {
     
     def apply[In, Out](
-      source: OneOrMore[FluidValue[_, _]],
+      source: OneOrMore[FluidValue[js.Any, js.Any]],
       args: typings.reactSpringShared.esmTypesMod.InterpolatorArgs[In, Out]
-    ): FluidValue[Out, _] = js.native
+    ): FluidValue[Out, js.Any] = js.native
   }
   
-  @js.native
   trait ForEach extends StObject {
     
-    var forEach: js.UndefOr[js.Function] = js.native
+    var forEach: js.UndefOr[js.Function] = js.undefined
   }
   object ForEach {
     

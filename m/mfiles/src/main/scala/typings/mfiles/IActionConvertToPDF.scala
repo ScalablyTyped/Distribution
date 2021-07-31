@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionConvertToPDF extends StObject {
   
-  def Clone(): IActionConvertToPDF = js.native
+  def Clone(): IActionConvertToPDF
   
-  var FailOnUnsupportedSourceFiles: Boolean = js.native
+  var FailOnUnsupportedSourceFiles: Boolean
   
-  var OverwriteExistingFile: Boolean = js.native
+  var OverwriteExistingFile: Boolean
   
-  var PDFA1b: Boolean = js.native
+  var PDFA1b: Boolean
   
-  var StoreAsSeparateFile: Boolean = js.native
+  var StoreAsSeparateFile: Boolean
 }
 object IActionConvertToPDF {
   

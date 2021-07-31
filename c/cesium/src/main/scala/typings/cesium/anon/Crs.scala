@@ -3,45 +3,43 @@ package typings.cesium.anon
 import typings.cesium.mod.GetFeatureInfoFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crs extends StObject {
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var crs: js.UndefOr[String] = js.native
+  var crs: js.UndefOr[String] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var enablePickFeatures: js.UndefOr[Boolean] = js.native
+  var enablePickFeatures: js.UndefOr[Boolean] = js.undefined
   
-  var getFeatureInfoFormats: js.UndefOr[js.Array[GetFeatureInfoFormat]] = js.native
+  var getFeatureInfoFormats: js.UndefOr[js.Array[GetFeatureInfoFormat]] = js.undefined
   
-  var getFeatureInfoParameters: js.UndefOr[js.Any] = js.native
+  var getFeatureInfoParameters: js.UndefOr[js.Any] = js.undefined
   
-  var layers: String = js.native
+  var layers: String
   
-  var maximumLevel: js.UndefOr[Double] = js.native
+  var maximumLevel: js.UndefOr[Double] = js.undefined
   
-  var minimumLevel: js.UndefOr[Double] = js.native
+  var minimumLevel: js.UndefOr[Double] = js.undefined
   
-  var parameters: js.UndefOr[js.Any] = js.native
+  var parameters: js.UndefOr[js.Any] = js.undefined
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var srs: js.UndefOr[String] = js.native
+  var srs: js.UndefOr[String] = js.undefined
   
-  var subdomains: js.UndefOr[String | js.Array[String]] = js.native
+  var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Crs {
   

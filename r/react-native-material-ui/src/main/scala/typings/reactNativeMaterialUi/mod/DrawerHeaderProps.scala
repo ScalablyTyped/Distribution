@@ -5,19 +5,17 @@ import typings.reactNative.mod.Image
 import typings.reactNativeMaterialUi.anon.ContainerContentContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerHeaderProps extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[Element] = js.native
+  var children: js.UndefOr[Element] = js.undefined
   
-  var image: js.UndefOr[js.Array[Image]] = js.native
+  var image: js.UndefOr[js.Array[Image]] = js.undefined
   
-  var style: js.UndefOr[ContainerContentContainer] = js.native
+  var style: js.UndefOr[ContainerContentContainer] = js.undefined
 }
 object DrawerHeaderProps {
   

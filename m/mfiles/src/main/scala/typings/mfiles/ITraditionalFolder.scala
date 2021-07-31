@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITraditionalFolder extends StObject {
   
-  val ID: Double = js.native
+  val ID: Double
   
-  val Name: String = js.native
+  val Name: String
 }
 object ITraditionalFolder {
   

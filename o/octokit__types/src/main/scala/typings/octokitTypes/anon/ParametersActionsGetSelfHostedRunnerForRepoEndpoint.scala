@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsGetSelfHostedRunnerForRepoRespon
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsGetSelfHostedRunnerForRepoEndpoint extends StObject {
   
-  var parameters: ActionsGetSelfHostedRunnerForRepoEndpoint = js.native
+  var parameters: ActionsGetSelfHostedRunnerForRepoEndpoint
   
-  var request: ActionsGetSelfHostedRunnerForRepoRequestOptions = js.native
+  var request: ActionsGetSelfHostedRunnerForRepoRequestOptions
   
-  var response: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData] = js.native
+  var response: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]
 }
 object ParametersActionsGetSelfHostedRunnerForRepoEndpoint {
   

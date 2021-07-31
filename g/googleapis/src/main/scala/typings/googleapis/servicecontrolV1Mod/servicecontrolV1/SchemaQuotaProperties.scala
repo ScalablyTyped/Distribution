@@ -2,19 +2,17 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the properties needed for quota operations.
   */
-@js.native
 trait SchemaQuotaProperties extends StObject {
   
   /**
     * Quota mode for this operation.
     */
-  var quotaMode: js.UndefOr[String] = js.native
+  var quotaMode: js.UndefOr[String] = js.undefined
 }
 object SchemaQuotaProperties {
   

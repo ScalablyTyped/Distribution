@@ -4,7 +4,6 @@ import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.rendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legendPluginMod {
@@ -37,12 +36,11 @@ object legendPluginMod {
     var onRendererBeginPage: js.Any = js.native
   }
   
-  @js.native
   trait LegendItem extends StObject {
     
-    var classes: js.Array[String] = js.native
+    var classes: js.Array[String]
     
-    var name: String = js.native
+    var name: String
   }
   object LegendItem {
     

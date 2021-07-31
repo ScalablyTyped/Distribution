@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headers extends StObject {
   
   /**
     * A list of HTTP header names.
     */
-  var Items: js.UndefOr[HeaderList] = js.native
+  var Items: js.UndefOr[HeaderList] = js.undefined
   
   /**
     * The number of header names in the Items list.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object Headers {
   

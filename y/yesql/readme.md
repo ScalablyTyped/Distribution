@@ -11,8 +11,8 @@ Read named SQL statements from .sql files. Also named parameters for prepared st
 | Full name          | yesql |
 | Keywords           | sql, named, parameter, prepared, statement, pg, postgres, node-pg, node-postgres, mysql, pokemon, hack, growth |
 | # releases         | 7 |
-| # dependents       | 11 |
-| # downloads        | 95051 |
+| # dependents       | 12 |
+| # downloads        | 158706 |
 | # stars            | 1 |
 
 ## Links

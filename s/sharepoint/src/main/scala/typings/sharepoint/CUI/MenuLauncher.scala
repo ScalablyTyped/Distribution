@@ -2,12 +2,11 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuLauncher
-  extends Control
+  extends StObject
+     with Control
      with IModalController
 object MenuLauncher {
   

@@ -6,7 +6,6 @@ import typings.reactNativeFirebaseApp.anon.SDKVERSION
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeFirebase {
@@ -31,25 +30,24 @@ object ReactNativeFirebase {
     var native: js.Any = js.native
   }
   
-  @js.native
   trait FirebaseApp extends StObject {
     
     /**
       * Make this app unusable and free up resources.
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * The name (identifier) for this App. '[DEFAULT]' is the default App.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The (read-only) configuration options from the app initialization.
       */
-    val options: FirebaseAppOptions = js.native
+    val options: FirebaseAppOptions
     
-    def utils(): typings.reactNativeFirebaseApp.mod.Utils_.Module = js.native
+    def utils(): typings.reactNativeFirebaseApp.mod.Utils_.Module
   }
   object FirebaseApp {
     
@@ -81,24 +79,23 @@ object ReactNativeFirebase {
     }
   }
   
-  @js.native
   trait FirebaseAppConfig extends StObject {
     
     /**
       *
       */
-    var automaticDataCollectionEnabled: js.UndefOr[Boolean] = js.native
+    var automaticDataCollectionEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true it indicates that Firebase should close database connections
       * automatically when the app is in the background. Disabled by default.
       */
-    var automaticResourceManagement: js.UndefOr[Boolean] = js.native
+    var automaticResourceManagement: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Firebase App name, defaults to [DEFAULT] if none provided.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object FirebaseAppConfig {
     
@@ -131,63 +128,63 @@ object ReactNativeFirebase {
     }
   }
   
-  @js.native
   trait FirebaseAppOptions
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
     /**
       * iOS only - The Android client ID used in Google AppInvite when an iOS app has its Android version, for
       * example "12345.apps.googleusercontent.com".
       */
-    var androidClientId: js.UndefOr[String] = js.native
+    var androidClientId: js.UndefOr[String] = js.undefined
     
     /**
       * An API key used for authenticating requests from your app, e.g.
       * "AIzaSyDdVgKwhZl0sTTTLZ7iTmt1r3N2cJLnaDk", used to identify your app to Google servers.
       */
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
     /**
       * The Google App ID that is used to uniquely identify an instance of an app.
       */
-    var appId: String = js.native
+    var appId: String
     
     /**
       * iOS only - The OAuth2 client ID for iOS application used to authenticate Google users, for example
       * "12345.apps.googleusercontent.com", used for signing in with Google.
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * The database root URL, e.g. "http://abc-xyz-123.firebaseio.com".
       */
-    var databaseURL: js.UndefOr[String] = js.native
+    var databaseURL: js.UndefOr[String] = js.undefined
     
     /**
       * iOS only - The URL scheme used to set up Durable Deep Link service.
       */
-    var deepLinkURLScheme: js.UndefOr[String] = js.native
+    var deepLinkURLScheme: js.UndefOr[String] = js.undefined
     
     /**
       * The tracking ID for Google Analytics, e.g. "UA-12345678-1", used to configure Google Analytics.
       */
-    var gaTrackingId: js.UndefOr[String] = js.native
+    var gaTrackingId: js.UndefOr[String] = js.undefined
     
     /**
       * The Project Number from the Google Developer's console, for example "012345678901", used to
       * configure Google Cloud Messaging.
       */
-    var messagingSenderId: js.UndefOr[String] = js.native
+    var messagingSenderId: js.UndefOr[String] = js.undefined
     
     /**
       * The Project ID from the Firebase console, for example "abc-xyz-123".
       */
-    var projectId: String = js.native
+    var projectId: String
     
     /**
       * The Google Cloud Storage bucket name, e.g. "abc-xyz-123.storage.firebase.com".
       */
-    var storageBucket: js.UndefOr[String] = js.native
+    var storageBucket: js.UndefOr[String] = js.undefined
   }
   object FirebaseAppOptions {
     
@@ -256,12 +253,11 @@ object ReactNativeFirebase {
     }
   }
   
-  @js.native
   trait FirebaseJsonConfig extends StObject
   
-  type FirebaseModuleWithStatics[M, S] = Call[M] with S
+  type FirebaseModuleWithStatics[M, S] = Call[M] & S
   
-  type FirebaseModuleWithStaticsAndApp[M, S] = SDKVERSION[M] with S
+  type FirebaseModuleWithStaticsAndApp[M, S] = SDKVERSION[M] & S
   
   @js.native
   trait Module extends StObject {
@@ -307,28 +303,29 @@ object ReactNativeFirebase {
     var utils: typings.reactNativeFirebaseApp.anon.FirebaseModuleWithStatics = js.native
   }
   
-  @js.native
-  trait NativeFirebaseError extends Error {
+  trait NativeFirebaseError
+    extends StObject
+       with Error {
     
     /**
       * Firebase error code, e.g. `auth/invalid-email`
       */
-    val code: String = js.native
+    val code: String
     
     /**
       * The firebase module namespace that this error originated from, e.g. 'analytics'
       */
-    val namespace: String = js.native
+    val namespace: String
     
     /**
       * The native sdks returned error code, different per platform
       */
-    val nativeErrorCode: String | Double = js.native
+    val nativeErrorCode: String | Double
     
     /**
       * The native sdks returned error message, different per platform
       */
-    val nativeErrorMessage: String = js.native
+    val nativeErrorMessage: String
   }
   object NativeFirebaseError {
     

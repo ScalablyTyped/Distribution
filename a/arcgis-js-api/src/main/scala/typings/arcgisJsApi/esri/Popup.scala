@@ -12,12 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Popup
-  extends Widget_
+  extends StObject
+     with Widget_
      with GoTo {
   
   /**
@@ -205,7 +205,7 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises)
     */
-  var promises: js.Array[js.Promise[_]] = js.native
+  var promises: js.Array[js.Promise[js.Any]] = js.native
   
   /**
     * Positions the popup on the view.

@@ -5,7 +5,6 @@ import typings.std.HTMLDocument
 import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see Google's [Brand
   * guidelines](https://developers.google.com/pay/api/web/guides/brand-guidelines).
   */
-@js.native
 trait ButtonOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ButtonOptions extends StObject {
     *
     * @default "default"
     */
-  var buttonColor: js.UndefOr[ButtonColor] = js.native
+  var buttonColor: js.UndefOr[ButtonColor] = js.undefined
   
   /**
     * Specifies how to append Google Pay resources, such as `<style>` tags,
@@ -34,7 +32,7 @@ trait ButtonOptions extends StObject {
     *
     * @default document
     */
-  var buttonRootNode: js.UndefOr[HTMLDocument | ShadowRoot] = js.native
+  var buttonRootNode: js.UndefOr[HTMLDocument | ShadowRoot] = js.undefined
   
   /**
     * Determines how the button's size should change relative to the
@@ -42,21 +40,21 @@ trait ButtonOptions extends StObject {
     *
     * @default "static"
     */
-  var buttonSizeMode: js.UndefOr[ButtonSizeMode] = js.native
+  var buttonSizeMode: js.UndefOr[ButtonSizeMode] = js.undefined
   
   /**
     * Specifies the text to be displayed within the Google Pay button.
     *
     * @default "buy"
     */
-  var buttonType: js.UndefOr[ButtonType] = js.native
+  var buttonType: js.UndefOr[ButtonType] = js.undefined
   
   /**
     * An [event listener
     * callback](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#The_event_listener_callback)
     * to call when a click event is delivered to the `<button>` target.
     */
-  def onClick(event: Event): Unit = js.native
+  def onClick(event: Event): Unit
 }
 object ButtonOptions {
   

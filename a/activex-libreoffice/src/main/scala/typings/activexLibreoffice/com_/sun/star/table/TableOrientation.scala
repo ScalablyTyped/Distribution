@@ -4,7 +4,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** used to select whether operations are carried out on columns or rows. */

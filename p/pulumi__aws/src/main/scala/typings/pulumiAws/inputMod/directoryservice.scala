@@ -3,40 +3,38 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directoryservice {
   
-  @js.native
   trait DirectoryConnectSettings extends StObject {
     
-    var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The IP addresses of the AD Connector servers.
       */
-    var connectIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var connectIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The DNS IP addresses of the domain to connect to.
       */
-    var customerDnsIps: Input[js.Array[Input[String]]] = js.native
+    var customerDnsIps: Input[js.Array[Input[String]]]
     
     /**
       * The username corresponding to the password provided.
       */
-    var customerUsername: Input[String] = js.native
+    var customerUsername: Input[String]
     
     /**
       * The identifiers of the subnets for the directory servers (2 subnets in 2 different AZs).
       */
-    var subnetIds: Input[js.Array[Input[String]]] = js.native
+    var subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * The identifier of the VPC that the directory is in.
       */
-    var vpcId: Input[String] = js.native
+    var vpcId: Input[String]
   }
   object DirectoryConnectSettings {
     
@@ -92,20 +90,19 @@ object directoryservice {
     }
   }
   
-  @js.native
   trait DirectoryVpcSettings extends StObject {
     
-    var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The identifiers of the subnets for the directory servers (2 subnets in 2 different AZs).
       */
-    var subnetIds: Input[js.Array[Input[String]]] = js.native
+    var subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * The identifier of the VPC that the directory is in.
       */
-    var vpcId: Input[String] = js.native
+    var vpcId: Input[String]
   }
   object DirectoryVpcSettings {
     

@@ -16,89 +16,87 @@ import typings.reactVirtualized.mod.OverscanIndexRange
 import typings.reactVirtualized.mod.ScrollEventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var `aria-label`: Requireable[String] = js.native
+  var `aria-label`: Requireable[String]
   
-  var autoHeight: Requireable[Boolean] = js.native
+  var autoHeight: Requireable[Boolean]
   
-  var children: Validator[Column] = js.native
+  var children: Validator[Column]
   
-  var className: Requireable[String] = js.native
+  var className: Requireable[String]
   
-  var disableHeader: Requireable[Boolean] = js.native
+  var disableHeader: Requireable[Boolean]
   
-  var estimatedRowSize: Validator[Double] = js.native
+  var estimatedRowSize: Validator[Double]
   
-  var gridClassName: Requireable[String] = js.native
+  var gridClassName: Requireable[String]
   
-  var gridStyle: Requireable[CSSProperties] = js.native
+  var gridStyle: Requireable[CSSProperties]
   
-  var headerClassName: Requireable[String] = js.native
+  var headerClassName: Requireable[String]
   
-  var headerHeight: Validator[Double] = js.native
+  var headerHeight: Validator[Double]
   
-  var headerRowRenderer: Requireable[TableHeaderRowRenderer] = js.native
+  var headerRowRenderer: Requireable[TableHeaderRowRenderer]
   
-  var headerStyle: Requireable[CSSProperties] = js.native
+  var headerStyle: Requireable[CSSProperties]
   
-  var height: Validator[Double] = js.native
+  var height: Validator[Double]
   
-  var id: Requireable[String] = js.native
+  var id: Requireable[String]
   
-  var noRowsRenderer: Requireable[js.Function0[Element]] = js.native
+  var noRowsRenderer: Requireable[js.Function0[Element]]
   
-  var onHeaderClick: Requireable[js.Function1[/* params */ HeaderMouseEventHandlerParams, Unit]] = js.native
+  var onHeaderClick: Requireable[js.Function1[/* params */ HeaderMouseEventHandlerParams, Unit]]
   
-  var onRowClick: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowClick: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]
   
-  var onRowDoubleClick: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowDoubleClick: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]
   
-  var onRowMouseOut: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowMouseOut: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]
   
-  var onRowMouseOver: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowMouseOver: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]
   
-  var onRowsRendered: Requireable[js.Function1[/* params */ IndexRange with OverscanIndexRange, Unit]] = js.native
+  var onRowsRendered: Requireable[js.Function1[/* params */ IndexRange & OverscanIndexRange, Unit]]
   
-  var onScroll: Requireable[js.Function1[/* params */ ScrollEventData, Unit]] = js.native
+  var onScroll: Requireable[js.Function1[/* params */ ScrollEventData, Unit]]
   
-  var overscanRowCount: Validator[Double] = js.native
+  var overscanRowCount: Validator[Double]
   
-  var rowClassName: Requireable[String | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, String])] = js.native
+  var rowClassName: Requireable[String | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, String])]
   
-  var rowCount: Validator[Double] = js.native
+  var rowCount: Validator[Double]
   
-  var rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, _]] = js.native
+  var rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]]
   
-  var rowHeight: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])] = js.native
+  var rowHeight: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])]
   
-  var rowRenderer: Requireable[js.Function1[/* props */ TableRowProps, ReactNode]] = js.native
+  var rowRenderer: Requireable[js.Function1[/* props */ TableRowProps, ReactNode]]
   
   var rowStyle: Validator[
     CSSProperties | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, CSSProperties])
-  ] = js.native
+  ]
   
-  var scrollToAlignment: Validator[typings.reactVirtualized.mod.Alignment] = js.native
+  var scrollToAlignment: Validator[typings.reactVirtualized.mod.Alignment]
   
-  var scrollToIndex: Validator[Double] = js.native
+  var scrollToIndex: Validator[Double]
   
-  var scrollTop: Requireable[Double] = js.native
+  var scrollTop: Requireable[Double]
   
-  var sort: Requireable[js.Function1[/* params */ SortBy, Unit]] = js.native
+  var sort: Requireable[js.Function1[/* params */ SortBy, Unit]]
   
-  var sortBy: Requireable[String] = js.native
+  var sortBy: Requireable[String]
   
-  var sortDirection: Validator[SortDirectionType] = js.native
+  var sortDirection: Validator[SortDirectionType]
   
-  var style: Requireable[CSSProperties] = js.native
+  var style: Requireable[CSSProperties]
   
-  var tabIndex: Requireable[Double] = js.native
+  var tabIndex: Requireable[Double]
   
-  var width: Validator[Double] = js.native
+  var width: Validator[Double]
 }
 object ClassName {
   
@@ -124,12 +122,12 @@ object ClassName {
     onRowDoubleClick: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]],
     onRowMouseOut: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]],
     onRowMouseOver: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]],
-    onRowsRendered: Requireable[js.Function1[/* params */ IndexRange with OverscanIndexRange, Unit]],
+    onRowsRendered: Requireable[js.Function1[/* params */ IndexRange & OverscanIndexRange, Unit]],
     onScroll: Requireable[js.Function1[/* params */ ScrollEventData, Unit]],
     overscanRowCount: Validator[Double],
     rowClassName: Requireable[String | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, String])],
     rowCount: Validator[Double],
-    rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, _]],
+    rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]],
     rowHeight: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])],
     rowRenderer: Requireable[js.Function1[/* props */ TableRowProps, ReactNode]],
     rowStyle: Validator[
@@ -214,7 +212,7 @@ object ClassName {
     def setOnRowMouseOver(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRowsRendered(value: Requireable[js.Function1[/* params */ IndexRange with OverscanIndexRange, Unit]]): Self = StObject.set(x, "onRowsRendered", value.asInstanceOf[js.Any])
+    def setOnRowsRendered(value: Requireable[js.Function1[/* params */ IndexRange & OverscanIndexRange, Unit]]): Self = StObject.set(x, "onRowsRendered", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnScroll(value: Requireable[js.Function1[/* params */ ScrollEventData, Unit]]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
@@ -231,7 +229,7 @@ object ClassName {
     def setRowCount(value: Validator[Double]): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowGetter(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, _]]): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
+    def setRowGetter(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]]): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowHeight(value: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])

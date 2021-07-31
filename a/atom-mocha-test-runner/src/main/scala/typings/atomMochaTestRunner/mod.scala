@@ -5,7 +5,6 @@ import typings.atom.mod.TestRunner
 import typings.mocha.Mocha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,23 +13,22 @@ object mod extends Shortcut {
   @js.native
   val ^ : TestRunnerExport = js.native
   
-  @js.native
   trait AtomMochaOptions extends StObject {
     
     /** Whether or not to colorize output on the terminal. */
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
     /** Whether or not to assign the created Atom environment to `global.atom`. */
-    var globalAtom: js.UndefOr[Boolean] = js.native
+    var globalAtom: js.UndefOr[Boolean] = js.undefined
     
     /** The string to use for the window title in the HTML reporter. */
-    var htmlTitle: js.UndefOr[String] = js.native
+    var htmlTitle: js.UndefOr[String] = js.undefined
     
     /** Which reporter to use on the terminal. */
-    var reporter: js.UndefOr[String] = js.native
+    var reporter: js.UndefOr[String] = js.undefined
     
     /** File extensions that indicate that the file contains tests. */
-    var testSuffixes: js.UndefOr[js.Array[String]] = js.native
+    var testSuffixes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AtomMochaOptions {
     
@@ -88,7 +86,7 @@ object mod extends Shortcut {
   trait TestRunnerExport extends TestRunner {
     
     def createRunner(): TestRunner = js.native
-    def createRunner(options: js.UndefOr[scala.Nothing], mochaConfigFunction: js.Function1[/* mocha */ Mocha, Unit]): TestRunner = js.native
+    def createRunner(options: Unit, mochaConfigFunction: js.Function1[/* mocha */ Mocha, Unit]): TestRunner = js.native
     def createRunner(options: AtomMochaOptions): TestRunner = js.native
     def createRunner(options: AtomMochaOptions, mochaConfigFunction: js.Function1[/* mocha */ Mocha, Unit]): TestRunner = js.native
   }

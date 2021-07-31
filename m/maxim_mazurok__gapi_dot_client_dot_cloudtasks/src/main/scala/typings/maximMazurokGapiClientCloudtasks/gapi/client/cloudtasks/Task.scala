@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Task extends StObject {
   
   /** HTTP request that is sent to the App Engine app handler. An App Engine task is a task that has AppEngineHttpRequest set. */
-  var appEngineHttpRequest: js.UndefOr[AppEngineHttpRequest] = js.native
+  var appEngineHttpRequest: js.UndefOr[AppEngineHttpRequest] = js.undefined
   
   /** Output only. The time that the task was created. `create_time` will be truncated to the nearest second. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of attempts dispatched. This count includes attempts which have been dispatched but haven't received a response. */
-  var dispatchCount: js.UndefOr[Double] = js.native
+  var dispatchCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The deadline for requests sent to the worker. If the worker does not respond by this deadline then the request is cancelled and the attempt is marked as a `DEADLINE_EXCEEDED`
@@ -29,16 +27,16 @@ trait Task extends StObject {
     * [Timeouts](https://cloud.google.com/tasks/docs/creating-appengine-handlers#timeouts). `dispatch_deadline` will be truncated to the nearest millisecond. The deadline is an
     * approximate deadline.
     */
-  var dispatchDeadline: js.UndefOr[String] = js.native
+  var dispatchDeadline: js.UndefOr[String] = js.undefined
   
   /** Output only. The status of the task's first attempt. Only dispatch_time will be set. The other Attempt information is not retained by Cloud Tasks. */
-  var firstAttempt: js.UndefOr[Attempt] = js.native
+  var firstAttempt: js.UndefOr[Attempt] = js.undefined
   
   /** HTTP request that is sent to the worker. An HTTP task is a task that has HttpRequest set. */
-  var httpRequest: js.UndefOr[HttpRequest] = js.native
+  var httpRequest: js.UndefOr[HttpRequest] = js.undefined
   
   /** Output only. The status of the task's last attempt. */
-  var lastAttempt: js.UndefOr[Attempt] = js.native
+  var lastAttempt: js.UndefOr[Attempt] = js.undefined
   
   /**
     * Optionally caller-specified in CreateTask. The task name. The task name must have the following format: `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID` *
@@ -48,16 +46,16 @@ trait Task extends StObject {
     * numbers ([0-9]), or hyphens (-). The maximum length is 100 characters. * `TASK_ID` can contain only letters ([A-Za-z]), numbers ([0-9]), hyphens (-), or underscores (_). The maximum
     * length is 500 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of attempts which have received a response. */
-  var responseCount: js.UndefOr[Double] = js.native
+  var responseCount: js.UndefOr[Double] = js.undefined
   
   /** The time when the task is scheduled to be attempted or retried. `schedule_time` will be truncated to the nearest microsecond. */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The view specifies which subset of the Task has been returned. */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object Task {
   

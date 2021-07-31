@@ -2,35 +2,33 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Linethickness extends StObject {
   
-  var line: Double = js.native
+  var line: Double
   
-  var line_thickness: js.Any = js.native
+  var line_thickness: js.Any
   
-  var number_glyph_point: js.Any = js.native
+  var number_glyph_point: js.Any
   
-  var number_line: Double = js.native
+  var number_line: Double
   
-  var padding_left: js.Any = js.native
+  var padding_left: js.Any
   
-  var padding_right: js.Any = js.native
+  var padding_right: js.Any
   
-  var semibrave_rest_glyph_scale: Double = js.native
+  var semibrave_rest_glyph_scale: Double
   
-  var serif_thickness: Double = js.native
+  var serif_thickness: Double
   
-  var show_number: Boolean = js.native
+  var show_number: Boolean
   
-  var spacing_between_lines_px: Double = js.native
+  var spacing_between_lines_px: Double
   
-  var symbol_spacing: js.Any = js.native
+  var symbol_spacing: js.Any
   
-  var use_symbols: Boolean = js.native
+  var use_symbols: Boolean
 }
 object Linethickness {
   

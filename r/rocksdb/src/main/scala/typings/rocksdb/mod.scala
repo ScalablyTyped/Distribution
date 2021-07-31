@@ -26,7 +26,6 @@ import typings.rocksdb.mod.RocksDB.PutOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,7 +35,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rocksdb", JSImport.Default)
     @js.native
-    class ^ protected () extends RocksDB {
+    class ^ protected ()
+      extends StObject
+         with RocksDB {
       def this(location: String) = this()
     }
     
@@ -51,11 +52,13 @@ object mod {
   }
   
   @js.native
-  trait RocksDB extends AbstractLevelDOWN[Bytes, Bytes] {
+  trait RocksDB
+    extends StObject
+       with AbstractLevelDOWN[Bytes, Bytes] {
     
     def approximateSize(start: Bytes, end: Bytes, cb: ErrorSizeCallback): Unit = js.native
     
-    def batch(array: js.Array[AbstractBatch[_, _]], options: BatchOptions, cb: ErrorCallback): AbstractChainedBatch[Bytes, Bytes] = js.native
+    def batch(array: js.Array[AbstractBatch[js.Any, js.Any]], options: BatchOptions, cb: ErrorCallback): AbstractChainedBatch[Bytes, Bytes] = js.native
     
     def compactRange(start: Bytes, end: Bytes, cb: ErrorCallback): Unit = js.native
     
@@ -75,10 +78,11 @@ object mod {
   }
   object RocksDB {
     
-    @js.native
-    trait BatchOptions extends AbstractOptions {
+    trait BatchOptions
+      extends StObject
+         with AbstractOptions {
       
-      var sync: js.UndefOr[Boolean] = js.native
+      var sync: js.UndefOr[Boolean] = js.undefined
     }
     object BatchOptions {
       
@@ -102,15 +106,18 @@ object mod {
     type Bytes = String | Buffer
     
     @js.native
-    trait Constructor extends Instantiable1[/* location */ String, RocksDB] {
+    trait Constructor
+      extends StObject
+         with Instantiable1[/* location */ String, RocksDB] {
       
       def apply(location: String): RocksDB = js.native
     }
     
-    @js.native
-    trait DelOptions extends AbstractOptions {
+    trait DelOptions
+      extends StObject
+         with AbstractOptions {
       
-      var sync: js.UndefOr[Boolean] = js.native
+      var sync: js.UndefOr[Boolean] = js.undefined
     }
     object DelOptions {
       
@@ -133,10 +140,11 @@ object mod {
     
     type ErrorSizeCallback = js.Function2[/* err */ js.UndefOr[Error], /* size */ Double, Unit]
     
-    @js.native
-    trait GetOptions extends AbstractGetOptions {
+    trait GetOptions
+      extends StObject
+         with AbstractGetOptions {
       
-      var fillCache: js.UndefOr[Boolean] = js.native
+      var fillCache: js.UndefOr[Boolean] = js.undefined
     }
     object GetOptions {
       
@@ -157,18 +165,19 @@ object mod {
       }
     }
     
-    @js.native
-    trait Iterator extends AbstractIterator[Bytes, Bytes] {
+    trait Iterator
+      extends StObject
+         with AbstractIterator[Bytes, Bytes] {
       
-      var binding: js.Any = js.native
+      var binding: js.Any
       
-      var cache: js.Any = js.native
+      var cache: js.Any
       
-      var fastFuture: js.Any = js.native
+      var fastFuture: js.Any
       
-      var finished: js.Any = js.native
+      var finished: js.Any
       
-      def seek(key: Bytes): Unit = js.native
+      def seek(key: Bytes): Unit
     }
     object Iterator {
       
@@ -207,10 +216,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait IteratorOptions extends AbstractIteratorOptions[Bytes] {
+    trait IteratorOptions
+      extends StObject
+         with AbstractIteratorOptions[Bytes] {
       
-      var fillCache: js.UndefOr[Boolean] = js.native
+      var fillCache: js.UndefOr[Boolean] = js.undefined
     }
     object IteratorOptions {
       
@@ -234,10 +244,11 @@ object mod {
     // tslint:disable-next-line:no-empty-interface
     type OpenOptions = AbstractOpenOptions
     
-    @js.native
-    trait PutOptions extends AbstractOptions {
+    trait PutOptions
+      extends StObject
+         with AbstractOptions {
       
-      var sync: js.UndefOr[Boolean] = js.native
+      var sync: js.UndefOr[Boolean] = js.undefined
     }
     object PutOptions {
       

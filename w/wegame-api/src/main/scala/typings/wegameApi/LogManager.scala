@@ -2,7 +2,6 @@ package typings.wegameApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,32 +11,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 开发者可以通过小程序管理后台左侧菜单“反馈管理”页面查看相关打印日志。
   * 基础库默认会把 App、Page 的生命周期函数和 wx 命名空间下的函数调用写入日志。
   */
-@js.native
 trait LogManager extends StObject {
   
   /**
     * 写debug日志
     * @param args 要记录的日志内容
     */
-  def debug(args: js.Any*): Unit = js.native
+  def debug(args: js.Any*): Unit
   
   /**
     * 写info日志
     * @param args 要记录的日志内容
     */
-  def info(args: js.Any*): Unit = js.native
+  def info(args: js.Any*): Unit
   
   /**
     * 写log日志
     * @param args 要记录的日志内容
     */
-  def log(args: js.Any*): Unit = js.native
+  def log(args: js.Any*): Unit
   
   /**
     * 写warn日志
     * @param args 要记录的日志内容
     */
-  def warn(args: js.Any*): Unit = js.native
+  def warn(args: js.Any*): Unit
 }
 object LogManager {
   

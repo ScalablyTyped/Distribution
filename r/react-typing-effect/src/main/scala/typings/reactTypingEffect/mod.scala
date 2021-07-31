@@ -3,7 +3,6 @@ package typings.reactTypingEffect
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,26 +14,25 @@ object mod {
   
   type ReactTypingEffect = Component[ReactTypingEffectProps, js.Object, js.Any]
   
-  @js.native
   trait ReactTypingEffectProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var cursorClassName: js.UndefOr[String] = js.native
+    var cursorClassName: js.UndefOr[String] = js.undefined
     
-    var eraseDelay: js.UndefOr[Double] = js.native
+    var eraseDelay: js.UndefOr[Double] = js.undefined
     
-    var eraseSpeed: js.UndefOr[Double] = js.native
+    var eraseSpeed: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var staticText: js.UndefOr[String] = js.native
+    var staticText: js.UndefOr[String] = js.undefined
     
-    var text: String | js.Array[String] = js.native
+    var text: String | js.Array[String]
     
-    var typingDelay: js.UndefOr[Double] = js.native
+    var typingDelay: js.UndefOr[Double] = js.undefined
   }
   object ReactTypingEffectProps {
     

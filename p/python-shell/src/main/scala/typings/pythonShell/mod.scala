@@ -4,10 +4,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("python-shell", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("python-shell", "PythonShell")
   @js.native
@@ -23,40 +26,37 @@ object mod {
     def send(message: js.Any): Unit = js.native
   }
   
-  @JSImport("python-shell", "run")
-  @js.native
+  @scala.inline
   def run(
     scriptName: String,
     RunOptions: RunOptions,
     callback: js.Function2[/* err */ Error, /* results */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
-  @JSImport("python-shell", "run")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptName.asInstanceOf[js.Any], RunOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def run(
     scriptName: String,
     callback: js.Function2[/* err */ Error, /* results */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait InstanceOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var childProcess: js.UndefOr[String] = js.native
+    var childProcess: js.UndefOr[String] = js.undefined
     
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
-    var exitCode: js.UndefOr[js.Any] = js.native
+    var exitCode: js.UndefOr[js.Any] = js.undefined
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var stderr: js.UndefOr[js.Any] = js.native
+    var stderr: js.UndefOr[js.Any] = js.undefined
     
-    var stdin: js.UndefOr[js.Any] = js.native
+    var stdin: js.UndefOr[js.Any] = js.undefined
     
-    var stdout: js.UndefOr[js.Any] = js.native
+    var stdout: js.UndefOr[js.Any] = js.undefined
     
-    var terminated: js.UndefOr[js.Any] = js.native
+    var terminated: js.UndefOr[js.Any] = js.undefined
   }
   object InstanceOptions {
     
@@ -70,7 +70,7 @@ object mod {
     implicit class InstanceOptionsMutableBuilder[Self <: InstanceOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -128,24 +128,23 @@ object mod {
     }
   }
   
-  @js.native
   trait RunOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[String] = js.native
+    var formatter: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
-    var pythonOptions: js.UndefOr[js.Array[String]] = js.native
+    var pythonOptions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pythonPath: js.UndefOr[String] = js.native
+    var pythonPath: js.UndefOr[String] = js.undefined
     
-    var scriptPath: js.UndefOr[String] = js.native
+    var scriptPath: js.UndefOr[String] = js.undefined
   }
   object RunOptions {
     

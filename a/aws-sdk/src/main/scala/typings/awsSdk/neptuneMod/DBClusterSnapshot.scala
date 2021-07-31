@@ -2,111 +2,109 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterSnapshot extends StObject {
   
   /**
     * Specifies the allocated storage size in gibibytes (GiB).
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.native
+  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
     * Provides the list of EC2 Availability Zones that instances in the DB cluster snapshot can be restored in.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.neptuneMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.neptuneMod.AvailabilityZones] = js.undefined
   
   /**
     * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.native
+  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the DB cluster snapshot.
     */
-  var DBClusterSnapshotArn: js.UndefOr[String] = js.native
+  var DBClusterSnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the identifier for a DB cluster snapshot. Must match the identifier of an existing snapshot. After you restore a DB cluster using a DBClusterSnapshotIdentifier, you must specify the same DBClusterSnapshotIdentifier for any future updates to the DB cluster. When you specify this property for an update, the DB cluster is not restored from the snapshot again, and the data in the database is not changed. However, if you don't specify the DBClusterSnapshotIdentifier, an empty DB cluster is created, and the original DB cluster is deleted. If you specify a property that is different from the previous snapshot restore property, the DB cluster is restored from the snapshot specified by the DBClusterSnapshotIdentifier, and the original DB cluster is deleted.
     */
-  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.native
+  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the database engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the version of the database engine for this DB cluster snapshot.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
-  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
+  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the license model information for this DB cluster snapshot.
     */
-  var LicenseModel: js.UndefOr[String] = js.native
+  var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the master username for the DB cluster snapshot.
     */
-  var MasterUsername: js.UndefOr[String] = js.native
+  var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the percentage of the estimated data that has been transferred.
     */
-  var PercentProgress: js.UndefOr[Integer] = js.native
+  var PercentProgress: js.UndefOr[Integer] = js.undefined
   
   /**
     * Specifies the port that the DB cluster was listening on at the time of the snapshot.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
+  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Provides the type of the DB cluster snapshot.
     */
-  var SnapshotType: js.UndefOr[String] = js.native
+  var SnapshotType: js.UndefOr[String] = js.undefined
   
   /**
     * If the DB cluster snapshot was copied from a source DB cluster snapshot, the Amazon Resource Name (ARN) for the source DB cluster snapshot, otherwise, a null value.
     */
-  var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.native
+  var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the status of this DB cluster snapshot.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the DB cluster snapshot is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provides the VPC ID associated with the DB cluster snapshot.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object DBClusterSnapshot {
   

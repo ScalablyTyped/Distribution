@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,26 +20,25 @@ object mod {
   
   type IDictionary[T] = StringDictionary[T]
   
-  @js.native
   trait IPath extends StObject {
     
-    var core: IPathCore = js.native
+    var core: IPathCore
     
-    def dispatch(passed_route: String): Unit = js.native
+    def dispatch(passed_route: String): Unit
     
-    var history: IPathHistory = js.native
+    var history: IPathHistory
     
-    def listen(): Unit = js.native
+    def listen(): Unit
     
-    def map(path: String): IPathRoute = js.native
+    def map(path: String): IPathRoute
     
-    def `match`(path: String, parameterize: Boolean): IPathRoute | Null = js.native
+    def `match`(path: String, parameterize: Boolean): IPathRoute | Null
     
-    def rescue(fn: js.Function): Unit = js.native
+    def rescue(fn: js.Function): Unit
     
-    def root(path: String): Unit = js.native
+    def root(path: String): Unit
     
-    var routes: IPathRoutes = js.native
+    var routes: IPathRoutes
   }
   object IPath {
     
@@ -93,10 +91,9 @@ object mod {
     }
   }
   
-  @js.native
   trait IPathCore extends StObject {
     
-    var route: IPathRouteConstructor = js.native
+    var route: IPathRouteConstructor
   }
   object IPathCore {
     
@@ -114,16 +111,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IPathHistory extends StObject {
     
-    var initial: js.Any = js.native
+    var initial: js.Any
     
-    def listen(fallback: js.Any): Unit = js.native
+    def listen(fallback: js.Any): Unit
     
-    def popState(event: js.Any): Unit = js.native
+    def popState(event: js.Any): Unit
     
-    def pushState(state: js.Any, title: String, path: String): Unit = js.native
+    def pushState(state: js.Any, title: String, path: String): Unit
   }
   object IPathHistory {
     
@@ -171,20 +167,21 @@ object mod {
   }
   
   @js.native
-  trait IPathRouteConstructor extends Instantiable1[/* path */ String, IPathRoute]
+  trait IPathRouteConstructor
+    extends StObject
+       with Instantiable1[/* path */ String, IPathRoute]
   
-  @js.native
   trait IPathRoutes extends StObject {
     
-    var current: js.UndefOr[String] = js.native
+    var current: js.UndefOr[String] = js.undefined
     
-    var defined: IDictionary[IPathRoute] = js.native
+    var defined: IDictionary[IPathRoute]
     
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
     
-    var rescue: js.UndefOr[js.Function] = js.native
+    var rescue: js.UndefOr[js.Function] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object IPathRoutes {
     

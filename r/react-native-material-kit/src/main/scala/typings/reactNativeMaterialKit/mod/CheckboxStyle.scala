@@ -2,21 +2,19 @@ package typings.reactNativeMaterialKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxStyle extends StObject {
   
-  var borderOffColor: js.UndefOr[String] = js.native
+  var borderOffColor: js.UndefOr[String] = js.undefined
   
-  var borderOnColor: js.UndefOr[String] = js.native
+  var borderOnColor: js.UndefOr[String] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[Double] = js.native
+  var inset: js.UndefOr[Double] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
 }
 object CheckboxStyle {
   

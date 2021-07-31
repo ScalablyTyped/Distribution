@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectInboxFeedResponseMedia extends StObject {
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var user: DirectInboxFeedResponseUser = js.native
+  var user: DirectInboxFeedResponseUser
 }
 object DirectInboxFeedResponseMedia {
   

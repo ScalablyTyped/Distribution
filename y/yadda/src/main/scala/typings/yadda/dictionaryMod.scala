@@ -4,14 +4,15 @@ import typings.std.RegExp
 import typings.yadda.libMod.Converter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dictionaryMod {
   
   @JSImport("yadda/lib/Dictionary", JSImport.Namespace)
   @js.native
-  class ^ () extends Dictionary {
+  class ^ ()
+    extends StObject
+       with Dictionary {
     def this(prefix: String) = this()
   }
   

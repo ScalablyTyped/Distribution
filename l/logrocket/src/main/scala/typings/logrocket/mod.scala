@@ -10,7 +10,6 @@ import typings.logrocket.mod.LR.LogRocket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,12 +22,11 @@ object mod extends Shortcut {
     
     type Action = StringDictionary[js.Any]
     
-    @js.native
     trait ICaptureOptions extends StObject {
       
-      var extra: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
+      var extra: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
       
-      var tags: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
+      var tags: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
     }
     object ICaptureOptions {
       
@@ -55,41 +53,40 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait IOptions extends StObject {
       
-      var browser: js.UndefOr[UrlSanitizer] = js.native
+      var browser: js.UndefOr[UrlSanitizer] = js.undefined
       
-      var console: js.UndefOr[IsEnabled] = js.native
+      var console: js.UndefOr[IsEnabled] = js.undefined
       
-      var dom: js.UndefOr[BaseHref] = js.native
+      var dom: js.UndefOr[BaseHref] = js.undefined
       
       /** Convenience option for configuring the SDK for an on-prem install. Include the protocol (eg. https://ingest.example.com) **/
-      var ingestServer: js.UndefOr[String] = js.native
+      var ingestServer: js.UndefOr[String] = js.undefined
       
-      var mergeIframes: js.UndefOr[Boolean] = js.native
+      var mergeIframes: js.UndefOr[Boolean] = js.undefined
       
-      var network: js.UndefOr[RequestSanitizer] = js.native
+      var network: js.UndefOr[RequestSanitizer] = js.undefined
       
-      var release: js.UndefOr[String] = js.native
+      var release: js.UndefOr[String] = js.undefined
       
       /**
         * Enable sharing sessions across subdomains by setting this to the top-level hostname.
         **/
-      var rootHostname: js.UndefOr[String] = js.native
+      var rootHostname: js.UndefOr[String] = js.undefined
       
       /** Convenience option for configuring where the full SDK should be loaded from for on-prem installs. **/
-      var sdkServer: js.UndefOr[String] = js.native
+      var sdkServer: js.UndefOr[String] = js.undefined
       
       /** Controls collection of IP addresses and related features, such as GeoIP **/
-      var shouldCaptureIP: js.UndefOr[Boolean] = js.native
+      var shouldCaptureIP: js.UndefOr[Boolean] = js.undefined
       
-      var shouldDebugLog: js.UndefOr[Boolean] = js.native
+      var shouldDebugLog: js.UndefOr[Boolean] = js.undefined
       
       /** a callback which determines whether to send data at a particular moment of time. **/
-      var shouldSendData: js.UndefOr[js.Function0[Boolean]] = js.native
+      var shouldSendData: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
-      var uploadTimeInterval: js.UndefOr[Double] = js.native
+      var uploadTimeInterval: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       
@@ -182,14 +179,13 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait IReduxMiddlewareOptions extends StObject {
       
       /** Sanitizer function to scrub or ignore specific redux actions */
-      var actionSanitizer: js.UndefOr[js.Function1[/* action */ Action, Null | Action]] = js.native
+      var actionSanitizer: js.UndefOr[js.Function1[/* action */ Action, Null | Action]] = js.undefined
       
       /** Sanitizer function to scrub redux state */
-      var stateSanitizer: js.UndefOr[js.Function1[/* state */ State, State]] = js.native
+      var stateSanitizer: js.UndefOr[js.Function1[/* state */ State, State]] = js.undefined
     }
     object IReduxMiddlewareOptions {
       
@@ -216,24 +212,23 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait IRequest extends StObject {
       
-      var body: js.UndefOr[String] = js.native
+      var body: js.UndefOr[String] = js.undefined
       
-      var credentials: js.UndefOr[String] = js.native
+      var credentials: js.UndefOr[String] = js.undefined
       
-      var headers: StringDictionary[js.UndefOr[String]] = js.native
+      var headers: StringDictionary[js.UndefOr[String]]
       
-      var method: String = js.native
+      var method: String
       
-      var mode: js.UndefOr[String] = js.native
+      var mode: js.UndefOr[String] = js.undefined
       
-      var referrer: js.UndefOr[String] = js.native
+      var referrer: js.UndefOr[String] = js.undefined
       
-      var reqId: String = js.native
+      var reqId: String
       
-      var url: String = js.native
+      var url: String
     }
     object IRequest {
       
@@ -284,18 +279,17 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait IResponse extends StObject {
       
-      var body: js.UndefOr[String] = js.native
+      var body: js.UndefOr[String] = js.undefined
       
-      var headers: StringDictionary[js.UndefOr[String]] = js.native
+      var headers: StringDictionary[js.UndefOr[String]]
       
-      var method: String = js.native
+      var method: String
       
-      var reqId: String = js.native
+      var reqId: String
       
-      var status: js.UndefOr[Double] = js.native
+      var status: js.UndefOr[Double] = js.undefined
     }
     object IResponse {
       

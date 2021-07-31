@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IConvoluteFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIConvoluteFilter
-  extends Instantiable0[IConvoluteFilter]
+  extends StObject
+     with Instantiable0[IConvoluteFilter]
      with Instantiable1[/* options */ Opaque, IConvoluteFilter] {
   
   /**

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicequotasGetServiceMod {
   
-  @JSImport("@pulumi/aws/servicequotas/getService", "getService")
+  @JSImport("@pulumi/aws/servicequotas/getService", JSImport.Namespace)
   @js.native
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
-  @JSImport("@pulumi/aws/servicequotas/getService", "getService")
-  @js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
+  @scala.inline
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
+  
   trait GetServiceArgs extends StObject {
     
     /**
       * Service name to lookup within Service Quotas. Available values can be found with the [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
       */
-    val serviceName: String = js.native
+    val serviceName: String
   }
   object GetServiceArgs {
     
@@ -39,20 +39,19 @@ object servicequotasGetServiceMod {
     }
   }
   
-  @js.native
   trait GetServiceResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Code of the service.
       */
-    val serviceCode: String = js.native
+    val serviceCode: String
     
-    val serviceName: String = js.native
+    val serviceName: String
   }
   object GetServiceResult {
     

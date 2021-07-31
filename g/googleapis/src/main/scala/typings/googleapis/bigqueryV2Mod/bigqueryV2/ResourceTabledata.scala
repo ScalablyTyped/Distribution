@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Tabledata")
@@ -97,7 +96,7 @@ class ResourceTabledata protected () extends StObject {
     */
   def insertAll(): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
   def insertAll(callback: BodyResponseCallback[SchemaTableDataInsertAllResponse]): Unit = js.native
-  def insertAll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
+  def insertAll(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
   def insertAll(params: ParamsResourceTabledataInsertall): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
   def insertAll(
     params: ParamsResourceTabledataInsertall,
@@ -208,7 +207,7 @@ class ResourceTabledata protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTableDataList] = js.native
   def list(callback: BodyResponseCallback[SchemaTableDataList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTableDataList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTableDataList] = js.native
   def list(params: ParamsResourceTabledataList): GaxiosPromise[SchemaTableDataList] = js.native
   def list(params: ParamsResourceTabledataList, callback: BodyResponseCallback[SchemaTableDataList]): Unit = js.native
   def list(

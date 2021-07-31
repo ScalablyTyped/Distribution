@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRowStyleSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to min_row_height. */
-  var minRowHeightSuggested: js.UndefOr[Boolean] = js.native
+  var minRowHeightSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object TableRowStyleSuggestionState {
   

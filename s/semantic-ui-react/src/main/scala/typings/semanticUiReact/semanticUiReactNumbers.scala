@@ -4,14 +4,14 @@ import typings.semanticUiReact.commonjsMod.SemanticWIDTHS
 import typings.semanticUiReact.commonjsMod.SemanticWIDTHSNUMBER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticUiReactNumbers {
   
   @js.native
   sealed trait `1`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -20,7 +20,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `10`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -29,7 +30,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `11`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -38,7 +40,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `12`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -47,7 +50,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `13`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -56,7 +60,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `14`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -65,7 +70,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `15`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -74,7 +80,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `16`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -83,7 +90,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `2`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -92,7 +100,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `3`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -101,7 +110,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `4`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -110,7 +120,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `5`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -119,7 +130,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `6`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -128,7 +140,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `7`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -137,7 +150,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `8`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER
@@ -146,7 +160,8 @@ object semanticUiReactNumbers {
   
   @js.native
   sealed trait `9`
-    extends SemanticWIDTHS
+    extends StObject
+       with SemanticWIDTHS
        with typings.semanticUiReact.genericMod.SemanticWIDTHS
        with SemanticWIDTHSNUMBER
        with typings.semanticUiReact.genericMod.SemanticWIDTHSNUMBER

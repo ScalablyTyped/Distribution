@@ -2,25 +2,23 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cps extends StObject {
   
-  var cps: js.UndefOr[js.Array[X]] = js.native
+  var cps: js.UndefOr[js.Array[X]] = js.undefined
   
-  var invert: Boolean = js.native
+  var invert: Boolean
   
-  var position: typings.vexflow.Vex.Flow.Curve.Position = js.native
+  var position: typings.vexflow.Vex.Flow.Curve.Position
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
-  var x_shift: js.UndefOr[Double] = js.native
+  var x_shift: js.UndefOr[Double] = js.undefined
   
-  var y_shift: Double = js.native
+  var y_shift: Double
 }
 object Cps {
   

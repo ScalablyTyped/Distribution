@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterEndpointMessage extends StObject {
   
   /**
     * Contains the details of the endpoints associated with the cluster and matching any filter conditions.
     */
-  var DBClusterEndpoints: js.UndefOr[DBClusterEndpointList] = js.native
+  var DBClusterEndpoints: js.UndefOr[DBClusterEndpointList] = js.undefined
   
   /**
     *  An optional pagination token provided by a previous DescribeDBClusterEndpoints request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object DBClusterEndpointMessage {
   

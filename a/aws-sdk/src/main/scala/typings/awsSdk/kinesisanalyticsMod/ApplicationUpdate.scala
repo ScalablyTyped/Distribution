@@ -2,36 +2,34 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationUpdate extends StObject {
   
   /**
     * Describes application code updates.
     */
-  var ApplicationCodeUpdate: js.UndefOr[ApplicationCode] = js.native
+  var ApplicationCodeUpdate: js.UndefOr[ApplicationCode] = js.undefined
   
   /**
     * Describes application CloudWatch logging option updates.
     */
-  var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.CloudWatchLoggingOptionUpdates] = js.native
+  var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.CloudWatchLoggingOptionUpdates] = js.undefined
   
   /**
     * Describes application input configuration updates.
     */
-  var InputUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputUpdates] = js.native
+  var InputUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputUpdates] = js.undefined
   
   /**
     * Describes application output configuration updates.
     */
-  var OutputUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.OutputUpdates] = js.native
+  var OutputUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.OutputUpdates] = js.undefined
   
   /**
     * Describes application reference data source updates.
     */
-  var ReferenceDataSourceUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ReferenceDataSourceUpdates] = js.native
+  var ReferenceDataSourceUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ReferenceDataSourceUpdates] = js.undefined
 }
 object ApplicationUpdate {
   

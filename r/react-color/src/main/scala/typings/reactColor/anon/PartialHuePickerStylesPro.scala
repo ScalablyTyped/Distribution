@@ -3,16 +3,14 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/hue/Hue.HuePickerStylesProps> */
-@js.native
 trait PartialHuePickerStylesPro extends StObject {
   
-  var hue: js.UndefOr[CSSProperties] = js.native
+  var hue: js.UndefOr[CSSProperties] = js.undefined
   
-  var picker: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialHuePickerStylesPro {
   

@@ -2,27 +2,26 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulePlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
   
-  var block: BlockPlain = js.native
+  var block: BlockPlain
   
-  var prelude: SelectorListPlain | Raw = js.native
+  var prelude: SelectorListPlain | Raw
   
   @JSName("type")
-  var type_RulePlain: typings.cssTree.cssTreeStrings.Rule = js.native
+  var type_RulePlain: typings.cssTree.cssTreeStrings.Rule
 }
 object RulePlain {
   
   @scala.inline
-  def apply(block: BlockPlain, prelude: SelectorListPlain | Raw, `type`: typings.cssTree.cssTreeStrings.Rule): RulePlain = {
+  def apply(block: BlockPlain, prelude: SelectorListPlain | Raw): RulePlain = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], prelude = prelude.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Rule")
     __obj.asInstanceOf[RulePlain]
   }
   

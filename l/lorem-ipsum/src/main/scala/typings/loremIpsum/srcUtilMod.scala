@@ -2,35 +2,31 @@ package typings.loremIpsum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcUtilMod {
   
-  @JSImport("lorem-ipsum/types/src/util", "capitalize")
+  @JSImport("lorem-ipsum/types/src/util", JSImport.Namespace)
   @js.native
-  def capitalize(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lorem-ipsum/types/src/util", "isNode")
-  @js.native
-  def isNode(): Boolean = js.native
+  @scala.inline
+  def capitalize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("lorem-ipsum/types/src/util", "isReactNative")
-  @js.native
-  def isReactNative(): Boolean = js.native
+  @scala.inline
+  def isNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")().asInstanceOf[Boolean]
   
-  @JSImport("lorem-ipsum/types/src/util", "isWindows")
-  @js.native
-  def isWindows(): Boolean = js.native
+  @scala.inline
+  def isReactNative(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNative")().asInstanceOf[Boolean]
   
-  @JSImport("lorem-ipsum/types/src/util", "makeArrayOfLength")
-  @js.native
-  def makeArrayOfLength(): js.Array[Double] = js.native
-  @JSImport("lorem-ipsum/types/src/util", "makeArrayOfLength")
-  @js.native
-  def makeArrayOfLength(length: Double): js.Array[Double] = js.native
+  @scala.inline
+  def isWindows(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindows")().asInstanceOf[Boolean]
   
-  @JSImport("lorem-ipsum/types/src/util", "makeArrayOfStrings")
-  @js.native
-  def makeArrayOfStrings(length: Double, makeString: js.Function0[String]): js.Array[String] = js.native
+  @scala.inline
+  def makeArrayOfLength(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeArrayOfLength")().asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def makeArrayOfLength(length: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeArrayOfLength")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def makeArrayOfStrings(length: Double, makeString: js.Function0[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeArrayOfStrings")(length.asInstanceOf[js.Any], makeString.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

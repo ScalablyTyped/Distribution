@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
   */     
-@js.native
 trait Context extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait Context extends StObject {
     * Office on the Windows desktop or in the browser do allow such links. If you want the UI of your add-in to provide a link to an 
     * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
     */
-  var commerceAllowed: Boolean = js.native
+  var commerceAllowed: Boolean
   
   /**
     * Gets the locale (language) specified by the user for editing the document or item.
@@ -57,12 +55,12 @@ trait Context extends StObject {
     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
     *  </table>
     */
-  var contentLanguage: String = js.native
+  var contentLanguage: String
   
   /**
     * Gets information about the environment in which the add-in is running.
     */
-  var diagnostics: ContextInformation = js.native
+  var diagnostics: ContextInformation
   
   /**
     * Gets the locale (language) specified by the user for the UI of the Office host application.
@@ -94,22 +92,22 @@ trait Context extends StObject {
     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>                       </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
     *  </table>
     */
-  var displayLanguage: String = js.native
+  var displayLanguage: String
   
   /**
     * Gets an object that represents the document the content or task pane add-in is interacting with.
     */
-  var document: Document = js.native
+  var document: Document
   
   /**
     * Contains the Office application host in which the add-in is running.
     */
-  var host: HostType = js.native
+  var host: HostType
   
   /**
     * Gets the license information for the user's Office installation.
     */
-  var license: String = js.native
+  var license: String
   
   /**
     * Provides access to the Microsoft Outlook Add-in object model.
@@ -128,22 +126,22 @@ trait Context extends StObject {
     *
     * - `userProfile`: Provides information about the user in an Outlook add-in.
     */
-  var mailbox: Mailbox = js.native
+  var mailbox: Mailbox
   
   /**
     * Provides access to the properties for Office theme colors.
     */
-  var officeTheme: OfficeTheme = js.native
+  var officeTheme: OfficeTheme
   
   /**
     * Provides the platform on which the add-in is running.
     */
-  var platform: PlatformType = js.native
+  var platform: PlatformType
   
   /**
     * Provides a method for determining what requirement sets are supported on the current host and platform.
     */
-  var requirements: RequirementSetSupport = js.native
+  var requirements: RequirementSetSupport
   
   /**
     * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
@@ -157,7 +155,7 @@ trait Context extends StObject {
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var roamingSettings: RoamingSettings = js.native
+  var roamingSettings: RoamingSettings
   
   /**
     * Specifies whether the platform and device allows touch interaction. 
@@ -172,12 +170,12 @@ trait Context extends StObject {
     * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and 
     * size and spacing of elements in your add-in's UI to accommodate touch interactions.
     */
-  var touchEnabled: Boolean = js.native
+  var touchEnabled: Boolean
   
   /**
     * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
     */
-  var ui: UI = js.native
+  var ui: UI
 }
 object Context {
   

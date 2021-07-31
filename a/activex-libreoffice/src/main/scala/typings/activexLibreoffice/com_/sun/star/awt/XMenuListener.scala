@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive menu events on a window. */
-@js.native
-trait XMenuListener extends XEventListener {
+trait XMenuListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a menu is activated. */
-  def itemActivated(aEvent: MenuEvent): Unit = js.native
+  def itemActivated(aEvent: MenuEvent): Unit
   
   /** is invoked when a menu is deactivated. */
-  def itemDeactivated(aEvent: MenuEvent): Unit = js.native
+  def itemDeactivated(aEvent: MenuEvent): Unit
   
   /** is invoked when a menu item is highlighted. */
-  def itemHighlighted(aEvent: MenuEvent): Unit = js.native
+  def itemHighlighted(aEvent: MenuEvent): Unit
   
   /** is invoked when a menu item is selected. */
-  def itemSelected(aEvent: MenuEvent): Unit = js.native
+  def itemSelected(aEvent: MenuEvent): Unit
 }
 object XMenuListener {
   

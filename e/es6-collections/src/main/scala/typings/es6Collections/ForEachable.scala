@@ -2,13 +2,11 @@ package typings.es6Collections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForEachable[T] extends StObject {
   
-  def forEach(callbackfn: js.Function1[/* value */ T, Unit]): Unit = js.native
+  def forEach(callbackfn: js.Function1[/* value */ T, Unit]): Unit
 }
 object ForEachable {
   
@@ -19,7 +17,7 @@ object ForEachable {
   }
   
   @scala.inline
-  implicit class ForEachableMutableBuilder[Self <: ForEachable[_], T] (val x: Self with ForEachable[T]) extends AnyVal {
+  implicit class ForEachableMutableBuilder[Self <: ForEachable[?], T] (val x: Self & ForEachable[T]) extends AnyVal {
     
     @scala.inline
     def setForEach(value: js.Function1[/* value */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))

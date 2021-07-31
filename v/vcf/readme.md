@@ -10,9 +10,9 @@ Parse and construct vCards, jCards
 | ------------------ | :-------------: |
 | Full name          | vcf |
 | Keywords           | vcard, hcard, jcard, vcf |
-| # releases         | 7 |
-| # dependents       | 8 |
-| # downloads        | 150128 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 153608 |
 | # stars            | 3 |
 
 ## Links

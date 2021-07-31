@@ -2,156 +2,154 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBCluster extends StObject {
   
   /**
     * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the cluster. IAM roles that are associated with a cluster grant permission for the cluster to access other AWS services on your behalf.
     */
-  var AssociatedRoles: js.UndefOr[DBClusterRoles] = js.native
+  var AssociatedRoles: js.UndefOr[DBClusterRoles] = js.undefined
   
   /**
     * Provides the list of Amazon EC2 Availability Zones that instances in the cluster can be created in.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.docdbMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.docdbMod.AvailabilityZones] = js.undefined
   
   /**
     * Specifies the number of days for which automatic snapshots are retained.
     */
-  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
+  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Specifies the time when the cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.native
+  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the cluster.
     */
-  var DBClusterArn: js.UndefOr[String] = js.native
+  var DBClusterArn: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a user-supplied cluster identifier. This identifier is the unique key that identifies a cluster.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the list of instances that make up the cluster.
     */
-  var DBClusterMembers: js.UndefOr[DBClusterMemberList] = js.native
+  var DBClusterMembers: js.UndefOr[DBClusterMemberList] = js.undefined
   
   /**
     * Specifies the name of the cluster parameter group for the cluster.
     */
-  var DBClusterParameterGroup: js.UndefOr[String] = js.native
+  var DBClusterParameterGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies information on the subnet group that is associated with the cluster, including the name, description, and subnets in the subnet group.
     */
-  var DBSubnetGroup: js.UndefOr[String] = js.native
+  var DBSubnetGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS Region-unique, immutable identifier for the cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the cluster is accessed.
     */
-  var DbClusterResourceId: js.UndefOr[String] = js.native
+  var DbClusterResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether this cluster can be deleted. If DeletionProtection is enabled, the cluster cannot be deleted unless it is modified and DeletionProtection is disabled. DeletionProtection protects clusters from being accidentally deleted.
     */
-  var DeletionProtection: js.UndefOr[Boolean] = js.native
+  var DeletionProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The earliest time to which a database can be restored with point-in-time restore.
     */
-  var EarliestRestorableTime: js.UndefOr[TStamp] = js.native
+  var EarliestRestorableTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A list of log types that this cluster is configured to export to Amazon CloudWatch Logs.
     */
-  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.native
+  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
   /**
     * Specifies the connection endpoint for the primary instance of the cluster.
     */
-  var Endpoint: js.UndefOr[String] = js.native
+  var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the name of the database engine to be used for this cluster.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the database engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
     */
-  var HostedZoneId: js.UndefOr[String] = js.native
+  var HostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted cluster.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.native
+  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Contains the master user name for the cluster.
     */
-  var MasterUsername: js.UndefOr[String] = js.native
+  var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the cluster has instances in multiple Availability Zones.
     */
-  var MultiAZ: js.UndefOr[Boolean] = js.native
+  var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the progress of the operation as a percentage.
     */
-  var PercentProgress: js.UndefOr[String] = js.native
+  var PercentProgress: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the port that the database engine is listening on.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
     */
-  var PreferredBackupWindow: js.UndefOr[String] = js.native
+  var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
     */
-  var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
     * The reader endpoint for the cluster. The reader endpoint for a cluster load balances connections across the Amazon DocumentDB replicas that are available in a cluster. As clients request new connections to the reader endpoint, Amazon DocumentDB distributes the connection requests among the Amazon DocumentDB replicas in the cluster. This functionality can help balance your read workload across multiple Amazon DocumentDB replicas in your cluster.  If a failover occurs, and the Amazon DocumentDB replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Amazon DocumentDB replicas in the cluster, you can then reconnect to the reader endpoint.
     */
-  var ReaderEndpoint: js.UndefOr[String] = js.native
+  var ReaderEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the current state of this cluster.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the cluster is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provides a list of virtual private cloud (VPC) security groups that the cluster belongs to.
     */
-  var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.native
+  var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.undefined
 }
 object DBCluster {
   

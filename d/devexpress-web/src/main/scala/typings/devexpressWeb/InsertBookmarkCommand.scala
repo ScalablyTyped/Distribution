@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a new bookmark that references the current selection.
   */
-@js.native
-trait InsertBookmarkCommand extends CommandWithSimpleStateBase {
+trait InsertBookmarkCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertBookmarkCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
@@ -17,7 +17,7 @@ trait InsertBookmarkCommand extends CommandWithSimpleStateBase {
     * @param start An integer value specifying the start position of the bookmark's range.
     * @param length An integer value specifying the length of the bookmark's range.
     */
-  def execute(name: String, start: Double, length: Double): Boolean = js.native
+  def execute(name: String, start: Double, length: Double): Boolean
 }
 object InsertBookmarkCommand {
   

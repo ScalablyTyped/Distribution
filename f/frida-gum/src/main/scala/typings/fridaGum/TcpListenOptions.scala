@@ -4,28 +4,27 @@ import typings.fridaGum.fridaGumStrings.ipv4
 import typings.fridaGum.fridaGumStrings.ipv6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TcpListenOptions
-  extends BaseListenOptions
+  extends StObject
+     with BaseListenOptions
      with SocketListenOptions {
   
   /**
     * Address family. Omit to listen on both ipv4 and ipv6 – if supported by the OS.
     */
-  var family: js.UndefOr[ipv4 | ipv6] = js.native
+  var family: js.UndefOr[ipv4 | ipv6] = js.undefined
   
   /**
     * Host or IP address to listen on. Omit to listen on all interfaces.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Port to listen on. Omit to listen on a randomly selected port.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object TcpListenOptions {
   

@@ -3,17 +3,15 @@ package typings.jquerymobile
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapsibleEvents extends StObject {
   
-  var collapse: js.UndefOr[JQueryMobileEvent] = js.native
+  var collapse: js.UndefOr[JQueryMobileEvent] = js.undefined
   
-  var create: js.UndefOr[JQueryMobileEvent] = js.native
+  var create: js.UndefOr[JQueryMobileEvent] = js.undefined
   
-  var expand: js.UndefOr[JQueryMobileEvent] = js.native
+  var expand: js.UndefOr[JQueryMobileEvent] = js.undefined
 }
 object CollapsibleEvents {
   

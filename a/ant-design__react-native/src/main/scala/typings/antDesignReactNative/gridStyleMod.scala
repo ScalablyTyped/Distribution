@@ -6,23 +6,24 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/grid/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/grid/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): GridStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): GridStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[GridStyle]
+  
   trait GridStyle extends StObject {
     
-    var grayBorderBox: ViewStyle = js.native
+    var grayBorderBox: ViewStyle
     
-    var icon: ImageStyle = js.native
+    var icon: ImageStyle
     
-    var text: TextStyle = js.native
+    var text: TextStyle
   }
   object GridStyle {
     

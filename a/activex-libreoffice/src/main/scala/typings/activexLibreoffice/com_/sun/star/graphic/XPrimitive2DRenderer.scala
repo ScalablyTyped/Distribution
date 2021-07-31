@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface allows to convert from a sequence of XPrimitive2Ds to a XBitmap
   */
-@js.native
-trait XPrimitive2DRenderer extends XInterface {
+trait XPrimitive2DRenderer
+  extends StObject
+     with XInterface {
   
   /**
     * return rasterized version of given {@link XPrimitive2D}
@@ -35,7 +35,7 @@ trait XPrimitive2DRenderer extends XInterface {
     DPI_Y: Double,
     Range: RealRectangle2D,
     MaximumQuadraticPixels: Double
-  ): XBitmap = js.native
+  ): XBitmap
 }
 object XPrimitive2DRenderer {
   

@@ -2,27 +2,25 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Directs Robo to interact with a specific UI element if it is encountered
   * during the crawl. Currently, Robo can perform text entry or element click.
   */
-@js.native
 trait SchemaRoboDirective extends StObject {
   
   /**
     * Required. The type of action that Robo should perform on the specified
     * element.
     */
-  var actionType: js.UndefOr[String] = js.native
+  var actionType: js.UndefOr[String] = js.undefined
   
   /**
     * The text that Robo is directed to set. If left empty, the directive will
     * be treated as a CLICK on the element matching the resource_name.
     */
-  var inputText: js.UndefOr[String] = js.native
+  var inputText: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The android resource name of the target UI element. For
@@ -30,7 +28,7 @@ trait SchemaRoboDirective extends StObject {
     * &quot;foo&quot; part is needed. Reference doc:
     * https://developer.android.com/guide/topics/resources/accessing-resources.html
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
 }
 object SchemaRoboDirective {
   

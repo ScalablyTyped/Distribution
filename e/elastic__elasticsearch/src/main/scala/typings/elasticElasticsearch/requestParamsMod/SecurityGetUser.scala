@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityGetUser extends Generic {
+trait SecurityGetUser
+  extends StObject
+     with Generic {
   
-  var username: js.UndefOr[String | js.Array[String]] = js.native
+  var username: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SecurityGetUser {
   

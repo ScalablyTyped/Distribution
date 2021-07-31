@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * let users restrict the query to specific fields relevant to the type of
   * item being searched.
   */
-@js.native
 trait SchemaDateOperatorOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaDateOperatorOptions extends StObject {
     * later than *&amp;lt;value&amp;gt;*. The operator name can only contain
     * lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var greaterThanOperatorName: js.UndefOr[String] = js.native
+  var greaterThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the
@@ -33,7 +31,7 @@ trait SchemaDateOperatorOptions extends StObject {
     * earlier than *&amp;lt;value&amp;gt;*. The operator name can only contain
     * lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var lessThanOperatorName: js.UndefOr[String] = js.native
+  var lessThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the actual string required in the query in order to isolate the
@@ -48,7 +46,7 @@ trait SchemaDateOperatorOptions extends StObject {
     * datasource. The operator name can only contain lowercase letters (a-z).
     * The maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object SchemaDateOperatorOptions {
   

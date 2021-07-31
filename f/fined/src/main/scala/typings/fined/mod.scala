@@ -3,36 +3,34 @@ package typings.fined
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fined", JSImport.Namespace)
-  @js.native
-  def apply(path: String): Result | Null = js.native
-  @JSImport("fined", JSImport.Namespace)
-  @js.native
-  def apply(path: String, opts: PathSpec): Result | Null = js.native
-  @JSImport("fined", JSImport.Namespace)
-  @js.native
-  def apply(path: PathSpec): Result | Null = js.native
-  @JSImport("fined", JSImport.Namespace)
-  @js.native
-  def apply(path: PathSpec, opts: PathSpec): Result | Null = js.native
+  @scala.inline
+  def apply(path: String): Result | Null = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  @scala.inline
+  def apply(path: String, opts: PathSpec): Result | Null = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
+  @scala.inline
+  def apply(path: PathSpec): Result | Null = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  @scala.inline
+  def apply(path: PathSpec, opts: PathSpec): Result | Null = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
   
+  @JSImport("fined", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait PathSpec extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var extensions: js.UndefOr[String | js.Array[String] | (StringDictionary[String | Null])] = js.native
+    var extensions: js.UndefOr[String | js.Array[String] | (StringDictionary[String | Null])] = js.undefined
     
-    var findUp: js.UndefOr[Boolean] = js.native
+    var findUp: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object PathSpec {
     
@@ -80,18 +78,18 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var extension: String | StringDictionary[String] = js.native
+    var `extension`: String | StringDictionary[String]
     
-    var path: String = js.native
+    var path: String
   }
   object Result {
     
     @scala.inline
-    def apply(extension: String | StringDictionary[String], path: String): Result = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(`extension`: String | StringDictionary[String], path: String): Result = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     

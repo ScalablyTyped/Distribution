@@ -2,28 +2,26 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartImageScanResponse extends StObject {
   
-  var imageId: js.UndefOr[ImageIdentifier] = js.native
+  var imageId: js.UndefOr[ImageIdentifier] = js.undefined
   
   /**
     * The current state of the scan.
     */
-  var imageScanStatus: js.UndefOr[ImageScanStatus] = js.native
+  var imageScanStatus: js.UndefOr[ImageScanStatus] = js.undefined
   
   /**
     * The registry ID associated with the request.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The repository name associated with the request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object StartImageScanResponse {
   

@@ -8,7 +8,6 @@ import typings.materialRipple.typesMod.MDCRippleCapableSurface
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -17,7 +16,7 @@ object componentMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined unbounded, disabled */ @JSImport("@material/ripple/component", "MDCRipple")
   @js.native
   class MDCRipple protected () extends MDCComponent[MDCRippleFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCRippleFoundation, args: js.Any*) = this()
     
     def activate(): Unit = js.native
@@ -36,16 +35,17 @@ object componentMod {
   /* static members */
   object MDCRipple {
     
-    @JSImport("@material/ripple/component", "MDCRipple.attachTo")
+    @JSImport("@material/ripple/component", "MDCRipple")
     @js.native
-    def attachTo(root: Element): MDCRipple = js.native
-    @JSImport("@material/ripple/component", "MDCRipple.attachTo")
-    @js.native
-    def attachTo(root: Element, opts: MDCRippleAttachOpts): MDCRipple = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@material/ripple/component", "MDCRipple.createAdapter")
-    @js.native
-    def createAdapter(instance: MDCRippleCapableSurface): MDCRippleAdapter = js.native
+    @scala.inline
+    def attachTo(root: Element): MDCRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCRipple]
+    @scala.inline
+    def attachTo(root: Element, opts: MDCRippleAttachOpts): MDCRipple = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MDCRipple]
+    
+    @scala.inline
+    def createAdapter(instance: MDCRippleCapableSurface): MDCRippleAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(instance.asInstanceOf[js.Any]).asInstanceOf[MDCRippleAdapter]
   }
   
   type MDCRippleFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCRippleFoundation], MDCRipple]

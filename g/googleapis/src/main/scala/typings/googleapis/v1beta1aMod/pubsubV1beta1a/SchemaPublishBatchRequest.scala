@@ -2,24 +2,22 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the PublishBatch method.
   */
-@js.native
 trait SchemaPublishBatchRequest extends StObject {
   
   /**
     * The messages to publish.
     */
-  var messages: js.UndefOr[js.Array[SchemaPubsubMessage]] = js.native
+  var messages: js.UndefOr[js.Array[SchemaPubsubMessage]] = js.undefined
   
   /**
     * The messages in the request will be published on this topic.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaPublishBatchRequest {
   

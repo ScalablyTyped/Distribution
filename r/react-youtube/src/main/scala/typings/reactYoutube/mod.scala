@@ -15,7 +15,6 @@ import typings.reactYoutube.reactYoutubeStrings.user_uploads
 import typings.reactYoutube.reactYoutubeStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,14 +24,13 @@ object mod {
   class default ()
     extends Component[YouTubeProps, js.Object, js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var playerVars: js.UndefOr[PlayerVars] = js.native
+    var playerVars: js.UndefOr[PlayerVars] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -65,48 +63,47 @@ object mod {
     }
   }
   
-  @js.native
   trait PlayerVars extends StObject {
     
-    var autoplay: js.UndefOr[`0` | `1`] = js.native
+    var autoplay: js.UndefOr[`0` | `1`] = js.undefined
     
-    var cc_load_policy: js.UndefOr[`1`] = js.native
+    var cc_load_policy: js.UndefOr[`1`] = js.undefined
     
-    var color: js.UndefOr[red | white] = js.native
+    var color: js.UndefOr[red | white] = js.undefined
     
-    var controls: js.UndefOr[`0` | `1` | `2`] = js.native
+    var controls: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
-    var disablekb: js.UndefOr[`0` | `1`] = js.native
+    var disablekb: js.UndefOr[`0` | `1`] = js.undefined
     
-    var enablejsapi: js.UndefOr[`0` | `1`] = js.native
+    var enablejsapi: js.UndefOr[`0` | `1`] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var fs: js.UndefOr[`0` | `1`] = js.native
+    var fs: js.UndefOr[`0` | `1`] = js.undefined
     
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
-    var iv_load_policy: js.UndefOr[`1` | `3`] = js.native
+    var iv_load_policy: js.UndefOr[`1` | `3`] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
-    var listType: js.UndefOr[playlist | search | user_uploads] = js.native
+    var listType: js.UndefOr[playlist | search | user_uploads] = js.undefined
     
-    var loop: js.UndefOr[`0` | `1`] = js.native
+    var loop: js.UndefOr[`0` | `1`] = js.undefined
     
-    var modestbranding: js.UndefOr[`1`] = js.native
+    var modestbranding: js.UndefOr[`1`] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var playlist: js.UndefOr[String] = js.native
+    var playlist: js.UndefOr[String] = js.undefined
     
-    var playsinline: js.UndefOr[`0` | `1`] = js.native
+    var playsinline: js.UndefOr[`0` | `1`] = js.undefined
     
-    var rel: js.UndefOr[`0` | `1`] = js.native
+    var rel: js.UndefOr[`0` | `1`] = js.undefined
     
-    var showinfo: js.UndefOr[`0` | `1`] = js.native
+    var showinfo: js.UndefOr[`0` | `1`] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object PlayerVars {
     
@@ -243,34 +240,33 @@ object mod {
   
   type YouTube = Component[YouTubeProps, js.Object, js.Any]
   
-  @js.native
   trait YouTubeProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.native
+    var onPause: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.native
+    var onPlay: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
     
-    var onPlaybackQualityChange: js.UndefOr[js.Function1[/* event */ DataTarget, Unit]] = js.native
+    var onPlaybackQualityChange: js.UndefOr[js.Function1[/* event */ DataTarget, Unit]] = js.undefined
     
-    var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.native
+    var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.Function1[/* event */ Target, Unit]] = js.native
+    var onReady: js.UndefOr[js.Function1[/* event */ Target, Unit]] = js.undefined
     
-    var onStateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
     
-    var opts: js.UndefOr[Options] = js.native
+    var opts: js.UndefOr[Options] = js.undefined
     
-    var videoId: js.UndefOr[String] = js.native
+    var videoId: js.UndefOr[String] = js.undefined
   }
   object YouTubeProps {
     

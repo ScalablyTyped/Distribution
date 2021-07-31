@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ==) (== resource_for beta.regionInstanceGroupManagers ==) (== resource_for
   * v1.regionInstanceGroupManagers ==)
   */
-@js.native
 trait SchemaInstanceGroupManager extends StObject {
   
   /**
     * The autohealing policy for this managed instance group. You can specify
     * only one value.
     */
-  var autoHealingPolicies: js.UndefOr[js.Array[SchemaInstanceGroupManagerAutoHealingPolicy]] = js.native
+  var autoHealingPolicies: js.UndefOr[js.Array[SchemaInstanceGroupManagerAutoHealingPolicy]] = js.undefined
   
   /**
     * The base instance name to use for instances in this group. The value must
@@ -26,31 +24,31 @@ trait SchemaInstanceGroupManager extends StObject {
     * random four-character string to the base instance name. The base instance
     * name must comply with RFC1035.
     */
-  var baseInstanceName: js.UndefOr[String] = js.native
+  var baseInstanceName: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The creation timestamp for this managed instance group in
     * RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The list of instance actions and the number of instances in
     * this managed instance group that are scheduled for each of those actions.
     */
-  var currentActions: js.UndefOr[SchemaInstanceGroupManagerActionsSummary] = js.native
+  var currentActions: js.UndefOr[SchemaInstanceGroupManagerActionsSummary] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Policy specifying intended distribution of instances in regional managed
     * instance group.
     */
-  var distributionPolicy: js.UndefOr[SchemaDistributionPolicy] = js.native
+  var distributionPolicy: js.UndefOr[SchemaDistributionPolicy] = js.undefined
   
   /**
     * Fingerprint of this resource. This field may be used in optimistic
@@ -60,79 +58,79 @@ trait SchemaInstanceGroupManager extends StObject {
     * conditionNotMet.  To see the latest fingerprint, make a get() request to
     * retrieve an InstanceGroupManager.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A unique identifier for this resource type. The server
     * generates this identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL of the Instance Group resource.
     */
-  var instanceGroup: js.UndefOr[String] = js.native
+  var instanceGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the instance template that is specified for this managed
     * instance group. The group uses this template to create all new instances
     * in the managed instance group.
     */
-  var instanceTemplate: js.UndefOr[String] = js.native
+  var instanceTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The resource type, which is always
     * compute#instanceGroupManager for managed instance groups.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the managed instance group. The name must be 1-63 characters
     * long, and comply with RFC1035.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Named ports configured for the Instance Groups complementary to this
     * Instance Group Manager.
     */
-  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.native
+  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.undefined
   
   /**
     * [Output Only] The URL of the region where the managed instance group
     * resides (for regional resources).
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL for this managed instance group. The server defines
     * this URL.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of this managed instance group.
     */
-  var status: js.UndefOr[SchemaInstanceGroupManagerStatus] = js.native
+  var status: js.UndefOr[SchemaInstanceGroupManagerStatus] = js.undefined
   
   /**
     * The URLs for all TargetPool resources to which instances in the
     * instanceGroup field are added. The target pools automatically apply to
     * all of the instances in the managed instance group.
     */
-  var targetPools: js.UndefOr[js.Array[String]] = js.native
+  var targetPools: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The target number of running instances for this managed instance group.
     * Deleting or abandoning instances reduces this number. Resizing the group
     * changes this number.
     */
-  var targetSize: js.UndefOr[Double] = js.native
+  var targetSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The update policy for this managed instance group.
     */
-  var updatePolicy: js.UndefOr[SchemaInstanceGroupManagerUpdatePolicy] = js.native
+  var updatePolicy: js.UndefOr[SchemaInstanceGroupManagerUpdatePolicy] = js.undefined
   
   /**
     * Specifies the instance templates used by this managed instance group to
@@ -143,13 +141,13 @@ trait SchemaInstanceGroupManager extends StObject {
     * unset. That version will be applied to all remaining instances. For more
     * information, read about canary updates.
     */
-  var versions: js.UndefOr[js.Array[SchemaInstanceGroupManagerVersion]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaInstanceGroupManagerVersion]] = js.undefined
   
   /**
     * [Output Only] The URL of the zone where the managed instance group is
     * located (for zonal resources).
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceGroupManager {
   

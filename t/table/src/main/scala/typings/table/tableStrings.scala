@@ -3,7 +3,6 @@ package typings.table
 import typings.table.mod.TableBorderTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableStrings {
@@ -14,7 +13,9 @@ object tableStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait honeywell extends TableBorderTemplate
+  sealed trait honeywell
+    extends StObject
+       with TableBorderTemplate
   @scala.inline
   def honeywell: honeywell = "honeywell".asInstanceOf[honeywell]
   
@@ -24,12 +25,16 @@ object tableStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait norc extends TableBorderTemplate
+  sealed trait norc
+    extends StObject
+       with TableBorderTemplate
   @scala.inline
   def norc: norc = "norc".asInstanceOf[norc]
   
   @js.native
-  sealed trait ramac extends TableBorderTemplate
+  sealed trait ramac
+    extends StObject
+       with TableBorderTemplate
   @scala.inline
   def ramac: ramac = "ramac".asInstanceOf[ramac]
   
@@ -39,7 +44,9 @@ object tableStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait void extends TableBorderTemplate
+  sealed trait void
+    extends StObject
+       with TableBorderTemplate
   @scala.inline
   def void: void = "void".asInstanceOf[void]
 }

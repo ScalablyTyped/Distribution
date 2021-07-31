@@ -11,7 +11,6 @@ import typings.reactColor.reactColorStrings.hide
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twitterMod {
@@ -25,19 +24,20 @@ object twitterMod {
   trait TwitterPicker
     extends Component[TwitterPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait TwitterPickerProps extends ColorPickerProps[TwitterPicker] {
+  trait TwitterPickerProps
+    extends StObject
+       with ColorPickerProps[TwitterPicker] {
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
     @JSName("styles")
-    var styles_TwitterPickerProps: js.UndefOr[PartialClassesTwitterPick] = js.native
+    var styles_TwitterPickerProps: js.UndefOr[PartialClassesTwitterPick] = js.undefined
     
-    var triangle: js.UndefOr[hide | `top-left` | `top-right`] = js.native
+    var triangle: js.UndefOr[hide | `top-left` | `top-right`] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object TwitterPickerProps {
     
@@ -85,26 +85,25 @@ object twitterMod {
     }
   }
   
-  @js.native
   trait TwitterPickerStylesProps extends StObject {
     
-    var body: CSSProperties = js.native
+    var body: CSSProperties
     
-    var card: CSSProperties = js.native
+    var card: CSSProperties
     
-    var clear: CSSProperties = js.native
+    var clear: CSSProperties
     
-    var hash: CSSProperties = js.native
+    var hash: CSSProperties
     
-    var input: CSSProperties = js.native
+    var input: CSSProperties
     
-    var label: CSSProperties = js.native
+    var label: CSSProperties
     
-    var swatch: CSSProperties = js.native
+    var swatch: CSSProperties
     
-    var triangle: CSSProperties = js.native
+    var triangle: CSSProperties
     
-    var triangleShadow: CSSProperties = js.native
+    var triangleShadow: CSSProperties
   }
   object TwitterPickerStylesProps {
     

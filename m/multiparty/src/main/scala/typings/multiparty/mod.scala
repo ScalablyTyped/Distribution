@@ -11,7 +11,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -44,37 +43,36 @@ object mod {
     def parse(request: IncomingMessage): Unit = js.native
     def parse(
       request: IncomingMessage,
-      callback: js.Function3[/* error */ Error, /* fields */ js.Any, /* files */ js.Any, _]
+      callback: js.Function3[/* error */ Error, /* fields */ js.Any, /* files */ js.Any, js.Any]
     ): Unit = js.native
   }
   
-  @js.native
   trait File extends StObject {
     
     /**
       * same as name - the field name for this file
       */
-    var fieldName: String = js.native
+    var fieldName: String
     
     /**
       * the HTTP headers that were sent along with this file
       */
-    var headers: js.Any = js.native
+    var headers: js.Any
     
     /**
       * the filename that the user reports for the file
       */
-    var originalFilename: String = js.native
+    var originalFilename: String
     
     /**
       * the absolute path of the uploaded file on disk
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * size of the file in bytes
       */
-    var size: Double = js.native
+    var size: Double
   }
   object File {
     
@@ -104,37 +102,36 @@ object mod {
     }
   }
   
-  @js.native
   trait FormOptions extends StObject {
     
     /**
       * Enables field events and disables part events for fields.
       * This is automatically set to true if you add a field listener.
       */
-    var autoFields: js.UndefOr[Boolean] = js.native
+    var autoFields: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables file events and disables part events for files.
       * This is automatically set to true if you add a file listener.
       */
-    var autoFiles: js.UndefOr[Boolean] = js.native
+    var autoFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * sets encoding for the incoming form fields. Defaults to utf8.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Limits the number of fields that will be parsed before emitting an error event.
       * A file counts as a field in this case. Defaults to 1000.
       */
-    var maxFields: js.UndefOr[Double] = js.native
+    var maxFields: js.UndefOr[Double] = js.undefined
     
     /**
       * Limits the amount of memory all fields (not files) can allocate in bytes.
       * If this value is exceeded, an error event is emitted. The default size is 2MB.
       */
-    var maxFieldsSize: js.UndefOr[Double] = js.native
+    var maxFieldsSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Only relevant when autoFiles is true.
@@ -142,14 +139,14 @@ object mod {
       * If this value is exceeded, an error event is emitted.
       * The default is Infinity.
       */
-    var maxFilesSize: js.UndefOr[Double] = js.native
+    var maxFilesSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Only relevant when autoFiles is true.
       * The directory for placing file uploads in.
       * You can move them later using fs.rename(). Defaults to os.tmpDir().
       */
-    var uploadDir: js.UndefOr[String] = js.native
+    var uploadDir: js.UndefOr[String] = js.undefined
   }
   object FormOptions {
     

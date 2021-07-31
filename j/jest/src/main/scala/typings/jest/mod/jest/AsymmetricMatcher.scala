@@ -2,13 +2,11 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsymmetricMatcher extends StObject {
   
-  def asymmetricMatch(other: js.Any): Boolean = js.native
+  def asymmetricMatch(other: js.Any): Boolean
 }
 object AsymmetricMatcher {
   

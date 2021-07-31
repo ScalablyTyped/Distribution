@@ -2,17 +2,15 @@ package typings.webBluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestLEScanOptions extends StObject {
   
-  val acceptAllAdvertisements: js.UndefOr[Boolean] = js.native
+  val acceptAllAdvertisements: js.UndefOr[Boolean] = js.undefined
   
-  val filters: js.UndefOr[js.Array[BluetoothLEScanFilter]] = js.native
+  val filters: js.UndefOr[js.Array[BluetoothLEScanFilter]] = js.undefined
   
-  val keepRepeatedDevices: js.UndefOr[Boolean] = js.native
+  val keepRepeatedDevices: js.UndefOr[Boolean] = js.undefined
 }
 object RequestLEScanOptions {
   

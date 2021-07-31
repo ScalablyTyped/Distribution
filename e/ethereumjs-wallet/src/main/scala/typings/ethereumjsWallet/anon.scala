@@ -4,25 +4,23 @@ import typings.ethereumjsWallet.mod.KDFParamsOut
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cipher extends StObject {
     
-    var cipher: String = js.native
+    var cipher: String
     
-    var cipherparams: Iv = js.native
+    var cipherparams: Iv
     
-    var ciphertext: String = js.native
+    var ciphertext: String
     
-    var kdf: String = js.native
+    var kdf: String
     
-    var kdfparams: KDFParamsOut = js.native
+    var kdfparams: KDFParamsOut
     
-    var mac: String = js.native
+    var mac: String
   }
   object Cipher {
     
@@ -62,18 +60,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CipherText extends StObject {
     
-    var CipherText: String = js.native
+    var CipherText: String
     
-    var IV: String = js.native
+    var IV: String
     
-    var KeyHeader: Kdf = js.native
+    var KeyHeader: Kdf
     
-    var MAC: String = js.native
+    var MAC: String
     
-    var Salt: String = js.native
+    var Salt: String
   }
   object CipherText {
     
@@ -103,18 +100,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DkLen extends StObject {
     
-    var DkLen: Double = js.native
+    var DkLen: Double
     
-    var N: Double = js.native
+    var N: Double
     
-    var P: Double = js.native
+    var P: Double
     
-    var R: Double = js.native
+    var R: Double
     
-    var SaltLen: Double = js.native
+    var SaltLen: Double
   }
   object DkLen {
     
@@ -144,10 +140,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Iv extends StObject {
     
-    var iv: String = js.native
+    var iv: String
   }
   object Iv {
     
@@ -165,14 +160,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Kdf extends StObject {
     
-    var Kdf: String = js.native
+    var Kdf: String
     
-    var KdfParams: DkLen = js.native
+    var KdfParams: DkLen
     
-    var Version: String = js.native
+    var Version: String
   }
   object Kdf {
     
@@ -197,28 +191,27 @@ object anon {
   }
   
   /* Inlined std.Partial<ethereumjs-wallet.ethereumjs-wallet.V3Params> */
-  @js.native
   trait PartialV3Params extends StObject {
     
-    var c: js.UndefOr[Double] = js.native
+    var c: js.UndefOr[Double] = js.undefined
     
-    var cipher: js.UndefOr[String] = js.native
+    var cipher: js.UndefOr[String] = js.undefined
     
-    var dklen: js.UndefOr[Double] = js.native
+    var dklen: js.UndefOr[Double] = js.undefined
     
-    var iv: js.UndefOr[String | Buffer] = js.native
+    var iv: js.UndefOr[String | Buffer] = js.undefined
     
-    var kdf: js.UndefOr[String] = js.native
+    var kdf: js.UndefOr[String] = js.undefined
     
-    var n: js.UndefOr[Double] = js.native
+    var n: js.UndefOr[Double] = js.undefined
     
-    var p: js.UndefOr[Double] = js.native
+    var p: js.UndefOr[Double] = js.undefined
     
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
     
-    var salt: js.UndefOr[String | Buffer] = js.native
+    var salt: js.UndefOr[String | Buffer] = js.undefined
     
-    var uuid: js.UndefOr[String | Buffer] = js.native
+    var uuid: js.UndefOr[String | Buffer] = js.undefined
   }
   object PartialV3Params {
     

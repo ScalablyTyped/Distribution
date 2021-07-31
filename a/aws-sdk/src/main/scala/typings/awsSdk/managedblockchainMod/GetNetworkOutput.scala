@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkOutput extends StObject {
   
   /**
     * An object containing network configuration parameters.
     */
-  var Network: js.UndefOr[typings.awsSdk.managedblockchainMod.Network] = js.native
+  var Network: js.UndefOr[typings.awsSdk.managedblockchainMod.Network] = js.undefined
 }
 object GetNetworkOutput {
   

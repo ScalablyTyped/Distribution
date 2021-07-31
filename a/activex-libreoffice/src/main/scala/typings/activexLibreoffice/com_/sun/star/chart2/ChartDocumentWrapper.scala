@@ -18,16 +18,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A component that implements the {@link com.sun.star.chart.ChartDocument} service and is initialized with a {@link com.sun.star.chart2.ChartDocument}
   * via the {@link com.sun.star.uno.XAggregation} interface.
   */
-@js.native
 trait ChartDocumentWrapper
-  extends typings.activexLibreoffice.com_.sun.star.chart.ChartDocument
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.chart.ChartDocument
      with XAggregation
 object ChartDocumentWrapper {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DerivedSource extends StObject {
   
   /** What source to base the produced source on (if any). */
-  var derivationMode: js.UndefOr[String] = js.native
+  var derivationMode: js.UndefOr[String] = js.undefined
   
   /** Specification of the source. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object DerivedSource {
   

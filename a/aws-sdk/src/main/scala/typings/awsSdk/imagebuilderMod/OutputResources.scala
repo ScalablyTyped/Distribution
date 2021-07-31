@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputResources extends StObject {
   
   /**
     * The EC2 AMIs created by this image. 
     */
-  var amis: js.UndefOr[AmiList] = js.native
+  var amis: js.UndefOr[AmiList] = js.undefined
 }
 object OutputResources {
   

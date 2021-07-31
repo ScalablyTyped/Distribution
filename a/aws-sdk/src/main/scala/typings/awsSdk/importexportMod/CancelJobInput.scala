@@ -2,15 +2,13 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelJobInput extends StObject {
   
-  var APIVersion: js.UndefOr[APIVersion_] = js.native
+  var APIVersion: js.UndefOr[APIVersion_] = js.undefined
   
-  var JobId: typings.awsSdk.importexportMod.JobId = js.native
+  var JobId: typings.awsSdk.importexportMod.JobId
 }
 object CancelJobInput {
   

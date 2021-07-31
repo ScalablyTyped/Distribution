@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateIp extends StObject {
   
   /**
     * The DNS name of the private IP address.
     */
-  var privateDnsName: js.UndefOr[Text] = js.native
+  var privateDnsName: js.UndefOr[Text] = js.undefined
   
   /**
     * The full IP address of the network inteface.
     */
-  var privateIpAddress: js.UndefOr[Text] = js.native
+  var privateIpAddress: js.UndefOr[Text] = js.undefined
 }
 object PrivateIp {
   

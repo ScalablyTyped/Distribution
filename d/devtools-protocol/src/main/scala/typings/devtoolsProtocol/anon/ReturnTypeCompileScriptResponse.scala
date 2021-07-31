@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.CompileScriptRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CompileScriptResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCompileScriptResponse extends StObject {
   
-  var paramsType: js.Array[CompileScriptRequest] = js.native
+  var paramsType: js.Array[CompileScriptRequest]
   
-  var returnType: CompileScriptResponse = js.native
+  var returnType: CompileScriptResponse
 }
 object ReturnTypeCompileScriptResponse {
   

@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait StringMatchOption extends StObject
 object StringMatchOption extends StObject {
   
   @js.native
-  sealed trait exactMatch extends StringMatchOption
+  sealed trait exactMatch
+    extends StObject
+       with StringMatchOption
   
   @js.native
-  sealed trait startsWith extends StringMatchOption
+  sealed trait startsWith
+    extends StObject
+       with StringMatchOption
 }

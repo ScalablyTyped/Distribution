@@ -6,14 +6,15 @@ import typings.typescript.mod.CompilerHost
 import typings.typescript.mod.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostMod {
   
   @JSImport("gulp-typescript/release/host", "Host")
   @js.native
-  class Host protected () extends CompilerHost {
+  class Host protected ()
+    extends StObject
+       with CompilerHost {
     def this(typescript: Typeofts, currentDirectory: String, input: FileCache, options: CompilerOptions) = this()
     
     var currentDirectory: String = js.native
@@ -22,6 +23,9 @@ object hostMod {
     def directoryExists_MHost(path: String): Boolean = js.native
     
     var fallback: CompilerHost = js.native
+    
+    /* CompleteClass */
+    override def fileExists(fileName: String): Boolean = js.native
     
     @JSName("getCurrentDirectory")
     def getCurrentDirectory_MHost(): String = js.native
@@ -49,6 +53,9 @@ object hostMod {
       includes: js.Array[String],
       depth: Double
     ): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def readFile(fileName: String): js.UndefOr[String] = js.native
     
     @JSName("realpath")
     def realpath_MHost(path: String): String = js.native

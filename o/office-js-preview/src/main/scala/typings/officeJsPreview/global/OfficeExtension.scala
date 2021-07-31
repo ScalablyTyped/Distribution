@@ -1,11 +1,11 @@
 package typings.officeJsPreview.global
 
 import typings.officeJsPreview.Office.IPromiseConstructor
+import typings.officeJsPreview.OfficeExtension.DebugInfo
 import typings.officeJsPreview.OfficeExtension.EmbeddedOptions
 import typings.officeJsPreview.OfficeExtension.EventInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////
@@ -25,7 +25,20 @@ object OfficeExtension {
   @JSGlobal("OfficeExtension.ClientObject")
   @js.native
   class ClientObject ()
-    extends typings.officeJsPreview.OfficeExtension.ClientObject
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.ClientObject {
+    
+    /** The request context associated with the object */
+    /* CompleteClass */
+    var context: typings.officeJsPreview.OfficeExtension.ClientRequestContext = js.native
+    
+    /**
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
+      * isNullObject property.
+      */
+    /* CompleteClass */
+    var isNullObject: Boolean = js.native
+  }
   
   /**
     * An abstract RequestContext object that facilitates requests to the host Office application.
@@ -34,7 +47,8 @@ object OfficeExtension {
   @JSGlobal("OfficeExtension.ClientRequestContext")
   @js.native
   class ClientRequestContext ()
-    extends typings.officeJsPreview.OfficeExtension.ClientRequestContext {
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.ClientRequestContext {
     def this(url: String) = this()
   }
   
@@ -42,26 +56,71 @@ object OfficeExtension {
   @JSGlobal("OfficeExtension.ClientResult")
   @js.native
   class ClientResult[T] ()
-    extends typings.officeJsPreview.OfficeExtension.ClientResult[T]
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.ClientResult[T] {
+    
+    /** The value of the result that is retrieved from the document after `context.sync()` is invoked. */
+    /* CompleteClass */
+    var value: T = js.native
+  }
   
   @JSGlobal("OfficeExtension.EmbeddedSession")
   @js.native
   class EmbeddedSession protected ()
-    extends typings.officeJsPreview.OfficeExtension.EmbeddedSession {
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.EmbeddedSession {
     def this(url: String) = this()
     def this(url: String, options: EmbeddedOptions) = this()
+    
+    /* CompleteClass */
+    override def init(): js.Promise[js.Any] = js.native
   }
   
   /** The error object returned by `context.sync()`, if a promise is rejected due to an error while processing the request. */
   @JSGlobal("OfficeExtension.Error")
   @js.native
   class Error ()
-    extends typings.officeJsPreview.OfficeExtension.Error
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.Error {
+    
+    /** Error code string, such as "InvalidArgument". */
+    /* CompleteClass */
+    var code: String = js.native
+    
+    /** Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`). */
+    /* CompleteClass */
+    var debugInfo: DebugInfo = js.native
+    
+    /** Inner error, if applicable. */
+    /* CompleteClass */
+    var innerError: typings.officeJsPreview.OfficeExtension.Error = js.native
+    
+    /** The error message passed through from the host Office application. */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /** Error name: "OfficeExtension.Error".*/
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** Stack trace, if applicable. */
+    /* CompleteClass */
+    var stack: String = js.native
+    
+    /**
+      * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`.
+      * If there was an error, this contains all trace messages that were executed before the error occurred.
+      * These messages can help you monitor the program execution sequence and detect the case of the error.
+      */
+    /* CompleteClass */
+    var traceMessages: js.Array[String] = js.native
+  }
   
   @JSGlobal("OfficeExtension.ErrorCodes")
   @js.native
   class ErrorCodes ()
-    extends typings.officeJsPreview.OfficeExtension.ErrorCodes
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.ErrorCodes
   object ErrorCodes {
     
     @JSGlobal("OfficeExtension.ErrorCodes")
@@ -156,31 +215,59 @@ object OfficeExtension {
   @JSGlobal("OfficeExtension.EventHandlerResult")
   @js.native
   class EventHandlerResult[T] protected ()
-    extends typings.officeJsPreview.OfficeExtension.EventHandlerResult[T] {
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.EventHandlerResult[T] {
     def this(
       context: typings.officeJsPreview.OfficeExtension.ClientRequestContext,
       handlers: typings.officeJsPreview.OfficeExtension.EventHandlers[T],
-      handler: js.Function1[/* args */ T, js.Promise[_]]
+      handler: js.Function1[/* args */ T, js.Promise[js.Any]]
     ) = this()
+    
+    /** The request context associated with the object */
+    /* CompleteClass */
+    var context: typings.officeJsPreview.OfficeExtension.ClientRequestContext = js.native
+    
+    /* CompleteClass */
+    override def remove(): Unit = js.native
   }
   
   @JSGlobal("OfficeExtension.EventHandlers")
   @js.native
   class EventHandlers[T] protected ()
-    extends typings.officeJsPreview.OfficeExtension.EventHandlers[T] {
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.EventHandlers[T] {
     def this(
       context: typings.officeJsPreview.OfficeExtension.ClientRequestContext,
       parentObject: typings.officeJsPreview.OfficeExtension.ClientObject,
       name: String,
       eventInfo: EventInfo[T]
     ) = this()
+    
+    /**
+      * Adds a function to be called when the event is triggered.
+      * @param handler A promise-based function that takes in any relevant event arguments.
+      */
+    /* CompleteClass */
+    override def add(handler: js.Function1[T, js.Promise[js.Any]]): typings.officeJsPreview.OfficeExtension.EventHandlerResult[T] = js.native
+    
+    /**
+      * Removes the specified function from the event handler list so that it will not be called on subsequent events.
+      *
+      * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+      * More information can be found in {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+      *
+      * @param handler A reference to a function previously provided to the `add` method as an event handler.
+      */
+    /* CompleteClass */
+    override def remove(handler: js.Function1[T, js.Promise[js.Any]]): Unit = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("OfficeExtension.Promise")
   @js.native
   class Promise[T] protected ()
-    extends typings.std.Promise[T] {
+    extends StObject
+       with typings.std.Promise[T] {
     /**
       * Creates a new Promise.
       * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -208,7 +295,8 @@ object OfficeExtension {
   @JSGlobal("OfficeExtension.TrackedObjects")
   @js.native
   class TrackedObjects ()
-    extends typings.officeJsPreview.OfficeExtension.TrackedObjects
+    extends StObject
+       with typings.officeJsPreview.OfficeExtension.TrackedObjects
   
   /** Configuration */
   object config {

@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationRule extends StObject {
   
   /**
     * Indicates whether the authorization rule grants access to all clients.
     */
-  var AccessAll: js.UndefOr[Boolean] = js.native
+  var AccessAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the Client VPN endpoint with which the authorization rule is associated.
     */
-  var ClientVpnEndpointId: js.UndefOr[String] = js.native
+  var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * A brief description of the authorization rule.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv4 address range, in CIDR notation, of the network to which the authorization rule applies.
     */
-  var DestinationCidr: js.UndefOr[String] = js.native
+  var DestinationCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Active Directory group to which the authorization rule grants access.
     */
-  var GroupId: js.UndefOr[String] = js.native
+  var GroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the authorization rule.
     */
-  var Status: js.UndefOr[ClientVpnAuthorizationRuleStatus] = js.native
+  var Status: js.UndefOr[ClientVpnAuthorizationRuleStatus] = js.undefined
 }
 object AuthorizationRule {
   

@@ -2,30 +2,28 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for KeyManagementService.ListKeyRings.
   */
-@js.native
 trait SchemaListKeyRingsResponse extends StObject {
   
   /**
     * The list of KeyRings.
     */
-  var keyRings: js.UndefOr[js.Array[SchemaKeyRing]] = js.native
+  var keyRings: js.UndefOr[js.Array[SchemaKeyRing]] = js.undefined
   
   /**
     * A token to retrieve next page of results. Pass this value in
     * ListKeyRingsRequest.page_token to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of KeyRings that matched the query.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaListKeyRingsResponse {
   

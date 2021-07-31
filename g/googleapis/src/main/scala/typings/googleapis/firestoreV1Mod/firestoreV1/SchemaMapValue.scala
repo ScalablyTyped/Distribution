@@ -3,13 +3,11 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A map value.
   */
-@js.native
 trait SchemaMapValue extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaMapValue extends StObject {
     * names are forbidden except in certain documented contexts. The map keys,
     * represented as UTF-8, must not exceed 1,500 bytes and cannot be empty.
     */
-  var fields: js.UndefOr[StringDictionary[SchemaValue]] = js.native
+  var fields: js.UndefOr[StringDictionary[SchemaValue]] = js.undefined
 }
 object SchemaMapValue {
   

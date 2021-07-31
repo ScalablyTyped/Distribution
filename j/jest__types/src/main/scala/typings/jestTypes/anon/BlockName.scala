@@ -5,27 +5,23 @@ import typings.jestTypes.circusMod.SyncEvent
 import typings.jestTypes.jestTypesStrings.finish_describe_definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlockName extends SyncEvent {
+trait BlockName
+  extends StObject
+     with SyncEvent {
   
-  var blockName: typings.jestTypes.circusMod.BlockName = js.native
+  var blockName: typings.jestTypes.circusMod.BlockName
   
-  var mode: BlockMode = js.native
+  var mode: BlockMode
   
-  var name: finish_describe_definition = js.native
+  var name: finish_describe_definition
 }
 object BlockName {
   
   @scala.inline
-  def apply(
-    blockName: typings.jestTypes.circusMod.BlockName,
-    mode: BlockMode,
-    name: finish_describe_definition
-  ): BlockName = {
-    val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): BlockName = {
+    val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "finish_describe_definition")
     __obj.asInstanceOf[BlockName]
   }
   

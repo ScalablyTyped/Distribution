@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVolumesRequest extends StObject {
   
   /**
     * The instance ID. If you use this parameter, DescribeVolumes returns descriptions of the volumes associated with the specified instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The RAID array ID. If you use this parameter, DescribeVolumes returns descriptions of the volumes associated with the specified RAID array.
     */
-  var RaidArrayId: js.UndefOr[String] = js.native
+  var RaidArrayId: js.UndefOr[String] = js.undefined
   
   /**
     * A stack ID. The action describes the stack's registered Amazon EBS volumes.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
   
   /**
     * Am array of volume IDs. If you use this parameter, DescribeVolumes returns descriptions of the specified volumes. Otherwise, it returns a description of every volume.
     */
-  var VolumeIds: js.UndefOr[Strings] = js.native
+  var VolumeIds: js.UndefOr[Strings] = js.undefined
 }
 object DescribeVolumesRequest {
   

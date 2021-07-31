@@ -2,17 +2,15 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Features extends StObject {
   
-  var flash: Boolean = js.native
+  var flash: Boolean
   
-  var flashVersion: Double = js.native
+  var flashVersion: Double
   
-  var iframe: Boolean = js.native
+  var iframe: Boolean
 }
 object Features {
   

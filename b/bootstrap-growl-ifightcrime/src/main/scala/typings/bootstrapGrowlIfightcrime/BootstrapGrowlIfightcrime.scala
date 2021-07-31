@@ -3,7 +3,6 @@ package typings.bootstrapGrowlIfightcrime
 import typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BootstrapGrowlIfightcrime {
@@ -36,18 +35,17 @@ object BootstrapGrowlIfightcrime {
     def right: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.right = "right".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.right]
   }
   
-  @js.native
   trait OffsetOption extends StObject {
     
     /**
       * Offset amount
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * Position: top or bottom
       */
-    var from: js.UndefOr[OffsetPositionType] = js.native
+    var from: js.UndefOr[OffsetPositionType] = js.undefined
   }
   object OffsetOption {
     
@@ -88,48 +86,47 @@ object BootstrapGrowlIfightcrime {
     def top: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.top = "top".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.top]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 'left', 'right', or 'center'
       */
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
     /**
       *  If true then will display a cross to close the popup.
       */
-    var allow_dismiss: js.UndefOr[Boolean] = js.native
+    var allow_dismiss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Time while the message will be displayed. It's not equivalent to the *demo* timeOut!
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Which element to append to
       */
-    var ele: js.UndefOr[String] = js.native
+    var ele: js.UndefOr[String] = js.undefined
     
     /**
       * Offset Options
       */
-    var offset: js.UndefOr[OffsetOption] = js.native
+    var offset: js.UndefOr[OffsetOption] = js.undefined
     
     /**
       * Spacing between consecutively stacked growls.
       */
-    var stackup_spacing: js.UndefOr[Double] = js.native
+    var stackup_spacing: js.UndefOr[Double] = js.undefined
     
     /**
       * Values of (null, 'info', 'danger', 'success', 'warning') or another value
       */
-    var `type`: js.UndefOr[AlertType] = js.native
+    var `type`: js.UndefOr[AlertType] = js.undefined
     
     /**
       * Integer or 'auto'
       */
-    var width: js.UndefOr[Double | auto] = js.native
+    var width: js.UndefOr[Double | auto] = js.undefined
   }
   object Options {
     

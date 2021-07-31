@@ -2,23 +2,21 @@ package typings.paypalPayoutsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBatchPayoutResponse extends StObject {
   
-  var batch_header: js.UndefOr[PayoutBatchHeader] = js.native
+  var batch_header: js.UndefOr[PayoutBatchHeader] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.native
+  var errors: js.UndefOr[js.Any] = js.undefined
   
-  var items: js.UndefOr[js.Array[PayoutBatchItems]] = js.native
+  var items: js.UndefOr[js.Array[PayoutBatchItems]] = js.undefined
   
-  var links: js.UndefOr[js.Array[LinkDescription]] = js.native
+  var links: js.UndefOr[js.Array[LinkDescription]] = js.undefined
   
-  var total_items: js.UndefOr[Double] = js.native
+  var total_items: js.UndefOr[Double] = js.undefined
   
-  var total_pages: js.UndefOr[Double] = js.native
+  var total_pages: js.UndefOr[Double] = js.undefined
 }
 object GetBatchPayoutResponse {
   

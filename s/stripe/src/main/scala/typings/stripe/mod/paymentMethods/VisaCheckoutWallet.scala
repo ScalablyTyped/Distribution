@@ -3,22 +3,22 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.stripeStrings.visa_checkout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VisaCheckoutWallet extends CardWallet {
+trait VisaCheckoutWallet
+  extends StObject
+     with CardWallet {
   
-  var `type`: visa_checkout = js.native
+  var `type`: visa_checkout
   
-  var visa_checkout: WalletData = js.native
+  var visa_checkout: WalletData
 }
 object VisaCheckoutWallet {
   
   @scala.inline
-  def apply(`type`: visa_checkout, visa_checkout: WalletData): VisaCheckoutWallet = {
+  def apply(visa_checkout: WalletData): VisaCheckoutWallet = {
     val __obj = js.Dynamic.literal(visa_checkout = visa_checkout.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("visa_checkout")
     __obj.asInstanceOf[VisaCheckoutWallet]
   }
   

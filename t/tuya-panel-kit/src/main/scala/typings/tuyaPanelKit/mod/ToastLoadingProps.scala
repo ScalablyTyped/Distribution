@@ -4,23 +4,23 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToastLoadingProps extends ToastProps {
+trait ToastLoadingProps
+  extends StObject
+     with ToastProps {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var loadingBackgroundColor: js.UndefOr[String] = js.native
+  var loadingBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object ToastLoadingProps {
   

@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStyleSheetRequest extends StObject {
   
   /**
     * Identifier of the frame where "via-inspector" stylesheet should be created.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
 }
 object CreateStyleSheetRequest {
   

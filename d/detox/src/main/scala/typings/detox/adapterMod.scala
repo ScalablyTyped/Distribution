@@ -5,7 +5,6 @@ import typings.detox.mod.global.Detox_.CircusTestEventListenerBase
 import typings.detox.mod.global.Detox_.Detox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod extends Shortcut {
@@ -14,19 +13,20 @@ object adapterMod extends Shortcut {
   @js.native
   val ^ : DetoxJestAdapter = js.native
   
-  @js.native
-  trait DetoxJestAdapter extends CircusTestEventListenerBase {
+  trait DetoxJestAdapter
+    extends StObject
+       with CircusTestEventListenerBase {
     
-    def afterAll(): js.Promise[Unit] = js.native
+    def afterAll(): js.Promise[Unit]
     
-    def beforeEach(): js.Promise[Unit] = js.native
+    def beforeEach(): js.Promise[Unit]
     
-    var detox: Detox = js.native
+    var detox: Detox
     
     // These are not publicly used, but are defined in order to overlap with the jasmine.CustomReporter interface (which is a weak interface)
-    def specDone(): Unit = js.native
+    def specDone(): Unit
     
-    def specStarted(): Unit = js.native
+    def specStarted(): Unit
   }
   object DetoxJestAdapter {
     

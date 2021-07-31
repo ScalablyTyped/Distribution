@@ -2,19 +2,17 @@ package typings.reactNativeSortableList
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Animated extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var dx: js.UndefOr[Double] = js.native
+    var dx: js.UndefOr[Double] = js.undefined
     
-    var dy: js.UndefOr[Double] = js.native
+    var dy: js.UndefOr[Double] = js.undefined
   }
   object Animated {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key[K] extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[K] = js.native
+    var key: js.UndefOr[K] = js.undefined
   }
   object Key {
     
@@ -63,7 +60,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[_], K] (val x: Self with Key[K]) extends AnyVal {
+    implicit class KeyMutableBuilder[Self <: Key[?], K] (val x: Self & Key[K]) extends AnyVal {
       
       @scala.inline
       def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
@@ -79,14 +76,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object X {
     

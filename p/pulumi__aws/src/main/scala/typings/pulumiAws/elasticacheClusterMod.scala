@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticacheClusterMod {
@@ -26,7 +25,7 @@ object elasticacheClusterMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ClusterArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -187,6 +186,10 @@ object elasticacheClusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/elasticache/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -196,29 +199,23 @@ object elasticacheClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticache/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/elasticache/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/elasticache/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/elasticache/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticache/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticache/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
@@ -227,57 +224,57 @@ object elasticacheClusterMod {
       * `false`. See [Amazon ElastiCache Documentation for more information.](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html)
       * (Available since v0.6.0)
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `numCacheNodes` must be greater than `1`
       */
-    val azMode: js.UndefOr[Input[String]] = js.native
+    val azMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Group identifier. ElastiCache converts
       * this name to lowercase
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the cache engine to be used for this cache cluster.
       * Valid values for this parameter are `memcached` or `redis`
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version number of the cache engine to be used.
       * See [Describe Cache Engine Versions](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-engine-versions.html)
       * in the AWS Documentation center for supported versions
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the weekly time range for when maintenance
       * on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
       * The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compute and memory capacity of the nodes. See
       * [Available Cache Node Types](https://aws.amazon.com/elasticache/details#Available_Cache_Node_Types) for
       * supported node types
       */
-    val nodeType: js.UndefOr[Input[String]] = js.native
+    val nodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic to send ElastiCache notifications to. Example:
       * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
       */
-    val notificationTopicArn: js.UndefOr[Input[String]] = js.native
+    val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The initial number of cache nodes that the
@@ -285,52 +282,52 @@ object elasticacheClusterMod {
       * value must be between 1 and 20. If this number is reduced on subsequent runs,
       * the highest numbered nodes will be removed.
       */
-    val numCacheNodes: js.UndefOr[Input[Double]] = js.native
+    val numCacheNodes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Name of the parameter group to associate
       * with this cache cluster
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replicationGroupId`.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of the Availability Zones in which cache nodes are created. If you are creating your cluster in an Amazon VPC you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group. The number of Availability Zones listed must equal the value of `numCacheNodes`. If you want all the nodes in the same Availability Zone, use `availabilityZone` instead, or repeat the Availability Zone multiple times in the list. Default: System chosen Availability Zones. Detecting drift of existing node availability zone is not currently supported. Updating this argument by itself to migrate existing node availability zones is not currently supported and will show a perpetual difference.
       */
-    val preferredAvailabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val preferredAvailabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the replication group to which this cluster should belong. If this parameter is specified, the cluster is added to the specified replication group as a read replica; otherwise, the cluster is a standalone primary that is not part of any replication group.
       */
-    val replicationGroupId: js.UndefOr[Input[String]] = js.native
+    val replicationGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more VPC security groups associated
       * with the cache cluster
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of security group
       * names to associate with this cache cluster
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A single-element string list containing an
       * Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
       * Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
       */
-    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of a snapshot from which to restore data into the new node group.  Changing the `snapshotName` forces a new resource.
       */
-    val snapshotName: js.UndefOr[Input[String]] = js.native
+    val snapshotName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days for which ElastiCache will
@@ -339,24 +336,24 @@ object elasticacheClusterMod {
       * before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
       * Please note that setting a `snapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes
       */
-    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.native
+    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The daily time range (in UTC) during which ElastiCache will
       * begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
       */
-    val snapshotWindow: js.UndefOr[Input[String]] = js.native
+    val snapshotWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the subnet group to be used
       * for the cache cluster.
       */
-    val subnetGroupName: js.UndefOr[Input[String]] = js.native
+    val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterArgs {
     
@@ -515,7 +512,6 @@ object elasticacheClusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
@@ -524,75 +520,75 @@ object elasticacheClusterMod {
       * `false`. See [Amazon ElastiCache Documentation for more information.](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html)
       * (Available since v0.6.0)
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `numCacheNodes` must be greater than `1`
       */
-    val azMode: js.UndefOr[Input[String]] = js.native
+    val azMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of node objects including `id`, `address`, `port` and `availabilityZone`.
       * Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
       */
-    val cacheNodes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.elasticache.ClusterCacheNode]]]] = js.native
+    val cacheNodes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.elasticache.ClusterCacheNode]]]] = js.undefined
     
     /**
       * (Memcached only) The DNS name of the cache cluster without the port appended.
       */
-    val clusterAddress: js.UndefOr[Input[String]] = js.native
+    val clusterAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Group identifier. ElastiCache converts
       * this name to lowercase
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Memcached only) The configuration endpoint to allow host discovery.
       */
-    val configurationEndpoint: js.UndefOr[Input[String]] = js.native
+    val configurationEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the cache engine to be used for this cache cluster.
       * Valid values for this parameter are `memcached` or `redis`
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version number of the cache engine to be used.
       * See [Describe Cache Engine Versions](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-engine-versions.html)
       * in the AWS Documentation center for supported versions
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the weekly time range for when maintenance
       * on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
       * The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compute and memory capacity of the nodes. See
       * [Available Cache Node Types](https://aws.amazon.com/elasticache/details#Available_Cache_Node_Types) for
       * supported node types
       */
-    val nodeType: js.UndefOr[Input[String]] = js.native
+    val nodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic to send ElastiCache notifications to. Example:
       * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
       */
-    val notificationTopicArn: js.UndefOr[Input[String]] = js.native
+    val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The initial number of cache nodes that the
@@ -600,52 +596,52 @@ object elasticacheClusterMod {
       * value must be between 1 and 20. If this number is reduced on subsequent runs,
       * the highest numbered nodes will be removed.
       */
-    val numCacheNodes: js.UndefOr[Input[Double]] = js.native
+    val numCacheNodes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Name of the parameter group to associate
       * with this cache cluster
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replicationGroupId`.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of the Availability Zones in which cache nodes are created. If you are creating your cluster in an Amazon VPC you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group. The number of Availability Zones listed must equal the value of `numCacheNodes`. If you want all the nodes in the same Availability Zone, use `availabilityZone` instead, or repeat the Availability Zone multiple times in the list. Default: System chosen Availability Zones. Detecting drift of existing node availability zone is not currently supported. Updating this argument by itself to migrate existing node availability zones is not currently supported and will show a perpetual difference.
       */
-    val preferredAvailabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val preferredAvailabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the replication group to which this cluster should belong. If this parameter is specified, the cluster is added to the specified replication group as a read replica; otherwise, the cluster is a standalone primary that is not part of any replication group.
       */
-    val replicationGroupId: js.UndefOr[Input[String]] = js.native
+    val replicationGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more VPC security groups associated
       * with the cache cluster
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of security group
       * names to associate with this cache cluster
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A single-element string list containing an
       * Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3.
       * Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
       */
-    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val snapshotArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of a snapshot from which to restore data into the new node group.  Changing the `snapshotName` forces a new resource.
       */
-    val snapshotName: js.UndefOr[Input[String]] = js.native
+    val snapshotName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days for which ElastiCache will
@@ -654,24 +650,24 @@ object elasticacheClusterMod {
       * before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
       * Please note that setting a `snapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes
       */
-    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.native
+    val snapshotRetentionLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The daily time range (in UTC) during which ElastiCache will
       * begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
       */
-    val snapshotWindow: js.UndefOr[Input[String]] = js.native
+    val snapshotWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the subnet group to be used
       * for the cache cluster.
       */
-    val subnetGroupName: js.UndefOr[Input[String]] = js.native
+    val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterState {
     

@@ -2,20 +2,18 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a temporal position of a visual widget inside a video.
   */
-@js.native
 trait SchemaInvideoTiming extends StObject {
   
   /**
     * Defines the duration in milliseconds for which the promotion should be
     * displayed. If missing, the client should use the default.
     */
-  var durationMs: js.UndefOr[String] = js.native
+  var durationMs: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the time at which the promotion will appear. Depending on the
@@ -23,7 +21,7 @@ trait SchemaInvideoTiming extends StObject {
     * offset from the start or from the end of the video, expressed in
     * milliseconds.
     */
-  var offsetMs: js.UndefOr[String] = js.native
+  var offsetMs: js.UndefOr[String] = js.undefined
   
   /**
     * Describes a timing type. If the value is offsetFromStart, then the
@@ -31,7 +29,7 @@ trait SchemaInvideoTiming extends StObject {
     * value is offsetFromEnd, then the offsetMs field represents an offset from
     * the end of the video.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaInvideoTiming {
   

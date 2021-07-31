@@ -6,7 +6,6 @@ import typings.ltijs.ltijsBooleans.`false`
 import typings.ltijs.ltijsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseMod {
@@ -37,14 +36,13 @@ object databaseMod {
     def setup(): js.Promise[`true`] = js.native
   }
   
-  @js.native
   trait DatabaseOptions extends StObject {
     
-    var connection: js.UndefOr[KeepAlive] = js.native
+    var connection: js.UndefOr[KeepAlive] = js.undefined
     
-    var plugin: js.UndefOr[js.Object] = js.native
+    var plugin: js.UndefOr[js.Object] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object DatabaseOptions {
     

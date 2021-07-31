@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait IconTabFilterDesign extends StObject
 object IconTabFilterDesign extends StObject {
   
   @js.native
-  sealed trait Horizontal extends IconTabFilterDesign
+  sealed trait Horizontal
+    extends StObject
+       with IconTabFilterDesign
   
   @js.native
-  sealed trait Vertical extends IconTabFilterDesign
+  sealed trait Vertical
+    extends StObject
+       with IconTabFilterDesign
 }

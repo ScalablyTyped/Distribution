@@ -2,24 +2,24 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 显示照片预览用的配置对象
   */
-@js.native
-trait PreviewImageConfig extends WxBaseRequestConfig {
+trait PreviewImageConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 当前显示图片的 http 链接
     */
-  var current: String = js.native
+  var current: String
   
   /**
     * 需要预览的图片 http 链接列表
     */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object PreviewImageConfig {
   

@@ -2,110 +2,159 @@ package typings.keystonejsFields
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@keystonejs/fields", "AutoIncrement")
   @js.native
-  class AutoIncrement () extends FieldType
+  class AutoIncrement ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "CalendarDay")
   @js.native
-  class CalendarDay () extends FieldType
+  class CalendarDay ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Checkbox")
   @js.native
-  class Checkbox () extends FieldType
+  class Checkbox ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "CloudinaryImage")
   @js.native
-  class CloudinaryImage () extends FieldType
+  class CloudinaryImage ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Color")
   @js.native
-  class Color () extends FieldType
+  class Color ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Content")
   @js.native
-  class Content () extends FieldType
+  class Content ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "DateTime")
   @js.native
-  class DateTime () extends FieldType
+  class DateTime ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "DateTimeUtc")
   @js.native
-  class DateTimeUtc () extends FieldType
+  class DateTimeUtc ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Decimal")
   @js.native
-  class Decimal () extends FieldType
+  class Decimal ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "File")
   @js.native
-  class File () extends FieldType
+  class File ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Float")
   @js.native
-  class Float () extends FieldType
+  class Float ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Integer")
   @js.native
-  class Integer () extends FieldType
+  class Integer ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Location")
   @js.native
-  class Location () extends FieldType
+  class Location ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Markdown")
   @js.native
-  class Markdown () extends FieldType
+  class Markdown ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "MongoId")
   @js.native
-  class MongoId () extends FieldType
+  class MongoId ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "OEmbed")
   @js.native
-  class OEmbed () extends FieldType
+  class OEmbed ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Password")
   @js.native
-  class Password () extends FieldType
+  class Password ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Relationship")
   @js.native
-  class Relationship () extends FieldType
+  class Relationship ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Select")
   @js.native
-  class Select () extends FieldType
+  class Select ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Slug")
   @js.native
-  class Slug () extends FieldType
+  class Slug ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Text")
   @js.native
-  class Text () extends FieldType
+  class Text ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Unsplash")
   @js.native
-  class Unsplash () extends FieldType
+  class Unsplash ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Url")
   @js.native
-  class Url () extends FieldType
+  class Url ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Uuid")
   @js.native
-  class Uuid () extends FieldType
+  class Uuid ()
+    extends StObject
+       with FieldType
   
   @JSImport("@keystonejs/fields", "Wysiwyg")
   @js.native
-  class Wysiwyg () extends FieldType
+  class Wysiwyg ()
+    extends StObject
+       with FieldType
   
   /* Rewritten from type alias, can be one of: 
     - typings.keystonejsFields.mod.AutoIncrement

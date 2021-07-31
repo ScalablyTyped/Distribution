@@ -5,40 +5,39 @@ import typings.mapboxGl.mapboxGlStrings.mapbox
 import typings.mapboxGl.mapboxGlStrings.terrarium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterDemSource
-  extends Source
+  extends StObject
+     with Source
      with AnySourceData
      with AnySourceImpl {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var bounds: js.UndefOr[js.Array[Double]] = js.native
+  var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var encoding: js.UndefOr[terrarium | mapbox] = js.native
+  var encoding: js.UndefOr[terrarium | mapbox] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var tiles: js.UndefOr[js.Array[String]] = js.native
+  var tiles: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("type")
-  var type_RasterDemSource: `raster-dem` = js.native
+  var type_RasterDemSource: `raster-dem`
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object RasterDemSource {
   
   @scala.inline
-  def apply(`type`: `raster-dem`): RasterDemSource = {
+  def apply(): RasterDemSource = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("raster-dem")
     __obj.asInstanceOf[RasterDemSource]
   }
   

@@ -9,10 +9,13 @@ import typings.ptyJs.anon.Master
 import typings.ptyJs.anon.Pid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("pty.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pty.js", "Terminal")
   @js.native
@@ -22,12 +25,12 @@ object mod {
     */
   class Terminal () extends StObject {
     def this(file: String) = this()
-    def this(file: js.UndefOr[scala.Nothing], args: js.Array[String]) = this()
     def this(file: String, args: js.Array[String]) = this()
-    def this(file: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], opt: TerminalOptions) = this()
-    def this(file: js.UndefOr[scala.Nothing], args: js.Array[String], opt: TerminalOptions) = this()
-    def this(file: String, args: js.UndefOr[scala.Nothing], opt: TerminalOptions) = this()
+    def this(file: Unit, args: js.Array[String]) = this()
     def this(file: String, args: js.Array[String], opt: TerminalOptions) = this()
+    def this(file: String, args: Unit, opt: TerminalOptions) = this()
+    def this(file: Unit, args: js.Array[String], opt: TerminalOptions) = this()
+    def this(file: Unit, args: Unit, opt: TerminalOptions) = this()
     
     // NodeJS EventEmitter interface
     def addListener(event: String, listener: js.Function): this.type = js.native
@@ -95,9 +98,9 @@ object mod {
     def removeListener(event: String, listener: js.Function): this.type = js.native
     
     def resize(): Unit = js.native
-    def resize(cols: js.UndefOr[scala.Nothing], rows: Double): Unit = js.native
     def resize(cols: Double): Unit = js.native
     def resize(cols: Double, rows: Double): Unit = js.native
+    def resize(cols: Unit, rows: Double): Unit = js.native
     
     def resume(): Unit = js.native
     
@@ -119,75 +122,49 @@ object mod {
     def write(data: js.Any): Boolean = js.native
   }
   
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: js.UndefOr[scala.Nothing], args: js.Array[String]): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: js.UndefOr[scala.Nothing], args: js.Array[String], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: String): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: String, args: js.UndefOr[scala.Nothing], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: String, args: js.Array[String]): Terminal = js.native
-  @JSImport("pty.js", "createTerminal")
-  @js.native
-  def createTerminal(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = js.native
+  @scala.inline
+  def createTerminal(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")().asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def createTerminal(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
   
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: js.UndefOr[scala.Nothing], args: js.Array[String]): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: js.UndefOr[scala.Nothing], args: js.Array[String], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: String): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: String, args: js.UndefOr[scala.Nothing], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: String, args: js.Array[String]): Terminal = js.native
-  @JSImport("pty.js", "fork")
-  @js.native
-  def fork(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = js.native
+  @scala.inline
+  def fork(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")().asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def fork(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
   
   object native {
     
-    @JSImport("pty.js", "native.fork")
+    @JSImport("pty.js", "native")
     @js.native
-    def fork(file: String, args: js.Array[String], env: js.Any, cwd: String, cols: Double, rows: Double): Fd = js.native
-    @JSImport("pty.js", "native.fork")
-    @js.native
-    def fork(
-      file: String,
-      args: js.Array[String],
-      env: js.Any,
-      cwd: String,
-      cols: Double,
-      rows: Double,
-      uid: js.UndefOr[scala.Nothing],
-      gid: Double
-    ): Fd = js.native
-    @JSImport("pty.js", "native.fork")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fork(file: String, args: js.Array[String], env: js.Any, cwd: String, cols: Double, rows: Double): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Fd]
+    @scala.inline
     def fork(
       file: String,
       args: js.Array[String],
@@ -196,9 +173,8 @@ object mod {
       cols: Double,
       rows: Double,
       uid: Double
-    ): Fd = js.native
-    @JSImport("pty.js", "native.fork")
-    @js.native
+    ): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], uid.asInstanceOf[js.Any])).asInstanceOf[Fd]
+    @scala.inline
     def fork(
       file: String,
       args: js.Array[String],
@@ -208,81 +184,75 @@ object mod {
       rows: Double,
       uid: Double,
       gid: Double
-    ): Fd = js.native
+    ): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Fd]
+    @scala.inline
+    def fork(
+      file: String,
+      args: js.Array[String],
+      env: js.Any,
+      cwd: String,
+      cols: Double,
+      rows: Double,
+      uid: Unit,
+      gid: Double
+    ): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Fd]
     
-    @JSImport("pty.js", "native.kill")
-    @js.native
-    def kill(pid: Double): Unit = js.native
+    @scala.inline
+    def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("pty.js", "native.open")
-    @js.native
-    def open(cols: Double, rows: Double): Master = js.native
-    @JSImport("pty.js", "native.open")
-    @js.native
-    def open(dataPipe: String, cols: Double, rows: Double, debug: Boolean): Pid = js.native
+    @scala.inline
+    def open(cols: Double, rows: Double): Master = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Master]
+    @scala.inline
+    def open(dataPipe: String, cols: Double, rows: Double, debug: Boolean): Pid = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(dataPipe.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], debug.asInstanceOf[js.Any])).asInstanceOf[Pid]
     
-    @JSImport("pty.js", "native.process")
-    @js.native
-    def process(fd: Double, tty: String): String = js.native
+    @scala.inline
+    def process(fd: Double, tty: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(fd.asInstanceOf[js.Any], tty.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("pty.js", "native.resize")
-    @js.native
-    def resize(fd: Double, cols: Double, rows: Double): Unit = js.native
+    @scala.inline
+    def resize(fd: Double, cols: Double, rows: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(fd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("pty.js", "native.startProcess")
-    @js.native
-    def startProcess(pid: Double, file: String, cmdline: String, env: js.Array[String], cwd: String): Unit = js.native
+    @scala.inline
+    def startProcess(pid: Double, file: String, cmdline: String, env: js.Array[String], cwd: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startProcess")(pid.asInstanceOf[js.Any], file.asInstanceOf[js.Any], cmdline.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("pty.js", "open")
-  @js.native
-  def open(): Terminal = js.native
-  @JSImport("pty.js", "open")
-  @js.native
-  def open(opt: Cols): Terminal = js.native
+  @scala.inline
+  def open(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Terminal]
+  @scala.inline
+  def open(opt: Cols): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(opt.asInstanceOf[js.Any]).asInstanceOf[Terminal]
   
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: js.UndefOr[scala.Nothing], args: js.Array[String]): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: js.UndefOr[scala.Nothing], args: js.Array[String], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: String): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: String, args: js.UndefOr[scala.Nothing], opt: TerminalOptions): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: String, args: js.Array[String]): Terminal = js.native
-  @JSImport("pty.js", "spawn")
-  @js.native
-  def spawn(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = js.native
+  @scala.inline
+  def spawn(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")().asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  @scala.inline
+  def spawn(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
   
   /** Options that can be used when creating a new pseudo-terminal. */
-  @js.native
   trait TerminalOptions extends StObject {
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
   }
   object TerminalOptions {
     

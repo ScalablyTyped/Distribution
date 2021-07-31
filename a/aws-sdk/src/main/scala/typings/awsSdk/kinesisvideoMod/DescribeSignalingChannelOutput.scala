@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSignalingChannelOutput extends StObject {
   
   /**
     * A structure that encapsulates the specified signaling channel's metadata and properties.
     */
-  var ChannelInfo: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelInfo] = js.native
+  var ChannelInfo: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelInfo] = js.undefined
 }
 object DescribeSignalingChannelOutput {
   

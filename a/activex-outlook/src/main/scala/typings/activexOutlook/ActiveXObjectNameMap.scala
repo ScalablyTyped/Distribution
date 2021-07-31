@@ -22,71 +22,69 @@ import typings.activexOutlook.Outlook.OlkTimeZoneControl
 import typings.activexOutlook.Outlook.RecipientControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("DOCSITE.DocSiteControl")
-  var DOCSITEDotDocSiteControl: DocSiteControl = js.native
+  var DOCSITEDotDocSiteControl: DocSiteControl
   
   @JSName("Outlook.Application")
-  var OutlookDotApplication: Application = js.native
+  var OutlookDotApplication: Application
   
   @JSName("Outlook.OlkBusinessCardControl")
-  var OutlookDotOlkBusinessCardControl: OlkBusinessCardControl = js.native
+  var OutlookDotOlkBusinessCardControl: OlkBusinessCardControl
   
   @JSName("Outlook.OlkCategoryStrip")
-  var OutlookDotOlkCategoryStrip: OlkCategory = js.native
+  var OutlookDotOlkCategoryStrip: OlkCategory
   
   @JSName("Outlook.OlkCheckBox")
-  var OutlookDotOlkCheckBox: OlkCheckBox = js.native
+  var OutlookDotOlkCheckBox: OlkCheckBox
   
   @JSName("Outlook.OlkComboBox")
-  var OutlookDotOlkComboBox: OlkComboBox = js.native
+  var OutlookDotOlkComboBox: OlkComboBox
   
   @JSName("Outlook.OlkCommandButton")
-  var OutlookDotOlkCommandButton: OlkCommandButton = js.native
+  var OutlookDotOlkCommandButton: OlkCommandButton
   
   @JSName("Outlook.OlkContactPhoto")
-  var OutlookDotOlkContactPhoto: OlkContactPhoto = js.native
+  var OutlookDotOlkContactPhoto: OlkContactPhoto
   
   @JSName("Outlook.OlkDateControl")
-  var OutlookDotOlkDateControl: OlkDateControl = js.native
+  var OutlookDotOlkDateControl: OlkDateControl
   
   @JSName("Outlook.OlkFrameHeader")
-  var OutlookDotOlkFrameHeader: OlkFrameHeader = js.native
+  var OutlookDotOlkFrameHeader: OlkFrameHeader
   
   @JSName("Outlook.OlkInfoBar")
-  var OutlookDotOlkInfoBar: OlkInfoBar = js.native
+  var OutlookDotOlkInfoBar: OlkInfoBar
   
   @JSName("Outlook.OlkLabel")
-  var OutlookDotOlkLabel: OlkLabel = js.native
+  var OutlookDotOlkLabel: OlkLabel
   
   @JSName("Outlook.OlkListBox")
-  var OutlookDotOlkListBox: OlkListBox = js.native
+  var OutlookDotOlkListBox: OlkListBox
   
   @JSName("Outlook.OlkOptionButton")
-  var OutlookDotOlkOptionButton: OlkOptionButton = js.native
+  var OutlookDotOlkOptionButton: OlkOptionButton
   
   @JSName("Outlook.OlkPageControl")
-  var OutlookDotOlkPageControl: OlkPageControl = js.native
+  var OutlookDotOlkPageControl: OlkPageControl
   
   @JSName("Outlook.OlkSenderPhoto")
-  var OutlookDotOlkSenderPhoto: OlkSenderPhoto = js.native
+  var OutlookDotOlkSenderPhoto: OlkSenderPhoto
   
   @JSName("Outlook.OlkTextBox")
-  var OutlookDotOlkTextBox: OlkTextBox = js.native
+  var OutlookDotOlkTextBox: OlkTextBox
   
   @JSName("Outlook.OlkTimeControl")
-  var OutlookDotOlkTimeControl: OlkTimeControl = js.native
+  var OutlookDotOlkTimeControl: OlkTimeControl
   
   @JSName("Outlook.OlkTimeZone")
-  var OutlookDotOlkTimeZone: OlkTimeZoneControl = js.native
+  var OutlookDotOlkTimeZone: OlkTimeZoneControl
   
   @JSName("RECIP.RecipCtl")
-  var RECIPDotRecipCtl: RecipientControl = js.native
+  var RECIPDotRecipCtl: RecipientControl
 }
 object ActiveXObjectNameMap {
   

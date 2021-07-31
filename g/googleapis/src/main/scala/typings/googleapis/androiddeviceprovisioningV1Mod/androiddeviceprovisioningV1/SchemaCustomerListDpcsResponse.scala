@@ -2,20 +2,18 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message of customer&#39;s listing DPCs.
   */
-@js.native
 trait SchemaCustomerListDpcsResponse extends StObject {
   
   /**
     * The list of DPCs available to the customer that support zero-touch
     * enrollment.
     */
-  var dpcs: js.UndefOr[js.Array[SchemaDpc]] = js.native
+  var dpcs: js.UndefOr[js.Array[SchemaDpc]] = js.undefined
 }
 object SchemaCustomerListDpcsResponse {
   

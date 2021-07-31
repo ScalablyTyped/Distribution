@@ -2,13 +2,11 @@ package typings.jqueryBootstrapWizard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var bootstrapWizard: Wizard = js.native
+  var bootstrapWizard: Wizard
 }
 object JQueryStatic {
   

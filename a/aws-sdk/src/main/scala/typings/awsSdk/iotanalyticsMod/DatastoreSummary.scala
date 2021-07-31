@@ -2,41 +2,39 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatastoreSummary extends StObject {
   
   /**
     * When the data store was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the data store.
     */
-  var datastoreName: js.UndefOr[DatastoreName] = js.native
+  var datastoreName: js.UndefOr[DatastoreName] = js.undefined
   
   /**
     * Where data store data is stored.
     */
-  var datastoreStorage: js.UndefOr[DatastoreStorageSummary] = js.native
+  var datastoreStorage: js.UndefOr[DatastoreStorageSummary] = js.undefined
   
   /**
     * The last time when a new message arrived in the data store. AWS IoT Analytics updates this value at most once per minute for one data store. Hence, the lastMessageArrivalTime value is an approximation. This feature only applies to messages that arrived in the data store after October 23, 2020. 
     */
-  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.native
+  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time the data store was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the data store.
     */
-  var status: js.UndefOr[DatastoreStatus] = js.native
+  var status: js.UndefOr[DatastoreStatus] = js.undefined
 }
 object DatastoreSummary {
   

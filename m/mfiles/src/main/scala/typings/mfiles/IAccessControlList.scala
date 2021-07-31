@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlList extends StObject {
   
-  val AutomaticComponents: IAccessControlListComponentContainer = js.native
+  val AutomaticComponents: IAccessControlListComponentContainer
   
-  val CheckedOutToUserID: Double = js.native
+  val CheckedOutToUserID: Double
   
-  def Clone(): IAccessControlList = js.native
+  def Clone(): IAccessControlList
   
-  def CloneFrom(AccessControlList: IAccessControlList): Unit = js.native
+  def CloneFrom(AccessControlList: IAccessControlList): Unit
   
-  var CustomComponent: IAccessControlListComponent = js.native
+  var CustomComponent: IAccessControlListComponent
   
-  def EqualTo(AccessControlList: IAccessControlList): Boolean = js.native
+  def EqualTo(AccessControlList: IAccessControlList): Boolean
   
-  val HasCheckedOutToUserID: Boolean = js.native
+  val HasCheckedOutToUserID: Boolean
   
-  def HasIdenticalPermissions(AccessControlList: IAccessControlList): Boolean = js.native
+  def HasIdenticalPermissions(AccessControlList: IAccessControlList): Boolean
   
-  var IsFullyAuthoritative: Boolean = js.native
+  var IsFullyAuthoritative: Boolean
 }
 object IAccessControlList {
   

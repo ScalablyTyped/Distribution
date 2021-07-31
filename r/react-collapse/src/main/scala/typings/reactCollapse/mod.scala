@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.reactCollapse.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,23 +34,22 @@ object mod {
     def this(props: CollapseProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CollapseCallbackArgs extends StObject {
     
     /** current pixel height of Collapse container (changes until reaches `contentHeight`) */
-    var containerHeight: Double = js.native
+    var containerHeight: Double
     
     /** determined height of supplied Content */
-    var contentHeight: Double = js.native
+    var contentHeight: Double
     
     /** `true` only when Collapse is fully closed and height is zero */
-    var isFullyClosed: Boolean = js.native
+    var isFullyClosed: Boolean
     
     /** `true` only when Collapse reached final height */
-    var isFullyOpened: Boolean = js.native
+    var isFullyOpened: Boolean
     
     /** `true` if Collapse has any non-zero height */
-    var isOpened: Boolean = js.native
+    var isOpened: Boolean
   }
   object CollapseCallbackArgs {
     
@@ -87,30 +85,31 @@ object mod {
     }
   }
   
-  @js.native
-  trait CollapseProps extends HTMLProps[Collapse] {
+  trait CollapseProps
+    extends StObject
+       with HTMLProps[Collapse] {
     
     /** How often (in ms) the height of the content is checked. */
-    var checkTimeout: js.UndefOr[Double] = js.native
+    var checkTimeout: js.UndefOr[Double] = js.undefined
     
     /** One or multiple children with static, variable or dynamic height. */
     @JSName("children")
-    var children_CollapseProps: ReactNode = js.native
+    var children_CollapseProps: ReactNode
     
     /** A way to control the initial element style. Will not be valid after the initial render */
-    var initialStyle: js.UndefOr[Height] = js.native
+    var initialStyle: js.UndefOr[Height] = js.undefined
     
     /** Expands or collapses content. */
-    var isOpened: Boolean = js.native
+    var isOpened: Boolean
     
     /** Callback function triggered when animation has completed */
-    var onRest: js.UndefOr[js.Function1[/* args */ CollapseCallbackArgs, Unit]] = js.native
+    var onRest: js.UndefOr[js.Function1[/* args */ CollapseCallbackArgs, Unit]] = js.undefined
     
     /** Callback function triggered when animation begins */
-    var onWork: js.UndefOr[js.Function1[/* args */ CollapseCallbackArgs, Unit]] = js.native
+    var onWork: js.UndefOr[js.Function1[/* args */ CollapseCallbackArgs, Unit]] = js.undefined
     
     /** It is possible to set className for extra div elements that ReactCollapse creates. */
-    var theme: js.UndefOr[typings.reactCollapse.anon.Collapse] = js.native
+    var theme: js.UndefOr[typings.reactCollapse.anon.Collapse] = js.undefined
   }
   object CollapseProps {
     

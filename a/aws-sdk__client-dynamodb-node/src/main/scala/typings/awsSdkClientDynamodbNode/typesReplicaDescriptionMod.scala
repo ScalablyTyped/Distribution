@@ -2,18 +2,16 @@ package typings.awsSdkClientDynamodbNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaDescriptionMod {
   
-  @js.native
   trait ReplicaDescription extends StObject {
     
     /**
       * <p>The name of the region.</p>
       */
-    var RegionName: js.UndefOr[String] = js.native
+    var RegionName: js.UndefOr[String] = js.undefined
   }
   object ReplicaDescription {
     

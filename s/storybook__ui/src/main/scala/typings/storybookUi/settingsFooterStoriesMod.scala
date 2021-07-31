@@ -6,10 +6,13 @@ import typings.storybookAddons.typesMod.DecoratorFunction
 import typings.storybookReact.typesMod.StoryFnReactReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsFooterStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/settings/SettingsFooter.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -36,7 +39,6 @@ object settingsFooterStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/settings/SettingsFooter.stories", "basic")
-  @js.native
-  def basic(): Element = js.native
+  @scala.inline
+  def basic(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("basic")().asInstanceOf[Element]
 }

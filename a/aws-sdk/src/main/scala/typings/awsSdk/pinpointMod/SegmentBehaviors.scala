@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentBehaviors extends StObject {
   
   /**
     * The dimension settings that are based on how recently an endpoint was active.
     */
-  var Recency: js.UndefOr[RecencyDimension] = js.native
+  var Recency: js.UndefOr[RecencyDimension] = js.undefined
 }
 object SegmentBehaviors {
   

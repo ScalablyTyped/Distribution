@@ -4,21 +4,21 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchResult extends BaseResponse {
+trait SearchResult
+  extends StObject
+     with BaseResponse {
   
-  var id: Double = js.native
+  var id: Double
   
-  var subtype: String = js.native
+  var subtype: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object SearchResult {
   

@@ -3,21 +3,19 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains the grouping information of a {@link DataPilotField} . */
-@js.native
 trait DataPilotFieldGroupInfo extends StObject {
   
   /** specifies the end value for the grouping if {@link HasAutoEnd} is set to `FALSE` . */
-  var End: Double = js.native
+  var End: Double
   
   /**
     * specifies the grouping of the date values.
     * @see DataPilotFieldGroupBy
     */
-  var GroupBy: Double = js.native
+  var GroupBy: Double
   
   /**
     * specifies the named groups in this field if there are some.
@@ -28,7 +26,7 @@ trait DataPilotFieldGroupInfo extends StObject {
     * @see DataPilotField
     * @see DataPilotFieldGroups
     */
-  var Groups: XNameAccess = js.native
+  var Groups: XNameAccess
   
   /**
     * specifies whether the end value for the grouping is taken automatically from the maximum of the item values.
@@ -36,7 +34,7 @@ trait DataPilotFieldGroupInfo extends StObject {
     * If `FALSE` is set, the value from {@link End} will be used as end value for the grouping.If `TRUE` is set, the end value for the grouping will be
     * calculated automatically from the maximum of all member values of the DataPilot field.
     */
-  var HasAutoEnd: Boolean = js.native
+  var HasAutoEnd: Boolean
   
   /**
     * specifies whether the start value for the grouping is taken automatically from the minimum of the item values.
@@ -44,7 +42,7 @@ trait DataPilotFieldGroupInfo extends StObject {
     * If `FALSE` is set, the value from {@link Start} will be used as start value for the grouping.If `TRUE` is set, the start value for the grouping will
     * be calculated automatically from the minimum of all member values of the DataPilot field.
     */
-  var HasAutoStart: Boolean = js.native
+  var HasAutoStart: Boolean
   
   /**
     * specifies whether date values are grouped by ranges of days.
@@ -54,16 +52,16 @@ trait DataPilotFieldGroupInfo extends StObject {
     * than or equal to 1, and {@link GroupBy} set to {@link DataPilotFieldGroupBy.DAYS} , grouping is performed on ranges of days (see descriptions for
     * {@link XDataPilotFieldGrouping.createDateGroup()} for more details about day grouping).
     */
-  var HasDateValues: Boolean = js.native
+  var HasDateValues: Boolean
   
   /**
     * contains the source DataPilot field grouping is based on. Will be `NULL` if this field is not grouped or contains numeric grouping.
     * @see DataPilotField
     */
-  var SourceField: XDataPilotField = js.native
+  var SourceField: XDataPilotField
   
   /** specifies the start value for the grouping if {@link HasAutoStart} is set to `FALSE` . */
-  var Start: Double = js.native
+  var Start: Double
   
   /**
     * specifies the size of the ranges for numeric or day grouping.
@@ -71,7 +69,7 @@ trait DataPilotFieldGroupInfo extends StObject {
     * Example: With {@link HasAutoStart} set to `FALSE` , {@link Start} set to 2, and {@link Step} set to 3, the first group will contain all values greater
     * than or equal to 2 and less than 5. The second group will contain all values greater than or equal to 5 and less then 8, and so on.
     */
-  var Step: Double = js.native
+  var Step: Double
 }
 object DataPilotFieldGroupInfo {
   

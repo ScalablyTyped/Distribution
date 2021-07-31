@@ -3,26 +3,24 @@ package typings.pulumiAws.outputMod.glue
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogTableStorageDescriptorSkewedInfo extends StObject {
   
   /**
     * A list of names of columns that contain skewed values.
     */
-  var skewedColumnNames: js.UndefOr[js.Array[String]] = js.native
+  var skewedColumnNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of values that appear so frequently as to be considered skewed.
     */
-  var skewedColumnValueLocationMaps: js.UndefOr[StringDictionary[String]] = js.native
+  var skewedColumnValueLocationMaps: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A map of skewed values to the columns that contain them.
     */
-  var skewedColumnValues: js.UndefOr[js.Array[String]] = js.native
+  var skewedColumnValues: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CatalogTableStorageDescriptorSkewedInfo {
   

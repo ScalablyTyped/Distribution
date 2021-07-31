@@ -6,7 +6,6 @@ import typings.heremaps.H.map.layer.ObjectLayer
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** data *****/
@@ -16,7 +15,9 @@ object data {
     * An abstract reader class defines interface for data readers and has general functionality related to fetching data and reader events.
     */
   @js.native
-  trait AbstractReader extends EventTarget {
+  trait AbstractReader
+    extends StObject
+       with EventTarget {
     
     /**
       * Method returns H.map.layer.ObjectLayer that contains parsed data, and can be added directly to the map. It returns new instance of the class with every invocation.
@@ -69,16 +70,24 @@ object data {
     object State extends StObject {
       
       @js.native
-      sealed trait ERROR extends State
+      sealed trait ERROR
+        extends StObject
+           with State
       
       @js.native
-      sealed trait LOADING extends State
+      sealed trait LOADING
+        extends StObject
+           with State
       
       @js.native
-      sealed trait READY extends State
+      sealed trait READY
+        extends StObject
+           with State
       
       @js.native
-      sealed trait VISIT extends State
+      sealed trait VISIT
+        extends StObject
+           with State
     }
     
     /**

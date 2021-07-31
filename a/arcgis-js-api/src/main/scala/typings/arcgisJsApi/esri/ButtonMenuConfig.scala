@@ -5,46 +5,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonMenuConfig extends Object {
+trait ButtonMenuConfig
+  extends StObject
+     with Object {
   
   /**
     * The DOM Element containing the menu.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuConfig)
     */
-  var container: js.UndefOr[HTMLElement] = js.native
+  var container: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * Adds a CSS class to the menu button's DOM node.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuConfig)
     */
-  var iconClass: js.UndefOr[Boolean] = js.native
+  var iconClass: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of [ButtonMenuItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuConfig)
     */
-  var items: js.UndefOr[js.Array[ButtonMenuItem]] = js.native
+  var items: js.UndefOr[js.Array[ButtonMenuItem]] = js.undefined
   
   /**
     * Indicates if the menu content is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuConfig)
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The associated viewModel for the [ButtonMenu](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuConfig)
     */
-  var viewModel: js.UndefOr[ButtonMenuViewModel] = js.native
+  var viewModel: js.UndefOr[ButtonMenuViewModel] = js.undefined
 }
 object ButtonMenuConfig {
   

@@ -10,9 +10,9 @@ Classic modular front-end component library
 | ------------------ | :-------------: |
 | Full name          | layui-src |
 | Keywords           | layui, ui, JavaScript Framework, toolkit, front-end component library |
-| # releases         | 9 |
-| # dependents       | 12 |
-| # downloads        | 44284 |
+| # releases         | 8 |
+| # dependents       | 13 |
+| # downloads        | 41186 |
 | # stars            | 1 |
 
 ## Links

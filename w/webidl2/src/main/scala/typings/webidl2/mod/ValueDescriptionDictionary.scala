@@ -3,27 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDescriptionDictionary
-  extends AbstractValueDescription
+  extends StObject
+     with AbstractValueDescription
      with ValueDescription {
   
   @JSName("type")
-  var type_ValueDescriptionDictionary: dictionary = js.native
+  var type_ValueDescriptionDictionary: dictionary
 }
 object ValueDescriptionDictionary {
   
   @scala.inline
-  def apply(
-    extAttrs: js.Array[ExtendedAttribute],
-    parent: Argument | ConstantMemberType | FieldType,
-    `type`: dictionary
-  ): ValueDescriptionDictionary = {
+  def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): ValueDescriptionDictionary = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dictionary")
     __obj.asInstanceOf[ValueDescriptionDictionary]
   }
   

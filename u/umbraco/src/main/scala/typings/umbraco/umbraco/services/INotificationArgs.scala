@@ -2,20 +2,18 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Notification args
   */
-@js.native
 trait INotificationArgs extends StObject {
   
-  var header: String = js.native
+  var header: String
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: NotificationType = js.native
+  var `type`: NotificationType
 }
 object INotificationArgs {
   

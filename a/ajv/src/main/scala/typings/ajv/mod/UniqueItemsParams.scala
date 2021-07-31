@@ -2,15 +2,15 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UniqueItemsParams extends ErrorParameters {
+trait UniqueItemsParams
+  extends StObject
+     with ErrorParameters {
   
-  var i: Double = js.native
+  var i: Double
   
-  var j: Double = js.native
+  var j: Double
 }
 object UniqueItemsParams {
   

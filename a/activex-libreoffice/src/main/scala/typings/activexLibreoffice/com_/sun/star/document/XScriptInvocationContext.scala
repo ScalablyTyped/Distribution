@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,14 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * unambiguously associated with the controller. This must not necessarily be the model returned by {@link com.sun.star.frame.XController.getModel()} .
   * @since OOo 2.4
   */
-@js.native
 trait XScriptInvocationContext extends StObject {
   
   /**
     * denotes the document which contains the scripts which are to be invoked from the component implementing the {@link XScriptInvocationContext}
     * interface.
     */
-  var ScriptContainer: XEmbeddedScripts = js.native
+  var ScriptContainer: XEmbeddedScripts
 }
 object XScriptInvocationContext {
   

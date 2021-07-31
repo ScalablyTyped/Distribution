@@ -6,7 +6,6 @@ import typings.chrome.chrome.gcm.MessageReceptionEvent
 import typings.chrome.chrome.gcm.OutgoingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -47,15 +46,12 @@ object gcm {
   @scala.inline
   def onSendError_=(x: GcmErrorEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onSendError")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.gcm.register")
-  @js.native
-  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = js.native
+  @scala.inline
+  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(senderIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.gcm.send")
-  @js.native
-  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = js.native
+  @scala.inline
+  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.gcm.unregister")
-  @js.native
-  def unregister(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def unregister(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

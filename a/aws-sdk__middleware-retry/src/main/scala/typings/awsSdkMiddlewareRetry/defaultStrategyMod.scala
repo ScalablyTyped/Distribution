@@ -1,11 +1,14 @@
 package typings.awsSdkMiddlewareRetry
 
 import typings.awsSdkSmithyClient.sdkErrorMod.SdkError
+import typings.awsSdkTypes.middlewareMod.FinalizeHandler
+import typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments
+import typings.awsSdkTypes.middlewareMod.FinalizeHandlerOutput
+import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.utilMod.Provider
 import typings.awsSdkTypes.utilMod.RetryStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultStrategyMod {
@@ -20,7 +23,9 @@ object defaultStrategyMod {
   
   @JSImport("@aws-sdk/middleware-retry/dist/cjs/defaultStrategy", "StandardRetryStrategy")
   @js.native
-  class StandardRetryStrategy protected () extends RetryStrategy {
+  class StandardRetryStrategy protected ()
+    extends StObject
+       with RetryStrategy {
     def this(maxAttemptsProvider: Provider[Double]) = this()
     def this(maxAttemptsProvider: Provider[Double], options: StandardRetryStrategyOptions) = this()
     
@@ -29,6 +34,14 @@ object defaultStrategyMod {
     var getMaxAttempts: js.Any = js.native
     
     val maxAttemptsProvider: js.Any = js.native
+    
+    /**
+      * the retry behavior the will invoke the next handler and handle the retry accordingly.
+      * This function should also update the $metadata from the response accordingly.
+      * @see {@link ResponseMetadata}
+      */
+    /* CompleteClass */
+    override def retry[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: FinalizeHandler[Input, Output], args: FinalizeHandlerArguments[Input]): js.Promise[FinalizeHandlerOutput[Output]] = js.native
     
     var retryDecider: js.Any = js.native
     
@@ -62,14 +75,13 @@ object defaultStrategyMod {
     def retrieveRetryTokens(error: SdkError): Double = js.native
   }
   
-  @js.native
   trait StandardRetryStrategyOptions extends StObject {
     
-    var delayDecider: js.UndefOr[DelayDecider] = js.native
+    var delayDecider: js.UndefOr[DelayDecider] = js.undefined
     
-    var retryDecider: js.UndefOr[RetryDecider] = js.native
+    var retryDecider: js.UndefOr[RetryDecider] = js.undefined
     
-    var retryQuota: js.UndefOr[RetryQuota] = js.native
+    var retryQuota: js.UndefOr[RetryQuota] = js.undefined
   }
   object StandardRetryStrategyOptions {
     

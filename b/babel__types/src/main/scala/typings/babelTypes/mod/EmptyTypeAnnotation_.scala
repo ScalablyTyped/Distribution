@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.EmptyTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait EmptyTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait EmptyTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowBaseAnnotation
      with FlowType {
   
   @JSName("type")
-  var type_EmptyTypeAnnotation_ : EmptyTypeAnnotation = js.native
+  var type_EmptyTypeAnnotation_ : EmptyTypeAnnotation
 }
 object EmptyTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: EmptyTypeAnnotation): EmptyTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): EmptyTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EmptyTypeAnnotation")
     __obj.asInstanceOf[EmptyTypeAnnotation_]
   }
   

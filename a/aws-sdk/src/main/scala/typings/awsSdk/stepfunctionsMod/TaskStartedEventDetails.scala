@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskStartedEventDetails extends StObject {
   
   /**
     * The service name of the resource in a task state.
     */
-  var resource: Name = js.native
+  var resource: Name
   
   /**
     * The action of the resource called by a task state.
     */
-  var resourceType: Name = js.native
+  var resourceType: Name
 }
 object TaskStartedEventDetails {
   

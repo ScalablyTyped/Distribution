@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFUserOrUserGroupType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserOrUserGroupIDs extends StObject {
   
-  def Add(Index: Double, UserOrUserGroupID: IUserOrUserGroupID): Unit = js.native
+  def Add(Index: Double, UserOrUserGroupID: IUserOrUserGroupID): Unit
   
-  def Clone(): IUserOrUserGroupIDs = js.native
+  def Clone(): IUserOrUserGroupIDs
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetUserOrUserGroupID(UserOrGroupID: Double, UserOrGroupType: MFUserOrUserGroupType): IUserOrUserGroupID = js.native
+  def GetUserOrUserGroupID(UserOrGroupID: Double, UserOrGroupType: MFUserOrUserGroupType): IUserOrUserGroupID
   
-  def GetUserOrUserGroupIDIndex(UserOrGroupID: Double, UserOrGroupType: MFUserOrUserGroupType): Double = js.native
+  def GetUserOrUserGroupIDIndex(UserOrGroupID: Double, UserOrGroupType: MFUserOrUserGroupType): Double
   
-  def Item(Index: Double): IUserOrUserGroupID = js.native
+  def Item(Index: Double): IUserOrUserGroupID
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IUserOrUserGroupIDs {
   

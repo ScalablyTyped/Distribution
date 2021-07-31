@@ -4,7 +4,6 @@ import typings.junk.anon.Default
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,8 @@ object mod {
   /**
   	Returns `true` if `filename` matches a junk file.
   	*/
-  @JSImport("junk", "is")
-  @js.native
-  def is(filename: String): Boolean = js.native
+  @scala.inline
+  def is(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	Returns `true` if `filename` doesn't match a junk file.
@@ -44,9 +42,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("junk", "not")
-  @js.native
-  def not(filename: String): Boolean = js.native
+  @scala.inline
+  def not(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	Regex used for matching junk files.

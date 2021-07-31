@@ -27,25 +27,23 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propsMod {
   
-  @js.native
   trait CaptionElementProps extends StObject {
     
-    var classNames: ClassNames = js.native
+    var classNames: ClassNames
     
-    var date: Date = js.native
+    var date: Date
     
-    var locale: String = js.native
+    var locale: String
     
-    var localeUtils: LocaleUtils = js.native
+    var localeUtils: LocaleUtils
     
-    var months: js.UndefOr[js.Array[String]] = js.native
+    var months: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   }
   object CaptionElementProps {
     
@@ -87,58 +85,57 @@ object propsMod {
     }
   }
   
-  @js.native
   trait DayPickerInputProps extends StObject {
     
-    var classNames: js.UndefOr[InputClassNames] = js.native
+    var classNames: js.UndefOr[InputClassNames] = js.undefined
     
-    var clickUnselectsDay: js.UndefOr[Boolean] = js.native
+    var clickUnselectsDay: js.UndefOr[Boolean] = js.undefined
     
-    var component: js.UndefOr[js.Any] = js.native
+    var component: js.UndefOr[js.Any] = js.undefined
     
-    var dayPickerProps: js.UndefOr[DayPickerProps] = js.native
+    var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
     
-    var format: js.UndefOr[String | js.Array[String]] = js.native
+    var format: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ String, String]] = js.native
+    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ String, String]] = js.undefined
     
-    var hideOnDayClick: js.UndefOr[Boolean] = js.native
+    var hideOnDayClick: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
-    var keepFocus: js.UndefOr[Boolean] = js.native
+    var keepFocus: js.UndefOr[Boolean] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
     var onDayChange: js.UndefOr[
         js.Function3[/* day */ Date, /* DayModifiers */ DayModifiers, /* dayPickerInput */ default, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onDayPickerHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDayPickerHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDayPickerShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDayPickerShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onKeyUp: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var overlayComponent: js.UndefOr[js.Any] = js.native
+    var overlayComponent: js.UndefOr[js.Any] = js.undefined
     
     var parseDate: js.UndefOr[
         js.Function3[/* str */ String, /* format */ String, /* locale */ String, Date | Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var showOverlay: js.UndefOr[Boolean] = js.native
+    var showOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[String | Date] = js.native
+    var value: js.UndefOr[String | Date] = js.undefined
   }
   object DayPickerInputProps {
     
@@ -294,60 +291,59 @@ object propsMod {
     }
   }
   
-  @js.native
   trait DayPickerProps extends StObject {
     
-    var canChangeMonth: js.UndefOr[Boolean] = js.native
+    var canChangeMonth: js.UndefOr[Boolean] = js.undefined
     
     var captionElement: js.UndefOr[
         ReactElement | (ComponentClass[CaptionElementProps, ComponentState]) | SFC[CaptionElementProps]
-      ] = js.native
+      ] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classNames: js.UndefOr[ClassNames] = js.native
+    var classNames: js.UndefOr[ClassNames] = js.undefined
     
-    var containerProps: js.UndefOr[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]] = js.native
+    var containerProps: js.UndefOr[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var disabledDays: js.UndefOr[Modifier | js.Array[Modifier]] = js.native
+    var disabledDays: js.UndefOr[Modifier | js.Array[Modifier]] = js.undefined
     
-    var enableOutsideDaysClick: js.UndefOr[Boolean] = js.native
+    var enableOutsideDaysClick: js.UndefOr[Boolean] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[Double] = js.native
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var fixedWeeks: js.UndefOr[Boolean] = js.native
+    var fixedWeeks: js.UndefOr[Boolean] = js.undefined
     
-    var fromMonth: js.UndefOr[Date] = js.native
+    var fromMonth: js.UndefOr[Date] = js.undefined
     
-    var initialMonth: js.UndefOr[Date] = js.native
+    var initialMonth: js.UndefOr[Date] = js.undefined
     
-    var labels: js.UndefOr[NextMonth] = js.native
+    var labels: js.UndefOr[NextMonth] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var localeUtils: js.UndefOr[LocaleUtils] = js.native
+    var localeUtils: js.UndefOr[LocaleUtils] = js.undefined
     
-    var modifiers: js.UndefOr[PartialModifiers] = js.native
+    var modifiers: js.UndefOr[PartialModifiers] = js.undefined
     
-    var modifiersStyles: js.UndefOr[js.Object] = js.native
+    var modifiersStyles: js.UndefOr[js.Object] = js.undefined
     
-    var month: js.UndefOr[Date] = js.native
+    var month: js.UndefOr[Date] = js.undefined
     
-    var months: js.UndefOr[js.Array[String]] = js.native
+    var months: js.UndefOr[js.Array[String]] = js.undefined
     
     var navbarElement: js.UndefOr[
         ReactElement | (ComponentClass[NavbarElementProps, ComponentState]) | SFC[NavbarElementProps]
-      ] = js.native
+      ] = js.undefined
     
-    var numberOfMonths: js.UndefOr[Double] = js.native
+    var numberOfMonths: js.UndefOr[Double] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
     var onCaptionClick: js.UndefOr[
         js.Function2[/* month */ Date, /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onDayClick: js.UndefOr[
         js.Function3[
@@ -356,7 +352,7 @@ object propsMod {
           /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDayKeyDown: js.UndefOr[
         js.Function3[
@@ -365,7 +361,7 @@ object propsMod {
           /* e */ KeyboardEvent[HTMLDivElement], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDayMouseDown: js.UndefOr[
         js.Function3[
@@ -374,7 +370,7 @@ object propsMod {
           /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDayMouseEnter: js.UndefOr[
         js.Function3[
@@ -383,7 +379,7 @@ object propsMod {
           /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDayMouseLeave: js.UndefOr[
         js.Function3[
@@ -392,7 +388,7 @@ object propsMod {
           /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDayMouseUp: js.UndefOr[
         js.Function3[
@@ -401,21 +397,21 @@ object propsMod {
           /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onDayTouchEnd: js.UndefOr[
         js.Function3[/* day */ Date, /* modifiers */ DayModifiers, /* e */ TouchEvent[HTMLDivElement], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onDayTouchStart: js.UndefOr[
         js.Function3[/* day */ Date, /* modifiers */ DayModifiers, /* e */ TouchEvent[HTMLDivElement], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLDivElement], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var onMonthChange: js.UndefOr[js.Function1[/* month */ Date, Unit]] = js.native
+    var onMonthChange: js.UndefOr[js.Function1[/* month */ Date, Unit]] = js.undefined
     
     var onTodayButtonClick: js.UndefOr[
         js.Function3[
@@ -424,7 +420,7 @@ object propsMod {
           /* e */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onWeekClick: js.UndefOr[
         js.Function3[
@@ -433,39 +429,39 @@ object propsMod {
           /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pagedNavigation: js.UndefOr[Boolean] = js.native
+    var pagedNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var renderDay: js.UndefOr[js.Function2[/* date */ Date, /* modifiers */ DayModifiers, ReactNode]] = js.native
+    var renderDay: js.UndefOr[js.Function2[/* date */ Date, /* modifiers */ DayModifiers, ReactNode]] = js.undefined
     
     var renderWeek: js.UndefOr[
         js.Function3[/* weekNumber */ Double, /* week */ js.Array[Date], /* month */ Date, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var reverseMonths: js.UndefOr[Boolean] = js.native
+    var reverseMonths: js.UndefOr[Boolean] = js.undefined
     
-    var selectedDays: js.UndefOr[Modifier | js.Array[Modifier]] = js.native
+    var selectedDays: js.UndefOr[Modifier | js.Array[Modifier]] = js.undefined
     
-    var showOutsideDays: js.UndefOr[Boolean] = js.native
+    var showOutsideDays: js.UndefOr[Boolean] = js.undefined
     
-    var showWeekDays: js.UndefOr[Boolean] = js.native
+    var showWeekDays: js.UndefOr[Boolean] = js.undefined
     
-    var showWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var toMonth: js.UndefOr[Date] = js.native
+    var toMonth: js.UndefOr[Date] = js.undefined
     
-    var todayButton: js.UndefOr[String] = js.native
+    var todayButton: js.UndefOr[String] = js.undefined
     
     var weekdayElement: js.UndefOr[
         ReactElement | (ComponentClass[WeekdayElementProps, ComponentState]) | SFC[WeekdayElementProps]
-      ] = js.native
+      ] = js.undefined
     
-    var weekdaysLong: js.UndefOr[js.Array[String]] = js.native
+    var weekdaysLong: js.UndefOr[js.Array[String]] = js.undefined
     
-    var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
+    var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DayPickerProps {
     
@@ -855,20 +851,19 @@ object propsMod {
     var showPreviousButton: Boolean = js.native
   }
   
-  @js.native
   trait WeekdayElementProps extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var localeUtils: LocaleUtils = js.native
+    var localeUtils: LocaleUtils
     
-    var weekday: Double = js.native
+    var weekday: Double
     
-    var weekdaysLong: js.UndefOr[js.Array[String]] = js.native
+    var weekdaysLong: js.UndefOr[js.Array[String]] = js.undefined
     
-    var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
+    var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
   }
   object WeekdayElementProps {
     

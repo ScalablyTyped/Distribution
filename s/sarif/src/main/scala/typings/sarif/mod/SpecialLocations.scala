@@ -2,21 +2,19 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpecialLocations extends StObject {
   
   /**
     * Provides a suggestion to SARIF consumers to display file paths relative to the specified location.
     */
-  var displayBase: js.UndefOr[ArtifactLocation] = js.native
+  var displayBase: js.UndefOr[ArtifactLocation] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the special locations.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 object SpecialLocations {
   

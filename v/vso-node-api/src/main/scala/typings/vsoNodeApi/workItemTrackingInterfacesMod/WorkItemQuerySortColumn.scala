@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemQuerySortColumn extends StObject {
   
   /**
     * The direction to sort by.
     */
-  var descending: Boolean = js.native
+  var descending: Boolean
   
   /**
     * A work item field.
     */
-  var field: WorkItemFieldReference = js.native
+  var field: WorkItemFieldReference
 }
 object WorkItemQuerySortColumn {
   

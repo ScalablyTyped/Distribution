@@ -2,38 +2,36 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Android app manifest. See
   * http://developer.android.com/guide/topics/manifest/manifest-intro.html
   */
-@js.native
 trait SchemaApkManifest extends StObject {
   
   /**
     * User-readable name for the application.
     */
-  var applicationLabel: js.UndefOr[String] = js.native
+  var applicationLabel: js.UndefOr[String] = js.undefined
   
-  var intentFilters: js.UndefOr[js.Array[SchemaIntentFilter]] = js.native
+  var intentFilters: js.UndefOr[js.Array[SchemaIntentFilter]] = js.undefined
   
   /**
     * Maximum API level on which the application is designed to run.
     */
-  var maxSdkVersion: js.UndefOr[Double] = js.native
+  var maxSdkVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum API level required for the application to run.
     */
-  var minSdkVersion: js.UndefOr[Double] = js.native
+  var minSdkVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Full Java-style package name for this application, e.g.
     * &quot;com.example.foo&quot;.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object SchemaApkManifest {
   

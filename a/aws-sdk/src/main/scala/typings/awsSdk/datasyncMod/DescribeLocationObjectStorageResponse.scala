@@ -2,46 +2,44 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationObjectStorageResponse extends StObject {
   
   /**
     * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
     */
-  var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.native
+  var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
     */
-  var AgentArns: js.UndefOr[AgentArnList] = js.native
+  var AgentArns: js.UndefOr[AgentArnList] = js.undefined
   
   /**
     * The time that the self-managed object storage server agent was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the self-managed object storage server location to describe.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
     * The URL of the source self-managed object storage server location that was described.
     */
-  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
+  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
   /**
     * The port that your self-managed object storage server accepts inbound network traffic on. The server port is set by default to TCP 80 (HTTP) or TCP 443 (HTTPS).
     */
-  var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.native
+  var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.undefined
   
   /**
     * The protocol that the object storage server uses to communicate. Valid values are HTTP or HTTPS.
     */
-  var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.native
+  var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.undefined
 }
 object DescribeLocationObjectStorageResponse {
   

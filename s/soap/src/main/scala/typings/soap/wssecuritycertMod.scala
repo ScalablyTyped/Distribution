@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.soap.typesMod.ISecurity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wssecuritycertMod {
   
   @JSImport("soap/lib/security/WSSecurityCert", "WSSecurityCert")
   @js.native
-  class WSSecurityCert protected () extends ISecurity {
+  class WSSecurityCert protected ()
+    extends StObject
+       with ISecurity {
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
     
@@ -37,18 +38,17 @@ object wssecuritycertMod {
     var x509Id: js.Any = js.native
   }
   
-  @js.native
   trait IWSSecurityCertOptions extends StObject {
     
-    var additionalReferences: js.UndefOr[js.Array[String]] = js.native
+    var additionalReferences: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hasTimeStamp: js.UndefOr[Boolean] = js.native
+    var hasTimeStamp: js.UndefOr[Boolean] = js.undefined
     
-    var signatureAlgorithm: js.UndefOr[String] = js.native
+    var signatureAlgorithm: js.UndefOr[String] = js.undefined
     
-    var signatureTransformations: js.UndefOr[js.Array[String]] = js.native
+    var signatureTransformations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var signerOptions: js.UndefOr[IXmlSignerOptions] = js.native
+    var signerOptions: js.UndefOr[IXmlSignerOptions] = js.undefined
   }
   object IWSSecurityCertOptions {
     
@@ -99,14 +99,13 @@ object wssecuritycertMod {
     }
   }
   
-  @js.native
   trait IXmlSignerOptions extends StObject {
     
-    var attrs: js.UndefOr[StringDictionary[String]] = js.native
+    var attrs: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var existingPrefixes: js.UndefOr[StringDictionary[String]] = js.native
+    var existingPrefixes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object IXmlSignerOptions {
     

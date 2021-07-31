@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.FunctionDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `42` extends StObject {
   
-  var `type`: FunctionDeclaration = js.native
+  var `type`: FunctionDeclaration
 }
 object `42` {
   
   @scala.inline
-  def apply(`type`: FunctionDeclaration): `42` = {
+  def apply(): `42` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[`42`]
   }
   

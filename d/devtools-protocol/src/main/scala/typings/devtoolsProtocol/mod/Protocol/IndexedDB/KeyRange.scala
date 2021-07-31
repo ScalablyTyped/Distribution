@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyRange extends StObject {
   
   /**
     * Lower bound.
     */
-  var lower: js.UndefOr[Key] = js.native
+  var lower: js.UndefOr[Key] = js.undefined
   
   /**
     * If true lower bound is open.
     */
-  var lowerOpen: Boolean = js.native
+  var lowerOpen: Boolean
   
   /**
     * Upper bound.
     */
-  var upper: js.UndefOr[Key] = js.native
+  var upper: js.UndefOr[Key] = js.undefined
   
   /**
     * If true upper bound is open.
     */
-  var upperOpen: Boolean = js.native
+  var upperOpen: Boolean
 }
 object KeyRange {
   

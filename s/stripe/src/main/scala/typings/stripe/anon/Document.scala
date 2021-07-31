@@ -3,21 +3,19 @@ package typings.stripe.anon
 import typings.stripe.mod.accounts.IPersonDocumentCreateUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
   /**
     * A document showing address, either a passport, local ID card, or utility bill from a well-known utility company.
     */
-  var additional_document: js.UndefOr[IPersonDocumentCreateUpdateOptions] = js.native
+  var additional_document: js.UndefOr[IPersonDocumentCreateUpdateOptions] = js.undefined
   
   /**
     * An identifying document, either a passport or local ID card.
     */
-  var document: js.UndefOr[IPersonDocumentCreateUpdateOptions] = js.native
+  var document: js.UndefOr[IPersonDocumentCreateUpdateOptions] = js.undefined
 }
 object Document {
   

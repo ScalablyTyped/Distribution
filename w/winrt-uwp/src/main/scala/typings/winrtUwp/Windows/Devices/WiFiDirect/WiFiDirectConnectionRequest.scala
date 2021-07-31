@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A Wi-FI Direct connection request received by a WiFiDirectConnectionListener . */
-@js.native
 trait WiFiDirectConnectionRequest extends StObject {
   
   /** Closes the WiFiDirectConnectionRequest object. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets device information for the endpoint making the Wi-Fi Direct connection request. */
-  var deviceInformation: DeviceInformation = js.native
+  var deviceInformation: DeviceInformation
 }
 object WiFiDirectConnectionRequest {
   

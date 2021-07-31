@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessControlListConfiguration extends StObject {
   
   /**
     * Path to the AWS S3 bucket that contains the ACL files.
     */
-  var KeyPath: js.UndefOr[S3ObjectKey] = js.native
+  var KeyPath: js.UndefOr[S3ObjectKey] = js.undefined
 }
 object AccessControlListConfiguration {
   

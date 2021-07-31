@@ -2,7 +2,6 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait TfvcVersionOption extends StObject
 object TfvcVersionOption extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TfvcVersionOption with Double] = js.native
+  def apply(value: Double): js.UndefOr[TfvcVersionOption & Double] = js.native
   
   @js.native
-  sealed trait None extends TfvcVersionOption
-  /* 0 */ val None: typings.vsoNodeApi.gitInterfacesMod.TfvcVersionOption.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with TfvcVersionOption
+  /* 0 */ val None: typings.vsoNodeApi.gitInterfacesMod.TfvcVersionOption.None & Double = js.native
   
   @js.native
-  sealed trait Previous extends TfvcVersionOption
-  /* 1 */ val Previous: typings.vsoNodeApi.gitInterfacesMod.TfvcVersionOption.Previous with Double = js.native
+  sealed trait Previous
+    extends StObject
+       with TfvcVersionOption
+  /* 1 */ val Previous: typings.vsoNodeApi.gitInterfacesMod.TfvcVersionOption.Previous & Double = js.native
   
   @js.native
-  sealed trait UseRename extends TfvcVersionOption
-  /* 2 */ val UseRename: typings.vsoNodeApi.gitInterfacesMod.TfvcVersionOption.UseRename with Double = js.native
+  sealed trait UseRename
+    extends StObject
+       with TfvcVersionOption
+  /* 2 */ val UseRename: typings.vsoNodeApi.gitInterfacesMod.TfvcVersionOption.UseRename & Double = js.native
 }

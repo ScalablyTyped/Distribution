@@ -12,7 +12,7 @@ Generic API for building plug.dj bots
 | Keywords           | api, bot, plug, plug.dj |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 2665 |
+| # downloads        | 2806 |
 | # stars            | 2 |
 
 ## Links

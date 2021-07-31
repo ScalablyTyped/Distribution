@@ -10,9 +10,9 @@ JSS plugin that enables mixing in styles.
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-extend |
 | Keywords           | jss, plugin, extend, css-in-js, cssinjs, css in js |
-| # releases         | 39 |
+| # releases         | 30 |
 | # dependents       | 7 |
-| # downloads        | 2653497 |
+| # downloads        | 3126220 |
 | # stars            | 0 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWall extends StObject {
   
-  var bounds: IRectangle = js.native
+  var bounds: IRectangle
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IWall {
   

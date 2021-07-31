@@ -5,31 +5,27 @@ import typings.std.Event
 import typings.std.EventSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "TileSource")
 @js.native
-class TileSource protected () extends EventSource {
+class TileSource protected ()
+  extends StObject
+     with EventSource {
   def this(options: TileSourceOptions) = this()
   
   def addHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
   def addHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object): Unit = js.native
   
   def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
-  def addOnceHandler(
-    eventName: String,
-    handler: EventHandler[TileSourceEvent],
-    userData: js.UndefOr[scala.Nothing],
-    times: Double
-  ): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object, times: Double): Unit = js.native
+  def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: Unit, times: Double): Unit = js.native
   
   var aspectRatio: Double = js.native
   
   def configure(data: String): js.Object = js.native
-  def configure(data: js.Array[_]): js.Object = js.native
+  def configure(data: js.Array[js.Any]): js.Object = js.native
   def configure(data: js.Object): js.Object = js.native
   def configure(data: Document): js.Object = js.native
   
@@ -73,7 +69,7 @@ class TileSource protected () extends EventSource {
   def removeHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
   
   def supports(data: String, url: String): Boolean = js.native
-  def supports(data: js.Array[_], url: String): Boolean = js.native
+  def supports(data: js.Array[js.Any], url: String): Boolean = js.native
   def supports(data: js.Object, url: String): Boolean = js.native
   def supports(data: Document, url: String): Boolean = js.native
   

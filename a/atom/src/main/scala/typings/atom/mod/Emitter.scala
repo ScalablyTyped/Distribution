@@ -2,16 +2,20 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Emitter")
 @js.native
 /** Construct an emitter. */
-class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
+class Emitter[OptionalEmissions, RequiredEmissions] ()
+  extends StObject
+     with DisposableLike {
   
   /** Clear out any existing subscribers. */
   def clear(): Unit = js.native
+  
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
   
   // Event Emission
   /** Invoke the handlers registered via ::on for the given event name. */

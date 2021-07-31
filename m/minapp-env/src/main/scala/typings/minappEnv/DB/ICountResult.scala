@@ -3,13 +3,13 @@ package typings.minappEnv.DB
 import typings.minappEnv.IAPISuccessParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICountResult extends IAPISuccessParam {
+trait ICountResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var total: Double = js.native
+  var total: Double
 }
 object ICountResult {
   

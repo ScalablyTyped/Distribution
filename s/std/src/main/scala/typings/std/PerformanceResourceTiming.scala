@@ -2,46 +2,46 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables retrieval and analysis of detailed network timing data regarding the loading of an application's resources. An application can use the timing metrics to determine, for example, the length of time it takes to fetch a specific resource, such as an XMLHttpRequest, <SVG>, image, or script. */
-@js.native
-trait PerformanceResourceTiming extends PerformanceEntry {
+trait PerformanceResourceTiming
+  extends StObject
+     with PerformanceEntry {
   
-  val connectEnd: Double = js.native
+  val connectEnd: Double
   
-  val connectStart: Double = js.native
+  val connectStart: Double
   
-  val decodedBodySize: Double = js.native
+  val decodedBodySize: Double
   
-  val domainLookupEnd: Double = js.native
+  val domainLookupEnd: Double
   
-  val domainLookupStart: Double = js.native
+  val domainLookupStart: Double
   
-  val encodedBodySize: Double = js.native
+  val encodedBodySize: Double
   
-  val fetchStart: Double = js.native
+  val fetchStart: Double
   
-  val initiatorType: java.lang.String = js.native
+  val initiatorType: java.lang.String
   
-  val nextHopProtocol: java.lang.String = js.native
+  val nextHopProtocol: java.lang.String
   
-  val redirectEnd: Double = js.native
+  val redirectEnd: Double
   
-  val redirectStart: Double = js.native
+  val redirectStart: Double
   
-  val requestStart: Double = js.native
+  val requestStart: Double
   
-  val responseEnd: Double = js.native
+  val responseEnd: Double
   
-  val responseStart: Double = js.native
+  val responseStart: Double
   
-  val secureConnectionStart: Double = js.native
+  val secureConnectionStart: Double
   
-  val transferSize: Double = js.native
+  val transferSize: Double
   
-  val workerStart: Double = js.native
+  val workerStart: Double
 }
 object PerformanceResourceTiming {
   

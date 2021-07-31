@@ -2,15 +2,13 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameters extends StObject {
   
-  var parameters: js.UndefOr[js.Array[_]] = js.native
+  var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var query: String = js.native
+  var query: String
 }
 object Parameters {
   
@@ -24,7 +22,7 @@ object Parameters {
   implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setParameters(value: js.Array[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

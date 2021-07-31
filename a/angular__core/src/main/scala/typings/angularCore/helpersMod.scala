@@ -15,14 +15,16 @@ import typings.typescript.mod.Printer
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@angular/core/schematics/migrations/renderer-to-renderer2/helpers", "getHelper")
+  @JSImport("@angular/core/schematics/migrations/renderer-to-renderer2/helpers", JSImport.Namespace)
   @js.native
-  def getHelper(name: HelperFunction, sourceFile: SourceFile, printer: Printer): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getHelper(name: HelperFunction, sourceFile: SourceFile, printer: Printer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHelper")(name.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.angularCore.angularCoreStrings.AnyDuringRendererMigration

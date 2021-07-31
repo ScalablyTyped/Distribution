@@ -2,26 +2,24 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBackupSelectionInput extends StObject {
   
   /**
     * Uniquely identifies the backup plan to be associated with the selection of resources.
     */
-  var BackupPlanId: String = js.native
+  var BackupPlanId: String
   
   /**
     * Specifies the body of a request to assign a set of resources to a backup plan.
     */
-  var BackupSelection: typings.awsSdk.backupMod.BackupSelection = js.native
+  var BackupSelection: typings.awsSdk.backupMod.BackupSelection
   
   /**
     * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice.
     */
-  var CreatorRequestId: js.UndefOr[String] = js.native
+  var CreatorRequestId: js.UndefOr[String] = js.undefined
 }
 object CreateBackupSelectionInput {
   

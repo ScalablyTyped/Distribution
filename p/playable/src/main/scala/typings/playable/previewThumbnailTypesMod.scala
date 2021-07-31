@@ -3,21 +3,19 @@ package typings.playable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewThumbnailTypesMod {
   
-  @js.native
   trait IPreviewThumbnail extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def setTime(time: String): Unit = js.native
+    def setTime(time: String): Unit
     
-    def showAt(second: Double): Unit = js.native
+    def showAt(second: Double): Unit
   }
   object IPreviewThumbnail {
     
@@ -49,18 +47,17 @@ object previewThumbnailTypesMod {
     }
   }
   
-  @js.native
   trait IPreviewThumbnailViewStyles extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var empty: String = js.native
+    var empty: String
     
-    var highQualityFrame: String = js.native
+    var highQualityFrame: String
     
-    var lowQualityFrame: String = js.native
+    var lowQualityFrame: String
     
-    var thumbText: String = js.native
+    var thumbText: String
   }
   object IPreviewThumbnailViewStyles {
     

@@ -4,17 +4,15 @@ import typings.googleapis.anon.Boundary
 import typings.googleapis.anon.Lang
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGeolayerdata extends StObject {
   
-  var common: js.UndefOr[Lang] = js.native
+  var common: js.UndefOr[Lang] = js.undefined
   
-  var geo: js.UndefOr[Boundary] = js.native
+  var geo: js.UndefOr[Boundary] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaGeolayerdata {
   

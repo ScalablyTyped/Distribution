@@ -14,97 +14,95 @@ import typings.cesium.mod.TerrainProvider
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
-  var automaticallyTrackDataSourceClocks: js.UndefOr[Boolean] = js.native
+  var automaticallyTrackDataSourceClocks: js.UndefOr[Boolean] = js.undefined
   
-  var baseLayerPicker: js.UndefOr[Boolean] = js.native
+  var baseLayerPicker: js.UndefOr[Boolean] = js.undefined
   
-  var clockViewModel: js.UndefOr[ClockViewModel] = js.native
+  var clockViewModel: js.UndefOr[ClockViewModel] = js.undefined
   
-  var contextOptions: js.UndefOr[js.Any] = js.native
+  var contextOptions: js.UndefOr[js.Any] = js.undefined
   
-  var creditContainer: js.UndefOr[Element | String] = js.native
+  var creditContainer: js.UndefOr[Element | String] = js.undefined
   
-  var creditViewport: js.UndefOr[Element | String] = js.native
+  var creditViewport: js.UndefOr[Element | String] = js.undefined
   
-  var dataSources: js.UndefOr[typings.cesium.mod.DataSourceCollection] = js.native
+  var dataSources: js.UndefOr[typings.cesium.mod.DataSourceCollection] = js.undefined
   
-  var fullscreenButton: js.UndefOr[Boolean] = js.native
+  var fullscreenButton: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreenElement: js.UndefOr[Element | String] = js.native
+  var fullscreenElement: js.UndefOr[Element | String] = js.undefined
   
-  var geocoder: js.UndefOr[Boolean] = js.native
+  var geocoder: js.UndefOr[Boolean] = js.undefined
   
-  var globe: js.UndefOr[typings.cesium.mod.Globe | `false`] = js.native
+  var globe: js.UndefOr[typings.cesium.mod.Globe | `false`] = js.undefined
   
-  var homeButton: js.UndefOr[Boolean] = js.native
+  var homeButton: js.UndefOr[Boolean] = js.undefined
   
-  var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.native
+  var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.undefined
   
-  var imageryProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.native
+  var imageryProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
   
-  var infoBox: js.UndefOr[Boolean] = js.native
+  var infoBox: js.UndefOr[Boolean] = js.undefined
   
-  var mapMode2D: js.UndefOr[MapMode2D] = js.native
+  var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
   
-  var mapProjection: js.UndefOr[MapProjection] = js.native
+  var mapProjection: js.UndefOr[MapProjection] = js.undefined
   
-  var maximumRenderTimeChange: js.UndefOr[Double] = js.native
+  var maximumRenderTimeChange: js.UndefOr[Double] = js.undefined
   
-  var navigationHelpButton: js.UndefOr[Boolean] = js.native
+  var navigationHelpButton: js.UndefOr[Boolean] = js.undefined
   
-  var navigationInstructionsInitiallyVisible: js.UndefOr[Boolean] = js.native
+  var navigationInstructionsInitiallyVisible: js.UndefOr[Boolean] = js.undefined
   
-  var orderIndependentTranslucency: js.UndefOr[Boolean] = js.native
+  var orderIndependentTranslucency: js.UndefOr[Boolean] = js.undefined
   
-  var projectionPicker: js.UndefOr[Boolean] = js.native
+  var projectionPicker: js.UndefOr[Boolean] = js.undefined
   
-  var requestRenderMode: js.UndefOr[Boolean] = js.native
+  var requestRenderMode: js.UndefOr[Boolean] = js.undefined
   
-  var scene3DOnly: js.UndefOr[Boolean] = js.native
+  var scene3DOnly: js.UndefOr[Boolean] = js.undefined
   
-  var sceneMode: js.UndefOr[SceneMode] = js.native
+  var sceneMode: js.UndefOr[SceneMode] = js.undefined
   
-  var sceneModePicker: js.UndefOr[Boolean] = js.native
+  var sceneModePicker: js.UndefOr[Boolean] = js.undefined
   
-  var selectedImageryProviderViewModel: js.UndefOr[ProviderViewModel] = js.native
+  var selectedImageryProviderViewModel: js.UndefOr[ProviderViewModel] = js.undefined
   
-  var selectedTerrainProviderViewModel: js.UndefOr[ProviderViewModel] = js.native
+  var selectedTerrainProviderViewModel: js.UndefOr[ProviderViewModel] = js.undefined
   
-  var selectionIndicator: js.UndefOr[Boolean] = js.native
+  var selectionIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var shadows: js.UndefOr[Boolean] = js.native
+  var shadows: js.UndefOr[Boolean] = js.undefined
   
-  var shouldAnimate: js.UndefOr[Boolean] = js.native
+  var shouldAnimate: js.UndefOr[Boolean] = js.undefined
   
-  var showRenderLoopErrors: js.UndefOr[Boolean] = js.native
+  var showRenderLoopErrors: js.UndefOr[Boolean] = js.undefined
   
-  var skyAtmosphere: js.UndefOr[SkyAtmosphere | `false`] = js.native
+  var skyAtmosphere: js.UndefOr[SkyAtmosphere | `false`] = js.undefined
   
-  var skyBox: js.UndefOr[SkyBox | `false`] = js.native
+  var skyBox: js.UndefOr[SkyBox | `false`] = js.undefined
   
-  var targetFrameRate: js.UndefOr[Double] = js.native
+  var targetFrameRate: js.UndefOr[Double] = js.undefined
   
-  var terrainExaggeration: js.UndefOr[Double] = js.native
+  var terrainExaggeration: js.UndefOr[Double] = js.undefined
   
-  var terrainProvider: js.UndefOr[TerrainProvider] = js.native
+  var terrainProvider: js.UndefOr[TerrainProvider] = js.undefined
   
-  var terrainProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.native
+  var terrainProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
   
-  var terrainShadows: js.UndefOr[ShadowMode] = js.native
+  var terrainShadows: js.UndefOr[ShadowMode] = js.undefined
   
-  var timeline: js.UndefOr[Boolean] = js.native
+  var timeline: js.UndefOr[Boolean] = js.undefined
   
-  var useDefaultRenderLoop: js.UndefOr[Boolean] = js.native
+  var useDefaultRenderLoop: js.UndefOr[Boolean] = js.undefined
   
-  var vrButton: js.UndefOr[Boolean] = js.native
+  var vrButton: js.UndefOr[Boolean] = js.undefined
 }
 object Animation {
   

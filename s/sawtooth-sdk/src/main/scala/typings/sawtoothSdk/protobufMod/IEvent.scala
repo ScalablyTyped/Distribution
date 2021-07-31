@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.Event.IAttribute
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEvent extends StObject {
   
   /** Event attributes */
-  var attributes: js.UndefOr[js.Array[IAttribute] | Null] = js.native
+  var attributes: js.UndefOr[js.Array[IAttribute] | Null] = js.undefined
   
   /** Event data */
-  var data: js.UndefOr[Uint8Array | Null] = js.native
+  var data: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** Event eventType */
-  var eventType: js.UndefOr[String | Null] = js.native
+  var eventType: js.UndefOr[String | Null] = js.undefined
 }
 object IEvent {
   

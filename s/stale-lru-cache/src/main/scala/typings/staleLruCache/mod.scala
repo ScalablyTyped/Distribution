@@ -2,14 +2,15 @@ package typings.staleLruCache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("stale-lru-cache", JSImport.Namespace)
   @js.native
-  class ^[K, V] () extends Cache[K, V] {
+  class ^[K, V] ()
+    extends StObject
+       with Cache[K, V] {
     def this(options: CacheOptions[K, V]) = this()
   }
   
@@ -39,18 +40,17 @@ object mod {
     def wrap(key: K, revalidate: RevalidationCallback[K, V], callback: OptionsCallback[K, V]): Unit = js.native
   }
   
-  @js.native
   trait CacheOptions[K, V] extends StObject {
     
-    var getSize: js.UndefOr[js.Function2[/* value */ V, /* key */ K, Double]] = js.native
+    var getSize: js.UndefOr[js.Function2[/* value */ V, /* key */ K, Double]] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var revalidate: js.UndefOr[RevalidationCallback[K, V]] = js.native
+    var revalidate: js.UndefOr[RevalidationCallback[K, V]] = js.undefined
     
-    var staleWhileRevalidate: js.UndefOr[Double] = js.native
+    var staleWhileRevalidate: js.UndefOr[Double] = js.undefined
   }
   object CacheOptions {
     
@@ -61,7 +61,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions[_, _], K, V] (val x: Self with (CacheOptions[K, V])) extends AnyVal {
+    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions[?, ?], K, V] (val x: Self & (CacheOptions[K, V])) extends AnyVal {
       
       @scala.inline
       def setGetSize(value: (/* value */ V, /* key */ K) => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction2(value))
@@ -104,14 +104,13 @@ object mod {
   
   type RevalidationCallback[K, V] = js.Function2[/* key */ K, /* callback */ OptionsCallback[K, V], Unit]
   
-  @js.native
   trait SetOptions[K, V] extends StObject {
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var revalidate: js.UndefOr[RevalidationCallback[K, V]] = js.native
+    var revalidate: js.UndefOr[RevalidationCallback[K, V]] = js.undefined
     
-    var staleWhileRevalidate: js.UndefOr[Double] = js.native
+    var staleWhileRevalidate: js.UndefOr[Double] = js.undefined
   }
   object SetOptions {
     
@@ -122,7 +121,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions[_, _], K, V] (val x: Self with (SetOptions[K, V])) extends AnyVal {
+    implicit class SetOptionsMutableBuilder[Self <: SetOptions[?, ?], K, V] (val x: Self & (SetOptions[K, V])) extends AnyVal {
       
       @scala.inline
       def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])

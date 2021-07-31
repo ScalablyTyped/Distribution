@@ -2,66 +2,64 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * modal trigger
   */
-@js.native
 trait ModalTriggerOption extends StObject {
   
-  var backdrop: js.UndefOr[Boolean] = js.native
+  var backdrop: js.UndefOr[Boolean] = js.undefined
   
-  var broken: js.UndefOr[js.Function0[_]] = js.native
+  var broken: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var fade: js.UndefOr[Boolean] = js.native
+  var fade: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[js.Function0[_]] = js.native
+  var hidden: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iframe: js.UndefOr[String] = js.native
+  var iframe: js.UndefOr[String] = js.undefined
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var loaded: js.UndefOr[js.Function0[_]] = js.native
+  var loaded: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var loadingIcon: js.UndefOr[String] = js.native
+  var loadingIcon: js.UndefOr[String] = js.undefined
   
-  var moveable: js.UndefOr[Boolean] = js.native
+  var moveable: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[_]] = js.native
+  var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[_]] = js.native
+  var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var postion: js.UndefOr[String] = js.native
+  var postion: js.UndefOr[String] = js.undefined
   
-  var rememberPos: js.UndefOr[Boolean] = js.native
+  var rememberPos: js.UndefOr[Boolean] = js.undefined
   
-  var remote: js.UndefOr[String] = js.native
+  var remote: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[js.Function0[_]] = js.native
+  var show: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var showHeader: js.UndefOr[Boolean] = js.native
+  var showHeader: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var waittime: js.UndefOr[Double] = js.native
+  var waittime: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object ModalTriggerOption {
   
@@ -81,7 +79,7 @@ object ModalTriggerOption {
     def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
     @scala.inline
-    def setBroken(value: () => _): Self = StObject.set(x, "broken", js.Any.fromFunction0(value))
+    def setBroken(value: () => js.Any): Self = StObject.set(x, "broken", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBrokenUndefined: Self = StObject.set(x, "broken", js.undefined)
@@ -105,7 +103,7 @@ object ModalTriggerOption {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHidden(value: () => _): Self = StObject.set(x, "hidden", js.Any.fromFunction0(value))
+    def setHidden(value: () => js.Any): Self = StObject.set(x, "hidden", js.Any.fromFunction0(value))
     
     @scala.inline
     def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
@@ -129,7 +127,7 @@ object ModalTriggerOption {
     def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def setLoaded(value: () => _): Self = StObject.set(x, "loaded", js.Any.fromFunction0(value))
+    def setLoaded(value: () => js.Any): Self = StObject.set(x, "loaded", js.Any.fromFunction0(value))
     
     @scala.inline
     def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
@@ -153,13 +151,13 @@ object ModalTriggerOption {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOnHide(value: () => _): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def setOnShow(value: () => _): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
@@ -183,7 +181,7 @@ object ModalTriggerOption {
     def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     
     @scala.inline
-    def setShow(value: () => _): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    def setShow(value: () => js.Any): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
     def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])

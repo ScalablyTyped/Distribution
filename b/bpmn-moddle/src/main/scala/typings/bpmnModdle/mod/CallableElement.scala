@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallableElement extends BaseElement {
+trait CallableElement
+  extends StObject
+     with BaseElement {
   
-  var ioBinding: InputOutputBinding = js.native
+  var ioBinding: InputOutputBinding
   
-  var ioSpecification: InputOutputSpecification = js.native
+  var ioSpecification: InputOutputSpecification
   
-  var name: String = js.native
+  var name: String
   
-  var supportedInterfaceRef: Interface = js.native
+  var supportedInterfaceRef: Interface
 }
 object CallableElement {
   

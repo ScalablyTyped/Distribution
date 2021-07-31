@@ -5,24 +5,22 @@ import typings.octokitTypes.octokitTypesStrings.maintainer
 import typings.octokitTypes.octokitTypesStrings.member
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsListMembersInOrgEndpoint extends StObject {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Filters members returned by their role in the team. Can be one of:
@@ -30,9 +28,9 @@ trait TeamsListMembersInOrgEndpoint extends StObject {
     * \* `maintainer` - team maintainers.
     * \* `all` - all members of the team.
     */
-  var role: js.UndefOr[member | maintainer | all] = js.native
+  var role: js.UndefOr[member | maintainer | all] = js.undefined
   
-  var team_slug: String = js.native
+  var team_slug: String
 }
 object TeamsListMembersInOrgEndpoint {
   

@@ -2,39 +2,37 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Execution extends StObject {
   
   /**
     * The time when the Execution status transitioned to COMPLETE. This value will be set automatically when state transitions to COMPLETE. - In response: set if the execution state is
     * COMPLETE. - In create/update request: never set
     */
-  var completionTime: js.UndefOr[Timestamp] = js.native
+  var completionTime: js.UndefOr[Timestamp] = js.undefined
   
   /** The time when the Execution was created. This value will be set automatically when CreateExecution is called. - In response: always set - In create/update request: never set */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The dimensions along which different steps in this execution may vary. This must remain fixed over the life of the execution. Returns INVALID_ARGUMENT if this field is set in an
     * update request. Returns INVALID_ARGUMENT if the same name occurs in more than one dimension_definition. Returns INVALID_ARGUMENT if the size of the list is over 100. - In response:
     * present if set by create - In create request: optional - In update request: never set
     */
-  var dimensionDefinitions: js.UndefOr[js.Array[_]] = js.native
+  var dimensionDefinitions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * A unique identifier within a History for this Execution. Returns INVALID_ARGUMENT if this field is set or overwritten by the caller. - In response always set - In create/update
     * request: never set
     */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /** Classify the result, for example into SUCCESS or FAILURE - In response: present if set by create/update request - In create/update request: optional */
-  var outcome: js.UndefOr[Outcome] = js.native
+  var outcome: js.UndefOr[Outcome] = js.undefined
   
   /** Lightweight information about execution request. - In response: present if set by create - In create: optional - In update: optional */
-  var specification: js.UndefOr[Specification] = js.native
+  var specification: js.UndefOr[Specification] = js.undefined
   
   /**
     * The initial state is IN_PROGRESS. The only legal state transitions is from IN_PROGRESS to COMPLETE. A PRECONDITION_FAILED will be returned if an invalid transition is requested. The
@@ -42,10 +40,10 @@ trait Execution extends StObject {
     * steps within the execution will be set as COMPLETE. If the outcome of the step is not set, the outcome will be set to INCONCLUSIVE. - In response always set - In create/update
     * request: optional
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** TestExecution Matrix ID that the TestExecutionService uses. - In response: present if set by create - In create: optional - In update: never set */
-  var testExecutionMatrixId: js.UndefOr[String] = js.native
+  var testExecutionMatrixId: js.UndefOr[String] = js.undefined
 }
 object Execution {
   
@@ -71,7 +69,7 @@ object Execution {
     def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def setDimensionDefinitions(value: js.Array[_]): Self = StObject.set(x, "dimensionDefinitions", value.asInstanceOf[js.Any])
+    def setDimensionDefinitions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensionDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDimensionDefinitionsUndefined: Self = StObject.set(x, "dimensionDefinitions", js.undefined)

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceInfo extends StObject {
   
   /** Name of a Compute Engine instance. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** External IP address of the network interface. */
-  var externalIp: js.UndefOr[String] = js.native
+  var externalIp: js.UndefOr[String] = js.undefined
   
   /** Name of the network interface of a Compute Engine instance. */
-  var interface: js.UndefOr[String] = js.native
+  var interface: js.UndefOr[String] = js.undefined
   
   /** Internal IP address of the network interface. */
-  var internalIp: js.UndefOr[String] = js.native
+  var internalIp: js.UndefOr[String] = js.undefined
   
   /** Network tags configured on the instance. */
-  var networkTags: js.UndefOr[js.Array[String]] = js.native
+  var networkTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URI of a Compute Engine network. */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /** Service account authorized for the instance. */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine instance. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object InstanceInfo {
   

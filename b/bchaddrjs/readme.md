@@ -11,8 +11,8 @@ Bitcoin Cash general purpose address translation.
 | Full name          | bchaddrjs |
 | Keywords           | bitcoin-cash, bitcoin, bch, cryptocurrency, address, encoding, translation, base58, bitpay, cash-address |
 | # releases         | 15 |
-| # dependents       | 46 |
-| # downloads        | 363507 |
+| # dependents       | 54 |
+| # downloads        | 429972 |
 | # stars            | 0 |
 
 ## Links

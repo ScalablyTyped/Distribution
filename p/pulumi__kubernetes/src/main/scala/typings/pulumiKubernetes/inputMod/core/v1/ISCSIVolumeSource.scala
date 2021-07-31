@@ -3,69 +3,67 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
   */
-@js.native
 trait ISCSIVolumeSource extends StObject {
   
   /**
     * whether support iSCSI Discovery CHAP authentication
     */
-  var chapAuthDiscovery: js.UndefOr[Input[Boolean]] = js.native
+  var chapAuthDiscovery: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * whether support iSCSI Session CHAP authentication
     */
-  var chapAuthSession: js.UndefOr[Input[Boolean]] = js.native
+  var chapAuthSession: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
     */
-  var fsType: js.UndefOr[Input[String]] = js.native
+  var fsType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection.
     */
-  var initiatorName: js.UndefOr[Input[String]] = js.native
+  var initiatorName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Target iSCSI Qualified Name.
     */
-  var iqn: Input[String] = js.native
+  var iqn: Input[String]
   
   /**
     * iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
     */
-  var iscsiInterface: js.UndefOr[Input[String]] = js.native
+  var iscsiInterface: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * iSCSI Target Lun number.
     */
-  var lun: Input[Double] = js.native
+  var lun: Input[Double]
   
   /**
     * iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
     */
-  var portals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var portals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * CHAP Secret for iSCSI target and initiator authentication
     */
-  var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.native
+  var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
   
   /**
     * iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
     */
-  var targetPortal: Input[String] = js.native
+  var targetPortal: Input[String]
 }
 object ISCSIVolumeSource {
   

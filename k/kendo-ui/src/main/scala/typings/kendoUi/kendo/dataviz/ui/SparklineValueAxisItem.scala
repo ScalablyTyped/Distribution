@@ -3,51 +3,49 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineValueAxisItem extends StObject {
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.native
+  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var crosshair: js.UndefOr[SparklineValueAxisItemCrosshair] = js.native
+  var crosshair: js.UndefOr[SparklineValueAxisItemCrosshair] = js.undefined
   
-  var labels: js.UndefOr[SparklineValueAxisItemLabels] = js.native
+  var labels: js.UndefOr[SparklineValueAxisItemLabels] = js.undefined
   
-  var line: js.UndefOr[SparklineValueAxisItemLine] = js.native
+  var line: js.UndefOr[SparklineValueAxisItemLine] = js.undefined
   
-  var majorGridLines: js.UndefOr[SparklineValueAxisItemMajorGridLines] = js.native
+  var majorGridLines: js.UndefOr[SparklineValueAxisItemMajorGridLines] = js.undefined
   
-  var majorTicks: js.UndefOr[SparklineValueAxisItemMajorTicks] = js.native
+  var majorTicks: js.UndefOr[SparklineValueAxisItemMajorTicks] = js.undefined
   
-  var majorUnit: js.UndefOr[Double] = js.native
+  var majorUnit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minorGridLines: js.UndefOr[SparklineValueAxisItemMinorGridLines] = js.native
+  var minorGridLines: js.UndefOr[SparklineValueAxisItemMinorGridLines] = js.undefined
   
-  var minorTicks: js.UndefOr[SparklineValueAxisItemMinorTicks] = js.native
+  var minorTicks: js.UndefOr[SparklineValueAxisItemMinorTicks] = js.undefined
   
-  var minorUnit: js.UndefOr[Double] = js.native
+  var minorUnit: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[js.Any] = js.undefined
   
-  var narrowRange: js.UndefOr[Boolean] = js.native
+  var narrowRange: js.UndefOr[Boolean] = js.undefined
   
-  var notes: js.UndefOr[SparklineValueAxisItemNotes] = js.native
+  var notes: js.UndefOr[SparklineValueAxisItemNotes] = js.undefined
   
-  var plotBands: js.UndefOr[js.Array[SparklineValueAxisItemPlotBand]] = js.native
+  var plotBands: js.UndefOr[js.Array[SparklineValueAxisItemPlotBand]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[SparklineValueAxisItemTitle] = js.native
+  var title: js.UndefOr[SparklineValueAxisItemTitle] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object SparklineValueAxisItem {
   

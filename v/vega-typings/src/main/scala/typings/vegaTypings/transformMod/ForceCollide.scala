@@ -5,25 +5,25 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.collide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceCollide extends Force {
+trait ForceCollide
+  extends StObject
+     with Force {
   
-  var force: collide = js.native
+  var force: collide
   
-  var iterations: js.UndefOr[Double | SignalRef] = js.native
+  var iterations: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var radius: js.UndefOr[Double | SignalRef | ExprRef] = js.native
+  var radius: js.UndefOr[Double | SignalRef | ExprRef] = js.undefined
   
-  var strength: js.UndefOr[Double | SignalRef] = js.native
+  var strength: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object ForceCollide {
   
   @scala.inline
-  def apply(force: collide): ForceCollide = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+  def apply(): ForceCollide = {
+    val __obj = js.Dynamic.literal(force = "collide")
     __obj.asInstanceOf[ForceCollide]
   }
   

@@ -10,10 +10,13 @@ import typings.std.RegExp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("hoxy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hoxy", "Cycle")
   @js.native
@@ -151,7 +154,7 @@ object mod {
       * Request body parsed as JSON. This is only present if you intercept the
       * request as:'json'. Changes made to this object will be seen by the server.
       */
-    var json: js.UndefOr[Record[String, _]] = js.native
+    var json: js.UndefOr[Record[String, js.Any]] = js.native
     
     /**
       * All-caps HTTP method used. Lowercase values are converted to uppercase
@@ -278,12 +281,10 @@ object mod {
     def tee(stream: Writable): Unit = js.native
   }
   
-  @JSImport("hoxy", "createServer")
-  @js.native
-  def createServer(): Proxy = js.native
-  @JSImport("hoxy", "createServer")
-  @js.native
-  def createServer(opts: CreateServerOptions): Proxy = js.native
+  @scala.inline
+  def createServer(): Proxy = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Proxy]
+  @scala.inline
+  def createServer(opts: CreateServerOptions): Proxy = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(opts.asInstanceOf[js.Any]).asInstanceOf[Proxy]
   
   /* Rewritten from type alias, can be one of: 
     - typings.hoxy.hoxyStrings.$
@@ -311,12 +312,11 @@ object mod {
     def string: typings.hoxy.hoxyStrings.string = "string".asInstanceOf[typings.hoxy.hoxyStrings.string]
   }
   
-  @js.native
   trait CertificateParams extends StObject {
     
-    var cert: String | (js.Array[Buffer | String]) | Buffer = js.native
+    var cert: String | (js.Array[Buffer | String]) | Buffer
     
-    var key: String | (js.Array[Buffer | js.Object | String]) | Buffer = js.native
+    var key: String | (js.Array[Buffer | js.Object | String]) | Buffer
   }
   object CertificateParams {
     
@@ -346,7 +346,6 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateServerOptions extends StObject {
     
     /**
@@ -358,7 +357,7 @@ object mod {
       * caching them in memory for subsequent visits, thus allowing the proxy to
       * handle https requests as cleartext
       */
-    var certAuthority: js.UndefOr[CertificateParams] = js.native
+    var certAuthority: js.UndefOr[CertificateParams] = js.undefined
     
     /**
       *  If present, this proxy will run as a reverse proxy for the given server.
@@ -366,25 +365,25 @@ object mod {
       *  configuring it in the client's proxy settings.
       *  This value should take the form scheme://host:port.
       */
-    var reverse: js.UndefOr[String] = js.native
+    var reverse: js.UndefOr[String] = js.undefined
     
     /**
       * Latency emulation
       */
-    var slow: js.UndefOr[Slow] = js.native
+    var slow: js.UndefOr[Slow] = js.undefined
     
     /**
       * Should only be used in combination with reverse. If present, causes Hoxy to
       * run as an https server. Passed as opts to https.createServer(opts, function)
       */
-    var tls: js.UndefOr[CertificateParams] = js.native
+    var tls: js.UndefOr[CertificateParams] = js.undefined
     
     /**
       * If present, this proxy will in turn use another proxy.
       * This allows Hoxy to play well with other proxies.
       * This value should take the form host:port
       */
-    var upstreamProxy: js.UndefOr[String] = js.native
+    var upstreamProxy: js.UndefOr[String] = js.undefined
   }
   object CreateServerOptions {
     
@@ -457,35 +456,34 @@ object mod {
     def PUT: typings.hoxy.hoxyStrings.PUT = "PUT".asInstanceOf[typings.hoxy.hoxyStrings.PUT]
   }
   
-  @js.native
   trait InterceptOptions extends StObject {
     
     /**
       * Body-parsers
       */
-    var as: js.UndefOr[BodyParser] = js.native
+    var as: js.UndefOr[BodyParser] = js.undefined
     
     /**
       * Match the full content-type header of the request or
       * response (depending on the phase)
       */
-    var contentType: js.UndefOr[Filter[String]] = js.native
+    var contentType: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Match the full request URL including protocol and hostname.
       * Patterns like /foo/ * are allowed
       */
-    var fullUrl: js.UndefOr[Filter[String]] = js.native
+    var fullUrl: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Match the host, not including :port.
       */
-    var hostname: js.UndefOr[Filter[String]] = js.native
+    var hostname: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Match the all-uppercase HTTP request method
       */
-    var method: js.UndefOr[Filter[HttpMethod]] = js.native
+    var method: js.UndefOr[Filter[HttpMethod]] = js.undefined
     
     /**
       * Match just the mime type portion of the content-type header
@@ -493,47 +491,47 @@ object mod {
       * if the entire header is "text/html; charset=utf-8", just
       * match the "text/html" part
       */
-    var mimeType: js.UndefOr[Filter[String]] = js.native
+    var mimeType: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Request phase to listen to
       */
-    var phase: Phase = js.native
+    var phase: Phase
     
     /**
       * Match the port number.
       */
-    var port: js.UndefOr[Filter[Double | String]] = js.native
+    var port: js.UndefOr[Filter[Double | String]] = js.undefined
     
     /**
       * Match the request protocol
       */
-    var protocol: js.UndefOr[Filter[String]] = js.native
+    var protocol: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Same as contentType but only matches request
       */
-    var requestContentType: js.UndefOr[Filter[String]] = js.native
+    var requestContentType: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Same as mimeType but only matches request
       */
-    var requestMimeType: js.UndefOr[Filter[String]] = js.native
+    var requestMimeType: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Same as contentType but only matches response
       */
-    var responseContentType: js.UndefOr[Filter[String]] = js.native
+    var responseContentType: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Same as mimeType but only matches response
       */
-    var responseMimeType: js.UndefOr[Filter[String]] = js.native
+    var responseMimeType: js.UndefOr[Filter[String]] = js.undefined
     
     /**
       * Match the request URL. Patterns like /foo/ * are allowed
       */
-    var url: js.UndefOr[Filter[String]] = js.native
+    var url: js.UndefOr[Filter[String]] = js.undefined
   }
   object InterceptOptions {
     
@@ -673,14 +671,13 @@ object mod {
     js.Promise[Unit] | Unit
   ]
   
-  @js.native
   trait Log extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var level: LogLevel = js.native
+    var level: LogLevel
     
-    var message: String = js.native
+    var message: String
   }
   object Log {
     
@@ -755,20 +752,19 @@ object mod {
   
   type PossibleErrorCallback = js.Function1[/* err */ js.UndefOr[Error], js.Any]
   
-  @js.native
   trait ServeOptions extends StObject {
     
     /**
       * Which local directory to serve out of. Defaults to filesystem root "/"
       */
-    var docroot: js.UndefOr[String] = js.native
+    var docroot: js.UndefOr[String] = js.undefined
     
     /**
       * Which file to serve. Defaults to the request URL. Normally this would
       * be used in mutual exclusion with docroot. Strictly speaking, path is
       * always rooted to docroot, which defaults to "/"
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Mainly relevant when using the docroot option. Describes the relationship
@@ -785,7 +781,7 @@ object mod {
       * if a requested file doesn't exist locally, it's copied to the local docroot
       * from the remote one, and will be found locally on subsequent requests.
       */
-    var strategy: js.UndefOr[ServeStrategy] = js.native
+    var strategy: js.UndefOr[ServeStrategy] = js.undefined
   }
   object ServeOptions {
     
@@ -836,28 +832,27 @@ object mod {
     def replace: typings.hoxy.hoxyStrings.replace = "replace".asInstanceOf[typings.hoxy.hoxyStrings.replace]
   }
   
-  @js.native
   trait Slow extends StObject {
     
     /**
       * Imposes a single rate-limiting bottleneck (in bytes per second) on all downloads
       */
-    var down: Double = js.native
+    var down: Double
     
     /**
       * Imposes a single rate-limiting bottleneck (in bytes per second) on all throughput
       */
-    var latency: Double = js.native
+    var latency: Double
     
     /**
       * Imposes a delay (in milliseconds) between all requests and responses
       */
-    var rate: Double = js.native
+    var rate: Double
     
     /**
       * Imposes a single rate-limiting bottleneck (in bytes per second) on all uploads
       */
-    var up: Double = js.native
+    var up: Double
   }
   object Slow {
     

@@ -6,59 +6,57 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.materializeCss.materializeCssStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
   /**
     * Delay time before tooltip appears.
     * @default 200
     */
-  var enterDelay: Double = js.native
+  var enterDelay: Double
   
   /**
     * Delay time before tooltip disappears.
     * @default 0
     */
-  var exitDelay: Double = js.native
+  var exitDelay: Double
   
   /**
     * Can take regular text or HTML strings.
     * @default null
     */
-  var html: String = js.native
+  var html: String
   
   /**
     * Enter transition duration.
     * @default 300
     */
-  var inDuration: Double = js.native
+  var inDuration: Double
   
   /**
     * Set distance tooltip appears away from its activator excluding transitionMovement.
     * @default 5
     */
-  var margin: Double = js.native
+  var margin: Double
   
   /**
     * Exit transition duration.
     * @default 250
     */
-  var outDuration: Double = js.native
+  var outDuration: Double
   
   /**
     * Set the direction of the tooltip.
     * @default 'bottom'
     */
-  var position: top | right | bottom | left = js.native
+  var position: top | right | bottom | left
   
   /**
     * Amount in px that the tooltip moves during its transition.
     * @default 10
     */
-  var transitionMovement: Double = js.native
+  var transitionMovement: Double
 }
 object TooltipOptions {
   

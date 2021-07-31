@@ -17,7 +17,6 @@ import typings.angularTooltips.angularTooltipsStrings.small
 import typings.angularTooltips.angularTooltipsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,10 +25,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : `720kbDottooltips` = js.native
   
-  @js.native
   trait TooltipsConfProvider extends StObject {
     
-    def configure(options: TooltipsConfProviderOptions): Unit = js.native
+    def configure(options: TooltipsConfProviderOptions): Unit
   }
   object TooltipsConfProvider {
     
@@ -47,30 +45,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TooltipsConfProviderOptions extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var closeButton: js.UndefOr[Boolean] = js.native
+    var closeButton: js.UndefOr[Boolean] = js.undefined
     
-    var hideTrigger: js.UndefOr[String] = js.native
+    var hideTrigger: js.UndefOr[String] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var showTrigger: js.UndefOr[String] = js.native
+    var showTrigger: js.UndefOr[String] = js.undefined
     
     var side: js.UndefOr[
         left | right | top | bottom | (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`)
-      ] = js.native
+      ] = js.undefined
     
-    var size: js.UndefOr[small | medium | large] = js.native
+    var size: js.UndefOr[small | medium | large] = js.undefined
     
-    var smart: js.UndefOr[Boolean] = js.native
+    var smart: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[slow | medium | fast] = js.native
+    var speed: js.UndefOr[slow | medium | fast] = js.undefined
     
-    var tooltipTemplateUrlCache: js.UndefOr[Boolean] = js.native
+    var tooltipTemplateUrlCache: js.UndefOr[Boolean] = js.undefined
   }
   object TooltipsConfProviderOptions {
     

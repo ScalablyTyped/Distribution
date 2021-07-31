@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends ReadonlyTextRange {
+trait Node
+  extends StObject
+     with ReadonlyTextRange {
   
   val decorators: js.UndefOr[NodeArray[Decorator]] = js.native
   
@@ -48,7 +49,7 @@ trait Node extends ReadonlyTextRange {
   def getSourceFile(): SourceFile = js.native
   
   def getStart(): Double = js.native
-  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+  def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   

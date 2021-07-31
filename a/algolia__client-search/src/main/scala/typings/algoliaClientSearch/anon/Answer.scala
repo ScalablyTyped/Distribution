@@ -2,13 +2,11 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Answer extends StObject {
   
-  var _answer: js.UndefOr[Extract] = js.native
+  var _answer: js.UndefOr[Extract] = js.undefined
 }
 object Answer {
   

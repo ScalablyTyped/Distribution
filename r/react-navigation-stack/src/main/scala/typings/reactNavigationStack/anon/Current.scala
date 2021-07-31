@@ -3,28 +3,26 @@ package typings.reactNavigationStack.anon
 import typings.reactNative.mod.Animated.AnimatedInterpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
   /**
     * Progress value of the current screen.
     */
-  var current: AnimatedInterpolation = js.native
+  var current: AnimatedInterpolation
   
   /**
     * Progress value for the screen after this one in the stack.
     * This can be `undefined` in case the screen animating is the last one.
     */
-  var next: js.UndefOr[AnimatedInterpolation] = js.native
+  var next: js.UndefOr[AnimatedInterpolation] = js.undefined
   
   /**
     * Progress value for the screen before this one in the stack.
     * This can be `undefined` in case the screen animating is the first one.
     */
-  var previous: js.UndefOr[AnimatedInterpolation] = js.native
+  var previous: js.UndefOr[AnimatedInterpolation] = js.undefined
 }
 object Current {
   

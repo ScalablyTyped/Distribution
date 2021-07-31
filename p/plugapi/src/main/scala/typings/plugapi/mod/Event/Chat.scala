@@ -4,25 +4,23 @@ import typings.plugapi.mod.RawChatMessage
 import typings.plugapi.mod.User.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chat extends StObject {
   
-  var from: User = js.native
+  var from: User
   
-  var id: String = js.native
+  var id: String
   
-  var mentions: js.Array[_] = js.native
+  var mentions: js.Array[js.Any]
   
-  var message: String = js.native
+  var message: String
   
-  var muted: Boolean = js.native
+  var muted: Boolean
   
-  var raw: RawChatMessage = js.native
+  var raw: RawChatMessage
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Chat {
   
@@ -30,7 +28,7 @@ object Chat {
   def apply(
     from: User,
     id: String,
-    mentions: js.Array[_],
+    mentions: js.Array[js.Any],
     message: String,
     muted: Boolean,
     raw: RawChatMessage,
@@ -51,7 +49,7 @@ object Chat {
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: js.Array[_]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    def setMentions(value: js.Array[js.Any]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMentionsVarargs(value: js.Any*): Self = StObject.set(x, "mentions", js.Array(value :_*))

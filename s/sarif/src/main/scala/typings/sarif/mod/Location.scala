@@ -2,46 +2,44 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * A set of regions relevant to the location.
     */
-  var annotations: js.UndefOr[js.Array[Region]] = js.native
+  var annotations: js.UndefOr[js.Array[Region]] = js.undefined
   
   /**
     * Value that distinguishes this location from all other locations within a single result object.
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * The logical locations associated with the result.
     */
-  var logicalLocations: js.UndefOr[js.Array[LogicalLocation]] = js.native
+  var logicalLocations: js.UndefOr[js.Array[LogicalLocation]] = js.undefined
   
   /**
     * A message relevant to the location.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * Identifies the artifact and region.
     */
-  var physicalLocation: js.UndefOr[PhysicalLocation] = js.native
+  var physicalLocation: js.UndefOr[PhysicalLocation] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the location.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * An array of objects that describe relationships between this location and others.
     */
-  var relationships: js.UndefOr[js.Array[LocationRelationship]] = js.native
+  var relationships: js.UndefOr[js.Array[LocationRelationship]] = js.undefined
 }
 object Location {
   

@@ -3,38 +3,36 @@ package typings.minappEnv.wx
 import typings.minappEnv.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateMarkerOption extends StObject {
   
   /** 动画结束回调函数 */
-  var animationEnd: js.UndefOr[Function] = js.native
+  var animationEnd: js.UndefOr[Function] = js.undefined
   
   /** 移动过程中是否自动旋转 marker */
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[TranslateMarkerCompleteCallback] = js.native
+  var complete: js.UndefOr[TranslateMarkerCompleteCallback] = js.undefined
   
   /** 指定 marker 移动到的目标点 */
-  var destination: DestinationOption = js.native
+  var destination: DestinationOption
   
   /** 动画持续时长，平移与旋转分别计算 */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[TranslateMarkerFailCallback] = js.native
+  var fail: js.UndefOr[TranslateMarkerFailCallback] = js.undefined
   
   /** 指定 marker */
-  var markerId: Double = js.native
+  var markerId: Double
   
   /** marker 的旋转角度 */
-  var rotate: Double = js.native
+  var rotate: Double
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[TranslateMarkerSuccessCallback] = js.native
+  var success: js.UndefOr[TranslateMarkerSuccessCallback] = js.undefined
 }
 object TranslateMarkerOption {
   

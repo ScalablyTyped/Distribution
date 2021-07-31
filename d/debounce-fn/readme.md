@@ -11,8 +11,8 @@ Debounce a function
 | Full name          | debounce-fn |
 | Keywords           | debounce, function, debouncer, fn, func, throttle, delay, invoked |
 | # releases         | 4 |
-| # dependents       | 13 |
-| # downloads        | 1616413 |
+| # dependents       | 12 |
+| # downloads        | 3205871 |
 | # stars            | 0 |
 
 ## Links

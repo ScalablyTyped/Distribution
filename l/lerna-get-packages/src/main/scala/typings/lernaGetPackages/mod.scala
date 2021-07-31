@@ -3,22 +3,23 @@ package typings.lernaGetPackages
 import typings.lernaGetPackages.anon.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String): js.Array[LernaPackage] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[LernaPackage]]
+  
   @JSImport("lerna-get-packages", JSImport.Namespace)
   @js.native
-  def apply(path: String): js.Array[LernaPackage] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait LernaPackage extends StObject {
     
     @JSName("package")
-    var _package: Config = js.native
+    var _package: Config
     
-    var location: String = js.native
+    var location: String
   }
   object LernaPackage {
     

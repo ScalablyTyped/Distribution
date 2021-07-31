@@ -6,16 +6,18 @@ import typings.reactMdPortal.getContainerMod.PortalInto
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalMod {
   
   object Portal {
     
+    @scala.inline
+    def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasIntoIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@react-md/portal/types/Portal", "Portal")
     @js.native
-    def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -44,13 +46,12 @@ object portalMod {
     }
   }
   
-  @js.native
   trait PortalProps extends StObject {
     
     /**
       * The children to render within the portal.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Either a function that returns an HTMLElement, an HTMLElement, or a
@@ -61,14 +62,14 @@ object portalMod {
       * If the `querySelector` string does not return a valid HTMLElement, an error
       * will be thrown.
       */
-    var into: js.UndefOr[PortalInto] = js.native
+    var into: js.UndefOr[PortalInto] = js.undefined
     
     /**
       * The id of an element that the portal should be rendered into. If an element
       * with the provided id can not be found on the page at the time of mounting,
       * an error will be thrown.
       */
-    var intoId: js.UndefOr[String] = js.native
+    var intoId: js.UndefOr[String] = js.undefined
   }
   object PortalProps {
     

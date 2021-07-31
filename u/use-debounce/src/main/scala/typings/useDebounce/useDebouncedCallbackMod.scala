@@ -2,26 +2,26 @@ package typings.useDebounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useDebouncedCallbackMod {
   
-  @JSImport("use-debounce/lib/useDebouncedCallback", JSImport.Default)
+  @JSImport("use-debounce/lib/useDebouncedCallback", JSImport.Namespace)
   @js.native
-  def default[T /* <: js.Array[_] */](func: js.Function1[/* args */ T, _], wait: Double): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = js.native
-  @JSImport("use-debounce/lib/useDebouncedCallback", JSImport.Default)
-  @js.native
-  def default[T /* <: js.Array[_] */](func: js.Function1[/* args */ T, _], wait: Double, options: Options): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T /* <: js.Array[js.Any] */](func: js.Function1[/* args */ T, js.Any], wait: Double): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]]]
+  @scala.inline
+  def default[T /* <: js.Array[js.Any] */](func: js.Function1[/* args */ T, js.Any], wait: Double, options: Options): js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Function1[/* args */ T, Unit], js.Function0[Unit], js.Function0[Unit]]]
+  
   trait Options extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var maxWait: js.UndefOr[Double] = js.native
+    var maxWait: js.UndefOr[Double] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

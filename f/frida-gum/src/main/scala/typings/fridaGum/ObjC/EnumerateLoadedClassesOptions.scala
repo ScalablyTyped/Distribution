@@ -3,16 +3,14 @@ package typings.fridaGum.ObjC
 import typings.fridaGum.ModuleMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerateLoadedClassesOptions extends StObject {
   
   /**
     * Limit enumeration to modules in the given module map.
     */
-  var ownedBy: js.UndefOr[ModuleMap] = js.native
+  var ownedBy: js.UndefOr[ModuleMap] = js.undefined
 }
 object EnumerateLoadedClassesOptions {
   

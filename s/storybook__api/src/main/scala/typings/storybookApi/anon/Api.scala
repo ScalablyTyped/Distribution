@@ -4,15 +4,13 @@ import typings.storybookApi.mod.API
 import typings.storybookApi.mod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Api extends StObject {
   
-  var api: API = js.native
+  var api: API
   
-  var state: State = js.native
+  var state: State
 }
 object Api {
   

@@ -2,41 +2,41 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConversationThread extends Entity {
+trait ConversationThread
+  extends StObject
+     with Entity {
   
   // The Cc: recipients for the thread.
-  var ccRecipients: js.UndefOr[js.Array[Recipient]] = js.native
+  var ccRecipients: js.UndefOr[js.Array[Recipient]] = js.undefined
   
   // Indicates whether any of the posts within this thread has at least one attachment.
-  var hasAttachments: js.UndefOr[Boolean] = js.native
+  var hasAttachments: js.UndefOr[Boolean] = js.undefined
   
   // Indicates if the thread is locked.
-  var isLocked: js.UndefOr[Boolean] = js.native
+  var isLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var lastDeliveredDateTime: js.UndefOr[String] = js.native
+  var lastDeliveredDateTime: js.UndefOr[String] = js.undefined
   
   // Read-only. Nullable.
-  var posts: js.UndefOr[NullableOption[js.Array[Post]]] = js.native
+  var posts: js.UndefOr[NullableOption[js.Array[Post]]] = js.undefined
   
   // A short summary from the body of the latest post in this conversation.
-  var preview: js.UndefOr[String] = js.native
+  var preview: js.UndefOr[String] = js.undefined
   
   // The To: recipients for the thread.
-  var toRecipients: js.UndefOr[js.Array[Recipient]] = js.native
+  var toRecipients: js.UndefOr[js.Array[Recipient]] = js.undefined
   
   // The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
   
   // All the users that sent a message to this thread.
-  var uniqueSenders: js.UndefOr[js.Array[String]] = js.native
+  var uniqueSenders: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConversationThread {
   

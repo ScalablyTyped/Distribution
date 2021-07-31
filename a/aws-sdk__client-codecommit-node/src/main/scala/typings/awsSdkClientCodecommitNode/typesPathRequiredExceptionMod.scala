@@ -8,28 +8,27 @@ import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUni
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPathRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PathRequiredExceptionDetails> * / any */ @js.native
-  trait PathRequiredException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PathRequiredExceptionDetails> * / any */ trait PathRequiredException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with GetFileExceptionsUnion
        with GetFolderExceptionsUnion
        with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException
   }
   object PathRequiredException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException): PathRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PathRequiredException = {
+      val __obj = js.Dynamic.literal(name = "PathRequiredException")
       __obj.asInstanceOf[PathRequiredException]
     }
     
@@ -41,6 +40,5 @@ object typesPathRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait PathRequiredExceptionDetails extends StObject
 }

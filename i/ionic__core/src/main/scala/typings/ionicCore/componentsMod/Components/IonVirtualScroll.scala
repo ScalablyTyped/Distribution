@@ -8,7 +8,6 @@ import typings.ionicCore.virtualScrollInterfaceMod.ItemHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.ItemRenderFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -70,7 +69,7 @@ trait IonVirtualScroll extends StObject {
   /**
     * The data that builds the templates within the virtual scroll. It's important to note that when this data has changed, then the entire virtual scroll is reset, which is an expensive operation and should be avoided if possible.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.native
   
   /**
     * NOTE: only Vanilla JS API.
@@ -85,15 +84,15 @@ trait IonVirtualScroll extends StObject {
   /**
     * NOTE: only JSX API for stencil.  Provide a render function for the footer to be rendered. Returns a JSX virtual-dom.
     */
-  var renderFooter: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+  var renderFooter: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
   
   /**
     * NOTE: only JSX API for stencil.  Provide a render function for the header to be rendered. Returns a JSX virtual-dom.
     */
-  var renderHeader: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+  var renderHeader: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
   
   /**
     * NOTE: only JSX API for stencil.  Provide a render function for the items to be rendered. Returns a JSX virtual-dom.
     */
-  var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+  var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
 }

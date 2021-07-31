@@ -4,33 +4,31 @@ import typings.braintree.anon.CountryCodeAlpha2
 import typings.braintree.anon.VerificationAcmount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodUpdateRequest extends StObject {
   
-  var billingAddress: js.UndefOr[CountryCodeAlpha2] = js.native
+  var billingAddress: js.UndefOr[CountryCodeAlpha2] = js.undefined
   
-  var billingAddressId: js.UndefOr[String] = js.native
+  var billingAddressId: js.UndefOr[String] = js.undefined
   
-  var cardholderName: js.UndefOr[String] = js.native
+  var cardholderName: js.UndefOr[String] = js.undefined
   
-  var cvv: js.UndefOr[String] = js.native
+  var cvv: js.UndefOr[String] = js.undefined
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
-  var expirationMonth: js.UndefOr[String] = js.native
+  var expirationMonth: js.UndefOr[String] = js.undefined
   
-  var expirationYear: js.UndefOr[String] = js.native
+  var expirationYear: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[VerificationAcmount] = js.native
+  var options: js.UndefOr[VerificationAcmount] = js.undefined
   
-  var paymentMethodNonce: js.UndefOr[String] = js.native
+  var paymentMethodNonce: js.UndefOr[String] = js.undefined
 }
 object PaymentMethodUpdateRequest {
   

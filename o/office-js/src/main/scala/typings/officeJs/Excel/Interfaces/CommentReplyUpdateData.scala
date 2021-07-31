@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
-@js.native
 trait CommentReplyUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CommentReplyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
 }
 object CommentReplyUpdateData {
   

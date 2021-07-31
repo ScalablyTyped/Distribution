@@ -4,7 +4,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait InternalCollectionObserver extends StObject {
     * Reset the observer to the passed collection and call any subscribers with changes between the current collection and the reset collection.
     * @param oldCollection 
     */
-  def reset(oldCollection: js.Array[_]): Unit = js.native
-  def reset(oldCollection: Map[_, _]): Unit = js.native
-  def reset(oldCollection: Set[_]): Unit = js.native
+  def reset(oldCollection: js.Array[js.Any]): Unit = js.native
+  def reset(oldCollection: Map[js.Any, js.Any]): Unit = js.native
+  def reset(oldCollection: Set[js.Any]): Unit = js.native
   
   /**
     * Subscribe to collection mutation events with a callback function.

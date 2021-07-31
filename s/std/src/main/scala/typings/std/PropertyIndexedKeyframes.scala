@@ -3,20 +3,19 @@ package typings.std
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyIndexedKeyframes
-  extends /* property */ StringDictionary[
+  extends StObject
+     with /* property */ StringDictionary[
       js.UndefOr[java.lang.String | (js.Array[Double | Null | java.lang.String]) | Double | Null]
     ] {
   
-  var composite: js.UndefOr[CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]] = js.native
+  var composite: js.UndefOr[CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]] = js.undefined
   
-  var easing: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
+  var easing: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   
-  var offset: js.UndefOr[Double | (js.Array[Double | Null])] = js.native
+  var offset: js.UndefOr[Double | (js.Array[Double | Null])] = js.undefined
 }
 object PropertyIndexedKeyframes {
   

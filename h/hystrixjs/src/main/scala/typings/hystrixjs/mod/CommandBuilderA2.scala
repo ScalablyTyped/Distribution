@@ -3,43 +3,41 @@ package typings.hystrixjs.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandBuilderA2[R, T, U] extends StObject {
   
-  def build(): CommandA2[R, T, U] = js.native
+  def build(): CommandA2[R, T, U]
   
-  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilderA2[R, T, U]
   
-  def circuitBreakerForceClosed(value: Boolean): CommandBuilderA2[R, T, U] = js.native
+  def circuitBreakerForceClosed(value: Boolean): CommandBuilderA2[R, T, U]
   
-  def circuitBreakerForceOpened(value: Boolean): CommandBuilderA2[R, T, U] = js.native
+  def circuitBreakerForceOpened(value: Boolean): CommandBuilderA2[R, T, U]
   
-  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilderA2[R, T, U]
   
-  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA2[R, T, U]
   
-  def context(value: js.Any): CommandBuilderA2[R, T, U] = js.native
+  def context(value: js.Any): CommandBuilderA2[R, T, U]
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA2[R, T, U] = js.native
+  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA2[R, T, U]
   
-  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple2[T, U], js.Thenable[R]]): CommandBuilderA2[R, T, U] = js.native
+  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple2[T, U], js.Thenable[R]]): CommandBuilderA2[R, T, U]
   
-  def percentileWindowLength(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def percentileWindowLength(value: Double): CommandBuilderA2[R, T, U]
   
-  def percentileWindowNumberOfBuckets(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def percentileWindowNumberOfBuckets(value: Double): CommandBuilderA2[R, T, U]
   
-  def requestVolumeRejectionThreshold(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def requestVolumeRejectionThreshold(value: Double): CommandBuilderA2[R, T, U]
   
-  def run(value: js.Function2[/* t */ T, /* u */ U, js.Thenable[R]]): CommandBuilderA2[R, T, U] = js.native
+  def run(value: js.Function2[/* t */ T, /* u */ U, js.Thenable[R]]): CommandBuilderA2[R, T, U]
   
-  def statisticalWindowLength(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def statisticalWindowLength(value: Double): CommandBuilderA2[R, T, U]
   
-  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilderA2[R, T, U]
   
-  def timeout(value: Double): CommandBuilderA2[R, T, U] = js.native
+  def timeout(value: Double): CommandBuilderA2[R, T, U]
 }
 object CommandBuilderA2 {
   
@@ -67,7 +65,7 @@ object CommandBuilderA2 {
   }
   
   @scala.inline
-  implicit class CommandBuilderA2MutableBuilder[Self <: CommandBuilderA2[_, _, _], R, T, U] (val x: Self with (CommandBuilderA2[R, T, U])) extends AnyVal {
+  implicit class CommandBuilderA2MutableBuilder[Self <: CommandBuilderA2[?, ?, ?], R, T, U] (val x: Self & (CommandBuilderA2[R, T, U])) extends AnyVal {
     
     @scala.inline
     def setBuild(value: () => CommandA2[R, T, U]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))

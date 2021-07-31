@@ -5,26 +5,24 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@ant-design/react-native.@ant-design/react-native/lib/card/style.CardStyle, 'headerContentWrap' | 'headerContent' | 'headerExtraWrap' | 'headerExtra' | 'headerImage' | 'headerTitle' | 'headerWrap'> */
-@js.native
 trait PickCardStyleheaderConten extends StObject {
   
-  var headerContent: TextStyle = js.native
+  var headerContent: TextStyle
   
-  var headerContentWrap: ViewStyle = js.native
+  var headerContentWrap: ViewStyle
   
-  var headerExtra: TextStyle = js.native
+  var headerExtra: TextStyle
   
-  var headerExtraWrap: ViewStyle = js.native
+  var headerExtraWrap: ViewStyle
   
-  var headerImage: ImageStyle = js.native
+  var headerImage: ImageStyle
   
-  var headerTitle: ViewStyle = js.native
+  var headerTitle: ViewStyle
   
-  var headerWrap: ViewStyle = js.native
+  var headerWrap: ViewStyle
 }
 object PickCardStyleheaderConten {
   

@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -110,7 +109,7 @@ abstract class Tool () extends StObject {
     * @param {Point=} last Point in view coordinates, defaults to Diagram.lastInput's InputEvent.viewPoint.
     */
   def isBeyondDragSize(): Boolean = js.native
-  def isBeyondDragSize(first: js.UndefOr[scala.Nothing], last: Point): Boolean = js.native
+  def isBeyondDragSize(first: Unit, last: Point): Boolean = js.native
   def isBeyondDragSize(first: Point): Boolean = js.native
   def isBeyondDragSize(first: Point, last: Point): Boolean = js.native
   
@@ -127,12 +126,12 @@ abstract class Tool () extends StObject {
     * @param {function(GraphObject):boolean | null=} pred An optional custom predicate
     */
   def standardMouseClick(): Unit = js.native
-  def standardMouseClick(navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): Unit = js.native
   def standardMouseClick(navig: js.Function1[/* obj */ GraphObject, GraphObject]): Unit = js.native
   def standardMouseClick(
     navig: js.Function1[/* obj */ GraphObject, GraphObject],
     pred: js.Function1[/* obj */ GraphObject, Boolean]
   ): Unit = js.native
+  def standardMouseClick(navig: Unit, pred: js.Function1[/* obj */ GraphObject, Boolean]): Unit = js.native
   
   /**
     * Implement the standard behavior for mouse enter, over, and leave events, where the mouse is moving but no button is pressed.

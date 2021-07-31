@@ -2,38 +2,38 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorationRenderOptions extends ThemableDecorationRenderOptions {
+trait DecorationRenderOptions
+  extends StObject
+     with ThemableDecorationRenderOptions {
   
   /**
     * Overwrite options for dark themes.
     */
-  var dark: js.UndefOr[ThemableDecorationRenderOptions] = js.native
+  var dark: js.UndefOr[ThemableDecorationRenderOptions] = js.undefined
   
   /**
     * Should the decoration be rendered also on the whitespace after the line text.
     * Defaults to `false`.
     */
-  var isWholeLine: js.UndefOr[Boolean] = js.native
+  var isWholeLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overwrite options for light themes.
     */
-  var light: js.UndefOr[ThemableDecorationRenderOptions] = js.native
+  var light: js.UndefOr[ThemableDecorationRenderOptions] = js.undefined
   
   /**
     * The position in the overview ruler where the decoration should be rendered.
     */
-  var overviewRulerLane: js.UndefOr[OverviewRulerLane] = js.native
+  var overviewRulerLane: js.UndefOr[OverviewRulerLane] = js.undefined
   
   /**
     * Customize the growing behavior of the decoration when edits occur at the edges of the decoration's range.
     * Defaults to `DecorationRangeBehavior.OpenOpen`.
     */
-  var rangeBehavior: js.UndefOr[DecorationRangeBehavior] = js.native
+  var rangeBehavior: js.UndefOr[DecorationRangeBehavior] = js.undefined
 }
 object DecorationRenderOptions {
   

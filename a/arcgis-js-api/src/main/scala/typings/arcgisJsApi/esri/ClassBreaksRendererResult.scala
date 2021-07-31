@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassBreaksRendererResult extends Object {
+trait ClassBreaksRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap used to determine the optimal fill color of the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average color of the input view's basemap is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */
-  var classBreaksResult: ClassBreaksResult = js.native
+  var classBreaksResult: ClassBreaksResult
   
   /**
     * The color scheme used for the class breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */
-  var colorScheme: ColorScheme = js.native
+  var colorScheme: ColorScheme
   
   /**
     * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */
-  var defaultValuesUsed: Boolean = js.native
+  var defaultValuesUsed: Boolean
   
   /**
     * The renderer object configured to best match the given basemap and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
     */
-  var renderer: ClassBreaksRenderer = js.native
+  var renderer: ClassBreaksRenderer
 }
 object ClassBreaksRendererResult {
   

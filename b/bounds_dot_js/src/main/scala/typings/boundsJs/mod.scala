@@ -3,7 +3,6 @@ package typings.boundsJs
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,12 +10,14 @@ object mod {
   /**
     * Asynchronous boundary detection. 1KB, no dependencies.
     */
+  @scala.inline
+  def apply(): Boundary = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boundary]
+  @scala.inline
+  def apply(options: Options): Boundary = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Boundary]
+  
   @JSImport("bounds.js", JSImport.Namespace)
   @js.native
-  def apply(): Boundary = js.native
-  @JSImport("bounds.js", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Boundary = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bounds.js", "Boundary")
   @js.native
@@ -50,35 +51,37 @@ object mod {
       * Each callback is passed 1 argument, `ratio`, which represents the ratio of the element's bounding box that is inside the boundary.
       */
     def watch(): WatchOptions = js.native
-    def watch(el: Null, onEnter: js.UndefOr[scala.Nothing], onLeave: WatchCallback): WatchOptions = js.native
+    def watch(el: Null, onEnter: Unit, onLeave: WatchCallback): WatchOptions = js.native
     def watch(el: Null, onEnter: WatchCallback): WatchOptions = js.native
     def watch(el: Null, onEnter: WatchCallback, onLeave: WatchCallback): WatchOptions = js.native
     def watch(el: Element): WatchOptions = js.native
-    def watch(el: Element, onEnter: js.UndefOr[scala.Nothing], onLeave: WatchCallback): WatchOptions = js.native
+    def watch(el: Element, onEnter: Unit, onLeave: WatchCallback): WatchOptions = js.native
     def watch(el: Element, onEnter: WatchCallback): WatchOptions = js.native
     def watch(el: Element, onEnter: WatchCallback, onLeave: WatchCallback): WatchOptions = js.native
   }
   object Boundary {
     
+    @JSImport("bounds.js", "Boundary")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The static `checkCompatibility` method will throw an error if `Bounds.js` is not supported in the user's browser.
       */
     /* static member */
-    @JSImport("bounds.js", "Boundary.checkCompatibility")
-    @js.native
-    def checkCompatibility(): Unit = js.native
+    @scala.inline
+    def checkCompatibility(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatibility")().asInstanceOf[Unit]
   }
   
-  @js.native
   trait Action extends StObject {
     
-    val el: Element = js.native
+    val el: Element
     
-    val inside: Boolean = js.native
+    val inside: Boolean
     
-    val outside: Boolean = js.native
+    val outside: Boolean
     
-    val ratio: Double = js.native
+    val ratio: Double
   }
   object Action {
     
@@ -106,16 +109,15 @@ object mod {
   }
   
   /* Inlined std.Partial<std.Record<'top' | 'right' | 'bottom' | 'left', number>> */
-  @js.native
   trait Margins extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Margins {
     
@@ -154,7 +156,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -163,7 +164,7 @@ object mod {
       * This affects detection, NOT style on the root element.
       * @default { top: 0, right: 0, bottom: 0, left: 0 }
       */
-    var margins: js.UndefOr[Margins] = js.native
+    var margins: js.UndefOr[Margins] = js.undefined
     
     /**
       * The provided callback will be executed whenever any watched element enters or exits the boundary,
@@ -171,14 +172,14 @@ object mod {
       * This is a useful option if you'd like some action to take place no matter what element enters/exits your boundary.
       * @default () => {}
       */
-    var onEmit: js.UndefOr[js.Function1[/* actions */ js.Array[Action], Unit]] = js.native
+    var onEmit: js.UndefOr[js.Function1[/* actions */ js.Array[Action], Unit]] = js.undefined
     
     /**
       * The root is the element for which we are creating the boundary.
       * Events will be emitted whenever a watched element enters/exits the root element.
       * @default window
       */
-    var root: js.UndefOr[Element | Null] = js.native
+    var root: js.UndefOr[Element | Null] = js.undefined
     
     /**
       * Accepts a number between 0.0 and 1.0.
@@ -187,7 +188,7 @@ object mod {
       * A threshold of 1.0 means that every pixel of a watched element must be inside the boundary before a callback is made.
       * @default 0.0
       */
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -234,15 +235,32 @@ object mod {
   /**
     * These properties can be mutated
     */
-  @js.native
   trait WatchOptions extends StObject {
     
-    def onEnter(ratio: Double): Unit = js.native
+    def onEnter(ratio: Double): Unit
     @JSName("onEnter")
-    var onEnter_Original: WatchCallback = js.native
+    var onEnter_Original: WatchCallback
     
-    def onLeave(ratio: Double): Unit = js.native
+    def onLeave(ratio: Double): Unit
     @JSName("onLeave")
-    var onLeave_Original: WatchCallback = js.native
+    var onLeave_Original: WatchCallback
+  }
+  object WatchOptions {
+    
+    @scala.inline
+    def apply(onEnter: /* ratio */ Double => Unit, onLeave: /* ratio */ Double => Unit): WatchOptions = {
+      val __obj = js.Dynamic.literal(onEnter = js.Any.fromFunction1(onEnter), onLeave = js.Any.fromFunction1(onLeave))
+      __obj.asInstanceOf[WatchOptions]
+    }
+    
+    @scala.inline
+    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnEnter(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnLeave(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
+    }
   }
 }

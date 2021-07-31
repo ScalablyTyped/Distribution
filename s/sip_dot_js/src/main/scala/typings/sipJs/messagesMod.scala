@@ -10,10 +10,13 @@ import typings.sipJs.outgoingResponseMod.OutgoingResponse
 import typings.sipJs.outgoingResponseMod.ResponseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
+  
+  @JSImport("sip.js/lib/core/messages", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object C {
     
@@ -86,47 +89,43 @@ object messagesMod {
       */
     def this(loggerFactory: LoggerFactory) = this()
     def this(loggerFactory: LoggerFactory, ha1: String) = this()
-    def this(loggerFactory: LoggerFactory, ha1: js.UndefOr[scala.Nothing], username: String) = this()
     def this(loggerFactory: LoggerFactory, ha1: String, username: String) = this()
-    def this(
-      loggerFactory: LoggerFactory,
-      ha1: js.UndefOr[scala.Nothing],
-      username: js.UndefOr[scala.Nothing],
-      password: String
-    ) = this()
-    def this(loggerFactory: LoggerFactory, ha1: js.UndefOr[scala.Nothing], username: String, password: String) = this()
-    def this(loggerFactory: LoggerFactory, ha1: String, username: js.UndefOr[scala.Nothing], password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: Unit, username: String) = this()
     def this(loggerFactory: LoggerFactory, ha1: String, username: String, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: Unit, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: Unit, username: String, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: Unit, username: Unit, password: String) = this()
   }
   
   object Grammar {
+    
+    @JSImport("sip.js/lib/core/messages", "Grammar")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parse the given string and returns a SIP.URI instance or undefined if
       * it is an invalid URI.
       * @param uri -
       */
-    @JSImport("sip.js/lib/core/messages", "Grammar.URIParse")
-    @js.native
-    def URIParse(uri: String): js.UndefOr[typings.sipJs.uriMod.URI] = js.native
+    @scala.inline
+    def URIParse(uri: String): js.UndefOr[typings.sipJs.uriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("URIParse")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.uriMod.URI]]
     
     /**
       * Parse the given string and returns a SIP.NameAddrHeader instance or undefined if
       * it is an invalid NameAddrHeader.
       * @param name_addr_header -
       */
-    @JSImport("sip.js/lib/core/messages", "Grammar.nameAddrHeaderParse")
-    @js.native
-    def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[typings.sipJs.nameAddrHeaderMod.NameAddrHeader] = js.native
+    @scala.inline
+    def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[typings.sipJs.nameAddrHeaderMod.NameAddrHeader] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameAddrHeaderParse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.nameAddrHeaderMod.NameAddrHeader]]
     
     /**
       * Parse.
       * @param input -
       * @param startRule -
       */
-    @JSImport("sip.js/lib/core/messages", "Grammar.parse")
-    @js.native
-    def parse(input: String, startRule: String): js.Any = js.native
+    @scala.inline
+    def parse(input: String, startRule: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], startRule.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("sip.js/lib/core/messages", "IncomingMessage")
@@ -179,7 +178,7 @@ object messagesMod {
       ruri: typings.sipJs.grammarMod.URI,
       fromURI: typings.sipJs.grammarMod.URI,
       toURI: typings.sipJs.grammarMod.URI,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       extraHeaders: js.Array[String]
     ) = this()
     def this(
@@ -195,16 +194,7 @@ object messagesMod {
       ruri: typings.sipJs.grammarMod.URI,
       fromURI: typings.sipJs.grammarMod.URI,
       toURI: typings.sipJs.grammarMod.URI,
-      options: js.UndefOr[scala.Nothing],
-      extraHeaders: js.UndefOr[scala.Nothing],
-      body: Body
-    ) = this()
-    def this(
-      method: String,
-      ruri: typings.sipJs.grammarMod.URI,
-      fromURI: typings.sipJs.grammarMod.URI,
-      toURI: typings.sipJs.grammarMod.URI,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       extraHeaders: js.Array[String],
       body: Body
     ) = this()
@@ -213,8 +203,8 @@ object messagesMod {
       ruri: typings.sipJs.grammarMod.URI,
       fromURI: typings.sipJs.grammarMod.URI,
       toURI: typings.sipJs.grammarMod.URI,
-      options: OutgoingRequestMessageOptions,
-      extraHeaders: js.UndefOr[scala.Nothing],
+      options: Unit,
+      extraHeaders: Unit,
       body: Body
     ) = this()
     def this(
@@ -224,6 +214,15 @@ object messagesMod {
       toURI: typings.sipJs.grammarMod.URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String],
+      body: Body
+    ) = this()
+    def this(
+      method: String,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
+      options: OutgoingRequestMessageOptions,
+      extraHeaders: Unit,
       body: Body
     ) = this()
   }
@@ -257,32 +256,34 @@ object messagesMod {
   
   object Parser {
     
-    @JSImport("sip.js/lib/core/messages", "Parser.getHeader")
+    @JSImport("sip.js/lib/core/messages", "Parser")
     @js.native
-    def getHeader(data: js.Any, headerStart: Double): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("sip.js/lib/core/messages", "Parser.parseHeader")
-    @js.native
+    @scala.inline
+    def getHeader(data: js.Any, headerStart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeader")(data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
     def parseHeader(
       message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage,
       data: js.Any,
       headerStart: Double,
       headerEnd: Double
-    ): Boolean | Error = js.native
-    @JSImport("sip.js/lib/core/messages", "Parser.parseHeader")
-    @js.native
+    ): Boolean | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any], headerEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean | Error]
+    @scala.inline
     def parseHeader(
       message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage,
       data: js.Any,
       headerStart: Double,
       headerEnd: Double
-    ): Boolean | Error = js.native
+    ): Boolean | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any], headerEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean | Error]
     
-    @JSImport("sip.js/lib/core/messages", "Parser.parseMessage")
-    @js.native
+    @scala.inline
     def parseMessage(data: String, logger: Logger): js.UndefOr[
         typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage | typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMessage")(data.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+        typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage | typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage
+      ]]
   }
   
   @JSImport("sip.js/lib/core/messages", "URI")
@@ -300,60 +301,31 @@ object messagesMod {
       */
     def this(scheme: String, user: String, host: String) = this()
     def this(scheme: String, user: String, host: String, port: Double) = this()
-    def this(scheme: String, user: String, host: String, port: js.UndefOr[scala.Nothing], parameters: js.Any) = this()
     def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: js.UndefOr[scala.Nothing],
-      parameters: js.UndefOr[scala.Nothing],
-      headers: js.Any
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: js.UndefOr[scala.Nothing],
-      parameters: js.Any,
-      headers: js.Any
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: js.UndefOr[scala.Nothing],
-      headers: js.Any
-    ) = this()
+    def this(scheme: String, user: String, host: String, port: Unit, parameters: js.Any) = this()
     def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any, headers: js.Any) = this()
+    def this(scheme: String, user: String, host: String, port: Double, parameters: Unit, headers: js.Any) = this()
+    def this(scheme: String, user: String, host: String, port: Unit, parameters: js.Any, headers: js.Any) = this()
+    def this(scheme: String, user: String, host: String, port: Unit, parameters: Unit, headers: js.Any) = this()
   }
   
-  @JSImport("sip.js/lib/core/messages", "constructOutgoingResponse")
-  @js.native
-  def constructOutgoingResponse(message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage, options: ResponseOptions): OutgoingResponse = js.native
+  @scala.inline
+  def constructOutgoingResponse(message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage, options: ResponseOptions): OutgoingResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("constructOutgoingResponse")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OutgoingResponse]
   
-  @JSImport("sip.js/lib/core/messages", "fromBodyLegacy")
-  @js.native
-  def fromBodyLegacy(bodyLegacy: String): Body = js.native
-  @JSImport("sip.js/lib/core/messages", "fromBodyLegacy")
-  @js.native
-  def fromBodyLegacy(bodyLegacy: typings.sipJs.anon.Body): Body = js.native
+  @scala.inline
+  def fromBodyLegacy(bodyLegacy: String): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyLegacy")(bodyLegacy.asInstanceOf[js.Any]).asInstanceOf[Body]
+  @scala.inline
+  def fromBodyLegacy(bodyLegacy: typings.sipJs.anon.Body): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyLegacy")(bodyLegacy.asInstanceOf[js.Any]).asInstanceOf[Body]
   
-  @JSImport("sip.js/lib/core/messages", "getBody")
-  @js.native
-  def getBody(message: Body): js.UndefOr[Body] = js.native
-  @JSImport("sip.js/lib/core/messages", "getBody")
-  @js.native
-  def getBody(message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage): js.UndefOr[Body] = js.native
-  @JSImport("sip.js/lib/core/messages", "getBody")
-  @js.native
-  def getBody(message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage): js.UndefOr[Body] = js.native
-  @JSImport("sip.js/lib/core/messages", "getBody")
-  @js.native
-  def getBody(message: typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage): js.UndefOr[Body] = js.native
+  @scala.inline
+  def getBody(message: Body): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
+  @scala.inline
+  def getBody(message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
+  @scala.inline
+  def getBody(message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
+  @scala.inline
+  def getBody(message: typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage): js.UndefOr[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBody")(message.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Body]]
   
-  @JSImport("sip.js/lib/core/messages", "isBody")
-  @js.native
-  def isBody(body: js.Any): /* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean = js.native
+  @scala.inline
+  def isBody(body: js.Any): /* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBody")(body.asInstanceOf[js.Any]).asInstanceOf[/* is sip.js.sip.js/lib/core/messages/body.Body */ Boolean]
 }

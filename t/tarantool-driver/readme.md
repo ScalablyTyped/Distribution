@@ -10,9 +10,9 @@ Tarantool driver for 1.7+
 | ------------------ | :-------------: |
 | Full name          | tarantool-driver |
 | Keywords           | tarantool, driver, db, msgpack |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 106179 |
+| # downloads        | 71101 |
 | # stars            | 2 |
 
 ## Links

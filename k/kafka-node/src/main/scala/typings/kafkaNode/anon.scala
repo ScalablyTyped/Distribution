@@ -2,15 +2,13 @@ package typings.kafkaNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ControllerId extends StObject {
     
-    var controllerId: Double = js.native
+    var controllerId: Double
   }
   object ControllerId {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var nodeId: Double = js.native
+    var nodeId: Double
     
-    var port: Double = js.native
+    var port: Double
   }
   object Host {
     
@@ -59,18 +56,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Isr extends StObject {
     
-    var isr: js.Array[Double] = js.native
+    var isr: js.Array[Double]
     
-    var leader: Double = js.native
+    var leader: Double
     
-    var partition: Double = js.native
+    var partition: Double
     
-    var replicas: js.Array[Double] = js.native
+    var replicas: js.Array[Double]
     
-    var topic: String = js.native
+    var topic: String
   }
   object Isr {
     
@@ -112,12 +108,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Name {
     
@@ -138,12 +133,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Partition extends StObject {
     
-    var partition: Double = js.native
+    var partition: Double
     
-    var replicas: js.Array[Double] = js.native
+    var replicas: js.Array[Double]
   }
   object Partition {
     

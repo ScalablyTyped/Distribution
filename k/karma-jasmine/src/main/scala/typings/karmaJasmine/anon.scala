@@ -2,33 +2,31 @@ package typings.karmaJasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined jasmine.jasmine.EnvConfiguration & {  timeoutInterval :number | undefined} */
-  @js.native
   trait EnvConfigurationtimeoutIn extends StObject {
     
-    var failFast: js.UndefOr[Boolean] = js.native
+    var failFast: js.UndefOr[Boolean] = js.undefined
     
-    var failSpecWithNoExpectations: js.UndefOr[Boolean] = js.native
+    var failSpecWithNoExpectations: js.UndefOr[Boolean] = js.undefined
     
-    var hideDisabled: js.UndefOr[Boolean] = js.native
+    var hideDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var oneFailurePerSpec: js.UndefOr[Boolean] = js.native
+    var oneFailurePerSpec: js.UndefOr[Boolean] = js.undefined
     
-    var promise: js.UndefOr[js.Function] = js.native
+    var promise: js.UndefOr[js.Function] = js.undefined
     
-    var random: js.UndefOr[Boolean] = js.native
+    var random: js.UndefOr[Boolean] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
     
-    var specFilter: js.UndefOr[js.Function] = js.native
+    var specFilter: js.UndefOr[js.Function] = js.undefined
     
     /** @deprecated undocumented to be removed */
-    var timeoutInterval: js.UndefOr[Double] = js.native
+    var timeoutInterval: js.UndefOr[Double] = js.undefined
   }
   object EnvConfigurationtimeoutIn {
     

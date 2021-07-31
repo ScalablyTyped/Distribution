@@ -6,7 +6,6 @@ import typings.materialGridList.anon.TILESELECTOR
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,7 @@ object mod {
   @js.native
   class MDCGridList protected ()
     extends typings.materialGridList.componentMod.MDCGridList {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialGridList.foundationMod.MDCGridListFoundation,
@@ -25,9 +24,12 @@ object mod {
   /* static members */
   object MDCGridList {
     
-    @JSImport("@material/grid-list", "MDCGridList.attachTo")
+    @JSImport("@material/grid-list", "MDCGridList")
     @js.native
-    def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialGridList.componentMod.MDCGridList]
   }
   
   @JSImport("@material/grid-list", "MDCGridListFoundation")

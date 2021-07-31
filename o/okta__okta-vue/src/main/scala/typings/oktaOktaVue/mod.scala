@@ -8,46 +8,47 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
+    @scala.inline
+    def apply(): PluginFunction[VueConstructor[Vue]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PluginFunction[VueConstructor[Vue]]]
+    
     @JSImport("@okta/okta-vue", JSImport.Default)
     @js.native
-    def apply(): PluginFunction[VueConstructor[Vue]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@okta/okta-vue", "default.handleCallback")
-    @js.native
-    def handleCallback(): VueConstructor[Vue] = js.native
+    @scala.inline
+    def handleCallback(): VueConstructor[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleCallback")().asInstanceOf[VueConstructor[Vue]]
     
-    @JSImport("@okta/okta-vue", "default.install")
-    @js.native
-    def install(vm: VueConstructor[Vue], options: OktaVueOptions): PluginFunction[VueConstructor[Vue]] = js.native
+    @scala.inline
+    def install(vm: VueConstructor[Vue], options: OktaVueOptions): PluginFunction[VueConstructor[Vue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(vm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginFunction[VueConstructor[Vue]]]
   }
   
   object OktaVuePlugin {
     
-    @js.native
-    trait OktaAuthJsOptions extends OktaOpenIDOptions {
+    trait OktaAuthJsOptions
+      extends StObject
+         with OktaOpenIDOptions {
       
-      var authorizeUrl: js.UndefOr[String] = js.native
+      var authorizeUrl: js.UndefOr[String] = js.undefined
       
-      var ignoreSignature: js.UndefOr[Boolean] = js.native
+      var ignoreSignature: js.UndefOr[Boolean] = js.undefined
       
-      var maxClockSkew: js.UndefOr[Double] = js.native
+      var maxClockSkew: js.UndefOr[Double] = js.undefined
       
-      var pkce: js.UndefOr[Boolean] = js.native
+      var pkce: js.UndefOr[Boolean] = js.undefined
       
-      var postLogoutRedirectUri: js.UndefOr[String] = js.native
+      var postLogoutRedirectUri: js.UndefOr[String] = js.undefined
       
-      var tokenManager: js.UndefOr[AutoRenew] = js.native
+      var tokenManager: js.UndefOr[AutoRenew] = js.undefined
       
-      var tokenUrl: js.UndefOr[String] = js.native
+      var tokenUrl: js.UndefOr[String] = js.undefined
       
-      var userinfoUrl: js.UndefOr[String] = js.native
+      var userinfoUrl: js.UndefOr[String] = js.undefined
     }
     object OktaAuthJsOptions {
       
@@ -110,20 +111,19 @@ object mod {
       }
     }
     
-    @js.native
     trait OktaOpenIDOptions extends StObject {
       
-      var nonce: js.UndefOr[String] = js.native
+      var nonce: js.UndefOr[String] = js.undefined
       
-      var responseMode: js.UndefOr[String] = js.native
+      var responseMode: js.UndefOr[String] = js.undefined
       
-      var responseType: js.UndefOr[String | js.Array[String]] = js.native
+      var responseType: js.UndefOr[String | js.Array[String]] = js.undefined
       
-      var scopes: js.UndefOr[js.Array[String]] = js.native
+      var scopes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var sessionToken: js.UndefOr[String] = js.native
+      var sessionToken: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
     }
     object OktaOpenIDOptions {
       
@@ -180,14 +180,15 @@ object mod {
       }
     }
     
-    @js.native
-    trait OktaVueOptions extends OktaAuthJsOptions {
+    trait OktaVueOptions
+      extends StObject
+         with OktaAuthJsOptions {
       
-      var clientId: String = js.native
+      var clientId: String
       
-      var issuer: String = js.native
+      var issuer: String
       
-      var redirectUri: String = js.native
+      var redirectUri: String
     }
     object OktaVueOptions {
       
@@ -214,11 +215,10 @@ object mod {
   
   object vueTypesVueAugmentingMod {
     
-    @js.native
     trait Vue extends StObject {
       
       @JSName("$auth")
-      var $auth: AuthRedirectGuard = js.native
+      var $auth: AuthRedirectGuard
     }
     object Vue {
       

@@ -2,41 +2,39 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInputSecurityGroupResponse extends StObject {
   
   /**
     * Unique ARN of Input Security Group
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The Id of the Input Security Group
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The list of inputs currently using this Input Security Group.
     */
-  var Inputs: js.UndefOr[listOfString] = js.native
+  var Inputs: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The current state of the Input Security Group.
     */
-  var State: js.UndefOr[InputSecurityGroupState] = js.native
+  var State: js.UndefOr[InputSecurityGroupState] = js.undefined
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
   
   /**
     * Whitelist rules and their sync status
     */
-  var WhitelistRules: js.UndefOr[listOfInputWhitelistRule] = js.native
+  var WhitelistRules: js.UndefOr[listOfInputWhitelistRule] = js.undefined
 }
 object DescribeInputSecurityGroupResponse {
   

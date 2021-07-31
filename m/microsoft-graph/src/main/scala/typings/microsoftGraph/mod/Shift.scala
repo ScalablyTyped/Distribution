@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Shift extends ChangeTrackedEntity {
+trait Shift
+  extends StObject
+     with ChangeTrackedEntity {
   
   // The draft version of this shift that is viewable by managers. Required.
-  var draftShift: js.UndefOr[NullableOption[ShiftItem]] = js.native
+  var draftShift: js.UndefOr[NullableOption[ShiftItem]] = js.undefined
   
   // ID of the scheduling group the shift is part of. Required.
-  var schedulingGroupId: js.UndefOr[NullableOption[String]] = js.native
+  var schedulingGroupId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The shared version of this shift that is viewable by both employees and managers. Required.
-  var sharedShift: js.UndefOr[NullableOption[ShiftItem]] = js.native
+  var sharedShift: js.UndefOr[NullableOption[ShiftItem]] = js.undefined
   
   // ID of the user assigned to the shift. Required.
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Shift {
   

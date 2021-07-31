@@ -6,64 +6,62 @@ import typings.wordpressApiFetch.anon.Dictk
 import typings.wordpressApiFetch.anon.Protected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<T>, 'categories' | 'format' | 'sticky' | 'tags'> */
-@js.native
 trait BasePage[T /* <: Context */] extends StObject {
   
-  var _embedded: js.UndefOr[Record[String, js.Array[_]]] = js.native
+  var _embedded: js.UndefOr[Record[String, js.Array[js.Any]]] = js.undefined
   
-  var _links: Record[String, js.Array[Dictk]] = js.native
+  var _links: Record[String, js.Array[Dictk]]
   
-  var author: Double = js.native
+  var author: Double
   
-  var comment_status: OpenOrClosed = js.native
+  var comment_status: OpenOrClosed
   
-  var content: Contextual[T, Protected, Blockversion] = js.native
+  var content: Contextual[T, Protected, Blockversion]
   
-  var date: String = js.native
+  var date: String
   
-  var date_gmt: String = js.native
+  var date_gmt: String
   
-  var excerpt: Contextual[T, Protected, js.Object] = js.native
+  var excerpt: Contextual[T, Protected, js.Object]
   
-  var featured_media: Double = js.native
+  var featured_media: Double
   
-  var generated_slug: String = js.native
+  var generated_slug: String
   
-  var guid: Contextual[T, js.Object, js.Object] = js.native
+  var guid: Contextual[T, js.Object, js.Object]
   
-  var id: Double = js.native
+  var id: Double
   
-  var link: String = js.native
+  var link: String
   
-  var menu_order: Double = js.native
+  var menu_order: Double
   
-  var meta: js.Array[_] = js.native
+  var meta: js.Array[js.Any]
   
-  var modified: String = js.native
+  var modified: String
   
-  var modified_gmt: String = js.native
+  var modified_gmt: String
   
-  var parent: Double = js.native
+  var parent: Double
   
-  var password: String = js.native
+  var password: String
   
-  var permalink_template: String = js.native
+  var permalink_template: String
   
-  var ping_status: OpenOrClosed = js.native
+  var ping_status: OpenOrClosed
   
-  var slug: String = js.native
+  var slug: String
   
-  var status: PostStatus = js.native
+  var status: PostStatus
   
-  var template: String = js.native
+  var template: String
   
-  var title: Contextual[T, js.Object, js.Object] = js.native
+  var title: Contextual[T, js.Object, js.Object]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BasePage {
   
@@ -82,7 +80,7 @@ object BasePage {
     id: Double,
     link: String,
     menu_order: Double,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     modified: String,
     modified_gmt: String,
     parent: Double,
@@ -101,7 +99,7 @@ object BasePage {
   }
   
   @scala.inline
-  implicit class BasePageMutableBuilder[Self <: BasePage[_], T /* <: Context */] (val x: Self with BasePage[T]) extends AnyVal {
+  implicit class BasePageMutableBuilder[Self <: BasePage[?], T /* <: Context */] (val x: Self & BasePage[T]) extends AnyVal {
     
     @scala.inline
     def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
@@ -140,7 +138,7 @@ object BasePage {
     def setMenu_order(value: Double): Self = StObject.set(x, "menu_order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))
@@ -179,7 +177,7 @@ object BasePage {
     def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_embedded(value: Record[String, js.Array[_]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)

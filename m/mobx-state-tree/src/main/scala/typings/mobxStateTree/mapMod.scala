@@ -13,18 +13,19 @@ import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapMod {
   
-  @JSImport("mobx-state-tree/dist/types/complex-types/map", "isMapType")
+  @JSImport("mobx-state-tree/dist/types/complex-types/map", JSImport.Namespace)
   @js.native
-  def isMapType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/map.IMapType<Items> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/types/complex-types/map", "map")
-  @js.native
-  def map[IT /* <: IAnyType */](subtype: IT): IMapType[IT] = js.native
+  @scala.inline
+  def isMapType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/map.IMapType<Items> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMapType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/map.IMapType<Items> */ Boolean]
+  
+  @scala.inline
+  def map[IT /* <: IAnyType */](subtype: IT): IMapType[IT] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(subtype.asInstanceOf[js.Any]).asInstanceOf[IMapType[IT]]
   
   @js.native
   trait IMSTMap[IT /* <: IAnyType */] extends StObject {
@@ -95,8 +96,8 @@ object mapMod {
     def merge_TypeWithoutSTN(
       other: IMSTMap[
           IType[
-            _, 
-            _, 
+            js.Any, 
+            js.Any, 
             /* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any
           ]
         ]
@@ -137,8 +138,8 @@ object mapMod {
     def replace_TypeWithoutSTN(
       values: IMSTMap[
           IType[
-            _, 
-            _, 
+            js.Any, 
+            js.Any, 
             /* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any
           ]
         ]
@@ -180,7 +181,8 @@ object mapMod {
   
   @js.native
   trait IMapType[IT /* <: IAnyType */]
-    extends IType[
+    extends StObject
+       with IType[
           js.UndefOr[
             IKeyValueMap[
               /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any

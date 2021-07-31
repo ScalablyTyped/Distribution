@@ -3,7 +3,6 @@ package typings.toIco
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,26 +19,23 @@ object mod {
     * These are limitations in the underlying [`pngjs`](https://github.com/lukeapage/pngjs#pngjs) library. If you have a
     * colormap PNG you can convert it to an RGB/RGBA PNG with commonly used image editing tools.
     */
-  @JSImport("to-ico", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Promise[Buffer] = js.native
-  @JSImport("to-ico", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: ToIcoOptions): js.Promise[Buffer] = js.native
-  @JSImport("to-ico", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String | Buffer]): js.Promise[Buffer] = js.native
-  @JSImport("to-ico", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String | Buffer], options: ToIcoOptions): js.Promise[Buffer] = js.native
-  @JSImport("to-ico", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("to-ico", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, options: ToIcoOptions): js.Promise[Buffer] = js.native
+  @scala.inline
+  def apply(input: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(input: String, options: ToIcoOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(input: js.Array[String | Buffer]): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(input: js.Array[String | Buffer], options: ToIcoOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(input: Buffer, options: ToIcoOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
+  @JSImport("to-ico", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ToIcoOptions extends StObject {
     
     /**
@@ -47,14 +43,14 @@ object mod {
       *
       * @default false
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of sizes to use when resizing.
       *
       * @default [16, 24, 32, 48, 64, 128, 256]
       */
-    var sizes: js.UndefOr[js.Array[Double]] = js.native
+    var sizes: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object ToIcoOptions {
     

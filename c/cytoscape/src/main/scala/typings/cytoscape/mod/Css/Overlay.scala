@@ -3,7 +3,6 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and are often used in the :active state.
   * http://js.cytoscape.org/#style/overlay
   */
-@js.native
 trait Overlay extends StObject {
   
   /**
     * The colour of the overlay.
     */
-  var `overlay-color`: PropertyValueEdge[Colour] = js.native
+  var `overlay-color`: PropertyValueEdge[Colour]
   
   /**
     * The opacity of the overlay.
     */
-  var `overlay-opacity`: PropertyValueEdge[Double] = js.native
+  var `overlay-opacity`: PropertyValueEdge[Double]
   
   /**
     * The area outside of the element within which the overlay is shown.
     */
-  var `overlay-padding`: PropertyValueEdge[Double | String] = js.native
+  var `overlay-padding`: PropertyValueEdge[Double | String]
 }
 object Overlay {
   

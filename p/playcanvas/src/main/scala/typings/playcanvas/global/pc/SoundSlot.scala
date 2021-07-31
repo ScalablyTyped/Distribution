@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,7 +35,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.SoundSlot")
 @js.native
 class SoundSlot protected ()
-  extends typings.playcanvas.pc.SoundSlot {
+  extends StObject
+     with typings.playcanvas.pc.SoundSlot {
   def this(
     component: typings.playcanvas.pc.SoundComponent,
     name: String,

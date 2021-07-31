@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceKnowledgeArticleConfiguration extends StObject {
   
   /**
     * Provides configuration information for custom Salesforce knowledge articles.
     */
-  var CustomKnowledgeArticleTypeConfigurations: js.UndefOr[SalesforceCustomKnowledgeArticleTypeConfigurationList] = js.native
+  var CustomKnowledgeArticleTypeConfigurations: js.UndefOr[SalesforceCustomKnowledgeArticleTypeConfigurationList] = js.undefined
   
   /**
     * Specifies the document states that should be included when Amazon Kendra indexes knowledge articles. You must specify at least one state.
     */
-  var IncludedStates: SalesforceKnowledgeArticleStateList = js.native
+  var IncludedStates: SalesforceKnowledgeArticleStateList
   
   /**
     * Provides configuration information for standard Salesforce knowledge articles.
     */
-  var StandardKnowledgeArticleTypeConfiguration: js.UndefOr[SalesforceStandardKnowledgeArticleTypeConfiguration] = js.native
+  var StandardKnowledgeArticleTypeConfiguration: js.UndefOr[SalesforceStandardKnowledgeArticleTypeConfiguration] = js.undefined
 }
 object SalesforceKnowledgeArticleConfiguration {
   

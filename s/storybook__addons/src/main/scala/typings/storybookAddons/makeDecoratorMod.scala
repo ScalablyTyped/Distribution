@@ -6,25 +6,26 @@ import typings.storybookAddons.typesMod.StoryWrapper
 import typings.storybookAddons.typesMod.WrapperSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object makeDecoratorMod {
   
-  @JSImport("@storybook/addons/dist/make-decorator", "makeDecorator")
+  @JSImport("@storybook/addons/dist/make-decorator", JSImport.Namespace)
   @js.native
-  def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
+  
   trait MakeDecoratorOptions extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var parameterName: String = js.native
+    var parameterName: String
     
-    var skipIfNoParametersOrOptions: js.UndefOr[Boolean] = js.native
+    var skipIfNoParametersOrOptions: js.UndefOr[Boolean] = js.undefined
     
-    var wrapper: StoryWrapper = js.native
+    var wrapper: StoryWrapper
   }
   object MakeDecoratorOptions {
     

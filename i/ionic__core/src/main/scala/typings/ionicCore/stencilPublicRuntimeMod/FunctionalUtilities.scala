@@ -2,21 +2,19 @@ package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionalUtilities extends StObject {
   
   def forEach(
     children: js.Array[VNode],
     cb: js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], Unit]
-  ): Unit = js.native
+  ): Unit
   
   def map(
     children: js.Array[VNode],
     cb: js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], ChildNode]
-  ): js.Array[VNode] = js.native
+  ): js.Array[VNode]
 }
 object FunctionalUtilities {
   

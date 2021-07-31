@@ -2,25 +2,23 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A FindingTypeStats resource represents stats regarding a specific
   * FindingType of Findings under a given ScanRun.
   */
-@js.native
 trait SchemaFindingTypeStats extends StObject {
   
   /**
     * Output only. The count of findings belonging to this finding type.
     */
-  var findingCount: js.UndefOr[Double] = js.native
+  var findingCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. The finding type associated with the stats.
     */
-  var findingType: js.UndefOr[String] = js.native
+  var findingType: js.UndefOr[String] = js.undefined
 }
 object SchemaFindingTypeStats {
   

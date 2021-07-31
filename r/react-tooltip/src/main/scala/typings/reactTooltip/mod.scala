@@ -12,7 +12,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,21 +23,21 @@ object mod {
   /* static members */
   object default {
     
-    @JSImport("react-tooltip", "default.hide")
+    @JSImport("react-tooltip", JSImport.Default)
     @js.native
-    def hide(): js.Object = js.native
-    @JSImport("react-tooltip", "default.hide")
-    @js.native
-    def hide(target: Element): js.Object = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-tooltip", "default.rebuild")
-    @js.native
-    def rebuild(): js.Object = js.native
+    @scala.inline
+    def hide(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[js.Object]
+    @scala.inline
+    def hide(target: Element): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    
+    @scala.inline
+    def rebuild(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("rebuild")().asInstanceOf[js.Object]
     
     // static methods
-    @JSImport("react-tooltip", "default.show")
-    @js.native
-    def show(target: Element): js.Object = js.native
+    @scala.inline
+    def show(target: Element): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -59,16 +58,15 @@ object mod {
   
   type GetContentFunc = js.Function1[/* toolTipStr */ String, ReactNode]
   
-  @js.native
   trait Offset extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Offset {
     
@@ -131,89 +129,88 @@ object mod {
   
   type ReactTooltip = Component[TooltipProps, js.Object, js.Any]
   
-  @js.native
   trait TooltipProps extends StObject {
     
     // Callback after tooltip is hidden
-    var afterHide: js.UndefOr[VoidFunc] = js.native
+    var afterHide: js.UndefOr[VoidFunc] = js.undefined
     
     // Callback after tooltip is shown
-    var afterShow: js.UndefOr[VoidFunc] = js.native
+    var afterShow: js.UndefOr[VoidFunc] = js.undefined
     
     // Popup arrow color
-    var arrowColor: js.UndefOr[String] = js.native
+    var arrowColor: js.UndefOr[String] = js.undefined
     
     // Popup background color
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     // Listen to body events vs. individual events
-    var bodyMode: js.UndefOr[Boolean] = js.native
+    var bodyMode: js.UndefOr[Boolean] = js.undefined
     
     // Add 1px white border
-    var border: js.UndefOr[Boolean] = js.native
+    var border: js.UndefOr[Boolean] = js.undefined
     
     // Popup border color
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
-    
-    // Extra style class
-    var `class`: js.UndefOr[String] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     // Extra style class
-    var className: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
+    
+    // Extra style class
+    var className: js.UndefOr[String] = js.undefined
     
     // Should the tooltip by clickable?
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
     // Time delay for hiding popup
-    var delayHide: js.UndefOr[Double] = js.native
+    var delayHide: js.UndefOr[Double] = js.undefined
     
     // Time delay for showing popup
-    var delayShow: js.UndefOr[Double] = js.native
+    var delayShow: js.UndefOr[Double] = js.undefined
     
     // Time delay for updating popup
-    var delayUpdate: js.UndefOr[Double] = js.native
+    var delayUpdate: js.UndefOr[Double] = js.undefined
     
     // Manually disable the tooltip behavior
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
     // Behavior of tooltip
-    var effect: js.UndefOr[Effect] = js.native
+    var effect: js.UndefOr[Effect] = js.undefined
     
     // Custom event to trigger tooltip
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
     // Custom event to hide tooltip
     // (this requires the event prop as well)
-    var eventOff: js.UndefOr[String] = js.native
+    var eventOff: js.UndefOr[String] = js.undefined
     
     // Function to dynamically generate the tooltip content
-    var getContent: js.UndefOr[GetContent] = js.native
+    var getContent: js.UndefOr[GetContent] = js.undefined
     
     // Global event to hide tooltip
-    var globalEventOff: js.UndefOr[String] = js.native
+    var globalEventOff: js.UndefOr[String] = js.undefined
     
     // Inject raw HTML? (This is a security risk)
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     // HTML id attribute
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     // Whether to inject the style header into the page
     // dynamically (violates CSP style-src, but is a convenient default);
     // default = true
-    var insecure: js.UndefOr[Boolean] = js.native
+    var insecure: js.UndefOr[Boolean] = js.undefined
     
     // When set to true, custom event's propagation
     // mode will be captue
-    var isCapture: js.UndefOr[Boolean] = js.native
+    var isCapture: js.UndefOr[Boolean] = js.undefined
     
     // Support <br /> to make explicitly multiline tooltip comments
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     // Global tooltip offset, e.g., offset={{ top: 10, left: 5 }}
-    var offset: js.UndefOr[Offset] = js.native
+    var offset: js.UndefOr[Offset] = js.undefined
     
     // Callback to override the tooltip position
     var overridePosition: js.UndefOr[
@@ -228,36 +225,36 @@ object mod {
           /* offset */ Offset, 
           Left
         ]
-      ] = js.native
+      ] = js.undefined
     
     // Placement of tooltip
-    var place: js.UndefOr[Place] = js.native
+    var place: js.UndefOr[Place] = js.undefined
     
     // List of potential custom events to trigger the popup (in body mode)
-    var possibleCustomEvents: js.UndefOr[String] = js.native
+    var possibleCustomEvents: js.UndefOr[String] = js.undefined
     
     // List of potential custom events to hide the popup (in body mode)
-    var possibleCustomEventsOff: js.UndefOr[String] = js.native
+    var possibleCustomEventsOff: js.UndefOr[String] = js.undefined
     
     // Hide the tooltip when risizing the window;
     // default = true
-    var resizeHide: js.UndefOr[Boolean] = js.native
+    var resizeHide: js.UndefOr[Boolean] = js.undefined
     
     // Hide the tooltip when scrolling;
     // default = true
-    var scrollHide: js.UndefOr[Boolean] = js.native
+    var scrollHide: js.UndefOr[Boolean] = js.undefined
     
     // Popup text color
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
     // Tooltip styling theme
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
     
     // The tooltip parent component;
     // default = 'div' 
-    var wrapper: js.UndefOr[div | span] = js.native
+    var wrapper: js.UndefOr[div | span] = js.undefined
   }
   object TooltipProps {
     
@@ -271,13 +268,13 @@ object mod {
     implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterHide(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterHide", js.Any.fromFunction1(value))
+      def setAfterHide(value: VoidFunc): Self = StObject.set(x, "afterHide", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAfterHideUndefined: Self = StObject.set(x, "afterHide", js.undefined)
       
       @scala.inline
-      def setAfterShow(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction1(value))
+      def setAfterShow(value: VoidFunc): Self = StObject.set(x, "afterShow", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
@@ -523,5 +520,9 @@ object mod {
     def warning: typings.reactTooltip.reactTooltipStrings.warning = "warning".asInstanceOf[typings.reactTooltip.reactTooltipStrings.warning]
   }
   
-  type VoidFunc = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait VoidFunc extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
 }

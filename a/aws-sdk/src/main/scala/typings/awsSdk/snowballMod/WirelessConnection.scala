@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WirelessConnection extends StObject {
   
   /**
     * Enables the Wi-Fi adapter on an AWS Snowcone device.
     */
-  var IsWifiEnabled: js.UndefOr[Boolean] = js.native
+  var IsWifiEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object WirelessConnection {
   

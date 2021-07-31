@@ -10,33 +10,31 @@ import typings.vegaTypings.runtimeMod.TooltipHandler
 import typings.vegaUtil.mod.LoggerInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
-  var background: js.UndefOr[typings.vegaTypings.colorMod.Color] = js.native
+  var background: js.UndefOr[typings.vegaTypings.colorMod.Color] = js.undefined
   
-  var bind: js.UndefOr[Element | String] = js.native
+  var bind: js.UndefOr[Element | String] = js.undefined
   
-  var container: js.UndefOr[Element | String] = js.native
+  var container: js.UndefOr[Element | String] = js.undefined
   
-  var expr: js.UndefOr[js.Any] = js.native
+  var expr: js.UndefOr[js.Any] = js.undefined
   
-  var hover: js.UndefOr[Boolean] = js.native
+  var hover: js.UndefOr[Boolean] = js.undefined
   
-  var loader: js.UndefOr[Loader_] = js.native
+  var loader: js.UndefOr[Loader_] = js.undefined
   
-  var locale: js.UndefOr[LocaleFormatters] = js.native
+  var locale: js.UndefOr[LocaleFormatters] = js.undefined
   
-  var logLevel: js.UndefOr[Double] = js.native
+  var logLevel: js.UndefOr[Double] = js.undefined
   
-  var logger: js.UndefOr[LoggerInterface] = js.native
+  var logger: js.UndefOr[LoggerInterface] = js.undefined
   
-  var renderer: js.UndefOr[Renderers] = js.native
+  var renderer: js.UndefOr[Renderers] = js.undefined
   
-  var tooltip: js.UndefOr[TooltipHandler] = js.native
+  var tooltip: js.UndefOr[TooltipHandler] = js.undefined
 }
 object Background {
   

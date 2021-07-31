@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.linq4js.anon.GroupValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,8 +33,8 @@ trait Array[T] extends StObject {
     * @param method A function (or function-string) for aggregation
     * @param startVal The value to start aggregation
     */
-  def Aggregate(method: js.Function2[/* result */ js.Any, /* item */ T, _]): String = js.native
-  def Aggregate(method: js.Function2[/* result */ js.Any, /* item */ T, _], startVal: js.Any): String = js.native
+  def Aggregate(method: js.Function2[/* result */ js.Any, /* item */ T, js.Any]): String = js.native
+  def Aggregate(method: js.Function2[/* result */ js.Any, /* item */ T, js.Any], startVal: js.Any): String = js.native
   
   def All(filter: String): Boolean = js.native
   /**
@@ -58,14 +57,14 @@ trait Array[T] extends StObject {
     * @param filter If set the function computes the average of elements that match the filter
     */
   def Average(): Double = js.native
-  def Average(selector: js.UndefOr[scala.Nothing], filter: String): Double = js.native
-  def Average(selector: js.UndefOr[scala.Nothing], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
   def Average(selector: String): Double = js.native
   def Average(selector: String, filter: String): Double = js.native
   def Average(selector: String, filter: js.Function1[/* item */ T, Boolean]): Double = js.native
-  def Average(selector: js.Function1[/* item */ T, _]): Double = js.native
-  def Average(selector: js.Function1[/* item */ T, _], filter: String): Double = js.native
-  def Average(selector: js.Function1[/* item */ T, _], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
+  def Average(selector: js.Function1[/* item */ T, js.Any]): Double = js.native
+  def Average(selector: js.Function1[/* item */ T, js.Any], filter: String): Double = js.native
+  def Average(selector: js.Function1[/* item */ T, js.Any], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
+  def Average(selector: Unit, filter: String): Double = js.native
+  def Average(selector: Unit, filter: js.Function1[/* item */ T, Boolean]): Double = js.native
   
   /**
     * Creates a copy of the array
@@ -98,7 +97,7 @@ trait Array[T] extends StObject {
     */
   def Distinct(): Array[T] = js.native
   def Distinct(valueSelector: String): Array[T] = js.native
-  def Distinct(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def Distinct(valueSelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   /**
     * Executes actions defined in the command-string
@@ -141,7 +140,7 @@ trait Array[T] extends StObject {
     * Executes a method for each item in the array
     * @param action A function (or function-string) that gets executed for each element. If it returns false the loop stops.
     */
-  def ForEach(action: js.Function2[/* item */ T, /* index */ js.UndefOr[Double], Boolean | _]): Array[T] = js.native
+  def ForEach(action: js.Function2[/* item */ T, /* index */ js.UndefOr[Double], Boolean | js.Any]): Array[T] = js.native
   
   /**
     * Gets the item with the index
@@ -154,7 +153,7 @@ trait Array[T] extends StObject {
     * Groups array by property
     * @param selector The selector-function (or function-string) that selects the property for grouping
     */
-  def GroupBy(selector: js.Function1[/* item */ T, _]): Array[Array[T]] = js.native
+  def GroupBy(selector: js.Function1[/* item */ T, js.Any]): Array[Array[T]] = js.native
   
   /**
     * Inserts an entry at a specific position
@@ -176,7 +175,7 @@ trait Array[T] extends StObject {
     */
   def Join(character: String): String = js.native
   def Join(character: String, selector: String): String = js.native
-  def Join(character: String, selector: js.Function1[/* item */ T, _]): String = js.native
+  def Join(character: String, selector: js.Function1[/* item */ T, js.Any]): String = js.native
   
   /**
     * Returns the last item of the array - Throws an exception if no item was found
@@ -200,7 +199,7 @@ trait Array[T] extends StObject {
     */
   def Max(): T | Null = js.native
   def Max(valueSelector: String): T | Null = js.native
-  def Max(valueSelector: js.Function1[/* item */ T, _]): T | Null = js.native
+  def Max(valueSelector: js.Function1[/* item */ T, js.Any]): T | Null = js.native
   
   /**
     * Returns the smallest element in array
@@ -208,7 +207,7 @@ trait Array[T] extends StObject {
     */
   def Min(): T | Null = js.native
   def Min(valueSelector: String): T | Null = js.native
-  def Min(valueSelector: js.Function1[/* item */ T, _]): T | Null = js.native
+  def Min(valueSelector: js.Function1[/* item */ T, js.Any]): T | Null = js.native
   
   /**
     * Moves an item from one index to another
@@ -222,14 +221,14 @@ trait Array[T] extends StObject {
     * Orders array by property or value in ascending direction
     * @param valueSelector The selector-function (or function-string) that selects the property for sorting
     */
-  def OrderBy(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def OrderBy(valueSelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   def OrderByDescending(valueSelector: String): Array[T] = js.native
   /**
     * Orders array by property or value in descending direction
     * @param valueSelector The selector-function (or function-string) that selects the property for sorting
     */
-  def OrderByDescending(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def OrderByDescending(valueSelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   /**
     * Takes items in a specific range
@@ -245,7 +244,7 @@ trait Array[T] extends StObject {
     */
   def Remove(`object`: T): Array[T] = js.native
   def Remove(`object`: T, primaryKeySelector: String): Array[T] = js.native
-  def Remove(`object`: T, primaryKeySelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def Remove(`object`: T, primaryKeySelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   /**
     * Removes objects from the array
@@ -254,7 +253,7 @@ trait Array[T] extends StObject {
     */
   def RemoveRange(objects: Array[T]): Array[T] = js.native
   def RemoveRange(objects: Array[T], primaryKeySelector: String): Array[T] = js.native
-  def RemoveRange(objects: Array[T], primaryKeySelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def RemoveRange(objects: Array[T], primaryKeySelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   /**
     * Repeats an object in the array
@@ -316,14 +315,14 @@ trait Array[T] extends StObject {
     * @param filter If set the function computes the sum of elements that match the filter
     */
   def Sum(): Double = js.native
-  def Sum(selector: js.UndefOr[scala.Nothing], filter: String): Double = js.native
-  def Sum(selector: js.UndefOr[scala.Nothing], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
   def Sum(selector: String): Double = js.native
   def Sum(selector: String, filter: String): Double = js.native
   def Sum(selector: String, filter: js.Function1[/* item */ T, Boolean]): Double = js.native
-  def Sum(selector: js.Function1[/* item */ T, _]): Double = js.native
-  def Sum(selector: js.Function1[/* item */ T, _], filter: String): Double = js.native
-  def Sum(selector: js.Function1[/* item */ T, _], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
+  def Sum(selector: js.Function1[/* item */ T, js.Any]): Double = js.native
+  def Sum(selector: js.Function1[/* item */ T, js.Any], filter: String): Double = js.native
+  def Sum(selector: js.Function1[/* item */ T, js.Any], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
+  def Sum(selector: Unit, filter: String): Double = js.native
+  def Sum(selector: Unit, filter: js.Function1[/* item */ T, Boolean]): Double = js.native
   
   /**
     * Limits the number of entries taken
@@ -332,12 +331,6 @@ trait Array[T] extends StObject {
   def Take(count: Double): Array[T] = js.native
   
   def TakeWhile(condition: String): Array[T] = js.native
-  def TakeWhile(condition: String, initial: js.UndefOr[scala.Nothing], after: String): Array[T] = js.native
-  def TakeWhile(
-    condition: String,
-    initial: js.UndefOr[scala.Nothing],
-    after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
-  ): Array[T] = js.native
   def TakeWhile(condition: String, initial: String): Array[T] = js.native
   def TakeWhile(condition: String, initial: String, after: String): Array[T] = js.native
   def TakeWhile(condition: String, initial: String, after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]): Array[T] = js.native
@@ -348,6 +341,8 @@ trait Array[T] extends StObject {
     initial: js.Function1[/* storage */ js.Any, Unit],
     after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
   ): Array[T] = js.native
+  def TakeWhile(condition: String, initial: Unit, after: String): Array[T] = js.native
+  def TakeWhile(condition: String, initial: Unit, after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]): Array[T] = js.native
   /**
     * Takes entries as long as a condition is true
     * @param condition The condition-function (or function-string) that returns a boolean. All elements until a false gets thrown are taken
@@ -355,16 +350,6 @@ trait Array[T] extends StObject {
     * @param after A function that gets executed after every element-iteration after the condition-function was evaluated
     */
   def TakeWhile(condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean]): Array[T] = js.native
-  def TakeWhile(
-    condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
-    initial: js.UndefOr[scala.Nothing],
-    after: String
-  ): Array[T] = js.native
-  def TakeWhile(
-    condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
-    initial: js.UndefOr[scala.Nothing],
-    after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
-  ): Array[T] = js.native
   def TakeWhile(condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean], initial: String): Array[T] = js.native
   def TakeWhile(
     condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
@@ -390,35 +375,45 @@ trait Array[T] extends StObject {
     initial: js.Function1[/* storage */ js.Any, Unit],
     after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
   ): Array[T] = js.native
+  def TakeWhile(
+    condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
+    initial: Unit,
+    after: String
+  ): Array[T] = js.native
+  def TakeWhile(
+    condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
+    initial: Unit,
+    after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
+  ): Array[T] = js.native
   
   def ThenBy(valueSelector: String): Array[T] = js.native
   /**
     * Orders array by additional properties in ascending direction in combination with OrderBy/OrderByDescending
     * @param valueSelector The selector-function (or function-string) that selects the property for sorting
     */
-  def ThenBy(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def ThenBy(valueSelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   def ThenByDescending(valueSelector: String): Array[T] = js.native
   /**
     * Orders array by additional properties in descending direction in combination with OrderBy/OrderByDescending
     * @param valueSelector The selector-function (or function-string) that selects the property for sorting
     */
-  def ThenByDescending(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def ThenByDescending(valueSelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
-  def ToDictionary[Y](keySelector: String): StringDictionary[Y] with NumberDictionary[Y] = js.native
-  def ToDictionary[Y](keySelector: String, valueSelector: String): StringDictionary[Y] with NumberDictionary[Y] = js.native
-  def ToDictionary[Y](keySelector: String, valueSelector: js.Function1[/* item */ T, Y]): StringDictionary[Y] with NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: String): StringDictionary[Y] & NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: String, valueSelector: String): StringDictionary[Y] & NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: String, valueSelector: js.Function1[/* item */ T, Y]): StringDictionary[Y] & NumberDictionary[Y] = js.native
   /**
     * Converts the array to a dictionary
     * @param keySelector The selector-function (or function-string) to select property for key
     * @param valueSelector A selector-function (or function-string) to select property for value
     */
-  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, String | Double]): StringDictionary[Y] with NumberDictionary[Y] = js.native
-  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, String | Double], valueSelector: String): StringDictionary[Y] with NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, String | Double]): StringDictionary[Y] & NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, String | Double], valueSelector: String): StringDictionary[Y] & NumberDictionary[Y] = js.native
   def ToDictionary[Y](
     keySelector: js.Function1[/* item */ T, String | Double],
     valueSelector: js.Function1[/* item */ T, Y]
-  ): StringDictionary[Y] with NumberDictionary[Y] = js.native
+  ): StringDictionary[Y] & NumberDictionary[Y] = js.native
   
   /**
     * Combines two arrays without duplicates
@@ -433,7 +428,7 @@ trait Array[T] extends StObject {
     */
   def Update(`object`: T): Array[T] = js.native
   def Update(`object`: T, primaryKeySelector: String): Array[T] = js.native
-  def Update(`object`: T, primaryKeySelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def Update(`object`: T, primaryKeySelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   /**
     * Updates objects in the array
@@ -442,7 +437,7 @@ trait Array[T] extends StObject {
     */
   def UpdateRange(objects: Array[T]): Array[T] = js.native
   def UpdateRange(objects: Array[T], primaryKeySelector: String): Array[T] = js.native
-  def UpdateRange(objects: Array[T], primaryKeySelector: js.Function1[/* item */ T, _]): Array[T] = js.native
+  def UpdateRange(objects: Array[T], primaryKeySelector: js.Function1[/* item */ T, js.Any]): Array[T] = js.native
   
   def Where(filter: String): Array[T] = js.native
   /**

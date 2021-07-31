@@ -2,12 +2,11 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrailEncodeEntry
-  extends EncodeEntry
+  extends StObject
+     with EncodeEntry
      with DefinedProperty
 object TrailEncodeEntry {
   

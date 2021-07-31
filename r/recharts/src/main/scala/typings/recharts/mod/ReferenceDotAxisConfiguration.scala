@@ -2,13 +2,11 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceDotAxisConfiguration extends StObject {
   
-  var scale: ScaleCalculator = js.native
+  var scale: ScaleCalculator
 }
 object ReferenceDotAxisConfiguration {
   

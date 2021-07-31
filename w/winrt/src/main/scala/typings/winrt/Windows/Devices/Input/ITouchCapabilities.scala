@@ -2,15 +2,13 @@ package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITouchCapabilities extends StObject {
   
-  var contacts: Double = js.native
+  var contacts: Double
   
-  var touchPresent: Double = js.native
+  var touchPresent: Double
 }
 object ITouchCapabilities {
   

@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,32 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * relationship.  This image would be produced from a Dockerfile with FROM
   * &lt;DockerImage.Basis in attached Note&gt;.
   */
-@js.native
 trait SchemaDerived extends StObject {
   
   /**
     * Output only. This contains the base image URL for the derived image
     * occurrence.
     */
-  var baseResourceUrl: js.UndefOr[String] = js.native
+  var baseResourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The number of layers by which this image differs from the
     * associated image basis.
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * The fingerprint of the derived image.
     */
-  var fingerprint: js.UndefOr[SchemaFingerprint] = js.native
+  var fingerprint: js.UndefOr[SchemaFingerprint] = js.undefined
   
   /**
     * This contains layer-specific metadata, if populated it has length
     * &quot;distance&quot; and is ordered with [distance] being the layer
     * immediately following the base image and [1] being the final layer.
     */
-  var layerInfo: js.UndefOr[js.Array[SchemaLayer]] = js.native
+  var layerInfo: js.UndefOr[js.Array[SchemaLayer]] = js.undefined
 }
 object SchemaDerived {
   

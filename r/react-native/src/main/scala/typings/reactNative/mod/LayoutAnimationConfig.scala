@@ -2,19 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutAnimationConfig extends StObject {
   
-  var create: js.UndefOr[LayoutAnimationAnim] = js.native
+  var create: js.UndefOr[LayoutAnimationAnim] = js.undefined
   
-  var delete: js.UndefOr[LayoutAnimationAnim] = js.native
+  var delete: js.UndefOr[LayoutAnimationAnim] = js.undefined
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var update: js.UndefOr[LayoutAnimationAnim] = js.native
+  var update: js.UndefOr[LayoutAnimationAnim] = js.undefined
 }
 object LayoutAnimationConfig {
   

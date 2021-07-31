@@ -3,31 +3,29 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModelDecoration extends StObject {
   
   /**
     * Identifier for a decoration.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * Options associated with this decoration.
     */
-  val options: IModelDecorationOptions = js.native
+  val options: IModelDecorationOptions
   
   /**
     * Identifier for a decoration's owner.
     */
-  val ownerId: Double = js.native
+  val ownerId: Double
   
   /**
     * Range that this decoration covers.
     */
-  val range: Range = js.native
+  val range: Range
 }
 object IModelDecoration {
   

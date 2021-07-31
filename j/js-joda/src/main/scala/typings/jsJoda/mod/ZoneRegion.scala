@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneRegion")
@@ -10,8 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ZoneRegion protected () extends ZoneId
 object ZoneRegion {
   
-  /* static member */
-  @JSImport("js-joda", "ZoneRegion.ofId")
+  @JSImport("js-joda", "ZoneRegion")
   @js.native
-  def ofId(zoneId: String): ZoneId = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def ofId(zoneId: String): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("ofId")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
 }

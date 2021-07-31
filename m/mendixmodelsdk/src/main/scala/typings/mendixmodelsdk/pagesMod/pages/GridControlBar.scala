@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object GridControlBar {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridControlBar.create")
-  @js.native
-  def create(model: IModel): GridControlBar = js.native
+  @scala.inline
+  def create(model: IModel): GridControlBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridControlBar]
   
   /**
     * Creates and returns a new GridControlBar instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object GridControlBar {
     * of the parent Grid element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridControlBar.createIn")
-  @js.native
-  def createIn(container: Grid): GridControlBar = js.native
+  @scala.inline
+  def createIn(container: Grid): GridControlBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridControlBar]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridControlBar.structureTypeName")

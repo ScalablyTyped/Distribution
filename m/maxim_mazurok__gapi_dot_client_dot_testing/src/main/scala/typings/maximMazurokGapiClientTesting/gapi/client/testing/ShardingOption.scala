@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShardingOption extends StObject {
   
   /** Shards test cases into the specified groups of packages, classes, and/or methods. */
-  var manualSharding: js.UndefOr[ManualSharding] = js.native
+  var manualSharding: js.UndefOr[ManualSharding] = js.undefined
   
   /** Uniformly shards test cases given a total number of shards. */
-  var uniformSharding: js.UndefOr[UniformSharding] = js.native
+  var uniformSharding: js.UndefOr[UniformSharding] = js.undefined
 }
 object ShardingOption {
   

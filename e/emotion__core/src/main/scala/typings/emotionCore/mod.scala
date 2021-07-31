@@ -38,180 +38,151 @@ import typings.std.SVGElement
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@emotion/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@emotion/core", "CacheProvider")
   @js.native
   val CacheProvider: Provider[EmotionCache] = js.native
   
-  @JSImport("@emotion/core", "ClassNames")
-  @js.native
-  def ClassNames[Theme](props: ClassNamesProps[Theme]): ReactElement = js.native
+  @scala.inline
+  def ClassNames[Theme](props: ClassNamesProps[Theme]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @JSImport("@emotion/core", "Global")
-  @js.native
-  def Global_[Theme](props: GlobalProps[Theme]): ReactElement = js.native
+  @scala.inline
+  def Global_[Theme](props: GlobalProps[Theme]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Global")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@emotion/core", "ThemeContext")
   @js.native
   val ThemeContext: Context[js.Object] = js.native
   
-  @JSImport("@emotion/core", "css")
-  @js.native
-  def css(args: Interpolation[js.UndefOr[scala.Nothing]]*): SerializedStyles = js.native
-  @JSImport("@emotion/core", "css")
-  @js.native
-  def css(template: TemplateStringsArray, args: Interpolation[js.UndefOr[scala.Nothing]]*): SerializedStyles = js.native
+  @scala.inline
+  def css(args: Interpolation[Unit]*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[SerializedStyles]
+  @scala.inline
+  def css(template: TemplateStringsArray, args: Interpolation[Unit]*): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
   
-  @JSImport("@emotion/core", "jsx")
-  @js.native
+  @scala.inline
   def jsx(
     `type`: input,
-    props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
+    props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
     children: ReactNode*
-  ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
+  ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+  @scala.inline
+  def jsx(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+  @scala.inline
+  def jsx(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
   def jsx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-    props: (ClassAttributes[ClassicComponent[P, ComponentState]]) with P,
+    props: (ClassAttributes[ClassicComponent[P, ComponentState]]) & P,
     children: ReactNode*
-  ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](
-    `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-    props: js.UndefOr[scala.Nothing],
-    children: ReactNode*
-  ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
+  ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+  @scala.inline
   def jsx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
     props: Null,
     children: ReactNode*
-  ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes with P, children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
+  ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+  @scala.inline
+  def jsx[P /* <: js.Object */](
+    `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+    props: Unit,
+    children: ReactNode*
+  ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+  @scala.inline
+  def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+  @scala.inline
   def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-    props: ClassAttributes[T] with P,
+    props: ClassAttributes[T] & P,
     children: ReactNode*
-  ): ReactSVGElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-    props: js.UndefOr[scala.Nothing],
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
+  ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+  @scala.inline
   def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: Null,
     children: ReactNode*
-  ): ReactSVGElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: js.UndefOr[scala.Nothing], children: ReactNode*): CElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): DOMElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-    props: ClassAttributes[T] with P,
+  ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+  @scala.inline
+  def jsx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+    props: Unit,
     children: ReactNode*
-  ): DetailedReactHTMLElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-    props: js.UndefOr[scala.Nothing],
-    children: ReactNode*
-  ): DetailedReactHTMLElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-    props: Null,
-    children: ReactNode*
-  ): DetailedReactHTMLElement[P, T] = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-  @JSImport("@emotion/core", "jsx")
-  @js.native
-  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = js.native
+  ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+  @scala.inline
+  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+  @scala.inline
+  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+  @scala.inline
+  def jsx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
   
-  @JSImport("@emotion/core", "keyframes")
-  @js.native
-  def keyframes(args: Interpolation[js.UndefOr[scala.Nothing]]*): Keyframes = js.native
-  @JSImport("@emotion/core", "keyframes")
-  @js.native
-  def keyframes(template: TemplateStringsArray, args: Interpolation[js.UndefOr[scala.Nothing]]*): Keyframes = js.native
+  @scala.inline
+  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  @scala.inline
+  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  @scala.inline
+  def jsx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
   
-  @JSImport("@emotion/core", "withEmotionCache")
-  @js.native
+  @scala.inline
+  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+    props: ClassAttributes[T] & P,
+    children: ReactNode*
+  ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+  @scala.inline
+  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+    props: Null,
+    children: ReactNode*
+  ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+  @scala.inline
+  def jsx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+    props: Unit,
+    children: ReactNode*
+  ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+  
+  @scala.inline
+  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def jsx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  
+  @scala.inline
+  def keyframes(args: Interpolation[Unit]*): Keyframes = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(args.asInstanceOf[js.Any]).asInstanceOf[Keyframes]
+  @scala.inline
+  def keyframes(template: TemplateStringsArray, args: Interpolation[Unit]*): Keyframes = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Keyframes]
+  
+  @scala.inline
   def withEmotionCache[Props, RefType](
     func: js.Function3[/* props */ Props, /* context */ EmotionCache, /* ref */ Ref[RefType], ReactNode]
-  ): SFC[Props with ClassAttributes[RefType]] = js.native
+  ): SFC[Props & ClassAttributes[RefType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEmotionCache")(func.asInstanceOf[js.Any]).asInstanceOf[SFC[Props & ClassAttributes[RefType]]]
   
   @js.native
-  trait ArrayClassNamesArg extends Array[ClassNamesArg]
+  trait ArrayClassNamesArg
+    extends StObject
+       with Array[ClassNamesArg]
   
   type ClassNamesArg = js.UndefOr[
     Null | String | Boolean | (StringDictionary[js.UndefOr[Boolean | Null]]) | ArrayClassNamesArg
@@ -220,18 +191,17 @@ object mod {
   @js.native
   trait ClassNamesContent[Theme] extends StObject {
     
-    def css(args: Interpolation[js.UndefOr[scala.Nothing]]*): String = js.native
-    def css(template: TemplateStringsArray, args: Interpolation[js.UndefOr[scala.Nothing]]*): String = js.native
+    def css(args: Interpolation[Unit]*): String = js.native
+    def css(template: TemplateStringsArray, args: Interpolation[Unit]*): String = js.native
     
     def cx(args: ClassNamesArg*): String = js.native
     
     var theme: Theme = js.native
   }
   
-  @js.native
   trait ClassNamesProps[Theme] extends StObject {
     
-    def children(content: ClassNamesContent[Theme]): ReactNode = js.native
+    def children(content: ClassNamesContent[Theme]): ReactNode
   }
   object ClassNamesProps {
     
@@ -242,17 +212,16 @@ object mod {
     }
     
     @scala.inline
-    implicit class ClassNamesPropsMutableBuilder[Self <: ClassNamesProps[_], Theme] (val x: Self with ClassNamesProps[Theme]) extends AnyVal {
+    implicit class ClassNamesPropsMutableBuilder[Self <: ClassNamesProps[?], Theme] (val x: Self & ClassNamesProps[Theme]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ClassNamesContent[Theme] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait GlobalProps[Theme] extends StObject {
     
-    var styles: InterpolationWithTheme[Theme] = js.native
+    var styles: InterpolationWithTheme[Theme]
   }
   object GlobalProps {
     
@@ -263,13 +232,13 @@ object mod {
     }
     
     @scala.inline
-    implicit class GlobalPropsMutableBuilder[Self <: GlobalProps[_], Theme] (val x: Self with GlobalProps[Theme]) extends AnyVal {
+    implicit class GlobalPropsMutableBuilder[Self <: GlobalProps[?], Theme] (val x: Self & GlobalProps[Theme]) extends AnyVal {
       
       @scala.inline
       def setStyles(value: InterpolationWithTheme[Theme]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStylesFunction1(value: Theme => Interpolation[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      def setStylesFunction1(value: Theme => Interpolation[Unit]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStylesNull: Self = StObject.set(x, "styles", null)
@@ -279,7 +248,7 @@ object mod {
     }
   }
   
-  type InterpolationWithTheme[Theme] = Interpolation[js.UndefOr[scala.Nothing]] | (js.Function1[/* theme */ Theme, Interpolation[js.UndefOr[scala.Nothing]]])
+  type InterpolationWithTheme[Theme] = Interpolation[Unit] | (js.Function1[/* theme */ Theme, Interpolation[Unit]])
   
   object global {
     
@@ -289,10 +258,9 @@ object mod {
         * Do we need to modify `LibraryManagedAttributes` too,
         * to make `className` props optional when `css` props is specified?
         */
-      @js.native
       trait IntrinsicAttributes extends StObject {
         
-        var css: js.UndefOr[InterpolationWithTheme[_]] = js.native
+        var css: js.UndefOr[InterpolationWithTheme[js.Any]] = js.undefined
       }
       object IntrinsicAttributes {
         
@@ -306,10 +274,10 @@ object mod {
         implicit class IntrinsicAttributesMutableBuilder[Self <: IntrinsicAttributes] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setCss(value: InterpolationWithTheme[_]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+          def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setCssFunction1(value: _ => Interpolation[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+          def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
           
           @scala.inline
           def setCssNull: Self = StObject.set(x, "css", null)
@@ -324,10 +292,9 @@ object mod {
   /* augmented module */
   object reactAugmentingMod {
     
-    @js.native
     trait DOMAttributes[T] extends StObject {
       
-      var css: js.UndefOr[InterpolationWithTheme[_]] = js.native
+      var css: js.UndefOr[InterpolationWithTheme[js.Any]] = js.undefined
     }
     object DOMAttributes {
       
@@ -338,13 +305,13 @@ object mod {
       }
       
       @scala.inline
-      implicit class DOMAttributesMutableBuilder[Self <: typings.emotionCore.mod.reactAugmentingMod.DOMAttributes[_], T] (val x: Self with typings.emotionCore.mod.reactAugmentingMod.DOMAttributes[T]) extends AnyVal {
+      implicit class DOMAttributesMutableBuilder[Self <: typings.emotionCore.mod.reactAugmentingMod.DOMAttributes[?], T] (val x: Self & typings.emotionCore.mod.reactAugmentingMod.DOMAttributes[T]) extends AnyVal {
         
         @scala.inline
-        def setCss(value: InterpolationWithTheme[_]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+        def setCss(value: InterpolationWithTheme[js.Any]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setCssFunction1(value: _ => Interpolation[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+        def setCssFunction1(value: js.Any => Interpolation[Unit]): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
         
         @scala.inline
         def setCssNull: Self = StObject.set(x, "css", null)

@@ -2,72 +2,59 @@ package typings.osUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("os-utils", "allLoadavg")
+  @JSImport("os-utils", JSImport.Namespace)
   @js.native
-  def allLoadavg(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("os-utils", "cpuCount")
-  @js.native
-  def cpuCount(): Double = js.native
+  @scala.inline
+  def allLoadavg(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("allLoadavg")().asInstanceOf[String]
   
-  @JSImport("os-utils", "cpuFree")
-  @js.native
-  def cpuFree(callback: js.Function1[/* percentage */ Double, _]): Unit = js.native
+  @scala.inline
+  def cpuCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCount")().asInstanceOf[Double]
   
-  @JSImport("os-utils", "cpuUsage")
-  @js.native
-  def cpuUsage(callback: js.Function1[/* percentage */ Double, _]): Unit = js.native
+  @scala.inline
+  def cpuFree(callback: js.Function1[/* percentage */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuFree")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("os-utils", "freeCommand")
-  @js.native
-  def freeCommand(callback: js.Function1[/* used_mem */ Double, _]): Unit = js.native
+  @scala.inline
+  def cpuUsage(callback: js.Function1[/* percentage */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("os-utils", "freemem")
-  @js.native
-  def freemem(): Double = js.native
+  @scala.inline
+  def freeCommand(callback: js.Function1[/* used_mem */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeCommand")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("os-utils", "freememPercentage")
-  @js.native
-  def freememPercentage(): Double = js.native
+  @scala.inline
+  def freemem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freemem")().asInstanceOf[Double]
   
-  @JSImport("os-utils", "getProcesses")
-  @js.native
-  def getProcesses(callback: js.Function1[/* result */ String, _]): Unit = js.native
-  @JSImport("os-utils", "getProcesses")
-  @js.native
-  def getProcesses(nProcess: Double, callback: js.Function1[/* result */ String, _]): Unit = js.native
+  @scala.inline
+  def freememPercentage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freememPercentage")().asInstanceOf[Double]
   
-  @JSImport("os-utils", "harddrive")
-  @js.native
-  def harddrive(callback: js.Function3[/* total */ Double, /* free */ Double, /* used */ Double, _]): Unit = js.native
+  @scala.inline
+  def getProcesses(callback: js.Function1[/* result */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcesses")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getProcesses(nProcess: Double, callback: js.Function1[/* result */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcesses")(nProcess.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("os-utils", "loadavg")
-  @js.native
-  def loadavg(): Double = js.native
-  @JSImport("os-utils", "loadavg")
-  @js.native
-  def loadavg(_time: Double): Double = js.native
+  @scala.inline
+  def harddrive(callback: js.Function3[/* total */ Double, /* free */ Double, /* used */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("harddrive")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("os-utils", "platform")
-  @js.native
-  def platform(): Platform_ = js.native
+  @scala.inline
+  def loadavg(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[Double]
+  @scala.inline
+  def loadavg(_time: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")(_time.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("os-utils", "processUptime")
-  @js.native
-  def processUptime(): Double = js.native
+  @scala.inline
+  def platform(): Platform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")().asInstanceOf[Platform_]
   
-  @JSImport("os-utils", "sysUptime")
-  @js.native
-  def sysUptime(): Double = js.native
+  @scala.inline
+  def processUptime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("processUptime")().asInstanceOf[Double]
   
-  @JSImport("os-utils", "totalmem")
-  @js.native
-  def totalmem(): Double = js.native
+  @scala.inline
+  def sysUptime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sysUptime")().asInstanceOf[Double]
+  
+  @scala.inline
+  def totalmem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("totalmem")().asInstanceOf[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.osUtils.osUtilsStrings.aix

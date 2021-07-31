@@ -2,18 +2,16 @@ package typings.meshblu.Meshblu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the primary means of identifying a device.
   */
-@js.native
 trait ConnectionOptions extends StObject {
   
-  var token: String = js.native
+  var token: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object ConnectionOptions {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeInsight extends StObject {
   
   /** The name of the package to be upgraded. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /** The suggested version to upgrade to. Optional: In case we are not sure which version solves this problem */
-  var upgradeToVersion: js.UndefOr[String] = js.native
+  var upgradeToVersion: js.UndefOr[String] = js.undefined
 }
 object UpgradeInsight {
   

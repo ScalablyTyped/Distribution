@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,12 +18,16 @@ object RowHiddenChangeType extends StObject {
     *
     */
   @js.native
-  sealed trait hidden extends RowHiddenChangeType
+  sealed trait hidden
+    extends StObject
+       with RowHiddenChangeType
   
   /**
     * Unhidden indicates the row is not hidden.
     *
     */
   @js.native
-  sealed trait unhidden extends RowHiddenChangeType
+  sealed trait unhidden
+    extends StObject
+       with RowHiddenChangeType
 }

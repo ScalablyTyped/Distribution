@@ -2,22 +2,20 @@ package typings.jqueryPnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PNotifyconfirmButton extends StObject {
   
-  var addClass: js.UndefOr[String] = js.native
+  var addClass: js.UndefOr[String] = js.undefined
   
-  def click(notice: PNotify, value: js.Any): Unit = js.native
+  def click(notice: PNotify, value: js.Any): Unit
   
   /**
     *  Whether to trigger this button when the user hits enter in a single line prompt.
     */
-  var promptTrigger: js.UndefOr[Boolean] = js.native
+  var promptTrigger: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object PNotifyconfirmButton {
   

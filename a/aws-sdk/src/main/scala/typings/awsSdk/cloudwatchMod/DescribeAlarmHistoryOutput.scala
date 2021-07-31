@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAlarmHistoryOutput extends StObject {
   
   /**
     * The alarm histories, in JSON format.
     */
-  var AlarmHistoryItems: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmHistoryItems] = js.native
+  var AlarmHistoryItems: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmHistoryItems] = js.undefined
   
   /**
     * The token that marks the start of the next batch of returned results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
 }
 object DescribeAlarmHistoryOutput {
   

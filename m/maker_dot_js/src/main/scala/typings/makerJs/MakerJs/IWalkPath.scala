@@ -2,18 +2,17 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A path reference in a walk.
   */
-@js.native
 trait IWalkPath
-  extends IRefPathIdInModel
+  extends StObject
+     with IRefPathIdInModel
      with IRouteOffset {
   
-  var pathContext: IPath = js.native
+  var pathContext: IPath
 }
 object IWalkPath {
   

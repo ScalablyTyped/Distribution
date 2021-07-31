@@ -2,57 +2,58 @@ package typings.docdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("docdown", JSImport.Namespace)
   @js.native
-  def apply(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       *  The language indicator for code blocks.
       * @default 'js'
       */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * the input file pat
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * Specify whether entries are sorted.
       * @default true
       */
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The hash style for links ('default' or 'github').
       * @default 'default'
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /**
       * The documentation title.
       * @default '<%= basename(options.path) %> API documentation'
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The table of contents organization style ('categories' or 'properties').
       * @default 'properties'
       */
-    var toc: js.UndefOr[String] = js.native
+    var toc: js.UndefOr[String] = js.undefined
     
     /**
       * The source URL.
       */
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

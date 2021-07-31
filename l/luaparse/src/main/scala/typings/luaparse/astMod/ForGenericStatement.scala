@@ -2,31 +2,25 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForGenericStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.ForGenericStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.ForGenericStatement]
+     with _Statement {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var iterators: js.Array[Expression] = js.native
+  var iterators: js.Array[Expression]
   
-  var variables: js.Array[Identifier] = js.native
+  var variables: js.Array[Identifier]
 }
 object ForGenericStatement {
   
   @scala.inline
-  def apply(
-    body: js.Array[Statement],
-    iterators: js.Array[Expression],
-    `type`: typings.luaparse.luaparseStrings.ForGenericStatement,
-    variables: js.Array[Identifier]
-  ): ForGenericStatement = {
+  def apply(body: js.Array[Statement], iterators: js.Array[Expression], variables: js.Array[Identifier]): ForGenericStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], iterators = iterators.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForGenericStatement")
     __obj.asInstanceOf[ForGenericStatement]
   }
   

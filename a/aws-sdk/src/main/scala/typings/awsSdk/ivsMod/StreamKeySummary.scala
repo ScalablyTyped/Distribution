@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamKeySummary extends StObject {
   
   /**
     * Stream-key ARN.
     */
-  var arn: js.UndefOr[StreamKeyArn] = js.native
+  var arn: js.UndefOr[StreamKeyArn] = js.undefined
   
   /**
     * Channel ARN for the stream.
     */
-  var channelArn: js.UndefOr[ChannelArn] = js.native
+  var channelArn: js.UndefOr[ChannelArn] = js.undefined
   
   /**
     * Array of 1-50 maps, each of the form string:string (key:value).
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object StreamKeySummary {
   

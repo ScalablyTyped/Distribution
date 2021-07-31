@@ -2,61 +2,59 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Problem extends StObject {
   
   /**
     * The resource affected by the problem.
     */
-  var AffectedResource: js.UndefOr[typings.awsSdk.applicationinsightsMod.AffectedResource] = js.native
+  var AffectedResource: js.UndefOr[typings.awsSdk.applicationinsightsMod.AffectedResource] = js.undefined
   
   /**
     * The time when the problem ended, in epoch seconds.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.native
+  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
   
   /**
     * Feedback provided by the user about the problem.
     */
-  var Feedback: js.UndefOr[typings.awsSdk.applicationinsightsMod.Feedback] = js.native
+  var Feedback: js.UndefOr[typings.awsSdk.applicationinsightsMod.Feedback] = js.undefined
   
   /**
     * The ID of the problem.
     */
-  var Id: js.UndefOr[ProblemId] = js.native
+  var Id: js.UndefOr[ProblemId] = js.undefined
   
   /**
     * A detailed analysis of the problem using machine learning.
     */
-  var Insights: js.UndefOr[typings.awsSdk.applicationinsightsMod.Insights] = js.native
+  var Insights: js.UndefOr[typings.awsSdk.applicationinsightsMod.Insights] = js.undefined
   
   /**
     * The name of the resource group affected by the problem.
     */
-  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.native
+  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.undefined
   
   /**
     * A measure of the level of impact of the problem.
     */
-  var SeverityLevel: js.UndefOr[typings.awsSdk.applicationinsightsMod.SeverityLevel] = js.native
+  var SeverityLevel: js.UndefOr[typings.awsSdk.applicationinsightsMod.SeverityLevel] = js.undefined
   
   /**
     * The time when the problem started, in epoch seconds.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.native
+  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
   
   /**
     * The status of the problem.
     */
-  var Status: js.UndefOr[typings.awsSdk.applicationinsightsMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.applicationinsightsMod.Status] = js.undefined
   
   /**
     * The name of the problem.
     */
-  var Title: js.UndefOr[typings.awsSdk.applicationinsightsMod.Title] = js.native
+  var Title: js.UndefOr[typings.awsSdk.applicationinsightsMod.Title] = js.undefined
 }
 object Problem {
   

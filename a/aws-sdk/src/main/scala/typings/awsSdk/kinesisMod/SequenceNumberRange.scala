@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceNumberRange extends StObject {
   
   /**
     * The ending sequence number for the range. Shards that are in the OPEN state have an ending sequence number of null.
     */
-  var EndingSequenceNumber: js.UndefOr[SequenceNumber] = js.native
+  var EndingSequenceNumber: js.UndefOr[SequenceNumber] = js.undefined
   
   /**
     * The starting sequence number for the range.
     */
-  var StartingSequenceNumber: SequenceNumber = js.native
+  var StartingSequenceNumber: SequenceNumber
 }
 object SequenceNumberRange {
   

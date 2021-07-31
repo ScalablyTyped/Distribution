@@ -2,25 +2,23 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlBuilder extends StObject {
   
-  def addAttribute(name: String, value: String): Unit = js.native
+  def addAttribute(name: String, value: String): Unit
   
-  def addCommunitiesCssClass(cssClassName: String): Unit = js.native
+  def addCommunitiesCssClass(cssClassName: String): Unit
   
-  def addCssClass(cssClassName: String): Unit = js.native
+  def addCssClass(cssClassName: String): Unit
   
-  def renderBeginTag(tagName: String): Unit = js.native
+  def renderBeginTag(tagName: String): Unit
   
-  def renderEndTag(): Unit = js.native
+  def renderEndTag(): Unit
   
-  def write(s: String): Unit = js.native
+  def write(s: String): Unit
   
-  def writeEncoded(s: String): Unit = js.native
+  def writeEncoded(s: String): Unit
 }
 object HtmlBuilder {
   

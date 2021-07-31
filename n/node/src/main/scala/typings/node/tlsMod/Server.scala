@@ -12,7 +12,6 @@ import typings.node.nodeStrings.tlsClientError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tls", "Server")
@@ -21,7 +20,7 @@ class Server ()
   extends typings.node.netMod.Server {
   def this(connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   def this(options: AllowHalfOpen) = this()
-  def this(options: js.UndefOr[scala.Nothing], connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
+  def this(options: Unit, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   def this(options: AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   
   /**

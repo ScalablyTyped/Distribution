@@ -12,10 +12,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codecommit {
+  
+  @JSImport("@pulumi/aws", "codecommit")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "codecommit.Repository")
   @js.native
@@ -34,6 +37,10 @@ object codecommit {
   /* static members */
   object Repository {
     
+    @JSImport("@pulumi/aws", "codecommit.Repository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -43,26 +50,21 @@ object codecommit {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "codecommit.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws", "codecommit.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws", "codecommit.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws", "codecommit.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.codecommitRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codecommitRepositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.codecommitRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codecommitRepositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.codecommitRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codecommitRepositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.codecommitRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codecommitRepositoryMod.Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "codecommit.Repository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "codecommit.Trigger")
@@ -82,6 +84,10 @@ object codecommit {
   /* static members */
   object Trigger {
     
+    @JSImport("@pulumi/aws", "codecommit.Trigger")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Trigger resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -91,32 +97,25 @@ object codecommit {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.triggerMod.Trigger = js.native
-    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = js.native
-    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TriggerState): typings.pulumiAws.triggerMod.Trigger = js.native
-    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.triggerMod.Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.triggerMod.Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.triggerMod.Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TriggerState): typings.pulumiAws.triggerMod.Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.triggerMod.Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.triggerMod.Trigger]
     
     /**
       * Returns true if the given object is an instance of Trigger.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "codecommit.Trigger.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "codecommit.getRepository")
-  @js.native
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
-  @JSImport("@pulumi/aws", "codecommit.getRepository")
-  @js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryResult]]
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryResult]]
 }

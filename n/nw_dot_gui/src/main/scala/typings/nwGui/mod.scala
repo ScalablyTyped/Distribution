@@ -4,7 +4,6 @@ import typings.nwGui.anon.Datatype
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,9 @@ object mod {
   val ^ : js.Any = js.native
   
   @js.native
-  trait App extends EventEmitter {
+  trait App
+    extends StObject
+       with EventEmitter {
     
     def addOriginAccessWhitelistEntry(
       sourceOrigin: String,
@@ -77,9 +78,12 @@ object mod {
   /* static members */
   object Clipboard {
     
-    @JSImport("nw.gui", "Clipboard.get")
+    @JSImport("nw.gui", "Clipboard")
     @js.native
-    def get(): Clipboard = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def get(): Clipboard = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Clipboard]
   }
   
   @JSImport("nw.gui", "Menu")
@@ -107,7 +111,8 @@ object mod {
   @JSImport("nw.gui", "MenuItem")
   @js.native
   class MenuItem protected ()
-    extends EventEmitter
+    extends StObject
+       with EventEmitter
        with MenuItemConfig {
     def this(config: MenuItemConfig) = this()
     
@@ -142,14 +147,13 @@ object mod {
     var type_MenuItem: String = js.native
   }
   
-  @js.native
   trait Shell extends StObject {
     
-    def openExternal(uri: String): Unit = js.native
+    def openExternal(uri: String): Unit
     
-    def openItem(file_path: String): Unit = js.native
+    def openItem(file_path: String): Unit
     
-    def showItemInFolder(file_path: String): Unit = js.native
+    def showItemInFolder(file_path: String): Unit
   }
   object Shell {
     
@@ -173,7 +177,9 @@ object mod {
   
   @JSImport("nw.gui", "Shortcut")
   @js.native
-  class Shortcut protected () extends EventEmitter {
+  class Shortcut protected ()
+    extends StObject
+       with EventEmitter {
     def this(option: ShortcutOption) = this()
     
     var active: js.Function = js.native
@@ -186,7 +192,8 @@ object mod {
   @JSImport("nw.gui", "Tray")
   @js.native
   class Tray protected ()
-    extends EventEmitter
+    extends StObject
+       with EventEmitter
        with TrayOption {
     def this(option: TrayOption) = this()
     
@@ -210,7 +217,9 @@ object mod {
   
   @JSImport("nw.gui", "Window")
   @js.native
-  class Window () extends EventEmitter {
+  class Window ()
+    extends StObject
+       with EventEmitter {
     
     def blur(): Unit = js.native
     
@@ -287,9 +296,9 @@ object mod {
     def show(): Unit = js.native
     
     def showDevTools(): Unit = js.native
-    def showDevTools(id: js.UndefOr[scala.Nothing], headless: Boolean): Unit = js.native
     def showDevTools(id: String): Unit = js.native
     def showDevTools(id: String, headless: Boolean): Unit = js.native
+    def showDevTools(id: Unit, headless: Boolean): Unit = js.native
     def showDevTools(id: HTMLIFrameElement): Unit = js.native
     def showDevTools(id: HTMLIFrameElement, headless: Boolean): Unit = js.native
     
@@ -312,30 +321,31 @@ object mod {
   /* static members */
   object Window {
     
-    @JSImport("nw.gui", "Window.get")
+    @JSImport("nw.gui", "Window")
     @js.native
-    def get(): Window = js.native
-    @JSImport("nw.gui", "Window.get")
-    @js.native
-    def get(windowObject: js.Any): Window = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nw.gui", "Window.open")
-    @js.native
-    def open(url: String): Window = js.native
-    @JSImport("nw.gui", "Window.open")
-    @js.native
-    def open(url: String, options: WindowManifestOptions): Window = js.native
+    @scala.inline
+    def get(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Window]
+    @scala.inline
+    def get(windowObject: js.Any): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowObject.asInstanceOf[js.Any]).asInstanceOf[Window]
+    
+    @scala.inline
+    def open(url: String): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Window]
+    @scala.inline
+    def open(url: String, options: WindowManifestOptions): Window = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Window]
   }
   
   @js.native
-  trait EventEmitter extends IEventEmitter
+  trait EventEmitter
+    extends StObject
+       with IEventEmitter
   
-  @js.native
   trait HideMenusOptions extends StObject {
     
-    var hideEdit: Boolean = js.native
+    var hideEdit: Boolean
     
-    var hideWindow: Boolean = js.native
+    var hideWindow: Boolean
   }
   object HideMenusOptions {
     
@@ -377,10 +387,9 @@ object mod {
     def setMaxListeners(n: Double): Unit = js.native
   }
   
-  @js.native
   trait MenuConfig extends StObject {
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuConfig {
     
@@ -401,28 +410,27 @@ object mod {
     }
   }
   
-  @js.native
   trait MenuItemConfig extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var click: js.UndefOr[js.Function] = js.native
+    var click: js.UndefOr[js.Function] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var modifiers: js.UndefOr[String] = js.native
+    var modifiers: js.UndefOr[String] = js.undefined
     
-    var submenu: js.UndefOr[Menu] = js.native
+    var submenu: js.UndefOr[Menu] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuItemConfig {
     
@@ -497,14 +505,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ShortcutOption extends StObject {
     
-    var active: js.Function = js.native
+    var active: js.Function
     
-    var failed: js.Function = js.native
+    var failed: js.Function
     
-    var key: String = js.native
+    var key: String
   }
   object ShortcutOption {
     
@@ -528,18 +535,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TrayOption extends StObject {
     
-    var alticon: js.UndefOr[String] = js.native
+    var alticon: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var menu: js.UndefOr[Menu] = js.native
+    var menu: js.UndefOr[Menu] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object TrayOption {
     
@@ -584,30 +590,29 @@ object mod {
     }
   }
   
-  @js.native
   trait WindowManifestOptions extends StObject {
     
-    var frame: js.UndefOr[Boolean] = js.native
+    var frame: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var max_height: js.UndefOr[Double] = js.native
+    var max_height: js.UndefOr[Double] = js.undefined
     
-    var max_width: js.UndefOr[Double] = js.native
+    var max_width: js.UndefOr[Double] = js.undefined
     
-    var min_height: js.UndefOr[Double] = js.native
+    var min_height: js.UndefOr[Double] = js.undefined
     
-    var min_width: js.UndefOr[Double] = js.native
+    var min_width: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var toolbar: js.UndefOr[Boolean] = js.native
+    var toolbar: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object WindowManifestOptions {
     

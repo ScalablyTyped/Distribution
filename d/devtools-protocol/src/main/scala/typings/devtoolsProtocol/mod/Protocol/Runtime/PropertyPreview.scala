@@ -23,38 +23,36 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyPreview extends StObject {
   
   /**
     * Property name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Object subtype hint. Specified for `object` type values only. (PropertyPreviewSubtype enum)
     */
   var subtype: js.UndefOr[
     array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Object type. Accessor means that the property itself is an accessor property. (PropertyPreviewType enum)
     */
-  var `type`: `object` | function | undefined | string | number | boolean | symbol | accessor | bigint = js.native
+  var `type`: `object` | function | undefined | string | number | boolean | symbol | accessor | bigint
   
   /**
     * User-friendly property value string.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * Nested value preview.
     */
-  var valuePreview: js.UndefOr[ObjectPreview] = js.native
+  var valuePreview: js.UndefOr[ObjectPreview] = js.undefined
 }
 object PropertyPreview {
   

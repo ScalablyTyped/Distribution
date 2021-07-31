@@ -3,18 +3,19 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`base-elevation`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseElevationLayer extends Layer {
+trait BaseElevationLayer
+  extends StObject
+     with Layer {
   
   /**
     * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#loadable) chain.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#addResolvingPromise)
     */
-  def addResolvingPromise(promiseToLoad: js.Promise[_]): js.Promise[_] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[js.Any]): js.Promise[js.Any] = js.native
   
   /**
     * Creates an elevation sampler for the given [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) by querying the service layer for elevation data and caching it so values may be sampled quickly afterwards.

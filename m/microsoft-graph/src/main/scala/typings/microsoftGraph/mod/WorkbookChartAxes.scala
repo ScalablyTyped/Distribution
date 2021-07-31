@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartAxes extends Entity {
+trait WorkbookChartAxes
+  extends StObject
+     with Entity {
   
   // Represents the category axis in a chart. Read-only.
-  var categoryAxis: js.UndefOr[NullableOption[WorkbookChartAxis]] = js.native
+  var categoryAxis: js.UndefOr[NullableOption[WorkbookChartAxis]] = js.undefined
   
   // Represents the series axis of a 3-dimensional chart. Read-only.
-  var seriesAxis: js.UndefOr[NullableOption[WorkbookChartAxis]] = js.native
+  var seriesAxis: js.UndefOr[NullableOption[WorkbookChartAxis]] = js.undefined
   
   // Represents the value axis in an axis. Read-only.
-  var valueAxis: js.UndefOr[NullableOption[WorkbookChartAxis]] = js.native
+  var valueAxis: js.UndefOr[NullableOption[WorkbookChartAxis]] = js.undefined
 }
 object WorkbookChartAxes {
   

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,13 +13,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait AjaxSettings
-    extends typings.jquery.JQuery.AjaxSettings[js.Any] {
+    extends StObject
+       with typings.jquery.JQuery.AjaxSettings[js.Any] {
     
-    var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ js.Any, js.Object])] = js.native
+    var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ js.Any, js.Object])] = js.undefined
     
-    var decoder: js.UndefOr[js.Any] = js.native
+    var decoder: js.UndefOr[js.Any] = js.undefined
   }
   object AjaxSettings {
     
@@ -59,174 +58,159 @@ object mod extends Shortcut {
     Unit
   ]
   
-  @js.native
-  trait Decoders extends /* decoderName */ StringDictionary[Decoder] {
+  trait Decoders
+    extends StObject
+       with /* decoderName */ StringDictionary[Decoder] {
     
-    def jsSend(): Unit = js.native
+    def jsSend(): Unit
+    def jsSend(data: js.Any): Unit
+    def jsSend(data: js.Any, status: String): Unit
+    def jsSend(data: js.Any, status: String, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
     def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: js.UndefOr[scala.Nothing],
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: js.UndefOr[scala.Nothing],
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: js.UndefOr[scala.Nothing],
-      xhr: js.UndefOr[scala.Nothing],
+      data: js.Any,
+      status: String,
+      xhr: Unit,
       success: js.Function1[/* repeated */ js.Any, Unit],
       error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.UndefOr[scala.Nothing], status: js.UndefOr[scala.Nothing], xhr: JQueryXHR): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: js.UndefOr[scala.Nothing],
-      xhr: JQueryXHR,
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: js.UndefOr[scala.Nothing],
-      xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: js.UndefOr[scala.Nothing],
-      xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.UndefOr[scala.Nothing], status: String): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: String,
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: String,
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: String,
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.UndefOr[scala.Nothing], status: String, xhr: JQueryXHR): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: String,
-      xhr: JQueryXHR,
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: String,
-      xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.UndefOr[scala.Nothing],
-      status: String,
-      xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.Any): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: js.UndefOr[scala.Nothing],
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: js.UndefOr[scala.Nothing],
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: js.UndefOr[scala.Nothing],
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.Any, status: js.UndefOr[scala.Nothing], xhr: JQueryXHR): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: js.UndefOr[scala.Nothing],
-      xhr: JQueryXHR,
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: js.UndefOr[scala.Nothing],
-      xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: js.UndefOr[scala.Nothing],
-      xhr: JQueryXHR,
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.Any, status: String): Unit = js.native
+    ): Unit
     def jsSend(
       data: js.Any,
       status: String,
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
+      xhr: Unit,
+      success: Unit,
       error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: String,
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: String,
-      xhr: js.UndefOr[scala.Nothing],
-      success: js.Function1[/* repeated */ js.Any, Unit],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.Any, status: String, xhr: JQueryXHR): Unit = js.native
-    def jsSend(
-      data: js.Any,
-      status: String,
-      xhr: JQueryXHR,
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
-    def jsSend(data: js.Any, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    ): Unit
+    def jsSend(data: js.Any, status: String, xhr: JQueryXHR): Unit
+    def jsSend(data: js.Any, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
     def jsSend(
       data: js.Any,
       status: String,
       xhr: JQueryXHR,
       success: js.Function1[/* repeated */ js.Any, Unit],
       error: js.Function1[/* repeated */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
+    def jsSend(
+      data: js.Any,
+      status: String,
+      xhr: JQueryXHR,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(data: js.Any, status: Unit, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(
+      data: js.Any,
+      status: Unit,
+      xhr: Unit,
+      success: js.Function1[/* repeated */ js.Any, Unit],
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(
+      data: js.Any,
+      status: Unit,
+      xhr: Unit,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(data: js.Any, status: Unit, xhr: JQueryXHR): Unit
+    def jsSend(data: js.Any, status: Unit, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(
+      data: js.Any,
+      status: Unit,
+      xhr: JQueryXHR,
+      success: js.Function1[/* repeated */ js.Any, Unit],
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(
+      data: js.Any,
+      status: Unit,
+      xhr: JQueryXHR,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(data: Unit, status: String): Unit
+    def jsSend(data: Unit, status: String, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(
+      data: Unit,
+      status: String,
+      xhr: Unit,
+      success: js.Function1[/* repeated */ js.Any, Unit],
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(
+      data: Unit,
+      status: String,
+      xhr: Unit,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(data: Unit, status: String, xhr: JQueryXHR): Unit
+    def jsSend(data: Unit, status: String, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(
+      data: Unit,
+      status: String,
+      xhr: JQueryXHR,
+      success: js.Function1[/* repeated */ js.Any, Unit],
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(
+      data: Unit,
+      status: String,
+      xhr: JQueryXHR,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(data: Unit, status: Unit, xhr: Unit, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(
+      data: Unit,
+      status: Unit,
+      xhr: Unit,
+      success: js.Function1[/* repeated */ js.Any, Unit],
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(
+      data: Unit,
+      status: Unit,
+      xhr: Unit,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(data: Unit, status: Unit, xhr: JQueryXHR): Unit
+    def jsSend(data: Unit, status: Unit, xhr: JQueryXHR, success: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def jsSend(
+      data: Unit,
+      status: Unit,
+      xhr: JQueryXHR,
+      success: js.Function1[/* repeated */ js.Any, Unit],
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
+    def jsSend(
+      data: Unit,
+      status: Unit,
+      xhr: JQueryXHR,
+      success: Unit,
+      error: js.Function1[/* repeated */ js.Any, Unit]
+    ): Unit
     @JSName("jsSend")
-    var jsSend_Original: Decoder = js.native
+    var jsSend_Original: Decoder
+  }
+  object Decoders {
+    
+    @scala.inline
+    def apply(
+      jsSend: (/* data */ js.UndefOr[js.Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]) => Unit
+    ): Decoders = {
+      val __obj = js.Dynamic.literal(jsSend = js.Any.fromFunction5(jsSend))
+      __obj.asInstanceOf[Decoders]
+    }
+    
+    @scala.inline
+    implicit class DecodersMutableBuilder[Self <: Decoders] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setJsSend(
+        value: (/* data */ js.UndefOr[js.Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]) => Unit
+      ): Self = StObject.set(x, "jsSend", js.Any.fromFunction5(value))
+    }
   }
   
   @js.native
@@ -239,9 +223,9 @@ object mod extends Shortcut {
       * callback: A function to invoke if the resource is retrieved successfully.
       */
     def apply(resourceId: String): Unit = js.native
-    def apply(resourceId: String, hash: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
     def apply(resourceId: String, hash: js.Any): Unit = js.native
     def apply(resourceId: String, hash: js.Any, callback: js.Function): Unit = js.native
+    def apply(resourceId: String, hash: Unit, callback: js.Function): Unit = js.native
     /***
       * Request a resource.
       * settings: A set of key/value pairs of settings for the request.
@@ -279,16 +263,15 @@ object mod extends Shortcut {
     def define(resourceId: String, resource: js.Function1[/* settings */ RequestSettings, Unit]): Unit = js.native
   }
   
-  @js.native
   trait RequestSettings extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var resourceId: String = js.native
+    var resourceId: String
     
-    var success: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var success: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   }
   object RequestSettings {
     
@@ -324,7 +307,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Static extends StObject {
     
     /***
@@ -335,7 +317,7 @@ object mod extends Shortcut {
       * The return value is true if none of the subscriptions returned false, and false otherwise.
       * Note that only one subscription can return false because doing so will prevent additional subscriptions from being invoked.
       */
-    def publish(topic: String, args: js.Any*): Boolean = js.native
+    def publish(topic: String, args: js.Any*): Boolean
     
     /***
       * Request a resource.
@@ -343,10 +325,10 @@ object mod extends Shortcut {
       * data: A set of key/value pairs of data to be sent to the resource.
       * callback: A function to invoke if the resource is retrieved successfully.
       */
-    def request(resourceId: String): Unit = js.native
-    def request(resourceId: String, hash: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
-    def request(resourceId: String, hash: js.Any): Unit = js.native
-    def request(resourceId: String, hash: js.Any, callback: js.Function): Unit = js.native
+    def request(resourceId: String): Unit
+    def request(resourceId: String, hash: js.Any): Unit
+    def request(resourceId: String, hash: js.Any, callback: js.Function): Unit
+    def request(resourceId: String, hash: Unit, callback: js.Function): Unit
     /***
       * Request a resource.
       * settings: A set of key/value pairs of settings for the request.
@@ -355,18 +337,18 @@ object mod extends Shortcut {
       *   success (optional): Function to invoke on success.
       *   error (optional): Function to invoke on error.
       */
-    def request(settings: RequestSettings): js.Any = js.native
+    def request(settings: RequestSettings): js.Any
     @JSName("request")
-    var request_Original: Request = js.native
+    var request_Original: Request
     
     /***
       * Gets a hash of all stored values.
       */
-    def store(): js.Any = js.native
+    def store(): js.Any
     /***
       * Gets a stored value based on the key.
       */
-    def store(key: String): js.Any = js.native
+    def store(key: String): js.Any
     /***
       * Stores a value for a given key using the default storage type.
       *
@@ -374,10 +356,10 @@ object mod extends Shortcut {
       * value: The value to store. The value can be anything that can be serialized as JSON.
       * [options]: A set of key/value pairs that relate to settings for storing the value.
       */
-    def store(key: String, value: js.Any): Unit = js.native
-    def store(key: String, value: js.Any, options: js.Any): Unit = js.native
+    def store(key: String, value: js.Any): Unit
+    def store(key: String, value: js.Any, options: js.Any): Unit
     @JSName("store")
-    var store_Original: Store = js.native
+    var store_Original: Store
     
     /***
       * Subscribe to a message.
@@ -385,8 +367,8 @@ object mod extends Shortcut {
       * callback: Function to invoke when the message is published.
       * [priority]: Priority relative to other subscriptions for the same message. Lower values have higher priority. Default is 10.
       */
-    def subscribe(topic: String, callback: js.Function): Unit = js.native
-    def subscribe(topic: String, callback: js.Function, priority: Double): Unit = js.native
+    def subscribe(topic: String, callback: js.Function): Unit
+    def subscribe(topic: String, callback: js.Function, priority: Double): Unit
     /***
       * Subscribe to a message.
       * topic: Name of the message to subscribe to.
@@ -394,17 +376,50 @@ object mod extends Shortcut {
       * callback: Function to invoke when the message is published.
       * [priority]: Priority relative to other subscriptions for the same message. Lower values have higher priority. Default is 10.
       */
-    def subscribe(topic: String, context: js.Any, callback: js.Function): Unit = js.native
-    def subscribe(topic: String, context: js.Any, callback: js.Function, priority: Double): Unit = js.native
+    def subscribe(topic: String, context: js.Any, callback: js.Function): Unit
+    def subscribe(topic: String, context: js.Any, callback: js.Function, priority: Double): Unit
     @JSName("subscribe")
-    var subscribe_Original: Subscribe = js.native
+    var subscribe_Original: Subscribe
     
     /***
       * Remove a subscription.
       * topic: The topic being unsubscribed from.
       * callback: The callback that was originally subscribed.
       */
-    def unsubscribe(topic: String, callback: js.Function): Unit = js.native
+    def unsubscribe(topic: String, callback: js.Function): Unit
+  }
+  object Static {
+    
+    @scala.inline
+    def apply(
+      publish: (String, /* repeated */ js.Any) => Boolean,
+      request: Request,
+      store: Store,
+      subscribe: Subscribe,
+      unsubscribe: (String, js.Function) => Unit
+    ): Static = {
+      val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish), request = request.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], subscribe = subscribe.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction2(unsubscribe))
+      __obj.asInstanceOf[Static]
+    }
+    
+    @scala.inline
+    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setPublish(value: (String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSubscribe(value: Subscribe): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUnsubscribe(value: (String, js.Function) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+    }
   }
   
   @js.native
@@ -430,7 +445,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Store extends StorageTypeStore {
+  trait Store
+    extends StObject
+       with StorageTypeStore {
     
     /***
       * Gets a hash of all stored values.

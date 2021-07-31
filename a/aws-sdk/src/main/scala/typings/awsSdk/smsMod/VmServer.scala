@@ -2,36 +2,34 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VmServer extends StObject {
   
   /**
     * The name of the VM manager.
     */
-  var vmManagerName: js.UndefOr[VmManagerName] = js.native
+  var vmManagerName: js.UndefOr[VmManagerName] = js.undefined
   
   /**
     * The type of VM management product.
     */
-  var vmManagerType: js.UndefOr[VmManagerType] = js.native
+  var vmManagerType: js.UndefOr[VmManagerType] = js.undefined
   
   /**
     * The name of the VM.
     */
-  var vmName: js.UndefOr[VmName] = js.native
+  var vmName: js.UndefOr[VmName] = js.undefined
   
   /**
     * The VM folder path in the vCenter Server virtual machine inventory tree.
     */
-  var vmPath: js.UndefOr[VmPath] = js.native
+  var vmPath: js.UndefOr[VmPath] = js.undefined
   
   /**
     * The VM server location.
     */
-  var vmServerAddress: js.UndefOr[VmServerAddress] = js.native
+  var vmServerAddress: js.UndefOr[VmServerAddress] = js.undefined
 }
 object VmServer {
   

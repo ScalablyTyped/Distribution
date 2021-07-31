@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access charts via name and to insert and remove charts.
   * @see com.sun.star.table.TableCharts
   */
-@js.native
-trait XTableCharts extends XNameAccess {
+trait XTableCharts
+  extends StObject
+     with XNameAccess {
   
   /**
     * creates a chart and adds it to the collection.
@@ -31,13 +31,13 @@ trait XTableCharts extends XNameAccess {
     aRanges: SeqEquiv[CellRangeAddress],
     bColumnHeaders: Boolean,
     bRowHeaders: Boolean
-  ): Unit = js.native
+  ): Unit
   
   /**
     * removes a chart from the collection.
     * @param aName is the name of the chart to remove.
     */
-  def removeByName(aName: String): Unit = js.native
+  def removeByName(aName: String): Unit
 }
 object XTableCharts {
   

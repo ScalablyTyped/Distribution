@@ -2,36 +2,34 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScalingPlansRequest extends StObject {
   
   /**
     * The sources for the applications (up to 10). If you specify scaling plan names, you cannot specify application sources.
     */
-  var ApplicationSources: js.UndefOr[typings.awsSdk.autoscalingplansMod.ApplicationSources] = js.native
+  var ApplicationSources: js.UndefOr[typings.awsSdk.autoscalingplansMod.ApplicationSources] = js.undefined
   
   /**
     * The maximum number of scalable resources to return. This value can be between 1 and 50. The default value is 50.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.autoscalingplansMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.autoscalingplansMod.MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.autoscalingplansMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.autoscalingplansMod.NextToken] = js.undefined
   
   /**
     * The names of the scaling plans (up to 10). If you specify application sources, you cannot specify scaling plan names.
     */
-  var ScalingPlanNames: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanNames] = js.native
+  var ScalingPlanNames: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanNames] = js.undefined
   
   /**
     * The version number of the scaling plan. If you specify a scaling plan version, you must also specify a scaling plan name.
     */
-  var ScalingPlanVersion: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanVersion] = js.native
+  var ScalingPlanVersion: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanVersion] = js.undefined
 }
 object DescribeScalingPlansRequest {
   

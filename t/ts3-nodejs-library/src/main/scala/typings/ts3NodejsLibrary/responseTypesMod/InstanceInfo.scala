@@ -3,39 +3,39 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InstanceInfo extends ResponseEntry {
+trait InstanceInfo
+  extends StObject
+     with ResponseEntry {
   
-  var serverinstanceDatabaseVersion: Double = js.native
+  var serverinstanceDatabaseVersion: Double
   
-  var serverinstanceFiletransferPort: Double = js.native
+  var serverinstanceFiletransferPort: Double
   
-  var serverinstanceGuestServerqueryGroup: Double = js.native
+  var serverinstanceGuestServerqueryGroup: Double
   
-  var serverinstanceMaxDownloadTotalBandwidth: Double = js.native
+  var serverinstanceMaxDownloadTotalBandwidth: Double
   
-  var serverinstanceMaxUploadTotalBandwidth: Double = js.native
+  var serverinstanceMaxUploadTotalBandwidth: Double
   
-  var serverinstancePendingConnectionsPerIp: Double = js.native
+  var serverinstancePendingConnectionsPerIp: Double
   
-  var serverinstancePermissionsVersion: Double = js.native
+  var serverinstancePermissionsVersion: Double
   
-  var serverinstanceServerqueryFloodBanTime: Double = js.native
+  var serverinstanceServerqueryFloodBanTime: Double
   
-  var serverinstanceServerqueryFloodCommands: Double = js.native
+  var serverinstanceServerqueryFloodCommands: Double
   
-  var serverinstanceServerqueryMaxConnectionsPerIp: Double = js.native
+  var serverinstanceServerqueryMaxConnectionsPerIp: Double
   
-  var serverinstanceTemplateChanneladminGroup: String = js.native
+  var serverinstanceTemplateChanneladminGroup: String
   
-  var serverinstanceTemplateChanneldefaultGroup: String = js.native
+  var serverinstanceTemplateChanneldefaultGroup: String
   
-  var serverinstanceTemplateServeradminGroup: Double = js.native
+  var serverinstanceTemplateServeradminGroup: Double
   
-  var serverinstanceTemplateServerdefaultGroup: String = js.native
+  var serverinstanceTemplateServerdefaultGroup: String
 }
 object InstanceInfo {
   

@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,7 @@ trait LoaderResource extends StObject {
   
   var error: Error = js.native
   
-  var extension: String = js.native
+  var `extension`: String = js.native
   
   var isComplete: Boolean = js.native
   
@@ -78,19 +77,27 @@ object LoaderResource {
     
     /** Uses an `Audio` object to load the resource. */
     @js.native
-    sealed trait AUDIO extends LOAD_TYPE
+    sealed trait AUDIO
+      extends StObject
+         with LOAD_TYPE
     
     /** Uses an `Image` object to load the resource. */
     @js.native
-    sealed trait IMAGE extends LOAD_TYPE
+    sealed trait IMAGE
+      extends StObject
+         with LOAD_TYPE
     
     /** Uses a `Video` object to load the resource. */
     @js.native
-    sealed trait VIDEO extends LOAD_TYPE
+    sealed trait VIDEO
+      extends StObject
+         with LOAD_TYPE
     
     /** Uses XMLHttpRequest to load the resource. */
     @js.native
-    sealed trait XHR extends LOAD_TYPE
+    sealed trait XHR
+      extends StObject
+         with LOAD_TYPE
   }
   
   @js.native
@@ -100,16 +107,24 @@ object LoaderResource {
   object STATUS_FLAGS extends StObject {
     
     @js.native
-    sealed trait COMPLETE extends STATUS_FLAGS
+    sealed trait COMPLETE
+      extends StObject
+         with STATUS_FLAGS
     
     @js.native
-    sealed trait DATA_URL extends STATUS_FLAGS
+    sealed trait DATA_URL
+      extends StObject
+         with STATUS_FLAGS
     
     @js.native
-    sealed trait LOADING extends STATUS_FLAGS
+    sealed trait LOADING
+      extends StObject
+         with STATUS_FLAGS
     
     @js.native
-    sealed trait NONE extends STATUS_FLAGS
+    sealed trait NONE
+      extends StObject
+         with STATUS_FLAGS
   }
   
   @js.native
@@ -119,25 +134,39 @@ object LoaderResource {
   object TYPE extends StObject {
     
     @js.native
-    sealed trait AUDIO extends TYPE
+    sealed trait AUDIO
+      extends StObject
+         with TYPE
     
     @js.native
-    sealed trait IMAGE extends TYPE
+    sealed trait IMAGE
+      extends StObject
+         with TYPE
     
     @js.native
-    sealed trait JSON extends TYPE
+    sealed trait JSON
+      extends StObject
+         with TYPE
     
     @js.native
-    sealed trait TEXT extends TYPE
+    sealed trait TEXT
+      extends StObject
+         with TYPE
     
     @js.native
-    sealed trait UNKNOWN extends TYPE
+    sealed trait UNKNOWN
+      extends StObject
+         with TYPE
     
     @js.native
-    sealed trait VIDEO extends TYPE
+    sealed trait VIDEO
+      extends StObject
+         with TYPE
     
     @js.native
-    sealed trait XML extends TYPE
+    sealed trait XML
+      extends StObject
+         with TYPE
   }
   
   @js.native
@@ -148,26 +177,38 @@ object LoaderResource {
     
     /** Blob */
     @js.native
-    sealed trait BLOB extends XHR_RESPONSE_TYPE
+    sealed trait BLOB
+      extends StObject
+         with XHR_RESPONSE_TYPE
     
     /** ArrayBuffer */
     @js.native
-    sealed trait BUFFER extends XHR_RESPONSE_TYPE
+    sealed trait BUFFER
+      extends StObject
+         with XHR_RESPONSE_TYPE
     
     /** string */
     @js.native
-    sealed trait DEFAULT extends XHR_RESPONSE_TYPE
+    sealed trait DEFAULT
+      extends StObject
+         with XHR_RESPONSE_TYPE
     
     /** Document */
     @js.native
-    sealed trait DOCUMENT extends XHR_RESPONSE_TYPE
+    sealed trait DOCUMENT
+      extends StObject
+         with XHR_RESPONSE_TYPE
     
     /** Object */
     @js.native
-    sealed trait JSON extends XHR_RESPONSE_TYPE
+    sealed trait JSON
+      extends StObject
+         with XHR_RESPONSE_TYPE
     
     /** String */
     @js.native
-    sealed trait TEXT extends XHR_RESPONSE_TYPE
+    sealed trait TEXT
+      extends StObject
+         with XHR_RESPONSE_TYPE
   }
 }

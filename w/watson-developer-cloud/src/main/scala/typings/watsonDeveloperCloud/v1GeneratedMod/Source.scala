@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing source parameters for the configuration. */
-@js.native
 trait Source extends StObject {
   
   /** The **credential_id** of the credentials to use to connect to the source. Credentials are defined using the **credentials** method. The **source_type** of the credentials used must match the **type** field specified in this object. */
-  var credential_id: js.UndefOr[String] = js.native
+  var credential_id: js.UndefOr[String] = js.undefined
   
   /** The **options** object defines which items to crawl from the source system. */
-  var options: js.UndefOr[SourceOptions] = js.native
+  var options: js.UndefOr[SourceOptions] = js.undefined
   
   /** Object containing the schedule information for the source. */
-  var schedule: js.UndefOr[SourceSchedule] = js.native
+  var schedule: js.UndefOr[SourceSchedule] = js.undefined
   
   /** The type of source to connect to. -  `box` indicates the configuration is to connect an instance of Enterprise Box. -  `salesforce` indicates the configuration is to connect to Salesforce. -  `sharepoint` indicates the configuration is to connect to Microsoft SharePoint Online. -  `web_crawl` indicates the configuration is to perform a web page crawl. -  `cloud_object_storage` indicates the configuration is to connect to a cloud object store. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Source {
   

@@ -9,7 +9,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.semanticUiReactStrings.centered
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderLoaderMod extends Shortcut {
@@ -18,9 +17,9 @@ object loaderLoaderMod extends Shortcut {
   @js.native
   val default: StatelessComponent[LoaderProps] = js.native
   
-  @js.native
   trait LoaderProps
-    extends StrictLoaderProps
+    extends StObject
+       with StrictLoaderProps
        with /* key */ StringDictionary[js.Any]
   object LoaderProps {
     
@@ -31,38 +30,37 @@ object loaderLoaderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictLoaderProps extends StObject {
     
     /** A loader can be active or visible. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A loader can be disabled or hidden. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A loader can show it's unsure of how long a task will take. */
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
     /** Loaders can appear inline with content. */
-    var `inline`: js.UndefOr[Boolean | centered] = js.native
+    var `inline`: js.UndefOr[Boolean | centered] = js.undefined
     
     /** Loaders can have their colors inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Loaders can have different sizes. */
-    var size: js.UndefOr[SemanticSIZES] = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.undefined
   }
   object StrictLoaderProps {
     

@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rating extends Widget_ {
+trait Rating
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -55,39 +56,44 @@ object Rating {
     
     ///string
     @js.native
-    sealed trait Exact extends Precision
+    sealed trait Exact
+      extends StObject
+         with Precision
     
     ///string
     @js.native
-    sealed trait Full extends Precision
+    sealed trait Full
+      extends StObject
+         with Precision
     
     ///string
     @js.native
-    sealed trait Half extends Precision
+    sealed trait Half
+      extends StObject
+         with Precision
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -132,28 +138,27 @@ object Rating {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ClickEventArgs {
     
@@ -198,20 +203,19 @@ object Rating {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -244,20 +248,19 @@ object Rating {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -290,120 +293,119 @@ object Rating {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Enables the rating control with reset button.It can be used to reset the rating control value.
       * @Default {true}
       */
-    var allowReset: js.UndefOr[Boolean] = js.native
+    var allowReset: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when Rating value changes.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Fires when Rating control is clicked successfully.
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Fires when Rating control is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class to achieve custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when Rating control is destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the rating control.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the Rating control wrapper.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to rating control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the value to be increased while navigating between shapes(stars) in Rating control.
       * @Default {1}
       */
-    var incrementStep: js.UndefOr[Double] = js.native
+    var incrementStep: js.UndefOr[Double] = js.undefined
     
     /** Allow to render the maximum number of Rating shape(star).
       * @Default {5}
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Allow to render the minimum number of Rating shape(star).
       * @Default {0}
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /** Fires when mouse move is moving the Rating control.
       */
-    var mousemove: js.UndefOr[js.Function1[/* e */ MousemoveEventArgs, Unit]] = js.native
+    var mousemove: js.UndefOr[js.Function1[/* e */ MousemoveEventArgs, Unit]] = js.undefined
     
     /** Fires when mouse hover is removed from Rating control.
       */
-    var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.native
+    var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.undefined
     
     /** Fires when mouse hovered over the Rating control.
       */
-    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
+    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Specifies the orientation of Rating control. See Orientation
       * @Default {ej.Rating.Orientation.Horizontal}
       */
-    var orientation: js.UndefOr[Orientation | String] = js.native
+    var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See Precision
       * @Default {full}
       */
-    var precision: js.UndefOr[Precision | String] = js.native
+    var precision: js.UndefOr[Precision | String] = js.undefined
     
     /** Interaction with Rating control can be prevented by enabling this API.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** To specify the height of each shape in Rating control.
       * @Default {23}
       */
-    var shapeHeight: js.UndefOr[Double] = js.native
+    var shapeHeight: js.UndefOr[Double] = js.undefined
     
     /** To specify the width of each shape in Rating control.
       * @Default {23}
       */
-    var shapeWidth: js.UndefOr[Double] = js.native
+    var shapeWidth: js.UndefOr[Double] = js.undefined
     
     /** Enables the tooltip option.Currently selected value will be displayed in tooltip.
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** To specify the number of stars to be selected while rendering.
       * @Default {1}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the Rating control wrapper.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -562,28 +564,27 @@ object Rating {
     }
   }
   
-  @js.native
   trait MousemoveEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MousemoveEventArgs {
     
@@ -628,28 +629,27 @@ object Rating {
     }
   }
   
-  @js.native
   trait MouseoutEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseoutEventArgs {
     
@@ -694,32 +694,31 @@ object Rating {
     }
   }
   
-  @js.native
   trait MouseoverEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current index value.
       */
-    var index: js.UndefOr[js.Any] = js.native
+    var index: js.UndefOr[js.Any] = js.undefined
     
     /** returns the rating model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseoverEventArgs {
     

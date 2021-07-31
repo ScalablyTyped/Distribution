@@ -2,17 +2,15 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MathZoom extends StObject {
   
   /*This is a list of CSS declarations for styling the zoomed mathematics. See the definitions in
     * extensions/MathZoom.js for details of what are defined by default. See CSS Style Objects for details on how
     * to specify CSS style in a JavaScript object.
     */
-  var styles: js.Any = js.native
+  var styles: js.Any
 }
 object MathZoom {
   

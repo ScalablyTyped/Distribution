@@ -10,14 +10,15 @@ import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cockroachdbCockroachDriverMod {
   
   @JSImport("typeorm/driver/cockroachdb/CockroachDriver", "CockroachDriver")
   @js.native
-  class CockroachDriver protected () extends Driver {
+  class CockroachDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /**
@@ -45,7 +46,7 @@ object cockroachdbCockroachDriverMod {
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createPool(options: CockroachConnectionOptions, credentials: CockroachConnectionCredentialsOptions): js.Promise[_] = js.native
+    /* protected */ def createPool(options: CockroachConnectionOptions, credentials: CockroachConnectionCredentialsOptions): js.Promise[js.Any] = js.native
     
     /**
       * If driver dependency is not given explicitly, then try to load it via "require".
@@ -84,6 +85,6 @@ object cockroachdbCockroachDriverMod {
       * Pool for slave databases.
       * Used in replication.
       */
-    var slaves: js.Array[_] = js.native
+    var slaves: js.Array[js.Any] = js.native
   }
 }

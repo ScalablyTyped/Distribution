@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketInventoryConfigurationRequest extends StObject {
   
   /**
     * The name of the bucket where the inventory configuration will be stored.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The ID used to identify the inventory configuration.
     */
-  var Id: InventoryId = js.native
+  var Id: InventoryId
   
   /**
     * Specifies the inventory configuration.
     */
-  var InventoryConfiguration: typings.awsSdk.s3Mod.InventoryConfiguration = js.native
+  var InventoryConfiguration: typings.awsSdk.s3Mod.InventoryConfiguration
 }
 object PutBucketInventoryConfigurationRequest {
   

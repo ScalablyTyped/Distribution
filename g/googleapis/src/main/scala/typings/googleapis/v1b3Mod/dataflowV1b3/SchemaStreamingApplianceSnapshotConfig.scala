@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Streaming appliance snapshot configuration.
   */
-@js.native
 trait SchemaStreamingApplianceSnapshotConfig extends StObject {
   
   /**
     * Indicates which endpoint is used to import appliance state.
     */
-  var importStateEndpoint: js.UndefOr[String] = js.native
+  var importStateEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * If set, indicates the snapshot id for the snapshot being performed.
     */
-  var snapshotId: js.UndefOr[String] = js.native
+  var snapshotId: js.UndefOr[String] = js.undefined
 }
 object SchemaStreamingApplianceSnapshotConfig {
   

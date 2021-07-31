@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,7 +54,7 @@ trait MediaConnect extends Service {
   ): Request[AddFlowVpcInterfacesResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_MediaConnect: ConfigBase with ClientConfiguration = js.native
+  var config_MediaConnect: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 50) and entitlements (up to 50).

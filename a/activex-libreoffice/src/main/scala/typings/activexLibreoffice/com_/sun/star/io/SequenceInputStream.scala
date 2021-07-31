@@ -4,15 +4,15 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service allows to wrap a sequence of bytes with a stream object. */
-@js.native
-trait SequenceInputStream extends XSeekableInputStream {
+trait SequenceInputStream
+  extends StObject
+     with XSeekableInputStream {
   
   /** allows to create a stream based on the sequence. */
-  def createStreamFromSequence(aData: SeqEquiv[Double]): Unit = js.native
+  def createStreamFromSequence(aData: SeqEquiv[Double]): Unit
 }
 object SequenceInputStream {
   

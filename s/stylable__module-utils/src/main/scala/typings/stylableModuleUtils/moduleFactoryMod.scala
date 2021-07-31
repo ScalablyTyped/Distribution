@@ -6,33 +6,33 @@ import typings.stylableModuleUtils.stylableModuleUtilsStrings.module
 import typings.stylableModuleUtils.stylableModuleUtilsStrings.namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleFactoryMod {
   
-  @JSImport("@stylable/module-utils/cjs/module-factory", "stylableModuleFactory")
+  @JSImport("@stylable/module-utils/cjs/module-factory", JSImport.Namespace)
   @js.native
-  def stylableModuleFactory(stylableOptions: StylableConfig): js.Function2[/* source */ String, /* path */ String, String] = js.native
-  @JSImport("@stylable/module-utils/cjs/module-factory", "stylableModuleFactory")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def stylableModuleFactory(stylableOptions: StylableConfig): js.Function2[/* source */ String, /* path */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stylableModuleFactory")(stylableOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
+  @scala.inline
   def stylableModuleFactory(
     stylableOptions: StylableConfig,
     hasRuntimePathRuntimeStylesheetIdInjectCSSRenderableOnlyStaticImports: PartialOptions
-  ): js.Function2[/* source */ String, /* path */ String, String] = js.native
+  ): js.Function2[/* source */ String, /* path */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stylableModuleFactory")(stylableOptions.asInstanceOf[js.Any], hasRuntimePathRuntimeStylesheetIdInjectCSSRenderableOnlyStaticImports.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
   
-  @js.native
   trait Options extends StObject {
     
-    var injectCSS: Boolean = js.native
+    var injectCSS: Boolean
     
-    var renderableOnly: Boolean = js.native
+    var renderableOnly: Boolean
     
-    var runtimePath: String = js.native
+    var runtimePath: String
     
-    var runtimeStylesheetId: module | namespace = js.native
+    var runtimeStylesheetId: module | namespace
     
-    var staticImports: js.Array[String] = js.native
+    var staticImports: js.Array[String]
   }
   object Options {
     

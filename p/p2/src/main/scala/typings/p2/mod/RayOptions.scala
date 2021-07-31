@@ -2,27 +2,25 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RayOptions extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* result */ RaycastResult, Unit]] = js.native
+  var callback: js.UndefOr[js.Function1[/* result */ RaycastResult, Unit]] = js.undefined
   
-  var checkCollisionResponse: js.UndefOr[Boolean] = js.native
+  var checkCollisionResponse: js.UndefOr[Boolean] = js.undefined
   
-  var collisionGroup: js.UndefOr[Double] = js.native
+  var collisionGroup: js.UndefOr[Double] = js.undefined
   
-  var collisionMask: js.UndefOr[Double] = js.native
+  var collisionMask: js.UndefOr[Double] = js.undefined
   
-  var from: js.Tuple2[Double, Double] = js.native
+  var from: js.Tuple2[Double, Double]
   
-  var mode: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[Double] = js.undefined
   
-  var skipBackfaces: js.UndefOr[Boolean] = js.native
+  var skipBackfaces: js.UndefOr[Boolean] = js.undefined
   
-  var to: js.Tuple2[Double, Double] = js.native
+  var to: js.Tuple2[Double, Double]
 }
 object RayOptions {
   

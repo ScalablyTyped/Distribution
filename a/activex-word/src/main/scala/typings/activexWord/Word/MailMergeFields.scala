@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,258 +10,30 @@ trait MailMergeFields extends StObject {
   def Add(Range: Range, Name: String): MailMergeField = js.native
   
   def AddAsk(Range: Range, Name: String): MailMergeField = js.native
-  def AddAsk(
-    Range: Range,
-    Name: String,
-    Prompt: js.UndefOr[scala.Nothing],
-    DefaultAskText: js.UndefOr[scala.Nothing],
-    AskOnce: js.Any
-  ): MailMergeField = js.native
-  def AddAsk(Range: Range, Name: String, Prompt: js.UndefOr[scala.Nothing], DefaultAskText: js.Any): MailMergeField = js.native
-  def AddAsk(
-    Range: Range,
-    Name: String,
-    Prompt: js.UndefOr[scala.Nothing],
-    DefaultAskText: js.Any,
-    AskOnce: js.Any
-  ): MailMergeField = js.native
   def AddAsk(Range: Range, Name: String, Prompt: js.Any): MailMergeField = js.native
-  def AddAsk(
-    Range: Range,
-    Name: String,
-    Prompt: js.Any,
-    DefaultAskText: js.UndefOr[scala.Nothing],
-    AskOnce: js.Any
-  ): MailMergeField = js.native
   def AddAsk(Range: Range, Name: String, Prompt: js.Any, DefaultAskText: js.Any): MailMergeField = js.native
   def AddAsk(Range: Range, Name: String, Prompt: js.Any, DefaultAskText: js.Any, AskOnce: js.Any): MailMergeField = js.native
+  def AddAsk(Range: Range, Name: String, Prompt: js.Any, DefaultAskText: Unit, AskOnce: js.Any): MailMergeField = js.native
+  def AddAsk(Range: Range, Name: String, Prompt: Unit, DefaultAskText: js.Any): MailMergeField = js.native
+  def AddAsk(Range: Range, Name: String, Prompt: Unit, DefaultAskText: js.Any, AskOnce: js.Any): MailMergeField = js.native
+  def AddAsk(Range: Range, Name: String, Prompt: Unit, DefaultAskText: Unit, AskOnce: js.Any): MailMergeField = js.native
   
   def AddFillIn(Range: Range): MailMergeField = js.native
-  def AddFillIn(
-    Range: Range,
-    Prompt: js.UndefOr[scala.Nothing],
-    DefaultFillInText: js.UndefOr[scala.Nothing],
-    AskOnce: js.Any
-  ): MailMergeField = js.native
-  def AddFillIn(Range: Range, Prompt: js.UndefOr[scala.Nothing], DefaultFillInText: js.Any): MailMergeField = js.native
-  def AddFillIn(Range: Range, Prompt: js.UndefOr[scala.Nothing], DefaultFillInText: js.Any, AskOnce: js.Any): MailMergeField = js.native
   def AddFillIn(Range: Range, Prompt: js.Any): MailMergeField = js.native
-  def AddFillIn(Range: Range, Prompt: js.Any, DefaultFillInText: js.UndefOr[scala.Nothing], AskOnce: js.Any): MailMergeField = js.native
   def AddFillIn(Range: Range, Prompt: js.Any, DefaultFillInText: js.Any): MailMergeField = js.native
   def AddFillIn(Range: Range, Prompt: js.Any, DefaultFillInText: js.Any, AskOnce: js.Any): MailMergeField = js.native
+  def AddFillIn(Range: Range, Prompt: js.Any, DefaultFillInText: Unit, AskOnce: js.Any): MailMergeField = js.native
+  def AddFillIn(Range: Range, Prompt: Unit, DefaultFillInText: js.Any): MailMergeField = js.native
+  def AddFillIn(Range: Range, Prompt: Unit, DefaultFillInText: js.Any, AskOnce: js.Any): MailMergeField = js.native
+  def AddFillIn(Range: Range, Prompt: Unit, DefaultFillInText: Unit, AskOnce: js.Any): MailMergeField = js.native
   
   def AddIf(Range: Range, MergeField: String, Comparison: WdMailMergeComparison): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any,
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any,
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any,
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.Any,
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.Any,
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.UndefOr[scala.Nothing],
-    TrueAutoText: js.Any,
-    TrueText: js.Any,
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
   def AddIf(Range: Range, MergeField: String, Comparison: WdMailMergeComparison, CompareTo: js.Any): MailMergeField = js.native
   def AddIf(
     Range: Range,
     MergeField: String,
     Comparison: WdMailMergeComparison,
     CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any,
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any,
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.UndefOr[scala.Nothing],
-    TrueText: js.Any,
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
     TrueAutoText: js.Any
   ): MailMergeField = js.native
   def AddIf(
@@ -271,35 +42,6 @@ trait MailMergeFields extends StObject {
     Comparison: WdMailMergeComparison,
     CompareTo: js.Any,
     TrueAutoText: js.Any,
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.Any,
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.Any,
-    TrueText: js.UndefOr[scala.Nothing],
-    FalseAutoText: js.Any,
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.Any,
     TrueText: js.Any
   ): MailMergeField = js.native
   def AddIf(
@@ -309,16 +51,6 @@ trait MailMergeFields extends StObject {
     CompareTo: js.Any,
     TrueAutoText: js.Any,
     TrueText: js.Any,
-    FalseAutoText: js.UndefOr[scala.Nothing],
-    FalseText: js.Any
-  ): MailMergeField = js.native
-  def AddIf(
-    Range: Range,
-    MergeField: String,
-    Comparison: WdMailMergeComparison,
-    CompareTo: js.Any,
-    TrueAutoText: js.Any,
-    TrueText: js.Any,
     FalseAutoText: js.Any
   ): MailMergeField = js.native
   def AddIf(
@@ -329,6 +61,250 @@ trait MailMergeFields extends StObject {
     TrueAutoText: js.Any,
     TrueText: js.Any,
     FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: js.Any,
+    TrueText: js.Any,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: js.Any,
+    TrueText: Unit,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: js.Any,
+    TrueText: Unit,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: js.Any,
+    TrueText: Unit,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: js.Any,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: js.Any,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: js.Any,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: Unit,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: Unit,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: js.Any,
+    TrueAutoText: Unit,
+    TrueText: Unit,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: js.Any,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: js.Any,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: js.Any,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: Unit,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: Unit,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: js.Any,
+    TrueText: Unit,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: js.Any,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: js.Any,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: js.Any,
+    FalseAutoText: Unit,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: Unit,
+    FalseAutoText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: Unit,
+    FalseAutoText: js.Any,
+    FalseText: js.Any
+  ): MailMergeField = js.native
+  def AddIf(
+    Range: Range,
+    MergeField: String,
+    Comparison: WdMailMergeComparison,
+    CompareTo: Unit,
+    TrueAutoText: Unit,
+    TrueText: Unit,
+    FalseAutoText: Unit,
     FalseText: js.Any
   ): MailMergeField = js.native
   
@@ -342,9 +318,9 @@ trait MailMergeFields extends StObject {
   def AddNextIf(Range: Range, MergeField: String, Comparison: WdMailMergeComparison, CompareTo: js.Any): MailMergeField = js.native
   
   def AddSet(Range: Range, Name: String): MailMergeField = js.native
-  def AddSet(Range: Range, Name: String, ValueText: js.UndefOr[scala.Nothing], ValueAutoText: js.Any): MailMergeField = js.native
   def AddSet(Range: Range, Name: String, ValueText: js.Any): MailMergeField = js.native
   def AddSet(Range: Range, Name: String, ValueText: js.Any, ValueAutoText: js.Any): MailMergeField = js.native
+  def AddSet(Range: Range, Name: String, ValueText: Unit, ValueAutoText: js.Any): MailMergeField = js.native
   
   def AddSkipIf(Range: Range, MergeField: String, Comparison: WdMailMergeComparison): MailMergeField = js.native
   def AddSkipIf(Range: Range, MergeField: String, Comparison: WdMailMergeComparison, CompareTo: js.Any): MailMergeField = js.native

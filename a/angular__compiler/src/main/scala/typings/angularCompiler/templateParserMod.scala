@@ -23,10 +23,13 @@ import typings.angularCompiler.templateAstMod.TemplateAst
 import typings.angularCompiler.templateAstMod.TemplateAstVisitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateParserMod {
+  
+  @JSImport("@angular/compiler/src/template_parser/template_parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/template_parser/template_parser", "TemplateParseError")
   @js.native
@@ -38,28 +41,16 @@ object templateParserMod {
   @js.native
   class TemplateParseResult () extends StObject {
     def this(templateAst: js.Array[TemplateAst]) = this()
-    def this(templateAst: js.UndefOr[scala.Nothing], usedPipes: js.Array[CompilePipeSummary]) = this()
     def this(templateAst: js.Array[TemplateAst], usedPipes: js.Array[CompilePipeSummary]) = this()
-    def this(
-      templateAst: js.UndefOr[scala.Nothing],
-      usedPipes: js.UndefOr[scala.Nothing],
-      errors: js.Array[ParseError]
-    ) = this()
-    def this(
-      templateAst: js.UndefOr[scala.Nothing],
-      usedPipes: js.Array[CompilePipeSummary],
-      errors: js.Array[ParseError]
-    ) = this()
-    def this(
-      templateAst: js.Array[TemplateAst],
-      usedPipes: js.UndefOr[scala.Nothing],
-      errors: js.Array[ParseError]
-    ) = this()
+    def this(templateAst: Unit, usedPipes: js.Array[CompilePipeSummary]) = this()
     def this(
       templateAst: js.Array[TemplateAst],
       usedPipes: js.Array[CompilePipeSummary],
       errors: js.Array[ParseError]
     ) = this()
+    def this(templateAst: js.Array[TemplateAst], usedPipes: Unit, errors: js.Array[ParseError]) = this()
+    def this(templateAst: Unit, usedPipes: js.Array[CompilePipeSummary], errors: js.Array[ParseError]) = this()
+    def this(templateAst: Unit, usedPipes: Unit, errors: js.Array[ParseError]) = this()
     
     var errors: js.UndefOr[js.Array[ParseError]] = js.native
     
@@ -158,19 +149,15 @@ object templateParserMod {
     ): TemplateParseResult = js.native
   }
   
-  @JSImport("@angular/compiler/src/template_parser/template_parser", "createElementCssSelector")
-  @js.native
-  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = js.native
+  @scala.inline
+  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementCssSelector")(elementName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[CssSelector]
   
-  @JSImport("@angular/compiler/src/template_parser/template_parser", "isEmptyExpression")
-  @js.native
-  def isEmptyExpression(ast: AST): Boolean = js.native
+  @scala.inline
+  def isEmptyExpression(ast: AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyExpression")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/template_parser/template_parser", "removeSummaryDuplicates")
-  @js.native
-  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSummaryDuplicates")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("@angular/compiler/src/template_parser/template_parser", "splitClasses")
-  @js.native
-  def splitClasses(classAttrValue: String): js.Array[String] = js.native
+  @scala.inline
+  def splitClasses(classAttrValue: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitClasses")(classAttrValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

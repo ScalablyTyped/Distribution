@@ -3,24 +3,23 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.`nth-last-child`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NthLastChild
-  extends NthSelectorAtom
+  extends StObject
+     with NthSelectorAtom
      with NthSelector
      with Selector {
   
   @JSName("type")
-  var type_NthLastChild: `nth-last-child` = js.native
+  var type_NthLastChild: `nth-last-child`
 }
 object NthLastChild {
   
   @scala.inline
-  def apply(index: NumericLiteral, `type`: `nth-last-child`): NthLastChild = {
+  def apply(index: NumericLiteral): NthLastChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nth-last-child")
     __obj.asInstanceOf[NthLastChild]
   }
   

@@ -2,22 +2,20 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Preserve whitespace when true. Default: false;
     */
-  var lossless: Boolean = js.native
+  var lossless: Boolean
   
   /**
     * When true and a postcss.Rule is passed, set the result of
     * processing back onto the rule when done. Default: false.
     */
-  var updateSelector: Boolean = js.native
+  var updateSelector: Boolean
 }
 object Options {
   

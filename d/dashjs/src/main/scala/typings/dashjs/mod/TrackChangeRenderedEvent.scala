@@ -6,32 +6,27 @@ import typings.dashjs.dashjsStrings.trackChangeRendered
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrackChangeRenderedEvent extends Event {
+trait TrackChangeRenderedEvent
+  extends StObject
+     with Event {
   
-  var mediaType: video | audio | fragmentedText = js.native
+  var mediaType: video | audio | fragmentedText
   
-  var newMediaInfo: MediaInfo = js.native
+  var newMediaInfo: MediaInfo
   
-  var oldMediaInfo: MediaInfo = js.native
+  var oldMediaInfo: MediaInfo
   
   @JSName("type")
-  var type_TrackChangeRenderedEvent: trackChangeRendered = js.native
+  var type_TrackChangeRenderedEvent: trackChangeRendered
 }
 object TrackChangeRenderedEvent {
   
   @scala.inline
-  def apply(
-    mediaType: video | audio | fragmentedText,
-    newMediaInfo: MediaInfo,
-    oldMediaInfo: MediaInfo,
-    `type`: trackChangeRendered
-  ): TrackChangeRenderedEvent = {
+  def apply(mediaType: video | audio | fragmentedText, newMediaInfo: MediaInfo, oldMediaInfo: MediaInfo): TrackChangeRenderedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], newMediaInfo = newMediaInfo.asInstanceOf[js.Any], oldMediaInfo = oldMediaInfo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("trackChangeRendered")
     __obj.asInstanceOf[TrackChangeRenderedEvent]
   }
   

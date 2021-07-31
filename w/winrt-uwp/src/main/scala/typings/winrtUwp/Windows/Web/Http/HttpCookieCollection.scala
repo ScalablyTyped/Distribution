@@ -6,12 +6,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpCookie
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a collection container for instances of the HttpCookie class. */
 @js.native
-trait HttpCookieCollection extends Array[HttpCookie] {
+trait HttpCookieCollection
+  extends StObject
+     with Array[HttpCookie] {
   
   /**
     * Retrieves an iterator to the first HttpCookie item in the HttpCookieCollection .

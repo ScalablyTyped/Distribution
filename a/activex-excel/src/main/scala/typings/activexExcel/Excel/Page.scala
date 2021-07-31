@@ -2,26 +2,24 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
-  val CenterFooter: HeaderFooter = js.native
+  val CenterFooter: HeaderFooter
   
-  val CenterHeader: HeaderFooter = js.native
+  val CenterHeader: HeaderFooter
   
   @JSName("Excel.Page_typekey")
-  var ExcelDotPage_typekey: Page = js.native
+  var ExcelDotPage_typekey: Page
   
-  val LeftFooter: HeaderFooter = js.native
+  val LeftFooter: HeaderFooter
   
-  val LeftHeader: HeaderFooter = js.native
+  val LeftHeader: HeaderFooter
   
-  val RightFooter: HeaderFooter = js.native
+  val RightFooter: HeaderFooter
   
-  val RightHeader: HeaderFooter = js.native
+  val RightHeader: HeaderFooter
 }
 object Page {
   

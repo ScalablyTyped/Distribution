@@ -11,8 +11,8 @@ Whether or not a given path is relative
 | Full name          | is-relative-path |
 | Keywords           | relative, path |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 8962669 |
+| # dependents       | 14 |
+| # downloads        | 11935621 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,12 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds new cells after the last row with data in a sheet, inserting new rows
   * into the sheet if necessary.
   */
-@js.native
 trait SchemaAppendCellsRequest extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait SchemaAppendCellsRequest extends StObject {
     * specified. A single `&quot;*&quot;` can be used as short-hand for listing
     * every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The data to append.
     */
-  var rows: js.UndefOr[js.Array[SchemaRowData]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaRowData]] = js.undefined
   
   /**
     * The sheet ID to append the data to.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaAppendCellsRequest {
   

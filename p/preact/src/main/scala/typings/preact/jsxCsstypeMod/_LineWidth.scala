@@ -2,11 +2,11 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _LineWidth[TLength]
-  extends _BorderBlockEndProperty[TLength]
+  extends StObject
+     with _BorderBlockEndProperty[TLength]
      with _BorderBlockEndWidthProperty[TLength]
      with _BorderBlockProperty[TLength]
      with _BorderBlockStartProperty[TLength]

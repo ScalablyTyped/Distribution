@@ -3,23 +3,21 @@ package typings.sharepoint.anon
 import typings.sharepoint.SP.JsGrid.IStyleType.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllSelected extends StObject {
   
-  var allSelected: Header = js.native
+  var allSelected: Header
   
-  var allSelectedHover: Header = js.native
+  var allSelectedHover: Header
   
-  var normal: Header = js.native
+  var normal: Header
   
-  var normalHover: Header = js.native
+  var normalHover: Header
   
-  var partSelected: Header = js.native
+  var partSelected: Header
   
-  var partSelectedHover: Header = js.native
+  var partSelectedHover: Header
 }
 object AllSelected {
   

@@ -4,12 +4,11 @@ import typings.node.NodeJS.TypedArray
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TlsOptions
-  extends SecureContextOptions
+  extends StObject
+     with SecureContextOptions
      with CommonConnectionOptions {
   
   /**
@@ -18,7 +17,7 @@ trait TlsOptions
     * the tls.Server object whenever a handshake times out. Default:
     * 120000 (120 seconds).
     */
-  var handshakeTimeout: js.UndefOr[Double] = js.native
+  var handshakeTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -41,7 +40,7 @@ trait TlsOptions
     */
   var pskCallback: js.UndefOr[
     js.Function2[/* socket */ TLSSocket, /* identity */ String, DataView | TypedArray | Null]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * hint to send to a client to help
@@ -49,7 +48,7 @@ trait TlsOptions
     * in TLS 1.3. Upon failing to set pskIdentityHint `tlsClientError` will be
     * emitted with `ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED` code.
     */
-  var pskIdentityHint: js.UndefOr[String] = js.native
+  var pskIdentityHint: js.UndefOr[String] = js.undefined
 }
 object TlsOptions {
   

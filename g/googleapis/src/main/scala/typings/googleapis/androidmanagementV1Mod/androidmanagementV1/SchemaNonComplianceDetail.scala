@@ -2,20 +2,18 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides detail about non-compliance with a policy setting.
   */
-@js.native
 trait SchemaNonComplianceDetail extends StObject {
   
   /**
     * If the policy setting could not be applied, the current value of the
     * setting on the device.
     */
-  var currentValue: js.UndefOr[js.Any] = js.native
+  var currentValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * For settings with nested fields, if a particular nested field is out of
@@ -28,31 +26,31 @@ trait SchemaNonComplianceDetail extends StObject {
     * field in the 3rd application, the path would be
     * applications[2].externalData.url
     */
-  var fieldPath: js.UndefOr[String] = js.native
+  var fieldPath: js.UndefOr[String] = js.undefined
   
   /**
     * If package_name is set and the non-compliance reason is APP_NOT_INSTALLED
     * or APP_NOT_UPDATED, the detailed reason the app can&#39;t be installed or
     * updated.
     */
-  var installationFailureReason: js.UndefOr[String] = js.native
+  var installationFailureReason: js.UndefOr[String] = js.undefined
   
   /**
     * The reason the device is not in compliance with the setting.
     */
-  var nonComplianceReason: js.UndefOr[String] = js.native
+  var nonComplianceReason: js.UndefOr[String] = js.undefined
   
   /**
     * The package name indicating which app is out of compliance, if
     * applicable.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the policy setting. This is the JSON field name of a
     * top-level Policy  field.
     */
-  var settingName: js.UndefOr[String] = js.native
+  var settingName: js.UndefOr[String] = js.undefined
 }
 object SchemaNonComplianceDetail {
   

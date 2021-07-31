@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrafficPolicyVersionResponse extends StObject {
   
   /**
     * A unique URL that represents a new traffic policy version.
     */
-  var Location: ResourceURI = js.native
+  var Location: ResourceURI
   
   /**
     * A complex type that contains settings for the new version of the traffic policy.
     */
-  var TrafficPolicy: typings.awsSdk.route53Mod.TrafficPolicy = js.native
+  var TrafficPolicy: typings.awsSdk.route53Mod.TrafficPolicy
 }
 object CreateTrafficPolicyVersionResponse {
   

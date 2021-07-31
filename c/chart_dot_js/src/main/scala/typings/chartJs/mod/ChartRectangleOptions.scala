@@ -2,19 +2,17 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartRectangleOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[ChartColor] = js.native
+  var backgroundColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderColor: js.UndefOr[ChartColor] = js.native
+  var borderColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderSkipped: js.UndefOr[String] = js.native
+  var borderSkipped: js.UndefOr[String] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
 }
 object ChartRectangleOptions {
   

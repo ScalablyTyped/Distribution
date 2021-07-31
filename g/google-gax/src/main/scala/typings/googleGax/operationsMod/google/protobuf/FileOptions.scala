@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a FileOptions. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FileOptions.
   * @param [properties] Properties to set
   */
-class FileOptions () extends IFileOptions {
+class FileOptions ()
+  extends StObject
+     with IFileOptions {
   def this(properties: IFileOptions) = this()
   
   /** FileOptions ccEnableArenas. */
@@ -113,6 +114,10 @@ class FileOptions () extends IFileOptions {
 }
 object FileOptions {
   
+  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait OptimizeMode extends StObject
   /** OptimizeMode enum. */
@@ -121,19 +126,25 @@ object FileOptions {
   object OptimizeMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OptimizeMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[OptimizeMode & Double] = js.native
     
     @js.native
-    sealed trait CODE_SIZE extends OptimizeMode
-    /* 2 */ val CODE_SIZE: typings.googleGax.operationsMod.google.protobuf.FileOptions.OptimizeMode.CODE_SIZE with Double = js.native
+    sealed trait CODE_SIZE
+      extends StObject
+         with OptimizeMode
+    /* 2 */ val CODE_SIZE: typings.googleGax.operationsMod.google.protobuf.FileOptions.OptimizeMode.CODE_SIZE & Double = js.native
     
     @js.native
-    sealed trait LITE_RUNTIME extends OptimizeMode
-    /* 3 */ val LITE_RUNTIME: typings.googleGax.operationsMod.google.protobuf.FileOptions.OptimizeMode.LITE_RUNTIME with Double = js.native
+    sealed trait LITE_RUNTIME
+      extends StObject
+         with OptimizeMode
+    /* 3 */ val LITE_RUNTIME: typings.googleGax.operationsMod.google.protobuf.FileOptions.OptimizeMode.LITE_RUNTIME & Double = js.native
     
     @js.native
-    sealed trait SPEED extends OptimizeMode
-    /* 1 */ val SPEED: typings.googleGax.operationsMod.google.protobuf.FileOptions.OptimizeMode.SPEED with Double = js.native
+    sealed trait SPEED
+      extends StObject
+         with OptimizeMode
+    /* 1 */ val SPEED: typings.googleGax.operationsMod.google.protobuf.FileOptions.OptimizeMode.SPEED & Double = js.native
   }
   
   /**
@@ -142,12 +153,10 @@ object FileOptions {
     * @returns FileOptions instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.create")
-  @js.native
-  def create(): FileOptions = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.create")
-  @js.native
-  def create(properties: IFileOptions): FileOptions = js.native
+  @scala.inline
+  def create(): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FileOptions]
+  @scala.inline
+  def create(properties: IFileOptions): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
   /**
     * Decodes a FileOptions message from the specified reader or buffer.
@@ -158,18 +167,14 @@ object FileOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.decode")
-  @js.native
-  def decode(reader: Reader): FileOptions = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): FileOptions = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array): FileOptions = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): FileOptions = js.native
+  @scala.inline
+  def decode(reader: Reader): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
+  @scala.inline
+  def decode(reader: Reader, length: Double): FileOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileOptions]
+  @scala.inline
+  def decode(reader: Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): FileOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileOptions]
   
   /**
     * Decodes a FileOptions message from the specified reader or buffer, length delimited.
@@ -179,12 +184,10 @@ object FileOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): FileOptions = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): FileOptions = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
   /**
     * Encodes the specified FileOptions message. Does not implicitly {@link google.protobuf.FileOptions.verify|verify} messages.
@@ -193,12 +196,10 @@ object FileOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.encode")
-  @js.native
-  def encode(message: IFileOptions): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.encode")
-  @js.native
-  def encode(message: IFileOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IFileOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IFileOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified FileOptions message, length delimited. Does not implicitly {@link google.protobuf.FileOptions.verify|verify} messages.
@@ -207,12 +208,10 @@ object FileOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFileOptions): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFileOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IFileOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IFileOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a FileOptions message from a plain object. Also converts values to their respective internal types.
@@ -220,9 +219,8 @@ object FileOptions {
     * @returns FileOptions
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): FileOptions = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
   /**
     * Creates a plain object from a FileOptions message. Also converts values to other types if specified.
@@ -231,12 +229,10 @@ object FileOptions {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.toObject")
-  @js.native
-  def toObject(message: FileOptions): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.toObject")
-  @js.native
-  def toObject(message: FileOptions, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: FileOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: FileOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a FileOptions message.
@@ -244,7 +240,6 @@ object FileOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FileOptions.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -2,56 +2,54 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrantListEntry extends StObject {
   
   /**
     * A list of key-value pairs that must be present in the encryption context of certain subsequent operations that the grant allows.
     */
-  var Constraints: js.UndefOr[GrantConstraints] = js.native
+  var Constraints: js.UndefOr[GrantConstraints] = js.undefined
   
   /**
     * The date and time when the grant was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The unique identifier for the grant.
     */
-  var GrantId: js.UndefOr[GrantIdType] = js.native
+  var GrantId: js.UndefOr[GrantIdType] = js.undefined
   
   /**
     * The identity that gets the permissions in the grant. The GranteePrincipal field in the ListGrants response usually contains the user or role designated as the grantee principal in the grant. However, when the grantee principal in the grant is an AWS service, the GranteePrincipal field contains the service principal, which might represent several different grantee principals.
     */
-  var GranteePrincipal: js.UndefOr[PrincipalIdType] = js.native
+  var GranteePrincipal: js.UndefOr[PrincipalIdType] = js.undefined
   
   /**
     * The AWS account under which the grant was issued.
     */
-  var IssuingAccount: js.UndefOr[PrincipalIdType] = js.native
+  var IssuingAccount: js.UndefOr[PrincipalIdType] = js.undefined
   
   /**
     * The unique identifier for the customer master key (CMK) to which the grant applies.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * The friendly name that identifies the grant. If a name was provided in the CreateGrant request, that name is returned. Otherwise this value is null.
     */
-  var Name: js.UndefOr[GrantNameType] = js.native
+  var Name: js.UndefOr[GrantNameType] = js.undefined
   
   /**
     * The list of operations permitted by the grant.
     */
-  var Operations: js.UndefOr[GrantOperationList] = js.native
+  var Operations: js.UndefOr[GrantOperationList] = js.undefined
   
   /**
     * The principal that can retire the grant.
     */
-  var RetiringPrincipal: js.UndefOr[PrincipalIdType] = js.native
+  var RetiringPrincipal: js.UndefOr[PrincipalIdType] = js.undefined
 }
 object GrantListEntry {
   

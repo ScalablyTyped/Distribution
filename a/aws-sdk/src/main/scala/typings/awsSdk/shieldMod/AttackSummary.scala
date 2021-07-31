@@ -2,36 +2,34 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttackSummary extends StObject {
   
   /**
     * The unique identifier (ID) of the attack.
     */
-  var AttackId: js.UndefOr[String] = js.native
+  var AttackId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of attacks for a specified time period.
     */
-  var AttackVectors: js.UndefOr[AttackVectorDescriptionList] = js.native
+  var AttackVectors: js.UndefOr[AttackVectorDescriptionList] = js.undefined
   
   /**
     * The end time of the attack, in Unix time in seconds. For more information see timestamp.
     */
-  var EndTime: js.UndefOr[AttackTimestamp] = js.native
+  var EndTime: js.UndefOr[AttackTimestamp] = js.undefined
   
   /**
     * The ARN (Amazon Resource Name) of the resource that was attacked.
     */
-  var ResourceArn: js.UndefOr[String] = js.native
+  var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The start time of the attack, in Unix time in seconds. For more information see timestamp.
     */
-  var StartTime: js.UndefOr[AttackTimestamp] = js.native
+  var StartTime: js.UndefOr[AttackTimestamp] = js.undefined
 }
 object AttackSummary {
   

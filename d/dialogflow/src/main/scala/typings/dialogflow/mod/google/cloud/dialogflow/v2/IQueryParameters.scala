@@ -4,33 +4,31 @@ import typings.dialogflow.mod.google.`type`.ILatLng
 import typings.dialogflow.mod.google.protobuf.IStruct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a QueryParameters. */
-@js.native
 trait IQueryParameters extends StObject {
   
   /** QueryParameters contexts */
-  var contexts: js.UndefOr[js.Array[IContext] | Null] = js.native
+  var contexts: js.UndefOr[js.Array[IContext] | Null] = js.undefined
   
   /** QueryParameters geoLocation */
-  var geoLocation: js.UndefOr[ILatLng | Null] = js.native
+  var geoLocation: js.UndefOr[ILatLng | Null] = js.undefined
   
   /** QueryParameters payload */
-  var payload: js.UndefOr[IStruct | Null] = js.native
+  var payload: js.UndefOr[IStruct | Null] = js.undefined
   
   /** QueryParameters resetContexts */
-  var resetContexts: js.UndefOr[Boolean | Null] = js.native
+  var resetContexts: js.UndefOr[Boolean | Null] = js.undefined
   
   /** QueryParameters sentimentAnalysisRequestConfig */
-  var sentimentAnalysisRequestConfig: js.UndefOr[ISentimentAnalysisRequestConfig | Null] = js.native
+  var sentimentAnalysisRequestConfig: js.UndefOr[ISentimentAnalysisRequestConfig | Null] = js.undefined
   
   /** QueryParameters sessionEntityTypes */
-  var sessionEntityTypes: js.UndefOr[js.Array[ISessionEntityType] | Null] = js.native
+  var sessionEntityTypes: js.UndefOr[js.Array[ISessionEntityType] | Null] = js.undefined
   
   /** QueryParameters timeZone */
-  var timeZone: js.UndefOr[String | Null] = js.native
+  var timeZone: js.UndefOr[String | Null] = js.undefined
 }
 object IQueryParameters {
   

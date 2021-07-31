@@ -4,15 +4,13 @@ import typings.instagramPrivateApi.graphqlRequestOptionsMod.InsightsFriendlyName
 import typings.instagramPrivateApi.graphqlRequestOptionsMod.InsightsSurface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FriendlyName extends StObject {
   
-  var friendlyName: InsightsFriendlyName = js.native
+  var friendlyName: InsightsFriendlyName
   
-  var name: js.UndefOr[InsightsSurface] = js.native
+  var name: js.UndefOr[InsightsSurface] = js.undefined
 }
 object FriendlyName {
   

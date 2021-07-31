@@ -2,23 +2,21 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsCreateInstallationAccessTokenEndpoint extends StObject {
   
-  var installation_id: Double = js.native
+  var installation_id: Double
   
   /**
     * The permissions granted to the access token. The permissions object includes the permission names and their access type. For a complete list of permissions and allowable values, see "[GitHub App permissions](https://developer.github.com/apps/building-github-apps/creating-github-apps-using-url-parameters/#github-app-permissions)."
     */
-  var permissions: js.UndefOr[AppsCreateInstallationAccessTokenParamsPermissions] = js.native
+  var permissions: js.UndefOr[AppsCreateInstallationAccessTokenParamsPermissions] = js.undefined
   
   /**
     * The `id`s of the repositories that the installation token can access. Providing repository `id`s restricts the access of an installation token to specific repositories. You can use the "[List repositories accessible to the app installation](https://developer.github.com/v3/apps/installations/#list-repositories-accessible-to-the-app-installation)" endpoint to get the `id` of all repositories that an installation can access. For example, you can select specific repositories when creating an installation token to restrict the number of repositories that can be cloned using the token.
     */
-  var repository_ids: js.UndefOr[js.Array[Double]] = js.native
+  var repository_ids: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object AppsCreateInstallationAccessTokenEndpoint {
   

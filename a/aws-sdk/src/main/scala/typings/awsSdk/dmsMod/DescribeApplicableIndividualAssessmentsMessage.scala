@@ -2,46 +2,44 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeApplicableIndividualAssessmentsMessage extends StObject {
   
   /**
     * Optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Name of the migration type that each provided individual assessment must support.
     */
-  var MigrationType: js.UndefOr[MigrationTypeValue] = js.native
+  var MigrationType: js.UndefOr[MigrationTypeValue] = js.undefined
   
   /**
     * ARN of a replication instance on which you want to base the default list of individual assessments.
     */
-  var ReplicationInstanceArn: js.UndefOr[String] = js.native
+  var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of a migration task on which you want to base the default list of individual assessments.
     */
-  var ReplicationTaskArn: js.UndefOr[String] = js.native
+  var ReplicationTaskArn: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a database engine that the specified replication instance supports as a source.
     */
-  var SourceEngineName: js.UndefOr[String] = js.native
+  var SourceEngineName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a database engine that the specified replication instance supports as a target.
     */
-  var TargetEngineName: js.UndefOr[String] = js.native
+  var TargetEngineName: js.UndefOr[String] = js.undefined
 }
 object DescribeApplicableIndividualAssessmentsMessage {
   

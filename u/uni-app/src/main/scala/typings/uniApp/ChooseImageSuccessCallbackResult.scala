@@ -2,23 +2,21 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseImageSuccessCallbackResult extends StObject {
   
   /**
     * 图片的本地文件路径列表
     */
-  var tempFilePaths: js.UndefOr[String | js.Array[_]] = js.native
+  var tempFilePaths: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
   /**
     * 图片的本地文件列表，每一项是一个 File 对象
     */
   var tempFiles: js.UndefOr[
     ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile]
-  ] = js.native
+  ] = js.undefined
 }
 object ChooseImageSuccessCallbackResult {
   
@@ -32,7 +30,7 @@ object ChooseImageSuccessCallbackResult {
   implicit class ChooseImageSuccessCallbackResultMutableBuilder[Self <: ChooseImageSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setTempFilePaths(value: String | js.Array[_]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
+    def setTempFilePaths(value: String | js.Array[js.Any]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTempFilePathsUndefined: Self = StObject.set(x, "tempFilePaths", js.undefined)

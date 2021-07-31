@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateConfigReportRequest extends StObject {
   
   /**
@@ -16,8 +14,8 @@ trait GenerateConfigReportRequest extends StObject {
   var newConfig: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. Service configuration against which the comparison will be done. For this version of API, the supported types are google.api.servicemanagement.v1.ConfigRef,
@@ -26,8 +24,8 @@ trait GenerateConfigReportRequest extends StObject {
   var oldConfig: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GenerateConfigReportRequest {
   
@@ -44,7 +42,7 @@ object GenerateConfigReportRequest {
     def setNewConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -54,7 +52,7 @@ object GenerateConfigReportRequest {
     def setOldConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
     
     @scala.inline

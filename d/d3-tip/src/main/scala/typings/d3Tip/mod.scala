@@ -6,15 +6,17 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @JSImport("d3", "tip")
+  @JSImport("d3", JSImport.Namespace)
   @js.native
-  def tip(): Tooltip = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def tip(): Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("tip")().asInstanceOf[Tooltip]
   
   @js.native
   trait Tooltip extends StObject {

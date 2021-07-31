@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnChange extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onValueChange(): Unit = js.native
+  def onValueChange(): Unit
   
-  var selectedIndex: Double = js.native
+  var selectedIndex: Double
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
   
-  var tintColor: String = js.native
+  var tintColor: String
   
-  var values: js.Array[scala.Nothing] = js.native
+  var values: js.Array[scala.Nothing]
 }
 object OnChange {
   
@@ -32,7 +30,7 @@ object OnChange {
     onChange: () => Unit,
     onValueChange: () => Unit,
     selectedIndex: Double,
-    styles: StringDictionary[RegisteredStyle[_]],
+    styles: StringDictionary[RegisteredStyle[js.Any]],
     tintColor: String,
     values: js.Array[scala.Nothing]
   ): OnChange = {
@@ -56,7 +54,7 @@ object OnChange {
     def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])

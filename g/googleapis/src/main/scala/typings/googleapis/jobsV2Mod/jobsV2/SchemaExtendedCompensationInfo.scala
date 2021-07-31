@@ -2,19 +2,17 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated. Use CompensationInfo.  Describes job compensation.
   */
-@js.native
 trait SchemaExtendedCompensationInfo extends StObject {
   
   /**
     * Output only.  Annualized base compensation range.
     */
-  var annualizedBaseCompensationRange: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.native
+  var annualizedBaseCompensationRange: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.undefined
   
   /**
     * Output only.  Indicates annualized base compensation range cannot be
@@ -22,12 +20,12 @@ trait SchemaExtendedCompensationInfo extends StObject {
     * annualized. See CompensationEntry for explanation on annualization and
     * base compensation entry.
     */
-  var annualizedBaseCompensationUnspecified: js.UndefOr[Boolean] = js.native
+  var annualizedBaseCompensationUnspecified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only.  Annualized total compensation range.
     */
-  var annualizedTotalCompensationRange: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.native
+  var annualizedTotalCompensationRange: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.undefined
   
   /**
     * Output only.  Indicates annualized total compensation range cannot be
@@ -35,20 +33,20 @@ trait SchemaExtendedCompensationInfo extends StObject {
     * See CompensationEntry for explanation on annualization and base
     * compensation entry.
     */
-  var annualizedTotalCompensationUnspecified: js.UndefOr[Boolean] = js.native
+  var annualizedTotalCompensationUnspecified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  A 3-letter [ISO
     * 4217](https://www.iso.org/iso-4217-currency-codes.html) currency code.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Job compensation information.  At most one entry can be of
     * type ExtendedCompensationInfo.CompensationType.BASE, which is referred as
     * ** base compensation entry ** for the job.
     */
-  var entries: js.UndefOr[js.Array[SchemaExtendedCompensationInfoCompensationEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaExtendedCompensationInfoCompensationEntry]] = js.undefined
 }
 object SchemaExtendedCompensationInfo {
   

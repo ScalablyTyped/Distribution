@@ -2,15 +2,15 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlaylistDetailsOptions extends PublicOptions {
+trait PlaylistDetailsOptions
+  extends StObject
+     with PublicOptions {
   
-  var collaborative: js.UndefOr[Boolean] = js.native
+  var collaborative: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
 }
 object PlaylistDetailsOptions {
   

@@ -125,10 +125,13 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ionic/react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/react", "CreateAnimation")
   @js.native
@@ -140,7 +143,52 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ionic/react", "DefaultIonLifeCycleContext")
   @js.native
-  class DefaultIonLifeCycleContext () extends ComponentCanBeDestroyed
+  class DefaultIonLifeCycleContext ()
+    extends StObject
+       with ComponentCanBeDestroyed {
+    
+    /* CompleteClass */
+    override def componentCanBeDestroyed(): Unit = js.native
+    
+    /* CompleteClass */
+    override def ionViewDidEnter(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewDidEnterCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def ionViewDidLeave(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewDidLeaveCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def ionViewWillEnter(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewWillEnterCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def ionViewWillLeave(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewWillLeaveCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def onComponentCanBeDestroyed(callback: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewDidEnter(callback: LifeCycleCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewDidLeave(callback: LifeCycleCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewWillEnter(callback: LifeCycleCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewWillLeave(callback: LifeCycleCallback): Unit = js.native
+  }
   
   @JSImport("@ionic/react", "IonActionSheet")
   @js.native
@@ -161,7 +209,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ionic/react", "IonBackButton")
   @js.native
-  class IonBackButton protected () extends ClickButton {
+  class IonBackButton protected ()
+    extends StObject
+       with ClickButton {
     def this(props: ReadonlyProps) = this()
     def this(props: Props) = this()
     def this(props: Props, context: js.Any) = this()
@@ -582,83 +632,64 @@ object mod {
   abstract class ViewStacks ()
     extends typings.ionicReact.routingMod.ViewStacks
   
-  @JSImport("@ionic/react", "createAnimation")
-  @js.native
-  def createAnimation(): Animation = js.native
-  @JSImport("@ionic/react", "createAnimation")
-  @js.native
-  def createAnimation(animationId: String): Animation = js.native
+  @scala.inline
+  def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
+  @scala.inline
+  def createAnimation(animationId: String): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animationId.asInstanceOf[js.Any]).asInstanceOf[Animation]
   
-  @JSImport("@ionic/react", "createGesture")
-  @js.native
-  def createGesture(config: GestureConfig): Gesture = js.native
+  @scala.inline
+  def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
   
-  @JSImport("@ionic/react", "generateId")
-  @js.native
-  def generateId(): String = js.native
-  @JSImport("@ionic/react", "generateId")
-  @js.native
-  def generateId(`type`: String): String = js.native
+  @scala.inline
+  def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
+  @scala.inline
+  def generateId(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/react", "getConfig")
-  @js.native
-  def getConfig(): Config_ | Null = js.native
+  @scala.inline
+  def getConfig(): Config_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config_ | Null]
   
-  @JSImport("@ionic/react", "getPlatforms")
-  @js.native
+  @scala.inline
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
   
-  @JSImport("@ionic/react", "iosTransitionAnimation")
-  @js.native
-  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = js.native
+  @scala.inline
+  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
-  @JSImport("@ionic/react", "isPlatform")
-  @js.native
-  def isPlatform(platform: Platforms): Boolean = js.native
+  @scala.inline
+  def isPlatform(platform: Platforms): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatform")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/react", "mdTransitionAnimation")
-  @js.native
-  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = js.native
+  @scala.inline
+  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdTransitionAnimation")(_underscore.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
-  @JSImport("@ionic/react", "setupConfig")
-  @js.native
-  def setupConfig(config: IonicConfig): js.Any = js.native
+  @scala.inline
+  def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/react", "useIonRouter")
-  @js.native
-  def useIonRouter(): IonRouterContextState = js.native
+  @scala.inline
+  def useIonRouter(): IonRouterContextState = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonRouter")().asInstanceOf[IonRouterContextState]
   
-  @JSImport("@ionic/react", "useIonViewDidEnter")
-  @js.native
-  def useIonViewDidEnter(callback: LifeCycleCallback): Unit = js.native
-  @JSImport("@ionic/react", "useIonViewDidEnter")
-  @js.native
-  def useIonViewDidEnter(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
+  @scala.inline
+  def useIonViewDidEnter(callback: LifeCycleCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewDidEnter")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useIonViewDidEnter(callback: LifeCycleCallback, deps: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewDidEnter")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/react", "useIonViewDidLeave")
-  @js.native
-  def useIonViewDidLeave(callback: LifeCycleCallback): Unit = js.native
-  @JSImport("@ionic/react", "useIonViewDidLeave")
-  @js.native
-  def useIonViewDidLeave(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
+  @scala.inline
+  def useIonViewDidLeave(callback: LifeCycleCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewDidLeave")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useIonViewDidLeave(callback: LifeCycleCallback, deps: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewDidLeave")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/react", "useIonViewWillEnter")
-  @js.native
-  def useIonViewWillEnter(callback: LifeCycleCallback): Unit = js.native
-  @JSImport("@ionic/react", "useIonViewWillEnter")
-  @js.native
-  def useIonViewWillEnter(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
+  @scala.inline
+  def useIonViewWillEnter(callback: LifeCycleCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewWillEnter")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useIonViewWillEnter(callback: LifeCycleCallback, deps: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewWillEnter")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/react", "useIonViewWillLeave")
-  @js.native
-  def useIonViewWillLeave(callback: LifeCycleCallback): Unit = js.native
-  @JSImport("@ionic/react", "useIonViewWillLeave")
-  @js.native
-  def useIonViewWillLeave(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
+  @scala.inline
+  def useIonViewWillLeave(callback: LifeCycleCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewWillLeave")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useIonViewWillLeave(callback: LifeCycleCallback, deps: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useIonViewWillLeave")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/react", "withIonLifeCycle")
-  @js.native
-  def withIonLifeCycle(WrappedComponent: ComponentType[_]): Instantiable = js.native
+  @scala.inline
+  def withIonLifeCycle(WrappedComponent: ComponentType[js.Any]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("withIonLifeCycle")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
 }

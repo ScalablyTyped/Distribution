@@ -9,7 +9,6 @@ import typings.awsSdk.s3Mod.PutObjectRequest
 import typings.awsSdk.s3Mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object managedUploadMod {
@@ -74,43 +73,42 @@ object managedUploadMod {
     @scala.inline
     def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait ManagedUploadOptions extends StObject {
       
       /**
         * Default: false
         * Whether to abort the multipart upload if an error occurs. Set to true if you want to handle failures manually.
         */
-      var leavePartsOnError: js.UndefOr[Boolean] = js.native
+      var leavePartsOnError: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A map of parameters to pass to the upload requests.
         * The "Body" parameter is required to be specified either on the service or in the params option.
         */
-      var params: js.UndefOr[PutObjectRequest] = js.native
+      var params: js.UndefOr[PutObjectRequest] = js.undefined
       
       /**
         * Default: 5 mb
         * The size in bytes for each individual part to be uploaded. Adjust the part size to ensure the number of parts does not exceed maxTotalParts. See minPartSize for the minimum allowed part size.
         */
-      var partSize: js.UndefOr[Double] = js.native
+      var partSize: js.UndefOr[Double] = js.undefined
       
       /**
         * The size of the concurrent queue manager to upload parts in parallel. Set to 1 for synchronous uploading of parts. Note that the uploader will buffer at most queueSize * partSize bytes into memory at any given time.
         * default: 4
         */
-      var queueSize: js.UndefOr[Double] = js.native
+      var queueSize: js.UndefOr[Double] = js.undefined
       
       /**
         * An optional S3 service object to use for requests.
         * This object might have bound parameters used by the uploader.
         */
-      var service: js.UndefOr[typings.awsSdk.s3Mod.^] = js.native
+      var service: js.UndefOr[typings.awsSdk.s3Mod.^] = js.undefined
       
       /**
         * The tags to apply to the object.
         */
-      var tags: js.UndefOr[js.Array[Tag]] = js.native
+      var tags: js.UndefOr[js.Array[Tag]] = js.undefined
     }
     object ManagedUploadOptions {
       
@@ -164,12 +162,11 @@ object managedUploadMod {
       }
     }
     
-    @js.native
     trait Progress extends StObject {
       
-      var loaded: Double = js.native
+      var loaded: Double
       
-      var total: Double = js.native
+      var total: Double
     }
     object Progress {
       
@@ -190,28 +187,27 @@ object managedUploadMod {
       }
     }
     
-    @js.native
     trait SendData extends StObject {
       
       /**
         * Bucket to which the object was uploaded.
         */
-      var Bucket: String = js.native
+      var Bucket: String
       
       /**
         * ETag of the uploaded object.
         */
-      var ETag: String = js.native
+      var ETag: String
       
       /**
         * Key to which the object was uploaded.
         */
-      var Key: String = js.native
+      var Key: String
       
       /**
         * URL of the uploaded object.
         */
-      var Location: String = js.native
+      var Location: String
     }
     object SendData {
       

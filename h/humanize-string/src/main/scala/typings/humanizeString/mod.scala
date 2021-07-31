@@ -3,7 +3,6 @@ package typings.humanizeString
 import typings.humanizeString.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,9 +21,8 @@ object mod {
   	//=> 'Foo bar'
   	```
   	*/
-  @JSImport("humanize-string", JSImport.Namespace)
-  @js.native
-  def apply(text: String): String = js.native
+  @scala.inline
+  def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("humanize-string", JSImport.Namespace)
   @js.native
@@ -53,9 +51,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function humanizeString(text: string): string;
   // export = humanizeString;
-  @JSImport("humanize-string", "default")
-  @js.native
-  def default(text: String): String = js.native
+  @scala.inline
+  def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

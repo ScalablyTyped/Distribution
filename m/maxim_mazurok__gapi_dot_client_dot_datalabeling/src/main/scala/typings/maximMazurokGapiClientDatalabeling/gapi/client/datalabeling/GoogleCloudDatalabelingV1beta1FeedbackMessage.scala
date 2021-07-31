@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1FeedbackMessage extends StObject {
   
   /** String content of the feedback. Maximum of 10000 characters. */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /** Create time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The image storing this feedback if the feedback is an image representing operator's comments. */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the feedback message in a feedback thread. Format:
     * 'project/{project_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedbackThreads/{feedback_thread_id}/feedbackMessage/{feedback_message_id}'
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var operatorFeedbackMetadata: js.UndefOr[js.Any] = js.native
+  var operatorFeedbackMetadata: js.UndefOr[js.Any] = js.undefined
   
-  var requesterFeedbackMetadata: js.UndefOr[js.Any] = js.native
+  var requesterFeedbackMetadata: js.UndefOr[js.Any] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1FeedbackMessage {
   

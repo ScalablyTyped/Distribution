@@ -2,16 +2,14 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQueueTagsRequest extends StObject {
   
   /**
     * The URL of the queue.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
 }
 object ListQueueTagsRequest {
   

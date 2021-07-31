@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INamedValueNamespace extends StObject {
   
-  def Clone(): INamedValueNamespace = js.native
+  def Clone(): INamedValueNamespace
   
-  var NamedValues: INamedValues = js.native
+  var NamedValues: INamedValues
   
-  var NamespaceName: String = js.native
+  var NamespaceName: String
 }
 object INamedValueNamespace {
   

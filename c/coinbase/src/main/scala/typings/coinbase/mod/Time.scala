@@ -3,13 +3,11 @@ package typings.coinbase.mod
 import typings.coinbase.anon.Epoch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
-  var data: Epoch = js.native
+  var data: Epoch
 }
 object Time {
   

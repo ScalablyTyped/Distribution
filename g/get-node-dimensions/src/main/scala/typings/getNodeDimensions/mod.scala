@@ -3,32 +3,32 @@ package typings.getNodeDimensions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("get-node-dimensions", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement): NodeDimensions = js.native
-  @JSImport("get-node-dimensions", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement, options: NodeDimensionsOptions): NodeDimensions = js.native
+  @scala.inline
+  def apply(element: HTMLElement): NodeDimensions = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[NodeDimensions]
+  @scala.inline
+  def apply(element: HTMLElement, options: NodeDimensionsOptions): NodeDimensions = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NodeDimensions]
   
+  @JSImport("get-node-dimensions", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait NodeDimensions extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object NodeDimensions {
     
@@ -61,19 +61,18 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeDimensionsOptions extends StObject {
     
     @JSName("clone")
-    var clone_FNodeDimensionsOptions: js.UndefOr[Boolean] = js.native
+    var clone_FNodeDimensionsOptions: js.UndefOr[Boolean] = js.undefined
     
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[Boolean] = js.native
+    var margin: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object NodeDimensionsOptions {
     

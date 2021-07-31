@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contain any URL, which will be treated as the target of a hierarchy link."Children", which is of type {@link HierarchyDataReadAccess} or of type
   * {@link HierarchyDataReadWriteAccess} , depending on the type of the node. This member provides access to the children of a node.
   */
-@js.native
 trait HierarchyDataReadAccess
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XHierarchicalNameAccess
      with XChangesNotifier
      with XComponent

@@ -3,172 +3,132 @@ package typings.paypalRestSdk.mod
 import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notification {
   
   object webhook {
     
-    @JSImport("paypal-rest-sdk", "notification.webhook.create")
+    @JSImport("paypal-rest-sdk", "notification.webhook")
     @js.native
-    def create(data: Webhook, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.create")
-    @js.native
-    def create(data: Webhook, config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.create")
-    @js.native
-    def create(data: Webhook, config: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.create")
-    @js.native
-    def create(data: Webhook, config: CallbackFunction[Webhook], cb: CallbackFunction[Webhook]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("paypal-rest-sdk", "notification.webhook.del")
-    @js.native
-    def del(id: String, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.del")
-    @js.native
-    def del(id: String, config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.del")
-    @js.native
-    def del(id: String, config: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.del")
-    @js.native
-    def del(id: String, config: CallbackFunction[Webhook], cb: CallbackFunction[Webhook]): Unit = js.native
+    @scala.inline
+    def create(data: Webhook, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def create(data: Webhook, config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def create(data: Webhook, config: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def create(data: Webhook, config: CallbackFunction[Webhook], cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhook.eventTypes")
-    @js.native
-    def eventTypes(id: String, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.eventTypes")
-    @js.native
-    def eventTypes(id: String, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.eventTypes")
-    @js.native
-    def eventTypes(id: String, config: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.eventTypes")
-    @js.native
-    def eventTypes(id: String, config: CallbackFunction[EventTypesResponse], cb: CallbackFunction[EventTypesResponse]): Unit = js.native
+    @scala.inline
+    def del(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def del(id: String, config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def del(id: String, config: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def del(id: String, config: CallbackFunction[Webhook], cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhook.get")
-    @js.native
-    def get(id: String, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.get")
-    @js.native
-    def get(id: String, config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.get")
-    @js.native
-    def get(id: String, config: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.get")
-    @js.native
-    def get(id: String, config: CallbackFunction[Webhook], cb: CallbackFunction[Webhook]): Unit = js.native
+    @scala.inline
+    def eventTypes(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventTypes")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def eventTypes(id: String, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventTypes")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def eventTypes(id: String, config: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventTypes")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def eventTypes(id: String, config: CallbackFunction[EventTypesResponse], cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventTypes")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: RequestOptions, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: RequestOptions, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: RequestOptions, config: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
+    @scala.inline
+    def get(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: String, config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: String, config: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: String, config: CallbackFunction[Webhook], cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def list(data: RequestOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: Unit, cb: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: RequestOptions,
       config: CallbackFunction[WebhookListResponse],
       cb: CallbackFunction[WebhookListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[WebhookListResponse]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookListResponse],
-      config: js.UndefOr[scala.Nothing],
+      config: Unit,
       cb: CallbackFunction[WebhookListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: CallbackFunction[WebhookListResponse], config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[WebhookListResponse], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookListResponse],
       config: RequestOptions,
       cb: CallbackFunction[WebhookListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: CallbackFunction[WebhookListResponse], config: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[WebhookListResponse], config: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookListResponse],
       config: CallbackFunction[WebhookListResponse],
       cb: CallbackFunction[WebhookListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: QueryParameters): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(
-      data: QueryParameters,
-      config: js.UndefOr[scala.Nothing],
-      cb: CallbackFunction[WebhookListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: QueryParameters, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
-    def list(data: QueryParameters, config: CallbackFunction[WebhookListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: Unit, cb: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: CallbackFunction[WebhookListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: QueryParameters,
       config: CallbackFunction[WebhookListResponse],
       cb: CallbackFunction[WebhookListResponse]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhook.replace")
-    @js.native
-    def replace(id: String, data: js.Array[UpdateRequest], config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.replace")
-    @js.native
-    def replace(id: String, data: js.Array[UpdateRequest], config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.replace")
-    @js.native
-    def replace(id: String, data: js.Array[UpdateRequest], config: CallbackFunction[Webhook]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhook.replace")
-    @js.native
+    @scala.inline
+    def replace(id: String, data: js.Array[UpdateRequest], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def replace(id: String, data: js.Array[UpdateRequest], config: RequestOptions, cb: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def replace(id: String, data: js.Array[UpdateRequest], config: CallbackFunction[Webhook]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def replace(
       id: String,
       data: js.Array[UpdateRequest],
       config: CallbackFunction[Webhook],
       cb: CallbackFunction[Webhook]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @js.native
     trait Webhook extends StObject {
       
-      var event_types: js.Array[NotificationEventType] = js.native
+      var event_types: js.Array[NotificationEventType]
       
-      val id: js.UndefOr[String] = js.native
+      val id: js.UndefOr[String] = js.undefined
       
-      val links: js.UndefOr[js.Array[Link]] = js.native
+      val links: js.UndefOr[js.Array[Link]] = js.undefined
       
-      var url: String = js.native
+      var url: String
     }
     object Webhook {
       
@@ -207,10 +167,11 @@ object notification {
       }
     }
     
-    @js.native
-    trait WebhookListResponse extends Response {
+    trait WebhookListResponse
+      extends StObject
+         with Response {
       
-      val webhooks: js.Array[Webhook] = js.native
+      val webhooks: js.Array[Webhook]
     }
     object WebhookListResponse {
       
@@ -234,142 +195,109 @@ object notification {
   
   object webhookEvent {
     
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.get")
+    @JSImport("paypal-rest-sdk", "notification.webhookEvent")
     @js.native
-    def get(id: String, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.get")
-    @js.native
-    def get(id: String, config: RequestOptions, cb: CallbackFunction[WebhookEvent]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.get")
-    @js.native
-    def get(id: String, config: CallbackFunction[WebhookEvent]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.get")
-    @js.native
-    def get(id: String, config: CallbackFunction[WebhookEvent], cb: CallbackFunction[WebhookEvent]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.getAndVerify")
-    @js.native
-    def getAndVerify(body: WebhookEvent, cb: CallbackFunction[WebhookEvent]): Unit = js.native
+    @scala.inline
+    def get(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: String, config: RequestOptions, cb: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: String, config: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def get(id: String, config: CallbackFunction[WebhookEvent], cb: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(
-      data: RequestOptions,
-      config: js.UndefOr[scala.Nothing],
-      cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: RequestOptions, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[WebhookEventListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: RequestOptions, config: CallbackFunction[WebhookEventListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
+    @scala.inline
+    def getAndVerify(body: WebhookEvent, cb: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAndVerify")(body.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def list(data: RequestOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: Unit, cb: CallbackFunction[WebhookEventListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[WebhookEventListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: CallbackFunction[WebhookEventListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: RequestOptions,
       config: CallbackFunction[WebhookEventListResponse],
       cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: CallbackFunction[WebhookEventListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[WebhookEventListResponse]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookEventListResponse],
-      config: js.UndefOr[scala.Nothing],
+      config: Unit,
       cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: CallbackFunction[WebhookEventListResponse], config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[WebhookEventListResponse], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookEventListResponse],
       config: RequestOptions,
       cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookEventListResponse],
       config: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[WebhookEventListResponse],
       config: CallbackFunction[WebhookEventListResponse],
       cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: QueryParameters): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(
-      data: QueryParameters,
-      config: js.UndefOr[scala.Nothing],
-      cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: QueryParameters, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[WebhookEventListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
-    def list(data: QueryParameters, config: CallbackFunction[WebhookEventListResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: Unit, cb: CallbackFunction[WebhookEventListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[WebhookEventListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: CallbackFunction[WebhookEventListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: QueryParameters,
       config: CallbackFunction[WebhookEventListResponse],
       cb: CallbackFunction[WebhookEventListResponse]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.resend")
-    @js.native
-    def resend(id: String, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.resend")
-    @js.native
-    def resend(id: String, config: RequestOptions, cb: CallbackFunction[WebhookEvent]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.resend")
-    @js.native
-    def resend(id: String, config: CallbackFunction[WebhookEvent]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.resend")
-    @js.native
-    def resend(id: String, config: CallbackFunction[WebhookEvent], cb: CallbackFunction[WebhookEvent]): Unit = js.native
+    @scala.inline
+    def resend(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resend")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def resend(id: String, config: RequestOptions, cb: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resend")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def resend(id: String, config: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resend")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def resend(id: String, config: CallbackFunction[WebhookEvent], cb: CallbackFunction[WebhookEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resend")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("paypal-rest-sdk", "notification.webhookEvent.verify")
-    @js.native
-    def verify(headers: js.Any, body: WebhookEvent, id: String, cb: CallbackFunction[WebhookVerifyResponse]): Unit = js.native
+    @scala.inline
+    def verify(headers: js.Any, body: WebhookEvent, id: String, cb: CallbackFunction[WebhookVerifyResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @js.native
     trait WebhookEvent extends StObject {
       
-      val create_time: js.UndefOr[String] = js.native
+      val create_time: js.UndefOr[String] = js.undefined
       
-      val event_type: js.UndefOr[String] = js.native
+      val event_type: js.UndefOr[String] = js.undefined
       
-      val event_version: js.UndefOr[String] = js.native
+      val event_version: js.UndefOr[String] = js.undefined
       
-      val id: js.UndefOr[String] = js.native
+      val id: js.UndefOr[String] = js.undefined
       
-      val resource: js.UndefOr[js.Any] = js.native
+      val resource: js.UndefOr[js.Any] = js.undefined
       
-      val resource_type: js.UndefOr[String] = js.native
+      val resource_type: js.UndefOr[String] = js.undefined
       
-      val summary: js.UndefOr[String] = js.native
+      val summary: js.UndefOr[String] = js.undefined
     }
     object WebhookEvent {
       
@@ -426,10 +354,11 @@ object notification {
       }
     }
     
-    @js.native
-    trait WebhookEventListResponse extends Response {
+    trait WebhookEventListResponse
+      extends StObject
+         with Response {
       
-      var events: js.Array[WebhookEvent] = js.native
+      var events: js.Array[WebhookEvent]
     }
     object WebhookEventListResponse {
       
@@ -450,10 +379,9 @@ object notification {
       }
     }
     
-    @js.native
     trait WebhookVerifyResponse extends StObject {
       
-      var verification_status: String = js.native
+      var verification_status: String
     }
     object WebhookVerifyResponse {
       
@@ -474,86 +402,69 @@ object notification {
   
   object webhookEventType {
     
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
+    @JSImport("paypal-rest-sdk", "notification.webhookEventType")
     @js.native
-    def list(data: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: RequestOptions, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: RequestOptions, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: RequestOptions, config: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def list(data: RequestOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: Unit, cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: RequestOptions, config: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: RequestOptions,
       config: CallbackFunction[EventTypesResponse],
       cb: CallbackFunction[EventTypesResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(
-      data: CallbackFunction[EventTypesResponse],
-      config: js.UndefOr[scala.Nothing],
-      cb: CallbackFunction[EventTypesResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: CallbackFunction[EventTypesResponse], config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[EventTypesResponse]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[EventTypesResponse], config: Unit, cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[EventTypesResponse], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[EventTypesResponse],
       config: RequestOptions,
       cb: CallbackFunction[EventTypesResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: CallbackFunction[EventTypesResponse], config: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: CallbackFunction[EventTypesResponse], config: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: CallbackFunction[EventTypesResponse],
       config: CallbackFunction[EventTypesResponse],
       cb: CallbackFunction[EventTypesResponse]
-    ): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: QueryParameters): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: QueryParameters, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: QueryParameters, config: RequestOptions): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
-    def list(data: QueryParameters, config: CallbackFunction[EventTypesResponse]): Unit = js.native
-    @JSImport("paypal-rest-sdk", "notification.webhookEventType.list")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: Unit, cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def list(data: QueryParameters, config: CallbackFunction[EventTypesResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def list(
       data: QueryParameters,
       config: CallbackFunction[EventTypesResponse],
       cb: CallbackFunction[EventTypesResponse]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
-  trait EventTypesResponse extends Response {
+  trait EventTypesResponse
+    extends StObject
+       with Response {
     
-    val event_types: js.Array[NotificationEventType] = js.native
+    val event_types: js.Array[NotificationEventType]
   }
   object EventTypesResponse {
     
@@ -574,14 +485,13 @@ object notification {
     }
   }
   
-  @js.native
   trait NotificationEventType extends StObject {
     
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
   }
   object NotificationEventType {
     

@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 3.5 */
-@js.native
-trait XSelectedSheetsSupplier extends XInterface {
+trait XSelectedSheetsSupplier
+  extends StObject
+     with XInterface {
   
   /** returns the indices of currently selected sheets. Sheet indices are 0-based. */
-  val SelectedSheets: SafeArray[Double] = js.native
+  val SelectedSheets: SafeArray[Double]
   
   /** returns the indices of currently selected sheets. Sheet indices are 0-based. */
-  def getSelectedSheets(): SafeArray[Double] = js.native
+  def getSelectedSheets(): SafeArray[Double]
 }
 object XSelectedSheetsSupplier {
   

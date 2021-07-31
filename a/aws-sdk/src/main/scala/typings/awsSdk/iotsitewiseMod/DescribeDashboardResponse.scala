@@ -2,51 +2,49 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDashboardResponse extends StObject {
   
   /**
     * The ARN of the dashboard, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId} 
     */
-  var dashboardArn: ARN = js.native
+  var dashboardArn: ARN
   
   /**
     * The date the dashboard was created, in Unix epoch time.
     */
-  var dashboardCreationDate: Timestamp = js.native
+  var dashboardCreationDate: Timestamp
   
   /**
     * The dashboard's definition JSON literal. For detailed information, see Creating dashboards (CLI) in the AWS IoT SiteWise User Guide.
     */
-  var dashboardDefinition: DashboardDefinition = js.native
+  var dashboardDefinition: DashboardDefinition
   
   /**
     * The dashboard's description.
     */
-  var dashboardDescription: js.UndefOr[Description] = js.native
+  var dashboardDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the dashboard.
     */
-  var dashboardId: ID = js.native
+  var dashboardId: ID
   
   /**
     * The date the dashboard was last updated, in Unix epoch time.
     */
-  var dashboardLastUpdateDate: Timestamp = js.native
+  var dashboardLastUpdateDate: Timestamp
   
   /**
     * The name of the dashboard.
     */
-  var dashboardName: Name = js.native
+  var dashboardName: Name
   
   /**
     * The ID of the project that the dashboard is in.
     */
-  var projectId: ID = js.native
+  var projectId: ID
 }
 object DescribeDashboardResponse {
   

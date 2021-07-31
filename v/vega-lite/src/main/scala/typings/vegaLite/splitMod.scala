@@ -3,16 +3,19 @@ package typings.vegaLite
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitMod {
+  
+  @JSImport("vega-lite/build/src/compile/split", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/split", "Split")
   @js.native
   class Split[T /* <: js.Object */] () extends StObject {
     def this(explicit: Partial[T]) = this()
-    def this(explicit: js.UndefOr[scala.Nothing], `implicit`: Partial[T]) = this()
+    def this(explicit: Unit, `implicit`: Partial[T]) = this()
     def this(explicit: Partial[T], `implicit`: Partial[T]) = this()
     
     def combine(): Partial[T] = js.native
@@ -51,23 +54,18 @@ object splitMod {
     ): Unit = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/split", "defaultTieBreaker")
-  @js.native
-  def defaultTieBreaker[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = js.native
+  @scala.inline
+  def defaultTieBreaker[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTieBreaker")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
   
-  @JSImport("vega-lite/build/src/compile/split", "makeExplicit")
-  @js.native
-  def makeExplicit[T](value: T): Explicit[T] = js.native
+  @scala.inline
+  def makeExplicit[T](value: T): Explicit[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeExplicit")(value.asInstanceOf[js.Any]).asInstanceOf[Explicit[T]]
   
-  @JSImport("vega-lite/build/src/compile/split", "makeImplicit")
-  @js.native
-  def makeImplicit[T](value: T): Explicit[T] = js.native
+  @scala.inline
+  def makeImplicit[T](value: T): Explicit[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeImplicit")(value.asInstanceOf[js.Any]).asInstanceOf[Explicit[T]]
   
-  @JSImport("vega-lite/build/src/compile/split", "mergeValuesWithExplicit")
-  @js.native
-  def mergeValuesWithExplicit[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = js.native
-  @JSImport("vega-lite/build/src/compile/split", "mergeValuesWithExplicit")
-  @js.native
+  @scala.inline
+  def mergeValuesWithExplicit[S, T](v1: Explicit[T], v2: Explicit[T], property: /* keyof S */ String, propertyOf: SplitParentProperty): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeValuesWithExplicit")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
+  @scala.inline
   def mergeValuesWithExplicit[S, T](
     v1: Explicit[T],
     v2: Explicit[T],
@@ -80,24 +78,28 @@ object splitMod {
       /* propertyOf */ String, 
       Explicit[T]
     ]
-  ): Explicit[T] = js.native
+  ): Explicit[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeValuesWithExplicit")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], property.asInstanceOf[js.Any], propertyOf.asInstanceOf[js.Any], tieBreaker.asInstanceOf[js.Any])).asInstanceOf[Explicit[T]]
   
-  @JSImport("vega-lite/build/src/compile/split", "tieBreakByComparing")
-  @js.native
+  @scala.inline
   def tieBreakByComparing[S, T](compare: js.Function2[/* v1 */ T, /* v2 */ T, Double]): js.Function4[
     /* v1 */ Explicit[T], 
     /* v2 */ Explicit[T], 
     /* property */ (/* keyof S */ String) | scala.Nothing, 
     /* propertyOf */ SplitParentProperty, 
     Explicit[T]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("tieBreakByComparing")(compare.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+    /* v1 */ Explicit[T], 
+    /* v2 */ Explicit[T], 
+    /* property */ (/* keyof S */ String) | scala.Nothing, 
+    /* propertyOf */ SplitParentProperty, 
+    Explicit[T]
+  ]]
   
-  @js.native
   trait Explicit[T] extends StObject {
     
-    var explicit: Boolean = js.native
+    var explicit: Boolean
     
-    var value: T = js.native
+    var value: T
   }
   object Explicit {
     
@@ -108,7 +110,7 @@ object splitMod {
     }
     
     @scala.inline
-    implicit class ExplicitMutableBuilder[Self <: Explicit[_], T] (val x: Self with Explicit[T]) extends AnyVal {
+    implicit class ExplicitMutableBuilder[Self <: Explicit[?], T] (val x: Self & Explicit[T]) extends AnyVal {
       
       @scala.inline
       def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])

@@ -6,7 +6,6 @@ import typings.std.Date
 import typings.std.Error
 import typings.std.RegExp
 import typings.yadda.contextMod.Properties
-import typings.yadda.contextMod.^
 import typings.yadda.featureParserMod.Options
 import typings.yadda.languageMod.Vocabulary
 import typings.yadda.pluginsMod.MochaPlugin
@@ -16,14 +15,18 @@ import typings.yadda.yaddaStrings.__ON_SCENARIO__
 import typings.yadda.yaddaStrings.__ON_STEP__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
   
+  @JSImport("yadda/lib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("yadda/lib", "Context")
   @js.native
-  class Context protected () extends ^ {
+  class Context protected ()
+    extends typings.yadda.contextMod.^ {
     def this(properties: Properties) = this()
   }
   
@@ -36,6 +39,9 @@ object libMod {
   
   object EventBus {
     
+    @JSImport("yadda/lib", "EventBus")
+    @js.native
+    val ^ : js.Any = js.native
     @JSImport("yadda/lib", "EventBus.EventBus")
     @js.native
     class EventBus ()
@@ -57,9 +63,8 @@ object libMod {
     @js.native
     val ON_STEP: __ON_STEP__ = js.native
     
-    @JSImport("yadda/lib", "EventBus.instance")
-    @js.native
-    def instance(): typings.yadda.eventBusMod.EventBus = js.native
+    @scala.inline
+    def instance(): typings.yadda.eventBusMod.EventBus = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.yadda.eventBusMod.EventBus]
   }
   
   @JSImport("yadda/lib", "FeatureFileSearch")
@@ -104,56 +109,48 @@ object libMod {
     def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
     def this(libraries: typings.yadda.libraryMod.^) = this()
     def this(libraries: js.Array[typings.yadda.libraryMod.^], interpreter_context: Properties) = this()
-    def this(libraries: js.Array[typings.yadda.libraryMod.^], interpreter_context: ^) = this()
+    def this(libraries: js.Array[typings.yadda.libraryMod.^], interpreter_context: typings.yadda.contextMod.^) = this()
     def this(libraries: typings.yadda.libraryMod.^, interpreter_context: Properties) = this()
-    def this(libraries: typings.yadda.libraryMod.^, interpreter_context: ^) = this()
+    def this(libraries: typings.yadda.libraryMod.^, interpreter_context: typings.yadda.contextMod.^) = this()
   }
   
   object converters {
     
-    @JSImport("yadda/lib", "converters.date")
+    @JSImport("yadda/lib", "converters")
     @js.native
-    def date(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Date, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("yadda/lib", "converters.float")
-    @js.native
-    def float(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def date(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Date, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("yadda/lib", "converters.integer")
-    @js.native
-    def integer(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def float(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("yadda/lib", "converters.list")
-    @js.native
-    def list(value: String, next: js.Function2[/* err */ Error | Null, /* value */ js.Array[String], Unit]): Unit = js.native
+    @scala.inline
+    def integer(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("integer")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("yadda/lib", "converters.pass_through")
-    @js.native
-    def passThrough(value: String, next: js.Function2[/* err */ Error | Null, /* value */ String, Unit]): Unit = js.native
+    @scala.inline
+    def list(value: String, next: js.Function2[/* err */ Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("yadda/lib", "converters.table")
-    @js.native
-    def table(value: String, next: js.Function2[/* err */ Error | Null, /* value */ js.Array[String], Unit]): Unit = js.native
+    @scala.inline
+    def passThrough(value: String, next: js.Function2[/* err */ Error | Null, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pass_through")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def table(value: String, next: js.Function2[/* err */ Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("table")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("yadda/lib", "createInstance")
-  @js.native
-  def createInstance(): typings.yadda.yaddaMod.^ = js.native
-  @JSImport("yadda/lib", "createInstance")
-  @js.native
-  def createInstance(libraries: js.UndefOr[scala.Nothing], context: Properties): typings.yadda.yaddaMod.^ = js.native
-  @JSImport("yadda/lib", "createInstance")
-  @js.native
-  def createInstance(libraries: js.Array[typings.yadda.languageMod.Library]): typings.yadda.yaddaMod.^ = js.native
-  @JSImport("yadda/lib", "createInstance")
-  @js.native
-  def createInstance(libraries: js.Array[typings.yadda.languageMod.Library], context: Properties): typings.yadda.yaddaMod.^ = js.native
-  @JSImport("yadda/lib", "createInstance")
-  @js.native
-  def createInstance(libraries: typings.yadda.languageMod.Library): typings.yadda.yaddaMod.^ = js.native
-  @JSImport("yadda/lib", "createInstance")
-  @js.native
-  def createInstance(libraries: typings.yadda.languageMod.Library, context: Properties): typings.yadda.yaddaMod.^ = js.native
+  @scala.inline
+  def createInstance(): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[typings.yadda.yaddaMod.^]
+  @scala.inline
+  def createInstance(libraries: js.Array[typings.yadda.languageMod.Library]): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any]).asInstanceOf[typings.yadda.yaddaMod.^]
+  @scala.inline
+  def createInstance(libraries: js.Array[typings.yadda.languageMod.Library], context: Properties): typings.yadda.yaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.yaddaMod.^]
+  @scala.inline
+  def createInstance(libraries: Unit, context: Properties): typings.yadda.yaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.yaddaMod.^]
+  @scala.inline
+  def createInstance(libraries: typings.yadda.languageMod.Library): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any]).asInstanceOf[typings.yadda.yaddaMod.^]
+  @scala.inline
+  def createInstance(libraries: typings.yadda.languageMod.Library, context: Properties): typings.yadda.yaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.yaddaMod.^]
   
   object localisation {
     
@@ -347,9 +344,12 @@ object libMod {
   
   object plugins {
     
-    @JSImport("yadda/lib", "plugins.casper")
+    @JSImport("yadda/lib", "plugins")
     @js.native
-    def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("yadda/lib", "plugins.jasmine")
     @js.native
@@ -403,16 +403,15 @@ object libMod {
     Unit
   ])
   
-  @js.native
   trait Feature extends StObject {
     
-    var annotations: Annotations = js.native
+    var annotations: Annotations
     
-    var description: js.Array[String] = js.native
+    var description: js.Array[String]
     
-    var scenarios: js.Array[Scenario] = js.native
+    var scenarios: js.Array[Scenario]
     
-    var title: String = js.native
+    var title: String
   }
   object Feature {
     
@@ -450,16 +449,15 @@ object libMod {
     }
   }
   
-  @js.native
   trait Scenario extends StObject {
     
-    var annotations: Annotations = js.native
+    var annotations: Annotations
     
-    var description: js.Array[String] = js.native
+    var description: js.Array[String]
     
-    var steps: js.Array[Step] = js.native
+    var steps: js.Array[Step]
     
-    var title: String = js.native
+    var title: String
   }
   object Scenario {
     
@@ -494,12 +492,11 @@ object libMod {
   
   type Step = String
   
-  @js.native
   trait StepFn extends StObject {
     
-    var ctx: Properties = js.native
+    var ctx: Properties
     
-    var step: String = js.native
+    var step: String
   }
   object StepFn {
     

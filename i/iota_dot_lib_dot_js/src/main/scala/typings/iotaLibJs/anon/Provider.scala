@@ -2,17 +2,15 @@ package typings.iotaLibJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Provider extends StObject {
   
-  var provider: String = js.native
+  var provider: String
   
-  var sandbox: js.UndefOr[Boolean] = js.native
+  var sandbox: js.UndefOr[Boolean] = js.undefined
   
-  var token: js.UndefOr[Boolean] = js.native
+  var token: js.UndefOr[Boolean] = js.undefined
 }
 object Provider {
   

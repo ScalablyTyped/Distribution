@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -44,7 +43,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param providerId The associated provider ID, such as `github.com`.
   */
 @js.native
-trait OAuthProvider extends AuthProvider {
+trait OAuthProvider
+  extends StObject
+     with AuthProvider {
   
   /**
     * @param scope Provider OAuth scope to add.

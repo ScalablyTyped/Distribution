@@ -9,13 +9,14 @@ import typings.storybookComponents.inputMod.ValidationStates
 import typings.storybookComponents.sectionRowMod.Level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookComponentsStrings {
   
   @js.native
-  sealed trait `100Percentsign` extends Sizes
+  sealed trait `100Percentsign`
+    extends StObject
+       with Sizes
   @scala.inline
   def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   
@@ -30,17 +31,23 @@ object storybookComponentsStrings {
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
-  sealed trait accessibility extends IconKey
+  sealed trait accessibility
+    extends StObject
+       with IconKey
   @scala.inline
   def accessibility: accessibility = "accessibility".asInstanceOf[accessibility]
   
   @js.native
-  sealed trait accessibilityalt extends IconKey
+  sealed trait accessibilityalt
+    extends StObject
+       with IconKey
   @scala.inline
   def accessibilityalt: accessibilityalt = "accessibilityalt".asInstanceOf[accessibilityalt]
   
   @js.native
-  sealed trait add extends IconKey
+  sealed trait add
+    extends StObject
+       with IconKey
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   
@@ -65,12 +72,16 @@ object storybookComponentsStrings {
   def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait admin extends IconKey
+  sealed trait admin
+    extends StObject
+       with IconKey
   @scala.inline
   def admin: admin = "admin".asInstanceOf[admin]
   
   @js.native
-  sealed trait alert extends IconKey
+  sealed trait alert
+    extends StObject
+       with IconKey
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   
@@ -110,37 +121,51 @@ object storybookComponentsStrings {
   def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait array extends ControlType
+  sealed trait array
+    extends StObject
+       with ControlType
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait arrowdown extends IconKey
+  sealed trait arrowdown
+    extends StObject
+       with IconKey
   @scala.inline
   def arrowdown: arrowdown = "arrowdown".asInstanceOf[arrowdown]
   
   @js.native
-  sealed trait arrowleft extends IconKey
+  sealed trait arrowleft
+    extends StObject
+       with IconKey
   @scala.inline
   def arrowleft: arrowleft = "arrowleft".asInstanceOf[arrowleft]
   
   @js.native
-  sealed trait arrowleftalt extends IconKey
+  sealed trait arrowleftalt
+    extends StObject
+       with IconKey
   @scala.inline
   def arrowleftalt: arrowleftalt = "arrowleftalt".asInstanceOf[arrowleftalt]
   
   @js.native
-  sealed trait arrowright extends IconKey
+  sealed trait arrowright
+    extends StObject
+       with IconKey
   @scala.inline
   def arrowright: arrowright = "arrowright".asInstanceOf[arrowright]
   
   @js.native
-  sealed trait arrowrightalt extends IconKey
+  sealed trait arrowrightalt
+    extends StObject
+       with IconKey
   @scala.inline
   def arrowrightalt: arrowrightalt = "arrowrightalt".asInstanceOf[arrowrightalt]
   
   @js.native
-  sealed trait arrowup extends IconKey
+  sealed trait arrowup
+    extends StObject
+       with IconKey
   @scala.inline
   def arrowup: arrowup = "arrowup".asInstanceOf[arrowup]
   
@@ -170,7 +195,9 @@ object storybookComponentsStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait auto extends Sizes
+  sealed trait auto
+    extends StObject
+       with Sizes
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -180,7 +207,9 @@ object storybookComponentsStrings {
   def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait back extends IconKey
+  sealed trait back
+    extends StObject
+       with IconKey
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   
@@ -190,17 +219,23 @@ object storybookComponentsStrings {
   def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait basket extends IconKey
+  sealed trait basket
+    extends StObject
+       with IconKey
   @scala.inline
   def basket: basket = "basket".asInstanceOf[basket]
   
   @js.native
-  sealed trait batchaccept extends IconKey
+  sealed trait batchaccept
+    extends StObject
+       with IconKey
   @scala.inline
   def batchaccept: batchaccept = "batchaccept".asInstanceOf[batchaccept]
   
   @js.native
-  sealed trait batchdeny extends IconKey
+  sealed trait batchdeny
+    extends StObject
+       with IconKey
   @scala.inline
   def batchdeny: batchdeny = "batchdeny".asInstanceOf[batchdeny]
   
@@ -215,12 +250,16 @@ object storybookComponentsStrings {
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
-  sealed trait beaker extends IconKey
+  sealed trait beaker
+    extends StObject
+       with IconKey
   @scala.inline
   def beaker: beaker = "beaker".asInstanceOf[beaker]
   
   @js.native
-  sealed trait bell extends IconKey
+  sealed trait bell
+    extends StObject
+       with IconKey
   @scala.inline
   def bell: bell = "bell".asInstanceOf[bell]
   
@@ -230,7 +269,9 @@ object storybookComponentsStrings {
   def big: big = "big".asInstanceOf[big]
   
   @js.native
-  sealed trait bitbucket extends IconKey
+  sealed trait bitbucket
+    extends StObject
+       with IconKey
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
   
@@ -245,22 +286,30 @@ object storybookComponentsStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait book extends IconKey
+  sealed trait book
+    extends StObject
+       with IconKey
   @scala.inline
   def book: book = "book".asInstanceOf[book]
   
   @js.native
-  sealed trait bookmark extends IconKey
+  sealed trait bookmark
+    extends StObject
+       with IconKey
   @scala.inline
   def bookmark: bookmark = "bookmark".asInstanceOf[bookmark]
   
   @js.native
-  sealed trait bookmarkhollow extends IconKey
+  sealed trait bookmarkhollow
+    extends StObject
+       with IconKey
   @scala.inline
   def bookmarkhollow: bookmarkhollow = "bookmarkhollow".asInstanceOf[bookmarkhollow]
   
   @js.native
-  sealed trait boolean extends ControlType
+  sealed trait boolean
+    extends StObject
+       with ControlType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -275,12 +324,16 @@ object storybookComponentsStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottombar extends IconKey
+  sealed trait bottombar
+    extends StObject
+       with IconKey
   @scala.inline
   def bottombar: bottombar = "bottombar".asInstanceOf[bottombar]
   
   @js.native
-  sealed trait box extends IconKey
+  sealed trait box
+    extends StObject
+       with IconKey
   @scala.inline
   def box: box = "box".asInstanceOf[box]
   
@@ -290,27 +343,37 @@ object storybookComponentsStrings {
   def br: br = "br".asInstanceOf[br]
   
   @js.native
-  sealed trait branch extends IconKey
+  sealed trait branch
+    extends StObject
+       with IconKey
   @scala.inline
   def branch: branch = "branch".asInstanceOf[branch]
   
   @js.native
-  sealed trait browser extends IconKey
+  sealed trait browser
+    extends StObject
+       with IconKey
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait button extends IconKey
+  sealed trait button
+    extends StObject
+       with IconKey
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait calendar extends IconKey
+  sealed trait calendar
+    extends StObject
+       with IconKey
   @scala.inline
   def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
-  sealed trait camera extends IconKey
+  sealed trait camera
+    extends StObject
+       with IconKey
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
@@ -325,45 +388,60 @@ object storybookComponentsStrings {
   def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait category extends IconKey
+  sealed trait category
+    extends StObject
+       with IconKey
   @scala.inline
   def category: category = "category".asInstanceOf[category]
   
   @js.native
-  sealed trait center extends Alignments
+  sealed trait center
+    extends StObject
+       with Alignments
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait certificate extends IconKey
+  sealed trait certificate
+    extends StObject
+       with IconKey
   @scala.inline
   def certificate: certificate = "certificate".asInstanceOf[certificate]
   
   @js.native
   sealed trait check
-    extends ControlType
+    extends StObject
+       with ControlType
        with IconKey
        with OptionsControlType
   @scala.inline
   def check: check = "check".asInstanceOf[check]
   
   @js.native
-  sealed trait chevrondown extends IconKey
+  sealed trait chevrondown
+    extends StObject
+       with IconKey
   @scala.inline
   def chevrondown: chevrondown = "chevrondown".asInstanceOf[chevrondown]
   
   @js.native
-  sealed trait chromatic extends IconKey
+  sealed trait chromatic
+    extends StObject
+       with IconKey
   @scala.inline
   def chromatic: chromatic = "chromatic".asInstanceOf[chromatic]
   
   @js.native
-  sealed trait circle extends IconKey
+  sealed trait circle
+    extends StObject
+       with IconKey
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait circlehollow extends IconKey
+  sealed trait circlehollow
+    extends StObject
+       with IconKey
   @scala.inline
   def circlehollow: circlehollow = "circlehollow".asInstanceOf[circlehollow]
   
@@ -383,12 +461,16 @@ object storybookComponentsStrings {
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait close extends IconKey
+  sealed trait close
+    extends StObject
+       with IconKey
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait closeAlt extends IconKey
+  sealed trait closeAlt
+    extends StObject
+       with IconKey
   @scala.inline
   def closeAlt: closeAlt = "closeAlt".asInstanceOf[closeAlt]
   
@@ -398,7 +480,9 @@ object storybookComponentsStrings {
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait cog extends IconKey
+  sealed trait cog
+    extends StObject
+       with IconKey
   @scala.inline
   def cog: cog = "cog".asInstanceOf[cog]
   
@@ -413,52 +497,72 @@ object storybookComponentsStrings {
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait collapse extends IconKey
+  sealed trait collapse
+    extends StObject
+       with IconKey
   @scala.inline
   def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
-  sealed trait color extends ControlType
+  sealed trait color
+    extends StObject
+       with ControlType
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait comment extends IconKey
+  sealed trait comment
+    extends StObject
+       with IconKey
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait commit extends IconKey
+  sealed trait commit
+    extends StObject
+       with IconKey
   @scala.inline
   def commit: commit = "commit".asInstanceOf[commit]
   
   @js.native
-  sealed trait compass extends IconKey
+  sealed trait compass
+    extends StObject
+       with IconKey
   @scala.inline
   def compass: compass = "compass".asInstanceOf[compass]
   
   @js.native
-  sealed trait component extends IconKey
+  sealed trait component
+    extends StObject
+       with IconKey
   @scala.inline
   def component: component = "component".asInstanceOf[component]
   
   @js.native
-  sealed trait contrast extends IconKey
+  sealed trait contrast
+    extends StObject
+       with IconKey
   @scala.inline
   def contrast: contrast = "contrast".asInstanceOf[contrast]
   
   @js.native
-  sealed trait copy extends IconKey
+  sealed trait copy
+    extends StObject
+       with IconKey
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait cpu extends IconKey
+  sealed trait cpu
+    extends StObject
+       with IconKey
   @scala.inline
   def cpu: cpu = "cpu".asInstanceOf[cpu]
   
   @js.native
-  sealed trait credit extends IconKey
+  sealed trait credit
+    extends StObject
+       with IconKey
   @scala.inline
   def credit: credit = "credit".asInstanceOf[credit]
   
@@ -468,7 +572,9 @@ object storybookComponentsStrings {
   def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
-  sealed trait cross extends IconKey
+  sealed trait cross
+    extends StObject
+       with IconKey
   @scala.inline
   def cross: cross = "cross".asInstanceOf[cross]
   
@@ -488,7 +594,9 @@ object storybookComponentsStrings {
   def darkest: darkest = "darkest".asInstanceOf[darkest]
   
   @js.native
-  sealed trait dashboard extends IconKey
+  sealed trait dashboard
+    extends StObject
+       with IconKey
   @scala.inline
   def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
@@ -498,7 +606,9 @@ object storybookComponentsStrings {
   def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait database extends IconKey
+  sealed trait database
+    extends StObject
+       with IconKey
   @scala.inline
   def database: database = "database".asInstanceOf[database]
   
@@ -508,7 +618,9 @@ object storybookComponentsStrings {
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
-  sealed trait date extends ControlType
+  sealed trait date
+    extends StObject
+       with ControlType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
@@ -538,7 +650,9 @@ object storybookComponentsStrings {
   def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait delete extends IconKey
+  sealed trait delete
+    extends StObject
+       with IconKey
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
@@ -568,7 +682,9 @@ object storybookComponentsStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait discord extends IconKey
+  sealed trait discord
+    extends StObject
+       with IconKey
   @scala.inline
   def discord: discord = "discord".asInstanceOf[discord]
   
@@ -583,22 +699,30 @@ object storybookComponentsStrings {
   def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
-  sealed trait docchart extends IconKey
+  sealed trait docchart
+    extends StObject
+       with IconKey
   @scala.inline
   def docchart: docchart = "docchart".asInstanceOf[docchart]
   
   @js.native
-  sealed trait doclist extends IconKey
+  sealed trait doclist
+    extends StObject
+       with IconKey
   @scala.inline
   def doclist: doclist = "doclist".asInstanceOf[doclist]
   
   @js.native
-  sealed trait document extends IconKey
+  sealed trait document
+    extends StObject
+       with IconKey
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
   @js.native
-  sealed trait download extends IconKey
+  sealed trait download
+    extends StObject
+       with IconKey
   @scala.inline
   def download: download = "download".asInstanceOf[download]
   
@@ -608,7 +732,9 @@ object storybookComponentsStrings {
   def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
-  sealed trait edit extends IconKey
+  sealed trait edit
+    extends StObject
+       with IconKey
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   
@@ -618,7 +744,9 @@ object storybookComponentsStrings {
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
-  sealed trait ellipsis extends IconKey
+  sealed trait ellipsis
+    extends StObject
+       with IconKey
   @scala.inline
   def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
@@ -628,7 +756,9 @@ object storybookComponentsStrings {
   def em: em = "em".asInstanceOf[em]
   
   @js.native
-  sealed trait email extends IconKey
+  sealed trait email
+    extends StObject
+       with IconKey
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
@@ -638,12 +768,16 @@ object storybookComponentsStrings {
   def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
-  sealed trait end extends Alignments
+  sealed trait end
+    extends StObject
+       with Alignments
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error extends ValidationStates
+  sealed trait error
+    extends StObject
+       with ValidationStates
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -653,42 +787,58 @@ object storybookComponentsStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait expand extends IconKey
+  sealed trait expand
+    extends StObject
+       with IconKey
   @scala.inline
   def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait expandalt extends IconKey
+  sealed trait expandalt
+    extends StObject
+       with IconKey
   @scala.inline
   def expandalt: expandalt = "expandalt".asInstanceOf[expandalt]
   
   @js.native
-  sealed trait eye extends IconKey
+  sealed trait eye
+    extends StObject
+       with IconKey
   @scala.inline
   def eye: eye = "eye".asInstanceOf[eye]
   
   @js.native
-  sealed trait eyeclose extends IconKey
+  sealed trait eyeclose
+    extends StObject
+       with IconKey
   @scala.inline
   def eyeclose: eyeclose = "eyeclose".asInstanceOf[eyeclose]
   
   @js.native
-  sealed trait facebook extends IconKey
+  sealed trait facebook
+    extends StObject
+       with IconKey
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
-  sealed trait facehappy extends IconKey
+  sealed trait facehappy
+    extends StObject
+       with IconKey
   @scala.inline
   def facehappy: facehappy = "facehappy".asInstanceOf[facehappy]
   
   @js.native
-  sealed trait faceneutral extends IconKey
+  sealed trait faceneutral
+    extends StObject
+       with IconKey
   @scala.inline
   def faceneutral: faceneutral = "faceneutral".asInstanceOf[faceneutral]
   
   @js.native
-  sealed trait facesad extends IconKey
+  sealed trait facesad
+    extends StObject
+       with IconKey
   @scala.inline
   def facesad: facesad = "facesad".asInstanceOf[facesad]
   
@@ -833,22 +983,30 @@ object storybookComponentsStrings {
   def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait filter extends IconKey
+  sealed trait filter
+    extends StObject
+       with IconKey
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait flag extends IconKey
+  sealed trait flag
+    extends StObject
+       with IconKey
   @scala.inline
   def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
-  sealed trait flex extends Sizes
+  sealed trait flex
+    extends StObject
+       with Sizes
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
-  sealed trait folder extends IconKey
+  sealed trait folder
+    extends StObject
+       with IconKey
   @scala.inline
   def folder: folder = "folder".asInstanceOf[folder]
   
@@ -863,7 +1021,9 @@ object storybookComponentsStrings {
   def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   
   @js.native
-  sealed trait form extends IconKey
+  sealed trait form
+    extends StObject
+       with IconKey
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   
@@ -873,22 +1033,30 @@ object storybookComponentsStrings {
   def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait gdrive extends IconKey
+  sealed trait gdrive
+    extends StObject
+       with IconKey
   @scala.inline
   def gdrive: gdrive = "gdrive".asInstanceOf[gdrive]
   
   @js.native
-  sealed trait github extends IconKey
+  sealed trait github
+    extends StObject
+       with IconKey
   @scala.inline
   def github: github = "github".asInstanceOf[github]
   
   @js.native
-  sealed trait gitlab extends IconKey
+  sealed trait gitlab
+    extends StObject
+       with IconKey
   @scala.inline
   def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
   
   @js.native
-  sealed trait globe extends IconKey
+  sealed trait globe
+    extends StObject
+       with IconKey
   @scala.inline
   def globe: globe = "globe".asInstanceOf[globe]
   
@@ -898,7 +1066,9 @@ object storybookComponentsStrings {
   def gold: gold = "gold".asInstanceOf[gold]
   
   @js.native
-  sealed trait google extends IconKey
+  sealed trait google
+    extends StObject
+       with IconKey
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   
@@ -908,17 +1078,23 @@ object storybookComponentsStrings {
   def grammar: grammar = "grammar".asInstanceOf[grammar]
   
   @js.native
-  sealed trait graphbar extends IconKey
+  sealed trait graphbar
+    extends StObject
+       with IconKey
   @scala.inline
   def graphbar: graphbar = "graphbar".asInstanceOf[graphbar]
   
   @js.native
-  sealed trait graphline extends IconKey
+  sealed trait graphline
+    extends StObject
+       with IconKey
   @scala.inline
   def graphline: graphline = "graphline".asInstanceOf[graphline]
   
   @js.native
-  sealed trait graphql extends IconKey
+  sealed trait graphql
+    extends StObject
+       with IconKey
   @scala.inline
   def graphql: graphql = "graphql".asInstanceOf[graphql]
   
@@ -928,12 +1104,16 @@ object storybookComponentsStrings {
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait grid extends IconKey
+  sealed trait grid
+    extends StObject
+       with IconKey
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait grow extends IconKey
+  sealed trait grow
+    extends StObject
+       with IconKey
   @scala.inline
   def grow: grow = "grow".asInstanceOf[grow]
   
@@ -978,12 +1158,16 @@ object storybookComponentsStrings {
   def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait heart extends IconKey
+  sealed trait heart
+    extends StObject
+       with IconKey
   @scala.inline
   def heart: heart = "heart".asInstanceOf[heart]
   
   @js.native
-  sealed trait hearthollow extends IconKey
+  sealed trait hearthollow
+    extends StObject
+       with IconKey
   @scala.inline
   def hearthollow: hearthollow = "hearthollow".asInstanceOf[hearthollow]
   
@@ -998,7 +1182,9 @@ object storybookComponentsStrings {
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait home extends IconKey
+  sealed trait home
+    extends StObject
+       with IconKey
   @scala.inline
   def home: home = "home".asInstanceOf[home]
   
@@ -1008,7 +1194,9 @@ object storybookComponentsStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hourglass extends IconKey
+  sealed trait hourglass
+    extends StObject
+       with IconKey
   @scala.inline
   def hourglass: hourglass = "hourglass".asInstanceOf[hourglass]
   
@@ -1048,7 +1236,9 @@ object storybookComponentsStrings {
   def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait info extends IconKey
+  sealed trait info
+    extends StObject
+       with IconKey
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -1064,14 +1254,16 @@ object storybookComponentsStrings {
   
   @js.native
   sealed trait `inline-check`
-    extends ControlType
+    extends StObject
+       with ControlType
        with OptionsControlType
   @scala.inline
   def `inline-check`: `inline-check` = "inline-check".asInstanceOf[`inline-check`]
   
   @js.native
   sealed trait `inline-radio`
-    extends ControlType
+    extends StObject
+       with ControlType
        with OptionsControlType
   @scala.inline
   def `inline-radio`: `inline-radio` = "inline-radio".asInstanceOf[`inline-radio`]
@@ -1097,7 +1289,9 @@ object storybookComponentsStrings {
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
-  sealed trait key extends IconKey
+  sealed trait key
+    extends StObject
+       with IconKey
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   
@@ -1137,12 +1331,16 @@ object storybookComponentsStrings {
   def lightest: lightest = "lightest".asInstanceOf[lightest]
   
   @js.native
-  sealed trait lightning extends IconKey
+  sealed trait lightning
+    extends StObject
+       with IconKey
   @scala.inline
   def lightning: lightning = "lightning".asInstanceOf[lightning]
   
   @js.native
-  sealed trait lightningoff extends IconKey
+  sealed trait lightningoff
+    extends StObject
+       with IconKey
   @scala.inline
   def lightningoff: lightningoff = "lightningoff".asInstanceOf[lightningoff]
   
@@ -1157,7 +1355,9 @@ object storybookComponentsStrings {
   def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
-  sealed trait link extends IconKey
+  sealed trait link
+    extends StObject
+       with IconKey
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
@@ -1172,17 +1372,23 @@ object storybookComponentsStrings {
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
-  sealed trait listunordered extends IconKey
+  sealed trait listunordered
+    extends StObject
+       with IconKey
   @scala.inline
   def listunordered: listunordered = "listunordered".asInstanceOf[listunordered]
   
   @js.native
-  sealed trait location extends IconKey
+  sealed trait location
+    extends StObject
+       with IconKey
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait lock extends IconKey
+  sealed trait lock
+    extends StObject
+       with IconKey
   @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   
@@ -1207,7 +1413,9 @@ object storybookComponentsStrings {
   def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait markup extends IconKey
+  sealed trait markup
+    extends StObject
+       with IconKey
   @scala.inline
   def markup: markup = "markup".asInstanceOf[markup]
   
@@ -1217,7 +1425,9 @@ object storybookComponentsStrings {
   def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait medium extends IconKey
+  sealed trait medium
+    extends StObject
+       with IconKey
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
@@ -1232,12 +1442,16 @@ object storybookComponentsStrings {
   def mediumlight: mediumlight = "mediumlight".asInstanceOf[mediumlight]
   
   @js.native
-  sealed trait memory extends IconKey
+  sealed trait memory
+    extends StObject
+       with IconKey
   @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait menu extends IconKey
+  sealed trait menu
+    extends StObject
+       with IconKey
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   
@@ -1247,7 +1461,9 @@ object storybookComponentsStrings {
   def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
-  sealed trait merge extends IconKey
+  sealed trait merge
+    extends StObject
+       with IconKey
   @scala.inline
   def merge: merge = "merge".asInstanceOf[merge]
   
@@ -1267,7 +1483,9 @@ object storybookComponentsStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait mirror extends IconKey
+  sealed trait mirror
+    extends StObject
+       with IconKey
   @scala.inline
   def mirror: mirror = "mirror".asInstanceOf[mirror]
   
@@ -1277,7 +1495,9 @@ object storybookComponentsStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait mobile extends IconKey
+  sealed trait mobile
+    extends StObject
+       with IconKey
   @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   
@@ -1293,7 +1513,8 @@ object storybookComponentsStrings {
   
   @js.native
   sealed trait `multi-select`
-    extends ControlType
+    extends StObject
+       with ControlType
        with OptionsControlType
   @scala.inline
   def `multi-select`: `multi-select` = "multi-select".asInstanceOf[`multi-select`]
@@ -1334,7 +1555,9 @@ object storybookComponentsStrings {
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
-  sealed trait number extends ControlType
+  sealed trait number
+    extends StObject
+       with ControlType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -1344,12 +1567,16 @@ object storybookComponentsStrings {
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait nut extends IconKey
+  sealed trait nut
+    extends StObject
+       with IconKey
   @scala.inline
   def nut: nut = "nut".asInstanceOf[nut]
   
   @js.native
-  sealed trait `object` extends ControlType
+  sealed trait `object`
+    extends StObject
+       with ControlType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -1389,12 +1616,16 @@ object storybookComponentsStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outbox extends IconKey
+  sealed trait outbox
+    extends StObject
+       with IconKey
   @scala.inline
   def outbox: outbox = "outbox".asInstanceOf[outbox]
   
   @js.native
-  sealed trait outline extends IconKey
+  sealed trait outline
+    extends StObject
+       with IconKey
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   
@@ -1414,17 +1645,23 @@ object storybookComponentsStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait paintbrush extends IconKey
+  sealed trait paintbrush
+    extends StObject
+       with IconKey
   @scala.inline
   def paintbrush: paintbrush = "paintbrush".asInstanceOf[paintbrush]
   
   @js.native
-  sealed trait paperclip extends IconKey
+  sealed trait paperclip
+    extends StObject
+       with IconKey
   @scala.inline
   def paperclip: paperclip = "paperclip".asInstanceOf[paperclip]
   
   @js.native
-  sealed trait paragraph extends IconKey
+  sealed trait paragraph
+    extends StObject
+       with IconKey
   @scala.inline
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
@@ -1444,12 +1681,16 @@ object storybookComponentsStrings {
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
-  sealed trait phone extends IconKey
+  sealed trait phone
+    extends StObject
+       with IconKey
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait photo extends IconKey
+  sealed trait photo
+    extends StObject
+       with IconKey
   @scala.inline
   def photo: photo = "photo".asInstanceOf[photo]
   
@@ -1459,17 +1700,23 @@ object storybookComponentsStrings {
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait pin extends IconKey
+  sealed trait pin
+    extends StObject
+       with IconKey
   @scala.inline
   def pin: pin = "pin".asInstanceOf[pin]
   
   @js.native
-  sealed trait play extends IconKey
+  sealed trait play
+    extends StObject
+       with IconKey
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait plus extends IconKey
+  sealed trait plus
+    extends StObject
+       with IconKey
   @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
   
@@ -1499,7 +1746,9 @@ object storybookComponentsStrings {
   def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
-  sealed trait power extends IconKey
+  sealed trait power
+    extends StObject
+       with IconKey
   @scala.inline
   def power: power = "power".asInstanceOf[power]
   
@@ -1514,17 +1763,23 @@ object storybookComponentsStrings {
   def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait print extends IconKey
+  sealed trait print
+    extends StObject
+       with IconKey
   @scala.inline
   def print: print = "print".asInstanceOf[print]
   
   @js.native
-  sealed trait proceed extends IconKey
+  sealed trait proceed
+    extends StObject
+       with IconKey
   @scala.inline
   def proceed: proceed = "proceed".asInstanceOf[proceed]
   
   @js.native
-  sealed trait profile extends IconKey
+  sealed trait profile
+    extends StObject
+       with IconKey
   @scala.inline
   def profile: profile = "profile".asInstanceOf[profile]
   
@@ -1534,7 +1789,9 @@ object storybookComponentsStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait pullrequest extends IconKey
+  sealed trait pullrequest
+    extends StObject
+       with IconKey
   @scala.inline
   def pullrequest: pullrequest = "pullrequest".asInstanceOf[pullrequest]
   
@@ -1549,7 +1806,9 @@ object storybookComponentsStrings {
   def q: q = "q".asInstanceOf[q]
   
   @js.native
-  sealed trait question extends IconKey
+  sealed trait question
+    extends StObject
+       with IconKey
   @scala.inline
   def question: question = "question".asInstanceOf[question]
   
@@ -1560,13 +1819,16 @@ object storybookComponentsStrings {
   
   @js.native
   sealed trait radio
-    extends ControlType
+    extends StObject
+       with ControlType
        with OptionsControlType
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
-  sealed trait range extends ControlType
+  sealed trait range
+    extends StObject
+       with ControlType
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   
@@ -1576,12 +1838,16 @@ object storybookComponentsStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait redirect extends IconKey
+  sealed trait redirect
+    extends StObject
+       with IconKey
   @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait redux extends IconKey
+  sealed trait redux
+    extends StObject
+       with IconKey
   @scala.inline
   def redux: redux = "redux".asInstanceOf[redux]
   
@@ -1601,17 +1867,23 @@ object storybookComponentsStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait reply extends IconKey
+  sealed trait reply
+    extends StObject
+       with IconKey
   @scala.inline
   def reply: reply = "reply".asInstanceOf[reply]
   
   @js.native
-  sealed trait repository extends IconKey
+  sealed trait repository
+    extends StObject
+       with IconKey
   @scala.inline
   def repository: repository = "repository".asInstanceOf[repository]
   
   @js.native
-  sealed trait requestchange extends IconKey
+  sealed trait requestchange
+    extends StObject
+       with IconKey
   @scala.inline
   def requestchange: requestchange = "requestchange".asInstanceOf[requestchange]
   
@@ -1631,7 +1903,9 @@ object storybookComponentsStrings {
   def rp: rp = "rp".asInstanceOf[rp]
   
   @js.native
-  sealed trait rss extends IconKey
+  sealed trait rss
+    extends StObject
+       with IconKey
   @scala.inline
   def rss: rss = "rss".asInstanceOf[rss]
   
@@ -1666,7 +1940,9 @@ object storybookComponentsStrings {
   def seafoam: seafoam = "seafoam".asInstanceOf[seafoam]
   
   @js.native
-  sealed trait search extends IconKey
+  sealed trait search
+    extends StObject
+       with IconKey
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
@@ -1676,39 +1952,52 @@ object storybookComponentsStrings {
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
-  sealed trait section extends Level
+  sealed trait section
+    extends StObject
+       with Level
   @scala.inline
   def section: section = "section".asInstanceOf[section]
   
   @js.native
   sealed trait select
-    extends ControlType
+    extends StObject
+       with ControlType
        with OptionsControlType
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait share extends IconKey
+  sealed trait share
+    extends StObject
+       with IconKey
   @scala.inline
   def share: share = "share".asInstanceOf[share]
   
   @js.native
-  sealed trait sharealt extends IconKey
+  sealed trait sharealt
+    extends StObject
+       with IconKey
   @scala.inline
   def sharealt: sharealt = "sharealt".asInstanceOf[sharealt]
   
   @js.native
-  sealed trait shield extends IconKey
+  sealed trait shield
+    extends StObject
+       with IconKey
   @scala.inline
   def shield: shield = "shield".asInstanceOf[shield]
   
   @js.native
-  sealed trait sidebar extends IconKey
+  sealed trait sidebar
+    extends StObject
+       with IconKey
   @scala.inline
   def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
   
   @js.native
-  sealed trait sidebaralt extends IconKey
+  sealed trait sidebaralt
+    extends StObject
+       with IconKey
   @scala.inline
   def sidebaralt: sidebaralt = "sidebaralt".asInstanceOf[sidebaralt]
   
@@ -1738,7 +2027,9 @@ object storybookComponentsStrings {
   def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait speaker extends IconKey
+  sealed trait speaker
+    extends StObject
+       with IconKey
   @scala.inline
   def speaker: speaker = "speaker".asInstanceOf[speaker]
   
@@ -1748,17 +2039,23 @@ object storybookComponentsStrings {
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait star extends IconKey
+  sealed trait star
+    extends StObject
+       with IconKey
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   
   @js.native
-  sealed trait starhollow extends IconKey
+  sealed trait starhollow
+    extends StObject
+       with IconKey
   @scala.inline
   def starhollow: starhollow = "starhollow".asInstanceOf[starhollow]
   
   @js.native
-  sealed trait start extends Alignments
+  sealed trait start
+    extends StObject
+       with Alignments
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
@@ -1768,7 +2065,9 @@ object storybookComponentsStrings {
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait stop extends IconKey
+  sealed trait stop
+    extends StObject
+       with IconKey
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   
@@ -1778,7 +2077,9 @@ object storybookComponentsStrings {
   def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
-  sealed trait structure extends IconKey
+  sealed trait structure
+    extends StObject
+       with IconKey
   @scala.inline
   def structure: structure = "structure".asInstanceOf[structure]
   
@@ -1798,12 +2099,16 @@ object storybookComponentsStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait subsection extends Level
+  sealed trait subsection
+    extends StObject
+       with Level
   @scala.inline
   def subsection: subsection = "subsection".asInstanceOf[subsection]
   
   @js.native
-  sealed trait subtract extends IconKey
+  sealed trait subtract
+    extends StObject
+       with IconKey
   @scala.inline
   def subtract: subtract = "subtract".asInstanceOf[subtract]
   
@@ -1818,7 +2123,9 @@ object storybookComponentsStrings {
   def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
-  sealed trait support extends IconKey
+  sealed trait support
+    extends StObject
+       with IconKey
   @scala.inline
   def support: support = "support".asInstanceOf[support]
   
@@ -1833,7 +2140,9 @@ object storybookComponentsStrings {
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait switchalt extends IconKey
+  sealed trait switchalt
+    extends StObject
+       with IconKey
   @scala.inline
   def switchalt: switchalt = "switchalt".asInstanceOf[switchalt]
   
@@ -1843,7 +2152,9 @@ object storybookComponentsStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait sync extends IconKey
+  sealed trait sync
+    extends StObject
+       with IconKey
   @scala.inline
   def sync: sync = "sync".asInstanceOf[sync]
   
@@ -1853,7 +2164,9 @@ object storybookComponentsStrings {
   def table: table = "table".asInstanceOf[table]
   
   @js.native
-  sealed trait tablet extends IconKey
+  sealed trait tablet
+    extends StObject
+       with IconKey
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   
@@ -1883,7 +2196,9 @@ object storybookComponentsStrings {
   def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
   
   @js.native
-  sealed trait text extends ControlType
+  sealed trait text
+    extends StObject
+       with ControlType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -1928,17 +2243,23 @@ object storybookComponentsStrings {
   def theme: theme = "theme".asInstanceOf[theme]
   
   @js.native
-  sealed trait thumbsup extends IconKey
+  sealed trait thumbsup
+    extends StObject
+       with IconKey
   @scala.inline
   def thumbsup: thumbsup = "thumbsup".asInstanceOf[thumbsup]
   
   @js.native
-  sealed trait time extends IconKey
+  sealed trait time
+    extends StObject
+       with IconKey
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait timer extends IconKey
+  sealed trait timer
+    extends StObject
+       with IconKey
   @scala.inline
   def timer: timer = "timer".asInstanceOf[timer]
   
@@ -1958,12 +2279,16 @@ object storybookComponentsStrings {
   def track: track = "track".asInstanceOf[track]
   
   @js.native
-  sealed trait transfer extends IconKey
+  sealed trait transfer
+    extends StObject
+       with IconKey
   @scala.inline
   def transfer: transfer = "transfer".asInstanceOf[transfer]
   
   @js.native
-  sealed trait trash extends IconKey
+  sealed trait trash
+    extends StObject
+       with IconKey
   @scala.inline
   def trash: trash = "trash".asInstanceOf[trash]
   
@@ -1978,7 +2303,9 @@ object storybookComponentsStrings {
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
-  sealed trait twitter extends IconKey
+  sealed trait twitter
+    extends StObject
+       with IconKey
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   
@@ -1998,22 +2325,30 @@ object storybookComponentsStrings {
   def ultraviolet: ultraviolet = "ultraviolet".asInstanceOf[ultraviolet]
   
   @js.native
-  sealed trait undo extends IconKey
+  sealed trait undo
+    extends StObject
+       with IconKey
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   
   @js.native
-  sealed trait unfold extends IconKey
+  sealed trait unfold
+    extends StObject
+       with IconKey
   @scala.inline
   def unfold: unfold = "unfold".asInstanceOf[unfold]
   
   @js.native
-  sealed trait unlock extends IconKey
+  sealed trait unlock
+    extends StObject
+       with IconKey
   @scala.inline
   def unlock: unlock = "unlock".asInstanceOf[unlock]
   
   @js.native
-  sealed trait upload extends IconKey
+  sealed trait upload
+    extends StObject
+       with IconKey
   @scala.inline
   def upload: upload = "upload".asInstanceOf[upload]
   
@@ -2028,27 +2363,37 @@ object storybookComponentsStrings {
   def use: use = "use".asInstanceOf[use]
   
   @js.native
-  sealed trait user extends IconKey
+  sealed trait user
+    extends StObject
+       with IconKey
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   
   @js.native
-  sealed trait useradd extends IconKey
+  sealed trait useradd
+    extends StObject
+       with IconKey
   @scala.inline
   def useradd: useradd = "useradd".asInstanceOf[useradd]
   
   @js.native
-  sealed trait useralt extends IconKey
+  sealed trait useralt
+    extends StObject
+       with IconKey
   @scala.inline
   def useralt: useralt = "useralt".asInstanceOf[useralt]
   
   @js.native
-  sealed trait users extends IconKey
+  sealed trait users
+    extends StObject
+       with IconKey
   @scala.inline
   def users: users = "users".asInstanceOf[users]
   
   @js.native
-  sealed trait valid extends ValidationStates
+  sealed trait valid
+    extends StObject
+       with ValidationStates
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   
@@ -2063,7 +2408,9 @@ object storybookComponentsStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait video extends IconKey
+  sealed trait video
+    extends StObject
+       with IconKey
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
@@ -2073,7 +2420,9 @@ object storybookComponentsStrings {
   def view: view = "view".asInstanceOf[view]
   
   @js.native
-  sealed trait warn extends ValidationStates
+  sealed trait warn
+    extends StObject
+       with ValidationStates
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   
@@ -2083,7 +2432,9 @@ object storybookComponentsStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait watch extends IconKey
+  sealed trait watch
+    extends StObject
+       with IconKey
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
   
@@ -2098,7 +2449,9 @@ object storybookComponentsStrings {
   def webview: webview = "webview".asInstanceOf[webview]
   
   @js.native
-  sealed trait wrench extends IconKey
+  sealed trait wrench
+    extends StObject
+       with IconKey
   @scala.inline
   def wrench: wrench = "wrench".asInstanceOf[wrench]
   
@@ -2108,22 +2461,30 @@ object storybookComponentsStrings {
   def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
-  sealed trait youtube extends IconKey
+  sealed trait youtube
+    extends StObject
+       with IconKey
   @scala.inline
   def youtube: youtube = "youtube".asInstanceOf[youtube]
   
   @js.native
-  sealed trait zoom extends IconKey
+  sealed trait zoom
+    extends StObject
+       with IconKey
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   
   @js.native
-  sealed trait zoomout extends IconKey
+  sealed trait zoomout
+    extends StObject
+       with IconKey
   @scala.inline
   def zoomout: zoomout = "zoomout".asInstanceOf[zoomout]
   
   @js.native
-  sealed trait zoomreset extends IconKey
+  sealed trait zoomreset
+    extends StObject
+       with IconKey
   @scala.inline
   def zoomreset: zoomreset = "zoomreset".asInstanceOf[zoomreset]
 }

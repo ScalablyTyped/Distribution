@@ -2,36 +2,34 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchUserIDsResponse extends StObject {
   
   /**
     * List of userID matching the query.
     */
-  var hits: js.Array[UserIDResponse] = js.native
+  var hits: js.Array[UserIDResponse]
   
   /**
     * Number of hits retrieved per page.
     */
-  var hitsPerPage: Double = js.native
+  var hitsPerPage: Double
   
   /**
     * Number of userIDs matching the query.
     */
-  var nbHits: Double = js.native
+  var nbHits: Double
   
   /**
     * Current page.
     */
-  var page: Double = js.native
+  var page: Double
   
   /**
     * Timestamp of the last update of the index.
     */
-  var updatedAt: Double = js.native
+  var updatedAt: Double
 }
 object SearchUserIDsResponse {
   

@@ -6,7 +6,6 @@ import typings.pulumiAws.pulumiAwsStrings.ipv4
 import typings.pulumiAws.pulumiAwsStrings.network
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enumsAlbMod {

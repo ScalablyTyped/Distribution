@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.EvaluateRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.EvaluateResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeEvaluateResponse extends StObject {
   
-  var paramsType: js.Array[EvaluateRequest] = js.native
+  var paramsType: js.Array[EvaluateRequest]
   
-  var returnType: EvaluateResponse = js.native
+  var returnType: EvaluateResponse
 }
 object ReturnTypeEvaluateResponse {
   

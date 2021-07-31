@@ -2,27 +2,26 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Instance.save method
   */
-@js.native
 trait InstanceSaveOptions
-  extends FieldsOptions
+  extends StObject
+     with FieldsOptions
      with LoggingOptions
      with ReturningOptions
      with SearchPathOptions {
   
-  var hooks: js.UndefOr[Boolean] = js.native
+  var hooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the updatedAt timestamp will not be updated.
     *
     * Defaults to false
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
 }
 object InstanceSaveOptions {
   

@@ -3,17 +3,15 @@ package typings.braintree.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowVaulting extends StObject {
   
-  var allowVaulting: js.UndefOr[Boolean] = js.native
+  var allowVaulting: js.UndefOr[Boolean] = js.undefined
   
-  var includeBillingPostalCode: js.UndefOr[Boolean] = js.native
+  var includeBillingPostalCode: js.UndefOr[Boolean] = js.undefined
   
-  var revokeAfter: js.UndefOr[Date] = js.native
+  var revokeAfter: js.UndefOr[Date] = js.undefined
 }
 object AllowVaulting {
   

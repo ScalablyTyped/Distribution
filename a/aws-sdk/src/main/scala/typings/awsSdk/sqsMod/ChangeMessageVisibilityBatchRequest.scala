@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeMessageVisibilityBatchRequest extends StObject {
   
   /**
     * A list of receipt handles of the messages for which the visibility timeout must be changed.
     */
-  var Entries: ChangeMessageVisibilityBatchRequestEntryList = js.native
+  var Entries: ChangeMessageVisibilityBatchRequestEntryList
   
   /**
     * The URL of the Amazon SQS queue whose messages' visibility is changed. Queue URLs and names are case-sensitive.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
 }
 object ChangeMessageVisibilityBatchRequest {
   

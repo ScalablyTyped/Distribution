@@ -4,7 +4,6 @@ import typings.backlogJs.anon.Errors
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Error {
@@ -57,16 +56,15 @@ object Error {
     def this(response: Response) = this()
   }
   
-  @js.native
   trait BacklogErrorMessage extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var errorInfo: String = js.native
+    var errorInfo: String
     
-    var message: String = js.native
+    var message: String
     
-    var moreInfo: String = js.native
+    var moreInfo: String
   }
   object BacklogErrorMessage {
     

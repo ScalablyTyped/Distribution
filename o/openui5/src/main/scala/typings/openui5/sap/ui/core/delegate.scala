@@ -8,13 +8,14 @@ import typings.openui5.sap.ui.base.Object
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delegate {
   
   @js.native
-  trait ItemNavigation extends EventProvider {
+  trait ItemNavigation
+    extends StObject
+       with EventProvider {
     
     /**
       * Returns disabled modifiersThese modifiers will not be handled by the <code>ItemNavigation</code>
@@ -122,7 +123,9 @@ object delegate {
   }
   
   @js.native
-  trait ScrollEnablement extends Object {
+  trait ScrollEnablement
+    extends StObject
+       with Object {
     
     def getChildPosition(vElement: JQueryStatic): js.Any = js.native
     /**

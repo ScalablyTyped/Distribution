@@ -3,26 +3,35 @@ package typings.jwtDecode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jwt-decode", JSImport.Default)
+  @JSImport("jwt-decode", JSImport.Namespace)
   @js.native
-  def default[T](token: String): T = js.native
-  @JSImport("jwt-decode", JSImport.Default)
-  @js.native
-  def default[T](token: String, options: JwtDecodeOptions): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](token: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def default[T](token: String, options: JwtDecodeOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("jwt-decode", "InvalidTokenError")
   @js.native
-  class InvalidTokenError () extends Error
+  class InvalidTokenError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @js.native
   trait JwtDecodeOptions extends StObject {
     
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
   }
   object JwtDecodeOptions {
     
@@ -43,12 +52,11 @@ object mod {
     }
   }
   
-  @js.native
   trait JwtHeader extends StObject {
     
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object JwtHeader {
     
@@ -75,22 +83,21 @@ object mod {
     }
   }
   
-  @js.native
   trait JwtPayload extends StObject {
     
-    var aud: js.UndefOr[js.Array[String] | String] = js.native
+    var aud: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var exp: js.UndefOr[Double] = js.native
+    var exp: js.UndefOr[Double] = js.undefined
     
-    var iat: js.UndefOr[Double] = js.native
+    var iat: js.UndefOr[Double] = js.undefined
     
-    var iss: js.UndefOr[String] = js.native
+    var iss: js.UndefOr[String] = js.undefined
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var nbf: js.UndefOr[Double] = js.native
+    var nbf: js.UndefOr[Double] = js.undefined
     
-    var sub: js.UndefOr[String] = js.native
+    var sub: js.UndefOr[String] = js.undefined
   }
   object JwtPayload {
     

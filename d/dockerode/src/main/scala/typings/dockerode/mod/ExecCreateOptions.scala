@@ -2,31 +2,29 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecCreateOptions extends StObject {
   
-  var AttachStderr: js.UndefOr[Boolean] = js.native
+  var AttachStderr: js.UndefOr[Boolean] = js.undefined
   
-  var AttachStdin: js.UndefOr[Boolean] = js.native
+  var AttachStdin: js.UndefOr[Boolean] = js.undefined
   
-  var AttachStdout: js.UndefOr[Boolean] = js.native
+  var AttachStdout: js.UndefOr[Boolean] = js.undefined
   
-  var Cmd: js.UndefOr[js.Array[String]] = js.native
+  var Cmd: js.UndefOr[js.Array[String]] = js.undefined
   
-  var DetachKeys: js.UndefOr[String] = js.native
+  var DetachKeys: js.UndefOr[String] = js.undefined
   
-  var Env: js.UndefOr[js.Array[String]] = js.native
+  var Env: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Privileged: js.UndefOr[Boolean] = js.native
+  var Privileged: js.UndefOr[Boolean] = js.undefined
   
-  var Tty: js.UndefOr[Boolean] = js.native
+  var Tty: js.UndefOr[Boolean] = js.undefined
   
-  var User: js.UndefOr[String] = js.native
+  var User: js.UndefOr[String] = js.undefined
   
-  var WorkingDir: js.UndefOr[String] = js.native
+  var WorkingDir: js.UndefOr[String] = js.undefined
 }
 object ExecCreateOptions {
   

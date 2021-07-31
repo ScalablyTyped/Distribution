@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLabelingJobsForWorkteamRequest extends StObject {
   
   /**
     * A filter that returns only labeling jobs created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only labeling jobs created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter the limits jobs to only the ones whose job reference code contains the specified string.
     */
-  var JobReferenceCodeContains: js.UndefOr[typings.awsSdk.sagemakerMod.JobReferenceCodeContains] = js.native
+  var JobReferenceCodeContains: js.UndefOr[typings.awsSdk.sagemakerMod.JobReferenceCodeContains] = js.undefined
   
   /**
     * The maximum number of labeling jobs to return in each page of the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * If the result of the previous ListLabelingJobsForWorkteam request was truncated, the response includes a NextToken. To retrieve the next set of labeling jobs, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The field to sort results by. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[ListLabelingJobsForWorkteamSortByOptions] = js.native
+  var SortBy: js.UndefOr[ListLabelingJobsForWorkteamSortByOptions] = js.undefined
   
   /**
     * The sort order for results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the work team for which you want to see labeling jobs for.
     */
-  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn = js.native
+  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn
 }
 object ListLabelingJobsForWorkteamRequest {
   

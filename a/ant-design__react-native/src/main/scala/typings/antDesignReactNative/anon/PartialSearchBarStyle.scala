@@ -4,24 +4,22 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/search-bar/style.SearchBarStyle> */
-@js.native
 trait PartialSearchBarStyle extends StObject {
   
-  var cancelText: js.UndefOr[TextStyle] = js.native
+  var cancelText: js.UndefOr[TextStyle] = js.undefined
   
-  var cancelTextContainer: js.UndefOr[ViewStyle] = js.native
+  var cancelTextContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var input: js.UndefOr[TextStyle] = js.native
+  var input: js.UndefOr[TextStyle] = js.undefined
   
-  var inputWrapper: js.UndefOr[ViewStyle] = js.native
+  var inputWrapper: js.UndefOr[ViewStyle] = js.undefined
   
-  var search: js.UndefOr[TextStyle] = js.native
+  var search: js.UndefOr[TextStyle] = js.undefined
   
-  var wrapper: js.UndefOr[ViewStyle] = js.native
+  var wrapper: js.UndefOr[ViewStyle] = js.undefined
 }
 object PartialSearchBarStyle {
   

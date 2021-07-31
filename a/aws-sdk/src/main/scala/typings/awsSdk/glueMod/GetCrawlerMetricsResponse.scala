@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCrawlerMetricsResponse extends StObject {
   
   /**
     * A list of metrics for the specified crawler.
     */
-  var CrawlerMetricsList: js.UndefOr[typings.awsSdk.glueMod.CrawlerMetricsList] = js.native
+  var CrawlerMetricsList: js.UndefOr[typings.awsSdk.glueMod.CrawlerMetricsList] = js.undefined
   
   /**
     * A continuation token, if the returned list does not contain the last metric available.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetCrawlerMetricsResponse {
   

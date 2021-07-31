@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WxSaveFileSuccessCallbackResult extends StObject {
   
   /** 存储后的文件路径 */
-  var savedFilePath: Double = js.native
+  var savedFilePath: Double
 }
 object WxSaveFileSuccessCallbackResult {
   

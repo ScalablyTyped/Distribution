@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Sessions")
@@ -32,7 +31,7 @@ class ResourceUsersSessions protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSessionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSessionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceUsersSessions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSessionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSessionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(params: ParamsResourceUsersSessionsList): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(
     params: ParamsResourceUsersSessionsList,
@@ -100,7 +99,7 @@ class ResourceUsersSessions protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaSession] = js.native
   def update(callback: BodyResponseCallback[SchemaSession]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
   def update(params: ParamsResourceUsersSessionsUpdate): GaxiosPromise[SchemaSession] = js.native
   def update(params: ParamsResourceUsersSessionsUpdate, callback: BodyResponseCallback[SchemaSession]): Unit = js.native
   def update(

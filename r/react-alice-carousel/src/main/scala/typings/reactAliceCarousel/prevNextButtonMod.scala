@@ -5,23 +5,24 @@ import typings.reactAliceCarousel.reactAliceCarouselStrings.next
 import typings.reactAliceCarousel.reactAliceCarouselStrings.prev
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prevNextButtonMod {
   
-  @JSImport("react-alice-carousel/lib/views/PrevNextButton", "PrevNextButton")
+  @JSImport("react-alice-carousel/lib/views/PrevNextButton", JSImport.Namespace)
   @js.native
-  def PrevNextButton(hasNameDisabledOnClick: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def PrevNextButton(hasNameDisabledOnClick: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameDisabledOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var name: prev | next = js.native
+    var name: prev | next
     
-    def onClick(e: js.Any): Unit = js.native
+    def onClick(e: js.Any): Unit
   }
   object Props {
     

@@ -4,23 +4,23 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayNotEmptyMod {
+  
+  @JSImport("class-validator/types/decorator/array/ArrayNotEmpty", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/array/ArrayNotEmpty", "ARRAY_NOT_EMPTY")
   @js.native
   val ARRAY_NOT_EMPTY: /* "arrayNotEmpty" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/array/ArrayNotEmpty", "ArrayNotEmpty")
-  @js.native
-  def ArrayNotEmpty_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/array/ArrayNotEmpty", "ArrayNotEmpty")
-  @js.native
-  def ArrayNotEmpty_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def ArrayNotEmpty_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayNotEmpty")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ArrayNotEmpty_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayNotEmpty")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/array/ArrayNotEmpty", "arrayNotEmpty")
-  @js.native
-  def arrayNotEmpty(array: js.Any): Boolean = js.native
+  @scala.inline
+  def arrayNotEmpty(array: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayNotEmpty")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

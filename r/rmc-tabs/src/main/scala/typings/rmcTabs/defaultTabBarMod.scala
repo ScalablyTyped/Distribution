@@ -13,7 +13,6 @@ import typings.rmcTabs.rmcTabsStrings.top
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultTabBarMod {
@@ -78,11 +77,12 @@ object defaultTabBarMod {
     var transform: js.UndefOr[String] = js.native
   }
   
-  @js.native
-  trait PropsType extends TabBarPropsType {
+  trait PropsType
+    extends StObject
+       with TabBarPropsType {
     
     /** default: rmc-tabs-tab-bar */
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object PropsType {
     

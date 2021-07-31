@@ -11,8 +11,8 @@ Assert utility from yeoman
 | Full name          | yeoman-assert |
 | Keywords           | assert, assertion, test, testing, utility, helper, yeoman |
 | # releases         | 1 |
-| # dependents       | 122 |
-| # downloads        | 2157598 |
+| # dependents       | 123 |
+| # downloads        | 2499443 |
 | # stars            | 2 |
 
 ## Links

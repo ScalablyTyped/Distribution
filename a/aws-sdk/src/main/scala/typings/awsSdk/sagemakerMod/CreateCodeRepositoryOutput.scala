@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCodeRepositoryOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the new repository.
     */
-  var CodeRepositoryArn: typings.awsSdk.sagemakerMod.CodeRepositoryArn = js.native
+  var CodeRepositoryArn: typings.awsSdk.sagemakerMod.CodeRepositoryArn
 }
 object CreateCodeRepositoryOutput {
   

@@ -2,7 +2,6 @@ package typings.onetime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,12 +21,10 @@ object mod {
   	onetime.callCount(foo); //=> 3
   	```
   	*/
-  @JSImport("onetime", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
-  @JSImport("onetime", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, ReturnType]]
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, ReturnType]]
   
   @JSImport("onetime", JSImport.Namespace)
   @js.native
@@ -53,21 +50,19 @@ object mod {
   	//=> 3
   	```
   	*/
-  @JSImport("onetime", "callCount")
-  @js.native
-  def callCount(fn: js.Function1[/* repeated */ js.Any, _]): Double = js.native
+  @scala.inline
+  def callCount(fn: js.Function1[/* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("callCount")(fn.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof onetime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Throw an error when called more than once.
     		@default false
     		*/
-    var `throw`: js.UndefOr[Boolean] = js.native
+    var `throw`: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeliveryStreamsOutput extends StObject {
   
   /**
     * The names of the delivery streams.
     */
-  var DeliveryStreamNames: DeliveryStreamNameList = js.native
+  var DeliveryStreamNames: DeliveryStreamNameList
   
   /**
     * Indicates whether there are more delivery streams available to list.
     */
-  var HasMoreDeliveryStreams: BooleanObject = js.native
+  var HasMoreDeliveryStreams: BooleanObject
 }
 object ListDeliveryStreamsOutput {
   

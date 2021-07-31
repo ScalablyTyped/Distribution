@@ -5,7 +5,6 @@ import typings.storybookChannels.mod.Channel
 import typings.storybookChannels.mod.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
@@ -14,22 +13,21 @@ object channelMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def collapseAll(): Unit = js.native
+    def collapseAll(): Unit
     
-    def emit(`type`: String, args: js.Any*): Unit = js.native
+    def emit(`type`: String, args: js.Any*): Unit
     
-    def expandAll(): Unit = js.native
+    def expandAll(): Unit
     
-    def getChannel(): Channel = js.native
+    def getChannel(): Channel
     
-    def off(`type`: String, cb: Listener): Unit = js.native
+    def off(`type`: String, cb: Listener): Unit
     
-    def on(`type`: String, cb: Listener): js.Function0[Unit] = js.native
+    def on(`type`: String, cb: Listener): js.Function0[Unit]
     
-    def once(`type`: String, cb: Listener): Unit = js.native
+    def once(`type`: String, cb: Listener): Unit
   }
   object SubAPI {
     

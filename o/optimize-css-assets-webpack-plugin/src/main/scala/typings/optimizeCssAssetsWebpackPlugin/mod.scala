@@ -5,20 +5,20 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("optimize-css-assets-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
   type OptimizeCssAssetsPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -29,14 +29,14 @@ object mod {
       *
       * @default /\.css$/g
       */
-    var assetNameRegExp: js.UndefOr[RegExp] = js.native
+    var assetNameRegExp: js.UndefOr[RegExp] = js.undefined
     
     /**
       * A boolean indicating if the plugin can print messages to the console.
       *
       * @default true
       */
-    var canPrint: js.UndefOr[Boolean] = js.native
+    var canPrint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The CSS processor used to optimize \ minimize the CSS. This should be a
@@ -45,21 +45,21 @@ object mod {
       *
       * @default cssnano
       */
-    var cssProcessor: js.UndefOr[Process] = js.native
+    var cssProcessor: js.UndefOr[Process] = js.undefined
     
     /**
       * The options passed to the `cssProcessor`.
       *
       * @default {}
       */
-    var cssProcessorOptions: js.UndefOr[js.Object] = js.native
+    var cssProcessorOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The plugin options passed to the `cssProcessor`.
       *
       * @default {}
       */
-    var cssProcessorPluginOptions: js.UndefOr[js.Object] = js.native
+    var cssProcessorPluginOptions: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     

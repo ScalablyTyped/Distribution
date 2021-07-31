@@ -12,7 +12,7 @@ json-schema.org to protobuf object converter
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1339 |
+| # downloads        | 1267 |
 | # stars            | 2 |
 
 ## Links

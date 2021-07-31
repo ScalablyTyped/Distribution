@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputLocation extends StObject {
   
   /**
     * The S3 bucket for output.
     */
-  var s3Bucket: js.UndefOr[S3Bucket] = js.native
+  var s3Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * The S3 folder in the s3Bucket where output files will be placed.
     */
-  var s3Prefix: js.UndefOr[S3Key] = js.native
+  var s3Prefix: js.UndefOr[S3Key] = js.undefined
 }
 object OutputLocation {
   

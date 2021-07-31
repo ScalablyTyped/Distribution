@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Form extends StObject {
   
   /** URL of the form. */
-  var formUrl: js.UndefOr[String] = js.native
+  var formUrl: js.UndefOr[String] = js.undefined
   
   /** URL of the form responses document. Only set if respsonses have been recorded and only when the requesting user is an editor of the form. Read-only. */
-  var responseUrl: js.UndefOr[String] = js.native
+  var responseUrl: js.UndefOr[String] = js.undefined
   
   /** URL of a thumbnail image of the Form. Read-only. */
-  var thumbnailUrl: js.UndefOr[String] = js.native
+  var thumbnailUrl: js.UndefOr[String] = js.undefined
   
   /** Title of the Form. Read-only. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Form {
   

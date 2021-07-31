@@ -2,14 +2,14 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IonVoicePlayEnd extends BaseParams {
+trait IonVoicePlayEnd
+  extends StObject
+     with BaseParams {
   
   @JSName("success")
-  def success_MIonVoicePlayEnd(res: Resouce): Unit = js.native
+  def success_MIonVoicePlayEnd(res: Resouce): Unit
 }
 object IonVoicePlayEnd {
   

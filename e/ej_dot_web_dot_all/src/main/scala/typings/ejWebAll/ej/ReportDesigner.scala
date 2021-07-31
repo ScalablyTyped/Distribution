@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportDesigner extends Widget_ {
+trait ReportDesigner
+  extends StObject
+     with Widget_ {
   
   /** Add a dataset to the report at runtime.
     * @param {any} a JSON to define a connection properties for dataset.
@@ -201,7 +202,7 @@ trait ReportDesigner extends Widget_ {
     * @param {any[]} Name of the report items as string array.
     * @returns {void}
     */
-  def selectItems(itemNames: js.Array[_]): Unit = js.native
+  def selectItems(itemNames: js.Array[js.Any]): Unit = js.native
   
   /** Visually move the selected report item behind its closest intersected report item.
     * @returns {void}
@@ -262,23 +263,33 @@ object ReportDesigner {
     
     ///Shows all the configuration pane items.
     @js.native
-    sealed trait All extends ConfigureItems
+    sealed trait All
+      extends StObject
+         with ConfigureItems
     
     ///Shows or hides the data panel in configuration pane.
     @js.native
-    sealed trait Data extends ConfigureItems
+    sealed trait Data
+      extends StObject
+         with ConfigureItems
     
     ///Shows or hides the image manager panel in configuration pane.
     @js.native
-    sealed trait ImageManager extends ConfigureItems
+    sealed trait ImageManager
+      extends StObject
+         with ConfigureItems
     
     ///Shows or hides the parameter panel in configuration pane.
     @js.native
-    sealed trait Parameter extends ConfigureItems
+    sealed trait Parameter
+      extends StObject
+         with ConfigureItems
     
     ///Shows or hides the properties panel in configuration pane.
     @js.native
-    sealed trait Property extends ConfigureItems
+    sealed trait Property
+      extends StObject
+         with ConfigureItems
   }
   
   @js.native
@@ -289,19 +300,27 @@ object ReportDesigner {
     
     ///Shows all the options in data source pane.
     @js.native
-    sealed trait All extends Permission
+    sealed trait All
+      extends StObject
+         with Permission
     
     ///Shows or hides create option in data source pane.
     @js.native
-    sealed trait Create extends Permission
+    sealed trait Create
+      extends StObject
+         with Permission
     
     ///Shows or hides the delete option in data source pane.
     @js.native
-    sealed trait Delete extends Permission
+    sealed trait Delete
+      extends StObject
+         with Permission
     
     ///Shows or hides the edit option in data source pane.
     @js.native
-    sealed trait Edit extends Permission
+    sealed trait Edit
+      extends StObject
+         with Permission
   }
   
   @js.native
@@ -312,107 +331,146 @@ object ReportDesigner {
     
     ///Snaps the selected report items to the closest gridline.
     @js.native
-    sealed trait AlignGrid extends ToolbarItems
+    sealed trait AlignGrid
+      extends StObject
+         with ToolbarItems
     
     ///Aligns the selected report item in the design surface.
     @js.native
-    sealed trait Alignment extends ToolbarItems
+    sealed trait Alignment
+      extends StObject
+         with ToolbarItems
     
     ///Shows all the toolbar items.
     @js.native
-    sealed trait All extends ToolbarItems
+    sealed trait All
+      extends StObject
+         with ToolbarItems
     
     ///Aligns all report items to the center position of design surface in horizontal or vertical direction.
     @js.native
-    sealed trait Center extends ToolbarItems
+    sealed trait Center
+      extends StObject
+         with ToolbarItems
     
     ///Copies selected text or object to the clipboard.
     @js.native
-    sealed trait Copy extends ToolbarItems
+    sealed trait Copy
+      extends StObject
+         with ToolbarItems
     
     ///Removes the selected item from the active report.
     @js.native
-    sealed trait Cut extends ToolbarItems
+    sealed trait Cut
+      extends StObject
+         with ToolbarItems
     
     ///Deletes the selected item or text from the report.
     @js.native
-    sealed trait Delete extends ToolbarItems
+    sealed trait Delete
+      extends StObject
+         with ToolbarItems
     
     ///Distributes selected report items at equal intervals from each other.
     @js.native
-    sealed trait Distribute extends ToolbarItems
+    sealed trait Distribute
+      extends StObject
+         with ToolbarItems
     
     ///Switches from preview to design view of the report.
     @js.native
-    sealed trait EditDesign extends ToolbarItems
+    sealed trait EditDesign
+      extends StObject
+         with ToolbarItems
     
     ///Creates a new, blank report.
     @js.native
-    sealed trait New extends ToolbarItems
+    sealed trait New
+      extends StObject
+         with ToolbarItems
     
     ///Displays the Open dialog box to retrieve an existing report.
     @js.native
-    sealed trait Open extends ToolbarItems
+    sealed trait Open
+      extends StObject
+         with ToolbarItems
     
     ///Used to change the layout order of report items in design area surface.
     @js.native
-    sealed trait Order extends ToolbarItems
+    sealed trait Order
+      extends StObject
+         with ToolbarItems
     
     ///Pastes the item that cut or copied into (the position of the insertion point) the report from the clipboard.
     @js.native
-    sealed trait Paste extends ToolbarItems
+    sealed trait Paste
+      extends StObject
+         with ToolbarItems
     
     ///Previews the active report in report viewer.
     @js.native
-    sealed trait Preview extends ToolbarItems
+    sealed trait Preview
+      extends StObject
+         with ToolbarItems
     
     ///Reverses the action of the last Undo command.
     @js.native
-    sealed trait Redo extends ToolbarItems
+    sealed trait Redo
+      extends StObject
+         with ToolbarItems
     
     ///Saves the active report to a specified location.
     @js.native
-    sealed trait Save extends ToolbarItems
+    sealed trait Save
+      extends StObject
+         with ToolbarItems
     
     ///Equally size the selected report items in the design surface.
     @js.native
-    sealed trait Sizing extends ToolbarItems
+    sealed trait Sizing
+      extends StObject
+         with ToolbarItems
     
     ///Reverses the last action or deletes the last entry that is typed.
     @js.native
-    sealed trait Undo extends ToolbarItems
+    sealed trait Undo
+      extends StObject
+         with ToolbarItems
     
     ///Contains options to show or hide `Header`, `Footer`, `Grid Lines`, `Snap To Shape` in the report design.
     @js.native
-    sealed trait View extends ToolbarItems
+    sealed trait View
+      extends StObject
+         with ToolbarItems
     
     ///Used to "zoom in" to get a close-up view of a report or "zoom out" to see more of the page at a reduced size.
     @js.native
-    sealed trait Zoom extends ToolbarItems
+    sealed trait Zoom
+      extends StObject
+         with ToolbarItems
   }
   
-  @js.native
   trait AjaxBeforeLoadEventArgs extends StObject {
     
     /** Action type of AJAX call back.
       */
-    var actionType: js.UndefOr[String] = js.native
+    var actionType: js.UndefOr[String] = js.undefined
     
     /** To pass the custom data while AJAX post back.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** AJAX headers, we can pass any custom header through this property.
       */
-    var headers: js.UndefOr[js.Array[_]] = js.native
+    var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Token of report designer.
       */
-    var reportDesignerToken: js.UndefOr[String] = js.native
+    var reportDesignerToken: js.UndefOr[String] = js.undefined
     
     /** Token of ReportingService.
       */
-    var serviceAuthorizationToken: js.UndefOr[String] = js.native
+    var serviceAuthorizationToken: js.UndefOr[String] = js.undefined
   }
   object AjaxBeforeLoadEventArgs {
     
@@ -438,7 +496,7 @@ object ReportDesigner {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -460,24 +518,21 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait AjaxErrorEventArgs extends StObject
   
-  @js.native
   trait AjaxSuccessEventArgs extends StObject
   
-  @js.native
   trait ConfigurePaneSettings extends StObject {
     
     /** Shows or hides the grouped items in the configuration pane with the help of enum ej.ReportDesigner.ConfigureItems
       * @Default {ej.ReportDesigner.ConfigureItems.All}
       */
-    var items: js.UndefOr[ConfigureItems | String] = js.native
+    var items: js.UndefOr[ConfigureItems | String] = js.undefined
     
     /** Shows or hides the configuration pane in ReportDesigner control.
       * @Default {true}
       */
-    var showConfigurePane: js.UndefOr[Boolean] = js.native
+    var showConfigurePane: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigurePaneSettings {
     
@@ -504,128 +559,125 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject
   
-  @js.native
   trait DestroyEventArgs extends StObject
   
-  @js.native
   trait Model extends StObject {
     
     /** This event will be triggered before AJAX loads.
       */
-    var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.native
+    var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered when AJAX result is failed.
       */
-    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.native
+    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered when AJAX result is succeeded.
       */
-    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.native
+    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
     
     /** Shows or hides the items of configuration pane in ReportDesigner control.
       */
-    var configurePaneSettings: js.UndefOr[ConfigurePaneSettings] = js.native
+    var configurePaneSettings: js.UndefOr[ConfigurePaneSettings] = js.undefined
     
     /** This event will be triggered when the Report Designer widget is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered when the Report Designer widget is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the locale for report designer.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** This event will be triggered while initiating new data click action. You can suppress the new data creation panel and perform custom actions.
       */
-    var newDataClick: js.UndefOr[js.Function1[/* e */ NewDataClickEventArgs, Unit]] = js.native
+    var newDataClick: js.UndefOr[js.Function1[/* e */ NewDataClickEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered while clicking open menu items.
       */
-    var openReportClick: js.UndefOr[js.Function1[/* e */ OpenReportClickEventArgs, Unit]] = js.native
+    var openReportClick: js.UndefOr[js.Function1[/* e */ OpenReportClickEventArgs, Unit]] = js.undefined
     
     /** Shows or hides the create, edit, and delete options in data source and dataset panels.
       * @Default {ej.ReportDesigner.Permission.All}
       */
-    var permissionSettings: js.UndefOr[PermissionSettings] = js.native
+    var permissionSettings: js.UndefOr[PermissionSettings] = js.undefined
     
     /** This event will be triggered while previewing the report in RDLC mode. It can be used to suppress the preview data dialog in RDLC mode.
       */
-    var previewReport: js.UndefOr[js.Function1[/* e */ PreviewReportEventArgs, Unit]] = js.native
+    var previewReport: js.UndefOr[js.Function1[/* e */ PreviewReportEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the list of custom data extension items.
       * @Default {[]}
       */
-    var reportDataExtensions: js.UndefOr[js.Array[ReportDataExtension]] = js.native
+    var reportDataExtensions: js.UndefOr[js.Array[ReportDataExtension]] = js.undefined
     
     /** Gets or sets the list of custom report items.
       * @Default {[]}
       */
-    var reportItemExtensions: js.UndefOr[js.Array[ReportItemExtension]] = js.native
+    var reportItemExtensions: js.UndefOr[js.Array[ReportItemExtension]] = js.undefined
     
     /** This event will be triggered when the report is modified.
       */
-    var reportModified: js.UndefOr[js.Function1[/* e */ ReportModifiedEventArgs, Unit]] = js.native
+    var reportModified: js.UndefOr[js.Function1[/* e */ ReportModifiedEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered when the report is opened.
       */
-    var reportOpened: js.UndefOr[js.Function1[/* e */ ReportOpenedEventArgs, Unit]] = js.native
+    var reportOpened: js.UndefOr[js.Function1[/* e */ ReportOpenedEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the report path of server.
       * @Default {null}
       */
-    var reportPath: js.UndefOr[String] = js.native
+    var reportPath: js.UndefOr[String] = js.undefined
     
     /** This event will be triggered when the report is saved.
       */
-    var reportSaved: js.UndefOr[js.Function1[/* e */ ReportSavedEventArgs, Unit]] = js.native
+    var reportSaved: js.UndefOr[js.Function1[/* e */ ReportSavedEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the reports server URL.
       * @Default {null}
       */
-    var reportServerUrl: js.UndefOr[String] = js.native
+    var reportServerUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the report type.
       * @Default {ej.ReportDesigner.ReportType.RDL}
       */
-    var reportType: js.UndefOr[String] = js.native
+    var reportType: js.UndefOr[String] = js.undefined
     
     /** This event will be triggered when the save menu items are clicked.
       */
-    var saveReportClick: js.UndefOr[js.Function1[/* e */ SaveReportClickEventArgs, Unit]] = js.native
+    var saveReportClick: js.UndefOr[js.Function1[/* e */ SaveReportClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the serviceAuthorizationToken to access the Report Server API services.
       * @Default {empty}
       */
-    var serviceAuthorizationToken: js.UndefOr[String] = js.native
+    var serviceAuthorizationToken: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the URL of the  WebAPI service; it will be used for processing the report.
       * @Default {null}
       */
-    var serviceUrl: js.UndefOr[String] = js.native
+    var serviceUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the tenant name of the user groups; it will be used when integrating report designer with server.
       * @Default {null}
       */
-    var tenantName: js.UndefOr[String] = js.native
+    var tenantName: js.UndefOr[String] = js.undefined
     
     /** This event will be triggered while clicking the toolbar items.
       */
-    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.native
+    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered on rendering the Report Designer toolbar.
       */
-    var toolbarRendering: js.UndefOr[js.Function1[/* e */ ToolbarRenderingEventArgs, Unit]] = js.native
+    var toolbarRendering: js.UndefOr[js.Function1[/* e */ ToolbarRenderingEventArgs, Unit]] = js.undefined
     
     /** Defines the settings of the ReportDesigner toolbar.
       */
-    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.native
+    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
   }
   object Model {
     
@@ -802,19 +854,17 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait NewDataClickEventArgs extends StObject
   
-  @js.native
   trait OpenReportClickEventArgs extends StObject {
     
     /** Name of selected item.
       */
-    var select: js.UndefOr[String] = js.native
+    var select: js.UndefOr[String] = js.undefined
     
     /** DOM of the clicked target.
       */
-    var target: js.UndefOr[JQuery] = js.native
+    var target: js.UndefOr[JQuery] = js.undefined
   }
   object OpenReportClickEventArgs {
     
@@ -841,13 +891,12 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait PermissionSettings extends StObject {
     
     /** Shows or hides the create, edit and delete options in data source pane with the help of ej.ReportDesigner.Permission enum.
       * @Default {ej.ReportDesigner.Permission.All}
       */
-    var dataSource: js.UndefOr[Permission | String] = js.native
+    var dataSource: js.UndefOr[Permission | String] = js.undefined
   }
   object PermissionSettings {
     
@@ -868,20 +917,19 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait PreviewReportEventArgs extends StObject {
     
     /** Specifies whether to show or hide preview data dialog.
       */
-    var cancelDataInputDialog: js.UndefOr[Boolean] = js.native
+    var cancelDataInputDialog: js.UndefOr[Boolean] = js.undefined
     
     /** Contains the required data to load the report.
       */
-    var dataSets: js.UndefOr[js.Array[_]] = js.native
+    var dataSets: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Contains the instance of Report Viewer component.
       */
-    var reportViewer: js.UndefOr[js.Any] = js.native
+    var reportViewer: js.UndefOr[js.Any] = js.undefined
   }
   object PreviewReportEventArgs {
     
@@ -901,7 +949,7 @@ object ReportDesigner {
       def setCancelDataInputDialogUndefined: Self = StObject.set(x, "cancelDataInputDialog", js.undefined)
       
       @scala.inline
-      def setDataSets(value: js.Array[_]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+      def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
@@ -917,28 +965,27 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ReportDataExtension extends StObject {
     
     /** Gets or sets the class name of the data extension.
       * @Default {empty}
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the name for data extension item to display in the data pane tile.
       * @Default {empty}
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the image class name to load image in data pane tile.
       * @Default {empty}
       */
-    var imageClass: js.UndefOr[String] = js.native
+    var imageClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the name of the datasource type.
       * @Default {empty}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ReportDataExtension {
     
@@ -977,38 +1024,37 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ReportItemExtension extends StObject {
     
     /** Gets or sets the category name for the report item.
       * @Default {empty}
       */
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the class name of the report item.
       * @Default {empty}
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the name for custom report item to display in the widgets pane tile.
       * @Default {empty}
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the image class name to load image in widgets pane tile.
       * @Default {empty}
       */
-    var imageClass: js.UndefOr[String] = js.native
+    var imageClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the name for the report item.
       * @Default {empty}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Gets information to provide content for custom report item tooltip.
       * @Default {null}
       */
-    var toolTip: js.UndefOr[js.Any] = js.native
+    var toolTip: js.UndefOr[js.Any] = js.undefined
   }
   object ReportItemExtension {
     
@@ -1059,16 +1105,15 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ReportModifiedEventArgs extends StObject {
     
     /** Specifies whether the report is modified or not.
       */
-    var isModified: js.UndefOr[Boolean] = js.native
+    var isModified: js.UndefOr[Boolean] = js.undefined
     
     /** Name of Opened Report.
       */
-    var reportName: js.UndefOr[String] = js.native
+    var reportName: js.UndefOr[String] = js.undefined
   }
   object ReportModifiedEventArgs {
     
@@ -1095,16 +1140,15 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ReportOpenedEventArgs extends StObject {
     
     /** Specifies whether report opened from device or server.
       */
-    var isServerReport: js.UndefOr[Boolean] = js.native
+    var isServerReport: js.UndefOr[Boolean] = js.undefined
     
     /** Name of Opened Report.
       */
-    var reportName: js.UndefOr[String] = js.native
+    var reportName: js.UndefOr[String] = js.undefined
   }
   object ReportOpenedEventArgs {
     
@@ -1131,16 +1175,15 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ReportSavedEventArgs extends StObject {
     
     /** Specifies whether report opened from device or server.
       */
-    var isServerReport: js.UndefOr[Boolean] = js.native
+    var isServerReport: js.UndefOr[Boolean] = js.undefined
     
     /** States whether report is downloaded from ReportServer.
       */
-    var reportAction: js.UndefOr[String] = js.native
+    var reportAction: js.UndefOr[String] = js.undefined
   }
   object ReportSavedEventArgs {
     
@@ -1167,16 +1210,15 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait SaveReportClickEventArgs extends StObject {
     
     /** Name of selected item.
       */
-    var select: js.UndefOr[String] = js.native
+    var select: js.UndefOr[String] = js.undefined
     
     /** DOM of the clicked target.
       */
-    var target: js.UndefOr[JQuery] = js.native
+    var target: js.UndefOr[JQuery] = js.undefined
   }
   object SaveReportClickEventArgs {
     
@@ -1203,16 +1245,15 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ToolbarClickEventArgs extends StObject {
     
     /** Name of clicked item.
       */
-    var click: js.UndefOr[String] = js.native
+    var click: js.UndefOr[String] = js.undefined
     
     /** DOM of the clicked target.
       */
-    var target: js.UndefOr[JQuery] = js.native
+    var target: js.UndefOr[JQuery] = js.undefined
   }
   object ToolbarClickEventArgs {
     
@@ -1239,26 +1280,24 @@ object ReportDesigner {
     }
   }
   
-  @js.native
   trait ToolbarRenderingEventArgs extends StObject
   
-  @js.native
   trait ToolbarSettings extends StObject {
     
     /** Shows or hides the grouped items in the toolbar with the help of enum ej.ReportDesigner.ToolbarItems.
       * @Default {ej.ReportDesigner.ToolbarItems.All}
       */
-    var items: js.UndefOr[ToolbarItems | String] = js.native
+    var items: js.UndefOr[ToolbarItems | String] = js.undefined
     
     /** Shows or hides the toolbar.
       * @Default {true}
       */
-    var showToolbar: js.UndefOr[Boolean] = js.native
+    var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the toolbar template ID.
       * @Default {empty}
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
   }
   object ToolbarSettings {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessDetail extends StObject {
   
   /** If a native process other than the app crashed. */
-  var otherNativeCrash: js.UndefOr[Boolean] = js.native
+  var otherNativeCrash: js.UndefOr[Boolean] = js.undefined
 }
 object SuccessDetail {
   

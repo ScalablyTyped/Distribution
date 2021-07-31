@@ -2,25 +2,23 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassNameOptimizations extends StObject {
   
-  var classNameOptimizations: Boolean = js.native
+  var classNameOptimizations: Boolean
   
-  var minify: Boolean = js.native
+  var minify: Boolean
   
-  var removeComments: Boolean = js.native
+  var removeComments: Boolean
   
-  var removeEmptyNodes: Boolean = js.native
+  var removeEmptyNodes: Boolean
   
-  var removeStylableDirectives: Boolean = js.native
+  var removeStylableDirectives: Boolean
   
-  var removeUnusedComponents: Boolean = js.native
+  var removeUnusedComponents: Boolean
   
-  var shortNamespaces: Boolean = js.native
+  var shortNamespaces: Boolean
 }
 object ClassNameOptimizations {
   

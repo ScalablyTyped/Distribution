@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShieldedInstanceIdentityEntry extends StObject {
   
   /** A PEM-encoded X.509 certificate. This field can be empty. */
-  var ekCert: js.UndefOr[String] = js.native
+  var ekCert: js.UndefOr[String] = js.undefined
   
   /** A PEM-encoded public key. */
-  var ekPub: js.UndefOr[String] = js.native
+  var ekPub: js.UndefOr[String] = js.undefined
 }
 object ShieldedInstanceIdentityEntry {
   

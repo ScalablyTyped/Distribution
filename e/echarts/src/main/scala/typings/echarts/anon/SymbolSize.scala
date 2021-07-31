@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SymbolSize extends js.Object {
+trait SymbolSize extends StObject {
   
   /**
     * Coordinates of the starting point or ending point,
@@ -49,7 +48,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.coord
     */
-  var coord: js.UndefOr[js.Array[_]] = js.native
+  var coord: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Label of this data item, which will be merged with
@@ -58,7 +57,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.label
     */
-  var label: js.UndefOr[Position] = js.native
+  var label: js.UndefOr[Position] = js.undefined
   
   /**
     * Line style of this data item, which will be merged
@@ -67,7 +66,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowOffsetX] = js.native
+  var lineStyle: js.UndefOr[ShadowOffsetX] = js.undefined
   
   /**
     * Name of the marker, which will display as a label.
@@ -75,7 +74,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Symbol of ending point.
@@ -118,7 +117,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.symbol
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to keep aspect for symbols in the form of
@@ -127,7 +126,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[Boolean] = js.native
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Offset of ending point symbol relative to original
@@ -151,7 +150,7 @@ trait SymbolSize extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
+  var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Rotate degree of ending point symbol.
@@ -162,7 +161,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.symbolRotate
     */
-  var symbolRotate: js.UndefOr[Double] = js.native
+  var symbolRotate: js.UndefOr[Double] = js.undefined
   
   /**
     * ending point symbol size.
@@ -174,7 +173,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.native
+  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
   
   /**
     * Label value, which can be ignored.
@@ -182,7 +181,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.value
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * Works only when
@@ -197,7 +196,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.valueDim
     */
-  var valueDim: js.UndefOr[String] = js.native
+  var valueDim: js.UndefOr[String] = js.undefined
   
   /**
     * Works only when
@@ -212,7 +211,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.valueIndex
     */
-  var valueIndex: js.UndefOr[Double] = js.native
+  var valueIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * X position according to container, in pixel.
@@ -220,7 +219,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.x
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Y position according to container, in pixel.
@@ -228,7 +227,7 @@ trait SymbolSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data.1.y
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object SymbolSize {
   
@@ -239,111 +238,99 @@ object SymbolSize {
   }
   
   @scala.inline
-  implicit class SymbolSizeOps[Self <: SymbolSize] (val x: Self) extends AnyVal {
+  implicit class SymbolSizeMutableBuilder[Self <: SymbolSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoord(value: js.Array[js.Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordVarargs(value: js.Any*): Self = StObject.set(x, "coord", js.Array(value :_*))
     
     @scala.inline
-    def setCoordVarargs(value: js.Any*): Self = this.set("coord", js.Array(value :_*))
+    def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoord(value: js.Array[_]): Self = this.set("coord", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteCoord: Self = this.set("coord", js.undefined)
+    def setLineStyle(value: ShadowOffsetX): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Position): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: ShadowOffsetX): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSymbolKeepAspect(value: Boolean): Self = StObject.set(x, "symbolKeepAspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
     
     @scala.inline
-    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
     
     @scala.inline
-    def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
     
     @scala.inline
-    def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
     
     @scala.inline
-    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
     @scala.inline
-    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
     
     @scala.inline
-    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolSize(value: js.Array[_] | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    def setValueDim(value: String): Self = StObject.set(x, "valueDim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    def setValueDimUndefined: Self = StObject.set(x, "valueDim", js.undefined)
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueIndex(value: Double): Self = StObject.set(x, "valueIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueIndexUndefined: Self = StObject.set(x, "valueIndex", js.undefined)
     
     @scala.inline
-    def setValueDim(value: String): Self = this.set("valueDim", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteValueDim: Self = this.set("valueDim", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueIndex(value: Double): Self = this.set("valueIndex", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteValueIndex: Self = this.set("valueIndex", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -5,81 +5,79 @@ import typings.oakdexPokedex.anon.Female
 import typings.oakdexPokedex.anon.Jump
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pokemon extends StObject {
   
-  var abilities: js.Array[PokemonAbility] = js.native
+  var abilities: js.Array[PokemonAbility]
   
-  var alola_id: Double | Null = js.native
+  var alola_id: Double | Null
   
-  var base_exp_yield: Double = js.native
+  var base_exp_yield: Double
   
-  var base_friendship: Double = js.native
+  var base_friendship: Double
   
-  var base_stats: StatObject = js.native
+  var base_stats: StatObject
   
-  var catch_rate: Double = js.native
+  var catch_rate: Double
   
-  var categories: Translations = js.native
+  var categories: Translations
   
-  var color: String = js.native
+  var color: String
   
-  var egg_groups: js.Array[String] = js.native
+  var egg_groups: js.Array[String]
   
-  var ev_yield: StatObject = js.native
+  var ev_yield: StatObject
   
-  var evolution_from: String | Null = js.native
+  var evolution_from: String | Null
   
-  var evolutions: js.Array[PokemonEvolution] = js.native
+  var evolutions: js.Array[PokemonEvolution]
   
-  var gender_ratios: Null | Female = js.native
+  var gender_ratios: Null | Female
   
-  var hatch_time: js.Array[Double] = js.native
+  var hatch_time: js.Array[Double]
   
-  var height_eu: String = js.native
+  var height_eu: String
   
-  var height_us: String = js.native
+  var height_us: String
   
-  var hoenn_id: Double | Null = js.native
+  var hoenn_id: Double | Null
   
-  var johto_id: Double | Null = js.native
+  var johto_id: Double | Null
   
-  var kalos_id: Double | Null = js.native
+  var kalos_id: Double | Null
   
-  var kanto_id: Double | Null = js.native
+  var kanto_id: Double | Null
   
-  var leveling_rate: String = js.native
+  var leveling_rate: String
   
-  var mega_evolutions: js.Array[MegaEvolution] = js.native
+  var mega_evolutions: js.Array[MegaEvolution]
   
-  var move_learnsets: js.Array[MoveLearnset] = js.native
+  var move_learnsets: js.Array[MoveLearnset]
   
-  var names: Translations = js.native
+  var names: Translations
   
-  var national_id: Double = js.native
+  var national_id: Double
   
-  var pokeathlon_stats: js.UndefOr[Jump] = js.native
+  var pokeathlon_stats: js.UndefOr[Jump] = js.undefined
   
-  var pokedex_entries: StringDictionary[Translations] = js.native
+  var pokedex_entries: StringDictionary[Translations]
   
-  var sinnoh_id: Double | Null = js.native
+  var sinnoh_id: Double | Null
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
   
-  var ultra_alola_id: Double | Null = js.native
+  var ultra_alola_id: Double | Null
   
-  var unova_id: Double | Null = js.native
+  var unova_id: Double | Null
   
-  var variation_names: js.UndefOr[Translations] = js.native
+  var variation_names: js.UndefOr[Translations] = js.undefined
   
-  var variations: js.Array[PokemonVariation] = js.native
+  var variations: js.Array[PokemonVariation]
   
-  var weight_eu: String = js.native
+  var weight_eu: String
   
-  var weight_us: String = js.native
+  var weight_us: String
 }
 object Pokemon {
   
@@ -109,7 +107,7 @@ object Pokemon {
     weight_eu: String,
     weight_us: String
   ): Pokemon = {
-    val __obj = js.Dynamic.literal(abilities = abilities.asInstanceOf[js.Any], base_exp_yield = base_exp_yield.asInstanceOf[js.Any], base_friendship = base_friendship.asInstanceOf[js.Any], base_stats = base_stats.asInstanceOf[js.Any], catch_rate = catch_rate.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], egg_groups = egg_groups.asInstanceOf[js.Any], ev_yield = ev_yield.asInstanceOf[js.Any], evolutions = evolutions.asInstanceOf[js.Any], hatch_time = hatch_time.asInstanceOf[js.Any], height_eu = height_eu.asInstanceOf[js.Any], height_us = height_us.asInstanceOf[js.Any], leveling_rate = leveling_rate.asInstanceOf[js.Any], mega_evolutions = mega_evolutions.asInstanceOf[js.Any], move_learnsets = move_learnsets.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], national_id = national_id.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any], weight_eu = weight_eu.asInstanceOf[js.Any], weight_us = weight_us.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(abilities = abilities.asInstanceOf[js.Any], base_exp_yield = base_exp_yield.asInstanceOf[js.Any], base_friendship = base_friendship.asInstanceOf[js.Any], base_stats = base_stats.asInstanceOf[js.Any], catch_rate = catch_rate.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], egg_groups = egg_groups.asInstanceOf[js.Any], ev_yield = ev_yield.asInstanceOf[js.Any], evolutions = evolutions.asInstanceOf[js.Any], hatch_time = hatch_time.asInstanceOf[js.Any], height_eu = height_eu.asInstanceOf[js.Any], height_us = height_us.asInstanceOf[js.Any], leveling_rate = leveling_rate.asInstanceOf[js.Any], mega_evolutions = mega_evolutions.asInstanceOf[js.Any], move_learnsets = move_learnsets.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], national_id = national_id.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any], weight_eu = weight_eu.asInstanceOf[js.Any], weight_us = weight_us.asInstanceOf[js.Any], alola_id = null, evolution_from = null, gender_ratios = null, hoenn_id = null, johto_id = null, kalos_id = null, kanto_id = null, sinnoh_id = null, ultra_alola_id = null, unova_id = null)
     __obj.asInstanceOf[Pokemon]
   }
   

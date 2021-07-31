@@ -3,7 +3,6 @@ package typings.cookieclicker
 import typings.std.CanvasImageSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,17 +29,6 @@ trait CanvasRenderingContext2D extends StObject {
     H: Double,
     iW: Double,
     iH: Double,
-    offX: js.UndefOr[scala.Nothing],
-    offY: Double
-  ): Unit = js.native
-  def fillPattern(
-    img: CanvasImageSource,
-    X: Double,
-    Y: Double,
-    W: Double,
-    H: Double,
-    iW: Double,
-    iH: Double,
     offX: Double
   ): Unit = js.native
   def fillPattern(
@@ -52,6 +40,17 @@ trait CanvasRenderingContext2D extends StObject {
     iW: Double,
     iH: Double,
     offX: Double,
+    offY: Double
+  ): Unit = js.native
+  def fillPattern(
+    img: CanvasImageSource,
+    X: Double,
+    Y: Double,
+    W: Double,
+    H: Double,
+    iW: Double,
+    iH: Double,
+    offX: Unit,
     offY: Double
   ): Unit = js.native
 }

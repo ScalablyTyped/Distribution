@@ -10,9 +10,9 @@ TypeScript typings for Traffic Director API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.trafficdirector |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 923 |
+| # downloads        | 1041 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crosshairBaseMod {
@@ -19,7 +18,7 @@ object crosshairBaseMod {
   trait CrosshairBase[T /* <: CrosshairBaseCfg */]
     extends typings.antvComponent.groupComponentMod.default[GroupComponentCfg] {
     
-    /* protected */ def getLinePath(): js.Array[_] = js.native
+    /* protected */ def getLinePath(): js.Array[js.Any] = js.native
     
     /* protected */ def getRotateAngle(): Double = js.native
     

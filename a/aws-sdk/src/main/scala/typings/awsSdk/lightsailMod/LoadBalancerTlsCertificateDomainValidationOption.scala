@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerTlsCertificateDomainValidationOption extends StObject {
   
   /**
     * The fully qualified domain name in the certificate request.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The status of the domain validation. Valid values are listed below.
     */
-  var validationStatus: js.UndefOr[LoadBalancerTlsCertificateDomainStatus] = js.native
+  var validationStatus: js.UndefOr[LoadBalancerTlsCertificateDomainStatus] = js.undefined
 }
 object LoadBalancerTlsCertificateDomainValidationOption {
   

@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkPicture extends EmbindObject[SkPicture] {
+trait SkPicture
+  extends StObject
+     with EmbindObject[SkPicture] {
   
   /**
     * Returns the serialized format of this SkPicture. The format may change at anytime and
     * no promises are made for backwards or forward compatibility.
     */
-  def serialize(): SkData = js.native
+  def serialize(): SkData
 }
 object SkPicture {
   

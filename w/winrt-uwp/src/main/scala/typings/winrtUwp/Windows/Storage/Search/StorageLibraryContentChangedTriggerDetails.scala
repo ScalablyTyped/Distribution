@@ -4,11 +4,9 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Details about a change to storage library content. */
-@js.native
 trait StorageLibraryContentChangedTriggerDetails extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait StorageLibraryContentChangedTriggerDetails extends StObject {
     * @param lastQueryTime The time the previous query was made.
     * @return The query result.
     */
-  def createModifiedSinceQuery(lastQueryTime: Date): StorageItemQueryResult = js.native
+  def createModifiedSinceQuery(lastQueryTime: Date): StorageItemQueryResult
   
   /** Gets the StorageFolder that has been changed. */
-  var folder: StorageFolder = js.native
+  var folder: StorageFolder
 }
 object StorageLibraryContentChangedTriggerDetails {
   

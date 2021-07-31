@@ -2,12 +2,13 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // SERIES
 @js.native
-trait ICustomBar extends ISeries {
+trait ICustomBar
+  extends StObject
+     with ISeries {
   
   var barSize: Double = js.native
   

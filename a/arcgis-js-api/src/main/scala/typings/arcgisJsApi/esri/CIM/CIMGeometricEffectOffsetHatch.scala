@@ -2,33 +2,32 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectOffsetHatch
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The length of the offset hatch.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The spacing of the offset hatch.
     */
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectOffsetHatch: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch = js.native
+  var type_CIMGeometricEffectOffsetHatch: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch
 }
 object CIMGeometricEffectOffsetHatch {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch): CIMGeometricEffectOffsetHatch = {
+  def apply(): CIMGeometricEffectOffsetHatch = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectOffsetHatch")
     __obj.asInstanceOf[CIMGeometricEffectOffsetHatch]
   }
   

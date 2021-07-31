@@ -8,62 +8,60 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.TooltipProps> */
-@js.native
 trait ReadonlyTooltipProps extends StObject {
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val containerTpl: js.UndefOr[String] = js.native
+  val containerTpl: js.UndefOr[String] = js.undefined
   
-  val crosshairs: js.UndefOr[Style | Boolean] = js.native
+  val crosshairs: js.UndefOr[Style | Boolean] = js.undefined
   
-  val enterable: js.UndefOr[Boolean] = js.native
+  val enterable: js.UndefOr[Boolean] = js.undefined
   
-  val follow: js.UndefOr[Boolean] = js.native
+  val follow: js.UndefOr[Boolean] = js.undefined
   
-  val `g2-tooltip`: js.UndefOr[CSSProperties] = js.native
+  val `g2-tooltip`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-tooltip-list`: js.UndefOr[CSSProperties] = js.native
+  val `g2-tooltip-list`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-tooltip-list-item`: js.UndefOr[CSSProperties] = js.native
+  val `g2-tooltip-list-item`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-tooltip-marker`: js.UndefOr[CSSProperties] = js.native
+  val `g2-tooltip-marker`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-tooltip-title`: js.UndefOr[CSSProperties] = js.native
+  val `g2-tooltip-title`: js.UndefOr[CSSProperties] = js.undefined
   
-  val hideMarkers: js.UndefOr[Boolean] = js.native
+  val hideMarkers: js.UndefOr[Boolean] = js.undefined
   
   val htmlContent: js.UndefOr[
-    js.Function2[/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[_]], String]
-  ] = js.native
+    js.Function2[/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[js.Any]], String]
+  ] = js.undefined
   
-  val inPlot: js.UndefOr[Boolean] = js.native
+  val inPlot: js.UndefOr[Boolean] = js.undefined
   
-  val itemTpl: js.UndefOr[String] = js.native
+  val itemTpl: js.UndefOr[String] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val offset: js.UndefOr[Double] = js.native
+  val offset: js.UndefOr[Double] = js.undefined
   
-  val position: js.UndefOr[PositionType] = js.native
+  val position: js.UndefOr[PositionType] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val shared: js.UndefOr[Boolean] = js.native
+  val shared: js.UndefOr[Boolean] = js.undefined
   
-  val showTitle: js.UndefOr[Boolean] = js.native
+  val showTitle: js.UndefOr[Boolean] = js.undefined
   
-  val title: js.UndefOr[String] = js.native
+  val title: js.UndefOr[String] = js.undefined
   
-  val triggerOn: js.UndefOr[triggerOnType] = js.native
+  val triggerOn: js.UndefOr[triggerOnType] = js.undefined
   
-  val `type`: js.UndefOr[String] = js.native
+  val `type`: js.UndefOr[String] = js.undefined
   
-  val useHtml: js.UndefOr[Boolean] = js.native
+  val useHtml: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyTooltipProps {
   
@@ -143,7 +141,7 @@ object ReadonlyTooltipProps {
     def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
     
     @scala.inline
-    def setHtmlContent(value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[_]]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
+    def setHtmlContent(value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[js.Any]]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
     
     @scala.inline
     def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
@@ -179,10 +177,10 @@ object ReadonlyTooltipProps {
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

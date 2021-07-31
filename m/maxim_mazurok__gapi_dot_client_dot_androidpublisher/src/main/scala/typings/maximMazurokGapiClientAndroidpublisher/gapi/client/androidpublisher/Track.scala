@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Track extends StObject {
   
   /** In a read request, represents all active releases in the track. In an update request, represents desired changes. */
-  var releases: js.UndefOr[js.Array[TrackRelease]] = js.native
+  var releases: js.UndefOr[js.Array[TrackRelease]] = js.undefined
   
   /** Identifier of the track. */
-  var track: js.UndefOr[String] = js.native
+  var track: js.UndefOr[String] = js.undefined
 }
 object Track {
   

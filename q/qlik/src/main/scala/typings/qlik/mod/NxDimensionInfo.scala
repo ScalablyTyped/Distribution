@@ -8,35 +8,35 @@ import typings.qlik.qlikStrings.N
 import typings.qlik.qlikStrings.T
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NxDimensionInfo extends ColumnInfo {
+trait NxDimensionInfo
+  extends StObject
+     with ColumnInfo {
   
-  var qContinuousAxes: Boolean = js.native
+  var qContinuousAxes: Boolean
   
-  var qDerivedField: Boolean = js.native
+  var qDerivedField: Boolean
   
-  var qDimensionType: D | N | T = js.native
+  var qDimensionType: D | N | T
   
-  var qGroupFallbackTitles: js.Array[String] = js.native
+  var qGroupFallbackTitles: js.Array[String]
   
-  var qGroupFieldDefs: js.Array[String] = js.native
+  var qGroupFieldDefs: js.Array[String]
   
-  var qGroupPos: Double = js.native
+  var qGroupPos: Double
   
-  var qGrouping: N | H | C = js.native
+  var qGrouping: N | H | C
   
-  var qIsCyclic: Boolean = js.native
+  var qIsCyclic: Boolean
   
-  var qIsSemantic: Boolean = js.native
+  var qIsSemantic: Boolean
   
-  var qLocker: String = js.native
+  var qLocker: String
   
-  var qStateCounts: NxStateCounts = js.native
+  var qStateCounts: NxStateCounts
   
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object NxDimensionInfo {
   

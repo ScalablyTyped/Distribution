@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a domain, verify ownership via [Webmaster
   * Central](https://www.google.com/webmasters/verification/home).
   */
-@js.native
 trait SchemaAuthorizedDomain extends StObject {
   
   /**
     * Relative name of the domain authorized for use. Example: `example.com`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Read only. Full path to the `AuthorizedDomain` resource in the API.
     * Example: `apps/myapp/authorizedDomains/example.com`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthorizedDomain {
   

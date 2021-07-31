@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiaOnDisplayToOrderSettings extends StObject {
   
   /** Shipping cost and policy URL. */
-  var shippingCostPolicyUrl: js.UndefOr[String] = js.native
+  var shippingCostPolicyUrl: js.UndefOr[String] = js.undefined
   
   /** The status of the ?On display to order? feature. Acceptable values are: - "`active`" - "`inactive`" - "`pending`" */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object LiaOnDisplayToOrderSettings {
   

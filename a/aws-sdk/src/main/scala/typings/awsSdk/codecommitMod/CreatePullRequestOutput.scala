@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePullRequestOutput extends StObject {
   
   /**
     * Information about the newly created pull request.
     */
-  var pullRequest: PullRequest = js.native
+  var pullRequest: PullRequest
 }
 object CreatePullRequestOutput {
   

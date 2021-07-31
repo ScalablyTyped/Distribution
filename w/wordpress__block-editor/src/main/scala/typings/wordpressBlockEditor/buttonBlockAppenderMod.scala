@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.buttonBlockAppenderMod.ButtonBlockAppender.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonBlockAppenderMod {
@@ -24,19 +23,18 @@ object buttonBlockAppenderMod {
   
   object ButtonBlockAppender {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * The `clientId` of the Block from who's root new Blocks should be inserted. This prop is
         * required by the block `Inserter` component. Typically this is the `clientID` of the Block
         * where the prop is being rendered.
         */
-      var rootClientId: String = js.native
+      var rootClientId: String
     }
     object Props {
       

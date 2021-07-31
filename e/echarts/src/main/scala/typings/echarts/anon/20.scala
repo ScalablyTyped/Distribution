@@ -1,21 +1,20 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `20` extends js.Object {
+trait `20` extends StObject {
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.native
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label
     */
-  var label: js.UndefOr[LineHeight] = js.native
+  var label: js.UndefOr[LineHeight] = js.undefined
 }
 object `20` {
   
@@ -26,30 +25,18 @@ object `20` {
   }
   
   @scala.inline
-  implicit class `20Ops`[Self <: `20`] (val x: Self) extends AnyVal {
+  implicit class `20MutableBuilder`[Self <: `20`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: LineHeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
-    
-    @scala.inline
-    def setLabel(value: LineHeight): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

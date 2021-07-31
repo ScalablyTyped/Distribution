@@ -3,13 +3,13 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.dataMod._Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Parse extends _Format {
+trait Parse
+  extends StObject
+     with _Format {
   
-  var parse: typings.vegaTypings.dataMod.Parse = js.native
+  var parse: typings.vegaTypings.dataMod.Parse
 }
 object Parse {
   

@@ -5,25 +5,23 @@ import typings.qlik.qlikNumbers.`0`
 import typings.qlik.qlikNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortCriteria extends StObject {
   
-  var qExpression: ValueExpr = js.native
+  var qExpression: ValueExpr
   
-  var qSortByAscii: `-1` | `0` | `1` = js.native
+  var qSortByAscii: `-1` | `0` | `1`
   
-  var qSortByExpression: `-1` | `0` | `1` = js.native
+  var qSortByExpression: `-1` | `0` | `1`
   
-  var qSortByFrequency: `-1` | `0` | `1` = js.native
+  var qSortByFrequency: `-1` | `0` | `1`
   
-  var qSortByLoadOrder: `-1` | `0` | `1` = js.native
+  var qSortByLoadOrder: `-1` | `0` | `1`
   
-  var qSortByNumeric: `-1` | `0` | `1` = js.native
+  var qSortByNumeric: `-1` | `0` | `1`
   
-  var qSortByState: `-1` | `0` | `1` = js.native
+  var qSortByState: `-1` | `0` | `1`
 }
 object SortCriteria {
   

@@ -2,51 +2,49 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Synonym extends StObject {
   
   /**
     * An list of corrections of the word.
     */
-  val corrections: js.UndefOr[js.Array[String]] = js.native
+  val corrections: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Defines the synonym. A word or expression, used as the basis for the array of synonyms.
     */
-  val input: js.UndefOr[String] = js.native
+  val input: js.UndefOr[String] = js.undefined
   
   /**
     *  Synonym object ID.
     */
-  val objectID: String = js.native
+  val objectID: String
   
   /**
     * A single word, used as the basis for the below list of replacements.
     */
-  val placeholder: js.UndefOr[String] = js.native
+  val placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * An list of replacements of the placeholder.
     */
-  val replacements: js.UndefOr[js.Array[String]] = js.native
+  val replacements: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of synonyms.
     */
-  val synonyms: js.UndefOr[js.Array[String]] = js.native
+  val synonyms: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * There are 4 synonym types. The parameter can be one of the following value.
     */
-  val `type`: SynonymType = js.native
+  val `type`: SynonymType
   
   /**
     * A single word, used as the basis for the below array of corrections.
     */
-  val word: js.UndefOr[String] = js.native
+  val word: js.UndefOr[String] = js.undefined
 }
 object Synonym {
   

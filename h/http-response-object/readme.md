@@ -11,8 +11,8 @@ A simple object to represent an http response
 | Full name          | http-response-object |
 | Keywords           | http, https, response, request |
 | # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 13490469 |
+| # dependents       | 20 |
+| # downloads        | 15908548 |
 | # stars            | 2 |
 
 ## Links

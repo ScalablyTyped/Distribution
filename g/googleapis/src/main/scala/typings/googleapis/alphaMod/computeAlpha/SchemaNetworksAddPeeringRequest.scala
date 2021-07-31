@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNetworksAddPeeringRequest extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait SchemaNetworksAddPeeringRequest extends StObject {
     * in network_peering instead. Whether Google Compute Engine manages the
     * routes automatically.
     */
-  var autoCreateRoutes: js.UndefOr[Boolean] = js.native
+  var autoCreateRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field will be deprecated soon. Prefer using export_custom_routes in
     * network_peering instead. Whether to export the custom routes to peer
     * network.
     */
-  var exportCustomRoutes: js.UndefOr[Boolean] = js.native
+  var exportCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field will be deprecated soon. Prefer using import_custom_routes in
     * network_peering instead. Whether to import the custom routes from peer
     * network.
     */
-  var importCustomRoutes: js.UndefOr[Boolean] = js.native
+  var importCustomRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the peering, which should conform to RFC1035.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Network peering parameters. In order to specify route policies for
@@ -41,7 +39,7 @@ trait SchemaNetworksAddPeeringRequest extends StObject {
     * in network_peeringfield. Corresponding fields in
     * NetworksAddPeeringRequest will be deprecated soon.
     */
-  var networkPeering: js.UndefOr[SchemaNetworkPeering] = js.native
+  var networkPeering: js.UndefOr[SchemaNetworkPeering] = js.undefined
   
   /**
     * URL of the peer network. It can be either full URL or partial URL. The
@@ -49,7 +47,7 @@ trait SchemaNetworksAddPeeringRequest extends StObject {
     * not contain project, it is assumed that the peer network is in the same
     * project as the current network.
     */
-  var peerNetwork: js.UndefOr[String] = js.native
+  var peerNetwork: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworksAddPeeringRequest {
   

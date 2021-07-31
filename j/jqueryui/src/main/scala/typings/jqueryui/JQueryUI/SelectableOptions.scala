@@ -2,26 +2,26 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Selectable //////////////////////////////////////////////////
-@js.native
-trait SelectableOptions extends SelectableEvents {
+trait SelectableOptions
+  extends StObject
+     with SelectableEvents {
   
-  var autoRefresh: js.UndefOr[Boolean] = js.native
+  var autoRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var tolerance: js.UndefOr[String] = js.native
+  var tolerance: js.UndefOr[String] = js.undefined
 }
 object SelectableOptions {
   

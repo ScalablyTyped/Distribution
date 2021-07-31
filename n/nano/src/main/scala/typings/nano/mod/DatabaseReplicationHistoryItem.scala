@@ -2,45 +2,43 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
-@js.native
 trait DatabaseReplicationHistoryItem extends StObject {
   
   // Number of document write failures
-  var doc_write_failures: Double = js.native
+  var doc_write_failures: Double
   
   // Number of documents read
-  var docs_read: Double = js.native
+  var docs_read: Double
   
   // Number of documents written to target
-  var docs_written: Double = js.native
+  var docs_written: Double
   
   // Last sequence number in changes stream
-  var end_last_seq: Double = js.native
+  var end_last_seq: Double
   
   // Date/Time replication operation completed in RFC 2822 format
-  var end_time: String = js.native
+  var end_time: String
   
   // Number of missing documents checked
-  var missing_checked: Double = js.native
+  var missing_checked: Double
   
   // Number of missing documents found
-  var missing_found: Double = js.native
+  var missing_found: Double
   
   // Last recorded sequence number
-  var recorded_seq: Double = js.native
+  var recorded_seq: Double
   
   // Session ID for this replication operation
-  var session_id: String = js.native
+  var session_id: String
   
   // First sequence number in changes stream
-  var start_last_seq: Double = js.native
+  var start_last_seq: Double
   
   // Date/Time replication operation started in RFC 2822 format
-  var start_time: String = js.native
+  var start_time: String
 }
 object DatabaseReplicationHistoryItem {
   

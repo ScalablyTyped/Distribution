@@ -3,14 +3,12 @@ package typings.semanticUiShape.anon
 import typings.semanticUiShape.SemanticUI.Shape.ErrorSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-shape.SemanticUI.ShapeSettings._Impl, 'error'> */
-@js.native
 trait PickImplerror extends StObject {
   
-  var error: ErrorSettings = js.native
+  var error: ErrorSettings
 }
 object PickImplerror {
   

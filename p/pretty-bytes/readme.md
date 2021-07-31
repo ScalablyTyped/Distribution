@@ -10,9 +10,9 @@ Convert bytes to a human readable string: 1337 → 1.34 kB
 | ------------------ | :-------------: |
 | Full name          | pretty-bytes |
 | Keywords           | pretty, bytes, byte, filesize, size, file, human, humanized, readable, si, data, locale, localization, localized |
-| # releases         | 3 |
-| # dependents       | 740 |
-| # downloads        | 191823068 |
+| # releases         | 5 |
+| # dependents       | 817 |
+| # downloads        | 255771029 |
 | # stars            | 31 |
 
 ## Links

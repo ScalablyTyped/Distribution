@@ -2,16 +2,14 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemTypeTemplate extends StObject {
   
   /**
     * XML template in string format.
     */
-  var template: String = js.native
+  var template: String
 }
 object WorkItemTypeTemplate {
   

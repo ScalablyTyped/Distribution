@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ItemCopied event.
   */
-@js.native
-trait ASPxClientFileManagerItemCopiedEventArgs extends ASPxClientFileManagerActionEventArgsBase {
+trait ASPxClientFileManagerItemCopiedEventArgs
+  extends StObject
+     with ASPxClientFileManagerActionEventArgsBase {
   
   /**
     * Gets the full name of the folder from which an item is copied.
     */
-  var oldFolderFullName: String = js.native
+  var oldFolderFullName: String
 }
 object ASPxClientFileManagerItemCopiedEventArgs {
   

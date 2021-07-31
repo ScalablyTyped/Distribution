@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * container storage.
   * @since OOo 2.3
   */
-@js.native
-trait XStorageBasedLibraryContainer extends XPersistentLibraryContainer {
+trait XStorageBasedLibraryContainer
+  extends StObject
+     with XPersistentLibraryContainer {
   
   /**
     * denotes the root storage associated with the container.
@@ -30,7 +30,7 @@ trait XStorageBasedLibraryContainer extends XPersistentLibraryContainer {
     * You should only **set** this attribute to a new value if you previously called storeLibrariesToStorage with the same storage. Setting this attribute
     * to a storage into which the container has not been stored previously might result in unexpected behavior.
     */
-  var RootStorage: XStorage = js.native
+  var RootStorage: XStorage
   
   /**
     * stores the libraries to a storage other than the current container storage
@@ -41,7 +41,7 @@ trait XStorageBasedLibraryContainer extends XPersistentLibraryContainer {
     * @throws com::sun::star::lang::IllegalArgumentException if the `RootStorage` parameter is `NULL` , or equals {@link RootStorage} .
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs during storing.
     */
-  def storeLibrariesToStorage(RootStorage: XStorage): Unit = js.native
+  def storeLibrariesToStorage(RootStorage: XStorage): Unit
 }
 object XStorageBasedLibraryContainer {
   

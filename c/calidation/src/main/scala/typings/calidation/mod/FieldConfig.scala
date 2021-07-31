@@ -2,35 +2,33 @@ package typings.calidation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldConfig[T /* <: js.Object */] extends StObject {
   
-  var isBlacklisted: js.UndefOr[BlacklistValidator[T]] = js.native
+  var isBlacklisted: js.UndefOr[BlacklistValidator[T]] = js.undefined
   
-  var isEmail: js.UndefOr[SimpleValidator[T]] = js.native
+  var isEmail: js.UndefOr[SimpleValidator[T]] = js.undefined
   
-  var isEqual: js.UndefOr[ValueValidator[_, T]] = js.native
+  var isEqual: js.UndefOr[ValueValidator[js.Any, T]] = js.undefined
   
-  var isExactLength: js.UndefOr[LengthValidator[T]] = js.native
+  var isExactLength: js.UndefOr[LengthValidator[T]] = js.undefined
   
-  var isGreaterThan: js.UndefOr[ValueValidator[Double, T]] = js.native
+  var isGreaterThan: js.UndefOr[ValueValidator[Double, T]] = js.undefined
   
-  var isLessThan: js.UndefOr[ValueValidator[Double, T]] = js.native
+  var isLessThan: js.UndefOr[ValueValidator[Double, T]] = js.undefined
   
-  var isMaxLength: js.UndefOr[LengthValidator[T]] = js.native
+  var isMaxLength: js.UndefOr[LengthValidator[T]] = js.undefined
   
-  var isMinLength: js.UndefOr[LengthValidator[T]] = js.native
+  var isMinLength: js.UndefOr[LengthValidator[T]] = js.undefined
   
-  var isNumber: js.UndefOr[SimpleValidator[T]] = js.native
+  var isNumber: js.UndefOr[SimpleValidator[T]] = js.undefined
   
-  var isRegexMatch: js.UndefOr[RegexValidator[T]] = js.native
+  var isRegexMatch: js.UndefOr[RegexValidator[T]] = js.undefined
   
-  var isRequired: js.UndefOr[SimpleValidator[T]] = js.native
+  var isRequired: js.UndefOr[SimpleValidator[T]] = js.undefined
   
-  var isWhitelisted: js.UndefOr[WhitelistValidator[T]] = js.native
+  var isWhitelisted: js.UndefOr[WhitelistValidator[T]] = js.undefined
 }
 object FieldConfig {
   
@@ -41,7 +39,7 @@ object FieldConfig {
   }
   
   @scala.inline
-  implicit class FieldConfigMutableBuilder[Self <: FieldConfig[_], T /* <: js.Object */] (val x: Self with FieldConfig[T]) extends AnyVal {
+  implicit class FieldConfigMutableBuilder[Self <: FieldConfig[?], T /* <: js.Object */] (val x: Self & FieldConfig[T]) extends AnyVal {
     
     @scala.inline
     def setIsBlacklisted(value: BlacklistValidator[T]): Self = StObject.set(x, "isBlacklisted", value.asInstanceOf[js.Any])
@@ -62,10 +60,10 @@ object FieldConfig {
     def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
     
     @scala.inline
-    def setIsEqual(value: ValueValidator[_, T]): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
+    def setIsEqual(value: ValueValidator[js.Any, T]): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[_, T]): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[js.Any, T]): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
     def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)

@@ -2,19 +2,17 @@ package typings.jose.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicParameters extends StObject {
   
-  var alg: js.UndefOr[String] = js.native
+  var alg: js.UndefOr[String] = js.undefined
   
-  var key_ops: js.UndefOr[js.Array[keyOperation]] = js.native
+  var key_ops: js.UndefOr[js.Array[keyOperation]] = js.undefined
   
-  var kid: js.UndefOr[String] = js.native
+  var kid: js.UndefOr[String] = js.undefined
   
-  var use: js.UndefOr[typings.jose.mod.use] = js.native
+  var use: js.UndefOr[typings.jose.mod.use] = js.undefined
 }
 object BasicParameters {
   

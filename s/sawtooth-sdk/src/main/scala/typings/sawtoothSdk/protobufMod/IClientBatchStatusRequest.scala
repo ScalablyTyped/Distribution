@@ -2,21 +2,19 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientBatchStatusRequest extends StObject {
   
   /** ClientBatchStatusRequest batchIds */
-  var batchIds: js.UndefOr[js.Array[String] | Null] = js.native
+  var batchIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ClientBatchStatusRequest timeout */
-  var timeout: js.UndefOr[Double | Null] = js.native
+  var timeout: js.UndefOr[Double | Null] = js.undefined
   
   /** ClientBatchStatusRequest wait */
   @JSName("wait")
-  var wait_FIClientBatchStatusRequest: js.UndefOr[Boolean | Null] = js.native
+  var wait_FIClientBatchStatusRequest: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IClientBatchStatusRequest {
   

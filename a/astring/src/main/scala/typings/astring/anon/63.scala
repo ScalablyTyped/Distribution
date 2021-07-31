@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.ClassBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `63` extends StObject {
   
-  var `type`: ClassBody = js.native
+  var `type`: ClassBody
 }
 object `63` {
   
   @scala.inline
-  def apply(`type`: ClassBody): `63` = {
+  def apply(): `63` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassBody")
     __obj.asInstanceOf[`63`]
   }
   

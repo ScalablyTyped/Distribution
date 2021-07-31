@@ -3,23 +3,21 @@ package typings.reactNativeSvgCharts.mod
 import typings.reactNativeSvgCharts.anon.PartialLineProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridProps[T] extends StObject {
   
-  var belowChart: js.UndefOr[Boolean] = js.native
+  var belowChart: js.UndefOr[Boolean] = js.undefined
   
-  var direction: js.UndefOr[GridDirection] = js.native
+  var direction: js.UndefOr[GridDirection] = js.undefined
   
-  var svg: js.UndefOr[PartialLineProps] = js.native
+  var svg: js.UndefOr[PartialLineProps] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[T]] = js.native
+  var ticks: js.UndefOr[js.Array[T]] = js.undefined
   
-  var x: js.UndefOr[js.Function1[/* t */ T, Double]] = js.native
+  var x: js.UndefOr[js.Function1[/* t */ T, Double]] = js.undefined
   
-  var y: js.UndefOr[js.Function1[/* t */ T, Double]] = js.native
+  var y: js.UndefOr[js.Function1[/* t */ T, Double]] = js.undefined
 }
 object GridProps {
   
@@ -30,7 +28,7 @@ object GridProps {
   }
   
   @scala.inline
-  implicit class GridPropsMutableBuilder[Self <: GridProps[_], T] (val x: Self with GridProps[T]) extends AnyVal {
+  implicit class GridPropsMutableBuilder[Self <: GridProps[?], T] (val x: Self & GridProps[T]) extends AnyVal {
     
     @scala.inline
     def setBelowChart(value: Boolean): Self = StObject.set(x, "belowChart", value.asInstanceOf[js.Any])

@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSeriesItemLabels extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[String | js.Function] = js.native
+  var background: js.UndefOr[String | js.Function] = js.undefined
   
-  var border: js.UndefOr[ChartSeriesItemLabelsBorder] = js.native
+  var border: js.UndefOr[ChartSeriesItemLabelsBorder] = js.undefined
   
-  var color: js.UndefOr[String | js.Function] = js.native
+  var color: js.UndefOr[String | js.Function] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[String | js.Function] = js.native
+  var font: js.UndefOr[String | js.Function] = js.undefined
   
-  var format: js.UndefOr[String | js.Function] = js.native
+  var format: js.UndefOr[String | js.Function] = js.undefined
   
-  var from: js.UndefOr[ChartSeriesItemLabelsFrom] = js.native
+  var from: js.UndefOr[ChartSeriesItemLabelsFrom] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartSeriesItemLabelsMargin] = js.native
+  var margin: js.UndefOr[Double | ChartSeriesItemLabelsMargin] = js.undefined
   
-  var padding: js.UndefOr[Double | ChartSeriesItemLabelsPadding] = js.native
+  var padding: js.UndefOr[Double | ChartSeriesItemLabelsPadding] = js.undefined
   
-  var position: js.UndefOr[String | js.Function] = js.native
+  var position: js.UndefOr[String | js.Function] = js.undefined
   
-  var rotation: js.UndefOr[String | Double] = js.native
+  var rotation: js.UndefOr[String | Double] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var to: js.UndefOr[ChartSeriesItemLabelsTo] = js.native
+  var to: js.UndefOr[ChartSeriesItemLabelsTo] = js.undefined
   
-  var visible: js.UndefOr[Boolean | js.Function] = js.native
+  var visible: js.UndefOr[Boolean | js.Function] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
 }
 object ChartSeriesItemLabels {
   

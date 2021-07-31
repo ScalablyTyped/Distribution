@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SamplePlayableLocationList extends StObject {
   
   /** A list of playable locations for this game object type. */
-  var locations: js.UndefOr[js.Array[GoogleMapsPlayablelocationsV3SamplePlayableLocation]] = js.native
+  var locations: js.UndefOr[js.Array[GoogleMapsPlayablelocationsV3SamplePlayableLocation]] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocationList {
   

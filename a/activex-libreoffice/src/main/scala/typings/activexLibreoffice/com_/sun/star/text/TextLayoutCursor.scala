@@ -25,13 +25,12 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link TextLayoutCursor} is a {@link TextRange} which can travel within a layout of a {@link Text} object. */
-@js.native
 trait TextLayoutCursor
-  extends TextCursor
+  extends StObject
+     with TextCursor
      with XPageCursor {
   
   /**
@@ -40,7 +39,7 @@ trait TextLayoutCursor
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
 }
 object TextLayoutCursor {
   
@@ -207,7 +206,7 @@ object TextLayoutCursor {
     getEnd: () => XTextRange,
     getPage: () => Double,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],

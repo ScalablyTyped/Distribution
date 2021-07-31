@@ -7,14 +7,12 @@ import typings.tampermonkey.tampermonkeyStrings.not_supported
 import typings.tampermonkey.tampermonkeyStrings.not_whitelisted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadErrorResponse extends StObject {
   
   /** Detail about that error */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /**
     * Error reason
@@ -28,7 +26,7 @@ trait DownloadErrorResponse extends StObject {
     * - `not_succeeded` - the download wasn't started or failed, the
     * details attribute may provide more information
     */
-  var error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded = js.native
+  var error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded
 }
 object DownloadErrorResponse {
   

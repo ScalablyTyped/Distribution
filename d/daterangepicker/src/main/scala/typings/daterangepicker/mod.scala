@@ -1,6 +1,5 @@
 package typings.daterangepicker
 
-import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.daterangepicker.anon.DefaultOptions
 import typings.daterangepicker.anon.RequiredLocale
@@ -15,16 +14,13 @@ import typings.daterangepicker.mod.global.JQuery
 import typings.jquery.JQueryEventObject
 import typings.moment.mod.DurationInputArg1
 import typings.moment.mod.Moment
+import typings.std.Array
 import typings.std.Date
 import typings.std.Element
 import typings.std.Event
-import typings.std.FlatArray
 import typings.std.HTMLElement
-import typings.std.IterableIterator
-import typings.std.anon.CopyWithin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,19 +28,37 @@ object mod {
   @JSImport("daterangepicker", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.daterangepicker.mod.daterangepicker {
+    extends StObject
+       with typings.daterangepicker.mod.daterangepicker {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, options: Options) = this()
-    def this(element: HTMLElement, options: js.UndefOr[scala.Nothing], callback: DataRangePickerCallback) = this()
+    def this(element: HTMLElement, options: Unit, callback: DataRangePickerCallback) = this()
     def this(element: HTMLElement, options: Options, callback: DataRangePickerCallback) = this()
+    
+    /* CompleteClass */
+    var container: JQuery = js.native
+    
+    /* CompleteClass */
+    var endDate: Moment = js.native
+    
+    /* CompleteClass */
+    override def remove(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setEndDate(date: DateOrString): Unit = js.native
+    
+    /* CompleteClass */
+    override def setStartDate(date: DateOrString): Unit = js.native
+    
+    /* CompleteClass */
+    var startDate: Moment = js.native
   }
   
-  @js.native
   trait Calendar extends StObject {
     
-    var calendar: Month = js.native
+    var calendar: Month
     
-    var month: Moment = js.native
+    var month: Moment
   }
   object Calendar {
     
@@ -153,7 +167,9 @@ object mod {
   }
   
   @js.native
-  trait DatepickerEventObject extends JQueryEventObject {
+  trait DatepickerEventObject
+    extends StObject
+       with JQueryEventObject {
     
     var date: Date = js.native
     
@@ -191,63 +207,62 @@ object mod {
     def showDotdaterangepicker: typings.daterangepicker.daterangepickerStrings.showDotdaterangepicker = "show.daterangepicker".asInstanceOf[typings.daterangepicker.daterangepickerStrings.showDotdaterangepicker]
   }
   
-  @js.native
   trait Locale extends StObject {
     
     /**
       * Text for apply label.
       */
-    var applyLabel: js.UndefOr[String] = js.native
+    var applyLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Text for cancel label.
       */
-    var cancelLabel: js.UndefOr[String] = js.native
+    var cancelLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Text for the custom range label.
       */
-    var customRangeLabel: js.UndefOr[String] = js.native
+    var customRangeLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Weekday names displayed in the header of calendar.
       */
-    var daysOfWeek: js.UndefOr[js.Array[String]] = js.native
+    var daysOfWeek: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The first day of the week (0-6, Sunday to Saturday).
       */
-    var firstDay: js.UndefOr[Double] = js.native
+    var firstDay: js.UndefOr[Double] = js.undefined
     
     /**
       * Format of the date string. example: 'YYYY-MM-DD'
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * Text for fromLabel label.
       */
-    var fromLabel: js.UndefOr[String] = js.native
+    var fromLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Month names used in the month select boxes.
       */
-    var monthNames: js.UndefOr[js.Array[String]] = js.native
+    var monthNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Separator between the startDate and endDate in the attached input element. Example: ' - '
       */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /**
       * Text for toLabel label.
       */
-    var toLabel: js.UndefOr[String] = js.native
+    var toLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Text for the week label.
       */
-    var weekLabel: js.UndefOr[String] = js.native
+    var weekLabel: js.UndefOr[String] = js.undefined
   }
   object Locale {
     
@@ -334,538 +349,16 @@ object mod {
     }
   }
   
-  /* Inlined std.Array<std.Array<moment.moment.Moment>> & {  firstDay :moment.moment.Moment,   lastDay :moment.moment.Moment} */
   @js.native
   trait Month
-    extends /* n */ NumberDictionary[js.Array[Moment]] {
-    
-    /**
-      * Combines two or more arrays.
-      * @param items Additional items to add to the end of array1.
-      */
-    def concat(items: (js.Array[js.Array[Moment] | Moment])*): js.Array[js.Array[Moment]] = js.native
-    
-    /**
-      * Returns the this object after copying a section of the array identified by start and end
-      * to the same array starting at position target
-      * @param target If target is negative, it is treated as length+target where length is the
-      * length of the array.
-      * @param start If start is negative, it is treated as length+start. If end is negative, it
-      * is treated as length+end.
-      * @param end If not specified, length of the this object is used as its default value.
-      */
-    def copyWithin(target: Double, start: Double): this.type = js.native
-    def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
-    
-    /**
-      * Returns an iterable of key, value pairs for every entry in the array
-      */
-    def entries(): IterableIterator[js.Tuple2[Double, js.Array[Moment]]] = js.native
-    
-    /**
-      * Determines whether all the members of an array satisfy the specified test.
-      * @param predicate A function that accepts up to three arguments. The every method calls
-      * the predicate function for each element in the array until the predicate returns a value
-      * which is coercible to the Boolean value false, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function.
-      * If thisArg is omitted, undefined is used as the this value.
-      */
-    def every(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          _
-        ]
-    ): Boolean = js.native
-    def every(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          _
-        ],
-      thisArg: js.Any
-    ): Boolean = js.native
-    /**
-      * Determines whether all the members of an array satisfy the specified test.
-      * @param predicate A function that accepts up to three arguments. The every method calls
-      * the predicate function for each element in the array until the predicate returns a value
-      * which is coercible to the Boolean value false, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function.
-      * If thisArg is omitted, undefined is used as the this value.
-      */
-    @JSName("every")
-    def every_S_ArrayMoment[S /* <: js.Array[Moment] */](
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          /* is S */ Boolean
-        ]
-    ): /* is std.Array<S> */ Boolean = js.native
-    @JSName("every")
-    def every_S_ArrayMoment[S /* <: js.Array[Moment] */](
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          /* is S */ Boolean
-        ],
-      thisArg: js.Any
-    ): /* is std.Array<S> */ Boolean = js.native
-    
-    /**
-      * Returns the this object after filling the section identified by start and end with value
-      * @param value value to fill array section with
-      * @param start index to start filling the array at. If start is negative, it is treated as
-      * length+start where length is the length of the array.
-      * @param end index to stop filling the array at. If end is negative, it is treated as
-      * length+end.
-      */
-    def fill(value: js.Array[Moment]): this.type = js.native
-    def fill(value: js.Array[Moment], start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
-    def fill(value: js.Array[Moment], start: Double): this.type = js.native
-    def fill(value: js.Array[Moment], start: Double, end: Double): this.type = js.native
-    
-    /**
-      * Returns the elements of an array that meet the condition specified in a callback function.
-      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-      */
-    def filter(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          _
-        ]
-    ): js.Array[js.Array[Moment]] = js.native
-    def filter(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          _
-        ],
-      thisArg: js.Any
-    ): js.Array[js.Array[Moment]] = js.native
-    /**
-      * Returns the elements of an array that meet the condition specified in a callback function.
-      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-      */
-    @JSName("filter")
-    def filter_S_ArrayMoment[S /* <: js.Array[Moment] */](
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          /* is S */ Boolean
-        ]
-    ): js.Array[S] = js.native
-    @JSName("filter")
-    def filter_S_ArrayMoment[S /* <: js.Array[Moment] */](
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          /* is S */ Boolean
-        ],
-      thisArg: js.Any
-    ): js.Array[S] = js.native
-    
-    def find(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* obj */ js.Array[js.Array[Moment]], 
-          _
-        ]
-    ): js.UndefOr[js.Array[Moment]] = js.native
-    def find(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* obj */ js.Array[js.Array[Moment]], 
-          _
-        ],
-      thisArg: js.Any
-    ): js.UndefOr[js.Array[Moment]] = js.native
-    /**
-      * Returns the value of the first element in the array where predicate is true, and undefined
-      * otherwise.
-      * @param predicate find calls predicate once for each element of the array, in ascending
-      * order, until it finds one where predicate returns true. If such an element is found, find
-      * immediately returns that element value. Otherwise, find returns undefined.
-      * @param thisArg If provided, it will be used as the this value for each invocation of
-      * predicate. If it is not provided, undefined is used instead.
-      */
-    def find[S /* <: js.Array[Moment] */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* obj */ js.Array[js.Array[Moment]], 
-          /* is S */ Boolean
-        ]
-    ): js.UndefOr[S] = js.native
-    def find[S /* <: js.Array[Moment] */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* obj */ js.Array[js.Array[Moment]], 
-          /* is S */ Boolean
-        ],
-      thisArg: js.Any
-    ): js.UndefOr[S] = js.native
-    
-    /**
-      * Returns the index of the first element in the array where predicate is true, and -1
-      * otherwise.
-      * @param predicate find calls predicate once for each element of the array, in ascending
-      * order, until it finds one where predicate returns true. If such an element is found,
-      * findIndex immediately returns that element index. Otherwise, findIndex returns -1.
-      * @param thisArg If provided, it will be used as the this value for each invocation of
-      * predicate. If it is not provided, undefined is used instead.
-      */
-    def findIndex(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* obj */ js.Array[js.Array[Moment]], 
-          _
-        ]
-    ): Double = js.native
-    def findIndex(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* obj */ js.Array[js.Array[Moment]], 
-          _
-        ],
-      thisArg: js.Any
-    ): Double = js.native
+    extends StObject
+       with Array[js.Array[Moment]] {
     
     var firstDay: Moment = js.native
     
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
-    def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
-    
-    /**
-      * Calls a defined callback function on each element of an array. Then, flattens the result into
-      * a new array.
-      * This is identical to a map followed by flat with depth 1.
-      *
-      * @param callback A function that accepts up to three arguments. The flatMap method calls the
-      * callback function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the callback function. If
-      * thisArg is omitted, undefined is used as the this value.
-      */
-    def flatMap[U, This](
-      callback: js.ThisFunction3[
-          /* this */ This, 
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          U | js.Array[U]
-        ]
-    ): js.Array[U] = js.native
-    def flatMap[U, This](
-      callback: js.ThisFunction3[
-          /* this */ This, 
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          U | js.Array[U]
-        ],
-      thisArg: This
-    ): js.Array[U] = js.native
-    
-    /**
-      * Performs the specified action for each element in an array.
-      * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
-      * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-      */
-    def forEach(
-      callbackfn: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          Unit
-        ]
-    ): Unit = js.native
-    def forEach(
-      callbackfn: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          Unit
-        ],
-      thisArg: js.Any
-    ): Unit = js.native
-    
-    /**
-      * Determines whether an array includes a certain element, returning true or false as appropriate.
-      * @param searchElement The element to search for.
-      * @param fromIndex The position in this array at which to begin searching for searchElement.
-      */
-    def includes(searchElement: js.Array[Moment]): Boolean = js.native
-    def includes(searchElement: js.Array[Moment], fromIndex: Double): Boolean = js.native
-    
-    /**
-      * Returns the index of the first occurrence of a value in an array.
-      * @param searchElement The value to locate in the array.
-      * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
-      */
-    def indexOf(searchElement: js.Array[Moment]): Double = js.native
-    def indexOf(searchElement: js.Array[Moment], fromIndex: Double): Double = js.native
-    
-    /** Iterator */
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[js.Array[Moment]]] = js.native
-    
-    /**
-      * Adds all the elements of an array separated by the specified separator string.
-      * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
-      */
-    def join(): String = js.native
-    def join(separator: String): String = js.native
-    
-    /**
-      * Returns an iterable of keys in the array
-      */
-    def keys(): IterableIterator[Double] = js.native
-    
     var lastDay: Moment = js.native
-    
-    /**
-      * Returns the index of the last occurrence of a specified value in an array.
-      * @param searchElement The value to locate in the array.
-      * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.
-      */
-    def lastIndexOf(searchElement: js.Array[Moment]): Double = js.native
-    def lastIndexOf(searchElement: js.Array[Moment], fromIndex: Double): Double = js.native
-    
-    /**
-      * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
-      */
-    var length: Double = js.native
-    
-    /**
-      * Calls a defined callback function on each element of an array, and returns an array that contains the results.
-      * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-      */
-    def map[U](
-      callbackfn: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          U
-        ]
-    ): js.Array[U] = js.native
-    def map[U](
-      callbackfn: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          U
-        ],
-      thisArg: js.Any
-    ): js.Array[U] = js.native
-    
-    /**
-      * Removes the last element from an array and returns it.
-      */
-    def pop(): js.UndefOr[js.Array[Moment]] = js.native
-    
-    /**
-      * Appends new elements to an array, and returns the new length of the array.
-      * @param items New elements of the Array.
-      */
-    def push(items: js.Array[Moment]*): Double = js.native
-    
-    /**
-      * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduce(
-      callbackfn: js.Function4[
-          /* previousValue */ js.Array[Moment], 
-          /* currentValue */ js.Array[Moment], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          js.Array[Moment]
-        ]
-    ): js.Array[Moment] = js.native
-    def reduce(
-      callbackfn: js.Function4[
-          /* previousValue */ js.Array[Moment], 
-          /* currentValue */ js.Array[Moment], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          js.Array[Moment]
-        ],
-      initialValue: js.Array[Moment]
-    ): js.Array[Moment] = js.native
-    /**
-      * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduce[U](
-      callbackfn: js.Function4[
-          /* previousValue */ U, 
-          /* currentValue */ js.Array[Moment], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          U
-        ],
-      initialValue: U
-    ): U = js.native
-    
-    /**
-      * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduceRight(
-      callbackfn: js.Function4[
-          /* previousValue */ js.Array[Moment], 
-          /* currentValue */ js.Array[Moment], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          js.Array[Moment]
-        ]
-    ): js.Array[Moment] = js.native
-    def reduceRight(
-      callbackfn: js.Function4[
-          /* previousValue */ js.Array[Moment], 
-          /* currentValue */ js.Array[Moment], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          js.Array[Moment]
-        ],
-      initialValue: js.Array[Moment]
-    ): js.Array[Moment] = js.native
-    /**
-      * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduceRight[U](
-      callbackfn: js.Function4[
-          /* previousValue */ U, 
-          /* currentValue */ js.Array[Moment], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          U
-        ],
-      initialValue: U
-    ): U = js.native
-    
-    /**
-      * Reverses the elements in an Array.
-      */
-    def reverse(): js.Array[js.Array[Moment]] = js.native
-    
-    /**
-      * Removes the first element from an array and returns it.
-      */
-    def shift(): js.UndefOr[js.Array[Moment]] = js.native
-    
-    /**
-      * Returns a section of an array.
-      * @param start The beginning of the specified portion of the array.
-      * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
-      */
-    def slice(): js.Array[js.Array[Moment]] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[js.Array[Moment]] = js.native
-    def slice(start: Double): js.Array[js.Array[Moment]] = js.native
-    def slice(start: Double, end: Double): js.Array[js.Array[Moment]] = js.native
-    
-    /**
-      * Determines whether the specified callback function returns true for any element of an array.
-      * @param predicate A function that accepts up to three arguments. The some method calls
-      * the predicate function for each element in the array until the predicate returns a value
-      * which is coercible to the Boolean value true, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function.
-      * If thisArg is omitted, undefined is used as the this value.
-      */
-    def some(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          _
-        ]
-    ): Boolean = js.native
-    def some(
-      predicate: js.Function3[
-          /* value */ js.Array[Moment], 
-          /* index */ Double, 
-          /* array */ js.Array[js.Array[Moment]], 
-          _
-        ],
-      thisArg: js.Any
-    ): Boolean = js.native
-    
-    /**
-      * Sorts an array.
-      * @param compareFn Function used to determine the order of the elements. It is expected to return
-      * a negative value if first argument is less than second argument, zero if they're equal and a positive
-      * value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
-      * ```ts
-      * [11,2,22,1].sort((a, b) => a - b)
-      * ```
-      */
-    def sort(): this.type = js.native
-    def sort(compareFn: js.Function2[/* a */ js.Array[Moment], /* b */ js.Array[Moment], Double]): this.type = js.native
-    
-    /**
-      * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-      * @param start The zero-based location in the array from which to start removing elements.
-      * @param deleteCount The number of elements to remove.
-      */
-    def splice(start: Double): js.Array[js.Array[Moment]] = js.native
-    def splice(start: Double, deleteCount: Double): js.Array[js.Array[Moment]] = js.native
-    /**
-      * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-      * @param start The zero-based location in the array from which to start removing elements.
-      * @param deleteCount The number of elements to remove.
-      * @param items Elements to insert into the array in place of the deleted elements.
-      */
-    def splice(start: Double, deleteCount: Double, items: js.Array[Moment]*): js.Array[js.Array[Moment]] = js.native
-    
-    /**
-      * Returns an object whose properties have the value 'true'
-      * when they will be absent when used in a 'with' statement.
-      */
-    @JSName(js.Symbol.unscopables)
-    var unscopables: js.Function0[CopyWithin] = js.native
-    
-    /**
-      * Inserts new elements at the start of an array.
-      * @param items  Elements to insert at the start of the Array.
-      */
-    def unshift(items: js.Array[Moment]*): Double = js.native
-    
-    /**
-      * Returns an iterable of values in the array
-      */
-    def values(): IterableIterator[js.Array[Moment]] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -873,56 +366,56 @@ object mod {
       * for choosing a custom date range are not shown until the user clicks "Custom Range".
       * When this option is set to true, the calendars for choosing a custom date range are always shown instead.
       */
-    var alwaysShowCalendars: js.UndefOr[Boolean] = js.native
+    var alwaysShowCalendars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * CSS class string that will be added to the apply button
       */
-    var applyButtonClasses: js.UndefOr[String] = js.native
+    var applyButtonClasses: js.UndefOr[String] = js.undefined
     
     /**
       * Hide the apply and cancel buttons, and automatically apply a new date range as soon as two dates or a predefined range is selected.
       */
-    var autoApply: js.UndefOr[Boolean] = js.native
+    var autoApply: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether the date range picker should automatically update the value of an < input > element it's attached to at initialization and when the selected dates change.
       */
-    var autoUpdateInput: js.UndefOr[Boolean] = js.native
+    var autoUpdateInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * CSS class names that will be added to all buttons in the picker
       */
-    var buttonClasses: js.UndefOr[js.Array[String]] = js.native
+    var buttonClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * CSS class string that will be added to the cancel button
       */
-    var cancelButtonClasses: js.UndefOr[String] = js.native
+    var cancelButtonClasses: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the picker appears below (default) or above the HTML element it's attached to
       */
-    var drops: js.UndefOr[down | up | auto] = js.native
+    var drops: js.UndefOr[down | up | auto] = js.undefined
     
     /**
       * The end of the initially selected date range
       */
-    var endDate: js.UndefOr[DateOrString] = js.native
+    var endDate: js.UndefOr[DateOrString] = js.undefined
     
     /**
       * A function that is passed each date in the two calendars before they are displayed, and may return a string or array of CSS class names to apply to that date's calendar cell.
       */
     var isCustomDate: js.UndefOr[
         js.Function1[/* date */ DateOrString, js.UndefOr[String | js.Array[String] | `false`]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function that is passed each date in the two calendars before they are displayed, and may return true or false to indicate whether that date should be available for selection or not.
       */
     var isInvalidDate: js.UndefOr[
         js.Function2[/* startDate */ DateOrString, /* endDate */ js.UndefOr[DateOrString], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When enabled, the two calendars displayed will always be for two sequential months (i.e.
@@ -930,102 +423,102 @@ object mod {
       * above the calendars.When disabled, the two calendars can be individually advanced and
       * display any month/ year.
       */
-    var linkedCalendars: js.UndefOr[Boolean] = js.native
+    var linkedCalendars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows you to provide localized strings for buttons and labels, customize the date display format, and change the first day of week for the calendars.
       */
-    var locale: js.UndefOr[Locale] = js.native
+    var locale: js.UndefOr[Locale] = js.undefined
     
     /**
       * The latest date a user may select
       */
-    var maxDate: js.UndefOr[DateOrString] = js.native
+    var maxDate: js.UndefOr[DateOrString] = js.undefined
     
     /**
       * The maximum span between the selected start and end dates. Can have any property you can add to a moment object (i.e. days, months)
       */
-    var maxSpan: js.UndefOr[DurationInputArg1] = js.native
+    var maxSpan: js.UndefOr[DurationInputArg1] = js.undefined
     
     /**
       * The maximum year shown in the dropdowns when `showDropdowns` is set to true.
       */
-    var maxYear: js.UndefOr[Double] = js.native
+    var maxYear: js.UndefOr[Double] = js.undefined
     
     /**
       * The earliest date a user may select
       */
-    var minDate: js.UndefOr[DateOrString] = js.native
+    var minDate: js.UndefOr[DateOrString] = js.undefined
     
     /**
       * The minimum year shown in the dropdowns when `showDropdowns` is set to true.
       */
-    var minYear: js.UndefOr[Double] = js.native
+    var minYear: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the picker appears aligned to the left, to the right, or centered under the HTML element it's attached to
       */
-    var opens: js.UndefOr[left | right | center] = js.native
+    var opens: js.UndefOr[left | right | center] = js.undefined
     
     /**
       * jQuery selector of the parent element that the date range picker will be added to, if not provided this will be 'body'
       */
-    var parentEl: js.UndefOr[Element | String] = js.native
+    var parentEl: js.UndefOr[Element | String] = js.undefined
     
     /**
       * Set predefined date ranges the user can select from.Each key is the label for the range, and its value an array with two dates representing the bounds of the range.
       */
-    var ranges: js.UndefOr[StringDictionary[js.Tuple2[DateOrString, DateOrString]]] = js.native
+    var ranges: js.UndefOr[StringDictionary[js.Tuple2[DateOrString, DateOrString]]] = js.undefined
     
     /**
       * Whether to show the 'Custom Range' label or just pre-defined ranges
       */
-    var showCustomRangeLabel: js.UndefOr[Boolean] = js.native
+    var showCustomRangeLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show year and month select boxes above calendars to jump to a specific month and year
       */
-    var showDropdowns: js.UndefOr[Boolean] = js.native
+    var showDropdowns: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show ISO week numbers at the start of each week on the calendars
       */
-    var showISOWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showISOWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show localized week numbers at the start of each week on the calendars
       */
-    var showWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show only a single calendar to choose one date, instead of a range picker with two calendars; the start and end dates provided to your callback will be the same single date chosen.
       */
-    var singleDatePicker: js.UndefOr[Boolean] = js.native
+    var singleDatePicker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The start of the initially selected date range
       */
-    var startDate: js.UndefOr[DateOrString] = js.native
+    var startDate: js.UndefOr[DateOrString] = js.undefined
     
     /**
       * Allow selection of dates with times, not just dates
       */
-    var timePicker: js.UndefOr[Boolean] = js.native
+    var timePicker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use 24- hour instead of 12- hour times, removing the AM/ PM selection.
       */
-    var timePicker24Hour: js.UndefOr[Boolean] = js.native
+    var timePicker24Hour: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Increment of the minutes selection list for times (i.e. 30 to allow only selection of times ending in 0 or 30)
       */
-    var timePickerIncrement: js.UndefOr[Double] = js.native
+    var timePickerIncrement: js.UndefOr[Double] = js.undefined
     
     /**
       * Show seconds in the timePicker.
       */
-    var timePickerSeconds: js.UndefOr[Boolean] = js.native
+    var timePickerSeconds: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -1223,20 +716,19 @@ object mod {
     }
   }
   
-  @js.native
   trait daterangepicker extends StObject {
     
-    var container: JQuery = js.native
+    var container: JQuery
     
-    var endDate: Moment = js.native
+    var endDate: Moment
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def setEndDate(date: DateOrString): Unit = js.native
+    def setEndDate(date: DateOrString): Unit
     
-    def setStartDate(date: DateOrString): Unit = js.native
+    def setStartDate(date: DateOrString): Unit
     
-    var startDate: Moment = js.native
+    var startDate: Moment
   }
   object daterangepicker {
     
@@ -1278,27 +770,65 @@ object mod {
   
   object global {
     
-    @js.native
     trait JQuery extends StObject {
       
       @JSName("data")
-      def data_daterangepicker(key: typings.daterangepicker.daterangepickerStrings.daterangepicker): js.UndefOr[typings.daterangepicker.mod.daterangepicker] = js.native
+      def data_daterangepicker(key: typings.daterangepicker.daterangepickerStrings.daterangepicker): js.UndefOr[typings.daterangepicker.mod.daterangepicker]
       
-      def daterangepicker(): this.type = js.native
-      def daterangepicker(options: js.UndefOr[scala.Nothing], callback: DataRangePickerCallback): this.type = js.native
-      def daterangepicker(options: Options): this.type = js.native
-      def daterangepicker(options: Options, callback: DataRangePickerCallback): this.type = js.native
+      def daterangepicker(): this.type
+      def daterangepicker(options: Unit, callback: DataRangePickerCallback): this.type
+      def daterangepicker(options: Options): this.type
+      def daterangepicker(options: Options, callback: DataRangePickerCallback): this.type
       @JSName("daterangepicker")
       var daterangepicker_Original: (js.Function2[
             /* options */ js.UndefOr[Options], 
             /* callback */ js.UndefOr[DataRangePickerCallback], 
             this.type
-          ]) with DefaultOptions = js.native
+          ]) & DefaultOptions
       
       def on(
         events: DatepickerEvents,
         handler: js.Function2[/* event */ Event, /* picker */ DateRangePicker_, Unit]
-      ): JQuery = js.native
+      ): JQuery
+    }
+    object JQuery {
+      
+      @scala.inline
+      def apply(
+        data: typings.daterangepicker.daterangepickerStrings.daterangepicker => js.UndefOr[typings.daterangepicker.mod.daterangepicker],
+        daterangepicker: (js.Function2[
+              /* options */ js.UndefOr[Options], 
+              /* callback */ js.UndefOr[DataRangePickerCallback], 
+              JQuery
+            ]) & DefaultOptions,
+        on: (DatepickerEvents, js.Function2[/* event */ Event, /* picker */ DateRangePicker_, Unit]) => JQuery
+      ): JQuery = {
+        val __obj = js.Dynamic.literal(data = js.Any.fromFunction1(data), daterangepicker = daterangepicker.asInstanceOf[js.Any], on = js.Any.fromFunction2(on))
+        __obj.asInstanceOf[JQuery]
+      }
+      
+      @scala.inline
+      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setData(
+          value: typings.daterangepicker.daterangepickerStrings.daterangepicker => js.UndefOr[typings.daterangepicker.mod.daterangepicker]
+        ): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setDaterangepicker(
+          value: (js.Function2[
+                  /* options */ js.UndefOr[Options], 
+                  /* callback */ js.UndefOr[DataRangePickerCallback], 
+                  JQuery
+                ]) & DefaultOptions
+        ): Self = StObject.set(x, "daterangepicker", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setOn(
+          value: (DatepickerEvents, js.Function2[/* event */ Event, /* picker */ DateRangePicker_, Unit]) => JQuery
+        ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      }
     }
   }
 }

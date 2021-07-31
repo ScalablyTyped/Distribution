@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOrdersResponse extends StObject {
   
   /** The list of matching proposals. */
-  var proposals: js.UndefOr[js.Array[Proposal]] = js.native
+  var proposals: js.UndefOr[js.Array[Proposal]] = js.undefined
 }
 object GetOrdersResponse {
   

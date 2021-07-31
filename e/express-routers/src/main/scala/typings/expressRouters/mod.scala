@@ -5,15 +5,16 @@ import typings.expressRouters.expressRoutersMod.RouteConfig
 import typings.expressRouters.expressRoutersMod.RouteConfigAlternative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-routers", "createRouter")
+  @JSImport("express-routers", JSImport.Namespace)
   @js.native
-  def createRouter(routeConfig: js.Array[RouteConfig]): Router = js.native
-  @JSImport("express-routers", "createRouter")
-  @js.native
-  def createRouter(routeConfig: RouteConfigAlternative): Router = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createRouter(routeConfig: js.Array[RouteConfig]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
+  @scala.inline
+  def createRouter(routeConfig: RouteConfigAlternative): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
 }

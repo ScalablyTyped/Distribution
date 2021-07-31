@@ -8,15 +8,15 @@ import typings.elasticsearch.elasticsearchStrings.p
 import typings.elasticsearch.elasticsearchStrings.t
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatThreadPoolParams extends CatCommonParams {
+trait CatThreadPoolParams
+  extends StObject
+     with CatCommonParams {
   
-  var size: js.UndefOr[_empty | k | m | g | t | p] = js.native
+  var size: js.UndefOr[_empty | k | m | g | t | p] = js.undefined
   
-  var threadPoolPatterns: js.UndefOr[NameList] = js.native
+  var threadPoolPatterns: js.UndefOr[NameList] = js.undefined
 }
 object CatThreadPoolParams {
   

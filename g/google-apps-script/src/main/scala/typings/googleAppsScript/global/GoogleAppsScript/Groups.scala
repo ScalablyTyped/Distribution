@@ -2,7 +2,6 @@ package typings.googleAppsScript.global.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Groups {
@@ -19,16 +18,16 @@ object Groups {
   object Role extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Groups.Role with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Groups.Role & Double] = js.native
     
-    /* 3 */ val INVITED: typings.googleAppsScript.GoogleAppsScript.Groups.Role.INVITED with Double = js.native
+    /* 3 */ val INVITED: typings.googleAppsScript.GoogleAppsScript.Groups.Role.INVITED & Double = js.native
     
-    /* 1 */ val MANAGER: typings.googleAppsScript.GoogleAppsScript.Groups.Role.MANAGER with Double = js.native
+    /* 1 */ val MANAGER: typings.googleAppsScript.GoogleAppsScript.Groups.Role.MANAGER & Double = js.native
     
-    /* 2 */ val MEMBER: typings.googleAppsScript.GoogleAppsScript.Groups.Role.MEMBER with Double = js.native
+    /* 2 */ val MEMBER: typings.googleAppsScript.GoogleAppsScript.Groups.Role.MEMBER & Double = js.native
     
-    /* 0 */ val OWNER: typings.googleAppsScript.GoogleAppsScript.Groups.Role.OWNER with Double = js.native
+    /* 0 */ val OWNER: typings.googleAppsScript.GoogleAppsScript.Groups.Role.OWNER & Double = js.native
     
-    /* 4 */ val PENDING: typings.googleAppsScript.GoogleAppsScript.Groups.Role.PENDING with Double = js.native
+    /* 4 */ val PENDING: typings.googleAppsScript.GoogleAppsScript.Groups.Role.PENDING & Double = js.native
   }
 }

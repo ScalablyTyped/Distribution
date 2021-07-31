@@ -34,7 +34,6 @@ import typings.yeomanGenerator.yeomanGeneratorBooleans.`false`
 import typings.yeomanGenerator.yeomanGeneratorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,33 +59,32 @@ object mod {
   /**
     * Provides options for creating a new argument.
     */
-  @js.native
   trait ArgumentConfig extends StObject {
     
     /**
       * The default value of the argument.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Description for the argument.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether the argument is optional.
       */
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the argument is required.
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The type of the argument.
       */
-    var `type`: js.UndefOr[StringConstructor | NumberConstructor | ArrayConstructor | ObjectConstructor] = js.native
+    var `type`: js.UndefOr[StringConstructor | NumberConstructor | ArrayConstructor | ObjectConstructor] = js.undefined
   }
   object ArgumentConfig {
     
@@ -144,18 +142,17 @@ object mod {
   /**
     * Represents options for composing a generator.
     */
-  @js.native
   trait CompositionOptions extends StObject {
     
     /**
       * The constructor of the generator.
       */
-    var Generator: GeneratorConstructor = js.native
+    var Generator: GeneratorConstructor
     
     /**
       * The path to the file containing the generator.
       */
-    var path: String = js.native
+    var path: String
   }
   object CompositionOptions {
     
@@ -234,21 +231,17 @@ object mod {
       * @param spawnOptions Options to pass `child_process.spawn`.
       */
     def bowerInstall(): Unit = js.native
-    def bowerInstall(
-      component: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      spawnOptions: SpawnOptions
-    ): Unit = js.native
-    def bowerInstall(component: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
-    def bowerInstall(component: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
     def bowerInstall(component: String): Unit = js.native
-    def bowerInstall(component: String, options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def bowerInstall(component: String, options: js.Object): Unit = js.native
     def bowerInstall(component: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(component: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     def bowerInstall(component: js.Array[String]): Unit = js.native
-    def bowerInstall(component: js.Array[String], options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def bowerInstall(component: js.Array[String], options: js.Object): Unit = js.native
     def bowerInstall(component: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(component: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(component: Unit, options: js.Object): Unit = js.native
+    def bowerInstall(component: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(component: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     
     /**
       * Cancels all cancellable tasks.
@@ -282,15 +275,11 @@ object mod {
     def composeWith(generators: CompositionOptions): this.type = js.native
     def composeWith(generators: CompositionOptions, options: GeneratorOptions): this.type = js.native
     @JSName("composeWith")
-    def composeWith_false(generators: String, options: js.UndefOr[scala.Nothing], returnNewGenerator: `false`): this.type = js.native
+    def composeWith_false(generators: String, options: Unit, returnNewGenerator: `false`): this.type = js.native
     @JSName("composeWith")
     def composeWith_false(generators: String, options: GeneratorOptions, returnNewGenerator: `false`): this.type = js.native
     @JSName("composeWith")
-    def composeWith_false(
-      generators: js.Array[CompositionOptions | String],
-      options: js.UndefOr[scala.Nothing],
-      returnNewGenerator: `false`
-    ): this.type = js.native
+    def composeWith_false(generators: js.Array[CompositionOptions | String], options: Unit, returnNewGenerator: `false`): this.type = js.native
     @JSName("composeWith")
     def composeWith_false(
       generators: js.Array[CompositionOptions | String],
@@ -298,7 +287,7 @@ object mod {
       returnNewGenerator: `false`
     ): this.type = js.native
     @JSName("composeWith")
-    def composeWith_false(generators: CompositionOptions, options: js.UndefOr[scala.Nothing], returnNewGenerator: `false`): this.type = js.native
+    def composeWith_false(generators: CompositionOptions, options: Unit, returnNewGenerator: `false`): this.type = js.native
     @JSName("composeWith")
     def composeWith_false(generators: CompositionOptions, options: GeneratorOptions, returnNewGenerator: `false`): this.type = js.native
     @JSName("composeWith")
@@ -391,9 +380,9 @@ object mod {
       * @param lodashPath A value indicating whether the `key` argument should be treated as a lodash path.
       */
     def createStorage(storagePath: String): typings.yeomanGenerator.storageMod.^ = js.native
-    def createStorage(storagePath: String, key: js.UndefOr[scala.Nothing], lodashPath: Boolean): typings.yeomanGenerator.storageMod.^ = js.native
     def createStorage(storagePath: String, key: String): typings.yeomanGenerator.storageMod.^ = js.native
     def createStorage(storagePath: String, key: String, lodashPath: Boolean): typings.yeomanGenerator.storageMod.^ = js.native
+    def createStorage(storagePath: String, key: Unit, lodashPath: Boolean): typings.yeomanGenerator.storageMod.^ = js.native
     
     /**
       * Convenience debug method.
@@ -440,9 +429,9 @@ object mod {
       * @param skipEnvironment A value indicating whether `this.env.cwd` and the current working directory shouldn't be changed.
       */
     def destinationRoot(): String = js.native
-    def destinationRoot(rootPath: js.UndefOr[scala.Nothing], skipEnvironment: Boolean): String = js.native
     def destinationRoot(rootPath: String): String = js.native
     def destinationRoot(rootPath: String, skipEnvironment: Boolean): String = js.native
+    def destinationRoot(rootPath: Unit, skipEnvironment: Boolean): String = js.native
     
     /**
       * Determines the name of the application.
@@ -524,17 +513,17 @@ object mod {
       * @param spawnOptions Options to pass `child_process.spawn`.
       */
     def npmInstall(): Unit = js.native
-    def npmInstall(pkgs: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
-    def npmInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
-    def npmInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
     def npmInstall(pkgs: String): Unit = js.native
-    def npmInstall(pkgs: String, options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def npmInstall(pkgs: String, options: js.Object): Unit = js.native
     def npmInstall(pkgs: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(pkgs: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     def npmInstall(pkgs: js.Array[String]): Unit = js.native
-    def npmInstall(pkgs: js.Array[String], options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def npmInstall(pkgs: js.Array[String], options: js.Object): Unit = js.native
     def npmInstall(pkgs: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(pkgs: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(pkgs: Unit, options: js.Object): Unit = js.native
+    def npmInstall(pkgs: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(pkgs: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     
     /**
       * Adds an option to the set of generator expected options, only used to generate generator usage.
@@ -574,68 +563,68 @@ object mod {
       * @param queueName The name of the queue to schedule on.
       * @param reject A callback for handling rejections.
       */
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any], methodName: String): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any], methodName: String, queueName: String): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, _],
-      methodName: js.UndefOr[scala.Nothing],
-      queueName: js.UndefOr[scala.Nothing],
+      method: js.Function1[/* repeated */ js.Any, js.Any],
+      methodName: String,
+      queueName: String,
       reject: Callback
     ): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, _],
-      methodName: js.UndefOr[scala.Nothing],
+      method: js.Function1[/* repeated */ js.Any, js.Any],
+      methodName: String,
+      queueName: Unit,
+      reject: Callback
+    ): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any], methodName: Unit, queueName: String): Unit = js.native
+    def queueMethod(
+      method: js.Function1[/* repeated */ js.Any, js.Any],
+      methodName: Unit,
+      queueName: String,
+      reject: Callback
+    ): Unit = js.native
+    def queueMethod(
+      method: js.Function1[/* repeated */ js.Any, js.Any],
+      methodName: Unit,
+      queueName: Unit,
+      reject: Callback
+    ): Unit = js.native
+    def queueMethod(method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Unit = js.native
+    def queueMethod(method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]], methodName: String): Unit = js.native
+    def queueMethod(
+      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      methodName: String,
       queueName: String
     ): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, _],
-      methodName: js.UndefOr[scala.Nothing],
-      queueName: String,
-      reject: Callback
-    ): Unit = js.native
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, _], methodName: String): Unit = js.native
-    def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, _],
-      methodName: String,
-      queueName: js.UndefOr[scala.Nothing],
-      reject: Callback
-    ): Unit = js.native
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, _], methodName: String, queueName: String): Unit = js.native
-    def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, _],
+      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
       methodName: String,
       queueName: String,
       reject: Callback
     ): Unit = js.native
-    def queueMethod(method: Record[String, js.Function1[/* repeated */ _, _]]): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ _, _]],
-      methodName: js.UndefOr[scala.Nothing],
-      queueName: js.UndefOr[scala.Nothing],
+      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      methodName: String,
+      queueName: Unit,
       reject: Callback
     ): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ _, _]],
-      methodName: js.UndefOr[scala.Nothing],
+      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      methodName: Unit,
       queueName: String
     ): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ _, _]],
-      methodName: js.UndefOr[scala.Nothing],
+      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      methodName: Unit,
       queueName: String,
       reject: Callback
     ): Unit = js.native
-    def queueMethod(method: Record[String, js.Function1[/* repeated */ _, _]], methodName: String): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ _, _]],
-      methodName: String,
-      queueName: js.UndefOr[scala.Nothing],
-      reject: Callback
-    ): Unit = js.native
-    def queueMethod(method: Record[String, js.Function1[/* repeated */ _, _]], methodName: String, queueName: String): Unit = js.native
-    def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ _, _]],
-      methodName: String,
-      queueName: String,
+      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      methodName: Unit,
+      queueName: Unit,
       reject: Callback
     ): Unit = js.native
     
@@ -652,8 +641,8 @@ object mod {
       * @param taskGroup An object containing tasks.
       * @param taskOptions The options for creating the tasks.
       */
-    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ _, _]]): Unit = js.native
-    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ _, _]], taskOptions: TaskOptions): Unit = js.native
+    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Unit = js.native
+    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ js.Any, js.Any]], taskOptions: TaskOptions): Unit = js.native
     
     /**
       * Read file from destination folder.
@@ -777,32 +766,17 @@ object mod {
       * @param spawnOptions Options to pass `child_process.spawn`.
       */
     def scheduleInstallTask(installer: String): Unit = js.native
-    def scheduleInstallTask(
-      installer: String,
-      paths: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      spawnOptions: SpawnOptions
-    ): Unit = js.native
-    def scheduleInstallTask(installer: String, paths: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
-    def scheduleInstallTask(
-      installer: String,
-      paths: js.UndefOr[scala.Nothing],
-      options: js.Object,
-      spawnOptions: SpawnOptions
-    ): Unit = js.native
     def scheduleInstallTask(installer: String, paths: String): Unit = js.native
-    def scheduleInstallTask(installer: String, paths: String, options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def scheduleInstallTask(installer: String, paths: String, options: js.Object): Unit = js.native
     def scheduleInstallTask(installer: String, paths: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def scheduleInstallTask(installer: String, paths: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     def scheduleInstallTask(installer: String, paths: js.Array[String]): Unit = js.native
-    def scheduleInstallTask(
-      installer: String,
-      paths: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
-      spawnOptions: SpawnOptions
-    ): Unit = js.native
     def scheduleInstallTask(installer: String, paths: js.Array[String], options: js.Object): Unit = js.native
     def scheduleInstallTask(installer: String, paths: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def scheduleInstallTask(installer: String, paths: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def scheduleInstallTask(installer: String, paths: Unit, options: js.Object): Unit = js.native
+    def scheduleInstallTask(installer: String, paths: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def scheduleInstallTask(installer: String, paths: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     
     /**
       * Changes the generator source root directory.
@@ -887,17 +861,17 @@ object mod {
       * @param spawnOptions Options to pass `child_process.spawn`.
       */
     def yarnInstall(): Unit = js.native
-    def yarnInstall(pkgs: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
-    def yarnInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
-    def yarnInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
     def yarnInstall(pkgs: String): Unit = js.native
-    def yarnInstall(pkgs: String, options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def yarnInstall(pkgs: String, options: js.Object): Unit = js.native
     def yarnInstall(pkgs: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(pkgs: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     def yarnInstall(pkgs: js.Array[String]): Unit = js.native
-    def yarnInstall(pkgs: js.Array[String], options: js.UndefOr[scala.Nothing], spawnOptions: SpawnOptions): Unit = js.native
     def yarnInstall(pkgs: js.Array[String], options: js.Object): Unit = js.native
     def yarnInstall(pkgs: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(pkgs: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(pkgs: Unit, options: js.Object): Unit = js.native
+    def yarnInstall(pkgs: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(pkgs: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
   }
   
   /**
@@ -905,14 +879,15 @@ object mod {
     */
   @js.native
   trait GeneratorConstructor
-    extends Instantiable1[/* args (repeated) */ js.Any, Generator[js.Any]]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, Generator[js.Any]]
   
   /**
     * Provides options for generators.
     */
-  @js.native
   trait GeneratorOptions
-    extends /**
+    extends StObject
+       with /**
     * Gets or sets additional properties.
     */
   /* name */ StringDictionary[js.Any] {
@@ -920,7 +895,7 @@ object mod {
     /**
       * Gets or sets a collection of custom priorities.
       */
-    var customPriorities: js.UndefOr[js.Array[Priority]] = js.native
+    var customPriorities: js.UndefOr[js.Array[Priority]] = js.undefined
   }
   object GeneratorOptions {
     
@@ -947,28 +922,27 @@ object mod {
   /**
     * Provides options for performing installations.
     */
-  @js.native
   trait InstallOptions extends StObject {
     
     /**
       * A value indicating whether to run `bower install` or options to pass to `dargs` as arguments.
       */
-    var bower: js.UndefOr[Boolean | js.Object] = js.native
+    var bower: js.UndefOr[Boolean | js.Object] = js.undefined
     
     /**
       * A value indicating whether to run `npm install` or options to pass to `dargs` as arguments.
       */
-    var npm: js.UndefOr[Boolean | js.Object] = js.native
+    var npm: js.UndefOr[Boolean | js.Object] = js.undefined
     
     /**
       * A value indicating whether messages should be logged.
       */
-    var skipMessage: js.UndefOr[Boolean] = js.native
+    var skipMessage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether to run `yarn install` or options to pass to `dargs` as arguments.
       */
-    var yarn: js.UndefOr[Boolean | js.Object] = js.native
+    var yarn: js.UndefOr[Boolean | js.Object] = js.undefined
   }
   object InstallOptions {
     
@@ -1010,38 +984,37 @@ object mod {
   /**
     * Provides settings for creating a new generator-option.
     */
-  @js.native
   trait OptionConfig extends StObject {
     
     /**
       * The default value.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The option name alias (example `-h` and --help`).
       */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /**
       * The description for the option.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether the option should be hidden from the help output.
       */
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The storage to persist the option
       */
-    var storage: js.UndefOr[typings.yeomanGenerator.storageMod.^] = js.native
+    var storage: js.UndefOr[typings.yeomanGenerator.storageMod.^] = js.undefined
     
     /**
       * The type of the option.
       */
-    var `type`: BooleanConstructor | StringConstructor | NumberConstructor = js.native
+    var `type`: BooleanConstructor | StringConstructor | NumberConstructor
   }
   object OptionConfig {
     
@@ -1093,23 +1066,22 @@ object mod {
   /**
     * Provides a priority-specification for a custom queue.
     */
-  @js.native
   trait Priority extends StObject {
     
     /**
       * The name of the queue which this priority should be added before.
       */
-    var before: String = js.native
+    var before: String
     
     /**
       * The name of the method to execute.
       */
-    var priorityName: String = js.native
+    var priorityName: String
     
     /**
       * The name for identifying the queue.
       */
-    var queueName: js.UndefOr[String] = js.native
+    var queueName: js.UndefOr[String] = js.undefined
   }
   object Priority {
     
@@ -1139,12 +1111,12 @@ object mod {
   /**
     * Represents a question.
     */
-  type Question[T /* <: Answers */] = DistinctQuestion[T] with Store
+  type Question[T /* <: Answers */] = DistinctQuestion[T] & Store
   
   /**
     * Provides options for registering a prompt.
     */
-  type QuestionRegistrationOptions[T /* <: Answers */] = Question[T] with ExportOption
+  type QuestionRegistrationOptions[T /* <: Answers */] = Question[T] & ExportOption
   
   /**
     * Provides a set of questions.
@@ -1154,23 +1126,22 @@ object mod {
   /**
     * Provides options for queues.
     */
-  @js.native
   trait QueueOptions extends StObject {
     
     /**
       * A value indicating whether the queue should be executed only once per namespace and task-name.
       */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the queue.
       */
-    var queueName: js.UndefOr[String] = js.native
+    var queueName: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether the queue should be executed if not running yet.
       */
-    var run: js.UndefOr[Boolean] = js.native
+    var run: js.UndefOr[Boolean] = js.undefined
   }
   object QueueOptions {
     
@@ -1206,20 +1177,21 @@ object mod {
   /**
     * Represents a task.
     */
-  @js.native
-  trait Task extends TaskOptions {
+  trait Task
+    extends StObject
+       with TaskOptions {
     
     /**
       * The function to queue.
       */
     def method(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): js.Any = js.native
+    ): js.Any
     
     /**
       * The name of the task.
       */
-    var taskName: String = js.native
+    var taskName: String
   }
   object Task {
     
@@ -1243,13 +1215,14 @@ object mod {
   /**
     * Provides options for tasks.
     */
-  @js.native
-  trait TaskOptions extends QueueOptions {
+  trait TaskOptions
+    extends StObject
+       with QueueOptions {
     
     /**
       * A method for handling errors.
       */
-    var reject: js.UndefOr[Callback] = js.native
+    var reject: js.UndefOr[Callback] = js.undefined
   }
   object TaskOptions {
     
@@ -1273,44 +1246,43 @@ object mod {
   /**
     * Provides settings for rendering a template.
     */
-  @js.native
-  trait TemplateRenderOptions[T /* <: Generator[_] */] extends StObject {
+  trait TemplateRenderOptions[T /* <: Generator[js.Any] */] extends StObject {
     
     /**
       * The `mem-fs-editor` copy-options.
       */
-    var copyOptions: js.UndefOr[CopyOptions] = js.native
+    var copyOptions: js.UndefOr[CopyOptions] = js.undefined
     
     /**
       * The destination, absolute or relative to `destinationPath()`.
       */
-    var destination: js.UndefOr[String | js.Array[String]] = js.native
+    var destination: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The template file, absolute or relative to `templatePath()`.
       */
-    var source: String | js.Array[String] = js.native
+    var source: String | js.Array[String]
     
     /**
       * The `ejs` options.
       */
-    var templateOptions: js.UndefOr[Options] = js.native
+    var templateOptions: js.UndefOr[Options] = js.undefined
     
     /**
       * A method for determining whether the template should be rendered.
       */
-    var when: js.UndefOr[js.Function2[/* templateData */ Data, /* generator */ T, Boolean]] = js.native
+    var when: js.UndefOr[js.Function2[/* templateData */ Data, /* generator */ T, Boolean]] = js.undefined
   }
   object TemplateRenderOptions {
     
     @scala.inline
-    def apply[T /* <: Generator[_] */](source: String | js.Array[String]): TemplateRenderOptions[T] = {
+    def apply[T /* <: Generator[js.Any] */](source: String | js.Array[String]): TemplateRenderOptions[T] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateRenderOptions[T]]
     }
     
     @scala.inline
-    implicit class TemplateRenderOptionsMutableBuilder[Self <: TemplateRenderOptions[_], T /* <: Generator[_] */] (val x: Self with TemplateRenderOptions[T]) extends AnyVal {
+    implicit class TemplateRenderOptionsMutableBuilder[Self <: TemplateRenderOptions[?], T /* <: Generator[js.Any] */] (val x: Self & TemplateRenderOptions[T]) extends AnyVal {
       
       @scala.inline
       def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "copyOptions", value.asInstanceOf[js.Any])

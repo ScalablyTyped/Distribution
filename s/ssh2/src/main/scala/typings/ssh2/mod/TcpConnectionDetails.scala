@@ -2,23 +2,21 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TcpConnectionDetails extends StObject {
   
   /** The remote IP the connection was received on (given in earlier call to `forwardIn()`). */
-  var destIP: String = js.native
+  var destIP: String
   
   /** The remote port the connection was received on (given in earlier call to `forwardIn()`). */
-  var destPort: Double = js.native
+  var destPort: Double
   
   /** The originating IP of the connection. */
-  var srcIP: String = js.native
+  var srcIP: String
   
   /** The originating port of the connection. */
-  var srcPort: Double = js.native
+  var srcPort: Double
 }
 object TcpConnectionDetails {
   

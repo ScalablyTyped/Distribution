@@ -4,15 +4,14 @@ import typings.naverWhale.naverWhaleStrings.allow
 import typings.naverWhale.naverWhaleStrings.block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JavascriptSetDetails
-  extends typings.chrome.chrome.contentSettings.SetDetails {
+  extends StObject
+     with typings.chrome.chrome.contentSettings.SetDetails {
   
   @JSName("setting")
-  var setting_JavascriptSetDetails: allow | block = js.native
+  var setting_JavascriptSetDetails: allow | block
 }
 object JavascriptSetDetails {
   

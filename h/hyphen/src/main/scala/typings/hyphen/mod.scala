@@ -5,7 +5,6 @@ import typings.hyphen.anon.ReadonlyHyphenationOption
 import typings.hyphen.anon.ReadonlyPatternsDefinitio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,48 +15,49 @@ object mod {
     * @param options Settings for the hyphenation function.
     * @returns Depending on the options a synchronous or asynchronous hyphenation function.
     */
+  @scala.inline
+  def apply(patternsDefinition: ReadonlyPatternsDefinitio): HyphenationFunctionAsync | HyphenationFunctionSync = ^.asInstanceOf[js.Dynamic].apply(patternsDefinition.asInstanceOf[js.Any]).asInstanceOf[HyphenationFunctionAsync | HyphenationFunctionSync]
+  @scala.inline
+  def apply(patternsDefinition: ReadonlyPatternsDefinitio, options: ReadonlyFactoryOptions): HyphenationFunctionAsync | HyphenationFunctionSync = (^.asInstanceOf[js.Dynamic].apply(patternsDefinition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HyphenationFunctionAsync | HyphenationFunctionSync]
+  
   @JSImport("hyphen", JSImport.Namespace)
   @js.native
-  def apply(patternsDefinition: ReadonlyPatternsDefinitio): HyphenationFunctionAsync | HyphenationFunctionSync = js.native
-  @JSImport("hyphen", JSImport.Namespace)
-  @js.native
-  def apply(patternsDefinition: ReadonlyPatternsDefinitio, options: ReadonlyFactoryOptions): HyphenationFunctionAsync | HyphenationFunctionSync = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Options for the hyphenation factory function.
     */
-  @js.native
   trait FactoryOptions extends StObject {
     
     /**
       * If true the factory returns an asynchronous hyphenation function.
       * @default false
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A boolean indicating, if the hyphenation function should output debug info to the console.
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the hyphenation function is going to ignore HTML tags in the text.
       * @default false
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value of the hyphen character that is inserted into the text.
       * @default \\u00AD
       */
-    var hyphenChar: js.UndefOr[String] = js.native
+    var hyphenChar: js.UndefOr[String] = js.undefined
     
     /**
       * The minimum length for a word to get hyphenated. Can't be less than 5.
       * @default 5
       */
-    var minWordLength: js.UndefOr[Double] = js.native
+    var minWordLength: js.UndefOr[Double] = js.undefined
   }
   object FactoryOptions {
     
@@ -125,26 +125,25 @@ object mod {
   /**
     * Options for a hyphenation call.
     */
-  @js.native
   trait HyphenationOptions extends StObject {
     
     /**
       * A boolean indicating, if the hyphenation function should output debug info to the console.
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value of the hyphen character that is inserted into the text.
       * @default \\u00AD
       */
-    var hyphenChar: js.UndefOr[String] = js.native
+    var hyphenChar: js.UndefOr[String] = js.undefined
     
     /**
       * The minimum length for a word to get hyphenated. Can't be less than 5.
       * @default 5
       */
-    var minWordLength: js.UndefOr[Double] = js.native
+    var minWordLength: js.UndefOr[Double] = js.undefined
   }
   object HyphenationOptions {
     
@@ -180,14 +179,13 @@ object mod {
   /**
     * Hyphenation patterns and exceptions for a language.
     */
-  @js.native
   trait PatternsDefinition extends StObject {
     
     /** List of words with hyphenation points that don't fit the patterns. */
-    var exceptions: js.Array[String] = js.native
+    var exceptions: js.Array[String]
     
     /** List of hyphenation patterns. */
-    var patterns: js.Array[String] = js.native
+    var patterns: js.Array[String]
   }
   object PatternsDefinition {
     

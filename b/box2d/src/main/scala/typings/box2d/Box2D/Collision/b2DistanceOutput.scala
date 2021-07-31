@@ -3,31 +3,29 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2DistanceOutput extends StObject {
   
   /**
     *  Calculated distance.
     **/
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * Number of gjk iterations used in calculation.
     **/
-  var iterations: Double = js.native
+  var iterations: Double
   
   /**
     * Closest point on shape A.
     **/
-  var pointA: b2Vec2 = js.native
+  var pointA: b2Vec2
   
   /**
     * Closest point on shape B.
     **/
-  var pointB: b2Vec2 = js.native
+  var pointB: b2Vec2
 }
 object b2DistanceOutput {
   

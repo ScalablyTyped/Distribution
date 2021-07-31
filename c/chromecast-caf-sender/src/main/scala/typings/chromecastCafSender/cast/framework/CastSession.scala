@@ -12,7 +12,6 @@ import typings.chromecastCafSender.cast.framework.SessionEventType.MEDIA_SESSION
 import typings.chromecastCafSender.cast.framework.SessionEventType.VOLUME_CHANGED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

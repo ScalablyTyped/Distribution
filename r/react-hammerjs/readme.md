@@ -11,8 +11,8 @@ ReactJS / HammerJS integration. Support touch events in your React app.
 | Full name          | react-hammerjs |
 | Keywords           | react, react-component, tap, tappable, touch, hammer, hammerjs, mobile |
 | # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 1069607 |
+| # dependents       | 69 |
+| # downloads        | 1094863 |
 | # stars            | 6 |
 
 ## Links

@@ -2,11 +2,9 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "page.toJSON()". */
-@js.native
 trait PageData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var allShapes: js.UndefOr[js.Array[ShapeData]] = js.native
+  var allShapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var comments: js.UndefOr[js.Array[CommentData]] = js.native
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var isBackground: js.UndefOr[Boolean] = js.native
+  var isBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var shapes: js.UndefOr[js.Array[ShapeData]] = js.native
+  var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[PageViewData] = js.native
+  var view: js.UndefOr[PageViewData] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait PageData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PageData {
   

@@ -2,19 +2,17 @@ package typings.threeTdsLoader.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofCurveUtils extends StObject {
   
-  def interpolate(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = js.native
+  def interpolate(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double
   
-  def tangentCubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
+  def tangentCubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double
   
-  def tangentQuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double = js.native
+  def tangentQuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double
   
-  def tangentSpline(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
+  def tangentSpline(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double
 }
 object TypeofCurveUtils {
   

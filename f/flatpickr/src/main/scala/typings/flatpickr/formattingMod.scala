@@ -14,18 +14,20 @@ import typings.flatpickr.optionsMod.ParsedOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formattingMod {
+  
+  @JSImport("flatpickr/dist/utils/formatting", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("flatpickr/dist/utils/formatting", "formats")
   @js.native
   val formats: Formats_ = js.native
   
-  @JSImport("flatpickr/dist/utils/formatting", "monthToStr")
-  @js.native
-  def monthToStr(monthNumber: Double, shorthand: Boolean, locale: Locale): String = js.native
+  @scala.inline
+  def monthToStr(monthNumber: Double, shorthand: Boolean, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("monthToStr")(monthNumber.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("flatpickr/dist/utils/formatting", "revFormat")
   @js.native
@@ -36,100 +38,180 @@ object formattingMod {
   val tokenRegex: TokenRegex_ = js.native
   
   /* Inlined std.Record<flatpickr.flatpickr/dist/utils/formatting.token, (date : flatpickr.flatpickr/dist/types/globals.<global>.Date, locale : flatpickr.flatpickr/dist/types/locale.Locale, options : flatpickr.flatpickr/dist/types/options.ParsedOptions): string | number> */
-  @js.native
   trait Formats_ extends StObject {
     
-    def D(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def D(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("D")
-    var D_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var D_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def F(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def F(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("F")
-    var F_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var F_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def G(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def G(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("G")
-    var G_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var G_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def H(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def H(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("H")
-    var H_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var H_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def J(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def J(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("J")
-    var J_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var J_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def K(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def K(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("K")
-    var K_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var K_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def M(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def M(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("M")
-    var M_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var M_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def S(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def S(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("S")
-    var S_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var S_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def U(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def U(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("U")
-    var U_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var U_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def W(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def W(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("W")
-    var W_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var W_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def Y(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def Y(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("Y")
-    var Y_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var Y_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def Z(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def Z(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("Z")
-    var Z_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var Z_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def d(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def d(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("d")
-    var d_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var d_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def h(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def h(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("h")
-    var h_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var h_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def i(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def i(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("i")
-    var i_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var i_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def j(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def j(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("j")
-    var j_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var j_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def l(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def l(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("l")
-    var l_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var l_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def m(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def m(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("m")
-    var m_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var m_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def n(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def n(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("n")
-    var n_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var n_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def s(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def s(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("s")
-    var s_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var s_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def u(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def u(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("u")
-    var u_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var u_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def w(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def w(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("w")
-    var w_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var w_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
     
-    def y(date: Date, locale: Locale, options: ParsedOptions): String | Double = js.native
+    def y(date: Date, locale: Locale, options: ParsedOptions): String | Double
     @JSName("y")
-    var y_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double] = js.native
+    var y_Original: js.Function3[/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions, String | Double]
+  }
+  object Formats_ {
+    
+    @scala.inline
+    def apply(
+      D: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      F: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      G: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      H: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      J: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      K: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      M: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      S: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      U: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      W: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      Y: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      Z: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      d: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      h: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      i: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      j: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      l: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      m: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      n: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      s: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      u: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      w: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double,
+      y: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double
+    ): Formats_ = {
+      val __obj = js.Dynamic.literal(D = js.Any.fromFunction3(D), F = js.Any.fromFunction3(F), G = js.Any.fromFunction3(G), H = js.Any.fromFunction3(H), J = js.Any.fromFunction3(J), K = js.Any.fromFunction3(K), M = js.Any.fromFunction3(M), S = js.Any.fromFunction3(S), U = js.Any.fromFunction3(U), W = js.Any.fromFunction3(W), Y = js.Any.fromFunction3(Y), Z = js.Any.fromFunction3(Z), d = js.Any.fromFunction3(d), h = js.Any.fromFunction3(h), i = js.Any.fromFunction3(i), j = js.Any.fromFunction3(j), l = js.Any.fromFunction3(l), m = js.Any.fromFunction3(m), n = js.Any.fromFunction3(n), s = js.Any.fromFunction3(s), u = js.Any.fromFunction3(u), w = js.Any.fromFunction3(w), y = js.Any.fromFunction3(y))
+      __obj.asInstanceOf[Formats_]
+    }
+    
+    @scala.inline
+    implicit class Formats_MutableBuilder[Self <: Formats_] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setD(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "D", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setF(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "F", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setG(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "G", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setH(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "H", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setI(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "i", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setJ(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "J", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setK(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "K", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setL(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "l", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setM(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "M", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setN(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "n", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setS(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "S", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setU(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "U", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setW(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "W", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setY(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "Y", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setZ(value: (/* date */ Date, /* locale */ Locale, /* options */ ParsedOptions) => String | Double): Self = StObject.set(x, "Z", js.Any.fromFunction3(value))
+    }
   }
   
   type RevFormatFn = js.Function3[/* date */ Date, /* data */ String, /* locale */ Locale, js.UndefOr[Date | Unit]]
@@ -137,54 +219,53 @@ object formattingMod {
   type RevFormat_ = Record[String, RevFormatFn]
   
   /* Inlined {[ k in flatpickr.flatpickr/dist/utils/formatting.token ]: string} */
-  @js.native
   trait TokenRegex_ extends StObject {
     
-    var D: String = js.native
+    var D: String
     
-    var F: String = js.native
+    var F: String
     
-    var G: String = js.native
+    var G: String
     
-    var H: String = js.native
+    var H: String
     
-    var J: String = js.native
+    var J: String
     
-    var K: String = js.native
+    var K: String
     
-    var M: String = js.native
+    var M: String
     
-    var S: String = js.native
+    var S: String
     
-    var U: String = js.native
+    var U: String
     
-    var W: String = js.native
+    var W: String
     
-    var Y: String = js.native
+    var Y: String
     
-    var Z: String = js.native
+    var Z: String
     
-    var d: String = js.native
+    var d: String
     
-    var h: String = js.native
+    var h: String
     
-    var i: String = js.native
+    var i: String
     
-    var j: String = js.native
+    var j: String
     
-    var l: String = js.native
+    var l: String
     
-    var m: String = js.native
+    var m: String
     
-    var n: String = js.native
+    var n: String
     
-    var s: String = js.native
+    var s: String
     
-    var u: String = js.native
+    var u: String
     
-    var w: String = js.native
+    var w: String
     
-    var y: String = js.native
+    var y: String
   }
   object TokenRegex_ {
     

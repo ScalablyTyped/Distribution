@@ -2,31 +2,29 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupSelection extends StObject {
   
   /**
     * The ARN of the IAM role that AWS Backup uses to authenticate when backing up the target resource; for example, arn:aws:iam::123456789012:role/S3Access.
     */
-  var IamRoleArn: IAMRoleArn = js.native
+  var IamRoleArn: IAMRoleArn
   
   /**
     * An array of conditions used to specify a set of resources to assign to a backup plan; for example, "StringEquals": {"ec2:ResourceTag/Department": "accounting".
     */
-  var ListOfTags: js.UndefOr[typings.awsSdk.backupMod.ListOfTags] = js.native
+  var ListOfTags: js.UndefOr[typings.awsSdk.backupMod.ListOfTags] = js.undefined
   
   /**
     * An array of strings that contain Amazon Resource Names (ARNs) of resources to assign to a backup plan.
     */
-  var Resources: js.UndefOr[ResourceArns] = js.native
+  var Resources: js.UndefOr[ResourceArns] = js.undefined
   
   /**
     * The display name of a resource selection document.
     */
-  var SelectionName: BackupSelectionName = js.native
+  var SelectionName: BackupSelectionName
 }
 object BackupSelection {
   

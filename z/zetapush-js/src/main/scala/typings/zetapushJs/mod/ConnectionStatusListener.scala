@@ -2,31 +2,29 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionStatusListener extends StObject {
   
-  def onConnectionBroken(): Unit = js.native
+  def onConnectionBroken(): Unit
   
-  def onConnectionClosed(): Unit = js.native
+  def onConnectionClosed(): Unit
   
-  def onConnectionEstablished(): Unit = js.native
+  def onConnectionEstablished(): Unit
   
-  def onConnectionToServerFail(failure: js.Any): Unit = js.native
+  def onConnectionToServerFail(failure: js.Any): Unit
   
-  def onConnectionWillClose(): Unit = js.native
+  def onConnectionWillClose(): Unit
   
-  def onFailedHandshake(failure: js.Any): Unit = js.native
+  def onFailedHandshake(failure: js.Any): Unit
   
-  def onMessageLost(): Unit = js.native
+  def onMessageLost(): Unit
   
-  def onNegotiationFailed(failure: js.Any): Unit = js.native
+  def onNegotiationFailed(failure: js.Any): Unit
   
-  def onNoServerUrlAvailable(): Unit = js.native
+  def onNoServerUrlAvailable(): Unit
   
-  def onSuccessfulHandshake(authentication: js.Any): Unit = js.native
+  def onSuccessfulHandshake(authentication: js.Any): Unit
 }
 object ConnectionStatusListener {
   

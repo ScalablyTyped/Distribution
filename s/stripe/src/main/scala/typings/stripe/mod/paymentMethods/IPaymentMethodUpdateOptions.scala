@@ -5,19 +5,17 @@ import typings.stripe.anon.Expmonth
 import typings.stripe.mod.IMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPaymentMethodUpdateOptions extends StObject {
   
   /** Billing information associated with the PaymentMethod that may be used or required by particular types of payment methods. */
-  var billing_details: js.UndefOr[Address] = js.native
+  var billing_details: js.UndefOr[Address] = js.undefined
   
-  var card: js.UndefOr[Expmonth] = js.native
+  var card: js.UndefOr[Expmonth] = js.undefined
   
   /** Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. */
-  var metadata: js.UndefOr[IMetadata] = js.native
+  var metadata: js.UndefOr[IMetadata] = js.undefined
 }
 object IPaymentMethodUpdateOptions {
   

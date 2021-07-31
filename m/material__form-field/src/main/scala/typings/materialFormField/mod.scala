@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,7 @@ object mod {
   @js.native
   class MDCFormField protected ()
     extends typings.materialFormField.componentMod.MDCFormField {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialFormField.foundationMod.MDCFormFieldFoundation,
@@ -24,9 +23,12 @@ object mod {
   /* static members */
   object MDCFormField {
     
-    @JSImport("@material/form-field", "MDCFormField.attachTo")
+    @JSImport("@material/form-field", "MDCFormField")
     @js.native
-    def attachTo(root: HTMLElement): typings.materialFormField.componentMod.MDCFormField = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: HTMLElement): typings.materialFormField.componentMod.MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialFormField.componentMod.MDCFormField]
   }
   
   @JSImport("@material/form-field", "MDCFormFieldFoundation")

@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminalDimensions extends StObject {
   
   /**
     * The number of columns in the terminal.
     */
-  val columns: Double = js.native
+  val columns: Double
   
   /**
     * The number of rows in the terminal.
     */
-  val rows: Double = js.native
+  val rows: Double
 }
 object TerminalDimensions {
   

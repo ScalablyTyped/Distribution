@@ -2,61 +2,59 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointLabelObject extends StObject {
   
   /**
     * The point's current color.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * The point's current color index, used in styled mode instead of `color`.
     * The color index is inserted in class names used for styling.
     */
-  var colorIndex: Double = js.native
+  var colorIndex: Double
   
   /**
     * The name of the related point.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage for related points in a stacked series or pies.
     */
-  var percentage: Double = js.native
+  var percentage: Double
   
   /**
     * The related point. The point name, if defined, is available through
     * `this.point.name`.
     */
-  var point: Point = js.native
+  var point: Point
   
   /**
     * The related series. The series name is available through
     * `this.series.name`.
     */
-  var series: Series = js.native
+  var series: Series
   
   /**
     * The total of values in either a stack for stacked series, or a pie in a
     * pie series.
     */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
   
   /**
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
     */
-  var x: js.UndefOr[Double | String] = js.native
+  var x: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The y value of the point.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PointLabelObject {
   

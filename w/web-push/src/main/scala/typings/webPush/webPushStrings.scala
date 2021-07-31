@@ -3,7 +3,6 @@ package typings.webPush
 import typings.webPush.mod.ContentEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webPushStrings {
@@ -14,12 +13,16 @@ object webPushStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait aes128gcm extends ContentEncoding
+  sealed trait aes128gcm
+    extends StObject
+       with ContentEncoding
   @scala.inline
   def aes128gcm: aes128gcm = "aes128gcm".asInstanceOf[aes128gcm]
   
   @js.native
-  sealed trait aesgcm extends ContentEncoding
+  sealed trait aesgcm
+    extends StObject
+       with ContentEncoding
   @scala.inline
   def aesgcm: aesgcm = "aesgcm".asInstanceOf[aesgcm]
   

@@ -2,27 +2,25 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphStyle extends StObject {
   
-  var disableHinting: js.UndefOr[Boolean] = js.native
+  var disableHinting: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsis: js.UndefOr[String] = js.native
+  var ellipsis: js.UndefOr[String] = js.undefined
   
-  var heightMultiplier: js.UndefOr[Double] = js.native
+  var heightMultiplier: js.UndefOr[Double] = js.undefined
   
-  var maxLines: js.UndefOr[Double] = js.native
+  var maxLines: js.UndefOr[Double] = js.undefined
   
-  var strutStyle: js.UndefOr[StrutStyle] = js.native
+  var strutStyle: js.UndefOr[StrutStyle] = js.undefined
   
-  var textAlign: js.UndefOr[TextAlign] = js.native
+  var textAlign: js.UndefOr[TextAlign] = js.undefined
   
-  var textDirection: js.UndefOr[TextDirection] = js.native
+  var textDirection: js.UndefOr[TextDirection] = js.undefined
   
-  var textStyle: js.UndefOr[TextStyle] = js.native
+  var textStyle: js.UndefOr[TextStyle] = js.undefined
 }
 object ParagraphStyle {
   

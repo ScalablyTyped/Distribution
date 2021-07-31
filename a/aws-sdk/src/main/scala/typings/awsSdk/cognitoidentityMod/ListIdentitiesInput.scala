@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentitiesInput extends StObject {
   
   /**
     * An optional boolean parameter that allows you to hide disabled identities. If omitted, the ListIdentities API will include disabled identities in the response.
     */
-  var HideDisabled: js.UndefOr[typings.awsSdk.cognitoidentityMod.HideDisabled] = js.native
+  var HideDisabled: js.UndefOr[typings.awsSdk.cognitoidentityMod.HideDisabled] = js.undefined
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId
   
   /**
     * The maximum number of identities to return.
     */
-  var MaxResults: QueryLimit = js.native
+  var MaxResults: QueryLimit
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
 }
 object ListIdentitiesInput {
   

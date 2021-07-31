@@ -4,37 +4,54 @@ import typings.hdkey.anon.Xpriv
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("hdkey", JSImport.Namespace)
   @js.native
-  class ^ () extends HDNode
-  
-  /* static member */
-  @JSImport("hdkey", "fromJSON")
-  @js.native
-  def fromJSON(obj: Xpriv): HDNode = js.native
-  
-  /* static member */
-  @JSImport("hdkey", "fromMasterSeed")
-  @js.native
-  def fromMasterSeed(seed: Buffer): HDNode = js.native
-  
-  @js.native
-  trait HDNode extends StObject {
+  class ^ ()
+    extends StObject
+       with HDNode {
     
+    /* CompleteClass */
     var chainCode: Buffer = js.native
     
-    def derive(path: String): HDNode = js.native
+    /* CompleteClass */
+    override def derive(path: String): HDNode = js.native
     
+    /* CompleteClass */
     var privateKey: Buffer = js.native
     
+    /* CompleteClass */
     var publicKey: Buffer = js.native
     
-    def toJSON(): Xpriv = js.native
+    /* CompleteClass */
+    override def toJSON(): Xpriv = js.native
+  }
+  @JSImport("hdkey", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromJSON(obj: Xpriv): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  
+  /* static member */
+  @scala.inline
+  def fromMasterSeed(seed: Buffer): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  
+  trait HDNode extends StObject {
+    
+    var chainCode: Buffer
+    
+    def derive(path: String): HDNode
+    
+    var privateKey: Buffer
+    
+    var publicKey: Buffer
+    
+    def toJSON(): Xpriv
   }
   object HDNode {
     

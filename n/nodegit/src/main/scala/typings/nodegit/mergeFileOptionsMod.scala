@@ -3,26 +3,25 @@ package typings.nodegit
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeFileOptionsMod {
   
-  @js.native
   trait MergeFileOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var ancestorLabel: js.UndefOr[String] = js.native
+    var ancestorLabel: js.UndefOr[String] = js.undefined
     
-    var favor: js.UndefOr[Double] = js.native
+    var favor: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var ourLabel: js.UndefOr[String] = js.native
+    var ourLabel: js.UndefOr[String] = js.undefined
     
-    var theirLabel: js.UndefOr[String] = js.native
+    var theirLabel: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object MergeFileOptions {
     

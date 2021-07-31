@@ -7,85 +7,83 @@ import typings.box2d.Box2D.Collision.b2WorldManifold
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Contacts {
   
-  @js.native
   trait b2Contact extends StObject {
     
     /**
       * Flag this contact for filtering. Filtering will occur the next time step.
       **/
-    def FlagForFiltering(): Unit = js.native
+    def FlagForFiltering(): Unit
     
     /**
       * Get the first fixture in this contact.
       * @return First fixture in this contact.
       **/
-    def GetFixtureA(): b2Fixture = js.native
+    def GetFixtureA(): b2Fixture
     
     /**
       * Get the second fixture in this contact.
       * @return Second fixture in this contact.
       **/
-    def GetFixtureB(): b2Fixture = js.native
+    def GetFixtureB(): b2Fixture
     
     /**
       * Get the contact manifold. Do not modify the manifold unless you understand the internals of Box2D.
       * @return Contact manifold.
       **/
-    def GetManifold(): b2Manifold = js.native
+    def GetManifold(): b2Manifold
     
     /**
       * Get the next contact in the world's contact list.
       * @return Next contact in the world's contact list.
       **/
-    def GetNext(): b2Contact = js.native
+    def GetNext(): b2Contact
     
     /**
       * Get the world manifold.
       * @param worldManifold World manifold out.
       * @return World manifold.
       **/
-    def GetWorldManifold(worldManifold: b2WorldManifold): Unit = js.native
+    def GetWorldManifold(worldManifold: b2WorldManifold): Unit
     
     /**
       * Does this contact generate TOI events for continuous simulation.
       * @return True for continous, otherwise false.
       **/
-    def IsContinuous(): Boolean = js.native
+    def IsContinuous(): Boolean
     
     /**
       * Has this contact been disabled?
       * @return True if disabled, otherwise false.
       **/
-    def IsEnabled(): Boolean = js.native
+    def IsEnabled(): Boolean
     
     /**
       * Is this contact a sensor?
       * @return True if sensor, otherwise false.
       **/
-    def IsSensor(): Boolean = js.native
+    def IsSensor(): Boolean
     
     /**
       * Is this contact touching.
       * @return True if contact is touching, otherwise false.
       **/
-    def IsTouching(): Boolean = js.native
+    def IsTouching(): Boolean
     
     /**
       * Enable/disable this contact. This can be used inside the pre-solve contact listener. The contact is only disabled for the current time step (or sub-step in continuous collision).
       * @param flag True to enable, false to disable.
       **/
-    def SetEnabled(flag: Boolean): Unit = js.native
+    def SetEnabled(flag: Boolean): Unit
     
     /**
       * Change this to be a sensor or-non-sensor contact.
       * @param sensor True to be sensor, false to not be a sensor.
       **/
-    def SetSensor(sensor: Boolean): Unit = js.native
+    def SetSensor(sensor: Boolean): Unit
   }
   object b2Contact {
     
@@ -149,28 +147,27 @@ object Contacts {
     }
   }
   
-  @js.native
   trait b2ContactEdge extends StObject {
     
     /**
       * Contact.
       **/
-    var contact: b2Contact = js.native
+    var contact: b2Contact
     
     /**
       * Next contact edge.
       **/
-    var next: b2ContactEdge = js.native
+    var next: b2ContactEdge
     
     /**
       * Contact body.
       **/
-    var other: b2Body = js.native
+    var other: b2Body
     
     /**
       * Previous contact edge.
       **/
-    var prev: b2ContactEdge = js.native
+    var prev: b2ContactEdge
   }
   object b2ContactEdge {
     
@@ -197,43 +194,42 @@ object Contacts {
     }
   }
   
-  @js.native
   trait b2ContactResult extends StObject {
     
     /**
       * The contact id identifies the features in contact.
       **/
-    var id: b2ContactID = js.native
+    var id: b2ContactID
     
     /**
       * Points from shape1 to shape2.
       **/
-    var normal: b2Vec2 = js.native
+    var normal: b2Vec2
     
     /**
       * The normal impulse applied to body2.
       **/
-    var normalImpulse: Double = js.native
+    var normalImpulse: Double
     
     /**
       * Position in world coordinates.
       **/
-    var position: b2Vec2 = js.native
+    var position: b2Vec2
     
     /**
       * The first shape.
       **/
-    var shape1: b2Shape = js.native
+    var shape1: b2Shape
     
     /**
       * The second shape.
       **/
-    var shape2: b2Shape = js.native
+    var shape2: b2Shape
     
     /**
       * The tangent impulse applied to body2.
       **/
-    var tangentImpulse: Double = js.native
+    var tangentImpulse: Double
   }
   object b2ContactResult {
     

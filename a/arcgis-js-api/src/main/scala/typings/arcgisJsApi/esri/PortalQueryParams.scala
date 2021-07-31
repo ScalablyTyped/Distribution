@@ -14,11 +14,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.uploaded
 import typings.arcgisJsApi.arcgisJsApiStrings.username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalQueryParams extends Accessor {
+trait PortalQueryParams
+  extends StObject
+     with Accessor {
   
   /**
     * An array of categories stored within the item.

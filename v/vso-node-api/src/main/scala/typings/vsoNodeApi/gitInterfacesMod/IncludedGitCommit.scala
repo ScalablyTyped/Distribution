@@ -3,19 +3,17 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludedGitCommit extends StObject {
   
-  var commitId: String = js.native
+  var commitId: String
   
-  var commitTime: Date = js.native
+  var commitTime: Date
   
-  var parentCommitIds: js.Array[String] = js.native
+  var parentCommitIds: js.Array[String]
   
-  var repositoryId: String = js.native
+  var repositoryId: String
 }
 object IncludedGitCommit {
   

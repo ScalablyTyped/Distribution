@@ -2,81 +2,79 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComprehendMedicalAsyncJobProperties extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that gives Amazon Comprehend Medical read access to your input data.
     */
-  var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.native
+  var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
     * The time that the detection job completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time that job metadata is deleted from the server. Output files in your S3 bucket will not be deleted. After the metadata is deleted, the job will no longer appear in the results of the ListEntitiesDetectionV2Job or the ListPHIDetectionJobs operation.
     */
-  var ExpirationTime: js.UndefOr[Timestamp] = js.native
+  var ExpirationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The input data configuration that you supplied when you created the detection job.
     */
-  var InputDataConfig: js.UndefOr[typings.awsSdk.comprehendmedicalMod.InputDataConfig] = js.native
+  var InputDataConfig: js.UndefOr[typings.awsSdk.comprehendmedicalMod.InputDataConfig] = js.undefined
   
   /**
     * The identifier assigned to the detection job.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobId] = js.undefined
   
   /**
     * The name that you assigned to the detection job.
     */
-  var JobName: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobName] = js.undefined
   
   /**
     * The current status of the detection job. If the status is FAILED, the Message field shows the reason for the failure.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobStatus] = js.undefined
   
   /**
     * The AWS Key Management Service key, if any, used to encrypt the output files. 
     */
-  var KMSKey: js.UndefOr[typings.awsSdk.comprehendmedicalMod.KMSKey] = js.native
+  var KMSKey: js.UndefOr[typings.awsSdk.comprehendmedicalMod.KMSKey] = js.undefined
   
   /**
     * The language code of the input documents.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.comprehendmedicalMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.comprehendmedicalMod.LanguageCode] = js.undefined
   
   /**
     * The path to the file that describes the results of a batch job.
     */
-  var ManifestFilePath: js.UndefOr[typings.awsSdk.comprehendmedicalMod.ManifestFilePath] = js.native
+  var ManifestFilePath: js.UndefOr[typings.awsSdk.comprehendmedicalMod.ManifestFilePath] = js.undefined
   
   /**
     * A description of the status of a job.
     */
-  var Message: js.UndefOr[AnyLengthString] = js.native
+  var Message: js.UndefOr[AnyLengthString] = js.undefined
   
   /**
     * The version of the model used to analyze the documents. The version number looks like X.X.X. You can use this information to track the model used for a particular batch of documents.
     */
-  var ModelVersion: js.UndefOr[typings.awsSdk.comprehendmedicalMod.ModelVersion] = js.native
+  var ModelVersion: js.UndefOr[typings.awsSdk.comprehendmedicalMod.ModelVersion] = js.undefined
   
   /**
     * The output data configuration that you supplied when you created the detection job.
     */
-  var OutputDataConfig: js.UndefOr[typings.awsSdk.comprehendmedicalMod.OutputDataConfig] = js.native
+  var OutputDataConfig: js.UndefOr[typings.awsSdk.comprehendmedicalMod.OutputDataConfig] = js.undefined
   
   /**
     * The time that the detection job was submitted for processing.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.native
+  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
 }
 object ComprehendMedicalAsyncJobProperties {
   

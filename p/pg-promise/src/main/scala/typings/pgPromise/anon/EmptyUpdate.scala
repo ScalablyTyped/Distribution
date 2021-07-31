@@ -2,17 +2,15 @@ package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmptyUpdate extends StObject {
   
-  var emptyUpdate: js.UndefOr[js.Any] = js.native
+  var emptyUpdate: js.UndefOr[js.Any] = js.undefined
   
-  var tableAlias: js.UndefOr[String] = js.native
+  var tableAlias: js.UndefOr[String] = js.undefined
   
-  var valueAlias: js.UndefOr[String] = js.native
+  var valueAlias: js.UndefOr[String] = js.undefined
 }
 object EmptyUpdate {
   

@@ -8,7 +8,6 @@ import typings.officeJsPreview.Word.Interfaces.SettingCollectionData
 import typings.officeJsPreview.Word.Interfaces.SettingCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait SettingCollection extends ClientObject {
+trait SettingCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Creates a new setting or sets an existing setting.
@@ -81,7 +82,7 @@ trait SettingCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): SettingCollection = js.native
-  def load(options: SettingCollectionLoadOptions with CollectionLoadOptions): SettingCollection = js.native
+  def load(options: SettingCollectionLoadOptions & CollectionLoadOptions): SettingCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): SettingCollection = js.native
   def load(propertyNames: String): SettingCollection = js.native
   def load(propertyNames: js.Array[String]): SettingCollection = js.native

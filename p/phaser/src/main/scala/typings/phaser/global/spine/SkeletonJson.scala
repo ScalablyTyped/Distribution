@@ -3,39 +3,38 @@ package typings.phaser.global.spine
 import typings.phaser.spine.AttachmentLoader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.SkeletonJson")
 @js.native
 class SkeletonJson protected ()
-  extends typings.phaser.spine.SkeletonJson {
+  extends StObject
+     with typings.phaser.spine.SkeletonJson {
   def this(attachmentLoader: AttachmentLoader) = this()
 }
 object SkeletonJson {
   
-  /* static member */
-  @JSGlobal("spine.SkeletonJson.blendModeFromString")
+  @JSGlobal("spine.SkeletonJson")
   @js.native
-  def blendModeFromString(str: String): typings.phaser.spine.BlendMode = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("spine.SkeletonJson.positionModeFromString")
-  @js.native
-  def positionModeFromString(str: String): typings.phaser.spine.PositionMode = js.native
+  @scala.inline
+  def blendModeFromString(str: String): typings.phaser.spine.BlendMode = ^.asInstanceOf[js.Dynamic].applyDynamic("blendModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.BlendMode]
   
   /* static member */
-  @JSGlobal("spine.SkeletonJson.rotateModeFromString")
-  @js.native
-  def rotateModeFromString(str: String): typings.phaser.spine.RotateMode = js.native
+  @scala.inline
+  def positionModeFromString(str: String): typings.phaser.spine.PositionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("positionModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.PositionMode]
   
   /* static member */
-  @JSGlobal("spine.SkeletonJson.spacingModeFromString")
-  @js.native
-  def spacingModeFromString(str: String): typings.phaser.spine.SpacingMode = js.native
+  @scala.inline
+  def rotateModeFromString(str: String): typings.phaser.spine.RotateMode = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.RotateMode]
   
   /* static member */
-  @JSGlobal("spine.SkeletonJson.transformModeFromString")
-  @js.native
-  def transformModeFromString(str: String): typings.phaser.spine.TransformMode = js.native
+  @scala.inline
+  def spacingModeFromString(str: String): typings.phaser.spine.SpacingMode = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.SpacingMode]
+  
+  /* static member */
+  @scala.inline
+  def transformModeFromString(str: String): typings.phaser.spine.TransformMode = ^.asInstanceOf[js.Dynamic].applyDynamic("transformModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TransformMode]
 }

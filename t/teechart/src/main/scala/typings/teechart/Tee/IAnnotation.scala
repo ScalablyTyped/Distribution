@@ -2,31 +2,31 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAnnotation extends ITool {
+trait IAnnotation
+  extends StObject
+     with ITool {
   
-  def add(text: String): IAnnotation = js.native
+  def add(text: String): IAnnotation
   
-  var bounds: IRectangle = js.native
+  var bounds: IRectangle
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var items: js.Array[IAnnotation] = js.native
+  var items: js.Array[IAnnotation]
   
-  var margins: IMargins = js.native
+  var margins: IMargins
   
-  var position: IPoint = js.native
+  var position: IPoint
   
-  def resize(): Unit = js.native
+  def resize(): Unit
   
-  var text: String = js.native
+  var text: String
   
-  var transparent: Boolean = js.native
+  var transparent: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IAnnotation {
   

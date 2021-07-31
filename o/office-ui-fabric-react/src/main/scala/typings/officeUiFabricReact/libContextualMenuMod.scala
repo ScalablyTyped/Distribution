@@ -22,10 +22,13 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libContextualMenuMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ContextualMenu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/ContextualMenu", "ContextualMenu")
   @js.native
@@ -68,16 +71,16 @@ object libContextualMenuMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType with Double
+        typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType & Double
       ] = js.native
     
-    /* 1 */ val Divider: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Divider with Double = js.native
+    /* 1 */ val Divider: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Divider & Double = js.native
     
-    /* 2 */ val Header: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Header with Double = js.native
+    /* 2 */ val Header: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Header & Double = js.native
     
-    /* 0 */ val Normal: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Normal with Double = js.native
+    /* 0 */ val Normal: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Normal & Double = js.native
     
-    /* 3 */ val Section: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Section with Double = js.native
+    /* 3 */ val Section: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Section & Double = js.native
   }
   
   object DirectionalHint {
@@ -215,15 +218,12 @@ object libContextualMenuMod {
     def topRightEdge_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRightEdge")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/ContextualMenu", "canAnyMenuItemsCheck")
-  @js.native
-  def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = js.native
+  @scala.inline
+  def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canAnyMenuItemsCheck")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/ContextualMenu", "getMenuItemStyles")
-  @js.native
-  def getMenuItemStyles(theme: ITheme): IMenuItemStyles = js.native
+  @scala.inline
+  def getMenuItemStyles(theme: ITheme): IMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IMenuItemStyles]
   
-  @JSImport("office-ui-fabric-react/lib/ContextualMenu", "getSubmenuItems")
-  @js.native
-  def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = js.native
+  @scala.inline
+  def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[IContextualMenuItem]]]
 }

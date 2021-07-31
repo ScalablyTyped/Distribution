@@ -2,31 +2,29 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchTermResult...
   */
-@js.native
 trait ISearchTermResult extends StObject {
   
   /**
     * Element number of the associated value.
     */
-  var qElemNumber: Double = js.native
+  var qElemNumber: Double
   
   /**
     * List of ranges.
     * For example, if the user searches the term read and the associative value is Reading,
     * then the corresponding range would be Read in Reading.
     */
-  var qRanges: js.Array[ISearchCharRange] = js.native
+  var qRanges: js.Array[ISearchCharRange]
   
   /**
     * Text of the associated value.
     */
-  var qText: String = js.native
+  var qText: String
 }
 object ISearchTermResult {
   

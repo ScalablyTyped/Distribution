@@ -3,25 +3,23 @@ package typings.rxLite.Rx
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScheduler extends StObject {
   
-  def isScheduler(value: js.Any): Boolean = js.native
+  def isScheduler(value: js.Any): Boolean
   
-  def now(): Double = js.native
+  def now(): Double
   
-  def schedule(action: js.Function0[Unit]): IDisposable = js.native
+  def schedule(action: js.Function0[Unit]): IDisposable
   
-  def schedulePeriodic(period: Double, action: js.Function0[Unit]): IDisposable = js.native
+  def schedulePeriodic(period: Double, action: js.Function0[Unit]): IDisposable
   
-  def schedulePeriodicWithState[TState](state: TState, period: Double, action: js.Function1[/* state */ TState, TState]): IDisposable = js.native
+  def schedulePeriodicWithState[TState](state: TState, period: Double, action: js.Function1[/* state */ TState, TState]): IDisposable
   
-  def scheduleRecursive(action: js.Function1[/* action */ js.Function0[Unit], Unit]): IDisposable = js.native
+  def scheduleRecursive(action: js.Function1[/* action */ js.Function0[Unit], Unit]): IDisposable
   
-  def scheduleRecursiveWithAbsolute(dueTime: Double, action: js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]): IDisposable = js.native
+  def scheduleRecursiveWithAbsolute(dueTime: Double, action: js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]): IDisposable
   
   def scheduleRecursiveWithAbsoluteAndState[TState](
     state: TState,
@@ -31,9 +29,9 @@ trait IScheduler extends StObject {
       /* action */ js.Function2[/* state */ TState, /* dueTime */ Double, Unit], 
       Unit
     ]
-  ): IDisposable = js.native
+  ): IDisposable
   
-  def scheduleRecursiveWithRelative(dueTime: Double, action: js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]): IDisposable = js.native
+  def scheduleRecursiveWithRelative(dueTime: Double, action: js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]): IDisposable
   
   def scheduleRecursiveWithRelativeAndState[TState](
     state: TState,
@@ -43,30 +41,30 @@ trait IScheduler extends StObject {
       /* action */ js.Function2[/* state */ TState, /* dueTime */ Double, Unit], 
       Unit
     ]
-  ): IDisposable = js.native
+  ): IDisposable
   
   def scheduleRecursiveWithState[TState](
     state: TState,
     action: js.Function2[/* state */ TState, /* action */ js.Function1[/* state */ TState, Unit], Unit]
-  ): IDisposable = js.native
+  ): IDisposable
   
-  def scheduleWithAbsolute(dueTime: Double, action: js.Function0[Unit]): IDisposable = js.native
+  def scheduleWithAbsolute(dueTime: Double, action: js.Function0[Unit]): IDisposable
   
   def scheduleWithAbsoluteAndState[TState](
     state: TState,
     dueTime: Double,
     action: js.Function2[/* scheduler */ this.type, /* state */ TState, IDisposable]
-  ): IDisposable = js.native
+  ): IDisposable
   
-  def scheduleWithRelative(dueTime: Double, action: js.Function0[Unit]): IDisposable = js.native
+  def scheduleWithRelative(dueTime: Double, action: js.Function0[Unit]): IDisposable
   
   def scheduleWithRelativeAndState[TState](
     state: TState,
     dueTime: Double,
     action: js.Function2[/* scheduler */ this.type, /* state */ TState, IDisposable]
-  ): IDisposable = js.native
+  ): IDisposable
   
-  def scheduleWithState[TState](state: TState, action: js.Function2[/* scheduler */ this.type, /* state */ TState, IDisposable]): IDisposable = js.native
+  def scheduleWithState[TState](state: TState, action: js.Function2[/* scheduler */ this.type, /* state */ TState, IDisposable]): IDisposable
 }
 object IScheduler {
   

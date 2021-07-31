@@ -28,7 +28,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
@@ -566,12 +565,11 @@ object requestMod {
     var startTime: Date = js.native
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Progress {
     
@@ -592,5 +590,5 @@ object requestMod {
     }
   }
   
-  type PromiseResult[D, E] = D with (typings.awsSdk.anon.Response[D, E])
+  type PromiseResult[D, E] = D & (typings.awsSdk.anon.Response[D, E])
 }

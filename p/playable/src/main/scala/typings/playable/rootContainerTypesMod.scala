@@ -5,37 +5,35 @@ import typings.std.EventListener
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rootContainerTypesMod {
   
-  @js.native
   trait IRootContainer extends StObject {
     
-    def appendComponentElement(element: HTMLElement): Unit = js.native
+    def appendComponentElement(element: HTMLElement): Unit
     
-    def attachToElement(element: HTMLElement): Unit = js.native
+    def attachToElement(element: HTMLElement): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def getHeight(): Double = js.native
+    def getHeight(): Double
     
-    def getWidth(): Double = js.native
+    def getWidth(): Double
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def setFillAllSpace(flag: Boolean): Unit = js.native
+    def setFillAllSpace(flag: Boolean): Unit
     
-    def setHeight(height: Double): Unit = js.native
+    def setHeight(height: Double): Unit
     
-    def setRtl(rtl: Boolean): Unit = js.native
+    def setRtl(rtl: Boolean): Unit
     
-    def setWidth(width: Double): Unit = js.native
+    def setWidth(width: Double): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IRootContainer {
     
@@ -99,28 +97,27 @@ object rootContainerTypesMod {
     }
   }
   
-  @js.native
   trait IRootContainerAPI extends StObject {
     
-    var attachToElement: js.UndefOr[js.Function1[/* element */ HTMLElement, Unit]] = js.native
+    var attachToElement: js.UndefOr[js.Function1[/* element */ HTMLElement, Unit]] = js.undefined
     
-    var getElement: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getElement: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var getHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var hide: js.UndefOr[js.Function0[Unit]] = js.native
+    var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setFillAllSpace: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.native
+    var setFillAllSpace: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.undefined
     
-    var setHeight: js.UndefOr[js.Function1[/* height */ Double, Unit]] = js.native
+    var setHeight: js.UndefOr[js.Function1[/* height */ Double, Unit]] = js.undefined
     
-    var setRtl: js.UndefOr[js.Function1[/* rtl */ Boolean, Unit]] = js.native
+    var setRtl: js.UndefOr[js.Function1[/* rtl */ Boolean, Unit]] = js.undefined
     
-    var setWidth: js.UndefOr[js.Function1[/* width */ Double, Unit]] = js.native
+    var setWidth: js.UndefOr[js.Function1[/* width */ Double, Unit]] = js.undefined
     
-    var show: js.UndefOr[js.Function0[Unit]] = js.native
+    var show: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IRootContainerAPI {
     
@@ -195,34 +192,57 @@ object rootContainerTypesMod {
     }
   }
   
-  @js.native
   trait IRootContainerViewCallbacks extends StObject {
     
-    def onMouseEnter(evt: Event): Unit = js.native
+    def onMouseEnter(evt: Event): Unit
     @JSName("onMouseEnter")
-    var onMouseEnter_Original: EventListener = js.native
+    var onMouseEnter_Original: EventListener
     
-    def onMouseLeave(evt: Event): Unit = js.native
+    def onMouseLeave(evt: Event): Unit
     @JSName("onMouseLeave")
-    var onMouseLeave_Original: EventListener = js.native
+    var onMouseLeave_Original: EventListener
     
-    def onMouseMove(evt: Event): Unit = js.native
+    def onMouseMove(evt: Event): Unit
     @JSName("onMouseMove")
-    var onMouseMove_Original: EventListener = js.native
+    var onMouseMove_Original: EventListener
+  }
+  object IRootContainerViewCallbacks {
+    
+    @scala.inline
+    def apply(
+      onMouseEnter: /* evt */ Event => Unit,
+      onMouseLeave: /* evt */ Event => Unit,
+      onMouseMove: /* evt */ Event => Unit
+    ): IRootContainerViewCallbacks = {
+      val __obj = js.Dynamic.literal(onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove))
+      __obj.asInstanceOf[IRootContainerViewCallbacks]
+    }
+    
+    @scala.inline
+    implicit class IRootContainerViewCallbacksMutableBuilder[Self <: IRootContainerViewCallbacks] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnMouseEnter(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnMouseLeave(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnMouseMove(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait IRootContainerViewConfig extends StObject {
     
-    var callbacks: IRootContainerViewCallbacks = js.native
+    var callbacks: IRootContainerViewCallbacks
     
-    var fillAllSpace: Boolean = js.native
+    var fillAllSpace: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var rtl: Boolean = js.native
+    var rtl: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object IRootContainerViewConfig {
     
@@ -258,18 +278,17 @@ object rootContainerTypesMod {
     }
   }
   
-  @js.native
   trait IRootContainerViewStyles extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var fillAllSpace: String = js.native
+    var fillAllSpace: String
     
-    var fullScreen: String = js.native
+    var fullScreen: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var rtl: Boolean = js.native
+    var rtl: Boolean
   }
   object IRootContainerViewStyles {
     

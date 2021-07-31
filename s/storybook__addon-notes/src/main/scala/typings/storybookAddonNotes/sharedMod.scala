@@ -3,7 +3,6 @@ package typings.storybookAddonNotes
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedMod {
@@ -20,10 +19,11 @@ object sharedMod {
   @js.native
   val PARAM_KEY: /* "notes" */ String = js.native
   
-  @js.native
-  trait DisabledParameter extends _Parameters {
+  trait DisabledParameter
+    extends StObject
+       with _Parameters {
     
-    var disable: Boolean = js.native
+    var disable: Boolean
   }
   object DisabledParameter {
     
@@ -41,10 +41,11 @@ object sharedMod {
     }
   }
   
-  @js.native
-  trait MarkdownParameter extends _Parameters {
+  trait MarkdownParameter
+    extends StObject
+       with _Parameters {
     
-    var markdown: String = js.native
+    var markdown: String
   }
   object MarkdownParameter {
     
@@ -73,10 +74,11 @@ object sharedMod {
   
   type TabsParameter = Record[String, String]
   
-  @js.native
-  trait TextParameter extends _Parameters {
+  trait TextParameter
+    extends StObject
+       with _Parameters {
     
-    var text: String = js.native
+    var text: String
   }
   object TextParameter {
     

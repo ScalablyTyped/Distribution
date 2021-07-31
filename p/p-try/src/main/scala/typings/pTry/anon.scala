@@ -2,7 +2,6 @@ package typings.pTry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -30,7 +29,7 @@ object anon {
     	})();
     	```
     	*/
-    def apply[ValueType, ArgumentsType /* <: js.Array[_] */](
+    def apply[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
       fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
     ): js.Promise[ValueType] = js.native

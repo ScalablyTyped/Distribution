@@ -2,17 +2,15 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2PlaceValueSpec extends StObject {
   
   /**
     * Speech configuration for askForPlace dialog. The extension should be used
     * to define the PlaceDialogSpec configuration.
     */
-  var dialogSpec: js.UndefOr[GoogleActionsV2DialogSpec] = js.native
+  var dialogSpec: js.UndefOr[GoogleActionsV2DialogSpec] = js.undefined
 }
 object GoogleActionsV2PlaceValueSpec {
   

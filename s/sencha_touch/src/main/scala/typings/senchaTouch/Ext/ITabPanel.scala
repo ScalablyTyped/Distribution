@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITabPanel extends IContainer {
+trait ITabPanel
+  extends StObject
+     with IContainer {
   
   /** [Method] Updates this container with the new active item
     * @param tabBar Object
@@ -15,53 +15,53 @@ trait ITabPanel extends IContainer {
     */
   var doTabChange: js.UndefOr[
     js.Function2[/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any], Boolean]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
     */
   @JSName("getCls")
-  var getCls_ITabPanel: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getCls_ITabPanel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of layout
     * @returns Object
     */
-  var getLayout: js.UndefOr[js.Function0[_]] = js.native
+  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of tabBar
     * @returns Object
     */
-  var getTabBar: js.UndefOr[js.Function0[_]] = js.native
+  var getTabBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of tabBarPosition
     * @returns String
     */
-  var getTabBarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getTabBarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
   @JSName("setCls")
-  var setCls_ITabPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setCls_ITabPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of tabBar
     * @param tabBar Object The new value.
     */
-  var setTabBar: js.UndefOr[js.Function1[/* tabBar */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTabBar: js.UndefOr[js.Function1[/* tabBar */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of tabBarPosition
     * @param tabBarPosition String The new value.
     */
-  var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var tabBar: js.UndefOr[js.Any] = js.native
+  var tabBar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var tabBarDock: js.UndefOr[Boolean] = js.native
+  var tabBarDock: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var tabBarPosition: js.UndefOr[java.lang.String] = js.native
+  var tabBarPosition: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Updates the Ui for this component and the tabBar
     * @param newUi Object
@@ -69,7 +69,7 @@ trait ITabPanel extends IContainer {
     */
   var updateUi: js.UndefOr[
     js.Function2[/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object ITabPanel {
   
@@ -95,13 +95,13 @@ object ITabPanel {
     def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
     @scala.inline
-    def setGetTabBar(value: () => _): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
+    def setGetTabBar(value: () => js.Any): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTabBarPosition(value: () => java.lang.String): Self = StObject.set(x, "getTabBarPosition", js.Any.fromFunction0(value))

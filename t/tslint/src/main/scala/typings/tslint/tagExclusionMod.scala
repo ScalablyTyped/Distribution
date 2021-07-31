@@ -7,7 +7,6 @@ import typings.tslint.exclusionDescriptorsMod.ExclusionDescriptor
 import typings.tslint.exclusionMod.Exclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagExclusionMod {
@@ -28,10 +27,11 @@ object tagExclusionMod {
   
   type IContentTags = StringDictionary[String]
   
-  @js.native
-  trait ITagExclusionDescriptor extends ExclusionDescriptor {
+  trait ITagExclusionDescriptor
+    extends StObject
+       with ExclusionDescriptor {
     
-    var tags: js.UndefOr[Content] = js.native
+    var tags: js.UndefOr[Content] = js.undefined
   }
   object ITagExclusionDescriptor {
     

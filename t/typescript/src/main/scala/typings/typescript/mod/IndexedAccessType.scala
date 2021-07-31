@@ -2,21 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndexedAccessType extends Type {
+trait IndexedAccessType
+  extends StObject
+     with Type {
   
-  var constraint: js.UndefOr[Type] = js.native
+  var constraint: js.UndefOr[Type] = js.undefined
   
-  var indexType: Type = js.native
+  var indexType: Type
   
-  var objectType: Type = js.native
+  var objectType: Type
   
-  var simplifiedForReading: js.UndefOr[Type] = js.native
+  var simplifiedForReading: js.UndefOr[Type] = js.undefined
   
-  var simplifiedForWriting: js.UndefOr[Type] = js.native
+  var simplifiedForWriting: js.UndefOr[Type] = js.undefined
 }
 object IndexedAccessType {
   

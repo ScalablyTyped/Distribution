@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEmailIdentityResponse extends StObject {
   
   /**
     * An object that contains information about the DKIM attributes for the identity.
     */
-  var DkimAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimAttributes] = js.native
+  var DkimAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimAttributes] = js.undefined
   
   /**
     * The email identity type.
     */
-  var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.native
+  var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.undefined
   
   /**
     * Specifies whether or not the identity is verified. You can only send email from verified email addresses or domains. For more information about verifying identities, see the Amazon Pinpoint User Guide.
     */
-  var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.native
+  var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
 }
 object CreateEmailIdentityResponse {
   

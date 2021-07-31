@@ -2,43 +2,41 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowEventHandlersEventMap extends StObject {
   
-  var afterprint: Event = js.native
+  var afterprint: Event
   
-  var beforeprint: Event = js.native
+  var beforeprint: Event
   
-  var beforeunload: BeforeUnloadEvent = js.native
+  var beforeunload: BeforeUnloadEvent
   
-  var hashchange: HashChangeEvent = js.native
+  var hashchange: HashChangeEvent
   
-  var languagechange: Event = js.native
+  var languagechange: Event
   
-  var message: MessageEvent[_] = js.native
+  var message: MessageEvent[js.Any]
   
-  var messageerror: MessageEvent[_] = js.native
+  var messageerror: MessageEvent[js.Any]
   
-  var offline: Event = js.native
+  var offline: Event
   
-  var online: Event = js.native
+  var online: Event
   
-  var pagehide: PageTransitionEvent = js.native
+  var pagehide: PageTransitionEvent
   
-  var pageshow: PageTransitionEvent = js.native
+  var pageshow: PageTransitionEvent
   
-  var popstate: PopStateEvent = js.native
+  var popstate: PopStateEvent
   
-  var rejectionhandled: PromiseRejectionEvent = js.native
+  var rejectionhandled: PromiseRejectionEvent
   
-  var storage: StorageEvent = js.native
+  var storage: StorageEvent
   
-  var unhandledrejection: PromiseRejectionEvent = js.native
+  var unhandledrejection: PromiseRejectionEvent
   
-  var unload: Event = js.native
+  var unload: Event
 }
 object WindowEventHandlersEventMap {
   
@@ -49,8 +47,8 @@ object WindowEventHandlersEventMap {
     beforeunload: BeforeUnloadEvent,
     hashchange: HashChangeEvent,
     languagechange: Event,
-    message: MessageEvent[_],
-    messageerror: MessageEvent[_],
+    message: MessageEvent[js.Any],
+    messageerror: MessageEvent[js.Any],
     offline: Event,
     online: Event,
     pagehide: PageTransitionEvent,
@@ -84,10 +82,10 @@ object WindowEventHandlersEventMap {
     def setLanguagechange(value: Event): Self = StObject.set(x, "languagechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: MessageEvent[_]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageerror(value: MessageEvent[_]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+    def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOffline(value: Event): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])

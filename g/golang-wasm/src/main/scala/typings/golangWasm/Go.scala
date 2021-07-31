@@ -6,25 +6,23 @@ import typings.std.WebAssembly.Imports
 import typings.std.WebAssembly.Instance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Go extends StObject {
   
-  var argv: js.Array[String] = js.native
+  var argv: js.Array[String]
   
-  var env: StringDictionary[String] = js.native
+  var env: StringDictionary[String]
   
-  def exit(code: Double): Unit = js.native
+  def exit(code: Double): Unit
   
-  var exited: Boolean = js.native
+  var exited: Boolean
   
-  var importObject: Imports = js.native
+  var importObject: Imports
   
-  var mem: DataView = js.native
+  var mem: DataView
   
-  def run(instance: Instance): js.Promise[Unit] = js.native
+  def run(instance: Instance): js.Promise[Unit]
 }
 object Go {
   

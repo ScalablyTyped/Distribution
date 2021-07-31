@@ -2,7 +2,6 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,59 +74,34 @@ trait NameSpace extends StObject {
   def Logoff(): Unit = js.native
   
   def Logon(): Unit = js.native
-  def Logon(
-    Profile: js.UndefOr[scala.Nothing],
-    Password: js.UndefOr[scala.Nothing],
-    ShowDialog: js.UndefOr[scala.Nothing],
-    NewSession: js.Any
-  ): Unit = js.native
-  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.UndefOr[scala.Nothing], ShowDialog: js.Any): Unit = js.native
-  def Logon(
-    Profile: js.UndefOr[scala.Nothing],
-    Password: js.UndefOr[scala.Nothing],
-    ShowDialog: js.Any,
-    NewSession: js.Any
-  ): Unit = js.native
-  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.Any): Unit = js.native
-  def Logon(
-    Profile: js.UndefOr[scala.Nothing],
-    Password: js.Any,
-    ShowDialog: js.UndefOr[scala.Nothing],
-    NewSession: js.Any
-  ): Unit = js.native
-  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.Any, ShowDialog: js.Any): Unit = js.native
-  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.Any, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
   def Logon(Profile: js.Any): Unit = js.native
-  def Logon(
-    Profile: js.Any,
-    Password: js.UndefOr[scala.Nothing],
-    ShowDialog: js.UndefOr[scala.Nothing],
-    NewSession: js.Any
-  ): Unit = js.native
-  def Logon(Profile: js.Any, Password: js.UndefOr[scala.Nothing], ShowDialog: js.Any): Unit = js.native
-  def Logon(Profile: js.Any, Password: js.UndefOr[scala.Nothing], ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
   def Logon(Profile: js.Any, Password: js.Any): Unit = js.native
-  def Logon(Profile: js.Any, Password: js.Any, ShowDialog: js.UndefOr[scala.Nothing], NewSession: js.Any): Unit = js.native
   def Logon(Profile: js.Any, Password: js.Any, ShowDialog: js.Any): Unit = js.native
   def Logon(Profile: js.Any, Password: js.Any, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: js.Any, Password: js.Any, ShowDialog: Unit, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: js.Any, Password: Unit, ShowDialog: js.Any): Unit = js.native
+  def Logon(Profile: js.Any, Password: Unit, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: js.Any, Password: Unit, ShowDialog: Unit, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: js.Any, ShowDialog: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: js.Any, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: js.Any, ShowDialog: Unit, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: Unit, ShowDialog: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: Unit, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
+  def Logon(Profile: Unit, Password: Unit, ShowDialog: Unit, NewSession: js.Any): Unit = js.native
   
   val MAPIOBJECT: js.Any = js.native
   
   val Offline: Boolean = js.native
   
   def OpenSharedFolder(Path: String): Folder = js.native
-  def OpenSharedFolder(
-    Path: String,
-    Name: js.UndefOr[scala.Nothing],
-    DownloadAttachments: js.UndefOr[scala.Nothing],
-    UseTTL: js.Any
-  ): Folder = js.native
-  def OpenSharedFolder(Path: String, Name: js.UndefOr[scala.Nothing], DownloadAttachments: js.Any): Folder = js.native
-  def OpenSharedFolder(Path: String, Name: js.UndefOr[scala.Nothing], DownloadAttachments: js.Any, UseTTL: js.Any): Folder = js.native
   def OpenSharedFolder(Path: String, Name: js.Any): Folder = js.native
-  def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: js.UndefOr[scala.Nothing], UseTTL: js.Any): Folder = js.native
   def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: js.Any): Folder = js.native
   def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: js.Any, UseTTL: js.Any): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: Unit, UseTTL: js.Any): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: Unit, DownloadAttachments: js.Any): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: Unit, DownloadAttachments: js.Any, UseTTL: js.Any): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: Unit, DownloadAttachments: Unit, UseTTL: js.Any): Folder = js.native
   
   def OpenSharedItem(Path: String): js.Any = js.native
   

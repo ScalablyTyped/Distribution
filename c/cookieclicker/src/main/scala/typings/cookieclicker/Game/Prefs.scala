@@ -2,55 +2,53 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prefs extends StObject {
   
-  var altDraw: PseudoBoolean = js.native
+  var altDraw: PseudoBoolean
   
-  var animate: PseudoBoolean = js.native
+  var animate: PseudoBoolean
   
-  var askLumps: PseudoBoolean = js.native
+  var askLumps: PseudoBoolean
   
-  var autosave: PseudoBoolean = js.native
+  var autosave: PseudoBoolean
   
-  var autoupdate: PseudoBoolean = js.native
+  var autoupdate: PseudoBoolean
   
-  var cursors: PseudoBoolean = js.native
+  var cursors: PseudoBoolean
   
-  var customGrandmas: PseudoBoolean = js.native
+  var customGrandmas: PseudoBoolean
   
-  var extraButtons: PseudoBoolean = js.native
+  var extraButtons: PseudoBoolean
   
-  var fancy: PseudoBoolean = js.native
+  var fancy: PseudoBoolean
   
-  var filters: PseudoBoolean = js.native
+  var filters: PseudoBoolean
   
-  var focus: PseudoBoolean = js.native
+  var focus: PseudoBoolean
   
-  var format: PseudoBoolean = js.native
+  var format: PseudoBoolean
   
-  var milk: PseudoBoolean = js.native
+  var milk: PseudoBoolean
   
-  var monospace: PseudoBoolean = js.native
+  var monospace: PseudoBoolean
   
-  var notifs: PseudoBoolean = js.native
+  var notifs: PseudoBoolean
   
-  var numbers: PseudoBoolean = js.native
+  var numbers: PseudoBoolean
   
-  var particles: PseudoBoolean = js.native
+  var particles: PseudoBoolean
   
-  var popups: PseudoBoolean = js.native
+  var popups: PseudoBoolean
   
-  var showBackupWarning: PseudoBoolean = js.native
+  var showBackupWarning: PseudoBoolean
   
-  var timeout: PseudoBoolean = js.native
+  var timeout: PseudoBoolean
   
-  var warn: PseudoBoolean = js.native
+  var warn: PseudoBoolean
   
-  var wobbly: PseudoBoolean = js.native
+  var wobbly: PseudoBoolean
 }
 object Prefs {
   

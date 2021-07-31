@@ -5,23 +5,21 @@ import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitDeletedRepository extends StObject {
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var deletedBy: IdentityRef = js.native
+  var deletedBy: IdentityRef
   
-  var deletedDate: Date = js.native
+  var deletedDate: Date
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
 }
 object GitDeletedRepository {
   

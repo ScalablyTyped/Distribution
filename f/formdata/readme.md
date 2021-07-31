@@ -11,8 +11,8 @@ HTML5 FileAPI `FormData` for Node.JS.
 | Full name          | formdata |
 | Keywords           | html5, jsdom, file-api, FormData |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 241527 |
+| # dependents       | 3 |
+| # downloads        | 255818 |
 | # stars            | 0 |
 
 ## Links

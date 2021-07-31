@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Serviceaccountkeys")
@@ -35,7 +34,7 @@ class ResourceServiceaccountkeys protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceServiceaccountkeysDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceServiceaccountkeysDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -69,7 +68,7 @@ class ResourceServiceaccountkeys protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaServiceAccountKey] = js.native
   def insert(callback: BodyResponseCallback[SchemaServiceAccountKey]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccountKey] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccountKey] = js.native
   def insert(params: ParamsResourceServiceaccountkeysInsert): GaxiosPromise[SchemaServiceAccountKey] = js.native
   def insert(
     params: ParamsResourceServiceaccountkeysInsert,
@@ -105,7 +104,7 @@ class ResourceServiceaccountkeys protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaServiceAccountKeysListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
   def list(params: ParamsResourceServiceaccountkeysList): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
   def list(
     params: ParamsResourceServiceaccountkeysList,

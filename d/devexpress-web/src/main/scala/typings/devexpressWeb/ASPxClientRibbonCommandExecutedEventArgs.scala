@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRibbon.CommandExecuted event.
   */
-@js.native
-trait ASPxClientRibbonCommandExecutedEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientRibbonCommandExecutedEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets an item object related to the event.
     */
-  var item: ASPxClientRibbonItem = js.native
+  var item: ASPxClientRibbonItem
   
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: String = js.native
+  var parameter: String
 }
 object ASPxClientRibbonCommandExecutedEventArgs {
   

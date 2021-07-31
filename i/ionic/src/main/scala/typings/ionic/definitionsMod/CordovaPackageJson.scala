@@ -4,13 +4,13 @@ import typings.ionic.anon.Platforms
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CordovaPackageJson extends PackageJson {
+trait CordovaPackageJson
+  extends StObject
+     with PackageJson {
   
-  var cordova: Platforms = js.native
+  var cordova: Platforms
 }
 object CordovaPackageJson {
   

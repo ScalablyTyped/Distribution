@@ -33,7 +33,6 @@ import typings.vue.vnodeMod.VNodeChildren
 import typings.vue.vnodeMod.VNodeData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueMod {
@@ -50,29 +49,11 @@ object vueMod {
     @JSName("$createElement")
     def $createElement(): VNode = js.native
     @JSName("$createElement")
-    def $createElement(tag: (AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])): VNode = js.native
-    @JSName("$createElement")
-    def $createElement(tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])], children: VNodeChildren): VNode = js.native
-    @JSName("$createElement")
-    def $createElement(
-      tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])],
-      data: js.UndefOr[scala.Nothing],
-      children: VNodeChildren
-    ): VNode = js.native
-    @JSName("$createElement")
-    def $createElement(tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])], data: VNodeData): VNode = js.native
-    @JSName("$createElement")
-    def $createElement(
-      tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])],
-      data: VNodeData,
-      children: VNodeChildren
-    ): VNode = js.native
-    @JSName("$createElement")
     def $createElement(tag: String): VNode = js.native
     @JSName("$createElement")
     def $createElement(tag: String, children: VNodeChildren): VNode = js.native
     @JSName("$createElement")
-    def $createElement(tag: String, data: js.UndefOr[scala.Nothing], children: VNodeChildren): VNode = js.native
+    def $createElement(tag: String, data: Unit, children: VNodeChildren): VNode = js.native
     @JSName("$createElement")
     def $createElement(tag: String, data: VNodeData): VNode = js.native
     @JSName("$createElement")
@@ -110,7 +91,7 @@ object vueMod {
             DefaultProps
           ]
         ],
-      data: js.UndefOr[scala.Nothing],
+      data: Unit,
       children: VNodeChildren
     ): VNode = js.native
     @JSName("$createElement")
@@ -139,10 +120,38 @@ object vueMod {
       children: VNodeChildren
     ): VNode = js.native
     @JSName("$createElement")
+    def $createElement(tag: Unit, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Unit, data: Unit, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Unit, data: VNodeData): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Unit, data: VNodeData, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any]): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], data: Unit, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], data: VNodeData): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], data: VNodeData, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Component[js.Any, js.Any, js.Any, js.Any]): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Component[js.Any, js.Any, js.Any, js.Any], children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Component[js.Any, js.Any, js.Any, js.Any], data: Unit, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Component[js.Any, js.Any, js.Any, js.Any], data: VNodeData): VNode = js.native
+    @JSName("$createElement")
+    def $createElement(tag: Component[js.Any, js.Any, js.Any, js.Any], data: VNodeData, children: VNodeChildren): VNode = js.native
+    @JSName("$createElement")
     var $createElement_Original: CreateElement = js.native
     
     @JSName("$data")
-    val $data: Record[String, _] = js.native
+    val $data: Record[String, js.Any] = js.native
     
     @JSName("$delete")
     def $delete(`object`: js.Object, key: String): Unit = js.native
@@ -174,11 +183,11 @@ object vueMod {
     @JSName("$mount")
     def $mount(): this.type = js.native
     @JSName("$mount")
-    def $mount(elementOrSelector: js.UndefOr[scala.Nothing], hydrating: Boolean): this.type = js.native
-    @JSName("$mount")
     def $mount(elementOrSelector: String): this.type = js.native
     @JSName("$mount")
     def $mount(elementOrSelector: String, hydrating: Boolean): this.type = js.native
+    @JSName("$mount")
+    def $mount(elementOrSelector: Unit, hydrating: Boolean): this.type = js.native
     @JSName("$mount")
     def $mount(elementOrSelector: Element): this.type = js.native
     @JSName("$mount")
@@ -192,8 +201,6 @@ object vueMod {
     @JSName("$off")
     def $off(): this.type = js.native
     @JSName("$off")
-    def $off(event: js.UndefOr[scala.Nothing], callback: js.Function): this.type = js.native
-    @JSName("$off")
     def $off(event: String): this.type = js.native
     @JSName("$off")
     def $off(event: String, callback: js.Function): this.type = js.native
@@ -201,6 +208,8 @@ object vueMod {
     def $off(event: js.Array[String]): this.type = js.native
     @JSName("$off")
     def $off(event: js.Array[String], callback: js.Function): this.type = js.native
+    @JSName("$off")
+    def $off(event: Unit, callback: js.Function): this.type = js.native
     
     @JSName("$on")
     def $on(event: String, callback: js.Function): this.type = js.native
@@ -226,7 +235,7 @@ object vueMod {
     val $parent: typings.vue.vueMod.Vue = js.native
     
     @JSName("$props")
-    val $props: Record[String, _] = js.native
+    val $props: Record[String, js.Any] = js.native
     
     @JSName("$refs")
     val $refs: StringDictionary[typings.vue.vueMod.Vue | Element | (js.Array[Element | typings.vue.vueMod.Vue])] = js.native
@@ -282,28 +291,15 @@ object vueMod {
   @js.native
   val Vue: VueConstructor[typings.vue.vueMod.Vue] = js.native
   
-  type CombinedVueInstance[Instance /* <: typings.vue.vueMod.Vue */, Data, Methods, Computed, Props] = Data with Methods with Computed with Props with Instance
+  type CombinedVueInstance[Instance /* <: typings.vue.vueMod.Vue */, Data, Methods, Computed, Props] = Data & Methods & Computed & Props & Instance
   
   @js.native
   trait CreateElement extends StObject {
     
     def apply(): VNode = js.native
-    def apply(tag: (AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])): VNode = js.native
-    def apply(tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])], children: VNodeChildren): VNode = js.native
-    def apply(
-      tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])],
-      data: js.UndefOr[scala.Nothing],
-      children: VNodeChildren
-    ): VNode = js.native
-    def apply(tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])], data: VNodeData): VNode = js.native
-    def apply(
-      tag: js.UndefOr[(AsyncComponent[_, _, _, _]) | (Component[_, _, _, _])],
-      data: VNodeData,
-      children: VNodeChildren
-    ): VNode = js.native
     def apply(tag: String): VNode = js.native
     def apply(tag: String, children: VNodeChildren): VNode = js.native
-    def apply(tag: String, data: js.UndefOr[scala.Nothing], children: VNodeChildren): VNode = js.native
+    def apply(tag: String, data: Unit, children: VNodeChildren): VNode = js.native
     def apply(tag: String, data: VNodeData): VNode = js.native
     def apply(tag: String, data: VNodeData, children: VNodeChildren): VNode = js.native
     def apply(
@@ -336,7 +332,7 @@ object vueMod {
             DefaultProps
           ]
         ],
-      data: js.UndefOr[scala.Nothing],
+      data: Unit,
       children: VNodeChildren
     ): VNode = js.native
     def apply(
@@ -362,34 +358,47 @@ object vueMod {
       data: VNodeData,
       children: VNodeChildren
     ): VNode = js.native
+    def apply(tag: Unit, children: VNodeChildren): VNode = js.native
+    def apply(tag: Unit, data: Unit, children: VNodeChildren): VNode = js.native
+    def apply(tag: Unit, data: VNodeData): VNode = js.native
+    def apply(tag: Unit, data: VNodeData, children: VNodeChildren): VNode = js.native
+    def apply(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any]): VNode = js.native
+    def apply(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], children: VNodeChildren): VNode = js.native
+    def apply(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], data: Unit, children: VNodeChildren): VNode = js.native
+    def apply(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], data: VNodeData): VNode = js.native
+    def apply(tag: AsyncComponent[js.Any, js.Any, js.Any, js.Any], data: VNodeData, children: VNodeChildren): VNode = js.native
+    def apply(tag: Component[js.Any, js.Any, js.Any, js.Any]): VNode = js.native
+    def apply(tag: Component[js.Any, js.Any, js.Any, js.Any], children: VNodeChildren): VNode = js.native
+    def apply(tag: Component[js.Any, js.Any, js.Any, js.Any], data: Unit, children: VNodeChildren): VNode = js.native
+    def apply(tag: Component[js.Any, js.Any, js.Any, js.Any], data: VNodeData): VNode = js.native
+    def apply(tag: Component[js.Any, js.Any, js.Any, js.Any], data: VNodeData, children: VNodeChildren): VNode = js.native
   }
   
   type ExtendedVue[Instance /* <: typings.vue.vueMod.Vue */, Data, Methods, Computed, Props] = VueConstructor[
-    (CombinedVueInstance[Instance, Data, Methods, Computed, Props]) with typings.vue.vueMod.Vue
+    (CombinedVueInstance[Instance, Data, Methods, Computed, Props]) & typings.vue.vueMod.Vue
   ]
   
-  @js.native
   trait VueConfiguration extends StObject {
     
-    var async: Boolean = js.native
+    var async: Boolean
     
-    var devtools: Boolean = js.native
+    var devtools: Boolean
     
-    def errorHandler(err: Error, vm: typings.vue.vueMod.Vue, info: String): Unit = js.native
+    def errorHandler(err: Error, vm: typings.vue.vueMod.Vue, info: String): Unit
     
-    var ignoredElements: js.Array[String | RegExp] = js.native
+    var ignoredElements: js.Array[String | RegExp]
     
-    var keyCodes: StringDictionary[Double | js.Array[Double]] = js.native
+    var keyCodes: StringDictionary[Double | js.Array[Double]]
     
-    var optionMergeStrategies: js.Any = js.native
+    var optionMergeStrategies: js.Any
     
-    var performance: Boolean = js.native
+    var performance: Boolean
     
-    var productionTip: Boolean = js.native
+    var productionTip: Boolean
     
-    var silent: Boolean = js.native
+    var silent: Boolean
     
-    def warnHandler(msg: String, vm: typings.vue.vueMod.Vue, trace: String): Unit = js.native
+    def warnHandler(msg: String, vm: typings.vue.vueMod.Vue, trace: String): Unit
   }
   object VueConfiguration {
     
@@ -450,7 +459,8 @@ object vueMod {
   
   @js.native
   trait VueConstructor[V /* <: typings.vue.vueMod.Vue */]
-    extends // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
+    extends StObject
+       with // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
   Instantiable0[
           CombinedVueInstance[V, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]]
         ]
@@ -483,22 +493,20 @@ object vueMod {
     def component[VC /* <: VueConstructor[typings.vue.vueMod.Vue] */](id: String, constructor: VC): VC = js.native
     def component[Props](id: String, definition: FunctionalComponentOptions[Props, RecordPropsDefinition[Props]]): ExtendedVue[V, js.Object, js.Object, js.Object, Props] = js.native
     def component[Data, Methods, Computed, Props](id: String, definition: AsyncComponent[Data, Methods, Computed, Props]): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
-    @JSName("component")
-    def component_DataMethodsComputedPropNames_String[Data, Methods, Computed, PropNames /* <: String */](id: String): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, _]] = js.native
-    @JSName("component")
-    def component_DataMethodsComputedPropNames_String[Data, Methods, Computed, PropNames /* <: String */](
+    def component[Data, Methods, Computed, PropNames /* <: String */](
       id: String,
       definition: ThisTypedComponentOptionsWithArrayProps[V, Data, Methods, Computed, PropNames]
-    ): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, _]] = js.native
-    @JSName("component")
-    def component_DataMethodsComputedProps[Data, Methods, Computed, Props](id: String): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
-    @JSName("component")
-    def component_DataMethodsComputedProps[Data, Methods, Computed, Props](
+    ): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, js.Any]] = js.native
+    def component[Data, Methods, Computed, Props](
       id: String,
       definition: ThisTypedComponentOptionsWithRecordProps[V, Data, Methods, Computed, Props]
     ): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
     @JSName("component")
-    def component_PropNames_String[PropNames /* <: String */](id: String, definition: FunctionalComponentOptions[Record[PropNames, _], js.Array[PropNames]]): ExtendedVue[V, js.Object, js.Object, js.Object, Record[PropNames, _]] = js.native
+    def component_DataMethodsComputedPropNames_String[Data, Methods, Computed, PropNames /* <: String */](id: String): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, js.Any]] = js.native
+    @JSName("component")
+    def component_DataMethodsComputedProps[Data, Methods, Computed, Props](id: String): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
+    @JSName("component")
+    def component_PropNames_String[PropNames /* <: String */](id: String, definition: FunctionalComponentOptions[Record[PropNames, js.Any], js.Array[PropNames]]): ExtendedVue[V, js.Object, js.Object, js.Object, Record[PropNames, js.Any]] = js.native
     @JSName("component")
     def component_VueConstructor(id: String): VueConstructor[typings.vue.vueMod.Vue] = js.native
     
@@ -524,16 +532,14 @@ object vueMod {
         ]
     ): ExtendedVue[V, js.Object, js.Object, js.Object, js.Object] = js.native
     def extend[Props](definition: FunctionalComponentOptions[Props, RecordPropsDefinition[Props]]): ExtendedVue[V, js.Object, js.Object, js.Object, Props] = js.native
+    def extend[Data, Methods, Computed, PropNames /* <: String */](options: ThisTypedComponentOptionsWithArrayProps[V, Data, Methods, Computed, PropNames]): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, js.Any]] = js.native
+    def extend[Data, Methods, Computed, Props](options: ThisTypedComponentOptionsWithRecordProps[V, Data, Methods, Computed, Props]): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
     @JSName("extend")
-    def extend_DataMethodsComputedPropNames_String[Data, Methods, Computed, PropNames /* <: String */](): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, _]] = js.native
-    @JSName("extend")
-    def extend_DataMethodsComputedPropNames_String[Data, Methods, Computed, PropNames /* <: String */](options: ThisTypedComponentOptionsWithArrayProps[V, Data, Methods, Computed, PropNames]): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, _]] = js.native
+    def extend_DataMethodsComputedPropNames_String[Data, Methods, Computed, PropNames /* <: String */](): ExtendedVue[V, Data, Methods, Computed, Record[PropNames, js.Any]] = js.native
     @JSName("extend")
     def extend_DataMethodsComputedProps[Data, Methods, Computed, Props](): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
     @JSName("extend")
-    def extend_DataMethodsComputedProps[Data, Methods, Computed, Props](options: ThisTypedComponentOptionsWithRecordProps[V, Data, Methods, Computed, Props]): ExtendedVue[V, Data, Methods, Computed, Props] = js.native
-    @JSName("extend")
-    def extend_PropNames_String[PropNames /* <: String */](definition: FunctionalComponentOptions[Record[PropNames, _], js.Array[PropNames]]): ExtendedVue[V, js.Object, js.Object, js.Object, Record[PropNames, _]] = js.native
+    def extend_PropNames_String[PropNames /* <: String */](definition: FunctionalComponentOptions[Record[PropNames, js.Any], js.Array[PropNames]]): ExtendedVue[V, js.Object, js.Object, js.Object, Record[PropNames, js.Any]] = js.native
     
     def filter(id: String): js.Function = js.native
     def filter(id: String, definition: js.Function): js.Function = js.native
@@ -560,8 +566,8 @@ object vueMod {
     def set[T](`object`: js.Object, key: String, value: T): T = js.native
     def set[T](`object`: js.Object, key: Double, value: T): T = js.native
     
-    def use(plugin: PluginFunction[_], options: js.Any*): VueConstructor[V] = js.native
-    def use(plugin: PluginObject[_], options: js.Any*): VueConstructor[V] = js.native
+    def use(plugin: PluginFunction[js.Any], options: js.Any*): VueConstructor[V] = js.native
+    def use(plugin: PluginObject[js.Any], options: js.Any*): VueConstructor[V] = js.native
     def use[T](plugin: PluginFunction[T]): VueConstructor[V] = js.native
     def use[T](plugin: PluginFunction[T], options: T): VueConstructor[V] = js.native
     def use[T](plugin: PluginObject[T]): VueConstructor[V] = js.native

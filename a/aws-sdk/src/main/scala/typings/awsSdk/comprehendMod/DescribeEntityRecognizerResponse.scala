@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEntityRecognizerResponse extends StObject {
   
   /**
     * Describes information associated with an entity recognizer.
     */
-  var EntityRecognizerProperties: js.UndefOr[typings.awsSdk.comprehendMod.EntityRecognizerProperties] = js.native
+  var EntityRecognizerProperties: js.UndefOr[typings.awsSdk.comprehendMod.EntityRecognizerProperties] = js.undefined
 }
 object DescribeEntityRecognizerResponse {
   

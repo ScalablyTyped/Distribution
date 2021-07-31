@@ -2,67 +2,65 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDeviceMetadata extends StObject {
   
   /**
     * Device CPU make e.g. &quot;Qualcomm&quot;
     */
-  var cpuMake: js.UndefOr[String] = js.native
+  var cpuMake: js.UndefOr[String] = js.undefined
   
   /**
     * Device CPU model e.g. &quot;MSM8974&quot;
     */
-  var cpuModel: js.UndefOr[String] = js.native
+  var cpuModel: js.UndefOr[String] = js.undefined
   
   /**
     * Device class (e.g. tablet)
     */
-  var deviceClass: js.UndefOr[String] = js.native
+  var deviceClass: js.UndefOr[String] = js.undefined
   
   /**
     * OpenGL version
     */
-  var glEsVersion: js.UndefOr[Double] = js.native
+  var glEsVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Device manufacturer (e.g. Motorola)
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * Comma separated list of native platforms (e.g. &quot;arm&quot;,
     * &quot;arm7&quot;)
     */
-  var nativePlatform: js.UndefOr[String] = js.native
+  var nativePlatform: js.UndefOr[String] = js.undefined
   
   /**
     * Device model name (e.g. Droid)
     */
-  var productName: js.UndefOr[String] = js.native
+  var productName: js.UndefOr[String] = js.undefined
   
   /**
     * Device RAM in Megabytes e.g. &quot;2048&quot;
     */
-  var ramMb: js.UndefOr[Double] = js.native
+  var ramMb: js.UndefOr[Double] = js.undefined
   
   /**
     * Screen density in DPI
     */
-  var screenDensityDpi: js.UndefOr[Double] = js.native
+  var screenDensityDpi: js.UndefOr[Double] = js.undefined
   
   /**
     * Screen height in pixels
     */
-  var screenHeightPx: js.UndefOr[Double] = js.native
+  var screenHeightPx: js.UndefOr[Double] = js.undefined
   
   /**
     * Screen width in pixels
     */
-  var screenWidthPx: js.UndefOr[Double] = js.native
+  var screenWidthPx: js.UndefOr[Double] = js.undefined
 }
 object SchemaDeviceMetadata {
   

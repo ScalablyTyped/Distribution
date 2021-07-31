@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemNextStateOnTransition extends StObject {
   
   /**
     * Error code if there is no next state transition possible.
     */
-  var errorCode: String = js.native
+  var errorCode: String
   
   /**
     * Work item ID.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Error message if there is no next state transition possible.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Name of the next state on transition.
     */
-  var stateOnTransition: String = js.native
+  var stateOnTransition: String
 }
 object WorkItemNextStateOnTransition {
   

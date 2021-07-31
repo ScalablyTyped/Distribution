@@ -8,14 +8,15 @@ import typings.ledgerhqHwAppBtc.anon.TrustedInput
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@ledgerhq/hw-app-btc", JSImport.Default)
   @js.native
-  class default protected () extends AppBtc {
+  class default protected ()
+    extends StObject
+       with AppBtc {
     def this(transport: typings.ledgerhqHwTransport.mod.default[String]) = this()
   }
   
@@ -59,76 +60,8 @@ object mod {
     def signP2SHTransaction(arg: SignP2SHTransactionArg): js.Promise[js.Array[String]] = js.native
     
     def splitTransaction(transactionHex: String): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: js.UndefOr[scala.Nothing],
-      hasTimestamp: js.UndefOr[scala.Nothing],
-      hasExtraData: js.UndefOr[scala.Nothing],
-      additionals: js.Array[String]
-    ): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: js.UndefOr[scala.Nothing],
-      hasTimestamp: js.UndefOr[scala.Nothing],
-      hasExtraData: Boolean
-    ): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: js.UndefOr[scala.Nothing],
-      hasTimestamp: js.UndefOr[scala.Nothing],
-      hasExtraData: Boolean,
-      additionals: js.Array[String]
-    ): Transaction = js.native
-    def splitTransaction(transactionHex: String, isSegwitSupported: js.UndefOr[scala.Nothing], hasTimestamp: Boolean): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: js.UndefOr[scala.Nothing],
-      hasTimestamp: Boolean,
-      hasExtraData: js.UndefOr[scala.Nothing],
-      additionals: js.Array[String]
-    ): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: js.UndefOr[scala.Nothing],
-      hasTimestamp: Boolean,
-      hasExtraData: Boolean
-    ): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: js.UndefOr[scala.Nothing],
-      hasTimestamp: Boolean,
-      hasExtraData: Boolean,
-      additionals: js.Array[String]
-    ): Transaction = js.native
     def splitTransaction(transactionHex: String, isSegwitSupported: Boolean): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: Boolean,
-      hasTimestamp: js.UndefOr[scala.Nothing],
-      hasExtraData: js.UndefOr[scala.Nothing],
-      additionals: js.Array[String]
-    ): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: Boolean,
-      hasTimestamp: js.UndefOr[scala.Nothing],
-      hasExtraData: Boolean
-    ): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: Boolean,
-      hasTimestamp: js.UndefOr[scala.Nothing],
-      hasExtraData: Boolean,
-      additionals: js.Array[String]
-    ): Transaction = js.native
     def splitTransaction(transactionHex: String, isSegwitSupported: Boolean, hasTimestamp: Boolean): Transaction = js.native
-    def splitTransaction(
-      transactionHex: String,
-      isSegwitSupported: Boolean,
-      hasTimestamp: Boolean,
-      hasExtraData: js.UndefOr[scala.Nothing],
-      additionals: js.Array[String]
-    ): Transaction = js.native
     def splitTransaction(transactionHex: String, isSegwitSupported: Boolean, hasTimestamp: Boolean, hasExtraData: Boolean): Transaction = js.native
     def splitTransaction(
       transactionHex: String,
@@ -137,38 +70,65 @@ object mod {
       hasExtraData: Boolean,
       additionals: js.Array[String]
     ): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Boolean,
+      hasTimestamp: Boolean,
+      hasExtraData: Unit,
+      additionals: js.Array[String]
+    ): Transaction = js.native
+    def splitTransaction(transactionHex: String, isSegwitSupported: Boolean, hasTimestamp: Unit, hasExtraData: Boolean): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Boolean,
+      hasTimestamp: Unit,
+      hasExtraData: Boolean,
+      additionals: js.Array[String]
+    ): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Boolean,
+      hasTimestamp: Unit,
+      hasExtraData: Unit,
+      additionals: js.Array[String]
+    ): Transaction = js.native
+    def splitTransaction(transactionHex: String, isSegwitSupported: Unit, hasTimestamp: Boolean): Transaction = js.native
+    def splitTransaction(transactionHex: String, isSegwitSupported: Unit, hasTimestamp: Boolean, hasExtraData: Boolean): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Unit,
+      hasTimestamp: Boolean,
+      hasExtraData: Boolean,
+      additionals: js.Array[String]
+    ): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Unit,
+      hasTimestamp: Boolean,
+      hasExtraData: Unit,
+      additionals: js.Array[String]
+    ): Transaction = js.native
+    def splitTransaction(transactionHex: String, isSegwitSupported: Unit, hasTimestamp: Unit, hasExtraData: Boolean): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Unit,
+      hasTimestamp: Unit,
+      hasExtraData: Boolean,
+      additionals: js.Array[String]
+    ): Transaction = js.native
+    def splitTransaction(
+      transactionHex: String,
+      isSegwitSupported: Unit,
+      hasTimestamp: Unit,
+      hasExtraData: Unit,
+      additionals: js.Array[String]
+    ): Transaction = js.native
     
     def startUntrustedHashTransactionInput(
       newTransaction: Boolean,
       transaction: Transaction,
       inputs: js.Array[TrustedInput],
       additionals: js.Array[String]
-    ): js.Promise[Unit] = js.native
-    def startUntrustedHashTransactionInput(
-      newTransaction: Boolean,
-      transaction: Transaction,
-      inputs: js.Array[TrustedInput],
-      additionals: js.Array[String],
-      bip143: js.UndefOr[scala.Nothing],
-      overwinter: js.UndefOr[scala.Nothing],
-      useTrustedInputForSegwit: Boolean
-    ): js.Promise[Unit] = js.native
-    def startUntrustedHashTransactionInput(
-      newTransaction: Boolean,
-      transaction: Transaction,
-      inputs: js.Array[TrustedInput],
-      additionals: js.Array[String],
-      bip143: js.UndefOr[scala.Nothing],
-      overwinter: Boolean
-    ): js.Promise[Unit] = js.native
-    def startUntrustedHashTransactionInput(
-      newTransaction: Boolean,
-      transaction: Transaction,
-      inputs: js.Array[TrustedInput],
-      additionals: js.Array[String],
-      bip143: js.UndefOr[scala.Nothing],
-      overwinter: Boolean,
-      useTrustedInputForSegwit: Boolean
     ): js.Promise[Unit] = js.native
     def startUntrustedHashTransactionInput(
       newTransaction: Boolean,
@@ -183,15 +143,6 @@ object mod {
       inputs: js.Array[TrustedInput],
       additionals: js.Array[String],
       bip143: Boolean,
-      overwinter: js.UndefOr[scala.Nothing],
-      useTrustedInputForSegwit: Boolean
-    ): js.Promise[Unit] = js.native
-    def startUntrustedHashTransactionInput(
-      newTransaction: Boolean,
-      transaction: Transaction,
-      inputs: js.Array[TrustedInput],
-      additionals: js.Array[String],
-      bip143: Boolean,
       overwinter: Boolean
     ): js.Promise[Unit] = js.native
     def startUntrustedHashTransactionInput(
@@ -201,6 +152,41 @@ object mod {
       additionals: js.Array[String],
       bip143: Boolean,
       overwinter: Boolean,
+      useTrustedInputForSegwit: Boolean
+    ): js.Promise[Unit] = js.native
+    def startUntrustedHashTransactionInput(
+      newTransaction: Boolean,
+      transaction: Transaction,
+      inputs: js.Array[TrustedInput],
+      additionals: js.Array[String],
+      bip143: Boolean,
+      overwinter: Unit,
+      useTrustedInputForSegwit: Boolean
+    ): js.Promise[Unit] = js.native
+    def startUntrustedHashTransactionInput(
+      newTransaction: Boolean,
+      transaction: Transaction,
+      inputs: js.Array[TrustedInput],
+      additionals: js.Array[String],
+      bip143: Unit,
+      overwinter: Boolean
+    ): js.Promise[Unit] = js.native
+    def startUntrustedHashTransactionInput(
+      newTransaction: Boolean,
+      transaction: Transaction,
+      inputs: js.Array[TrustedInput],
+      additionals: js.Array[String],
+      bip143: Unit,
+      overwinter: Boolean,
+      useTrustedInputForSegwit: Boolean
+    ): js.Promise[Unit] = js.native
+    def startUntrustedHashTransactionInput(
+      newTransaction: Boolean,
+      transaction: Transaction,
+      inputs: js.Array[TrustedInput],
+      additionals: js.Array[String],
+      bip143: Unit,
+      overwinter: Unit,
       useTrustedInputForSegwit: Boolean
     ): js.Promise[Unit] = js.native
     
@@ -215,14 +201,6 @@ object mod {
       firstRound: Boolean,
       transactionData: Buffer,
       additionals: js.Array[String],
-      bip143: js.UndefOr[scala.Nothing],
-      overwinter: Boolean
-    ): js.Promise[Buffer] = js.native
-    def startUntrustedHashTransactionInputRaw(
-      newTransaction: Boolean,
-      firstRound: Boolean,
-      transactionData: Buffer,
-      additionals: js.Array[String],
       bip143: Boolean
     ): js.Promise[Buffer] = js.native
     def startUntrustedHashTransactionInputRaw(
@@ -231,40 +209,47 @@ object mod {
       transactionData: Buffer,
       additionals: js.Array[String],
       bip143: Boolean,
+      overwinter: Boolean
+    ): js.Promise[Buffer] = js.native
+    def startUntrustedHashTransactionInputRaw(
+      newTransaction: Boolean,
+      firstRound: Boolean,
+      transactionData: Buffer,
+      additionals: js.Array[String],
+      bip143: Unit,
       overwinter: Boolean
     ): js.Promise[Buffer] = js.native
   }
   
-  @js.native
   trait CreateTransactionArg extends StObject {
     
-    var additionals: js.UndefOr[js.Array[String]] = js.native
+    var additionals: js.UndefOr[js.Array[String]] = js.undefined
     
-    var associatedKeysets: js.Array[String] = js.native
+    var associatedKeysets: js.Array[String]
     
-    var changePath: js.UndefOr[String] = js.native
+    var changePath: js.UndefOr[String] = js.undefined
     
-    var expiryHeight: js.UndefOr[Buffer] = js.native
+    var expiryHeight: js.UndefOr[Buffer] = js.undefined
     
-    var initialTimestamp: js.UndefOr[Double] = js.native
+    var initialTimestamp: js.UndefOr[Double] = js.undefined
     
-    var inputs: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]] = js.native
+    var inputs: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]
     
-    var lockTime: js.UndefOr[Double] = js.native
+    var lockTime: js.UndefOr[Double] = js.undefined
     
-    var onDeviceSignatureGranted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDeviceSignatureGranted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDeviceSignatureRequested: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDeviceSignatureRequested: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDeviceStreaming: js.UndefOr[js.Function1[/* hasProgressTotalIndex */ Index, Unit]] = js.native
+    var onDeviceStreaming: js.UndefOr[js.Function1[/* hasProgressTotalIndex */ Index, Unit]] = js.undefined
     
-    var outputScriptHex: String = js.native
+    var outputScriptHex: String
     
-    var segwit: js.UndefOr[Boolean] = js.native
+    var segwit: js.UndefOr[Boolean] = js.undefined
     
-    var sigHashType: js.UndefOr[Double] = js.native
+    var sigHashType: js.UndefOr[Double] = js.undefined
     
-    var useTrustedInputForSegwit: js.UndefOr[Boolean] = js.native
+    var useTrustedInputForSegwit: js.UndefOr[Boolean] = js.undefined
   }
   object CreateTransactionArg {
     
@@ -367,23 +352,22 @@ object mod {
     }
   }
   
-  @js.native
   trait SignP2SHTransactionArg extends StObject {
     
-    var associatedKeysets: js.Array[String] = js.native
+    var associatedKeysets: js.Array[String]
     
     // [transaction, output_index, redeem script, optional sequence]
-    var inputs: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]] = js.native
+    var inputs: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]
     
-    var lockTime: js.UndefOr[Double] = js.native
+    var lockTime: js.UndefOr[Double] = js.undefined
     
-    var outputScriptHex: String = js.native
+    var outputScriptHex: String
     
-    var segwit: js.UndefOr[Boolean] = js.native
+    var segwit: js.UndefOr[Boolean] = js.undefined
     
-    var sigHashType: js.UndefOr[Double] = js.native
+    var sigHashType: js.UndefOr[Double] = js.undefined
     
-    var transactionVersion: js.UndefOr[Double] = js.native
+    var transactionVersion: js.UndefOr[Double] = js.undefined
   }
   object SignP2SHTransactionArg {
     
@@ -441,26 +425,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Transaction extends StObject {
     
-    var extraData: js.UndefOr[Buffer] = js.native
+    var extraData: js.UndefOr[Buffer] = js.undefined
     
-    var inputs: js.Array[TransactionInput] = js.native
+    var inputs: js.Array[TransactionInput]
     
-    var locktime: js.UndefOr[Buffer] = js.native
+    var locktime: js.UndefOr[Buffer] = js.undefined
     
-    var nExpiryHeight: js.UndefOr[Buffer] = js.native
+    var nExpiryHeight: js.UndefOr[Buffer] = js.undefined
     
-    var nVersionGroupId: js.UndefOr[Buffer] = js.native
+    var nVersionGroupId: js.UndefOr[Buffer] = js.undefined
     
-    var outputs: js.UndefOr[js.Array[TransactionOutput]] = js.native
+    var outputs: js.UndefOr[js.Array[TransactionOutput]] = js.undefined
     
-    var timestamp: js.UndefOr[Buffer] = js.native
+    var timestamp: js.UndefOr[Buffer] = js.undefined
     
-    var version: Buffer = js.native
+    var version: Buffer
     
-    var witness: js.UndefOr[Buffer] = js.native
+    var witness: js.UndefOr[Buffer] = js.undefined
   }
   object Transaction {
     
@@ -529,16 +512,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TransactionInput extends StObject {
     
-    var prevout: Buffer = js.native
+    var prevout: Buffer
     
-    var script: Buffer = js.native
+    var script: Buffer
     
-    var sequence: Buffer = js.native
+    var sequence: Buffer
     
-    var tree: js.UndefOr[Buffer] = js.native
+    var tree: js.UndefOr[Buffer] = js.undefined
   }
   object TransactionInput {
     
@@ -568,12 +550,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TransactionOutput extends StObject {
     
-    var amount: Buffer = js.native
+    var amount: Buffer
     
-    var script: Buffer = js.native
+    var script: Buffer
   }
   object TransactionOutput {
     

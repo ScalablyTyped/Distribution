@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a component. */
-@js.native
-trait XComponentSupplier extends XInterface {
+trait XComponentSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * allows to get access to a component.
@@ -18,7 +18,7 @@ trait XComponentSupplier extends XInterface {
     * The component may not support {@link com.sun.star.lang.XComponent} interface.
     * @returns component representation
     */
-  val Component: XCloseable = js.native
+  val Component: XCloseable
   
   /**
     * allows to get access to a component.
@@ -26,7 +26,7 @@ trait XComponentSupplier extends XInterface {
     * The component may not support {@link com.sun.star.lang.XComponent} interface.
     * @returns component representation
     */
-  def getComponent(): XCloseable = js.native
+  def getComponent(): XCloseable
 }
 object XComponentSupplier {
   

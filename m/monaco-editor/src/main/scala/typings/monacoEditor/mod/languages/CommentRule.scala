@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentRule extends StObject {
   
   /**
     * The block comment character pair, like `/ * block comment *&#47;`
     */
-  var blockComment: js.UndefOr[CharacterPair | Null] = js.native
+  var blockComment: js.UndefOr[CharacterPair | Null] = js.undefined
   
   /**
     * The line comment token, like `// this is a comment`
     */
-  var lineComment: js.UndefOr[String | Null] = js.native
+  var lineComment: js.UndefOr[String | Null] = js.undefined
 }
 object CommentRule {
   

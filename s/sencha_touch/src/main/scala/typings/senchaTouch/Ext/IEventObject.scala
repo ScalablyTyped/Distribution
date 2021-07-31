@@ -4,38 +4,37 @@ import typings.senchaTouch.Ext.event.IDom
 import typings.senchaTouch.Ext.event.IEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventObject
-  extends IBase
+  extends StObject
+     with IBase
      with IDom {
   
   /** [Property] (Number) */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /** [Method] Stop the event preventDefault and stopPropagation
     * @returns Ext.event.Event this
     */
-  var stopEvent: js.UndefOr[js.Function0[IEvent]] = js.native
+  var stopEvent: js.UndefOr[js.Function0[IEvent]] = js.undefined
   
   /** [Method] Cancels bubbling of the event
     * @returns Ext.event.Event this
     */
-  var stopPropagation: js.UndefOr[js.Function0[IEvent]] = js.native
+  var stopPropagation: js.UndefOr[js.Function0[IEvent]] = js.undefined
 }
 object IEventObject {
   

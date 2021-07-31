@@ -4,10 +4,13 @@ import typings.node.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("multicodec", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("multicodec", "BENCODE")
   @js.native
@@ -1717,45 +1720,35 @@ object mod {
   @js.native
   val ZERONET: /* 230 */ Double = js.native
   
-  @JSImport("multicodec", "addPrefix")
-  @js.native
-  def addPrefix(multicodecStrOrCode: String, data: Buffer): Buffer = js.native
-  @JSImport("multicodec", "addPrefix")
-  @js.native
-  def addPrefix(multicodecStrOrCode: Double, data: Buffer): Buffer = js.native
-  @JSImport("multicodec", "addPrefix")
-  @js.native
-  def addPrefix(multicodecStrOrCode: Buffer, data: Buffer): Buffer = js.native
+  @scala.inline
+  def addPrefix(multicodecStrOrCode: String, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrefix")(multicodecStrOrCode.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def addPrefix(multicodecStrOrCode: Double, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrefix")(multicodecStrOrCode.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def addPrefix(multicodecStrOrCode: Buffer, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("addPrefix")(multicodecStrOrCode.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("multicodec", "getCode")
-  @js.native
-  def getCode(prefixedData: Buffer): Double = js.native
+  @scala.inline
+  def getCode(prefixedData: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCode")(prefixedData.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("multicodec", "getCodeVarint")
-  @js.native
-  def getCodeVarint(codecName: String): Buffer = js.native
+  @scala.inline
+  def getCodeVarint(codecName: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCodeVarint")(codecName.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("multicodec", "getCodec")
-  @js.native
-  def getCodec(prefixedData: Buffer): String = js.native
+  @scala.inline
+  def getCodec(prefixedData: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCodec")(prefixedData.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("multicodec", "getName")
-  @js.native
-  def getName(codec: Double): String = js.native
+  @scala.inline
+  def getName(codec: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(codec.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("multicodec", "getNumber")
-  @js.native
-  def getNumber(name: String): Double = js.native
+  @scala.inline
+  def getNumber(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumber")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("multicodec", "getVarint")
-  @js.native
-  def getVarint(code: Double): js.Array[Double] = js.native
+  @scala.inline
+  def getVarint(code: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVarint")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   @JSImport("multicodec", "print")
   @js.native
   val print: Record[Double, String] = js.native
   
-  @JSImport("multicodec", "rmPrefix")
-  @js.native
-  def rmPrefix(data: Buffer): Buffer = js.native
+  @scala.inline
+  def rmPrefix(data: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("rmPrefix")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

@@ -12,7 +12,7 @@ Smooth CSS3 transitions and transformations for jQuery.
 | Keywords           | css3, animation, transition |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 665678 |
+| # downloads        | 796436 |
 | # stars            | 3 |
 
 ## Links

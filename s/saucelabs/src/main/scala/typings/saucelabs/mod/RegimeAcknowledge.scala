@@ -3,18 +3,17 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegimeAcknowledge
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var metric_names: js.Array[String] = js.native
+  var metric_names: js.Array[String]
   
-  var order_index: Double = js.native
+  var order_index: Double
   
-  var page_url: String = js.native
+  var page_url: String
 }
 object RegimeAcknowledge {
   

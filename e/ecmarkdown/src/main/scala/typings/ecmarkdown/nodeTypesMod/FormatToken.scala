@@ -2,17 +2,17 @@ package typings.ecmarkdown.nodeTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormatToken extends Token {
+trait FormatToken
+  extends StObject
+     with Token {
   
-  var contents: String = js.native
+  var contents: String
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: Format = js.native
+  var name: Format
 }
 object FormatToken {
   

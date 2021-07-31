@@ -10,32 +10,31 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents common functionality for embedded objects. */
-@js.native
 trait XEmbeddedObject
-  extends XCloseable
+  extends StObject
      with XVisualObject
      with XClassifiedObject
      with XComponentSupplier
      with XStateChangeBroadcaster
-     with XEventBroadcaster {
+     with XEventBroadcaster
+     with XCloseable {
   
   /**
     * provides access to the internal link to the container client.
     * @returns a reference to related container client if any is set
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  var ClientSite: XEmbeddedClient = js.native
+  var ClientSite: XEmbeddedClient
   
   /**
     * returns the current state of the object.
     * @returns the current state of the object
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     */
-  val CurrentState: Double = js.native
+  val CurrentState: Double
   
   /**
     * returns supported states for the object.
@@ -43,7 +42,7 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, other possib
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     */
-  val ReachableStates: SafeArray[Double] = js.native
+  val ReachableStates: SafeArray[Double]
   
   /**
     * returns supported verbs for the object.
@@ -51,7 +50,7 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, acceptable v
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state to call the function
     */
-  val SupportedVerbs: SafeArray[VerbDescriptor] = js.native
+  val SupportedVerbs: SafeArray[VerbDescriptor]
   
   /**
     * changes the state of the object to the requested one.
@@ -60,7 +59,7 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def changeState(nNewState: Double): Unit = js.native
+  def changeState(nNewState: Double): Unit
   
   /**
     * lets object perform an action referenced by nVerbID.
@@ -70,21 +69,21 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::UnreachableStateException the state, required by the verb, can not be reached
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def doVerb(nVerbID: Double): Unit = js.native
+  def doVerb(nVerbID: Double): Unit
   
   /**
     * provides access to the internal link to the container client.
     * @returns a reference to related container client if any is set
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def getClientSite(): XEmbeddedClient = js.native
+  def getClientSite(): XEmbeddedClient
   
   /**
     * returns the current state of the object.
     * @returns the current state of the object
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     */
-  def getCurrentState(): Double = js.native
+  def getCurrentState(): Double
   
   /**
     * returns supported states for the object.
@@ -92,7 +91,7 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, other possib
     * @throws com::sun::star::embed::WrongStateException in case object is in invalid state
     */
-  def getReachableStates(): SafeArray[Double] = js.native
+  def getReachableStates(): SafeArray[Double]
   
   /**
     * retrieves the status of the object.
@@ -100,7 +99,7 @@ trait XEmbeddedObject
     * @returns the value specifying the status of the object for specified aspect can take values from {@link EmbedMisc} constant set
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def getStatus(nAspect: Double): Double = js.native
+  def getStatus(nAspect: Double): Double
   
   /**
     * returns supported verbs for the object.
@@ -108,34 +107,34 @@ trait XEmbeddedObject
     * @throws com::sun::star::embed::NeedsRunnignStateException means that the object is in loaded state now and can be switched to running state, acceptable v
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state to call the function
     */
-  def getSupportedVerbs(): SafeArray[VerbDescriptor] = js.native
+  def getSupportedVerbs(): SafeArray[VerbDescriptor]
   
   /**
     * sets a connection to the container's client.
     * @param xClient provides a reference to a client implementation
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def setClientSite(xClient: XEmbeddedClient): Unit = js.native
+  def setClientSite(xClient: XEmbeddedClient): Unit
   
   /**
     * provides object with the name of container document.
     * @param sName name of the container document
     */
-  def setContainerName(sName: String): Unit = js.native
+  def setContainerName(sName: String): Unit
   
   /**
     * specifies how often the object's representation should be updated.
     * @param nMode the new update mode, can take values from EmbeddedUpdateModes
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def setUpdateMode(nMode: Double): Unit = js.native
+  def setUpdateMode(nMode: Double): Unit
   
   /**
     * updates object's representations.
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state to call the function
     * @throws com::sun::star::uno::Exception in case problems detected
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object XEmbeddedObject {
   

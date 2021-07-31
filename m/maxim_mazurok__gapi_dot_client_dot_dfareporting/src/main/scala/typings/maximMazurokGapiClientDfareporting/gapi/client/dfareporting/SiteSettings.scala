@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SiteSettings extends StObject {
   
   /** Whether active view creatives are disabled for this site. */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.native
+  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this site opts out of ad blocking. When true, ad blocking is disabled for all placements under the site, regardless of the individual placement settings. When false, the
     * campaign and placement settings take effect.
     */
-  var adBlockingOptOut: js.UndefOr[Boolean] = js.native
+  var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
   
   /** Whether new cookies are disabled for this site. */
-  var disableNewCookie: js.UndefOr[Boolean] = js.native
+  var disableNewCookie: js.UndefOr[Boolean] = js.undefined
   
   /** Configuration settings for dynamic and image floodlight tags. */
-  var tagSetting: js.UndefOr[TagSetting] = js.native
+  var tagSetting: js.UndefOr[TagSetting] = js.undefined
   
   /**
     * Whether Verification and ActiveView for in-stream video creatives are disabled by default for new placements created under this site. This value will be used to populate the
     * placement.videoActiveViewOptOut field, when no value is specified for the new placement.
     */
-  var videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.native
+  var videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default VPAID adapter setting for new placements created under this site. This value will be used to populate the placements.vpaidAdapterChoice field, when no value is specified for
@@ -35,7 +33,7 @@ trait SiteSettings extends StObject {
     * typically determine this setting. For VPAID creatives, the adapter format will match the VPAID format (HTML5 VPAID creatives use the HTML5 adapter). *Note:* Flash is no longer
     * supported. This field now defaults to HTML5 when the following values are provided: FLASH, BOTH.
     */
-  var vpaidAdapterChoiceTemplate: js.UndefOr[String] = js.native
+  var vpaidAdapterChoiceTemplate: js.UndefOr[String] = js.undefined
 }
 object SiteSettings {
   

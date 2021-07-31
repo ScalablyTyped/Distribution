@@ -5,7 +5,6 @@ import typings.winrt.Windows.UI.Popups.IUICommand
 import typings.winrt.Windows.UI.Popups.UICommandInvokedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ApplicationSettings {
@@ -17,16 +16,19 @@ object ApplicationSettings {
   object SettingsEdgeLocation extends StObject {
     
     @js.native
-    sealed trait left extends SettingsEdgeLocation
+    sealed trait left
+      extends StObject
+         with SettingsEdgeLocation
     
     @js.native
-    sealed trait right extends SettingsEdgeLocation
+    sealed trait right
+      extends StObject
+         with SettingsEdgeLocation
   }
   
-  @js.native
   trait ISettingsCommandFactory extends StObject {
     
-    def create(settingsCommandId: js.Any, label: String, handler: UICommandInvokedHandler): SettingsCommand = js.native
+    def create(settingsCommandId: js.Any, label: String, handler: UICommandInvokedHandler): SettingsCommand
   }
   object ISettingsCommandFactory {
     
@@ -44,10 +46,9 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
   trait ISettingsPane extends StObject {
     
-    var oncommandsrequested: js.Any = js.native
+    var oncommandsrequested: js.Any
   }
   object ISettingsPane {
     
@@ -65,10 +66,9 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
   trait ISettingsPaneCommandsRequest extends StObject {
     
-    var applicationCommands: IVector[SettingsCommand] = js.native
+    var applicationCommands: IVector[SettingsCommand]
   }
   object ISettingsPaneCommandsRequest {
     
@@ -86,10 +86,9 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
   trait ISettingsPaneCommandsRequestedEventArgs extends StObject {
     
-    var request: SettingsPaneCommandsRequest = js.native
+    var request: SettingsPaneCommandsRequest
   }
   object ISettingsPaneCommandsRequestedEventArgs {
     
@@ -107,14 +106,13 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
   trait ISettingsPaneStatics extends StObject {
     
-    var edge: SettingsEdgeLocation = js.native
+    var edge: SettingsEdgeLocation
     
-    def getForCurrentView(): SettingsPane = js.native
+    def getForCurrentView(): SettingsPane
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ISettingsPaneStatics {
     
@@ -138,11 +136,21 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
-  trait SettingsCommand extends IUICommand
+  trait SettingsCommand
+    extends StObject
+       with IUICommand
+  object SettingsCommand {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SettingsCommand]
+    }
+  }
   
-  @js.native
-  trait SettingsPane extends ISettingsPane
+  trait SettingsPane
+    extends StObject
+       with ISettingsPane
   object SettingsPane {
     
     @scala.inline
@@ -152,8 +160,9 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
-  trait SettingsPaneCommandsRequest extends ISettingsPaneCommandsRequest
+  trait SettingsPaneCommandsRequest
+    extends StObject
+       with ISettingsPaneCommandsRequest
   object SettingsPaneCommandsRequest {
     
     @scala.inline
@@ -163,8 +172,9 @@ object ApplicationSettings {
     }
   }
   
-  @js.native
-  trait SettingsPaneCommandsRequestedEventArgs extends ISettingsPaneCommandsRequestedEventArgs
+  trait SettingsPaneCommandsRequestedEventArgs
+    extends StObject
+       with ISettingsPaneCommandsRequestedEventArgs
   object SettingsPaneCommandsRequestedEventArgs {
     
     @scala.inline

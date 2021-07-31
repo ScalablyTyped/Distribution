@@ -7,10 +7,13 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bowser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Constants exposed via bowser getters
@@ -36,32 +39,28 @@ object mod {
     * @param {string} UA - User agent string
     * @param {boolean} skipParsing
     */
-  @JSImport("bowser", "getParser")
-  @js.native
-  def getParser(UA: String): Parser = js.native
-  @JSImport("bowser", "getParser")
-  @js.native
-  def getParser(UA: String, skipParsing: Boolean): Parser = js.native
+  @scala.inline
+  def getParser(UA: String): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("getParser")(UA.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  @scala.inline
+  def getParser(UA: String, skipParsing: Boolean): Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("getParser")(UA.asInstanceOf[js.Any], skipParsing.asInstanceOf[js.Any])).asInstanceOf[Parser]
   
   /**
     * Creates a Parser instance and runs Parser.getResult immediately
     * @param UA - User agent string
     * @returns {Parser.ParsedResult}
     */
-  @JSImport("bowser", "parse")
-  @js.native
-  def parse(UA: String): ParsedResult = js.native
+  @scala.inline
+  def parse(UA: String): ParsedResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(UA.asInstanceOf[js.Any]).asInstanceOf[ParsedResult]
   
   object Parser {
     
     type BrowserDetails = Details
     
-    @js.native
     trait Details extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var version: js.UndefOr[String] = js.native
+      var version: js.UndefOr[String] = js.undefined
     }
     object Details {
       
@@ -90,10 +89,11 @@ object mod {
     
     type EngineDetails = Details
     
-    @js.native
-    trait OSDetails extends Details {
+    trait OSDetails
+      extends StObject
+         with Details {
       
-      var versionName: js.UndefOr[String] = js.native
+      var versionName: js.UndefOr[String] = js.undefined
     }
     object OSDetails {
       
@@ -114,16 +114,15 @@ object mod {
       }
     }
     
-    @js.native
     trait ParsedResult extends StObject {
       
-      var browser: BrowserDetails = js.native
+      var browser: BrowserDetails
       
-      var engine: EngineDetails = js.native
+      var engine: EngineDetails
       
-      var os: OSDetails = js.native
+      var os: OSDetails
       
-      var platform: PlatformDetails = js.native
+      var platform: PlatformDetails
     }
     object ParsedResult {
       
@@ -318,14 +317,13 @@ object mod {
       def test(regex: RegExp): Boolean = js.native
     }
     
-    @js.native
     trait PlatformDetails extends StObject {
       
-      var model: js.UndefOr[String] = js.native
+      var model: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var vendor: js.UndefOr[String] = js.native
+      var vendor: js.UndefOr[String] = js.undefined
     }
     object PlatformDetails {
       

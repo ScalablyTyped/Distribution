@@ -2,31 +2,29 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchDocumentData extends StObject {
   
-  def addBlankPage(): SketchPage = js.native
+  def addBlankPage(): SketchPage
   
-  def assets(): SketchAssetCollection = js.native
+  def assets(): SketchAssetCollection
   
-  def currentPage(): SketchPage = js.native
+  def currentPage(): SketchPage
   
-  def layerStyles(): Unit = js.native
+  def layerStyles(): Unit
   
-  def layerSymbols(): Unit = js.native
+  def layerSymbols(): Unit
   
-  def layerTextStyles(): SketchSharedStyleContainer = js.native
+  def layerTextStyles(): SketchSharedStyleContainer
   
-  def pages(): MSArray[SketchPage] = js.native
+  def pages(): MSArray[SketchPage]
   
-  def removePageAtIndex(index: Double): Unit = js.native
+  def removePageAtIndex(index: Double): Unit
   
-  def setCurrentPage(page: SketchPage): Unit = js.native
+  def setCurrentPage(page: SketchPage): Unit
   
-  def symbolsPageOrCreateIfNecessary(): SketchPage = js.native
+  def symbolsPageOrCreateIfNecessary(): SketchPage
 }
 object SketchDocumentData {
   

@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.EligibilityResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyEligibilityResponseHeaders extends StObject {
   
-  var body: EligibilityResponse = js.native
+  var body: EligibilityResponse
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.EligibilityResponse = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.EligibilityResponse
 }
 object BodyEligibilityResponseHeaders {
   
   @scala.inline
-  def apply(
-    body: EligibilityResponse,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.EligibilityResponse
-  ): BodyEligibilityResponseHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: EligibilityResponse, id: String): BodyEligibilityResponseHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "EligibilityResponse")
     __obj.asInstanceOf[BodyEligibilityResponseHeaders]
   }
   

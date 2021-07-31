@@ -5,25 +5,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionInvokeOptions extends Object {
+trait ConnectionInvokeOptions
+  extends StObject
+     with Object {
   
   /**
     * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the execution of the remote method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html#invoke)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * An array of [Transferable](https://developer.mozilla.org/en-US/docs/Web/API/Transferable) objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html#invoke)
     */
-  var transferList: js.UndefOr[js.Array[_]] = js.native
+  var transferList: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object ConnectionInvokeOptions {
   
@@ -47,7 +47,7 @@ object ConnectionInvokeOptions {
     def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setTransferList(value: js.Array[_]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
+    def setTransferList(value: js.Array[js.Any]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)

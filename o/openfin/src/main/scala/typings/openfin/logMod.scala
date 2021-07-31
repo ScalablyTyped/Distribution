@@ -2,19 +2,17 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMod {
   
-  @js.native
   trait GetLogRequestType extends StObject {
     
-    var endFile: js.UndefOr[String] = js.native
+    var endFile: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var sizeLimit: js.UndefOr[Double] = js.native
+    var sizeLimit: js.UndefOr[Double] = js.undefined
   }
   object GetLogRequestType {
     
@@ -44,14 +42,13 @@ object logMod {
     }
   }
   
-  @js.native
   trait LogInfo extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object LogInfo {
     

@@ -11,8 +11,8 @@ Easily format the time from node.js `process.hrtime`. Works with timescales rang
 | Full name          | pretty-time |
 | Keywords           | convert, date, format, formatting, hour, hrtime, micro, milli, minute, nano, nanosecond, pretty, second, time, week |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 23804543 |
+| # dependents       | 46 |
+| # downloads        | 30538901 |
 | # stars            | 4 |
 
 ## Links

@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A live stream describes a live ingestion point.
   */
-@js.native
 trait SchemaLiveStream extends StObject {
   
   /**
@@ -16,40 +14,40 @@ trait SchemaLiveStream extends StObject {
     * (CDN) settings. These settings provide details about the manner in which
     * you stream your content to YouTube.
     */
-  var cdn: js.UndefOr[SchemaCdnSettings] = js.native
+  var cdn: js.UndefOr[SchemaCdnSettings] = js.undefined
   
   /**
     * The content_details object contains information about the stream,
     * including the closed captions ingestion URL.
     */
-  var contentDetails: js.UndefOr[SchemaLiveStreamContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaLiveStreamContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube assigns to uniquely identify the stream.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#liveStream&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the stream, including its
     * channel, title, and description.
     */
-  var snippet: js.UndefOr[SchemaLiveStreamSnippet] = js.native
+  var snippet: js.UndefOr[SchemaLiveStreamSnippet] = js.undefined
   
   /**
     * The status object contains information about live stream&#39;s status.
     */
-  var status: js.UndefOr[SchemaLiveStreamStatus] = js.native
+  var status: js.UndefOr[SchemaLiveStreamStatus] = js.undefined
 }
 object SchemaLiveStream {
   

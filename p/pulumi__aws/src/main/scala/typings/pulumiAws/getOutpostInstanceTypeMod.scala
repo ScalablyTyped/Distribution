@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOutpostInstanceTypeMod {
   
-  @JSImport("@pulumi/aws/outposts/getOutpostInstanceType", "getOutpostInstanceType")
+  @JSImport("@pulumi/aws/outposts/getOutpostInstanceType", JSImport.Namespace)
   @js.native
-  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs): js.Promise[GetOutpostInstanceTypeResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutpostInstanceType", "getOutpostInstanceType")
-  @js.native
-  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypeResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs): js.Promise[GetOutpostInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
+  @scala.inline
+  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
+  
   trait GetOutpostInstanceTypeArgs extends StObject {
     
     /**
       * Outpost Amazon Resource Name (ARN).
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Desired instance type. Conflicts with `preferredInstanceTypes`.
       */
-    val instanceType: js.UndefOr[String] = js.native
+    val instanceType: js.UndefOr[String] = js.undefined
     
     /**
       * Ordered list of preferred instance types. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned. Conflicts with `instanceType`.
       */
-    val preferredInstanceTypes: js.UndefOr[js.Array[String]] = js.native
+    val preferredInstanceTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetOutpostInstanceTypeArgs {
     
@@ -64,19 +64,18 @@ object getOutpostInstanceTypeMod {
     }
   }
   
-  @js.native
   trait GetOutpostInstanceTypeResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instanceType: String = js.native
+    val instanceType: String
     
-    val preferredInstanceTypes: js.UndefOr[js.Array[String]] = js.native
+    val preferredInstanceTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetOutpostInstanceTypeResult {
     

@@ -12,7 +12,7 @@ A thin wrapper that provides promisified methods for the `jsonwebtoken` module.
 | Keywords           | jsonwebtoken, jwt, promises, bluebird |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 15915 |
+| # downloads        | 18605 |
 | # stars            | 1 |
 
 ## Links

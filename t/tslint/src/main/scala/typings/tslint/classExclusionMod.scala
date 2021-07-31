@@ -8,7 +8,6 @@ import typings.tslint.exclusionDescriptorsMod.ExclusionDescriptor
 import typings.tslint.exclusionMod.Exclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classExclusionMod {
@@ -27,12 +26,13 @@ object classExclusionMod {
     var shouldPrivacyBeDocumented: js.Any = js.native
   }
   
-  @js.native
-  trait IClassExclusionDescriptor extends ExclusionDescriptor {
+  trait IClassExclusionDescriptor
+    extends StObject
+       with ExclusionDescriptor {
     
-    var locations: js.UndefOr[js.Array[Location]] = js.native
+    var locations: js.UndefOr[js.Array[Location]] = js.undefined
     
-    var privacies: js.UndefOr[js.Array[Privacy]] = js.native
+    var privacies: js.UndefOr[js.Array[Privacy]] = js.undefined
   }
   object IClassExclusionDescriptor {
     

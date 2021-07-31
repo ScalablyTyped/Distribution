@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuePair extends StObject {
   
   /** The integer value of the EnumValuePair which must be non-negative. Optional. */
-  var integerValue: js.UndefOr[Double] = js.native
+  var integerValue: js.UndefOr[Double] = js.undefined
   
   /** The string value of the EnumValuePair. The maximum length is 32 characters. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object EnumValuePair {
   

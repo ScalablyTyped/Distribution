@@ -12,12 +12,10 @@ import typings.webicon.svgIconOptionsMod.SvgIconOptions
 import typings.webicon.svgIconSetOptionsMod.SvgIconSetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @js.native
   trait Config extends StObject {
     
     /**
@@ -25,110 +23,110 @@ object configMod {
       */
     var default: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A set of alias-names for icon-sets.
       */
-    var alias: js.UndefOr[IdentityMap[String, AliasOptions]] = js.native
+    var alias: js.UndefOr[IdentityMap[String, AliasOptions]] = js.undefined
     
     /**
       * The default icon-set to provide.
       */
-    var defaultIconSetUrl: js.UndefOr[String | SvgIconSetOptions | SvgCumulativeIconSetOptions] = js.native
+    var defaultIconSetUrl: js.UndefOr[String | SvgIconSetOptions | SvgCumulativeIconSetOptions] = js.undefined
     
     /**
       * The default icon-set to use.
       */
-    var defaultSource: js.UndefOr[String | Identifiable] = js.native
+    var defaultSource: js.UndefOr[String | Identifiable] = js.undefined
     
     /**
       * An alias of the `defaultIconSetUrl`-property.
       */
     var defaultSvgIconSetUrl: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The default size for svg-icons.
       */
-    var defaultSvgIconSize: js.UndefOr[Double | SizeableOptions] = js.native
+    var defaultSvgIconSize: js.UndefOr[Double | SizeableOptions] = js.undefined
     
     /**
       * An alias of the `defaultIconSetUrl`-property.
       */
     var defaultSvgSetUrl: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An alias of the `fonts`-property.
       */
     var font: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['fonts'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A set of icon-fonts to provide.
       */
-    var fonts: js.UndefOr[IdentityMap[CssClassConfig, CssIconSetOptions]] = js.native
+    var fonts: js.UndefOr[IdentityMap[CssClassConfig, CssIconSetOptions]] = js.undefined
     
     /**
       * An alias of the `icons`-property.
       */
     var icon: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['icons'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An alias of the `svgSets`-property.
       */
     var iconSet: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An alias of the `svgSets`-property.
       */
     var iconSets: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The icons to provide.
       */
-    var icons: js.UndefOr[IdentityMap[String, ImageIconOptions | SvgIconOptions]] = js.native
+    var icons: js.UndefOr[IdentityMap[String, ImageIconOptions | SvgIconOptions]] = js.undefined
     
     /**
       * An alias of the `alias`-property.
       */
     var sourceAlias: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An alias of the `sprites`-property.
       */
     var sprite: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['sprites'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A set of sprite-icons to provide.
       */
-    var sprites: js.UndefOr[IdentityMap[CssClassConfig, CssIconSetOptions]] = js.native
+    var sprites: js.UndefOr[IdentityMap[CssClassConfig, CssIconSetOptions]] = js.undefined
     
     /**
       * An alias of the `svgSets`-property.
       */
     var svgSet: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The svg-sets to provide.
       */
-    var svgSets: js.UndefOr[IdentityMap[String, SvgIconSetOptions | SvgCumulativeIconSetOptions]] = js.native
+    var svgSets: js.UndefOr[IdentityMap[String, SvgIconSetOptions | SvgCumulativeIconSetOptions]] = js.undefined
   }
   object Config {
     
@@ -148,7 +146,7 @@ object configMod {
       def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
       @scala.inline
-      def setAliasVarargs(value: (Identifiable with AliasOptions)*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      def setAliasVarargs(value: (Identifiable & AliasOptions)*): Self = StObject.set(x, "alias", js.Array(value :_*))
       
       @scala.inline
       def setDefault(
@@ -207,7 +205,7 @@ object configMod {
       def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
       @scala.inline
-      def setFontsVarargs(value: (Identifiable with CssIconSetOptions)*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      def setFontsVarargs(value: (Identifiable & CssIconSetOptions)*): Self = StObject.set(x, "fonts", js.Array(value :_*))
       
       @scala.inline
       def setIcon(
@@ -240,7 +238,7 @@ object configMod {
       def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
       @scala.inline
-      def setIconsVarargs(value: (Identifiable with (ImageIconOptions | SvgIconOptions))*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      def setIconsVarargs(value: (Identifiable & (ImageIconOptions | SvgIconOptions))*): Self = StObject.set(x, "icons", js.Array(value :_*))
       
       @scala.inline
       def setSourceAlias(
@@ -265,7 +263,7 @@ object configMod {
       def setSpritesUndefined: Self = StObject.set(x, "sprites", js.undefined)
       
       @scala.inline
-      def setSpritesVarargs(value: (Identifiable with CssIconSetOptions)*): Self = StObject.set(x, "sprites", js.Array(value :_*))
+      def setSpritesVarargs(value: (Identifiable & CssIconSetOptions)*): Self = StObject.set(x, "sprites", js.Array(value :_*))
       
       @scala.inline
       def setSvgSet(
@@ -282,7 +280,7 @@ object configMod {
       def setSvgSetsUndefined: Self = StObject.set(x, "svgSets", js.undefined)
       
       @scala.inline
-      def setSvgSetsVarargs(value: (Identifiable with (SvgIconSetOptions | SvgCumulativeIconSetOptions))*): Self = StObject.set(x, "svgSets", js.Array(value :_*))
+      def setSvgSetsVarargs(value: (Identifiable & (SvgIconSetOptions | SvgCumulativeIconSetOptions))*): Self = StObject.set(x, "svgSets", js.Array(value :_*))
     }
   }
 }

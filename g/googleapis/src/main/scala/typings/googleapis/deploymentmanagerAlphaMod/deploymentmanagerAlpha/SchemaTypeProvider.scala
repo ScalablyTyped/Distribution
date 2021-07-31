@@ -2,45 +2,43 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type provider that describes a service-backed Type.
   */
-@js.native
 trait SchemaTypeProvider extends StObject {
   
   /**
     * Allows resource handling overrides for specific collections
     */
-  var collectionOverrides: js.UndefOr[js.Array[SchemaCollectionOverride]] = js.native
+  var collectionOverrides: js.UndefOr[js.Array[SchemaCollectionOverride]] = js.undefined
   
   /**
     * Credential used when interacting with this type.
     */
-  var credential: js.UndefOr[SchemaCredential] = js.native
+  var credential: js.UndefOr[SchemaCredential] = js.undefined
   
   /**
     * An optional textual description of the resource; provided by the client
     * when the resource is created.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Descriptor Url for the this type provider.
     */
-  var descriptorUrl: js.UndefOr[String] = js.native
+  var descriptorUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Unique identifier for the resource defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Creation timestamp in RFC3339 text format.
     */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /**
     * Map of labels; provided by the client when the resource is created or
@@ -50,7 +48,7 @@ trait SchemaTypeProvider extends StObject {
     * characters long and must conform to the regular expression
     * ([a-z]([-a-z0-9]*[a-z0-9])?)?
     */
-  var labels: js.UndefOr[js.Array[SchemaTypeProviderLabelEntry]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaTypeProviderLabelEntry]] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -61,23 +59,23 @@ trait SchemaTypeProvider extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The Operation that most recently ran, or is currently
     * running, on this type provider.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
     * Options to apply when handling any resources in this service.
     */
-  var options: js.UndefOr[SchemaOptions] = js.native
+  var options: js.UndefOr[SchemaOptions] = js.undefined
   
   /**
     * Output only. Self link for the type provider.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaTypeProvider {
   

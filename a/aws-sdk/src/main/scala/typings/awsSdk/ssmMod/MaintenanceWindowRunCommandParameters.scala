@@ -2,63 +2,61 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowRunCommandParameters extends StObject {
   
-  var CloudWatchOutputConfig: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchOutputConfig] = js.native
+  var CloudWatchOutputConfig: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchOutputConfig] = js.undefined
   
   /**
     * Information about the commands to run.
     */
-  var Comment: js.UndefOr[typings.awsSdk.ssmMod.Comment] = js.native
+  var Comment: js.UndefOr[typings.awsSdk.ssmMod.Comment] = js.undefined
   
   /**
     * The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
     */
-  var DocumentHash: js.UndefOr[typings.awsSdk.ssmMod.DocumentHash] = js.native
+  var DocumentHash: js.UndefOr[typings.awsSdk.ssmMod.DocumentHash] = js.undefined
   
   /**
     * SHA-256 or SHA-1. SHA-1 hashes have been deprecated.
     */
-  var DocumentHashType: js.UndefOr[typings.awsSdk.ssmMod.DocumentHashType] = js.native
+  var DocumentHashType: js.UndefOr[typings.awsSdk.ssmMod.DocumentHashType] = js.undefined
   
   /**
     * The SSM document version to use in the request. You can specify $DEFAULT, $LATEST, or a specific version number. If you run commands by using the AWS CLI, then you must escape the first two options by using a backslash. If you specify a version number, then you don't need to use the backslash. For example: --document-version "\$DEFAULT" --document-version "\$LATEST" --document-version "3"
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * Configurations for sending notifications about command status changes on a per-instance basis.
     */
-  var NotificationConfig: js.UndefOr[typings.awsSdk.ssmMod.NotificationConfig] = js.native
+  var NotificationConfig: js.UndefOr[typings.awsSdk.ssmMod.NotificationConfig] = js.undefined
   
   /**
     * The name of the S3 bucket.
     */
-  var OutputS3BucketName: js.UndefOr[S3BucketName] = js.native
+  var OutputS3BucketName: js.UndefOr[S3BucketName] = js.undefined
   
   /**
     * The S3 bucket subfolder.
     */
-  var OutputS3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.native
+  var OutputS3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.undefined
   
   /**
     * The parameters for the RUN_COMMAND task execution.
     */
-  var Parameters: js.UndefOr[typings.awsSdk.ssmMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.ssmMod.Parameters] = js.undefined
   
   /**
     * The ARN of the IAM service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for maintenance window Run Command tasks.
     */
-  var ServiceRoleArn: js.UndefOr[ServiceRole] = js.native
+  var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   
   /**
     * If this time is reached and the command has not already started running, it doesn't run.
     */
-  var TimeoutSeconds: js.UndefOr[typings.awsSdk.ssmMod.TimeoutSeconds] = js.native
+  var TimeoutSeconds: js.UndefOr[typings.awsSdk.ssmMod.TimeoutSeconds] = js.undefined
 }
 object MaintenanceWindowRunCommandParameters {
   

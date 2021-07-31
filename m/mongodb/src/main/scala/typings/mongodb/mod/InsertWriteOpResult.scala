@@ -5,23 +5,21 @@ import typings.mongodb.anon.IdAny
 import typings.mongodb.anon.Ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertWriteOpResult[TSchema /* <: IdAny */] extends StObject {
   
-  var connection: js.Any = js.native
+  var connection: js.Any
   
-  var insertedCount: scala.Double = js.native
+  var insertedCount: scala.Double
   
   var insertedIds: NumberDictionary[
     /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any
-  ] = js.native
+  ]
   
-  var ops: js.Array[TSchema] = js.native
+  var ops: js.Array[TSchema]
   
-  var result: Ok = js.native
+  var result: Ok
 }
 object InsertWriteOpResult {
   
@@ -40,7 +38,7 @@ object InsertWriteOpResult {
   }
   
   @scala.inline
-  implicit class InsertWriteOpResultMutableBuilder[Self <: InsertWriteOpResult[_], TSchema /* <: IdAny */] (val x: Self with InsertWriteOpResult[TSchema]) extends AnyVal {
+  implicit class InsertWriteOpResultMutableBuilder[Self <: InsertWriteOpResult[?], TSchema /* <: IdAny */] (val x: Self & InsertWriteOpResult[TSchema]) extends AnyVal {
     
     @scala.inline
     def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])

@@ -5,31 +5,29 @@ import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siblingMod {
   
-  @JSImport("focus-lock/dist/es5/sibling", "focusNextElement")
+  @JSImport("focus-lock/dist/es5/sibling", JSImport.Namespace)
   @js.native
-  def focusNextElement(baseElement: Element): Unit = js.native
-  @JSImport("focus-lock/dist/es5/sibling", "focusNextElement")
-  @js.native
-  def focusNextElement(baseElement: Element, options: FocusNextOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("focus-lock/dist/es5/sibling", "focusPrevElement")
-  @js.native
-  def focusPrevElement(baseElement: Element): Unit = js.native
-  @JSImport("focus-lock/dist/es5/sibling", "focusPrevElement")
-  @js.native
-  def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = js.native
+  @scala.inline
+  def focusNextElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def focusNextElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def focusPrevElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait FocusNextOptions extends StObject {
     
-    var cycle: js.UndefOr[Boolean] = js.native
+    var cycle: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[HTMLElement | HTMLDocument] = js.native
+    var scope: js.UndefOr[HTMLElement | HTMLDocument] = js.undefined
   }
   object FocusNextOptions {
     

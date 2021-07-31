@@ -4,36 +4,35 @@ import typings.jupyterlabNbformat.anon.PartialIRawCellMetadata
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRawCell
-  extends IBaseCell
+  extends StObject
+     with IBaseCell
      with _ICell {
   
   /**
     * Cell attachments.
     */
-  var attachments: js.UndefOr[IAttachments] = js.native
+  var attachments: js.UndefOr[IAttachments] = js.undefined
   
   /**
     * String identifying the type of cell.
     */
   @JSName("cell_type")
-  var cell_type_IRawCell: raw = js.native
+  var cell_type_IRawCell: raw
   
   /**
     * Cell-level metadata.
     */
   @JSName("metadata")
-  var metadata_IRawCell: PartialIRawCellMetadata = js.native
+  var metadata_IRawCell: PartialIRawCellMetadata
 }
 object IRawCell {
   
   @scala.inline
-  def apply(cell_type: raw, metadata: PartialIRawCellMetadata, source: MultilineString): IRawCell = {
-    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  def apply(metadata: PartialIRawCellMetadata, source: MultilineString): IRawCell = {
+    val __obj = js.Dynamic.literal(cell_type = "raw", metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRawCell]
   }
   

@@ -2,25 +2,23 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commits extends StObject {
   
-  var code: `1031` = js.native
+  var code: `1031`
   
-  var commits: `1032` = js.native
+  var commits: `1032`
   
-  var issuesAndPullRequests: `1033` = js.native
+  var issuesAndPullRequests: `1033`
   
-  var labels: `1034` = js.native
+  var labels: `1034`
   
-  var repos: `1035` = js.native
+  var repos: `1035`
   
-  var topics: `1036` = js.native
+  var topics: `1036`
   
-  var users: `1037` = js.native
+  var users: `1037`
 }
 object Commits {
   

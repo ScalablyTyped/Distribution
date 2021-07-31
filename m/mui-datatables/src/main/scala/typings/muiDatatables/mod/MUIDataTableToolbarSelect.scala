@@ -3,23 +3,21 @@ package typings.muiDatatables.mod
 import typings.muiDatatables.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableToolbarSelect extends StObject {
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var displayData: js.UndefOr[DisplayData] = js.native
+  var displayData: js.UndefOr[DisplayData] = js.undefined
   
-  var onRowsDelete: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onRowsDelete: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var options: MUIDataTableOptions = js.native
+  var options: MUIDataTableOptions
   
-  var rowSelected: js.UndefOr[Boolean] = js.native
+  var rowSelected: js.UndefOr[Boolean] = js.undefined
   
-  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
 }
 object MUIDataTableToolbarSelect {
   
@@ -48,7 +46,7 @@ object MUIDataTableToolbarSelect {
     def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
     @scala.inline
-    def setOnRowsDelete(value: /* args */ js.Any => _): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction1(value))
+    def setOnRowsDelete(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnRowsDeleteUndefined: Self = StObject.set(x, "onRowsDelete", js.undefined)
@@ -63,7 +61,7 @@ object MUIDataTableToolbarSelect {
     def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
     
     @scala.inline
-    def setSelectRowUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)

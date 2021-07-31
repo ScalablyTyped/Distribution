@@ -2,12 +2,14 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hasKeyMod {
   
-  @JSImport("@antv/util/lib/has-key", JSImport.Default)
+  @JSImport("@antv/util/lib/has-key", JSImport.Namespace)
   @js.native
-  def default(obj: js.Object, key: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(obj: js.Object, key: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

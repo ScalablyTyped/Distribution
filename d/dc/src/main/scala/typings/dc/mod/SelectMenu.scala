@@ -3,11 +3,12 @@ package typings.dc.mod
 import typings.dc.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectMenu extends BaseMixin[SelectMenu] {
+trait SelectMenu
+  extends StObject
+     with BaseMixin[SelectMenu] {
   
   def filterDisplayed(): js.Function2[/* a */ Key, /* index */ Double, Boolean] = js.native
   def filterDisplayed(t: js.Function2[/* a */ Key, /* index */ Double, Boolean]): SelectMenu = js.native
@@ -27,7 +28,7 @@ trait SelectMenu extends BaseMixin[SelectMenu] {
   def order(): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
   def order(t: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): SelectMenu = js.native
   @JSName("order")
-  var order_Original: IGetSet[js.Function2[/* a */ _, /* b */ _, Double], SelectMenu] = js.native
+  var order_Original: IGetSet[js.Function2[/* a */ js.Any, /* b */ js.Any, Double], SelectMenu] = js.native
   
   def promptText(): String = js.native
   def promptText(t: String): SelectMenu = js.native
@@ -37,5 +38,5 @@ trait SelectMenu extends BaseMixin[SelectMenu] {
   def promptValue(): js.Any = js.native
   def promptValue(t: js.Any): SelectMenu = js.native
   @JSName("promptValue")
-  var promptValue_Original: IGetSet[_, SelectMenu] = js.native
+  var promptValue_Original: IGetSet[js.Any, SelectMenu] = js.native
 }

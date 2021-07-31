@@ -2,13 +2,11 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a set of hyperparameters to optimize.
   */
-@js.native
 trait SchemaGoogleCloudMlV1HyperparameterSpec extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaGoogleCloudMlV1HyperparameterSpec extends StObject {
     * job. Uses the default CloudML Engine hyperparameter tuning algorithm if
     * unspecified.
     */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Indicates if the hyperparameter tuning job enables auto trial
     * early stopping.
     */
-  var enableTrialEarlyStopping: js.UndefOr[Boolean] = js.native
+  var enableTrialEarlyStopping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The type of goal to use for tuning. Available types are
     * `MAXIMIZE` and `MINIMIZE`.  Defaults to `MAXIMIZE`.
     */
-  var goal: js.UndefOr[String] = js.native
+  var goal: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Tensorflow summary tag name to use for optimizing trials.
@@ -38,7 +36,7 @@ trait SchemaGoogleCloudMlV1HyperparameterSpec extends StObject {
     * tf.Summary. By default, &quot;training/hptuning/metric&quot; will be
     * used.
     */
-  var hyperparameterMetricTag: js.UndefOr[String] = js.native
+  var hyperparameterMetricTag: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. How many failed trials that need to be seen before failing the
@@ -47,7 +45,7 @@ trait SchemaGoogleCloudMlV1HyperparameterSpec extends StObject {
     * Defaults to zero, which means to let the service decide when a
     * hyperparameter job should fail.
     */
-  var maxFailedTrials: js.UndefOr[Double] = js.native
+  var maxFailedTrials: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. The number of training trials to run concurrently. You can
@@ -58,25 +56,25 @@ trait SchemaGoogleCloudMlV1HyperparameterSpec extends StObject {
     * reduce the quality of the overall optimization.  Each trial will use the
     * same scale tier and machine types.  Defaults to one.
     */
-  var maxParallelTrials: js.UndefOr[Double] = js.native
+  var maxParallelTrials: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. How many training trials should be attempted to optimize the
     * specified hyperparameters.  Defaults to one.
     */
-  var maxTrials: js.UndefOr[Double] = js.native
+  var maxTrials: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. The set of parameters to tune.
     */
-  var params: js.UndefOr[js.Array[SchemaGoogleCloudMlV1ParameterSpec]] = js.native
+  var params: js.UndefOr[js.Array[SchemaGoogleCloudMlV1ParameterSpec]] = js.undefined
   
   /**
     * Optional. The prior hyperparameter tuning job id that users hope to
     * continue with. The job id will be used to find the corresponding vizier
     * study guid and resume the study.
     */
-  var resumePreviousJobId: js.UndefOr[String] = js.native
+  var resumePreviousJobId: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1HyperparameterSpec {
   

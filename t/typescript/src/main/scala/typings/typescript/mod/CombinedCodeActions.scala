@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CombinedCodeActions extends StObject {
   
-  var changes: js.Array[FileTextChanges] = js.native
+  var changes: js.Array[FileTextChanges]
   
-  var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.native
+  var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.undefined
 }
 object CombinedCodeActions {
   

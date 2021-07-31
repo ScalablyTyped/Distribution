@@ -4,25 +4,24 @@ import typings.dashjs.anon.Code
 import typings.dashjs.dashjsStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaPlayerErrorEvent
-  extends Event
+  extends StObject
+     with Event
      with ErrorEvent {
   
-  var error: Code = js.native
+  var error: Code
   
   @JSName("type")
-  var type_MediaPlayerErrorEvent: error = js.native
+  var type_MediaPlayerErrorEvent: error
 }
 object MediaPlayerErrorEvent {
   
   @scala.inline
-  def apply(error: Code, `type`: error): MediaPlayerErrorEvent = {
+  def apply(error: Code): MediaPlayerErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[MediaPlayerErrorEvent]
   }
   

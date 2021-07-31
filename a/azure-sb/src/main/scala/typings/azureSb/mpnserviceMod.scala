@@ -5,28 +5,30 @@ import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import typings.azureSb.mod.Azure.ServiceBus.ResponseCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mpnserviceMod {
   
   @JSImport("azure-sb/lib/mpnservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MpnsService {
+  class ^ protected ()
+    extends StObject
+       with MpnsService {
     def this(notificationHubService: typings.azureSb.notificationhubserviceMod.^) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.azureSb.mpnserviceMod.Template because Already inherited */ @js.native
-  trait FlipTileTemplate extends TileTemplate {
+  - typings.azureSb.mpnserviceMod.Template because Already inherited */ trait FlipTileTemplate
+    extends StObject
+       with TileTemplate {
     
-    var smallBackgroundImage: String = js.native
+    var smallBackgroundImage: String
     
-    var wideBackBackgroundImage: String = js.native
+    var wideBackBackgroundImage: String
     
-    var wideBackContent: String = js.native
+    var wideBackContent: String
     
-    var wideBackgroundImage: String = js.native
+    var wideBackgroundImage: String
   }
   object FlipTileTemplate {
     
@@ -347,22 +349,23 @@ object mpnserviceMod {
     }
   }
   
-  @js.native
-  trait TileTemplate extends Template {
+  trait TileTemplate
+    extends StObject
+       with Template {
     
-    var backBackgroundImage: String = js.native
+    var backBackgroundImage: String
     
-    var backContent: String = js.native
+    var backContent: String
     
-    var backTitle: String = js.native
+    var backTitle: String
     
-    var backgroundImage: String = js.native
+    var backgroundImage: String
     
-    var count: String = js.native
+    var count: String
     
-    var id: String = js.native
+    var id: String
     
-    var title: String = js.native
+    var title: String
   }
   object TileTemplate {
     
@@ -406,14 +409,15 @@ object mpnserviceMod {
     }
   }
   
-  @js.native
-  trait ToastTemplate extends Template {
+  trait ToastTemplate
+    extends StObject
+       with Template {
     
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
-    var text1: String = js.native
+    var text1: String
     
-    var text2: String = js.native
+    var text2: String
   }
   object ToastTemplate {
     

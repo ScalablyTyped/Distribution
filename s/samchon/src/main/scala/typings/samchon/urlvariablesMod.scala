@@ -3,7 +3,6 @@ package typings.samchon
 import typings.urlVariables.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlvariablesMod {
@@ -25,15 +24,16 @@ object urlvariablesMod {
   }
   object URLVariables {
     
-    @JSImport("samchon/library/URLVariables", "URLVariables.parse")
+    @JSImport("samchon/library/URLVariables", "URLVariables")
     @js.native
-    def parse[T](str: String): T = js.native
-    @JSImport("samchon/library/URLVariables", "URLVariables.parse")
-    @js.native
-    def parse[T](str: String, autoCase: Boolean): T = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("samchon/library/URLVariables", "URLVariables.stringify")
-    @js.native
-    def stringify[T](obj: T): String = js.native
+    @scala.inline
+    def parse[T](str: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def parse[T](str: String, autoCase: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], autoCase.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    @scala.inline
+    def stringify[T](obj: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -2,56 +2,54 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
     * The valid range of values for the parameter.
     */
-  var AllowedValues: js.UndefOr[String] = js.native
+  var AllowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how to apply the WLM configuration parameter. Some properties can be applied dynamically, while other properties require that any associated clusters be rebooted for the configuration changes to be applied. For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
-  var ApplyType: js.UndefOr[ParameterApplyType] = js.native
+  var ApplyType: js.UndefOr[ParameterApplyType] = js.undefined
   
   /**
     * The data type of the parameter.
     */
-  var DataType: js.UndefOr[String] = js.native
+  var DataType: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the parameter.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed. 
     */
-  var IsModifiable: js.UndefOr[Boolean] = js.native
+  var IsModifiable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The earliest engine version to which the parameter can apply.
     */
-  var MinimumEngineVersion: js.UndefOr[String] = js.native
+  var MinimumEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var ParameterName: js.UndefOr[String] = js.native
+  var ParameterName: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the parameter.
     */
-  var ParameterValue: js.UndefOr[String] = js.native
+  var ParameterValue: js.UndefOr[String] = js.undefined
   
   /**
     * The source of the parameter value, such as "engine-default" or "user".
     */
-  var Source: js.UndefOr[String] = js.native
+  var Source: js.UndefOr[String] = js.undefined
 }
 object Parameter {
   

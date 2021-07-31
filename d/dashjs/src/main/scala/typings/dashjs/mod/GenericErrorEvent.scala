@@ -7,27 +7,26 @@ import typings.dashjs.dashjsStrings.key_session
 import typings.dashjs.dashjsStrings.mediasource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericErrorEvent
-  extends Event
+  extends StObject
+     with Event
      with ErrorEvent {
   
-  var error: capability | mediasource | key_session | key_message = js.native
+  var error: capability | mediasource | key_session | key_message
   
-  var event: String = js.native
+  var event: String
   
   @JSName("type")
-  var type_GenericErrorEvent: error = js.native
+  var type_GenericErrorEvent: error
 }
 object GenericErrorEvent {
   
   @scala.inline
-  def apply(error: capability | mediasource | key_session | key_message, event: String, `type`: error): GenericErrorEvent = {
+  def apply(error: capability | mediasource | key_session | key_message, event: String): GenericErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[GenericErrorEvent]
   }
   

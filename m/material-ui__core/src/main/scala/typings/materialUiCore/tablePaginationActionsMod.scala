@@ -10,7 +10,6 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablePaginationActionsMod extends Shortcut {
@@ -20,7 +19,9 @@ object tablePaginationActionsMod extends Shortcut {
   val default: ComponentType[TablePaginationActionsProps] = js.native
   
   @js.native
-  trait TablePaginationActionsProps extends HTMLAttributes[HTMLDivElement] {
+  trait TablePaginationActionsProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     var backIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.native
     

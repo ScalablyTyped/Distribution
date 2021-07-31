@@ -8,25 +8,42 @@ import typings.openapiTypes.mod.OpenAPIV3.ReferenceObject
 import typings.tsLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-request-coercer", JSImport.Default)
   @js.native
-  class default protected () extends OpenAPIRequestCoercer {
+  class default protected ()
+    extends StObject
+       with OpenAPIRequestCoercer {
     def this(args: OpenAPIRequestCoercerArgs) = this()
+    
+    /* CompleteClass */
+    override def coerce(request: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def coerce(request: Request): Unit = js.native
+    
+    /* CompleteClass */
+    var coerceFormData: js.Any = js.native
+    
+    /* CompleteClass */
+    var coerceHeaders: js.Any = js.native
+    
+    /* CompleteClass */
+    var coerceParams: js.Any = js.native
+    
+    /* CompleteClass */
+    var coerceQuery: js.Any = js.native
   }
   
-  @js.native
   trait CoercionStrategy extends StObject {
     
-    var boolean: js.UndefOr[js.Function1[/* input */ js.Any, _]] = js.native
+    var boolean: js.UndefOr[js.Function1[/* input */ js.Any, js.Any]] = js.undefined
     
-    var integer: js.UndefOr[js.Function1[/* input */ js.Any, _]] = js.native
+    var integer: js.UndefOr[js.Function1[/* input */ js.Any, js.Any]] = js.undefined
     
-    var number: js.UndefOr[js.Function1[/* input */ js.Any, _]] = js.native
+    var number: js.UndefOr[js.Function1[/* input */ js.Any, js.Any]] = js.undefined
   }
   object CoercionStrategy {
     
@@ -40,29 +57,28 @@ object mod {
     implicit class CoercionStrategyMutableBuilder[Self <: CoercionStrategy] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBoolean(value: /* input */ js.Any => _): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
+      def setBoolean(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
       @scala.inline
-      def setInteger(value: /* input */ js.Any => _): Self = StObject.set(x, "integer", js.Any.fromFunction1(value))
+      def setInteger(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "integer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
       
       @scala.inline
-      def setNumber(value: /* input */ js.Any => _): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
+      def setNumber(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
       
       @scala.inline
       def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     }
   }
   
-  @js.native
   trait IOpenAPIRequestCoercer extends StObject {
     
-    def coerce(request: Request): Unit = js.native
+    def coerce(request: Request): Unit
   }
   object IOpenAPIRequestCoercer {
     
@@ -80,18 +96,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait OpenAPIRequestCoercer extends IOpenAPIRequestCoercer {
+  trait OpenAPIRequestCoercer
+    extends StObject
+       with IOpenAPIRequestCoercer {
     
-    def coerce(request: js.Any): Unit = js.native
+    def coerce(request: js.Any): Unit
     
-    var coerceFormData: js.Any = js.native
+    var coerceFormData: js.Any
     
-    var coerceHeaders: js.Any = js.native
+    var coerceHeaders: js.Any
     
-    var coerceParams: js.Any = js.native
+    var coerceParams: js.Any
     
-    var coerceQuery: js.Any = js.native
+    var coerceQuery: js.Any
   }
   object OpenAPIRequestCoercer {
     
@@ -127,20 +144,19 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIRequestCoercerArgs extends StObject {
     
-    var coercionStrategy: js.UndefOr[CoercionStrategy] = js.native
+    var coercionStrategy: js.UndefOr[CoercionStrategy] = js.undefined
     
-    var enableObjectCoercion: js.UndefOr[Boolean] = js.native
+    var enableObjectCoercion: js.UndefOr[Boolean] = js.undefined
     
-    var extensionBase: js.UndefOr[String] = js.native
+    var extensionBase: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var loggingKey: js.UndefOr[String] = js.native
+    var loggingKey: js.UndefOr[String] = js.undefined
     
-    var parameters: Parameters = js.native
+    var parameters: Parameters
   }
   object OpenAPIRequestCoercerArgs {
     

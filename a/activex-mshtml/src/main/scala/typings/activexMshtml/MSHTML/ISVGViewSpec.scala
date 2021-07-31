@@ -2,14 +2,12 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGViewSpec extends StObject {
   
   @JSName("MSHTML.ISVGViewSpec_typekey")
-  var MSHTMLDotISVGViewSpec_typekey: ISVGViewSpec = js.native
+  var MSHTMLDotISVGViewSpec_typekey: ISVGViewSpec
 }
 object ISVGViewSpec {
   

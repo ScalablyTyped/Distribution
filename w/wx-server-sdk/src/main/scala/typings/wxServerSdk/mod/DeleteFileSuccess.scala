@@ -3,13 +3,11 @@ package typings.wxServerSdk.mod
 import typings.wxServerSdk.anon.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileSuccess extends StObject {
   
-  var fileList: js.Array[Status] = js.native
+  var fileList: js.Array[Status]
 }
 object DeleteFileSuccess {
   

@@ -10,9 +10,9 @@ think of your app in states not routes (and, yes, while keeping the address bar 
 | ------------------ | :-------------: |
 | Full name          | redux-first-router-restore-scroll |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 148033 |
+| # downloads        | 141077 |
 | # stars            | 1 |
 
 ## Links

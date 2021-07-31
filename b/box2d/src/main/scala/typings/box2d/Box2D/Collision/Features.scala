@@ -2,31 +2,29 @@ package typings.box2d.Box2D.Collision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Features extends StObject {
   
   /**
     * A value of 1 indicates that the reference edge is on shape2.
     **/
-  var flip: Double = js.native
+  var flip: Double
   
   /**
     * The edge most anti-parallel to the reference edge.
     **/
-  var incidentEdge: Double = js.native
+  var incidentEdge: Double
   
   /**
     * The vertex (0 or 1) on the incident edge that was clipped.
     **/
-  var incidentVertex: Double = js.native
+  var incidentVertex: Double
   
   /**
     * The edge that defines the outward contact normal.
     **/
-  var referenceEdge: Double = js.native
+  var referenceEdge: Double
 }
 object Features {
   

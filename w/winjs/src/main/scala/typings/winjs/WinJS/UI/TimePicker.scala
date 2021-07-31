@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -81,7 +80,7 @@ trait TimePicker extends StObject {
     * Occurs when any of the controls are changed by the user.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onchange(eventInfo: CustomEvent[_]): Unit = js.native
+  def onchange(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Gets or sets the display pattern for the period. The default period pattern is period.abbreviated(2). You can change the period pattern by changing the number of integers displayed.

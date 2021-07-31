@@ -3,15 +3,13 @@ package typings.degit
 import typings.degit.degitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClearCache extends StObject {
     
-    var clearCache: js.UndefOr[`true`] = js.native
+    var clearCache: js.UndefOr[`true`] = js.undefined
   }
   object ClearCache {
     
@@ -32,12 +30,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Stderr extends StObject {
     
-    var stderr: String = js.native
+    var stderr: String
     
-    var stdout: String = js.native
+    var stdout: String
   }
   object Stderr {
     

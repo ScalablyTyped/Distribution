@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResourceDataSyncRequest extends StObject {
   
   /**
     * The name of the resource data sync you want to update.
     */
-  var SyncName: ResourceDataSyncName = js.native
+  var SyncName: ResourceDataSyncName
   
   /**
     * Specify information about the data sources to synchronize.
     */
-  var SyncSource: ResourceDataSyncSource = js.native
+  var SyncSource: ResourceDataSyncSource
   
   /**
     * The type of resource data sync. The supported SyncType is SyncFromSource.
     */
-  var SyncType: ResourceDataSyncType = js.native
+  var SyncType: ResourceDataSyncType
 }
 object UpdateResourceDataSyncRequest {
   

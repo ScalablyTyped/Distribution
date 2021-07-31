@@ -2,10 +2,8 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XTransferableSupplier extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait XTransferableSupplier extends StObject {
     * @returns The transferable object representing the selection inside the supplying object
     * @see com.sun.star.datatransfer.XTransferable
     */
-  val Transferable: XTransferable = js.native
+  val Transferable: XTransferable
   
   /**
     * To get access to a transferable representation of a selected part of an object.
     * @returns The transferable object representing the selection inside the supplying object
     * @see com.sun.star.datatransfer.XTransferable
     */
-  def getTransferable(): XTransferable = js.native
+  def getTransferable(): XTransferable
   
   /**
     * Hands over a transferable object that shall be inserted.
@@ -28,7 +26,7 @@ trait XTransferableSupplier extends StObject {
     * @see com.sun.star.datatransfer.XTransferable
     * @throws com::sun::star::datatransfer::UnsupportedFlavorException if the given {@link com.sun.star.datatransfer.XTransferable} has no {@link com.sun.star.
     */
-  def insertTransferable(xTrans: XTransferable): Unit = js.native
+  def insertTransferable(xTrans: XTransferable): Unit
 }
 object XTransferableSupplier {
   

@@ -2,18 +2,18 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AuthorizationResource extends Resource {
+trait AuthorizationResource
+  extends StObject
+     with Resource {
   
-  val reference_id: js.UndefOr[String] = js.native
+  val reference_id: js.UndefOr[String] = js.undefined
   
   @JSName("update_time")
-  val update_time_AuthorizationResource: String = js.native
+  val update_time_AuthorizationResource: String
   
-  val valid_until: String = js.native
+  val valid_until: String
 }
 object AuthorizationResource {
   

@@ -3,25 +3,23 @@ package typings.braintree.mod
 import typings.braintree.anon.CountryCodeAlpha2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditCardUpdateRequest extends StObject {
   
-  var billingAddress: js.UndefOr[CountryCodeAlpha2] = js.native
+  var billingAddress: js.UndefOr[CountryCodeAlpha2] = js.undefined
   
-  var cardholderName: js.UndefOr[String] = js.native
+  var cardholderName: js.UndefOr[String] = js.undefined
   
-  var cvv: js.UndefOr[String] = js.native
+  var cvv: js.UndefOr[String] = js.undefined
   
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
-  var expirationMonth: js.UndefOr[String] = js.native
+  var expirationMonth: js.UndefOr[String] = js.undefined
   
-  var expirationYear: js.UndefOr[String] = js.native
+  var expirationYear: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
 }
 object CreditCardUpdateRequest {
   

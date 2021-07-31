@@ -24,15 +24,14 @@ import typings.awsSdkClientKinesisBrowser.stopStreamEncryptionExceptionsUnionMod
 import typings.awsSdkClientKinesisBrowser.updateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidArgumentExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidArgumentExceptionDetails> * / any */ @js.native
-  trait InvalidArgumentException
-    extends AddTagsToStreamExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidArgumentExceptionDetails> * / any */ trait InvalidArgumentException
+    extends StObject
+       with AddTagsToStreamExceptionsUnion
        with CreateStreamExceptionsUnion
        with DecreaseStreamRetentionPeriodExceptionsUnion
        with DeregisterStreamConsumerExceptionsUnion
@@ -55,15 +54,13 @@ object typesInvalidArgumentExceptionMod {
        with StopStreamEncryptionExceptionsUnion
        with UpdateShardCountExceptionsUnion {
     
-    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException = js.native
+    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException
   }
   object InvalidArgumentException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException
-    ): InvalidArgumentException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidArgumentException = {
+      val __obj = js.Dynamic.literal(name = "InvalidArgumentException")
       __obj.asInstanceOf[InvalidArgumentException]
     }
     
@@ -77,13 +74,12 @@ object typesInvalidArgumentExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidArgumentExceptionDetails extends StObject {
     
     /**
       * <p>A message that provides information about the error.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidArgumentExceptionDetails {
     

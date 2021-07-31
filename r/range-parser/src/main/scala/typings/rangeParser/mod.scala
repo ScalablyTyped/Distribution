@@ -5,26 +5,26 @@ import typings.rangeParser.rangeParserNumbers.`-2`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("range-parser", JSImport.Namespace)
-  @js.native
-  def apply(size: Double, str: String): Result | Ranges = js.native
-  @JSImport("range-parser", JSImport.Namespace)
-  @js.native
-  def apply(size: Double, str: String, options: Options): Result | Ranges = js.native
+  @scala.inline
+  def apply(size: Double, str: String): Result | Ranges = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Result | Ranges]
+  @scala.inline
+  def apply(size: Double, str: String, options: Options): Result | Ranges = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Ranges]
   
+  @JSImport("range-parser", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * The "combine" option can be set to `true` and overlapping & adjacent ranges
       * will be combined into a single range.
       */
-    var combine: js.UndefOr[Boolean] = js.native
+    var combine: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -45,12 +45,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Range {
     
@@ -72,7 +71,9 @@ object mod {
   }
   
   @js.native
-  trait Ranges extends Array[Range] {
+  trait Ranges
+    extends StObject
+       with Array[Range] {
     
     var `type`: String = js.native
   }

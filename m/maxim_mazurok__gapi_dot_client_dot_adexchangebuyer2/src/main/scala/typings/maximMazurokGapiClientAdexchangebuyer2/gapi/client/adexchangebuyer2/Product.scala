@@ -2,62 +2,60 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Product extends StObject {
   
   /** The proposed end time for the deal. The field will be truncated to the order of seconds during serving. */
-  var availableEndTime: js.UndefOr[String] = js.native
+  var availableEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * Inventory availability dates. The start time will be truncated to seconds during serving. Thus, a field specified as 3:23:34.456 (HH:mm:ss.SSS) will be truncated to 3:23:34 when
     * serving.
     */
-  var availableStartTime: js.UndefOr[String] = js.native
+  var availableStartTime: js.UndefOr[String] = js.undefined
   
   /** Creation time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional contact information for the creator of this product. */
-  var creatorContacts: js.UndefOr[js.Array[ContactInformation]] = js.native
+  var creatorContacts: js.UndefOr[js.Array[ContactInformation]] = js.undefined
   
   /** The display name for this product as set by the seller. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * If the creator has already signed off on the product, then the buyer can finalize the deal by accepting the product as is. When copying to a proposal, if any of the terms are
     * changed, then auto_finalize is automatically set to false.
     */
-  var hasCreatorSignedOff: js.UndefOr[Boolean] = js.native
+  var hasCreatorSignedOff: js.UndefOr[Boolean] = js.undefined
   
   /** The unique ID for the product. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** The revision number of the product (auto-assigned by Marketplace). */
-  var productRevision: js.UndefOr[String] = js.native
+  var productRevision: js.UndefOr[String] = js.undefined
   
   /** An ID which can be used by the Publisher Profile API to get more information about the seller that created this product. */
-  var publisherProfileId: js.UndefOr[String] = js.native
+  var publisherProfileId: js.UndefOr[String] = js.undefined
   
   /** Information about the seller that created this product. */
-  var seller: js.UndefOr[Seller] = js.native
+  var seller: js.UndefOr[Seller] = js.undefined
   
   /** The syndication product associated with the deal. */
-  var syndicationProduct: js.UndefOr[String] = js.native
+  var syndicationProduct: js.UndefOr[String] = js.undefined
   
   /** Targeting that is shared between the buyer and the seller. Each targeting criterion has a specified key and for each key there is a list of inclusion value or exclusion values. */
-  var targetingCriterion: js.UndefOr[js.Array[TargetingCriteria]] = js.native
+  var targetingCriterion: js.UndefOr[js.Array[TargetingCriteria]] = js.undefined
   
   /** The negotiable terms of the deal. */
-  var terms: js.UndefOr[DealTerms] = js.native
+  var terms: js.UndefOr[DealTerms] = js.undefined
   
   /** Time of last update. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** The web-property code for the seller. This needs to be copied as is when adding a new deal to a proposal. */
-  var webPropertyCode: js.UndefOr[String] = js.native
+  var webPropertyCode: js.UndefOr[String] = js.undefined
 }
 object Product {
   

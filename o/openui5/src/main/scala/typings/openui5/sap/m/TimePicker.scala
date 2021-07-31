@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePicker extends MaskInput {
+trait TimePicker
+  extends StObject
+     with MaskInput {
   
   /**
     * Gets current value of property <code>dateValue</code>.Holds a reference to a JavaScript Date Object.

@@ -3,7 +3,6 @@ package typings.googleapis.scriptV1Mod.scriptV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * throws an exception, the response body&#39;s error field contains this
   * `Status` object.
   */
-@js.native
 trait SchemaStatus extends StObject {
   
   /**
@@ -20,20 +18,20 @@ trait SchemaStatus extends StObject {
     * indicating an `INVALID_ARGUMENT` error, or&lt;/li&gt; &lt;li&gt; 1,
     * indicating a `CANCELLED` execution.&lt;/li&gt; &lt;/ul&gt;
     */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /**
     * An array that contains a single ExecutionError object that provides
     * information about the nature of the error.
     */
-  var details: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var details: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
   /**
     * A developer-facing error message, which is in English. Any user-facing
     * error message is localized and sent in the details field, or localized by
     * the client.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object SchemaStatus {
   
@@ -53,7 +51,7 @@ object SchemaStatus {
     def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setDetails(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    def setDetails(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)

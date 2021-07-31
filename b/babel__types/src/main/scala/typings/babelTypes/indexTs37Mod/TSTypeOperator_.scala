@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSTypeOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSTypeOperator_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSTypeOperator_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var operator: String = js.native
+  var operator: String
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSTypeOperator_ : TSTypeOperator = js.native
+  var type_TSTypeOperator_ : TSTypeOperator
 }
 object TSTypeOperator_ {
   
   @scala.inline
-  def apply(operator: String, `type`: TSTypeOperator, typeAnnotation: TSType): TSTypeOperator_ = {
-    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(operator: String, typeAnnotation: TSType): TSTypeOperator_ = {
+    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeOperator")
     __obj.asInstanceOf[TSTypeOperator_]
   }
   

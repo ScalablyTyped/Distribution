@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object jira {
   
-  @js.native
   trait DatePickerOptions extends StObject {
     
     /**
@@ -22,27 +20,27 @@ object jira {
       * ISO 8601 is preferred. Timezone should be set to Z for UTC time or in the format of +/-hh:mm. Not setting it will cause JavaScript to use local timezone set in the browser.
       * Defaults to current date/time.
       */
-    var date: String = js.native
+    var date: String
     
     /**
       * HTML element below which date picker will be positioned. If provided, it takes precedence over `options.position`.
       */
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
     /**
       * Callback that will be invoked when the date (and time) is selected by the user.
       */
-    def onSelect(isoDate: String, date: Date): Unit = js.native
+    def onSelect(isoDate: String, date: Date): Unit
     
     /**
       * Position of the element relative to the iframe. options.element takes precedence over it when provided.
       */
-    var position: Left = js.native
+    var position: Left
     
     /**
       * Flag determining whether the component should also have a time picker. Defaults to `false`.
       */
-    var showTime: Boolean = js.native
+    var showTime: Boolean
   }
   object DatePickerOptions {
     
@@ -78,25 +76,24 @@ object jira {
     }
   }
   
-  @js.native
   trait WorkflowConfiguration extends StObject {
     
     /**
       * Attach a callback function to run when a workflow is saved
       * @param listener called on save.
       */
-    def onSave(listener: js.Function1[/* listener */ js.Object, Unit]): Unit = js.native
+    def onSave(listener: js.Function1[/* listener */ js.Object, Unit]): Unit
     
     /**
       * Validate a workflow configuration before saving
       * @param listener called on validation. Return false to indicate that validation has not passed and the workflow cannot be saved.
       */
-    def onSaveValidation(listener: js.Function1[/* listener */ js.Object, Unit]): Unit = js.native
+    def onSaveValidation(listener: js.Function1[/* listener */ js.Object, Unit]): Unit
     
     /**
       * Save a workflow configuration if valid.
       */
-    def trigger(): WorkflowConfigurationTriggerResponse = js.native
+    def trigger(): WorkflowConfigurationTriggerResponse
   }
   object WorkflowConfiguration {
     
@@ -124,18 +121,17 @@ object jira {
     }
   }
   
-  @js.native
   trait WorkflowConfigurationTriggerResponse extends StObject {
     
     /**
       * The result of the validation listener [WorkflowConfiguration.onSaveValidation]{@link WorkflowConfiguration.onSaveValidation}.
       */
-    var valid: js.Any = js.native
+    var valid: js.Any
     
     /**
       * The result of the [WorkflowConfiguration.onSave]{@link WorkflowConfiguration.onSave}.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object WorkflowConfigurationTriggerResponse {
     

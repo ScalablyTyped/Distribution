@@ -2,12 +2,10 @@ package typings.expoLocalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localizationTypesMod {
   
-  @js.native
   trait Localization extends StObject {
     
     /**
@@ -16,32 +14,32 @@ object localizationTypesMod {
       *
       * Returns `false` in SSR environments.
       */
-    var isRTL: Boolean = js.native
+    var isRTL: Boolean
     
     /**
       * A list of all the supported language ISO codes.
       */
-    var isoCurrencyCodes: js.UndefOr[js.Array[String]] = js.native
+    var isoCurrencyCodes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Native device language, returned in standard format.
       *
       * @example `en`, `en-US`, `es-US`
       */
-    var locale: String = js.native
+    var locale: String
     
     /**
       * List of all the native languages provided by the user settings.
       * These are returned in the order the user defines in their native settings.
       */
-    var locales: js.Array[String] = js.native
+    var locales: js.Array[String]
     
     /**
       * **Available on iOS and web**: Region code for your device which came from Region setting in Language & Region.
       *
       * @example `US`, `NZ`
       */
-    var region: String | Null = js.native
+    var region: String | Null
     
     /**
       * The current timezone in display format.
@@ -49,13 +47,13 @@ object localizationTypesMod {
       *
       * @example `America/Los_Angeles`
       */
-    var timezone: String = js.native
+    var timezone: String
   }
   object Localization {
     
     @scala.inline
     def apply(isRTL: Boolean, locale: String, locales: js.Array[String], timezone: String): Localization = {
-      val __obj = js.Dynamic.literal(isRTL = isRTL.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isRTL = isRTL.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], region = null)
       __obj.asInstanceOf[Localization]
     }
     

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait WorkbookLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var application: js.UndefOr[ApplicationLoadOptions] = js.native
+  var application: js.UndefOr[ApplicationLoadOptions] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoSave: js.UndefOr[Boolean] = js.native
+  var autoSave: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var bindings: js.UndefOr[BindingCollectionLoadOptions] = js.native
+  var bindings: js.UndefOr[BindingCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var calculationEngineVersion: js.UndefOr[Boolean] = js.native
+  var calculationEngineVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var chartDataPointTrack: js.UndefOr[Boolean] = js.native
+  var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isDirty: js.UndefOr[Boolean] = js.native
+  var isDirty: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -78,7 +76,7 @@ trait WorkbookLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var linkedDataTypes: js.UndefOr[LinkedDataTypeCollectionLoadOptions] = js.native
+  var linkedDataTypes: js.UndefOr[LinkedDataTypeCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -94,7 +92,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var previouslySaved: js.UndefOr[Boolean] = js.native
+  var previouslySaved: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -102,7 +100,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.native
+  var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   
   /**
     *
@@ -110,7 +108,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var protection: js.UndefOr[WorkbookProtectionLoadOptions] = js.native
+  var protection: js.UndefOr[WorkbookProtectionLoadOptions] = js.undefined
   
   /**
     *
@@ -118,7 +116,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait WorkbookLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var showPivotFieldList: js.UndefOr[Boolean] = js.native
+  var showPivotFieldList: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -135,7 +133,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var tables: js.UndefOr[TableCollectionLoadOptions] = js.native
+  var tables: js.UndefOr[TableCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -144,7 +142,7 @@ trait WorkbookLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var use1904DateSystem: js.UndefOr[Boolean] = js.native
+  var use1904DateSystem: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -153,7 +151,7 @@ trait WorkbookLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.native
+  var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookLoadOptions {
   

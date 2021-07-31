@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromResourceRequest extends StObject {
   
   /**
     * Identifier (ID) of the directory from which to remove the tag.
     */
-  var ResourceId: typings.awsSdk.directoryserviceMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.directoryserviceMod.ResourceId
   
   /**
     * The tag key (name) of the tag to be removed.
     */
-  var TagKeys: typings.awsSdk.directoryserviceMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.directoryserviceMod.TagKeys
 }
 object RemoveTagsFromResourceRequest {
   

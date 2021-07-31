@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.BreakStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var `type`: BreakStatement = js.native
+  var `type`: BreakStatement
 }
 object `0` {
   
   @scala.inline
-  def apply(`type`: BreakStatement): `0` = {
+  def apply(): `0` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[`0`]
   }
   

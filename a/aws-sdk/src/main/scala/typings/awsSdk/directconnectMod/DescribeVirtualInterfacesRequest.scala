@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVirtualInterfacesRequest extends StObject {
   
   /**
     * The ID of the connection.
     */
-  var connectionId: js.UndefOr[ConnectionId] = js.native
+  var connectionId: js.UndefOr[ConnectionId] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
 }
 object DescribeVirtualInterfacesRequest {
   

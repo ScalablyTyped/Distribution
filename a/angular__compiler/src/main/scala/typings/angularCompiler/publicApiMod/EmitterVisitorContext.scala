@@ -2,7 +2,6 @@ package typings.angularCompiler.publicApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "EmitterVisitorContext")
@@ -14,7 +13,10 @@ class EmitterVisitorContext protected ()
 /* static members */
 object EmitterVisitorContext {
   
-  @JSImport("@angular/compiler/public_api", "EmitterVisitorContext.createRoot")
+  @JSImport("@angular/compiler/public_api", "EmitterVisitorContext")
   @js.native
-  def createRoot(): typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createRoot(): typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")().asInstanceOf[typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext]
 }

@@ -2,51 +2,49 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionConfiguration extends StObject {
   
   /**
     * The name of the DataSource.
     */
-  var dataSourceName: js.UndefOr[ResourceName] = js.native
+  var dataSourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Function description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the Function object.
     */
-  var functionArn: js.UndefOr[String] = js.native
+  var functionArn: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID representing the Function object.
     */
-  var functionId: js.UndefOr[String] = js.native
+  var functionId: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the request mapping template. Currently only the 2018-05-29 version of the template is supported.
     */
-  var functionVersion: js.UndefOr[String] = js.native
+  var functionVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Function object.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
     */
-  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
     * The Function response mapping template.
     */
-  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
 }
 object FunctionConfiguration {
   

@@ -2,21 +2,19 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // SCEDelegateService
 // see http://docs.angularjs.org/api/ng/service/$sceDelegate
 ///////////////////////////////////////////////////////////////////////////
-@js.native
 trait ISCEDelegateService extends StObject {
   
-  def getTrusted(`type`: String, mayBeTrusted: js.Any): js.Any = js.native
+  def getTrusted(`type`: String, mayBeTrusted: js.Any): js.Any
   
-  def trustAs(`type`: String, value: js.Any): js.Any = js.native
+  def trustAs(`type`: String, value: js.Any): js.Any
   
-  def valueOf(value: js.Any): js.Any = js.native
+  def valueOf(value: js.Any): js.Any
 }
 object ISCEDelegateService {
   

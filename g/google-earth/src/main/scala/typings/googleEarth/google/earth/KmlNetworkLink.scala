@@ -2,16 +2,16 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlNetworkLink extends KmlFeature {
+trait KmlNetworkLink
+  extends StObject
+     with KmlFeature {
   
   /**
     * A value of 1 causes Google Earth to fly to the view of the LookAt or Camera in the NetworkLinkControl (if it exists).
     */
-  def getFlyToView(): Boolean = js.native
+  def getFlyToView(): Boolean
   
   /**
     * Specifies the location of any of the following:
@@ -20,7 +20,7 @@ trait KmlNetworkLink extends KmlFeature {
     * * Image files used by icons in icon styles, ground overlays, and screen overlays
     * * Model files used in the Model object
     */
-  def getLink(): KmlLink = js.native
+  def getLink(): KmlLink
   
   /**
     * A value of 0 leaves the visibility of features within the control of the Google Earth user.
@@ -29,17 +29,17 @@ trait KmlNetworkLink extends KmlFeature {
     * When the file is first loaded into Google Earth, the user can clear the check box next to the item to turn off display in the 3D viewer.
     * However, when the NetworkLink is refreshed, the Placemark will be made visible again, since its original visibility state was TRUE.
     */
-  def getRefreshVisibility(): Boolean = js.native
+  def getRefreshVisibility(): Boolean
   
   /**
     * Sets the link, refreshVisibility, and flyToView for the network link.
     */
-  def set(link: KmlLink, refreshVisibility: Boolean, flyToView: Boolean): Unit = js.native
+  def set(link: KmlLink, refreshVisibility: Boolean, flyToView: Boolean): Unit
   
   /**
     * A value of 1 causes Google Earth to fly to the view of the LookAt or Camera in the NetworkLinkControl (if it exists).
     */
-  def setFlyToView(flyToView: Boolean): Unit = js.native
+  def setFlyToView(flyToView: Boolean): Unit
   
   /**
     * Specifies the location of any of the following:
@@ -48,7 +48,7 @@ trait KmlNetworkLink extends KmlFeature {
     * * Image files used by icons in icon styles, ground overlays, and screen overlays
     * * Model files used in the Model object
     */
-  def setLink(link: KmlLink): Unit = js.native
+  def setLink(link: KmlLink): Unit
   
   /**
     * A value of 0 leaves the visibility of features within the control of the Google Earth user.
@@ -57,7 +57,7 @@ trait KmlNetworkLink extends KmlFeature {
     * When the file is first loaded into Google Earth, the user can clear the check box next to the item to turn off display in the 3D viewer.
     * However, when the NetworkLink is refreshed, the Placemark will be made visible again, since its original visibility state was TRUE.
     */
-  def setRefreshVisibility(refreshVisibility: Boolean): Unit = js.native
+  def setRefreshVisibility(refreshVisibility: Boolean): Unit
 }
 object KmlNetworkLink {
   

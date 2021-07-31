@@ -2,18 +2,16 @@ package typings.scratchEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A menu item for which the label and value can differ. */
-@js.native
 trait ExtensionMenuItemComplex extends StObject {
   
   /** The human-readable label of this menu item in the menu. */
-  var text: String = js.native
+  var text: String
   
   /** The value of the block argument when this menu item is selected. */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ExtensionMenuItemComplex {
   

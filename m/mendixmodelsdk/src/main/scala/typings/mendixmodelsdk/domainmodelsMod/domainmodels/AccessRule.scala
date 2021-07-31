@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.securityMod.security.IModuleRole
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -74,9 +73,8 @@ object AccessRule {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.create")
-  @js.native
-  def create(model: IModel): AccessRule = js.native
+  @scala.inline
+  def create(model: IModel): AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AccessRule]
   
   /**
     * Creates and returns a new AccessRule instance in the SDK and on the server.
@@ -84,9 +82,8 @@ object AccessRule {
     * of the parent security.AccessRuleContainerBase element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.createInAccessRuleContainerBaseUnderAccessRules")
-  @js.native
-  def createInAccessRuleContainerBaseUnderAccessRules(container: AccessRuleContainerBase): AccessRule = js.native
+  @scala.inline
+  def createInAccessRuleContainerBaseUnderAccessRules(container: AccessRuleContainerBase): AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessRuleContainerBaseUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[AccessRule]
   
   /**
     * Creates and returns a new AccessRule instance in the SDK and on the server.
@@ -94,9 +91,8 @@ object AccessRule {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.createInEntityUnderAccessRules")
-  @js.native
-  def createInEntityUnderAccessRules(container: Entity): AccessRule = js.native
+  @scala.inline
+  def createInEntityUnderAccessRules(container: Entity): AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[AccessRule]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.structureTypeName")

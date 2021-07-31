@@ -3,7 +3,6 @@ package typings.jqueryGrowl
 import typings.jqueryGrowl.growl.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,35 +18,34 @@ trait growl extends StObject {
 }
 object growl {
   
-  @js.native
   trait Options extends StObject {
     
     // while hovering over the alert, prevent it from being dismissed (true | false - default: true)
-    var delayOnHover: js.UndefOr[Boolean] = js.native
+    var delayOnHover: js.UndefOr[Boolean] = js.undefined
     
     // the duration (in milliseconds) for which the alert is displayed (default: 3200)
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     // whether the alert should be fixed rather than auto- dismissed(true | false - default: false)
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     // the alert's position ('tl' | 'tr' | 'bl' | 'br' | 'tc' | 'bc' - default: 'tr')
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
     // Message
-    var message: String = js.native
+    var message: String
     
     // the alert's size ('small' | 'medium' | 'large' - default: 'medium')
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     // the alert's style ('default' | 'error' | 'notice' | 'warning' - default: 'default')
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     // Title
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     // URL
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Options {
     

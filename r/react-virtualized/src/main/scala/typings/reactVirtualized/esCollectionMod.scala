@@ -17,7 +17,6 @@ import typings.reactVirtualized.mod.ScrollPosition
 import typings.reactVirtualized.mod.SizeInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esCollectionMod {
@@ -75,14 +74,13 @@ object esCollectionMod {
   
   type CollectionCellGroupRenderer = js.Function1[/* params */ CollectionCellGroupRendererParams, js.Array[ReactNode]]
   
-  @js.native
   trait CollectionCellGroupRendererParams extends StObject {
     
-    var cellRenderer: CollectionCellRenderer = js.native
+    var cellRenderer: CollectionCellRenderer
     
-    var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter = js.native
+    var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter
     
-    var indices: js.Array[Double] = js.native
+    var indices: js.Array[Double]
   }
   object CollectionCellGroupRendererParams {
     
@@ -115,16 +113,15 @@ object esCollectionMod {
   
   type CollectionCellRenderer = js.Function1[/* params */ CollectionCellRendererParams, ReactNode]
   
-  @js.native
   trait CollectionCellRendererParams extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
     
-    var key: Double = js.native
+    var key: Double
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object CollectionCellRendererParams {
     
@@ -151,16 +148,15 @@ object esCollectionMod {
     }
   }
   
-  @js.native
   trait CollectionCellSizeAndPosition extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object CollectionCellSizeAndPosition {
     
@@ -189,9 +185,9 @@ object esCollectionMod {
   
   type CollectionCellSizeAndPositionGetter = js.Function1[/* params */ Index, CollectionCellSizeAndPosition]
   
-  @js.native
   trait CollectionProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -200,18 +196,18 @@ object esCollectionMod {
     */
   /* key */ StringDictionary[js.Any] {
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
     /**
       * Outer height of Collection is set to "auto". This property should only be
       * used in conjunction with the WindowScroller HOC.
       */
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of cells in Collection.
       */
-    var cellCount: Double = js.native
+    var cellCount: Double
     
     /**
       * Responsible for rendering a group of cells given their indices.
@@ -221,52 +217,52 @@ object esCollectionMod {
       *   cellRenderer: Function
       * }): Array<PropTypes.node>
       */
-    var cellGroupRenderer: js.UndefOr[CollectionCellGroupRenderer] = js.native
+    var cellGroupRenderer: js.UndefOr[CollectionCellGroupRenderer] = js.undefined
     
     /**
       * Responsible for rendering a cell given an row and column index.
       * Should implement the following interface: ({ index: number, key: string, style: object }): PropTypes.element
       */
-    var cellRenderer: CollectionCellRenderer = js.native
+    var cellRenderer: CollectionCellRenderer
     
     /**
       * Callback responsible for returning size and offset/position information for a given cell (index).
       * ({ index: number }): { height: number, width: number, x: number, y: number }
       */
-    var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter = js.native
+    var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter
     
     /**
       * Optional custom CSS class name to attach to root Collection element.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var horizontalOverscanSize: js.UndefOr[Double] = js.native
+    var horizontalOverscanSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional custom id to attach to root Collection element.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var noContentRenderer: js.UndefOr[js.Function0[Element]] = js.native
+    var noContentRenderer: js.UndefOr[js.Function0[Element]] = js.undefined
     
     /**
       * Callback invoked whenever the scroll offset changes within the inner
       * scrollable region: ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
       */
-    var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, _]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, js.Any]] = js.undefined
     
     /**
       * Callback invoked with information about the section of the Collection
       * that was just rendered: ({ indices: Array<number> }): void
       */
-    var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, _]] = js.native
+    var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, js.Any]] = js.undefined
     
     /**
       * Horizontal offset
       */
-    var scrollLeft: js.UndefOr[Double] = js.native
+    var scrollLeft: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls the alignment of scrolled-to-cells. The default ("auto") scrolls
@@ -275,32 +271,32 @@ object esCollectionMod {
       * Collection and "end" to align them bottom/right. Use "center" to align
       * specified cell in the middle of container.
       */
-    var scrollToAlignment: js.UndefOr[Alignment] = js.native
+    var scrollToAlignment: js.UndefOr[Alignment] = js.undefined
     
-    var scrollToCell: js.UndefOr[Double] = js.native
+    var scrollToCell: js.UndefOr[Double] = js.undefined
     
     /**
       * Vertical Offset
       */
-    var scrollTop: js.UndefOr[Double] = js.native
+    var scrollTop: js.UndefOr[Double] = js.undefined
     
     /**
       * Optionally override the size of the sections a Collection's cells are split into.
       */
-    var sectionSize: js.UndefOr[Double] = js.native
+    var sectionSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional custom inline style to attach to root Collection element.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var verticalOverscanSize: js.UndefOr[Double] = js.native
+    var verticalOverscanSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Width of Collection; this property determines the number of visible
       * (vs virtualized) columns.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object CollectionProps {
     
@@ -374,13 +370,13 @@ object esCollectionMod {
       def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: /* params */ ScrollParams => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      def setOnScroll(value: /* params */ ScrollParams => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       @scala.inline
-      def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+      def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)

@@ -2,10 +2,8 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shown extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Shown extends StObject {
     * pop-up will be shown; when it is false, it indicates
     * the user has allowed the permission.
     */
-  var shown: Boolean = js.native
+  var shown: Boolean
 }
 object Shown {
   

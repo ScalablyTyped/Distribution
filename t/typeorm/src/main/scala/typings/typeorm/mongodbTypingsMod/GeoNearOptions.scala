@@ -2,57 +2,55 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoNearOptions extends StObject {
   
   /**
     * Include a value to multiply the distances with allowing for range conversions.
     */
-  var distanceMultiplier: js.UndefOr[scala.Double] = js.native
+  var distanceMultiplier: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Include the location data fields in the top level of the results MongoDB > 2.X.
     */
-  var includeLocs: js.UndefOr[Boolean] = js.native
+  var includeLocs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Include results up to maxDistance from the point.
     */
-  var maxDistance: js.UndefOr[scala.Double] = js.native
+  var maxDistance: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Include results starting at minDistance from a point (2.6 or higher).
     */
-  var minDistance: js.UndefOr[scala.Double] = js.native
+  var minDistance: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Max number of results to return.
     */
-  var num: js.UndefOr[scala.Double] = js.native
+  var num: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Filter the results by a query.
     */
-  var query: js.UndefOr[js.Object] = js.native
+  var query: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Perform query using a spherical model.
     */
-  var spherical: js.UndefOr[Boolean] = js.native
+  var spherical: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The closest location in a document to the center of the search region will always be returned MongoDB > 2.X.
     */
-  var uniqueDocs: js.UndefOr[Boolean] = js.native
+  var uniqueDocs: js.UndefOr[Boolean] = js.undefined
 }
 object GeoNearOptions {
   

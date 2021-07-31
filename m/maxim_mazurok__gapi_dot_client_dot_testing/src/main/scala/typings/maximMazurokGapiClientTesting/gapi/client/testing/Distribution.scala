@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distribution extends StObject {
   
   /** Output only. The estimated fraction (0-1) of the total market with this configuration. */
-  var marketShare: js.UndefOr[Double] = js.native
+  var marketShare: js.UndefOr[Double] = js.undefined
   
   /** Output only. The time this distribution was measured. */
-  var measurementTime: js.UndefOr[String] = js.native
+  var measurementTime: js.UndefOr[String] = js.undefined
 }
 object Distribution {
   

@@ -2,49 +2,47 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2AppRequest extends StObject {
   
   /**
     * Surfaces available for cross surface handoff.
     */
-  var availableSurfaces: js.UndefOr[js.Array[GoogleActionsV2Surface]] = js.native
+  var availableSurfaces: js.UndefOr[js.Array[GoogleActionsV2Surface]] = js.undefined
   
   /**
     * Holds session data like the conversation ID and conversation token.
     */
-  var conversation: js.UndefOr[GoogleActionsV2Conversation] = js.native
+  var conversation: js.UndefOr[GoogleActionsV2Conversation] = js.undefined
   
   /**
     * Information about the device the user is using to interact with the Action.
     */
-  var device: js.UndefOr[GoogleActionsV2Device] = js.native
+  var device: js.UndefOr[GoogleActionsV2Device] = js.undefined
   
   /**
     * List of inputs corresponding to the expected inputs specified by the
     * Action. For the initial conversation trigger, the input contains
     * information on how the user triggered the conversation.
     */
-  var inputs: js.UndefOr[js.Array[GoogleActionsV2Input]] = js.native
+  var inputs: js.UndefOr[js.Array[GoogleActionsV2Input]] = js.undefined
   
   /**
     * Indicates whether the request should be handled in sandbox mode.
     */
-  var isInSandbox: js.UndefOr[Boolean] = js.native
+  var isInSandbox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the surface the user is interacting with, e.g. whether it
     * can output audio or has a screen.
     */
-  var surface: js.UndefOr[GoogleActionsV2Surface] = js.native
+  var surface: js.UndefOr[GoogleActionsV2Surface] = js.undefined
   
   /**
     * User who initiated the conversation.
     */
-  var user: js.UndefOr[GoogleActionsV2User] = js.native
+  var user: js.UndefOr[GoogleActionsV2User] = js.undefined
 }
 object GoogleActionsV2AppRequest {
   

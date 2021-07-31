@@ -12,7 +12,6 @@ import typings.fastify.utilsMod.ReplyDefault
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replyMod {
@@ -72,10 +71,9 @@ object replyMod {
     def `type`(contentType: String): FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = js.native
   }
   
-  @js.native
   trait ReplyGenericInterface extends StObject {
     
-    var Reply: js.UndefOr[ReplyDefault] = js.native
+    var Reply: js.UndefOr[ReplyDefault] = js.undefined
   }
   object ReplyGenericInterface {
     

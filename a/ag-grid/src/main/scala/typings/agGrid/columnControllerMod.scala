@@ -15,7 +15,6 @@ import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnControllerMod {
@@ -553,14 +552,13 @@ object columnControllerMod {
     /* private */ def wrapHeaderNameWithAggFunc(column: js.Any, headerName: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait ColumnResizeSet extends StObject {
     
-    var columns: js.Array[Column] = js.native
+    var columns: js.Array[Column]
     
-    var ratios: js.Array[Double] = js.native
+    var ratios: js.Array[Double]
     
-    var width: Double = js.native
+    var width: Double
   }
   object ColumnResizeSet {
     
@@ -590,22 +588,21 @@ object columnControllerMod {
     }
   }
   
-  @js.native
   trait ColumnState extends StObject {
     
-    var aggFunc: js.UndefOr[String | IAggFunc] = js.native
+    var aggFunc: js.UndefOr[String | IAggFunc] = js.undefined
     
-    var colId: String = js.native
+    var colId: String
     
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
-    var pinned: js.UndefOr[Boolean | String | left | right] = js.native
+    var pinned: js.UndefOr[Boolean | String | left | right] = js.undefined
     
-    var pivotIndex: js.UndefOr[Double] = js.native
+    var pivotIndex: js.UndefOr[Double] = js.undefined
     
-    var rowGroupIndex: js.UndefOr[Double] = js.native
+    var rowGroupIndex: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ColumnState {
     

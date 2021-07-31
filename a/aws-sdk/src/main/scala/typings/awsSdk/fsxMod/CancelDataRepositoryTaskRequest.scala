@@ -2,16 +2,14 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelDataRepositoryTaskRequest extends StObject {
   
   /**
     * Specifies the data repository task to cancel.
     */
-  var TaskId: typings.awsSdk.fsxMod.TaskId = js.native
+  var TaskId: typings.awsSdk.fsxMod.TaskId
 }
 object CancelDataRepositoryTaskRequest {
   

@@ -3,18 +3,25 @@ package typings.intlMessageformat
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcErrorMod {
   
   @JSImport("intl-messageformat/src/error", "FormatError")
   @js.native
-  class FormatError protected () extends Error {
+  class FormatError protected ()
+    extends StObject
+       with Error {
     def this(msg: String, code: ErrorCode) = this()
     def this(msg: String, code: ErrorCode, originalMessage: String) = this()
     
     val code: ErrorCode = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     /**
       * Original message we're trying to format

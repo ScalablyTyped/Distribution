@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Percentile extends StObject {
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var distributions: js.UndefOr[js.Array[Max]] = js.native
+  var distributions: js.UndefOr[js.Array[Max]] = js.undefined
   
-  var percentile: js.UndefOr[Double] = js.native
+  var percentile: js.UndefOr[Double] = js.undefined
 }
 object Percentile {
   

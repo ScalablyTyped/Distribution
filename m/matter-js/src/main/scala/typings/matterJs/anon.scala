@@ -5,16 +5,15 @@ import typings.matterJs.mod.Plugin
 import typings.matterJs.mod._Dependency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dict
-    extends /* _ */ StringDictionary[js.Any] {
+    extends StObject
+       with /* _ */ StringDictionary[js.Any] {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Dict {
     
@@ -35,22 +34,21 @@ object anon {
     }
   }
   
-  @js.native
   trait IsRange extends StObject {
     
-    var isRange: Boolean = js.native
+    var isRange: Boolean
     
-    var number: Double = js.native
+    var number: Double
     
-    var operator: String = js.native
+    var operator: String
     
-    var parts: js.Array[Double] = js.native
+    var parts: js.Array[Double]
     
-    var prerelease: String = js.native
+    var prerelease: String
     
-    var range: String = js.native
+    var range: String
     
-    var version: String = js.native
+    var version: String
   }
   object IsRange {
     
@@ -97,12 +95,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Name extends _Dependency {
+  trait Name
+    extends StObject
+       with _Dependency {
     
-    var name: String = js.native
+    var name: String
     
-    var range: String = js.native
+    var range: String
   }
   object Name {
     
@@ -123,11 +122,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Uses
-    extends /* _ */ StringDictionary[js.Any] {
+    extends StObject
+       with /* _ */ StringDictionary[js.Any] {
     
-    var uses: js.UndefOr[js.Array[Plugin | String]] = js.native
+    var uses: js.UndefOr[js.Array[Plugin | String]] = js.undefined
   }
   object Uses {
     
@@ -151,12 +150,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Version extends _Dependency {
+  trait Version
+    extends StObject
+       with _Dependency {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Version {
     

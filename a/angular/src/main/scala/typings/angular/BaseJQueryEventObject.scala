@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://api.jquery.com/category/events/event-object/}
   */
 @js.native
-trait BaseJQueryEventObject extends Event {
+trait BaseJQueryEventObject
+  extends StObject
+     with Event {
   
   /**
     * The current DOM element within the event bubbling phase.

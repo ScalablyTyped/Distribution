@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,14 +17,13 @@ object mod {
   @js.native
   val SvgLoaderSelectElement: ComponentType[SvgLoaderSelectElementProps] = js.native
   
-  @js.native
   trait ReactSvgPanZoomLoaderProps extends StObject {
     
-    var proxy: js.UndefOr[ReactNode] = js.native
+    var proxy: js.UndefOr[ReactNode] = js.undefined
     
-    def render(content: ReactNode): ReactNode = js.native
+    def render(content: ReactNode): ReactNode
     
-    var src: String = js.native
+    var src: String
   }
   object ReactSvgPanZoomLoaderProps {
     
@@ -52,13 +50,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SvgLoaderSelectElementProps
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var selector: String = js.native
+    var selector: String
   }
   object SvgLoaderSelectElementProps {
     

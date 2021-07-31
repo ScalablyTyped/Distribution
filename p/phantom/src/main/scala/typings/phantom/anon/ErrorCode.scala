@@ -2,19 +2,17 @@ package typings.phantom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorCode extends StObject {
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var errorString: String = js.native
+  var errorString: String
   
-  var id: String = js.native
+  var id: String
   
-  var url: String = js.native
+  var url: String
 }
 object ErrorCode {
   

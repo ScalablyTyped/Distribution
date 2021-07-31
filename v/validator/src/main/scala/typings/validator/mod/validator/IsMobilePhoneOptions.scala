@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsMobilePhoneOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IsMobilePhoneOptions extends StObject {
     *
     * @default false
     */
-  var strictMode: js.UndefOr[Boolean] = js.native
+  var strictMode: js.UndefOr[Boolean] = js.undefined
 }
 object IsMobilePhoneOptions {
   

@@ -3,24 +3,23 @@ package typings.ethereumCryptography
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keccakMod {
   
-  @JSImport("ethereum-cryptography/keccak", "keccak224")
+  @JSImport("ethereum-cryptography/keccak", JSImport.Namespace)
   @js.native
-  def keccak224(msg: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereum-cryptography/keccak", "keccak256")
-  @js.native
-  def keccak256(msg: Buffer): Buffer = js.native
+  @scala.inline
+  def keccak224(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak224")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/keccak", "keccak384")
-  @js.native
-  def keccak384(msg: Buffer): Buffer = js.native
+  @scala.inline
+  def keccak256(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereum-cryptography/keccak", "keccak512")
-  @js.native
-  def keccak512(msg: Buffer): Buffer = js.native
+  @scala.inline
+  def keccak384(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak384")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def keccak512(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak512")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

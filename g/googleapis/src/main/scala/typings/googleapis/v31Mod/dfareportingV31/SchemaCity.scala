@@ -2,61 +2,59 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a city that can be targeted by ads.
   */
-@js.native
 trait SchemaCity extends StObject {
   
   /**
     * Country code of the country to which this city belongs.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * DART ID of the country to which this city belongs.
     */
-  var countryDartId: js.UndefOr[String] = js.native
+  var countryDartId: js.UndefOr[String] = js.undefined
   
   /**
     * DART ID of this city. This is the ID used for targeting and generating
     * reports.
     */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#city&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metro region code of the metro region (DMA) to which this city belongs.
     */
-  var metroCode: js.UndefOr[String] = js.native
+  var metroCode: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the metro region (DMA) to which this city belongs.
     */
-  var metroDmaId: js.UndefOr[String] = js.native
+  var metroDmaId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this city.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Region code of the region to which this city belongs.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * DART ID of the region to which this city belongs.
     */
-  var regionDartId: js.UndefOr[String] = js.native
+  var regionDartId: js.UndefOr[String] = js.undefined
 }
 object SchemaCity {
   

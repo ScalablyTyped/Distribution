@@ -2,13 +2,11 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueSortPhase extends StObject {
   
-  var queueSortPhase: js.UndefOr[Boolean] = js.native
+  var queueSortPhase: js.UndefOr[Boolean] = js.undefined
 }
 object QueueSortPhase {
   

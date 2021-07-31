@@ -9,10 +9,13 @@ import typings.nodeForge.nodeForgeStrings.utf8
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ed25519 {
+  
+  @JSImport("node-forge", "pki.ed25519")
+  @js.native
+  val ^ : js.Any = js.native
   
   object constants {
     
@@ -38,24 +41,19 @@ object ed25519 {
   }
   
   // generateKeyPair does not currently accept `util.ByteBuffer` as the seed.
-  @JSImport("node-forge", "pki.ed25519.generateKeyPair")
-  @js.native
-  def generateKeyPair(): typings.nodeForge.anon.PrivateKey = js.native
-  @JSImport("node-forge", "pki.ed25519.generateKeyPair")
-  @js.native
-  def generateKeyPair(options: Seed): typings.nodeForge.anon.PrivateKey = js.native
+  @scala.inline
+  def generateKeyPair(): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.anon.PrivateKey]
+  @scala.inline
+  def generateKeyPair(options: Seed): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.anon.PrivateKey]
   
-  @JSImport("node-forge", "pki.ed25519.publicKeyFromPrivateKey")
-  @js.native
-  def publicKeyFromPrivateKey(options: PrivateKeyBinaryBuffer): NativeBuffer = js.native
+  @scala.inline
+  def publicKeyFromPrivateKey(options: PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromPrivateKey")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
   
-  @JSImport("node-forge", "pki.ed25519.sign")
-  @js.native
-  def sign(options: ToNativeBufferParameters with PrivateKeyBinaryBuffer): NativeBuffer = js.native
+  @scala.inline
+  def sign(options: ToNativeBufferParameters & PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
   
-  @JSImport("node-forge", "pki.ed25519.verify")
-  @js.native
-  def verify(options: ToNativeBufferParameters with typings.nodeForge.anon.PublicKey): Boolean = js.native
+  @scala.inline
+  def verify(options: ToNativeBufferParameters & typings.nodeForge.anon.PublicKey): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   // `string`s will be converted by toNativeBuffer with `encoding: 'binary'`
   type BinaryBuffer = NativeBuffer | ByteBuffer | String

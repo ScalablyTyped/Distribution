@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorOptions extends StObject {
   
-  var BaseIndentSize: js.UndefOr[Double] = js.native
+  var BaseIndentSize: js.UndefOr[Double] = js.undefined
   
-  var ConvertTabsToSpaces: Boolean = js.native
+  var ConvertTabsToSpaces: Boolean
   
-  var IndentSize: Double = js.native
+  var IndentSize: Double
   
-  var IndentStyle: typings.typescript.mod.IndentStyle = js.native
+  var IndentStyle: typings.typescript.mod.IndentStyle
   
-  var NewLineCharacter: java.lang.String = js.native
+  var NewLineCharacter: java.lang.String
   
-  var TabSize: Double = js.native
+  var TabSize: Double
 }
 object EditorOptions {
   

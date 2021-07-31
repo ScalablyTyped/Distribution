@@ -2,31 +2,29 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBooksAnnotationsRange extends StObject {
   
   /**
     * The offset from the ending position.
     */
-  var endOffset: js.UndefOr[String] = js.native
+  var endOffset: js.UndefOr[String] = js.undefined
   
   /**
     * The ending position for the range.
     */
-  var endPosition: js.UndefOr[String] = js.native
+  var endPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The offset from the starting position.
     */
-  var startOffset: js.UndefOr[String] = js.native
+  var startOffset: js.UndefOr[String] = js.undefined
   
   /**
     * The starting position for the range.
     */
-  var startPosition: js.UndefOr[String] = js.native
+  var startPosition: js.UndefOr[String] = js.undefined
 }
 object SchemaBooksAnnotationsRange {
   

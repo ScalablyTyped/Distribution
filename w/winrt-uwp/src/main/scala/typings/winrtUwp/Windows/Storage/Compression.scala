@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import typings.winrtUwp.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a unified interface to the compression features included in Windows that frees developers from responsibility for managing block sizes, compression parameters, and other details that the native compression API requires. */
@@ -23,60 +22,71 @@ object Compression {
     
     /** This value represents an invalid compression algorithm. It is useful primarily for error checking. */
     @js.native
-    sealed trait invalidAlgorithm extends CompressAlgorithm
+    sealed trait invalidAlgorithm
+      extends StObject
+         with CompressAlgorithm
     
     /** The compressor will use the LZMS compression algorithm. */
     @js.native
-    sealed trait lzms extends CompressAlgorithm
+    sealed trait lzms
+      extends StObject
+         with CompressAlgorithm
     
     /** The compressor will use the MSZIP compression algorithm. */
     @js.native
-    sealed trait mszip extends CompressAlgorithm
+    sealed trait mszip
+      extends StObject
+         with CompressAlgorithm
     
     /** This value represents an algorithm that passes data through with no compression. It is useful primarily for testing. */
     @js.native
-    sealed trait nullAlgorithm extends CompressAlgorithm
+    sealed trait nullAlgorithm
+      extends StObject
+         with CompressAlgorithm
     
     /** The compressor will use the XPRESS compression algorithm. */
     @js.native
-    sealed trait xpress extends CompressAlgorithm
+    sealed trait xpress
+      extends StObject
+         with CompressAlgorithm
     
     /** The compressor will use the XPRESS compression algorithm with Huffman encoding. */
     @js.native
-    sealed trait xpressHuff extends CompressAlgorithm
+    sealed trait xpressHuff
+      extends StObject
+         with CompressAlgorithm
   }
   
   /** A compressor takes information written to a stream and compresses it using a compression algorithm. */
-  @js.native
   trait Compressor extends StObject {
     
     /** Closes a Compressor object and synchronously discards any information in buffers. This will close the underlying stream as well unless the Compressor.Detach method has been used to detach the stream from the object. Subsequent calls on a closed object, except for Compressor.Close, will fail. */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Detaches the underlying stream from the Compressor object so that the object can be closed using the Compressor.Close method without also closing the underlying stream.
       * @return The stream of information.
       */
-    def detachStream(): IOutputStream = js.native
+    def detachStream(): IOutputStream
     
     /**
       * Finishes writing the compression stream.
       * @return The asynchronous operation.
       */
-    def finishAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+    def finishAsync(): IPromiseWithIAsyncOperation[Boolean]
     
     /**
       * Flushes the compression stream asynchronously.
       * @return The asynchronous operation.
       */
-    def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+    def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
     
     /**
       * Writes information to the compression stream asynchronously.
       * @param buffer The buffer that contains the information to be written to the stream.
       * @return The asynchronous operation.
       */
-    def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+    def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
   }
   object Compressor {
     
@@ -113,17 +123,16 @@ object Compression {
   }
   
   /** A decompressor takes a stream compressed by a compressor and decompresses it. */
-  @js.native
   trait Decompressor extends StObject {
     
     /** Closes a Decompressor object and synchronously discards any information in buffers. This will close the underlying stream as well unless the Decompressor.Detach method has been used to detach the stream from the object. Subsequent calls on a closed object, except Decompressor.Close, will fail. */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Detaches the underlying stream from the Decompressor object so that the object can be closed using the Decompressor.Close method without also closing the underlying stream.
       * @return The stream of information.
       */
-    def detachStream(): IInputStream = js.native
+    def detachStream(): IInputStream
     
     /**
       * Reads from the compression stream asynchronously.
@@ -132,7 +141,7 @@ object Compression {
       * @param options Read options
       * @return The asynchronous operation.
       */
-    def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+    def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   }
   object Decompressor {
     

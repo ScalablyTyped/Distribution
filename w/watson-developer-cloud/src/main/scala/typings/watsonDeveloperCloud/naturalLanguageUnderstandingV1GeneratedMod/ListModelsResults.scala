@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Custom models that are available for entities and relations. */
-@js.native
 trait ListModelsResults extends StObject {
   
   /** An array of available models. */
-  var models: js.UndefOr[js.Array[Model]] = js.native
+  var models: js.UndefOr[js.Array[Model]] = js.undefined
 }
 object ListModelsResults {
   

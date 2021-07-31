@@ -2,26 +2,24 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeploymentRequest extends StObject {
   
   /**
     * The ID of the application that includes the deployment you want to get. 
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The sequence number of the deployment.
     */
-  var DeploymentNumber: Integer = js.native
+  var DeploymentNumber: Integer
   
   /**
     * The ID of the environment that includes the deployment you want to get. 
     */
-  var EnvironmentId: Id = js.native
+  var EnvironmentId: Id
 }
 object GetDeploymentRequest {
   

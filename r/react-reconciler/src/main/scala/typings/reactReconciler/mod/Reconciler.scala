@@ -3,7 +3,6 @@ package typings.reactReconciler.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,7 @@ trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends StOb
   // Used internally for filtering out portals. Legacy API.
   def findHostInstanceWithNoPortals(component: Fiber): PublicInstance | Null = js.native
   
-  def flushControlled(fn: js.Function0[_]): Unit = js.native
+  def flushControlled(fn: js.Function0[js.Any]): Unit = js.native
   
   def flushInteractiveUpdates(): Unit = js.native
   
@@ -32,7 +31,7 @@ trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends StOb
   def flushSync[A](fn: js.Function0[A]): A = js.native
   
   // Used to extract the return value from the initial render. Legacy API.
-  def getPublicRootInstance(container: OpaqueRoot): (Component[_, _, _]) | PublicInstance | Null = js.native
+  def getPublicRootInstance(container: OpaqueRoot): (Component[js.Any, js.Any, js.Any]) | PublicInstance | Null = js.native
   
   def injectIntoDevTools(devToolsConfig: DevToolsConfig[Instance, TextInstance]): Boolean = js.native
   
@@ -47,32 +46,25 @@ trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends StOb
   def updateContainer(
     element: ReactNodeList,
     container: OpaqueRoot,
-    parentComponent: js.UndefOr[scala.Nothing],
-    callback: js.Function0[js.UndefOr[Unit | Null]]
-  ): ExpirationTime = js.native
-  def updateContainer(
-    element: ReactNodeList,
-    container: OpaqueRoot,
     parentComponent: Null,
     callback: js.Function0[js.UndefOr[Unit | Null]]
   ): ExpirationTime = js.native
   def updateContainer(
     element: ReactNodeList,
     container: OpaqueRoot,
-    parentComponent: Component[_, _, _],
+    parentComponent: Unit,
+    callback: js.Function0[js.UndefOr[Unit | Null]]
+  ): ExpirationTime = js.native
+  def updateContainer(
+    element: ReactNodeList,
+    container: OpaqueRoot,
+    parentComponent: Component[js.Any, js.Any, js.Any],
     callback: js.Function0[js.UndefOr[Unit | Null]]
   ): ExpirationTime = js.native
   
   def updateContainerAtExpirationTime(
     element: ReactNodeList,
     container: OpaqueRoot,
-    parentComponent: js.UndefOr[scala.Nothing],
-    expirationTime: ExpirationTime,
-    callback: js.Function0[js.UndefOr[Unit | Null]]
-  ): ExpirationTime = js.native
-  def updateContainerAtExpirationTime(
-    element: ReactNodeList,
-    container: OpaqueRoot,
     parentComponent: Null,
     expirationTime: ExpirationTime,
     callback: js.Function0[js.UndefOr[Unit | Null]]
@@ -80,7 +72,14 @@ trait Reconciler[Instance, TextInstance, Container, PublicInstance] extends StOb
   def updateContainerAtExpirationTime(
     element: ReactNodeList,
     container: OpaqueRoot,
-    parentComponent: Component[_, _, _],
+    parentComponent: Unit,
+    expirationTime: ExpirationTime,
+    callback: js.Function0[js.UndefOr[Unit | Null]]
+  ): ExpirationTime = js.native
+  def updateContainerAtExpirationTime(
+    element: ReactNodeList,
+    container: OpaqueRoot,
+    parentComponent: Component[js.Any, js.Any, js.Any],
     expirationTime: ExpirationTime,
     callback: js.Function0[js.UndefOr[Unit | Null]]
   ): ExpirationTime = js.native

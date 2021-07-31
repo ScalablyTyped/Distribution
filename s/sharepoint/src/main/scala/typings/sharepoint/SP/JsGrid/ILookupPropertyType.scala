@@ -4,25 +4,25 @@ import typings.sharepoint.anon.BLimitToList
 import typings.sharepoint.anon.DataValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILookupPropertyType extends IPropertyType {
+trait ILookupPropertyType
+  extends StObject
+     with IPropertyType {
   
-  def DataToLocalized(dataValue: js.Any): String = js.native
+  def DataToLocalized(dataValue: js.Any): String
   
-  def GetImageSource(record: IRecord, dataValue: js.Any): String = js.native
+  def GetImageSource(record: IRecord, dataValue: js.Any): String
   
-  def GetIsLimitedToList(): Boolean = js.native
+  def GetIsLimitedToList(): Boolean
   
-  def GetItems(fnCallback: js.Any): Unit = js.native
+  def GetItems(fnCallback: js.Any): Unit
   
-  def GetSerializableLookupPropType(): BLimitToList = js.native
+  def GetSerializableLookupPropType(): BLimitToList
   
-  def GetStyleId(dataValue: js.Any): String = js.native
+  def GetStyleId(dataValue: js.Any): String
   
-  def LocalizedToData(localized: String): js.Any = js.native
+  def LocalizedToData(localized: String): js.Any
 }
 object ILookupPropertyType {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,43 +33,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait Entities extends StObject {
   
   /**
     * Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
     */
-  var addresses: js.Array[String] = js.native
+  var addresses: js.Array[String]
   
   /**
     * Gets the contacts found in an email address or appointment.
     */
-  var contacts: js.Array[Contact] = js.native
+  var contacts: js.Array[Contact]
   
   /**
     * Gets the email addresses found in an email message or appointment.
     */
-  var emailAddresses: js.Array[String] = js.native
+  var emailAddresses: js.Array[String]
   
   /**
     * Gets the meeting suggestions found in an email message.
     */
-  var meetingSuggestions: js.Array[MeetingSuggestion] = js.native
+  var meetingSuggestions: js.Array[MeetingSuggestion]
   
   /**
     * Gets the phone numbers found in an email message or appointment.
     */
-  var phoneNumbers: js.Array[PhoneNumber] = js.native
+  var phoneNumbers: js.Array[PhoneNumber]
   
   /**
     * Gets the task suggestions found in an email message or appointment.
     */
-  var taskSuggestions: js.Array[String] = js.native
+  var taskSuggestions: js.Array[String]
   
   /**
     * Gets the Internet URLs present in an email message or appointment.
     */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object Entities {
   

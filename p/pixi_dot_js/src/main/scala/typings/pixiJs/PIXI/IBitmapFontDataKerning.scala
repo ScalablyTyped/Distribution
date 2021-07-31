@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} second
   * @property {number} amount
   */
-@js.native
 trait IBitmapFontDataKerning extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var first: Double = js.native
+  var first: Double
   
-  var second: Double = js.native
+  var second: Double
 }
 object IBitmapFontDataKerning {
   

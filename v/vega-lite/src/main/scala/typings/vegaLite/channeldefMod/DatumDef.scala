@@ -6,12 +6,10 @@ import typings.vegaLite.srcTypeMod.Type
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<vega-lite.vega-lite/build/src/channeldef.TypeMixins<vega-lite.vega-lite/build/src/type.Type>> */
 /* Inlined parent vega-lite.vega-lite/build/src/channeldef.BandMixins */
-@js.native
 trait DatumDef[F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */] extends StObject {
   
   /**
@@ -22,14 +20,14 @@ trait DatumDef[F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | S
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A constant value in data domain.
     */
-  var datum: js.UndefOr[V | RepeatRef] = js.native
+  var datum: js.UndefOr[V | RepeatRef] = js.undefined
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object DatumDef {
   
@@ -40,7 +38,7 @@ object DatumDef {
   }
   
   @scala.inline
-  implicit class DatumDefMutableBuilder[Self <: DatumDef[_, _], F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */] (val x: Self with (DatumDef[F, V])) extends AnyVal {
+  implicit class DatumDefMutableBuilder[Self <: DatumDef[?, ?], F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */] (val x: Self & (DatumDef[F, V])) extends AnyVal {
     
     @scala.inline
     def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])

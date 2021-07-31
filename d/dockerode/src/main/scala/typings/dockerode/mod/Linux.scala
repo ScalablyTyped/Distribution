@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Linux extends StObject {
   
-  var AllowAllDevices: Boolean = js.native
+  var AllowAllDevices: Boolean
   
-  var Capabilities: js.Array[String] = js.native
+  var Capabilities: js.Array[String]
   
-  var Devices: js.Array[PluginDevice] = js.native
+  var Devices: js.Array[PluginDevice]
 }
 object Linux {
   

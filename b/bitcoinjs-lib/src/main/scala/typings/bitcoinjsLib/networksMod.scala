@@ -2,7 +2,6 @@ package typings.bitcoinjsLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networksMod {
@@ -19,12 +18,11 @@ object networksMod {
   @js.native
   val testnet: Network = js.native
   
-  @js.native
   trait Bip32 extends StObject {
     
-    var `private`: Double = js.native
+    var `private`: Double
     
-    var public: Double = js.native
+    var public: Double
   }
   object Bip32 {
     
@@ -46,20 +44,19 @@ object networksMod {
     }
   }
   
-  @js.native
   trait Network extends StObject {
     
-    var bech32: String = js.native
+    var bech32: String
     
-    var bip32: Bip32 = js.native
+    var bip32: Bip32
     
-    var messagePrefix: String = js.native
+    var messagePrefix: String
     
-    var pubKeyHash: Double = js.native
+    var pubKeyHash: Double
     
-    var scriptHash: Double = js.native
+    var scriptHash: Double
     
-    var wif: Double = js.native
+    var wif: Double
   }
   object Network {
     

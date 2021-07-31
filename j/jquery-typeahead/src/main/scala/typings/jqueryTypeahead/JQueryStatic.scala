@@ -3,13 +3,11 @@ package typings.jqueryTypeahead
 import typings.jqueryTypeahead.RunningCoder.Typeahead.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  def typeahead(options: Options): JQuery = js.native
+  def typeahead(options: Options): JQuery
 }
 object JQueryStatic {
   

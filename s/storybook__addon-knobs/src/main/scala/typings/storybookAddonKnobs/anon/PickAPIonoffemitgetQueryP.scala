@@ -4,22 +4,20 @@ import typings.storybookApi.urlMod.QueryParams
 import typings.storybookChannels.mod.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/api.@storybook/api.API, 'on' | 'off' | 'emit' | 'getQueryParam' | 'setQueryParams'> */
-@js.native
 trait PickAPIonoffemitgetQueryP extends StObject {
   
-  var emit: js.Function2[/* type */ String, /* repeated */ js.Any, Unit] = js.native
+  var emit: js.Function2[/* type */ String, /* repeated */ js.Any, Unit]
   
-  var getQueryParam: js.Function1[/* key */ String, js.UndefOr[String]] = js.native
+  var getQueryParam: js.Function1[/* key */ String, js.UndefOr[String]]
   
-  var off: js.Function2[/* type */ String, /* cb */ Listener, Unit] = js.native
+  var off: js.Function2[/* type */ String, /* cb */ Listener, Unit]
   
-  var on: js.Function2[/* type */ String, /* cb */ Listener, js.Function0[Unit]] = js.native
+  var on: js.Function2[/* type */ String, /* cb */ Listener, js.Function0[Unit]]
   
-  var setQueryParams: js.Function1[/* input */ QueryParams, Unit] = js.native
+  var setQueryParams: js.Function1[/* input */ QueryParams, Unit]
 }
 object PickAPIonoffemitgetQueryP {
   

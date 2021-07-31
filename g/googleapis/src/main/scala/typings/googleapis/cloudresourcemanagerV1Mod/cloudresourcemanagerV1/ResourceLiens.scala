@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudresourcemanager/v1", "cloudresourcemanager_v1.Resource$Liens")
@@ -88,7 +87,7 @@ class ResourceLiens protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaLien] = js.native
   def create(callback: BodyResponseCallback[SchemaLien]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLien] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLien] = js.native
   def create(params: ParamsResourceLiensCreate): GaxiosPromise[SchemaLien] = js.native
   def create(params: ParamsResourceLiensCreate, callback: BodyResponseCallback[SchemaLien]): Unit = js.native
   def create(
@@ -170,7 +169,7 @@ class ResourceLiens protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceLiensDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceLiensDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -202,7 +201,7 @@ class ResourceLiens protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaLien] = js.native
   def get(callback: BodyResponseCallback[SchemaLien]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLien] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLien] = js.native
   def get(params: ParamsResourceLiensGet): GaxiosPromise[SchemaLien] = js.native
   def get(params: ParamsResourceLiensGet, callback: BodyResponseCallback[SchemaLien]): Unit = js.native
   def get(
@@ -295,7 +294,7 @@ class ResourceLiens protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListLiensResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLiensResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLiensResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListLiensResponse] = js.native
   def list(params: ParamsResourceLiensList): GaxiosPromise[SchemaListLiensResponse] = js.native
   def list(params: ParamsResourceLiensList, callback: BodyResponseCallback[SchemaListLiensResponse]): Unit = js.native
   def list(

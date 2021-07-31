@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalCreateSignedDeviceRequest extends StObject {
   
   /** Required. JSON Web Token signed using a CPI private key. Payload must be the JSON encoding of the [Device]. The user_id field must be set. */
-  var encodedDevice: js.UndefOr[String] = js.native
+  var encodedDevice: js.UndefOr[String] = js.undefined
   
   /** Required. Unique installer id (cpiId) from the Certified Professional Installers database. */
-  var installerId: js.UndefOr[String] = js.native
+  var installerId: js.UndefOr[String] = js.undefined
 }
 object SasPortalCreateSignedDeviceRequest {
   

@@ -5,12 +5,14 @@ import typings.reactNavigationStack.reactNavigationStackNumbers.`1`
 import typings.reactNavigationStack.vendorTypesMod.GestureDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInvertedMultiplierMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/utils/getInvertedMultiplier", JSImport.Default)
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/utils/getInvertedMultiplier", JSImport.Namespace)
   @js.native
-  def default(gestureDirection: GestureDirection): `1` | `-1` = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(gestureDirection: GestureDirection): `1` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(gestureDirection.asInstanceOf[js.Any]).asInstanceOf[`1` | `-1`]
 }

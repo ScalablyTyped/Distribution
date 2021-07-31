@@ -2,16 +2,14 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaults extends StObject {
   
   /**
     * stores all defaults for the checkbox plugin
     */
-  var checkbox: js.UndefOr[JSTreeStaticDefaultsCheckbox] = js.native
+  var checkbox: js.UndefOr[JSTreeStaticDefaultsCheckbox] = js.undefined
   
   /**
     * a callback (function) which is invoked in the instance's scope and receives two arguments
@@ -21,7 +19,7 @@ trait JSTreeStaticDefaults extends StObject {
     * @name $.jstree.defaults.conditionalclose
     * @plugin conditionalclose
     */
-  var conditionalclose: js.UndefOr[js.Function0[Boolean]] = js.native
+  var conditionalclose: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /**
     * a callback (function) which is invoked in the instance's scope and receives two arguments
@@ -31,28 +29,28 @@ trait JSTreeStaticDefaults extends StObject {
     * @name $.jstree.defaults.conditionalselect
     * @plugin conditionalselect
     */
-  var conditionalselect: js.UndefOr[js.Function0[Boolean]] = js.native
+  var conditionalselect: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /**
     * stores all defaults for the contextmenu plugin
     */
-  var contextmenu: js.UndefOr[JSTreeStaticDefaultsContextMenu] = js.native
+  var contextmenu: js.UndefOr[JSTreeStaticDefaultsContextMenu] = js.undefined
   
   /**
     * stores all defaults for the core
     * @name $.jstree.defaults.core
     */
-  var core: JSTreeStaticDefaultsCore = js.native
+  var core: JSTreeStaticDefaultsCore
   
   /**
     * stores all defaults for the drag'n'drop plugin
     */
-  var dnd: js.UndefOr[JSTreeStaticDefaultsDragNDrop] = js.native
+  var dnd: js.UndefOr[JSTreeStaticDefaultsDragNDrop] = js.undefined
   
   /**
     * Adds massload functionality to jsTree, so that multiple nodes can be loaded in a single request (only useful with lazy loading).
     */
-  var massload: js.UndefOr[JSTreeStaticDefaultsMassload] = js.native
+  var massload: js.UndefOr[JSTreeStaticDefaultsMassload] = js.undefined
   
   /**
     * configure which plugins will be active on an instance.
@@ -60,12 +58,12 @@ trait JSTreeStaticDefaults extends StObject {
     * The default is `[]`
     * @name $.jstree.defaults.plugins
     */
-  var plugins: js.Array[String] = js.native
+  var plugins: js.Array[String]
   
   /**
     * stores all defaults for the search plugin
     */
-  var search: js.UndefOr[JSTreeStaticDefaultsSearch] = js.native
+  var search: js.UndefOr[JSTreeStaticDefaultsSearch] = js.undefined
   
   /**
     * the settings function used to sort the nodes.
@@ -73,12 +71,12 @@ trait JSTreeStaticDefaults extends StObject {
     * @name $.jstree.defaults.sort
     * @plugin sort
     */
-  var sort: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.native
+  var sort: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.undefined
   
   /**
     * stores all defaults for the state plugin
     */
-  var state: js.UndefOr[JSTreeStaticDefaultsState] = js.native
+  var state: js.UndefOr[JSTreeStaticDefaultsState] = js.undefined
   
   /**
     * An object storing all types as key value pairs,
@@ -98,14 +96,14 @@ trait JSTreeStaticDefaults extends StObject {
     * # represents the root of the tree, for example max_children would control the maximum number of root nodes.
     * default represents the default node - any settings here will be applied to all nodes that do not have a type specified.
     */
-  var types: js.UndefOr[js.Any] = js.native
+  var types: js.UndefOr[js.Any] = js.undefined
   
   /**
     * stores all defaults for the unique plugin
     * @name $.jstree.defaults.unique
     * @plugin unique
     */
-  var unique: js.UndefOr[JSTreeStaticDefaultsUnique] = js.native
+  var unique: js.UndefOr[JSTreeStaticDefaultsUnique] = js.undefined
 }
 object JSTreeStaticDefaults {
   

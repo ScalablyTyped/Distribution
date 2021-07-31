@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNetworkAclEntryRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the rule is an egress rule.
     */
-  var Egress: Boolean = js.native
+  var Egress: Boolean
   
   /**
     * The ID of the network ACL.
     */
-  var NetworkAclId: typings.awsSdk.ec2Mod.NetworkAclId = js.native
+  var NetworkAclId: typings.awsSdk.ec2Mod.NetworkAclId
   
   /**
     * The rule number of the entry to delete.
     */
-  var RuleNumber: Integer = js.native
+  var RuleNumber: Integer
 }
 object DeleteNetworkAclEntryRequest {
   

@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents parameters used when deriving a key. */
-@js.native
 trait KeyDerivationParameters extends StObject {
   
   /** Gets or sets the Capi1KdfTargetAlgorithm . */
-  var capi1KdfTargetAlgorithm: Capi1KdfTargetAlgorithm = js.native
+  var capi1KdfTargetAlgorithm: Capi1KdfTargetAlgorithm
   
   /** Retrieves the number of iterations used to derive the key. For more information, see BuildForPbkdf2 . */
-  var iterationCount: Double = js.native
+  var iterationCount: Double
   
   /** Gets or sets the parameters used by the key derivation algorithm. */
-  var kdfGenericBinary: IBuffer = js.native
+  var kdfGenericBinary: IBuffer
 }
 object KeyDerivationParameters {
   

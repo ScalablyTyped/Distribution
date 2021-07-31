@@ -3,15 +3,13 @@ package typings.nodeForge.mod.tls
 import typings.nodeForge.mod.Byte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolVersion extends StObject {
   
-  var major: Byte = js.native
+  var major: Byte
   
-  var minor: Byte = js.native
+  var minor: Byte
 }
 object ProtocolVersion {
   

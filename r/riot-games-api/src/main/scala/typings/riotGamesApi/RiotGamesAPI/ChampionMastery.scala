@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object ChampionMastery {
   
-  @js.native
   trait ChampionMasteryDto extends StObject {
     
-    var championId: Double = js.native
+    var championId: Double
     
-    var championLevel: Double = js.native
+    var championLevel: Double
     
-    var championPoints: Double = js.native
+    var championPoints: Double
     
-    var championPointsSinceLastLevel: Double = js.native
+    var championPointsSinceLastLevel: Double
     
-    var championPointsUntilNextLevel: Double = js.native
+    var championPointsUntilNextLevel: Double
     
-    var chestGranted: Boolean = js.native
+    var chestGranted: Boolean
     
-    var highestGrade: String = js.native
+    var highestGrade: String
     
-    var lastPlayTime: Double = js.native
+    var lastPlayTime: Double
     
-    var playerId: Double = js.native
+    var playerId: Double
   }
   object ChampionMasteryDto {
     

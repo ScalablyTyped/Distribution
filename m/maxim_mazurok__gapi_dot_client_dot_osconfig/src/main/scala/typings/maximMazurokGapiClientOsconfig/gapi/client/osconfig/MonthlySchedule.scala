@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonthlySchedule extends StObject {
   
   /**
     * Required. One day of the month. 1-31 indicates the 1st to the 31st day. -1 indicates the last day of the month. Months without the target day will be skipped. For example, a
     * schedule to run "every month on the 31st" will not run in February, April, June, etc.
     */
-  var monthDay: js.UndefOr[Double] = js.native
+  var monthDay: js.UndefOr[Double] = js.undefined
   
   /** Required. Week day in a month. */
-  var weekDayOfMonth: js.UndefOr[WeekDayOfMonth] = js.native
+  var weekDayOfMonth: js.UndefOr[WeekDayOfMonth] = js.undefined
 }
 object MonthlySchedule {
   

@@ -3,19 +3,17 @@ package typings.airtable
 import typings.airtable.mod.global.Airtable.Thumbnail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Full extends StObject {
     
-    var full: Thumbnail = js.native
+    var full: Thumbnail
     
-    var large: Thumbnail = js.native
+    var large: Thumbnail
     
-    var small: Thumbnail = js.native
+    var small: Thumbnail
   }
   object Full {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Typecast extends StObject {
     
-    var typecast: Boolean = js.native
+    var typecast: Boolean
   }
   object Typecast {
     

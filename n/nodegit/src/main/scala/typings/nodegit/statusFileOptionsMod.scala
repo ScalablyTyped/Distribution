@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodegit.statusEntryMod.StatusEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusFileOptionsMod {
   
-  @js.native
   trait StatusFileOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var entry: js.UndefOr[StatusEntry] = js.native
+    var entry: js.UndefOr[StatusEntry] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object StatusFileOptions {
     

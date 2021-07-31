@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsResponse extends StObject {
   
   /**
     *  List of Tag for the requested Elasticsearch domain.
     */
-  var TagList: js.UndefOr[typings.awsSdk.esMod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.esMod.TagList] = js.undefined
 }
 object ListTagsResponse {
   

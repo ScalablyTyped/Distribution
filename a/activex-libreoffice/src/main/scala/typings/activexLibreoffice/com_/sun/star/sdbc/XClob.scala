@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,22 +20,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Methods in the interfaces {@link com.sun.star.sdbc.XResultSet} , and {@link com.sun.star.sdbc.XPreparedStatement} , such as `getClob` and `setClob`
   * allow a programmer to access the SQL `CLOB` .
   */
-@js.native
-trait XClob extends XInterface {
+trait XClob
+  extends StObject
+     with XInterface {
   
   /**
     * gets the `Clob` contents as a stream.
     * @returns the stream
     * @throws SQLException if a database access error occurs.
     */
-  val CharacterStream: XInputStream = js.native
+  val CharacterStream: XInputStream
   
   /**
     * gets the `Clob` contents as a stream.
     * @returns the stream
     * @throws SQLException if a database access error occurs.
     */
-  def getCharacterStream(): XInputStream = js.native
+  def getCharacterStream(): XInputStream
   
   /**
     * returns a copy of the specified substring in the `Clob` value designated by this `Clob` object.
@@ -47,14 +47,14 @@ trait XClob extends XInterface {
     * @returns the substring
     * @throws SQLException if a database access error occurs.
     */
-  def getSubString(pos: Double, length: Double): String = js.native
+  def getSubString(pos: Double, length: Double): String
   
   /**
     * returns the number of characters in the `CLOB` value designated by this `Clob` object.
     * @returns the length of the CLOB object
     * @throws SQLException if a database access error occurs.
     */
-  def length(): Double = js.native
+  def length(): Double
   
   /**
     * determines the character position at which the specified substring `searchstr` appears in the `Clob` . The search begins at position `start` .
@@ -63,7 +63,7 @@ trait XClob extends XInterface {
     * @returns the length of the CLOB object
     * @throws SQLException if a database access error occurs.
     */
-  def position(searchstr: String, start: Double): Double = js.native
+  def position(searchstr: String, start: Double): Double
   
   /**
     * determines the position at which the specified `Clob` object `pattern` appears in this `Clob` object. The search begins at position `start` .
@@ -72,7 +72,7 @@ trait XClob extends XInterface {
     * @returns the position of the CLOB inside
     * @throws SQLException if a database access error occurs.
     */
-  def positionOfClob(pattern: XClob, start: Double): Double = js.native
+  def positionOfClob(pattern: XClob, start: Double): Double
 }
 object XClob {
   

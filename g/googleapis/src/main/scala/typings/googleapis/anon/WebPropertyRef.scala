@@ -3,13 +3,11 @@ package typings.googleapis.anon
 import typings.googleapis.v3Mod.analyticsV3.SchemaWebPropertyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebPropertyRef extends StObject {
   
-  var webPropertyRef: js.UndefOr[SchemaWebPropertyRef] = js.native
+  var webPropertyRef: js.UndefOr[SchemaWebPropertyRef] = js.undefined
 }
 object WebPropertyRef {
   

@@ -25,7 +25,6 @@ import typings.semanticUiReact.semanticUiReactStrings.small
 import typings.semanticUiReact.semanticUiReactStrings.tiny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbBreadcrumbMod {
@@ -60,16 +59,18 @@ object breadcrumbBreadcrumbMod {
   }
   
   @js.native
-  trait BreadcrumbComponent extends ComponentClass[BreadcrumbProps, ComponentState] {
+  trait BreadcrumbComponent
+    extends StObject
+       with ComponentClass[BreadcrumbProps, ComponentState] {
     
     var Divider: StatelessComponent[BreadcrumbDividerProps] = js.native
     
     var Section: ComponentClass[BreadcrumbSectionProps, ComponentState] = js.native
   }
   
-  @js.native
   trait BreadcrumbProps
-    extends StrictBreadcrumbProps
+    extends StObject
+       with StrictBreadcrumbProps
        with /* key */ StringDictionary[js.Any]
   object BreadcrumbProps {
     
@@ -80,31 +81,30 @@ object breadcrumbBreadcrumbMod {
     }
   }
   
-  @js.native
   trait StrictBreadcrumbProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content of the Breadcrumb.Divider. */
-    var divider: js.UndefOr[SemanticShorthandContent] = js.native
+    var divider: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** For use with the sections prop. Render as an `Icon` component with `divider` class instead of a `div` in
       *  Breadcrumb.Divider.
       */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** Shorthand array of props for Breadcrumb.Section. */
-    var sections: js.UndefOr[SemanticShorthandCollection[BreadcrumbSectionProps]] = js.native
+    var sections: js.UndefOr[SemanticShorthandCollection[BreadcrumbSectionProps]] = js.undefined
     
     /** Size of Breadcrumb */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
   }
   object StrictBreadcrumbProps {
     

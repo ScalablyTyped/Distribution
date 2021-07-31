@@ -3,14 +3,15 @@ package typings.wepy
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
   
   @JSImport("wepy/component", JSImport.Default)
   @js.native
-  class default () extends component
+  class default ()
+    extends StObject
+       with component
   
   @js.native
   trait component extends StObject {
@@ -39,14 +40,14 @@ object componentMod {
     @JSName("$setIndex")
     def $setIndex(index: Double): Unit = js.native
     
-    var computed: js.UndefOr[StringDictionary[js.Function1[/* self */ js.UndefOr[component], _]]] = js.native
+    var computed: js.UndefOr[StringDictionary[js.Function1[/* self */ js.UndefOr[component], js.Any]]] = js.native
     
     var data: StringDictionary[js.Any] = js.native
     
     def getWxPage(): js.Any = js.native
     
     var methods: js.UndefOr[
-        StringDictionary[js.Function1[/* evt */ js.UndefOr[typings.wepy.eventMod.default], _]]
+        StringDictionary[js.Function1[/* evt */ js.UndefOr[typings.wepy.eventMod.default], js.Any]]
       ] = js.native
     
     def onLoad(): Unit = js.native

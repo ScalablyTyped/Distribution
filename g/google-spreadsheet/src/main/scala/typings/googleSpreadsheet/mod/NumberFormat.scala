@@ -2,18 +2,16 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberFormat extends StObject {
   
   /**
     * see https://developers.google.com/sheets/api/guides/formats
     */
-  var pattern: String = js.native
+  var pattern: String
   
-  var `type`: NumberFormatType = js.native
+  var `type`: NumberFormatType
 }
 object NumberFormat {
   

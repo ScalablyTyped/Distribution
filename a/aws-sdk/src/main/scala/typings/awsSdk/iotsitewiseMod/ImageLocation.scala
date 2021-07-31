@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageLocation extends StObject {
   
   /**
     * The ID of the image.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The URL where the image is available. The URL is valid for 15 minutes so that you can view and download the image
     */
-  var url: Url = js.native
+  var url: Url
 }
 object ImageLocation {
   

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicClientApplication extends StObject {
   
   /**
     * Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and
     * access tokens are sent.
     */
-  var redirectUris: js.UndefOr[js.Array[String]] = js.native
+  var redirectUris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PublicClientApplication {
   

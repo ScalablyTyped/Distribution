@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteJourneyResponse extends StObject {
   
-  var JourneyResponse: typings.awsSdk.pinpointMod.JourneyResponse = js.native
+  var JourneyResponse: typings.awsSdk.pinpointMod.JourneyResponse
 }
 object DeleteJourneyResponse {
   

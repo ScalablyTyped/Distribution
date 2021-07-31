@@ -12,7 +12,6 @@ import typings.divaJs.interfacesMod.ViewerState
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -282,9 +281,9 @@ object mod {
       * @param yAnchor - Max be either "top", "bottom", or default "center".
       */
     def gotoPageByIndex(pageIndex: Double): Boolean = js.native
-    def gotoPageByIndex(pageIndex: Double, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
     def gotoPageByIndex(pageIndex: Double, xAnchor: String): Boolean = js.native
     def gotoPageByIndex(pageIndex: Double, xAnchor: String, yAnchor: String): Boolean = js.native
+    def gotoPageByIndex(pageIndex: Double, xAnchor: Unit, yAnchor: String): Boolean = js.native
     
     /**
       * Given a canvas label, attempt to go to that page. If no label was found
@@ -293,9 +292,9 @@ object mod {
       * @param yAnchor - May be either "top", "bottom", or default "center".
       */
     def gotoPageByLabel(label: String): Boolean = js.native
-    def gotoPageByLabel(label: String, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
     def gotoPageByLabel(label: String, xAnchor: String): Boolean = js.native
     def gotoPageByLabel(label: String, xAnchor: String, yAnchor: String): Boolean = js.native
+    def gotoPageByLabel(label: String, xAnchor: Unit, yAnchor: String): Boolean = js.native
     
     /**
       * Jumps to a page based on its filename. Use gotoPageByURI instead.
@@ -304,9 +303,9 @@ object mod {
       * @param yAnchor - May be either "top", "bottom", or default "center".
       */
     def gotoPageByName(filename: String): Boolean = js.native
-    def gotoPageByName(filename: String, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
     def gotoPageByName(filename: String, xAnchor: String): Boolean = js.native
     def gotoPageByName(filename: String, xAnchor: String, yAnchor: String): Boolean = js.native
+    def gotoPageByName(filename: String, xAnchor: Unit, yAnchor: String): Boolean = js.native
     
     /**
       * Jump to a page based on its URI.
@@ -314,9 +313,9 @@ object mod {
       * @param yAnchor - May be either "top", "bottom", or default "center".
       */
     def gotoPageByURI(uri: String): Boolean = js.native
-    def gotoPageByURI(uri: String, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
     def gotoPageByURI(uri: String, xAnchor: String): Boolean = js.native
     def gotoPageByURI(uri: String, xAnchor: String, yAnchor: String): Boolean = js.native
+    def gotoPageByURI(uri: String, xAnchor: Unit, yAnchor: String): Boolean = js.native
     
     /**
       * Whether the page has other images to display.
@@ -475,21 +474,20 @@ object mod {
     def publish(topic: String, args: js.Object): Unit = js.native
     def publish(topic: String, args: js.Object, scope: js.Object): Unit = js.native
     
-    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Array[_] = js.native
-    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, Unit], instanceID: String): js.Array[_] = js.native
+    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Array[js.Any] = js.native
+    def subscribe(topic: String, callback: js.Function1[/* repeated */ js.Any, Unit], instanceID: String): js.Array[js.Any] = js.native
     
-    def unsubscribe(handle: js.Array[_]): Boolean = js.native
-    def unsubscribe(handle: js.Array[_], completely: Boolean): Boolean = js.native
+    def unsubscribe(handle: js.Array[js.Any]): Boolean = js.native
+    def unsubscribe(handle: js.Array[js.Any], completely: Boolean): Boolean = js.native
     
     def unsubscribeAll(instanceID: String): Unit = js.native
   }
   
-  @js.native
   trait DivaState extends StObject {
     
-    var toolbar: Null = js.native
+    var toolbar: Null
     
-    var viewerCore: typings.divaJs.viewerCoreMod.default = js.native
+    var viewerCore: typings.divaJs.viewerCoreMod.default
   }
   object DivaState {
     

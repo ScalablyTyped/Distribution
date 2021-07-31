@@ -2,101 +2,99 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1Device extends StObject {
   
   /** Output only. Attributes specific to Android devices. */
-  var androidSpecificAttributes: js.UndefOr[GoogleAppsCloudidentityDevicesV1AndroidAttributes] = js.native
+  var androidSpecificAttributes: js.UndefOr[GoogleAppsCloudidentityDevicesV1AndroidAttributes] = js.undefined
   
   /** Asset tag of the device. */
-  var assetTag: js.UndefOr[String] = js.native
+  var assetTag: js.UndefOr[String] = js.undefined
   
   /** Output only. Baseband version of the device. */
-  var basebandVersion: js.UndefOr[String] = js.native
+  var basebandVersion: js.UndefOr[String] = js.undefined
   
   /** Output only. Device bootloader version. Example: 0.6.7. */
-  var bootloaderVersion: js.UndefOr[String] = js.native
+  var bootloaderVersion: js.UndefOr[String] = js.undefined
   
   /** Output only. Device brand. Example: Samsung. */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /** Output only. Build number of the device. */
-  var buildNumber: js.UndefOr[String] = js.native
+  var buildNumber: js.UndefOr[String] = js.undefined
   
   /** Output only. Represents whether the Device is compromised. */
-  var compromisedState: js.UndefOr[String] = js.native
+  var compromisedState: js.UndefOr[String] = js.undefined
   
   /** Output only. When the Company-Owned device was imported. This field is empty for BYOD devices. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Type of device. */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
   
   /** Output only. Whether developer options is enabled on device. */
-  var enabledDeveloperOptions: js.UndefOr[Boolean] = js.native
+  var enabledDeveloperOptions: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Whether USB debugging is enabled on device. */
-  var enabledUsbDebugging: js.UndefOr[Boolean] = js.native
+  var enabledUsbDebugging: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Device encryption state. */
-  var encryptionState: js.UndefOr[String] = js.native
+  var encryptionState: js.UndefOr[String] = js.undefined
   
   /** Output only. IMEI number of device if GSM device; empty otherwise. */
-  var imei: js.UndefOr[String] = js.native
+  var imei: js.UndefOr[String] = js.undefined
   
   /** Output only. Kernel version of the device. */
-  var kernelVersion: js.UndefOr[String] = js.native
+  var kernelVersion: js.UndefOr[String] = js.undefined
   
   /** Most recent time when device synced with this service. */
-  var lastSyncTime: js.UndefOr[String] = js.native
+  var lastSyncTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Management state of the device */
-  var managementState: js.UndefOr[String] = js.native
+  var managementState: js.UndefOr[String] = js.undefined
   
   /** Output only. Device manufacturer. Example: Motorola. */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /** Output only. MEID number of device if CDMA device; empty otherwise. */
-  var meid: js.UndefOr[String] = js.native
+  var meid: js.UndefOr[String] = js.undefined
   
   /** Output only. Model name of device. Example: Pixel 3. */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device_id}`, where device_id is the unique id assigned to the
     * Device.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Mobile or network operator of device, if available. */
-  var networkOperator: js.UndefOr[String] = js.native
+  var networkOperator: js.UndefOr[String] = js.undefined
   
   /** Output only. OS version of the device. Example: Android 8.1.0. */
-  var osVersion: js.UndefOr[String] = js.native
+  var osVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Domain name for Google accounts on device. Type for other accounts on device. On Android, will only be populated if |ownership_privilege| is |PROFILE_OWNER| or
     * |DEVICE_OWNER|. Does not include the account signed in to the device policy app if that account's domain has only one account. Examples: "com.example", "xyz.com".
     */
-  var otherAccounts: js.UndefOr[js.Array[String]] = js.native
+  var otherAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Whether the device is owned by the company or an individual */
-  var ownerType: js.UndefOr[String] = js.native
+  var ownerType: js.UndefOr[String] = js.undefined
   
   /** Output only. OS release version. Example: 6.0. */
-  var releaseVersion: js.UndefOr[String] = js.native
+  var releaseVersion: js.UndefOr[String] = js.undefined
   
   /** Output only. OS security patch update time on device. */
-  var securityPatchTime: js.UndefOr[String] = js.native
+  var securityPatchTime: js.UndefOr[String] = js.undefined
   
   /** Serial Number of device. Example: HT82V1A01076. */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
   
   /** WiFi MAC addresses of device. */
-  var wifiMacAddresses: js.UndefOr[js.Array[String]] = js.native
+  var wifiMacAddresses: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1Device {
   

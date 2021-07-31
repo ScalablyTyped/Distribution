@@ -23,19 +23,19 @@ import typings.greasemonkey.greasemonkeyStrings.start
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GM {
   
-  @js.native
-  trait ProgressResponse[TContext] extends Response[TContext] {
+  trait ProgressResponse[TContext]
+    extends StObject
+       with Response[TContext] {
     
-    var lengthComputable: Boolean = js.native
+    var lengthComputable: Boolean
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object ProgressResponse {
     
@@ -58,7 +58,7 @@ object GM {
     }
     
     @scala.inline
-    implicit class ProgressResponseMutableBuilder[Self <: ProgressResponse[_], TContext] (val x: Self with ProgressResponse[TContext]) extends AnyVal {
+    implicit class ProgressResponseMutableBuilder[Self <: ProgressResponse[?], TContext] (val x: Self & ProgressResponse[TContext]) extends AnyVal {
       
       @scala.inline
       def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
@@ -71,20 +71,19 @@ object GM {
     }
   }
   
-  @js.native
   trait Request[TContext] extends StObject {
     
     /**
       * When true, the data is sent as a Blob
       * @default false
       */
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any object (Compatibility: 1.10+). This object will also be the
       * context property of the Response Object.
       */
-    var context: js.UndefOr[TContext] = js.native
+    var context: js.UndefOr[TContext] = js.undefined
     
     /**
       * Data to send in the request body. Usually for POST method requests.
@@ -92,41 +91,41 @@ object GM {
       * set the header `'Content-Type': 'application/x-www-form-urlencoded'`
       * in the `headers` field.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** A set of headers to include in the request */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** String type of HTTP request to make (E.G. "GET", "POST") */
-    var method: GET | POST | PUT | DELETE | PATCH | HEAD | TRACE | OPTIONS | CONNECT = js.native
+    var method: GET | POST | PUT | DELETE | PATCH | HEAD | TRACE | OPTIONS | CONNECT
     
     // Event handlers
     /** Will be called when the request is aborted */
-    var onabort: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onabort: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
     /** Will be called if an error occurs while processing the request */
-    var onerror: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onerror: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
     /** Will be called when the request has completed successfully */
-    var onload: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onload: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
     /** Will be called when the request progress changes */
-    var onprogress: js.UndefOr[js.Function1[/* response */ ProgressResponse[TContext], Unit]] = js.native
+    var onprogress: js.UndefOr[js.Function1[/* response */ ProgressResponse[TContext], Unit]] = js.undefined
     
     /** Will be called repeatedly while the request is in progress */
-    var onreadystatechange: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var onreadystatechange: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
     /** Will be called if/when the request times out */
-    var ontimeout: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.native
+    var ontimeout: js.UndefOr[js.Function1[/* response */ Response[TContext], Unit]] = js.undefined
     
     /**
       * A MIME type to specify with the request (e.g.
       * "text/html; charset=ISO-8859-1")
       */
-    var overrideMimeType: js.UndefOr[String] = js.native
+    var overrideMimeType: js.UndefOr[String] = js.undefined
     
     /** Password to use for authentication purposes */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * When `true`, this is a synchronous request.
@@ -134,29 +133,29 @@ object GM {
       * request completes.In this mode, more data will be available in the
       * return value.
       */
-    var synchronous: js.UndefOr[Boolean] = js.native
+    var synchronous: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of milliseconds to wait before terminating the call. Zero
       * (the default) means wait forever.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Object containing optional function callbacks to monitor the upload
       * of data.
       */
-    var upload: js.UndefOr[Onabort[TContext]] = js.native
+    var upload: js.UndefOr[Onabort[TContext]] = js.undefined
     
     // Fields
     /**
       * The URL to make the request to. Must be an absolute URL, beginning
       * with the scheme. May be relative to the current page.
       */
-    var url: String = js.native
+    var url: String
     
     /** User name to use for authentication purposes. */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object Request {
     
@@ -167,7 +166,7 @@ object GM {
     }
     
     @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request[_], TContext] (val x: Self with Request[TContext]) extends AnyVal {
+    implicit class RequestMutableBuilder[Self <: Request[?], TContext] (val x: Self & Request[TContext]) extends AnyVal {
       
       @scala.inline
       def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
@@ -273,27 +272,26 @@ object GM {
     }
   }
   
-  @js.native
   trait Response[TContext] extends StObject {
     
     /** The same object passed into the original request */
-    val context: js.UndefOr[TContext] = js.native
+    val context: js.UndefOr[TContext] = js.undefined
     
-    val finalUrl: String = js.native
+    val finalUrl: String
     
-    val readyState: `1` | `2` | `3` | `4` = js.native
+    val readyState: `1` | `2` | `3` | `4`
     
-    val response: js.Any = js.native
+    val response: js.Any
     
-    val responseHeaders: String = js.native
+    val responseHeaders: String
     
-    val responseText: String = js.native
+    val responseText: String
     
-    val responseXML: Document | `false` = js.native
+    val responseXML: Document | `false`
     
-    val status: Double = js.native
+    val status: Double
     
-    val statusText: String = js.native
+    val statusText: String
   }
   object Response {
     
@@ -313,7 +311,7 @@ object GM {
     }
     
     @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response[_], TContext] (val x: Self with Response[TContext]) extends AnyVal {
+    implicit class ResponseMutableBuilder[Self <: Response[?], TContext] (val x: Self & Response[TContext]) extends AnyVal {
       
       @scala.inline
       def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -347,34 +345,33 @@ object GM {
     }
   }
   
-  @js.native
   trait ScriptInfo extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var excludes: js.Array[String] = js.native
+    var excludes: js.Array[String]
     
-    var includes: js.Array[String] = js.native
+    var includes: js.Array[String]
     
-    var matches: js.Array[String] = js.native
+    var matches: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * An object keyed by resource name.
       * Each value is an object with keys `name` and `mimetype` and `url`
       * with string values.
       */
-    var resources: StringDictionary[Mimetype] = js.native
+    var resources: StringDictionary[Mimetype]
     
     /** @default 'end' */
-    var runAt: start | end | idle = js.native
+    var runAt: start | end | idle
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var version: String = js.native
+    var version: String
   }
   object ScriptInfo {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateOrganizationsAccessReportResponse extends StObject {
   
   /**
     * The job identifier that you can use in the GetOrganizationsAccessReport operation.
     */
-  var JobId: js.UndefOr[jobIDType] = js.native
+  var JobId: js.UndefOr[jobIDType] = js.undefined
 }
 object GenerateOrganizationsAccessReportResponse {
   

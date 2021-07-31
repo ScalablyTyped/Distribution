@@ -2,15 +2,13 @@ package typings.overlayscrollbars.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Initialize extends StObject {
   
-  var initialize: js.UndefOr[Boolean] = js.native
+  var initialize: js.UndefOr[Boolean] = js.undefined
   
-  var showNativeScrollbars: js.UndefOr[Boolean] = js.native
+  var showNativeScrollbars: js.UndefOr[Boolean] = js.undefined
 }
 object Initialize {
   

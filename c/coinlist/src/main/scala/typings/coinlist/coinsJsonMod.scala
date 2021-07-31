@@ -3,7 +3,6 @@ package typings.coinlist
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coinsJsonMod extends Shortcut {
@@ -12,14 +11,13 @@ object coinsJsonMod extends Shortcut {
   @js.native
   val ^ : js.Array[Coin] = js.native
   
-  @js.native
   trait Coin extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var symbol: String = js.native
+    var symbol: String
   }
   object Coin {
     

@@ -3,35 +3,35 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DebugElement extends DebugNode {
+trait DebugElement
+  extends StObject
+     with DebugNode {
   
-  val attributes: StringDictionary[String | Null] = js.native
+  val attributes: StringDictionary[String | Null]
   
-  val childNodes: js.Array[DebugNode] = js.native
+  val childNodes: js.Array[DebugNode]
   
-  val children: js.Array[DebugElement] = js.native
+  val children: js.Array[DebugElement]
   
-  val classes: StringDictionary[Boolean] = js.native
+  val classes: StringDictionary[Boolean]
   
-  val name: String = js.native
+  val name: String
   
-  val nativeElement: js.Any = js.native
+  val nativeElement: js.Any
   
-  val properties: StringDictionary[js.Any] = js.native
+  val properties: StringDictionary[js.Any]
   
-  def query(predicate: Predicate[DebugElement]): DebugElement = js.native
+  def query(predicate: Predicate[DebugElement]): DebugElement
   
-  def queryAll(predicate: Predicate[DebugElement]): js.Array[DebugElement] = js.native
+  def queryAll(predicate: Predicate[DebugElement]): js.Array[DebugElement]
   
-  def queryAllNodes(predicate: Predicate[DebugNode]): js.Array[DebugNode] = js.native
+  def queryAllNodes(predicate: Predicate[DebugNode]): js.Array[DebugNode]
   
-  val styles: StringDictionary[String | Null] = js.native
+  val styles: StringDictionary[String | Null]
   
-  def triggerEventHandler(eventName: String, eventObj: js.Any): Unit = js.native
+  def triggerEventHandler(eventName: String, eventObj: js.Any): Unit
 }
 object DebugElement {
   
@@ -49,7 +49,7 @@ object DebugElement {
     nativeElement: js.Any,
     nativeNode: js.Any,
     properties: StringDictionary[js.Any],
-    providerTokens: js.Array[_],
+    providerTokens: js.Array[js.Any],
     query: Predicate[DebugElement] => DebugElement,
     queryAll: Predicate[DebugElement] => js.Array[DebugElement],
     queryAllNodes: Predicate[DebugNode] => js.Array[DebugNode],
@@ -57,7 +57,7 @@ object DebugElement {
     styles: StringDictionary[String | Null],
     triggerEventHandler: (String, js.Any) => Unit
   ): DebugElement = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nativeElement = nativeElement.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), queryAll = js.Any.fromFunction1(queryAll), queryAllNodes = js.Any.fromFunction1(queryAllNodes), references = references.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], triggerEventHandler = js.Any.fromFunction2(triggerEventHandler))
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nativeElement = nativeElement.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), queryAll = js.Any.fromFunction1(queryAll), queryAllNodes = js.Any.fromFunction1(queryAllNodes), references = references.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], triggerEventHandler = js.Any.fromFunction2(triggerEventHandler), parent = null)
     __obj.asInstanceOf[DebugElement]
   }
   

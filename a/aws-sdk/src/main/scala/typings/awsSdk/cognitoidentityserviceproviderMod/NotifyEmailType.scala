@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyEmailType extends StObject {
   
   /**
     * The HTML body.
     */
-  var HtmlBody: js.UndefOr[EmailNotificationBodyType] = js.native
+  var HtmlBody: js.UndefOr[EmailNotificationBodyType] = js.undefined
   
   /**
     * The subject.
     */
-  var Subject: EmailNotificationSubjectType = js.native
+  var Subject: EmailNotificationSubjectType
   
   /**
     * The text body.
     */
-  var TextBody: js.UndefOr[EmailNotificationBodyType] = js.native
+  var TextBody: js.UndefOr[EmailNotificationBodyType] = js.undefined
 }
 object NotifyEmailType {
   

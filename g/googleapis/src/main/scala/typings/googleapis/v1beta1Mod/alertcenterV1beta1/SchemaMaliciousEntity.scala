@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entity whose actions triggered a Gmail phishing alert.
   */
-@js.native
 trait SchemaMaliciousEntity extends StObject {
   
   /**
     * The sender email address.
     */
-  var fromHeader: js.UndefOr[String] = js.native
+  var fromHeader: js.UndefOr[String] = js.undefined
 }
 object SchemaMaliciousEntity {
   

@@ -3,77 +3,75 @@ package typings.azureArmResource.resourceModelsMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentPropertiesExtended extends StObject {
   
   /**
     * The correlation ID of the deployment.
     */
-  val correlationId: js.UndefOr[String] = js.native
+  val correlationId: js.UndefOr[String] = js.undefined
   
   /**
     * The debug setting of the deployment.
     */
-  var debugSetting: js.UndefOr[DebugSetting] = js.native
+  var debugSetting: js.UndefOr[DebugSetting] = js.undefined
   
   /**
     * The list of deployment dependencies.
     */
-  var dependencies: js.UndefOr[js.Array[Dependency]] = js.native
+  var dependencies: js.UndefOr[js.Array[Dependency]] = js.undefined
   
   /**
     * The deployment mode. Possible values are Incremental and Complete. Possible values include:
     * 'Incremental', 'Complete'
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * The deployment on error behavior.
     */
-  var onErrorDeployment: js.UndefOr[OnErrorDeploymentExtended] = js.native
+  var onErrorDeployment: js.UndefOr[OnErrorDeploymentExtended] = js.undefined
   
   /**
     * Key/value pairs that represent deployment output.
     */
-  var outputs: js.UndefOr[js.Any] = js.native
+  var outputs: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Deployment parameters. Use only one of Parameters or ParametersLink.
     */
-  var parameters: js.UndefOr[js.Any] = js.native
+  var parameters: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URI referencing the parameters. Use only one of Parameters or ParametersLink.
     */
-  var parametersLink: js.UndefOr[ParametersLink] = js.native
+  var parametersLink: js.UndefOr[ParametersLink] = js.undefined
   
   /**
     * The list of resource providers needed for the deployment.
     */
-  var providers: js.UndefOr[js.Array[Provider]] = js.native
+  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
   
   /**
     * The state of the provisioning.
     */
-  val provisioningState: js.UndefOr[String] = js.native
+  val provisioningState: js.UndefOr[String] = js.undefined
   
   /**
     * The template content. Use only one of Template or TemplateLink.
     */
-  var template: js.UndefOr[js.Any] = js.native
+  var template: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URI referencing the template. Use only one of Template or TemplateLink.
     */
-  var templateLink: js.UndefOr[TemplateLink] = js.native
+  var templateLink: js.UndefOr[TemplateLink] = js.undefined
   
   /**
     * The timestamp of the template deployment.
     */
-  val timestamp: js.UndefOr[Date] = js.native
+  val timestamp: js.UndefOr[Date] = js.undefined
 }
 object DeploymentPropertiesExtended {
   

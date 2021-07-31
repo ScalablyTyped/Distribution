@@ -2,40 +2,38 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CreateClusterRequest creates a cluster.
   */
-@js.native
 trait SchemaCreateClusterRequest extends StObject {
   
   /**
     * A [cluster
     * resource](/container-engine/reference/rest/v1/projects.zones.clusters)
     */
-  var cluster: js.UndefOr[SchemaCluster] = js.native
+  var cluster: js.UndefOr[SchemaCluster] = js.undefined
   
   /**
     * The parent (project and location) where the cluster will be created.
     * Specified in the format &#39;projects/x/locations/ *&#39;.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The Google Developers Console [project ID or project
     * number](https://support.google.com/cloud/answer/6158840). This field has
     * been deprecated and replaced by the parent field.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the cluster resides. This
     * field has been deprecated and replaced by the parent field.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateClusterRequest {
   

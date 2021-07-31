@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyOperationAttestation extends StObject {
   
   /** Output only. The certificate chains needed to validate the attestation */
-  var certChains: js.UndefOr[CertificateChains] = js.native
+  var certChains: js.UndefOr[CertificateChains] = js.undefined
   
   /** Output only. The attestation data provided by the HSM when the key operation was performed. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** Output only. The format of the attestation data. */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object KeyOperationAttestation {
   

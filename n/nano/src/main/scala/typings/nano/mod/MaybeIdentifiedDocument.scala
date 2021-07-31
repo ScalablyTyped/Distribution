@@ -2,16 +2,14 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -------------------------------------
 // Document
 // -------------------------------------
-@js.native
 trait MaybeIdentifiedDocument extends StObject {
   
-  var _id: js.UndefOr[String] = js.native
+  var _id: js.UndefOr[String] = js.undefined
 }
 object MaybeIdentifiedDocument {
   

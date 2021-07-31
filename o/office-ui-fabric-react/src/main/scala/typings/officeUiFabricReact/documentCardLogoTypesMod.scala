@@ -9,46 +9,45 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardLogoTypesMod {
   
-  @js.native
   trait IDocumentCardLogo extends StObject
   
-  @js.native
-  trait IDocumentCardLogoProps extends ClassAttributes[DocumentCardLogoBase] {
+  trait IDocumentCardLogoProps
+    extends StObject
+       with ClassAttributes[DocumentCardLogoBase] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardLogo]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardLogo]] = js.undefined
     
     /**
       * Describes DocumentCard Logo badge.
       */
-    var logoIcon: String = js.native
+    var logoIcon: String
     
     /**
       * Describe Logo name, optional.
       */
-    var logoName: js.UndefOr[String] = js.native
+    var logoName: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardLogoStyleProps, IDocumentCardLogoStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardLogoStyleProps, IDocumentCardLogoStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDocumentCardLogoProps {
     
@@ -102,18 +101,17 @@ object documentCardLogoTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardLogoStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardLogoStyleProps {
     
@@ -137,10 +135,9 @@ object documentCardLogoTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardLogoStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardLogoStyles {
     

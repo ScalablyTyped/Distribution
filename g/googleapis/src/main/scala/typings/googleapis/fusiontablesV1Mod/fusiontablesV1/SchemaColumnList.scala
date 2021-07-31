@@ -2,35 +2,33 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of columns in a table.
   */
-@js.native
 trait SchemaColumnList extends StObject {
   
   /**
     * List of all requested columns.
     */
-  var items: js.UndefOr[js.Array[SchemaColumn]] = js.native
+  var items: js.UndefOr[js.Array[SchemaColumn]] = js.undefined
   
   /**
     * Type name: a list of all columns.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. No token is displayed
     * if there are no more pages left.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of columns for the table.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaColumnList {
   

@@ -2,96 +2,94 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecoveryPointByBackupVault extends StObject {
   
   /**
     * The size, in bytes, of a backup.
     */
-  var BackupSizeInBytes: js.UndefOr[Long_] = js.native
+  var BackupSizeInBytes: js.UndefOr[Long_] = js.undefined
   
   /**
     * An ARN that uniquely identifies a backup vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
     */
-  var BackupVaultArn: js.UndefOr[ARN] = js.native
+  var BackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
-  var BackupVaultName: js.UndefOr[typings.awsSdk.backupMod.BackupVaultName] = js.native
+  var BackupVaultName: js.UndefOr[typings.awsSdk.backupMod.BackupVaultName] = js.undefined
   
   /**
     * A CalculatedLifecycle object containing DeleteAt and MoveToColdStorageAt timestamps.
     */
-  var CalculatedLifecycle: js.UndefOr[typings.awsSdk.backupMod.CalculatedLifecycle] = js.native
+  var CalculatedLifecycle: js.UndefOr[typings.awsSdk.backupMod.CalculatedLifecycle] = js.undefined
   
   /**
     * The date and time a job to restore a recovery point is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.native
+  var CompletionDate: js.UndefOr[timestamp] = js.undefined
   
   /**
     * Contains identifying information about the creation of a recovery point, including the BackupPlanArn, BackupPlanId, BackupPlanVersion, and BackupRuleId of the backup plan that is used to create it.
     */
-  var CreatedBy: js.UndefOr[RecoveryPointCreator] = js.native
+  var CreatedBy: js.UndefOr[RecoveryPointCreator] = js.undefined
   
   /**
     * The date and time a recovery point is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.native
+  var CreationDate: js.UndefOr[timestamp] = js.undefined
   
   /**
     * The server-side encryption key that is used to protect your backups; for example, arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab.
     */
-  var EncryptionKeyArn: js.UndefOr[ARN] = js.native
+  var EncryptionKeyArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * Specifies the IAM role ARN used to create the target recovery point; for example, arn:aws:iam::123456789012:role/S3Access.
     */
-  var IamRoleArn: js.UndefOr[IAMRoleArn] = js.native
+  var IamRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
     * A Boolean value that is returned as TRUE if the specified recovery point is encrypted, or FALSE if the recovery point is not encrypted.
     */
-  var IsEncrypted: js.UndefOr[scala.Boolean] = js.native
+  var IsEncrypted: js.UndefOr[scala.Boolean] = js.undefined
   
   /**
     * The date and time a recovery point was last restored, in Unix format and Coordinated Universal Time (UTC). The value of LastRestoreTime is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var LastRestoreTime: js.UndefOr[timestamp] = js.native
+  var LastRestoreTime: js.UndefOr[timestamp] = js.undefined
   
   /**
     * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
     */
-  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.native
+  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
-  var RecoveryPointArn: js.UndefOr[ARN] = js.native
+  var RecoveryPointArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * An ARN that uniquely identifies a resource. The format of the ARN depends on the resource type.
     */
-  var ResourceArn: js.UndefOr[ARN] = js.native
+  var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The type of AWS resource saved as a recovery point; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For VSS Windows backups, the only supported resource type is Amazon EC2.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
   
   /**
     * The backup vault where the recovery point was originally copied from. If the recovery point is restored to the same account this value will be null.
     */
-  var SourceBackupVaultArn: js.UndefOr[ARN] = js.native
+  var SourceBackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * A status code specifying the state of the recovery point.
     */
-  var Status: js.UndefOr[RecoveryPointStatus] = js.native
+  var Status: js.UndefOr[RecoveryPointStatus] = js.undefined
 }
 object RecoveryPointByBackupVault {
   

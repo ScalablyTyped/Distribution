@@ -2,7 +2,6 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;Collection Group&quot;, which represent all collections in the
   * database with the same id.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2Field extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGoogleFirestoreAdminV1beta2Field extends StObject {
     * explicitly remove all indexes for this field, specify an index config
     * with an empty list of indexes.
     */
-  var indexConfig: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2IndexConfig] = js.native
+  var indexConfig: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2IndexConfig] = js.undefined
   
   /**
     * A field name of the form
@@ -42,7 +40,7 @@ trait SchemaGoogleFirestoreAdminV1beta2Field extends StObject {
     * Indexes defined on this `Field` will be applied to all fields which do
     * not have their own `Field` index configuration.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2Field {
   

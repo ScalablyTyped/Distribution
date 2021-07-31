@@ -2,13 +2,11 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAuditFindingResponse extends StObject {
   
-  var finding: js.UndefOr[AuditFinding] = js.native
+  var finding: js.UndefOr[AuditFinding] = js.undefined
 }
 object DescribeAuditFindingResponse {
   

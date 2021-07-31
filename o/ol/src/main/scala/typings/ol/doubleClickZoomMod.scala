@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object doubleClickZoomMod {
@@ -17,12 +16,11 @@ object doubleClickZoomMod {
   trait DoubleClickZoom
     extends typings.ol.interactionInteractionMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var delta: js.UndefOr[Double] = js.native
+    var delta: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

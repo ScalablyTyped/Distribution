@@ -2,36 +2,38 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gaugeBandMod {
   
   @JSImport("amcharts/GaugeBand", JSImport.Default)
   @js.native
-  class default () extends GaugeBand
-  
-  @js.native
-  trait GaugeBand extends StObject {
+  class default ()
+    extends StObject
+       with GaugeBand {
     
     /**
       * Opacity of band fill. Will use axis.bandAlpha if not set any.
       */
+    /* CompleteClass */
     var alpha: Double = js.native
     
     /**
       * When rolled-over, band will display balloon if you set some text for this property.
       */
+    /* CompleteClass */
     var balloonText: String = js.native
     
     /**
       * Color of a band.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * End value of a fill.
       */
+    /* CompleteClass */
     var endValue: Double = js.native
     
     /**
@@ -40,43 +42,118 @@ object gaugeBandMod {
       * and positive number means the color will be lighter.
       * @default []
       */
+    /* CompleteClass */
     var gradientRatio: js.Array[Double] = js.native
     
     /**
       * Unique id of a band.
       */
+    /* CompleteClass */
     var id: String = js.native
     
     /**
       * Inner radius of a band. If not set any, the band will end with the end of minor ticks.
       * Set 0 if you want the band to be drawn to the axis center.
       */
+    /* CompleteClass */
     var innerRadius: js.Any = js.native
     
     /**
       * Band radius. If not set any, the band will start with the axis outline.
       */
+    /* CompleteClass */
     var radius: js.Any = js.native
     
     /**
       * Sets end value for the band.
       */
-    def setEndValue(value: Double): Unit = js.native
+    /* CompleteClass */
+    override def setEndValue(value: Double): Unit = js.native
     
     /**
       * Sets start value for the band.
       */
-    def setStartValue(value: Double): Unit = js.native
+    /* CompleteClass */
+    override def setStartValue(value: Double): Unit = js.native
     
     /**
       * Start value of a fill.
       */
+    /* CompleteClass */
     var startValue: Double = js.native
     
     /**
       * Gauge band can be clickable and can lead to some page.
       */
+    /* CompleteClass */
     var url: String = js.native
+  }
+  
+  trait GaugeBand extends StObject {
+    
+    /**
+      * Opacity of band fill. Will use axis.bandAlpha if not set any.
+      */
+    var alpha: Double
+    
+    /**
+      * When rolled-over, band will display balloon if you set some text for this property.
+      */
+    var balloonText: String
+    
+    /**
+      * Color of a band.
+      */
+    var color: String
+    
+    /**
+      * End value of a fill.
+      */
+    var endValue: Double
+    
+    /**
+      * Example: [-0.2, 0, -0.2]. Will make bands to be filled with color gradients.
+      * Negative value means the color will be darker than the original,
+      * and positive number means the color will be lighter.
+      * @default []
+      */
+    var gradientRatio: js.Array[Double]
+    
+    /**
+      * Unique id of a band.
+      */
+    var id: String
+    
+    /**
+      * Inner radius of a band. If not set any, the band will end with the end of minor ticks.
+      * Set 0 if you want the band to be drawn to the axis center.
+      */
+    var innerRadius: js.Any
+    
+    /**
+      * Band radius. If not set any, the band will start with the axis outline.
+      */
+    var radius: js.Any
+    
+    /**
+      * Sets end value for the band.
+      */
+    def setEndValue(value: Double): Unit
+    
+    /**
+      * Sets start value for the band.
+      */
+    def setStartValue(value: Double): Unit
+    
+    /**
+      * Start value of a fill.
+      */
+    var startValue: Double
+    
+    /**
+      * Gauge band can be clickable and can lead to some page.
+      */
+    var url: String
   }
   object GaugeBand {
     

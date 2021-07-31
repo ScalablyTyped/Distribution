@@ -2,25 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertHistoryState extends StObject {
   
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var assignedTo: js.UndefOr[NullableOption[String]] = js.native
+  var assignedTo: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var comments: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var comments: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var feedback: js.UndefOr[NullableOption[AlertFeedback]] = js.native
+  var feedback: js.UndefOr[NullableOption[AlertFeedback]] = js.undefined
   
-  var status: js.UndefOr[NullableOption[AlertStatus]] = js.native
+  var status: js.UndefOr[NullableOption[AlertStatus]] = js.undefined
   
-  var updatedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var updatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var user: js.UndefOr[NullableOption[String]] = js.native
+  var user: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AlertHistoryState {
   

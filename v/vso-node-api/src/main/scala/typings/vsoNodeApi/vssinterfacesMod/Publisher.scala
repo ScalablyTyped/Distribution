@@ -2,21 +2,19 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Publisher extends StObject {
   
   /**
     * Name of the publishing service.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Service Owner Guid Eg. Tfs : 00025394-6065-48CA-87D9-7F5672854EF7
     */
-  var serviceOwnerId: String = js.native
+  var serviceOwnerId: String
 }
 object Publisher {
   

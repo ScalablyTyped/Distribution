@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * 在下拉可刷新状态时显示的内容
@@ -28,7 +26,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var contentdown: js.UndefOr[js.Any] = js.native
+  var contentdown: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 在释放可刷新状态时显示的内容
@@ -37,7 +35,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var contentover: js.UndefOr[js.Any] = js.native
+  var contentover: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 在正在刷新状态时显示的内容
@@ -46,7 +44,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var contentrefresh: js.UndefOr[js.Any] = js.native
+  var contentrefresh: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 窗口的下拉刷新控件进入刷新状态的拉拽高度
@@ -54,7 +52,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 下拉刷新控件的起始位置
@@ -64,7 +62,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var offset: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口可下拉拖拽的范围
@@ -72,7 +70,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
   
   /**
     * 下拉刷新样式
@@ -83,7 +81,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     * 是否开启Webview窗口的下拉刷新功能
@@ -92,7 +90,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var support: js.UndefOr[Boolean] = js.native
+  var support: js.UndefOr[Boolean] = js.undefined
 }
 object PlusWebviewWebviewPullToRefreshStyles {
   

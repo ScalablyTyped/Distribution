@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains pricing info for a product listing in the Windows Store. */
-@js.native
 trait StorePrice extends StObject {
   
   /** Gets the ISO 4217 currency code for the market of the current user. */
-  var currencyCode: String = js.native
+  var currencyCode: String
   
   /** Gets the base price for the product with the appropriate formatting for the market of the current user. */
-  var formattedBasePrice: String = js.native
+  var formattedBasePrice: String
   
   /** Gets the purchase price for the product with the appropriate formatting for the market of the current user. */
-  var formattedPrice: String = js.native
+  var formattedPrice: String
   
   /** Gets the recurring price for the product with the appropriate formatting for the market of the current user, if recurring billing is enabled for this product. */
-  var formattedRecurrencePrice: String = js.native
+  var formattedRecurrencePrice: String
   
   /** Gets a value that indicates whether the product is on sale. */
-  var isOnSale: Boolean = js.native
+  var isOnSale: Boolean
   
   /** Gets the end date for the sale period for the product, if the product is on sale. */
-  var saleEndDate: Date = js.native
+  var saleEndDate: Date
 }
 object StorePrice {
   

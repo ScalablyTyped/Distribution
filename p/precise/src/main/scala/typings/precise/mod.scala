@@ -2,14 +2,16 @@ package typings.precise
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Precise = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Precise]
+  
   @JSImport("precise", JSImport.Namespace)
   @js.native
-  def apply(): Precise = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("precise", "Precise")
   @js.native

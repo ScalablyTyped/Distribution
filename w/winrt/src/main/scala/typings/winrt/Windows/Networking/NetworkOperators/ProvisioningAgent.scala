@@ -3,11 +3,11 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProvisioningAgent extends IProvisioningAgent
+trait ProvisioningAgent
+  extends StObject
+     with IProvisioningAgent
 object ProvisioningAgent {
   
   @scala.inline

@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedSigners extends StObject {
   
   /**
     * This field is true if any of the AWS accounts have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies. If not, this field is false.
     */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /**
     * A list of AWS account identifiers.
     */
-  var Items: js.UndefOr[AwsAccountNumberList] = js.native
+  var Items: js.UndefOr[AwsAccountNumberList] = js.undefined
   
   /**
     * The number of AWS accounts in the list.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object TrustedSigners {
   

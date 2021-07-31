@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for the AccountAdded and AccountRemoved events. */
-@js.native
 trait MobileBroadbandAccountEventArgs extends StObject {
   
   /** Gets the network account Id that was added or removed. */
-  var networkAccountId: String = js.native
+  var networkAccountId: String
 }
 object MobileBroadbandAccountEventArgs {
   

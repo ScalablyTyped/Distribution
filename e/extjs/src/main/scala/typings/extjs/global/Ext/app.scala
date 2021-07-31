@@ -5,7 +5,6 @@ import typings.extjs.Ext.IClass
 import typings.extjs.Ext.app.IController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
@@ -13,7 +12,8 @@ object app {
   @JSGlobal("Ext.app.EventBus")
   @js.native
   class EventBus ()
-    extends typings.extjs.Ext.app.EventBus
+    extends StObject
+       with typings.extjs.Ext.app.EventBus
   /* static members */
   object EventBus {
     
@@ -25,90 +25,72 @@ object app {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.app.EventBus.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.app.EventBus.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.app.EventBus.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.app.EventBus.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.app.EventBus.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.app.EventBus.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Adds a set of component event listeners for a controller
       * @param selectors Object Config object containing selectors and listeners.
       * @param controller Ext.app.Controller The listening controller instance.
       */
-    @JSGlobal("Ext.app.EventBus.control")
-    @js.native
-    def control(): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.control")
-    @js.native
-    def control(selectors: js.UndefOr[scala.Nothing], controller: IController): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.control")
-    @js.native
-    def control(selectors: js.Any): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.control")
-    @js.native
-    def control(selectors: js.Any, controller: IController): Unit = js.native
+    @scala.inline
+    def control(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("control")().asInstanceOf[Unit]
+    @scala.inline
+    def control(selectors: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("control")(selectors.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def control(selectors: js.Any, controller: IController): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("control")(selectors.asInstanceOf[js.Any], controller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def control(selectors: Unit, controller: IController): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("control")(selectors.asInstanceOf[js.Any], controller.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.app.EventBus.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.app.EventBus.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.app.EventBus.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.app.EventBus.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Adds a set of event domain listeners for a controller
       * @param to Object Config object containing domains, selectors and listeners.
       * @param controller Ext.app.Controller The listening controller instance.
       */
-    @JSGlobal("Ext.app.EventBus.listen")
-    @js.native
-    def listen(): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.listen")
-    @js.native
-    def listen(to: js.UndefOr[scala.Nothing], controller: IController): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.listen")
-    @js.native
-    def listen(to: js.Any): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.listen")
-    @js.native
-    def listen(to: js.Any, controller: IController): Unit = js.native
+    @scala.inline
+    def listen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[Unit]
+    @scala.inline
+    def listen(to: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def listen(to: js.Any, controller: IController): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(to.asInstanceOf[js.Any], controller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def listen(to: Unit, controller: IController): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(to.asInstanceOf[js.Any], controller.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.app.EventBus.self")
@@ -120,19 +102,16 @@ object app {
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.app.EventBus.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     
     /** [Method] Removes all of a controller s attached listeners
       * @param controllerId String The id of the controller.
       */
-    @JSGlobal("Ext.app.EventBus.unlisten")
-    @js.native
-    def unlisten(): Unit = js.native
-    @JSGlobal("Ext.app.EventBus.unlisten")
-    @js.native
-    def unlisten(controllerId: java.lang.String): Unit = js.native
+    @scala.inline
+    def unlisten(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlisten")().asInstanceOf[Unit]
+    @scala.inline
+    def unlisten(controllerId: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlisten")(controllerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object domain {
@@ -140,7 +119,8 @@ object app {
     @JSGlobal("Ext.app.domain.Component")
     @js.native
     class Component ()
-      extends typings.extjs.Ext.app.domain.Component
+      extends StObject
+         with typings.extjs.Ext.app.domain.Component
     /* static members */
     object Component {
       
@@ -152,66 +132,68 @@ object app {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.app.domain.Component.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Component.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.app.domain.Component.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Component.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.app.domain.Component.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Component.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
         * @param name String Name of the config option to return.
         * @returns Object/Mixed The full config object or a single config value when name parameter specified.
         */
-      @JSGlobal("Ext.app.domain.Component.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Component.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Initialize configuration for this class
         * @param config Object
         * @returns Ext.Base this
         */
-      @JSGlobal("Ext.app.domain.Component.initConfig")
-      @js.native
-      def initConfig(): IBase = js.native
-      @JSGlobal("Ext.app.domain.Component.initConfig")
-      @js.native
-      def initConfig(config: js.Any): IBase = js.native
+      @scala.inline
+      def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+      @scala.inline
+      def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+      
+      /** [Method] This method matches the firer of the event the target to the given selector
+        * @param target Object
+        * @param selector Object
+        * @returns Boolean true if the target matches the selector.
+        */
+      @scala.inline
+      def `match`(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")().asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any, selector: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: Unit, selector: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /** [Method] This method is called by the derived class to monitor fireEvent calls
         * @param observable Ext.Class The Observable to monitor for events.
         */
-      @JSGlobal("Ext.app.domain.Component.monitor")
-      @js.native
-      def monitor(): Unit = js.native
-      @JSGlobal("Ext.app.domain.Component.monitor")
-      @js.native
-      def monitor(observable: IClass): Unit = js.native
+      @scala.inline
+      def monitor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")().asInstanceOf[Unit]
+      @scala.inline
+      def monitor(observable: IClass): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.app.domain.Component.self")
@@ -223,33 +205,15 @@ object app {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.app.domain.Component.statics")
-      @js.native
-      def statics(): IClass = js.native
-      
-      /** [Method] This method matches the firer of the event the target to the given selector
-        * @param target Object
-        * @param selector Object
-        * @returns Boolean true if the target matches the selector.
-        */
-      @JSGlobal("Ext.app.domain.Component.match")
-      @js.native
-      def `match`(): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Component.match")
-      @js.native
-      def `match`(target: js.UndefOr[scala.Nothing], selector: js.Any): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Component.match")
-      @js.native
-      def `match`(target: js.Any): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Component.match")
-      @js.native
-      def `match`(target: js.Any, selector: js.Any): Boolean = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
     
     @JSGlobal("Ext.app.domain.Controller")
     @js.native
     class Controller ()
-      extends typings.extjs.Ext.app.domain.Controller
+      extends StObject
+         with typings.extjs.Ext.app.domain.Controller
     /* static members */
     object Controller {
       
@@ -261,45 +225,37 @@ object app {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.app.domain.Controller.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Controller.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.app.domain.Controller.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Controller.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.app.domain.Controller.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Controller.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
         * @param name String Name of the config option to return.
         * @returns Object/Mixed The full config object or a single config value when name parameter specified.
         */
-      @JSGlobal("Ext.app.domain.Controller.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Controller.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Config Option] (String) */
       @JSGlobal("Ext.app.domain.Controller.idProperty")
@@ -312,22 +268,32 @@ object app {
         * @param config Object
         * @returns Ext.Base this
         */
-      @JSGlobal("Ext.app.domain.Controller.initConfig")
-      @js.native
-      def initConfig(): IBase = js.native
-      @JSGlobal("Ext.app.domain.Controller.initConfig")
-      @js.native
-      def initConfig(config: js.Any): IBase = js.native
+      @scala.inline
+      def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+      @scala.inline
+      def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+      
+      /** [Method] This method matches the firer of the event the target to the given selector
+        * @param target Object The firer of the event.
+        * @param selector String The selector to which to match the target.
+        * @returns Boolean true if the target matches the selector.
+        */
+      @scala.inline
+      def `match`(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")().asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: Unit, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /** [Method] This method is called by the derived class to monitor fireEvent calls
         * @param observable Ext.Class The Observable to monitor for events.
         */
-      @JSGlobal("Ext.app.domain.Controller.monitor")
-      @js.native
-      def monitor(): Unit = js.native
-      @JSGlobal("Ext.app.domain.Controller.monitor")
-      @js.native
-      def monitor(observable: IClass): Unit = js.native
+      @scala.inline
+      def monitor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")().asInstanceOf[Unit]
+      @scala.inline
+      def monitor(observable: IClass): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.app.domain.Controller.self")
@@ -339,33 +305,15 @@ object app {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.app.domain.Controller.statics")
-      @js.native
-      def statics(): IClass = js.native
-      
-      /** [Method] This method matches the firer of the event the target to the given selector
-        * @param target Object The firer of the event.
-        * @param selector String The selector to which to match the target.
-        * @returns Boolean true if the target matches the selector.
-        */
-      @JSGlobal("Ext.app.domain.Controller.match")
-      @js.native
-      def `match`(): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Controller.match")
-      @js.native
-      def `match`(target: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Controller.match")
-      @js.native
-      def `match`(target: js.Any): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Controller.match")
-      @js.native
-      def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
     
     @JSGlobal("Ext.app.domain.Direct")
     @js.native
     class Direct ()
-      extends typings.extjs.Ext.app.domain.Direct
+      extends StObject
+         with typings.extjs.Ext.app.domain.Direct
     /* static members */
     object Direct {
       
@@ -377,45 +325,37 @@ object app {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.app.domain.Direct.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Direct.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.app.domain.Direct.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Direct.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.app.domain.Direct.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Direct.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
         * @param name String Name of the config option to return.
         * @returns Object/Mixed The full config object or a single config value when name parameter specified.
         */
-      @JSGlobal("Ext.app.domain.Direct.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Direct.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Config Option] (String) */
       @JSGlobal("Ext.app.domain.Direct.idProperty")
@@ -428,22 +368,32 @@ object app {
         * @param config Object
         * @returns Ext.Base this
         */
-      @JSGlobal("Ext.app.domain.Direct.initConfig")
-      @js.native
-      def initConfig(): IBase = js.native
-      @JSGlobal("Ext.app.domain.Direct.initConfig")
-      @js.native
-      def initConfig(config: js.Any): IBase = js.native
+      @scala.inline
+      def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+      @scala.inline
+      def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+      
+      /** [Method] This method matches the firer of the event the target to the given selector
+        * @param target Object The firer of the event.
+        * @param selector String The selector to which to match the target.
+        * @returns Boolean true if the target matches the selector.
+        */
+      @scala.inline
+      def `match`(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")().asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: Unit, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /** [Method] This method is called by the derived class to monitor fireEvent calls
         * @param observable Ext.Class The Observable to monitor for events.
         */
-      @JSGlobal("Ext.app.domain.Direct.monitor")
-      @js.native
-      def monitor(): Unit = js.native
-      @JSGlobal("Ext.app.domain.Direct.monitor")
-      @js.native
-      def monitor(observable: IClass): Unit = js.native
+      @scala.inline
+      def monitor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")().asInstanceOf[Unit]
+      @scala.inline
+      def monitor(observable: IClass): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.app.domain.Direct.self")
@@ -455,33 +405,15 @@ object app {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.app.domain.Direct.statics")
-      @js.native
-      def statics(): IClass = js.native
-      
-      /** [Method] This method matches the firer of the event the target to the given selector
-        * @param target Object The firer of the event.
-        * @param selector String The selector to which to match the target.
-        * @returns Boolean true if the target matches the selector.
-        */
-      @JSGlobal("Ext.app.domain.Direct.match")
-      @js.native
-      def `match`(): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Direct.match")
-      @js.native
-      def `match`(target: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Direct.match")
-      @js.native
-      def `match`(target: js.Any): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Direct.match")
-      @js.native
-      def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
     
     @JSGlobal("Ext.app.domain.Global")
     @js.native
     class Global ()
-      extends typings.extjs.Ext.app.domain.Global
+      extends StObject
+         with typings.extjs.Ext.app.domain.Global
     /* static members */
     object Global {
       
@@ -493,66 +425,60 @@ object app {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.app.domain.Global.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Global.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.app.domain.Global.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Global.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.app.domain.Global.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Global.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
         * @param name String Name of the config option to return.
         * @returns Object/Mixed The full config object or a single config value when name parameter specified.
         */
-      @JSGlobal("Ext.app.domain.Global.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Global.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Initialize configuration for this class
         * @param config Object
         * @returns Ext.Base this
         */
-      @JSGlobal("Ext.app.domain.Global.initConfig")
-      @js.native
-      def initConfig(): IBase = js.native
-      @JSGlobal("Ext.app.domain.Global.initConfig")
-      @js.native
-      def initConfig(config: js.Any): IBase = js.native
+      @scala.inline
+      def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+      @scala.inline
+      def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+      
+      /** [Method] This method matches the firer of the event the target to the given selector
+        * @returns Boolean true if the target matches the selector.
+        */
+      @scala.inline
+      def `match`(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")().asInstanceOf[Boolean]
       
       /** [Method] This method is called by the derived class to monitor fireEvent calls
         * @param observable Ext.Class The Observable to monitor for events.
         */
-      @JSGlobal("Ext.app.domain.Global.monitor")
-      @js.native
-      def monitor(): Unit = js.native
-      @JSGlobal("Ext.app.domain.Global.monitor")
-      @js.native
-      def monitor(observable: IClass): Unit = js.native
+      @scala.inline
+      def monitor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")().asInstanceOf[Unit]
+      @scala.inline
+      def monitor(observable: IClass): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.app.domain.Global.self")
@@ -564,22 +490,15 @@ object app {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.app.domain.Global.statics")
-      @js.native
-      def statics(): IClass = js.native
-      
-      /** [Method] This method matches the firer of the event the target to the given selector
-        * @returns Boolean true if the target matches the selector.
-        */
-      @JSGlobal("Ext.app.domain.Global.match")
-      @js.native
-      def `match`(): Boolean = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
     
     @JSGlobal("Ext.app.domain.Store")
     @js.native
     class Store ()
-      extends typings.extjs.Ext.app.domain.Store
+      extends StObject
+         with typings.extjs.Ext.app.domain.Store
     /* static members */
     object Store {
       
@@ -591,45 +510,37 @@ object app {
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
-      @JSGlobal("Ext.app.domain.Store.callOverridden")
-      @js.native
-      def callOverridden(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Store.callOverridden")
-      @js.native
-      def callOverridden(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+      @scala.inline
+      def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
-      @JSGlobal("Ext.app.domain.Store.callParent")
-      @js.native
-      def callParent(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Store.callParent")
-      @js.native
-      def callParent(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+      @scala.inline
+      def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
-      @JSGlobal("Ext.app.domain.Store.callSuper")
-      @js.native
-      def callSuper(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Store.callSuper")
-      @js.native
-      def callSuper(args: js.Any): js.Any = js.native
+      @scala.inline
+      def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+      @scala.inline
+      def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
         * @param name String Name of the config option to return.
         * @returns Object/Mixed The full config object or a single config value when name parameter specified.
         */
-      @JSGlobal("Ext.app.domain.Store.getInitialConfig")
-      @js.native
-      def getInitialConfig(): js.Any = js.native
-      @JSGlobal("Ext.app.domain.Store.getInitialConfig")
-      @js.native
-      def getInitialConfig(name: java.lang.String): js.Any = js.native
+      @scala.inline
+      def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+      @scala.inline
+      def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       /** [Config Option] (String) */
       @JSGlobal("Ext.app.domain.Store.idProperty")
@@ -642,22 +553,32 @@ object app {
         * @param config Object
         * @returns Ext.Base this
         */
-      @JSGlobal("Ext.app.domain.Store.initConfig")
-      @js.native
-      def initConfig(): IBase = js.native
-      @JSGlobal("Ext.app.domain.Store.initConfig")
-      @js.native
-      def initConfig(config: js.Any): IBase = js.native
+      @scala.inline
+      def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+      @scala.inline
+      def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+      
+      /** [Method] This method matches the firer of the event the target to the given selector
+        * @param target Object The firer of the event.
+        * @param selector String The selector to which to match the target.
+        * @returns Boolean true if the target matches the selector.
+        */
+      @scala.inline
+      def `match`(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")().asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: js.Any, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def `match`(target: Unit, selector: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(target.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /** [Method] This method is called by the derived class to monitor fireEvent calls
         * @param observable Ext.Class The Observable to monitor for events.
         */
-      @JSGlobal("Ext.app.domain.Store.monitor")
-      @js.native
-      def monitor(): Unit = js.native
-      @JSGlobal("Ext.app.domain.Store.monitor")
-      @js.native
-      def monitor(observable: IClass): Unit = js.native
+      @scala.inline
+      def monitor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")().asInstanceOf[Unit]
+      @scala.inline
+      def monitor(observable: IClass): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monitor")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** [Property] (Ext.Class) */
       @JSGlobal("Ext.app.domain.Store.self")
@@ -669,27 +590,8 @@ object app {
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
-      @JSGlobal("Ext.app.domain.Store.statics")
-      @js.native
-      def statics(): IClass = js.native
-      
-      /** [Method] This method matches the firer of the event the target to the given selector
-        * @param target Object The firer of the event.
-        * @param selector String The selector to which to match the target.
-        * @returns Boolean true if the target matches the selector.
-        */
-      @JSGlobal("Ext.app.domain.Store.match")
-      @js.native
-      def `match`(): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Store.match")
-      @js.native
-      def `match`(target: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Store.match")
-      @js.native
-      def `match`(target: js.Any): Boolean = js.native
-      @JSGlobal("Ext.app.domain.Store.match")
-      @js.native
-      def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
+      @scala.inline
+      def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
     }
   }
 }

@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputDeviceInfo extends MediaDeviceInfo {
+trait InputDeviceInfo
+  extends StObject
+     with MediaDeviceInfo {
   
-  def getCapabilities(): MediaTrackCapabilities = js.native
+  def getCapabilities(): MediaTrackCapabilities
 }
 object InputDeviceInfo {
   

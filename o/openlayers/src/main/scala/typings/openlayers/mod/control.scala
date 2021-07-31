@@ -16,10 +16,13 @@ import typings.openlayers.mod.proj.Projection
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object control {
+  
+  @JSImport("openlayers", "control")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @classdesc
@@ -79,15 +82,18 @@ object control {
   }
   object Attribution {
     
+    @JSImport("openlayers", "control.Attribution")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Update the attribution element.
       * @param mapEvent Map event.
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "control.Attribution.render")
-    @js.native
-    def render(mapEvent: MapEvent): Unit = js.native
+    @scala.inline
+    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -278,15 +284,18 @@ object control {
   }
   object MousePosition {
     
+    @JSImport("openlayers", "control.MousePosition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Update the mouseposition element.
       * @param mapEvent Map event.
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "control.MousePosition.render")
-    @js.native
-    def render(mapEvent: MapEvent): Unit = js.native
+    @scala.inline
+    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -345,15 +354,18 @@ object control {
   }
   object OverviewMap {
     
+    @JSImport("openlayers", "control.OverviewMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Update the overview map element.
       * @param mapEvent Map event.
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "control.OverviewMap.render")
-    @js.native
-    def render(mapEvent: MapEvent): Unit = js.native
+    @scala.inline
+    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -381,15 +393,18 @@ object control {
   }
   object Rotate {
     
+    @JSImport("openlayers", "control.Rotate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Update the rotate control element.
       * @param mapEvent Map event.
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "control.Rotate.render")
-    @js.native
-    def render(mapEvent: MapEvent): Unit = js.native
+    @scala.inline
+    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -442,15 +457,18 @@ object control {
   }
   object ScaleLine {
     
+    @JSImport("openlayers", "control.ScaleLine")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Update the scale line element.
       * @param mapEvent Map event.
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "control.ScaleLine.render")
-    @js.native
-    def render(mapEvent: MapEvent): Unit = js.native
+    @scala.inline
+    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @api
@@ -541,15 +559,18 @@ object control {
   }
   object ZoomSlider {
     
+    @JSImport("openlayers", "control.ZoomSlider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Update the zoomslider element.
       * @param mapEvent Map event.
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "control.ZoomSlider.render")
-    @js.native
-    def render(mapEvent: MapEvent): Unit = js.native
+    @scala.inline
+    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -586,10 +607,8 @@ object control {
     * @return Controls.
     * @api stable
     */
-  @JSImport("openlayers", "control.defaults")
-  @js.native
-  def defaults(): Collection[Control] = js.native
-  @JSImport("openlayers", "control.defaults")
-  @js.native
-  def defaults(opt_options: DefaultsOptions): Collection[Control] = js.native
+  @scala.inline
+  def defaults(): Collection[Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Collection[Control]]
+  @scala.inline
+  def defaults(opt_options: DefaultsOptions): Collection[Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Collection[Control]]
 }

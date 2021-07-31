@@ -11,8 +11,8 @@ Direct transport for Nodemailer
 | Full name          | nodemailer-direct-transport |
 | Keywords           | SMTP, Nodemailer |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 12355391 |
+| # dependents       | 28 |
+| # downloads        | 11649093 |
 | # stars            | 1 |
 
 ## Links

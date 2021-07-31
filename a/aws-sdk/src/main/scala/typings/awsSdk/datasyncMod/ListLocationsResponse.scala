@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLocationsResponse extends StObject {
   
   /**
     * An array that contains a list of locations.
     */
-  var Locations: js.UndefOr[LocationList] = js.native
+  var Locations: js.UndefOr[LocationList] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin returning the next list of locations.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
 }
 object ListLocationsResponse {
   

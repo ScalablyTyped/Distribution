@@ -2,25 +2,23 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes an interval on a date-axis
   * @since OOo 3.4
   */
-@js.native
 trait TimeInterval extends StObject {
   
   /** specifies the number of units */
-  var Number: Double = js.native
+  var Number: Double
   
   /**
     * specifies a unit for the interval
     *
     * is a value out of the constant group {@link com.sun.star.chart.TimeUnit} .
     */
-  var TimeUnit: Double = js.native
+  var TimeUnit: Double
 }
 object TimeInterval {
   

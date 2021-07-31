@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.ErrorConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -41,24 +40,24 @@ object mod extends Shortcut {
         /**
           * Returns true if the spy was called after anotherSpy.
           */
-        def calledAfter(anotherSpy: SinonSpy[js.Array[_], _]): Assertion = js.native
+        def calledAfter(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
         
         /**
           * Returns true if the spy was called before anotherSpy.
           */
-        def calledBefore(anotherSpy: SinonSpy[js.Array[_], _]): Assertion = js.native
+        def calledBefore(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
         
         /**
           * Returns true if spy was called after anotherSpy, and no spy calls occurred
           * between anotherSpy and spy.
           */
-        def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Array[_], _]): Assertion = js.native
+        def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
         
         /**
           * Returns true if spy was called before anotherSpy, and no spy calls occurred
           * between spy and anotherSpy.
           */
-        def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Array[_], _]): Assertion = js.native
+        def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
         
         /**
           * Returns true if context was this for this call.
@@ -130,10 +129,9 @@ object mod extends Shortcut {
         def thrown(obj: ErrorConstructor): Assertion = js.native
       }
       
-      @js.native
       trait LanguageChains extends StObject {
         
-        var always: Assertion = js.native
+        var always: Assertion
       }
       object LanguageChains {
         

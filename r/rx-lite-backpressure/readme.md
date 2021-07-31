@@ -12,7 +12,7 @@ Lightweight library with backpressure functions for composing asynchronous and e
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 695 |
+| # downloads        | 744 |
 | # stars            | 0 |
 
 ## Links

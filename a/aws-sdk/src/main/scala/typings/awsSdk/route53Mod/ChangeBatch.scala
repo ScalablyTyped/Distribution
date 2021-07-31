@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeBatch extends StObject {
   
   /**
     * Information about the changes to make to the record sets.
     */
-  var Changes: typings.awsSdk.route53Mod.Changes = js.native
+  var Changes: typings.awsSdk.route53Mod.Changes
   
   /**
     *  Optional: Any comments you want to include about a change batch request.
     */
-  var Comment: js.UndefOr[ResourceDescription] = js.native
+  var Comment: js.UndefOr[ResourceDescription] = js.undefined
 }
 object ChangeBatch {
   

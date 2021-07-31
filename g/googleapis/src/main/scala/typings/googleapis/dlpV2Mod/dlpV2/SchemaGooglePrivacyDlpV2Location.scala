@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the location of the finding.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Location extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait SchemaGooglePrivacyDlpV2Location extends StObject {
     * textual, this references the UTF-8 encoded textual representation of the
     * content. Omitted if content is an image.
     */
-  var byteRange: js.UndefOr[SchemaGooglePrivacyDlpV2Range] = js.native
+  var byteRange: js.UndefOr[SchemaGooglePrivacyDlpV2Range] = js.undefined
   
   /**
     * Unicode character offsets delimiting the finding. These are relative to
     * the finding&#39;s containing element. Provided when the content is text.
     */
-  var codepointRange: js.UndefOr[SchemaGooglePrivacyDlpV2Range] = js.native
+  var codepointRange: js.UndefOr[SchemaGooglePrivacyDlpV2Range] = js.undefined
   
   /**
     * List of nested objects pointing to the precise location of the finding
     * within the file or record.
     */
-  var contentLocations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ContentLocation]] = js.native
+  var contentLocations: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ContentLocation]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Location {
   

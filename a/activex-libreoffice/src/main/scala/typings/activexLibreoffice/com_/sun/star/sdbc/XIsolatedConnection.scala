@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdb.DataSource
   * @since OOo 1.1.2
   */
-@js.native
-trait XIsolatedConnection extends XInterface {
+trait XIsolatedConnection
+  extends StObject
+     with XInterface {
   
   /**
     * attempts to establish a database connection.
@@ -26,7 +26,7 @@ trait XIsolatedConnection extends XInterface {
     * @returns A connection which is not shared.
     * @throws com::sun::star::sdbc::SQLException when an error occurs.
     */
-  def getIsolatedConnection(user: String, password: String): XConnection = js.native
+  def getIsolatedConnection(user: String, password: String): XConnection
   
   /**
     * attempts to establish a database connection.
@@ -36,7 +36,7 @@ trait XIsolatedConnection extends XInterface {
     * @returns A connection which is not shared.
     * @throws com::sun::star::sdbc::SQLException when an error occurs.
     */
-  def getIsolatedConnectionWithCompletion(handler: XInteractionHandler): XConnection = js.native
+  def getIsolatedConnectionWithCompletion(handler: XInteractionHandler): XConnection
 }
 object XIsolatedConnection {
   

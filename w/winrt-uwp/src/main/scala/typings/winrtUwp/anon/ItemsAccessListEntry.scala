@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Storage.AccessCache.AccessListEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsAccessListEntry extends StObject {
   
-  /** The items in the collection that start at startIndex. */ var items: AccessListEntry = js.native
+  /** The items in the collection that start at startIndex. */ var items: AccessListEntry
   
-  /** The number of items retrieved. */ var returnValue: Double = js.native
+  /** The number of items retrieved. */ var returnValue: Double
 }
 object ItemsAccessListEntry {
   

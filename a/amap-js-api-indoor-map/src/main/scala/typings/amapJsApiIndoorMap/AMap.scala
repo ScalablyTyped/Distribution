@@ -17,13 +17,14 @@ import typings.amapJsApiIndoorMap.anon.Buildingid
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait IndoorMap extends Layer {
+  trait IndoorMap
+    extends StObject
+       with Layer {
     
     // internal
     def getFloorBar(): Unit = js.native
@@ -73,84 +74,10 @@ object AMap {
       indoorId: String,
       callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: js.UndefOr[scala.Nothing],
-      noMove: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: js.UndefOr[scala.Nothing],
-      noMove: Boolean
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: js.UndefOr[scala.Nothing],
-      noMove: Boolean,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(indoorId: String, floor: js.UndefOr[scala.Nothing], shopId: String): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: String,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: String,
-      noMove: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(indoorId: String, floor: js.UndefOr[scala.Nothing], shopId: String, noMove: Boolean): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: js.UndefOr[scala.Nothing],
-      shopId: String,
-      noMove: Boolean,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double): Unit = js.native
     def showIndoorMap(
       indoorId: String,
       floor: Double,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: Double,
-      shopId: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: Double,
-      shopId: js.UndefOr[scala.Nothing],
-      noMove: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(indoorId: String, floor: Double, shopId: js.UndefOr[scala.Nothing], noMove: Boolean): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: Double,
-      shopId: js.UndefOr[scala.Nothing],
-      noMove: Boolean,
       callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double, shopId: String): Unit = js.native
@@ -158,13 +85,6 @@ object AMap {
       indoorId: String,
       floor: Double,
       shopId: String,
-      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
-    ): Unit = js.native
-    def showIndoorMap(
-      indoorId: String,
-      floor: Double,
-      shopId: String,
-      noMove: js.UndefOr[scala.Nothing],
       callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
     def showIndoorMap(indoorId: String, floor: Double, shopId: String, noMove: Boolean): Unit = js.native
@@ -175,6 +95,82 @@ object AMap {
       noMove: Boolean,
       callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
     ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Double,
+      shopId: String,
+      noMove: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Double,
+      shopId: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(indoorId: String, floor: Double, shopId: Unit, noMove: Boolean): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Double,
+      shopId: Unit,
+      noMove: Boolean,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Double,
+      shopId: Unit,
+      noMove: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(indoorId: String, floor: Unit, shopId: String): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      shopId: String,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(indoorId: String, floor: Unit, shopId: String, noMove: Boolean): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      shopId: String,
+      noMove: Boolean,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      shopId: String,
+      noMove: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      shopId: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(indoorId: String, floor: Unit, shopId: Unit, noMove: Boolean): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      shopId: Unit,
+      noMove: Boolean,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
+    def showIndoorMap(
+      indoorId: String,
+      floor: Unit,
+      shopId: Unit,
+      noMove: Unit,
+      callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+    ): Unit = js.native
     
     /**
       * 显示室内地图标注
@@ -183,30 +179,29 @@ object AMap {
   }
   object IndoorMap {
     
-    @js.native
     trait Building extends StObject {
       
       /**
         * 所在楼层
         */
-      var floor: Double = js.native
+      var floor: Double
       
-      var floor_details: FloorDetails = js.native
+      var floor_details: FloorDetails
       
       /**
         * 所属楼宇ID
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * 楼层的经纬度
         */
-      var lnglat: LngLat = js.native
+      var lnglat: LngLat
       
       /**
         * 楼层名称
         */
-      var name: String = js.native
+      var name: String
     }
     object Building {
       
@@ -236,28 +231,24 @@ object AMap {
       }
     }
     
-    @js.native
     trait EventMap extends StObject {
       
-      var click: MouseEvent[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.click] = js.native
+      var click: MouseEvent[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.click]
       
-      var complete: Event_[
-            typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.complete, 
-            js.UndefOr[scala.Nothing]
-          ] = js.native
+      var complete: Event_[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.complete, Unit]
       
-      var floor_complete: Event_[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.floor_complete, SearchResult] = js.native
+      var floor_complete: Event_[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.floor_complete, SearchResult]
       
-      var mouseout: MouseEvent[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.mouseout] = js.native
+      var mouseout: MouseEvent[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.mouseout]
       
-      var mouseover: MouseEvent[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.mouseover] = js.native
+      var mouseover: MouseEvent[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.mouseover]
     }
     object EventMap {
       
       @scala.inline
       def apply(
         click: MouseEvent[click],
-        complete: Event_[complete, js.UndefOr[scala.Nothing]],
+        complete: Event_[complete, Unit],
         floor_complete: Event_[floor_complete, SearchResult],
         mouseout: MouseEvent[mouseout],
         mouseover: MouseEvent[mouseover]
@@ -273,7 +264,7 @@ object AMap {
         def setClick(value: MouseEvent[click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setComplete(value: Event_[complete, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        def setComplete(value: Event_[complete, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setFloor_complete(value: Event_[floor_complete, SearchResult]): Self = StObject.set(x, "floor_complete", value.asInstanceOf[js.Any])
@@ -286,23 +277,22 @@ object AMap {
       }
     }
     
-    @js.native
     trait FloorDetails extends StObject {
       
       /**
         * 各楼层索引
         */
-      var floor_indexs: js.Array[Double] = js.native
+      var floor_indexs: js.Array[Double]
       
       /**
         * 各楼层名字
         */
-      var floor_names: js.Array[String] = js.native
+      var floor_names: js.Array[String]
       
       /**
         * 各楼层英文
         */
-      var floor_nonas: js.Array[String] = js.native
+      var floor_nonas: js.Array[String]
     }
     object FloorDetails {
       
@@ -337,49 +327,49 @@ object AMap {
     
     type MouseEvent[N /* <: String */] = Event_[N, Buildingid]
     
-    @js.native
     trait Options
-      extends typings.amapJsApi.AMap.Layer.Options {
+      extends StObject
+         with typings.amapJsApi.AMap.Layer.Options {
       
       /**
         * 是否持续显示
         */
-      var alaysShow: js.UndefOr[Boolean] = js.native
+      var alaysShow: js.UndefOr[Boolean] = js.undefined
       
-      var autoLoadBuildingsInTile: js.UndefOr[Boolean] = js.native
+      var autoLoadBuildingsInTile: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 鼠标悬停到店铺面时的鼠标样式
         */
-      var cursor: js.UndefOr[String] = js.native
+      var cursor: js.UndefOr[String] = js.undefined
       
-      var disableHoverMarker: js.UndefOr[Boolean] = js.native
+      var disableHoverMarker: js.UndefOr[Boolean] = js.undefined
       
-      var disableIconRender: js.UndefOr[Boolean] = js.native
+      var disableIconRender: js.UndefOr[Boolean] = js.undefined
       
-      var disableLabelRender: js.UndefOr[Boolean] = js.native
+      var disableLabelRender: js.UndefOr[Boolean] = js.undefined
       
-      var featurezIndex: js.UndefOr[Double] = js.native
+      var featurezIndex: js.UndefOr[Double] = js.undefined
       
       /**
         * 是否隐藏楼层切换控件
         */
-      var hideFloorBar: js.UndefOr[Boolean] = js.native
+      var hideFloorBar: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 图层的透明度
         */
-      var opacity: js.UndefOr[Double] = js.native
+      var opacity: js.UndefOr[Double] = js.undefined
       
       // internal
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 图层叠加的顺序值
         */
-      var zIndex: js.UndefOr[Double] = js.native
+      var zIndex: js.UndefOr[Double] = js.undefined
       
-      var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     }
     object Options {
       
@@ -466,23 +456,24 @@ object AMap {
       }
     }
     
-    @js.native
-    trait SearchErrorResult extends SearchResult {
+    trait SearchErrorResult
+      extends StObject
+         with SearchResult {
       
-      var error: Error = js.native
+      var error: Error
       
       /**
         * 楼宇id
         */
-      var id: String = js.native
+      var id: String
       
-      var status: `1` = js.native
+      var status: `1`
     }
     object SearchErrorResult {
       
       @scala.inline
-      def apply(error: Error, id: String, status: `1`): SearchErrorResult = {
-        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(error: Error, id: String): SearchErrorResult = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[SearchErrorResult]
       }
       
@@ -508,38 +499,39 @@ object AMap {
     object SearchResult {
       
       @scala.inline
-      def SearchErrorResult(error: Error, id: String, status: `1`): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult = {
-        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def SearchErrorResult(error: Error, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult]
       }
       
       @scala.inline
-      def SearchSuccessResult(building: Building, id: String, status: `0`): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchSuccessResult = {
-        val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def SearchSuccessResult(building: Building, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchSuccessResult = {
+        val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 0)
         __obj.asInstanceOf[typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchSuccessResult]
       }
     }
     
-    @js.native
-    trait SearchSuccessResult extends SearchResult {
+    trait SearchSuccessResult
+      extends StObject
+         with SearchResult {
       
       /**
         * 建筑信息
         */
-      var building: Building = js.native
+      var building: Building
       
       /**
         * 楼层的id
         */
-      var id: String = js.native
+      var id: String
       
-      var status: `0` = js.native
+      var status: `0`
     }
     object SearchSuccessResult {
       
       @scala.inline
-      def apply(building: Building, id: String, status: `0`): SearchSuccessResult = {
-        val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(building: Building, id: String): SearchSuccessResult = {
+        val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 0)
         __obj.asInstanceOf[SearchSuccessResult]
       }
       
@@ -557,38 +549,37 @@ object AMap {
       }
     }
     
-    @js.native
     trait Shop extends StObject {
       
       /**
         * 店铺所属楼宇ID
         */
-      var building_id: String = js.native
+      var building_id: String
       
       /**
         * 分类
         */
-      var category: ShopCategory = js.native
+      var category: ShopCategory
       
       /**
         * 店铺的id
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * 店铺的经纬度
         */
-      var lnglat: LngLat = js.native
+      var lnglat: LngLat
       
       /**
         * 店铺名称
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * 兴趣点ID
         */
-      var poiId: String = js.native
+      var poiId: String
     }
     object Shop {
       

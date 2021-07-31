@@ -4,7 +4,6 @@ import typings.primereact.anon.Direction
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickListControlsMod {
@@ -21,16 +20,15 @@ object pickListControlsMod {
     def this(props: PickListControlsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PickListControlsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var list: js.UndefOr[js.Array[_]] = js.native
+    var list: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var onReorder: js.UndefOr[js.Function1[/* e */ Direction, Unit]] = js.native
+    var onReorder: js.UndefOr[js.Function1[/* e */ Direction, Unit]] = js.undefined
     
-    var selection: js.UndefOr[js.Array[_]] = js.native
+    var selection: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object PickListControlsProps {
     
@@ -50,7 +48,7 @@ object pickListControlsMod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setList(value: js.Array[_]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      def setList(value: js.Array[js.Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListUndefined: Self = StObject.set(x, "list", js.undefined)
@@ -65,7 +63,7 @@ object pickListControlsMod {
       def setOnReorderUndefined: Self = StObject.set(x, "onReorder", js.undefined)
       
       @scala.inline
-      def setSelection(value: js.Array[_]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      def setSelection(value: js.Array[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)

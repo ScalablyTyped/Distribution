@@ -4,15 +4,13 @@ import typings.grammarkdown.mod.OneOfList
 import typings.grammarkdown.mod.RightHandSide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Production extends StObject {
   
-  var production: typings.grammarkdown.mod.Production = js.native
+  var production: typings.grammarkdown.mod.Production
   
-  var rhses: js.Array[RightHandSide | OneOfList] = js.native
+  var rhses: js.Array[RightHandSide | OneOfList]
 }
 object Production {
   

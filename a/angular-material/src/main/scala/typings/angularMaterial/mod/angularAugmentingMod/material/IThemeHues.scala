@@ -2,19 +2,17 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IThemeHues extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var `hue-1`: js.UndefOr[String] = js.native
+  var `hue-1`: js.UndefOr[String] = js.undefined
   
-  var `hue-2`: js.UndefOr[String] = js.native
+  var `hue-2`: js.UndefOr[String] = js.undefined
   
-  var `hue-3`: js.UndefOr[String] = js.native
+  var `hue-3`: js.UndefOr[String] = js.undefined
 }
 object IThemeHues {
   

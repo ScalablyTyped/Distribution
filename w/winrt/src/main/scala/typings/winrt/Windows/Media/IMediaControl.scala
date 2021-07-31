@@ -3,45 +3,43 @@ package typings.winrt.Windows.Media
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMediaControl extends StObject {
   
-  var albumArt: Uri = js.native
+  var albumArt: Uri
   
-  var artistName: String = js.native
+  var artistName: String
   
-  var isPlaying: Boolean = js.native
+  var isPlaying: Boolean
   
-  var onchanneldownpressed: js.Any = js.native
+  var onchanneldownpressed: js.Any
   
-  var onchanneluppressed: js.Any = js.native
+  var onchanneluppressed: js.Any
   
-  var onfastforwardpressed: js.Any = js.native
+  var onfastforwardpressed: js.Any
   
-  var onnexttrackpressed: js.Any = js.native
+  var onnexttrackpressed: js.Any
   
-  var onpausepressed: js.Any = js.native
+  var onpausepressed: js.Any
   
-  var onplaypausetogglepressed: js.Any = js.native
+  var onplaypausetogglepressed: js.Any
   
-  var onplaypressed: js.Any = js.native
+  var onplaypressed: js.Any
   
-  var onprevioustrackpressed: js.Any = js.native
+  var onprevioustrackpressed: js.Any
   
-  var onrecordpressed: js.Any = js.native
+  var onrecordpressed: js.Any
   
-  var onrewindpressed: js.Any = js.native
+  var onrewindpressed: js.Any
   
-  var onsoundlevelchanged: js.Any = js.native
+  var onsoundlevelchanged: js.Any
   
-  var onstoppressed: js.Any = js.native
+  var onstoppressed: js.Any
   
-  var soundLevel: SoundLevel = js.native
+  var soundLevel: SoundLevel
   
-  var trackName: String = js.native
+  var trackName: String
 }
 object IMediaControl {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BudgetedAndActualAmounts extends StObject {
   
   /**
     * Your actual costs or usage for a budget period.
     */
-  var ActualAmount: js.UndefOr[Spend] = js.native
+  var ActualAmount: js.UndefOr[Spend] = js.undefined
   
   /**
     * The amount of cost or usage that you created the budget for.
     */
-  var BudgetedAmount: js.UndefOr[Spend] = js.native
+  var BudgetedAmount: js.UndefOr[Spend] = js.undefined
   
   /**
     * The time period covered by this budget comparison.
     */
-  var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.native
+  var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.undefined
 }
 object BudgetedAndActualAmounts {
   

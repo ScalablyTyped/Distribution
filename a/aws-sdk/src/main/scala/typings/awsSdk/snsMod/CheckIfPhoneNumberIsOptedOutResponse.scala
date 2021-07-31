@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIfPhoneNumberIsOptedOutResponse extends StObject {
   
   /**
     * Indicates whether the phone number is opted out:    true – The phone number is opted out, meaning you cannot publish SMS messages to it.    false – The phone number is opted in, meaning you can publish SMS messages to it.  
     */
-  var isOptedOut: js.UndefOr[Boolean] = js.native
+  var isOptedOut: js.UndefOr[Boolean] = js.undefined
 }
 object CheckIfPhoneNumberIsOptedOutResponse {
   

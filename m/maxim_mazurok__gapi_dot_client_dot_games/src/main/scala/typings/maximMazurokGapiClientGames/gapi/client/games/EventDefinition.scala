@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventDefinition extends StObject {
   
   /** A list of events that are a child of this event. */
-  var childEvents: js.UndefOr[js.Array[EventChild]] = js.native
+  var childEvents: js.UndefOr[js.Array[EventChild]] = js.undefined
   
   /** Description of what this event represents. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The name to display for the event. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The ID of the event. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The base URL for the image that represents the event. */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the icon image being returned is a default image, or is game-provided. */
-  var isDefaultImageUrl: js.UndefOr[Boolean] = js.native
+  var isDefaultImageUrl: js.UndefOr[Boolean] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#eventDefinition`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The visibility of event being tracked in this definition. */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object EventDefinition {
   

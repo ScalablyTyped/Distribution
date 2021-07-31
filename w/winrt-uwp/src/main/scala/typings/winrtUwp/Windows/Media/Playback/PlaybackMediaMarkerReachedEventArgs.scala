@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for PlaybackMediaMarkerReached events. */
-@js.native
 trait PlaybackMediaMarkerReachedEventArgs extends StObject {
   
   /** Gets the PlaybackMediaMarker that was reached. */
-  var playbackMediaMarker: PlaybackMediaMarker = js.native
+  var playbackMediaMarker: PlaybackMediaMarker
 }
 object PlaybackMediaMarkerReachedEventArgs {
   

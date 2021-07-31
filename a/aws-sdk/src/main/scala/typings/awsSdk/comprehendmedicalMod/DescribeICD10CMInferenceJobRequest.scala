@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeICD10CMInferenceJobRequest extends StObject {
   
   /**
     * The identifier that Amazon Comprehend Medical generated for the job. The StartICD10CMInferenceJob operation returns this identifier in its response.
     */
-  var JobId: typings.awsSdk.comprehendmedicalMod.JobId = js.native
+  var JobId: typings.awsSdk.comprehendmedicalMod.JobId
 }
 object DescribeICD10CMInferenceJobRequest {
   

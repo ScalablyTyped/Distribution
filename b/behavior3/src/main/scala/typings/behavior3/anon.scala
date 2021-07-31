@@ -3,15 +3,13 @@ package typings.behavior3
 import typings.behavior3.b3.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var children: js.UndefOr[js.Array[BaseNode]] = js.native
+    var children: js.UndefOr[js.Array[BaseNode]] = js.undefined
   }
   object `0` {
     
@@ -35,10 +33,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var child: js.UndefOr[BaseNode] = js.native
+    var child: js.UndefOr[BaseNode] = js.undefined
   }
   object `1` {
     
@@ -59,18 +56,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Category extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Category {
     
@@ -115,16 +111,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Child extends StObject {
     
-    var child: js.UndefOr[BaseNode] = js.native
+    var child: js.UndefOr[BaseNode] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Child {
     
@@ -163,12 +158,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ChildMaxLoop extends StObject {
     
-    var child: js.UndefOr[BaseNode] = js.native
+    var child: js.UndefOr[BaseNode] = js.undefined
     
-    var maxLoop: js.UndefOr[Double] = js.native
+    var maxLoop: js.UndefOr[Double] = js.undefined
   }
   object ChildMaxLoop {
     
@@ -195,16 +189,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.UndefOr[js.Array[BaseNode]] = js.native
+    var children: js.UndefOr[js.Array[BaseNode]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Children {
     
@@ -246,12 +239,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxLoop extends StObject {
     
-    var child: js.UndefOr[BaseNode] = js.native
+    var child: js.UndefOr[BaseNode] = js.undefined
     
-    var maxLoop: js.UndefOr[Double] = js.native
+    var maxLoop: js.UndefOr[Double] = js.undefined
   }
   object MaxLoop {
     
@@ -278,12 +270,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxTime extends StObject {
     
-    var child: js.UndefOr[BaseNode] = js.native
+    var child: js.UndefOr[BaseNode] = js.undefined
     
-    var maxTime: js.UndefOr[Double] = js.native
+    var maxTime: js.UndefOr[Double] = js.undefined
   }
   object MaxTime {
     
@@ -310,10 +301,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Milliseconds extends StObject {
     
-    var milliseconds: js.UndefOr[Double] = js.native
+    var milliseconds: js.UndefOr[Double] = js.undefined
   }
   object Milliseconds {
     
@@ -334,14 +324,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Name {
     

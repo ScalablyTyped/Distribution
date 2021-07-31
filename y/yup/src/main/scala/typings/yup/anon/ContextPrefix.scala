@@ -2,13 +2,11 @@ package typings.yup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextPrefix extends StObject {
   
-  var contextPrefix: String = js.native
+  var contextPrefix: String
 }
 object ContextPrefix {
   

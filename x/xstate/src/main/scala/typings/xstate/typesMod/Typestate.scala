@@ -2,15 +2,13 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typestate[TContext] extends StObject {
   
-  var context: TContext = js.native
+  var context: TContext
   
-  var value: StateValue = js.native
+  var value: StateValue
 }
 object Typestate {
   
@@ -21,7 +19,7 @@ object Typestate {
   }
   
   @scala.inline
-  implicit class TypestateMutableBuilder[Self <: Typestate[_], TContext] (val x: Self with Typestate[TContext]) extends AnyVal {
+  implicit class TypestateMutableBuilder[Self <: Typestate[?], TContext] (val x: Self & Typestate[TContext]) extends AnyVal {
     
     @scala.inline
     def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

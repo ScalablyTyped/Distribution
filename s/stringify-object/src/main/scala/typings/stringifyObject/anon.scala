@@ -2,35 +2,33 @@ package typings.stringifyObject
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Filter extends StObject {
     
     /**
       * Expected to return a boolean of whether to include the property property of the object object in the output.
       */
-    var filter: js.UndefOr[js.Function2[/* input */ js.Any, /* prop */ String | js.Symbol, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* input */ js.Any, /* prop */ String | js.Symbol, Boolean]] = js.undefined
     
     /**
       * Preferred indentation
       * @default '\t'
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * When set, will inline values up to inlineCharacterLimit length for the sake of more terse output.
       */
-    var inlineCharacterLimit: js.UndefOr[Double] = js.native
+    var inlineCharacterLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Set to false to get double-quoted strings
       * @default true
       */
-    var singleQuotes: js.UndefOr[Boolean] = js.native
+    var singleQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Expected to return a string that transforms the string that resulted from stringifying object[property].
@@ -39,12 +37,12 @@ object anon {
       */
     var transform: js.UndefOr[
         js.Function3[
-          /* input */ js.Array[_] | js.Object, 
+          /* input */ js.Array[js.Any] | js.Object, 
           /* prop */ Double | String | js.Symbol, 
           /* originalResult */ String, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Filter {
     
@@ -83,7 +81,7 @@ object anon {
       
       @scala.inline
       def setTransform(
-        value: (/* input */ js.Array[_] | js.Object, /* prop */ Double | String | js.Symbol, /* originalResult */ String) => String
+        value: (/* input */ js.Array[js.Any] | js.Object, /* prop */ Double | String | js.Symbol, /* originalResult */ String) => String
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       @scala.inline

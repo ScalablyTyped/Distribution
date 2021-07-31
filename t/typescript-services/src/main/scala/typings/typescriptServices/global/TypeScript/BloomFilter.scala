@@ -1,15 +1,37 @@
 package typings.typescriptServices.global.TypeScript
 
+import typings.typescriptServices.TypeScript.IIndexable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.BloomFilter")
 @js.native
 class BloomFilter protected ()
-  extends typings.typescriptServices.TypeScript.BloomFilter {
+  extends StObject
+     with typings.typescriptServices.TypeScript.BloomFilter {
   def this(expectedCount: Double) = this()
+  
+  /* CompleteClass */
+  override def add(value: String): Unit = js.native
+  
+  /* CompleteClass */
+  override def addKeys(keys: IIndexable[js.Any]): Unit = js.native
+  
+  /* CompleteClass */
+  var bitArray: js.Any = js.native
+  
+  /* CompleteClass */
+  /* private */ override def computeHash(key: js.Any, seed: js.Any): js.Any = js.native
+  
+  /* CompleteClass */
+  var hashFunctionCount: js.Any = js.native
+  
+  /* CompleteClass */
+  override def isEquivalent(filter: typings.typescriptServices.TypeScript.BloomFilter): Boolean = js.native
+  
+  /* CompleteClass */
+  override def probablyContains(value: String): Boolean = js.native
 }
 object BloomFilter {
   
@@ -18,14 +40,12 @@ object BloomFilter {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.BloomFilter.computeK")
-  @js.native
-  def computeK(expectedCount: Double): Double = js.native
+  @scala.inline
+  def computeK(expectedCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeK")(expectedCount.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("TypeScript.BloomFilter.computeM")
-  @js.native
-  def computeM(expectedCount: Double): Double = js.native
+  @scala.inline
+  def computeM(expectedCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeM")(expectedCount.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
   @JSGlobal("TypeScript.BloomFilter.falsePositiveProbability")
@@ -35,7 +55,6 @@ object BloomFilter {
   def falsePositiveProbability_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("falsePositiveProbability")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("TypeScript.BloomFilter.isEquivalent")
-  @js.native
-  def isEquivalent(array1: js.Array[Boolean], array2: js.Array[Boolean]): Boolean = js.native
+  @scala.inline
+  def isEquivalent(array1: js.Array[Boolean], array2: js.Array[Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEquivalent")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

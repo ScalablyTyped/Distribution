@@ -16,28 +16,28 @@ import typings.node.urlMod.URL_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("cacheable-request", JSImport.Namespace)
   @js.native
-  val ^ : CacheableRequest = js.native
+  val ^ : js.Object & CacheableRequest = js.native
   
   type CacheError = CacheErrorCls
   
-  @js.native
-  trait CacheErrorCls extends Error {
+  trait CacheErrorCls
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_CacheErrorCls: typings.cacheableRequest.cacheableRequestStrings.CacheError = js.native
+    val name_CacheErrorCls: typings.cacheableRequest.cacheableRequestStrings.CacheError
   }
   object CacheErrorCls {
     
     @scala.inline
-    def apply(message: String, name: typings.cacheableRequest.cacheableRequestStrings.CacheError): CacheErrorCls = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): CacheErrorCls = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "CacheError")
       __obj.asInstanceOf[CacheErrorCls]
     }
     
@@ -51,10 +51,11 @@ object mod extends Shortcut {
   
   @js.native
   trait CacheableRequest
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           /* requestFn */ RequestFn, 
           js.Function2[
-            /* opts */ String | URL_ | (RequestOptions with typings.httpCacheSemantics.mod.Options), 
+            /* opts */ String | URL_ | (RequestOptions & typings.httpCacheSemantics.mod.Options), 
             /* cb */ js.UndefOr[js.Function1[/* response */ ServerResponse | typings.responselike.mod.^, Unit]], 
             Emitter
           ]
@@ -63,7 +64,7 @@ object mod extends Shortcut {
           /* requestFn */ RequestFn, 
           (/* storageAdapter */ StorageAdapter) | (/* storageAdapter */ String), 
           js.Function2[
-            (RequestOptions with typings.httpCacheSemantics.mod.Options) | String | URL_, 
+            (RequestOptions & typings.httpCacheSemantics.mod.Options) | String | URL_, 
             js.UndefOr[js.Function1[ServerResponse | typings.responselike.mod.^, Unit]], 
             Emitter
           ]
@@ -187,7 +188,6 @@ object mod extends Shortcut {
     ): this.type = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -195,26 +195,26 @@ object mod extends Shortcut {
       * DB errors will still be emitted to notify you of the problem even though the request callback may succeed.
       * @default false
       */
-    var automaticFailover: js.UndefOr[Boolean] = js.native
+    var automaticFailover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the cache should be used. Setting this to `false` will completely bypass the cache for the current request.
       * @default true
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces refreshing the cache. If the response could be retrieved from the cache, it will perform a
       * new request and override the cache instead.
       * @default false
       */
-    var forceRefresh: js.UndefOr[Boolean] = js.native
+    var forceRefresh: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limits TTL. The `number` represents milliseconds.
       * @default undefined
       */
-    var maxTtl: js.UndefOr[Double] = js.native
+    var maxTtl: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to `true` once a cached resource has expired it is deleted and will have to be re-requested.
@@ -223,7 +223,7 @@ object mod extends Shortcut {
       * on the next request with `If-None-Match`/`If-Modified-Since` headers.
       * @default false
       */
-    var strictTtl: js.UndefOr[Boolean] = js.native
+    var strictTtl: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -270,17 +270,18 @@ object mod extends Shortcut {
   
   type RequestError = RequestErrorCls
   
-  @js.native
-  trait RequestErrorCls extends Error {
+  trait RequestErrorCls
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_RequestErrorCls: typings.cacheableRequest.cacheableRequestStrings.RequestError = js.native
+    val name_RequestErrorCls: typings.cacheableRequest.cacheableRequestStrings.RequestError
   }
   object RequestErrorCls {
     
     @scala.inline
-    def apply(message: String, name: typings.cacheableRequest.cacheableRequestStrings.RequestError): RequestErrorCls = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): RequestErrorCls = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "RequestError")
       __obj.asInstanceOf[RequestErrorCls]
     }
     
@@ -309,8 +310,8 @@ object mod extends Shortcut {
   
   type StorageAdapter = Store[js.Any]
   
-  type _To = CacheableRequest
+  type _To = js.Object & CacheableRequest
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CacheableRequest = ^
+  override def _to: js.Object & CacheableRequest = ^
 }

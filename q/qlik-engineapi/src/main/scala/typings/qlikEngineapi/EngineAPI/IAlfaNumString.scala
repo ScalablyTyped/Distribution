@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AlfaNumString...
   */
-@js.native
 trait IAlfaNumString extends StObject {
   
   /**
     * Is set to true if the value is a numeric.
     */
-  var qIsNum: Boolean = js.native
+  var qIsNum: Boolean
   
   /**
     * Calculated value.
     */
-  var qString: String = js.native
+  var qString: String
 }
 object IAlfaNumString {
   

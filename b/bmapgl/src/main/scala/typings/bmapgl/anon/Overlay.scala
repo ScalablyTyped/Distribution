@@ -2,21 +2,19 @@ package typings.bmapgl.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overlay extends StObject {
   
-  var overlay: typings.bmapgl.BMapGL.Overlay = js.native
+  var overlay: typings.bmapgl.BMapGL.Overlay
   
-  var pixel: typings.bmapgl.BMapGL.Pixel = js.native
+  var pixel: typings.bmapgl.BMapGL.Pixel
   
-  var point: typings.bmapgl.BMapGL.Point = js.native
+  var point: typings.bmapgl.BMapGL.Point
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Overlay {
   

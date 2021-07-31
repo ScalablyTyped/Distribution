@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockPublicAccess extends StObject {
   
   /**
     * Indicates if S3 Block Public Access is set to BlockPublicAcls.
     */
-  var BlockPublicAcls: js.UndefOr[Boolean] = js.native
+  var BlockPublicAcls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if S3 Block Public Access is set to BlockPublicPolicy.
     */
-  var BlockPublicPolicy: js.UndefOr[Boolean] = js.native
+  var BlockPublicPolicy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if S3 Block Public Access is set to IgnorePublicAcls.
     */
-  var IgnorePublicAcls: js.UndefOr[Boolean] = js.native
+  var IgnorePublicAcls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if S3 Block Public Access is set to RestrictPublicBuckets.
     */
-  var RestrictPublicBuckets: js.UndefOr[Boolean] = js.native
+  var RestrictPublicBuckets: js.UndefOr[Boolean] = js.undefined
 }
 object BlockPublicAccess {
   

@@ -2,23 +2,21 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var label: AutoHide = js.native
+  var label: AutoHide
   
-  var line: StyleStroke = js.native
+  var line: StyleStroke
   
-  var subTickLine: Count = js.native
+  var subTickLine: Count
   
-  var tickLine: AlignTick = js.native
+  var tickLine: AlignTick
   
-  var tickStates: Active = js.native
+  var tickStates: Active
   
-  var title: Position = js.native
+  var title: Position
 }
 object Label {
   

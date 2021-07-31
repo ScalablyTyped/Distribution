@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,11 +34,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Each shape object that has not set the DEFUNC state has a valid parent. That is either the containing draw page or a group shape or a 3D scene object.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleShape
-  extends XAccessibleExtendedComponent
+  extends StObject
      with XAccessible
      with XAccessibleContext
+     with XAccessibleExtendedComponent
 object AccessibleShape {
   
   @scala.inline

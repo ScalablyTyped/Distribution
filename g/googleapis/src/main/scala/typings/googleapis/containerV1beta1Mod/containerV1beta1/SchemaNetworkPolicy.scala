@@ -2,25 +2,23 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options for the NetworkPolicy feature.
   * https://kubernetes.io/docs/concepts/services-networking/networkpolicies/
   */
-@js.native
 trait SchemaNetworkPolicy extends StObject {
   
   /**
     * Whether network policy is enabled on the cluster.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The selected network policy provider.
     */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkPolicy {
   

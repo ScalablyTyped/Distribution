@@ -2,34 +2,32 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Per source result count information.
   */
-@js.native
 trait SchemaSourceResultCount extends StObject {
   
   /**
     * Whether there are more search results for this source.
     */
-  var hasMoreResults: js.UndefOr[Boolean] = js.native
+  var hasMoreResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The estimated result count for this source.
     */
-  var resultCountEstimate: js.UndefOr[String] = js.native
+  var resultCountEstimate: js.UndefOr[String] = js.undefined
   
   /**
     * The exact result count for this source.
     */
-  var resultCountExact: js.UndefOr[String] = js.native
+  var resultCountExact: js.UndefOr[String] = js.undefined
   
   /**
     * The source the result count information is associated with.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
 }
 object SchemaSourceResultCount {
   

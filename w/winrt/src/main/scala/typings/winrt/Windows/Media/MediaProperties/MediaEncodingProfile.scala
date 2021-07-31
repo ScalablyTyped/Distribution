@@ -2,11 +2,11 @@ package typings.winrt.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaEncodingProfile extends IMediaEncodingProfile
+trait MediaEncodingProfile
+  extends StObject
+     with IMediaEncodingProfile
 object MediaEncodingProfile {
   
   @scala.inline

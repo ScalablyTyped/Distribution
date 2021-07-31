@@ -4,19 +4,17 @@ import typings.nodeHueApi.anon.Address
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISchedule extends StObject {
   
-  var command: Address = js.native
+  var command: Address
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var time: Date = js.native
+  var time: Date
 }
 object ISchedule {
   

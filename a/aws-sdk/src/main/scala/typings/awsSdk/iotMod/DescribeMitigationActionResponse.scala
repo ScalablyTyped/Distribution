@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMitigationActionResponse extends StObject {
   
   /**
     * The ARN that identifies this migration action.
     */
-  var actionArn: js.UndefOr[MitigationActionArn] = js.native
+  var actionArn: js.UndefOr[MitigationActionArn] = js.undefined
   
   /**
     * A unique identifier for this action.
     */
-  var actionId: js.UndefOr[MitigationActionId] = js.native
+  var actionId: js.UndefOr[MitigationActionId] = js.undefined
   
   /**
     * The friendly name that uniquely identifies the mitigation action.
     */
-  var actionName: js.UndefOr[MitigationActionName] = js.native
+  var actionName: js.UndefOr[MitigationActionName] = js.undefined
   
   /**
     * Parameters that control how the mitigation action is applied, specific to the type of mitigation action.
     */
-  var actionParams: js.UndefOr[MitigationActionParams] = js.native
+  var actionParams: js.UndefOr[MitigationActionParams] = js.undefined
   
   /**
     * The type of mitigation action.
     */
-  var actionType: js.UndefOr[MitigationActionType] = js.native
+  var actionType: js.UndefOr[MitigationActionType] = js.undefined
   
   /**
     * The date and time when the mitigation action was added to your AWS account.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time when the mitigation action was last changed.
     */
-  var lastModifiedDate: js.UndefOr[Timestamp] = js.native
+  var lastModifiedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the IAM role used to apply this action.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object DescribeMitigationActionResponse {
   

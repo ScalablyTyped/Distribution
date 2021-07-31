@@ -2,18 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Security extends Entity {
+trait Security
+  extends StObject
+     with Entity {
   
   // Read-only. Nullable.
-  var alerts: js.UndefOr[NullableOption[js.Array[Alert]]] = js.native
+  var alerts: js.UndefOr[NullableOption[js.Array[Alert]]] = js.undefined
   
-  var secureScoreControlProfiles: js.UndefOr[NullableOption[js.Array[SecureScoreControlProfile]]] = js.native
+  var secureScoreControlProfiles: js.UndefOr[NullableOption[js.Array[SecureScoreControlProfile]]] = js.undefined
   
-  var secureScores: js.UndefOr[NullableOption[js.Array[SecureScore]]] = js.native
+  var secureScores: js.UndefOr[NullableOption[js.Array[SecureScore]]] = js.undefined
 }
 object Security {
   

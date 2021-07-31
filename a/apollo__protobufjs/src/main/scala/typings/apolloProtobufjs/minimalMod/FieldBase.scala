@@ -3,7 +3,6 @@ package typings.apolloProtobufjs.minimalMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/minimal", "FieldBase")
@@ -23,14 +22,6 @@ class FieldBase protected ()
   def this(name: String, id: Double, `type`: String) = this()
   def this(name: String, id: Double, `type`: String, rule: String) = this()
   def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.UndefOr[js.Any]]) = this()
-  def this(name: String, id: Double, `type`: String, rule: js.UndefOr[scala.Nothing], extend: String) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
   def this(name: String, id: Double, `type`: String, rule: String, extend: String) = this()
   def this(
     name: String,
@@ -53,38 +44,8 @@ class FieldBase protected ()
     rule: StringDictionary[js.UndefOr[js.Any]],
     extend: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: String,
-    options: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: StringDictionary[js.UndefOr[js.Any]],
-    options: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: String) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: StringDictionary[js.UndefOr[js.Any]]) = this()
   def this(
     name: String,
     id: Double,
@@ -105,8 +66,8 @@ class FieldBase protected ()
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.UndefOr[js.Any]],
-    extend: js.UndefOr[scala.Nothing],
+    rule: String,
+    extend: Unit,
     options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
@@ -129,125 +90,40 @@ class FieldBase protected ()
     name: String,
     id: Double,
     `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: String,
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: String,
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: StringDictionary[js.UndefOr[js.Any]],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: js.UndefOr[scala.Nothing],
-    extend: StringDictionary[js.UndefOr[js.Any]],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: js.UndefOr[scala.Nothing],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: String,
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: String,
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: StringDictionary[js.UndefOr[js.Any]],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: String,
-    extend: StringDictionary[js.UndefOr[js.Any]],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
     rule: StringDictionary[js.UndefOr[js.Any]],
-    extend: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    comment: String
+    extend: Unit,
+    options: StringDictionary[js.UndefOr[js.Any]]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.UndefOr[js.Any]],
-    extend: js.UndefOr[scala.Nothing],
+    rule: Unit,
+    extend: String,
+    options: StringDictionary[js.UndefOr[js.Any]]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: Unit,
+    options: StringDictionary[js.UndefOr[js.Any]]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: String,
+    extend: String,
     options: StringDictionary[js.UndefOr[js.Any]],
     comment: String
   ) = this()
@@ -255,9 +131,45 @@ class FieldBase protected ()
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.UndefOr[js.Any]],
+    rule: String,
     extend: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: String,
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: String,
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: Unit,
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: String,
+    extend: Unit,
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: String,
+    extend: Unit,
+    options: Unit,
     comment: String
   ) = this()
   def this(
@@ -274,8 +186,8 @@ class FieldBase protected ()
     id: Double,
     `type`: String,
     rule: StringDictionary[js.UndefOr[js.Any]],
-    extend: StringDictionary[js.UndefOr[js.Any]],
-    options: js.UndefOr[scala.Nothing],
+    extend: String,
+    options: Unit,
     comment: String
   ) = this()
   def this(
@@ -287,4 +199,77 @@ class FieldBase protected ()
     options: StringDictionary[js.UndefOr[js.Any]],
     comment: String
   ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[js.UndefOr[js.Any]],
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: Unit,
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[js.UndefOr[js.Any]],
+    extend: Unit,
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[js.UndefOr[js.Any]],
+    extend: Unit,
+    options: Unit,
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: String,
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: String,
+    options: Unit,
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: StringDictionary[js.UndefOr[js.Any]],
+    options: Unit,
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: Unit,
+    options: StringDictionary[js.UndefOr[js.Any]],
+    comment: String
+  ) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: Unit, options: Unit, comment: String) = this()
 }

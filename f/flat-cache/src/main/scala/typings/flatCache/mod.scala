@@ -3,42 +3,36 @@ package typings.flatCache
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("flat-cache", "clearAll")
+  @JSImport("flat-cache", JSImport.Namespace)
   @js.native
-  def clearAll(): Boolean = js.native
-  @JSImport("flat-cache", "clearAll")
-  @js.native
-  def clearAll(cacheDir: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("flat-cache", "clearCacheById")
-  @js.native
-  def clearCacheById(cacheId: String): Boolean = js.native
-  @JSImport("flat-cache", "clearCacheById")
-  @js.native
-  def clearCacheById(cacheId: String, cacheDir: String): Boolean = js.native
+  @scala.inline
+  def clearAll(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Boolean]
+  @scala.inline
+  def clearAll(cacheDir: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")(cacheDir.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("flat-cache", "create")
-  @js.native
-  def create(cacheId: String): Cache = js.native
-  @JSImport("flat-cache", "create")
-  @js.native
-  def create(cacheId: String, cacheDir: String): Cache = js.native
+  @scala.inline
+  def clearCacheById(cacheId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCacheById")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def clearCacheById(cacheId: String, cacheDir: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearCacheById")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("flat-cache", "createFromFile")
-  @js.native
-  def createFromFile(filePath: String): Cache = js.native
+  @scala.inline
+  def create(cacheId: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  @scala.inline
+  def create(cacheId: String, cacheDir: String): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Cache]
   
-  @JSImport("flat-cache", "load")
-  @js.native
-  def load(cacheId: String): Cache = js.native
-  @JSImport("flat-cache", "load")
-  @js.native
-  def load(cacheId: String, cacheDir: String): Cache = js.native
+  @scala.inline
+  def createFromFile(filePath: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  
+  @scala.inline
+  def load(cacheId: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  @scala.inline
+  def load(cacheId: String, cacheDir: String): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Cache]
   
   @js.native
   trait Cache extends StObject {

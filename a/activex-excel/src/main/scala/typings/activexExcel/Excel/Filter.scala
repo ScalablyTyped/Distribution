@@ -2,32 +2,30 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val Criteria1: js.Any = js.native
+  val Criteria1: js.Any
   
-  val Criteria2: js.Any = js.native
+  val Criteria2: js.Any
   
   @JSName("Excel.Filter_typekey")
-  var ExcelDotFilter_typekey: Filter = js.native
+  var ExcelDotFilter_typekey: Filter
   
-  val On: Boolean = js.native
+  val On: Boolean
   
-  var Operator: XlAutoFilterOperator = js.native
+  var Operator: XlAutoFilterOperator
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val _Operator: XlAutoFilterOperator = js.native
+  val _Operator: XlAutoFilterOperator
 }
 object Filter {
   

@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be updated until its state is set to COMPLETE at which points it becomes
   * immutable.
   */
-@js.native
 trait SchemaStep extends StObject {
   
   /**
@@ -28,20 +26,20 @@ trait SchemaStep extends StObject {
     * set automatically when state transitions to COMPLETE.  - In response: set
     * if the execution state is COMPLETE. - In create/update request: never set
     */
-  var completionTime: js.UndefOr[SchemaTimestamp] = js.native
+  var completionTime: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
     * The time when the step was created.  - In response: always set - In
     * create/update request: never set
     */
-  var creationTime: js.UndefOr[SchemaTimestamp] = js.native
+  var creationTime: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
     * A description of this tool For example: mvn clean package -D
     * skipTests=true  - In response: present if set by create/update request -
     * In create/update request: optional
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * How much the device resource is used to perform the test.  This is the
@@ -52,7 +50,7 @@ trait SchemaStep extends StObject {
     * response: present if previously set. - In create request: optional - In
     * update request: optional
     */
-  var deviceUsageDuration: js.UndefOr[SchemaDuration] = js.native
+  var deviceUsageDuration: js.UndefOr[SchemaDuration] = js.undefined
   
   /**
     * If the execution containing this step has any dimension_definition set,
@@ -77,14 +75,14 @@ trait SchemaStep extends StObject {
     * of the keys.  - In response: present if set by create - In create
     * request: optional - In update request: never set
     */
-  var dimensionValue: js.UndefOr[js.Array[SchemaStepDimensionValueEntry]] = js.native
+  var dimensionValue: js.UndefOr[js.Array[SchemaStepDimensionValueEntry]] = js.undefined
   
   /**
     * Whether any of the outputs of this step are images whose thumbnails can
     * be fetched with ListThumbnails.  - In response: always set - In
     * create/update request: never set
     */
-  var hasImages: js.UndefOr[Boolean] = js.native
+  var hasImages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Arbitrary user-supplied key/value pairs that are associated with the
@@ -96,7 +94,7 @@ trait SchemaStep extends StObject {
     * key/value pair will be added to the map, and any new value for an
     * existing key will update that key&#39;s value
     */
-  var labels: js.UndefOr[js.Array[SchemaStepLabelsEntry]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaStepLabelsEntry]] = js.undefined
   
   /**
     * Details when multiple steps are run with the same configuration as a
@@ -106,7 +104,7 @@ trait SchemaStep extends StObject {
     * create request: optional, set iff this step was performed more than once.
     * - In update request: optional
     */
-  var multiStep: js.UndefOr[SchemaMultiStep] = js.native
+  var multiStep: js.UndefOr[SchemaMultiStep] = js.undefined
   
   /**
     * A short human-readable name to display in the UI. Maximum of 100
@@ -118,14 +116,14 @@ trait SchemaStep extends StObject {
     * platforms, the two steps should have the same name.  - In response:
     * always set - In create request: always set - In update request: never set
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Classification of the result, for example into SUCCESS or FAILURE  - In
     * response: present if set by create/update request - In create/update
     * request: optional
     */
-  var outcome: js.UndefOr[SchemaOutcome] = js.native
+  var outcome: js.UndefOr[SchemaOutcome] = js.undefined
   
   /**
     * How long it took for this step to run.  If unset, this is set to the
@@ -139,7 +137,7 @@ trait SchemaStep extends StObject {
     * present if previously set; always present on COMPLETE step - In create
     * request: optional - In update request: optional
     */
-  var runDuration: js.UndefOr[SchemaDuration] = js.native
+  var runDuration: js.UndefOr[SchemaDuration] = js.undefined
   
   /**
     * The initial state is IN_PROGRESS. The only legal state transitions are *
@@ -150,24 +148,24 @@ trait SchemaStep extends StObject {
     * multiple times.  - In response: always set - In create/update request:
     * optional
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier within a Execution for this Step.  Returns
     * INVALID_ARGUMENT if this field is set or overwritten by the caller.  - In
     * response: always set - In create/update request: never set
     */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
   
   /**
     * An execution of a test runner.
     */
-  var testExecutionStep: js.UndefOr[SchemaTestExecutionStep] = js.native
+  var testExecutionStep: js.UndefOr[SchemaTestExecutionStep] = js.undefined
   
   /**
     * An execution of a tool (used for steps we don&#39;t explicitly support).
     */
-  var toolExecutionStep: js.UndefOr[SchemaToolExecutionStep] = js.native
+  var toolExecutionStep: js.UndefOr[SchemaToolExecutionStep] = js.undefined
 }
 object SchemaStep {
   

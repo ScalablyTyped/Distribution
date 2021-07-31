@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterExpressionList extends StObject {
   
   /** A list of filter expressions. */
-  var expressions: js.UndefOr[js.Array[FilterExpression]] = js.native
+  var expressions: js.UndefOr[js.Array[FilterExpression]] = js.undefined
 }
 object FilterExpressionList {
   

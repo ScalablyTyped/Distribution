@@ -2,17 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActivatedEventArgs extends StObject {
   
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
 object IActivatedEventArgs {
   

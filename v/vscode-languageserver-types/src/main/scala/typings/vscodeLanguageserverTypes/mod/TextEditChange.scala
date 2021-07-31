@@ -2,36 +2,34 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditChange extends StObject {
   
   /**
     * Adds a text edit.
     * @param edit the text edit to add.
     */
-  def add(edit: TextEdit): Unit = js.native
+  def add(edit: TextEdit): Unit
   
   /**
     * Gets all text edits for this change.
     *
     * @return An array of text edits.
     */
-  def all(): js.Array[TextEdit] = js.native
+  def all(): js.Array[TextEdit]
   
   /**
     * Clears the edits for this change.
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Delete the text at the given range.
     *
     * @param range A range.
     */
-  def delete(range: Range): Unit = js.native
+  def delete(range: Range): Unit
   
   /**
     * Insert the given text at the given position.
@@ -39,7 +37,7 @@ trait TextEditChange extends StObject {
     * @param position A position.
     * @param newText A string.
     */
-  def insert(position: Position, newText: String): Unit = js.native
+  def insert(position: Position, newText: String): Unit
   
   /**
     * Replace the given range with given text for the given resource.
@@ -47,7 +45,7 @@ trait TextEditChange extends StObject {
     * @param range A range.
     * @param newText A string.
     */
-  def replace(range: Range, newText: String): Unit = js.native
+  def replace(range: Range, newText: String): Unit
 }
 object TextEditChange {
   

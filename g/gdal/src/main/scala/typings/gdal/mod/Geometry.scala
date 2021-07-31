@@ -2,7 +2,6 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "Geometry")
@@ -78,9 +77,9 @@ abstract class Geometry () extends StObject {
   def toObject(): js.Object = js.native
   
   def toWKB(): Geometry = js.native
-  def toWKB(byte_order: js.UndefOr[scala.Nothing], variant: String): Geometry = js.native
   def toWKB(byte_order: String): Geometry = js.native
   def toWKB(byte_order: String, variant: String): Geometry = js.native
+  def toWKB(byte_order: Unit, variant: String): Geometry = js.native
   
   def toWKT(): Geometry = js.native
   
@@ -101,29 +100,26 @@ abstract class Geometry () extends StObject {
 /* static members */
 object Geometry {
   
-  @JSImport("gdal", "Geometry.create")
+  @JSImport("gdal", "Geometry")
   @js.native
-  def create(`type`: Double): Geometry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gdal", "Geometry.fromWKB")
-  @js.native
-  def fromWKB(wkb: Double): Geometry = js.native
-  @JSImport("gdal", "Geometry.fromWKB")
-  @js.native
-  def fromWKB(wkb: Double, srs: SpatialReference): Geometry = js.native
+  @scala.inline
+  def create(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @JSImport("gdal", "Geometry.fromWKT")
-  @js.native
-  def fromWKT(wkt: String): Geometry = js.native
-  @JSImport("gdal", "Geometry.fromWKT")
-  @js.native
-  def fromWKT(wkt: String, srs: SpatialReference): Geometry = js.native
+  @scala.inline
+  def fromWKB(wkb: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  @scala.inline
+  def fromWKB(wkb: Double, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @JSImport("gdal", "Geometry.getConstructor")
-  @js.native
-  def getConstructor(`type`: Double): Geometry = js.native
+  @scala.inline
+  def fromWKT(wkt: String): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  @scala.inline
+  def fromWKT(wkt: String, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @JSImport("gdal", "Geometry.getName")
-  @js.native
-  def getName(`type`: Double): String = js.native
+  @scala.inline
+  def getConstructor(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstructor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  
+  @scala.inline
+  def getName(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

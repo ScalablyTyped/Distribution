@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyObjectResult extends StObject {
   
   /**
     * Returns the ETag of the new object. The ETag reflects only changes to the contents of an object, not its metadata. The source and destination ETag is identical for a successfully copied object.
     */
-  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.native
+  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
   
   /**
     * Returns the date that the object was last modified.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
 }
 object CopyObjectResult {
   

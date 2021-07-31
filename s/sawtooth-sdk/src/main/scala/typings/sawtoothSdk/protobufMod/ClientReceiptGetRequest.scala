@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientReceiptGetRequest.
   * @param [properties] Properties to set
   */
-class ClientReceiptGetRequest () extends IClientReceiptGetRequest {
+class ClientReceiptGetRequest ()
+  extends StObject
+     with IClientReceiptGetRequest {
   def this(properties: IClientReceiptGetRequest) = this()
   
   /**
@@ -32,17 +33,19 @@ class ClientReceiptGetRequest () extends IClientReceiptGetRequest {
 /* static members */
 object ClientReceiptGetRequest {
   
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ClientReceiptGetRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientReceiptGetRequest instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.create")
-  @js.native
-  def create(): ClientReceiptGetRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.create")
-  @js.native
-  def create(properties: IClientReceiptGetRequest): ClientReceiptGetRequest = js.native
+  @scala.inline
+  def create(): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientReceiptGetRequest]
+  @scala.inline
+  def create(properties: IClientReceiptGetRequest): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientReceiptGetRequest]
   
   /**
     * Decodes a ClientReceiptGetRequest message from the specified reader or buffer.
@@ -52,18 +55,14 @@ object ClientReceiptGetRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.decode")
-  @js.native
-  def decode(reader: Reader): ClientReceiptGetRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ClientReceiptGetRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ClientReceiptGetRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ClientReceiptGetRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientReceiptGetRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ClientReceiptGetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientReceiptGetRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientReceiptGetRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ClientReceiptGetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientReceiptGetRequest]
   
   /**
     * Decodes a ClientReceiptGetRequest message from the specified reader or buffer, length delimited.
@@ -72,12 +71,10 @@ object ClientReceiptGetRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ClientReceiptGetRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ClientReceiptGetRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientReceiptGetRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientReceiptGetRequest]
   
   /**
     * Encodes the specified ClientReceiptGetRequest message. Does not implicitly {@link ClientReceiptGetRequest.verify|verify} messages.
@@ -85,12 +82,10 @@ object ClientReceiptGetRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.encode")
-  @js.native
-  def encode(message: IClientReceiptGetRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.encode")
-  @js.native
-  def encode(message: IClientReceiptGetRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientReceiptGetRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientReceiptGetRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientReceiptGetRequest message, length delimited. Does not implicitly {@link ClientReceiptGetRequest.verify|verify} messages.
@@ -98,21 +93,18 @@ object ClientReceiptGetRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientReceiptGetRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientReceiptGetRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientReceiptGetRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientReceiptGetRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientReceiptGetRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientReceiptGetRequest
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ClientReceiptGetRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ClientReceiptGetRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientReceiptGetRequest]
   
   /**
     * Creates a plain object from a ClientReceiptGetRequest message. Also converts values to other types if specified.
@@ -120,19 +112,16 @@ object ClientReceiptGetRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.toObject")
-  @js.native
-  def toObject(message: ClientReceiptGetRequest): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.toObject")
-  @js.native
-  def toObject(message: ClientReceiptGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ClientReceiptGetRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ClientReceiptGetRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientReceiptGetRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

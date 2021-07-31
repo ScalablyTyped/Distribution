@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: Mailbox 1.7]
   */
-@js.native
 trait RecipientsChangedFields extends StObject {
   
   /**
@@ -18,42 +16,42 @@ trait RecipientsChangedFields extends StObject {
     *
     * [Api set: Mailbox 1.7]
     */
-  var bcc: Boolean = js.native
+  var bcc: Boolean
   
   /**
     * Gets if recipients in the **cc** field were changed.
     *
     * [Api set: Mailbox 1.7]
     */
-  var cc: Boolean = js.native
+  var cc: Boolean
   
   /**
     * Gets if optional attendees were changed.
     *
     * [Api set: Mailbox 1.7]
     */
-  var optionalAttendees: Boolean = js.native
+  var optionalAttendees: Boolean
   
   /**
     * Gets if required attendees were changed.
     *
     * [Api set: Mailbox 1.7]
     */
-  var requiredAttendees: Boolean = js.native
+  var requiredAttendees: Boolean
   
   /**
     * Gets if resources were changed.
     *
     * [Api set: Mailbox 1.7]
     */
-  var resources: Boolean = js.native
+  var resources: Boolean
   
   /**
     * Gets if recipients in the **to** field were changed.
     *
     * [Api set: Mailbox 1.7]
     */
-  var to: Boolean = js.native
+  var to: Boolean
 }
 object RecipientsChangedFields {
   

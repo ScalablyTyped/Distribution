@@ -2,32 +2,30 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a response to a SQL statement.
   */
-@js.native
 trait SchemaSqlresponse extends StObject {
   
   /**
     * Columns in the table.
     */
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The kind of item this is. For responses to SQL queries, this is always
     * fusiontables#sqlresponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The rows in the table. For each cell we print out whatever cell value
     * (e.g., numeric, string) exists. Thus it is important that each cell
     * contains only one value.
     */
-  var rows: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object SchemaSqlresponse {
   
@@ -56,7 +54,7 @@ object SchemaSqlresponse {
     def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

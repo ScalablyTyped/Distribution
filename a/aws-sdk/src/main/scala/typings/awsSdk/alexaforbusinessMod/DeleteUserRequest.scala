@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserRequest extends StObject {
   
   /**
     * The ARN of the user's enrollment in the organization. Required.
     */
-  var EnrollmentId: typings.awsSdk.alexaforbusinessMod.EnrollmentId = js.native
+  var EnrollmentId: typings.awsSdk.alexaforbusinessMod.EnrollmentId
   
   /**
     * The ARN of the user to delete in the organization. Required.
     */
-  var UserArn: js.UndefOr[Arn] = js.native
+  var UserArn: js.UndefOr[Arn] = js.undefined
 }
 object DeleteUserRequest {
   

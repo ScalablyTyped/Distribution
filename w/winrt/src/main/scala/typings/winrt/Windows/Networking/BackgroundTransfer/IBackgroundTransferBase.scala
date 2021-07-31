@@ -3,23 +3,21 @@ package typings.winrt.Windows.Networking.BackgroundTransfer
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTransferBase extends StObject {
   
-  var costPolicy: BackgroundTransferCostPolicy = js.native
+  var costPolicy: BackgroundTransferCostPolicy
   
-  var group: String = js.native
+  var group: String
   
-  var method: String = js.native
+  var method: String
   
-  var proxyCredential: PasswordCredential = js.native
+  var proxyCredential: PasswordCredential
   
-  var serverCredential: PasswordCredential = js.native
+  var serverCredential: PasswordCredential
   
-  def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
+  def setRequestHeader(headerName: String, headerValue: String): Unit
 }
 object IBackgroundTransferBase {
   

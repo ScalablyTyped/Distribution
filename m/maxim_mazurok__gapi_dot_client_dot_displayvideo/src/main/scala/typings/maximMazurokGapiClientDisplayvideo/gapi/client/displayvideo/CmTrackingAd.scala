@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CmTrackingAd extends StObject {
   
   /** The ad ID of the campaign manager 360 tracking Ad. */
-  var cmAdId: js.UndefOr[String] = js.native
+  var cmAdId: js.UndefOr[String] = js.undefined
   
   /** The creative ID of the campaign manager 360 tracking Ad. */
-  var cmCreativeId: js.UndefOr[String] = js.native
+  var cmCreativeId: js.UndefOr[String] = js.undefined
   
   /** The placement ID of the campaign manager 360 tracking Ad. */
-  var cmPlacementId: js.UndefOr[String] = js.native
+  var cmPlacementId: js.UndefOr[String] = js.undefined
 }
 object CmTrackingAd {
   

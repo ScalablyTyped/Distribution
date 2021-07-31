@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 import typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains info for the app's activated event when the app is launched through a voice command. */
-@js.native
 trait VoiceCommandActivatedEventArgs extends StObject {
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the SpeechRecognitionResult object representing the voice command that activated the app. */
-  var result: SpeechRecognitionResult = js.native
+  var result: SpeechRecognitionResult
   
   /** Gets info about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
 object VoiceCommandActivatedEventArgs {
   

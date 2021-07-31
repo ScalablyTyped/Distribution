@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.StateChange.Type
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "StateChange")
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StateChange.
   * @param [properties] Properties to set
   */
-class StateChange () extends IStateChange {
+class StateChange ()
+  extends StObject
+     with IStateChange {
   def this(properties: IStateChange) = this()
   
   /** StateChange address. */
@@ -41,6 +42,10 @@ class StateChange () extends IStateChange {
 /* static members */
 object StateChange {
   
+  @JSImport("sawtooth-sdk/protobuf", "StateChange")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Type extends StObject
   /** Type enum. */
@@ -49,19 +54,25 @@ object StateChange {
   object Type extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Type with Double] = js.native
+    def apply(value: Double): js.UndefOr[Type & Double] = js.native
     
     @js.native
-    sealed trait DELETE extends Type
-    /* 2 */ val DELETE: typings.sawtoothSdk.protobufMod.StateChange.Type.DELETE with Double = js.native
+    sealed trait DELETE
+      extends StObject
+         with Type
+    /* 2 */ val DELETE: typings.sawtoothSdk.protobufMod.StateChange.Type.DELETE & Double = js.native
     
     @js.native
-    sealed trait SET extends Type
-    /* 1 */ val SET: typings.sawtoothSdk.protobufMod.StateChange.Type.SET with Double = js.native
+    sealed trait SET
+      extends StObject
+         with Type
+    /* 1 */ val SET: typings.sawtoothSdk.protobufMod.StateChange.Type.SET & Double = js.native
     
     @js.native
-    sealed trait TYPE_UNSET extends Type
-    /* 0 */ val TYPE_UNSET: typings.sawtoothSdk.protobufMod.StateChange.Type.TYPE_UNSET with Double = js.native
+    sealed trait TYPE_UNSET
+      extends StObject
+         with Type
+    /* 0 */ val TYPE_UNSET: typings.sawtoothSdk.protobufMod.StateChange.Type.TYPE_UNSET & Double = js.native
   }
   
   /**
@@ -69,12 +80,10 @@ object StateChange {
     * @param [properties] Properties to set
     * @returns StateChange instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.create")
-  @js.native
-  def create(): StateChange = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.create")
-  @js.native
-  def create(properties: IStateChange): StateChange = js.native
+  @scala.inline
+  def create(): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StateChange]
+  @scala.inline
+  def create(properties: IStateChange): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   
   /**
     * Decodes a StateChange message from the specified reader or buffer.
@@ -84,18 +93,14 @@ object StateChange {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.decode")
-  @js.native
-  def decode(reader: Reader): StateChange = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): StateChange = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.decode")
-  @js.native
-  def decode(reader: Uint8Array): StateChange = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): StateChange = js.native
+  @scala.inline
+  def decode(reader: Reader): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
+  @scala.inline
+  def decode(reader: Reader, length: Double): StateChange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChange]
+  @scala.inline
+  def decode(reader: Uint8Array): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): StateChange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChange]
   
   /**
     * Decodes a StateChange message from the specified reader or buffer, length delimited.
@@ -104,12 +109,10 @@ object StateChange {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): StateChange = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): StateChange = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   
   /**
     * Encodes the specified StateChange message. Does not implicitly {@link StateChange.verify|verify} messages.
@@ -117,12 +120,10 @@ object StateChange {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.encode")
-  @js.native
-  def encode(message: IStateChange): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.encode")
-  @js.native
-  def encode(message: IStateChange, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IStateChange): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IStateChange, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StateChange message, length delimited. Does not implicitly {@link StateChange.verify|verify} messages.
@@ -130,21 +131,18 @@ object StateChange {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStateChange): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStateChange, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IStateChange): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IStateChange, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StateChange message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns StateChange
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): StateChange = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   
   /**
     * Creates a plain object from a StateChange message. Also converts values to other types if specified.
@@ -152,19 +150,16 @@ object StateChange {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.toObject")
-  @js.native
-  def toObject(message: StateChange): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.toObject")
-  @js.native
-  def toObject(message: StateChange, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: StateChange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: StateChange, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StateChange message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "StateChange.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

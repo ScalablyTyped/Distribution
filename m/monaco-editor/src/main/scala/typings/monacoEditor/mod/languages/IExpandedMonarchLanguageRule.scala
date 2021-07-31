@@ -3,26 +3,24 @@ package typings.monacoEditor.mod.languages
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExpandedMonarchLanguageRule extends StObject {
   
   /**
     * action to take on match
     */
-  var action: js.UndefOr[IMonarchLanguageAction] = js.native
+  var action: js.UndefOr[IMonarchLanguageAction] = js.undefined
   
   /**
     * or an include rule. include all rules from the included state
     */
-  var include: js.UndefOr[String] = js.native
+  var include: js.UndefOr[String] = js.undefined
   
   /**
     * match tokens
     */
-  var regex: js.UndefOr[String | RegExp] = js.native
+  var regex: js.UndefOr[String | RegExp] = js.undefined
 }
 object IExpandedMonarchLanguageRule {
   

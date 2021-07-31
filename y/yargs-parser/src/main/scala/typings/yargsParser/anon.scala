@@ -2,19 +2,17 @@ package typings.yargsParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Boolean extends StObject {
     
-    var boolean: js.UndefOr[scala.Boolean] = js.native
+    var boolean: js.UndefOr[scala.Boolean] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var number: js.UndefOr[scala.Boolean] = js.native
+    var number: js.UndefOr[scala.Boolean] = js.undefined
   }
   object Boolean {
     
@@ -45,38 +43,37 @@ object anon {
   }
   
   /* Inlined std.Partial<yargs-parser.yargs-parser.Configuration> */
-  @js.native
   trait PartialConfiguration extends StObject {
     
-    var `boolean-negation`: js.UndefOr[scala.Boolean] = js.native
+    var `boolean-negation`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `camel-case-expansion`: js.UndefOr[scala.Boolean] = js.native
+    var `camel-case-expansion`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `combine-arrays`: js.UndefOr[scala.Boolean] = js.native
+    var `combine-arrays`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `dot-notation`: js.UndefOr[scala.Boolean] = js.native
+    var `dot-notation`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `duplicate-arguments-array`: js.UndefOr[scala.Boolean] = js.native
+    var `duplicate-arguments-array`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `flatten-duplicate-arrays`: js.UndefOr[scala.Boolean] = js.native
+    var `flatten-duplicate-arrays`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `halt-at-non-option`: js.UndefOr[scala.Boolean] = js.native
+    var `halt-at-non-option`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `negation-prefix`: js.UndefOr[String] = js.native
+    var `negation-prefix`: js.UndefOr[String] = js.undefined
     
-    var `parse-numbers`: js.UndefOr[scala.Boolean] = js.native
+    var `parse-numbers`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `populate--`: js.UndefOr[scala.Boolean] = js.native
+    var `populate--`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `set-placeholder-key`: js.UndefOr[scala.Boolean] = js.native
+    var `set-placeholder-key`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `short-option-groups`: js.UndefOr[scala.Boolean] = js.native
+    var `short-option-groups`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `strip-aliased`: js.UndefOr[scala.Boolean] = js.native
+    var `strip-aliased`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `strip-dashed`: js.UndefOr[scala.Boolean] = js.native
+    var `strip-dashed`: js.UndefOr[scala.Boolean] = js.undefined
     
-    var `unknown-options-as-args`: js.UndefOr[scala.Boolean] = js.native
+    var `unknown-options-as-args`: js.UndefOr[scala.Boolean] = js.undefined
   }
   object PartialConfiguration {
     

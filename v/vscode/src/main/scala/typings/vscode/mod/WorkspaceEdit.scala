@@ -4,7 +4,6 @@ import typings.vscode.anon.IgnoreIfExists
 import typings.vscode.anon.IgnoreIfNotExists
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "WorkspaceEdit")
@@ -22,7 +21,7 @@ class WorkspaceEdit () extends StObject {
     * @param metadata Optional metadata for the entry.
     */
   def createFile(uri: Uri): Unit = js.native
-  def createFile(uri: Uri, options: js.UndefOr[scala.Nothing], metadata: WorkspaceEditEntryMetadata): Unit = js.native
+  def createFile(uri: Uri, options: Unit, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   def createFile(uri: Uri, options: IgnoreIfExists): Unit = js.native
   def createFile(uri: Uri, options: IgnoreIfExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   
@@ -43,7 +42,7 @@ class WorkspaceEdit () extends StObject {
     * @param metadata Optional metadata for the entry.
     */
   def deleteFile(uri: Uri): Unit = js.native
-  def deleteFile(uri: Uri, options: js.UndefOr[scala.Nothing], metadata: WorkspaceEditEntryMetadata): Unit = js.native
+  def deleteFile(uri: Uri, options: Unit, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   def deleteFile(uri: Uri, options: IgnoreIfNotExists): Unit = js.native
   def deleteFile(uri: Uri, options: IgnoreIfNotExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   
@@ -91,7 +90,7 @@ class WorkspaceEdit () extends StObject {
     * @param metadata Optional metadata for the entry.
     */
   def renameFile(oldUri: Uri, newUri: Uri): Unit = js.native
-  def renameFile(oldUri: Uri, newUri: Uri, options: js.UndefOr[scala.Nothing], metadata: WorkspaceEditEntryMetadata): Unit = js.native
+  def renameFile(oldUri: Uri, newUri: Uri, options: Unit, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   def renameFile(oldUri: Uri, newUri: Uri, options: IgnoreIfExists): Unit = js.native
   def renameFile(oldUri: Uri, newUri: Uri, options: IgnoreIfExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   

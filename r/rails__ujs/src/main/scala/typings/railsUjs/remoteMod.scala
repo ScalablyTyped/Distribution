@@ -3,20 +3,20 @@ package typings.railsUjs
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteMod {
   
-  @JSImport("@rails/ujs/features/remote", "formSubmitButtonClick")
+  @JSImport("@rails/ujs/features/remote", JSImport.Namespace)
   @js.native
-  def formSubmitButtonClick(e: Event): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@rails/ujs/features/remote", "handleRemote")
-  @js.native
-  def handleRemote(e: Event): Unit = js.native
+  @scala.inline
+  def formSubmitButtonClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formSubmitButtonClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@rails/ujs/features/remote", "preventInsignificantClick")
-  @js.native
-  def preventInsignificantClick(e: Event): Unit = js.native
+  @scala.inline
+  def handleRemote(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRemote")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def preventInsignificantClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventInsignificantClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

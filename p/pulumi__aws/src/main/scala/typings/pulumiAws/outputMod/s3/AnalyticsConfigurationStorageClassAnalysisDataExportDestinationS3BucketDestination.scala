@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination extends StObject {
   
   /**
     * The account ID that owns the destination bucket.
     */
-  var bucketAccountId: js.UndefOr[String] = js.native
+  var bucketAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the destination bucket.
     */
-  var bucketArn: String = js.native
+  var bucketArn: String
   
   /**
     * The output format of exported analytics data. Allowed values: `CSV`. Default value: `CSV`.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Object prefix for filtering.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination {
   

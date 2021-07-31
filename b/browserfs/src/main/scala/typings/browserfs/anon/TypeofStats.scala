@@ -12,34 +12,34 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofStats
-  extends Instantiable2[/* itemType */ FileType, /* size */ Double, default]
+  extends StObject
+     with Instantiable2[/* itemType */ FileType, /* size */ Double, default]
      with Instantiable3[/* itemType */ FileType, /* size */ Double, /* mode */ Double, default]
      with Instantiable4[
       /* itemType */ FileType, 
       /* size */ Double, 
-      js.UndefOr[/* mode */ Double], 
+      (/* mode */ Double) | (/* mode */ Unit), 
       /* atime */ Date, 
       default
     ]
      with Instantiable5[
       /* itemType */ FileType, 
       /* size */ Double, 
-      js.UndefOr[/* mode */ Double], 
-      js.UndefOr[/* atime */ Date], 
+      (/* mode */ Double) | (/* mode */ Unit), 
+      (/* atime */ Date) | (/* atime */ Unit), 
       /* mtime */ Date, 
       default
     ]
      with Instantiable6[
       /* itemType */ FileType, 
       /* size */ Double, 
-      js.UndefOr[/* mode */ Double], 
-      js.UndefOr[/* atime */ Date], 
-      js.UndefOr[/* mtime */ Date], 
+      (/* mode */ Double) | (/* mode */ Unit), 
+      (/* atime */ Date) | (/* atime */ Unit), 
+      (/* mtime */ Date) | (/* mtime */ Unit), 
       /* ctime */ Date, 
       default
     ] {

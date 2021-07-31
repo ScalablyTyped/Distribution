@@ -2,40 +2,38 @@ package typings.jestTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testResultMod {
   
-  @js.native
   trait AssertionResult extends StObject {
     
-    var ancestorTitles: js.Array[String] = js.native
+    var ancestorTitles: js.Array[String]
     
-    var duration: js.UndefOr[Milliseconds | Null] = js.native
+    var duration: js.UndefOr[Milliseconds | Null] = js.undefined
     
-    var failureDetails: js.Array[_] = js.native
+    var failureDetails: js.Array[js.Any]
     
-    var failureMessages: js.Array[String] = js.native
+    var failureMessages: js.Array[String]
     
-    var fullName: String = js.native
+    var fullName: String
     
-    var invocations: js.UndefOr[Double] = js.native
+    var invocations: js.UndefOr[Double] = js.undefined
     
-    var location: js.UndefOr[Callsite | Null] = js.native
+    var location: js.UndefOr[Callsite | Null] = js.undefined
     
-    var numPassingAsserts: Double = js.native
+    var numPassingAsserts: Double
     
-    var status: Status = js.native
+    var status: Status
     
-    var title: String = js.native
+    var title: String
   }
   object AssertionResult {
     
     @scala.inline
     def apply(
       ancestorTitles: js.Array[String],
-      failureDetails: js.Array[_],
+      failureDetails: js.Array[js.Any],
       failureMessages: js.Array[String],
       fullName: String,
       numPassingAsserts: Double,
@@ -65,7 +63,7 @@ object testResultMod {
       def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
       @scala.inline
-      def setFailureDetails(value: js.Array[_]): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
+      def setFailureDetails(value: js.Array[js.Any]): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFailureDetailsVarargs(value: js.Any*): Self = StObject.set(x, "failureDetails", js.Array(value :_*))
@@ -105,12 +103,11 @@ object testResultMod {
     }
   }
   
-  @js.native
   trait Callsite extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Callsite {
     
@@ -133,16 +130,15 @@ object testResultMod {
   
   type Milliseconds = Double
   
-  @js.native
   trait SerializableError extends StObject {
     
-    var code: js.UndefOr[js.Any] = js.native
+    var code: js.UndefOr[js.Any] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var stack: js.UndefOr[String | Null] = js.native
+    var stack: js.UndefOr[String | Null] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SerializableError {
     

@@ -3,14 +3,12 @@ package typings.rcSlider.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<rc-slider.rc-slider/lib/createSliderWithTooltip.ComponentWrapperState> */
-@js.native
 trait ReadonlyComponentWrapperS extends StObject {
   
-  val visibles: Record[Double, Boolean] = js.native
+  val visibles: Record[Double, Boolean]
 }
 object ReadonlyComponentWrapperS {
   

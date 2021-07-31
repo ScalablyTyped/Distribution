@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFloatingActionButton.ActionItemClick event.
   */
-@js.native
-trait ASPxClientFloatingActionButtonActionItemClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFloatingActionButtonActionItemClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the processed action.
     */
-  var actionName: String = js.native
+  var actionName: String
 }
 object ASPxClientFloatingActionButtonActionItemClickEventArgs {
   

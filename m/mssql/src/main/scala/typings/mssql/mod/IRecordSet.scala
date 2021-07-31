@@ -3,11 +3,12 @@ package typings.mssql.mod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRecordSet[T] extends Array[T] {
+trait IRecordSet[T]
+  extends StObject
+     with Array[T] {
   
   var columns: IColumnMetadata = js.native
   

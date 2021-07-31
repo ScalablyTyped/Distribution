@@ -9,9 +9,9 @@ it's gulp + nodemon + convenience
 | ------------------ | :-------------: |
 | Full name          | gulp-nodemon |
 | Keywords           | gulp, nodemon, develop, server, restart, automatically, watch, gulpfriendly, gulpplugin |
-| # releases         | 4 |
-| # dependents       | 171 |
-| # downloads        | 2811488 |
+| # releases         | 2 |
+| # dependents       | 172 |
+| # downloads        | 2718655 |
 | # stars            | 83 |
 
 ## Links

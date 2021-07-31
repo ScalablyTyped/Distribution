@@ -7,19 +7,19 @@ import typings.xstate.typesMod.InvokeDefinition
 import typings.xstate.typesMod.InvokeSourceDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invokeUtilsMod {
   
-  @JSImport("xstate/lib/invokeUtils", "toInvokeDefinition")
+  @JSImport("xstate/lib/invokeUtils", JSImport.Namespace)
   @js.native
-  def toInvokeDefinition[TContext, TEvent /* <: EventObject */](invokeConfig: (InvokeConfig[TContext, TEvent]) with Src): InvokeDefinition[TContext, TEvent] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xstate/lib/invokeUtils", "toInvokeSource")
-  @js.native
-  def toInvokeSource(src: String): InvokeSourceDefinition = js.native
-  @JSImport("xstate/lib/invokeUtils", "toInvokeSource")
-  @js.native
-  def toInvokeSource(src: InvokeSourceDefinition): InvokeSourceDefinition = js.native
+  @scala.inline
+  def toInvokeDefinition[TContext, TEvent /* <: EventObject */](invokeConfig: (InvokeConfig[TContext, TEvent]) & Src): InvokeDefinition[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeDefinition")(invokeConfig.asInstanceOf[js.Any]).asInstanceOf[InvokeDefinition[TContext, TEvent]]
+  
+  @scala.inline
+  def toInvokeSource(src: String): InvokeSourceDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeSource")(src.asInstanceOf[js.Any]).asInstanceOf[InvokeSourceDefinition]
+  @scala.inline
+  def toInvokeSource(src: InvokeSourceDefinition): InvokeSourceDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeSource")(src.asInstanceOf[js.Any]).asInstanceOf[InvokeSourceDefinition]
 }

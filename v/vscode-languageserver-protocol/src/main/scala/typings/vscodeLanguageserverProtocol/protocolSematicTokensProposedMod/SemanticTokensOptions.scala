@@ -4,27 +4,27 @@ import typings.vscodeLanguageserverProtocol.anon.Edits
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SemanticTokensOptions extends WorkDoneProgressOptions {
+trait SemanticTokensOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * Server supports providing semantic tokens for a full document.
     */
-  var documentProvider: js.UndefOr[Boolean | Edits] = js.native
+  var documentProvider: js.UndefOr[Boolean | Edits] = js.undefined
   
   /**
     * The legend used by the server
     */
-  var legend: SemanticTokensLegend = js.native
+  var legend: SemanticTokensLegend
   
   /**
     * Server supports providing semantic tokens for a sepcific range
     * of a document.
     */
-  var rangeProvider: js.UndefOr[Boolean] = js.native
+  var rangeProvider: js.UndefOr[Boolean] = js.undefined
 }
 object SemanticTokensOptions {
   

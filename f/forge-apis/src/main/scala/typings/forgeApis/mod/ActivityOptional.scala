@@ -2,31 +2,29 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityOptional extends StObject {
   
-  var AllowedChildProcesses: js.UndefOr[js.Array[js.Object]] = js.native
+  var AllowedChildProcesses: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var AppPackages: js.UndefOr[js.Array[String]] = js.native
+  var AppPackages: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
-  var HostApplication: js.UndefOr[String] = js.native
+  var HostApplication: js.UndefOr[String] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var Instruction: js.UndefOr[js.Object] = js.native
+  var Instruction: js.UndefOr[js.Object] = js.undefined
   
-  var IsPublic: js.UndefOr[Boolean] = js.native
+  var IsPublic: js.UndefOr[Boolean] = js.undefined
   
-  var Parameters: js.UndefOr[js.Object] = js.native
+  var Parameters: js.UndefOr[js.Object] = js.undefined
   
-  var RequiredEngineVersion: js.UndefOr[String] = js.native
+  var RequiredEngineVersion: js.UndefOr[String] = js.undefined
   
-  var Version: js.UndefOr[Double] = js.native
+  var Version: js.UndefOr[Double] = js.undefined
 }
 object ActivityOptional {
   

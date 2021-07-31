@@ -1,16 +1,19 @@
 package typings.egjsAxes
 
 import typings.egjsAxes.inputTypeMod.IInputType
+import typings.egjsAxes.inputTypeMod.IInputTypeObserver
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wheelInputMod {
   
   @JSImport("@egjs/axes/inputType/WheelInput", "WheelInput")
   @js.native
-  class WheelInput protected () extends IInputType {
+  class WheelInput protected ()
+    extends StObject
+       with IInputType {
     def this(el: js.Any) = this()
     def this(el: js.Any, options: WheelInputOption) = this()
     
@@ -20,16 +23,34 @@ object wheelInputMod {
     
     /* private */ def attachEvent(observer: js.Any): js.Any = js.native
     
+    /* CompleteClass */
+    var axes: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def connect(observer: IInputTypeObserver): IInputType = js.native
+    
+    /* CompleteClass */
+    override def destroy(): js.Any = js.native
+    
     /* private */ def dettachEvent(): js.Any = js.native
     
     @JSName("disable")
     def disable_MWheelInput(): this.type = js.native
+    
+    /* CompleteClass */
+    override def disconnect(): js.Any = js.native
+    
+    /* CompleteClass */
+    var element: HTMLElement = js.native
     
     @JSName("enable")
     def enable_MWheelInput(): this.type = js.native
     
     @JSName("isEnable")
     def isEnable_MWheelInput(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def mapAxes(axes: js.Array[String]): js.Any = js.native
     
     var observer: js.Any = js.native
     
@@ -38,12 +59,11 @@ object wheelInputMod {
     var options: WheelInputOption = js.native
   }
   
-  @js.native
   trait WheelInputOption extends StObject {
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object WheelInputOption {
     

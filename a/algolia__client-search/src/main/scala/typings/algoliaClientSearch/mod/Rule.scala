@@ -2,10 +2,8 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
@@ -13,38 +11,38 @@ trait Rule extends StObject {
     *
     * @deprecated This parameter is deprecated in favor of `conditions`.
     */
-  val condition: js.UndefOr[Condition] = js.native
+  val condition: js.UndefOr[Condition] = js.undefined
   
   /**
     * Conditions of the rule, expressed using the following variables: pattern, anchoring, context.
     */
-  val conditions: js.UndefOr[js.Array[Condition]] = js.native
+  val conditions: js.UndefOr[js.Array[Condition]] = js.undefined
   
   /**
     * Consequence of the rule. At least one of the following object must be used: params, promote, hide, userData.
     */
-  val consequence: js.UndefOr[Consequence] = js.native
+  val consequence: js.UndefOr[Consequence] = js.undefined
   
   /**
     * This field is intended for rule management purposes, in particular to ease searching for rules and presenting them to human readers. It is not interpreted by the API.
     */
-  val description: js.UndefOr[String] = js.native
+  val description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the rule is enabled. Disabled rules remain in the index, but are not applied at query time.
     */
-  val enabled: js.UndefOr[Boolean] = js.native
+  val enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Unique identifier for the rule (format: [A-Za-z0-9_-]+).
     */
-  val objectID: String = js.native
+  val objectID: String
   
   /**
     * By default, rules are permanently valid. When validity periods are specified, the rule applies only during those periods; it is ignored the rest of the time.
     * The list must not be empty.
     */
-  val validity: js.UndefOr[js.Array[TimeRange]] = js.native
+  val validity: js.UndefOr[js.Array[TimeRange]] = js.undefined
 }
 object Rule {
   

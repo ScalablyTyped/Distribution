@@ -6,15 +6,15 @@ import typings.vegaTypings.scaleMod.SortOrder
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Order extends Compare {
+trait Order
+  extends StObject
+     with Compare {
   
-  var field: String | ExprRef | SignalRef = js.native
+  var field: String | ExprRef | SignalRef
   
-  var order: js.UndefOr[SortOrder] = js.native
+  var order: js.UndefOr[SortOrder] = js.undefined
 }
 object Order {
   

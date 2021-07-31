@@ -2,21 +2,19 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolylineDrawActionRedoEvent extends StObject {
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var vertexIndex: Double = js.native
+  var vertexIndex: Double
   
-  var vertices: js.Array[js.Array[Double]] = js.native
+  var vertices: js.Array[js.Array[Double]]
 }
 object PolylineDrawActionRedoEvent {
   

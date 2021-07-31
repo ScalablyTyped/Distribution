@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,9 +14,9 @@ trait Module extends StObject {
   val CodeName: String = js.native
   
   def Copy(): Unit = js.native
-  def Copy(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Copy(Before: js.Any): Unit = js.native
   def Copy(Before: js.Any, After: js.Any): Unit = js.native
+  def Copy(Before: Unit, After: js.Any): Unit = js.native
   
   val Creator: XlCreator = js.native
   
@@ -32,9 +31,9 @@ trait Module extends StObject {
   def InsertFile(Filename: js.Any, Merge: js.Any): js.Any = js.native
   
   def Move(): Unit = js.native
-  def Move(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Move(Before: js.Any): Unit = js.native
   def Move(Before: js.Any, After: js.Any): Unit = js.native
+  def Move(Before: Unit, After: js.Any): Unit = js.native
   
   var Name: String = js.native
   
@@ -63,145 +62,9 @@ trait Module extends StObject {
   ): Unit = js.native
   
   def Protect(): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def Protect(Password: js.Any): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def Protect(Password: js.Any, DrawingObjects: js.Any): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.UndefOr[scala.Nothing], Scenarios: js.Any): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
   def Protect(
     Password: js.Any,
@@ -210,6 +73,92 @@ trait Module extends StObject {
     Scenarios: js.Any,
     UserInterfaceOnly: js.Any
   ): Unit = js.native
+  def Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: js.Any, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
+  def Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any, UserInterfaceOnly: js.Any): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
   
   val ProtectContents: Boolean = js.native
   
@@ -253,145 +202,9 @@ trait Module extends StObject {
   ): Unit = js.native
   
   def _Protect(): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.UndefOr[scala.Nothing], Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
   def _Protect(
     Password: js.Any,
@@ -400,6 +213,92 @@ trait Module extends StObject {
     Scenarios: js.Any,
     UserInterfaceOnly: js.Any
   ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
   
   def _SaveAs(
     Filename: String,

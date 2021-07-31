@@ -2,33 +2,31 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopePurgeConfiguration extends StObject {
   
   /**
     * When set to **true**, purging is enabled.
     */
-  var purgeEnvelopes: js.UndefOr[String] = js.native
+  var purgeEnvelopes: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the system also redacts personally identifiable information (PII).
     *
     * **Note**: To redact PII, you must also set the property `removeTabsAndEnvelopeAttachments` to **true**.
     */
-  var redactPII: js.UndefOr[String] = js.native
+  var redactPII: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the system also purges the tabs and attachments associated with the envelopes.
     */
-  var removeTabsAndEnvelopeAttachments: js.UndefOr[String] = js.native
+  var removeTabsAndEnvelopeAttachments: js.UndefOr[String] = js.undefined
   
   /**
     * The number of days to retain envelope documents before purging them. This value must be a number between `0` and `999`.
     */
-  var retentionDays: js.UndefOr[String] = js.native
+  var retentionDays: js.UndefOr[String] = js.undefined
 }
 object EnvelopePurgeConfiguration {
   

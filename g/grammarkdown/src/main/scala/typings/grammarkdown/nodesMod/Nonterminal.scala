@@ -3,7 +3,6 @@ package typings.grammarkdown.nodesMod
 import typings.grammarkdown.tokensMod.SyntaxKind.QuestionToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "Nonterminal")
@@ -14,7 +13,7 @@ class Nonterminal protected ()
      with _ProseFragment {
   def this(name: Identifier) = this()
   def this(name: Identifier, argumentList: ArgumentList) = this()
-  def this(name: Identifier, argumentList: js.UndefOr[scala.Nothing], questionToken: Token[QuestionToken]) = this()
+  def this(name: Identifier, argumentList: Unit, questionToken: Token[QuestionToken]) = this()
   def this(name: Identifier, argumentList: ArgumentList, questionToken: Token[QuestionToken]) = this()
   
   val argumentList: js.UndefOr[ArgumentList] = js.native

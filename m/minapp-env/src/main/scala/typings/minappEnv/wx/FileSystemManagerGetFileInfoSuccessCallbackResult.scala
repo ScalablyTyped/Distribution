@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemManagerGetFileInfoSuccessCallbackResult extends StObject {
   
   /** 文件大小，以字节为单位 */
-  var size: Double = js.native
+  var size: Double
 }
 object FileSystemManagerGetFileInfoSuccessCallbackResult {
   

@@ -8,12 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface extends the base {@link XStorage} interface. */
-@js.native
-trait XStorage2 extends XStorage {
+trait XStorage2
+  extends StObject
+     with XStorage {
   
   /**
     * allows to get readonly copy of a child encrypted stream with encryption data.
@@ -32,7 +32,7 @@ trait XStorage2 extends XStorage {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def cloneEncryptedStream(sStreamName: String, aEncryptionData: SeqEquiv[NamedValue]): XStream = js.native
+  def cloneEncryptedStream(sStreamName: String, aEncryptionData: SeqEquiv[NamedValue]): XStream
   
   /**
     * allows to get access to a child encrypted stream with EncryptionData.
@@ -50,7 +50,7 @@ trait XStorage2 extends XStorage {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openEncryptedStream(sStreamName: String, nOpenMode: Double, aEncryptionData: SeqEquiv[NamedValue]): XStream = js.native
+  def openEncryptedStream(sStreamName: String, nOpenMode: Double, aEncryptionData: SeqEquiv[NamedValue]): XStream
 }
 object XStorage2 {
   

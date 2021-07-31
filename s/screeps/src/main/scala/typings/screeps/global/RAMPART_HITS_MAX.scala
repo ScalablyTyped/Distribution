@@ -9,7 +9,6 @@ import typings.screeps.screepsNumbers.`3000000`
 import typings.screeps.screepsNumbers.`300000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RAMPART_HITS_MAX {

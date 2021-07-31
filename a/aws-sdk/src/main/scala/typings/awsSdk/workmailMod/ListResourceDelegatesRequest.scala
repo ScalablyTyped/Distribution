@@ -2,31 +2,29 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourceDelegatesRequest extends StObject {
   
   /**
     * The number of maximum results in a page.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.workmailMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.workmailMod.MaxResults] = js.undefined
   
   /**
     * The token used to paginate through the delegates associated with a resource.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
   
   /**
     * The identifier for the organization that contains the resource for which delegates are listed.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier for the resource whose delegates are listed.
     */
-  var ResourceId: WorkMailIdentifier = js.native
+  var ResourceId: WorkMailIdentifier
 }
 object ListResourceDelegatesRequest {
   

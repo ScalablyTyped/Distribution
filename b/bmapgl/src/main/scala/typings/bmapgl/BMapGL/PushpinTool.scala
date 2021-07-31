@@ -2,25 +2,23 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushpinTool extends StObject {
   
-  def close(): Boolean = js.native
+  def close(): Boolean
   
-  def getCursor(): String = js.native
+  def getCursor(): String
   
-  def getIcon(): Icon = js.native
+  def getIcon(): Icon
   
-  def onmarkend(event: typings.bmapgl.anon.Marker): Unit = js.native
+  def onmarkend(event: typings.bmapgl.anon.Marker): Unit
   
-  def open(): Boolean = js.native
+  def open(): Boolean
   
-  def setCursor(cursor: String): String = js.native
+  def setCursor(cursor: String): String
   
-  def setIcon(icon: Icon): Icon = js.native
+  def setIcon(icon: Icon): Icon
 }
 object PushpinTool {
   

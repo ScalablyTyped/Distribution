@@ -2,17 +2,15 @@ package typings.countrySelectJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CountrySelectJs {
   
-  @js.native
   trait CountryData extends StObject {
     
-    var iso2: String = js.native
+    var iso2: String
     
-    var name: String = js.native
+    var name: String
   }
   object CountryData {
     
@@ -33,31 +31,30 @@ object CountrySelectJs {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Set the default country by it's country code. Otherwise it will just be
       * the first country in the list.
       */
-    var defaultCountry: js.UndefOr[String] = js.native
+    var defaultCountry: js.UndefOr[String] = js.undefined
     
     /**
       * Display only the countries you specify. Takes an array of country codes.
       */
-    var onlyCountries: js.UndefOr[js.Array[String]] = js.native
+    var onlyCountries: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Specify the countries to appear at the top of the list. Defaults to
       * ["us", "gb"]
       */
-    var preferredCountries: js.UndefOr[js.Array[String]] = js.native
+    var preferredCountries: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Set the dropdown's width to be the same as the input. This is
       * automatically enabled for small screens.
       */
-    var responsiveDropdown: js.UndefOr[Boolean] = js.native
+    var responsiveDropdown: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

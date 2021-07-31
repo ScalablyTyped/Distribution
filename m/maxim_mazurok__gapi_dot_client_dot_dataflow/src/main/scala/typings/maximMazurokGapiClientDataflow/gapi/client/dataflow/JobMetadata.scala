@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobMetadata extends StObject {
   
   /** Identification of a BigTable source used in the Dataflow job. */
-  var bigTableDetails: js.UndefOr[js.Array[BigTableIODetails]] = js.native
+  var bigTableDetails: js.UndefOr[js.Array[BigTableIODetails]] = js.undefined
   
   /** Identification of a BigQuery source used in the Dataflow job. */
-  var bigqueryDetails: js.UndefOr[js.Array[BigQueryIODetails]] = js.native
+  var bigqueryDetails: js.UndefOr[js.Array[BigQueryIODetails]] = js.undefined
   
   /** Identification of a Datastore source used in the Dataflow job. */
-  var datastoreDetails: js.UndefOr[js.Array[DatastoreIODetails]] = js.native
+  var datastoreDetails: js.UndefOr[js.Array[DatastoreIODetails]] = js.undefined
   
   /** Identification of a File source used in the Dataflow job. */
-  var fileDetails: js.UndefOr[js.Array[FileIODetails]] = js.native
+  var fileDetails: js.UndefOr[js.Array[FileIODetails]] = js.undefined
   
   /** Identification of a PubSub source used in the Dataflow job. */
-  var pubsubDetails: js.UndefOr[js.Array[PubSubIODetails]] = js.native
+  var pubsubDetails: js.UndefOr[js.Array[PubSubIODetails]] = js.undefined
   
   /** The SDK version used to run the job. */
-  var sdkVersion: js.UndefOr[SdkVersion] = js.native
+  var sdkVersion: js.UndefOr[SdkVersion] = js.undefined
   
   /** Identification of a Spanner source used in the Dataflow job. */
-  var spannerDetails: js.UndefOr[js.Array[SpannerIODetails]] = js.native
+  var spannerDetails: js.UndefOr[js.Array[SpannerIODetails]] = js.undefined
 }
 object JobMetadata {
   

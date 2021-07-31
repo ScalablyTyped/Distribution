@@ -10,13 +10,13 @@ Custom Jest matchers for the Console object.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/jest-console |
 | Keywords           | wordpress, gutenberg, jest, matchers, console |
-| # releases         | 14 |
+| # releases         | 15 |
 | # dependents       | 3 |
-| # downloads        | 612589 |
+| # downloads        | 726974 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/jest-console/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/jest-console/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fjest-console)

@@ -2,33 +2,31 @@ package typings.playmusic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistItem extends StObject {
   
-  var absolutePosition: js.UndefOr[String] = js.native
+  var absolutePosition: js.UndefOr[String] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var lastModifiedTimestamp: js.UndefOr[String] = js.native
+  var lastModifiedTimestamp: js.UndefOr[String] = js.undefined
   
-  var playlistId: js.UndefOr[String] = js.native
+  var playlistId: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var track: js.UndefOr[PlaylistTrack] = js.native
+  var track: js.UndefOr[PlaylistTrack] = js.undefined
   
-  var trackId: js.UndefOr[String] = js.native
+  var trackId: js.UndefOr[String] = js.undefined
 }
 object PlaylistItem {
   

@@ -3,21 +3,19 @@ package typings.braintree.mod
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerGateway extends StObject {
   
-  def create(request: CustomerCreateRequest): js.Promise[ValidatedResponse[Customer]] = js.native
+  def create(request: CustomerCreateRequest): js.Promise[ValidatedResponse[Customer]]
   
-  def delete(customerId: String): js.Promise[Unit] = js.native
+  def delete(customerId: String): js.Promise[Unit]
   
-  def find(customerId: String): js.Promise[Customer] = js.native
+  def find(customerId: String): js.Promise[Customer]
   
-  def search(searchFn: js.Any): Readable = js.native
+  def search(searchFn: js.Any): Readable
   
-  def update(customerId: String, updates: CustomerUpdateRequest): js.Promise[ValidatedResponse[Customer]] = js.native
+  def update(customerId: String, updates: CustomerUpdateRequest): js.Promise[ValidatedResponse[Customer]]
 }
 object CustomerGateway {
   

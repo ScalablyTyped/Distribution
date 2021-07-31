@@ -7,7 +7,6 @@ import typings.autolinker.autolinkerMod.MentionServices
 import typings.autolinker.autolinkerMod.UrlMatchTypeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autolinkerStrings {
@@ -19,14 +18,16 @@ object autolinkerStrings {
   
   @js.native
   sealed trait facebook
-    extends HashtagConfig
+    extends StObject
+       with HashtagConfig
        with HashtagServices
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait instagram
-    extends HashtagConfig
+    extends StObject
+       with HashtagConfig
        with HashtagServices
        with MentionConfig
        with MentionServices
@@ -39,7 +40,9 @@ object autolinkerStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait scheme extends UrlMatchTypeOptions
+  sealed trait scheme
+    extends StObject
+       with UrlMatchTypeOptions
   @scala.inline
   def scheme: scheme = "scheme".asInstanceOf[scheme]
   
@@ -50,19 +53,23 @@ object autolinkerStrings {
   
   @js.native
   sealed trait soundcloud
-    extends MentionConfig
+    extends StObject
+       with MentionConfig
        with MentionServices
   @scala.inline
   def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
   
   @js.native
-  sealed trait tld extends UrlMatchTypeOptions
+  sealed trait tld
+    extends StObject
+       with UrlMatchTypeOptions
   @scala.inline
   def tld: tld = "tld".asInstanceOf[tld]
   
   @js.native
   sealed trait twitter
-    extends HashtagConfig
+    extends StObject
+       with HashtagConfig
        with HashtagServices
        with MentionConfig
        with MentionServices
@@ -70,7 +77,9 @@ object autolinkerStrings {
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
-  sealed trait www extends UrlMatchTypeOptions
+  sealed trait www
+    extends StObject
+       with UrlMatchTypeOptions
   @scala.inline
   def www: www = "www".asInstanceOf[www]
 }

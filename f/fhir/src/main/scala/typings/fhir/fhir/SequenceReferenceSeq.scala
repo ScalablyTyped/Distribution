@@ -2,79 +2,79 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A sequence used as reference
   */
-@js.native
-trait SequenceReferenceSeq extends BackboneElement {
+trait SequenceReferenceSeq
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'genomeBuild'.
     */
-  var _genomeBuild: js.UndefOr[Element] = js.native
+  var _genomeBuild: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'referenceSeqString'.
     */
-  var _referenceSeqString: js.UndefOr[Element] = js.native
+  var _referenceSeqString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'strand'.
     */
-  var _strand: js.UndefOr[Element] = js.native
+  var _strand: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'windowEnd'.
     */
-  var _windowEnd: js.UndefOr[Element] = js.native
+  var _windowEnd: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'windowStart'.
     */
-  var _windowStart: js.UndefOr[Element] = js.native
+  var _windowStart: js.UndefOr[Element] = js.undefined
   
   /**
     * Chromosome containing genetic finding
     */
-  var chromosome: js.UndefOr[CodeableConcept] = js.native
+  var chromosome: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The Genome Build used for reference, following GRCh build versions e.g. 'GRCh 37'
     */
-  var genomeBuild: js.UndefOr[String] = js.native
+  var genomeBuild: js.UndefOr[String] = js.undefined
   
   /**
     * Reference identifier
     */
-  var referenceSeqId: js.UndefOr[CodeableConcept] = js.native
+  var referenceSeqId: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * A Pointer to another Sequence entity as reference sequence
     */
-  var referenceSeqPointer: js.UndefOr[Reference] = js.native
+  var referenceSeqPointer: js.UndefOr[Reference] = js.undefined
   
   /**
     * A string to represent reference sequence
     */
-  var referenceSeqString: js.UndefOr[String] = js.native
+  var referenceSeqString: js.UndefOr[String] = js.undefined
   
   /**
     * Directionality of DNA ( +1/-1)
     */
-  var strand: js.UndefOr[integer] = js.native
+  var strand: js.UndefOr[integer] = js.undefined
   
   /**
     * End position of the window on the reference sequence
     */
-  var windowEnd: integer = js.native
+  var windowEnd: integer
   
   /**
     * Start position of the window on the  reference sequence
     */
-  var windowStart: integer = js.native
+  var windowStart: integer
 }
 object SequenceReferenceSeq {
   

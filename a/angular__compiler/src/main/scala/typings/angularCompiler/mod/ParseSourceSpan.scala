@@ -2,7 +2,6 @@ package typings.angularCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ParseSourceSpan")
@@ -44,7 +43,7 @@ class ParseSourceSpan protected ()
   def this(
     start: typings.angularCompiler.srcParseUtilMod.ParseLocation,
     end: typings.angularCompiler.srcParseUtilMod.ParseLocation,
-    fullStart: js.UndefOr[scala.Nothing],
+    fullStart: Unit,
     details: String
   ) = this()
   def this(

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileFilterLink extends StObject {
   
   /** Filter for this link. */
-  var filterRef: js.UndefOr[FilterRef] = js.native
+  var filterRef: js.UndefOr[FilterRef] = js.undefined
   
   /** Profile filter link ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics filter. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** View (Profile) for this link. */
-  var profileRef: js.UndefOr[ProfileRef] = js.native
+  var profileRef: js.UndefOr[ProfileRef] = js.undefined
   
   /**
     * The rank of this profile filter link relative to the other filters linked to the same profile.
@@ -28,10 +26,10 @@ trait ProfileFilterLink extends StObject {
     * equal to 1. The new link will move all existing filters with the same or lower rank down the list. After the link is inserted/updated/deleted all profile filter links will be
     * renumbered starting at 1.
     */
-  var rank: js.UndefOr[Double] = js.native
+  var rank: js.UndefOr[Double] = js.undefined
   
   /** Link for this profile filter link. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object ProfileFilterLink {
   

@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs an object that opens x-callback-url requests and waits for a response from the target app.
   * @see https://docs.scriptable.app/callbackurl/#-new-callbackurl
   */
-@js.native
 trait CallbackURL extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait CallbackURL extends StObject {
     * @param value - Value of the query parameter to add.
     * @see https://docs.scriptable.app/callbackurl/#-addparameter
     */
-  def addParameter(name: String, value: String): Unit = js.native
+  def addParameter(name: String, value: String): Unit
   
   /**
     * _Creates the callback URL._
@@ -31,7 +29,7 @@ trait CallbackURL extends StObject {
     * Creates a callback URL with the specified base URL and query parameters.
     * @see https://docs.scriptable.app/callbackurl/#-geturl
     */
-  def getURL(): String = js.native
+  def getURL(): String
   
   /**
     * _Opens the callback URL._
@@ -41,12 +39,12 @@ trait CallbackURL extends StObject {
     * not invoke the callback.
     * @see https://docs.scriptable.app/callbackurl/#-open
     */
-  def open(): js.Promise[_] = js.native
+  def open(): js.Promise[js.Any]
 }
 object CallbackURL {
   
   @scala.inline
-  def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[_]): CallbackURL = {
+  def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[js.Any]): CallbackURL = {
     val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction2(addParameter), getURL = js.Any.fromFunction0(getURL), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[CallbackURL]
   }
@@ -61,6 +59,6 @@ object CallbackURL {
     def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpen(value: () => js.Promise[_]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    def setOpen(value: () => js.Promise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

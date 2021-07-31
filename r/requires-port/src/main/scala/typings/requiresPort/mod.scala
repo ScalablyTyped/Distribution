@@ -2,23 +2,22 @@ package typings.requiresPort
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(port: String, protocol: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(port: String, protocol: Protocol): Boolean = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(port: Double, protocol: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(port: Double, protocol: Protocol): Boolean = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("requires-port", JSImport.Namespace)
   @js.native
-  def apply(port: String, protocol: String): Boolean = js.native
-  @JSImport("requires-port", JSImport.Namespace)
-  @js.native
-  def apply(port: String, protocol: Protocol): Boolean = js.native
-  @JSImport("requires-port", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, protocol: String): Boolean = js.native
-  @JSImport("requires-port", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, protocol: Protocol): Boolean = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.requiresPort.requiresPortStrings.http

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RiskExceptionConfigurationType extends StObject {
   
   /**
     * Overrides the risk decision to always block the pre-authentication requests. The IP range is in CIDR notation: a compact representation of an IP address and its associated routing prefix.
     */
-  var BlockedIPRangeList: js.UndefOr[BlockedIPRangeListType] = js.native
+  var BlockedIPRangeList: js.UndefOr[BlockedIPRangeListType] = js.undefined
   
   /**
     * Risk detection is not performed on the IP addresses in the range list. The IP range is in CIDR notation.
     */
-  var SkippedIPRangeList: js.UndefOr[SkippedIPRangeListType] = js.native
+  var SkippedIPRangeList: js.UndefOr[SkippedIPRangeListType] = js.undefined
 }
 object RiskExceptionConfigurationType {
   

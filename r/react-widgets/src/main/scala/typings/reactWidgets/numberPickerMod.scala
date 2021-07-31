@@ -9,7 +9,6 @@ import typings.reactWidgets.commonPropsMod.ReactWidgetsCommonProps
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object numberPickerMod extends Shortcut {
@@ -24,24 +23,23 @@ object numberPickerMod extends Shortcut {
   }
   @JSImport("react-widgets/lib/NumberPicker", JSImport.Namespace)
   @js.native
-  val ^ : NumberPickerClass = js.native
+  val ^ : js.Object & NumberPickerClass = js.native
   
   type NumberPickerClass = ComponentClass[NumberPickerProps, ComponentState]
   
-  @js.native
   trait NumberPickerMessages extends StObject {
     
     /**
       * Number picker spinner down button text for screen readers.
       * @default "decrement value"
       */
-    var decrement: js.UndefOr[String] = js.native
+    var decrement: js.UndefOr[String] = js.undefined
     
     /**
       * Number picker spinner up button text for screen readers.
       * @default "increment value"
       */
-    var increment: js.UndefOr[String] = js.native
+    var increment: js.UndefOr[String] = js.undefined
   }
   object NumberPickerMessages {
     
@@ -68,77 +66,77 @@ object numberPickerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait NumberPickerProps
-    extends ReactWidgetsCommonProps
+    extends StObject
+       with ReactWidgetsCommonProps
        with AutoFocus {
     
     /**
       * Set the culture of the NumberPicker, passed to the configured localizer.
       */
-    var culture: js.UndefOr[String] = js.native
+    var culture: js.UndefOr[String] = js.undefined
     
     /**
       * Default Value.
       */
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
     /**
       * A format string used to display the number value. Localizer dependent, read localization
       * for more info.
       * @see http://jquense.github.io/react-widgets/docs/#i18n
       */
-    var format: js.UndefOr[js.Any] = js.native
+    var format: js.UndefOr[js.Any] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying input component.
       */
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The maximum number that the NumberPicker value.
       * @default Infinity
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Object hash containing display text and/or text for screen readers. Use the messages
       * object to localize widget text and increase accessibility.
       */
-    var messages: js.UndefOr[NumberPickerMessages] = js.native
+    var messages: js.UndefOr[NumberPickerMessages] = js.undefined
     
     /**
       * The minimum number that the NumberPicker value.
       * @default -Infinity
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * The HTML name attribute, passed directly to the input element.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Change event Handler that is called when the value is changed. The handler is called with
       * the current numeric value or null.
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
     
     /**
       * The native onKeyPress event, called preventDefault will stop any custom behavior.
       */
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
     
     /**
       * Controls the visibility of the NumberPicker popup. Use defaultOpen to set an initial value for uncontrolled widgets.
       * @default false
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines how the NumberPicker parses a number from the localized string representation.
@@ -146,29 +144,29 @@ object numberPickerMod extends Shortcut {
       */
     var parse: js.UndefOr[
         js.Array[String] | (js.Function2[/* str */ String, /* culture */ String, Double])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Text to display in the input when the value is empty.
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Specify how precise the value should be when typing, incrementing, or decrementing the
       * value. When empty, precision is parsed from the current format and culture.
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * Amount to increase or decrease value when using the spinner buttons.
       * @default 1
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * The current value of the NumberPicker.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object NumberPickerProps {
     
@@ -291,8 +289,8 @@ object numberPickerMod extends Shortcut {
     }
   }
   
-  type _To = NumberPickerClass
+  type _To = js.Object & NumberPickerClass
   
   /* This means you don't have to write `^`, but can instead just say `numberPickerMod.foo` */
-  override def _to: NumberPickerClass = ^
+  override def _to: js.Object & NumberPickerClass = ^
 }

@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureFilterProperties extends StObject {
   
   /**
@@ -19,49 +17,49 @@ trait FeatureFilterProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#distance)
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * The geometry to apply to the spatial filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry)
     */
-  var geometry: js.UndefOr[GeometryProperties] = js.native
+  var geometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * An array of objectIds of the features to be filtered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#objectIds)
     */
-  var objectIds: js.UndefOr[js.Array[Double]] = js.native
+  var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * For spatial filters, this parameter defines the spatial relationship to filter features in the layer view against the filter [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#spatialRelationship)
     */
-  var spatialRelationship: js.UndefOr[String] = js.native
+  var spatialRelationship: js.UndefOr[String] = js.undefined
   
   /**
     * A range of time with start and end date.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent)
     */
-  var timeExtent: js.UndefOr[TimeExtentProperties] = js.native
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
     * The unit for calculating the buffer distance when [distance](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#distance) is specified in a spatial filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#units)
     */
-  var units: js.UndefOr[feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_] = js.native
+  var units: js.UndefOr[feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_] = js.undefined
   
   /**
     * A where clause for the feature filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#where)
     */
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object FeatureFilterProperties {
   

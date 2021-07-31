@@ -4,27 +4,25 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcType extends StObject {
   
-  var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.native
+  var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.undefined
   
-  var colors: js.UndefOr[js.Array[typings.cesium.mod.Color]] = js.native
+  var colors: js.UndefOr[js.Array[typings.cesium.mod.Color]] = js.undefined
   
-  var colorsPerVertex: js.UndefOr[Boolean] = js.native
+  var colorsPerVertex: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var positions: js.Array[Cartesian3] = js.native
+  var positions: js.Array[Cartesian3]
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ArcType {
   

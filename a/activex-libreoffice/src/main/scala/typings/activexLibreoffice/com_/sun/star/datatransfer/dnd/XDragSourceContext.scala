@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,20 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.datatransfer.dnd.XDragSourceContext
   * @see com.sun.star.datatransfer.dnd.XDragSourceListener
   */
-@js.native
-trait XDragSourceContext extends XInterface {
+trait XDragSourceContext
+  extends StObject
+     with XInterface {
   
   /**
     * Get the identifier of the currently used cursor.
     * @returns The currently selected drag cursor.
     */
-  val CurrentCursor: Double = js.native
+  val CurrentCursor: Double
   
   /**
     * Get the identifier of the currently used cursor.
     * @returns The currently selected drag cursor.
     */
-  def getCurrentCursor(): Double = js.native
+  def getCurrentCursor(): Double
   
   /**
     * This method sets the current drag cursor.
@@ -41,19 +41,19 @@ trait XDragSourceContext extends XInterface {
     * Invalid cursor identifiers will be ignored.
     * @param cursorId The identifier the drag source returned when registering the cursor.
     */
-  def setCursor(cursorId: Double): Unit = js.native
+  def setCursor(cursorId: Double): Unit
   
   /**
     * This method sets the current drag image.
     * @param imageId The identifier the drag source returned when registering the image (0 = none). Invalid identifier will be ignored.
     */
-  def setImage(imageId: Double): Unit = js.native
+  def setImage(imageId: Double): Unit
   
   /**
     * This method notifies the context that the {@link com.sun.star.datatransfer.DataFlavor} types of the transferable object have changed.
     * @see com.sun.star.datatransfer.XTransferable
     */
-  def transferablesFlavorsChanged(): Unit = js.native
+  def transferablesFlavorsChanged(): Unit
 }
 object XDragSourceContext {
   

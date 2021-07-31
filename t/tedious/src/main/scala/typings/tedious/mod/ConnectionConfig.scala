@@ -2,31 +2,29 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionConfig extends StObject {
   
   /**
     * Authentication Options
     */
-  var authentication: js.UndefOr[ConnectionAuthentication] = js.native
+  var authentication: js.UndefOr[ConnectionAuthentication] = js.undefined
   
   /**
     * Once you set domain, driver will connect to SQL Server using domain login.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Further options
     */
-  var options: js.UndefOr[ConnectionOptions] = js.native
+  var options: js.UndefOr[ConnectionOptions] = js.undefined
   
   /**
     * Hostname to connect to.
     */
-  var server: js.UndefOr[String] = js.native
+  var server: js.UndefOr[String] = js.undefined
 }
 object ConnectionConfig {
   

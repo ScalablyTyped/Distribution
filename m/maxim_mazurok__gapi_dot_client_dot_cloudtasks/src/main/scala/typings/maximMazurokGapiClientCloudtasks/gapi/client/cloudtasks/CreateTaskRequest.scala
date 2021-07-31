@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTaskRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CreateTaskRequest extends StObject {
     * payloads, might be desirable to return only when needed because of its large size or because of the sensitivity of data that it contains. Authorization for FULL requires
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/) permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The task to add. Task names have the following format: `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID`. The user can optionally specify a task
@@ -26,7 +24,7 @@ trait CreateTaskRequest extends StObject {
     * sequential prefixes, for example using a timestamp, causes an increase in latency and error rates in all task commands. The infrastructure relies on an approximately uniform
     * distribution of task ids to store and serve tasks efficiently.
     */
-  var task: js.UndefOr[Task] = js.native
+  var task: js.UndefOr[Task] = js.undefined
 }
 object CreateTaskRequest {
   

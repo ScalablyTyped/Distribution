@@ -4,26 +4,24 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleApi__HttpBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiHttpBody extends StObject {
   
   /** The HTTP Content-Type header value specifying the content type of the body. */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /** The HTTP request/response body as raw binary. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /** Application specific response metadata. Must be set in the first response for streaming APIs. */
   var extensions: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ GoogleApi__HttpBody with TopLevel[js.Any]
+    */ GoogleApi__HttpBody & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GoogleApiHttpBody {
   
@@ -53,7 +51,7 @@ object GoogleApiHttpBody {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleApi__HttpBody with TopLevel[js.Any]
+      */ GoogleApi__HttpBody & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -64,7 +62,7 @@ object GoogleApiHttpBody {
     def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleApi__HttpBody with TopLevel[js.Any])*
+      */ GoogleApi__HttpBody & TopLevel[js.Any])*
     ): Self = StObject.set(x, "extensions", js.Array(value :_*))
   }
 }

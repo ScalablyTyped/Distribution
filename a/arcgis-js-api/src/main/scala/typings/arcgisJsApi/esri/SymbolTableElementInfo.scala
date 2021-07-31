@@ -5,12 +5,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolTableElementInfo
-  extends Object
+  extends StObject
+     with Object
      with SymbolTableElementType {
   
   /**
@@ -18,35 +17,35 @@ trait SymbolTableElementInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
     */
-  var label: String | RampTitle = js.native
+  var label: String | RampTitle
   
   /**
     * A preview of the symbol element as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
     */
-  var preview: js.UndefOr[HTMLElement] = js.native
+  var preview: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * The size of the symbol in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The symbol for the corresponding `value` in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
     */
-  var symbol: Symbol = js.native
+  var symbol: Symbol
   
   /**
     * The value corresponding with the given `symbol` in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SymbolTableElementInfo {
   

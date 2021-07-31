@@ -2,48 +2,46 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHsmRequest extends StObject {
   
   /**
     * A user-defined token to ensure idempotence. Subsequent calls to this operation with the same token will be ignored.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.cloudhsmMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.cloudhsmMod.ClientToken] = js.undefined
   
   /**
     * The IP address to assign to the HSM's ENI. If an IP address is not specified, an IP address will be randomly chosen from the CIDR range of the subnet.
     */
-  var EniIp: js.UndefOr[IpAddress] = js.native
+  var EniIp: js.UndefOr[IpAddress] = js.undefined
   
   /**
     * The external ID from IamRoleArn, if present.
     */
-  var ExternalId: js.UndefOr[typings.awsSdk.cloudhsmMod.ExternalId] = js.native
+  var ExternalId: js.UndefOr[typings.awsSdk.cloudhsmMod.ExternalId] = js.undefined
   
   /**
     * The ARN of an IAM role to enable the AWS CloudHSM service to allocate an ENI on your behalf.
     */
-  var IamRoleArn: typings.awsSdk.cloudhsmMod.IamRoleArn = js.native
+  var IamRoleArn: typings.awsSdk.cloudhsmMod.IamRoleArn
   
   /**
     * The SSH public key to install on the HSM.
     */
-  var SshKey: typings.awsSdk.cloudhsmMod.SshKey = js.native
+  var SshKey: typings.awsSdk.cloudhsmMod.SshKey
   
   /**
     * The identifier of the subnet in your VPC in which to place the HSM.
     */
-  var SubnetId: typings.awsSdk.cloudhsmMod.SubnetId = js.native
+  var SubnetId: typings.awsSdk.cloudhsmMod.SubnetId
   
-  var SubscriptionType: typings.awsSdk.cloudhsmMod.SubscriptionType = js.native
+  var SubscriptionType: typings.awsSdk.cloudhsmMod.SubscriptionType
   
   /**
     * The IP address for the syslog monitoring server. The AWS CloudHSM service only supports one syslog monitoring server.
     */
-  var SyslogIp: js.UndefOr[IpAddress] = js.native
+  var SyslogIp: js.UndefOr[IpAddress] = js.undefined
 }
 object CreateHsmRequest {
   

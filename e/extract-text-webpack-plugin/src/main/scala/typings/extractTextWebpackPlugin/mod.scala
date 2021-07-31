@@ -3,7 +3,6 @@ package typings.extractTextWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,9 @@ object mod {
     */
   @JSImport("extract-text-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ExtractTextPlugin {
+  class ^ protected ()
+    extends StObject
+       with ExtractTextPlugin {
     /** Create a plugin instance defining the extraction target file(s) for the files loaded by `extract` */
     def this(options: String) = this()
     def this(options: PluginOptions) = this()
@@ -56,7 +57,9 @@ object mod {
     * Usage example at https://github.com/webpack/extract-text-webpack-plugin#usage-example-with-css
     */
   @js.native
-  trait ExtractTextPlugin extends Plugin {
+  trait ExtractTextPlugin
+    extends StObject
+       with Plugin {
     
     /**
       * Creates an extracting loader from an existing loader (instance).
@@ -66,44 +69,43 @@ object mod {
     def extract(
       loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
     ): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
       ] = js.native
     def extract(
       loader: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
         ]
     ): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
       ] = js.native
     def extract(loader: LoaderOptions): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
       ] = js.native
   }
   
-  @js.native
   trait LoaderOptions extends StObject {
     
     /** the loader(s) that should be used when the css is not extracted (i.e. in an additional chunk when `allChunks: false`) */
     var fallback: js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** override the `publicPath` setting for this loader */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /** the loader(s) that should be used for converting the resource to a css exporting module */
     var use: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
-      ]) = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
+      ])
   }
   object LoaderOptions {
     
     @scala.inline
     def apply(
       use: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
         ])
     ): LoaderOptions = {
       val __obj = js.Dynamic.literal(use = use.asInstanceOf[js.Any])
@@ -116,7 +118,7 @@ object mod {
       @scala.inline
       def setFallback(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
             ])
       ): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,9 @@ object mod {
       def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
       @scala.inline
-      def setFallbackVarargs(value: js.Any*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      def setFallbackVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any)*
+      ): Self = StObject.set(x, "fallback", js.Array(value :_*))
       
       @scala.inline
       def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
@@ -135,29 +139,30 @@ object mod {
       @scala.inline
       def setUse(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any) | (js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
             ])
       ): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUseVarargs(value: js.Any*): Self = StObject.set(x, "use", js.Array(value :_*))
+      def setUseVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any)*
+      ): Self = StObject.set(x, "use", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait PluginOptions extends StObject {
     
     /** extract from all additional chunks too (by default it extracts only from the initial chunk(s)) */
-    var allChunks: js.UndefOr[Boolean] = js.native
+    var allChunks: js.UndefOr[Boolean] = js.undefined
     
     /** disables the plugin */
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
     /** the filename of the result file. May contain `[name]`, `[id]` and `[contenthash]` */
-    var filename: String = js.native
+    var filename: String
     
     /** Unique ident for this plugin instance. (For advanced usage only, by default automatically generated) */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object PluginOptions {
     

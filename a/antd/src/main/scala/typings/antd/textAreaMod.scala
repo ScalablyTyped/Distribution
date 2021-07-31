@@ -4,29 +4,31 @@ import org.scalablytyped.runtime.Shortcut
 import typings.antd.configProviderSizeContextMod.SizeType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textAreaMod extends Shortcut {
   
   @JSImport("antd/lib/input/TextArea", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[TextAreaProps with RefAttributes[TextAreaRef]] = js.native
+  val default: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]] = js.native
   
-  @js.native
   trait TextAreaProps
-    extends typings.rcTextarea.mod.TextAreaProps {
+    extends StObject
+       with typings.rcTextarea.mod.TextAreaProps {
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var showCount: js.UndefOr[Boolean] = js.native
+    var showCount: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
   }
   object TextAreaProps {
     
@@ -66,13 +68,29 @@ object textAreaMod extends Shortcut {
   }
   
   @js.native
-  trait TextAreaRef extends HTMLTextAreaElement {
+  trait TextAreaRef
+    extends StObject
+       with HTMLTextAreaElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     var resizableTextArea: js.Any = js.native
   }
   
-  type _To = ForwardRefExoticComponent[TextAreaProps with RefAttributes[TextAreaRef]]
+  type _To = ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]]
   
   /* This means you don't have to write `default`, but can instead just say `textAreaMod.foo` */
-  override def _to: ForwardRefExoticComponent[TextAreaProps with RefAttributes[TextAreaRef]] = default
+  override def _to: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]] = default
 }

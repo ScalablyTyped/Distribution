@@ -6,7 +6,6 @@ import typings.antd.cascaderMod.CascaderState
 import typings.antd.cascaderMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Cascader")
@@ -15,6 +14,10 @@ class Cascader protected () extends default {
   def this(props: CascaderProps) = this()
 }
 object Cascader {
+  
+  @JSImport("antd", "Cascader")
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
   object defaultProps {
@@ -55,7 +58,6 @@ object Cascader {
   }
   
   /* static member */
-  @JSImport("antd", "Cascader.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = js.native
+  @scala.inline
+  def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[PartialCascaderState]
 }

@@ -6,7 +6,6 @@ import typings.ionicReact.ionicReactStrings.md
 import typings.react.mod.ForwardRefExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionIconMod {
@@ -15,30 +14,29 @@ object ionIconMod {
   @js.native
   val IonIcon: ForwardRefExoticComponent[IonIconPropsIonicReactPro] = js.native
   
-  @js.native
   trait IonIconProps extends StObject {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var flipRtl: js.UndefOr[Boolean] = js.native
+    var flipRtl: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var ios: js.UndefOr[String] = js.native
+    var ios: js.UndefOr[String] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var md: js.UndefOr[String] = js.native
+    var md: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[ios | md] = js.native
+    var mode: js.UndefOr[ios | md] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object IonIconProps {
     

@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schema$HTTPSHealthCheck extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait Schema$HTTPSHealthCheck extends StObject {
     * empty (default value), the IP on behalf of which this health check is
     * performed will be used.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * The TCP port number for the health check request. The default value is
     * 443. Valid values are 1 through 65535.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Port name as defined in InstanceGroup#NamedPort#name. If both port and
     * port_name are defined, port takes precedence.
     */
-  var portName: js.UndefOr[String] = js.native
+  var portName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how port is selected for health checking, can be one of
@@ -37,26 +35,26 @@ trait Schema$HTTPSHealthCheck extends StObject {
     * for health checking.   If not specified, HTTPS health check follows
     * behavior specified in port and portName fields.
     */
-  var portSpecification: js.UndefOr[String] = js.native
+  var portSpecification: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of proxy header to append before sending data to the
     * backend, either NONE or PROXY_V1. The default is NONE.
     */
-  var proxyHeader: js.UndefOr[String] = js.native
+  var proxyHeader: js.UndefOr[String] = js.undefined
   
   /**
     * The request path of the HTTPS health check request. The default value is
     * /.
     */
-  var requestPath: js.UndefOr[String] = js.native
+  var requestPath: js.UndefOr[String] = js.undefined
   
   /**
     * The string to match anywhere in the first 1024 bytes of the response
     * body. If left empty (the default value), the status code determines
     * health. The response data can only be ASCII.
     */
-  var response: js.UndefOr[String] = js.native
+  var response: js.UndefOr[String] = js.undefined
 }
 object Schema$HTTPSHealthCheck {
   

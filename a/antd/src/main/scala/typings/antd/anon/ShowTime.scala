@@ -3,13 +3,11 @@ package typings.antd.anon
 import typings.rcPicker.timePanelMod.SharedTimeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowTime[DateType] extends StObject {
   
-  var showTime: SharedTimeProps[DateType] = js.native
+  var showTime: SharedTimeProps[DateType]
 }
 object ShowTime {
   
@@ -20,7 +18,7 @@ object ShowTime {
   }
   
   @scala.inline
-  implicit class ShowTimeMutableBuilder[Self <: ShowTime[_], DateType] (val x: Self with ShowTime[DateType]) extends AnyVal {
+  implicit class ShowTimeMutableBuilder[Self <: ShowTime[?], DateType] (val x: Self & ShowTime[DateType]) extends AnyVal {
     
     @scala.inline
     def setShowTime(value: SharedTimeProps[DateType]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])

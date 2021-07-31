@@ -3,17 +3,15 @@ package typings.slackMock.mod
 import typings.nock.mod.ReplyHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncomingWebhookCall[T] extends StObject {
   
-  var headers: IncomingWebhookHttpHeaders = js.native
+  var headers: IncomingWebhookHttpHeaders
   
-  var params: T = js.native
+  var params: T
   
-  var url: IncomingWebhookUrl = js.native
+  var url: IncomingWebhookUrl
 }
 object IncomingWebhookCall {
   
@@ -24,7 +22,7 @@ object IncomingWebhookCall {
   }
   
   @scala.inline
-  implicit class IncomingWebhookCallMutableBuilder[Self <: IncomingWebhookCall[_], T] (val x: Self with IncomingWebhookCall[T]) extends AnyVal {
+  implicit class IncomingWebhookCallMutableBuilder[Self <: IncomingWebhookCall[?], T] (val x: Self & IncomingWebhookCall[T]) extends AnyVal {
     
     @scala.inline
     def setHeaders(value: IncomingWebhookHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

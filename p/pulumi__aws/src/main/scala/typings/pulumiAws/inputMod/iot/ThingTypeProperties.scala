@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingTypeProperties extends StObject {
   
   /**
     * The description of the thing type.
     */
-  var description: js.UndefOr[Input[String]] = js.native
+  var description: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A list of searchable thing attribute names.
     */
-  var searchableAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var searchableAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object ThingTypeProperties {
   

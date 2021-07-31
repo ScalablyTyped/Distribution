@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.typescriptCollections.anon.Nodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiRootTreeMod {
   
   @JSImport("typescript-collections/dist/lib/MultiRootTree", JSImport.Default)
   @js.native
-  class default () extends MultiRootTree {
+  class default ()
+    extends StObject
+       with MultiRootTree {
     def this(rootIds: js.Array[String]) = this()
-    def this(rootIds: js.UndefOr[scala.Nothing], nodes: StringDictionary[js.Array[String]]) = this()
     def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
+    def this(rootIds: Unit, nodes: StringDictionary[js.Array[String]]) = this()
   }
   
-  @js.native
   trait FlatTreeNode extends StObject {
     
-    var childrenCount: Double = js.native
+    var childrenCount: Double
     
-    var hasParent: Boolean = js.native
+    var hasParent: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var level: Double = js.native
+    var level: Double
   }
   object FlatTreeNode {
     

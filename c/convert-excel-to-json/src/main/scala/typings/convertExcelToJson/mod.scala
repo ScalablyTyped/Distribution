@@ -7,41 +7,39 @@ import typings.convertExcelToJson.anon.Source
 import typings.convertExcelToJson.anon.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("convert-excel-to-json", JSImport.Namespace)
-  @js.native
-  def apply(config: (SourceFile | Source) with Sheets with SheetConfig): StringDictionary[js.Array[_]] = js.native
-  @JSImport("convert-excel-to-json", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(config: (SourceFile | Source) & Sheets & SheetConfig): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  @scala.inline
   def apply(
-    config: (SourceFile | Source) with Sheets with SheetConfig,
+    config: (SourceFile | Source) & Sheets & SheetConfig,
     // Input can also be a json-string (for cli)
   sourceFile: String
-  ): StringDictionary[js.Array[_]] = js.native
-  @JSImport("convert-excel-to-json", JSImport.Namespace)
-  @js.native
-  def apply(config: String): StringDictionary[js.Array[_]] = js.native
-  @JSImport("convert-excel-to-json", JSImport.Namespace)
-  @js.native
+  ): StringDictionary[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  @scala.inline
+  def apply(config: String): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  @scala.inline
   def apply(config: String, // Input can also be a json-string (for cli)
-  sourceFile: String): StringDictionary[js.Array[_]] = js.native
+  sourceFile: String): StringDictionary[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[js.Any]]]
   
+  @JSImport("convert-excel-to-json", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait SheetConfig extends StObject {
     
-    var columnToKey: js.UndefOr[StringDictionary[String]] = js.native
+    var columnToKey: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var header: js.UndefOr[Rows] = js.native
+    var header: js.UndefOr[Rows] = js.undefined
     
-    var includeEmptyLines: js.UndefOr[Boolean] = js.native
+    var includeEmptyLines: js.UndefOr[Boolean] = js.undefined
     
-    var range: js.UndefOr[String] = js.native
+    var range: js.UndefOr[String] = js.undefined
     
-    var sheetStubs: js.UndefOr[Boolean] = js.native
+    var sheetStubs: js.UndefOr[Boolean] = js.undefined
   }
   object SheetConfig {
     

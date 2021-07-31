@@ -2,20 +2,20 @@ package typings.ionic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object androidMod {
   
-  @JSImport("ionic/lib/integrations/cordova/android", "getAndroidSdkToolsVersion")
+  @JSImport("ionic/lib/integrations/cordova/android", JSImport.Namespace)
   @js.native
-  def getAndroidSdkToolsVersion(): js.Promise[js.UndefOr[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ionic/lib/integrations/cordova/android", "locateSDKHome")
-  @js.native
-  def locateSDKHome(): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def getAndroidSdkToolsVersion(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAndroidSdkToolsVersion")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @JSImport("ionic/lib/integrations/cordova/android", "parseSDKVersion")
-  @js.native
-  def parseSDKVersion(contents: String): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def locateSDKHome(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("locateSDKHome")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
+  @scala.inline
+  def parseSDKVersion(contents: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSDKVersion")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
 }

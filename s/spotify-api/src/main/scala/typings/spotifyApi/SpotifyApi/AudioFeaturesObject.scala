@@ -3,51 +3,49 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.audio_features
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Audio Features Object
   * https://developer.spotify.com/web-api/object-model/#audio-features-object
   */
-@js.native
 trait AudioFeaturesObject extends StObject {
   
-  var acousticness: Double = js.native
+  var acousticness: Double
   
-  var analysis_url: String = js.native
+  var analysis_url: String
   
-  var danceability: Double = js.native
+  var danceability: Double
   
-  var duration_ms: Double = js.native
+  var duration_ms: Double
   
-  var energy: Double = js.native
+  var energy: Double
   
-  var id: String = js.native
+  var id: String
   
-  var instrumentalness: Double = js.native
+  var instrumentalness: Double
   
-  var key: Double = js.native
+  var key: Double
   
-  var liveness: Double = js.native
+  var liveness: Double
   
-  var loudness: Double = js.native
+  var loudness: Double
   
-  var mode: Double = js.native
+  var mode: Double
   
-  var speechiness: Double = js.native
+  var speechiness: Double
   
-  var tempo: Double = js.native
+  var tempo: Double
   
-  var time_signature: Double = js.native
+  var time_signature: Double
   
-  var track_href: String = js.native
+  var track_href: String
   
-  var `type`: audio_features = js.native
+  var `type`: audio_features
   
-  var uri: String = js.native
+  var uri: String
   
-  var valence: Double = js.native
+  var valence: Double
 }
 object AudioFeaturesObject {
   
@@ -68,12 +66,11 @@ object AudioFeaturesObject {
     tempo: Double,
     time_signature: Double,
     track_href: String,
-    `type`: audio_features,
     uri: String,
     valence: Double
   ): AudioFeaturesObject = {
     val __obj = js.Dynamic.literal(acousticness = acousticness.asInstanceOf[js.Any], analysis_url = analysis_url.asInstanceOf[js.Any], danceability = danceability.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instrumentalness = instrumentalness.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], liveness = liveness.asInstanceOf[js.Any], loudness = loudness.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], speechiness = speechiness.asInstanceOf[js.Any], tempo = tempo.asInstanceOf[js.Any], time_signature = time_signature.asInstanceOf[js.Any], track_href = track_href.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], valence = valence.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("audio_features")
     __obj.asInstanceOf[AudioFeaturesObject]
   }
   

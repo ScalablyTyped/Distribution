@@ -3,154 +3,43 @@ package typings.mapboxGeoViewport
 import typings.mapboxGeoViewport.anon.Lat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@mapbox/geo-viewport", "bounds")
+  @JSImport("@mapbox/geo-viewport", JSImport.Namespace)
   @js.native
-  def bounds(viewport: js.Tuple2[Double, Double], zoom: Double, dimensions: js.Tuple2[Double, Double]): BoundingBox = js.native
-  @JSImport("@mapbox/geo-viewport", "bounds")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bounds(viewport: js.Tuple2[Double, Double], zoom: Double, dimensions: js.Tuple2[Double, Double]): BoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(viewport.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[BoundingBox]
+  @scala.inline
   def bounds(
     viewport: js.Tuple2[Double, Double],
     zoom: Double,
     dimensions: js.Tuple2[Double, Double],
     tileSize: Double
-  ): BoundingBox = js.native
-  @JSImport("@mapbox/geo-viewport", "bounds")
-  @js.native
-  def bounds(viewport: Lat, zoom: Double, dimensions: js.Tuple2[Double, Double]): BoundingBox = js.native
-  @JSImport("@mapbox/geo-viewport", "bounds")
-  @js.native
-  def bounds(viewport: Lat, zoom: Double, dimensions: js.Tuple2[Double, Double], tileSize: Double): BoundingBox = js.native
+  ): BoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(viewport.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any])).asInstanceOf[BoundingBox]
+  @scala.inline
+  def bounds(viewport: Lat, zoom: Double, dimensions: js.Tuple2[Double, Double]): BoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(viewport.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[BoundingBox]
+  @scala.inline
+  def bounds(viewport: Lat, zoom: Double, dimensions: js.Tuple2[Double, Double], tileSize: Double): BoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(viewport.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any])).asInstanceOf[BoundingBox]
   
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double]): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: js.UndefOr[scala.Nothing],
-    tileSize: js.UndefOr[scala.Nothing],
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: js.UndefOr[scala.Nothing],
-    tileSize: Double
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: js.UndefOr[scala.Nothing],
-    tileSize: Double,
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: Double
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: Double,
-    tileSize: js.UndefOr[scala.Nothing],
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: Double,
-    tileSize: Double
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: js.UndefOr[scala.Nothing],
-    maxzoom: Double,
-    tileSize: Double,
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double], minzoom: Double): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: Double,
-    maxzoom: js.UndefOr[scala.Nothing],
-    tileSize: js.UndefOr[scala.Nothing],
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: Double,
-    maxzoom: js.UndefOr[scala.Nothing],
-    tileSize: Double
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: Double,
-    maxzoom: js.UndefOr[scala.Nothing],
-    tileSize: Double,
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double], minzoom: Double, maxzoom: Double): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
-  def viewport(
-    bounds: BoundingBox,
-    dimensions: js.Tuple2[Double, Double],
-    minzoom: Double,
-    maxzoom: Double,
-    tileSize: js.UndefOr[scala.Nothing],
-    allowFloat: Boolean
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
+  @scala.inline
+  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double]): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double], minzoom: Double): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double], minzoom: Double, maxzoom: Double): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
   def viewport(
     bounds: BoundingBox,
     dimensions: js.Tuple2[Double, Double],
     minzoom: Double,
     maxzoom: Double,
     tileSize: Double
-  ): GeoViewport = js.native
-  @JSImport("@mapbox/geo-viewport", "viewport")
-  @js.native
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
   def viewport(
     bounds: BoundingBox,
     dimensions: js.Tuple2[Double, Double],
@@ -158,16 +47,104 @@ object mod {
     maxzoom: Double,
     tileSize: Double,
     allowFloat: Boolean
-  ): GeoViewport = js.native
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Double,
+    maxzoom: Double,
+    tileSize: Unit,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Double,
+    maxzoom: Unit,
+    tileSize: Double
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Double,
+    maxzoom: Unit,
+    tileSize: Double,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Double,
+    maxzoom: Unit,
+    tileSize: Unit,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(bounds: BoundingBox, dimensions: js.Tuple2[Double, Double], minzoom: Unit, maxzoom: Double): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Unit,
+    maxzoom: Double,
+    tileSize: Double
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Unit,
+    maxzoom: Double,
+    tileSize: Double,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Unit,
+    maxzoom: Double,
+    tileSize: Unit,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Unit,
+    maxzoom: Unit,
+    tileSize: Double
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Unit,
+    maxzoom: Unit,
+    tileSize: Double,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
+  @scala.inline
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[Double, Double],
+    minzoom: Unit,
+    maxzoom: Unit,
+    tileSize: Unit,
+    allowFloat: Boolean
+  ): GeoViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(bounds.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any], minzoom.asInstanceOf[js.Any], maxzoom.asInstanceOf[js.Any], tileSize.asInstanceOf[js.Any], allowFloat.asInstanceOf[js.Any])).asInstanceOf[GeoViewport]
   
   type BoundingBox = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait GeoViewport extends StObject {
     
-    var center: js.Tuple2[Double, Double] = js.native
+    var center: js.Tuple2[Double, Double]
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object GeoViewport {
     

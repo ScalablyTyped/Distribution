@@ -2,41 +2,39 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISuggestionResult extends StObject {
   
   /** A structured address object for the result.  */
-  var address: IAddress = js.native
+  var address: IAddress
   
   /** A LocationRect that can be used to set the map view over the result. */
-  var bestView: LocationRect = js.native
+  var bestView: LocationRect
   
   /** Unique entity id to be used for searching the entity. */
-  var entityId: String = js.native
+  var entityId: String
   
   /** The sub type of result; Address, RoadBlock, PopulatedPlace, CountryRegion, etc. */
-  var entitySubType: String = js.native
+  var entitySubType: String
   
   /** The type of the result; Address, Place */
-  var entityType: String = js.native
+  var entityType: String
   
   /** A nicely formatted suggestion string for the result based on market. */
-  var formattedSuggestion: String = js.native
+  var formattedSuggestion: String
   
   /**
     * The coordinate of the result. This value is only returned for place (city, landmarks) results and not for addresses.
     * Street addresses will need to be geocoded to get their location.
     */
-  var location: Location = js.native
+  var location: Location
   
   /** A secondary title that provides additional context to the title value of the suggestion. **/
-  var subtitle: String = js.native
+  var subtitle: String
   
   /** The display title for the result (i.e. “Redmond”). */
-  var title: String = js.native
+  var title: String
 }
 object ISuggestionResult {
   

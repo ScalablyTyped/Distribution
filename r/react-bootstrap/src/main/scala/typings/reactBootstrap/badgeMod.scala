@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod {
@@ -18,12 +17,13 @@ object badgeMod {
   trait Badge
     extends Component[BadgeProps, js.Object, js.Any]
   
-  @js.native
-  trait BadgeProps extends HTMLProps[Badge] {
+  trait BadgeProps
+    extends StObject
+       with HTMLProps[Badge] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var pullRight: js.UndefOr[Boolean] = js.native
+    var pullRight: js.UndefOr[Boolean] = js.undefined
   }
   object BadgeProps {
     

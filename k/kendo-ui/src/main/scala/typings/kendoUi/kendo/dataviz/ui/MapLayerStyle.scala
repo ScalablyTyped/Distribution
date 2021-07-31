@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayerStyle extends StObject {
   
-  var fill: js.UndefOr[MapLayerStyleFill] = js.native
+  var fill: js.UndefOr[MapLayerStyleFill] = js.undefined
   
-  var stroke: js.UndefOr[MapLayerStyleStroke] = js.native
+  var stroke: js.UndefOr[MapLayerStyleStroke] = js.undefined
 }
 object MapLayerStyle {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateManagedPrefixListRequest extends StObject {
   
   /**
     * The IP address type. Valid Values: IPv4 | IPv6 
     */
-  var AddressFamily: String = js.native
+  var AddressFamily: String
   
   /**
     * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Up to 255 UTF-8 characters in length.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more entries for the prefix list.
     */
-  var Entries: js.UndefOr[AddPrefixListEntries] = js.native
+  var Entries: js.UndefOr[AddPrefixListEntries] = js.undefined
   
   /**
     * The maximum number of entries for the prefix list.
     */
-  var MaxEntries: Integer = js.native
+  var MaxEntries: Integer
   
   /**
     * A name for the prefix list. Constraints: Up to 255 characters in length. The name cannot start with com.amazonaws.
     */
-  var PrefixListName: String = js.native
+  var PrefixListName: String
   
   /**
     * The tags to apply to the prefix list during creation.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object CreateManagedPrefixListRequest {
   

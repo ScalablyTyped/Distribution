@@ -4,23 +4,23 @@ import typings.esquery.esqueryStrings.regexp
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RegExpLiteral extends Atom {
+trait RegExpLiteral
+  extends StObject
+     with Atom {
   
   @JSName("type")
-  var type_RegExpLiteral: regexp = js.native
+  var type_RegExpLiteral: regexp
   
-  var value: RegExp = js.native
+  var value: RegExp
 }
 object RegExpLiteral {
   
   @scala.inline
-  def apply(`type`: regexp, value: RegExp): RegExpLiteral = {
+  def apply(value: RegExp): RegExpLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("regexp")
     __obj.asInstanceOf[RegExpLiteral]
   }
   

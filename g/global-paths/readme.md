@@ -11,8 +11,8 @@ Returns an array of unique "global" directories based on the user's platform and
 | Full name          | global-paths |
 | Keywords           | directory, dirname, global, module, package, path, paths, prefix, resolve |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 81741 |
+| # dependents       | 9 |
+| # downloads        | 85407 |
 | # stars            | 2 |
 
 ## Links

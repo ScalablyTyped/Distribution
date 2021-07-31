@@ -6,29 +6,27 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeList
 import typings.devextreme.mod.DevExpress.ui.dxTreeListRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrevRowIndex extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxTreeList] = js.native
+  var component: js.UndefOr[dxTreeList] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var newRowIndex: js.UndefOr[Double] = js.native
+  var newRowIndex: js.UndefOr[Double] = js.undefined
   
-  var prevRowIndex: js.UndefOr[Double] = js.native
+  var prevRowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowElement: js.UndefOr[dxElement] = js.native
+  var rowElement: js.UndefOr[dxElement] = js.undefined
   
-  var rows: js.UndefOr[js.Array[dxTreeListRowObject]] = js.native
+  var rows: js.UndefOr[js.Array[dxTreeListRowObject]] = js.undefined
 }
 object PrevRowIndex {
   

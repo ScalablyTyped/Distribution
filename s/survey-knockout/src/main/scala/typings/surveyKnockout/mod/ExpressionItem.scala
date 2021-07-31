@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ExpressionItem")
@@ -16,6 +15,15 @@ class ExpressionItem ()
     * The expression property. If this expression returns true, then survey will use html property to show on complete page.
     */
   var expression: String = js.native
+  
+  /* CompleteClass */
+  override def getLocale(): String = js.native
+  
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String): String = js.native
+  
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   
   val locHtml: LocalizableString = js.native
   

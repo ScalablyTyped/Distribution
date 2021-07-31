@@ -11,7 +11,6 @@ import typings.twilioSync.mutatorMod.Mutator
 import typings.twilioSync.paginatorMod.Paginator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncmapMod {
@@ -335,10 +334,9 @@ object syncmapMod {
     def uri: String = js.native
   }
   
-  @js.native
   trait ItemMetadata extends StObject {
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object ItemMetadata {
     
@@ -359,26 +357,25 @@ object syncmapMod {
     }
   }
   
-  @js.native
   trait MapDescriptor extends StObject {
     
-    var date_expires: String = js.native
+    var date_expires: String
     
-    var date_updated: Date = js.native
+    var date_updated: Date
     
-    var items: js.UndefOr[js.Array[MapItemDescriptor]] = js.native
+    var items: js.UndefOr[js.Array[MapItemDescriptor]] = js.undefined
     
-    var last_event_id: Double = js.native
+    var last_event_id: Double
     
-    var links: js.Any = js.native
+    var links: js.Any
     
-    var revision: String = js.native
+    var revision: String
     
-    var sid: String = js.native
+    var sid: String
     
-    var unique_name: String = js.native
+    var unique_name: String
     
-    var url: String = js.native
+    var url: String
   }
   object MapDescriptor {
     

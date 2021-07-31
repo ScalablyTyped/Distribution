@@ -7,7 +7,6 @@ import typings.jexl.expressionMod.Context
 import typings.jexl.expressionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,7 +18,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jexl", "Jexl")
   @js.native
-  class JexlCls () extends Jexl
+  class JexlCls ()
+    extends StObject
+       with Jexl
   
   type BinaryOpFunction = js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
   
@@ -29,7 +30,9 @@ object mod extends Shortcut {
     * xpath-like drilldown into native Javascript objects.
     */
   @js.native
-  trait BuildableJexl extends Jexl {
+  trait BuildableJexl
+    extends StObject
+       with Jexl {
     
     var Jexl: Instantiable = js.native
   }
@@ -114,8 +117,8 @@ object mod extends Shortcut {
       *      made accessible to the Jexl expression when evaluating it
       * @returns resolves with the result of the evaluation.
       */
-    def eval(expression: String): js.Promise[_] = js.native
-    def eval(expression: String, context: Context): js.Promise[_] = js.native
+    def eval(expression: String): js.Promise[js.Any] = js.native
+    def eval(expression: String, context: Context): js.Promise[js.Any] = js.native
     
     /**
       * Synchronously evaluates a Jexl string within an optional context.
@@ -142,7 +145,11 @@ object mod extends Shortcut {
     def removeOp(operator: String): Unit = js.native
   }
   
-  type TransformFunction = js.Function2[/* value */ js.Any, /* repeated */ js.Any, js.Any]
+  @js.native
+  trait TransformFunction extends StObject {
+    
+    def apply(value: js.Any, args: js.Any*): js.Any = js.native
+  }
   
   type UnaryOpFunction = js.Function1[/* right */ js.Any, js.Any]
   

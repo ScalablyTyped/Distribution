@@ -6,10 +6,8 @@ import typings.vegaTypings.encodeMod.Gradient
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ColorMixins[ES /* <: ExprRef | SignalRef */] extends StObject {
     * - This property cannot be used in a [style config](https://vega.github.io/vega-lite/docs/mark.html#style-config).
     * - The `fill` and `stroke` properties have higher precedence than `color` and will override `color`.
     */
-  var color: js.UndefOr[Color | Gradient | ES] = js.native
+  var color: js.UndefOr[Color | Gradient | ES] = js.undefined
 }
 object ColorMixins {
   
@@ -32,7 +30,7 @@ object ColorMixins {
   }
   
   @scala.inline
-  implicit class ColorMixinsMutableBuilder[Self <: ColorMixins[_], ES /* <: ExprRef | SignalRef */] (val x: Self with ColorMixins[ES]) extends AnyVal {
+  implicit class ColorMixinsMutableBuilder[Self <: ColorMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ColorMixins[ES]) extends AnyVal {
     
     @scala.inline
     def setColor(value: Color | Gradient | ES): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])

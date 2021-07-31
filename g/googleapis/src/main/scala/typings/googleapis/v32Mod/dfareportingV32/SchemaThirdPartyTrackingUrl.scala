@@ -2,24 +2,22 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Third-party Tracking URL.
   */
-@js.native
 trait SchemaThirdPartyTrackingUrl extends StObject {
   
   /**
     * Third-party URL type for in-stream video and in-stream audio creatives.
     */
-  var thirdPartyUrlType: js.UndefOr[String] = js.native
+  var thirdPartyUrlType: js.UndefOr[String] = js.undefined
   
   /**
     * URL for the specified third-party URL type.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaThirdPartyTrackingUrl {
   

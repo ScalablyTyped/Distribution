@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDocumentsResponse extends StObject {
   
   // information about deleted documents
-  var data: js.UndefOr[js.Array[DocumentStatus]] = js.native
+  var data: js.UndefOr[js.Array[DocumentStatus]] = js.undefined
 }
 object DeleteDocumentsResponse {
   

@@ -2,26 +2,66 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopeFolder extends StObject {
   
-  def AddToSearchFolders(): Unit = js.native
+  def AddToSearchFolders(): Unit
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.ScopeFolder_typekey")
-  var OfficeDotScopeFolder_typekey: ScopeFolder = js.native
+  var OfficeDotScopeFolder_typekey: ScopeFolder
   
-  val Path: String = js.native
+  val Path: String
   
-  def ScopeFolders(Index: Double): ScopeFolder = js.native
+  def ScopeFolders(Index: Double): ScopeFolder
   @JSName("ScopeFolders")
-  val ScopeFolders_Original: ScopeFolders = js.native
+  val ScopeFolders_Original: ScopeFolders
+}
+object ScopeFolder {
+  
+  @scala.inline
+  def apply(
+    AddToSearchFolders: () => Unit,
+    Application: js.Any,
+    Creator: Double,
+    Name: String,
+    OfficeDotScopeFolder_typekey: ScopeFolder,
+    Path: String,
+    ScopeFolders: ScopeFolders
+  ): ScopeFolder = {
+    val __obj = js.Dynamic.literal(AddToSearchFolders = js.Any.fromFunction0(AddToSearchFolders), Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], ScopeFolders = ScopeFolders.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.ScopeFolder_typekey")(OfficeDotScopeFolder_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScopeFolder]
+  }
+  
+  @scala.inline
+  implicit class ScopeFolderMutableBuilder[Self <: ScopeFolder] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAddToSearchFolders(value: () => Unit): Self = StObject.set(x, "AddToSearchFolders", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOfficeDotScopeFolder_typekey(value: ScopeFolder): Self = StObject.set(x, "Office.ScopeFolder_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScopeFolders(value: ScopeFolders): Self = StObject.set(x, "ScopeFolders", value.asInstanceOf[js.Any])
+  }
 }

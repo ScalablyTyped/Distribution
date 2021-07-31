@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.FlightDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GeocoderViewModel")
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class GeocoderViewModel protected () extends StObject {
   def this(options: FlightDuration) = this()
   
-  var complete: Event[js.Array[_]] = js.native
+  var complete: Event[js.Array[js.Any]] = js.native
   
   var flightDuration: Double = js.native
   

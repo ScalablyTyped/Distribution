@@ -2,16 +2,14 @@ package typings.semanticUiShape.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-shape.SemanticUI.Shape.SelectorSettings._Impl, keyof semantic-ui-shape.SemanticUI.Shape.SelectorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplSide extends StObject {
   
-  var side: js.UndefOr[String] = js.native
+  var side: js.UndefOr[String] = js.undefined
   
-  var sides: js.UndefOr[String] = js.native
+  var sides: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplSide {
   

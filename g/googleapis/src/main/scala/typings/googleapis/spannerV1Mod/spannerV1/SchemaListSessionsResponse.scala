@@ -2,25 +2,23 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for ListSessions.
   */
-@js.native
 trait SchemaListSessionsResponse extends StObject {
   
   /**
     * `next_page_token` can be sent in a subsequent ListSessions call to fetch
     * more of the matching sessions.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of requested sessions.
     */
-  var sessions: js.UndefOr[js.Array[SchemaSession]] = js.native
+  var sessions: js.UndefOr[js.Array[SchemaSession]] = js.undefined
 }
 object SchemaListSessionsResponse {
   

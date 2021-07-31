@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDOMParser extends StObject {
   
   @JSName("MSHTML.IDOMParser_typekey")
-  var MSHTMLDotIDOMParser_typekey: IDOMParser = js.native
+  var MSHTMLDotIDOMParser_typekey: IDOMParser
   
-  def parseFromString(xmlSource: String, mimeType: String): IHTMLDocument2 = js.native
+  def parseFromString(xmlSource: String, mimeType: String): IHTMLDocument2
 }
 object IDOMParser {
   

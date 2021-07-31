@@ -2,34 +2,32 @@ package typings.passwordHash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("password-hash", "generate")
+  @JSImport("password-hash", JSImport.Namespace)
   @js.native
-  def generate(password: String): String = js.native
-  @JSImport("password-hash", "generate")
-  @js.native
-  def generate(password: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("password-hash", "isHashed")
-  @js.native
-  def isHashed(password: String): Boolean = js.native
+  @scala.inline
+  def generate(password: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(password.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def generate(password: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("password-hash", "verify")
-  @js.native
-  def verify(password: String, hashedPassword: String): Boolean = js.native
+  @scala.inline
+  def isHashed(password: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHashed")(password.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def verify(password: String, hashedPassword: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(password.asInstanceOf[js.Any], hashedPassword.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait Options extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var saltLength: js.UndefOr[Double] = js.native
+    var saltLength: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

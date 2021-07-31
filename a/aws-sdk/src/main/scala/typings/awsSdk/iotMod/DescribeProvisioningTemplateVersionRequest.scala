@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisioningTemplateVersionRequest extends StObject {
   
   /**
     * The template name.
     */
-  var templateName: TemplateName = js.native
+  var templateName: TemplateName
   
   /**
     * The fleet provisioning template version ID.
     */
-  var versionId: TemplateVersionId = js.native
+  var versionId: TemplateVersionId
 }
 object DescribeProvisioningTemplateVersionRequest {
   

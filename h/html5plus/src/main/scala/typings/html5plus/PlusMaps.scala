@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -167,9 +166,9 @@ trait PlusMaps extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def create(): PlusMapsMap = js.native
-  def create(id: js.UndefOr[scala.Nothing], styles: PlusMapsMapStyles): PlusMapsMap = js.native
   def create(id: String): PlusMapsMap = js.native
   def create(id: String, styles: PlusMapsMapStyles): PlusMapsMap = js.native
+  def create(id: Unit, styles: PlusMapsMapStyles): PlusMapsMap = js.native
   
   /**
     * 查找已经创建的Map对象
@@ -186,11 +185,11 @@ trait PlusMaps extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def openSysMap(): Unit = js.native
-  def openSysMap(dst: js.UndefOr[scala.Nothing], des: js.UndefOr[scala.Nothing], src: PlusMapsPoint): Unit = js.native
-  def openSysMap(dst: js.UndefOr[scala.Nothing], des: String): Unit = js.native
-  def openSysMap(dst: js.UndefOr[scala.Nothing], des: String, src: PlusMapsPoint): Unit = js.native
+  def openSysMap(dst: Unit, des: String): Unit = js.native
+  def openSysMap(dst: Unit, des: String, src: PlusMapsPoint): Unit = js.native
+  def openSysMap(dst: Unit, des: Unit, src: PlusMapsPoint): Unit = js.native
   def openSysMap(dst: PlusMapsPoint): Unit = js.native
-  def openSysMap(dst: PlusMapsPoint, des: js.UndefOr[scala.Nothing], src: PlusMapsPoint): Unit = js.native
   def openSysMap(dst: PlusMapsPoint, des: String): Unit = js.native
   def openSysMap(dst: PlusMapsPoint, des: String, src: PlusMapsPoint): Unit = js.native
+  def openSysMap(dst: PlusMapsPoint, des: Unit, src: PlusMapsPoint): Unit = js.native
 }

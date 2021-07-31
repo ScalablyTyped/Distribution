@@ -4,13 +4,11 @@ import typings.dateFns.dateFnsNumbers.`1`
 import typings.dateFns.dateFnsNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalDigits extends StObject {
   
-  var additionalDigits: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2`] = js.native
+  var additionalDigits: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2`] = js.undefined
 }
 object AdditionalDigits {
   

@@ -2,13 +2,11 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of options for the Instrument class.
   */
-@js.native
 trait InstrumentOptionsObject extends StObject {
   
   /**
@@ -16,32 +14,32 @@ trait InstrumentOptionsObject extends StObject {
     * a frequency not on this list, the closest frequency will be used. Set
     * to `null` to allow all frequencies to be used. Defaults to `null`.
     */
-  var allowedFrequencies: js.UndefOr[js.Array[Double]] = js.native
+  var allowedFrequencies: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The unique ID of the instrument. Generated if not supplied.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Options specific to oscillator instruments.
     */
   var oscillator: js.UndefOr[
     typings.highcharts.sonificationMod.highchartsAugmentingMod.OscillatorOptionsObject
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When using functions to determine frequency or other parameters
     * during playback, this options specifies how often to call the
     * callback functions. Number given in milliseconds. Defaults to 20.
     */
-  var playCallbackInterval: js.UndefOr[Double] = js.native
+  var playCallbackInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of instrument. Currently only `oscillator` is supported.
     * Defaults to `oscillator`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object InstrumentOptionsObject {
   

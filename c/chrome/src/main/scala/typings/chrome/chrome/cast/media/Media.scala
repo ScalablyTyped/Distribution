@@ -4,25 +4,23 @@ import typings.chrome.chrome.cast.Error
 import typings.chrome.chrome.cast.Volume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Media extends StObject {
   
-  var activeTrackIds: js.Array[Double] = js.native
+  var activeTrackIds: js.Array[Double]
   
   /**
     * @param {function(boolean)} listener
     */
-  def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
+  def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit
   
-  var currentItemId: Double = js.native
+  var currentItemId: Double
   
   /** @deprecated. Use getEstimatedTime instead */
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
   /**
     * @param {!chrome.cast.media.EditTracksInfoRequest} editTracksInfoRequest
@@ -33,13 +31,13 @@ trait Media extends StObject {
     editTracksInfoRequest: EditTracksInfoRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @return {number}
     * @suppress {deprecated} Uses currentTime member to compute estimated time.
     */
-  def getEstimatedTime(): Double = js.native
+  def getEstimatedTime(): Double
   
   /**
     * @param {chrome.cast.media.GetStatusRequest} getStatusRequest
@@ -50,19 +48,19 @@ trait Media extends StObject {
     getStatusRequest: GetStatusRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  var idleReason: IdleReason | Null = js.native
+  var idleReason: IdleReason | Null
   
-  var items: js.Array[QueueItem] = js.native
+  var items: js.Array[QueueItem]
   
-  var liveSeekableRange: js.UndefOr[LiveSeekableRange] = js.native
+  var liveSeekableRange: js.UndefOr[LiveSeekableRange] = js.undefined
   
-  var loadingItemId: Double = js.native
+  var loadingItemId: Double
   
-  var media: MediaInfo = js.native
+  var media: MediaInfo
   
-  var mediaSessionId: Double = js.native
+  var mediaSessionId: Double
   
   /**
     * @param {chrome.cast.media.PauseRequest} pauseRequest
@@ -73,7 +71,7 @@ trait Media extends StObject {
     pauseRequest: PauseRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {chrome.cast.media.PlayRequest} playRequest
@@ -84,13 +82,13 @@ trait Media extends StObject {
     playRequest: PlayRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  var playbackRate: Double = js.native
+  var playbackRate: Double
   
-  var playerState: PlayerState = js.native
+  var playerState: PlayerState
   
-  var preloadedItemId: Double = js.native
+  var preloadedItemId: Double
   
   /**
     * @param {!chrome.cast.media.QueueItem} item
@@ -101,7 +99,7 @@ trait Media extends StObject {
     item: QueueItem,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {!chrome.cast.media.QueueInsertItemsRequest} queueInsertItemsRequest
@@ -112,14 +110,14 @@ trait Media extends StObject {
     queueInsertItemsRequest: QueueInsertItemsRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {!number} itemId
     * @param {function()} successCallback
     * @param {function(!chrome.cast.Error)} errorCallback
     */
-  def queueJumpToItem(itemId: Double, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def queueJumpToItem(itemId: Double, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
     * @param {!number} itemId
@@ -132,26 +130,26 @@ trait Media extends StObject {
     newIndex: Double,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {function()} successCallback
     * @param {function(!chrome.cast.Error)} errorCallback
     */
-  def queueNext(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def queueNext(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
     * @param {function()} successCallback
     * @param {function(!chrome.cast.Error)} errorCallback
     */
-  def queuePrev(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def queuePrev(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
     * @param {!number} itemId
     * @param {function()} successCallback
     * @param {function(!chrome.cast.Error)} errorCallback
     */
-  def queueRemoveItem(itemId: Double, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def queueRemoveItem(itemId: Double, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
     * @param {!chrome.cast.media.QueueReorderItemsRequest} queueReorderItemsRequest
@@ -162,7 +160,7 @@ trait Media extends StObject {
     queueReorderItemsRequest: QueueReorderItemsRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {!chrome.cast.media.RepeatMode} repeatMode
@@ -173,7 +171,7 @@ trait Media extends StObject {
     repeatMode: RepeatMode,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {!chrome.cast.media.QueueUpdateItemsRequest} queueUpdateItemsRequest
@@ -184,14 +182,14 @@ trait Media extends StObject {
     queueUpdateItemsRequest: QueueUpdateItemsRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {function(boolean)} listener
     */
-  def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
+  def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit
   
-  var repeatMode: RepeatMode = js.native
+  var repeatMode: RepeatMode
   
   /**
     * @param {!chrome.cast.media.SeekRequest} seekRequest
@@ -202,9 +200,9 @@ trait Media extends StObject {
     seekRequest: SeekRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  var sessionId: String = js.native
+  var sessionId: String
   
   /**
     * @param {!chrome.cast.media.VolumeRequest} volumeRequest
@@ -215,7 +213,7 @@ trait Media extends StObject {
     volumeRequest: VolumeRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @param {chrome.cast.media.StopRequest} stopRequest
@@ -226,17 +224,17 @@ trait Media extends StObject {
     stopRequest: StopRequest,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  var supportedMediaCommands: js.Array[MediaCommand] = js.native
+  var supportedMediaCommands: js.Array[MediaCommand]
   
   /**
     * @param {!chrome.cast.media.MediaCommand} command
     * @return {boolean}
     */
-  def supportsCommand(command: MediaCommand): Boolean = js.native
+  def supportsCommand(command: MediaCommand): Boolean
   
-  var volume: Volume = js.native
+  var volume: Volume
 }
 object Media {
   
@@ -279,7 +277,7 @@ object Media {
     supportsCommand: MediaCommand => Boolean,
     volume: Volume
   ): Media = {
-    val __obj = js.Dynamic.literal(activeTrackIds = activeTrackIds.asInstanceOf[js.Any], addUpdateListener = js.Any.fromFunction1(addUpdateListener), currentItemId = currentItemId.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], editTracksInfo = js.Any.fromFunction3(editTracksInfo), getEstimatedTime = js.Any.fromFunction0(getEstimatedTime), getStatus = js.Any.fromFunction3(getStatus), items = items.asInstanceOf[js.Any], loadingItemId = loadingItemId.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], mediaSessionId = mediaSessionId.asInstanceOf[js.Any], pause = js.Any.fromFunction3(pause), play = js.Any.fromFunction3(play), playbackRate = playbackRate.asInstanceOf[js.Any], playerState = playerState.asInstanceOf[js.Any], preloadedItemId = preloadedItemId.asInstanceOf[js.Any], queueAppendItem = js.Any.fromFunction3(queueAppendItem), queueInsertItems = js.Any.fromFunction3(queueInsertItems), queueJumpToItem = js.Any.fromFunction3(queueJumpToItem), queueMoveItemToNewIndex = js.Any.fromFunction4(queueMoveItemToNewIndex), queueNext = js.Any.fromFunction2(queueNext), queuePrev = js.Any.fromFunction2(queuePrev), queueRemoveItem = js.Any.fromFunction3(queueRemoveItem), queueReorderItems = js.Any.fromFunction3(queueReorderItems), queueSetRepeatMode = js.Any.fromFunction3(queueSetRepeatMode), queueUpdateItems = js.Any.fromFunction3(queueUpdateItems), removeUpdateListener = js.Any.fromFunction1(removeUpdateListener), repeatMode = repeatMode.asInstanceOf[js.Any], seek = js.Any.fromFunction3(seek), sessionId = sessionId.asInstanceOf[js.Any], setVolume = js.Any.fromFunction3(setVolume), stop = js.Any.fromFunction3(stop), supportedMediaCommands = supportedMediaCommands.asInstanceOf[js.Any], supportsCommand = js.Any.fromFunction1(supportsCommand), volume = volume.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeTrackIds = activeTrackIds.asInstanceOf[js.Any], addUpdateListener = js.Any.fromFunction1(addUpdateListener), currentItemId = currentItemId.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], editTracksInfo = js.Any.fromFunction3(editTracksInfo), getEstimatedTime = js.Any.fromFunction0(getEstimatedTime), getStatus = js.Any.fromFunction3(getStatus), items = items.asInstanceOf[js.Any], loadingItemId = loadingItemId.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], mediaSessionId = mediaSessionId.asInstanceOf[js.Any], pause = js.Any.fromFunction3(pause), play = js.Any.fromFunction3(play), playbackRate = playbackRate.asInstanceOf[js.Any], playerState = playerState.asInstanceOf[js.Any], preloadedItemId = preloadedItemId.asInstanceOf[js.Any], queueAppendItem = js.Any.fromFunction3(queueAppendItem), queueInsertItems = js.Any.fromFunction3(queueInsertItems), queueJumpToItem = js.Any.fromFunction3(queueJumpToItem), queueMoveItemToNewIndex = js.Any.fromFunction4(queueMoveItemToNewIndex), queueNext = js.Any.fromFunction2(queueNext), queuePrev = js.Any.fromFunction2(queuePrev), queueRemoveItem = js.Any.fromFunction3(queueRemoveItem), queueReorderItems = js.Any.fromFunction3(queueReorderItems), queueSetRepeatMode = js.Any.fromFunction3(queueSetRepeatMode), queueUpdateItems = js.Any.fromFunction3(queueUpdateItems), removeUpdateListener = js.Any.fromFunction1(removeUpdateListener), repeatMode = repeatMode.asInstanceOf[js.Any], seek = js.Any.fromFunction3(seek), sessionId = sessionId.asInstanceOf[js.Any], setVolume = js.Any.fromFunction3(setVolume), stop = js.Any.fromFunction3(stop), supportedMediaCommands = supportedMediaCommands.asInstanceOf[js.Any], supportsCommand = js.Any.fromFunction1(supportsCommand), volume = volume.asInstanceOf[js.Any], idleReason = null)
     __obj.asInstanceOf[Media]
   }
   

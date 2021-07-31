@@ -2,40 +2,35 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorMod {
   
-  @JSImport("rot-js/lib/color", "add")
+  @JSImport("rot-js/lib/color", JSImport.Namespace)
   @js.native
-  def add(color1: Color, colors: Color*): Color = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rot-js/lib/color", "add_")
-  @js.native
-  def add_(color1: Color, colors: Color*): Color = js.native
+  @scala.inline
+  def add(color1: Color, colors: Color*): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "fromString")
-  @js.native
-  def fromString(str: String): Color = js.native
+  @scala.inline
+  def add_(color1: Color, colors: Color*): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add_")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "hsl2rgb")
-  @js.native
-  def hsl2rgb(color: Color): Color = js.native
+  @scala.inline
+  def fromString(str: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "interpolate")
-  @js.native
-  def interpolate(color1: Color, color2: Color): Color = js.native
-  @JSImport("rot-js/lib/color", "interpolate")
-  @js.native
-  def interpolate(color1: Color, color2: Color, factor: Double): Color = js.native
+  @scala.inline
+  def hsl2rgb(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "interpolateHSL")
-  @js.native
-  def interpolateHSL(color1: Color, color2: Color): Color = js.native
-  @JSImport("rot-js/lib/color", "interpolateHSL")
-  @js.native
-  def interpolateHSL(color1: Color, color2: Color, factor: Double): Color = js.native
+  @scala.inline
+  def interpolate(color1: Color, color2: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def interpolate(color1: Color, color2: Color, factor: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Color]
+  
+  @scala.inline
+  def interpolateHSL(color1: Color, color2: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def interpolateHSL(color1: Color, color2: Color, factor: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   @JSImport("rot-js/lib/color", "lerp")
   @js.native
@@ -45,32 +40,25 @@ object colorMod {
   @js.native
   val lerpHSL: js.Function3[/* color1 */ Color, /* color2 */ Color, /* factor */ js.UndefOr[Double], Color] = js.native
   
-  @JSImport("rot-js/lib/color", "multiply")
-  @js.native
-  def multiply(color1: Color, colors: Color*): Color = js.native
+  @scala.inline
+  def multiply(color1: Color, colors: Color*): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "multiply_")
-  @js.native
-  def multiply_(color1: Color, colors: Color*): Color = js.native
+  @scala.inline
+  def multiply_(color1: Color, colors: Color*): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "randomize")
-  @js.native
-  def randomize(color: Color, diff: Double): Color = js.native
-  @JSImport("rot-js/lib/color", "randomize")
-  @js.native
-  def randomize(color: Color, diff: Color): Color = js.native
+  @scala.inline
+  def randomize(color: Color, diff: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def randomize(color: Color, diff: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "rgb2hsl")
-  @js.native
-  def rgb2hsl(color: Color): Color = js.native
+  @scala.inline
+  def rgb2hsl(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsl")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @JSImport("rot-js/lib/color", "toHex")
-  @js.native
-  def toHex(color: Color): String = js.native
+  @scala.inline
+  def toHex(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("rot-js/lib/color", "toRGB")
-  @js.native
-  def toRGB(color: Color): String = js.native
+  @scala.inline
+  def toRGB(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGB")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Color = js.Tuple3[Double, Double, Double]
 }

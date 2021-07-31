@@ -9,7 +9,6 @@ import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagIndexNativeMod {
@@ -53,12 +52,13 @@ object tagIndexNativeMod {
     def onTagClose(): Unit = js.native
   }
   
-  @js.native
-  trait TagNativeProps extends TagPropsType {
+  trait TagNativeProps
+    extends StObject
+       with TagPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[ITagStyle] = js.native
+    var styles: js.UndefOr[ITagStyle] = js.undefined
   }
   object TagNativeProps {
     

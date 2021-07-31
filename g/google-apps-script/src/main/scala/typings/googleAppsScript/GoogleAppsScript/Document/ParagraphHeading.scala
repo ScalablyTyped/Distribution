@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,29 +30,47 @@ sealed trait ParagraphHeading extends StObject
 object ParagraphHeading extends StObject {
   
   @js.native
-  sealed trait HEADING1 extends ParagraphHeading
+  sealed trait HEADING1
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING2 extends ParagraphHeading
+  sealed trait HEADING2
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING3 extends ParagraphHeading
+  sealed trait HEADING3
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING4 extends ParagraphHeading
+  sealed trait HEADING4
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING5 extends ParagraphHeading
+  sealed trait HEADING5
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING6 extends ParagraphHeading
+  sealed trait HEADING6
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait NORMAL extends ParagraphHeading
+  sealed trait NORMAL
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait SUBTITLE extends ParagraphHeading
+  sealed trait SUBTITLE
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait TITLE extends ParagraphHeading
+  sealed trait TITLE
+    extends StObject
+       with ParagraphHeading
 }

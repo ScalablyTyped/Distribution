@@ -6,27 +6,25 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplainedFormat extends StObject {
   
-  var input: String = js.native
+  var input: String
   
-  var invalidReason: js.UndefOr[String] = js.native
+  var invalidReason: js.UndefOr[String] = js.undefined
   
-  var matches: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var matches: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var rawMatches: js.UndefOr[RegExpMatchArray | Null] = js.native
+  var rawMatches: js.UndefOr[RegExpMatchArray | Null] = js.undefined
   
-  var regex: js.UndefOr[RegExp] = js.native
+  var regex: js.UndefOr[RegExp] = js.undefined
   
-  var result: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  var result: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
-  var tokens: js.Array[Literal] = js.native
+  var tokens: js.Array[Literal]
   
-  var zone: js.UndefOr[Zone | Null] = js.native
+  var zone: js.UndefOr[Zone | Null] = js.undefined
 }
 object ExplainedFormat {
   

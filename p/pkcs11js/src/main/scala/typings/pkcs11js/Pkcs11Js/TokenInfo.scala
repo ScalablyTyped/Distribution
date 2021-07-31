@@ -2,47 +2,45 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenInfo extends StObject {
   
-  var firmwareVersion: Version = js.native
+  var firmwareVersion: Version
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var freePrivateMemory: Double = js.native
+  var freePrivateMemory: Double
   
-  var freePublicMemory: Double = js.native
+  var freePublicMemory: Double
   
-  var hardwareVersion: Version = js.native
+  var hardwareVersion: Version
   
-  var label: String = js.native
+  var label: String
   
-  var manufacturerID: String = js.native
+  var manufacturerID: String
   
-  var maxPinLen: Double = js.native
+  var maxPinLen: Double
   
-  var maxRwSessionCount: Double = js.native
+  var maxRwSessionCount: Double
   
-  var maxSessionCount: Double = js.native
+  var maxSessionCount: Double
   
-  var minPinLen: Double = js.native
+  var minPinLen: Double
   
-  var model: String = js.native
+  var model: String
   
-  var rwSessionCount: Double = js.native
+  var rwSessionCount: Double
   
-  var serialNumber: String = js.native
+  var serialNumber: String
   
-  var sessionCount: Double = js.native
+  var sessionCount: Double
   
-  var totalPrivateMemory: Double = js.native
+  var totalPrivateMemory: Double
   
-  var totalPublicMemory: Double = js.native
+  var totalPublicMemory: Double
   
-  var utcTime: String = js.native
+  var utcTime: String
 }
 object TokenInfo {
   

@@ -5,10 +5,13 @@ import typings.node.childProcessMod.ExecException
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-windows", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-windows", "EventLogger")
   @js.native
@@ -26,15 +29,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def auditFailure(message: String): Unit = js.native
-    def auditFailure(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def auditFailure(message: String, code: Double): Unit = js.native
     def auditFailure(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def auditFailure(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
     
@@ -49,15 +52,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def auditSuccess(message: String): Unit = js.native
-    def auditSuccess(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def auditSuccess(message: String, code: Double): Unit = js.native
     def auditSuccess(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def auditSuccess(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
     
@@ -72,15 +75,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def error(message: String): Unit = js.native
-    def error(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def error(message: String, code: Double): Unit = js.native
     def error(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def error(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
     
@@ -101,15 +104,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def info(message: String): Unit = js.native
-    def info(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def info(message: String, code: Double): Unit = js.native
     def info(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def info(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
     
@@ -124,15 +127,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def information(message: String): Unit = js.native
-    def information(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def information(message: String, code: Double): Unit = js.native
     def information(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def information(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
     
@@ -154,15 +157,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def warn(message: String): Unit = js.native
-    def warn(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def warn(message: String, code: Double): Unit = js.native
     def warn(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def warn(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
     
@@ -177,15 +180,15 @@ object mod {
       * An optional callback to run when the message is logged.
       */
     def warning(message: String): Unit = js.native
-    def warning(
-      message: String,
-      code: js.UndefOr[scala.Nothing],
-      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
-    ): Unit = js.native
     def warning(message: String, code: Double): Unit = js.native
     def warning(
       message: String,
       code: Double,
+      callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    ): Unit = js.native
+    def warning(
+      message: String,
+      code: Unit,
       callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
     ): Unit = js.native
   }
@@ -197,23 +200,31 @@ object mod {
   object LogMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[LogMode with String] = js.native
+    def apply(value: String): js.UndefOr[LogMode & String] = js.native
     
     @js.native
-    sealed trait append extends LogMode
-    /* "append" */ val append: typings.nodeWindows.mod.LogMode.append with String = js.native
+    sealed trait append
+      extends StObject
+         with LogMode
+    /* "append" */ val append: typings.nodeWindows.mod.LogMode.append & String = js.native
     
     @js.native
-    sealed trait reset extends LogMode
-    /* "reset" */ val reset: typings.nodeWindows.mod.LogMode.reset with String = js.native
+    sealed trait reset
+      extends StObject
+         with LogMode
+    /* "reset" */ val reset: typings.nodeWindows.mod.LogMode.reset & String = js.native
     
     @js.native
-    sealed trait roll extends LogMode
-    /* "roll" */ val roll: typings.nodeWindows.mod.LogMode.roll with String = js.native
+    sealed trait roll
+      extends StObject
+         with LogMode
+    /* "roll" */ val roll: typings.nodeWindows.mod.LogMode.roll & String = js.native
     
     @js.native
-    sealed trait rotate extends LogMode
-    /* "rotate" */ val rotate: typings.nodeWindows.mod.LogMode.rotate with String = js.native
+    sealed trait rotate
+      extends StObject
+         with LogMode
+    /* "rotate" */ val rotate: typings.nodeWindows.mod.LogMode.rotate & String = js.native
   }
   
   @JSImport("node-windows", "Service")
@@ -392,44 +403,34 @@ object mod {
     var workingdirectory: String = js.native
   }
   
-  @JSImport("node-windows", "elevate")
-  @js.native
-  def elevate(cmd: String, options: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def elevate(cmd: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("elevate")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-windows", "isAdminUser")
-  @js.native
-  def isAdminUser(callback: js.Function1[/* isAdmin */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isAdminUser(callback: js.Function1[/* isAdmin */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdminUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("node-windows", "kill")
-  @js.native
-  def kill(pid: Double): Unit = js.native
-  @JSImport("node-windows", "kill")
-  @js.native
-  def kill(pid: Double, force: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSImport("node-windows", "kill")
-  @js.native
-  def kill(pid: Double, force: Boolean): Unit = js.native
-  @JSImport("node-windows", "kill")
-  @js.native
-  def kill(pid: Double, force: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, force: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, force: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-windows", "list")
-  @js.native
-  def list(callback: js.Function1[/* proc */ js.Any, Unit]): Unit = js.native
-  @JSImport("node-windows", "list")
-  @js.native
-  def list(callback: js.Function1[/* proc */ js.Any, Unit], verbose: Boolean): Unit = js.native
+  @scala.inline
+  def list(callback: js.Function1[/* proc */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(callback: js.Function1[/* proc */ js.Any, Unit], verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-windows", "sudo")
-  @js.native
-  def sudo(cmd: String, password: String, options: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def sudo(cmd: String, password: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudo")(cmd.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait EnvironmentPair extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object EnvironmentPair {
     
@@ -450,12 +451,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EventLogConfig extends StObject {
     
-    var eventLog: js.UndefOr[String] = js.native
+    var eventLog: js.UndefOr[String] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object EventLogConfig {
     
@@ -482,7 +482,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ServiceConfig extends StObject {
     
     /**
@@ -491,9 +490,9 @@ object mod {
       * This does not mean the process will stop if the script throws an error. It will only abort if the
       * script throws an error causing the process to exit (i.e. `process.exit(1)`).
       */
-    var abortOnError: js.UndefOr[Boolean] = js.native
+    var abortOnError: js.UndefOr[Boolean] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * @cfg {Array|Object} [env]
@@ -525,14 +524,14 @@ object mod {
       *      }]
       *     });
       */
-    var env: js.UndefOr[EnvironmentPair | js.Array[EnvironmentPair]] = js.native
+    var env: js.UndefOr[EnvironmentPair | js.Array[EnvironmentPair]] = js.undefined
     
     /**
       * @cfg {String} execPath
       * The absolute path to the executable that will launch the script.
       * If omitted process.execPath is used.
       */
-    var execPath: js.UndefOr[String] = js.native
+    var execPath: js.UndefOr[String] = js.undefined
     
     /**
       * @cfg {Number} [grow=.25]
@@ -541,60 +540,60 @@ object mod {
       * on every restart attempt. If a process dies fatally, this will prevent the server from
       * restarting the process too rapidly (and too strenuously).
       */
-    var grow: js.UndefOr[Double] = js.native
+    var grow: js.UndefOr[Double] = js.undefined
     
-    var logmode: js.UndefOr[LogMode] = js.native
+    var logmode: js.UndefOr[LogMode] = js.undefined
     
-    var logpath: js.UndefOr[String] = js.native
+    var logpath: js.UndefOr[String] = js.undefined
     
     /**
       * @cfg {Number} [maxRestarts=3]
       * The maximum number of restarts within a 60 second period before haulting the process.
       * This cannot be _disabled_, but it can be rendered ineffective by setting a value of `0`.
       */
-    var maxRestarts: js.UndefOr[Double] = js.native
+    var maxRestarts: js.UndefOr[Double] = js.undefined
     
     /**
       * @cfg {Number} [maxRetries=null]
       * The maximum number of restart attempts to make before the service is considered non-responsive/faulty.
       * Ignored by default.
       */
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * @cfg {string} [nodeOptions='--harmony']
       * Options to be passed to the node process.
       */
-    var nodeOptions: js.UndefOr[String] = js.native
+    var nodeOptions: js.UndefOr[String] = js.undefined
     
     /**
       * @cfg {String} script
       * The absolute path of the script to launch as a service.
       * @required
       */
-    var script: String = js.native
+    var script: String
     
     /**
       * @cfg {Boolean} [stopparentfirst=false]
       * Allow the service to shutdown cleanly.
       */
-    var stopparentfirst: js.UndefOr[Boolean] = js.native
+    var stopparentfirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @cfg {Number} [stoptimeout=30]
       * How long to wait in seconds before force killing the application.
       * This only takes effect when stopparentfirst is enabled.
       */
-    var stoptimeout: js.UndefOr[Double] = js.native
+    var stoptimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * @cfg {Number} [wait=1]
       * The initial number of seconds to wait before attempting a restart (after the script stops).
       */
     @JSName("wait")
-    var wait_FServiceConfig: js.UndefOr[Double] = js.native
+    var wait_FServiceConfig: js.UndefOr[Double] = js.undefined
   }
   object ServiceConfig {
     
@@ -699,16 +698,15 @@ object mod {
     }
   }
   
-  @js.native
   trait User extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var domain: String = js.native
+    var domain: String
     
-    var mungeCredentialsAfterInstall: js.UndefOr[Boolean] = js.native
+    var mungeCredentialsAfterInstall: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
   }
   object User {
     
@@ -738,32 +736,31 @@ object mod {
     }
   }
   
-  @js.native
   trait WinswConfig extends StObject {
     
-    var dependencies: String | js.Array[String] = js.native
+    var dependencies: String | js.Array[String]
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var env: EnvironmentPair | js.Array[EnvironmentPair] = js.native
+    var env: EnvironmentPair | js.Array[EnvironmentPair]
     
-    var id: String = js.native
+    var id: String
     
-    var logOnAs: User = js.native
+    var logOnAs: User
     
-    var logmode: LogMode = js.native
+    var logmode: LogMode
     
-    var logpath: String = js.native
+    var logpath: String
     
-    var name: String = js.native
+    var name: String
     
-    var nodeOptions: js.UndefOr[String | js.Array[String]] = js.native
+    var nodeOptions: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var script: String = js.native
+    var script: String
     
-    var workingdirectory: String = js.native
+    var workingdirectory: String
     
-    var wrapperArgs: String = js.native
+    var wrapperArgs: String
   }
   object WinswConfig {
     

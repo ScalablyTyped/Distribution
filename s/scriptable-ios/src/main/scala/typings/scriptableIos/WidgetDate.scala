@@ -3,14 +3,12 @@ package typings.scriptableIos
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Date element shown in a widget._
   * @see https://docs.scriptable.app/widgetdate
   */
-@js.native
 trait WidgetDate extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait WidgetDate extends StObject {
     * This is the default.
     * @see https://docs.scriptable.app/widgetdate/#-applydatestyle
     */
-  def applyDateStyle(): Unit = js.native
+  def applyDateStyle(): Unit
   
   /**
     * _Display date as offset from now._
@@ -29,7 +27,7 @@ trait WidgetDate extends StObject {
     * Example output: +2 hours -3 months
     * @see https://docs.scriptable.app/widgetdate/#-applyoffsetstyle
     */
-  def applyOffsetStyle(): Unit = js.native
+  def applyOffsetStyle(): Unit
   
   /**
     * _Display date as relative to now._
@@ -37,7 +35,7 @@ trait WidgetDate extends StObject {
     * Example output: 2 hours, 23 minutes 1 year, 1 month
     * @see https://docs.scriptable.app/widgetdate/#-applyrelativestyle
     */
-  def applyRelativeStyle(): Unit = js.native
+  def applyRelativeStyle(): Unit
   
   /**
     * _Display time component of the date._
@@ -45,7 +43,7 @@ trait WidgetDate extends StObject {
     * Example output: 11:23PM
     * @see https://docs.scriptable.app/widgetdate/#-applytimestyle
     */
-  def applyTimeStyle(): Unit = js.native
+  def applyTimeStyle(): Unit
   
   /**
     * _Display date as timer counting from now._
@@ -53,7 +51,7 @@ trait WidgetDate extends StObject {
     * Example output: 2:32 36:59:01
     * @see https://docs.scriptable.app/widgetdate/#-applytimerstyle
     */
-  def applyTimerStyle(): Unit = js.native
+  def applyTimerStyle(): Unit
   
   /**
     * _Center aligns the text._
@@ -64,19 +62,19 @@ trait WidgetDate extends StObject {
     * before and after the text.
     * @see https://docs.scriptable.app/widgetdate/#-centeraligntext
     */
-  def centerAlignText(): Unit = js.native
+  def centerAlignText(): Unit
   
   /**
     * _Date to show in a widget._
     * @see https://docs.scriptable.app/widgetdate/#date
     */
-  var date: Date = js.native
+  var date: Date
   
   /**
     * _Font and text size of the text._
     * @see https://docs.scriptable.app/widgetdate/#font
     */
-  var font: Font = js.native
+  var font: Font
   
   /**
     * _Left aligns the text._
@@ -87,7 +85,7 @@ trait WidgetDate extends StObject {
     * after the text.
     * @see https://docs.scriptable.app/widgetdate/#-leftaligntext
     */
-  def leftAlignText(): Unit = js.native
+  def leftAlignText(): Unit
   
   /**
     * _Maximum number of lines._
@@ -95,7 +93,7 @@ trait WidgetDate extends StObject {
     * Maximum number of lines to display. The limit is disabled when the value is 0 or less. Defaults to 0.
     * @see https://docs.scriptable.app/widgetdate/#linelimit
     */
-  var lineLimit: Double = js.native
+  var lineLimit: Double
   
   /**
     * _Minimum amount the text scales down to._
@@ -104,7 +102,7 @@ trait WidgetDate extends StObject {
     * size half the size of the actual font. The scale factor should be a fraction between 0 and 1, both inclusive. Defaults to 1.
     * @see https://docs.scriptable.app/widgetdate/#minimumscalefactor
     */
-  var minimumScaleFactor: Double = js.native
+  var minimumScaleFactor: Double
   
   /**
     * _Right aligns the text._
@@ -115,7 +113,7 @@ trait WidgetDate extends StObject {
     * before the text.
     * @see https://docs.scriptable.app/widgetdate/#-rightaligntext
     */
-  def rightAlignText(): Unit = js.native
+  def rightAlignText(): Unit
   
   /**
     * _Color of the shadow._
@@ -123,7 +121,7 @@ trait WidgetDate extends StObject {
     * Sets the color of the shadow cast by the text. The `shadowRadius` property must have a value greater than zero for this property to have an effect. Defaults to black.
     * @see https://docs.scriptable.app/widgetdate/#shadowcolor
     */
-  var shadowColor: Color = js.native
+  var shadowColor: Color
   
   /**
     * _Offset of the shadow._
@@ -131,7 +129,7 @@ trait WidgetDate extends StObject {
     * Sets the offset of the shadow cast by the text. The `shadowRadius` property must have a value greater than zero for this property to have an effect. Defaults to (0, 0).
     * @see https://docs.scriptable.app/widgetdate/#shadowoffset
     */
-  var shadowOffset: Point = js.native
+  var shadowOffset: Point
   
   /**
     * _Size of the shadow._
@@ -139,13 +137,13 @@ trait WidgetDate extends StObject {
     * Sets the size of the shadow cast by the text. Defaults to 0.
     * @see https://docs.scriptable.app/widgetdate/#shadowradius
     */
-  var shadowRadius: Double = js.native
+  var shadowRadius: Double
   
   /**
     * _Color of the text._
     * @see https://docs.scriptable.app/widgetdate/#textcolor
     */
-  var textColor: Color = js.native
+  var textColor: Color
   
   /**
     * _Opacity of the text._
@@ -153,7 +151,7 @@ trait WidgetDate extends StObject {
     * Opacity of the text. This must be a value between 0 and 1. Defaults to 1.
     * @see https://docs.scriptable.app/widgetdate/#textopacity
     */
-  var textOpacity: Double = js.native
+  var textOpacity: Double
   
   /**
     * _URL to open._
@@ -162,7 +160,7 @@ trait WidgetDate extends StObject {
     * property on the widget.
     * @see https://docs.scriptable.app/widgetdate/#url
     */
-  var url: String = js.native
+  var url: String
 }
 object WidgetDate {
   

@@ -3,10 +3,13 @@ package typings.seen.mod
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
+  
+  @JSImport("seen", "Events")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The Dispatcher class. These objects have methods that can be invoked like dispatch.eventName(). Listeners can be registered with dispatch.on('eventName.uniqueId', callback). Listeners can be
@@ -21,14 +24,12 @@ object Events {
     def on(`type`: String, listener: EventListener): Dispatcher = js.native
   }
   
-  @JSImport("seen", "Events.Event")
-  @js.native
-  def Event(): Unit = js.native
+  @scala.inline
+  def Event(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Event")().asInstanceOf[Unit]
   
   /**
     * Return a new dispatcher that creates event types using the supplied string argument list. The returned Dispatcher will have methods with the names of the event types.
     */
-  @JSImport("seen", "Events.dispatch")
-  @js.native
-  def dispatch(): Dispatcher = js.native
+  @scala.inline
+  def dispatch(): Dispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")().asInstanceOf[Dispatcher]
 }

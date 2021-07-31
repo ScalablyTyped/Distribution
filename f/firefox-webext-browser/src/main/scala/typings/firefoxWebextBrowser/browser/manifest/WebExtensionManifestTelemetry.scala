@@ -2,21 +2,19 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestTelemetry extends StObject {
   
-  var ping_type: String = js.native
+  var ping_type: String
   
-  var pioneer_id: js.UndefOr[Boolean] = js.native
+  var pioneer_id: js.UndefOr[Boolean] = js.undefined
   
-  var public_key: WebExtensionManifestTelemetryPublicKey = js.native
+  var public_key: WebExtensionManifestTelemetryPublicKey
   
-  var schemaNamespace: String = js.native
+  var schemaNamespace: String
   
-  var study_name: js.UndefOr[String] = js.native
+  var study_name: js.UndefOr[String] = js.undefined
 }
 object WebExtensionManifestTelemetry {
   

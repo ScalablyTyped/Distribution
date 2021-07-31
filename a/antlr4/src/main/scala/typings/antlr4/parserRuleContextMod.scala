@@ -7,7 +7,6 @@ import typings.antlr4.treeMod.ErrorNode
 import typings.antlr4.treeMod.ParseTreeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserRuleContextMod {
@@ -39,7 +38,7 @@ object parserRuleContextMod {
     
     def getTypedRuleContext(cxtType: js.Any, i: Double): js.Any = js.native
     
-    def getTypedRuleContexts(cxtType: js.Any): js.Array[_] = js.native
+    def getTypedRuleContexts(cxtType: js.Any): js.Array[js.Any] = js.native
     
     def removeLastChild(): Unit = js.native
     

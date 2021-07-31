@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessUsers extends StObject {
   
   // Group IDs excluded from scope of policy.
-  var excludeGroups: js.UndefOr[js.Array[String]] = js.native
+  var excludeGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   // Role IDs excluded from scope of policy.
-  var excludeRoles: js.UndefOr[js.Array[String]] = js.native
+  var excludeRoles: js.UndefOr[js.Array[String]] = js.undefined
   
   // User IDs excluded from scope of policy and/or GuestsOrExternalUsers.
-  var excludeUsers: js.UndefOr[js.Array[String]] = js.native
+  var excludeUsers: js.UndefOr[js.Array[String]] = js.undefined
   
   // Group IDs in scope of policy unless explicitly excluded, or All.
-  var includeGroups: js.UndefOr[js.Array[String]] = js.native
+  var includeGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   // Role IDs in scope of policy unless explicitly excluded, or All.
-  var includeRoles: js.UndefOr[js.Array[String]] = js.native
+  var includeRoles: js.UndefOr[js.Array[String]] = js.undefined
   
   // User IDs in scope of policy unless explicitly excluded, or None or All or GuestsOrExternalUsers.
-  var includeUsers: js.UndefOr[js.Array[String]] = js.native
+  var includeUsers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessUsers {
   

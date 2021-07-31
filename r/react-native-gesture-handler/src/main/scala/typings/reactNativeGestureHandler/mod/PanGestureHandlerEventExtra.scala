@@ -2,27 +2,25 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanGestureHandlerEventExtra extends StObject {
   
-  var absoluteX: Double = js.native
+  var absoluteX: Double
   
-  var absoluteY: Double = js.native
+  var absoluteY: Double
   
-  var translationX: Double = js.native
+  var translationX: Double
   
-  var translationY: Double = js.native
+  var translationY: Double
   
-  var velocityX: Double = js.native
+  var velocityX: Double
   
-  var velocityY: Double = js.native
+  var velocityY: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object PanGestureHandlerEventExtra {
   

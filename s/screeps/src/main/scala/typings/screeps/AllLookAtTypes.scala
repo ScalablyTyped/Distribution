@@ -2,42 +2,40 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllLookAtTypes extends StObject {
   
-  var constructionSite: ConstructionSite[BuildableStructureConstant] = js.native
+  var constructionSite: ConstructionSite[BuildableStructureConstant]
   
-  var creep: Creep = js.native
+  var creep: Creep
   
-  var deposit: Deposit = js.native
+  var deposit: Deposit
   
-  var energy: Resource[RESOURCE_ENERGY] = js.native
+  var energy: Resource[RESOURCE_ENERGY]
   
-  var exit: js.Any = js.native
+  var exit: js.Any
   
   // TODO what type is this?
-  var flag: Flag = js.native
+  var flag: Flag
   
-  var mineral: Mineral[MineralConstant] = js.native
+  var mineral: Mineral[MineralConstant]
   
-  var nuke: Nuke = js.native
+  var nuke: Nuke
   
-  var powerCreep: PowerCreep = js.native
+  var powerCreep: PowerCreep
   
-  var resource: Resource[ResourceConstant] = js.native
+  var resource: Resource[ResourceConstant]
   
-  var ruin: Ruin = js.native
+  var ruin: Ruin
   
-  var source: Source = js.native
+  var source: Source
   
-  var structure: Structure[StructureConstant] = js.native
+  var structure: Structure[StructureConstant]
   
-  var terrain: Terrain = js.native
+  var terrain: Terrain
   
-  var tombstone: Tombstone = js.native
+  var tombstone: Tombstone
 }
 object AllLookAtTypes {
   

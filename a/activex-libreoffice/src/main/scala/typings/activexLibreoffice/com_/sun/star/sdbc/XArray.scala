@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * By default, an `Array` is a transaction duration reference to an SQL array. By default, an `Array` is implemented using a SQL LOCATOR(array)
   * internally.
   */
-@js.native
-trait XArray extends XInterface {
+trait XArray
+  extends StObject
+     with XInterface {
   
   /**
     * returns the SDBC type of the elements in the array designated by this `Array` object.
     * @returns a constant from the SDBC types that is the type code for the elements in the array designated by this Array object.
     * @throws SQLException if a database access error occurs.
     */
-  val BaseType: Double = js.native
+  val BaseType: Double
   
   /**
     * returns the SQL type name of the elements in the array designated by this `Array` object.
@@ -33,7 +33,7 @@ trait XArray extends XInterface {
     * @returns a String that is the database-specific name for a built-in base type or the fully-qualified SQL type name for a base type that is a UDT
     * @throws SQLException if a database access error occurs.
     */
-  val BaseTypeName: String = js.native
+  val BaseTypeName: String
   
   /**
     * retrieves the contents of the SQL array designated by this `Array` object, using the specified `typeMap` for type map customizations.
@@ -43,7 +43,7 @@ trait XArray extends XInterface {
     * @returns an sequence that contains the ordered elements of the SQL array designated by this object.
     * @throws SQLException if an error occurs while attempting to access the array.
     */
-  def getArray(typeMap: XNameAccess): SafeArray[_] = js.native
+  def getArray(typeMap: XNameAccess): SafeArray[js.Any]
   
   /**
     * returns an array containing a slice of the SQL array, beginning with the specified `index` and containing up to `count` successive elements of the SQL
@@ -54,14 +54,14 @@ trait XArray extends XInterface {
     * @returns an array containing up to `count` consecutive elements of the SQL array, beginning with element `index` .
     * @throws SQLException if an error occurs while attempting to access the array.
     */
-  def getArrayAtIndex(index: Double, count: Double, typeMap: XNameAccess): SafeArray[_] = js.native
+  def getArrayAtIndex(index: Double, count: Double, typeMap: XNameAccess): SafeArray[js.Any]
   
   /**
     * returns the SDBC type of the elements in the array designated by this `Array` object.
     * @returns a constant from the SDBC types that is the type code for the elements in the array designated by this Array object.
     * @throws SQLException if a database access error occurs.
     */
-  def getBaseType(): Double = js.native
+  def getBaseType(): Double
   
   /**
     * returns the SQL type name of the elements in the array designated by this `Array` object.
@@ -71,7 +71,7 @@ trait XArray extends XInterface {
     * @returns a String that is the database-specific name for a built-in base type or the fully-qualified SQL type name for a base type that is a UDT
     * @throws SQLException if a database access error occurs.
     */
-  def getBaseTypeName(): String = js.native
+  def getBaseTypeName(): String
   
   /**
     * returns a result set that contains the elements of the array designated by this `Array` object and uses the given `typeMap` to map the array elements.
@@ -85,7 +85,7 @@ trait XArray extends XInterface {
     * @returns a {@link ResultSet} object containing one row for each of the elements in the array designated by this Array object, with the rows in ascending o
     * @throws SQLException if a database access error occurs.
     */
-  def getResultSet(typeMap: XNameAccess): XResultSet = js.native
+  def getResultSet(typeMap: XNameAccess): XResultSet
   
   /**
     * returns a result set holding the elements of the subarray that starts at index `index` and contains up to `count` successive elements. This method
@@ -101,7 +101,7 @@ trait XArray extends XInterface {
     * @returns a {@link ResultSet} object containing up to count consecutive elements of the SQL array designated by this Array object, starting at index index.
     * @throws SQLException if a database access error occurs.
     */
-  def getResultSetAtIndex(index: Double, count: Double, typeMap: XNameAccess): XResultSet = js.native
+  def getResultSetAtIndex(index: Double, count: Double, typeMap: XNameAccess): XResultSet
 }
 object XArray {
   
@@ -110,8 +110,8 @@ object XArray {
     BaseType: Double,
     BaseTypeName: String,
     acquire: () => Unit,
-    getArray: XNameAccess => SafeArray[_],
-    getArrayAtIndex: (Double, Double, XNameAccess) => SafeArray[_],
+    getArray: XNameAccess => SafeArray[js.Any],
+    getArrayAtIndex: (Double, Double, XNameAccess) => SafeArray[js.Any],
     getBaseType: () => Double,
     getBaseTypeName: () => String,
     getResultSet: XNameAccess => XResultSet,
@@ -133,10 +133,10 @@ object XArray {
     def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetArray(value: XNameAccess => SafeArray[_]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
+    def setGetArray(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[_]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
+    def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[js.Any]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
     
     @scala.inline
     def setGetBaseType(value: () => Double): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))

@@ -2,7 +2,6 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "TaskRouterCapability")
@@ -23,36 +22,18 @@ class TaskRouterCapability protected () extends StObject {
   var accountSid: String = js.native
   
   def addPolicy(url: String, method: String): Unit = js.native
-  def addPolicy(
-    url: String,
-    method: String,
-    allowed: js.UndefOr[scala.Nothing],
-    queryFilter: js.UndefOr[scala.Nothing],
-    postFilter: js.Any
-  ): Unit = js.native
-  def addPolicy(url: String, method: String, allowed: js.UndefOr[scala.Nothing], queryFilter: js.Any): Unit = js.native
-  def addPolicy(
-    url: String,
-    method: String,
-    allowed: js.UndefOr[scala.Nothing],
-    queryFilter: js.Any,
-    postFilter: js.Any
-  ): Unit = js.native
   def addPolicy(url: String, method: String, allowed: Boolean): Unit = js.native
-  def addPolicy(
-    url: String,
-    method: String,
-    allowed: Boolean,
-    queryFilter: js.UndefOr[scala.Nothing],
-    postFilter: js.Any
-  ): Unit = js.native
   def addPolicy(url: String, method: String, allowed: Boolean, queryFilter: js.Any): Unit = js.native
   def addPolicy(url: String, method: String, allowed: Boolean, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
+  def addPolicy(url: String, method: String, allowed: Boolean, queryFilter: Unit, postFilter: js.Any): Unit = js.native
+  def addPolicy(url: String, method: String, allowed: Unit, queryFilter: js.Any): Unit = js.native
+  def addPolicy(url: String, method: String, allowed: Unit, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
+  def addPolicy(url: String, method: String, allowed: Unit, queryFilter: Unit, postFilter: js.Any): Unit = js.native
   
   def allow(url: String, method: String): Unit = js.native
-  def allow(url: String, method: String, queryFilter: js.UndefOr[scala.Nothing], postFilter: js.Any): Unit = js.native
   def allow(url: String, method: String, queryFilter: js.Any): Unit = js.native
   def allow(url: String, method: String, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
+  def allow(url: String, method: String, queryFilter: Unit, postFilter: js.Any): Unit = js.native
   
   def allowDelete(): Unit = js.native
   
@@ -75,9 +56,9 @@ class TaskRouterCapability protected () extends StObject {
   var channelId: String = js.native
   
   def deny(url: String, method: String): Unit = js.native
-  def deny(url: String, method: String, queryFilter: js.UndefOr[scala.Nothing], postFilter: js.Any): Unit = js.native
   def deny(url: String, method: String, queryFilter: js.Any): Unit = js.native
   def deny(url: String, method: String, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
+  def deny(url: String, method: String, queryFilter: Unit, postFilter: js.Any): Unit = js.native
   
   def generate(ttl: Double): String = js.native
   

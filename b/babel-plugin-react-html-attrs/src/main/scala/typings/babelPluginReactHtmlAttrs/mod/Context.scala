@@ -2,17 +2,15 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context[T] extends StObject {
   
-  var Consumer: typings.babelPluginReactHtmlAttrs.mod.Consumer[T] = js.native
+  var Consumer: typings.babelPluginReactHtmlAttrs.mod.Consumer[T]
   
-  var Provider: typings.babelPluginReactHtmlAttrs.mod.Provider[T] = js.native
+  var Provider: typings.babelPluginReactHtmlAttrs.mod.Provider[T]
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
 }
 object Context {
   
@@ -23,7 +21,7 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context[_], T] (val x: Self with Context[T]) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
     
     @scala.inline
     def setConsumer(value: Consumer[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])

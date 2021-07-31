@@ -6,37 +6,35 @@ import typings.pubnub.pubnubStrings.leave
 import typings.pubnub.pubnubStrings.timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PresenceEvent extends StObject {
   
-  var action: join | leave | `state-change` | timeout = js.native
+  var action: join | leave | `state-change` | timeout
   
   /**
     * deprecated:
     */
-  var actualChannel: String = js.native
+  var actualChannel: String
   
-  var channel: String = js.native
+  var channel: String
   
-  var occupancy: Double = js.native
+  var occupancy: Double
   
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
   
   /**
     * deprecated:
     */
-  var subscribedChannel: String = js.native
+  var subscribedChannel: String
   
-  var subscription: String = js.native
+  var subscription: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var timetoken: String = js.native
+  var timetoken: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object PresenceEvent {
   

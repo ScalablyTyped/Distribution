@@ -3,21 +3,19 @@ package typings.openpgp.anon
 import typings.openpgp.openpgpBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Passphrase extends StObject {
   
-  var passphrase: String = js.native
+  var passphrase: String
   
-  var sign: `true` = js.native
+  var sign: `true`
 }
 object Passphrase {
   
   @scala.inline
-  def apply(passphrase: String, sign: `true`): Passphrase = {
-    val __obj = js.Dynamic.literal(passphrase = passphrase.asInstanceOf[js.Any], sign = sign.asInstanceOf[js.Any])
+  def apply(passphrase: String): Passphrase = {
+    val __obj = js.Dynamic.literal(passphrase = passphrase.asInstanceOf[js.Any], sign = true)
     __obj.asInstanceOf[Passphrase]
   }
   

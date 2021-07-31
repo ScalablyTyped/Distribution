@@ -11,50 +11,48 @@ import typings.octokitTypes.octokitTypesStrings.popularity
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsListEndpoint extends StObject {
   
   /**
     * Filter pulls by base branch name. Example: `gh-pages`.
     */
-  var base: js.UndefOr[String] = js.native
+  var base: js.UndefOr[String] = js.undefined
   
   /**
     * The direction of the sort. Can be either `asc` or `desc`. Default: `desc` when sort is `created` or sort is not specified, otherwise `asc`.
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * Filter pulls by head user or head organization and branch name in the format of `user:ref-name` or `organization:ref-name`. For example: `github:new-script-format` or `octocat:test-branch`.
     */
-  var head: js.UndefOr[String] = js.native
+  var head: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * What to sort results by. Can be either `created`, `updated`, `popularity` (comment count) or `long-running` (age, filtering by pulls updated in the last month).
     */
-  var sort: js.UndefOr[created | updated | popularity | `long-running`] = js.native
+  var sort: js.UndefOr[created | updated | popularity | `long-running`] = js.undefined
   
   /**
     * Either `open`, `closed`, or `all` to filter by state.
     */
-  var state: js.UndefOr[open | closed | all] = js.native
+  var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object PullsListEndpoint {
   

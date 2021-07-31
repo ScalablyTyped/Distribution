@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts rows or columns in a sheet at a particular index.
   */
-@js.native
 trait SchemaInsertDimensionRequest extends StObject {
   
   /**
@@ -23,13 +21,13 @@ trait SchemaInsertDimensionRequest extends StObject {
     * `inheritFromBefore` is false, the two new rows will be green (because the
     * row after the insertion point was green).
     */
-  var inheritFromBefore: js.UndefOr[Boolean] = js.native
+  var inheritFromBefore: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The dimensions to insert.  Both the start and end indexes must be
     * bounded.
     */
-  var range: js.UndefOr[SchemaDimensionRange] = js.native
+  var range: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaInsertDimensionRequest {
   

@@ -3,20 +3,19 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activity
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var ccy_exec_peak: js.Array[Double] = js.native
+  var ccy_exec_peak: js.Array[Double]
   
-  var datestamp: js.Array[String] = js.native
+  var datestamp: js.Array[String]
   
-  var jobs: js.Array[Double] = js.native
+  var jobs: js.Array[Double]
   
-  var minutes: js.Array[Double] = js.native
+  var minutes: js.Array[Double]
 }
 object Activity {
   

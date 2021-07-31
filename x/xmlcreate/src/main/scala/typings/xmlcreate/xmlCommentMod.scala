@@ -2,30 +2,30 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlCommentMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlComment", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlComment[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlComment[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCommentOptions) = this()
   }
   
-  @js.native
   trait IXmlCommentOptions extends StObject {
     
     /**
       * The content of the comment.
       */
-    var charData: String = js.native
+    var charData: String
     
     /**
       * Whether to replace any invalid characters in the content of the comment
       * with the Unicode replacement character. By default, this is disabled.
       */
-    var replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.native
+    var replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.undefined
   }
   object IXmlCommentOptions {
     

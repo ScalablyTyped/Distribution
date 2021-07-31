@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApiKeyResponse extends StObject {
   
   /**
     * The API key.
     */
-  var apiKey: js.UndefOr[ApiKey] = js.native
+  var apiKey: js.UndefOr[ApiKey] = js.undefined
 }
 object UpdateApiKeyResponse {
   

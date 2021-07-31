@@ -10,9 +10,9 @@ TypeScript typings for Analytics Reporting API v4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.analyticsreporting |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 549 |
+| # downloads        | 851 |
 | # stars            | 0 |
 
 ## Links

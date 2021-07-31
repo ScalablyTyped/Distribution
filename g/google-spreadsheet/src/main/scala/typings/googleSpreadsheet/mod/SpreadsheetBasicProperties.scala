@@ -2,29 +2,27 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadsheetBasicProperties extends StObject {
   
   /**
     * @description
     * when volatile functions should be recalculated
     */
-  var autoRecalc: js.UndefOr[RecalculationInterval] = js.native
+  var autoRecalc: js.UndefOr[RecalculationInterval] = js.undefined
   
   /**
     * @description
     * default format for all cells in all worksheets of the document
     */
-  var defaultFormat: js.UndefOr[CellFormat] = js.native
+  var defaultFormat: js.UndefOr[CellFormat] = js.undefined
   
   /**
     * @description
     * how circular dependencies are resolved with iterative calculations
     */
-  var iterativeCalculationSettings: js.UndefOr[IterativeCalculationSetting] = js.native
+  var iterativeCalculationSettings: js.UndefOr[IterativeCalculationSetting] = js.undefined
   
   /**
     * @description
@@ -32,13 +30,13 @@ trait SpreadsheetBasicProperties extends StObject {
     * - ISO code format
     * - ex: "en", "en_US"
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * @description
     * theme applied to all worksheets of the document
     */
-  var spreadsheetTheme: js.UndefOr[SpreadsheetTheme] = js.native
+  var spreadsheetTheme: js.UndefOr[SpreadsheetTheme] = js.undefined
   
   /**
     * @description
@@ -46,7 +44,7 @@ trait SpreadsheetBasicProperties extends StObject {
     * - CLDR format
     * - ex: "America/New_York", "GMT-07:00"
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   // #region BASIC PROPERTIES
   /* separates basic (editable) properties as they are used as inputs to various methods
@@ -56,7 +54,7 @@ trait SpreadsheetBasicProperties extends StObject {
     * @description
     * document title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SpreadsheetBasicProperties {
   

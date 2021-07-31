@@ -9,7 +9,6 @@ import typings.reactFlexr.reactFlexrStrings.right
 import typings.reactFlexr.reactFlexrStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactFlexr {
@@ -18,52 +17,53 @@ object ReactFlexr {
   trait Cell
     extends Component[CellProps, js.Object, js.Any]
   
-  @js.native
-  trait CellProps extends Props[Cell] {
+  trait CellProps
+    extends StObject
+       with Props[Cell] {
     
     /**
       * Vertical Align This Cell: top, center, bottom
       */
-    var align: js.UndefOr[top | center | bottom] = js.native
+    var align: js.UndefOr[top | center | bottom] = js.undefined
     
     /**
       * Like size, but only for desk devices.
       * Accepts 'hidden' as well.
       */
-    var desk: js.UndefOr[String | Double] = js.native
+    var desk: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Cell will be full height.
       */
-    var flex: js.UndefOr[Boolean] = js.native
+    var flex: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Override default gutter: '1em', '5%', '10px', etc.
       */
-    var gutter: js.UndefOr[String] = js.native
+    var gutter: js.UndefOr[String] = js.undefined
     
     /**
       * Like size, but only for lap devices.
       * Accepts 'hidden' as well.
       */
-    var lap: js.UndefOr[String | Double] = js.native
+    var lap: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Like size, but only for palm devices.
       * Accepts 'hidden' as well.
       */
-    var palm: js.UndefOr[String | Double] = js.native
+    var palm: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Like size, but only for ( palm + lap ) devices.
       * Accepts 'hidden' as well.
       */
-    var portable: js.UndefOr[String | Double] = js.native
+    var portable: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Takes a fraction. e.g. 1/6
       */
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object CellProps {
     
@@ -152,30 +152,31 @@ object ReactFlexr {
   trait Grid
     extends Component[GridProps, js.Object, js.Any]
   
-  @js.native
-  trait GridProps extends Props[Grid] {
+  trait GridProps
+    extends StObject
+       with Props[Grid] {
     
     /**
       * Vertical Align Sub Cells: top, center, bottom
       */
-    var align: js.UndefOr[top | center | bottom] = js.native
+    var align: js.UndefOr[top | center | bottom] = js.undefined
     
     /**
       * All sub cells will be full height.
       */
-    var flexCells: js.UndefOr[Boolean] = js.native
+    var flexCells: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Override default gutter: '1em', '5%', '10px', etc.
       * Propagates downwards. Cells inside this Grid component
       * will use the same gutter.
       */
-    var gutter: js.UndefOr[String] = js.native
+    var gutter: js.UndefOr[String] = js.undefined
     
     /**
       * Horizontal Align Sub Cells: left, center, right
       */
-    var hAlign: js.UndefOr[left | center | right] = js.native
+    var hAlign: js.UndefOr[left | center | right] = js.undefined
   }
   object GridProps {
     
@@ -219,10 +220,9 @@ object ReactFlexr {
     * app have been resized. For best performance, use it in your main
     * app component in the componentDidMount life cycle.
     */
-  @js.native
   trait OptimizedResize extends StObject {
     
-    def init(callback: js.Function0[Unit]): Unit = js.native
+    def init(callback: js.Function0[Unit]): Unit
   }
   object OptimizedResize {
     

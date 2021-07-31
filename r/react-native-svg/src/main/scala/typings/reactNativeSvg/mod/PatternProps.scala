@@ -2,31 +2,29 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatternProps extends StObject {
   
-  var height: js.UndefOr[NumberProp] = js.native
+  var height: js.UndefOr[NumberProp] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var patternContentUnits: js.UndefOr[Units] = js.native
+  var patternContentUnits: js.UndefOr[Units] = js.undefined
   
-  var patternTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.native
+  var patternTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   
-  var patternUnits: js.UndefOr[Units] = js.native
+  var patternUnits: js.UndefOr[Units] = js.undefined
   
-  var preserveAspectRatio: js.UndefOr[String] = js.native
+  var preserveAspectRatio: js.UndefOr[String] = js.undefined
   
-  var viewBox: js.UndefOr[String] = js.native
+  var viewBox: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[NumberProp] = js.native
+  var width: js.UndefOr[NumberProp] = js.undefined
   
-  var x: js.UndefOr[NumberProp] = js.native
+  var x: js.UndefOr[NumberProp] = js.undefined
   
-  var y: js.UndefOr[NumberProp] = js.native
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 object PatternProps {
   

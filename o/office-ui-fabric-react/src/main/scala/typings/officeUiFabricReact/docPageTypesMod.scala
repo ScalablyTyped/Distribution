@@ -16,14 +16,13 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricMergeStyles.istylesetMod.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object docPageTypesMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.officeUiFabricReact.officeUiFabricReactStrings.interface
-    - typings.officeUiFabricReact.officeUiFabricReactStrings.enum
+    - typings.officeUiFabricReact.officeUiFabricReactStrings.`enum`
     - typings.officeUiFabricReact.officeUiFabricReactStrings.`class`
     - typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias
   */
@@ -34,7 +33,7 @@ object docPageTypesMod {
     def `class`: typings.officeUiFabricReact.officeUiFabricReactStrings.`class` = "class".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.`class`]
     
     @scala.inline
-    def enum: typings.officeUiFabricReact.officeUiFabricReactStrings.enum = "enum".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.enum]
+    def `enum`: typings.officeUiFabricReact.officeUiFabricReactStrings.`enum` = "enum".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.`enum`]
     
     @scala.inline
     def interface: typings.officeUiFabricReact.officeUiFabricReactStrings.interface = "interface".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.interface]
@@ -43,73 +42,72 @@ object docPageTypesMod {
     def typeAlias: typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias = "typeAlias".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias]
   }
   
-  @js.native
   trait IDocPageProps extends StObject {
     
     /** Accessibility of the component as markdown string */
-    var accessibility: js.UndefOr[String] = js.native
+    var accessibility: js.UndefOr[String] = js.undefined
     
     /** If true, the component accepts all native props from elements specified in `nativePropsElement` */
-    var allowNativeProps: js.UndefOr[Boolean] = js.native
+    var allowNativeProps: js.UndefOr[Boolean] = js.undefined
     
     /** Override component name to use in the native props message */
-    var allowNativePropsForComponentName: js.UndefOr[String] = js.native
+    var allowNativePropsForComponentName: js.UndefOr[String] = js.undefined
     
     /** Best practice as markdown string */
-    var bestPractices: js.UndefOr[String] = js.native
+    var bestPractices: js.UndefOr[String] = js.undefined
     
     /** Name of the component being documented */
-    var componentName: String = js.native
+    var componentName: String
     
     /** URL of the checked in component, should be somewhere on github.com */
-    var componentUrl: String = js.native
+    var componentUrl: String
     
     /** DON'Ts blurb as markdown string */
-    var donts: js.UndefOr[String] = js.native
+    var donts: js.UndefOr[String] = js.undefined
     
     /** DO's blurb as markdown string */
-    var dos: js.UndefOr[String] = js.native
+    var dos: js.UndefOr[String] = js.undefined
     
     /** Knobs that applies to all the examples */
-    var exampleKnobs: js.UndefOr[Element] = js.native
+    var exampleKnobs: js.UndefOr[Element] = js.undefined
     
     /** Array of examples, displayed in the order defined */
-    var examples: js.UndefOr[js.Array[IExample]] = js.native
+    var examples: js.UndefOr[js.Array[IExample]] = js.undefined
     
     /** Feedback section includes link to new issue page and displays Github issues */
-    var isFeedbackVisible: js.UndefOr[Boolean] = js.native
+    var isFeedbackVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Passed through header visibility flag from the demo component page component */
-    var isHeaderVisible: Boolean = js.native
+    var isHeaderVisible: Boolean
     
     /**
       * JSON to populate the api reference tables
       */
-    var jsonDocs: js.UndefOr[IPageJson] = js.native
+    var jsonDocs: js.UndefOr[IPageJson] = js.undefined
     
     /**
       * Element(s) whose native props this component accepts (default div).
       * Only relevant if `allowNativeProps` is true.
       */
-    var nativePropsElement: js.UndefOr[String | js.Array[String]] = js.native
+    var nativePropsElement: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Pass through other sections for ComponentPage */
-    var otherSections: js.UndefOr[js.Array[Section]] = js.native
+    var otherSections: js.UndefOr[js.Array[Section]] = js.undefined
     
     /** Overview of the component as markdown string */
-    var overview: js.UndefOr[String] = js.native
+    var overview: js.UndefOr[String] = js.undefined
     
     /** Properties table(s) as markdown string */
-    var propertiesTablesSources: js.UndefOr[js.Array[String]] = js.native
+    var propertiesTablesSources: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Related link
       * @deprecated No longer shown on ComponentPage
       */
-    var related: js.UndefOr[Element] = js.native
+    var related: js.UndefOr[Element] = js.undefined
     
     /** Title that goes into the header */
-    var title: String = js.native
+    var title: String
   }
   object IDocPageProps {
     
@@ -238,27 +236,26 @@ object docPageTypesMod {
     }
   }
   
-  type IEnumTableRowJson = (Omit[ITableRowJson, kind | typeTokens | defaultValue | required]) with Value
+  type IEnumTableRowJson = (Omit[ITableRowJson, kind | typeTokens | defaultValue | required]) & Value
   
-  @js.native
   trait IExample extends StObject {
     
     /** Raw source code of the example */
-    var code: String = js.native
+    var code: String
     
     /** JS String for codepen of the example */
-    var codepenJS: js.UndefOr[String] = js.native
+    var codepenJS: js.UndefOr[String] = js.undefined
     
-    var isScrollable: js.UndefOr[Boolean] = js.native
+    var isScrollable: js.UndefOr[Boolean] = js.undefined
     
     /** Custom styles. Partial version of `IExampleCardProps['styles']`. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[Theme, Root]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[Theme, Root]] = js.undefined
     
     /** Title of the example */
-    var title: String = js.native
+    var title: String
     
     /** Working example of the example */
-    var view: Element = js.native
+    var view: Element
   }
   object IExample {
     
@@ -303,16 +300,15 @@ object docPageTypesMod {
     }
   }
   
-  @js.native
   trait ILinkToken extends StObject {
     
     /** If this token is a link, name of the doc page it points to */
-    var linkedPage: js.UndefOr[String] = js.native
+    var linkedPage: js.UndefOr[String] = js.undefined
     
     /** If this token is a link, group/category of the doc page it points to */
-    var linkedPageGroup: js.UndefOr[String] = js.native
+    var linkedPageGroup: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object ILinkToken {
     
@@ -342,14 +338,13 @@ object docPageTypesMod {
     }
   }
   
-  @js.native
   trait IPageJson extends StObject {
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var tables: js.Array[ITableJson] = js.native
+    var tables: js.Array[ITableJson]
   }
   object IPageJson {
     
@@ -379,26 +374,25 @@ object docPageTypesMod {
     }
   }
   
-  @js.native
   trait ITableJson extends StObject {
     
-    var deprecated: js.UndefOr[Boolean] = js.native
+    var deprecated: js.UndefOr[Boolean] = js.undefined
     
-    var deprecatedMessage: js.UndefOr[String] = js.native
+    var deprecatedMessage: js.UndefOr[String] = js.undefined
     
-    var description: String = js.native
+    var description: String
     
     /**
       * Any types the item extends, translated to an array of text elements and links to other types.
       * For classes and interfaces only.
       */
-    var extendsTokens: js.Array[ILinkToken] = js.native
+    var extendsTokens: js.Array[ILinkToken]
     
-    var kind: ApiKind = js.native
+    var kind: ApiKind
     
-    var members: js.UndefOr[js.Array[IEnumTableRowJson | ITableRowJson]] = js.native
+    var members: js.UndefOr[js.Array[IEnumTableRowJson | ITableRowJson]] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object ITableJson {
     
@@ -449,29 +443,28 @@ object docPageTypesMod {
     }
   }
   
-  @js.native
   trait ITableRowJson extends StObject {
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var deprecated: Boolean = js.native
+    var deprecated: Boolean
     
-    var deprecatedMessage: js.UndefOr[String] = js.native
+    var deprecatedMessage: js.UndefOr[String] = js.undefined
     
-    var description: String = js.native
+    var description: String
     
-    var kind: js.UndefOr[method | property] = js.native
+    var kind: js.UndefOr[method | property] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The row's type translated to an array of text elements and links to other types.
       * For example, `Readonly<IFoo>` would translate to:
       * `[{ text: 'Readonly<' }, { text: 'IFoo', hyperlinkedPage: '(page name)', pageKind: '(kind)' }, { text: '>' }]`
       */
-    var typeTokens: js.Array[ILinkToken] = js.native
+    var typeTokens: js.Array[ILinkToken]
   }
   object ITableRowJson {
     

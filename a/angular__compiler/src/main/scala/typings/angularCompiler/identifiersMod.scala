@@ -5,10 +5,13 @@ import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.outputAstMod.ExternalReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identifiersMod {
+  
+  @JSImport("@angular/compiler/src/identifiers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/identifiers", "Identifiers")
   @js.native
@@ -335,11 +338,9 @@ object identifiersMod {
     def ɵɵdefineInjectable_=(x: ExternalReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275\u0275defineInjectable")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@angular/compiler/src/identifiers", "createTokenForExternalReference")
-  @js.native
-  def createTokenForExternalReference(reflector: CompileReflector, reference: ExternalReference): CompileTokenMetadata = js.native
+  @scala.inline
+  def createTokenForExternalReference(reflector: CompileReflector, reference: ExternalReference): CompileTokenMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("createTokenForExternalReference")(reflector.asInstanceOf[js.Any], reference.asInstanceOf[js.Any])).asInstanceOf[CompileTokenMetadata]
   
-  @JSImport("@angular/compiler/src/identifiers", "createTokenForReference")
-  @js.native
-  def createTokenForReference(reference: js.Any): CompileTokenMetadata = js.native
+  @scala.inline
+  def createTokenForReference(reference: js.Any): CompileTokenMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenForReference")(reference.asInstanceOf[js.Any]).asInstanceOf[CompileTokenMetadata]
 }

@@ -17,17 +17,15 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.unlike
 import typings.instagramPrivateApi.instagramPrivateApiStrings.video_view_profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaLikeOptionsMod {
   
-  @js.native
   trait BaseProfile extends StObject {
     
-    var user_id: String | Double = js.native
+    var user_id: String | Double
     
-    var username: String = js.native
+    var username: String
   }
   object BaseProfile {
     
@@ -48,18 +46,17 @@ object mediaLikeOptionsMod {
     }
   }
   
-  @js.native
   trait FeedContextualHashtag extends StObject {
     
-    var hashtag: String = js.native
+    var hashtag: String
     
-    var module_name: feed_contextual_hashtag = js.native
+    var module_name: feed_contextual_hashtag
   }
   object FeedContextualHashtag {
     
     @scala.inline
-    def apply(hashtag: String, module_name: feed_contextual_hashtag): FeedContextualHashtag = {
-      val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], module_name = module_name.asInstanceOf[js.Any])
+    def apply(hashtag: String): FeedContextualHashtag = {
+      val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], module_name = "feed_contextual_hashtag")
       __obj.asInstanceOf[FeedContextualHashtag]
     }
     
@@ -74,18 +71,17 @@ object mediaLikeOptionsMod {
     }
   }
   
-  @js.native
   trait FeedContextualLocation extends StObject {
     
-    var location_id: String | Double = js.native
+    var location_id: String | Double
     
-    var module_name: feed_contextual_location = js.native
+    var module_name: feed_contextual_location
   }
   object FeedContextualLocation {
     
     @scala.inline
-    def apply(location_id: String | Double, module_name: feed_contextual_location): FeedContextualLocation = {
-      val __obj = js.Dynamic.literal(location_id = location_id.asInstanceOf[js.Any], module_name = module_name.asInstanceOf[js.Any])
+    def apply(location_id: String | Double): FeedContextualLocation = {
+      val __obj = js.Dynamic.literal(location_id = location_id.asInstanceOf[js.Any], module_name = "feed_contextual_location")
       __obj.asInstanceOf[FeedContextualLocation]
     }
     
@@ -100,10 +96,9 @@ object mediaLikeOptionsMod {
     }
   }
   
-  @js.native
   trait FeedTimeline extends StObject {
     
-    var module_name: feed_timeline | feed_contextual_post | newsfeed | feed_contextual_newsfeed_multi_media_liked = js.native
+    var module_name: feed_timeline | feed_contextual_post | newsfeed | feed_contextual_newsfeed_multi_media_liked
   }
   object FeedTimeline {
     
@@ -125,14 +120,13 @@ object mediaLikeOptionsMod {
     }
   }
   
-  type LikeModuleInfoOption = (FeedTimeline | FeedContextualHashtag | FeedContextualLocation | Profile | MediaViewProfile | VideoViewProfile | PhotoViewProfile) with StringDictionary[js.Any]
+  type LikeModuleInfoOption = (FeedTimeline | FeedContextualHashtag | FeedContextualLocation | Profile | MediaViewProfile | VideoViewProfile | PhotoViewProfile) & StringDictionary[js.Any]
   
-  @js.native
   trait LikeOrUnlikeBaseOptions extends StObject {
     
-    var mediaId: String = js.native
+    var mediaId: String
     
-    var moduleInfo: LikeModuleInfoOption = js.native
+    var moduleInfo: LikeModuleInfoOption
   }
   object LikeOrUnlikeBaseOptions {
     
@@ -153,15 +147,11 @@ object mediaLikeOptionsMod {
     }
   }
   
-  /* Inlined instagram-private-api.instagram-private-api/dist/types/media.like.options.LikeOrUnlikeBaseOptions & {  d :1 | 0} */
-  @js.native
-  trait LikeRequestOptions extends StObject {
+  trait LikeRequestOptions
+    extends StObject
+       with LikeOrUnlikeBaseOptions {
     
-    var d: `1` | `0` = js.native
-    
-    var mediaId: String = js.native
-    
-    var moduleInfo: LikeModuleInfoOption = js.native
+    var d: `1` | `0`
   }
   object LikeRequestOptions {
     
@@ -176,26 +166,16 @@ object mediaLikeOptionsMod {
       
       @scala.inline
       def setD(value: `1` | `0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setModuleInfo(value: LikeModuleInfoOption): Self = StObject.set(x, "moduleInfo", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined instagram-private-api.instagram-private-api/dist/types/media.like.options.LikeOrUnlikeBaseOptions & {  action :'like' | 'unlike',   d :1 | 0 | undefined} */
-  @js.native
-  trait MediaLikeOrUnlikeOptions extends StObject {
+  trait MediaLikeOrUnlikeOptions
+    extends StObject
+       with LikeOrUnlikeBaseOptions {
     
-    var action: like | unlike = js.native
+    var action: like | unlike
     
-    var d: js.UndefOr[`1` | `0`] = js.native
-    
-    var mediaId: String = js.native
-    
-    var moduleInfo: LikeModuleInfoOption = js.native
+    var d: js.UndefOr[`1` | `0`] = js.undefined
   }
   object MediaLikeOrUnlikeOptions {
     
@@ -216,25 +196,20 @@ object mediaLikeOptionsMod {
       
       @scala.inline
       def setDUndefined: Self = StObject.set(x, "d", js.undefined)
-      
-      @scala.inline
-      def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setModuleInfo(value: LikeModuleInfoOption): Self = StObject.set(x, "moduleInfo", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MediaViewProfile extends BaseProfile {
+  trait MediaViewProfile
+    extends StObject
+       with BaseProfile {
     
-    var module_name: media_view_profile = js.native
+    var module_name: media_view_profile
   }
   object MediaViewProfile {
     
     @scala.inline
-    def apply(module_name: media_view_profile, user_id: String | Double, username: String): MediaViewProfile = {
-      val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    def apply(user_id: String | Double, username: String): MediaViewProfile = {
+      val __obj = js.Dynamic.literal(module_name = "media_view_profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaViewProfile]
     }
     
@@ -246,16 +221,17 @@ object mediaLikeOptionsMod {
     }
   }
   
-  @js.native
-  trait PhotoViewProfile extends BaseProfile {
+  trait PhotoViewProfile
+    extends StObject
+       with BaseProfile {
     
-    var module_name: photo_view_profile = js.native
+    var module_name: photo_view_profile
   }
   object PhotoViewProfile {
     
     @scala.inline
-    def apply(module_name: photo_view_profile, user_id: String | Double, username: String): PhotoViewProfile = {
-      val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    def apply(user_id: String | Double, username: String): PhotoViewProfile = {
+      val __obj = js.Dynamic.literal(module_name = "photo_view_profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhotoViewProfile]
     }
     
@@ -267,16 +243,17 @@ object mediaLikeOptionsMod {
     }
   }
   
-  @js.native
-  trait Profile extends BaseProfile {
+  trait Profile
+    extends StObject
+       with BaseProfile {
     
-    var module_name: profile = js.native
+    var module_name: profile
   }
   object Profile {
     
     @scala.inline
-    def apply(module_name: profile, user_id: String | Double, username: String): Profile = {
-      val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    def apply(user_id: String | Double, username: String): Profile = {
+      val __obj = js.Dynamic.literal(module_name = "profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
     
@@ -288,15 +265,11 @@ object mediaLikeOptionsMod {
     }
   }
   
-  /* Inlined instagram-private-api.instagram-private-api/dist/types/media.like.options.LikeOrUnlikeBaseOptions & {  d :0 | undefined} */
-  @js.native
-  trait UnlikeRequestOptions extends StObject {
+  trait UnlikeRequestOptions
+    extends StObject
+       with LikeOrUnlikeBaseOptions {
     
-    var d: js.UndefOr[`0`] = js.native
-    
-    var mediaId: String = js.native
-    
-    var moduleInfo: LikeModuleInfoOption = js.native
+    var d: js.UndefOr[`0`] = js.undefined
   }
   object UnlikeRequestOptions {
     
@@ -314,25 +287,20 @@ object mediaLikeOptionsMod {
       
       @scala.inline
       def setDUndefined: Self = StObject.set(x, "d", js.undefined)
-      
-      @scala.inline
-      def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setModuleInfo(value: LikeModuleInfoOption): Self = StObject.set(x, "moduleInfo", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait VideoViewProfile extends BaseProfile {
+  trait VideoViewProfile
+    extends StObject
+       with BaseProfile {
     
-    var module_name: video_view_profile = js.native
+    var module_name: video_view_profile
   }
   object VideoViewProfile {
     
     @scala.inline
-    def apply(module_name: video_view_profile, user_id: String | Double, username: String): VideoViewProfile = {
-      val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    def apply(user_id: String | Double, username: String): VideoViewProfile = {
+      val __obj = js.Dynamic.literal(module_name = "video_view_profile", user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[VideoViewProfile]
     }
     

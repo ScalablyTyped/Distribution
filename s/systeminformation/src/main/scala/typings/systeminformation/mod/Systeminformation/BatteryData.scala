@@ -2,41 +2,39 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatteryData extends StObject {
   
-  var acconnected: Boolean = js.native
+  var acconnected: Boolean
   
-  var capacityUnit: String = js.native
+  var capacityUnit: String
   
-  var currentcapacity: Double = js.native
+  var currentcapacity: Double
   
-  var cyclecount: Double = js.native
+  var cyclecount: Double
   
-  var designedcapacity: Double = js.native
+  var designedcapacity: Double
   
-  var hasbattery: Boolean = js.native
+  var hasbattery: Boolean
   
-  var ischarging: Boolean = js.native
+  var ischarging: Boolean
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var maxcapacity: Double = js.native
+  var maxcapacity: Double
   
-  var model: String = js.native
+  var model: String
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var serial: String = js.native
+  var serial: String
   
-  var timeremaining: Double = js.native
+  var timeremaining: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var voltage: Double = js.native
+  var voltage: Double
 }
 object BatteryData {
   

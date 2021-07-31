@@ -10,9 +10,9 @@ Displays a summary of tested browsers and failed testcases after a test run.
 | ------------------ | :-------------: |
 | Full name          | karma-summary-reporter |
 | Keywords           | karma-plugin, karma-reporter |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 333434 |
+| # downloads        | 376357 |
 | # stars            | 2 |
 
 ## Links

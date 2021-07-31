@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak extends StObject {
   
   /** True if break prepends the element. */
-  var isPrefix: js.UndefOr[Boolean] = js.native
+  var isPrefix: js.UndefOr[Boolean] = js.undefined
   
   /** Detected break type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak {
   

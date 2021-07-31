@@ -2,17 +2,15 @@ package typings.googleCloudDatastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityMod {
   
-  @js.native
   trait DatastoreCoords extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object DatastoreCoords {
     
@@ -33,10 +31,9 @@ object entityMod {
     }
   }
   
-  @js.native
   trait DatastoreDouble extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object DatastoreDouble {
     
@@ -54,10 +51,9 @@ object entityMod {
     }
   }
   
-  @js.native
   trait DatastoreGeopoint extends StObject {
     
-    var value: DatastoreCoords = js.native
+    var value: DatastoreCoords
   }
   object DatastoreGeopoint {
     
@@ -75,10 +71,9 @@ object entityMod {
     }
   }
   
-  @js.native
   trait DatastoreInt extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object DatastoreInt {
     
@@ -96,18 +91,17 @@ object entityMod {
     }
   }
   
-  @js.native
   trait DatastoreKey extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var parent: js.UndefOr[DatastoreKey] = js.native
+    var parent: js.UndefOr[DatastoreKey] = js.undefined
     
-    val path: DatastoreKeyPath = js.native
+    val path: DatastoreKeyPath
   }
   object DatastoreKey {
     
@@ -149,12 +143,11 @@ object entityMod {
     }
   }
   
-  @js.native
   trait DatastoreKeyOptions extends StObject {
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var path: DatastoreKeyPath = js.native
+    var path: DatastoreKeyPath
   }
   object DatastoreKeyOptions {
     
@@ -187,15 +180,14 @@ object entityMod {
     */
   type DatastoreKeyPath = js.Array[PathElement]
   
-  @js.native
   trait DatastorePayload[T] extends StObject {
     
     // TODO Include possibility of 'raw data' with indexing options, etc
-    var data: T | js.Object = js.native
+    var data: T | js.Object
     
-    var excludeFromIndexes: js.UndefOr[js.Array[String]] = js.native
+    var excludeFromIndexes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var key: DatastoreKey = js.native
+    var key: DatastoreKey
   }
   object DatastorePayload {
     
@@ -206,7 +198,7 @@ object entityMod {
     }
     
     @scala.inline
-    implicit class DatastorePayloadMutableBuilder[Self <: DatastorePayload[_], T] (val x: Self with DatastorePayload[T]) extends AnyVal {
+    implicit class DatastorePayloadMutableBuilder[Self <: DatastorePayload[?], T] (val x: Self & DatastorePayload[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

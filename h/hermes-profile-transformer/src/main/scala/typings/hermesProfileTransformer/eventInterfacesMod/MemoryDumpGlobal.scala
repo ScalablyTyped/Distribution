@@ -3,18 +3,17 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.MEMORY_DUMP_EVENTS_GLOBAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryDumpGlobal
-  extends MemoryDumpEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with MemoryDumpEvent {
   
-  var id: String = js.native
+  var id: String
   
   @JSName("ph")
-  var ph_MemoryDumpGlobal: MEMORY_DUMP_EVENTS_GLOBAL = js.native
+  var ph_MemoryDumpGlobal: MEMORY_DUMP_EVENTS_GLOBAL
 }
 object MemoryDumpGlobal {
   

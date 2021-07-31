@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectExplorerCloseSessionResponse extends StObject {
   
-  var sessionId: String = js.native
+  var sessionId: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object ObjectExplorerCloseSessionResponse {
   

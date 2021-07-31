@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressTimeseries extends StObject {
   
   /** The current progress of the component, in the range [0,1]. */
-  var currentProgress: js.UndefOr[Double] = js.native
+  var currentProgress: js.UndefOr[Double] = js.undefined
   
   /** History of progress for the component. Points are sorted by time. */
-  var dataPoints: js.UndefOr[js.Array[Point]] = js.native
+  var dataPoints: js.UndefOr[js.Array[Point]] = js.undefined
 }
 object ProgressTimeseries {
   

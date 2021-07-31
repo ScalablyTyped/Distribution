@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSUnknownKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSUnknownKeyword_
-  extends TSBaseType
+- typings.babelTypes.mod._Node because Already inherited */ trait TSUnknownKeyword_
+  extends StObject
      with BaseNode
+     with TSBaseType
      with TSType {
   
   @JSName("type")
-  var type_TSUnknownKeyword_ : TSUnknownKeyword = js.native
+  var type_TSUnknownKeyword_ : TSUnknownKeyword
 }
 object TSUnknownKeyword_ {
   
   @scala.inline
-  def apply(`type`: TSUnknownKeyword): TSUnknownKeyword_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): TSUnknownKeyword_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSUnknownKeyword")
     __obj.asInstanceOf[TSUnknownKeyword_]
   }
   

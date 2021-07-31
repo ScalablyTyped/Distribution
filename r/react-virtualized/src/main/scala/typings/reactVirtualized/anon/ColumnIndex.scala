@@ -2,15 +2,13 @@ package typings.reactVirtualized.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnIndex extends StObject {
   
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
 }
 object ColumnIndex {
   

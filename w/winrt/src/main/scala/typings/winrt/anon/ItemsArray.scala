@@ -4,15 +4,13 @@ import typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMap
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsArray extends StObject {
   
-  var items: js.Array[IKeyValuePair[String, ResourceMap]] = js.native
+  var items: js.Array[IKeyValuePair[String, ResourceMap]]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object ItemsArray {
   

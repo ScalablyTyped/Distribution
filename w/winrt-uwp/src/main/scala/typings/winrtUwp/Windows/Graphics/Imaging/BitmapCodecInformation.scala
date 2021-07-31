@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to information about a decoder or encoder. */
-@js.native
 trait BitmapCodecInformation extends StObject {
   
   /** The unique identifier of the decoder or encoder. Methods like BitmapDecoder::CreateAsync and BitmapEncoder::CreateAsync use the codec identifier to determine which codec to create. */
-  var codecId: String = js.native
+  var codecId: String
   
   /** A collection of all the file extensions supported by the decoder or encoder. */
-  var fileExtensions: IVectorView[String] = js.native
+  var fileExtensions: IVectorView[String]
   
   /** The friendly name of the decoder or encoder. */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /** A collection of all the MIME/content types supported by the decoder or encoder. MIME type is synonymous with content type . */
-  var mimeTypes: IVectorView[String] = js.native
+  var mimeTypes: IVectorView[String]
 }
 object BitmapCodecInformation {
   

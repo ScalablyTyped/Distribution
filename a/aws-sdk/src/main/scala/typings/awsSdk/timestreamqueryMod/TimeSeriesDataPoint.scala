@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeSeriesDataPoint extends StObject {
   
   /**
     * The timestamp when the measure value was collected.
     */
-  var Time: Timestamp = js.native
+  var Time: Timestamp
   
   /**
     * The measure value for the data point.
     */
-  var Value: Datum = js.native
+  var Value: Datum
 }
 object TimeSeriesDataPoint {
   

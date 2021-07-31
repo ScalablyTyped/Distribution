@@ -3,17 +3,15 @@ package typings.matrixAppserviceBridge.anon
 import typings.matrixAppserviceBridge.encryptionMod.ClientEncryptionSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnsureClientSyncingCallback extends StObject {
   
-  def ensureClientSyncingCallback(): js.Promise[Unit] = js.native
+  def ensureClientSyncingCallback(): js.Promise[Unit]
   
-  def sessionCreatedCallback(session: ClientEncryptionSession): js.Promise[Unit] = js.native
+  def sessionCreatedCallback(session: ClientEncryptionSession): js.Promise[Unit]
   
-  var sessionPromise: js.Promise[ClientEncryptionSession | Null] = js.native
+  var sessionPromise: js.Promise[ClientEncryptionSession | Null]
 }
 object EnsureClientSyncingCallback {
   

@@ -3,16 +3,15 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Latitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 位置-----地图组件控制
-@js.native
 trait GetCenterLocationOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   @JSName("success")
-  def success_MGetCenterLocationOptions(res: Latitude): Unit = js.native
+  def success_MGetCenterLocationOptions(res: Latitude): Unit
 }
 object GetCenterLocationOptions {
   

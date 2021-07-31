@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluationResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm that was evaluated.
     */
-  var AlgorithmArn: js.UndefOr[Arn] = js.native
+  var AlgorithmArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The array of test windows used for evaluating the algorithm. The NumberOfBacktestWindows from the EvaluationParameters object determines the number of windows in the array.
     */
-  var TestWindows: js.UndefOr[typings.awsSdk.forecastserviceMod.TestWindows] = js.native
+  var TestWindows: js.UndefOr[typings.awsSdk.forecastserviceMod.TestWindows] = js.undefined
 }
 object EvaluationResult {
   

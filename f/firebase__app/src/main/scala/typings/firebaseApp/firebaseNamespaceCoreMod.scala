@@ -8,13 +8,15 @@ import typings.firebaseAppTypes.mod.FirebaseOptions
 import typings.firebaseAppTypes.privateMod.FirebaseNamespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseNamespaceCoreMod {
   
-  @JSImport("@firebase/app/dist/packages/app/src/firebaseNamespaceCore", "createFirebaseNamespaceCore")
+  @JSImport("@firebase/app/dist/packages/app/src/firebaseNamespaceCore", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createFirebaseNamespaceCore(
     firebaseAppImpl: Instantiable3[
       /* options */ FirebaseOptions, 
@@ -22,5 +24,5 @@ object firebaseNamespaceCoreMod {
       /* firebase_ */ FirebaseNamespace, 
       FirebaseAppImpl | FirebaseAppLiteImpl
     ]
-  ): typings.firebaseAppTypes.mod.FirebaseNamespace = js.native
+  ): typings.firebaseAppTypes.mod.FirebaseNamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createFirebaseNamespaceCore")(firebaseAppImpl.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAppTypes.mod.FirebaseNamespace]
 }

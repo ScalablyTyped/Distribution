@@ -3,31 +3,31 @@ package typings.ftPoller
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ft-poller", JSImport.Namespace)
   @js.native
-  class ^[PollerData, ExternalData] protected () extends Poller[PollerData, ExternalData] {
+  class ^[PollerData, ExternalData] protected ()
+    extends StObject
+       with Poller[PollerData, ExternalData] {
     def this(config: Config[PollerData, ExternalData]) = this()
   }
   
-  @js.native
   trait Config[PollerData, ExternalData] extends StObject {
     
-    var autostart: js.UndefOr[Boolean] = js.native
+    var autostart: js.UndefOr[Boolean] = js.undefined
     
-    var defaultData: js.UndefOr[PollerData] = js.native
+    var defaultData: js.UndefOr[PollerData] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var parseData: js.UndefOr[js.Function1[/* data */ ExternalData, PollerData]] = js.native
+    var parseData: js.UndefOr[js.Function1[/* data */ ExternalData, PollerData]] = js.undefined
     
-    var refreshInterval: js.UndefOr[Double] = js.native
+    var refreshInterval: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Config {
     
@@ -38,7 +38,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_, _], PollerData, ExternalData] (val x: Self with (Config[PollerData, ExternalData])) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?, ?], PollerData, ExternalData] (val x: Self & (Config[PollerData, ExternalData])) extends AnyVal {
       
       @scala.inline
       def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryHierarchyItemsResult extends StObject {
   
   /**
     * The count of items.
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * Indicates if the max return limit was hit but there are still more items
     */
-  var hasMore: Boolean = js.native
+  var hasMore: Boolean
   
   /**
     * The list of items
     */
-  var value: js.Array[QueryHierarchyItem] = js.native
+  var value: js.Array[QueryHierarchyItem]
 }
 object QueryHierarchyItemsResult {
   

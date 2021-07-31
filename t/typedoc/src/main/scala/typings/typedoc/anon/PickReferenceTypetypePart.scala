@@ -5,26 +5,24 @@ import typings.typedoc.schemaMod._ModelToObject
 import typings.typedoc.typesAbstractMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<typedoc.typedoc/dist/lib/serialization/schema.ReferenceType, 'type'> & std.Partial<typedoc.typedoc/dist/lib/serialization/schema.ReferenceType> */
-@js.native
 trait PickReferenceTypetypePart extends StObject {
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[ModelToObject[String] | String] = js.native
+  var name: js.UndefOr[ModelToObject[String] | String] = js.undefined
   
-  var `type`: ((ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)) with (js.UndefOr[(ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)]) = js.native
+  var `type`: ((ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)) & (js.UndefOr[(ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)])
   
-  var typeArguments: js.UndefOr[ModelToObject[js.UndefOr[js.Array[Type]]] | js.Array[Type]] = js.native
+  var typeArguments: js.UndefOr[ModelToObject[js.UndefOr[js.Array[Type]]] | js.Array[Type]] = js.undefined
 }
 object PickReferenceTypetypePart {
   
   @scala.inline
   def apply(
-    `type`: ((ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)) with (js.UndefOr[(ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)])
+    `type`: ((ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)) & (js.UndefOr[(ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)])
   ): PickReferenceTypetypePart = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -51,7 +49,7 @@ object PickReferenceTypetypePart {
     
     @scala.inline
     def setType(
-      value: ((ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)) with (js.UndefOr[(ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)])
+      value: ((ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)) & (js.UndefOr[(ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)])
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline

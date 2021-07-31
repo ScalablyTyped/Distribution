@@ -7,7 +7,6 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.confirmConfirmMod.ConfirmProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmMod extends Shortcut {

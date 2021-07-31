@@ -2,7 +2,6 @@ package typings.styledComponents.styledComponentsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // remove the call signature from StyledComponent so Interpolation can still infer InterpolationFunction
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.styledComponents.anon.PickStyledComponentBasean
   - typings.styledComponents.anon.PickStyledComponentBaseanDefaultProps
 */
-trait StyledComponentInterpolation extends _InterpolationValue
+trait StyledComponentInterpolation
+  extends StObject
+     with _InterpolationValue
 object StyledComponentInterpolation {
   
   @scala.inline
@@ -18,9 +19,9 @@ object StyledComponentInterpolation {
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
-      _, 
-      js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
-      _ | StyledComponentInnerAttrs[AnyStyledComponent]
+      js.Any, 
+      js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
+      js.Any | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
   ): typings.styledComponents.anon.PickStyledComponentBasean = {
     val __obj = js.Dynamic.literal(withComponent = js.Any.fromFunction1(withComponent))
@@ -33,8 +34,8 @@ object StyledComponentInterpolation {
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
-      _, 
-      js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
+      js.Any, 
+      js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
       scala.Nothing | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
   ): typings.styledComponents.anon.PickStyledComponentBaseanDefaultProps = {

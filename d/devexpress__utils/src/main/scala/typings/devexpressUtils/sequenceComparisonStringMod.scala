@@ -4,7 +4,6 @@ import typings.devexpressUtils.commonMod.ISequenceComparatorItertor
 import typings.devexpressUtils.commonMod.SesType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sequenceComparisonStringMod {
@@ -45,8 +44,19 @@ object sequenceComparisonStringMod {
   
   @JSImport("@devexpress/utils/lib/sequence-comparison/string", "StringSequenceComparatorItertor")
   @js.native
-  class StringSequenceComparatorItertor protected () extends ISequenceComparatorItertor[String] {
+  class StringSequenceComparatorItertor protected ()
+    extends StObject
+       with ISequenceComparatorItertor[String] {
     def this(str: String) = this()
+    
+    /* CompleteClass */
+    override def getByIndex(index: Double): String = js.native
+    
+    /* CompleteClass */
+    override def getComparer(): js.Function2[String, String, Boolean] = js.native
+    
+    /* CompleteClass */
+    var length: Double = js.native
     
     var str: String = js.native
   }
@@ -61,20 +71,19 @@ object sequenceComparisonStringMod {
     var `type`: SesType = js.native
   }
   
-  @js.native
   trait PathElem extends StObject {
     
-    var k: Double | Null = js.native
+    var k: Double | Null
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object PathElem {
     
     @scala.inline
     def apply(x: Double, y: Double): PathElem = {
-      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], k = null)
       __obj.asInstanceOf[PathElem]
     }
     

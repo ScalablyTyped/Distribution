@@ -17,23 +17,21 @@ import typings.pg.mod.QueryConfig
 import typings.pg.mod.QueryResultRow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofPg extends StObject {
     
-    var Client: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], typings.pg.mod.Client] = js.native
+    var Client: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], typings.pg.mod.Client]
     
-    var ClientBase: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], typings.pg.mod.ClientBase] = js.native
+    var ClientBase: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], typings.pg.mod.ClientBase]
     
-    var Connection: Instantiable1[/* config */ js.UndefOr[ConnectionConfig], typings.pg.mod.Connection] = js.native
+    var Connection: Instantiable1[/* config */ js.UndefOr[ConnectionConfig], typings.pg.mod.Connection]
     
-    var Events: Instantiable0[typings.pg.mod.Events] = js.native
+    var Events: Instantiable0[typings.pg.mod.Events]
     
-    var Pool: Instantiable1[/* config */ js.UndefOr[PoolConfig], typings.pg.mod.Pool] = js.native
+    var Pool: Instantiable1[/* config */ js.UndefOr[PoolConfig], typings.pg.mod.Pool]
     
     var Query: Instantiable2[
         /* queryTextOrConfig */ js.UndefOr[
@@ -41,11 +39,11 @@ object anon {
         ], 
         /* values */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam I */ js.Any], 
         typings.pg.mod.Query[QueryResultRow, js.Array[js.Any]]
-      ] = js.native
+      ]
     
-    val defaults: Defaults_ with ClientConfig = js.native
+    val defaults: Defaults_ & ClientConfig
     
-    val native: (/* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any) | Null = js.native
+    val native: (/* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any) | Null
   }
   object TypeofPg {
     
@@ -63,9 +61,9 @@ object anon {
           /* values */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam I */ js.Any], 
           Query[QueryResultRow, js.Array[js.Any]]
         ],
-      defaults: Defaults_ with ClientConfig
+      defaults: Defaults_ & ClientConfig
     ): TypeofPg = {
-      val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any], ClientBase = ClientBase.asInstanceOf[js.Any], Connection = Connection.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], Pool = Pool.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any], ClientBase = ClientBase.asInstanceOf[js.Any], Connection = Connection.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], Pool = Pool.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], native = null)
       __obj.asInstanceOf[TypeofPg]
     }
     
@@ -82,7 +80,7 @@ object anon {
       def setConnection(value: Instantiable1[/* config */ js.UndefOr[ConnectionConfig], Connection]): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDefaults(value: Defaults_ with ClientConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      def setDefaults(value: Defaults_ & ClientConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEvents(value: Instantiable0[Events]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])

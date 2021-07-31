@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A subscription resource.
   */
-@js.native
 trait SchemaSubscription extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaSubscription extends StObject {
     * eventually redeliver the message.  If this parameter is 0, a default
     * value of 10 seconds is used.
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the subscription. It must have the format
@@ -37,21 +35,21 @@ trait SchemaSubscription extends StObject {
     * between 3 and 255 characters in length, and it must not start with
     * `&quot;goog&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If push delivery is used with this subscription, this field is used to
     * configure it. An empty `pushConfig` signifies that the subscriber will
     * pull and ack messages using API methods.
     */
-  var pushConfig: js.UndefOr[SchemaPushConfig] = js.native
+  var pushConfig: js.UndefOr[SchemaPushConfig] = js.undefined
   
   /**
     * The name of the topic from which this subscription is receiving messages.
     * The value of this field will be `_deleted-topic_` if the topic has been
     * deleted.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscription {
   

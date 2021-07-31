@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetRelayoutBoundaryRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetRelayoutBoundaryResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetRelayoutBoundaryResponse extends StObject {
   
-  var paramsType: js.Array[GetRelayoutBoundaryRequest] = js.native
+  var paramsType: js.Array[GetRelayoutBoundaryRequest]
   
-  var returnType: GetRelayoutBoundaryResponse = js.native
+  var returnType: GetRelayoutBoundaryResponse
 }
 object ReturnTypeGetRelayoutBoundaryResponse {
   

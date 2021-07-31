@@ -9,21 +9,19 @@ import typings.rethinkdb.rethinkdbStrings.nm
 import typings.rethinkdb.rethinkdbStrings.unit_sphere
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceOptions extends StObject {
   
   /**
     * The reference ellipsoid to use for geographic coordinates. Possible values are `WGS84` (the default), a common standard for Earth’s geometry, or `unit_sphere`, a perfect sphere of 1 meter radius.
     */
-  var geoSystem: js.UndefOr[WGS84 | unit_sphere] = js.native
+  var geoSystem: js.UndefOr[WGS84 | unit_sphere] = js.undefined
   
   /**
     * Unit for the distance. Possible values are `m` (meter, the default), `km` (kilometer), `mi` (international mile), `nm` (nautical mile), `ft` (international foot).
     */
-  var unit: js.UndefOr[m | km | mi | nm | ft] = js.native
+  var unit: js.UndefOr[m | km | mi | nm | ft] = js.undefined
 }
 object DistanceOptions {
   

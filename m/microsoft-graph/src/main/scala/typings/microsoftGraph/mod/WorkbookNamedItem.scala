@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookNamedItem extends Entity {
+trait WorkbookNamedItem
+  extends StObject
+     with Entity {
   
   // Represents the comment associated with this name.
-  var comment: js.UndefOr[NullableOption[String]] = js.native
+  var comment: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the object. Read-only.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates what type of reference is associated with the name. The possible values are: String, Integer, Double,
     * Boolean, Range. Read-only.
     */
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.
-  var value: js.UndefOr[NullableOption[_]] = js.native
+  var value: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // Specifies whether the object is visible or not.
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet.
     * Read-only.
     */
-  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.native
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
 object WorkbookNamedItem {
   
@@ -80,7 +80,7 @@ object WorkbookNamedItem {
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setValue(value: NullableOption[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueNull: Self = StObject.set(x, "value", null)

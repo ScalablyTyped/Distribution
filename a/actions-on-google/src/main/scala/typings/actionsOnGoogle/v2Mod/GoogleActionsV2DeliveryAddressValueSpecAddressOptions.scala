@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2DeliveryAddressValueSpecAddressOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GoogleActionsV2DeliveryAddressValueSpecAddressOptions extends StObject {
     * [determining the service area].\", the text in `[]` is the custom TTS
     * that should be populated here.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2DeliveryAddressValueSpecAddressOptions {
   

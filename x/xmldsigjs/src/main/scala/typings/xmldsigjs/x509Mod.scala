@@ -9,7 +9,6 @@ import typings.std.RsaHashedImportParams
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object x509Mod {
@@ -74,9 +73,9 @@ object x509Mod {
       * @param  {Algorithm} algorithm
       * @returns Promise<CryptoKey>
       */
-    def exportKey(algorithm: Algorithm): js.Promise[_] = js.native
-    def exportKey(algorithm: EcKeyImportParams): js.Promise[_] = js.native
-    def exportKey(algorithm: RsaHashedImportParams): js.Promise[_] = js.native
+    def exportKey(algorithm: Algorithm): js.Promise[js.Any] = js.native
+    def exportKey(algorithm: EcKeyImportParams): js.Promise[js.Any] = js.native
+    def exportKey(algorithm: RsaHashedImportParams): js.Promise[js.Any] = js.native
     
     var isHashedAlgorithm: js.Any = js.native
     

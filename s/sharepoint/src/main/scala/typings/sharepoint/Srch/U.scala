@@ -2,10 +2,8 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait U extends StObject
 object U {
   
@@ -16,26 +14,30 @@ object U {
   object LoadScriptsProgress extends StObject {
     
     @js.native
-    sealed trait failure extends LoadScriptsProgress
+    sealed trait failure
+      extends StObject
+         with LoadScriptsProgress
     
     @js.native
-    sealed trait loading extends LoadScriptsProgress
+    sealed trait loading
+      extends StObject
+         with LoadScriptsProgress
     
     @js.native
-    sealed trait success extends LoadScriptsProgress
+    sealed trait success
+      extends StObject
+         with LoadScriptsProgress
   }
   
-  @js.native
   trait Ids extends StObject
   
-  @js.native
   trait LoadScriptsState extends StObject {
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var scriptsToLoad: js.Any = js.native
+    var scriptsToLoad: js.Any
     
-    var timeoutHandle: js.Any = js.native
+    var timeoutHandle: js.Any
   }
   object LoadScriptsState {
     
@@ -59,6 +61,5 @@ object U {
     }
   }
   
-  @js.native
   trait PropNames extends StObject
 }

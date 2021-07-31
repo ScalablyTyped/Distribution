@@ -3,73 +3,73 @@ package typings.miniprogram
 import typings.miniprogram.anon.Success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddPhoneContactArgs extends AsyncCallback[Success] {
+trait AddPhoneContactArgs
+  extends StObject
+     with AsyncCallback[Success] {
   
-  var addressCity: String = js.native
+  var addressCity: String
   
-  var addressCountry: String = js.native
+  var addressCountry: String
   
-  var addressPostalCode: String = js.native
+  var addressPostalCode: String
   
-  var addressState: String = js.native
+  var addressState: String
   
-  var addressStreet: String = js.native
+  var addressStreet: String
   
-  var email: String = js.native
+  var email: String
   
-  var firstName: String = js.native
+  var firstName: String
   
-  var homeAddressCity: String = js.native
+  var homeAddressCity: String
   
-  var homeAddressCountry: String = js.native
+  var homeAddressCountry: String
   
-  var homeAddressPostalCode: String = js.native
+  var homeAddressPostalCode: String
   
-  var homeAddressState: String = js.native
+  var homeAddressState: String
   
-  var homeAddressStreet: String = js.native
+  var homeAddressStreet: String
   
-  var homeFaxNumber: String = js.native
+  var homeFaxNumber: String
   
-  var homePhoneNumber: String = js.native
+  var homePhoneNumber: String
   
-  var hostNumber: String = js.native
+  var hostNumber: String
   
-  var lastName: String = js.native
+  var lastName: String
   
-  var middleName: String = js.native
+  var middleName: String
   
-  var mobilePhoneNumber: String = js.native
+  var mobilePhoneNumber: String
   
-  var nickName: String = js.native
+  var nickName: String
   
-  var organization: String = js.native
+  var organization: String
   
-  var photoFilePath: String = js.native
+  var photoFilePath: String
   
-  var remark: String = js.native
+  var remark: String
   
-  var title: String = js.native
+  var title: String
   
-  var url: String = js.native
+  var url: String
   
-  var workAddressCity: String = js.native
+  var workAddressCity: String
   
-  var workAddressCountry: String = js.native
+  var workAddressCountry: String
   
-  var workAddressPostalCode: String = js.native
+  var workAddressPostalCode: String
   
-  var workAddressState: String = js.native
+  var workAddressState: String
   
-  var workAddressStreet: String = js.native
+  var workAddressStreet: String
   
-  var workFaxNumber: String = js.native
+  var workFaxNumber: String
   
-  var workPhoneNumber: String = js.native
+  var workPhoneNumber: String
 }
 object AddPhoneContactArgs {
   

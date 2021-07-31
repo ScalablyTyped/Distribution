@@ -4,14 +4,14 @@ import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IModelMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EllipticArc extends IModel {
+trait EllipticArc
+  extends StObject
+     with IModel {
   
   @JSName("models")
-  var models_EllipticArc: IModelMap = js.native
+  var models_EllipticArc: IModelMap
 }
 object EllipticArc {
   

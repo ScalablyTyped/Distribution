@@ -2,13 +2,11 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response including listed notes.
   */
-@js.native
 trait SchemaListNotesResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListNotesResponse extends StObject {
     * page_token for the following request. An empty value means no more
     * result.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The occurrences requested
     */
-  var notes: js.UndefOr[js.Array[SchemaNote]] = js.native
+  var notes: js.UndefOr[js.Array[SchemaNote]] = js.undefined
 }
 object SchemaListNotesResponse {
   

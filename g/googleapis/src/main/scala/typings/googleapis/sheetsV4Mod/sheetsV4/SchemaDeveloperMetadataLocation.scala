@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A location where metadata may be associated in a spreadsheet.
   */
-@js.native
 trait SchemaDeveloperMetadataLocation extends StObject {
   
   /**
@@ -16,22 +14,22 @@ trait SchemaDeveloperMetadataLocation extends StObject {
     * dimension. The specified DimensionRange must represent a single row or
     * column; it cannot be unbounded or span multiple rows or columns.
     */
-  var dimensionRange: js.UndefOr[SchemaDimensionRange] = js.native
+  var dimensionRange: js.UndefOr[SchemaDimensionRange] = js.undefined
   
   /**
     * The type of location this object represents.  This field is read-only.
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the sheet when metadata is associated with an entire sheet.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
   
   /**
     * True when metadata is associated with an entire spreadsheet.
     */
-  var spreadsheet: js.UndefOr[Boolean] = js.native
+  var spreadsheet: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDeveloperMetadataLocation {
   

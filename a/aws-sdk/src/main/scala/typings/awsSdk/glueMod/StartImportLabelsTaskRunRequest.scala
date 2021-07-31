@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartImportLabelsTaskRunRequest extends StObject {
   
   /**
     * The Amazon Simple Storage Service (Amazon S3) path from where you import the labels.
     */
-  var InputS3Path: UriString = js.native
+  var InputS3Path: UriString
   
   /**
     * Indicates whether to overwrite your existing labels.
     */
-  var ReplaceAllLabels: js.UndefOr[ReplaceBoolean] = js.native
+  var ReplaceAllLabels: js.UndefOr[ReplaceBoolean] = js.undefined
   
   /**
     * The unique identifier of the machine learning transform.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object StartImportLabelsTaskRunRequest {
   

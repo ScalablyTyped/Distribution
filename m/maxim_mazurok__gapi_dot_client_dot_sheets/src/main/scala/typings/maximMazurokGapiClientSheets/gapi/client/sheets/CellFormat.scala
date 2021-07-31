@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellFormat extends StObject {
   
   /** The background color of the cell. */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /** The background color of the cell. If background_color is also set, this field takes precedence. */
-  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The borders of the cell. */
-  var borders: js.UndefOr[Borders] = js.native
+  var borders: js.UndefOr[Borders] = js.undefined
   
   /** The horizontal alignment of the value in the cell. */
-  var horizontalAlignment: js.UndefOr[String] = js.native
+  var horizontalAlignment: js.UndefOr[String] = js.undefined
   
   /** How a hyperlink, if it exists, should be displayed in the cell. */
-  var hyperlinkDisplayType: js.UndefOr[String] = js.native
+  var hyperlinkDisplayType: js.UndefOr[String] = js.undefined
   
   /** A format describing how number values should be represented to the user. */
-  var numberFormat: js.UndefOr[NumberFormat] = js.native
+  var numberFormat: js.UndefOr[NumberFormat] = js.undefined
   
   /** The padding of the cell. */
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
   /** The direction of the text in the cell. */
-  var textDirection: js.UndefOr[String] = js.native
+  var textDirection: js.UndefOr[String] = js.undefined
   
   /** The format of the text in the cell (unless overridden by a format run). */
-  var textFormat: js.UndefOr[TextFormat] = js.native
+  var textFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The rotation applied to text in a cell */
-  var textRotation: js.UndefOr[TextRotation] = js.native
+  var textRotation: js.UndefOr[TextRotation] = js.undefined
   
   /** The vertical alignment of the value in the cell. */
-  var verticalAlignment: js.UndefOr[String] = js.native
+  var verticalAlignment: js.UndefOr[String] = js.undefined
   
   /** The wrap strategy for the value in the cell. */
-  var wrapStrategy: js.UndefOr[String] = js.native
+  var wrapStrategy: js.UndefOr[String] = js.undefined
 }
 object CellFormat {
   

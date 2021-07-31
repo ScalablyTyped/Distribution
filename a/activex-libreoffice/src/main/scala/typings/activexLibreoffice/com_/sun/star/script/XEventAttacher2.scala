@@ -7,18 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XEventAttacher2 extends XEventAttacher {
+trait XEventAttacher2
+  extends StObject
+     with XEventAttacher {
   
   /**
     * Register a multiple set of listeners listening for the same target. Besides passing multiple listeners, the behavior of this method is identical to
     * that of {@link attachSingleEventListener()} .
     * @see com.sun.star.script.XEventAttacher.attachSingleEventListener
     */
-  def attachMultipleEventListeners(xTarget: XInterface, aListeners: SeqEquiv[EventListener]): SafeArray[XEventListener] = js.native
+  def attachMultipleEventListeners(xTarget: XInterface, aListeners: SeqEquiv[EventListener]): SafeArray[XEventListener]
 }
 object XEventAttacher2 {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Config extends StObject {
   
   /**
     * The S3 bucket name.
     */
-  var BucketName: typings.awsSdk.connectMod.BucketName = js.native
+  var BucketName: typings.awsSdk.connectMod.BucketName
   
   /**
     * The S3 bucket prefix.
     */
-  var BucketPrefix: Prefix = js.native
+  var BucketPrefix: Prefix
   
   /**
     * The S3 encryption configuration.
     */
-  var EncryptionConfig: js.UndefOr[typings.awsSdk.connectMod.EncryptionConfig] = js.native
+  var EncryptionConfig: js.UndefOr[typings.awsSdk.connectMod.EncryptionConfig] = js.undefined
 }
 object S3Config {
   

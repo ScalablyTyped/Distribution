@@ -6,7 +6,6 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,8 +35,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * //                                  }  OPTIONAL,
   * //        crlExtensions           [0]  EXPLICIT Extensions OPTIONAL
   */
-@js.native
-trait TBSCertList extends ASN1Object {
+trait TBSCertList
+  extends StObject
+     with ASN1Object {
   
   /**
     * add revoked certificate by parameter
@@ -47,7 +47,7 @@ trait TBSCertList extends ASN1Object {
     * tbsc.addRevokedCert({'int': 3}, {'str': '130508235959Z'});
     * @see KJUR.asn1.x509.Time
     */
-  def addRevokedCert(snParam: IntegerParam, timeParam: StringParam): Unit = js.native
+  def addRevokedCert(snParam: IntegerParam, timeParam: StringParam): Unit
   
   /**
     * set issuer name field by parameter
@@ -56,7 +56,7 @@ trait TBSCertList extends ASN1Object {
     * tbsc.setIssuerParam({'str': '/C=US/CN=b'});
     * @see KJUR.asn1.x509.X500Name
     */
-  def setIssuerByParam(x500NameParam: StringParam): Unit = js.native
+  def setIssuerByParam(x500NameParam: StringParam): Unit
   
   /**
     * set nextUpdate field by parameter
@@ -65,7 +65,7 @@ trait TBSCertList extends ASN1Object {
     * tbsc.setNextUpdateByParam({'str': '130508235959Z'});
     * @see KJUR.asn1.x509.Time
     */
-  def setNextUpdateByParam(timeParam: StringParam): Unit = js.native
+  def setNextUpdateByParam(timeParam: StringParam): Unit
   
   /**
     * set signature algorithm field by parameter
@@ -73,7 +73,7 @@ trait TBSCertList extends ASN1Object {
     * @example
     * tbsc.setSignatureAlgByParam({'name': 'SHA1withRSA'});
     */
-  def setSignatureAlgByParam(algIdParam: NameParam): Unit = js.native
+  def setSignatureAlgByParam(algIdParam: NameParam): Unit
   
   /**
     * set thisUpdate field by parameter
@@ -82,7 +82,7 @@ trait TBSCertList extends ASN1Object {
     * tbsc.setThisUpdateByParam({'str': '130508235959Z'});
     * @see KJUR.asn1.x509.Time
     */
-  def setThisUpdateByParam(timeParam: StringParam): Unit = js.native
+  def setThisUpdateByParam(timeParam: StringParam): Unit
 }
 object TBSCertList {
   

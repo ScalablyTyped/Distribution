@@ -36,17 +36,30 @@ import typings.rrule.weekdayMod.Weekday
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rruleMod {
   
   @JSImport("rrule/dist/esm/src/rrule", JSImport.Default)
   @js.native
-  class default () extends RRule {
+  class default ()
+    extends StObject
+       with RRule {
     def this(options: PartialOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], noCache: Boolean) = this()
+    def this(options: Unit, noCache: Boolean) = this()
     def this(options: PartialOptions, noCache: Boolean) = this()
+    
+    /* CompleteClass */
+    override def after(date: Date, inc: Boolean): Date = js.native
+    
+    /* CompleteClass */
+    override def all(): js.Array[Date] = js.native
+    
+    /* CompleteClass */
+    override def before(date: Date, inc: Boolean): Date = js.native
+    
+    /* CompleteClass */
+    override def between(after: Date, before: Date, inc: Boolean): js.Array[Date] = js.native
   }
   /* static members */
   object default {
@@ -117,41 +130,34 @@ object rruleMod {
     @js.native
     val YEARLY: String | Double = js.native
     
-    @JSImport("rrule/dist/esm/src/rrule", "default.fromString")
-    @js.native
-    def fromString(str: String): RRule = js.native
+    @scala.inline
+    def fromString(str: String): RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[RRule]
     
-    @JSImport("rrule/dist/esm/src/rrule", "default.fromText")
-    @js.native
-    def fromText(text: String): RRule = js.native
-    @JSImport("rrule/dist/esm/src/rrule", "default.fromText")
-    @js.native
-    def fromText(text: String, language: Language): RRule = js.native
+    @scala.inline
+    def fromText(text: String): RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[RRule]
+    @scala.inline
+    def fromText(text: String, language: Language): RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[RRule]
     
     @JSImport("rrule/dist/esm/src/rrule", "default.optionsToString")
     @js.native
     def optionsToString: js.Function1[/* options */ PartialOptions, String] = js.native
-    @JSImport("rrule/dist/esm/src/rrule", "default.optionsToString")
-    @js.native
-    def optionsToString(options: PartialOptions): String = js.native
+    @scala.inline
+    def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "default.parseString")
     @js.native
     def parseString: js.Function1[/* rfcString */ String, PartialOptions] = js.native
-    @JSImport("rrule/dist/esm/src/rrule", "default.parseString")
-    @js.native
-    def parseString(rfcString: String): PartialOptions = js.native
+    @scala.inline
+    def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
     @scala.inline
     def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
     
-    @JSImport("rrule/dist/esm/src/rrule", "default.parseText")
-    @js.native
-    def parseText(text: String): PartialOptions | Null = js.native
-    @JSImport("rrule/dist/esm/src/rrule", "default.parseText")
-    @js.native
-    def parseText(text: String, language: Language): PartialOptions | Null = js.native
+    @scala.inline
+    def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
+    @scala.inline
+    def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
   }
   
   @JSImport("rrule/dist/esm/src/rrule", "DEFAULT_OPTIONS")
@@ -214,7 +220,9 @@ object rruleMod {
   ] = js.native
   
   @js.native
-  trait RRule extends QueryMethods {
+  trait RRule
+    extends StObject
+       with QueryMethods {
     
     var _cache: Cache | Null = js.native
     
@@ -270,13 +278,13 @@ object rruleMod {
     def between(
       after: Date,
       before: Date,
-      inc: js.UndefOr[scala.Nothing],
+      inc: Boolean,
       iterator: js.Function2[/* d */ Date, /* len */ Double, Boolean]
     ): js.Array[Date] = js.native
     def between(
       after: Date,
       before: Date,
-      inc: Boolean,
+      inc: Unit,
       iterator: js.Function2[/* d */ Date, /* len */ Double, Boolean]
     ): js.Array[Date] = js.native
     
@@ -297,15 +305,11 @@ object rruleMod {
       * to text.
       */
     def toText(): String = js.native
-    def toText(
-      gettext: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ): String = js.native
-    def toText(gettext: js.UndefOr[scala.Nothing], language: Language): String = js.native
-    def toText(gettext: js.UndefOr[scala.Nothing], language: Language, dateFormatter: DateFormatter): String = js.native
+    def toText(gettext: Unit, language: Unit, dateFormatter: DateFormatter): String = js.native
+    def toText(gettext: Unit, language: Language): String = js.native
+    def toText(gettext: Unit, language: Language, dateFormatter: DateFormatter): String = js.native
     def toText(gettext: GetText): String = js.native
-    def toText(gettext: GetText, language: js.UndefOr[scala.Nothing], dateFormatter: DateFormatter): String = js.native
+    def toText(gettext: GetText, language: Unit, dateFormatter: DateFormatter): String = js.native
     def toText(gettext: GetText, language: Language): String = js.native
     def toText(gettext: GetText, language: Language, dateFormatter: DateFormatter): String = js.native
   }

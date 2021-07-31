@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Person extends StObject {
   
   /** The person's email addresses */
-  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.native
+  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
   
   /** The resource name of the person to provide information about. See People.get from Google People API. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Obfuscated ID of a person. */
-  var obfuscatedId: js.UndefOr[String] = js.native
+  var obfuscatedId: js.UndefOr[String] = js.undefined
   
   /** The person's name */
-  var personNames: js.UndefOr[js.Array[Name]] = js.native
+  var personNames: js.UndefOr[js.Array[Name]] = js.undefined
   
   /** A person's read-only photo. A picture shown next to the person's name to help others recognize the person in search results. */
-  var photos: js.UndefOr[js.Array[Photo]] = js.native
+  var photos: js.UndefOr[js.Array[Photo]] = js.undefined
 }
 object Person {
   

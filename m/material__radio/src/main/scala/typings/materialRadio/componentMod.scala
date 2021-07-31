@@ -6,7 +6,6 @@ import typings.materialRipple.componentMod.MDCRipple
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -15,7 +14,7 @@ object componentMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/radio/component", "MDCRadio")
   @js.native
   class MDCRadio protected () extends MDCComponent[MDCRadioFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCRadioFoundation, args: js.Any*) = this()
     
     def checked: Boolean = js.native
@@ -36,8 +35,11 @@ object componentMod {
   /* static members */
   object MDCRadio {
     
-    @JSImport("@material/radio/component", "MDCRadio.attachTo")
+    @JSImport("@material/radio/component", "MDCRadio")
     @js.native
-    def attachTo(root: Element): MDCRadio = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCRadio = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCRadio]
   }
 }

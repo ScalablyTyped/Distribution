@@ -24,7 +24,6 @@ import typings.guacamoleClient.guacamoleClientNumbers.`0x031d`
 import typings.guacamoleClient.statusMod.Status.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusMod {
@@ -87,6 +86,10 @@ object statusMod {
     trait Code extends StObject
     /* Inlined guacamole-client.guacamole-client/lib/Status.Status.StatusCode & std.Readonly<{fromHTTPCode (status : number): guacamole-client.guacamole-client/lib/Status.Status.Code, fromWebSocketCode (code : number): guacamole-client.guacamole-client/lib/Status.Status.Code}> */
     object Code {
+      
+      @JSImport("guacamole-client/lib/Status", "Status.Code")
+      @js.native
+      val ^ : js.Any = js.native
       
       @JSImport("guacamole-client/lib/Status", "Status.Code.CLIENT_BAD_REQUEST")
       @js.native
@@ -172,88 +175,63 @@ object statusMod {
       @js.native
       val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
       
-      @JSImport("guacamole-client/lib/Status", "Status.Code.fromHTTPCode")
-      @js.native
-      def fromHTTPCode(status: Double): Code = js.native
+      @scala.inline
+      def fromHTTPCode(status: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[Code]
       
-      @JSImport("guacamole-client/lib/Status", "Status.Code.fromWebSocketCode")
-      @js.native
-      def fromWebSocketCode(code: Double): Code = js.native
+      @scala.inline
+      def fromWebSocketCode(code: Double): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[Code]
     }
     
     /* Inlined std.Readonly<{  SUCCESS :0x0000,   UNSUPPORTED :0x0100,   SERVER_ERROR :0x0200,   SERVER_BUSY :0x0201,   UPSTREAM_TIMEOUT :0x0202,   UPSTREAM_ERROR :0x0203,   RESOURCE_NOT_FOUND :0x0204,   RESOURCE_CONFLICT :0x0205,   RESOURCE_CLOSED :0x0206,   UPSTREAM_NOT_FOUND :0x0207,   UPSTREAM_UNAVAILABLE :0x0208,   SESSION_CONFLICT :0x0209,   SESSION_TIMEOUT :0x020a,   SESSION_CLOSED :0x020b,   CLIENT_BAD_REQUEST :0x0300,   CLIENT_UNAUTHORIZED :0x0301,   CLIENT_FORBIDDEN :0x0303,   CLIENT_TIMEOUT :0x0308,   CLIENT_OVERRUN :0x030d,   CLIENT_BAD_TYPE :0x030f,   CLIENT_TOO_MANY :0x031d}> */
-    @js.native
     trait StatusCode extends StObject {
       
-      val CLIENT_BAD_REQUEST: `0x0300` = js.native
+      val CLIENT_BAD_REQUEST: `0x0300`
       
-      val CLIENT_BAD_TYPE: `0x030f` = js.native
+      val CLIENT_BAD_TYPE: `0x030f`
       
-      val CLIENT_FORBIDDEN: `0x0303` = js.native
+      val CLIENT_FORBIDDEN: `0x0303`
       
-      val CLIENT_OVERRUN: `0x030d` = js.native
+      val CLIENT_OVERRUN: `0x030d`
       
-      val CLIENT_TIMEOUT: `0x0308` = js.native
+      val CLIENT_TIMEOUT: `0x0308`
       
-      val CLIENT_TOO_MANY: `0x031d` = js.native
+      val CLIENT_TOO_MANY: `0x031d`
       
-      val CLIENT_UNAUTHORIZED: `0x0301` = js.native
+      val CLIENT_UNAUTHORIZED: `0x0301`
       
-      val RESOURCE_CLOSED: `0x0206` = js.native
+      val RESOURCE_CLOSED: `0x0206`
       
-      val RESOURCE_CONFLICT: `0x0205` = js.native
+      val RESOURCE_CONFLICT: `0x0205`
       
-      val RESOURCE_NOT_FOUND: `0x0204` = js.native
+      val RESOURCE_NOT_FOUND: `0x0204`
       
-      val SERVER_BUSY: `0x0201` = js.native
+      val SERVER_BUSY: `0x0201`
       
-      val SERVER_ERROR: `0x0200` = js.native
+      val SERVER_ERROR: `0x0200`
       
-      val SESSION_CLOSED: `0x020b` = js.native
+      val SESSION_CLOSED: `0x020b`
       
-      val SESSION_CONFLICT: `0x0209` = js.native
+      val SESSION_CONFLICT: `0x0209`
       
-      val SESSION_TIMEOUT: `0x020a` = js.native
+      val SESSION_TIMEOUT: `0x020a`
       
-      val SUCCESS: `0x0000` = js.native
+      val SUCCESS: `0x0000`
       
-      val UNSUPPORTED: `0x0100` = js.native
+      val UNSUPPORTED: `0x0100`
       
-      val UPSTREAM_ERROR: `0x0203` = js.native
+      val UPSTREAM_ERROR: `0x0203`
       
-      val UPSTREAM_NOT_FOUND: `0x0207` = js.native
+      val UPSTREAM_NOT_FOUND: `0x0207`
       
-      val UPSTREAM_TIMEOUT: `0x0202` = js.native
+      val UPSTREAM_TIMEOUT: `0x0202`
       
-      val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
+      val UPSTREAM_UNAVAILABLE: `0x0208`
     }
     object StatusCode {
       
       @scala.inline
-      def apply(
-        CLIENT_BAD_REQUEST: `0x0300`,
-        CLIENT_BAD_TYPE: `0x030f`,
-        CLIENT_FORBIDDEN: `0x0303`,
-        CLIENT_OVERRUN: `0x030d`,
-        CLIENT_TIMEOUT: `0x0308`,
-        CLIENT_TOO_MANY: `0x031d`,
-        CLIENT_UNAUTHORIZED: `0x0301`,
-        RESOURCE_CLOSED: `0x0206`,
-        RESOURCE_CONFLICT: `0x0205`,
-        RESOURCE_NOT_FOUND: `0x0204`,
-        SERVER_BUSY: `0x0201`,
-        SERVER_ERROR: `0x0200`,
-        SESSION_CLOSED: `0x020b`,
-        SESSION_CONFLICT: `0x0209`,
-        SESSION_TIMEOUT: `0x020a`,
-        SUCCESS: `0x0000`,
-        UNSUPPORTED: `0x0100`,
-        UPSTREAM_ERROR: `0x0203`,
-        UPSTREAM_NOT_FOUND: `0x0207`,
-        UPSTREAM_TIMEOUT: `0x0202`,
-        UPSTREAM_UNAVAILABLE: `0x0208`
-      ): StatusCode = {
-        val __obj = js.Dynamic.literal(CLIENT_BAD_REQUEST = CLIENT_BAD_REQUEST.asInstanceOf[js.Any], CLIENT_BAD_TYPE = CLIENT_BAD_TYPE.asInstanceOf[js.Any], CLIENT_FORBIDDEN = CLIENT_FORBIDDEN.asInstanceOf[js.Any], CLIENT_OVERRUN = CLIENT_OVERRUN.asInstanceOf[js.Any], CLIENT_TIMEOUT = CLIENT_TIMEOUT.asInstanceOf[js.Any], CLIENT_TOO_MANY = CLIENT_TOO_MANY.asInstanceOf[js.Any], CLIENT_UNAUTHORIZED = CLIENT_UNAUTHORIZED.asInstanceOf[js.Any], RESOURCE_CLOSED = RESOURCE_CLOSED.asInstanceOf[js.Any], RESOURCE_CONFLICT = RESOURCE_CONFLICT.asInstanceOf[js.Any], RESOURCE_NOT_FOUND = RESOURCE_NOT_FOUND.asInstanceOf[js.Any], SERVER_BUSY = SERVER_BUSY.asInstanceOf[js.Any], SERVER_ERROR = SERVER_ERROR.asInstanceOf[js.Any], SESSION_CLOSED = SESSION_CLOSED.asInstanceOf[js.Any], SESSION_CONFLICT = SESSION_CONFLICT.asInstanceOf[js.Any], SESSION_TIMEOUT = SESSION_TIMEOUT.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any], UNSUPPORTED = UNSUPPORTED.asInstanceOf[js.Any], UPSTREAM_ERROR = UPSTREAM_ERROR.asInstanceOf[js.Any], UPSTREAM_NOT_FOUND = UPSTREAM_NOT_FOUND.asInstanceOf[js.Any], UPSTREAM_TIMEOUT = UPSTREAM_TIMEOUT.asInstanceOf[js.Any], UPSTREAM_UNAVAILABLE = UPSTREAM_UNAVAILABLE.asInstanceOf[js.Any])
+      def apply(): StatusCode = {
+        val __obj = js.Dynamic.literal(CLIENT_BAD_REQUEST = 0x0300, CLIENT_BAD_TYPE = 0x030f, CLIENT_FORBIDDEN = 0x0303, CLIENT_OVERRUN = 0x030d, CLIENT_TIMEOUT = 0x0308, CLIENT_TOO_MANY = 0x031d, CLIENT_UNAUTHORIZED = 0x0301, RESOURCE_CLOSED = 0x0206, RESOURCE_CONFLICT = 0x0205, RESOURCE_NOT_FOUND = 0x0204, SERVER_BUSY = 0x0201, SERVER_ERROR = 0x0200, SESSION_CLOSED = 0x020b, SESSION_CONFLICT = 0x0209, SESSION_TIMEOUT = 0x020a, SUCCESS = 0x0000, UNSUPPORTED = 0x0100, UPSTREAM_ERROR = 0x0203, UPSTREAM_NOT_FOUND = 0x0207, UPSTREAM_TIMEOUT = 0x0202, UPSTREAM_UNAVAILABLE = 0x0208)
         __obj.asInstanceOf[StatusCode]
       }
       

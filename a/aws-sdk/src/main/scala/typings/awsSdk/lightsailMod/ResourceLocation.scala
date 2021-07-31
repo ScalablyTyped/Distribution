@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceLocation extends StObject {
   
   /**
     * The Availability Zone. Follows the format us-east-2a (case-sensitive).
     */
-  var availabilityZone: js.UndefOr[String] = js.native
+  var availabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS Region name.
     */
-  var regionName: js.UndefOr[RegionName] = js.native
+  var regionName: js.UndefOr[RegionName] = js.undefined
 }
 object ResourceLocation {
   

@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * LinkedContentReference have been changed in this suggestion. For any field
   * set to true, there is a new suggested value.
   */
-@js.native
 trait SchemaLinkedContentReferenceSuggestionState extends StObject {
   
   /**
     * A mask that indicates which of the fields in sheets_chart_reference have
     * been changed in this suggestion.
     */
-  var sheetsChartReferenceSuggestionState: js.UndefOr[SchemaSheetsChartReferenceSuggestionState] = js.native
+  var sheetsChartReferenceSuggestionState: js.UndefOr[SchemaSheetsChartReferenceSuggestionState] = js.undefined
 }
 object SchemaLinkedContentReferenceSuggestionState {
   

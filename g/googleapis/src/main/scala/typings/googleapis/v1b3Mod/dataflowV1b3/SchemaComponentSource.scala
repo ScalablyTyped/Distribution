@@ -2,31 +2,29 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of an interstitial value between transforms in an execution
   * stage.
   */
-@js.native
 trait SchemaComponentSource extends StObject {
   
   /**
     * Dataflow service generated name for this source.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User name for the original user transform or collection with which this
     * source is most closely associated.
     */
-  var originalTransformOrCollection: js.UndefOr[String] = js.native
+  var originalTransformOrCollection: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable name for this transform; may be user or system generated.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object SchemaComponentSource {
   

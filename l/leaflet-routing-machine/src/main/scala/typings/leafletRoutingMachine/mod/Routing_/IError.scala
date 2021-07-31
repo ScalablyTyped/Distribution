@@ -2,16 +2,14 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
-@js.native
 trait IError extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var status: String | Double = js.native
+  var status: String | Double
 }
 object IError {
   

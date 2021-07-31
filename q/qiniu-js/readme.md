@@ -10,9 +10,9 @@ Javascript SDK for Qiniu Resource (Cloud) Storage AP
 | ------------------ | :-------------: |
 | Full name          | qiniu-js |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 180 |
-| # downloads        | 117552 |
+| # releases         | 10 |
+| # dependents       | 222 |
+| # downloads        | 130304 |
 | # stars            | 1 |
 
 ## Links

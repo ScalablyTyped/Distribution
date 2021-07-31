@@ -2,46 +2,44 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectSocketOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ConnectSocketCompleteCallback] = js.native
+  var complete: js.UndefOr[ConnectSocketCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ConnectSocketFailCallback] = js.native
+  var fail: js.UndefOr[ConnectSocketFailCallback] = js.undefined
   
   /** HTTP Header，Header 中不能设置 Referer */
-  var header: js.UndefOr[IAnyObject] = js.native
+  var header: js.UndefOr[IAnyObject] = js.undefined
   
   /** 是否开启压缩扩展
     *
     * 最低基础库： `2.8.0` */
-  var perMessageDeflate: js.UndefOr[Boolean] = js.native
+  var perMessageDeflate: js.UndefOr[Boolean] = js.undefined
   
   /** 子协议数组
     *
     * 最低基础库： `1.4.0` */
-  var protocols: js.UndefOr[js.Array[String]] = js.native
+  var protocols: js.UndefOr[js.Array[String]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ConnectSocketSuccessCallback] = js.native
+  var success: js.UndefOr[ConnectSocketSuccessCallback] = js.undefined
   
   /** 建立 TCP 连接的时候的 TCP_NODELAY 设置
     *
     * 最低基础库： `2.4.0` */
-  var tcpNoDelay: js.UndefOr[Boolean] = js.native
+  var tcpNoDelay: js.UndefOr[Boolean] = js.undefined
   
   /** 超时时间，单位为毫秒
     *
     * 最低基础库： `2.10.0` */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** 开发者服务器 wss 接口地址 */
-  var url: String = js.native
+  var url: String
 }
 object ConnectSocketOption {
   

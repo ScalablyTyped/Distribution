@@ -7,7 +7,6 @@ import typings.std.HTMLVideoElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Image")
@@ -22,8 +21,8 @@ class Image ()
   def this(element: String) = this()
   def this(element: HTMLImageElement) = this()
   def this(element: HTMLVideoElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: IImageOptions) = this()
   def this(element: String, options: IImageOptions) = this()
+  def this(element: Unit, options: IImageOptions) = this()
   def this(element: HTMLImageElement, options: IImageOptions) = this()
   def this(element: HTMLVideoElement, options: IImageOptions) = this()
 }
@@ -61,12 +60,10 @@ object Image {
     * @param callback Callback to execute when fabric.Image object is created
     * @param [options] Options object
     */
-  @JSImport("fabric", "fabric.Image.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Image = js.native
-  @JSImport("fabric", "fabric.Image.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function, options: IImageOptions): typings.fabric.fabricImplMod.Image = js.native
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Image]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function, options: IImageOptions): typings.fabric.fabricImplMod.Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Image]
   
   /**
     * Creates an instance of fabric.Image from an URL string
@@ -74,16 +71,12 @@ object Image {
     * @param [callback] Callback to invoke when image is created (newly created image is passed as a first argument)
     * @param [imgOptions] Options object
     */
-  @JSImport("fabric", "fabric.Image.fromURL")
-  @js.native
-  def fromURL(url: String): typings.fabric.fabricImplMod.Image = js.native
-  @JSImport("fabric", "fabric.Image.fromURL")
-  @js.native
-  def fromURL(url: String, callback: js.UndefOr[scala.Nothing], imgOptions: IImageOptions): typings.fabric.fabricImplMod.Image = js.native
-  @JSImport("fabric", "fabric.Image.fromURL")
-  @js.native
-  def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit]): typings.fabric.fabricImplMod.Image = js.native
-  @JSImport("fabric", "fabric.Image.fromURL")
-  @js.native
-  def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit], imgOptions: IImageOptions): typings.fabric.fabricImplMod.Image = js.native
+  @scala.inline
+  def fromURL(url: String): typings.fabric.fabricImplMod.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Image]
+  @scala.inline
+  def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit]): typings.fabric.fabricImplMod.Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Image]
+  @scala.inline
+  def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit], imgOptions: IImageOptions): typings.fabric.fabricImplMod.Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], imgOptions.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Image]
+  @scala.inline
+  def fromURL(url: String, callback: Unit, imgOptions: IImageOptions): typings.fabric.fabricImplMod.Image = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], imgOptions.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Image]
 }

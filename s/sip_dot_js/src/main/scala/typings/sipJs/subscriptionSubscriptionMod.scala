@@ -6,7 +6,6 @@ import typings.sipJs.subscribeMod.OutgoingSubscribeRequestDelegate
 import typings.sipJs.subscriptionSubscriptionDelegateMod.SubscriptionDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionSubscriptionMod {
@@ -18,27 +17,37 @@ object subscriptionSubscriptionMod {
   object SubscriptionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SubscriptionState with String] = js.native
+    def apply(value: String): js.UndefOr[SubscriptionState & String] = js.native
     
     @js.native
-    sealed trait Active extends SubscriptionState
-    /* "Active" */ val Active: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Active with String = js.native
+    sealed trait Active
+      extends StObject
+         with SubscriptionState
+    /* "Active" */ val Active: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Active & String = js.native
     
     @js.native
-    sealed trait Initial extends SubscriptionState
-    /* "Initial" */ val Initial: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Initial with String = js.native
+    sealed trait Initial
+      extends StObject
+         with SubscriptionState
+    /* "Initial" */ val Initial: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Initial & String = js.native
     
     @js.native
-    sealed trait NotifyWait extends SubscriptionState
-    /* "NotifyWait" */ val NotifyWait: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.NotifyWait with String = js.native
+    sealed trait NotifyWait
+      extends StObject
+         with SubscriptionState
+    /* "NotifyWait" */ val NotifyWait: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.NotifyWait & String = js.native
     
     @js.native
-    sealed trait Pending extends SubscriptionState
-    /* "Pending" */ val Pending: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Pending with String = js.native
+    sealed trait Pending
+      extends StObject
+         with SubscriptionState
+    /* "Pending" */ val Pending: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Pending & String = js.native
     
     @js.native
-    sealed trait Terminated extends SubscriptionState
-    /* "Terminated" */ val Terminated: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Terminated with String = js.native
+    sealed trait Terminated
+      extends StObject
+         with SubscriptionState
+    /* "Terminated" */ val Terminated: typings.sipJs.subscriptionSubscriptionMod.SubscriptionState.Terminated & String = js.native
   }
   
   @js.native
@@ -72,7 +81,7 @@ object subscriptionSubscriptionMod {
       * @param options - Options bucket
       */
     def subscribe(): OutgoingSubscribeRequest = js.native
-    def subscribe(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingSubscribeRequest = js.native
+    def subscribe(delegate: Unit, options: RequestOptions): OutgoingSubscribeRequest = js.native
     def subscribe(delegate: OutgoingSubscribeRequestDelegate): OutgoingSubscribeRequest = js.native
     def subscribe(delegate: OutgoingSubscribeRequestDelegate, options: RequestOptions): OutgoingSubscribeRequest = js.native
     

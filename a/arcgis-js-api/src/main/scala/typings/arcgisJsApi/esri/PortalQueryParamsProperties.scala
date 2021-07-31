@@ -14,10 +14,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.uploaded
 import typings.arcgisJsApi.arcgisJsApiStrings.username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalQueryParamsProperties extends StObject {
   
   /**
@@ -25,28 +23,28 @@ trait PortalQueryParamsProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#categories)
     */
-  var categories: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+  var categories: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   
   /**
     * Only relevant when querying for [PortalItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#extent)
     */
-  var extent: js.UndefOr[ExtentProperties] = js.native
+  var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The maximum number of results to be included in the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results) set response.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num)
     */
-  var num: js.UndefOr[Double] = js.native
+  var num: js.UndefOr[Double] = js.undefined
   
   /**
     * The query string used for the search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query)
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-delimited list of fields to sort.
@@ -55,21 +53,21 @@ trait PortalQueryParamsProperties extends StObject {
     */
   var sortField: js.UndefOr[
     title | uploaded | modified | username | created | typings.arcgisJsApi.arcgisJsApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The order in which to sort the results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortOrder)
     */
-  var sortOrder: js.UndefOr[asc_ | desc_] = js.native
+  var sortOrder: js.UndefOr[asc_ | desc_] = js.undefined
   
   /**
     * The index of the first entry in the result set response.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start)
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object PortalQueryParamsProperties {
   

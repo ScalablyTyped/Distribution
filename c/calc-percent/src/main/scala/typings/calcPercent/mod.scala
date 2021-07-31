@@ -2,32 +2,32 @@ package typings.calcPercent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("calc-percent", JSImport.Namespace)
-  @js.native
-  def apply(`val`: Double, total: Double): String = js.native
-  @JSImport("calc-percent", JSImport.Namespace)
-  @js.native
-  def apply(`val`: Double, total: Double, opts: Options): String = js.native
+  @scala.inline
+  def apply(`val`: Double, total: Double): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(`val`: Double, total: Double, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], total.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("calc-percent", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Number of decimals
       * @default 0
       */
-    var decimal: js.UndefOr[Double] = js.native
+    var decimal: js.UndefOr[Double] = js.undefined
     
     /**
       * Append a suffix.
       * @default ''
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object Options {
     

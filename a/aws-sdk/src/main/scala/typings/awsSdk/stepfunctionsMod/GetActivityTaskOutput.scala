@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetActivityTaskOutput extends StObject {
   
   /**
     * The string that contains the JSON input data for the task. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var input: js.UndefOr[SensitiveDataJobInput] = js.native
+  var input: js.UndefOr[SensitiveDataJobInput] = js.undefined
   
   /**
     * A token that identifies the scheduled task. This token must be copied and included in subsequent calls to SendTaskHeartbeat, SendTaskSuccess or SendTaskFailure in order to report the progress or completion of the task.
     */
-  var taskToken: js.UndefOr[TaskToken] = js.native
+  var taskToken: js.UndefOr[TaskToken] = js.undefined
 }
 object GetActivityTaskOutput {
   

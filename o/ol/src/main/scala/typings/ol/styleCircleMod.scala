@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleCircleMod {
@@ -23,16 +22,15 @@ object styleCircleMod {
     def setRadius(radius: Double): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var displacement: js.UndefOr[js.Array[Double]] = js.native
+    var displacement: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var fill: js.UndefOr[typings.ol.fillMod.default] = js.native
+    var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTimecode extends StObject {
   
   /**
     * If you specify a StopTimecode in an input (in order to clip the file), you can specify if you want the clip to exclude (the default) or include the frame specified by the timecode.
     */
-  var LastFrameClippingBehavior: js.UndefOr[typings.awsSdk.medialiveMod.LastFrameClippingBehavior] = js.native
+  var LastFrameClippingBehavior: js.UndefOr[typings.awsSdk.medialiveMod.LastFrameClippingBehavior] = js.undefined
   
   /**
     * The timecode for the frame where you want to stop the clip. Optional; if not specified, the clip continues to the end of the file. Enter the timecode as HH:MM:SS:FF or HH:MM:SS;FF.
     */
-  var Timecode: js.UndefOr[string] = js.native
+  var Timecode: js.UndefOr[string] = js.undefined
 }
 object StopTimecode {
   

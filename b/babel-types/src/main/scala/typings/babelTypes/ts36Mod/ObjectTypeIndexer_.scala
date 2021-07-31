@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ObjectTypeIndexer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectTypeIndexer_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with UserWhitespacable {
   
-  var id: Expression = js.native
+  var id: Expression
   
-  var key: FlowTypeAnnotation = js.native
+  var key: FlowTypeAnnotation
   
   @JSName("type")
-  var type_ObjectTypeIndexer_ : ObjectTypeIndexer = js.native
+  var type_ObjectTypeIndexer_ : ObjectTypeIndexer
   
-  var value: FlowTypeAnnotation = js.native
+  var value: FlowTypeAnnotation
 }
 object ObjectTypeIndexer_ {
   
@@ -30,11 +29,10 @@ object ObjectTypeIndexer_ {
     key: FlowTypeAnnotation,
     loc: SourceLocation,
     start: Double,
-    `type`: ObjectTypeIndexer,
     value: FlowTypeAnnotation
   ): ObjectTypeIndexer_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectTypeIndexer")
     __obj.asInstanceOf[ObjectTypeIndexer_]
   }
   

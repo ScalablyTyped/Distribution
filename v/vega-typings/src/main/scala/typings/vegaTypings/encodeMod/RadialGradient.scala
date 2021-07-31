@@ -3,74 +3,73 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.vegaTypingsStrings.radial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGradient
-  extends BaseGradient
+  extends StObject
+     with BaseGradient
      with Gradient {
   
   /**
     * The type of gradient. Use `"radial"` for a radial gradient.
     */
   @JSName("gradient")
-  var gradient_RadialGradient: radial = js.native
+  var gradient_RadialGradient: radial
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The radius length, in normalized [0, 1] coordinates, of the inner circle for the gradient.
     *
     * __Default value:__ `0`
     */
-  var r1: js.UndefOr[Double] = js.native
+  var r1: js.UndefOr[Double] = js.undefined
   
   /**
     * The radius length, in normalized [0, 1] coordinates, of the outer circle for the gradient.
     *
     * __Default value:__ `0.5`
     */
-  var r2: js.UndefOr[Double] = js.native
+  var r2: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of gradient stops defining the gradient color sequence.
     */
-  var stops: js.Array[GradientStop] = js.native
+  var stops: js.Array[GradientStop]
   
   /**
     * The x-coordinate, in normalized [0, 1] coordinates, for the center of the inner circle for the gradient.
     *
     * __Default value:__ `0.5`
     */
-  var x1: js.UndefOr[Double] = js.native
+  var x1: js.UndefOr[Double] = js.undefined
   
   /**
     * The x-coordinate, in normalized [0, 1] coordinates, for the center of the outer circle for the gradient.
     *
     * __Default value:__ `0.5`
     */
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
   /**
     * The y-coordinate, in normalized [0, 1] coordinates, for the center of the inner circle for the gradient.
     *
     * __Default value:__ `0.5`
     */
-  var y1: js.UndefOr[Double] = js.native
+  var y1: js.UndefOr[Double] = js.undefined
   
   /**
     * The y-coordinate, in normalized [0, 1] coordinates, for the center of the outer circle for the gradient.
     *
     * __Default value:__ `0.5`
     */
-  var y2: js.UndefOr[Double] = js.native
+  var y2: js.UndefOr[Double] = js.undefined
 }
 object RadialGradient {
   
   @scala.inline
-  def apply(gradient: radial, stops: js.Array[GradientStop]): RadialGradient = {
-    val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+  def apply(stops: js.Array[GradientStop]): RadialGradient = {
+    val __obj = js.Dynamic.literal(gradient = "radial", stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGradient]
   }
   

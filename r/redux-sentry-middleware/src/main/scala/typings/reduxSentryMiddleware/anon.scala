@@ -42,27 +42,25 @@ import typings.sentryTypes.transportMod.TransportOptions
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Typeof extends StObject {
     
-    var Breadcrumbs: TypeofBreadcrumbs = js.native
+    var Breadcrumbs: TypeofBreadcrumbs
     
-    var FunctionToString: TypeofCoreIntegrations = js.native
+    var FunctionToString: TypeofCoreIntegrations
     
-    var GlobalHandlers: TypeofGlobalHandlers = js.native
+    var GlobalHandlers: TypeofGlobalHandlers
     
-    var InboundFilters: TypeofCoreIntegrationsInstantiable = js.native
+    var InboundFilters: TypeofCoreIntegrationsInstantiable
     
-    var LinkedErrors: TypeofLinkedErrors = js.native
+    var LinkedErrors: TypeofLinkedErrors
     
-    var TryCatch: TypeofTryCatch = js.native
+    var TryCatch: TypeofTryCatch
     
-    var UserAgent: TypeofUserAgent = js.native
+    var UserAgent: TypeofUserAgent
   }
   object Typeof {
     
@@ -107,10 +105,14 @@ object anon {
   }
   
   @js.native
-  trait TypeofIntegrations extends Typeof
+  trait TypeofIntegrations
+    extends StObject
+       with Typeof
   
   @js.native
-  trait TypeofScope extends Instantiable0[Scope] {
+  trait TypeofScope
+    extends StObject
+       with Instantiable0[Scope] {
     
     def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = js.native
   }
@@ -162,7 +164,7 @@ object anon {
     def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = js.native
     
     def eventFromMessage(options: Options, message: String): js.Thenable[Event] = js.native
-    def eventFromMessage(options: Options, message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event] = js.native
+    def eventFromMessage(options: Options, message: String, level: Unit, hint: EventHint): js.Thenable[Event] = js.native
     def eventFromMessage(options: Options, message: String, level: typings.sentryTypes.severityMod.Severity): js.Thenable[Event] = js.native
     def eventFromMessage(
       options: Options,
@@ -214,10 +216,9 @@ object anon {
     
     def withScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
     
-    def wrap(fn: js.Function1[/* args */ js.Any, _]): js.Any = js.native
+    def wrap(fn: js.Function1[/* args */ js.Any, js.Any]): js.Any = js.native
   }
   
-  @js.native
   trait TypeofSeverity extends StObject {
     
     /**
@@ -226,7 +227,7 @@ object anon {
       * @param level string representation of Severity
       * @returns Severity
       */
-    def fromString(level: String): Severity = js.native
+    def fromString(level: String): Severity
   }
   object TypeofSeverity {
     
@@ -244,7 +245,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofStatus extends StObject {
     
     /**
@@ -253,7 +253,7 @@ object anon {
       * @param code The HTTP response status code.
       * @returns The send status or {@link Status.Unknown}.
       */
-    def fromHttpCode(code: Double): Status = js.native
+    def fromHttpCode(code: Double): Status
   }
   object TypeofStatus {
     
@@ -271,17 +271,16 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofTransports extends StObject {
     
-    var BaseTransport: Instantiable1[/* options */ TransportOptions, typings.sentryBrowser.mod.Transports.BaseTransport] = js.native
+    var BaseTransport: Instantiable1[/* options */ TransportOptions, typings.sentryBrowser.mod.Transports.BaseTransport]
     
     var FetchTransport: Instantiable1[
         /* options */ TransportOptions, 
         typings.sentryBrowser.mod.Transports.FetchTransport
-      ] = js.native
+      ]
     
-    var XHRTransport: Instantiable1[/* options */ TransportOptions, typings.sentryBrowser.mod.Transports.XHRTransport] = js.native
+    var XHRTransport: Instantiable1[/* options */ TransportOptions, typings.sentryBrowser.mod.Transports.XHRTransport]
   }
   object TypeofTransports {
     

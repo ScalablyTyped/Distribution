@@ -3,17 +3,17 @@ package typings.vueCompilerSfc.mod
 import typings.vueCompilerSfc.anon.GenerateScopedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SFCAsyncStyleCompileOptions extends SFCStyleCompileOptions {
+trait SFCAsyncStyleCompileOptions
+  extends StObject
+     with SFCStyleCompileOptions {
   
-  var isAsync: js.UndefOr[Boolean] = js.native
+  var isAsync: js.UndefOr[Boolean] = js.undefined
   
-  var modules: js.UndefOr[Boolean] = js.native
+  var modules: js.UndefOr[Boolean] = js.undefined
   
-  var modulesOptions: js.UndefOr[GenerateScopedName] = js.native
+  var modulesOptions: js.UndefOr[GenerateScopedName] = js.undefined
 }
 object SFCAsyncStyleCompileOptions {
   

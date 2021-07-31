@@ -4,59 +4,60 @@ import typings.reactAsync.reactAsyncBooleans.`false`
 import typings.reactAsync.reactAsyncStrings.initial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var data: js.UndefOr[scala.Nothing] = js.native
+  var data: Unit
   
-  var error: js.UndefOr[scala.Nothing] = js.native
+  var error: Unit
   
-  var finishedAt: js.UndefOr[scala.Nothing] = js.native
+  var finishedAt: Unit
   
-  var initialValue: js.UndefOr[scala.Nothing] = js.native
+  var initialValue: Unit
   
-  var isFulfilled: `false` = js.native
+  var isFulfilled: `false`
   
-  var isInitial: `false` = js.native
+  var isInitial: `false`
   
-  var isLoading: `false` = js.native
+  var isLoading: `false`
   
-  var isPending: `false` = js.native
+  var isPending: `false`
   
-  var isRejected: `false` = js.native
+  var isRejected: `false`
   
-  var isResolved: `false` = js.native
+  var isResolved: `false`
   
-  var isSettled: `false` = js.native
+  var isSettled: `false`
   
-  var startedAt: js.UndefOr[scala.Nothing] = js.native
+  var startedAt: Unit
   
-  var status: initial = js.native
+  var status: initial
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: Unit
 }
 object Error {
   
   @scala.inline
-  def apply(
-    isFulfilled: `false`,
-    isInitial: `false`,
-    isLoading: `false`,
-    isPending: `false`,
-    isRejected: `false`,
-    isResolved: `false`,
-    isSettled: `false`,
-    status: initial
-  ): Error = {
-    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isPending = isPending.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], isResolved = isResolved.asInstanceOf[js.Any], isSettled = isSettled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  def apply(data: Unit, error: Unit, finishedAt: Unit, initialValue: Unit, startedAt: Unit, value: Unit): Error = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], finishedAt = finishedAt.asInstanceOf[js.Any], initialValue = initialValue.asInstanceOf[js.Any], isFulfilled = false, isInitial = false, isLoading = false, isPending = false, isRejected = false, isResolved = false, isSettled = false, startedAt = startedAt.asInstanceOf[js.Any], status = "initial", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
   @scala.inline
   implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFinishedAt(value: Unit): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInitialValue(value: Unit): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIsFulfilled(value: `false`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
@@ -80,6 +81,12 @@ object Error {
     def setIsSettled(value: `false`): Self = StObject.set(x, "isSettled", value.asInstanceOf[js.Any])
     
     @scala.inline
+    def setStartedAt(value: Unit): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setStatus(value: initial): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

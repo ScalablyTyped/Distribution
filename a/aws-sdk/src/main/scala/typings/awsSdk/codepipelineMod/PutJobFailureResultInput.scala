@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutJobFailureResultInput extends StObject {
   
   /**
     * The details about the failure of a job.
     */
-  var failureDetails: FailureDetails = js.native
+  var failureDetails: FailureDetails
   
   /**
     * The unique system-generated ID of the job that failed. This is the same ID returned from PollForJobs.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
 }
 object PutJobFailureResultInput {
   

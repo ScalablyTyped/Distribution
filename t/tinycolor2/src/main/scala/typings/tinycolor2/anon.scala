@@ -290,500 +290,367 @@ import typings.tinycolor2.tinycolor2Strings.yellow
 import typings.tinycolor2.tinycolor2Strings.yellowgreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `000` extends StObject {
     
-    var `000`: black = js.native
+    var `000`: black
     
-    var `000080`: navy = js.native
+    var `000080`: navy
     
-    var `00008b`: darkblue = js.native
+    var `00008b`: darkblue
     
-    var `0000cd`: mediumblue = js.native
+    var `0000cd`: mediumblue
     
-    var `006400`: darkgreen = js.native
+    var `006400`: darkgreen
     
-    var `008000`: green = js.native
+    var `008000`: green
     
-    var `008080`: teal = js.native
+    var `008080`: teal
     
-    var `008b8b`: darkcyan = js.native
+    var `008b8b`: darkcyan
     
-    var `00bfff`: deepskyblue = js.native
+    var `00bfff`: deepskyblue
     
-    var `00ced1`: darkturquoise = js.native
+    var `00ced1`: darkturquoise
     
-    var `00f`: blue = js.native
+    var `00f`: blue
     
-    var `00fa9a`: mediumspringgreen = js.native
+    var `00fa9a`: mediumspringgreen
     
-    var `00ff7f`: springgreen = js.native
+    var `00ff7f`: springgreen
     
-    var `0f0`: lime = js.native
+    var `0f0`: lime
     
-    var `0ff`: aqua | cyan = js.native
+    var `0ff`: aqua | cyan
     
-    var `191970`: midnightblue = js.native
+    var `191970`: midnightblue
     
-    var `1e90ff`: dodgerblue = js.native
+    var `1e90ff`: dodgerblue
     
-    var `20b2aa`: lightseagreen = js.native
+    var `20b2aa`: lightseagreen
     
-    var `228b22`: forestgreen = js.native
+    var `228b22`: forestgreen
     
-    var `2e8b57`: seagreen = js.native
+    var `2e8b57`: seagreen
     
-    var `2f4f4f`: darkslategray | darkslategrey = js.native
+    var `2f4f4f`: darkslategray | darkslategrey
     
-    var `32cd32`: limegreen = js.native
+    var `32cd32`: limegreen
     
-    var `3cb371`: mediumseagreen = js.native
+    var `3cb371`: mediumseagreen
     
-    var `40e0d0`: turquoise = js.native
+    var `40e0d0`: turquoise
     
-    var `4169e1`: royalblue = js.native
+    var `4169e1`: royalblue
     
-    var `4682b4`: steelblue = js.native
+    var `4682b4`: steelblue
     
-    var `483d8b`: darkslateblue = js.native
+    var `483d8b`: darkslateblue
     
-    var `48d1cc`: mediumturquoise = js.native
+    var `48d1cc`: mediumturquoise
     
-    var `4b0082`: indigo = js.native
+    var `4b0082`: indigo
     
-    var `556b2f`: darkolivegreen = js.native
+    var `556b2f`: darkolivegreen
     
-    var `5f9ea0`: cadetblue = js.native
+    var `5f9ea0`: cadetblue
     
-    var `6495ed`: cornflowerblue = js.native
+    var `6495ed`: cornflowerblue
     
-    var `663399`: rebeccapurple = js.native
+    var `663399`: rebeccapurple
     
-    var `66cdaa`: mediumaquamarine = js.native
+    var `66cdaa`: mediumaquamarine
     
-    var `696969`: dimgray | dimgrey = js.native
+    var `696969`: dimgray | dimgrey
     
-    var `6a5acd`: slateblue = js.native
+    var `6a5acd`: slateblue
     
-    var `6b8e23`: olivedrab = js.native
+    var `6b8e23`: olivedrab
     
-    var `708090`: slategray | slategrey = js.native
+    var `708090`: slategray | slategrey
     
-    var `789`: lightslategray | lightslategrey = js.native
+    var `789`: lightslategray | lightslategrey
     
-    var `7b68ee`: mediumslateblue = js.native
+    var `7b68ee`: mediumslateblue
     
-    var `7cfc00`: lawngreen = js.native
+    var `7cfc00`: lawngreen
     
-    var `7fff00`: chartreuse = js.native
+    var `7fff00`: chartreuse
     
-    var `7fffd4`: aquamarine = js.native
+    var `7fffd4`: aquamarine
     
-    var `800000`: maroon = js.native
+    var `800000`: maroon
     
-    var `800080`: purple = js.native
+    var `800080`: purple
     
-    var `808000`: olive = js.native
+    var `808000`: olive
     
-    var `808080`: gray | grey = js.native
+    var `808080`: gray | grey
     
-    var `87ceeb`: skyblue = js.native
+    var `87ceeb`: skyblue
     
-    var `87cefa`: lightskyblue = js.native
+    var `87cefa`: lightskyblue
     
-    var `8a2be2`: blueviolet = js.native
+    var `8a2be2`: blueviolet
     
-    var `8b0000`: darkred = js.native
+    var `8b0000`: darkred
     
-    var `8b008b`: darkmagenta = js.native
+    var `8b008b`: darkmagenta
     
-    var `8b4513`: saddlebrown = js.native
+    var `8b4513`: saddlebrown
     
-    var `8fbc8f`: darkseagreen = js.native
+    var `8fbc8f`: darkseagreen
     
-    var `90ee90`: lightgreen = js.native
+    var `90ee90`: lightgreen
     
-    var `9370db`: mediumpurple = js.native
+    var `9370db`: mediumpurple
     
-    var `9400d3`: darkviolet = js.native
+    var `9400d3`: darkviolet
     
-    var `98fb98`: palegreen = js.native
+    var `98fb98`: palegreen
     
-    var `9932cc`: darkorchid = js.native
+    var `9932cc`: darkorchid
     
-    var `9acd32`: yellowgreen = js.native
+    var `9acd32`: yellowgreen
     
-    var a0522d: sienna = js.native
+    var a0522d: sienna
     
-    var a52a2a: brown = js.native
+    var a52a2a: brown
     
-    var a9a9a9: darkgray | darkgrey = js.native
+    var a9a9a9: darkgray | darkgrey
     
-    var add8e6: lightblue = js.native
+    var add8e6: lightblue
     
-    var adff2f: greenyellow = js.native
+    var adff2f: greenyellow
     
-    var afeeee: paleturquoise = js.native
+    var afeeee: paleturquoise
     
-    var b0c4de: lightsteelblue = js.native
+    var b0c4de: lightsteelblue
     
-    var b0e0e6: powderblue = js.native
+    var b0e0e6: powderblue
     
-    var b22222: firebrick = js.native
+    var b22222: firebrick
     
-    var b8860b: darkgoldenrod = js.native
+    var b8860b: darkgoldenrod
     
-    var ba55d3: mediumorchid = js.native
+    var ba55d3: mediumorchid
     
-    var bc8f8f: rosybrown = js.native
+    var bc8f8f: rosybrown
     
-    var bdb76b: darkkhaki = js.native
+    var bdb76b: darkkhaki
     
-    var c0c0c0: silver = js.native
+    var c0c0c0: silver
     
-    var c71585: mediumvioletred = js.native
+    var c71585: mediumvioletred
     
-    var cd5c5c: indianred = js.native
+    var cd5c5c: indianred
     
-    var cd853f: peru = js.native
+    var cd853f: peru
     
-    var d2691e: chocolate = js.native
+    var d2691e: chocolate
     
-    var d2b48c: tan = js.native
+    var d2b48c: tan
     
-    var d3d3d3: lightgray | lightgrey = js.native
+    var d3d3d3: lightgray | lightgrey
     
-    var d8bfd8: thistle = js.native
+    var d8bfd8: thistle
     
-    var da70d6: orchid = js.native
+    var da70d6: orchid
     
-    var daa520: goldenrod = js.native
+    var daa520: goldenrod
     
-    var db7093: palevioletred = js.native
+    var db7093: palevioletred
     
-    var dc143c: crimson = js.native
+    var dc143c: crimson
     
-    var dcdcdc: gainsboro = js.native
+    var dcdcdc: gainsboro
     
-    var dda0dd: plum = js.native
+    var dda0dd: plum
     
-    var deb887: burlywood = js.native
+    var deb887: burlywood
     
-    var e0ffff: lightcyan = js.native
+    var e0ffff: lightcyan
     
-    var e6e6fa: lavender = js.native
+    var e6e6fa: lavender
     
-    var e9967a: darksalmon = js.native
+    var e9967a: darksalmon
     
-    var ea7e5d: burntsienna = js.native
+    var ea7e5d: burntsienna
     
-    var ee82ee: violet = js.native
+    var ee82ee: violet
     
-    var eee8aa: palegoldenrod = js.native
+    var eee8aa: palegoldenrod
     
-    var f00: red = js.native
+    var f00: red
     
-    var f08080: lightcoral = js.native
+    var f08080: lightcoral
     
-    var f0e68c: khaki = js.native
+    var f0e68c: khaki
     
-    var f0f: fuchsia | magenta = js.native
+    var f0f: fuchsia | magenta
     
-    var f0f8ff: aliceblue = js.native
+    var f0f8ff: aliceblue
     
-    var f0fff0: honeydew = js.native
+    var f0fff0: honeydew
     
-    var f0ffff: azure = js.native
+    var f0ffff: azure
     
-    var f4a460: sandybrown = js.native
+    var f4a460: sandybrown
     
-    var f5deb3: wheat = js.native
+    var f5deb3: wheat
     
-    var f5f5dc: beige = js.native
+    var f5f5dc: beige
     
-    var f5f5f5: whitesmoke = js.native
+    var f5f5f5: whitesmoke
     
-    var f5fffa: mintcream = js.native
+    var f5fffa: mintcream
     
-    var f8f8ff: ghostwhite = js.native
+    var f8f8ff: ghostwhite
     
-    var fa8072: salmon = js.native
+    var fa8072: salmon
     
-    var faebd7: antiquewhite = js.native
+    var faebd7: antiquewhite
     
-    var faf0e6: linen = js.native
+    var faf0e6: linen
     
-    var fafad2: lightgoldenrodyellow = js.native
+    var fafad2: lightgoldenrodyellow
     
-    var fdf5e6: oldlace = js.native
+    var fdf5e6: oldlace
     
-    var ff0: yellow = js.native
+    var ff0: yellow
     
-    var ff1493: deeppink = js.native
+    var ff1493: deeppink
     
-    var ff4500: orangered = js.native
+    var ff4500: orangered
     
-    var ff6347: tomato = js.native
+    var ff6347: tomato
     
-    var ff69b4: hotpink = js.native
+    var ff69b4: hotpink
     
-    var ff7f50: coral = js.native
+    var ff7f50: coral
     
-    var ff8c00: darkorange = js.native
+    var ff8c00: darkorange
     
-    var ffa07a: lightsalmon = js.native
+    var ffa07a: lightsalmon
     
-    var ffa500: orange = js.native
+    var ffa500: orange
     
-    var ffb6c1: lightpink = js.native
+    var ffb6c1: lightpink
     
-    var ffc0cb: pink = js.native
+    var ffc0cb: pink
     
-    var ffd700: gold = js.native
+    var ffd700: gold
     
-    var ffdab9: peachpuff = js.native
+    var ffdab9: peachpuff
     
-    var ffdead: navajowhite = js.native
+    var ffdead: navajowhite
     
-    var ffe4b5: moccasin = js.native
+    var ffe4b5: moccasin
     
-    var ffe4c4: bisque = js.native
+    var ffe4c4: bisque
     
-    var ffe4e1: mistyrose = js.native
+    var ffe4e1: mistyrose
     
-    var ffebcd: blanchedalmond = js.native
+    var ffebcd: blanchedalmond
     
-    var ffefd5: papayawhip = js.native
+    var ffefd5: papayawhip
     
-    var fff: white = js.native
+    var fff: white
     
-    var fff0f5: lavenderblush = js.native
+    var fff0f5: lavenderblush
     
-    var fff5ee: seashell = js.native
+    var fff5ee: seashell
     
-    var fff8dc: cornsilk = js.native
+    var fff8dc: cornsilk
     
-    var fffacd: lemonchiffon = js.native
+    var fffacd: lemonchiffon
     
-    var fffaf0: floralwhite = js.native
+    var fffaf0: floralwhite
     
-    var fffafa: snow = js.native
+    var fffafa: snow
     
-    var ffffe0: lightyellow = js.native
+    var ffffe0: lightyellow
     
-    var fffff0: ivory = js.native
+    var fffff0: ivory
   }
   object `000` {
     
     @scala.inline
     def apply(
-      `000`: black,
-      `000080`: navy,
-      `00008b`: darkblue,
-      `0000cd`: mediumblue,
-      `006400`: darkgreen,
-      `008000`: green,
-      `008080`: teal,
-      `008b8b`: darkcyan,
-      `00bfff`: deepskyblue,
-      `00ced1`: darkturquoise,
-      `00f`: blue,
-      `00fa9a`: mediumspringgreen,
-      `00ff7f`: springgreen,
-      `0f0`: lime,
       `0ff`: aqua | cyan,
-      `191970`: midnightblue,
-      `1e90ff`: dodgerblue,
-      `20b2aa`: lightseagreen,
-      `228b22`: forestgreen,
-      `2e8b57`: seagreen,
       `2f4f4f`: darkslategray | darkslategrey,
-      `32cd32`: limegreen,
-      `3cb371`: mediumseagreen,
-      `40e0d0`: turquoise,
-      `4169e1`: royalblue,
-      `4682b4`: steelblue,
-      `483d8b`: darkslateblue,
-      `48d1cc`: mediumturquoise,
-      `4b0082`: indigo,
-      `556b2f`: darkolivegreen,
-      `5f9ea0`: cadetblue,
-      `6495ed`: cornflowerblue,
-      `663399`: rebeccapurple,
-      `66cdaa`: mediumaquamarine,
       `696969`: dimgray | dimgrey,
-      `6a5acd`: slateblue,
-      `6b8e23`: olivedrab,
       `708090`: slategray | slategrey,
       `789`: lightslategray | lightslategrey,
-      `7b68ee`: mediumslateblue,
-      `7cfc00`: lawngreen,
-      `7fff00`: chartreuse,
-      `7fffd4`: aquamarine,
-      `800000`: maroon,
-      `800080`: purple,
-      `808000`: olive,
       `808080`: gray | grey,
-      `87ceeb`: skyblue,
-      `87cefa`: lightskyblue,
-      `8a2be2`: blueviolet,
-      `8b0000`: darkred,
-      `8b008b`: darkmagenta,
-      `8b4513`: saddlebrown,
-      `8fbc8f`: darkseagreen,
-      `90ee90`: lightgreen,
-      `9370db`: mediumpurple,
-      `9400d3`: darkviolet,
-      `98fb98`: palegreen,
-      `9932cc`: darkorchid,
-      `9acd32`: yellowgreen,
-      a0522d: sienna,
-      a52a2a: brown,
       a9a9a9: darkgray | darkgrey,
-      add8e6: lightblue,
-      adff2f: greenyellow,
-      afeeee: paleturquoise,
-      b0c4de: lightsteelblue,
-      b0e0e6: powderblue,
-      b22222: firebrick,
-      b8860b: darkgoldenrod,
-      ba55d3: mediumorchid,
-      bc8f8f: rosybrown,
-      bdb76b: darkkhaki,
-      c0c0c0: silver,
-      c71585: mediumvioletred,
-      cd5c5c: indianred,
-      cd853f: peru,
-      d2691e: chocolate,
-      d2b48c: tan,
       d3d3d3: lightgray | lightgrey,
-      d8bfd8: thistle,
-      da70d6: orchid,
-      daa520: goldenrod,
-      db7093: palevioletred,
-      dc143c: crimson,
-      dcdcdc: gainsboro,
-      dda0dd: plum,
-      deb887: burlywood,
-      e0ffff: lightcyan,
-      e6e6fa: lavender,
-      e9967a: darksalmon,
-      ea7e5d: burntsienna,
-      ee82ee: violet,
-      eee8aa: palegoldenrod,
-      f00: red,
-      f08080: lightcoral,
-      f0e68c: khaki,
-      f0f: fuchsia | magenta,
-      f0f8ff: aliceblue,
-      f0fff0: honeydew,
-      f0ffff: azure,
-      f4a460: sandybrown,
-      f5deb3: wheat,
-      f5f5dc: beige,
-      f5f5f5: whitesmoke,
-      f5fffa: mintcream,
-      f8f8ff: ghostwhite,
-      fa8072: salmon,
-      faebd7: antiquewhite,
-      faf0e6: linen,
-      fafad2: lightgoldenrodyellow,
-      fdf5e6: oldlace,
-      ff0: yellow,
-      ff1493: deeppink,
-      ff4500: orangered,
-      ff6347: tomato,
-      ff69b4: hotpink,
-      ff7f50: coral,
-      ff8c00: darkorange,
-      ffa07a: lightsalmon,
-      ffa500: orange,
-      ffb6c1: lightpink,
-      ffc0cb: pink,
-      ffd700: gold,
-      ffdab9: peachpuff,
-      ffdead: navajowhite,
-      ffe4b5: moccasin,
-      ffe4c4: bisque,
-      ffe4e1: mistyrose,
-      ffebcd: blanchedalmond,
-      ffefd5: papayawhip,
-      fff: white,
-      fff0f5: lavenderblush,
-      fff5ee: seashell,
-      fff8dc: cornsilk,
-      fffacd: lemonchiffon,
-      fffaf0: floralwhite,
-      fffafa: snow,
-      ffffe0: lightyellow,
-      fffff0: ivory
+      f0f: fuchsia | magenta
     ): `000` = {
-      val __obj = js.Dynamic.literal(a0522d = a0522d.asInstanceOf[js.Any], a52a2a = a52a2a.asInstanceOf[js.Any], a9a9a9 = a9a9a9.asInstanceOf[js.Any], add8e6 = add8e6.asInstanceOf[js.Any], adff2f = adff2f.asInstanceOf[js.Any], afeeee = afeeee.asInstanceOf[js.Any], b0c4de = b0c4de.asInstanceOf[js.Any], b0e0e6 = b0e0e6.asInstanceOf[js.Any], b22222 = b22222.asInstanceOf[js.Any], b8860b = b8860b.asInstanceOf[js.Any], ba55d3 = ba55d3.asInstanceOf[js.Any], bc8f8f = bc8f8f.asInstanceOf[js.Any], bdb76b = bdb76b.asInstanceOf[js.Any], c0c0c0 = c0c0c0.asInstanceOf[js.Any], c71585 = c71585.asInstanceOf[js.Any], cd5c5c = cd5c5c.asInstanceOf[js.Any], cd853f = cd853f.asInstanceOf[js.Any], d2691e = d2691e.asInstanceOf[js.Any], d2b48c = d2b48c.asInstanceOf[js.Any], d3d3d3 = d3d3d3.asInstanceOf[js.Any], d8bfd8 = d8bfd8.asInstanceOf[js.Any], da70d6 = da70d6.asInstanceOf[js.Any], daa520 = daa520.asInstanceOf[js.Any], db7093 = db7093.asInstanceOf[js.Any], dc143c = dc143c.asInstanceOf[js.Any], dcdcdc = dcdcdc.asInstanceOf[js.Any], dda0dd = dda0dd.asInstanceOf[js.Any], deb887 = deb887.asInstanceOf[js.Any], e0ffff = e0ffff.asInstanceOf[js.Any], e6e6fa = e6e6fa.asInstanceOf[js.Any], e9967a = e9967a.asInstanceOf[js.Any], ea7e5d = ea7e5d.asInstanceOf[js.Any], ee82ee = ee82ee.asInstanceOf[js.Any], eee8aa = eee8aa.asInstanceOf[js.Any], f00 = f00.asInstanceOf[js.Any], f08080 = f08080.asInstanceOf[js.Any], f0e68c = f0e68c.asInstanceOf[js.Any], f0f = f0f.asInstanceOf[js.Any], f0f8ff = f0f8ff.asInstanceOf[js.Any], f0fff0 = f0fff0.asInstanceOf[js.Any], f0ffff = f0ffff.asInstanceOf[js.Any], f4a460 = f4a460.asInstanceOf[js.Any], f5deb3 = f5deb3.asInstanceOf[js.Any], f5f5dc = f5f5dc.asInstanceOf[js.Any], f5f5f5 = f5f5f5.asInstanceOf[js.Any], f5fffa = f5fffa.asInstanceOf[js.Any], f8f8ff = f8f8ff.asInstanceOf[js.Any], fa8072 = fa8072.asInstanceOf[js.Any], faebd7 = faebd7.asInstanceOf[js.Any], faf0e6 = faf0e6.asInstanceOf[js.Any], fafad2 = fafad2.asInstanceOf[js.Any], fdf5e6 = fdf5e6.asInstanceOf[js.Any], ff0 = ff0.asInstanceOf[js.Any], ff1493 = ff1493.asInstanceOf[js.Any], ff4500 = ff4500.asInstanceOf[js.Any], ff6347 = ff6347.asInstanceOf[js.Any], ff69b4 = ff69b4.asInstanceOf[js.Any], ff7f50 = ff7f50.asInstanceOf[js.Any], ff8c00 = ff8c00.asInstanceOf[js.Any], ffa07a = ffa07a.asInstanceOf[js.Any], ffa500 = ffa500.asInstanceOf[js.Any], ffb6c1 = ffb6c1.asInstanceOf[js.Any], ffc0cb = ffc0cb.asInstanceOf[js.Any], ffd700 = ffd700.asInstanceOf[js.Any], ffdab9 = ffdab9.asInstanceOf[js.Any], ffdead = ffdead.asInstanceOf[js.Any], ffe4b5 = ffe4b5.asInstanceOf[js.Any], ffe4c4 = ffe4c4.asInstanceOf[js.Any], ffe4e1 = ffe4e1.asInstanceOf[js.Any], ffebcd = ffebcd.asInstanceOf[js.Any], ffefd5 = ffefd5.asInstanceOf[js.Any], fff = fff.asInstanceOf[js.Any], fff0f5 = fff0f5.asInstanceOf[js.Any], fff5ee = fff5ee.asInstanceOf[js.Any], fff8dc = fff8dc.asInstanceOf[js.Any], fffacd = fffacd.asInstanceOf[js.Any], fffaf0 = fffaf0.asInstanceOf[js.Any], fffafa = fffafa.asInstanceOf[js.Any], ffffe0 = ffffe0.asInstanceOf[js.Any], fffff0 = fffff0.asInstanceOf[js.Any])
-      __obj.updateDynamic("000")(`000`.asInstanceOf[js.Any])
-      __obj.updateDynamic("000080")(`000080`.asInstanceOf[js.Any])
-      __obj.updateDynamic("00008b")(`00008b`.asInstanceOf[js.Any])
-      __obj.updateDynamic("0000cd")(`0000cd`.asInstanceOf[js.Any])
-      __obj.updateDynamic("006400")(`006400`.asInstanceOf[js.Any])
-      __obj.updateDynamic("008000")(`008000`.asInstanceOf[js.Any])
-      __obj.updateDynamic("008080")(`008080`.asInstanceOf[js.Any])
-      __obj.updateDynamic("008b8b")(`008b8b`.asInstanceOf[js.Any])
-      __obj.updateDynamic("00bfff")(`00bfff`.asInstanceOf[js.Any])
-      __obj.updateDynamic("00ced1")(`00ced1`.asInstanceOf[js.Any])
-      __obj.updateDynamic("00f")(`00f`.asInstanceOf[js.Any])
-      __obj.updateDynamic("00fa9a")(`00fa9a`.asInstanceOf[js.Any])
-      __obj.updateDynamic("00ff7f")(`00ff7f`.asInstanceOf[js.Any])
-      __obj.updateDynamic("0f0")(`0f0`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(a0522d = "sienna", a52a2a = "brown", a9a9a9 = a9a9a9.asInstanceOf[js.Any], add8e6 = "lightblue", adff2f = "greenyellow", afeeee = "paleturquoise", b0c4de = "lightsteelblue", b0e0e6 = "powderblue", b22222 = "firebrick", b8860b = "darkgoldenrod", ba55d3 = "mediumorchid", bc8f8f = "rosybrown", bdb76b = "darkkhaki", c0c0c0 = "silver", c71585 = "mediumvioletred", cd5c5c = "indianred", cd853f = "peru", d2691e = "chocolate", d2b48c = "tan", d3d3d3 = d3d3d3.asInstanceOf[js.Any], d8bfd8 = "thistle", da70d6 = "orchid", daa520 = "goldenrod", db7093 = "palevioletred", dc143c = "crimson", dcdcdc = "gainsboro", dda0dd = "plum", deb887 = "burlywood", e0ffff = "lightcyan", e6e6fa = "lavender", e9967a = "darksalmon", ea7e5d = "burntsienna", ee82ee = "violet", eee8aa = "palegoldenrod", f00 = "red", f08080 = "lightcoral", f0e68c = "khaki", f0f = f0f.asInstanceOf[js.Any], f0f8ff = "aliceblue", f0fff0 = "honeydew", f0ffff = "azure", f4a460 = "sandybrown", f5deb3 = "wheat", f5f5dc = "beige", f5f5f5 = "whitesmoke", f5fffa = "mintcream", f8f8ff = "ghostwhite", fa8072 = "salmon", faebd7 = "antiquewhite", faf0e6 = "linen", fafad2 = "lightgoldenrodyellow", fdf5e6 = "oldlace", ff0 = "yellow", ff1493 = "deeppink", ff4500 = "orangered", ff6347 = "tomato", ff69b4 = "hotpink", ff7f50 = "coral", ff8c00 = "darkorange", ffa07a = "lightsalmon", ffa500 = "orange", ffb6c1 = "lightpink", ffc0cb = "pink", ffd700 = "gold", ffdab9 = "peachpuff", ffdead = "navajowhite", ffe4b5 = "moccasin", ffe4c4 = "bisque", ffe4e1 = "mistyrose", ffebcd = "blanchedalmond", ffefd5 = "papayawhip", fff = "white", fff0f5 = "lavenderblush", fff5ee = "seashell", fff8dc = "cornsilk", fffacd = "lemonchiffon", fffaf0 = "floralwhite", fffafa = "snow", ffffe0 = "lightyellow", fffff0 = "ivory")
+      __obj.updateDynamic("000")("black")
+      __obj.updateDynamic("000080")("navy")
+      __obj.updateDynamic("00008b")("darkblue")
+      __obj.updateDynamic("0000cd")("mediumblue")
+      __obj.updateDynamic("006400")("darkgreen")
+      __obj.updateDynamic("008000")("green")
+      __obj.updateDynamic("008080")("teal")
+      __obj.updateDynamic("008b8b")("darkcyan")
+      __obj.updateDynamic("00bfff")("deepskyblue")
+      __obj.updateDynamic("00ced1")("darkturquoise")
+      __obj.updateDynamic("00f")("blue")
+      __obj.updateDynamic("00fa9a")("mediumspringgreen")
+      __obj.updateDynamic("00ff7f")("springgreen")
+      __obj.updateDynamic("0f0")("lime")
       __obj.updateDynamic("0ff")(`0ff`.asInstanceOf[js.Any])
-      __obj.updateDynamic("191970")(`191970`.asInstanceOf[js.Any])
-      __obj.updateDynamic("1e90ff")(`1e90ff`.asInstanceOf[js.Any])
-      __obj.updateDynamic("20b2aa")(`20b2aa`.asInstanceOf[js.Any])
-      __obj.updateDynamic("228b22")(`228b22`.asInstanceOf[js.Any])
-      __obj.updateDynamic("2e8b57")(`2e8b57`.asInstanceOf[js.Any])
+      __obj.updateDynamic("191970")("midnightblue")
+      __obj.updateDynamic("1e90ff")("dodgerblue")
+      __obj.updateDynamic("20b2aa")("lightseagreen")
+      __obj.updateDynamic("228b22")("forestgreen")
+      __obj.updateDynamic("2e8b57")("seagreen")
       __obj.updateDynamic("2f4f4f")(`2f4f4f`.asInstanceOf[js.Any])
-      __obj.updateDynamic("32cd32")(`32cd32`.asInstanceOf[js.Any])
-      __obj.updateDynamic("3cb371")(`3cb371`.asInstanceOf[js.Any])
-      __obj.updateDynamic("40e0d0")(`40e0d0`.asInstanceOf[js.Any])
-      __obj.updateDynamic("4169e1")(`4169e1`.asInstanceOf[js.Any])
-      __obj.updateDynamic("4682b4")(`4682b4`.asInstanceOf[js.Any])
-      __obj.updateDynamic("483d8b")(`483d8b`.asInstanceOf[js.Any])
-      __obj.updateDynamic("48d1cc")(`48d1cc`.asInstanceOf[js.Any])
-      __obj.updateDynamic("4b0082")(`4b0082`.asInstanceOf[js.Any])
-      __obj.updateDynamic("556b2f")(`556b2f`.asInstanceOf[js.Any])
-      __obj.updateDynamic("5f9ea0")(`5f9ea0`.asInstanceOf[js.Any])
-      __obj.updateDynamic("6495ed")(`6495ed`.asInstanceOf[js.Any])
-      __obj.updateDynamic("663399")(`663399`.asInstanceOf[js.Any])
-      __obj.updateDynamic("66cdaa")(`66cdaa`.asInstanceOf[js.Any])
+      __obj.updateDynamic("32cd32")("limegreen")
+      __obj.updateDynamic("3cb371")("mediumseagreen")
+      __obj.updateDynamic("40e0d0")("turquoise")
+      __obj.updateDynamic("4169e1")("royalblue")
+      __obj.updateDynamic("4682b4")("steelblue")
+      __obj.updateDynamic("483d8b")("darkslateblue")
+      __obj.updateDynamic("48d1cc")("mediumturquoise")
+      __obj.updateDynamic("4b0082")("indigo")
+      __obj.updateDynamic("556b2f")("darkolivegreen")
+      __obj.updateDynamic("5f9ea0")("cadetblue")
+      __obj.updateDynamic("6495ed")("cornflowerblue")
+      __obj.updateDynamic("663399")("rebeccapurple")
+      __obj.updateDynamic("66cdaa")("mediumaquamarine")
       __obj.updateDynamic("696969")(`696969`.asInstanceOf[js.Any])
-      __obj.updateDynamic("6a5acd")(`6a5acd`.asInstanceOf[js.Any])
-      __obj.updateDynamic("6b8e23")(`6b8e23`.asInstanceOf[js.Any])
+      __obj.updateDynamic("6a5acd")("slateblue")
+      __obj.updateDynamic("6b8e23")("olivedrab")
       __obj.updateDynamic("708090")(`708090`.asInstanceOf[js.Any])
       __obj.updateDynamic("789")(`789`.asInstanceOf[js.Any])
-      __obj.updateDynamic("7b68ee")(`7b68ee`.asInstanceOf[js.Any])
-      __obj.updateDynamic("7cfc00")(`7cfc00`.asInstanceOf[js.Any])
-      __obj.updateDynamic("7fff00")(`7fff00`.asInstanceOf[js.Any])
-      __obj.updateDynamic("7fffd4")(`7fffd4`.asInstanceOf[js.Any])
-      __obj.updateDynamic("800000")(`800000`.asInstanceOf[js.Any])
-      __obj.updateDynamic("800080")(`800080`.asInstanceOf[js.Any])
-      __obj.updateDynamic("808000")(`808000`.asInstanceOf[js.Any])
+      __obj.updateDynamic("7b68ee")("mediumslateblue")
+      __obj.updateDynamic("7cfc00")("lawngreen")
+      __obj.updateDynamic("7fff00")("chartreuse")
+      __obj.updateDynamic("7fffd4")("aquamarine")
+      __obj.updateDynamic("800000")("maroon")
+      __obj.updateDynamic("800080")("purple")
+      __obj.updateDynamic("808000")("olive")
       __obj.updateDynamic("808080")(`808080`.asInstanceOf[js.Any])
-      __obj.updateDynamic("87ceeb")(`87ceeb`.asInstanceOf[js.Any])
-      __obj.updateDynamic("87cefa")(`87cefa`.asInstanceOf[js.Any])
-      __obj.updateDynamic("8a2be2")(`8a2be2`.asInstanceOf[js.Any])
-      __obj.updateDynamic("8b0000")(`8b0000`.asInstanceOf[js.Any])
-      __obj.updateDynamic("8b008b")(`8b008b`.asInstanceOf[js.Any])
-      __obj.updateDynamic("8b4513")(`8b4513`.asInstanceOf[js.Any])
-      __obj.updateDynamic("8fbc8f")(`8fbc8f`.asInstanceOf[js.Any])
-      __obj.updateDynamic("90ee90")(`90ee90`.asInstanceOf[js.Any])
-      __obj.updateDynamic("9370db")(`9370db`.asInstanceOf[js.Any])
-      __obj.updateDynamic("9400d3")(`9400d3`.asInstanceOf[js.Any])
-      __obj.updateDynamic("98fb98")(`98fb98`.asInstanceOf[js.Any])
-      __obj.updateDynamic("9932cc")(`9932cc`.asInstanceOf[js.Any])
-      __obj.updateDynamic("9acd32")(`9acd32`.asInstanceOf[js.Any])
+      __obj.updateDynamic("87ceeb")("skyblue")
+      __obj.updateDynamic("87cefa")("lightskyblue")
+      __obj.updateDynamic("8a2be2")("blueviolet")
+      __obj.updateDynamic("8b0000")("darkred")
+      __obj.updateDynamic("8b008b")("darkmagenta")
+      __obj.updateDynamic("8b4513")("saddlebrown")
+      __obj.updateDynamic("8fbc8f")("darkseagreen")
+      __obj.updateDynamic("90ee90")("lightgreen")
+      __obj.updateDynamic("9370db")("mediumpurple")
+      __obj.updateDynamic("9400d3")("darkviolet")
+      __obj.updateDynamic("98fb98")("palegreen")
+      __obj.updateDynamic("9932cc")("darkorchid")
+      __obj.updateDynamic("9acd32")("yellowgreen")
       __obj.asInstanceOf[`000`]
     }
     
@@ -1212,462 +1079,311 @@ object anon {
     }
   }
   
-  @js.native
   trait Aliceblue extends StObject {
     
-    var aliceblue: f0f8ff = js.native
+    var aliceblue: f0f8ff
     
-    var antiquewhite: faebd7 = js.native
+    var antiquewhite: faebd7
     
-    var aqua: `0ff` = js.native
+    var aqua: `0ff`
     
-    var aquamarine: `7fffd4` = js.native
+    var aquamarine: `7fffd4`
     
-    var azure: f0ffff = js.native
+    var azure: f0ffff
     
-    var beige: f5f5dc = js.native
+    var beige: f5f5dc
     
-    var bisque: ffe4c4 = js.native
+    var bisque: ffe4c4
     
-    var black: typings.tinycolor2.tinycolor2Strings.`000` = js.native
+    var black: typings.tinycolor2.tinycolor2Strings.`000`
     
-    var blanchedalmond: ffebcd = js.native
+    var blanchedalmond: ffebcd
     
-    var blue: `00f` = js.native
+    var blue: `00f`
     
-    var blueviolet: `8a2be2` = js.native
+    var blueviolet: `8a2be2`
     
-    var brown: a52a2a = js.native
+    var brown: a52a2a
     
-    var burlywood: deb887 = js.native
+    var burlywood: deb887
     
-    var burntsienna: ea7e5d = js.native
+    var burntsienna: ea7e5d
     
-    var cadetblue: `5f9ea0` = js.native
+    var cadetblue: `5f9ea0`
     
-    var chartreuse: `7fff00` = js.native
+    var chartreuse: `7fff00`
     
-    var chocolate: d2691e = js.native
+    var chocolate: d2691e
     
-    var coral: ff7f50 = js.native
+    var coral: ff7f50
     
-    var cornflowerblue: `6495ed` = js.native
+    var cornflowerblue: `6495ed`
     
-    var cornsilk: fff8dc = js.native
+    var cornsilk: fff8dc
     
-    var crimson: dc143c = js.native
+    var crimson: dc143c
     
-    var cyan: `0ff` = js.native
+    var cyan: `0ff`
     
-    var darkblue: `00008b` = js.native
+    var darkblue: `00008b`
     
-    var darkcyan: `008b8b` = js.native
+    var darkcyan: `008b8b`
     
-    var darkgoldenrod: b8860b = js.native
+    var darkgoldenrod: b8860b
     
-    var darkgray: a9a9a9 = js.native
+    var darkgray: a9a9a9
     
-    var darkgreen: `006400` = js.native
+    var darkgreen: `006400`
     
-    var darkgrey: a9a9a9 = js.native
+    var darkgrey: a9a9a9
     
-    var darkkhaki: bdb76b = js.native
+    var darkkhaki: bdb76b
     
-    var darkmagenta: `8b008b` = js.native
+    var darkmagenta: `8b008b`
     
-    var darkolivegreen: `556b2f` = js.native
+    var darkolivegreen: `556b2f`
     
-    var darkorange: ff8c00 = js.native
+    var darkorange: ff8c00
     
-    var darkorchid: `9932cc` = js.native
+    var darkorchid: `9932cc`
     
-    var darkred: `8b0000` = js.native
+    var darkred: `8b0000`
     
-    var darksalmon: e9967a = js.native
+    var darksalmon: e9967a
     
-    var darkseagreen: `8fbc8f` = js.native
+    var darkseagreen: `8fbc8f`
     
-    var darkslateblue: `483d8b` = js.native
+    var darkslateblue: `483d8b`
     
-    var darkslategray: `2f4f4f` = js.native
+    var darkslategray: `2f4f4f`
     
-    var darkslategrey: `2f4f4f` = js.native
+    var darkslategrey: `2f4f4f`
     
-    var darkturquoise: `00ced1` = js.native
+    var darkturquoise: `00ced1`
     
-    var darkviolet: `9400d3` = js.native
+    var darkviolet: `9400d3`
     
-    var deeppink: ff1493 = js.native
+    var deeppink: ff1493
     
-    var deepskyblue: `00bfff` = js.native
+    var deepskyblue: `00bfff`
     
-    var dimgray: `696969` = js.native
+    var dimgray: `696969`
     
-    var dimgrey: `696969` = js.native
+    var dimgrey: `696969`
     
-    var dodgerblue: `1e90ff` = js.native
+    var dodgerblue: `1e90ff`
     
-    var firebrick: b22222 = js.native
+    var firebrick: b22222
     
-    var floralwhite: fffaf0 = js.native
+    var floralwhite: fffaf0
     
-    var forestgreen: `228b22` = js.native
+    var forestgreen: `228b22`
     
-    var fuchsia: f0f = js.native
+    var fuchsia: f0f
     
-    var gainsboro: dcdcdc = js.native
+    var gainsboro: dcdcdc
     
-    var ghostwhite: f8f8ff = js.native
+    var ghostwhite: f8f8ff
     
-    var gold: ffd700 = js.native
+    var gold: ffd700
     
-    var goldenrod: daa520 = js.native
+    var goldenrod: daa520
     
-    var gray: `808080` = js.native
+    var gray: `808080`
     
-    var green: `008000` = js.native
+    var green: `008000`
     
-    var greenyellow: adff2f = js.native
+    var greenyellow: adff2f
     
-    var grey: `808080` = js.native
+    var grey: `808080`
     
-    var honeydew: f0fff0 = js.native
+    var honeydew: f0fff0
     
-    var hotpink: ff69b4 = js.native
+    var hotpink: ff69b4
     
-    var indianred: cd5c5c = js.native
+    var indianred: cd5c5c
     
-    var indigo: `4b0082` = js.native
+    var indigo: `4b0082`
     
-    var ivory: fffff0 = js.native
+    var ivory: fffff0
     
-    var khaki: f0e68c = js.native
+    var khaki: f0e68c
     
-    var lavender: e6e6fa = js.native
+    var lavender: e6e6fa
     
-    var lavenderblush: fff0f5 = js.native
+    var lavenderblush: fff0f5
     
-    var lawngreen: `7cfc00` = js.native
+    var lawngreen: `7cfc00`
     
-    var lemonchiffon: fffacd = js.native
+    var lemonchiffon: fffacd
     
-    var lightblue: add8e6 = js.native
+    var lightblue: add8e6
     
-    var lightcoral: f08080 = js.native
+    var lightcoral: f08080
     
-    var lightcyan: e0ffff = js.native
+    var lightcyan: e0ffff
     
-    var lightgoldenrodyellow: fafad2 = js.native
+    var lightgoldenrodyellow: fafad2
     
-    var lightgray: d3d3d3 = js.native
+    var lightgray: d3d3d3
     
-    var lightgreen: `90ee90` = js.native
+    var lightgreen: `90ee90`
     
-    var lightgrey: d3d3d3 = js.native
+    var lightgrey: d3d3d3
     
-    var lightpink: ffb6c1 = js.native
+    var lightpink: ffb6c1
     
-    var lightsalmon: ffa07a = js.native
+    var lightsalmon: ffa07a
     
-    var lightseagreen: `20b2aa` = js.native
+    var lightseagreen: `20b2aa`
     
-    var lightskyblue: `87cefa` = js.native
+    var lightskyblue: `87cefa`
     
-    var lightslategray: `789` = js.native
+    var lightslategray: `789`
     
-    var lightslategrey: `789` = js.native
+    var lightslategrey: `789`
     
-    var lightsteelblue: b0c4de = js.native
+    var lightsteelblue: b0c4de
     
-    var lightyellow: ffffe0 = js.native
+    var lightyellow: ffffe0
     
-    var lime: `0f0` = js.native
+    var lime: `0f0`
     
-    var limegreen: `32cd32` = js.native
+    var limegreen: `32cd32`
     
-    var linen: faf0e6 = js.native
+    var linen: faf0e6
     
-    var magenta: f0f = js.native
+    var magenta: f0f
     
-    var maroon: `800000` = js.native
+    var maroon: `800000`
     
-    var mediumaquamarine: `66cdaa` = js.native
+    var mediumaquamarine: `66cdaa`
     
-    var mediumblue: `0000cd` = js.native
+    var mediumblue: `0000cd`
     
-    var mediumorchid: ba55d3 = js.native
+    var mediumorchid: ba55d3
     
-    var mediumpurple: `9370db` = js.native
+    var mediumpurple: `9370db`
     
-    var mediumseagreen: `3cb371` = js.native
+    var mediumseagreen: `3cb371`
     
-    var mediumslateblue: `7b68ee` = js.native
+    var mediumslateblue: `7b68ee`
     
-    var mediumspringgreen: `00fa9a` = js.native
+    var mediumspringgreen: `00fa9a`
     
-    var mediumturquoise: `48d1cc` = js.native
+    var mediumturquoise: `48d1cc`
     
-    var mediumvioletred: c71585 = js.native
+    var mediumvioletred: c71585
     
-    var midnightblue: `191970` = js.native
+    var midnightblue: `191970`
     
-    var mintcream: f5fffa = js.native
+    var mintcream: f5fffa
     
-    var mistyrose: ffe4e1 = js.native
+    var mistyrose: ffe4e1
     
-    var moccasin: ffe4b5 = js.native
+    var moccasin: ffe4b5
     
-    var navajowhite: ffdead = js.native
+    var navajowhite: ffdead
     
-    var navy: `000080` = js.native
+    var navy: `000080`
     
-    var oldlace: fdf5e6 = js.native
+    var oldlace: fdf5e6
     
-    var olive: `808000` = js.native
+    var olive: `808000`
     
-    var olivedrab: `6b8e23` = js.native
+    var olivedrab: `6b8e23`
     
-    var orange: ffa500 = js.native
+    var orange: ffa500
     
-    var orangered: ff4500 = js.native
+    var orangered: ff4500
     
-    var orchid: da70d6 = js.native
+    var orchid: da70d6
     
-    var palegoldenrod: eee8aa = js.native
+    var palegoldenrod: eee8aa
     
-    var palegreen: `98fb98` = js.native
+    var palegreen: `98fb98`
     
-    var paleturquoise: afeeee = js.native
+    var paleturquoise: afeeee
     
-    var palevioletred: db7093 = js.native
+    var palevioletred: db7093
     
-    var papayawhip: ffefd5 = js.native
+    var papayawhip: ffefd5
     
-    var peachpuff: ffdab9 = js.native
+    var peachpuff: ffdab9
     
-    var peru: cd853f = js.native
+    var peru: cd853f
     
-    var pink: ffc0cb = js.native
+    var pink: ffc0cb
     
-    var plum: dda0dd = js.native
+    var plum: dda0dd
     
-    var powderblue: b0e0e6 = js.native
+    var powderblue: b0e0e6
     
-    var purple: `800080` = js.native
+    var purple: `800080`
     
-    var rebeccapurple: `663399` = js.native
+    var rebeccapurple: `663399`
     
-    var red: f00 = js.native
+    var red: f00
     
-    var rosybrown: bc8f8f = js.native
+    var rosybrown: bc8f8f
     
-    var royalblue: `4169e1` = js.native
+    var royalblue: `4169e1`
     
-    var saddlebrown: `8b4513` = js.native
+    var saddlebrown: `8b4513`
     
-    var salmon: fa8072 = js.native
+    var salmon: fa8072
     
-    var sandybrown: f4a460 = js.native
+    var sandybrown: f4a460
     
-    var seagreen: `2e8b57` = js.native
+    var seagreen: `2e8b57`
     
-    var seashell: fff5ee = js.native
+    var seashell: fff5ee
     
-    var sienna: a0522d = js.native
+    var sienna: a0522d
     
-    var silver: c0c0c0 = js.native
+    var silver: c0c0c0
     
-    var skyblue: `87ceeb` = js.native
+    var skyblue: `87ceeb`
     
-    var slateblue: `6a5acd` = js.native
+    var slateblue: `6a5acd`
     
-    var slategray: `708090` = js.native
+    var slategray: `708090`
     
-    var slategrey: `708090` = js.native
+    var slategrey: `708090`
     
-    var snow: fffafa = js.native
+    var snow: fffafa
     
-    var springgreen: `00ff7f` = js.native
+    var springgreen: `00ff7f`
     
-    var steelblue: `4682b4` = js.native
+    var steelblue: `4682b4`
     
-    var tan: d2b48c = js.native
+    var tan: d2b48c
     
-    var teal: `008080` = js.native
+    var teal: `008080`
     
-    var thistle: d8bfd8 = js.native
+    var thistle: d8bfd8
     
-    var tomato: ff6347 = js.native
+    var tomato: ff6347
     
-    var turquoise: `40e0d0` = js.native
+    var turquoise: `40e0d0`
     
-    var violet: ee82ee = js.native
+    var violet: ee82ee
     
-    var wheat: f5deb3 = js.native
+    var wheat: f5deb3
     
-    var white: fff = js.native
+    var white: fff
     
-    var whitesmoke: f5f5f5 = js.native
+    var whitesmoke: f5f5f5
     
-    var yellow: ff0 = js.native
+    var yellow: ff0
     
-    var yellowgreen: `9acd32` = js.native
+    var yellowgreen: `9acd32`
   }
   object Aliceblue {
     
     @scala.inline
-    def apply(
-      aliceblue: f0f8ff,
-      antiquewhite: faebd7,
-      aqua: `0ff`,
-      aquamarine: `7fffd4`,
-      azure: f0ffff,
-      beige: f5f5dc,
-      bisque: ffe4c4,
-      black: typings.tinycolor2.tinycolor2Strings.`000`,
-      blanchedalmond: ffebcd,
-      blue: `00f`,
-      blueviolet: `8a2be2`,
-      brown: a52a2a,
-      burlywood: deb887,
-      burntsienna: ea7e5d,
-      cadetblue: `5f9ea0`,
-      chartreuse: `7fff00`,
-      chocolate: d2691e,
-      coral: ff7f50,
-      cornflowerblue: `6495ed`,
-      cornsilk: fff8dc,
-      crimson: dc143c,
-      cyan: `0ff`,
-      darkblue: `00008b`,
-      darkcyan: `008b8b`,
-      darkgoldenrod: b8860b,
-      darkgray: a9a9a9,
-      darkgreen: `006400`,
-      darkgrey: a9a9a9,
-      darkkhaki: bdb76b,
-      darkmagenta: `8b008b`,
-      darkolivegreen: `556b2f`,
-      darkorange: ff8c00,
-      darkorchid: `9932cc`,
-      darkred: `8b0000`,
-      darksalmon: e9967a,
-      darkseagreen: `8fbc8f`,
-      darkslateblue: `483d8b`,
-      darkslategray: `2f4f4f`,
-      darkslategrey: `2f4f4f`,
-      darkturquoise: `00ced1`,
-      darkviolet: `9400d3`,
-      deeppink: ff1493,
-      deepskyblue: `00bfff`,
-      dimgray: `696969`,
-      dimgrey: `696969`,
-      dodgerblue: `1e90ff`,
-      firebrick: b22222,
-      floralwhite: fffaf0,
-      forestgreen: `228b22`,
-      fuchsia: f0f,
-      gainsboro: dcdcdc,
-      ghostwhite: f8f8ff,
-      gold: ffd700,
-      goldenrod: daa520,
-      gray: `808080`,
-      green: `008000`,
-      greenyellow: adff2f,
-      grey: `808080`,
-      honeydew: f0fff0,
-      hotpink: ff69b4,
-      indianred: cd5c5c,
-      indigo: `4b0082`,
-      ivory: fffff0,
-      khaki: f0e68c,
-      lavender: e6e6fa,
-      lavenderblush: fff0f5,
-      lawngreen: `7cfc00`,
-      lemonchiffon: fffacd,
-      lightblue: add8e6,
-      lightcoral: f08080,
-      lightcyan: e0ffff,
-      lightgoldenrodyellow: fafad2,
-      lightgray: d3d3d3,
-      lightgreen: `90ee90`,
-      lightgrey: d3d3d3,
-      lightpink: ffb6c1,
-      lightsalmon: ffa07a,
-      lightseagreen: `20b2aa`,
-      lightskyblue: `87cefa`,
-      lightslategray: `789`,
-      lightslategrey: `789`,
-      lightsteelblue: b0c4de,
-      lightyellow: ffffe0,
-      lime: `0f0`,
-      limegreen: `32cd32`,
-      linen: faf0e6,
-      magenta: f0f,
-      maroon: `800000`,
-      mediumaquamarine: `66cdaa`,
-      mediumblue: `0000cd`,
-      mediumorchid: ba55d3,
-      mediumpurple: `9370db`,
-      mediumseagreen: `3cb371`,
-      mediumslateblue: `7b68ee`,
-      mediumspringgreen: `00fa9a`,
-      mediumturquoise: `48d1cc`,
-      mediumvioletred: c71585,
-      midnightblue: `191970`,
-      mintcream: f5fffa,
-      mistyrose: ffe4e1,
-      moccasin: ffe4b5,
-      navajowhite: ffdead,
-      navy: `000080`,
-      oldlace: fdf5e6,
-      olive: `808000`,
-      olivedrab: `6b8e23`,
-      orange: ffa500,
-      orangered: ff4500,
-      orchid: da70d6,
-      palegoldenrod: eee8aa,
-      palegreen: `98fb98`,
-      paleturquoise: afeeee,
-      palevioletred: db7093,
-      papayawhip: ffefd5,
-      peachpuff: ffdab9,
-      peru: cd853f,
-      pink: ffc0cb,
-      plum: dda0dd,
-      powderblue: b0e0e6,
-      purple: `800080`,
-      rebeccapurple: `663399`,
-      red: f00,
-      rosybrown: bc8f8f,
-      royalblue: `4169e1`,
-      saddlebrown: `8b4513`,
-      salmon: fa8072,
-      sandybrown: f4a460,
-      seagreen: `2e8b57`,
-      seashell: fff5ee,
-      sienna: a0522d,
-      silver: c0c0c0,
-      skyblue: `87ceeb`,
-      slateblue: `6a5acd`,
-      slategray: `708090`,
-      slategrey: `708090`,
-      snow: fffafa,
-      springgreen: `00ff7f`,
-      steelblue: `4682b4`,
-      tan: d2b48c,
-      teal: `008080`,
-      thistle: d8bfd8,
-      tomato: ff6347,
-      turquoise: `40e0d0`,
-      violet: ee82ee,
-      wheat: f5deb3,
-      white: fff,
-      whitesmoke: f5f5f5,
-      yellow: ff0,
-      yellowgreen: `9acd32`
-    ): Aliceblue = {
-      val __obj = js.Dynamic.literal(aliceblue = aliceblue.asInstanceOf[js.Any], antiquewhite = antiquewhite.asInstanceOf[js.Any], aqua = aqua.asInstanceOf[js.Any], aquamarine = aquamarine.asInstanceOf[js.Any], azure = azure.asInstanceOf[js.Any], beige = beige.asInstanceOf[js.Any], bisque = bisque.asInstanceOf[js.Any], black = black.asInstanceOf[js.Any], blanchedalmond = blanchedalmond.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], blueviolet = blueviolet.asInstanceOf[js.Any], brown = brown.asInstanceOf[js.Any], burlywood = burlywood.asInstanceOf[js.Any], burntsienna = burntsienna.asInstanceOf[js.Any], cadetblue = cadetblue.asInstanceOf[js.Any], chartreuse = chartreuse.asInstanceOf[js.Any], chocolate = chocolate.asInstanceOf[js.Any], coral = coral.asInstanceOf[js.Any], cornflowerblue = cornflowerblue.asInstanceOf[js.Any], cornsilk = cornsilk.asInstanceOf[js.Any], crimson = crimson.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], darkblue = darkblue.asInstanceOf[js.Any], darkcyan = darkcyan.asInstanceOf[js.Any], darkgoldenrod = darkgoldenrod.asInstanceOf[js.Any], darkgray = darkgray.asInstanceOf[js.Any], darkgreen = darkgreen.asInstanceOf[js.Any], darkgrey = darkgrey.asInstanceOf[js.Any], darkkhaki = darkkhaki.asInstanceOf[js.Any], darkmagenta = darkmagenta.asInstanceOf[js.Any], darkolivegreen = darkolivegreen.asInstanceOf[js.Any], darkorange = darkorange.asInstanceOf[js.Any], darkorchid = darkorchid.asInstanceOf[js.Any], darkred = darkred.asInstanceOf[js.Any], darksalmon = darksalmon.asInstanceOf[js.Any], darkseagreen = darkseagreen.asInstanceOf[js.Any], darkslateblue = darkslateblue.asInstanceOf[js.Any], darkslategray = darkslategray.asInstanceOf[js.Any], darkslategrey = darkslategrey.asInstanceOf[js.Any], darkturquoise = darkturquoise.asInstanceOf[js.Any], darkviolet = darkviolet.asInstanceOf[js.Any], deeppink = deeppink.asInstanceOf[js.Any], deepskyblue = deepskyblue.asInstanceOf[js.Any], dimgray = dimgray.asInstanceOf[js.Any], dimgrey = dimgrey.asInstanceOf[js.Any], dodgerblue = dodgerblue.asInstanceOf[js.Any], firebrick = firebrick.asInstanceOf[js.Any], floralwhite = floralwhite.asInstanceOf[js.Any], forestgreen = forestgreen.asInstanceOf[js.Any], fuchsia = fuchsia.asInstanceOf[js.Any], gainsboro = gainsboro.asInstanceOf[js.Any], ghostwhite = ghostwhite.asInstanceOf[js.Any], gold = gold.asInstanceOf[js.Any], goldenrod = goldenrod.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], greenyellow = greenyellow.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], honeydew = honeydew.asInstanceOf[js.Any], hotpink = hotpink.asInstanceOf[js.Any], indianred = indianred.asInstanceOf[js.Any], indigo = indigo.asInstanceOf[js.Any], ivory = ivory.asInstanceOf[js.Any], khaki = khaki.asInstanceOf[js.Any], lavender = lavender.asInstanceOf[js.Any], lavenderblush = lavenderblush.asInstanceOf[js.Any], lawngreen = lawngreen.asInstanceOf[js.Any], lemonchiffon = lemonchiffon.asInstanceOf[js.Any], lightblue = lightblue.asInstanceOf[js.Any], lightcoral = lightcoral.asInstanceOf[js.Any], lightcyan = lightcyan.asInstanceOf[js.Any], lightgoldenrodyellow = lightgoldenrodyellow.asInstanceOf[js.Any], lightgray = lightgray.asInstanceOf[js.Any], lightgreen = lightgreen.asInstanceOf[js.Any], lightgrey = lightgrey.asInstanceOf[js.Any], lightpink = lightpink.asInstanceOf[js.Any], lightsalmon = lightsalmon.asInstanceOf[js.Any], lightseagreen = lightseagreen.asInstanceOf[js.Any], lightskyblue = lightskyblue.asInstanceOf[js.Any], lightslategray = lightslategray.asInstanceOf[js.Any], lightslategrey = lightslategrey.asInstanceOf[js.Any], lightsteelblue = lightsteelblue.asInstanceOf[js.Any], lightyellow = lightyellow.asInstanceOf[js.Any], lime = lime.asInstanceOf[js.Any], limegreen = limegreen.asInstanceOf[js.Any], linen = linen.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], maroon = maroon.asInstanceOf[js.Any], mediumaquamarine = mediumaquamarine.asInstanceOf[js.Any], mediumblue = mediumblue.asInstanceOf[js.Any], mediumorchid = mediumorchid.asInstanceOf[js.Any], mediumpurple = mediumpurple.asInstanceOf[js.Any], mediumseagreen = mediumseagreen.asInstanceOf[js.Any], mediumslateblue = mediumslateblue.asInstanceOf[js.Any], mediumspringgreen = mediumspringgreen.asInstanceOf[js.Any], mediumturquoise = mediumturquoise.asInstanceOf[js.Any], mediumvioletred = mediumvioletred.asInstanceOf[js.Any], midnightblue = midnightblue.asInstanceOf[js.Any], mintcream = mintcream.asInstanceOf[js.Any], mistyrose = mistyrose.asInstanceOf[js.Any], moccasin = moccasin.asInstanceOf[js.Any], navajowhite = navajowhite.asInstanceOf[js.Any], navy = navy.asInstanceOf[js.Any], oldlace = oldlace.asInstanceOf[js.Any], olive = olive.asInstanceOf[js.Any], olivedrab = olivedrab.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], orangered = orangered.asInstanceOf[js.Any], orchid = orchid.asInstanceOf[js.Any], palegoldenrod = palegoldenrod.asInstanceOf[js.Any], palegreen = palegreen.asInstanceOf[js.Any], paleturquoise = paleturquoise.asInstanceOf[js.Any], palevioletred = palevioletred.asInstanceOf[js.Any], papayawhip = papayawhip.asInstanceOf[js.Any], peachpuff = peachpuff.asInstanceOf[js.Any], peru = peru.asInstanceOf[js.Any], pink = pink.asInstanceOf[js.Any], plum = plum.asInstanceOf[js.Any], powderblue = powderblue.asInstanceOf[js.Any], purple = purple.asInstanceOf[js.Any], rebeccapurple = rebeccapurple.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], rosybrown = rosybrown.asInstanceOf[js.Any], royalblue = royalblue.asInstanceOf[js.Any], saddlebrown = saddlebrown.asInstanceOf[js.Any], salmon = salmon.asInstanceOf[js.Any], sandybrown = sandybrown.asInstanceOf[js.Any], seagreen = seagreen.asInstanceOf[js.Any], seashell = seashell.asInstanceOf[js.Any], sienna = sienna.asInstanceOf[js.Any], silver = silver.asInstanceOf[js.Any], skyblue = skyblue.asInstanceOf[js.Any], slateblue = slateblue.asInstanceOf[js.Any], slategray = slategray.asInstanceOf[js.Any], slategrey = slategrey.asInstanceOf[js.Any], snow = snow.asInstanceOf[js.Any], springgreen = springgreen.asInstanceOf[js.Any], steelblue = steelblue.asInstanceOf[js.Any], tan = tan.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], thistle = thistle.asInstanceOf[js.Any], tomato = tomato.asInstanceOf[js.Any], turquoise = turquoise.asInstanceOf[js.Any], violet = violet.asInstanceOf[js.Any], wheat = wheat.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], whitesmoke = whitesmoke.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any], yellowgreen = yellowgreen.asInstanceOf[js.Any])
+    def apply(): Aliceblue = {
+      val __obj = js.Dynamic.literal(aliceblue = "f0f8ff", antiquewhite = "faebd7", aqua = "0ff", aquamarine = "7fffd4", azure = "f0ffff", beige = "f5f5dc", bisque = "ffe4c4", black = "000", blanchedalmond = "ffebcd", blue = "00f", blueviolet = "8a2be2", brown = "a52a2a", burlywood = "deb887", burntsienna = "ea7e5d", cadetblue = "5f9ea0", chartreuse = "7fff00", chocolate = "d2691e", coral = "ff7f50", cornflowerblue = "6495ed", cornsilk = "fff8dc", crimson = "dc143c", cyan = "0ff", darkblue = "00008b", darkcyan = "008b8b", darkgoldenrod = "b8860b", darkgray = "a9a9a9", darkgreen = "006400", darkgrey = "a9a9a9", darkkhaki = "bdb76b", darkmagenta = "8b008b", darkolivegreen = "556b2f", darkorange = "ff8c00", darkorchid = "9932cc", darkred = "8b0000", darksalmon = "e9967a", darkseagreen = "8fbc8f", darkslateblue = "483d8b", darkslategray = "2f4f4f", darkslategrey = "2f4f4f", darkturquoise = "00ced1", darkviolet = "9400d3", deeppink = "ff1493", deepskyblue = "00bfff", dimgray = "696969", dimgrey = "696969", dodgerblue = "1e90ff", firebrick = "b22222", floralwhite = "fffaf0", forestgreen = "228b22", fuchsia = "f0f", gainsboro = "dcdcdc", ghostwhite = "f8f8ff", gold = "ffd700", goldenrod = "daa520", gray = "808080", green = "008000", greenyellow = "adff2f", grey = "808080", honeydew = "f0fff0", hotpink = "ff69b4", indianred = "cd5c5c", indigo = "4b0082", ivory = "fffff0", khaki = "f0e68c", lavender = "e6e6fa", lavenderblush = "fff0f5", lawngreen = "7cfc00", lemonchiffon = "fffacd", lightblue = "add8e6", lightcoral = "f08080", lightcyan = "e0ffff", lightgoldenrodyellow = "fafad2", lightgray = "d3d3d3", lightgreen = "90ee90", lightgrey = "d3d3d3", lightpink = "ffb6c1", lightsalmon = "ffa07a", lightseagreen = "20b2aa", lightskyblue = "87cefa", lightslategray = "789", lightslategrey = "789", lightsteelblue = "b0c4de", lightyellow = "ffffe0", lime = "0f0", limegreen = "32cd32", linen = "faf0e6", magenta = "f0f", maroon = "800000", mediumaquamarine = "66cdaa", mediumblue = "0000cd", mediumorchid = "ba55d3", mediumpurple = "9370db", mediumseagreen = "3cb371", mediumslateblue = "7b68ee", mediumspringgreen = "00fa9a", mediumturquoise = "48d1cc", mediumvioletred = "c71585", midnightblue = "191970", mintcream = "f5fffa", mistyrose = "ffe4e1", moccasin = "ffe4b5", navajowhite = "ffdead", navy = "000080", oldlace = "fdf5e6", olive = "808000", olivedrab = "6b8e23", orange = "ffa500", orangered = "ff4500", orchid = "da70d6", palegoldenrod = "eee8aa", palegreen = "98fb98", paleturquoise = "afeeee", palevioletred = "db7093", papayawhip = "ffefd5", peachpuff = "ffdab9", peru = "cd853f", pink = "ffc0cb", plum = "dda0dd", powderblue = "b0e0e6", purple = "800080", rebeccapurple = "663399", red = "f00", rosybrown = "bc8f8f", royalblue = "4169e1", saddlebrown = "8b4513", salmon = "fa8072", sandybrown = "f4a460", seagreen = "2e8b57", seashell = "fff5ee", sienna = "a0522d", silver = "c0c0c0", skyblue = "87ceeb", slateblue = "6a5acd", slategray = "708090", slategrey = "708090", snow = "fffafa", springgreen = "00ff7f", steelblue = "4682b4", tan = "d2b48c", teal = "008080", thistle = "d8bfd8", tomato = "ff6347", turquoise = "40e0d0", violet = "ee82ee", wheat = "f5deb3", white = "fff", whitesmoke = "f5f5f5", yellow = "ff0", yellowgreen = "9acd32")
       __obj.asInstanceOf[Aliceblue]
     }
     

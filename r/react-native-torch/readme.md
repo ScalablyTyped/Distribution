@@ -12,7 +12,7 @@ Torch/flashlight for react-native
 | Keywords           | react, react-component, react-native, ios, android, device, torch, flashlight |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 41569 |
+| # downloads        | 57882 |
 | # stars            | 0 |
 
 ## Links

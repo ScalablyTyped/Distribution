@@ -11,7 +11,6 @@ import typings.rmcTabs.modelsMod.Models.TabData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
@@ -35,27 +34,12 @@ object tabsMod {
     def getContentPosByIndex(index: Double, isVertical: Boolean): String = js.native
     def getContentPosByIndex(index: Double, isVertical: Boolean, useLeft: Boolean): String = js.native
     
-    def goToTab(
-      index: Double,
-      force: js.UndefOr[scala.Nothing],
-      usePaged: js.UndefOr[scala.Nothing],
-      props: ReadonlychildrenReactNode
-    ): Boolean = js.native
-    def goToTab(index: Double, force: js.UndefOr[scala.Nothing], usePaged: Boolean): Boolean = js.native
-    def goToTab(
-      index: Double,
-      force: js.UndefOr[scala.Nothing],
-      usePaged: Boolean,
-      props: ReadonlychildrenReactNode
-    ): Boolean = js.native
-    def goToTab(
-      index: Double,
-      force: Boolean,
-      usePaged: js.UndefOr[scala.Nothing],
-      props: ReadonlychildrenReactNode
-    ): Boolean = js.native
     def goToTab(index: Double, force: Boolean, usePaged: Boolean): Boolean = js.native
     def goToTab(index: Double, force: Boolean, usePaged: Boolean, props: ReadonlychildrenReactNode): Boolean = js.native
+    def goToTab(index: Double, force: Boolean, usePaged: Unit, props: ReadonlychildrenReactNode): Boolean = js.native
+    def goToTab(index: Double, force: Unit, usePaged: Boolean): Boolean = js.native
+    def goToTab(index: Double, force: Unit, usePaged: Boolean, props: ReadonlychildrenReactNode): Boolean = js.native
+    def goToTab(index: Double, force: Unit, usePaged: Unit, props: ReadonlychildrenReactNode): Boolean = js.native
     
     var layout: HTMLDivElement = js.native
     
@@ -94,12 +78,12 @@ object tabsMod {
     def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PropsType
-    extends typings.rmcTabs.propsTypeMod.PropsType {
+    extends StObject
+       with typings.rmcTabs.propsTypeMod.PropsType {
     
     /** prefix class | default: rmc-tabs */
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object PropsType {
     

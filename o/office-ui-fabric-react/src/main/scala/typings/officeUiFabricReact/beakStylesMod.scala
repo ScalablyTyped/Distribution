@@ -4,24 +4,25 @@ import typings.officeUiFabricReact.beakTypesMod.IBeakStylesProps
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beakStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Beak/Beak.styles", "getStyles")
+  @JSImport("office-ui-fabric-react/lib/components/Coachmark/Beak/Beak.styles", JSImport.Namespace)
   @js.native
-  def getStyles(props: IBeakStylesProps): IBeakStyles = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getStyles(props: IBeakStylesProps): IBeakStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IBeakStyles]
+  
   trait IBeakStyles extends StObject {
     
-    var beak: js.UndefOr[IStyle] = js.native
+    var beak: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the root element in the default enabled/unchecked state.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IBeakStyles {
     

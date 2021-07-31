@@ -3,11 +3,11 @@ package typings.websocket.mod
 import typings.node.httpMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IServerConfig extends IConfig {
+trait IServerConfig
+  extends StObject
+     with IConfig {
   
   /**
     * If this is true, websocket connections will be accepted regardless of the path
@@ -15,7 +15,7 @@ trait IServerConfig extends IConfig {
     * that was requested by the client.
     * @default false
     */
-  var autoAcceptConnections: js.UndefOr[Boolean] = js.native
+  var autoAcceptConnections: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Nagle Algorithm makes more efficient use of network resources by introducing a
@@ -23,7 +23,7 @@ trait IServerConfig extends IConfig {
     * together before going onto the wire. This however comes at the cost of latency.
     * @default true
     */
-  var disableNagleAlgorithm: js.UndefOr[Boolean] = js.native
+  var disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the server will consider any connection that has not received any
@@ -31,10 +31,10 @@ trait IServerConfig extends IConfig {
     * `keepalive` ping has been sent. Ignored if `keepalive` is false.
     * @default true
     */
-  var dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.native
+  var dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.undefined
   
   /** The http or https server instance(s) to attach to */
-  var httpServer: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server]) = js.native
+  var httpServer: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server])
   
   /**
     * Whether or not the X-Forwarded-For header should be respected.
@@ -46,7 +46,7 @@ trait IServerConfig extends IConfig {
     * See:  http://en.wikipedia.org/wiki/X-Forwarded-For
     * @default false
     */
-  var ignoreXForwardedFor: js.UndefOr[Boolean] = js.native
+  var ignoreXForwardedFor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the server will automatically send a ping to all clients every
@@ -54,7 +54,7 @@ trait IServerConfig extends IConfig {
     * timer, which is reset when any data is received from that client.
     * @default true
     */
-  var keepalive: js.UndefOr[Boolean] = js.native
+  var keepalive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The amount of time to wait after sending a `keepalive` ping before closing
@@ -63,13 +63,13 @@ trait IServerConfig extends IConfig {
     * reset when any data is received from the client.
     * @default 10000
     */
-  var keepaliveGracePeriod: js.UndefOr[Double] = js.native
+  var keepaliveGracePeriod: js.UndefOr[Double] = js.undefined
   
   /**
     * The interval in milliseconds to send `keepalive` pings to connected clients.
     * @default 20000
     */
-  var keepaliveInterval: js.UndefOr[Double] = js.native
+  var keepaliveInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to use native TCP keep-alive instead of WebSockets ping
@@ -81,7 +81,7 @@ trait IServerConfig extends IConfig {
     *   dropConnectionOnKeepaliveTimeout
     * @default false
     */
-  var useNativeKeepalive: js.UndefOr[Boolean] = js.native
+  var useNativeKeepalive: js.UndefOr[Boolean] = js.undefined
 }
 object IServerConfig {
   

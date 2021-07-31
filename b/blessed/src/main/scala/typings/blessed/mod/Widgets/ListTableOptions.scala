@@ -2,29 +2,29 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListTableOptions extends ListOptions[StyleListTable] {
+trait ListTableOptions
+  extends StObject
+     with ListOptions[StyleListTable] {
   
-  var data: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var data: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     * Do not draw inner cells.
     */
-  var noCellBorders: js.UndefOr[Boolean] = js.native
+  var noCellBorders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Spaces to attempt to pad on the sides of each cell. 2 by default: one space on each side
     * (only useful if the width is shrunken).
     */
-  var pad: js.UndefOr[Double] = js.native
+  var pad: js.UndefOr[Double] = js.undefined
   
   /**
     * Array of array of strings representing rows.
     */
-  var rows: js.UndefOr[js.Array[String]] = js.native
+  var rows: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListTableOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateAuthenticationRequest extends StObject {
   
   /**
     * The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM).
     */
-  var ClientRootCertificateChainArn: js.UndefOr[String] = js.native
+  var ClientRootCertificateChainArn: js.UndefOr[String] = js.undefined
 }
 object CertificateAuthenticationRequest {
   

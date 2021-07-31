@@ -7,27 +7,27 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVideosInsert extends StandardParameters {
+trait ParamsResourceVideosInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The autoLevels parameter indicates whether YouTube should automatically
     * enhance the video's lighting and color.
     */
-  var autoLevels: js.UndefOr[Boolean] = js.native
+  var autoLevels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * The notifySubscribers parameter indicates whether YouTube should send a
@@ -37,7 +37,7 @@ trait ParamsResourceVideosInsert extends StandardParameters {
     * uploading many videos might prefer to set the value to False to avoid
     * sending a notification about each new video to the channel's subscribers.
     */
-  var notifySubscribers: js.UndefOr[Boolean] = js.native
+  var notifySubscribers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -51,7 +51,7 @@ trait ParamsResourceVideosInsert extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. Note:
@@ -71,7 +71,7 @@ trait ParamsResourceVideosInsert extends StandardParameters {
     * without having to provide authentication credentials for each separate
     * channel.
     */
-  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter serves two purposes in this operation. It identifies
@@ -83,18 +83,18 @@ trait ParamsResourceVideosInsert extends StandardParameters {
     * modify. If the parameter value specifies a part that does not contain
     * mutable values, that part will still be included in the API response.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaVideo] = js.native
+  var requestBody: js.UndefOr[SchemaVideo] = js.undefined
   
   /**
     * The stabilize parameter indicates whether YouTube should adjust the video
     * to remove shaky camera motions.
     */
-  var stabilize: js.UndefOr[Boolean] = js.native
+  var stabilize: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceVideosInsert {
   

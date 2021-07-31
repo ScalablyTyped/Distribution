@@ -8,21 +8,19 @@ import typings.stripeV3.stripeV3Strings.scheduled
 import typings.stripeV3.stripeV3Strings.variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMandate extends StObject {
   
-  var acceptance: js.UndefOr[SourceMandateAcceptance] = js.native
+  var acceptance: js.UndefOr[SourceMandateAcceptance] = js.undefined
   
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var interval: js.UndefOr[one_time | scheduled | variable] = js.native
+  var interval: js.UndefOr[one_time | scheduled | variable] = js.undefined
   
-  var notification_method: js.UndefOr[email | manual | none] = js.native
+  var notification_method: js.UndefOr[email | manual | none] = js.undefined
 }
 object SourceMandate {
   

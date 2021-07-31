@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Disktypes")
@@ -99,7 +98,7 @@ class ResourceDisktypes protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaDiskTypeAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaDiskTypeAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskTypeAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDiskTypeAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceDisktypesAggregatedlist): GaxiosPromise[SchemaDiskTypeAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceDisktypesAggregatedlist,
@@ -195,7 +194,7 @@ class ResourceDisktypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDiskType] = js.native
   def get(callback: BodyResponseCallback[SchemaDiskType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDiskType] = js.native
   def get(params: ParamsResourceDisktypesGet): GaxiosPromise[SchemaDiskType] = js.native
   def get(params: ParamsResourceDisktypesGet, callback: BodyResponseCallback[SchemaDiskType]): Unit = js.native
   def get(
@@ -298,7 +297,7 @@ class ResourceDisktypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDiskTypeList] = js.native
   def list(callback: BodyResponseCallback[SchemaDiskTypeList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskTypeList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDiskTypeList] = js.native
   def list(params: ParamsResourceDisktypesList): GaxiosPromise[SchemaDiskTypeList] = js.native
   def list(params: ParamsResourceDisktypesList, callback: BodyResponseCallback[SchemaDiskTypeList]): Unit = js.native
   def list(

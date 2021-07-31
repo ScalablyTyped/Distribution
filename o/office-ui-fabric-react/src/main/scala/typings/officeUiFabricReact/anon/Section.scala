@@ -3,15 +3,13 @@ package typings.officeUiFabricReact.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Section extends StObject {
   
-  var section: Element = js.native
+  var section: Element
   
-  var title: String = js.native
+  var title: String
 }
 object Section {
   

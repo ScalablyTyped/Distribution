@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartImagePipelineExecutionRequest extends StObject {
   
   /**
     * The idempotency token used to make this request idempotent. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline that you want to manually invoke. 
     */
-  var imagePipelineArn: ImagePipelineArn = js.native
+  var imagePipelineArn: ImagePipelineArn
 }
 object StartImagePipelineExecutionRequest {
   

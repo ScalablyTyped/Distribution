@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The original labeling from the input document, without the submitted feedback. */
-@js.native
 trait OriginalLabelsIn extends StObject {
   
   /** List of functional categories into which the element falls; in other words, the subject matter of the element. */
-  var categories: js.Array[Category] = js.native
+  var categories: js.Array[Category]
   
   /** Description of the action specified by the element and whom it affects. */
-  var types: js.Array[TypeLabel] = js.native
+  var types: js.Array[TypeLabel]
 }
 object OriginalLabelsIn {
   

@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchedulerResizeEvent extends SchedulerEvent {
+trait SchedulerResizeEvent
+  extends StObject
+     with SchedulerEvent {
   
-  var event: js.UndefOr[typings.kendoUi.kendo.data.SchedulerEvent] = js.native
+  var event: js.UndefOr[typings.kendoUi.kendo.data.SchedulerEvent] = js.undefined
   
-  var slot: js.UndefOr[js.Any] = js.native
+  var slot: js.UndefOr[js.Any] = js.undefined
 }
 object SchedulerResizeEvent {
   

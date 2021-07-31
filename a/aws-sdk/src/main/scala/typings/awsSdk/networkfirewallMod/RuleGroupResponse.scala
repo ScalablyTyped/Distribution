@@ -2,51 +2,49 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupResponse extends StObject {
   
   /**
     * The maximum operating resources that this rule group can use. Rule group capacity is fixed at creation. When you update a rule group, you are limited to this capacity. When you reference a rule group from a firewall policy, Network Firewall reserves this capacity for the rule group.  You can retrieve the capacity that would be required for a rule group before you create the rule group by calling CreateRuleGroup with DryRun set to TRUE. 
     */
-  var Capacity: js.UndefOr[RuleCapacity] = js.native
+  var Capacity: js.UndefOr[RuleCapacity] = js.undefined
   
   /**
     * A description of the rule group. 
     */
-  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the rule group.  If this response is for a create request that had DryRun set to TRUE, then this ARN is a placeholder that isn't attached to a valid resource. 
     */
-  var RuleGroupArn: ResourceArn = js.native
+  var RuleGroupArn: ResourceArn
   
   /**
     * The unique identifier for the rule group. 
     */
-  var RuleGroupId: ResourceId = js.native
+  var RuleGroupId: ResourceId
   
   /**
     * The descriptive name of the rule group. You can't change the name of a rule group after you create it.
     */
-  var RuleGroupName: ResourceName = js.native
+  var RuleGroupName: ResourceName
   
   /**
     * Detailed information about the current status of a rule group. 
     */
-  var RuleGroupStatus: js.UndefOr[ResourceStatus] = js.native
+  var RuleGroupStatus: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The key:value pairs to associate with the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules. 
     */
-  var Type: js.UndefOr[RuleGroupType] = js.native
+  var Type: js.UndefOr[RuleGroupType] = js.undefined
 }
 object RuleGroupResponse {
   

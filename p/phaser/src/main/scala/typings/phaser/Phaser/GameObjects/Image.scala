@@ -16,7 +16,6 @@ import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Image
-  extends GameObject
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with Depth

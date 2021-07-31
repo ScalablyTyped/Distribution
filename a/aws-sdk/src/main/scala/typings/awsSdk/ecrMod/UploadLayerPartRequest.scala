@@ -2,41 +2,39 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadLayerPartRequest extends StObject {
   
   /**
     * The base64-encoded layer part payload.
     */
-  var layerPartBlob: LayerPartBlob = js.native
+  var layerPartBlob: LayerPartBlob
   
   /**
     * The position of the first byte of the layer part witin the overall image layer.
     */
-  var partFirstByte: PartSize = js.native
+  var partFirstByte: PartSize
   
   /**
     * The position of the last byte of the layer part within the overall image layer.
     */
-  var partLastByte: PartSize = js.native
+  var partLastByte: PartSize
   
   /**
     * The AWS account ID associated with the registry to which you are uploading layer parts. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository to which you are uploading layer parts.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The upload ID from a previous InitiateLayerUpload operation to associate with the layer part upload.
     */
-  var uploadId: UploadId = js.native
+  var uploadId: UploadId
 }
 object UploadLayerPartRequest {
   

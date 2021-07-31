@@ -13,31 +13,29 @@ import typings.activexStdole.stdole.EXCEPINFO
 import typings.activexStdole.stdole.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type ButtonInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait ButtonInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object ButtonInvokeParameter {
     
@@ -87,24 +85,23 @@ object EventHelperTypes {
   
   type DataDOMInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait DataDOMInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object DataDOMInvokeParameter {
     
@@ -154,24 +151,23 @@ object EventHelperTypes {
   
   type XDocumentInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait XDocumentInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object XDocumentInvokeParameter {
     

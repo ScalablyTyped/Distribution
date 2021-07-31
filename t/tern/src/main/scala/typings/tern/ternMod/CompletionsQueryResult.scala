@@ -3,10 +3,8 @@ package typings.tern.ternMod
 import typings.tern.anon.Depth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionsQueryResult extends StObject {
   
   // TODO depends on completionsquery settings -> conditional types?
@@ -16,16 +14,16 @@ trait CompletionsQueryResult extends StObject {
     * and, depending on the options, `type`, `depth`, `doc`, `url`, and `origin` properties.
     * When none of these options are enabled, the result array will hold plain strings.
     */
-  var completions: js.Array[Depth | String] = js.native
+  var completions: js.Array[Depth | String]
   
   /** end offsets of the word that was completed */
-  var end: Double | Position = js.native
+  var end: Double | Position
   
   /** whether the completion is for a property or a variable */
-  var isProperty: Boolean = js.native
+  var isProperty: Boolean
   
   /** start offsets of the word that was completed */
-  var start: Double | Position = js.native
+  var start: Double | Position
 }
 object CompletionsQueryResult {
   

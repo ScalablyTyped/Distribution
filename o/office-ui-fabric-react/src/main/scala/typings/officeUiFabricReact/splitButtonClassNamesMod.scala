@@ -3,36 +3,36 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitButtonClassNamesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/Button/SplitButton/SplitButton.classNames", "getSplitButtonClassNames")
+  @JSImport("office-ui-fabric-react/lib/components/Button/SplitButton/SplitButton.classNames", JSImport.Namespace)
   @js.native
-  def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/components/Button/SplitButton/SplitButton.classNames", "getSplitButtonClassNames")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
+  @scala.inline
   def getSplitButtonClassNames(
     styles: IButtonStyles,
     disabled: Boolean,
     expanded: Boolean,
     checked: Boolean,
     primaryDisabled: Boolean
-  ): ISplitButtonClassNames = js.native
+  ): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
   
-  @js.native
   trait ISplitButtonClassNames extends StObject {
     
-    var divider: js.UndefOr[String] = js.native
+    var divider: js.UndefOr[String] = js.undefined
     
-    var flexContainer: js.UndefOr[String] = js.native
+    var flexContainer: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var splitButtonContainer: js.UndefOr[String] = js.native
+    var splitButtonContainer: js.UndefOr[String] = js.undefined
   }
   object ISplitButtonClassNames {
     

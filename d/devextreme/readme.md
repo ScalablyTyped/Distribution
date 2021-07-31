@@ -10,9 +10,9 @@ HTML5 JavaScript Component Suite for Responsive Web Development
 | ------------------ | :-------------: |
 | Full name          | devextreme |
 | Keywords           | html5, controls, widgets, components, jquery, knockout, angular, web, ui, datagrid, pivotgrid, scheduler, treelist, chart |
-| # releases         | 226 |
-| # dependents       | 73 |
-| # downloads        | 8142412 |
+| # releases         | 231 |
+| # dependents       | 78 |
+| # downloads        | 8037593 |
 | # stars            | 2 |
 
 ## Links

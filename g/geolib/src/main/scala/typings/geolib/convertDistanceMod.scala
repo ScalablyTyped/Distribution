@@ -2,15 +2,16 @@ package typings.geolib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertDistanceMod {
   
-  @JSImport("geolib/es/convertDistance", JSImport.Default)
+  @JSImport("geolib/es/convertDistance", JSImport.Namespace)
   @js.native
-  def default(meters: Double): Double = js.native
-  @JSImport("geolib/es/convertDistance", JSImport.Default)
-  @js.native
-  def default(meters: Double, targetUnit: String): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(meters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(meters.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def default(meters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(meters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

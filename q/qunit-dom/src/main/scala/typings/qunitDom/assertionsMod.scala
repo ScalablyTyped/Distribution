@@ -7,14 +7,15 @@ import typings.std.Element
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assertionsMod {
   
   @JSImport("qunit-dom/dist/assertions", JSImport.Default)
   @js.native
-  class default protected () extends DOMAssertions {
+  class default protected ()
+    extends StObject
+       with DOMAssertions {
     def this(target: String, rootElement: Document, testContext: Assert) = this()
     def this(target: String, rootElement: Element, testContext: Assert) = this()
     def this(target: Null, rootElement: Document, testContext: Assert) = this()
@@ -23,16 +24,15 @@ object assertionsMod {
     def this(target: Element, rootElement: Element, testContext: Assert) = this()
   }
   
-  @js.native
   trait AssertionResult extends StObject {
     
-    var actual: js.Any = js.native
+    var actual: js.Any
     
-    var expected: js.Any = js.native
+    var expected: js.Any
     
-    var message: String = js.native
+    var message: String
     
-    var result: Boolean = js.native
+    var result: Boolean
   }
   object AssertionResult {
     
@@ -302,9 +302,9 @@ object assertionsMod {
       * @see {@link #hasNoAria}
       */
     def hasAria(name: String): DOMAssertions = js.native
-    def hasAria(name: String, value: js.UndefOr[scala.Nothing], message: String): DOMAssertions = js.native
     def hasAria(name: String, value: String): DOMAssertions = js.native
     def hasAria(name: String, value: String, message: String): DOMAssertions = js.native
+    def hasAria(name: String, value: Unit, message: String): DOMAssertions = js.native
     def hasAria(name: String, value: Any): DOMAssertions = js.native
     def hasAria(name: String, value: Any, message: String): DOMAssertions = js.native
     def hasAria(name: String, value: RegExp): DOMAssertions = js.native
@@ -515,9 +515,9 @@ object assertionsMod {
       * @see {@link #hasNoValue}
       */
     def hasValue(): DOMAssertions = js.native
-    def hasValue(expected: js.UndefOr[scala.Nothing], message: String): DOMAssertions = js.native
     def hasValue(expected: String): DOMAssertions = js.native
     def hasValue(expected: String, message: String): DOMAssertions = js.native
+    def hasValue(expected: Unit, message: String): DOMAssertions = js.native
     def hasValue(expected: Any): DOMAssertions = js.native
     def hasValue(expected: Any, message: String): DOMAssertions = js.native
     def hasValue(expected: RegExp): DOMAssertions = js.native
@@ -817,10 +817,9 @@ object assertionsMod {
     var testContext: js.Any = js.native
   }
   
-  @js.native
   trait ExistsOptions extends StObject {
     
-    var count: Double = js.native
+    var count: Double
   }
   object ExistsOptions {
     

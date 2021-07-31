@@ -3,13 +3,11 @@ package typings.amapJsSdk.anon
 import typings.amapJsSdk.AMap.LngLat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Waypoints extends StObject {
   
-  var waypoints: js.Array[LngLat] = js.native
+  var waypoints: js.Array[LngLat]
 }
 object Waypoints {
   

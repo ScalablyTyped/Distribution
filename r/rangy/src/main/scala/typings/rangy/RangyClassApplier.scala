@@ -5,11 +5,12 @@ import typings.std.HTMLIFrameElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangyClassApplier extends RangyClassApplierOptions {
+trait RangyClassApplier
+  extends StObject
+     with RangyClassApplierOptions {
   
   def applyToRange(range: RangyRange): Unit = js.native
   

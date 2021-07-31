@@ -2,17 +2,15 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventPublisher extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var subscriptionManagementInfo: SubscriptionManagement = js.native
+  var subscriptionManagementInfo: SubscriptionManagement
   
-  var url: String = js.native
+  var url: String
 }
 object NotificationEventPublisher {
   

@@ -5,15 +5,13 @@ import typings.grpcGrpcJs.constantsMod.Status
 import typings.grpcGrpcJs.metadataMod.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LocalityPath extends StObject {
     
-    var localityPath: js.Array[String] = js.native
+    var localityPath: js.Array[String]
   }
   object LocalityPath {
     
@@ -35,56 +33,55 @@ object anon {
   }
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/channel-options.ChannelOptions> */
-  @js.native
   trait PartialChannelOptions extends StObject {
     
     @JSName("grpc.default_authority")
-    var grpcDotdefault_authority: js.UndefOr[String] = js.native
+    var grpcDotdefault_authority: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.enable_http_proxy")
-    var grpcDotenable_http_proxy: js.UndefOr[Double] = js.native
+    var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.http_connect_creds")
-    var grpcDothttp_connect_creds: js.UndefOr[String] = js.native
+    var grpcDothttp_connect_creds: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.http_connect_target")
-    var grpcDothttp_connect_target: js.UndefOr[String] = js.native
+    var grpcDothttp_connect_target: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.initial_reconnect_backoff_ms")
-    var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.native
+    var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_time_ms")
-    var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.native
+    var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_timeout_ms")
-    var grpcDotkeepalive_timeout_ms: js.UndefOr[Double] = js.native
+    var grpcDotkeepalive_timeout_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_concurrent_streams")
-    var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.native
+    var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_receive_message_length")
-    var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.native
+    var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_reconnect_backoff_ms")
-    var grpcDotmax_reconnect_backoff_ms: js.UndefOr[Double] = js.native
+    var grpcDotmax_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_send_message_length")
-    var grpcDotmax_send_message_length: js.UndefOr[Double] = js.native
+    var grpcDotmax_send_message_length: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.primary_user_agent")
-    var grpcDotprimary_user_agent: js.UndefOr[String] = js.native
+    var grpcDotprimary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.secondary_user_agent")
-    var grpcDotsecondary_user_agent: js.UndefOr[String] = js.native
+    var grpcDotsecondary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.service_config")
-    var grpcDotservice_config: js.UndefOr[String] = js.native
+    var grpcDotservice_config: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.ssl_target_name_override")
-    var grpcDotssl_target_name_override: js.UndefOr[String] = js.native
+    var grpcDotssl_target_name_override: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.use_local_subchannel_pool")
-    var grpcDotuse_local_subchannel_pool: js.UndefOr[Double] = js.native
+    var grpcDotuse_local_subchannel_pool: js.UndefOr[Double] = js.undefined
   }
   object PartialChannelOptions {
     
@@ -196,52 +193,51 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Console> */
-  @js.native
   trait PartialConsole extends StObject {
     
-    var assert: js.UndefOr[js.Function2[/* condition */ Boolean, /* repeated */ js.Any, Unit]] = js.native
+    var assert: js.UndefOr[js.Function2[/* condition */ Boolean, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var count: js.UndefOr[js.Function0[Unit]] = js.native
+    var count: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var countReset: js.UndefOr[js.Function0[Unit]] = js.native
+    var countReset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var dir: js.UndefOr[js.Function0[Unit]] = js.native
+    var dir: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var dirxml: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var dirxml: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var exception: js.UndefOr[js.Function2[/* message */ String, /* repeated */ js.Any, Unit]] = js.native
+    var exception: js.UndefOr[js.Function2[/* message */ String, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var group: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var group: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var groupCollapsed: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var groupCollapsed: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var groupEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var groupEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var info: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var info: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var memory: js.UndefOr[js.Any] = js.native
+    var memory: js.UndefOr[js.Any] = js.undefined
     
-    var table: js.UndefOr[js.Function0[Unit]] = js.native
+    var table: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var time: js.UndefOr[js.Function0[Unit]] = js.native
+    var time: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var timeEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var timeEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var timeLog: js.UndefOr[js.Function2[/* label */ String, /* repeated */ js.Any, Unit]] = js.native
+    var timeLog: js.UndefOr[js.Function2[/* label */ String, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var timeStamp: js.UndefOr[js.Function0[Unit]] = js.native
+    var timeStamp: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var trace: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var trace: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var warn: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var warn: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   }
   object PartialConsole {
     
@@ -389,14 +385,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener> */
-  @js.native
   trait PartialInterceptingListen extends StObject {
     
-    var onReceiveMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.native
+    var onReceiveMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
     
-    var onReceiveMetadata: js.UndefOr[js.Function1[/* metadata */ Metadata, Unit]] = js.native
+    var onReceiveMetadata: js.UndefOr[js.Function1[/* metadata */ Metadata, Unit]] = js.undefined
     
-    var onReceiveStatus: js.UndefOr[js.Function1[/* status */ StatusObject, Unit]] = js.native
+    var onReceiveStatus: js.UndefOr[js.Function1[/* status */ StatusObject, Unit]] = js.undefined
   }
   object PartialInterceptingListen {
     
@@ -430,14 +425,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject> */
-  @js.native
   trait PartialStatusObject extends StObject {
     
-    var code: js.UndefOr[Status] = js.native
+    var code: js.UndefOr[Status] = js.undefined
     
-    var details: js.UndefOr[String] = js.native
+    var details: js.UndefOr[String] = js.undefined
     
-    var metadata: js.UndefOr[Metadata] = js.native
+    var metadata: js.UndefOr[Metadata] = js.undefined
   }
   object PartialStatusObject {
     

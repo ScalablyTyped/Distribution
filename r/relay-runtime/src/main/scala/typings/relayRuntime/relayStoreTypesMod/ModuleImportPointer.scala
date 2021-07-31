@@ -2,18 +2,16 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleImportPointer extends StObject {
   
   @JSName("$fragmentRefs")
-  val $fragmentRefs: js.Any = js.native
+  val $fragmentRefs: js.Any
   
-  val __fragmentPropName: js.UndefOr[String | Null] = js.native
+  val __fragmentPropName: js.UndefOr[String | Null] = js.undefined
   
-  val __module_component: js.Any = js.native
+  val __module_component: js.Any
 }
 object ModuleImportPointer {
   

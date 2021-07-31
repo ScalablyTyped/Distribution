@@ -3,70 +3,68 @@ package typings.aframe.mod
 import typings.aframe.anon.GetMeshMixin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AFrame extends StObject {
   
-  var AComponent: Component[_, System[_]] = js.native
+  var AComponent: Component[js.Any, System[js.Any]]
   
-  var AEntity: Entity[ObjectMap[Component[_, System[_]]]] = js.native
+  var AEntity: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]
   
-  var ANode: typings.aframe.mod.ANode = js.native
+  var ANode: typings.aframe.mod.ANode
   
-  var AScene: Scene = js.native
+  var AScene: Scene
   
-  var THREE: ThreeLib = js.native
+  var THREE: ThreeLib
   
-  var TWEEN: TweenLib = js.native
+  var TWEEN: TweenLib
   
-  var components: ObjectMap[ComponentDescriptor[Component[_, System[_]]]] = js.native
+  var components: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]]
   
-  var geometries: ObjectMap[GeometryDescriptor[Geometry[_]]] = js.native
+  var geometries: ObjectMap[GeometryDescriptor[Geometry[js.Any]]]
   
-  var primitives: GetMeshMixin = js.native
+  var primitives: GetMeshMixin
   
-  def registerComponent[T /* <: js.Object */](name: String, component: ComponentDefinition[T]): ComponentConstructor[T] = js.native
+  def registerComponent[T /* <: js.Object */](name: String, component: ComponentDefinition[T]): ComponentConstructor[T]
   
-  def registerElement(name: String, element: js.Object): Unit = js.native
+  def registerElement(name: String, element: js.Object): Unit
   
-  def registerGeometry[T /* <: js.Object */](name: String, geometry: GeometryDefinition[T, _]): GeometryConstructor[T] = js.native
+  def registerGeometry[T /* <: js.Object */](name: String, geometry: GeometryDefinition[T, js.Any]): GeometryConstructor[T]
   
-  def registerPrimitive(name: String, primitive: PrimitiveDefinition): Unit = js.native
+  def registerPrimitive(name: String, primitive: PrimitiveDefinition): Unit
   
-  def registerShader[T /* <: MinimalShaderDefinition with js.Object */](name: String, shader: ShaderDefinition[T]): ShaderConstructor[T] = js.native
+  def registerShader[T /* <: MinimalShaderDefinition & js.Object */](name: String, shader: ShaderDefinition[T]): ShaderConstructor[T]
   
-  def registerSystem[T /* <: js.Object */](name: String, definition: SystemDefinition[T]): SystemConstructor[T] = js.native
+  def registerSystem[T /* <: js.Object */](name: String, definition: SystemDefinition[T]): SystemConstructor[T]
   
-  var scenes: js.Array[Scene] = js.native
+  var scenes: js.Array[Scene]
   
-  var schema: SchemaUtils = js.native
+  var schema: SchemaUtils
   
-  var shaders: ObjectMap[ShaderDescriptor[Shader]] = js.native
+  var shaders: ObjectMap[ShaderDescriptor[Shader]]
   
-  var systems: ObjectMap[SystemConstructor[js.Object]] = js.native
+  var systems: ObjectMap[SystemConstructor[js.Object]]
   
-  var utils: Utils_ = js.native
+  var utils: Utils_
   
-  var version: String = js.native
+  var version: String
 }
 object AFrame {
   
   @scala.inline
   def apply(
-    AComponent: Component[_, System[_]],
-    AEntity: Entity[ObjectMap[Component[_, System[_]]]],
-    ANode: typings.aframe.mod.ANode,
+    AComponent: Component[js.Any, System[js.Any]],
+    AEntity: Entity[ObjectMap[Component[js.Any, System[js.Any]]]],
+    ANode: ANode,
     AScene: Scene,
     THREE: ThreeLib,
     TWEEN: TweenLib,
-    components: ObjectMap[ComponentDescriptor[Component[_, System[_]]]],
-    geometries: ObjectMap[GeometryDescriptor[Geometry[_]]],
+    components: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]],
+    geometries: ObjectMap[GeometryDescriptor[Geometry[js.Any]]],
     primitives: GetMeshMixin,
     registerComponent: (String, ComponentDefinition[js.Any]) => ComponentConstructor[js.Any],
     registerElement: (String, js.Object) => Unit,
-    registerGeometry: (String, GeometryDefinition[js.Any, _]) => GeometryConstructor[js.Any],
+    registerGeometry: (String, GeometryDefinition[js.Any, js.Any]) => GeometryConstructor[js.Any],
     registerPrimitive: (String, PrimitiveDefinition) => Unit,
     registerShader: (String, ShaderDefinition[js.Any]) => ShaderConstructor[js.Any],
     registerSystem: (String, SystemDefinition[js.Any]) => SystemConstructor[js.Any],
@@ -85,22 +83,22 @@ object AFrame {
   implicit class AFrameMutableBuilder[Self <: AFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAComponent(value: Component[_, System[_]]): Self = StObject.set(x, "AComponent", value.asInstanceOf[js.Any])
+    def setAComponent(value: Component[js.Any, System[js.Any]]): Self = StObject.set(x, "AComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAEntity(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = StObject.set(x, "AEntity", value.asInstanceOf[js.Any])
+    def setAEntity(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "AEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setANode(value: typings.aframe.mod.ANode): Self = StObject.set(x, "ANode", value.asInstanceOf[js.Any])
+    def setANode(value: ANode): Self = StObject.set(x, "ANode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAScene(value: Scene): Self = StObject.set(x, "AScene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: ObjectMap[ComponentDescriptor[Component[_, System[_]]]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    def setComponents(value: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: ObjectMap[GeometryDescriptor[Geometry[_]]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    def setGeometries(value: ObjectMap[GeometryDescriptor[Geometry[js.Any]]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPrimitives(value: GetMeshMixin): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
@@ -112,7 +110,7 @@ object AFrame {
     def setRegisterElement(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterGeometry(value: (String, GeometryDefinition[js.Any, _]) => GeometryConstructor[js.Any]): Self = StObject.set(x, "registerGeometry", js.Any.fromFunction2(value))
+    def setRegisterGeometry(value: (String, GeometryDefinition[js.Any, js.Any]) => GeometryConstructor[js.Any]): Self = StObject.set(x, "registerGeometry", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRegisterPrimitive(value: (String, PrimitiveDefinition) => Unit): Self = StObject.set(x, "registerPrimitive", js.Any.fromFunction2(value))

@@ -3,20 +3,20 @@ package typings.isMyJsonValid.mod
 import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NullSchema extends _AnySchema {
+trait NullSchema
+  extends StObject
+     with _AnySchema {
   
-  var `type`: `null` = js.native
+  var `type`: `null`
 }
 object NullSchema {
   
   @scala.inline
-  def apply(`type`: `null`): NullSchema = {
+  def apply(): NullSchema = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("null")
     __obj.asInstanceOf[NullSchema]
   }
   

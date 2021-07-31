@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedDeviceMobileAppConfiguration extends Entity {
+trait ManagedDeviceMobileAppConfiguration
+  extends StObject
+     with Entity {
   
   // The list of group assignemenets for app configration.
-  var assignments: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfigurationAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfigurationAssignment]]] = js.undefined
   
   // DateTime the object was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Admin provided description of the Device Configuration.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // App configuration device status summary.
-  var deviceStatusSummary: js.UndefOr[NullableOption[ManagedDeviceMobileAppConfigurationDeviceSummary]] = js.native
+  var deviceStatusSummary: js.UndefOr[NullableOption[ManagedDeviceMobileAppConfigurationDeviceSummary]] = js.undefined
   
   // List of ManagedDeviceMobileAppConfigurationDeviceStatus.
-  var deviceStatuses: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfigurationDeviceStatus]]] = js.native
+  var deviceStatuses: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfigurationDeviceStatus]]] = js.undefined
   
   // Admin provided name of the device configuration.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // DateTime the object was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // the associated app.
-  var targetedMobileApps: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var targetedMobileApps: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // App configuration user status summary.
-  var userStatusSummary: js.UndefOr[NullableOption[ManagedDeviceMobileAppConfigurationUserSummary]] = js.native
+  var userStatusSummary: js.UndefOr[NullableOption[ManagedDeviceMobileAppConfigurationUserSummary]] = js.undefined
   
   // List of ManagedDeviceMobileAppConfigurationUserStatus.
-  var userStatuses: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfigurationUserStatus]]] = js.native
+  var userStatuses: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfigurationUserStatus]]] = js.undefined
   
   // Version of the device configuration.
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object ManagedDeviceMobileAppConfiguration {
   

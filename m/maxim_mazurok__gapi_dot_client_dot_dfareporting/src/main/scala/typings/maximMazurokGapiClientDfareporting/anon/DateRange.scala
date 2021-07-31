@@ -4,37 +4,35 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Dimen
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.SortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRange extends StObject {
   
   /** Activity group. */
-  var activities: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Activities] = js.native
+  var activities: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Activities] = js.undefined
   
   /** Custom Rich Media Events group. */
   var customRichMediaEvents: js.UndefOr[
     typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CustomRichMediaEvents
-  ] = js.native
+  ] = js.undefined
   
   /** The date range this report should be run for. */
-  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.native
+  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.undefined
   
   /** The list of filters on which dimensions are filtered. Filters for different dimensions are ANDed, filters for the same dimension are grouped together and ORed. */
-  var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** The list of dimensions the report should include. */
-  var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
   
   /** Whether to enable all reach dimension combinations in the report. Defaults to false. If enabled, the date range of the report should be within the last 42 days. */
-  var enableAllDimensionCombinations: js.UndefOr[Boolean] = js.native
+  var enableAllDimensionCombinations: js.UndefOr[Boolean] = js.undefined
   
   /** The list of names of metrics the report should include. */
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of names of Reach By Frequency metrics the report should include. */
-  var reachByFrequencyMetricNames: js.UndefOr[js.Array[String]] = js.native
+  var reachByFrequencyMetricNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DateRange {
   

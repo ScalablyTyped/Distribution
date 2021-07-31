@@ -14,7 +14,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snackBarMod {
@@ -26,26 +25,25 @@ object snackBarMod {
   
   type SnackBar = Component[SnackBarProps, js.Object, js.Any]
   
-  @js.native
   trait SnackBarProps extends StObject {
     
-    var actionTrigger: js.UndefOr[CallbackFn] = js.native
+    var actionTrigger: js.UndefOr[CallbackFn] = js.undefined
     
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var secondsToClose: js.UndefOr[Double] = js.native
+    var secondsToClose: js.UndefOr[Double] = js.undefined
     
-    var skin: js.UndefOr[primary | success | error | neutral | warning] = js.native
+    var skin: js.UndefOr[primary | success | error | neutral | warning] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSizeBreakpoints] = js.native
+    var theme: js.UndefOr[BaseFontSizeBreakpoints] = js.undefined
   }
   object SnackBarProps {
     

@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operator
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_Operator: typings.cssTree.cssTreeStrings.Operator = js.native
+  var type_Operator: typings.cssTree.cssTreeStrings.Operator
   
-  var value: String = js.native
+  var value: String
 }
 object Operator {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.Operator, value: String): Operator = {
+  def apply(value: String): Operator = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Operator")
     __obj.asInstanceOf[Operator]
   }
   

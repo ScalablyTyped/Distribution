@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of sequences as either a Multi-Dimensional array or array of arrays. This structure allows a preference for a Multi-Dimensional array representation
   * to be specified.
   */
-@js.native
 trait ArrayWrapper extends StObject {
   
   /**
@@ -24,10 +22,10 @@ trait ArrayWrapper extends StObject {
     * are possible, where N is the number of dimensions. Note: its perfectly legal to use this structure with a single dimensioned array just to indicate
     * the array indexing.
     */
-  var Array: js.Any = js.native
+  var Array: js.Any
   
   /** Indicates whether the Array should be have 1 or 0 based indexing. */
-  var IsZeroIndex: Boolean = js.native
+  var IsZeroIndex: Boolean
 }
 object ArrayWrapper {
   

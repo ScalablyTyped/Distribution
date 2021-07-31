@@ -2,7 +2,6 @@ package typings.reduxWatch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,19 +16,26 @@ object mod {
     * @returns Function, that listens to changes of the given field of the Redux store
     *      state. On change it calls its parameter, which is a change handler function.
     */
-  @JSImport("redux-watch", JSImport.Namespace)
-  @js.native
-  def apply(getState: js.Function0[_]): ChangeHandlerWrapper[_] = js.native
-  @JSImport("redux-watch", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(getState: js.Function0[js.Any]): ChangeHandlerWrapper[js.Any] = ^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any]).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+  @scala.inline
   def apply(
-    getState: js.Function0[_],
-    pathToField: js.UndefOr[FieldPath],
+    getState: js.Function0[js.Any],
+    pathToField: Unit,
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
-  ): ChangeHandlerWrapper[_] = js.native
+  ): ChangeHandlerWrapper[js.Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+  @scala.inline
+  def apply(getState: js.Function0[js.Any], pathToField: FieldPath): ChangeHandlerWrapper[js.Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+  @scala.inline
+  def apply(
+    getState: js.Function0[js.Any],
+    pathToField: FieldPath,
+    compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
+  ): ChangeHandlerWrapper[js.Any] = (^.asInstanceOf[js.Dynamic].apply(getState.asInstanceOf[js.Any], pathToField.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[ChangeHandlerWrapper[js.Any]]
+  
   @JSImport("redux-watch", JSImport.Namespace)
   @js.native
-  def apply(getState: js.Function0[_], pathToField: FieldPath): ChangeHandlerWrapper[_] = js.native
+  val ^ : js.Any = js.native
   
   /** Whenever a given state field changes this handler will be called. */
   type ChangeHandler[T] = js.Function3[/* newValue */ T, /* oldValue */ T, /* pathToField */ FieldPath, Unit]

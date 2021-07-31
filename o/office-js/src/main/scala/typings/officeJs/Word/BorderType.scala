@@ -2,7 +2,6 @@ package typings.officeJs.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,74 +14,122 @@ sealed trait BorderType extends StObject
 object BorderType extends StObject {
   
   @js.native
-  sealed trait dashDotStroked extends BorderType
+  sealed trait dashDotStroked
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait dashed extends BorderType
+  sealed trait dashed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait dashedSmall extends BorderType
+  sealed trait dashedSmall
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait dot2Dashed extends BorderType
+  sealed trait dot2Dashed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait dotDashed extends BorderType
+  sealed trait dotDashed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait dotted extends BorderType
+  sealed trait dotted
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait double extends BorderType
+  sealed trait double
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait doubleWave extends BorderType
+  sealed trait doubleWave
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait mixed extends BorderType
+  sealed trait mixed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait none extends BorderType
+  sealed trait none
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait single extends BorderType
+  sealed trait single
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thickThinLarge extends BorderType
+  sealed trait thickThinLarge
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thickThinMed extends BorderType
+  sealed trait thickThinMed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thickThinSmall extends BorderType
+  sealed trait thickThinSmall
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thinThickLarge extends BorderType
+  sealed trait thinThickLarge
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thinThickMed extends BorderType
+  sealed trait thinThickMed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thinThickSmall extends BorderType
+  sealed trait thinThickSmall
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thinThickThinLarge extends BorderType
+  sealed trait thinThickThinLarge
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thinThickThinMed extends BorderType
+  sealed trait thinThickThinMed
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait thinThickThinSmall extends BorderType
+  sealed trait thinThickThinSmall
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait threeDEmboss extends BorderType
+  sealed trait threeDEmboss
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait threeDEngrave extends BorderType
+  sealed trait threeDEngrave
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait triple extends BorderType
+  sealed trait triple
+    extends StObject
+       with BorderType
   
   @js.native
-  sealed trait wave extends BorderType
+  sealed trait wave
+    extends StObject
+       with BorderType
 }

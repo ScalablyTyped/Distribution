@@ -3,36 +3,34 @@ package typings.activexWord.Word
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mailer extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var BCCRecipients: js.Any = js.native
+  var BCCRecipients: js.Any
   
-  var CCRecipients: js.Any = js.native
+  var CCRecipients: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Enclosures: js.Any = js.native
+  var Enclosures: js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Received: Boolean = js.native
+  val Received: Boolean
   
-  var Recipients: js.Any = js.native
+  var Recipients: js.Any
   
-  val SendDateTime: VarDate = js.native
+  val SendDateTime: VarDate
   
-  val Sender: String = js.native
+  val Sender: String
   
-  var Subject: String = js.native
+  var Subject: String
   
   @JSName("Word.Mailer_typekey")
-  var WordDotMailer_typekey: Mailer = js.native
+  var WordDotMailer_typekey: Mailer
 }
 object Mailer {
   

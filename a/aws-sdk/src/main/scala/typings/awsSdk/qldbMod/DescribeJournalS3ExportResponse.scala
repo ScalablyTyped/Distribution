@@ -2,16 +2,14 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJournalS3ExportResponse extends StObject {
   
   /**
     * Information about the journal export job returned by a DescribeJournalS3Export request.
     */
-  var ExportDescription: JournalS3ExportDescription = js.native
+  var ExportDescription: JournalS3ExportDescription
 }
 object DescribeJournalS3ExportResponse {
   

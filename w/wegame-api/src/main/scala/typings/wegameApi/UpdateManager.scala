@@ -2,31 +2,29 @@ package typings.wegameApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateManager extends StObject {
   
   /**
     * 应用更新包并重启
     */
-  def applyUpdate(): Unit = js.native
+  def applyUpdate(): Unit
   
   /**
     * 监听检查更新结果回调
     */
-  def onCheckForUpdate(callback: js.Function0[Unit]): Unit = js.native
+  def onCheckForUpdate(callback: js.Function0[Unit]): Unit
   
   /**
     * 监听更新包下载失败回调
     */
-  def onUpdateFailed(callback: js.Function0[Unit]): Unit = js.native
+  def onUpdateFailed(callback: js.Function0[Unit]): Unit
   
   /**
     * 监听更新包下载成功回调
     */
-  def onUpdateReady(callback: js.Function0[Unit]): Unit = js.native
+  def onUpdateReady(callback: js.Function0[Unit]): Unit
 }
 object UpdateManager {
   

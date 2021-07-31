@@ -2,23 +2,21 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceMatrixRowElement extends StObject {
   
   /**
     * The total distance of this route, expressed in meters (`value`) and as `text`.
     * The textual value uses the `unit` system specified with the unit parameter of the original request, or the origin's region.
     */
-  var distance: Distance = js.native
+  var distance: Distance
   
   /**
     * The length of time it takes to travel this route, expressed in seconds (the `value` field) and as `text`.
     * The textual representation is localized according to the query's `language` parameter.
     */
-  var duration: Duration = js.native
+  var duration: Duration
   
   /**
     * The length of time it takes to travel this route, based on current and historical traffic conditions.
@@ -31,16 +29,16 @@ trait DistanceMatrixRowElement extends StObject {
     *  - Traffic conditions are available for the requested route.
     *  - The `mode` parameter is set to `driving`.
     */
-  var duration_in_traffic: Duration = js.native
+  var duration_in_traffic: Duration
   
   /**
     * If present, contains the total fare (that is, the total ticket costs) on this route.
     * This property is only returned for transit requests and only for transit providers where fare information is available.
     */
-  var fare: TransitFare = js.native
+  var fare: TransitFare
   
   /** possible status codes  */
-  var status: DistanceMatrixResponseElementLevelStatus = js.native
+  var status: DistanceMatrixResponseElementLevelStatus
 }
 object DistanceMatrixRowElement {
   

@@ -3,26 +3,24 @@ package typings.googleapis.calendarV3Mod.calendarV3
 import typings.googleapis.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAclRule extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the ACL rule.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the resource (&quot;calendar#aclRule&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The role assigned to the scope. Possible values are:   - &quot;none&quot;
@@ -36,12 +34,12 @@ trait SchemaAclRule extends StObject {
     * of the permissions of the writer role with the additional ability to see
     * and manipulate ACLs.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * The scope of the rule.
     */
-  var scope: js.UndefOr[Value] = js.native
+  var scope: js.UndefOr[Value] = js.undefined
 }
 object SchemaAclRule {
   

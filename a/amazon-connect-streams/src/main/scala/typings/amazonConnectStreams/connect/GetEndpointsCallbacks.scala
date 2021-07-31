@@ -2,17 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEndpointsCallbacks extends StObject {
   
-  val failure: js.UndefOr[SuccessFailCallback[js.Array[String]]] = js.native
+  val failure: js.UndefOr[SuccessFailCallback[js.Array[String]]] = js.undefined
   
   def success(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: js.Array[GetEndpointsResult]
-  ): Unit = js.native
+  ): Unit
 }
 object GetEndpointsCallbacks {
   

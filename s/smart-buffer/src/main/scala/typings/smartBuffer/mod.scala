@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -528,9 +527,9 @@ object mod {
       * @return { String }
       */
     def readString(): String = js.native
-    def readString(arg1: js.UndefOr[scala.Nothing], encoding: BufferEncoding): String = js.native
     def readString(arg1: Double): String = js.native
     def readString(arg1: Double, encoding: BufferEncoding): String = js.native
+    def readString(arg1: Unit, encoding: BufferEncoding): String = js.native
     def readString(arg1: BufferEncoding): String = js.native
     def readString(arg1: BufferEncoding, encoding: BufferEncoding): String = js.native
     
@@ -792,9 +791,9 @@ object mod {
       * @return this
       */
     def writeString(value: String): SmartBuffer = js.native
-    def writeString(value: String, arg2: js.UndefOr[scala.Nothing], encoding: BufferEncoding): SmartBuffer = js.native
     def writeString(value: String, arg2: Double): SmartBuffer = js.native
     def writeString(value: String, arg2: Double, encoding: BufferEncoding): SmartBuffer = js.native
+    def writeString(value: String, arg2: Unit, encoding: BufferEncoding): SmartBuffer = js.native
     def writeString(value: String, arg2: BufferEncoding): SmartBuffer = js.native
     def writeString(value: String, arg2: BufferEncoding, encoding: BufferEncoding): SmartBuffer = js.native
     
@@ -808,9 +807,9 @@ object mod {
       * @return this
       */
     def writeStringNT(value: String): SmartBuffer = js.native
-    def writeStringNT(value: String, arg2: js.UndefOr[scala.Nothing], encoding: BufferEncoding): SmartBuffer = js.native
     def writeStringNT(value: String, arg2: Double): SmartBuffer = js.native
     def writeStringNT(value: String, arg2: Double, encoding: BufferEncoding): SmartBuffer = js.native
+    def writeStringNT(value: String, arg2: Unit, encoding: BufferEncoding): SmartBuffer = js.native
     def writeStringNT(value: String, arg2: BufferEncoding): SmartBuffer = js.native
     def writeStringNT(value: String, arg2: BufferEncoding, encoding: BufferEncoding): SmartBuffer = js.native
     
@@ -871,6 +870,10 @@ object mod {
   }
   object SmartBuffer {
     
+    @JSImport("smart-buffer", "SmartBuffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new SmartBuffer instance with the provided Buffer and optional encoding.
       *
@@ -880,12 +883,10 @@ object mod {
       * @return { SmartBuffer }
       */
     /* static member */
-    @JSImport("smart-buffer", "SmartBuffer.fromBuffer")
-    @js.native
-    def fromBuffer(buff: Buffer): SmartBuffer = js.native
-    @JSImport("smart-buffer", "SmartBuffer.fromBuffer")
-    @js.native
-    def fromBuffer(buff: Buffer, encoding: BufferEncoding): SmartBuffer = js.native
+    @scala.inline
+    def fromBuffer(buff: Buffer): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
+    @scala.inline
+    def fromBuffer(buff: Buffer, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
     
     /**
       * Creates a new SmartBuffer instance with the provided SmartBufferOptions options.
@@ -893,9 +894,8 @@ object mod {
       * @param options { SmartBufferOptions } The options to use when creating the SmartBuffer instance.
       */
     /* static member */
-    @JSImport("smart-buffer", "SmartBuffer.fromOptions")
-    @js.native
-    def fromOptions(options: SmartBufferOptions): SmartBuffer = js.native
+    @scala.inline
+    def fromOptions(options: SmartBufferOptions): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
     
     /**
       * Creates a new SmartBuffer instance with the provided internal Buffer size and optional encoding.
@@ -906,33 +906,29 @@ object mod {
       * @return { SmartBuffer }
       */
     /* static member */
-    @JSImport("smart-buffer", "SmartBuffer.fromSize")
-    @js.native
-    def fromSize(size: Double): SmartBuffer = js.native
-    @JSImport("smart-buffer", "SmartBuffer.fromSize")
-    @js.native
-    def fromSize(size: Double, encoding: BufferEncoding): SmartBuffer = js.native
+    @scala.inline
+    def fromSize(size: Double): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
+    @scala.inline
+    def fromSize(size: Double, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
     
     /**
       * Type checking function that determines if an object is a SmartBufferOptions object.
       */
     /* static member */
-    @JSImport("smart-buffer", "SmartBuffer.isSmartBufferOptions")
-    @js.native
-    def isSmartBufferOptions(options: SmartBufferOptions): /* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean = js.native
+    @scala.inline
+    def isSmartBufferOptions(options: SmartBufferOptions): /* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSmartBufferOptions")(options.asInstanceOf[js.Any]).asInstanceOf[/* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean]
   }
   
   /**
     * Object interface for constructing new SmartBuffer instances.
     */
-  @js.native
   trait SmartBufferOptions extends StObject {
     
-    var buff: js.UndefOr[Buffer] = js.native
+    var buff: js.UndefOr[Buffer] = js.undefined
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object SmartBufferOptions {
     

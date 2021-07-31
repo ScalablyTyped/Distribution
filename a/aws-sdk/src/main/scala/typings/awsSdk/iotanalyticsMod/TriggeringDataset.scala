@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggeringDataset extends StObject {
   
   /**
     * The name of the dataset whose content generation triggers the new dataset content generation.
     */
-  var name: DatasetName = js.native
+  var name: DatasetName
 }
 object TriggeringDataset {
   

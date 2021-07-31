@@ -2,21 +2,19 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PullRequest. */
-@js.native
 trait IPullRequest extends StObject {
   
   /** PullRequest maxMessages */
-  var maxMessages: js.UndefOr[Double | Null] = js.native
+  var maxMessages: js.UndefOr[Double | Null] = js.undefined
   
   /** PullRequest returnImmediately */
-  var returnImmediately: js.UndefOr[Boolean | Null] = js.native
+  var returnImmediately: js.UndefOr[Boolean | Null] = js.undefined
   
   /** PullRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
 }
 object IPullRequest {
   

@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/console
   */
 object console {
+  
+  @JSGlobal("console")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Logs an error message to the console._
@@ -20,9 +23,8 @@ object console {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#error
     */
-  @JSGlobal("console.error")
-  @js.native
-  def error(message: js.Any): Unit = js.native
+  @scala.inline
+  def error(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Logs a message to the console._
@@ -33,9 +35,8 @@ object console {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#log
     */
-  @JSGlobal("console.log")
-  @js.native
-  def log(message: js.Any): Unit = js.native
+  @scala.inline
+  def log(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Logs a warning message to the console._
@@ -46,7 +47,6 @@ object console {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#warn
     */
-  @JSGlobal("console.warn")
-  @js.native
-  def warn(message: js.Any): Unit = js.native
+  @scala.inline
+  def warn(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

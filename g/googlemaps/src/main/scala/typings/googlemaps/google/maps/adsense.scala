@@ -3,7 +3,6 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
@@ -16,62 +15,100 @@ object adsense {
   object AdFormat extends StObject {
     
     @js.native
-    sealed trait BANNER extends AdFormat
+    sealed trait BANNER
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait BUTTON extends AdFormat
+    sealed trait BUTTON
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait HALF_BANNER extends AdFormat
+    sealed trait HALF_BANNER
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait LARGE_HORIZONTAL_LINK_UNIT extends AdFormat
+    sealed trait LARGE_HORIZONTAL_LINK_UNIT
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait LARGE_RECTANGLE extends AdFormat
+    sealed trait LARGE_RECTANGLE
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait LARGE_VERTICAL_LINK_UNIT extends AdFormat
+    sealed trait LARGE_VERTICAL_LINK_UNIT
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait LEADERBOARD extends AdFormat
+    sealed trait LEADERBOARD
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait MEDIUM_RECTANGLE extends AdFormat
+    sealed trait MEDIUM_RECTANGLE
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait MEDIUM_VERTICAL_LINK_UNIT extends AdFormat
+    sealed trait MEDIUM_VERTICAL_LINK_UNIT
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait SKYSCRAPER extends AdFormat
+    sealed trait SKYSCRAPER
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait SMALL_HORIZONTAL_LINK_UNIT extends AdFormat
+    sealed trait SMALL_HORIZONTAL_LINK_UNIT
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait SMALL_RECTANGLE extends AdFormat
+    sealed trait SMALL_RECTANGLE
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait SMALL_SQUARE extends AdFormat
+    sealed trait SMALL_SQUARE
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait SMALL_VERTICAL_LINK_UNIT extends AdFormat
+    sealed trait SMALL_VERTICAL_LINK_UNIT
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait SQUARE extends AdFormat
+    sealed trait SQUARE
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait VERTICAL_BANNER extends AdFormat
+    sealed trait VERTICAL_BANNER
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait WIDE_SKYSCRAPER extends AdFormat
+    sealed trait WIDE_SKYSCRAPER
+      extends StObject
+         with AdFormat
     
     @js.native
-    sealed trait X_LARGE_VERTICAL_LINK_UNIT extends AdFormat
+    sealed trait X_LARGE_VERTICAL_LINK_UNIT
+      extends StObject
+         with AdFormat
   }
   
   @js.native
-  trait AdUnit extends MVCObject {
+  trait AdUnit
+    extends StObject
+       with MVCObject {
     
     def getBackgroundColor(): String = js.native
     
@@ -115,28 +152,27 @@ object adsense {
     def setUrlColor(urlColor: String): Unit = js.native
   }
   
-  @js.native
   trait AdUnitOptions extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var channelNumber: js.UndefOr[String] = js.native
+    var channelNumber: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[AdFormat] = js.native
+    var format: js.UndefOr[AdFormat] = js.undefined
     
-    var map: js.UndefOr[Map[Element]] = js.native
+    var map: js.UndefOr[Map[Element]] = js.undefined
     
-    var position: js.UndefOr[ControlPosition] = js.native
+    var position: js.UndefOr[ControlPosition] = js.undefined
     
-    var publisherId: js.UndefOr[String] = js.native
+    var publisherId: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var titleColor: js.UndefOr[String] = js.native
+    var titleColor: js.UndefOr[String] = js.undefined
     
-    var urlColor: js.UndefOr[String] = js.native
+    var urlColor: js.UndefOr[String] = js.undefined
   }
   object AdUnitOptions {
     

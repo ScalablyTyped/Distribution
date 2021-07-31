@@ -18,104 +18,104 @@ import typings.mqttPacket.mod.QoS
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientOptionsMod {
   
-  @js.native
-  trait IClientOptions extends ISecureClientOptions {
+  trait IClientOptions
+    extends StObject
+       with ISecureClientOptions {
     
     /**
       * true, set to false to receive QoS 1 and 2 messages while offline
       */
-    var clean: js.UndefOr[Boolean] = js.native
+    var clean: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 'mqttjs_' + Math.random().toString(16).substr(2, 8)
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * 30 * 1000 milliseconds, time to wait before a CONNACK is received
       */
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
     // port is made into a number subsequently
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     // host does NOT include port
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * a Store for the incoming packets
       */
-    var incomingStore: js.UndefOr[Store] = js.native
+    var incomingStore: js.UndefOr[Store] = js.undefined
     
     /**
       *  10 seconds, set to 0 to disable
       */
-    var keepalive: js.UndefOr[Double] = js.native
+    var keepalive: js.UndefOr[Double] = js.undefined
     
     /**
       * a Store for the outgoing packets
       */
-    var outgoingStore: js.UndefOr[Store] = js.native
+    var outgoingStore: js.UndefOr[Store] = js.undefined
     
     /**
       * the password required by your broker, if any
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var properties: js.UndefOr[AuthenticationData] = js.native
+    var properties: js.UndefOr[AuthenticationData] = js.undefined
     
-    var protocol: js.UndefOr[wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs] = js.native
+    var protocol: js.UndefOr[wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs] = js.undefined
     
     /**
       * 'MQTT'
       */
-    var protocolId: js.UndefOr[String] = js.native
+    var protocolId: js.UndefOr[String] = js.undefined
     
     /**
       * 4
       */
-    var protocolVersion: js.UndefOr[Double] = js.native
+    var protocolVersion: js.UndefOr[Double] = js.undefined
     
-    var queueQoSZero: js.UndefOr[Boolean] = js.native
+    var queueQoSZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 1000 milliseconds, interval between two reconnections
       */
-    var reconnectPeriod: js.UndefOr[Double] = js.native
+    var reconnectPeriod: js.UndefOr[Double] = js.undefined
     
-    var reschedulePings: js.UndefOr[Boolean] = js.native
+    var reschedulePings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * true, set to false to disable re-subscribe functionality
       */
-    var resubscribe: js.UndefOr[Boolean] = js.native
+    var resubscribe: js.UndefOr[Boolean] = js.undefined
     
-    var servers: js.UndefOr[js.Array[Host]] = js.native
+    var servers: js.UndefOr[js.Array[Host]] = js.undefined
     
     var transformWsUrl: js.UndefOr[
         js.Function3[/* url */ String, /* options */ this.type, /* client */ MqttClient, String]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the username required by your broker, if any
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /**
       * a message that will sent by the broker automatically when the client disconnect badly.
       */
-    var will: js.UndefOr[Payload] = js.native
+    var will: js.UndefOr[Payload] = js.undefined
     
-    var wsOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var wsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object IClientOptions {
     
@@ -277,33 +277,32 @@ object clientOptionsMod {
     }
   }
   
-  @js.native
   trait IClientPublishOptions extends StObject {
     
     /**
       * callback called when message is put into `outgoingStore`
       */
-    var cbStorePut: js.UndefOr[StorePutCallback] = js.native
+    var cbStorePut: js.UndefOr[StorePutCallback] = js.undefined
     
     /**
       * whether or not mark a message as duplicate
       */
-    var dup: js.UndefOr[Boolean] = js.native
+    var dup: js.UndefOr[Boolean] = js.undefined
     
     /*
       *  MQTT 5.0 properties object
       */
-    var properties: js.UndefOr[CorrelationData] = js.native
+    var properties: js.UndefOr[CorrelationData] = js.undefined
     
     /**
       * the QoS
       */
-    var qos: js.UndefOr[QoS] = js.native
+    var qos: js.UndefOr[QoS] = js.undefined
     
     /**
       * the retain flag
       */
-    var retain: js.UndefOr[Boolean] = js.native
+    var retain: js.UndefOr[Boolean] = js.undefined
   }
   object IClientPublishOptions {
     
@@ -348,18 +347,17 @@ object clientOptionsMod {
     }
   }
   
-  @js.native
   trait IClientReconnectOptions extends StObject {
     
     /**
       * a Store for the incoming packets
       */
-    var incomingStore: js.UndefOr[Store] = js.native
+    var incomingStore: js.UndefOr[Store] = js.undefined
     
     /**
       * a Store for the outgoing packets
       */
-    var outgoingStore: js.UndefOr[Store] = js.native
+    var outgoingStore: js.UndefOr[Store] = js.undefined
   }
   object IClientReconnectOptions {
     
@@ -386,28 +384,27 @@ object clientOptionsMod {
     }
   }
   
-  @js.native
   trait IClientSubscribeOptions extends StObject {
     
     /*
       * no local flag
       * */
-    var nl: js.UndefOr[Boolean] = js.native
+    var nl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the QoS
       */
-    var qos: QoS = js.native
+    var qos: QoS
     
     /*
       * Retain As Published flag
       * */
-    var rap: js.UndefOr[Boolean] = js.native
+    var rap: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Retain Handling option
       * */
-    var rh: js.UndefOr[Double] = js.native
+    var rh: js.UndefOr[Double] = js.undefined
   }
   object IClientSubscribeOptions {
     
@@ -443,25 +440,24 @@ object clientOptionsMod {
     }
   }
   
-  @js.native
   trait ISecureClientOptions extends StObject {
     
     /**
       * Optionally override the trusted CA certificates in PEM format
       */
-    var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+    var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
       * optional cert chains in PEM format
       */
-    var cert: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+    var cert: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
       * optional private keys in PEM format
       */
-    var key: js.UndefOr[String | (js.Array[Buffer | js.Object | String]) | Buffer] = js.native
+    var key: js.UndefOr[String | (js.Array[Buffer | js.Object | String]) | Buffer] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object ISecureClientOptions {
     

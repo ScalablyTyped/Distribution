@@ -3,28 +3,27 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.EnumBooleanBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait EnumBooleanBody_
-  extends EnumBody
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait EnumBooleanBody_
+  extends StObject
+     with BaseNode
+     with EnumBody {
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var members: js.Array[EnumBooleanMember_] = js.native
+  var members: js.Array[EnumBooleanMember_]
   
   @JSName("type")
-  var type_EnumBooleanBody_ : EnumBooleanBody = js.native
+  var type_EnumBooleanBody_ : EnumBooleanBody
 }
 object EnumBooleanBody_ {
   
   @scala.inline
-  def apply(explicit: Boolean, members: js.Array[EnumBooleanMember_], `type`: EnumBooleanBody): EnumBooleanBody_ = {
-    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(explicit: Boolean, members: js.Array[EnumBooleanMember_]): EnumBooleanBody_ = {
+    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumBooleanBody")
     __obj.asInstanceOf[EnumBooleanBody_]
   }
   

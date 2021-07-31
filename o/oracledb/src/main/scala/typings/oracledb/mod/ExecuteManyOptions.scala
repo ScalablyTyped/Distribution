@@ -3,13 +3,11 @@ package typings.oracledb.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to control statement execution.
   */
-@js.native
 trait ExecuteManyOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ExecuteManyOptions extends StObject {
     *
     * @default false
     */
-  var autoCommit: js.UndefOr[Boolean] = js.native
+  var autoCommit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This optional property allows invalid data records to be rejected while still letting valid data be processed.
@@ -40,14 +38,14 @@ trait ExecuteManyOptions extends StObject {
     *
     * @default false
     */
-  var batchErrors: js.UndefOr[Boolean] = js.native
+  var batchErrors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the bind variable types, sizes and directions. This object is optional in some cases but it is more efficient to set it.
     *
     * It should be an array or an object, depending on the structure of the binds parameter.
     */
-  var bindDefs: js.UndefOr[(Record[String, BindDefinition]) | js.Array[BindDefinition]] = js.native
+  var bindDefs: js.UndefOr[(Record[String, BindDefinition]) | js.Array[BindDefinition]] = js.undefined
   
   /**
     * When true, this optional property enables output of the number of rows affected by each input data record.
@@ -57,7 +55,7 @@ trait ExecuteManyOptions extends StObject {
     *
     * @default false
     */
-  var dmlRowCounts: js.UndefOr[Boolean] = js.native
+  var dmlRowCounts: js.UndefOr[Boolean] = js.undefined
 }
 object ExecuteManyOptions {
   

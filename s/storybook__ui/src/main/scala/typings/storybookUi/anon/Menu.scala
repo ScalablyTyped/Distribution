@@ -3,15 +3,13 @@ package typings.storybookUi.anon
 import typings.storybookUi.menuMod.MenuList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Menu extends StObject {
   
-  var menu: MenuList = js.native
+  var menu: MenuList
   
-  def onHide(): Unit = js.native
+  def onHide(): Unit
 }
 object Menu {
   

@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetProperties extends StObject {
   
   /** Output only. If present, the field contains DATA_SOURCE sheet specific properties. */
-  var dataSourceSheetProperties: js.UndefOr[DataSourceSheetProperties] = js.native
+  var dataSourceSheetProperties: js.UndefOr[DataSourceSheetProperties] = js.undefined
   
   /**
     * Additional properties of the sheet if this sheet is a grid. (If the sheet is an object sheet, containing a chart or image, then this field will be absent.) When writing it is an
     * error to set any grid properties on non-grid sheets. If this sheet is a DATA_SOURCE sheet, this field is output only but contains the properties that reflect how a data source sheet
     * is rendered in the UI, e.g. row_count.
     */
-  var gridProperties: js.UndefOr[GridProperties] = js.native
+  var gridProperties: js.UndefOr[GridProperties] = js.undefined
   
   /** True if the sheet is hidden in the UI, false if it's visible. */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The index of the sheet within the spreadsheet. When adding or updating sheet properties, if this field is excluded then the sheet is added or moved to the end of the sheet list.
@@ -27,25 +25,25 @@ trait SheetProperties extends StObject {
     * S2 the index would have to be set to 2. A sheet index update request is ignored if the requested index is identical to the sheets current index or if the requested new index is
     * equal to the current sheet index + 1.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** True if the sheet is an RTL sheet instead of an LTR sheet. */
-  var rightToLeft: js.UndefOr[Boolean] = js.native
+  var rightToLeft: js.UndefOr[Boolean] = js.undefined
   
   /** The ID of the sheet. Must be non-negative. This field cannot be changed once set. */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
   
   /** The type of sheet. Defaults to GRID. This field cannot be changed once set. */
-  var sheetType: js.UndefOr[String] = js.native
+  var sheetType: js.UndefOr[String] = js.undefined
   
   /** The color of the tab in the UI. */
-  var tabColor: js.UndefOr[Color] = js.native
+  var tabColor: js.UndefOr[Color] = js.undefined
   
   /** The color of the tab in the UI. If tab_color is also set, this field takes precedence. */
-  var tabColorStyle: js.UndefOr[ColorStyle] = js.native
+  var tabColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The name of the sheet. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SheetProperties {
   

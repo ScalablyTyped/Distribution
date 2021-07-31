@@ -2,18 +2,16 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Can be used as the query parameter in queryAttachments and queryDocuments. */
-@js.native
 trait IParameterizedQuery extends StObject {
   
   /** Parameters */
-  var parameters: js.Array[IQueryParam] = js.native
+  var parameters: js.Array[IQueryParam]
   
   /** SQL query string. */
-  var query: String = js.native
+  var query: String
 }
 object IParameterizedQuery {
   

@@ -3,34 +3,32 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Control extends StObject {
   
-  var defaultAnchor: ControlAnchor = js.native
+  var defaultAnchor: ControlAnchor
   
-  var defaultOffset: Size = js.native
+  var defaultOffset: Size
   
-  def getAnchor(): ControlAnchor = js.native
+  def getAnchor(): ControlAnchor
   
   /** 自定义Control在add之后立马能读取到Container, 内置Control不能 */
-  def getContainer(): js.UndefOr[HTMLElement] = js.native
+  def getContainer(): js.UndefOr[HTMLElement]
   
-  def getOffset(): Size = js.native
+  def getOffset(): Size
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def initialize(map: Map): HTMLElement = js.native
+  def initialize(map: Map): HTMLElement
   
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
-  def setAnchor(anchor: ControlAnchor): Unit = js.native
+  def setAnchor(anchor: ControlAnchor): Unit
   
-  def setOffset(offset: Size): Unit = js.native
+  def setOffset(offset: Size): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Control {
   

@@ -3,55 +3,53 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineRecord extends StObject {
   
-  var changeId: Double = js.native
+  var changeId: Double
   
-  var currentOperation: String = js.native
+  var currentOperation: String
   
-  var details: TimelineReference = js.native
+  var details: TimelineReference
   
-  var errorCount: Double = js.native
+  var errorCount: Double
   
-  var finishTime: Date = js.native
+  var finishTime: Date
   
-  var id: String = js.native
+  var id: String
   
-  var issues: js.Array[Issue] = js.native
+  var issues: js.Array[Issue]
   
-  var lastModified: Date = js.native
+  var lastModified: Date
   
-  var location: String = js.native
+  var location: String
   
-  var log: TaskLogReference = js.native
+  var log: TaskLogReference
   
-  var name: String = js.native
+  var name: String
   
-  var order: Double = js.native
+  var order: Double
   
-  var parentId: String = js.native
+  var parentId: String
   
-  var percentComplete: Double = js.native
+  var percentComplete: Double
   
-  var result: TaskResult = js.native
+  var result: TaskResult
   
-  var resultCode: String = js.native
+  var resultCode: String
   
-  var startTime: Date = js.native
+  var startTime: Date
   
-  var state: TimelineRecordState = js.native
+  var state: TimelineRecordState
   
-  var task: TaskReference = js.native
+  var task: TaskReference
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var warningCount: Double = js.native
+  var warningCount: Double
   
-  var workerName: String = js.native
+  var workerName: String
 }
 object TimelineRecord {
   

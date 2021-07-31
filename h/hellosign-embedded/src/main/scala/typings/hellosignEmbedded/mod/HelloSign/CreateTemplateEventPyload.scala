@@ -3,15 +3,13 @@ package typings.hellosignEmbedded.mod.HelloSign
 import typings.hellosignEmbedded.anon.CcRoles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTemplateEventPyload extends StObject {
   
-  var templateId: String = js.native
+  var templateId: String
   
-  var templateInfo: CcRoles = js.native
+  var templateInfo: CcRoles
 }
 object CreateTemplateEventPyload {
   

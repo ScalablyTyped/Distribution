@@ -5,7 +5,6 @@ import typings.extjs.Ext.IClass
 import typings.extjs.Ext.state.IProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object state {
@@ -13,7 +12,8 @@ object state {
   @JSGlobal("Ext.state.Manager")
   @js.native
   class Manager ()
-    extends typings.extjs.Ext.state.Manager
+    extends StObject
+       with typings.extjs.Ext.state.Manager
   /* static members */
   object Manager {
     
@@ -25,91 +25,74 @@ object state {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    @JSGlobal("Ext.state.Manager.callOverridden")
-    @js.native
-    def callOverridden(): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.callOverridden")
-    @js.native
-    def callOverridden(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+    @scala.inline
+    def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    @JSGlobal("Ext.state.Manager.callParent")
-    @js.native
-    def callParent(): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.callParent")
-    @js.native
-    def callParent(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+    @scala.inline
+    def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    @JSGlobal("Ext.state.Manager.callSuper")
-    @js.native
-    def callSuper(): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.callSuper")
-    @js.native
-    def callSuper(args: js.Any): js.Any = js.native
+    @scala.inline
+    def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+    @scala.inline
+    def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Clears a value from the state
       * @param name String The key name
       */
-    @JSGlobal("Ext.state.Manager.clear")
-    @js.native
-    def clear(): Unit = js.native
-    @JSGlobal("Ext.state.Manager.clear")
-    @js.native
-    def clear(name: java.lang.String): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    @scala.inline
+    def clear(name: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Returns the current value for a key
       * @param name String The key name
       * @param defaultValue Object The default value to return if the key lookup does not match
       * @returns Object The state data
       */
-    @JSGlobal("Ext.state.Manager.get")
-    @js.native
-    def get(): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.get")
-    @js.native
-    def get(name: js.UndefOr[scala.Nothing], defaultValue: js.Any): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.get")
-    @js.native
-    def get(name: java.lang.String): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.get")
-    @js.native
-    def get(name: java.lang.String, defaultValue: js.Any): js.Any = js.native
+    @scala.inline
+    def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
+    @scala.inline
+    def get(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get(name: java.lang.String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get(name: Unit, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    @JSGlobal("Ext.state.Manager.getInitialConfig")
-    @js.native
-    def getInitialConfig(): js.Any = js.native
-    @JSGlobal("Ext.state.Manager.getInitialConfig")
-    @js.native
-    def getInitialConfig(name: java.lang.String): js.Any = js.native
+    @scala.inline
+    def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+    @scala.inline
+    def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** [Method] Gets the currently configured state provider
       * @returns Ext.state.Provider The state provider
       */
-    @JSGlobal("Ext.state.Manager.getProvider")
-    @js.native
-    def getProvider(): IProvider = js.native
+    @scala.inline
+    def getProvider(): IProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvider")().asInstanceOf[IProvider]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
-    @JSGlobal("Ext.state.Manager.initConfig")
-    @js.native
-    def initConfig(): IBase = js.native
-    @JSGlobal("Ext.state.Manager.initConfig")
-    @js.native
-    def initConfig(config: js.Any): IBase = js.native
+    @scala.inline
+    def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+    @scala.inline
+    def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.state.Manager.self")
@@ -122,34 +105,27 @@ object state {
       * @param name String The key name
       * @param value Object The state data
       */
-    @JSGlobal("Ext.state.Manager.set")
-    @js.native
-    def set(): Unit = js.native
-    @JSGlobal("Ext.state.Manager.set")
-    @js.native
-    def set(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-    @JSGlobal("Ext.state.Manager.set")
-    @js.native
-    def set(name: java.lang.String): Unit = js.native
-    @JSGlobal("Ext.state.Manager.set")
-    @js.native
-    def set(name: java.lang.String, value: js.Any): Unit = js.native
+    @scala.inline
+    def set(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[Unit]
+    @scala.inline
+    def set(name: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def set(name: java.lang.String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def set(name: Unit, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Method] Configures the default state provider for your application
       * @param stateProvider Ext.state.Provider The state provider to set
       */
-    @JSGlobal("Ext.state.Manager.setProvider")
-    @js.native
-    def setProvider(): Unit = js.native
-    @JSGlobal("Ext.state.Manager.setProvider")
-    @js.native
-    def setProvider(stateProvider: IProvider): Unit = js.native
+    @scala.inline
+    def setProvider(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProvider")().asInstanceOf[Unit]
+    @scala.inline
+    def setProvider(stateProvider: IProvider): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProvider")(stateProvider.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
-    @JSGlobal("Ext.state.Manager.statics")
-    @js.native
-    def statics(): IClass = js.native
+    @scala.inline
+    def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
   }
 }

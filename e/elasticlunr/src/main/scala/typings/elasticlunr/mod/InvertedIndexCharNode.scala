@@ -2,63 +2,61 @@ package typings.elasticlunr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvertedIndexCharNode extends StObject {
   
-  var a: js.UndefOr[InvertedIndexNode] = js.native
+  var a: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var b: js.UndefOr[InvertedIndexNode] = js.native
+  var b: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var c: js.UndefOr[InvertedIndexNode] = js.native
+  var c: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var d: js.UndefOr[InvertedIndexNode] = js.native
+  var d: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var e: js.UndefOr[InvertedIndexNode] = js.native
+  var e: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var f: js.UndefOr[InvertedIndexNode] = js.native
+  var f: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var g: js.UndefOr[InvertedIndexNode] = js.native
+  var g: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var h: js.UndefOr[InvertedIndexNode] = js.native
+  var h: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var i: js.UndefOr[InvertedIndexNode] = js.native
+  var i: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var j: js.UndefOr[InvertedIndexNode] = js.native
+  var j: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var k: js.UndefOr[InvertedIndexNode] = js.native
+  var k: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var l: js.UndefOr[InvertedIndexNode] = js.native
+  var l: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var m: js.UndefOr[InvertedIndexNode] = js.native
+  var m: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var n: js.UndefOr[InvertedIndexNode] = js.native
+  var n: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var o: js.UndefOr[InvertedIndexNode] = js.native
+  var o: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var p: js.UndefOr[InvertedIndexNode] = js.native
+  var p: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var q: js.UndefOr[InvertedIndexNode] = js.native
+  var q: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var r: js.UndefOr[InvertedIndexNode] = js.native
+  var r: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var s: js.UndefOr[InvertedIndexNode] = js.native
+  var s: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var t: js.UndefOr[InvertedIndexNode] = js.native
+  var t: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var u: js.UndefOr[InvertedIndexNode] = js.native
+  var u: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var v: js.UndefOr[InvertedIndexNode] = js.native
+  var v: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var w: js.UndefOr[InvertedIndexNode] = js.native
+  var w: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var x: js.UndefOr[InvertedIndexNode] = js.native
+  var x: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var y: js.UndefOr[InvertedIndexNode] = js.native
+  var y: js.UndefOr[InvertedIndexNode] = js.undefined
   
-  var z: js.UndefOr[InvertedIndexNode] = js.native
+  var z: js.UndefOr[InvertedIndexNode] = js.undefined
 }
 object InvertedIndexCharNode {
   

@@ -3,13 +3,11 @@ package typings.grommet.anon
 import typings.grommet.dataChartMod.GranularityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var granularity: js.UndefOr[GranularityType] = js.native
+  var granularity: js.UndefOr[GranularityType] = js.undefined
 }
 object `0` {
   

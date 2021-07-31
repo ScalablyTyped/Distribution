@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParametersByPathResult extends StObject {
   
   /**
     * The token for the next set of items to return. Use this token to get the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * A list of parameters found in the specified hierarchy.
     */
-  var Parameters: js.UndefOr[ParameterList] = js.native
+  var Parameters: js.UndefOr[ParameterList] = js.undefined
 }
 object GetParametersByPathResult {
   

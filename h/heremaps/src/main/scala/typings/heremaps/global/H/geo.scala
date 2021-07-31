@@ -8,7 +8,6 @@ import typings.heremaps.H.geo.Latitude
 import typings.heremaps.H.geo.Longitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** geo *****/
@@ -20,7 +19,25 @@ object geo {
   @JSGlobal("H.geo.AbstractGeometry")
   @js.native
   class AbstractGeometry ()
-    extends typings.heremaps.H.geo.AbstractGeometry
+    extends StObject
+       with typings.heremaps.H.geo.AbstractGeometry {
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+  }
   
   /**
     * Contexts for altitudes to specify the contextual origin of an altitude's value
@@ -30,21 +47,21 @@ object geo {
   object AltitudeContext extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.geo.AltitudeContext with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.geo.AltitudeContext & Double] = js.native
     
-    /* 1 */ val GL: typings.heremaps.H.geo.AltitudeContext.GL with Double = js.native
+    /* 1 */ val GL: typings.heremaps.H.geo.AltitudeContext.GL & Double = js.native
     
-    /* 2 */ val OL: typings.heremaps.H.geo.AltitudeContext.OL with Double = js.native
+    /* 2 */ val OL: typings.heremaps.H.geo.AltitudeContext.OL & Double = js.native
     
-    /* 4 */ val SB: typings.heremaps.H.geo.AltitudeContext.SB with Double = js.native
+    /* 4 */ val SB: typings.heremaps.H.geo.AltitudeContext.SB & Double = js.native
     
-    /* 3 */ val SL: typings.heremaps.H.geo.AltitudeContext.SL with Double = js.native
+    /* 3 */ val SL: typings.heremaps.H.geo.AltitudeContext.SL & Double = js.native
     
-    /* 5 */ val WE: typings.heremaps.H.geo.AltitudeContext.WE with Double = js.native
+    /* 5 */ val WE: typings.heremaps.H.geo.AltitudeContext.WE & Double = js.native
     
-    /* 6 */ val WG: typings.heremaps.H.geo.AltitudeContext.WG with Double = js.native
+    /* 6 */ val WG: typings.heremaps.H.geo.AltitudeContext.WG & Double = js.native
     
-    /* 0 */ val undefined: typings.heremaps.H.geo.AltitudeContext.undefined with Double = js.native
+    /* 0 */ val undefined: typings.heremaps.H.geo.AltitudeContext.undefined & Double = js.native
   }
   
   @JSGlobal("H.geo.LineString")
@@ -56,12 +73,33 @@ object geo {
     * @throws {H.lang.InvalidArgumentError} - in case of invalid lat, lng, alt values
     */
   class LineString ()
-    extends typings.heremaps.H.geo.LineString {
+    extends StObject
+       with typings.heremaps.H.geo.LineString {
     def this(opt_latLngAlts: js.Array[Double]) = this()
-    def this(opt_latLngAlts: js.UndefOr[scala.Nothing], opt_ctx: AltitudeContext) = this()
     def this(opt_latLngAlts: js.Array[Double], opt_ctx: AltitudeContext) = this()
+    def this(opt_latLngAlts: Unit, opt_ctx: AltitudeContext) = this()
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
   }
   object LineString {
+    
+    @JSGlobal("H.geo.LineString")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This method initializes a new LineString with an array of lat, lng values. Arrays are expected to have an even length with the format [lat, lng, lat, lng, ...].
@@ -70,9 +108,8 @@ object geo {
       * @throws {H.lang.InvalidArgumentError} - throws an error in case the latLngs array has an odd length
       */
     /* static member */
-    @JSGlobal("H.geo.LineString.fromLatLngArray")
-    @js.native
-    def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = js.native
+    @scala.inline
+    def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLngArray")(latLngs.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.LineString]
     
     /**
       * To obtain whether a leg (formed by the given two longitudes) crosses the International Date Line.
@@ -81,44 +118,113 @@ object geo {
       * @return {boolean}
       */
     /* static member */
-    @JSGlobal("H.geo.LineString.isDBC")
-    @js.native
-    def isDBC(lng1: Longitude, lng2: Longitude): Boolean = js.native
+    @scala.inline
+    def isDBC(lng1: Longitude, lng2: Longitude): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDBC")(lng1.asInstanceOf[js.Any], lng2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSGlobal("H.geo.MultiGeometry")
   @js.native
   class MultiGeometry[T] protected ()
-    extends typings.heremaps.H.geo.MultiGeometry[T] {
+    extends StObject
+       with typings.heremaps.H.geo.MultiGeometry[T] {
     /**
       * The base class for a geometry that is a container for multiple geometries of a generic type. The type of the contained geometries is specified by the generic type parameter T
       * @param geometries {T[]} - The list of geometries which are initially aggregated.
       * @throws {H.lang.InvalidArgumentError} - if geometries parameter is not valid
       */
     def this(geometries: js.Array[T]) = this()
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
   }
   
   @JSGlobal("H.geo.MultiLineString")
   @js.native
   class MultiLineString protected ()
-    extends typings.heremaps.H.geo.MultiLineString {
+    extends StObject
+       with typings.heremaps.H.geo.MultiLineString {
     /**
       * A MultiLineString is a collection of line strings represented as a H.geo.MultiGeometry with a H.geo.LineString as generic type parameter T.
       * @param lineStrings {H.geo.LineString[]} - The list of line-strings which are initially represented by the MultiLineString.
       * @throws {H.lang.InvalidArgumentError} - if the lineStrings argument is not valid
       */
     def this(lineStrings: js.Array[typings.heremaps.H.geo.LineString]) = this()
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
   }
   
   @JSGlobal("H.geo.MultiPoint")
   @js.native
   class MultiPoint ()
-    extends typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Point]
+    extends StObject
+       with typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Point] {
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+  }
   
   @JSGlobal("H.geo.MultiPolygon")
   @js.native
   class MultiPolygon ()
-    extends typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Polygon]
+    extends StObject
+       with typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Polygon] {
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+  }
   
   /**
     * PixelProjection transforms pixel world coordinates at a certain scale (zoom level) to geographical coordinates and vice versa.
@@ -137,9 +243,10 @@ object geo {
     * @param opt_sizeAtLevelZero {number=} A value indicating the size of a tile representation of the world in pixels at zoom level 0, the default is 256
     */
   class PixelProjection ()
-    extends typings.heremaps.H.geo.PixelProjection {
+    extends StObject
+       with typings.heremaps.H.geo.PixelProjection {
     def this(opt_projection: IProjection) = this()
-    def this(opt_projection: js.UndefOr[scala.Nothing], opt_sizeAtLevelZero: Double) = this()
+    def this(opt_projection: Unit, opt_sizeAtLevelZero: Double) = this()
     def this(opt_projection: IProjection, opt_sizeAtLevelZero: Double) = this()
   }
   
@@ -153,7 +260,8 @@ object geo {
   @JSGlobal("H.geo.Point")
   @js.native
   class Point protected ()
-    extends typings.heremaps.H.geo.Point {
+    extends StObject
+       with typings.heremaps.H.geo.Point {
     /**
       * Constructor
       * @property lat {H.geo.Latitude} - The latitude coordinate.
@@ -163,10 +271,36 @@ object geo {
       */
     def this(lat: Latitude, lng: Longitude) = this()
     def this(lat: Latitude, lng: Longitude, opt_alt: Altitude) = this()
-    def this(lat: Latitude, lng: Longitude, opt_alt: js.UndefOr[scala.Nothing], opt_ctx: AltitudeContext) = this()
+    def this(lat: Latitude, lng: Longitude, opt_alt: Unit, opt_ctx: AltitudeContext) = this()
     def this(lat: Latitude, lng: Longitude, opt_alt: Altitude, opt_ctx: AltitudeContext) = this()
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
+    
+    /* CompleteClass */
+    var lat: Latitude = js.native
+    
+    /* CompleteClass */
+    var lng: Longitude = js.native
   }
   object Point {
+    
+    @JSGlobal("H.geo.Point")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This method creates a Point instance from a given IPoint object.
@@ -174,9 +308,8 @@ object geo {
       * @returns {H.geo.Point} - the created Point instance
       */
     /* static member */
-    @JSGlobal("H.geo.Point.fromIPoint")
-    @js.native
-    def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = js.native
+    @scala.inline
+    def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIPoint")(iPoint.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Point]
     
     /**
       * This method validates the given IPoint. It checks, if lat, lng, alt and ctx have valid types. Additionally the value of the lat property is clamped into a range of -90 ... +90
@@ -187,18 +320,14 @@ object geo {
       * @returns {boolean} - if the given point could validate
       */
     /* static member */
-    @JSGlobal("H.geo.Point.validate")
-    @js.native
-    def validate(point: IPoint): Boolean = js.native
-    @JSGlobal("H.geo.Point.validate")
-    @js.native
-    def validate(point: IPoint, opt_caller: js.UndefOr[scala.Nothing], opt_argNr: Double): Boolean = js.native
-    @JSGlobal("H.geo.Point.validate")
-    @js.native
-    def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = js.native
-    @JSGlobal("H.geo.Point.validate")
-    @js.native
-    def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = js.native
+    @scala.inline
+    def validate(point: IPoint): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any], opt_argNr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def validate(point: IPoint, opt_caller: Unit, opt_argNr: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any], opt_argNr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -207,12 +336,29 @@ object geo {
   @JSGlobal("H.geo.Polygon")
   @js.native
   class Polygon protected ()
-    extends typings.heremaps.H.geo.Polygon {
+    extends StObject
+       with typings.heremaps.H.geo.Polygon {
     def this(exterior: typings.heremaps.H.geo.LineString) = this()
     def this(
       exterior: typings.heremaps.H.geo.LineString,
       opt_interiors: js.Array[typings.heremaps.H.geo.LineString]
     ) = this()
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
   }
   
   /**
@@ -221,7 +367,8 @@ object geo {
   @JSGlobal("H.geo.Rect")
   @js.native
   class Rect protected ()
-    extends typings.heremaps.H.geo.Rect {
+    extends StObject
+       with typings.heremaps.H.geo.Rect {
     /**
       * Constructor
       * @param top {H.geo.Latitude} - the northern-most latitude
@@ -230,8 +377,28 @@ object geo {
       * @param right {H.geo.Longitude} - the right-most latitude
       */
     def this(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude) = this()
+    
+    /**
+      * Checks whether the geometry is equal to the geometry supplied by the caller.
+      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
+      * @param other {any} - The geometry to check against
+      * @return {boolean} - true if the two geometries are equal, otherwise false
+      */
+    /* CompleteClass */
+    override def equals(other: js.Any): Boolean = js.native
+    
+    /**
+      * Returns the bounding rectangle of the geometry.
+      * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+      */
+    /* CompleteClass */
+    override def getBoundingBox(): typings.heremaps.H.geo.Rect = js.native
   }
   object Rect {
+    
+    @JSGlobal("H.geo.Rect")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This method creates the minimum rectangular area covering all of the coordinates in the argument array.
@@ -240,12 +407,10 @@ object geo {
       * @returns {(H.geo.Rect | undefined)} - returns the minimum rectangular area covering the coordinates
       */
     /* static member */
-    @JSGlobal("H.geo.Rect.coverLatLngAlts")
-    @js.native
-    def coverLatLngAlts(latLngAltArray: js.Array[Double]): typings.heremaps.H.geo.Rect | Unit = js.native
-    @JSGlobal("H.geo.Rect.coverLatLngAlts")
-    @js.native
-    def coverLatLngAlts(latLngAltArray: js.Array[Double], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = js.native
+    @scala.inline
+    def coverLatLngAlts(latLngAltArray: js.Array[Double]): typings.heremaps.H.geo.Rect | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("coverLatLngAlts")(latLngAltArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
+    @scala.inline
+    def coverLatLngAlts(latLngAltArray: js.Array[Double], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coverLatLngAlts")(latLngAltArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
     
     /**
       * This method creates the minimum rectangular area covering all of the points in the argument array.
@@ -254,12 +419,10 @@ object geo {
       * @returns {H.geo.Rect} - returns the minimum rectangular area covering the points or null if no point is covered
       */
     /* static member */
-    @JSGlobal("H.geo.Rect.coverPoints")
-    @js.native
-    def coverPoints(pointArray: js.Array[IPoint]): typings.heremaps.H.geo.Rect = js.native
-    @JSGlobal("H.geo.Rect.coverPoints")
-    @js.native
-    def coverPoints(pointArray: js.Array[IPoint], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = js.native
+    @scala.inline
+    def coverPoints(pointArray: js.Array[IPoint]): typings.heremaps.H.geo.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("coverPoints")(pointArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect]
+    @scala.inline
+    def coverPoints(pointArray: js.Array[IPoint], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("coverPoints")(pointArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
     
     /**
       * This method creates the minimum rectangular area covering all of the rectangular areas in the argument array.
@@ -268,12 +431,10 @@ object geo {
       * @returns {(H.geo.Rect | undefined)} - returns the minimum rectangular area covering the rectangular areas
       */
     /* static member */
-    @JSGlobal("H.geo.Rect.coverRects")
-    @js.native
-    def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect]): typings.heremaps.H.geo.Rect | Unit = js.native
-    @JSGlobal("H.geo.Rect.coverRects")
-    @js.native
-    def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = js.native
+    @scala.inline
+    def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect]): typings.heremaps.H.geo.Rect | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("coverRects")(rectArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
+    @scala.inline
+    def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coverRects")(rectArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
     
     /**
       * This method creates a rectangular area from a top-left and bottom-right point pair.
@@ -283,12 +444,10 @@ object geo {
       * @returns {H.geo.Rect} - returns the rectangular area defined by the top-left and bottom-right corners
       */
     /* static member */
-    @JSGlobal("H.geo.Rect.fromPoints")
-    @js.native
-    def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.geo.Rect = js.native
-    @JSGlobal("H.geo.Rect.fromPoints")
-    @js.native
-    def fromPoints(topLeft: IPoint, bottomRight: IPoint, opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = js.native
+    @scala.inline
+    def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
+    @scala.inline
+    def fromPoints(topLeft: IPoint, bottomRight: IPoint, opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
     
     /**
       * This method merges two rects by their values. The result of the merge is a bounding rect which covers all provided rect bounds.
@@ -304,8 +463,7 @@ object geo {
       * @returns {H.geo.Rect} - either the opt_out rect or a new rect
       */
     /* static member */
-    @JSGlobal("H.geo.Rect.merge")
-    @js.native
+    @scala.inline
     def merge(
       topA: Latitude,
       leftA: Longitude,
@@ -315,9 +473,8 @@ object geo {
       leftB: Longitude,
       bottomB: Latitude,
       rightB: Longitude
-    ): typings.heremaps.H.geo.Rect = js.native
-    @JSGlobal("H.geo.Rect.merge")
-    @js.native
+    ): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(topA.asInstanceOf[js.Any], leftA.asInstanceOf[js.Any], bottomA.asInstanceOf[js.Any], rightA.asInstanceOf[js.Any], topB.asInstanceOf[js.Any], leftB.asInstanceOf[js.Any], bottomB.asInstanceOf[js.Any], rightB.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
+    @scala.inline
     def merge(
       topA: Latitude,
       leftA: Longitude,
@@ -328,6 +485,6 @@ object geo {
       bottomB: Latitude,
       rightB: Longitude,
       opt_out: typings.heremaps.H.geo.Rect
-    ): typings.heremaps.H.geo.Rect = js.native
+    ): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(topA.asInstanceOf[js.Any], leftA.asInstanceOf[js.Any], bottomA.asInstanceOf[js.Any], rightA.asInstanceOf[js.Any], topB.asInstanceOf[js.Any], leftB.asInstanceOf[js.Any], bottomB.asInstanceOf[js.Any], rightB.asInstanceOf[js.Any], opt_out.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
   }
 }

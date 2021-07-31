@@ -4,26 +4,24 @@ import typings.lodashDecorators.commonMod.LodashDecorator
 import typings.lodashDecorators.commonMod.ResolvableFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flipMod {
   
-  @JSImport("lodash-decorators/flip", JSImport.Default)
+  @JSImport("lodash-decorators/flip", JSImport.Namespace)
   @js.native
-  def default(args: js.Any*): LodashDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators/flip", "Flip")
-  @js.native
-  def Flip_(): LodashDecorator = js.native
-  @JSImport("lodash-decorators/flip", "Flip")
-  @js.native
-  def Flip_(fn: ResolvableFunction): LodashDecorator = js.native
+  @scala.inline
+  def default(args: js.Any*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators/flip", "flip")
-  @js.native
-  def flip(): LodashDecorator = js.native
-  @JSImport("lodash-decorators/flip", "flip")
-  @js.native
-  def flip(fn: ResolvableFunction): LodashDecorator = js.native
+  @scala.inline
+  def Flip_(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")().asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Flip_(fn: ResolvableFunction): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")(fn.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
+  
+  @scala.inline
+  def flip(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")().asInstanceOf[LodashDecorator]
+  @scala.inline
+  def flip(fn: ResolvableFunction): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(fn.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
 }

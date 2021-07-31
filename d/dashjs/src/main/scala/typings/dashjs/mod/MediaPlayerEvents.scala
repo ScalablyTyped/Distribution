@@ -54,174 +54,119 @@ import typings.dashjs.dashjsStrings.ttmlParsed
 import typings.dashjs.dashjsStrings.ttmlToParse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaPlayerEvents extends StObject {
   
-  var AST_IN_FUTURE: astInFuture = js.native
+  var AST_IN_FUTURE: astInFuture
   
-  var BUFFER_EMPTY: bufferStalled = js.native
+  var BUFFER_EMPTY: bufferStalled
   
-  var BUFFER_LEVEL_STATE_CHANGED: bufferStateChanged = js.native
+  var BUFFER_LEVEL_STATE_CHANGED: bufferStateChanged
   
-  var BUFFER_LOADED: bufferLoaded = js.native
+  var BUFFER_LOADED: bufferLoaded
   
-  var CAN_PLAY: canPlay = js.native
+  var CAN_PLAY: canPlay
   
-  var CAPTION_CONTAINER_RESIZE: captionContainerResize = js.native
+  var CAPTION_CONTAINER_RESIZE: captionContainerResize
   
-  var CAPTION_RENDERED: captionRendered = js.native
+  var CAPTION_RENDERED: captionRendered
   
-  var ERROR: error = js.native
+  var ERROR: error
   
-  var FRAGMENT_LOADING_ABANDONED: fragmentLoadingAbandoned = js.native
+  var FRAGMENT_LOADING_ABANDONED: fragmentLoadingAbandoned
   
-  var FRAGMENT_LOADING_COMPLETED: fragmentLoadingCompleted = js.native
+  var FRAGMENT_LOADING_COMPLETED: fragmentLoadingCompleted
   
-  var FRAGMENT_LOADING_STARTED: fragmentLoadingStarted = js.native
+  var FRAGMENT_LOADING_STARTED: fragmentLoadingStarted
   
-  var KEY_ADDED: public_keyAdded = js.native
+  var KEY_ADDED: public_keyAdded
   
-  var KEY_ERROR: public_keyError = js.native
+  var KEY_ERROR: public_keyError
   
-  var KEY_MESSAGE: public_keyMessage = js.native
+  var KEY_MESSAGE: public_keyMessage
   
-  var KEY_SESSION_CLOSED: public_keySessionClosed = js.native
+  var KEY_SESSION_CLOSED: public_keySessionClosed
   
-  var KEY_SESSION_CREATED: public_keySessionCreated = js.native
+  var KEY_SESSION_CREATED: public_keySessionCreated
   
-  var KEY_SESSION_REMOVED: public_keySessionRemoved = js.native
+  var KEY_SESSION_REMOVED: public_keySessionRemoved
   
-  var KEY_STATUSES_CHANGED: public_keyStatusesChanged = js.native
+  var KEY_STATUSES_CHANGED: public_keyStatusesChanged
   
-  var KEY_SYSTEM_SELECTED: public_keySystemSelected = js.native
+  var KEY_SYSTEM_SELECTED: public_keySystemSelected
   
-  var LICENSE_REQUEST_COMPLETE: public_licenseRequestComplete = js.native
+  var LICENSE_REQUEST_COMPLETE: public_licenseRequestComplete
   
-  var LOG: log = js.native
+  var LOG: log
   
-  var MANIFEST_LOADED: manifestLoaded = js.native
+  var MANIFEST_LOADED: manifestLoaded
   
-  var METRICS_CHANGED: metricsChanged = js.native
+  var METRICS_CHANGED: metricsChanged
   
-  var METRIC_ADDED: metricAdded = js.native
+  var METRIC_ADDED: metricAdded
   
-  var METRIC_CHANGED: metricChanged = js.native
+  var METRIC_CHANGED: metricChanged
   
-  var METRIC_UPDATED: metricUpdated = js.native
+  var METRIC_UPDATED: metricUpdated
   
-  var PERIOD_SWITCH_COMPLETED: periodSwitchCompleted = js.native
+  var PERIOD_SWITCH_COMPLETED: periodSwitchCompleted
   
-  var PERIOD_SWITCH_STARTED: periodSwitchStarted = js.native
+  var PERIOD_SWITCH_STARTED: periodSwitchStarted
   
-  var PLAYBACK_ENDED: playbackEnded = js.native
+  var PLAYBACK_ENDED: playbackEnded
   
-  var PLAYBACK_ERROR: playbackError = js.native
+  var PLAYBACK_ERROR: playbackError
   
-  var PLAYBACK_METADATA_LOADED: playbackMetaDataLoaded = js.native
+  var PLAYBACK_METADATA_LOADED: playbackMetaDataLoaded
   
-  var PLAYBACK_NOT_ALLOWED: playbackNotAllowed = js.native
+  var PLAYBACK_NOT_ALLOWED: playbackNotAllowed
   
-  var PLAYBACK_PAUSED: playbackPaused = js.native
+  var PLAYBACK_PAUSED: playbackPaused
   
-  var PLAYBACK_PLAYING: playbackPlaying = js.native
+  var PLAYBACK_PLAYING: playbackPlaying
   
-  var PLAYBACK_PROGRESS: playbackProgress = js.native
+  var PLAYBACK_PROGRESS: playbackProgress
   
-  var PLAYBACK_RATE_CHANGED: playbackRateChanged = js.native
+  var PLAYBACK_RATE_CHANGED: playbackRateChanged
   
-  var PLAYBACK_SEEKED: playbackSeeked = js.native
+  var PLAYBACK_SEEKED: playbackSeeked
   
-  var PLAYBACK_SEEKING: playbackSeeking = js.native
+  var PLAYBACK_SEEKING: playbackSeeking
   
-  var PLAYBACK_STALLED: playbackStalled = js.native
+  var PLAYBACK_STALLED: playbackStalled
   
-  var PLAYBACK_STARTED: playbackStarted = js.native
+  var PLAYBACK_STARTED: playbackStarted
   
-  var PLAYBACK_TIME_UPDATED: playbackTimeUpdated = js.native
+  var PLAYBACK_TIME_UPDATED: playbackTimeUpdated
   
-  var PLAYBACK_WAITING: playbackWaiting = js.native
+  var PLAYBACK_WAITING: playbackWaiting
   
-  var PROTECTION_CREATED: public_protectioncreated = js.native
+  var PROTECTION_CREATED: public_protectioncreated
   
-  var PROTECTION_DESTROYED: public_protectiondestroyed = js.native
+  var PROTECTION_DESTROYED: public_protectiondestroyed
   
-  var QUALITY_CHANGE_RENDERED: qualityChangeRendered = js.native
+  var QUALITY_CHANGE_RENDERED: qualityChangeRendered
   
-  var QUALITY_CHANGE_REQUESTED: qualityChangeRequested = js.native
+  var QUALITY_CHANGE_REQUESTED: qualityChangeRequested
   
-  var STREAM_INITIALIZED: streamInitialized = js.native
+  var STREAM_INITIALIZED: streamInitialized
   
-  var TEXT_TRACKS_ADDED: allTextTracksAdded = js.native
+  var TEXT_TRACKS_ADDED: allTextTracksAdded
   
-  var TEXT_TRACK_ADDED: textTrackAdded = js.native
+  var TEXT_TRACK_ADDED: textTrackAdded
   
-  var TRACK_CHANGE_RENDERED: trackChangeRendered = js.native
+  var TRACK_CHANGE_RENDERED: trackChangeRendered
   
-  var TTML_PARSED: ttmlParsed = js.native
+  var TTML_PARSED: ttmlParsed
   
-  var TTML_TO_PARSE: ttmlToParse = js.native
+  var TTML_TO_PARSE: ttmlToParse
 }
 object MediaPlayerEvents {
   
   @scala.inline
-  def apply(
-    AST_IN_FUTURE: astInFuture,
-    BUFFER_EMPTY: bufferStalled,
-    BUFFER_LEVEL_STATE_CHANGED: bufferStateChanged,
-    BUFFER_LOADED: bufferLoaded,
-    CAN_PLAY: canPlay,
-    CAPTION_CONTAINER_RESIZE: captionContainerResize,
-    CAPTION_RENDERED: captionRendered,
-    ERROR: error,
-    FRAGMENT_LOADING_ABANDONED: fragmentLoadingAbandoned,
-    FRAGMENT_LOADING_COMPLETED: fragmentLoadingCompleted,
-    FRAGMENT_LOADING_STARTED: fragmentLoadingStarted,
-    KEY_ADDED: public_keyAdded,
-    KEY_ERROR: public_keyError,
-    KEY_MESSAGE: public_keyMessage,
-    KEY_SESSION_CLOSED: public_keySessionClosed,
-    KEY_SESSION_CREATED: public_keySessionCreated,
-    KEY_SESSION_REMOVED: public_keySessionRemoved,
-    KEY_STATUSES_CHANGED: public_keyStatusesChanged,
-    KEY_SYSTEM_SELECTED: public_keySystemSelected,
-    LICENSE_REQUEST_COMPLETE: public_licenseRequestComplete,
-    LOG: log,
-    MANIFEST_LOADED: manifestLoaded,
-    METRICS_CHANGED: metricsChanged,
-    METRIC_ADDED: metricAdded,
-    METRIC_CHANGED: metricChanged,
-    METRIC_UPDATED: metricUpdated,
-    PERIOD_SWITCH_COMPLETED: periodSwitchCompleted,
-    PERIOD_SWITCH_STARTED: periodSwitchStarted,
-    PLAYBACK_ENDED: playbackEnded,
-    PLAYBACK_ERROR: playbackError,
-    PLAYBACK_METADATA_LOADED: playbackMetaDataLoaded,
-    PLAYBACK_NOT_ALLOWED: playbackNotAllowed,
-    PLAYBACK_PAUSED: playbackPaused,
-    PLAYBACK_PLAYING: playbackPlaying,
-    PLAYBACK_PROGRESS: playbackProgress,
-    PLAYBACK_RATE_CHANGED: playbackRateChanged,
-    PLAYBACK_SEEKED: playbackSeeked,
-    PLAYBACK_SEEKING: playbackSeeking,
-    PLAYBACK_STALLED: playbackStalled,
-    PLAYBACK_STARTED: playbackStarted,
-    PLAYBACK_TIME_UPDATED: playbackTimeUpdated,
-    PLAYBACK_WAITING: playbackWaiting,
-    PROTECTION_CREATED: public_protectioncreated,
-    PROTECTION_DESTROYED: public_protectiondestroyed,
-    QUALITY_CHANGE_RENDERED: qualityChangeRendered,
-    QUALITY_CHANGE_REQUESTED: qualityChangeRequested,
-    STREAM_INITIALIZED: streamInitialized,
-    TEXT_TRACKS_ADDED: allTextTracksAdded,
-    TEXT_TRACK_ADDED: textTrackAdded,
-    TRACK_CHANGE_RENDERED: trackChangeRendered,
-    TTML_PARSED: ttmlParsed,
-    TTML_TO_PARSE: ttmlToParse
-  ): MediaPlayerEvents = {
-    val __obj = js.Dynamic.literal(AST_IN_FUTURE = AST_IN_FUTURE.asInstanceOf[js.Any], BUFFER_EMPTY = BUFFER_EMPTY.asInstanceOf[js.Any], BUFFER_LEVEL_STATE_CHANGED = BUFFER_LEVEL_STATE_CHANGED.asInstanceOf[js.Any], BUFFER_LOADED = BUFFER_LOADED.asInstanceOf[js.Any], CAN_PLAY = CAN_PLAY.asInstanceOf[js.Any], CAPTION_CONTAINER_RESIZE = CAPTION_CONTAINER_RESIZE.asInstanceOf[js.Any], CAPTION_RENDERED = CAPTION_RENDERED.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], FRAGMENT_LOADING_ABANDONED = FRAGMENT_LOADING_ABANDONED.asInstanceOf[js.Any], FRAGMENT_LOADING_COMPLETED = FRAGMENT_LOADING_COMPLETED.asInstanceOf[js.Any], FRAGMENT_LOADING_STARTED = FRAGMENT_LOADING_STARTED.asInstanceOf[js.Any], KEY_ADDED = KEY_ADDED.asInstanceOf[js.Any], KEY_ERROR = KEY_ERROR.asInstanceOf[js.Any], KEY_MESSAGE = KEY_MESSAGE.asInstanceOf[js.Any], KEY_SESSION_CLOSED = KEY_SESSION_CLOSED.asInstanceOf[js.Any], KEY_SESSION_CREATED = KEY_SESSION_CREATED.asInstanceOf[js.Any], KEY_SESSION_REMOVED = KEY_SESSION_REMOVED.asInstanceOf[js.Any], KEY_STATUSES_CHANGED = KEY_STATUSES_CHANGED.asInstanceOf[js.Any], KEY_SYSTEM_SELECTED = KEY_SYSTEM_SELECTED.asInstanceOf[js.Any], LICENSE_REQUEST_COMPLETE = LICENSE_REQUEST_COMPLETE.asInstanceOf[js.Any], LOG = LOG.asInstanceOf[js.Any], MANIFEST_LOADED = MANIFEST_LOADED.asInstanceOf[js.Any], METRICS_CHANGED = METRICS_CHANGED.asInstanceOf[js.Any], METRIC_ADDED = METRIC_ADDED.asInstanceOf[js.Any], METRIC_CHANGED = METRIC_CHANGED.asInstanceOf[js.Any], METRIC_UPDATED = METRIC_UPDATED.asInstanceOf[js.Any], PERIOD_SWITCH_COMPLETED = PERIOD_SWITCH_COMPLETED.asInstanceOf[js.Any], PERIOD_SWITCH_STARTED = PERIOD_SWITCH_STARTED.asInstanceOf[js.Any], PLAYBACK_ENDED = PLAYBACK_ENDED.asInstanceOf[js.Any], PLAYBACK_ERROR = PLAYBACK_ERROR.asInstanceOf[js.Any], PLAYBACK_METADATA_LOADED = PLAYBACK_METADATA_LOADED.asInstanceOf[js.Any], PLAYBACK_NOT_ALLOWED = PLAYBACK_NOT_ALLOWED.asInstanceOf[js.Any], PLAYBACK_PAUSED = PLAYBACK_PAUSED.asInstanceOf[js.Any], PLAYBACK_PLAYING = PLAYBACK_PLAYING.asInstanceOf[js.Any], PLAYBACK_PROGRESS = PLAYBACK_PROGRESS.asInstanceOf[js.Any], PLAYBACK_RATE_CHANGED = PLAYBACK_RATE_CHANGED.asInstanceOf[js.Any], PLAYBACK_SEEKED = PLAYBACK_SEEKED.asInstanceOf[js.Any], PLAYBACK_SEEKING = PLAYBACK_SEEKING.asInstanceOf[js.Any], PLAYBACK_STALLED = PLAYBACK_STALLED.asInstanceOf[js.Any], PLAYBACK_STARTED = PLAYBACK_STARTED.asInstanceOf[js.Any], PLAYBACK_TIME_UPDATED = PLAYBACK_TIME_UPDATED.asInstanceOf[js.Any], PLAYBACK_WAITING = PLAYBACK_WAITING.asInstanceOf[js.Any], PROTECTION_CREATED = PROTECTION_CREATED.asInstanceOf[js.Any], PROTECTION_DESTROYED = PROTECTION_DESTROYED.asInstanceOf[js.Any], QUALITY_CHANGE_RENDERED = QUALITY_CHANGE_RENDERED.asInstanceOf[js.Any], QUALITY_CHANGE_REQUESTED = QUALITY_CHANGE_REQUESTED.asInstanceOf[js.Any], STREAM_INITIALIZED = STREAM_INITIALIZED.asInstanceOf[js.Any], TEXT_TRACKS_ADDED = TEXT_TRACKS_ADDED.asInstanceOf[js.Any], TEXT_TRACK_ADDED = TEXT_TRACK_ADDED.asInstanceOf[js.Any], TRACK_CHANGE_RENDERED = TRACK_CHANGE_RENDERED.asInstanceOf[js.Any], TTML_PARSED = TTML_PARSED.asInstanceOf[js.Any], TTML_TO_PARSE = TTML_TO_PARSE.asInstanceOf[js.Any])
+  def apply(): MediaPlayerEvents = {
+    val __obj = js.Dynamic.literal(AST_IN_FUTURE = "astInFuture", BUFFER_EMPTY = "bufferStalled", BUFFER_LEVEL_STATE_CHANGED = "bufferStateChanged", BUFFER_LOADED = "bufferLoaded", CAN_PLAY = "canPlay", CAPTION_CONTAINER_RESIZE = "captionContainerResize", CAPTION_RENDERED = "captionRendered", ERROR = "error", FRAGMENT_LOADING_ABANDONED = "fragmentLoadingAbandoned", FRAGMENT_LOADING_COMPLETED = "fragmentLoadingCompleted", FRAGMENT_LOADING_STARTED = "fragmentLoadingStarted", KEY_ADDED = "public_keyAdded", KEY_ERROR = "public_keyError", KEY_MESSAGE = "public_keyMessage", KEY_SESSION_CLOSED = "public_keySessionClosed", KEY_SESSION_CREATED = "public_keySessionCreated", KEY_SESSION_REMOVED = "public_keySessionRemoved", KEY_STATUSES_CHANGED = "public_keyStatusesChanged", KEY_SYSTEM_SELECTED = "public_keySystemSelected", LICENSE_REQUEST_COMPLETE = "public_licenseRequestComplete", LOG = "log", MANIFEST_LOADED = "manifestLoaded", METRICS_CHANGED = "metricsChanged", METRIC_ADDED = "metricAdded", METRIC_CHANGED = "metricChanged", METRIC_UPDATED = "metricUpdated", PERIOD_SWITCH_COMPLETED = "periodSwitchCompleted", PERIOD_SWITCH_STARTED = "periodSwitchStarted", PLAYBACK_ENDED = "playbackEnded", PLAYBACK_ERROR = "playbackError", PLAYBACK_METADATA_LOADED = "playbackMetaDataLoaded", PLAYBACK_NOT_ALLOWED = "playbackNotAllowed", PLAYBACK_PAUSED = "playbackPaused", PLAYBACK_PLAYING = "playbackPlaying", PLAYBACK_PROGRESS = "playbackProgress", PLAYBACK_RATE_CHANGED = "playbackRateChanged", PLAYBACK_SEEKED = "playbackSeeked", PLAYBACK_SEEKING = "playbackSeeking", PLAYBACK_STALLED = "playbackStalled", PLAYBACK_STARTED = "playbackStarted", PLAYBACK_TIME_UPDATED = "playbackTimeUpdated", PLAYBACK_WAITING = "playbackWaiting", PROTECTION_CREATED = "public_protectioncreated", PROTECTION_DESTROYED = "public_protectiondestroyed", QUALITY_CHANGE_RENDERED = "qualityChangeRendered", QUALITY_CHANGE_REQUESTED = "qualityChangeRequested", STREAM_INITIALIZED = "streamInitialized", TEXT_TRACKS_ADDED = "allTextTracksAdded", TEXT_TRACK_ADDED = "textTrackAdded", TRACK_CHANGE_RENDERED = "trackChangeRendered", TTML_PARSED = "ttmlParsed", TTML_TO_PARSE = "ttmlToParse")
     __obj.asInstanceOf[MediaPlayerEvents]
   }
   

@@ -2,27 +2,25 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nature extends StObject {
   
-  var decreased_stat: String | Null = js.native
+  var decreased_stat: String | Null
   
-  var disliked_flavor: String | Null = js.native
+  var disliked_flavor: String | Null
   
-  var favorite_flavor: String | Null = js.native
+  var favorite_flavor: String | Null
   
-  var increased_stat: String | Null = js.native
+  var increased_stat: String | Null
   
-  var names: Translations = js.native
+  var names: Translations
 }
 object Nature {
   
   @scala.inline
   def apply(names: Translations): Nature = {
-    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], decreased_stat = null, disliked_flavor = null, favorite_flavor = null, increased_stat = null)
     __obj.asInstanceOf[Nature]
   }
   

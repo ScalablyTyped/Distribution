@@ -3,15 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.SharedNotebook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchingShares extends StObject {
   
-  var matchingShares: js.UndefOr[js.Array[SharedNotebook]] = js.native
+  var matchingShares: js.UndefOr[js.Array[SharedNotebook]] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
 }
 object MatchingShares {
   

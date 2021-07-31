@@ -4,14 +4,14 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
-trait AddressBookSourcePilot extends XExecutableDialog {
+trait AddressBookSourcePilot
+  extends StObject
+     with XExecutableDialog {
   
-  def createWithParent(ParentWindow: XWindow): Unit = js.native
+  def createWithParent(ParentWindow: XWindow): Unit
 }
 object AddressBookSourcePilot {
   

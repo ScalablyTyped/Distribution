@@ -2,31 +2,29 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
   /**
     * The Amazon SNS topic that you want to notify when Elastic Transcoder has finished processing the job.
     */
-  var Completed: js.UndefOr[SnsTopic] = js.native
+  var Completed: js.UndefOr[SnsTopic] = js.undefined
   
   /**
     * The Amazon SNS topic that you want to notify when Elastic Transcoder encounters an error condition.
     */
-  var Error: js.UndefOr[SnsTopic] = js.native
+  var Error: js.UndefOr[SnsTopic] = js.undefined
   
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify when Elastic Transcoder has started to process the job.
     */
-  var Progressing: js.UndefOr[SnsTopic] = js.native
+  var Progressing: js.UndefOr[SnsTopic] = js.undefined
   
   /**
     * The Amazon SNS topic that you want to notify when Elastic Transcoder encounters a warning condition.
     */
-  var Warning: js.UndefOr[SnsTopic] = js.native
+  var Warning: js.UndefOr[SnsTopic] = js.undefined
 }
 object Notifications {
   

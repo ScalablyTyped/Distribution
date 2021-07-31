@@ -6,7 +6,6 @@ import typings.wordpressCustomizeBrowser.messengerMod.Messenger
 import typings.wordpressCustomizeBrowser.messengerMod.MessengerParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewFrameMod {
@@ -20,30 +19,34 @@ object previewFrameMod {
     def initialize(params: PreviewFrameParams): Unit = js.native
     def initialize(params: PreviewFrameParams, options: js.Object): Unit = js.native
     
-    def login(deferred: Deferred[_, _, _]): Unit = js.native
+    def login(deferred: Deferred[js.Any, js.Any, js.Any]): Unit = js.native
     
-    def run(deferred: Deferred[_, _, _]): Unit = js.native
+    def run(deferred: Deferred[js.Any, js.Any, js.Any]): Unit = js.native
     
     var sensitivity: Double | Null = js.native
   }
   /* static members */
   object PreviewFrame {
     
-    @JSImport("@wordpress/customize-browser/PreviewFrame", "PreviewFrame.uuid")
+    @JSImport("@wordpress/customize-browser/PreviewFrame", "PreviewFrame")
     @js.native
-    def uuid(): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def uuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[String]
   }
   
-  @js.native
-  trait PreviewFrameParams extends MessengerParams {
+  trait PreviewFrameParams
+    extends StObject
+       with MessengerParams {
     
-    var container: js.Any = js.native
-    
-    // TODO
-    var previewUrl: js.Any = js.native
+    var container: js.Any
     
     // TODO
-    var query: js.Any = js.native
+    var previewUrl: js.Any
+    
+    // TODO
+    var query: js.Any
   }
   object PreviewFrameParams {
     

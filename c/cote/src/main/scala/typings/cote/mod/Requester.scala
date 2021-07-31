@@ -2,7 +2,6 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Requester")
@@ -29,7 +28,7 @@ class Requester protected () extends Component {
     *
     * @param event Request.
     */
-  def send[T /* <: Event */](event: T): js.Promise[_] = js.native
+  def send[T /* <: Event */](event: T): js.Promise[js.Any] = js.native
   /**
     * Queues a request until a Responder is available, and once so, delivers
     * the request. Requests are dispatched to Responders in a round-robin way.

@@ -3,16 +3,15 @@ package typings.meteor.meteorMod.Meteor
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Global props **/
 /** Settings **/
-@js.native
 trait Settings_
-  extends /* id */ StringDictionary[js.Any] {
+  extends StObject
+     with /* id */ StringDictionary[js.Any] {
   
-  var public: StringDictionary[js.Any] = js.native
+  var public: StringDictionary[js.Any]
 }
 object Settings_ {
   

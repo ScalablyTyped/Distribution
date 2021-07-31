@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait Avoid extends StObject
 object Avoid extends StObject {
   
   @js.native
-  sealed trait HIGHWAYS extends Avoid
+  sealed trait HIGHWAYS
+    extends StObject
+       with Avoid
   
   @js.native
-  sealed trait TOLLS extends Avoid
+  sealed trait TOLLS
+    extends StObject
+       with Avoid
 }

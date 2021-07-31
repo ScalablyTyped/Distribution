@@ -6,15 +6,13 @@ import typings.devextreme.devextremeStrings.disabled
 import typings.devextreme.devextremeStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tabs extends StObject {
   
-  var tabs: js.UndefOr[js.Array[Groups]] = js.native
+  var tabs: js.UndefOr[js.Array[Groups]] = js.undefined
   
-  var visibility: js.UndefOr[auto | visible | collapsed | disabled] = js.native
+  var visibility: js.UndefOr[auto | visible | collapsed | disabled] = js.undefined
 }
 object Tabs {
   

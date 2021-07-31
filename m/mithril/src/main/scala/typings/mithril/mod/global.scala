@@ -2,7 +2,6 @@ package typings.mithril.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -18,361 +17,360 @@ object global {
     // tslint:disable-next-line:no-empty-interface
     type IntrinsicClassAttributes = Attributes
     
-    @js.native
     trait IntrinsicElements extends StObject {
       
       // Special Mithril types
-      var `[`: Attributes = js.native
+      var `[`: Attributes
       
       // HTML
-      var a: Attributes = js.native
+      var a: Attributes
       
-      var abbr: Attributes = js.native
+      var abbr: Attributes
       
-      var address: Attributes = js.native
+      var address: Attributes
       
-      var animate: Attributes = js.native
+      var animate: Attributes
       
-      var animateMotion: Attributes = js.native
+      var animateMotion: Attributes
       
-      var animateTransform: Attributes = js.native
+      var animateTransform: Attributes
       
-      var area: Attributes = js.native
+      var area: Attributes
       
-      var article: Attributes = js.native
+      var article: Attributes
       
-      var aside: Attributes = js.native
+      var aside: Attributes
       
-      var audio: Attributes = js.native
+      var audio: Attributes
       
-      var b: Attributes = js.native
+      var b: Attributes
       
-      var base: Attributes = js.native
+      var base: Attributes
       
-      var bdi: Attributes = js.native
+      var bdi: Attributes
       
-      var bdo: Attributes = js.native
+      var bdo: Attributes
       
-      var big: Attributes = js.native
+      var big: Attributes
       
-      var blockquote: Attributes = js.native
+      var blockquote: Attributes
       
-      var body: Attributes = js.native
+      var body: Attributes
       
-      var br: Attributes = js.native
+      var br: Attributes
       
-      var button: Attributes = js.native
+      var button: Attributes
       
-      var canvas: Attributes = js.native
+      var canvas: Attributes
       
-      var caption: Attributes = js.native
+      var caption: Attributes
       
-      var circle: Attributes = js.native
+      var circle: Attributes
       
-      var cite: Attributes = js.native
+      var cite: Attributes
       
-      var clipPath: Attributes = js.native
+      var clipPath: Attributes
       
-      var code: Attributes = js.native
+      var code: Attributes
       
-      var col: Attributes = js.native
+      var col: Attributes
       
-      var colgroup: Attributes = js.native
+      var colgroup: Attributes
       
-      var data: Attributes = js.native
+      var data: Attributes
       
-      var datalist: Attributes = js.native
+      var datalist: Attributes
       
-      var dd: Attributes = js.native
+      var dd: Attributes
       
-      var defs: Attributes = js.native
+      var defs: Attributes
       
-      var del: Attributes = js.native
+      var del: Attributes
       
-      var desc: Attributes = js.native
+      var desc: Attributes
       
-      var details: Attributes = js.native
+      var details: Attributes
       
-      var dfn: Attributes = js.native
+      var dfn: Attributes
       
-      var dialog: Attributes = js.native
+      var dialog: Attributes
       
-      var div: Attributes = js.native
+      var div: Attributes
       
-      var dl: Attributes = js.native
+      var dl: Attributes
       
-      var dt: Attributes = js.native
+      var dt: Attributes
       
-      var ellipse: Attributes = js.native
+      var ellipse: Attributes
       
-      var em: Attributes = js.native
+      var em: Attributes
       
-      var embed: Attributes = js.native
+      var embed: Attributes
       
-      var feBlend: Attributes = js.native
+      var feBlend: Attributes
       
-      var feColorMatrix: Attributes = js.native
+      var feColorMatrix: Attributes
       
-      var feComponentTransfer: Attributes = js.native
+      var feComponentTransfer: Attributes
       
-      var feComposite: Attributes = js.native
+      var feComposite: Attributes
       
-      var feConvolveMatrix: Attributes = js.native
+      var feConvolveMatrix: Attributes
       
-      var feDiffuseLighting: Attributes = js.native
+      var feDiffuseLighting: Attributes
       
-      var feDisplacementMap: Attributes = js.native
+      var feDisplacementMap: Attributes
       
-      var feDistantLight: Attributes = js.native
+      var feDistantLight: Attributes
       
-      var feDropShadow: Attributes = js.native
+      var feDropShadow: Attributes
       
-      var feFlood: Attributes = js.native
+      var feFlood: Attributes
       
-      var feFuncA: Attributes = js.native
+      var feFuncA: Attributes
       
-      var feFuncB: Attributes = js.native
+      var feFuncB: Attributes
       
-      var feFuncG: Attributes = js.native
+      var feFuncG: Attributes
       
-      var feFuncR: Attributes = js.native
+      var feFuncR: Attributes
       
-      var feGaussianBlur: Attributes = js.native
+      var feGaussianBlur: Attributes
       
-      var feImage: Attributes = js.native
+      var feImage: Attributes
       
-      var feMerge: Attributes = js.native
+      var feMerge: Attributes
       
-      var feMergeNode: Attributes = js.native
+      var feMergeNode: Attributes
       
-      var feMorphology: Attributes = js.native
+      var feMorphology: Attributes
       
-      var feOffset: Attributes = js.native
+      var feOffset: Attributes
       
-      var fePointLight: Attributes = js.native
+      var fePointLight: Attributes
       
-      var feSpecularLighting: Attributes = js.native
+      var feSpecularLighting: Attributes
       
-      var feSpotLight: Attributes = js.native
+      var feSpotLight: Attributes
       
-      var feTile: Attributes = js.native
+      var feTile: Attributes
       
-      var feTurbulence: Attributes = js.native
+      var feTurbulence: Attributes
       
-      var fieldset: Attributes = js.native
+      var fieldset: Attributes
       
-      var figcaption: Attributes = js.native
+      var figcaption: Attributes
       
-      var figure: Attributes = js.native
+      var figure: Attributes
       
-      var filter: Attributes = js.native
+      var filter: Attributes
       
-      var footer: Attributes = js.native
+      var footer: Attributes
       
-      var foreignObject: Attributes = js.native
+      var foreignObject: Attributes
       
-      var form: Attributes = js.native
+      var form: Attributes
       
-      var g: Attributes = js.native
+      var g: Attributes
       
-      var h1: Attributes = js.native
+      var h1: Attributes
       
-      var h2: Attributes = js.native
+      var h2: Attributes
       
-      var h3: Attributes = js.native
+      var h3: Attributes
       
-      var h4: Attributes = js.native
+      var h4: Attributes
       
-      var h5: Attributes = js.native
+      var h5: Attributes
       
-      var h6: Attributes = js.native
+      var h6: Attributes
       
-      var head: Attributes = js.native
+      var head: Attributes
       
-      var header: Attributes = js.native
+      var header: Attributes
       
-      var hgroup: Attributes = js.native
+      var hgroup: Attributes
       
-      var hr: Attributes = js.native
+      var hr: Attributes
       
-      var html: Attributes = js.native
+      var html: Attributes
       
-      var i: Attributes = js.native
+      var i: Attributes
       
-      var iframe: Attributes = js.native
+      var iframe: Attributes
       
-      var image: Attributes = js.native
+      var image: Attributes
       
-      var img: Attributes = js.native
+      var img: Attributes
       
-      var input: Attributes = js.native
+      var input: Attributes
       
-      var ins: Attributes = js.native
+      var ins: Attributes
       
-      var kbd: Attributes = js.native
+      var kbd: Attributes
       
-      var keygen: Attributes = js.native
+      var keygen: Attributes
       
-      var label: Attributes = js.native
+      var label: Attributes
       
-      var legend: Attributes = js.native
+      var legend: Attributes
       
-      var li: Attributes = js.native
+      var li: Attributes
       
-      var line: Attributes = js.native
+      var line: Attributes
       
-      var linearGradient: Attributes = js.native
+      var linearGradient: Attributes
       
-      var link: Attributes = js.native
+      var link: Attributes
       
-      var main: Attributes = js.native
+      var main: Attributes
       
-      var map: Attributes = js.native
+      var map: Attributes
       
-      var mark: Attributes = js.native
+      var mark: Attributes
       
-      var marker: Attributes = js.native
+      var marker: Attributes
       
-      var mask: Attributes = js.native
+      var mask: Attributes
       
-      var menu: Attributes = js.native
+      var menu: Attributes
       
-      var menuitem: Attributes = js.native
+      var menuitem: Attributes
       
-      var meta: Attributes = js.native
+      var meta: Attributes
       
-      var metadata: Attributes = js.native
+      var metadata: Attributes
       
-      var meter: Attributes = js.native
+      var meter: Attributes
       
-      var mpath: Attributes = js.native
+      var mpath: Attributes
       
-      var nav: Attributes = js.native
+      var nav: Attributes
       
-      var noindex: Attributes = js.native
+      var noindex: Attributes
       
-      var noscript: Attributes = js.native
+      var noscript: Attributes
       
-      var `object`: Attributes = js.native
+      var `object`: Attributes
       
-      var ol: Attributes = js.native
+      var ol: Attributes
       
-      var optgroup: Attributes = js.native
+      var optgroup: Attributes
       
-      var option: Attributes = js.native
+      var option: Attributes
       
-      var output: Attributes = js.native
+      var output: Attributes
       
-      var p: Attributes = js.native
+      var p: Attributes
       
-      var param: Attributes = js.native
+      var param: Attributes
       
-      var path: Attributes = js.native
+      var path: Attributes
       
-      var pattern: Attributes = js.native
+      var pattern: Attributes
       
-      var picture: Attributes = js.native
+      var picture: Attributes
       
-      var polygon: Attributes = js.native
+      var polygon: Attributes
       
-      var polyline: Attributes = js.native
+      var polyline: Attributes
       
-      var pre: Attributes = js.native
+      var pre: Attributes
       
-      var progress: Attributes = js.native
+      var progress: Attributes
       
-      var q: Attributes = js.native
+      var q: Attributes
       
-      var radialGradient: Attributes = js.native
+      var radialGradient: Attributes
       
-      var rect: Attributes = js.native
+      var rect: Attributes
       
-      var rp: Attributes = js.native
+      var rp: Attributes
       
-      var rt: Attributes = js.native
+      var rt: Attributes
       
-      var ruby: Attributes = js.native
+      var ruby: Attributes
       
-      var s: Attributes = js.native
+      var s: Attributes
       
-      var samp: Attributes = js.native
+      var samp: Attributes
       
-      var script: Attributes = js.native
+      var script: Attributes
       
-      var section: Attributes = js.native
+      var section: Attributes
       
-      var select: Attributes = js.native
+      var select: Attributes
       
-      var small: Attributes = js.native
+      var small: Attributes
       
-      var source: Attributes = js.native
+      var source: Attributes
       
-      var span: Attributes = js.native
+      var span: Attributes
       
-      var stop: Attributes = js.native
+      var stop: Attributes
       
-      var strong: Attributes = js.native
+      var strong: Attributes
       
-      var style: Attributes = js.native
+      var style: Attributes
       
-      var sub: Attributes = js.native
+      var sub: Attributes
       
-      var summary: Attributes = js.native
+      var summary: Attributes
       
-      var sup: Attributes = js.native
+      var sup: Attributes
       
       // SVG
-      var svg: Attributes = js.native
+      var svg: Attributes
       
-      var switch: Attributes = js.native
+      var switch: Attributes
       
-      var symbol: Attributes = js.native
+      var symbol: Attributes
       
-      var table: Attributes = js.native
+      var table: Attributes
       
-      var tbody: Attributes = js.native
+      var tbody: Attributes
       
-      var td: Attributes = js.native
+      var td: Attributes
       
-      var template: Attributes = js.native
+      var template: Attributes
       
-      var text: Attributes = js.native
+      var text: Attributes
       
-      var textPath: Attributes = js.native
+      var textPath: Attributes
       
-      var textarea: Attributes = js.native
+      var textarea: Attributes
       
-      var tfoot: Attributes = js.native
+      var tfoot: Attributes
       
-      var th: Attributes = js.native
+      var th: Attributes
       
-      var thead: Attributes = js.native
+      var thead: Attributes
       
-      var time: Attributes = js.native
+      var time: Attributes
       
-      var title: Attributes = js.native
+      var title: Attributes
       
-      var tr: Attributes = js.native
+      var tr: Attributes
       
-      var track: Attributes = js.native
+      var track: Attributes
       
-      var tspan: Attributes = js.native
+      var tspan: Attributes
       
-      var u: Attributes = js.native
+      var u: Attributes
       
-      var ul: Attributes = js.native
+      var ul: Attributes
       
-      var use: Attributes = js.native
+      var use: Attributes
       
-      var `var`: Attributes = js.native
+      var `var`: Attributes
       
-      var video: Attributes = js.native
+      var video: Attributes
       
-      var view: Attributes = js.native
+      var view: Attributes
       
-      var wbr: Attributes = js.native
+      var wbr: Attributes
       
-      var webview: Attributes = js.native
+      var webview: Attributes
     }
     object IntrinsicElements {
       

@@ -2,18 +2,16 @@ package typings.inert
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RelativeTo extends StObject {
     
     /**
       * Set the relative path
       */
-    var relativeTo: String = js.native
+    var relativeTo: String
   }
   object RelativeTo {
     

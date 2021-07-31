@@ -3,33 +3,31 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextBoxSnapshot extends StObject {
   
   /**
     * The absolute position bounding box.
     */
-  var bounds: js.Array[Rectangle] = js.native
+  var bounds: js.Array[Rectangle]
   
   /**
     * Index of the layout tree node that owns this box collection.
     */
-  var layoutIndex: js.Array[integer] = js.native
+  var layoutIndex: js.Array[integer]
   
   /**
     * The number of characters in this post layout textbox substring. Characters that would be
     * represented as a surrogate pair in UTF-16 have length 2.
     */
-  var length: js.Array[integer] = js.native
+  var length: js.Array[integer]
   
   /**
     * The starting index in characters, for this post layout textbox substring. Characters that
     * would be represented as a surrogate pair in UTF-16 have length 2.
     */
-  var start: js.Array[integer] = js.native
+  var start: js.Array[integer]
 }
 object TextBoxSnapshot {
   

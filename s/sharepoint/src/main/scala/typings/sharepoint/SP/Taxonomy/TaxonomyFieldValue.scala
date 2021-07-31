@@ -6,23 +6,23 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaxonomyFieldValue extends ClientValueObject {
+trait TaxonomyFieldValue
+  extends StObject
+     with ClientValueObject {
   
-  def get_label(): String = js.native
+  def get_label(): String
   
-  def get_termGuid(): Guid = js.native
+  def get_termGuid(): Guid
   
-  def get_wssId(): Double = js.native
+  def get_wssId(): Double
   
-  def set_label(value: String): Unit = js.native
+  def set_label(value: String): Unit
   
-  def set_termGuid(value: Guid): Unit = js.native
+  def set_termGuid(value: Guid): Unit
   
-  def set_wssId(value: Double): Unit = js.native
+  def set_wssId(value: Double): Unit
 }
 object TaxonomyFieldValue {
   

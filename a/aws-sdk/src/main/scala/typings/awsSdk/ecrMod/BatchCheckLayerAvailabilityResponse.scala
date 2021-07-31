@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCheckLayerAvailabilityResponse extends StObject {
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[LayerFailureList] = js.native
+  var failures: js.UndefOr[LayerFailureList] = js.undefined
   
   /**
     * A list of image layer objects corresponding to the image layer references in the request.
     */
-  var layers: js.UndefOr[LayerList] = js.native
+  var layers: js.UndefOr[LayerList] = js.undefined
 }
 object BatchCheckLayerAvailabilityResponse {
   

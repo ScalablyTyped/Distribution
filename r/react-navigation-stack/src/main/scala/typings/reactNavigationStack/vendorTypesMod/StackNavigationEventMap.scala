@@ -4,36 +4,34 @@ import typings.reactNavigationStack.anon.Data
 import typings.reactNavigationStack.anon.DataUndefined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackNavigationEventMap extends StObject {
   
   /**
     * Event which fires when navigation gesture is canceled.
     */
-  var gestureCancel: DataUndefined = js.native
+  var gestureCancel: DataUndefined
   
   /**
     * Event which fires when navigation gesture is completed.
     */
-  var gestureEnd: DataUndefined = js.native
+  var gestureEnd: DataUndefined
   
   /**
     * Event which fires when navigation gesture starts.
     */
-  var gestureStart: DataUndefined = js.native
+  var gestureStart: DataUndefined
   
   /**
     * Event which fires when a transition animation ends.
     */
-  var transitionEnd: Data = js.native
+  var transitionEnd: Data
   
   /**
     * Event which fires when a transition animation starts.
     */
-  var transitionStart: Data = js.native
+  var transitionStart: Data
 }
 object StackNavigationEventMap {
   

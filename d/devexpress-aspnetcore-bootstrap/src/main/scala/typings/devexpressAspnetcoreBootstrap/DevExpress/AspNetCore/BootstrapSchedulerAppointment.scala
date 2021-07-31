@@ -3,79 +3,77 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapSchedulerAppointment extends StObject {
   
-  def addResource(resourceId: js.Object): Unit = js.native
+  def addResource(resourceId: js.Object): Unit
   
-  val appointmentId: String = js.native
+  val appointmentId: String
   
-  val appointmentType: BootstrapSchedulerAppointmentType = js.native
+  val appointmentType: BootstrapSchedulerAppointmentType
   
-  def getAllDay(): Boolean = js.native
+  def getAllDay(): Boolean
   
-  def getAppointmentType(): BootstrapSchedulerAppointmentType = js.native
+  def getAppointmentType(): BootstrapSchedulerAppointmentType
   
-  def getDescription(): String = js.native
+  def getDescription(): String
   
-  def getDuration(): Double = js.native
+  def getDuration(): Double
   
-  def getEnd(): Date = js.native
+  def getEnd(): Date
   
-  def getId(): js.Any = js.native
+  def getId(): js.Any
   
-  def getLabelId(): Double = js.native
+  def getLabelId(): Double
   
-  def getLocation(): String = js.native
+  def getLocation(): String
   
-  def getRecurrenceInfo(): BootstrapSchedulerRecurrenceInfo | Null = js.native
+  def getRecurrenceInfo(): BootstrapSchedulerRecurrenceInfo | Null
   
-  def getRecurrencePattern(): BootstrapSchedulerAppointment | Null = js.native
+  def getRecurrencePattern(): BootstrapSchedulerAppointment | Null
   
-  def getResource(index: Double): js.Any = js.native
+  def getResource(index: Double): js.Any
   
-  def getStart(): Date = js.native
+  def getStart(): Date
   
-  def getStatusId(): Double = js.native
+  def getStatusId(): Double
   
-  def getSubject(): String = js.native
+  def getSubject(): String
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  val interval: BootstrapTimeInterval | Null = js.native
+  val interval: BootstrapTimeInterval | Null
   
-  val labelIndex: Double = js.native
+  val labelIndex: Double
   
-  val resources: js.Array[String] = js.native
+  val resources: js.Array[String]
   
-  def setAllDay(allDay: Boolean): Unit = js.native
+  def setAllDay(allDay: Boolean): Unit
   
-  def setAppointmentType(`type`: BootstrapSchedulerAppointmentType): Unit = js.native
+  def setAppointmentType(`type`: BootstrapSchedulerAppointmentType): Unit
   
-  def setDescription(description: String): Unit = js.native
+  def setDescription(description: String): Unit
   
-  def setDuration(duration: Double): Unit = js.native
+  def setDuration(duration: Double): Unit
   
-  def setEnd(end: Date): Unit = js.native
+  def setEnd(end: Date): Unit
   
-  def setId(id: js.Any): Unit = js.native
+  def setId(id: js.Any): Unit
   
-  def setLabelId(statusId: Double): Unit = js.native
+  def setLabelId(statusId: Double): Unit
   
-  def setLocation(location: String): Unit = js.native
+  def setLocation(location: String): Unit
   
-  def setRecurrenceInfo(recurrenceInfo: BootstrapSchedulerRecurrenceInfo): Unit = js.native
+  def setRecurrenceInfo(recurrenceInfo: BootstrapSchedulerRecurrenceInfo): Unit
   
-  def setStart(start: Date): Unit = js.native
+  def setStart(start: Date): Unit
   
-  def setStatusId(statusId: Double): Unit = js.native
+  def setStatusId(statusId: Double): Unit
   
-  def setSubject(subject: String): Unit = js.native
+  def setSubject(subject: String): Unit
   
-  val statusIndex: Double = js.native
+  val statusIndex: Double
 }
 object BootstrapSchedulerAppointment {
   
@@ -115,7 +113,7 @@ object BootstrapSchedulerAppointment {
     setSubject: String => Unit,
     statusIndex: Double
   ): BootstrapSchedulerAppointment = {
-    val __obj = js.Dynamic.literal(addResource = js.Any.fromFunction1(addResource), appointmentId = appointmentId.asInstanceOf[js.Any], appointmentType = appointmentType.asInstanceOf[js.Any], getAllDay = js.Any.fromFunction0(getAllDay), getAppointmentType = js.Any.fromFunction0(getAppointmentType), getDescription = js.Any.fromFunction0(getDescription), getDuration = js.Any.fromFunction0(getDuration), getEnd = js.Any.fromFunction0(getEnd), getId = js.Any.fromFunction0(getId), getLabelId = js.Any.fromFunction0(getLabelId), getLocation = js.Any.fromFunction0(getLocation), getRecurrenceInfo = js.Any.fromFunction0(getRecurrenceInfo), getRecurrencePattern = js.Any.fromFunction0(getRecurrencePattern), getResource = js.Any.fromFunction1(getResource), getStart = js.Any.fromFunction0(getStart), getStatusId = js.Any.fromFunction0(getStatusId), getSubject = js.Any.fromFunction0(getSubject), instance = instance.asInstanceOf[js.Any], labelIndex = labelIndex.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], setAllDay = js.Any.fromFunction1(setAllDay), setAppointmentType = js.Any.fromFunction1(setAppointmentType), setDescription = js.Any.fromFunction1(setDescription), setDuration = js.Any.fromFunction1(setDuration), setEnd = js.Any.fromFunction1(setEnd), setId = js.Any.fromFunction1(setId), setLabelId = js.Any.fromFunction1(setLabelId), setLocation = js.Any.fromFunction1(setLocation), setRecurrenceInfo = js.Any.fromFunction1(setRecurrenceInfo), setStart = js.Any.fromFunction1(setStart), setStatusId = js.Any.fromFunction1(setStatusId), setSubject = js.Any.fromFunction1(setSubject), statusIndex = statusIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addResource = js.Any.fromFunction1(addResource), appointmentId = appointmentId.asInstanceOf[js.Any], appointmentType = appointmentType.asInstanceOf[js.Any], getAllDay = js.Any.fromFunction0(getAllDay), getAppointmentType = js.Any.fromFunction0(getAppointmentType), getDescription = js.Any.fromFunction0(getDescription), getDuration = js.Any.fromFunction0(getDuration), getEnd = js.Any.fromFunction0(getEnd), getId = js.Any.fromFunction0(getId), getLabelId = js.Any.fromFunction0(getLabelId), getLocation = js.Any.fromFunction0(getLocation), getRecurrenceInfo = js.Any.fromFunction0(getRecurrenceInfo), getRecurrencePattern = js.Any.fromFunction0(getRecurrencePattern), getResource = js.Any.fromFunction1(getResource), getStart = js.Any.fromFunction0(getStart), getStatusId = js.Any.fromFunction0(getStatusId), getSubject = js.Any.fromFunction0(getSubject), instance = instance.asInstanceOf[js.Any], labelIndex = labelIndex.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], setAllDay = js.Any.fromFunction1(setAllDay), setAppointmentType = js.Any.fromFunction1(setAppointmentType), setDescription = js.Any.fromFunction1(setDescription), setDuration = js.Any.fromFunction1(setDuration), setEnd = js.Any.fromFunction1(setEnd), setId = js.Any.fromFunction1(setId), setLabelId = js.Any.fromFunction1(setLabelId), setLocation = js.Any.fromFunction1(setLocation), setRecurrenceInfo = js.Any.fromFunction1(setRecurrenceInfo), setStart = js.Any.fromFunction1(setStart), setStatusId = js.Any.fromFunction1(setStatusId), setSubject = js.Any.fromFunction1(setSubject), statusIndex = statusIndex.asInstanceOf[js.Any], interval = null)
     __obj.asInstanceOf[BootstrapSchedulerAppointment]
   }
   

@@ -3,23 +3,23 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.CurrentSelection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericSelectionNxInfo width extend NxInfo
   */
-@js.native
-trait IGenericSelectionNxInfo extends INxInfo {
+trait IGenericSelectionNxInfo
+  extends StObject
+     with INxInfo {
   
   @JSName("qType")
-  var qType_IGenericSelectionNxInfo: CurrentSelection = js.native
+  var qType_IGenericSelectionNxInfo: CurrentSelection
 }
 object IGenericSelectionNxInfo {
   
   @scala.inline
-  def apply(qType: CurrentSelection): IGenericSelectionNxInfo = {
-    val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
+  def apply(): IGenericSelectionNxInfo = {
+    val __obj = js.Dynamic.literal(qType = "CurrentSelection")
     __obj.asInstanceOf[IGenericSelectionNxInfo]
   }
   

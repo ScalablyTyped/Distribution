@@ -10,9 +10,9 @@ Write useful test matchers compatible with Jest and Jasmine.
 | ------------------ | :-------------: |
 | Full name          | add-matchers |
 | Keywords           | BDD, TDD, jasmine, testing |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 1094982 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 1839952 |
 | # stars            | 1 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.cathoQuantum
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hamburgerMod {
@@ -15,16 +14,15 @@ object hamburgerMod {
   
   type Hamburger = Component[HamburgerProps, js.Object, js.Any]
   
-  @js.native
   trait HamburgerProps extends StObject {
     
-    var ariaLabelDescription: js.UndefOr[String] = js.native
+    var ariaLabelDescription: js.UndefOr[String] = js.undefined
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
-    var isOpened: js.UndefOr[Boolean] = js.native
+    var isOpened: js.UndefOr[Boolean] = js.undefined
     
-    var showNotification: js.UndefOr[Boolean] = js.native
+    var showNotification: js.UndefOr[Boolean] = js.undefined
   }
   object HamburgerProps {
     

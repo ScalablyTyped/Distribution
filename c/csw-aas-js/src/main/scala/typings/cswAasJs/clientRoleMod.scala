@@ -4,25 +4,26 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientRoleMod {
   
-  @JSImport("csw-aas-js/dist/components/authorization/ClientRole", JSImport.Default)
+  @JSImport("csw-aas-js/dist/components/authorization/ClientRole", JSImport.Namespace)
   @js.native
-  def default(hasClientRoleClientChildrenError: ClientRoleProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasClientRoleClientChildrenError: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClientRoleClientChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait ClientRoleProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var client: js.UndefOr[String] = js.native
+    var client: js.UndefOr[String] = js.undefined
     
-    var clientRole: String = js.native
+    var clientRole: String
     
-    var error: ReactNode = js.native
+    var error: ReactNode
   }
   object ClientRoleProps {
     

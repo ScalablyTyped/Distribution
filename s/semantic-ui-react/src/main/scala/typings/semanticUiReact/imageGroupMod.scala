@@ -8,7 +8,6 @@ import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageGroupMod extends Shortcut {
@@ -17,9 +16,9 @@ object imageGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ImageGroupProps] = js.native
   
-  @js.native
   trait ImageGroupProps
-    extends StrictImageGroupProps
+    extends StObject
+       with StrictImageGroupProps
        with /* key */ StringDictionary[js.Any]
   object ImageGroupProps {
     
@@ -30,23 +29,22 @@ object imageGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictImageGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A group of images can be formatted to have the same size. */
-    var size: js.UndefOr[SemanticSIZES] = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.undefined
   }
   object StrictImageGroupProps {
     

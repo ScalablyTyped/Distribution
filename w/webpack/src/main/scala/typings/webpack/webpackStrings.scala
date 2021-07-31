@@ -3,7 +3,6 @@ package typings.webpack
 import typings.webpack.dllReferencePluginMod.DllReferencePluginOptionsSourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackStrings {
@@ -14,12 +13,16 @@ object webpackStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait amd extends DllReferencePluginOptionsSourceType
+  sealed trait amd
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]
   
   @js.native
-  sealed trait `amd-require` extends DllReferencePluginOptionsSourceType
+  sealed trait `amd-require`
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def `amd-require`: `amd-require` = "amd-require".asInstanceOf[`amd-require`]
   
@@ -29,7 +32,9 @@ object webpackStrings {
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
-  sealed trait assign extends DllReferencePluginOptionsSourceType
+  sealed trait assign
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def assign: assign = "assign".asInstanceOf[assign]
   
@@ -49,17 +54,23 @@ object webpackStrings {
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait commonjs extends DllReferencePluginOptionsSourceType
+  sealed trait commonjs
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
   
   @js.native
-  sealed trait `commonjs-module` extends DllReferencePluginOptionsSourceType
+  sealed trait `commonjs-module`
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def `commonjs-module`: `commonjs-module` = "commonjs-module".asInstanceOf[`commonjs-module`]
   
   @js.native
-  sealed trait commonjs2 extends DllReferencePluginOptionsSourceType
+  sealed trait commonjs2
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def commonjs2: commonjs2 = "commonjs2".asInstanceOf[commonjs2]
   
@@ -109,7 +120,9 @@ object webpackStrings {
   def `errors-warnings`: `errors-warnings` = "errors-warnings".asInstanceOf[`errors-warnings`]
   
   @js.native
-  sealed trait global extends DllReferencePluginOptionsSourceType
+  sealed trait global
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   
@@ -154,7 +167,9 @@ object webpackStrings {
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait jsonp extends DllReferencePluginOptionsSourceType
+  sealed trait jsonp
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   
@@ -269,7 +284,9 @@ object webpackStrings {
   def textSlashjavascript: textSlashjavascript = "text/javascript".asInstanceOf[textSlashjavascript]
   
   @js.native
-  sealed trait `this` extends DllReferencePluginOptionsSourceType
+  sealed trait `this`
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def `this`: `this` = "this".asInstanceOf[`this`]
   
@@ -279,12 +296,16 @@ object webpackStrings {
   def `total-size`: `total-size` = "total-size".asInstanceOf[`total-size`]
   
   @js.native
-  sealed trait umd extends DllReferencePluginOptionsSourceType
+  sealed trait umd
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def umd: umd = "umd".asInstanceOf[umd]
   
   @js.native
-  sealed trait umd2 extends DllReferencePluginOptionsSourceType
+  sealed trait umd2
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def umd2: umd2 = "umd2".asInstanceOf[umd2]
   
@@ -294,7 +315,9 @@ object webpackStrings {
   def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
-  sealed trait `var` extends DllReferencePluginOptionsSourceType
+  sealed trait `var`
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   
@@ -329,7 +352,9 @@ object webpackStrings {
   def webworker: webworker = "webworker".asInstanceOf[webworker]
   
   @js.native
-  sealed trait window extends DllReferencePluginOptionsSourceType
+  sealed trait window
+    extends StObject
+       with DllReferencePluginOptionsSourceType
   @scala.inline
   def window: window = "window".asInstanceOf[window]
 }

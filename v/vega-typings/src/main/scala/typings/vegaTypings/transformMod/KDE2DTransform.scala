@@ -4,45 +4,44 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.kde2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KDE2DTransform extends _Transforms {
+trait KDE2DTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | SignalRef] = js.native
+  var as: js.UndefOr[String | SignalRef] = js.undefined
   
-  var bandwidth: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var bandwidth: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var cellSize: js.UndefOr[Double | SignalRef] = js.native
-  
-  // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
-  var counts: js.UndefOr[Boolean | SignalRef] = js.native
-  
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.native
-  
-  var size: (js.Array[Double | SignalRef]) | SignalRef = js.native
-  
-  var `type`: kde2d = js.native
-  
-  var weight: js.UndefOr[String | TransformField] = js.native
+  var cellSize: js.UndefOr[Double | SignalRef] = js.undefined
   
   // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
-  var x: String | TransformField = js.native
+  var counts: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var y: String | TransformField = js.native
+  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
+  
+  var size: (js.Array[Double | SignalRef]) | SignalRef
+  
+  var `type`: kde2d
+  
+  var weight: js.UndefOr[String | TransformField] = js.undefined
+  
+  // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
+  var x: String | TransformField
+  
+  var y: String | TransformField
 }
 object KDE2DTransform {
   
   @scala.inline
   def apply(
     size: (js.Array[Double | SignalRef]) | SignalRef,
-    `type`: kde2d,
     x: String | TransformField,
     y: String | TransformField
   ): KDE2DTransform = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("kde2d")
     __obj.asInstanceOf[KDE2DTransform]
   }
   

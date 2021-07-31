@@ -3,32 +3,30 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import typings.tensorflowTfjsConverter.compiledApiMod.SaverDef.CheckpointFormatVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISaverDef extends StObject {
   
   /** SaverDef filenameTensorName */
-  var filenameTensorName: js.UndefOr[String | Null] = js.native
+  var filenameTensorName: js.UndefOr[String | Null] = js.undefined
   
   /** SaverDef keepCheckpointEveryNHours */
-  var keepCheckpointEveryNHours: js.UndefOr[Double | Null] = js.native
+  var keepCheckpointEveryNHours: js.UndefOr[Double | Null] = js.undefined
   
   /** SaverDef maxToKeep */
-  var maxToKeep: js.UndefOr[Double | Null] = js.native
+  var maxToKeep: js.UndefOr[Double | Null] = js.undefined
   
   /** SaverDef restoreOpName */
-  var restoreOpName: js.UndefOr[String | Null] = js.native
+  var restoreOpName: js.UndefOr[String | Null] = js.undefined
   
   /** SaverDef saveTensorName */
-  var saveTensorName: js.UndefOr[String | Null] = js.native
+  var saveTensorName: js.UndefOr[String | Null] = js.undefined
   
   /** SaverDef sharded */
-  var sharded: js.UndefOr[Boolean | Null] = js.native
+  var sharded: js.UndefOr[Boolean | Null] = js.undefined
   
   /** SaverDef version */
-  var version: js.UndefOr[CheckpointFormatVersion | Null] = js.native
+  var version: js.UndefOr[CheckpointFormatVersion | Null] = js.undefined
 }
 object ISaverDef {
   

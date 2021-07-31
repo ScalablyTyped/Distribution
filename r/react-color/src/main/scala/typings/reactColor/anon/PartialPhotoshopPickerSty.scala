@@ -3,30 +3,28 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/photoshop/Photoshop.PhotoshopPickerStylesProps> */
-@js.native
 trait PartialPhotoshopPickerSty extends StObject {
   
-  var actions: js.UndefOr[CSSProperties] = js.native
+  var actions: js.UndefOr[CSSProperties] = js.undefined
   
-  var body: js.UndefOr[CSSProperties] = js.native
+  var body: js.UndefOr[CSSProperties] = js.undefined
   
-  var controls: js.UndefOr[CSSProperties] = js.native
+  var controls: js.UndefOr[CSSProperties] = js.undefined
   
-  var head: js.UndefOr[CSSProperties] = js.native
+  var head: js.UndefOr[CSSProperties] = js.undefined
   
-  var hue: js.UndefOr[CSSProperties] = js.native
+  var hue: js.UndefOr[CSSProperties] = js.undefined
   
-  var picker: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.undefined
   
-  var previews: js.UndefOr[CSSProperties] = js.native
+  var previews: js.UndefOr[CSSProperties] = js.undefined
   
-  var saturation: js.UndefOr[CSSProperties] = js.native
+  var saturation: js.UndefOr[CSSProperties] = js.undefined
   
-  var top: js.UndefOr[CSSProperties] = js.native
+  var top: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialPhotoshopPickerSty {
   

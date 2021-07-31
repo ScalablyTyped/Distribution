@@ -2,17 +2,15 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TMC extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var lcode: String = js.native
+  var lcode: String
   
-  var status: String = js.native
+  var status: String
 }
 object TMC {
   

@@ -9,7 +9,6 @@ import typings.ol.stateMod.State
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceTileMod {
@@ -32,32 +31,31 @@ object sourceTileMod {
     var tile: typings.ol.olTileMod.default = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var attributionsCollapsible: js.UndefOr[Boolean] = js.native
+    var attributionsCollapsible: js.UndefOr[Boolean] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var opaque: js.UndefOr[Boolean] = js.native
+    var opaque: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
     
-    var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.native
+    var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.undefined
     
-    var tilePixelRatio: js.UndefOr[Double] = js.native
+    var tilePixelRatio: js.UndefOr[Double] = js.undefined
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
     
-    var zDirection: js.UndefOr[Double] = js.native
+    var zDirection: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

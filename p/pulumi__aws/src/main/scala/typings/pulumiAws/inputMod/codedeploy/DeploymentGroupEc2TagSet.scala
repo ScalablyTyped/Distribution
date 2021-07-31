@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupEc2TagSet extends StObject {
   
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
-  var ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSetEc2TagFilter]]]] = js.native
+  var ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSetEc2TagFilter]]]] = js.undefined
 }
 object DeploymentGroupEc2TagSet {
   

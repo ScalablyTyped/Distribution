@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeHunkDetail extends StObject {
   
   /**
     * The end position of the hunk in the merge result.
     */
-  var endLine: js.UndefOr[LineNumber] = js.native
+  var endLine: js.UndefOr[LineNumber] = js.undefined
   
   /**
     * The base-64 encoded content of the hunk merged region that might contain a conflict.
     */
-  var hunkContent: js.UndefOr[HunkContent] = js.native
+  var hunkContent: js.UndefOr[HunkContent] = js.undefined
   
   /**
     * The start position of the hunk in the merge result.
     */
-  var startLine: js.UndefOr[LineNumber] = js.native
+  var startLine: js.UndefOr[LineNumber] = js.undefined
 }
 object MergeHunkDetail {
   

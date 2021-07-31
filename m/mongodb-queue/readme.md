@@ -12,7 +12,7 @@ Message queues which uses MongoDB.
 | Keywords           | mongodb, queue |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 109504 |
+| # downloads        | 122291 |
 | # stars            | 7 |
 
 ## Links

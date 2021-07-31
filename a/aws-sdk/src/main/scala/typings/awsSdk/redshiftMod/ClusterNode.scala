@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterNode extends StObject {
   
   /**
     * Whether the node is a leader node or a compute node.
     */
-  var NodeRole: js.UndefOr[String] = js.native
+  var NodeRole: js.UndefOr[String] = js.undefined
   
   /**
     * The private IP address of a node within a cluster.
     */
-  var PrivateIPAddress: js.UndefOr[String] = js.native
+  var PrivateIPAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The public IP address of a node within a cluster.
     */
-  var PublicIPAddress: js.UndefOr[String] = js.native
+  var PublicIPAddress: js.UndefOr[String] = js.undefined
 }
 object ClusterNode {
   

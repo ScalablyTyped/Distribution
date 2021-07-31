@@ -17,77 +17,75 @@ import typings.semanticUiForm.semanticUiFormStrings.submit
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.FormSettings._Impl, keyof semantic-ui-form.SemanticUI.FormSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var defaults: js.UndefOr[StringDictionary[Field]] = js.native
+  var defaults: js.UndefOr[StringDictionary[Field]] = js.undefined
   
-  var delay: js.UndefOr[Boolean] = js.native
+  var delay: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fields: js.UndefOr[StringDictionary[String | js.Array[String] | Field]] = js.native
+  var fields: js.UndefOr[StringDictionary[String | js.Array[String] | Field]] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardShortcuts: js.UndefOr[Boolean] = js.native
+  var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[submit | blur | change] = js.native
+  var on: js.UndefOr[submit | blur | change] = js.undefined
   
   var onFailure: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onInvalid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onInvalid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
   var onSuccess: js.UndefOr[
     js.ThisFunction2[
       /* this */ JQuery, 
-      /* event */ TriggeredEvent[HTMLElement, _, _, _], 
+      /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
       /* fields */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onValid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onValid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var prompt: js.UndefOr[PromptSettings] = js.native
+  var prompt: js.UndefOr[PromptSettings] = js.undefined
   
-  var revalidate: js.UndefOr[Boolean] = js.native
+  var revalidate: js.UndefOr[Boolean] = js.undefined
   
   var rules: js.UndefOr[
     StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]
-  ] = js.native
+  ] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var templates: js.UndefOr[TemplatesSettings] = js.native
+  var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
-  var text: js.UndefOr[TextSettings] = js.native
+  var text: js.UndefOr[TextSettings] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   
@@ -193,7 +191,7 @@ object PartialPickImplkeyofImpl {
     def setOnSuccess(
       value: js.ThisFunction2[
           /* this */ JQuery, 
-          /* event */ TriggeredEvent[HTMLElement, _, _, _], 
+          /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
           /* fields */ js.Any, 
           Unit
         ]

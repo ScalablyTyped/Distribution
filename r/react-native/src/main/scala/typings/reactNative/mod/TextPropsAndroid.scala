@@ -10,33 +10,31 @@ import typings.reactNative.reactNativeStrings.phoneNumber
 import typings.reactNative.reactNativeStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextPropsAndroid extends StObject {
   
   /**
     * Determines the types of data converted to clickable URLs in the text element.
     * By default no data types are detected.
     */
-  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all_] = js.native
+  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all_] = js.undefined
   
   /**
     * Lets the user select text, to use the native copy and paste functionality.
     */
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The highlight color of the text.
     */
-  var selectionColor: js.UndefOr[ColorValue] = js.native
+  var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Set text break strategy on Android API Level 23+
     * default is `highQuality`.
     */
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.native
+  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
 }
 object TextPropsAndroid {
   

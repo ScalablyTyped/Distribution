@@ -10,7 +10,6 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
@@ -64,7 +63,7 @@ object userMod {
       * User's given name.
       * @public
       */
-    var given: js.UndefOr[String] = js.native
+    var `given`: js.UndefOr[String] = js.native
   }
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", "Profile")
@@ -140,7 +139,7 @@ object userMod {
   /** @hidden */
   class User[TUserStorage] () extends StObject {
     def this(raw: GoogleActionsV2User) = this()
-    def this(raw: js.UndefOr[scala.Nothing], initial: TUserStorage) = this()
+    def this(raw: Unit, initial: TUserStorage) = this()
     def this(raw: GoogleActionsV2User, initial: TUserStorage) = this()
     
     /** @hidden */

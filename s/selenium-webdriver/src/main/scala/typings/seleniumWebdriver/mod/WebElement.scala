@@ -2,12 +2,13 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebElement")
 @js.native
-class WebElement protected () extends Serializable[IWebElementId] {
+class WebElement protected ()
+  extends StObject
+     with Serializable[IWebElementId] {
   def this(driver: WebDriver, id: String) = this()
   /**
     * @param {!WebDriver} driver the parent WebDriver instance for this element.
@@ -261,6 +262,18 @@ class WebElement protected () extends Serializable[IWebElementId] {
   def sendKeys(var_args: (String | Double | (js.Promise[String | Double]))*): js.Promise[Unit] = js.native
   
   /**
+    * Returns either this instance's serialized represention, if immediately
+    * available, or a promise for its serialized representation. This function is
+    * conceptually equivalent to objects that have a {@code toJSON()} property,
+    * except the serialize() result may be a promise or an object containing a
+    * promise (which are not directly JSON friendly).
+    *
+    * @return {!(T|IThenable.<!T>)} This instance's serialized wire format.
+    */
+  /* CompleteClass */
+  override def serialize(): IWebElementId | js.Promise[IWebElementId] = js.native
+  
+  /**
     * Schedules a command to submit the form containing this element (or this
     * element if it is a FORM element). This command is a no-op if the element is
     * not contained in a form.
@@ -285,17 +298,19 @@ class WebElement protected () extends Serializable[IWebElementId] {
 /* static members */
 object WebElement {
   
+  @JSImport("selenium-webdriver", "WebElement")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @param {string} id The raw ID.
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
     * @return {!Object} The element ID for use with WebDriver's wire protocol.
     */
-  @JSImport("selenium-webdriver", "WebElement.buildId")
-  @js.native
-  def buildId(id: String): IWebElementId = js.native
-  @JSImport("selenium-webdriver", "WebElement.buildId")
-  @js.native
-  def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = js.native
+  @scala.inline
+  def buildId(id: String): IWebElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("buildId")(id.asInstanceOf[js.Any]).asInstanceOf[IWebElementId]
+  @scala.inline
+  def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = (^.asInstanceOf[js.Dynamic].applyDynamic("buildId")(id.asInstanceOf[js.Any], opt_noLegacy.asInstanceOf[js.Any])).asInstanceOf[IWebElementId]
   
   /**
     * Compares two WebElements for equality.
@@ -305,9 +320,8 @@ object WebElement {
     * @return {!Promise<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
-  @JSImport("selenium-webdriver", "WebElement.equals")
-  @js.native
-  def equals(a: WebElement, b: WebElement): js.Promise[Boolean] = js.native
+  @scala.inline
+  def equals(a: WebElement, b: WebElement): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Extracts the encoded WebElement ID from the object.
@@ -316,15 +330,13 @@ object WebElement {
     * @return {string} the extracted ID.
     * @throws {TypeError} if the object is not a valid encoded ID.
     */
-  @JSImport("selenium-webdriver", "WebElement.extractId")
-  @js.native
-  def extractId(obj: IWebElementId): String = js.native
+  @scala.inline
+  def extractId(obj: IWebElementId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractId")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * @param {?} obj the object to test.
     * @return {boolean} whether the object is a valid encoded WebElement ID.
     */
-  @JSImport("selenium-webdriver", "WebElement.isId")
-  @js.native
-  def isId(obj: IWebElementId): Boolean = js.native
+  @scala.inline
+  def isId(obj: IWebElementId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isId")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -3,122 +3,94 @@ package typings.uriJs
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uriAllMinMod {
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "equal")
+  @JSImport("uri-js/dist/es5/uri.all.min", JSImport.Namespace)
   @js.native
-  def equal(uriA: String, uriB: String): Boolean = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "equal")
-  @js.native
-  def equal(uriA: String, uriB: String, options: URIOptions): Boolean = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "equal")
-  @js.native
-  def equal(uriA: URIComponents, uriB: URIComponents): Boolean = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "equal")
-  @js.native
-  def equal(uriA: URIComponents, uriB: URIComponents, options: URIOptions): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "escapeComponent")
-  @js.native
-  def escapeComponent(str: String): String = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "escapeComponent")
-  @js.native
-  def escapeComponent(str: String, options: URIOptions): String = js.native
+  @scala.inline
+  def equal(uriA: String, uriB: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equal(uriA: String, uriB: String, options: URIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equal(uriA: URIComponents, uriB: URIComponents): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equal(uriA: URIComponents, uriB: URIComponents, options: URIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "normalize")
-  @js.native
-  def normalize(uri: String): String = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "normalize")
-  @js.native
-  def normalize(uri: String, options: URIOptions): String = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "normalize")
-  @js.native
-  def normalize(uri: URIComponents): URIComponents = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "normalize")
-  @js.native
-  def normalize(uri: URIComponents, options: URIOptions): URIComponents = js.native
+  @scala.inline
+  def escapeComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def escapeComponent(str: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "parse")
-  @js.native
-  def parse(uriString: String): URIComponents = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "parse")
-  @js.native
-  def parse(uriString: String, options: URIOptions): URIComponents = js.native
+  @scala.inline
+  def normalize(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def normalize(uri: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def normalize(uri: URIComponents): URIComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any]).asInstanceOf[URIComponents]
+  @scala.inline
+  def normalize(uri: URIComponents, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "pctDecChars")
-  @js.native
-  def pctDecChars(str: String): String = js.native
+  @scala.inline
+  def parse(uriString: String): URIComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uriString.asInstanceOf[js.Any]).asInstanceOf[URIComponents]
+  @scala.inline
+  def parse(uriString: String, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uriString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "pctEncChar")
-  @js.native
-  def pctEncChar(chr: String): String = js.native
+  @scala.inline
+  def pctDecChars(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pctDecChars")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "removeDotSegments")
-  @js.native
-  def removeDotSegments(input: String): String = js.native
+  @scala.inline
+  def pctEncChar(chr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pctEncChar")(chr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "resolve")
-  @js.native
-  def resolve(baseURI: String, relativeURI: String): String = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "resolve")
-  @js.native
-  def resolve(baseURI: String, relativeURI: String, options: URIOptions): String = js.native
+  @scala.inline
+  def removeDotSegments(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDotSegments")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "resolveComponents")
-  @js.native
-  def resolveComponents(base: URIComponents, relative: URIComponents): URIComponents = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "resolveComponents")
-  @js.native
-  def resolveComponents(
-    base: URIComponents,
-    relative: URIComponents,
-    options: js.UndefOr[scala.Nothing],
-    skipNormalization: Boolean
-  ): URIComponents = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "resolveComponents")
-  @js.native
-  def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions): URIComponents = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "resolveComponents")
-  @js.native
-  def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions, skipNormalization: Boolean): URIComponents = js.native
+  @scala.inline
+  def resolve(baseURI: String, relativeURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseURI.asInstanceOf[js.Any], relativeURI.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def resolve(baseURI: String, relativeURI: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseURI.asInstanceOf[js.Any], relativeURI.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "serialize")
-  @js.native
-  def serialize(components: URIComponents): String = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "serialize")
-  @js.native
-  def serialize(components: URIComponents, options: URIOptions): String = js.native
+  @scala.inline
+  def resolveComponents(base: URIComponents, relative: URIComponents): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  @scala.inline
+  def resolveComponents(base: URIComponents, relative: URIComponents, options: Unit, skipNormalization: Boolean): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any], skipNormalization.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  @scala.inline
+  def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  @scala.inline
+  def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions, skipNormalization: Boolean): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any], skipNormalization.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
   
-  @JSImport("uri-js/dist/es5/uri.all.min", "unescapeComponent")
-  @js.native
-  def unescapeComponent(str: String): String = js.native
-  @JSImport("uri-js/dist/es5/uri.all.min", "unescapeComponent")
-  @js.native
-  def unescapeComponent(str: String, options: URIOptions): String = js.native
+  @scala.inline
+  def serialize(components: URIComponents): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(components.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serialize(components: URIComponents, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(components.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def unescapeComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def unescapeComponent(str: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait URIComponents extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var fragment: js.UndefOr[String] = js.native
+    var fragment: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double | String] = js.native
+    var port: js.UndefOr[Double | String] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var reference: js.UndefOr[String] = js.native
+    var reference: js.UndefOr[String] = js.undefined
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
     
-    var userinfo: js.UndefOr[String] = js.native
+    var userinfo: js.UndefOr[String] = js.undefined
   }
   object URIComponents {
     
@@ -187,22 +159,21 @@ object uriAllMinMod {
     }
   }
   
-  @js.native
   trait URIOptions extends StObject {
     
-    var absolutePath: js.UndefOr[Boolean] = js.native
+    var absolutePath: js.UndefOr[Boolean] = js.undefined
     
-    var domainHost: js.UndefOr[Boolean] = js.native
+    var domainHost: js.UndefOr[Boolean] = js.undefined
     
-    var iri: js.UndefOr[Boolean] = js.native
+    var iri: js.UndefOr[Boolean] = js.undefined
     
-    var reference: js.UndefOr[String] = js.native
+    var reference: js.UndefOr[String] = js.undefined
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
     
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
     
-    var unicodeSupport: js.UndefOr[Boolean] = js.native
+    var unicodeSupport: js.UndefOr[Boolean] = js.undefined
   }
   object URIOptions {
     
@@ -259,34 +230,33 @@ object uriAllMinMod {
     }
   }
   
-  @js.native
   trait URIRegExps extends StObject {
     
-    var ESCAPE: RegExp = js.native
+    var ESCAPE: RegExp
     
-    var IPV4ADDRESS: RegExp = js.native
+    var IPV4ADDRESS: RegExp
     
-    var IPV6ADDRESS: RegExp = js.native
+    var IPV6ADDRESS: RegExp
     
-    var NOT_FRAGMENT: RegExp = js.native
+    var NOT_FRAGMENT: RegExp
     
-    var NOT_HOST: RegExp = js.native
+    var NOT_HOST: RegExp
     
-    var NOT_PATH: RegExp = js.native
+    var NOT_PATH: RegExp
     
-    var NOT_PATH_NOSCHEME: RegExp = js.native
+    var NOT_PATH_NOSCHEME: RegExp
     
-    var NOT_QUERY: RegExp = js.native
+    var NOT_QUERY: RegExp
     
-    var NOT_SCHEME: RegExp = js.native
+    var NOT_SCHEME: RegExp
     
-    var NOT_USERINFO: RegExp = js.native
+    var NOT_USERINFO: RegExp
     
-    var OTHER_CHARS: RegExp = js.native
+    var OTHER_CHARS: RegExp
     
-    var PCT_ENCODED: RegExp = js.native
+    var PCT_ENCODED: RegExp
     
-    var UNRESERVED: RegExp = js.native
+    var UNRESERVED: RegExp
   }
   object URIRegExps {
     
@@ -354,20 +324,19 @@ object uriAllMinMod {
     }
   }
   
-  @js.native
   trait URISchemeHandler[Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */] extends StObject {
     
-    var absolutePath: js.UndefOr[Boolean] = js.native
+    var absolutePath: js.UndefOr[Boolean] = js.undefined
     
-    var domainHost: js.UndefOr[Boolean] = js.native
+    var domainHost: js.UndefOr[Boolean] = js.undefined
     
-    def parse(components: ParentComponents, options: Options): Components = js.native
+    def parse(components: ParentComponents, options: Options): Components
     
-    var scheme: String = js.native
+    var scheme: String
     
-    def serialize(components: Components, options: Options): ParentComponents = js.native
+    def serialize(components: Components, options: Options): ParentComponents
     
-    var unicodeSupport: js.UndefOr[Boolean] = js.native
+    var unicodeSupport: js.UndefOr[Boolean] = js.undefined
   }
   object URISchemeHandler {
     
@@ -382,7 +351,7 @@ object uriAllMinMod {
     }
     
     @scala.inline
-    implicit class URISchemeHandlerMutableBuilder[Self <: URISchemeHandler[_, _, _], Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */] (val x: Self with (URISchemeHandler[Components, Options, ParentComponents])) extends AnyVal {
+    implicit class URISchemeHandlerMutableBuilder[Self <: URISchemeHandler[?, ?, ?], Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */] (val x: Self & (URISchemeHandler[Components, Options, ParentComponents])) extends AnyVal {
       
       @scala.inline
       def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])

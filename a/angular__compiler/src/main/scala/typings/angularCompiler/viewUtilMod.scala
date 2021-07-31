@@ -16,10 +16,13 @@ import typings.angularCompiler.r3AstMod.Template
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewUtilMod {
+  
+  @JSImport("@angular/compiler/src/render3/view/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/render3/view/util", "CONTEXT_NAME")
   @js.native
@@ -57,62 +60,46 @@ object viewUtilMod {
   @js.native
   val TEMPORARY_NAME: /* "_t" */ String = js.native
   
-  @JSImport("@angular/compiler/src/render3/view/util", "asLiteral")
-  @js.native
-  def asLiteral(value: js.Any): Expression = js.native
+  @scala.inline
+  def asLiteral(value: js.Any): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("asLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "chainedInstruction")
-  @js.native
-  def chainedInstruction(reference: ExternalReference, calls: js.Array[js.Array[Expression]]): Expression = js.native
-  @JSImport("@angular/compiler/src/render3/view/util", "chainedInstruction")
-  @js.native
-  def chainedInstruction(reference: ExternalReference, calls: js.Array[js.Array[Expression]], span: ParseSourceSpan): Expression = js.native
+  @scala.inline
+  def chainedInstruction(reference: ExternalReference, calls: js.Array[js.Array[Expression]]): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("chainedInstruction")(reference.asInstanceOf[js.Any], calls.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  @scala.inline
+  def chainedInstruction(reference: ExternalReference, calls: js.Array[js.Array[Expression]], span: ParseSourceSpan): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("chainedInstruction")(reference.asInstanceOf[js.Any], calls.asInstanceOf[js.Any], span.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "conditionallyCreateMapObjectLiteral")
-  @js.native
-  def conditionallyCreateMapObjectLiteral(keys: StringDictionary[String | js.Array[String]]): Expression | Null = js.native
-  @JSImport("@angular/compiler/src/render3/view/util", "conditionallyCreateMapObjectLiteral")
-  @js.native
-  def conditionallyCreateMapObjectLiteral(keys: StringDictionary[String | js.Array[String]], keepDeclared: Boolean): Expression | Null = js.native
+  @scala.inline
+  def conditionallyCreateMapObjectLiteral(keys: StringDictionary[String | js.Array[String]]): Expression | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionallyCreateMapObjectLiteral")(keys.asInstanceOf[js.Any]).asInstanceOf[Expression | Null]
+  @scala.inline
+  def conditionallyCreateMapObjectLiteral(keys: StringDictionary[String | js.Array[String]], keepDeclared: Boolean): Expression | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("conditionallyCreateMapObjectLiteral")(keys.asInstanceOf[js.Any], keepDeclared.asInstanceOf[js.Any])).asInstanceOf[Expression | Null]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "getAttrsForDirectiveMatching")
-  @js.native
-  def getAttrsForDirectiveMatching(elOrTpl: Element): StringDictionary[String] = js.native
-  @JSImport("@angular/compiler/src/render3/view/util", "getAttrsForDirectiveMatching")
-  @js.native
-  def getAttrsForDirectiveMatching(elOrTpl: Template): StringDictionary[String] = js.native
+  @scala.inline
+  def getAttrsForDirectiveMatching(elOrTpl: Element): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttrsForDirectiveMatching")(elOrTpl.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  @scala.inline
+  def getAttrsForDirectiveMatching(elOrTpl: Template): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttrsForDirectiveMatching")(elOrTpl.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "getInterpolationArgsLength")
-  @js.native
-  def getInterpolationArgsLength(interpolation: Interpolation): Double = js.native
+  @scala.inline
+  def getInterpolationArgsLength(interpolation: Interpolation): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterpolationArgsLength")(interpolation.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "getQueryPredicate")
-  @js.native
-  def getQueryPredicate(query: R3QueryMetadata, constantPool: ConstantPool): Expression = js.native
+  @scala.inline
+  def getQueryPredicate(query: R3QueryMetadata, constantPool: ConstantPool): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryPredicate")(query.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "invalid")
-  @js.native
-  def invalid[T](arg: Expression): scala.Nothing = js.native
-  @JSImport("@angular/compiler/src/render3/view/util", "invalid")
-  @js.native
-  def invalid[T](arg: Statement): scala.Nothing = js.native
-  @JSImport("@angular/compiler/src/render3/view/util", "invalid")
-  @js.native
-  def invalid[T](arg: Node): scala.Nothing = js.native
+  @scala.inline
+  def invalid[T](arg: Expression): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(arg.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def invalid[T](arg: Statement): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(arg.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  @scala.inline
+  def invalid[T](arg: Node): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(arg.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "temporaryAllocator")
-  @js.native
-  def temporaryAllocator(statements: js.Array[Statement], name: String): js.Function0[ReadVarExpr] = js.native
+  @scala.inline
+  def temporaryAllocator(statements: js.Array[Statement], name: String): js.Function0[ReadVarExpr] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryAllocator")(statements.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function0[ReadVarExpr]]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "trimTrailingNulls")
-  @js.native
-  def trimTrailingNulls(parameters: js.Array[Expression]): js.Array[Expression] = js.native
+  @scala.inline
+  def trimTrailingNulls(parameters: js.Array[Expression]): js.Array[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimTrailingNulls")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Array[Expression]]
   
-  @JSImport("@angular/compiler/src/render3/view/util", "unsupported")
-  @js.native
-  def unsupported(feature: String): scala.Nothing = js.native
+  @scala.inline
+  def unsupported(feature: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupported")(feature.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

@@ -2,17 +2,15 @@ package typings.sax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var name: String = js.native
+    var name: String
   }
   object Body {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Name {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Prefix extends StObject {
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Prefix {
     

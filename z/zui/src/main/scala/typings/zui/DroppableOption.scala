@@ -2,41 +2,39 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableOption extends StObject {
   
-  var always: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.native
+  var always: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.undefined
   
-  var before: js.UndefOr[js.Function1[/* e */ js.UndefOr[DroppableEvent], Boolean]] = js.native
+  var before: js.UndefOr[js.Function1[/* e */ js.UndefOr[DroppableEvent], Boolean]] = js.undefined
   
-  var beforeDrop: js.UndefOr[js.Function1[/* e */ DroppableEvent, Boolean]] = js.native
+  var beforeDrop: js.UndefOr[js.Function1[/* e */ DroppableEvent, Boolean]] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var deviation: js.UndefOr[Double] = js.native
+  var deviation: js.UndefOr[Double] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.undefined
   
-  var drop: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.undefined
   
-  var finish: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.native
+  var finish: js.UndefOr[js.Function1[/* e */ DroppableEvent, Unit]] = js.undefined
   
-  var flex: js.UndefOr[Boolean] = js.native
+  var flex: js.UndefOr[Boolean] = js.undefined
   
-  var handle: js.UndefOr[String] = js.native
+  var handle: js.UndefOr[String] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var sensorOffsetX: js.UndefOr[Double] = js.native
+  var sensorOffsetX: js.UndefOr[Double] = js.undefined
   
-  var sensorOffsetY: js.UndefOr[Double] = js.native
+  var sensorOffsetY: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* e */ js.UndefOr[DroppableEvent], Unit]] = js.native
+  var start: js.UndefOr[js.Function1[/* e */ js.UndefOr[DroppableEvent], Unit]] = js.undefined
   
-  var target: JQuery | String = js.native
+  var target: JQuery | String
 }
 object DroppableOption {
   

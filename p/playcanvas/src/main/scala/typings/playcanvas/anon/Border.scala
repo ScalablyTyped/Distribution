@@ -4,17 +4,15 @@ import typings.playcanvas.pc.Vec2
 import typings.playcanvas.pc.Vec4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
-  var border: Vec4 = js.native
+  var border: Vec4
   
-  var pivot: Vec2 = js.native
+  var pivot: Vec2
   
-  var rect: Vec4 = js.native
+  var rect: Vec4
 }
 object Border {
   

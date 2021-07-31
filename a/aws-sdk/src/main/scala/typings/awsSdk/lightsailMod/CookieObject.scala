@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieObject extends StObject {
   
   /**
     * The specific cookies to forward to your distribution's origin.
     */
-  var cookiesAllowList: js.UndefOr[StringList] = js.native
+  var cookiesAllowList: js.UndefOr[StringList] = js.undefined
   
   /**
     * Specifies which cookies to forward to the distribution's origin for a cache behavior: all, none, or allow-list to forward only the cookies specified in the cookiesAllowList parameter.
     */
-  var option: js.UndefOr[ForwardValues] = js.native
+  var option: js.UndefOr[ForwardValues] = js.undefined
 }
 object CookieObject {
   

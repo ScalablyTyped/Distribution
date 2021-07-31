@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChangeSetRequest extends StObject {
   
   /**
     * Required. The catalog related to the request. Fixed value: AWSMarketplace 
     */
-  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog = js.native
+  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog
   
   /**
     * Required. The unique identifier for the StartChangeSet request that you want to describe the details for.
     */
-  var ChangeSetId: ResourceId = js.native
+  var ChangeSetId: ResourceId
 }
 object DescribeChangeSetRequest {
   

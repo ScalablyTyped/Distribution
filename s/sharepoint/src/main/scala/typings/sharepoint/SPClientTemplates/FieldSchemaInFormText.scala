@@ -2,14 +2,14 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a Number field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormText extends FieldSchemaInForm {
+trait FieldSchemaInFormText
+  extends StObject
+     with FieldSchemaInForm {
   
-  var MaxLength: Double = js.native
+  var MaxLength: Double
 }
 object FieldSchemaInFormText {
   

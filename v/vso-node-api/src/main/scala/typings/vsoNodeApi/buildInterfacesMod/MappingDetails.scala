@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingDetails extends StObject {
   
   /**
     * The local path.
     */
-  var localPath: String = js.native
+  var localPath: String
   
   /**
     * The mapping type.
     */
-  var mappingType: String = js.native
+  var mappingType: String
   
   /**
     * The server path.
     */
-  var serverPath: String = js.native
+  var serverPath: String
 }
 object MappingDetails {
   

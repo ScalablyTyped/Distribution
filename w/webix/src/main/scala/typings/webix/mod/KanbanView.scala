@@ -3,9 +3,9 @@ package typings.webix.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,9 +34,14 @@ trait KanbanView extends StObject {
   def getKanban(): js.Any = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String = js.native
   
   var on_context: StringDictionary[js.Any] = js.native
+}
+object KanbanView {
+  
+  @scala.inline
+  def apply: KanbanView = ^.asInstanceOf[js.Dynamic].selectDynamic("KanbanView").asInstanceOf[KanbanView]
 }

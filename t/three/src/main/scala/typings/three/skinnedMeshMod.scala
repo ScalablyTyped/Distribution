@@ -9,7 +9,6 @@ import typings.three.skeletonMod.Skeleton
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skinnedMeshMod {
@@ -19,15 +18,11 @@ object skinnedMeshMod {
   class SkinnedMesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Mesh[TGeometry, TMaterial] {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+    def this(geometry: Unit, material: TMaterial) = this()
     def this(geometry: TGeometry, material: TMaterial, useVertexTexture: Boolean) = this()
-    def this(geometry: TGeometry, material: js.UndefOr[scala.Nothing], useVertexTexture: Boolean) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial, useVertexTexture: Boolean) = this()
-    def this(
-      geometry: js.UndefOr[scala.Nothing],
-      material: js.UndefOr[scala.Nothing],
-      useVertexTexture: Boolean
-    ) = this()
+    def this(geometry: TGeometry, material: Unit, useVertexTexture: Boolean) = this()
+    def this(geometry: Unit, material: TMaterial, useVertexTexture: Boolean) = this()
+    def this(geometry: Unit, material: Unit, useVertexTexture: Boolean) = this()
     
     def bind(skeleton: Skeleton): Unit = js.native
     def bind(skeleton: Skeleton, bindMatrix: Matrix4): Unit = js.native

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,21 +16,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Depending on the underlying font technology, actual device output might be off by up to one device pixel from the transformed metrics.
   * @since OOo 2.0
   */
-@js.native
 trait FontMetrics extends StObject {
   
-  var Ascent: Double = js.native
+  var Ascent: Double
   
-  var Descent: Double = js.native
+  var Descent: Double
   
   /**
     * Extra space outside the font cells.
     *
     * It should not contain ink marks and is typically used by the font designer to modify the line distance.
     */
-  var ExternalLeading: Double = js.native
+  var ExternalLeading: Double
   
-  var InternalLeading: Double = js.native
+  var InternalLeading: Double
   
   /**
     * This value specifies the reference character width of the font.
@@ -39,13 +37,13 @@ trait FontMetrics extends StObject {
     * It's roughly equivalent to the average width of all characters, and if one needs a font with double character width, the referenceCharSize should be
     * doubled.
     */
-  var ReferenceCharSize: Double = js.native
+  var ReferenceCharSize: Double
   
   /** Specifies the offset to be added to the baseline when striking through the text. */
-  var StrikeThroughOffset: Double = js.native
+  var StrikeThroughOffset: Double
   
   /** Specifies the offset to be added to the baseline when drawing underlined text. */
-  var UnderlineOffset: Double = js.native
+  var UnderlineOffset: Double
 }
 object FontMetrics {
   

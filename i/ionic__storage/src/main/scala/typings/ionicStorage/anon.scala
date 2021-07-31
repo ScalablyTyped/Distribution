@@ -2,21 +2,19 @@ package typings.ionicStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DbKey extends StObject {
     
-    var dbKey: String = js.native
+    var dbKey: String
     
-    var driverOrder: js.Array[String] = js.native
+    var driverOrder: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var storeName: String = js.native
+    var storeName: String
   }
   object DbKey {
     

@@ -3,7 +3,6 @@ package typings.postmark
 import typings.postmark.domainMod.DomainDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
@@ -13,8 +12,8 @@ object signatureMod {
   class CreateSignatureRequest protected () extends StObject {
     def this(name: String, fromEmail: String) = this()
     def this(name: String, fromEmail: String, replyToEmail: String) = this()
-    def this(name: String, fromEmail: String, replyToEmail: js.UndefOr[scala.Nothing], returnPathDomain: String) = this()
     def this(name: String, fromEmail: String, replyToEmail: String, returnPathDomain: String) = this()
+    def this(name: String, fromEmail: String, replyToEmail: Unit, returnPathDomain: String) = this()
     
     var FromEmail: String = js.native
     
@@ -29,12 +28,12 @@ object signatureMod {
   @js.native
   class UpdateSignatureRequest () extends StObject {
     def this(Name: String) = this()
-    def this(Name: js.UndefOr[scala.Nothing], ReplyToEmail: String) = this()
     def this(Name: String, ReplyToEmail: String) = this()
-    def this(Name: js.UndefOr[scala.Nothing], ReplyToEmail: js.UndefOr[scala.Nothing], ReturnPathDomain: String) = this()
-    def this(Name: js.UndefOr[scala.Nothing], ReplyToEmail: String, ReturnPathDomain: String) = this()
-    def this(Name: String, ReplyToEmail: js.UndefOr[scala.Nothing], ReturnPathDomain: String) = this()
+    def this(Name: Unit, ReplyToEmail: String) = this()
     def this(Name: String, ReplyToEmail: String, ReturnPathDomain: String) = this()
+    def this(Name: String, ReplyToEmail: Unit, ReturnPathDomain: String) = this()
+    def this(Name: Unit, ReplyToEmail: String, ReturnPathDomain: String) = this()
+    def this(Name: Unit, ReplyToEmail: Unit, ReturnPathDomain: String) = this()
     
     var Name: js.UndefOr[String] = js.native
     
@@ -43,20 +42,19 @@ object signatureMod {
     var ReturnPathDomain: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Signature extends StObject {
     
-    var Confirmed: Boolean = js.native
+    var Confirmed: Boolean
     
-    var Domain: String = js.native
+    var Domain: String
     
-    var EmailAddress: String = js.native
+    var EmailAddress: String
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var Name: String = js.native
+    var Name: String
     
-    var ReplyToEmailAddress: String = js.native
+    var ReplyToEmailAddress: String
   }
   object Signature {
     
@@ -96,16 +94,17 @@ object signatureMod {
     }
   }
   
-  @js.native
-  trait SignatureDetails extends DomainDetails {
+  trait SignatureDetails
+    extends StObject
+       with DomainDetails {
     
-    var Confirmed: Boolean = js.native
+    var Confirmed: Boolean
     
-    var Domain: String = js.native
+    var Domain: String
     
-    var EmailAddress: String = js.native
+    var EmailAddress: String
     
-    var ReplyToEmailAddress: String = js.native
+    var ReplyToEmailAddress: String
   }
   object SignatureDetails {
     
@@ -155,12 +154,11 @@ object signatureMod {
     }
   }
   
-  @js.native
   trait Signatures extends StObject {
     
-    var SenderSignatures: js.Array[Signature] = js.native
+    var SenderSignatures: js.Array[Signature]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object Signatures {
     

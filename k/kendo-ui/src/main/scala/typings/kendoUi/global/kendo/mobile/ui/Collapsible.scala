@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.CollapsibleOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.Collapsible")
 @js.native
 class Collapsible protected ()
-  extends typings.kendoUi.kendo.mobile.ui.Collapsible {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.Collapsible {
   def this(element: Element) = this()
   def this(element: Element, options: CollapsibleOptions) = this()
 }
@@ -21,9 +21,8 @@ object Collapsible {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.Collapsible.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Collapsible = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Collapsible = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Collapsible]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.Collapsible.fn")

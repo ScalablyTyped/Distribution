@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountstatusesCustomBatchResponseEntry extends StObject {
   
   /** The requested account status. Defined if and only if the request was successful. */
-  var accountStatus: js.UndefOr[AccountStatus] = js.native
+  var accountStatus: js.UndefOr[AccountStatus] = js.undefined
   
   /** The ID of the request entry this entry responds to. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** A list of errors defined if and only if the request failed. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
 }
 object AccountstatusesCustomBatchResponseEntry {
   

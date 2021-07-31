@@ -4,7 +4,6 @@ import typings.jquery.JQueryPromise
 import typings.jqueryFancytree.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,7 +30,7 @@ trait Fancytree extends StObject {
     *
     * @returns resolved, when all patches have been applied
     */
-  def applyPatch(patchList: js.Array[NodePatch]): JQueryPromise[_] = js.native
+  def applyPatch(patchList: js.Array[NodePatch]): JQueryPromise[js.Any] = js.native
   
   /** [ext-clones] Replace a refKey with a new one. */
   def changeRefKey(oldRefKey: String, newRefKey: String): Unit = js.native
@@ -58,9 +57,9 @@ trait Fancytree extends StObject {
   
   /** Expand (or collapse) all parent nodes. */
   def expandAll(): Unit = js.native
-  def expandAll(flag: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
   def expandAll(flag: Boolean): Unit = js.native
   def expandAll(flag: Boolean, options: js.Object): Unit = js.native
+  def expandAll(flag: Unit, options: js.Object): Unit = js.native
   
   /** [ext-filter] Dimm or hide whole branches.
     * @returns {integer} count
@@ -106,9 +105,9 @@ trait Fancytree extends StObject {
   
   /** Generate INPUT elements that can be submitted with html forms. In selectMode 3 only the topmost selected nodes are considered. */
   def generateFormElements(): Unit = js.native
-  def generateFormElements(selected: js.UndefOr[scala.Nothing], active: Boolean): Unit = js.native
   def generateFormElements(selected: Boolean): Unit = js.native
   def generateFormElements(selected: Boolean, active: Boolean): Unit = js.native
+  def generateFormElements(selected: Unit, active: Boolean): Unit = js.native
   
   /** Return the currently active node or null.  */
   def getActiveNode(): FancytreeNode = js.native
@@ -167,13 +166,13 @@ trait Fancytree extends StObject {
   def loadKeyPath(
     keyPathList: js.Array[String],
     callback: js.Function2[/* node */ FancytreeNode, /* status */ String, Unit]
-  ): JQueryPromise[_] = js.native
+  ): JQueryPromise[js.Any] = js.native
   /** Make sure that a node with a given ID is loaded, by traversing - and loading - its parents. This method is ment for lazy hierarchies. A callback is executed for every node as we go.
     *
     * @param keyPath a key path (e.g. '/3/2_1/7')
     * @param callback callback(node, status) is called for every visited node ('loading', 'loaded', 'ok', 'error')
     */
-  def loadKeyPath(keyPath: String, callback: js.Function2[/* node */ FancytreeNode, /* status */ String, Unit]): JQueryPromise[_] = js.native
+  def loadKeyPath(keyPath: String, callback: js.Function2[/* node */ FancytreeNode, /* status */ String, Unit]): JQueryPromise[js.Any] = js.native
   
   var options: FancytreeOptions = js.native
   
@@ -184,8 +183,8 @@ trait Fancytree extends StObject {
     *
     * @param source optional new source (defaults to initial source data)
     */
-  def reload(): JQueryPromise[_] = js.native
-  def reload(source: js.Any): JQueryPromise[_] = js.native
+  def reload(): JQueryPromise[js.Any] = js.native
+  def reload(source: js.Any): JQueryPromise[js.Any] = js.native
   
   /** Render tree (i.e. create DOM elements for all top-level nodes).
     *
@@ -193,9 +192,9 @@ trait Fancytree extends StObject {
     * @param deep (default = false)
     */
   def render(): Unit = js.native
-  def render(force: js.UndefOr[scala.Nothing], deep: Boolean): Unit = js.native
   def render(force: Boolean): Unit = js.native
   def render(force: Boolean, deep: Boolean): Unit = js.native
+  def render(force: Unit, deep: Boolean): Unit = js.native
   
   //JQueryUI.Widget;
   var rootNode: FancytreeNode = js.native
@@ -210,16 +209,16 @@ trait Fancytree extends StObject {
     * @param includeRoot Returns the hidden system root node (and its children) (default = false)
     */
   def toDict(): js.Any = js.native
-  def toDict(includeRoot: js.UndefOr[scala.Nothing], callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
   def toDict(includeRoot: Boolean): js.Any = js.native
   def toDict(includeRoot: Boolean, callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
+  def toDict(includeRoot: Unit, callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
   
   /** Call fn(node) for all nodes.
     *
     * @param fn the callback function. Return false to stop iteration, return "skip" to skip this node and children only.
     * @returns false, if the iterator was stopped.
     */
-  def visit(fn: js.Function1[/* node */ FancytreeNode, _]): Boolean = js.native
+  def visit(fn: js.Function1[/* node */ FancytreeNode, js.Any]): Boolean = js.native
   
   /** Write warning to browser console (prepending tree info) */
   def warn(msg: js.Any): Unit = js.native

@@ -5,17 +5,15 @@ import typings.playable.themeTypesMod.IThemeService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playTypesMod {
   
-  @js.native
   trait IPlayControl extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
   }
   object IPlayControl {
     
@@ -36,10 +34,9 @@ object playTypesMod {
     }
   }
   
-  @js.native
   trait IPlayViewCallbacks extends StObject {
     
-    def onButtonClick(): Unit = js.native
+    def onButtonClick(): Unit
   }
   object IPlayViewCallbacks {
     
@@ -57,14 +54,13 @@ object playTypesMod {
     }
   }
   
-  @js.native
   trait IPlayViewConfig extends StObject {
     
-    var callbacks: IPlayViewCallbacks = js.native
+    var callbacks: IPlayViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
   }
   object IPlayViewConfig {
     
@@ -88,18 +84,17 @@ object playTypesMod {
     }
   }
   
-  @js.native
   trait IPlayViewStyles extends StObject {
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var paused: String = js.native
+    var paused: String
     
-    var playControl: String = js.native
+    var playControl: String
     
-    var playbackToggle: String = js.native
+    var playbackToggle: String
   }
   object IPlayViewStyles {
     

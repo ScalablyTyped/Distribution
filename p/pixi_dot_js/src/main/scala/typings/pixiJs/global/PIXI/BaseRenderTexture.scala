@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,6 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.BaseRenderTexture")
 @js.native
 class BaseRenderTexture ()
-  extends typings.pixiJs.PIXI.BaseRenderTexture {
+  extends StObject
+     with typings.pixiJs.PIXI.BaseRenderTexture {
   def this(options: Height) = this()
 }

@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BiddersResource extends StObject {
   
-  var creatives: CreativesResource = js.native
+  var creatives: CreativesResource
   
-  var pretargetingConfigs: PretargetingConfigsResource = js.native
+  var pretargetingConfigs: PretargetingConfigsResource
 }
 object BiddersResource {
   

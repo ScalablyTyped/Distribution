@@ -2,50 +2,48 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatsResponse extends StObject {
   
   /** Average session length in minutes of the player. E.g., 1, 30, 60, ... . Not populated if there is not enough information. */
-  var avg_session_length_minutes: js.UndefOr[Double] = js.native
+  var avg_session_length_minutes: js.UndefOr[Double] = js.undefined
   
   /** The probability of the player not returning to play the game in the next day. E.g., 0, 0.1, 0.5, ..., 1.0. Not populated if there is not enough information. */
-  var churn_probability: js.UndefOr[Double] = js.native
+  var churn_probability: js.UndefOr[Double] = js.undefined
   
   /** Number of days since the player last played this game. E.g., 0, 1, 5, 10, ... . Not populated if there is not enough information. */
-  var days_since_last_played: js.UndefOr[Double] = js.native
+  var days_since_last_played: js.UndefOr[Double] = js.undefined
   
   /** The probability of the player going to spend beyond a threshold amount of money. E.g., 0, 0.25, 0.50, 0.75. Not populated if there is not enough information. */
-  var high_spender_probability: js.UndefOr[Double] = js.native
+  var high_spender_probability: js.UndefOr[Double] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#statsResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Number of in-app purchases made by the player in this game. E.g., 0, 1, 5, 10, ... . Not populated if there is not enough information. */
-  var num_purchases: js.UndefOr[Double] = js.native
+  var num_purchases: js.UndefOr[Double] = js.undefined
   
   /**
     * The approximate number of sessions of the player within the last 28 days, where a session begins when the player is connected to Play Games Services and ends when they are
     * disconnected. E.g., 0, 1, 5, 10, ... . Not populated if there is not enough information.
     */
-  var num_sessions: js.UndefOr[Double] = js.native
+  var num_sessions: js.UndefOr[Double] = js.undefined
   
   /**
     * The approximation of the sessions percentile of the player within the last 30 days, where a session begins when the player is connected to Play Games Services and ends when they are
     * disconnected. E.g., 0, 0.25, 0.5, 0.75. Not populated if there is not enough information.
     */
-  var num_sessions_percentile: js.UndefOr[Double] = js.native
+  var num_sessions_percentile: js.UndefOr[Double] = js.undefined
   
   /** The approximate spend percentile of the player in this game. E.g., 0, 0.25, 0.5, 0.75. Not populated if there is not enough information. */
-  var spend_percentile: js.UndefOr[Double] = js.native
+  var spend_percentile: js.UndefOr[Double] = js.undefined
   
   /** The probability of the player going to spend the game in the next seven days. E.g., 0, 0.25, 0.50, 0.75. Not populated if there is not enough information. */
-  var spend_probability: js.UndefOr[Double] = js.native
+  var spend_probability: js.UndefOr[Double] = js.undefined
   
   /** The predicted amount of money that the player going to spend in the next 28 days. E.g., 1, 30, 60, ... . Not populated if there is not enough information. */
-  var total_spend_next_28_days: js.UndefOr[Double] = js.native
+  var total_spend_next_28_days: js.UndefOr[Double] = js.undefined
 }
 object StatsResponse {
   

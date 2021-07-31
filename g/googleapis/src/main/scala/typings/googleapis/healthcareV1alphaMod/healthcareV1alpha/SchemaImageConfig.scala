@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies how de-identification of image pixel should be handled.
   */
-@js.native
 trait SchemaImageConfig extends StObject {
   
   /**
     * If true, all text found in the image is redacted.
     */
-  var redactAllText: js.UndefOr[Boolean] = js.native
+  var redactAllText: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaImageConfig {
   

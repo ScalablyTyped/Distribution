@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopICD10CMInferenceJobResponse extends StObject {
   
   /**
     * The identifier generated for the job. To get the status of job, use this identifier with the DescribeICD10CMInferenceJob operation.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobId] = js.undefined
 }
 object StopICD10CMInferenceJobResponse {
   

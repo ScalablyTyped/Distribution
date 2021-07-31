@@ -3,21 +3,19 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.Color1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartBoxStyle extends StObject {
   
-  var gradient: js.UndefOr[Color1] = js.native
+  var gradient: js.UndefOr[Color1] = js.undefined
   
-  var rx: js.UndefOr[Double] = js.native
+  var rx: js.UndefOr[Double] = js.undefined
   
-  var ry: js.UndefOr[Double] = js.native
+  var ry: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object ChartBoxStyle {
   

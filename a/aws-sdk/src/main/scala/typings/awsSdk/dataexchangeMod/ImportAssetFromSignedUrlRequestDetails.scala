@@ -2,31 +2,29 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportAssetFromSignedUrlRequestDetails extends StObject {
   
   /**
     * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name.
     */
-  var AssetName: typings.awsSdk.dataexchangeMod.AssetName = js.native
+  var AssetName: typings.awsSdk.dataexchangeMod.AssetName
   
   /**
     * The unique identifier for the data set associated with this import job.
     */
-  var DataSetId: Id = js.native
+  var DataSetId: Id
   
   /**
     * The Base64-encoded Md5 hash for the asset, used to ensure the integrity of the file at that location.
     */
-  var Md5Hash: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093 = js.native
+  var Md5Hash: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093
   
   /**
     * The unique identifier for the revision associated with this import request.
     */
-  var RevisionId: Id = js.native
+  var RevisionId: Id
 }
 object ImportAssetFromSignedUrlRequestDetails {
   

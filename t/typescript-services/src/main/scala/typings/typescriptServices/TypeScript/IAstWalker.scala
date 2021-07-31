@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAstWalker extends StObject {
   
-  var options: AstWalkOptions = js.native
+  var options: AstWalkOptions
   
-  var state: js.Any = js.native
+  var state: js.Any
 }
 object IAstWalker {
   

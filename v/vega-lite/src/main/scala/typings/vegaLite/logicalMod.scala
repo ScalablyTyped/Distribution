@@ -2,35 +2,34 @@ package typings.vegaLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logicalMod {
   
-  @JSImport("vega-lite/build/src/logical", "forEachLeaf")
+  @JSImport("vega-lite/build/src/logical", JSImport.Namespace)
   @js.native
-  def forEachLeaf[T](op: LogicalComposition[T], fn: js.Function1[/* op */ T, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/logical", "isLogicalAnd")
-  @js.native
-  def isLogicalAnd(op: LogicalComposition[_]): /* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean = js.native
+  @scala.inline
+  def forEachLeaf[T](op: LogicalComposition[T], fn: js.Function1[/* op */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachLeaf")(op.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/logical", "isLogicalNot")
-  @js.native
-  def isLogicalNot(op: LogicalComposition[_]): /* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean = js.native
+  @scala.inline
+  def isLogicalAnd(op: LogicalComposition[js.Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalAnd")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean]
   
-  @JSImport("vega-lite/build/src/logical", "isLogicalOr")
-  @js.native
-  def isLogicalOr(op: LogicalComposition[_]): /* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean = js.native
+  @scala.inline
+  def isLogicalNot(op: LogicalComposition[js.Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalNot")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean]
   
-  @JSImport("vega-lite/build/src/logical", "normalizeLogicalComposition")
-  @js.native
-  def normalizeLogicalComposition[T](op: LogicalComposition[T], normalizer: js.Function1[/* o */ T, T]): LogicalComposition[T] = js.native
+  @scala.inline
+  def isLogicalOr(op: LogicalComposition[js.Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalOr")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean]
   
-  @js.native
-  trait LogicalAnd[T] extends _LogicalComposition[T] {
+  @scala.inline
+  def normalizeLogicalComposition[T](op: LogicalComposition[T], normalizer: js.Function1[/* o */ T, T]): LogicalComposition[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLogicalComposition")(op.asInstanceOf[js.Any], normalizer.asInstanceOf[js.Any])).asInstanceOf[LogicalComposition[T]]
+  
+  trait LogicalAnd[T]
+    extends StObject
+       with _LogicalComposition[T] {
     
-    var and: js.Array[LogicalComposition[T]] = js.native
+    var and: js.Array[LogicalComposition[T]]
   }
   object LogicalAnd {
     
@@ -41,7 +40,7 @@ object logicalMod {
     }
     
     @scala.inline
-    implicit class LogicalAndMutableBuilder[Self <: LogicalAnd[_], T] (val x: Self with LogicalAnd[T]) extends AnyVal {
+    implicit class LogicalAndMutableBuilder[Self <: LogicalAnd[?], T] (val x: Self & LogicalAnd[T]) extends AnyVal {
       
       @scala.inline
       def setAnd(value: js.Array[LogicalComposition[T]]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
@@ -59,10 +58,11 @@ object logicalMod {
   */
   type LogicalComposition[T] = _LogicalComposition[T] | T
   
-  @js.native
-  trait LogicalNot[T] extends _LogicalComposition[T] {
+  trait LogicalNot[T]
+    extends StObject
+       with _LogicalComposition[T] {
     
-    var not: LogicalComposition[T] = js.native
+    var not: LogicalComposition[T]
   }
   object LogicalNot {
     
@@ -73,17 +73,18 @@ object logicalMod {
     }
     
     @scala.inline
-    implicit class LogicalNotMutableBuilder[Self <: LogicalNot[_], T] (val x: Self with LogicalNot[T]) extends AnyVal {
+    implicit class LogicalNotMutableBuilder[Self <: LogicalNot[?], T] (val x: Self & LogicalNot[T]) extends AnyVal {
       
       @scala.inline
       def setNot(value: LogicalComposition[T]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait LogicalOr[T] extends _LogicalComposition[T] {
+  trait LogicalOr[T]
+    extends StObject
+       with _LogicalComposition[T] {
     
-    var or: js.Array[LogicalComposition[T]] = js.native
+    var or: js.Array[LogicalComposition[T]]
   }
   object LogicalOr {
     
@@ -94,7 +95,7 @@ object logicalMod {
     }
     
     @scala.inline
-    implicit class LogicalOrMutableBuilder[Self <: LogicalOr[_], T] (val x: Self with LogicalOr[T]) extends AnyVal {
+    implicit class LogicalOrMutableBuilder[Self <: LogicalOr[?], T] (val x: Self & LogicalOr[T]) extends AnyVal {
       
       @scala.inline
       def setOr(value: js.Array[LogicalComposition[T]]): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])

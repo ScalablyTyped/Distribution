@@ -3,17 +3,15 @@ package typings.vsoNodeApi.workInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamIterationAttributes extends StObject {
   
-  var finishDate: Date = js.native
+  var finishDate: Date
   
-  var startDate: Date = js.native
+  var startDate: Date
   
-  var timeFrame: TimeFrame = js.native
+  var timeFrame: TimeFrame
 }
 object TeamIterationAttributes {
   

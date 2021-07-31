@@ -5,11 +5,9 @@ import typings.activexLibreoffice.com_.sun.star.drawing.PolyPolygonBezierCoords
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** properties that are used for {@link DataSeries} that display symbols. */
-@js.native
 trait Symbol extends StObject {
   
   /**
@@ -17,23 +15,23 @@ trait Symbol extends StObject {
     *
     * Only effective if {@link Style} is SymbolStyle::AUTO, SymbolStyle::STANDARD or SymbolStyle::POLYGON.
     */
-  var BorderColor: Double = js.native
+  var BorderColor: Double
   
   /**
     * The color used for filling symbols that contain closed polygons.
     *
     * Only effective if {@link Style} is SymbolStyle::AUTO, SymbolStyle::STANDARD or SymbolStyle::POLYGON.
     */
-  var FillColor: Double = js.native
+  var FillColor: Double
   
   /** use this graphic as symbol */
-  var Graphic: XGraphic = js.native
+  var Graphic: XGraphic
   
   /** The given polygon is used as symbol. */
-  var PolygonCoords: PolyPolygonBezierCoords = js.native
+  var PolygonCoords: PolyPolygonBezierCoords
   
   /** The size of the symbol in 100th of a mm. */
-  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /**
     * Use the nth standard symbol, if {@link Style} is set to SymbolStlye::STANDARD.
@@ -44,10 +42,10 @@ trait Symbol extends StObject {
     *
     * {{table here, see documentation}}
     */
-  var StandardSymbol: Double = js.native
+  var StandardSymbol: Double
   
   /** determines which of the following members determines the appearance of the symbol. */
-  var Style: SymbolStyle = js.native
+  var Style: SymbolStyle
 }
 object Symbol {
   

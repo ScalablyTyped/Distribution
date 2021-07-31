@@ -2,46 +2,44 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecommendationExportJob extends StObject {
   
   /**
     * The timestamp of when the export job was created.
     */
-  var creationTimestamp: js.UndefOr[CreationTimestamp] = js.native
+  var creationTimestamp: js.UndefOr[CreationTimestamp] = js.undefined
   
   /**
     * An object that describes the destination of the export file.
     */
-  var destination: js.UndefOr[ExportDestination] = js.native
+  var destination: js.UndefOr[ExportDestination] = js.undefined
   
   /**
     * The reason for an export job failure.
     */
-  var failureReason: js.UndefOr[FailureReason] = js.native
+  var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The identification number of the export job.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     * The timestamp of when the export job was last updated.
     */
-  var lastUpdatedTimestamp: js.UndefOr[LastUpdatedTimestamp] = js.native
+  var lastUpdatedTimestamp: js.UndefOr[LastUpdatedTimestamp] = js.undefined
   
   /**
     * The resource type of the exported recommendations.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The status of the export job.
     */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
 }
 object RecommendationExportJob {
   

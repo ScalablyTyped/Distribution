@@ -8,7 +8,6 @@ import typings.std.HTMLElement
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -31,18 +30,17 @@ object typesMod {
   
   type AttachTouch = js.Function2[/* el */ HTMLElement, /* passive */ Boolean, js.Function0[Unit]]
   
-  @js.native
   trait ConfigurationOptions extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var preventDefaultTouchmoveEvent: Boolean = js.native
+    var preventDefaultTouchmoveEvent: Boolean
     
-    var rotationAngle: Double = js.native
+    var rotationAngle: Double
     
-    var trackMouse: Boolean = js.native
+    var trackMouse: Boolean
     
-    var trackTouch: Boolean = js.native
+    var trackTouch: Boolean
   }
   object ConfigurationOptions {
     
@@ -92,28 +90,27 @@ object typesMod {
   
   type SwipeDirections = /* "Left" */ String
   
-  @js.native
   trait SwipeEventData extends StObject {
     
-    var absX: Double = js.native
+    var absX: Double
     
-    var absY: Double = js.native
+    var absY: Double
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var dir: SwipeDirections = js.native
+    var dir: SwipeDirections
     
-    var event: HandledEvents = js.native
+    var event: HandledEvents
     
-    var first: Boolean = js.native
+    var first: Boolean
     
-    var initial: Vector2 = js.native
+    var initial: Vector2
     
-    var velocity: Double = js.native
+    var velocity: Double
     
-    var vxvy: Vector2 = js.native
+    var vxvy: Vector2
   }
   object SwipeEventData {
     
@@ -169,22 +166,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SwipeableCallbacks extends StObject {
     
-    var onSwiped: SwipeCallback = js.native
+    var onSwiped: SwipeCallback
     
-    var onSwipedDown: SwipeCallback = js.native
+    var onSwipedDown: SwipeCallback
     
-    var onSwipedLeft: SwipeCallback = js.native
+    var onSwipedLeft: SwipeCallback
     
-    var onSwipedRight: SwipeCallback = js.native
+    var onSwipedRight: SwipeCallback
     
-    var onSwipedUp: SwipeCallback = js.native
+    var onSwipedUp: SwipeCallback
     
-    var onSwiping: SwipeCallback = js.native
+    var onSwiping: SwipeCallback
     
-    var onTap: TapCallback = js.native
+    var onTap: TapCallback
   }
   object SwipeableCallbacks {
     
@@ -238,32 +234,31 @@ object typesMod {
   }
   
   /* Inlined std.Partial<react-swipeable.react-swipeable/dist/types.SwipeableCallbacks & react-swipeable.react-swipeable/dist/types.ConfigurationOptions> */
-  @js.native
   trait SwipeableProps extends StObject {
     
-    var delta: js.UndefOr[Double] = js.native
+    var delta: js.UndefOr[Double] = js.undefined
     
-    var onSwiped: js.UndefOr[SwipeCallback] = js.native
+    var onSwiped: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedDown: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedDown: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedLeft: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedLeft: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedRight: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedRight: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedUp: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedUp: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwiping: js.UndefOr[SwipeCallback] = js.native
+    var onSwiping: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onTap: js.UndefOr[TapCallback] = js.native
+    var onTap: js.UndefOr[TapCallback] = js.undefined
     
-    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.native
+    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
     
-    var rotationAngle: js.UndefOr[Double] = js.native
+    var rotationAngle: js.UndefOr[Double] = js.undefined
     
-    var trackMouse: js.UndefOr[Boolean] = js.native
+    var trackMouse: js.UndefOr[Boolean] = js.undefined
     
-    var trackTouch: js.UndefOr[Boolean] = js.native
+    var trackTouch: js.UndefOr[Boolean] = js.undefined
   }
   object SwipeableProps {
     
@@ -351,32 +346,31 @@ object typesMod {
   }
   
   /* Inlined std.Partial<react-swipeable.react-swipeable/dist/types.SwipeableCallbacks> & react-swipeable.react-swipeable/dist/types.ConfigurationOptions */
-  @js.native
   trait SwipeablePropsWithDefaultOptions extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var onSwiped: js.UndefOr[SwipeCallback] = js.native
+    var onSwiped: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedDown: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedDown: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedLeft: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedLeft: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedRight: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedRight: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwipedUp: js.UndefOr[SwipeCallback] = js.native
+    var onSwipedUp: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onSwiping: js.UndefOr[SwipeCallback] = js.native
+    var onSwiping: js.UndefOr[SwipeCallback] = js.undefined
     
-    var onTap: js.UndefOr[TapCallback] = js.native
+    var onTap: js.UndefOr[TapCallback] = js.undefined
     
-    var preventDefaultTouchmoveEvent: Boolean = js.native
+    var preventDefaultTouchmoveEvent: Boolean
     
-    var rotationAngle: Double = js.native
+    var rotationAngle: Double
     
-    var trackMouse: Boolean = js.native
+    var trackMouse: Boolean
     
-    var trackTouch: Boolean = js.native
+    var trackTouch: Boolean
   }
   object SwipeablePropsWithDefaultOptions {
     
@@ -454,24 +448,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SwipeableState extends StObject {
     
-    var cleanUpTouch: js.UndefOr[js.Function0[Unit]] = js.native
+    var cleanUpTouch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var el: js.UndefOr[HTMLElement] = js.native
+    var el: js.UndefOr[HTMLElement] = js.undefined
     
-    var eventData: js.UndefOr[SwipeEventData] = js.native
+    var eventData: js.UndefOr[SwipeEventData] = js.undefined
     
-    var first: Boolean = js.native
+    var first: Boolean
     
-    var initial: Vector2 = js.native
+    var initial: Vector2
     
-    var start: Double = js.native
+    var start: Double
     
-    var swiping: Boolean = js.native
+    var swiping: Boolean
     
-    var xy: Vector2 = js.native
+    var xy: Vector2
   }
   object SwipeableState {
     

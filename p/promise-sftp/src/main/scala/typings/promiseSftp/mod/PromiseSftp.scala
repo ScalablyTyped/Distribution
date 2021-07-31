@@ -12,7 +12,6 @@ import typings.ssh2Streams.mod.Stats
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -228,9 +227,9 @@ trait PromiseSftp extends StObject {
     */
   def mkdir(path: String): typings.bluebird.mod.^[Unit] = js.native
   def mkdir(path: String, attributes: InputAttributes): typings.bluebird.mod.^[Unit] = js.native
-  def mkdir(path: String, recursive: js.UndefOr[scala.Nothing], attributes: InputAttributes): typings.bluebird.mod.^[Unit] = js.native
   def mkdir(path: String, recursive: Boolean): typings.bluebird.mod.^[Unit] = js.native
   def mkdir(path: String, recursive: Boolean, attributes: InputAttributes): typings.bluebird.mod.^[Unit] = js.native
+  def mkdir(path: String, recursive: Unit, attributes: InputAttributes): typings.bluebird.mod.^[Unit] = js.native
   
   /**
     * Opens a file on the server.

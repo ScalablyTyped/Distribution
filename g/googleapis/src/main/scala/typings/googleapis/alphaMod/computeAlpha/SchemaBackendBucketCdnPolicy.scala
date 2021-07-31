@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message containing Cloud CDN configuration for a backend bucket.
   */
-@js.native
 trait SchemaBackendBucketCdnPolicy extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait SchemaBackendBucketCdnPolicy extends StObject {
     * max-age=[TTL]&quot; header, regardless of any existing Cache-Control
     * header. The actual headers served in responses will not be altered.
     */
-  var signedUrlCacheMaxAgeSec: js.UndefOr[String] = js.native
+  var signedUrlCacheMaxAgeSec: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Names of the keys for signing request URLs.
     */
-  var signedUrlKeyNames: js.UndefOr[js.Array[String]] = js.native
+  var signedUrlKeyNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaBackendBucketCdnPolicy {
   

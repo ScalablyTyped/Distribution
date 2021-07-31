@@ -2,25 +2,23 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loader extends StObject {
   
-  var allowedSchemas: js.UndefOr[String | js.Array[String]] = js.native
+  var allowedSchemas: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var blacklist: js.UndefOr[String | js.Array[String]] = js.native
+  var blacklist: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var exceptions: js.UndefOr[String | js.Array[String]] = js.native
+  var exceptions: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var functionBlacklist: js.UndefOr[String | js.Array[String]] = js.native
+  var functionBlacklist: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var functionWhitelist: js.UndefOr[String | js.Array[String]] = js.native
+  var functionWhitelist: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var scripts: js.UndefOr[String] = js.native
+  var scripts: js.UndefOr[String] = js.undefined
   
-  var whitelist: js.UndefOr[String | js.Array[String]] = js.native
+  var whitelist: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object Loader {
   

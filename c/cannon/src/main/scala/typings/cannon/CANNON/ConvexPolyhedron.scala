@@ -2,13 +2,13 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConvexPolyhedron extends Shape {
+trait ConvexPolyhedron
+  extends StObject
+     with Shape {
   
-  def calculateWorldAABB(pos: Vec3, quat: Quaternion, min: Vec3, max: Vec3): Unit = js.native
+  def calculateWorldAABB(pos: Vec3, quat: Quaternion, min: Vec3, max: Vec3): Unit
   
   def clipAgainstHull(
     posA: Vec3,
@@ -18,8 +18,8 @@ trait ConvexPolyhedron extends Shape {
     separatingNormal: Vec3,
     minDist: Double,
     maxDist: Double,
-    result: js.Array[_]
-  ): Unit = js.native
+    result: js.Array[js.Any]
+  ): Unit
   
   def clipFaceAgainstHull(
     separatingNormal: Vec3,
@@ -28,24 +28,24 @@ trait ConvexPolyhedron extends Shape {
     worldVertsB1: js.Array[Vec3],
     minDist: Double,
     maxDist: Double,
-    result: js.Array[_]
-  ): Unit = js.native
+    result: js.Array[js.Any]
+  ): Unit
   
-  def clipFaceAgainstPlane(inVertices: js.Array[Vec3], outVertices: js.Array[Vec3], planeNormal: Vec3, planeConstant: Double): Vec3 = js.native
+  def clipFaceAgainstPlane(inVertices: js.Array[Vec3], outVertices: js.Array[Vec3], planeNormal: Vec3, planeConstant: Double): Vec3
   
-  def computeEdges(): Unit = js.native
+  def computeEdges(): Unit
   
-  def computeLocalAABB(aabbmin: Vec3, aabbmax: Vec3): Unit = js.native
+  def computeLocalAABB(aabbmin: Vec3, aabbmax: Vec3): Unit
   
-  def computeNormals(): Unit = js.native
+  def computeNormals(): Unit
   
-  def computeWorldFaceNormals(quat: Quaternion): Unit = js.native
+  def computeWorldFaceNormals(quat: Quaternion): Unit
   
-  def computeWorldVertices(position: Vec3, quat: Quaternion): Unit = js.native
+  def computeWorldVertices(position: Vec3, quat: Quaternion): Unit
   
-  var faceNormals: js.Array[Vec3] = js.native
+  var faceNormals: js.Array[Vec3]
   
-  var faces: js.Array[js.Array[Double]] = js.native
+  var faces: js.Array[js.Array[Double]]
   
   def findSaparatingAxis(
     hullB: ConvexPolyhedron,
@@ -54,29 +54,29 @@ trait ConvexPolyhedron extends Shape {
     posB: Vec3,
     quatB: Quaternion,
     target: Vec3,
-    faceListA: js.Array[_],
-    faceListB: js.Array[_]
-  ): Boolean = js.native
+    faceListA: js.Array[js.Any],
+    faceListB: js.Array[js.Any]
+  ): Boolean
   
-  def getAveragePointLocal(target: Vec3): Vec3 = js.native
+  def getAveragePointLocal(target: Vec3): Vec3
   
-  def getFaceNormal(i: Double, target: Vec3): Vec3 = js.native
+  def getFaceNormal(i: Double, target: Vec3): Vec3
   
-  def getPlaneConstantOfFace(face_i: Double): Double = js.native
+  def getPlaneConstantOfFace(face_i: Double): Double
   
-  def pointIsInside(p: Vec3): Boolean = js.native
+  def pointIsInside(p: Vec3): Boolean
   
-  def testSepAxis(axis: Vec3, hullB: ConvexPolyhedron, posA: Vec3, quatA: Quaternion, posB: Vec3, quatB: Quaternion): Double = js.native
+  def testSepAxis(axis: Vec3, hullB: ConvexPolyhedron, posA: Vec3, quatA: Quaternion, posB: Vec3, quatB: Quaternion): Double
   
-  def transformAllPoints(offset: Vec3, quat: Quaternion): Unit = js.native
+  def transformAllPoints(offset: Vec3, quat: Quaternion): Unit
   
-  var uniqueEdges: js.Array[Vec3] = js.native
+  var uniqueEdges: js.Array[Vec3]
   
-  var vertices: js.Array[Vec3] = js.native
+  var vertices: js.Array[Vec3]
   
-  var worldVertices: js.Array[Vec3] = js.native
+  var worldVertices: js.Array[Vec3]
   
-  var worldVerticesNeedsUpdate: Boolean = js.native
+  var worldVerticesNeedsUpdate: Boolean
 }
 object ConvexPolyhedron {
   
@@ -85,8 +85,8 @@ object ConvexPolyhedron {
     boundingSphereRadius: Double,
     calculateLocalInertia: (Double, Vec3) => Vec3,
     calculateWorldAABB: (Vec3, Quaternion, Vec3, Vec3) => Unit,
-    clipAgainstHull: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[_]) => Unit,
-    clipFaceAgainstHull: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[_]) => Unit,
+    clipAgainstHull: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[js.Any]) => Unit,
+    clipFaceAgainstHull: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[js.Any]) => Unit,
     clipFaceAgainstPlane: (js.Array[Vec3], js.Array[Vec3], Vec3, Double) => Vec3,
     collisionResponse: Boolean,
     computeEdges: () => Unit,
@@ -96,7 +96,7 @@ object ConvexPolyhedron {
     computeWorldVertices: (Vec3, Quaternion) => Unit,
     faceNormals: js.Array[Vec3],
     faces: js.Array[js.Array[Double]],
-    findSaparatingAxis: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[_], js.Array[_]) => Boolean,
+    findSaparatingAxis: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[js.Any], js.Array[js.Any]) => Boolean,
     getAveragePointLocal: Vec3 => Vec3,
     getFaceNormal: (Double, Vec3) => Vec3,
     getPlaneConstantOfFace: Double => Double,
@@ -123,10 +123,10 @@ object ConvexPolyhedron {
     def setCalculateWorldAABB(value: (Vec3, Quaternion, Vec3, Vec3) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setClipAgainstHull(value: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "clipAgainstHull", js.Any.fromFunction8(value))
+    def setClipAgainstHull(value: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "clipAgainstHull", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setClipFaceAgainstHull(value: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "clipFaceAgainstHull", js.Any.fromFunction7(value))
+    def setClipFaceAgainstHull(value: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "clipFaceAgainstHull", js.Any.fromFunction7(value))
     
     @scala.inline
     def setClipFaceAgainstPlane(value: (js.Array[Vec3], js.Array[Vec3], Vec3, Double) => Vec3): Self = StObject.set(x, "clipFaceAgainstPlane", js.Any.fromFunction4(value))
@@ -160,7 +160,7 @@ object ConvexPolyhedron {
     
     @scala.inline
     def setFindSaparatingAxis(
-      value: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[_], js.Array[_]) => Boolean
+      value: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[js.Any], js.Array[js.Any]) => Boolean
     ): Self = StObject.set(x, "findSaparatingAxis", js.Any.fromFunction8(value))
     
     @scala.inline

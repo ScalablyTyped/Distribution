@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jestValidate.typesMod.DeprecatedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dicts
-    extends /* s */ StringDictionary[
+    extends StObject
+       with /* s */ StringDictionary[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any
         ] {
     
-    var deprecationEntries: DeprecatedOptions = js.native
+    var deprecationEntries: DeprecatedOptions
   }
   object Dicts {
     
@@ -33,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HasDeprecationWarnings extends StObject {
     
-    var hasDeprecationWarnings: Boolean = js.native
+    var hasDeprecationWarnings: Boolean
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object HasDeprecationWarnings {
     

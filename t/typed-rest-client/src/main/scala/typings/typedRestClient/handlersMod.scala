@@ -2,7 +2,6 @@ package typings.typedRestClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlersMod {
@@ -29,8 +28,8 @@ object handlersMod {
     extends typings.typedRestClient.ntlmMod.NtlmCredentialHandler {
     def this(username: String, password: String) = this()
     def this(username: String, password: String, workstation: String) = this()
-    def this(username: String, password: String, workstation: js.UndefOr[scala.Nothing], domain: String) = this()
     def this(username: String, password: String, workstation: String, domain: String) = this()
+    def this(username: String, password: String, workstation: Unit, domain: String) = this()
   }
   
   @JSImport("typed-rest-client/Handlers", "PersonalAccessTokenCredentialHandler")

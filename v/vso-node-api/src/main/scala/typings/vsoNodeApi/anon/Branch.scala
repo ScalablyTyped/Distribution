@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Branch extends StObject {
   
-  var branch: scala.Double = js.native
+  var branch: scala.Double
   
-  var commit: scala.Double = js.native
+  var commit: scala.Double
   
-  var tag: scala.Double = js.native
+  var tag: scala.Double
 }
 object Branch {
   

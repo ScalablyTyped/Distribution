@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait FlexWrap extends StObject
 object FlexWrap extends StObject {
   
   @js.native
-  sealed trait NoWrap extends FlexWrap
+  sealed trait NoWrap
+    extends StObject
+       with FlexWrap
   
   @js.native
-  sealed trait Wrap extends FlexWrap
+  sealed trait Wrap
+    extends StObject
+       with FlexWrap
   
   @js.native
-  sealed trait WrapReverse extends FlexWrap
+  sealed trait WrapReverse
+    extends StObject
+       with FlexWrap
 }

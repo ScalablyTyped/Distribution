@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMaintenanceWindowScheduleRequest extends StObject {
   
   /**
     * Filters used to limit the range of results. For example, you can limit maintenance window executions to only those scheduled before or after a certain date and time.
     */
-  var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.native
+  var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[MaintenanceWindowSearchMaxResults] = js.native
+  var MaxResults: js.UndefOr[MaintenanceWindowSearchMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The type of resource you want to retrieve information about. For example, "INSTANCE".
     */
-  var ResourceType: js.UndefOr[MaintenanceWindowResourceType] = js.native
+  var ResourceType: js.UndefOr[MaintenanceWindowResourceType] = js.undefined
   
   /**
     * The instance ID or key/value pair to retrieve information about.
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
   /**
     * The ID of the maintenance window to retrieve information about.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }
 object DescribeMaintenanceWindowScheduleRequest {
   

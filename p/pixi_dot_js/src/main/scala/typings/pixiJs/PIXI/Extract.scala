@@ -5,7 +5,6 @@ import typings.std.HTMLImageElement
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,13 +42,13 @@ trait Extract extends StObject {
     * @return {string} A base64 encoded string of the texture.
     */
   def base64(target: DisplayObject): String = js.native
-  def base64(target: DisplayObject, format: js.UndefOr[scala.Nothing], quality: Double): String = js.native
   def base64(target: DisplayObject, format: String): String = js.native
   def base64(target: DisplayObject, format: String, quality: Double): String = js.native
+  def base64(target: DisplayObject, format: Unit, quality: Double): String = js.native
   def base64(target: RenderTexture): String = js.native
-  def base64(target: RenderTexture, format: js.UndefOr[scala.Nothing], quality: Double): String = js.native
   def base64(target: RenderTexture, format: String): String = js.native
   def base64(target: RenderTexture, format: String, quality: Double): String = js.native
+  def base64(target: RenderTexture, format: Unit, quality: Double): String = js.native
   
   /**
     * Creates a Canvas element, renders this target to it and then returns it.
@@ -77,13 +76,13 @@ trait Extract extends StObject {
     * @return {HTMLImageElement} HTML Image of the target
     */
   def image(target: DisplayObject): HTMLImageElement = js.native
-  def image(target: DisplayObject, format: js.UndefOr[scala.Nothing], quality: Double): HTMLImageElement = js.native
   def image(target: DisplayObject, format: String): HTMLImageElement = js.native
   def image(target: DisplayObject, format: String, quality: Double): HTMLImageElement = js.native
+  def image(target: DisplayObject, format: Unit, quality: Double): HTMLImageElement = js.native
   def image(target: RenderTexture): HTMLImageElement = js.native
-  def image(target: RenderTexture, format: js.UndefOr[scala.Nothing], quality: Double): HTMLImageElement = js.native
   def image(target: RenderTexture, format: String): HTMLImageElement = js.native
   def image(target: RenderTexture, format: String, quality: Double): HTMLImageElement = js.native
+  def image(target: RenderTexture, format: Unit, quality: Double): HTMLImageElement = js.native
   
   /**
     * Will return a one-dimensional array containing the pixel data of the entire texture in RGBA

@@ -2,91 +2,89 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the cluster.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The certificate-authority-data for your cluster.
     */
-  var certificateAuthority: js.UndefOr[Certificate] = js.native
+  var certificateAuthority: js.UndefOr[Certificate] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[String] = js.native
+  var clientRequestToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Unix epoch timestamp in seconds for when the cluster was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The encryption configuration for the cluster.
     */
-  var encryptionConfig: js.UndefOr[EncryptionConfigList] = js.native
+  var encryptionConfig: js.UndefOr[EncryptionConfigList] = js.undefined
   
   /**
     * The endpoint for your Kubernetes API server.
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The identity provider information for the cluster.
     */
-  var identity: js.UndefOr[Identity] = js.native
+  var identity: js.UndefOr[Identity] = js.undefined
   
   /**
     * Network configuration settings for your cluster.
     */
-  var kubernetesNetworkConfig: js.UndefOr[KubernetesNetworkConfigResponse] = js.native
+  var kubernetesNetworkConfig: js.UndefOr[KubernetesNetworkConfigResponse] = js.undefined
   
   /**
     * The logging configuration for your cluster.
     */
-  var logging: js.UndefOr[Logging] = js.native
+  var logging: js.UndefOr[Logging] = js.undefined
   
   /**
     * The name of the cluster.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The platform version of your Amazon EKS cluster. For more information, see Platform Versions in the  Amazon EKS User Guide .
     */
-  var platformVersion: js.UndefOr[String] = js.native
+  var platformVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The VPC configuration used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide.
     */
-  var resourcesVpcConfig: js.UndefOr[VpcConfigResponse] = js.native
+  var resourcesVpcConfig: js.UndefOr[VpcConfigResponse] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf.
     */
-  var roleArn: js.UndefOr[String] = js.native
+  var roleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The current status of the cluster.
     */
-  var status: js.UndefOr[ClusterStatus] = js.native
+  var status: js.UndefOr[ClusterStatus] = js.undefined
   
   /**
     * The metadata that you apply to the cluster to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Cluster tags do not propagate to any other resources associated with the cluster. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The Kubernetes server version for the cluster.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Cluster {
   

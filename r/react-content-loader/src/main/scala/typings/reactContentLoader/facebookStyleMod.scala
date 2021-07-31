@@ -5,7 +5,6 @@ import typings.react.mod.FC
 import typings.reactContentLoader.mod.IContentLoaderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object facebookStyleMod extends Shortcut {

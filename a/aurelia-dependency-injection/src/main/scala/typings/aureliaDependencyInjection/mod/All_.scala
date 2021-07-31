@@ -2,7 +2,6 @@ package typings.aureliaDependencyInjection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "All")
@@ -15,7 +14,10 @@ class All_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protec
 /* static members */
 object All_ {
   
-  @JSImport("aurelia-dependency-injection", "All.of")
+  @JSImport("aurelia-dependency-injection", "All")
   @js.native
-  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): All_[TBase, TImpl, TArgs] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): All_[TBase, TImpl, TArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any]).asInstanceOf[All_[TBase, TImpl, TArgs]]
 }

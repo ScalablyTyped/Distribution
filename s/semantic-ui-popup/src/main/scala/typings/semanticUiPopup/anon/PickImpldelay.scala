@@ -3,14 +3,12 @@ package typings.semanticUiPopup.anon
 import typings.semanticUiPopup.SemanticUI.Popup.DelaySettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'delay'> */
-@js.native
 trait PickImpldelay extends StObject {
   
-  var delay: DelaySettings = js.native
+  var delay: DelaySettings
 }
 object PickImpldelay {
   

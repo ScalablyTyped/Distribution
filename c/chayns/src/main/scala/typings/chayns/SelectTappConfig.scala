@@ -2,20 +2,18 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.selectTapp()
-@js.native
 trait SelectTappConfig extends StObject {
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var internalName: js.UndefOr[String] = js.native
+  var internalName: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
-  var showName: js.UndefOr[String] = js.native
+  var showName: js.UndefOr[String] = js.undefined
 }
 object SelectTappConfig {
   

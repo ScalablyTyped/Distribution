@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object views {
   
-  @js.native
-  trait XAbstractView extends XInterface {
+  trait XAbstractView
+    extends StObject
+       with XInterface {
     
-    val Document: XDocumentView = js.native
+    val Document: XDocumentView
     
-    def getDocument(): XDocumentView = js.native
+    def getDocument(): XDocumentView
   }
   object XAbstractView {
     
@@ -41,12 +41,13 @@ object views {
     }
   }
   
-  @js.native
-  trait XDocumentView extends XInterface {
+  trait XDocumentView
+    extends StObject
+       with XInterface {
     
-    val DefaultView: XAbstractView = js.native
+    val DefaultView: XAbstractView
     
-    def getDefaultView(): XAbstractView = js.native
+    def getDefaultView(): XAbstractView
   }
   object XDocumentView {
     

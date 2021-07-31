@@ -7,20 +7,20 @@ import typings.std.Omit
 import typings.typescript.mod.ThrowStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/utils", "isNodePattern")
+  @JSImport("@jimp/utils", JSImport.Namespace)
   @js.native
-  def isNodePattern(cb: js.Function): `true` = js.native
-  @JSImport("@jimp/utils", "isNodePattern")
-  @js.native
-  def isNodePattern(cb: Omit[_, js.Function]): `false` = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@jimp/utils", "scan")
-  @js.native
+  @scala.inline
+  def isNodePattern(cb: js.Function): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePattern")(cb.asInstanceOf[js.Any]).asInstanceOf[`true`]
+  @scala.inline
+  def isNodePattern(cb: Omit[js.Any, js.Function]): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePattern")(cb.asInstanceOf[js.Any]).asInstanceOf[`false`]
+  
+  @scala.inline
   def scan(
     image: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Image */ js.Any,
     x: Double,
@@ -34,18 +34,14 @@ object mod {
       /* idx */ Double, 
       Unit
     ]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(image.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@jimp/utils", "throwError")
-  @js.native
-  def throwError(error: String): ThrowStatement = js.native
-  @JSImport("@jimp/utils", "throwError")
-  @js.native
-  def throwError(error: String, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = js.native
-  @JSImport("@jimp/utils", "throwError")
-  @js.native
-  def throwError(error: Error): ThrowStatement = js.native
-  @JSImport("@jimp/utils", "throwError")
-  @js.native
-  def throwError(error: Error, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = js.native
+  @scala.inline
+  def throwError(error: String): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
+  @scala.inline
+  def throwError(error: String, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
+  @scala.inline
+  def throwError(error: Error): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
+  @scala.inline
+  def throwError(error: Error, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
 }

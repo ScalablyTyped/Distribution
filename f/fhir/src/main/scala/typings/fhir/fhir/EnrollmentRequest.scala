@@ -2,65 +2,65 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enrollment request
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait EnrollmentRequest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait EnrollmentRequest
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.native
+  var _created: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Insurance information
     */
-  var coverage: js.UndefOr[Reference] = js.native
+  var coverage: js.UndefOr[Reference] = js.undefined
   
   /**
     * Creation date
     */
-  var created: js.UndefOr[dateTime] = js.native
+  var created: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Business Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Target
     */
-  var insurer: js.UndefOr[Reference] = js.native
+  var insurer: js.UndefOr[Reference] = js.undefined
   
   /**
     * Responsible organization
     */
-  var organization: js.UndefOr[Reference] = js.native
+  var organization: js.UndefOr[Reference] = js.undefined
   
   /**
     * Responsible practitioner
     */
-  var provider: js.UndefOr[Reference] = js.native
+  var provider: js.UndefOr[Reference] = js.undefined
   
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * The subject of the Products and Services
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
 }
 object EnrollmentRequest {
   

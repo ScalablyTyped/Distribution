@@ -11,7 +11,6 @@ import typings.rdfJs.mod.Stream
 import typings.rdfJs.mod.Term
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetMod {
@@ -19,21 +18,25 @@ object datasetMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("rdf-dataset-indexed/dataset", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] () extends StObject {
+  class ^[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] ()
+    extends StObject
+       with DatasetIndexed[Q, InQuad] {
     def this(quads: js.Array[Q]) = this()
     def this(
-      quads: js.UndefOr[scala.Nothing],
-      factory: (DataFactory[Quad, Quad]) with (DatasetFactory[Quad, Quad, Dataset[Quad, Quad]])
+      quads: js.Array[Q],
+      factory: (DataFactory[Quad, Quad]) & (DatasetFactory[Quad, Quad, Dataset[Quad, Quad]])
     ) = this()
     def this(
-      quads: js.Array[Q],
-      factory: (DataFactory[Quad, Quad]) with (DatasetFactory[Quad, Quad, Dataset[Quad, Quad]])
+      quads: Unit,
+      factory: (DataFactory[Quad, Quad]) & (DatasetFactory[Quad, Quad, Dataset[Quad, Quad]])
     ) = this()
   }
   
   // tslint:disable-next-line no-unnecessary-class
   @js.native
-  trait DatasetIndexed[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends DatasetCore[Q, InQuad] {
+  trait DatasetIndexed[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */]
+    extends StObject
+       with DatasetCore[Q, InQuad] {
     
     def addAll(quads: js.Array[BaseQuad]): this.type = js.native
     def addAll(quads: DatasetIndexed[BaseQuad, BaseQuad]): this.type = js.native
@@ -75,6 +78,6 @@ object datasetMod {
     
     def toArray(): js.Array[Q] = js.native
     
-    def toStream(): Stream[Q] with Readable = js.native
+    def toStream(): Stream[Q] & Readable = js.native
   }
 }

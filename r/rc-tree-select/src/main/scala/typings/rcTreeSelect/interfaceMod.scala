@@ -5,30 +5,28 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait ChangeEventExtra extends StObject {
     
     /** @deprecated This prop not work as react node anymore. */
-    var allCheckedNodes: js.Array[LegacyCheckedNode] = js.native
+    var allCheckedNodes: js.Array[LegacyCheckedNode]
     
     /** @deprecated Use `onSelect` or `onDeselect` instead. */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated Please save prev value by control logic instead */
-    var preValue: js.Array[LabelValueType] = js.native
+    var preValue: js.Array[LabelValueType]
     
     /** @deprecated Use `onSelect` or `onDeselect` instead. */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated This prop not work as react node anymore. */
-    var triggerNode: ReactElement = js.native
+    var triggerNode: ReactElement
     
-    var triggerValue: RawValueType = js.native
+    var triggerValue: RawValueType
   }
   object ChangeEventExtra {
     
@@ -78,26 +76,26 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait DataNode
-    extends /** Customize data info */
+    extends StObject
+       with /** Customize data info */
   /* prop */ StringDictionary[js.Any] {
     
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Array[DataNode]] = js.native
+    var children: js.UndefOr[js.Array[DataNode]] = js.undefined
     
-    var disableCheckbox: js.UndefOr[Boolean] = js.native
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[RawValueType] = js.native
+    var value: js.UndefOr[RawValueType] = js.undefined
   }
   object DataNode {
     
@@ -165,14 +163,13 @@ object interfaceMod {
   
   type DefaultValueType = RawValueType | (js.Array[LabelValueType | RawValueType]) | LabelValueType
   
-  @js.native
   trait FlattenDataNode extends StObject {
     
-    var data: DataNode = js.native
+    var data: DataNode
     
-    var key: Key = js.native
+    var key: Key
     
-    var level: Double = js.native
+    var level: Double
   }
   object FlattenDataNode {
     
@@ -196,17 +193,18 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait InnerDataNode extends DataNode {
+  trait InnerDataNode
+    extends StObject
+       with DataNode {
     
     @JSName("children")
-    var children_InnerDataNode: js.UndefOr[js.Array[InnerDataNode]] = js.native
+    var children_InnerDataNode: js.UndefOr[js.Array[InnerDataNode]] = js.undefined
     
     @JSName("key")
-    var key_InnerDataNode: Key = js.native
+    var key_InnerDataNode: Key
     
     @JSName("value")
-    var value_InnerDataNode: RawValueType = js.native
+    var value_InnerDataNode: RawValueType
   }
   object InnerDataNode {
     
@@ -238,17 +236,16 @@ object interfaceMod {
   
   type Key = String | Double
   
-  @js.native
   trait LabelValueType extends StObject {
     
     /** Only works on `treeCheckStrictly` */
-    var halfChecked: js.UndefOr[Boolean] = js.native
+    var halfChecked: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[RawValueType] = js.native
+    var value: js.UndefOr[RawValueType] = js.undefined
   }
   object LabelValueType {
     
@@ -287,14 +284,13 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait LegacyCheckedNode extends StObject {
     
-    var children: js.UndefOr[js.Array[LegacyCheckedNode]] = js.native
+    var children: js.UndefOr[js.Array[LegacyCheckedNode]] = js.undefined
     
-    var node: ReactElement = js.native
+    var node: ReactElement
     
-    var pos: String = js.native
+    var pos: String
   }
   object LegacyCheckedNode {
     
@@ -324,10 +320,11 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait LegacyDataNode extends DataNode {
+  trait LegacyDataNode
+    extends StObject
+       with DataNode {
     
-    var props: js.Any = js.native
+    var props: js.Any
   }
   object LegacyDataNode {
     
@@ -369,14 +366,13 @@ object interfaceMod {
     def selection: typings.rcTreeSelect.rcTreeSelectStrings.selection = "selection".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.selection]
   }
   
-  @js.native
   trait SimpleModeConfig extends StObject {
     
-    var id: js.UndefOr[Key] = js.native
+    var id: js.UndefOr[Key] = js.undefined
     
-    var pId: js.UndefOr[Key] = js.native
+    var pId: js.UndefOr[Key] = js.undefined
     
-    var rootPId: js.UndefOr[Key] = js.native
+    var rootPId: js.UndefOr[Key] = js.undefined
   }
   object SimpleModeConfig {
     
@@ -409,14 +405,15 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait TreeDataNode extends DataNode {
+  trait TreeDataNode
+    extends StObject
+       with DataNode {
     
     @JSName("children")
-    var children_TreeDataNode: js.UndefOr[js.Array[TreeDataNode]] = js.native
+    var children_TreeDataNode: js.UndefOr[js.Array[TreeDataNode]] = js.undefined
     
     @JSName("key")
-    var key_TreeDataNode: Key = js.native
+    var key_TreeDataNode: Key
   }
   object TreeDataNode {
     

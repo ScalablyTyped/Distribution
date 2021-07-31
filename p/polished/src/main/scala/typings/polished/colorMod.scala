@@ -2,21 +2,19 @@ package typings.polished
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorMod {
   
-  @js.native
   trait ContrastScores extends StObject {
     
-    var AA: Boolean = js.native
+    var AA: Boolean
     
-    var AAA: Boolean = js.native
+    var AAA: Boolean
     
-    var AAALarge: Boolean = js.native
+    var AAALarge: Boolean
     
-    var AALarge: Boolean = js.native
+    var AALarge: Boolean
   }
   object ContrastScores {
     
@@ -43,14 +41,13 @@ object colorMod {
     }
   }
   
-  @js.native
   trait HslColor extends StObject {
     
-    var hue: Double = js.native
+    var hue: Double
     
-    var lightness: Double = js.native
+    var lightness: Double
     
-    var saturation: Double = js.native
+    var saturation: Double
   }
   object HslColor {
     
@@ -74,16 +71,15 @@ object colorMod {
     }
   }
   
-  @js.native
   trait HslaColor extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var hue: Double = js.native
+    var hue: Double
     
-    var lightness: Double = js.native
+    var lightness: Double
     
-    var saturation: Double = js.native
+    var saturation: Double
   }
   object HslaColor {
     
@@ -110,14 +106,13 @@ object colorMod {
     }
   }
   
-  @js.native
   trait RgbColor extends StObject {
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object RgbColor {
     
@@ -141,16 +136,15 @@ object colorMod {
     }
   }
   
-  @js.native
   trait RgbaColor extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var blue: Double = js.native
+    var blue: Double
     
-    var green: Double = js.native
+    var green: Double
     
-    var red: Double = js.native
+    var red: Double
   }
   object RgbaColor {
     

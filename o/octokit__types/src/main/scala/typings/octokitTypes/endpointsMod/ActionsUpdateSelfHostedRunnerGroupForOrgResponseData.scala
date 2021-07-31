@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsUpdateSelfHostedRunnerGroupForOrgResponseData extends StObject {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var inherited: Boolean = js.native
+  var inherited: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var runners_url: String = js.native
+  var runners_url: String
   
-  var selected_repositories_url: String = js.native
+  var selected_repositories_url: String
   
-  var visibility: String = js.native
+  var visibility: String
 }
 object ActionsUpdateSelfHostedRunnerGroupForOrgResponseData {
   

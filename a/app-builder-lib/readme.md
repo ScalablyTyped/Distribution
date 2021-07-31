@@ -10,9 +10,9 @@ electron-builder lib
 | ------------------ | :-------------: |
 | Full name          | app-builder-lib |
 | Keywords           | electron, builder, build, installer, install, packager, pack, nsis, app, dmg, pkg, msi, exe, setup, Windows, OS X, MacOS, Mac, appx, snap, portable |
-| # releases         | 82 |
-| # dependents       | 15 |
-| # downloads        | 6093612 |
+| # releases         | 63 |
+| # dependents       | 16 |
+| # downloads        | 7206629 |
 | # stars            | 0 |
 
 ## Links

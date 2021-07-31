@@ -2,51 +2,49 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectVersion extends StObject {
   
   /**
     * The entity tag is an MD5 hash of that version of the object.
     */
-  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.native
+  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
   
   /**
     * Specifies whether the object is (true) or is not (false) the latest version of an object.
     */
-  var IsLatest: js.UndefOr[typings.awsSdk.s3Mod.IsLatest] = js.native
+  var IsLatest: js.UndefOr[typings.awsSdk.s3Mod.IsLatest] = js.undefined
   
   /**
     * The object key.
     */
-  var Key: js.UndefOr[ObjectKey] = js.native
+  var Key: js.UndefOr[ObjectKey] = js.undefined
   
   /**
     * Date and time the object was last modified.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
   
   /**
     * Specifies the owner of the object.
     */
-  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.undefined
   
   /**
     * Size in bytes of the object.
     */
-  var Size: js.UndefOr[typings.awsSdk.s3Mod.Size] = js.native
+  var Size: js.UndefOr[typings.awsSdk.s3Mod.Size] = js.undefined
   
   /**
     * The class of storage used to store the object.
     */
-  var StorageClass: js.UndefOr[ObjectVersionStorageClass] = js.native
+  var StorageClass: js.UndefOr[ObjectVersionStorageClass] = js.undefined
   
   /**
     * Version ID of an object.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
 }
 object ObjectVersion {
   

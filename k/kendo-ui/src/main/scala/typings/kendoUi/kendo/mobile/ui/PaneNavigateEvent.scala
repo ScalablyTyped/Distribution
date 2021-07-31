@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaneNavigateEvent extends PaneEvent {
+trait PaneNavigateEvent
+  extends StObject
+     with PaneEvent {
   
-  var url: js.UndefOr[JQuery] = js.native
+  var url: js.UndefOr[JQuery] = js.undefined
 }
 object PaneNavigateEvent {
   

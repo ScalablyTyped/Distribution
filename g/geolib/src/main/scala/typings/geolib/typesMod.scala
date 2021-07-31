@@ -3,7 +3,6 @@ package typings.geolib
 import typings.geolib.anon.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -80,7 +79,7 @@ object typesMod {
   
   type GeolibInputCoordinates = UserInputCoordinates | GeolibGeoJSONPoint
   
-  type GeolibInputCoordinatesWithTime = GeolibInputCoordinates with Time
+  type GeolibInputCoordinatesWithTime = GeolibInputCoordinates & Time
   
   /* Rewritten from type alias, can be one of: 
     - typings.geolib.anon.Lat
@@ -175,5 +174,5 @@ object typesMod {
   
   type Timestamp = Double
   
-  type UserInputCoordinates = GeolibInputLongitude with GeolibInputLatitude with GeolibInputAltitude
+  type UserInputCoordinates = GeolibInputLongitude & GeolibInputLatitude & GeolibInputAltitude
 }

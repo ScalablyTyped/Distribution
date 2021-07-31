@@ -10,34 +10,32 @@ import typings.facebookJsSdk.facebookJsSdkStrings.create_offer
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateOfferDialogParams extends DialogParams {
+trait CreateOfferDialogParams
+  extends StObject
+     with DialogParams {
   
-  var account_id: String = js.native
+  var account_id: String
   
   @JSName("display")
-  var display_CreateOfferDialogParams: popup = js.native
+  var display_CreateOfferDialogParams: popup
   
-  var method: create_offer = js.native
+  var method: create_offer
   
-  var objective: APP_INSTALLS | CONVERSIONS | LINK_CLICKS | OFFER_CLAIMS | PRODUCT_CATALOG_SALES | STORE_VISITS = js.native
+  var objective: APP_INSTALLS | CONVERSIONS | LINK_CLICKS | OFFER_CLAIMS | PRODUCT_CATALOG_SALES | STORE_VISITS
   
-  var page_id: String = js.native
+  var page_id: String
 }
 object CreateOfferDialogParams {
   
   @scala.inline
   def apply(
     account_id: String,
-    display: popup,
-    method: create_offer,
     objective: APP_INSTALLS | CONVERSIONS | LINK_CLICKS | OFFER_CLAIMS | PRODUCT_CATALOG_SALES | STORE_VISITS,
     page_id: String
   ): CreateOfferDialogParams = {
-    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], objective = objective.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = "popup", method = "create_offer", objective = objective.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOfferDialogParams]
   }
   

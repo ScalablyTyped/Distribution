@@ -8,7 +8,6 @@ import typings.loopback.anon.TypeofModel
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -101,11 +100,11 @@ trait LoopBackApplication
     * @header app.middleware(name, handler
     */
   def middleware(name: String): js.Any = js.native
-  def middleware(name: String, paths: js.UndefOr[scala.Nothing], handler: Handler): js.Any = js.native
   def middleware(name: String, paths: String): js.Any = js.native
   def middleware(name: String, paths: String, handler: Handler): js.Any = js.native
-  def middleware(name: String, paths: js.Array[_]): js.Any = js.native
-  def middleware(name: String, paths: js.Array[_], handler: Handler): js.Any = js.native
+  def middleware(name: String, paths: js.Array[js.Any]): js.Any = js.native
+  def middleware(name: String, paths: js.Array[js.Any], handler: Handler): js.Any = js.native
+  def middleware(name: String, paths: Unit, handler: Handler): js.Any = js.native
   def middleware(name: String, paths: RegExp): js.Any = js.native
   def middleware(name: String, paths: RegExp, handler: Handler): js.Any = js.native
   
@@ -222,7 +221,7 @@ trait LoopBackApplication
     * ``
     *  @returns {Array} Array of model classes
     */
-  def models(): js.Array[TypeofModel with (Instantiable1[/* data */ js.Any, Model])] = js.native
+  def models(): js.Array[TypeofModel & (Instantiable1[/* data */ js.Any, Model])] = js.native
   
   /**
     * Get all remote objects.

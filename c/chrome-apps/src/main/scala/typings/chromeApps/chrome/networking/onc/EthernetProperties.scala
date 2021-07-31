@@ -2,20 +2,18 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EthernetProperties[M /* <: ManagedObject */] extends StObject {
   
   /** The authentication used by the Ethernet network. Possible values are None and 8021X. */
-  var Authentication: js.UndefOr[EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]] = js.native
+  var Authentication: js.UndefOr[EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]] = js.undefined
   
   /** Whether the Ethernet network should be connected automatically. */
-  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.native
+  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.undefined
   
   /** Network's EAP settings. Required for 8021X authentication. */
-  var EAP: js.UndefOr[EAPProperties] = js.native
+  var EAP: js.UndefOr[EAPProperties] = js.undefined
 }
 object EthernetProperties {
   
@@ -26,7 +24,7 @@ object EthernetProperties {
   }
   
   @scala.inline
-  implicit class EthernetPropertiesMutableBuilder[Self <: EthernetProperties[_], M /* <: ManagedObject */] (val x: Self with EthernetProperties[M]) extends AnyVal {
+  implicit class EthernetPropertiesMutableBuilder[Self <: EthernetProperties[?], M /* <: ManagedObject */] (val x: Self & EthernetProperties[M]) extends AnyVal {
     
     @scala.inline
     def setAuthentication(value: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])

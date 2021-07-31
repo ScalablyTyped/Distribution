@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dfareportingMod {
+  
+  @JSImport("googleapis/build/src/apis/dfareporting", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -132,9 +135,12 @@ object dfareportingMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/dfareporting", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/dfareporting", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -178,22 +184,19 @@ object dfareportingMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/dfareporting", "dfareporting")
-  @js.native
-  def dfareporting(options: Options): Dfareporting = js.native
-  @JSImport("googleapis/build/src/apis/dfareporting", "dfareporting")
-  @js.native
-  def dfareporting(options: typings.googleapis.v32Mod.dfareportingV32.Options): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = js.native
-  @JSImport("googleapis/build/src/apis/dfareporting", "dfareporting")
-  @js.native
-  def dfareporting(options: typings.googleapis.v33Mod.dfareportingV33.Options): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = js.native
-  @JSImport("googleapis/build/src/apis/dfareporting", "dfareporting")
-  @js.native
-  def dfareporting_v31(version: v3Dot1): Dfareporting = js.native
-  @JSImport("googleapis/build/src/apis/dfareporting", "dfareporting")
-  @js.native
-  def dfareporting_v32(version: v3Dot2): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = js.native
-  @JSImport("googleapis/build/src/apis/dfareporting", "dfareporting")
-  @js.native
-  def dfareporting_v33(version: v3Dot3): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = js.native
+  @scala.inline
+  def dfareporting(options: Options): Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[Dfareporting]
+  @scala.inline
+  def dfareporting(options: typings.googleapis.v32Mod.dfareportingV32.Options): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v32Mod.dfareportingV32.Dfareporting]
+  @scala.inline
+  def dfareporting(options: typings.googleapis.v33Mod.dfareportingV33.Options): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v33Mod.dfareportingV33.Dfareporting]
+  
+  @scala.inline
+  def dfareporting_v31(version: v3Dot1): Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[Dfareporting]
+  
+  @scala.inline
+  def dfareporting_v32(version: v3Dot2): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v32Mod.dfareportingV32.Dfareporting]
+  
+  @scala.inline
+  def dfareporting_v33(version: v3Dot3): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v33Mod.dfareportingV33.Dfareporting]
 }

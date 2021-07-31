@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCDtlsTransportEventMap extends StObject {
   
-  var error: RTCErrorEvent = js.native
+  var error: RTCErrorEvent
   
-  var statechange: Event = js.native
+  var statechange: Event
 }
 object RTCDtlsTransportEventMap {
   

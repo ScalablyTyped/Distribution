@@ -14,7 +14,6 @@ import typings.googleDdns.googleDdnsStrings.notfqdn
 import typings.googleDdns.googleDdnsStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,14 +61,13 @@ object mod {
     def start(): Unit = js.native
   }
   
-  @js.native
   trait DynamicDNSOptions extends StObject {
     
     /**
       * If debug mode is enabled, debug and status information will be
       * written to the console.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to fail or continue synchronizing if the current hostname
@@ -78,60 +76,60 @@ object mod {
       * for more information. Even if this fails, the update can still be
       * successful.
       */
-    var failOnUnresolvedHostName: js.UndefOr[Boolean] = js.native
+    var failOnUnresolvedHostName: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `useHostIPAddressCache` is `true`, this option is used to force a
       * DNS request every once in a while. This is the number of seconds
       * until the cache expires.
       */
-    var hostIPAddressCacheExpires: js.UndefOr[Double] = js.native
+    var hostIPAddressCacheExpires: js.UndefOr[Double] = js.undefined
     
     /**
       * The dynamic DNS hostname.
       */
-    var hostname: String = js.native
+    var hostname: String
     
     /**
       * The maximum number of times to attempt synchronization despite the
       * hostname not being resolved. Applies if `failOnUnresolvedHostName`
       * is `false`.
       */
-    var maxUnresolvedHostNameFail: js.UndefOr[Double] = js.native
+    var maxUnresolvedHostNameFail: js.UndefOr[Double] = js.undefined
     
     /**
       * The dynamic DNS password.
       */
-    var password: String = js.native
+    var password: String
     
     /**
       * The URL used to check the current public IP of the device.
       */
-    var publicIpUrl: js.UndefOr[String] = js.native
+    var publicIpUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of the Google Dynamic DNS API. Must include the text `%HOSTNAME%` and `%IPADDRESS%` as placeholders for the hostname and IP
       * address.
       */
-    var updateIpUrl: js.UndefOr[String] = js.native
+    var updateIpUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to cache the IP address of the DNS record or make a DNS
       * request every time. This can usually be left enabled since this
       * client is the only one responsible for updating the DNS record.
       */
-    var useHostIPAddressCache: js.UndefOr[Boolean] = js.native
+    var useHostIPAddressCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The HTTP header User-Agent to send when updating the IP address.
       * This is required by the Google Dynamic DNS API.
       */
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
     
     /**
       * The dynamic DNS username.
       */
-    var username: String = js.native
+    var username: String
   }
   object DynamicDNSOptions {
     
@@ -203,43 +201,45 @@ object mod {
     }
   }
   
-  @js.native
   trait ErrorResponse extends StObject {
     
     // This definition is here to make it possible to access the `ip`
     // property in the union `SuccessResponse | ErrorResponse`
     // See https://github.com/Microsoft/TypeScript/issues/12815
-    var ip: js.UndefOr[scala.Nothing] = js.native
+    var ip: Unit
     
     /**
       * A human-readable response message
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The response code (may include `good` or `nochg` in edge cases)
       */
-    var response: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg = js.native
+    var response: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg
     
     /**
       * The response status
       */
-    var status: error = js.native
+    var status: error
   }
   object ErrorResponse {
     
     @scala.inline
     def apply(
+      ip: Unit,
       message: String,
-      response: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg,
-      status: error
+      response: nohost | badauth | notfqdn | badagent | abuse | `911` | good | nochg
     ): ErrorResponse = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[ErrorResponse]
     }
     
     @scala.inline
     implicit class ErrorResponseMutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setIp(value: Unit): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
@@ -252,36 +252,37 @@ object mod {
     }
   }
   
-  @js.native
-  trait ServiceOptions extends DynamicDNSOptions {
+  trait ServiceOptions
+    extends StObject
+       with DynamicDNSOptions {
     
     /**
       * The number of seconds between updates.
       */
-    var checkInterval: js.UndefOr[Double] = js.native
+    var checkInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to stop the service if the maximum number of consecutive
       * errors is reached.
       */
-    var exitOnMaxErrors: js.UndefOr[Boolean] = js.native
+    var exitOnMaxErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path of the log file to output to. Set to `false` to disable
       * logging to file.
       */
-    var logPath: js.UndefOr[String | `false`] = js.native
+    var logPath: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * Whether to log output to the console.
       */
-    var logToConsole: js.UndefOr[Boolean] = js.native
+    var logToConsole: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum number of consecutive errors before stopping the service
       * if `exitOnMaxErrors` is `true`.
       */
-    var maxConsecutiveErrors: js.UndefOr[Double] = js.native
+    var maxConsecutiveErrors: js.UndefOr[Double] = js.undefined
   }
   object ServiceOptions {
     
@@ -326,34 +327,33 @@ object mod {
     }
   }
   
-  @js.native
   trait SuccessResponse extends StObject {
     
     /**
       * The IP address in the DNS record.
       */
-    var ip: String = js.native
+    var ip: String
     
     /**
       * A human-readable response message
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The response code
       */
-    var response: good | nochg = js.native
+    var response: good | nochg
     
     /**
       * The response status
       */
-    var status: success = js.native
+    var status: success
   }
   object SuccessResponse {
     
     @scala.inline
-    def apply(ip: String, message: String, response: good | nochg, status: success): SuccessResponse = {
-      val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(ip: String, message: String, response: good | nochg): SuccessResponse = {
+      val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[SuccessResponse]
     }
     

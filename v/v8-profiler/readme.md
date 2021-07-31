@@ -11,7 +11,7 @@ node bindings for the v8 profiler
 | Keywords           | profiler, inspector |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 527734 |
+| # downloads        | 635779 |
 | # stars            | 38 |
 
 ## Links

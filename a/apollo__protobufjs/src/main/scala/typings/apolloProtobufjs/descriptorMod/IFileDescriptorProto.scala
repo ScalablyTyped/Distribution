@@ -2,36 +2,34 @@ package typings.apolloProtobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileDescriptorProto extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[String] = js.native
+  var _package: js.UndefOr[String] = js.undefined
   
-  var dependency: js.UndefOr[js.Any] = js.native
+  var dependency: js.UndefOr[js.Any] = js.undefined
   
-  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto]] = js.native
+  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto]] = js.undefined
   
-  var extension: js.UndefOr[js.Array[IFieldDescriptorProto]] = js.native
+  var `extension`: js.UndefOr[js.Array[IFieldDescriptorProto]] = js.undefined
   
-  var messageType: js.UndefOr[js.Array[IDescriptorProto]] = js.native
+  var messageType: js.UndefOr[js.Array[IDescriptorProto]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[IFileOptions] = js.native
+  var options: js.UndefOr[IFileOptions] = js.undefined
   
-  var publicDependency: js.UndefOr[js.Any] = js.native
+  var publicDependency: js.UndefOr[js.Any] = js.undefined
   
-  var service: js.UndefOr[js.Array[IServiceDescriptorProto]] = js.native
+  var service: js.UndefOr[js.Array[IServiceDescriptorProto]] = js.undefined
   
-  var sourceCodeInfo: js.UndefOr[js.Any] = js.native
+  var sourceCodeInfo: js.UndefOr[js.Any] = js.undefined
   
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
   
-  var weakDependency: js.UndefOr[js.Any] = js.native
+  var weakDependency: js.UndefOr[js.Any] = js.undefined
 }
 object IFileDescriptorProto {
   

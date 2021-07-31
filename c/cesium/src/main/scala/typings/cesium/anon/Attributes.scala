@@ -6,19 +6,17 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var attributes: GeometryAttributes = js.native
+  var attributes: GeometryAttributes
   
-  var boundingSphere: js.UndefOr[typings.cesium.mod.BoundingSphere] = js.native
+  var boundingSphere: js.UndefOr[typings.cesium.mod.BoundingSphere] = js.undefined
   
-  var indices: js.UndefOr[Uint16Array | Uint32Array] = js.native
+  var indices: js.UndefOr[Uint16Array | Uint32Array] = js.undefined
   
-  var primitiveType: js.UndefOr[PrimitiveType] = js.native
+  var primitiveType: js.UndefOr[PrimitiveType] = js.undefined
 }
 object Attributes {
   

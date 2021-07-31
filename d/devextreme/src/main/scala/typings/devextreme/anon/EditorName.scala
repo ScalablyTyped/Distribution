@@ -4,43 +4,41 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxFilterBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorName extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxFilterBuilder] = js.native
+  var component: js.UndefOr[dxFilterBuilder] = js.undefined
   
-  var dataField: js.UndefOr[String] = js.native
+  var dataField: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var editorElement: js.UndefOr[dxElement] = js.native
+  var editorElement: js.UndefOr[dxElement] = js.undefined
   
-  var editorName: js.UndefOr[String] = js.native
+  var editorName: js.UndefOr[String] = js.undefined
   
-  var editorOptions: js.UndefOr[js.Any] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var filterOperation: js.UndefOr[String] = js.native
+  var filterOperation: js.UndefOr[String] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var rtlEnabled: js.UndefOr[Boolean] = js.native
+  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var setValue: js.UndefOr[js.Any] = js.native
+  var setValue: js.UndefOr[js.Any] = js.undefined
   
-  var updateValueTimeout: js.UndefOr[Double] = js.native
+  var updateValueTimeout: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object EditorName {
   

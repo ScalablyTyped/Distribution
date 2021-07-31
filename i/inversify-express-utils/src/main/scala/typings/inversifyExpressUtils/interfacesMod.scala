@@ -14,23 +14,21 @@ import typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE
 import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   object interfaces {
     
-    @js.native
     trait AuthProvider extends StObject {
       
-      def getUser(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): js.Promise[Principal] = js.native
+      def getUser(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], next: NextFunction): js.Promise[Principal]
     }
     object AuthProvider {
       
       @scala.inline
       def apply(
-        getUser: (Request_[ParamsDictionary, _, _, Query], Response_[_], NextFunction) => js.Promise[Principal]
+        getUser: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => js.Promise[Principal]
       ): AuthProvider = {
         val __obj = js.Dynamic.literal(getUser = js.Any.fromFunction3(getUser))
         __obj.asInstanceOf[AuthProvider]
@@ -41,24 +39,22 @@ object interfacesMod {
         
         @scala.inline
         def setGetUser(
-          value: (Request_[ParamsDictionary, _, _, Query], Response_[_], NextFunction) => js.Promise[Principal]
+          value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => js.Promise[Principal]
         ): Self = StObject.set(x, "getUser", js.Any.fromFunction3(value))
       }
     }
     
     type ConfigFunction = js.Function1[/* app */ Application_, Unit]
     
-    @js.native
     trait Controller extends StObject
     
-    @js.native
     trait ControllerMetadata extends StObject {
       
-      var middleware: js.Array[Middleware] = js.native
+      var middleware: js.Array[Middleware]
       
-      var path: String = js.native
+      var path: String
       
-      var target: js.Any = js.native
+      var target: js.Any
     }
     object ControllerMetadata {
       
@@ -85,12 +81,13 @@ object interfacesMod {
       }
     }
     
-    @js.native
-    trait ControllerMethodMetadata extends ControllerMetadata {
+    trait ControllerMethodMetadata
+      extends StObject
+         with ControllerMetadata {
       
-      var key: String = js.native
+      var key: String
       
-      var method: String = js.native
+      var method: String
     }
     object ControllerMethodMetadata {
       
@@ -115,24 +112,23 @@ object interfacesMod {
     
     type HandlerDecorator = js.Function3[/* target */ js.Any, /* key */ String, /* value */ js.Any, Unit]
     
-    @js.native
     trait HttpContext extends StObject {
       
-      var container: Container = js.native
+      var container: Container
       
-      var request: Request_[ParamsDictionary, _, _, Query] = js.native
+      var request: Request_[ParamsDictionary, js.Any, js.Any, Query]
       
-      var response: Response_[_] = js.native
+      var response: Response_[js.Any]
       
-      var user: Principal = js.native
+      var user: Principal
     }
     object HttpContext {
       
       @scala.inline
       def apply(
         container: Container,
-        request: Request_[ParamsDictionary, _, _, Query],
-        response: Response_[_],
+        request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+        response: Response_[js.Any],
         user: Principal
       ): HttpContext = {
         val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
@@ -146,20 +142,19 @@ object interfacesMod {
         def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setRequest(value: Request_[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setResponse(value: Response_[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setUser(value: Principal): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait IHttpActionResult extends StObject {
       
-      def executeAsync(): js.Promise[HttpResponseMessage] = js.native
+      def executeAsync(): js.Promise[HttpResponseMessage]
     }
     object IHttpActionResult {
       
@@ -179,16 +174,15 @@ object interfacesMod {
     
     type Middleware = ServiceIdentifier[js.Any] | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])
     
-    @js.native
     trait ParameterMetadata extends StObject {
       
-      var index: Double = js.native
+      var index: Double
       
-      var injectRoot: Boolean = js.native
+      var injectRoot: Boolean
       
-      var parameterName: js.UndefOr[String] = js.native
+      var parameterName: js.UndefOr[String] = js.undefined
       
-      var `type`: PARAMETER_TYPE = js.native
+      var `type`: PARAMETER_TYPE
     }
     object ParameterMetadata {
       
@@ -219,16 +213,15 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait Principal extends StObject {
       
-      var details: js.Any = js.native
+      var details: js.Any
       
-      def isAuthenticated(): js.Promise[Boolean] = js.native
+      def isAuthenticated(): js.Promise[Boolean]
       
-      def isInRole(role: String): js.Promise[Boolean] = js.native
+      def isInRole(role: String): js.Promise[Boolean]
       
-      def isResourceOwner(resourceId: js.Any): js.Promise[Boolean] = js.native
+      def isResourceOwner(resourceId: js.Any): js.Promise[Boolean]
     }
     object Principal {
       
@@ -260,10 +253,9 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait RoutingConfig extends StObject {
       
-      var rootPath: String = js.native
+      var rootPath: String
     }
     object RoutingConfig {
       

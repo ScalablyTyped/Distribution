@@ -2,24 +2,22 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JWT credentials for a service account.
   */
-@js.native
 trait SchemaServiceAccountJwtAccessCredentials extends StObject {
   
   /**
     * Service account key.
     */
-  var jsonKey: js.UndefOr[String] = js.native
+  var jsonKey: js.UndefOr[String] = js.undefined
   
   /**
     * The token lifetime seconds.
     */
-  var tokenLifetimeSeconds: js.UndefOr[String] = js.native
+  var tokenLifetimeSeconds: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceAccountJwtAccessCredentials {
   

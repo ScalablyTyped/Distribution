@@ -20,7 +20,6 @@ import typings.frctlFractal.frctlFractalStrings.version
 import typings.frctlFractal.mod.fractal.core.mixins.ConfigurableEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@frctl/fractal", "WebTheme")
@@ -76,7 +75,7 @@ class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   
   def resolvers(): js.Any = js.native
   
-  def routes(): js.Array[_] = js.native
+  def routes(): js.Array[js.Any] = js.native
   
   def setErrorView(view: String): Unit = js.native
   

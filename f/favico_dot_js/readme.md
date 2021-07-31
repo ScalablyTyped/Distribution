@@ -11,7 +11,7 @@ Favico.js is a library to manipulate the favicon, adding alert badges, render im
 | Keywords           | favicon, badge |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 731654 |
+| # downloads        | 781854 |
 | # stars            | 4 |
 
 ## Links

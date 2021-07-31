@@ -2,46 +2,44 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for FirebaseRulesService.GetReleaseExecutable
   */
-@js.native
 trait SchemaGetReleaseExecutableResponse extends StObject {
   
   /**
     * Executable view of the `Ruleset` referenced by the `Release`.
     */
-  var executable: js.UndefOr[String] = js.native
+  var executable: js.UndefOr[String] = js.undefined
   
   /**
     * The Rules runtime version of the executable.
     */
-  var executableVersion: js.UndefOr[String] = js.native
+  var executableVersion: js.UndefOr[String] = js.undefined
   
   /**
     * `Language` used to generate the executable bytes.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * `Ruleset` name associated with the `Release` executable.
     */
-  var rulesetName: js.UndefOr[String] = js.native
+  var rulesetName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional, indicates the freshness of the result. The response is
     * guaranteed to be the latest within an interval up to the sync_time
     * (inclusive).
     */
-  var syncTime: js.UndefOr[String] = js.native
+  var syncTime: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp for the most recent `Release.update_time`.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGetReleaseExecutableResponse {
   

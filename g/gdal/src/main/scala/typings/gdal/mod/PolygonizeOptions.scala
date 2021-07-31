@@ -2,23 +2,21 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolygonizeOptions extends StObject {
   
-  var connectedness: js.UndefOr[Double] = js.native
+  var connectedness: js.UndefOr[Double] = js.undefined
   
-  var dst: Layer = js.native
+  var dst: Layer
   
-  var mask: js.UndefOr[RasterBand] = js.native
+  var mask: js.UndefOr[RasterBand] = js.undefined
   
-  var pixValField: Double = js.native
+  var pixValField: Double
   
-  var src: RasterBand = js.native
+  var src: RasterBand
   
-  var useFloats: js.UndefOr[Boolean] = js.native
+  var useFloats: js.UndefOr[Boolean] = js.undefined
 }
 object PolygonizeOptions {
   

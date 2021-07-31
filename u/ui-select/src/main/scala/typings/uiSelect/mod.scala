@@ -2,7 +2,6 @@ package typings.uiSelect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -14,22 +13,21 @@ object mod {
       
       type IPasteFn = js.Function1[/* data */ String, Unit]
       
-      @js.native
       trait IRepeatExpression extends StObject {
         
-        var filters: String = js.native
+        var filters: String
         
-        var itemName: String = js.native
+        var itemName: String
         
-        var keyName: String = js.native
+        var keyName: String
         
-        var modelMapper: String = js.native
+        var modelMapper: String
         
-        def repeatExpression(grouped: Boolean): String = js.native
+        def repeatExpression(grouped: Boolean): String
         
-        var source: String = js.native
+        var source: String
         
-        var trackByExp: String = js.native
+        var trackByExp: String
       }
       object IRepeatExpression {
         
@@ -73,40 +71,39 @@ object mod {
         }
       }
       
-      @js.native
       trait ISelectConfig extends StObject {
         
-        var appendToBody: Boolean = js.native
+        var appendToBody: Boolean
         
-        var backspaceReset: Boolean = js.native
+        var backspaceReset: Boolean
         
-        var closeOnSelect: Boolean = js.native
+        var closeOnSelect: Boolean
         
-        var dropdownPosition: String = js.native
+        var dropdownPosition: String
         
-        def generateId(): Double = js.native
+        def generateId(): Double
         
-        var paste: js.UndefOr[IPasteFn] = js.native
+        var paste: js.UndefOr[IPasteFn] = js.undefined
         
-        var placeholder: String = js.native
+        var placeholder: String
         
-        var refreshDelay: Double = js.native
+        var refreshDelay: Double
         
-        var removeSelected: Boolean = js.native
+        var removeSelected: Boolean
         
-        var resetSearchInput: Boolean = js.native
+        var resetSearchInput: Boolean
         
-        var searchEnabled: Boolean = js.native
+        var searchEnabled: Boolean
         
-        var skipFocusser: Boolean = js.native
+        var skipFocusser: Boolean
         
-        var sortable: Boolean = js.native
+        var sortable: Boolean
         
-        var spinnerClass: String = js.native
+        var spinnerClass: String
         
-        var spinnerEnabled: Boolean = js.native
+        var spinnerEnabled: Boolean
         
-        var theme: String = js.native
+        var theme: String
       }
       object ISelectConfig {
         

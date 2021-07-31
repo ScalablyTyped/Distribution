@@ -2,19 +2,17 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotationGestureHandlerEventExtra extends StObject {
   
-  var anchorX: Double = js.native
+  var anchorX: Double
   
-  var anchorY: Double = js.native
+  var anchorY: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var velocity: Double = js.native
+  var velocity: Double
 }
 object RotationGestureHandlerEventExtra {
   

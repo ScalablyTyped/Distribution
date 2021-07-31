@@ -6,38 +6,38 @@ import typings.blessed.blessedStrings.underline
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TerminalOptions extends BoxOptions {
+trait TerminalOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * args for shell.
     */
-  var args: js.UndefOr[js.Any] = js.native
+  var args: js.UndefOr[js.Any] = js.undefined
   
   /**
     * can be line, underline, and block.
     */
-  var cursor: js.UndefOr[line | underline | block] = js.native
+  var cursor: js.UndefOr[line | underline | block] = js.undefined
   
   /**
     * Object for process env.
     */
-  var env: js.UndefOr[js.Any] = js.native
+  var env: js.UndefOr[js.Any] = js.undefined
   
   /**
     * handler for input data.
     */
-  var handler: js.UndefOr[js.Function1[/* userInput */ Buffer, Unit]] = js.native
+  var handler: js.UndefOr[js.Function1[/* userInput */ Buffer, Unit]] = js.undefined
   
   /**
     * name of shell. $SHELL by default.
     */
-  var shell: js.UndefOr[String] = js.native
+  var shell: js.UndefOr[String] = js.undefined
   
-  var terminal: js.UndefOr[String] = js.native
+  var terminal: js.UndefOr[String] = js.undefined
 }
 object TerminalOptions {
   

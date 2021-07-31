@@ -2,25 +2,23 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Value of the dimension.
   */
-@js.native
 trait SchemaDimensionDimensionValue extends StObject {
   
   /**
     * Id of the dimension.
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * Name of the dimension mainly for debugging purposes, except for the case
     * of CREATIVE_SIZE. For CREATIVE_SIZE, strings are used instead of ids.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Percent of total impressions for a dimension type. e.g. {dimension_type:
@@ -28,7 +26,7 @@ trait SchemaDimensionDimensionValue extends StObject {
     * percentage: 60}}]} Gender MALE is 60% of all impressions which have
     * gender.
     */
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
 }
 object SchemaDimensionDimensionValue {
   

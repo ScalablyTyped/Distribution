@@ -5,32 +5,32 @@ import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.input
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.output
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParameterSuppressionCustomizationDefinition extends CustomizationDefinition {
+trait ParameterSuppressionCustomizationDefinition
+  extends StObject
+     with CustomizationDefinition {
   
   /**
     * The I/O shape from which this parameter should be suppressed.
     */
-  var location: input | output = js.native
+  var location: input | output
   
   /**
     * The name of the property to be suppressed. The property will be removed
     * from the input or output shape interface, but the underlying
     * serialization will not be changed.
     */
-  var name: String = js.native
+  var name: String
   
-  var `type`: ParameterSuppression = js.native
+  var `type`: ParameterSuppression
 }
 object ParameterSuppressionCustomizationDefinition {
   
   @scala.inline
-  def apply(location: input | output, name: String, `type`: ParameterSuppression): ParameterSuppressionCustomizationDefinition = {
+  def apply(location: input | output, name: String): ParameterSuppressionCustomizationDefinition = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ParameterSuppression")
     __obj.asInstanceOf[ParameterSuppressionCustomizationDefinition]
   }
   

@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeIterator extends StObject {
   
-  def Detach(): Unit = js.native
+  def Detach(): Unit
   
   @JSName("MSHTML.NodeIterator_typekey")
-  var MSHTMLDotNodeIterator_typekey: NodeIterator = js.native
+  var MSHTMLDotNodeIterator_typekey: NodeIterator
   
-  val expandEntityReferences: Boolean = js.native
+  val expandEntityReferences: Boolean
   
-  val filter: js.Any = js.native
+  val filter: js.Any
   
-  def nextNode(): js.Any = js.native
+  def nextNode(): js.Any
   
-  def previousNode(): js.Any = js.native
+  def previousNode(): js.Any
   
-  val root: js.Any = js.native
+  val root: js.Any
   
-  val whatToShow: Double = js.native
+  val whatToShow: Double
 }
 object NodeIterator {
   

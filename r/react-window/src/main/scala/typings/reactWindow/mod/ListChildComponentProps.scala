@@ -3,19 +3,17 @@ package typings.reactWindow.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChildComponentProps extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var index: Double = js.native
+  var index: Double
   
-  var isScrolling: js.UndefOr[Boolean] = js.native
+  var isScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
 }
 object ListChildComponentProps {
   

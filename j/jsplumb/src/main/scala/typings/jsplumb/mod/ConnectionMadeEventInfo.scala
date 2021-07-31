@@ -3,25 +3,23 @@ package typings.jsplumb.mod
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionMadeEventInfo extends StObject {
   
-  var connection: Connection = js.native
+  var connection: Connection
   
-  var source: HTMLDivElement = js.native
+  var source: HTMLDivElement
   
-  var sourceEndpoint: Endpoint = js.native
+  var sourceEndpoint: Endpoint
   
-  var sourceId: String = js.native
+  var sourceId: String
   
-  var target: HTMLDivElement = js.native
+  var target: HTMLDivElement
   
-  var targetEndpoint: Endpoint = js.native
+  var targetEndpoint: Endpoint
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object ConnectionMadeEventInfo {
   

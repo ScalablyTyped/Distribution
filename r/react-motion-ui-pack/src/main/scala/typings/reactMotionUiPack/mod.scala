@@ -10,7 +10,6 @@ import typings.reactMotion.mod.Style
 import typings.reactMotionUiPack.mod.Transition.TransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,32 +27,31 @@ object mod {
     
     @JSImport("react-motion-ui-pack", JSImport.Default)
     @js.native
-    val ^ : ComponentClass[TransitionProps, ComponentState] = js.native
+    val ^ : js.Object & (ComponentClass[TransitionProps, ComponentState]) = js.native
     
-    type _To = ComponentClass[TransitionProps, ComponentState]
+    type _To = js.Object & (ComponentClass[TransitionProps, ComponentState])
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: ComponentClass[TransitionProps, ComponentState] = ^
+    override def _to: js.Object & (ComponentClass[TransitionProps, ComponentState]) = ^
   }
   
   object Transition {
     
-    @js.native
     trait TransitionProps extends StObject {
       
-      var appear: js.UndefOr[Style] = js.native
+      var appear: js.UndefOr[Style] = js.undefined
       
-      var component: js.UndefOr[String | Boolean | ReactElement] = js.native
+      var component: js.UndefOr[String | Boolean | ReactElement] = js.undefined
       
-      var enter: js.UndefOr[Style] = js.native
+      var enter: js.UndefOr[Style] = js.undefined
       
-      var leave: js.UndefOr[Style] = js.native
+      var leave: js.UndefOr[Style] = js.undefined
       
-      var onEnter: js.UndefOr[js.Function1[/* style */ PlainStyle, Unit]] = js.native
+      var onEnter: js.UndefOr[js.Function1[/* style */ PlainStyle, Unit]] = js.undefined
       
-      var onLeave: js.UndefOr[js.Function1[/* style */ Style, Unit]] = js.native
+      var onLeave: js.UndefOr[js.Function1[/* style */ Style, Unit]] = js.undefined
       
-      var runOnMount: js.UndefOr[Boolean] = js.native
+      var runOnMount: js.UndefOr[Boolean] = js.undefined
     }
     object TransitionProps {
       

@@ -3,18 +3,18 @@ package typings.got.mod
 import typings.node.httpsMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InternalRequestOptions extends RequestOptions {
+trait InternalRequestOptions
+  extends StObject
+     with RequestOptions {
   
   @JSName("agent")
-  var agent_InternalRequestOptions: js.UndefOr[js.Any] = js.native
+  var agent_InternalRequestOptions: js.UndefOr[js.Any] = js.undefined
   
   // Redeclare options with `any` type for allow specify types incompatible with http.RequestOptions.
   @JSName("timeout")
-  var timeout_InternalRequestOptions: js.UndefOr[js.Any] = js.native
+  var timeout_InternalRequestOptions: js.UndefOr[js.Any] = js.undefined
 }
 object InternalRequestOptions {
   

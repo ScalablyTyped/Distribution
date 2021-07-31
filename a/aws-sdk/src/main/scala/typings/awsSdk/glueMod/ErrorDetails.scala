@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
   /**
     * The error code for an error.
     */
-  var ErrorCode: js.UndefOr[ErrorCodeString] = js.native
+  var ErrorCode: js.UndefOr[ErrorCodeString] = js.undefined
   
   /**
     * The error message for an error.
     */
-  var ErrorMessage: js.UndefOr[ErrorMessageString] = js.native
+  var ErrorMessage: js.UndefOr[ErrorMessageString] = js.undefined
 }
 object ErrorDetails {
   

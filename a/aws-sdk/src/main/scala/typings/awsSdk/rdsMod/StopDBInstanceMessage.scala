@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDBInstanceMessage extends StObject {
   
   /**
     *  The user-supplied instance identifier. 
     */
-  var DBInstanceIdentifier: String = js.native
+  var DBInstanceIdentifier: String
   
   /**
     *  The user-supplied instance identifier of the DB Snapshot created immediately before the DB instance is stopped. 
     */
-  var DBSnapshotIdentifier: js.UndefOr[String] = js.native
+  var DBSnapshotIdentifier: js.UndefOr[String] = js.undefined
 }
 object StopDBInstanceMessage {
   

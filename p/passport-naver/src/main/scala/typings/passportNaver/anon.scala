@@ -2,25 +2,23 @@ package typings.passportNaver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Age extends StObject {
     
-    var age: Double = js.native
+    var age: Double
     
-    var birthday: js.Any = js.native
+    var birthday: js.Any
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
     
-    var nickname: String = js.native
+    var nickname: String
     
-    var profile_image: String = js.native
+    var profile_image: String
   }
   object Age {
     

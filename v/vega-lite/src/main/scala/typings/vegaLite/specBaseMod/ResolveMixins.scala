@@ -3,16 +3,14 @@ package typings.vegaLite.specBaseMod
 import typings.vegaLite.srcResolveMod.Resolve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveMixins extends StObject {
   
   /**
     * Scale, axis, and legend resolutions for view composition specifications.
     */
-  var resolve: js.UndefOr[Resolve] = js.native
+  var resolve: js.UndefOr[Resolve] = js.undefined
 }
 object ResolveMixins {
   

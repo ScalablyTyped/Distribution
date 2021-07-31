@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleDefinitionBindingCollection extends ClientObjectCollection[RoleDefinition] {
+trait RoleDefinitionBindingCollection
+  extends StObject
+     with ClientObjectCollection[RoleDefinition] {
   
   def add(roleDefinition: RoleDefinition): Unit = js.native
   

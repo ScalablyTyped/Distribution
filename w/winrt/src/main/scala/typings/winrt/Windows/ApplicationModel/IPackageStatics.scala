@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPackageStatics extends StObject {
   
-  var current: Package = js.native
+  var current: Package
 }
 object IPackageStatics {
   

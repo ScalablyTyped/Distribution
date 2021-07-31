@@ -16,14 +16,15 @@ import typings.ionicCliFramework.configMod.BaseConfigOptions
 import typings.ionicCliFramework.mod.BaseConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libIntegrationsMod {
   
   @JSImport("ionic/lib/integrations", "BaseIntegration")
   @js.native
-  abstract class BaseIntegration[T /* <: ProjectIntegration */] protected () extends IIntegration[T] {
+  abstract class BaseIntegration[T /* <: ProjectIntegration */] protected ()
+    extends StObject
+       with IIntegration[T] {
     def this(e: IntegrationDeps) = this()
     
     val e: IntegrationDeps = js.native
@@ -33,18 +34,21 @@ object libIntegrationsMod {
   /* static members */
   object BaseIntegration {
     
-    @JSImport("ionic/lib/integrations", "BaseIntegration.createFromName")
+    @JSImport("ionic/lib/integrations", "BaseIntegration")
     @js.native
-    def createFromName(deps: IntegrationDeps, name: IntegrationName): js.Promise[IIntegration[ProjectIntegration]] = js.native
-    @JSImport("ionic/lib/integrations", "BaseIntegration.createFromName")
-    @js.native
-    def createFromName_capacitor(deps: IntegrationDeps, name: capacitor): js.Promise[Integration] = js.native
-    @JSImport("ionic/lib/integrations", "BaseIntegration.createFromName")
-    @js.native
-    def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.integrationsCordovaMod.Integration] = js.native
-    @JSImport("ionic/lib/integrations", "BaseIntegration.createFromName")
-    @js.native
-    def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.integrationsEnterpriseMod.Integration] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createFromName(deps: IntegrationDeps, name: IntegrationName): js.Promise[IIntegration[ProjectIntegration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IIntegration[ProjectIntegration]]]
+    
+    @scala.inline
+    def createFromName_capacitor(deps: IntegrationDeps, name: capacitor): js.Promise[Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Integration]]
+    
+    @scala.inline
+    def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.integrationsCordovaMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsCordovaMod.Integration]]
+    
+    @scala.inline
+    def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.integrationsEnterpriseMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsEnterpriseMod.Integration]]
   }
   
   @JSImport("ionic/lib/integrations", "INTEGRATION_NAMES")
@@ -67,16 +71,15 @@ object libIntegrationsMod {
   */
   trait IntegationUnion extends StObject
   
-  @js.native
   trait IntegrationDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    val project: IProject = js.native
+    val project: IProject
     
-    val shell: IShell = js.native
+    val shell: IShell
   }
   object IntegrationDeps {
     
@@ -103,10 +106,9 @@ object libIntegrationsMod {
     }
   }
   
-  @js.native
   trait IntegrationOptions extends StObject {
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
   }
   object IntegrationOptions {
     

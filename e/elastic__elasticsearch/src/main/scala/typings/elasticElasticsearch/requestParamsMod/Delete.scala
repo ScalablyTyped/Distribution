@@ -7,33 +7,33 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.internal
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Delete extends Generic {
+trait Delete
+  extends StObject
+     with Generic {
   
-  var id: String = js.native
+  var id: String
   
-  var if_primary_term: js.UndefOr[Double] = js.native
+  var if_primary_term: js.UndefOr[Double] = js.undefined
   
-  var if_seq_no: js.UndefOr[Double] = js.native
+  var if_seq_no: js.UndefOr[Double] = js.undefined
   
-  var index: String = js.native
+  var index: String
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var version_type: js.UndefOr[internal | external | external_gte | force] = js.native
+  var version_type: js.UndefOr[internal | external | external_gte | force] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object Delete {
   

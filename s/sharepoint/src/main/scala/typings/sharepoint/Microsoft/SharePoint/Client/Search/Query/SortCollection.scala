@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.sharepoint.SP.ClientObjectCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortCollection extends ClientObjectCollection[Sort] {
+trait SortCollection
+  extends StObject
+     with ClientObjectCollection[Sort] {
   
   def add(strProperty: String, sortDirection: SortDirection): Unit = js.native
   

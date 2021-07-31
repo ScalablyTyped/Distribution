@@ -7,60 +7,58 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Globalization.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to view data about another app and the device it is running on. */
-@js.native
 trait AllJoynAboutDataView extends StObject {
   
   /** The version number for the implemented AllJoyn platform software. */
-  var ajSoftwareVersion: String = js.native
+  var ajSoftwareVersion: String
   
   /** A globally unique identifier associated with the app. */
-  var appId: String = js.native
+  var appId: String
   
   /** The name of the app. */
-  var appName: String = js.native
+  var appName: String
   
   /** The date of manufacture. */
-  var dateOfManufacture: Date = js.native
+  var dateOfManufacture: Date
   
   /** The default language of the app. */
-  var defaultLanguage: Language = js.native
+  var defaultLanguage: Language
   
   /** An app description provided by the manufacturer. */
-  var description: String = js.native
+  var description: String
   
   /** The device ID used during advertising. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Name of the device. */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /** The current version of the hardware that the app is running on. This field is optional, presenting as an empty string if not set. */
-  var hardwareVersion: String = js.native
+  var hardwareVersion: String
   
   /** The name of the manufacturer. */
-  var manufacturer: String = js.native
+  var manufacturer: String
   
   /** The model number of the device running the app. */
-  var modelNumber: String = js.native
+  var modelNumber: String
   
   /** This is a set of fields, where each other named AllJoynAboutDataView property is also accessible. For example, ModelNumber is Properties ["ModelNumber"]. Additionally, this property can be used to get custom properties. */
-  var properties: IMapView[String, _] = js.native
+  var properties: IMapView[String, js.Any]
   
   /** The version number of the app. */
-  var softwareVersion: String = js.native
+  var softwareVersion: String
   
   /** The status returned by the GetDataBySessionPortAsync operation that created the AllJoynAboutDataView object. */
-  var status: Double = js.native
+  var status: Double
   
   /** A URL to the manufacturer or developer support portal. */
-  var supportUrl: Uri = js.native
+  var supportUrl: Uri
   
   /** A list of languages supported by the app and will always include the DefaultLanguage . */
-  var supportedLanguages: IVectorView[Language] = js.native
+  var supportedLanguages: IVectorView[Language]
 }
 object AllJoynAboutDataView {
   
@@ -77,7 +75,7 @@ object AllJoynAboutDataView {
     hardwareVersion: String,
     manufacturer: String,
     modelNumber: String,
-    properties: IMapView[String, _],
+    properties: IMapView[String, js.Any],
     softwareVersion: String,
     status: Double,
     supportUrl: Uri,
@@ -124,7 +122,7 @@ object AllJoynAboutDataView {
     def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])

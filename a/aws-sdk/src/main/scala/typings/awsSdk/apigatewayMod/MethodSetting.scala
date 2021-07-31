@@ -2,61 +2,59 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MethodSetting extends StObject {
   
   /**
     * Specifies whether the cached responses are encrypted. The PATCH path for this setting is /{method_setting_key}/caching/dataEncrypted, and the value is a Boolean.
     */
-  var cacheDataEncrypted: js.UndefOr[Boolean] = js.native
+  var cacheDataEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the time to live (TTL), in seconds, for cached responses. The higher the TTL, the longer the response will be cached. The PATCH path for this setting is /{method_setting_key}/caching/ttlInSeconds, and the value is an integer.
     */
-  var cacheTtlInSeconds: js.UndefOr[Integer] = js.native
+  var cacheTtlInSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * Specifies whether responses should be cached and returned for requests. A cache cluster must be enabled on the stage for responses to be cached. The PATCH path for this setting is /{method_setting_key}/caching/enabled, and the value is a Boolean.
     */
-  var cachingEnabled: js.UndefOr[Boolean] = js.native
+  var cachingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether data trace logging is enabled for this method, which affects the log entries pushed to Amazon CloudWatch Logs. The PATCH path for this setting is /{method_setting_key}/logging/dataTrace, and the value is a Boolean.
     */
-  var dataTraceEnabled: js.UndefOr[Boolean] = js.native
+  var dataTraceEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the logging level for this method, which affects the log entries pushed to Amazon CloudWatch Logs. The PATCH path for this setting is /{method_setting_key}/logging/loglevel, and the available levels are OFF, ERROR, and INFO. Choose ERROR to write only error-level entries to CloudWatch Logs, or choose INFO to include all ERROR events as well as extra informational events.
     */
-  var loggingLevel: js.UndefOr[String] = js.native
+  var loggingLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether Amazon CloudWatch metrics are enabled for this method. The PATCH path for this setting is /{method_setting_key}/metrics/enabled, and the value is a Boolean.
     */
-  var metricsEnabled: js.UndefOr[Boolean] = js.native
+  var metricsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether authorization is required for a cache invalidation request. The PATCH path for this setting is /{method_setting_key}/caching/requireAuthorizationForCacheControl, and the value is a Boolean.
     */
-  var requireAuthorizationForCacheControl: js.UndefOr[Boolean] = js.native
+  var requireAuthorizationForCacheControl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the throttling burst limit. The PATCH path for this setting is /{method_setting_key}/throttling/burstLimit, and the value is an integer.
     */
-  var throttlingBurstLimit: js.UndefOr[Integer] = js.native
+  var throttlingBurstLimit: js.UndefOr[Integer] = js.undefined
   
   /**
     * Specifies the throttling rate limit. The PATCH path for this setting is /{method_setting_key}/throttling/rateLimit, and the value is a double.
     */
-  var throttlingRateLimit: js.UndefOr[Double] = js.native
+  var throttlingRateLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies how to handle unauthorized requests for cache invalidation. The PATCH path for this setting is /{method_setting_key}/caching/unauthorizedCacheControlHeaderStrategy, and the available values are FAIL_WITH_403, SUCCEED_WITH_RESPONSE_HEADER, SUCCEED_WITHOUT_RESPONSE_HEADER.
     */
-  var unauthorizedCacheControlHeaderStrategy: js.UndefOr[UnauthorizedCacheControlHeaderStrategy] = js.native
+  var unauthorizedCacheControlHeaderStrategy: js.UndefOr[UnauthorizedCacheControlHeaderStrategy] = js.undefined
 }
 object MethodSetting {
   

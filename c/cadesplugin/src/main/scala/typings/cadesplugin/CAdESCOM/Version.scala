@@ -2,19 +2,17 @@ package typings.cadesplugin.CAdESCOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
-  val BuildVersion: Double = js.native
+  val BuildVersion: Double
   
-  val MajorVersion: Double = js.native
+  val MajorVersion: Double
   
-  val MinorVersion: Double = js.native
+  val MinorVersion: Double
   
-  val toStringDefault: String = js.native
+  val toStringDefault: String
 }
 object Version {
   

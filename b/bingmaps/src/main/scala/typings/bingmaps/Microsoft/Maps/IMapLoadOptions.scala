@@ -2,12 +2,11 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMapLoadOptions
-  extends IMapOptions
+  extends StObject
+     with IMapOptions
      with IViewOptions {
   
   /** 
@@ -15,7 +14,7 @@ trait IMapLoadOptions
     * The Bing Maps Key used to authenticate the application.
     * It is recommended that the Bing Maps key be set as a URL parameter of the Bing Maps script reference. This option will continue to work.
     */
-  var credentials: js.UndefOr[String] = js.native
+  var credentials: js.UndefOr[String] = js.undefined
 }
 object IMapLoadOptions {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localGatewayRouteTableVpcAssociationMod {
@@ -46,6 +45,10 @@ object localGatewayRouteTableVpcAssociationMod {
   /* static members */
   object LocalGatewayRouteTableVpcAssociation {
     
+    @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LocalGatewayRouteTableVpcAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -55,50 +58,44 @@ object localGatewayRouteTableVpcAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LocalGatewayRouteTableVpcAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LocalGatewayRouteTableVpcAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocalGatewayRouteTableVpcAssociationState): LocalGatewayRouteTableVpcAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocalGatewayRouteTableVpcAssociationState): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: LocalGatewayRouteTableVpcAssociationState,
       opts: CustomResourceOptions
-    ): LocalGatewayRouteTableVpcAssociation = js.native
+    ): LocalGatewayRouteTableVpcAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRouteTableVpcAssociation]
     
     /**
       * Returns true if the given object is an instance of LocalGatewayRouteTableVpcAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation", "LocalGatewayRouteTableVpcAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRouteTableVpcAssociation.LocalGatewayRouteTableVpcAssociation */ Boolean]
   }
   
-  @js.native
   trait LocalGatewayRouteTableVpcAssociationArgs extends StObject {
     
     /**
       * Identifier of EC2 Local Gateway Route Table.
       */
-    val localGatewayRouteTableId: Input[String] = js.native
+    val localGatewayRouteTableId: Input[String]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Identifier of EC2 VPC.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object LocalGatewayRouteTableVpcAssociationArgs {
     
@@ -125,25 +122,24 @@ object localGatewayRouteTableVpcAssociationMod {
     }
   }
   
-  @js.native
   trait LocalGatewayRouteTableVpcAssociationState extends StObject {
     
-    val localGatewayId: js.UndefOr[Input[String]] = js.native
+    val localGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Local Gateway Route Table.
       */
-    val localGatewayRouteTableId: js.UndefOr[Input[String]] = js.native
+    val localGatewayRouteTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Identifier of EC2 VPC.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object LocalGatewayRouteTableVpcAssociationState {
     

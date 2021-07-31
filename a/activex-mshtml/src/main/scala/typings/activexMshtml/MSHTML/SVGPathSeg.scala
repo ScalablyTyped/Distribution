@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGPathSeg extends StObject {
   
   @JSName("MSHTML.SVGPathSeg_typekey")
-  var MSHTMLDotSVGPathSeg_typekey: SVGPathSeg = js.native
+  var MSHTMLDotSVGPathSeg_typekey: SVGPathSeg
   
-  var pathSegType: Double = js.native
+  var pathSegType: Double
   
-  val pathSegTypeAsLetter: String = js.native
+  val pathSegTypeAsLetter: String
 }
 object SVGPathSeg {
   

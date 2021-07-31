@@ -4,15 +4,13 @@ import typings.webLocksApi.webLocksApiStrings.exclusive
 import typings.webLocksApi.webLocksApiStrings.shared
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lock extends StObject {
   
-  val mode: exclusive | shared = js.native
+  val mode: exclusive | shared
   
-  val name: String = js.native
+  val name: String
 }
 object Lock {
   

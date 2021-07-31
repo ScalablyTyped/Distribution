@@ -2,21 +2,19 @@ package typings.reactSpinners
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   type CalcFunction[T] = js.Function0[T]
   
-  @js.native
   trait CommonProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[String | PrecompiledCss] = js.native
+    var css: js.UndefOr[String | PrecompiledCss] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
   }
   object CommonProps {
     
@@ -49,12 +47,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait LengthObject extends StObject {
     
-    var unit: String = js.native
+    var unit: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object LengthObject {
     
@@ -77,12 +74,13 @@ object interfacesMod {
   
   type LengthType = Double | String
   
-  @js.native
-  trait LoaderHeightWidthProps extends CommonProps {
+  trait LoaderHeightWidthProps
+    extends StObject
+       with CommonProps {
     
-    var height: js.UndefOr[LengthType] = js.native
+    var height: js.UndefOr[LengthType] = js.undefined
     
-    var width: js.UndefOr[LengthType] = js.native
+    var width: js.UndefOr[LengthType] = js.undefined
   }
   object LoaderHeightWidthProps {
     
@@ -109,12 +107,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait LoaderHeightWidthRadiusProps extends LoaderHeightWidthProps {
+  trait LoaderHeightWidthRadiusProps
+    extends StObject
+       with LoaderHeightWidthProps {
     
-    var margin: js.UndefOr[LengthType] = js.native
+    var margin: js.UndefOr[LengthType] = js.undefined
     
-    var radius: js.UndefOr[LengthType] = js.native
+    var radius: js.UndefOr[LengthType] = js.undefined
   }
   object LoaderHeightWidthRadiusProps {
     
@@ -141,10 +140,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait LoaderSizeMarginProps extends LoaderSizeProps {
+  trait LoaderSizeMarginProps
+    extends StObject
+       with LoaderSizeProps {
     
-    var margin: js.UndefOr[LengthType] = js.native
+    var margin: js.UndefOr[LengthType] = js.undefined
   }
   object LoaderSizeMarginProps {
     
@@ -165,10 +165,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait LoaderSizeProps extends CommonProps {
+  trait LoaderSizeProps
+    extends StObject
+       with CommonProps {
     
-    var size: js.UndefOr[LengthType] = js.native
+    var size: js.UndefOr[LengthType] = js.undefined
   }
   object LoaderSizeProps {
     
@@ -189,12 +190,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait PrecompiledCss extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var styles: String = js.native
+    var styles: String
   }
   object PrecompiledCss {
     

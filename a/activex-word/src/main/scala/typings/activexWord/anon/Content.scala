@@ -2,15 +2,13 @@ package typings.activexWord.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var Content: String = js.native
+  var Content: String
   
-  val ContentControl: typings.activexWord.Word.ContentControl = js.native
+  val ContentControl: typings.activexWord.Word.ContentControl
 }
 object Content {
   

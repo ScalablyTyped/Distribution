@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryVpcSettings extends StObject {
   
   /**
     * The identifiers of the subnets for the directory servers. The two subnets must be in different Availability Zones. AWS Directory Service creates a directory server and a DNS server in each of these subnets.
     */
-  var SubnetIds: typings.awsSdk.directoryserviceMod.SubnetIds = js.native
+  var SubnetIds: typings.awsSdk.directoryserviceMod.SubnetIds
   
   /**
     * The identifier of the VPC in which to create the directory.
     */
-  var VpcId: typings.awsSdk.directoryserviceMod.VpcId = js.native
+  var VpcId: typings.awsSdk.directoryserviceMod.VpcId
 }
 object DirectoryVpcSettings {
   

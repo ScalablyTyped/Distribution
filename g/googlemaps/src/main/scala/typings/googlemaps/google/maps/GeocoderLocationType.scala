@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait GeocoderLocationType extends StObject
 object GeocoderLocationType extends StObject {
   
   @js.native
-  sealed trait APPROXIMATE extends GeocoderLocationType
+  sealed trait APPROXIMATE
+    extends StObject
+       with GeocoderLocationType
   
   @js.native
-  sealed trait GEOMETRIC_CENTER extends GeocoderLocationType
+  sealed trait GEOMETRIC_CENTER
+    extends StObject
+       with GeocoderLocationType
   
   @js.native
-  sealed trait RANGE_INTERPOLATED extends GeocoderLocationType
+  sealed trait RANGE_INTERPOLATED
+    extends StObject
+       with GeocoderLocationType
   
   @js.native
-  sealed trait ROOFTOP extends GeocoderLocationType
+  sealed trait ROOFTOP
+    extends StObject
+       with GeocoderLocationType
 }

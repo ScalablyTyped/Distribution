@@ -3,32 +3,30 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesStatesInactiveOptionsObject extends StObject {
   
   /**
     * (Highstock) Animation when not hovering over the marker.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highstock) Enable or disable the inactive state for a series
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Opacity for the links between nodes in the sankey diagram in
     * inactive mode.
     */
-  var linkOpacity: js.UndefOr[Double] = js.native
+  var linkOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Opacity of inactive markers.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object SeriesStatesInactiveOptionsObject {
   

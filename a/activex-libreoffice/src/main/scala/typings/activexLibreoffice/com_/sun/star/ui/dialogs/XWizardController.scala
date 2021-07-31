@@ -3,24 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the interface of a client-provided controller of a custom {@link Wizard} .
   * @since OOo 3.3
   */
-@js.native
 trait XWizardController extends StObject {
   
-  def canAdvance(): Boolean = js.native
+  def canAdvance(): Boolean
   
   /**
     * called when the wizard is about to be finished.
     *
     * This method allows the controller to do any final checks, and ultimately veto finishing the wizard.
     */
-  def confirmFinish(): Boolean = js.native
+  def confirmFinish(): Boolean
   
   /**
     * creates a page
@@ -31,20 +29,20 @@ trait XWizardController extends StObject {
     * @param PageId the ID of the page.
     * @returns the requested page.
     */
-  def createPage(ParentWindow: XWindow, PageId: Double): XWizardPage = js.native
+  def createPage(ParentWindow: XWindow, PageId: Double): XWizardPage
   
   /**
     * provides the title of a page given by ID
     *
     * The page titles are displayed in the wizard's roadmap.
     */
-  def getPageTitle(PageId: Double): String = js.native
+  def getPageTitle(PageId: Double): String
   
   /** called when a new page in the wizard is being activated */
-  def onActivatePage(PageId: Double): Unit = js.native
+  def onActivatePage(PageId: Double): Unit
   
   /** called when a page in the wizard is being deactivated */
-  def onDeactivatePage(PageId: Double): Unit = js.native
+  def onDeactivatePage(PageId: Double): Unit
 }
 object XWizardController {
   

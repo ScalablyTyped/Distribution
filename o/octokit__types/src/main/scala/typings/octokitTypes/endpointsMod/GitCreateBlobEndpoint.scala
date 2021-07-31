@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateBlobEndpoint extends StObject {
   
   /**
     * The new blob's content.
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * The encoding used for `content`. Currently, `"utf-8"` and `"base64"` are supported.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object GitCreateBlobEndpoint {
   

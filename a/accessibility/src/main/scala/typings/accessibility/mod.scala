@@ -8,7 +8,6 @@ import typings.accessibility.anon.Font
 import typings.accessibility.anon.Persistent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,64 +17,126 @@ object mod {
     */
   @JSImport("accessibility", JSImport.Namespace)
   @js.native
-  class ^ () extends Accessibility {
+  class ^ ()
+    extends StObject
+       with Accessibility {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def alterTextSpace(isIncrease: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def build(): Unit = js.native
+    
+    /* CompleteClass */
+    override def deleteOppositesIfDefined(options: Options): Options = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disabledUnsupportedFeatures(): Unit = js.native
+    
+    /* CompleteClass */
+    override def fontFallback(): Unit = js.native
+    
+    /* CompleteClass */
+    override def initFontSize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def injectCss(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invoke(action: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def listen(): Unit = js.native
+    
+    /* CompleteClass */
+    override val menuInterface: MenuInterface = js.native
+    
+    /* CompleteClass */
+    override def onChange(updateSession: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def read(): Unit = js.native
+    
+    /* CompleteClass */
+    override def resetIfDefined(src: js.Any, dest: js.Any, prop: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def runHotkey(name: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def saveSession(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setSessionFromCache(): Unit = js.native
+    
+    /* CompleteClass */
+    override def speechToText(): Unit = js.native
+    
+    /* CompleteClass */
+    override def textToSpeech(text: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def toggleMenu(): Unit = js.native
   }
+  @JSImport("accessibility", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @deprecated */
   /* static member */
-  @JSImport("accessibility", "init")
-  @js.native
-  def init(): Accessibility = js.native
-  @JSImport("accessibility", "init")
-  @js.native
-  def init(options: Options): Accessibility = js.native
+  @scala.inline
+  def init(): Accessibility = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Accessibility]
+  @scala.inline
+  def init(options: Options): Accessibility = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Accessibility]
   
   /**
     * Adaptive Accessibility Menu
     */
-  @js.native
   trait Accessibility extends StObject {
     
-    def alterTextSpace(isIncrease: Boolean): Unit = js.native
+    def alterTextSpace(isIncrease: Boolean): Unit
     
-    def build(): Unit = js.native
+    def build(): Unit
     
-    def deleteOppositesIfDefined(options: Options): Options = js.native
+    def deleteOppositesIfDefined(options: Options): Options
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disabledUnsupportedFeatures(): Unit = js.native
+    def disabledUnsupportedFeatures(): Unit
     
-    def fontFallback(): Unit = js.native
+    def fontFallback(): Unit
     
-    def initFontSize(): Unit = js.native
+    def initFontSize(): Unit
     
-    def injectCss(): Unit = js.native
+    def injectCss(): Unit
     
-    def invoke(action: js.Function0[Unit]): Unit = js.native
+    def invoke(action: js.Function0[Unit]): Unit
     
-    def listen(): Unit = js.native
+    def listen(): Unit
     
-    val menuInterface: MenuInterface = js.native
+    val menuInterface: MenuInterface
     
-    def onChange(updateSession: Boolean): Unit = js.native
+    def onChange(updateSession: Boolean): Unit
     
-    def read(): Unit = js.native
+    def read(): Unit
     
-    def resetIfDefined(src: js.Any, dest: js.Any, prop: String): Unit = js.native
+    def resetIfDefined(src: js.Any, dest: js.Any, prop: String): Unit
     
-    def runHotkey(name: String): Unit = js.native
+    def runHotkey(name: String): Unit
     
-    def saveSession(): Unit = js.native
+    def saveSession(): Unit
     
-    def setSessionFromCache(): Unit = js.native
+    def setSessionFromCache(): Unit
     
-    def speechToText(): Unit = js.native
+    def speechToText(): Unit
     
-    def textToSpeech(text: String): Unit = js.native
+    def textToSpeech(text: String): Unit
     
-    def toggleMenu(): Unit = js.native
+    def toggleMenu(): Unit
   }
   object Accessibility {
     
@@ -171,12 +232,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Dimensions extends StObject {
     
-    var height: js.UndefOr[SizeOrPosition] = js.native
+    var height: js.UndefOr[SizeOrPosition] = js.undefined
     
-    var width: js.UndefOr[SizeOrPosition] = js.native
+    var width: js.UndefOr[SizeOrPosition] = js.undefined
   }
   object Dimensions {
     
@@ -205,16 +265,15 @@ object mod {
   
   type HotKeyDefinition = js.Tuple3[Double, Double, String]
   
-  @js.native
   trait HotKeys extends StObject {
     
     /** @default false */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var helpTitles: js.UndefOr[Boolean] = js.native
+    var helpTitles: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[StringDictionary[HotKeyDefinition]] = js.native
+    var keys: js.UndefOr[StringDictionary[HotKeyDefinition]] = js.undefined
   }
   object HotKeys {
     
@@ -247,42 +306,41 @@ object mod {
     }
   }
   
-  @js.native
   trait Icon extends StObject {
     
     /** @default '#4054b2' */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** @default false */
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var circularBorder: js.UndefOr[Boolean] = js.native
+    var circularBorder: js.UndefOr[Boolean] = js.undefined
     
     /** @default '#fff' */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var dimensions: js.UndefOr[Dimensions] = js.native
+    var dimensions: js.UndefOr[Dimensions] = js.undefined
     
     /** @default 'Material Icons' */
-    var fontClass: js.UndefOr[String] = js.native
+    var fontClass: js.UndefOr[String] = js.undefined
     
     /** @default ['https://fonts.googleapis.com/icon?family=Material+Icons'] */
-    var fontFaceSrc: js.UndefOr[js.Array[String]] = js.native
+    var fontFaceSrc: js.UndefOr[js.Array[String]] = js.undefined
     
     /** @default 'Material Icons' */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** @default 'accessible' */
-    var img: js.UndefOr[String] = js.native
+    var img: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
     /** @default false */
-    var useEmojis: js.UndefOr[Boolean] = js.native
+    var useEmojis: js.UndefOr[Boolean] = js.undefined
     
     /** @default '9999' */
-    var zIndex: js.UndefOr[String | Double] = js.native
+    var zIndex: js.UndefOr[String | Double] = js.undefined
   }
   object Icon {
     
@@ -372,50 +430,49 @@ object mod {
     }
   }
   
-  @js.native
   trait Labels extends StObject {
     
     /** @default 'gray hues' */
-    var bigCursor: js.UndefOr[String] = js.native
+    var bigCursor: js.UndefOr[String] = js.undefined
     
     /** @default 'Close' */
-    var closeTitle: js.UndefOr[String] = js.native
+    var closeTitle: js.UndefOr[String] = js.undefined
     
     /** @default 'decrease text size' */
-    var decreaseText: js.UndefOr[String] = js.native
+    var decreaseText: js.UndefOr[String] = js.undefined
     
     /** @default 'decrease text spacing' */
-    var decreaseTextSpacing: js.UndefOr[String] = js.native
+    var decreaseTextSpacing: js.UndefOr[String] = js.undefined
     
     /** @default 'gray hues' */
-    var grayHues: js.UndefOr[String] = js.native
+    var grayHues: js.UndefOr[String] = js.undefined
     
     /** @default 'increase text size' */
-    var increaseText: js.UndefOr[String] = js.native
+    var increaseText: js.UndefOr[String] = js.undefined
     
     /** @default 'increase text spacing' */
-    var increaseTextSpacing: js.UndefOr[String] = js.native
+    var increaseTextSpacing: js.UndefOr[String] = js.undefined
     
     /** @default 'invert colors' */
-    var invertColors: js.UndefOr[String] = js.native
+    var invertColors: js.UndefOr[String] = js.undefined
     
     /** @default 'Accessibility Options' */
-    var menuTitle: js.UndefOr[String] = js.native
+    var menuTitle: js.UndefOr[String] = js.undefined
     
     /** @default 'reading guide' */
-    var readingGuide: js.UndefOr[String] = js.native
+    var readingGuide: js.UndefOr[String] = js.undefined
     
     /** @default 'Reset' */
-    var resetTitle: js.UndefOr[String] = js.native
+    var resetTitle: js.UndefOr[String] = js.undefined
     
     /** @default 'speech to text' */
-    var speechToText: js.UndefOr[String] = js.native
+    var speechToText: js.UndefOr[String] = js.undefined
     
     /** @default 'underline links' */
-    var textToSpeech: js.UndefOr[String] = js.native
+    var textToSpeech: js.UndefOr[String] = js.undefined
     
     /** @default 'underline links' */
-    var underlineLinks: js.UndefOr[String] = js.native
+    var underlineLinks: js.UndefOr[String] = js.undefined
   }
   object Labels {
     
@@ -547,41 +604,40 @@ object mod {
     def underlineLinks(destroy: Boolean): Unit = js.native
   }
   
-  @js.native
   trait Modules extends StObject {
     
     /** @default true */
-    var bigCursor: js.UndefOr[Boolean] = js.native
+    var bigCursor: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var decreaseText: js.UndefOr[Boolean] = js.native
+    var decreaseText: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var decreaseTextSpacing: js.UndefOr[Boolean] = js.native
+    var decreaseTextSpacing: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var grayHues: js.UndefOr[Boolean] = js.native
+    var grayHues: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var increaseText: js.UndefOr[Boolean] = js.native
+    var increaseText: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var increaseTextSpacing: js.UndefOr[Boolean] = js.native
+    var increaseTextSpacing: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var invertColors: js.UndefOr[Boolean] = js.native
+    var invertColors: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var readingGuide: js.UndefOr[Boolean] = js.native
+    var readingGuide: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var speechToText: js.UndefOr[`true`] = js.native
+    var speechToText: js.UndefOr[`true`] = js.undefined
     
     /** @default true */
-    var textToSpeech: js.UndefOr[Boolean] = js.native
+    var textToSpeech: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var underlineLinks: js.UndefOr[Boolean] = js.native
+    var underlineLinks: js.UndefOr[Boolean] = js.undefined
   }
   object Modules {
     
@@ -662,38 +718,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var animations: js.UndefOr[Buttons] = js.native
+    var animations: js.UndefOr[Buttons] = js.undefined
     
-    var buttons: js.UndefOr[Font] = js.native
+    var buttons: js.UndefOr[Font] = js.undefined
     
-    var guide: js.UndefOr[CBackground] = js.native
+    var guide: js.UndefOr[CBackground] = js.undefined
     
-    var hotkeys: js.UndefOr[HotKeys] = js.native
+    var hotkeys: js.UndefOr[HotKeys] = js.undefined
     
-    var icon: js.UndefOr[Icon] = js.native
+    var icon: js.UndefOr[Icon] = js.undefined
     
-    var labels: js.UndefOr[Labels] = js.native
+    var labels: js.UndefOr[Labels] = js.undefined
     
-    var menu: js.UndefOr[typings.accessibility.anon.Dimensions] = js.native
+    var menu: js.UndefOr[typings.accessibility.anon.Dimensions] = js.undefined
     
-    var modules: js.UndefOr[Modules] = js.native
+    var modules: js.UndefOr[Modules] = js.undefined
     
-    var session: js.UndefOr[Persistent] = js.native
+    var session: js.UndefOr[Persistent] = js.undefined
     
     /** @default 'en-US' */
-    var speechToTextLang: js.UndefOr[String] = js.native
+    var speechToTextLang: js.UndefOr[String] = js.undefined
     
     /** @default true */
-    var textEmlMode: js.UndefOr[Boolean] = js.native
+    var textEmlMode: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var textPixelMode: js.UndefOr[Boolean] = js.native
+    var textPixelMode: js.UndefOr[Boolean] = js.undefined
     
     /** @default 'en-US' */
-    var textToSpeechLang: js.UndefOr[String] = js.native
+    var textToSpeechLang: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -786,18 +841,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var bottom: js.UndefOr[SizeOrPosition] = js.native
+    var bottom: js.UndefOr[SizeOrPosition] = js.undefined
     
-    var left: js.UndefOr[SizeOrPosition] = js.native
+    var left: js.UndefOr[SizeOrPosition] = js.undefined
     
-    var right: js.UndefOr[SizeOrPosition] = js.native
+    var right: js.UndefOr[SizeOrPosition] = js.undefined
     
-    var top: js.UndefOr[SizeOrPosition] = js.native
+    var top: js.UndefOr[SizeOrPosition] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Position {
     
@@ -840,12 +894,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SizeOrPosition extends StObject {
     
-    var size: Double | String = js.native
+    var size: Double | String
     
-    var units: js.UndefOr[String] = js.native
+    var units: js.UndefOr[String] = js.undefined
   }
   object SizeOrPosition {
     

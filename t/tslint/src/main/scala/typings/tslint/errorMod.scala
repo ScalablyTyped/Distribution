@@ -2,10 +2,13 @@ package typings.tslint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
+  
+  @JSImport("tslint/lib/error", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tslint/lib/error", "Error")
   @js.native
@@ -41,15 +44,12 @@ object errorMod {
     def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("tslint/lib/error", "isError")
-  @js.native
-  def isError(possibleError: js.Any): /* is tslint.tslint/lib/error.Error */ Boolean = js.native
+  @scala.inline
+  def isError(possibleError: js.Any): /* is tslint.tslint/lib/error.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(possibleError.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/error.Error */ Boolean]
   
-  @JSImport("tslint/lib/error", "showRuleCrashWarning")
-  @js.native
-  def showRuleCrashWarning(message: String, ruleName: String, fileName: String): Unit = js.native
+  @scala.inline
+  def showRuleCrashWarning(message: String, ruleName: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showRuleCrashWarning")(message.asInstanceOf[js.Any], ruleName.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tslint/lib/error", "showWarningOnce")
-  @js.native
-  def showWarningOnce(message: String): Unit = js.native
+  @scala.inline
+  def showWarningOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWarningOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

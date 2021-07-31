@@ -4,24 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.protobuf.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Snapshot. */
-@js.native
 trait ISnapshot extends StObject {
   
   /** Snapshot expireTime */
-  var expireTime: js.UndefOr[ITimestamp | Null] = js.native
+  var expireTime: js.UndefOr[ITimestamp | Null] = js.undefined
   
   /** Snapshot labels */
-  var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /** Snapshot name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Snapshot topic */
-  var topic: js.UndefOr[String | Null] = js.native
+  var topic: js.UndefOr[String | Null] = js.undefined
 }
 object ISnapshot {
   

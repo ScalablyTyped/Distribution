@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostOffering extends StObject {
   
   /**
     * The currency of the offering.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The duration of the offering (in seconds).
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The hourly price of the offering.
     */
-  var HourlyPrice: js.UndefOr[String] = js.native
+  var HourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The instance family of the offering.
     */
-  var InstanceFamily: js.UndefOr[String] = js.native
+  var InstanceFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the offering.
     */
-  var OfferingId: js.UndefOr[String] = js.native
+  var OfferingId: js.UndefOr[String] = js.undefined
   
   /**
     * The available payment option.
     */
-  var PaymentOption: js.UndefOr[typings.awsSdk.ec2Mod.PaymentOption] = js.native
+  var PaymentOption: js.UndefOr[typings.awsSdk.ec2Mod.PaymentOption] = js.undefined
   
   /**
     * The upfront price of the offering. Does not apply to No Upfront offerings.
     */
-  var UpfrontPrice: js.UndefOr[String] = js.native
+  var UpfrontPrice: js.UndefOr[String] = js.undefined
 }
 object HostOffering {
   

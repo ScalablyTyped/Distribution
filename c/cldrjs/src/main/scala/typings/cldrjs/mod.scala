@@ -6,7 +6,6 @@ import typings.cldrjs.cldrjsStrings._underscore
 import typings.cldrjs.cldrjsStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cldrjs", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CldrStatic {
+  class ^ protected ()
+    extends StObject
+       with CldrStatic {
     /**
       * @name constructor
       * @memberof cldr.CldrFactory
@@ -43,7 +44,6 @@ object mod extends Shortcut {
     * The object created during instance initialization and used internally by .get()
     * to replace dynamic parts of an item path.
     */
-  @js.native
   trait Attributes extends StObject {
     
     /**
@@ -57,7 +57,7 @@ object mod extends Shortcut {
       * @description
       * Language subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var language: js.Any = js.native
+    var language: js.Any
     
     /**
       * @name languageId
@@ -70,7 +70,7 @@ object mod extends Shortcut {
       * @description
       * Language Id {@link http://www.unicode.org/reports/tr35/#Unicode_language_identifier}
       */
-    var languageId: js.Any = js.native
+    var languageId: js.Any
     
     /**
       * @name maxLanguageId
@@ -83,7 +83,7 @@ object mod extends Shortcut {
       * @description
       * Maximized Language Id {@link http://www.unicode.org/reports/tr35/#Likely_Subtags}
       */
-    var maxLanguageId: js.Any = js.native
+    var maxLanguageId: js.Any
     
     /**
       * @name minLanguageId
@@ -96,7 +96,7 @@ object mod extends Shortcut {
       * @description
       * Minimized Language Id {@link http://www.unicode.org/reports/tr35/#Likely_Subtags}
       */
-    var minLanguageId: js.Any = js.native
+    var minLanguageId: js.Any
     
     /**
       * @name region
@@ -109,7 +109,7 @@ object mod extends Shortcut {
       * @description
       * Region subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var region: js.Any = js.native
+    var region: js.Any
     
     /**
       * @name script
@@ -122,7 +122,7 @@ object mod extends Shortcut {
       * @description
       * Script subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var script: js.Any = js.native
+    var script: js.Any
     
     /**
       * @name territory
@@ -135,7 +135,7 @@ object mod extends Shortcut {
       * @description
       * Region subtag (territory variant) {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var territory: js.Any = js.native
+    var territory: js.Any
   }
   object Attributes {
     
@@ -189,7 +189,8 @@ object mod extends Shortcut {
     */
   @js.native
   trait CldrFactory
-    extends /**
+    extends StObject
+       with /**
     * @name constructor
     * @memberof cldr.CldrFactory
     * @kind function
@@ -353,12 +354,11 @@ object mod extends Shortcut {
     var weekData: WeekDataStatic = js.native
   }
   
-  @js.native
   trait TimeDataStatic extends StObject {
     
-    def allowed(): String = js.native
+    def allowed(): String
     
-    def preferred(): String = js.native
+    def preferred(): String
   }
   object TimeDataStatic {
     
@@ -379,12 +379,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait WeekDataStatic extends StObject {
     
-    def firstDay(): String = js.native
+    def firstDay(): String
     
-    def minDays(): Double = js.native
+    def minDays(): Double
   }
   object WeekDataStatic {
     

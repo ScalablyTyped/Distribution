@@ -3,7 +3,6 @@ package typings.sendgridRest
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,24 +39,23 @@ object mod {
   @scala.inline
   def request_=(x: Request_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Request_ extends StObject {
     
-    var body: js.Object | String = js.native
+    var body: js.Object | String
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[js.Any]
     
-    var host: String = js.native
+    var host: String
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: String = js.native
+    var port: String
     
-    var queryParams: StringDictionary[js.Any] = js.native
+    var queryParams: StringDictionary[js.Any]
     
-    var test: Boolean = js.native
+    var test: Boolean
   }
   object Request_ {
     
@@ -105,14 +103,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var body: js.Object | String = js.native
+    var body: js.Object | String
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[js.Any]
     
-    var statusCode: String = js.native
+    var statusCode: String
   }
   object Response {
     

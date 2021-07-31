@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterGameServerOutput extends StObject {
   
   /**
     * Object that describes the newly registered game server.
     */
-  var GameServer: js.UndefOr[typings.awsSdk.gameliftMod.GameServer] = js.native
+  var GameServer: js.UndefOr[typings.awsSdk.gameliftMod.GameServer] = js.undefined
 }
 object RegisterGameServerOutput {
   

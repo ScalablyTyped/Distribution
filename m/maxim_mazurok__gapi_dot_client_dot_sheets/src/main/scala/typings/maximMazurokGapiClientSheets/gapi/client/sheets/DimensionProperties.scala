@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionProperties extends StObject {
   
   /** Output only. If set, this is a column in a data source sheet. */
-  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.native
+  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.undefined
   
   /** The developer metadata associated with a single row or column. */
-  var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
   
   /** True if this dimension is being filtered. This field is read-only. */
-  var hiddenByFilter: js.UndefOr[Boolean] = js.native
+  var hiddenByFilter: js.UndefOr[Boolean] = js.undefined
   
   /** True if this dimension is explicitly hidden. */
-  var hiddenByUser: js.UndefOr[Boolean] = js.native
+  var hiddenByUser: js.UndefOr[Boolean] = js.undefined
   
   /** The height (if a row) or width (if a column) of the dimension in pixels. */
-  var pixelSize: js.UndefOr[Double] = js.native
+  var pixelSize: js.UndefOr[Double] = js.undefined
 }
 object DimensionProperties {
   

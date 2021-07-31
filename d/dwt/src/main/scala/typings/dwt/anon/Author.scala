@@ -3,39 +3,37 @@ package typings.dwt.anon
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author extends StObject {
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var compression: js.UndefOr[EnumDWTPDFCompressionType | Double] = js.native
-  
-  /**
-    * Example: 'D:20181231'
-    */
-  var creationDate: js.UndefOr[String] = js.native
-  
-  var creator: js.UndefOr[String] = js.native
-  
-  var keyWords: js.UndefOr[String] = js.native
+  var compression: js.UndefOr[EnumDWTPDFCompressionType | Double] = js.undefined
   
   /**
     * Example: 'D:20181231'
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
-  var producer: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[String] = js.undefined
   
-  var quality: js.UndefOr[Double] = js.native
+  var keyWords: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  /**
+    * Example: 'D:20181231'
+    */
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var producer: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
+  
+  var subject: js.UndefOr[String] = js.undefined
+  
+  var title: js.UndefOr[String] = js.undefined
+  
+  var version: js.UndefOr[Double] = js.undefined
 }
 object Author {
   

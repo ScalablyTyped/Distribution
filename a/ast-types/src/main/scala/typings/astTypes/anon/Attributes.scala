@@ -17,31 +17,29 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var attributes: js.UndefOr[js.Array[JSXAttributeKind | JSXSpreadAttributeKind]] = js.native
+  var attributes: js.UndefOr[js.Array[JSXAttributeKind | JSXSpreadAttributeKind]] = js.undefined
   
   var children: js.UndefOr[
     js.Array[
       JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var closingElement: js.UndefOr[JSXClosingElementKind | Null] = js.native
+  var closingElement: js.UndefOr[JSXClosingElementKind | Null] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var name: js.UndefOr[JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind] = js.native
+  var name: js.UndefOr[JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind] = js.undefined
   
-  var openingElement: JSXOpeningElementKind = js.native
+  var openingElement: JSXOpeningElementKind
   
-  var selfClosing: js.UndefOr[Boolean] = js.native
+  var selfClosing: js.UndefOr[Boolean] = js.undefined
 }
 object Attributes {
   

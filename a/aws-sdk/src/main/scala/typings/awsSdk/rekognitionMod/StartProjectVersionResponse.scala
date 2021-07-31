@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartProjectVersionResponse extends StObject {
   
   /**
     * The current running status of the model. 
     */
-  var Status: js.UndefOr[ProjectVersionStatus] = js.native
+  var Status: js.UndefOr[ProjectVersionStatus] = js.undefined
 }
 object StartProjectVersionResponse {
   

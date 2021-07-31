@@ -2,49 +2,47 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBoot extends StObject {
   
   /**
     * Do some thing before app close
     */
-  var beforeClose: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var beforeClose: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
   /**
     * Config, plugin files have loaded
     */
-  var configDidLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var configDidLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Ready to call configDidLoad,
     * Config, plugin files are referred,
     * this is the last chance to modify the config.
     */
-  var configWillLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var configWillLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * All files have loaded, start plugin here
     */
-  var didLoad: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var didLoad: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
   /**
     * Worker is ready, can do some things,
     * don't need to block the app boot
     */
-  var didReady: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var didReady: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
   /**
     * Server is listening
     */
-  var serverDidReady: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var serverDidReady: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
   /**
     * All plugins have started, can do some thing before app ready
     */
-  var willReady: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var willReady: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
 }
 object IBoot {
   

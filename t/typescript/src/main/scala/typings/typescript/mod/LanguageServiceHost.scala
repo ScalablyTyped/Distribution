@@ -2,39 +2,39 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
+trait LanguageServiceHost
+  extends StObject
+     with GetEffectiveTypeRootsHost {
   
-  var error: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
   
-  var fileExists: js.UndefOr[js.Function1[/* path */ java.lang.String, Boolean]] = js.native
+  var fileExists: js.UndefOr[js.Function1[/* path */ java.lang.String, Boolean]] = js.undefined
   
-  var getCancellationToken: js.UndefOr[js.Function0[HostCancellationToken]] = js.native
+  var getCancellationToken: js.UndefOr[js.Function0[HostCancellationToken]] = js.undefined
   
-  def getCompilationSettings(): CompilerOptions = js.native
+  def getCompilationSettings(): CompilerOptions
   
   @JSName("getCurrentDirectory")
-  def getCurrentDirectory_MLanguageServiceHost(): java.lang.String = js.native
+  def getCurrentDirectory_MLanguageServiceHost(): java.lang.String
   
   /**
     * Gets a set of custom transformers to use during emit.
     */
-  var getCustomTransformers: js.UndefOr[js.Function0[js.UndefOr[CustomTransformers]]] = js.native
+  var getCustomTransformers: js.UndefOr[js.Function0[js.UndefOr[CustomTransformers]]] = js.undefined
   
-  def getDefaultLibFileName(options: CompilerOptions): java.lang.String = js.native
+  def getDefaultLibFileName(options: CompilerOptions): java.lang.String
   
-  var getDirectories: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, js.Array[java.lang.String]]] = js.native
+  var getDirectories: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, js.Array[java.lang.String]]] = js.undefined
   
-  var getLocalizedDiagnosticMessages: js.UndefOr[js.Function0[_]] = js.native
+  var getLocalizedDiagnosticMessages: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var getNewLine: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getNewLine: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
-  var getProjectReferences: js.UndefOr[js.Function0[js.UndefOr[js.Array[ProjectReference]]]] = js.native
+  var getProjectReferences: js.UndefOr[js.Function0[js.UndefOr[js.Array[ProjectReference]]]] = js.undefined
   
-  var getProjectVersion: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getProjectVersion: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   var getResolvedModuleWithFailedLookupLocationsFromCache: js.UndefOr[
     js.Function2[
@@ -42,25 +42,25 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
       /* containingFile */ java.lang.String, 
       js.UndefOr[ResolvedModuleWithFailedLookupLocations]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  def getScriptFileNames(): js.Array[java.lang.String] = js.native
+  def getScriptFileNames(): js.Array[java.lang.String]
   
-  var getScriptKind: js.UndefOr[js.Function1[/* fileName */ java.lang.String, ScriptKind]] = js.native
+  var getScriptKind: js.UndefOr[js.Function1[/* fileName */ java.lang.String, ScriptKind]] = js.undefined
   
-  def getScriptSnapshot(fileName: java.lang.String): js.UndefOr[IScriptSnapshot] = js.native
+  def getScriptSnapshot(fileName: java.lang.String): js.UndefOr[IScriptSnapshot]
   
-  def getScriptVersion(fileName: java.lang.String): java.lang.String = js.native
+  def getScriptVersion(fileName: java.lang.String): java.lang.String
   
-  var getTypeRootsVersion: js.UndefOr[js.Function0[Double]] = js.native
+  var getTypeRootsVersion: js.UndefOr[js.Function0[Double]] = js.undefined
   
   var installPackage: js.UndefOr[
     js.Function1[/* options */ InstallPackageOptions, js.Promise[ApplyCodeActionCommandResult]]
-  ] = js.native
+  ] = js.undefined
   
-  var isKnownTypesPackageName: js.UndefOr[js.Function1[/* name */ java.lang.String, Boolean]] = js.native
+  var isKnownTypesPackageName: js.UndefOr[js.Function1[/* name */ java.lang.String, Boolean]] = js.undefined
   
-  var log: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.native
+  var log: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
   
   var readDirectory: js.UndefOr[
     js.Function5[
@@ -71,7 +71,7 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
       /* depth */ js.UndefOr[Double], 
       js.Array[java.lang.String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var readFile: js.UndefOr[
     js.Function2[
@@ -79,9 +79,9 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
       /* encoding */ js.UndefOr[java.lang.String], 
       js.UndefOr[java.lang.String]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.native
+  var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.undefined
   
   var resolveModuleNames: js.UndefOr[
     js.Function5[
@@ -92,7 +92,7 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
       /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var resolveTypeReferenceDirectives: js.UndefOr[
     js.Function4[
@@ -102,15 +102,15 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
       /* options */ CompilerOptions, 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.native
+  var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
   
-  var useCaseSensitiveFileNames: js.UndefOr[js.Function0[Boolean]] = js.native
+  var useCaseSensitiveFileNames: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   var writeFile: js.UndefOr[
     js.Function2[/* fileName */ java.lang.String, /* content */ java.lang.String, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object LanguageServiceHost {
   
@@ -170,7 +170,7 @@ object LanguageServiceHost {
     def setGetDirectoriesUndefined: Self = StObject.set(x, "getDirectories", js.undefined)
     
     @scala.inline
-    def setGetLocalizedDiagnosticMessages(value: () => _): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
+    def setGetLocalizedDiagnosticMessages(value: () => js.Any): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLocalizedDiagnosticMessagesUndefined: Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.undefined)

@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMediaRecorderOption extends StObject {
   
   /** 指定录制的时长（s)，到达自动停止。最大 7200，最小 5 */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 视频 fps */
-  var fps: js.UndefOr[Double] = js.native
+  var fps: js.UndefOr[Double] = js.undefined
   
   /** 视频关键帧间隔 */
-  var gop: js.UndefOr[Double] = js.native
+  var gop: js.UndefOr[Double] = js.undefined
   
   /** 视频比特率（kbps），最小值 600，最大值 3000 */
-  var videoBitsPerSecond: js.UndefOr[Double] = js.native
+  var videoBitsPerSecond: js.UndefOr[Double] = js.undefined
 }
 object CreateMediaRecorderOption {
   

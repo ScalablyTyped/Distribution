@@ -10,9 +10,9 @@ An object for efficiently managing key expiries
 | ------------------ | :-------------: |
 | Full name          | expirymanager |
 | Keywords           | expiry, expire, expirymanager, timeout, volatile, key |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 892265 |
+| # downloads        | 758754 |
 | # stars            | 0 |
 
 ## Links

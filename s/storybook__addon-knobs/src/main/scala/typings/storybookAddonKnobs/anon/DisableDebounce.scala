@@ -3,19 +3,17 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.typesMod.KnobType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableDebounce[T /* <: KnobType */] extends StObject {
   
-  var disableDebounce: js.UndefOr[Boolean] = js.native
+  var disableDebounce: js.UndefOr[Boolean] = js.undefined
   
-  var disableForceUpdate: js.UndefOr[Boolean] = js.native
+  var disableForceUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
-  var `type`: T = js.native
+  var `type`: T
 }
 object DisableDebounce {
   
@@ -27,7 +25,7 @@ object DisableDebounce {
   }
   
   @scala.inline
-  implicit class DisableDebounceMutableBuilder[Self <: DisableDebounce[_], T /* <: KnobType */] (val x: Self with DisableDebounce[T]) extends AnyVal {
+  implicit class DisableDebounceMutableBuilder[Self <: DisableDebounce[?], T /* <: KnobType */] (val x: Self & DisableDebounce[T]) extends AnyVal {
     
     @scala.inline
     def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])

@@ -10,7 +10,6 @@ import typings.std.Partial
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeMod {
@@ -23,27 +22,26 @@ object themeMod {
   @js.native
   val initialValue: ThemeContextValue[HelpersProps, js.Object] = js.native
   
-  @js.native
   trait ThemeContextValue[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] extends StObject {
     
-    var transform: ValidatingTransformFunction[TTransformProps, TNewProps] = js.native
+    var transform: ValidatingTransformFunction[TTransformProps, TNewProps]
   }
   object ThemeContextValue {
     
     @scala.inline
     def apply[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
-      transform: (/* props */ ClassName with Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
+      transform: (/* props */ ClassName & Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
     ): ThemeContextValue[TTransformProps, TNewProps] = {
       val __obj = js.Dynamic.literal(transform = js.Any.fromFunction3(transform))
       __obj.asInstanceOf[ThemeContextValue[TTransformProps, TNewProps]]
     }
     
     @scala.inline
-    implicit class ThemeContextValueMutableBuilder[Self <: ThemeContextValue[_, _], TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] (val x: Self with (ThemeContextValue[TTransformProps, TNewProps])) extends AnyVal {
+    implicit class ThemeContextValueMutableBuilder[Self <: ThemeContextValue[?, ?], TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] (val x: Self & (ThemeContextValue[TTransformProps, TNewProps])) extends AnyVal {
       
       @scala.inline
       def setTransform(
-        value: (/* props */ ClassName with Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
+        value: (/* props */ ClassName & Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
     }
   }

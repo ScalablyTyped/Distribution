@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLCSSNamespaceRule extends StObject {
   
   @JSName("MSHTML.HTMLCSSNamespaceRule_typekey")
-  var MSHTMLDotHTMLCSSNamespaceRule_typekey: HTMLCSSNamespaceRule = js.native
+  var MSHTMLDotHTMLCSSNamespaceRule_typekey: HTMLCSSNamespaceRule
   
-  var cssText: String = js.native
+  var cssText: String
   
-  val namespaceURI: String = js.native
+  val namespaceURI: String
   
-  val parentRule: IHTMLCSSRule = js.native
+  val parentRule: IHTMLCSSRule
   
-  val parentStyleSheet: IHTMLStyleSheet = js.native
+  val parentStyleSheet: IHTMLStyleSheet
   
-  val prefix: String = js.native
+  val prefix: String
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object HTMLCSSNamespaceRule {
   

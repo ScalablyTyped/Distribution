@@ -2,19 +2,17 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsCdnSettings extends StObject {
   
-  var HlsAkamaiSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsAkamaiSettings] = js.native
+  var HlsAkamaiSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsAkamaiSettings] = js.undefined
   
-  var HlsBasicPutSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsBasicPutSettings] = js.native
+  var HlsBasicPutSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsBasicPutSettings] = js.undefined
   
-  var HlsMediaStoreSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsMediaStoreSettings] = js.native
+  var HlsMediaStoreSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsMediaStoreSettings] = js.undefined
   
-  var HlsWebdavSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsWebdavSettings] = js.native
+  var HlsWebdavSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsWebdavSettings] = js.undefined
 }
 object HlsCdnSettings {
   

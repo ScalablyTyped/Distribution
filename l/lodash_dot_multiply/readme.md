@@ -12,7 +12,7 @@ The lodash method `_.multiply` exported as a module.
 | Keywords           | lodash-modularized, multiply |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1197 |
+| # downloads        | 1943 |
 | # stars            | 0 |
 
 ## Links

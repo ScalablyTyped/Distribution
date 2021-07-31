@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of the range.
   * @see com.sun.star.sheet.DataPilotField
   */
-@js.native
 trait DataPilotFields
-  extends XIndexAccess
+  extends StObject
+     with XIndexAccess
      with XEnumerationAccess
      with XNameAccess
 object DataPilotFields {

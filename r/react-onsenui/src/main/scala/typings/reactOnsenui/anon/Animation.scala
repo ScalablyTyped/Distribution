@@ -11,41 +11,39 @@ import typings.reactOnsenui.reactOnsenuiStrings.split
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var animation: js.UndefOr[overlay | default] = js.native
+  var animation: js.UndefOr[overlay | default] = js.undefined
   
-  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.native
+  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.undefined
   
-  var collapse: js.UndefOr[portrait | landscape | Boolean] = js.native
+  var collapse: js.UndefOr[portrait | landscape | Boolean] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[collapse | split] = js.native
+  var mode: js.UndefOr[collapse | split] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
   
-  var onModeChange: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.native
+  var onModeChange: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
   
-  var onPreClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.native
+  var onPreClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
   
-  var onPreOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.native
+  var onPreOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
   
-  var openThreshold: js.UndefOr[Double] = js.native
+  var openThreshold: js.UndefOr[Double] = js.undefined
   
-  var side: js.UndefOr[left | right] = js.native
+  var side: js.UndefOr[left | right] = js.undefined
   
-  var swipeTargetWidth: js.UndefOr[Double] = js.native
+  var swipeTargetWidth: js.UndefOr[Double] = js.undefined
   
-  var swipeable: js.UndefOr[Boolean] = js.native
+  var swipeable: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Animation {
   

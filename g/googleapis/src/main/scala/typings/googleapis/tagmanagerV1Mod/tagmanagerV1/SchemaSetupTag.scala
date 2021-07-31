@@ -2,10 +2,8 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSetupTag extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait SchemaSetupTag extends StObject {
     * successfully. If false, fire the main tag regardless of setup tag firing
     * status.
     */
-  var stopOnSetupFailure: js.UndefOr[Boolean] = js.native
+  var stopOnSetupFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the setup tag.
     */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object SchemaSetupTag {
   

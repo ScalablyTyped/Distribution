@@ -2,21 +2,19 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryableString extends StObject {
   
-  def contains(searchString: String): Boolean = js.native
+  def contains(searchString: String): Boolean
   
-  def endsWith(searchString: String): Boolean = js.native
+  def endsWith(searchString: String): Boolean
   
-  def equals(compareString: String): Boolean = js.native
+  def equals(compareString: String): Boolean
   
-  def startsWith(searchString: String): Boolean = js.native
+  def startsWith(searchString: String): Boolean
   
-  def value(): String = js.native
+  def value(): String
 }
 object QueryableString {
   

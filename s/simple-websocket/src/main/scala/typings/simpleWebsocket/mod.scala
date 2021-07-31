@@ -4,7 +4,6 @@ import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,14 +25,15 @@ object mod {
   @scala.inline
   def WEBSOCKET_SUPPORT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBSOCKET_SUPPORT")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Options extends DuplexOptions {
+  trait Options
+    extends StObject
+       with DuplexOptions {
     
     /** raw websocket instance to wrap */
-    var socket: js.UndefOr[typings.ws.mod.^] = js.native
+    var socket: js.UndefOr[typings.ws.mod.^] = js.undefined
     
     /** websocket server url */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Options {
     

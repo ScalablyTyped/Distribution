@@ -5,7 +5,6 @@ import typings.msRest.mod.ServiceClientCredentials
 import typings.msRestAzure.mod.AzureServiceClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource", "ManagementGroupsClient")
@@ -43,13 +42,13 @@ class ManagementGroupsClient protected () extends ^ {
   def this(
     credentials: ServiceClientCredentials,
     groupId: String,
-    baseUri: js.UndefOr[scala.Nothing],
+    baseUri: String,
     options: AzureServiceClientOptions
   ) = this()
   def this(
     credentials: ServiceClientCredentials,
     groupId: String,
-    baseUri: String,
+    baseUri: Unit,
     options: AzureServiceClientOptions
   ) = this()
 }

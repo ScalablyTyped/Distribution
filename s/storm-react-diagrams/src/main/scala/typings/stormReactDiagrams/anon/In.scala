@@ -2,29 +2,27 @@ package typings.stormReactDiagrams.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait In extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var in: Boolean = js.native
+  var in: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  var links: js.Array[String] = js.native
+  var links: js.Array[String]
   
-  var maximumLinks: Double = js.native
+  var maximumLinks: Double
   
-  var name: String = js.native
+  var name: String
   
-  var parentNode: String = js.native
+  var parentNode: String
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object In {
   

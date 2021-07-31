@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlinkDeveloperIdentityInput extends StObject {
   
   /**
     * The "domain" by which Cognito will refer to your users.
     */
-  var DeveloperProviderName: typings.awsSdk.cognitoidentityMod.DeveloperProviderName = js.native
+  var DeveloperProviderName: typings.awsSdk.cognitoidentityMod.DeveloperProviderName
   
   /**
     * A unique ID used by your backend authentication process to identify a user.
     */
-  var DeveloperUserIdentifier: typings.awsSdk.cognitoidentityMod.DeveloperUserIdentifier = js.native
+  var DeveloperUserIdentifier: typings.awsSdk.cognitoidentityMod.DeveloperUserIdentifier
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: typings.awsSdk.cognitoidentityMod.IdentityId = js.native
+  var IdentityId: typings.awsSdk.cognitoidentityMod.IdentityId
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId
 }
 object UnlinkDeveloperIdentityInput {
   

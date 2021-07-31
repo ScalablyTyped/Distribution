@@ -10,7 +10,6 @@ import typings.reactDaumPostcode.reactDaumPostcodeStrings.R
 import typings.reactDaumPostcode.reactDaumPostcodeStrings.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,66 +37,65 @@ object mod {
     def this(props: DaumPostcodeProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AddressData extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var addressEnglish: String = js.native
+    var addressEnglish: String
     
-    var addressType: R | J = js.native
+    var addressType: R | J
     
-    var apartment: Y | N = js.native
+    var apartment: Y | N
     
-    var autoJibunAddress: String = js.native
+    var autoJibunAddress: String
     
-    var autoJibunAddressEnglish: String = js.native
+    var autoJibunAddressEnglish: String
     
-    var autoRoadAddress: String = js.native
+    var autoRoadAddress: String
     
-    var autoRoadAddressEnglish: String = js.native
+    var autoRoadAddressEnglish: String
     
-    var bcode: String = js.native
+    var bcode: String
     
-    var bname: String = js.native
+    var bname: String
     
-    var bname1: String = js.native
+    var bname1: String
     
-    var bname2: String = js.native
+    var bname2: String
     
-    var buildingCode: String = js.native
+    var buildingCode: String
     
-    var buildingName: String = js.native
+    var buildingName: String
     
-    var hname: String = js.native
+    var hname: String
     
-    var jibunAddress: String = js.native
+    var jibunAddress: String
     
-    var jibunAddressEnglish: String = js.native
+    var jibunAddressEnglish: String
     
-    var noSelected: Y | N = js.native
+    var noSelected: Y | N
     
-    var query: String = js.native
+    var query: String
     
-    var roadAddress: String = js.native
+    var roadAddress: String
     
-    var roadAddressEnglish: String = js.native
+    var roadAddressEnglish: String
     
-    var roadname: String = js.native
+    var roadname: String
     
-    var roadnameCode: String = js.native
+    var roadnameCode: String
     
-    var sido: String = js.native
+    var sido: String
     
-    var sigungu: String = js.native
+    var sigungu: String
     
-    var sigunguCode: String = js.native
+    var sigunguCode: String
     
-    var userLanguageType: K | E = js.native
+    var userLanguageType: K | E
     
-    var userSelectedType: R | J = js.native
+    var userSelectedType: R | J
     
-    var zonecode: String = js.native
+    var zonecode: String
   }
   object AddressData {
     
@@ -229,58 +227,57 @@ object mod {
     }
   }
   
-  @js.native
   trait DaumPostcodeProps extends StObject {
     
-    var alwaysShowEngAddr: js.UndefOr[Boolean] = js.native
+    var alwaysShowEngAddr: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var autoMapping: js.UndefOr[Boolean] = js.native
+    var autoMapping: js.UndefOr[Boolean] = js.undefined
     
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
     
-    var defaultQuery: js.UndefOr[String] = js.native
+    var defaultQuery: js.UndefOr[String] = js.undefined
     
-    var errorMessage: js.UndefOr[ReactElement] = js.native
+    var errorMessage: js.UndefOr[ReactElement] = js.undefined
     
-    var focusContent: js.UndefOr[Boolean] = js.native
+    var focusContent: js.UndefOr[Boolean] = js.undefined
     
-    var focusInput: js.UndefOr[Boolean] = js.native
+    var focusInput: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var hideEngBtn: js.UndefOr[Boolean] = js.native
+    var hideEngBtn: js.UndefOr[Boolean] = js.undefined
     
-    var hideMapBtn: js.UndefOr[Boolean] = js.native
+    var hideMapBtn: js.UndefOr[Boolean] = js.undefined
     
-    var maxSuggestItems: js.UndefOr[Double] = js.native
+    var maxSuggestItems: js.UndefOr[Double] = js.undefined
     
-    def onComplete(data: AddressData): Unit = js.native
+    def onComplete(data: AddressData): Unit
     
-    var onSearch: js.UndefOr[js.Function1[/* data */ SearchData, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* data */ SearchData, Unit]] = js.undefined
     
-    var pleaseReadGuide: js.UndefOr[Double] = js.native
+    var pleaseReadGuide: js.UndefOr[Double] = js.undefined
     
-    var pleaseReadGuideTimer: js.UndefOr[Double] = js.native
+    var pleaseReadGuideTimer: js.UndefOr[Double] = js.undefined
     
-    var scriptUrl: js.UndefOr[String] = js.native
+    var scriptUrl: js.UndefOr[String] = js.undefined
     
-    var shorthand: js.UndefOr[Boolean] = js.native
+    var shorthand: js.UndefOr[Boolean] = js.undefined
     
-    var showMoreHName: js.UndefOr[Boolean] = js.native
+    var showMoreHName: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var submitMode: js.UndefOr[Boolean] = js.native
+    var submitMode: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[js.Object] = js.native
+    var theme: js.UndefOr[js.Object] = js.undefined
     
-    var useSuggest: js.UndefOr[Boolean] = js.native
+    var useSuggest: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object DaumPostcodeProps {
     
@@ -442,12 +439,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchData extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var q: String = js.native
+    var q: String
   }
   object SearchData {
     

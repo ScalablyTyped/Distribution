@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLabelsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * List of labels to add to the resource.
     */
-  var Labels: SharedLabels = js.native
+  var Labels: SharedLabels
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: ResourceIdType = js.native
+  var ResourceId: ResourceIdType
 }
 object CreateLabelsRequest {
   

@@ -2,7 +2,6 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -79,9 +78,9 @@ trait Context extends StObject {
     * @returns ContextSizeResponse
     */
   def isSizeBetween(): ContextSizeResponse | Null = js.native
-  def isSizeBetween(minSize: js.UndefOr[scala.Nothing], maxSize: Double): ContextSizeResponse | Null = js.native
   def isSizeBetween(minSize: Double): ContextSizeResponse | Null = js.native
   def isSizeBetween(minSize: Double, maxSize: Double): ContextSizeResponse | Null = js.native
+  def isSizeBetween(minSize: Unit, maxSize: Double): ContextSizeResponse | Null = js.native
   
   /**
     * Request a switch into a specific context. If the player does not have permission to enter that context,

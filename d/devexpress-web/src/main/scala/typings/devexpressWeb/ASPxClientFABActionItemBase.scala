@@ -2,41 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base class for classes that serves as a client-side equivalent of the floating action button's action and action item objects.
   */
-@js.native
 trait ASPxClientFABActionItemBase extends StObject {
   
   /**
     * Gets the action item's name.
     */
-  def GetActionName(): String = js.native
+  def GetActionName(): String
   
   /**
     * Gets the action item's text.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Returns a value specifying whether an action item is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Specifies the action item's text.
     * @param value A string value that specifies the action item's text.
     */
-  def SetText(value: String): Unit = js.native
+  def SetText(value: String): Unit
   
   /**
     * Specifies the action item's visibility.
     * @param value true, if the action item is visible; otherwise, false.
     */
-  def SetVisible(value: Boolean): Unit = js.native
+  def SetVisible(value: Boolean): Unit
 }
 object ASPxClientFABActionItemBase {
   

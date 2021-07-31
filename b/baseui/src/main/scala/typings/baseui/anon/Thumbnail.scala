@@ -2,13 +2,11 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Thumbnail extends StObject {
   
-  val thumbnail: js.UndefOr[String] = js.native
+  val thumbnail: js.UndefOr[String] = js.undefined
 }
 object Thumbnail {
   

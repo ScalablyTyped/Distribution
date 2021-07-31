@@ -2,26 +2,24 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListFunctions` method.
   */
-@js.native
 trait SchemaListFunctionsResponse extends StObject {
   
   /**
     * The functions that match the request.
     */
-  var functions: js.UndefOr[js.Array[SchemaCloudFunction]] = js.native
+  var functions: js.UndefOr[js.Array[SchemaCloudFunction]] = js.undefined
   
   /**
     * If not empty, indicates that there may be more functions that match the
     * request; this value should be passed in a new
     * google.cloud.functions.v1.ListFunctionsRequest to get more functions.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListFunctionsResponse {
   

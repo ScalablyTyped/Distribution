@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateAttestationOccurrenceRequest extends StObject {
   
   /**
     * Required. An AttestationOccurrence to be checked that it can be verified by the Attestor. It does not have to be an existing entity in Container Analysis. It must otherwise be a
     * valid AttestationOccurrence.
     */
-  var attestation: js.UndefOr[AttestationOccurrence] = js.native
+  var attestation: js.UndefOr[AttestationOccurrence] = js.undefined
   
   /** Required. The resource name of the Note to which the containing Occurrence is associated. */
-  var occurrenceNote: js.UndefOr[String] = js.native
+  var occurrenceNote: js.UndefOr[String] = js.undefined
   
   /** Required. The URI of the artifact (e.g. container image) that is the subject of the containing Occurrence. */
-  var occurrenceResourceUri: js.UndefOr[String] = js.native
+  var occurrenceResourceUri: js.UndefOr[String] = js.undefined
 }
 object ValidateAttestationOccurrenceRequest {
   

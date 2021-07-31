@@ -3,13 +3,13 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ControlChannelTrigger extends IControlChannelTrigger {
+trait ControlChannelTrigger
+  extends StObject
+     with IControlChannelTrigger {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object ControlChannelTrigger {
   

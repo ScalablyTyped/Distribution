@@ -5,14 +5,13 @@ import typings.ionic.ionicStrings.project
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandMetadata
-  extends typings.ionicCliFramework.definitionsMod.CommandMetadata[CommandMetadataInput, CommandMetadataOption] {
+  extends StObject
+     with typings.ionicCliFramework.definitionsMod.CommandMetadata[CommandMetadataInput, CommandMetadataOption] {
   
-  var `type`: global | project = js.native
+  var `type`: global | project
 }
 object CommandMetadata {
   

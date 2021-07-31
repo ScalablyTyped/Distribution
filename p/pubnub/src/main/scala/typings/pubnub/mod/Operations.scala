@@ -2,83 +2,81 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operations extends StObject {
   
-  var PNAccessManagerAudit: String = js.native
+  var PNAccessManagerAudit: String
   
-  var PNAccessManagerGrant: String = js.native
+  var PNAccessManagerGrant: String
   
-  var PNAddChannelsToGroupOperation: String = js.native
+  var PNAddChannelsToGroupOperation: String
   
-  var PNAddMessageActionOperation: String = js.native
+  var PNAddMessageActionOperation: String
   
-  var PNChannelGroupsOperation: String = js.native
+  var PNChannelGroupsOperation: String
   
-  var PNChannelsForGroupOperation: String = js.native
+  var PNChannelsForGroupOperation: String
   
-  var PNCreateSpaceOperation: String = js.native
+  var PNCreateSpaceOperation: String
   
-  var PNCreateUserOperation: String = js.native
+  var PNCreateUserOperation: String
   
-  var PNDeleteMessagesOperation: String = js.native
+  var PNDeleteMessagesOperation: String
   
-  var PNDeleteSpaceOperation: String = js.native
+  var PNDeleteSpaceOperation: String
   
-  var PNDeleteUserOperation: String = js.native
+  var PNDeleteUserOperation: String
   
-  var PNFetchMessagesOperation: String = js.native
+  var PNFetchMessagesOperation: String
   
-  var PNGetMembersOperation: String = js.native
+  var PNGetMembersOperation: String
   
-  var PNGetMembershipsOperation: String = js.native
+  var PNGetMembershipsOperation: String
   
-  var PNGetMessageActionsOperation: String = js.native
+  var PNGetMessageActionsOperation: String
   
-  var PNGetSpacesOperation: String = js.native
+  var PNGetSpacesOperation: String
   
-  var PNGetStateOperation: String = js.native
+  var PNGetStateOperation: String
   
-  var PNGetUsersOperation: String = js.native
+  var PNGetUsersOperation: String
   
-  var PNHeartbeatOperation: String = js.native
+  var PNHeartbeatOperation: String
   
-  var PNHereNowOperation: String = js.native
+  var PNHereNowOperation: String
   
-  var PNHistoryOperation: String = js.native
+  var PNHistoryOperation: String
   
-  var PNMessageCountsOperation: String = js.native
+  var PNMessageCountsOperation: String
   
-  var PNPublishOperation: String = js.native
+  var PNPublishOperation: String
   
-  var PNPushNotificationEnabledChannelsOperation: String = js.native
+  var PNPushNotificationEnabledChannelsOperation: String
   
-  var PNRemoveAllPushNotificationsOperation: String = js.native
+  var PNRemoveAllPushNotificationsOperation: String
   
-  var PNRemoveChannelsFromGroupOperation: String = js.native
+  var PNRemoveChannelsFromGroupOperation: String
   
-  var PNRemoveGroupOperation: String = js.native
+  var PNRemoveGroupOperation: String
   
-  var PNRemoveMessageActionOperation: String = js.native
+  var PNRemoveMessageActionOperation: String
   
-  var PNSetStateOperation: String = js.native
+  var PNSetStateOperation: String
   
-  var PNSubscribeOperation: String = js.native
+  var PNSubscribeOperation: String
   
-  var PNTimeOperation: String = js.native
+  var PNTimeOperation: String
   
-  var PNUnsubscribeOperation: String = js.native
+  var PNUnsubscribeOperation: String
   
-  var PNUpdateMembershipsOperation: String = js.native
+  var PNUpdateMembershipsOperation: String
   
-  var PNUpdateSpaceOperation: String = js.native
+  var PNUpdateSpaceOperation: String
   
-  var PNUpdateUserOperation: String = js.native
+  var PNUpdateUserOperation: String
   
-  var PNWhereNowOperation: String = js.native
+  var PNWhereNowOperation: String
 }
 object Operations {
   

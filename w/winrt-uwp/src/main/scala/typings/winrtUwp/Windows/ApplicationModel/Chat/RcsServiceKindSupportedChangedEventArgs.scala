@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ServiceKindSupportedChanged event. */
-@js.native
 trait RcsServiceKindSupportedChangedEventArgs extends StObject {
   
   /** Gets the type of the Rich Communication Services (RCS) service. */
-  var serviceKind: RcsServiceKind = js.native
+  var serviceKind: RcsServiceKind
 }
 object RcsServiceKindSupportedChangedEventArgs {
   

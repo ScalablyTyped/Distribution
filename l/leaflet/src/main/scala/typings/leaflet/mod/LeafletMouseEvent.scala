@@ -3,20 +3,20 @@ package typings.leaflet.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.DomEvent._PropagableEvent because Already inherited */ @js.native
-trait LeafletMouseEvent extends LeafletEvent {
+- typings.leaflet.mod.DomEvent._PropagableEvent because Already inherited */ trait LeafletMouseEvent
+  extends StObject
+     with LeafletEvent {
   
-  var containerPoint: Point_ = js.native
+  var containerPoint: Point_
   
-  var latlng: LatLng_ = js.native
+  var latlng: LatLng_
   
-  var layerPoint: Point_ = js.native
+  var layerPoint: Point_
   
-  var originalEvent: MouseEvent = js.native
+  var originalEvent: MouseEvent
 }
 object LeafletMouseEvent {
   

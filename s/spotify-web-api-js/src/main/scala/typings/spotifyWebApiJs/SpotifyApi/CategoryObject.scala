@@ -2,23 +2,21 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Category Object
   * [category object](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
 trait CategoryObject extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var icons: js.Array[ImageObject] = js.native
+  var icons: js.Array[ImageObject]
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
 }
 object CategoryObject {
   

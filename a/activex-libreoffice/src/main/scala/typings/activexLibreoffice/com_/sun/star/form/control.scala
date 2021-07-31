@@ -57,7 +57,6 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object control {
@@ -69,9 +68,9 @@ object control {
     * @see com.sun.star.awt.UnoControl
     * @see com.sun.star.awt.UnoControlModel
     */
-  @js.native
   trait CheckBox
-    extends UnoControlCheckBox
+    extends StObject
+       with UnoControlCheckBox
        with XBoundControl
   object CheckBox {
     
@@ -154,7 +153,8 @@ object control {
     */
   @js.native
   trait ComboBox
-    extends UnoControlComboBox
+    extends StObject
+       with UnoControlComboBox
        with XBoundControl
   
   /**
@@ -167,9 +167,9 @@ object control {
     * @see com.sun.star.awt.UnoControlModel
     * @see com.sun.star.form.component.CommandButton.ButtonType
     */
-  @js.native
   trait CommandButton
-    extends UnoControlButton
+    extends StObject
+       with UnoControlButton
        with XApproveActionBroadcaster
   object CommandButton {
     
@@ -248,7 +248,8 @@ object control {
     */
   @js.native
   trait CurrencyField
-    extends UnoControlCurrencyField
+    extends StObject
+       with UnoControlCurrencyField
        with XBoundControl
   
   /**
@@ -260,7 +261,8 @@ object control {
     */
   @js.native
   trait DateField
-    extends UnoControlDateField
+    extends StObject
+       with UnoControlDateField
        with XBoundControl
   
   /**
@@ -270,10 +272,11 @@ object control {
     * @see com.sun.star.awt.UnoControl
     * @see com.sun.star.awt.UnoControlModel
     */
-  @js.native
-  trait FilterControl extends XControl {
+  trait FilterControl
+    extends StObject
+       with XControl {
     
-    def createWithFormat(MessageParent: XWindow, NumberFormatter: XNumberFormatter, ControlModel: XPropertySet): Unit = js.native
+    def createWithFormat(MessageParent: XWindow, NumberFormatter: XNumberFormatter, ControlModel: XPropertySet): Unit
   }
   object FilterControl {
     
@@ -327,7 +330,8 @@ object control {
     */
   @js.native
   trait FormattedField
-    extends UnoControlFormattedField
+    extends StObject
+       with UnoControlFormattedField
        with XBoundControl
   
   /**
@@ -337,9 +341,9 @@ object control {
     * @see com.sun.star.awt.UnoControl
     * @see com.sun.star.awt.UnoControlModel
     */
-  @js.native
   trait GridControl
-    extends UnoControl
+    extends StObject
+       with UnoControl
        with XBoundComponent
        with XGridControl
        with XModifyBroadcaster
@@ -401,7 +405,7 @@ object control {
       hasElements: () => Boolean,
       isDesignMode: () => Boolean,
       isTransparent: () => Boolean,
-      queryFieldData: (Double, `type`) => SafeArray[_],
+      queryFieldData: (Double, `type`) => SafeArray[js.Any],
       queryFieldDataType: `type` => SafeArray[Boolean],
       queryInterface: `type` => js.Any,
       registerDispatchProviderInterceptor: XDispatchProviderInterceptor => Unit,
@@ -456,9 +460,9 @@ object control {
     * @see com.sun.star.awt.UnoControlModel
     * @see com.sun.star.form.component.ImageButton.ButtonType
     */
-  @js.native
   trait ImageButton
-    extends UnoControlImageControl
+    extends StObject
+       with UnoControlImageControl
        with XApproveActionBroadcaster
   object ImageButton {
     
@@ -534,9 +538,9 @@ object control {
     * @see com.sun.star.awt.UnoControl
     * @see com.sun.star.awt.UnoControlModel
     */
-  @js.native
   trait ImageControl
-    extends UnoControlImageControl
+    extends StObject
+       with UnoControlImageControl
        with XBoundControl
   object ImageControl {
     
@@ -604,9 +608,9 @@ object control {
   }
   
   /** is an extended grid control, which allows the user to customize some of its user interface's aspects. */
-  @js.native
   trait InteractionGridControl
-    extends GridControl
+    extends StObject
+       with GridControl
        with XDispatch
   object InteractionGridControl {
     
@@ -663,7 +667,7 @@ object control {
       hasElements: () => Boolean,
       isDesignMode: () => Boolean,
       isTransparent: () => Boolean,
-      queryFieldData: (Double, `type`) => SafeArray[_],
+      queryFieldData: (Double, `type`) => SafeArray[js.Any],
       queryFieldDataType: `type` => SafeArray[Boolean],
       queryInterface: `type` => js.Any,
       registerDispatchProviderInterceptor: XDispatchProviderInterceptor => Unit,
@@ -709,7 +713,8 @@ object control {
     */
   @js.native
   trait ListBox
-    extends UnoControlListBox
+    extends StObject
+       with UnoControlListBox
        with XBoundControl
        with XChangeBroadcaster
   
@@ -729,7 +734,8 @@ object control {
     */
   @js.native
   trait NumericField
-    extends UnoControlNumericField
+    extends StObject
+       with UnoControlNumericField
        with XBoundControl
   
   /**
@@ -741,7 +747,8 @@ object control {
     */
   @js.native
   trait PatternField
-    extends UnoControlPatternField
+    extends StObject
+       with UnoControlPatternField
        with XBoundControl
   
   /**
@@ -751,9 +758,9 @@ object control {
     * @see com.sun.star.awt.UnoControl
     * @see com.sun.star.awt.UnoControlModel
     */
-  @js.native
   trait RadioButton
-    extends UnoControlRadioButton
+    extends StObject
+       with UnoControlRadioButton
        with XBoundControl
   object RadioButton {
     
@@ -853,7 +860,8 @@ object control {
     */
   @js.native
   trait TextField
-    extends UnoControlEdit
+    extends StObject
+       with UnoControlEdit
        with XBoundControl
        with XChangeBroadcaster
   
@@ -866,6 +874,7 @@ object control {
     */
   @js.native
   trait TimeField
-    extends UnoControlTimeField
+    extends StObject
+       with UnoControlTimeField
        with XBoundControl
 }

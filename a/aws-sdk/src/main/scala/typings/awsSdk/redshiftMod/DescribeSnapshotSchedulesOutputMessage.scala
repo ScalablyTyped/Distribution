@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotSchedulesOutputMessage extends StObject {
   
   /**
     * A value that indicates the starting point for the next set of response records in a subsequent request. If a value is returned in a response, you can retrieve the next set of records by providing this returned marker value in the marker parameter and retrying the command. If the marker field is empty, all response records have been retrieved for the request.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * A list of SnapshotSchedules.
     */
-  var SnapshotSchedules: js.UndefOr[SnapshotScheduleList] = js.native
+  var SnapshotSchedules: js.UndefOr[SnapshotScheduleList] = js.undefined
 }
 object DescribeSnapshotSchedulesOutputMessage {
   

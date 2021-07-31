@@ -10,14 +10,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
   
   @JSImport("@ionic/core/dist/types/components/select/select", "Select")
   @js.native
-  class Select () extends ComponentInterface {
+  class Select ()
+    extends StObject
+       with ComponentInterface {
     
     var buttonEl: js.Any = js.native
     
@@ -105,7 +106,7 @@ object selectMod {
     /**
       * Emitted when the value has changed.
       */
-    var ionChange: EventEmitter[SelectChangeEventDetail[_]] = js.native
+    var ionChange: EventEmitter[SelectChangeEventDetail[js.Any]] = js.native
     
     /**
       * Emitted when the select has focus.
@@ -149,8 +150,8 @@ object selectMod {
       *
       * @param event The user interface event that called the open.
       */
-    def open(): js.Promise[_] = js.native
-    def open(event: UIEvent): js.Promise[_] = js.native
+    def open(): js.Promise[js.Any] = js.native
+    def open(event: UIEvent): js.Promise[js.Any] = js.native
     
     var openActionSheet: js.Any = js.native
     

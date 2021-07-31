@@ -3,19 +3,17 @@ package typings.bnJs
 import typings.bnJs.mod.BN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: BN = js.native
+    var a: BN
     
-    var b: BN = js.native
+    var b: BN
     
-    var gcd: BN = js.native
+    var gcd: BN
   }
   object A {
     

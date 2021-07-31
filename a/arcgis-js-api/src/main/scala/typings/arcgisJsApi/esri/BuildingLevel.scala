@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildingLevel extends Accessor {
+trait BuildingLevel
+  extends StObject
+     with Accessor {
   
   /**
     * List of all the values which are allowed for the filter.

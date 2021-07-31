@@ -2,23 +2,21 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeOption extends StObject {
   
-  var about: js.UndefOr[Boolean] = js.native
+  var about: js.UndefOr[Boolean] = js.undefined
   
-  var elem: js.UndefOr[String] = js.native
+  var elem: js.UndefOr[String] = js.undefined
   
-  var encode: js.UndefOr[Boolean] = js.native
+  var encode: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var skin: js.UndefOr[String] = js.native
+  var skin: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object CodeOption {
   

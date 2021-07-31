@@ -2,17 +2,15 @@ package typings.browserHarness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var func: js.Function = js.native
+    var func: js.Function
   }
   object Args {
     
@@ -26,7 +24,7 @@ object anon {
     implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Condition extends StObject {
     
-    var condition: js.Function = js.native
+    var condition: js.Function
     
-    var exec: js.UndefOr[js.Function] = js.native
+    var exec: js.UndefOr[js.Function] = js.undefined
     
-    var timeoutMS: js.UndefOr[Double] = js.native
+    var timeoutMS: js.UndefOr[Double] = js.undefined
   }
   object Condition {
     
@@ -76,14 +73,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var args: js.UndefOr[js.Any] = js.native
+    var args: js.UndefOr[js.Any] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Location {
     

@@ -2,36 +2,34 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Voice. */
-@js.native
 trait Voice extends StObject {
   
   /** If `true`, the voice can be customized; if `false`, the voice cannot be customized. (Same as `custom_pronunciation`; maintained for backward compatibility.). */
-  var customizable: Boolean = js.native
+  var customizable: Boolean
   
   /** Returns information about a specified custom voice model. This field is returned only by the **Get a voice** method and only when you specify the customization ID of a custom voice model. */
-  var customization: js.UndefOr[VoiceModel] = js.native
+  var customization: js.UndefOr[VoiceModel] = js.undefined
   
   /** A textual description of the voice. */
-  var description: String = js.native
+  var description: String
   
   /** The gender of the voice: `male` or `female`. */
-  var gender: String = js.native
+  var gender: String
   
   /** The language and region of the voice (for example, `en-US`). */
-  var language: String = js.native
+  var language: String
   
   /** The name of the voice. Use this as the voice identifier in all requests. */
-  var name: String = js.native
+  var name: String
   
   /** Describes the additional service features that are supported with the voice. */
-  var supported_features: SupportedFeatures = js.native
+  var supported_features: SupportedFeatures
   
   /** The URI of the voice. */
-  var url: String = js.native
+  var url: String
 }
 object Voice {
   

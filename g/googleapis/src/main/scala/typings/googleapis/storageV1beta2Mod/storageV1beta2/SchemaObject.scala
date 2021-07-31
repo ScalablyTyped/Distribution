@@ -4,139 +4,137 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.Entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object.
   */
-@js.native
 trait SchemaObject extends StObject {
   
   /**
     * Access controls on the object.
     */
-  var acl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.native
+  var acl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.undefined
   
   /**
     * The bucket containing this object.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * Cache-Control directive for the object data.
     */
-  var cacheControl: js.UndefOr[String] = js.native
+  var cacheControl: js.UndefOr[String] = js.undefined
   
   /**
     * Number of underlying components that make up this object. Components are
     * accumulated by compose operations and are limited to a count of 32.
     */
-  var componentCount: js.UndefOr[Double] = js.native
+  var componentCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Content-Disposition of the object data.
     */
-  var contentDisposition: js.UndefOr[String] = js.native
+  var contentDisposition: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Encoding of the object data.
     */
-  var contentEncoding: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Language of the object data.
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Type of the object data.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * CRC32c checksum, as described in RFC 4960, Appendix B; encoded using
     * base64.
     */
-  var crc32c: js.UndefOr[String] = js.native
+  var crc32c: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP 1.1 Entity tag for the object.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The content generation of this object. Used for object versioning.
     */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For objects, this is always storage#object.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * MD5 hash of the data; encoded using base64.
     */
-  var md5Hash: js.UndefOr[String] = js.native
+  var md5Hash: js.UndefOr[String] = js.undefined
   
   /**
     * Media download link.
     */
-  var mediaLink: js.UndefOr[String] = js.native
+  var mediaLink: js.UndefOr[String] = js.undefined
   
   /**
     * User-provided metadata, in key/value pairs.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The generation of the metadata for this object at this generation. Used
     * for metadata versioning. Has no meaning outside of the context of this
     * generation.
     */
-  var metageneration: js.UndefOr[String] = js.native
+  var metageneration: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this object. Required if not specified by URL parameter.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the object. This will always be the uploader of the object.
     */
-  var owner: js.UndefOr[Entity] = js.native
+  var owner: js.UndefOr[Entity] = js.undefined
   
   /**
     * The link to this object.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Length of the data in bytes.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * Storage class of the object.
     */
-  var storageClass: js.UndefOr[String] = js.native
+  var storageClass: js.UndefOr[String] = js.undefined
   
   /**
     * Deletion time of the object in RFC 3339 format. Will be returned if and
     * only if this version of the object has been deleted.
     */
-  var timeDeleted: js.UndefOr[String] = js.native
+  var timeDeleted: js.UndefOr[String] = js.undefined
   
   /**
     * Modification time of the object metadata in RFC 3339 format.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaObject {
   

@@ -7,30 +7,30 @@ import typings.pulumiAws.outputMod.eks.GetClusterVpcConfig
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eksGetClusterMod {
   
-  @JSImport("@pulumi/aws/eks/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/eks/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/eks/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * The name of the cluster
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetClusterArgs {
     
@@ -54,75 +54,74 @@ object eksGetClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the cluster.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Nested attribute containing `certificate-authority-data` for your cluster.
       */
-    val certificateAuthority: GetClusterCertificateAuthority = js.native
+    val certificateAuthority: GetClusterCertificateAuthority
     
     /**
       * The Unix epoch time stamp in seconds for when the cluster was created.
       */
-    val createdAt: String = js.native
+    val createdAt: String
     
     /**
       * The enabled control plane logs.
       */
-    val enabledClusterLogTypes: js.Array[String] = js.native
+    val enabledClusterLogTypes: js.Array[String]
     
     /**
       * The endpoint for your Kubernetes API server.
       */
-    val endpoint: String = js.native
+    val endpoint: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Nested attribute containing identity provider information for your cluster. Only available on Kubernetes version 1.13 and 1.14 clusters created or upgraded on or after September 3, 2019. For an example using this information to enable IAM Roles for Service Accounts, see the `aws.eks.Cluster` resource documentation.
       */
-    val identities: js.Array[GetClusterIdentity] = js.native
+    val identities: js.Array[GetClusterIdentity]
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The platform version for the cluster.
       */
-    val platformVersion: String = js.native
+    val platformVersion: String
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf.
       */
-    val roleArn: String = js.native
+    val roleArn: String
     
     /**
       * The status of the EKS cluster. One of `CREATING`, `ACTIVE`, `DELETING`, `FAILED`.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The Kubernetes server version for the cluster.
       */
-    val version: String = js.native
+    val version: String
     
     /**
       * Nested list containing VPC configuration for the cluster.
       */
-    val vpcConfig: GetClusterVpcConfig = js.native
+    val vpcConfig: GetClusterVpcConfig
   }
   object GetClusterResult {
     

@@ -2,25 +2,23 @@ package typings.bootstrapMultiselect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Templates extends StObject {
   
-  var button: js.UndefOr[String] = js.native
+  var button: js.UndefOr[String] = js.undefined
   
-  var divider: js.UndefOr[String] = js.native
+  var divider: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var filterClearBtn: js.UndefOr[String] = js.native
+  var filterClearBtn: js.UndefOr[String] = js.undefined
   
-  var li: js.UndefOr[String] = js.native
+  var li: js.UndefOr[String] = js.undefined
   
-  var liGroup: js.UndefOr[String] = js.native
+  var liGroup: js.UndefOr[String] = js.undefined
   
-  var ul: js.UndefOr[String] = js.native
+  var ul: js.UndefOr[String] = js.undefined
 }
 object Templates {
   

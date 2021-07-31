@@ -9,7 +9,6 @@ import typings.node.readlineMod.Interface
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -22,7 +21,9 @@ object baseMod {
     */
   @JSImport("inquirer/lib/prompts/base", JSImport.Namespace)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends Prompt[TQuestion] {
+  class ^[TQuestion /* <: Question */] protected ()
+    extends StObject
+       with Prompt[TQuestion] {
     /**
       * Initializes a new instance of the `Prompt<T>` class.
       *
@@ -36,6 +37,87 @@ object baseMod {
       * The answer-object.
       */
     def this(question: TQuestion, readLine: Interface, answers: Answers) = this()
+    
+    /**
+      * Runs the prompt.
+      *
+      * @param callback
+      * The callback for resolving the result.
+      */
+    /* CompleteClass */
+    /* protected */ override def _run(callback: js.Function1[/* callback */ js.Any, Unit]): Unit = js.native
+    
+    /**
+      * Gets or sets an object which contains the answers.
+      */
+    /* CompleteClass */
+    var answers: Answers = js.native
+    
+    /**
+      * Releases all unmanaged resources.
+      */
+    /* CompleteClass */
+    /* protected */ override def close(): Unit = js.native
+    
+    /**
+      * Generates the question-string.
+      *
+      * @returns
+      * The question-string.
+      */
+    /* CompleteClass */
+    /* protected */ override def getQuestion(): String = js.native
+    
+    /**
+      * Handles the submit-event.
+      *
+      * @param observable
+      * The observable submit-event flow.
+      */
+    /* CompleteClass */
+    /* protected */ override def handleSubmitEvents[T](observable: Observable_[T]): PromptEventPipes[T] = js.native
+    
+    /**
+      * Gets or sets the options of the prompt.
+      */
+    /* CompleteClass */
+    var opt: PromptOptions[TQuestion] = js.native
+    
+    /**
+      * Gets or sets an object for performing read from and write to the console.
+      */
+    /* CompleteClass */
+    var rl: Interface = js.native
+    
+    /**
+      * Runs the prompt.
+      *
+      * @returns
+      * The result of the prompt.
+      */
+    /* CompleteClass */
+    override def run(): js.Promise[js.Any] = js.native
+    
+    /**
+      * Gets or sets an object for managing the console-screen.
+      */
+    /* CompleteClass */
+    var screen: typings.inquirer.screenManagerMod.^ = js.native
+    
+    /**
+      * Gets or sets a string which represents the state of the prompt.
+      */
+    /* CompleteClass */
+    var status: PromptState = js.native
+    
+    /**
+      * Throws an error for a missing param.
+      *
+      * @param name
+      * The name of the missing param.
+      */
+    /* CompleteClass */
+    /* protected */ override def throwParamError(name: String): Unit = js.native
   }
   
   /**
@@ -44,8 +126,9 @@ object baseMod {
     * @template TQuestion
     * The options for the question.
     */
-  @js.native
-  trait Prompt[TQuestion /* <: Question */] extends PromptBase {
+  trait Prompt[TQuestion /* <: Question */]
+    extends StObject
+       with PromptBase {
     
     /**
       * Runs the prompt.
@@ -53,17 +136,17 @@ object baseMod {
       * @param callback
       * The callback for resolving the result.
       */
-    /* protected */ def _run(callback: js.Function1[/* callback */ js.Any, Unit]): Unit = js.native
+    /* protected */ def _run(callback: js.Function1[/* callback */ js.Any, Unit]): Unit
     
     /**
       * Gets or sets an object which contains the answers.
       */
-    var answers: Answers = js.native
+    var answers: Answers
     
     /**
       * Releases all unmanaged resources.
       */
-    /* protected */ def close(): Unit = js.native
+    /* protected */ def close(): Unit
     
     /**
       * Generates the question-string.
@@ -71,7 +154,7 @@ object baseMod {
       * @returns
       * The question-string.
       */
-    /* protected */ def getQuestion(): String = js.native
+    /* protected */ def getQuestion(): String
     
     /**
       * Handles the submit-event.
@@ -79,22 +162,22 @@ object baseMod {
       * @param observable
       * The observable submit-event flow.
       */
-    /* protected */ def handleSubmitEvents[T](observable: Observable_[T]): PromptEventPipes[T] = js.native
+    /* protected */ def handleSubmitEvents[T](observable: Observable_[T]): PromptEventPipes[T]
     
     /**
       * Gets or sets the options of the prompt.
       */
-    var opt: PromptOptions[TQuestion] = js.native
+    var opt: PromptOptions[TQuestion]
     
     /**
       * Gets or sets an object for performing read from and write to the console.
       */
-    var rl: Interface = js.native
+    var rl: Interface
     
     /**
       * Gets or sets an object for managing the console-screen.
       */
-    var screen: typings.inquirer.screenManagerMod.^ = js.native
+    var screen: typings.inquirer.screenManagerMod.^
     
     /**
       * Throws an error for a missing param.
@@ -102,7 +185,7 @@ object baseMod {
       * @param name
       * The name of the missing param.
       */
-    /* protected */ def throwParamError(name: String): Unit = js.native
+    /* protected */ def throwParamError(name: String): Unit
   }
   object Prompt {
     
@@ -115,7 +198,7 @@ object baseMod {
       handleSubmitEvents: Observable_[js.Any] => PromptEventPipes[js.Any],
       opt: PromptOptions[TQuestion],
       rl: Interface,
-      run: () => js.Promise[_],
+      run: () => js.Promise[js.Any],
       screen: typings.inquirer.screenManagerMod.^,
       status: PromptState,
       throwParamError: String => Unit
@@ -125,7 +208,7 @@ object baseMod {
     }
     
     @scala.inline
-    implicit class PromptMutableBuilder[Self <: Prompt[_], TQuestion /* <: Question */] (val x: Self with Prompt[TQuestion]) extends AnyVal {
+    implicit class PromptMutableBuilder[Self <: Prompt[?], TQuestion /* <: Question */] (val x: Self & Prompt[TQuestion]) extends AnyVal {
       
       @scala.inline
       def setAnswers(value: Answers): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])

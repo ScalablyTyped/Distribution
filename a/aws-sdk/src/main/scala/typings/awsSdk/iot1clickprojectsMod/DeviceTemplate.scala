@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceTemplate extends StObject {
   
   /**
     * An optional Lambda function to invoke instead of the default Lambda function provided by the placement template.
     */
-  var callbackOverrides: js.UndefOr[DeviceCallbackOverrideMap] = js.native
+  var callbackOverrides: js.UndefOr[DeviceCallbackOverrideMap] = js.undefined
   
   /**
     * The device type, which currently must be "button".
     */
-  var deviceType: js.UndefOr[DeviceType] = js.native
+  var deviceType: js.UndefOr[DeviceType] = js.undefined
 }
 object DeviceTemplate {
   

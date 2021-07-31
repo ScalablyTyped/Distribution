@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapSchemes extends Object {
+trait HeatmapSchemes
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap associated with the given schemes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#HeatmapSchemes)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average basemap color is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#HeatmapSchemes)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * The heatmap color scheme best suited for the given basemap and geometry type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#HeatmapSchemes)
     */
-  var primaryScheme: HeatmapScheme = js.native
+  var primaryScheme: HeatmapScheme
   
   /**
     * Additional heatmap color schemes that may be used to visualize data overlaid on the given basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#HeatmapSchemes)
     */
-  var secondarySchemes: js.Array[HeatmapScheme] = js.native
+  var secondarySchemes: js.Array[HeatmapScheme]
 }
 object HeatmapSchemes {
   

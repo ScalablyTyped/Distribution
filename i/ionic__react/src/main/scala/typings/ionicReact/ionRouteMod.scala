@@ -7,7 +7,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionRouteMod {
@@ -42,6 +41,5 @@ object ionRouteMod {
     var show: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait IonRouteState extends StObject
 }

@@ -14,7 +14,6 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.VERTICAL_STRIPE
 import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tvdisplaycontrolMod {
@@ -26,39 +25,55 @@ object tvdisplaycontrolMod {
   object Display3DEffectMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Display3DEffectMode with String] = js.native
+    def apply(value: String): js.UndefOr[Display3DEffectMode & String] = js.native
     
     @js.native
-    sealed trait CHECKER_BD extends Display3DEffectMode
-    /* "CHECKER_BD" */ val CHECKER_BD: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.CHECKER_BD with String = js.native
+    sealed trait CHECKER_BD
+      extends StObject
+         with Display3DEffectMode
+    /* "CHECKER_BD" */ val CHECKER_BD: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.CHECKER_BD & String = js.native
     
     @js.native
-    sealed trait FRAME_SEQUENCE extends Display3DEffectMode
-    /* "FRAME_SEQUENCE" */ val FRAME_SEQUENCE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.FRAME_SEQUENCE with String = js.native
+    sealed trait FRAME_SEQUENCE
+      extends StObject
+         with Display3DEffectMode
+    /* "FRAME_SEQUENCE" */ val FRAME_SEQUENCE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.FRAME_SEQUENCE & String = js.native
     
     @js.native
-    sealed trait FROM_2D_TO_3D extends Display3DEffectMode
-    /* "FROM_2D_TO_3D" */ val FROM_2D_TO_3D: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.FROM_2D_TO_3D with String = js.native
+    sealed trait FROM_2D_TO_3D
+      extends StObject
+         with Display3DEffectMode
+    /* "FROM_2D_TO_3D" */ val FROM_2D_TO_3D: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.FROM_2D_TO_3D & String = js.native
     
     @js.native
-    sealed trait LINE_BY_LINE extends Display3DEffectMode
-    /* "LINE_BY_LINE" */ val LINE_BY_LINE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.LINE_BY_LINE with String = js.native
+    sealed trait LINE_BY_LINE
+      extends StObject
+         with Display3DEffectMode
+    /* "LINE_BY_LINE" */ val LINE_BY_LINE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.LINE_BY_LINE & String = js.native
     
     @js.native
-    sealed trait OFF extends Display3DEffectMode
-    /* "OFF" */ val OFF: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.OFF with String = js.native
+    sealed trait OFF
+      extends StObject
+         with Display3DEffectMode
+    /* "OFF" */ val OFF: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.OFF & String = js.native
     
     @js.native
-    sealed trait SIDE_BY_SIDE extends Display3DEffectMode
-    /* "SIDE_BY_SIDE" */ val SIDE_BY_SIDE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.SIDE_BY_SIDE with String = js.native
+    sealed trait SIDE_BY_SIDE
+      extends StObject
+         with Display3DEffectMode
+    /* "SIDE_BY_SIDE" */ val SIDE_BY_SIDE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.SIDE_BY_SIDE & String = js.native
     
     @js.native
-    sealed trait TOP_BOTTOM extends Display3DEffectMode
-    /* "TOP_BOTTOM" */ val TOP_BOTTOM: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.TOP_BOTTOM with String = js.native
+    sealed trait TOP_BOTTOM
+      extends StObject
+         with Display3DEffectMode
+    /* "TOP_BOTTOM" */ val TOP_BOTTOM: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.TOP_BOTTOM & String = js.native
     
     @js.native
-    sealed trait VERTICAL_STRIPE extends Display3DEffectMode
-    /* "VERTICAL_STRIPE" */ val VERTICAL_STRIPE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.VERTICAL_STRIPE with String = js.native
+    sealed trait VERTICAL_STRIPE
+      extends StObject
+         with Display3DEffectMode
+    /* "VERTICAL_STRIPE" */ val VERTICAL_STRIPE: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DEffectMode.VERTICAL_STRIPE & String = js.native
   }
   
   @js.native
@@ -68,19 +83,25 @@ object tvdisplaycontrolMod {
   object Display3DModeState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Display3DModeState with String] = js.native
+    def apply(value: String): js.UndefOr[Display3DModeState & String] = js.native
     
     @js.native
-    sealed trait NOT_CONNECTED extends Display3DModeState
-    /* "NOT_CONNECTED" */ val NOT_CONNECTED: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DModeState.NOT_CONNECTED with String = js.native
+    sealed trait NOT_CONNECTED
+      extends StObject
+         with Display3DModeState
+    /* "NOT_CONNECTED" */ val NOT_CONNECTED: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DModeState.NOT_CONNECTED & String = js.native
     
     @js.native
-    sealed trait NOT_SUPPORTED extends Display3DModeState
-    /* "NOT_SUPPORTED" */ val NOT_SUPPORTED: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DModeState.NOT_SUPPORTED with String = js.native
+    sealed trait NOT_SUPPORTED
+      extends StObject
+         with Display3DModeState
+    /* "NOT_SUPPORTED" */ val NOT_SUPPORTED: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DModeState.NOT_SUPPORTED & String = js.native
     
     @js.native
-    sealed trait READY extends Display3DModeState
-    /* "READY" */ val READY: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DModeState.READY with String = js.native
+    sealed trait READY
+      extends StObject
+         with Display3DModeState
+    /* "READY" */ val READY: typings.tizenCommonWeb.tvdisplaycontrolMod.Display3DModeState.READY & String = js.native
   }
   
   type Mode3DEffectListSupportCallback = js.Function1[/* mode3DEffects */ js.Array[Display3DEffectMode], Unit]

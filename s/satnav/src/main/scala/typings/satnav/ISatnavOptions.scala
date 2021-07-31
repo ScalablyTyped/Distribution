@@ -2,19 +2,17 @@ package typings.satnav
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISatnavOptions extends StObject {
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
-  var html5: js.UndefOr[Boolean] = js.native
+  var html5: js.UndefOr[Boolean] = js.undefined
   
-  var matchAll: js.UndefOr[Boolean] = js.native
+  var matchAll: js.UndefOr[Boolean] = js.undefined
   
-  var poll: js.UndefOr[Double] = js.native
+  var poll: js.UndefOr[Double] = js.undefined
 }
 object ISatnavOptions {
   

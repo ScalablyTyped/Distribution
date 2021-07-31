@@ -5,7 +5,6 @@ import typings.stormReactDiagrams.defaultPortModelMod.DefaultPortModel
 import typings.stormReactDiagrams.nodeModelMod.NodeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultNodeModelMod {
@@ -14,8 +13,8 @@ object defaultNodeModelMod {
   @js.native
   class DefaultNodeModel () extends NodeModel {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], color: String) = this()
     def this(name: String, color: String) = this()
+    def this(name: Unit, color: String) = this()
     
     def addInPort(label: String): DefaultPortModel = js.native
     

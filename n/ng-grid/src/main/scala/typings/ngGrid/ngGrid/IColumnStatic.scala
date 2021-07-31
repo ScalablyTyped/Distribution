@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable6
 import typings.ngGrid.ngGrid.service.IDomUtilityService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IColumnStatic
-  extends Instantiable6[
+  extends StObject
+     with Instantiable6[
       /* config */ IGridOptions, 
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 

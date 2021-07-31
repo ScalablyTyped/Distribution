@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoryRestricts extends StObject {
   
   /**
     * A set of video categories for which the tag is relevant. You can use this information to display appropriate tag suggestions based on the video category that the video uploader associates with the video. By default, tag suggestions are relevant for all categories if there are no restricts defined for the keyword.
     */
-  var categoryRestricts: js.Array[String] = js.native
+  var categoryRestricts: js.Array[String]
   
   /**
     * The keyword tag suggested for the video.
     */
-  var tag: String = js.native
+  var tag: String
 }
 object CategoryRestricts {
   

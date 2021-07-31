@@ -4,19 +4,19 @@ import typings.relayRuntime.relayRuntimeStrings.missing
 import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `0` extends OperationAvailability {
+trait `0`
+  extends StObject
+     with OperationAvailability {
   
-  var status: missing = js.native
+  var status: missing
 }
 object `0` {
   
   @scala.inline
-  def apply(status: missing): `0` = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(status = "missing")
     __obj.asInstanceOf[`0`]
   }
   

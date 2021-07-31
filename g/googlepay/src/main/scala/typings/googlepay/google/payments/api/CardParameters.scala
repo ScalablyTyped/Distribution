@@ -4,7 +4,6 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * card networks can be filtered by setting the
   * [[CardParameters.allowedCardNetworks|`allowedCardNetworks`]] property.
   */
-@js.native
 trait CardParameters extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait CardParameters extends StObject {
     *
     * @default true
     */
-  var allowCreditCards: js.UndefOr[`false` | `true`] = js.native
+  var allowCreditCards: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * Whether a prepaid card may be used for this transaction.
@@ -34,7 +32,7 @@ trait CardParameters extends StObject {
     *
     * @default true
     */
-  var allowPrepaidCards: js.UndefOr[`false` | `true`] = js.native
+  var allowPrepaidCards: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * Allowed authentication methods.
@@ -52,7 +50,7 @@ trait CardParameters extends StObject {
     *
     * This field is required.
     */
-  var allowedAuthMethods: js.Array[CardAuthMethod] = js.native
+  var allowedAuthMethods: js.Array[CardAuthMethod]
   
   /**
     * Allowed card networks.
@@ -75,7 +73,7 @@ trait CardParameters extends StObject {
     *
     * This field is required.
     */
-  var allowedCardNetworks: js.Array[CardNetwork] = js.native
+  var allowedCardNetworks: js.Array[CardNetwork]
   
   /**
     * Optional billing address parameters.
@@ -84,7 +82,7 @@ trait CardParameters extends StObject {
     * [[BillingAddressParameters|`BillingAddressParameters`]] will be
     * assumed.
     */
-  var billingAddressParameters: js.UndefOr[BillingAddressParameters] = js.native
+  var billingAddressParameters: js.UndefOr[BillingAddressParameters] = js.undefined
   
   /**
     * Whether a billing address is required from the buyer.
@@ -98,7 +96,7 @@ trait CardParameters extends StObject {
     *
     * @default false
     */
-  var billingAddressRequired: js.UndefOr[`false` | `true`] = js.native
+  var billingAddressRequired: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * List of card network parameters.
@@ -106,7 +104,7 @@ trait CardParameters extends StObject {
     * This field is optional. You may set it when network specific
     * parameters are needed to complete a transaction.
     */
-  var cardNetworkParameters: js.UndefOr[js.Array[CardNetworkParameters]] = js.native
+  var cardNetworkParameters: js.UndefOr[js.Array[CardNetworkParameters]] = js.undefined
 }
 object CardParameters {
   

@@ -2,10 +2,8 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Weather extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait Weather extends StObject {
   def getForecast(
     district: String,
     callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * 查询实时天气信息
@@ -26,7 +24,7 @@ trait Weather extends StObject {
   def getLive(
     district: String,
     callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Weather {
   

@@ -3,26 +3,26 @@ package typings.popmotionPopcorn
 import typings.popmotionEasing.mod.Easing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interpolateMod {
   
-  @JSImport("@popmotion/popcorn/lib/utils/interpolate", JSImport.Default)
+  @JSImport("@popmotion/popcorn/lib/utils/interpolate", JSImport.Namespace)
   @js.native
-  def default[T](input: js.Array[Double], output: js.Array[T]): Mix[T | String | Double] = js.native
-  @JSImport("@popmotion/popcorn/lib/utils/interpolate", JSImport.Default)
-  @js.native
-  def default[T](input: js.Array[Double], output: js.Array[T], hasClampEaseMixer: InterpolateOptions[T]): Mix[T | String | Double] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](input: js.Array[Double], output: js.Array[T]): Mix[T | String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Mix[T | String | Double]]
+  @scala.inline
+  def default[T](input: js.Array[Double], output: js.Array[T], hasClampEaseMixer: InterpolateOptions[T]): Mix[T | String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], hasClampEaseMixer.asInstanceOf[js.Any])).asInstanceOf[Mix[T | String | Double]]
+  
   trait InterpolateOptions[T] extends StObject {
     
-    var clamp: js.UndefOr[Boolean] = js.native
+    var clamp: js.UndefOr[Boolean] = js.undefined
     
-    var ease: js.UndefOr[MixEasing] = js.native
+    var ease: js.UndefOr[MixEasing] = js.undefined
     
-    var mixer: js.UndefOr[MixerFactory[T]] = js.native
+    var mixer: js.UndefOr[MixerFactory[T]] = js.undefined
   }
   object InterpolateOptions {
     
@@ -33,7 +33,7 @@ object interpolateMod {
     }
     
     @scala.inline
-    implicit class InterpolateOptionsMutableBuilder[Self <: InterpolateOptions[_], T] (val x: Self with InterpolateOptions[T]) extends AnyVal {
+    implicit class InterpolateOptionsMutableBuilder[Self <: InterpolateOptions[?], T] (val x: Self & InterpolateOptions[T]) extends AnyVal {
       
       @scala.inline
       def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])

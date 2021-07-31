@@ -2,10 +2,8 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThumbWriterOptions extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ThumbWriterOptions extends StObject {
     * temporary location that later gets mapped into memory at the
     * intended memory location.
     */
-  var pc: js.UndefOr[NativePointer] = js.native
+  var pc: js.UndefOr[NativePointer] = js.undefined
 }
 object ThumbWriterOptions {
   

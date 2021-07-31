@@ -2,129 +2,110 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.ArrayUtilities")
 @js.native
 class ArrayUtilities ()
-  extends typings.typescriptServices.TypeScript.ArrayUtilities
+  extends StObject
+     with typings.typescriptServices.TypeScript.ArrayUtilities
 object ArrayUtilities {
   
-  /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.all")
+  @JSGlobal("TypeScript.ArrayUtilities")
   @js.native
-  def all[T](array: js.Array[T], func: js.Function1[/* v */ T, Boolean]): Boolean = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.any")
-  @js.native
-  def any[T](array: js.Array[T], func: js.Function1[/* v */ T, Boolean]): Boolean = js.native
+  @scala.inline
+  def all[T](array: js.Array[T], func: js.Function1[/* v */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.binarySearch")
-  @js.native
-  def binarySearch(array: js.Array[Double], value: Double): Double = js.native
+  @scala.inline
+  def any[T](array: js.Array[T], func: js.Function1[/* v */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.contains")
-  @js.native
-  def contains[T](array: js.Array[T], value: T): Boolean = js.native
+  @scala.inline
+  def binarySearch(array: js.Array[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.copy")
-  @js.native
+  @scala.inline
+  def contains[T](array: js.Array[T], value: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /* static member */
+  @scala.inline
   def copy[T](
     sourceArray: js.Array[T],
     sourceIndex: Double,
     destinationArray: js.Array[T],
     destinationIndex: Double,
     length: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(sourceArray.asInstanceOf[js.Any], sourceIndex.asInstanceOf[js.Any], destinationArray.asInstanceOf[js.Any], destinationIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.createArray")
-  @js.native
-  def createArray[T](length: Double, defaultValue: js.Any): js.Array[T] = js.native
+  @scala.inline
+  def createArray[T](length: Double, defaultValue: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(length.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.distinct")
-  @js.native
-  def distinct[T](array: js.Array[T]): js.Array[T] = js.native
-  @JSGlobal("TypeScript.ArrayUtilities.distinct")
-  @js.native
-  def distinct[T](array: js.Array[T], equalsFn: js.Function2[/* a */ T, /* b */ T, Boolean]): js.Array[T] = js.native
+  @scala.inline
+  def distinct[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def distinct[T](array: js.Array[T], equalsFn: js.Function2[/* a */ T, /* b */ T, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(array.asInstanceOf[js.Any], equalsFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.first")
-  @js.native
-  def first[T](array: js.Array[T]): T = js.native
-  @JSGlobal("TypeScript.ArrayUtilities.first")
-  @js.native
-  def first[T](array: js.Array[T], func: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = js.native
+  @scala.inline
+  def first[T](array: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(array.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def first[T](array: js.Array[T], func: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.firstOrDefault")
-  @js.native
-  def firstOrDefault[T](array: js.Array[T], func: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = js.native
+  @scala.inline
+  def firstOrDefault[T](array: js.Array[T], func: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("firstOrDefault")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.groupBy")
-  @js.native
-  def groupBy[T](array: js.Array[T], func: js.Function1[/* v */ T, String]): js.Any = js.native
+  @scala.inline
+  def groupBy[T](array: js.Array[T], func: js.Function1[/* v */ T, String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.grow")
-  @js.native
-  def grow[T](array: js.Array[T], length: Double, defaultValue: T): Unit = js.native
+  @scala.inline
+  def grow[T](array: js.Array[T], length: Double, defaultValue: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("grow")(array.asInstanceOf[js.Any], length.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.indexOf")
-  @js.native
-  def indexOf[T](array: js.Array[T], predicate: js.Function1[/* v */ T, Boolean]): Double = js.native
+  @scala.inline
+  def indexOf[T](array: js.Array[T], predicate: js.Function1[/* v */ T, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.isArray")
-  @js.native
-  def isArray(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.last")
-  @js.native
-  def last[T](array: js.Array[T]): T = js.native
+  @scala.inline
+  def last[T](array: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(array.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.lastOrDefault")
-  @js.native
-  def lastOrDefault[T](array: js.Array[T], predicate: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = js.native
+  @scala.inline
+  def lastOrDefault[T](array: js.Array[T], predicate: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lastOrDefault")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.max")
-  @js.native
-  def max[T](array: js.Array[T], func: js.Function1[/* v */ T, Double]): Double = js.native
+  @scala.inline
+  def max[T](array: js.Array[T], func: js.Function1[/* v */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.min")
-  @js.native
-  def min[T](array: js.Array[T], func: js.Function1[/* v */ T, Double]): Double = js.native
+  @scala.inline
+  def min[T](array: js.Array[T], func: js.Function1[/* v */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.select")
-  @js.native
-  def select[T, S](values: js.Array[T], func: js.Function1[/* v */ T, S]): js.Array[S] = js.native
+  @scala.inline
+  def select[T, S](values: js.Array[T], func: js.Function1[/* v */ T, S]): js.Array[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(values.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[S]]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.sequenceEquals")
-  @js.native
-  def sequenceEquals[T](array1: js.Array[T], array2: js.Array[T], equals: js.Function2[/* v1 */ T, /* v2 */ T, Boolean]): Boolean = js.native
+  @scala.inline
+  def sequenceEquals[T](array1: js.Array[T], array2: js.Array[T], equals: js.Function2[/* v1 */ T, /* v2 */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEquals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], equals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.sum")
-  @js.native
-  def sum[T](array: js.Array[T], func: js.Function1[/* v */ T, Double]): Double = js.native
+  @scala.inline
+  def sum[T](array: js.Array[T], func: js.Function1[/* v */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("TypeScript.ArrayUtilities.where")
-  @js.native
-  def where[T](values: js.Array[T], func: js.Function1[/* v */ T, Boolean]): js.Array[T] = js.native
+  @scala.inline
+  def where[T](values: js.Array[T], func: js.Function1[/* v */ T, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(values.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

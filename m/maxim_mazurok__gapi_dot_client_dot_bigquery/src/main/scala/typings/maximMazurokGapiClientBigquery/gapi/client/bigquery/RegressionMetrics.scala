@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegressionMetrics extends StObject {
   
   /** Mean absolute error. */
-  var meanAbsoluteError: js.UndefOr[Double] = js.native
+  var meanAbsoluteError: js.UndefOr[Double] = js.undefined
   
   /** Mean squared error. */
-  var meanSquaredError: js.UndefOr[Double] = js.native
+  var meanSquaredError: js.UndefOr[Double] = js.undefined
   
   /** Mean squared log error. */
-  var meanSquaredLogError: js.UndefOr[Double] = js.native
+  var meanSquaredLogError: js.UndefOr[Double] = js.undefined
   
   /** Median absolute error. */
-  var medianAbsoluteError: js.UndefOr[Double] = js.native
+  var medianAbsoluteError: js.UndefOr[Double] = js.undefined
   
   /** R^2 score. */
-  var rSquared: js.UndefOr[Double] = js.native
+  var rSquared: js.UndefOr[Double] = js.undefined
 }
 object RegressionMetrics {
   

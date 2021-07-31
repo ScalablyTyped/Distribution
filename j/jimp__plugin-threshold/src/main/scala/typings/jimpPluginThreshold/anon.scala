@@ -2,19 +2,17 @@ package typings.jimpPluginThreshold
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoGreyscale extends StObject {
     
-    var autoGreyscale: js.UndefOr[Boolean] = js.native
+    var autoGreyscale: js.UndefOr[Boolean] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var replace: js.UndefOr[Double] = js.native
+    var replace: js.UndefOr[Double] = js.undefined
   }
   object AutoGreyscale {
     

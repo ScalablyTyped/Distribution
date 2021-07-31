@@ -2,21 +2,19 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventHandler extends StObject {
   
   // The |off| function removes the event event handling function |f| from
   // both |on| and the |once| event handling.
-  def off(t: String, f: js.Function): Unit = js.native
+  def off(t: String, f: js.Function): Unit
   
   // Adds |f| as an event handler for all subsiquent events of type |t|.
-  def on(t: String, f: js.Function): Unit = js.native
+  def on(t: String, f: js.Function): Unit
   
   // Adds |f| as an event handler for only the next event of type |t|.
-  def once(t: String, f: js.Function): Unit = js.native
+  def once(t: String, f: js.Function): Unit
 }
 object EventHandler {
   

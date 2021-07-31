@@ -12,7 +12,7 @@ A simple logger for node
 | Keywords           | node, log, logger |
 | # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 660 |
+| # downloads        | 782 |
 | # stars            | 0 |
 
 ## Links

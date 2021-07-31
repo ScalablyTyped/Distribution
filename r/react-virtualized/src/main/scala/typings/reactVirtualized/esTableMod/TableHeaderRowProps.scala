@@ -4,23 +4,21 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableHeaderRowProps extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var columns: js.Array[ReactNode] = js.native
+  var columns: js.Array[ReactNode]
   
-  var height: Double = js.native
+  var height: Double
   
-  var scrollbarWidth: Double = js.native
+  var scrollbarWidth: Double
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
   
-  var width: Double = js.native
+  var width: Double
 }
 object TableHeaderRowProps {
   

@@ -3,22 +3,20 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetInstancesScopedList extends StObject {
   
   /**
     * A list of target instances contained in this scope.
     */
-  var targetInstances: js.UndefOr[js.Array[SchemaTargetInstance]] = js.native
+  var targetInstances: js.UndefOr[js.Array[SchemaTargetInstance]] = js.undefined
   
   /**
     * Informational warning which replaces the list of addresses when the list
     * is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaTargetInstancesScopedList {
   

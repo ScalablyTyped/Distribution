@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInputSecurityGroupRequest extends StObject {
   
   /**
     * The id of the Input Security Group to describe
     */
-  var InputSecurityGroupId: string = js.native
+  var InputSecurityGroupId: string
 }
 object DescribeInputSecurityGroupRequest {
   

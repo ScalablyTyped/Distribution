@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Profilefilterlinks")
@@ -33,7 +32,7 @@ class ResourceManagementProfilefilterlinks protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementProfilefilterlinksDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementProfilefilterlinksDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceManagementProfilefilterlinks protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def get(callback: BodyResponseCallback[SchemaProfileFilterLink]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def get(params: ParamsResourceManagementProfilefilterlinksGet): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def get(
     params: ParamsResourceManagementProfilefilterlinksGet,
@@ -100,7 +99,7 @@ class ResourceManagementProfilefilterlinks protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def insert(callback: BodyResponseCallback[SchemaProfileFilterLink]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def insert(params: ParamsResourceManagementProfilefilterlinksInsert): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def insert(
     params: ParamsResourceManagementProfilefilterlinksInsert,
@@ -136,7 +135,7 @@ class ResourceManagementProfilefilterlinks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaProfileFilterLinks] = js.native
   def list(callback: BodyResponseCallback[SchemaProfileFilterLinks]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfileFilterLinks] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfileFilterLinks] = js.native
   def list(params: ParamsResourceManagementProfilefilterlinksList): GaxiosPromise[SchemaProfileFilterLinks] = js.native
   def list(
     params: ParamsResourceManagementProfilefilterlinksList,
@@ -173,7 +172,7 @@ class ResourceManagementProfilefilterlinks protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def patch(callback: BodyResponseCallback[SchemaProfileFilterLink]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def patch(params: ParamsResourceManagementProfilefilterlinksPatch): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def patch(
     params: ParamsResourceManagementProfilefilterlinksPatch,
@@ -209,7 +208,7 @@ class ResourceManagementProfilefilterlinks protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def update(callback: BodyResponseCallback[SchemaProfileFilterLink]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def update(params: ParamsResourceManagementProfilefilterlinksUpdate): GaxiosPromise[SchemaProfileFilterLink] = js.native
   def update(
     params: ParamsResourceManagementProfilefilterlinksUpdate,

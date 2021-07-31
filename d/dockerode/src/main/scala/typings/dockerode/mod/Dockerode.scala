@@ -6,7 +6,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,11 +24,11 @@ trait Dockerode extends StObject {
   def buildImage(file: ReadableStream, options: js.Object): js.Promise[ReadableStream] = js.native
   def buildImage(file: ReadableStream, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
-  def checkAuth(options: js.Any): js.Promise[_] = js.native
-  def checkAuth(options: js.Any, callback: Callback[_]): Unit = js.native
+  def checkAuth(options: js.Any): js.Promise[js.Any] = js.native
+  def checkAuth(options: js.Any, callback: Callback[js.Any]): Unit = js.native
   
-  def createConfig(options: js.Object): js.Promise[_] = js.native
-  def createConfig(options: js.Object, callback: Callback[_]): Unit = js.native
+  def createConfig(options: js.Object): js.Promise[js.Any] = js.native
+  def createConfig(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
   def createContainer(options: ContainerCreateOptions): js.Promise[Container] = js.native
   def createContainer(options: ContainerCreateOptions, callback: Callback[Container]): Unit = js.native
@@ -42,20 +41,20 @@ trait Dockerode extends StObject {
   def createNetwork(options: NetworkCreateOptions): js.Promise[Network] = js.native
   def createNetwork(options: NetworkCreateOptions, callback: Callback[Network]): Unit = js.native
   
-  def createPlugin(options: js.Object): js.Promise[_] = js.native
-  def createPlugin(options: js.Object, callback: Callback[_]): Unit = js.native
+  def createPlugin(options: js.Object): js.Promise[js.Any] = js.native
+  def createPlugin(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
-  def createSecret(options: js.Object): js.Promise[_] = js.native
-  def createSecret(options: js.Object, callback: Callback[_]): Unit = js.native
+  def createSecret(options: js.Object): js.Promise[js.Any] = js.native
+  def createSecret(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
   def createService(options: ServiceSpec): js.Promise[ServiceCreateResponse] = js.native
   def createService(options: ServiceSpec, callback: Callback[ServiceCreateResponse]): Unit = js.native
   
-  def createVolume(options: js.Object): js.Promise[_] = js.native
-  def createVolume(options: js.Object, callback: Callback[_]): Unit = js.native
+  def createVolume(options: js.Object): js.Promise[js.Any] = js.native
+  def createVolume(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
-  def df(): js.Promise[_] = js.native
-  def df(callback: Callback[_]): Unit = js.native
+  def df(): js.Promise[js.Any] = js.native
+  def df(callback: Callback[js.Any]): Unit = js.native
   
   def getConfig(id: String): Config = js.native
   
@@ -93,8 +92,8 @@ trait Dockerode extends StObject {
   def importImage(file: ReadableStream, options: js.Object): js.Promise[ReadableStream] = js.native
   def importImage(file: ReadableStream, options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
-  def info(): js.Promise[_] = js.native
-  def info(callback: Callback[_]): Unit = js.native
+  def info(): js.Promise[js.Any] = js.native
+  def info(callback: Callback[js.Any]): Unit = js.native
   
   def listConfigs(): js.Promise[js.Array[ConfigInfo]] = js.native
   def listConfigs(callback: Callback[js.Array[ConfigInfo]]): Unit = js.native
@@ -116,10 +115,10 @@ trait Dockerode extends StObject {
   def listNetworks(options: js.Object): js.Promise[js.Array[NetworkInspectInfo]] = js.native
   def listNetworks(options: js.Object, callback: Callback[js.Array[NetworkInspectInfo]]): Unit = js.native
   
-  def listNodes(): js.Promise[js.Array[_]] = js.native
-  def listNodes(callback: Callback[js.Array[_]]): Unit = js.native
-  def listNodes(options: js.Object): js.Promise[js.Array[_]] = js.native
-  def listNodes(options: js.Object, callback: Callback[js.Array[_]]): Unit = js.native
+  def listNodes(): js.Promise[js.Array[js.Any]] = js.native
+  def listNodes(callback: Callback[js.Array[js.Any]]): Unit = js.native
+  def listNodes(options: js.Object): js.Promise[js.Array[js.Any]] = js.native
+  def listNodes(options: js.Object, callback: Callback[js.Array[js.Any]]): Unit = js.native
   
   def listPlugins(): js.Promise[js.Array[PluginInfo]] = js.native
   def listPlugins(callback: Callback[js.Array[PluginInfo]]): Unit = js.native
@@ -136,10 +135,10 @@ trait Dockerode extends StObject {
   def listServices(options: ServiceListOptions): js.Promise[js.Array[Service]] = js.native
   def listServices(options: ServiceListOptions, callback: Callback[js.Array[Service]]): Unit = js.native
   
-  def listTasks(): js.Promise[js.Array[_]] = js.native
-  def listTasks(callback: Callback[js.Array[_]]): Unit = js.native
-  def listTasks(options: js.Object): js.Promise[js.Array[_]] = js.native
-  def listTasks(options: js.Object, callback: Callback[js.Array[_]]): Unit = js.native
+  def listTasks(): js.Promise[js.Array[js.Any]] = js.native
+  def listTasks(callback: Callback[js.Array[js.Any]]): Unit = js.native
+  def listTasks(options: js.Object): js.Promise[js.Array[js.Any]] = js.native
+  def listTasks(options: js.Object, callback: Callback[js.Array[js.Any]]): Unit = js.native
   
   def listVolumes(): js.Promise[Volumes] = js.native
   def listVolumes(callback: Callback[Volumes]): Unit = js.native
@@ -157,8 +156,8 @@ trait Dockerode extends StObject {
   
   var modem: js.Any = js.native
   
-  def ping(): js.Promise[_] = js.native
-  def ping(callback: Callback[_]): Unit = js.native
+  def ping(): js.Promise[js.Any] = js.native
+  def ping(callback: Callback[js.Any]): Unit = js.native
   
   def pruneContainers(): js.Promise[PruneContainersInfo] = js.native
   def pruneContainers(callback: Callback[PruneContainersInfo]): Unit = js.native
@@ -180,103 +179,103 @@ trait Dockerode extends StObject {
   def pruneVolumes(options: js.Object): js.Promise[PruneVolumesInfo] = js.native
   def pruneVolumes(options: js.Object, callback: Callback[PruneVolumesInfo]): Unit = js.native
   
-  def pull(repoTag: String): js.Promise[_] = js.native
-  def pull(repoTag: String, options: js.Object): js.Promise[_] = js.native
-  def pull(repoTag: String, options: js.Object, callback: Callback[_]): Image = js.native
-  def pull(repoTag: String, options: js.Object, callback: Callback[_], auth: js.Object): Image = js.native
+  def pull(repoTag: String): js.Promise[js.Any] = js.native
+  def pull(repoTag: String, options: js.Object): js.Promise[js.Any] = js.native
+  def pull(repoTag: String, options: js.Object, callback: Callback[js.Any]): Image = js.native
+  def pull(repoTag: String, options: js.Object, callback: Callback[js.Any], auth: js.Object): Image = js.native
   
-  def run(image: String, cmd: js.Array[String], outputStream: js.Array[WritableStream]): js.Promise[_] = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: js.Array[WritableStream]): js.Promise[js.Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: js.Array[WritableStream],
-    callback: Callback[_]
+    callback: Callback[js.Any]
   ): EventEmitter = js.native
-  def run(
-    image: String,
-    cmd: js.Array[String],
-    outputStream: js.Array[WritableStream],
-    createOptions: js.UndefOr[scala.Nothing],
-    startOptions: js.Object
-  ): js.Promise[_] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: js.Array[WritableStream],
     createOptions: js.Object
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: js.Array[WritableStream],
     createOptions: js.Object,
     startOptions: js.Object
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: js.Array[WritableStream],
     createOptions: js.Object,
     startOptions: js.Object,
-    callback: Callback[_]
+    callback: Callback[js.Any]
   ): EventEmitter = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: js.Array[WritableStream],
-    startOptions: js.Object,
-    callback: Callback[_]
-  ): EventEmitter = js.native
-  def run(image: String, cmd: js.Array[String], outputStream: WritableStream): js.Promise[_] = js.native
-  def run(image: String, cmd: js.Array[String], outputStream: WritableStream, callback: Callback[_]): EventEmitter = js.native
+    createOptions: Unit,
+    startOptions: js.Object
+  ): js.Promise[js.Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
-    outputStream: WritableStream,
-    createOptions: js.UndefOr[scala.Nothing],
-    startOptions: js.Object
-  ): js.Promise[_] = js.native
-  def run(image: String, cmd: js.Array[String], outputStream: WritableStream, createOptions: js.Object): js.Promise[_] = js.native
+    outputStream: js.Array[WritableStream],
+    startOptions: js.Object,
+    callback: Callback[js.Any]
+  ): EventEmitter = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: WritableStream): js.Promise[js.Any] = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: WritableStream, callback: Callback[js.Any]): EventEmitter = js.native
+  def run(image: String, cmd: js.Array[String], outputStream: WritableStream, createOptions: js.Object): js.Promise[js.Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: WritableStream,
     createOptions: js.Object,
     startOptions: js.Object
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: WritableStream,
     createOptions: js.Object,
     startOptions: js.Object,
-    callback: Callback[_]
+    callback: Callback[js.Any]
   ): EventEmitter = js.native
   def run(
     image: String,
     cmd: js.Array[String],
     outputStream: WritableStream,
+    createOptions: Unit,
+    startOptions: js.Object
+  ): js.Promise[js.Any] = js.native
+  def run(
+    image: String,
+    cmd: js.Array[String],
+    outputStream: WritableStream,
     startOptions: js.Object,
-    callback: Callback[_]
+    callback: Callback[js.Any]
   ): EventEmitter = js.native
   
-  def searchImages(options: js.Object): js.Promise[_] = js.native
-  def searchImages(options: js.Object, callback: Callback[_]): Unit = js.native
+  def searchImages(options: js.Object): js.Promise[js.Any] = js.native
+  def searchImages(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
-  def swarmInit(options: js.Object): js.Promise[_] = js.native
-  def swarmInit(options: js.Object, callback: Callback[_]): Unit = js.native
+  def swarmInit(options: js.Object): js.Promise[js.Any] = js.native
+  def swarmInit(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
-  def swarmInspect(): js.Promise[_] = js.native
-  def swarmInspect(callback: Callback[_]): Unit = js.native
+  def swarmInspect(): js.Promise[js.Any] = js.native
+  def swarmInspect(callback: Callback[js.Any]): Unit = js.native
   
-  def swarmJoin(options: js.Object): js.Promise[_] = js.native
-  def swarmJoin(options: js.Object, callback: Callback[_]): Unit = js.native
+  def swarmJoin(options: js.Object): js.Promise[js.Any] = js.native
+  def swarmJoin(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
-  def swarmLeave(options: js.Object): js.Promise[_] = js.native
-  def swarmLeave(options: js.Object, callback: Callback[_]): Unit = js.native
+  def swarmLeave(options: js.Object): js.Promise[js.Any] = js.native
+  def swarmLeave(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
-  def swarmUpdate(options: js.Object): js.Promise[_] = js.native
-  def swarmUpdate(options: js.Object, callback: Callback[_]): Unit = js.native
+  def swarmUpdate(options: js.Object): js.Promise[js.Any] = js.native
+  def swarmUpdate(options: js.Object, callback: Callback[js.Any]): Unit = js.native
   
   def version(): js.Promise[DockerVersion] = js.native
   def version(callback: Callback[DockerVersion]): Unit = js.native

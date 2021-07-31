@@ -2,17 +2,17 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GearConstraintOptions extends ConstraintOptions {
+trait GearConstraintOptions
+  extends StObject
+     with ConstraintOptions {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var maxTorque: js.UndefOr[Double] = js.native
+  var maxTorque: js.UndefOr[Double] = js.undefined
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
 }
 object GearConstraintOptions {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a controller responsible for turning on or off the phone display based on the readings from the ProximitySensor . */
-@js.native
 trait ProximitySensorDisplayOnOffController extends StObject {
   
   /** Disconnects this ProximitySensorDisplayOnOffController instance from the service and frees all the allocated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
 }
 object ProximitySensorDisplayOnOffController {
   

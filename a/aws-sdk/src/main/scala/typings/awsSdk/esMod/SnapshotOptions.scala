@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptions extends StObject {
   
   /**
     * Specifies the time, in UTC format, when the service takes a daily automated snapshot of the specified Elasticsearch domain. Default value is 0 hours.
     */
-  var AutomatedSnapshotStartHour: js.UndefOr[IntegerClass] = js.native
+  var AutomatedSnapshotStartHour: js.UndefOr[IntegerClass] = js.undefined
 }
 object SnapshotOptions {
   

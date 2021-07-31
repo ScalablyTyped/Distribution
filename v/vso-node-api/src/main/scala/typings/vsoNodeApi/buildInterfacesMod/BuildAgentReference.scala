@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildAgentReference extends StObject {
   
   /**
     * Id of the resource
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Name of the linked resource (definition name, controller name, etc.)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Full http link to the resource
     */
-  var url: String = js.native
+  var url: String
 }
 object BuildAgentReference {
   

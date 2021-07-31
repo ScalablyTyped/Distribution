@@ -10,9 +10,9 @@ A feature-rich Node.js event emitter implementation with namespaces, wildcards, 
 | ------------------ | :-------------: |
 | Full name          | eventemitter2 |
 | Keywords           | event, events, emitter, eventemitter, addEventListener, addListener, pub/sub, emit, emits, on, once, publish, subscribe |
-| # releases         | 11 |
-| # dependents       | 1133 |
-| # downloads        | 134914156 |
+| # releases         | 10 |
+| # dependents       | 1189 |
+| # downloads        | 195183753 |
 | # stars            | 48 |
 
 ## Links

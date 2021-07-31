@@ -5,7 +5,6 @@ import typings.estreeWalker.walkerMod.WalkerBase
 import typings.estreeWalker.walkerMod.WalkerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod {
@@ -25,14 +24,6 @@ object asyncMod {
       parent: BaseNode,
       enter: AsyncWalkerHandler,
       leave: AsyncWalkerHandler,
-      prop: js.UndefOr[scala.Nothing],
-      index: Double
-    ): js.Promise[BaseNode] = js.native
-    def visit(
-      node: BaseNode,
-      parent: BaseNode,
-      enter: AsyncWalkerHandler,
-      leave: AsyncWalkerHandler,
       prop: String
     ): js.Promise[BaseNode] = js.native
     def visit(
@@ -43,14 +34,21 @@ object asyncMod {
       prop: String,
       index: Double
     ): js.Promise[BaseNode] = js.native
+    def visit(
+      node: BaseNode,
+      parent: BaseNode,
+      enter: AsyncWalkerHandler,
+      leave: AsyncWalkerHandler,
+      prop: Unit,
+      index: Double
+    ): js.Promise[BaseNode] = js.native
   }
   
-  @js.native
   trait AsyncWalker extends StObject {
     
-    var enter: js.UndefOr[AsyncWalkerHandler] = js.native
+    var enter: js.UndefOr[AsyncWalkerHandler] = js.undefined
     
-    var leave: js.UndefOr[AsyncWalkerHandler] = js.native
+    var leave: js.UndefOr[AsyncWalkerHandler] = js.undefined
   }
   object AsyncWalker {
     

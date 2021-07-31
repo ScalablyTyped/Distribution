@@ -2,25 +2,23 @@ package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServiceAccountResponseBusinessManager extends StObject {
   
-  var account_insights_unit: InsightsServiceAccountResponseAccountInsightsUnit = js.native
+  var account_insights_unit: InsightsServiceAccountResponseAccountInsightsUnit
   
-  var account_summary_unit: InsightsServiceAccountResponseAccountSummaryUnit = js.native
+  var account_summary_unit: InsightsServiceAccountResponseAccountSummaryUnit
   
-  var followers_unit: InsightsServiceAccountResponseFollowersUnit = js.native
+  var followers_unit: InsightsServiceAccountResponseFollowersUnit
   
-  var promotions_unit: InsightsServiceAccountResponsePromotionsUnit = js.native
+  var promotions_unit: InsightsServiceAccountResponsePromotionsUnit
   
-  var status: InsightsServiceAccountResponseStatus = js.native
+  var status: InsightsServiceAccountResponseStatus
   
-  var stories_unit: InsightsServiceAccountResponseStoriesUnit = js.native
+  var stories_unit: InsightsServiceAccountResponseStoriesUnit
   
-  var top_posts_unit: InsightsServiceAccountResponseTopPostsUnit = js.native
+  var top_posts_unit: InsightsServiceAccountResponseTopPostsUnit
 }
 object InsightsServiceAccountResponseBusinessManager {
   

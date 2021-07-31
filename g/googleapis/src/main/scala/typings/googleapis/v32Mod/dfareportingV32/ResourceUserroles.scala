@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Userroles")
@@ -31,7 +30,7 @@ class ResourceUserroles protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUserrolesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUserrolesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceUserroles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUserRole] = js.native
   def get(callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
   def get(params: ParamsResourceUserrolesGet): GaxiosPromise[SchemaUserRole] = js.native
   def get(params: ParamsResourceUserrolesGet, callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceUserroles protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaUserRole] = js.native
   def insert(callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
   def insert(params: ParamsResourceUserrolesInsert): GaxiosPromise[SchemaUserRole] = js.native
   def insert(params: ParamsResourceUserrolesInsert, callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
   def insert(
@@ -129,7 +128,7 @@ class ResourceUserroles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUserRolesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaUserRolesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRolesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRolesListResponse] = js.native
   def list(params: ParamsResourceUserrolesList): GaxiosPromise[SchemaUserRolesListResponse] = js.native
   def list(params: ParamsResourceUserrolesList, callback: BodyResponseCallback[SchemaUserRolesListResponse]): Unit = js.native
   def list(
@@ -161,7 +160,7 @@ class ResourceUserroles protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaUserRole] = js.native
   def patch(callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
   def patch(params: ParamsResourceUserrolesPatch): GaxiosPromise[SchemaUserRole] = js.native
   def patch(params: ParamsResourceUserrolesPatch, callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
   def patch(
@@ -191,7 +190,7 @@ class ResourceUserroles protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaUserRole] = js.native
   def update(callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRole] = js.native
   def update(params: ParamsResourceUserrolesUpdate): GaxiosPromise[SchemaUserRole] = js.native
   def update(params: ParamsResourceUserrolesUpdate, callback: BodyResponseCallback[SchemaUserRole]): Unit = js.native
   def update(

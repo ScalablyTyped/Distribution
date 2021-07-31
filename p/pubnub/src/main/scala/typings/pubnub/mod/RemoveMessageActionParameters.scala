@@ -2,17 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveMessageActionParameters extends StObject {
   
-  var actionTimetoken: String = js.native
+  var actionTimetoken: String
   
-  var channel: String = js.native
+  var channel: String
   
-  var messageTimetoken: String = js.native
+  var messageTimetoken: String
 }
 object RemoveMessageActionParameters {
   

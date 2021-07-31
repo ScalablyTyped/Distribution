@@ -2,16 +2,14 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateClusterResponse extends StObject {
   
   /**
     * A description of the DAX cluster, after it has been modified.
     */
-  var Cluster: js.UndefOr[typings.awsSdk.daxMod.Cluster] = js.native
+  var Cluster: js.UndefOr[typings.awsSdk.daxMod.Cluster] = js.undefined
 }
 object UpdateClusterResponse {
   

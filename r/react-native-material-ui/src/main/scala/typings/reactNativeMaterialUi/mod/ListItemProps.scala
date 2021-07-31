@@ -7,33 +7,31 @@ import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`3`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.dynamic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemProps extends StObject {
   
-  var centerElement: Element | String | ListItemCenterElement = js.native
+  var centerElement: Element | String | ListItemCenterElement
   
-  var dense: js.UndefOr[Boolean] = js.native
+  var dense: js.UndefOr[Boolean] = js.undefined
   
-  var divider: js.UndefOr[Boolean] = js.native
+  var divider: js.UndefOr[Boolean] = js.undefined
   
-  var leftElement: js.UndefOr[Element | String] = js.native
+  var leftElement: js.UndefOr[Element | String] = js.undefined
   
-  var numberOfLines: js.UndefOr[`1` | `2` | `3` | dynamic] = js.native
+  var numberOfLines: js.UndefOr[`1` | `2` | `3` | dynamic] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPressValue: js.UndefOr[js.Any] = js.native
+  var onPressValue: js.UndefOr[js.Any] = js.undefined
   
-  var onRightElementPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRightElementPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var rightElement: js.UndefOr[Element | String] = js.native
+  var rightElement: js.UndefOr[Element | String] = js.undefined
   
-  var style: js.UndefOr[ListItemStyle] = js.native
+  var style: js.UndefOr[ListItemStyle] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object ListItemProps {
   

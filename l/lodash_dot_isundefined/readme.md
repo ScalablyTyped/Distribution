@@ -11,8 +11,8 @@ The modern build of lodash’s `_.isUndefined` as a module.
 | Full name          | lodash.isundefined |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
 | # releases         | 0 |
-| # dependents       | 211 |
-| # downloads        | 12146342 |
+| # dependents       | 217 |
+| # downloads        | 20126844 |
 | # stars            | 1 |
 
 ## Links

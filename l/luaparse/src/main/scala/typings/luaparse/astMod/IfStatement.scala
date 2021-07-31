@@ -2,25 +2,21 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.IfStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.IfStatement]
+     with _Statement {
   
-  var clauses: js.Array[IfClause | ElseifClause | ElseClause] = js.native
+  var clauses: js.Array[IfClause | ElseifClause | ElseClause]
 }
 object IfStatement {
   
   @scala.inline
-  def apply(
-    clauses: js.Array[IfClause | ElseifClause | ElseClause],
-    `type`: typings.luaparse.luaparseStrings.IfStatement
-  ): IfStatement = {
+  def apply(clauses: js.Array[IfClause | ElseifClause | ElseClause]): IfStatement = {
     val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement]
   }
   

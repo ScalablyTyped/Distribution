@@ -2,16 +2,14 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherFilterResult extends StObject {
   
   /**
     * This is the set of appplications that matched the query filter supplied.
     */
-  var publishers: js.Array[Publisher] = js.native
+  var publishers: js.Array[Publisher]
 }
 object PublisherFilterResult {
   

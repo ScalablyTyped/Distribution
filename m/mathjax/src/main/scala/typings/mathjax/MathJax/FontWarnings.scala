@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWarnings extends StObject {
   
   /*This object defines HTML snippets that are common to more than one message in the Message section above. They
@@ -14,7 +12,7 @@ trait FontWarnings extends StObject {
     * You can add your own pre-defined HTML snippets to this object, or override the ones that are there with your
     * own text.
     */
-  var HTML: js.UndefOr[HTMLSnippets] = js.native
+  var HTML: js.UndefOr[HTMLSnippets] = js.undefined
   
   /*This block contains HTML snippets to be used for the various messages that the FontWarning extension can
     * produce.
@@ -24,26 +22,26 @@ trait FontWarnings extends StObject {
     * below in the HTML block, and are referenced using ["name"] within the snippet, where name is the name of one
     * of the snippets defined in the HTML configuration block
     */
-  var Message: js.UndefOr[HTMLMessages] = js.native
+  var Message: js.UndefOr[HTMLMessages] = js.undefined
   
   /*This is the number of steps to take while fading out the FontWarning message. More steps make for a smoother
     * fade-out. Set to zero to cause the message to be removed without fading.
     */
-  var fadeoutSteps: js.UndefOr[Double] = js.native
+  var fadeoutSteps: js.UndefOr[Double] = js.undefined
   
   /*This is the time used to perform the fade-out, in milliseconds. The default is 1.5 seconds.*/
-  var fadeoutTime: js.UndefOr[Double] = js.native
+  var fadeoutTime: js.UndefOr[Double] = js.undefined
   
   /*This sets the CSS styles to be used for the font warning message window. See the extensions/FontWarnings.js
     * file for details of what are set by default. See the CSS style objects for details about how to specify CSS
     * styles via javascript objects.
     */
-  var messageStyle: js.UndefOr[js.Any] = js.native
+  var messageStyle: js.UndefOr[js.Any] = js.undefined
   
   /*This is the amount of time to show the FontWarning message, in milliseconds. The default is 12 seconds.
     * Setting this value to zero means that the message will not fade out (the user must close it manually).
     */
-  var removeAfter: js.UndefOr[Double] = js.native
+  var removeAfter: js.UndefOr[Double] = js.undefined
 }
 object FontWarnings {
   

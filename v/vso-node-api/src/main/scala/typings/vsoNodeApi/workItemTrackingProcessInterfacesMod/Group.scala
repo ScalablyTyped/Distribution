@@ -2,61 +2,59 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /**
     * Contribution for the group.
     */
-  var contribution: WitContribution = js.native
+  var contribution: WitContribution
   
   /**
     * Controls to be put in the group.
     */
-  var controls: js.Array[Control] = js.native
+  var controls: js.Array[Control]
   
   /**
     * The height for the contribution.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The id for the layout node.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value indicating whether this layout node has been inherited from a parent layout.  This is expected to only be only set by the combiner.
     */
-  var inherited: Boolean = js.native
+  var inherited: Boolean
   
   /**
     * A value indicating if the layout node is contribution are not.
     */
-  var isContribution: Boolean = js.native
+  var isContribution: Boolean
   
   /**
     * Label for the group.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Order in which the group should appear in the section.
     */
-  var order: Double = js.native
+  var order: Double
   
   /**
     * A value indicating whether this layout node has been overridden by a child layout.
     */
-  var overridden: Boolean = js.native
+  var overridden: Boolean
   
   /**
     * A value indicating if the group should be hidden or not.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object Group {
   

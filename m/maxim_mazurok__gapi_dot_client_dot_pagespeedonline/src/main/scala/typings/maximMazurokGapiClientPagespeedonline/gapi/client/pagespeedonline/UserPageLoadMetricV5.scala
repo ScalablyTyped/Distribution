@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPageLoadMetricV5 extends StObject {
   
   /** The category of the specific time metric. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** Metric distributions. Proportions should sum up to 1. */
-  var distributions: js.UndefOr[js.Array[Bucket]] = js.native
+  var distributions: js.UndefOr[js.Array[Bucket]] = js.undefined
   
   /** Identifies the form factor of the metric being collected. */
-  var formFactor: js.UndefOr[String] = js.native
+  var formFactor: js.UndefOr[String] = js.undefined
   
   /** The median number of the metric, in millisecond. */
-  var median: js.UndefOr[Double] = js.native
+  var median: js.UndefOr[Double] = js.undefined
   
   /** Identifies the type of the metric. */
-  var metricId: js.UndefOr[String] = js.native
+  var metricId: js.UndefOr[String] = js.undefined
   
   /** We use this field to store certain percentile value for this metric. For v4, this field contains pc50. For v5, this field contains pc90. */
-  var percentile: js.UndefOr[Double] = js.native
+  var percentile: js.UndefOr[Double] = js.undefined
 }
 object UserPageLoadMetricV5 {
   

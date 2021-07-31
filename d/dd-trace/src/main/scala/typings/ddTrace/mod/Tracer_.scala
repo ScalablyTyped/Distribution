@@ -57,7 +57,6 @@ import typings.opentracing.tracerMod.SpanOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -122,13 +121,13 @@ trait Tracer_ extends Tracer {
     name: String,
     fn: js.Function2[
       /* span */ js.UndefOr[Span], 
-      /* fn */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], _]], 
+      /* fn */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], js.Any]], 
       T
     ]
   ): T = js.native
   def trace[T](
     name: String,
-    options: TraceOptions with SpanOptions,
+    options: TraceOptions & SpanOptions,
     fn: js.Function2[
       /* span */ js.UndefOr[Span], 
       /* done */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], String]], 
@@ -422,6 +421,6 @@ trait Tracer_ extends Tracer {
     */
   def wrap[T](name: String, fn: T): T = js.native
   def wrap[T](name: String, fn: T, requiresParent: Boolean): T = js.native
-  def wrap[T](name: String, options: TraceOptions with SpanOptions, fn: T): T = js.native
-  def wrap[T](name: String, options: js.Function1[/* repeated */ js.Any, TraceOptions with SpanOptions], fn: T): T = js.native
+  def wrap[T](name: String, options: TraceOptions & SpanOptions, fn: T): T = js.native
+  def wrap[T](name: String, options: js.Function1[/* repeated */ js.Any, TraceOptions & SpanOptions], fn: T): T = js.native
 }

@@ -4,13 +4,13 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XTarget extends XInterface {
+trait XTarget
+  extends StObject
+     with XInterface {
   
-  def addDrawElement(): Unit = js.native
+  def addDrawElement(): Unit
 }
 object XTarget {
   

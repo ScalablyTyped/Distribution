@@ -10,9 +10,9 @@ Cordova Device Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-device |
 | Keywords           | cordova, device, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-browser, cordova-osx |
-| # releases         | 2 |
-| # dependents       | 100 |
-| # downloads        | 3334620 |
+| # releases         | 1 |
+| # dependents       | 103 |
+| # downloads        | 3379668 |
 | # stars            | 33 |
 
 ## Links

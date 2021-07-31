@@ -3,18 +3,16 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/Panel/Panel.base.IPanelState> */
-@js.native
 trait PartialIPanelState extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isFooterSticky: js.UndefOr[Boolean] = js.native
+  var isFooterSticky: js.UndefOr[Boolean] = js.undefined
   
-  var visibility: js.UndefOr[PanelVisibilityState] = js.native
+  var visibility: js.UndefOr[PanelVisibilityState] = js.undefined
 }
 object PartialIPanelState {
   

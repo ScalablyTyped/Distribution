@@ -5,21 +5,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanAddToArray extends StObject {
   
-  def canAddToArray(array: js.Array[Bip32Derivation], item: Bip32Derivation, dupeSet: Set[String]): Boolean = js.native
+  def canAddToArray(array: js.Array[Bip32Derivation], item: Bip32Derivation, dupeSet: Set[String]): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean
   
-  def decode(keyVal: KeyValue): Bip32Derivation = js.native
+  def decode(keyVal: KeyValue): Bip32Derivation
   
-  def encode(data: Bip32Derivation): KeyValue = js.native
+  def encode(data: Bip32Derivation): KeyValue
   
-  var expected: String = js.native
+  var expected: String
 }
 object CanAddToArray {
   

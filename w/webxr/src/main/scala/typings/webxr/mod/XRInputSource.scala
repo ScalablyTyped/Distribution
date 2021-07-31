@@ -3,25 +3,23 @@ package typings.webxr.mod
 import typings.std.Gamepad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRInputSource extends StObject {
   
-  val gamepad: js.UndefOr[Gamepad] = js.native
+  val gamepad: js.UndefOr[Gamepad] = js.undefined
   
-  val gripSpace: js.UndefOr[XRSpace] = js.native
+  val gripSpace: js.UndefOr[XRSpace] = js.undefined
   
-  val hand: js.UndefOr[XRHand] = js.native
+  val hand: js.UndefOr[XRHand] = js.undefined
   
-  val handedness: XRHandedness = js.native
+  val handedness: XRHandedness
   
-  val profiles: js.Array[String] = js.native
+  val profiles: js.Array[String]
   
-  val targetRayMode: XRTargetRayMode = js.native
+  val targetRayMode: XRTargetRayMode
   
-  val targetRaySpace: XRSpace = js.native
+  val targetRaySpace: XRSpace
 }
 object XRInputSource {
   

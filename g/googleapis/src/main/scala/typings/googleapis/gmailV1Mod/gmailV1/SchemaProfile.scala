@@ -2,34 +2,32 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Profile for a Gmail user.
   */
-@js.native
 trait SchemaProfile extends StObject {
   
   /**
     * The user&#39;s email address.
     */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the mailbox&#39;s current history record.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of messages in the mailbox.
     */
-  var messagesTotal: js.UndefOr[Double] = js.native
+  var messagesTotal: js.UndefOr[Double] = js.undefined
   
   /**
     * The total number of threads in the mailbox.
     */
-  var threadsTotal: js.UndefOr[Double] = js.native
+  var threadsTotal: js.UndefOr[Double] = js.undefined
 }
 object SchemaProfile {
   

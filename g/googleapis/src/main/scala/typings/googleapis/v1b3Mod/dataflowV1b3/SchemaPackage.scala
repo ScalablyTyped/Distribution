@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * dependencies (libraries, data files, etc.) required in order for that code
   * to run.
   */
-@js.native
 trait SchemaPackage extends StObject {
   
   /**
@@ -22,12 +20,12 @@ trait SchemaPackage extends StObject {
     * Google Cloud Storage:    storage.googleapis.com/{bucket}
     * bucket.storage.googleapis.com/
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the package.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaPackage {
   

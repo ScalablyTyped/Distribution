@@ -30,7 +30,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,37 +39,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ChartDataRowProperties} for the properties of whole data rows.
   * @see ChartDataRowProperties
   */
-@js.native
 trait ChartDataPointProperties
-  extends Chart3DBarProperties
+  extends StObject
      with FillProperties
      with LineProperties
      with CharacterProperties
-     with UserDefinedAttributesSupplier {
+     with UserDefinedAttributesSupplier
+     with Chart3DBarProperties {
   
   /**
     * specifies how the captions of data points are displayed.
     * @see ChartDataCaption
     */
-  var DataCaption: Double = js.native
+  var DataCaption: Double
   
   /**
     * specifies a relative position for the data label
     * @see DataLabelPlacement
     */
-  var LabelPlacement: Double = js.native
+  var LabelPlacement: Double
   
   /** specifies a string that is used to separate the parts of a data label (caption) */
-  var LabelSeparator: String = js.native
+  var LabelSeparator: String
   
   /** specifies a number format for the display of the value in the data label */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
   
   /** specifies a number format for the display of the percentage value in the data label */
-  var PercentageNumberFormat: Double = js.native
+  var PercentageNumberFormat: Double
   
   /** the offset by which pie segments in a {@link PieDiagram} are dragged outside from the center. This value is given in percent of the radius. */
-  var SegmentOffset: Double = js.native
+  var SegmentOffset: Double
   
   /**
     * In charts that support symbols, you can set this property to any valid URL that points to a graphic file. This graphic is then used as symbol for each
@@ -79,19 +78,19 @@ trait ChartDataPointProperties
     * When you query this value you get an internal URL of the embedded graphic.
     * @see ChartSymbolType
     */
-  var SymbolBitmapURL: String = js.native
+  var SymbolBitmapURL: String
   
   /**
     * specifies the type of symbols if the current chart type supports the usage of symbols.
     * @see ChartSymbolType
     */
-  var SymbolType: Double = js.native
+  var SymbolType: Double
   
   /**
     * specifies if the text of a data label (caption) must be wrapped
     * @since LibreOffice 5.1
     */
-  var TextWordWrap: Boolean = js.native
+  var TextWordWrap: Boolean
 }
 object ChartDataPointProperties {
   

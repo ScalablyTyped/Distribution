@@ -9,7 +9,6 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.promiseRejection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

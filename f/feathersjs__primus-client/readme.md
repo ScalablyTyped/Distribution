@@ -10,9 +10,9 @@ Client services for Primus and feathers-primus
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/primus-client |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 37 |
+| # releases         | 35 |
 | # dependents       | 2 |
-| # downloads        | 20408 |
+| # downloads        | 22032 |
 | # stars            | 0 |
 
 ## Links

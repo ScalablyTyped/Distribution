@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesConnectionsList extends StandardParameters {
+trait ParamsResourceServicesConnectionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The name of service consumer's VPC network that's connected with service
@@ -25,7 +25,7 @@ trait ParamsResourceServicesConnectionsList extends StandardParameters {
     * service consumer's VPC network. {network} is the name of the service
     * consumer's VPC network.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * The service that is managing peering connectivity for a service
@@ -34,7 +34,7 @@ trait ParamsResourceServicesConnectionsList extends StandardParameters {
     * If you specify `-` as the parameter value, all configured public peering
     * services are listed.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceServicesConnectionsList {
   

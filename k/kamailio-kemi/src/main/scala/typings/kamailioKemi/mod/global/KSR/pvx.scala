@@ -2,44 +2,38 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pvx {
   
-  @JSGlobal("KSR.pvx.evalx")
+  @JSGlobal("KSR.pvx")
   @js.native
-  def evalx(dst: String, fmt: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.pvx.pv_var_to_xavp")
-  @js.native
-  def pvVarToXavp(varname: String, xname: String): Double = js.native
+  @scala.inline
+  def evalx(dst: String, fmt: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("evalx")(dst.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.pv_xavp_print")
-  @js.native
-  def pvXavpPrint(): Double = js.native
+  @scala.inline
+  def pvVarToXavp(varname: String, xname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pv_var_to_xavp")(varname.asInstanceOf[js.Any], xname.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.pv_xavp_to_var")
-  @js.native
-  def pvXavpToVar(xname: String): Double = js.native
+  @scala.inline
+  def pvXavpPrint(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pv_xavp_print")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.sbranch_append")
-  @js.native
-  def sbranchAppend(): Double = js.native
+  @scala.inline
+  def pvXavpToVar(xname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pv_xavp_to_var")(xname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.sbranch_reset")
-  @js.native
-  def sbranchReset(): Double = js.native
+  @scala.inline
+  def sbranchAppend(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sbranch_append")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.sbranch_set_ruri")
-  @js.native
-  def sbranchSetRuri(): Double = js.native
+  @scala.inline
+  def sbranchReset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sbranch_reset")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.xavp_params_explode")
-  @js.native
-  def xavpParamsExplode(sparams: String, sxname: String): Double = js.native
+  @scala.inline
+  def sbranchSetRuri(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sbranch_set_ruri")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.pvx.xavp_params_implode")
-  @js.native
-  def xavpParamsImplode(sxname: String, svname: String): Double = js.native
+  @scala.inline
+  def xavpParamsExplode(sparams: String, sxname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xavp_params_explode")(sparams.asInstanceOf[js.Any], sxname.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def xavpParamsImplode(sxname: String, svname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xavp_params_implode")(sxname.asInstanceOf[js.Any], svname.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

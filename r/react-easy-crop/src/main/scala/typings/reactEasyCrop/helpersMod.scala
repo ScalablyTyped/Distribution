@@ -8,34 +8,22 @@ import typings.reactEasyCrop.typesMod.Point
 import typings.reactEasyCrop.typesMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("react-easy-crop/helpers", "classNames")
+  @JSImport("react-easy-crop/helpers", JSImport.Namespace)
   @js.native
-  def classNames(args: (js.UndefOr[Boolean | String | Double | Unit | Null])*): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-easy-crop/helpers", "computeCroppedArea")
-  @js.native
-  def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double): CroppedAreaPercentages = js.native
-  @JSImport("react-easy-crop/helpers", "computeCroppedArea")
-  @js.native
-  def computeCroppedArea(
-    crop: Point,
-    mediaSize: MediaSize,
-    cropSize: Size,
-    aspect: Double,
-    zoom: Double,
-    rotation: js.UndefOr[scala.Nothing],
-    restrictPosition: Boolean
-  ): CroppedAreaPercentages = js.native
-  @JSImport("react-easy-crop/helpers", "computeCroppedArea")
-  @js.native
-  def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double, rotation: Double): CroppedAreaPercentages = js.native
-  @JSImport("react-easy-crop/helpers", "computeCroppedArea")
-  @js.native
+  @scala.inline
+  def classNames(args: (js.UndefOr[Boolean | String | Double | Unit | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
+  @scala.inline
+  def computeCroppedArea(crop: Point, mediaSize: MediaSize, cropSize: Size, aspect: Double, zoom: Double, rotation: Double): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
+  @scala.inline
   def computeCroppedArea(
     crop: Point,
     mediaSize: MediaSize,
@@ -44,23 +32,30 @@ object helpersMod {
     zoom: Double,
     rotation: Double,
     restrictPosition: Boolean
-  ): CroppedAreaPercentages = js.native
+  ): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], restrictPosition.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
+  @scala.inline
+  def computeCroppedArea(
+    crop: Point,
+    mediaSize: MediaSize,
+    cropSize: Size,
+    aspect: Double,
+    zoom: Double,
+    rotation: Unit,
+    restrictPosition: Boolean
+  ): CroppedAreaPercentages = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCroppedArea")(crop.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], restrictPosition.asInstanceOf[js.Any])).asInstanceOf[CroppedAreaPercentages]
   
-  @JSImport("react-easy-crop/helpers", "getCenter")
-  @js.native
-  def getCenter(a: Point, b: Point): Point = js.native
+  @scala.inline
+  def getCenter(a: Point, b: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getCenter")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("react-easy-crop/helpers", "getCropSize")
-  @js.native
+  @scala.inline
   def getCropSize(
     mediaWidth: Double,
     mediaHeight: Double,
     containerWidth: Double,
     containerHeight: Double,
     aspect: Double
-  ): Size = js.native
-  @JSImport("react-easy-crop/helpers", "getCropSize")
-  @js.native
+  ): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getCropSize")(mediaWidth.asInstanceOf[js.Any], mediaHeight.asInstanceOf[js.Any], containerWidth.asInstanceOf[js.Any], containerHeight.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any])).asInstanceOf[Size]
+  @scala.inline
   def getCropSize(
     mediaWidth: Double,
     mediaHeight: Double,
@@ -68,35 +63,27 @@ object helpersMod {
     containerHeight: Double,
     aspect: Double,
     rotation: Double
-  ): Size = js.native
+  ): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getCropSize")(mediaWidth.asInstanceOf[js.Any], mediaHeight.asInstanceOf[js.Any], containerWidth.asInstanceOf[js.Any], containerHeight.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Size]
   
-  @JSImport("react-easy-crop/helpers", "getDistanceBetweenPoints")
-  @js.native
-  def getDistanceBetweenPoints(pointA: Point, pointB: Point): Double = js.native
+  @scala.inline
+  def getDistanceBetweenPoints(pointA: Point, pointB: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-easy-crop/helpers", "getInitialCropFromCroppedAreaPixels")
-  @js.native
-  def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize): Crop = js.native
-  @JSImport("react-easy-crop/helpers", "getInitialCropFromCroppedAreaPixels")
-  @js.native
-  def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize, cropSize: Size): Crop = js.native
+  @scala.inline
+  def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialCropFromCroppedAreaPixels")(croppedAreaPixels.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any])).asInstanceOf[Crop]
+  @scala.inline
+  def getInitialCropFromCroppedAreaPixels(croppedAreaPixels: Area, mediaSize: MediaSize, cropSize: Size): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialCropFromCroppedAreaPixels")(croppedAreaPixels.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any])).asInstanceOf[Crop]
   
-  @JSImport("react-easy-crop/helpers", "getRotationBetweenPoints")
-  @js.native
-  def getRotationBetweenPoints(pointA: Point, pointB: Point): Double = js.native
+  @scala.inline
+  def getRotationBetweenPoints(pointA: Point, pointB: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRotationBetweenPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-easy-crop/helpers", "restrictPosition")
-  @js.native
-  def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double): Point = js.native
-  @JSImport("react-easy-crop/helpers", "restrictPosition")
-  @js.native
-  def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double, rotation: Double): Point = js.native
+  @scala.inline
+  def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictPosition")(position.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[Point]
+  @scala.inline
+  def restrictPosition(position: Point, mediaSize: Size, cropSize: Size, zoom: Double, rotation: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictPosition")(position.asInstanceOf[js.Any], mediaSize.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("react-easy-crop/helpers", "rotateAroundMidPoint")
-  @js.native
-  def rotateAroundMidPoint(x: Double, y: Double, xMid: Double, yMid: Double, degrees: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def rotateAroundMidPoint(x: Double, y: Double, xMid: Double, yMid: Double, degrees: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAroundMidPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xMid.asInstanceOf[js.Any], yMid.asInstanceOf[js.Any], degrees.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("react-easy-crop/helpers", "translateSize")
-  @js.native
-  def translateSize(width: Double, height: Double, rotation: Double): Size = js.native
+  @scala.inline
+  def translateSize(width: Double, height: Double, rotation: Double): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("translateSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Size]
 }

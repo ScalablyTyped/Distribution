@@ -16,22 +16,20 @@ import typings.sanctuary.mod.Profunctor
 import typings.sanctuary.mod.StrMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CheckTypes extends StObject {
     
-    var checkTypes: Boolean = js.native
+    var checkTypes: Boolean
     
-    var env: js.Array[_] = js.native
+    var env: js.Array[js.Any]
   }
   object CheckTypes {
     
     @scala.inline
-    def apply(checkTypes: Boolean, env: js.Array[_]): CheckTypes = {
+    def apply(checkTypes: Boolean, env: js.Array[js.Any]): CheckTypes = {
       val __obj = js.Dynamic.literal(checkTypes = checkTypes.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckTypes]
     }
@@ -43,7 +41,7 @@ object anon {
       def setCheckTypes(value: Boolean): Self = StObject.set(x, "checkTypes", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEnv(value: js.Array[_]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      def setEnv(value: js.Array[js.Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnvVarargs(value: js.Any*): Self = StObject.set(x, "env", js.Array(value :_*))
@@ -122,14 +120,13 @@ object anon {
     def apply(xs: Applicative[A]): Applicative[A] = js.native
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: Maybe[String] = js.native
+    var namespace: Maybe[String]
     
-    var version: NonNegativeInteger = js.native
+    var version: NonNegativeInteger
   }
   object Name {
     

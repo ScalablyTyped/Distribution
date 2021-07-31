@@ -2,22 +2,20 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A route to either a path or a model, and the absolute offset of it.
   */
-@js.native
 trait IRouteOffset extends StObject {
   
-  var layer: String = js.native
+  var layer: String
   
-  var offset: IPoint = js.native
+  var offset: IPoint
   
-  var route: js.Array[String] = js.native
+  var route: js.Array[String]
   
-  var routeKey: String = js.native
+  var routeKey: String
 }
 object IRouteOffset {
   

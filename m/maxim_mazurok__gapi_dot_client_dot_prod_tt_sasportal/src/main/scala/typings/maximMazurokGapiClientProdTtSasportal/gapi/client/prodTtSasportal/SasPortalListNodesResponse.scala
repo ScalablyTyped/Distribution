@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalListNodesResponse extends StObject {
   
   /**
     * A pagination token returned from a previous call to ListNodes method that indicates from where listing should continue. If the field is missing or empty, it means there is no more
     * nodes.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The nodes that match the request. */
-  var nodes: js.UndefOr[js.Array[SasPortalNode]] = js.native
+  var nodes: js.UndefOr[js.Array[SasPortalNode]] = js.undefined
 }
 object SasPortalListNodesResponse {
   

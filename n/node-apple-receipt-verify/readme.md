@@ -10,12 +10,15 @@ A Node.js module for Apple In-App-Purchase receipt validation for iOS
 | ------------------ | :-------------: |
 | Full name          | node-apple-receipt-verify |
 | Keywords           | purchase, receipt, apple, inapp, ios receipt, inapppurchase, in-app-purchase, apple receipt |
-| # releases         | 12 |
+| # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 33038 |
+| # downloads        | 41474 |
 | # stars            | 1 |
 
 ## Links
+- [Homepage](https://github.com/ladeiko/node-apple-receipt-verify)
+- [Bugs](https://github.com/ladeiko/node-apple-receipt-verify/issues)
+- [Repository](https://github.com/ladeiko/node-apple-receipt-verify)
 - [Npm](https://www.npmjs.com/package/node-apple-receipt-verify)
     
 

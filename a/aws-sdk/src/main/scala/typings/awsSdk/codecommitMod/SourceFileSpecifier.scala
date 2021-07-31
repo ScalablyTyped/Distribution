@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceFileSpecifier extends StObject {
   
   /**
     * The full path to the file, including the name of the file.
     */
-  var filePath: Path = js.native
+  var filePath: Path
   
   /**
     * Whether to remove the source file from the parent commit.
     */
-  var isMove: js.UndefOr[IsMove] = js.native
+  var isMove: js.UndefOr[IsMove] = js.undefined
 }
 object SourceFileSpecifier {
   

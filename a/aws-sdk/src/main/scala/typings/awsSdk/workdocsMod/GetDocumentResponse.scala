@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentResponse extends StObject {
   
   /**
     * The custom metadata on the document.
     */
-  var CustomMetadata: js.UndefOr[CustomMetadataMap] = js.native
+  var CustomMetadata: js.UndefOr[CustomMetadataMap] = js.undefined
   
   /**
     * The metadata details of the document.
     */
-  var Metadata: js.UndefOr[DocumentMetadata] = js.native
+  var Metadata: js.UndefOr[DocumentMetadata] = js.undefined
 }
 object GetDocumentResponse {
   

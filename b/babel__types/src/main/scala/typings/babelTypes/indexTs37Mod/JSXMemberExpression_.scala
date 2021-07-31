@@ -3,33 +3,28 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.JSXMemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait JSXMemberExpression_
-  extends JSX
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait JSXMemberExpression_
+  extends StObject
+     with BaseNode
+     with JSX {
   
-  var `object`: JSXMemberExpression_ | JSXIdentifier_ = js.native
+  var `object`: JSXMemberExpression_ | JSXIdentifier_
   
-  var property: JSXIdentifier_ = js.native
+  var property: JSXIdentifier_
   
   @JSName("type")
-  var type_JSXMemberExpression_ : JSXMemberExpression = js.native
+  var type_JSXMemberExpression_ : JSXMemberExpression
 }
 object JSXMemberExpression_ {
   
   @scala.inline
-  def apply(
-    `object`: JSXMemberExpression_ | JSXIdentifier_,
-    property: JSXIdentifier_,
-    `type`: JSXMemberExpression
-  ): JSXMemberExpression_ = {
-    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
+  def apply(`object`: JSXMemberExpression_ | JSXIdentifier_, property: JSXIdentifier_): JSXMemberExpression_ = {
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXMemberExpression")
     __obj.asInstanceOf[JSXMemberExpression_]
   }
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The implementation stores the data as long as marks exists and later writes these data into the output stream, that has been set previously at the
   * {@link XActiveDataSource} interface.
   */
-@js.native
 trait MarkableOutputStream
-  extends XOutputStream
+  extends StObject
+     with XOutputStream
      with XMarkableStream
      with XActiveDataSource
      with XConnectable

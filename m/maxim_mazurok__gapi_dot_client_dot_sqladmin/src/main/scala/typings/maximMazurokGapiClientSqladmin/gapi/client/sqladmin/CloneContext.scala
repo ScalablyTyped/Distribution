@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloneContext extends StObject {
   
   /**
     * Binary log coordinates, if specified, identify the position up to which the source instance is cloned. If not specified, the source instance is cloned up to the most recent binary
     * log coordinates.
     */
-  var binLogCoordinates: js.UndefOr[BinLogCoordinates] = js.native
+  var binLogCoordinates: js.UndefOr[BinLogCoordinates] = js.undefined
   
   /** Name of the Cloud SQL instance to be created as a clone. */
-  var destinationInstanceName: js.UndefOr[String] = js.native
+  var destinationInstanceName: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#cloneContext*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Reserved for future use. */
-  var pitrTimestampMs: js.UndefOr[String] = js.native
+  var pitrTimestampMs: js.UndefOr[String] = js.undefined
   
   /** Reserved for future use. */
-  var pointInTime: js.UndefOr[String] = js.native
+  var pointInTime: js.UndefOr[String] = js.undefined
 }
 object CloneContext {
   

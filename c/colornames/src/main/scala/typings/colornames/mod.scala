@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.colornames.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,28 +12,27 @@ object mod extends Shortcut {
   @js.native
   val ^ : GlobalResolver = js.native
   
-  @js.native
   trait Color extends StObject {
     
     /**
       * Gets a value indicating whether the color is a valid `CSS`-color.
       */
-    var css: js.UndefOr[Boolean] = js.native
+    var css: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Gets the name of the color.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Gets the value of the color.
       */
-    var value: String = js.native
+    var value: String
     
     /**
       * Gets a value indicating whether the color is a valid `VGA`-color.
       */
-    var vga: js.UndefOr[Boolean] = js.native
+    var vga: js.UndefOr[Boolean] = js.undefined
   }
   object Color {
     

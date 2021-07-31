@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cellMod extends Shortcut {
@@ -15,26 +14,25 @@ object cellMod extends Shortcut {
   @js.native
   val default: FC[CellProps] = js.native
   
-  @js.native
   trait CellProps extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colon: js.UndefOr[Boolean] = js.native
+    var colon: js.UndefOr[Boolean] = js.undefined
     
-    var component: String = js.native
+    var component: String
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var itemPrefixCls: String = js.native
+    var itemPrefixCls: String
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var span: Double = js.native
+    var span: Double
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CellProps {
     

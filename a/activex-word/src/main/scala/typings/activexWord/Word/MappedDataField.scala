@@ -2,30 +2,28 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappedDataField extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DataFieldIndex: Double = js.native
+  var DataFieldIndex: Double
   
-  val DataFieldName: String = js.native
+  val DataFieldName: String
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Value: String = js.native
+  val Value: String
   
   @JSName("Word.MappedDataField_typekey")
-  var WordDotMappedDataField_typekey: MappedDataField = js.native
+  var WordDotMappedDataField_typekey: MappedDataField
 }
 object MappedDataField {
   

@@ -2,13 +2,11 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Managedschema extends StObject {
   
-  var managed_schema: String = js.native
+  var managed_schema: String
 }
 object Managedschema {
   

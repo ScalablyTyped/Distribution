@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseInItem extends StObject {
   
-  var duration_in_video_in_sec: Null = js.native
+  var duration_in_video_in_sec: Null
   
-  var position: js.Array[Double | String] = js.native
+  var position: js.Array[Double | String]
   
-  var start_time_in_video_in_sec: Null = js.native
+  var start_time_in_video_in_sec: Null
   
-  var user: TimelineFeedResponseUser = js.native
+  var user: TimelineFeedResponseUser
 }
 object TimelineFeedResponseInItem {
   

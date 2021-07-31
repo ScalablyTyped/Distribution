@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.services
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -112,7 +111,7 @@ trait ITreeService extends StObject {
     * @param {string} args.section Section alias
     * @param {string} args.cacheKey Optional cachekey
     */
-  def getTree(args: ITreeArgs): IPromise[_] = js.native
+  def getTree(args: ITreeArgs): IPromise[js.Any] = js.native
   
   /**
     * @ngdoc method
@@ -165,7 +164,7 @@ trait ITreeService extends StObject {
     * @param {object} args.node The tree node
     * @param {object} args.section The current section
     */
-  def loadNodeChildren(args: INodeArgs): IPromise[_] = js.native
+  def loadNodeChildren(args: INodeArgs): IPromise[js.Any] = js.native
   
   /**
     * @ngdoc method

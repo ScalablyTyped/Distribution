@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,9 +64,9 @@ trait PlusVideo extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def createLivePusher(): PlusVideoLivePusher = js.native
-  def createLivePusher(id: js.UndefOr[scala.Nothing], styles: PlusVideoLivePusherStyles): PlusVideoLivePusher = js.native
   def createLivePusher(id: String): PlusVideoLivePusher = js.native
   def createLivePusher(id: String, styles: PlusVideoLivePusherStyles): PlusVideoLivePusher = js.native
+  def createLivePusher(id: Unit, styles: PlusVideoLivePusherStyles): PlusVideoLivePusher = js.native
   
   /**
     * 创建VideoPlayer对象
@@ -77,9 +76,9 @@ trait PlusVideo extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def createVideoPlayer(): PlusVideoVideoPlayer = js.native
-  def createVideoPlayer(id: js.UndefOr[scala.Nothing], styles: PlusVideoVideoPlayerStyles): PlusVideoVideoPlayer = js.native
   def createVideoPlayer(id: String): PlusVideoVideoPlayer = js.native
   def createVideoPlayer(id: String, styles: PlusVideoVideoPlayerStyles): PlusVideoVideoPlayer = js.native
+  def createVideoPlayer(id: Unit, styles: PlusVideoVideoPlayerStyles): PlusVideoVideoPlayer = js.native
   
   /**
     * 查找已经创建的LivePusher对象

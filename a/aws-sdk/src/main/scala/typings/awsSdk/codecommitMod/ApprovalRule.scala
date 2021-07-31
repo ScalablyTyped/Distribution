@@ -2,51 +2,49 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalRule extends StObject {
   
   /**
     * The content of the approval rule.
     */
-  var approvalRuleContent: js.UndefOr[ApprovalRuleContent] = js.native
+  var approvalRuleContent: js.UndefOr[ApprovalRuleContent] = js.undefined
   
   /**
     * The system-generated ID of the approval rule.
     */
-  var approvalRuleId: js.UndefOr[ApprovalRuleId] = js.native
+  var approvalRuleId: js.UndefOr[ApprovalRuleId] = js.undefined
   
   /**
     * The name of the approval rule.
     */
-  var approvalRuleName: js.UndefOr[ApprovalRuleName] = js.native
+  var approvalRuleName: js.UndefOr[ApprovalRuleName] = js.undefined
   
   /**
     * The date the approval rule was created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The date the approval rule was most recently changed, in timestamp format.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.native
+  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user who made the most recent changes to the approval rule.
     */
-  var lastModifiedUser: js.UndefOr[Arn] = js.native
+  var lastModifiedUser: js.UndefOr[Arn] = js.undefined
   
   /**
     * The approval rule template used to create the rule.
     */
-  var originApprovalRuleTemplate: js.UndefOr[OriginApprovalRuleTemplate] = js.native
+  var originApprovalRuleTemplate: js.UndefOr[OriginApprovalRuleTemplate] = js.undefined
   
   /**
     * The SHA-256 hash signature for the content of the approval rule.
     */
-  var ruleContentSha256: js.UndefOr[RuleContentSha256] = js.native
+  var ruleContentSha256: js.UndefOr[RuleContentSha256] = js.undefined
 }
 object ApprovalRule {
   

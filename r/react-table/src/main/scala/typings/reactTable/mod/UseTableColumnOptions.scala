@@ -2,21 +2,19 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseTableColumnOptions[D /* <: js.Object */] extends StObject {
   
-  var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.native
+  var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.undefined
   
-  var id: js.UndefOr[IdType[D]] = js.native
+  var id: js.UndefOr[IdType[D]] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object UseTableColumnOptions {
   
@@ -27,7 +25,7 @@ object UseTableColumnOptions {
   }
   
   @scala.inline
-  implicit class UseTableColumnOptionsMutableBuilder[Self <: UseTableColumnOptions[_], D /* <: js.Object */] (val x: Self with UseTableColumnOptions[D]) extends AnyVal {
+  implicit class UseTableColumnOptionsMutableBuilder[Self <: UseTableColumnOptions[?], D /* <: js.Object */] (val x: Self & UseTableColumnOptions[D]) extends AnyVal {
     
     @scala.inline
     def setHeader(value: Renderer[HeaderProps[D]]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])

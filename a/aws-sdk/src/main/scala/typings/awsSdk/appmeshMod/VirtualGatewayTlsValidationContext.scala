@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayTlsValidationContext extends StObject {
   
   /**
     * A reference to an object that represents a TLS validation context trust.
     */
-  var trust: VirtualGatewayTlsValidationContextTrust = js.native
+  var trust: VirtualGatewayTlsValidationContextTrust
 }
 object VirtualGatewayTlsValidationContext {
   

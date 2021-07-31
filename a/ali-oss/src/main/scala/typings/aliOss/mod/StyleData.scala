@@ -2,22 +2,20 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleData extends StObject {
   
   // style name
-  var Content: String = js.native
+  var Content: String
   
   // style content
-  var CreateTime: String = js.native
+  var CreateTime: String
   
   // style create time
-  var LastModifyTime: String = js.native
+  var LastModifyTime: String
   
-  var Name: String = js.native
+  var Name: String
 }
 object StyleData {
   

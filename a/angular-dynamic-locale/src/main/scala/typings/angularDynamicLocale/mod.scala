@@ -4,19 +4,17 @@ import typings.angular.mod.ILocaleService
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object tmh {
     
-    @js.native
     trait IDynamicLocale extends StObject {
       
-      def get(): String = js.native
+      def get(): String
       
-      def set(locale: String): IPromise[ILocaleService] = js.native
+      def set(locale: String): IPromise[ILocaleService]
     }
     object IDynamicLocale {
       

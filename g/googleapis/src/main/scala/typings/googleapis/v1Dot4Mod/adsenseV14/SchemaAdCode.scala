@@ -2,31 +2,29 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAdCode extends StObject {
   
   /**
     * The Auto ad code snippet. The ad code snippet.
     */
-  var adCode: js.UndefOr[String] = js.native
+  var adCode: js.UndefOr[String] = js.undefined
   
   /**
     * The AMP Auto ad code snippet that goes in the body of an AMP page.
     */
-  var ampBody: js.UndefOr[String] = js.native
+  var ampBody: js.UndefOr[String] = js.undefined
   
   /**
     * The AMP Auto ad code snippet that goes in the head of an AMP page.
     */
-  var ampHead: js.UndefOr[String] = js.native
+  var ampHead: js.UndefOr[String] = js.undefined
   
   /**
     * Kind this is, in this case adsense#adCode.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAdCode {
   

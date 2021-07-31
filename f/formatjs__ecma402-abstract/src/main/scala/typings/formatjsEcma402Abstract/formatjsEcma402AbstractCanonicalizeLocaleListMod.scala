@@ -2,18 +2,18 @@ package typings.formatjsEcma402Abstract
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatjsEcma402AbstractCanonicalizeLocaleListMod {
   
-  @JSImport("@formatjs/ecma402-abstract/CanonicalizeLocaleList", "CanonicalizeLocaleList")
+  @JSImport("@formatjs/ecma402-abstract/CanonicalizeLocaleList", JSImport.Namespace)
   @js.native
-  def CanonicalizeLocaleList(): js.Array[String] = js.native
-  @JSImport("@formatjs/ecma402-abstract/CanonicalizeLocaleList", "CanonicalizeLocaleList")
-  @js.native
-  def CanonicalizeLocaleList(locales: String): js.Array[String] = js.native
-  @JSImport("@formatjs/ecma402-abstract/CanonicalizeLocaleList", "CanonicalizeLocaleList")
-  @js.native
-  def CanonicalizeLocaleList(locales: js.Array[String]): js.Array[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def CanonicalizeLocaleList(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def CanonicalizeLocaleList(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def CanonicalizeLocaleList(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

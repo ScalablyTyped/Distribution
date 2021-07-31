@@ -3,21 +3,19 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteAlertsResponse extends StObject {
   
   /** The status details for each failed alert_id. */
   var failedAlertStatus: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.alertcenter.gapi.client.alertcenter.Status}
-    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchDeleteAlertsResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchDeleteAlertsResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The successful list of alert IDs. */
-  var successAlertIds: js.UndefOr[js.Array[String]] = js.native
+  var successAlertIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BatchDeleteAlertsResponse {
   
@@ -34,7 +32,7 @@ object BatchDeleteAlertsResponse {
     def setFailedAlertStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.alertcenter.gapi.client.alertcenter.Status}
-      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchDeleteAlertsResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchDeleteAlertsResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "failedAlertStatus", value.asInstanceOf[js.Any])
     
     @scala.inline

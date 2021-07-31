@@ -11,8 +11,8 @@ Execute JavaScript on any available Webpack event hook
 | Full name          | event-hooks-webpack-plugin |
 | Keywords           | event, hook, webpack, plugin |
 | # releases         | 8 |
-| # dependents       | 8 |
-| # downloads        | 232097 |
+| # dependents       | 10 |
+| # downloads        | 347940 |
 | # stars            | 0 |
 
 ## Links

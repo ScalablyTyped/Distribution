@@ -4,41 +4,52 @@ import typings.minimatch.mod.IOptions
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(dir: String, pattern: String): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
+  @scala.inline
+  def apply(dir: String, pattern: String, options: OptionsExt & IOptions): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
+  
   @JSImport("it-glob/dist", JSImport.Namespace)
   @js.native
-  def apply(dir: String, pattern: String): AsyncIterable[String] = js.native
-  @JSImport("it-glob/dist", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, pattern: String, options: OptionsExt with IOptions): AsyncIterable[String] = js.native
+  val ^ : js.Any = js.native
   
   type Glob = String
   
-  type Options = OptionsExt with IOptions
+  trait Options
+    extends StObject
+       with OptionsExt
+       with IOptions
+  object Options {
+    
+    @scala.inline
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+  }
   
-  @js.native
   trait OptionsExt extends StObject {
     
     /**
       * - If true produces absolute paths
       */
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * - Glob patterns to ignore
       */
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * - If true yields file paths and skip directories
       */
-    var nodir: js.UndefOr[Boolean] = js.native
+    var nodir: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsExt {
     

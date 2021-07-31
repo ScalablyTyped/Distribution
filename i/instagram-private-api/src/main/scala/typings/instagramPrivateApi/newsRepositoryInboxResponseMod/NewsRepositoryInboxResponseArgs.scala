@@ -2,59 +2,57 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponseArgs extends StObject {
   
-  var actions: js.UndefOr[js.Array[String]] = js.native
+  var actions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var aymt_channel_id: js.UndefOr[String] = js.native
+  var aymt_channel_id: js.UndefOr[String] = js.undefined
   
-  var aymt_notif_id: js.UndefOr[String] = js.native
+  var aymt_notif_id: js.UndefOr[String] = js.undefined
   
-  var aymt_notif_type: js.UndefOr[String] = js.native
+  var aymt_notif_type: js.UndefOr[String] = js.undefined
   
-  var clicked: Boolean = js.native
+  var clicked: Boolean
   
-  var comment_id: js.UndefOr[String] = js.native
+  var comment_id: js.UndefOr[String] = js.undefined
   
-  var comment_ids: js.UndefOr[js.Array[String]] = js.native
+  var comment_ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var comment_notif_type: js.UndefOr[String] = js.native
+  var comment_notif_type: js.UndefOr[String] = js.undefined
   
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
-  var hashtag_follow: js.UndefOr[NewsRepositoryInboxResponseHashtagFollow] = js.native
+  var hashtag_follow: js.UndefOr[NewsRepositoryInboxResponseHashtagFollow] = js.undefined
   
-  var icon_url: js.UndefOr[String] = js.native
+  var icon_url: js.UndefOr[String] = js.undefined
   
-  var latest_reel_media: js.UndefOr[Double] = js.native
+  var latest_reel_media: js.UndefOr[Double] = js.undefined
   
-  var links: js.UndefOr[js.Array[NewsRepositoryInboxResponseLinksItem]] = js.native
+  var links: js.UndefOr[js.Array[NewsRepositoryInboxResponseLinksItem]] = js.undefined
   
-  var media: js.UndefOr[js.Array[NewsRepositoryInboxResponseMediaItem]] = js.native
+  var media: js.UndefOr[js.Array[NewsRepositoryInboxResponseMediaItem]] = js.undefined
   
-  var profile_id: js.UndefOr[Double] = js.native
+  var profile_id: js.UndefOr[Double] = js.undefined
   
-  var profile_image: js.UndefOr[String] = js.native
+  var profile_image: js.UndefOr[String] = js.undefined
   
-  var profile_image_destination: js.UndefOr[String] = js.native
+  var profile_image_destination: js.UndefOr[String] = js.undefined
   
-  var profile_name: js.UndefOr[String] = js.native
+  var profile_name: js.UndefOr[String] = js.undefined
   
-  var rich_text: js.UndefOr[String] = js.native
+  var rich_text: js.UndefOr[String] = js.undefined
   
-  var second_profile_id: js.UndefOr[Double] = js.native
+  var second_profile_id: js.UndefOr[Double] = js.undefined
   
-  var second_profile_image: js.UndefOr[String] = js.native
+  var second_profile_image: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var tuuid: String = js.native
+  var tuuid: String
 }
 object NewsRepositoryInboxResponseArgs {
   

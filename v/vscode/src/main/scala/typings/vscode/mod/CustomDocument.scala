@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Custom documents are only used within a given `CustomEditorProvider`. The lifecycle of a `CustomDocument` is
   * managed by VS Code. When no more references remain to a `CustomDocument`, it is disposed of.
   */
-@js.native
 trait CustomDocument extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait CustomDocument extends StObject {
     * This is invoked by VS Code when there are no more references to a given `CustomDocument` (for example when
     * all editors associated with the document have been closed.)
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * The associated uri for this document.
     */
-  val uri: Uri = js.native
+  val uri: Uri
 }
 object CustomDocument {
   

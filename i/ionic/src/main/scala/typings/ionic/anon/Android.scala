@@ -2,15 +2,13 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Android extends StObject {
   
-  var android: js.UndefOr[js.Object] = js.native
+  var android: js.UndefOr[js.Object] = js.undefined
   
-  var ios: js.UndefOr[js.Object] = js.native
+  var ios: js.UndefOr[js.Object] = js.undefined
 }
 object Android {
   

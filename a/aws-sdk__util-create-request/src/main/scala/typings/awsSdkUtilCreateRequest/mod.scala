@@ -6,15 +6,17 @@ import typings.awsSdkTypes.httpMod.HttpRequest
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/util-create-request", "createRequest")
+  @JSImport("@aws-sdk/util-create-request", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createRequest[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
-    client: Client[_, InputTypesUnion, MetadataBearer, _],
-    command: Command[InputType, OutputType, _, InputTypesUnion, MetadataBearer]
-  ): js.Promise[HttpRequest] = js.native
+    client: Client[js.Any, InputTypesUnion, MetadataBearer, js.Any],
+    command: Command[InputType, OutputType, js.Any, InputTypesUnion, MetadataBearer]
+  ): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRequest")(client.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
 }

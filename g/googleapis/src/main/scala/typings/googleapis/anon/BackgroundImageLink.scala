@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundImageLink extends StObject {
   
-  var backgroundImageLink: js.UndefOr[String] = js.native
+  var backgroundImageLink: js.UndefOr[String] = js.undefined
   
-  var colorRgb: js.UndefOr[String] = js.native
+  var colorRgb: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object BackgroundImageLink {
   

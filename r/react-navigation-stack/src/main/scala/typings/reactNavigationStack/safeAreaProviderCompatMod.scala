@@ -4,19 +4,20 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safeAreaProviderCompatMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/SafeAreaProviderCompat", JSImport.Default)
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/SafeAreaProviderCompat", JSImport.Namespace)
   @js.native
-  def default(hasChildren: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object Props {
     

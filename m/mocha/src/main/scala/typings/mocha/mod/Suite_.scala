@@ -4,7 +4,6 @@ import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.SuiteConstants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Suite "post-require" event
@@ -35,11 +34,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mocha", "Suite")
 @js.native
-class Suite_ protected () extends Suite {
+class Suite_ protected ()
+  extends StObject
+     with Suite {
   def this(title: String) = this()
   def this(title: String, parentContext: typings.mocha.Mocha.Context) = this()
 }
 object Suite_ {
+  
+  @JSImport("mocha", "Suite")
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
   @JSImport("mocha", "Suite.constants")
@@ -54,7 +59,6 @@ object Suite_ {
     * @see https://mochajs.org/api/mocha#.exports.create
     */
   /* static member */
-  @JSImport("mocha", "Suite.create")
-  @js.native
-  def create(parent: Suite, title: String): Suite = js.native
+  @scala.inline
+  def create(parent: Suite, title: String): Suite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Suite]
 }

@@ -12,10 +12,13 @@ import typings.std.File
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ibm-cloud-sdk-core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ibm-cloud-sdk-core", "BaseService")
   @js.native
@@ -70,79 +73,68 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @JSImport("ibm-cloud-sdk-core", "buildRequestFileObject")
-  @js.native
-  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = js.native
+  @scala.inline
+  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = ^.asInstanceOf[js.Dynamic].applyDynamic("buildRequestFileObject")(fileParams.asInstanceOf[js.Any]).asInstanceOf[FileObject]
   
   object contentType {
     
-    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
+    @JSImport("ibm-cloud-sdk-core", "contentType")
     @js.native
-    def fromFilename(file: String): String = js.native
-    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
-    @js.native
-    def fromFilename(file: FileObject): String = js.native
-    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
-    @js.native
-    def fromFilename(file: Buffer): String = js.native
-    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
-    @js.native
-    def fromFilename(file: File): String = js.native
-    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
-    @js.native
-    def fromFilename(file: ReadableStream[_]): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ibm-cloud-sdk-core", "contentType.fromHeader")
-    @js.native
-    def fromHeader(buffer: Buffer): String = js.native
+    @scala.inline
+    def fromFilename(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFilename")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def fromFilename(file: FileObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFilename")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def fromFilename(file: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFilename")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def fromFilename(file: File): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFilename")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def fromFilename(file: ReadableStream[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFilename")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def fromHeader(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHeader")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("ibm-cloud-sdk-core", "getContentType")
-  @js.native
-  def getContentType(inputData: String): String = js.native
-  @JSImport("ibm-cloud-sdk-core", "getContentType")
-  @js.native
-  def getContentType(inputData: Buffer): String = js.native
-  @JSImport("ibm-cloud-sdk-core", "getContentType")
-  @js.native
-  def getContentType(inputData: typings.node.NodeJS.ReadableStream): String = js.native
+  @scala.inline
+  def getContentType(inputData: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(inputData.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getContentType(inputData: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(inputData.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getContentType(inputData: typings.node.NodeJS.ReadableStream): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(inputData.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ibm-cloud-sdk-core", "getFormat")
-  @js.native
-  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = js.native
+  @scala.inline
+  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormat")(params.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ibm-cloud-sdk-core", "getMissingParams")
-  @js.native
-  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = js.native
+  @scala.inline
+  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingParams")(params.asInstanceOf[js.Any], requires.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
   
-  @JSImport("ibm-cloud-sdk-core", "isEmptyObject")
-  @js.native
-  def isEmptyObject(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmptyObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ibm-cloud-sdk-core", "isFileParam")
-  @js.native
-  def isFileParam(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isFileParam(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFileParam")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ibm-cloud-sdk-core", "isHTML")
-  @js.native
-  def isHTML(text: String): Boolean = js.native
+  @scala.inline
+  def isHTML(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTML")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object qs {
     
-    @JSImport("ibm-cloud-sdk-core", "qs.stringify")
+    @JSImport("ibm-cloud-sdk-core", "qs")
     @js.native
-    def stringify(queryParams: js.Object): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def stringify(queryParams: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(queryParams.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("ibm-cloud-sdk-core", "streamToPromise")
-  @js.native
-  def streamToPromise(stream: Stream): js.Promise[_] = js.native
+  @scala.inline
+  def streamToPromise(stream: Stream): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("streamToPromise")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("ibm-cloud-sdk-core", "stripTrailingSlash")
-  @js.native
-  def stripTrailingSlash(url: String): String = js.native
+  @scala.inline
+  def stripTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ibm-cloud-sdk-core", "toLowerKeys")
-  @js.native
-  def toLowerKeys(obj: js.Object): js.Object = js.native
+  @scala.inline
+  def toLowerKeys(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

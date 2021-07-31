@@ -7,46 +7,40 @@ import typings.std.NodeList
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Available only in SharePoint Online*/
 object DOM {
   
-  @JSGlobal("DOM.AbsLeft")
+  @JSGlobal("DOM")
   @js.native
-  def AbsLeft(el: HTMLElement): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("DOM.AbsTop")
-  @js.native
-  def AbsTop(el: HTMLElement): Double = js.native
+  @scala.inline
+  def AbsLeft(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsLeft")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("DOM.CancelEvent")
-  @js.native
-  def CancelEvent(evt: Event): Unit = js.native
+  @scala.inline
+  def AbsTop(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsTop")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("DOM.GetElementsByName")
-  @js.native
-  def GetElementsByName(nae: String): NodeList = js.native
+  @scala.inline
+  def CancelEvent(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CancelEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("DOM.GetEventCoords")
-  @js.native
-  def GetEventCoords(evt: Event): X = js.native
+  @scala.inline
+  def GetElementsByName(nae: String): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("GetElementsByName")(nae.asInstanceOf[js.Any]).asInstanceOf[NodeList]
   
-  @JSGlobal("DOM.GetEventSrcElement")
-  @js.native
-  def GetEventSrcElement(evt: Event): HTMLElement = js.native
+  @scala.inline
+  def GetEventCoords(evt: Event): X = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEventCoords")(evt.asInstanceOf[js.Any]).asInstanceOf[X]
   
-  @JSGlobal("DOM.GetInnerText")
-  @js.native
-  def GetInnerText(el: HTMLElement): String = js.native
+  @scala.inline
+  def GetEventSrcElement(evt: Event): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEventSrcElement")(evt.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
-  @JSGlobal("DOM.PreventDefaultNavigation")
-  @js.native
-  def PreventDefaultNavigation(evt: Event): Unit = js.native
+  @scala.inline
+  def GetInnerText(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInnerText")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("DOM.SetEvent")
-  @js.native
+  @scala.inline
+  def PreventDefaultNavigation(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventDefaultNavigation")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
   def SetEvent(
     eventName: String,
     eventFunc: js.Function3[
@@ -56,11 +50,10 @@ object DOM {
       Unit
     ],
     el: HTMLElement
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetEvent")(eventName.asInstanceOf[js.Any], eventFunc.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("DOM.cancelDefault")
-  @js.native
-  def cancelDefault(evt: Event): Unit = js.native
+  @scala.inline
+  def cancelDefault(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelDefault")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("DOM.rightToLeft")
   @js.native

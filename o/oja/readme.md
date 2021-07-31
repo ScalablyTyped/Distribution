@@ -12,7 +12,7 @@ Lightweight pub/sub module with event backlog, timeout support that maps events 
 | Keywords           | stream, flow, pub, sub, pub-sub, event, eventemitter, emitter |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 31668 |
+| # downloads        | 29817 |
 | # stars            | 0 |
 
 ## Links

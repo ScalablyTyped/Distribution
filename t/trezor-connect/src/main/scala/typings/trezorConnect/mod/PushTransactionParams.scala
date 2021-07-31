@@ -2,15 +2,15 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PushTransactionParams extends CommonParams {
+trait PushTransactionParams
+  extends StObject
+     with CommonParams {
   
-  var coin: String = js.native
+  var coin: String
   
-  var tx: String = js.native
+  var tx: String
 }
 object PushTransactionParams {
   

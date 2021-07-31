@@ -2,18 +2,16 @@ package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SynthesisInput. */
-@js.native
 trait ISynthesisInput extends StObject {
   
   /** SynthesisInput ssml */
-  var ssml: js.UndefOr[String | Null] = js.native
+  var ssml: js.UndefOr[String | Null] = js.undefined
   
   /** SynthesisInput text */
-  var text: js.UndefOr[String | Null] = js.native
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object ISynthesisInput {
   

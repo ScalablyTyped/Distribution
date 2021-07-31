@@ -3,12 +3,13 @@ package typings.web3Core.mod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core", "WalletBase")
 @js.native
-class WalletBase protected () extends /* key */ NumberDictionary[Account] {
+class WalletBase protected ()
+  extends StObject
+     with /* key */ NumberDictionary[Account] {
   def this(accounts: AccountsBase) = this()
   
   def add(account: String): AddedAccount = js.native

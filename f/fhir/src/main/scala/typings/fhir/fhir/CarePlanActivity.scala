@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Action to occur as part of plan
   */
-@js.native
-trait CarePlanActivity extends BackboneElement {
+trait CarePlanActivity
+  extends StObject
+     with BackboneElement {
   
   /**
     * In-line definition of activity
     */
-  var detail: js.UndefOr[CarePlanActivityDetail] = js.native
+  var detail: js.UndefOr[CarePlanActivityDetail] = js.undefined
   
   /**
     * Results of the activity
     */
-  var outcomeCodeableConcept: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var outcomeCodeableConcept: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Appointment, Encounter, Procedure, etc.
     */
-  var outcomeReference: js.UndefOr[js.Array[Reference]] = js.native
+  var outcomeReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Comments about the activity status/progress
     */
-  var progress: js.UndefOr[js.Array[Annotation]] = js.native
+  var progress: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * Activity details defined in specific resource
     */
-  var reference: js.UndefOr[Reference] = js.native
+  var reference: js.UndefOr[Reference] = js.undefined
 }
 object CarePlanActivity {
   

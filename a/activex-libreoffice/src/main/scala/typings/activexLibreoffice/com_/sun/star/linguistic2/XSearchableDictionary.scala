@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interfaces allows to retrieve suggestions for spell checking from a dictionary. */
-@js.native
-trait XSearchableDictionary extends XDictionary {
+trait XSearchableDictionary
+  extends StObject
+     with XDictionary {
   
   /**
     * search for similar entries in the dictionary.
@@ -20,7 +20,7 @@ trait XSearchableDictionary extends XDictionary {
     * @see com.sun.star.linguistic2.XSearchableDictionaryList
     * @since OOo 3.0.1
     */
-  def searchSimilarEntries(aWord: String): SafeArray[XDictionaryEntry] = js.native
+  def searchSimilarEntries(aWord: String): SafeArray[XDictionaryEntry]
 }
 object XSearchableDictionary {
   

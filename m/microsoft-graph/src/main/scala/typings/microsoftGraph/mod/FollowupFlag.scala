@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FollowupFlag extends StObject {
   
   // The date and time that the follow-up was finished.
-  var completedDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var completedDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   /**
     * The date and time that the follow up is to be finished. Note: To set the due date, you must also specify the
     * startDateTime; otherwise, you will get a 400 Bad Request response.
     */
-  var dueDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var dueDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The status for follow-up for an item. Possible values are notFlagged, complete, and flagged.
-  var flagStatus: js.UndefOr[NullableOption[FollowupFlagStatus]] = js.native
+  var flagStatus: js.UndefOr[NullableOption[FollowupFlagStatus]] = js.undefined
   
   // The date and time that the follow-up is to begin.
-  var startDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
 }
 object FollowupFlag {
   

@@ -7,19 +7,17 @@ import typings.std.ArrayLike
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== _stream_transform ====
 /* Inlined readable-stream.readable-stream.DuplexOptions & {  read :(this : readable-stream.readable-stream.Transform, size : number): void | undefined,   write :(this : readable-stream.readable-stream.Transform, chunk : any, encoding : node.BufferEncoding, callback : (error : std.Error | null | undefined): void): void | undefined,   writev :(this : readable-stream.readable-stream.Transform, chunks : std.Array<{  chunk :any,   encoding :node.BufferEncoding}>, callback : (error : std.Error | null | undefined): void): void | undefined,   final :(this : readable-stream.readable-stream.Transform, callback : (error : std.Error | null | undefined): void): void | undefined,   destroy :(this : readable-stream.readable-stream.Transform, error : std.Error | null, callback : (error : std.Error | null): void): void | undefined,   transform :(this : readable-stream.readable-stream.Transform, chunk : any, encoding : node.BufferEncoding, callback : (error : std.Error | undefined, data : any | undefined): void): void | undefined,   flush :(this : readable-stream.readable-stream.Transform, callback : (er : any, data : any): void): void | undefined} */
-@js.native
 trait TransformOptions extends StObject {
   
-  var allowHalfOpen: js.UndefOr[Boolean] = js.native
+  var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
   
-  var decodeStrings: js.UndefOr[Boolean] = js.native
+  var decodeStrings: js.UndefOr[Boolean] = js.undefined
   
-  var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
   
   var destroy: (js.UndefOr[
     js.ThisFunction2[
@@ -28,30 +26,30 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Writable, 
       /* error */ Error | Null, 
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Duplex, 
       /* error */ Error | Null, 
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Transform, 
       /* error */ Error | Null, 
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ]
-  ]) = js.native
+  ])
   
-  var encoding: js.UndefOr[BufferEncoding] = js.native
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
   
   var `final`: (js.UndefOr[
     js.ThisFunction1[
@@ -59,19 +57,19 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction1[
       /* this */ Duplex, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction1[
       /* this */ Transform, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) = js.native
+  ])
   
   var flush: js.UndefOr[
     js.ThisFunction1[
@@ -79,19 +77,19 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function2[/* er */ js.Any, /* data */ js.Any, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var highWaterMark: js.UndefOr[Double] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.undefined
   
-  var objectMode: js.UndefOr[Boolean] = js.native
+  var objectMode: js.UndefOr[Boolean] = js.undefined
   
-  var read: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) with (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]) with (js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]]) = js.native
+  var read: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]])
   
-  var readable: js.UndefOr[Boolean] = js.native
+  var readable: js.UndefOr[Boolean] = js.undefined
   
-  var readableHighWaterMark: js.UndefOr[Double] = js.native
+  var readableHighWaterMark: js.UndefOr[Double] = js.undefined
   
-  var readableObjectMode: js.UndefOr[Boolean] = js.native
+  var readableObjectMode: js.UndefOr[Boolean] = js.undefined
   
   var transform: js.UndefOr[
     js.ThisFunction3[
@@ -101,13 +99,13 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[js.Any], Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var writable: js.UndefOr[Boolean] = js.native
+  var writable: js.UndefOr[Boolean] = js.undefined
   
-  var writableHighWaterMark: js.UndefOr[Double] = js.native
+  var writableHighWaterMark: js.UndefOr[Double] = js.undefined
   
-  var writableObjectMode: js.UndefOr[Boolean] = js.native
+  var writableObjectMode: js.UndefOr[Boolean] = js.undefined
   
   var write: (js.UndefOr[
     js.ThisFunction3[
@@ -117,7 +115,7 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction3[
       /* this */ Duplex, 
       /* chunk */ js.Any, 
@@ -125,7 +123,7 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction3[
       /* this */ Transform, 
       /* chunk */ js.Any, 
@@ -133,7 +131,7 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) = js.native
+  ])
   
   var writev: (js.UndefOr[
     js.ThisFunction2[
@@ -142,21 +140,21 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Duplex, 
       /* chunks */ js.Array[Encoding], 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Transform, 
       /* chunks */ js.Array[Encoding], 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ]) = js.native
+  ])
 }
 object TransformOptions {
   
@@ -169,21 +167,21 @@ object TransformOptions {
         /* callback */ js.Function1[/* error */ Error | Null, Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Writable, 
         /* error */ Error | Null, 
         /* callback */ js.Function1[/* error */ Error | Null, Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Duplex, 
         /* error */ Error | Null, 
         /* callback */ js.Function1[/* error */ Error | Null, Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Transform, 
         /* error */ Error | Null, 
@@ -197,20 +195,20 @@ object TransformOptions {
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction1[
         /* this */ Duplex, 
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction1[
         /* this */ Transform, 
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
     ]),
-    read: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) with (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]) with (js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]]),
+    read: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]]),
     write: (js.UndefOr[
       js.ThisFunction3[
         /* this */ Writable, 
@@ -219,7 +217,7 @@ object TransformOptions {
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction3[
         /* this */ Duplex, 
         /* chunk */ js.Any, 
@@ -227,7 +225,7 @@ object TransformOptions {
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction3[
         /* this */ Transform, 
         /* chunk */ js.Any, 
@@ -243,14 +241,14 @@ object TransformOptions {
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Duplex, 
         /* chunks */ js.Array[Encoding], 
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ]
-    ]) with (js.UndefOr[
+    ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Transform, 
         /* chunks */ js.Array[Encoding], 
@@ -294,21 +292,21 @@ object TransformOptions {
             /* callback */ js.Function1[/* error */ Error | Null, Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Writable, 
             /* error */ Error | Null, 
             /* callback */ js.Function1[/* error */ Error | Null, Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Duplex, 
             /* error */ Error | Null, 
             /* callback */ js.Function1[/* error */ Error | Null, Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Transform, 
             /* error */ Error | Null, 
@@ -332,13 +330,13 @@ object TransformOptions {
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction1[
             /* this */ Duplex, 
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction1[
             /* this */ Transform, 
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
@@ -373,7 +371,7 @@ object TransformOptions {
     
     @scala.inline
     def setRead(
-      value: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) with (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]) with (js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]])
+      value: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]])
     ): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -436,7 +434,7 @@ object TransformOptions {
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction3[
             /* this */ Duplex, 
             /* chunk */ js.Any, 
@@ -444,7 +442,7 @@ object TransformOptions {
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction3[
             /* this */ Transform, 
             /* chunk */ js.Any, 
@@ -464,14 +462,14 @@ object TransformOptions {
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Duplex, 
             /* chunks */ js.Array[Encoding], 
             /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
             Unit
           ]
-        ]) with (js.UndefOr[
+        ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Transform, 
             /* chunks */ js.Array[Encoding], 

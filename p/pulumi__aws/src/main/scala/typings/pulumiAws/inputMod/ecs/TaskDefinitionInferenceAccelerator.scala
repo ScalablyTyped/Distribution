@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ecs
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionInferenceAccelerator extends StObject {
   
   /**
     * The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
     */
-  var deviceName: Input[String] = js.native
+  var deviceName: Input[String]
   
   /**
     * The Elastic Inference accelerator type to use.
     */
-  var deviceType: Input[String] = js.native
+  var deviceType: Input[String]
 }
 object TaskDefinitionInferenceAccelerator {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECSTarget extends StObject {
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: js.UndefOr[DeploymentId] = js.native
+  var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     *  The date and time when the target Amazon ECS application was updated by a deployment. 
     */
-  var lastUpdatedAt: js.UndefOr[Time] = js.native
+  var lastUpdatedAt: js.UndefOr[Time] = js.undefined
   
   /**
     *  The lifecycle events of the deployment to this target Amazon ECS application. 
     */
-  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.native
+  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.undefined
   
   /**
     *  The status an Amazon ECS deployment's target ECS application. 
     */
-  var status: js.UndefOr[TargetStatus] = js.native
+  var status: js.UndefOr[TargetStatus] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the target. 
     */
-  var targetArn: js.UndefOr[TargetArn] = js.native
+  var targetArn: js.UndefOr[TargetArn] = js.undefined
   
   /**
     *  The unique ID of a deployment target that has a type of ecsTarget. 
     */
-  var targetId: js.UndefOr[TargetId] = js.native
+  var targetId: js.UndefOr[TargetId] = js.undefined
   
   /**
     *  The ECSTaskSet objects associated with the ECS target. 
     */
-  var taskSetsInfo: js.UndefOr[ECSTaskSetList] = js.native
+  var taskSetsInfo: js.UndefOr[ECSTaskSetList] = js.undefined
 }
 object ECSTarget {
   

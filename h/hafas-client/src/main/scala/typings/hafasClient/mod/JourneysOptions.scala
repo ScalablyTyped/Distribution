@@ -3,138 +3,136 @@ package typings.hafasClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JourneysOptions extends StObject {
   
   /**
     * 'none', 'partial' or 'complete'
     *  @default none
     */
-  var accessibility: js.UndefOr[String] = js.native
+  var accessibility: js.UndefOr[String] = js.undefined
   
   /**
     * arrival date, departure and arrival are mutually exclusive.
     * @default undefined
     */
-  var arrival: js.UndefOr[Date] = js.native
+  var arrival: js.UndefOr[Date] = js.undefined
   
   /**
     * only bike-friendly journeys
     * @default false
     */
-  var bike: js.UndefOr[Boolean] = js.native
+  var bike: js.UndefOr[Boolean] = js.undefined
   
   /**
     * departure date, undefined corresponds to Date.Now
     * @default undefined
     */
-  var departure: js.UndefOr[Date] = js.native
+  var departure: js.UndefOr[Date] = js.undefined
   
   /**
     * earlierThan, use {@link Journeys#earlierRef}, earlierThan and departure/arrival are mutually exclusive.
     * @default undefined
     */
-  var earlierThan: js.UndefOr[String] = js.native
+  var earlierThan: js.UndefOr[String] = js.undefined
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * language to get results in
     * @default en
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * laterThan, use {@link Journeys#laterRef}, laterThan and departure/arrival are mutually exclusive.
     *  @default undefined
     */
-  var laterThan: js.UndefOr[String] = js.native
+  var laterThan: js.UndefOr[String] = js.undefined
   
   /**
     * return a shape for each leg?
     * @default false
     */
-  var polylines: js.UndefOr[Boolean] = js.native
+  var polylines: js.UndefOr[Boolean] = js.undefined
   
-  var products: js.UndefOr[Products] = js.native
+  var products: js.UndefOr[Products] = js.undefined
   
   /**
     * parse & expose hints & warnings?
     * @default true
     */
-  var remarks: js.UndefOr[Boolean] = js.native
+  var remarks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * how many search results?
     * @default 3
     */
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   /**
     * parse which days each journey is valid on
     * @default false
     */
-  var scheduledDays: js.UndefOr[Boolean] = js.native
+  var scheduledDays: js.UndefOr[Boolean] = js.undefined
   
   /**
     * start with walking
     * @default false
     */
-  var startWithWalking: js.UndefOr[Boolean] = js.native
+  var startWithWalking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * return stations on the way?
     * @default false
     */
-  var stopovers: js.UndefOr[Boolean] = js.native
+  var stopovers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default false
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * return tickets? only available with some profiles
     * @default false
     */
-  var tickets: js.UndefOr[Boolean] = js.native
+  var tickets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * minimum time for a single transfer in minutes
     * @default 10
     */
-  var transferTime: js.UndefOr[Double] = js.native
+  var transferTime: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum nr of transfers. Default: Let HAFAS decide.
     * @default 10
     */
-  var transfers: js.UndefOr[Double] = js.native
+  var transfers: js.UndefOr[Double] = js.undefined
   
   /**
     * let journeys pass this station
     * @default undefined
     */
-  var via: js.UndefOr[String] = js.native
+  var via: js.UndefOr[String] = js.undefined
   
   /**
     * 'slow', 'normal', 'fast'
     * @default slow
     */
-  var walkingSpeed: js.UndefOr[String] = js.native
+  var walkingSpeed: js.UndefOr[String] = js.undefined
   
   /**
     * @deprecated
     */
-  var when: js.UndefOr[Date] = js.native
+  var when: js.UndefOr[Date] = js.undefined
 }
 object JourneysOptions {
   

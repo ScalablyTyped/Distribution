@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSigningProfileRequest extends StObject {
   
   /**
     * The name of the signing profile to be canceled.
     */
-  var profileName: ProfileName = js.native
+  var profileName: ProfileName
 }
 object CancelSigningProfileRequest {
   

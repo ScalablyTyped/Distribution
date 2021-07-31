@@ -3,22 +3,22 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.minus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MinusPattern extends BlockPattern {
+trait MinusPattern
+  extends StObject
+     with BlockPattern {
   
-  var patterns: js.Array[Pattern] = js.native
+  var patterns: js.Array[Pattern]
   
-  var `type`: minus = js.native
+  var `type`: minus
 }
 object MinusPattern {
   
   @scala.inline
-  def apply(patterns: js.Array[Pattern], `type`: minus): MinusPattern = {
+  def apply(patterns: js.Array[Pattern]): MinusPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("minus")
     __obj.asInstanceOf[MinusPattern]
   }
   

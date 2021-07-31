@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Objects
@@ -56,7 +55,7 @@ trait Binding extends StObject {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -105,7 +104,7 @@ trait Binding extends StObject {
     */
   def getDataAsync[T](): Unit = js.native
   def getDataAsync[T](callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
-  def getDataAsync[T](options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
+  def getDataAsync[T](options: Unit, callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
   def getDataAsync[T](options: GetBindingDataOptions): Unit = js.native
   def getDataAsync[T](options: GetBindingDataOptions, callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
   
@@ -127,11 +126,7 @@ trait Binding extends StObject {
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def removeHandlerAsync(eventType: EventType, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: RemoveHandlerOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -141,11 +136,7 @@ trait Binding extends StObject {
   
   def setDataAsync(data: js.Any): Unit = js.native
   def setDataAsync(data: js.Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setDataAsync(
-    data: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setDataAsync(data: js.Any, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setDataAsync(data: js.Any, options: SetBindingDataOptions): Unit = js.native
   def setDataAsync(
     data: js.Any,
@@ -300,11 +291,7 @@ trait Binding extends StObject {
     */
   def setDataAsync(data: TableData): Unit = js.native
   def setDataAsync(data: TableData, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setDataAsync(
-    data: TableData,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setDataAsync(data: TableData, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setDataAsync(data: TableData, options: SetBindingDataOptions): Unit = js.native
   def setDataAsync(
     data: TableData,

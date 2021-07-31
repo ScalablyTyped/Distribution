@@ -2,24 +2,22 @@ package typings.googleapis.tpuV1Mod.tpuV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tensorflow version that a Node can be configured with.
   */
-@js.native
 trait SchemaTensorFlowVersion extends StObject {
   
   /**
     * The resource name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * the tensorflow version.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaTensorFlowVersion {
   

@@ -11,7 +11,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.container
 import typings.wordpressComponents.wordpressComponentsStrings.firstElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod {
@@ -30,25 +29,24 @@ object dropdownMod {
   
   object Dropdown {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * `className` of the global container.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * If you want to target the dropdown menu for styling purposes, you
         * need to provide a `contentClassName` because it's not being rendered
         * as a children of the container node.
         */
-      var contentClassName: js.UndefOr[String] = js.native
+      var contentClassName: js.UndefOr[String] = js.undefined
       
       /**
         * Opt-in prop to show popovers fullscreen on mobile.
         */
-      var expandOnMobile: js.UndefOr[Boolean] = js.native
+      var expandOnMobile: js.UndefOr[Boolean] = js.undefined
       
       /**
         * By default, the first tabblable element in the popover will receive
@@ -62,24 +60,24 @@ object dropdownMod {
         *
         * @defaultValue "firstElement"
         */
-      var focusOnMount: js.UndefOr[firstElement | container | `false`] = js.native
+      var focusOnMount: js.UndefOr[firstElement | container | `false`] = js.undefined
       
       /**
         * Set this to customize the text that is shown in the dropdown's
         * header when it is fullscreen on mobile.
         */
-      var headerTitle: js.UndefOr[ReactNode] = js.native
+      var headerTitle: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * The direction in which the popover should open relative to its
         * parent node. Specify y- and x-axis as a space-separated string.
         * @defaultValue "top center"
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
-      def renderContent(props: RenderProps): Element = js.native
+      def renderContent(props: RenderProps): Element
       
-      def renderToggle(props: RenderProps): Element = js.native
+      def renderToggle(props: RenderProps): Element
     }
     object Props {
       
@@ -136,24 +134,23 @@ object dropdownMod {
       }
     }
     
-    @js.native
     trait RenderProps extends StObject {
       
       /**
         * Whether the dropdown menu is opened or not.
         */
-      var isOpen: Boolean = js.native
+      var isOpen: Boolean
       
       /**
         * A function that closes the menu if invoked.
         */
-      def onClose(): Unit = js.native
+      def onClose(): Unit
       
       /**
         * A function switching the dropdown menu's state from open to closed
         * and vice versa.
         */
-      def onToggle(): Unit = js.native
+      def onToggle(): Unit
     }
     object RenderProps {
       

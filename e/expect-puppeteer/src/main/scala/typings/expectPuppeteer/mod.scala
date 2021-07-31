@@ -11,41 +11,39 @@ import typings.std.Element
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(instance: ElementHandle[Element]): ExpectPuppeteer = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[ExpectPuppeteer]
+  @scala.inline
+  def apply(instance: Page): ExpectPuppeteer = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[ExpectPuppeteer]
+  
   @JSImport("expect-puppeteer", JSImport.Namespace)
   @js.native
-  def apply(instance: ElementHandle[Element]): ExpectPuppeteer = js.native
-  @JSImport("expect-puppeteer", JSImport.Namespace)
-  @js.native
-  def apply(instance: Page): ExpectPuppeteer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expect-puppeteer", "getDefaultOptions")
-  @js.native
-  def getDefaultOptions(): ExpectDefaultOptions = js.native
+  @scala.inline
+  def getDefaultOptions(): ExpectDefaultOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ExpectDefaultOptions]
   
-  @JSImport("expect-puppeteer", "setDefaultOptions")
-  @js.native
-  def setDefaultOptions(options: ExpectDefaultOptions): Unit = js.native
+  @scala.inline
+  def setDefaultOptions(options: ExpectDefaultOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Default options that apply to all expectations and can be set globally
     */
-  @js.native
   trait ExpectDefaultOptions extends StObject {
     
     /**
       * An interval at which the pageFunction is executed. Defaults to "raf".
       */
-    var polling: js.UndefOr[ExpectPolling] = js.native
+    var polling: js.UndefOr[ExpectPolling] = js.undefined
     
     /**
       * Maximum time to wait for in milliseconds. Defaults to 500.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ExpectDefaultOptions {
     
@@ -111,13 +109,14 @@ object mod {
   /**
     * Configures how to poll for an element.
     */
-  @js.native
-  trait ExpectTimingActions extends ExpectDefaultOptions {
+  trait ExpectTimingActions
+    extends StObject
+       with ExpectDefaultOptions {
     
     /**
       * delay to pass to the puppeteer element.type API
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
   }
   object ExpectTimingActions {
     
@@ -138,28 +137,29 @@ object mod {
     }
   }
   
-  @js.native
-  trait ExpectToClickOptions extends ExpectTimingActions {
+  trait ExpectToClickOptions
+    extends StObject
+       with ExpectTimingActions {
     
     /**
       * Defaults to left.
       */
-    var button: js.UndefOr[left | right | middle] = js.native
+    var button: js.UndefOr[left | right | middle] = js.undefined
     
     /**
       * defaults to 1. See UIEvent.detail.
       */
-    var clickCount: js.UndefOr[Double] = js.native
+    var clickCount: js.UndefOr[Double] = js.undefined
     
     /**
       * A text or a RegExp to match in element textContent.
       */
-    var text: js.UndefOr[String | RegExp] = js.native
+    var text: js.UndefOr[String | RegExp] = js.undefined
     
     /**
       * wait for element to be present in DOM and to be visible, i.e. to not have display: none or visibility: hidden CSS properties. Defaults to false.
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ExpectToClickOptions {
     

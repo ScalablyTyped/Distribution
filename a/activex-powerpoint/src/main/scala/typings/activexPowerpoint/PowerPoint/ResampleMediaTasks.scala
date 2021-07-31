@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResampleMediaTasks extends StObject {
   
-  def Cancel(): Unit = js.native
+  def Cancel(): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): ResampleMediaTask = js.native
+  def Item(Index: Double): ResampleMediaTask
   
-  def Pause(): Unit = js.native
+  def Pause(): Unit
   
-  val PercentComplete: Double = js.native
+  val PercentComplete: Double
   
   @JSName("PowerPoint.ResampleMediaTasks_typekey")
-  var PowerPointDotResampleMediaTasks_typekey: ResampleMediaTasks = js.native
+  var PowerPointDotResampleMediaTasks_typekey: ResampleMediaTasks
   
-  def Resume(): Unit = js.native
+  def Resume(): Unit
 }
 object ResampleMediaTasks {
   

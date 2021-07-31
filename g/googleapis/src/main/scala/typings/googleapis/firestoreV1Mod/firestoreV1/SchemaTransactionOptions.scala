@@ -2,24 +2,22 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for creating a new transaction.
   */
-@js.native
 trait SchemaTransactionOptions extends StObject {
   
   /**
     * The transaction can only be used for read operations.
     */
-  var readOnly: js.UndefOr[SchemaReadOnly] = js.native
+  var readOnly: js.UndefOr[SchemaReadOnly] = js.undefined
   
   /**
     * The transaction can be used for both read and write operations.
     */
-  var readWrite: js.UndefOr[SchemaReadWrite] = js.native
+  var readWrite: js.UndefOr[SchemaReadWrite] = js.undefined
 }
 object SchemaTransactionOptions {
   

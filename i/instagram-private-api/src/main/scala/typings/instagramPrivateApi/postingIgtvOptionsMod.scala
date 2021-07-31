@@ -6,35 +6,33 @@ import typings.instagramPrivateApi.anon.PartialUploadVideoOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postingIgtvOptionsMod {
   
-  @js.native
   trait PostingIgtvOptions extends StObject {
     
-    var audioMuted: js.UndefOr[Boolean] = js.native
+    var audioMuted: js.UndefOr[Boolean] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var configureOptions: js.UndefOr[PartialMediaConfigureToIg] = js.native
+    var configureOptions: js.UndefOr[PartialMediaConfigureToIg] = js.undefined
     
-    var coverFrame: Buffer = js.native
+    var coverFrame: Buffer
     
-    var feedPreviewCrop: js.UndefOr[Bottom] = js.native
+    var feedPreviewCrop: js.UndefOr[Bottom] = js.undefined
     
-    var maxTranscodeTries: js.UndefOr[Double] = js.native
+    var maxTranscodeTries: js.UndefOr[Double] = js.undefined
     
-    var shareToFeed: js.UndefOr[Boolean] = js.native
+    var shareToFeed: js.UndefOr[Boolean] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var transcodeDelay: js.UndefOr[Double] = js.native
+    var transcodeDelay: js.UndefOr[Double] = js.undefined
     
-    var uploadOptions: js.UndefOr[PartialUploadVideoOptions] = js.native
+    var uploadOptions: js.UndefOr[PartialUploadVideoOptions] = js.undefined
     
-    var video: Buffer = js.native
+    var video: Buffer
   }
   object PostingIgtvOptions {
     

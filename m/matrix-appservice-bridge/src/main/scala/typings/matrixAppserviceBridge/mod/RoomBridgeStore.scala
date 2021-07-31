@@ -2,7 +2,6 @@ package typings.matrixAppserviceBridge.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "RoomBridgeStore")
@@ -34,12 +33,15 @@ class RoomBridgeStore protected ()
     * @param db The connected NEDB database instance
     * @param opts Options for this store.
     */
-  def this(db: typings.nedb.mod.^[_]) = this()
+  def this(db: typings.nedb.mod.^[js.Any]) = this()
 }
 /* static members */
 object RoomBridgeStore {
   
-  @JSImport("matrix-appservice-bridge", "RoomBridgeStore.createUniqueId")
+  @JSImport("matrix-appservice-bridge", "RoomBridgeStore")
   @js.native
-  def createUniqueId(matrixRoomId: String, remoteRoomId: String, delimiter: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createUniqueId(matrixRoomId: String, remoteRoomId: String, delimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueId")(matrixRoomId.asInstanceOf[js.Any], remoteRoomId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[String]
 }

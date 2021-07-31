@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionGroupMod {
@@ -70,6 +69,10 @@ object optionGroupMod {
   /* static members */
   object OptionGroup {
     
+    @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OptionGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -79,65 +82,59 @@ object optionGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): OptionGroup = js.native
-    @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): OptionGroup = js.native
-    @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OptionGroupState): OptionGroup = js.native
-    @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OptionGroupState, opts: CustomResourceOptions): OptionGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): OptionGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OptionGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OptionGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OptionGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OptionGroupState): OptionGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OptionGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OptionGroupState, opts: CustomResourceOptions): OptionGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OptionGroup]
     
     /**
       * Returns true if the given object is an instance of OptionGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ Boolean]
   }
   
-  @js.native
   trait OptionGroupArgs extends StObject {
     
     /**
       * Specifies the name of the engine that this option group should be associated with.
       */
-    val engineName: Input[String] = js.native
+    val engineName: Input[String]
     
     /**
       * Specifies the major version of the engine that this option group should be associated with.
       */
-    val majorEngineVersion: Input[String] = js.native
+    val majorEngineVersion: Input[String]
     
     /**
       * The Name of the setting.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the option group. Defaults to "Managed by Pulumi".
       */
-    val optionGroupDescription: js.UndefOr[Input[String]] = js.native
+    val optionGroupDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of Options to apply.
       */
-    val options: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.OptionGroupOption]]]] = js.native
+    val options: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.OptionGroupOption]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object OptionGroupArgs {
     
@@ -191,48 +188,47 @@ object optionGroupMod {
     }
   }
   
-  @js.native
   trait OptionGroupState extends StObject {
     
     /**
       * The ARN of the db option group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the engine that this option group should be associated with.
       */
-    val engineName: js.UndefOr[Input[String]] = js.native
+    val engineName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the major version of the engine that this option group should be associated with.
       */
-    val majorEngineVersion: js.UndefOr[Input[String]] = js.native
+    val majorEngineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Name of the setting.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the option group. Defaults to "Managed by Pulumi".
       */
-    val optionGroupDescription: js.UndefOr[Input[String]] = js.native
+    val optionGroupDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of Options to apply.
       */
-    val options: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.OptionGroupOption]]]] = js.native
+    val options: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.OptionGroupOption]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object OptionGroupState {
     

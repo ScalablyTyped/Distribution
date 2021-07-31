@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutParameterResult extends StObject {
   
   /**
     * The tier assigned to the parameter.
     */
-  var Tier: js.UndefOr[ParameterTier] = js.native
+  var Tier: js.UndefOr[ParameterTier] = js.undefined
   
   /**
     * The new version number of a parameter. If you edit a parameter value, Parameter Store automatically creates a new version and assigns this new version a unique ID. You can reference a parameter version ID in API actions or in Systems Manager documents (SSM documents). By default, if you don't specify a specific version, the system returns the latest parameter value when a parameter is called.
     */
-  var Version: js.UndefOr[PSParameterVersion] = js.native
+  var Version: js.UndefOr[PSParameterVersion] = js.undefined
 }
 object PutParameterResult {
   

@@ -4,20 +4,18 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kycDocument {
   
-  @js.native
   trait CreateKycDocument extends StObject {
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
     /**
       * Gives the type of the KYC document
       */
-    var Type: KycDocumentType = js.native
+    var Type: KycDocumentType
   }
   object CreateKycDocument {
     
@@ -48,7 +46,6 @@ object kycDocument {
     * Remember to change Status to "VALIDATION_ASKED" to submit KYC documents
     * The maximum size per page is about 7Mb (or 10Mb when base64encoded). The following formats are accepted for the documents : .pdf, .jpeg, .jpg, .gif and .png. The minimum size is 1Kb.
     */
-  @js.native
   trait CreateKycPage extends StObject {
     
     /**
@@ -64,7 +61,7 @@ object kycDocument {
       * }
       * ```
       */
-    var File: String = js.native
+    var File: String
   }
   object CreateKycPage {
     
@@ -150,38 +147,39 @@ object kycDocument {
     def UNDERAGE_PERSON: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNDERAGE_PERSON = "UNDERAGE_PERSON".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNDERAGE_PERSON]
   }
   
-  @js.native
-  trait KycDocumentData extends EntityBaseData {
+  trait KycDocumentData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * The date when the document was processed by MANGOPAY
       */
-    var ProcessedDate: Timestamp = js.native
+    var ProcessedDate: Timestamp
     
     /**
       * The message accompanying a refusal
       */
-    var RefusedReasonMessage: String = js.native
+    var RefusedReasonMessage: String
     
     /**
       * The type of reason for refusal
       */
-    var RefusedReasonType: KYCDocumentRefusedReasonType = js.native
+    var RefusedReasonType: KYCDocumentRefusedReasonType
     
     /**
       * The status of this KYC/Dispute document
       */
-    var Status: DocumentStatus = js.native
+    var Status: DocumentStatus
     
     /**
       * Gives the type of the KYC document
       */
-    var Type: KycDocumentType = js.native
+    var Type: KycDocumentType
     
     /**
       * The object owner's UserId
       */
-    var UserId: String = js.native
+    var UserId: String
   }
   object KycDocumentData {
     
@@ -250,23 +248,22 @@ object kycDocument {
     def SHAREHOLDER_DECLARATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHAREHOLDER_DECLARATION = "SHAREHOLDER_DECLARATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHAREHOLDER_DECLARATION]
   }
   
-  @js.native
   trait SubmitKycDocument extends StObject {
     
-    var Id: String = js.native
+    var Id: String
     
     /**
       * The status of this KYC/Dispute document
       */
-    var Status: VALIDATION_ASKED = js.native
+    var Status: VALIDATION_ASKED
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object SubmitKycDocument {
     
     @scala.inline
-    def apply(Id: String, Status: VALIDATION_ASKED): SubmitKycDocument = {
-      val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+    def apply(Id: String): SubmitKycDocument = {
+      val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Status = "VALIDATION_ASKED")
       __obj.asInstanceOf[SubmitKycDocument]
     }
     

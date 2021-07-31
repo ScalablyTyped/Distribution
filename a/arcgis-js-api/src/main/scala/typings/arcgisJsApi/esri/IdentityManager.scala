@@ -5,18 +5,19 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`credential-create`
 import typings.arcgisJsApi.arcgisJsApiStrings.`dialog-create`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityManager extends Evented {
+trait IdentityManager
+  extends StObject
+     with Evented {
   
   /**
     * Returns a [credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) if the user has already signed in to access the given resource and is allowed to do so when using the given application id.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#checkAppAccess)
     */
-  def checkAppAccess(resUrl: String, appId: String): js.Promise[_] = js.native
+  def checkAppAccess(resUrl: String, appId: String): js.Promise[js.Any] = js.native
   
   /**
     * Returns the [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) if the user has already signed in to access the given resource.
@@ -66,8 +67,8 @@ trait IdentityManager extends Evented {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#generateToken)
     */
-  def generateToken(serverInfo: ServerInfo, userInfo: js.Any): js.Promise[_] = js.native
-  def generateToken(serverInfo: ServerInfo, userInfo: js.Any, options: IdentityManagerGenerateTokenOptions): js.Promise[_] = js.native
+  def generateToken(serverInfo: ServerInfo, userInfo: js.Any): js.Promise[js.Any] = js.native
+  def generateToken(serverInfo: ServerInfo, userInfo: js.Any, options: IdentityManagerGenerateTokenOptions): js.Promise[js.Any] = js.native
   
   /**
     * Returns a [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) object that can be used to access the secured resource identified by the input URL.

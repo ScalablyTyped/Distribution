@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatcherAckWatch extends Generic {
+trait WatcherAckWatch
+  extends StObject
+     with Generic {
   
-  var action_id: js.UndefOr[String | js.Array[String]] = js.native
+  var action_id: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var watch_id: String = js.native
+  var watch_id: String
 }
 object WatcherAckWatch {
   

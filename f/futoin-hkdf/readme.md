@@ -11,8 +11,8 @@ RFC5869: HMAC-based Extract-and-Expand Key Derivation Function (HKDF)
 | Full name          | futoin-hkdf |
 | Keywords           | futoin, crypto, hkdf, kdf |
 | # releases         | 8 |
-| # dependents       | 54 |
-| # downloads        | 371843 |
+| # dependents       | 88 |
+| # downloads        | 1119398 |
 | # stars            | 0 |
 
 ## Links

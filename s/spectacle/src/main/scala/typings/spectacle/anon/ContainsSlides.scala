@@ -3,15 +3,13 @@ package typings.spectacle.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainsSlides extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var containsSlides: js.UndefOr[Boolean] = js.native
+  var containsSlides: js.UndefOr[Boolean] = js.undefined
 }
 object ContainsSlides {
   

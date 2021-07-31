@@ -2,25 +2,23 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewOptions extends StObject {
   
-  var evalTemplate: js.UndefOr[Boolean] = js.native
+  var evalTemplate: js.UndefOr[Boolean] = js.undefined
   
-  var hide: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.undefined
   
-  var model: js.UndefOr[js.Object] = js.native
+  var model: js.UndefOr[js.Object] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.undefined
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object ViewOptions {
   

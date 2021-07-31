@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a network connection, which includes either the currently connected network or prior network connections. Provides information about the connection status and connectivity statistics. */
@@ -19,7 +18,7 @@ trait ConnectionProfile extends StObject {
     * @param states The state of the connection profile for which usage data should be returned.
     * @return When the method completes, it returns a list of AttributedNetworkUsage objects, which indicate the sent and received values, in bytes, and the total amount of time the app was connected during the corresponding time interval.
     */
-  def getAttributedNetworkUsageAsync(startTime: Date, endTime: Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getAttributedNetworkUsageAsync(startTime: Date, endTime: Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets the cost information for the connection.
@@ -34,7 +33,7 @@ trait ConnectionProfile extends StObject {
     * @param states The state of the connection profile for which usage data should be returned.
     * @return When the method completes, it returns a list of ConnectivityInterval objects, which indicate the start time and duration for the current or prior connections.
     */
-  def getConnectivityIntervalsAsync(startTime: Date, endTime: Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getConnectivityIntervalsAsync(startTime: Date, endTime: Date, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets the current status of the data plan associated with the connection.
@@ -84,7 +83,7 @@ trait ConnectionProfile extends StObject {
     * @param states The state of the connection profile for which usage data should be returned.
     * @return When the method completes, it returns a list of NetworkUsage objects, which indicate the sent and received values, in bytes, and the total amount of time the profile was connected during the corresponding time interval.
     */
-  def getNetworkUsageAsync(startTime: Date, endTime: Date, granularity: DataUsageGranularity, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getNetworkUsageAsync(startTime: Date, endTime: Date, granularity: DataUsageGranularity, states: NetworkUsageStates): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets a value that indicates the current number of signal bars displayed by the Windows UI for the connection.

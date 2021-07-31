@@ -2,26 +2,24 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingParameters extends StObject {
   
   /**
     * The instance type that you want to preconfigure for your domain. For example, search.m1.small.
     */
-  var DesiredInstanceType: js.UndefOr[PartitionInstanceType] = js.native
+  var DesiredInstanceType: js.UndefOr[PartitionInstanceType] = js.undefined
   
   /**
     * The number of partitions you want to preconfigure for your domain. Only valid when you select m2.2xlarge as the desired instance type.
     */
-  var DesiredPartitionCount: js.UndefOr[UIntValue] = js.native
+  var DesiredPartitionCount: js.UndefOr[UIntValue] = js.undefined
   
   /**
     * The number of replicas you want to preconfigure for each index partition.
     */
-  var DesiredReplicationCount: js.UndefOr[UIntValue] = js.native
+  var DesiredReplicationCount: js.UndefOr[UIntValue] = js.undefined
 }
 object ScalingParameters {
   

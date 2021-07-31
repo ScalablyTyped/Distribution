@@ -2,24 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NilLiteral
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.NilLiteral] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.NilLiteral]
+     with Expression {
   
-  var raw: String = js.native
+  var raw: String
   
-  var value: Null = js.native
+  var value: Null
 }
 object NilLiteral {
   
   @scala.inline
-  def apply(raw: String, `type`: typings.luaparse.luaparseStrings.NilLiteral, value: Null): NilLiteral = {
+  def apply(raw: String, value: Null): NilLiteral = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NilLiteral")
     __obj.asInstanceOf[NilLiteral]
   }
   

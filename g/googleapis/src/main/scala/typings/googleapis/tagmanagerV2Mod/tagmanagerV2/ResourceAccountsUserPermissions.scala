@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$User_permissions")
@@ -31,7 +30,7 @@ class ResourceAccountsUserPermissions protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaUserPermission] = js.native
   def create(callback: BodyResponseCallback[SchemaUserPermission]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserPermission] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserPermission] = js.native
   def create(params: ParamsResourceAccountsUserPermissionsCreate): GaxiosPromise[SchemaUserPermission] = js.native
   def create(
     params: ParamsResourceAccountsUserPermissionsCreate,
@@ -64,7 +63,7 @@ class ResourceAccountsUserPermissions protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsUserPermissionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsUserPermissionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -93,7 +92,7 @@ class ResourceAccountsUserPermissions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUserPermission] = js.native
   def get(callback: BodyResponseCallback[SchemaUserPermission]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserPermission] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserPermission] = js.native
   def get(params: ParamsResourceAccountsUserPermissionsGet): GaxiosPromise[SchemaUserPermission] = js.native
   def get(
     params: ParamsResourceAccountsUserPermissionsGet,
@@ -127,7 +126,7 @@ class ResourceAccountsUserPermissions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListUserPermissionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUserPermissionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUserPermissionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListUserPermissionsResponse] = js.native
   def list(params: ParamsResourceAccountsUserPermissionsList): GaxiosPromise[SchemaListUserPermissionsResponse] = js.native
   def list(
     params: ParamsResourceAccountsUserPermissionsList,
@@ -160,7 +159,7 @@ class ResourceAccountsUserPermissions protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaUserPermission] = js.native
   def update(callback: BodyResponseCallback[SchemaUserPermission]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserPermission] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserPermission] = js.native
   def update(params: ParamsResourceAccountsUserPermissionsUpdate): GaxiosPromise[SchemaUserPermission] = js.native
   def update(
     params: ParamsResourceAccountsUserPermissionsUpdate,

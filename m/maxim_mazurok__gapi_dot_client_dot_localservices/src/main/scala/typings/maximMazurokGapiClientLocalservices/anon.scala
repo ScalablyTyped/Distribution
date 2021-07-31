@@ -2,84 +2,82 @@ package typings.maximMazurokGapiClientLocalservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant. */
     @JSName("endDate.day")
-    var endDateDotday: js.UndefOr[Double] = js.native
+    var endDateDotday: js.UndefOr[Double] = js.undefined
     
     /** Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day. */
     @JSName("endDate.month")
-    var endDateDotmonth: js.UndefOr[Double] = js.native
+    var endDateDotmonth: js.UndefOr[Double] = js.undefined
     
     /** Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year. */
     @JSName("endDate.year")
-    var endDateDotyear: js.UndefOr[Double] = js.native
+    var endDateDotyear: js.UndefOr[Double] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** The maximum number of accounts to return. If the page size is unset, page size will default to 1000. Maximum page_size is 10000. Optional. */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /** The `next_page_token` value returned from a previous request to SearchDetailedLeadReports that indicates where listing should continue. Optional. */
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A query string for searching for account reports. Caller must provide a customer id of their MCC account with an associated Gaia Mint that allows read permission on their linked
       * accounts. Search expressions are case insensitive. Example query: | Query | Description | |-------------------------|-----------------------------------------------| |
       * manager_customer_id:123 | Get Detailed Lead Report for Manager with id | | | 123. | Required.
       */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant. */
     @JSName("startDate.day")
-    var startDateDotday: js.UndefOr[Double] = js.native
+    var startDateDotday: js.UndefOr[Double] = js.undefined
     
     /** Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day. */
     @JSName("startDate.month")
-    var startDateDotmonth: js.UndefOr[Double] = js.native
+    var startDateDotmonth: js.UndefOr[Double] = js.undefined
     
     /** Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year. */
     @JSName("startDate.year")
-    var startDateDotyear: js.UndefOr[Double] = js.native
+    var startDateDotyear: js.UndefOr[Double] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     

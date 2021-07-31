@@ -7,14 +7,16 @@ import typings.koaJwt.anon.Custom
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): Middleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  
   @JSImport("koa-jwt", JSImport.Namespace)
   @js.native
-  def apply(options: Options): Middleware = js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> * / any */ @js.native
@@ -24,18 +26,17 @@ object mod {
     def unless(params: Custom): typings.koa.mod.Middleware[DefaultState, DefaultContext] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var cookie: js.UndefOr[String] = js.native
+    var cookie: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var getToken: js.UndefOr[js.Function2[/* ctx */ Context, /* opts */ this.type, String]] = js.native
+    var getToken: js.UndefOr[js.Function2[/* ctx */ Context, /* opts */ this.type, String]] = js.undefined
     
     var isRevoked: js.UndefOr[
         js.Function3[
@@ -44,17 +45,17 @@ object mod {
           /* token */ String, 
           js.Promise[Boolean]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var issuer: js.UndefOr[String | js.Array[String]] = js.native
+    var issuer: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var passthrough: js.UndefOr[Boolean] = js.native
+    var passthrough: js.UndefOr[Boolean] = js.undefined
     
-    var secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader = js.native
+    var secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader
     
-    var tokenKey: js.UndefOr[String] = js.native
+    var tokenKey: js.UndefOr[String] = js.undefined
   }
   object Options {
     

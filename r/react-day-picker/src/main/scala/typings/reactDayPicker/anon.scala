@@ -4,17 +4,15 @@ import typings.reactDayPicker.modifiersMod.Modifier
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait NextMonth extends StObject {
     
-    var nextMonth: String = js.native
+    var nextMonth: String
     
-    var previousMonth: String = js.native
+    var previousMonth: String
   }
   object NextMonth {
     
@@ -36,12 +34,11 @@ object anon {
   }
   
   /* Inlined std.Partial<react-day-picker.react-day-picker/types/Modifiers.Modifiers> */
-  @js.native
   trait PartialModifiers extends StObject {
     
-    var outside: js.UndefOr[Modifier | js.Array[Modifier]] = js.native
+    var outside: js.UndefOr[Modifier | js.Array[Modifier]] = js.undefined
     
-    var today: js.UndefOr[Modifier | js.Array[Modifier]] = js.native
+    var today: js.UndefOr[Modifier | js.Array[Modifier]] = js.undefined
   }
   object PartialModifiers {
     

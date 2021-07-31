@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,13 +33,6 @@ trait mapsjsWidget extends StObject {
     element: HTMLElement,
     mapUnitsX: Double,
     mapUnitsY: Double,
-    addAction: js.UndefOr[scala.Nothing],
-    dragOptions: DownAction
-  ): Unit = js.native
-  def addFixedContentElement(
-    element: HTMLElement,
-    mapUnitsX: Double,
-    mapUnitsY: Double,
     addAction: js.Function1[/* ele */ HTMLElement, Unit]
   ): Unit = js.native
   def addFixedContentElement(
@@ -48,6 +40,13 @@ trait mapsjsWidget extends StObject {
     mapUnitsX: Double,
     mapUnitsY: Double,
     addAction: js.Function1[/* ele */ HTMLElement, Unit],
+    dragOptions: DownAction
+  ): Unit = js.native
+  def addFixedContentElement(
+    element: HTMLElement,
+    mapUnitsX: Double,
+    mapUnitsY: Double,
+    addAction: Unit,
     dragOptions: DownAction
   ): Unit = js.native
   
@@ -65,17 +64,17 @@ trait mapsjsWidget extends StObject {
     * @returns {element} The SVG element which was added to the DOM.
     */
   def addPathGeometry(styledGeom: styledGeometry, key: String): SVGElement = js.native
-  def addPathGeometry(
-    styledGeom: styledGeometry,
-    key: String,
-    addAction: js.UndefOr[scala.Nothing],
-    removeAction: js.Function1[/* svg */ SVGElement, Unit]
-  ): SVGElement = js.native
   def addPathGeometry(styledGeom: styledGeometry, key: String, addAction: js.Function1[/* svg */ SVGElement, Unit]): SVGElement = js.native
   def addPathGeometry(
     styledGeom: styledGeometry,
     key: String,
     addAction: js.Function1[/* svg */ SVGElement, Unit],
+    removeAction: js.Function1[/* svg */ SVGElement, Unit]
+  ): SVGElement = js.native
+  def addPathGeometry(
+    styledGeom: styledGeometry,
+    key: String,
+    addAction: Unit,
     removeAction: js.Function1[/* svg */ SVGElement, Unit]
   ): SVGElement = js.native
   
@@ -132,14 +131,9 @@ trait mapsjsWidget extends StObject {
     * completes with signature completeAction().
     */
   def flyTo(center: point, zl: Double): Unit = js.native
-  def flyTo(
-    center: point,
-    zl: Double,
-    durationMs: js.UndefOr[scala.Nothing],
-    completeAction: js.Function0[Unit]
-  ): Unit = js.native
   def flyTo(center: point, zl: Double, durationMs: Double): Unit = js.native
   def flyTo(center: point, zl: Double, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  def flyTo(center: point, zl: Double, durationMs: Unit, completeAction: js.Function0[Unit]): Unit = js.native
   
   /**
     * Gets the current actual map scale. This is the ratio of units on 
@@ -385,9 +379,9 @@ trait mapsjsWidget extends StObject {
     * @param {function} [completeAction] Callback to perform on animaton complete.
     */
   def setMapCenterAnimate(center: point): Unit = js.native
-  def setMapCenterAnimate(center: point, durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setMapCenterAnimate(center: point, durationMs: Double): Unit = js.native
   def setMapCenterAnimate(center: point, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  def setMapCenterAnimate(center: point, durationMs: Unit, completeAction: js.Function0[Unit]): Unit = js.native
   
   /**
     * Sets the map center to the current geolocation if supported. The map is
@@ -396,9 +390,9 @@ trait mapsjsWidget extends StObject {
     * @param {function} [completeAction] Callback to perform on animaton complete.
     */
   def setMapCenterToGeolocationAnimate(): Unit = js.native
-  def setMapCenterToGeolocationAnimate(durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setMapCenterToGeolocationAnimate(durationMs: Double): Unit = js.native
   def setMapCenterToGeolocationAnimate(durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  def setMapCenterToGeolocationAnimate(durationMs: Unit, completeAction: js.Function0[Unit]): Unit = js.native
   
   /**
     * Sets the maximum zoom level for the map.
@@ -448,9 +442,9 @@ trait mapsjsWidget extends StObject {
     * completes with signature completeAction().
     */
   def setZoomLevelAnimate(zl: Double): Unit = js.native
-  def setZoomLevelAnimate(zl: Double, durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setZoomLevelAnimate(zl: Double, durationMs: Double): Unit = js.native
   def setZoomLevelAnimate(zl: Double, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
+  def setZoomLevelAnimate(zl: Double, durationMs: Unit, completeAction: js.Function0[Unit]): Unit = js.native
   
   /**
     * Updates an existing path geometry to reflect a style change.

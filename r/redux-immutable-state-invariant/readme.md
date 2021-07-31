@@ -12,7 +12,7 @@ Redux middleware that detects mutations between and outside redux dispatches. Fo
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 72 |
-| # downloads        | 6326802 |
+| # downloads        | 6355967 |
 | # stars            | 5 |
 
 ## Links

@@ -10,9 +10,9 @@ React Form Component
 | ------------------ | :-------------: |
 | Full name          | rc-field-form |
 | Keywords           | react, react-component, react-form, form |
-| # releases         | 81 |
-| # dependents       | 59 |
-| # downloads        | 7079767 |
+| # releases         | 89 |
+| # dependents       | 69 |
+| # downloads        | 10456819 |
 | # stars            | 0 |
 
 ## Links

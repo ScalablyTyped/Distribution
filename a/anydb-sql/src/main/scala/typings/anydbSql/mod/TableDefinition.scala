@@ -3,17 +3,15 @@ package typings.anydbSql.mod
 import typings.anydbSql.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableDefinition extends StObject {
   
-  var columns: Dictionary[ColumnDefinition] = js.native
+  var columns: Dictionary[ColumnDefinition]
   
-  var has: js.UndefOr[Dictionary[From]] = js.native
+  var has: js.UndefOr[Dictionary[From]] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object TableDefinition {
   

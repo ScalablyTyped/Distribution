@@ -2,31 +2,29 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditableAttrs extends StObject {
   
   /**
     * Callback for on cell blur.
     */
-  var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback for onKeyDown.
     */
-  var onKeyDown: js.UndefOr[js.Function0[Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Placeholder text to use for the cell editor field.
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * Function to pass a reference to the input editor field.
     */
-  var ref: js.UndefOr[js.Function1[/* ref */ js.Any, _]] = js.native
+  var ref: js.UndefOr[js.Function1[/* ref */ js.Any, js.Any]] = js.undefined
 }
 object EditableAttrs {
   
@@ -58,7 +56,7 @@ object EditableAttrs {
     def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setRef(value: /* ref */ js.Any => _): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRef(value: /* ref */ js.Any => js.Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)

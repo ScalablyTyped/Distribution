@@ -12,7 +12,7 @@ Chrome Custom Tabs for React Native.
 | Keywords           | react-native, chrome, custom-tabs |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 147803 |
+| # downloads        | 127272 |
 | # stars            | 0 |
 
 ## Links

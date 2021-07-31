@@ -6,17 +6,15 @@ import typings.prosemirrorModel.mod.ProsemirrorNode
 import typings.prosemirrorModel.mod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
   }
   object A {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentDOM extends StObject {
     
-    var contentDOM: js.UndefOr[typings.std.Node | Null] = js.native
+    var contentDOM: js.UndefOr[typings.std.Node | Null] = js.undefined
     
-    var dom: typings.std.Node = js.native
+    var dom: typings.std.Node
   }
   object ContentDOM {
     
@@ -69,25 +66,24 @@ object anon {
     }
   }
   
-  @js.native
-  trait Index[S /* <: Schema[_, _] */] extends StObject {
+  trait Index[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var node: js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+    var node: js.UndefOr[ProsemirrorNode[S] | Null] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Index {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](index: Double, offset: Double): Index[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](index: Double, offset: Double): Index[S] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index[S]]
     }
     
     @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[_], S /* <: Schema[_, _] */] (val x: Self with Index[S]) extends AnyVal {
+    implicit class IndexMutableBuilder[Self <: Index[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Index[S]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -106,17 +102,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Next extends StObject {
     
-    var next: ContentMatch[_] = js.native
+    var next: ContentMatch[js.Any]
     
-    var `type`: NodeType[_] = js.native
+    var `type`: NodeType[js.Any]
   }
   object Next {
     
     @scala.inline
-    def apply(next: ContentMatch[_], `type`: NodeType[_]): Next = {
+    def apply(next: ContentMatch[js.Any], `type`: NodeType[js.Any]): Next = {
       val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Next]
@@ -126,19 +121,18 @@ object anon {
     implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setNext(value: ContentMatch[_]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      def setNext(value: ContentMatch[js.Any]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: NodeType[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: NodeType[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var node: typings.std.Node = js.native
+    var node: typings.std.Node
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Node {
     

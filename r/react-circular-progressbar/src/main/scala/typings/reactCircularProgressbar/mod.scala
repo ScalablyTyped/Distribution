@@ -8,10 +8,13 @@ import typings.reactCircularProgressbar.typesMod.CircularProgressbarDefaultProps
 import typings.reactCircularProgressbar.typesMod.CircularProgressbarStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-circular-progressbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-circular-progressbar", "CircularProgressbar")
   @js.native
@@ -30,13 +33,11 @@ object mod {
     def defaultProps_=(x: CircularProgressbarDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-circular-progressbar", "CircularProgressbarWithChildren")
-  @js.native
-  def CircularProgressbarWithChildren(props: CircularProgressbarWithChildrenProps): Element = js.native
+  @scala.inline
+  def CircularProgressbarWithChildren(props: CircularProgressbarWithChildrenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircularProgressbarWithChildren")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-circular-progressbar", "buildStyles")
-  @js.native
+  @scala.inline
   def buildStyles(
     hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor: BackgroundColor
-  ): CircularProgressbarStyles = js.native
+  ): CircularProgressbarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStyles")(hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[CircularProgressbarStyles]
 }

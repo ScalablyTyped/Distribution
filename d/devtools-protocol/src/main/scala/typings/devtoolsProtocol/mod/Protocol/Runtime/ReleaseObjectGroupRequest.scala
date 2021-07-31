@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseObjectGroupRequest extends StObject {
   
   /**
     * Symbolic object group name.
     */
-  var objectGroup: String = js.native
+  var objectGroup: String
 }
 object ReleaseObjectGroupRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityDkimAttributesResponse extends StObject {
   
   /**
     * The DKIM attributes for an email address or a domain.
     */
-  var DkimAttributes: typings.awsSdk.sesMod.DkimAttributes = js.native
+  var DkimAttributes: typings.awsSdk.sesMod.DkimAttributes
 }
 object GetIdentityDkimAttributesResponse {
   

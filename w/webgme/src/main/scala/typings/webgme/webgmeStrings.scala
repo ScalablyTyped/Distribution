@@ -3,7 +3,6 @@ package typings.webgme
 import typings.webgme.Gme.TerritoryEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webgmeStrings {
@@ -64,7 +63,9 @@ object webgmeStrings {
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait complete extends TerritoryEventType
+  sealed trait complete
+    extends StObject
+       with TerritoryEventType
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   
@@ -89,7 +90,9 @@ object webgmeStrings {
   def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait incomplete extends TerritoryEventType
+  sealed trait incomplete
+    extends StObject
+       with TerritoryEventType
   @scala.inline
   def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
   
@@ -99,7 +102,9 @@ object webgmeStrings {
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait load extends TerritoryEventType
+  sealed trait load
+    extends StObject
+       with TerritoryEventType
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   
@@ -149,12 +154,16 @@ object webgmeStrings {
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait unload extends TerritoryEventType
+  sealed trait unload
+    extends StObject
+       with TerritoryEventType
   @scala.inline
   def unload: unload = "unload".asInstanceOf[unload]
   
   @js.native
-  sealed trait update extends TerritoryEventType
+  sealed trait update
+    extends StObject
+       with TerritoryEventType
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   

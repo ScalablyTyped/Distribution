@@ -2,46 +2,44 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A notification delivered by the API.
   */
-@js.native
 trait SchemaNotification extends StObject {
   
   /**
     * The collection that generated the notification.
     */
-  var collection: js.UndefOr[String] = js.native
+  var collection: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the item that generated the notification.
     */
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of operation that generated the notification.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * A list of actions taken by the user that triggered the notification.
     */
-  var userActions: js.UndefOr[js.Array[SchemaUserAction]] = js.native
+  var userActions: js.UndefOr[js.Array[SchemaUserAction]] = js.undefined
   
   /**
     * The user token provided by the service when it subscribed for
     * notifications.
     */
-  var userToken: js.UndefOr[String] = js.native
+  var userToken: js.UndefOr[String] = js.undefined
   
   /**
     * The secret verify token provided by the service when it subscribed for
     * notifications.
     */
-  var verifyToken: js.UndefOr[String] = js.native
+  var verifyToken: js.UndefOr[String] = js.undefined
 }
 object SchemaNotification {
   

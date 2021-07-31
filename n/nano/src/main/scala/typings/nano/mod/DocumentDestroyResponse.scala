@@ -2,21 +2,19 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/document/common.html#delete--db-docid
-@js.native
 trait DocumentDestroyResponse extends StObject {
   
   // Document ID
-  var id: String = js.native
+  var id: String
   
   // Operation status
-  var ok: Boolean = js.native
+  var ok: Boolean
   
   // Revision MVCC token
-  var rev: String = js.native
+  var rev: String
 }
 object DocumentDestroyResponse {
   

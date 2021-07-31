@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticIpStatus extends StObject {
   
   /**
     * The elastic IP (EIP) address for the cluster.
     */
-  var ElasticIp: js.UndefOr[String] = js.native
+  var ElasticIp: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the elastic IP (EIP) address.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object ElasticIpStatus {
   

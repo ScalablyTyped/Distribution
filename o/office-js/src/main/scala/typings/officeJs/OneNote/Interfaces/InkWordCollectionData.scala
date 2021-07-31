@@ -2,14 +2,12 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "inkWordCollection.toJSON()". */
-@js.native
 trait InkWordCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[InkWordData]] = js.native
+  var items: js.UndefOr[js.Array[InkWordData]] = js.undefined
 }
 object InkWordCollectionData {
   

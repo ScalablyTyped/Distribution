@@ -2,16 +2,14 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Obj definitions
   */
-@js.native
 trait CreateAttributes extends StObject {
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
 }
 object CreateAttributes {
   

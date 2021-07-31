@@ -2,31 +2,31 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PieDatasetConfig extends CommonDatasetConfig {
+trait PieDatasetConfig
+  extends StObject
+     with CommonDatasetConfig {
   
-  var selectionShift: js.UndefOr[Double] = js.native
+  var selectionShift: js.UndefOr[Double] = js.undefined
   
-  var sliceSpace: js.UndefOr[Double] = js.native
+  var sliceSpace: js.UndefOr[Double] = js.undefined
   
-  var valueLineColor: js.UndefOr[Color] = js.native
+  var valueLineColor: js.UndefOr[Color] = js.undefined
   
-  var valueLinePart1Length: js.UndefOr[Double] = js.native
+  var valueLinePart1Length: js.UndefOr[Double] = js.undefined
   
-  var valueLinePart1OffsetPercentage: js.UndefOr[Double] = js.native
+  var valueLinePart1OffsetPercentage: js.UndefOr[Double] = js.undefined
   
-  var valueLinePart2Length: js.UndefOr[Double] = js.native
+  var valueLinePart2Length: js.UndefOr[Double] = js.undefined
   
-  var valueLineVariableLength: js.UndefOr[Boolean] = js.native
+  var valueLineVariableLength: js.UndefOr[Boolean] = js.undefined
   
-  var valueLineWidth: js.UndefOr[Double] = js.native
+  var valueLineWidth: js.UndefOr[Double] = js.undefined
   
-  var xValuePosition: js.UndefOr[PieValuePosition] = js.native
+  var xValuePosition: js.UndefOr[PieValuePosition] = js.undefined
   
-  var yValuePosition: js.UndefOr[PieValuePosition] = js.native
+  var yValuePosition: js.UndefOr[PieValuePosition] = js.undefined
 }
 object PieDatasetConfig {
   

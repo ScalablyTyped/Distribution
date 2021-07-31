@@ -2,21 +2,19 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompiledResult[ErrorType] extends StObject {
   
-  var ast: js.UndefOr[ASTElement] = js.native
+  var ast: js.UndefOr[ASTElement] = js.undefined
   
-  var errors: js.Array[ErrorType] = js.native
+  var errors: js.Array[ErrorType]
   
-  var render: String = js.native
+  var render: String
   
-  var staticRenderFns: js.Array[String] = js.native
+  var staticRenderFns: js.Array[String]
   
-  var tips: js.Array[ErrorType] = js.native
+  var tips: js.Array[ErrorType]
 }
 object CompiledResult {
   
@@ -32,7 +30,7 @@ object CompiledResult {
   }
   
   @scala.inline
-  implicit class CompiledResultMutableBuilder[Self <: CompiledResult[_], ErrorType] (val x: Self with CompiledResult[ErrorType]) extends AnyVal {
+  implicit class CompiledResultMutableBuilder[Self <: CompiledResult[?], ErrorType] (val x: Self & CompiledResult[ErrorType]) extends AnyVal {
     
     @scala.inline
     def setAst(value: ASTElement): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])

@@ -7,44 +7,42 @@ import typings.mangopay2NodejsSdk.mod.mandate.MandateStatus
 import typings.mangopay2NodejsSdk.mod.mandate.MandateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.mandate.MandateData> */
-@js.native
 trait PartialMandateData extends StObject {
   
-  var BankAccountId: js.UndefOr[String] = js.native
+  var BankAccountId: js.UndefOr[String] = js.undefined
   
-  var BankReference: js.UndefOr[String] = js.native
+  var BankReference: js.UndefOr[String] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var Culture: js.UndefOr[MandateCultureCode] = js.native
+  var Culture: js.UndefOr[MandateCultureCode] = js.undefined
   
-  var DocumentURL: js.UndefOr[String] = js.native
+  var DocumentURL: js.UndefOr[String] = js.undefined
   
-  var ExecutionType: js.UndefOr[MandateExecutionType] = js.native
+  var ExecutionType: js.UndefOr[MandateExecutionType] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var MandateType: js.UndefOr[typings.mangopay2NodejsSdk.mod.mandate.MandateType] = js.native
+  var MandateType: js.UndefOr[typings.mangopay2NodejsSdk.mod.mandate.MandateType] = js.undefined
   
-  var RedirectURL: js.UndefOr[String] = js.native
+  var RedirectURL: js.UndefOr[String] = js.undefined
   
-  var ResultCode: js.UndefOr[String] = js.native
+  var ResultCode: js.UndefOr[String] = js.undefined
   
-  var ResultMessage: js.UndefOr[String] = js.native
+  var ResultMessage: js.UndefOr[String] = js.undefined
   
-  var ReturnURL: js.UndefOr[String] = js.native
+  var ReturnURL: js.UndefOr[String] = js.undefined
   
-  var Scheme: js.UndefOr[MandateScheme] = js.native
+  var Scheme: js.UndefOr[MandateScheme] = js.undefined
   
-  var Status: js.UndefOr[MandateStatus] = js.native
+  var Status: js.UndefOr[MandateStatus] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var UserId: js.UndefOr[String] = js.native
+  var UserId: js.UndefOr[String] = js.undefined
 }
 object PartialMandateData {
   

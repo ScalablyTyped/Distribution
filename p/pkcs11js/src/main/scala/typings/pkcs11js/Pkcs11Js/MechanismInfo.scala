@@ -2,17 +2,15 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MechanismInfo extends StObject {
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var maxKeySize: Double = js.native
+  var maxKeySize: Double
   
-  var minKeySize: Double = js.native
+  var minKeySize: Double
 }
 object MechanismInfo {
   

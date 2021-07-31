@@ -2,17 +2,15 @@ package typings.mixto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Mixto {
   
-  @js.native
   trait IMixinStatic extends StObject {
     
-    def extend(`object`: js.Any): Unit = js.native
+    def extend(`object`: js.Any): Unit
     
-    def includeInto(constructor: js.Any): Unit = js.native
+    def includeInto(constructor: js.Any): Unit
   }
   object IMixinStatic {
     

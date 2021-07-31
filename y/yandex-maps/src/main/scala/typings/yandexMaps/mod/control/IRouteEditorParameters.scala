@@ -3,17 +3,15 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.anon.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRouteEditorParameters extends StObject {
   
-  var data: js.UndefOr[Image] = js.native
+  var data: js.UndefOr[Image] = js.undefined
   
-  var options: js.UndefOr[IBaseButtonParametersOptions] = js.native
+  var options: js.UndefOr[IBaseButtonParametersOptions] = js.undefined
   
-  var state: js.UndefOr[js.Object] = js.native
+  var state: js.UndefOr[js.Object] = js.undefined
 }
 object IRouteEditorParameters {
   

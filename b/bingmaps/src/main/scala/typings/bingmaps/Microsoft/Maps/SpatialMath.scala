@@ -2,7 +2,6 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,31 +18,45 @@ object SpatialMath {
     
     /** Area in Acres */
     @js.native
-    sealed trait Acres extends AreaUnits
+    sealed trait Acres
+      extends StObject
+         with AreaUnits
     
     /** Area in Hectares */
     @js.native
-    sealed trait Hectares extends AreaUnits
+    sealed trait Hectares
+      extends StObject
+         with AreaUnits
     
     /** Area in square Feet */
     @js.native
-    sealed trait SquareFeet extends AreaUnits
+    sealed trait SquareFeet
+      extends StObject
+         with AreaUnits
     
     /** Area in square kilometers */
     @js.native
-    sealed trait SquareKilometers extends AreaUnits
+    sealed trait SquareKilometers
+      extends StObject
+         with AreaUnits
     
     /** Area in square meters */
     @js.native
-    sealed trait SquareMeters extends AreaUnits
+    sealed trait SquareMeters
+      extends StObject
+         with AreaUnits
     
     /** Area in square miles */
     @js.native
-    sealed trait SquareMiles extends AreaUnits
+    sealed trait SquareMiles
+      extends StObject
+         with AreaUnits
     
     /** Area in square Yards */
     @js.native
-    sealed trait SquareYards extends AreaUnits
+    sealed trait SquareYards
+      extends StObject
+         with AreaUnits
   }
   
   @js.native
@@ -54,27 +67,39 @@ object SpatialMath {
     
     /** A distance in Feet */
     @js.native
-    sealed trait Feet extends DistanceUnits
+    sealed trait Feet
+      extends StObject
+         with DistanceUnits
     
     /** A distance in kilometers */
     @js.native
-    sealed trait Kilometers extends DistanceUnits
+    sealed trait Kilometers
+      extends StObject
+         with DistanceUnits
     
     /** A distance in meters */
     @js.native
-    sealed trait Meters extends DistanceUnits
+    sealed trait Meters
+      extends StObject
+         with DistanceUnits
     
     /** A distance in miles */
     @js.native
-    sealed trait Miles extends DistanceUnits
+    sealed trait Miles
+      extends StObject
+         with DistanceUnits
     
     /** A distance in Nautical Miles */
     @js.native
-    sealed trait NauticalMiles extends DistanceUnits
+    sealed trait NauticalMiles
+      extends StObject
+         with DistanceUnits
     
     /** A distance in Yards */
     @js.native
-    sealed trait Yards extends DistanceUnits
+    sealed trait Yards
+      extends StObject
+         with DistanceUnits
   }
   
   //////////////////////////////////////////////
@@ -94,15 +119,21 @@ object SpatialMath {
       
       /** Adds a flat end to a buffered line that touches the end of the line. */
       @js.native
-      sealed trait Flat extends BufferEndCap
+      sealed trait Flat
+        extends StObject
+           with BufferEndCap
       
       /** Adds a rounded end to a buffered line. */
       @js.native
-      sealed trait Round extends BufferEndCap
+      sealed trait Round
+        extends StObject
+           with BufferEndCap
       
       /** Adds a square end to a buffered line that has a buffer area at the end of the line. */
       @js.native
-      sealed trait Square extends BufferEndCap
+      sealed trait Square
+        extends StObject
+           with BufferEndCap
     }
   }
   

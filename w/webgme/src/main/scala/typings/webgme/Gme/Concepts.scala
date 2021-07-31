@@ -2,17 +2,15 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Concepts {
   
-  @js.native
   trait ComposeChain extends StObject {
     
-    var objId: String = js.native
+    var objId: String
     
-    var subCompId: js.UndefOr[String] = js.native
+    var subCompId: js.UndefOr[String] = js.undefined
   }
   object ComposeChain {
     
@@ -36,12 +34,11 @@ object Concepts {
     }
   }
   
-  @js.native
   trait ConnectionCollectionPair extends StObject {
     
-    var destinations: js.Array[ComposeChain] = js.native
+    var destinations: js.Array[ComposeChain]
     
-    var sources: js.Array[ComposeChain] = js.native
+    var sources: js.Array[ComposeChain]
   }
   object ConnectionCollectionPair {
     
@@ -68,12 +65,11 @@ object Concepts {
     }
   }
   
-  @js.native
   trait ConnectionStyle extends StObject {
     
-    var endArrow: String = js.native
+    var endArrow: String
     
-    var startArrow: String = js.native
+    var startArrow: String
   }
   object ConnectionStyle {
     

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,17 +45,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       return htmlOutput;
   *     }
   */
-@js.native
 trait DataViewDefinitionBuilder extends StObject {
   
-  def build(): DataViewDefinition = js.native
+  def build(): DataViewDefinition
   
-  def setColumns(columns: js.Array[_]): DataViewDefinitionBuilder = js.native
+  def setColumns(columns: js.Array[js.Any]): DataViewDefinitionBuilder
 }
 object DataViewDefinitionBuilder {
   
   @scala.inline
-  def apply(build: () => DataViewDefinition, setColumns: js.Array[_] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
+  def apply(build: () => DataViewDefinition, setColumns: js.Array[js.Any] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setColumns = js.Any.fromFunction1(setColumns))
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }
@@ -68,6 +66,6 @@ object DataViewDefinitionBuilder {
     def setBuild(value: () => DataViewDefinition): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetColumns(value: js.Array[_] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
+    def setSetColumns(value: js.Array[js.Any] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

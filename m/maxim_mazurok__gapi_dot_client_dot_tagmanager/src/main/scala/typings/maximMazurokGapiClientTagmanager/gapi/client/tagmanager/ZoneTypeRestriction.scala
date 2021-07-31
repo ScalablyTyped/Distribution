@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoneTypeRestriction extends StObject {
   
   /** True if type restrictions have been enabled for this Zone. */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
   /** List of type public ids that have been whitelisted for use in this Zone. */
-  var whitelistedTypeId: js.UndefOr[js.Array[String]] = js.native
+  var whitelistedTypeId: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ZoneTypeRestriction {
   

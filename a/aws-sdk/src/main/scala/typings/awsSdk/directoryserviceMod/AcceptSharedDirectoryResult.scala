@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptSharedDirectoryResult extends StObject {
   
   /**
     * The shared directory in the directory consumer account.
     */
-  var SharedDirectory: js.UndefOr[typings.awsSdk.directoryserviceMod.SharedDirectory] = js.native
+  var SharedDirectory: js.UndefOr[typings.awsSdk.directoryserviceMod.SharedDirectory] = js.undefined
 }
 object AcceptSharedDirectoryResult {
   

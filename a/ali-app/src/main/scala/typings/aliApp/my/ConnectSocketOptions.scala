@@ -4,23 +4,22 @@ import typings.aliApp.aliAppStrings.GET
 import typings.aliApp.aliAppStrings.POST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectSocketOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 请求的参数 */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /** 设置请求的头部 */
-  var header: js.UndefOr[RequestHeader] = js.native
+  var header: js.UndefOr[RequestHeader] = js.undefined
   
-  var method: js.UndefOr[GET | POST] = js.native
+  var method: js.UndefOr[GET | POST] = js.undefined
   
   /** 目标服务器url */
-  var url: String = js.native
+  var url: String
 }
 object ConnectSocketOptions {
   

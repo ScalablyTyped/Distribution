@@ -2,24 +2,22 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updated transaction details resulting from a change in shipping method.
   */
-@js.native
 trait ApplePayShippingMethodUpdate extends StObject {
   
   /**
     * An optional list of updated line items.
     */
-  var newLineItems: js.UndefOr[js.Array[ApplePayLineItem]] = js.native
+  var newLineItems: js.UndefOr[js.Array[ApplePayLineItem]] = js.undefined
   
   /**
     * The new total resulting from a change in the shipping method.
     */
-  var newTotal: ApplePayLineItem = js.native
+  var newTotal: ApplePayLineItem
 }
 object ApplePayShippingMethodUpdate {
   

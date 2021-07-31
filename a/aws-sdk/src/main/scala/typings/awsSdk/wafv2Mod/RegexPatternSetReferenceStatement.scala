@@ -2,26 +2,24 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexPatternSetReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the RegexPatternSet that this statement references.
     */
-  var ARN: ResourceArn = js.native
+  var ARN: ResourceArn
   
   /**
     * The part of a web request that you want AWS WAF to inspect. For more information, see FieldToMatch. 
     */
-  var FieldToMatch: typings.awsSdk.wafv2Mod.FieldToMatch = js.native
+  var FieldToMatch: typings.awsSdk.wafv2Mod.FieldToMatch
   
   /**
     * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. If you specify one or more transformations in a rule statement, AWS WAF performs all transformations on the content of the request component identified by FieldToMatch, starting from the lowest priority setting, before inspecting the content for a match.
     */
-  var TextTransformations: typings.awsSdk.wafv2Mod.TextTransformations = js.native
+  var TextTransformations: typings.awsSdk.wafv2Mod.TextTransformations
 }
 object RegexPatternSetReferenceStatement {
   

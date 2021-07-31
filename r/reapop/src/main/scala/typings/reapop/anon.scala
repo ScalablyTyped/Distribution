@@ -7,21 +7,19 @@ import typings.reapop.typesMod.Position
 import typings.reapop.typesMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DismissNotification extends StObject {
     
-    def dismissNotification(id: String): Unit = js.native
+    def dismissNotification(id: String): Unit
     
-    def dismissNotifications(): Unit = js.native
+    def dismissNotifications(): Unit
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
     
-    def notify(notification: PartialNotification): Unit = js.native
+    def notify(notification: PartialNotification): Unit
   }
   object DismissNotification {
     
@@ -58,34 +56,33 @@ object anon {
   }
   
   /* Inlined std.Partial<reapop.reapop/dist/reducers/notifications/types.Notification> */
-  @js.native
   trait PartialNotification extends StObject {
     
-    var allowHTML: js.UndefOr[Boolean] = js.native
+    var allowHTML: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[NotificationButton]] = js.native
+    var buttons: js.UndefOr[js.Array[NotificationButton]] = js.undefined
     
-    var dismissAfter: js.UndefOr[Double] = js.native
+    var dismissAfter: js.UndefOr[Double] = js.undefined
     
-    var dismissible: js.UndefOr[Boolean] = js.native
+    var dismissible: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var showDismissButton: js.UndefOr[Boolean] = js.native
+    var showDismissButton: js.UndefOr[Boolean] = js.undefined
     
-    var status: js.UndefOr[Status] = js.native
+    var status: js.UndefOr[Status] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PartialNotification {
     
@@ -182,14 +179,13 @@ object anon {
   }
   
   /* Inlined std.Partial<reapop.reapop/dist/constants.NotificationConfig> */
-  @js.native
   trait PartialNotificationConfig extends StObject {
     
-    var customizeNotification: js.UndefOr[(js.Function1[/* notification */ NewNotification, Unit]) | Null] = js.native
+    var customizeNotification: js.UndefOr[(js.Function1[/* notification */ NewNotification, Unit]) | Null] = js.undefined
     
-    var defaultProps: js.UndefOr[PartialNotification] = js.native
+    var defaultProps: js.UndefOr[PartialNotification] = js.undefined
     
-    var generateId: js.UndefOr[(js.Function1[/* notification */ NewNotification, String]) | Null] = js.native
+    var generateId: js.UndefOr[(js.Function1[/* notification */ NewNotification, String]) | Null] = js.undefined
   }
   object PartialNotificationConfig {
     

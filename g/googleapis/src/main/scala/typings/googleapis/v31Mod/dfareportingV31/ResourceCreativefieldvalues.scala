@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Creativefieldvalues")
@@ -32,7 +31,7 @@ class ResourceCreativefieldvalues protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCreativefieldvaluesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCreativefieldvaluesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceCreativefieldvalues protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def get(callback: BodyResponseCallback[SchemaCreativeFieldValue]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def get(params: ParamsResourceCreativefieldvaluesGet): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def get(
     params: ParamsResourceCreativefieldvaluesGet,
@@ -97,7 +96,7 @@ class ResourceCreativefieldvalues protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreativeFieldValue]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def insert(params: ParamsResourceCreativefieldvaluesInsert): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def insert(
     params: ParamsResourceCreativefieldvaluesInsert,
@@ -137,7 +136,7 @@ class ResourceCreativefieldvalues protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCreativeFieldValuesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCreativeFieldValuesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValuesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValuesListResponse] = js.native
   def list(params: ParamsResourceCreativefieldvaluesList): GaxiosPromise[SchemaCreativeFieldValuesListResponse] = js.native
   def list(
     params: ParamsResourceCreativefieldvaluesList,
@@ -173,7 +172,7 @@ class ResourceCreativefieldvalues protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def patch(callback: BodyResponseCallback[SchemaCreativeFieldValue]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def patch(params: ParamsResourceCreativefieldvaluesPatch): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def patch(
     params: ParamsResourceCreativefieldvaluesPatch,
@@ -207,7 +206,7 @@ class ResourceCreativefieldvalues protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def update(callback: BodyResponseCallback[SchemaCreativeFieldValue]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def update(params: ParamsResourceCreativefieldvaluesUpdate): GaxiosPromise[SchemaCreativeFieldValue] = js.native
   def update(
     params: ParamsResourceCreativefieldvaluesUpdate,

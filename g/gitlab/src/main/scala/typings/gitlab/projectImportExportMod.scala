@@ -7,7 +7,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectImportExportMod {
@@ -41,12 +40,11 @@ object projectImportExportMod {
     def schedule(projectId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
   }
   
-  @js.native
   trait UploadMetadata extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object UploadMetadata {
     

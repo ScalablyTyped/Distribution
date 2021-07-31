@@ -3,13 +3,14 @@ package typings.awsSdkSignatureV4
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.signatureMod.EventSigner
+import typings.awsSdkTypes.signatureMod.EventSigningArguments
+import typings.awsSdkTypes.signatureMod.FormattedEvent
 import typings.awsSdkTypes.signatureMod.RequestPresigner
 import typings.awsSdkTypes.signatureMod.RequestSigner
 import typings.awsSdkTypes.signatureMod.StringSigner
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureV4Mod {
@@ -17,11 +18,12 @@ object signatureV4Mod {
   @JSImport("@aws-sdk/signature-v4/dist/cjs/SignatureV4", "SignatureV4")
   @js.native
   class SignatureV4 protected ()
-    extends RequestPresigner
+    extends StObject
+       with RequestPresigner
        with RequestSigner
        with StringSigner
        with EventSigner {
-    def this(hasApplyChecksumCredentialsRegionServiceSha256UriEscapePath: SignatureV4Init with SignatureV4CryptoInit) = this()
+    def this(hasApplyChecksumCredentialsRegionServiceSha256UriEscapePath: SignatureV4Init & SignatureV4CryptoInit) = this()
     
     val applyChecksum: js.Any = js.native
     
@@ -43,6 +45,12 @@ object signatureV4Mod {
     
     val sha256: js.Any = js.native
     
+    /**
+      * Sign the individual event of the event stream.
+      */
+    /* CompleteClass */
+    override def sign(event: FormattedEvent, options: EventSigningArguments): js.Promise[String] = js.native
+    
     var signEvent: js.Any = js.native
     
     var signRequest: js.Any = js.native
@@ -52,10 +60,9 @@ object signatureV4Mod {
     val uriEscapePath: js.Any = js.native
   }
   
-  @js.native
   trait SignatureV4CryptoInit extends StObject {
     
-    var sha256: HashConstructor = js.native
+    var sha256: HashConstructor
   }
   object SignatureV4CryptoInit {
     
@@ -73,7 +80,6 @@ object signatureV4Mod {
     }
   }
   
-  @js.native
   trait SignatureV4Init extends StObject {
     
     /**
@@ -84,30 +90,30 @@ object signatureV4Mod {
       *
       * @default [true]
       */
-    var applyChecksum: js.UndefOr[Boolean] = js.native
+    var applyChecksum: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The credentials with which the request should be signed or a function
       * that returns a promise that will be resolved with credentials.
       */
-    var credentials: Credentials | Provider[Credentials] = js.native
+    var credentials: Credentials | Provider[Credentials]
     
     /**
       * The region name or a function that returns a promise that will be
       * resolved with the region name.
       */
-    var region: String | Provider[String] = js.native
+    var region: String | Provider[String]
     
     /**
       * The service signing name.
       */
-    var service: String = js.native
+    var service: String
     
     /**
       * A constructor function for a hash object that will calculate SHA-256 HMAC
       * checksums.
       */
-    var sha256: js.UndefOr[HashConstructor] = js.native
+    var sha256: js.UndefOr[HashConstructor] = js.undefined
     
     /**
       * Whether to uri-escape the request URI path as part of computing the
@@ -116,7 +122,7 @@ object signatureV4Mod {
       *
       * @default [true]
       */
-    var uriEscapePath: js.UndefOr[Boolean] = js.native
+    var uriEscapePath: js.UndefOr[Boolean] = js.undefined
   }
   object SignatureV4Init {
     

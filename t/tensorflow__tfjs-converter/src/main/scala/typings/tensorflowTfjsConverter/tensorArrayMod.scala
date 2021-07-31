@@ -6,7 +6,6 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorArrayMod {
@@ -57,9 +56,9 @@ object tensorArrayMod {
       * @param [dtype]
       */
     def gather(): Tensor[Rank] = js.native
-    def gather(indices: js.UndefOr[scala.Nothing], dtype: DataType): Tensor[Rank] = js.native
     def gather(indices: js.Array[Double]): Tensor[Rank] = js.native
     def gather(indices: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
+    def gather(indices: Unit, dtype: DataType): Tensor[Rank] = js.native
     
     val id: Double = js.native
     
@@ -115,16 +114,15 @@ object tensorArrayMod {
     def writeMany(indices: js.Array[Double], tensors: js.Array[Tensor[Rank]]): Unit = js.native
   }
   
-  @js.native
   trait TensorWithState extends StObject {
     
-    var cleared: js.UndefOr[Boolean] = js.native
+    var cleared: js.UndefOr[Boolean] = js.undefined
     
-    var read: js.UndefOr[Boolean] = js.native
+    var read: js.UndefOr[Boolean] = js.undefined
     
-    var tensor: js.UndefOr[Tensor[Rank]] = js.native
+    var tensor: js.UndefOr[Tensor[Rank]] = js.undefined
     
-    var written: js.UndefOr[Boolean] = js.native
+    var written: js.UndefOr[Boolean] = js.undefined
   }
   object TensorWithState {
     

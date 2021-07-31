@@ -2,10 +2,8 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultCode extends StObject {
   
   // resultCode | 描述
@@ -17,7 +15,7 @@ trait ResultCode extends StObject {
   // 6002 | 网络连接出错
   // 6004 | 支付结果未知（有可能已经支付成功），请查询商户订单列表中订单的支付状态
   // 99 | 用户点击忘记密码导致快捷界面退出(only iOS)
-  var resultCode: String = js.native
+  var resultCode: String
 }
 object ResultCode {
   

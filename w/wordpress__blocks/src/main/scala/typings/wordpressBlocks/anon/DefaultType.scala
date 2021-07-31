@@ -3,22 +3,20 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.wordpressBlocksStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultType extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var `type`: string = js.native
+  var `type`: string
 }
 object DefaultType {
   
   @scala.inline
-  def apply(`type`: string): DefaultType = {
+  def apply(): DefaultType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[DefaultType]
   }
   

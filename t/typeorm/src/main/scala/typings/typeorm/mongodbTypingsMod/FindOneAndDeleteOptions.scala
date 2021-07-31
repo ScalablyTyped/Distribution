@@ -2,26 +2,24 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOneAndDeleteOptions extends StObject {
   
   /**
     * The maximum amount of time to allow the query to run.
     */
-  var maxTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Limits the fields to return for all matching documents.
     */
-  var projection: js.UndefOr[js.Object] = js.native
+  var projection: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Determines which document the operation modifies if the query selects multiple documents.
     */
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
 }
 object FindOneAndDeleteOptions {
   

@@ -5,7 +5,6 @@ import typings.twineSugarcube.twineSugarcubeStrings.`false`
 import typings.twineSugarcube.twineSugarcubeStrings.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extensionsMod {
@@ -342,45 +341,44 @@ object extensionsMod {
       def wiki(sources: java.lang.String*): this.type = js.native
     }
     
-    @js.native
     trait JQueryAriaClickOptions extends StObject {
       
       /**
         * Value for the aria-controls attribute.
         */
-      var controls: js.UndefOr[java.lang.String] = js.native
+      var controls: js.UndefOr[java.lang.String] = js.undefined
       
       /**
         * Data to be passed to the handler in event.data when an event is triggered.
         */
-      var data: js.UndefOr[js.Any] = js.native
+      var data: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Value for the aria-label and title attributes.
         */
-      var label: js.UndefOr[java.lang.String] = js.native
+      var label: js.UndefOr[java.lang.String] = js.undefined
       
       /**
         * A period-separated list of event namespaces.
         */
-      var namespace: js.UndefOr[java.lang.String] = js.native
+      var namespace: js.UndefOr[java.lang.String] = js.undefined
       
       /**
         * Whether the clickables are single-use—i.e., the handler callback runs only once and then removes itself.
         * If omitted, defaults to false.
         */
-      var one: js.UndefOr[Boolean] = js.native
+      var one: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Value for the aria-pressed attribute (valid values: "true", "false").
         */
-      var pressed: js.UndefOr[`true` | `false`] = js.native
+      var pressed: js.UndefOr[`true` | `false`] = js.undefined
       
       /**
         * A selector applied to the target element(s) to filter the descendants that triggered the event. If omitted or
         * null, the event is always handled when it reaches the target element(s)
         */
-      var selector: js.UndefOr[java.lang.String] = js.native
+      var selector: js.UndefOr[java.lang.String] = js.undefined
     }
     object JQueryAriaClickOptions {
       
@@ -437,7 +435,6 @@ object extensionsMod {
       }
     }
     
-    @js.native
     trait JQueryStatic extends StObject {
       
       /**
@@ -448,7 +445,7 @@ object extensionsMod {
         * @example
         * $.wiki('<<somemacro>>'); // Invokes the <<somemacro>> macro, discarding any output
         */
-      def wiki(sources: java.lang.String*): Unit = js.native
+      def wiki(sources: java.lang.String*): Unit
     }
     object JQueryStatic {
       
@@ -522,7 +519,6 @@ object extensionsMod {
       def trunc(num: Double): Double = js.native
     }
     
-    @js.native
     trait Number extends StObject {
       
       /**
@@ -534,7 +530,7 @@ object extensionsMod {
         * $stat.clamp(0, 200)  → Clamps $stat to the bounds 0–200 and returns the new value
         * $stat.clamp(1, 6.6)  → Clamps $stat to the bounds 1–6.6 and returns the new value
         */
-      def clamp(min: Double, max: Double): Double = js.native
+      def clamp(min: Double, max: Double): Double
     }
     object Number {
       
@@ -552,7 +548,6 @@ object extensionsMod {
       }
     }
     
-    @js.native
     trait RegExpConstructor extends StObject {
       
       /**
@@ -562,7 +557,7 @@ object extensionsMod {
         * @example
         * RegExp.escape('That will be $5 (cash only)') // Returns 'That will be \$5 \(cash only\)'
         */
-      def escape(text: java.lang.String): java.lang.String = js.native
+      def escape(text: java.lang.String): java.lang.String
     }
     object RegExpConstructor {
       
@@ -618,7 +613,6 @@ object extensionsMod {
       def toUpperFirst(): java.lang.String = js.native
     }
     
-    @js.native
     trait StringConstructor extends StObject {
       
       /**
@@ -640,7 +634,7 @@ object extensionsMod {
         * String.format("{0,6}", "foo"); // Returns "   foo"
         * String.format("{0,-6}", "foo"); //Returns "foo   "
         */
-      def format(format: java.lang.String, arguments: js.Any*): java.lang.String = js.native
+      def format(format: java.lang.String, arguments: js.Any*): java.lang.String
     }
     object StringConstructor {
       

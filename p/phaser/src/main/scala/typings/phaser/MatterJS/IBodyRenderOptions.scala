@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBodyRenderOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait IBodyRenderOptions extends StObject {
     * @property fillColor
     * @type number
     */
-  var fillColor: js.UndefOr[Double] = js.native
+  var fillColor: js.UndefOr[Double] = js.undefined
   
   /**
     * A value that defines the fill opacity to use when rendering the body.
@@ -22,7 +20,7 @@ trait IBodyRenderOptions extends StObject {
     * @property fillOpacity
     * @type number
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * A hex color value that defines the line color to use when rendering the body.
@@ -30,7 +28,7 @@ trait IBodyRenderOptions extends StObject {
     * @property lineColor
     * @type number
     */
-  var lineColor: js.UndefOr[Double] = js.native
+  var lineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * A value that defines the line opacity to use when rendering the body.
@@ -38,7 +36,7 @@ trait IBodyRenderOptions extends StObject {
     * @property lineOpacity
     * @type number
     */
-  var lineOpacity: js.UndefOr[Double] = js.native
+  var lineOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Number` that defines the line width to use when rendering the body outline.
@@ -46,7 +44,7 @@ trait IBodyRenderOptions extends StObject {
     * @property lineThickness
     * @type number
     */
-  var lineThickness: js.UndefOr[Double] = js.native
+  var lineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the opacity. 1.0 is fully opaque. 0.0 is fully translucent.
@@ -55,7 +53,7 @@ trait IBodyRenderOptions extends StObject {
     * @type number
     * @default 1
   		 */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * An `Object` that defines the sprite properties to use when rendering, if any.
@@ -63,7 +61,7 @@ trait IBodyRenderOptions extends StObject {
     * @property sprite
     * @type object
     */
-  var sprite: js.UndefOr[IBodyRenderOptionsSprite] = js.native
+  var sprite: js.UndefOr[IBodyRenderOptionsSprite] = js.undefined
   
   /**
     * A flag that indicates if the body should be rendered.
@@ -72,7 +70,7 @@ trait IBodyRenderOptions extends StObject {
     * @type boolean
     * @default true
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IBodyRenderOptions {
   

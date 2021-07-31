@@ -3,7 +3,6 @@ package typings.materialUiPagination
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,16 +14,15 @@ object mod {
   
   type Pagination = Component[PaginationProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationProps extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var display: Double = js.native
+    var display: Double
     
-    def onChange(value: Double): Unit = js.native
+    def onChange(value: Double): Unit
     
-    var total: Double = js.native
+    var total: Double
   }
   object PaginationProps {
     

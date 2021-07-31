@@ -12,18 +12,20 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@callstack/react-theme-provider", "createTheming")
+  @JSImport("@callstack/react-theme-provider", JSImport.Namespace)
   @js.native
-  def createTheming[Theme](defaultTheme: Theme): ThemingType[Theme] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createTheming[Theme](defaultTheme: Theme): ThemingType[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(defaultTheme.asInstanceOf[js.Any]).asInstanceOf[ThemingType[Theme]]
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<T[P]> * / object}
-    */ $DeepPartial with TopLevel[js.Any]
+    */ $DeepPartial & TopLevel[js.Any]
   
   @js.native
   trait ThemingType[Theme] extends StObject {
@@ -33,8 +35,8 @@ object mod {
     def useTheme(): Theme = js.native
     def useTheme(overrides: DeepPartial[Theme]): Theme = js.native
     
-    def withTheme[Props /* <: ThemeTheme[Theme] */, C](WrappedComponent: ComponentType[Props] with C): (ComponentType[(Without[Props, theme]) with `1`[Theme]]) with (NonReactStatics[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappedComponent */ _, 
+    def withTheme[Props /* <: ThemeTheme[Theme] */, C](WrappedComponent: ComponentType[Props] & C): (ComponentType[(Without[Props, theme]) & `1`[Theme]]) & (NonReactStatics[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappedComponent */ js.Any, 
         js.Object
       ]) = js.native
   }

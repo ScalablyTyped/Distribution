@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenPopulatedEventUIParam extends StObject {
   
   /**
     * Gets the data ID of the row.
     */
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the hierarchical grid object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the row element for the row that was populated.
     */
-  var parentrow: js.UndefOr[String] = js.native
+  var parentrow: js.UndefOr[String] = js.undefined
 }
 object ChildrenPopulatedEventUIParam {
   

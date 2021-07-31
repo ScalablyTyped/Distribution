@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the VideoStabilizationEffect::EnabledChanged event. */
-@js.native
 trait VideoStabilizationEffectEnabledChangedEventArgs extends StObject {
   
   /** Gets a value indicating the reason why the VideoStabilizationEffect::Enabled property changed. */
-  var reason: VideoStabilizationEffectEnabledChangedReason = js.native
+  var reason: VideoStabilizationEffectEnabledChangedReason
 }
 object VideoStabilizationEffectEnabledChangedEventArgs {
   

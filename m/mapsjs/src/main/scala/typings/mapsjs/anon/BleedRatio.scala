@@ -2,21 +2,19 @@ package typings.mapsjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BleedRatio extends StObject {
   
-  var bleedRatio: js.UndefOr[Double] = js.native
+  var bleedRatio: js.UndefOr[Double] = js.undefined
   
-  var clipToRenderBounds: js.UndefOr[Boolean] = js.native
+  var clipToRenderBounds: js.UndefOr[Boolean] = js.undefined
   
-  var fieldNames: js.UndefOr[js.Array[String]] = js.native
+  var fieldNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var simplifyEnabled: js.UndefOr[Boolean] = js.native
+  var simplifyEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object BleedRatio {
   

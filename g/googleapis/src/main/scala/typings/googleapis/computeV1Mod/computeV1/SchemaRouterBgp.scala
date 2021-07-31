@@ -2,16 +2,14 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRouterBgp extends StObject {
   
   /**
     * User-specified flag to indicate which mode to use for advertisement.
     */
-  var advertiseMode: js.UndefOr[String] = js.native
+  var advertiseMode: js.UndefOr[String] = js.undefined
   
   /**
     * User-specified list of prefix groups to advertise in custom mode. This
@@ -20,7 +18,7 @@ trait SchemaRouterBgp extends StObject {
     * to any specified prefixes. Leave this field blank to advertise no custom
     * groups.
     */
-  var advertisedGroups: js.UndefOr[js.Array[String]] = js.native
+  var advertisedGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User-specified list of individual IP ranges to advertise in custom mode.
@@ -29,7 +27,7 @@ trait SchemaRouterBgp extends StObject {
     * in addition to any specified groups. Leave this field blank to advertise
     * no custom IP ranges.
     */
-  var advertisedIpRanges: js.UndefOr[js.Array[SchemaRouterAdvertisedIpRange]] = js.native
+  var advertisedIpRanges: js.UndefOr[js.Array[SchemaRouterAdvertisedIpRange]] = js.undefined
   
   /**
     * Local BGP Autonomous System Number (ASN). Must be an RFC6996 private ASN,
@@ -37,7 +35,7 @@ trait SchemaRouterBgp extends StObject {
     * resource. All VPN tunnels that link to this router will have the same
     * local ASN.
     */
-  var asn: js.UndefOr[Double] = js.native
+  var asn: js.UndefOr[Double] = js.undefined
 }
 object SchemaRouterBgp {
   

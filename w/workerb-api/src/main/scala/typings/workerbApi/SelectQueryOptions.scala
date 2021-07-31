@@ -2,11 +2,11 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SelectQueryOptions extends QueryOptions {
+trait SelectQueryOptions
+  extends StObject
+     with QueryOptions {
   
   /**
     * Allows to select an element with different methods:
@@ -17,12 +17,12 @@ trait SelectQueryOptions extends QueryOptions {
     * * by_xpath - finds the target element by an [xpath](https://developer.mozilla.org/en-US/docs/Web/XPath) query
     * * by_query_selector finds - the target element using a query selector
     */
-  var method: js.UndefOr[clickQueryMethods] = js.native
+  var method: js.UndefOr[clickQueryMethods] = js.undefined
   
   /**
     * Specify if the provided value is a label or value of the option needs to be selected. The default value is label.
     */
-  var selectBy: String = js.native
+  var selectBy: String
 }
 object SelectQueryOptions {
   

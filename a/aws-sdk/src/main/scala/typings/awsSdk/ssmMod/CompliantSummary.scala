@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompliantSummary extends StObject {
   
   /**
     * The total number of resources that are compliant.
     */
-  var CompliantCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var CompliantCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   
   /**
     * A summary of the compliance severity by compliance type.
     */
-  var SeveritySummary: js.UndefOr[typings.awsSdk.ssmMod.SeveritySummary] = js.native
+  var SeveritySummary: js.UndefOr[typings.awsSdk.ssmMod.SeveritySummary] = js.undefined
 }
 object CompliantSummary {
   

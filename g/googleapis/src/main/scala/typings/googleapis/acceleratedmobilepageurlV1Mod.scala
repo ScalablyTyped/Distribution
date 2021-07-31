@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acceleratedmobilepageurlV1Mod {
@@ -67,7 +66,7 @@ object acceleratedmobilepageurlV1Mod {
         */
       def batchGet(): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
       def batchGet(callback: BodyResponseCallback[SchemaBatchGetAmpUrlsResponse]): Unit = js.native
-      def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
+      def batchGet(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
       def batchGet(params: ParamsResourceAmpurlsBatchget): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
       def batchGet(
         params: ParamsResourceAmpurlsBatchget,
@@ -88,16 +87,17 @@ object acceleratedmobilepageurlV1Mod {
       var context: APIRequestContext = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -109,18 +109,19 @@ object acceleratedmobilepageurlV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceAmpurlsBatchget extends StandardParameters {
+    trait ParamsResourceAmpurlsBatchget
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaBatchGetAmpUrlsRequest] = js.native
+      var requestBody: js.UndefOr[SchemaBatchGetAmpUrlsRequest] = js.undefined
     }
     object ParamsResourceAmpurlsBatchget {
       
@@ -150,24 +151,23 @@ object acceleratedmobilepageurlV1Mod {
     /**
       * AMP URL response for a requested URL.
       */
-    @js.native
     trait SchemaAmpUrl extends StObject {
       
       /**
         * The AMP URL pointing to the publisher&#39;s web server.
         */
-      var ampUrl: js.UndefOr[String] = js.native
+      var ampUrl: js.UndefOr[String] = js.undefined
       
       /**
         * The [AMP Cache URL](/amp/cache/overview#amp-cache-url-format) pointing to
         * the cached document in the Google AMP Cache.
         */
-      var cdnAmpUrl: js.UndefOr[String] = js.native
+      var cdnAmpUrl: js.UndefOr[String] = js.undefined
       
       /**
         * The original non-AMP URL.
         */
-      var originalUrl: js.UndefOr[String] = js.native
+      var originalUrl: js.UndefOr[String] = js.undefined
     }
     object SchemaAmpUrl {
       
@@ -203,23 +203,22 @@ object acceleratedmobilepageurlV1Mod {
     /**
       * AMP URL Error resource for a requested URL that couldn&#39;t be found.
       */
-    @js.native
     trait SchemaAmpUrlError extends StObject {
       
       /**
         * The error code of an API call.
         */
-      var errorCode: js.UndefOr[String] = js.native
+      var errorCode: js.UndefOr[String] = js.undefined
       
       /**
         * An optional descriptive error message.
         */
-      var errorMessage: js.UndefOr[String] = js.native
+      var errorMessage: js.UndefOr[String] = js.undefined
       
       /**
         * The original non-AMP URL.
         */
-      var originalUrl: js.UndefOr[String] = js.native
+      var originalUrl: js.UndefOr[String] = js.undefined
     }
     object SchemaAmpUrlError {
       
@@ -255,20 +254,19 @@ object acceleratedmobilepageurlV1Mod {
     /**
       * AMP URL request for a batch of URLs.
       */
-    @js.native
     trait SchemaBatchGetAmpUrlsRequest extends StObject {
       
       /**
         * The lookup_strategy being requested.
         */
-      var lookupStrategy: js.UndefOr[String] = js.native
+      var lookupStrategy: js.UndefOr[String] = js.undefined
       
       /**
         * List of URLs to look up for the paired AMP URLs. The URLs are
         * case-sensitive. Up to 50 URLs per lookup (see [Usage
         * Limits](/amp/cache/reference/limits)).
         */
-      var urls: js.UndefOr[js.Array[String]] = js.native
+      var urls: js.UndefOr[js.Array[String]] = js.undefined
     }
     object SchemaBatchGetAmpUrlsRequest {
       
@@ -301,7 +299,6 @@ object acceleratedmobilepageurlV1Mod {
     /**
       * Batch AMP URL response.
       */
-    @js.native
     trait SchemaBatchGetAmpUrlsResponse extends StObject {
       
       /**
@@ -310,12 +307,12 @@ object acceleratedmobilepageurlV1Mod {
         * BatchAmpUrlsRequest contains duplicate URLs, AmpUrl is generated only
         * once.
         */
-      var ampUrls: js.UndefOr[js.Array[SchemaAmpUrl]] = js.native
+      var ampUrls: js.UndefOr[js.Array[SchemaAmpUrl]] = js.undefined
       
       /**
         * The errors for requested URLs that have no AMP URL.
         */
-      var urlErrors: js.UndefOr[js.Array[SchemaAmpUrlError]] = js.native
+      var urlErrors: js.UndefOr[js.Array[SchemaAmpUrlError]] = js.undefined
     }
     object SchemaBatchGetAmpUrlsResponse {
       
@@ -348,68 +345,67 @@ object acceleratedmobilepageurlV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

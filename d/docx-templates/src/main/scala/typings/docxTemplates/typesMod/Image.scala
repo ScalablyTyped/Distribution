@@ -4,21 +4,20 @@ import typings.node.Buffer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var data: Buffer | ArrayBuffer | String = js.native
+  var data: Buffer | ArrayBuffer | String
   
-  var extension: ImageExtension = js.native
+  var `extension`: ImageExtension
 }
 object Image {
   
   @scala.inline
-  def apply(data: Buffer | ArrayBuffer | String, extension: ImageExtension): Image = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any])
+  def apply(data: Buffer | ArrayBuffer | String, `extension`: ImageExtension): Image = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   

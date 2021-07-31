@@ -2,61 +2,59 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The package name of the app that's recording the event.
     */
-  var AppPackageName: js.UndefOr[string] = js.native
+  var AppPackageName: js.UndefOr[string] = js.undefined
   
   /**
     * The title of the app that's recording the event.
     */
-  var AppTitle: js.UndefOr[string] = js.native
+  var AppTitle: js.UndefOr[string] = js.undefined
   
   /**
     * The version number of the app that's recording the event.
     */
-  var AppVersionCode: js.UndefOr[string] = js.native
+  var AppVersionCode: js.UndefOr[string] = js.undefined
   
   /**
     * One or more custom attributes that are associated with the event.
     */
-  var Attributes: js.UndefOr[MapOfString] = js.native
+  var Attributes: js.UndefOr[MapOfString] = js.undefined
   
   /**
     * The version of the SDK that's running on the client device.
     */
-  var ClientSdkVersion: js.UndefOr[string] = js.native
+  var ClientSdkVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the event.
     */
-  var EventType: string = js.native
+  var EventType: string
   
   /**
     * One or more custom metrics that are associated with the event.
     */
-  var Metrics: js.UndefOr[MapOfDouble] = js.native
+  var Metrics: js.UndefOr[MapOfDouble] = js.undefined
   
   /**
     * The name of the SDK that's being used to record the event.
     */
-  var SdkName: js.UndefOr[string] = js.native
+  var SdkName: js.UndefOr[string] = js.undefined
   
   /**
     * Information about the session in which the event occurred.
     */
-  var Session: js.UndefOr[typings.awsSdk.pinpointMod.Session] = js.native
+  var Session: js.UndefOr[typings.awsSdk.pinpointMod.Session] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format, when the event occurred.
     */
-  var Timestamp: string = js.native
+  var Timestamp: string
 }
 object Event {
   

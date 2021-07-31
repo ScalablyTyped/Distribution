@@ -2,13 +2,11 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for registering a debuggee.
   */
-@js.native
 trait SchemaRegisterDebuggeeResponse extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaRegisterDebuggeeResponse extends StObject {
     * from the application. It should however continue to poll
     * `RegisterDebuggee` until reenabled.
     */
-  var debuggee: js.UndefOr[SchemaDebuggee] = js.native
+  var debuggee: js.UndefOr[SchemaDebuggee] = js.undefined
 }
 object SchemaRegisterDebuggeeResponse {
   

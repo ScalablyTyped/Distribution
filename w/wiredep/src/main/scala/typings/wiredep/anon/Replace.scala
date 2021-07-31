@@ -3,21 +3,19 @@ package typings.wiredep.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Replace extends StObject {
   
   /**
     * @example:
     *  /(([ \t]*)\/\/\s*bower:*(\S*))(\n|\r|.)*?(\/\/\s*endbower)/gi
     */
-  var block: RegExp = js.native
+  var block: RegExp
   
-  var detect: Less = js.native
+  var detect: Less
   
-  var replace: CssLess = js.native
+  var replace: CssLess
 }
 object Replace {
   

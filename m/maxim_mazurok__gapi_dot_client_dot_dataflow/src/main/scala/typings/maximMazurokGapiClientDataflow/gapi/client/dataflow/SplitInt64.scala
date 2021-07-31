@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SplitInt64 extends StObject {
   
   /** The high order bits, including the sign: n >> 32. */
-  var highBits: js.UndefOr[Double] = js.native
+  var highBits: js.UndefOr[Double] = js.undefined
   
   /** The low order bits: n & 0xffffffff. */
-  var lowBits: js.UndefOr[Double] = js.native
+  var lowBits: js.UndefOr[Double] = js.undefined
 }
 object SplitInt64 {
   

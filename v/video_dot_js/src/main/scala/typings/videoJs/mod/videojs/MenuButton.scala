@@ -4,14 +4,15 @@ import typings.std.Element
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `MenuButton` class for any popup {@link Menu}.
   */
 @js.native
-trait MenuButton extends Component {
+trait MenuButton
+  extends StObject
+     with Component {
   
   /**
     * Allow sub components to stack CSS class names for the wrapper element
@@ -34,8 +35,8 @@ trait MenuButton extends Component {
     * @return - The control text when getting
     */
   def controlText(): String = js.native
-  def controlText(text: js.UndefOr[scala.Nothing], el: Element): String = js.native
   def controlText(text: String, el: Element): String = js.native
+  def controlText(text: Unit, el: Element): String = js.native
   
   /**
     * Create the list of menu items. Specific to each subclass.

@@ -4,14 +4,15 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.ListBinding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataListBinding extends ListBinding {
+trait ODataListBinding
+  extends StObject
+     with ListBinding {
   
-  def getContexts(iStartIndex: Double, iLength: js.UndefOr[scala.Nothing], iThreshold: Double): js.Array[Context] = js.native
   def getContexts(iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[Context] = js.native
+  def getContexts(iStartIndex: Double, iLength: Unit, iThreshold: Double): js.Array[Context] = js.native
   
   /**
     * Get a download URL with the specified format considering thesort/filter/custom parameters.

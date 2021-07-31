@@ -3,29 +3,27 @@ package typings.jsoneditoronline
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorSearchBox extends StObject {
   
-  def clearDelay(): Unit = js.native
+  def clearDelay(): Unit
   
-  def focusActiveResult(): Unit = js.native
+  def focusActiveResult(): Unit
   
-  def next(): Unit = js.native
+  def next(): Unit
   
-  def onDelayedSearch(event: Event): Unit = js.native
+  def onDelayedSearch(event: Event): Unit
   
-  def onKeyDown(event: Event): Unit = js.native
+  def onKeyDown(event: Event): Unit
   
-  def onKeyUp(event: Event): Unit = js.native
+  def onKeyUp(event: Event): Unit
   
-  def onSearch(event: Event, forcedSearch: Boolean): Unit = js.native
+  def onSearch(event: Event, forcedSearch: Boolean): Unit
   
-  def previous(): Unit = js.native
+  def previous(): Unit
   
-  def setActiveResult(index: Double): Unit = js.native
+  def setActiveResult(index: Double): Unit
 }
 object JSONEditorSearchBox {
   

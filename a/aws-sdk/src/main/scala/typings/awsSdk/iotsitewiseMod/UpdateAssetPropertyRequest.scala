@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAssetPropertyRequest extends StObject {
   
   /**
     * The ID of the asset to be updated.
     */
-  var assetId: ID = js.native
+  var assetId: ID
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide. If you omit this parameter, the alias is removed from the property.
     */
-  var propertyAlias: js.UndefOr[PropertyAlias] = js.native
+  var propertyAlias: js.UndefOr[PropertyAlias] = js.undefined
   
   /**
     * The ID of the asset property to be updated.
     */
-  var propertyId: ID = js.native
+  var propertyId: ID
   
   /**
     * The MQTT notification state (enabled or disabled) for this asset property. When the notification state is enabled, AWS IoT SiteWise publishes property value updates to a unique MQTT topic. For more information, see Interacting with other services in the AWS IoT SiteWise User Guide. If you omit this parameter, the notification state is set to DISABLED.
     */
-  var propertyNotificationState: js.UndefOr[PropertyNotificationState] = js.native
+  var propertyNotificationState: js.UndefOr[PropertyNotificationState] = js.undefined
 }
 object UpdateAssetPropertyRequest {
   

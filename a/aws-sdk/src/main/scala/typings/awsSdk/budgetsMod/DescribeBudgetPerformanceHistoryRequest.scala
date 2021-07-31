@@ -2,24 +2,22 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBudgetPerformanceHistoryRequest extends StObject {
   
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
-  var MaxResults: js.UndefOr[typings.awsSdk.budgetsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.budgetsMod.MaxResults] = js.undefined
   
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Retrieves how often the budget went into an ALARM state for the specified time period.
     */
-  var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.native
+  var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.undefined
 }
 object DescribeBudgetPerformanceHistoryRequest {
   

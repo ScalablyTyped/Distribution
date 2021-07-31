@@ -2,30 +2,28 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionInfo extends StObject {
   
-  var entries: js.Array[CompletionEntry] = js.native
+  var entries: js.Array[CompletionEntry]
   
   /** Not true for all global completions. This will be true if the enclosing scope matches a few syntax kinds. See `isSnippetScope`. */
-  var isGlobalCompletion: Boolean = js.native
+  var isGlobalCompletion: Boolean
   
-  var isMemberCompletion: Boolean = js.native
+  var isMemberCompletion: Boolean
   
   /**
     * true when the current location also allows for a new identifier
     */
-  var isNewIdentifierLocation: Boolean = js.native
+  var isNewIdentifierLocation: Boolean
   
   /**
     * In the absence of `CompletionEntry["replacementSpan"], the editor may choose whether to use
     * this span or its default one. If `CompletionEntry["replacementSpan"]` is defined, that span
     * must be used to commit that completion entry.
     */
-  var optionalReplacementSpan: js.UndefOr[TextSpan] = js.native
+  var optionalReplacementSpan: js.UndefOr[TextSpan] = js.undefined
 }
 object CompletionInfo {
   

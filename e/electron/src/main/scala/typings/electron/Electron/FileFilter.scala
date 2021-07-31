@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileFilter extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/file-filter
-  var extensions: js.Array[String] = js.native
+  var extensions: js.Array[String]
   
-  var name: String = js.native
+  var name: String
 }
 object FileFilter {
   

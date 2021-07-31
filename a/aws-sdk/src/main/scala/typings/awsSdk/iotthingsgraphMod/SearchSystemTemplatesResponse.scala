@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSystemTemplatesResponse extends StObject {
   
   /**
     * The string to specify as nextToken when you request the next page of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An array of objects that contain summary information about each system deployment in the result set.
     */
-  var summaries: js.UndefOr[SystemTemplateSummaries] = js.native
+  var summaries: js.UndefOr[SystemTemplateSummaries] = js.undefined
 }
 object SearchSystemTemplatesResponse {
   

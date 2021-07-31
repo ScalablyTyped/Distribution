@@ -2,27 +2,25 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boundary extends StObject {
   
-  var boundary: js.UndefOr[js.Array[js.Array[Latitude]]] = js.native
+  var boundary: js.UndefOr[js.Array[js.Array[Latitude]]] = js.undefined
   
-  var cachePolicy: js.UndefOr[String] = js.native
+  var cachePolicy: js.UndefOr[String] = js.undefined
   
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var mapType: js.UndefOr[String] = js.native
+  var mapType: js.UndefOr[String] = js.undefined
   
-  var viewport: js.UndefOr[Hi] = js.native
+  var viewport: js.UndefOr[Hi] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object Boundary {
   

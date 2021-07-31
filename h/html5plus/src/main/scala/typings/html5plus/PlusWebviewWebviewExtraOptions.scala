@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewExtraOptions extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait PlusWebviewWebviewExtraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var acceleration: js.UndefOr[auto] = js.native
+  var acceleration: js.UndefOr[auto] = js.undefined
   
   /**
     * 窗口动画加速时使用的图片
@@ -36,7 +34,7 @@ trait PlusWebviewWebviewExtraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var capture: js.UndefOr[PlusNativeObjBitmap] = js.native
+  var capture: js.UndefOr[PlusNativeObjBitmap] = js.undefined
   
   /**
     * 关联窗口动画使用的图片
@@ -46,7 +44,7 @@ trait PlusWebviewWebviewExtraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var otherCapture: js.UndefOr[PlusNativeObjBitmap] = js.native
+  var otherCapture: js.UndefOr[PlusNativeObjBitmap] = js.undefined
 }
 object PlusWebviewWebviewExtraOptions {
   

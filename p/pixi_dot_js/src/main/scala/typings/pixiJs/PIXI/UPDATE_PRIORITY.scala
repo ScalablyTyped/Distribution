@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,17 +27,27 @@ sealed trait UPDATE_PRIORITY extends StObject
 object UPDATE_PRIORITY extends StObject {
   
   @js.native
-  sealed trait HIGH extends UPDATE_PRIORITY
+  sealed trait HIGH
+    extends StObject
+       with UPDATE_PRIORITY
   
   @js.native
-  sealed trait INTERACTION extends UPDATE_PRIORITY
+  sealed trait INTERACTION
+    extends StObject
+       with UPDATE_PRIORITY
   
   @js.native
-  sealed trait LOW extends UPDATE_PRIORITY
+  sealed trait LOW
+    extends StObject
+       with UPDATE_PRIORITY
   
   @js.native
-  sealed trait NORMAL extends UPDATE_PRIORITY
+  sealed trait NORMAL
+    extends StObject
+       with UPDATE_PRIORITY
   
   @js.native
-  sealed trait UTILITY extends UPDATE_PRIORITY
+  sealed trait UTILITY
+    extends StObject
+       with UPDATE_PRIORITY
 }

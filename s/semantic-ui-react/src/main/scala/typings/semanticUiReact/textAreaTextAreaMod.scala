@@ -7,7 +7,6 @@ import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textAreaTextAreaMod {
@@ -16,11 +15,12 @@ object textAreaTextAreaMod {
   @js.native
   class default () extends TextArea
   
-  @js.native
-  trait StrictTextAreaProps extends TextareaHTMLAttributes[HTMLTextAreaElement] {
+  trait StrictTextAreaProps
+    extends StObject
+       with TextareaHTMLAttributes[HTMLTextAreaElement] {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Called on change.
@@ -31,7 +31,7 @@ object textAreaTextAreaMod {
     @JSName("onChange")
     var onChange_StrictTextAreaProps: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[HTMLTextAreaElement], /* data */ TextAreaProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on input.
@@ -42,15 +42,15 @@ object textAreaTextAreaMod {
     @JSName("onInput")
     var onInput_StrictTextAreaProps: js.UndefOr[
         js.Function2[/* event */ FormEvent[HTMLTextAreaElement], /* data */ TextAreaProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** Indicates row count for a TextArea. */
     @JSName("rows")
-    var rows_StrictTextAreaProps: js.UndefOr[Double | String] = js.native
+    var rows_StrictTextAreaProps: js.UndefOr[Double | String] = js.undefined
     
     /** The value of the textarea. */
     @JSName("value")
-    var value_StrictTextAreaProps: js.UndefOr[Double | String] = js.native
+    var value_StrictTextAreaProps: js.UndefOr[Double | String] = js.undefined
   }
   object StrictTextAreaProps {
     

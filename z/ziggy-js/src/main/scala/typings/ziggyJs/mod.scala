@@ -13,36 +13,36 @@ import typings.ziggyJs.ziggyJsStrings.http
 import typings.ziggyJs.ziggyJsStrings.https
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ziggy-js", JSImport.Default)
+  @JSImport("ziggy-js", JSImport.Namespace)
   @js.native
-  def default(name: String): Router = js.native
-  @JSImport("ziggy-js", JSImport.Default)
-  @js.native
-  def default(
-    name: String,
-    params: js.UndefOr[InputParams],
-    absolute: js.UndefOr[scala.Nothing],
-    customZiggy: Config
-  ): Router = js.native
-  @JSImport("ziggy-js", JSImport.Default)
-  @js.native
-  def default(name: String, params: js.UndefOr[InputParams], absolute: Boolean): Router = js.native
-  @JSImport("ziggy-js", JSImport.Default)
-  @js.native
-  def default(name: String, params: js.UndefOr[InputParams], absolute: Boolean, customZiggy: Config): Router = js.native
-  @JSImport("ziggy-js", JSImport.Default)
-  @js.native
-  def default(name: String, params: InputParams): Router = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(name: String): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: Unit, absolute: Boolean): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: Unit, absolute: Boolean, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: Unit, absolute: Unit, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: InputParams): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: InputParams, absolute: Boolean): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: InputParams, absolute: Boolean, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
+  def default(name: String, params: InputParams, absolute: Unit, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
   
   @JSImport("ziggy-js", "Router")
   @js.native
   class Router ()
-    extends typings.std.String {
+    extends StObject
+       with typings.std.String {
     
     def check(name: String): Boolean = js.native
     
@@ -72,20 +72,19 @@ object mod {
     def withQuery(params: InputParams): Router = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var baseDomain: String = js.native
+    var baseDomain: String
     
-    var basePort: js.UndefOr[Double | Null] = js.native
+    var basePort: js.UndefOr[Double | Null] = js.undefined
     
-    var baseProtocol: http | https = js.native
+    var baseProtocol: http | https
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var defaultParameters: StringDictionary[String | Double] = js.native
+    var defaultParameters: StringDictionary[String | Double]
     
-    var namedRoutes: StringDictionary[Route] = js.native
+    var namedRoutes: StringDictionary[Route]
   }
   object Config {
     
@@ -138,14 +137,13 @@ object mod {
   
   type NormalizedParams = StringDictionary[InputValue] | js.Array[InputValue]
   
-  @js.native
   trait Route extends StObject {
     
-    var domain: js.UndefOr[Null | String] = js.native
+    var domain: js.UndefOr[Null | String] = js.undefined
     
-    var methods: js.Array[GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE] = js.native
+    var methods: js.Array[GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE]
     
-    var uri: String = js.native
+    var uri: String
   }
   object Route {
     

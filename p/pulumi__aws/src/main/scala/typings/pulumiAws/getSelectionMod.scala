@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSelectionMod {
   
-  @JSImport("@pulumi/aws/backup/getSelection", "getSelection")
+  @JSImport("@pulumi/aws/backup/getSelection", JSImport.Namespace)
   @js.native
-  def getSelection(args: GetSelectionArgs): js.Promise[GetSelectionResult] = js.native
-  @JSImport("@pulumi/aws/backup/getSelection", "getSelection")
-  @js.native
-  def getSelection(args: GetSelectionArgs, opts: InvokeOptions): js.Promise[GetSelectionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSelection(args: GetSelectionArgs): js.Promise[GetSelectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelection")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSelectionResult]]
+  @scala.inline
+  def getSelection(args: GetSelectionArgs, opts: InvokeOptions): js.Promise[GetSelectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSelectionResult]]
+  
   trait GetSelectionArgs extends StObject {
     
     /**
       * The backup plan ID associated with the selection of resources.
       */
-    val planId: String = js.native
+    val planId: String
     
     /**
       * The backup selection ID.
       */
-    val selectionId: String = js.native
+    val selectionId: String
   }
   object GetSelectionArgs {
     
@@ -47,32 +47,31 @@ object getSelectionMod {
     }
   }
   
-  @js.native
   trait GetSelectionResult extends StObject {
     
     /**
       * The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the [AWS Backup Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#managed-policies) for additional information about using AWS managed policies or creating custom policies attached to the IAM role.
       */
-    val iamRoleArn: String = js.native
+    val iamRoleArn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The display name of a resource selection document.
       */
-    val name: String = js.native
+    val name: String
     
-    val planId: String = js.native
+    val planId: String
     
     /**
       * An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan..
       */
-    val resources: js.Array[String] = js.native
+    val resources: js.Array[String]
     
-    val selectionId: String = js.native
+    val selectionId: String
   }
   object GetSelectionResult {
     

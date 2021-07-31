@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogImportStatus extends StObject {
   
   /**
     *  True if the migration has completed, or False otherwise.
     */
-  var ImportCompleted: js.UndefOr[Boolean] = js.native
+  var ImportCompleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time that the migration was started.
     */
-  var ImportTime: js.UndefOr[Timestamp] = js.native
+  var ImportTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the person who initiated the migration.
     */
-  var ImportedBy: js.UndefOr[NameString] = js.native
+  var ImportedBy: js.UndefOr[NameString] = js.undefined
 }
 object CatalogImportStatus {
   

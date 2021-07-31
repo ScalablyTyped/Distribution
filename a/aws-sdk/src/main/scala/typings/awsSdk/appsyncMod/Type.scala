@@ -2,36 +2,34 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /**
     * The type ARN.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The type definition.
     */
-  var definition: js.UndefOr[String] = js.native
+  var definition: js.UndefOr[String] = js.undefined
   
   /**
     * The type description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The type format: SDL or JSON.
     */
-  var format: js.UndefOr[TypeDefinitionFormat] = js.native
+  var format: js.UndefOr[TypeDefinitionFormat] = js.undefined
   
   /**
     * The type name.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
 }
 object Type {
   

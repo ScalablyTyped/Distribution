@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1", "appengine_v1.Resource$Apps$Firewall$Ingressrules")
@@ -33,7 +32,7 @@ class ResourceAppsFirewallIngressrules protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdateIngressRulesResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdateIngressRulesResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdateIngressRulesResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdateIngressRulesResponse] = js.native
   def batchUpdate(params: ParamsResourceAppsFirewallIngressrulesBatchupdate): GaxiosPromise[SchemaBatchUpdateIngressRulesResponse] = js.native
   def batchUpdate(
     params: ParamsResourceAppsFirewallIngressrulesBatchupdate,
@@ -68,7 +67,7 @@ class ResourceAppsFirewallIngressrules protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaFirewallRule] = js.native
   def create(callback: BodyResponseCallback[SchemaFirewallRule]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFirewallRule] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFirewallRule] = js.native
   def create(params: ParamsResourceAppsFirewallIngressrulesCreate): GaxiosPromise[SchemaFirewallRule] = js.native
   def create(
     params: ParamsResourceAppsFirewallIngressrulesCreate,
@@ -101,7 +100,7 @@ class ResourceAppsFirewallIngressrules protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAppsFirewallIngressrulesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAppsFirewallIngressrulesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -131,7 +130,7 @@ class ResourceAppsFirewallIngressrules protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFirewallRule] = js.native
   def get(callback: BodyResponseCallback[SchemaFirewallRule]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFirewallRule] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFirewallRule] = js.native
   def get(params: ParamsResourceAppsFirewallIngressrulesGet): GaxiosPromise[SchemaFirewallRule] = js.native
   def get(
     params: ParamsResourceAppsFirewallIngressrulesGet,
@@ -166,7 +165,7 @@ class ResourceAppsFirewallIngressrules protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListIngressRulesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListIngressRulesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListIngressRulesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListIngressRulesResponse] = js.native
   def list(params: ParamsResourceAppsFirewallIngressrulesList): GaxiosPromise[SchemaListIngressRulesResponse] = js.native
   def list(
     params: ParamsResourceAppsFirewallIngressrulesList,
@@ -201,7 +200,7 @@ class ResourceAppsFirewallIngressrules protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaFirewallRule] = js.native
   def patch(callback: BodyResponseCallback[SchemaFirewallRule]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFirewallRule] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFirewallRule] = js.native
   def patch(params: ParamsResourceAppsFirewallIngressrulesPatch): GaxiosPromise[SchemaFirewallRule] = js.native
   def patch(
     params: ParamsResourceAppsFirewallIngressrulesPatch,

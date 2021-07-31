@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGElementInstanceList extends StObject {
   
   @JSName("MSHTML.ISVGElementInstanceList_typekey")
-  var MSHTMLDotISVGElementInstanceList_typekey: ISVGElementInstanceList = js.native
+  var MSHTMLDotISVGElementInstanceList_typekey: ISVGElementInstanceList
   
-  def item(index: Double): ISVGElementInstance = js.native
+  def item(index: Double): ISVGElementInstance
   
-  val length: Double = js.native
+  val length: Double
 }
 object ISVGElementInstanceList {
   

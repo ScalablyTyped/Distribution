@@ -5,7 +5,6 @@ import typings.officeJs.officeJsStrings.Remote
 import typings.officeJs.officeJsStrings.TableDeleted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait TableDeletedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait TableDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tableId: String = js.native
+  var tableId: String
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tableName: String = js.native
+  var tableName: String
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: TableDeleted = js.native
+  var `type`: TableDeleted
   
   /**
     *
@@ -55,20 +53,14 @@ trait TableDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object TableDeletedEventArgs {
   
   @scala.inline
-  def apply(
-    source: EventSource | Local | Remote,
-    tableId: String,
-    tableName: String,
-    `type`: TableDeleted,
-    worksheetId: String
-  ): TableDeletedEventArgs = {
+  def apply(source: EventSource | Local | Remote, tableId: String, tableName: String, worksheetId: String): TableDeletedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TableDeleted")
     __obj.asInstanceOf[TableDeletedEventArgs]
   }
   

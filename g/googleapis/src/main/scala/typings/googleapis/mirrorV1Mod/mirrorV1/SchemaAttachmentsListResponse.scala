@@ -2,25 +2,23 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Attachments. This is the response from the server to GET requests
   * on the attachments collection.
   */
-@js.native
 trait SchemaAttachmentsListResponse extends StObject {
   
   /**
     * The list of attachments.
     */
-  var items: js.UndefOr[js.Array[SchemaAttachment]] = js.native
+  var items: js.UndefOr[js.Array[SchemaAttachment]] = js.undefined
   
   /**
     * The type of resource. This is always mirror#attachmentsList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAttachmentsListResponse {
   

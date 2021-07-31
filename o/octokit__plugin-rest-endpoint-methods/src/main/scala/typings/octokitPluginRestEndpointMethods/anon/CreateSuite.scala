@@ -2,33 +2,31 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSuite extends StObject {
   
-  var create: `657` = js.native
+  var create: `657`
   
-  var createSuite: `658` = js.native
+  var createSuite: `658`
   
-  var get: `659` = js.native
+  var get: `659`
   
-  var getSuite: `660` = js.native
+  var getSuite: `660`
   
-  var listAnnotations: `661` = js.native
+  var listAnnotations: `661`
   
-  var listForRef: `662` = js.native
+  var listForRef: `662`
   
-  var listForSuite: `663` = js.native
+  var listForSuite: `663`
   
-  var listSuitesForRef: `664` = js.native
+  var listSuitesForRef: `664`
   
-  var rerequestSuite: `665` = js.native
+  var rerequestSuite: `665`
   
-  var setSuitesPreferences: `666` = js.native
+  var setSuitesPreferences: `666`
   
-  var update: `667` = js.native
+  var update: `667`
 }
 object CreateSuite {
   

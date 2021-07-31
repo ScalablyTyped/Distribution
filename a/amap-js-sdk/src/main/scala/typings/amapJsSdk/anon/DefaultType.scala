@@ -2,17 +2,15 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultType extends StObject {
   
-  var defaultType: js.UndefOr[Double] = js.native
+  var defaultType: js.UndefOr[Double] = js.undefined
   
-  var showRoad: js.UndefOr[Boolean] = js.native
+  var showRoad: js.UndefOr[Boolean] = js.undefined
   
-  var showTraffic: js.UndefOr[Boolean] = js.native
+  var showTraffic: js.UndefOr[Boolean] = js.undefined
 }
 object DefaultType {
   

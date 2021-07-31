@@ -2,25 +2,23 @@ package typings.nyaapi.mod.pantsu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var liked_count: Double = js.native
+  var liked_count: Double
   
-  var liking_count: Double = js.native
+  var liking_count: Double
   
-  var md5: String = js.native
+  var md5: String
   
-  var status: UserStatus = js.native
+  var status: UserStatus
   
-  var user_id: Double = js.native
+  var user_id: Double
   
-  var username: String = js.native
+  var username: String
 }
 object User {
   

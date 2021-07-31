@@ -2,24 +2,22 @@ package typings.wxServerSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boundaries extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var boundaries: js.Array[_] = js.native
+  var boundaries: js.Array[js.Any]
   
-  var groupBy: js.Any = js.native
+  var groupBy: js.Any
   
-  var output: js.UndefOr[js.Object] = js.native
+  var output: js.UndefOr[js.Object] = js.undefined
 }
 object Boundaries {
   
   @scala.inline
-  def apply(boundaries: js.Array[_], groupBy: js.Any): Boundaries = {
+  def apply(boundaries: js.Array[js.Any], groupBy: js.Any): Boundaries = {
     val __obj = js.Dynamic.literal(boundaries = boundaries.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boundaries]
   }
@@ -28,7 +26,7 @@ object Boundaries {
   implicit class BoundariesMutableBuilder[Self <: Boundaries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBoundaries(value: js.Array[_]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+    def setBoundaries(value: js.Array[js.Any]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBoundariesVarargs(value: js.Any*): Self = StObject.set(x, "boundaries", js.Array(value :_*))

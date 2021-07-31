@@ -16,18 +16,20 @@ import typings.storybookUi.anon.PickPropsWithChildrenClas
 import typings.storybookUi.storybookUiStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Menu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/ui/dist/components/sidebar/Menu", "MenuButton")
   @js.native
   val MenuButton: StyledComponent[PickPropsWithChildrenClas, MenuButtonProps, Theme] = js.native
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Menu", "MenuItemIcon")
-  @js.native
-  def MenuItemIcon(hasIconImgSrc: ListItemIconProps): Element = js.native
+  @scala.inline
+  def MenuItemIcon(hasIconImgSrc: ListItemIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItemIcon")(hasIconImgSrc.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/ui/dist/components/sidebar/Menu", "SidebarMenu")
   @js.native
@@ -37,14 +39,13 @@ object menuMod {
   @js.native
   val SidebarMenuList: FunctionComponent[Menu] = js.native
   
-  @js.native
   trait ListItemIconProps extends StObject {
     
     var icon: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react.react.FunctionComponent<@storybook/components.@storybook/components/dist/icon/icon.IconsProps>>['icon'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var imgSrc: js.UndefOr[String] = js.native
+    var imgSrc: js.UndefOr[String] = js.undefined
   }
   object ListItemIconProps {
     
@@ -83,7 +84,7 @@ object menuMod {
         ]
       ]
     ]
-  ]) with ComponentProps[button] with Highlighted
+  ]) & ComponentProps[button] & Highlighted
   
   type MenuList = /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react.react.FunctionComponent<@storybook/components.@storybook/components/dist/tooltip/TooltipLinkList.TooltipLinkListProps>>['links'] */ js.Any
 }

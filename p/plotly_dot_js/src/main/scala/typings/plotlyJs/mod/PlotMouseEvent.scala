@@ -3,15 +3,13 @@ package typings.plotlyJs.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotMouseEvent extends StObject {
   
-  var event: MouseEvent = js.native
+  var event: MouseEvent
   
-  var points: js.Array[PlotDatum] = js.native
+  var points: js.Array[PlotDatum]
 }
 object PlotMouseEvent {
   

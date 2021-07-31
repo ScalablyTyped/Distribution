@@ -2,17 +2,17 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolyMouseEvent extends MouseEvent {
+trait PolyMouseEvent
+  extends StObject
+     with MouseEvent {
   
-  var edge: js.UndefOr[Double] = js.native
+  var edge: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[Double] = js.native
+  var path: js.UndefOr[Double] = js.undefined
   
-  var vertex: js.UndefOr[Double] = js.native
+  var vertex: js.UndefOr[Double] = js.undefined
 }
 object PolyMouseEvent {
   

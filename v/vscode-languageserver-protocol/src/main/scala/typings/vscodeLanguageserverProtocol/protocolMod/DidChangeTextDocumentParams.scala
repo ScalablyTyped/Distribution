@@ -3,10 +3,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeTextDocumentParams extends StObject {
   
   /**
@@ -22,14 +20,14 @@ trait DidChangeTextDocumentParams extends StObject {
     * - apply the `TextDocumentContentChangeEvent`s in a single notification in the order
     *   you receive them.
     */
-  var contentChanges: js.Array[TextDocumentContentChangeEvent] = js.native
+  var contentChanges: js.Array[TextDocumentContentChangeEvent]
   
   /**
     * The document that did change. The version number points
     * to the version after all provided content changes have
     * been applied.
     */
-  var textDocument: VersionedTextDocumentIdentifier = js.native
+  var textDocument: VersionedTextDocumentIdentifier
 }
 object DidChangeTextDocumentParams {
   

@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,25 +13,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * points to `LContainerDebug` for easier debugging and test writing. It is the intent of
   * `LContainerDebug` to be used in tests.
   */
-@js.native
 trait LContainerDebug extends StObject {
   
-  val hasTransplantedViews: Boolean = js.native
+  val hasTransplantedViews: Boolean
   
-  val host: RElement | RComment | ɵangularPackagesCoreCoreBv = js.native
+  val host: RElement | RComment | ɵangularPackagesCoreCoreBv
   
-  val movedViews: js.Array[ɵangularPackagesCoreCoreBv] | Null = js.native
+  val movedViews: js.Array[ɵangularPackagesCoreCoreBv] | Null
   
-  val native: RComment = js.native
+  val native: RComment
   
-  val next: LViewDebug | LContainerDebug | Null = js.native
+  val next: LViewDebug | LContainerDebug | Null
   
-  val parent: LViewDebug | Null = js.native
+  val parent: LViewDebug | Null
   
   /**
     * Child `LView`s.
     */
-  val views: js.Array[LViewDebug] = js.native
+  val views: js.Array[LViewDebug]
 }
 object LContainerDebug {
   
@@ -43,7 +41,7 @@ object LContainerDebug {
     native: RComment,
     views: js.Array[LViewDebug]
   ): LContainerDebug = {
-    val __obj = js.Dynamic.literal(hasTransplantedViews = hasTransplantedViews.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasTransplantedViews = hasTransplantedViews.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any], movedViews = null, next = null, parent = null)
     __obj.asInstanceOf[LContainerDebug]
   }
   

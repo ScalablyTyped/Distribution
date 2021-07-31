@@ -10,8 +10,8 @@ Priority queue data structures
 | Full name          | js-priority-queue |
 | Keywords           | priority, queue, bheap, b-heap, binary, heap, dequeue, comparator |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 161583 |
+| # dependents       | 34 |
+| # downloads        | 184284 |
 | # stars            | 2 |
 
 ## Links

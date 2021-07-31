@@ -3,12 +3,14 @@ package typings.polished
 import typings.polished.styleMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object borderWidthMod {
   
-  @JSImport("polished/lib/shorthands/borderWidth", JSImport.Default)
+  @JSImport("polished/lib/shorthands/borderWidth", JSImport.Namespace)
   @js.native
-  def default(values: (Null | Unit | String | Double)*): Styles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

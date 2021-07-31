@@ -3,33 +3,32 @@ package typings.saxes.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<saxes.saxes.SaxesTag> & {  attributes :std.Record<string, saxes.saxes.SaxesAttributeNS>} */
-@js.native
 trait SaxesTagNS
-  extends TagForOptions[js.Any] {
+  extends StObject
+     with TagForOptions[js.Any] {
   
-  var attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS]) = js.native
+  var attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])
   
-  var isSelfClosing: Boolean = js.native
+  var isSelfClosing: Boolean
   
-  var local: String = js.native
+  var local: String
   
-  var name: String = js.native
+  var name: String
   
-  var ns: Record[String, String] = js.native
+  var ns: Record[String, String]
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object SaxesTagNS {
   
   @scala.inline
   def apply(
-    attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS]),
+    attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS]),
     isSelfClosing: Boolean,
     local: String,
     name: String,
@@ -45,7 +44,7 @@ object SaxesTagNS {
   implicit class SaxesTagNSMutableBuilder[Self <: SaxesTagNS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAttributes(value: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    def setAttributes(value: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])

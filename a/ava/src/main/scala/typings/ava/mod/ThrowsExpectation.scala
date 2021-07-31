@@ -4,26 +4,24 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThrowsExpectation extends StObject {
   
   /** The thrown error must have a code that equals the given string or number. */
-  var code: js.UndefOr[String | Double] = js.native
+  var code: js.UndefOr[String | Double] = js.undefined
   
   /** The thrown error must be an instance of this constructor. */
-  var instanceOf: js.UndefOr[Constructor] = js.native
+  var instanceOf: js.UndefOr[Constructor] = js.undefined
   
   /** The thrown error must be strictly equal to this value. */
-  var is: js.UndefOr[Error] = js.native
+  var is: js.UndefOr[Error] = js.undefined
   
   /** The thrown error must have a message that equals the given string, or matches the regular expression. */
-  var message: js.UndefOr[String | RegExp] = js.native
+  var message: js.UndefOr[String | RegExp] = js.undefined
   
   /** The thrown error must have a name that equals the given string. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ThrowsExpectation {
   

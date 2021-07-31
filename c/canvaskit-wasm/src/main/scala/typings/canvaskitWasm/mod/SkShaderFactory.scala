@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkShaderFactory extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait SkShaderFactory extends StObject {
     * @param one
     * @param two
     */
-  def Blend(mode: BlendMode, one: SkShader, two: SkShader): SkShader = js.native
+  def Blend(mode: BlendMode, one: SkShader, two: SkShader): SkShader
   
   /**
     * Returns a shader with a given color and colorspace.
     * @param color
     * @param space
     */
-  def Color(color: InputColor, space: ColorSpace): SkShader = js.native
+  def Color(color: InputColor, space: ColorSpace): SkShader
   
   /**
     * Returns a shader is a linear interpolation combines the given shaders with a BlendMode.
@@ -29,7 +27,7 @@ trait SkShaderFactory extends StObject {
     * @param one
     * @param two
     */
-  def Lerp(t: Double, one: SkShader, two: SkShader): SkShader = js.native
+  def Lerp(t: Double, one: SkShader, two: SkShader): SkShader
 }
 object SkShaderFactory {
   

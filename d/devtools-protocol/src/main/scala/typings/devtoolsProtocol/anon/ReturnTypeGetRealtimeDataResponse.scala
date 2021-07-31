@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.WebAudio.GetRealtimeDataRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAudio.GetRealtimeDataResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetRealtimeDataResponse extends StObject {
   
-  var paramsType: js.Array[GetRealtimeDataRequest] = js.native
+  var paramsType: js.Array[GetRealtimeDataRequest]
   
-  var returnType: GetRealtimeDataResponse = js.native
+  var returnType: GetRealtimeDataResponse
 }
 object ReturnTypeGetRealtimeDataResponse {
   

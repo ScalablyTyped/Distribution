@@ -2,16 +2,14 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListScreenshotClustersResponse extends StObject {
   
   /**
     * The set of clusters associated with an execution Always set
     */
-  var clusters: js.UndefOr[js.Array[SchemaScreenshotCluster]] = js.native
+  var clusters: js.UndefOr[js.Array[SchemaScreenshotCluster]] = js.undefined
 }
 object SchemaListScreenshotClustersResponse {
   

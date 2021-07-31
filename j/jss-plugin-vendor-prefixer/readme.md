@@ -10,9 +10,9 @@ JSS plugin that handles vendor prefixes in the browser
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-vendor-prefixer |
 | Keywords           | cssinjs, jss, plugin, vendor, prefixer |
-| # releases         | 40 |
-| # dependents       | 12 |
-| # downloads        | 46878735 |
+| # releases         | 31 |
+| # dependents       | 13 |
+| # downloads        | 54425272 |
 | # stars            | 0 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.datejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a structure to be used in the add and set instance methods */
-@js.native
 trait IDateJSLiteral extends StObject {
   
-  var days: Double = js.native
+  var days: Double
   
-  var hours: Double = js.native
+  var hours: Double
   
-  var milliseconds: Double = js.native
+  var milliseconds: Double
   
-  var minutes: Double = js.native
+  var minutes: Double
   
-  var months: Double = js.native
+  var months: Double
   
-  var seconds: Double = js.native
+  var seconds: Double
   
-  var years: Double = js.native
+  var years: Double
 }
 object IDateJSLiteral {
   

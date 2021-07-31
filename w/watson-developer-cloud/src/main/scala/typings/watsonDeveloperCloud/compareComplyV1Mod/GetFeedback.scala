@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The results of a single feedback query. */
-@js.native
 trait GetFeedback extends StObject {
   
   /** A string containing the user's comment about the feedback entry. */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** A timestamp identifying the creation time of the feedback entry. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Information returned from the `POST /v1/feedback` method. */
-  var feedback_data: js.UndefOr[FeedbackDataOutput] = js.native
+  var feedback_data: js.UndefOr[FeedbackDataOutput] = js.undefined
   
   /** A string uniquely identifying the feedback entry. */
-  var feedback_id: js.UndefOr[String] = js.native
+  var feedback_id: js.UndefOr[String] = js.undefined
 }
 object GetFeedback {
   

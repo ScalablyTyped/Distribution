@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryColumnStatisticsData extends StObject {
   
   /**
     * The average bit sequence length in the column.
     */
-  var AverageLength: NonNegativeDouble = js.native
+  var AverageLength: NonNegativeDouble
   
   /**
     * The size of the longest bit sequence in the column.
     */
-  var MaximumLength: NonNegativeLong = js.native
+  var MaximumLength: NonNegativeLong
   
   /**
     * The number of null values in the column.
     */
-  var NumberOfNulls: NonNegativeLong = js.native
+  var NumberOfNulls: NonNegativeLong
 }
 object BinaryColumnStatisticsData {
   

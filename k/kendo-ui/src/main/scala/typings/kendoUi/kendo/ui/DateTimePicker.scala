@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTimePicker extends Widget {
+trait DateTimePicker
+  extends StObject
+     with Widget {
   
   def close(view: String): Unit = js.native
   

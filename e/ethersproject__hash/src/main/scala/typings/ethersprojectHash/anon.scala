@@ -3,17 +3,15 @@ package typings.ethersprojectHash
 import typings.ethersprojectAbstractSigner.mod.TypedDataDomain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Domain extends StObject {
     
-    var domain: TypedDataDomain = js.native
+    var domain: TypedDataDomain
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Domain {
     

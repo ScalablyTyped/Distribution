@@ -3,10 +3,8 @@ package typings.stripeV3.stripe
 import typings.stripeV3.anon.Sepadebit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmSepaDebitPaymentData extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ConfirmSepaDebitPaymentData extends StObject {
     * by passing data directly and to supply additional required billing
     * details:
     */
-  var payment_method: js.UndefOr[String | Sepadebit] = js.native
+  var payment_method: js.UndefOr[String | Sepadebit] = js.undefined
 }
 object ConfirmSepaDebitPaymentData {
   

@@ -3,15 +3,13 @@ package typings.reduxPersist
 import typings.reduxPersist.typesMod.PersistState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Persist extends StObject {
     
-    var _persist: PersistState = js.native
+    var _persist: PersistState
   }
   object Persist {
     

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleSplitCondition")
@@ -39,9 +38,8 @@ object RuleSplitCondition {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleSplitCondition.create")
-  @js.native
-  def create(model: IModel): RuleSplitCondition = js.native
+  @scala.inline
+  def create(model: IModel): RuleSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RuleSplitCondition]
   
   /**
     * Creates and returns a new RuleSplitCondition instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object RuleSplitCondition {
     * of the parent ExclusiveSplit element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleSplitCondition.createIn")
-  @js.native
-  def createIn(container: ExclusiveSplit): RuleSplitCondition = js.native
+  @scala.inline
+  def createIn(container: ExclusiveSplit): RuleSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RuleSplitCondition]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleSplitCondition.structureTypeName")

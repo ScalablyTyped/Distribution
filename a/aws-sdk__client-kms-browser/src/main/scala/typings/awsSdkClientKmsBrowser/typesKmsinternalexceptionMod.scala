@@ -37,15 +37,14 @@ import typings.awsSdkClientKmsBrowser.updateAliasExceptionsUnionMod.UpdateAliasE
 import typings.awsSdkClientKmsBrowser.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsinternalexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSInternalExceptionDetails> * / any */ @js.native
-  trait KMSInternalException
-    extends CancelKeyDeletionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSInternalExceptionDetails> * / any */ trait KMSInternalException
+    extends StObject
+       with CancelKeyDeletionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateGrantExceptionsUnion
        with CreateKeyExceptionsUnion
@@ -81,13 +80,13 @@ object typesKmsinternalexceptionMod {
        with UpdateAliasExceptionsUnion
        with UpdateKeyDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException
   }
   object KMSInternalException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException): KMSInternalException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSInternalException = {
+      val __obj = js.Dynamic.literal(name = "KMSInternalException")
       __obj.asInstanceOf[KMSInternalException]
     }
     
@@ -99,13 +98,12 @@ object typesKmsinternalexceptionMod {
     }
   }
   
-  @js.native
   trait KMSInternalExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object KMSInternalExceptionDetails {
     

@@ -2,41 +2,39 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch accounts response.
   */
-@js.native
 trait SchemaAccountsCustomBatchResponseEntry extends StObject {
   
   /**
     * The retrieved, created, or updated account. Not defined if the method was
     * delete, claimwebsite or link.
     */
-  var account: js.UndefOr[SchemaAccount] = js.native
+  var account: js.UndefOr[SchemaAccount] = js.undefined
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors defined if and only if the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#accountsCustomBatchResponseEntry&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. This field is never set.
     */
-  var linkStatus: js.UndefOr[String] = js.native
+  var linkStatus: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountsCustomBatchResponseEntry {
   

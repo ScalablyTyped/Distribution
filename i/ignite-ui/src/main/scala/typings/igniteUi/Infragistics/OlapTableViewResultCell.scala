@@ -2,31 +2,29 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapTableViewResultCell extends StObject {
   
   /**
     * Returns the ordinal of this cell used to determine its position into the data cells' grid.
     */
-  def cellOrdinal(): Double = js.native
+  def cellOrdinal(): Double
   
   /**
     * Returns the formmated value to be displayed by the data cell.
     */
-  def formattedValue(): String = js.native
+  def formattedValue(): String
   
   /**
     * Returns the index of $.ig.Cell object in $.ig.OlapResult object.
     */
-  def resultCellIndex(): Double = js.native
+  def resultCellIndex(): Double
   
   /**
     * Returns the value provided by $.ig.Cell object.
     */
-  def value(): js.Object = js.native
+  def value(): js.Object
 }
 object OlapTableViewResultCell {
   

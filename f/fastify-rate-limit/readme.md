@@ -10,9 +10,9 @@ A low overhead rate limiter for your routes
 | ------------------ | :-------------: |
 | Full name          | fastify-rate-limit |
 | Keywords           | fastify, rate, limit |
-| # releases         | 14 |
-| # dependents       | 6 |
-| # downloads        | 104046 |
+| # releases         | 17 |
+| # dependents       | 8 |
+| # downloads        | 171968 |
 | # stars            | 0 |
 
 ## Links

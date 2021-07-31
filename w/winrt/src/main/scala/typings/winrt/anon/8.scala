@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `8` extends StObject {
   
-  var items: js.Array[StorageFile] = js.native
+  var items: js.Array[StorageFile]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object `8` {
   

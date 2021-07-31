@@ -2,59 +2,57 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Org Unit resource in Directory API.
   */
-@js.native
 trait SchemaOrgUnit extends StObject {
   
   /**
     * Should block inheritance
     */
-  var blockInheritance: js.UndefOr[Boolean] = js.native
+  var blockInheritance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Description of OrgUnit
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of OrgUnit
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Id of OrgUnit
     */
-  var orgUnitId: js.UndefOr[String] = js.native
+  var orgUnitId: js.UndefOr[String] = js.undefined
   
   /**
     * Path of OrgUnit
     */
-  var orgUnitPath: js.UndefOr[String] = js.native
+  var orgUnitPath: js.UndefOr[String] = js.undefined
   
   /**
     * Id of parent OrgUnit
     */
-  var parentOrgUnitId: js.UndefOr[String] = js.native
+  var parentOrgUnitId: js.UndefOr[String] = js.undefined
   
   /**
     * Path of parent OrgUnit
     */
-  var parentOrgUnitPath: js.UndefOr[String] = js.native
+  var parentOrgUnitPath: js.UndefOr[String] = js.undefined
 }
 object SchemaOrgUnit {
   

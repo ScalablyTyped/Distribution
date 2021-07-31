@@ -2,111 +2,109 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeafletEventHandlerFnMap extends StObject {
   
-  var add: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var add: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var autopanstart: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var autopanstart: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var baselayerchange: js.UndefOr[LayersControlEventHandlerFn] = js.native
+  var baselayerchange: js.UndefOr[LayersControlEventHandlerFn] = js.undefined
   
-  var click: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var click: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var contextmenu: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var contextmenu: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var dblclick: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var dblclick: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var down: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var down: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var drag: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var drag: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var dragend: js.UndefOr[DragEndEventHandlerFn] = js.native
+  var dragend: js.UndefOr[DragEndEventHandlerFn] = js.undefined
   
-  var dragstart: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var dragstart: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var error: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var error: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var keydown: js.UndefOr[LeafletKeyboardEventHandlerFn] = js.native
+  var keydown: js.UndefOr[LeafletKeyboardEventHandlerFn] = js.undefined
   
-  var keypress: js.UndefOr[LeafletKeyboardEventHandlerFn] = js.native
+  var keypress: js.UndefOr[LeafletKeyboardEventHandlerFn] = js.undefined
   
-  var keyup: js.UndefOr[LeafletKeyboardEventHandlerFn] = js.native
+  var keyup: js.UndefOr[LeafletKeyboardEventHandlerFn] = js.undefined
   
-  var layeradd: js.UndefOr[LayerEventHandlerFn] = js.native
+  var layeradd: js.UndefOr[LayerEventHandlerFn] = js.undefined
   
-  var layerremove: js.UndefOr[LayerEventHandlerFn] = js.native
+  var layerremove: js.UndefOr[LayerEventHandlerFn] = js.undefined
   
-  var load: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var load: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var loading: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var loading: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var locationerror: js.UndefOr[ErrorEventHandlerFn] = js.native
+  var locationerror: js.UndefOr[ErrorEventHandlerFn] = js.undefined
   
-  var locationfound: js.UndefOr[LocationEventHandlerFn] = js.native
+  var locationfound: js.UndefOr[LocationEventHandlerFn] = js.undefined
   
-  var mousedown: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var mousedown: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var mousemove: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var mousemove: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var mouseout: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var mouseout: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var mouseover: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var mouseover: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var mouseup: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var mouseup: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var move: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var move: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var moveend: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var moveend: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var movestart: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var movestart: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var overlayadd: js.UndefOr[LayersControlEventHandlerFn] = js.native
+  var overlayadd: js.UndefOr[LayersControlEventHandlerFn] = js.undefined
   
-  var overlayremove: js.UndefOr[LayersControlEventHandlerFn] = js.native
+  var overlayremove: js.UndefOr[LayersControlEventHandlerFn] = js.undefined
   
-  var popupclose: js.UndefOr[PopupEventHandlerFn] = js.native
+  var popupclose: js.UndefOr[PopupEventHandlerFn] = js.undefined
   
-  var popupopen: js.UndefOr[PopupEventHandlerFn] = js.native
+  var popupopen: js.UndefOr[PopupEventHandlerFn] = js.undefined
   
-  var preclick: js.UndefOr[LeafletMouseEventHandlerFn] = js.native
+  var preclick: js.UndefOr[LeafletMouseEventHandlerFn] = js.undefined
   
-  var predrag: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var predrag: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var remove: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var remove: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var resize: js.UndefOr[ResizeEventHandlerFn] = js.native
+  var resize: js.UndefOr[ResizeEventHandlerFn] = js.undefined
   
-  var tileerror: js.UndefOr[TileErrorEventHandlerFn] = js.native
+  var tileerror: js.UndefOr[TileErrorEventHandlerFn] = js.undefined
   
-  var tileload: js.UndefOr[TileEventHandlerFn] = js.native
+  var tileload: js.UndefOr[TileEventHandlerFn] = js.undefined
   
-  var tileloadstart: js.UndefOr[TileEventHandlerFn] = js.native
+  var tileloadstart: js.UndefOr[TileEventHandlerFn] = js.undefined
   
-  var tileunload: js.UndefOr[TileEventHandlerFn] = js.native
+  var tileunload: js.UndefOr[TileEventHandlerFn] = js.undefined
   
-  var tooltipclose: js.UndefOr[TooltipEventHandlerFn] = js.native
+  var tooltipclose: js.UndefOr[TooltipEventHandlerFn] = js.undefined
   
-  var tooltipopen: js.UndefOr[TooltipEventHandlerFn] = js.native
+  var tooltipopen: js.UndefOr[TooltipEventHandlerFn] = js.undefined
   
-  var unload: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var unload: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var update: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var update: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var viewreset: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var viewreset: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var zoom: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var zoom: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var zoomanim: js.UndefOr[ZoomAnimEventHandlerFn] = js.native
+  var zoomanim: js.UndefOr[ZoomAnimEventHandlerFn] = js.undefined
   
-  var zoomend: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var zoomend: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var zoomlevelschange: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var zoomlevelschange: js.UndefOr[LeafletEventHandlerFn] = js.undefined
   
-  var zoomstart: js.UndefOr[LeafletEventHandlerFn] = js.native
+  var zoomstart: js.UndefOr[LeafletEventHandlerFn] = js.undefined
 }
 object LeafletEventHandlerFnMap {
   

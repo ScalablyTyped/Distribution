@@ -5,33 +5,33 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows easier access to the different subelements of an axis.
   * @since OOo 3.4
   */
-@js.native
-trait XAxis extends XInterface {
+trait XAxis
+  extends StObject
+     with XInterface {
   
   /** @returns the title of the axis. The returned object supports the properties described in service {@link ChartTitle} . */
-  val AxisTitle: XPropertySet = js.native
+  val AxisTitle: XPropertySet
   
   /** @returns the properties of the major grid of the axis. The returned object supports service {@link ChartGrid} . */
-  val MajorGrid: XPropertySet = js.native
+  val MajorGrid: XPropertySet
   
   /** @returns the properties of the minor grid of the axis. The returned object supports service {@link ChartGrid} . */
-  val MinorGrid: XPropertySet = js.native
+  val MinorGrid: XPropertySet
   
   /** @returns the title of the axis. The returned object supports the properties described in service {@link ChartTitle} . */
-  def getAxisTitle(): XPropertySet = js.native
+  def getAxisTitle(): XPropertySet
   
   /** @returns the properties of the major grid of the axis. The returned object supports service {@link ChartGrid} . */
-  def getMajorGrid(): XPropertySet = js.native
+  def getMajorGrid(): XPropertySet
   
   /** @returns the properties of the minor grid of the axis. The returned object supports service {@link ChartGrid} . */
-  def getMinorGrid(): XPropertySet = js.native
+  def getMinorGrid(): XPropertySet
 }
 object XAxis {
   

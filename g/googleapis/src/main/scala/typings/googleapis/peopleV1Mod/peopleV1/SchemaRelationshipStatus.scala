@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s read-only relationship status.
   */
-@js.native
 trait SchemaRelationshipStatus extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaRelationshipStatus extends StObject {
     * in the viewer&#39;s account locale or the `Accept-Language` HTTP header
     * locale.
     */
-  var formattedValue: js.UndefOr[String] = js.native
+  var formattedValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the relationship status.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The relationship status. The value can be custom or one of these
@@ -29,7 +27,7 @@ trait SchemaRelationshipStatus extends StObject {
     * `married` * `itsComplicated` * `openRelationship` * `widowed` *
     * `inDomesticPartnership` * `inCivilUnion`
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaRelationshipStatus {
   

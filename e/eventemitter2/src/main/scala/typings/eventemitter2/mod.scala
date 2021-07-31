@@ -3,7 +3,6 @@ package typings.eventemitter2
 import typings.eventemitter2.eventemitter2Booleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,7 @@ object mod {
     
     def emit(event: event | eventNS, values: js.Any*): Boolean = js.native
     
-    def emitAsync(event: event | eventNS, values: js.Any*): js.Promise[js.Array[_]] = js.native
+    def emitAsync(event: event | eventNS, values: js.Any*): js.Promise[js.Array[js.Any]] = js.native
     
     def eventNames(): js.Array[event | eventNS] = js.native
     def eventNames(nsAsArray: Boolean): js.Array[event | eventNS] = js.native
@@ -83,14 +82,14 @@ object mod {
     def setMaxListeners(n: Double): Unit = js.native
     
     def stopListeningTo(): Boolean = js.native
-    def stopListeningTo(target: js.UndefOr[scala.Nothing], event: event | eventNS): Boolean = js.native
+    def stopListeningTo(target: Unit, event: event | eventNS): Boolean = js.native
     def stopListeningTo(target: GeneralEventEmitter): Boolean = js.native
     def stopListeningTo(target: GeneralEventEmitter, event: event | eventNS): Boolean = js.native
     
-    def waitFor(event: event | eventNS): CancelablePromise[js.Array[_]] = js.native
-    def waitFor(event: event | eventNS, filter: WaitForFilter): CancelablePromise[js.Array[_]] = js.native
-    def waitFor(event: event | eventNS, options: WaitForOptions): CancelablePromise[js.Array[_]] = js.native
-    def waitFor(event: event | eventNS, timeout: Double): CancelablePromise[js.Array[_]] = js.native
+    def waitFor(event: event | eventNS): CancelablePromise[js.Array[js.Any]] = js.native
+    def waitFor(event: event | eventNS, filter: WaitForFilter): CancelablePromise[js.Array[js.Any]] = js.native
+    def waitFor(event: event | eventNS, options: WaitForOptions): CancelablePromise[js.Array[js.Any]] = js.native
+    def waitFor(event: event | eventNS, timeout: Double): CancelablePromise[js.Array[js.Any]] = js.native
   }
   /* static members */
   object EventEmitter2 {
@@ -105,65 +104,62 @@ object mod {
     @scala.inline
     def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
     
-    @JSImport("eventemitter2", "EventEmitter2.once")
-    @js.native
-    def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[_]] = js.native
-    @JSImport("eventemitter2", "EventEmitter2.once")
-    @js.native
-    def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[_]] = js.native
+    @scala.inline
+    def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
+    @scala.inline
+    def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
   }
   
   @js.native
   trait CancelablePromise[T]
     extends js.Promise[T] {
     
-    def cancel(reason: String): js.UndefOr[scala.Nothing] = js.native
+    def cancel(reason: String): Unit = js.native
   }
   
-  @js.native
   trait ConstructorOptions extends StObject {
     
     /**
       * @default '.'
       * @description the delimiter used to segment namespaces.
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * @default false
       * @description disable throwing uncaughtException if an error event is emitted and it has no listeners
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 10
       * @description the maximum amount of listeners that can be assigned to an event.
       */
-    var maxListeners: js.UndefOr[Double] = js.native
+    var maxListeners: js.UndefOr[Double] = js.undefined
     
     /**
       * @default false
       * @description set this to `true` if you want to emit the newListener events.
       */
-    var newListener: js.UndefOr[Boolean] = js.native
+    var newListener: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       * @description set this to `true` if you want to emit the removeListener events.
       */
-    var removeListener: js.UndefOr[Boolean] = js.native
+    var removeListener: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       * @description show event name in memory leak message when more than maximum amount of listeners is assigned, default false
       */
-    var verboseMemoryLeak: js.UndefOr[Boolean] = js.native
+    var verboseMemoryLeak: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       * @description set this to `true` to use wildcards.
       */
-    var wildcard: js.UndefOr[Boolean] = js.native
+    var wildcard: js.UndefOr[Boolean] = js.undefined
   }
   object ConstructorOptions {
     
@@ -222,12 +218,11 @@ object mod {
   
   type EventAndListener = js.Function2[/* event */ String | js.Array[String], /* repeated */ js.Any, Unit]
   
-  @js.native
   trait GeneralEventEmitter extends StObject {
     
-    var addEventListener: js.Function = js.native
+    var addEventListener: js.Function
     
-    var removeEventListener: js.Function = js.native
+    var removeEventListener: js.Function
   }
   object GeneralEventEmitter {
     
@@ -248,14 +243,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ListenToOptions extends StObject {
     
-    var off: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ js.Function, Unit]] = js.native
+    var off: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ js.Function, Unit]] = js.undefined
     
-    var on: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ js.Function, Unit]] = js.native
+    var on: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ js.Function, Unit]] = js.undefined
     
-    var reducers: js.Function | js.Object = js.native
+    var reducers: js.Function | js.Object
   }
   object ListenToOptions {
     
@@ -285,32 +279,62 @@ object mod {
     }
   }
   
-  @js.native
   trait Listener extends StObject {
     
-    var emitter: EventEmitter2 = js.native
+    var emitter: EventEmitter2
     
-    var event: typings.eventemitter2.mod.event | eventNS = js.native
+    var event: typings.eventemitter2.mod.event | eventNS
     
-    def listener(values: js.Any*): Unit = js.native
+    def listener(values: js.Any*): Unit
     @JSName("listener")
-    var listener_Original: ListenerFn = js.native
+    var listener_Original: ListenerFn
     
-    def off(): this.type = js.native
+    def off(): this.type
+  }
+  object Listener {
+    
+    @scala.inline
+    def apply(
+      emitter: EventEmitter2,
+      event: event | eventNS,
+      listener: /* repeated */ js.Any => Unit,
+      off: () => Listener
+    ): Listener = {
+      val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], listener = js.Any.fromFunction1(listener), off = js.Any.fromFunction0(off))
+      __obj.asInstanceOf[Listener]
+    }
+    
+    @scala.inline
+    implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEmitter(value: EventEmitter2): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEvent(value: event | eventNS): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEventVarargs(value: event*): Self = StObject.set(x, "event", js.Array(value :_*))
+      
+      @scala.inline
+      def setListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOff(value: () => Listener): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+    }
   }
   
   type ListenerFn = js.Function1[/* repeated */ js.Any, Unit]
   
-  @js.native
   trait OnOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var nextTick: js.UndefOr[Boolean] = js.native
+    var nextTick: js.UndefOr[Boolean] = js.undefined
     
-    var objectify: js.UndefOr[Boolean] = js.native
+    var objectify: js.UndefOr[Boolean] = js.undefined
     
-    var promisify: js.UndefOr[Boolean] = js.native
+    var promisify: js.UndefOr[Boolean] = js.undefined
   }
   object OnOptions {
     
@@ -349,23 +373,22 @@ object mod {
     }
   }
   
-  @js.native
   trait OnceOptions extends StObject {
     
     /**
       * @default Promise
       */
-    var Promise: js.Function = js.native
+    var Promise: js.Function
     
     /**
       * @default false
       */
-    var overload: Boolean = js.native
+    var overload: Boolean
     
     /**
       * @default 0
       */
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object OnceOptions {
     
@@ -391,38 +414,70 @@ object mod {
   
   type WaitForFilter = js.Function1[/* repeated */ js.Any, Boolean]
   
-  @js.native
   trait WaitForOptions extends StObject {
     
     /**
       * @default Promise
       */
-    var Promise: js.Function = js.native
+    var Promise: js.Function
     
     /**
       * @default null
       */
-    def filter(values: js.Any*): Boolean = js.native
+    def filter(values: js.Any*): Boolean
     /**
       * @default null
       */
     @JSName("filter")
-    var filter_Original: WaitForFilter = js.native
+    var filter_Original: WaitForFilter
     
     /**
       * @default false
       */
-    var handleError: Boolean = js.native
+    var handleError: Boolean
     
     /**
       * @default false
       */
-    var overload: Boolean = js.native
+    var overload: Boolean
     
     /**
       * @default 0
       */
-    var timeout: Double = js.native
+    var timeout: Double
+  }
+  object WaitForOptions {
+    
+    @scala.inline
+    def apply(
+      Promise: js.Function,
+      filter: /* repeated */ js.Any => Boolean,
+      handleError: Boolean,
+      overload: Boolean,
+      timeout: Double
+    ): WaitForOptions = {
+      val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], filter = js.Any.fromFunction1(filter), handleError = handleError.asInstanceOf[js.Any], overload = overload.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WaitForOptions]
+    }
+    
+    @scala.inline
+    implicit class WaitForOptionsMutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFilter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHandleError(value: Boolean): Self = StObject.set(x, "handleError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPromise(value: js.Function): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    }
   }
   
   type event = js.Symbol | String

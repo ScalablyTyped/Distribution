@@ -2,17 +2,15 @@ package typings.vscodeJsonrpc.messagesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LSPLogMessage extends StObject {
   
-  var message: RequestMessage | ResponseMessage | NotificationMessage = js.native
+  var message: RequestMessage | ResponseMessage | NotificationMessage
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: LSPMessageType = js.native
+  var `type`: LSPMessageType
 }
 object LSPLogMessage {
   

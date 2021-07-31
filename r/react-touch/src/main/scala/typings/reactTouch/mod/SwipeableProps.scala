@@ -2,26 +2,24 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwipeableProps extends StObject {
   
   /** @see defineSwipe */
-  var config: js.UndefOr[SwipeableConfig] = js.native
+  var config: js.UndefOr[SwipeableConfig] = js.undefined
   
-  var onMouseDown: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSwipeDown: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSwipeDown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSwipeLeft: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSwipeLeft: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSwipeRight: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSwipeRight: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSwipeUp: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSwipeUp: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object SwipeableProps {
   

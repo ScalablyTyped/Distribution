@@ -3,25 +3,24 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.DirectiveLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectiveLiteral_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
   @JSName("type")
-  var type_DirectiveLiteral_ : DirectiveLiteral = js.native
+  var type_DirectiveLiteral_ : DirectiveLiteral
   
-  var value: String = js.native
+  var value: String
 }
 object DirectiveLiteral_ {
   
   @scala.inline
-  def apply(`type`: DirectiveLiteral, value: String): DirectiveLiteral_ = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(value: String): DirectiveLiteral_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DirectiveLiteral")
     __obj.asInstanceOf[DirectiveLiteral_]
   }
   

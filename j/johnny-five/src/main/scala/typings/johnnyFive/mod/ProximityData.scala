@@ -2,15 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProximityData extends StObject {
   
-  var cm: Double = js.native
+  var cm: Double
   
-  var in: Double = js.native
+  var in: Double
 }
 object ProximityData {
   

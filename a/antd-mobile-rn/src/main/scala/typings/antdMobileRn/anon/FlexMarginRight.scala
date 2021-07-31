@@ -2,19 +2,17 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexMarginRight extends StObject {
   
-  var flex: Double = js.native
+  var flex: Double
   
-  var marginRight: Double = js.native
+  var marginRight: Double
   
-  var overflow: String = js.native
+  var overflow: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object FlexMarginRight {
   

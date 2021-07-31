@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var cellValue: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.native
+  var cellValue: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var cellValueOrNullObject: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.native
+  var cellValueOrNullObject: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var colorScale: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.native
+  var colorScale: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var colorScaleOrNullObject: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.native
+  var colorScaleOrNullObject: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var custom: js.UndefOr[CustomConditionalFormatLoadOptions] = js.native
+  var custom: js.UndefOr[CustomConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var customOrNullObject: js.UndefOr[CustomConditionalFormatLoadOptions] = js.native
+  var customOrNullObject: js.UndefOr[CustomConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var dataBar: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.native
+  var dataBar: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var dataBarOrNullObject: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.native
+  var dataBarOrNullObject: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -93,7 +91,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var iconSet: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.native
+  var iconSet: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -101,7 +99,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.native
+  var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -109,7 +107,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -117,7 +115,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var preset: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.native
+  var preset: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -125,7 +123,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var presetOrNullObject: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.native
+  var presetOrNullObject: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -137,7 +135,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var priority: js.UndefOr[Boolean] = js.native
+  var priority: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var stopIfTrue: js.UndefOr[Boolean] = js.native
+  var stopIfTrue: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -155,7 +153,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var textComparison: js.UndefOr[TextConditionalFormatLoadOptions] = js.native
+  var textComparison: js.UndefOr[TextConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -164,7 +162,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var textComparisonOrNullObject: js.UndefOr[TextConditionalFormatLoadOptions] = js.native
+  var textComparisonOrNullObject: js.UndefOr[TextConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -173,7 +171,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var topBottom: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.native
+  var topBottom: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -182,7 +180,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.native
+  var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -190,7 +188,7 @@ trait ConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
 }
 object ConditionalFormatLoadOptions {
   

@@ -4,13 +4,11 @@ import typings.vastClient.anon.FnCall
 import typings.vastClient.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VASTClientUrlHandler extends StObject {
   
-  def get(url: String, options: Timeout, cb: FnCall): Unit = js.native
+  def get(url: String, options: Timeout, cb: FnCall): Unit
 }
 object VASTClientUrlHandler {
   

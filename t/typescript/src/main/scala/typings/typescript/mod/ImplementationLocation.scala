@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImplementationLocation extends DocumentSpan {
+trait ImplementationLocation
+  extends StObject
+     with DocumentSpan {
   
-  var displayParts: js.Array[SymbolDisplayPart] = js.native
+  var displayParts: js.Array[SymbolDisplayPart]
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
 }
 object ImplementationLocation {
   

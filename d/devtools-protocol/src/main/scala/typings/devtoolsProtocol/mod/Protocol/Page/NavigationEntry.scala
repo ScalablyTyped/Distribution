@@ -3,36 +3,34 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationEntry extends StObject {
   
   /**
     * Unique id of the navigation history entry.
     */
-  var id: integer = js.native
+  var id: integer
   
   /**
     * Title of the navigation history entry.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Transition type.
     */
-  var transitionType: TransitionType = js.native
+  var transitionType: TransitionType
   
   /**
     * URL of the navigation history entry.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * URL that the user typed in the url bar.
     */
-  var userTypedURL: String = js.native
+  var userTypedURL: String
 }
 object NavigationEntry {
   

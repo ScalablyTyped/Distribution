@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAppInstanceAdminRequest extends StObject {
   
   /**
     * The ARN of the app instance administrator.
     */
-  var AppInstanceAdminArn: ChimeArn = js.native
+  var AppInstanceAdminArn: ChimeArn
   
   /**
     * The ARN of the app instance.
     */
-  var AppInstanceArn: ChimeArn = js.native
+  var AppInstanceArn: ChimeArn
 }
 object DescribeAppInstanceAdminRequest {
   

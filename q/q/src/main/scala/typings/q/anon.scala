@@ -7,7 +7,6 @@ import typings.q.mod.Promise
 import typings.q.mod.PromiseState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -67,7 +66,7 @@ object anon {
     def delay[T](promiseOrValue: T, ms: Double): Promise[T] = js.native
     def delay[T](promiseOrValue: Promise[T], ms: Double): Promise[T] = js.native
     
-    def denodeify[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def denodeify[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
     
     def fbind[T](method: js.Function1[/* repeated */ js.Any, IWhenable[T]], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
     
@@ -75,38 +74,38 @@ object anon {
     
     def invoke[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
     
-    def isFulfilled(promise: Promise[_]): Boolean = js.native
+    def isFulfilled(promise: Promise[js.Any]): Boolean = js.native
     
     def isPending(promiseOrObject: js.Any): Boolean = js.native
-    def isPending(promiseOrObject: Promise[_]): Boolean = js.native
+    def isPending(promiseOrObject: Promise[js.Any]): Boolean = js.native
     
     def isPromise(`object`: js.Any): /* is q.q.Promise<any> */ Boolean = js.native
     
     def isPromiseAlike(`object`: js.Any): /* is q.q.IPromise<any> */ Boolean = js.native
     
-    def isRejected(promise: Promise[_]): Boolean = js.native
+    def isRejected(promise: Promise[js.Any]): Boolean = js.native
     
     var longStackSupport: Boolean = js.native
     
     def mcall[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
     
-    def nbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def nbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
     
     def nearer[T](promise: Promise[T]): T = js.native
     
-    def nextTick(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def nextTick(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
     
-    def nfapply[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Array[_]): Promise[T] = js.native
+    def nfapply[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Array[js.Any]): Promise[T] = js.native
     
-    def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
     
-    def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): Promise[T] = js.native
+    def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Promise[T] = js.native
     
     def ninvoke[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
     
     def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Q */ js.Any = js.native
     
-    def npost[T](nodeModule: js.Any, functionName: String, args: js.Array[_]): Promise[T] = js.native
+    def npost[T](nodeModule: js.Any, functionName: String, args: js.Array[js.Any]): Promise[T] = js.native
     
     def nsend[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
     
@@ -144,25 +143,25 @@ object anon {
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-      onRejected: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* progress */ js.Any, _]
-    ): Promise[U] = js.native
-    def when[T, U](
-      value: IWhenable[T],
-      onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
     ): Promise[U] = js.native
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]],
-      onProgress: js.Function1[/* progress */ js.Any, _]
+      onProgress: js.Function1[/* progress */ js.Any, js.Any]
     ): Promise[U] = js.native
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: Null,
-      onProgress: js.Function1[/* progress */ js.Any, _]
+      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+    ): Promise[U] = js.native
+    def when[T, U](
+      value: IWhenable[T],
+      onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
+      onRejected: Unit,
+      onProgress: js.Function1[/* progress */ js.Any, js.Any]
     ): Promise[U] = js.native
   }
 }

@@ -3,22 +3,22 @@ package typings.yup.mod
 import typings.yup.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<yup.yup.SchemaDescription, std.Exclude<keyof yup.yup.SchemaDescription, 'fields'>> */
-@js.native
-trait SchemaFieldInnerTypeDescription extends SchemaFieldDescription {
+trait SchemaFieldInnerTypeDescription
+  extends StObject
+     with SchemaFieldDescription {
   
-  var innerType: js.UndefOr[SchemaFieldDescription] = js.native
+  var innerType: js.UndefOr[SchemaFieldDescription] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var meta: js.Object = js.native
+  var meta: js.Object
   
-  var tests: js.Array[Name] = js.native
+  var tests: js.Array[Name]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SchemaFieldInnerTypeDescription {
   

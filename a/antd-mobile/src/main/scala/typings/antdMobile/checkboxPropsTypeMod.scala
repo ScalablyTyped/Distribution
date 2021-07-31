@@ -4,19 +4,19 @@ import typings.antdMobile.anon.Checked
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxPropsTypeMod {
   
-  @js.native
-  trait CheckboxItemPropsType extends CheckboxPropsType {
+  trait CheckboxItemPropsType
+    extends StObject
+       with CheckboxPropsType {
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object CheckboxItemPropsType {
     
@@ -49,16 +49,15 @@ object checkboxPropsTypeMod {
     }
   }
   
-  @js.native
   trait CheckboxPropsType extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, Unit]] = js.undefined
   }
   object CheckboxPropsType {
     
@@ -97,10 +96,9 @@ object checkboxPropsTypeMod {
     }
   }
   
-  @js.native
   trait OnChangeParams extends StObject {
     
-    var target: Checked = js.native
+    var target: Checked
   }
   object OnChangeParams {
     

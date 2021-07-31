@@ -7,7 +7,6 @@ import typings.jssha.jsshaStrings.ARRAYBUFFER
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,7 +14,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jssha", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Hasher[String] {
+  class ^ protected ()
+    extends StObject
+       with Hasher[String] {
     /**
       * Create a Hasher object.
       *
@@ -28,14 +29,13 @@ object mod extends Shortcut {
   }
   @JSImport("jssha", JSImport.Namespace)
   @js.native
-  val ^ : jsSHA = js.native
+  val ^ : js.Object & jsSHA = js.native
   
   type ArrayBufferDataFormat = ARRAYBUFFER
   
-  @js.native
   trait EncodingOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
   }
   object EncodingOptions {
     
@@ -107,10 +107,11 @@ object mod extends Shortcut {
     def update(srcString: InputT): Unit = js.native
   }
   
-  @js.native
-  trait Options extends EncodingOptions {
+  trait Options
+    extends StObject
+       with EncodingOptions {
     
-    var numRounds: js.UndefOr[Double] = js.native
+    var numRounds: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -131,14 +132,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait OutputFormatOptions extends StObject {
     
-    var b64Pad: js.UndefOr[String] = js.native
+    var b64Pad: js.UndefOr[String] = js.undefined
     
-    var outputUpper: js.UndefOr[Boolean] = js.native
+    var outputUpper: js.UndefOr[Boolean] = js.undefined
     
-    var shakeLen: js.UndefOr[Double] = js.native
+    var shakeLen: js.UndefOr[Double] = js.undefined
   }
   object OutputFormatOptions {
     
@@ -193,14 +193,15 @@ object mod extends Shortcut {
     def TEXT: typings.jssha.jsshaStrings.TEXT = "TEXT".asInstanceOf[typings.jssha.jsshaStrings.TEXT]
   }
   
-  type _To = jsSHA
+  type _To = js.Object & jsSHA
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: jsSHA = ^
+  override def _to: js.Object & jsSHA = ^
   
   @js.native
   trait jsSHA
-    extends /**
+    extends StObject
+       with /**
     * Create a Hasher object.
     *
     * @param variant - The desired SHA variant (SHA-1, SHA-224, SHA-256,

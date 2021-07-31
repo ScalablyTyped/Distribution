@@ -2,10 +2,8 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amountpercent extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait Amountpercent extends StObject {
     * This represents the percentage of the subscription invoice subtotal that will be transferred to the destination account.
     * By default, the entire amount is transferred to the destination.
     */
-  var amount_percent: js.UndefOr[Double] = js.native
+  var amount_percent: js.UndefOr[Double] = js.undefined
   
   /**
     * ID of an existing, connected Stripe account.
     */
-  var destination: String = js.native
+  var destination: String
 }
 object Amountpercent {
   

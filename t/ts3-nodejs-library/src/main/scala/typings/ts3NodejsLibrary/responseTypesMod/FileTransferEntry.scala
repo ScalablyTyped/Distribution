@@ -3,35 +3,35 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileTransferEntry extends ResponseEntry {
+trait FileTransferEntry
+  extends StObject
+     with ResponseEntry {
   
-  var averageSpeed: Double = js.native
+  var averageSpeed: Double
   
-  var clid: String = js.native
+  var clid: String
   
-  var clientftfid: Double = js.native
+  var clientftfid: Double
   
-  var currentSpeed: Double = js.native
+  var currentSpeed: Double
   
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
   
-  var runtime: Double = js.native
+  var runtime: Double
   
-  var sender: Double = js.native
+  var sender: Double
   
-  var serverftfid: Double = js.native
+  var serverftfid: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var sizedone: Double = js.native
+  var sizedone: Double
   
-  var status: Double = js.native
+  var status: Double
 }
 object FileTransferEntry {
   

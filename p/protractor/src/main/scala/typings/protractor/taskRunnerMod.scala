@@ -5,7 +5,6 @@ import typings.protractor.configMod.Config
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskRunnerMod {
@@ -26,27 +25,26 @@ object taskRunnerMod {
       *     result of the run:
       *       taskId, specs, capabilities, failedCount, exitCode, specResults
       */
-    def run(): Promise[_] = js.native
+    def run(): Promise[js.Any] = js.native
     
     var runInFork: js.Any = js.native
     
     var task: js.Any = js.native
   }
   
-  @js.native
   trait RunResults extends StObject {
     
-    var capabilities: js.Any = js.native
+    var capabilities: js.Any
     
-    var exitCode: Double = js.native
+    var exitCode: Double
     
-    var failedCount: Double = js.native
+    var failedCount: Double
     
-    var specResults: js.Array[_] = js.native
+    var specResults: js.Array[js.Any]
     
-    var specs: js.Array[String] = js.native
+    var specs: js.Array[String]
     
-    var taskId: Double = js.native
+    var taskId: Double
   }
   object RunResults {
     
@@ -55,7 +53,7 @@ object taskRunnerMod {
       capabilities: js.Any,
       exitCode: Double,
       failedCount: Double,
-      specResults: js.Array[_],
+      specResults: js.Array[js.Any],
       specs: js.Array[String],
       taskId: Double
     ): RunResults = {
@@ -76,7 +74,7 @@ object taskRunnerMod {
       def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSpecResults(value: js.Array[_]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
+      def setSpecResults(value: js.Array[js.Any]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSpecResultsVarargs(value: js.Any*): Self = StObject.set(x, "specResults", js.Array(value :_*))

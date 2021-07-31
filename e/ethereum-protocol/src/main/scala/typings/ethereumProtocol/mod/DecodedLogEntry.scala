@@ -2,15 +2,15 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecodedLogEntry[A] extends LogEntry {
+trait DecodedLogEntry[A]
+  extends StObject
+     with LogEntry {
   
-  var args: A = js.native
+  var args: A
   
-  var event: String = js.native
+  var event: String
 }
 object DecodedLogEntry {
   
@@ -23,12 +23,12 @@ object DecodedLogEntry {
     topics: js.Array[String],
     transactionHash: String
   ): DecodedLogEntry[A] = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], blockHash = null, blockNumber = null, logIndex = null, transactionIndex = null)
     __obj.asInstanceOf[DecodedLogEntry[A]]
   }
   
   @scala.inline
-  implicit class DecodedLogEntryMutableBuilder[Self <: DecodedLogEntry[_], A] (val x: Self with DecodedLogEntry[A]) extends AnyVal {
+  implicit class DecodedLogEntryMutableBuilder[Self <: DecodedLogEntry[?], A] (val x: Self & DecodedLogEntry[A]) extends AnyVal {
     
     @scala.inline
     def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])

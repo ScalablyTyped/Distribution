@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * method, the method returns null. To avoid this, query for text styles using the Rich Text
   * values returned by the RichTextValue.getRuns() method.
   */
-@js.native
 trait TextStyle extends StObject {
   
-  def copy(): TextStyleBuilder = js.native
+  def copy(): TextStyleBuilder
   
-  def getFontFamily(): String | Null = js.native
+  def getFontFamily(): String | Null
   
-  def getFontSize(): Integer | Null = js.native
+  def getFontSize(): Integer | Null
   
-  def getForegroundColor(): String | Null = js.native
+  def getForegroundColor(): String | Null
   
-  def isBold(): Boolean | Null = js.native
+  def isBold(): Boolean | Null
   
-  def isItalic(): Boolean | Null = js.native
+  def isItalic(): Boolean | Null
   
-  def isStrikethrough(): Boolean | Null = js.native
+  def isStrikethrough(): Boolean | Null
   
-  def isUnderline(): Boolean | Null = js.native
+  def isUnderline(): Boolean | Null
 }
 object TextStyle {
   

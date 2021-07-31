@@ -2,26 +2,24 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @aws-sdk/types.@aws-sdk/types/dist/cjs/middleware.RelativeLocation & std.Omit<@aws-sdk/types.@aws-sdk/types/dist/cjs/middleware.HandlerOptions, 'step'> */
-@js.native
 trait RelativeMiddlewareOptions extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the relation to be before or after a know middleware.
     */
-  var relation: Relation = js.native
+  var relation: Relation
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A known middleware name to indicate inserting middleware's location.
     */
-  var toMiddleware: String = js.native
+  var toMiddleware: String
 }
 object RelativeMiddlewareOptions {
   

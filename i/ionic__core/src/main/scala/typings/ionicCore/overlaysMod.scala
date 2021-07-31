@@ -71,10 +71,13 @@ import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlaysMod {
+  
+  @JSImport("@ionic/core/dist/types/utils/overlays", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/core/dist/types/utils/overlays", "BACKDROP")
   @js.native
@@ -82,38 +85,32 @@ object overlaysMod {
   
   object actionSheetController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController")
     @js.native
-    def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonActionSheetElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "actionSheetController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonActionSheetElement]]]
   }
   
   @JSImport("@ionic/core/dist/types/utils/overlays", "activeAnimations")
@@ -122,116 +119,43 @@ object overlaysMod {
   
   object alertController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController")
     @js.native
-    def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonAlertElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "alertController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonAlertElement]]]
   }
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "connectListeners")
-  @js.native
-  def connectListeners(doc: Document): Unit = js.native
+  @scala.inline
+  def connectListeners(doc: Document): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectListeners")(doc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "createOverlay")
-  @js.native
-  def createOverlay[T /* <: HTMLIonOverlayElement */](tagName: String): js.Promise[T] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "createOverlay")
-  @js.native
-  def createOverlay[T /* <: HTMLIonOverlayElement */](tagName: String, opts: js.Object): js.Promise[T] = js.native
+  @scala.inline
+  def createOverlay[T /* <: HTMLIonOverlayElement */](tagName: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOverlay")(tagName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def createOverlay[T /* <: HTMLIonOverlayElement */](tagName: String, opts: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOverlay")(tagName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.UndefOr[scala.Nothing],
-    role: js.UndefOr[scala.Nothing],
-    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.UndefOr[scala.Nothing],
-    role: js.UndefOr[scala.Nothing],
-    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.UndefOr[scala.Nothing],
-    role: String,
-    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.UndefOr[scala.Nothing],
-    role: String,
-    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
-  def dismiss(
-    overlay: OverlayInterface,
-    data: js.Any,
-    role: js.UndefOr[scala.Nothing],
-    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
-    iosLeaveAnimation: AnimationBuilder,
-    mdLeaveAnimation: AnimationBuilder,
-    opts: js.Any
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
+  @scala.inline
   def dismiss(
     overlay: OverlayInterface,
     data: js.Any,
@@ -239,9 +163,8 @@ object overlaysMod {
     name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
     iosLeaveAnimation: AnimationBuilder,
     mdLeaveAnimation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismiss")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def dismiss(
     overlay: OverlayInterface,
     data: js.Any,
@@ -250,262 +173,270 @@ object overlaysMod {
     iosLeaveAnimation: AnimationBuilder,
     mdLeaveAnimation: AnimationBuilder,
     opts: js.Any
-  ): js.Promise[Boolean] = js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismiss(
+    overlay: OverlayInterface,
+    data: js.Any,
+    role: Unit,
+    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
+    iosLeaveAnimation: AnimationBuilder,
+    mdLeaveAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismiss(
+    overlay: OverlayInterface,
+    data: js.Any,
+    role: Unit,
+    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
+    iosLeaveAnimation: AnimationBuilder,
+    mdLeaveAnimation: AnimationBuilder,
+    opts: js.Any
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismiss(
+    overlay: OverlayInterface,
+    data: Unit,
+    role: String,
+    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
+    iosLeaveAnimation: AnimationBuilder,
+    mdLeaveAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismiss(
+    overlay: OverlayInterface,
+    data: Unit,
+    role: String,
+    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
+    iosLeaveAnimation: AnimationBuilder,
+    mdLeaveAnimation: AnimationBuilder,
+    opts: js.Any
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismiss(
+    overlay: OverlayInterface,
+    data: Unit,
+    role: Unit,
+    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
+    iosLeaveAnimation: AnimationBuilder,
+    mdLeaveAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismiss(
+    overlay: OverlayInterface,
+    data: Unit,
+    role: Unit,
+    name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
+    iosLeaveAnimation: AnimationBuilder,
+    mdLeaveAnimation: AnimationBuilder,
+    opts: js.Any
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(overlay.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosLeaveAnimation.asInstanceOf[js.Any], mdLeaveAnimation.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismissOverlay")
-  @js.native
-  def dismissOverlay(doc: Document, data: js.Any, role: js.UndefOr[scala.Nothing], overlayTag: String): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismissOverlay")
-  @js.native
-  def dismissOverlay(doc: Document, data: js.Any, role: js.UndefOr[scala.Nothing], overlayTag: String, id: String): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismissOverlay")
-  @js.native
-  def dismissOverlay(doc: Document, data: js.Any, role: String, overlayTag: String): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "dismissOverlay")
-  @js.native
-  def dismissOverlay(doc: Document, data: js.Any, role: String, overlayTag: String, id: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def dismissOverlay(doc: Document, data: js.Any, role: String, overlayTag: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismissOverlay")(doc.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismissOverlay(doc: Document, data: js.Any, role: String, overlayTag: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismissOverlay")(doc.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismissOverlay(doc: Document, data: js.Any, role: Unit, overlayTag: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismissOverlay")(doc.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def dismissOverlay(doc: Document, data: js.Any, role: Unit, overlayTag: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismissOverlay")(doc.asInstanceOf[js.Any], data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "eventMethod")
-  @js.native
-  def eventMethod[T](element: HTMLElement, eventName: String): js.Promise[T] = js.native
+  @scala.inline
+  def eventMethod[T](element: HTMLElement, eventName: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventMethod")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "getOverlay")
-  @js.native
-  def getOverlay(doc: Document): js.UndefOr[HTMLIonOverlayElement] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "getOverlay")
-  @js.native
-  def getOverlay(doc: Document, overlayTag: js.UndefOr[scala.Nothing], id: String): js.UndefOr[HTMLIonOverlayElement] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "getOverlay")
-  @js.native
-  def getOverlay(doc: Document, overlayTag: String): js.UndefOr[HTMLIonOverlayElement] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "getOverlay")
-  @js.native
-  def getOverlay(doc: Document, overlayTag: String, id: String): js.UndefOr[HTMLIonOverlayElement] = js.native
+  @scala.inline
+  def getOverlay(doc: Document): js.UndefOr[HTMLIonOverlayElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverlay")(doc.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLIonOverlayElement]]
+  @scala.inline
+  def getOverlay(doc: Document, overlayTag: String): js.UndefOr[HTMLIonOverlayElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverlay")(doc.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HTMLIonOverlayElement]]
+  @scala.inline
+  def getOverlay(doc: Document, overlayTag: String, id: String): js.UndefOr[HTMLIonOverlayElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverlay")(doc.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HTMLIonOverlayElement]]
+  @scala.inline
+  def getOverlay(doc: Document, overlayTag: Unit, id: String): js.UndefOr[HTMLIonOverlayElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverlay")(doc.asInstanceOf[js.Any], overlayTag.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HTMLIonOverlayElement]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "getOverlays")
-  @js.native
-  def getOverlays(doc: Document): js.Array[HTMLIonOverlayElement] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "getOverlays")
-  @js.native
-  def getOverlays(doc: Document, selector: String): js.Array[HTMLIonOverlayElement] = js.native
+  @scala.inline
+  def getOverlays(doc: Document): js.Array[HTMLIonOverlayElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverlays")(doc.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLIonOverlayElement]]
+  @scala.inline
+  def getOverlays(doc: Document, selector: String): js.Array[HTMLIonOverlayElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverlays")(doc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLIonOverlayElement]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "isCancel")
-  @js.native
-  def isCancel(): Boolean = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "isCancel")
-  @js.native
-  def isCancel(role: String): Boolean = js.native
+  @scala.inline
+  def isCancel(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancel")().asInstanceOf[Boolean]
+  @scala.inline
+  def isCancel(role: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancel")(role.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object loadingController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController")
     @js.native
-    def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonLoadingElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "loadingController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonLoadingElement]]]
   }
   
   object modalController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController")
     @js.native
-    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonModalElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "modalController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonModalElement]]]
   }
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "onceEvent")
-  @js.native
-  def onceEvent(element: HTMLElement, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): Unit = js.native
+  @scala.inline
+  def onceEvent(element: HTMLElement, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onceEvent")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object pickerController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController")
     @js.native
-    def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPickerElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "pickerController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPickerElement]]]
   }
   
   object popoverController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController")
     @js.native
-    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPopoverElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "popoverController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPopoverElement]]]
   }
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "prepareOverlay")
-  @js.native
-  def prepareOverlay[T /* <: HTMLIonOverlayElement */](el: T): Unit = js.native
+  @scala.inline
+  def prepareOverlay[T /* <: HTMLIonOverlayElement */](el: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareOverlay")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "present")
-  @js.native
+  @scala.inline
   def present(
     overlay: OverlayInterface,
     name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
     iosEnterAnimation: AnimationBuilder,
     mdEnterAnimation: AnimationBuilder
-  ): js.Promise[Unit] = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "present")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("present")(overlay.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosEnterAnimation.asInstanceOf[js.Any], mdEnterAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def present(
     overlay: OverlayInterface,
     name: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel,
     iosEnterAnimation: AnimationBuilder,
     mdEnterAnimation: AnimationBuilder,
     opts: js.Any
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("present")(overlay.asInstanceOf[js.Any], name.asInstanceOf[js.Any], iosEnterAnimation.asInstanceOf[js.Any], mdEnterAnimation.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@ionic/core/dist/types/utils/overlays", "safeCall")
-  @js.native
-  def safeCall(handler: js.Any): js.Any = js.native
-  @JSImport("@ionic/core/dist/types/utils/overlays", "safeCall")
-  @js.native
-  def safeCall(handler: js.Any, arg: js.Any): js.Any = js.native
+  @scala.inline
+  def safeCall(handler: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCall")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def safeCall(handler: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeCall")(handler.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   object toastController {
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.create")
+    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController")
     @js.native
-    def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonToastElement]]
     
-    @JSImport("@ionic/core/dist/types/utils/overlays", "toastController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonToastElement]]]
   }
 }

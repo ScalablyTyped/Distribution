@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerStatus extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaInstanceGroupManagerStatus extends StObject {
     * for instances in the managed instance group; and the managed instance
     * group itself is not being modified.
     */
-  var isStable: js.UndefOr[Boolean] = js.native
+  var isStable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] A status of consistency of Instances&#39; versions with
     * their target version specified by version field on Instance Group
     * Manager.
     */
-  var versionTarget: js.UndefOr[SchemaInstanceGroupManagerStatusVersionTarget] = js.native
+  var versionTarget: js.UndefOr[SchemaInstanceGroupManagerStatusVersionTarget] = js.undefined
 }
 object SchemaInstanceGroupManagerStatus {
   

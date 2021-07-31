@@ -5,14 +5,12 @@ import typings.vegaLite.toplevelMod.AutosizeType
 import typings.vegaLite.vegaLiteStrings.container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  autosize :vega-lite.vega-lite/build/src/spec/toplevel.AutosizeType | vega-lite.vega-lite/build/src/spec/toplevel.AutoSizeParams} & vega-lite.vega-lite/build/src/spec.LayoutSizeMixins */
-@js.native
 trait autosizeAutosizeTypeAutoS extends StObject {
   
-  var autosize: AutosizeType | AutoSizeParams = js.native
+  var autosize: AutosizeType | AutoSizeParams
   
   /**
     * The height of a visualization.
@@ -27,7 +25,7 @@ trait autosizeAutosizeTypeAutoS extends StObject {
     *
     * __See also:__ [`height`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
   
   /**
     * The width of a visualization.
@@ -43,7 +41,7 @@ trait autosizeAutosizeTypeAutoS extends StObject {
     *
     * __See also:__ [`width`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
 }
 object autosizeAutosizeTypeAutoS {
   

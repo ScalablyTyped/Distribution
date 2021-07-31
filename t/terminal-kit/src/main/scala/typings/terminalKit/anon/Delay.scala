@@ -3,19 +3,17 @@ package typings.terminalKit.anon
 import typings.terminalKit.terminalMod.CTerminal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var flashDelay: js.UndefOr[Double] = js.native
+  var flashDelay: js.UndefOr[Double] = js.undefined
   
-  var flashStyle: js.UndefOr[CTerminal] = js.native
+  var flashStyle: js.UndefOr[CTerminal] = js.undefined
   
-  var style: js.UndefOr[CTerminal] = js.native
+  var style: js.UndefOr[CTerminal] = js.undefined
 }
 object Delay {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Acl")
@@ -31,7 +30,7 @@ class ResourceAcl protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAclDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAclDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,7 +56,7 @@ class ResourceAcl protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAclRule] = js.native
   def get(callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
   def get(params: ParamsResourceAclGet): GaxiosPromise[SchemaAclRule] = js.native
   def get(params: ParamsResourceAclGet, callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
   def get(
@@ -88,7 +87,7 @@ class ResourceAcl protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAclRule] = js.native
   def insert(callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
   def insert(params: ParamsResourceAclInsert): GaxiosPromise[SchemaAclRule] = js.native
   def insert(params: ParamsResourceAclInsert, callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
   def insert(
@@ -121,7 +120,7 @@ class ResourceAcl protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAcl] = js.native
   def list(callback: BodyResponseCallback[SchemaAcl]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAcl] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAcl] = js.native
   def list(params: ParamsResourceAclList): GaxiosPromise[SchemaAcl] = js.native
   def list(params: ParamsResourceAclList, callback: BodyResponseCallback[SchemaAcl]): Unit = js.native
   def list(
@@ -150,7 +149,7 @@ class ResourceAcl protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAclRule] = js.native
   def patch(callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
   def patch(params: ParamsResourceAclPatch): GaxiosPromise[SchemaAclRule] = js.native
   def patch(params: ParamsResourceAclPatch, callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
   def patch(
@@ -182,7 +181,7 @@ class ResourceAcl protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAclRule] = js.native
   def update(callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAclRule] = js.native
   def update(params: ParamsResourceAclUpdate): GaxiosPromise[SchemaAclRule] = js.native
   def update(params: ParamsResourceAclUpdate, callback: BodyResponseCallback[SchemaAclRule]): Unit = js.native
   def update(
@@ -216,7 +215,7 @@ class ResourceAcl protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceAclWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceAclWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

@@ -2,12 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Naver Overlays
 @js.native
-trait Circle extends OverlayView {
+trait Circle
+  extends StObject
+     with OverlayView {
   
   def getAreaSize(): Double = js.native
   

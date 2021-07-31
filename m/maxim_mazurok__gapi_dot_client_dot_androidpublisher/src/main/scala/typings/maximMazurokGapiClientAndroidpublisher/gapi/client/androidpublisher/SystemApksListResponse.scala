@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemApksListResponse extends StObject {
   
   /** All system APK variants created. */
-  var variants: js.UndefOr[js.Array[Variant]] = js.native
+  var variants: js.UndefOr[js.Array[Variant]] = js.undefined
 }
 object SystemApksListResponse {
   

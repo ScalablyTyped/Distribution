@@ -3,54 +3,52 @@ package typings.reactBootstrapTable.anon
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-bootstrap-table.react-bootstrap-table.ButtonGroupProps & {  searchPanel :react.react.ReactElement,   btnGroup :react.react.ReactElement,   searchField :react.react.ReactElement,   clearBtn :react.react.ReactElement} */
-@js.native
 trait ButtonGroupPropssearchPan extends StObject {
   
   /**
     * Button group components.
     */
-  var btnGroup: ReactElement = js.native
+  var btnGroup: ReactElement
   
   // search field JSX
   /**
     * The button to clear the search field.
     */
-  var clearBtn: ReactElement = js.native
+  var clearBtn: ReactElement
   
   /**
     * Delete button.
     */
-  var deleteBtn: ReactElement = js.native
+  var deleteBtn: ReactElement
   
   /**
     * Export to CSV button.
     */
-  var exportCSVBtn: ReactElement = js.native
+  var exportCSVBtn: ReactElement
   
   /**
     * Insert button (to add a row).
     */
-  var insertBtn: ReactElement = js.native
+  var insertBtn: ReactElement
   
   // button groups JSX
   /**
     * The individual search field.
     */
-  var searchField: ReactElement = js.native
+  var searchField: ReactElement
   
   /**
     * Search panel component.
     */
-  var searchPanel: ReactElement = js.native
+  var searchPanel: ReactElement
   
   /**
     * Toggle button to switch between showing all rows and showing selected rows only.
     */
-  var showSelectedOnlyBtn: ReactElement = js.native
+  var showSelectedOnlyBtn: ReactElement
 }
 object ButtonGroupPropssearchPan {
   

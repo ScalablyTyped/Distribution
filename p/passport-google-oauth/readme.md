@@ -11,8 +11,8 @@ Google (OAuth) authentication strategies for Passport.
 | Full name          | passport-google-oauth |
 | Keywords           | passport, google, auth, authn, authentication, identity |
 | # releases         | 2 |
-| # dependents       | 246 |
-| # downloads        | 2544821 |
+| # dependents       | 257 |
+| # downloads        | 2662889 |
 | # stars            | 26 |
 
 ## Links

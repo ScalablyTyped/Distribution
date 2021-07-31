@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents authentication information used in the Proxy-Authenticate and WWW-Authenticate HTTP header values. */
-@js.native
 trait HttpChallengeHeaderValue extends StObject {
   
   /** Gets the credentials that contain the authentication information of the user agent for the resource being requested. */
-  var parameters: IVector[HttpNameValueHeaderValue] = js.native
+  var parameters: IVector[HttpNameValueHeaderValue]
   
   /** Gets the scheme to use for authentication. */
-  var scheme: String = js.native
+  var scheme: String
   
   /** The SPNEGO token to use with the Negotiate protocol scheme. */
-  var token: String = js.native
+  var token: String
 }
 object HttpChallengeHeaderValue {
   

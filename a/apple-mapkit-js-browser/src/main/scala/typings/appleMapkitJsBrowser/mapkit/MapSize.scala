@@ -2,37 +2,35 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pair of values in map units that define the width and height of a
   * projected coordinate span.
   */
-@js.native
 trait MapSize extends StObject {
   
   /**
     * Returns a copy of a map size.
     */
-  def copy(): MapSize = js.native
+  def copy(): MapSize
   
   /**
     * Indicates whether two map sizes are equal.
     *
     * @param anotherSize The map size to equate to.
     */
-  def equals(anotherSize: MapSize): Boolean = js.native
+  def equals(anotherSize: MapSize): Boolean
   
   /**
     * The height value, in map point units.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The width value, in map point units.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object MapSize {
   

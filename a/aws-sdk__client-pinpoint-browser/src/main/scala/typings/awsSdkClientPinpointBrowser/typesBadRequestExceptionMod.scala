@@ -73,15 +73,14 @@ import typings.awsSdkClientPinpointBrowser.updateSegmentExceptionsUnionMod.Updat
 import typings.awsSdkClientPinpointBrowser.updateSmsChannelExceptionsUnionMod.UpdateSmsChannelExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBadRequestExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BadRequestExceptionDetails> * / any */ @js.native
-  trait BadRequestException
-    extends CreateAppExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BadRequestExceptionDetails> * / any */ trait BadRequestException
+    extends StObject
+       with CreateAppExceptionsUnion
        with CreateCampaignExceptionsUnion
        with CreateExportJobExceptionsUnion
        with CreateImportJobExceptionsUnion
@@ -153,13 +152,13 @@ object typesBadRequestExceptionMod {
        with UpdateSegmentExceptionsUnion
        with UpdateSmsChannelExceptionsUnion {
     
-    var name: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.BadRequestException = js.native
+    var name: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.BadRequestException
   }
   object BadRequestException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.BadRequestException): BadRequestException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BadRequestException = {
+      val __obj = js.Dynamic.literal(name = "BadRequestException")
       __obj.asInstanceOf[BadRequestException]
     }
     
@@ -171,18 +170,17 @@ object typesBadRequestExceptionMod {
     }
   }
   
-  @js.native
   trait BadRequestExceptionDetails extends StObject {
     
     /**
       * The error message that's returned from the API.
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * The unique message body ID.
       */
-    var RequestID: js.UndefOr[String] = js.native
+    var RequestID: js.UndefOr[String] = js.undefined
   }
   object BadRequestExceptionDetails {
     

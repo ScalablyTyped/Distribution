@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -59,9 +58,8 @@ object TextArea {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.create")
-  @js.native
-  def create(model: IModel): TextArea = js.native
+  @scala.inline
+  def create(model: IModel): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -72,9 +70,8 @@ object TextArea {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): TextArea = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -85,9 +82,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): TextArea = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -98,9 +94,8 @@ object TextArea {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): TextArea = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -111,9 +106,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): TextArea = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -124,9 +118,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): TextArea = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -137,9 +130,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): TextArea = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -150,9 +142,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): TextArea = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -163,9 +154,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): TextArea = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -176,9 +166,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): TextArea = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -189,9 +178,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): TextArea = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -202,9 +190,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): TextArea = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -215,9 +202,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): TextArea = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -228,9 +214,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): TextArea = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -241,9 +226,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): TextArea = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -254,9 +238,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TextArea = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -267,9 +250,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TextArea = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -280,9 +262,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TextArea = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -293,9 +274,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TextArea = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -306,9 +286,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): TextArea = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -319,9 +298,8 @@ object TextArea {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): TextArea = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -332,9 +310,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): TextArea = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -345,9 +322,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TextArea = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -358,9 +334,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): TextArea = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -371,9 +346,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): TextArea = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -384,9 +358,8 @@ object TextArea {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TextArea = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -397,9 +370,8 @@ object TextArea {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TextArea = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -410,9 +382,8 @@ object TextArea {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TextArea = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -423,9 +394,8 @@ object TextArea {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TextArea = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -436,9 +406,8 @@ object TextArea {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TextArea = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -449,9 +418,8 @@ object TextArea {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): TextArea = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -462,9 +430,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): TextArea = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -475,9 +442,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): TextArea = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -488,9 +454,8 @@ object TextArea {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): TextArea = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -501,9 +466,8 @@ object TextArea {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): TextArea = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -514,9 +478,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TextArea = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -527,9 +490,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TextArea = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -540,9 +502,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): TextArea = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -553,9 +514,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): TextArea = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -566,9 +526,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): TextArea = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -579,9 +538,8 @@ object TextArea {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): TextArea = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -592,9 +550,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): TextArea = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -605,9 +562,8 @@ object TextArea {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): TextArea = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -618,9 +574,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): TextArea = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -631,9 +586,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): TextArea = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -644,9 +598,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): TextArea = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -657,9 +610,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): TextArea = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -670,9 +622,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TextArea = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -683,9 +634,8 @@ object TextArea {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TextArea = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -696,9 +646,8 @@ object TextArea {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): TextArea = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -709,9 +658,8 @@ object TextArea {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TextArea = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
@@ -722,9 +670,8 @@ object TextArea {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): TextArea = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.structureTypeName")

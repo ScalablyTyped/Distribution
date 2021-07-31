@@ -2,22 +2,20 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseListener extends StObject {
   
   /**
     * Waits for the next client to connect.
     */
-  def accept(): js.Promise[SocketConnection] = js.native
+  def accept(): js.Promise[SocketConnection]
   
   /**
     * Closes the listener, releasing resources related to it. Once the listener is closed, all other operations
     * will fail. Closing a listener multiple times is allowed and will not result in an error.
     */
-  def close(): js.Promise[Unit] = js.native
+  def close(): js.Promise[Unit]
 }
 object BaseListener {
   

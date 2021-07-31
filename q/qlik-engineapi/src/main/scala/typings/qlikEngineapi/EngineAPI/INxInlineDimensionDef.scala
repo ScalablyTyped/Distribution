@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxInlineDimensionDef...
   */
-@js.native
 trait INxInlineDimensionDef extends StObject {
   
   /**
@@ -16,45 +14,45 @@ trait INxInlineDimensionDef extends StObject {
     * This parameter is optional. The default value is 0.
     * This parameter is used in case of cyclic dimensions (qGrouping is C).
     */
-  var qActiveField: js.UndefOr[Double] = js.native
+  var qActiveField: js.UndefOr[Double] = js.undefined
   
   /**
     * Array of field names.
     * When creating a grouped dimension, more than one field name is defined.
     * >> This parameter is optional.
     */
-  var qFieldDefs: js.UndefOr[js.Array[String]] = js.native
+  var qFieldDefs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Array of field labels.
     * >> This parameter is optional.
     */
-  var qFieldLabels: js.UndefOr[js.Array[String]] = js.native
+  var qFieldLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Used to define a cyclic group or drill-down group.
     * This parameter is optional.
     * Default value is no grouping.
     */
-  var qGrouping: js.UndefOr[NxGrpType] = js.native
+  var qGrouping: js.UndefOr[NxGrpType] = js.undefined
   
   /**
     * Defines the format of the value.
     * >> This parameter is optional.
     */
-  var qNumberPresentations: js.UndefOr[js.Array[IFieldAttributes]] = js.native
+  var qNumberPresentations: js.UndefOr[js.Array[IFieldAttributes]] = js.undefined
   
   /**
     * If set to true, it inverts the sort criteria in the field.
     */
-  var qReverseSort: js.UndefOr[Boolean] = js.native
+  var qReverseSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the sorting criteria in the field.
     * >>This parameter is optional.
     * Default is to sort by alphabetical order, ascending.
     */
-  var qSortCriterias: js.UndefOr[ISortCriteria] = js.native
+  var qSortCriterias: js.UndefOr[ISortCriteria] = js.undefined
 }
 object INxInlineDimensionDef {
   

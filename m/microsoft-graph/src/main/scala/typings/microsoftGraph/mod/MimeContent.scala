@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MimeContent extends StObject {
   
   // Indicates the content mime type.
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The byte array that contains the actual content.
-  var value: js.UndefOr[NullableOption[Double]] = js.native
+  var value: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object MimeContent {
   

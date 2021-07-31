@@ -2,13 +2,11 @@ package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILightsApiResponse extends StObject {
   
-  var lights: js.Array[ILight] = js.native
+  var lights: js.Array[ILight]
 }
 object ILightsApiResponse {
   

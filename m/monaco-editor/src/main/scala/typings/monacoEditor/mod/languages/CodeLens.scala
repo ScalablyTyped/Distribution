@@ -3,17 +3,15 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeLens extends StObject {
   
-  var command: js.UndefOr[Command] = js.native
+  var command: js.UndefOr[Command] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var range: IRange = js.native
+  var range: IRange
 }
 object CodeLens {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewTransform extends StObject {
   
   /**
@@ -18,35 +16,35 @@ trait PlusWebviewWebviewTransform extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var matrix: js.UndefOr[String] = js.native
+  var matrix: js.UndefOr[String] = js.undefined
   
   /**
     * 暂不支持
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var rotate: js.UndefOr[String] = js.native
+  var rotate: js.UndefOr[String] = js.undefined
   
   /**
     * 暂不支持
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var scale: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[String] = js.undefined
   
   /**
     * 暂不支持
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var skew: js.UndefOr[String] = js.native
+  var skew: js.UndefOr[String] = js.undefined
   
   /**
     * 暂不支持
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var translate: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewTransform {
   

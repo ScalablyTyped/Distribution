@@ -2,36 +2,34 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotChannelAssociationsRequest extends StObject {
   
   /**
     * An alias pointing to the specific version of the Amazon Lex bot to which this association is being made.
     */
-  var botAlias: AliasNameOrListAll = js.native
+  var botAlias: AliasNameOrListAll
   
   /**
     * The name of the Amazon Lex bot in the association.
     */
-  var botName: BotName = js.native
+  var botName: BotName
   
   /**
     * The maximum number of associations to return in the response. The default is 50. 
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * Substring to match in channel association names. An association will be returned if any part of its name matches the substring. For example, "xyz" matches both "xyzabc" and "abcxyz." To return all bot channel associations, use a hyphen ("-") as the nameContains parameter.
     */
-  var nameContains: js.UndefOr[BotChannelName] = js.native
+  var nameContains: js.UndefOr[BotChannelName] = js.undefined
   
   /**
     * A pagination token for fetching the next page of associations. If the response to this call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of associations, specify the pagination token in the next request. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetBotChannelAssociationsRequest {
   

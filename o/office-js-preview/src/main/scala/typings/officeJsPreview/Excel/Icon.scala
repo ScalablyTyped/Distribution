@@ -23,7 +23,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.ThreeTrafficLights2
 import typings.officeJsPreview.officeJsPreviewStrings.ThreeTriangles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,7 +31,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait Icon extends StObject {
   
   /**
@@ -41,7 +39,7 @@ trait Icon extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     *
@@ -49,7 +47,7 @@ trait Icon extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes = js.native
+  var set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
 }
 object Icon {
   

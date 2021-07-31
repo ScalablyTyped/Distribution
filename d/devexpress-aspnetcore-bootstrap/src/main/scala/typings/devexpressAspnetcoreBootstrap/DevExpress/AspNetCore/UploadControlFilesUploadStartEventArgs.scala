@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadControlFilesUploadStartEventArgs extends EventArgs {
+trait UploadControlFilesUploadStartEventArgs
+  extends StObject
+     with EventArgs {
   
-  val cancel: Boolean = js.native
+  val cancel: Boolean
 }
 object UploadControlFilesUploadStartEventArgs {
   

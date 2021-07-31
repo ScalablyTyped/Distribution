@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchAnalyticsQueryRequest extends StObject {
   
   /**
@@ -15,34 +13,34 @@ trait SearchAnalyticsQueryRequest extends StObject {
     * value other than AUTO, the aggregation type in the result will match the requested type, or if you request an invalid type, you will get an error. The API will never change your
     * aggregation type if the requested type is invalid.
     */
-  var aggregationType: js.UndefOr[String] = js.native
+  var aggregationType: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Zero or more filters to apply to the dimension grouping values; for example, 'query contains \"buy\"' to see only data where the query string contains the substring
     * \"buy\" (not case-sensitive). You can filter by a dimension without grouping by it.
     */
-  var dimensionFilterGroups: js.UndefOr[js.Array[ApiDimensionFilterGroup]] = js.native
+  var dimensionFilterGroups: js.UndefOr[js.Array[ApiDimensionFilterGroup]] = js.undefined
   
   /**
     * [Optional] Zero or more dimensions to group results by. Dimensions are the group-by values in the Search Analytics page. Dimensions are combined to create a unique row key for each
     * row. Results are grouped in the order that you supply these dimensions.
     */
-  var dimensions: js.UndefOr[js.Array[String]] = js.native
+  var dimensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Required] End date of the requested date range, in YYYY-MM-DD format, in PST (UTC - 8:00). Must be greater than or equal to the start date. This value is included in the range. */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** [Optional; Default is 1000] The maximum number of rows to return. Must be a number from 1 to 25,000 (inclusive). */
-  var rowLimit: js.UndefOr[Double] = js.native
+  var rowLimit: js.UndefOr[Double] = js.undefined
   
   /** [Optional; Default is \"web\"] The search type to filter for. */
-  var searchType: js.UndefOr[String] = js.native
+  var searchType: js.UndefOr[String] = js.undefined
   
   /** [Required] Start date of the requested date range, in YYYY-MM-DD format, in PST time (UTC - 8:00). Must be less than or equal to the end date. This value is included in the range. */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /** [Optional; Default is 0] Zero-based index of the first row in the response. Must be a non-negative number. */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
 }
 object SearchAnalyticsQueryRequest {
   

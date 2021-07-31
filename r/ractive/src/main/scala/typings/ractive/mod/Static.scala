@@ -6,16 +6,16 @@ import typings.ractive.anon.Instantiable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Static[T /* <: Ractive[T] */]
-  extends Instantiable0[T]
+  extends StObject
+     with Instantiable0[T]
      with Instantiable1[/* opts */ InitOpts[T], T] {
   
   /** The parent constructor used to create this constructor. */
-  var Parent: Static[Ractive[Ractive[_]]] = js.native
+  var Parent: Static[Ractive[Ractive[js.Any]]] = js.native
   
   /** The Ractive constructor used to create this constructor. */
   var Ractive: Instantiable = js.native
@@ -36,12 +36,12 @@ trait Static[T /* <: Ractive[T] */]
   var events: Registry[EventPlugin[T]] = js.native
   
   /** Create a new component with this constructor as a starting point. */
-  def extend[U, V /* <: ExtendOpts[T] */](): Static[Ractive[T with U]] = js.native
-  def extend[U, V /* <: ExtendOpts[T] */](opts: V): Static[Ractive[T with U]] = js.native
+  def extend[U, V /* <: ExtendOpts[T] */](): Static[Ractive[T & U]] = js.native
+  def extend[U, V /* <: ExtendOpts[T] */](opts: V): Static[Ractive[T & U]] = js.native
   
   /** Create a new component with this constuuctor as a starting point using the given constructor. */
-  def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[T with U]] = js.native
-  def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V], opts: W): Static[Ractive[T with U]] = js.native
+  def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[T & U]] = js.native
+  def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V], opts: W): Static[Ractive[T & U]] = js.native
   
   def getContext(nodeOrQuery: String): ContextHelper = js.native
   /** Get a Context for the given node or selector. */
@@ -79,5 +79,5 @@ trait Static[T /* <: Ractive[T] */]
   def styleSet(map: ValueMap, opts: StyleSetOpts): js.Promise[Unit] = js.native
   
   /** Install one or more plugins on the component.  */
-  def use(plugins: PluginExtend*): Static[Ractive[Ractive[_]]] = js.native
+  def use(plugins: PluginExtend*): Static[Ractive[Ractive[js.Any]]] = js.native
 }

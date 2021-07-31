@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
   */
-@js.native
 trait QuobyteVolumeSource extends StObject {
   
   /**
     * Group to map volume access to Default is no group
     */
-  var group: js.UndefOr[Input[String]] = js.native
+  var group: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
     */
-  var registry: Input[String] = js.native
+  var registry: Input[String]
   
   /**
     * Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin
     */
-  var tenant: js.UndefOr[Input[String]] = js.native
+  var tenant: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * User to map volume access to Defaults to serivceaccount user
     */
-  var user: js.UndefOr[Input[String]] = js.native
+  var user: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Volume is a string that references an already created Quobyte volume by name.
     */
-  var volume: Input[String] = js.native
+  var volume: Input[String]
 }
 object QuobyteVolumeSource {
   

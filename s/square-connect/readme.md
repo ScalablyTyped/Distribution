@@ -10,9 +10,9 @@ JavaScript client library for the Square Connect v2 API
 | ------------------ | :-------------: |
 | Full name          | square-connect |
 | Keywords           | square, connect, v1, v2, api, payments |
-| # releases         | 36 |
+| # releases         | 37 |
 | # dependents       | 4 |
-| # downloads        | 340233 |
+| # downloads        | 353630 |
 | # stars            | 1 |
 
 ## Links

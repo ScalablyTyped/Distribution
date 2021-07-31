@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.manifestLoaded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManifestLoadedEvent extends Event {
+trait ManifestLoadedEvent
+  extends StObject
+     with Event {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
   @JSName("type")
-  var type_ManifestLoadedEvent: manifestLoaded = js.native
+  var type_ManifestLoadedEvent: manifestLoaded
 }
 object ManifestLoadedEvent {
   
   @scala.inline
-  def apply(data: js.Object, `type`: manifestLoaded): ManifestLoadedEvent = {
+  def apply(data: js.Object): ManifestLoadedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("manifestLoaded")
     __obj.asInstanceOf[ManifestLoadedEvent]
   }
   

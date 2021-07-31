@@ -9,9 +9,9 @@ Full-featured in-browser code editor
 | ------------------ | :-------------: |
 | Full name          | codemirror |
 | Keywords           | JavaScript, CodeMirror, Editor |
-| # releases         | 26 |
-| # dependents       | 1248 |
-| # downloads        | 35363569 |
+| # releases         | 27 |
+| # dependents       | 1340 |
+| # downloads        | 39355976 |
 | # stars            | 50 |
 
 ## Links

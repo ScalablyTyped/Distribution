@@ -3,19 +3,22 @@ package typings.reactNative
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseErrorStackMod {
   
-  @JSImport("react-native/Libraries/Core/Devtools/parseErrorStack", JSImport.Default)
+  @JSImport("react-native/Libraries/Core/Devtools/parseErrorStack", JSImport.Namespace)
   @js.native
-  def default(error: ExtendedError): js.Array[StackFrame] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ExtendedError extends Error {
+  @scala.inline
+  def default(error: ExtendedError): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  
+  trait ExtendedError
+    extends StObject
+       with Error {
     
-    var framesToPop: js.UndefOr[Double] = js.native
+    var framesToPop: js.UndefOr[Double] = js.undefined
   }
   object ExtendedError {
     
@@ -36,22 +39,21 @@ object parseErrorStackMod {
     }
   }
   
-  @js.native
   trait StackFrame extends StObject {
     
-    var column: Double | Null = js.native
+    var column: Double | Null
     
-    var file: String = js.native
+    var file: String
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var methodName: String = js.native
+    var methodName: String
   }
   object StackFrame {
     
     @scala.inline
     def apply(file: String, lineNumber: Double, methodName: String): StackFrame = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], column = null)
       __obj.asInstanceOf[StackFrame]
     }
     

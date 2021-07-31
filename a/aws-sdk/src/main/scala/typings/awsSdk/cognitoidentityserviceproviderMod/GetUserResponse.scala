@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserResponse extends StObject {
   
   /**
     *  This response parameter is no longer supported. It provides information only about SMS MFA configurations. It doesn't provide information about TOTP software token MFA configurations. To look up information about either type of MFA configuration, use UserMFASettingList instead.
     */
-  var MFAOptions: js.UndefOr[MFAOptionListType] = js.native
+  var MFAOptions: js.UndefOr[MFAOptionListType] = js.undefined
   
   /**
     * The user's preferred MFA setting.
     */
-  var PreferredMfaSetting: js.UndefOr[StringType] = js.native
+  var PreferredMfaSetting: js.UndefOr[StringType] = js.undefined
   
   /**
     * An array of name-value pairs representing user attributes. For custom attributes, you must prepend the custom: prefix to the attribute name.
     */
-  var UserAttributes: AttributeListType = js.native
+  var UserAttributes: AttributeListType
   
   /**
     * The MFA options that are enabled for the user. The possible values in this list are SMS_MFA and SOFTWARE_TOKEN_MFA.
     */
-  var UserMFASettingList: js.UndefOr[UserMFASettingListType] = js.native
+  var UserMFASettingList: js.UndefOr[UserMFASettingListType] = js.undefined
   
   /**
     * The user name of the user you wish to retrieve from the get user request.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object GetUserResponse {
   

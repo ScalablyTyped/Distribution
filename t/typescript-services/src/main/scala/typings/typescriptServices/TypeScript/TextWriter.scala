@@ -2,29 +2,27 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextWriter extends StObject {
   
-  def Close(): Unit = js.native
+  def Close(): Unit
   
-  def Write(s: String): Unit = js.native
+  def Write(s: String): Unit
   
-  def WriteLine(s: String): Unit = js.native
+  def WriteLine(s: String): Unit
   
-  var contents: js.Any = js.native
+  var contents: js.Any
   
-  def getOutputFile(): OutputFile = js.native
+  def getOutputFile(): OutputFile
   
-  var name: js.Any = js.native
+  var name: js.Any
   
-  var onNewLine: Boolean = js.native
+  var onNewLine: Boolean
   
-  var outputFileType: js.Any = js.native
+  var outputFileType: js.Any
   
-  var writeByteOrderMark: js.Any = js.native
+  var writeByteOrderMark: js.Any
 }
 object TextWriter {
   

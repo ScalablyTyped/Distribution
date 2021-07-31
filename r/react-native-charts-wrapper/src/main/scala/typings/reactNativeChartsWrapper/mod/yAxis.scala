@@ -5,25 +5,25 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_C
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_CHART
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait yAxis extends Axis {
+trait yAxis
+  extends StObject
+     with Axis {
   
-  var inverted: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[OUTSIDE_CHART | INSIDE_CHART] = js.native
+  var position: js.UndefOr[OUTSIDE_CHART | INSIDE_CHART] = js.undefined
   
-  var spaceBottom: js.UndefOr[Double] = js.native
+  var spaceBottom: js.UndefOr[Double] = js.undefined
   
-  var spaceTop: js.UndefOr[Double] = js.native
+  var spaceTop: js.UndefOr[Double] = js.undefined
   
-  var zeroLine: js.UndefOr[Enabled] = js.native
+  var zeroLine: js.UndefOr[Enabled] = js.undefined
 }
 object yAxis {
   

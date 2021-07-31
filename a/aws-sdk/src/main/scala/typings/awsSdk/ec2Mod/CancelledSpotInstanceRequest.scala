@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelledSpotInstanceRequest extends StObject {
   
   /**
     * The ID of the Spot Instance request.
     */
-  var SpotInstanceRequestId: js.UndefOr[String] = js.native
+  var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the Spot Instance request.
     */
-  var State: js.UndefOr[CancelSpotInstanceRequestState] = js.native
+  var State: js.UndefOr[CancelSpotInstanceRequestState] = js.undefined
 }
 object CancelledSpotInstanceRequest {
   

@@ -12,7 +12,7 @@ gulp plugin to build assets loaded with jspm/SystemJS
 | Keywords           | gulpplugin, jspm, systemjs |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 16572 |
+| # downloads        | 16446 |
 | # stars            | 3 |
 
 ## Links

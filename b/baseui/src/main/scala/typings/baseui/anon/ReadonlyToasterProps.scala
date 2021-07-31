@@ -9,20 +9,18 @@ import typings.baseui.baseuiStrings.topRight
 import typings.baseui.toastMod.ToasterOverrides
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<baseui.baseui/toast.ToasterProps> */
-@js.native
 trait ReadonlyToasterProps extends StObject {
   
-  val autoHideDuration: js.UndefOr[Double] = js.native
+  val autoHideDuration: js.UndefOr[Double] = js.undefined
   
-  val overrides: js.UndefOr[ToasterOverrides] = js.native
+  val overrides: js.UndefOr[ToasterOverrides] = js.undefined
   
-  val placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.native
+  val placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.undefined
   
-  val usePortal: js.UndefOr[Boolean] = js.native
+  val usePortal: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyToasterProps {
   

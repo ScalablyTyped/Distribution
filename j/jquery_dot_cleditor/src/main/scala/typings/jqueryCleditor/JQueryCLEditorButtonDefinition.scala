@@ -3,39 +3,37 @@ package typings.jqueryCleditor
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryCLEditorButtonDefinition extends StObject {
   
   var buttonClick: js.UndefOr[
     js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var getEnabled: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.native
+  var getEnabled: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.undefined
   
-  var getPressed: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.native
+  var getPressed: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   var popupClick: js.UndefOr[
     js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var popupContent: js.UndefOr[String] = js.native
+  var popupContent: js.UndefOr[String] = js.undefined
   
-  var popupName: js.UndefOr[String] = js.native
+  var popupName: js.UndefOr[String] = js.undefined
   
-  var stripIndex: js.UndefOr[Double] = js.native
+  var stripIndex: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object JQueryCLEditorButtonDefinition {
   

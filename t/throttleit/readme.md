@@ -11,8 +11,8 @@ Throttle a function
 | Full name          | throttleit |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 98210178 |
+| # dependents       | 62 |
+| # downloads        | 114665800 |
 | # stars            | 4 |
 
 ## Links

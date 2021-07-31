@@ -3,10 +3,13 @@ package typings.dbErrors
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("db-errors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("db-errors", "CheckViolationError")
   @js.native
@@ -23,7 +26,15 @@ object mod {
   
   @JSImport("db-errors", "DBError")
   @js.native
-  class DBError () extends Error {
+  class DBError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var nativeError: Error = js.native
   }
@@ -69,7 +80,6 @@ object mod {
     var table: String = js.native
   }
   
-  @JSImport("db-errors", "wrapError")
-  @js.native
-  def wrapError(err: Error): DBError = js.native
+  @scala.inline
+  def wrapError(err: Error): DBError = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(err.asInstanceOf[js.Any]).asInstanceOf[DBError]
 }

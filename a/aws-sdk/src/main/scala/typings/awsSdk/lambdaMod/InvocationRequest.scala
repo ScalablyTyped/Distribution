@@ -2,41 +2,39 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvocationRequest extends StObject {
   
   /**
     * Up to 3583 bytes of base64-encoded data about the invoking client to pass to the function in the context object.
     */
-  var ClientContext: js.UndefOr[String] = js.native
+  var ClientContext: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Lambda function, version, or alias.  Name formats     Function name - my-function (name-only), my-function:v1 (with alias).    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
-  var FunctionName: NamespacedFunctionName = js.native
+  var FunctionName: NamespacedFunctionName
   
   /**
     * Choose from the following options.    RequestResponse (default) - Invoke the function synchronously. Keep the connection open until the function returns a response or times out. The API response includes the function response and additional data.    Event - Invoke the function asynchronously. Send events that fail multiple times to the function's dead-letter queue (if it's configured). The API response only includes a status code.    DryRun - Validate parameter values and verify that the user or role has permission to invoke the function.  
     */
-  var InvocationType: js.UndefOr[typings.awsSdk.lambdaMod.InvocationType] = js.native
+  var InvocationType: js.UndefOr[typings.awsSdk.lambdaMod.InvocationType] = js.undefined
   
   /**
     * Set to Tail to include the execution log in the response.
     */
-  var LogType: js.UndefOr[typings.awsSdk.lambdaMod.LogType] = js.native
+  var LogType: js.UndefOr[typings.awsSdk.lambdaMod.LogType] = js.undefined
   
   /**
     * The JSON that you want to provide to your Lambda function as input.
     */
-  var Payload: js.UndefOr[_Blob] = js.native
+  var Payload: js.UndefOr[_Blob] = js.undefined
   
   /**
     * Specify a version or alias to invoke a published version of the function.
     */
-  var Qualifier: js.UndefOr[typings.awsSdk.lambdaMod.Qualifier] = js.native
+  var Qualifier: js.UndefOr[typings.awsSdk.lambdaMod.Qualifier] = js.undefined
 }
 object InvocationRequest {
   

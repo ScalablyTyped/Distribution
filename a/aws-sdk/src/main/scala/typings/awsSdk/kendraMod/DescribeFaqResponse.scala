@@ -2,63 +2,61 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFaqResponse extends StObject {
   
   /**
     * The date and time that the FAQ was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the FAQ that you provided when it was created.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * If the Status field is FAILED, the ErrorMessage field contains the reason why the FAQ failed.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
   
   /**
     * The file format used by the input files for the FAQ.
     */
-  var FileFormat: js.UndefOr[FaqFileFormat] = js.native
+  var FileFormat: js.UndefOr[FaqFileFormat] = js.undefined
   
   /**
     * The identifier of the FAQ.
     */
-  var Id: js.UndefOr[FaqId] = js.native
+  var Id: js.UndefOr[FaqId] = js.undefined
   
   /**
     * The identifier of the index that contains the FAQ.
     */
-  var IndexId: js.UndefOr[typings.awsSdk.kendraMod.IndexId] = js.native
+  var IndexId: js.UndefOr[typings.awsSdk.kendraMod.IndexId] = js.undefined
   
   /**
     * The name that you gave the FAQ when it was created.
     */
-  var Name: js.UndefOr[FaqName] = js.native
+  var Name: js.UndefOr[FaqName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role that provides access to the S3 bucket containing the input files for the FAQ.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   
-  var S3Path: js.UndefOr[typings.awsSdk.kendraMod.S3Path] = js.native
+  var S3Path: js.UndefOr[typings.awsSdk.kendraMod.S3Path] = js.undefined
   
   /**
     * The status of the FAQ. It is ready to use when the status is ACTIVE.
     */
-  var Status: js.UndefOr[FaqStatus] = js.native
+  var Status: js.UndefOr[FaqStatus] = js.undefined
   
   /**
     * The date and time that the FAQ was last updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object DescribeFaqResponse {
   

@@ -11,8 +11,8 @@ A spinning activity indicator
 | Full name          | spin.js |
 | Keywords           | css, progress indicator, spin, spinner |
 | # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 7644687 |
+| # dependents       | 69 |
+| # downloads        | 8556105 |
 | # stars            | 4 |
 
 ## Links

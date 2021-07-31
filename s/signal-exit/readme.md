@@ -11,8 +11,8 @@ when you want to fire an event no matter how a process exits.
 | Full name          | signal-exit |
 | Keywords           | signal, exit |
 | # releases         | 2 |
-| # dependents       | 313 |
-| # downloads        | 743565783 |
+| # dependents       | 362 |
+| # downloads        | 935349178 |
 | # stars            | 8 |
 
 ## Links

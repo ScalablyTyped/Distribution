@@ -2,25 +2,23 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Verification extends StObject {
   
-  var author: EmailName = js.native
+  var author: EmailName
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var committer: EmailName = js.native
+  var committer: EmailName
   
-  var message: String = js.native
+  var message: String
   
-  var tree: ShaUrl = js.native
+  var tree: ShaUrl
   
-  var url: String = js.native
+  var url: String
   
-  var verification: Payload = js.native
+  var verification: Payload
 }
 object Verification {
   

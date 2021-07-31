@@ -3,11 +3,11 @@ package typings.winrt.Windows.ApplicationModel
 import typings.winrt.Windows.System.ProcessorArchitecture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PackageId extends IPackageId
+trait PackageId
+  extends StObject
+     with IPackageId
 object PackageId {
   
   @scala.inline

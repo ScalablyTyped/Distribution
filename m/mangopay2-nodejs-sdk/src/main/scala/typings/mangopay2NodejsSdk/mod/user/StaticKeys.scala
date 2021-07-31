@@ -3,7 +3,6 @@ package typings.mangopay2NodejsSdk.mod.user
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Id_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

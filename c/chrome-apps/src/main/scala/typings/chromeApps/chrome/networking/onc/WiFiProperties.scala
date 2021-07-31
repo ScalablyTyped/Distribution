@@ -4,39 +4,39 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.networking.onc.internal.ObjectFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WiFiProperties[M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L] extends WiFiPropertiesBase[M, String | ManagedDOMString] {
+trait WiFiProperties[M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L]
+  extends StObject
+     with WiFiPropertiesBase[M, String | ManagedDOMString] {
   
   /**
     * Whether ARP polling of default gateway is allowed.
     * @default true
     */
-  var AllowGatewayARPPolling: js.UndefOr[B] = js.native
+  var AllowGatewayARPPolling: js.UndefOr[B] = js.undefined
   
   /** Whether the WiFi network should be connected automatically when in range. */
-  var AutoConnect: js.UndefOr[B] = js.native
+  var AutoConnect: js.UndefOr[B] = js.undefined
   
   /** The network EAP properties. Required for WEP-8021X and WPA-EAP networks. */
-  var EAP: js.UndefOr[EAPProperties] = js.native
+  var EAP: js.UndefOr[EAPProperties] = js.undefined
   
   /** Contains all operating frequency recently seen for the WiFi network. */
-  var FrequencyList: js.UndefOr[js.Array[integer]] = js.native
+  var FrequencyList: js.UndefOr[js.Array[integer]] = js.undefined
   
   /** Whether the network SSID will be broadcast. */
-  var HiddenSSID: js.UndefOr[B] = js.native
+  var HiddenSSID: js.UndefOr[B] = js.undefined
   
   /**
     * @since Chrome 66.
     * The passphrase for WEP/WPA/WPA2 connections.
     * *This property can only be set!*
     */
-  var Passphrase: js.UndefOr[String] = js.native
+  var Passphrase: js.UndefOr[String] = js.undefined
   
   /** Signal-to-noise value (in dB) below which roaming to a new network should be attempted. */
-  var RoamTreshold: js.UndefOr[L] = js.native
+  var RoamTreshold: js.UndefOr[L] = js.undefined
 }
 object WiFiProperties {
   
@@ -47,7 +47,7 @@ object WiFiProperties {
   }
   
   @scala.inline
-  implicit class WiFiPropertiesMutableBuilder[Self <: WiFiProperties[_, _, _, _, _], M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L] (val x: Self with (WiFiProperties[M, OF, B, S, L])) extends AnyVal {
+  implicit class WiFiPropertiesMutableBuilder[Self <: WiFiProperties[?, ?, ?, ?, ?], M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L] (val x: Self & (WiFiProperties[M, OF, B, S, L])) extends AnyVal {
     
     @scala.inline
     def setAllowGatewayARPPolling(value: B): Self = StObject.set(x, "AllowGatewayARPPolling", value.asInstanceOf[js.Any])

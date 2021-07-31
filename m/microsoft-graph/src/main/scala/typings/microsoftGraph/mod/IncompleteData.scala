@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncompleteData extends StObject {
   
   // The service does not have source data before the specified time.
-  var missingDataBeforeDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var missingDataBeforeDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Some data was not recorded due to excessive activity.
-  var wasThrottled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var wasThrottled: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object IncompleteData {
   

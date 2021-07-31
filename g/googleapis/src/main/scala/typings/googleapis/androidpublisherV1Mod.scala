@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object androidpublisherV1Mod {
@@ -68,7 +67,7 @@ object androidpublisherV1Mod {
         */
       def cancel(): GaxiosPromise[Unit] = js.native
       def cancel(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def cancel(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def cancel(params: ParamsResourcePurchasesCancel): GaxiosPromise[Unit] = js.native
       def cancel(params: ParamsResourcePurchasesCancel, callback: BodyResponseCallback[Unit]): Unit = js.native
       def cancel(
@@ -102,7 +101,7 @@ object androidpublisherV1Mod {
         */
       def get(): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
       def get(callback: BodyResponseCallback[SchemaSubscriptionPurchase]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
       def get(params: ParamsResourcePurchasesGet): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
       def get(params: ParamsResourcePurchasesGet, callback: BodyResponseCallback[SchemaSubscriptionPurchase]): Unit = js.native
       def get(
@@ -118,16 +117,17 @@ object androidpublisherV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -139,30 +139,31 @@ object androidpublisherV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourcePurchasesCancel extends StandardParameters {
+    trait ParamsResourcePurchasesCancel
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The package name of the application for which this subscription was
         * purchased (for example, 'com.some.thing').
         */
-      var packageName: js.UndefOr[String] = js.native
+      var packageName: js.UndefOr[String] = js.undefined
       
       /**
         * The purchased subscription ID (for example, 'monthly001').
         */
-      var subscriptionId: js.UndefOr[String] = js.native
+      var subscriptionId: js.UndefOr[String] = js.undefined
       
       /**
         * The token provided to the user's device when the subscription was
         * purchased.
         */
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
     }
     object ParamsResourcePurchasesCancel {
       
@@ -201,30 +202,31 @@ object androidpublisherV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourcePurchasesGet extends StandardParameters {
+    trait ParamsResourcePurchasesGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The package name of the application for which this subscription was
         * purchased (for example, 'com.some.thing').
         */
-      var packageName: js.UndefOr[String] = js.native
+      var packageName: js.UndefOr[String] = js.undefined
       
       /**
         * The purchased subscription ID (for example, 'monthly001').
         */
-      var subscriptionId: js.UndefOr[String] = js.native
+      var subscriptionId: js.UndefOr[String] = js.undefined
       
       /**
         * The token provided to the user's device when the subscription was
         * purchased.
         */
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
     }
     object ParamsResourcePurchasesGet {
       
@@ -267,32 +269,31 @@ object androidpublisherV1Mod {
       * A SubscriptionPurchase resource indicates the status of a user&#39;s
       * subscription purchase.
       */
-    @js.native
     trait SchemaSubscriptionPurchase extends StObject {
       
       /**
         * Whether the subscription will automatically be renewed when it reaches
         * its current expiry time.
         */
-      var autoRenewing: js.UndefOr[Boolean] = js.native
+      var autoRenewing: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Time at which the subscription was granted, in milliseconds since the
         * Epoch.
         */
-      var initiationTimestampMsec: js.UndefOr[String] = js.native
+      var initiationTimestampMsec: js.UndefOr[String] = js.undefined
       
       /**
         * This kind represents a subscriptionPurchase object in the
         * androidpublisher service.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Time at which the subscription will expire, in milliseconds since the
         * Epoch.
         */
-      var validUntilTimestampMsec: js.UndefOr[String] = js.native
+      var validUntilTimestampMsec: js.UndefOr[String] = js.undefined
     }
     object SchemaSubscriptionPurchase {
       
@@ -331,46 +332,45 @@ object androidpublisherV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

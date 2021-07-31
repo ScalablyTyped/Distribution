@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreAuthorizedApplication extends StObject {
   
   // The unique identifier for the application.
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the oauth2PermissionScopes the application requires.
-  var delegatedPermissionIds: js.UndefOr[js.Array[String]] = js.native
+  var delegatedPermissionIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PreAuthorizedApplication {
   

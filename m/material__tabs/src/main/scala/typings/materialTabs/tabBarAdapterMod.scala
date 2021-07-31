@@ -5,51 +5,49 @@ import typings.materialTabs.materialTabsStrings.resize
 import typings.materialTabs.typesMod.MDCTabBarChangeEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarAdapterMod {
   
-  @js.native
   trait MDCTabBarAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def bindOnMDCTabSelectedEvent(): Unit = js.native
+    def bindOnMDCTabSelectedEvent(): Unit
     
     @JSName("deregisterResizeHandler")
-    def deregisterResizeHandler_resize(handler: SpecificEventListener[resize]): Unit = js.native
+    def deregisterResizeHandler_resize(handler: SpecificEventListener[resize]): Unit
     
-    def getComputedLeftForTabAtIndex(index: Double): Double = js.native
+    def getComputedLeftForTabAtIndex(index: Double): Double
     
-    def getComputedWidthForTabAtIndex(index: Double): Double = js.native
+    def getComputedWidthForTabAtIndex(index: Double): Double
     
-    def getNumberOfTabs(): Double = js.native
+    def getNumberOfTabs(): Double
     
-    def getOffsetWidth(): Double = js.native
+    def getOffsetWidth(): Double
     
-    def getOffsetWidthForIndicator(): Double = js.native
+    def getOffsetWidthForIndicator(): Double
     
-    def isDefaultPreventedOnClickForTabAtIndex(index: Double): Boolean = js.native
+    def isDefaultPreventedOnClickForTabAtIndex(index: Double): Boolean
     
-    def isTabActiveAtIndex(index: Double): Boolean = js.native
+    def isTabActiveAtIndex(index: Double): Boolean
     
-    def measureTabAtIndex(index: Double): Unit = js.native
+    def measureTabAtIndex(index: Double): Unit
     
-    def notifyChange(evtData: MDCTabBarChangeEventDetail): Unit = js.native
+    def notifyChange(evtData: MDCTabBarChangeEventDetail): Unit
     
     @JSName("registerResizeHandler")
-    def registerResizeHandler_resize(handler: SpecificEventListener[resize]): Unit = js.native
+    def registerResizeHandler_resize(handler: SpecificEventListener[resize]): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def setPreventDefaultOnClickForTabAtIndex(index: Double, preventDefaultOnClick: Boolean): Unit = js.native
+    def setPreventDefaultOnClickForTabAtIndex(index: Double, preventDefaultOnClick: Boolean): Unit
     
-    def setStyleForIndicator(propertyName: String, value: String): Unit = js.native
+    def setStyleForIndicator(propertyName: String, value: String): Unit
     
-    def setTabActiveAtIndex(index: Double, isActive: Boolean): Unit = js.native
+    def setTabActiveAtIndex(index: Double, isActive: Boolean): Unit
     
-    def unbindOnMDCTabSelectedEvent(): Unit = js.native
+    def unbindOnMDCTabSelectedEvent(): Unit
   }
   object MDCTabBarAdapter {
     

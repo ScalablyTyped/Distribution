@@ -9,23 +9,21 @@ import typings.awsSdkClientGlacierNode.typesGranteeMod.Grantee
 import typings.awsSdkClientGlacierNode.typesGranteeMod.UnmarshalledGrantee
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGrantMod {
   
-  @js.native
   trait Grant extends StObject {
     
     /**
       * <p>The grantee.</p>
       */
-    var Grantee: js.UndefOr[typings.awsSdkClientGlacierNode.typesGranteeMod.Grantee] = js.native
+    var Grantee: js.UndefOr[typings.awsSdkClientGlacierNode.typesGranteeMod.Grantee] = js.undefined
     
     /**
       * <p>Specifies the permission given to the grantee. </p>
       */
-    var Permission: js.UndefOr[FULL_CONTROL | WRITE | WRITE_ACP | READ | READ_ACP | String] = js.native
+    var Permission: js.UndefOr[FULL_CONTROL | WRITE | WRITE_ACP | READ | READ_ACP | String] = js.undefined
   }
   object Grant {
     
@@ -52,14 +50,15 @@ object typesGrantMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGrant extends Grant {
+  trait UnmarshalledGrant
+    extends StObject
+       with Grant {
     
     /**
       * <p>The grantee.</p>
       */
     @JSName("Grantee")
-    var Grantee_UnmarshalledGrant: js.UndefOr[UnmarshalledGrantee] = js.native
+    var Grantee_UnmarshalledGrant: js.UndefOr[UnmarshalledGrantee] = js.undefined
   }
   object UnmarshalledGrant {
     

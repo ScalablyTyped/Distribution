@@ -3,15 +3,13 @@ package typings.webgme.anon
 import typings.webgme.Core.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  var children: js.UndefOr[js.Array[Node]] = js.native
+  var children: js.UndefOr[js.Array[Node]] = js.undefined
   
-  var node: Node = js.native
+  var node: Node
 }
 object Children {
   

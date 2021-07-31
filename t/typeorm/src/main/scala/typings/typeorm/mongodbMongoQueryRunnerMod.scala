@@ -44,21 +44,22 @@ import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.tableTableMod.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongodbMongoQueryRunnerMod {
   
   @JSImport("typeorm/driver/mongodb/MongoQueryRunner", "MongoQueryRunner")
   @js.native
-  class MongoQueryRunner protected () extends QueryRunner {
+  class MongoQueryRunner protected ()
+    extends StObject
+       with QueryRunner {
     def this(connection: Connection, databaseConnection: MongoClient) = this()
     
     /**
       * Execute an aggregation framework pipeline against the collection.
       */
-    def aggregate(collectionName: String, pipeline: js.Array[ObjectLiteral]): AggregationCursor[_] = js.native
-    def aggregate(collectionName: String, pipeline: js.Array[ObjectLiteral], options: CollectionAggregationOptions): AggregationCursor[_] = js.native
+    def aggregate(collectionName: String, pipeline: js.Array[ObjectLiteral]): AggregationCursor[js.Any] = js.native
+    def aggregate(collectionName: String, pipeline: js.Array[ObjectLiteral], options: CollectionAggregationOptions): AggregationCursor[js.Any] = js.native
     
     /**
       * Perform a bulkWrite operation without a fluent API.
@@ -75,21 +76,21 @@ object mongodbMongoQueryRunnerMod {
     /**
       * Retrieves this collections index info.
       */
-    def collectionIndexInformation(collectionName: String): js.Promise[_] = js.native
-    def collectionIndexInformation(collectionName: String, options: Full): js.Promise[_] = js.native
+    def collectionIndexInformation(collectionName: String): js.Promise[js.Any] = js.native
+    def collectionIndexInformation(collectionName: String, options: Full): js.Promise[js.Any] = js.native
     
     /**
       * Retrieve all the indexes on the collection.
       */
-    def collectionIndexes(collectionName: String): js.Promise[_] = js.native
+    def collectionIndexes(collectionName: String): js.Promise[js.Any] = js.native
     
     /**
       * Count number of matching documents in the db to a query.
       */
-    def count(collectionName: String): js.Promise[_] = js.native
-    def count(collectionName: String, query: js.UndefOr[scala.Nothing], options: MongoCountPreferences): js.Promise[_] = js.native
-    def count(collectionName: String, query: ObjectLiteral): js.Promise[_] = js.native
-    def count(collectionName: String, query: ObjectLiteral, options: MongoCountPreferences): js.Promise[_] = js.native
+    def count(collectionName: String): js.Promise[js.Any] = js.native
+    def count(collectionName: String, query: Unit, options: MongoCountPreferences): js.Promise[js.Any] = js.native
+    def count(collectionName: String, query: ObjectLiteral): js.Promise[js.Any] = js.native
+    def count(collectionName: String, query: ObjectLiteral, options: MongoCountPreferences): js.Promise[js.Any] = js.native
     
     /**
       * Creates an index on the db and collection.
@@ -108,8 +109,8 @@ object mongodbMongoQueryRunnerMod {
     /**
       * Creates a cursor for a query that can be used to iterate over results from MongoDB.
       */
-    def cursor(collectionName: String): Cursor[_] = js.native
-    def cursor(collectionName: String, query: ObjectLiteral): Cursor[_] = js.native
+    def cursor(collectionName: String): Cursor[js.Any] = js.native
+    def cursor(collectionName: String, query: ObjectLiteral): Cursor[js.Any] = js.native
     
     /**
       * Real database connection from a connection pool used to perform queries.
@@ -131,19 +132,19 @@ object mongodbMongoQueryRunnerMod {
     /**
       * The distinct command returns returns a list of distinct values for the given key across a collection.
       */
-    def distinct(collectionName: String, key: String, query: ObjectLiteral): js.Promise[_] = js.native
-    def distinct(collectionName: String, key: String, query: ObjectLiteral, options: `5`): js.Promise[_] = js.native
+    def distinct(collectionName: String, key: String, query: ObjectLiteral): js.Promise[js.Any] = js.native
+    def distinct(collectionName: String, key: String, query: ObjectLiteral, options: `5`): js.Promise[js.Any] = js.native
     
     /**
       * Drops an index from this collection.
       */
-    def dropCollectionIndex(collectionName: String, indexName: String): js.Promise[_] = js.native
-    def dropCollectionIndex(collectionName: String, indexName: String, options: CollectionOptions): js.Promise[_] = js.native
+    def dropCollectionIndex(collectionName: String, indexName: String): js.Promise[js.Any] = js.native
+    def dropCollectionIndex(collectionName: String, indexName: String, options: CollectionOptions): js.Promise[js.Any] = js.native
     
     /**
       * Drops all indexes from the collection.
       */
-    def dropCollectionIndexes(collectionName: String): js.Promise[_] = js.native
+    def dropCollectionIndexes(collectionName: String): js.Promise[js.Any] = js.native
     
     /**
       * Find a document and delete it in one atomic operation, requires a write lock for the duration of the operation.
@@ -171,96 +172,96 @@ object mongodbMongoQueryRunnerMod {
     /**
       * Execute a geo search using a geo haystack index on a collection.
       */
-    def geoHaystackSearch(collectionName: String, x: Double, y: Double): js.Promise[_] = js.native
-    def geoHaystackSearch(collectionName: String, x: Double, y: Double, options: GeoHaystackSearchOptions): js.Promise[_] = js.native
+    def geoHaystackSearch(collectionName: String, x: Double, y: Double): js.Promise[js.Any] = js.native
+    def geoHaystackSearch(collectionName: String, x: Double, y: Double, options: GeoHaystackSearchOptions): js.Promise[js.Any] = js.native
     
     /**
       * Execute the geoNear command to search for items in the collection.
       */
-    def geoNear(collectionName: String, x: Double, y: Double): js.Promise[_] = js.native
-    def geoNear(collectionName: String, x: Double, y: Double, options: GeoNearOptions): js.Promise[_] = js.native
+    def geoNear(collectionName: String, x: Double, y: Double): js.Promise[js.Any] = js.native
+    def geoNear(collectionName: String, x: Double, y: Double, options: GeoNearOptions): js.Promise[js.Any] = js.native
     
     /**
       * Gets collection from the database with a given name.
       */
-    /* protected */ def getCollection(collectionName: String): Collection[_] = js.native
+    /* protected */ def getCollection(collectionName: String): Collection[js.Any] = js.native
     
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       condition: js.Object,
       initial: js.Object,
       reduce: Code,
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -269,7 +270,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -279,7 +280,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -288,7 +289,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -298,7 +299,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -307,7 +308,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -317,7 +318,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -326,7 +327,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Function,
@@ -336,7 +337,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     /**
       * Run a group command across a collection.
       */
@@ -348,7 +349,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -358,7 +359,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -367,7 +368,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -377,7 +378,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -386,7 +387,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -396,7 +397,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -405,7 +406,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: js.Object,
@@ -415,7 +416,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -424,7 +425,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -434,7 +435,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -443,7 +444,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: js.Function,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -453,7 +454,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -462,7 +463,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: Code,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -472,7 +473,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: js.Function,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -481,7 +482,7 @@ object mongodbMongoQueryRunnerMod {
       reduce: Code,
       finalize: Code,
       command: Boolean
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     def group(
       collectionName: String,
       keys: Code,
@@ -491,7 +492,7 @@ object mongodbMongoQueryRunnerMod {
       finalize: Code,
       command: Boolean,
       options: `5`
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     /**
       * Initiate an In order bulk write operation, operations will be serially executed in the order they are added, creating a new operation for each switch in types.
@@ -520,7 +521,7 @@ object mongodbMongoQueryRunnerMod {
     /**
       * Returns if the collection is a capped collection.
       */
-    def isCapped(collectionName: String): js.Promise[_] = js.native
+    def isCapped(collectionName: String): js.Promise[js.Any] = js.native
     
     /**
       * Get the list of all indexes information for the collection.
@@ -534,35 +535,35 @@ object mongodbMongoQueryRunnerMod {
     @JSName("manager")
     var manager_MongoQueryRunner: MongoEntityManager = js.native
     
-    def mapReduce(collectionName: String, map: String, reduce: String): js.Promise[_] = js.native
-    def mapReduce(collectionName: String, map: String, reduce: String, options: MapReduceOptions): js.Promise[_] = js.native
-    def mapReduce(collectionName: String, map: String, reduce: js.Function): js.Promise[_] = js.native
-    def mapReduce(collectionName: String, map: String, reduce: js.Function, options: MapReduceOptions): js.Promise[_] = js.native
-    def mapReduce(collectionName: String, map: js.Function, reduce: String): js.Promise[_] = js.native
-    def mapReduce(collectionName: String, map: js.Function, reduce: String, options: MapReduceOptions): js.Promise[_] = js.native
+    def mapReduce(collectionName: String, map: String, reduce: String): js.Promise[js.Any] = js.native
+    def mapReduce(collectionName: String, map: String, reduce: String, options: MapReduceOptions): js.Promise[js.Any] = js.native
+    def mapReduce(collectionName: String, map: String, reduce: js.Function): js.Promise[js.Any] = js.native
+    def mapReduce(collectionName: String, map: String, reduce: js.Function, options: MapReduceOptions): js.Promise[js.Any] = js.native
+    def mapReduce(collectionName: String, map: js.Function, reduce: String): js.Promise[js.Any] = js.native
+    def mapReduce(collectionName: String, map: js.Function, reduce: String, options: MapReduceOptions): js.Promise[js.Any] = js.native
     /**
       * Run Map Reduce across a collection. Be aware that the inline option for out will return an array of results not a collection.
       */
-    def mapReduce(collectionName: String, map: js.Function, reduce: js.Function): js.Promise[_] = js.native
-    def mapReduce(collectionName: String, map: js.Function, reduce: js.Function, options: MapReduceOptions): js.Promise[_] = js.native
+    def mapReduce(collectionName: String, map: js.Function, reduce: js.Function): js.Promise[js.Any] = js.native
+    def mapReduce(collectionName: String, map: js.Function, reduce: js.Function, options: MapReduceOptions): js.Promise[js.Any] = js.native
     
     /**
       * Return N number of parallel cursors for a collection allowing parallel reading of entire collection.
       * There are no ordering guarantees for returned results.
       */
-    def parallelCollectionScan(collectionName: String): js.Promise[js.Array[Cursor[_]]] = js.native
-    def parallelCollectionScan(collectionName: String, options: ParallelCollectionScanOptions): js.Promise[js.Array[Cursor[_]]] = js.native
+    def parallelCollectionScan(collectionName: String): js.Promise[js.Array[Cursor[js.Any]]] = js.native
+    def parallelCollectionScan(collectionName: String, options: ParallelCollectionScanOptions): js.Promise[js.Array[Cursor[js.Any]]] = js.native
     
     /**
       * Reindex all indexes on the collection Warning: reIndex is a blocking operation (indexes are rebuilt in the foreground) and will be slow for large collections.
       */
-    def reIndex(collectionName: String): js.Promise[_] = js.native
+    def reIndex(collectionName: String): js.Promise[js.Any] = js.native
     
     /**
       * Reindex all indexes on the collection Warning: reIndex is a blocking operation (indexes are rebuilt in the foreground) and will be slow for large collections.
       */
-    def rename(collectionName: String, newName: String): js.Promise[Collection[_]] = js.native
-    def rename(collectionName: String, newName: String, options: DropTarget): js.Promise[Collection[_]] = js.native
+    def rename(collectionName: String, newName: String): js.Promise[Collection[js.Any]] = js.native
+    def rename(collectionName: String, newName: String, options: DropTarget): js.Promise[Collection[js.Any]] = js.native
     
     def renameTable(oldTableOrName: String, newTableOrName: Table): js.Promise[Unit] = js.native
     /**
@@ -598,8 +599,8 @@ object mongodbMongoQueryRunnerMod {
       * Watching new changes as stream.
       */
     def watch(collectionName: String): ChangeStream = js.native
-    def watch(collectionName: String, pipeline: js.UndefOr[scala.Nothing], options: ChangeStreamOptions): ChangeStream = js.native
     def watch(collectionName: String, pipeline: js.Array[js.Object]): ChangeStream = js.native
     def watch(collectionName: String, pipeline: js.Array[js.Object], options: ChangeStreamOptions): ChangeStream = js.native
+    def watch(collectionName: String, pipeline: Unit, options: ChangeStreamOptions): ChangeStream = js.native
   }
 }

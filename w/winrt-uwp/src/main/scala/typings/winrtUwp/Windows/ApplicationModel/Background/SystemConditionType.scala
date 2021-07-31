@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,37 +13,55 @@ object SystemConditionType extends StObject {
   
   /** Specifies that the background task can only run when the cost to do background work is low. */
   @js.native
-  sealed trait backgroundWorkCostNotHigh extends SystemConditionType
+  sealed trait backgroundWorkCostNotHigh
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that the background task can only run when a free (non-metered) network connection is available. */
   @js.native
-  sealed trait freeNetworkAvailable extends SystemConditionType
+  sealed trait freeNetworkAvailable
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that the background task can only run when the Internet is available. If a background task with the InternetAvailable condition is triggered, and the Internet is not available, the task will not run until the Internet is available again. */
   @js.native
-  sealed trait internetAvailable extends SystemConditionType
+  sealed trait internetAvailable
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that the background task can only run when the Internet is not available. If a background task with the InternetNotAvailable condition is triggered, and the Internet is available, the task will not run until the Internet is unavailable. */
   @js.native
-  sealed trait internetNotAvailable extends SystemConditionType
+  sealed trait internetNotAvailable
+    extends StObject
+       with SystemConditionType
   
   /** Not a valid condition type. */
   @js.native
-  sealed trait invalid extends SystemConditionType
+  sealed trait invalid
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that the background task can only run when the user's session is connected. If a background task with the SessionConnected condition is triggered, and the user session is not logged in, the task will run when the user logs in. */
   @js.native
-  sealed trait sessionConnected extends SystemConditionType
+  sealed trait sessionConnected
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that the background task can only run when the user's session is disconnected. If a background task with the SessionDisconnected condition is triggered, and the user is logged in, the task will run when the user logs out. */
   @js.native
-  sealed trait sessionDisconnected extends SystemConditionType
+  sealed trait sessionDisconnected
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that background task can only run when the user is not present. If a background task with the UserNotPresent condition is triggered, and the user is present, the task will not run until the user becomes inactive. */
   @js.native
-  sealed trait userNotPresent extends SystemConditionType
+  sealed trait userNotPresent
+    extends StObject
+       with SystemConditionType
   
   /** Specifies that the background task can only run when the user is present. If a background task with the UserPresent condition is triggered, and the user is away, the task will not run until the user is present. */
   @js.native
-  sealed trait userPresent extends SystemConditionType
+  sealed trait userPresent
+    extends StObject
+       with SystemConditionType
 }

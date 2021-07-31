@@ -5,28 +5,26 @@ import typings.inputMoment.mod.OnSaveListener
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<input-moment.input-moment.InputMomentProps> */
-  @js.native
   trait ReadonlyInputMomentProps extends StObject {
     
-    val hourStep: js.UndefOr[Double] = js.native
+    val hourStep: js.UndefOr[Double] = js.undefined
     
-    val minStep: js.UndefOr[Double] = js.native
+    val minStep: js.UndefOr[Double] = js.undefined
     
-    val moment: Moment = js.native
+    val moment: Moment
     
-    val nextMonthIcon: js.UndefOr[String] = js.native
+    val nextMonthIcon: js.UndefOr[String] = js.undefined
     
-    val onChange: js.UndefOr[OnChangeListener] = js.native
+    val onChange: js.UndefOr[OnChangeListener] = js.undefined
     
-    val onSave: js.UndefOr[OnSaveListener] = js.native
+    val onSave: js.UndefOr[OnSaveListener] = js.undefined
     
-    val prevMonthIcon: js.UndefOr[String] = js.native
+    val prevMonthIcon: js.UndefOr[String] = js.undefined
   }
   object ReadonlyInputMomentProps {
     

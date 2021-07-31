@@ -2,13 +2,11 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information regarding the outcome of a successful connection.execute().
   */
-@js.native
 trait Result[T] extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait Result[T] extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#implicitresults
     * @since 4.0
     */
-  var implicitResults: js.UndefOr[js.Array[js.Array[T] | ResultSet[T]]] = js.native
+  var implicitResults: js.UndefOr[js.Array[js.Array[T] | ResultSet[T]]] = js.undefined
   
   /**
     * ROWID of a row affected by an INSERT, UPDATE, DELETE or MERGE statement. For other statements,
@@ -26,7 +24,7 @@ trait Result[T] extends StObject {
     * 
     * @since 4.2
     */
-  val lastRowid: js.UndefOr[String] = js.native
+  val lastRowid: js.UndefOr[String] = js.undefined
   
   /**
     * For SELECT statements, this contains an array of objects describing details of columns for the select list.
@@ -35,14 +33,14 @@ trait Result[T] extends StObject {
     * Each column’s name is always given. If the oracledb.extendedMetaData or execute() option extendedMetaData
     * are true then additional information is included.
     */
-  var metaData: js.UndefOr[js.Array[Metadata[T]]] = js.native
+  var metaData: js.UndefOr[js.Array[Metadata[T]]] = js.undefined
   
   /**
     * This contains the output values of OUT and IN OUT binds. If bindParams is passed as an array,
     * then outBinds is returned as an array. If bindParams is passed as an object,
     * then outBinds is returned as an object. If there are no OUT or IN OUT binds, the value is undefined.
     */
-  var outBinds: js.UndefOr[T] = js.native
+  var outBinds: js.UndefOr[T] = js.undefined
   
   /**
     * For SELECT statements when the resultSet option is true, use the resultSet object to fetch rows.
@@ -53,7 +51,7 @@ trait Result[T] extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsetclass
     * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsethandling
     */
-  var resultSet: js.UndefOr[ResultSet[T]] = js.native
+  var resultSet: js.UndefOr[ResultSet[T]] = js.undefined
   
   /**
     * For SELECT statements using direct fetches, rows contains an array of fetched rows.
@@ -65,14 +63,14 @@ trait Result[T] extends StObject {
     * The number of rows returned is limited by oracledb.maxRows or the maxRows option in an execute() call.
     * If maxRows is 0, then the number of rows is limited by Node.js memory constraints.
     */
-  var rows: js.UndefOr[js.Array[T]] = js.native
+  var rows: js.UndefOr[js.Array[T]] = js.undefined
   
   /**
     * For DML statements (including SELECT FOR UPDATE) this contains the number of rows affected,
     * for example the number of rows inserted. For non-DML statements such as queries and PL/SQL statements,
     * rowsAffected is undefined.
     */
-  var rowsAffected: js.UndefOr[Double] = js.native
+  var rowsAffected: js.UndefOr[Double] = js.undefined
 }
 object Result {
   
@@ -83,7 +81,7 @@ object Result {
   }
   
   @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result[_], T] (val x: Self with Result[T]) extends AnyVal {
+  implicit class ResultMutableBuilder[Self <: Result[?], T] (val x: Self & Result[T]) extends AnyVal {
     
     @scala.inline
     def setImplicitResults(value: js.Array[js.Array[T] | ResultSet[T]]): Self = StObject.set(x, "implicitResults", value.asInstanceOf[js.Any])

@@ -2,13 +2,11 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILengthAble extends StObject {
   
-  var length: Double = js.native
+  var length: Double
 }
 object ILengthAble {
   

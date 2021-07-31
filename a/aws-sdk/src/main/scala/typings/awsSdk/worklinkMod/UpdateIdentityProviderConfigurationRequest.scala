@@ -2,26 +2,24 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateIdentityProviderConfigurationRequest extends StObject {
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
   
   /**
     * The SAML metadata document provided by the customer’s identity provider. The existing IdentityProviderSamlMetadata is unset if null is passed.
     */
-  var IdentityProviderSamlMetadata: js.UndefOr[SamlMetadata] = js.native
+  var IdentityProviderSamlMetadata: js.UndefOr[SamlMetadata] = js.undefined
   
   /**
     * The type of identity provider.
     */
-  var IdentityProviderType: typings.awsSdk.worklinkMod.IdentityProviderType = js.native
+  var IdentityProviderType: typings.awsSdk.worklinkMod.IdentityProviderType
 }
 object UpdateIdentityProviderConfigurationRequest {
   

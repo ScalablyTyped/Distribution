@@ -10,7 +10,6 @@ import typings.backblazeB2.anon.fileIdstringpartSha1Array
 import typings.backblazeB2.anon.maxKeyCountnumberstartApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -10,12 +10,10 @@ import typings.awsSdkClientS3Node.typesEncryptionConfigurationMod.EncryptionConf
 import typings.awsSdkClientS3Node.typesEncryptionConfigurationMod.UnmarshalledEncryptionConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDestinationMod {
   
-  @js.native
   trait Destination extends StObject {
     
     /**
@@ -23,29 +21,29 @@ object typesDestinationMod {
       */
     var AccessControlTranslation: js.UndefOr[
         typings.awsSdkClientS3Node.typesAccessControlTranslationMod.AccessControlTranslation
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p> Account ID of the destination bucket. Currently Amazon S3 verifies this value only if Access Control Translation is enabled. </p> <p> In a cross-account scenario, if you tell Amazon S3 to change replica ownership to the AWS account that owns the destination bucket by adding the <code>AccessControlTranslation</code> element, this is the account ID of the destination bucket owner. </p>
       */
-    var Account: js.UndefOr[String] = js.native
+    var Account: js.UndefOr[String] = js.undefined
     
     /**
       * <p> Amazon resource name (ARN) of the bucket where you want Amazon S3 to store replicas of the object identified by the rule. </p> <p> If you have multiple rules in your replication configuration, all rules must specify the same bucket as the destination. A replication configuration can replicate objects only to one destination bucket. </p>
       */
-    var Bucket: String = js.native
+    var Bucket: String
     
     /**
       * <p> Container that provides encryption-related information. You must specify this element if the <code>SourceSelectionCriteria</code> is specified. </p>
       */
     var EncryptionConfiguration: js.UndefOr[
         typings.awsSdkClientS3Node.typesEncryptionConfigurationMod.EncryptionConfiguration
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>The class of storage used to store the object.</p>
       */
-    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.undefined
   }
   object Destination {
     
@@ -87,20 +85,21 @@ object typesDestinationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDestination extends Destination {
+  trait UnmarshalledDestination
+    extends StObject
+       with Destination {
     
     /**
       * <p> Container for information regarding the access control for replicas. </p> <p> Use only in a cross-account scenario, where source and destination bucket owners are not the same, when you want to change replica ownership to the AWS account that owns the destination bucket. If you don't add this element to the replication configuration, the replicas are owned by same AWS account that owns the source object. </p>
       */
     @JSName("AccessControlTranslation")
-    var AccessControlTranslation_UnmarshalledDestination: js.UndefOr[UnmarshalledAccessControlTranslation] = js.native
+    var AccessControlTranslation_UnmarshalledDestination: js.UndefOr[UnmarshalledAccessControlTranslation] = js.undefined
     
     /**
       * <p> Container that provides encryption-related information. You must specify this element if the <code>SourceSelectionCriteria</code> is specified. </p>
       */
     @JSName("EncryptionConfiguration")
-    var EncryptionConfiguration_UnmarshalledDestination: js.UndefOr[UnmarshalledEncryptionConfiguration] = js.native
+    var EncryptionConfiguration_UnmarshalledDestination: js.UndefOr[UnmarshalledEncryptionConfiguration] = js.undefined
   }
   object UnmarshalledDestination {
     

@@ -5,19 +5,17 @@ import typings.devextreme.mod.DevExpress.ui.dxDiagram
 import typings.devextreme.mod.DevExpress.ui.dxDiagramItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementItem extends StObject {
   
-  var component: js.UndefOr[dxDiagram] = js.native
+  var component: js.UndefOr[dxDiagram] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var item: js.UndefOr[dxDiagramItem] = js.native
+  var item: js.UndefOr[dxDiagramItem] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object ElementItem {
   

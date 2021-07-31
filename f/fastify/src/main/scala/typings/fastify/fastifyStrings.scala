@@ -4,43 +4,56 @@ import typings.fastify.loggerMod.LogLevel
 import typings.fastify.utilsMod.HTTPMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fastifyStrings {
   
   @js.native
-  sealed trait DELETE extends HTTPMethods
+  sealed trait DELETE
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait GET extends HTTPMethods
+  sealed trait GET
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends HTTPMethods
+  sealed trait HEAD
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait OPTIONS extends HTTPMethods
+  sealed trait OPTIONS
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait PATCH extends HTTPMethods
+  sealed trait PATCH
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends HTTPMethods
+  sealed trait POST
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends HTTPMethods
+  sealed trait PUT
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
@@ -55,17 +68,23 @@ object fastifyStrings {
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait fatal
+    extends StObject
+       with LogLevel
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   
@@ -85,7 +104,9 @@ object fastifyStrings {
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -175,12 +196,16 @@ object fastifyStrings {
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait trace extends LogLevel
+  sealed trait trace
+    extends StObject
+       with LogLevel
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

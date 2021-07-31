@@ -2,41 +2,39 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipShowingEventUIParam extends StObject {
   
   /**
     * Used to get item brush.
     */
-  var actualItemBrush: js.UndefOr[js.Any] = js.native
+  var actualItemBrush: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get series brush.
     */
-  var actualSeriesBrush: js.UndefOr[js.Any] = js.native
+  var actualSeriesBrush: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to tooltip DOM element.
     */
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to current series item object.
     */
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to current series object.
     */
-  var series: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[js.Any] = js.undefined
 }
 object TooltipShowingEventUIParam {
   

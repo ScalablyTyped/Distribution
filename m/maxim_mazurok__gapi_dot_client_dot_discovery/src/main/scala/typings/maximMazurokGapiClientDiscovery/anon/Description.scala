@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientDiscovery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description extends StObject {
   
   /** The description of this API. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** A link to the discovery document. */
-  var discoveryLink: js.UndefOr[String] = js.native
+  var discoveryLink: js.UndefOr[String] = js.undefined
   
   /** The URL for the discovery REST document. */
-  var discoveryRestUrl: js.UndefOr[String] = js.native
+  var discoveryRestUrl: js.UndefOr[String] = js.undefined
   
   /** A link to human readable documentation for the API. */
-  var documentationLink: js.UndefOr[String] = js.native
+  var documentationLink: js.UndefOr[String] = js.undefined
   
   /** Links to 16x16 and 32x32 icons representing the API. */
-  var icons: js.UndefOr[X16] = js.native
+  var icons: js.UndefOr[X16] = js.undefined
   
   /** The id of this API. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind for this response. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Labels for the status of this API, such as labs or deprecated. */
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the API. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** True if this version is the preferred version to use. */
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
   
   /** The title of this API. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The version of the API. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Description {
   

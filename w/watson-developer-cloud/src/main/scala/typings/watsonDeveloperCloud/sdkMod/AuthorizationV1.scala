@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.sdkMod
 import typings.watsonDeveloperCloud.v1Mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("watson-developer-cloud/sdk", "AuthorizationV1")

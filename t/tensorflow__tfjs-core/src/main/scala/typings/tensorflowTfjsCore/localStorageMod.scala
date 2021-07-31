@@ -1,28 +1,58 @@
 package typings.tensorflowTfjsCore
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Storage
 import typings.tensorflowTfjsCore.routerRegistryMod.IORouter
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
+import typings.tensorflowTfjsCore.typesMod.ModelArtifactsInfo
 import typings.tensorflowTfjsCore.typesMod.ModelStoreManager
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localStorageMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorageManager")
   @js.native
-  class BrowserLocalStorageManager () extends ModelStoreManager {
+  class BrowserLocalStorageManager ()
+    extends StObject
+       with ModelStoreManager {
     
     val LS: js.Any = js.native
+    
+    /**
+      * List all models in the model store.
+      *
+      * @returns A dictionary mapping paths of existing models to their
+      *   model artifacts info. Model artifacts info include type of the model's
+      *   topology, byte sizes of the topology, weights, etc.
+      */
+    /* CompleteClass */
+    override def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = js.native
+    
+    /**
+      * Remove a model specified by `path`.
+      *
+      * @param path
+      * @returns ModelArtifactsInfo of the deleted model (if and only if deletion
+      *   is successful).
+      * @throws Error if deletion fails, e.g., if no model exists at `path`.
+      */
+    /* CompleteClass */
+    override def removeModel(path: String): js.Promise[ModelArtifactsInfo] = js.native
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "BrowserLocalStorage")
   @js.native
-  class BrowserLocalStorage_ protected () extends IOHandler {
+  class BrowserLocalStorage_ protected ()
+    extends StObject
+       with IOHandler {
     def this(modelPath: String) = this()
     
     val LS: Storage = js.native
@@ -62,30 +92,27 @@ object localStorageMod {
     val URL_SCHEME: /* "localstorage://" */ String = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "browserLocalStorage")
-  @js.native
-  def browserLocalStorage(modelPath: String): IOHandler = js.native
+  @scala.inline
+  def browserLocalStorage(modelPath: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserLocalStorage")(modelPath.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "localStorageRouter")
   @js.native
   val localStorageRouter: IORouter = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "purgeLocalStorageArtifacts")
-  @js.native
-  def purgeLocalStorageArtifacts(): js.Array[String] = js.native
+  @scala.inline
+  def purgeLocalStorageArtifacts(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeLocalStorageArtifacts")().asInstanceOf[js.Array[String]]
   
-  @js.native
   trait LocalStorageKeys extends StObject {
     
-    var info: String = js.native
+    var info: String
     
-    var modelMetadata: String = js.native
+    var modelMetadata: String
     
-    var topology: String = js.native
+    var topology: String
     
-    var weightData: String = js.native
+    var weightData: String
     
-    var weightSpecs: String = js.native
+    var weightSpecs: String
   }
   object LocalStorageKeys {
     

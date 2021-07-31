@@ -2,13 +2,11 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Response for SearchJob method.
   */
-@js.native
 trait SchemaSearchJobsResponse extends StObject {
   
   /**
@@ -21,56 +19,56 @@ trait SchemaSearchJobsResponse extends StObject {
     * requests with offset after this result set should contain all broadened
     * results.
     */
-  var broadenedQueryJobsCount: js.UndefOr[Double] = js.native
+  var broadenedQueryJobsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * An estimation of the number of jobs that match the specified query.  This
     * number is not guaranteed to be accurate. For accurate results, see
     * enable_precise_result_size.
     */
-  var estimatedTotalSize: js.UndefOr[Double] = js.native
+  var estimatedTotalSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The histogram results that match specified
     * SearchJobsRequest.histogram_facets.
     */
-  var histogramResults: js.UndefOr[SchemaHistogramResults] = js.native
+  var histogramResults: js.UndefOr[SchemaHistogramResults] = js.undefined
   
   /**
     * The location filters that the service applied to the specified query. If
     * any filters are lat-lng based, the JobLocation.location_type is
     * JobLocation.LocationType#LOCATION_TYPE_UNSPECIFIED.
     */
-  var locationFilters: js.UndefOr[js.Array[SchemaLocation]] = js.native
+  var locationFilters: js.UndefOr[js.Array[SchemaLocation]] = js.undefined
   
   /**
     * The Job entities that match the specified SearchJobsRequest.
     */
-  var matchingJobs: js.UndefOr[js.Array[SchemaMatchingJob]] = js.native
+  var matchingJobs: js.UndefOr[js.Array[SchemaMatchingJob]] = js.undefined
   
   /**
     * Additional information for the API invocation, such as the request
     * tracking id.
     */
-  var metadata: js.UndefOr[SchemaResponseMetadata] = js.native
+  var metadata: js.UndefOr[SchemaResponseMetadata] = js.undefined
   
   /**
     * The token that specifies the starting position of the next page of
     * results. This field is empty if there are no more results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The spell checking result, and correction.
     */
-  var spellCorrection: js.UndefOr[SchemaSpellingCorrection] = js.native
+  var spellCorrection: js.UndefOr[SchemaSpellingCorrection] = js.undefined
   
   /**
     * The precise result count, which is available only if the client set
     * enable_precise_result_size to `true`, or if the response is the last page
     * of results. Otherwise, the value is `-1`.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaSearchJobsResponse {
   

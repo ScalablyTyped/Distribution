@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XProtectable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This service extents the service {@link SheetCellRange} . A spreadsheet is nothing else than a cell range with extended functionality.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait Spreadsheet
-  extends SheetCellRange
+  extends StObject
+     with SheetCellRange
      with Scenario
      with XSpreadsheet
      with XProtectable
@@ -49,19 +48,19 @@ trait Spreadsheet
     * removed.
     * @see XPrintAreas
     */
-  var AutomaticPrintArea: Boolean = js.native
+  var AutomaticPrintArea: Boolean
   
   /** specifies all conditional formats of that sheet */
-  var ConditionalFormats: XConditionalFormats = js.native
+  var ConditionalFormats: XConditionalFormats
   
   /** specifies if the sheet is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** specifies the page style of the sheet. */
-  var PageStyle: String = js.native
+  var PageStyle: String
   
   /** specifies the color of the sheet tab, if any. */
-  var TabColor: Color = js.native
+  var TabColor: Color
   
   /**
     * specifies the direction of the columns in the spreadsheet.
@@ -70,7 +69,7 @@ trait Spreadsheet
     * com.sun.star.text.WritingMode2.RL_TB} to order the columns from right to left.
     * @see com.sun.star.text.WritingMode2
     */
-  var TableLayout: Double = js.native
+  var TableLayout: Double
 }
 object Spreadsheet {
   

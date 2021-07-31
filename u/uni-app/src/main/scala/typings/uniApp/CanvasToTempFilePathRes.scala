@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasToTempFilePathRes extends StObject {
   
   /**
     * 导出生成的图片路径
     */
-  var tempFilePath: js.UndefOr[String] = js.native
+  var tempFilePath: js.UndefOr[String] = js.undefined
 }
 object CanvasToTempFilePathRes {
   

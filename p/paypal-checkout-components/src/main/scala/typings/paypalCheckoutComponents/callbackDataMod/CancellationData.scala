@@ -2,23 +2,21 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancellationData extends StObject {
   
-  var billingID: String = js.native
+  var billingID: String
   
-  var button_version: String = js.native
+  var button_version: String
   
-  var cancelUrl: String = js.native
+  var cancelUrl: String
   
-  var intent: String = js.native
+  var intent: String
   
-  var paymentID: String = js.native
+  var paymentID: String
   
-  var paymentToken: String = js.native
+  var paymentToken: String
 }
 object CancellationData {
   

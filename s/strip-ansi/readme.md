@@ -10,9 +10,9 @@ Strip ANSI escape codes from a string
 | ------------------ | :-------------: |
 | Full name          | strip-ansi |
 | Keywords           | strip, trim, remove, ansi, styles, color, colour, colors, terminal, console, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 5 |
-| # dependents       | 1885 |
-| # downloads        | 2290847136 |
+| # releases         | 4 |
+| # dependents       | 2082 |
+| # downloads        | 2932030203 |
 | # stars            | 13 |
 
 ## Links

@@ -4,17 +4,15 @@ import typings.muicss.tabMod.default
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabProps extends StObject {
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var onActive: js.UndefOr[js.Function1[/* tab */ default, Unit]] = js.native
+  var onActive: js.UndefOr[js.Function1[/* tab */ default, Unit]] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object TabProps {
   

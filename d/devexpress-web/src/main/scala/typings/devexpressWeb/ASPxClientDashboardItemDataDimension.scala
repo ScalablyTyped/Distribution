@@ -2,45 +2,43 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the dimension metadata.
   */
-@js.native
 trait ASPxClientDashboardItemDataDimension extends StObject {
   
   /**
     * Gets the data member identifier for the current dimension.
     */
-  var DataMember: String = js.native
+  var DataMember: String
   
   /**
     * Gets the group interval for date-time values for the current dimension.
     */
-  var DateTimeGroupInterval: String = js.native
+  var DateTimeGroupInterval: String
   
   /**
     * Formats the specified value using format settings of the current dimension. A String that represents the formatted value.
     * @param value A value to be formatted.
     */
-  def Format(value: js.Any): String = js.native
+  def Format(value: js.Any): String
   
   /**
     * Gets the dimension identifier.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * Gets or sets the name of the dimension.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Gets the group interval for string values.
     */
-  var TextGroupInterval: String = js.native
+  var TextGroupInterval: String
 }
 object ASPxClientDashboardItemDataDimension {
   

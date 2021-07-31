@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLoadBasedAutoScalingRequest extends StObject {
   
   /**
     * An array of layer IDs.
     */
-  var LayerIds: Strings = js.native
+  var LayerIds: Strings
 }
 object DescribeLoadBasedAutoScalingRequest {
   

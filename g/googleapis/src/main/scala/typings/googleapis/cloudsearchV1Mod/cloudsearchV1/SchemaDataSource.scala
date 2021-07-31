@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * belong to a datasource.  This is the prerequisite before items can be
   * indexed into Cloud Search.
   */
-@js.native
 trait SchemaDataSource extends StObject {
   
   /**
@@ -18,23 +16,23 @@ trait SchemaDataSource extends StObject {
     * such as create, update, and delete. Disabling this does not imply halting
     * process of previously accepted data.
     */
-  var disableModifications: js.UndefOr[Boolean] = js.native
+  var disableModifications: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable serving any search or assist results.
     */
-  var disableServing: js.UndefOr[Boolean] = js.native
+  var disableServing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. Display name of the datasource The maximum length is 300
     * characters.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * List of service accounts that have indexing access.
     */
-  var indexingServiceAccounts: js.UndefOr[js.Array[String]] = js.native
+  var indexingServiceAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This field restricts visibility to items at the datasource level. Items
@@ -44,19 +42,19 @@ trait SchemaDataSource extends StObject {
     * items. This ensures a high level access on the entire datasource, and
     * that the individual items are not shared outside this visibility.
     */
-  var itemsVisibility: js.UndefOr[js.Array[SchemaGSuitePrincipal]] = js.native
+  var itemsVisibility: js.UndefOr[js.Array[SchemaGSuitePrincipal]] = js.undefined
   
   /**
     * Name of the datasource resource. Format: datasources/{source_id}. &lt;br
     * /&gt;The name is ignored when creating a datasource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * IDs of the Long Running Operations (LROs) currently running for this
     * schema.
     */
-  var operationIds: js.UndefOr[js.Array[String]] = js.native
+  var operationIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A short name or alias for the source.  This value will be used to match
@@ -69,7 +67,7 @@ trait SchemaDataSource extends StObject {
     * hangouts, gplus, keep, people, teams. Its maximum length is 32
     * characters.
     */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
 }
 object SchemaDataSource {
   

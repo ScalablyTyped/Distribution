@@ -7,55 +7,47 @@ import typings.electronPublish.mod.PublishOptions
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderMod {
   
-  @JSImport("electron-builder/out/builder", "build")
+  @JSImport("electron-builder/out/builder", JSImport.Namespace)
   @js.native
-  def build(): js.Promise[js.Array[String]] = js.native
-  @JSImport("electron-builder/out/builder", "build")
-  @js.native
-  def build(rawOptions: CliOptions): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-builder/out/builder", "coerceTypes")
-  @js.native
-  def coerceTypes(host: js.Any): js.Any = js.native
+  @scala.inline
+  def build(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def build(rawOptions: CliOptions): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(rawOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("electron-builder/out/builder", "configureBuildCommand")
-  @js.native
+  @scala.inline
+  def coerceTypes(host: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceTypes")(host.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
   def configureBuildCommand(
     yargs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.Argv */ js.Any
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configureBuildCommand")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("electron-builder/out/builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[Platform]): Map[Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder/out/builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[Platform], `type`: js.UndefOr[scala.Nothing], arch: String): Map[Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder/out/builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[Platform], `type`: String): Map[Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder/out/builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[Platform], `type`: String, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = js.native
-  @JSImport("electron-builder/out/builder", "createTargets")
-  @js.native
-  def createTargets(platforms: js.Array[Platform], `type`: Null, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = js.native
+  @scala.inline
+  def createTargets(platforms: js.Array[Platform]): Map[Platform, Map[Arch, js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any]).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[Platform], `type`: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[Platform], `type`: String, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[Platform], `type`: Null, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
+  @scala.inline
+  def createTargets(platforms: js.Array[Platform], `type`: Unit, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
   
-  @JSImport("electron-builder/out/builder", "createYargs")
-  @js.native
-  def createYargs(): js.Any = js.native
+  @scala.inline
+  def createYargs(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createYargs")().asInstanceOf[js.Any]
   
-  @JSImport("electron-builder/out/builder", "normalizeOptions")
-  @js.native
-  def normalizeOptions(args: CliOptions): BuildOptions = js.native
+  @scala.inline
+  def normalizeOptions(args: CliOptions): BuildOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOptions")(args.asInstanceOf[js.Any]).asInstanceOf[BuildOptions]
   
-  @js.native
   trait BuildOptions
-    extends PackagerOptions
+    extends StObject
+       with PackagerOptions
        with PublishOptions
   object BuildOptions {
     
@@ -66,20 +58,20 @@ object builderMod {
     }
   }
   
-  @js.native
   trait CliOptions
-    extends PackagerOptions
+    extends StObject
+       with PackagerOptions
        with PublishOptions {
     
-    var arm64: js.UndefOr[Boolean] = js.native
+    var arm64: js.UndefOr[Boolean] = js.undefined
     
-    var armv7l: js.UndefOr[Boolean] = js.native
+    var armv7l: js.UndefOr[Boolean] = js.undefined
     
-    var dir: js.UndefOr[Boolean] = js.native
+    var dir: js.UndefOr[Boolean] = js.undefined
     
-    var ia32: js.UndefOr[Boolean] = js.native
+    var ia32: js.UndefOr[Boolean] = js.undefined
     
-    var x64: js.UndefOr[Boolean] = js.native
+    var x64: js.UndefOr[Boolean] = js.undefined
   }
   object CliOptions {
     

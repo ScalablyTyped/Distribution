@@ -12,14 +12,13 @@ import typings.winrtUwp.winrtUwpStrings.audioframecompleted
 import typings.winrtUwp.winrtUwpStrings.quantumstarted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio frame input node. */
 @js.native
 trait AudioFrameInputNode extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_audioframecompleted(
     `type`: audioframecompleted,
@@ -77,13 +76,13 @@ trait AudioFrameInputNode extends StObject {
   var encodingProperties: AudioEncodingProperties = js.native
   
   /** Notifies of a completed audio frame that has been submitted to the graph with a call to AddFrame . */
-  def onaudioframecompleted(ev: AudioFrameCompletedEventArgs with WinRTEvent[AudioFrameInputNode]): Unit = js.native
+  def onaudioframecompleted(ev: AudioFrameCompletedEventArgs & WinRTEvent[AudioFrameInputNode]): Unit = js.native
   /** Notifies of a completed audio frame that has been submitted to the graph with a call to AddFrame . */
   @JSName("onaudioframecompleted")
   var onaudioframecompleted_Original: TypedEventHandler[AudioFrameInputNode, AudioFrameCompletedEventArgs] = js.native
   
   /** Raised when the audio graph is ready to begin processing a new quantum of data. */
-  def onquantumstarted(ev: FrameInputNodeQuantumStartedEventArgs with WinRTEvent[AudioFrameInputNode]): Unit = js.native
+  def onquantumstarted(ev: FrameInputNodeQuantumStartedEventArgs & WinRTEvent[AudioFrameInputNode]): Unit = js.native
   /** Raised when the audio graph is ready to begin processing a new quantum of data. */
   @JSName("onquantumstarted")
   var onquantumstarted_Original: TypedEventHandler[AudioFrameInputNode, FrameInputNodeQuantumStartedEventArgs] = js.native
@@ -100,7 +99,7 @@ trait AudioFrameInputNode extends StObject {
   /** Gets the queued sample count for the audio frame input node. */
   var queuedSampleCount: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_audioframecompleted(
     `type`: audioframecompleted,

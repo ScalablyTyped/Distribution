@@ -4,45 +4,43 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwipeoutProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var buttonWidth: js.UndefOr[Double] = js.native
+  var buttonWidth: js.UndefOr[Double] = js.undefined
   
-  var close: js.UndefOr[Boolean] = js.native
+  var close: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var left: js.UndefOr[js.Array[SwipeoutAction]] = js.native
+  var left: js.UndefOr[js.Array[SwipeoutAction]] = js.undefined
   
   var onClose: js.UndefOr[
     js.Function2[/* sectionID */ js.UndefOr[Double], /* rowID */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onOpen: js.UndefOr[
     js.Function2[/* sectionID */ js.UndefOr[Double], /* rowID */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var right: js.UndefOr[js.Array[SwipeoutAction]] = js.native
+  var right: js.UndefOr[js.Array[SwipeoutAction]] = js.undefined
   
-  var rowID: js.UndefOr[Double] = js.native
+  var rowID: js.UndefOr[Double] = js.undefined
   
-  var scroll: js.UndefOr[js.Function1[/* value */ js.UndefOr[Boolean], Unit]] = js.native
+  var scroll: js.UndefOr[js.Function1[/* value */ js.UndefOr[Boolean], Unit]] = js.undefined
   
-  var sectionID: js.UndefOr[Double] = js.native
+  var sectionID: js.UndefOr[Double] = js.undefined
   
-  var sensitivity: js.UndefOr[Double] = js.native
+  var sensitivity: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object SwipeoutProps {
   

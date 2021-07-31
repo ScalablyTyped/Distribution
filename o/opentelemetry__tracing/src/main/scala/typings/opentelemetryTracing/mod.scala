@@ -10,7 +10,6 @@ import typings.opentelemetryTracing.typesMod.BufferConfig
 import typings.opentelemetryTracing.typesMod.TracerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -70,14 +69,6 @@ object mod {
       spanName: String,
       spanContext: SpanContext,
       kind: SpanKind,
-      parentSpanId: js.UndefOr[scala.Nothing],
-      links: js.Array[Link]
-    ) = this()
-    def this(
-      parentTracer: typings.opentelemetryTracing.tracerMod.Tracer,
-      spanName: String,
-      spanContext: SpanContext,
-      kind: SpanKind,
       parentSpanId: String,
       links: js.Array[Link]
     ) = this()
@@ -86,16 +77,15 @@ object mod {
       spanName: String,
       spanContext: SpanContext,
       kind: SpanKind,
-      parentSpanId: js.UndefOr[scala.Nothing],
-      links: js.UndefOr[scala.Nothing],
-      startTime: TimeInput
+      parentSpanId: Unit,
+      links: js.Array[Link]
     ) = this()
     def this(
       parentTracer: typings.opentelemetryTracing.tracerMod.Tracer,
       spanName: String,
       spanContext: SpanContext,
       kind: SpanKind,
-      parentSpanId: js.UndefOr[scala.Nothing],
+      parentSpanId: String,
       links: js.Array[Link],
       startTime: TimeInput
     ) = this()
@@ -105,7 +95,7 @@ object mod {
       spanContext: SpanContext,
       kind: SpanKind,
       parentSpanId: String,
-      links: js.UndefOr[scala.Nothing],
+      links: Unit,
       startTime: TimeInput
     ) = this()
     def this(
@@ -113,8 +103,17 @@ object mod {
       spanName: String,
       spanContext: SpanContext,
       kind: SpanKind,
-      parentSpanId: String,
+      parentSpanId: Unit,
       links: js.Array[Link],
+      startTime: TimeInput
+    ) = this()
+    def this(
+      parentTracer: typings.opentelemetryTracing.tracerMod.Tracer,
+      spanName: String,
+      spanContext: SpanContext,
+      kind: SpanKind,
+      parentSpanId: Unit,
+      links: Unit,
       startTime: TimeInput
     ) = this()
   }

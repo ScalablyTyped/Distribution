@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listBoxMod {
@@ -23,56 +22,55 @@ object listBoxMod {
     def this(props: ListBoxProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ListBoxProps extends StObject {
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dataKey: js.UndefOr[String] = js.native
+    var dataKey: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
-    var filterBy: js.UndefOr[String] = js.native
+    var filterBy: js.UndefOr[String] = js.undefined
     
-    var filterLocale: js.UndefOr[String] = js.native
+    var filterLocale: js.UndefOr[String] = js.undefined
     
-    var filterMatchMode: js.UndefOr[String] = js.native
+    var filterMatchMode: js.UndefOr[String] = js.undefined
     
-    var filterPlaceholder: js.UndefOr[String] = js.native
+    var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var listClassName: js.UndefOr[String] = js.native
+    var listClassName: js.UndefOr[String] = js.undefined
     
-    var listStyle: js.UndefOr[js.Object] = js.native
+    var listStyle: js.UndefOr[js.Object] = js.undefined
     
-    var metaKeySelection: js.UndefOr[Boolean] = js.native
+    var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.undefined
     
-    var optionLabel: js.UndefOr[String] = js.native
+    var optionLabel: js.UndefOr[String] = js.undefined
     
-    var optionValue: js.UndefOr[String] = js.native
+    var optionValue: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[js.Array[_]] = js.native
+    var options: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ListBoxProps {
     
@@ -194,7 +192,7 @@ object listBoxMod {
       def setOptionValueUndefined: Self = StObject.set(x, "optionValue", js.undefined)
       
       @scala.inline
-      def setOptions(value: js.Array[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)

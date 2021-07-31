@@ -7,30 +7,28 @@ import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import typings.ionicCliFramework.definitionsMod.Footnote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ionic.ionic/definitions.CommandMetadata> */
-@js.native
 trait PartialCommandMetadata extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var exampleCommands: js.UndefOr[js.Array[String]] = js.native
+  var exampleCommands: js.UndefOr[js.Array[String]] = js.undefined
   
-  var footnotes: js.UndefOr[js.Array[Footnote]] = js.native
+  var footnotes: js.UndefOr[js.Array[Footnote]] = js.undefined
   
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[CommandMetadataInput]] = js.native
+  var inputs: js.UndefOr[js.Array[CommandMetadataInput]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[js.Array[CommandMetadataOption]] = js.native
+  var options: js.UndefOr[js.Array[CommandMetadataOption]] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[global | project] = js.native
+  var `type`: js.UndefOr[global | project] = js.undefined
 }
 object PartialCommandMetadata {
   

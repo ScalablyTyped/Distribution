@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the RedialRequested event. */
-@js.native
 trait RedialRequestedEventArgs extends StObject {
   
   /** Indicates that the RedialRequested event has been handled. */
-  def handled(): Unit = js.native
+  def handled(): Unit
 }
 object RedialRequestedEventArgs {
   

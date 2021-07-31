@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -24,15 +23,19 @@ object tableMod {
   object SORT_DIRECTION extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SORT_DIRECTION with String] = js.native
+    def apply(value: String): js.UndefOr[SORT_DIRECTION & String] = js.native
     
     @js.native
-    sealed trait ASC extends SORT_DIRECTION
-    /* "ASC" */ val ASC: typings.baseui.tableMod.SORT_DIRECTION.ASC with String = js.native
+    sealed trait ASC
+      extends StObject
+         with SORT_DIRECTION
+    /* "ASC" */ val ASC: typings.baseui.tableMod.SORT_DIRECTION.ASC & String = js.native
     
     @js.native
-    sealed trait DESC extends SORT_DIRECTION
-    /* "DESC" */ val DESC: typings.baseui.tableMod.SORT_DIRECTION.DESC with String = js.native
+    sealed trait DESC
+      extends StObject
+         with SORT_DIRECTION
+    /* "DESC" */ val DESC: typings.baseui.tableMod.SORT_DIRECTION.DESC & String = js.native
   }
   
   @JSImport("baseui/table", "SortableHeadCell")
@@ -99,24 +102,23 @@ object tableMod {
     def this(props: TableProps, context: js.Any) = this()
   }
   
-  @js.native
   trait FilterOverrides extends StObject {
     
     var Content: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Footer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Heading: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var MenuButton: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object FilterOverrides {
     
@@ -163,20 +165,19 @@ object tableMod {
     }
   }
   
-  @js.native
   trait FilterProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onReset: js.UndefOr[js.Function0[_]] = js.native
+    var onReset: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onSelectAll: js.UndefOr[js.Function0[_]] = js.native
+    var onSelectAll: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[FilterOverrides] = js.native
+    var overrides: js.UndefOr[FilterOverrides] = js.undefined
   }
   object FilterProps {
     
@@ -208,13 +209,13 @@ object tableMod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setOnReset(value: () => _): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
+      def setOnReset(value: () => js.Any): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
       @scala.inline
-      def setOnSelectAll(value: () => _): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction0(value))
+      def setOnSelectAll(value: () => js.Any): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
@@ -227,16 +228,15 @@ object tableMod {
     }
   }
   
-  @js.native
   trait SortableHeadCellOverrides extends StObject {
     
     var HeadCell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var SortableLabel: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SortableHeadCellOverrides {
     
@@ -267,28 +267,27 @@ object tableMod {
     }
   }
   
-  @js.native
   trait SortableHeadCellProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var direction: ASC | DESC | Null = js.native
+    var direction: ASC | DESC | Null
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fillClickTarget: js.UndefOr[Boolean] = js.native
+    var fillClickTarget: js.UndefOr[Boolean] = js.undefined
     
-    var onSort: js.UndefOr[js.Function0[_]] = js.native
+    var onSort: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[SortableHeadCellOverrides] = js.native
+    var overrides: js.UndefOr[SortableHeadCellOverrides] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object SortableHeadCellProps {
     
     @scala.inline
     def apply(title: String): SortableHeadCellProps = {
-      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], direction = null)
       __obj.asInstanceOf[SortableHeadCellProps]
     }
     
@@ -320,7 +319,7 @@ object tableMod {
       def setFillClickTargetUndefined: Self = StObject.set(x, "fillClickTarget", js.undefined)
       
       @scala.inline
-      def setOnSort(value: () => _): Self = StObject.set(x, "onSort", js.Any.fromFunction0(value))
+      def setOnSort(value: () => js.Any): Self = StObject.set(x, "onSort", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnSortUndefined: Self = StObject.set(x, "onSort", js.undefined)
@@ -336,16 +335,15 @@ object tableMod {
     }
   }
   
-  @js.native
   trait TableProps extends StObject {
     
-    var columns: js.Array[String | ReactNode] = js.native
+    var columns: js.Array[String | ReactNode]
     
-    var data: js.Array[js.Array[ReactNode]] = js.native
+    var data: js.Array[js.Array[ReactNode]]
     
-    var horizontalScrollWidth: js.UndefOr[String] = js.native
+    var horizontalScrollWidth: js.UndefOr[String] = js.undefined
     
-    var isLoading: js.UndefOr[Boolean] = js.native
+    var isLoading: js.UndefOr[Boolean] = js.undefined
   }
   object TableProps {
     

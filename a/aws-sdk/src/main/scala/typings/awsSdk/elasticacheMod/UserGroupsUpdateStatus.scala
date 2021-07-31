@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserGroupsUpdateStatus extends StObject {
   
   /**
     * The list of user group IDs to add.
     */
-  var UserGroupIdsToAdd: js.UndefOr[UserGroupIdList] = js.native
+  var UserGroupIdsToAdd: js.UndefOr[UserGroupIdList] = js.undefined
   
   /**
     * The list of user group IDs to remove.
     */
-  var UserGroupIdsToRemove: js.UndefOr[UserGroupIdList] = js.native
+  var UserGroupIdsToRemove: js.UndefOr[UserGroupIdList] = js.undefined
 }
 object UserGroupsUpdateStatus {
   

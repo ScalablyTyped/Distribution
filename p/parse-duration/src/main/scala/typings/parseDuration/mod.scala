@@ -2,17 +2,18 @@ package typings.parseDuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parse-duration", JSImport.Default)
+  @JSImport("parse-duration", JSImport.Namespace)
   @js.native
-  def default(str: String): Double | Null = js.native
-  @JSImport("parse-duration", JSImport.Default)
-  @js.native
-  def default(str: String, format: Units): Double | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(str: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  @scala.inline
+  def default(str: String, format: Units): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
   /* Rewritten from type alias, can be one of: 
     - typings.parseDuration.parseDurationStrings.nanosecond

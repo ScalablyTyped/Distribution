@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A <style> element. It inherits properties and methods from its parent, HTMLElement, and from LinkStyle. */
 @js.native
 trait HTMLStyleElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with LinkStyle {
   
   /* InferMemberOverrides */

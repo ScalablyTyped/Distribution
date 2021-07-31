@@ -9,30 +9,27 @@ import typings.vue.vueMod.Vue
 import typings.vueServerRenderer.vueServerRendererStrings.once
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vue-server-renderer", "createBundleRenderer")
+  @JSImport("vue-server-renderer", JSImport.Namespace)
   @js.native
-  def createBundleRenderer(bundle: String): BundleRenderer = js.native
-  @JSImport("vue-server-renderer", "createBundleRenderer")
-  @js.native
-  def createBundleRenderer(bundle: String, options: BundleRendererOptions): BundleRenderer = js.native
-  @JSImport("vue-server-renderer", "createBundleRenderer")
-  @js.native
-  def createBundleRenderer(bundle: js.Object): BundleRenderer = js.native
-  @JSImport("vue-server-renderer", "createBundleRenderer")
-  @js.native
-  def createBundleRenderer(bundle: js.Object, options: BundleRendererOptions): BundleRenderer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-server-renderer", "createRenderer")
-  @js.native
-  def createRenderer(): Renderer = js.native
-  @JSImport("vue-server-renderer", "createRenderer")
-  @js.native
-  def createRenderer(options: RendererOptions): Renderer = js.native
+  @scala.inline
+  def createBundleRenderer(bundle: String): BundleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any]).asInstanceOf[BundleRenderer]
+  @scala.inline
+  def createBundleRenderer(bundle: String, options: BundleRendererOptions): BundleRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BundleRenderer]
+  @scala.inline
+  def createBundleRenderer(bundle: js.Object): BundleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any]).asInstanceOf[BundleRenderer]
+  @scala.inline
+  def createBundleRenderer(bundle: js.Object, options: BundleRendererOptions): BundleRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BundleRenderer]
+  
+  @scala.inline
+  def createRenderer(): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[Renderer]
+  @scala.inline
+  def createRenderer(options: RendererOptions): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[Renderer]
   
   @js.native
   trait BundleRenderer extends StObject {
@@ -46,16 +43,17 @@ object mod {
     def renderToString(context: js.Object, callback: RenderCallback): Unit = js.native
   }
   
-  @js.native
-  trait BundleRendererOptions extends RendererOptions {
+  trait BundleRendererOptions
+    extends StObject
+       with RendererOptions {
     
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
-    var clientManifest: js.UndefOr[js.Object] = js.native
+    var clientManifest: js.UndefOr[js.Object] = js.undefined
     
-    var runInNewContext: js.UndefOr[Boolean | once] = js.native
+    var runInNewContext: js.UndefOr[Boolean | once] = js.undefined
     
-    var serializer: js.UndefOr[js.Function1[/* state */ js.Object, String]] = js.native
+    var serializer: js.UndefOr[js.Function1[/* state */ js.Object, String]] = js.undefined
   }
   object BundleRendererOptions {
     
@@ -125,22 +123,21 @@ object mod {
     def renderToString(vm: Vue, context: js.Object, callback: RenderCallback): Unit = js.native
   }
   
-  @js.native
   trait RendererOptions extends StObject {
     
-    var cache: js.UndefOr[RenderCache] = js.native
+    var cache: js.UndefOr[RenderCache] = js.undefined
     
     var directives: js.UndefOr[
         StringDictionary[js.Function2[/* vnode */ VNode, /* dir */ VNodeDirective, Unit]]
-      ] = js.native
+      ] = js.undefined
     
-    var inject: js.UndefOr[Boolean] = js.native
+    var inject: js.UndefOr[Boolean] = js.undefined
     
-    var shouldPrefetch: js.UndefOr[js.Function2[/* file */ String, /* type */ String, Boolean]] = js.native
+    var shouldPrefetch: js.UndefOr[js.Function2[/* file */ String, /* type */ String, Boolean]] = js.undefined
     
-    var shouldPreload: js.UndefOr[js.Function2[/* file */ String, /* type */ String, Boolean]] = js.native
+    var shouldPreload: js.UndefOr[js.Function2[/* file */ String, /* type */ String, Boolean]] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object RendererOptions {
     

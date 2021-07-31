@@ -3,10 +3,8 @@ package typings.vis.mod
 import typings.vis.anon.DrawThreshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsScaling extends StObject {
   
   var customScalingFunction: js.UndefOr[
@@ -17,13 +15,13 @@ trait OptionsScaling extends StObject {
       /* value */ js.UndefOr[Double], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var label: js.UndefOr[Boolean | DrawThreshold] = js.native
+  var label: js.UndefOr[Boolean | DrawThreshold] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
 }
 object OptionsScaling {
   

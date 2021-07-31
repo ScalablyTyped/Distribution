@@ -2,17 +2,17 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IngestPutPipelineParams extends GenericParams {
+trait IngestPutPipelineParams
+  extends StObject
+     with GenericParams {
   
-  var id: String = js.native
+  var id: String
   
-  var masterTimeout: js.UndefOr[Double] = js.native
+  var masterTimeout: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object IngestPutPipelineParams {
   

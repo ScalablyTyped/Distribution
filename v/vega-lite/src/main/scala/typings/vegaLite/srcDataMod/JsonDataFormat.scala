@@ -3,12 +3,11 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.vegaLiteStrings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonDataFormat
-  extends DataFormatBase
+  extends StObject
+     with DataFormatBase
      with DataFormat {
   
   /**
@@ -17,10 +16,10 @@ trait JsonDataFormat
     * For example `"property": "values.features"` is equivalent to retrieving `json.values.features`
     * from the loaded JSON object.
     */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_JsonDataFormat: js.UndefOr[json] = js.native
+  var type_JsonDataFormat: js.UndefOr[json] = js.undefined
 }
 object JsonDataFormat {
   

@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.Ticker")
 @js.native
 class Ticker ()
-  extends typings.pixiJs.PIXI.Ticker
+  extends StObject
+     with typings.pixiJs.PIXI.Ticker
 object Ticker {
   
   @JSGlobal("PIXI.Ticker")

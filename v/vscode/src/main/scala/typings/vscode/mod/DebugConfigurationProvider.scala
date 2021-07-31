@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugConfigurationProvider extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait DebugConfigurationProvider extends StObject {
       /* token */ js.UndefOr[CancellationToken], 
       ProviderResult[js.Array[DebugConfiguration]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Resolves a [debug configuration](#DebugConfiguration) by filling in missing values or by adding/changing/removing attributes.
@@ -43,7 +41,7 @@ trait DebugConfigurationProvider extends StObject {
       /* token */ js.UndefOr[CancellationToken], 
       ProviderResult[DebugConfiguration]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This hook is directly called after 'resolveDebugConfiguration' but with all variables substituted.
@@ -65,7 +63,7 @@ trait DebugConfigurationProvider extends StObject {
       /* token */ js.UndefOr[CancellationToken], 
       ProviderResult[DebugConfiguration]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object DebugConfigurationProvider {
   

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/build-types |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 253 |
+| # releases         | 3 |
+| # dependents       | 0 |
+| # downloads        | 229 |
 | # stars            | 0 |
 
 ## Links

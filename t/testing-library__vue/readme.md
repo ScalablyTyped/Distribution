@@ -10,9 +10,9 @@ Simple and complete Vue DOM testing utilities that encourage good testing practi
 | ------------------ | :-------------: |
 | Full name          | @testing-library/vue |
 | Keywords           | vue.js, vue.js testing, vue, vue testing, vue.js 2, vue.js 2 testing, vue 2, vue 2 testing |
-| # releases         | 24 |
+| # releases         | 38 |
 | # dependents       | 2 |
-| # downloads        | 580266 |
+| # downloads        | 850405 |
 | # stars            | 0 |
 
 ## Links

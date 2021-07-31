@@ -3,75 +3,73 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 import typings.googleapis.anon.FederatedId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Respone of setting the account information.
   */
-@js.native
 trait SchemaSetAccountInfoResponse extends StObject {
   
   /**
     * The name of the user.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email of the user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * If email has been verified.
     */
-  var emailVerified: js.UndefOr[Boolean] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be expiration time of
     * STS id token in seconds.
     */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /**
     * The Gitkit id token to login the newly sign up user.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#SetAccountInfoResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The local ID of the user.
     */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /**
     * The new email the user attempts to change to.
     */
-  var newEmail: js.UndefOr[String] = js.native
+  var newEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s hashed password.
     */
-  var passwordHash: js.UndefOr[String] = js.native
+  var passwordHash: js.UndefOr[String] = js.undefined
   
   /**
     * The photo url of the user.
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s profiles at the associated IdPs.
     */
-  var providerUserInfo: js.UndefOr[js.Array[FederatedId]] = js.native
+  var providerUserInfo: js.UndefOr[js.Array[FederatedId]] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be refresh token.
     */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSetAccountInfoResponse {
   

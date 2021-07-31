@@ -3,7 +3,6 @@ package typings.vueCompilerSfc
 import typings.vueCompilerSfc.mod.PreprocessLang
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueCompilerSfcStrings {
@@ -34,7 +33,9 @@ object vueCompilerSfcStrings {
   def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait less extends PreprocessLang
+  sealed trait less
+    extends StObject
+       with PreprocessLang
   @scala.inline
   def less: less = "less".asInstanceOf[less]
   
@@ -49,7 +50,9 @@ object vueCompilerSfcStrings {
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait sass extends PreprocessLang
+  sealed trait sass
+    extends StObject
+       with PreprocessLang
   @scala.inline
   def sass: sass = "sass".asInstanceOf[sass]
   
@@ -59,7 +62,9 @@ object vueCompilerSfcStrings {
   def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait scss extends PreprocessLang
+  sealed trait scss
+    extends StObject
+       with PreprocessLang
   @scala.inline
   def scss: scss = "scss".asInstanceOf[scss]
   
@@ -69,7 +74,9 @@ object vueCompilerSfcStrings {
   def space: space = "space".asInstanceOf[space]
   
   @js.native
-  sealed trait styl extends PreprocessLang
+  sealed trait styl
+    extends StObject
+       with PreprocessLang
   @scala.inline
   def styl: styl = "styl".asInstanceOf[styl]
   
@@ -79,7 +86,9 @@ object vueCompilerSfcStrings {
   def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait stylus extends PreprocessLang
+  sealed trait stylus
+    extends StObject
+       with PreprocessLang
   @scala.inline
   def stylus: stylus = "stylus".asInstanceOf[stylus]
   

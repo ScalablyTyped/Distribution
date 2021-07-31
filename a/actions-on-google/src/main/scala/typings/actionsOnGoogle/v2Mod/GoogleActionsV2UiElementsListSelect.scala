@@ -2,28 +2,26 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsListSelect extends StObject {
   
   /**
     * min: 2 max: 30
     */
-  var items: js.UndefOr[js.Array[GoogleActionsV2UiElementsListSelectListItem]] = js.native
+  var items: js.UndefOr[js.Array[GoogleActionsV2UiElementsListSelectListItem]] = js.undefined
   
   /**
     * Subtitle of the list.
     * Optional.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Overall title of the list.
     * Optional.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsListSelect {
   

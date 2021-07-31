@@ -2,13 +2,11 @@ package typings.winrtUwp.Windows.UI.Input.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialInteraction extends StObject {
   
-  var sourceState: js.Any = js.native
+  var sourceState: js.Any
 }
 object SpatialInteraction {
   

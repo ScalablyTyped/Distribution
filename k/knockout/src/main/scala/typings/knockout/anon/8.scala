@@ -5,17 +5,15 @@ import typings.knockout.mod.MaybeSubscribable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `8` extends StObject {
   
   def init(
     element: HTMLElement,
     valueAccessor: js.Function0[MaybeSubscribable[String]],
     allBindings: AllBindings
-  ): Unit = js.native
+  ): Unit
 }
 object `8` {
   

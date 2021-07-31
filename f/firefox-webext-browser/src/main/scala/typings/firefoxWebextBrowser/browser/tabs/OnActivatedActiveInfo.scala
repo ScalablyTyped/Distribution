@@ -2,20 +2,18 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnActivatedActiveInfo extends StObject {
   
   /** The ID of the tab that was previously active, if that tab is still open. */
-  var previousTabId: js.UndefOr[Double] = js.native
+  var previousTabId: js.UndefOr[Double] = js.undefined
   
   /** The ID of the tab that has become active. */
-  var tabId: Double = js.native
+  var tabId: Double
   
   /** The ID of the window the active tab changed inside of. */
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object OnActivatedActiveInfo {
   

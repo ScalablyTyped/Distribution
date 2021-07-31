@@ -3,26 +3,25 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`25`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceExpression
-  extends JSChildNode
+  extends StObject
      with Node2
+     with JSChildNode
      with SSRCodegenNode {
   
-  var expressions: js.Array[JSChildNode] = js.native
+  var expressions: js.Array[JSChildNode]
   
   @JSName("type")
-  var type_SequenceExpression: `25` = js.native
+  var type_SequenceExpression: `25`
 }
 object SequenceExpression {
   
   @scala.inline
-  def apply(expressions: js.Array[JSChildNode], loc: SourceLocation, `type`: `25`): SequenceExpression = {
+  def apply(expressions: js.Array[JSChildNode], loc: SourceLocation): SequenceExpression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(25)
     __obj.asInstanceOf[SequenceExpression]
   }
   

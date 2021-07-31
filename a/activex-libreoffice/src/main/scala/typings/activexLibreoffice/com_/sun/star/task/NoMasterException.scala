@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is thrown when a master password is needed but not available/correct. */
-@js.native
-trait NoMasterException extends Exception {
+trait NoMasterException
+  extends StObject
+     with Exception {
   
   /** specifies the mode in which password should be queried. */
-  var Mode: PasswordRequestMode = js.native
+  var Mode: PasswordRequestMode
 }
 object NoMasterException {
   

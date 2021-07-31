@@ -2,11 +2,12 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallableFunction extends Function {
+trait CallableFunction
+  extends StObject
+     with Function {
   
   /**
     * Calls the function with the specified object as the this value and the elements of specified array as the arguments.
@@ -16,7 +17,7 @@ trait CallableFunction extends Function {
   @JSName("apply")
   def apply[T, R](thisArg: T): R = js.native
   @JSName("apply")
-  def apply[T, A /* <: Array[_] */, R](thisArg: T, args: A): R = js.native
+  def apply[T, A /* <: Array[js.Any] */, R](thisArg: T, args: A): R = js.native
   
   /**
     * For a given function, creates a bound function that has the same body as the original function.
@@ -24,19 +25,19 @@ trait CallableFunction extends Function {
     * @param thisArg The object to be used as the this object.
     * @param args Arguments to bind to the parameters of the function.
     */
-  def bind[T, A /* <: Array[_] */, R](thisArg: T): js.Function1[/* args */ A, R] = js.native
+  def bind[T, A /* <: Array[js.Any] */, R](thisArg: T): js.Function1[/* args */ A, R] = js.native
   def bind[T, AX, R](thisArg: T, args: AX*): js.Function1[/* repeated */ AX, R] = js.native
-  def bind[T, A0, A /* <: Array[_] */, R](thisArg: T, arg0: A0): js.Function1[/* args */ A, R] = js.native
-  def bind[T, A0, A1, A /* <: Array[_] */, R](thisArg: T, arg0: A0, arg1: A1): js.Function1[/* args */ A, R] = js.native
-  def bind[T, A0, A1, A2, A /* <: Array[_] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2): js.Function1[/* args */ A, R] = js.native
-  def bind[T, A0, A1, A2, A3, A /* <: Array[_] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2, arg3: A3): js.Function1[/* args */ A, R] = js.native
+  def bind[T, A0, A /* <: Array[js.Any] */, R](thisArg: T, arg0: A0): js.Function1[/* args */ A, R] = js.native
+  def bind[T, A0, A1, A /* <: Array[js.Any] */, R](thisArg: T, arg0: A0, arg1: A1): js.Function1[/* args */ A, R] = js.native
+  def bind[T, A0, A1, A2, A /* <: Array[js.Any] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2): js.Function1[/* args */ A, R] = js.native
+  def bind[T, A0, A1, A2, A3, A /* <: Array[js.Any] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2, arg3: A3): js.Function1[/* args */ A, R] = js.native
   
   /**
     * Calls the function with the specified object as the this value and the specified rest arguments as the arguments.
     * @param thisArg The object to be used as the this object.
     * @param args Argument values to be passed to the function.
     */
-  def call[T, A /* <: Array[_] */, R](
+  def call[T, A /* <: Array[js.Any] */, R](
     thisArg: T,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type A is not an array type */ args: A
   ): R = js.native

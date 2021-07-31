@@ -5,28 +5,28 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.geoshape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoShapeTransform extends _Transforms {
+trait GeoShapeTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | SignalRef] = js.native
+  var as: js.UndefOr[String | SignalRef] = js.undefined
   
-  var field: js.UndefOr[FieldRef] = js.native
+  var field: js.UndefOr[FieldRef] = js.undefined
   
-  var pointRadius: js.UndefOr[Double | SignalRef | ExprRef] = js.native
+  var pointRadius: js.UndefOr[Double | SignalRef | ExprRef] = js.undefined
   
-  var projection: js.UndefOr[ProjectionName] = js.native
+  var projection: js.UndefOr[ProjectionName] = js.undefined
   
-  var `type`: geoshape = js.native
+  var `type`: geoshape
 }
 object GeoShapeTransform {
   
   @scala.inline
-  def apply(`type`: geoshape): GeoShapeTransform = {
+  def apply(): GeoShapeTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("geoshape")
     __obj.asInstanceOf[GeoShapeTransform]
   }
   

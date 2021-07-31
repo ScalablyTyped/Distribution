@@ -3,26 +3,124 @@ package typings.uirouterCore
 import typings.std.RegExp
 import typings.uirouterCore.routerMod.UIRouter
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
+import typings.uirouterCore.stateInterfaceMod.TargetStateDef
+import typings.uirouterCore.stateMod.TargetState
 import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.urlInterfaceMod.MatcherUrlRule
 import typings.uirouterCore.urlInterfaceMod.RegExpRule
 import typings.uirouterCore.urlInterfaceMod.StateRule
+import typings.uirouterCore.urlInterfaceMod.UrlParts
 import typings.uirouterCore.urlInterfaceMod.UrlRule
 import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
 import typings.uirouterCore.urlInterfaceMod.UrlRuleMatchFn
+import typings.uirouterCore.urlInterfaceMod.UrlRuleType
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlRuleMod {
   
   @JSImport("@uirouter/core/lib/url/urlRule", "BaseUrlRule")
   @js.native
-  class BaseUrlRule protected () extends UrlRule {
+  class BaseUrlRule protected ()
+    extends StObject
+       with UrlRule {
     def this(`match`: UrlRuleMatchFn) = this()
     def this(`match`: UrlRuleMatchFn, handler: UrlRuleHandlerFn) = this()
+    
+    /**
+      * The rule's ID.
+      *
+      * IDs are auto-assigned when the rule is registered, in increasing order.
+      */
+    /* CompleteClass */
+    @JSName("$id")
+    var $id: Double = js.native
+    
+    /** @internal */
+    /* CompleteClass */
+    var _group: Double = js.native
+    
+    /**
+      * This function is called if the rule matched, and was selected as the "best match".
+      * This function handles the rule match event.
+      *
+      * See [[UrlRuleHandlerFn]] for details
+      */
+    /* CompleteClass */
+    override def handler(): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: js.Any): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: js.Any, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: js.Any, url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: js.Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: Unit, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: Unit, url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
+    /* CompleteClass */
+    override def handler(matchValue: Unit, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+    /**
+      * This function is called if the rule matched, and was selected as the "best match".
+      * This function handles the rule match event.
+      *
+      * See [[UrlRuleHandlerFn]] for details
+      */
+    /* CompleteClass */
+    @JSName("handler")
+    var handler_Original: UrlRuleHandlerFn = js.native
+    
+    /**
+      * This function should match the url and return the match details
+      *
+      * See [[UrlRuleMatchFn]] for details
+      */
+    /* CompleteClass */
+    override def `match`(): js.Any = js.native
+    /* CompleteClass */
+    override def `match`(url: Unit, router: UIRouter): js.Any = js.native
+    /* CompleteClass */
+    override def `match`(url: UrlParts): js.Any = js.native
+    /* CompleteClass */
+    override def `match`(url: UrlParts, router: UIRouter): js.Any = js.native
+    
+    /**
+      * The priority of a given match.
+      *
+      * Sometimes more than one UrlRule might have matched.
+      * This method is used to choose the best match.
+      *
+      * If multiple rules matched, each rule's `matchPriority` is called with the value from [[match]].
+      * The rule with the highest `matchPriority` has its [[handler]] called.
+      */
+    /* CompleteClass */
+    override def matchPriority(`match`: js.Any): Double = js.native
+    
+    /**
+      * This function should match the url and return the match details
+      *
+      * See [[UrlRuleMatchFn]] for details
+      */
+    /* CompleteClass */
+    @JSName("match")
+    var match_Original: UrlRuleMatchFn = js.native
+    
+    /**
+      * The rule's priority (defaults to 0).
+      *
+      * This can be used to explicitly modify the rule's priority.
+      * Higher numbers are higher priority.
+      */
+    /* CompleteClass */
+    var priority: Double = js.native
+    
+    /** The type of the rule */
+    /* CompleteClass */
+    var `type`: UrlRuleType = js.native
   }
   
   @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory")
@@ -145,8 +243,11 @@ object urlRuleMod {
   /* static members */
   object UrlRuleFactory {
     
-    @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory.isUrlRule")
+    @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory")
     @js.native
-    def isUrlRule(obj: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isUrlRule(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
@@ -53,6 +52,10 @@ object modelMod {
   /* static members */
   object Model {
     
+    @JSImport("@pulumi/aws/apigatewayv2/model", "Model")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Model resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,55 +65,49 @@ object modelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Model = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Model = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ModelState): Model = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ModelState): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
     
     /**
       * Returns true if the given object is an instance of Model.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/model", "Model.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/model.Model */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/model.Model */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/model.Model */ Boolean]
   }
   
-  @js.native
   trait ModelArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The content-type for the model, for example, `application/json`. Must be between 1 and 256 characters in length.
       */
-    val contentType: Input[String] = js.native
+    val contentType: Input[String]
     
     /**
       * The description of the model. Must be between 1 and 128 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the model. Must be alphanumeric. Must be between 1 and 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04) model. Must be less than or equal to 32768 characters in length.
       */
-    val schema: Input[String] = js.native
+    val schema: Input[String]
   }
   object ModelArgs {
     
@@ -146,33 +143,32 @@ object modelMod {
     }
   }
   
-  @js.native
   trait ModelState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The content-type for the model, for example, `application/json`. Must be between 1 and 256 characters in length.
       */
-    val contentType: js.UndefOr[Input[String]] = js.native
+    val contentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the model. Must be between 1 and 128 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the model. Must be alphanumeric. Must be between 1 and 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04) model. Must be less than or equal to 32768 characters in length.
       */
-    val schema: js.UndefOr[Input[String]] = js.native
+    val schema: js.UndefOr[Input[String]] = js.undefined
   }
   object ModelState {
     

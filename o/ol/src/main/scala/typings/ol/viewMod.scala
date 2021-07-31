@@ -14,10 +14,13 @@ import typings.ol.sizeMod.Size
 import typings.ol.viewHintMod.ViewHint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewMod {
+  
+  @JSImport("ol/View", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/View", JSImport.Default)
   @js.native
@@ -25,48 +28,43 @@ object viewMod {
     def this(opt_options: ViewOptions) = this()
   }
   
-  @JSImport("ol/View", "createCenterConstraint")
-  @js.native
-  def createCenterConstraint(options: ViewOptions): Type = js.native
+  @scala.inline
+  def createCenterConstraint(options: ViewOptions): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("createCenterConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  @JSImport("ol/View", "createResolutionConstraint")
-  @js.native
-  def createResolutionConstraint(options: ViewOptions): js.Any = js.native
+  @scala.inline
+  def createResolutionConstraint(options: ViewOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolutionConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ol/View", "createRotationConstraint")
-  @js.native
-  def createRotationConstraint(options: ViewOptions): typings.ol.rotationconstraintMod.Type = js.native
+  @scala.inline
+  def createRotationConstraint(options: ViewOptions): typings.ol.rotationconstraintMod.Type = ^.asInstanceOf[js.Dynamic].applyDynamic("createRotationConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ol.rotationconstraintMod.Type]
   
-  @JSImport("ol/View", "isNoopAnimation")
-  @js.native
-  def isNoopAnimation(animation: Animation): Boolean = js.native
+  @scala.inline
+  def isNoopAnimation(animation: Animation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoopAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait Animation extends StObject {
     
-    var anchor: js.UndefOr[Coordinate] = js.native
+    var anchor: js.UndefOr[Coordinate] = js.undefined
     
-    def callback(p0: Boolean): Unit = js.native
+    def callback(p0: Boolean): Unit
     
-    var complete: Boolean = js.native
+    var complete: Boolean
     
-    var duration: Double = js.native
+    var duration: Double
     
-    def easing(p0: Double): Double = js.native
+    def easing(p0: Double): Double
     
-    var sourceCenter: js.UndefOr[Coordinate] = js.native
+    var sourceCenter: js.UndefOr[Coordinate] = js.undefined
     
-    var sourceResolution: js.UndefOr[Double] = js.native
+    var sourceResolution: js.UndefOr[Double] = js.undefined
     
-    var sourceRotation: js.UndefOr[Double] = js.native
+    var sourceRotation: js.UndefOr[Double] = js.undefined
     
-    var start: Double = js.native
+    var start: Double
     
-    var targetCenter: js.UndefOr[Coordinate] = js.native
+    var targetCenter: js.UndefOr[Coordinate] = js.undefined
     
-    var targetResolution: js.UndefOr[Double] = js.native
+    var targetResolution: js.UndefOr[Double] = js.undefined
     
-    var targetRotation: js.UndefOr[Double] = js.native
+    var targetRotation: js.UndefOr[Double] = js.undefined
   }
   object Animation {
     
@@ -153,22 +151,21 @@ object viewMod {
     }
   }
   
-  @js.native
   trait AnimationOptions extends StObject {
     
-    var anchor: js.UndefOr[Coordinate] = js.native
+    var anchor: js.UndefOr[Coordinate] = js.undefined
     
-    var center: js.UndefOr[Coordinate] = js.native
+    var center: js.UndefOr[Coordinate] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* p0 */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* p0 */ Double, Double]] = js.undefined
     
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object AnimationOptions {
     
@@ -231,49 +228,76 @@ object viewMod {
     }
   }
   
-  @js.native
   trait Constraints extends StObject {
     
-    def center(p0: js.UndefOr[scala.Nothing], p1: Double, p2: Size): js.UndefOr[Coordinate] = js.native
-    def center(p0: js.UndefOr[scala.Nothing], p1: Double, p2: Size, p3: Boolean): js.UndefOr[Coordinate] = js.native
-    def center(p0: Coordinate, p1: Double, p2: Size): js.UndefOr[Coordinate] = js.native
-    def center(p0: Coordinate, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Coordinate] = js.native
+    def center(p0: Unit, p1: Double, p2: Size): js.UndefOr[Coordinate]
+    def center(p0: Unit, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Coordinate]
+    def center(p0: Coordinate, p1: Double, p2: Size): js.UndefOr[Coordinate]
+    def center(p0: Coordinate, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Coordinate]
     @JSName("center")
-    var center_Original: Type = js.native
+    var center_Original: Type
     
-    def resolution(p0: js.UndefOr[scala.Nothing], p1: Double, p2: Size): js.UndefOr[Double] = js.native
-    def resolution(p0: js.UndefOr[scala.Nothing], p1: Double, p2: Size, p3: Boolean): js.UndefOr[Double] = js.native
-    def resolution(p0: Double, p1: Double, p2: Size): js.UndefOr[Double] = js.native
-    def resolution(p0: Double, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Double] = js.native
+    def resolution(p0: Double, p1: Double, p2: Size): js.UndefOr[Double]
+    def resolution(p0: Double, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Double]
+    def resolution(p0: Unit, p1: Double, p2: Size): js.UndefOr[Double]
+    def resolution(p0: Unit, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Double]
     @JSName("resolution")
-    var resolution_Original: typings.ol.resolutionconstraintMod.Type = js.native
+    var resolution_Original: typings.ol.resolutionconstraintMod.Type
     
-    def rotation(): js.UndefOr[Double] = js.native
-    def rotation(p0: js.UndefOr[scala.Nothing], p1: Boolean): js.UndefOr[Double] = js.native
-    def rotation(p0: Double): js.UndefOr[Double] = js.native
-    def rotation(p0: Double, p1: Boolean): js.UndefOr[Double] = js.native
+    def rotation(): js.UndefOr[Double]
+    def rotation(p0: Double): js.UndefOr[Double]
+    def rotation(p0: Double, p1: Boolean): js.UndefOr[Double]
+    def rotation(p0: Unit, p1: Boolean): js.UndefOr[Double]
     @JSName("rotation")
-    var rotation_Original: typings.ol.rotationconstraintMod.Type = js.native
+    var rotation_Original: typings.ol.rotationconstraintMod.Type
+  }
+  object Constraints {
+    
+    @scala.inline
+    def apply(
+      center: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Coordinate],
+      resolution: (/* p0 */ js.UndefOr[Double], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Double],
+      rotation: (/* p0 */ js.UndefOr[Double], /* p1 */ js.UndefOr[Boolean]) => js.UndefOr[Double]
+    ): Constraints = {
+      val __obj = js.Dynamic.literal(center = js.Any.fromFunction4(center), resolution = js.Any.fromFunction4(resolution), rotation = js.Any.fromFunction2(rotation))
+      __obj.asInstanceOf[Constraints]
+    }
+    
+    @scala.inline
+    implicit class ConstraintsMutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCenter(
+        value: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Coordinate]
+      ): Self = StObject.set(x, "center", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setResolution(
+        value: (/* p0 */ js.UndefOr[Double], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Double]
+      ): Self = StObject.set(x, "resolution", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setRotation(value: (/* p0 */ js.UndefOr[Double], /* p1 */ js.UndefOr[Boolean]) => js.UndefOr[Double]): Self = StObject.set(x, "rotation", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait FitOptions extends StObject {
     
-    var callback: js.UndefOr[js.Function1[/* p0 */ Boolean, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* p0 */ Boolean, Unit]] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* p0 */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* p0 */ Double, Double]] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var nearest: js.UndefOr[Boolean] = js.native
+    var nearest: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[js.Array[Double]] = js.native
+    var padding: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object FitOptions {
     
@@ -339,18 +363,17 @@ object viewMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var center: Coordinate = js.native
+    var center: Coordinate
     
-    var projection: typings.ol.projectionMod.default = js.native
+    var projection: typings.ol.projectionMod.default
     
-    var resolution: Double = js.native
+    var resolution: Double
     
-    var rotation: Double = js.native
+    var rotation: Double
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object State {
     
@@ -500,34 +523,26 @@ object viewMod {
       * to a stable one if needed (depending on its constraints).
       */
     def endInteraction(): Unit = js.native
-    def endInteraction(
-      opt_duration: js.UndefOr[scala.Nothing],
-      opt_resolutionDirection: js.UndefOr[scala.Nothing],
-      opt_anchor: Coordinate
-    ): Unit = js.native
-    def endInteraction(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double): Unit = js.native
-    def endInteraction(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
     def endInteraction(opt_duration: Double): Unit = js.native
-    def endInteraction(opt_duration: Double, opt_resolutionDirection: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
     def endInteraction(opt_duration: Double, opt_resolutionDirection: Double): Unit = js.native
     def endInteraction(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
+    def endInteraction(opt_duration: Double, opt_resolutionDirection: Unit, opt_anchor: Coordinate): Unit = js.native
+    def endInteraction(opt_duration: Unit, opt_resolutionDirection: Double): Unit = js.native
+    def endInteraction(opt_duration: Unit, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
+    def endInteraction(opt_duration: Unit, opt_resolutionDirection: Unit, opt_anchor: Coordinate): Unit = js.native
     
     /**
       * Notify the View that an interaction has ended. The view state will be resolved
       * to a stable one if needed (depending on its constraints).
       */
     def endInteractionInternal(): Unit = js.native
-    def endInteractionInternal(
-      opt_duration: js.UndefOr[scala.Nothing],
-      opt_resolutionDirection: js.UndefOr[scala.Nothing],
-      opt_anchor: Coordinate
-    ): Unit = js.native
-    def endInteractionInternal(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double): Unit = js.native
-    def endInteractionInternal(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
     def endInteractionInternal(opt_duration: Double): Unit = js.native
-    def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
     def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: Double): Unit = js.native
     def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
+    def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: Unit, opt_anchor: Coordinate): Unit = js.native
+    def endInteractionInternal(opt_duration: Unit, opt_resolutionDirection: Double): Unit = js.native
+    def endInteractionInternal(opt_duration: Unit, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
+    def endInteractionInternal(opt_duration: Unit, opt_resolutionDirection: Unit, opt_anchor: Coordinate): Unit = js.native
     
     def fit(geometryOrExtent: Extent): Unit = js.native
     def fit(geometryOrExtent: Extent, opt_options: FitOptions): Unit = js.native
@@ -564,7 +579,7 @@ object viewMod {
       * Get a valid position for the view center according to the current constraints.
       */
     def getConstrainedCenter(): js.UndefOr[Coordinate] = js.native
-    def getConstrainedCenter(targetCenter: js.UndefOr[scala.Nothing], opt_targetResolution: Double): js.UndefOr[Coordinate] = js.native
+    def getConstrainedCenter(targetCenter: Unit, opt_targetResolution: Double): js.UndefOr[Coordinate] = js.native
     def getConstrainedCenter(targetCenter: Coordinate): js.UndefOr[Coordinate] = js.native
     def getConstrainedCenter(targetCenter: Coordinate, opt_targetResolution: Double): js.UndefOr[Coordinate] = js.native
     
@@ -572,17 +587,17 @@ object viewMod {
       * Get a valid resolution according to the current view constraints.
       */
     def getConstrainedResolution(): js.UndefOr[Double] = js.native
-    def getConstrainedResolution(targetResolution: js.UndefOr[scala.Nothing], opt_direction: Double): js.UndefOr[Double] = js.native
     def getConstrainedResolution(targetResolution: Double): js.UndefOr[Double] = js.native
     def getConstrainedResolution(targetResolution: Double, opt_direction: Double): js.UndefOr[Double] = js.native
+    def getConstrainedResolution(targetResolution: Unit, opt_direction: Double): js.UndefOr[Double] = js.native
     
     /**
       * Get a valid zoom level according to the current view constraints.
       */
     def getConstrainedZoom(): js.UndefOr[Double] = js.native
-    def getConstrainedZoom(targetZoom: js.UndefOr[scala.Nothing], opt_direction: Double): js.UndefOr[Double] = js.native
     def getConstrainedZoom(targetZoom: Double): js.UndefOr[Double] = js.native
     def getConstrainedZoom(targetZoom: Double, opt_direction: Double): js.UndefOr[Double] = js.native
+    def getConstrainedZoom(targetZoom: Unit, opt_direction: Double): js.UndefOr[Double] = js.native
     
     def getConstraints(): Constraints = js.native
     
@@ -711,17 +726,13 @@ object viewMod {
       * without animation.
       */
     def resolveConstraints(): Unit = js.native
-    def resolveConstraints(
-      opt_duration: js.UndefOr[scala.Nothing],
-      opt_resolutionDirection: js.UndefOr[scala.Nothing],
-      opt_anchor: Coordinate
-    ): Unit = js.native
-    def resolveConstraints(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double): Unit = js.native
-    def resolveConstraints(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
     def resolveConstraints(opt_duration: Double): Unit = js.native
-    def resolveConstraints(opt_duration: Double, opt_resolutionDirection: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
     def resolveConstraints(opt_duration: Double, opt_resolutionDirection: Double): Unit = js.native
     def resolveConstraints(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
+    def resolveConstraints(opt_duration: Double, opt_resolutionDirection: Unit, opt_anchor: Coordinate): Unit = js.native
+    def resolveConstraints(opt_duration: Unit, opt_resolutionDirection: Double): Unit = js.native
+    def resolveConstraints(opt_duration: Unit, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
+    def resolveConstraints(opt_duration: Unit, opt_resolutionDirection: Unit, opt_anchor: Coordinate): Unit = js.native
     
     /**
       * Set the center of the current view. Any extent constraint will apply.
@@ -790,48 +801,47 @@ object viewMod {
     def updateAnimations_(): Unit = js.native
   }
   
-  @js.native
   trait ViewOptions extends StObject {
     
-    var center: js.UndefOr[Coordinate] = js.native
+    var center: js.UndefOr[Coordinate] = js.undefined
     
-    var constrainOnlyCenter: js.UndefOr[Boolean] = js.native
+    var constrainOnlyCenter: js.UndefOr[Boolean] = js.undefined
     
-    var constrainResolution: js.UndefOr[Boolean] = js.native
+    var constrainResolution: js.UndefOr[Boolean] = js.undefined
     
-    var constrainRotation: js.UndefOr[Boolean | Double] = js.native
+    var constrainRotation: js.UndefOr[Boolean | Double] = js.undefined
     
-    var enableRotation: js.UndefOr[Boolean] = js.native
+    var enableRotation: js.UndefOr[Boolean] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var multiWorld: js.UndefOr[Boolean] = js.native
+    var multiWorld: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
     
-    var resolutions: js.UndefOr[js.Array[Double]] = js.native
+    var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var showFullExtent: js.UndefOr[Boolean] = js.native
+    var showFullExtent: js.UndefOr[Boolean] = js.undefined
     
-    var smoothExtentConstraint: js.UndefOr[Boolean] = js.native
+    var smoothExtentConstraint: js.UndefOr[Boolean] = js.undefined
     
-    var smoothResolutionConstraint: js.UndefOr[Boolean] = js.native
+    var smoothResolutionConstraint: js.UndefOr[Boolean] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
     
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
   }
   object ViewOptions {
     

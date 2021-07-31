@@ -2,13 +2,13 @@ package typings.mdast.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Reference extends Association {
+trait Reference
+  extends StObject
+     with Association {
   
-  var referenceType: ReferenceType = js.native
+  var referenceType: ReferenceType
 }
 object Reference {
   

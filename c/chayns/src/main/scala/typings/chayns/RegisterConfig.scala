@@ -2,7 +2,6 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interfaces
   */
 // chayns.register()
-@js.native
 trait RegisterConfig extends StObject {
   
-  var appName: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.undefined
   
-  var autoResize: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
-  var callbackPrefix: js.UndefOr[String] = js.native
+  var callbackPrefix: js.UndefOr[String] = js.undefined
   
-  var cssPrefix: js.UndefOr[String] = js.native
+  var cssPrefix: js.UndefOr[String] = js.undefined
   
-  var initialHeight: js.UndefOr[Double] = js.native
+  var initialHeight: js.UndefOr[Double] = js.undefined
   
-  var strictMode: js.UndefOr[Boolean] = js.native
+  var strictMode: js.UndefOr[Boolean] = js.undefined
 }
 object RegisterConfig {
   

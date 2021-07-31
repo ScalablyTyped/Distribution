@@ -2,13 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditMessageCaptionOptions extends EditMessageReplyMarkupOptions {
+trait EditMessageCaptionOptions
+  extends StObject
+     with EditMessageReplyMarkupOptions {
   
-  var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.native
+  var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.undefined
 }
 object EditMessageCaptionOptions {
   

@@ -3,20 +3,18 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Second extends StObject {
   
-  /** The first part of the original map. */ var first: IMapView[String, _] = js.native
+  /** The first part of the original map. */ var first: IMapView[String, js.Any]
   
-  /** The second part of the original map. */ var second: IMapView[String, _] = js.native
+  /** The second part of the original map. */ var second: IMapView[String, js.Any]
 }
 object Second {
   
   @scala.inline
-  def apply(first: IMapView[String, _], second: IMapView[String, _]): Second = {
+  def apply(first: IMapView[String, js.Any], second: IMapView[String, js.Any]): Second = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
     __obj.asInstanceOf[Second]
   }
@@ -25,9 +23,9 @@ object Second {
   implicit class SecondMutableBuilder[Self <: Second] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFirst(value: IMapView[String, _]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    def setFirst(value: IMapView[String, js.Any]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecond(value: IMapView[String, _]): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    def setSecond(value: IMapView[String, js.Any]): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
   }
 }

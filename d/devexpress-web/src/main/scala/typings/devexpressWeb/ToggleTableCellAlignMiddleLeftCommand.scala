@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to apply middle-left alignment for the selected table cells.
   */
-@js.native
-trait ToggleTableCellAlignMiddleLeftCommand extends CommandWithBooleanStateBase {
+trait ToggleTableCellAlignMiddleLeftCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleTableCellAlignMiddleLeftCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableCellAlignMiddleLeftCommand {
   

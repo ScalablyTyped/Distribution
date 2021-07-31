@@ -11,7 +11,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dividerMod extends Shortcut {
@@ -20,24 +19,23 @@ object dividerMod extends Shortcut {
   @js.native
   val default: FC[DividerProps] = js.native
   
-  @js.native
   trait DividerProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dashed: js.UndefOr[Boolean] = js.native
+    var dashed: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[left | right | center] = js.native
+    var orientation: js.UndefOr[left | right | center] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[horizontal | vertical] = js.native
+    var `type`: js.UndefOr[horizontal | vertical] = js.undefined
   }
   object DividerProps {
     

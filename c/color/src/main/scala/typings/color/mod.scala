@@ -28,26 +28,27 @@ import typings.color.colorStrings.xyz
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("color", JSImport.Namespace)
   @js.native
-  val ^ : ColorConstructor = js.native
+  val ^ : js.Object & ColorConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("color", JSImport.Namespace)
   @js.native
-  class Class[T /* <: ColorParam */] () extends Color[T] {
+  class Class[T /* <: ColorParam */] ()
+    extends StObject
+       with Color[T] {
     def this(obj: T) = this()
     def this(
       obj: T,
       model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
     ) = this()
     def this(
-      obj: js.UndefOr[scala.Nothing],
+      obj: Unit,
       model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
     ) = this()
   }
@@ -213,10 +214,11 @@ object mod extends Shortcut {
   
   @js.native
   trait ColorConstructor
-    extends Instantiable0[Color[ColorParam]]
+    extends StObject
+       with Instantiable0[Color[ColorParam]]
        with Instantiable1[/* obj */ ColorParam, Color[ColorParam]]
        with Instantiable2[
-          js.UndefOr[/* obj */ ColorParam], 
+          (/* obj */ ColorParam) | (/* obj */ Unit), 
           rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab, 
           Color[ColorParam]
         ] {
@@ -228,7 +230,7 @@ object mod extends Shortcut {
       model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
     ): Color[T] = js.native
     def apply[T /* <: ColorParam */](
-      obj: js.UndefOr[scala.Nothing],
+      obj: Unit,
       model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
     ): Color[T] = js.native
     
@@ -273,8 +275,8 @@ object mod extends Shortcut {
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias color.color.ColorParam */ js.Object
   ]) | String | ArrayLike[Double] | Double | StringDictionary[js.Any]
   
-  type _To = ColorConstructor
+  type _To = js.Object & ColorConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ColorConstructor = ^
+  override def _to: js.Object & ColorConstructor = ^
 }

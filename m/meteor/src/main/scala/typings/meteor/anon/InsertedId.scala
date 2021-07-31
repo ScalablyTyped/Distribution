@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertedId extends StObject {
   
-  var insertedId: js.UndefOr[String] = js.native
+  var insertedId: js.UndefOr[String] = js.undefined
   
-  var numberAffected: js.UndefOr[Double] = js.native
+  var numberAffected: js.UndefOr[Double] = js.undefined
 }
 object InsertedId {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AntennaDownlinkDemodDecodeConfig extends StObject {
   
   /**
     * Information about the decode Config.
     */
-  var decodeConfig: DecodeConfig = js.native
+  var decodeConfig: DecodeConfig
   
   /**
     * Information about the demodulation Config.
     */
-  var demodulationConfig: DemodulationConfig = js.native
+  var demodulationConfig: DemodulationConfig
   
   /**
     * Information about the spectral Config.
     */
-  var spectrumConfig: SpectrumConfig = js.native
+  var spectrumConfig: SpectrumConfig
 }
 object AntennaDownlinkDemodDecodeConfig {
   

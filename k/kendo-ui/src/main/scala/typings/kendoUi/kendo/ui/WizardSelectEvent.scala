@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.wizard.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WizardSelectEvent extends WizardEvent {
+trait WizardSelectEvent
+  extends StObject
+     with WizardEvent {
   
-  var button: js.UndefOr[Button] = js.native
+  var button: js.UndefOr[Button] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var step: js.UndefOr[Step] = js.native
+  var step: js.UndefOr[Step] = js.undefined
   
-  var stepper: js.UndefOr[Stepper] = js.native
+  var stepper: js.UndefOr[Stepper] = js.undefined
 }
 object WizardSelectEvent {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminSetUserMFAPreferenceRequest extends StObject {
   
   /**
     * The SMS text message MFA settings.
     */
-  var SMSMfaSettings: js.UndefOr[SMSMfaSettingsType] = js.native
+  var SMSMfaSettings: js.UndefOr[SMSMfaSettingsType] = js.undefined
   
   /**
     * The time-based one-time password software token MFA settings.
     */
-  var SoftwareTokenMfaSettings: js.UndefOr[SoftwareTokenMfaSettingsType] = js.native
+  var SoftwareTokenMfaSettings: js.UndefOr[SoftwareTokenMfaSettingsType] = js.undefined
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user pool username or alias.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminSetUserMFAPreferenceRequest {
   

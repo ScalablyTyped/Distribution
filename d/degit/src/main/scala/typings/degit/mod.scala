@@ -7,14 +7,16 @@ import typings.degit.degitStrings.warn
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("degit", JSImport.Default)
+  @JSImport("degit", JSImport.Namespace)
   @js.native
-  def default(src: String, opts: Options): Degit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(src: String, opts: Options): Degit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Degit]
   
   @JSImport("degit", "Degit")
   @js.native
@@ -38,14 +40,13 @@ object mod {
     def remove(dir: String, dest: String, action: RemoveAction): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait Action extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Action {
     
@@ -75,19 +76,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait DegitAction extends Action {
+  trait DegitAction
+    extends StObject
+       with Action {
     
     @JSName("action")
-    var action_DegitAction: clone = js.native
+    var action_DegitAction: clone
     
-    var src: String = js.native
+    var src: String
   }
   object DegitAction {
     
     @scala.inline
-    def apply(action: clone, src: String): DegitAction = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    def apply(src: String): DegitAction = {
+      val __obj = js.Dynamic.literal(action = "clone", src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[DegitAction]
     }
     
@@ -136,16 +138,15 @@ object mod {
     def UNSUPPORTED_HOST: typings.degit.degitStrings.UNSUPPORTED_HOST = "UNSUPPORTED_HOST".asInstanceOf[typings.degit.degitStrings.UNSUPPORTED_HOST]
   }
   
-  @js.native
   trait Info extends StObject {
     
-    val code: String = js.native
+    val code: String
     
-    val dest: String = js.native
+    val dest: String
     
-    val message: String = js.native
+    val message: String
     
-    val repo: Degit = js.native
+    val repo: Degit
   }
   object Info {
     
@@ -222,28 +223,27 @@ object mod {
     def USING_CACHE: typings.degit.degitStrings.USING_CACHE = "USING_CACHE".asInstanceOf[typings.degit.degitStrings.USING_CACHE]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default undefined
       */
-    var mode: js.UndefOr[ValidModes] = js.native
+    var mode: js.UndefOr[ValidModes] = js.undefined
     
     /**
       * @default false
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -282,19 +282,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait RemoveAction extends Action {
+  trait RemoveAction
+    extends StObject
+       with Action {
     
     @JSName("action")
-    var action_RemoveAction: remove = js.native
+    var action_RemoveAction: remove
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
   }
   object RemoveAction {
     
     @scala.inline
-    def apply(action: remove, files: js.Array[String]): RemoveAction = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
+    def apply(files: js.Array[String]): RemoveAction = {
+      val __obj = js.Dynamic.literal(action = "remove", files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveAction]
     }
     

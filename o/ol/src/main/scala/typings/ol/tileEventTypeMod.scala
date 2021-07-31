@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileEventTypeMod {
@@ -12,13 +11,13 @@ object tileEventTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TileEventType with String] = js.native
+    def apply(value: String): js.UndefOr[TileEventType & String] = js.native
     
-    /* "tileloadend" */ val TILELOADEND: typings.ol.tileEventTypeMod.TileEventType.TILELOADEND with String = js.native
+    /* "tileloadend" */ val TILELOADEND: typings.ol.tileEventTypeMod.TileEventType.TILELOADEND & String = js.native
     
-    /* "tileloaderror" */ val TILELOADERROR: typings.ol.tileEventTypeMod.TileEventType.TILELOADERROR with String = js.native
+    /* "tileloaderror" */ val TILELOADERROR: typings.ol.tileEventTypeMod.TileEventType.TILELOADERROR & String = js.native
     
-    /* "tileloadstart" */ val TILELOADSTART: typings.ol.tileEventTypeMod.TileEventType.TILELOADSTART with String = js.native
+    /* "tileloadstart" */ val TILELOADSTART: typings.ol.tileEventTypeMod.TileEventType.TILELOADSTART & String = js.native
   }
   
   @js.native
@@ -28,12 +27,18 @@ object tileEventTypeMod {
   object TileEventType extends StObject {
     
     @js.native
-    sealed trait TILELOADEND extends TileEventType
+    sealed trait TILELOADEND
+      extends StObject
+         with TileEventType
     
     @js.native
-    sealed trait TILELOADERROR extends TileEventType
+    sealed trait TILELOADERROR
+      extends StObject
+         with TileEventType
     
     @js.native
-    sealed trait TILELOADSTART extends TileEventType
+    sealed trait TILELOADSTART
+      extends StObject
+         with TileEventType
   }
 }

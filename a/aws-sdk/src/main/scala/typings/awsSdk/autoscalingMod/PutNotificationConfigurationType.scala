@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutNotificationConfigurationType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The type of event that causes the notification to be sent. To query the notification types supported by Amazon EC2 Auto Scaling, call the DescribeAutoScalingNotificationTypes API.
     */
-  var NotificationTypes: AutoScalingNotificationTypes = js.native
+  var NotificationTypes: AutoScalingNotificationTypes
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (Amazon SNS) topic.
     */
-  var TopicARN: ResourceName = js.native
+  var TopicARN: ResourceName
 }
 object PutNotificationConfigurationType {
   

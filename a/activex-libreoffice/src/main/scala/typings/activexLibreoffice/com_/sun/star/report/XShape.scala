@@ -20,17 +20,17 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XShape extends XReportControlModel {
+trait XShape
+  extends StObject
+     with XReportControlModel {
   
   /** This property can be used to store data that the CustomShapeEngine may use for rendering */
-  var CustomShapeData: String = js.native
+  var CustomShapeData: String
   
   /** This property contains the CustomShapeEngine service name that has to be used for rendering. */
-  var CustomShapeEngine: String = js.native
+  var CustomShapeEngine: String
   
   /**
     * This property describes the geometry of the CustomShape. The CustomShapeEngine that is used should be able to get on with the content of this
@@ -39,20 +39,20 @@ trait XShape extends XReportControlModel {
     * If the CustomShapeEngine property is "com.sun.star.drawing.EnhancedCustomShapeEngine", then this property is containing properties as they are
     * specified in the service {@link com.sun.star.drawing.EnhancedCustomShapeGeometry}
     */
-  var CustomShapeGeometry: SafeArray[PropertyValue] = js.native
+  var CustomShapeGeometry: SafeArray[PropertyValue]
   
   /** determines if the object is opaque or transparent for text. */
-  var Opaque: Boolean = js.native
+  var Opaque: Boolean
   
   /**
     * this property lets you get and set the transformation matrix for this shape.
     *
     * The transformation is a 3x3 homogeneous matrix and can contain translation, rotation, shearing and scaling.
     */
-  var Transformation: HomogenMatrix3 = js.native
+  var Transformation: HomogenMatrix3
   
   /** is used to query or change the ZOrder of this {@link Shape} . */
-  var ZOrder: Double = js.native
+  var ZOrder: Double
 }
 object XShape {
   

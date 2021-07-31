@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateChains extends StObject {
   
   /** Cavium certificate chain corresponding to the attestation. */
-  var caviumCerts: js.UndefOr[js.Array[String]] = js.native
+  var caviumCerts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Google card certificate chain corresponding to the attestation. */
-  var googleCardCerts: js.UndefOr[js.Array[String]] = js.native
+  var googleCardCerts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Google partition certificate chain corresponding to the attestation. */
-  var googlePartitionCerts: js.UndefOr[js.Array[String]] = js.native
+  var googlePartitionCerts: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CertificateChains {
   

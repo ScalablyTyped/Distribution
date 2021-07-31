@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fatal extends StObject {
   
-  var fatal: js.UndefOr[Boolean] = js.native
+  var fatal: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreBOM: js.UndefOr[Boolean] = js.native
+  var ignoreBOM: js.UndefOr[Boolean] = js.undefined
 }
 object Fatal {
   

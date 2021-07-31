@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCreativesResponse extends StObject {
   
   /** The list of creatives. This list will be absent if empty. */
-  var creatives: js.UndefOr[js.Array[Creative]] = js.native
+  var creatives: js.UndefOr[js.Array[Creative]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the page_token field in the subsequent call to `ListCreativesRequest` method to retrieve the next page of results.
     * If this field is null, it means this is the last page.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCreativesResponse {
   

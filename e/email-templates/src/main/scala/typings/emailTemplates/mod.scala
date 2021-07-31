@@ -6,18 +6,18 @@ import typings.htmlToText.mod.HtmlToTextOptions
 import typings.nodemailer.mailerMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("email-templates", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends EmailTemplate[T] {
-    def this(config: EmailConfig[_]) = this()
+  class ^[T] protected ()
+    extends StObject
+       with EmailTemplate[T] {
+    def this(config: EmailConfig[js.Any]) = this()
   }
   
-  @js.native
   trait EmailConfig[T] extends StObject {
     
     /**
@@ -25,7 +25,7 @@ object mod {
       * and in that case it will be automatically set to true.
       * @default false
       */
-    var customRender: js.UndefOr[Boolean] = js.native
+    var customRender: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a function that returns the path to a template file
@@ -33,70 +33,70 @@ object mod {
       */
     var getPath: js.UndefOr[
         js.Function3[/* path */ String, /* template */ String, /* locals */ js.Any, String]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <Https://github.com/werk85/node-html-to-text>
       *
       * configuration object for html-to-text
       */
-    var htmlToText: js.UndefOr[HtmlToTextOptions | `false`] = js.native
+    var htmlToText: js.UndefOr[HtmlToTextOptions | `false`] = js.undefined
     
     /**
       * Set to object to configure and Enable <https://github.com/ladjs/il8n>
       */
-    var i18n: js.UndefOr[js.Any] = js.native
+    var i18n: js.UndefOr[js.Any] = js.undefined
     
     /**
       * <https://github.com/Automattic/juice>
       */
-    var juice: js.UndefOr[Boolean] = js.native
+    var juice: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <https://github.com/Automattic/juice>
       */
-    var juiceResources: js.UndefOr[js.Any] = js.native
+    var juiceResources: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The message <Nodemailer.com/message/>
       */
-    var message: Options = js.native
+    var message: Options
     
     /**
       * Preview the email
       */
-    var preview: js.UndefOr[Boolean | PreviewEmailOpts] = js.native
+    var preview: js.UndefOr[Boolean | PreviewEmailOpts] = js.undefined
     
     /**
       * Pass a custom render function if necessary
       */
-    var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.UndefOr[T], js.Promise[_]]] = js.native
+    var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.UndefOr[T], js.Promise[js.Any]]] = js.undefined
     
     /**
       * Do you really want to send, false for test or development
       */
-    var send: js.UndefOr[Boolean] = js.native
+    var send: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can pass an option to prefix subject lines with a string
       * env === 'production' ? false : `[${env.toUpperCase()}] `; // <--- HERE
       */
-    var subjectPrefix: js.UndefOr[String | `false`] = js.native
+    var subjectPrefix: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * force text-only rendering of template (disregards template folder)
       */
-    var textOnly: js.UndefOr[Boolean] = js.native
+    var textOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The nodemailer Transport created via nodemailer.createTransport
       */
-    var transport: js.UndefOr[NodeMailerTransportOptions] = js.native
+    var transport: js.UndefOr[NodeMailerTransportOptions] = js.undefined
     
     /**
       * The email template directory and engine information
       */
-    var views: js.UndefOr[View] = js.native
+    var views: js.UndefOr[View] = js.undefined
   }
   object EmailConfig {
     
@@ -107,7 +107,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EmailConfigMutableBuilder[Self <: EmailConfig[_], T] (val x: Self with EmailConfig[T]) extends AnyVal {
+    implicit class EmailConfigMutableBuilder[Self <: EmailConfig[?], T] (val x: Self & EmailConfig[T]) extends AnyVal {
       
       @scala.inline
       def setCustomRender(value: Boolean): Self = StObject.set(x, "customRender", value.asInstanceOf[js.Any])
@@ -155,7 +155,7 @@ object mod {
       def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
       @scala.inline
-      def setRender(value: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[_]): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      def setRender(value: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[js.Any]): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -192,14 +192,13 @@ object mod {
     }
   }
   
-  @js.native
   trait EmailMessage extends StObject {
     
-    var html: String = js.native
+    var html: String
     
-    var subject: String = js.native
+    var subject: String
     
-    var text: String = js.native
+    var text: String
   }
   object EmailMessage {
     
@@ -223,25 +222,24 @@ object mod {
     }
   }
   
-  @js.native
   trait EmailOptions[T] extends StObject {
     
     /**
       * The Template Variables
       */
-    var locals: js.UndefOr[T] = js.native
+    var locals: js.UndefOr[T] = js.undefined
     
     /**
       * Nodemailer Message <Nodemailer.com/message/>
       *
       * Overrides what is given for constructor
       */
-    var message: Options = js.native
+    var message: Options
     
     /**
       * The template name
       */
-    var template: String = js.native
+    var template: String
   }
   object EmailOptions {
     
@@ -252,7 +250,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EmailOptionsMutableBuilder[Self <: EmailOptions[_], T] (val x: Self with EmailOptions[T]) extends AnyVal {
+    implicit class EmailOptionsMutableBuilder[Self <: EmailOptions[?], T] (val x: Self & EmailOptions[T]) extends AnyVal {
       
       @scala.inline
       def setLocals(value: T): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
@@ -298,7 +296,7 @@ object mod {
     /**
       * Send the Email
       */
-    def send(options: EmailOptions[T]): js.Promise[_] = js.native
+    def send(options: EmailOptions[T]): js.Promise[js.Any] = js.native
   }
   
   // email-templates accepts nodemailer.createTransport options directly
@@ -307,28 +305,27 @@ object mod {
   type NodeMailerTransportOptions = typings.nodemailer.mailerMod.^ | typings.nodemailer.smtpPoolMod.^ | typings.nodemailer.smtpPoolMod.Options | typings.nodemailer.sendmailTransportMod.^ | typings.nodemailer.sendmailTransportMod.Options | typings.nodemailer.streamTransportMod.^ | typings.nodemailer.streamTransportMod.Options | typings.nodemailer.jsonTransportMod.^ | typings.nodemailer.jsonTransportMod.Options | typings.nodemailer.sesTransportMod.^ | typings.nodemailer.sesTransportMod.Options | typings.nodemailer.smtpTransportMod.^ | typings.nodemailer.smtpTransportMod.Options | String
   
   // No typedef for https://github.com/forwardemail/preview-email
-  @js.native
   trait PreviewEmailOpts extends StObject {
     
     /**
       * a path to a directory for saving the generated email previews (defaults to os.tmpdir()
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * a unique ID for the file name created for the preview in dir (defaults to uuid.v4() from uuid)
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * https://github.com/sindresorhus/open
       */
-    var open: js.UndefOr[js.Any] = js.native
+    var open: js.UndefOr[js.Any] = js.undefined
     
     /**
       * a file path to a pug template file (defaults to preview-email's template.pug by default)
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object PreviewEmailOpts {
     
@@ -367,15 +364,14 @@ object mod {
     }
   }
   
-  @js.native
   trait View extends StObject {
     
-    var options: js.UndefOr[ViewOptions] = js.native
+    var options: js.UndefOr[ViewOptions] = js.undefined
     
     /**
       * View root. Defaults to the current working directory's "emails" folder via path.resolve('emails')
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object View {
     
@@ -402,24 +398,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ViewOptions extends StObject {
     
     /**
       *  the default template engine source, defaults to consolidate
       */
-    var engineSource: js.UndefOr[js.Any] = js.native
+    var engineSource: js.UndefOr[js.Any] = js.undefined
     
     /**
       *  View extansion. defaults to 'pug', and is the default file extension for templates
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /**
       * a template file extension mapping, defaults to { hbs: 'handlebars', njk: 'nunjucks' }
       * (this is useful if you use different file extension naming conventions)
       */
-    var map: js.UndefOr[js.Any] = js.native
+    var map: js.UndefOr[js.Any] = js.undefined
   }
   object ViewOptions {
     

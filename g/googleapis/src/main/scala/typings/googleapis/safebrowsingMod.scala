@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safebrowsingMod {
+  
+  @JSImport("googleapis/build/src/apis/safebrowsing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object safebrowsingMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/safebrowsing", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/safebrowsing", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object safebrowsingMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/safebrowsing", "safebrowsing")
-  @js.native
-  def safebrowsing(options: Options): Safebrowsing = js.native
-  @JSImport("googleapis/build/src/apis/safebrowsing", "safebrowsing")
-  @js.native
-  def safebrowsing_v4(version: v4): Safebrowsing = js.native
+  @scala.inline
+  def safebrowsing(options: Options): Safebrowsing = ^.asInstanceOf[js.Dynamic].applyDynamic("safebrowsing")(options.asInstanceOf[js.Any]).asInstanceOf[Safebrowsing]
+  
+  @scala.inline
+  def safebrowsing_v4(version: v4): Safebrowsing = ^.asInstanceOf[js.Dynamic].applyDynamic("safebrowsing")(version.asInstanceOf[js.Any]).asInstanceOf[Safebrowsing]
 }

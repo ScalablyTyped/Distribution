@@ -9,7 +9,6 @@ import typings.winrtUwp.winrtUwpStrings.requestreceived
 import typings.winrtUwp.winrtUwpStrings.serviceclosed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes for using app services. */
@@ -24,19 +23,27 @@ object AppService {
     
     /** The endpoint for the app service was closed by the client or the system */
     @js.native
-    sealed trait canceled extends AppServiceClosedStatus
+    sealed trait canceled
+      extends StObject
+         with AppServiceClosedStatus
     
     /** The endpoint for the app service closed gracefully. */
     @js.native
-    sealed trait completed extends AppServiceClosedStatus
+    sealed trait completed
+      extends StObject
+         with AppServiceClosedStatus
     
     /** The endpoint for the app service was closed because the endpoint ran out of resources. */
     @js.native
-    sealed trait resourceLimitsExceeded extends AppServiceClosedStatus
+    sealed trait resourceLimitsExceeded
+      extends StObject
+         with AppServiceClosedStatus
     
     /** An unknown error occurred. */
     @js.native
-    sealed trait unknown extends AppServiceClosedStatus
+    sealed trait unknown
+      extends StObject
+         with AppServiceClosedStatus
   }
   
   @js.native
@@ -48,23 +55,33 @@ object AppService {
     
     /** The package for the app service to which a connection was attempted is not installed on the device. Check that the package is installed before trying to open a connection to the app service. */
     @js.native
-    sealed trait appNotInstalled extends AppServiceConnectionStatus
+    sealed trait appNotInstalled
+      extends StObject
+         with AppServiceConnectionStatus
     
     /** The app with the specified package family name is installed and available, but the app does not declare support for the specified app service. Check that the name of the app service and the version of the app are correct. */
     @js.native
-    sealed trait appServiceUnavailable extends AppServiceConnectionStatus
+    sealed trait appServiceUnavailable
+      extends StObject
+         with AppServiceConnectionStatus
     
     /** The package for the app service to which a connection was attempted is temporarily unavailable. Try to connect again later. */
     @js.native
-    sealed trait appUnavailable extends AppServiceConnectionStatus
+    sealed trait appUnavailable
+      extends StObject
+         with AppServiceConnectionStatus
     
     /** The connection to the app service was opened successfully. */
     @js.native
-    sealed trait success extends AppServiceConnectionStatus
+    sealed trait success
+      extends StObject
+         with AppServiceConnectionStatus
     
     /** An unknown error occurred. */
     @js.native
-    sealed trait unknown extends AppServiceConnectionStatus
+    sealed trait unknown
+      extends StObject
+         with AppServiceConnectionStatus
   }
   
   @js.native
@@ -76,31 +93,37 @@ object AppService {
     
     /** The app service failed to receive and process the message. */
     @js.native
-    sealed trait failure extends AppServiceResponseStatus
+    sealed trait failure
+      extends StObject
+         with AppServiceResponseStatus
     
     /** The app service exited because not enough resources were available. */
     @js.native
-    sealed trait resourceLimitsExceeded extends AppServiceResponseStatus
+    sealed trait resourceLimitsExceeded
+      extends StObject
+         with AppServiceResponseStatus
     
     /** The app service successfully received and processed the message. */
     @js.native
-    sealed trait success extends AppServiceResponseStatus
+    sealed trait success
+      extends StObject
+         with AppServiceResponseStatus
     
     /** An unknown error occurred. */
     @js.native
-    sealed trait unknown extends AppServiceResponseStatus
+    sealed trait unknown
+      extends StObject
+         with AppServiceResponseStatus
   }
   
   /** Enumerates the available app service providers on the device. */
-  @js.native
   trait AppServiceCatalog extends StObject
   
   /** Provides data for the AppServiceConnection.ServiceClosed event that occurs when the other endpoint closes connection to the app service. */
-  @js.native
   trait AppServiceClosedEventArgs extends StObject {
     
     /** Gets the status that was set when the endpoint for the app service was closed. */
-    var status: AppServiceClosedStatus = js.native
+    var status: AppServiceClosedStatus
   }
   object AppServiceClosedEventArgs {
     
@@ -122,7 +145,7 @@ object AppService {
   @js.native
   trait AppServiceConnection extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requestreceived(
       `type`: requestreceived,
@@ -141,13 +164,13 @@ object AppService {
     def close(): Unit = js.native
     
     /** Occurs when a message arrives from the other endpoint of the app service connection. */
-    def onrequestreceived(ev: AppServiceRequestReceivedEventArgs with WinRTEvent[AppServiceConnection]): Unit = js.native
+    def onrequestreceived(ev: AppServiceRequestReceivedEventArgs & WinRTEvent[AppServiceConnection]): Unit = js.native
     /** Occurs when a message arrives from the other endpoint of the app service connection. */
     @JSName("onrequestreceived")
     var onrequestreceived_Original: TypedEventHandler[AppServiceConnection, AppServiceRequestReceivedEventArgs] = js.native
     
     /** Occurs when the other endpoint closes the connection to the app service. */
-    def onserviceclosed(ev: AppServiceClosedEventArgs with WinRTEvent[AppServiceConnection]): Unit = js.native
+    def onserviceclosed(ev: AppServiceClosedEventArgs & WinRTEvent[AppServiceConnection]): Unit = js.native
     /** Occurs when the other endpoint closes the connection to the app service. */
     @JSName("onserviceclosed")
     var onserviceclosed_Original: TypedEventHandler[AppServiceConnection, AppServiceClosedEventArgs] = js.native
@@ -161,7 +184,7 @@ object AppService {
     /** Gets or sets the package family name for the package that contains the endpoint for the app service. */
     var packageFamilyName: String = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_requestreceived(
       `type`: requestreceived,
@@ -182,11 +205,10 @@ object AppService {
   }
   
   /** Enables the background task for an app service to get a deferral so that the app service can respond to subsequent requests. */
-  @js.native
   trait AppServiceDeferral extends StObject {
     
     /** Indicates that the content for an asynchronous handler for the AppServiceConnection.RequestReceived event is ready, or that an error occurred. */
-    def complete(): Unit = js.native
+    def complete(): Unit
   }
   object AppServiceDeferral {
     
@@ -205,18 +227,17 @@ object AppService {
   }
   
   /** Represents a message that the endpoint for one app service sends to another app service. */
-  @js.native
   trait AppServiceRequest extends StObject {
     
     /** Gets the message that request from the app service contains. */
-    var message: ValueSet = js.native
+    var message: ValueSet
     
     /**
       * Sends a response to a received request.
       * @param message The message that you want to include in the response.
       * @return An asynchronous operation to send the response.
       */
-    def sendResponseAsync(message: ValueSet): IPromiseWithIAsyncOperation[AppServiceResponseStatus] = js.native
+    def sendResponseAsync(message: ValueSet): IPromiseWithIAsyncOperation[AppServiceResponseStatus]
   }
   object AppServiceRequest {
     
@@ -241,17 +262,16 @@ object AppService {
   }
   
   /** Provides data for the AppServiceConnection.RequestReceived event that occurs when a message arrives from the other endpoint of the app service connection. */
-  @js.native
   trait AppServiceRequestReceivedEventArgs extends StObject {
     
     /**
       * Informs the system that the event handler might continue to perform work after the event handler returns.
       * @return The deferral.
       */
-    def getDeferral(): AppServiceDeferral = js.native
+    def getDeferral(): AppServiceDeferral
     
     /** Gets the request that was received from the app service. */
-    var request: AppServiceRequest = js.native
+    var request: AppServiceRequest
   }
   object AppServiceRequestReceivedEventArgs {
     
@@ -273,14 +293,13 @@ object AppService {
   }
   
   /** Represents the message that the app service sent in response to a request. */
-  @js.native
   trait AppServiceResponse extends StObject {
     
     /** Gets the message that the response from the app service contains. */
-    var message: ValueSet = js.native
+    var message: ValueSet
     
     /** Gets the status for the response from the app service. */
-    var status: AppServiceResponseStatus = js.native
+    var status: AppServiceResponseStatus
   }
   object AppServiceResponse {
     
@@ -302,17 +321,16 @@ object AppService {
   }
   
   /** Represents details associated with the background task for the app service. */
-  @js.native
   trait AppServiceTriggerDetails extends StObject {
     
     /** Gets the connection to the endpoint of the other app service. */
-    var appServiceConnection: AppServiceConnection = js.native
+    var appServiceConnection: AppServiceConnection
     
     /** Gets the name of the package family for the client app that called the background task for the app service. */
-    var callerPackageFamilyName: String = js.native
+    var callerPackageFamilyName: String
     
     /** Gets the name of the app service. */
-    var name: String = js.native
+    var name: String
   }
   object AppServiceTriggerDetails {
     

@@ -2,13 +2,11 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUssdMessageFactory extends StObject {
   
-  def createMessage(messageText: String): UssdMessage = js.native
+  def createMessage(messageText: String): UssdMessage
 }
 object IUssdMessageFactory {
   

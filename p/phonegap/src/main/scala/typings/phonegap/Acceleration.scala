@@ -2,19 +2,17 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acceleration extends StObject {
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var z: Double = js.native
+  var z: Double
 }
 object Acceleration {
   

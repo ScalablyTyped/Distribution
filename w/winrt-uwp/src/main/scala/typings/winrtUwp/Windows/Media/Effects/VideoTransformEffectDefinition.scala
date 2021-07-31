@@ -9,36 +9,34 @@ import typings.winrtUwp.Windows.Media.Transcoding.MediaVideoProcessingAlgorithm
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a video transform effect. */
-@js.native
 trait VideoTransformEffectDefinition extends StObject {
   
   /** Gets the activatable class ID of the video transform effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets or sets the rectangle within which the video will be cropped, specified in pixels. */
-  var cropRectangle: Rect = js.native
+  var cropRectangle: Rect
   
   /** Gets or sets the direction in which the video will be mirrored. */
-  var mirror: MediaMirroringOptions = js.native
+  var mirror: MediaMirroringOptions
   
   /** Gets or sets the output size of the video, in pixels. */
-  var outputSize: Size = js.native
+  var outputSize: Size
   
   /** Gets or sets the color that will be used to fill pixels in the frame that are not filled with video, such as when video is letterboxed. */
-  var paddingColor: Color = js.native
+  var paddingColor: Color
   
   /** Gets or sets the media processing algorithm that is used for the video transform. */
-  var processingAlgorithm: MediaVideoProcessingAlgorithm = js.native
+  var processingAlgorithm: MediaVideoProcessingAlgorithm
   
   /** Gets the set of properties for configuring the VideoTransformEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
   /** Gets or sets the angle and direction in which the video will be rotated. */
-  var rotation: MediaRotation = js.native
+  var rotation: MediaRotation
 }
 object VideoTransformEffectDefinition {
   

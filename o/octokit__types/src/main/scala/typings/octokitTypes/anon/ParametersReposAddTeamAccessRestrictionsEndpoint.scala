@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposAddTeamAccessRestrictionsResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposAddTeamAccessRestrictionsEndpoint extends StObject {
   
-  var parameters: ReposAddTeamAccessRestrictionsEndpoint = js.native
+  var parameters: ReposAddTeamAccessRestrictionsEndpoint
   
-  var request: ReposAddTeamAccessRestrictionsRequestOptions = js.native
+  var request: ReposAddTeamAccessRestrictionsRequestOptions
   
-  var response: OctokitResponse[ReposAddTeamAccessRestrictionsResponseData] = js.native
+  var response: OctokitResponse[ReposAddTeamAccessRestrictionsResponseData]
 }
 object ParametersReposAddTeamAccessRestrictionsEndpoint {
   

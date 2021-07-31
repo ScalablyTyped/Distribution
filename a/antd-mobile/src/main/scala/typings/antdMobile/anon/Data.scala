@@ -2,33 +2,31 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var MenuSelectContanerPrefixCls: String = js.native
+  var MenuSelectContanerPrefixCls: String
   
-  var data: js.Array[scala.Nothing] = js.native
+  var data: js.Array[scala.Nothing]
   
-  var level: Double = js.native
+  var level: Double
   
-  var multiSelect: Boolean = js.native
+  var multiSelect: Boolean
   
-  var multiSelectMenuBtnsCls: String = js.native
+  var multiSelectMenuBtnsCls: String
   
-  def onCancel(): Unit = js.native
+  def onCancel(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onOk(): Unit = js.native
+  def onOk(): Unit
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var radioPrefixCls: String = js.native
+  var radioPrefixCls: String
   
-  var subMenuPrefixCls: String = js.native
+  var subMenuPrefixCls: String
 }
 object Data {
   

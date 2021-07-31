@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAttendeeRequest extends StObject {
   
   /**
     * The Amazon Chime SDK attendee ID.
     */
-  var AttendeeId: GuidString = js.native
+  var AttendeeId: GuidString
   
   /**
     * The Amazon Chime SDK meeting ID.
     */
-  var MeetingId: GuidString = js.native
+  var MeetingId: GuidString
 }
 object DeleteAttendeeRequest {
   

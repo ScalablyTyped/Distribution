@@ -3,15 +3,13 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.commonTypesMod.QueryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
-  var query: js.UndefOr[QueryOptions] = js.native
+  var query: js.UndefOr[QueryOptions] = js.undefined
   
-  var teamId: js.UndefOr[String] = js.native
+  var teamId: js.UndefOr[String] = js.undefined
 }
 object Query {
   

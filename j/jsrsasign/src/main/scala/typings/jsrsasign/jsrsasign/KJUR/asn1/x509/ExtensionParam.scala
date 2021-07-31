@@ -3,15 +3,13 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionParam extends StObject {
   
-  var accessLocation: UriParam = js.native
+  var accessLocation: UriParam
   
-  var accessMethod: ObjectIdentifierParam = js.native
+  var accessMethod: ObjectIdentifierParam
 }
 object ExtensionParam {
   

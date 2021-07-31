@@ -6,14 +6,15 @@ import typings.geodesy.mod.Dp
 import typings.geodesy.mod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utmMod {
   
   @JSImport("geodesy/utm", JSImport.Default)
   @js.native
-  class default protected () extends Utm {
+  class default protected ()
+    extends StObject
+       with Utm {
     def this(zone: Double, hemisphere: Hemisphere, easting: Double, northing: Double) = this()
     def this(zone: Double, hemisphere: Hemisphere, easting: Double, northing: Double, datum: Datum) = this()
     def this(
@@ -21,7 +22,7 @@ object utmMod {
       hemisphere: Hemisphere,
       easting: Double,
       northing: Double,
-      datum: js.UndefOr[scala.Nothing],
+      datum: Unit,
       convergence: Double
     ) = this()
     def this(
@@ -37,16 +38,7 @@ object utmMod {
       hemisphere: Hemisphere,
       easting: Double,
       northing: Double,
-      datum: js.UndefOr[scala.Nothing],
-      convergence: js.UndefOr[scala.Nothing],
-      scale: Double
-    ) = this()
-    def this(
-      zone: Double,
-      hemisphere: Hemisphere,
-      easting: Double,
-      northing: Double,
-      datum: js.UndefOr[scala.Nothing],
+      datum: Unit,
       convergence: Double,
       scale: Double
     ) = this()
@@ -55,8 +47,8 @@ object utmMod {
       hemisphere: Hemisphere,
       easting: Double,
       northing: Double,
-      datum: Datum,
-      convergence: js.UndefOr[scala.Nothing],
+      datum: Unit,
+      convergence: Unit,
       scale: Double
     ) = this()
     def this(
@@ -66,18 +58,29 @@ object utmMod {
       northing: Double,
       datum: Datum,
       convergence: Double,
+      scale: Double
+    ) = this()
+    def this(
+      zone: Double,
+      hemisphere: Hemisphere,
+      easting: Double,
+      northing: Double,
+      datum: Datum,
+      convergence: Unit,
       scale: Double
     ) = this()
   }
   object default {
     
+    @JSImport("geodesy/utm", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("geodesy/utm", "default.parse")
-    @js.native
-    def parse(utmCoord: String): Utm = js.native
-    @JSImport("geodesy/utm", "default.parse")
-    @js.native
-    def parse(utmCoord: String, datum: Datum): Utm = js.native
+    @scala.inline
+    def parse(utmCoord: String): Utm = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(utmCoord.asInstanceOf[js.Any]).asInstanceOf[Utm]
+    @scala.inline
+    def parse(utmCoord: String, datum: Datum): Utm = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(utmCoord.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[Utm]
   }
   
   // tslint:disable-next-line no-unnecessary-class
@@ -87,97 +90,77 @@ object utmMod {
     extends typings.geodesy.latlonEllipsoidalDatumMod.Dms
   object Dms {
     
-    /* static member */
-    @JSImport("geodesy/utm", "Dms.compassPoint")
+    @JSImport("geodesy/utm", "Dms")
     @js.native
-    def compassPoint(bearing: Double): String = js.native
-    @JSImport("geodesy/utm", "Dms.compassPoint")
-    @js.native
-    def compassPoint(bearing: Double, precision: Precision): String = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.fromLocale")
-    @js.native
-    def fromLocale(str: String): String = js.native
+    @scala.inline
+    def compassPoint(bearing: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def compassPoint(bearing: Double, precision: Precision): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.parse")
-    @js.native
-    def parse(dms: String): Double = js.native
-    @JSImport("geodesy/utm", "Dms.parse")
-    @js.native
-    def parse(dms: Double): Double = js.native
+    @scala.inline
+    def fromLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double): String = js.native
-    @JSImport("geodesy/utm", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/utm", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/utm", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def parse(dms: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def parse(dms: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double): String = js.native
-    @JSImport("geodesy/utm", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/utm", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/utm", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def toBrng(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toBrng(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toBrng(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toBrng(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double): String = js.native
-    @JSImport("geodesy/utm", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/utm", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/utm", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def toDms(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toDms(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toDms(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toDms(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.toLocale")
-    @js.native
-    def toLocale(str: String): String = js.native
+    @scala.inline
+    def toLat(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toLat(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLat(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLat(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double): String = js.native
-    @JSImport("geodesy/utm", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/utm", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/utm", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def toLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.wrap360")
-    @js.native
-    def wrap360(degrees: Double): String = js.native
+    @scala.inline
+    def toLon(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toLon(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLon(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLon(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/utm", "Dms.wrap90")
-    @js.native
-    def wrap90(degrees: Double): String = js.native
+    @scala.inline
+    def wrap360(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap360")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
+    def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("geodesy/utm", "LatLon")

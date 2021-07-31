@@ -3,51 +3,49 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AtlasXMLFileConfig extends StObject {
   
   /**
     * The default file extension to use for the atlas xml if no url is provided.
     */
-  var atlasExtension: js.UndefOr[String] = js.native
+  var atlasExtension: js.UndefOr[String] = js.undefined
   
   /**
     * The absolute or relative URL to load the atlas xml file from.
     */
-  var atlasURL: js.UndefOr[String] = js.native
+  var atlasURL: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for the atlas xml file.
     */
-  var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the Texture Manager.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The filename of an associated normal map. It uses the same path and url to load as the texture image.
     */
-  var normalMap: js.UndefOr[String] = js.native
+  var normalMap: js.UndefOr[String] = js.undefined
   
   /**
     * The default file extension to use for the image texture if no url is provided.
     */
-  var textureExtension: js.UndefOr[String] = js.native
+  var textureExtension: js.UndefOr[String] = js.undefined
   
   /**
     * The absolute or relative URL to load the texture image file from.
     */
-  var textureURL: js.UndefOr[String] = js.native
+  var textureURL: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for the texture image file.
     */
-  var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object AtlasXMLFileConfig {
   

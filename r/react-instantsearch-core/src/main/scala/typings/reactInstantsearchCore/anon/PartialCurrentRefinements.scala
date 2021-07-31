@@ -4,20 +4,18 @@ import typings.reactInstantsearchCore.mod.Refinement
 import typings.reactInstantsearchCore.mod.RefinementValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.CurrentRefinementsProvided> */
-@js.native
 trait PartialCurrentRefinements extends StObject {
   
-  var items: js.UndefOr[js.Array[Refinement]] = js.native
+  var items: js.UndefOr[js.Array[Refinement]] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   var refine: js.UndefOr[
     js.Function1[/* refinement */ RefinementValue | (js.Array[Refinement | RefinementValue]), Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object PartialCurrentRefinements {
   

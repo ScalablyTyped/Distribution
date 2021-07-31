@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.SearchUserIDsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.SearchUserIDsResponse>> */
-@js.native
 trait ReadonlyPromiseSearchUser extends StObject {
   
-  def `catch`[TResult](): js.Promise[SearchUserIDsResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[SearchUserIDsResponse | TResult]
   
-  def `finally`(): js.Promise[SearchUserIDsResponse] = js.native
+  def `finally`(): js.Promise[SearchUserIDsResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseSearchUser {
   

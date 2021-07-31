@@ -2,39 +2,38 @@ package typings.uiBox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getClassNameMod {
   
-  @JSImport("ui-box/dist/src/get-class-name", JSImport.Default)
+  @JSImport("ui-box/dist/src/get-class-name", JSImport.Namespace)
   @js.native
-  def default(propertyInfo: PropertyInfo, value: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ui-box/dist/src/get-class-name", "getClassNamePrefix")
-  @js.native
-  def getClassNamePrefix(): String = js.native
+  @scala.inline
+  def default(propertyInfo: PropertyInfo, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ui-box/dist/src/get-class-name", "setClassNamePrefix")
-  @js.native
-  def setClassNamePrefix(prefix: String): Unit = js.native
+  @scala.inline
+  def getClassNamePrefix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNamePrefix")().asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def setClassNamePrefix(prefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClassNamePrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait PropertyInfo extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var complexValue: js.UndefOr[Boolean] = js.native
+    var complexValue: js.UndefOr[Boolean] = js.undefined
     
-    var cssName: js.UndefOr[String] = js.native
+    var cssName: js.UndefOr[String] = js.undefined
     
-    var defaultUnit: js.UndefOr[String] = js.native
+    var defaultUnit: js.UndefOr[String] = js.undefined
     
-    var isPrefixed: js.UndefOr[Boolean] = js.native
+    var isPrefixed: js.UndefOr[Boolean] = js.undefined
     
-    var jsName: js.UndefOr[String] = js.native
+    var jsName: js.UndefOr[String] = js.undefined
     
-    var safeValue: js.UndefOr[Boolean] = js.native
+    var safeValue: js.UndefOr[Boolean] = js.undefined
   }
   object PropertyInfo {
     

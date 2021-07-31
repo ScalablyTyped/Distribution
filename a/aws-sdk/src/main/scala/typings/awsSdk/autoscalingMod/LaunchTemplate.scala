@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplate extends StObject {
   
   /**
     * The launch template to use.
     */
-  var LaunchTemplateSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchTemplateSpecification] = js.native
+  var LaunchTemplateSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchTemplateSpecification] = js.undefined
   
   /**
     * Any parameters that you specify override the same parameters in the launch template. If not provided, Amazon EC2 Auto Scaling uses the instance type specified in the launch template when it launches an instance. 
     */
-  var Overrides: js.UndefOr[typings.awsSdk.autoscalingMod.Overrides] = js.native
+  var Overrides: js.UndefOr[typings.awsSdk.autoscalingMod.Overrides] = js.undefined
 }
 object LaunchTemplate {
   

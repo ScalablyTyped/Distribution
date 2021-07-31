@@ -2,47 +2,45 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CriterionAdditionalProperties extends StObject {
   
   /**
     * A condition that requires an array field to exactly match the specified property values. You can use this operator with the following properties: customDataIdentifiers.detections.arn, customDataIdentifiers.detections.name, resourcesAffected.s3Bucket.tags.key, resourcesAffected.s3Bucket.tags.value, resourcesAffected.s3Object.tags.key, resourcesAffected.s3Object.tags.value, sensitiveData.category, and sensitiveData.detections.type.
     */
-  var eqExactMatch: js.UndefOr[listOfString] = js.native
+  var eqExactMatch: js.UndefOr[listOfString] = js.undefined
   
   /**
     * An equal to condition to apply to a specified property value for findings.
     */
   @JSName("eq")
-  var eq_FCriterionAdditionalProperties: js.UndefOr[listOfString] = js.native
+  var eq_FCriterionAdditionalProperties: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A greater than condition to apply to a specified property value for findings.
     */
-  var gt: js.UndefOr[long] = js.native
+  var gt: js.UndefOr[long] = js.undefined
   
   /**
     * A greater than or equal to condition to apply to a specified property value for findings.
     */
-  var gte: js.UndefOr[long] = js.native
+  var gte: js.UndefOr[long] = js.undefined
   
   /**
     * A less than condition to apply to a specified property value for findings.
     */
-  var lt: js.UndefOr[long] = js.native
+  var lt: js.UndefOr[long] = js.undefined
   
   /**
     * A less than or equal to condition to apply to a specified property value for findings.
     */
-  var lte: js.UndefOr[long] = js.native
+  var lte: js.UndefOr[long] = js.undefined
   
   /**
     * A not equal to condition to apply to a specified property value for findings.
     */
-  var neq: js.UndefOr[listOfString] = js.native
+  var neq: js.UndefOr[listOfString] = js.undefined
 }
 object CriterionAdditionalProperties {
   

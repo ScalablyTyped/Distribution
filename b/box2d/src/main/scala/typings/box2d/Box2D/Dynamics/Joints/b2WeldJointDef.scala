@@ -4,11 +4,11 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2WeldJointDef extends b2JointDef {
+trait b2WeldJointDef
+  extends StObject
+     with b2JointDef {
   
   /**
     * Initialize the bodies, anchors, axis, and reference angle using the world anchor and world axis.
@@ -16,22 +16,22 @@ trait b2WeldJointDef extends b2JointDef {
     * @param bB Body B.
     * @param anchor Anchor.
     **/
-  def Initialize(bA: b2Body, bB: b2Body, anchor: b2Vec2): Unit = js.native
+  def Initialize(bA: b2Body, bB: b2Body, anchor: b2Vec2): Unit
   
   /**
     * The local anchor point relative to body1's origin.
     **/
-  var localAnchorA: b2Vec2 = js.native
+  var localAnchorA: b2Vec2
   
   /**
     * The local anchor point relative to body2's origin.
     **/
-  var localAnchorB: b2Vec2 = js.native
+  var localAnchorB: b2Vec2
   
   /**
     * The body2 angle minus body1 angle in the reference state (radians).
     **/
-  var referenceAngle: Double = js.native
+  var referenceAngle: Double
 }
 object b2WeldJointDef {
   

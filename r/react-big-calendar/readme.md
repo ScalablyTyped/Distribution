@@ -10,9 +10,9 @@ Calendar! with events
 | ------------------ | :-------------: |
 | Full name          | react-big-calendar |
 | Keywords           | scheduler, react-component, react, calendar, events, full calendar |
-| # releases         | 20 |
-| # dependents       | 63 |
-| # downloads        | 4343245 |
+| # releases         | 26 |
+| # dependents       | 78 |
+| # downloads        | 5091325 |
 | # stars            | 13 |
 
 ## Links

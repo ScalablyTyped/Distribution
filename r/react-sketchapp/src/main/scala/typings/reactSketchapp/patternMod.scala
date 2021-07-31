@@ -7,7 +7,6 @@ import typings.reactSketchapp.reactSketchappStrings.objectBoundingBox
 import typings.reactSketchapp.reactSketchappStrings.userSpaceOnUse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object patternMod {
@@ -19,24 +18,23 @@ object patternMod {
   
   type Pattern = Component[PatternProps, js.Object, js.Any]
   
-  @js.native
   trait PatternProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var patternContentUnits: js.UndefOr[userSpaceOnUse | objectBoundingBox] = js.native
+    var patternContentUnits: js.UndefOr[userSpaceOnUse | objectBoundingBox] = js.undefined
     
-    var patternTransform: js.UndefOr[String] = js.native
+    var patternTransform: js.UndefOr[String] = js.undefined
     
-    var patternUnits: js.UndefOr[userSpaceOnUse | objectBoundingBox] = js.native
+    var patternUnits: js.UndefOr[userSpaceOnUse | objectBoundingBox] = js.undefined
     
-    var x1: js.UndefOr[NumberProp] = js.native
+    var x1: js.UndefOr[NumberProp] = js.undefined
     
-    var x2: js.UndefOr[NumberProp] = js.native
+    var x2: js.UndefOr[NumberProp] = js.undefined
     
-    var y1: js.UndefOr[NumberProp] = js.native
+    var y1: js.UndefOr[NumberProp] = js.undefined
     
-    var y2: js.UndefOr[NumberProp] = js.native
+    var y2: js.UndefOr[NumberProp] = js.undefined
   }
   object PatternProps {
     

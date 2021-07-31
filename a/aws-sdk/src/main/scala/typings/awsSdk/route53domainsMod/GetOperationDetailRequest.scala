@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOperationDetailRequest extends StObject {
   
   /**
     * The identifier for the operation for which you want to get the status. Route 53 returned the identifier in the response to the original request.
     */
-  var OperationId: typings.awsSdk.route53domainsMod.OperationId = js.native
+  var OperationId: typings.awsSdk.route53domainsMod.OperationId
 }
 object GetOperationDetailRequest {
   

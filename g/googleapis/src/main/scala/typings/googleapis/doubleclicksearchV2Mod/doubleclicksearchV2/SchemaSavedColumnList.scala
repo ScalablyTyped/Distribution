@@ -2,7 +2,6 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reports with saved columns, you&#39;ll need the saved column names that are
   * available from this list.
   */
-@js.native
 trait SchemaSavedColumnList extends StObject {
   
   /**
     * The saved columns being requested.
     */
-  var items: js.UndefOr[js.Array[SchemaSavedColumn]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSavedColumn]] = js.undefined
   
   /**
     * Identifies this as a SavedColumnList resource. Value: the fixed string
     * doubleclicksearch#savedColumnList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaSavedColumnList {
   

@@ -10,7 +10,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait Renderer extends StObject {
   
   var available: Boolean = js.native
   
-  var buffer: js.Array[_] = js.native
+  var buffer: js.Array[js.Any] = js.native
   
   @JSName("bufferize")
   def bufferize_data(data: js.Any, `type`: data): Renderer = js.native

@@ -2,13 +2,11 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A step in the build pipeline.
   */
-@js.native
 trait SchemaBuildStep extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaBuildStep extends StObject {
     * image does not define an entrypoint, the first element in args is used as
     * the entrypoint, and the remainder will be used as arguments.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Working directory to use when running this step&#39;s container.  If this
@@ -30,13 +28,13 @@ trait SchemaBuildStep extends StObject {
     * step with a `dir`, which specifies an absolute path, the `RepoSource`
     * `dir` is ignored for the step&#39;s execution.
     */
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /**
     * Entrypoint to be used instead of the build step image&#39;s default
     * entrypoint. If unset, the image&#39;s default entrypoint is used.
     */
-  var entrypoint: js.UndefOr[String] = js.native
+  var entrypoint: js.UndefOr[String] = js.undefined
   
   /**
     * A list of environment variable definitions to be used when running a
@@ -44,13 +42,13 @@ trait SchemaBuildStep extends StObject {
     * environment variable &quot;KEY&quot; being given the value
     * &quot;VALUE&quot;.
     */
-  var env: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Unique identifier for this build step, used in `wait_for` to reference
     * this build step as a dependency.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the container image that will run this particular
@@ -67,39 +65,39 @@ trait SchemaBuildStep extends StObject {
     * Docker daemon&#39;s cache and is available to use as the name for a later
     * build step.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Stores timing information for pulling this build step&#39;s
     * builder image only.
     */
-  var pullTiming: js.UndefOr[SchemaTimeSpan] = js.native
+  var pullTiming: js.UndefOr[SchemaTimeSpan] = js.undefined
   
   /**
     * A list of environment variables which are encrypted using a Cloud Key
     * Management Service crypto key. These values must be specified in the
     * build&#39;s `Secret`.
     */
-  var secretEnv: js.UndefOr[js.Array[String]] = js.native
+  var secretEnv: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. Status of the build step. At this time, build step status is
     * only updated on build completion; step status is not updated in real-time
     * as the build progresses.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Time limit for executing this build step. If not defined, the step has no
     * time limit and will be allowed to continue to run until either it
     * completes or the build itself times out.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Stores timing information for executing this build step.
     */
-  var timing: js.UndefOr[SchemaTimeSpan] = js.native
+  var timing: js.UndefOr[SchemaTimeSpan] = js.undefined
   
   /**
     * List of volumes to mount into the build step.  Each volume is created as
@@ -108,7 +106,7 @@ trait SchemaBuildStep extends StObject {
     * volume in only one step is not valid as it is indicative of a build
     * request with an incorrect configuration.
     */
-  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.native
+  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.undefined
   
   /**
     * The ID(s) of the step(s) that this build step depends on. This build step
@@ -117,7 +115,7 @@ trait SchemaBuildStep extends StObject {
     * previous build steps in the `Build.Steps` list have completed
     * successfully.
     */
-  var waitFor: js.UndefOr[js.Array[String]] = js.native
+  var waitFor: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaBuildStep {
   

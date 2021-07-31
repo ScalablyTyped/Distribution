@@ -2,15 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISystemTrigger extends IBackgroundTrigger {
+trait ISystemTrigger
+  extends StObject
+     with IBackgroundTrigger {
   
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
   
-  var triggerType: SystemTriggerType = js.native
+  var triggerType: SystemTriggerType
 }
 object ISystemTrigger {
   

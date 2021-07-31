@@ -3,12 +3,14 @@ package typings.reactDndAsap
 import typings.reactDndAsap.typesMod.Task
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@react-dnd/asap", "asap")
+  @JSImport("@react-dnd/asap", JSImport.Namespace)
   @js.native
-  def asap(task: Task): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def asap(task: Task): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("asap")(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

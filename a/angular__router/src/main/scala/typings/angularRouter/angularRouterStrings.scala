@@ -5,18 +5,21 @@ import typings.angularRouter.mod.QueryParamsHandling
 import typings.angularRouter.mod._RunGuardsAndResolvers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularRouterStrings {
   
   @js.native
-  sealed trait _empty extends QueryParamsHandling
+  sealed trait _empty
+    extends StObject
+       with QueryParamsHandling
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait always extends _RunGuardsAndResolvers
+  sealed trait always
+    extends StObject
+       with _RunGuardsAndResolvers
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
@@ -31,7 +34,9 @@ object angularRouterStrings {
   def deferred: deferred = "deferred".asInstanceOf[deferred]
   
   @js.native
-  sealed trait disabled extends InitialNavigation
+  sealed trait disabled
+    extends StObject
+       with InitialNavigation
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
@@ -46,17 +51,23 @@ object angularRouterStrings {
   def emptyOnly: emptyOnly = "emptyOnly".asInstanceOf[emptyOnly]
   
   @js.native
-  sealed trait enabled extends InitialNavigation
+  sealed trait enabled
+    extends StObject
+       with InitialNavigation
   @scala.inline
   def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
-  sealed trait enabledBlocking extends InitialNavigation
+  sealed trait enabledBlocking
+    extends StObject
+       with InitialNavigation
   @scala.inline
   def enabledBlocking: enabledBlocking = "enabledBlocking".asInstanceOf[enabledBlocking]
   
   @js.native
-  sealed trait enabledNonBlocking extends InitialNavigation
+  sealed trait enabledNonBlocking
+    extends StObject
+       with InitialNavigation
   @scala.inline
   def enabledNonBlocking: enabledNonBlocking = "enabledNonBlocking".asInstanceOf[enabledNonBlocking]
   
@@ -86,17 +97,23 @@ object angularRouterStrings {
   def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
-  sealed trait merge extends QueryParamsHandling
+  sealed trait merge
+    extends StObject
+       with QueryParamsHandling
   @scala.inline
   def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
-  sealed trait paramsChange extends _RunGuardsAndResolvers
+  sealed trait paramsChange
+    extends StObject
+       with _RunGuardsAndResolvers
   @scala.inline
   def paramsChange: paramsChange = "paramsChange".asInstanceOf[paramsChange]
   
   @js.native
-  sealed trait paramsOrQueryParamsChange extends _RunGuardsAndResolvers
+  sealed trait paramsOrQueryParamsChange
+    extends StObject
+       with _RunGuardsAndResolvers
   @scala.inline
   def paramsOrQueryParamsChange: paramsOrQueryParamsChange = "paramsOrQueryParamsChange".asInstanceOf[paramsOrQueryParamsChange]
   
@@ -106,12 +123,16 @@ object angularRouterStrings {
   def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait pathParamsChange extends _RunGuardsAndResolvers
+  sealed trait pathParamsChange
+    extends StObject
+       with _RunGuardsAndResolvers
   @scala.inline
   def pathParamsChange: pathParamsChange = "pathParamsChange".asInstanceOf[pathParamsChange]
   
   @js.native
-  sealed trait pathParamsOrQueryParamsChange extends _RunGuardsAndResolvers
+  sealed trait pathParamsOrQueryParamsChange
+    extends StObject
+       with _RunGuardsAndResolvers
   @scala.inline
   def pathParamsOrQueryParamsChange: pathParamsOrQueryParamsChange = "pathParamsOrQueryParamsChange".asInstanceOf[pathParamsOrQueryParamsChange]
   
@@ -121,7 +142,9 @@ object angularRouterStrings {
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   
   @js.native
-  sealed trait preserve extends QueryParamsHandling
+  sealed trait preserve
+    extends StObject
+       with QueryParamsHandling
   @scala.inline
   def preserve: preserve = "preserve".asInstanceOf[preserve]
   

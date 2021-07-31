@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WmxSite extends StObject {
   
   /** The user's permission level for the site. */
-  var permissionLevel: js.UndefOr[String] = js.native
+  var permissionLevel: js.UndefOr[String] = js.undefined
   
   /** The URL of the site. */
-  var siteUrl: js.UndefOr[String] = js.native
+  var siteUrl: js.UndefOr[String] = js.undefined
 }
 object WmxSite {
   

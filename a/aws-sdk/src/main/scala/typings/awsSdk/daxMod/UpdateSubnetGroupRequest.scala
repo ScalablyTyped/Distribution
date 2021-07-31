@@ -2,26 +2,24 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubnetGroupRequest extends StObject {
   
   /**
     * A description of the subnet group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the subnet group.
     */
-  var SubnetGroupName: String = js.native
+  var SubnetGroupName: String
   
   /**
     * A list of subnet IDs in the subnet group.
     */
-  var SubnetIds: js.UndefOr[SubnetIdentifierList] = js.native
+  var SubnetIds: js.UndefOr[SubnetIdentifierList] = js.undefined
 }
 object UpdateSubnetGroupRequest {
   

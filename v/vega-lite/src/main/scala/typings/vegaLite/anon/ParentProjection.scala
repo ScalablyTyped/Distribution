@@ -3,15 +3,13 @@ package typings.vegaLite.anon
 import typings.vegaLite.projectionMod.Projection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentProjection extends StObject {
   
-  var parentProjection: Projection = js.native
+  var parentProjection: Projection
   
-  var projection: Projection = js.native
+  var projection: Projection
 }
 object ParentProjection {
   

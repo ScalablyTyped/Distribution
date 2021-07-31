@@ -6,27 +6,25 @@ import typings.request.requestStrings.header
 import typings.request.requestStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuthOptions extends StObject {
   
-  var body_hash: js.UndefOr[`true` | String] = js.native
+  var body_hash: js.UndefOr[`true` | String] = js.undefined
   
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
-  var consumer_key: js.UndefOr[String] = js.native
+  var consumer_key: js.UndefOr[String] = js.undefined
   
-  var consumer_secret: js.UndefOr[String] = js.native
+  var consumer_secret: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
-  var token_secret: js.UndefOr[String] = js.native
+  var token_secret: js.UndefOr[String] = js.undefined
   
-  var transport_method: js.UndefOr[body | header | query] = js.native
+  var transport_method: js.UndefOr[body | header | query] = js.undefined
   
-  var verifier: js.UndefOr[String] = js.native
+  var verifier: js.UndefOr[String] = js.undefined
 }
 object OAuthOptions {
   

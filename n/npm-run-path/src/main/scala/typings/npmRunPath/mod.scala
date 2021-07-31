@@ -3,7 +3,6 @@ package typings.npmRunPath
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,12 +24,10 @@ object mod {
   	});
   	```
   	*/
-  @JSImport("npm-run-path", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("npm-run-path", JSImport.Namespace)
-  @js.native
-  def apply(options: RunPathOptions): String = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: RunPathOptions): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("npm-run-path", JSImport.Namespace)
   @js.native
@@ -46,33 +43,30 @@ object mod {
   /**
   	@returns The augmented [`process.env`](https://nodejs.org/api/process.html#process_process_env) object.
   	*/
-  @JSImport("npm-run-path", "env")
-  @js.native
-  def env(): ProcessEnv = js.native
-  @JSImport("npm-run-path", "env")
-  @js.native
-  def env(options: EnvOptions): ProcessEnv = js.native
+  @scala.inline
+  def env(): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[ProcessEnv]
+  @scala.inline
+  def env(options: EnvOptions): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(options.asInstanceOf[js.Any]).asInstanceOf[ProcessEnv]
   
-  @js.native
   trait EnvOptions extends StObject {
     
     /**
     		Working directory.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
     /**
     		Accepts an object of environment variables, like `process.env`, and modifies the PATH using the correct [PATH key](https://github.com/sindresorhus/path-key). Use this if you're modifying the PATH for use in the `child_process` options.
     		*/
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
     /**
     		Path to the current Node.js executable. Its directory is pushed to the front of PATH.
     		This can be either an absolute path or a path relative to the `cwd` option.
     		@default process.execPath
     		*/
-    val execPath: js.UndefOr[String] = js.native
+    val execPath: js.UndefOr[String] = js.undefined
   }
   object EnvOptions {
     
@@ -107,27 +101,26 @@ object mod {
   
   type ProcessEnv = StringDictionary[js.UndefOr[String]]
   
-  @js.native
   trait RunPathOptions extends StObject {
     
     /**
     		Working directory.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
     /**
     		Path to the Node.js executable to use in child processes if that is different from the current one. Its directory is pushed to the front of PATH.
     		This can be either an absolute path or a path relative to the `cwd` option.
     		@default process.execPath
     		*/
-    val execPath: js.UndefOr[String] = js.native
+    val execPath: js.UndefOr[String] = js.undefined
     
     /**
     		PATH to be appended. Default: [`PATH`](https://github.com/sindresorhus/path-key).
     		Set it to an empty string to exclude the default PATH.
     		*/
-    val path: js.UndefOr[String] = js.native
+    val path: js.UndefOr[String] = js.undefined
   }
   object RunPathOptions {
     

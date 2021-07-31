@@ -3,19 +3,17 @@ package typings.braintreeWeb.anon
 import typings.braintreeWeb.hostedFieldsMod.HostedFieldFieldOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fields extends StObject {
   
-  var authorization: js.UndefOr[String] = js.native
+  var authorization: js.UndefOr[String] = js.undefined
   
-  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.native
+  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.undefined
   
-  var fields: HostedFieldFieldOptions = js.native
+  var fields: HostedFieldFieldOptions
   
-  var styles: js.UndefOr[js.Any] = js.native
+  var styles: js.UndefOr[js.Any] = js.undefined
 }
 object Fields {
   

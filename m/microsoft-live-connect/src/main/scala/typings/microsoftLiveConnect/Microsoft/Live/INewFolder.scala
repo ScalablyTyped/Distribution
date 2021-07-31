@@ -2,30 +2,28 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new folder.
   */
-@js.native
 trait INewFolder extends StObject {
   
   /**
     * A description of the folder.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the folder.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Sorts the items to specify the following criteria: updated, name,
     * size, or default.
     */
-  var sort_by: js.UndefOr[String] = js.native
+  var sort_by: js.UndefOr[String] = js.undefined
 }
 object INewFolder {
   

@@ -2,15 +2,13 @@ package typings.elm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortFromElm[V] extends StObject {
   
-  def subscribe(handler: js.Function1[/* value */ V, Unit]): Unit = js.native
+  def subscribe(handler: js.Function1[/* value */ V, Unit]): Unit
   
-  def unsubscribe(handler: js.Function1[/* value */ V, Unit]): Unit = js.native
+  def unsubscribe(handler: js.Function1[/* value */ V, Unit]): Unit
 }
 object PortFromElm {
   
@@ -24,7 +22,7 @@ object PortFromElm {
   }
   
   @scala.inline
-  implicit class PortFromElmMutableBuilder[Self <: PortFromElm[_], V] (val x: Self with PortFromElm[V]) extends AnyVal {
+  implicit class PortFromElmMutableBuilder[Self <: PortFromElm[?], V] (val x: Self & PortFromElm[V]) extends AnyVal {
     
     @scala.inline
     def setSubscribe(value: js.Function1[/* value */ V, Unit] => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))

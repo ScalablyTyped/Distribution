@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuctionContext extends StObject {
   
   /** The auction types this restriction applies to. */
-  var auctionTypes: js.UndefOr[js.Array[String]] = js.native
+  var auctionTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AuctionContext {
   

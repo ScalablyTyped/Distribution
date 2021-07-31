@@ -10,9 +10,9 @@ A JavaScript library with geometric functions.
 | ------------------ | :-------------: |
 | Full name          | geometric |
 | Keywords           | geometry |
-| # releases         | 54 |
-| # dependents       | 1 |
-| # downloads        | 30052 |
+| # releases         | 33 |
+| # dependents       | 2 |
+| # downloads        | 34462 |
 | # stars            | 0 |
 
 ## Links

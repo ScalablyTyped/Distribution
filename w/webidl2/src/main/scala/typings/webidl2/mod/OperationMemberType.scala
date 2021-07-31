@@ -8,34 +8,33 @@ import typings.webidl2.webidl2Strings.static
 import typings.webidl2.webidl2Strings.stringifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMemberType
-  extends AbstractBase
+  extends StObject
+     with AbstractBase
      with IDLCallbackInterfaceMemberType
      with IDLInterfaceMemberType
      with IDLInterfaceMixinMemberType
      with IDLNamespaceMemberType {
   
   /** An array of arguments for the operation. */
-  var arguments: js.Array[Argument] = js.native
+  var arguments: js.Array[Argument]
   
   /** An IDL Type of what the operation returns. If a stringifier, may be absent. */
-  var idlType: IDLTypeDescription | Null = js.native
+  var idlType: IDLTypeDescription | Null
   
   /** The name of the operation. If a stringifier, may be null. */
-  var name: String | Null = js.native
+  var name: String | Null
   
   @JSName("parent")
-  var parent_OperationMemberType: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType = js.native
+  var parent_OperationMemberType: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
   
   /** Special modifier if exists */
-  var special: getter | setter | deleter | static | stringifier | Null = js.native
+  var special: getter | setter | deleter | static | stringifier | Null
   
   @JSName("type")
-  var type_OperationMemberType: operation = js.native
+  var type_OperationMemberType: operation
 }
 object OperationMemberType {
   
@@ -43,11 +42,10 @@ object OperationMemberType {
   def apply(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
-    parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType,
-    `type`: operation
+    parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
   ): OperationMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], idlType = null, name = null, special = null)
+    __obj.updateDynamic("type")("operation")
     __obj.asInstanceOf[OperationMemberType]
   }
   

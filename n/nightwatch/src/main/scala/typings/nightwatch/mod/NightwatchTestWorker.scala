@@ -2,17 +2,15 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchTestWorker extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var node_options: js.UndefOr[String | js.Array[String]] = js.native
+  var node_options: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var workers: String = js.native
+  var workers: String
 }
 object NightwatchTestWorker {
   

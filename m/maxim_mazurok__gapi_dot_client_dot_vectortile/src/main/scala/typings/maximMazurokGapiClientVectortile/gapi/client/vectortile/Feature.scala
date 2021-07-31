@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Feature extends StObject {
   
   /** The localized name of this feature. Currently only returned for roads. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The geometry of this feature, representing the space that it occupies in the world. */
-  var geometry: js.UndefOr[Geometry] = js.native
+  var geometry: js.UndefOr[Geometry] = js.undefined
   
   /** Place ID of this feature, suitable for use in Places API details requests. */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
   
   /** Relations to other features. */
-  var relations: js.UndefOr[js.Array[Relation]] = js.native
+  var relations: js.UndefOr[js.Array[Relation]] = js.undefined
   
   /** Metadata for features with the SEGMENT FeatureType. */
-  var segmentInfo: js.UndefOr[SegmentInfo] = js.native
+  var segmentInfo: js.UndefOr[SegmentInfo] = js.undefined
   
   /** The type of this feature. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Feature {
   

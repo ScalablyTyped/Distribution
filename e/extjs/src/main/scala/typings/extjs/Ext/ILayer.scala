@@ -2,23 +2,23 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILayer extends IElement {
+trait ILayer
+  extends StObject
+     with IElement {
   
   /** [Config Option] (String) */
-  var cls: js.UndefOr[java.lang.String] = js.native
+  var cls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var constrain: js.UndefOr[Boolean] = js.native
+  var constrain: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var dh: js.UndefOr[js.Any] = js.native
+  var dh: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var hideMode: js.UndefOr[java.lang.String] = js.native
+  var hideMode: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] overridden Element method
     * @param x Object
@@ -44,7 +44,7 @@ trait ILayer extends IElement {
       /* easing */ js.UndefOr[js.Any], 
       typings.extjs.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] overridden Element method
     * @param h Object
@@ -64,7 +64,7 @@ trait ILayer extends IElement {
       /* easing */ js.UndefOr[js.Any], 
       typings.extjs.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s left and top positions directly using CSS style Defined in override Ext dom Element_position
     * @param left Object
@@ -78,14 +78,14 @@ trait ILayer extends IElement {
       /* top */ js.UndefOr[js.Any], 
       typings.extjs.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] overridden Element method
     * @param left Object
     * @returns Ext.dom.Element this
     */
   @JSName("setLeft")
-  var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+  var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
   
   /** [Method] overridden Element method
     * @param w Object
@@ -107,14 +107,14 @@ trait ILayer extends IElement {
       /* easing */ js.UndefOr[js.Any], 
       typings.extjs.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s top position directly using CSS style instead of setY
     * @param top Object
     * @returns Ext.dom.Element this
     */
   @JSName("setTop")
-  var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+  var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
   
   /** [Method] overridden Element method
     * @param visible Object
@@ -134,7 +134,7 @@ trait ILayer extends IElement {
       /* easing */ js.UndefOr[js.Any], 
       typings.extjs.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] overridden Element method
     * @param w Object
@@ -154,31 +154,31 @@ trait ILayer extends IElement {
       /* easing */ js.UndefOr[js.Any], 
       typings.extjs.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the z index of this layer and adjusts any shadow and shim z indexes
     * @param zindex Number The new z-index to set
     * @returns Ext.Layer The Layer
     */
-  var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], this.type]] = js.native
+  var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Config Option] (String/Boolean) */
-  var shadow: js.UndefOr[js.Any] = js.native
+  var shadow: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var shadowOffset: js.UndefOr[Double] = js.native
+  var shadowOffset: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var shim: js.UndefOr[Boolean] = js.native
+  var shim: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useDisplay: js.UndefOr[Boolean] = js.native
+  var useDisplay: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var visibilityCls: js.UndefOr[java.lang.String] = js.native
+  var visibilityCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var zindex: js.UndefOr[Double] = js.native
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 object ILayer {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated when the worker stops pulling an image.
   */
-@js.native
 trait SchemaPullStoppedEvent extends StObject {
   
   /**
     * The URI of the image that was pulled.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
 }
 object SchemaPullStoppedEvent {
   

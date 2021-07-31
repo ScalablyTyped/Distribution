@@ -4,19 +4,38 @@ import typings.jade.mod.JadeGenerationFunction
 import typings.jade.mod.TemplateLocals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    def body(): String = js.native
-    def body(locals: TemplateLocals): String = js.native
+    def body(): String
+    def body(locals: TemplateLocals): String
     @JSName("body")
-    var body_Original: JadeGenerationFunction = js.native
+    var body_Original: JadeGenerationFunction
     
-    var dependencies: js.Array[String] = js.native
+    var dependencies: js.Array[String]
+  }
+  object Body {
+    
+    @scala.inline
+    def apply(body: /* locals */ js.UndefOr[TemplateLocals] => String, dependencies: js.Array[String]): Body = {
+      val __obj = js.Dynamic.literal(body = js.Any.fromFunction1(body), dependencies = dependencies.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Body]
+    }
+    
+    @scala.inline
+    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBody(value: /* locals */ js.UndefOr[TemplateLocals] => String): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    }
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperParameterTuningJobObjective extends StObject {
   
   /**
     * The name of the metric to use for the objective metric.
     */
-  var MetricName: typings.awsSdk.sagemakerMod.MetricName = js.native
+  var MetricName: typings.awsSdk.sagemakerMod.MetricName
   
   /**
     * Whether to minimize or maximize the objective metric.
     */
-  var Type: HyperParameterTuningJobObjectiveType = js.native
+  var Type: HyperParameterTuningJobObjectiveType
 }
 object HyperParameterTuningJobObjective {
   

@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientBatchStatusResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientBatchStatusResponse extends StObject {
   
   /** ClientBatchStatusResponse batchStatuses */
-  var batchStatuses: js.UndefOr[js.Array[IClientBatchStatus] | Null] = js.native
+  var batchStatuses: js.UndefOr[js.Array[IClientBatchStatus] | Null] = js.undefined
   
   /** ClientBatchStatusResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientBatchStatusResponse {
   

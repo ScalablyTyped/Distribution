@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastSeenObjectIdEvent extends StObject {
   
-  var lastSeenObjectId: integer = js.native
+  var lastSeenObjectId: integer
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object LastSeenObjectIdEvent {
   

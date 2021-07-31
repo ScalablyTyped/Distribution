@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapacityUnitsConfiguration extends StObject {
   
   /**
     * The amount of extra query capacity for an index. Each capacity unit provides 0.5 queries per second and 40,000 queries per day.
     */
-  var QueryCapacityUnits: QueryCapacityUnit = js.native
+  var QueryCapacityUnits: QueryCapacityUnit
   
   /**
     * The amount of extra storage capacity for an index. Each capacity unit provides 150 Gb of storage space or 500,000 documents, whichever is reached first.
     */
-  var StorageCapacityUnits: StorageCapacityUnit = js.native
+  var StorageCapacityUnits: StorageCapacityUnit
 }
 object CapacityUnitsConfiguration {
   

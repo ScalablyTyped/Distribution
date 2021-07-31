@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryExecuteSubsetResult extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var resultSubset: ResultSetSubset = js.native
+  var resultSubset: ResultSetSubset
 }
 object QueryExecuteSubsetResult {
   

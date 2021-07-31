@@ -2,20 +2,18 @@ package typings.karmaEnvPreprocessor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * environment variables available to your tests
       * {@link https://github.com/jsok/karma-env-preprocessor#configuration}
       */
-    var envPreprocessor: js.UndefOr[js.Array[String]] = js.native
+    var envPreprocessor: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ConfigOptions {
     

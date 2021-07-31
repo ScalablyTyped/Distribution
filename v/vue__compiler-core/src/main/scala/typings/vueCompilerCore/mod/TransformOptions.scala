@@ -4,17 +4,15 @@ import typings.babelParser.mod.ParserPlugin
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformOptions extends StObject {
   
   /**
     * Optional binding metadata analyzed from script - used to optimize
     * binding access when `prefixIdentifiers` is enabled.
     */
-  var bindingMetadata: js.UndefOr[BindingMetadata] = js.native
+  var bindingMetadata: js.UndefOr[BindingMetadata] = js.undefined
   
   /**
     * Cache v-on handlers to avoid creating new inline functions on each render,
@@ -28,45 +26,45 @@ trait TransformOptions extends StObject {
     * analysis to determine if a handler is safe to cache.
     * @default false
     */
-  var cacheHandlers: js.UndefOr[Boolean] = js.native
+  var cacheHandlers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object of { name: transform } to be applied to every directive attribute
     * node found on element nodes.
     */
-  var directiveTransforms: js.UndefOr[Record[String, js.UndefOr[DirectiveTransform]]] = js.native
+  var directiveTransforms: js.UndefOr[Record[String, js.UndefOr[DirectiveTransform]]] = js.undefined
   
   /**
     * A list of parser plugins to enable for `@babel/parser`, which is used to
     * parse expressions in bindings and interpolations.
     * https://babeljs.io/docs/en/next/babel-parser#plugins
     */
-  var expressionPlugins: js.UndefOr[js.Array[ParserPlugin]] = js.native
+  var expressionPlugins: js.UndefOr[js.Array[ParserPlugin]] = js.undefined
   
   /**
     * Hoist static VNodes and props objects to `_hoisted_x` constants
     * @default false
     */
-  var hoistStatic: js.UndefOr[Boolean] = js.native
+  var hoistStatic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the pairing runtime provides additional built-in elements, use this to
     * mark them as built-in so the compiler will generate component vnodes
     * for them.
     */
-  var isBuiltInComponent: js.UndefOr[js.Function1[/* tag */ String, js.Symbol | Unit]] = js.native
+  var isBuiltInComponent: js.UndefOr[js.Function1[/* tag */ String, js.Symbol | Unit]] = js.undefined
   
   /**
     * Used by some transforms that expects only native elements
     */
-  var isCustomElement: js.UndefOr[js.Function1[/* tag */ String, Boolean | Unit]] = js.native
+  var isCustomElement: js.UndefOr[js.Function1[/* tag */ String, Boolean | Unit]] = js.undefined
   
   /**
     * An array of node transforms to be applied to every AST node.
     */
-  var nodeTransforms: js.UndefOr[js.Array[NodeTransform]] = js.native
+  var nodeTransforms: js.UndefOr[js.Array[NodeTransform]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ CompilerError, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ CompilerError, Unit]] = js.undefined
   
   /**
     * Transform expressions like {{ foo }} to `_ctx.foo`.
@@ -76,32 +74,32 @@ trait TransformOptions extends StObject {
     * and cannot use `with`
     * @default mode === 'module'
     */
-  var prefixIdentifiers: js.UndefOr[Boolean] = js.native
+  var prefixIdentifiers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * SFC scoped styles ID
     */
-  var scopeId: js.UndefOr[String | Null] = js.native
+  var scopeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Generate SSR-optimized render functions instead.
     * The resulting function must be attached to the component via the
     * `ssrRender` option instead of `render`.
     */
-  var ssr: js.UndefOr[Boolean] = js.native
+  var ssr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * SFC `<style vars>` injection string
     * needed to render inline CSS variables on component root
     */
-  var ssrCssVars: js.UndefOr[String] = js.native
+  var ssrCssVars: js.UndefOr[String] = js.undefined
   
   /**
     * An optional hook to transform a node being hoisted.
     * used by compiler-dom to turn hoisted nodes into stringified HTML vnodes.
     * @default null
     */
-  var transformHoist: js.UndefOr[HoistTransform | Null] = js.native
+  var transformHoist: js.UndefOr[HoistTransform | Null] = js.undefined
 }
 object TransformOptions {
   

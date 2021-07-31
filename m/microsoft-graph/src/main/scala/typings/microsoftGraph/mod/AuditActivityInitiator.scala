@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditActivityInitiator extends StObject {
   
   /**
     * If the resource initiating the activity is an app, this property indicates all the app related information like appId,
     * Name, servicePrincipalId, Name.
     */
-  var app: js.UndefOr[NullableOption[AppIdentity]] = js.native
+  var app: js.UndefOr[NullableOption[AppIdentity]] = js.undefined
   
   /**
     * If the resource initiating the activity is a user, this property Indicates all the user related information like
     * userId, Name, UserPrinicpalName.
     */
-  var user: js.UndefOr[NullableOption[UserIdentity]] = js.native
+  var user: js.UndefOr[NullableOption[UserIdentity]] = js.undefined
 }
 object AuditActivityInitiator {
   

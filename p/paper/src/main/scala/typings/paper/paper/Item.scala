@@ -3,7 +3,6 @@ package typings.paper.paper
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -964,9 +963,9 @@ trait Item extends StObject {
     * @return the newly created raster item
     */
   def rasterize(): Raster = js.native
-  def rasterize(resolution: js.UndefOr[scala.Nothing], insert: Boolean): Raster = js.native
   def rasterize(resolution: Double): Raster = js.native
   def rasterize(resolution: Double, insert: Boolean): Raster = js.native
+  def rasterize(resolution: Unit, insert: Boolean): Raster = js.native
   
   /** 
     * If this is a group, layer or compound-path with only one child-item,

@@ -2,21 +2,19 @@ package typings.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjvError extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var params: js.Any = js.native
+  var params: js.Any
   
-  var property: String = js.native
+  var property: String
   
-  var stack: String = js.native
+  var stack: String
 }
 object AjvError {
   

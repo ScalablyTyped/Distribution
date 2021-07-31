@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsLambdaFunctionTracingConfig extends StObject {
   
   /**
     * The tracing mode.
     */
-  var Mode: js.UndefOr[NonEmptyString] = js.native
+  var Mode: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsLambdaFunctionTracingConfig {
   

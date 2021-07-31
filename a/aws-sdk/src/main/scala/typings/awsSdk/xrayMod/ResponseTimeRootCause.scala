@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseTimeRootCause extends StObject {
   
   /**
     * A flag that denotes that the root cause impacts the trace client.
     */
-  var ClientImpacting: js.UndefOr[NullableBoolean] = js.native
+  var ClientImpacting: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * A list of corresponding services. A service identifies a segment and contains a name, account ID, type, and inferred flag.
     */
-  var Services: js.UndefOr[ResponseTimeRootCauseServices] = js.native
+  var Services: js.UndefOr[ResponseTimeRootCauseServices] = js.undefined
 }
 object ResponseTimeRootCause {
   

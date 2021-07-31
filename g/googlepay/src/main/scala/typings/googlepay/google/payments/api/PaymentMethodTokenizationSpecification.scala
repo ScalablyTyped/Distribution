@@ -1,10 +1,7 @@
 package typings.googlepay.google.payments.api
 
-import typings.googlepay.googlepayStrings.DIRECT
-import typings.googlepay.googlepayStrings.PAYMENT_GATEWAY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,16 +18,16 @@ trait PaymentMethodTokenizationSpecification extends StObject
 object PaymentMethodTokenizationSpecification {
   
   @scala.inline
-  def DirectTokenizationSpecification(parameters: DirectTokenizationParameters, `type`: DIRECT): typings.googlepay.google.payments.api.DirectTokenizationSpecification = {
+  def DirectTokenizationSpecification(parameters: DirectTokenizationParameters): typings.googlepay.google.payments.api.DirectTokenizationSpecification = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DIRECT")
     __obj.asInstanceOf[typings.googlepay.google.payments.api.DirectTokenizationSpecification]
   }
   
   @scala.inline
-  def PaymentGatewayTokenizationSpecification(parameters: PaymentGatewayTokenizationParameters, `type`: PAYMENT_GATEWAY): typings.googlepay.google.payments.api.PaymentGatewayTokenizationSpecification = {
+  def PaymentGatewayTokenizationSpecification(parameters: PaymentGatewayTokenizationParameters): typings.googlepay.google.payments.api.PaymentGatewayTokenizationSpecification = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PAYMENT_GATEWAY")
     __obj.asInstanceOf[typings.googlepay.google.payments.api.PaymentGatewayTokenizationSpecification]
   }
 }

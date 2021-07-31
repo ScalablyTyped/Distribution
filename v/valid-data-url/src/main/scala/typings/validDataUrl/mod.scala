@@ -3,14 +3,12 @@ package typings.validDataUrl
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("valid-data-url", JSImport.Namespace)
-  @js.native
-  def apply(candidate: String): Boolean = js.native
+  @scala.inline
+  def apply(candidate: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(candidate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("valid-data-url", JSImport.Namespace)
   @js.native

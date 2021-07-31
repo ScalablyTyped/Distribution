@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSpreadsheetsGet extends StandardParameters {
+trait ParamsResourceSpreadsheetsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * True if grid data should be returned. This parameter is ignored if a
     * field mask was set in the request.
     */
-  var includeGridData: js.UndefOr[Boolean] = js.native
+  var includeGridData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ranges to retrieve from the spreadsheet.
     */
-  var ranges: js.UndefOr[js.Array[String]] = js.native
+  var ranges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The spreadsheet to request.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSpreadsheetsGet {
   

@@ -2,32 +2,30 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentItem extends StObject {
   
   /**
     * The text document's language identifier
     */
-  var languageId: String = js.native
+  var languageId: String
   
   /**
     * The content of the opened text document.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * The text document's uri.
     */
-  var uri: DocumentUri = js.native
+  var uri: DocumentUri
   
   /**
     * The version number of this document (it will increase after each
     * change, including undo/redo).
     */
-  var version: Double = js.native
+  var version: Double
 }
 object TextDocumentItem {
   
@@ -37,6 +35,10 @@ object TextDocumentItem {
     __obj.asInstanceOf[TextDocumentItem]
   }
   
+  @JSImport("vscode-languageserver-types", "TextDocumentItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new TextDocumentItem literal.
     * @param uri The document's uri.
@@ -44,16 +46,14 @@ object TextDocumentItem {
     * @param version The document's version number.
     * @param text The document's text.
     */
-  @JSImport("vscode-languageserver-types", "TextDocumentItem.create")
-  @js.native
-  def create(uri: DocumentUri, languageId: String, version: Double, text: String): TextDocumentItem = js.native
+  @scala.inline
+  def create(uri: DocumentUri, languageId: String, version: Double, text: String): TextDocumentItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[TextDocumentItem]
   
   /**
     * Checks whether the given literal conforms to the [TextDocumentItem](#TextDocumentItem) interface.
     */
-  @JSImport("vscode-languageserver-types", "TextDocumentItem.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean]
   
   @scala.inline
   implicit class TextDocumentItemMutableBuilder[Self <: TextDocumentItem] (val x: Self) extends AnyVal {

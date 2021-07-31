@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChoiceColumn extends StObject {
   
   // If true, allows custom values that aren't in the configured choices.
-  var allowTextEntry: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowTextEntry: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The list of values available for this column.
-  var choices: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var choices: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
-  var displayAs: js.UndefOr[NullableOption[String]] = js.native
+  var displayAs: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ChoiceColumn {
   

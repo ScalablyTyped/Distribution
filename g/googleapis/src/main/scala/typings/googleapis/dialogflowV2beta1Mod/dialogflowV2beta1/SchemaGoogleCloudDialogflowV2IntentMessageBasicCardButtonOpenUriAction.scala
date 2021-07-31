@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Opens the given URI.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction extends StObject {
   
   /**
     * Required. The HTTP or HTTPS scheme URI.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction {
   

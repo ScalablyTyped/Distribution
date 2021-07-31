@@ -2,23 +2,21 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutRec extends StObject {
   
-  var AppendLink: OutRec = js.native
+  var AppendLink: OutRec
   
-  var FirstLeft: TEdge = js.native
+  var FirstLeft: TEdge
   
-  var bottomPt: OutPt = js.native
+  var bottomPt: OutPt
   
-  var idx: Double = js.native
+  var idx: Double
   
-  var isHole: Boolean = js.native
+  var isHole: Boolean
   
-  var pts: OutPt = js.native
+  var pts: OutPt
 }
 object OutRec {
   

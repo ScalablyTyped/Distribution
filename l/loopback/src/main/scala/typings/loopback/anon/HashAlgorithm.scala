@@ -3,19 +3,17 @@ package typings.loopback.anon
 import typings.loopback.mod.ACL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HashAlgorithm extends StObject {
   
-  var acls: js.Array[ACL] = js.native
+  var acls: js.Array[ACL]
   
-  var hashAlgorithm: String = js.native
+  var hashAlgorithm: String
   
-  var http: Path = js.native
+  var http: Path
   
-  var ignoreErrors: Boolean = js.native
+  var ignoreErrors: Boolean
 }
 object HashAlgorithm {
   

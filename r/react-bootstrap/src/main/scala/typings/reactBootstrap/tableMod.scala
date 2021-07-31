@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -18,22 +17,23 @@ object tableMod {
   trait Table
     extends Component[TableProps, js.Object, js.Any]
   
-  @js.native
-  trait TableProps extends HTMLProps[Table] {
+  trait TableProps
+    extends StObject
+       with HTMLProps[Table] {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var condensed: js.UndefOr[Boolean] = js.native
+    var condensed: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var hover: js.UndefOr[Boolean] = js.native
+    var hover: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var striped: js.UndefOr[Boolean] = js.native
+    var striped: js.UndefOr[Boolean] = js.undefined
   }
   object TableProps {
     

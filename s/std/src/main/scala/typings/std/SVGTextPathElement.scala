@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <textPath> element. */
 @js.native
 trait SVGTextPathElement
-  extends SVGTextContentElement
+  extends StObject
+     with SVGTextContentElement
      with SVGURIReference {
   
   val TEXTPATH_METHODTYPE_ALIGN: Double = js.native

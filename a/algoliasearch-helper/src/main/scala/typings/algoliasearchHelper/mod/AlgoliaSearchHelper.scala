@@ -35,7 +35,6 @@ import typings.algoliasearchHelper.mod.SearchParameters.OperatorList
 import typings.events.mod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("algoliasearch-helper", "AlgoliaSearchHelper")
@@ -66,8 +65,8 @@ class AlgoliaSearchHelper () extends EventEmitter {
   def addHierarchicalFacetRefinement(facet: String, path: String): this.type = js.native
   
   def addNumericRefinement(facet: String): this.type = js.native
-  def addNumericRefinement(facet: String, operator: js.UndefOr[scala.Nothing], value: js.Array[Double]): this.type = js.native
-  def addNumericRefinement(facet: String, operator: js.UndefOr[scala.Nothing], value: Double): this.type = js.native
+  def addNumericRefinement(facet: String, operator: Unit, value: js.Array[Double]): this.type = js.native
+  def addNumericRefinement(facet: String, operator: Unit, value: Double): this.type = js.native
   def addNumericRefinement(facet: String, operator: Operator): this.type = js.native
   def addNumericRefinement(facet: String, operator: Operator, value: js.Array[Double]): this.type = js.native
   def addNumericRefinement(facet: String, operator: Operator, value: Double): this.type = js.native
@@ -159,7 +158,7 @@ class AlgoliaSearchHelper () extends EventEmitter {
     */
   def getQuery(): SearchOptions = js.native
   
-  def getRefinements(facetName: String): js.Array[_] = js.native
+  def getRefinements(facetName: String): js.Array[js.Any] = js.native
   
   def getTags(): js.Array[String] = js.native
   
@@ -197,7 +196,7 @@ class AlgoliaSearchHelper () extends EventEmitter {
   @JSName("isTagRefined")
   var isTagRefined_Original: js.Function1[/* tag */ String, Boolean] = js.native
   
-  var lastResults: SearchResults[_] | Null = js.native
+  var lastResults: SearchResults[js.Any] | Null = js.native
   
   def nextPage(): this.type = js.native
   
@@ -244,8 +243,8 @@ class AlgoliaSearchHelper () extends EventEmitter {
   def removeHierarchicalFacetRefinement(facet: String): this.type = js.native
   
   def removeNumericRefinement(facet: String): this.type = js.native
-  def removeNumericRefinement(facet: String, operator: js.UndefOr[scala.Nothing], value: js.Array[Double]): this.type = js.native
-  def removeNumericRefinement(facet: String, operator: js.UndefOr[scala.Nothing], value: Double): this.type = js.native
+  def removeNumericRefinement(facet: String, operator: Unit, value: js.Array[Double]): this.type = js.native
+  def removeNumericRefinement(facet: String, operator: Unit, value: Double): this.type = js.native
   def removeNumericRefinement(facet: String, operator: Operator): this.type = js.native
   def removeNumericRefinement(facet: String, operator: Operator, value: js.Array[Double]): this.type = js.native
   def removeNumericRefinement(facet: String, operator: Operator, value: Double): this.type = js.native
@@ -327,7 +326,7 @@ class AlgoliaSearchHelper () extends EventEmitter {
     options: PlainSearchParameters,
     cb: js.Function3[
       /* error */ typings.std.Error, 
-      /* content */ SearchResults[_], 
+      /* content */ SearchResults[js.Any], 
       /* state */ SearchParameters, 
       Unit
     ]

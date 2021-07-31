@@ -3,7 +3,6 @@ package typings.getRange
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,30 +28,32 @@ object mod {
   //=> [0, -1, -2, -3, -4]
   ```
   */
+  @scala.inline
+  def apply(range: Range): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
+  
   @JSImport("get-range", JSImport.Namespace)
   @js.native
-  def apply(range: Range): IterableIterator[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Range extends StObject {
     
     /**
     		End of the range.
     		*/
-    val end: Double = js.native
+    val end: Double
     
     /**
     		Start of the range.
     		@default 0
     		*/
-    val start: js.UndefOr[Double] = js.native
+    val start: js.UndefOr[Double] = js.undefined
     
     /**
     		Distance between numbers.
     		Minimum: `1`.
     		@default 1
     		*/
-    val step: js.UndefOr[Double] = js.native
+    val step: js.UndefOr[Double] = js.undefined
   }
   object Range {
     

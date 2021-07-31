@@ -2,51 +2,49 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsagePlan extends StObject {
   
   /**
     * The associated API stages of a usage plan.
     */
-  var apiStages: js.UndefOr[ListOfApiStage] = js.native
+  var apiStages: js.UndefOr[ListOfApiStage] = js.undefined
   
   /**
     * The description of a usage plan.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of a UsagePlan resource.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a usage plan.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS Markeplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
     */
-  var productCode: js.UndefOr[String] = js.native
+  var productCode: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of permitted requests per a given unit time interval.
     */
-  var quota: js.UndefOr[QuotaSettings] = js.native
+  var quota: js.UndefOr[QuotaSettings] = js.undefined
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * The request throttle limits of a usage plan.
     */
-  var throttle: js.UndefOr[ThrottleSettings] = js.native
+  var throttle: js.UndefOr[ThrottleSettings] = js.undefined
 }
 object UsagePlan {
   

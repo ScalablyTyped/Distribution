@@ -28,7 +28,6 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupedListTypesMod {
@@ -40,87 +39,90 @@ object groupedListTypesMod {
   object CollapseAllVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CollapseAllVisibility with Double] = js.native
+    def apply(value: Double): js.UndefOr[CollapseAllVisibility & Double] = js.native
     
     @js.native
-    sealed trait hidden extends CollapseAllVisibility
-    /* 0 */ val hidden: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.hidden with Double = js.native
+    sealed trait hidden
+      extends StObject
+         with CollapseAllVisibility
+    /* 0 */ val hidden: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.hidden & Double = js.native
     
     @js.native
-    sealed trait visible extends CollapseAllVisibility
-    /* 1 */ val visible: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.visible with Double = js.native
+    sealed trait visible
+      extends StObject
+         with CollapseAllVisibility
+    /* 1 */ val visible: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.visible & Double = js.native
   }
   
-  @js.native
   trait IGroup extends StObject {
     
     /**
       * Optional accessibility label (aria-label) attribute that will be stamped on to the element.
       * If none is specified, the arai-label attribute will contain the group name
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Nested groups, if any.
       */
-    var children: js.UndefOr[js.Array[IGroup]] = js.native
+    var children: js.UndefOr[js.Array[IGroup]] = js.undefined
     
     /**
       * How many items should be rendered within the group.
       */
-    var count: Double = js.native
+    var count: Double
     
     /**
       * Arbitrary data required to be preserved by the caller.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Optional flag to indicate the group has more data to load than the current group count indicated.
       * This can be used to indicate that a plus should be rendered next to the group count in the header.
       */
-    var hasMoreData: js.UndefOr[Boolean] = js.native
+    var hasMoreData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If all the items in the group are collapsed.
       */
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If drag/drop is enabled for the group header.
       */
-    var isDropEnabled: js.UndefOr[Boolean] = js.native
+    var isDropEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Deprecated at 1.0.0, selection state will be controled by the selection store only.
       * @deprecated At 1.0.0, selection state wil be controlled by the selection store only.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the items within the group are summarized or showing all.
       */
-    var isShowingAll: js.UndefOr[Boolean] = js.native
+    var isShowingAll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Unique identifier for the group.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Number indicating the level of nested groups.
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /**
       * Display name for the group, rendered on the header.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Start index for the group within the given items.
       */
-    var startIndex: Double = js.native
+    var startIndex: Double
   }
   object IGroup {
     
@@ -204,93 +206,92 @@ object groupedListTypesMod {
     }
   }
   
-  @js.native
   trait IGroupDividerProps extends StObject {
     
     /** Defines the number of columns a group header needs to span in the case of a grid or treegrid */
-    var ariaColSpan: js.UndefOr[Double] = js.native
+    var ariaColSpan: js.UndefOr[Double] = js.undefined
     
     /** Custom className */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Boolean value to indicate if the component should render in compact mode. Set to false by default */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.native
+    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
     
     /** Props for expand/collapse button
       * @deprecated Use {@link IGroupHeaderProps.expandButtonProps} instead.
       */
-    var expandButtonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.native
+    var expandButtonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.undefined
     
     /** Text to display for the group footer. */
-    var footerText: js.UndefOr[String] = js.native
+    var footerText: js.UndefOr[String] = js.undefined
     
     /** The group to be rendered by the header. */
-    var group: js.UndefOr[IGroup] = js.native
+    var group: js.UndefOr[IGroup] = js.undefined
     
     /** The index of the group. */
-    var groupIndex: js.UndefOr[Double] = js.native
+    var groupIndex: js.UndefOr[Double] = js.undefined
     
     /** The indent level of the group. */
-    var groupLevel: js.UndefOr[Double] = js.native
+    var groupLevel: js.UndefOr[Double] = js.undefined
     
     /** Stores parent group's children. */
-    var groups: js.UndefOr[js.Array[IGroup]] = js.native
+    var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
     
     /**
       * Width corresponding to a single level.
       * This is multiplied by the groupLevel to get the full spacer width for the group.
       */
-    var indentWidth: js.UndefOr[Double] = js.native
+    var indentWidth: js.UndefOr[Double] = js.undefined
     
     /** Determines if the group selection check box is shown for collapsed groups. */
-    var isCollapsedGroupSelectVisible: js.UndefOr[Boolean] = js.native
+    var isCollapsedGroupSelectVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Callback to determine if a group has missing items and needs to load them from the server. */
-    var isGroupLoading: js.UndefOr[js.Function1[/* group */ IGroup, Boolean]] = js.native
+    var isGroupLoading: js.UndefOr[js.Function1[/* group */ IGroup, Boolean]] = js.undefined
     
     /**
       * Deprecated at v.65.1 and will be removed by v 1.0. Use `selected` instead.
       * @deprecated Use `selected` instead.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Text shown on group headers to indicate the group is being loaded. */
-    var loadingText: js.UndefOr[String] = js.native
+    var loadingText: js.UndefOr[String] = js.undefined
     
     /** Callback for when the group header is clicked. */
-    var onGroupHeaderClick: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.native
+    var onGroupHeaderClick: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.undefined
     
     /** Callback for when the "keyup" event is fired on the group header . */
-    var onGroupHeaderKeyUp: js.UndefOr[js.Function2[/* ev */ KeyboardEvent[HTMLElement], /* group */ IGroup, Unit]] = js.native
+    var onGroupHeaderKeyUp: js.UndefOr[js.Function2[/* ev */ KeyboardEvent[HTMLElement], /* group */ IGroup, Unit]] = js.undefined
     
     /** Override which allows the caller to provider a custom renderer for the GroupHeader title. */
-    var onRenderTitle: js.UndefOr[IRenderFunction[IGroupHeaderProps]] = js.native
+    var onRenderTitle: js.UndefOr[IRenderFunction[IGroupHeaderProps]] = js.undefined
     
     /** Callback for when the group is expanded or collapsed. */
-    var onToggleCollapse: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.native
+    var onToggleCollapse: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.undefined
     
     /** Callback for when the group is selected. */
-    var onToggleSelectGroup: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.native
+    var onToggleSelectGroup: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.undefined
     
     /** Callback for when the group "Show All" link is clicked */
-    var onToggleSummarize: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.native
+    var onToggleSummarize: js.UndefOr[js.Function1[/* group */ IGroup, Unit]] = js.undefined
     
     /** If all items in the group are selected. */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** The selection mode of the list the group lives within. */
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
     
     /** Text to display for the group "Show All" link. */
-    var showAllLinkText: js.UndefOr[String] = js.native
+    var showAllLinkText: js.UndefOr[String] = js.undefined
     
     /** Theme provided by the Higher Order Component */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /** A reference to the viewport in which the header is rendered. */
-    var viewport: js.UndefOr[IViewport] = js.native
+    var viewport: js.UndefOr[IViewport] = js.undefined
   }
   object IGroupDividerProps {
     
@@ -469,58 +470,57 @@ object groupedListTypesMod {
     }
   }
   
-  @js.native
   trait IGroupRenderProps extends StObject {
     
     /**
       * Flag to indicate whether to ignore the collapsing icon on header.
       * @defaultvalue CollapseAllVisibility.visible
       */
-    var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.native
+    var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.undefined
     
     /** Information to pass in to the group footer. */
-    var footerProps: js.UndefOr[IGroupFooterProps] = js.native
+    var footerProps: js.UndefOr[IGroupFooterProps] = js.undefined
     
     /** Grouping item limit. */
-    var getGroupItemLimit: js.UndefOr[js.Function1[/* group */ IGroup, Double]] = js.native
+    var getGroupItemLimit: js.UndefOr[js.Function1[/* group */ IGroup, Double]] = js.undefined
     
     /** Information to pass in to the group header. */
-    var headerProps: js.UndefOr[IGroupHeaderProps] = js.native
+    var headerProps: js.UndefOr[IGroupHeaderProps] = js.undefined
     
     /** Boolean indicating if all groups are in collapsed state. */
-    var isAllGroupsCollapsed: js.UndefOr[Boolean] = js.native
+    var isAllGroupsCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Override which allows the caller to provide a custom footer.
       */
-    var onRenderFooter: js.UndefOr[IRenderFunction[IGroupFooterProps]] = js.native
+    var onRenderFooter: js.UndefOr[IRenderFunction[IGroupFooterProps]] = js.undefined
     
     /**
       * Override which allows the caller to provide a custom header.
       */
-    var onRenderHeader: js.UndefOr[IRenderFunction[IGroupHeaderProps]] = js.native
+    var onRenderHeader: js.UndefOr[IRenderFunction[IGroupHeaderProps]] = js.undefined
     
     /**
       * Override which allows the caller to provide a custom Show All link.
       */
-    var onRenderShowAll: js.UndefOr[IRenderFunction[IGroupShowAllProps]] = js.native
+    var onRenderShowAll: js.UndefOr[IRenderFunction[IGroupShowAllProps]] = js.undefined
     
     /** Callback for when all groups are expanded or collapsed. */
-    var onToggleCollapseAll: js.UndefOr[js.Function1[/* isAllCollapsed */ Boolean, Unit]] = js.native
+    var onToggleCollapseAll: js.UndefOr[js.Function1[/* isAllCollapsed */ Boolean, Unit]] = js.undefined
     
     /**
       * Override which allows the caller to provide a custom aria role
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /** Information to pass in to the group Show all footer. */
-    var showAllProps: js.UndefOr[IGroupShowAllProps] = js.native
+    var showAllProps: js.UndefOr[IGroupShowAllProps] = js.undefined
     
     /**
       * Boolean indicating if empty groups are shown
       * @defaultvalue false
       */
-    var showEmptyGroups: js.UndefOr[Boolean] = js.native
+    var showEmptyGroups: js.UndefOr[Boolean] = js.undefined
   }
   object IGroupRenderProps {
     
@@ -614,7 +614,9 @@ object groupedListTypesMod {
   }
   
   @js.native
-  trait IGroupedList extends IList {
+  trait IGroupedList
+    extends StObject
+       with IList {
     
     /**
       * Toggles the collapsed state of all the groups in the list.
@@ -623,7 +625,9 @@ object groupedListTypesMod {
   }
   
   @js.native
-  trait IGroupedListProps extends ClassAttributes[GroupedListBase] {
+  trait IGroupedListProps
+    extends StObject
+       with ClassAttributes[GroupedListBase] {
     
     /** Optional class name to add to the root element. */
     var className: js.UndefOr[String] = js.native
@@ -661,23 +665,23 @@ object groupedListTypesMod {
     var groups: js.UndefOr[js.Array[IGroup]] = js.native
     
     /** List of items to render. */
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any] = js.native
     
     /** Optional properties to pass through to the list components being rendered. */
-    var listProps: js.UndefOr[IListProps[_]] = js.native
+    var listProps: js.UndefOr[IListProps[js.Any]] = js.native
     
     /** Optional callback when the group expand state changes between all collapsed and at least one group is expanded. */
     var onGroupExpandStateChanged: js.UndefOr[js.Function1[/* isSomeGroupExpanded */ Boolean, Unit]] = js.native
     
     /** Rendering callback to render the group items. */
     def onRenderCell(): ReactNode = js.native
-    def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], index: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.Any): ReactNode = js.native
-    def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.Any, index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: Double, item: js.UndefOr[scala.Nothing], index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Double, item: js.Any): ReactNode = js.native
     def onRenderCell(nestingDepth: Double, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Double, item: Unit, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: js.Any): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: Unit, index: Double): ReactNode = js.native
     
     /**
       * Optional callback to determine whether the list should be rendered in full, or virtualized.
@@ -686,7 +690,7 @@ object groupedListTypesMod {
       * smaller lists.
       * The default implementation will virtualize when this callback is not provided.
       */
-    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[_], Boolean]] = js.native
+    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[js.Any], Boolean]] = js.native
     
     /** Override the default role for GroupedList.  */
     var role: js.UndefOr[String] = js.native
@@ -718,18 +722,17 @@ object groupedListTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupedList.types.IGroupedListProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupedList.types.IGroupedListProps, 'className'> & {  isCollapsed :boolean | undefined,   compact :boolean | undefined} */
-  @js.native
   trait IGroupedListStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether the group is in compact mode or not */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** whether or not the group is collapsed */
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IGroupedListStyleProps {
     
@@ -765,14 +768,13 @@ object groupedListTypesMod {
     }
   }
   
-  @js.native
   trait IGroupedListStyles extends StObject {
     
-    var group: IStyle = js.native
+    var group: IStyle
     
-    var groupIsDropping: IStyle = js.native
+    var groupIsDropping: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IGroupedListStyles {
     

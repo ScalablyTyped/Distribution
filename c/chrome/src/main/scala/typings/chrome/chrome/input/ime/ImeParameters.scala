@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImeParameters extends StObject {
   
   /** ID of the engine to use */
-  var engineID: String = js.native
+  var engineID: String
   
   /** MenuItems to use. */
-  var items: js.Array[MenuItem] = js.native
+  var items: js.Array[MenuItem]
 }
 object ImeParameters {
   

@@ -2,17 +2,15 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollbarPresenceParams extends StObject {
   
-  var horizontal: Boolean = js.native
+  var horizontal: Boolean
   
-  var size: Double = js.native
+  var size: Double
   
-  var vertical: Boolean = js.native
+  var vertical: Boolean
 }
 object ScrollbarPresenceParams {
   

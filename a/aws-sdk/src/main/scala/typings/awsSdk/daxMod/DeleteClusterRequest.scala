@@ -2,16 +2,14 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterRequest extends StObject {
   
   /**
     * The name of the cluster to be deleted.
     */
-  var ClusterName: String = js.native
+  var ClusterName: String
 }
 object DeleteClusterRequest {
   

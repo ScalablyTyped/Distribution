@@ -6,28 +6,34 @@ import typings.react.mod.global.JSX.ElementClass
 import typings.redux.mod.StoreEnhancer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("redux-devtools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("redux-devtools", "default.instrument")
+    @JSImport("redux-devtools", JSImport.Default)
     @js.native
-    def instrument(): js.Function1[/* opts */ js.Any, _] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def instrument(): js.Function1[/* opts */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("instrument")().asInstanceOf[js.Function1[/* opts */ js.Any, js.Any]]
   }
   
-  @JSImport("redux-devtools", "createDevTools")
-  @js.native
-  def createDevTools(el: ReactElement): IDevTools = js.native
+  @scala.inline
+  def createDevTools(el: ReactElement): IDevTools = ^.asInstanceOf[js.Dynamic].applyDynamic("createDevTools")(el.asInstanceOf[js.Any]).asInstanceOf[IDevTools]
   
-  @JSImport("redux-devtools", "persistState")
-  @js.native
-  def persistState(debugSessionKey: String): StoreEnhancer[js.Object, js.Object] = js.native
+  @scala.inline
+  def persistState(debugSessionKey: String): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistState")(debugSessionKey.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
   
   @js.native
-  trait IDevTools extends Instantiable0[ElementClass] {
+  trait IDevTools
+    extends StObject
+       with Instantiable0[ElementClass] {
     
     def instrument(): StoreEnhancer[js.Object, js.Object] = js.native
   }

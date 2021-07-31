@@ -2,17 +2,15 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecisionOptions extends StObject {
   
-  var cancelField: String = js.native
+  var cancelField: String
   
-  var sessionKey: String = js.native
+  var sessionKey: String
   
-  var userProperty: String = js.native
+  var userProperty: String
 }
 object DecisionOptions {
   

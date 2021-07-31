@@ -2,26 +2,24 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMemberInput extends StObject {
   
   /**
     * Configuration properties for publishing to Amazon CloudWatch Logs.
     */
-  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.native
+  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.undefined
   
   /**
     * The unique ID of the member.
     */
-  var MemberId: ResourceIdString = js.native
+  var MemberId: ResourceIdString
   
   /**
     * The unique ID of the Managed Blockchain network to which the member belongs.
     */
-  var NetworkId: ResourceIdString = js.native
+  var NetworkId: ResourceIdString
 }
 object UpdateMemberInput {
   

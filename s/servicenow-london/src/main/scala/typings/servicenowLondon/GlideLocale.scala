@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideLocale extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait GlideLocale extends StObject {
     * gs.info( "The decimal separator is " + decimalSeparator);
     * // The decimal separator is .
     */
-  def getDecimalSeparator(): String = js.native
+  def getDecimalSeparator(): String
   
   /**
     * Returns the grouping separator.
@@ -31,7 +29,7 @@ trait GlideLocale extends StObject {
     * var groupingSeparator = locale.getGroupingSeparator();
     * gs.info( "The grouping separator is " + groupingSeparator);
     */
-  def getGroupingSeparator(): String = js.native
+  def getGroupingSeparator(): String
 }
 object GlideLocale {
   

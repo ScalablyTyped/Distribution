@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountMyWorkResult extends StObject {
   
   /**
     * True, when length of WorkItemDetails is same as the limit
     */
-  var querySizeLimitExceeded: Boolean = js.native
+  var querySizeLimitExceeded: Boolean
   
   /**
     * WorkItem Details
     */
-  var workItemDetails: js.Array[AccountWorkWorkItemModel] = js.native
+  var workItemDetails: js.Array[AccountWorkWorkItemModel]
 }
 object AccountMyWorkResult {
   

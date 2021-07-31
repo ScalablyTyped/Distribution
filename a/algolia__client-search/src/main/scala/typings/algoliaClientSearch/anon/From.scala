@@ -2,15 +2,13 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait From extends StObject {
   
-  val from: Double = js.native
+  val from: Double
   
-  val value: Double = js.native
+  val value: Double
 }
 object From {
   

@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -35,10 +34,20 @@ trait DiagnosticCollection extends StObject {
     * @param thisArg The `this` context used when invoking the handler function.
     */
   def forEach(
-    callback: js.Function3[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic], /* collection */ this.type, _]
+    callback: js.Function3[
+      /* uri */ Uri, 
+      /* diagnostics */ js.Array[Diagnostic], 
+      /* collection */ this.type, 
+      js.Any
+    ]
   ): Unit = js.native
   def forEach(
-    callback: js.Function3[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic], /* collection */ this.type, _],
+    callback: js.Function3[
+      /* uri */ Uri, 
+      /* diagnostics */ js.Array[Diagnostic], 
+      /* collection */ this.type, 
+      js.Any
+    ],
     thisArg: js.Any
   ): Unit = js.native
   

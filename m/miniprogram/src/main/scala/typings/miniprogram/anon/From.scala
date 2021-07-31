@@ -2,19 +2,17 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait From extends StObject {
   
-  var from: String = js.native
+  var from: String
   
-  var index: Double = js.native
+  var index: Double
   
-  var pagePath: String = js.native
+  var pagePath: String
   
-  var text: String = js.native
+  var text: String
 }
 object From {
   

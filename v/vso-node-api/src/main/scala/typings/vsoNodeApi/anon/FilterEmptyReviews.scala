@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterEmptyReviews extends StObject {
   
-  var filterEmptyReviews: scala.Double = js.native
+  var filterEmptyReviews: scala.Double
   
-  var filterEmptyUserNames: scala.Double = js.native
+  var filterEmptyUserNames: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object FilterEmptyReviews {
   

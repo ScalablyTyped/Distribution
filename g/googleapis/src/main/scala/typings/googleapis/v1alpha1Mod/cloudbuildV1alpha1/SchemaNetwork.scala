@@ -2,20 +2,18 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Network describes the GCP network used to create workers in.
   */
-@js.native
 trait SchemaNetwork extends StObject {
   
   /**
     * Network on which the workers are created. &quot;default&quot; network is
     * used if empty.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Project id containing the defined network and subnetwork. For a peered
@@ -24,13 +22,13 @@ trait SchemaNetwork extends StObject {
     * with the project_id project in which workers will be created. For custom
     * workers with no VPC, this will be the same as project_id.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Subnetwork on which the workers are created. &quot;default&quot;
     * subnetwork is used if empty.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
 }
 object SchemaNetwork {
   

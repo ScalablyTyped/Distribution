@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthPrivateMessageSuccessCallbackResult extends StObject {
   
   /** 经过加密的activityId，解密后可得到原始的activityId。若解密后得到的activityId可以与开发者后台的活动id对应上则验证通过，否则表明valid字段不可靠（被篡改） 详细见[加密数据解密算法](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html) */
-  var encryptedData: String = js.native
+  var encryptedData: String
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 加密算法的初始向量，详细见[加密数据解密算法](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html) */
-  var iv: String = js.native
+  var iv: String
   
   /** 验证是否通过 */
-  var valid: Boolean = js.native
+  var valid: Boolean
 }
 object AuthPrivateMessageSuccessCallbackResult {
   

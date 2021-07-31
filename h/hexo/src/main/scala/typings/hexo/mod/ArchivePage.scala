@@ -2,17 +2,17 @@ package typings.hexo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArchivePage extends IndexPage {
+trait ArchivePage
+  extends StObject
+     with IndexPage {
   
-  var archive: js.UndefOr[Boolean] = js.native
+  var archive: js.UndefOr[Boolean] = js.undefined
   
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object ArchivePage {
   

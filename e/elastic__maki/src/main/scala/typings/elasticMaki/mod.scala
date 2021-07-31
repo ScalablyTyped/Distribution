@@ -5,7 +5,6 @@ import typings.elasticMaki.anon.All
 import typings.elasticMaki.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,20 +34,19 @@ object mod {
   
   type IconName = String
   
-  @js.native
   trait Sprite extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var pixelRation: Double = js.native
+    var pixelRation: Double
     
-    var sdf: Boolean = js.native
+    var sdf: Boolean
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Sprite {
     

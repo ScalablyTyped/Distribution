@@ -6,7 +6,6 @@ import typings.twineSugarcube.anon.Clear
 import typings.twineSugarcube.anon.Delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object audioMod {
@@ -325,25 +324,17 @@ object audioMod {
       * @since 2.28.0
       */
     def off(events: String): this.type = js.native
-    def off(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def off(events: String, selector: String): this.type = js.native
     def off(events: String, selector: String, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def off(events: String, selector: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def off(events: js.Object): this.type = js.native
-    def off(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def off(events: js.Object, selector: String): this.type = js.native
     def off(events: js.Object, selector: String, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def off(events: js.Object, selector: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def off(events: Event): this.type = js.native
-    def off(events: Event, selector: js.UndefOr[scala.Nothing], handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def off(events: Event, selector: String): this.type = js.native
     def off(events: Event, selector: String, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def off(events: Event, selector: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     
     /**
       * Attaches event handlers to the selected tracks. Returns a reference to the current AudioRunner instance for chaining.
@@ -354,74 +345,29 @@ object audioMod {
       * @since 2.28.0
       */
     def on(events: String): this.type = js.native
-    def on(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
-    def on(events: String, selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
-    def on(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def on(events: String, selector: String): this.type = js.native
-    def on(
-      events: String,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def on(events: String, selector: String, data: js.Any): this.type = js.native
     def on(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: String, selector: Unit, data: js.Any): this.type = js.native
+    def on(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: js.Object): this.type = js.native
-    def on(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
-    def on(events: js.Object, selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
-    def on(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def on(events: js.Object, selector: String): this.type = js.native
-    def on(
-      events: js.Object,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def on(events: js.Object, selector: String, data: js.Any): this.type = js.native
     def on(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: js.Object, selector: Unit, data: js.Any): this.type = js.native
+    def on(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: Event): this.type = js.native
-    def on(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
-    def on(events: Event, selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
-    def on(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def on(events: Event, selector: String): this.type = js.native
-    def on(
-      events: Event,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def on(events: Event, selector: String, data: js.Any): this.type = js.native
     def on(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: Event, selector: Unit, data: js.Any): this.type = js.native
+    def on(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     
     /**
       * Attaches single-use event handlers to the selected tracks. Returns a reference to the current AudioRunner
@@ -433,74 +379,29 @@ object audioMod {
       * @since 2.28.0
       */
     def one(events: String): this.type = js.native
-    def one(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
-    def one(events: String, selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
-    def one(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def one(events: String, selector: String): this.type = js.native
-    def one(
-      events: String,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def one(events: String, selector: String, data: js.Any): this.type = js.native
     def one(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: String, selector: Unit, data: js.Any): this.type = js.native
+    def one(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: js.Object): this.type = js.native
-    def one(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
-    def one(events: js.Object, selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
-    def one(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def one(events: js.Object, selector: String): this.type = js.native
-    def one(
-      events: js.Object,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def one(events: js.Object, selector: String, data: js.Any): this.type = js.native
     def one(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: js.Object, selector: Unit, data: js.Any): this.type = js.native
+    def one(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: Event): this.type = js.native
-    def one(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
-    def one(events: Event, selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
-    def one(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def one(events: Event, selector: String): this.type = js.native
-    def one(
-      events: Event,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): this.type = js.native
     def one(events: Event, selector: String, data: js.Any): this.type = js.native
     def one(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: Event, selector: Unit, data: js.Any): this.type = js.native
+    def one(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     
     /**
       * Pauses playback of the selected tracks.
@@ -760,25 +661,17 @@ object audioMod {
       * @since 2.28.0
       */
     def off(events: String): AudioTrack = js.native
-    def off(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def off(events: String, selector: String): AudioTrack = js.native
     def off(events: String, selector: String, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def off(events: String, selector: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def off(events: js.Object): AudioTrack = js.native
-    def off(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def off(events: js.Object, selector: String): AudioTrack = js.native
     def off(events: js.Object, selector: String, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def off(events: js.Object, selector: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def off(events: Event): AudioTrack = js.native
-    def off(events: Event, selector: js.UndefOr[scala.Nothing], handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def off(events: Event, selector: String): AudioTrack = js.native
     def off(events: Event, selector: String, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def off(events: Event, selector: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     
     /**
       * Attaches event handlers to the track. Returns a reference to the current AudioTrack instance for chaining.
@@ -789,74 +682,29 @@ object audioMod {
       * @since 2.28.0
       */
     def on(events: String): AudioTrack = js.native
-    def on(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
-    def on(events: String, selector: js.UndefOr[scala.Nothing], data: js.Any): AudioTrack = js.native
-    def on(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def on(events: String, selector: String): AudioTrack = js.native
-    def on(
-      events: String,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def on(events: String, selector: String, data: js.Any): AudioTrack = js.native
     def on(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: String, selector: Unit, data: js.Any): AudioTrack = js.native
+    def on(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: js.Object): AudioTrack = js.native
-    def on(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
-    def on(events: js.Object, selector: js.UndefOr[scala.Nothing], data: js.Any): AudioTrack = js.native
-    def on(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def on(events: js.Object, selector: String): AudioTrack = js.native
-    def on(
-      events: js.Object,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def on(events: js.Object, selector: String, data: js.Any): AudioTrack = js.native
     def on(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: js.Object, selector: Unit, data: js.Any): AudioTrack = js.native
+    def on(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: Event): AudioTrack = js.native
-    def on(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
-    def on(events: Event, selector: js.UndefOr[scala.Nothing], data: js.Any): AudioTrack = js.native
-    def on(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def on(events: Event, selector: String): AudioTrack = js.native
-    def on(
-      events: Event,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def on(events: Event, selector: String, data: js.Any): AudioTrack = js.native
     def on(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: Event, selector: Unit, data: js.Any): AudioTrack = js.native
+    def on(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     
     /**
       * Attaches single-use event handlers to the track. Returns a reference to the current AudioTrack
@@ -868,74 +716,29 @@ object audioMod {
       * @since 2.28.0
       */
     def one(events: String): AudioTrack = js.native
-    def one(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
-    def one(events: String, selector: js.UndefOr[scala.Nothing], data: js.Any): AudioTrack = js.native
-    def one(
-      events: String,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def one(events: String, selector: String): AudioTrack = js.native
-    def one(
-      events: String,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def one(events: String, selector: String, data: js.Any): AudioTrack = js.native
     def one(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: String, selector: Unit, data: js.Any): AudioTrack = js.native
+    def one(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: js.Object): AudioTrack = js.native
-    def one(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
-    def one(events: js.Object, selector: js.UndefOr[scala.Nothing], data: js.Any): AudioTrack = js.native
-    def one(
-      events: js.Object,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def one(events: js.Object, selector: String): AudioTrack = js.native
-    def one(
-      events: js.Object,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def one(events: js.Object, selector: String, data: js.Any): AudioTrack = js.native
     def one(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: js.Object, selector: Unit, data: js.Any): AudioTrack = js.native
+    def one(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: Event): AudioTrack = js.native
-    def one(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
-    def one(events: Event, selector: js.UndefOr[scala.Nothing], data: js.Any): AudioTrack = js.native
-    def one(
-      events: Event,
-      selector: js.UndefOr[scala.Nothing],
-      data: js.Any,
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def one(events: Event, selector: String): AudioTrack = js.native
-    def one(
-      events: Event,
-      selector: String,
-      data: js.UndefOr[scala.Nothing],
-      handler: js.Function1[/* event */ Event, Unit]
-    ): AudioTrack = js.native
     def one(events: Event, selector: String, data: js.Any): AudioTrack = js.native
     def one(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: Event, selector: Unit, data: js.Any): AudioTrack = js.native
+    def one(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     
     /**
       * Pauses playback of the track.

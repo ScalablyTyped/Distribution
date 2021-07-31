@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: WordApi 1.1]
   */
-@js.native
 trait RangeLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontLoadOptions] = js.native
+  var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var hyperlink: js.UndefOr[Boolean] = js.native
+  var hyperlink: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isEmpty: js.UndefOr[Boolean] = js.native
+  var isEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentBody: js.UndefOr[BodyLoadOptions] = js.native
+  var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.native
+  var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.native
+  var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTable: js.UndefOr[TableLoadOptions] = js.native
+  var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.native
+  var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: js.UndefOr[Boolean] = js.native
+  var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait RangeLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
 }
 object RangeLoadOptions {
   

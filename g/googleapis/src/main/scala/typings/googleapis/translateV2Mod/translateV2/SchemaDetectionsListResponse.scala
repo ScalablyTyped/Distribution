@@ -2,16 +2,14 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDetectionsListResponse extends StObject {
   
   /**
     * A detections contains detection results of several text
     */
-  var detections: js.UndefOr[js.Array[SchemaDetectionsResource]] = js.native
+  var detections: js.UndefOr[js.Array[SchemaDetectionsResource]] = js.undefined
 }
 object SchemaDetectionsListResponse {
   

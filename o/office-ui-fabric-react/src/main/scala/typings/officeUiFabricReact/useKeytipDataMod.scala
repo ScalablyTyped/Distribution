@@ -3,21 +3,22 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.keytipDataTypesMod.KeytipDataOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useKeytipDataMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/KeytipData/useKeytipData", "useKeytipData")
+  @JSImport("office-ui-fabric-react/lib/components/KeytipData/useKeytipData", JSImport.Namespace)
   @js.native
-  def useKeytipData(options: KeytipDataOptions): IKeytipData = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useKeytipData(options: KeytipDataOptions): IKeytipData = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipData")(options.asInstanceOf[js.Any]).asInstanceOf[IKeytipData]
+  
   trait IKeytipData extends StObject {
     
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
-    var keytipId: js.UndefOr[String] = js.native
+    var keytipId: js.UndefOr[String] = js.undefined
   }
   object IKeytipData {
     

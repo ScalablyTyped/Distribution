@@ -2,13 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionAfterRemoveEvent extends StObject {
   
-  var item: js.Any = js.native
+  var item: js.Any
 }
 object CollectionAfterRemoveEvent {
   

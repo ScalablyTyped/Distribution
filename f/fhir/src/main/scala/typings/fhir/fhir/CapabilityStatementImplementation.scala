@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If this describes a specific instance
   */
-@js.native
-trait CapabilityStatementImplementation extends BackboneElement {
+trait CapabilityStatementImplementation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Describes this specific instance
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Base URL for the installation
     */
-  var url: js.UndefOr[uri] = js.native
+  var url: js.UndefOr[uri] = js.undefined
 }
 object CapabilityStatementImplementation {
   

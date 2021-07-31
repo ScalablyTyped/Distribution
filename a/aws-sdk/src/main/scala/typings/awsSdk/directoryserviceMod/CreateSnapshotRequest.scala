@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSnapshotRequest extends StObject {
   
   /**
     * The identifier of the directory of which to take a snapshot.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The descriptive name to apply to the snapshot.
     */
-  var Name: js.UndefOr[SnapshotName] = js.native
+  var Name: js.UndefOr[SnapshotName] = js.undefined
 }
 object CreateSnapshotRequest {
   

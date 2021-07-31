@@ -2,13 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
-  var backgroundColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var backgroundColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -19,7 +17,7 @@ trait BackgroundColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] 
     *
     * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
     */
-  var bg: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var bg: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BackgroundColorProps {
   
@@ -30,7 +28,7 @@ object BackgroundColorProps {
   }
   
   @scala.inline
-  implicit class BackgroundColorPropsMutableBuilder[Self <: BackgroundColorProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BackgroundColorProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BackgroundColorPropsMutableBuilder[Self <: BackgroundColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundColorProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBackgroundColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])

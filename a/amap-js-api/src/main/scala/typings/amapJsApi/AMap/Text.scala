@@ -2,11 +2,12 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Text[ExtraData] extends Marker[ExtraData] {
+trait Text[ExtraData]
+  extends StObject
+     with Marker[ExtraData] {
   
   /**
     * 标记显示的文本内容
@@ -29,21 +30,21 @@ object Text {
   
   type EventMap[I] = typings.amapJsApi.AMap.Marker.EventMap[I]
   
-  @js.native
   trait Options
-    extends typings.amapJsApi.AMap.Marker.Options[js.Any] {
+    extends StObject
+       with typings.amapJsApi.AMap.Marker.Options[js.Any] {
     
     /**
       * 文本内容
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * 对齐方式
       */
-    var textAlign: js.UndefOr[TextAlign] = js.native
+    var textAlign: js.UndefOr[TextAlign] = js.undefined
     
-    var verticalAlign: js.UndefOr[VerticalAlign] = js.native
+    var verticalAlign: js.UndefOr[VerticalAlign] = js.undefined
   }
   object Options {
     

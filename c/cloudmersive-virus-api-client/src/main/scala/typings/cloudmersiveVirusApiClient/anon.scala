@@ -3,15 +3,13 @@ package typings.cloudmersiveVirusApiClient
 import typings.cloudmersiveVirusApiClient.mod.ApiInstanceAuthentications
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Apikey extends StObject {
     
-    var Apikey: ApiInstanceAuthentications = js.native
+    var Apikey: ApiInstanceAuthentications
   }
   object Apikey {
     

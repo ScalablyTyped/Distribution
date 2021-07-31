@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISignaturePromptInfoSelectable extends StObject {
   
-  def Clone(): ISignaturePromptInfoSelectable = js.native
+  def Clone(): ISignaturePromptInfoSelectable
   
-  var PromptInfos: ISignaturePromptInfos = js.native
+  var PromptInfos: ISignaturePromptInfos
 }
 object ISignaturePromptInfoSelectable {
   

@@ -10,9 +10,9 @@ Random utility functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/random |
 | Keywords           | Ethereum, ethers, random |
-| # releases         | 26 |
-| # dependents       | 19 |
-| # downloads        | 576860 |
+| # releases         | 29 |
+| # dependents       | 22 |
+| # downloads        | 1197412 |
 | # stars            | 0 |
 
 ## Links

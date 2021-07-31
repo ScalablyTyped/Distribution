@@ -9,15 +9,13 @@ import typings.aureliaDependencyInjection.mod.Impl
 import typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends StObject {
     
-    def get(container: Container, key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): TImpl = js.native
+    def get(container: Container, key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): TImpl
   }
   object `0` {
     
@@ -28,17 +26,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_, _, _], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self with (`0`[TBase, TImpl, TArgs])) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (`0`[TBase, TImpl, TArgs])) extends AnyVal {
       
       @scala.inline
       def setGet(value: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var inject: js.UndefOr[js.Any] = js.native
+    var inject: js.UndefOr[js.Any] = js.undefined
   }
   object `1` {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Decorates extends StObject {
     
     var decorates: js.UndefOr[
         js.Function1[/* key */ js.Any, /* is aurelia-dependency-injection.anon.Get */ Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object Decorates {
     
@@ -85,10 +81,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
-    def get(container: Container, key: js.Any): js.Any = js.native
+    def get(container: Container, key: js.Any): js.Any
   }
   object Get {
     
@@ -106,14 +101,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Inject[TArgs /* <: Args[TBase] */, TBase] extends StObject {
     
     var inject: js.UndefOr[
         js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Inject {
     
@@ -124,7 +118,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class InjectMutableBuilder[Self <: Inject[_, _], TArgs /* <: Args[TBase] */, TBase] (val x: Self with (Inject[TArgs, TBase])) extends AnyVal {
+    implicit class InjectMutableBuilder[Self <: Inject[?, ?], TArgs /* <: Args[TBase] */, TBase] (val x: Self & (Inject[TArgs, TBase])) extends AnyVal {
       
       @scala.inline
       def setInject(
@@ -145,7 +139,8 @@ object anon {
   
   @js.native
   trait TypeofContainer
-    extends Instantiable0[Container]
+    extends StObject
+       with Instantiable0[Container]
        with Instantiable1[/* configuration */ ContainerConfiguration, Container] {
     
     var instance: Container = js.native

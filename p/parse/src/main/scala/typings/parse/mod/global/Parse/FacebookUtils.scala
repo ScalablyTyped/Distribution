@@ -2,7 +2,6 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,39 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object FacebookUtils {
   
-  @JSGlobal("Parse.FacebookUtils.init")
+  @JSGlobal("Parse.FacebookUtils")
   @js.native
-  def init(): Unit = js.native
-  @JSGlobal("Parse.FacebookUtils.init")
-  @js.native
-  def init(options: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("Parse.FacebookUtils.isLinked")
-  @js.native
-  def isLinked(user: typings.parse.mod.global.Parse.User[Attributes]): Boolean = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  @scala.inline
+  def init(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("Parse.FacebookUtils.link")
-  @js.native
-  def link(user: typings.parse.mod.global.Parse.User[Attributes], permissions: js.Any): Unit = js.native
-  @JSGlobal("Parse.FacebookUtils.link")
-  @js.native
-  def link(
-    user: typings.parse.mod.global.Parse.User[Attributes],
-    permissions: js.Any,
-    options: SuccessFailureOptions
-  ): Unit = js.native
+  @scala.inline
+  def isLinked(user: User[Attributes]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinked")(user.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("Parse.FacebookUtils.logIn")
-  @js.native
-  def logIn(permissions: js.Any): Unit = js.native
-  @JSGlobal("Parse.FacebookUtils.logIn")
-  @js.native
-  def logIn(permissions: js.Any, options: FullOptions): Unit = js.native
+  @scala.inline
+  def link(user: User[Attributes], permissions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(user.asInstanceOf[js.Any], permissions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def link(user: User[Attributes], permissions: js.Any, options: SuccessFailureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(user.asInstanceOf[js.Any], permissions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Parse.FacebookUtils.unlink")
-  @js.native
-  def unlink(user: typings.parse.mod.global.Parse.User[Attributes]): Unit = js.native
-  @JSGlobal("Parse.FacebookUtils.unlink")
-  @js.native
-  def unlink(user: typings.parse.mod.global.Parse.User[Attributes], options: SuccessFailureOptions): Unit = js.native
+  @scala.inline
+  def logIn(permissions: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logIn(permissions: js.Any, options: FullOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logIn")(permissions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def unlink(user: User[Attributes]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unlink(user: User[Attributes], options: SuccessFailureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

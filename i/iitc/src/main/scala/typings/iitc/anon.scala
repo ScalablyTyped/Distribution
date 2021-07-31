@@ -18,19 +18,17 @@ import typings.iitc.inteltypesMod.Intel.MarkUpPortal
 import typings.iitc.inteltypesMod.Intel.MarkUpText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attackfrequency extends StObject {
     
-    var attack_frequency: Double = js.native
+    var attack_frequency: Double
     
-    var force_amplifier: Double = js.native
+    var force_amplifier: Double
     
-    var hit_bonus: Double = js.native
+    var hit_bonus: Double
   }
   object Attackfrequency {
     
@@ -54,14 +52,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Burnout extends StObject {
     
-    var burnout: Double = js.native
+    var burnout: Double
     
-    var cooldown: Double = js.native
+    var cooldown: Double
     
-    var hacks: Double = js.native
+    var hacks: Double
   }
   object Burnout {
     
@@ -85,18 +82,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CaptureAp extends StObject {
     
-    var captureAp: Double = js.native
+    var captureAp: Double
     
-    var destroyAp: Double = js.native
+    var destroyAp: Double
     
-    var destroyResoAp: Double = js.native
+    var destroyResoAp: Double
     
-    var enemyAp: Double = js.native
+    var enemyAp: Double
     
-    var friendlyAp: Double = js.native
+    var friendlyAp: Double
   }
   object CaptureAp {
     
@@ -126,22 +122,21 @@ object anon {
     }
   }
   
-  @js.native
   trait DeployCount extends StObject {
     
-    var captureAp: Double = js.native
+    var captureAp: Double
     
-    var deployCount: Double = js.native
+    var deployCount: Double
     
-    var destroyAp: Double = js.native
+    var destroyAp: Double
     
-    var enemyAp: Double = js.native
+    var enemyAp: Double
     
-    var friendlyAp: Double = js.native
+    var friendlyAp: Double
     
-    var resoAp: Double = js.native
+    var resoAp: Double
     
-    var upgradeCount: Double = js.native
+    var upgradeCount: Double
   }
   object DeployCount {
     
@@ -185,22 +180,23 @@ object anon {
     }
   }
   
-  @js.native
-  trait Details extends EventPortalDetailLoaded {
+  trait Details
+    extends StObject
+       with EventPortalDetailLoaded {
     
-    var details: PortalDataDetail = js.native
+    var details: PortalDataDetail
     
-    var ent: PortalDetailEnt = js.native
+    var ent: PortalDetailEnt
     
-    var guid: String = js.native
+    var guid: String
     
-    var success: `true` = js.native
+    var success: `true`
   }
   object Details {
     
     @scala.inline
-    def apply(details: PortalDataDetail, ent: PortalDetailEnt, guid: String, success: `true`): Details = {
-      val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], ent = ent.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def apply(details: PortalDataDetail, ent: PortalDetailEnt, guid: String): Details = {
+      val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], ent = ent.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[Details]
     }
     
@@ -221,16 +217,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Excess extends StObject {
     
-    var excess: Double = js.native
+    var excess: Double
     
-    var linkDefenseBoost: Double = js.native
+    var linkDefenseBoost: Double
     
-    var links: Double = js.native
+    var links: Double
     
-    var shields: Double = js.native
+    var shields: Double
   }
   object Excess {
     
@@ -257,12 +252,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Fragment extends StObject {
     
-    var fragment: js.Any = js.native
+    var fragment: js.Any
     
-    var target: js.Any = js.native
+    var target: js.Any
   }
   object Fragment {
     
@@ -283,18 +277,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait Guid extends EventPortalDetailLoaded {
+  trait Guid
+    extends StObject
+       with EventPortalDetailLoaded {
     
-    var guid: String = js.native
+    var guid: String
     
-    var success: `false` = js.native
+    var success: `false`
   }
   object Guid {
     
     @scala.inline
-    def apply(guid: String, success: `false`): Guid = {
-      val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def apply(guid: String): Guid = {
+      val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any], success = false)
       __obj.asInstanceOf[Guid]
     }
     
@@ -309,26 +304,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Health extends StObject {
     
-    var health: Double = js.native
+    var health: Double
     
-    var image: String = js.native
+    var image: String
     
-    var latE6: Double = js.native
+    var latE6: Double
     
-    var level: Double = js.native
+    var level: Double
     
-    var lngE6: Double = js.native
+    var lngE6: Double
     
-    var resCount: Double = js.native
+    var resCount: Double
     
-    var team: Double = js.native
+    var team: Double
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: portal_ = js.native
+    var `type`: portal_
   }
   object Health {
     
@@ -341,11 +335,10 @@ object anon {
       lngE6: Double,
       resCount: Double,
       team: Double,
-      title: String,
-      `type`: portal_
+      title: String
     ): Health = {
       val __obj = js.Dynamic.literal(health = health.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], latE6 = latE6.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], lngE6 = lngE6.asInstanceOf[js.Any], resCount = resCount.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("portal")
       __obj.asInstanceOf[Health]
     }
     
@@ -381,12 +374,11 @@ object anon {
     }
   }
   
-  @js.native
   trait In extends StObject {
     
-    var in: js.Array[LinkGUID] = js.native
+    var in: js.Array[LinkGUID]
     
-    var out: js.Array[LinkGUID] = js.native
+    var out: js.Array[LinkGUID]
   }
   object In {
     
@@ -413,14 +405,13 @@ object anon {
     }
   }
   
-  @js.native
   trait LatE6 extends StObject {
     
-    var guid: String = js.native
+    var guid: String
     
-    var latE6: Double = js.native
+    var latE6: Double
     
-    var lngE6: Double = js.native
+    var lngE6: Double
   }
   object LatE6 {
     
@@ -444,16 +435,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Markup extends StObject {
     
-    var markup: js.Array[MarkUpPortal | MarkUpPlayer | MarkUpText] = js.native
+    var markup: js.Array[MarkUpPortal | MarkUpPlayer | MarkUpText]
     
-    var plextType: SYSTEM_BROADCAST | SYSTEM_NARROWCAST | PLAYER_GENERATED = js.native
+    var plextType: SYSTEM_BROADCAST | SYSTEM_NARROWCAST | PLAYER_GENERATED
     
-    var team: RESISTANCE | ENLIGHTENED = js.native
+    var team: RESISTANCE | ENLIGHTENED
     
-    var text: String = js.native
+    var text: String
   }
   object Markup {
     
@@ -488,10 +478,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SelectedPortalGuid extends StObject {
     
-    var selectedPortalGuid: PortalGUID = js.native
+    var selectedPortalGuid: PortalGUID
   }
   object SelectedPortalGuid {
     

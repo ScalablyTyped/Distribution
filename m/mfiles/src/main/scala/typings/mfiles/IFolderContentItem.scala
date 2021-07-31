@@ -3,21 +3,19 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFolderContentItemType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderContentItem extends StObject {
   
-  val FolderContentItemType: MFFolderContentItemType = js.native
+  val FolderContentItemType: MFFolderContentItemType
   
-  val ObjectVersion: IObjectVersion = js.native
+  val ObjectVersion: IObjectVersion
   
-  val PropertyFolder: ITypedValue = js.native
+  val PropertyFolder: ITypedValue
   
-  val TraditionalFolder: ILookup = js.native
+  val TraditionalFolder: ILookup
   
-  val View: IView = js.native
+  val View: IView
 }
 object IFolderContentItem {
   

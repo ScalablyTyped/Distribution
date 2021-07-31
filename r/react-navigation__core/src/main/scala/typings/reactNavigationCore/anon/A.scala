@@ -3,15 +3,13 @@ package typings.reactNavigationCore.anon
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A[ParamList /* <: ParamListBase */] extends StObject {
   
-  var a: ParamList = js.native
+  var a: ParamList
   
-  var b: /* keyof ParamList */ String = js.native
+  var b: /* keyof ParamList */ String
 }
 object A {
   
@@ -22,7 +20,7 @@ object A {
   }
   
   @scala.inline
-  implicit class AMutableBuilder[Self <: A[_], ParamList /* <: ParamListBase */] (val x: Self with A[ParamList]) extends AnyVal {
+  implicit class AMutableBuilder[Self <: A[?], ParamList /* <: ParamListBase */] (val x: Self & A[ParamList]) extends AnyVal {
     
     @scala.inline
     def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])

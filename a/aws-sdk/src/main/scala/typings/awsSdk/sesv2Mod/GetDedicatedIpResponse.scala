@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDedicatedIpResponse extends StObject {
   
   /**
     * An object that contains information about a dedicated IP address.
     */
-  var DedicatedIp: js.UndefOr[typings.awsSdk.sesv2Mod.DedicatedIp] = js.native
+  var DedicatedIp: js.UndefOr[typings.awsSdk.sesv2Mod.DedicatedIp] = js.undefined
 }
 object GetDedicatedIpResponse {
   

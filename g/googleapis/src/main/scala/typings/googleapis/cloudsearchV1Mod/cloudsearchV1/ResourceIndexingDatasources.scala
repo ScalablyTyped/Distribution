@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Indexing$Datasources")
@@ -31,7 +30,7 @@ class ResourceIndexingDatasources protected () extends StObject {
     */
   def deleteSchema(): GaxiosPromise[SchemaOperation] = js.native
   def deleteSchema(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deleteSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deleteSchema(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteSchema(params: ParamsResourceIndexingDatasourcesDeleteschema): GaxiosPromise[SchemaOperation] = js.native
   def deleteSchema(
     params: ParamsResourceIndexingDatasourcesDeleteschema,
@@ -64,7 +63,7 @@ class ResourceIndexingDatasources protected () extends StObject {
     */
   def getSchema(): GaxiosPromise[SchemaSchema] = js.native
   def getSchema(callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
-  def getSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
+  def getSchema(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
   def getSchema(params: ParamsResourceIndexingDatasourcesGetschema): GaxiosPromise[SchemaSchema] = js.native
   def getSchema(params: ParamsResourceIndexingDatasourcesGetschema, callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
   def getSchema(
@@ -96,7 +95,7 @@ class ResourceIndexingDatasources protected () extends StObject {
     */
   def updateSchema(): GaxiosPromise[SchemaOperation] = js.native
   def updateSchema(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def updateSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def updateSchema(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateSchema(params: ParamsResourceIndexingDatasourcesUpdateschema): GaxiosPromise[SchemaOperation] = js.native
   def updateSchema(
     params: ParamsResourceIndexingDatasourcesUpdateschema,

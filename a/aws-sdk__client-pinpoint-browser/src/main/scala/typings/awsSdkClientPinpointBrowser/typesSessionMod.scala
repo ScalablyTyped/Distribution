@@ -2,33 +2,31 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSessionMod {
   
-  @js.native
   trait Session extends StObject {
     
     /**
       * The duration of the session, in milliseconds.
       */
-    var Duration: js.UndefOr[Double] = js.native
+    var Duration: js.UndefOr[Double] = js.undefined
     
     /**
       * A unique identifier for the session.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * The date and time when the session began.
       */
-    var StartTimestamp: js.UndefOr[String] = js.native
+    var StartTimestamp: js.UndefOr[String] = js.undefined
     
     /**
       * The date and time when the session ended.
       */
-    var StopTimestamp: js.UndefOr[String] = js.native
+    var StopTimestamp: js.UndefOr[String] = js.undefined
   }
   object Session {
     

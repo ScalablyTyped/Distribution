@@ -2,13 +2,11 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDistributionBundleResult extends StObject {
   
-  var operation: js.UndefOr[Operation] = js.native
+  var operation: js.UndefOr[Operation] = js.undefined
 }
 object UpdateDistributionBundleResult {
   

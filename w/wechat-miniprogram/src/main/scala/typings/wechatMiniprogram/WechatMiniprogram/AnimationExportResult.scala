@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** animationData */
-@js.native
 trait AnimationExportResult extends StObject {
   
-  var actions: js.Array[IAnyObject] = js.native
+  var actions: js.Array[IAnyObject]
 }
 object AnimationExportResult {
   

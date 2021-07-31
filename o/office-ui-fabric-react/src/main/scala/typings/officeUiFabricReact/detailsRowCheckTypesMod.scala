@@ -10,17 +10,15 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsRowCheckTypesMod {
   
-  @js.native
   trait IDetailsCheckboxProps extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDetailsCheckboxProps {
     
@@ -44,65 +42,66 @@ object detailsRowCheckTypesMod {
     }
   }
   
-  @js.native
-  trait IDetailsRowCheckProps extends HTMLAttributes[HTMLElement] {
+  trait IDetailsRowCheckProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Is any selected - also true for isSelectionModal
       */
-    var anySelected: js.UndefOr[Boolean] = js.native
+    var anySelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Can this checkbox be selectable
       */
-    var canSelect: Boolean = js.native
+    var canSelect: Boolean
     
     /**
       * The classname to be passed down to Check component
       */
-    var checkClassName: js.UndefOr[String] = js.native
+    var checkClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Is this in compact mode?
       */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is the check part of the header in a DetailsList
       */
-    var isHeader: js.UndefOr[Boolean] = js.native
+    var isHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not this checkbox is visible
       */
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If provided, can be used to render a custom checkbox
       */
-    var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.native
+    var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.undefined
     
     /**
       * Whether or not this check is selected
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Style override
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsRowCheckStyleProps, IDetailsRowCheckStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsRowCheckStyleProps, IDetailsRowCheckStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether to use fast icon and check components. The icons can't be targeted by customization
       * but are still customizable via class names.
       * @defaultvalue true
       */
-    var useFastIcons: js.UndefOr[Boolean] = js.native
+    var useFastIcons: js.UndefOr[Boolean] = js.undefined
   }
   object IDetailsRowCheckProps {
     
@@ -186,25 +185,24 @@ object detailsRowCheckTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRowCheck.types.IDetailsRowCheckProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRowCheck.types.IDetailsRowCheckProps, 'compact' | 'isHeader' | 'selected' | 'anySelected' | 'canSelect' | 'className'> & {  isVisible :boolean | undefined} */
-  @js.native
   trait IDetailsRowCheckStyleProps extends StObject {
     
-    var anySelected: js.UndefOr[Boolean] = js.native
+    var anySelected: js.UndefOr[Boolean] = js.undefined
     
-    var canSelect: Boolean = js.native
+    var canSelect: Boolean
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var isHeader: js.UndefOr[Boolean] = js.native
+    var isHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Is checkbox visible */
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDetailsRowCheckStyleProps {
     
@@ -261,15 +259,14 @@ object detailsRowCheckTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsRowCheckStyles extends StObject {
     
     /** @deprecated Use `root` (they're applied to the same element) */
-    var check: IStyle = js.native
+    var check: IStyle
     
-    var isDisabled: IStyle = js.native
+    var isDisabled: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDetailsRowCheckStyles {
     

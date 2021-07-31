@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RRSetRoutingPolicyWrrPolicyWrrPolicyItem extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var rrdatas: js.UndefOr[js.Array[String]] = js.native
+  var rrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
   /** DNSSEC generated signatures for the above wrr_rrdata. */
-  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.native
+  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The weight corresponding to this subset of rrdata. When multiple WeightedRoundRobinPolicyItems are configured, the probability of returning an rrset is proportional to its weight
     * relative to the sum of weights configured for all items. This weight should be a decimal in the range [0,1].
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object RRSetRoutingPolicyWrrPolicyWrrPolicyItem {
   

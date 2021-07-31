@@ -2,46 +2,44 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dashboard extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The time that this dataset was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * Dashboard ID.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.native
+  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The last time that this dataset was published.
     */
-  var LastPublishedTime: js.UndefOr[Timestamp_] = js.native
+  var LastPublishedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The last time that this dataset was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * A display name for the dashboard.
     */
-  var Name: js.UndefOr[DashboardName] = js.native
+  var Name: js.UndefOr[DashboardName] = js.undefined
   
   /**
     * Version.
     */
-  var Version: js.UndefOr[DashboardVersion] = js.native
+  var Version: js.UndefOr[DashboardVersion] = js.undefined
 }
 object Dashboard {
   

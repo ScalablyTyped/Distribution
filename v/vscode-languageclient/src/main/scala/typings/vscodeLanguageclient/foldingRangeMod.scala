@@ -12,7 +12,6 @@ import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRange
 import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foldingRangeMod {
@@ -27,7 +26,6 @@ object foldingRangeMod {
     var asFoldingRanges: js.Any = js.native
   }
   
-  @js.native
   trait FoldingRangeProviderMiddleware extends StObject {
     
     var provideFoldingRanges: js.UndefOr[
@@ -39,7 +37,7 @@ object foldingRangeMod {
           /* next */ ProvideFoldingRangeSignature, 
           ProviderResult[js.Array[FoldingRange]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object FoldingRangeProviderMiddleware {
     

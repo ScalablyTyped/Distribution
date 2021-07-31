@@ -12,7 +12,7 @@ Prevent the screen of the mobile device from falling asleep.
 | Keywords           | ecosystem:cordova, cordova-ios, cordova-wp8, cordova-windows, cordova-android, cordova-firefoxos |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 157637 |
+| # downloads        | 187103 |
 | # stars            | 3 |
 
 ## Links

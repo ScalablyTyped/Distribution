@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectTypes extends StObject {
   
   /**
     * The type of the object in the base commit of the merge.
     */
-  var base: js.UndefOr[ObjectTypeEnum] = js.native
+  var base: js.UndefOr[ObjectTypeEnum] = js.undefined
   
   /**
     * The type of the object in the destination branch.
     */
-  var destination: js.UndefOr[ObjectTypeEnum] = js.native
+  var destination: js.UndefOr[ObjectTypeEnum] = js.undefined
   
   /**
     * The type of the object in the source branch.
     */
-  var source: js.UndefOr[ObjectTypeEnum] = js.native
+  var source: js.UndefOr[ObjectTypeEnum] = js.undefined
 }
 object ObjectTypes {
   

@@ -8,44 +8,41 @@ import typings.std.Set
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerMod {
   
-  @js.native
   trait Connection extends StObject
   
-  @js.native
   trait Peer extends StObject {
     
-    def attachConnection(conn: Connection): Unit = js.native
+    def attachConnection(conn: Connection): Unit
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var conn: Connection = js.native
+    var conn: Connection
     
-    var id: ^ = js.native
+    var id: ^
     
-    val isConnected: Boolean = js.native
+    val isConnected: Boolean
     
-    val isWritable: Boolean = js.native
+    val isWritable: Boolean
     
-    var protocols: js.Array[String] = js.native
+    var protocols: js.Array[String]
     
-    def sendMessages(msgs: js.Array[Message]): Unit = js.native
+    def sendMessages(msgs: js.Array[Message]): Unit
     
-    def sendSubscriptions(topics: js.Array[String]): Unit = js.native
+    def sendSubscriptions(topics: js.Array[String]): Unit
     
-    def sendUnsubscriptions(topics: js.Array[String]): Unit = js.native
+    def sendUnsubscriptions(topics: js.Array[String]): Unit
     
-    var stream: Pushable[Uint8Array] = js.native
+    var stream: Pushable[Uint8Array]
     
-    var topics: Set[String] = js.native
+    var topics: Set[String]
     
-    def updateSubscriptions(subOpts: js.Array[SubOpts]): Unit = js.native
+    def updateSubscriptions(subOpts: js.Array[SubOpts]): Unit
     
-    def write(buf: Uint8Array): Unit = js.native
+    def write(buf: Uint8Array): Unit
   }
   object Peer {
     
@@ -120,14 +117,13 @@ object peerMod {
     }
   }
   
-  @js.native
   trait Registrar extends StObject {
     
-    def handle(): Unit = js.native
+    def handle(): Unit
     
-    def register(): Unit = js.native
+    def register(): Unit
     
-    def unregister(): Unit = js.native
+    def unregister(): Unit
   }
   object Registrar {
     

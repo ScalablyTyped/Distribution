@@ -5,7 +5,6 @@ import typings.jpm.FFAddonSDK.ContentWorker
 import typings.jpm.FFAddonSDK.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object privateBrowsingMod {
   
-  @JSImport("sdk/private-browsing", "isPrivate")
+  @JSImport("sdk/private-browsing", JSImport.Namespace)
   @js.native
-  def isPrivate(`object`: BrowserWindow): Boolean = js.native
-  @JSImport("sdk/private-browsing", "isPrivate")
-  @js.native
-  def isPrivate(`object`: ContentWorker): Boolean = js.native
-  @JSImport("sdk/private-browsing", "isPrivate")
-  @js.native
-  def isPrivate(`object`: Tab): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isPrivate(`object`: BrowserWindow): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isPrivate(`object`: ContentWorker): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isPrivate(`object`: Tab): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to page through the document in steps of the displayed size. */
-@js.native
-trait XScreenCursor extends XInterface {
+trait XScreenCursor
+  extends StObject
+     with XInterface {
   
   /** scrolls the view forward by one visible page. */
-  def screenDown(): Boolean = js.native
+  def screenDown(): Boolean
   
   /** scrolls the view backward by one visible page. */
-  def screenUp(): Boolean = js.native
+  def screenUp(): Boolean
 }
 object XScreenCursor {
   

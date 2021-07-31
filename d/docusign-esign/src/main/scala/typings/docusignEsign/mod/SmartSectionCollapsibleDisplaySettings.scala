@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartSectionCollapsibleDisplaySettings extends StObject {
   
-  var arrowClosed: js.UndefOr[String] = js.native
+  var arrowClosed: js.UndefOr[String] = js.undefined
   
-  var arrowColor: js.UndefOr[String] = js.native
+  var arrowColor: js.UndefOr[String] = js.undefined
   
-  var arrowLocation: js.UndefOr[String] = js.native
+  var arrowLocation: js.UndefOr[String] = js.undefined
   
-  var arrowOpen: js.UndefOr[String] = js.native
+  var arrowOpen: js.UndefOr[String] = js.undefined
   
-  var arrowSize: js.UndefOr[String] = js.native
+  var arrowSize: js.UndefOr[String] = js.undefined
   
-  var arrowStyle: js.UndefOr[String] = js.native
+  var arrowStyle: js.UndefOr[String] = js.undefined
   
-  var containerStyle: js.UndefOr[String] = js.native
+  var containerStyle: js.UndefOr[String] = js.undefined
   
-  var labelStyle: js.UndefOr[String] = js.native
+  var labelStyle: js.UndefOr[String] = js.undefined
   
-  var onlyArrowIsClickable: js.UndefOr[Boolean] = js.native
+  var onlyArrowIsClickable: js.UndefOr[Boolean] = js.undefined
   
-  var outerLabelAndArrowStyle: js.UndefOr[String] = js.native
+  var outerLabelAndArrowStyle: js.UndefOr[String] = js.undefined
 }
 object SmartSectionCollapsibleDisplaySettings {
   

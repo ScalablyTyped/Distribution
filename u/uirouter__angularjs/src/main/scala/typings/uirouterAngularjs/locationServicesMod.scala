@@ -8,7 +8,6 @@ import typings.uirouterCore.coreservicesMod.LocationServices
 import typings.uirouterCore.mod.UIRouter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationServicesMod {
@@ -16,7 +15,8 @@ object locationServicesMod {
   @JSImport("@uirouter/angularjs/lib/locationServices", "Ng1LocationServices")
   @js.native
   class Ng1LocationServices protected ()
-    extends LocationConfig
+    extends StObject
+       with LocationConfig
        with LocationServices {
     def this($locationProvider: ILocationProvider) = this()
     
@@ -73,6 +73,10 @@ object locationServicesMod {
   /* static members */
   object Ng1LocationServices {
     
+    @JSImport("@uirouter/angularjs/lib/locationServices", "Ng1LocationServices")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Applys ng1-specific path parameter encoding
       *
@@ -85,8 +89,7 @@ object locationServicesMod {
       *
       * @param router
       */
-    @JSImport("@uirouter/angularjs/lib/locationServices", "Ng1LocationServices.monkeyPatchPathParameterType")
-    @js.native
-    def monkeyPatchPathParameterType(router: UIRouter): Unit = js.native
+    @scala.inline
+    def monkeyPatchPathParameterType(router: UIRouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monkeyPatchPathParameterType")(router.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

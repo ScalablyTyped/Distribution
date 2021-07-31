@@ -3,13 +3,11 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.Flag.OFF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceLoadingOffInfo extends StObject {
   
-  var loading: OFF = js.native
+  var loading: OFF
 }
 object PersistenceLoadingOffInfo {
   

@@ -3,21 +3,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerLastContact extends StObject {
   
   /**
     * account for which customer was last contacted
     */
-  var account: String = js.native
+  var account: String
   
   /**
     * Date on which the custoemr was last contacted
     */
-  var lastContactDate: Date = js.native
+  var lastContactDate: Date
 }
 object CustomerLastContact {
   

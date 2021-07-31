@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the ModifyAckDeadline method.
   */
-@js.native
 trait SchemaModifyAckDeadlineRequest extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaModifyAckDeadlineRequest extends StObject {
     * call was made. Specifying zero may immediately make the message available
     * for another pull request.
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * The acknowledgment ID. Either this or ack_ids must be populated, but not
     * both.
     */
-  var ackId: js.UndefOr[String] = js.native
+  var ackId: js.UndefOr[String] = js.undefined
   
   /**
     * List of acknowledgment IDs.
     */
-  var ackIds: js.UndefOr[js.Array[String]] = js.native
+  var ackIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaModifyAckDeadlineRequest {
   

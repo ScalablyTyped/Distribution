@@ -2,32 +2,30 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGPathSegArcRel extends StObject {
   
   @JSName("MSHTML.SVGPathSegArcRel_typekey")
-  var MSHTMLDotSVGPathSegArcRel_typekey: SVGPathSegArcRel = js.native
+  var MSHTMLDotSVGPathSegArcRel_typekey: SVGPathSegArcRel
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var largeArcFlag: Boolean = js.native
+  var largeArcFlag: Boolean
   
-  var pathSegType: Double = js.native
+  var pathSegType: Double
   
-  val pathSegTypeAsLetter: String = js.native
+  val pathSegTypeAsLetter: String
   
-  var r1: Double = js.native
+  var r1: Double
   
-  var r2: Double = js.native
+  var r2: Double
   
-  var sweepFlag: Boolean = js.native
+  var sweepFlag: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object SVGPathSegArcRel {
   

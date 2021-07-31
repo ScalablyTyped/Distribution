@@ -3,89 +3,84 @@ package typings.osService
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("os-service", "add")
+  @JSImport("os-service", JSImport.Namespace)
   @js.native
-  def add(name: String): Unit = js.native
-  @JSImport("os-service", "add")
-  @js.native
-  def add(name: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("os-service", "add")
-  @js.native
-  def add(name: String, opts: AddOptions, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("os-service", "remove")
-  @js.native
-  def remove(name: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  @scala.inline
+  def add(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def add(name: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def add(name: String, opts: AddOptions, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("os-service", "run")
-  @js.native
-  def run(stopCallback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def remove(name: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("os-service", "stop")
-  @js.native
-  def stop(): Unit = js.native
-  @JSImport("os-service", "stop")
-  @js.native
-  def stop(rcode: Double): Unit = js.native
+  @scala.inline
+  def run(stopCallback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(stopCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  @scala.inline
+  def stop(rcode: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(rcode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait AddOptions extends StObject {
     
     /**
       * An array of strings specifying other services this service depends on, this is optional
       */
-    var dependencies: js.UndefOr[js.Array[String]] = js.native
+    var dependencies: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The services display name, defaults to the name parameter. T
       * his parameter will be used on Windows platforms only
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /**
       * An array of strings specifying parameters to pass to nodePath, defaults to []
       */
-    var nodeArgs: js.UndefOr[js.Array[String]] = js.native
+    var nodeArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The fully qualified path to the node binary used to run the service
       * (i.e. c:\Program Files\nodejs\node.exe, defaults to the value of process.execPath
       */
-    var nodePath: js.UndefOr[String] = js.native
+    var nodePath: js.UndefOr[String] = js.undefined
     
     /**
       * See the username parameter
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * An array of strings specifying parameters to pass to programPath, defaults to []
       */
-    var programArgs: js.UndefOr[js.Array[String]] = js.native
+    var programArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The program to run using nodePath, defaults to the value of process.argv[1]
       */
-    var programPath: js.UndefOr[String] = js.native
+    var programPath: js.UndefOr[String] = js.undefined
     
     /**
       * An array of numbers specifying Linux run-levels at which the service should be started
       * for Linux platforms, defaults to [2, 3, 4, 5], this is only used when chkconfig or
       * update-rc.d is used to install a service
       */
-    var runLevels: js.UndefOr[js.Array[Double]] = js.native
+    var runLevels: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * For when systemd will be used a target can be specified for the WantedBy
       * attribute under the [Install] section in the generated systemd unit file,
       * defaults to multi-user.target
       */
-    var systemdWantedBy: js.UndefOr[String] = js.native
+    var systemdWantedBy: js.UndefOr[String] = js.undefined
     
     /**
       * For Windows platforms a username and password can be specified,
@@ -93,7 +88,7 @@ object mod {
       * see the CreateService() functions win32 API documentation for
       * details on the format of the username, on all other platforms this parameter is ignored
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object AddOptions {
     

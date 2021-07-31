@@ -2,15 +2,13 @@ package typings.roslib.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Topics extends StObject {
   
-  var topics: js.Array[java.lang.String] = js.native
+  var topics: js.Array[java.lang.String]
   
-  var types: js.Array[java.lang.String] = js.native
+  var types: js.Array[java.lang.String]
 }
 object Topics {
   

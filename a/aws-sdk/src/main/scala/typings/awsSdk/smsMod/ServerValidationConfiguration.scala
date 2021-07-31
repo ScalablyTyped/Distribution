@@ -2,33 +2,31 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerValidationConfiguration extends StObject {
   
   /**
     * The name of the configuration.
     */
-  var name: js.UndefOr[NonEmptyStringWithMaxLen255] = js.native
+  var name: js.UndefOr[NonEmptyStringWithMaxLen255] = js.undefined
   
-  var server: js.UndefOr[Server] = js.native
+  var server: js.UndefOr[Server] = js.undefined
   
   /**
     * The validation strategy.
     */
-  var serverValidationStrategy: js.UndefOr[ServerValidationStrategy] = js.native
+  var serverValidationStrategy: js.UndefOr[ServerValidationStrategy] = js.undefined
   
   /**
     * The validation parameters.
     */
-  var userDataValidationParameters: js.UndefOr[UserDataValidationParameters] = js.native
+  var userDataValidationParameters: js.UndefOr[UserDataValidationParameters] = js.undefined
   
   /**
     * The ID of the validation.
     */
-  var validationId: js.UndefOr[ValidationId] = js.native
+  var validationId: js.UndefOr[ValidationId] = js.undefined
 }
 object ServerValidationConfiguration {
   

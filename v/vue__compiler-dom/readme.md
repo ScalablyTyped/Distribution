@@ -10,9 +10,9 @@ Typings are for version 3.0.2
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-dom |
 | Keywords           | vue |
-| # releases         | 51 |
-| # dependents       | 10 |
-| # downloads        | 1091411 |
+| # releases         | 58 |
+| # dependents       | 21 |
+| # downloads        | 8299125 |
 | # stars            | 0 |
 
 ## Links

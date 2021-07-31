@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /** Input only. Parameters that a bot can use to configure how its response is posted. */
-  var actionResponse: js.UndefOr[ActionResponse] = js.native
+  var actionResponse: js.UndefOr[ActionResponse] = js.undefined
   
   /** Output only. Annotations associated with the text in this message. */
-  var annotations: js.UndefOr[js.Array[Annotation]] = js.native
+  var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /** Plain-text body of the message with all bot mentions stripped out. */
-  var argumentText: js.UndefOr[String] = js.native
+  var argumentText: js.UndefOr[String] = js.undefined
   
   /** User uploaded attachment. */
-  var attachment: js.UndefOr[js.Array[Attachment]] = js.native
+  var attachment: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
     * Rich, formatted and interactive cards that can be used to display UI elements such as: formatted texts, buttons, clickable images. Cards are normally displayed below the plain-text
     * body of the message.
     */
-  var cards: js.UndefOr[js.Array[Card]] = js.native
+  var cards: js.UndefOr[js.Array[Card]] = js.undefined
   
   /** Output only. The time at which the message was created in Hangouts Chat server. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** A plain-text description of the message's cards, used when the actual cards cannot be displayed (e.g. mobile notifications). */
-  var fallbackText: js.UndefOr[String] = js.native
+  var fallbackText: js.UndefOr[String] = js.undefined
   
   /** Resource name, in the form "spaces/∗/messages/ *". Example: spaces/AAAAMpdlehY/messages/UMxbHmzDlr4.UMxbHmzDlr4 */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Text for generating preview chips. This text will not be displayed to the user, but any links to images, web pages, videos, etc. included here will generate preview chips. */
-  var previewText: js.UndefOr[String] = js.native
+  var previewText: js.UndefOr[String] = js.undefined
   
   /** The user who created the message. */
-  var sender: js.UndefOr[User] = js.native
+  var sender: js.UndefOr[User] = js.undefined
   
   /** Slash command information, if applicable. */
-  var slashCommand: js.UndefOr[SlashCommand] = js.native
+  var slashCommand: js.UndefOr[SlashCommand] = js.undefined
   
   /** The space the message belongs to. */
-  var space: js.UndefOr[Space] = js.native
+  var space: js.UndefOr[Space] = js.undefined
   
   /** Plain-text body of the message. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The thread the message belongs to. */
-  var thread: js.UndefOr[Thread] = js.native
+  var thread: js.UndefOr[Thread] = js.undefined
 }
 object Message {
   

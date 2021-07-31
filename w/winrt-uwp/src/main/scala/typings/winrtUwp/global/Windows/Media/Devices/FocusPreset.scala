@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the values for the possible focus presets. */
@@ -11,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FocusPreset extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.FocusPreset with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.FocusPreset & Double] = js.native
   
-  /* 0 */ val auto: typings.winrtUwp.Windows.Media.Devices.FocusPreset.auto with Double = js.native
+  /* 0 */ val auto: typings.winrtUwp.Windows.Media.Devices.FocusPreset.auto & Double = js.native
   
-  /* 5 */ val autoHyperfocal: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoHyperfocal with Double = js.native
+  /* 5 */ val autoHyperfocal: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoHyperfocal & Double = js.native
   
-  /* 4 */ val autoInfinity: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoInfinity with Double = js.native
+  /* 4 */ val autoInfinity: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoInfinity & Double = js.native
   
-  /* 2 */ val autoMacro: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoMacro with Double = js.native
+  /* 2 */ val autoMacro: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoMacro & Double = js.native
   
-  /* 3 */ val autoNormal: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoNormal with Double = js.native
+  /* 3 */ val autoNormal: typings.winrtUwp.Windows.Media.Devices.FocusPreset.autoNormal & Double = js.native
   
-  /* 1 */ val manual: typings.winrtUwp.Windows.Media.Devices.FocusPreset.manual with Double = js.native
+  /* 1 */ val manual: typings.winrtUwp.Windows.Media.Devices.FocusPreset.manual & Double = js.native
 }

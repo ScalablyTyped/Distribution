@@ -2,27 +2,25 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bankname extends StObject {
   
-  var account_number: String = js.native
+  var account_number: String
   
-  var bank_name: String = js.native
+  var bank_name: String
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var refund_account_holder_name: js.UndefOr[String | Null] = js.native
+  var refund_account_holder_name: js.UndefOr[String | Null] = js.undefined
   
-  var refund_account_holder_type: js.UndefOr[String | Null] = js.native
+  var refund_account_holder_type: js.UndefOr[String | Null] = js.undefined
   
-  var refund_routing_number: js.UndefOr[String | Null] = js.native
+  var refund_routing_number: js.UndefOr[String | Null] = js.undefined
   
-  var routing_number: String = js.native
+  var routing_number: String
   
-  var swift_code: String = js.native
+  var swift_code: String
 }
 object Bankname {
   

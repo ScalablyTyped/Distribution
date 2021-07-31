@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCaption extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AutoInsert: Boolean = js.native
+  var AutoInsert: Boolean
   
-  var CaptionLabel: js.Any = js.native
+  var CaptionLabel: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.AutoCaption_typekey")
-  var WordDotAutoCaption_typekey: AutoCaption = js.native
+  var WordDotAutoCaption_typekey: AutoCaption
 }
 object AutoCaption {
   

@@ -6,42 +6,40 @@ import typings.webappsecCredentialManagement.webappsecCredentialManagementString
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.silent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#dictdef-credentialrequestoptions}
   */
-@js.native
 trait CredentialRequestOptions extends StObject {
   
   /**
     * If set, the user agent will request {@link FederatedCredential} objects
     * for the providers and protocol types listed. Defaults to {@code null}.
     */
-  var federated: js.UndefOr[FederatedCredentialRequestOptions] = js.native
+  var federated: js.UndefOr[FederatedCredentialRequestOptions] = js.undefined
   
   /**
     * This property specifies the mediation requirements for a given credential
     * request.
     */
-  var mediation: js.UndefOr[silent | optional | required] = js.native
+  var mediation: js.UndefOr[silent | optional | required] = js.undefined
   
   /**
     * If set, the user agent will request {@link PasswordCredential} objects.
     * Defaults to {@code false}.
     */
-  var password: js.UndefOr[Boolean] = js.native
+  var password: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property specifies options for requesting a public-key signature.
     */
-  var publicKey: js.UndefOr[PublicKeyCredentialRequestOptions] = js.native
+  var publicKey: js.UndefOr[PublicKeyCredentialRequestOptions] = js.undefined
   
   /**
     * This property lets the developer abort an ongoing get() operation.
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * If {@code true}, the user agent will only attempt to provide a Credential
@@ -49,7 +47,7 @@ trait CredentialRequestOptions extends StObject {
     *
     * @deprecated Use {@link mediation} instead.
     */
-  var unmediated: js.UndefOr[Boolean] = js.native
+  var unmediated: js.UndefOr[Boolean] = js.undefined
 }
 object CredentialRequestOptions {
   

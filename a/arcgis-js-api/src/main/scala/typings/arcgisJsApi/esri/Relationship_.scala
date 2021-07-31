@@ -7,11 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.destination
 import typings.arcgisJsApi.arcgisJsApiStrings.origin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Relationship_ extends Accessor {
+trait Relationship_
+  extends StObject
+     with Accessor {
   
   /**
     * The cardinality which specifies the number of objects in the origin [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) related to the number of objects in the destination [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).

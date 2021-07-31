@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
   /**
     * The field identifier.
     */
-  var key: fieldNameString = js.native
+  var key: fieldNameString
   
   /**
     * The field value, expressed as the identifier of another object.
     */
-  var refValue: js.UndefOr[fieldNameString] = js.native
+  var refValue: js.UndefOr[fieldNameString] = js.undefined
   
   /**
     * The field value, expressed as a String.
     */
-  var stringValue: js.UndefOr[fieldStringValue] = js.native
+  var stringValue: js.UndefOr[fieldStringValue] = js.undefined
 }
 object Field {
   

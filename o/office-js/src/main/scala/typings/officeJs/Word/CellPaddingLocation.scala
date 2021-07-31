@@ -2,7 +2,6 @@ package typings.officeJs.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait CellPaddingLocation extends StObject
 object CellPaddingLocation extends StObject {
   
   @js.native
-  sealed trait bottom extends CellPaddingLocation
+  sealed trait bottom
+    extends StObject
+       with CellPaddingLocation
   
   @js.native
-  sealed trait left extends CellPaddingLocation
+  sealed trait left
+    extends StObject
+       with CellPaddingLocation
   
   @js.native
-  sealed trait right extends CellPaddingLocation
+  sealed trait right
+    extends StObject
+       with CellPaddingLocation
   
   @js.native
-  sealed trait top extends CellPaddingLocation
+  sealed trait top
+    extends StObject
+       with CellPaddingLocation
 }

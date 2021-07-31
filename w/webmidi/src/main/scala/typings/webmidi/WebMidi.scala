@@ -12,29 +12,30 @@ import typings.webmidi.webmidiStrings.output
 import typings.webmidi.webmidiStrings.statechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebMidi {
   
   @js.native
-  trait MIDIAccess extends EventTarget {
+  trait MIDIAccess
+    extends StObject
+       with EventTarget {
     
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _]
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -62,7 +63,9 @@ object WebMidi {
   }
   
   @js.native
-  trait MIDIConnectionEvent extends Event {
+  trait MIDIConnectionEvent
+    extends StObject
+       with Event {
     
     /**
       * The port that has been connected or disconnected.
@@ -70,13 +73,14 @@ object WebMidi {
     var port: MIDIPort = js.native
   }
   
-  @js.native
-  trait MIDIConnectionEventInit extends EventInit {
+  trait MIDIConnectionEventInit
+    extends StObject
+       with EventInit {
     
     /**
       * The port that has been connected or disconnected.
       */
-    var port: MIDIPort = js.native
+    var port: MIDIPort
   }
   object MIDIConnectionEventInit {
     
@@ -95,20 +99,25 @@ object WebMidi {
   }
   
   @js.native
-  trait MIDIInput extends MIDIPort {
+  trait MIDIInput
+    extends StObject
+       with MIDIPort {
     
-    @JSName("addEventListener")
-    def addEventListener_midimessage(`type`: midimessage, listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_midimessage(
       `type`: midimessage,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_midimessage(
+      `type`: midimessage,
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_midimessage(
       `type`: midimessage,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIMessageEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -125,7 +134,9 @@ object WebMidi {
   type MIDIInputMap = Map[String, MIDIInput]
   
   @js.native
-  trait MIDIMessageEvent extends Event {
+  trait MIDIMessageEvent
+    extends StObject
+       with Event {
     
     /**
       * A Uint8Array containing the MIDI data bytes of a single MIDI message.
@@ -138,18 +149,19 @@ object WebMidi {
     var receivedTime: Double = js.native
   }
   
-  @js.native
-  trait MIDIMessageEventInit extends EventInit {
+  trait MIDIMessageEventInit
+    extends StObject
+       with EventInit {
     
     /**
       * A Uint8Array containing the MIDI data bytes of a single MIDI message.
       */
-    var data: Uint8Array = js.native
+    var data: Uint8Array
     
     /**
       * A timestamp specifying when the event occurred.
       */
-    var receivedTime: Double = js.native
+    var receivedTime: Double
   }
   object MIDIMessageEventInit {
     
@@ -170,14 +182,13 @@ object WebMidi {
     }
   }
   
-  @js.native
   trait MIDIOptions extends StObject {
     
     /**
       * This member informs the system whether the ability to send and receive system
       * exclusive messages is requested or allowed on a given MIDIAccess object.
       */
-    var sysex: Boolean = js.native
+    var sysex: Boolean
   }
   object MIDIOptions {
     
@@ -196,7 +207,9 @@ object WebMidi {
   }
   
   @js.native
-  trait MIDIOutput extends MIDIPort {
+  trait MIDIOutput
+    extends StObject
+       with MIDIPort {
     
     /**
       * Clears any pending send data that has not yet been sent from the MIDIOutput 's
@@ -229,23 +242,25 @@ object WebMidi {
   type MIDIOutputMap = Map[String, MIDIOutput]
   
   @js.native
-  trait MIDIPort extends EventTarget {
+  trait MIDIPort
+    extends StObject
+       with EventTarget {
     
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _]
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_statechange(
       `type`: statechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     

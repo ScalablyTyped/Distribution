@@ -3,21 +3,19 @@ package typings.reactBootstrapTable.anon
 import typings.reactBootstrapTable.mod.FilterComparator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
   /**
     * Comparator value.
     */
-  var comparator: FilterComparator = js.native
+  var comparator: FilterComparator
   
   /**
     * Date value. String values will be automatically converted to dates.
     */
-  var date: typings.std.Date | String = js.native
+  var date: typings.std.Date | String
 }
 object Date {
   

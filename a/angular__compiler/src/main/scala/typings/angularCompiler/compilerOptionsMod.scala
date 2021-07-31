@@ -4,37 +4,35 @@ import typings.angularCompiler.angularCompilerStrings.ngtsc
 import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compilerOptionsMod {
   
-  @js.native
   trait AotCompilerOptions extends StObject {
     
-    var allowEmptyCodegenFiles: js.UndefOr[Boolean] = js.native
+    var allowEmptyCodegenFiles: js.UndefOr[Boolean] = js.undefined
     
-    var createExternalSymbolFactoryReexports: js.UndefOr[Boolean] = js.native
+    var createExternalSymbolFactoryReexports: js.UndefOr[Boolean] = js.undefined
     
-    var enableIvy: js.UndefOr[Boolean | ngtsc] = js.native
+    var enableIvy: js.UndefOr[Boolean | ngtsc] = js.undefined
     
-    var enableSummariesForJit: js.UndefOr[Boolean] = js.native
+    var enableSummariesForJit: js.UndefOr[Boolean] = js.undefined
     
-    var fullTemplateTypeCheck: js.UndefOr[Boolean] = js.native
+    var fullTemplateTypeCheck: js.UndefOr[Boolean] = js.undefined
     
-    var i18nFormat: js.UndefOr[String] = js.native
+    var i18nFormat: js.UndefOr[String] = js.undefined
     
-    var i18nUseExternalIds: js.UndefOr[Boolean] = js.native
+    var i18nUseExternalIds: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var missingTranslation: js.UndefOr[MissingTranslationStrategy] = js.native
+    var missingTranslation: js.UndefOr[MissingTranslationStrategy] = js.undefined
     
-    var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+    var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
     
-    var strictInjectionParameters: js.UndefOr[Boolean] = js.native
+    var strictInjectionParameters: js.UndefOr[Boolean] = js.undefined
     
-    var translations: js.UndefOr[String] = js.native
+    var translations: js.UndefOr[String] = js.undefined
   }
   object AotCompilerOptions {
     

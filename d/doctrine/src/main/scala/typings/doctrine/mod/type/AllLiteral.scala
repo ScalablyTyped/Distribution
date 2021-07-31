@@ -3,20 +3,20 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AllLiteral extends Type_ {
+trait AllLiteral
+  extends StObject
+     with Type_ {
   
-  var `type`: typings.doctrine.doctrineStrings.AllLiteral = js.native
+  var `type`: typings.doctrine.doctrineStrings.AllLiteral
 }
 object AllLiteral {
   
   @scala.inline
-  def apply(`type`: typings.doctrine.doctrineStrings.AllLiteral): AllLiteral = {
+  def apply(): AllLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AllLiteral")
     __obj.asInstanceOf[AllLiteral]
   }
   

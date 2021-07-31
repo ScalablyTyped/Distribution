@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitializeError extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait InitializeError extends StObject {
     * (2) user selects retry or cancel
     * (3) if user selected retry the initialize method is sent again.
     */
-  var retry: Boolean = js.native
+  var retry: Boolean
 }
 object InitializeError {
   

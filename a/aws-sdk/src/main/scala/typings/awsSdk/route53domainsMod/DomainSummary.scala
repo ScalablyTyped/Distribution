@@ -2,31 +2,29 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainSummary extends StObject {
   
   /**
     * Indicates whether the domain is automatically renewed upon expiration.
     */
-  var AutoRenew: js.UndefOr[Boolean] = js.native
+  var AutoRenew: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the domain that the summary information applies to.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
   
   /**
     * Expiration date of the domain in Unix time format and Coordinated Universal Time (UTC).
     */
-  var Expiry: js.UndefOr[Timestamp] = js.native
+  var Expiry: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Indicates whether a domain is locked from unauthorized transfer to another party.
     */
-  var TransferLock: js.UndefOr[Boolean] = js.native
+  var TransferLock: js.UndefOr[Boolean] = js.undefined
 }
 object DomainSummary {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MVCxSchedulerToolTipType")
 @js.native
 class MVCxSchedulerToolTipType ()
-  extends typings.devexpressWeb.MVCxSchedulerToolTipType
+  extends StObject
+     with typings.devexpressWeb.MVCxSchedulerToolTipType
 object MVCxSchedulerToolTipType {
   
   /**

@@ -10,31 +10,31 @@ import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * receives notification of sax document events from a {@link XFastParser} .
   * @see XFastDocumentHandler
   */
-@js.native
-trait XFastShapeContextHandler extends XFastContextHandler {
+trait XFastShapeContextHandler
+  extends StObject
+     with XFastContextHandler {
   
-  var DocumentProperties: XDocumentProperties = js.native
+  var DocumentProperties: XDocumentProperties
   
-  var DrawPage: XDrawPage = js.native
+  var DrawPage: XDrawPage
   
-  var MediaDescriptor: SafeArray[PropertyValue] = js.native
+  var MediaDescriptor: SafeArray[PropertyValue]
   
-  var Model: XModel = js.native
+  var Model: XModel
   
-  var Position: Point = js.native
+  var Position: Point
   
-  var RelationFragmentPath: String = js.native
+  var RelationFragmentPath: String
   
-  var Shape: XShape = js.native
+  var Shape: XShape
   
-  var StartToken: Double = js.native
+  var StartToken: Double
 }
 object XFastShapeContextHandler {
   

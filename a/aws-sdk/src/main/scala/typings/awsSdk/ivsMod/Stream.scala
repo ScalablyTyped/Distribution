@@ -2,41 +2,39 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stream extends StObject {
   
   /**
     * Channel ARN for the stream.
     */
-  var channelArn: js.UndefOr[ChannelArn] = js.native
+  var channelArn: js.UndefOr[ChannelArn] = js.undefined
   
   /**
     * The stream’s health.
     */
-  var health: js.UndefOr[StreamHealth] = js.native
+  var health: js.UndefOr[StreamHealth] = js.undefined
   
   /**
     * URL of the video master manifest, required by the video player to play the HLS stream.
     */
-  var playbackUrl: js.UndefOr[PlaybackURL] = js.native
+  var playbackUrl: js.UndefOr[PlaybackURL] = js.undefined
   
   /**
     * ISO-8601 formatted timestamp of the stream’s start.
     */
-  var startTime: js.UndefOr[StreamStartTime] = js.native
+  var startTime: js.UndefOr[StreamStartTime] = js.undefined
   
   /**
     * The stream’s state.
     */
-  var state: js.UndefOr[StreamState] = js.native
+  var state: js.UndefOr[StreamState] = js.undefined
   
   /**
     * Number of current viewers of the stream.
     */
-  var viewerCount: js.UndefOr[StreamViewerCount] = js.native
+  var viewerCount: js.UndefOr[StreamViewerCount] = js.undefined
 }
 object Stream {
   

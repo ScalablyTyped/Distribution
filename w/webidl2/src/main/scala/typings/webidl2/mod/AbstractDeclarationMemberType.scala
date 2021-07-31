@@ -5,29 +5,29 @@ import typings.webidl2.webidl2Strings.maplike
 import typings.webidl2.webidl2Strings.setlike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AbstractDeclarationMemberType extends AbstractBase {
+trait AbstractDeclarationMemberType
+  extends StObject
+     with AbstractBase {
   
   /** An array of arguments for the iterable declaration. */
-  var arguments: js.Array[Argument] = js.native
+  var arguments: js.Array[Argument]
   
   /** Whether the iterable is declared as async. */
-  var async: Boolean = js.native
+  var async: Boolean
   
   /** An array with one or more IDL Types representing the declared type arguments. */
-  var idlType: js.Array[IDLTypeDescription] = js.native
+  var idlType: js.Array[IDLTypeDescription]
   
   @JSName("parent")
-  var parent_AbstractDeclarationMemberType: InterfaceMixinType | InterfaceType = js.native
+  var parent_AbstractDeclarationMemberType: InterfaceMixinType | InterfaceType
   
   /** Whether the maplike or setlike is declared as read only. */
-  var readonly: Boolean = js.native
+  var readonly: Boolean
   
   @JSName("type")
-  var type_AbstractDeclarationMemberType: iterable | maplike | setlike = js.native
+  var type_AbstractDeclarationMemberType: iterable | maplike | setlike
 }
 object AbstractDeclarationMemberType {
   

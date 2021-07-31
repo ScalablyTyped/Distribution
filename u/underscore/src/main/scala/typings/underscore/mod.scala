@@ -25,7 +25,6 @@ import typings.underscore.underscoreBooleans.`true`
 import typings.underscore.underscoreStrings._Chain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -35,7 +34,7 @@ object mod extends Shortcut {
   val ^ : UnderscoreStatic = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - typings.underscore.underscoreBooleans.`false`
     - typings.underscore.underscoreStrings._empty
@@ -43,10 +42,9 @@ object mod extends Shortcut {
   */
   type AnyFalsy = js.UndefOr[_AnyFalsy | Null]
   
-  @js.native
   trait Cancelable extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object Cancelable {
     
@@ -77,8 +75,9 @@ object mod extends Shortcut {
       * @see every
       **/
     def all(): ChainSingle[Boolean] = js.native
-    def all(iterator: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[Boolean] = js.native
+    def all(iterator: Unit, context: js.Any): ChainSingle[Boolean] = js.native
     def all(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[Boolean] = js.native
+    def all(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[Boolean] = js.native
     
     /**
       * Wrapped type `object`.
@@ -100,8 +99,9 @@ object mod extends Shortcut {
       * @see some
       **/
     def any(): ChainSingle[Boolean] = js.native
-    def any(iterator: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[Boolean] = js.native
+    def any(iterator: Unit, context: js.Any): ChainSingle[Boolean] = js.native
     def any(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[Boolean] = js.native
+    def any(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[Boolean] = js.native
     /**
       * @see some
       **/
@@ -156,10 +156,6 @@ object mod extends Shortcut {
       * @see map
       **/
     def collect(): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
-    def collect(iteratee: js.UndefOr[scala.Nothing], context: js.Any): Chain[
-        IterateeResult[js.UndefOr[scala.Nothing], T], 
-        js.Array[IterateeResult[js.UndefOr[scala.Nothing], T]]
-      ] = js.native
     /**
       * @see map
       **/
@@ -182,15 +178,16 @@ object mod extends Shortcut {
     def collect(iteratee: Double): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
     def collect(iteratee: Double, context: js.Any): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
     def collect(iteratee: Null, context: js.Any): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
+    def collect(iteratee: Unit, context: js.Any): Chain[IterateeResult[Unit, T], js.Array[IterateeResult[Unit, T]]] = js.native
     /**
       * @see map
       **/
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
     /**
       * @see map
       **/
@@ -254,11 +251,9 @@ object mod extends Shortcut {
       * the count of the grouped elements from the wrapped collection.
       **/
     def countBy(): Chain[Double, Dictionary[Double]] = js.native
-    def countBy(
-      iterator: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Chain[Double, Dictionary[Double]] = js.native
+    def countBy(iterator: Unit, context: js.Any): Chain[Double, Dictionary[Double]] = js.native
     def countBy(iterator: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Chain[Double, Dictionary[Double]] = js.native
+    def countBy(iterator: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[Double, Dictionary[Double]] = js.native
     
     /**
       * Wrapped type `any`.
@@ -300,8 +295,9 @@ object mod extends Shortcut {
       * @see find
       **/
     def detect(): ChainSingle[js.UndefOr[T]] = js.native
-    def detect(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[js.UndefOr[T]] = js.native
+    def detect(iteratee: Unit, context: js.Any): ChainSingle[js.UndefOr[T]] = js.native
     def detect(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[js.UndefOr[T]] = js.native
+    def detect(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[js.UndefOr[T]] = js.native
     /**
       * @see find
       **/
@@ -364,8 +360,9 @@ object mod extends Shortcut {
       * test, otherwise around false.
       **/
     def every(): ChainSingle[Boolean] = js.native
-    def every(iterator: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[Boolean] = js.native
+    def every(iterator: Unit, context: js.Any): ChainSingle[Boolean] = js.native
     def every(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[Boolean] = js.native
+    def every(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[Boolean] = js.native
     
     /**
       * Wrapped type `object`.
@@ -382,8 +379,9 @@ object mod extends Shortcut {
       * truth test.
       **/
     def filter(): Chain[T, js.Array[T]] = js.native
-    def filter(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[T, js.Array[T]] = js.native
-    def filter(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def filter(iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def filter(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def filter(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
     
     /**
       * Looks through each value in the wrapped collection, returning the
@@ -397,8 +395,9 @@ object mod extends Shortcut {
       * pass.
       **/
     def find(): ChainSingle[js.UndefOr[T]] = js.native
-    def find(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[js.UndefOr[T]] = js.native
+    def find(iteratee: Unit, context: js.Any): ChainSingle[js.UndefOr[T]] = js.native
     def find(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[js.UndefOr[T]] = js.native
+    def find(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[js.UndefOr[T]] = js.native
     
     /**
       * Returns the first index of an element in the wrapped list where the
@@ -410,8 +409,9 @@ object mod extends Shortcut {
       * pass.
       **/
     def findIndex(): ChainSingle[Double] = js.native
-    def findIndex(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[Double] = js.native
+    def findIndex(iteratee: Unit, context: js.Any): ChainSingle[Double] = js.native
     def findIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[Double] = js.native
+    def findIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[Double] = js.native
     
     /**
       * Similar to `findIndex` but for keys in objects. Returns the key
@@ -422,8 +422,9 @@ object mod extends Shortcut {
       * truth test or undefined if no elements pass.
       */
     def findKey(): ChainSingle[js.UndefOr[Extract[/* keyof V */ String, String]]] = js.native
-    def findKey(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, _]]], context: js.Any): ChainSingle[js.UndefOr[Extract[/* keyof V */ String, String]]] = js.native
-    def findKey(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, _]]): ChainSingle[js.UndefOr[Extract[/* keyof V */ String, String]]] = js.native
+    def findKey(iteratee: Unit, context: js.Any): ChainSingle[js.UndefOr[Extract[/* keyof V */ String, String]]] = js.native
+    def findKey(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, js.Any]]): ChainSingle[js.UndefOr[Extract[/* keyof V */ String, String]]] = js.native
+    def findKey(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, js.Any]], context: js.Any): ChainSingle[js.UndefOr[Extract[/* keyof V */ String, String]]] = js.native
     
     /**
       * Returns the last index of an element in the wrapped list where the
@@ -434,8 +435,9 @@ object mod extends Shortcut {
       * wrapped list where the truth test passes or -1 if no elements pass.
       **/
     def findLastIndex(): ChainSingle[Double] = js.native
-    def findLastIndex(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[Double] = js.native
+    def findLastIndex(iteratee: Unit, context: js.Any): ChainSingle[Double] = js.native
     def findLastIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[Double] = js.native
+    def findLastIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[Double] = js.native
     
     /**
       * Looks through the wrapped collection and returns the first value
@@ -558,11 +560,9 @@ object mod extends Shortcut {
       * the grouped elements from the wrapped collection.
       **/
     def groupBy(): Chain[js.Array[T], Dictionary[js.Array[T]]] = js.native
-    def groupBy(
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Chain[js.Array[T], Dictionary[js.Array[T]]] = js.native
+    def groupBy(iteratee: Unit, context: js.Any): Chain[js.Array[T], Dictionary[js.Array[T]]] = js.native
     def groupBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Chain[js.Array[T], Dictionary[js.Array[T]]] = js.native
+    def groupBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[js.Array[T], Dictionary[js.Array[T]]] = js.native
     
     /**
       * Wrapped type `object`.
@@ -628,11 +628,9 @@ object mod extends Shortcut {
       * `iteratee`.
       **/
     def indexBy(): Chain[T, Dictionary[T]] = js.native
-    def indexBy(
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Chain[T, Dictionary[T]] = js.native
+    def indexBy(iteratee: Unit, context: js.Any): Chain[T, Dictionary[T]] = js.native
     def indexBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Chain[T, Dictionary[T]] = js.native
+    def indexBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, Dictionary[T]] = js.native
     
     /**
       * Returns the index at which `value` can be found in the wrapped list,
@@ -715,7 +713,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around an array containing the result of
       * the method call for each item in the wrapped collection.
       **/
-    def invoke(methodName: String, args: js.Any*): Chain[_, js.Array[_]] = js.native
+    def invoke(methodName: String, args: js.Any*): Chain[js.Any, js.Array[js.Any]] = js.native
     
     /**
       * Returns true if the wrapped object is an Arguments object.
@@ -911,10 +909,6 @@ object mod extends Shortcut {
     def lastIndexOf(value: T, fromIndex: Double): ChainSingle[Double] = js.native
     
     def map(): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
-    def map(iteratee: js.UndefOr[scala.Nothing], context: js.Any): Chain[
-        IterateeResult[js.UndefOr[scala.Nothing], T], 
-        js.Array[IterateeResult[js.UndefOr[scala.Nothing], T]]
-      ] = js.native
     /**
       * Produces a new array of values by mapping each value in the wrapped
       * collection through a transformation `iteratee`.
@@ -936,24 +930,19 @@ object mod extends Shortcut {
     def map(iteratee: Double): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
     def map(iteratee: Double, context: js.Any): Chain[IterateeResult[Double, T], js.Array[IterateeResult[Double, T]]] = js.native
     def map(iteratee: Null, context: js.Any): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def map(iteratee: Unit, context: js.Any): Chain[IterateeResult[Unit, T], js.Array[IterateeResult[Unit, T]]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ _Chain with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
+      */ _Chain & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): Chain[IterateeResult[I, T], js.Array[IterateeResult[I, T]]] = js.native
     
     def mapObject(): Chain[
-        IterateeResult[Null, TypeOfCollection[V, _]], 
+        IterateeResult[Null, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ _Chain with TopLevel[V]
-      ] = js.native
-    def mapObject(iteratee: js.UndefOr[scala.Nothing], context: js.Any): Chain[
-        IterateeResult[js.UndefOr[scala.Nothing], TypeOfCollection[V, _]], 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     /**
       * Like map, but for objects. Transform the value of each property in
@@ -964,62 +953,68 @@ object mod extends Shortcut {
       * object's property values transformed through `iteratee`.
       */
     def mapObject(iteratee: String): Chain[
-        IterateeResult[String, TypeOfCollection[V, _]], 
+        IterateeResult[String, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     def mapObject(iteratee: String, context: js.Any): Chain[
-        IterateeResult[String, TypeOfCollection[V, _]], 
+        IterateeResult[String, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     def mapObject(iteratee: js.Array[String | Double]): Chain[
-        IterateeResult[js.Array[String | Double], TypeOfCollection[V, _]], 
+        IterateeResult[js.Array[String | Double], TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     def mapObject(iteratee: js.Array[String | Double], context: js.Any): Chain[
-        IterateeResult[js.Array[String | Double], TypeOfCollection[V, _]], 
+        IterateeResult[js.Array[String | Double], TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     def mapObject(iteratee: Double): Chain[
-        IterateeResult[Double, TypeOfCollection[V, _]], 
+        IterateeResult[Double, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     def mapObject(iteratee: Double, context: js.Any): Chain[
-        IterateeResult[Double, TypeOfCollection[V, _]], 
+        IterateeResult[Double, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     def mapObject(iteratee: Null, context: js.Any): Chain[
-        IterateeResult[Null, TypeOfCollection[V, _]], 
+        IterateeResult[Null, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, _], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def mapObject(iteratee: Unit, context: js.Any): Chain[
+        IterateeResult[Unit, TypeOfCollection[V, js.Any]], 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
+      */ _Chain & TopLevel[V]
+      ] = js.native
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, js.Any], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ _Chain with (TopLevel[TypeOfCollection[V, _]])) */](iteratee: I): Chain[
-        IterateeResult[I, TypeOfCollection[V, _]], 
+      */ _Chain & (TopLevel[TypeOfCollection[V, js.Any]])) */](iteratee: I): Chain[
+        IterateeResult[I, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, _], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, js.Any], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ _Chain with (TopLevel[TypeOfCollection[V, _]])) */](iteratee: I, context: js.Any): Chain[
-        IterateeResult[I, TypeOfCollection[V, _]], 
+      */ _Chain & (TopLevel[TypeOfCollection[V, js.Any]])) */](iteratee: I, context: js.Any): Chain[
+        IterateeResult[I, TypeOfCollection[V, js.Any]], 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ _Chain with TopLevel[V]
+      */ _Chain & TopLevel[V]
       ] = js.native
     
     /**
@@ -1049,8 +1044,9 @@ object mod extends Shortcut {
       * empty.
       **/
     def max(): ChainSingle[T | Double] = js.native
-    def max(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[T | Double] = js.native
-    def max(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): ChainSingle[T | Double] = js.native
+    def max(iteratee: Unit, context: js.Any): ChainSingle[T | Double] = js.native
+    def max(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): ChainSingle[T | Double] = js.native
+    def max(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[T | Double] = js.native
     
     /**
       * Wrapped type `Function`.
@@ -1079,8 +1075,9 @@ object mod extends Shortcut {
       * empty.
       **/
     def min(): ChainSingle[T | Double] = js.native
-    def min(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[T | Double] = js.native
-    def min(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): ChainSingle[T | Double] = js.native
+    def min(iteratee: Unit, context: js.Any): ChainSingle[T | Double] = js.native
+    def min(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): ChainSingle[T | Double] = js.native
+    def min(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[T | Double] = js.native
     
     /**
       * Wrapped type `object`.
@@ -1121,7 +1118,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around a copy of the wrapped object without
       * the keys selected by `iterator`.
       **/
-    def omit(iterator: ObjectIterator[TypeOfDictionary[V, _], Boolean, V]): ChainSingle[Partial[V]] = js.native
+    def omit(iterator: ObjectIterator[TypeOfDictionary[V, js.Any], Boolean, V]): ChainSingle[Partial[V]] = js.native
     /**
       * Return a copy of the wrapped object that is filtered to omit the
       * disallowed keys (or array of keys).
@@ -1144,8 +1141,8 @@ object mod extends Shortcut {
       * the wrapped object.
       **/
     def pairs(): Chain[
-        js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, _]], 
-        js.Array[js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, _]]]
+        js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, js.Any]], 
+        js.Array[js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, js.Any]]]
       ] = js.native
     
     /**
@@ -1167,8 +1164,9 @@ object mod extends Shortcut {
       * contains the elements that did not.
       **/
     def partition(): Chain[js.Array[T], js.Tuple2[js.Array[T], js.Array[T]]] = js.native
-    def partition(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[js.Array[T], js.Tuple2[js.Array[T], js.Array[T]]] = js.native
+    def partition(iteratee: Unit, context: js.Any): Chain[js.Array[T], js.Tuple2[js.Array[T], js.Array[T]]] = js.native
     def partition(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Chain[js.Array[T], js.Tuple2[js.Array[T], js.Array[T]]] = js.native
+    def partition(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[js.Array[T], js.Tuple2[js.Array[T], js.Array[T]]] = js.native
     
     /**
       * Return a copy of the wrapped object that is filtered to only have
@@ -1178,7 +1176,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around a copy of the wrapped object with
       * only the keys selected by `iterator`.
       **/
-    def pick(iterator: ObjectIterator[TypeOfDictionary[V, _], Boolean, V]): ChainSingle[Partial[V]] = js.native
+    def pick(iterator: ObjectIterator[TypeOfDictionary[V, js.Any], Boolean, V]): ChainSingle[Partial[V]] = js.native
     /**
       * Return a copy of the wrapped object that is filtered to only have
       * values for the allowed keys (or array of keys).
@@ -1252,9 +1250,9 @@ object mod extends Shortcut {
       * `stop` with increments of `step`.
       **/
     def range(): Chain[Double, js.Array[Double]] = js.native
-    def range(stop: js.UndefOr[scala.Nothing], step: Double): Chain[Double, js.Array[Double]] = js.native
     def range(stop: Double): Chain[Double, js.Array[Double]] = js.native
     def range(stop: Double, step: Double): Chain[Double, js.Array[Double]] = js.native
+    def range(stop: Unit, step: Double): Chain[Double, js.Array[Double]] = js.native
     
     def reduce[TResult](
       iteratee: MemoCollectionIterator[
@@ -1323,8 +1321,9 @@ object mod extends Shortcut {
       * truth test.
       **/
     def reject(): Chain[T, js.Array[T]] = js.native
-    def reject(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[T, js.Array[T]] = js.native
+    def reject(iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
     def reject(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def reject(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
     
     /**
       * Returns the rest of the elements in the wrapped list. Pass an
@@ -1373,14 +1372,15 @@ object mod extends Shortcut {
       * @see filter
       **/
     def select(): Chain[T, js.Array[T]] = js.native
-    def select(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[T, js.Array[T]] = js.native
-    def select(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def select(iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def select(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def select(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
     /**
       * @see filter
       **/
     @JSName("select")
     var select_Original: js.Function2[
-        /* iteratee */ js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], 
+        /* iteratee */ js.UndefOr[Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]], 
         /* context */ js.UndefOr[js.Any], 
         Chain[T, js.Array[T]]
       ] = js.native
@@ -1425,8 +1425,9 @@ object mod extends Shortcut {
       * test, otherwise around false.
       **/
     def some(): ChainSingle[Boolean] = js.native
-    def some(iterator: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): ChainSingle[Boolean] = js.native
+    def some(iterator: Unit, context: js.Any): ChainSingle[Boolean] = js.native
     def some(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): ChainSingle[Boolean] = js.native
+    def some(iterator: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): ChainSingle[Boolean] = js.native
     
     /**
       * Sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.
@@ -1447,8 +1448,9 @@ object mod extends Shortcut {
       * collection.
       **/
     def sortBy(): Chain[T, js.Array[T]] = js.native
-    def sortBy(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[T, js.Array[T]] = js.native
-    def sortBy(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def sortBy(iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def sortBy(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def sortBy(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
     
     /**
       * Uses a binary search to determine the lowest index at which the
@@ -1465,12 +1467,16 @@ object mod extends Shortcut {
       * inserted into the wrapped list.
       **/
     def sortedIndex(value: T): ChainSingle[Double] = js.native
+    def sortedIndex(value: T, iteratee: Unit, context: js.Any): ChainSingle[Double] = js.native
     def sortedIndex(
       value: T,
-      iteratee: js.UndefOr[Iteratee[js.UndefOr[V], _, TypeOfCollection[js.UndefOr[V], scala.Nothing]]],
+      iteratee: Iteratee[js.UndefOr[V], js.Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]]
+    ): ChainSingle[Double] = js.native
+    def sortedIndex(
+      value: T,
+      iteratee: Iteratee[js.UndefOr[V], js.Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]],
       context: js.Any
     ): ChainSingle[Double] = js.native
-    def sortedIndex(value: T, iteratee: Iteratee[js.UndefOr[V], _, TypeOfCollection[js.UndefOr[V], scala.Nothing]]): ChainSingle[Double] = js.native
     
     /**
       * Changes the content of an array by removing existing elements and/or adding new elements.
@@ -1510,7 +1516,7 @@ object mod extends Shortcut {
       * Wrapped type `object`.
       * @see _.tap
       **/
-    def tap(interceptor: js.Function1[/* repeated */ js.Any, _]): Chain[T, V] = js.native
+    def tap(interceptor: js.Function1[/* repeated */ js.Any, js.Any]): Chain[T, V] = js.native
     
     /**
       * Wrapped type `string`.
@@ -1573,42 +1579,40 @@ object mod extends Shortcut {
       * elements in the wrapped list.
       **/
     def uniq(): Chain[T, js.Array[T]] = js.native
-    def uniq(
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Chain[T, js.Array[T]] = js.native
-    def uniq(isSorted: js.UndefOr[scala.Nothing], iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
     def uniq(isSorted: Boolean): Chain[T, js.Array[T]] = js.native
+    def uniq(isSorted: Boolean, iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def uniq(isSorted: Boolean, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
     def uniq(
       isSorted: Boolean,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): Chain[T, js.Array[T]] = js.native
-    def uniq(isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
-    def uniq(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[T, js.Array[T]] = js.native
-    def uniq(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def uniq(isSorted: Unit, iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def uniq(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def uniq(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
+    def uniq(iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def uniq(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def uniq(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
     
     /**
       * Wrapped type List<T>.
       * @see uniq
       **/
     def unique(): Chain[T, js.Array[T]] = js.native
-    def unique(
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Chain[T, js.Array[T]] = js.native
-    def unique(isSorted: js.UndefOr[scala.Nothing], iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
     def unique(isSorted: Boolean): Chain[T, js.Array[T]] = js.native
+    def unique(isSorted: Boolean, iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def unique(isSorted: Boolean, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
     def unique(
       isSorted: Boolean,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): Chain[T, js.Array[T]] = js.native
-    def unique(isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
-    def unique(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Chain[T, js.Array[T]] = js.native
-    def unique(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def unique(isSorted: Unit, iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def unique(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def unique(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
+    def unique(iteratee: Unit, context: js.Any): Chain[T, js.Array[T]] = js.native
+    def unique(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): Chain[T, js.Array[T]] = js.native
+    def unique(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): Chain[T, js.Array[T]] = js.native
     
     /**
       * Wrapped type `string`.
@@ -1638,7 +1642,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper aoround the unzipped version of the wrapped
       * lists.
       **/
-    def unzip(): Chain[js.Array[_], js.Array[js.Array[_]]] = js.native
+    def unzip(): Chain[js.Array[js.Any], js.Array[js.Array[js.Any]]] = js.native
     
     /**
       * Extracts the value of the wrapped object.
@@ -1650,7 +1654,7 @@ object mod extends Shortcut {
       * Wrapped type `object`.
       * @see _.values
       **/
-    def values(): Chain[_, js.Array[_]] = js.native
+    def values(): Chain[js.Any, js.Array[js.Any]] = js.native
     
     /**
       * Looks through each value in the wrapped collection, returning an
@@ -1686,16 +1690,16 @@ object mod extends Shortcut {
       * @returns A chain wrapper around the zipped version of the wrapped
       * list and `lists`.
       **/
-    def zip(arrays: List[_]*): Chain[js.Array[_], js.Array[js.Array[_]]] = js.native
+    def zip(arrays: List[js.Any]*): Chain[js.Array[js.Any], js.Array[js.Array[js.Any]]] = js.native
   }
   
   type ChainSingle[V] = Chain[TypeOfCollection[V, scala.Nothing], V]
   
   type Collection[T] = List[T] | Dictionary[T]
   
-  type CollectionIterator[T /* <: TypeOfList[V] | (TypeOfDictionary[V, _]) */, TResult, V] = js.Function3[/* element */ T, /* key */ CollectionKey[V], /* collection */ V, TResult]
+  type CollectionIterator[T /* <: TypeOfList[V] | (TypeOfDictionary[V, js.Any]) */, TResult, V] = js.Function3[/* element */ T, /* key */ CollectionKey[V], /* collection */ V, TResult]
   
-  type CollectionKey[V] = js.UndefOr[String | Double]
+  type CollectionKey[V] = Unit | String | Double
   
   @js.native
   trait CompiledTemplate extends StObject {
@@ -1713,17 +1717,18 @@ object mod extends Shortcut {
   
   type Dictionary[T] = StringDictionary[T]
   
-  type Iteratee[V, R, T /* <: TypeOfCollection[V, _] */] = js.UndefOr[
+  type Iteratee[V, R, T /* <: TypeOfCollection[V, js.Any] */] = js.UndefOr[
     (CollectionIterator[T, R, V]) | String | Double | (js.Array[String | Double]) | Partial[T] | Null
   ]
   
   type IterateeResult[I, T] = T | Boolean | (/* import warning: importer.ImportType#apply Failed type conversion: T[I] */ js.Any)
   
   // Common interface between Arrays and jQuery objects
-  @js.native
-  trait List[T] extends /* index */ NumberDictionary[T] {
+  trait List[T]
+    extends StObject
+       with /* index */ NumberDictionary[T] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object List {
     
@@ -1734,7 +1739,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ListMutableBuilder[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
+    implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
@@ -1745,7 +1750,7 @@ object mod extends Shortcut {
   
   type ListIterator[T /* <: TypeOfList[V] */, TResult, V] = CollectionIterator[T, TResult, V]
   
-  type MemoCollectionIterator[T /* <: TypeOfList[V] | (TypeOfDictionary[V, _]) */, TResult, V] = js.Function4[
+  type MemoCollectionIterator[T /* <: TypeOfList[V] | (TypeOfDictionary[V, js.Any]) */, TResult, V] = js.Function4[
     /* prev */ TResult, 
     /* curr */ T, 
     /* key */ CollectionKey[V], 
@@ -1757,7 +1762,7 @@ object mod extends Shortcut {
   
   type MemoObjectIterator[T /* <: TypeOfDictionary[V, scala.Nothing] */, TResult, V] = MemoCollectionIterator[T, TResult, V]
   
-  type ObjectIterator[T /* <: TypeOfDictionary[V, _] */, TResult, V] = CollectionIterator[T, TResult, V]
+  type ObjectIterator[T /* <: TypeOfDictionary[V, js.Any] */, TResult, V] = CollectionIterator[T, TResult, V]
   
   // switch to Omit when the minimum TS version moves past 3.5
   type Omit[V, K /* <: String */] = (typings.std.Pick[V, Exclude[/* keyof V */ String, K]]) | Partial[V]
@@ -1777,29 +1782,28 @@ object mod extends Shortcut {
     * underscore.js template settings, set templateSettings or pass as an argument
     * to 'template()' to override defaults.
     **/
-  @js.native
   trait TemplateSettings extends StObject {
     
     /**
       * Default value is '/<%-([\s\S]+?)%>/g'.
       **/
-    var escape: js.UndefOr[RegExp] = js.native
+    var escape: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Default value is '/<%([\s\S]+?)%>/g'.
       **/
-    var evaluate: js.UndefOr[RegExp] = js.native
+    var evaluate: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Default value is '/<%=([\s\S]+?)%>/g'.
       **/
-    var interpolate: js.UndefOr[RegExp] = js.native
+    var interpolate: js.UndefOr[RegExp] = js.undefined
     
     /**
       * By default, 'template()' places the values from your data in the local scope via the 'with' statement.
       * However, you can specify a single variable name with this setting.
       **/
-    var variable: js.UndefOr[String] = js.native
+    var variable: js.UndefOr[String] = js.undefined
   }
   object TemplateSettings {
     
@@ -1841,18 +1845,17 @@ object mod extends Shortcut {
   /**
     * underscore.js _.throttle options.
     **/
-  @js.native
   trait ThrottleSettings extends StObject {
     
     /**
       * If you'd like to disable the leading-edge call, pass this as false.
       **/
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you'd like to disable the execution on the trailing-edge, pass false.
       **/
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object ThrottleSettings {
     
@@ -1900,8 +1903,9 @@ object mod extends Shortcut {
       * @see every
       **/
     def all(): Boolean = js.native
-    def all(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Boolean = js.native
+    def all(iteratee: Unit, context: js.Any): Boolean = js.native
     def all(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def all(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     
     /**
       * Wrapped type `object`.
@@ -1923,8 +1927,9 @@ object mod extends Shortcut {
       * @see some
       **/
     def any(): Boolean = js.native
-    def any(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Boolean = js.native
+    def any(iteratee: Unit, context: js.Any): Boolean = js.native
     def any(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def any(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     /**
       * @see some
       **/
@@ -1979,7 +1984,6 @@ object mod extends Shortcut {
       * @see map
       **/
     def collect(): js.Array[IterateeResult[Null, T]] = js.native
-    def collect(iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], T]] = js.native
     /**
       * @see map
       **/
@@ -1996,15 +2000,16 @@ object mod extends Shortcut {
     def collect(iteratee: Double): js.Array[IterateeResult[Double, T]] = js.native
     def collect(iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, T]] = js.native
     def collect(iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, T]] = js.native
+    def collect(iteratee: Unit, context: js.Any): js.Array[IterateeResult[Unit, T]] = js.native
     /**
       * @see map
       **/
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
-    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
+    def collect[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): js.Array[IterateeResult[I, T]] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): js.Array[IterateeResult[I, T]] = js.native
     /**
       * @see map
       **/
@@ -2057,11 +2062,9 @@ object mod extends Shortcut {
       * elements from the wrapped collection.
       **/
     def countBy(): Dictionary[Double] = js.native
-    def countBy(
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Dictionary[Double] = js.native
+    def countBy(iteratee: Unit, context: js.Any): Dictionary[Double] = js.native
     def countBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[Double] = js.native
+    def countBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]], context: js.Any): Dictionary[Double] = js.native
     
     /**
       * Wrapped type `any`.
@@ -2074,8 +2077,8 @@ object mod extends Shortcut {
       * Wrapped type `Function`.
       * @see _.debounce
       **/
-    def debounce(wait: Double): js.Function with Cancelable = js.native
-    def debounce(wait: Double, immediate: Boolean): js.Function with Cancelable = js.native
+    def debounce(wait: Double): js.Function & Cancelable = js.native
+    def debounce(wait: Double, immediate: Boolean): js.Function & Cancelable = js.native
     
     /**
       * Wrapped type `object`.
@@ -2103,8 +2106,9 @@ object mod extends Shortcut {
       * @see find
       **/
     def detect(): js.UndefOr[T] = js.native
-    def detect(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.UndefOr[T] = js.native
+    def detect(iteratee: Unit, context: js.Any): js.UndefOr[T] = js.native
     def detect(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.UndefOr[T] = js.native
+    def detect(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.UndefOr[T] = js.native
     /**
       * @see find
       **/
@@ -2166,8 +2170,9 @@ object mod extends Shortcut {
       * @returns True if all elements pass the truth test, otherwise false.
       **/
     def every(): Boolean = js.native
-    def every(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Boolean = js.native
+    def every(iteratee: Unit, context: js.Any): Boolean = js.native
     def every(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def every(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     
     /**
       * Wrapped type `object`.
@@ -2183,8 +2188,9 @@ object mod extends Shortcut {
       * @returns The set of values that pass the truth test.
       **/
     def filter(): js.Array[T] = js.native
-    def filter(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[T] = js.native
+    def filter(iteratee: Unit, context: js.Any): js.Array[T] = js.native
     def filter(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def filter(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[T] = js.native
     
     /**
       * Looks through each value in the wrapped collection, returning the
@@ -2197,8 +2203,9 @@ object mod extends Shortcut {
       * truth test or undefined if no elements pass.
       **/
     def find(): js.UndefOr[T] = js.native
-    def find(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.UndefOr[T] = js.native
+    def find(iteratee: Unit, context: js.Any): js.UndefOr[T] = js.native
     def find(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.UndefOr[T] = js.native
+    def find(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.UndefOr[T] = js.native
     
     /**
       * Returns the first index of an element in the wrapped list where the
@@ -2209,8 +2216,9 @@ object mod extends Shortcut {
       * the truth test passes or -1 if no elements pass.
       **/
     def findIndex(): Double = js.native
-    def findIndex(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Double = js.native
+    def findIndex(iteratee: Unit, context: js.Any): Double = js.native
     def findIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Double = js.native
     
     /**
       * Similar to `findIndex` but for keys in objects. Returns the key
@@ -2221,8 +2229,9 @@ object mod extends Shortcut {
       * truth test or undefined if no elements pass.
       */
     def findKey(): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
-    def findKey(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, _]]], context: js.Any): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
-    def findKey(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, _]]): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
+    def findKey(iteratee: Unit, context: js.Any): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
+    def findKey(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, js.Any]]): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
+    def findKey(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, js.Any]], context: js.Any): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
     
     /**
       * Returns the last index of an element in the wrapped list where the
@@ -2233,8 +2242,9 @@ object mod extends Shortcut {
       * truth test passes or -1 if no elements pass.
       **/
     def findLastIndex(): Double = js.native
-    def findLastIndex(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Double = js.native
+    def findLastIndex(iteratee: Unit, context: js.Any): Double = js.native
     def findLastIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findLastIndex(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Double = js.native
     
     /**
       * Looks through the wrapped collection and returns the first value
@@ -2356,11 +2366,9 @@ object mod extends Shortcut {
       * the wrapped collection.
       **/
     def groupBy(): Dictionary[js.Array[T]] = js.native
-    def groupBy(
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Dictionary[js.Array[T]] = js.native
+    def groupBy(iteratee: Unit, context: js.Any): Dictionary[js.Array[T]] = js.native
     def groupBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[js.Array[T]] = js.native
+    def groupBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]], context: js.Any): Dictionary[js.Array[T]] = js.native
     
     /**
       * Wrapped type `object`.
@@ -2425,11 +2433,9 @@ object mod extends Shortcut {
       * assigned to the property designated by `iteratee`.
       **/
     def indexBy(): Dictionary[T] = js.native
-    def indexBy(
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Dictionary[T] = js.native
+    def indexBy(iteratee: Unit, context: js.Any): Dictionary[T] = js.native
     def indexBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[T] = js.native
+    def indexBy(iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]], context: js.Any): Dictionary[T] = js.native
     
     /**
       * Returns the index at which `value` can be found in the wrapped list,
@@ -2512,7 +2518,7 @@ object mod extends Shortcut {
       * @returns An array containing the result of the method call for each
       * item in the wrapped collection.
       **/
-    def invoke(methodName: String, args: js.Any*): js.Array[_] = js.native
+    def invoke(methodName: String, args: js.Any*): js.Array[js.Any] = js.native
     
     /**
       * Returns true if the wrapped object is an Arguments object.
@@ -2681,7 +2687,6 @@ object mod extends Shortcut {
     def lastIndexOf(value: T, fromIndex: Double): Double = js.native
     
     def map(): js.Array[IterateeResult[Null, T]] = js.native
-    def map(iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], T]] = js.native
     /**
       * Produces a new array of values by mapping each value in the wrapped
       * collection through a transformation `iteratee`.
@@ -2697,19 +2702,17 @@ object mod extends Shortcut {
     def map(iteratee: Double): js.Array[IterateeResult[Double, T]] = js.native
     def map(iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, T]] = js.native
     def map(iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, T]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def map(iteratee: Unit, context: js.Any): js.Array[IterateeResult[Unit, T]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
-    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I): js.Array[IterateeResult[I, T]] = js.native
+    def map[I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.Underscore with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): js.Array[IterateeResult[I, T]] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](iteratee: I, context: js.Any): js.Array[IterateeResult[I, T]] = js.native
     
     def mapObject(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
-    def mapObject(iteratee: js.UndefOr[scala.Nothing], context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     /**
       * Like map, but for objects. Transform the value of each property in
       * turn.
@@ -2720,35 +2723,38 @@ object mod extends Shortcut {
       */
     def mapObject(iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     def mapObject(iteratee: String, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     def mapObject(iteratee: js.Array[String | Double]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     def mapObject(iteratee: js.Array[String | Double], context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     def mapObject(iteratee: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     def mapObject(iteratee: Double, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     def mapObject(iteratee: Null, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, _], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
+    def mapObject(iteratee: Unit, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, js.Any], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.Underscore with (TopLevel[TypeOfCollection[V, _]])) */](iteratee: I): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, js.Any]])) */](iteratee: I): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
-    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, _], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
+    def mapObject[I /* <: (CollectionIterator[TypeOfCollection[V, js.Any], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.Underscore with (TopLevel[TypeOfCollection[V, _]])) */](iteratee: I, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.Underscore & (TopLevel[TypeOfCollection[V, js.Any]])) */](iteratee: I, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.Underscore with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.Underscore & TopLevel[V] = js.native
     
     /**
       * Wrapped type `any[]`.
@@ -2776,8 +2782,9 @@ object mod extends Shortcut {
       * -Infinity if the wrapped collection is empty.
       **/
     def max(): T | Double = js.native
-    def max(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): T | Double = js.native
-    def max(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): T | Double = js.native
+    def max(iteratee: Unit, context: js.Any): T | Double = js.native
+    def max(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): T | Double = js.native
+    def max(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): T | Double = js.native
     
     /**
       * Wrapped type `Function`.
@@ -2805,8 +2812,9 @@ object mod extends Shortcut {
       * Infinity if the wrapped collection is empty.
       **/
     def min(): T | Double = js.native
-    def min(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): T | Double = js.native
-    def min(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): T | Double = js.native
+    def min(iteratee: Unit, context: js.Any): T | Double = js.native
+    def min(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): T | Double = js.native
+    def min(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): T | Double = js.native
     
     /**
       * Wrapped type `object`.
@@ -2846,7 +2854,7 @@ object mod extends Shortcut {
       * @returns A copy of the wrapped object without the keys selected by
       * `iterator`.
       **/
-    def omit(iterator: ObjectIterator[TypeOfDictionary[V, _], Boolean, V]): Partial[V] = js.native
+    def omit(iterator: ObjectIterator[TypeOfDictionary[V, js.Any], Boolean, V]): Partial[V] = js.native
     /**
       * Return a copy of the wrapped object that is filtered to omit the
       * disallowed keys (or array of keys).
@@ -2866,7 +2874,7 @@ object mod extends Shortcut {
       * opposite of the single-argument signature of `_.object`.
       * @returns The list of [key, value] pairs from the wrapped object.
       **/
-    def pairs(): js.Array[js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, _]]] = js.native
+    def pairs(): js.Array[js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, js.Any]]] = js.native
     
     /**
       * Wrapped type `Function`.
@@ -2886,8 +2894,9 @@ object mod extends Shortcut {
       * predicate and the second element contains the elements that did not.
       **/
     def partition(): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-    def partition(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+    def partition(iteratee: Unit, context: js.Any): js.Tuple2[js.Array[T], js.Array[T]] = js.native
     def partition(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+    def partition(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Tuple2[js.Array[T], js.Array[T]] = js.native
     
     /**
       * Return a copy of the wrapped object that is filtered to only have
@@ -2897,7 +2906,7 @@ object mod extends Shortcut {
       * @returns A copy of the wrapped object with only the keys selected by
       * `iterator`.
       **/
-    def pick(iterator: ObjectIterator[TypeOfDictionary[V, _], Boolean, V]): Partial[V] = js.native
+    def pick(iterator: ObjectIterator[TypeOfDictionary[V, js.Any], Boolean, V]): Partial[V] = js.native
     /**
       * Return a copy of the wrapped object that is filtered to only have
       * values for the allowed keys (or array of keys).
@@ -2922,13 +2931,13 @@ object mod extends Shortcut {
       * Wrapped type `string`.
       * @see _.property
       **/
-    def property(): js.Function1[/* object */ js.Any, _] = js.native
+    def property(): js.Function1[/* object */ js.Any, js.Any] = js.native
     
     /**
       * Wrapped type `object`.
       * @see _.propertyOf
       **/
-    def propertyOf(): js.Function1[/* key */ String, _] = js.native
+    def propertyOf(): js.Function1[/* key */ String, js.Any] = js.native
     
     /**
       * Wrapped type `number`.
@@ -2958,9 +2967,9 @@ object mod extends Shortcut {
       * of `step`.
       **/
     def range(): js.Array[Double] = js.native
-    def range(stop: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
     def range(stop: Double): js.Array[Double] = js.native
     def range(stop: Double, step: Double): js.Array[Double] = js.native
+    def range(stop: Unit, step: Double): js.Array[Double] = js.native
     
     def reduce[TResult](
       iteratee: MemoCollectionIterator[
@@ -3028,8 +3037,9 @@ object mod extends Shortcut {
       * @returns The set of values that fail the truth test.
       **/
     def reject(): js.Array[T] = js.native
-    def reject(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[T] = js.native
+    def reject(iteratee: Unit, context: js.Any): js.Array[T] = js.native
     def reject(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def reject(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[T] = js.native
     
     /**
       * Returns the rest of the elements in the wrapped list. Pass an
@@ -3072,8 +3082,9 @@ object mod extends Shortcut {
       * @see filter
       **/
     def select(): js.Array[T] = js.native
-    def select(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[T] = js.native
+    def select(iteratee: Unit, context: js.Any): js.Array[T] = js.native
     def select(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def select(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[T] = js.native
     /**
       * @see filter
       **/
@@ -3106,8 +3117,9 @@ object mod extends Shortcut {
       * @returns True if any element passed the truth test, otherwise false.
       **/
     def some(): Boolean = js.native
-    def some(iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]], context: js.Any): Boolean = js.native
+    def some(iteratee: Unit, context: js.Any): Boolean = js.native
     def some(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def some(iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     
     /**
       * Returns a (stably) sorted copy of the wrapped collection, ranked in
@@ -3119,8 +3131,9 @@ object mod extends Shortcut {
       * @returns A sorted copy of the wrapped collection.
       **/
     def sortBy(): js.Array[T] = js.native
-    def sortBy(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[T] = js.native
-    def sortBy(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def sortBy(iteratee: Unit, context: js.Any): js.Array[T] = js.native
+    def sortBy(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def sortBy(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[T] = js.native
     
     /**
       * Uses a binary search to determine the lowest index at which the
@@ -3137,12 +3150,16 @@ object mod extends Shortcut {
       * list.
       **/
     def sortedIndex(value: T): Double = js.native
+    def sortedIndex(value: T, iteratee: Unit, context: js.Any): Double = js.native
     def sortedIndex(
       value: T,
-      iteratee: js.UndefOr[Iteratee[js.UndefOr[V], _, TypeOfCollection[js.UndefOr[V], scala.Nothing]]],
+      iteratee: Iteratee[js.UndefOr[V], js.Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]]
+    ): Double = js.native
+    def sortedIndex(
+      value: T,
+      iteratee: Iteratee[js.UndefOr[V], js.Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]],
       context: js.Any
     ): Double = js.native
-    def sortedIndex(value: T, iteratee: Iteratee[js.UndefOr[V], _, TypeOfCollection[js.UndefOr[V], scala.Nothing]]): Double = js.native
     
     /**
       * @see rest
@@ -3173,7 +3190,7 @@ object mod extends Shortcut {
       * Wrapped type `object`.
       * @see _.tap
       **/
-    def tap(interceptor: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+    def tap(interceptor: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
     
     /**
       * Wrapped type `string`.
@@ -3186,8 +3203,8 @@ object mod extends Shortcut {
       * Wrapped type `Function`.
       * @see _.throttle
       **/
-    def throttle(wait: Double): js.Function with Cancelable = js.native
-    def throttle(wait: Double, options: ThrottleSettings): js.Function with Cancelable = js.native
+    def throttle(wait: Double): js.Function & Cancelable = js.native
+    def throttle(wait: Double, options: ThrottleSettings): js.Function & Cancelable = js.native
     
     /**
       * Wrapped type `number`.
@@ -3234,41 +3251,39 @@ object mod extends Shortcut {
       * list.
       **/
     def uniq(): js.Array[T] = js.native
-    def uniq(
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      cotext: js.Any
-    ): js.Array[T] = js.native
-    def uniq(isSorted: js.UndefOr[scala.Nothing], iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
     def uniq(isSorted: Boolean): js.Array[T] = js.native
+    def uniq(isSorted: Boolean, iteratee: Unit, cotext: js.Any): js.Array[T] = js.native
+    def uniq(isSorted: Boolean, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
     def uniq(
       isSorted: Boolean,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
       cotext: js.Any
     ): js.Array[T] = js.native
-    def uniq(isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
-    def uniq(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[T] = js.native
-    def uniq(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def uniq(isSorted: Unit, iteratee: Unit, cotext: js.Any): js.Array[T] = js.native
+    def uniq(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def uniq(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], cotext: js.Any): js.Array[T] = js.native
+    def uniq(iteratee: Unit, context: js.Any): js.Array[T] = js.native
+    def uniq(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def uniq(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[T] = js.native
     
     /**
       * @see uniq
       **/
     def unique(): js.Array[T] = js.native
-    def unique(
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      cotext: js.Any
-    ): js.Array[T] = js.native
-    def unique(isSorted: js.UndefOr[scala.Nothing], iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
     def unique(isSorted: Boolean): js.Array[T] = js.native
+    def unique(isSorted: Boolean, iteratee: Unit, cotext: js.Any): js.Array[T] = js.native
+    def unique(isSorted: Boolean, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
     def unique(
       isSorted: Boolean,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
       cotext: js.Any
     ): js.Array[T] = js.native
-    def unique(isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
-    def unique(iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[T] = js.native
-    def unique(iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def unique(isSorted: Unit, iteratee: Unit, cotext: js.Any): js.Array[T] = js.native
+    def unique(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def unique(isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], cotext: js.Any): js.Array[T] = js.native
+    def unique(iteratee: Unit, context: js.Any): js.Array[T] = js.native
+    def unique(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[T] = js.native
+    def unique(iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[T] = js.native
     
     /**
       * Wrapped type `string`.
@@ -3289,7 +3304,7 @@ object mod extends Shortcut {
       * the second elements, and so on.
       * @returns The unzipped version of the wrapped lists.
       **/
-    def unzip(): js.Array[js.Array[_]] = js.native
+    def unzip(): js.Array[js.Array[js.Any]] = js.native
     
     /**
       * Extracts the value of the wrapped object.
@@ -3336,7 +3351,7 @@ object mod extends Shortcut {
       * matching list indexes.
       * @returns The zipped version of the wrapped list and `lists`.
       **/
-    def zip(lists: List[_]*): js.Array[js.Array[_]] = js.native
+    def zip(lists: List[js.Any]*): js.Array[js.Array[js.Any]] = js.native
   }
   
   @js.native
@@ -3371,13 +3386,10 @@ object mod extends Shortcut {
     /**
       * @see every
       **/
-    def all[V /* <: Collection[_] */](collection: V): Boolean = js.native
-    def all[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Boolean = js.native
-    def all[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def all[V /* <: Collection[js.Any] */](collection: V): Boolean = js.native
+    def all[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Boolean = js.native
+    def all[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def all[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     
     /**
       * Retrieve all the names of object's own and inherited properties.
@@ -3391,8 +3403,10 @@ object mod extends Shortcut {
       **/
     @JSName("all")
     var all_Original: js.Function3[
-        /* collection */ Collection[_], 
-        /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_], scala.Nothing]]], 
+        /* collection */ Collection[js.Any], 
+        /* iteratee */ js.UndefOr[
+          Iteratee[Collection[js.Any], Boolean, TypeOfCollection[Collection[js.Any], scala.Nothing]]
+        ], 
         /* context */ js.UndefOr[js.Any], 
         Boolean
       ] = js.native
@@ -3400,20 +3414,19 @@ object mod extends Shortcut {
     /**
       * @see some
       **/
-    def any[V /* <: Collection[_] */](collection: V): Boolean = js.native
-    def any[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Boolean = js.native
-    def any[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def any[V /* <: Collection[js.Any] */](collection: V): Boolean = js.native
+    def any[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Boolean = js.native
+    def any[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def any[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     /**
       * @see some
       **/
     @JSName("any")
     var any_Original: js.Function3[
-        /* collection */ Collection[_], 
-        /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_], scala.Nothing]]], 
+        /* collection */ Collection[js.Any], 
+        /* iteratee */ js.UndefOr[
+          Iteratee[Collection[js.Any], Boolean, TypeOfCollection[Collection[js.Any], scala.Nothing]]
+        ], 
         /* context */ js.UndefOr[js.Any], 
         Boolean
       ] = js.native
@@ -3443,7 +3456,7 @@ object mod extends Shortcut {
       * @param arguments Additional arguments to pass to `fn` when called.
       * @return `fn` with `this` bound to `object`.
       **/
-    def bind(func: js.Function, context: js.Any, args: js.Any*): js.Function0[_] = js.native
+    def bind(func: js.Function, context: js.Any, args: js.Any*): js.Function0[js.Any] = js.native
     
     /**
       * Binds a number of methods on the object, specified by methodNames, to be run in the context of that object
@@ -3475,7 +3488,7 @@ object mod extends Shortcut {
       * @returns The contents of `list` in chunks no greater than `length`
       * in size.
       **/
-    def chunk[V /* <: List[_] */](list: V, length: Double): js.Array[js.Array[TypeOfList[V]]] = js.native
+    def chunk[V /* <: List[js.Any] */](list: V, length: Double): js.Array[js.Array[TypeOfList[V]]] = js.native
     
     /**
       * Create a shallow-copied clone of the object.
@@ -3488,33 +3501,33 @@ object mod extends Shortcut {
     /**
       * @see map
       **/
-    def collect[V /* <: Collection[_] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * @see map
       **/
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: String, context: js.Any): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: String, context: js.Any): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * @see map
       **/
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: js.Array[String | Double]): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: js.Array[String | Double], context: js.Any): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: js.Array[String | Double]): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: js.Array[String | Double], context: js.Any): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * @see map
       **/
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: Double): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[_] */](collection: V, iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: Double): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.Array[IterateeResult[Unit, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * @see map
       **/
-    def collect[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def collect[V /* <: Collection[js.Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def collect[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def collect[V /* <: Collection[js.Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: js.Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: js.Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * @see map
       **/
@@ -3528,7 +3541,7 @@ object mod extends Shortcut {
       * @returns An array containing the elements of `list` without falsy
       * values.
       **/
-    def compact[V /* <: js.UndefOr[List[_] | Null] */](list: V): js.Array[Truthy[TypeOfList[V]]] = js.native
+    def compact[V /* <: js.UndefOr[List[js.Any] | Null] */](list: V): js.Array[Truthy[TypeOfList[V]]] = js.native
     
     /**
       * Returns the composition of a list of functions, where each function consumes the return value of the
@@ -3556,8 +3569,8 @@ object mod extends Shortcut {
       * @returns True if `value` is present in `collection` after
       * `fromIndex`, otherwise false.
       **/
-    def contains[V /* <: Collection[_] */](collection: V, value: js.Any): Boolean = js.native
-    def contains[V /* <: Collection[_] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
+    def contains[V /* <: Collection[js.Any] */](collection: V, value: js.Any): Boolean = js.native
+    def contains[V /* <: Collection[js.Any] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
     
     /**
       * Sorts `collection` into groups and returns a count for the number of
@@ -3572,13 +3585,14 @@ object mod extends Shortcut {
       * properties where each property contains the count of the grouped
       * elements from `collection`.
       **/
-    def countBy[V /* <: Collection[_] */](collection: V): Dictionary[Double] = js.native
-    def countBy[V /* <: Collection[_] */](
+    def countBy[V /* <: Collection[js.Any] */](collection: V): Dictionary[Double] = js.native
+    def countBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Dictionary[Double] = js.native
+    def countBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[Double] = js.native
+    def countBy[V /* <: Collection[js.Any] */](
       collection: V,
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): Dictionary[Double] = js.native
-    def countBy[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[Double] = js.native
     
     /**
       * Creates an object that inherits from the given prototype object.
@@ -3604,8 +3618,8 @@ object mod extends Shortcut {
       * @param immediate True if `fn` should be invoked on the leading edge of `waitMS` instead of the trailing edge.
       * @return Debounced version of `fn` that waits `wait` ms when invoked.
       **/
-    def debounce[T /* <: js.Function */](fn: T, wait: Double): T with Cancelable = js.native
-    def debounce[T /* <: js.Function */](fn: T, wait: Double, immediate: Boolean): T with Cancelable = js.native
+    def debounce[T /* <: js.Function */](fn: T, wait: Double): T & Cancelable = js.native
+    def debounce[T /* <: js.Function */](fn: T, wait: Double, immediate: Boolean): T & Cancelable = js.native
     
     /**
       * Fill in null and undefined properties in object with values from the defaults objects,
@@ -3642,22 +3656,21 @@ object mod extends Shortcut {
     /**
       * @see find
       **/
-    def detect[V /* <: Collection[_] */](collection: V): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
-    def detect[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
-    def detect[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def detect[V /* <: Collection[js.Any] */](collection: V): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def detect[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def detect[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def detect[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
     /**
       * @see find
       **/
     @JSName("detect")
     var detect_Original: js.Function3[
-        /* collection */ Collection[_], 
-        /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_], scala.Nothing]]], 
+        /* collection */ Collection[js.Any], 
+        /* iteratee */ js.UndefOr[
+          Iteratee[Collection[js.Any], Boolean, TypeOfCollection[Collection[js.Any], scala.Nothing]]
+        ], 
         /* context */ js.UndefOr[js.Any], 
-        js.UndefOr[TypeOfCollection[Collection[_], scala.Nothing]]
+        js.UndefOr[TypeOfCollection[Collection[js.Any], scala.Nothing]]
       ] = js.native
     
     /**
@@ -3672,13 +3685,17 @@ object mod extends Shortcut {
     /**
       * @see rest
       **/
-    def drop[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def drop[V /* <: List[_] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
+    def drop[V /* <: List[js.Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def drop[V /* <: List[js.Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see rest
       **/
     @JSName("drop")
-    var drop_Original: js.Function2[/* list */ List[_], /* index */ js.UndefOr[Double], js.Array[TypeOfList[List[_]]]] = js.native
+    var drop_Original: js.Function2[
+        /* list */ List[js.Any], 
+        /* index */ js.UndefOr[Double], 
+        js.Array[TypeOfList[List[js.Any]]]
+      ] = js.native
     
     /***************
       * Collections *
@@ -3693,8 +3710,8 @@ object mod extends Shortcut {
       * @param context 'this' object in `iteratee`, optional.
       * @returns The original collection.
       **/
-    def each[V /* <: Collection[_] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V, scala.Nothing], Unit, V]): V = js.native
-    def each[V /* <: Collection[_] */](
+    def each[V /* <: Collection[js.Any] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V, scala.Nothing], Unit, V]): V = js.native
+    def each[V /* <: Collection[js.Any] */](
       collection: V,
       iteratee: CollectionIterator[TypeOfCollection[V, scala.Nothing], Unit, V],
       context: js.Any
@@ -3716,13 +3733,10 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns True if all elements pass the truth test, otherwise false.
       **/
-    def every[V /* <: Collection[_] */](collection: V): Boolean = js.native
-    def every[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Boolean = js.native
-    def every[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def every[V /* <: Collection[js.Any] */](collection: V): Boolean = js.native
+    def every[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Boolean = js.native
+    def every[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def every[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     
     /**
       * Copy all of the properties in the source objects over to the destination object, and return
@@ -3747,13 +3761,10 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The set of values that pass the truth test.
       **/
-    def filter[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def filter[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def filter[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def filter[V /* <: Collection[js.Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def filter[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def filter[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def filter[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Looks through each value in `collection`, returning the first one
@@ -3766,13 +3777,10 @@ object mod extends Shortcut {
       * @returns The first element in `collection` that passes the truth
       * test or undefined if no elements pass.
       **/
-    def find[V /* <: Collection[_] */](collection: V): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
-    def find[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
-    def find[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def find[V /* <: Collection[js.Any] */](collection: V): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def find[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def find[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def find[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Returns the first index of an element in `list` where the `iteratee`
@@ -3784,13 +3792,10 @@ object mod extends Shortcut {
       * @returns The index of the first element in `list` where the
       * truth test passes or -1 if no elements pass.
       **/
-    def findIndex[V /* <: List[_] */](list: V): Double = js.native
-    def findIndex[V /* <: List[_] */](
-      list: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Double = js.native
-    def findIndex[V /* <: List[_] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findIndex[V /* <: List[js.Any] */](list: V): Double = js.native
+    def findIndex[V /* <: List[js.Any] */](list: V, iteratee: Unit, context: js.Any): Double = js.native
+    def findIndex[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findIndex[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Double = js.native
     
     /**
       * Similar to `findIndex` but for keys in objects. Returns the key
@@ -3802,8 +3807,9 @@ object mod extends Shortcut {
       * undefined if no elements pass.
       */
     def findKey[V /* <: js.Object */](`object`: V): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
-    def findKey[V /* <: js.Object */](`object`: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, _]]], context: js.Any): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
-    def findKey[V /* <: js.Object */](`object`: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, _]]): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
+    def findKey[V /* <: js.Object */](`object`: V, iteratee: Unit, context: js.Any): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
+    def findKey[V /* <: js.Object */](`object`: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, js.Any]]): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
+    def findKey[V /* <: js.Object */](`object`: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, js.Any]], context: js.Any): js.UndefOr[Extract[/* keyof V */ String, String]] = js.native
     
     /**
       * Returns the last index of an element in `list` where the `iteratee`
@@ -3815,13 +3821,10 @@ object mod extends Shortcut {
       * @returns The index of the last element in `list` where the
       * truth test passes or -1 if no elements pass.
       **/
-    def findLastIndex[V /* <: List[_] */](list: V): Double = js.native
-    def findLastIndex[V /* <: List[_] */](
-      list: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Double = js.native
-    def findLastIndex[V /* <: List[_] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findLastIndex[V /* <: List[js.Any] */](list: V): Double = js.native
+    def findLastIndex[V /* <: List[js.Any] */](list: V, iteratee: Unit, context: js.Any): Double = js.native
+    def findLastIndex[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findLastIndex[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Double = js.native
     
     /**
       * Looks through `collection` and returns the first value that matches
@@ -3834,7 +3837,7 @@ object mod extends Shortcut {
       * @returns The first element in `collection` that matches `properties`
       * or undefined if no match is found.
       **/
-    def findWhere[V /* <: Collection[_] */](collection: V, properties: Partial[TypeOfCollection[V, scala.Nothing]]): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def findWhere[V /* <: Collection[js.Any] */](collection: V, properties: Partial[TypeOfCollection[V, scala.Nothing]]): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**********
       * Arrays *
@@ -3847,8 +3850,8 @@ object mod extends Shortcut {
       * @returns The first `n` elements of `list` or the first element if
       * `n` is omitted.
       **/
-    def first[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
-    def first[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def first[V /* <: List[js.Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def first[V /* <: List[js.Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Flattens a nested `list` (the nesting can be to any depth). If you
@@ -3858,16 +3861,16 @@ object mod extends Shortcut {
       * default = false.
       * @returns The flattened `list`.
       **/
-    def flatten[V /* <: List[_] */](list: V): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten[V /* <: List[js.Any] */](list: V): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
     @JSName("flatten")
-    def flatten_false[V /* <: List[_] */](list: V, shallow: `false`): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten_false[V /* <: List[js.Any] */](list: V, shallow: `false`): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
     @JSName("flatten")
-    def flatten_true[V /* <: List[_] */](list: V, shallow: `true`): js.Array[ListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten_true[V /* <: List[js.Any] */](list: V, shallow: `true`): js.Array[ListItemOrSelf[TypeOfList[V]]] = js.native
     
     /**
       * @see reduce
       **/
-    def foldl[V /* <: Collection[_] */, TResult](
+    def foldl[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[
           TypeOfCollection[V, scala.Nothing], 
@@ -3878,12 +3881,12 @@ object mod extends Shortcut {
     /**
       * @see reduce
       **/
-    def foldl[V /* <: Collection[_] */, TResult](
+    def foldl[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult
     ): TResult = js.native
-    def foldl[V /* <: Collection[_] */, TResult](
+    def foldl[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult,
@@ -3898,7 +3901,7 @@ object mod extends Shortcut {
     /**
       * @see reduceRight
       **/
-    def foldr[V /* <: Collection[_] */, TResult](
+    def foldr[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[
           TypeOfCollection[V, scala.Nothing], 
@@ -3909,12 +3912,12 @@ object mod extends Shortcut {
     /**
       * @see reduceRight
       **/
-    def foldr[V /* <: Collection[_] */, TResult](
+    def foldr[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult
     ): TResult = js.native
-    def foldr[V /* <: Collection[_] */, TResult](
+    def foldr[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult,
@@ -3929,8 +3932,8 @@ object mod extends Shortcut {
     /**
       * @see each
       **/
-    def forEach[V /* <: Collection[_] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V, scala.Nothing], Unit, V]): V = js.native
-    def forEach[V /* <: Collection[_] */](
+    def forEach[V /* <: Collection[js.Any] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V, scala.Nothing], Unit, V]): V = js.native
+    def forEach[V /* <: Collection[js.Any] */](
       collection: V,
       iteratee: CollectionIterator[TypeOfCollection[V, scala.Nothing], Unit, V],
       context: js.Any
@@ -3940,10 +3943,10 @@ object mod extends Shortcut {
       **/
     @JSName("forEach")
     var forEach_Original: js.Function3[
-        /* collection */ Collection[_], 
-        /* iteratee */ CollectionIterator[TypeOfCollection[Collection[_], scala.Nothing], Unit, Collection[_]], 
+        /* collection */ Collection[js.Any], 
+        /* iteratee */ CollectionIterator[TypeOfCollection[Collection[js.Any], scala.Nothing], Unit, Collection[js.Any]], 
         /* context */ js.UndefOr[js.Any], 
-        Collection[_]
+        Collection[js.Any]
       ] = js.native
     
     /**
@@ -3965,13 +3968,14 @@ object mod extends Shortcut {
       * properties where each property contains the grouped elements from
       * `collection`.
       **/
-    def groupBy[V /* <: Collection[_] */](collection: V): Dictionary[js.Array[TypeOfCollection[V, scala.Nothing]]] = js.native
-    def groupBy[V /* <: Collection[_] */](
+    def groupBy[V /* <: Collection[js.Any] */](collection: V): Dictionary[js.Array[TypeOfCollection[V, scala.Nothing]]] = js.native
+    def groupBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Dictionary[js.Array[TypeOfCollection[V, scala.Nothing]]] = js.native
+    def groupBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[js.Array[TypeOfCollection[V, scala.Nothing]]] = js.native
+    def groupBy[V /* <: Collection[js.Any] */](
       collection: V,
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): Dictionary[js.Array[TypeOfCollection[V, scala.Nothing]]] = js.native
-    def groupBy[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[js.Array[TypeOfCollection[V, scala.Nothing]]] = js.native
     
     /**
       * Does the object contain the given key? Identical to object.hasOwnProperty(key), but uses a safe
@@ -3985,11 +3989,11 @@ object mod extends Shortcut {
     /**
       * @see first
       **/
-    def head[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def head[V /* <: List[js.Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
-    def head[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def head[V /* <: List[js.Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
@@ -4007,14 +4011,14 @@ object mod extends Shortcut {
     /**
       * @see contains
       **/
-    def include[V /* <: Collection[_] */](collection: V, value: js.Any): Boolean = js.native
-    def include[V /* <: Collection[_] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
+    def include[V /* <: Collection[js.Any] */](collection: V, value: js.Any): Boolean = js.native
+    def include[V /* <: Collection[js.Any] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
     /**
       * @see contains
       **/
     @JSName("include")
     var include_Original: js.Function3[
-        /* collection */ Collection[_], 
+        /* collection */ Collection[js.Any], 
         /* value */ js.Any, 
         /* fromIndex */ js.UndefOr[Double], 
         Boolean
@@ -4023,14 +4027,14 @@ object mod extends Shortcut {
     /**
       * @see contains
       **/
-    def includes[V /* <: Collection[_] */](collection: V, value: js.Any): Boolean = js.native
-    def includes[V /* <: Collection[_] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
+    def includes[V /* <: Collection[js.Any] */](collection: V, value: js.Any): Boolean = js.native
+    def includes[V /* <: Collection[js.Any] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
     /**
       * @see contains
       **/
     @JSName("includes")
     var includes_Original: js.Function3[
-        /* collection */ Collection[_], 
+        /* collection */ Collection[js.Any], 
         /* value */ js.Any, 
         /* fromIndex */ js.UndefOr[Double], 
         Boolean
@@ -4048,13 +4052,14 @@ object mod extends Shortcut {
       * @returns A dictionary where each item in `collection` is assigned to
       * the property designated by `iteratee`.
       **/
-    def indexBy[V /* <: Collection[_] */](collection: V): Dictionary[TypeOfCollection[V, scala.Nothing]] = js.native
-    def indexBy[V /* <: Collection[_] */](
+    def indexBy[V /* <: Collection[js.Any] */](collection: V): Dictionary[TypeOfCollection[V, scala.Nothing]] = js.native
+    def indexBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Dictionary[TypeOfCollection[V, scala.Nothing]] = js.native
+    def indexBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[TypeOfCollection[V, scala.Nothing]] = js.native
+    def indexBy[V /* <: Collection[js.Any] */](
       collection: V,
-      iteratee: js.UndefOr[Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): Dictionary[TypeOfCollection[V, scala.Nothing]] = js.native
-    def indexBy[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, String | Double, TypeOfCollection[V, scala.Nothing]]): Dictionary[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Returns the index at which `value` can be found in `list`, or -1 if
@@ -4070,9 +4075,9 @@ object mod extends Shortcut {
       * @returns The index of the first occurrence of `value` within `list`
       * or -1 if `value` is not found.
       **/
-    def indexOf[V /* <: List[_] */](list: V, value: TypeOfList[V]): Double = js.native
-    def indexOf[V /* <: List[_] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Boolean): Double = js.native
-    def indexOf[V /* <: List[_] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Double): Double = js.native
+    def indexOf[V /* <: List[js.Any] */](list: V, value: TypeOfList[V]): Double = js.native
+    def indexOf[V /* <: List[js.Any] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Boolean): Double = js.native
+    def indexOf[V /* <: List[js.Any] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Double): Double = js.native
     
     /**
       * Returns everything but the last entry of `list`. Especially useful
@@ -4083,13 +4088,13 @@ object mod extends Shortcut {
       * optional, default = 1.
       * @returns The elements of `list` with the last `n` items omitted.
       **/
-    def initial[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def initial[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def initial[V /* <: List[js.Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def initial[V /* <: List[js.Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * @see reduce
       **/
-    def inject[V /* <: Collection[_] */, TResult](
+    def inject[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[
           TypeOfCollection[V, scala.Nothing], 
@@ -4100,12 +4105,12 @@ object mod extends Shortcut {
     /**
       * @see reduce
       **/
-    def inject[V /* <: Collection[_] */, TResult](
+    def inject[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult
     ): TResult = js.native
-    def inject[V /* <: Collection[_] */, TResult](
+    def inject[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult,
@@ -4146,7 +4151,7 @@ object mod extends Shortcut {
       * @returns An array containing the result of the method call for each
       * item in `collection`.
       **/
-    def invoke(list: Collection[_], methodName: String, args: js.Any*): js.Array[_] = js.native
+    def invoke(list: Collection[js.Any], methodName: String, args: js.Any*): js.Array[js.Any] = js.native
     
     /**
       * Returns true if `object` is an Arguments object.
@@ -4323,8 +4328,8 @@ object mod extends Shortcut {
       * @returns The last `n` elements of `list` or the last element if `n`
       * is omitted.
       **/
-    def last[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
-    def last[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def last[V /* <: List[js.Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def last[V /* <: List[js.Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Returns the index of the last occurrence of `value` in `list`, or -1
@@ -4336,11 +4341,10 @@ object mod extends Shortcut {
       * @returns The index of the last occurrence of `value` within `list`
       * or -1 if `value` is not found.
       **/
-    def lastIndexOf[V /* <: List[_] */](list: V, value: TypeOfList[V]): Double = js.native
-    def lastIndexOf[V /* <: List[_] */](list: V, value: TypeOfList[V], fromIndex: Double): Double = js.native
+    def lastIndexOf[V /* <: List[js.Any] */](list: V, value: TypeOfList[V]): Double = js.native
+    def lastIndexOf[V /* <: List[js.Any] */](list: V, value: TypeOfList[V], fromIndex: Double): Double = js.native
     
-    def map[V /* <: Collection[_] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
       * Produces a new array of values by mapping each value in `collection`
       * through a transformation `iteratee`.
@@ -4350,26 +4354,24 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The mapped result.
       **/
-    def map[V /* <: Collection[_] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: String, context: js.Any): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: js.Array[String | Double]): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: js.Array[String | Double], context: js.Any): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: Double): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */](collection: V, iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: String, context: js.Any): js.Array[IterateeResult[String, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: js.Array[String | Double]): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: js.Array[String | Double], context: js.Any): js.Array[IterateeResult[js.Array[String | Double], TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: Double): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.Array[IterateeResult[Unit, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
-    def map[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+    def map[V /* <: Collection[js.Any] */, I /* <: (CollectionIterator[TypeOfCollection[V, scala.Nothing], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, never> ]:? underscore.underscore.TypeOfCollection<V, never>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: js.Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, scala.Nothing]])) */](collection: V, iteratee: I, context: js.Any): js.Array[IterateeResult[I, TypeOfCollection[V, scala.Nothing]]] = js.native
     
     def mapObject[V /* <: js.Object */](`object`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.UndefOr[scala.Nothing], context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     /**
       * Like map, but for objects. Transform the value of each property in
       * turn.
@@ -4381,35 +4383,38 @@ object mod extends Shortcut {
       */
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: String, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<string, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.Array[String | Double]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: js.Array[String | Double], context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<std.Array<string | number>, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: Double, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<number, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     def mapObject[V /* <: js.Object */](`object`: V, iteratee: Null, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<null, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, _], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
+    def mapObject[V /* <: js.Object */](`object`: V, iteratee: Unit, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof V ]: underscore.underscore.IterateeResult<undefined, V[K]>}
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
+    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, js.Any], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with (TopLevel[TypeOfCollection[V, _]])) */](`object`: V, iteratee: I): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, js.Any]])) */](`object`: V, iteratee: I): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
-    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, _], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
+    def mapObject[V /* <: js.Object */, I /* <: (CollectionIterator[TypeOfCollection[V, js.Any], js.Any, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof underscore.underscore.TypeOfCollection<V, any> ]:? underscore.underscore.TypeOfCollection<V, any>[P]}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with (TopLevel[TypeOfCollection[V, _]])) */](`object`: V, iteratee: I, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & (TopLevel[TypeOfCollection[V, js.Any]])) */](`object`: V, iteratee: I, context: js.Any): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]: underscore.underscore.IterateeResult<I, V[K]>}
-      */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[V] = js.native
+      */ typings.underscore.underscoreStrings.UnderscoreStatic & TopLevel[V] = js.native
     
     /**
       * Returns a predicate function that will tell you if a passed in object contains all of the key/value properties present in attrs.
@@ -4439,13 +4444,10 @@ object mod extends Shortcut {
       * @returns The maximum element within `collection` or -Infinity if
       * `collection` is empty.
       **/
-    def max[V /* <: Collection[_] */](collection: V): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
-    def max[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
-    def max[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def max[V /* <: Collection[js.Any] */](collection: V): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def max[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def max[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def max[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
     
     /**
       * Memoizes a given function by caching the computed result. Useful for speeding up slow-running computations.
@@ -4477,9 +4479,10 @@ object mod extends Shortcut {
       * @returns The minimum element within `collection` or Infinity if
       * `collection` is empty.
       **/
-    def min[V /* <: Collection[_] */](list: V): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
-    def min[V /* <: Collection[_] */](list: V, iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
-    def min[V /* <: Collection[_] */](list: V, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def min[V /* <: Collection[js.Any] */](list: V): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def min[V /* <: Collection[js.Any] */](list: V, iteratee: Unit, context: js.Any): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def min[V /* <: Collection[js.Any] */](list: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
+    def min[V /* <: Collection[js.Any] */](list: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): (TypeOfCollection[V, scala.Nothing]) | Double = js.native
     
     /**
       * Allows you to extend Underscore with your own utility functions. Pass a hash of
@@ -4519,7 +4522,7 @@ object mod extends Shortcut {
       **/
     def now(): Double = js.native
     
-    def `object`[TList /* <: List[List[_]] */](list: TList): Dictionary[PairValue[TypeOfList[TList]]] = js.native
+    def `object`[TList /* <: List[List[js.Any]] */](list: TList): Dictionary[PairValue[TypeOfList[TList]]] = js.native
     /**
       * Converts lists into objects. Pass either a single `list` of
       * [key, value] pairs, or a `list` of keys and a list of `values`.
@@ -4541,7 +4544,7 @@ object mod extends Shortcut {
       * @returns A copy of `object` without the keys selected by
       * `iterator`.
       **/
-    def omit[V](`object`: V, iterator: ObjectIterator[TypeOfDictionary[V, _], Boolean, V]): Partial[V] = js.native
+    def omit[V](`object`: V, iterator: ObjectIterator[TypeOfDictionary[V, js.Any], Boolean, V]): Partial[V] = js.native
     /**
       * Return a copy of `object` that is filtered to omit the disallowed
       * keys (or array of keys).
@@ -4566,7 +4569,7 @@ object mod extends Shortcut {
       * @param object The object to convert.
       * @returns The list of [key, value] pairs from `object`.
       **/
-    def pairs[V /* <: js.Object */](`object`: V): js.Array[js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, _]]] = js.native
+    def pairs[V /* <: js.Object */](`object`: V): js.Array[js.Tuple2[Extract[/* keyof V */ String, String], TypeOfCollection[V, js.Any]]] = js.native
     
     /**
       * Partially apply a function by filling in any number of its arguments, without changing its dynamic this value.
@@ -6575,19 +6578,19 @@ object mod extends Shortcut {
       * contains the elements in `collection` that satisfied the predicate
       * and the second element contains the elements that did not.
       **/
-    def partition[V /* <: Collection[_] */](list: V): js.Tuple2[
+    def partition[V /* <: Collection[js.Any] */](list: V): js.Tuple2[
         js.Array[TypeOfCollection[V, scala.Nothing]], 
         js.Array[TypeOfCollection[V, scala.Nothing]]
       ] = js.native
-    def partition[V /* <: Collection[_] */](
-      list: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Tuple2[
+    def partition[V /* <: Collection[js.Any] */](list: V, iteratee: Unit, context: js.Any): js.Tuple2[
         js.Array[TypeOfCollection[V, scala.Nothing]], 
         js.Array[TypeOfCollection[V, scala.Nothing]]
       ] = js.native
-    def partition[V /* <: Collection[_] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Tuple2[
+    def partition[V /* <: Collection[js.Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Tuple2[
+        js.Array[TypeOfCollection[V, scala.Nothing]], 
+        js.Array[TypeOfCollection[V, scala.Nothing]]
+      ] = js.native
+    def partition[V /* <: Collection[js.Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Tuple2[
         js.Array[TypeOfCollection[V, scala.Nothing]], 
         js.Array[TypeOfCollection[V, scala.Nothing]]
       ] = js.native
@@ -6601,7 +6604,7 @@ object mod extends Shortcut {
       * @returns A copy of `object` with only the keys selected by
       * `iterator`.
       **/
-    def pick[V](`object`: V, iterator: ObjectIterator[TypeOfDictionary[V, _], Boolean, V]): Partial[V] = js.native
+    def pick[V](`object`: V, iterator: ObjectIterator[TypeOfDictionary[V, js.Any], Boolean, V]): Partial[V] = js.native
     /**
       * Return a copy of `object` that is filtered to only have values for
       * the allowed keys (or array of keys).
@@ -6620,24 +6623,24 @@ object mod extends Shortcut {
       * @returns The set of values for the specified `propertyName` for each
       * item in `collection`.
       **/
-    def pluck[V /* <: Collection[_] */](collection: V, propertyName: String): js.Array[PropertyTypeOrAny[TypeOfCollection[V, scala.Nothing], String]] = js.native
-    def pluck[V /* <: Collection[_] */](collection: V, propertyName: Double): js.Array[PropertyTypeOrAny[TypeOfCollection[V, scala.Nothing], Double]] = js.native
+    def pluck[V /* <: Collection[js.Any] */](collection: V, propertyName: String): js.Array[PropertyTypeOrAny[TypeOfCollection[V, scala.Nothing], String]] = js.native
+    def pluck[V /* <: Collection[js.Any] */](collection: V, propertyName: Double): js.Array[PropertyTypeOrAny[TypeOfCollection[V, scala.Nothing], Double]] = js.native
     
     /**
       * Returns a function that will itself return the key property of any passed-in object.
       * @param key Property of the object.
       * @return Function which accept an object an returns the value of key in that object.
       **/
-    def property(key: String): js.Function1[/* object */ js.Any, _] = js.native
-    def property(key: js.Array[String | Double]): js.Function1[/* object */ js.Any, _] = js.native
-    def property(key: Double): js.Function1[/* object */ js.Any, _] = js.native
+    def property(key: String): js.Function1[/* object */ js.Any, js.Any] = js.native
+    def property(key: js.Array[String | Double]): js.Function1[/* object */ js.Any, js.Any] = js.native
+    def property(key: Double): js.Function1[/* object */ js.Any, js.Any] = js.native
     
     /**
       * Returns a function that will itself return the value of a object key property.
       * @param key The object to get the property value from.
       * @return Function which accept a key property in `object` and returns its value.
       **/
-    def propertyOf(`object`: js.Object): js.Function1[/* key */ String | Double | (js.Array[String | Double]), _] = js.native
+    def propertyOf(`object`: js.Object): js.Function1[/* key */ String | Double | (js.Array[String | Double]), js.Any] = js.native
     
     /**
       * Returns a random integer between min and max, inclusive. If you only pass one argument,
@@ -6673,11 +6676,11 @@ object mod extends Shortcut {
       * of `step`.
       **/
     def range(startOrStop: Double): js.Array[Double] = js.native
-    def range(startOrStop: Double, stop: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
     def range(startOrStop: Double, stop: Double): js.Array[Double] = js.native
     def range(startOrStop: Double, stop: Double, step: Double): js.Array[Double] = js.native
+    def range(startOrStop: Double, stop: Unit, step: Double): js.Array[Double] = js.native
     
-    def reduce[V /* <: Collection[_] */, TResult](
+    def reduce[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[
           TypeOfCollection[V, scala.Nothing], 
@@ -6703,19 +6706,19 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The reduced result.
       **/
-    def reduce[V /* <: Collection[_] */, TResult](
+    def reduce[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult
     ): TResult = js.native
-    def reduce[V /* <: Collection[_] */, TResult](
+    def reduce[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult,
       context: js.Any
     ): TResult = js.native
     
-    def reduceRight[V /* <: Collection[_] */, TResult](
+    def reduceRight[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[
           TypeOfCollection[V, scala.Nothing], 
@@ -6736,12 +6739,12 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The reduced result.
       **/
-    def reduceRight[V /* <: Collection[_] */, TResult](
+    def reduceRight[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult
     ): TResult = js.native
-    def reduceRight[V /* <: Collection[_] */, TResult](
+    def reduceRight[V /* <: Collection[js.Any] */, TResult](
       collection: V,
       iteratee: MemoCollectionIterator[TypeOfCollection[V, scala.Nothing], TResult, V],
       memo: TResult,
@@ -6757,13 +6760,10 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The set of values that fail the truth test.
       **/
-    def reject[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def reject[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def reject[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def reject[V /* <: Collection[js.Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def reject[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def reject[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def reject[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Returns the rest of the elements in `list`. Pass an `index` to
@@ -6773,8 +6773,8 @@ object mod extends Shortcut {
       * default = 1.
       * @returns The elements of `list` from `index` to the end of the list.
       **/
-    def rest[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def rest[V /* <: List[_] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
+    def rest[V /* <: List[js.Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def rest[V /* <: List[js.Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Similar to ES6's rest param (http://ariya.ofilabs.com/2013/03/es6-and-rest-parameter.html)
@@ -6793,7 +6793,7 @@ object mod extends Shortcut {
     def result(`object`: js.Any, property: String): js.Any = js.native
     def result(`object`: js.Any, property: String, defaultValue: js.Any): js.Any = js.native
     
-    def sample[V /* <: Collection[_] */](collection: V): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
+    def sample[V /* <: Collection[js.Any] */](collection: V): js.UndefOr[TypeOfCollection[V, scala.Nothing]] = js.native
     /**
       * Produce a random sample from `collection`. Pass a number to return
       * `n` random elements from `collection`. Otherwise a single random
@@ -6803,27 +6803,26 @@ object mod extends Shortcut {
       * @returns A random sample of `n` elements from `collection` or a
       * single element if `n` is not specified.
       **/
-    def sample[V /* <: Collection[_] */](collection: V, n: Double): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def sample[V /* <: Collection[js.Any] */](collection: V, n: Double): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * @see filter
       **/
-    def select[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def select[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def select[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def select[V /* <: Collection[js.Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def select[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def select[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def select[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     /**
       * @see filter
       **/
     @JSName("select")
     var select_Original: js.Function3[
-        /* collection */ Collection[_], 
-        /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_], scala.Nothing]]], 
+        /* collection */ Collection[js.Any], 
+        /* iteratee */ js.UndefOr[
+          Iteratee[Collection[js.Any], Boolean, TypeOfCollection[Collection[js.Any], scala.Nothing]]
+        ], 
         /* context */ js.UndefOr[js.Any], 
-        js.Array[TypeOfCollection[Collection[_], scala.Nothing]]
+        js.Array[TypeOfCollection[Collection[js.Any], scala.Nothing]]
       ] = js.native
     
     /**
@@ -6832,7 +6831,7 @@ object mod extends Shortcut {
       * @param collection The collection to shuffle.
       * @returns A shuffled copy of `collection`.
       **/
-    def shuffle[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def shuffle[V /* <: Collection[js.Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Determines the number of values in `collection`.
@@ -6840,7 +6839,7 @@ object mod extends Shortcut {
       * for.
       * @returns The number of values in `collection`.
       **/
-    def size(collection: Collection[_]): Double = js.native
+    def size(collection: Collection[js.Any]): Double = js.native
     
     /**
       * Returns true if any of the values in `collection` pass the
@@ -6851,13 +6850,10 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns True if any element passed the truth test, otherwise false.
       **/
-    def some[V /* <: Collection[_] */](collection: V): Boolean = js.native
-    def some[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): Boolean = js.native
-    def some[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def some[V /* <: Collection[js.Any] */](collection: V): Boolean = js.native
+    def some[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): Boolean = js.native
+    def some[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Boolean = js.native
+    def some[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: js.Any): Boolean = js.native
     
     /**
       * Returns a (stably) sorted copy of `collection`, ranked in ascending
@@ -6868,13 +6864,10 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns A sorted copy of `collection`.
       **/
-    def sortBy[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def sortBy[V /* <: Collection[_] */](
-      collection: V,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
-    def sortBy[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def sortBy[V /* <: Collection[js.Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def sortBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Unit, context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def sortBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def sortBy[V /* <: Collection[js.Any] */](collection: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Uses a binary search to determine the lowest index at which the
@@ -6889,38 +6882,43 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The index where `value` should be inserted into `list`.
       **/
-    def sortedIndex[V /* <: List[_] */](list: V, value: TypeOfList[V]): Double = js.native
-    def sortedIndex[V /* <: List[_] */](
+    def sortedIndex[V /* <: List[js.Any] */](list: V, value: TypeOfList[V]): Double = js.native
+    def sortedIndex[V /* <: List[js.Any] */](list: V, value: TypeOfList[V], iteratee: Unit, context: js.Any): Double = js.native
+    def sortedIndex[V /* <: List[js.Any] */](
       list: V,
       value: TypeOfList[V],
-      iteratee: js.UndefOr[Iteratee[js.UndefOr[V], _, TypeOfCollection[js.UndefOr[V], scala.Nothing]]],
-      context: js.Any
+      iteratee: Iteratee[js.UndefOr[V], js.Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]]
     ): Double = js.native
-    def sortedIndex[V /* <: List[_] */](
+    def sortedIndex[V /* <: List[js.Any] */](
       list: V,
       value: TypeOfList[V],
-      iteratee: Iteratee[js.UndefOr[V], _, TypeOfCollection[js.UndefOr[V], scala.Nothing]]
+      iteratee: Iteratee[js.UndefOr[V], js.Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]],
+      context: js.Any
     ): Double = js.native
     
     /**
       * @see rest
       **/
-    def tail[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def tail[V /* <: List[_] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
+    def tail[V /* <: List[js.Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def tail[V /* <: List[js.Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see rest
       **/
     @JSName("tail")
-    var tail_Original: js.Function2[/* list */ List[_], /* index */ js.UndefOr[Double], js.Array[TypeOfList[List[_]]]] = js.native
+    var tail_Original: js.Function2[
+        /* list */ List[js.Any], 
+        /* index */ js.UndefOr[Double], 
+        js.Array[TypeOfList[List[js.Any]]]
+      ] = js.native
     
     /**
       * @see first
       **/
-    def take[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def take[V /* <: List[js.Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
-    def take[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def take[V /* <: List[js.Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
@@ -6973,8 +6971,8 @@ object mod extends Shortcut {
       * @param options Allows for disabling execution of the throttled function on either the leading or trailing edge.
       * @return `fn` with a throttle of `wait`.
       **/
-    def throttle[T /* <: js.Function */](func: T, wait: Double): T with Cancelable = js.native
-    def throttle[T /* <: js.Function */](func: T, wait: Double, options: ThrottleSettings): T with Cancelable = js.native
+    def throttle[T /* <: js.Function */](func: T, wait: Double): T & Cancelable = js.native
+    def throttle[T /* <: js.Function */](func: T, wait: Double, options: ThrottleSettings): T & Cancelable = js.native
     
     /**
       * Invokes the given iterator function n times.
@@ -6992,7 +6990,7 @@ object mod extends Shortcut {
       * @param collection The collection to transform into an array.
       * @returns An array containing the elements of `collection`.
       **/
-    def toArray[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def toArray[V /* <: Collection[js.Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * The opposite of escape, replaces &amp;, &lt;, &gt;, &quot;, and &#x27; with their unescaped counterparts.
@@ -7024,54 +7022,52 @@ object mod extends Shortcut {
       * @param context 'this' object in `iteratee`, optional.
       * @returns An array containing only the unique elements in `list`.
       **/
-    def uniq[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](
-      list: V,
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](
-      list: V,
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]
-    ): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](
+    def uniq[V /* <: List[js.Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: js.Any): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](
       list: V,
       isSorted: Boolean,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](list: V, iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[_] */](list: V, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, isSorted: Unit, iteratee: Unit, context: js.Any): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](
+      list: V,
+      isSorted: Unit,
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
+      context: js.Any
+    ): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, iteratee: Unit, context: js.Any): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[TypeOfList[V]] = js.native
     
     /**
       * @see uniq
       **/
-    def unique[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](
-      list: V,
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
-      context: js.Any
-    ): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](
-      list: V,
-      isSorted: js.UndefOr[scala.Nothing],
-      iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]
-    ): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](
+    def unique[V /* <: List[js.Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: js.Any): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](
       list: V,
       isSorted: Boolean,
-      iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]],
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
       context: js.Any
     ): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](list: V, iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]], context: js.Any): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[_] */](list: V, iteratee: Iteratee[V, _, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, isSorted: Unit, iteratee: Unit, context: js.Any): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, isSorted: Unit, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](
+      list: V,
+      isSorted: Unit,
+      iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]],
+      context: js.Any
+    ): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, iteratee: Unit, context: js.Any): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: List[js.Any] */](list: V, iteratee: Iteratee[V, js.Any, TypeOfCollection[V, scala.Nothing]], context: js.Any): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Generate a globally-unique id for client-side models or DOM elements that need one.
@@ -7096,14 +7092,14 @@ object mod extends Shortcut {
       * @param lists The lists to unzip.
       * @returns The unzipped version of `lists`.
       **/
-    def unzip(lists: List[List[_]]): js.Array[js.Array[_]] = js.native
+    def unzip(lists: List[List[js.Any]]): js.Array[js.Array[js.Any]] = js.native
     
     /**
       * Return all of the values of the object's properties.
       * @param object Retrieve the values of all the properties on this object.
       * @return List of all the values on `object`.
       **/
-    def values(`object`: js.Any): js.Array[_] = js.native
+    def values(`object`: js.Any): js.Array[js.Any] = js.native
     /**
       * Return all of the values of the object's properties.
       * @param object Retrieve the values of all the properties on this object.
@@ -7120,7 +7116,7 @@ object mod extends Shortcut {
       * `collection`.
       * @returns The elements in `collection` that match `properties`.
       **/
-    def where[V /* <: Collection[_] */](collection: V, properties: Partial[TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
+    def where[V /* <: Collection[js.Any] */](collection: V, properties: Partial[TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
     /**
       * Returns a copy of `list` with all instances of `values` removed.
@@ -7129,7 +7125,7 @@ object mod extends Shortcut {
       * @returns An array that contains all elements of `list` except for
       * `values`.
       **/
-    def without[V /* <: List[_] */](list: V, values: TypeOfList[V]*): js.Array[TypeOfList[V]] = js.native
+    def without[V /* <: List[js.Any] */](list: V, values: TypeOfList[V]*): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Wraps the first function inside of the wrapper function, passing it as the first argument. This allows
@@ -7139,7 +7135,7 @@ object mod extends Shortcut {
       * @param wrapper The function that will wrap `fn`.
       * @return Wrapped version of `fn.
       **/
-    def wrap(fn: js.Function, wrapper: js.Function2[/* fn */ js.Function, /* repeated */ js.Any, _]): js.Function = js.native
+    def wrap(fn: js.Function, wrapper: js.Function2[/* fn */ js.Function, /* repeated */ js.Any, js.Any]): js.Function = js.native
     
     /**
       * Merges together the values of each of the `lists` with the values at
@@ -7148,7 +7144,7 @@ object mod extends Shortcut {
       * @param lists The lists to zip.
       * @returns The zipped version of `lists`.
       **/
-    def zip(lists: List[_]*): js.Array[js.Array[_]] = js.native
+    def zip(lists: List[js.Any]*): js.Array[js.Array[js.Any]] = js.native
   }
   
   trait _AnyFalsy extends StObject

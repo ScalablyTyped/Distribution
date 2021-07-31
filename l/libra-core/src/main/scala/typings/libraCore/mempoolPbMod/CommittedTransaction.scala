@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction")
@@ -40,13 +39,11 @@ object CommittedTransaction {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): CommittedTransaction = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): CommittedTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CommittedTransaction]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: CommittedTransaction, reader: BinaryReader): CommittedTransaction = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: CommittedTransaction, reader: BinaryReader): CommittedTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CommittedTransaction]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction.extensions")
   @js.native
@@ -61,22 +58,19 @@ object CommittedTransaction {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: CommittedTransaction, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: CommittedTransaction, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: CommittedTransaction): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: CommittedTransaction): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var isRejected: Boolean = js.native
+    var isRejected: Boolean
     
-    var sender: Uint8Array | String = js.native
+    var sender: Uint8Array | String
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
   }
   object AsObject {
     

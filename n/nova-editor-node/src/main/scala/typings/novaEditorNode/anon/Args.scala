@@ -6,19 +6,17 @@ import typings.novaEditorNode.novaEditorNodeStrings.socket
 import typings.novaEditorNode.novaEditorNodeStrings.stdio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Args extends StObject {
   
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var env: js.UndefOr[StringDictionary[String]] = js.native
+  var env: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var `type`: js.UndefOr[stdio | socket | pipe] = js.native
+  var `type`: js.UndefOr[stdio | socket | pipe] = js.undefined
 }
 object Args {
   

@@ -3,21 +3,19 @@ package typings.googleGax.iamServiceMod.google.iam.v1
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Policy. */
-@js.native
 trait IPolicy extends StObject {
   
   /** Policy bindings */
-  var bindings: js.UndefOr[js.Array[IBinding] | Null] = js.native
+  var bindings: js.UndefOr[js.Array[IBinding] | Null] = js.undefined
   
   /** Policy etag */
-  var etag: js.UndefOr[Uint8Array | Null] = js.native
+  var etag: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** Policy version */
-  var version: js.UndefOr[Double | Null] = js.native
+  var version: js.UndefOr[Double | Null] = js.undefined
 }
 object IPolicy {
   

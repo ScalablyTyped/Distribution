@@ -7,7 +7,6 @@ import typings.socketIoClient.socketIoClientStrings.arraybuffer
 import typings.socketIoClient.socketIoClientStrings.blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SocketIOClient {
@@ -15,32 +14,31 @@ object SocketIOClient {
   /**
     * Options we can pass to the socket when connecting
     */
-  @js.native
   trait ConnectOpts extends StObject {
     
     /**
       * `http.Agent` to use, defaults to `false` (NodeJS only)
       */
-    var agent: js.UndefOr[String | Boolean] = js.native
+    var agent: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Should we automically connect?
       * @default true
       */
-    var autoConnect: js.UndefOr[Boolean] = js.native
+    var autoConnect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (SSL) An authority certificate or array of authority certificates to
       * check the remote host against.. Can be used in Node.js client
       * environment to manually specify certificate information.
       */
-    var ca: js.UndefOr[String | js.Array[String]] = js.native
+    var ca: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * (SSL) Public x509 certificate to use. Can be used in Node.js client
       * environment to manually specify certificate information.
       */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
     /**
       * (SSL) A string describing the ciphers to use or exclude. Consult the
@@ -49,7 +47,7 @@ object SocketIOClient {
       * details on the format.. Can be used in Node.js client environment to
       * manually specify certificate information.
       */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     /**
       * Enables XDomainRequest for IE8 to avoid loading bar flashing with
@@ -57,35 +55,35 @@ object SocketIOClient {
       * of not sending cookie.
       * @default false
       */
-    var enablesXDR: js.UndefOr[Boolean] = js.native
+    var enablesXDR: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces base 64 encoding for polling transport even when XHR2
       * responseType is available and WebSocket even if the used standard
       * supports binary.
       */
-    var forceBase64: js.UndefOr[Boolean] = js.native
+    var forceBase64: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces JSONP for polling transport.
       */
-    var forceJSONP: js.UndefOr[Boolean] = js.native
+    var forceJSONP: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should we force a new Manager for this connection?
       * @default false
       */
-    var forceNew: js.UndefOr[Boolean] = js.native
+    var forceNew: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The host that we're connecting to. Set from the URI passed when connecting
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * The hostname for our connection. Set from the URI passed when connecting
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * Determines whether to use JSONP when necessary for polling. If
@@ -95,91 +93,91 @@ object SocketIOClient {
       * WebSocket) that transport will be used instead.
       * @default true
       */
-    var jsonp: js.UndefOr[Boolean] = js.native
+    var jsonp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (SSL) Private key to use for SSL. Can be used in Node.js client
       * environment to manually specify certificate information.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Should we multiplex our connection (reuse existing Manager) ?
       * @default true
       */
-    var multiplex: js.UndefOr[Boolean] = js.native
+    var multiplex: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Are we only interested in transports that support binary?
       */
-    var onlyBinaryUpgrades: js.UndefOr[Boolean] = js.native
+    var onlyBinaryUpgrades: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (SSL) A string or passphrase for the private key or pfx. Can be
       * used in Node.js client environment to manually specify certificate
       * information.
       */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /**
       * The path to get our client file from, in the case of the server
       * serving it
       * @default '/socket.io'
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * (SSL) Certificate, Private key and CA certificates to use for SSL.
       * Can be used in Node.js client environment to manually specify
       * certificate information.
       */
-    var pfx: js.UndefOr[String] = js.native
+    var pfx: js.UndefOr[String] = js.undefined
     
     /**
       * The port the policy server listens on
       * @default 843
       */
-    var policyPost: js.UndefOr[Double] = js.native
+    var policyPost: js.UndefOr[Double] = js.undefined
     
     /**
       * The port for our connection. Set from the URI passed when connecting
       */
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
     /**
       * Any query parameters in our uri. Set from the URI passed when connecting
       */
-    var query: js.UndefOr[js.Object] = js.native
+    var query: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Used in the exponential backoff jitter when reconnecting
       * @default 0.5
       */
-    var randomizationFactor: js.UndefOr[Double] = js.native
+    var randomizationFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * Should we allow reconnections?
       * @default true
       */
-    var reconnection: js.UndefOr[Boolean] = js.native
+    var reconnection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How many reconnection attempts should we try?
       * @default Infinity
       */
-    var reconnectionAttempts: js.UndefOr[Double] = js.native
+    var reconnectionAttempts: js.UndefOr[Double] = js.undefined
     
     /**
       * The time delay in milliseconds between reconnection attempts
       * @default 1000
       */
-    var reconnectionDelay: js.UndefOr[Double] = js.native
+    var reconnectionDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The max time delay in milliseconds between reconnection attempts
       * @default 5000
       */
-    var reconnectionDelayMax: js.UndefOr[Double] = js.native
+    var reconnectionDelayMax: js.UndefOr[Double] = js.undefined
     
     /**
       * (SSL) If true, the server certificate is verified against the list of
@@ -188,7 +186,7 @@ object SocketIOClient {
       * is sent. Can be used in Node.js client environment to manually specify
       * certificate information.
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true and if the previous websocket connection to the server succeeded,
@@ -199,24 +197,24 @@ object SocketIOClient {
       * not block websockets.
       * @default false
       */
-    var rememberUpgrade: js.UndefOr[Boolean] = js.native
+    var rememberUpgrade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this is a secure connection. Set from the URI passed when connecting
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The timeout in milliseconds for our connection attempt
       * @default 20000
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The param name to use as our timestamp key
       * @default 't'
       */
-    var timestampParam: js.UndefOr[String] = js.native
+    var timestampParam: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to add the timestamp with each transport request. Note: this
@@ -224,12 +222,12 @@ object SocketIOClient {
       * are always stamped
       * @default false
       */
-    var timestampRequests: js.UndefOr[Boolean] = js.native
+    var timestampRequests: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Transport options for Node.js client (headers etc)
       */
-    var transportOptions: js.UndefOr[js.Object] = js.native
+    var transportOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * A list of transports to try (in order). Engine.io always attempts to
@@ -237,14 +235,14 @@ object SocketIOClient {
       * for it passes.
       * @default ['polling','websocket']
       */
-    var transports: js.UndefOr[js.Array[String]] = js.native
+    var transports: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Whether the client should try to upgrade the transport from
       * long-polling to something better.
       * @default true
       */
-    var upgrade: js.UndefOr[Boolean] = js.native
+    var upgrade: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectOpts {
     
@@ -561,7 +559,9 @@ object SocketIOClient {
     * The Manager class handles all the Namespaces and Sockets that we're using
     */
   @js.native
-  trait Manager extends Emitter {
+  trait Manager
+    extends StObject
+       with Emitter {
     
     /**
       * If we should auto connect (also used when creating Sockets). Set via the
@@ -704,7 +704,8 @@ object SocketIOClient {
     */
   @js.native
   trait ManagerStatic
-    extends /**
+    extends StObject
+       with /**
     * @see default constructor
     */
   Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ String), Manager]
@@ -729,7 +730,9 @@ object SocketIOClient {
     * The Socket that we use to connect to a Namespace on the server
     */
   @js.native
-  trait Socket extends Emitter {
+  trait Socket
+    extends StObject
+       with Emitter {
     
     /**
       * The type of binary data being transmitted by the connection.
@@ -809,7 +812,8 @@ object SocketIOClient {
     */
   @js.native
   trait SocketStatic
-    extends /**
+    extends StObject
+       with /**
     * Creates a new Socket, used for communicating with a specific namespace
     * @param io The Manager that's controlling this socket
     * @param nsp The namespace that this socket is for (@default '/')

@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSchemaInput extends StObject {
   
   /**
     * The new compatibility setting for the schema.
     */
-  var Compatibility: js.UndefOr[typings.awsSdk.glueMod.Compatibility] = js.native
+  var Compatibility: js.UndefOr[typings.awsSdk.glueMod.Compatibility] = js.undefined
   
   /**
     * The new description for the schema.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * This is a wrapper structure to contain schema identity fields. The structure contains:   SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. One of SchemaArn or SchemaName has to be provided.   SchemaId$SchemaName: The name of the schema. One of SchemaArn or SchemaName has to be provided.  
     */
-  var SchemaId: typings.awsSdk.glueMod.SchemaId = js.native
+  var SchemaId: typings.awsSdk.glueMod.SchemaId
   
   /**
     * Version number required for check pointing. One of VersionNumber or Compatibility has to be provided.
     */
-  var SchemaVersionNumber: js.UndefOr[typings.awsSdk.glueMod.SchemaVersionNumber] = js.native
+  var SchemaVersionNumber: js.UndefOr[typings.awsSdk.glueMod.SchemaVersionNumber] = js.undefined
 }
 object UpdateSchemaInput {
   

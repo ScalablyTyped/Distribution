@@ -12,7 +12,7 @@ normalize an image.
 | Keywords           | - |
 | # releases         | 102 |
 | # dependents       | 1 |
-| # downloads        | 37926747 |
+| # downloads        | 42340513 |
 | # stars            | 0 |
 
 ## Links

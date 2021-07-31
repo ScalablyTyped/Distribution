@@ -2,30 +2,23 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  val x: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val x: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val x2: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val x2: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val y: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val y: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val y2: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val y2: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object X {
   
   @scala.inline
-  def apply(
-    x: typings.vegaLite.vegaLiteNumbers.`1`,
-    x2: typings.vegaLite.vegaLiteNumbers.`1`,
-    y: typings.vegaLite.vegaLiteNumbers.`1`,
-    y2: typings.vegaLite.vegaLiteNumbers.`1`
-  ): X = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+  def apply(): X = {
+    val __obj = js.Dynamic.literal(x = 1, x2 = 1, y = 1, y2 = 1)
     __obj.asInstanceOf[X]
   }
   

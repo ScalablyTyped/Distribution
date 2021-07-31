@@ -2,33 +2,31 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BonusPayment extends StObject {
   
   /**
     * The ID of the assignment associated with this bonus payment.
     */
-  var AssignmentId: js.UndefOr[EntityId] = js.native
+  var AssignmentId: js.UndefOr[EntityId] = js.undefined
   
-  var BonusAmount: js.UndefOr[CurrencyAmount] = js.native
+  var BonusAmount: js.UndefOr[CurrencyAmount] = js.undefined
   
   /**
     * The date and time of when the bonus was granted.
     */
-  var GrantTime: js.UndefOr[Timestamp] = js.native
+  var GrantTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Reason text given when the bonus was granted, if any.
     */
-  var Reason: js.UndefOr[String] = js.native
+  var Reason: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Worker to whom the bonus was paid.
     */
-  var WorkerId: js.UndefOr[CustomerId] = js.native
+  var WorkerId: js.UndefOr[CustomerId] = js.undefined
 }
 object BonusPayment {
   

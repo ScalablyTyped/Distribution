@@ -3,33 +3,31 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaveModifier extends StObject {
   
-  def addEndModifier(): Unit = js.native
+  def addEndModifier(): Unit
   
-  def addModifier(): Unit = js.native
+  def addModifier(): Unit
   
-  def addToStave(stave: Stave, firstGlyph: Boolean): StaveModifier = js.native
+  def addToStave(stave: Stave, firstGlyph: Boolean): StaveModifier
   
-  def addToStaveEnd(stave: Stave, firstGlyph: Boolean): StaveModifier = js.native
+  def addToStaveEnd(stave: Stave, firstGlyph: Boolean): StaveModifier
   
-  def getCategory(): String = js.native
+  def getCategory(): String
   
-  def getPadding(index: Double): Double = js.native
+  def getPadding(index: Double): Double
   
-  def getPosition(): Double = js.native
+  def getPosition(): Double
   
-  def getWidth(): Double = js.native
+  def getWidth(): Double
   
-  def makeSpacer(padding: Double): GetContext = js.native
+  def makeSpacer(padding: Double): GetContext
   
-  def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: Double): Unit = js.native
+  def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: Double): Unit
   
-  def setPadding(padding: Double): Unit = js.native
+  def setPadding(padding: Double): Unit
 }
 object StaveModifier {
   
@@ -59,22 +57,34 @@ object StaveModifier {
   object Position extends StObject {
     
     @js.native
-    sealed trait ABOVE extends Position
+    sealed trait ABOVE
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait BEGIN extends Position
+    sealed trait BEGIN
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait BELOW extends Position
+    sealed trait BELOW
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait END extends Position
+    sealed trait END
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait LEFT extends Position
+    sealed trait LEFT
+      extends StObject
+         with Position
     
     @js.native
-    sealed trait RIGHT extends Position
+    sealed trait RIGHT
+      extends StObject
+         with Position
   }
   
   @scala.inline

@@ -4,22 +4,22 @@ import typings.fridaGum.anon.BaseDisp
 import typings.fridaGum.fridaGumStrings.mem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MipsMemOperand extends MipsOperand {
+trait MipsMemOperand
+  extends StObject
+     with MipsOperand {
   
-  var `type`: mem = js.native
+  var `type`: mem
   
-  var value: BaseDisp = js.native
+  var value: BaseDisp
 }
 object MipsMemOperand {
   
   @scala.inline
-  def apply(`type`: mem, value: BaseDisp): MipsMemOperand = {
+  def apply(value: BaseDisp): MipsMemOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[MipsMemOperand]
   }
   

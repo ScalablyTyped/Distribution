@@ -2,23 +2,22 @@ package typings.intlLocalesSupported
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("intl-locales-supported", JSImport.Default)
+  @JSImport("intl-locales-supported", JSImport.Namespace)
   @js.native
-  def default(locales: String): Boolean = js.native
-  @JSImport("intl-locales-supported", JSImport.Default)
-  @js.native
-  def default(locales: String, constructorsToCheck: js.Array[IntlConstructor]): Boolean = js.native
-  @JSImport("intl-locales-supported", JSImport.Default)
-  @js.native
-  def default(locales: js.Array[String]): Boolean = js.native
-  @JSImport("intl-locales-supported", JSImport.Default)
-  @js.native
-  def default(locales: js.Array[String], constructorsToCheck: js.Array[IntlConstructor]): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(locales: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(locales: String, constructorsToCheck: js.Array[IntlConstructor]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any], constructorsToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(locales: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(locales: js.Array[String], constructorsToCheck: js.Array[IntlConstructor]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(locales.asInstanceOf[js.Any], constructorsToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait IntlConstructor extends StObject {

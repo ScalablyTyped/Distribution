@@ -12,10 +12,13 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-md/app-bar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/app-bar", "APP_BAR_OFFSET_CLASSNAME")
   @js.native
@@ -35,24 +38,22 @@ object mod {
   
   @JSImport("@react-md/app-bar", "AppBar")
   @js.native
-  val AppBar: ForwardRefExoticComponent[AppBarProps with RefAttributes[HTMLDivElement]] = js.native
+  val AppBar: ForwardRefExoticComponent[AppBarProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/app-bar", "AppBarAction")
   @js.native
-  val AppBarAction: ForwardRefExoticComponent[AppBarActionProps with RefAttributes[HTMLButtonElement]] = js.native
+  val AppBarAction: ForwardRefExoticComponent[AppBarActionProps & RefAttributes[HTMLButtonElement]] = js.native
   
   @JSImport("@react-md/app-bar", "AppBarNav")
   @js.native
-  val AppBarNav: ForwardRefExoticComponent[AppBarNavProps with RefAttributes[HTMLButtonElement]] = js.native
+  val AppBarNav: ForwardRefExoticComponent[AppBarNavProps & RefAttributes[HTMLButtonElement]] = js.native
   
   @JSImport("@react-md/app-bar", "AppBarTitle")
   @js.native
-  val AppBarTitle: ForwardRefExoticComponent[AppBarTitleProps with RefAttributes[HTMLHeadingElement]] = js.native
+  val AppBarTitle: ForwardRefExoticComponent[AppBarTitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   
-  @JSImport("@react-md/app-bar", "useActionClassName")
-  @js.native
-  def useActionClassName(): String = js.native
-  @JSImport("@react-md/app-bar", "useActionClassName")
-  @js.native
-  def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = js.native
+  @scala.inline
+  def useActionClassName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")().asInstanceOf[String]
+  @scala.inline
+  def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")(hasFirstLastInheritColorClassName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

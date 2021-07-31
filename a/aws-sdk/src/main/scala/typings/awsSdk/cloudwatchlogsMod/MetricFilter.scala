@@ -2,33 +2,31 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricFilter extends StObject {
   
   /**
     * The creation time of the metric filter, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the metric filter.
     */
-  var filterName: js.UndefOr[FilterName] = js.native
+  var filterName: js.UndefOr[FilterName] = js.undefined
   
-  var filterPattern: js.UndefOr[FilterPattern] = js.native
+  var filterPattern: js.UndefOr[FilterPattern] = js.undefined
   
   /**
     * The name of the log group.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The metric transformations.
     */
-  var metricTransformations: js.UndefOr[MetricTransformations] = js.native
+  var metricTransformations: js.UndefOr[MetricTransformations] = js.undefined
 }
 object MetricFilter {
   

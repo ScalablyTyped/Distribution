@@ -2,7 +2,6 @@ package typings.googleAppsScript.global.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Document {
@@ -27,83 +26,83 @@ object Document {
   object Attribute extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.Attribute with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.Attribute & Double] = js.native
     
-    /* 0 */ val BACKGROUND_COLOR: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BACKGROUND_COLOR with Double = js.native
+    /* 0 */ val BACKGROUND_COLOR: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BACKGROUND_COLOR & Double = js.native
     
-    /* 1 */ val BOLD: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BOLD with Double = js.native
+    /* 1 */ val BOLD: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BOLD & Double = js.native
     
-    /* 2 */ val BORDER_COLOR: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BORDER_COLOR with Double = js.native
+    /* 2 */ val BORDER_COLOR: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BORDER_COLOR & Double = js.native
     
-    /* 3 */ val BORDER_WIDTH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BORDER_WIDTH with Double = js.native
+    /* 3 */ val BORDER_WIDTH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.BORDER_WIDTH & Double = js.native
     
-    /* 4 */ val CODE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.CODE with Double = js.native
+    /* 4 */ val CODE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.CODE & Double = js.native
     
-    /* 5 */ val FONT_FAMILY: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.FONT_FAMILY with Double = js.native
+    /* 5 */ val FONT_FAMILY: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.FONT_FAMILY & Double = js.native
     
-    /* 6 */ val FONT_SIZE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.FONT_SIZE with Double = js.native
+    /* 6 */ val FONT_SIZE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.FONT_SIZE & Double = js.native
     
-    /* 7 */ val FOREGROUND_COLOR: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.FOREGROUND_COLOR with Double = js.native
+    /* 7 */ val FOREGROUND_COLOR: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.FOREGROUND_COLOR & Double = js.native
     
-    /* 15 */ val GLYPH_TYPE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.GLYPH_TYPE with Double = js.native
+    /* 15 */ val GLYPH_TYPE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.GLYPH_TYPE & Double = js.native
     
-    /* 8 */ val HEADING: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.HEADING with Double = js.native
+    /* 8 */ val HEADING: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.HEADING & Double = js.native
     
-    /* 9 */ val HEIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.HEIGHT with Double = js.native
+    /* 9 */ val HEIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.HEIGHT & Double = js.native
     
-    /* 10 */ val HORIZONTAL_ALIGNMENT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.HORIZONTAL_ALIGNMENT with Double = js.native
+    /* 10 */ val HORIZONTAL_ALIGNMENT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.HORIZONTAL_ALIGNMENT & Double = js.native
     
-    /* 11 */ val INDENT_END: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.INDENT_END with Double = js.native
+    /* 11 */ val INDENT_END: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.INDENT_END & Double = js.native
     
-    /* 12 */ val INDENT_FIRST_LINE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.INDENT_FIRST_LINE with Double = js.native
+    /* 12 */ val INDENT_FIRST_LINE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.INDENT_FIRST_LINE & Double = js.native
     
-    /* 13 */ val INDENT_START: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.INDENT_START with Double = js.native
+    /* 13 */ val INDENT_START: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.INDENT_START & Double = js.native
     
-    /* 14 */ val ITALIC: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.ITALIC with Double = js.native
+    /* 14 */ val ITALIC: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.ITALIC & Double = js.native
     
-    /* 16 */ val LEFT_TO_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LEFT_TO_RIGHT with Double = js.native
+    /* 16 */ val LEFT_TO_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LEFT_TO_RIGHT & Double = js.native
     
-    /* 17 */ val LINE_SPACING: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LINE_SPACING with Double = js.native
+    /* 17 */ val LINE_SPACING: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LINE_SPACING & Double = js.native
     
-    /* 18 */ val LINK_URL: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LINK_URL with Double = js.native
+    /* 18 */ val LINK_URL: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LINK_URL & Double = js.native
     
-    /* 19 */ val LIST_ID: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LIST_ID with Double = js.native
+    /* 19 */ val LIST_ID: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.LIST_ID & Double = js.native
     
-    /* 20 */ val MARGIN_BOTTOM: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_BOTTOM with Double = js.native
+    /* 20 */ val MARGIN_BOTTOM: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_BOTTOM & Double = js.native
     
-    /* 21 */ val MARGIN_LEFT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_LEFT with Double = js.native
+    /* 21 */ val MARGIN_LEFT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_LEFT & Double = js.native
     
-    /* 22 */ val MARGIN_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_RIGHT with Double = js.native
+    /* 22 */ val MARGIN_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_RIGHT & Double = js.native
     
-    /* 23 */ val MARGIN_TOP: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_TOP with Double = js.native
+    /* 23 */ val MARGIN_TOP: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MARGIN_TOP & Double = js.native
     
-    /* 25 */ val MINIMUM_HEIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MINIMUM_HEIGHT with Double = js.native
+    /* 25 */ val MINIMUM_HEIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.MINIMUM_HEIGHT & Double = js.native
     
-    /* 24 */ val NESTING_LEVEL: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.NESTING_LEVEL with Double = js.native
+    /* 24 */ val NESTING_LEVEL: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.NESTING_LEVEL & Double = js.native
     
-    /* 26 */ val PADDING_BOTTOM: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_BOTTOM with Double = js.native
+    /* 26 */ val PADDING_BOTTOM: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_BOTTOM & Double = js.native
     
-    /* 27 */ val PADDING_LEFT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_LEFT with Double = js.native
+    /* 27 */ val PADDING_LEFT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_LEFT & Double = js.native
     
-    /* 28 */ val PADDING_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_RIGHT with Double = js.native
+    /* 28 */ val PADDING_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_RIGHT & Double = js.native
     
-    /* 29 */ val PADDING_TOP: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_TOP with Double = js.native
+    /* 29 */ val PADDING_TOP: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PADDING_TOP & Double = js.native
     
-    /* 30 */ val PAGE_HEIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PAGE_HEIGHT with Double = js.native
+    /* 30 */ val PAGE_HEIGHT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PAGE_HEIGHT & Double = js.native
     
-    /* 31 */ val PAGE_WIDTH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PAGE_WIDTH with Double = js.native
+    /* 31 */ val PAGE_WIDTH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.PAGE_WIDTH & Double = js.native
     
-    /* 32 */ val SPACING_AFTER: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.SPACING_AFTER with Double = js.native
+    /* 32 */ val SPACING_AFTER: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.SPACING_AFTER & Double = js.native
     
-    /* 33 */ val SPACING_BEFORE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.SPACING_BEFORE with Double = js.native
+    /* 33 */ val SPACING_BEFORE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.SPACING_BEFORE & Double = js.native
     
-    /* 34 */ val STRIKETHROUGH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.STRIKETHROUGH with Double = js.native
+    /* 34 */ val STRIKETHROUGH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.STRIKETHROUGH & Double = js.native
     
-    /* 35 */ val UNDERLINE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.UNDERLINE with Double = js.native
+    /* 35 */ val UNDERLINE: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.UNDERLINE & Double = js.native
     
-    /* 36 */ val VERTICAL_ALIGNMENT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.VERTICAL_ALIGNMENT with Double = js.native
+    /* 36 */ val VERTICAL_ALIGNMENT: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.VERTICAL_ALIGNMENT & Double = js.native
     
-    /* 37 */ val WIDTH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.WIDTH with Double = js.native
+    /* 37 */ val WIDTH: typings.googleAppsScript.GoogleAppsScript.Document.Attribute.WIDTH & Double = js.native
   }
   
   /**
@@ -122,53 +121,53 @@ object Document {
   object ElementType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.ElementType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.ElementType & Double] = js.native
     
-    /* 0 */ val BODY_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.BODY_SECTION with Double = js.native
+    /* 0 */ val BODY_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.BODY_SECTION & Double = js.native
     
-    /* 1 */ val COMMENT_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.COMMENT_SECTION with Double = js.native
+    /* 1 */ val COMMENT_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.COMMENT_SECTION & Double = js.native
     
-    /* 2 */ val DOCUMENT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.DOCUMENT with Double = js.native
+    /* 2 */ val DOCUMENT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.DOCUMENT & Double = js.native
     
-    /* 3 */ val EQUATION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION with Double = js.native
+    /* 3 */ val EQUATION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION & Double = js.native
     
-    /* 4 */ val EQUATION_FUNCTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION with Double = js.native
+    /* 4 */ val EQUATION_FUNCTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION & Double = js.native
     
-    /* 5 */ val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION_ARGUMENT_SEPARATOR with Double = js.native
+    /* 5 */ val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION_ARGUMENT_SEPARATOR & Double = js.native
     
-    /* 6 */ val EQUATION_SYMBOL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_SYMBOL with Double = js.native
+    /* 6 */ val EQUATION_SYMBOL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_SYMBOL & Double = js.native
     
-    /* 7 */ val FOOTER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTER_SECTION with Double = js.native
+    /* 7 */ val FOOTER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTER_SECTION & Double = js.native
     
-    /* 8 */ val FOOTNOTE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE with Double = js.native
+    /* 8 */ val FOOTNOTE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE & Double = js.native
     
-    /* 9 */ val FOOTNOTE_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE_SECTION with Double = js.native
+    /* 9 */ val FOOTNOTE_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE_SECTION & Double = js.native
     
-    /* 10 */ val HEADER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HEADER_SECTION with Double = js.native
+    /* 10 */ val HEADER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HEADER_SECTION & Double = js.native
     
-    /* 11 */ val HORIZONTAL_RULE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HORIZONTAL_RULE with Double = js.native
+    /* 11 */ val HORIZONTAL_RULE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HORIZONTAL_RULE & Double = js.native
     
-    /* 12 */ val INLINE_DRAWING: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_DRAWING with Double = js.native
+    /* 12 */ val INLINE_DRAWING: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_DRAWING & Double = js.native
     
-    /* 13 */ val INLINE_IMAGE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_IMAGE with Double = js.native
+    /* 13 */ val INLINE_IMAGE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_IMAGE & Double = js.native
     
-    /* 14 */ val LIST_ITEM: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.LIST_ITEM with Double = js.native
+    /* 14 */ val LIST_ITEM: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.LIST_ITEM & Double = js.native
     
-    /* 15 */ val PAGE_BREAK: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PAGE_BREAK with Double = js.native
+    /* 15 */ val PAGE_BREAK: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PAGE_BREAK & Double = js.native
     
-    /* 16 */ val PARAGRAPH: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PARAGRAPH with Double = js.native
+    /* 16 */ val PARAGRAPH: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PARAGRAPH & Double = js.native
     
-    /* 17 */ val TABLE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE with Double = js.native
+    /* 17 */ val TABLE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE & Double = js.native
     
-    /* 18 */ val TABLE_CELL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_CELL with Double = js.native
+    /* 18 */ val TABLE_CELL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_CELL & Double = js.native
     
-    /* 19 */ val TABLE_OF_CONTENTS: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_OF_CONTENTS with Double = js.native
+    /* 19 */ val TABLE_OF_CONTENTS: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_OF_CONTENTS & Double = js.native
     
-    /* 20 */ val TABLE_ROW: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_ROW with Double = js.native
+    /* 20 */ val TABLE_ROW: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_ROW & Double = js.native
     
-    /* 21 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TEXT with Double = js.native
+    /* 21 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TEXT & Double = js.native
     
-    /* 22 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.UNSUPPORTED with Double = js.native
+    /* 22 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.UNSUPPORTED & Double = js.native
   }
   
   /**
@@ -203,71 +202,71 @@ object Document {
   object FontFamily extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.FontFamily with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.FontFamily & Double] = js.native
     
-    /* 0 */ val AMARANTH: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.AMARANTH with Double = js.native
+    /* 0 */ val AMARANTH: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.AMARANTH & Double = js.native
     
-    /* 1 */ val ARIAL: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARIAL with Double = js.native
+    /* 1 */ val ARIAL: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARIAL & Double = js.native
     
-    /* 2 */ val ARIAL_BLACK: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARIAL_BLACK with Double = js.native
+    /* 2 */ val ARIAL_BLACK: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARIAL_BLACK & Double = js.native
     
-    /* 3 */ val ARIAL_NARROW: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARIAL_NARROW with Double = js.native
+    /* 3 */ val ARIAL_NARROW: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARIAL_NARROW & Double = js.native
     
-    /* 4 */ val ARVO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARVO with Double = js.native
+    /* 4 */ val ARVO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ARVO & Double = js.native
     
-    /* 5 */ val CALIBRI: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CALIBRI with Double = js.native
+    /* 5 */ val CALIBRI: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CALIBRI & Double = js.native
     
-    /* 6 */ val CAMBRIA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CAMBRIA with Double = js.native
+    /* 6 */ val CAMBRIA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CAMBRIA & Double = js.native
     
-    /* 7 */ val COMIC_SANS_MS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.COMIC_SANS_MS with Double = js.native
+    /* 7 */ val COMIC_SANS_MS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.COMIC_SANS_MS & Double = js.native
     
-    /* 8 */ val CONSOLAS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CONSOLAS with Double = js.native
+    /* 8 */ val CONSOLAS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CONSOLAS & Double = js.native
     
-    /* 9 */ val CORSIVA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CORSIVA with Double = js.native
+    /* 9 */ val CORSIVA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.CORSIVA & Double = js.native
     
-    /* 10 */ val COURIER_NEW: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.COURIER_NEW with Double = js.native
+    /* 10 */ val COURIER_NEW: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.COURIER_NEW & Double = js.native
     
-    /* 11 */ val DANCING_SCRIPT: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.DANCING_SCRIPT with Double = js.native
+    /* 11 */ val DANCING_SCRIPT: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.DANCING_SCRIPT & Double = js.native
     
-    /* 12 */ val DROID_SANS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.DROID_SANS with Double = js.native
+    /* 12 */ val DROID_SANS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.DROID_SANS & Double = js.native
     
-    /* 13 */ val DROID_SERIF: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.DROID_SERIF with Double = js.native
+    /* 13 */ val DROID_SERIF: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.DROID_SERIF & Double = js.native
     
-    /* 14 */ val GARAMOND: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GARAMOND with Double = js.native
+    /* 14 */ val GARAMOND: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GARAMOND & Double = js.native
     
-    /* 15 */ val GEORGIA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GEORGIA with Double = js.native
+    /* 15 */ val GEORGIA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GEORGIA & Double = js.native
     
-    /* 16 */ val GLORIA_HALLELUJAH: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GLORIA_HALLELUJAH with Double = js.native
+    /* 16 */ val GLORIA_HALLELUJAH: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GLORIA_HALLELUJAH & Double = js.native
     
-    /* 17 */ val GREAT_VIBES: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GREAT_VIBES with Double = js.native
+    /* 17 */ val GREAT_VIBES: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.GREAT_VIBES & Double = js.native
     
-    /* 18 */ val LOBSTER: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.LOBSTER with Double = js.native
+    /* 18 */ val LOBSTER: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.LOBSTER & Double = js.native
     
-    /* 19 */ val MERRIWEATHER: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.MERRIWEATHER with Double = js.native
+    /* 19 */ val MERRIWEATHER: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.MERRIWEATHER & Double = js.native
     
-    /* 20 */ val PACIFICO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.PACIFICO with Double = js.native
+    /* 20 */ val PACIFICO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.PACIFICO & Double = js.native
     
-    /* 21 */ val PHILOSOPHER: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.PHILOSOPHER with Double = js.native
+    /* 21 */ val PHILOSOPHER: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.PHILOSOPHER & Double = js.native
     
-    /* 22 */ val POIRET_ONE: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.POIRET_ONE with Double = js.native
+    /* 22 */ val POIRET_ONE: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.POIRET_ONE & Double = js.native
     
-    /* 23 */ val QUATTROCENTO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.QUATTROCENTO with Double = js.native
+    /* 23 */ val QUATTROCENTO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.QUATTROCENTO & Double = js.native
     
-    /* 24 */ val ROBOTO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ROBOTO with Double = js.native
+    /* 24 */ val ROBOTO: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.ROBOTO & Double = js.native
     
-    /* 25 */ val SHADOWS_INTO_LIGHT: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.SHADOWS_INTO_LIGHT with Double = js.native
+    /* 25 */ val SHADOWS_INTO_LIGHT: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.SHADOWS_INTO_LIGHT & Double = js.native
     
-    /* 26 */ val SYNCOPATE: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.SYNCOPATE with Double = js.native
+    /* 26 */ val SYNCOPATE: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.SYNCOPATE & Double = js.native
     
-    /* 27 */ val TAHOMA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.TAHOMA with Double = js.native
+    /* 27 */ val TAHOMA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.TAHOMA & Double = js.native
     
-    /* 28 */ val TIMES_NEW_ROMAN: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.TIMES_NEW_ROMAN with Double = js.native
+    /* 28 */ val TIMES_NEW_ROMAN: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.TIMES_NEW_ROMAN & Double = js.native
     
-    /* 29 */ val TREBUCHET_MS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.TREBUCHET_MS with Double = js.native
+    /* 29 */ val TREBUCHET_MS: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.TREBUCHET_MS & Double = js.native
     
-    /* 30 */ val UBUNTU: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.UBUNTU with Double = js.native
+    /* 30 */ val UBUNTU: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.UBUNTU & Double = js.native
     
-    /* 31 */ val VERDANA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.VERDANA with Double = js.native
+    /* 31 */ val VERDANA: typings.googleAppsScript.GoogleAppsScript.Document.FontFamily.VERDANA & Double = js.native
   }
   
   /**
@@ -290,23 +289,23 @@ object Document {
   object GlyphType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.GlyphType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.GlyphType & Double] = js.native
     
-    /* 0 */ val BULLET: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.BULLET with Double = js.native
+    /* 0 */ val BULLET: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.BULLET & Double = js.native
     
-    /* 1 */ val HOLLOW_BULLET: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.HOLLOW_BULLET with Double = js.native
+    /* 1 */ val HOLLOW_BULLET: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.HOLLOW_BULLET & Double = js.native
     
-    /* 5 */ val LATIN_LOWER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.LATIN_LOWER with Double = js.native
+    /* 5 */ val LATIN_LOWER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.LATIN_LOWER & Double = js.native
     
-    /* 4 */ val LATIN_UPPER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.LATIN_UPPER with Double = js.native
+    /* 4 */ val LATIN_UPPER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.LATIN_UPPER & Double = js.native
     
-    /* 3 */ val NUMBER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.NUMBER with Double = js.native
+    /* 3 */ val NUMBER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.NUMBER & Double = js.native
     
-    /* 7 */ val ROMAN_LOWER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.ROMAN_LOWER with Double = js.native
+    /* 7 */ val ROMAN_LOWER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.ROMAN_LOWER & Double = js.native
     
-    /* 6 */ val ROMAN_UPPER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.ROMAN_UPPER with Double = js.native
+    /* 6 */ val ROMAN_UPPER: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.ROMAN_UPPER & Double = js.native
     
-    /* 2 */ val SQUARE_BULLET: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.SQUARE_BULLET with Double = js.native
+    /* 2 */ val SQUARE_BULLET: typings.googleAppsScript.GoogleAppsScript.Document.GlyphType.SQUARE_BULLET & Double = js.native
   }
   
   /**
@@ -336,17 +335,15 @@ object Document {
   object HorizontalAlignment extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment & Double] = js.native
     
-    /* 1 */ val CENTER: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.CENTER with Double = js.native
+    /* 1 */ val CENTER: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.CENTER & Double = js.native
     
-    /* 3 */ val JUSTIFY: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.JUSTIFY with Double = js.native
+    /* 3 */ val JUSTIFY: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.JUSTIFY & Double = js.native
     
-    /* 0 */ val LEFT: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.LEFT with Double = js.native
+    /* 0 */ val LEFT: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.LEFT & Double = js.native
     
-    /* 2 */ val RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.RIGHT with Double = js.native
+    /* 2 */ val RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.HorizontalAlignment.RIGHT & Double = js.native
   }
   
   /**
@@ -373,25 +370,25 @@ object Document {
   object ParagraphHeading extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading & Double] = js.native
     
-    /* 1 */ val HEADING1: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING1 with Double = js.native
+    /* 1 */ val HEADING1: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING1 & Double = js.native
     
-    /* 2 */ val HEADING2: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING2 with Double = js.native
+    /* 2 */ val HEADING2: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING2 & Double = js.native
     
-    /* 3 */ val HEADING3: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING3 with Double = js.native
+    /* 3 */ val HEADING3: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING3 & Double = js.native
     
-    /* 4 */ val HEADING4: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING4 with Double = js.native
+    /* 4 */ val HEADING4: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING4 & Double = js.native
     
-    /* 5 */ val HEADING5: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING5 with Double = js.native
+    /* 5 */ val HEADING5: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING5 & Double = js.native
     
-    /* 6 */ val HEADING6: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING6 with Double = js.native
+    /* 6 */ val HEADING6: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.HEADING6 & Double = js.native
     
-    /* 0 */ val NORMAL: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.NORMAL with Double = js.native
+    /* 0 */ val NORMAL: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.NORMAL & Double = js.native
     
-    /* 8 */ val SUBTITLE: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.SUBTITLE with Double = js.native
+    /* 8 */ val SUBTITLE: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.SUBTITLE & Double = js.native
     
-    /* 7 */ val TITLE: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.TITLE with Double = js.native
+    /* 7 */ val TITLE: typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading.TITLE & Double = js.native
   }
   
   /**
@@ -403,17 +400,17 @@ object Document {
   object PositionedLayout extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout & Double] = js.native
     
-    /* 0 */ val ABOVE_TEXT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.ABOVE_TEXT with Double = js.native
+    /* 0 */ val ABOVE_TEXT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.ABOVE_TEXT & Double = js.native
     
-    /* 1 */ val BREAK_BOTH: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.BREAK_BOTH with Double = js.native
+    /* 1 */ val BREAK_BOTH: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.BREAK_BOTH & Double = js.native
     
-    /* 2 */ val BREAK_LEFT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.BREAK_LEFT with Double = js.native
+    /* 2 */ val BREAK_LEFT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.BREAK_LEFT & Double = js.native
     
-    /* 3 */ val BREAK_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.BREAK_RIGHT with Double = js.native
+    /* 3 */ val BREAK_RIGHT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.BREAK_RIGHT & Double = js.native
     
-    /* 4 */ val WRAP_TEXT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.WRAP_TEXT with Double = js.native
+    /* 4 */ val WRAP_TEXT: typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout.WRAP_TEXT & Double = js.native
   }
   
   /**
@@ -428,13 +425,13 @@ object Document {
   object TextAlignment extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment & Double] = js.native
     
-    /* 0 */ val NORMAL: typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment.NORMAL with Double = js.native
+    /* 0 */ val NORMAL: typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment.NORMAL & Double = js.native
     
-    /* 2 */ val SUBSCRIPT: typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment.SUBSCRIPT with Double = js.native
+    /* 2 */ val SUBSCRIPT: typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment.SUBSCRIPT & Double = js.native
     
-    /* 1 */ val SUPERSCRIPT: typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment.SUPERSCRIPT with Double = js.native
+    /* 1 */ val SUPERSCRIPT: typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment.SUPERSCRIPT & Double = js.native
   }
   
   /**
@@ -461,12 +458,12 @@ object Document {
   object VerticalAlignment extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment & Double] = js.native
     
-    /* 0 */ val BOTTOM: typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment.BOTTOM with Double = js.native
+    /* 0 */ val BOTTOM: typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment.BOTTOM & Double = js.native
     
-    /* 1 */ val CENTER: typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment.CENTER with Double = js.native
+    /* 1 */ val CENTER: typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment.CENTER & Double = js.native
     
-    /* 2 */ val TOP: typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment.TOP with Double = js.native
+    /* 2 */ val TOP: typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment.TOP & Double = js.native
   }
 }

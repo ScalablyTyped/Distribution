@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,23 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object find {
   
   /** Search parameters. */
-  @js.native
   trait FindParams extends StObject {
     
     /** Find only ranges with case sensitive match. */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /** Find only ranges that match entire word. */
-    var entireWord: js.UndefOr[Boolean] = js.native
+    var entireWord: js.UndefOr[Boolean] = js.undefined
     
     /** Return range data which provides range data in a serializable form. */
-    var includeRangeData: js.UndefOr[Boolean] = js.native
+    var includeRangeData: js.UndefOr[Boolean] = js.undefined
     
     /** Return rectangle data which describes visual position of search results. */
-    var includeRectData: js.UndefOr[Boolean] = js.native
+    var includeRectData: js.UndefOr[Boolean] = js.undefined
     
     /** Tab to query. Defaults to the active tab. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object FindParams {
     
@@ -77,17 +75,16 @@ object find {
   }
   
   /** highlightResults parameters */
-  @js.native
   trait HighlightResultsParams extends StObject {
     
     /** Don't scroll to highlighted item. */
-    var noScroll: js.UndefOr[Boolean] = js.native
+    var noScroll: js.UndefOr[Boolean] = js.undefined
     
     /** Found range to be highlighted. Default highlights all ranges. */
-    var rangeIndex: js.UndefOr[Double] = js.native
+    var rangeIndex: js.UndefOr[Double] = js.undefined
     
     /** Tab to highlight. Defaults to the active tab. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object HighlightResultsParams {
     

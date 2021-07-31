@@ -2,31 +2,31 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConfirmArgs extends AsyncCallback[Unit] {
+trait ConfirmArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * OK button text, which is “Cancel” by default.
     */
-  var cancelButtonText: js.UndefOr[String] = js.native
+  var cancelButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * OK button text, which is “OK” by default.
     */
-  var confirmButtonText: js.UndefOr[String] = js.native
+  var confirmButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Content of the confirm box.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the confirm box.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ConfirmArgs {
   

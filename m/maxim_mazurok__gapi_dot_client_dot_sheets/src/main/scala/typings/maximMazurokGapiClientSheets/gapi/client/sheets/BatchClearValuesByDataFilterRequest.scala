@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchClearValuesByDataFilterRequest extends StObject {
   
   /** The DataFilters used to determine which ranges to clear. */
-  var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
 }
 object BatchClearValuesByDataFilterRequest {
   

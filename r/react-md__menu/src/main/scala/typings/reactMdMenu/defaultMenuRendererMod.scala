@@ -14,32 +14,34 @@ import typings.reactMdUtils.typesTypesMod.LabelRequiredForA11y
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultMenuRendererMod {
   
-  @JSImport("@react-md/menu/types/defaultMenuRenderer", "defaultMenuRenderer")
+  @JSImport("@react-md/menu/types/defaultMenuRenderer", JSImport.Namespace)
   @js.native
-  def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuRenderer")(hasHorizontalChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait AllInjectedMenuProps
-    extends MenuPositionProps
+    extends StObject
+       with MenuPositionProps
        with RequiredMenuProps
        with RenderConditionalPortalProps {
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AllInjectedMenuProps {
     
@@ -100,18 +102,17 @@ object defaultMenuRendererMod {
   type InjectedMenuProps = LabelRequiredForA11y[AllInjectedMenuProps]
   
   /* Inlined std.Pick<@react-md/menu.@react-md/menu/types/Menu.MenuProps, 'anchor' | 'horizontal' | 'positionOptions' | 'closeOnScroll' | 'closeOnResize'> */
-  @js.native
   trait MenuPositionProps extends StObject {
     
-    var anchor: js.UndefOr[js.Any] = js.native
+    var anchor: js.UndefOr[js.Any] = js.undefined
     
-    var closeOnResize: js.UndefOr[js.Any] = js.native
+    var closeOnResize: js.UndefOr[js.Any] = js.undefined
     
-    var closeOnScroll: js.UndefOr[js.Any] = js.native
+    var closeOnScroll: js.UndefOr[js.Any] = js.undefined
     
-    var horizontal: js.UndefOr[js.Any] = js.native
+    var horizontal: js.UndefOr[js.Any] = js.undefined
     
-    var positionOptions: js.UndefOr[js.Any] = js.native
+    var positionOptions: js.UndefOr[js.Any] = js.undefined
   }
   object MenuPositionProps {
     
@@ -159,20 +160,19 @@ object defaultMenuRendererMod {
   type MenuRenderer = js.Function2[/* props */ InjectedMenuProps, /* items */ js.Array[ValidMenuItem], ReactNode]
   
   /* Inlined std.Required<std.Pick<@react-md/menu.@react-md/menu/types/Menu.MenuProps, 'id' | 'visible' | 'onRequestClose' | 'controlId' | 'children' | 'defaultFocus'>> */
-  @js.native
   trait RequiredMenuProps extends StObject {
     
-    var children: js.Any = js.native
+    var children: js.Any
     
-    var controlId: js.Any = js.native
+    var controlId: js.Any
     
-    var defaultFocus: js.Any = js.native
+    var defaultFocus: js.Any
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    var onRequestClose: js.Any = js.native
+    var onRequestClose: js.Any
     
-    var visible: js.Any = js.native
+    var visible: js.Any
   }
   object RequiredMenuProps {
     

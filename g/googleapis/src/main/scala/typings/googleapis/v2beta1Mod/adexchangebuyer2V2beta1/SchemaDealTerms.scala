@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,45 +9,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * like price per buyer, the type of pricing model (e.g., fixed price,
   * auction) and expected impressions from the publisher.
   */
-@js.native
 trait SchemaDealTerms extends StObject {
   
   /**
     * Visibility of the URL in bid requests. (default: BRANDED)
     */
-  var brandingType: js.UndefOr[String] = js.native
+  var brandingType: js.UndefOr[String] = js.undefined
   
   /**
     * Publisher provided description for the terms.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Non-binding estimate of the estimated gross spend for this deal. Can be
     * set by buyer or seller.
     */
-  var estimatedGrossSpend: js.UndefOr[SchemaPrice] = js.native
+  var estimatedGrossSpend: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Non-binding estimate of the impressions served per day. Can be set by
     * buyer or seller.
     */
-  var estimatedImpressionsPerDay: js.UndefOr[String] = js.native
+  var estimatedImpressionsPerDay: js.UndefOr[String] = js.undefined
   
   /**
     * The terms for guaranteed fixed price deals.
     */
-  var guaranteedFixedPriceTerms: js.UndefOr[SchemaGuaranteedFixedPriceTerms] = js.native
+  var guaranteedFixedPriceTerms: js.UndefOr[SchemaGuaranteedFixedPriceTerms] = js.undefined
   
   /**
     * The terms for non-guaranteed auction deals.
     */
-  var nonGuaranteedAuctionTerms: js.UndefOr[SchemaNonGuaranteedAuctionTerms] = js.native
+  var nonGuaranteedAuctionTerms: js.UndefOr[SchemaNonGuaranteedAuctionTerms] = js.undefined
   
   /**
     * The terms for non-guaranteed fixed price deals.
     */
-  var nonGuaranteedFixedPriceTerms: js.UndefOr[SchemaNonGuaranteedFixedPriceTerms] = js.native
+  var nonGuaranteedFixedPriceTerms: js.UndefOr[SchemaNonGuaranteedFixedPriceTerms] = js.undefined
   
   /**
     * The time zone name. For deals with Cost Per Day billing, defines the time
@@ -56,7 +54,7 @@ trait SchemaDealTerms extends StObject {
     * such as &quot;America/Los_Angeles&quot;. For more information, see
     * https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
     */
-  var sellerTimeZone: js.UndefOr[String] = js.native
+  var sellerTimeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaDealTerms {
   

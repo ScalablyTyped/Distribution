@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "RangeAggregation")
 @js.native
-class RangeAggregation protected () extends Aggregation {
+class RangeAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that enables the user to define a set of ranges that each
     represent a bucket.
@@ -60,9 +61,9 @@ class RangeAggregation protected () extends Aggregation {
     Adds a range to the list of exsiting range expressions.
     */
   def range(from: Double): RangeAggregation = js.native
-  def range(from: Double, to: js.UndefOr[scala.Nothing], key: String): RangeAggregation = js.native
   def range(from: Double, to: Double): RangeAggregation = js.native
   def range(from: Double, to: Double, key: String): RangeAggregation = js.native
+  def range(from: Double, to: Unit, key: String): RangeAggregation = js.native
   
   /*
     Allows you generate or modify the terms using a script.

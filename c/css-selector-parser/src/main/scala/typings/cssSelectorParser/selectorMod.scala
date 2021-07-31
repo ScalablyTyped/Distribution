@@ -9,7 +9,6 @@ import typings.cssSelectorParser.cssSelectorParserStrings.ruleSet
 import typings.cssSelectorParser.cssSelectorParserStrings.selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorMod {
@@ -28,31 +27,32 @@ object selectorMod {
     def substitute: typings.cssSelectorParser.cssSelectorParserStrings.substitute = "substitute".asInstanceOf[typings.cssSelectorParser.cssSelectorParserStrings.substitute]
   }
   
-  @js.native
-  trait Rule extends SelectorEntity {
+  trait Rule
+    extends StObject
+       with SelectorEntity {
     
-    var attrs: js.Array[RuleAttr] = js.native
+    var attrs: js.Array[RuleAttr]
     
-    var classNames: js.UndefOr[js.Array[String]] = js.native
+    var classNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var nestingOperator: String | Null = js.native
+    var nestingOperator: String | Null
     
-    var pseudos: js.Array[RulePseudo] = js.native
+    var pseudos: js.Array[RulePseudo]
     
-    var rule: js.UndefOr[Rule] = js.native
+    var rule: js.UndefOr[Rule] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
     
-    var `type`: rule = js.native
+    var `type`: rule
   }
   object Rule {
     
     @scala.inline
-    def apply(attrs: js.Array[RuleAttr], pseudos: js.Array[RulePseudo], `type`: rule): Rule = {
-      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], pseudos = pseudos.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(attrs: js.Array[RuleAttr], pseudos: js.Array[RulePseudo]): Rule = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], pseudos = pseudos.asInstanceOf[js.Any], nestingOperator = null)
+      __obj.updateDynamic("type")("rule")
       __obj.asInstanceOf[Rule]
     }
     
@@ -109,25 +109,25 @@ object selectorMod {
     }
   }
   
-  type RuleAttr = Name with (js.Object | Operator)
+  type RuleAttr = Name & (js.Object | Operator)
   
-  type RulePseudo = Name with (Value | ValueType)
+  type RulePseudo = Name & (Value | ValueType)
   
-  @js.native
   trait RuleSet
-    extends Selector
+    extends StObject
+       with Selector
        with SelectorEntity {
     
-    var rule: Rule = js.native
+    var rule: Rule
     
-    var `type`: ruleSet = js.native
+    var `type`: ruleSet
   }
   object RuleSet {
     
     @scala.inline
-    def apply(rule: Rule, `type`: ruleSet): RuleSet = {
+    def apply(rule: Rule): RuleSet = {
       val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("ruleSet")
       __obj.asInstanceOf[RuleSet]
     }
     
@@ -150,16 +150,16 @@ object selectorMod {
   object Selector {
     
     @scala.inline
-    def RuleSet(rule: Rule, `type`: ruleSet): typings.cssSelectorParser.selectorMod.RuleSet = {
+    def RuleSet(rule: Rule): typings.cssSelectorParser.selectorMod.RuleSet = {
       val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("ruleSet")
       __obj.asInstanceOf[typings.cssSelectorParser.selectorMod.RuleSet]
     }
     
     @scala.inline
-    def Selectors(selectors: js.Array[RuleSet], `type`: selectors): typings.cssSelectorParser.selectorMod.Selectors = {
+    def Selectors(selectors: js.Array[RuleSet]): typings.cssSelectorParser.selectorMod.Selectors = {
       val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("selectors")
       __obj.asInstanceOf[typings.cssSelectorParser.selectorMod.Selectors]
     }
   }
@@ -173,42 +173,42 @@ object selectorMod {
   object SelectorEntity {
     
     @scala.inline
-    def Rule(attrs: js.Array[RuleAttr], pseudos: js.Array[RulePseudo], `type`: rule): typings.cssSelectorParser.selectorMod.Rule = {
-      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], pseudos = pseudos.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def Rule(attrs: js.Array[RuleAttr], pseudos: js.Array[RulePseudo]): typings.cssSelectorParser.selectorMod.Rule = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], pseudos = pseudos.asInstanceOf[js.Any], nestingOperator = null)
+      __obj.updateDynamic("type")("rule")
       __obj.asInstanceOf[typings.cssSelectorParser.selectorMod.Rule]
     }
     
     @scala.inline
-    def RuleSet(rule: Rule, `type`: ruleSet): typings.cssSelectorParser.selectorMod.RuleSet = {
+    def RuleSet(rule: Rule): typings.cssSelectorParser.selectorMod.RuleSet = {
       val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("ruleSet")
       __obj.asInstanceOf[typings.cssSelectorParser.selectorMod.RuleSet]
     }
     
     @scala.inline
-    def Selectors(selectors: js.Array[RuleSet], `type`: selectors): typings.cssSelectorParser.selectorMod.Selectors = {
+    def Selectors(selectors: js.Array[RuleSet]): typings.cssSelectorParser.selectorMod.Selectors = {
       val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("selectors")
       __obj.asInstanceOf[typings.cssSelectorParser.selectorMod.Selectors]
     }
   }
   
-  @js.native
   trait Selectors
-    extends Selector
+    extends StObject
+       with Selector
        with SelectorEntity {
     
-    var selectors: js.Array[RuleSet] = js.native
+    var selectors: js.Array[RuleSet]
     
-    var `type`: selectors = js.native
+    var `type`: selectors
   }
   object Selectors {
     
     @scala.inline
-    def apply(selectors: js.Array[RuleSet], `type`: selectors): Selectors = {
+    def apply(selectors: js.Array[RuleSet]): Selectors = {
       val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("selectors")
       __obj.asInstanceOf[Selectors]
     }
     

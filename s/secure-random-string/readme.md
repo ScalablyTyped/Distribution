@@ -12,7 +12,7 @@ Generates a secure random string with a given length
 | Keywords           | crypto, cryptography, secure, random, string, token |
 | # releases         | 3 |
 | # dependents       | 28 |
-| # downloads        | 116506 |
+| # downloads        | 188308 |
 | # stars            | 2 |
 
 ## Links

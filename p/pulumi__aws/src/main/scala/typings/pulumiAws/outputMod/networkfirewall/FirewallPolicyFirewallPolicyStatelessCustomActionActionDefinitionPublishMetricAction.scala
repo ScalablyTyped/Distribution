@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMe
     */
   var dimensions: js.Array[
     FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension
-  ] = js.native
+  ]
 }
 object FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction {
   

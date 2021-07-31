@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be executed synchronously.
   * @see XJob
   */
-@js.native
-trait XAsyncJob extends XInterface {
+trait XAsyncJob
+  extends StObject
+     with XInterface {
   
   /**
     * executes the job asynchronously
@@ -27,7 +27,7 @@ trait XAsyncJob extends XInterface {
     * @param Listener specifies a listener which should be notified on events. May be `NULL` .
     * @throws com::sun::star::lang::IllegalArgumentException if some of given arguments doesn't fill out the service specification or was corrupt so the servic
     */
-  def executeAsync(Arguments: SeqEquiv[NamedValue], Listener: XJobListener): Unit = js.native
+  def executeAsync(Arguments: SeqEquiv[NamedValue], Listener: XJobListener): Unit
 }
 object XAsyncJob {
   

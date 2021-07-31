@@ -3,12 +3,14 @@ package typings.bitwise
 import typings.bitwise.typesMod.Bit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitsXnorMod {
   
-  @JSImport("bitwise/esm/bits/xnor", JSImport.Default)
+  @JSImport("bitwise/esm/bits/xnor", JSImport.Namespace)
   @js.native
-  def default(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits1.asInstanceOf[js.Any], bits2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bit]]
 }

@@ -3,15 +3,13 @@ package typings.wxJsSdkDt.wx
 import typings.wxJsSdkDt.anon.CardList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCardConfig extends StObject {
   
-  var cardList: js.Array[Card] = js.native
+  var cardList: js.Array[Card]
   
-  var success: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.undefined
 }
 object AddCardConfig {
   

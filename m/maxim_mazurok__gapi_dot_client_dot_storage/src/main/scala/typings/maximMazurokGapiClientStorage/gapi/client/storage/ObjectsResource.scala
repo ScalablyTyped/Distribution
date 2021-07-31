@@ -20,7 +20,6 @@ import typings.maximMazurokGapiClientStorage.anon.KmsKeyName
 import typings.maximMazurokGapiClientStorage.anon.OauthtokenObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

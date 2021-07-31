@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevocationDetails extends StObject {
   
   /** Indicates why a Certificate was revoked. */
-  var revocationState: js.UndefOr[String] = js.native
+  var revocationState: js.UndefOr[String] = js.undefined
   
   /** The time at which this Certificate was revoked. */
-  var revocationTime: js.UndefOr[String] = js.native
+  var revocationTime: js.UndefOr[String] = js.undefined
 }
 object RevocationDetails {
   

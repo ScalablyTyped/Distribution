@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getKeyMod {
   
-  @JSImport("@pulumi/aws/apigateway/getKey", "getKey")
+  @JSImport("@pulumi/aws/apigateway/getKey", JSImport.Namespace)
   @js.native
-  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = js.native
-  @JSImport("@pulumi/aws/apigateway/getKey", "getKey")
-  @js.native
-  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetKeyResult]]
+  @scala.inline
+  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetKeyResult]]
+  
   trait GetKeyArgs extends StObject {
     
     /**
       * The ID of the API Key to look up.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A map of tags for the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetKeyArgs {
     
@@ -51,48 +51,47 @@ object getKeyMod {
     }
   }
   
-  @js.native
   trait GetKeyResult extends StObject {
     
     /**
       * The date and time when the API Key was created.
       */
-    val createdDate: String = js.native
+    val createdDate: String
     
     /**
       * The description of the API Key.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Specifies whether the API Key is enabled.
       */
-    val enabled: Boolean = js.native
+    val enabled: Boolean
     
     /**
       * Set to the ID of the API Key.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The date and time when the API Key was last updated.
       */
-    val lastUpdatedDate: String = js.native
+    val lastUpdatedDate: String
     
     /**
       * Set to the name of the API Key.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A map of tags for the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Set to the value of the API Key.
       */
-    val value: String = js.native
+    val value: String
   }
   object GetKeyResult {
     

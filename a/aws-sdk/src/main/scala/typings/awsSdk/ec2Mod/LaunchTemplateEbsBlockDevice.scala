@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateEbsBlockDevice extends StObject {
   
   /**
     * Indicates whether the EBS volume is deleted on instance termination.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the EBS volume is encrypted.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of I/O operations per second (IOPS) that the volume supports. 
     */
-  var Iops: js.UndefOr[Integer] = js.native
+  var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ARN of the AWS Key Management Service (AWS KMS) CMK used for encryption.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.undefined
   
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.undefined
   
   /**
     * The size of the volume, in GiB.
     */
-  var VolumeSize: js.UndefOr[Integer] = js.native
+  var VolumeSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The volume type.
     */
-  var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.native
+  var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.undefined
 }
 object LaunchTemplateEbsBlockDevice {
   

@@ -2,37 +2,35 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Proxy extends StObject {
   
-  var authorization: ProxyAuthorization = js.native
+  var authorization: ProxyAuthorization
   
   /**
     * This is a description string
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The friendly name of the server
     */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var globalDefault: Boolean = js.native
+  var globalDefault: Boolean
   
   /**
     * This is a string representation of the site that the proxy server is located in (e.g. "NA-WA-RED")
     */
-  var site: String = js.native
+  var site: String
   
-  var siteDefault: Boolean = js.native
+  var siteDefault: Boolean
   
   /**
     * The URL of the proxy server
     */
-  var url: String = js.native
+  var url: String
 }
 object Proxy {
   

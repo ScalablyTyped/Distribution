@@ -2,16 +2,14 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorParameterHintOptions>> */
-@js.native
 trait InternalParameterHintOptions extends StObject {
   
-  val cycle: Boolean = js.native
+  val cycle: Boolean
   
-  val enabled: Boolean = js.native
+  val enabled: Boolean
 }
 object InternalParameterHintOptions {
   

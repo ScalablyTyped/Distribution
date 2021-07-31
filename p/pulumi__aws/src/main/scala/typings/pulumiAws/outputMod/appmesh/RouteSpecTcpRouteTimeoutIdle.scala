@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecTcpRouteTimeoutIdle extends StObject {
   
   /**
     * The unit of time. Valid values: `ms`, `s`.
     */
-  var unit: String = js.native
+  var unit: String
   
   /**
     * The number of time units. Minimum value of `0`.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object RouteSpecTcpRouteTimeoutIdle {
   

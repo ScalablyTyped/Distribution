@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateData extends StObject {
   
   /** A buyer or seller specified reference ID. This can be queried in the list operations (max-length: 1024 unicode code units). */
-  var referenceId: js.UndefOr[String] = js.native
+  var referenceId: js.UndefOr[String] = js.undefined
 }
 object PrivateData {
   

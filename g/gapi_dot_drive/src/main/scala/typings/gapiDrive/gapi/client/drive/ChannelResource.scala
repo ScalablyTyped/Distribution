@@ -3,36 +3,27 @@ package typings.gapiDrive.gapi.client.drive
 import typings.gapiDrive.gapiDriveStrings.apiNumbersignchannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelResource extends StObject {
   
-  var expiration: Double = js.native
+  var expiration: Double
   
-  var id: String = js.native
+  var id: String
   
-  var kind: apiNumbersignchannel = js.native
+  var kind: apiNumbersignchannel
   
-  var resourceId: String = js.native
+  var resourceId: String
   
-  var resourceUri: String = js.native
+  var resourceUri: String
   
-  var token: String = js.native
+  var token: String
 }
 object ChannelResource {
   
   @scala.inline
-  def apply(
-    expiration: Double,
-    id: String,
-    kind: apiNumbersignchannel,
-    resourceId: String,
-    resourceUri: String,
-    token: String
-  ): ChannelResource = {
-    val __obj = js.Dynamic.literal(expiration = expiration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], resourceUri = resourceUri.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+  def apply(expiration: Double, id: String, resourceId: String, resourceUri: String, token: String): ChannelResource = {
+    val __obj = js.Dynamic.literal(expiration = expiration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "api#channel", resourceId = resourceId.asInstanceOf[js.Any], resourceUri = resourceUri.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelResource]
   }
   

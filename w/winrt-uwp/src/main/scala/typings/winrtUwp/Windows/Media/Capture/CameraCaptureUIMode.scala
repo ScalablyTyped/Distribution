@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object CameraCaptureUIMode extends StObject {
   
   /** The user can only capture a photo. */
   @js.native
-  sealed trait photo extends CameraCaptureUIMode
+  sealed trait photo
+    extends StObject
+       with CameraCaptureUIMode
   
   /** Either a photo or video can be captured. */
   @js.native
-  sealed trait photoOrVideo extends CameraCaptureUIMode
+  sealed trait photoOrVideo
+    extends StObject
+       with CameraCaptureUIMode
   
   /** The user can only capture a video. */
   @js.native
-  sealed trait video extends CameraCaptureUIMode
+  sealed trait video
+    extends StObject
+       with CameraCaptureUIMode
 }

@@ -4,56 +4,54 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getResolverRuleMod {
   
-  @JSImport("@pulumi/aws/route53/getResolverRule", "getResolverRule")
+  @JSImport("@pulumi/aws/route53/getResolverRule", JSImport.Namespace)
   @js.native
-  def getResolverRule(): js.Promise[GetResolverRuleResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverRule", "getResolverRule")
-  @js.native
-  def getResolverRule(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverRule", "getResolverRule")
-  @js.native
-  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] = js.native
-  @JSImport("@pulumi/aws/route53/getResolverRule", "getResolverRule")
-  @js.native
-  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getResolverRule(): js.Promise[GetResolverRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")().asInstanceOf[js.Promise[GetResolverRuleResult]]
+  @scala.inline
+  def getResolverRule(args: Unit, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRuleResult]]
+  @scala.inline
+  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResolverRuleResult]]
+  @scala.inline
+  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRuleResult]]
+  
   trait GetResolverRuleArgs extends StObject {
     
     /**
       * The domain name the desired resolver rule forwards DNS queries for. Conflicts with `resolverRuleId`.
       */
-    val domainName: js.UndefOr[String] = js.native
+    val domainName: js.UndefOr[String] = js.undefined
     
     /**
       * The friendly name of the desired resolver rule. Conflicts with `resolverRuleId`.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the outbound resolver endpoint of the desired resolver rule. Conflicts with `resolverRuleId`.
       */
-    val resolverEndpointId: js.UndefOr[String] = js.native
+    val resolverEndpointId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the desired resolver rule. Conflicts with `domainName`, `name`, `resolverEndpointId` and `ruleType`.
       */
-    val resolverRuleId: js.UndefOr[String] = js.native
+    val resolverRuleId: js.UndefOr[String] = js.undefined
     
     /**
       * The rule type of the desired resolver rule. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`. Conflicts with `resolverRuleId`.
       */
-    val ruleType: js.UndefOr[String] = js.native
+    val ruleType: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags assigned to the resolver rule.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetResolverRuleArgs {
     
@@ -104,44 +102,43 @@ object getResolverRuleMod {
     }
   }
   
-  @js.native
   trait GetResolverRuleResult extends StObject {
     
     /**
       * The ARN (Amazon Resource Name) for the resolver rule.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val domainName: String = js.native
+    val domainName: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
-    val resolverEndpointId: String = js.native
+    val resolverEndpointId: String
     
-    val resolverRuleId: String = js.native
+    val resolverRuleId: String
     
-    val ruleType: String = js.native
+    val ruleType: String
     
     /**
       * Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
       * Values are `NOT_SHARED`, `SHARED_BY_ME` or `SHARED_WITH_ME`
       */
-    val shareStatus: String = js.native
+    val shareStatus: String
     
     /**
       * A map of tags assigned to the resolver rule.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetResolverRuleResult {
     

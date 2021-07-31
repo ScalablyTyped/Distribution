@@ -2,19 +2,19 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupCreationInformation extends ClientValueObject {
+trait GroupCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_description(): String = js.native
+  def get_description(): String
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def set_description(value: String): Unit = js.native
+  def set_description(value: String): Unit
   
-  def set_title(value: String): Unit = js.native
+  def set_title(value: String): Unit
 }
 object GroupCreationInformation {
   

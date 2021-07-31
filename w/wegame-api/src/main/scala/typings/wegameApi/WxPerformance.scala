@@ -2,16 +2,14 @@ package typings.wegameApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WxPerformance extends StObject {
   
   /**
     * 时间戳
     */
-  def now(): Double = js.native
+  def now(): Double
 }
 object WxPerformance {
   

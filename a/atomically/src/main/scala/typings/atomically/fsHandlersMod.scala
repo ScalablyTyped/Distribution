@@ -3,23 +3,23 @@ package typings.atomically
 import typings.atomically.typesMod.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsHandlersMod {
   
   object default {
     
-    @JSImport("atomically/dist/utils/fs_handlers", "default.isChangeErrorOk")
+    @JSImport("atomically/dist/utils/fs_handlers", JSImport.Default)
     @js.native
-    def isChangeErrorOk(error: Exception): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("atomically/dist/utils/fs_handlers", "default.isRetriableError")
-    @js.native
-    def isRetriableError(error: Exception): Boolean = js.native
+    @scala.inline
+    def isChangeErrorOk(error: Exception): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChangeErrorOk")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("atomically/dist/utils/fs_handlers", "default.onChangeError")
-    @js.native
-    def onChangeError(error: Exception): Unit = js.native
+    @scala.inline
+    def isRetriableError(error: Exception): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetriableError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def onChangeError(error: Exception): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChangeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

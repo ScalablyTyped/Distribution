@@ -11,8 +11,8 @@ Gulp plugin for stylus stylint linter
 | Full name          | gulp-stylint |
 | Keywords           | gulpplugin, linter, stylint, stylus |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 102564 |
+| # dependents       | 10 |
+| # downloads        | 81542 |
 | # stars            | 4 |
 
 ## Links

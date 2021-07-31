@@ -56,85 +56,83 @@ import typings.googleAppsScript.GoogleAppsScript.Gmail.Schema.WatchRequest
 import typings.googleAppsScript.GoogleAppsScript.Gmail.Schema.WatchResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gmail extends StObject {
   
-  var Users: js.UndefOr[UsersCollection] = js.native
+  var Users: js.UndefOr[UsersCollection] = js.undefined
   
   // Create a new instance of AutoForwarding
-  def newAutoForwarding(): AutoForwarding = js.native
+  def newAutoForwarding(): AutoForwarding
   
   // Create a new instance of BatchDeleteMessagesRequest
-  def newBatchDeleteMessagesRequest(): BatchDeleteMessagesRequest = js.native
+  def newBatchDeleteMessagesRequest(): BatchDeleteMessagesRequest
   
   // Create a new instance of BatchModifyMessagesRequest
-  def newBatchModifyMessagesRequest(): BatchModifyMessagesRequest = js.native
+  def newBatchModifyMessagesRequest(): BatchModifyMessagesRequest
   
   // Create a new instance of Delegate
-  def newDelegate(): Delegate = js.native
+  def newDelegate(): Delegate
   
   // Create a new instance of Draft
-  def newDraft(): Draft = js.native
+  def newDraft(): Draft
   
   // Create a new instance of Filter
-  def newFilter(): Filter = js.native
+  def newFilter(): Filter
   
   // Create a new instance of FilterAction
-  def newFilterAction(): FilterAction = js.native
+  def newFilterAction(): FilterAction
   
   // Create a new instance of FilterCriteria
-  def newFilterCriteria(): FilterCriteria = js.native
+  def newFilterCriteria(): FilterCriteria
   
   // Create a new instance of ForwardingAddress
-  def newForwardingAddress(): ForwardingAddress = js.native
+  def newForwardingAddress(): ForwardingAddress
   
   // Create a new instance of ImapSettings
-  def newImapSettings(): ImapSettings = js.native
+  def newImapSettings(): ImapSettings
   
   // Create a new instance of Label
-  def newLabel(): Label = js.native
+  def newLabel(): Label
   
   // Create a new instance of LabelColor
-  def newLabelColor(): LabelColor = js.native
+  def newLabelColor(): LabelColor
   
   // Create a new instance of Message
-  def newMessage(): Message = js.native
+  def newMessage(): Message
   
   // Create a new instance of MessagePart
-  def newMessagePart(): MessagePart = js.native
+  def newMessagePart(): MessagePart
   
   // Create a new instance of MessagePartBody
-  def newMessagePartBody(): MessagePartBody = js.native
+  def newMessagePartBody(): MessagePartBody
   
   // Create a new instance of MessagePartHeader
-  def newMessagePartHeader(): MessagePartHeader = js.native
+  def newMessagePartHeader(): MessagePartHeader
   
   // Create a new instance of ModifyMessageRequest
-  def newModifyMessageRequest(): ModifyMessageRequest = js.native
+  def newModifyMessageRequest(): ModifyMessageRequest
   
   // Create a new instance of ModifyThreadRequest
-  def newModifyThreadRequest(): ModifyThreadRequest = js.native
+  def newModifyThreadRequest(): ModifyThreadRequest
   
   // Create a new instance of PopSettings
-  def newPopSettings(): PopSettings = js.native
+  def newPopSettings(): PopSettings
   
   // Create a new instance of SendAs
-  def newSendAs(): SendAs = js.native
+  def newSendAs(): SendAs
   
   // Create a new instance of SmimeInfo
-  def newSmimeInfo(): SmimeInfo = js.native
+  def newSmimeInfo(): SmimeInfo
   
   // Create a new instance of SmtpMsa
-  def newSmtpMsa(): SmtpMsa = js.native
+  def newSmtpMsa(): SmtpMsa
   
   // Create a new instance of VacationSettings
-  def newVacationSettings(): VacationSettings = js.native
+  def newVacationSettings(): VacationSettings
   
   // Create a new instance of WatchRequest
-  def newWatchRequest(): WatchRequest = js.native
+  def newWatchRequest(): WatchRequest
 }
 object Gmail {
   
@@ -214,26 +212,25 @@ object Gmail {
         def list(userId: String, optionalArgs: js.Object): ListHistoryResponse = js.native
       }
       
-      @js.native
       trait LabelsCollection extends StObject {
         
         // Creates a new label.
-        def create(resource: Label, userId: String): Label = js.native
+        def create(resource: Label, userId: String): Label
         
         // Gets the specified label.
-        def get(userId: String, id: String): Label = js.native
+        def get(userId: String, id: String): Label
         
         // Lists all labels in the user's mailbox.
-        def list(userId: String): ListLabelsResponse = js.native
+        def list(userId: String): ListLabelsResponse
         
         // Updates the specified label. This method supports patch semantics.
-        def patch(resource: Label, userId: String, id: String): Label = js.native
+        def patch(resource: Label, userId: String, id: String): Label
         
         // Immediately and permanently deletes the specified label and removes it from any messages and threads that it is applied to.
-        def remove(userId: String, id: String): Unit = js.native
+        def remove(userId: String, id: String): Unit
         
         // Updates the specified label.
-        def update(resource: Label, userId: String, id: String): Label = js.native
+        def update(resource: Label, userId: String, id: String): Label
       }
       object LabelsCollection {
         
@@ -275,11 +272,10 @@ object Gmail {
       
       object Messages {
         
-        @js.native
         trait AttachmentsCollection extends StObject {
           
           // Gets the specified message attachment.
-          def get(userId: String, messageId: String, id: String): MessagePartBody = js.native
+          def get(userId: String, messageId: String, id: String): MessagePartBody
         }
         object AttachmentsCollection {
           
@@ -353,7 +349,6 @@ object Gmail {
       
       object Settings {
         
-        @js.native
         trait DelegatesCollection extends StObject {
           
           // Adds a delegate with its verification status set directly to accepted, without sending any verification email. The delegate user must be a member of the same G Suite organization as the delegator user.
@@ -361,21 +356,21 @@ object Gmail {
           // Note that a delegate user must be referred to by their primary email address, and not an email alias.
           // Also note that when a new delegate is created, there may be up to a one minute delay before the new delegate is available for use.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def create(resource: Delegate, userId: String): Delegate = js.native
+          def create(resource: Delegate, userId: String): Delegate
           
           // Gets the specified delegate.
           // Note that a delegate user must be referred to by their primary email address, and not an email alias.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def get(userId: String, delegateEmail: String): Delegate = js.native
+          def get(userId: String, delegateEmail: String): Delegate
           
           // Lists the delegates for the specified account.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def list(userId: String): ListDelegatesResponse = js.native
+          def list(userId: String): ListDelegatesResponse
           
           // Removes the specified delegate (which can be of any verification status), and revokes any verification that may have been required for using it.
           // Note that a delegate user must be referred to by their primary email address, and not an email alias.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def remove(userId: String, delegateEmail: String): Unit = js.native
+          def remove(userId: String, delegateEmail: String): Unit
         }
         object DelegatesCollection {
           
@@ -407,20 +402,19 @@ object Gmail {
           }
         }
         
-        @js.native
         trait FiltersCollection extends StObject {
           
           // Creates a filter.
-          def create(resource: Filter, userId: String): Filter = js.native
+          def create(resource: Filter, userId: String): Filter
           
           // Gets a filter.
-          def get(userId: String, id: String): Filter = js.native
+          def get(userId: String, id: String): Filter
           
           // Lists the message filters of a Gmail user.
-          def list(userId: String): ListFiltersResponse = js.native
+          def list(userId: String): ListFiltersResponse
           
           // Deletes a filter.
-          def remove(userId: String, id: String): Unit = js.native
+          def remove(userId: String, id: String): Unit
         }
         object FiltersCollection {
           
@@ -452,22 +446,21 @@ object Gmail {
           }
         }
         
-        @js.native
         trait ForwardingAddressesCollection extends StObject {
           
           // Creates a forwarding address. If ownership verification is required, a message will be sent to the recipient and the resource's verification status will be set to pending; otherwise, the resource will be created with verification status set to accepted.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def create(resource: ForwardingAddress, userId: String): ForwardingAddress = js.native
+          def create(resource: ForwardingAddress, userId: String): ForwardingAddress
           
           // Gets the specified forwarding address.
-          def get(userId: String, forwardingEmail: String): ForwardingAddress = js.native
+          def get(userId: String, forwardingEmail: String): ForwardingAddress
           
           // Lists the forwarding addresses for the specified account.
-          def list(userId: String): ListForwardingAddressesResponse = js.native
+          def list(userId: String): ListForwardingAddressesResponse
           
           // Deletes the specified forwarding address and revokes any verification that may have been required.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def remove(userId: String, forwardingEmail: String): Unit = js.native
+          def remove(userId: String, forwardingEmail: String): Unit
         }
         object ForwardingAddressesCollection {
           
@@ -501,23 +494,22 @@ object Gmail {
         
         object SendAs {
           
-          @js.native
           trait SmimeInfoCollection extends StObject {
             
             // Gets the specified S/MIME config for the specified send-as alias.
-            def get(userId: String, sendAsEmail: String, id: String): SmimeInfo = js.native
+            def get(userId: String, sendAsEmail: String, id: String): SmimeInfo
             
             // Insert (upload) the given S/MIME config for the specified send-as alias. Note that pkcs12 format is required for the key.
-            def insert(resource: SmimeInfo, userId: String, sendAsEmail: String): SmimeInfo = js.native
+            def insert(resource: SmimeInfo, userId: String, sendAsEmail: String): SmimeInfo
             
             // Lists S/MIME configs for the specified send-as alias.
-            def list(userId: String, sendAsEmail: String): ListSmimeInfoResponse = js.native
+            def list(userId: String, sendAsEmail: String): ListSmimeInfoResponse
             
             // Deletes the specified S/MIME config for the specified send-as alias.
-            def remove(userId: String, sendAsEmail: String, id: String): Unit = js.native
+            def remove(userId: String, sendAsEmail: String, id: String): Unit
             
             // Sets the default S/MIME config for the specified send-as alias.
-            def setDefault(userId: String, sendAsEmail: String, id: String): Unit = js.native
+            def setDefault(userId: String, sendAsEmail: String, id: String): Unit
           }
           object SmimeInfoCollection {
             
@@ -554,36 +546,35 @@ object Gmail {
           }
         }
         
-        @js.native
         trait SendAsCollection extends StObject {
           
-          var SmimeInfo: js.UndefOr[SmimeInfoCollection] = js.native
+          var SmimeInfo: js.UndefOr[SmimeInfoCollection] = js.undefined
           
           // Creates a custom "from" send-as alias. If an SMTP MSA is specified, Gmail will attempt to connect to the SMTP service to validate the configuration before creating the alias. If ownership verification is required for the alias, a message will be sent to the email address and the resource's verification status will be set to pending; otherwise, the resource will be created with verification status set to accepted. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def create(resource: SendAs, userId: String): SendAs = js.native
+          def create(resource: SendAs, userId: String): SendAs
           
           // Gets the specified send-as alias. Fails with an HTTP 404 error if the specified address is not a member of the collection.
-          def get(userId: String, sendAsEmail: String): SendAs = js.native
+          def get(userId: String, sendAsEmail: String): SendAs
           
           // Lists the send-as aliases for the specified account. The result includes the primary send-as address associated with the account as well as any custom "from" aliases.
-          def list(userId: String): ListSendAsResponse = js.native
+          def list(userId: String): ListSendAsResponse
           
           // Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.
           // Addresses other than the primary address for the account can only be updated by service account clients that have been delegated domain-wide authority. This method supports patch semantics.
-          def patch(resource: SendAs, userId: String, sendAsEmail: String): SendAs = js.native
+          def patch(resource: SendAs, userId: String, sendAsEmail: String): SendAs
           
           // Deletes the specified send-as alias. Revokes any verification that may have been required for using it.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def remove(userId: String, sendAsEmail: String): Unit = js.native
+          def remove(userId: String, sendAsEmail: String): Unit
           
           // Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.
           // Addresses other than the primary address for the account can only be updated by service account clients that have been delegated domain-wide authority.
-          def update(resource: SendAs, userId: String, sendAsEmail: String): SendAs = js.native
+          def update(resource: SendAs, userId: String, sendAsEmail: String): SendAs
           
           // Sends a verification email to the specified send-as alias address. The verification status must be pending.
           // This method is only available to service account clients that have been delegated domain-wide authority.
-          def verify(userId: String, sendAsEmail: String): Unit = js.native
+          def verify(userId: String, sendAsEmail: String): Unit
         }
         object SendAsCollection {
           
@@ -634,41 +625,40 @@ object Gmail {
         }
       }
       
-      @js.native
       trait SettingsCollection extends StObject {
         
-        var Delegates: js.UndefOr[DelegatesCollection] = js.native
+        var Delegates: js.UndefOr[DelegatesCollection] = js.undefined
         
-        var Filters: js.UndefOr[FiltersCollection] = js.native
+        var Filters: js.UndefOr[FiltersCollection] = js.undefined
         
-        var ForwardingAddresses: js.UndefOr[ForwardingAddressesCollection] = js.native
+        var ForwardingAddresses: js.UndefOr[ForwardingAddressesCollection] = js.undefined
         
-        var SendAs: js.UndefOr[SendAsCollection] = js.native
+        var SendAs: js.UndefOr[SendAsCollection] = js.undefined
         
         // Gets the auto-forwarding setting for the specified account.
-        def getAutoForwarding(userId: String): AutoForwarding = js.native
+        def getAutoForwarding(userId: String): AutoForwarding
         
         // Gets IMAP settings.
-        def getImap(userId: String): ImapSettings = js.native
+        def getImap(userId: String): ImapSettings
         
         // Gets POP settings.
-        def getPop(userId: String): PopSettings = js.native
+        def getPop(userId: String): PopSettings
         
         // Gets vacation responder settings.
-        def getVacation(userId: String): VacationSettings = js.native
+        def getVacation(userId: String): VacationSettings
         
         // Updates the auto-forwarding setting for the specified account. A verified forwarding address must be specified when auto-forwarding is enabled.
         // This method is only available to service account clients that have been delegated domain-wide authority.
-        def updateAutoForwarding(resource: AutoForwarding, userId: String): AutoForwarding = js.native
+        def updateAutoForwarding(resource: AutoForwarding, userId: String): AutoForwarding
         
         // Updates IMAP settings.
-        def updateImap(resource: ImapSettings, userId: String): ImapSettings = js.native
+        def updateImap(resource: ImapSettings, userId: String): ImapSettings
         
         // Updates POP settings.
-        def updatePop(resource: PopSettings, userId: String): PopSettings = js.native
+        def updatePop(resource: PopSettings, userId: String): PopSettings
         
         // Updates vacation responder settings.
-        def updateVacation(resource: VacationSettings, userId: String): VacationSettings = js.native
+        def updateVacation(resource: VacationSettings, userId: String): VacationSettings
       }
       object SettingsCollection {
         
@@ -767,29 +757,28 @@ object Gmail {
       }
     }
     
-    @js.native
     trait UsersCollection extends StObject {
       
-      var Drafts: js.UndefOr[DraftsCollection] = js.native
+      var Drafts: js.UndefOr[DraftsCollection] = js.undefined
       
-      var History: js.UndefOr[HistoryCollection] = js.native
+      var History: js.UndefOr[HistoryCollection] = js.undefined
       
-      var Labels: js.UndefOr[LabelsCollection] = js.native
+      var Labels: js.UndefOr[LabelsCollection] = js.undefined
       
-      var Messages: js.UndefOr[MessagesCollection] = js.native
+      var Messages: js.UndefOr[MessagesCollection] = js.undefined
       
-      var Settings: js.UndefOr[SettingsCollection] = js.native
+      var Settings: js.UndefOr[SettingsCollection] = js.undefined
       
-      var Threads: js.UndefOr[ThreadsCollection] = js.native
+      var Threads: js.UndefOr[ThreadsCollection] = js.undefined
       
       // Gets the current user's Gmail profile.
-      def getProfile(userId: String): Profile = js.native
+      def getProfile(userId: String): Profile
       
       // Stop receiving push notifications for the given user mailbox.
-      def stop(userId: String): Unit = js.native
+      def stop(userId: String): Unit
       
       // Set up or update a push notification watch on the given user mailbox.
-      def watch(resource: WatchRequest, userId: String): WatchResponse = js.native
+      def watch(resource: WatchRequest, userId: String): WatchResponse
     }
     object UsersCollection {
       
@@ -857,48 +846,47 @@ object Gmail {
   /**
     * Options for a Gmail draft.
     */
-  @js.native
   trait GmailAdvancedOptions extends StObject {
     
     /**
       * An array of files to send with the email.
       */
-    var attachments: js.UndefOr[js.Array[BlobSource]] = js.native
+    var attachments: js.UndefOr[js.Array[BlobSource]] = js.undefined
     
     /**
       * A comma-separated list of email addresses to BCC.
       */
-    var bcc: js.UndefOr[String] = js.native
+    var bcc: js.UndefOr[String] = js.undefined
     
     /**
       * A comma-separated list of email addresses to CC.
       */
-    var cc: js.UndefOr[String] = js.native
+    var cc: js.UndefOr[String] = js.undefined
     
     /**
       * The address that the email should be sent from, which must be one of the values returned by `GmailApp.getAliases()`.
       */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     /**
       * If set, devices capable of rendering HTML will use it instead of the required body argument; you can add an optional `inlineImages` field in HTML body if you have inlined images for your email.
       */
-    var htmlBody: js.UndefOr[String] = js.native
+    var htmlBody: js.UndefOr[String] = js.undefined
     
     /**
       * A JavaScript object containing a mapping from image key (`String`) to image data (`BlobSource`) ; this assumes that the `htmlBody` parameter is used and contains references to these images in the format `<img src="cid:imageKey" />`.
       */
-    var inlineImages: js.UndefOr[StringDictionary[BlobSource]] = js.native
+    var inlineImages: js.UndefOr[StringDictionary[BlobSource]] = js.undefined
     
     /**
       * The name of the sender of the email (default: the user's name).
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * An email address to use as the default reply-to address (default: the user's email address).
       */
-    var replyTo: js.UndefOr[String] = js.native
+    var replyTo: js.UndefOr[String] = js.undefined
   }
   object GmailAdvancedOptions {
     
@@ -1148,18 +1136,17 @@ object Gmail {
   /**
     * Options for a Gmail Attachments.
     */
-  @js.native
   trait GmailAttachmentOptions extends StObject {
     
     /**
       *  If the returned array of Blob attachments should include regular (non-inline) attachments.
       */
-    var includeAttachments: js.UndefOr[Boolean] = js.native
+    var includeAttachments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the returned array of Blob attachments should include inline images.
       */
-    var includeInlineImages: js.UndefOr[Boolean] = js.native
+    var includeInlineImages: js.UndefOr[Boolean] = js.undefined
   }
   object GmailAttachmentOptions {
     
@@ -1486,14 +1473,13 @@ object Gmail {
   
   object Schema {
     
-    @js.native
     trait AutoForwarding extends StObject {
       
-      var disposition: js.UndefOr[String] = js.native
+      var disposition: js.UndefOr[String] = js.undefined
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
     }
     object AutoForwarding {
       
@@ -1526,10 +1512,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait BatchDeleteMessagesRequest extends StObject {
       
-      var ids: js.UndefOr[js.Array[String]] = js.native
+      var ids: js.UndefOr[js.Array[String]] = js.undefined
     }
     object BatchDeleteMessagesRequest {
       
@@ -1553,14 +1538,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait BatchModifyMessagesRequest extends StObject {
       
-      var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ids: js.UndefOr[js.Array[String]] = js.native
+      var ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object BatchModifyMessagesRequest {
       
@@ -1602,12 +1586,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Delegate extends StObject {
       
-      var delegateEmail: js.UndefOr[String] = js.native
+      var delegateEmail: js.UndefOr[String] = js.undefined
       
-      var verificationStatus: js.UndefOr[String] = js.native
+      var verificationStatus: js.UndefOr[String] = js.undefined
     }
     object Delegate {
       
@@ -1634,12 +1617,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Draft extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var message: js.UndefOr[Message] = js.native
+      var message: js.UndefOr[Message] = js.undefined
     }
     object Draft {
       
@@ -1666,14 +1648,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Filter extends StObject {
       
-      var action: js.UndefOr[FilterAction] = js.native
+      var action: js.UndefOr[FilterAction] = js.undefined
       
-      var criteria: js.UndefOr[FilterCriteria] = js.native
+      var criteria: js.UndefOr[FilterCriteria] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
     }
     object Filter {
       
@@ -1706,14 +1687,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait FilterAction extends StObject {
       
-      var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var forward: js.UndefOr[String] = js.native
+      var forward: js.UndefOr[String] = js.undefined
       
-      var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object FilterAction {
       
@@ -1752,26 +1732,25 @@ object Gmail {
       }
     }
     
-    @js.native
     trait FilterCriteria extends StObject {
       
-      var excludeChats: js.UndefOr[Boolean] = js.native
+      var excludeChats: js.UndefOr[Boolean] = js.undefined
       
-      var from: js.UndefOr[String] = js.native
+      var from: js.UndefOr[String] = js.undefined
       
-      var hasAttachment: js.UndefOr[Boolean] = js.native
+      var hasAttachment: js.UndefOr[Boolean] = js.undefined
       
-      var negatedQuery: js.UndefOr[String] = js.native
+      var negatedQuery: js.UndefOr[String] = js.undefined
       
-      var query: js.UndefOr[String] = js.native
+      var query: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
       
-      var sizeComparison: js.UndefOr[String] = js.native
+      var sizeComparison: js.UndefOr[String] = js.undefined
       
-      var subject: js.UndefOr[String] = js.native
+      var subject: js.UndefOr[String] = js.undefined
       
-      var to: js.UndefOr[String] = js.native
+      var to: js.UndefOr[String] = js.undefined
     }
     object FilterCriteria {
       
@@ -1840,12 +1819,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ForwardingAddress extends StObject {
       
-      var forwardingEmail: js.UndefOr[String] = js.native
+      var forwardingEmail: js.UndefOr[String] = js.undefined
       
-      var verificationStatus: js.UndefOr[String] = js.native
+      var verificationStatus: js.UndefOr[String] = js.undefined
     }
     object ForwardingAddress {
       
@@ -1872,20 +1850,19 @@ object Gmail {
       }
     }
     
-    @js.native
     trait History extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var labelsAdded: js.UndefOr[js.Array[HistoryLabelAdded]] = js.native
+      var labelsAdded: js.UndefOr[js.Array[HistoryLabelAdded]] = js.undefined
       
-      var labelsRemoved: js.UndefOr[js.Array[HistoryLabelRemoved]] = js.native
+      var labelsRemoved: js.UndefOr[js.Array[HistoryLabelRemoved]] = js.undefined
       
-      var messages: js.UndefOr[js.Array[Message]] = js.native
+      var messages: js.UndefOr[js.Array[Message]] = js.undefined
       
-      var messagesAdded: js.UndefOr[js.Array[HistoryMessageAdded]] = js.native
+      var messagesAdded: js.UndefOr[js.Array[HistoryMessageAdded]] = js.undefined
       
-      var messagesDeleted: js.UndefOr[js.Array[HistoryMessageDeleted]] = js.native
+      var messagesDeleted: js.UndefOr[js.Array[HistoryMessageDeleted]] = js.undefined
     }
     object History {
       
@@ -1951,12 +1928,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait HistoryLabelAdded extends StObject {
       
-      var labelIds: js.UndefOr[js.Array[String]] = js.native
+      var labelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var message: js.UndefOr[Message] = js.native
+      var message: js.UndefOr[Message] = js.undefined
     }
     object HistoryLabelAdded {
       
@@ -1986,12 +1962,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait HistoryLabelRemoved extends StObject {
       
-      var labelIds: js.UndefOr[js.Array[String]] = js.native
+      var labelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var message: js.UndefOr[Message] = js.native
+      var message: js.UndefOr[Message] = js.undefined
     }
     object HistoryLabelRemoved {
       
@@ -2021,10 +1996,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait HistoryMessageAdded extends StObject {
       
-      var message: js.UndefOr[Message] = js.native
+      var message: js.UndefOr[Message] = js.undefined
     }
     object HistoryMessageAdded {
       
@@ -2045,10 +2019,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait HistoryMessageDeleted extends StObject {
       
-      var message: js.UndefOr[Message] = js.native
+      var message: js.UndefOr[Message] = js.undefined
     }
     object HistoryMessageDeleted {
       
@@ -2069,16 +2042,15 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ImapSettings extends StObject {
       
-      var autoExpunge: js.UndefOr[Boolean] = js.native
+      var autoExpunge: js.UndefOr[Boolean] = js.undefined
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
       
-      var expungeBehavior: js.UndefOr[String] = js.native
+      var expungeBehavior: js.UndefOr[String] = js.undefined
       
-      var maxFolderSize: js.UndefOr[Double] = js.native
+      var maxFolderSize: js.UndefOr[Double] = js.undefined
     }
     object ImapSettings {
       
@@ -2117,28 +2089,27 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Label extends StObject {
       
-      var color: js.UndefOr[LabelColor] = js.native
+      var color: js.UndefOr[LabelColor] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var labelListVisibility: js.UndefOr[String] = js.native
+      var labelListVisibility: js.UndefOr[String] = js.undefined
       
-      var messageListVisibility: js.UndefOr[String] = js.native
+      var messageListVisibility: js.UndefOr[String] = js.undefined
       
-      var messagesTotal: js.UndefOr[Double] = js.native
+      var messagesTotal: js.UndefOr[Double] = js.undefined
       
-      var messagesUnread: js.UndefOr[Double] = js.native
+      var messagesUnread: js.UndefOr[Double] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var threadsTotal: js.UndefOr[Double] = js.native
+      var threadsTotal: js.UndefOr[Double] = js.undefined
       
-      var threadsUnread: js.UndefOr[Double] = js.native
+      var threadsUnread: js.UndefOr[Double] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Label {
       
@@ -2213,12 +2184,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait LabelColor extends StObject {
       
-      var backgroundColor: js.UndefOr[String] = js.native
+      var backgroundColor: js.UndefOr[String] = js.undefined
       
-      var textColor: js.UndefOr[String] = js.native
+      var textColor: js.UndefOr[String] = js.undefined
     }
     object LabelColor {
       
@@ -2245,10 +2215,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListDelegatesResponse extends StObject {
       
-      var delegates: js.UndefOr[js.Array[Delegate]] = js.native
+      var delegates: js.UndefOr[js.Array[Delegate]] = js.undefined
     }
     object ListDelegatesResponse {
       
@@ -2272,14 +2241,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListDraftsResponse extends StObject {
       
-      var drafts: js.UndefOr[js.Array[Draft]] = js.native
+      var drafts: js.UndefOr[js.Array[Draft]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resultSizeEstimate: js.UndefOr[Double] = js.native
+      var resultSizeEstimate: js.UndefOr[Double] = js.undefined
     }
     object ListDraftsResponse {
       
@@ -2315,10 +2283,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListFiltersResponse extends StObject {
       
-      var filter: js.UndefOr[js.Array[Filter]] = js.native
+      var filter: js.UndefOr[js.Array[Filter]] = js.undefined
     }
     object ListFiltersResponse {
       
@@ -2342,10 +2309,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListForwardingAddressesResponse extends StObject {
       
-      var forwardingAddresses: js.UndefOr[js.Array[ForwardingAddress]] = js.native
+      var forwardingAddresses: js.UndefOr[js.Array[ForwardingAddress]] = js.undefined
     }
     object ListForwardingAddressesResponse {
       
@@ -2369,14 +2335,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListHistoryResponse extends StObject {
       
-      var history: js.UndefOr[js.Array[History]] = js.native
+      var history: js.UndefOr[js.Array[History]] = js.undefined
       
-      var historyId: js.UndefOr[String] = js.native
+      var historyId: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListHistoryResponse {
       
@@ -2412,10 +2377,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListLabelsResponse extends StObject {
       
-      var labels: js.UndefOr[js.Array[Label]] = js.native
+      var labels: js.UndefOr[js.Array[Label]] = js.undefined
     }
     object ListLabelsResponse {
       
@@ -2439,14 +2403,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListMessagesResponse extends StObject {
       
-      var messages: js.UndefOr[js.Array[Message]] = js.native
+      var messages: js.UndefOr[js.Array[Message]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resultSizeEstimate: js.UndefOr[Double] = js.native
+      var resultSizeEstimate: js.UndefOr[Double] = js.undefined
     }
     object ListMessagesResponse {
       
@@ -2482,10 +2445,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListSendAsResponse extends StObject {
       
-      var sendAs: js.UndefOr[js.Array[SendAs]] = js.native
+      var sendAs: js.UndefOr[js.Array[SendAs]] = js.undefined
     }
     object ListSendAsResponse {
       
@@ -2509,10 +2471,9 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListSmimeInfoResponse extends StObject {
       
-      var smimeInfo: js.UndefOr[js.Array[SmimeInfo]] = js.native
+      var smimeInfo: js.UndefOr[js.Array[SmimeInfo]] = js.undefined
     }
     object ListSmimeInfoResponse {
       
@@ -2536,14 +2497,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ListThreadsResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var resultSizeEstimate: js.UndefOr[Double] = js.native
+      var resultSizeEstimate: js.UndefOr[Double] = js.undefined
       
-      var threads: js.UndefOr[js.Array[Thread]] = js.native
+      var threads: js.UndefOr[js.Array[Thread]] = js.undefined
     }
     object ListThreadsResponse {
       
@@ -2579,26 +2539,25 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Message extends StObject {
       
-      var historyId: js.UndefOr[String] = js.native
+      var historyId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalDate: js.UndefOr[String] = js.native
+      var internalDate: js.UndefOr[String] = js.undefined
       
-      var labelIds: js.UndefOr[js.Array[String]] = js.native
+      var labelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var payload: js.UndefOr[MessagePart] = js.native
+      var payload: js.UndefOr[MessagePart] = js.undefined
       
-      var raw: js.UndefOr[String] = js.native
+      var raw: js.UndefOr[String] = js.undefined
       
-      var sizeEstimate: js.UndefOr[Double] = js.native
+      var sizeEstimate: js.UndefOr[Double] = js.undefined
       
-      var snippet: js.UndefOr[String] = js.native
+      var snippet: js.UndefOr[String] = js.undefined
       
-      var threadId: js.UndefOr[String] = js.native
+      var threadId: js.UndefOr[String] = js.undefined
     }
     object Message {
       
@@ -2670,20 +2629,19 @@ object Gmail {
       }
     }
     
-    @js.native
     trait MessagePart extends StObject {
       
-      var body: js.UndefOr[MessagePartBody] = js.native
+      var body: js.UndefOr[MessagePartBody] = js.undefined
       
-      var filename: js.UndefOr[String] = js.native
+      var filename: js.UndefOr[String] = js.undefined
       
-      var headers: js.UndefOr[js.Array[MessagePartHeader]] = js.native
+      var headers: js.UndefOr[js.Array[MessagePartHeader]] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var partId: js.UndefOr[String] = js.native
+      var partId: js.UndefOr[String] = js.undefined
       
-      var parts: js.UndefOr[js.Array[MessagePart]] = js.native
+      var parts: js.UndefOr[js.Array[MessagePart]] = js.undefined
     }
     object MessagePart {
       
@@ -2740,14 +2698,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait MessagePartBody extends StObject {
       
-      var attachmentId: js.UndefOr[String] = js.native
+      var attachmentId: js.UndefOr[String] = js.undefined
       
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
     }
     object MessagePartBody {
       
@@ -2780,12 +2737,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait MessagePartHeader extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object MessagePartHeader {
       
@@ -2812,12 +2768,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ModifyMessageRequest extends StObject {
       
-      var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ModifyMessageRequest {
       
@@ -2850,12 +2805,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait ModifyThreadRequest extends StObject {
       
-      var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+      var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ModifyThreadRequest {
       
@@ -2888,12 +2842,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait PopSettings extends StObject {
       
-      var accessWindow: js.UndefOr[String] = js.native
+      var accessWindow: js.UndefOr[String] = js.undefined
       
-      var disposition: js.UndefOr[String] = js.native
+      var disposition: js.UndefOr[String] = js.undefined
     }
     object PopSettings {
       
@@ -2920,16 +2873,15 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Profile extends StObject {
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var historyId: js.UndefOr[String] = js.native
+      var historyId: js.UndefOr[String] = js.undefined
       
-      var messagesTotal: js.UndefOr[Double] = js.native
+      var messagesTotal: js.UndefOr[Double] = js.undefined
       
-      var threadsTotal: js.UndefOr[Double] = js.native
+      var threadsTotal: js.UndefOr[Double] = js.undefined
     }
     object Profile {
       
@@ -2968,26 +2920,25 @@ object Gmail {
       }
     }
     
-    @js.native
     trait SendAs extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var isDefault: js.UndefOr[Boolean] = js.native
+      var isDefault: js.UndefOr[Boolean] = js.undefined
       
-      var isPrimary: js.UndefOr[Boolean] = js.native
+      var isPrimary: js.UndefOr[Boolean] = js.undefined
       
-      var replyToAddress: js.UndefOr[String] = js.native
+      var replyToAddress: js.UndefOr[String] = js.undefined
       
-      var sendAsEmail: js.UndefOr[String] = js.native
+      var sendAsEmail: js.UndefOr[String] = js.undefined
       
-      var signature: js.UndefOr[String] = js.native
+      var signature: js.UndefOr[String] = js.undefined
       
-      var smtpMsa: js.UndefOr[SmtpMsa] = js.native
+      var smtpMsa: js.UndefOr[SmtpMsa] = js.undefined
       
-      var treatAsAlias: js.UndefOr[Boolean] = js.native
+      var treatAsAlias: js.UndefOr[Boolean] = js.undefined
       
-      var verificationStatus: js.UndefOr[String] = js.native
+      var verificationStatus: js.UndefOr[String] = js.undefined
     }
     object SendAs {
       
@@ -3056,22 +3007,21 @@ object Gmail {
       }
     }
     
-    @js.native
     trait SmimeInfo extends StObject {
       
-      var encryptedKeyPassword: js.UndefOr[String] = js.native
+      var encryptedKeyPassword: js.UndefOr[String] = js.undefined
       
-      var expiration: js.UndefOr[String] = js.native
+      var expiration: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isDefault: js.UndefOr[Boolean] = js.native
+      var isDefault: js.UndefOr[Boolean] = js.undefined
       
-      var issuerCn: js.UndefOr[String] = js.native
+      var issuerCn: js.UndefOr[String] = js.undefined
       
-      var pem: js.UndefOr[String] = js.native
+      var pem: js.UndefOr[String] = js.undefined
       
-      var pkcs12: js.UndefOr[String] = js.native
+      var pkcs12: js.UndefOr[String] = js.undefined
     }
     object SmimeInfo {
       
@@ -3128,18 +3078,17 @@ object Gmail {
       }
     }
     
-    @js.native
     trait SmtpMsa extends StObject {
       
-      var host: js.UndefOr[String] = js.native
+      var host: js.UndefOr[String] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var securityMode: js.UndefOr[String] = js.native
+      var securityMode: js.UndefOr[String] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object SmtpMsa {
       
@@ -3184,16 +3133,15 @@ object Gmail {
       }
     }
     
-    @js.native
     trait Thread extends StObject {
       
-      var historyId: js.UndefOr[String] = js.native
+      var historyId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var messages: js.UndefOr[js.Array[Message]] = js.native
+      var messages: js.UndefOr[js.Array[Message]] = js.undefined
       
-      var snippet: js.UndefOr[String] = js.native
+      var snippet: js.UndefOr[String] = js.undefined
     }
     object Thread {
       
@@ -3235,24 +3183,23 @@ object Gmail {
       }
     }
     
-    @js.native
     trait VacationSettings extends StObject {
       
-      var enableAutoReply: js.UndefOr[Boolean] = js.native
+      var enableAutoReply: js.UndefOr[Boolean] = js.undefined
       
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
-      var responseBodyHtml: js.UndefOr[String] = js.native
+      var responseBodyHtml: js.UndefOr[String] = js.undefined
       
-      var responseBodyPlainText: js.UndefOr[String] = js.native
+      var responseBodyPlainText: js.UndefOr[String] = js.undefined
       
-      var responseSubject: js.UndefOr[String] = js.native
+      var responseSubject: js.UndefOr[String] = js.undefined
       
-      var restrictToContacts: js.UndefOr[Boolean] = js.native
+      var restrictToContacts: js.UndefOr[Boolean] = js.undefined
       
-      var restrictToDomain: js.UndefOr[Boolean] = js.native
+      var restrictToDomain: js.UndefOr[Boolean] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
     }
     object VacationSettings {
       
@@ -3315,14 +3262,13 @@ object Gmail {
       }
     }
     
-    @js.native
     trait WatchRequest extends StObject {
       
-      var labelFilterAction: js.UndefOr[String] = js.native
+      var labelFilterAction: js.UndefOr[String] = js.undefined
       
-      var labelIds: js.UndefOr[js.Array[String]] = js.native
+      var labelIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var topicName: js.UndefOr[String] = js.native
+      var topicName: js.UndefOr[String] = js.undefined
     }
     object WatchRequest {
       
@@ -3358,12 +3304,11 @@ object Gmail {
       }
     }
     
-    @js.native
     trait WatchResponse extends StObject {
       
-      var expiration: js.UndefOr[String] = js.native
+      var expiration: js.UndefOr[String] = js.undefined
       
-      var historyId: js.UndefOr[String] = js.native
+      var historyId: js.UndefOr[String] = js.undefined
     }
     object WatchResponse {
       

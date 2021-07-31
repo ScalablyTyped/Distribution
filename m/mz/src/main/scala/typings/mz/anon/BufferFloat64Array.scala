@@ -3,15 +3,13 @@ package typings.mz.anon
 import typings.std.Float64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferFloat64Array extends StObject {
   
-  var buffer: Float64Array = js.native
+  var buffer: Float64Array
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
 }
 object BufferFloat64Array {
   

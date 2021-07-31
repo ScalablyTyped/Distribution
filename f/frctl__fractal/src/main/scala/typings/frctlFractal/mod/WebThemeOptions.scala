@@ -3,36 +3,34 @@ package typings.frctlFractal.mod
 import typings.frctlFractal.anon.Mount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebThemeOptions extends StObject {
   
-  var favicon: js.UndefOr[String] = js.native
+  var favicon: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var nav: js.UndefOr[js.Array[String]] = js.native
+  var nav: js.UndefOr[js.Array[String]] = js.undefined
   
-  var panels: js.UndefOr[js.Array[String]] = js.native
+  var panels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var rtl: Boolean = js.native
+  var rtl: Boolean
   
-  var scripts: js.UndefOr[js.Array[String]] = js.native
+  var scripts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var skin: js.UndefOr[String] = js.native
+  var skin: js.UndefOr[String] = js.undefined
   
-  var static: js.UndefOr[Mount] = js.native
+  var static: js.UndefOr[Mount] = js.undefined
   
   @JSName("static.mount")
-  var staticDotmount: String = js.native
+  var staticDotmount: String
   
-  var styles: js.UndefOr[js.Array[String]] = js.native
+  var styles: js.UndefOr[js.Array[String]] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object WebThemeOptions {
   

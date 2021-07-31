@@ -3,20 +3,20 @@ package typings.ddTrace.mod.plugins
 import typings.ddTrace.anon.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [elasticsearch](https://github.com/elastic/elasticsearch-js) module.
   */
-@js.native
-trait elasticsearch extends Instrumentation {
+trait elasticsearch
+  extends StObject
+     with Instrumentation {
   
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[Query] = js.native
+  var hooks: js.UndefOr[Query] = js.undefined
 }
 object elasticsearch {
   

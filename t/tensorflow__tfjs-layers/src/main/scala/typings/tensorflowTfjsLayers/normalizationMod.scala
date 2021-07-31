@@ -12,10 +12,13 @@ import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object normalizationMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "BatchNormalization")
   @js.native
@@ -111,62 +114,48 @@ object normalizationMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
-  def batchNormalization(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
+  @scala.inline
+  def batchNormalization(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def batchNormalization(
     x: Tensor[Rank],
     mean: Tensor[Rank],
     variance: Tensor[Rank],
-    beta: js.UndefOr[scala.Nothing],
-    gamma: js.UndefOr[scala.Nothing],
+    beta: Unit,
+    gamma: Unit,
     epsilon: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def batchNormalization(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank], beta: Unit, gamma: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def batchNormalization(
     x: Tensor[Rank],
     mean: Tensor[Rank],
     variance: Tensor[Rank],
-    beta: js.UndefOr[scala.Nothing],
-    gamma: Tensor[Rank]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
-  def batchNormalization(
-    x: Tensor[Rank],
-    mean: Tensor[Rank],
-    variance: Tensor[Rank],
-    beta: js.UndefOr[scala.Nothing],
+    beta: Unit,
     gamma: Tensor[Rank],
     epsilon: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
-  def batchNormalization(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank], beta: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def batchNormalization(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank], beta: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def batchNormalization(
     x: Tensor[Rank],
     mean: Tensor[Rank],
     variance: Tensor[Rank],
     beta: Tensor[Rank],
-    gamma: js.UndefOr[scala.Nothing],
+    gamma: Unit,
     epsilon: Double
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def batchNormalization(
     x: Tensor[Rank],
     mean: Tensor[Rank],
     variance: Tensor[Rank],
     beta: Tensor[Rank],
     gamma: Tensor[Rank]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "batchNormalization")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def batchNormalization(
     x: Tensor[Rank],
     mean: Tensor[Rank],
@@ -174,23 +163,22 @@ object normalizationMod {
     beta: Tensor[Rank],
     gamma: Tensor[Rank],
     epsilon: Double
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "normalizeBatchInTraining")
-  @js.native
-  def normalizeBatchInTraining(x: Tensor[Rank], gamma: Tensor[Rank], beta: Tensor[Rank], reductionAxes: js.Array[Double]): js.Tuple3[Tensor[Rank], Tensor[Rank], Tensor[Rank]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/normalization", "normalizeBatchInTraining")
-  @js.native
+  @scala.inline
+  def normalizeBatchInTraining(x: Tensor[Rank], gamma: Tensor[Rank], beta: Tensor[Rank], reductionAxes: js.Array[Double]): js.Tuple3[Tensor[Rank], Tensor[Rank], Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBatchInTraining")(x.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], reductionAxes.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Tensor[Rank], Tensor[Rank], Tensor[Rank]]]
+  @scala.inline
   def normalizeBatchInTraining(
     x: Tensor[Rank],
     gamma: Tensor[Rank],
     beta: Tensor[Rank],
     reductionAxes: js.Array[Double],
     epsilon: Double
-  ): js.Tuple3[Tensor[Rank], Tensor[Rank], Tensor[Rank]] = js.native
+  ): js.Tuple3[Tensor[Rank], Tensor[Rank], Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBatchInTraining")(x.asInstanceOf[js.Any], gamma.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], reductionAxes.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Tensor[Rank], Tensor[Rank], Tensor[Rank]]]
   
-  @js.native
-  trait BatchNormalizationLayerArgs extends LayerArgs {
+  trait BatchNormalizationLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * The integer axis that should be normalized (typically the features axis).
@@ -199,69 +187,69 @@ object normalizationMod {
       * For instance, after a `Conv2D` layer with `data_format="channels_first"`,
       * set `axis=1` in `batchNormalization`.
       */
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
     
     /**
       * Constraint for the beta weight.
       */
-    var betaConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var betaConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the beta weight.
       *  Defaults to 'zeros'.
       */
-    var betaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var betaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer for the beta weight.
       */
-    var betaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var betaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * If `true`, add offset of `beta` to normalized tensor.
       * If `false`, `beta` is ignored.
       * Defaults to `true`.
       */
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Small float added to the variance to avoid dividing by zero. Defaults to
       * 1e-3.
       */
-    var epsilon: js.UndefOr[Double] = js.native
+    var epsilon: js.UndefOr[Double] = js.undefined
     
     /**
       * Constraint for gamma weight.
       */
-    var gammaConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var gammaConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the gamma weight.
       *  Defaults to `ones`.
       */
-    var gammaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var gammaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer for the gamma weight.
       */
-    var gammaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var gammaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Momentum of the moving average. Defaults to 0.99.
       */
-    var momentum: js.UndefOr[Double] = js.native
+    var momentum: js.UndefOr[Double] = js.undefined
     
     /**
       * Initializer for the moving mean.
       * Defaults to `zeros`
       */
-    var movingMeanInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var movingMeanInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Initializer for the moving variance.
       *  Defaults to 'Ones'.
       */
-    var movingVarianceInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var movingVarianceInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * If `true`, multiply by `gamma`.
@@ -270,7 +258,7 @@ object normalizationMod {
       * this can be disabled since the scaling will be done by the next layer.
       * Defaults to `true`.
       */
-    var scale: js.UndefOr[Boolean] = js.native
+    var scale: js.UndefOr[Boolean] = js.undefined
   }
   object BatchNormalizationLayerArgs {
     
@@ -363,45 +351,46 @@ object normalizationMod {
     }
   }
   
-  @js.native
-  trait LayerNormalizationLayerArgs extends LayerArgs {
+  trait LayerNormalizationLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * The axis or axes that should be normalized (typically, the feature axis.)
       * Defaults to -1 (the last axis.)
       */
-    var axis: js.UndefOr[Double | js.Array[Double]] = js.native
+    var axis: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Initializer for the beta weight.
       * Default: `'zeros'`.
       */
-    var betaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var betaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /** Regularizer for the beta weight. */
-    var betaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var betaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * If `true`, add offset of `beta` to normalized tensor.
       * If `false`, `beta` is ignored.
       * Default: `true`.
       */
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A small positive float added to variance to avoid divison by zero.
       * Defaults to 1e-3.
       */
-    var epsilon: js.UndefOr[Double] = js.native
+    var epsilon: js.UndefOr[Double] = js.undefined
     
     /**
       * Initializer for the gamma weight.
       * Default: `'ones'`.
       */
-    var gammaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var gammaInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /** Regularizer for the gamma weight. */
-    var gammaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var gammaRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * If `true`, multiply output by `gamma`.
@@ -410,7 +399,7 @@ object normalizationMod {
       * be done by the next layer.
       * Default: `true`.
       */
-    var scale: js.UndefOr[Boolean] = js.native
+    var scale: js.UndefOr[Boolean] = js.undefined
   }
   object LayerNormalizationLayerArgs {
     

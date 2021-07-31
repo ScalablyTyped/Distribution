@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1SuggestTrialsRequest extends StObject {
   
   /**
     * Required. The identifier of the client that is requesting the suggestion. If multiple SuggestTrialsRequests have the same `client_id`, the service will return the identical
     * suggested trial if the trial is pending, and provide a new trial if the last suggested trial was completed.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /** Required. The number of suggestions requested. */
-  var suggestionCount: js.UndefOr[Double] = js.native
+  var suggestionCount: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1SuggestTrialsRequest {
   

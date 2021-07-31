@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,48 +13,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait LocalClientTime extends StObject {
   
   /**
     * Integer value representing the day of the month.
     */
-  var date: Double = js.native
+  var date: Double
   
   /**
     * Integer value representing the hour on a 24-hour clock.
     */
-  var hours: Double = js.native
+  var hours: Double
   
   /**
     * Integer value representing the milliseconds.
     */
-  var milliseconds: Double = js.native
+  var milliseconds: Double
   
   /**
     * Integer value representing the minutes.
     */
-  var minutes: Double = js.native
+  var minutes: Double
   
   /**
     * Integer value representing the month, beginning with 0 for January to 11 for December.
     */
-  var month: Double = js.native
+  var month: Double
   
   /**
     * Integer value representing the seconds.
     */
-  var seconds: Double = js.native
+  var seconds: Double
   
   /**
     * Integer value representing the number of minutes difference between the local time zone and UTC.
     */
-  var timezoneOffset: Double = js.native
+  var timezoneOffset: Double
   
   /**
     * Integer value representing the year.
     */
-  var year: Double = js.native
+  var year: Double
 }
 object LocalClientTime {
   

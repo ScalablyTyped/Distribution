@@ -2,16 +2,21 @@ package typings.winrtUwp.global.Windows.ApplicationModel
 
 import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult
+import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState
+import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus
 import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature
+import typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus
+import typings.winrtUwp.Windows.ApplicationModel.Store.ProductType
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
+import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.StorageFile
+import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides types and members for interacting with the Windows Store. You can use the members of this class to check the license state of the app and determine if it's a trial version or an active license. You can also check in-app features and enable in-app product purchases. This class also allows you to simulate these functions before you submit the app to the Windows Store. */
@@ -21,7 +26,8 @@ object Store {
   @JSGlobal("Windows.ApplicationModel.Store.CurrentApp")
   @js.native
   abstract class CurrentApp ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.CurrentApp
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.CurrentApp
   object CurrentApp {
     
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp")
@@ -41,18 +47,16 @@ object Store {
       * @return The advertising campaign ID for your app.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getAppPurchaseCampaignIdAsync")
-    @js.native
-    def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppPurchaseCampaignIdAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Requests all receipts for the purchase of the app and any in-app products. For examples of how receipt information can be used, see Using receipts to verify product purchases.
       * @return An XML-formatted string that contains all receipt information for the purchase of the app and any in-app products.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getAppReceiptAsync")
-    @js.native
-    def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getCustomerCollectionsIdAsync")
@@ -76,18 +80,16 @@ object Store {
       * @return An XML-formatted string that contains the receipt for the specified productId.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getProductReceiptAsync")
-    @js.native
-    def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Returns a list of purchased consumable in-app products that have not been reported to the Windows Store as fulfilled.
       * @return When the operation completes, a list of consumable in-app products not yet reported as fulfilled is returned ( UnfulfilledConsumable objects). Each item of this list provides the product ID, offer ID, and transaction ID associated with a product.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getUnfulfilledConsumablesAsync")
-    @js.native
-    def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    @scala.inline
+    def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /** Gets the license metadata for the current app. */
     /* static member */
@@ -110,9 +112,8 @@ object Store {
       * @return The apps' listing information. If the method fails, it returns an HRESULT error code.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.loadListingInformationAsync")
-    @js.native
-    def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = js.native
+    @scala.inline
+    def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the app listing information asynchronously, returning features and products in the ProductListings collection that match all supplied keywords. Implements the IAsyncInfo interface.
@@ -120,9 +121,8 @@ object Store {
       * @return The app's listing information, with ProductListings collection filtered by keywords. If the method fails, it returns an HRESULT error code. If no products or features are found that match all of the given keywords, the ProductListings collection will be empty.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.loadListingInformationByKeywordsAsync")
-    @js.native
-    def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = js.native
+    @scala.inline
+    def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByKeywordsAsync")(keywords.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the app listing information asynchronously, returning features and products in the ProductListings collection that match any of the given products IDs. Implements the IAsyncInfo interface.
@@ -130,9 +130,8 @@ object Store {
       * @return The app's listing information, with ProductListings collection filtered by product IDs. If the method fails, it returns an HRESULT error code. If no products or features are found that match the given product IDs, the ProductListings collection will be empty.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.loadListingInformationByProductIdsAsync")
-    @js.native
-    def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = js.native
+    @scala.inline
+    def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByProductIdsAsync")(productIds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Notifies the Windows Store that the purchase of a consumable is fulfilled and that the user has the right to access the content.
@@ -141,18 +140,16 @@ object Store {
       * @return A value that indicates the status of fulfillment for a consumable in-app product. Possible values are defined by the FulfillmentResult enumeration.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.reportConsumableFulfillmentAsync")
-    @js.native
-    def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = js.native
+    @scala.inline
+    def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportConsumableFulfillmentAsync")(productId.asInstanceOf[js.Any], transactionId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FulfillmentResult]]
     
     /**
       * Notifies the Windows Store that the application has fulfilled the in-app product. This product cannot be re-purchased until the app has confirmed fulfillment using this method.
       * @param productId The ID of the product that has been delivered to the user.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.reportProductFulfillment")
-    @js.native
-    def reportProductFulfillment(productId: String): Unit = js.native
+    @scala.inline
+    def reportProductFulfillment(productId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportProductFulfillment")(productId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Requests the purchase of a full app license.
@@ -160,9 +157,8 @@ object Store {
       * @return If the includeReceipt parameter is set to true, this string contains XML that represents all receipts for the app and any in-app purchases. If includeReceipt is set to false, this string is empty.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.requestAppPurchaseAsync")
-    @js.native
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Requests the purchase of an in-app product. Additionally, calling this method displays the UI that is used to complete the transaction via the Windows Store.
@@ -170,9 +166,8 @@ object Store {
       * @return The results of the in-app product purchase request.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.requestProductPurchaseAsync")
-    @js.native
-    def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = js.native
+    @scala.inline
+    def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
     /**
       * Requests the purchase of an in-app product. Additionally, calling this method displays the UI that is used to complete the transaction via the Windows Store.
       * @param productId Specifies the id of the in-app product.
@@ -180,9 +175,8 @@ object Store {
       * @return A string providing in-app transaction details for the provided productId. If includeReceipt is set true, the returned string will include a full receipt xml.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.requestProductPurchaseAsync")
-    @js.native
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     /**
       * Requests the purchase of an in-app product. Additionally, calling this method displays the UI that is used to complete the transaction via the Windows Store.
       * @param productId Specifies the id of the in-app product.
@@ -191,20 +185,20 @@ object Store {
       * @return The results of the in-app product purchase request.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.requestProductPurchaseAsync")
-    @js.native
+    @scala.inline
     def requestProductPurchaseAsync(
       productId: String,
       offerId: String,
       displayProperties: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties
-    ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = js.native
+    ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], offerId.asInstanceOf[js.Any], displayProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
   }
   
   /** Defines methods and properties used to instantiate an object that you can use to get simulated license info during testing. */
   @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
   @js.native
   abstract class CurrentAppSimulator ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.CurrentAppSimulator
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.CurrentAppSimulator
   object CurrentAppSimulator {
     
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
@@ -224,18 +218,16 @@ object Store {
       * @return The advertising campaign ID for your app.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.getAppPurchaseCampaignIdAsync")
-    @js.native
-    def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getAppPurchaseCampaignIdAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppPurchaseCampaignIdAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Creates the async operation that the user can use to simulate requesting all receipts for this app and any in-app product purchases. For examples of how receipt information can be used, see Using receipts to verify product purchases.
       * @return An XML-formatted string that contains all receipts for this app and any in-app product purchases.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.getAppReceiptAsync")
-    @js.native
-    def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getAppReceiptAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Creates the async operation that the user can use to simulate requesting the receipt for the specified productId. For examples of how receipt information can be used, see Using receipts to verify product purchases.
@@ -243,18 +235,16 @@ object Store {
       * @return An XML-formatted string that contains the receipt for the specified productId.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.getProductReceiptAsync")
-    @js.native
-    def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getProductReceiptAsync(productId: String): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Returns a list of purchased consumable in-app products that have not been fulfilled locally.
       * @return When the operation completes, a list of unfulfilled consumable in-app products ( UnfulfilledConsumable objects) is returned. Each item in this list provides the product ID, offer ID, and transaction ID associated with a product.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.getUnfulfilledConsumablesAsync")
-    @js.native
-    def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    @scala.inline
+    def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /** Gets the simulated license metadata for the current app as provided by the simulation. */
     /* static member */
@@ -277,9 +267,8 @@ object Store {
       * @return The app listing information as defined by the simulation. If the method fails, it returns an HRESULT error code.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.loadListingInformationAsync")
-    @js.native
-    def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = js.native
+    @scala.inline
+    def loadListingInformationAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the simulated app listing information asynchronously, returning in-app products in the ProductListings collection that match all supplied keywords. Implements the IAsyncInfo interface.
@@ -287,9 +276,8 @@ object Store {
       * @return The simulated app listing information, with ProductListings collection filtered by keywords. If the method fails, it returns an HRESULT error code. If no in-app products are found that match all of the given keywords, the ProductListings collection will be empty.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.loadListingInformationByKeywordsAsync")
-    @js.native
-    def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = js.native
+    @scala.inline
+    def loadListingInformationByKeywordsAsync(keywords: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByKeywordsAsync")(keywords.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Windows Phone only. Loads the simulated app listing information asynchronously, returning available in-app products in the ProductListings collection that match any of the given products IDs. This method implements the IAsyncInfo interface.
@@ -297,9 +285,8 @@ object Store {
       * @return The simulated app listing information, with ProductListings collection filtered by product IDs. If the method fails, it returns an HRESULT error code. If no in-app products are found that match the given product IDs, the ProductListings collection will be empty.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.loadListingInformationByProductIdsAsync")
-    @js.native
-    def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = js.native
+    @scala.inline
+    def loadListingInformationByProductIdsAsync(productIds: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationByProductIdsAsync")(productIds.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation]]
     
     /**
       * Reloads the simulator using a StorageFile containing the WindowsStoreProxy.xml file.
@@ -307,9 +294,8 @@ object Store {
       * @return The async operation that reloads the simulator.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.reloadSimulatorAsync")
-    @js.native
-    def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IPromiseWithIAsyncAction = js.native
+    @scala.inline
+    def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSimulatorAsync")(simulatorSettingsFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Simulates notifying the Windows Store that the purchase of a consumable in-app product is fulfilled and that the user has the right to access the content.
@@ -318,9 +304,8 @@ object Store {
       * @return A value that indicates the status of fulfillment for a simulated consumable in-app product purchase.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.reportConsumableFulfillmentAsync")
-    @js.native
-    def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = js.native
+    @scala.inline
+    def reportConsumableFulfillmentAsync(productId: String, transactionId: String): IPromiseWithIAsyncOperation[FulfillmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportConsumableFulfillmentAsync")(productId.asInstanceOf[js.Any], transactionId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FulfillmentResult]]
     
     /**
       * Creates the async operation that simulates a user request to buy a full license for the current app.
@@ -328,9 +313,8 @@ object Store {
       * @return If the includeReceipt parameter is set to true, this string contains XML that represents all receipts for the app and any in-app product purchases. If includeReceipt is set to false, this string is empty.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.requestAppPurchaseAsync")
-    @js.native
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def requestAppPurchaseAsync(includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Creates the async operation that displays the UI that is used to simulate the purchase of in-app product from the Windows Store.
@@ -338,9 +322,8 @@ object Store {
       * @return A PurchaseResults object containing transaction details for the provided productId.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.requestProductPurchaseAsync")
-    @js.native
-    def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = js.native
+    @scala.inline
+    def requestProductPurchaseAsync(productId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
     /**
       * Creates the async operation that displays the UI that is used to simulate the purchase of an in-app product from the Windows Store.
       * @param productId Specifies the id, as defined by the simulation, of the in-app product to buy.
@@ -348,9 +331,8 @@ object Store {
       * @return A string providing in-app product purchase details for the provided productId. If includeReceipt is set true, the returned string will include a full receipt xml.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.requestProductPurchaseAsync")
-    @js.native
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     /**
       * Creates the async operation that displays the UI that is used to simulate the purchase of an in-app product from the Windows Store.
       * @param productId The product ID used for listing in the Windows Store.
@@ -359,13 +341,12 @@ object Store {
       * @return The results of the in-app product purchase.
       */
     /* static member */
-    @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.requestProductPurchaseAsync")
-    @js.native
+    @scala.inline
     def requestProductPurchaseAsync(
       productId: String,
       offerId: String,
       displayProperties: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties
-    ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = js.native
+    ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], offerId.asInstanceOf[js.Any], displayProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults]]
   }
   
   /** Defines values used to indicate fulfillment status for a consumable in-app product. */
@@ -374,30 +355,72 @@ object Store {
   object FulfillmentResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult & Double] = js.native
     
-    /* 1 */ val nothingToFulfill: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.nothingToFulfill with Double = js.native
+    /* 1 */ val nothingToFulfill: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.nothingToFulfill & Double = js.native
     
-    /* 2 */ val purchasePending: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchasePending with Double = js.native
+    /* 2 */ val purchasePending: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchasePending & Double = js.native
     
-    /* 3 */ val purchaseReverted: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchaseReverted with Double = js.native
+    /* 3 */ val purchaseReverted: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchaseReverted & Double = js.native
     
-    /* 4 */ val serverError: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.serverError with Double = js.native
+    /* 4 */ val serverError: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.serverError & Double = js.native
     
-    /* 0 */ val succeeded: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.succeeded with Double = js.native
+    /* 0 */ val succeeded: typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult.succeeded & Double = js.native
   }
   
   /** Provides access to the current app's license metadata. */
   @JSGlobal("Windows.ApplicationModel.Store.LicenseInformation")
   @js.native
   abstract class LicenseInformation ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.LicenseInformation
   
   /** Provides the listing info that describes the app in the Windows Store. */
   @JSGlobal("Windows.ApplicationModel.Store.ListingInformation")
   @js.native
   abstract class ListingInformation ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.ListingInformation {
+    
+    /** Gets the age rating for the app. */
+    /* CompleteClass */
+    var ageRating: Double = js.native
+    
+    /* CompleteClass */
+    var currencyCode: js.Any = js.native
+    
+    /* unmapped type */
+    /** Gets the country code associated with the user's location, such as US or CA, that is used to identify their market for transactions in the current session. */
+    /* CompleteClass */
+    var currentMarket: String = js.native
+    
+    /** Gets the app's description in the current market. */
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /* CompleteClass */
+    var formattedBasePrice: js.Any = js.native
+    
+    /* unmapped type */
+    /** Gets the app's purchase price formatted for the current market and currency. */
+    /* CompleteClass */
+    var formattedPrice: String = js.native
+    
+    /* CompleteClass */
+    var isOnSale: js.Any = js.native
+    
+    /* unmapped type */
+    /** Gets the app's name in the current market. */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** Gets information about in-app products available for purchase. */
+    /* CompleteClass */
+    var productListings: IMapView[String, typings.winrtUwp.Windows.ApplicationModel.Store.ProductListing] = js.native
+    
+    /* CompleteClass */
+    var saleEndDate: js.Any = js.native
+  }
   
   /** Provides the following APIs that are currently accessible only via restricted or private capabilities. */
   object Preview {
@@ -409,20 +432,28 @@ object Store {
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem")
       @js.native
       abstract class AppInstallItem ()
-        extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem
+        extends StObject
+           with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem
       
       /** Provides members for programmatically installing apps, including the ability to start an app install and get a list of app installs currently in progress. */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager")
       @js.native
       /** Creates and initializes a new instance of the AppInstallManager class */
       class AppInstallManager ()
-        extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager
+        extends StObject
+           with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager
       
       /** Provides data for the ItemCompleted and ItemStatusChanged events. */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs")
       @js.native
       abstract class AppInstallManagerItemEventArgs ()
-        extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs
+        extends StObject
+           with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs {
+        
+        /** Gets an object that describes the app that has finished installing (for the ItemCompleted event) or whose installation status has changed (for the ItemStatusChanged event). */
+        /* CompleteClass */
+        var item: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem = js.native
+      }
       
       /** Defines the app install states that are returned by the InstallState property of the AppInstallStatus class. */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState")
@@ -431,43 +462,65 @@ object Store {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[
-                typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState with Double
+                typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState & Double
               ] = js.native
         
-        /* 2 */ val acquiringLicense: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.acquiringLicense with Double = js.native
+        /* 2 */ val acquiringLicense: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.acquiringLicense & Double = js.native
         
-        /* 7 */ val canceled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.canceled with Double = js.native
+        /* 7 */ val canceled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.canceled & Double = js.native
         
-        /* 6 */ val completed: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.completed with Double = js.native
+        /* 6 */ val completed: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.completed & Double = js.native
         
-        /* 3 */ val downloading: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.downloading with Double = js.native
+        /* 3 */ val downloading: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.downloading & Double = js.native
         
-        /* 9 */ val error: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.error with Double = js.native
+        /* 9 */ val error: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.error & Double = js.native
         
-        /* 5 */ val installing: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.installing with Double = js.native
+        /* 5 */ val installing: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.installing & Double = js.native
         
-        /* 8 */ val paused: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.paused with Double = js.native
+        /* 8 */ val paused: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.paused & Double = js.native
         
-        /* 10 */ val pausedLowBattery: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedLowBattery with Double = js.native
+        /* 10 */ val pausedLowBattery: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedLowBattery & Double = js.native
         
-        /* 11 */ val pausedWiFiRecommended: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedWiFiRecommended with Double = js.native
+        /* 11 */ val pausedWiFiRecommended: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedWiFiRecommended & Double = js.native
         
-        /* 12 */ val pausedWiFiRequired: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedWiFiRequired with Double = js.native
+        /* 12 */ val pausedWiFiRequired: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pausedWiFiRequired & Double = js.native
         
-        /* 0 */ val pending: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pending with Double = js.native
+        /* 0 */ val pending: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.pending & Double = js.native
         
-        /* 13 */ val readyToDownload: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.readyToDownload with Double = js.native
+        /* 13 */ val readyToDownload: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.readyToDownload & Double = js.native
         
-        /* 4 */ val restoringData: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.restoringData with Double = js.native
+        /* 4 */ val restoringData: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.restoringData & Double = js.native
         
-        /* 1 */ val starting: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.starting with Double = js.native
+        /* 1 */ val starting: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState.starting & Double = js.native
       }
       
       /** Describes the status of an app that is in the installation queue. */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus")
       @js.native
       abstract class AppInstallStatus ()
-        extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus
+        extends StObject
+           with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus {
+        
+        /** Gets the number of bytes that have been downloaded for the current app. */
+        /* CompleteClass */
+        var bytesDownloaded: Double = js.native
+        
+        /** Gets the download size in bytes for the current app. */
+        /* CompleteClass */
+        var downloadSizeInBytes: Double = js.native
+        
+        /** Gets the error code for an app that has encountered an installation failure. */
+        /* CompleteClass */
+        var errorCode: WinRTError = js.native
+        
+        /** Gets the installation state of the current app. */
+        /* CompleteClass */
+        var installState: AppInstallState = js.native
+        
+        /** Gets the completion percentage for the installation of the current app. */
+        /* CompleteClass */
+        var percentComplete: Double = js.native
+      }
       
       /** Defines the different app install types that are returned by the InstallType property of the AppInstallItem class. */
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType")
@@ -476,14 +529,14 @@ object Store {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[
-                typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType with Double
+                typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType & Double
               ] = js.native
         
-        /* 0 */ val install: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.install with Double = js.native
+        /* 0 */ val install: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.install & Double = js.native
         
-        /* 2 */ val repair: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.repair with Double = js.native
+        /* 2 */ val repair: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.repair & Double = js.native
         
-        /* 1 */ val update: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.update with Double = js.native
+        /* 1 */ val update: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType.update & Double = js.native
       }
       
       /** Defines the automatic app update setting values that can be returned by the AutoUpdateSetting property of the AppInstallManager class. */
@@ -493,16 +546,16 @@ object Store {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[
-                typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting with Double
+                typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting & Double
               ] = js.native
         
-        /* 0 */ val disabled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.disabled with Double = js.native
+        /* 0 */ val disabled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.disabled & Double = js.native
         
-        /* 2 */ val disabledByPolicy: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.disabledByPolicy with Double = js.native
+        /* 2 */ val disabledByPolicy: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.disabledByPolicy & Double = js.native
         
-        /* 1 */ val enabled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.enabled with Double = js.native
+        /* 1 */ val enabled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.enabled & Double = js.native
         
-        /* 3 */ val enabledByPolicy: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.enabledByPolicy with Double = js.native
+        /* 3 */ val enabledByPolicy: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting.enabledByPolicy & Double = js.native
       }
     }
     
@@ -510,7 +563,8 @@ object Store {
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration")
     @js.native
     abstract class StoreConfiguration ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreConfiguration
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreConfiguration
     object StoreConfiguration {
       
       @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration")
@@ -523,9 +577,8 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns a list of hardware features that are supported on the current device. If you use Asynchronous programming, the result type is a read-only list/vector of StoreSystemFeature items. (You can use APIs of IVectorView<StoreSystemFeature> for C++ or JavaScript, APIs of IReadOnlyList<StoreSystemFeature> for .NET.)
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.filterUnsupportedSystemFeaturesAsync")
-      @js.native
-      def filterUnsupportedSystemFeaturesAsync(systemFeatures: IIterable[StoreSystemFeature]): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+      @scala.inline
+      def filterUnsupportedSystemFeaturesAsync(systemFeatures: IIterable[StoreSystemFeature]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterUnsupportedSystemFeaturesAsync")(systemFeatures.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
       
       /** Gets hardware manufacturer information for the current device. */
       /* static member */
@@ -541,9 +594,8 @@ object Store {
         * @return True if the user account specified by webAccountId is the same account that is signed in to the Windows Store; otherwise false.
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.isStoreWebAccountId")
-      @js.native
-      def isStoreWebAccountId(webAccountId: String): Boolean = js.native
+      @scala.inline
+      def isStoreWebAccountId(webAccountId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStoreWebAccountId")(webAccountId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /** Gets or sets a value that indicates whether the Windows Store prompts the user before making a purchase. */
       /* static member */
@@ -560,22 +612,20 @@ object Store {
         * @param updateDownloadLimitInMegabytes The maximum OS update download size defined by the mobile operator, in MB.
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.setMobileOperatorConfiguration")
-      @js.native
+      @scala.inline
       def setMobileOperatorConfiguration(
         mobileOperatorId: String,
         appDownloadLimitInMegabytes: Double,
         updateDownloadLimitInMegabytes: Double
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMobileOperatorConfiguration")(mobileOperatorId.asInstanceOf[js.Any], appDownloadLimitInMegabytes.asInstanceOf[js.Any], updateDownloadLimitInMegabytes.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Sets the ID of the user account that is signed in to the Windows Store so that other apps can query against this ID.
         * @param webAccountId The user account ID (typically obtained from the WebAccount.Id property) that is signed in to the Windows Store.
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.setStoreWebAccountId")
-      @js.native
-      def setStoreWebAccountId(webAccountId: String): Unit = js.native
+      @scala.inline
+      def setStoreWebAccountId(webAccountId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStoreWebAccountId")(webAccountId.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Configures miscellaneous system information for the device.
@@ -585,37 +635,58 @@ object Store {
         * @param catalogHardwareDescriptor A descriptor string that specifies the hardware components supported by the device.
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration.setSystemConfiguration")
-      @js.native
+      @scala.inline
       def setSystemConfiguration(
         catalogHardwareManufacturerId: String,
         catalogStoreContentModifierId: String,
         systemConfigurationExpiration: Date,
         catalogHardwareDescriptor: String
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSystemConfiguration")(catalogHardwareManufacturerId.asInstanceOf[js.Any], catalogStoreContentModifierId.asInstanceOf[js.Any], systemConfigurationExpiration.asInstanceOf[js.Any], catalogHardwareDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /** Provides information about the manufacturer for the current device. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo")
     @js.native
     abstract class StoreHardwareManufacturerInfo ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo {
+      
+      /** Gets the hardware manufacture ID for the current device. */
+      /* CompleteClass */
+      var hardwareManufacturerId: String = js.native
+      
+      /** Gets the name of the hardware manufacturer for the current device. */
+      /* CompleteClass */
+      var manufacturerName: String = js.native
+      
+      /** Gets the model name for the current device. */
+      /* CompleteClass */
+      var modelName: String = js.native
+      
+      /** Gets the ID of the Windows Store content modifier. */
+      /* CompleteClass */
+      var storeContentModifierId: String = js.native
+    }
     
     /** Defines static methods for retrieving the in-app product SKUs available for the current app and requesting the purchase of an in-app product SKU for the app. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview")
     @js.native
     abstract class StorePreview ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreview
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreview
     object StorePreview {
+      
+      @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Retrieves the in-app products available for the current app asynchronously, including the available SKUs for each product.
         * @return An asynchronous operation that, on successful completion, returns the collection of in-app products for the current app (including the available SKUs for each product). If you use Asynchronous programming, the result type is a read-only list/vector of StorePreviewProductInfo items. (You can use APIs of IVectorView<StorePreviewProductInfo> for C++ or JavaScript, APIs of IReadOnlyList<StorePreviewProductInfo> for .NET.)
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview.loadAddOnProductInfosAsync")
-      @js.native
-      def loadAddOnProductInfosAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+      @scala.inline
+      def loadAddOnProductInfosAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAddOnProductInfosAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
       
       /**
         * Requests the purchase of a SKU for an in-app product that is associated with the current app. Calling this method displays the UI that is used to complete the transaction via the Windows Store.
@@ -624,18 +695,41 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns a StorePreviewPurchaseResults that contains the results of the in-app product purchase request.
         */
       /* static member */
-      @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview.requestProductPurchaseByProductIdAndSkuIdAsync")
-      @js.native
+      @scala.inline
       def requestProductPurchaseByProductIdAndSkuIdAsync(productId: String, skuId: String): IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults
-          ] = js.native
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseByProductIdAndSkuIdAsync")(productId.asInstanceOf[js.Any], skuId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[
+            typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults
+          ]]
     }
     
     /** Provides information about an in-app product, including details about available SKUs. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo")
     @js.native
     abstract class StorePreviewProductInfo ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo {
+      
+      /** Gets the description of the in-app product. */
+      /* CompleteClass */
+      var description: String = js.native
+      
+      /** Gets the ID of the in-app product. */
+      /* CompleteClass */
+      var productId: String = js.native
+      
+      /** Gets the type of the in-app product. */
+      /* CompleteClass */
+      var productType: String = js.native
+      
+      /** Gets information about the available SKUs for the in-app product. */
+      /* CompleteClass */
+      var skuInfoList: IVectorView[typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo] = js.native
+      
+      /** Gets the name of the in-app product that is displayed to customers. */
+      /* CompleteClass */
+      var title: String = js.native
+    }
     
     /** Defines values that are used to indicate the transaction status when purchasing an in-app product SKU by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus")
@@ -644,29 +738,73 @@ object Store {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
-            typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus with Double
+            typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus & Double
           ] = js.native
       
-      /* 1 */ val alreadyPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.alreadyPurchased with Double = js.native
+      /* 1 */ val alreadyPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.alreadyPurchased & Double = js.native
       
-      /* 2 */ val notFulfilled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.notFulfilled with Double = js.native
+      /* 2 */ val notFulfilled: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.notFulfilled & Double = js.native
       
-      /* 3 */ val notPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.notPurchased with Double = js.native
+      /* 3 */ val notPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.notPurchased & Double = js.native
       
-      /* 0 */ val succeeded: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.succeeded with Double = js.native
+      /* 0 */ val succeeded: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus.succeeded & Double = js.native
     }
     
     /** Contains information about the results of a purchase transaction for an in-app product SKU that was purchased by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults")
     @js.native
     abstract class StorePreviewPurchaseResults ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults {
+      
+      /** Gets the current state of the purchase transaction for an in-app product SKU that was purchased by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
+      /* CompleteClass */
+      var productPurchaseStatus: StorePreviewProductPurchaseStatus = js.native
+    }
     
     /** Provides information about the available SKUs for an in-app product. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo")
     @js.native
     abstract class StorePreviewSkuInfo ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo
+      extends StObject
+         with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo {
+      
+      /** Gets the currency code for the current market. */
+      /* CompleteClass */
+      var currencyCode: String = js.native
+      
+      /** Gets custom developer data for the current SKU. */
+      /* CompleteClass */
+      var customDeveloperData: String = js.native
+      
+      /** Gets the description for the current SKU. */
+      /* CompleteClass */
+      var description: String = js.native
+      
+      /** Gets extended data for the current SKU. */
+      /* CompleteClass */
+      var extendedData: String = js.native
+      
+      /** Gets the current SKU's purchase price with the appropriate formatting for the current market. */
+      /* CompleteClass */
+      var formattedListPrice: String = js.native
+      
+      /** Gets the ID of the product that this SKU is associated with. */
+      /* CompleteClass */
+      var productId: String = js.native
+      
+      /** Gets the ID of this SKU. */
+      /* CompleteClass */
+      var skuId: String = js.native
+      
+      /** Gets a string that specifies the type of the in-app product SKU. */
+      /* CompleteClass */
+      var skuType: String = js.native
+      
+      /** Gets the name of the in-app product SKU that is displayed to customers. */
+      /* CompleteClass */
+      var title: String = js.native
+    }
     
     /** Defines values that represent hardware features that can be queried for the current device by using the FilterUnsupportedSystemFeaturesAsync method. */
     @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreSystemFeature")
@@ -675,56 +813,56 @@ object Store {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
-            typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature with Double
+            typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature & Double
           ] = js.native
       
-      /* 2 */ val architectureArm: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureArm with Double = js.native
+      /* 2 */ val architectureArm: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureArm & Double = js.native
       
-      /* 1 */ val architectureX64: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX64 with Double = js.native
+      /* 1 */ val architectureX64: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX64 & Double = js.native
       
-      /* 0 */ val architectureX86: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX86 with Double = js.native
+      /* 0 */ val architectureX86: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX86 & Double = js.native
       
-      /* 12 */ val cameraFront: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraFront with Double = js.native
+      /* 12 */ val cameraFront: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraFront & Double = js.native
       
-      /* 13 */ val cameraRear: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraRear with Double = js.native
+      /* 13 */ val cameraRear: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraRear & Double = js.native
       
-      /* 6 */ val d3D12HardwareFL11: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL11 with Double = js.native
+      /* 6 */ val d3D12HardwareFL11: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL11 & Double = js.native
       
-      /* 7 */ val d3D12HardwareFL12: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL12 with Double = js.native
+      /* 7 */ val d3D12HardwareFL12: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL12 & Double = js.native
       
-      /* 4 */ val directX10: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX10 with Double = js.native
+      /* 4 */ val directX10: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX10 & Double = js.native
       
-      /* 5 */ val directX11: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX11 with Double = js.native
+      /* 5 */ val directX11: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX11 & Double = js.native
       
-      /* 3 */ val directX9: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX9 with Double = js.native
+      /* 3 */ val directX9: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX9 & Double = js.native
       
-      /* 14 */ val gyroscope: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.gyroscope with Double = js.native
+      /* 14 */ val gyroscope: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.gyroscope & Double = js.native
       
-      /* 15 */ val hover: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.hover with Double = js.native
+      /* 15 */ val hover: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.hover & Double = js.native
       
-      /* 16 */ val magnetometer: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.magnetometer with Double = js.native
+      /* 16 */ val magnetometer: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.magnetometer & Double = js.native
       
-      /* 10 */ val memory1GB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory1GB with Double = js.native
+      /* 10 */ val memory1GB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory1GB & Double = js.native
       
-      /* 11 */ val memory2GB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory2GB with Double = js.native
+      /* 11 */ val memory2GB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory2GB & Double = js.native
       
-      /* 8 */ val memory300MB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory300MB with Double = js.native
+      /* 8 */ val memory300MB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory300MB & Double = js.native
       
-      /* 9 */ val memory750MB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory750MB with Double = js.native
+      /* 9 */ val memory750MB: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory750MB & Double = js.native
       
-      /* 17 */ val nfc: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.nfc with Double = js.native
+      /* 17 */ val nfc: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.nfc & Double = js.native
       
-      /* 18 */ val resolution720P: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolution720P with Double = js.native
+      /* 18 */ val resolution720P: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolution720P & Double = js.native
       
-      /* 19 */ val resolutionWvga: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvga with Double = js.native
+      /* 19 */ val resolutionWvga: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvga & Double = js.native
       
-      /* 20 */ val resolutionWvgaOr720P: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOr720P with Double = js.native
+      /* 20 */ val resolutionWvgaOr720P: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOr720P & Double = js.native
       
-      /* 22 */ val resolutionWvgaOrWxga: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOrWxga with Double = js.native
+      /* 22 */ val resolutionWvgaOrWxga: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOrWxga & Double = js.native
       
-      /* 21 */ val resolutionWxga: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxga with Double = js.native
+      /* 21 */ val resolutionWxga: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxga & Double = js.native
       
-      /* 23 */ val resolutionWxgaOr720P: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxgaOr720P with Double = js.native
+      /* 23 */ val resolutionWxgaOr720P: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxgaOr720P & Double = js.native
     }
   }
   
@@ -732,25 +870,106 @@ object Store {
   @JSGlobal("Windows.ApplicationModel.Store.ProductLicense")
   @js.native
   abstract class ProductLicense ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.ProductLicense
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.ProductLicense {
+    
+    /** Gets the current expiration date and time of the in-app product license. */
+    /* CompleteClass */
+    var expirationDate: Date = js.native
+    
+    /** Indicates if the in-app product license is currently active. */
+    /* CompleteClass */
+    var isActive: Boolean = js.native
+    
+    /** Indicates if the in-app product is consumable. A consumable product is a product that can be purchased, used, and purchased again. */
+    /* CompleteClass */
+    var isConsumable: Boolean = js.native
+    
+    /** Gets the ID of an in-app product. This ID is used by the app to get info about the product or feature that is enabled when the customer buys it through an in-app purchase. */
+    /* CompleteClass */
+    var productId: String = js.native
+  }
   
   /** Provides localized information that details an in-app product. */
   @JSGlobal("Windows.ApplicationModel.Store.ProductListing")
   @js.native
   abstract class ProductListing ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.ProductListing
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.ProductListing {
+    
+    /* CompleteClass */
+    var currencyCode: js.Any = js.native
+    
+    /* unmapped type */
+    /** Gets the description for the in-app product. */
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /* CompleteClass */
+    var formattedBasePrice: js.Any = js.native
+    
+    /* unmapped type */
+    /** Gets the purchase price for the in-app product with the appropriate formatting for the current market. */
+    /* CompleteClass */
+    var formattedPrice: String = js.native
+    
+    /** Gets the URI of the image associated with the in-app product. */
+    /* CompleteClass */
+    var imageUri: Uri = js.native
+    
+    /* CompleteClass */
+    var isOnSale: js.Any = js.native
+    
+    /* unmapped type */
+    /** Gets the list of keywords associated with the in-app product. These keywords are useful for filtering product lists by keyword, for example, when calling LoadListingInformationByKeywordsAsync . */
+    /* CompleteClass */
+    var keywords: IIterable[String] = js.native
+    
+    /** Gets the descriptive name of the in-app product that is displayed customers in the current market. */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** Gets the in-app product ID. */
+    /* CompleteClass */
+    var productId: String = js.native
+    
+    /** Gets the type of this in-app product. Possible values are defined by ProductType . */
+    /* CompleteClass */
+    var productType: ProductType = js.native
+    
+    /** Gets the end date of the sale period for the in-app product. */
+    /* CompleteClass */
+    var saleEndDate: Date = js.native
+    
+    /** Gets the tag string that contains custom information about an in-app product. */
+    /* CompleteClass */
+    var tag: String = js.native
+  }
   
   /** Used to provide the product name that is displayed to the user at time of purchase. */
   @JSGlobal("Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties")
   @js.native
   /** Creates an instance of ProductPurchaseDisplayProperties . */
   class ProductPurchaseDisplayProperties ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties {
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties {
     /**
       * Creates an instance of ProductPurchaseDisplayProperties that includes the specified product name to display to the user.
       * @param name The product name displayed to the user.
       */
     def this(name: String) = this()
+    
+    /** Windows Phone only. This is an internal product description. */
+    /* CompleteClass */
+    var description: String = js.native
+    
+    /** Windows Phone only. Gets or sets the location of an image used to represent the product at time of purchase. */
+    /* CompleteClass */
+    var image: Uri = js.native
+    
+    /** Gets or sets the product name that is displayed to the user at time of purchase. */
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /** Defines values used to indicate the transaction status when purchasing an in-app product. */
@@ -759,17 +978,15 @@ object Store {
   object ProductPurchaseStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus & Double] = js.native
     
-    /* 1 */ val alreadyPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.alreadyPurchased with Double = js.native
+    /* 1 */ val alreadyPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.alreadyPurchased & Double = js.native
     
-    /* 2 */ val notFulfilled: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notFulfilled with Double = js.native
+    /* 2 */ val notFulfilled: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notFulfilled & Double = js.native
     
-    /* 3 */ val notPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notPurchased with Double = js.native
+    /* 3 */ val notPurchased: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notPurchased & Double = js.native
     
-    /* 0 */ val succeeded: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.succeeded with Double = js.native
+    /* 0 */ val succeeded: typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.succeeded & Double = js.native
   }
   
   /** Specifies the product type for an in-app product. */
@@ -778,24 +995,56 @@ object Store {
   object ProductType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Store.ProductType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Store.ProductType & Double] = js.native
     
-    /* 2 */ val consumable: typings.winrtUwp.Windows.ApplicationModel.Store.ProductType.consumable with Double = js.native
+    /* 2 */ val consumable: typings.winrtUwp.Windows.ApplicationModel.Store.ProductType.consumable & Double = js.native
     
-    /* 1 */ val durable: typings.winrtUwp.Windows.ApplicationModel.Store.ProductType.durable with Double = js.native
+    /* 1 */ val durable: typings.winrtUwp.Windows.ApplicationModel.Store.ProductType.durable & Double = js.native
     
-    /* 0 */ val unknown: typings.winrtUwp.Windows.ApplicationModel.Store.ProductType.unknown with Double = js.native
+    /* 0 */ val unknown: typings.winrtUwp.Windows.ApplicationModel.Store.ProductType.unknown & Double = js.native
   }
   
   /** Contains information detailing the results of an in-app product purchase transaction. */
   @JSGlobal("Windows.ApplicationModel.Store.PurchaseResults")
   @js.native
   abstract class PurchaseResults ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.PurchaseResults {
+    
+    /** A unique ID used to identify a specific in-app product within a large catalog. */
+    /* CompleteClass */
+    var offerId: String = js.native
+    
+    /** A full receipt that provides a transaction history for the purchase of an in-app product */
+    /* CompleteClass */
+    var receiptXml: String = js.native
+    
+    /** The current state of the purchase transaction for an in-app product. */
+    /* CompleteClass */
+    var status: ProductPurchaseStatus = js.native
+    
+    /** A unique transaction ID associated with the purchase of a consumable in-app product. */
+    /* CompleteClass */
+    var transactionId: String = js.native
+  }
   
   /** Contains purchase and product information for an unfulfilled consumable in-app product. */
   @JSGlobal("Windows.ApplicationModel.Store.UnfulfilledConsumable")
   @js.native
   abstract class UnfulfilledConsumable ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.UnfulfilledConsumable
+    extends StObject
+       with typings.winrtUwp.Windows.ApplicationModel.Store.UnfulfilledConsumable {
+    
+    /** A unique ID used to identify a consumable in-app product within a large purchase catalog. */
+    /* CompleteClass */
+    var offerId: String = js.native
+    
+    /** A unique ID used to identify a consumable in-app product. This ID is used by the app to get info about the product or feature that is enabled when the customer buys it through an in-app purchase. */
+    /* CompleteClass */
+    var productId: String = js.native
+    
+    /** A unique ID used to identify the transaction that included the purchase of a consumable in-app product. */
+    /* CompleteClass */
+    var transactionId: String = js.native
+  }
 }

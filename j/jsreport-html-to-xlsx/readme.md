@@ -10,9 +10,9 @@ jsreport recipe capable of converting html into excel
 | ------------------ | :-------------: |
 | Full name          | jsreport-html-to-xlsx |
 | Keywords           | jsreport, xlsx |
-| # releases         | 9 |
+| # releases         | 11 |
 | # dependents       | 8 |
-| # downloads        | 132181 |
+| # downloads        | 101649 |
 | # stars            | 0 |
 
 ## Links

@@ -3,79 +3,77 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3LineItem extends StObject {
   
   /**
     * Line item description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Follow up actions at line item.
     */
-  var followUpActions: js.UndefOr[js.Array[GoogleActionsOrdersV3Action]] = js.native
+  var followUpActions: js.UndefOr[js.Array[GoogleActionsOrdersV3Action]] = js.undefined
   
   /**
     * Required: Merchant assigned identifier for line item.
     * Used for identifying existing line item in applying partial updates.
     * Max allowed length is 64 chars.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Small image associated with this item, if any.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * Name of line item as displayed on the receipt.
     * Max allowed length is 100 chars.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Additional notes applicable to this particular line item, for example
     * cancellation policy.
     */
-  var notes: js.UndefOr[js.Array[String]] = js.native
+  var notes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Line item level price and adjustments.
     */
-  var priceAttributes: js.UndefOr[js.Array[GoogleActionsOrdersV3PriceAttribute]] = js.native
+  var priceAttributes: js.UndefOr[js.Array[GoogleActionsOrdersV3PriceAttribute]] = js.undefined
   
   /**
     * The provider of the particular line item, if different from the overall
     * order. Example: Expedia Order with line item provider ANA.
     */
-  var provider: js.UndefOr[GoogleActionsOrdersV3Merchant] = js.native
+  var provider: js.UndefOr[GoogleActionsOrdersV3Merchant] = js.undefined
   
   /**
     * Purchase orders like goods, food etc.
     */
-  var purchase: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension] = js.native
+  var purchase: js.UndefOr[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension] = js.undefined
   
   /**
     * Line item level customers, this could be different from Order level buyer.
     * Example: User X made restaurant reservation under name of user Y.
     */
-  var recipients: js.UndefOr[js.Array[GoogleActionsOrdersV3UserInfo]] = js.native
+  var recipients: js.UndefOr[js.Array[GoogleActionsOrdersV3UserInfo]] = js.undefined
   
   /**
     * Reservation orders like restaurant, haircut etc.
     */
-  var reservation: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] = js.native
+  var reservation: js.UndefOr[GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] = js.undefined
   
   /**
     * Deprecated. Use vertical level status instead. For example, for purchases,
     * use PurchaseOrderExtension.status.
     * User visible label for the state of this line item.
     */
-  var userVisibleStateLabel: js.UndefOr[String] = js.native
+  var userVisibleStateLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: Use verticals instead.
@@ -86,7 +84,7 @@ trait GoogleActionsOrdersV3LineItem extends StObject {
     * google.actions.orders.v3.verticals.reservation.ReservationItemExtension
     * google.actions.orders.v3.verticals.ticket.TicketItemExtension
     */
-  var vertical: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var vertical: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object GoogleActionsOrdersV3LineItem {
   
@@ -184,7 +182,7 @@ object GoogleActionsOrdersV3LineItem {
     def setUserVisibleStateLabelUndefined: Self = StObject.set(x, "userVisibleStateLabel", js.undefined)
     
     @scala.inline
-    def setVertical(value: ApiClientObjectMap[_]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)

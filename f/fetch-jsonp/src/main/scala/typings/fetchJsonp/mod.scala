@@ -4,24 +4,24 @@ import typings.std.RequestInfo
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fetch-jsonp", JSImport.Namespace)
-  @js.native
-  def apply(url: RequestInfo): js.Promise[Response] = js.native
-  @JSImport("fetch-jsonp", JSImport.Namespace)
-  @js.native
-  def apply(url: RequestInfo, options: Options): js.Promise[Response] = js.native
+  @scala.inline
+  def apply(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def apply(url: RequestInfo, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
+  @JSImport("fetch-jsonp", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var jsonpCallback: js.UndefOr[String] = js.native
+    var jsonpCallback: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

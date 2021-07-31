@@ -3,17 +3,15 @@ package typings.ssh2.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptedPrivateKey extends StObject {
   
   /** A Buffer or string that contains a private key. */
-  var key: Buffer | String = js.native
+  var key: Buffer | String
   
   /** The passphrase to decrypt a private key. */
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
 }
 object EncryptedPrivateKey {
   

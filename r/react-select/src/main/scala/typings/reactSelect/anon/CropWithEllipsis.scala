@@ -2,13 +2,11 @@ package typings.reactSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropWithEllipsis extends StObject {
   
-  var cropWithEllipsis: Boolean = js.native
+  var cropWithEllipsis: Boolean
 }
 object CropWithEllipsis {
   

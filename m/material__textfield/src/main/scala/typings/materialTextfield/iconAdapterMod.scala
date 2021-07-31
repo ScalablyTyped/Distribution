@@ -4,48 +4,46 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconAdapterMod {
   
-  @js.native
   trait MDCTextFieldIconAdapter extends StObject {
     
     /**
       * Deregisters an event listener on the icon element for a given event.
       */
-    def deregisterInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Gets the value of an attribute on the icon element.
       */
-    def getAttr(attr: String): String | Null = js.native
+    def getAttr(attr: String): String | Null
     
     /**
       * Emits a custom event "MDCTextField:icon" denoting a user has clicked the icon.
       */
-    def notifyIconAction(): Unit = js.native
+    def notifyIconAction(): Unit
     
     /**
       * Registers an event listener on the icon element for a given event.
       */
-    def registerInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Removes an attribute from the icon element.
       */
-    def removeAttr(attr: String): Unit = js.native
+    def removeAttr(attr: String): Unit
     
     /**
       * Sets an attribute on the icon element.
       */
-    def setAttr(attr: String, value: String): Unit = js.native
+    def setAttr(attr: String, value: String): Unit
     
     /**
       * Sets the text content of the icon element.
       */
-    def setContent(content: String): Unit = js.native
+    def setContent(content: String): Unit
   }
   object MDCTextFieldIconAdapter {
     

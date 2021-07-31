@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgeExpressionsResult extends Object {
+trait AgeExpressionsResult
+  extends StObject
+     with Object {
   
   /**
     * A SQL expression and where clause that matches the generated `valueExpression` used to query for a histogram from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#AgeExpressionsResult)
     */
-  var histogramQuery: js.Any = js.native
+  var histogramQuery: js.Any
   
   /**
     * A SQL expression and where clause that matches the generated `valueExpression` used to query statistics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#AgeExpressionsResult)
     */
-  var statisticsQuery: js.Any = js.native
+  var statisticsQuery: js.Any
   
   /**
     * The [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression used to calculate the age of a feature based on the difference between the end time and the start time.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#AgeExpressionsResult)
     */
-  var valueExpression: String = js.native
+  var valueExpression: String
 }
 object AgeExpressionsResult {
   

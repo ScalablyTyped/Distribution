@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entry in the bundle - will have a resource, or information
   */
-@js.native
-trait BundleEntry extends BackboneElement {
+trait BundleEntry
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'fullUrl'.
     */
-  var _fullUrl: js.UndefOr[Element] = js.native
+  var _fullUrl: js.UndefOr[Element] = js.undefined
   
   /**
     * Absolute URL for resource (server address, or UUID/OID)
     */
-  var fullUrl: js.UndefOr[uri] = js.native
+  var fullUrl: js.UndefOr[uri] = js.undefined
   
   /**
     * Links related to this entry
     */
-  var link: js.UndefOr[js.Array[BundleLink]] = js.native
+  var link: js.UndefOr[js.Array[BundleLink]] = js.undefined
   
   /**
     * Transaction Related Information
     */
-  var request: js.UndefOr[BundleEntryRequest] = js.native
+  var request: js.UndefOr[BundleEntryRequest] = js.undefined
   
   /**
     * A resource in the bundle
     */
-  var resource: js.UndefOr[Resource] = js.native
+  var resource: js.UndefOr[Resource] = js.undefined
   
   /**
     * Transaction Related Information
     */
-  var response: js.UndefOr[BundleEntryResponse] = js.native
+  var response: js.UndefOr[BundleEntryResponse] = js.undefined
   
   /**
     * Search related information
     */
-  var search: js.UndefOr[BundleEntrySearch] = js.native
+  var search: js.UndefOr[BundleEntrySearch] = js.undefined
 }
 object BundleEntry {
   

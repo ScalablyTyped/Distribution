@@ -2,24 +2,22 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The status of a disk on a VM.
   */
-@js.native
 trait SchemaDiskStatus extends StObject {
   
   /**
     * Free disk space.
     */
-  var freeSpaceBytes: js.UndefOr[String] = js.native
+  var freeSpaceBytes: js.UndefOr[String] = js.undefined
   
   /**
     * Total disk space.
     */
-  var totalSpaceBytes: js.UndefOr[String] = js.native
+  var totalSpaceBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaDiskStatus {
   

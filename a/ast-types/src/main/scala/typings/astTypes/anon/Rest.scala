@@ -7,29 +7,27 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rest extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var params: js.Array[FunctionTypeParamKind] = js.native
+  var params: js.Array[FunctionTypeParamKind]
   
-  var rest: FunctionTypeParamKind | Null = js.native
+  var rest: FunctionTypeParamKind | Null
   
-  var returnType: FlowTypeKind = js.native
+  var returnType: FlowTypeKind
   
-  var typeParameters: TypeParameterDeclarationKind | Null = js.native
+  var typeParameters: TypeParameterDeclarationKind | Null
 }
 object Rest {
   
   @scala.inline
   def apply(params: js.Array[FunctionTypeParamKind], returnType: FlowTypeKind): Rest = {
-    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], rest = null, typeParameters = null)
     __obj.asInstanceOf[Rest]
   }
   

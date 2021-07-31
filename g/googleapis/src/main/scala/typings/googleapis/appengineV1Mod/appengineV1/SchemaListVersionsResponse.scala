@@ -2,24 +2,22 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for Versions.ListVersions.
   */
-@js.native
 trait SchemaListVersionsResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The versions belonging to the requested service.
     */
-  var versions: js.UndefOr[js.Array[SchemaVersion]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaVersion]] = js.undefined
 }
 object SchemaListVersionsResponse {
   

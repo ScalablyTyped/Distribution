@@ -7,20 +7,22 @@ import typings.uirouterCore.commonCommonMod.TypedMap
 import typings.uirouterCore.mod.ResolveContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicesMod {
   
-  @JSImport("@uirouter/angularjs/lib/services", "getLocals")
+  @JSImport("@uirouter/angularjs/lib/services", JSImport.Namespace)
   @js.native
-  def getLocals(ctx: ResolveContext): TypedMap[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getLocals(ctx: ResolveContext): TypedMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocals")(ctx.asInstanceOf[js.Any]).asInstanceOf[TypedMap[js.Any]]
   
   object watchDigests {
     
-    @JSImport("@uirouter/angularjs/lib/services", "watchDigests")
-    @js.native
-    def apply($rootScope: IRootScopeService): Unit = js.native
+    @scala.inline
+    def apply($rootScope: IRootScopeService): Unit = ^.asInstanceOf[js.Dynamic].apply($rootScope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
     @JSImport("@uirouter/angularjs/lib/services", "watchDigests")
     @js.native
     val ^ : js.Any = js.native
@@ -35,14 +37,13 @@ object servicesMod {
   
   object uirouterCoreLibRouterAugmentingMod {
     
-    @js.native
     trait UIRouter extends StObject {
       
       /** @hidden */
-      var stateProvider: StateProvider = js.native
+      var stateProvider: StateProvider
       
       /** @hidden */
-      var urlRouterProvider: UrlRouterProvider = js.native
+      var urlRouterProvider: UrlRouterProvider
     }
     object UIRouter {
       

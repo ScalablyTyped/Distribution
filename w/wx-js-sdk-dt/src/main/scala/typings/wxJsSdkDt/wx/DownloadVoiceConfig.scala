@@ -2,27 +2,27 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DownloadVoiceConfig extends WxBaseRequestConfig {
+trait DownloadVoiceConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 默认为1，显示进度提示
     */
-  var isShowProgressTips: js.UndefOr[Double] = js.native
+  var isShowProgressTips: js.UndefOr[Double] = js.undefined
   
   /**
     * 需要下载的音频的服务器端 ID，由 uploadVoice 接口获得
     */
-  var serverId: String = js.native
+  var serverId: String
   
   /**
     * 下载成功回调
     */
   @JSName("success")
-  def success_MDownloadVoiceConfig(res: js.Any): Unit = js.native
+  def success_MDownloadVoiceConfig(res: js.Any): Unit
 }
 object DownloadVoiceConfig {
   

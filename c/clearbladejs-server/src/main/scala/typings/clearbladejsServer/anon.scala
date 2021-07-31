@@ -3,15 +3,13 @@ package typings.clearbladejsServer
 import typings.clearbladejsServer.CbServer.BasicReq
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Request extends StObject {
     
-    var request: BasicReq = js.native
+    var request: BasicReq
   }
   object Request {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Metricdescriptors")
@@ -76,7 +75,7 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def create(callback: BodyResponseCallback[SchemaMetricDescriptor]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def create(params: ParamsResourceProjectsMetricdescriptorsCreate): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def create(
     params: ParamsResourceProjectsMetricdescriptorsCreate,
@@ -156,7 +155,7 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsMetricdescriptorsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsMetricdescriptorsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -233,7 +232,7 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def get(callback: BodyResponseCallback[SchemaMetricDescriptor]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def get(params: ParamsResourceProjectsMetricdescriptorsGet): GaxiosPromise[SchemaMetricDescriptor] = js.native
   def get(
     params: ParamsResourceProjectsMetricdescriptorsGet,
@@ -322,7 +321,7 @@ class ResourceProjectsMetricdescriptors protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMetricDescriptorsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
   def list(params: ParamsResourceProjectsMetricdescriptorsList): GaxiosPromise[SchemaListMetricDescriptorsResponse] = js.native
   def list(
     params: ParamsResourceProjectsMetricdescriptorsList,

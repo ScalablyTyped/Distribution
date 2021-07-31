@@ -8,21 +8,22 @@ import typings.angularCore.testingMod.TestComponentRenderer
 import typings.angularCore.testingMod.ɵTestingCompilerFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingTestingMod {
+  
+  @JSImport("@angular/platform-browser-dynamic/testing/testing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/platform-browser-dynamic/testing/testing", "BrowserDynamicTestingModule")
   @js.native
   class BrowserDynamicTestingModule () extends StObject
   
-  @JSImport("@angular/platform-browser-dynamic/testing/testing", "platformBrowserDynamicTesting")
-  @js.native
-  def platformBrowserDynamicTesting(): PlatformRef = js.native
-  @JSImport("@angular/platform-browser-dynamic/testing/testing", "platformBrowserDynamicTesting")
-  @js.native
-  def platformBrowserDynamicTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = js.native
+  @scala.inline
+  def platformBrowserDynamicTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamicTesting")().asInstanceOf[PlatformRef]
+  @scala.inline
+  def platformBrowserDynamicTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamicTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
   @JSImport("@angular/platform-browser-dynamic/testing/testing", "\u0275DOMTestComponentRenderer")
   @js.native
@@ -46,10 +47,8 @@ object testingTestingMod {
     var _injector: js.Any = js.native
   }
   
-  @JSImport("@angular/platform-browser-dynamic/testing/testing", "\u0275platformCoreDynamicTesting")
-  @js.native
-  def ɵplatformCoreDynamicTesting(): PlatformRef = js.native
-  @JSImport("@angular/platform-browser-dynamic/testing/testing", "\u0275platformCoreDynamicTesting")
-  @js.native
-  def ɵplatformCoreDynamicTesting(extraProviders: js.Array[_]): PlatformRef = js.native
+  @scala.inline
+  def ɵplatformCoreDynamicTesting(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamicTesting")().asInstanceOf[PlatformRef]
+  @scala.inline
+  def ɵplatformCoreDynamicTesting(extraProviders: js.Array[js.Any]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamicTesting")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 }

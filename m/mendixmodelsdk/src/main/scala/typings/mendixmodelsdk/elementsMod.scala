@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import typings.mendixmodelsdk.unitsMod.ModelUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementsMod {
@@ -115,7 +114,8 @@ object elementsMod {
   
   @js.native
   trait IAbstractElement
-    extends IStructure
+    extends StObject
+       with IStructure
        with IContainer {
     
     def asLoaded(): IAbstractElement = js.native
@@ -126,7 +126,6 @@ object elementsMod {
     def load(forceRefresh: Boolean): js.Promise[IAbstractElement] = js.native
   }
   
-  @js.native
   trait IByNameReferrable extends StObject {
     
     /**
@@ -135,13 +134,13 @@ object elementsMod {
       * or if it or one of its namespace containers does not have a
       * valid name.
       */
-    val qualifiedName: String | Null = js.native
+    val qualifiedName: String | Null
   }
   object IByNameReferrable {
     
     @scala.inline
     def apply(): IByNameReferrable = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(qualifiedName = null)
       __obj.asInstanceOf[IByNameReferrable]
     }
     
@@ -157,7 +156,9 @@ object elementsMod {
   }
   
   @js.native
-  trait IElement extends IAbstractElement {
+  trait IElement
+    extends StObject
+       with IAbstractElement {
     
     @JSName("container")
     val container_IElement: IAbstractElement = js.native
@@ -165,6 +166,7 @@ object elementsMod {
   
   @js.native
   trait IElementConstructor
-    extends InstanceConstructor
+    extends StObject
        with Instantiable1[/* args (repeated) */ js.Any, Element[IAbstractModel]]
+       with InstanceConstructor
 }

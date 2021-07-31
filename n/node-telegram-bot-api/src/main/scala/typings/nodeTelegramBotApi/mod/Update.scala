@@ -2,31 +2,29 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Update extends StObject {
   
-  var callback_query: js.UndefOr[CallbackQuery] = js.native
+  var callback_query: js.UndefOr[CallbackQuery] = js.undefined
   
-  var channel_post: js.UndefOr[Message] = js.native
+  var channel_post: js.UndefOr[Message] = js.undefined
   
-  var chosen_inline_result: js.UndefOr[ChosenInlineResult] = js.native
+  var chosen_inline_result: js.UndefOr[ChosenInlineResult] = js.undefined
   
-  var edited_channel_post: js.UndefOr[Message] = js.native
+  var edited_channel_post: js.UndefOr[Message] = js.undefined
   
-  var edited_message: js.UndefOr[Message] = js.native
+  var edited_message: js.UndefOr[Message] = js.undefined
   
-  var inline_query: js.UndefOr[InlineQuery] = js.native
+  var inline_query: js.UndefOr[InlineQuery] = js.undefined
   
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
-  var pre_checkout_query: js.UndefOr[PreCheckoutQuery] = js.native
+  var pre_checkout_query: js.UndefOr[PreCheckoutQuery] = js.undefined
   
-  var shipping_query: js.UndefOr[ShippingQuery] = js.native
+  var shipping_query: js.UndefOr[ShippingQuery] = js.undefined
   
-  var update_id: Double = js.native
+  var update_id: Double
 }
 object Update {
   

@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Watch[T] extends StObject {
   
   /** Closes the watch */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Synchronize with host and get updated program */
-  def getProgram(): T = js.native
+  def getProgram(): T
 }
 object Watch {
   
@@ -23,7 +21,7 @@ object Watch {
   }
   
   @scala.inline
-  implicit class WatchMutableBuilder[Self <: Watch[_], T] (val x: Self with Watch[T]) extends AnyVal {
+  implicit class WatchMutableBuilder[Self <: Watch[?], T] (val x: Self & Watch[T]) extends AnyVal {
     
     @scala.inline
     def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))

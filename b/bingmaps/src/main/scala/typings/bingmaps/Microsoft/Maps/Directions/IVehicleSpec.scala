@@ -2,10 +2,8 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVehicleSpec extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait IVehicleSpec extends StObject {
     * •	meter or m [default]
     * •	foot or ft
     */
-  var dimensionUnit: js.UndefOr[String] = js.native
+  var dimensionUnit: js.UndefOr[String] = js.undefined
   
   /** Indicates if the vehicle shall avoid crosswinds. */
-  var vehicleAvoidCrossWind: js.UndefOr[Boolean] = js.native
+  var vehicleAvoidCrossWind: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if the route shall avoid the risk of grounding. */
-  var vehicleAvoidGroundingRisk: js.UndefOr[Boolean] = js.native
+  var vehicleAvoidGroundingRisk: js.UndefOr[Boolean] = js.undefined
   
   /** The number of axles. */
-  var vehicleAxles: js.UndefOr[Double] = js.native
+  var vehicleAxles: js.UndefOr[Double] = js.undefined
   
   /**
     * A comma separated and case-sensitive list of one or more hazardous materials for which the vehicle is transporting. Possible values and their aliases are:
@@ -43,7 +41,7 @@ trait IVehicleSpec extends StObject {
     * 
     * Example: "WH,R,Poison"
     */
-  var vehicleHazardousMaterials: js.UndefOr[String] = js.native
+  var vehicleHazardousMaterials: js.UndefOr[String] = js.undefined
   
   /** 
     * A comma separated and case-sensitive list of one or more hazardous materials for which the vehicle has a permit. Possible values and their aliases are: 
@@ -63,38 +61,38 @@ trait IVehicleSpec extends StObject {
     * 
     * Example: "C,Explosive,Corrosive" 
     */
-  var vehicleHazardousPermits: js.UndefOr[String] = js.native
+  var vehicleHazardousPermits: js.UndefOr[String] = js.undefined
   
   /** The height of the vehicle in the specified dimension units. */
-  var vehicleHeight: js.UndefOr[Double] = js.native
+  var vehicleHeight: js.UndefOr[Double] = js.undefined
   
   /** The length of the vehicle in the specified dimension units. */
-  var vehicleLength: js.UndefOr[Double] = js.native
+  var vehicleLength: js.UndefOr[Double] = js.undefined
   
   /** The maximum gradient the vehicle can drive measured in degrees. */
-  var vehicleMaxGradient: js.UndefOr[Boolean] = js.native
+  var vehicleMaxGradient: js.UndefOr[Boolean] = js.undefined
   
   /** The minimum required radius for the vehicle to turn in the specified dimension units. */
-  var vehicleMinTurnRadius: js.UndefOr[Double] = js.native
+  var vehicleMinTurnRadius: js.UndefOr[Double] = js.undefined
   
   /** Indicates if the truck is pulling a semi-trailer. Semi-trailer restrictions are mostly used in North America. */
-  var vehicleSemi: js.UndefOr[Boolean] = js.native
+  var vehicleSemi: js.UndefOr[Boolean] = js.undefined
   
   /** The number of trailers. */
-  var vehicleTrailers: js.UndefOr[Double] = js.native
+  var vehicleTrailers: js.UndefOr[Double] = js.undefined
   
   /** The weight of the vehicle in the specified weight units. */
-  var vehicleWeight: js.UndefOr[Double] = js.native
+  var vehicleWeight: js.UndefOr[Double] = js.undefined
   
   /** The width of the vehicle in the specified dimension units. */
-  var vehicleWidth: js.UndefOr[Double] = js.native
+  var vehicleWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The unit of measurement of weight. Can be one of the following values:
     * •	kilogram or kg [default]
     * •	pound or lb
     */
-  var weightUnit: js.UndefOr[String] = js.native
+  var weightUnit: js.UndefOr[String] = js.undefined
 }
 object IVehicleSpec {
   

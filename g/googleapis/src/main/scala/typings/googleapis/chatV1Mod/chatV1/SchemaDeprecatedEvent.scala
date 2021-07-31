@@ -2,13 +2,11 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hangouts Chat events.
   */
-@js.native
 trait SchemaDeprecatedEvent extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaDeprecatedEvent extends StObject {
     * clicked. Only populated for CARD_CLICKED events. See the [Interactive
     * Cards guide](/hangouts/chat/how-tos/cards-onclick) for more information.
     */
-  var action: js.UndefOr[SchemaFormAction] = js.native
+  var action: js.UndefOr[SchemaFormAction] = js.undefined
   
   /**
     * The URL the bot should redirect the user to after they have completed an
@@ -24,29 +22,29 @@ trait SchemaDeprecatedEvent extends StObject {
     * [Authorizing access to 3p services guide](/hangouts/chat/how-tos/auth-3p)
     * for more information.
     */
-  var configCompleteRedirectUrl: js.UndefOr[String] = js.native
+  var configCompleteRedirectUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp indicating when the event was dispatched.
     */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * The message that triggered the event, if applicable.
     */
-  var message: js.UndefOr[SchemaMessage] = js.native
+  var message: js.UndefOr[SchemaMessage] = js.undefined
   
   /**
     * The room or DM in which the event occurred.
     */
-  var space: js.UndefOr[SchemaSpace] = js.native
+  var space: js.UndefOr[SchemaSpace] = js.undefined
   
   /**
     * The bot-defined key for the thread related to the event. See the
     * thread_key field of the `spaces.message.create` request for more
     * information.
     */
-  var threadKey: js.UndefOr[String] = js.native
+  var threadKey: js.UndefOr[String] = js.undefined
   
   /**
     * A secret value that bots can use to verify if a request is from Google.
@@ -55,17 +53,17 @@ trait SchemaDeprecatedEvent extends StObject {
     * Console. Developers can revoke/regenerate it if needed from the same
     * page.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the event.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The user that triggered the event.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
 }
 object SchemaDeprecatedEvent {
   

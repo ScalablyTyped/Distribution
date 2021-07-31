@@ -10,7 +10,6 @@ import typings.wechatMiniprogram.WechatMiniprogram.IntersectionObserver
 import typings.wechatMiniprogram.WechatMiniprogram.SelectorQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -47,7 +46,7 @@ trait InstanceMethods[D /* <: DataOption */] extends StObject {
     * 最低基础库版本：[`2.9.0`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     **/
   def clearAnimation(selector: String, callback: js.Function0[Unit]): Unit = js.native
-  def clearAnimation(selector: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+  def clearAnimation(selector: String, options: Unit, callback: js.Function0[Unit]): Unit = js.native
   def clearAnimation(selector: String, options: ClearAnimationOptions): Unit = js.native
   def clearAnimation(selector: String, options: ClearAnimationOptions, callback: js.Function0[Unit]): Unit = js.native
   
@@ -117,7 +116,7 @@ trait InstanceMethods[D /* <: DataOption */] extends StObject {
     *
     * 其中 `key` 可以以数据路径的形式给出，支持改变数组中的某一项或对象的某个属性，如 `array[2].message`，`a.b.c.d`，并且不需要在 this.data 中预先定义。
     */
-  data: Partial[D] with IAnyObject
+  data: Partial[D] & IAnyObject
   ): Unit = js.native
   def setData(
     /** 这次要改变的数据
@@ -126,14 +125,14 @@ trait InstanceMethods[D /* <: DataOption */] extends StObject {
     *
     * 其中 `key` 可以以数据路径的形式给出，支持改变数组中的某一项或对象的某个属性，如 `array[2].message`，`a.b.c.d`，并且不需要在 this.data 中预先定义。
     */
-  data: Partial[D] with IAnyObject,
+  data: Partial[D] & IAnyObject,
     /** setData引起的界面更新渲染完毕后的回调函数，最低基础库： `1.5.0` */
   callback: js.Function0[Unit]
   ): Unit = js.native
   
   /** 触发事件，参见组件事件 */
   def triggerEvent(name: String): Unit = js.native
-  def triggerEvent(name: String, detail: js.UndefOr[scala.Nothing], options: TriggerEventOption): Unit = js.native
-  def triggerEvent(name: String, detail: Record[String, _]): Unit = js.native
-  def triggerEvent(name: String, detail: Record[String, _], options: TriggerEventOption): Unit = js.native
+  def triggerEvent(name: String, detail: Unit, options: TriggerEventOption): Unit = js.native
+  def triggerEvent(name: String, detail: Record[String, js.Any]): Unit = js.native
+  def triggerEvent(name: String, detail: Record[String, js.Any], options: TriggerEventOption): Unit = js.native
 }

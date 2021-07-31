@@ -3,15 +3,13 @@ package typings.reactNavigation.anon
 import typings.reactNavigation.mod.NavigationParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var params: js.UndefOr[NavigationParams] = js.native
+  var params: js.UndefOr[NavigationParams] = js.undefined
   
-  var path: String = js.native
+  var path: String
 }
 object Params {
   

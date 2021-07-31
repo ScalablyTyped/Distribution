@@ -11,8 +11,8 @@ The lodash method `_.update` exported as a module.
 | Full name          | lodash.update |
 | Keywords           | lodash-modularized, update |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 348245 |
+| # dependents       | 8 |
+| # downloads        | 358981 |
 | # stars            | 1 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2UpdateJobTriggerRequest extends StObject {
   
   /** New JobTrigger value. */
-  var jobTrigger: js.UndefOr[GooglePrivacyDlpV2JobTrigger] = js.native
+  var jobTrigger: js.UndefOr[GooglePrivacyDlpV2JobTrigger] = js.undefined
   
   /** Mask to control which fields get updated. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2UpdateJobTriggerRequest {
   

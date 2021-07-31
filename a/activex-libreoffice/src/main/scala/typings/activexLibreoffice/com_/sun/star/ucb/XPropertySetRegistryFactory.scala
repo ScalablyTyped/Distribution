@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Kai Sommerfeld
   * @version 1.0
   */
-@js.native
-trait XPropertySetRegistryFactory extends XInterface {
+trait XPropertySetRegistryFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a property set registry.
     * @param URL The identifier of the registry to create ( e.g. file-URL ). The value can be an empty string.
     * @returns The registry.
     */
-  def createPropertySetRegistry(URL: String): XPropertySetRegistry = js.native
+  def createPropertySetRegistry(URL: String): XPropertySetRegistry
 }
 object XPropertySetRegistryFactory {
   

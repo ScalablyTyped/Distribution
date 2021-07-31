@@ -2,23 +2,21 @@ package typings.wicgMediasession
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaMetadataInit extends StObject {
   
   // Media's album.
-  var album: js.UndefOr[String] = js.native
+  var album: js.UndefOr[String] = js.undefined
   
   // Media's artist.
-  var artist: js.UndefOr[String] = js.native
+  var artist: js.UndefOr[String] = js.undefined
   
   // Media's artwork.
-  var artwork: js.UndefOr[js.Array[MediaImage]] = js.native
+  var artwork: js.UndefOr[js.Array[MediaImage]] = js.undefined
   
   // Media's title.
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object MediaMetadataInit {
   

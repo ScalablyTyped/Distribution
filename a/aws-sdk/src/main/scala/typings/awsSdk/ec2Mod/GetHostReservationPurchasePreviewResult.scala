@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostReservationPurchasePreviewResult extends StObject {
   
   /**
     * The currency in which the totalUpfrontPrice and totalHourlyPrice amounts are specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The purchase information of the Dedicated Host reservation and the Dedicated Hosts associated with it.
     */
-  var Purchase: js.UndefOr[PurchaseSet] = js.native
+  var Purchase: js.UndefOr[PurchaseSet] = js.undefined
   
   /**
     * The potential total hourly price of the reservation per hour.
     */
-  var TotalHourlyPrice: js.UndefOr[String] = js.native
+  var TotalHourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The potential total upfront price. This is billed immediately.
     */
-  var TotalUpfrontPrice: js.UndefOr[String] = js.native
+  var TotalUpfrontPrice: js.UndefOr[String] = js.undefined
 }
 object GetHostReservationPurchasePreviewResult {
   

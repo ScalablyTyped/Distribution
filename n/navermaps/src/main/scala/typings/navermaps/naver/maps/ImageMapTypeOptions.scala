@@ -2,35 +2,33 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageMapTypeOptions extends StObject {
   
-  var darktheme: js.UndefOr[Boolean] = js.native
+  var darktheme: js.UndefOr[Boolean] = js.undefined
   
-  var getTileUrl: js.UndefOr[js.Function0[_]] = js.native
+  var getTileUrl: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var maxZoom: Double = js.native
+  var maxZoom: Double
   
-  var minZoom: Double = js.native
+  var minZoom: Double
   
-  var name: String = js.native
+  var name: String
   
-  var projection: Projection = js.native
+  var projection: Projection
   
-  var provider: js.UndefOr[js.Array[MapDataProvider]] = js.native
+  var provider: js.UndefOr[js.Array[MapDataProvider]] = js.undefined
   
-  var repeatX: js.UndefOr[Boolean] = js.native
+  var repeatX: js.UndefOr[Boolean] = js.undefined
   
-  var tileSet: js.UndefOr[String | js.Array[String]] = js.native
+  var tileSet: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var tileSize: js.UndefOr[Size | SizeLiteral] = js.native
+  var tileSize: js.UndefOr[Size | SizeLiteral] = js.undefined
   
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
   
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
 }
 object ImageMapTypeOptions {
   
@@ -50,7 +48,7 @@ object ImageMapTypeOptions {
     def setDarkthemeUndefined: Self = StObject.set(x, "darktheme", js.undefined)
     
     @scala.inline
-    def setGetTileUrl(value: () => _): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction0(value))
+    def setGetTileUrl(value: () => js.Any): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTileUrlUndefined: Self = StObject.set(x, "getTileUrl", js.undefined)

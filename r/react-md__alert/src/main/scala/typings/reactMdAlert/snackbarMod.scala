@@ -7,14 +7,13 @@ import typings.reactMdPortal.conditionalPortalMod.RenderConditionalPortalProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snackbarMod {
   
   @JSImport("@react-md/alert/types/Snackbar", "Snackbar")
   @js.native
-  val Snackbar: ForwardRefExoticComponent[SnackbarProps with RefAttributes[HTMLDivElement]] = js.native
+  val Snackbar: ForwardRefExoticComponent[SnackbarProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdAlert.reactMdAlertStrings.bottom
@@ -30,22 +29,22 @@ object snackbarMod {
     def top: typings.reactMdAlert.reactMdAlertStrings.top = "top".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.top]
   }
   
-  @js.native
   trait SnackbarProps
-    extends HTMLAttributes[HTMLDivElement]
+    extends StObject
+       with HTMLAttributes[HTMLDivElement]
        with RenderConditionalPortalProps {
     
     /**
       * The id for the snackbar element. This is required for a11y.
       */
     @JSName("id")
-    var id_SnackbarProps: String = js.native
+    var id_SnackbarProps: String
     
     /**
       * The position for the snackbar to be fixed within the viewport or a
       * container element.
       */
-    var position: js.UndefOr[SnackbarPosition] = js.native
+    var position: js.UndefOr[SnackbarPosition] = js.undefined
   }
   object SnackbarProps {
     

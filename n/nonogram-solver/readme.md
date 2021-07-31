@@ -12,7 +12,7 @@ Solver / formatter for Nonograms (Griddlers, Picross, Hanjie, Japanese Crossword
 | Keywords           | nonogram, griddler, picross, hanjie, japanese crossword, solve, solver, puzzle, game, serialization |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 495 |
+| # downloads        | 633 |
 | # stars            | 0 |
 
 ## Links

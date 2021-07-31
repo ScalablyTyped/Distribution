@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * The key-value tags assigned to the application.
     */
-  var Tags: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.Tags] = js.undefined
 }
 object ListTagsForResourceResponse {
   

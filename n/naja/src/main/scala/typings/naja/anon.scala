@@ -5,21 +5,19 @@ import typings.std.Event
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AbortController extends StObject {
     
-    var abortController: typings.std.AbortController = js.native
+    var abortController: typings.std.AbortController
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var promise: js.Promise[Response] = js.native
+    var promise: js.Promise[Response]
     
-    var request: typings.std.Request = js.native
+    var request: typings.std.Request
   }
   object AbortController {
     
@@ -51,68 +49,159 @@ object anon {
     }
   }
   
-  @js.native
   trait Append extends StObject {
     
-    def append(snippet: typings.std.Element, content: String): Unit = js.native
+    def append(snippet: typings.std.Element, content: String): Unit
     @JSName("append")
-    var append_Original: SnippetUpdateOperation = js.native
+    var append_Original: SnippetUpdateOperation
     
-    def prepend(snippet: typings.std.Element, content: String): Unit = js.native
+    def prepend(snippet: typings.std.Element, content: String): Unit
     @JSName("prepend")
-    var prepend_Original: SnippetUpdateOperation = js.native
+    var prepend_Original: SnippetUpdateOperation
     
-    def replace(snippet: typings.std.Element, content: String): Unit = js.native
+    def replace(snippet: typings.std.Element, content: String): Unit
     @JSName("replace")
-    var replace_Original: SnippetUpdateOperation = js.native
+    var replace_Original: SnippetUpdateOperation
+  }
+  object Append {
+    
+    @scala.inline
+    def apply(
+      append: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
+      prepend: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
+      replace: (/* snippet */ typings.std.Element, /* content */ String) => Unit
+    ): Append = {
+      val __obj = js.Dynamic.literal(append = js.Any.fromFunction2(append), prepend = js.Any.fromFunction2(prepend), replace = js.Any.fromFunction2(replace))
+      __obj.asInstanceOf[Append]
+    }
+    
+    @scala.inline
+    implicit class AppendMutableBuilder[Self <: Append] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAppend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPrepend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setReplace(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait ChangeOperation extends StObject {
     
-    def changeOperation(value: SnippetUpdateOperation): Unit = js.native
+    def changeOperation(value: SnippetUpdateOperation): Unit
     
-    var content: String = js.native
+    var content: String
     
-    var fromCache: Boolean = js.native
+    var fromCache: Boolean
     
-    def operation(snippet: typings.std.Element, content: String): Unit = js.native
+    def operation(snippet: typings.std.Element, content: String): Unit
     @JSName("operation")
-    var operation_Original: SnippetUpdateOperation = js.native
+    var operation_Original: SnippetUpdateOperation
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var snippet: typings.std.Element = js.native
+    var snippet: typings.std.Element
+  }
+  object ChangeOperation {
+    
+    @scala.inline
+    def apply(
+      changeOperation: SnippetUpdateOperation => Unit,
+      content: String,
+      fromCache: Boolean,
+      operation: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
+      options: typings.naja.najaMod.Options,
+      snippet: typings.std.Element
+    ): ChangeOperation = {
+      val __obj = js.Dynamic.literal(changeOperation = js.Any.fromFunction1(changeOperation), content = content.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], operation = js.Any.fromFunction2(operation), options = options.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChangeOperation]
+    }
+    
+    @scala.inline
+    implicit class ChangeOperationMutableBuilder[Self <: ChangeOperation] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setChangeOperation(value: SnippetUpdateOperation => Unit): Self = StObject.set(x, "changeOperation", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var fromCache: Boolean = js.native
+    var fromCache: Boolean
     
-    def operation(snippet: typings.std.Element, content: String): Unit = js.native
+    def operation(snippet: typings.std.Element, content: String): Unit
     @JSName("operation")
-    var operation_Original: SnippetUpdateOperation = js.native
+    var operation_Original: SnippetUpdateOperation
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var snippet: typings.std.Element = js.native
+    var snippet: typings.std.Element
+  }
+  object Content {
+    
+    @scala.inline
+    def apply(
+      content: String,
+      fromCache: Boolean,
+      operation: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
+      options: typings.naja.najaMod.Options,
+      snippet: typings.std.Element
+    ): Content = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], operation = js.Any.fromFunction2(operation), options = options.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Content]
+    }
+    
+    @scala.inline
+    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var method: String = js.native
+    var method: String
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var request: typings.std.Request = js.native
+    var request: typings.std.Request
     
-    var url: String = js.native
+    var url: String
   }
   object Data {
     
@@ -148,10 +237,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultOptions extends StObject {
     
-    var defaultOptions: typings.naja.najaMod.Options = js.native
+    var defaultOptions: typings.naja.najaMod.Options
   }
   object DefaultOptions {
     
@@ -169,14 +257,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var element: typings.std.Element = js.native
+    var element: typings.std.Element
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var originalEvent: js.UndefOr[Event] = js.native
+    var originalEvent: js.UndefOr[Event] = js.undefined
   }
   object Element {
     
@@ -203,14 +290,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var request: typings.std.Request = js.native
+    var request: typings.std.Request
   }
   object Error {
     
@@ -234,16 +320,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IsHardRedirect extends StObject {
     
-    var isHardRedirect: Boolean = js.native
+    var isHardRedirect: Boolean
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    def setHardRedirect(value: Boolean): Unit = js.native
+    def setHardRedirect(value: Boolean): Unit
     
-    var url: String = js.native
+    var url: String
   }
   object IsHardRedirect {
     
@@ -275,16 +360,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var payload: typings.naja.najaMod.Payload = js.native
+    var payload: typings.naja.najaMod.Payload
     
-    var request: typings.std.Request = js.native
+    var request: typings.std.Request
     
-    var response: Response = js.native
+    var response: Response
   }
   object Options {
     
@@ -316,18 +400,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
-    var error: js.UndefOr[typings.std.Error] = js.native
+    var error: js.UndefOr[typings.std.Error] = js.undefined
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var payload: js.UndefOr[typings.naja.najaMod.Payload] = js.native
+    var payload: js.UndefOr[typings.naja.najaMod.Payload] = js.undefined
     
-    var request: typings.std.Request = js.native
+    var request: typings.std.Request
     
-    var response: js.UndefOr[Response] = js.native
+    var response: js.UndefOr[Response] = js.undefined
   }
   object Payload {
     
@@ -366,16 +449,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
     
-    var options: typings.naja.najaMod.Options = js.native
+    var options: typings.naja.najaMod.Options
     
-    var request: typings.std.Request = js.native
+    var request: typings.std.Request
     
-    var response: js.UndefOr[Response] = js.native
+    var response: js.UndefOr[Response] = js.undefined
   }
   object Request {
     

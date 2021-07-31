@@ -4,22 +4,24 @@ import typings.gulpPugI18n.anon.Default
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("gulp-pug-i18n", JSImport.Namespace)
   @js.native
-  def apply(options: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options
-    extends typings.pug.mod.Options {
+    extends StObject
+       with typings.pug.mod.Options {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var i18n: Default = js.native
+    var i18n: Default
   }
   object Options {
     

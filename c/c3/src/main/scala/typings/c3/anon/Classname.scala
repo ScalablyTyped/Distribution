@@ -2,14 +2,12 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classname extends StObject {
   
   /** Class to assign to the chart's container SVG element. */
-  var classname: js.UndefOr[String] = js.native
+  var classname: js.UndefOr[String] = js.undefined
 }
 object Classname {
   

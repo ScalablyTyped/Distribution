@@ -4,28 +4,28 @@ import typings.braintreeWebDropIn.anon.Username
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.VenmoAccount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait venmoPaymentMethodPayload extends PaymentMethodPayload {
+trait venmoPaymentMethodPayload
+  extends StObject
+     with PaymentMethodPayload {
   
-  var details: Username = js.native
+  var details: Username
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var `type`: VenmoAccount = js.native
+  var `type`: VenmoAccount
   
-  var vaulted: js.UndefOr[Boolean] = js.native
+  var vaulted: js.UndefOr[Boolean] = js.undefined
 }
 object venmoPaymentMethodPayload {
   
   @scala.inline
-  def apply(details: Username, nonce: String, `type`: VenmoAccount): venmoPaymentMethodPayload = {
+  def apply(details: Username, nonce: String): venmoPaymentMethodPayload = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VenmoAccount")
     __obj.asInstanceOf[venmoPaymentMethodPayload]
   }
   

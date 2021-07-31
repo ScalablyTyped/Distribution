@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetCellRange
   * @see com.sun.star.sheet.SheetCellRanges
   */
-@js.native
-trait XCellFormatRangesSupplier extends XInterface {
+trait XCellFormatRangesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns a collection of equal-formatted cell ranges.
@@ -24,7 +24,7 @@ trait XCellFormatRangesSupplier extends XInterface {
     * @returns the collection of equal-formatted cell ranges.
     * @see com.sun.star.sheet.CellFormatRanges
     */
-  val CellFormatRanges: XIndexAccess = js.native
+  val CellFormatRanges: XIndexAccess
   
   /**
     * returns a collection of equal-formatted cell ranges.
@@ -34,7 +34,7 @@ trait XCellFormatRangesSupplier extends XInterface {
     * @returns the collection of equal-formatted cell ranges.
     * @see com.sun.star.sheet.CellFormatRanges
     */
-  def getCellFormatRanges(): XIndexAccess = js.native
+  def getCellFormatRanges(): XIndexAccess
 }
 object XCellFormatRangesSupplier {
   

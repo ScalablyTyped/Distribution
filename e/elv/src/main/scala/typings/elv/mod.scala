@@ -2,14 +2,16 @@ package typings.elv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   @JSImport("elv", JSImport.Namespace)
   @js.native
-  def apply(`val`: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
   object behavior {
     
@@ -42,22 +44,17 @@ object mod {
     def enableUndefined_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableUndefined")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("elv", "coalesce")
-  @js.native
-  def coalesce(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def coalesce(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("elv", "ncoalesce")
-  @js.native
-  def ncoalesce(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def ncoalesce(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ncoalesce")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("elv", "populated")
-  @js.native
-  def populated(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def populated(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("populated")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("elv", "tryGet")
-  @js.native
-  def tryGet(`val`: js.Array[_], index: Double): js.Any = js.native
-  @JSImport("elv", "tryGet")
-  @js.native
-  def tryGet(`val`: js.Array[_], index: Double, `def`: js.Any): js.Any = js.native
+  @scala.inline
+  def tryGet(`val`: js.Array[js.Any], index: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGet")(`val`.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def tryGet(`val`: js.Array[js.Any], index: Double, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGet")(`val`.asInstanceOf[js.Any], index.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

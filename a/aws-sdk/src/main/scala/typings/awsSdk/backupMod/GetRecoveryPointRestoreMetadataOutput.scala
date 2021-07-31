@@ -2,26 +2,24 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecoveryPointRestoreMetadataOutput extends StObject {
   
   /**
     * An ARN that uniquely identifies a backup vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
     */
-  var BackupVaultArn: js.UndefOr[ARN] = js.native
+  var BackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * An ARN that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
-  var RecoveryPointArn: js.UndefOr[ARN] = js.native
+  var RecoveryPointArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The set of metadata key-value pairs that describe the original configuration of the backed-up resource. These values vary depending on the service that is being restored.
     */
-  var RestoreMetadata: js.UndefOr[Metadata] = js.native
+  var RestoreMetadata: js.UndefOr[Metadata] = js.undefined
 }
 object GetRecoveryPointRestoreMetadataOutput {
   

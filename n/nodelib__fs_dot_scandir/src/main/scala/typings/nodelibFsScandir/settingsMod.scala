@@ -4,29 +4,53 @@ import typings.nodelibFsScandir.anon.PartialFileSystemAdapter
 import typings.nodelibFsScandir.fsMod.FileSystemAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
   @JSImport("@nodelib/fs.scandir/out/settings", JSImport.Default)
   @js.native
-  class default () extends Settings {
+  class default ()
+    extends StObject
+       with Settings {
     def this(_options: Options) = this()
+    
+    /* CompleteClass */
+    var _getValue: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _options: js.Any = js.native
+    
+    /* CompleteClass */
+    override val followSymbolicLinks: Boolean = js.native
+    
+    /* CompleteClass */
+    override val fs: FileSystemAdapter = js.native
+    
+    /* CompleteClass */
+    override val fsStatSettings: typings.nodelibFsStat.mod.Settings = js.native
+    
+    /* CompleteClass */
+    override val pathSegmentSeparator: String = js.native
+    
+    /* CompleteClass */
+    override val stats: Boolean = js.native
+    
+    /* CompleteClass */
+    override val throwErrorOnBrokenSymbolicLink: Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var followSymbolicLinks: js.UndefOr[Boolean] = js.native
+    var followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
     
-    var fs: js.UndefOr[PartialFileSystemAdapter] = js.native
+    var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
     
-    var pathSegmentSeparator: js.UndefOr[String] = js.native
+    var pathSegmentSeparator: js.UndefOr[String] = js.undefined
     
-    var stats: js.UndefOr[Boolean] = js.native
+    var stats: js.UndefOr[Boolean] = js.undefined
     
-    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
+    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -71,24 +95,23 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var _getValue: js.Any = js.native
+    var _getValue: js.Any
     
-    val _options: js.Any = js.native
+    val _options: js.Any
     
-    val followSymbolicLinks: Boolean = js.native
+    val followSymbolicLinks: Boolean
     
-    val fs: FileSystemAdapter = js.native
+    val fs: FileSystemAdapter
     
-    val fsStatSettings: typings.nodelibFsStat.mod.Settings = js.native
+    val fsStatSettings: typings.nodelibFsStat.mod.Settings
     
-    val pathSegmentSeparator: String = js.native
+    val pathSegmentSeparator: String
     
-    val stats: Boolean = js.native
+    val stats: Boolean
     
-    val throwErrorOnBrokenSymbolicLink: Boolean = js.native
+    val throwErrorOnBrokenSymbolicLink: Boolean
   }
   object Settings {
     

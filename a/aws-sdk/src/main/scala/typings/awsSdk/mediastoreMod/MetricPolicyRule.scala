@@ -2,21 +2,19 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricPolicyRule extends StObject {
   
   /**
     * A path or file name that defines which objects to include in the group. Wildcards (*) are acceptable.
     */
-  var ObjectGroup: typings.awsSdk.mediastoreMod.ObjectGroup = js.native
+  var ObjectGroup: typings.awsSdk.mediastoreMod.ObjectGroup
   
   /**
     * A name that allows you to refer to the object group.
     */
-  var ObjectGroupName: typings.awsSdk.mediastoreMod.ObjectGroupName = js.native
+  var ObjectGroupName: typings.awsSdk.mediastoreMod.ObjectGroupName
 }
 object MetricPolicyRule {
   

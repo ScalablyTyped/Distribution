@@ -11,13 +11,11 @@ import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   
-  var align: js.UndefOr[CellAlignment] = js.native
+  var align: js.UndefOr[CellAlignment] = js.undefined
   
   var classes: js.UndefOr[
     String | (js.Function4[
@@ -27,22 +25,22 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
       /* colIndex */ Double, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Toggle column display in CSV export
     */
-  var csvExport: js.UndefOr[Boolean] = js.native
+  var csvExport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom csv cell formatter used when exporting csv
     */
-  var csvFormatter: js.UndefOr[ColumnFormatter[T, E, _]] = js.native
+  var csvFormatter: js.UndefOr[ColumnFormatter[T, E, js.Any]] = js.undefined
   
   /**
     * csvText defaults to column.text
     */
-  var csvText: js.UndefOr[String] = js.native
+  var csvText: js.UndefOr[String] = js.undefined
   
   /**
     * CSV Column options only used with the toolkit provider
@@ -50,17 +48,17 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   /**
     * export csv cell type can be Number or String
     */
-  var csvType: js.UndefOr[js.Object] = js.native
+  var csvType: js.UndefOr[js.Object] = js.undefined
   
-  var dataField: js.Any = js.native
+  var dataField: js.Any
   
   var editable: js.UndefOr[
     Boolean | (js.Function4[/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
-  ] = js.native
+  ] = js.undefined
   
-  var editor: js.UndefOr[Options] = js.native
+  var editor: js.UndefOr[Options] = js.undefined
   
-  var filter: js.UndefOr[Boolean | (TableColumnFilterProps[_, _])] = js.native
+  var filter: js.UndefOr[Boolean | (TableColumnFilterProps[js.Any, js.Any])] = js.undefined
   
   var filterValue: js.UndefOr[
     js.Function2[
@@ -68,7 +66,7 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
       /* row */ T, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var footer: js.UndefOr[
     Boolean | Double | String | (js.Function3[
@@ -77,56 +75,56 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
       /* columnIndex */ Double, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
   var footerAlign: js.UndefOr[
     CellAlignment | (js.Function2[/* column */ ColumnDescription[T, E], /* colIndex */ Double, CellAlignment])
-  ] = js.native
+  ] = js.undefined
   
   var footerClasses: js.UndefOr[
     String | (js.Function2[/* column */ ColumnDescription[T, E], /* columnIndex */ Double, String])
-  ] = js.native
+  ] = js.undefined
   
-  var footerEvents: js.UndefOr[OnClick[T, E]] = js.native
+  var footerEvents: js.UndefOr[OnClick[T, E]] = js.undefined
   
   var footerFormatter: js.UndefOr[
     js.Function2[/* column */ ColumnDescription[T, E], /* columnIndex */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var footerStyle: js.UndefOr[CSSProperties] = js.native
+  var footerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var footerTitle: js.UndefOr[Boolean] = js.native
+  var footerTitle: js.UndefOr[Boolean] = js.undefined
   
-  var formatExtraData: js.UndefOr[TooltipFormatter[T] with E] = js.native
+  var formatExtraData: js.UndefOr[TooltipFormatter[T] & E] = js.undefined
   
-  var formatter: js.UndefOr[ColumnFormatter[T, E, _]] = js.native
+  var formatter: js.UndefOr[ColumnFormatter[T, E, js.Any]] = js.undefined
   
-  var headerAlign: js.UndefOr[CellAlignment] = js.native
+  var headerAlign: js.UndefOr[CellAlignment] = js.undefined
   
   var headerClasses: js.UndefOr[
     String | (js.Function2[/* column */ ColumnDescription[T, E], /* colIndex */ Double, String])
-  ] = js.native
+  ] = js.undefined
   
-  var headerFormatter: js.UndefOr[HeaderFormatter[T]] = js.native
+  var headerFormatter: js.UndefOr[HeaderFormatter[T]] = js.undefined
   
-  var headerSortingClasses: js.UndefOr[HeaderSortingClasses[T, E]] = js.native
+  var headerSortingClasses: js.UndefOr[HeaderSortingClasses[T, E]] = js.undefined
   
-  var headerStyle: js.UndefOr[CSSProperties | js.Function0[CSSProperties]] = js.native
+  var headerStyle: js.UndefOr[CSSProperties | js.Function0[CSSProperties]] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set the column will not use cell values
     */
-  var isDummyField: js.UndefOr[Boolean] = js.native
+  var isDummyField: js.UndefOr[Boolean] = js.undefined
   
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
   
-  var sortCaret: js.UndefOr[ColumnSortCaret[T, E]] = js.native
+  var sortCaret: js.UndefOr[ColumnSortCaret[T, E]] = js.undefined
   
-  var sortFunc: js.UndefOr[ColumnSortFunc[T, _]] = js.native
+  var sortFunc: js.UndefOr[ColumnSortFunc[T, js.Any]] = js.undefined
   
   var style: js.UndefOr[
     CSSProperties | (js.Function4[
@@ -136,16 +134,16 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
       /* colIndex */ Double, 
       CSSProperties
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Column header field
     */
-  var text: String = js.native
+  var text: String
   
-  var tooltipDataField: js.UndefOr[String] = js.native
+  var tooltipDataField: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ColumnDescription {
   
@@ -156,7 +154,7 @@ object ColumnDescription {
   }
   
   @scala.inline
-  implicit class ColumnDescriptionMutableBuilder[Self <: ColumnDescription[_, _], T /* <: js.Object */, E] (val x: Self with (ColumnDescription[T, E])) extends AnyVal {
+  implicit class ColumnDescriptionMutableBuilder[Self <: ColumnDescription[?, ?], T /* <: js.Object */, E] (val x: Self & (ColumnDescription[T, E])) extends AnyVal {
     
     @scala.inline
     def setAlign(value: CellAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
@@ -190,7 +188,7 @@ object ColumnDescription {
     def setCsvExportUndefined: Self = StObject.set(x, "csvExport", js.undefined)
     
     @scala.inline
-    def setCsvFormatter(value: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = StObject.set(x, "csvFormatter", js.Any.fromFunction4(value))
+    def setCsvFormatter(value: (js.Any, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = StObject.set(x, "csvFormatter", js.Any.fromFunction4(value))
     
     @scala.inline
     def setCsvFormatterUndefined: Self = StObject.set(x, "csvFormatter", js.undefined)
@@ -228,7 +226,7 @@ object ColumnDescription {
     def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def setFilter(value: Boolean | (TableColumnFilterProps[_, _])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: Boolean | (TableColumnFilterProps[js.Any, js.Any])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -306,13 +304,13 @@ object ColumnDescription {
     def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def setFormatExtraData(value: TooltipFormatter[T] with E): Self = StObject.set(x, "formatExtraData", value.asInstanceOf[js.Any])
+    def setFormatExtraData(value: TooltipFormatter[T] & E): Self = StObject.set(x, "formatExtraData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormatExtraDataUndefined: Self = StObject.set(x, "formatExtraData", js.undefined)
     
     @scala.inline
-    def setFormatter(value: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = StObject.set(x, "formatter", js.Any.fromFunction4(value))
+    def setFormatter(value: (js.Any, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = StObject.set(x, "formatter", js.Any.fromFunction4(value))
     
     @scala.inline
     def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)

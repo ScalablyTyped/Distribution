@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeetingNotificationConfiguration extends StObject {
   
   /**
     * The SNS topic ARN.
     */
-  var SnsTopicArn: js.UndefOr[Arn] = js.native
+  var SnsTopicArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The SQS queue ARN.
     */
-  var SqsQueueArn: js.UndefOr[Arn] = js.native
+  var SqsQueueArn: js.UndefOr[Arn] = js.undefined
 }
 object MeetingNotificationConfiguration {
   

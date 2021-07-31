@@ -6,19 +6,19 @@ import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postingVideoOptionsMod {
   
-  @js.native
-  trait PostingStoryVideoOptions extends PostingStoryOptions {
+  trait PostingStoryVideoOptions
+    extends StObject
+       with PostingStoryOptions {
     
-    var coverImage: Buffer = js.native
+    var coverImage: Buffer
     
-    var transcodeDelay: js.UndefOr[Double] = js.native
+    var transcodeDelay: js.UndefOr[Double] = js.undefined
     
-    var video: Buffer = js.native
+    var video: Buffer
   }
   object PostingStoryVideoOptions {
     
@@ -45,20 +45,19 @@ object postingVideoOptionsMod {
     }
   }
   
-  @js.native
   trait PostingVideoOptions extends StObject {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var coverImage: Buffer = js.native
+    var coverImage: Buffer
     
-    var location: js.UndefOr[PostingLocation] = js.native
+    var location: js.UndefOr[PostingLocation] = js.undefined
     
-    var transcodeDelay: js.UndefOr[Double] = js.native
+    var transcodeDelay: js.UndefOr[Double] = js.undefined
     
-    var usertags: js.UndefOr[PostingUsertags] = js.native
+    var usertags: js.UndefOr[PostingUsertags] = js.undefined
     
-    var video: Buffer = js.native
+    var video: Buffer
   }
   object PostingVideoOptions {
     

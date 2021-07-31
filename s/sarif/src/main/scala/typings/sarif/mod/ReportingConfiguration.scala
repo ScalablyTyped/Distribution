@@ -3,36 +3,34 @@ package typings.sarif.mod
 import typings.sarif.mod.ReportingConfiguration.level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportingConfiguration extends StObject {
   
   /**
     * Specifies whether the report may be produced during the scan.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the failure level for the report.
     */
-  var level: js.UndefOr[level] = js.native
+  var level: js.UndefOr[level] = js.undefined
   
   /**
     * Contains configuration information specific to a report.
     */
-  var parameters: js.UndefOr[PropertyBag] = js.native
+  var parameters: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the reporting configuration.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * Specifies the relative priority of the report. Used for analysis output only.
     */
-  var rank: js.UndefOr[Double] = js.native
+  var rank: js.UndefOr[Double] = js.undefined
 }
 object ReportingConfiguration {
   

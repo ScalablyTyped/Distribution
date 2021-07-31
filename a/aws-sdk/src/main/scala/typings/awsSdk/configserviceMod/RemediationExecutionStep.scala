@@ -2,36 +2,34 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemediationExecutionStep extends StObject {
   
   /**
     * An error message if the step was interrupted during execution.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The details of the step.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the step started.
     */
-  var StartTime: js.UndefOr[Date] = js.native
+  var StartTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The valid status of the step.
     */
-  var State: js.UndefOr[RemediationExecutionStepState] = js.native
+  var State: js.UndefOr[RemediationExecutionStepState] = js.undefined
   
   /**
     * The time when the step stopped.
     */
-  var StopTime: js.UndefOr[Date] = js.native
+  var StopTime: js.UndefOr[Date] = js.undefined
 }
 object RemediationExecutionStep {
   

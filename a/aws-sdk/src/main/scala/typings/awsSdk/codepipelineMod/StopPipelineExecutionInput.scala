@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopPipelineExecutionInput extends StObject {
   
   /**
     * Use this option to stop the pipeline execution by abandoning, rather than finishing, in-progress actions.  This option can lead to failed or out-of-sequence tasks. 
     */
-  var abandon: js.UndefOr[Boolean] = js.native
+  var abandon: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the pipeline execution to be stopped in the current stage. Use the GetPipelineState action to retrieve the current pipelineExecutionId.
     */
-  var pipelineExecutionId: PipelineExecutionId = js.native
+  var pipelineExecutionId: PipelineExecutionId
   
   /**
     * The name of the pipeline to stop.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
   
   /**
     * Use this option to enter comments, such as the reason the pipeline was stopped.
     */
-  var reason: js.UndefOr[StopPipelineExecutionReason] = js.native
+  var reason: js.UndefOr[StopPipelineExecutionReason] = js.undefined
 }
 object StopPipelineExecutionInput {
   

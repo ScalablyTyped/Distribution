@@ -2,36 +2,34 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingsFilterListItem extends StObject {
   
   /**
     * The action that's performed on findings that meet the filter criteria. Possible values are: ARCHIVE, suppress (automatically archive) the findings; and, NOOP, don't perform any action on the findings.
     */
-  var action: js.UndefOr[FindingsFilterAction] = js.native
+  var action: js.UndefOr[FindingsFilterAction] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the filter.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the filter.
     */
-  var id: js.UndefOr[string] = js.native
+  var id: js.UndefOr[string] = js.undefined
   
   /**
     * The custom name of the filter.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
   
   /**
     * A map of key-value pairs that identifies the tags (keys and values) that are associated with the filter.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object FindingsFilterListItem {
   

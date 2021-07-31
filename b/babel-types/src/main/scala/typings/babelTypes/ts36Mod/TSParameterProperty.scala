@@ -5,22 +5,21 @@ import typings.babelTypes.babelTypesStrings.`protected`
 import typings.babelTypes.babelTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSParameterProperty
-  extends Node
+  extends StObject
+     with Node
      with LVal {
   
-  var accessibility: public | `private` | `protected` | Null = js.native
+  var accessibility: public | `private` | `protected` | Null
   
-  var parameter: Identifier_ | AssignmentPattern_ = js.native
+  var parameter: Identifier_ | AssignmentPattern_
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
   @JSName("type")
-  var type_TSParameterProperty: typings.babelTypes.babelTypesStrings.TSParameterProperty = js.native
+  var type_TSParameterProperty: typings.babelTypes.babelTypesStrings.TSParameterProperty
 }
 object TSParameterProperty {
   

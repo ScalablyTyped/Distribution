@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive keyboard events. */
-@js.native
-trait XKeyListener extends XEventListener {
+trait XKeyListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a key has been pressed. */
-  def keyPressed(e: KeyEvent): Unit = js.native
+  def keyPressed(e: KeyEvent): Unit
   
   /** is invoked when a key has been released. */
-  def keyReleased(e: KeyEvent): Unit = js.native
+  def keyReleased(e: KeyEvent): Unit
 }
 object XKeyListener {
   

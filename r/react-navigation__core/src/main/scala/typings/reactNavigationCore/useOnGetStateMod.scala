@@ -6,21 +6,22 @@ import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useOnGetStateMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useOnGetState", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useOnGetState", JSImport.Namespace)
   @js.native
-  def default(hasGetStateGetStateListeners: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasGetStateGetStateListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetStateGetStateListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    def getState(): NavigationState[ParamListBase] = js.native
+    def getState(): NavigationState[ParamListBase]
     
-    var getStateListeners: Record[String, js.UndefOr[GetStateListener]] = js.native
+    var getStateListeners: Record[String, js.UndefOr[GetStateListener]]
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBeaconsRes extends StObject {
   
   /**
     * 接口调用成功的回调函数
     */
-  var beacons: js.UndefOr[js.Array[Beacon]] = js.native
+  var beacons: js.UndefOr[js.Array[Beacon]] = js.undefined
   
   /**
     * 调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
 }
 object GetBeaconsRes {
   

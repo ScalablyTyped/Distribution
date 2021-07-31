@@ -3,24 +3,24 @@ package typings.webpackBlocksTypescript
 import typings.webpackBlocksTypescript.anon.Modules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@webpack-blocks/typescript", JSImport.Namespace)
-  @js.native
-  def apply(): js.Any = js.native
-  @JSImport("@webpack-blocks/typescript", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Any = js.native
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
+  @JSImport("@webpack-blocks/typescript", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait BabelOptions extends StObject {
     
-    var babelrc: js.UndefOr[Boolean] = js.native
+    var babelrc: js.UndefOr[Boolean] = js.undefined
     
-    var presets: js.UndefOr[js.Array[js.Array[Modules | String]]] = js.native
+    var presets: js.UndefOr[js.Array[js.Array[Modules | String]]] = js.undefined
   }
   object BabelOptions {
     
@@ -52,42 +52,41 @@ object mod {
   
   type CustomTransformersFunction = js.Function1[/* program */ js.Any, js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var babelCore: js.UndefOr[String] = js.native
+    var babelCore: js.UndefOr[String] = js.undefined
     
-    var babelOptions: js.UndefOr[BabelOptions] = js.native
+    var babelOptions: js.UndefOr[BabelOptions] = js.undefined
     
-    var cacheDirectory: js.UndefOr[String] = js.native
+    var cacheDirectory: js.UndefOr[String] = js.undefined
     
-    var compiler: js.UndefOr[String] = js.native
+    var compiler: js.UndefOr[String] = js.undefined
     
-    var configFileName: js.UndefOr[String] = js.native
+    var configFileName: js.UndefOr[String] = js.undefined
     
-    var errorsAsWarnings: js.UndefOr[Boolean] = js.native
+    var errorsAsWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var forceIsolatedModules: js.UndefOr[Boolean] = js.native
+    var forceIsolatedModules: js.UndefOr[Boolean] = js.undefined
     
-    var getCustomTransformers: js.UndefOr[String | CustomTransformersFunction] = js.native
+    var getCustomTransformers: js.UndefOr[String | CustomTransformersFunction] = js.undefined
     
-    var ignoreDiagnostics: js.UndefOr[js.Array[Double]] = js.native
+    var ignoreDiagnostics: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var instance: js.UndefOr[String] = js.native
+    var instance: js.UndefOr[String] = js.undefined
     
-    var reportFiles: js.UndefOr[js.Array[String]] = js.native
+    var reportFiles: js.UndefOr[js.Array[String]] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var transpileOnly: js.UndefOr[Boolean] = js.native
+    var transpileOnly: js.UndefOr[Boolean] = js.undefined
     
-    var useBabel: js.UndefOr[Boolean] = js.native
+    var useBabel: js.UndefOr[Boolean] = js.undefined
     
-    var useCache: js.UndefOr[Boolean] = js.native
+    var useCache: js.UndefOr[Boolean] = js.undefined
     
-    var usePrecompiledFiles: js.UndefOr[Boolean] = js.native
+    var usePrecompiledFiles: js.UndefOr[Boolean] = js.undefined
     
-    var useTranspileModule: js.UndefOr[Boolean] = js.native
+    var useTranspileModule: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

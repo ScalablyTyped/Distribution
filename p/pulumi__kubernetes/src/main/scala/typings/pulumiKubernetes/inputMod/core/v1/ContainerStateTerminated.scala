@@ -3,49 +3,47 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerStateTerminated is a terminated state of a container.
   */
-@js.native
 trait ContainerStateTerminated extends StObject {
   
   /**
     * Container's ID in the format 'docker://<container_id>'
     */
-  var containerID: js.UndefOr[Input[String]] = js.native
+  var containerID: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Exit status from the last termination of the container
     */
-  var exitCode: Input[Double] = js.native
+  var exitCode: Input[Double]
   
   /**
     * Time at which the container last terminated
     */
-  var finishedAt: js.UndefOr[Input[String]] = js.native
+  var finishedAt: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Message regarding the last termination of the container
     */
-  var message: js.UndefOr[Input[String]] = js.native
+  var message: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * (brief) reason from the last termination of the container
     */
-  var reason: js.UndefOr[Input[String]] = js.native
+  var reason: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Signal from the last termination of the container
     */
-  var signal: js.UndefOr[Input[Double]] = js.native
+  var signal: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Time at which previous execution of the container started
     */
-  var startedAt: js.UndefOr[Input[String]] = js.native
+  var startedAt: js.UndefOr[Input[String]] = js.undefined
 }
 object ContainerStateTerminated {
   

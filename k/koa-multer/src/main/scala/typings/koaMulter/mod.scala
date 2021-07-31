@@ -10,29 +10,27 @@ import typings.node.httpMod.IncomingMessage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  @scala.inline
+  def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  
   @JSImport("koa-multer", JSImport.Namespace)
   @js.native
-  def apply(): Instance = js.native
-  @JSImport("koa-multer", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Instance = js.native
+  val ^ : js.Any = js.native
   
   /* The disk storage engine gives you full control on storing files to disk. */
-  @JSImport("koa-multer", "diskStorage")
-  @js.native
-  def diskStorage(options: DiskStorageOptions): StorageEngine = js.native
+  @scala.inline
+  def diskStorage(options: DiskStorageOptions): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("diskStorage")(options.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
   
   /* The memory storage engine stores the files in memory as Buffer objects. */
-  @JSImport("koa-multer", "memoryStorage")
-  @js.native
-  def memoryStorage(): StorageEngine = js.native
+  @scala.inline
+  def memoryStorage(): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryStorage")().asInstanceOf[StorageEngine]
   
-  @js.native
   trait DiskStorageOptions extends StObject {
     
     /** A function used to determine within which folder the uploaded files should be stored. Defaults to the system's default temporary directory. */
@@ -43,7 +41,7 @@ object mod {
           /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** A function used to determine what the file should be named inside the folder. Defaults to a random name with no file extension. */
     var filename: js.UndefOr[
@@ -53,7 +51,7 @@ object mod {
           /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DiskStorageOptions {
     
@@ -94,14 +92,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Field extends StObject {
     
     /** Optional maximum number of files per field to accept. */
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
     /** The field name. */
-    var name: String = js.native
+    var name: String
   }
   object Field {
     
@@ -125,35 +122,34 @@ object mod {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
     /** A Buffer of the entire file (MemoryStorage) */
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
     /** The folder to which the file has been saved (DiskStorage) */
-    var destination: String = js.native
+    var destination: String
     
     /** Encoding type of the file */
-    var encoding: String = js.native
+    var encoding: String
     
     /** Field name specified in the form */
-    var fieldname: String = js.native
+    var fieldname: String
     
     /** The name of the file within the destination (DiskStorage) */
-    var filename: String = js.native
+    var filename: String
     
     /** Mime type of the file */
-    var mimetype: String = js.native
+    var mimetype: String
     
     /** Name of the file on the user's computer */
-    var originalname: String = js.native
+    var originalname: String
     
     /** Location of the uploaded file (DiskStorage) */
-    var path: String = js.native
+    var path: String
     
     /** Size of the file in bytes */
-    var size: Double = js.native
+    var size: Double
   }
   object File {
     
@@ -234,11 +230,10 @@ object mod {
     var files: StringDictionary[js.Array[File]] | js.Array[File] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** The destination directory for the uploaded files. */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /** A function to control which files to upload and which to skip. */
     var fileFilter: js.UndefOr[
@@ -248,16 +243,16 @@ object mod {
           /* callback */ js.Function2[/* error */ Error | Null, /* acceptFile */ Boolean, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An object specifying the size limits of the following optional properties. This object is passed to busboy
       * directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods
       */
-    var limits: js.UndefOr[FieldNameSize] = js.native
+    var limits: js.UndefOr[FieldNameSize] = js.undefined
     
     /** The storage engine to use for uploaded files. */
-    var storage: js.UndefOr[StorageEngine] = js.native
+    var storage: js.UndefOr[StorageEngine] = js.undefined
   }
   object Options {
     
@@ -298,16 +293,15 @@ object mod {
     }
   }
   
-  @js.native
   trait StorageEngine extends StObject {
     
     def _handleFile(
       req: IncomingMessage,
       file: File,
       callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def _removeFile(req: IncomingMessage, file: File, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def _removeFile(req: IncomingMessage, file: File, callback: js.Function1[/* error */ Error, Unit]): Unit
   }
   object StorageEngine {
     

@@ -4,25 +4,23 @@ import typings.pdfmake.pdfmakeStrings.Asterisk
 import typings.pdfmake.pdfmakeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
-  var body: js.Array[js.Array[TableCell]] = js.native
+  var body: js.Array[js.Array[TableCell]]
   
-  var dontBreakRows: js.UndefOr[Boolean] = js.native
+  var dontBreakRows: js.UndefOr[Boolean] = js.undefined
   
-  var headerRows: js.UndefOr[Double] = js.native
+  var headerRows: js.UndefOr[Double] = js.undefined
   
-  var heights: js.UndefOr[Double | js.Array[Double] | DynamicRowSize] = js.native
+  var heights: js.UndefOr[Double | js.Array[Double] | DynamicRowSize] = js.undefined
   
-  var keepWithHeaderRows: js.UndefOr[Double] = js.native
+  var keepWithHeaderRows: js.UndefOr[Double] = js.undefined
   
-  var layout: js.UndefOr[TableLayout] = js.native
+  var layout: js.UndefOr[TableLayout] = js.undefined
   
-  var widths: js.UndefOr[Asterisk | auto | js.Array[Size]] = js.native
+  var widths: js.UndefOr[Asterisk | auto | js.Array[Size]] = js.undefined
 }
 object Table {
   

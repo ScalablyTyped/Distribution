@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "msportalfx-mock" : "0.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "msportalfx-mock" : "0.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

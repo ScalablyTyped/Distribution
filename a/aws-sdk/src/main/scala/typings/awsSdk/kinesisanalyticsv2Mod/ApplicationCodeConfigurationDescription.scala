@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationCodeConfigurationDescription extends StObject {
   
   /**
     * Describes details about the location and format of the application code.
     */
-  var CodeContentDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CodeContentDescription] = js.native
+  var CodeContentDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CodeContentDescription] = js.undefined
   
   /**
     * Specifies whether the code content is in text or zip format.
     */
-  var CodeContentType: typings.awsSdk.kinesisanalyticsv2Mod.CodeContentType = js.native
+  var CodeContentType: typings.awsSdk.kinesisanalyticsv2Mod.CodeContentType
 }
 object ApplicationCodeConfigurationDescription {
   

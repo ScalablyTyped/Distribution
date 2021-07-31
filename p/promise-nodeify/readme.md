@@ -10,9 +10,9 @@ Call a Node-style callback with the resolution value or rejection cause of a Pro
 | ------------------ | :-------------: |
 | Full name          | promise-nodeify |
 | Keywords           | callback, nodeify, promise |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 761204 |
+| # downloads        | 701941 |
 | # stars            | 0 |
 
 ## Links

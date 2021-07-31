@@ -2,52 +2,44 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PostProcessStageLibrary {
   
-  @JSImport("cesium", "PostProcessStageLibrary.createBlackAndWhiteStage")
+  @JSImport("cesium", "PostProcessStageLibrary")
   @js.native
-  def createBlackAndWhiteStage(): PostProcessStage = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cesium", "PostProcessStageLibrary.createBlurStage")
-  @js.native
-  def createBlurStage(): PostProcessStageComposite = js.native
+  @scala.inline
+  def createBlackAndWhiteStage(): PostProcessStage = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlackAndWhiteStage")().asInstanceOf[PostProcessStage]
   
-  @JSImport("cesium", "PostProcessStageLibrary.createBrightnessStage")
-  @js.native
-  def createBrightnessStage(): PostProcessStage = js.native
+  @scala.inline
+  def createBlurStage(): PostProcessStageComposite = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlurStage")().asInstanceOf[PostProcessStageComposite]
   
-  @JSImport("cesium", "PostProcessStageLibrary.createEdgeDetectionStage")
-  @js.native
-  def createEdgeDetectionStage(): PostProcessStage = js.native
+  @scala.inline
+  def createBrightnessStage(): PostProcessStage = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrightnessStage")().asInstanceOf[PostProcessStage]
   
-  @JSImport("cesium", "PostProcessStageLibrary.createLensFlareStage")
-  @js.native
-  def createLensFlareStage(): PostProcessStageComposite = js.native
+  @scala.inline
+  def createEdgeDetectionStage(): PostProcessStage = ^.asInstanceOf[js.Dynamic].applyDynamic("createEdgeDetectionStage")().asInstanceOf[PostProcessStage]
   
-  @JSImport("cesium", "PostProcessStageLibrary.createNightVisionStage")
-  @js.native
-  def createNightVisionStage(): PostProcessStage = js.native
+  @scala.inline
+  def createLensFlareStage(): PostProcessStageComposite = ^.asInstanceOf[js.Dynamic].applyDynamic("createLensFlareStage")().asInstanceOf[PostProcessStageComposite]
   
-  @JSImport("cesium", "PostProcessStageLibrary.createSilhouetteStage")
-  @js.native
-  def createSilhouetteStage(option: js.Any): PostProcessStageComposite = js.native
+  @scala.inline
+  def createNightVisionStage(): PostProcessStage = ^.asInstanceOf[js.Dynamic].applyDynamic("createNightVisionStage")().asInstanceOf[PostProcessStage]
   
-  @JSImport("cesium", "PostProcessStageLibrary.isAmbientOcclusionSupported")
-  @js.native
-  def isAmbientOcclusionSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def createSilhouetteStage(option: js.Any): PostProcessStageComposite = ^.asInstanceOf[js.Dynamic].applyDynamic("createSilhouetteStage")(option.asInstanceOf[js.Any]).asInstanceOf[PostProcessStageComposite]
   
-  @JSImport("cesium", "PostProcessStageLibrary.isDepthOfFieldSupported")
-  @js.native
-  def isDepthOfFieldSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def isAmbientOcclusionSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAmbientOcclusionSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cesium", "PostProcessStageLibrary.isEdgeDetectionSupported")
-  @js.native
-  def isEdgeDetectionSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def isDepthOfFieldSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDepthOfFieldSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cesium", "PostProcessStageLibrary.isSilhouetteSupported")
-  @js.native
-  def isSilhouetteSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def isEdgeDetectionSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEdgeDetectionSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSilhouetteSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSilhouetteSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

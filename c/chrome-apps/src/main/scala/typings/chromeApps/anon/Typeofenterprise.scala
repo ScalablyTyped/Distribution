@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofenterprise extends StObject {
   
   // #endregion
@@ -21,7 +19,7 @@ trait Typeofenterprise extends StObject {
     * @description
     * Use the chrome.enterprise.deviceAttributes API to read device attributes.
     */
-  val deviceAttributes: TypeofdeviceAttributes = js.native
+  val deviceAttributes: TypeofdeviceAttributes
   
   /**
     * @requires Permissions: 'enterprise.platformKeys'
@@ -32,7 +30,7 @@ trait Typeofenterprise extends StObject {
     * The certificates will be managed by the platform and can be used for TLS authentication, network access or by other extension through chrome.platformKeys.
     * @see[Documentation]{@link https://developer.chrome.com/extensions/enterprise_platformKeys}
     */
-  val platformKeys: TypeofplatformKeys = js.native
+  val platformKeys: TypeofplatformKeys
 }
 object Typeofenterprise {
   

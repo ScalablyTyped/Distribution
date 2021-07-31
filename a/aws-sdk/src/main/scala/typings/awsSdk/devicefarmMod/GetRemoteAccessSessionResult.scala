@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRemoteAccessSessionResult extends StObject {
   
   /**
     * A container that lists detailed information about the remote access session.
     */
-  var remoteAccessSession: js.UndefOr[RemoteAccessSession] = js.native
+  var remoteAccessSession: js.UndefOr[RemoteAccessSession] = js.undefined
 }
 object GetRemoteAccessSessionResult {
   

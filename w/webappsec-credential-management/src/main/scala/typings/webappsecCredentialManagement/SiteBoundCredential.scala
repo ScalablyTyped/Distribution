@@ -2,7 +2,6 @@ package typings.webappsecCredentialManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * store.
   */
 // tslint:disable-next-line no-empty-interface
-@js.native
-trait SiteBoundCredential extends Credential {
+trait SiteBoundCredential
+  extends StObject
+     with Credential {
   
   /**
     * A URL pointing to an image for the credential. This URL MUST be an
@@ -20,19 +20,19 @@ trait SiteBoundCredential extends Credential {
     * https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url|
     * a priori authenticated URL}.
     */
-  val iconURL: String | Null = js.native
+  val iconURL: String | Null
   
   /**
     * A name associated with the credential, intended as a human-understandable
     * public name.
     */
-  val name: String | Null = js.native
+  val name: String | Null
 }
 object SiteBoundCredential {
   
   @scala.inline
   def apply(id: String, `type`: String): SiteBoundCredential = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], iconURL = null, name = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteBoundCredential]
   }

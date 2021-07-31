@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachStaticIpRequest extends StObject {
   
   /**
     * The instance name to which you want to attach the static IP address.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
   
   /**
     * The name of the static IP.
     */
-  var staticIpName: ResourceName = js.native
+  var staticIpName: ResourceName
 }
 object AttachStaticIpRequest {
   

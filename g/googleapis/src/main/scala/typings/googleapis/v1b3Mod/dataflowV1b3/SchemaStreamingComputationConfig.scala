@@ -3,40 +3,38 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration information for a single streaming computation.
   */
-@js.native
 trait SchemaStreamingComputationConfig extends StObject {
   
   /**
     * Unique identifier for this computation.
     */
-  var computationId: js.UndefOr[String] = js.native
+  var computationId: js.UndefOr[String] = js.undefined
   
   /**
     * Instructions that comprise the computation.
     */
-  var instructions: js.UndefOr[js.Array[SchemaParallelInstruction]] = js.native
+  var instructions: js.UndefOr[js.Array[SchemaParallelInstruction]] = js.undefined
   
   /**
     * Stage name of this computation.
     */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /**
     * System defined name for this computation.
     */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
   
   /**
     * Map from user name of stateful transforms in this stage to their state
     * family.
     */
-  var transformUserNameToStateFamily: js.UndefOr[StringDictionary[String]] = js.native
+  var transformUserNameToStateFamily: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaStreamingComputationConfig {
   

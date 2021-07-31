@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductCode extends StObject {
   
   /**
     * The product code.
     */
-  var ProductCodeId: js.UndefOr[String] = js.native
+  var ProductCodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of product code.
     */
-  var ProductCodeType: js.UndefOr[ProductCodeValues] = js.native
+  var ProductCodeType: js.UndefOr[ProductCodeValues] = js.undefined
 }
 object ProductCode {
   

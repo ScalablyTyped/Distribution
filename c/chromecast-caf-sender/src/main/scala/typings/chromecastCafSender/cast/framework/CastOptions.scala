@@ -3,19 +3,17 @@ package typings.chromecastCafSender.cast.framework
 import typings.chrome.chrome.cast.AutoJoinPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CastOptions extends StObject {
   
-  var autoJoinPolicy: AutoJoinPolicy = js.native
+  var autoJoinPolicy: AutoJoinPolicy
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var receiverApplicationId: js.UndefOr[String] = js.native
+  var receiverApplicationId: js.UndefOr[String] = js.undefined
   
-  var resumeSavedSession: js.UndefOr[Boolean] = js.native
+  var resumeSavedSession: js.UndefOr[Boolean] = js.undefined
 }
 object CastOptions {
   

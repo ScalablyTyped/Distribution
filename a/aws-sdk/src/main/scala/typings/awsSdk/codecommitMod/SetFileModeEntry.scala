@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetFileModeEntry extends StObject {
   
   /**
     * The file mode for the file.
     */
-  var fileMode: FileModeTypeEnum = js.native
+  var fileMode: FileModeTypeEnum
   
   /**
     * The full path to the file, including the name of the file.
     */
-  var filePath: Path = js.native
+  var filePath: Path
 }
 object SetFileModeEntry {
   

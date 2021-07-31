@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIndexFieldsResponse extends StObject {
   
   /**
     * The index fields configured for the domain.
     */
-  var IndexFields: IndexFieldStatusList = js.native
+  var IndexFields: IndexFieldStatusList
 }
 object DescribeIndexFieldsResponse {
   

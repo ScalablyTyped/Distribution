@@ -6,11 +6,9 @@ import typings.officeJs.officeJsStrings.Table
 import typings.officeJs.officeJsStrings.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `binding.toJSON()`. */
-@js.native
 trait BindingData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait BindingData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait BindingData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var `type`: js.UndefOr[BindingType | Range | Table | Text] = js.native
+  var `type`: js.UndefOr[BindingType | Range | Table | Text] = js.undefined
 }
 object BindingData {
   

@@ -6,7 +6,6 @@ import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "BlobService")
@@ -42,13 +41,8 @@ class BlobService () extends StorageServiceClient {
     */
   def this(storageAccount: String, storageAccessKey: String) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String) = this()
-  def this(
-    storageAccount: String,
-    storageAccessKey: String,
-    host: js.UndefOr[scala.Nothing],
-    sasToken: String
-  ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, sasToken: String) = this()
+  def this(storageAccount: String, storageAccessKey: String, host: Unit, sasToken: String) = this()
   
   var SpeedSummary: Instantiable1[/* name */ String, typings.azure.mod.SpeedSummary] = js.native
   

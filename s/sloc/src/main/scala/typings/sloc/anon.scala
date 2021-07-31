@@ -2,32 +2,30 @@ package typings.sloc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Record<sloc.sloc.Key, number> */
-  @js.native
   trait RecordKeynumber extends StObject {
     
-    var block: Double = js.native
+    var block: Double
     
-    var blockEmpty: Double = js.native
+    var blockEmpty: Double
     
-    var comment: Double = js.native
+    var comment: Double
     
-    var empty: Double = js.native
+    var empty: Double
     
-    var mixed: Double = js.native
+    var mixed: Double
     
-    var single: Double = js.native
+    var single: Double
     
-    var source: Double = js.native
+    var source: Double
     
-    var todo: Double = js.native
+    var todo: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object RecordKeynumber {
     

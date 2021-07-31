@@ -2,19 +2,17 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for a transaction that can be used to read and write documents.
   */
-@js.native
 trait SchemaReadWrite extends StObject {
   
   /**
     * An optional transaction to retry.
     */
-  var retryTransaction: js.UndefOr[String] = js.native
+  var retryTransaction: js.UndefOr[String] = js.undefined
 }
 object SchemaReadWrite {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,11 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XImporter
   * @see XExporter
   */
-@js.native
-trait XFilter extends XInterface {
+trait XFilter
+  extends StObject
+     with XInterface {
   
   /** cancel the process. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
     * filter the document.
@@ -36,7 +36,7 @@ trait XFilter extends XInterface {
     * @param aDescriptor the {@link MediaDescriptor} describing the respective document.
     * @returns a boolean value indicating whether the filter operation was successful or not.
     */
-  def filter(aDescriptor: SeqEquiv[PropertyValue]): Boolean = js.native
+  def filter(aDescriptor: SeqEquiv[PropertyValue]): Boolean
 }
 object XFilter {
   

@@ -7,7 +7,6 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,7 +25,6 @@ object mod {
     def this(client: S3, options: CreateMultipartUploadRequest, streamOptions: StreamOptions) = this()
   }
   
-  @js.native
   trait StreamOptions extends StObject {
     
     /**
@@ -36,7 +34,7 @@ object mod {
       * @default 4MB for {@link ReadStream}
       * @default 10MB for {@link WriteStream}
       */
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
   }
   object StreamOptions {
     

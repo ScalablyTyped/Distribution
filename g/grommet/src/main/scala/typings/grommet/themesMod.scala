@@ -45,10 +45,13 @@ import typings.grommet.baseMod.ThemeType
 import typings.grommet.utilsMod.DeepReadonly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themesMod {
+  
+  @JSImport("grommet/themes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
   object base {
@@ -222,18 +225,14 @@ object themesMod {
   @js.native
   val dark: ThemeType = js.native
   
-  @JSImport("grommet/themes", "generate")
-  @js.native
-  def generate(): DeepReadonlyThemeType = js.native
-  @JSImport("grommet/themes", "generate")
-  @js.native
-  def generate(baseSpacing: js.UndefOr[scala.Nothing], scale: Double): DeepReadonlyThemeType = js.native
-  @JSImport("grommet/themes", "generate")
-  @js.native
-  def generate(baseSpacing: Double): DeepReadonlyThemeType = js.native
-  @JSImport("grommet/themes", "generate")
-  @js.native
-  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = js.native
+  @scala.inline
+  def generate(): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Double): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any]).asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
+  @scala.inline
+  def generate(baseSpacing: Unit, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
   
   @JSImport("grommet/themes", "grommet")
   @js.native

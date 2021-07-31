@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,16 +26,16 @@ trait ImageryTileMixin extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ImageryTileMixin.html#fetchTile)
     */
-  def fetchTile(level: Double, row: Double, col: Double): js.Promise[_] = js.native
-  def fetchTile(level: Double, row: Double, col: Double, options: js.Any): js.Promise[_] = js.native
+  def fetchTile(level: Double, row: Double, col: Double): js.Promise[js.Any] = js.native
+  def fetchTile(level: Double, row: Double, col: Double, options: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Identify pixel values at a given location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ImageryTileMixin.html#identify)
     */
-  def identify(point: Point): js.Promise[_] = js.native
-  def identify(point: Point, options: RasterIdentifyOptions): js.Promise[_] = js.native
+  def identify(point: Point): js.Promise[js.Any] = js.native
+  def identify(point: Point, options: RasterIdentifyOptions): js.Promise[js.Any] = js.native
   
   /**
     * The renderer assigned to the layer.

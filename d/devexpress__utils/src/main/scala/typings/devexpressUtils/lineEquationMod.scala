@@ -4,7 +4,6 @@ import typings.devexpressUtils.interfacesMod.IPoint
 import typings.devexpressUtils.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineEquationMod {
@@ -27,16 +26,17 @@ object lineEquationMod {
   /* static members */
   object LineEquation {
     
-    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation.equals")
+    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation")
     @js.native
-    def equals(a: LineEquation, b: LineEquation): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation.fromPoints")
-    @js.native
-    def fromPoints(pointA: IPoint, pointB: IPoint): LineEquation = js.native
+    @scala.inline
+    def equals(a: LineEquation, b: LineEquation): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation.getIntersection")
-    @js.native
-    def getIntersection(a: LineEquation, b: LineEquation): Point | Null = js.native
+    @scala.inline
+    def fromPoints(pointA: IPoint, pointB: IPoint): LineEquation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[LineEquation]
+    
+    @scala.inline
+    def getIntersection(a: LineEquation, b: LineEquation): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
   }
 }

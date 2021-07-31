@@ -5,35 +5,33 @@ import typings.swaggerTools.mod.Swagger20Operation
 import typings.swaggerTools.mod.SwaggerRequestParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Api extends StObject {
     
-    var api: js.Any = js.native
+    var api: js.Any
     
-    var apiDeclaration: js.Any = js.native
+    var apiDeclaration: js.Any
     
-    var apiIndex: Double = js.native
+    var apiIndex: Double
     
-    var authorizations: js.UndefOr[js.Any] = js.native
+    var authorizations: js.UndefOr[js.Any] = js.undefined
     
-    var operation: js.UndefOr[js.Any] = js.native
+    var operation: js.UndefOr[js.Any] = js.undefined
     
-    var operationPath: js.UndefOr[js.Array[String]] = js.native
+    var operationPath: js.UndefOr[js.Array[String]] = js.undefined
     
-    var params: SwaggerRequestParameters = js.native
+    var params: SwaggerRequestParameters
     
-    var resourceIndex: Double = js.native
+    var resourceIndex: Double
     
-    var resourceListing: js.Any = js.native
+    var resourceListing: js.Any
     
-    var swaggerVersion: String = js.native
+    var swaggerVersion: String
     
-    var useStubs: js.UndefOr[Boolean] = js.native
+    var useStubs: js.UndefOr[Boolean] = js.undefined
   }
   object Api {
     
@@ -104,28 +102,27 @@ object anon {
     }
   }
   
-  @js.native
   trait ApiPath[P /* <: SwaggerRequestParameters */] extends StObject {
     
-    var apiPath: String = js.native
+    var apiPath: String
     
-    var operation: js.UndefOr[Swagger20Operation] = js.native
+    var operation: js.UndefOr[Swagger20Operation] = js.undefined
     
-    var operationParameters: js.UndefOr[js.Array[OperationParameter]] = js.native
+    var operationParameters: js.UndefOr[js.Array[OperationParameter]] = js.undefined
     
-    var operationPath: js.UndefOr[js.Array[String]] = js.native
+    var operationPath: js.UndefOr[js.Array[String]] = js.undefined
     
-    var params: P = js.native
+    var params: P
     
-    var path: js.Any = js.native
+    var path: js.Any
     
-    var security: js.Array[_] = js.native
+    var security: js.Array[js.Any]
     
-    var swaggerObject: js.Any = js.native
+    var swaggerObject: js.Any
     
-    var swaggerVersion: String = js.native
+    var swaggerVersion: String
     
-    var useStubs: js.UndefOr[Boolean] = js.native
+    var useStubs: js.UndefOr[Boolean] = js.undefined
   }
   object ApiPath {
     
@@ -134,7 +131,7 @@ object anon {
       apiPath: String,
       params: P,
       path: js.Any,
-      security: js.Array[_],
+      security: js.Array[js.Any],
       swaggerObject: js.Any,
       swaggerVersion: String
     ): ApiPath[P] = {
@@ -143,7 +140,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ApiPathMutableBuilder[Self <: ApiPath[_], P /* <: SwaggerRequestParameters */] (val x: Self with ApiPath[P]) extends AnyVal {
+    implicit class ApiPathMutableBuilder[Self <: ApiPath[?], P /* <: SwaggerRequestParameters */] (val x: Self & ApiPath[P]) extends AnyVal {
       
       @scala.inline
       def setApiPath(value: String): Self = StObject.set(x, "apiPath", value.asInstanceOf[js.Any])
@@ -179,7 +176,7 @@ object anon {
       def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSecurity(value: js.Array[_]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      def setSecurity(value: js.Array[js.Any]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSecurityVarargs(value: js.Any*): Self = StObject.set(x, "security", js.Array(value :_*))

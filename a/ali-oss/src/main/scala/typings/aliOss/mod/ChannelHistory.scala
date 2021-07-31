@@ -2,18 +2,16 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelHistory extends StObject {
   
   //
-  var EndTime: String = js.native
+  var EndTime: String
   
-  var RemoteAddr: String = js.native
+  var RemoteAddr: String
   
-  var StartTime: String = js.native
+  var StartTime: String
 }
 object ChannelHistory {
   

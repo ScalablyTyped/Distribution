@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait StyleCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.native
+  var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var builtIn: js.UndefOr[Boolean] = js.native
+  var builtIn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var fill: js.UndefOr[RangeFillLoadOptions] = js.native
+  var fill: js.UndefOr[RangeFillLoadOptions] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var font: js.UndefOr[RangeFontLoadOptions] = js.native
+  var font: js.UndefOr[RangeFontLoadOptions] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var formulaHidden: js.UndefOr[Boolean] = js.native
+  var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.native
+  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeAlignment: js.UndefOr[Boolean] = js.native
+  var includeAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeBorder: js.UndefOr[Boolean] = js.native
+  var includeBorder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeFont: js.UndefOr[Boolean] = js.native
+  var includeFont: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeNumber: js.UndefOr[Boolean] = js.native
+  var includeNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includePatterns: js.UndefOr[Boolean] = js.native
+  var includePatterns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var includeProtection: js.UndefOr[Boolean] = js.native
+  var includeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var indentLevel: js.UndefOr[Boolean] = js.native
+  var indentLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -154,7 +152,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormat: js.UndefOr[Boolean] = js.native
+  var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -162,7 +160,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormatLocal: js.UndefOr[Boolean] = js.native
+  var numberFormatLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -170,7 +168,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var readingOrder: js.UndefOr[Boolean] = js.native
+  var readingOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -178,7 +176,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -186,7 +184,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var textOrientation: js.UndefOr[Boolean] = js.native
+  var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -194,7 +192,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.native
+  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -202,7 +200,7 @@ trait StyleCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object StyleCollectionLoadOptions {
   

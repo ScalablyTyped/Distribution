@@ -3,15 +3,15 @@ package typings.openfin.windowMod
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowEndLoadEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowEndLoadEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var documentName: String = js.native
+  var documentName: String
   
-  var isMain: Boolean = js.native
+  var isMain: Boolean
 }
 object WindowEndLoadEvent {
   
@@ -23,7 +23,7 @@ object WindowEndLoadEvent {
   }
   
   @scala.inline
-  implicit class WindowEndLoadEventMutableBuilder[Self <: WindowEndLoadEvent[_, _], Topic, Type] (val x: Self with (WindowEndLoadEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowEndLoadEventMutableBuilder[Self <: WindowEndLoadEvent[?, ?], Topic, Type] (val x: Self & (WindowEndLoadEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])

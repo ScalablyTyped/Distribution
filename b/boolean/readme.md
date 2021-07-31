@@ -10,9 +10,9 @@ boolean converts lots of things to boolean.
 | ------------------ | :-------------: |
 | Full name          | boolean |
 | Keywords           | boolean, parser |
-| # releases         | 7 |
-| # dependents       | 85 |
-| # downloads        | 14457963 |
+| # releases         | 8 |
+| # dependents       | 91 |
+| # downloads        | 23184475 |
 | # stars            | 0 |
 
 ## Links

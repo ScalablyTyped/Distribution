@@ -2,24 +2,22 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 广播自定义参数 */
-@js.native
 trait AdvertiseReqObj extends StObject {
   
   /** 当前Service是否可连接 */
-  var connectable: js.UndefOr[Boolean] = js.native
+  var connectable: js.UndefOr[Boolean] = js.undefined
   
   /** 广播中deviceName字段，默认为空 */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /** 广播的制造商信息, 仅安卓支持 */
-  var manufacturerData: js.UndefOr[js.Array[ManufacturerData]] = js.native
+  var manufacturerData: js.UndefOr[js.Array[ManufacturerData]] = js.undefined
   
   /** 要广播的serviceUuid列表 */
-  var serviceUuids: js.UndefOr[js.Array[String]] = js.native
+  var serviceUuids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AdvertiseReqObj {
   

@@ -5,19 +5,17 @@ import typings.grommet.utilsMod.MarginType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Up extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var down: js.UndefOr[ReactNode] = js.native
+  var down: js.UndefOr[ReactNode] = js.undefined
   
-  var margin: js.UndefOr[MarginType] = js.native
+  var margin: js.UndefOr[MarginType] = js.undefined
   
-  var up: js.UndefOr[ReactNode] = js.native
+  var up: js.UndefOr[ReactNode] = js.undefined
 }
 object Up {
   

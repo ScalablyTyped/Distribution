@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSelectorButtonsOptions extends StObject {
   
   /**
@@ -13,45 +11,45 @@ trait RangeSelectorButtonsOptions extends StObject {
     * span. If `type` is "month" and `count` is 3, the button spans three
     * months.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) A custom data grouping object for each button.
     */
-  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.native
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   
-  var events: js.UndefOr[RangeSelectorButtonsEventsOptions] = js.native
+  var events: js.UndefOr[RangeSelectorButtonsEventsOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) Additional range (in milliseconds) added to the end of
     * the calculated time span.
     */
-  var offsetMax: js.UndefOr[Double] = js.native
+  var offsetMax: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Additional range (in milliseconds) added to the start
     * of the calculated time span.
     */
-  var offsetMin: js.UndefOr[Double] = js.native
+  var offsetMin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) When buttons apply dataGrouping on a series, by
     * default zooming in/out will deselect buttons and unset dataGrouping.
     * Enable this option to keep buttons selected when extremes change.
     */
-  var preserveDataGrouping: js.UndefOr[Boolean] = js.native
+  var preserveDataGrouping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) The text for the button itself.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) Defined the time span for the button. Can be one of
     * `millisecond`, `second`, `minute`, `hour`, `day`, `week`, `month`,
     * `year`, `ytd`, and `all`.
     */
-  var `type`: js.UndefOr[RangeSelectorButtonTypeValue] = js.native
+  var `type`: js.UndefOr[RangeSelectorButtonTypeValue] = js.undefined
 }
 object RangeSelectorButtonsOptions {
   

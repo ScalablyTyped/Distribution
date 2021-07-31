@@ -6,31 +6,29 @@ import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseResponse
 import typings.devtoolsProtocol.mod.Protocol.Audits.IssueAddedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditsApi extends StObject {
   
   /**
     * Disables issues domain, prevents further issues from being reported to the client.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables issues domain, sends the issues collected so far to the client by means of the
     * `issueAdded` event.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Returns the response body and size if it were re-encoded with the specified settings. Only
     * applies to images.
     */
-  def getEncodedResponse(params: GetEncodedResponseRequest): js.Promise[GetEncodedResponseResponse] = js.native
+  def getEncodedResponse(params: GetEncodedResponseRequest): js.Promise[GetEncodedResponseResponse]
   
   @JSName("on")
-  def on_issueAdded(event: issueAdded, listener: js.Function1[/* params */ IssueAddedEvent, Unit]): Unit = js.native
+  def on_issueAdded(event: issueAdded, listener: js.Function1[/* params */ IssueAddedEvent, Unit]): Unit
 }
 object AuditsApi {
   

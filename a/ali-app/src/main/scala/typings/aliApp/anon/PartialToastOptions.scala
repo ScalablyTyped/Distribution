@@ -6,24 +6,22 @@ import typings.aliApp.aliAppStrings.none
 import typings.aliApp.aliAppStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.ToastOptions> */
-@js.native
 trait PartialToastOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var `type`: js.UndefOr[none | success | fail | exception | String] = js.native
+  var `type`: js.UndefOr[none | success | fail | exception | String] = js.undefined
 }
 object PartialToastOptions {
   

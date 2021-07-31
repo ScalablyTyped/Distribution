@@ -16,31 +16,30 @@ import typings.astTypes.kindsMod.StatementKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
-@js.native
 trait ImportDeclaration
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with DeclarationKind
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var importKind: js.UndefOr[value | `type` | typeof] = js.native
+  var importKind: js.UndefOr[value | `type` | typeof] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var source: LiteralKind = js.native
+  var source: LiteralKind
   
   var specifiers: js.UndefOr[
     js.Array[ImportSpecifierKind | ImportNamespaceSpecifierKind | ImportDefaultSpecifierKind]
-  ] = js.native
+  ] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.ImportDeclaration = js.native
+  var `type`: typings.astTypes.astTypesStrings.ImportDeclaration
 }
 object ImportDeclaration {
   

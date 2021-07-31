@@ -2,79 +2,77 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyTrade extends StObject {
   
   // timestamp in ISO format of offer validity
-  var cid: js.UndefOr[String] = js.native
+  var cid: js.UndefOr[String] = js.undefined
   
   // state of trade after confirmTrade
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   // hash of tx from exchange to user
-  var exchange: js.UndefOr[String] = js.native
+  var exchange: js.UndefOr[String] = js.undefined
   
   // 1000
-  var fiatCurrency: js.UndefOr[String] = js.native
+  var fiatCurrency: js.UndefOr[String] = js.undefined
   
-  var fiatStringAmount: js.UndefOr[String] = js.native
+  var fiatStringAmount: js.UndefOr[String] = js.undefined
   
-  var infoNote: js.UndefOr[String] = js.native
+  var infoNote: js.UndefOr[String] = js.undefined
   
-  var maxCrypto: js.UndefOr[Double] = js.native
+  var maxCrypto: js.UndefOr[Double] = js.undefined
   
-  var maxFiat: js.UndefOr[Double] = js.native
+  var maxFiat: js.UndefOr[Double] = js.undefined
   
-  var minCrypto: js.UndefOr[Double] = js.native
+  var minCrypto: js.UndefOr[Double] = js.undefined
   
   // google clientID
-  var minFiat: js.UndefOr[Double] = js.native
+  var minFiat: js.UndefOr[Double] = js.undefined
   
   // ID of the quote assigned by exchange
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   // ID of the order assigned by us
-  var originalPaymentId: js.UndefOr[String] = js.native
+  var originalPaymentId: js.UndefOr[String] = js.undefined
   
-  var partnerData: js.UndefOr[String] = js.native
+  var partnerData: js.UndefOr[String] = js.undefined
   
   // ID of the payment assigned by us and later changed by the partner
-  var paymentId: js.UndefOr[String] = js.native
+  var paymentId: js.UndefOr[String] = js.undefined
   
-  var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.native
+  var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.undefined
   
   // 100
-  var quoteId: js.UndefOr[String] = js.native
+  var quoteId: js.UndefOr[String] = js.undefined
   
   // users address for receive tx
-  var rate: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.undefined
   
   // 0.12345
-  var receiveAddress: js.UndefOr[String] = js.native
+  var receiveAddress: js.UndefOr[String] = js.undefined
   
   // EUR
-  var receiveCurrency: js.UndefOr[String] = js.native
+  var receiveCurrency: js.UndefOr[String] = js.undefined
   
   // BTC
-  var receiveStringAmount: js.UndefOr[String] = js.native
+  var receiveStringAmount: js.UndefOr[String] = js.undefined
   
   // something went wrong after confirmTrade
-  var receiveTxHash: js.UndefOr[String] = js.native
+  var receiveTxHash: js.UndefOr[String] = js.undefined
   
   // ID of the payment assigned by us or by partner
-  var status: js.UndefOr[BuyTradeStatus] = js.native
+  var status: js.UndefOr[BuyTradeStatus] = js.undefined
   
   // arbitrary data specific for the partner
-  var tags: js.UndefOr[js.Array[BuyTradeTag]] = js.native
+  var tags: js.UndefOr[js.Array[BuyTradeTag]] = js.undefined
   
   // locally used data types
-  var tradeForm: js.UndefOr[BuyTradeFormResponse] = js.native
+  var tradeForm: js.UndefOr[BuyTradeFormResponse] = js.undefined
   
   // which exchange this trade belongs to, used for discrimination in ExchangeService
-  var validUntil: js.UndefOr[String] = js.native
+  var validUntil: js.UndefOr[String] = js.undefined
 }
 object BuyTrade {
   

@@ -2,29 +2,27 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpyAnd extends StObject {
   
   /** By chaining the spy with and.callFake, all calls to the spy will delegate to the supplied function. */
-  def callFake(fn: js.Function): Spy = js.native
+  def callFake(fn: js.Function): Spy
   
   /** By chaining the spy with and.callThrough, the spy will still track all calls to it but in addition it will delegate to the actual implementation. */
-  def callThrough(): Spy = js.native
+  def callThrough(): Spy
   
   /** By chaining the spy with and.returnValue, all calls to the function will return a specific value. */
-  def returnValue(`val`: js.Any): Spy = js.native
+  def returnValue(`val`: js.Any): Spy
   
   /** By chaining the spy with and.returnValues, all calls to the function will return specific values in order until it reaches the end of the return values list. */
-  def returnValues(values: js.Any*): Spy = js.native
+  def returnValues(values: js.Any*): Spy
   
   /** When a calling strategy is used for a spy, the original stubbing behavior can be returned at any time with and.stub. */
-  def stub(): Spy = js.native
+  def stub(): Spy
   
   /** By chaining the spy with and.throwError, all calls to the spy will throw the specified value. */
-  def throwError(msg: String): Spy = js.native
+  def throwError(msg: String): Spy
 }
 object SpyAnd {
   

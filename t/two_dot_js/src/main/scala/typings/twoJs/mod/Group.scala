@@ -2,12 +2,13 @@ package typings.twoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("two.js", "Group")
 @js.native
-class Group () extends Object {
+class Group ()
+  extends StObject
+     with Object {
   
   def add(objects: _Object*): this.type = js.native
   def add(objects: js.Array[_Object]): this.type = js.native
@@ -56,8 +57,11 @@ class Group () extends Object {
 }
 object Group {
   
-  /* static member */
-  @JSImport("two.js", "Group.MakeObservable")
+  @JSImport("two.js", "Group")
   @js.native
-  def MakeObservable(obj: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def MakeObservable(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -2,10 +2,8 @@ package typings.websocket.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConfig extends StObject {
   
   /**
@@ -16,40 +14,40 @@ trait IConfig extends StObject {
     * messages will emit a `message` event in addition to the `frame` event.
     * @default true
     */
-  var assembleFragments: js.UndefOr[Boolean] = js.native
+  var assembleFragments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of milliseconds to wait after sending a close frame for an
     * `acknowledgement` to come back before giving up and just closing the socket.
     * @default 5000
     */
-  var closeTimeout: js.UndefOr[Double] = js.native
+  var closeTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether or not to fragment outgoing messages. If true, messages will be
     * automatically fragmented into chunks of up to `fragmentationThreshold` bytes.
     * @default true
     */
-  var fragmentOutgoingMessages: js.UndefOr[Boolean] = js.native
+  var fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum size of a frame in bytes before it is automatically fragmented.
     * @default 16KiB
     */
-  var fragmentationThreshold: js.UndefOr[Double] = js.native
+  var fragmentationThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed received frame size in bytes.
     * Single frame messages will also be limited to this maximum.
     * @default 1MiB
     */
-  var maxReceivedFrameSize: js.UndefOr[Double] = js.native
+  var maxReceivedFrameSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed aggregate message size (for fragmented messages) in bytes
     * @default 8MiB
     */
-  var maxReceivedMessageSize: js.UndefOr[Double] = js.native
+  var maxReceivedMessageSize: js.UndefOr[Double] = js.undefined
 }
 object IConfig {
   

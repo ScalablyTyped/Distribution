@@ -2,41 +2,38 @@ package typings.requireFromString
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("require-from-string", JSImport.Namespace)
-  @js.native
-  def apply(code: String): js.Any = js.native
-  @JSImport("require-from-string", JSImport.Namespace)
-  @js.native
-  def apply(code: String, filename: js.UndefOr[scala.Nothing], options: Options): js.Any = js.native
-  @JSImport("require-from-string", JSImport.Namespace)
-  @js.native
-  def apply(code: String, filename: String): js.Any = js.native
-  @JSImport("require-from-string", JSImport.Namespace)
-  @js.native
-  def apply(code: String, filename: String, options: Options): js.Any = js.native
-  @JSImport("require-from-string", JSImport.Namespace)
-  @js.native
-  def apply(code: String, options: Options): js.Any = js.native
+  @scala.inline
+  def apply(code: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(code: String, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(code: String, filename: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(code: String, filename: Unit, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(code: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("require-from-string", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * List of `paths`, that will be appended to module `paths`.
       * Useful when you want to be able require modules from these paths.
       */
-    var appendPaths: js.UndefOr[js.Array[String]] = js.native
+    var appendPaths: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * List of `paths`, that will be preppended to module `paths`.
       * Useful when you want to be able require modules from these paths.
       */
-    var prependPaths: js.UndefOr[js.Array[String]] = js.native
+    var prependPaths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

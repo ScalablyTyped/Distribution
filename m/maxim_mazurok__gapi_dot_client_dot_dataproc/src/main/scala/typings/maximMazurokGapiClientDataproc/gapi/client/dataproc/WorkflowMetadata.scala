@@ -3,52 +3,50 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowMetadata extends StObject {
   
   /** Output only. The name of the target cluster. */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /** Output only. The UUID of target cluster. */
-  var clusterUuid: js.UndefOr[String] = js.native
+  var clusterUuid: js.UndefOr[String] = js.undefined
   
   /** Output only. The create cluster operation metadata. */
-  var createCluster: js.UndefOr[ClusterOperation] = js.native
+  var createCluster: js.UndefOr[ClusterOperation] = js.undefined
   
   /** Output only. The delete cluster operation metadata. */
-  var deleteCluster: js.UndefOr[ClusterOperation] = js.native
+  var deleteCluster: js.UndefOr[ClusterOperation] = js.undefined
   
   /** Output only. Workflow end time. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The workflow graph. */
-  var graph: js.UndefOr[WorkflowGraph] = js.native
+  var graph: js.UndefOr[WorkflowGraph] = js.undefined
   
   /** Map from parameter names to values that were used for those parameters. */
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. Workflow start time. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The workflow state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the workflow template as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates, the resource
     * name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} For projects.locations.workflowTemplates, the resource name of
     * the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}
     */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
   /** Output only. The version of template at the time of workflow instantiation. */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object WorkflowMetadata {
   
@@ -101,7 +99,7 @@ object WorkflowMetadata {
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -6,15 +6,122 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rootContainerMod {
   
   @JSImport("playable/dist/src/modules/root-container/root-container", JSImport.Default)
   @js.native
-  class default protected () extends RootContainer {
+  class default protected ()
+    extends StObject
+       with RootContainer {
     def this(hasEventEmitterConfig: ConfigEventEmitter) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastFocusEnter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastFocusLeave: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastMouseEnter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastMouseLeave: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastMouseMove: js.Any = js.native
+    
+    /* CompleteClass */
+    var _disableFocusInterceptors: js.Any = js.native
+    
+    /* CompleteClass */
+    var _disengageFocusSource: js.Any = js.native
+    
+    /* CompleteClass */
+    var _disengageFocusWithin: js.Any = js.native
+    
+    /* CompleteClass */
+    var _elementQueries: js.Any = js.native
+    
+    /* CompleteClass */
+    var _enableFocusInterceptors: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _onResized: js.Any = js.native
+    
+    /* CompleteClass */
+    var _resizeObserver: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    override def appendComponentElement(element: HTMLElement): Unit = js.native
+    
+    /**
+      * Method for attaching player node to your container
+      *
+      * @example
+      * document.addEventListener('DOMContentLoaded', function() {
+      *   const config = { src: 'http://my-url/video.mp4' }
+      *   const player = Playable.create(config);
+      *
+      *   player.attachToElement(document.getElementById('content'));
+      * });
+      */
+    /* CompleteClass */
+    override def attachToElement(element: Element): Unit = js.native
+    /* CompleteClass */
+    override def attachToElement(element: HTMLElement): Unit = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def getHeight(): Double = js.native
+    
+    /* CompleteClass */
+    override def getWidth(): Double = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setFillAllSpace(flag: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def setHeight(height: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def setRtl(rtl: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def setWidth(width: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.rootContainerViewMod.default = js.native
   }
   object default {
     
@@ -37,42 +144,43 @@ object rootContainerMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait RootContainer extends IRootContainer {
+  trait RootContainer
+    extends StObject
+       with IRootContainer {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _broadcastFocusEnter: js.Any = js.native
+    var _broadcastFocusEnter: js.Any
     
-    var _broadcastFocusLeave: js.Any = js.native
+    var _broadcastFocusLeave: js.Any
     
-    var _broadcastMouseEnter: js.Any = js.native
+    var _broadcastMouseEnter: js.Any
     
-    var _broadcastMouseLeave: js.Any = js.native
+    var _broadcastMouseLeave: js.Any
     
-    var _broadcastMouseMove: js.Any = js.native
+    var _broadcastMouseMove: js.Any
     
-    var _disableFocusInterceptors: js.Any = js.native
+    var _disableFocusInterceptors: js.Any
     
-    var _disengageFocusSource: js.Any = js.native
+    var _disengageFocusSource: js.Any
     
-    var _disengageFocusWithin: js.Any = js.native
+    var _disengageFocusWithin: js.Any
     
-    var _elementQueries: js.Any = js.native
+    var _elementQueries: js.Any
     
-    var _enableFocusInterceptors: js.Any = js.native
+    var _enableFocusInterceptors: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _onResized: js.Any = js.native
+    var _onResized: js.Any
     
-    var _resizeObserver: js.Any = js.native
+    var _resizeObserver: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
     /**
       * Method for attaching player node to your container
@@ -85,11 +193,11 @@ object rootContainerMod {
       *   player.attachToElement(document.getElementById('content'));
       * });
       */
-    def attachToElement(element: Element): Unit = js.native
+    def attachToElement(element: Element): Unit
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var view: typings.playable.rootContainerViewMod.default = js.native
+    var view: typings.playable.rootContainerViewMod.default
   }
   object RootContainer {
     

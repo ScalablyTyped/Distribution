@@ -7,7 +7,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,62 +22,61 @@ object mod extends Shortcut {
   @js.native
   val default: ClassicComponentClass[ReactJsPaginationProps] = js.native
   
-  @js.native
   trait ReactJsPaginationProps extends StObject {
     
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
-    var activeLinkClass: js.UndefOr[String] = js.native
+    var activeLinkClass: js.UndefOr[String] = js.undefined
     
-    var activePage: Double = js.native
+    var activePage: Double
     
-    var disabledClass: js.UndefOr[String] = js.native
+    var disabledClass: js.UndefOr[String] = js.undefined
     
-    var firstPageText: js.UndefOr[String | ReactElement] = js.native
+    var firstPageText: js.UndefOr[String | ReactElement] = js.undefined
     
-    var getPageUrl: js.UndefOr[js.Function1[/* pageNumber */ Double, String]] = js.native
+    var getPageUrl: js.UndefOr[js.Function1[/* pageNumber */ Double, String]] = js.undefined
     
-    var hideDisabled: js.UndefOr[Boolean] = js.native
+    var hideDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var hideFirstLastPages: js.UndefOr[Boolean] = js.native
+    var hideFirstLastPages: js.UndefOr[Boolean] = js.undefined
     
-    var hideNavigation: js.UndefOr[Boolean] = js.native
+    var hideNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var innerClass: js.UndefOr[String] = js.native
+    var innerClass: js.UndefOr[String] = js.undefined
     
-    var itemClass: js.UndefOr[String] = js.native
+    var itemClass: js.UndefOr[String] = js.undefined
     
-    var itemClassFirst: js.UndefOr[String] = js.native
+    var itemClassFirst: js.UndefOr[String] = js.undefined
     
-    var itemClassLast: js.UndefOr[String] = js.native
+    var itemClassLast: js.UndefOr[String] = js.undefined
     
-    var itemClassNext: js.UndefOr[String] = js.native
+    var itemClassNext: js.UndefOr[String] = js.undefined
     
-    var itemClassPrev: js.UndefOr[String] = js.native
+    var itemClassPrev: js.UndefOr[String] = js.undefined
     
-    var itemsCountPerPage: js.UndefOr[Double] = js.native
+    var itemsCountPerPage: js.UndefOr[Double] = js.undefined
     
-    var lastPageText: js.UndefOr[String | ReactElement] = js.native
+    var lastPageText: js.UndefOr[String | ReactElement] = js.undefined
     
-    var linkClass: js.UndefOr[String] = js.native
+    var linkClass: js.UndefOr[String] = js.undefined
     
-    var linkClassFirst: js.UndefOr[String] = js.native
+    var linkClassFirst: js.UndefOr[String] = js.undefined
     
-    var linkClassLast: js.UndefOr[String] = js.native
+    var linkClassLast: js.UndefOr[String] = js.undefined
     
-    var linkClassNext: js.UndefOr[String] = js.native
+    var linkClassNext: js.UndefOr[String] = js.undefined
     
-    var linkClassPrev: js.UndefOr[String] = js.native
+    var linkClassPrev: js.UndefOr[String] = js.undefined
     
-    var nextPageText: js.UndefOr[String | ReactElement] = js.native
+    var nextPageText: js.UndefOr[String | ReactElement] = js.undefined
     
-    def onChange(pageNumber: Double): Unit = js.native
+    def onChange(pageNumber: Double): Unit
     
-    var pageRangeDisplayed: js.UndefOr[Double] = js.native
+    var pageRangeDisplayed: js.UndefOr[Double] = js.undefined
     
-    var prevPageText: js.UndefOr[String | ReactElement] = js.native
+    var prevPageText: js.UndefOr[String | ReactElement] = js.undefined
     
-    var totalItemsCount: Double = js.native
+    var totalItemsCount: Double
   }
   object ReactJsPaginationProps {
     

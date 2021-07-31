@@ -2,25 +2,23 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An `EnvironmentVariable` is one variable to set in the running
   * program&#39;s environment.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable extends StObject {
   
   /**
     * The variable name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The variable value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable {
   

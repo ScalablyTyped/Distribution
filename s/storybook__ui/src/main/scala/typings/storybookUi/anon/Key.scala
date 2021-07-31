@@ -4,17 +4,15 @@ import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var render: ComponentType[js.Object] = js.native
+  var render: ComponentType[js.Object]
   
-  var route: FunctionComponent[js.Object] = js.native
+  var route: FunctionComponent[js.Object]
 }
 object Key {
   

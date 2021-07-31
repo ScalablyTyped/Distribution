@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientBooks.anon.QuotaUser
 import typings.maximMazurokGapiClientBooks.anon.Shelf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

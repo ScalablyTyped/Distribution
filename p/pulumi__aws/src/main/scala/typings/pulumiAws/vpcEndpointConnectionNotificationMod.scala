@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcEndpointConnectionNotificationMod {
@@ -58,6 +57,10 @@ object vpcEndpointConnectionNotificationMod {
   /* static members */
   object VpcEndpointConnectionNotification {
     
+    @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcEndpointConnectionNotification resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,55 +70,49 @@ object vpcEndpointConnectionNotificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcEndpointConnectionNotification = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpointConnectionNotification = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointConnectionNotificationState): VpcEndpointConnectionNotification = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointConnectionNotificationState): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: VpcEndpointConnectionNotificationState,
       opts: CustomResourceOptions
-    ): VpcEndpointConnectionNotification = js.native
+    ): VpcEndpointConnectionNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointConnectionNotification]
     
     /**
       * Returns true if the given object is an instance of VpcEndpointConnectionNotification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ Boolean]
   }
   
-  @js.native
   trait VpcEndpointConnectionNotificationArgs extends StObject {
     
     /**
       * One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters) for which to receive notifications.
       */
-    val connectionEvents: Input[js.Array[Input[String]]] = js.native
+    val connectionEvents: Input[js.Array[Input[String]]]
     
     /**
       * The ARN of the SNS topic for the notifications.
       */
-    val connectionNotificationArn: Input[String] = js.native
+    val connectionNotificationArn: Input[String]
     
     /**
       * The ID of the VPC Endpoint to receive notifications for.
       */
-    val vpcEndpointId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC Endpoint Service to receive notifications for.
       */
-    val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcEndpointConnectionNotificationArgs {
     
@@ -151,38 +148,37 @@ object vpcEndpointConnectionNotificationMod {
     }
   }
   
-  @js.native
   trait VpcEndpointConnectionNotificationState extends StObject {
     
     /**
       * One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters) for which to receive notifications.
       */
-    val connectionEvents: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val connectionEvents: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN of the SNS topic for the notifications.
       */
-    val connectionNotificationArn: js.UndefOr[Input[String]] = js.native
+    val connectionNotificationArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of notification.
       */
-    val notificationType: js.UndefOr[Input[String]] = js.native
+    val notificationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the notification.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC Endpoint to receive notifications for.
       */
-    val vpcEndpointId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC Endpoint Service to receive notifications for.
       */
-    val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcEndpointConnectionNotificationState {
     

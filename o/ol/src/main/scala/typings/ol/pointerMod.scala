@@ -5,10 +5,13 @@ import typings.std.PointerEvent
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointerMod {
+  
+  @JSImport("ol/interaction/Pointer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/interaction/Pointer", JSImport.Default)
   @js.native
@@ -16,24 +19,22 @@ object pointerMod {
     def this(opt_options: Options) = this()
   }
   
-  @JSImport("ol/interaction/Pointer", "centroid")
-  @js.native
-  def centroid(pointerEvents: js.Array[PointerEvent]): Pixel = js.native
+  @scala.inline
+  def centroid(pointerEvents: js.Array[PointerEvent]): Pixel = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(pointerEvents.asInstanceOf[js.Any]).asInstanceOf[Pixel]
   
-  @js.native
   trait Options extends StObject {
     
-    var handleDownEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Boolean]] = js.native
+    var handleDownEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Boolean]] = js.undefined
     
-    var handleDragEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Unit]] = js.native
+    var handleDragEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Unit]] = js.undefined
     
-    var handleEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Boolean]] = js.native
+    var handleEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Boolean]] = js.undefined
     
-    var handleMoveEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Unit]] = js.native
+    var handleMoveEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Unit]] = js.undefined
     
-    var handleUpEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Boolean]] = js.native
+    var handleUpEvent: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Boolean]] = js.undefined
     
-    var stopDown: js.UndefOr[js.Function1[/* p0 */ Boolean, Boolean]] = js.native
+    var stopDown: js.UndefOr[js.Function1[/* p0 */ Boolean, Boolean]] = js.undefined
   }
   object Options {
     

@@ -14,43 +14,41 @@ import typings.playcanvas.playcanvasStrings.vec3
 import typings.playcanvas.playcanvasStrings.vec4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var array: js.UndefOr[Boolean] = js.native
+  var array: js.UndefOr[Boolean] = js.undefined
   
-  var assetType: js.UndefOr[String] = js.native
+  var assetType: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var curves: js.UndefOr[js.Array[String]] = js.native
+  var curves: js.UndefOr[js.Array[String]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var enum: js.UndefOr[js.Array[js.Object]] = js.native
+  var `enum`: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var placeholder: js.UndefOr[String | js.Array[String]] = js.native
+  var placeholder: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
-  var schema: js.UndefOr[js.Array[js.Object]] = js.native
+  var schema: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: boolean | number | string | json | asset | entity | rgb | rgba | vec2 | vec3 | vec4 | curve = js.native
+  var `type`: boolean | number | string | json | asset | entity | rgb | rgba | vec2 | vec3 | vec4 | curve
 }
 object Array {
   

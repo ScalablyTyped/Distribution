@@ -2,13 +2,20 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IHelper
-  extends BaseContextClass
-     with PlainObject[js.Any] {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- scala.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+- js.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined 
+- js.Any because Inheritance from two classes. Inlined 
+- org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+- typings.egg.mod.PlainObject because Inheritance from two classes. Inlined  */ @js.native
+trait IHelper extends BaseContextClass {
   
   /**
     * Generate URL path(without host) for route. Takes the route name and a map of named params.
@@ -25,7 +32,7 @@ trait IHelper
     * @return {String} url path(without host)
     */
   def pathFor(name: String): String = js.native
-  def pathFor(name: String, params: PlainObject[_]): String = js.native
+  def pathFor(name: String, params: PlainObject[js.Any]): String = js.native
   
   /**
     * Generate full URL(with host) for route. Takes the route name and a map of named params.
@@ -41,5 +48,5 @@ trait IHelper
     * @return {String} full url(with host)
     */
   def urlFor(name: String): String = js.native
-  def urlFor(name: String, params: PlainObject[_]): String = js.native
+  def urlFor(name: String, params: PlainObject[js.Any]): String = js.native
 }

@@ -5,16 +5,16 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XSpellChecker1 extends XSupportedLanguages {
+trait XSpellChecker1
+  extends StObject
+     with XSupportedLanguages {
   
-  def isValid(aWord: String, nLanguage: Double, aProperties: PropertyValues): Boolean = js.native
+  def isValid(aWord: String, nLanguage: Double, aProperties: PropertyValues): Boolean
   
-  def spell(aWord: String, nLanguage: Double, aProperties: PropertyValues): XSpellAlternatives = js.native
+  def spell(aWord: String, nLanguage: Double, aProperties: PropertyValues): XSpellAlternatives
 }
 object XSpellChecker1 {
   

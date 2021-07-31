@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterStepHadoopJarStep extends StObject {
   
   /**
     * List of command line arguments passed to the JAR file's main function when executed.
     */
-  var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * Path to a JAR file run during the step.
     */
-  var jar: Input[String] = js.native
+  var jar: Input[String]
   
   /**
     * Name of the main class in the specified Java file. If not specified, the JAR file should specify a Main-Class in its manifest file.
     */
-  var mainClass: js.UndefOr[Input[String]] = js.native
+  var mainClass: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A map of properties specified within a configuration classification
     */
-  var properties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var properties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
 }
 object ClusterStepHadoopJarStep {
   

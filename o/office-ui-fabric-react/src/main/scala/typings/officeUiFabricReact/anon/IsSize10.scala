@@ -2,35 +2,33 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsSize10 extends StObject {
   
-  var isSize10: Boolean = js.native
+  var isSize10: Boolean
   
-  var isSize100: Boolean = js.native
+  var isSize100: Boolean
   
-  var isSize120: Boolean = js.native
+  var isSize120: Boolean
   
-  var isSize16: Boolean = js.native
+  var isSize16: Boolean
   
-  var isSize24: Boolean = js.native
+  var isSize24: Boolean
   
-  var isSize28: Boolean = js.native
+  var isSize28: Boolean
   
-  var isSize32: Boolean = js.native
+  var isSize32: Boolean
   
-  var isSize40: Boolean = js.native
+  var isSize40: Boolean
   
-  var isSize48: Boolean = js.native
+  var isSize48: Boolean
   
-  var isSize56: Boolean = js.native
+  var isSize56: Boolean
   
-  var isSize72: Boolean = js.native
+  var isSize72: Boolean
   
-  var isSize8: Boolean = js.native
+  var isSize8: Boolean
 }
 object IsSize10 {
   

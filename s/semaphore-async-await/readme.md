@@ -11,8 +11,8 @@ A promise-based semaphore implementation suitable to be used with async/await.
 | Full name          | semaphore-async-await |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 618525 |
+| # dependents       | 53 |
+| # downloads        | 696155 |
 | # stars            | 4 |
 
 ## Links

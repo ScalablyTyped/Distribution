@@ -2,37 +2,35 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait levelSwitchingData extends StObject {
   
-  var attrs: js.Any = js.native
+  var attrs: js.Any
   
-  var audioCodec: String = js.native
+  var audioCodec: String
   
-  var bitrate: Double = js.native
+  var bitrate: Double
   
-  var fragmentError: Boolean = js.native
+  var fragmentError: Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var level: Double = js.native
+  var level: Double
   
-  var loadError: Double = js.native
+  var loadError: Double
   
-  var name: String = js.native
+  var name: String
   
-  var unknownCodecs: js.Array[String] = js.native
+  var unknownCodecs: js.Array[String]
   
-  var url: js.Array[String] = js.native
+  var url: js.Array[String]
   
-  var urlId: Double = js.native
+  var urlId: Double
   
-  var videoCodec: String = js.native
+  var videoCodec: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object levelSwitchingData {
   

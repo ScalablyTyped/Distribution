@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityRecognizerMetadataEntityTypesListItem extends StObject {
   
   /**
     * Detailed information about the accuracy of the entity recognizer for a specific item on the list of entity types. 
     */
-  var EvaluationMetrics: js.UndefOr[EntityTypesEvaluationMetrics] = js.native
+  var EvaluationMetrics: js.UndefOr[EntityTypesEvaluationMetrics] = js.undefined
   
   /**
     * Indicates the number of times the given entity type was seen in the training data. 
     */
-  var NumberOfTrainMentions: js.UndefOr[Integer] = js.native
+  var NumberOfTrainMentions: js.UndefOr[Integer] = js.undefined
   
   /**
     * Type of entity from the list of entity types in the metadata of an entity recognizer. 
     */
-  var Type: js.UndefOr[AnyLengthString] = js.native
+  var Type: js.UndefOr[AnyLengthString] = js.undefined
 }
 object EntityRecognizerMetadataEntityTypesListItem {
   

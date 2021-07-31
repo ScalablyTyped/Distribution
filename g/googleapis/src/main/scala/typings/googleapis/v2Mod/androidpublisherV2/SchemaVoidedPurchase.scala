@@ -2,39 +2,37 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A VoidedPurchase resource indicates a purchase that was either
   * canceled/refunded/charged-back.
   */
-@js.native
 trait SchemaVoidedPurchase extends StObject {
   
   /**
     * This kind represents a voided purchase object in the androidpublisher
     * service.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the purchase was made, in milliseconds since the epoch
     * (Jan 1, 1970).
     */
-  var purchaseTimeMillis: js.UndefOr[String] = js.native
+  var purchaseTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The token that was generated when a purchase was made. This uniquely
     * identifies a purchase.
     */
-  var purchaseToken: js.UndefOr[String] = js.native
+  var purchaseToken: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the purchase was canceled/refunded/charged-back, in
     * milliseconds since the epoch (Jan 1, 1970).
     */
-  var voidedTimeMillis: js.UndefOr[String] = js.native
+  var voidedTimeMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaVoidedPurchase {
   

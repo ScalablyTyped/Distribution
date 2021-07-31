@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accessPointMod {
@@ -63,6 +62,10 @@ object accessPointMod {
   /* static members */
   object AccessPoint {
     
+    @JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AccessPoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,50 +75,44 @@ object accessPointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AccessPoint = js.native
-    @JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccessPoint = js.native
-    @JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = js.native
-    @JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
     
     /**
       * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean]
   }
   
-  @js.native
   trait AccessPointArgs extends StObject {
     
     /**
       * The ID of the file system for which the access point is intended.
       */
-    val fileSystemId: Input[String] = js.native
+    val fileSystemId: Input[String]
     
     /**
       * The operating system user and group applied to all file system requests made using the access point. See Posix User below.
       */
-    val posixUser: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]] = js.native
+    val posixUser: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]] = js.undefined
     
     /**
       * Specifies the directory on the Amazon EFS file system that the access point provides access to. See Root Directory below.
       */
-    val rootDirectory: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]] = js.native
+    val rootDirectory: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]] = js.undefined
     
     /**
       * Key-value mapping of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AccessPointArgs {
     
@@ -151,40 +148,39 @@ object accessPointMod {
     }
   }
   
-  @js.native
   trait AccessPointState extends StObject {
     
     /**
       * Amazon Resource Name of the access point.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name of the file system.
       */
-    val fileSystemArn: js.UndefOr[Input[String]] = js.native
+    val fileSystemArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the file system for which the access point is intended.
       */
-    val fileSystemId: js.UndefOr[Input[String]] = js.native
+    val fileSystemId: js.UndefOr[Input[String]] = js.undefined
     
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The operating system user and group applied to all file system requests made using the access point. See Posix User below.
       */
-    val posixUser: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]] = js.native
+    val posixUser: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]] = js.undefined
     
     /**
       * Specifies the directory on the Amazon EFS file system that the access point provides access to. See Root Directory below.
       */
-    val rootDirectory: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]] = js.native
+    val rootDirectory: js.UndefOr[Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]] = js.undefined
     
     /**
       * Key-value mapping of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AccessPointState {
     

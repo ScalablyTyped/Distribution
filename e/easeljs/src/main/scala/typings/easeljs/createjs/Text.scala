@@ -2,11 +2,12 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Text extends DisplayObject {
+trait Text
+  extends StObject
+     with DisplayObject {
   
   // properties
   var color: String = js.native

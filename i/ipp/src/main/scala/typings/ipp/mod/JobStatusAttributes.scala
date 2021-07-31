@@ -4,245 +4,243 @@ import typings.ipp.ippStrings.collated
 import typings.ipp.ippStrings.uncollated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatusAttributes extends StObject {
   
-  var `attributes-charset`: js.UndefOr[String] = js.native
+  var `attributes-charset`: js.UndefOr[String] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `chamber-humidity-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `chamber-humidity-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `chamber-temperature-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `chamber-temperature-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `compression-supplied`: js.UndefOr[Compression] = js.native
+  var `compression-supplied`: js.UndefOr[Compression] = js.undefined
   
-  var `copies-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `copies-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `cover-back-actual`: js.UndefOr[js.Array[Cover]] = js.native
+  var `cover-back-actual`: js.UndefOr[js.Array[Cover]] = js.undefined
   
-  var `cover-front-actual`: js.UndefOr[js.Array[Cover]] = js.native
+  var `cover-front-actual`: js.UndefOr[js.Array[Cover]] = js.undefined
   
-  var `date-time-at-completed`: js.UndefOr[String] = js.native
+  var `date-time-at-completed`: js.UndefOr[String] = js.undefined
   
-  var `date-time-at-creation`: js.UndefOr[String] = js.native
+  var `date-time-at-creation`: js.UndefOr[String] = js.undefined
   
-  var `date-time-at-processing`: js.UndefOr[String] = js.native
+  var `date-time-at-processing`: js.UndefOr[String] = js.undefined
   
-  var `destination-statuses`: js.UndefOr[js.Array[DestinationStatuses]] = js.native
+  var `destination-statuses`: js.UndefOr[js.Array[DestinationStatuses]] = js.undefined
   
-  var `document-charset-supplied`: js.UndefOr[String] = js.native
+  var `document-charset-supplied`: js.UndefOr[String] = js.undefined
   
-  var `document-digital-signature-supplied`: js.UndefOr[DocumentDigitalSignature] = js.native
+  var `document-digital-signature-supplied`: js.UndefOr[DocumentDigitalSignature] = js.undefined
   
-  var `document-format-details-supplied`: js.UndefOr[DocumentFormatDetails] = js.native
+  var `document-format-details-supplied`: js.UndefOr[DocumentFormatDetails] = js.undefined
   
-  var `document-format-ready`: js.UndefOr[js.Array[MimeMediaType]] = js.native
+  var `document-format-ready`: js.UndefOr[js.Array[MimeMediaType]] = js.undefined
   
-  var `document-format-supplied`: js.UndefOr[MimeMediaType] = js.native
+  var `document-format-supplied`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `document-format-version-supplied`: js.UndefOr[String] = js.native
+  var `document-format-version-supplied`: js.UndefOr[String] = js.undefined
   
-  var `document-message-supplied`: js.UndefOr[String] = js.native
+  var `document-message-supplied`: js.UndefOr[String] = js.undefined
   
-  var `document-name-supplied`: js.UndefOr[String] = js.native
+  var `document-name-supplied`: js.UndefOr[String] = js.undefined
   
-  var `document-natural-language-supplied`: js.UndefOr[String] = js.native
+  var `document-natural-language-supplied`: js.UndefOr[String] = js.undefined
   
-  var `errors-count`: js.UndefOr[Double] = js.native
+  var `errors-count`: js.UndefOr[Double] = js.undefined
   
-  var `finishings-actual`: js.UndefOr[js.Array[Finishings]] = js.native
+  var `finishings-actual`: js.UndefOr[js.Array[Finishings]] = js.undefined
   
-  var `finishings-col-actual`: js.UndefOr[js.Array[FinishingsInterface]] = js.native
+  var `finishings-col-actual`: js.UndefOr[js.Array[FinishingsInterface]] = js.undefined
   
-  var `force-front-side-actual`: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var `force-front-side-actual`: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var `imposition-template-actual`: js.UndefOr[js.Array[ImpositionTemplate]] = js.native
+  var `imposition-template-actual`: js.UndefOr[js.Array[ImpositionTemplate]] = js.undefined
   
-  var `input-attributes-actual`: js.UndefOr[InputAttributes] = js.native
+  var `input-attributes-actual`: js.UndefOr[InputAttributes] = js.undefined
   
-  var `insert-sheet-actual`: js.UndefOr[js.Array[InsertSheet]] = js.native
+  var `insert-sheet-actual`: js.UndefOr[js.Array[InsertSheet]] = js.undefined
   
-  var `job-account-id-actual`: js.UndefOr[js.Array[String]] = js.native
+  var `job-account-id-actual`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `job-account-type-actual`: js.UndefOr[JobAccountType] = js.native
+  var `job-account-type-actual`: js.UndefOr[JobAccountType] = js.undefined
   
-  var `job-accounting-sheets-actual`: js.UndefOr[js.Array[JobAccontingSheets]] = js.native
+  var `job-accounting-sheets-actual`: js.UndefOr[js.Array[JobAccontingSheets]] = js.undefined
   
-  var `job-accounting-user-id-actual`: js.UndefOr[js.Array[String]] = js.native
+  var `job-accounting-user-id-actual`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `job-attribute-fidelity`: js.UndefOr[Boolean] = js.native
+  var `job-attribute-fidelity`: js.UndefOr[Boolean] = js.undefined
   
-  var `job-detailed-status-messages`: js.UndefOr[js.Array[String]] = js.native
+  var `job-detailed-status-messages`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `job-document-access-errors`: js.UndefOr[js.Array[String]] = js.native
+  var `job-document-access-errors`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `job-error-sheet-actual`: js.UndefOr[js.Array[JobErrorSheet]] = js.native
+  var `job-error-sheet-actual`: js.UndefOr[js.Array[JobErrorSheet]] = js.undefined
   
-  var `job-hold-until-actual`: js.UndefOr[js.Array[JobHoldUntil]] = js.native
+  var `job-hold-until-actual`: js.UndefOr[js.Array[JobHoldUntil]] = js.undefined
   
-  var `job-id`: js.UndefOr[Double] = js.native
+  var `job-id`: js.UndefOr[Double] = js.undefined
   
-  var `job-impressions`: js.UndefOr[Double] = js.native
+  var `job-impressions`: js.UndefOr[Double] = js.undefined
   
-  var `job-impressions-col`: js.UndefOr[Impressions] = js.native
+  var `job-impressions-col`: js.UndefOr[Impressions] = js.undefined
   
-  var `job-impressions-completed`: js.UndefOr[Double] = js.native
+  var `job-impressions-completed`: js.UndefOr[Double] = js.undefined
   
-  var `job-impressions-completed-col`: js.UndefOr[Impressions] = js.native
+  var `job-impressions-completed-col`: js.UndefOr[Impressions] = js.undefined
   
-  var `job-k-octets`: js.UndefOr[Double] = js.native
+  var `job-k-octets`: js.UndefOr[Double] = js.undefined
   
-  var `job-k-octets-processed`: js.UndefOr[Double] = js.native
+  var `job-k-octets-processed`: js.UndefOr[Double] = js.undefined
   
-  var `job-media-sheets`: js.UndefOr[Double] = js.native
+  var `job-media-sheets`: js.UndefOr[Double] = js.undefined
   
-  var `job-media-sheets-col`: js.UndefOr[MediaSheets] = js.native
+  var `job-media-sheets-col`: js.UndefOr[MediaSheets] = js.undefined
   
-  var `job-media-sheets-completed`: js.UndefOr[Double] = js.native
+  var `job-media-sheets-completed`: js.UndefOr[Double] = js.undefined
   
-  var `job-media-sheets-completed-col`: js.UndefOr[Impressions] = js.native
+  var `job-media-sheets-completed-col`: js.UndefOr[Impressions] = js.undefined
   
-  var `job-more-info`: js.UndefOr[String] = js.native
+  var `job-more-info`: js.UndefOr[String] = js.undefined
   
-  var `job-originating-user-name`: js.UndefOr[String] = js.native
+  var `job-originating-user-name`: js.UndefOr[String] = js.undefined
   
-  var `job-originating-user-uri`: js.UndefOr[String] = js.native
+  var `job-originating-user-uri`: js.UndefOr[String] = js.undefined
   
-  var `job-pages`: js.UndefOr[Double] = js.native
+  var `job-pages`: js.UndefOr[Double] = js.undefined
   
-  var `job-pages-col`: js.UndefOr[Pages] = js.native
+  var `job-pages-col`: js.UndefOr[Pages] = js.undefined
   
-  var `job-pages-completed`: js.UndefOr[Double] = js.native
+  var `job-pages-completed`: js.UndefOr[Double] = js.undefined
   
-  var `job-pages-completed-col`: js.UndefOr[Pages] = js.native
+  var `job-pages-completed-col`: js.UndefOr[Pages] = js.undefined
   
-  var `job-pages-completed-current-copy`: js.UndefOr[Double] = js.native
+  var `job-pages-completed-current-copy`: js.UndefOr[Double] = js.undefined
   
-  var `job-printer-up-time`: js.UndefOr[Double] = js.native
+  var `job-printer-up-time`: js.UndefOr[Double] = js.undefined
   
-  var `job-printer-uri`: js.UndefOr[String] = js.native
+  var `job-printer-uri`: js.UndefOr[String] = js.undefined
   
-  var `job-priority-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `job-priority-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `job-resource-ids`: js.UndefOr[js.Array[Double]] = js.native
+  var `job-resource-ids`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `job-sheet-message-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `job-sheet-message-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `job-sheets-actual`: js.UndefOr[js.Array[JobSheets]] = js.native
+  var `job-sheets-actual`: js.UndefOr[js.Array[JobSheets]] = js.undefined
   
-  var `job-sheets-col-actual`: js.UndefOr[js.Array[JobSheetsInterface]] = js.native
+  var `job-sheets-col-actual`: js.UndefOr[js.Array[JobSheetsInterface]] = js.undefined
   
-  var `job-state`: js.UndefOr[JobState] = js.native
+  var `job-state`: js.UndefOr[JobState] = js.undefined
   
-  var `job-state-message`: js.UndefOr[String] = js.native
+  var `job-state-message`: js.UndefOr[String] = js.undefined
   
-  var `job-state-reasons`: js.UndefOr[js.Array[JobStateReasons]] = js.native
+  var `job-state-reasons`: js.UndefOr[js.Array[JobStateReasons]] = js.undefined
   
-  var `job-uri`: js.UndefOr[String] = js.native
+  var `job-uri`: js.UndefOr[String] = js.undefined
   
-  var `job-uuid`: js.UndefOr[String] = js.native
+  var `job-uuid`: js.UndefOr[String] = js.undefined
   
-  var `materials-col-actual`: js.UndefOr[js.Array[Materials]] = js.native
+  var `materials-col-actual`: js.UndefOr[js.Array[Materials]] = js.undefined
   
-  var `media-actual`: js.UndefOr[js.Array[String]] = js.native
+  var `media-actual`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `media-col-actual`: js.UndefOr[js.Array[MediaInterface]] = js.native
+  var `media-col-actual`: js.UndefOr[js.Array[MediaInterface]] = js.undefined
   
-  var `media-input-tray-check-actual`: js.UndefOr[js.Array[String]] = js.native
+  var `media-input-tray-check-actual`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `multiple-document-handling-actual`: js.UndefOr[js.Array[MultipleDocumentHandling]] = js.native
+  var `multiple-document-handling-actual`: js.UndefOr[js.Array[MultipleDocumentHandling]] = js.undefined
   
-  var `multiple-object-handling-actual`: js.UndefOr[MultipleObjectHandling] = js.native
+  var `multiple-object-handling-actual`: js.UndefOr[MultipleObjectHandling] = js.undefined
   
-  var `number-of-documents`: js.UndefOr[Double] = js.native
+  var `number-of-documents`: js.UndefOr[Double] = js.undefined
   
-  var `number-of-intervening-jobs`: js.UndefOr[Double] = js.native
+  var `number-of-intervening-jobs`: js.UndefOr[Double] = js.undefined
   
-  var `number-up-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `number-up-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `orientation-requested-actual`: js.UndefOr[js.Array[OrientationRequested]] = js.native
+  var `orientation-requested-actual`: js.UndefOr[js.Array[OrientationRequested]] = js.undefined
   
-  var `original-requesting-user-name`: js.UndefOr[String] = js.native
+  var `original-requesting-user-name`: js.UndefOr[String] = js.undefined
   
-  var `output-attributes-actual`: js.UndefOr[OutputAttributes] = js.native
+  var `output-attributes-actual`: js.UndefOr[OutputAttributes] = js.undefined
   
-  var `output-bin-actual`: js.UndefOr[js.Array[OutputBin]] = js.native
+  var `output-bin-actual`: js.UndefOr[js.Array[OutputBin]] = js.undefined
   
-  var `output-device-actual`: js.UndefOr[js.Array[String]] = js.native
+  var `output-device-actual`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `output-device-assigned`: js.UndefOr[String] = js.native
+  var `output-device-assigned`: js.UndefOr[String] = js.undefined
   
-  var `output-device-job-state`: js.UndefOr[JobState] = js.native
+  var `output-device-job-state`: js.UndefOr[JobState] = js.undefined
   
-  var `output-device-job-state-message`: js.UndefOr[String] = js.native
+  var `output-device-job-state-message`: js.UndefOr[String] = js.undefined
   
-  var `output-device-job-state-reasons`: js.UndefOr[js.Array[JobStateReasons]] = js.native
+  var `output-device-job-state-reasons`: js.UndefOr[js.Array[JobStateReasons]] = js.undefined
   
-  var `output-device-uuid-assigned`: js.UndefOr[String] = js.native
+  var `output-device-uuid-assigned`: js.UndefOr[String] = js.undefined
   
-  var `overrides-actual`: js.UndefOr[js.Array[Overrides]] = js.native
+  var `overrides-actual`: js.UndefOr[js.Array[Overrides]] = js.undefined
   
-  var `page-delivery-actual`: js.UndefOr[js.Array[PageDelivery]] = js.native
+  var `page-delivery-actual`: js.UndefOr[js.Array[PageDelivery]] = js.undefined
   
-  var `page-order-received-actual`: js.UndefOr[js.Array[PageOrder]] = js.native
+  var `page-order-received-actual`: js.UndefOr[js.Array[PageOrder]] = js.undefined
   
-  var `page-ranges-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `page-ranges-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `platform-temperature-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `platform-temperature-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `presentation-direction-number-up-actual`: js.UndefOr[js.Array[PresentationDirectionNumberUp]] = js.native
+  var `presentation-direction-number-up-actual`: js.UndefOr[js.Array[PresentationDirectionNumberUp]] = js.undefined
   
-  var `print-accuracy-actual`: js.UndefOr[PrintAccuracy] = js.native
+  var `print-accuracy-actual`: js.UndefOr[PrintAccuracy] = js.undefined
   
-  var `print-base-actual`: js.UndefOr[js.Array[PrintBase]] = js.native
+  var `print-base-actual`: js.UndefOr[js.Array[PrintBase]] = js.undefined
   
-  var `print-color-mode-actual`: js.UndefOr[js.Array[PrintColorMode]] = js.native
+  var `print-color-mode-actual`: js.UndefOr[js.Array[PrintColorMode]] = js.undefined
   
-  var `print-content-optimize-actual`: js.UndefOr[js.Array[PrintContentOptimize]] = js.native
+  var `print-content-optimize-actual`: js.UndefOr[js.Array[PrintContentOptimize]] = js.undefined
   
-  var `print-objects-actual`: js.UndefOr[js.Array[PrintObjects]] = js.native
+  var `print-objects-actual`: js.UndefOr[js.Array[PrintObjects]] = js.undefined
   
-  var `print-quality-actual`: js.UndefOr[js.Array[PrintQuality]] = js.native
+  var `print-quality-actual`: js.UndefOr[js.Array[PrintQuality]] = js.undefined
   
-  var `print-rendering-intent-actual`: js.UndefOr[js.Array[PrintRenderingIntent]] = js.native
+  var `print-rendering-intent-actual`: js.UndefOr[js.Array[PrintRenderingIntent]] = js.undefined
   
-  var `print-supports-actual`: js.UndefOr[js.Array[PrintSupports]] = js.native
+  var `print-supports-actual`: js.UndefOr[js.Array[PrintSupports]] = js.undefined
   
-  var `printer-resolution-actual`: js.UndefOr[js.Array[Resolution]] = js.native
+  var `printer-resolution-actual`: js.UndefOr[js.Array[Resolution]] = js.undefined
   
-  var `separator-sheets-actual`: js.UndefOr[js.Array[SeparatorSheets]] = js.native
+  var `separator-sheets-actual`: js.UndefOr[js.Array[SeparatorSheets]] = js.undefined
   
-  var `sheet-collate-actual`: js.UndefOr[js.Array[collated | uncollated]] = js.native
+  var `sheet-collate-actual`: js.UndefOr[js.Array[collated | uncollated]] = js.undefined
   
-  var `sides-actual`: js.UndefOr[js.Array[Sides]] = js.native
+  var `sides-actual`: js.UndefOr[js.Array[Sides]] = js.undefined
   
-  var `time-at-completed`: js.UndefOr[Double] = js.native
+  var `time-at-completed`: js.UndefOr[Double] = js.undefined
   
-  var `time-at-creation`: js.UndefOr[Double] = js.native
+  var `time-at-creation`: js.UndefOr[Double] = js.undefined
   
-  var `time-at-processing`: js.UndefOr[Double] = js.native
+  var `time-at-processing`: js.UndefOr[Double] = js.undefined
   
-  var `warnings-count`: js.UndefOr[Double] = js.native
+  var `warnings-count`: js.UndefOr[Double] = js.undefined
   
-  var `x-image-position-actual`: js.UndefOr[js.Array[XImagePosition]] = js.native
+  var `x-image-position-actual`: js.UndefOr[js.Array[XImagePosition]] = js.undefined
   
-  var `x-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `x-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `x-side1-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `x-side1-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `x-side2-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `x-side2-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `y-image-position-actual`: js.UndefOr[js.Array[YImagePosition]] = js.native
+  var `y-image-position-actual`: js.UndefOr[js.Array[YImagePosition]] = js.undefined
   
-  var `y-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `y-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `y-side1-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `y-side1-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `y-side2-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.native
+  var `y-side2-image-shift-actual`: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object JobStatusAttributes {
   

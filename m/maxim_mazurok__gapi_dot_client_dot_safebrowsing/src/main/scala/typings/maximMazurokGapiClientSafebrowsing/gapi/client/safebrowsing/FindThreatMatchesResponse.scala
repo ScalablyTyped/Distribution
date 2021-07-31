@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindThreatMatchesResponse extends StObject {
   
   /** The threat list matches. */
-  var matches: js.UndefOr[js.Array[ThreatMatch]] = js.native
+  var matches: js.UndefOr[js.Array[ThreatMatch]] = js.undefined
 }
 object FindThreatMatchesResponse {
   

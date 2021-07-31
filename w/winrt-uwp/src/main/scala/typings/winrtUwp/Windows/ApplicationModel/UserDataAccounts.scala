@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains user data account information needed to access email, appointments, calendars, and so on. */
@@ -24,68 +23,73 @@ object UserDataAccounts {
       
       /** Exchange server */
       @js.native
-      sealed trait exchange extends DeviceAccountServerType
+      sealed trait exchange
+        extends StObject
+           with DeviceAccountServerType
       
       /** IMAP server */
       @js.native
-      sealed trait imap extends DeviceAccountServerType
+      sealed trait imap
+        extends StObject
+           with DeviceAccountServerType
       
       /** POP server */
       @js.native
-      sealed trait pop extends DeviceAccountServerType
+      sealed trait pop
+        extends StObject
+           with DeviceAccountServerType
     }
     
     /** Represents device settings for app sync relationships. */
-    @js.native
     trait DeviceAccountConfiguration extends StObject {
       
       /** Gets or sets the name that identifies the device account. */
-      var accountName: String = js.native
+      var accountName: String
       
       /** Gets or sets a Boolean value indicating if calendar syncing is enabled. */
-      var calendarSyncEnabled: Boolean = js.native
+      var calendarSyncEnabled: Boolean
       
       /** Gets or sets a Boolean value indicating if contacts syncing is enabled. */
-      var contactsSyncEnabled: Boolean = js.native
+      var contactsSyncEnabled: Boolean
       
       /** Gets or sets the value that identifies the device account type. */
-      var deviceAccountTypeId: String = js.native
+      var deviceAccountTypeId: String
       
       /** Gets or sets the network domain of the device. */
-      var domain: String = js.native
+      var domain: String
       
       /** Gets or sets the email address of the current user. */
-      var emailAddress: String = js.native
+      var emailAddress: String
       
       /** Gets or sets a Boolean value indicating if email syncing is enabled. */
-      var emailSyncEnabled: Boolean = js.native
+      var emailSyncEnabled: Boolean
       
       /** Gets or sets the incoming email server address. */
-      var incomingServerAddress: String = js.native
+      var incomingServerAddress: String
       
       /** Gets or sets the port number to use to connect to the incoming email server. */
-      var incomingServerPort: Double = js.native
+      var incomingServerPort: Double
       
       /** Gets or sets a Boolean value indicating if Secure Sockets Layer (SSL) should be used when connecting to the incoming email server. */
-      var incomingServerRequiresSsl: Boolean = js.native
+      var incomingServerRequiresSsl: Boolean
       
       /** Gets or sets the username to use when connecting to the incoming email server. */
-      var incomingServerUsername: String = js.native
+      var incomingServerUsername: String
       
       /** Gets or sets the outgoing email server address. */
-      var outgoingServerAddress: String = js.native
+      var outgoingServerAddress: String
       
       /** Gets or sets the port number to use to connect to the outgoing email server. */
-      var outgoingServerPort: Double = js.native
+      var outgoingServerPort: Double
       
       /** Gets or sets a Boolean value indicating if Secure Sockets Layer (SSL) should be used when connecting to the outgoing email server. */
-      var outgoingServerRequiresSsl: Boolean = js.native
+      var outgoingServerRequiresSsl: Boolean
       
       /** Gets or sets the username to use when connecting to the outgoing email server. */
-      var outgoingServerUsername: String = js.native
+      var outgoingServerUsername: String
       
       /** Gets or sets a value indicating the type of the server. */
-      var serverType: DeviceAccountServerType = js.native
+      var serverType: DeviceAccountServerType
     }
     object DeviceAccountConfiguration {
       
@@ -166,7 +170,6 @@ object UserDataAccounts {
     }
     
     /** Provides the ability to display the system UI for managing sync relationships. */
-    @js.native
     trait UserDataAccountSystemAccessManager extends StObject
   }
   
@@ -179,15 +182,21 @@ object UserDataAccounts {
     
     /** Appointment data content. */
     @js.native
-    sealed trait appointment extends UserDataAccountContentKinds
+    sealed trait appointment
+      extends StObject
+         with UserDataAccountContentKinds
     
     /** Contact data content. */
     @js.native
-    sealed trait contact extends UserDataAccountContentKinds
+    sealed trait contact
+      extends StObject
+         with UserDataAccountContentKinds
     
     /** Email data content. */
     @js.native
-    sealed trait email extends UserDataAccountContentKinds
+    sealed trait email
+      extends StObject
+         with UserDataAccountContentKinds
   }
   
   @js.native
@@ -199,11 +208,15 @@ object UserDataAccounts {
     
     /** Other apps on the device can read all properties of this UserDataAccount . */
     @js.native
-    sealed trait full extends UserDataAccountOtherAppReadAccess
+    sealed trait full
+      extends StObject
+         with UserDataAccountOtherAppReadAccess
     
     /** Only the operating system can read data from this UserDataAccount . */
     @js.native
-    sealed trait systemOnly extends UserDataAccountOtherAppReadAccess
+    sealed trait systemOnly
+      extends StObject
+         with UserDataAccountOtherAppReadAccess
   }
   
   @js.native
@@ -215,76 +228,79 @@ object UserDataAccounts {
     
     /** Read-only access to app user data accounts and system user data accounts. */
     @js.native
-    sealed trait allAccountsReadOnly extends UserDataAccountStoreAccessType
+    sealed trait allAccountsReadOnly
+      extends StObject
+         with UserDataAccountStoreAccessType
     
     /** Read/write access to the current app's user data accounts. */
     @js.native
-    sealed trait appAccountsReadWrite extends UserDataAccountStoreAccessType
+    sealed trait appAccountsReadWrite
+      extends StObject
+         with UserDataAccountStoreAccessType
   }
   
   /** Represents a user data account used to access email, contacts, calendars, and so on. */
-  @js.native
   trait UserDataAccount extends StObject {
     
     /**
       * Asynchronously deletes all the contact, calendar and email data associated with the account.
       * @return An async action indicating success or failure.
       */
-    def deleteAsync(): IPromiseWithIAsyncAction = js.native
+    def deleteAsync(): IPromiseWithIAsyncAction
     
     /** Gets the unique identifier for the type of the account. */
-    var deviceAccountTypeId: String = js.native
+    var deviceAccountTypeId: String
     
     /** Gets the enterprise identity associated with the user account. */
-    var enterpriseId: String = js.native
+    var enterpriseId: String
     
     /**
       * Returns a collection of AppointmentCalendar instances associated with the UserDataAccount .
       * @return A collection of AppointmentCalendar instances associated with the UserDataAccount .
       */
-    def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
     
     /**
       * Returns a collection of ContactAnnotationList instances associated with the UserDataAccount .
       * @return A collection of ContactAnnotationList instances associated with the UserDataAccount .
       */
-    def findContactAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def findContactAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
     
     /**
       * Returns a collection of ContactList instances associated with the UserDataAccount .
       * @return A collection of ContactList instances associated with the UserDataAccount .
       */
-    def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
     
     /**
       * Returns a collection of EmailMailbox instances associated with the UserDataAccount .
       * @return A collection of EmailMailbox instances associated with the UserDataAccount .
       */
-    def findEmailMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def findEmailMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
     
     /** Gets the icon associated with the UserDataAccount . */
-    var icon: IRandomAccessStreamReference = js.native
+    var icon: IRandomAccessStreamReference
     
     /** Gets a string that uniquely identifies the UserDataAccount on the local device. */
-    var id: String = js.native
+    var id: String
     
     /** Gets a Boolean value indicating if the user account data is encrypted when the device becomes locked. */
-    var isProtectedUnderLock: Boolean = js.native
+    var isProtectedUnderLock: Boolean
     
     /** Gets or sets a value indicating whether other apps on the device have read access to the UserDataAccount . */
-    var otherAppReadAccess: UserDataAccountOtherAppReadAccess = js.native
+    var otherAppReadAccess: UserDataAccountOtherAppReadAccess
     
     /** Gets the unique identifier for the app package that created the UserDataAccount . */
-    var packageFamilyName: String = js.native
+    var packageFamilyName: String
     
     /**
       * Asynchronously persists the UserDataAccount to the database.
       * @return Async action that indicates completion of the save operation.
       */
-    def saveAsync(): IPromiseWithIAsyncAction = js.native
+    def saveAsync(): IPromiseWithIAsyncAction
     
     /** Gets or sets a user name associated with the UserDataAccount that is suitable for displaying. */
-    var userDisplayName: String = js.native
+    var userDisplayName: String
   }
   object UserDataAccount {
     
@@ -293,10 +309,10 @@ object UserDataAccounts {
       deleteAsync: () => IPromiseWithIAsyncAction,
       deviceAccountTypeId: String,
       enterpriseId: String,
-      findAppointmentCalendarsAsync: () => IPromiseWithIAsyncOperation[IVectorView[_]],
-      findContactAnnotationListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[_]],
-      findContactListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[_]],
-      findEmailMailboxesAsync: () => IPromiseWithIAsyncOperation[IVectorView[_]],
+      findAppointmentCalendarsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+      findContactAnnotationListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+      findContactListsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+      findEmailMailboxesAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
       icon: IRandomAccessStreamReference,
       id: String,
       isProtectedUnderLock: Boolean,
@@ -322,16 +338,16 @@ object UserDataAccounts {
       def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFindAppointmentCalendarsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "findAppointmentCalendarsAsync", js.Any.fromFunction0(value))
+      def setFindAppointmentCalendarsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAppointmentCalendarsAsync", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setFindContactAnnotationListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "findContactAnnotationListsAsync", js.Any.fromFunction0(value))
+      def setFindContactAnnotationListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactAnnotationListsAsync", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setFindContactListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "findContactListsAsync", js.Any.fromFunction0(value))
+      def setFindContactListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactListsAsync", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setFindEmailMailboxesAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "findEmailMailboxesAsync", js.Any.fromFunction0(value))
+      def setFindEmailMailboxesAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findEmailMailboxesAsync", js.Any.fromFunction0(value))
       
       @scala.inline
       def setIcon(value: IRandomAccessStreamReference): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
@@ -357,11 +373,9 @@ object UserDataAccounts {
   }
   
   /** Provides APIs to interact with the user’s data accounts including those implemented by the operating system. */
-  @js.native
   trait UserDataAccountManager extends StObject
   
   /** Represents a data store that contains user accounts. */
-  @js.native
   trait UserDataAccountStore extends StObject {
     
     /**
@@ -369,27 +383,27 @@ object UserDataAccounts {
       * @param userDisplayName A string containing the user name that is suitable for display.
       * @return Returns the newly created UserDataAccount .
       */
-    def createAccountAsync(userDisplayName: String): IPromiseWithIAsyncOperation[UserDataAccount] = js.native
+    def createAccountAsync(userDisplayName: String): IPromiseWithIAsyncOperation[UserDataAccount]
     
     /**
       * Returns a collection of UserDataAccount objects from the store based on the UserDataAccountStoreAccessType value passed into RequestStoreAsync .
       * @return Returns the collection of user data accounts, scoped by access request.
       */
-    def findAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def findAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
     
     /**
       * Asynchronously gets the specified account.
       * @param id The Id string identifying the account.
       * @return Returns the UserDataAccount identified by the id parameter.
       */
-    def getAccountAsync(id: String): IPromiseWithIAsyncOperation[UserDataAccount] = js.native
+    def getAccountAsync(id: String): IPromiseWithIAsyncOperation[UserDataAccount]
   }
   object UserDataAccountStore {
     
     @scala.inline
     def apply(
       createAccountAsync: String => IPromiseWithIAsyncOperation[UserDataAccount],
-      findAccountsAsync: () => IPromiseWithIAsyncOperation[IVectorView[_]],
+      findAccountsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
       getAccountAsync: String => IPromiseWithIAsyncOperation[UserDataAccount]
     ): UserDataAccountStore = {
       val __obj = js.Dynamic.literal(createAccountAsync = js.Any.fromFunction1(createAccountAsync), findAccountsAsync = js.Any.fromFunction0(findAccountsAsync), getAccountAsync = js.Any.fromFunction1(getAccountAsync))
@@ -403,7 +417,7 @@ object UserDataAccounts {
       def setCreateAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "createAccountAsync", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setFindAccountsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "findAccountsAsync", js.Any.fromFunction0(value))
+      def setFindAccountsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAccountsAsync", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "getAccountAsync", js.Any.fromFunction1(value))

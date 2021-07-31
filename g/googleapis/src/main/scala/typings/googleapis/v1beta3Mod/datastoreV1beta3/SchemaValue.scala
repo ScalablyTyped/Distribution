@@ -2,14 +2,12 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message that can hold any of the supported value types and associated
   * metadata.
   */
-@js.native
 trait SchemaValue extends StObject {
   
   /**
@@ -17,74 +15,74 @@ trait SchemaValue extends StObject {
     * that sets field `array_value` must not set fields `meaning` or
     * `exclude_from_indexes`.
     */
-  var arrayValue: js.UndefOr[SchemaArrayValue] = js.native
+  var arrayValue: js.UndefOr[SchemaArrayValue] = js.undefined
   
   /**
     * A blob value. May have at most 1,000,000 bytes. When
     * `exclude_from_indexes` is false, may have at most 1500 bytes. In JSON
     * requests, must be base64-encoded.
     */
-  var blobValue: js.UndefOr[String] = js.native
+  var blobValue: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean value.
     */
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A double value.
     */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /**
     * An entity value.  - May have no key. - May have a key with an incomplete
     * key path. - May have a reserved/read-only key.
     */
-  var entityValue: js.UndefOr[SchemaEntity] = js.native
+  var entityValue: js.UndefOr[SchemaEntity] = js.undefined
   
   /**
     * If the value should be excluded from all indexes including those defined
     * explicitly.
     */
-  var excludeFromIndexes: js.UndefOr[Boolean] = js.native
+  var excludeFromIndexes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A geo point value representing a point on the surface of Earth.
     */
-  var geoPointValue: js.UndefOr[SchemaLatLng] = js.native
+  var geoPointValue: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * An integer value.
     */
-  var integerValue: js.UndefOr[String] = js.native
+  var integerValue: js.UndefOr[String] = js.undefined
   
   /**
     * A key value.
     */
-  var keyValue: js.UndefOr[SchemaKey] = js.native
+  var keyValue: js.UndefOr[SchemaKey] = js.undefined
   
   /**
     * The `meaning` field should only be populated for backwards compatibility.
     */
-  var meaning: js.UndefOr[Double] = js.native
+  var meaning: js.UndefOr[Double] = js.undefined
   
   /**
     * A null value.
     */
-  var nullValue: js.UndefOr[String] = js.native
+  var nullValue: js.UndefOr[String] = js.undefined
   
   /**
     * A UTF-8 encoded string value. When `exclude_from_indexes` is false (it is
     * indexed) , may have at most 1500 bytes. Otherwise, may be set to at least
     * 1,000,000 bytes.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
   /**
     * A timestamp value. When stored in the Datastore, precise only to
     * microseconds; any additional precision is rounded down.
     */
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
 }
 object SchemaValue {
   

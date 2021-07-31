@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.LayoutManager
   * @since OOo 2.0
   */
-@js.native
-trait XLayoutManagerEventBroadcaster extends XInterface {
+trait XLayoutManagerEventBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds a layout manager event listener to the object's listener list.
     * @param aLayoutManagerListener a listener that wants to receive events regarding user interface elements that are controlled by a layout manager.
     */
-  def addLayoutManagerEventListener(aLayoutManagerListener: XLayoutManagerListener): Unit = js.native
+  def addLayoutManagerEventListener(aLayoutManagerListener: XLayoutManagerListener): Unit
   
   /**
     * removes a layout manager event listener from the object's listener list.
     * @param aLayoutManagerListener a listener that don't want to receive events regarding user interface elements that are controlled by a layout manager.
     */
-  def removeLayoutManagerEventListener(aLayoutManagerListener: XLayoutManagerListener): Unit = js.native
+  def removeLayoutManagerEventListener(aLayoutManagerListener: XLayoutManagerListener): Unit
 }
 object XLayoutManagerEventBroadcaster {
   

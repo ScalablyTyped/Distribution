@@ -2,27 +2,27 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
 - typings.bpmnModdle.mod.BaseElement because Already inherited
 - typings.bpmnModdle.mod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks
-- typings.bpmnModdle.mod.FlowElementsContainer because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ @js.native
-trait SubProcess extends Activity {
+- typings.bpmnModdle.mod.FlowElementsContainer because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ trait SubProcess
+  extends StObject
+     with Activity {
   
-  var artifacts: js.Array[Artifact] = js.native
+  var artifacts: js.Array[Artifact]
   
-  var flowElements: js.Array[FlowElement] = js.native
+  var flowElements: js.Array[FlowElement]
   
-  var incomingConversationLinks: js.Array[ConversationLink] = js.native
+  var incomingConversationLinks: js.Array[ConversationLink]
   
-  var laneSets: js.Array[LaneSet] = js.native
+  var laneSets: js.Array[LaneSet]
   
-  var outgoingConversationLinks: js.Array[ConversationLink] = js.native
+  var outgoingConversationLinks: js.Array[ConversationLink]
   
-  var triggeredByEvent: Boolean = js.native
+  var triggeredByEvent: Boolean
 }
 object SubProcess {
   

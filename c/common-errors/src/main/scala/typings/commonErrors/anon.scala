@@ -4,21 +4,19 @@ import typings.commonErrors.mod.Error
 import typings.commonErrors.mod.GenerateMessageMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `extends`: js.UndefOr[Error] = js.native
+    var `extends`: js.UndefOr[Error] = js.undefined
     
-    var generateMessage: js.UndefOr[GenerateMessageMethod] = js.native
+    var generateMessage: js.UndefOr[GenerateMessageMethod] = js.undefined
     
-    var globalize: js.UndefOr[Boolean] = js.native
+    var globalize: js.UndefOr[Boolean] = js.undefined
   }
   object Args {
     

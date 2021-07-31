@@ -4,10 +4,13 @@ import typings.badgin.anon.PartialOptions
 import typings.badgin.mod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object faviconMod {
+  
+  @JSImport("badgin/build/favicon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("badgin/build/favicon", "DefaultOptions")
   @js.native
@@ -17,41 +20,36 @@ object faviconMod {
   @js.native
   val DefaultValue: Value = js.native
   
-  @JSImport("badgin/build/favicon", "clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSImport("badgin/build/favicon", "isAvailable")
-  @js.native
-  def isAvailable(): Boolean = js.native
+  @scala.inline
+  def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("badgin/build/favicon", "set")
-  @js.native
-  def set(value: Value): Boolean = js.native
-  @JSImport("badgin/build/favicon", "set")
-  @js.native
-  def set(value: Value, options: PartialOptions): Boolean = js.native
+  @scala.inline
+  def set(value: Value): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def set(value: Value, options: PartialOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var color: String = js.native
+    var color: String
     
-    var horizontalMargin: Double = js.native
+    var horizontalMargin: Double
     
-    var horizontalPadding: Double = js.native
+    var horizontalPadding: Double
     
-    var indicator: String = js.native
+    var indicator: String
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var verticalMargin: Double = js.native
+    var verticalMargin: Double
     
-    var verticalPadding: Double = js.native
+    var verticalPadding: Double
   }
   object Options {
     

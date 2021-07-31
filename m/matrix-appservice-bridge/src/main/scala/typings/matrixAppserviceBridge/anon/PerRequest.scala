@@ -5,10 +5,8 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.per_room
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerRequest extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait PerRequest extends StObject {
     *
     * Default: false.
     * */
-  var perRequest: js.UndefOr[Boolean] = js.native
+  var perRequest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of queue to use when feeding through to {@link Bridge~onEvent}.
@@ -34,7 +32,7 @@ trait PerRequest extends StObject {
     *
     * Default: `single`.
     */
-  var `type`: js.UndefOr[none | single | per_room] = js.native
+  var `type`: js.UndefOr[none | single | per_room] = js.undefined
 }
 object PerRequest {
   

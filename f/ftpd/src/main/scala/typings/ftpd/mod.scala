@@ -23,7 +23,6 @@ import typings.node.tlsMod.TlsOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -85,28 +84,13 @@ object mod {
       * Start listening, see net.Server.listen()
       */
     def listen(port: Double): Unit = js.native
-    def listen(
-      port: Double,
-      host: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Unit = js.native
-    def listen(port: Double, host: js.UndefOr[scala.Nothing], backlog: Double): Unit = js.native
-    def listen(
-      port: Double,
-      host: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Unit = js.native
     def listen(port: Double, host: String): Unit = js.native
-    def listen(
-      port: Double,
-      host: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Unit = js.native
     def listen(port: Double, host: String, backlog: Double): Unit = js.native
     def listen(port: Double, host: String, backlog: Double, listeningListener: js.Function0[Unit]): Unit = js.native
+    def listen(port: Double, host: String, backlog: Unit, listeningListener: js.Function0[Unit]): Unit = js.native
+    def listen(port: Double, host: Unit, backlog: Double): Unit = js.native
+    def listen(port: Double, host: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Unit = js.native
+    def listen(port: Double, host: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Unit = js.native
   }
   
   @js.native
@@ -142,14 +126,14 @@ object mod {
         /* path */ String, 
         /* flags */ String, 
         /* callback */ js.UndefOr[
-          js.Function2[/* err */ js.UndefOr[ErrnoException], /* fd */ js.UndefOr[Double], _]
+          js.Function2[/* err */ js.UndefOr[ErrnoException], /* fd */ js.UndefOr[Double], js.Any]
         ], 
         Unit
       ]) | (js.Function4[
         /* path */ String, 
         /* flags */ String, 
         (/* mode */ Double) | (/* mode */ String), 
-        js.UndefOr[js.Function2[js.UndefOr[ErrnoException], js.UndefOr[Double], _]], 
+        js.UndefOr[js.Function2[js.UndefOr[ErrnoException], js.UndefOr[Double], js.Any]], 
         Unit
       ]) = js.native
     
@@ -191,7 +175,7 @@ object mod {
     def stat(path: String): Unit = js.native
     def stat(
       path: String,
-      callback: js.Function2[/* err */ js.UndefOr[ErrnoException], /* stats */ js.UndefOr[Stats], _]
+      callback: js.Function2[/* err */ js.UndefOr[ErrnoException], /* stats */ js.UndefOr[Stats], js.Any]
     ): Unit = js.native
     
     def unlink(path: String): Unit = js.native

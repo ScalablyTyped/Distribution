@@ -11,8 +11,8 @@ ES Proposal spec-compliant shim for Promise.prototype.finally
 | Full name          | promise.prototype.finally |
 | Keywords           | Promise, promises, finally, promise.prototype.finally, ES7, ES8, ES2017, shim, polyfill, es-shim API |
 | # releases         | 3 |
-| # dependents       | 108 |
-| # downloads        | 80075976 |
+| # dependents       | 119 |
+| # downloads        | 98775464 |
 | # stars            | 8 |
 
 ## Links

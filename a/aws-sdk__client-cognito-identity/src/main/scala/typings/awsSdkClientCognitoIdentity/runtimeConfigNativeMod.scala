@@ -17,7 +17,6 @@ import typings.awsSdkTypes.utilMod.UrlParser
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeConfigNativeMod {
@@ -38,36 +37,32 @@ object runtimeConfigNativeMod {
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.base64Decoder")
     @js.native
     def base64Decoder: Decoder = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.base64Decoder")
-    @js.native
-    def base64Decoder(input: String): Uint8Array = js.native
+    @scala.inline
+    def base64Decoder(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decoder")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     @scala.inline
     def base64Decoder_=(x: Decoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64Decoder")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.base64Encoder")
     @js.native
     def base64Encoder: Encoder = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.base64Encoder")
-    @js.native
-    def base64Encoder(input: Uint8Array): String = js.native
+    @scala.inline
+    def base64Encoder(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encoder")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def base64Encoder_=(x: Encoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64Encoder")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.bodyLengthChecker")
     @js.native
     def bodyLengthChecker: js.Function1[/* body */ js.Any, js.UndefOr[Double]] = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.bodyLengthChecker")
-    @js.native
-    def bodyLengthChecker(body: js.Any): js.UndefOr[Double] = js.native
+    @scala.inline
+    def bodyLengthChecker(body: js.Any): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyLengthChecker")(body.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     @scala.inline
     def bodyLengthChecker_=(x: js.Function1[/* body */ js.Any, js.UndefOr[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLengthChecker")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.credentialDefaultProvider")
     @js.native
     def credentialDefaultProvider: js.Function1[/* input */ js.Any, Provider[Credentials]] = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.credentialDefaultProvider")
-    @js.native
-    def credentialDefaultProvider(input: js.Any): Provider[Credentials] = js.native
+    @scala.inline
+    def credentialDefaultProvider(input: js.Any): Provider[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialDefaultProvider")(input.asInstanceOf[js.Any]).asInstanceOf[Provider[Credentials]]
     @scala.inline
     def credentialDefaultProvider_=(x: js.Function1[/* input */ js.Any, Provider[Credentials]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialDefaultProvider")(x.asInstanceOf[js.Any])
     
@@ -102,12 +97,10 @@ object runtimeConfigNativeMod {
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.regionInfoProvider")
     @js.native
     def regionInfoProvider: RegionInfoProvider = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.regionInfoProvider")
-    @js.native
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.regionInfoProvider")
-    @js.native
-    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = js.native
+    @scala.inline
+    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
+    @scala.inline
+    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
     @scala.inline
     def regionInfoProvider_=(x: RegionInfoProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionInfoProvider")(x.asInstanceOf[js.Any])
     
@@ -129,7 +122,9 @@ object runtimeConfigNativeMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.sha256")
     @js.native
-    class sha256 () extends Hash {
+    class sha256 ()
+      extends StObject
+         with Hash {
       def this(secret: SourceData) = this()
     }
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.sha256")
@@ -147,36 +142,32 @@ object runtimeConfigNativeMod {
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.streamCollector")
     @js.native
     def streamCollector: StreamCollector = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.streamCollector")
-    @js.native
-    def streamCollector(stream: js.Any): js.Promise[Uint8Array] = js.native
+    @scala.inline
+    def streamCollector(stream: js.Any): js.Promise[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("streamCollector")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8Array]]
     @scala.inline
     def streamCollector_=(x: StreamCollector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("streamCollector")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.urlParser")
     @js.native
     def urlParser: UrlParser = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.urlParser")
-    @js.native
-    def urlParser(url: String): Endpoint = js.native
+    @scala.inline
+    def urlParser(url: String): Endpoint = ^.asInstanceOf[js.Dynamic].applyDynamic("urlParser")(url.asInstanceOf[js.Any]).asInstanceOf[Endpoint]
     @scala.inline
     def urlParser_=(x: UrlParser): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlParser")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.utf8Decoder")
     @js.native
     def utf8Decoder: Decoder = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.utf8Decoder")
-    @js.native
-    def utf8Decoder(input: String): Uint8Array = js.native
+    @scala.inline
+    def utf8Decoder(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8Decoder")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     @scala.inline
     def utf8Decoder_=(x: Decoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utf8Decoder")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.utf8Encoder")
     @js.native
     def utf8Encoder: Encoder = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.native", "ClientDefaultValues.utf8Encoder")
-    @js.native
-    def utf8Encoder(input: Uint8Array): String = js.native
+    @scala.inline
+    def utf8Encoder(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8Encoder")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def utf8Encoder_=(x: Encoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utf8Encoder")(x.asInstanceOf[js.Any])
   }

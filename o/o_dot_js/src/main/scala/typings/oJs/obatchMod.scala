@@ -6,7 +6,6 @@ import typings.oJs.orequestMod.ORequest
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object obatchMod {
@@ -16,12 +15,7 @@ object obatchMod {
   class OBatch protected () extends StObject {
     def this(resources: js.Array[ORequest], config: OdataConfig) = this()
     def this(resources: js.Array[ORequest], config: OdataConfig, query: OdataQuery) = this()
-    def this(
-      resources: js.Array[ORequest],
-      config: OdataConfig,
-      query: js.UndefOr[scala.Nothing],
-      changeset: Boolean
-    ) = this()
+    def this(resources: js.Array[ORequest], config: OdataConfig, query: Unit, changeset: Boolean) = this()
     def this(resources: js.Array[ORequest], config: OdataConfig, query: OdataQuery, changeset: Boolean) = this()
     
     var batchBody: js.Any = js.native
@@ -38,7 +32,7 @@ object obatchMod {
       */
     var checkForChangset: js.Any = js.native
     
-    def fetch(url: URL): js.Promise[_] = js.native
+    def fetch(url: URL): js.Promise[js.Any] = js.native
     
     var getBody: js.Any = js.native
     

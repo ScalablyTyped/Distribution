@@ -3,14 +3,15 @@ package typings.asyncLock
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("async-lock", JSImport.Namespace)
   @js.native
-  class ^ () extends AsyncLock {
+  class ^ ()
+    extends StObject
+       with AsyncLock {
     def this(options: AsyncLockOptions) = this()
   }
   
@@ -19,36 +20,36 @@ object mod {
     
     def acquire[T](key: String, fn: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
     def acquire[T](key: String, fn: js.Function0[T | js.Thenable[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
-    def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _]): js.Promise[T] = js.native
+    def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any]): js.Promise[T] = js.native
     def acquire[T](
       key: String,
-      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _],
+      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any],
       cb: AsyncLockDoneCallback[T]
     ): Unit = js.native
     def acquire[T](
       key: String,
-      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _],
+      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any],
       cb: AsyncLockDoneCallback[T],
       opts: AsyncLockOptions
     ): Unit = js.native
-    def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _], opts: AsyncLockOptions): js.Promise[T] = js.native
+    def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any], opts: AsyncLockOptions): js.Promise[T] = js.native
     def acquire[T](key: js.Array[String], fn: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
     def acquire[T](key: js.Array[String], fn: js.Function0[T | js.Thenable[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
-    def acquire[T](key: js.Array[String], fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _]): js.Promise[T] = js.native
+    def acquire[T](key: js.Array[String], fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any]): js.Promise[T] = js.native
     def acquire[T](
       key: js.Array[String],
-      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _],
+      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any],
       cb: AsyncLockDoneCallback[T]
     ): Unit = js.native
     def acquire[T](
       key: js.Array[String],
-      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _],
+      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any],
       cb: AsyncLockDoneCallback[T],
       opts: AsyncLockOptions
     ): Unit = js.native
     def acquire[T](
       key: js.Array[String],
-      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], _],
+      fn: js.Function1[/* done */ AsyncLockDoneCallback[T], js.Any],
       opts: AsyncLockOptions
     ): js.Promise[T] = js.native
     
@@ -58,18 +59,17 @@ object mod {
   
   type AsyncLockDoneCallback[T] = js.Function2[/* err */ js.UndefOr[Error], /* ret */ js.UndefOr[T], Unit]
   
-  @js.native
   trait AsyncLockOptions extends StObject {
     
-    var Promise: js.UndefOr[js.Any] = js.native
+    var Promise: js.UndefOr[js.Any] = js.undefined
     
-    var domainReentrant: js.UndefOr[Boolean] = js.native
+    var domainReentrant: js.UndefOr[Boolean] = js.undefined
     
-    var maxPending: js.UndefOr[Double] = js.native
+    var maxPending: js.UndefOr[Double] = js.undefined
     
-    var skipQueue: js.UndefOr[Boolean] = js.native
+    var skipQueue: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AsyncLockOptions {
     

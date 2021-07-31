@@ -2,31 +2,29 @@ package typings.webAnimationsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationPlaybackEvent extends StObject {
   
-  var bubbles: Boolean = js.native
+  var bubbles: Boolean
   
-  var cancelable: Boolean = js.native
+  var cancelable: Boolean
   
-  var currentTarget: Animation = js.native
+  var currentTarget: Animation
   
-  val currentTime: Double | Null = js.native
+  val currentTime: Double | Null
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var eventPhase: Double = js.native
+  var eventPhase: Double
   
-  var target: Animation = js.native
+  var target: Animation
   
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
-  val timelineTime: Double | Null = js.native
+  val timelineTime: Double | Null
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object AnimationPlaybackEvent {
   
@@ -41,7 +39,7 @@ object AnimationPlaybackEvent {
     timeStamp: Double,
     `type`: String
   ): AnimationPlaybackEvent = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], currentTime = null, timelineTime = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationPlaybackEvent]
   }

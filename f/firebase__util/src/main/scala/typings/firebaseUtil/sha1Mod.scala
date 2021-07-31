@@ -3,7 +3,6 @@ package typings.firebaseUtil
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sha1Mod {
@@ -69,11 +68,11 @@ object sha1Mod {
     var total_ : js.Any = js.native
     
     def update(): Unit = js.native
-    def update(bytes: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
     def update(bytes: String): Unit = js.native
     def update(bytes: String, length: Double): Unit = js.native
     def update(bytes: js.Array[Double]): Unit = js.native
     def update(bytes: js.Array[Double], length: Double): Unit = js.native
+    def update(bytes: Unit, length: Double): Unit = js.native
     def update(bytes: Uint8Array): Unit = js.native
     def update(bytes: Uint8Array, length: Double): Unit = js.native
   }

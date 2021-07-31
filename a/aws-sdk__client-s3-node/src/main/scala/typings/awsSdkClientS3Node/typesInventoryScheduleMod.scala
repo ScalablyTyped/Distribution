@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.Daily
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.Weekly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInventoryScheduleMod {
   
-  @js.native
   trait InventorySchedule extends StObject {
     
     /**
       * <p>Specifies how frequently inventory results are produced.</p>
       */
-    var Frequency: Daily | Weekly | String = js.native
+    var Frequency: Daily | Weekly | String
   }
   object InventorySchedule {
     

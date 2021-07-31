@@ -2,16 +2,14 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base64Options extends StObject {
   
   /**
     * optional parameter defaulting to true which will require = padding if true or make padding optional if false
     */
-  var paddingRequired: js.UndefOr[Boolean] = js.native
+  var paddingRequired: js.UndefOr[Boolean] = js.undefined
 }
 object Base64Options {
   

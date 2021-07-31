@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionPhysicalConnectionRequirements extends StObject {
   
   /**
     * The availability zone of the connection. This field is redundant and implied by `subnetId`, but is currently an api requirement.
     */
-  var availabilityZone: js.UndefOr[String] = js.native
+  var availabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The security group ID list used by the connection.
     */
-  var securityGroupIdLists: js.UndefOr[js.Array[String]] = js.native
+  var securityGroupIdLists: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The subnet ID used by the connection.
     */
-  var subnetId: js.UndefOr[String] = js.native
+  var subnetId: js.UndefOr[String] = js.undefined
 }
 object ConnectionPhysicalConnectionRequirements {
   

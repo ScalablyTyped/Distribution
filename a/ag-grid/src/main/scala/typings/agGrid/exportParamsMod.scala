@@ -6,43 +6,41 @@ import typings.agGrid.gridApiMod.GridApi
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exportParamsMod {
   
-  @js.native
   trait BaseExportParams extends StObject {
     
-    var allColumns: js.UndefOr[Boolean] = js.native
+    var allColumns: js.UndefOr[Boolean] = js.undefined
     
-    var columnGroups: js.UndefOr[Boolean] = js.native
+    var columnGroups: js.UndefOr[Boolean] = js.undefined
     
-    var columnKeys: js.UndefOr[js.Array[String | Column]] = js.native
+    var columnKeys: js.UndefOr[js.Array[String | Column]] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var onlySelected: js.UndefOr[Boolean] = js.native
+    var onlySelected: js.UndefOr[Boolean] = js.undefined
     
-    var onlySelectedAllPages: js.UndefOr[Boolean] = js.native
+    var onlySelectedAllPages: js.UndefOr[Boolean] = js.undefined
     
-    var processCellCallback: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, String]] = js.native
+    var processCellCallback: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, String]] = js.undefined
     
-    var processHeaderCallback: js.UndefOr[js.Function1[/* params */ ProcessHeaderForExportParams, String]] = js.native
+    var processHeaderCallback: js.UndefOr[js.Function1[/* params */ ProcessHeaderForExportParams, String]] = js.undefined
     
-    var shouldRowBeSkipped: js.UndefOr[js.Function1[/* params */ ShouldRowBeSkippedParams, Boolean]] = js.native
+    var shouldRowBeSkipped: js.UndefOr[js.Function1[/* params */ ShouldRowBeSkippedParams, Boolean]] = js.undefined
     
-    var skipFooters: js.UndefOr[Boolean] = js.native
+    var skipFooters: js.UndefOr[Boolean] = js.undefined
     
-    var skipGroups: js.UndefOr[Boolean] = js.native
+    var skipGroups: js.UndefOr[Boolean] = js.undefined
     
-    var skipHeader: js.UndefOr[Boolean] = js.native
+    var skipHeader: js.UndefOr[Boolean] = js.undefined
     
-    var skipPinnedBottom: js.UndefOr[Boolean] = js.native
+    var skipPinnedBottom: js.UndefOr[Boolean] = js.undefined
     
-    var skipPinnedTop: js.UndefOr[Boolean] = js.native
+    var skipPinnedTop: js.UndefOr[Boolean] = js.undefined
     
-    var suppressQuotes: js.UndefOr[Boolean] = js.native
+    var suppressQuotes: js.UndefOr[Boolean] = js.undefined
   }
   object BaseExportParams {
     
@@ -150,10 +148,11 @@ object exportParamsMod {
     }
   }
   
-  @js.native
-  trait CsvExportParams extends ExportParams[String] {
+  trait CsvExportParams
+    extends StObject
+       with ExportParams[String] {
     
-    var columnSeparator: js.UndefOr[String] = js.native
+    var columnSeparator: js.UndefOr[String] = js.undefined
   }
   object CsvExportParams {
     
@@ -174,12 +173,13 @@ object exportParamsMod {
     }
   }
   
-  @js.native
-  trait ExportParams[T] extends BaseExportParams {
+  trait ExportParams[T]
+    extends StObject
+       with BaseExportParams {
     
-    var customFooter: js.UndefOr[T] = js.native
+    var customFooter: js.UndefOr[T] = js.undefined
     
-    var customHeader: js.UndefOr[T] = js.native
+    var customHeader: js.UndefOr[T] = js.undefined
   }
   object ExportParams {
     
@@ -190,7 +190,7 @@ object exportParamsMod {
     }
     
     @scala.inline
-    implicit class ExportParamsMutableBuilder[Self <: ExportParams[_], T] (val x: Self with ExportParams[T]) extends AnyVal {
+    implicit class ExportParamsMutableBuilder[Self <: ExportParams[?], T] (val x: Self & ExportParams[T]) extends AnyVal {
       
       @scala.inline
       def setCustomFooter(value: T): Self = StObject.set(x, "customFooter", value.asInstanceOf[js.Any])
@@ -206,22 +206,21 @@ object exportParamsMod {
     }
   }
   
-  @js.native
   trait ProcessCellForExportParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ProcessCellForExportParams {
     
@@ -266,16 +265,15 @@ object exportParamsMod {
     }
   }
   
-  @js.native
   trait ProcessHeaderForExportParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
   }
   object ProcessHeaderForExportParams {
     
@@ -302,14 +300,13 @@ object exportParamsMod {
     }
   }
   
-  @js.native
   trait ShouldRowBeSkippedParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
   }
   object ShouldRowBeSkippedParams {
     

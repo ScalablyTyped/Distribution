@@ -3,21 +3,19 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Substitutiontag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenTracking extends StObject {
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def getSubscriptionTag(): String = js.native
+  def getSubscriptionTag(): String
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def setSubscriptionTag(subscriptionTag: String): Unit = js.native
+  def setSubscriptionTag(subscriptionTag: String): Unit
   
-  def toJSON(): Substitutiontag = js.native
+  def toJSON(): Substitutiontag
 }
 object OpenTracking {
   

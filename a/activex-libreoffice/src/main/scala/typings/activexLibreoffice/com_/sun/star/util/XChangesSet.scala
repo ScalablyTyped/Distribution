@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XElementAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,20 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XChangesListener
   * @see XChangesNotifier
   */
-@js.native
-trait XChangesSet extends XElementAccess {
+trait XChangesSet
+  extends StObject
+     with XElementAccess {
   
   /**
     * queries for all contained changes at once.
     * @returns an array of {@link ElementChange} holding information about each changes that is part of this object.
     */
-  val AllChanges: SafeArray[ElementChange] = js.native
+  val AllChanges: SafeArray[ElementChange]
   
   /**
     * queries for all contained changes at once.
     * @returns an array of {@link ElementChange} holding information about each changes that is part of this object.
     */
-  def getAllChanges(): SafeArray[ElementChange] = js.native
+  def getAllChanges(): SafeArray[ElementChange]
 }
 object XChangesSet {
   

@@ -2,11 +2,11 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FinalizeHandlerArguments[Input /* <: js.Object */] extends SerializeHandlerArguments[Input]
+trait FinalizeHandlerArguments[Input /* <: js.Object */]
+  extends StObject
+     with SerializeHandlerArguments[Input]
 object FinalizeHandlerArguments {
   
   @scala.inline

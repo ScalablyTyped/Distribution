@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWorkGroupInput extends StObject {
   
   /**
     * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
     */
-  var RecursiveDeleteOption: js.UndefOr[BoxedBoolean] = js.native
+  var RecursiveDeleteOption: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * The unique name of the workgroup to delete.
     */
-  var WorkGroup: WorkGroupName = js.native
+  var WorkGroup: WorkGroupName
 }
 object DeleteWorkGroupInput {
   

@@ -6,31 +6,31 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.query_and_fetch
 import typings.elasticElasticsearch.elasticElasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Msearch[T] extends Generic {
+trait Msearch[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.native
+  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var max_concurrent_searches: js.UndefOr[Double] = js.native
+  var max_concurrent_searches: js.UndefOr[Double] = js.undefined
   
-  var max_concurrent_shard_requests: js.UndefOr[Double] = js.native
+  var max_concurrent_shard_requests: js.UndefOr[Double] = js.undefined
   
-  var pre_filter_shard_size: js.UndefOr[Double] = js.native
+  var pre_filter_shard_size: js.UndefOr[Double] = js.undefined
   
-  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.native
+  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
   
-  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var typed_keys: js.UndefOr[Boolean] = js.native
+  var typed_keys: js.UndefOr[Boolean] = js.undefined
 }
 object Msearch {
   
@@ -41,7 +41,7 @@ object Msearch {
   }
   
   @scala.inline
-  implicit class MsearchMutableBuilder[Self <: Msearch[_], T] (val x: Self with Msearch[T]) extends AnyVal {
+  implicit class MsearchMutableBuilder[Self <: Msearch[?], T] (val x: Self & Msearch[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

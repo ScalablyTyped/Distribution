@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsListWorkflowRunsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListWorkflowRunsEndpoint extends StObject {
   
-  var parameters: ActionsListWorkflowRunsEndpoint = js.native
+  var parameters: ActionsListWorkflowRunsEndpoint
   
-  var request: ActionsListWorkflowRunsRequestOptions = js.native
+  var request: ActionsListWorkflowRunsRequestOptions
   
-  var response: OctokitResponse[ActionsListWorkflowRunsResponseData] = js.native
+  var response: OctokitResponse[ActionsListWorkflowRunsResponseData]
 }
 object ParametersActionsListWorkflowRunsEndpoint {
   

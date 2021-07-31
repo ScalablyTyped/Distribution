@@ -4,15 +4,13 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RejectedProps[T] extends StObject {
   
-  var children: js.UndefOr[RejectedChildren[T]] = js.native
+  var children: js.UndefOr[RejectedChildren[T]] = js.undefined
   
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
 }
 object RejectedProps {
   
@@ -23,7 +21,7 @@ object RejectedProps {
   }
   
   @scala.inline
-  implicit class RejectedPropsMutableBuilder[Self <: RejectedProps[_], T] (val x: Self with RejectedProps[T]) extends AnyVal {
+  implicit class RejectedPropsMutableBuilder[Self <: RejectedProps[?], T] (val x: Self & RejectedProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: RejectedChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

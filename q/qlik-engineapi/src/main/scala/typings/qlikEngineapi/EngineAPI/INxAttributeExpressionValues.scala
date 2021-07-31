@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAttributeExpressionValues...
   */
-@js.native
 trait INxAttributeExpressionValues extends StObject {
   
   /**
     * List of attribute expressions values.
     */
-  var qValues: js.Array[INxSimpleValue] = js.native
+  var qValues: js.Array[INxSimpleValue]
 }
 object INxAttributeExpressionValues {
   

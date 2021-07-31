@@ -4,37 +4,35 @@ import typings.bcoeV8Coverage.typesMod.RangeCov
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asciiMod {
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/ascii", "emitForest")
+  @JSImport("@bcoe/v8-coverage/dist/lib/ascii", JSImport.Namespace)
   @js.native
-  def emitForest(trees: js.Array[ReadonlyRangeTree]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/ascii", "emitForestLines")
-  @js.native
-  def emitForestLines(trees: js.Array[ReadonlyRangeTree]): js.Array[String] = js.native
+  @scala.inline
+  def emitForest(trees: js.Array[ReadonlyRangeTree]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emitForest")(trees.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/ascii", "parseFunctionRanges")
-  @js.native
-  def parseFunctionRanges(text: String, offsetMap: Map[Double, Double]): js.Array[RangeCov] = js.native
+  @scala.inline
+  def emitForestLines(trees: js.Array[ReadonlyRangeTree]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("emitForestLines")(trees.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/ascii", "parseOffsets")
-  @js.native
-  def parseOffsets(text: String): Map[Double, Double] = js.native
+  @scala.inline
+  def parseFunctionRanges(text: String, offsetMap: Map[Double, Double]): js.Array[RangeCov] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFunctionRanges")(text.asInstanceOf[js.Any], offsetMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[RangeCov]]
   
-  @js.native
+  @scala.inline
+  def parseOffsets(text: String): Map[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseOffsets")(text.asInstanceOf[js.Any]).asInstanceOf[Map[Double, Double]]
+  
   trait ReadonlyRangeTree extends StObject {
     
-    val children: js.Array[ReadonlyRangeTree] = js.native
+    val children: js.Array[ReadonlyRangeTree]
     
-    val count: Double = js.native
+    val count: Double
     
-    val end: Double = js.native
+    val end: Double
     
-    val start: Double = js.native
+    val start: Double
   }
   object ReadonlyRangeTree {
     

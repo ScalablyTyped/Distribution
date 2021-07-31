@@ -2,15 +2,13 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridAreaProps extends StObject {
   
   // Number allowed here but is converted into px value, which is invalid.
   // readonly gridArea?: ResponsiveValue<CSS.Property.GridArea>;
-  val gridArea: js.UndefOr[ResponsiveValue[String]] = js.native
+  val gridArea: js.UndefOr[ResponsiveValue[String]] = js.undefined
 }
 object GridAreaProps {
   

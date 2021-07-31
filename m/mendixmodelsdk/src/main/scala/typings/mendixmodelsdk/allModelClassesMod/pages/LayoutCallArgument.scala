@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument")
@@ -37,9 +36,8 @@ object LayoutCallArgument {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument]
   
   /**
     * Creates and returns a new LayoutCallArgument instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object LayoutCallArgument {
     * of the parent LayoutCall element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCall): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCall): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.structureTypeName")

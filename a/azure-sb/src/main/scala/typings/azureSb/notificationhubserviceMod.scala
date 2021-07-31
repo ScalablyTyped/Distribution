@@ -7,14 +7,15 @@ import typings.azureSb.mod.Azure.ServiceBus.NotificationHubInstallation
 import typings.azureSb.mod.Azure.ServiceBus.NotificationHubRegistration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationhubserviceMod {
   
   @JSImport("azure-sb/lib/notificationhubservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends NotificationHubService {
+  class ^ protected ()
+    extends StObject
+       with NotificationHubService {
     def this(
       hubName: String,
       endpointOrConnectionString: String,
@@ -114,12 +115,12 @@ object notificationhubserviceMod {
     
     def patchInstallation(
       installationId: String,
-      partialUpdateOperations: js.Array[_],
+      partialUpdateOperations: js.Array[js.Any],
       callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
     ): Unit = js.native
     def patchInstallation(
       installationId: String,
-      partialUpdateOperations: js.Array[_],
+      partialUpdateOperations: js.Array[js.Any],
       options: js.Any,
       callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
     ): Unit = js.native

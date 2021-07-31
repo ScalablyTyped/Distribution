@@ -3,56 +3,54 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessCardView extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  def Apply(): Unit = js.native
+  def Apply(): Unit
   
-  var CardSize: Double = js.native
+  var CardSize: Double
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def Copy(Name: String, SaveOption: OlViewSaveOption): View = js.native
+  def Copy(Name: String, SaveOption: OlViewSaveOption): View
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Filter: String = js.native
+  var Filter: String
   
-  def GoToDate(Date: VarDate): Unit = js.native
+  def GoToDate(Date: VarDate): Unit
   
-  val HeadingsFont: ViewFont = js.native
+  val HeadingsFont: ViewFont
   
-  var Language: String = js.native
+  var Language: String
   
-  var LockUserChanges: Boolean = js.native
+  var LockUserChanges: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.BusinessCardView_typekey")
-  var OutlookDotBusinessCardView_typekey: BusinessCardView = js.native
+  var OutlookDotBusinessCardView_typekey: BusinessCardView
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  val SaveOption: OlViewSaveOption = js.native
+  val SaveOption: OlViewSaveOption
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val SortFields: OrderFields = js.native
+  val SortFields: OrderFields
   
-  val Standard: Boolean = js.native
+  val Standard: Boolean
   
-  val ViewType: OlViewType = js.native
+  val ViewType: OlViewType
   
-  var XML: String = js.native
+  var XML: String
 }
 object BusinessCardView {
   

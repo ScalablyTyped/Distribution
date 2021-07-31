@@ -2,18 +2,16 @@ package typings.websql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 4.6 Errors and exceptions - asynchronous database API error
   */
-@js.native
 trait SQLError extends StObject {
   
   // = 7;
-  var code: Double = js.native
+  var code: Double
   
-  var message: DOMString = js.native
+  var message: DOMString
 }
 object SQLError {
   

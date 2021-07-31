@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Annotations")
@@ -31,7 +30,7 @@ class ResourceMylibraryAnnotations protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMylibraryAnnotationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMylibraryAnnotationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -64,7 +63,7 @@ class ResourceMylibraryAnnotations protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAnnotation] = js.native
   def insert(callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
   def insert(params: ParamsResourceMylibraryAnnotationsInsert): GaxiosPromise[SchemaAnnotation] = js.native
   def insert(params: ParamsResourceMylibraryAnnotationsInsert, callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
   def insert(
@@ -102,7 +101,7 @@ class ResourceMylibraryAnnotations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAnnotations] = js.native
   def list(callback: BodyResponseCallback[SchemaAnnotations]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotations] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotations] = js.native
   def list(params: ParamsResourceMylibraryAnnotationsList): GaxiosPromise[SchemaAnnotations] = js.native
   def list(params: ParamsResourceMylibraryAnnotationsList, callback: BodyResponseCallback[SchemaAnnotations]): Unit = js.native
   def list(
@@ -132,7 +131,7 @@ class ResourceMylibraryAnnotations protected () extends StObject {
     */
   def summary(): GaxiosPromise[SchemaAnnotationsSummary] = js.native
   def summary(callback: BodyResponseCallback[SchemaAnnotationsSummary]): Unit = js.native
-  def summary(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotationsSummary] = js.native
+  def summary(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotationsSummary] = js.native
   def summary(params: ParamsResourceMylibraryAnnotationsSummary): GaxiosPromise[SchemaAnnotationsSummary] = js.native
   def summary(
     params: ParamsResourceMylibraryAnnotationsSummary,
@@ -166,7 +165,7 @@ class ResourceMylibraryAnnotations protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAnnotation] = js.native
   def update(callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
   def update(params: ParamsResourceMylibraryAnnotationsUpdate): GaxiosPromise[SchemaAnnotation] = js.native
   def update(params: ParamsResourceMylibraryAnnotationsUpdate, callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
   def update(

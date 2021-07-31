@@ -8,77 +8,65 @@ import typings.nodeJose.mod.JWK.Key
 import typings.nodeJose.mod.JWK.KeyStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWS {
   
-  @JSImport("node-jose", "JWS.createSign")
+  @JSImport("node-jose", "JWS")
   @js.native
-  def createSign(keys: js.Array[Key]): Signer = js.native
-  @JSImport("node-jose", "JWS.createSign")
-  @js.native
-  def createSign(keys: Key): Signer = js.native
-  @JSImport("node-jose", "JWS.createSign")
-  @js.native
-  def createSign(options: Alg, key: js.Array[Key]): Signer = js.native
-  @JSImport("node-jose", "JWS.createSign")
-  @js.native
-  def createSign(options: Alg, key: Key): Signer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createSign(keys: js.Array[Key]): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
+  @scala.inline
+  def createSign(keys: Key): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
+  @scala.inline
+  def createSign(options: Alg, key: js.Array[Key]): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
+  @scala.inline
+  def createSign(options: Alg, key: Key): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
   
   /**
     * Using a keystore.
     */
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: js.UndefOr[scala.Nothing], opts: Algorithms): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: String): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: String, opts: Algorithms): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: js.Object): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: js.Object, opts: Algorithms): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: Key): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: KeyStore): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: KeyStore, opts: Algorithms): Verifier = js.native
-  @JSImport("node-jose", "JWS.createVerify")
-  @js.native
-  def createVerify(input: Key, opts: Algorithms): Verifier = js.native
+  @scala.inline
+  def createVerify(): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")().asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: String): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: String, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: js.Object): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: js.Object, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: Unit, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: Key): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: KeyStore): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: KeyStore, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  @scala.inline
+  def createVerify(input: Key, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
   
-  @js.native
   trait BaseResult extends StObject {
     
     /**
       * the combined 'protected' and 'unprotected' header members
       */
-    var header: js.Object = js.native
+    var header: js.Object
     
     /**
       * The key used to verify the signature
       */
-    var key: Key = js.native
+    var key: Key
     
     /**
       * the signed content
       */
-    var payload: Buffer = js.native
+    var payload: Buffer
     
-    var `protected`: js.Array[String] = js.native
+    var `protected`: js.Array[String]
   }
   object BaseResult {
     
@@ -109,10 +97,9 @@ object JWS {
     }
   }
   
-  @js.native
   trait CreateSignResult extends StObject {
     
-    var signResult: js.Object = js.native
+    var signResult: js.Object
   }
   object CreateSignResult {
     
@@ -130,10 +117,9 @@ object JWS {
     }
   }
   
-  @js.native
   trait Exp extends StObject {
     
-    def complete(jws: js.Any): js.Any = js.native
+    def complete(jws: js.Any): js.Any
   }
   object Exp {
     
@@ -162,13 +148,14 @@ object JWS {
     def update(input: Buffer, encoding: String): this.type = js.native
   }
   
-  @js.native
-  trait VerificationResult extends BaseResult {
+  trait VerificationResult
+    extends StObject
+       with BaseResult {
     
     /**
       * the verified signature
       */
-    var signature: Buffer | String = js.native
+    var signature: Buffer | String
   }
   object VerificationResult {
     
@@ -200,14 +187,13 @@ object JWS {
     def verify(input: String, opts: AllowEmbeddedKey): js.Promise[VerificationResult] = js.native
   }
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowEmbeddedKey: js.UndefOr[Boolean] = js.native
+    var allowEmbeddedKey: js.UndefOr[Boolean] = js.undefined
     
-    var handlers: typings.nodeJose.anon.Exp = js.native
+    var handlers: typings.nodeJose.anon.Exp
   }
   object VerifyOptions {
     

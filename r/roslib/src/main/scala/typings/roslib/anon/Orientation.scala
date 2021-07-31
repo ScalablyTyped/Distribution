@@ -4,15 +4,13 @@ import typings.roslib.mod.QuaternionLike
 import typings.roslib.mod.Vector3Like
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Orientation extends StObject {
   
-  var orientation: js.UndefOr[QuaternionLike | Null] = js.native
+  var orientation: js.UndefOr[QuaternionLike | Null] = js.undefined
   
-  var position: js.UndefOr[Vector3Like | Null] = js.native
+  var position: js.UndefOr[Vector3Like | Null] = js.undefined
 }
 object Orientation {
   

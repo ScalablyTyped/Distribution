@@ -10,9 +10,9 @@ A parser to get the library and version from Vega and Vega-Lite schema URLs.
 | ------------------ | :-------------: |
 | Full name          | vega-schema-url-parser |
 | Keywords           | vega, vega-lite, schema |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 1272180 |
+| # downloads        | 2107725 |
 | # stars            | 0 |
 
 ## Links

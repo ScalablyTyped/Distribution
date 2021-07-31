@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBoxBaseMod {
@@ -67,12 +66,11 @@ object searchBoxBaseMod {
     def defaultProps_=(x: PickISearchBoxPropsdisabl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ISearchBoxState extends StObject {
     
-    var hasFocus: js.UndefOr[Boolean] = js.native
+    var hasFocus: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ISearchBoxState {
     

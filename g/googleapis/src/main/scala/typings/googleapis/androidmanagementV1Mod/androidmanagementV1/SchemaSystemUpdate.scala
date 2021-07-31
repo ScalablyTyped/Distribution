@@ -2,13 +2,11 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for managing system updates
   */
-@js.native
 trait SchemaSystemUpdate extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait SchemaSystemUpdate extends StObject {
     * maintenance window specified is smaller than 30 minutes, the actual
     * window is extended to 30 minutes beyond the start time.
     */
-  var endMinutes: js.UndefOr[Double] = js.native
+  var endMinutes: js.UndefOr[Double] = js.undefined
   
   /**
     * If the type is WINDOWED, the start of the maintenance window, measured as
     * the number of minutes after midnight in the device&#39;s local time. This
     * value must be between 0 and 1439, inclusive.
     */
-  var startMinutes: js.UndefOr[Double] = js.native
+  var startMinutes: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of system update to configure.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaSystemUpdate {
   

@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextPosition extends StObject {
   
-  var Paragraph: Double = js.native
+  var Paragraph: Double
   
-  var PositionInParagraph: Double = js.native
+  var PositionInParagraph: Double
 }
 object TextPosition {
   

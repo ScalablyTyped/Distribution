@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Year")
@@ -45,36 +44,28 @@ object Year {
   def MIN_VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "Year.from")
-  @js.native
-  def from(temporal: TemporalAccessor): Year = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): Year = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[Year]
   
   /* static member */
-  @JSImport("js-joda", "Year.isLeap")
-  @js.native
-  def isLeap(year: Double): Boolean = js.native
+  @scala.inline
+  def isLeap(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeap")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("js-joda", "Year.now")
-  @js.native
-  def now(): Year = js.native
-  @JSImport("js-joda", "Year.now")
-  @js.native
-  def now(zoneIdOrClock: Clock): Year = js.native
-  @JSImport("js-joda", "Year.now")
-  @js.native
-  def now(zoneIdOrClock: ZoneId): Year = js.native
+  @scala.inline
+  def now(): Year = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Year]
+  @scala.inline
+  def now(zoneIdOrClock: Clock): Year = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(zoneIdOrClock.asInstanceOf[js.Any]).asInstanceOf[Year]
+  @scala.inline
+  def now(zoneIdOrClock: ZoneId): Year = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(zoneIdOrClock.asInstanceOf[js.Any]).asInstanceOf[Year]
   
   /* static member */
-  @JSImport("js-joda", "Year.of")
-  @js.native
-  def of(isoYear: Double): Year = js.native
+  @scala.inline
+  def of(isoYear: Double): Year = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(isoYear.asInstanceOf[js.Any]).asInstanceOf[Year]
   
   /* static member */
-  @JSImport("js-joda", "Year.parse")
-  @js.native
-  def parse(text: String): Year = js.native
-  @JSImport("js-joda", "Year.parse")
-  @js.native
-  def parse(text: String, formatter: DateTimeFormatter): Year = js.native
+  @scala.inline
+  def parse(text: String): Year = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Year]
+  @scala.inline
+  def parse(text: String, formatter: DateTimeFormatter): Year = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Year]
 }

@@ -5,13 +5,13 @@ import typings.std.stdStrings.auto
 import typings.std.stdStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties and methods for manipulating <img> elements. */
 @js.native
 trait HTMLImageElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with HTMLOrSVGImageElement
      with TexImageSource {
   

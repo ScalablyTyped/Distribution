@@ -2,13 +2,11 @@ package typings.serverless.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Http[T /* <: js.Object */] extends StObject {
   
-  var http: T | String = js.native
+  var http: T | String
 }
 object Http {
   
@@ -19,7 +17,7 @@ object Http {
   }
   
   @scala.inline
-  implicit class HttpMutableBuilder[Self <: Http[_], T /* <: js.Object */] (val x: Self with Http[T]) extends AnyVal {
+  implicit class HttpMutableBuilder[Self <: Http[?], T /* <: js.Object */] (val x: Self & Http[T]) extends AnyVal {
     
     @scala.inline
     def setHttp(value: T | String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendProjectSessionActionResponse extends StObject {
   
   /**
     * A unique identifier for the action that was performed.
     */
-  var ActionId: js.UndefOr[typings.awsSdk.databrewMod.ActionId] = js.native
+  var ActionId: js.UndefOr[typings.awsSdk.databrewMod.ActionId] = js.undefined
   
   /**
     * The name of the project that was affected by the action.
     */
-  var Name: ProjectName = js.native
+  var Name: ProjectName
   
   /**
     * A message indicating the result of performing the action.
     */
-  var Result: js.UndefOr[typings.awsSdk.databrewMod.Result] = js.native
+  var Result: js.UndefOr[typings.awsSdk.databrewMod.Result] = js.undefined
 }
 object SendProjectSessionActionResponse {
   

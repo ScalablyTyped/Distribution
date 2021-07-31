@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVoiceConnectorRequest extends StObject {
   
   /**
     * The AWS Region in which the Amazon Chime Voice Connector is created. Default value: us-east-1.
     */
-  var AwsRegion: js.UndefOr[VoiceConnectorAwsRegion] = js.native
+  var AwsRegion: js.UndefOr[VoiceConnectorAwsRegion] = js.undefined
   
   /**
     * The name of the Amazon Chime Voice Connector.
     */
-  var Name: VoiceConnectorName = js.native
+  var Name: VoiceConnectorName
   
   /**
     * When enabled, requires encryption for the Amazon Chime Voice Connector.
     */
-  var RequireEncryption: Boolean = js.native
+  var RequireEncryption: Boolean
 }
 object CreateVoiceConnectorRequest {
   

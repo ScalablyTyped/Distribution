@@ -2,7 +2,6 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * applied to a cluster with each request, so at most one field can be
   * provided.
   */
-@js.native
 trait SchemaClusterUpdate extends StObject {
   
   /**
     * Configurations for the various addons available to run in the cluster.
     */
-  var desiredAddonsConfig: js.UndefOr[SchemaAddonsConfig] = js.native
+  var desiredAddonsConfig: js.UndefOr[SchemaAddonsConfig] = js.undefined
   
   /**
     * The desired image type for the node pool. NOTE: Set the
     * &quot;desired_node_pool&quot; field as well.
     */
-  var desiredImageType: js.UndefOr[String] = js.native
+  var desiredImageType: js.UndefOr[String] = js.undefined
   
   /**
     * The desired list of Google Compute Engine
@@ -32,12 +30,12 @@ trait SchemaClusterUpdate extends StObject {
     * whether locations are being added or removed.  This list must always
     * include the cluster&#39;s primary zone.
     */
-  var desiredLocations: js.UndefOr[js.Array[String]] = js.native
+  var desiredLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The desired configuration options for master authorized networks feature.
     */
-  var desiredMasterAuthorizedNetworksConfig: js.UndefOr[SchemaMasterAuthorizedNetworksConfig] = js.native
+  var desiredMasterAuthorizedNetworksConfig: js.UndefOr[SchemaMasterAuthorizedNetworksConfig] = js.undefined
   
   /**
     * The Kubernetes version to change the master to.  Users may specify either
@@ -49,7 +47,7 @@ trait SchemaClusterUpdate extends StObject {
     * picks an explicit Kubernetes version - &quot;-&quot;: picks the default
     * Kubernetes version
     */
-  var desiredMasterVersion: js.UndefOr[String] = js.native
+  var desiredMasterVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The monitoring service the cluster should use to write metrics. Currently
@@ -57,7 +55,7 @@ trait SchemaClusterUpdate extends StObject {
     * Cloud Monitoring service * &quot;none&quot; - no metrics will be exported
     * from the cluster
     */
-  var desiredMonitoringService: js.UndefOr[String] = js.native
+  var desiredMonitoringService: js.UndefOr[String] = js.undefined
   
   /**
     * Autoscaler configuration for the node pool specified in
@@ -65,7 +63,7 @@ trait SchemaClusterUpdate extends StObject {
     * desired_node_pool_id is not provided then the change applies to that
     * single node pool.
     */
-  var desiredNodePoolAutoscaling: js.UndefOr[SchemaNodePoolAutoscaling] = js.native
+  var desiredNodePoolAutoscaling: js.UndefOr[SchemaNodePoolAutoscaling] = js.undefined
   
   /**
     * The node pool to be upgraded. This field is mandatory if
@@ -73,7 +71,7 @@ trait SchemaClusterUpdate extends StObject {
     * &quot;desired_node_pool_autoscaling&quot; is specified and there is more
     * than one node pool on the cluster.
     */
-  var desiredNodePoolId: js.UndefOr[String] = js.native
+  var desiredNodePoolId: js.UndefOr[String] = js.undefined
   
   /**
     * The Kubernetes version to change the nodes to (typically an upgrade).
@@ -85,7 +83,7 @@ trait SchemaClusterUpdate extends StObject {
     * the 1.X.Y version - &quot;1.X.Y-gke.N&quot;: picks an explicit Kubernetes
     * version - &quot;-&quot;: picks the Kubernetes master version
     */
-  var desiredNodeVersion: js.UndefOr[String] = js.native
+  var desiredNodeVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaClusterUpdate {
   

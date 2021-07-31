@@ -2,13 +2,11 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new event.
   */
-@js.native
 trait INewEvent extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait INewEvent extends StObject {
     * - out_of_office
     * @default "free"
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the event, with a maximum length of 32,768
     * characters. This structure is required.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The end time of the event. If no end time is specified, the default
@@ -34,38 +32,38 @@ trait INewEvent extends StObject {
     * user's local time, in ISO 8601 format.
     * Can be a date string, or a Date object.
     */
-  var end_time: js.UndefOr[js.Any] = js.native
+  var end_time: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A value that specifies whether the event is an all-day event. If the
     * event is an all-day event, this value is true; otherwise, it is
     * false. If this structure is missing, the default value is false.
     */
-  var is_all_day_event: js.UndefOr[Boolean] = js.native
+  var is_all_day_event: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the location at which the event will take place. The
     * maximum length is 1,000 characters.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the event, with a maximum length of 255 characters. This
     * structure is required.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The time, in minutes, before the event for the reminder alarm.
     */
-  var reminder_time: js.UndefOr[Double] = js.native
+  var reminder_time: js.UndefOr[Double] = js.undefined
   
   /**
     * The start time of the event. When the event is being read, the time
     * will be the user's local time, in ISO 8601 format.
     * Can be a date string, or a Date object.
     */
-  var start_time: js.Any = js.native
+  var start_time: js.Any
   
   /**
     * A value that specifies whether the event is publicly visible. Valid
@@ -74,7 +72,7 @@ trait INewEvent extends StObject {
     * - private the event is visible only to the event owner.
     * @default "public"
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object INewEvent {
   

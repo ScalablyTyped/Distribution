@@ -3,19 +3,17 @@ package typings.uiGrid.mod
 import typings.uiGrid.anon.ColumnSizeChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeColumns {
   
-  @js.native
   trait IColumnDef extends StObject {
     
     /**
       * Enable column resizing on an individual column
       * Defaults to GridOptions.enableColumnResizing
       */
-    var enableColumnResizing: js.UndefOr[Boolean] = js.native
+    var enableColumnResizing: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnDef {
     
@@ -36,7 +34,6 @@ object resizeColumns {
     }
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -44,7 +41,7 @@ object resizeColumns {
       * Defaults to true
       * @default true
       */
-    var enableColumnResizing: js.UndefOr[Boolean] = js.native
+    var enableColumnResizing: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -65,11 +62,10 @@ object resizeColumns {
     }
   }
   
-  @js.native
   trait IGridResizeColumnsApi extends StObject {
     
     // Events
-    var on: ColumnSizeChanged = js.native
+    var on: ColumnSizeChanged
   }
   object IGridResizeColumnsApi {
     

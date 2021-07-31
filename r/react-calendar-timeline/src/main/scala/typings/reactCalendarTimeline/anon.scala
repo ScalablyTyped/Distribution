@@ -15,25 +15,23 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var ref: Ref[_] = js.native
+    var ref: Ref[js.Any]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object ClassName {
     
     @scala.inline
     def apply(className: String, style: CSSProperties): ClassName = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[ClassName]
     }
     
@@ -44,10 +42,10 @@ object anon {
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
@@ -57,28 +55,27 @@ object anon {
     }
   }
   
-  @js.native
   trait CollisionLeft extends StObject {
     
-    var collisionLeft: Double = js.native
+    var collisionLeft: Double
     
-    var collisionWidth: Double = js.native
+    var collisionWidth: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var isDragging: Boolean = js.native
+    var isDragging: Boolean
     
-    var left: Double = js.native
+    var left: Double
     
-    var order: Group = js.native
+    var order: Group
     
-    var originalLeft: Double = js.native
+    var originalLeft: Double
     
-    var stack: Boolean = js.native
+    var stack: Boolean
     
-    var top: Double | Null = js.native
+    var top: Double | Null
     
-    var width: Double = js.native
+    var width: Double
   }
   object CollisionLeft {
     
@@ -94,7 +91,7 @@ object anon {
       stack: Boolean,
       width: Double
     ): CollisionLeft = {
-      val __obj = js.Dynamic.literal(collisionLeft = collisionLeft.asInstanceOf[js.Any], collisionWidth = collisionWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], originalLeft = originalLeft.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(collisionLeft = collisionLeft.asInstanceOf[js.Any], collisionWidth = collisionWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], originalLeft = originalLeft.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], top = null)
       __obj.asInstanceOf[CollisionLeft]
     }
     
@@ -136,16 +133,15 @@ object anon {
     }
   }
   
-  @js.native
   trait EndTime extends StObject {
     
-    var endTime: Double = js.native
+    var endTime: Double
     
-    var labelWidth: Double = js.native
+    var labelWidth: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var startTime: Double = js.native
+    var startTime: Double
   }
   object EndTime {
     
@@ -172,12 +168,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Group extends StObject {
     
-    var group: Id = js.native
+    var group: Id
     
-    var index: Double = js.native
+    var index: Double
   }
   object Group {
     
@@ -198,10 +193,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -219,28 +213,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var key: typings.reactCalendarTimeline.mod.Id = js.native
+    var key: typings.reactCalendarTimeline.mod.Id
     
-    var onContextMenu: ReactEventHandler[Element] = js.native
+    var onContextMenu: ReactEventHandler[Element]
     
-    var onDoubleClick: MouseEventHandler[Element] = js.native
+    var onDoubleClick: MouseEventHandler[Element]
     
-    var onMouseDown: MouseEventHandler[Element] = js.native
+    var onMouseDown: MouseEventHandler[Element]
     
-    var onMouseUp: MouseEventHandler[Element] = js.native
+    var onMouseUp: MouseEventHandler[Element]
     
-    var onTouchEnd: TouchEventHandler[Element] = js.native
+    var onTouchEnd: TouchEventHandler[Element]
     
-    var onTouchStart: TouchEventHandler[Element] = js.native
+    var onTouchStart: TouchEventHandler[Element]
     
-    var ref: Ref[_] = js.native
+    var ref: Ref[js.Any]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object Key {
     
@@ -256,7 +249,7 @@ object anon {
       onTouchStart: TouchEvent[Element] => Unit,
       style: CSSProperties
     ): Key = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[Key]
     }
     
@@ -288,10 +281,10 @@ object anon {
       def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
@@ -302,16 +295,15 @@ object anon {
   }
   
   /* Inlined std.Required<react-calendar-timeline.react-calendar-timeline.GetIntervalProps> & {  key :string | number} */
-  @js.native
   trait RequiredGetIntervalPropsk extends StObject {
     
-    var interval: Interval = js.native
+    var interval: Interval
     
-    var key: String | Double = js.native
+    var key: String | Double
     
-    var onClick: MouseEventHandler[Element] = js.native
+    var onClick: MouseEventHandler[Element]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object RequiredGetIntervalPropsk {
     
@@ -343,12 +335,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StartTime extends StObject {
     
-    var endTime: Moment = js.native
+    var endTime: Moment
     
-    var startTime: Moment = js.native
+    var startTime: Moment
   }
   object StartTime {
     
@@ -369,10 +360,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object Style {
     
@@ -390,12 +380,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

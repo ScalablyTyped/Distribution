@@ -2,31 +2,25 @@ package typings.fhirKitClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyBundleHeaders extends StObject {
   
-  var body: typings.fhir.fhir.Bundle = js.native
+  var body: typings.fhir.fhir.Bundle
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Bundle = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Bundle
 }
 object BodyBundleHeaders {
   
   @scala.inline
-  def apply(
-    body: typings.fhir.fhir.Bundle,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.Bundle
-  ): BodyBundleHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: typings.fhir.fhir.Bundle, id: String): BodyBundleHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Bundle")
     __obj.asInstanceOf[BodyBundleHeaders]
   }
   

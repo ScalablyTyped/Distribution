@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,26 +19,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The resource URL may have arguments that are passed to the factory method on its creation. Arguments are only available through the {@link
   * getFullResourceURL()} . The {@link getResourceURL()} method strips them away.
   */
-@js.native
 trait XResourceId extends StObject {
   
   /** Return a new {@link XResourceId} that represents the anchor resource. */
-  val Anchor: XResourceId = js.native
+  val Anchor: XResourceId
   
   /**
     * Return the, possibly empty, list of anchor URLs. The URLs are ordered so that the one in position 0 is the direct anchor of the resource, while the
     * one in position i+1 is the direct anchor of the one in position i.
     */
-  val AnchorURLs: SafeArray[String] = js.native
+  val AnchorURLs: SafeArray[String]
   
   /** Return an URL object of the resource URL that may contain arguments. */
-  val FullResourceURL: URL = js.native
+  val FullResourceURL: URL
   
   /** Return the type prefix of the resource URL. This includes all up to and including the second slash. */
-  val ResourceTypePrefix: String = js.native
+  val ResourceTypePrefix: String
   
   /** Return the URL of the resource. Arguments supplied on creation are stripped away. Use {@link getFullResourceURL()} to access them. */
-  val ResourceURL: String = js.native
+  val ResourceURL: String
   
   /**
     * Compare the called {@link XResourceId} object with the given one.
@@ -54,28 +52,28 @@ trait XResourceId extends StObject {
     * @param xId The resource id to which the called resource id is compared.
     * @returns Returns 0 when the called resource id is equivalent to the given resource id. Returns `-1` or `+1` when the two compared resource ids differ.
     */
-  def compareTo(xId: XResourceId): Double = js.native
+  def compareTo(xId: XResourceId): Double
   
   /** Return a new {@link XResourceId} that represents the anchor resource. */
-  def getAnchor(): XResourceId = js.native
+  def getAnchor(): XResourceId
   
   /**
     * Return the, possibly empty, list of anchor URLs. The URLs are ordered so that the one in position 0 is the direct anchor of the resource, while the
     * one in position i+1 is the direct anchor of the one in position i.
     */
-  def getAnchorURLs(): SafeArray[String] = js.native
+  def getAnchorURLs(): SafeArray[String]
   
   /** Return an URL object of the resource URL that may contain arguments. */
-  def getFullResourceURL(): URL = js.native
+  def getFullResourceURL(): URL
   
   /** Return the type prefix of the resource URL. This includes all up to and including the second slash. */
-  def getResourceTypePrefix(): String = js.native
+  def getResourceTypePrefix(): String
   
   /** Return the URL of the resource. Arguments supplied on creation are stripped away. Use {@link getFullResourceURL()} to access them. */
-  def getResourceURL(): String = js.native
+  def getResourceURL(): String
   
   /** Return whether there is a non-empty anchor URL. When this method returns `FALSE` then {@link getAnchorURLs()} will return an empty list. */
-  def hasAnchor(): Boolean = js.native
+  def hasAnchor(): Boolean
   
   /**
     * Return whether the anchor of the called resource id object represents the same resource as the given object.
@@ -85,7 +83,7 @@ trait XResourceId extends StObject {
     * @param xAnchorId The resource id of the anchor.
     * @param eMode This mode specifies how the called resource has to be bound to the given anchor in order to have this function return `TRUE` . If eMode is
     */
-  def isBoundTo(xAnchorId: XResourceId, eMode: AnchorBindingMode): Boolean = js.native
+  def isBoundTo(xAnchorId: XResourceId, eMode: AnchorBindingMode): Boolean
   
   /**
     * Return whether the anchor of the called resource id object represents the same resource as the given anchor URL. This is a convenience variant of the
@@ -93,7 +91,7 @@ trait XResourceId extends StObject {
     * @param AnchorURL The resource URL of the anchor.
     * @param eMode This mode specifies how the called resource has to be bound to the given anchor in order to have this function return. See the description
     */
-  def isBoundToURL(AnchorURL: String, eMode: AnchorBindingMode): Boolean = js.native
+  def isBoundToURL(AnchorURL: String, eMode: AnchorBindingMode): Boolean
 }
 object XResourceId {
   

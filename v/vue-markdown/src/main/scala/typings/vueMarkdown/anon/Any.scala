@@ -3,21 +3,19 @@ package typings.vueMarkdown.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Any extends StObject {
   
-  var Any: RegExp = js.native
+  var Any: RegExp
   
-  var Cc: RegExp = js.native
+  var Cc: RegExp
   
-  var Cf: RegExp = js.native
+  var Cf: RegExp
   
-  var P: RegExp = js.native
+  var P: RegExp
   
-  var Z: RegExp = js.native
+  var Z: RegExp
 }
 object Any {
   

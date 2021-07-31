@@ -3,7 +3,6 @@ package typings.googleapis
 import typings.googleapisCommon.schemaMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatorMod {
@@ -87,12 +86,11 @@ object generatorMod {
     var transporter: js.Any = js.native
   }
   
-  @js.native
   trait GeneratorOptions extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var includePrivate: js.UndefOr[Boolean] = js.native
+    var includePrivate: js.UndefOr[Boolean] = js.undefined
   }
   object GeneratorOptions {
     

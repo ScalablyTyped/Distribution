@@ -7,46 +7,44 @@ import typings.ionicCore.navInterfaceMod.NavComponent
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonNav extends StObject {
   
   /**
     * If `true`, the nav should animate the transition of components.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default `ion-nav` animates transition between pages based in the mode (ios or material design). However, this property allows to create custom transition using `AnimateBuilder` functions.
     */
-  var animation: js.UndefOr[AnimationBuilder] = js.native
+  var animation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * Event fired when the nav has changed components
     */
-  var onIonNavDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonNavDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Event fired when the nav will change components
     */
-  var onIonNavWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonNavWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Root NavComponent to load
     */
-  var root: js.UndefOr[NavComponent] = js.native
+  var root: js.UndefOr[NavComponent] = js.undefined
   
   /**
     * Any parameters for the root component
     */
-  var rootParams: js.UndefOr[ComponentProps[Null]] = js.native
+  var rootParams: js.UndefOr[ComponentProps[Null]] = js.undefined
   
   /**
     * If the nav component should allow for swipe-to-go-back.
     */
-  var swipeGesture: js.UndefOr[Boolean] = js.native
+  var swipeGesture: js.UndefOr[Boolean] = js.undefined
 }
 object IonNav {
   

@@ -7,7 +7,6 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
@@ -82,28 +81,30 @@ object metadataMod {
   /* static members */
   object Metadata {
     
+    @JSImport("@grpc/grpc-js/build/src/metadata", "Metadata")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a new Metadata object based fields in a given IncomingHttpHeaders
       * object.
       * @param headers An IncomingHttpHeaders object.
       */
-    @JSImport("@grpc/grpc-js/build/src/metadata", "Metadata.fromHttp2Headers")
-    @js.native
-    def fromHttp2Headers(headers: IncomingHttpHeaders): Metadata = js.native
+    @scala.inline
+    def fromHttp2Headers(headers: IncomingHttpHeaders): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHttp2Headers")(headers.asInstanceOf[js.Any]).asInstanceOf[Metadata]
   }
   
   type MetadataObject = Map[String, js.Array[MetadataValue]]
   
-  @js.native
   trait MetadataOptions extends StObject {
     
-    var cacheableRequest: js.UndefOr[Boolean] = js.native
+    var cacheableRequest: js.UndefOr[Boolean] = js.undefined
     
-    var corked: js.UndefOr[Boolean] = js.native
+    var corked: js.UndefOr[Boolean] = js.undefined
     
-    var idempotentRequest: js.UndefOr[Boolean] = js.native
+    var idempotentRequest: js.UndefOr[Boolean] = js.undefined
     
-    var waitForReady: js.UndefOr[Boolean] = js.native
+    var waitForReady: js.UndefOr[Boolean] = js.undefined
   }
   object MetadataOptions {
     

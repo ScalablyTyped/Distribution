@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Group.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options {H.map.Group.Options=} - an optional object containing initialization values
   */
 class Group ()
-  extends typings.heremaps.H.map.Group {
+  extends StObject
+     with typings.heremaps.H.map.Group {
   def this(opt_options: Options) = this()
 }

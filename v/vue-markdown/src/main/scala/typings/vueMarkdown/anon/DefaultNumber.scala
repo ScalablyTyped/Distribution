@@ -2,15 +2,13 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultNumber extends StObject {
   
-  var default: Double = js.native
+  var default: Double
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
 }
 object DefaultNumber {
   

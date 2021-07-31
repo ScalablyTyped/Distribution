@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Review extends StObject {
   
   /** The name of the user who wrote the review. */
-  var authorName: js.UndefOr[String] = js.native
+  var authorName: js.UndefOr[String] = js.undefined
   
   /** A repeated field containing comments for the review. */
-  var comments: js.UndefOr[js.Array[Comment]] = js.native
+  var comments: js.UndefOr[js.Array[Comment]] = js.undefined
   
   /** Unique identifier for this review. */
-  var reviewId: js.UndefOr[String] = js.native
+  var reviewId: js.UndefOr[String] = js.undefined
 }
 object Review {
   

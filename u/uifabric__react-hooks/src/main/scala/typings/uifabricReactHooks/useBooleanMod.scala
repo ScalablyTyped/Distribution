@@ -2,26 +2,27 @@ package typings.uifabricReactHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useBooleanMod {
   
-  @JSImport("@uifabric/react-hooks/lib/useBoolean", "useBoolean")
+  @JSImport("@uifabric/react-hooks/lib/useBoolean", JSImport.Namespace)
   @js.native
-  def useBoolean(initialState: Boolean): js.Tuple2[Boolean, IUseBooleanCallbacks] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useBoolean(initialState: Boolean): js.Tuple2[Boolean, IUseBooleanCallbacks] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBoolean")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, IUseBooleanCallbacks]]
+  
   trait IUseBooleanCallbacks extends StObject {
     
     /** Set the value to false. Always has the same identity. */
-    def setFalse(): Unit = js.native
+    def setFalse(): Unit
     
     /** Set the value to true. Always has the same identity. */
-    def setTrue(): Unit = js.native
+    def setTrue(): Unit
     
     /** Toggle the value. Always has the same identity. */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object IUseBooleanCallbacks {
     

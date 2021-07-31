@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetTopPathsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetTopPathsEndpoint extends StObject {
   
-  var parameters: ReposGetTopPathsEndpoint = js.native
+  var parameters: ReposGetTopPathsEndpoint
   
-  var request: ReposGetTopPathsRequestOptions = js.native
+  var request: ReposGetTopPathsRequestOptions
   
-  var response: OctokitResponse[ReposGetTopPathsResponseData] = js.native
+  var response: OctokitResponse[ReposGetTopPathsResponseData]
 }
 object ParametersReposGetTopPathsEndpoint {
   

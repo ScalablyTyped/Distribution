@@ -2,81 +2,79 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Representation of an SF symbol._
   * @see https://docs.scriptable.app/sfsymbol
   */
-@js.native
 trait SFSymbol extends StObject {
   
   /**
     * _Configures the symbol to use a black weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applyblackweight
     */
-  def applyBlackWeight(): Unit = js.native
+  def applyBlackWeight(): Unit
   
   /**
     * _Configures the symbol to use a bold weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applyboldweight
     */
-  def applyBoldWeight(): Unit = js.native
+  def applyBoldWeight(): Unit
   
   /**
     * _Configures the symbol with the specified font information._
     * @see https://docs.scriptable.app/sfsymbol/#-applyfont
     */
-  def applyFont(font: Font): Unit = js.native
+  def applyFont(font: Font): Unit
   
   /**
     * _Configures the symbol to use a heavy weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applyheavyweight
     */
-  def applyHeavyWeight(): Unit = js.native
+  def applyHeavyWeight(): Unit
   
   /**
     * _Configures the symbol to use a light weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applylightweight
     */
-  def applyLightWeight(): Unit = js.native
+  def applyLightWeight(): Unit
   
   /**
     * _Configures the symbol to use a medium weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applymediumweight
     */
-  def applyMediumWeight(): Unit = js.native
+  def applyMediumWeight(): Unit
   
   /**
     * _Configures the symbol to use a regular weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applyregularweight
     */
-  def applyRegularWeight(): Unit = js.native
+  def applyRegularWeight(): Unit
   
   /**
     * _Configures the symbol to use a semibold weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applysemiboldweight
     */
-  def applySemiboldWeight(): Unit = js.native
+  def applySemiboldWeight(): Unit
   
   /**
     * _Configures the symbol to use a thin weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applythinweight
     */
-  def applyThinWeight(): Unit = js.native
+  def applyThinWeight(): Unit
   
   /**
     * _Configures the symbol to use an ultra light weight._
     * @see https://docs.scriptable.app/sfsymbol/#-applyultralightweight
     */
-  def applyUltraLightWeight(): Unit = js.native
+  def applyUltraLightWeight(): Unit
   
   /**
     * _Convert the symbol to an image._
     * @see https://docs.scriptable.app/sfsymbol/#image
     */
-  var image: Image = js.native
+  var image: Image
 }
 object SFSymbol {
   

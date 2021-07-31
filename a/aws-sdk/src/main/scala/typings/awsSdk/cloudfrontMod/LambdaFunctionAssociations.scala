@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionAssociations extends StObject {
   
   /**
     *  Optional: A complex type that contains LambdaFunctionAssociation items for this cache behavior. If Quantity is 0, you can omit Items.
     */
-  var Items: js.UndefOr[LambdaFunctionAssociationList] = js.native
+  var Items: js.UndefOr[LambdaFunctionAssociationList] = js.undefined
   
   /**
     * The number of Lambda function associations for this cache behavior.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object LambdaFunctionAssociations {
   

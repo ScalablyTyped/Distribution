@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudRepoSourceContext extends StObject {
   
   /** An alias, which may be a branch or tag. */
-  var aliasContext: js.UndefOr[AliasContext] = js.native
+  var aliasContext: js.UndefOr[AliasContext] = js.undefined
   
   /** The name of an alias (branch, tag, etc.). */
-  var aliasName: js.UndefOr[String] = js.native
+  var aliasName: js.UndefOr[String] = js.undefined
   
   /** The ID of the repo. */
-  var repoId: js.UndefOr[RepoId] = js.native
+  var repoId: js.UndefOr[RepoId] = js.undefined
   
   /** A revision ID. */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
 }
 object CloudRepoSourceContext {
   

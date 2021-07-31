@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyLoadBalancerAttributesInput extends StObject {
   
   /**
     * The load balancer attributes.
     */
-  var Attributes: LoadBalancerAttributes = js.native
+  var Attributes: LoadBalancerAttributes
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
     */
-  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn = js.native
+  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn
 }
 object ModifyLoadBalancerAttributesInput {
   

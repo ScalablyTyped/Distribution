@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id3Insertion extends StObject {
   
   /**
     * Use ID3 tag (Id3) to provide a tag value in base64-encode format.
     */
-  var Id3: js.UndefOr[stringPatternAZaZ0902] = js.native
+  var Id3: js.UndefOr[stringPatternAZaZ0902] = js.undefined
   
   /**
     * Provide a Timecode (TimeCode) in HH:MM:SS:FF or HH:MM:SS;FF format.
     */
-  var Timecode: js.UndefOr[stringPattern010920405090509092] = js.native
+  var Timecode: js.UndefOr[stringPattern010920405090509092] = js.undefined
 }
 object Id3Insertion {
   

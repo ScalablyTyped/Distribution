@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,5 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait CoreReflection
-  extends XIdlReflection
+  extends StObject
+     with XIdlReflection
      with XComponent

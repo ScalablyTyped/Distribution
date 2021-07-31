@@ -4,15 +4,13 @@ import typings.figma.figmaStrings.PERCENT
 import typings.figma.figmaStrings.PIXELS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LetterSpacing extends StObject {
   
-  val unit: PIXELS | PERCENT = js.native
+  val unit: PIXELS | PERCENT
   
-  val value: Double = js.native
+  val value: Double
 }
 object LetterSpacing {
   

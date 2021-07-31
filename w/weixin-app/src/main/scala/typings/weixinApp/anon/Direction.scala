@@ -4,13 +4,11 @@ import typings.weixinApp.weixinAppNumbers.`-90`
 import typings.weixinApp.weixinAppNumbers.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: typings.weixinApp.weixinAppNumbers.`0` | `90` | `-90` = js.native
+  var direction: typings.weixinApp.weixinAppNumbers.`0` | `90` | `-90`
 }
 object Direction {
   

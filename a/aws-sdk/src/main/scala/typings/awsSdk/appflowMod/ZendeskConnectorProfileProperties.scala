@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZendeskConnectorProfileProperties extends StObject {
   
   /**
     *  The location of the Zendesk resource. 
     */
-  var instanceUrl: InstanceUrl = js.native
+  var instanceUrl: InstanceUrl
 }
 object ZendeskConnectorProfileProperties {
   

@@ -12,7 +12,7 @@ Check if a path is the root path. Example: `/` or `C:\`
 | Keywords           | root, path, dir, directory, top, level, absolute, check, detect, is |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 199 |
+| # downloads        | 154 |
 | # stars            | 0 |
 
 ## Links

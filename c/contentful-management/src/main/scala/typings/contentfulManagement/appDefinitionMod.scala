@@ -10,22 +10,23 @@ import typings.contentfulManagement.contentfulManagementStrings.Link
 import typings.contentfulManagement.contentfulManagementStrings.`entry-field`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appDefinitionMod {
   
-  @JSImport("contentful-management/dist/typings/entities/app-definition", "wrapAppDefinition")
+  @JSImport("contentful-management/dist/typings/entities/app-definition", JSImport.Namespace)
   @js.native
-  def wrapAppDefinition(http: AxiosInstance, data: AppDefinitionProps): AppDefinition = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/app-definition", "wrapAppDefinitionCollection")
-  @js.native
-  def wrapAppDefinitionCollection(http: AxiosInstance, data: CollectionProp[AppDefinitionProps]): Collection[AppDefinition, AppDefinitionProps] = js.native
+  @scala.inline
+  def wrapAppDefinition(http: AxiosInstance, data: AppDefinitionProps): AppDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppDefinition")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[AppDefinition]
   
-  @js.native
+  @scala.inline
+  def wrapAppDefinitionCollection(http: AxiosInstance, data: CollectionProp[AppDefinitionProps]): Collection[AppDefinition, AppDefinitionProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppDefinitionCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[AppDefinition, AppDefinitionProps]]
+  
   trait AppDefinition
-    extends AppDefinitionProps
+    extends StObject
+       with AppDefinitionProps
        with DefaultElements[AppDefinitionProps] {
     
     /**
@@ -45,7 +46,7 @@ object appDefinitionMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -67,7 +68,7 @@ object appDefinitionMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[AppDefinition] = js.native
+    def update(): js.Promise[AppDefinition]
   }
   object AppDefinition {
     
@@ -96,28 +97,27 @@ object appDefinitionMod {
     }
   }
   
-  @js.native
   trait AppDefinitionProps extends StObject {
     
     /**
       * Locations where the app can be installed
       */
-    var locations: js.Array[LocationDefinition] = js.native
+    var locations: js.Array[LocationDefinition]
     
     /**
       * App name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * URL where the root HTML document of the app can be found
       */
-    var src: String = js.native
+    var src: String
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object AppDefinitionProps {
     
@@ -173,19 +173,20 @@ object appDefinitionMod {
     def page: typings.contentfulManagement.contentfulManagementStrings.page = "page".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.page]
   }
   
-  @js.native
-  trait ArrayFieldType extends FieldType {
+  trait ArrayFieldType
+    extends StObject
+       with FieldType {
     
-    var items: SingleFieldType | LinkFieldType = js.native
+    var items: SingleFieldType | LinkFieldType
     
-    var `type`: Array = js.native
+    var `type`: Array
   }
   object ArrayFieldType {
     
     @scala.inline
-    def apply(items: SingleFieldType | LinkFieldType, `type`: Array): ArrayFieldType = {
+    def apply(items: SingleFieldType | LinkFieldType): ArrayFieldType = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[ArrayFieldType]
     }
     
@@ -200,18 +201,19 @@ object appDefinitionMod {
     }
   }
   
-  @js.native
-  trait EntryFieldLocationDefinition extends LocationDefinition {
+  trait EntryFieldLocationDefinition
+    extends StObject
+       with LocationDefinition {
     
-    var fieldTypes: js.Array[FieldType] = js.native
+    var fieldTypes: js.Array[FieldType]
     
-    var location: `entry-field` = js.native
+    var location: `entry-field`
   }
   object EntryFieldLocationDefinition {
     
     @scala.inline
-    def apply(fieldTypes: js.Array[FieldType], location: `entry-field`): EntryFieldLocationDefinition = {
-      val __obj = js.Dynamic.literal(fieldTypes = fieldTypes.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    def apply(fieldTypes: js.Array[FieldType]): EntryFieldLocationDefinition = {
+      val __obj = js.Dynamic.literal(fieldTypes = fieldTypes.asInstanceOf[js.Any], location = "entry-field")
       __obj.asInstanceOf[EntryFieldLocationDefinition]
     }
     
@@ -280,16 +282,16 @@ object appDefinitionMod {
   object FieldType {
     
     @scala.inline
-    def ArrayFieldType(items: SingleFieldType | LinkFieldType, `type`: Array): typings.contentfulManagement.appDefinitionMod.ArrayFieldType = {
+    def ArrayFieldType(items: SingleFieldType | LinkFieldType): typings.contentfulManagement.appDefinitionMod.ArrayFieldType = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[typings.contentfulManagement.appDefinitionMod.ArrayFieldType]
     }
     
     @scala.inline
-    def LinkFieldType(linkType: LinkType, `type`: Link): typings.contentfulManagement.appDefinitionMod.LinkFieldType = {
+    def LinkFieldType(linkType: LinkType): typings.contentfulManagement.appDefinitionMod.LinkFieldType = {
       val __obj = js.Dynamic.literal(linkType = linkType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[typings.contentfulManagement.appDefinitionMod.LinkFieldType]
     }
     
@@ -301,19 +303,20 @@ object appDefinitionMod {
     }
   }
   
-  @js.native
-  trait LinkFieldType extends FieldType {
+  trait LinkFieldType
+    extends StObject
+       with FieldType {
     
-    var linkType: LinkType = js.native
+    var linkType: LinkType
     
-    var `type`: Link = js.native
+    var `type`: Link
   }
   object LinkFieldType {
     
     @scala.inline
-    def apply(linkType: LinkType, `type`: Link): LinkFieldType = {
+    def apply(linkType: LinkType): LinkFieldType = {
       val __obj = js.Dynamic.literal(linkType = linkType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Link")
       __obj.asInstanceOf[LinkFieldType]
     }
     
@@ -350,8 +353,8 @@ object appDefinitionMod {
   object LocationDefinition {
     
     @scala.inline
-    def EntryFieldLocationDefinition(fieldTypes: js.Array[FieldType], location: `entry-field`): typings.contentfulManagement.appDefinitionMod.EntryFieldLocationDefinition = {
-      val __obj = js.Dynamic.literal(fieldTypes = fieldTypes.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    def EntryFieldLocationDefinition(fieldTypes: js.Array[FieldType]): typings.contentfulManagement.appDefinitionMod.EntryFieldLocationDefinition = {
+      val __obj = js.Dynamic.literal(fieldTypes = fieldTypes.asInstanceOf[js.Any], location = "entry-field")
       __obj.asInstanceOf[typings.contentfulManagement.appDefinitionMod.EntryFieldLocationDefinition]
     }
     
@@ -362,10 +365,11 @@ object appDefinitionMod {
     }
   }
   
-  @js.native
-  trait SingleFieldType extends FieldType {
+  trait SingleFieldType
+    extends StObject
+       with FieldType {
     
-    var `type`: Field = js.native
+    var `type`: Field
   }
   object SingleFieldType {
     
@@ -384,10 +388,11 @@ object appDefinitionMod {
     }
   }
   
-  @js.native
-  trait SingleLocationDefinition extends LocationDefinition {
+  trait SingleLocationDefinition
+    extends StObject
+       with LocationDefinition {
     
-    var location: AppLocation = js.native
+    var location: AppLocation
   }
   object SingleLocationDefinition {
     

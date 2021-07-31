@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsageAndQuotaResponse extends StObject {
   
   /**
     * Whether or not the origin has an active storage quota override
     */
-  var overrideActive: Boolean = js.native
+  var overrideActive: Boolean
   
   /**
     * Storage quota (bytes).
     */
-  var quota: Double = js.native
+  var quota: Double
   
   /**
     * Storage usage (bytes).
     */
-  var usage: Double = js.native
+  var usage: Double
   
   /**
     * Storage usage per type (bytes).
     */
-  var usageBreakdown: js.Array[UsageForType] = js.native
+  var usageBreakdown: js.Array[UsageForType]
 }
 object GetUsageAndQuotaResponse {
   

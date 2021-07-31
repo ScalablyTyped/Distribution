@@ -5,19 +5,17 @@ import typings.uirouterCore.coreservicesMod.LocationServices
 import typings.uirouterCore.routerMod.UIRouter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
-  var configuration: LocationConfig = js.native
+  var configuration: LocationConfig
   
-  def dispose(router: UIRouter): Unit = js.native
+  def dispose(router: UIRouter): Unit
   
-  var name: String = js.native
+  var name: String
   
-  var service: LocationServices = js.native
+  var service: LocationServices
 }
 object Configuration {
   

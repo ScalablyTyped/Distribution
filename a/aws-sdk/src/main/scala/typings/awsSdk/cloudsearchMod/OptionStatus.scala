@@ -2,36 +2,34 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionStatus extends StObject {
   
   /**
     * A timestamp for when this option was created.
     */
-  var CreationDate: UpdateTimestamp = js.native
+  var CreationDate: UpdateTimestamp
   
   /**
     * Indicates that the option will be deleted once processing is complete.
     */
-  var PendingDeletion: js.UndefOr[Boolean] = js.native
+  var PendingDeletion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The state of processing a change to an option. Possible values: RequiresIndexDocuments: the option's latest value will not be deployed until IndexDocuments has been called and indexing is complete. Processing: the option's latest value is in the process of being activated.  Active: the option's latest value is completely deployed. FailedToValidate: the option value is not compatible with the domain's data and cannot be used to index the data. You must either modify the option value or update or remove the incompatible documents. 
     */
-  var State: OptionState = js.native
+  var State: OptionState
   
   /**
     * A timestamp for when this option was last updated.
     */
-  var UpdateDate: UpdateTimestamp = js.native
+  var UpdateDate: UpdateTimestamp
   
   /**
     * A unique integer that indicates when this option was last updated.
     */
-  var UpdateVersion: js.UndefOr[UIntValue] = js.native
+  var UpdateVersion: js.UndefOr[UIntValue] = js.undefined
 }
 object OptionStatus {
   

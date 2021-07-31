@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.createRepositoryExceptionsUnionMod.Cre
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRepositoryDescriptionExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRepositoryDescriptionExceptionDetails> * / any */ @js.native
-  trait InvalidRepositoryDescriptionException
-    extends CreateRepositoryExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRepositoryDescriptionExceptionDetails> * / any */ trait InvalidRepositoryDescriptionException
+    extends StObject
+       with CreateRepositoryExceptionsUnion
        with UpdateRepositoryDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryDescriptionException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryDescriptionException
   }
   object InvalidRepositoryDescriptionException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryDescriptionException
-    ): InvalidRepositoryDescriptionException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRepositoryDescriptionException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRepositoryDescriptionException")
       __obj.asInstanceOf[InvalidRepositoryDescriptionException]
     }
     
@@ -37,6 +34,5 @@ object typesInvalidRepositoryDescriptionExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRepositoryDescriptionExceptionDetails extends StObject
 }

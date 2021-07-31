@@ -2,56 +2,54 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBrokerResponse extends StObject {
   
   /**
     * The authentication strategy used to secure the broker.
     */
-  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.native
+  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
     * The new value of automatic upgrades to new minor version for brokers.
     */
-  var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.native
+  var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined
   
   /**
     * Required. The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: js.UndefOr[string] = js.native
+  var BrokerId: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the updated configuration.
     */
-  var Configuration: js.UndefOr[ConfigurationId] = js.native
+  var Configuration: js.UndefOr[ConfigurationId] = js.undefined
   
   /**
     * The version of the broker engine to upgrade to. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
     */
-  var EngineVersion: js.UndefOr[string] = js.native
+  var EngineVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
     */
-  var HostInstanceType: js.UndefOr[string] = js.native
+  var HostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
     * The metadata of the LDAP server used to authenticate and authorize connections to the broker.
     */
-  var LdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.native
+  var LdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.undefined
   
   /**
     * The list of information about logs to be enabled for the specified broker.
     */
-  var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.native
+  var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.undefined
   
   /**
     * The list of security groups (1 minimum, 5 maximum) that authorizes connections to brokers.
     */
-  var SecurityGroups: js.UndefOr[listOfString] = js.native
+  var SecurityGroups: js.UndefOr[listOfString] = js.undefined
 }
 object UpdateBrokerResponse {
   

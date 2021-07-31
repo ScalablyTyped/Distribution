@@ -17,7 +17,6 @@ import typings.sipJs.subscriberOptionsMod.SubscriberOptions
 import typings.sipJs.subscriptionOptionsMod.SubscriptionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
@@ -103,14 +102,14 @@ object apiMod {
       userAgent: typings.sipJs.userAgentMod.UserAgent,
       targetURI: URI,
       content: String,
-      contentType: js.UndefOr[scala.Nothing],
+      contentType: String,
       options: MessagerOptions
     ) = this()
     def this(
       userAgent: typings.sipJs.userAgentMod.UserAgent,
       targetURI: URI,
       content: String,
-      contentType: String,
+      contentType: Unit,
       options: MessagerOptions
     ) = this()
   }
@@ -149,15 +148,15 @@ object apiMod {
   object PublisherState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.publisherStateMod.PublisherState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.publisherStateMod.PublisherState & String] = js.native
     
-    /* "Initial" */ val Initial: typings.sipJs.publisherStateMod.PublisherState.Initial with String = js.native
+    /* "Initial" */ val Initial: typings.sipJs.publisherStateMod.PublisherState.Initial & String = js.native
     
-    /* "Published" */ val Published: typings.sipJs.publisherStateMod.PublisherState.Published with String = js.native
+    /* "Published" */ val Published: typings.sipJs.publisherStateMod.PublisherState.Published & String = js.native
     
-    /* "Terminated" */ val Terminated: typings.sipJs.publisherStateMod.PublisherState.Terminated with String = js.native
+    /* "Terminated" */ val Terminated: typings.sipJs.publisherStateMod.PublisherState.Terminated & String = js.native
     
-    /* "Unpublished" */ val Unpublished: typings.sipJs.publisherStateMod.PublisherState.Unpublished with String = js.native
+    /* "Unpublished" */ val Unpublished: typings.sipJs.publisherStateMod.PublisherState.Unpublished & String = js.native
   }
   
   @JSImport("sip.js/lib/api", "Referral")
@@ -222,15 +221,15 @@ object apiMod {
   object RegistererState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.registererStateMod.RegistererState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.registererStateMod.RegistererState & String] = js.native
     
-    /* "Initial" */ val Initial: typings.sipJs.registererStateMod.RegistererState.Initial with String = js.native
+    /* "Initial" */ val Initial: typings.sipJs.registererStateMod.RegistererState.Initial & String = js.native
     
-    /* "Registered" */ val Registered: typings.sipJs.registererStateMod.RegistererState.Registered with String = js.native
+    /* "Registered" */ val Registered: typings.sipJs.registererStateMod.RegistererState.Registered & String = js.native
     
-    /* "Terminated" */ val Terminated: typings.sipJs.registererStateMod.RegistererState.Terminated with String = js.native
+    /* "Terminated" */ val Terminated: typings.sipJs.registererStateMod.RegistererState.Terminated & String = js.native
     
-    /* "Unregistered" */ val Unregistered: typings.sipJs.registererStateMod.RegistererState.Unregistered with String = js.native
+    /* "Unregistered" */ val Unregistered: typings.sipJs.registererStateMod.RegistererState.Unregistered & String = js.native
   }
   
   @JSImport("sip.js/lib/api", "RequestPendingError")
@@ -246,13 +245,13 @@ object apiMod {
   object SIPExtension extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.userAgentOptionsMod.SIPExtension with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.userAgentOptionsMod.SIPExtension & String] = js.native
     
-    /* "Required" */ val Required: typings.sipJs.userAgentOptionsMod.SIPExtension.Required with String = js.native
+    /* "Required" */ val Required: typings.sipJs.userAgentOptionsMod.SIPExtension.Required & String = js.native
     
-    /* "Supported" */ val Supported: typings.sipJs.userAgentOptionsMod.SIPExtension.Supported with String = js.native
+    /* "Supported" */ val Supported: typings.sipJs.userAgentOptionsMod.SIPExtension.Supported & String = js.native
     
-    /* "Unsupported" */ val Unsupported: typings.sipJs.userAgentOptionsMod.SIPExtension.Unsupported with String = js.native
+    /* "Unsupported" */ val Unsupported: typings.sipJs.userAgentOptionsMod.SIPExtension.Unsupported & String = js.native
   }
   
   @JSImport("sip.js/lib/api", "Session")
@@ -280,17 +279,17 @@ object apiMod {
   object SessionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.sessionStateMod.SessionState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.sessionStateMod.SessionState & String] = js.native
     
-    /* "Established" */ val Established: typings.sipJs.sessionStateMod.SessionState.Established with String = js.native
+    /* "Established" */ val Established: typings.sipJs.sessionStateMod.SessionState.Established & String = js.native
     
-    /* "Establishing" */ val Establishing: typings.sipJs.sessionStateMod.SessionState.Establishing with String = js.native
+    /* "Establishing" */ val Establishing: typings.sipJs.sessionStateMod.SessionState.Establishing & String = js.native
     
-    /* "Initial" */ val Initial: typings.sipJs.sessionStateMod.SessionState.Initial with String = js.native
+    /* "Initial" */ val Initial: typings.sipJs.sessionStateMod.SessionState.Initial & String = js.native
     
-    /* "Terminated" */ val Terminated: typings.sipJs.sessionStateMod.SessionState.Terminated with String = js.native
+    /* "Terminated" */ val Terminated: typings.sipJs.sessionStateMod.SessionState.Terminated & String = js.native
     
-    /* "Terminating" */ val Terminating: typings.sipJs.sessionStateMod.SessionState.Terminating with String = js.native
+    /* "Terminating" */ val Terminating: typings.sipJs.sessionStateMod.SessionState.Terminating & String = js.native
   }
   
   @JSImport("sip.js/lib/api", "SessionTerminatedError")
@@ -343,15 +342,15 @@ object apiMod {
   object SubscriptionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.subscriptionStateMod.SubscriptionState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.subscriptionStateMod.SubscriptionState & String] = js.native
     
-    /* "Initial" */ val Initial: typings.sipJs.subscriptionStateMod.SubscriptionState.Initial with String = js.native
+    /* "Initial" */ val Initial: typings.sipJs.subscriptionStateMod.SubscriptionState.Initial & String = js.native
     
-    /* "NotifyWait" */ val NotifyWait: typings.sipJs.subscriptionStateMod.SubscriptionState.NotifyWait with String = js.native
+    /* "NotifyWait" */ val NotifyWait: typings.sipJs.subscriptionStateMod.SubscriptionState.NotifyWait & String = js.native
     
-    /* "Subscribed" */ val Subscribed: typings.sipJs.subscriptionStateMod.SubscriptionState.Subscribed with String = js.native
+    /* "Subscribed" */ val Subscribed: typings.sipJs.subscriptionStateMod.SubscriptionState.Subscribed & String = js.native
     
-    /* "Terminated" */ val Terminated: typings.sipJs.subscriptionStateMod.SubscriptionState.Terminated with String = js.native
+    /* "Terminated" */ val Terminated: typings.sipJs.subscriptionStateMod.SubscriptionState.Terminated & String = js.native
   }
   
   @JSImport("sip.js/lib/api", "TransportState")
@@ -359,15 +358,15 @@ object apiMod {
   object TransportState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.transportStateMod.TransportState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.transportStateMod.TransportState & String] = js.native
     
-    /* "Connected" */ val Connected: typings.sipJs.transportStateMod.TransportState.Connected with String = js.native
+    /* "Connected" */ val Connected: typings.sipJs.transportStateMod.TransportState.Connected & String = js.native
     
-    /* "Connecting" */ val Connecting: typings.sipJs.transportStateMod.TransportState.Connecting with String = js.native
+    /* "Connecting" */ val Connecting: typings.sipJs.transportStateMod.TransportState.Connecting & String = js.native
     
-    /* "Disconnected" */ val Disconnected: typings.sipJs.transportStateMod.TransportState.Disconnected with String = js.native
+    /* "Disconnected" */ val Disconnected: typings.sipJs.transportStateMod.TransportState.Disconnected & String = js.native
     
-    /* "Disconnecting" */ val Disconnecting: typings.sipJs.transportStateMod.TransportState.Disconnecting with String = js.native
+    /* "Disconnecting" */ val Disconnecting: typings.sipJs.transportStateMod.TransportState.Disconnecting & String = js.native
   }
   
   @JSImport("sip.js/lib/api", "UserAgent")
@@ -403,9 +402,8 @@ object apiMod {
       * const uri = UserAgent.makeURI("sip:edgar@example.com");
       * ```
       */
-    @JSImport("sip.js/lib/api", "UserAgent.makeURI")
-    @js.native
-    def makeURI(uri: String): js.UndefOr[URI] = js.native
+    @scala.inline
+    def makeURI(uri: String): js.UndefOr[URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[URI]]
     
     /**
       * Strip properties with undefined values from options.
@@ -425,10 +423,10 @@ object apiMod {
   object UserAgentState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sipJs.userAgentStateMod.UserAgentState with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sipJs.userAgentStateMod.UserAgentState & String] = js.native
     
-    /* "Started" */ val Started: typings.sipJs.userAgentStateMod.UserAgentState.Started with String = js.native
+    /* "Started" */ val Started: typings.sipJs.userAgentStateMod.UserAgentState.Started & String = js.native
     
-    /* "Stopped" */ val Stopped: typings.sipJs.userAgentStateMod.UserAgentState.Stopped with String = js.native
+    /* "Stopped" */ val Stopped: typings.sipJs.userAgentStateMod.UserAgentState.Stopped & String = js.native
   }
 }

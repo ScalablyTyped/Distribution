@@ -2,46 +2,44 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddLayerVersionPermissionRequest extends StObject {
   
   /**
     * The API action that grants access to the layer. For example, lambda:GetLayerVersion.
     */
-  var Action: LayerPermissionAllowedAction = js.native
+  var Action: LayerPermissionAllowedAction
   
   /**
     * The name or Amazon Resource Name (ARN) of the layer.
     */
-  var LayerName: typings.awsSdk.lambdaMod.LayerName = js.native
+  var LayerName: typings.awsSdk.lambdaMod.LayerName
   
   /**
     * With the principal set to *, grant permission to all accounts in the specified organization.
     */
-  var OrganizationId: js.UndefOr[typings.awsSdk.lambdaMod.OrganizationId] = js.native
+  var OrganizationId: js.UndefOr[typings.awsSdk.lambdaMod.OrganizationId] = js.undefined
   
   /**
     * An account ID, or * to grant permission to all AWS accounts.
     */
-  var Principal: LayerPermissionAllowedPrincipal = js.native
+  var Principal: LayerPermissionAllowedPrincipal
   
   /**
     * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
     */
-  var RevisionId: js.UndefOr[String] = js.native
+  var RevisionId: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier that distinguishes the policy from others on the same layer version.
     */
-  var StatementId: typings.awsSdk.lambdaMod.StatementId = js.native
+  var StatementId: typings.awsSdk.lambdaMod.StatementId
   
   /**
     * The version number.
     */
-  var VersionNumber: LayerVersionNumber = js.native
+  var VersionNumber: LayerVersionNumber
 }
 object AddLayerVersionPermissionRequest {
   

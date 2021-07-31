@@ -5,24 +5,24 @@ import typings.zchatBrowser.mod.ChatEvent.StructuredMessage
 import typings.zchatBrowser.zchatBrowserStrings.QUICK_REPLIES
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Msg extends StructuredMessage {
+trait Msg
+  extends StObject
+     with StructuredMessage {
   
-  var msg: String = js.native
+  var msg: String
   
-  var quick_replies: js.Array[Button] = js.native
+  var quick_replies: js.Array[Button]
   
-  var `type`: QUICK_REPLIES = js.native
+  var `type`: QUICK_REPLIES
 }
 object Msg {
   
   @scala.inline
-  def apply(msg: String, quick_replies: js.Array[Button], `type`: QUICK_REPLIES): Msg = {
+  def apply(msg: String, quick_replies: js.Array[Button]): Msg = {
     val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], quick_replies = quick_replies.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("QUICK_REPLIES")
     __obj.asInstanceOf[Msg]
   }
   

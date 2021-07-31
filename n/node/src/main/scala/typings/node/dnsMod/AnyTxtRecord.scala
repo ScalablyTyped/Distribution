@@ -3,22 +3,22 @@ package typings.node.dnsMod
 import typings.node.nodeStrings.TXT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnyTxtRecord extends AnyRecord {
+trait AnyTxtRecord
+  extends StObject
+     with AnyRecord {
   
-  var entries: js.Array[String] = js.native
+  var entries: js.Array[String]
   
-  var `type`: TXT = js.native
+  var `type`: TXT
 }
 object AnyTxtRecord {
   
   @scala.inline
-  def apply(entries: js.Array[String], `type`: TXT): AnyTxtRecord = {
+  def apply(entries: js.Array[String]): AnyTxtRecord = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TXT")
     __obj.asInstanceOf[AnyTxtRecord]
   }
   

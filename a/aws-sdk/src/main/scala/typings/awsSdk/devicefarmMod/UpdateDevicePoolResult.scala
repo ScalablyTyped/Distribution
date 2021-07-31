@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDevicePoolResult extends StObject {
   
   /**
     * The device pool you just updated.
     */
-  var devicePool: js.UndefOr[DevicePool] = js.native
+  var devicePool: js.UndefOr[DevicePool] = js.undefined
 }
 object UpdateDevicePoolResult {
   

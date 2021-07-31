@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.LicensesGetResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersLicensesGetEndpoint extends StObject {
   
-  var parameters: LicensesGetEndpoint = js.native
+  var parameters: LicensesGetEndpoint
   
-  var request: LicensesGetRequestOptions = js.native
+  var request: LicensesGetRequestOptions
   
-  var response: OctokitResponse[LicensesGetResponseData] = js.native
+  var response: OctokitResponse[LicensesGetResponseData]
 }
 object ParametersLicensesGetEndpoint {
   

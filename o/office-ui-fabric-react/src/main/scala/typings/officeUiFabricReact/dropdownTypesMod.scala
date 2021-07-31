@@ -22,7 +22,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownTypesMod {
@@ -32,13 +31,13 @@ object dropdownTypesMod {
   object DropdownMenuItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType & Double] = js.native
     
-    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider with Double = js.native
+    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
     
-    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header with Double = js.native
+    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header & Double = js.native
     
-    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal with Double = js.native
+    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Dropdown/Dropdown.types", "ResponsiveMode")
@@ -46,21 +45,21 @@ object dropdownTypesMod {
   object ResponsiveMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode & Double] = js.native
     
-    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large with Double = js.native
+    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large & Double = js.native
     
-    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium with Double = js.native
+    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium & Double = js.native
     
-    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small with Double = js.native
+    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small & Double = js.native
     
-    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown with Double = js.native
+    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
     
-    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge with Double = js.native
+    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
     
-    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge with Double = js.native
+    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
     
-    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge with Double = js.native
+    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
   }
   
   @js.native
@@ -75,14 +74,15 @@ object dropdownTypesMod {
     val selectedOptions: js.Array[IDropdownOption] = js.native
   }
   
-  @js.native
-  trait IDropdownOption extends ISelectableOption {
+  trait IDropdownOption
+    extends StObject
+       with ISelectableOption {
     
     /**
       * Deprecated at v.65.1, use `selected` instead.
       * @deprecated Use `selected` instead.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
   }
   object IDropdownOption {
     
@@ -103,44 +103,45 @@ object dropdownTypesMod {
     }
   }
   
-  @js.native
-  trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivElement] {
+  trait IDropdownProps
+    extends StObject
+       with ISelectableDroppableTextProps[IDropdown, HTMLDivElement] {
     
     /**
       * Keys that will be initially used to set selected items. This prop is only used when `multiSelect`
       * is true (use `defaultSelectedKey` for single select). Mutually exclusive with `selectedKeys`.
       */
-    var defaultSelectedKeys: js.UndefOr[js.Array[Double | String]] = js.native
+    var defaultSelectedKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     /**
       * Custom width for dropdown. If value is 0, width of the input field is used.
       * @defaultvalue 0
       */
-    var dropdownWidth: js.UndefOr[Double] = js.native
+    var dropdownWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Deprecated at v0.52.0, use `disabled` instead.
       * @deprecated Use `disabled` instead.
       */
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional keytip for this dropdown
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * When multiple items are selected, this will be used to separate values in the dropdown input.
       *
       * @defaultvalue ", "
       */
-    var multiSelectDelimiter: js.UndefOr[String] = js.native
+    var multiSelectDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * If true, `onChange` will still be called when an already-selected item is clicked again in
       * single select mode. (Normally it would not be called in this case.)
       */
-    var notifyOnReselect: js.UndefOr[Boolean] = js.native
+    var notifyOnReselect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback for when the selected option changes.
@@ -153,57 +154,57 @@ object dropdownTypesMod {
           /* index */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @deprecated Use `onChange` instead.
       */
-    var onChanged: js.UndefOr[js.Function2[/* option */ IDropdownOption, /* index */ js.UndefOr[Double], Unit]] = js.native
+    var onChanged: js.UndefOr[js.Function2[/* option */ IDropdownOption, /* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * Custom renderer for chevron icon
       */
-    var onRenderCaretDown: js.UndefOr[IRenderFunction[IDropdownProps]] = js.native
+    var onRenderCaretDown: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
     
     /**
       * Custom renderer for the label.
       */
-    var onRenderLabel: js.UndefOr[IRenderFunction[IDropdownProps]] = js.native
+    var onRenderLabel: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
     
     /**
       * Custom renderer for placeholder text
       * @deprecated Use `onRenderPlaceholder`
       */
-    var onRenderPlaceHolder: js.UndefOr[IRenderFunction[IDropdownProps]] = js.native
+    var onRenderPlaceHolder: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
     
     /**
       * Custom renderer for placeholder text
       */
-    var onRenderPlaceholder: js.UndefOr[IRenderFunction[IDropdownProps]] = js.native
+    var onRenderPlaceholder: js.UndefOr[IRenderFunction[IDropdownProps]] = js.undefined
     
     /**
       * Custom renderer for selected option displayed in input
       */
-    var onRenderTitle: js.UndefOr[IRenderFunction[js.Array[IDropdownOption]]] = js.native
+    var onRenderTitle: js.UndefOr[IRenderFunction[js.Array[IDropdownOption]]] = js.undefined
     
     /**
       * Options for the dropdown. If using `defaultSelectedKey` or `defaultSelectedKeys`, options must be
       * pure for correct behavior.
       */
     @JSName("options")
-    var options_IDropdownProps: js.Array[IDropdownOption] = js.native
+    var options_IDropdownProps: js.Array[IDropdownOption]
     
     /**
       * Input placeholder text. Displayed until an option is selected.
       * @deprecated Use `placeholder`
       */
-    var placeHolder: js.UndefOr[String] = js.native
+    var placeHolder: js.UndefOr[String] = js.undefined
     
     /**
       * By default, the dropdown will render the standard way for screen sizes `large` and above, or
       * in a panel on `small` and `medium` screens. Manually set this prop to override this behavior.
       */
-    var responsiveMode: js.UndefOr[ResponsiveMode] = js.native
+    var responsiveMode: js.UndefOr[ResponsiveMode] = js.undefined
     
     /**
       * Keys of the selected items, only used when `multiSelect` is true (use `selectedKey` for single
@@ -211,17 +212,17 @@ object dropdownTypesMod {
       * and passing a new prop value in when changed. Passing null will clear the selection.
       * Mutually exclusive with `defaultSelectedKeys`.
       */
-    var selectedKeys: js.UndefOr[(js.Array[Double | String]) | Null] = js.native
+    var selectedKeys: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDropdownStyleProps, IDropdownStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDropdownStyleProps, IDropdownStyles]] = js.undefined
     
     /**
       * Theme provided by higher order component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDropdownProps {
     
@@ -367,53 +368,52 @@ object dropdownTypesMod {
   }
   
   /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Dropdown/Dropdown.types.IDropdownProps, 'theme' | 'className' | 'disabled' | 'required'> & {  hasError :boolean,   hasLabel :boolean,   isOpen :boolean,   isRenderingPlaceholder :boolean,   panelClassName :string | undefined,   calloutClassName :string | undefined,   calloutRenderEdge :office-ui-fabric-react.office-ui-fabric-react/lib/utilities/positioning.RectangleEdge | undefined} */
-  @js.native
   trait IDropdownStyleProps extends StObject {
     
     /**
       * Custom className for the callout that displays in larger viewports, hosting the Dropdown options.
       * This is primarily provided for backwards compatibility.
       */
-    var calloutClassName: js.UndefOr[String] = js.native
+    var calloutClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Which edge the dropdown callout was positioned on relative to the title.
       */
-    var calloutRenderEdge: js.UndefOr[RectangleEdge] = js.native
+    var calloutRenderEdge: js.UndefOr[RectangleEdge] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the dropdown is in an error state.
       */
-    var hasError: Boolean = js.native
+    var hasError: Boolean
     
     /**
       * Specifies if the dropdown has label content.
       */
-    var hasLabel: Boolean = js.native
+    var hasLabel: Boolean
     
     /**
       * Whether the dropdown is in an opened state.
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * Whether the dropdown is currently rendering placeholder text instead of a selected option.
       */
-    var isRenderingPlaceholder: Boolean = js.native
+    var isRenderingPlaceholder: Boolean
     
     /**
       * Custom className for the panel that displays in small viewports, hosting the Dropdown options.
       * This is primarily provided for backwards compatibility.
       */
-    var panelClassName: js.UndefOr[String] = js.native
+    var panelClassName: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDropdownStyleProps {
     
@@ -482,74 +482,73 @@ object dropdownTypesMod {
     }
   }
   
-  @js.native
   trait IDropdownStyles extends StObject {
     
     /** Refers to the callout that hosts Dropdown options in larger viewports. */
-    var callout: IStyle = js.native
+    var callout: IStyle
     
     /** Refers to the downward pointing caret icon users click on to expand the Dropdown. */
-    var caretDown: IStyle = js.native
+    var caretDown: IStyle
     
     /** Refers to the wrapping container around the downward pointing caret users click on to expand the Dropdown. */
-    var caretDownWrapper: IStyle = js.native
+    var caretDownWrapper: IStyle
     
     /** Refers to the actual Dropdown element. */
-    var dropdown: IStyle = js.native
+    var dropdown: IStyle
     
     /** Refers to the dropdown separator. */
-    var dropdownDivider: IStyle = js.native
+    var dropdownDivider: IStyle
     
     /** Refers to the individual dropdown item. */
-    var dropdownItem: IStyle = js.native
+    var dropdownItem: IStyle
     
     /** Style for a dropdown item when it is disabled. */
-    var dropdownItemDisabled: IStyle = js.native
+    var dropdownItemDisabled: IStyle
     
     /** Refers to the individual dropdown items that are being rendered as a header. */
-    var dropdownItemHeader: IStyle = js.native
+    var dropdownItemHeader: IStyle
     
     /** Style for a dropdown item when it is hidden */
-    var dropdownItemHidden: IStyle = js.native
+    var dropdownItemHidden: IStyle
     
     /** Style for a dropdown item when it is being selected. */
-    var dropdownItemSelected: IStyle = js.native
+    var dropdownItemSelected: IStyle
     
     /** Style for a dropdown item when it is both selected and disabled. */
-    var dropdownItemSelectedAndDisabled: IStyle = js.native
+    var dropdownItemSelectedAndDisabled: IStyle
     
     /** Refers to the FocusZone wrapping the individual dropdown items. */
-    var dropdownItems: IStyle = js.native
+    var dropdownItems: IStyle
     
     /** Refers to the element that wraps `dropdownItems`. */
-    var dropdownItemsWrapper: IStyle = js.native
+    var dropdownItemsWrapper: IStyle
     
     /**
       * Refers to the text element that renders the actual dropdown item/option text. This would be wrapped by the element
       * referred to by `dropdownItem`.
       */
-    var dropdownOptionText: IStyle = js.native
+    var dropdownOptionText: IStyle
     
     /** Refers to the error message being rendered under the Dropdown (if any). */
-    var errorMessage: IStyle = js.native
+    var errorMessage: IStyle
     
     /** Refers to the label associated with the dropdown. This is enclosed by the root. */
-    var label: IStyle = js.native
+    var label: IStyle
     
     /**
       * Refers to the panel that hosts the Dropdown options in small viewports.
       * @deprecated Use `subComponentStyles.panel` instead.
       */
-    var panel: IStyle = js.native
+    var panel: IStyle
     
     /** Root element of the Dropdown (includes Label and the actual Dropdown). */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /** Subcomponent styles. */
-    var subComponentStyles: IDropdownSubComponentStyles = js.native
+    var subComponentStyles: IDropdownSubComponentStyles
     
     /** Refers to the primary title of the Dropdown (rendering the selected options/placeholder/etc.). */
-    var title: IStyle = js.native
+    var title: IStyle
   }
   object IDropdownStyles {
     
@@ -738,17 +737,16 @@ object dropdownTypesMod {
     }
   }
   
-  @js.native
   trait IDropdownSubComponentStyles extends StObject {
     
     /** Refers to the primary label for the Dropdown. */
-    var label: IStyleFunctionOrObject[ILabelStyleProps, ILabelStyles] = js.native
+    var label: IStyleFunctionOrObject[ILabelStyleProps, ILabelStyles]
     
     /** Refers to the individual dropdown item when the multiSelect prop is true. */
-    var multiSelectItem: IStyleFunctionOrObject[ICheckboxStyleProps, ICheckboxStyles] = js.native
+    var multiSelectItem: IStyleFunctionOrObject[ICheckboxStyleProps, ICheckboxStyles]
     
     /** Refers to the panel that hosts the Dropdown options in small viewports. */
-    var panel: IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles] = js.native
+    var panel: IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]
   }
   object IDropdownSubComponentStyles {
     

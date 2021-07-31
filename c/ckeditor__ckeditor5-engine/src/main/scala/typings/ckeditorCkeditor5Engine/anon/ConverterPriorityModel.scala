@@ -5,17 +5,15 @@ import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConverterPriorityModel extends StObject {
   
-  var converterPriority: js.UndefOr[PriorityString] = js.native
+  var converterPriority: js.UndefOr[PriorityString] = js.undefined
   
-  var model: String | Element | js.Function = js.native
+  var model: String | Element | js.Function
   
-  var view: MatcherPattern = js.native
+  var view: MatcherPattern
 }
 object ConverterPriorityModel {
   

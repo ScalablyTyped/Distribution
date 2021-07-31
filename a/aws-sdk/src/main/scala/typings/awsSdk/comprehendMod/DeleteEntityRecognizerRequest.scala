@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEntityRecognizerRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the entity recognizer.
     */
-  var EntityRecognizerArn: typings.awsSdk.comprehendMod.EntityRecognizerArn = js.native
+  var EntityRecognizerArn: typings.awsSdk.comprehendMod.EntityRecognizerArn
 }
 object DeleteEntityRecognizerRequest {
   

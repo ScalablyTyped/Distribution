@@ -2,13 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropResult extends DragUpdate {
+trait DropResult
+  extends StObject
+     with DragUpdate {
   
-  var reason: DropReason = js.native
+  var reason: DropReason
 }
 object DropResult {
   

@@ -11,7 +11,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calloutContentBaseMod {
@@ -133,16 +132,15 @@ object calloutContentBaseMod {
     def defaultProps_=(x: BeakWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ICalloutState extends StObject {
     
-    var calloutElementRect: js.UndefOr[ClientRect] = js.native
+    var calloutElementRect: js.UndefOr[ClientRect] = js.undefined
     
-    var heightOffset: js.UndefOr[Double] = js.native
+    var heightOffset: js.UndefOr[Double] = js.undefined
     
-    var positions: js.UndefOr[ICalloutPositionedInfo] = js.native
+    var positions: js.UndefOr[ICalloutPositionedInfo] = js.undefined
     
-    var slideDirectionalClassName: js.UndefOr[String] = js.native
+    var slideDirectionalClassName: js.UndefOr[String] = js.undefined
   }
   object ICalloutState {
     

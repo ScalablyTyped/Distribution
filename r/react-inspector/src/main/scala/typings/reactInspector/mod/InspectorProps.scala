@@ -1,9 +1,7 @@
 package typings.reactInspector.mod
 
-import typings.reactInspector.reactInspectorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +12,8 @@ trait InspectorProps extends StObject
 object InspectorProps {
   
   @scala.inline
-  def InspectorAsTableProps(table: `true`): typings.reactInspector.mod.InspectorAsTableProps = {
-    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
+  def InspectorAsTableProps(): typings.reactInspector.mod.InspectorAsTableProps = {
+    val __obj = js.Dynamic.literal(table = true)
     __obj.asInstanceOf[typings.reactInspector.mod.InspectorAsTableProps]
   }
   

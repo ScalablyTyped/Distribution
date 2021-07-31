@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Joburi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelReleaseJobRequest extends StObject {
   
-  var `operation-attributes-tag`: Joburi = js.native
+  var `operation-attributes-tag`: Joburi
 }
 object CancelReleaseJobRequest {
   

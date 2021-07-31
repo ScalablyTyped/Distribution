@@ -2,15 +2,13 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatOptions extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var offset: Double = js.native
+  var offset: Double
 }
 object StatOptions {
   

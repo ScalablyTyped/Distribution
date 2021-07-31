@@ -3,17 +3,15 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnFieldChange extends StObject {
   
-  var knobs: js.Array[KnobStoreKnob] = js.native
+  var knobs: js.Array[KnobStoreKnob]
   
-  def onFieldChange(): Unit = js.native
+  def onFieldChange(): Unit
   
-  def onFieldClick(): Unit = js.native
+  def onFieldClick(): Unit
 }
 object OnFieldChange {
   

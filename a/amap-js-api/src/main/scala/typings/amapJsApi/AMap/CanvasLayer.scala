@@ -3,11 +3,12 @@ package typings.amapJsApi.AMap
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasLayer extends MediaLayer[HTMLCanvasElement] {
+trait CanvasLayer
+  extends StObject
+     with MediaLayer[HTMLCanvasElement] {
   
   /**
     * 返回Canvas对象

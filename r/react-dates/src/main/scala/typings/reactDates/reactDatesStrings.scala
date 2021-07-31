@@ -11,95 +11,118 @@ import typings.reactDates.mod.ScrollableOrientationShape
 import typings.reactDates.mod._DisabledShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactDatesStrings {
   
   @js.native
   sealed trait after
-    extends CalendarInfoPositionShape
+    extends StObject
+       with CalendarInfoPositionShape
        with IconPositionShape
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait before
-    extends CalendarInfoPositionShape
+    extends StObject
+       with CalendarInfoPositionShape
        with IconPositionShape
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait bottom extends CalendarInfoPositionShape
+  sealed trait bottom
+    extends StObject
+       with CalendarInfoPositionShape
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait down extends OpenDirectionShape
+  sealed trait down
+    extends StObject
+       with OpenDirectionShape
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait endDate
-    extends FocusedInputShape
+    extends StObject
+       with FocusedInputShape
        with _DisabledShape
   @scala.inline
   def endDate: endDate = "endDate".asInstanceOf[endDate]
   
   @js.native
   sealed trait horizontal
-    extends OrientationShape
+    extends StObject
+       with OrientationShape
        with ScrollableOrientationShape
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait left extends AnchorDirectionShape
+  sealed trait left
+    extends StObject
+       with AnchorDirectionShape
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait navPositionBottom extends NavPositionShape
+  sealed trait navPositionBottom
+    extends StObject
+       with NavPositionShape
   @scala.inline
   def navPositionBottom: navPositionBottom = "navPositionBottom".asInstanceOf[navPositionBottom]
   
   @js.native
-  sealed trait navPositionTop extends NavPositionShape
+  sealed trait navPositionTop
+    extends StObject
+       with NavPositionShape
   @scala.inline
   def navPositionTop: navPositionTop = "navPositionTop".asInstanceOf[navPositionTop]
   
   @js.native
-  sealed trait right extends AnchorDirectionShape
+  sealed trait right
+    extends StObject
+       with AnchorDirectionShape
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait startDate
-    extends FocusedInputShape
+    extends StObject
+       with FocusedInputShape
        with _DisabledShape
   @scala.inline
   def startDate: startDate = "startDate".asInstanceOf[startDate]
   
   @js.native
-  sealed trait top extends CalendarInfoPositionShape
+  sealed trait top
+    extends StObject
+       with CalendarInfoPositionShape
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait up extends OpenDirectionShape
+  sealed trait up
+    extends StObject
+       with OpenDirectionShape
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   
   @js.native
   sealed trait vertical
-    extends OrientationShape
+    extends StObject
+       with OrientationShape
        with ScrollableOrientationShape
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait verticalScrollable extends ScrollableOrientationShape
+  sealed trait verticalScrollable
+    extends StObject
+       with ScrollableOrientationShape
   @scala.inline
   def verticalScrollable: verticalScrollable = "verticalScrollable".asInstanceOf[verticalScrollable]
 }

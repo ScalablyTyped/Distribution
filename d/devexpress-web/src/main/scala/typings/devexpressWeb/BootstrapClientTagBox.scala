@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the BootstrapTagBox object.
   */
 @js.native
-trait BootstrapClientTagBox extends ASPxClientTokenBox {
+trait BootstrapClientTagBox
+  extends StObject
+     with ASPxClientTokenBox {
   
   /**
     * Adds a new tag with the specified text to the end of the control's tag collection.

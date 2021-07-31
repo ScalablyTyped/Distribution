@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterMetadata extends StObject {
   
   /** Human-readable description of the counter semantics. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Counter aggregation kind. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A string referring to the unit type. */
-  var otherUnits: js.UndefOr[String] = js.native
+  var otherUnits: js.UndefOr[String] = js.undefined
   
   /** System defined Units, see above enum. */
-  var standardUnits: js.UndefOr[String] = js.native
+  var standardUnits: js.UndefOr[String] = js.undefined
 }
 object CounterMetadata {
   

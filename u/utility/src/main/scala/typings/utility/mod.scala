@@ -14,10 +14,13 @@ import typings.utility.utilityStrings.sha1
 import typings.utility.utilityStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("utility", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * ------------------0_0------------------------
@@ -46,6 +49,10 @@ object mod {
   
   object UNSTABLE_METHOD {
     
+    @JSImport("utility", "UNSTABLE_METHOD")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * optimize try catch
       * @param {Function} fn
@@ -53,9 +60,8 @@ object mod {
       *   - {Error} error
       *   - {Mix} value
       */
-    @JSImport("utility", "UNSTABLE_METHOD.try")
-    @js.native
-    def `try`(fn: js.Function1[/* repeated */ js.Any, _]): ITryStaticReturns = js.native
+    @scala.inline
+    def `try`(fn: js.Function1[/* repeated */ js.Any, js.Any]): ITryStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[ITryStaticReturns]
   }
   
   /**
@@ -63,58 +69,47 @@ object mod {
     *
     * @return {String}
     */
-  @JSImport("utility", "YYYYMMDD")
-  @js.native
-  def YYYYMMDD(d: String): String = js.native
-  @JSImport("utility", "YYYYMMDD")
-  @js.native
-  def YYYYMMDD(d: String, sep: String): String = js.native
-  @JSImport("utility", "YYYYMMDD")
-  @js.native
-  def YYYYMMDD(d: Date): String = js.native
-  @JSImport("utility", "YYYYMMDD")
-  @js.native
-  def YYYYMMDD(d: Date, sep: String): String = js.native
+  @scala.inline
+  def YYYYMMDD(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def YYYYMMDD(d: String, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def YYYYMMDD(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def YYYYMMDD(d: Date, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDD")(d.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("utility", "YYYYMMDDHHmmss")
-  @js.native
-  def YYYYMMDDHHmmss(d: String): String = js.native
-  @JSImport("utility", "YYYYMMDDHHmmss")
-  @js.native
-  def YYYYMMDDHHmmss(d: String, options: IYYYYMMDDHHmmssStaticOptions): String = js.native
+  @scala.inline
+  def YYYYMMDDHHmmss(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def YYYYMMDDHHmmss(d: String, options: IYYYYMMDDHHmmssStaticOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * `moment().format('YYYY-MM-DD HH:mm:ss')` format date string.
     *
     * @return {String}
     */
-  @JSImport("utility", "YYYYMMDDHHmmss")
-  @js.native
-  def YYYYMMDDHHmmss(d: Date): String = js.native
-  @JSImport("utility", "YYYYMMDDHHmmss")
-  @js.native
-  def YYYYMMDDHHmmss(d: Date, options: IYYYYMMDDHHmmssStaticOptions): String = js.native
+  @scala.inline
+  def YYYYMMDDHHmmss(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def YYYYMMDDHHmmss(d: Date, options: IYYYYMMDDHHmmssStaticOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("YYYYMMDDHHmmss")(d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Access log format date. format: `moment().format('DD/MMM/YYYY:HH:mm:ss ZZ')`
     *
     * @return {String}
     */
-  @JSImport("utility", "accessLogDate")
-  @js.native
-  def accessLogDate(d: Date): String = js.native
+  @scala.inline
+  def accessLogDate(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("accessLogDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * optimize arguments to array
     * @param {Arguments} args
     * @return {Array}
     */
-  @JSImport("utility", "argumentsToArray")
-  @js.native
-  def argumentsToArray(args: js.Any*): js.Array[_] = js.native
+  @scala.inline
+  def argumentsToArray(args: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentsToArray")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("utility", "assign")
-  @js.native
-  def assign(target: ObjStatic, objects: js.Array[_]): ObjStatic = js.native
+  @scala.inline
+  def assign(target: ObjStatic, objects: js.Array[js.Any]): ObjStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[ObjStatic]
   /**
     * ------------------0_0--------------------------
     * @description Defines For Object Methods
@@ -127,9 +122,8 @@ object mod {
     * @param {Object | Array} objects - object assign from
     * @return {Object} - return target object
     */
-  @JSImport("utility", "assign")
-  @js.native
-  def assign(target: ObjStatic, objects: ObjStatic): ObjStatic = js.native
+  @scala.inline
+  def assign(target: ObjStatic, objects: ObjStatic): ObjStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[ObjStatic]
   
   /**
     * Base64 string decode.
@@ -140,24 +134,20 @@ object mod {
     * @param {encoding} [encoding=utf8] if encoding = buffer, will return Buffer instance
     * @return {String|Buffer} plain text.
     */
-  @JSImport("utility", "base64decode")
-  @js.native
-  def base64decode(encode: String): String | Buffer = js.native
-  @JSImport("utility", "base64decode")
-  @js.native
-  def base64decode(encode: String, urlsafe: Boolean): String | Buffer = js.native
-  @JSImport("utility", "base64decode")
-  @js.native
-  def base64decode_buffer(encode: String, urlsafe: js.UndefOr[scala.Nothing], encoding: buffer): String | Buffer = js.native
-  @JSImport("utility", "base64decode")
-  @js.native
-  def base64decode_buffer(encode: String, urlsafe: Boolean, encoding: buffer): String | Buffer = js.native
-  @JSImport("utility", "base64decode")
-  @js.native
-  def base64decode_utf8(encode: String, urlsafe: js.UndefOr[scala.Nothing], encoding: utf8): String | Buffer = js.native
-  @JSImport("utility", "base64decode")
-  @js.native
-  def base64decode_utf8(encode: String, urlsafe: Boolean, encoding: utf8): String | Buffer = js.native
+  @scala.inline
+  def base64decode(encode: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def base64decode(encode: String, urlsafe: Boolean): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  
+  @scala.inline
+  def base64decode_buffer(encode: String, urlsafe: Boolean, encoding: buffer): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def base64decode_buffer(encode: String, urlsafe: Unit, encoding: buffer): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  
+  @scala.inline
+  def base64decode_utf8(encode: String, urlsafe: Boolean, encoding: utf8): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def base64decode_utf8(encode: String, urlsafe: Unit, encoding: utf8): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("base64decode")(encode.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
   /**
     * Base64 encode string.
@@ -167,18 +157,14 @@ object mod {
     *   which substitutes - instead of + and _ instead of / in the standard Base64 alphabet.
     * @return {String} base64 encode format string.
     */
-  @JSImport("utility", "base64encode")
-  @js.native
-  def base64encode(s: String): String = js.native
-  @JSImport("utility", "base64encode")
-  @js.native
-  def base64encode(s: String, urlsafe: Boolean): String = js.native
-  @JSImport("utility", "base64encode")
-  @js.native
-  def base64encode(s: Buffer): String = js.native
-  @JSImport("utility", "base64encode")
-  @js.native
-  def base64encode(s: Buffer, urlsafe: Boolean): String = js.native
+  @scala.inline
+  def base64encode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64encode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def base64encode(s: String, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("base64encode")(s.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def base64encode(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64encode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def base64encode(s: Buffer, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("base64encode")(s.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * return datetime struct.
@@ -187,12 +173,10 @@ object mod {
     *  - {Number} YYYYMMDD, 20130401
     *  - {Number} H, 0, 1, 9, 12, 23
     */
-  @JSImport("utility", "datestruct")
-  @js.native
-  def datestruct(): IDateStructStaticReturns = js.native
-  @JSImport("utility", "datestruct")
-  @js.native
-  def datestruct(now: Date): IDateStructStaticReturns = js.native
+  @scala.inline
+  def datestruct(): IDateStructStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("datestruct")().asInstanceOf[IDateStructStaticReturns]
+  @scala.inline
+  def datestruct(now: Date): IDateStructStaticReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("datestruct")(now.asInstanceOf[js.Any]).asInstanceOf[IDateStructStaticReturns]
   
   /**
     * Safe decodeURIComponent, won't throw any error.
@@ -201,9 +185,8 @@ object mod {
     * @param {String} encodeText
     * @return {String} URL decode original string.
     */
-  @JSImport("utility", "decodeURIComponent")
-  @js.native
-  def decodeURIComponent(encodeText: String): String = js.native
+  @scala.inline
+  def decodeURIComponent(encodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeURIComponent")(encodeText.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * avoid if (a && a.b && a.b.c)
@@ -211,9 +194,8 @@ object mod {
     * @param {...String} keys
     * @return {Object}
     */
-  @JSImport("utility", "dig")
-  @js.native
-  def dig(obj: ObjStatic, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def dig(obj: ObjStatic, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dig")(obj.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Safe encodeURIComponent, won't throw any error.
@@ -222,9 +204,8 @@ object mod {
     * @param {String} text
     * @return {String} URL encode string.
     */
-  @JSImport("utility", "encodeURIComponent")
-  @js.native
-  def encodeURIComponent(text: String): String = js.native
+  @scala.inline
+  def encodeURIComponent(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURIComponent")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * ------------------0_0----------------------
@@ -239,16 +220,13 @@ object mod {
     * @return {String}
     * @public
     */
-  @JSImport("utility", "escape")
-  @js.native
-  def escape(test: String): String = js.native
+  @scala.inline
+  def escape(test: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(test.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("utility", "getOwnEnumerables")
-  @js.native
-  def getOwnEnumerables(obj: ObjStatic): js.Array[String] = js.native
-  @JSImport("utility", "getOwnEnumerables")
-  @js.native
-  def getOwnEnumerables(obj: ObjStatic, ignoreNull: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def getOwnEnumerables(obj: ObjStatic): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnEnumerables")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getOwnEnumerables(obj: ObjStatic, ignoreNull: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnEnumerables")(obj.asInstanceOf[js.Any], ignoreNull.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /**
     * Get a function parameter's names.
@@ -257,41 +235,31 @@ object mod {
     * @param {Boolean} [useCache], default is true
     * @return {Array} names
     */
-  @JSImport("utility", "getParamNames")
-  @js.native
-  def getParamNames(func: js.Function1[/* repeated */ js.Any, _]): js.Array[String] = js.native
-  @JSImport("utility", "getParamNames")
-  @js.native
-  def getParamNames(func: js.Function1[/* repeated */ js.Any, _], cache: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def getParamNames(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParamNames")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getParamNames(func: js.Function1[/* repeated */ js.Any, js.Any], cache: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParamNames")(func.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("utility", "has")
-  @js.native
-  def has(obj: ObjStatic, prop: String): Boolean = js.native
+  @scala.inline
+  def has(obj: ObjStatic, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: md5, s: String, format: base64): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: md5, s: String, format: hex): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: md5, s: Buffer, format: base64): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: md5, s: Buffer, format: hex): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: sha1, s: String, format: base64): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: sha1, s: String, format: hex): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: sha1, s: Buffer, format: base64): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash(method: sha1, s: Buffer, format: hex): String = js.native
+  @scala.inline
+  def hash(method: md5, s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: md5, s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: md5, s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: md5, s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: sha1, s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: sha1, s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: sha1, s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash(method: sha1, s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * --------------------0_0----------------
     * @description Defines For Crypto
@@ -307,18 +275,15 @@ object mod {
     * @return {String} md5 hash string
     * @public
     */
-  @JSImport("utility", "hash")
-  @js.native
-  def hash_md5(method: md5, s: String): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash_md5(method: md5, s: Buffer): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash_sha1(method: sha1, s: String): String = js.native
-  @JSImport("utility", "hash")
-  @js.native
-  def hash_sha1(method: sha1, s: Buffer): String = js.native
+  @scala.inline
+  def hash_md5(method: md5, s: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash_md5(method: md5, s: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def hash_sha1(method: sha1, s: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hash_sha1(method: sha1, s: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(method.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * HMAC algorithm.
@@ -337,24 +302,19 @@ object mod {
     * @param {String} [encoding='base64']
     * @return {String} digest string.
     */
-  @JSImport("utility", "hmac")
-  @js.native
-  def hmac(algorithm: String, key: String, data: String): String = js.native
-  @JSImport("utility", "hmac")
-  @js.native
-  def hmac(algorithm: String, key: String, data: String, encoding: String): String = js.native
-  @JSImport("utility", "hmac")
-  @js.native
-  def hmac(algorithm: String, key: String, data: Buffer): String = js.native
-  @JSImport("utility", "hmac")
-  @js.native
-  def hmac(algorithm: String, key: String, data: Buffer, encoding: String): String = js.native
-  @JSImport("utility", "hmac")
-  @js.native
-  def hmac_base64(algorithm: String, key: String, data: String, encoding: base64): String = js.native
-  @JSImport("utility", "hmac")
-  @js.native
-  def hmac_base64(algorithm: String, key: String, data: Buffer, encoding: base64): String = js.native
+  @scala.inline
+  def hmac(algorithm: String, key: String, data: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hmac(algorithm: String, key: String, data: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hmac(algorithm: String, key: String, data: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hmac(algorithm: String, key: String, data: Buffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def hmac_base64(algorithm: String, key: String, data: String, encoding: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hmac_base64(algorithm: String, key: String, data: Buffer, encoding: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Detect invalid http header characters in a string
@@ -362,9 +322,8 @@ object mod {
     * @param {String} val
     * @return {Boolean}
     */
-  @JSImport("utility", "includesInvalidHttpHeaderChar")
-  @js.native
-  def includesInvalidHttpHeaderChar(`val`: String): Boolean = js.native
+  @scala.inline
+  def includesInvalidHttpHeaderChar(`val`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("includesInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Detect a number string can safe convert to Javascript Number.
@@ -372,39 +331,32 @@ object mod {
     * @param {String} s number format string, like `"123"`, `"-1000123123123123123123"`
     * @return {Boolean}
     */
-  @JSImport("utility", "isSafeNumberString")
-  @js.native
-  def isSafeNumberString(s: String): Boolean = js.native
+  @scala.inline
+  def isSafeNumberString(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeNumberString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Normal log format date. format: `moment().format('YYYY-MM-DD HH:mm:ss.SSS')`
     *
     * @return {String}
     */
-  @JSImport("utility", "logDate")
-  @js.native
-  def logDate(d: String): String = js.native
-  @JSImport("utility", "logDate")
-  @js.native
-  def logDate(d: String, msSep: String): String = js.native
-  @JSImport("utility", "logDate")
-  @js.native
-  def logDate(d: Date): String = js.native
-  @JSImport("utility", "logDate")
-  @js.native
-  def logDate(d: Date, msSep: String): String = js.native
+  @scala.inline
+  def logDate(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def logDate(d: String, msSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any], msSep.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def logDate(d: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def logDate(d: Date, msSep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDate")(d.asInstanceOf[js.Any], msSep.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * generate a real map object(clean object), no constructor, no __proto__
     * @param {Object} [obj] - init object, optional
     * @return {Object}
     */
-  @JSImport("utility", "map")
-  @js.native
-  def map(): ObjStatic = js.native
-  @JSImport("utility", "map")
-  @js.native
-  def map(obj: ObjStatic): ObjStatic = js.native
+  @scala.inline
+  def map(): ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[ObjStatic]
+  @scala.inline
+  def map(obj: ObjStatic): ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any]).asInstanceOf[ObjStatic]
   
   /**
     * md5 hash
@@ -414,28 +366,23 @@ object mod {
     * @return {String} md5 hash string
     * @public
     */
-  @JSImport("utility", "md5")
-  @js.native
-  def md5(s: String): String = js.native
-  @JSImport("utility", "md5")
-  @js.native
-  def md5(s: Buffer): String = js.native
-  @JSImport("utility", "md5")
-  @js.native
-  def md5_base64(s: String, format: base64): String = js.native
-  @JSImport("utility", "md5")
-  @js.native
-  def md5_base64(s: Buffer, format: base64): String = js.native
-  @JSImport("utility", "md5")
-  @js.native
-  def md5_hex(s: String, format: hex): String = js.native
-  @JSImport("utility", "md5")
-  @js.native
-  def md5_hex(s: Buffer, format: hex): String = js.native
+  @scala.inline
+  def md5(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def md5(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("utility", "mkdir")
-  @js.native
-  def mkdir(dir: String): js.Promise[_] = js.native
+  @scala.inline
+  def md5_base64(s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def md5_base64(s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def md5_hex(s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def md5_hex(s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def mkdir(dir: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   /**
     * ---------------0_0-------------------
@@ -449,9 +396,8 @@ object mod {
     * @return {Function}
     * @public
     */
-  @JSImport("utility", "noop")
-  @js.native
-  def noop(): js.Function0[_] = js.native
+  @scala.inline
+  def noop(): js.Function0[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Function0[js.Any]]
   
   /**
     * Produces a random integer between the inclusive `lower` and `upper` bounds.
@@ -460,18 +406,14 @@ object mod {
     * @param {Number} upper The upper bound.
     * @return {Number} Returns the random number.
     */
-  @JSImport("utility", "random")
-  @js.native
-  def random(): Double = js.native
-  @JSImport("utility", "random")
-  @js.native
-  def random(lower: js.UndefOr[scala.Nothing], upper: Double): Double = js.native
-  @JSImport("utility", "random")
-  @js.native
-  def random(lower: Double): Double = js.native
-  @JSImport("utility", "random")
-  @js.native
-  def random(lower: Double, upper: Double): Double = js.native
+  @scala.inline
+  def random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Double]
+  @scala.inline
+  def random(lower: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(lower.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def random(lower: Double, upper: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def random(lower: Unit, upper: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Array random slice with items count.
@@ -479,39 +421,29 @@ object mod {
     * @param {Number} num, number of sub items.
     * @return {Array}
     */
-  @JSImport("utility", "randomSlice")
-  @js.native
-  def randomSlice(arr: js.Array[_]): js.Array[_] = js.native
-  @JSImport("utility", "randomSlice")
-  @js.native
-  def randomSlice(arr: js.Array[_], num: Double): js.Array[_] = js.native
+  @scala.inline
+  def randomSlice(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSlice")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def randomSlice(arr: js.Array[js.Any], num: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomSlice")(arr.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("utility", "randomString")
-  @js.native
-  def randomString(): String = js.native
-  @JSImport("utility", "randomString")
-  @js.native
-  def randomString(length: js.UndefOr[scala.Nothing], charSet: String): String = js.native
-  @JSImport("utility", "randomString")
-  @js.native
-  def randomString(length: js.UndefOr[scala.Nothing], charSet: js.Array[String]): String = js.native
-  @JSImport("utility", "randomString")
-  @js.native
-  def randomString(length: Double): String = js.native
-  @JSImport("utility", "randomString")
-  @js.native
-  def randomString(length: Double, charSet: String): String = js.native
-  @JSImport("utility", "randomString")
-  @js.native
-  def randomString(length: Double, charSet: js.Array[String]): String = js.native
+  @scala.inline
+  def randomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")().asInstanceOf[String]
+  @scala.inline
+  def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def randomString(length: Double, charSet: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any], charSet.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def randomString(length: Double, charSet: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any], charSet.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def randomString(length: Unit, charSet: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any], charSet.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def randomString(length: Unit, charSet: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any], charSet.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("utility", "readJSON")
-  @js.native
-  def readJSON(filepath: String): js.Promise[_] = js.native
+  @scala.inline
+  def readJSON(filepath: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("utility", "readJSONSync")
-  @js.native
-  def readJSONSync(filepath: String): ObjStatic = js.native
+  @scala.inline
+  def readJSONSync(filepath: String): ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[ObjStatic]
   
   /**
     * Replace string
@@ -521,18 +453,14 @@ object mod {
     * @param  {String|Function} newSubstr
     * @return {String}
     */
-  @JSImport("utility", "replace")
-  @js.native
-  def replace(str: String, substr: String, newSubstr: String): String = js.native
-  @JSImport("utility", "replace")
-  @js.native
-  def replace(str: String, substr: String, newSubstr: js.Function1[/* repeated */ js.Any, _]): String = js.native
-  @JSImport("utility", "replace")
-  @js.native
-  def replace(str: String, substr: RegExp, newSubstr: String): String = js.native
-  @JSImport("utility", "replace")
-  @js.native
-  def replace(str: String, substr: RegExp, newSubstr: js.Function1[/* repeated */ js.Any, _]): String = js.native
+  @scala.inline
+  def replace(str: String, substr: String, newSubstr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replace(str: String, substr: String, newSubstr: js.Function1[/* repeated */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replace(str: String, substr: RegExp, newSubstr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replace(str: String, substr: RegExp, newSubstr: js.Function1[/* repeated */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], newSubstr.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Replace invalid http header characters with replacement
@@ -541,15 +469,12 @@ object mod {
     * @param  {String|Function} replacement - can be `function(char)`
     * @return {Object}
     */
-  @JSImport("utility", "replaceInvalidHttpHeaderChar")
-  @js.native
-  def replaceInvalidHttpHeaderChar(`val`: String): IReplaceInvalidHttpHeaderCharReturns = js.native
-  @JSImport("utility", "replaceInvalidHttpHeaderChar")
-  @js.native
-  def replaceInvalidHttpHeaderChar(`val`: String, replacement: String): IReplaceInvalidHttpHeaderCharReturns = js.native
-  @JSImport("utility", "replaceInvalidHttpHeaderChar")
-  @js.native
-  def replaceInvalidHttpHeaderChar(`val`: String, replacement: js.Function1[/* repeated */ js.Any, _]): IReplaceInvalidHttpHeaderCharReturns = js.native
+  @scala.inline
+  def replaceInvalidHttpHeaderChar(`val`: String): IReplaceInvalidHttpHeaderCharReturns = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any]).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
+  @scala.inline
+  def replaceInvalidHttpHeaderChar(`val`: String, replacement: String): IReplaceInvalidHttpHeaderCharReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
+  @scala.inline
+  def replaceInvalidHttpHeaderChar(`val`: String, replacement: js.Function1[/* repeated */ js.Any, js.Any]): IReplaceInvalidHttpHeaderCharReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInvalidHttpHeaderChar")(`val`.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
   
   /**
     * -------------------0_0---------------------
@@ -557,12 +482,11 @@ object mod {
     * @see https://github.com/node-modules/utility#timers
     * -------------------0^0-------------------
     */
-  @JSImport("utility", "setImmediate")
-  @js.native
-  def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Immediate = js.native
-  @JSImport("utility", "setImmediate")
-  @js.native
-  def setImmediate_Unit(fn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): Unit = js.native
+  @scala.inline
+  def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Immediate = (^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Immediate]
+  
+  @scala.inline
+  def setImmediate_Unit(fn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * sha1 hash
@@ -572,24 +496,20 @@ object mod {
     * @return {String} sha1 hash string
     * @public
     */
-  @JSImport("utility", "sha1")
-  @js.native
-  def sha1(s: String): String = js.native
-  @JSImport("utility", "sha1")
-  @js.native
-  def sha1(s: Buffer): String = js.native
-  @JSImport("utility", "sha1")
-  @js.native
-  def sha1_base64(s: String, format: base64): String = js.native
-  @JSImport("utility", "sha1")
-  @js.native
-  def sha1_base64(s: Buffer, format: base64): String = js.native
-  @JSImport("utility", "sha1")
-  @js.native
-  def sha1_hex(s: String, format: hex): String = js.native
-  @JSImport("utility", "sha1")
-  @js.native
-  def sha1_hex(s: Buffer, format: hex): String = js.native
+  @scala.inline
+  def sha1(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sha1(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def sha1_base64(s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sha1_base64(s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sha1_hex(s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sha1_hex(s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * sha256 hash
@@ -599,24 +519,20 @@ object mod {
     * @return {String} sha256 hash string
     * @public
     */
-  @JSImport("utility", "sha256")
-  @js.native
-  def sha256(s: String): String = js.native
-  @JSImport("utility", "sha256")
-  @js.native
-  def sha256(s: Buffer): String = js.native
-  @JSImport("utility", "sha256")
-  @js.native
-  def sha256_base64(s: String, format: base64): String = js.native
-  @JSImport("utility", "sha256")
-  @js.native
-  def sha256_base64(s: Buffer, format: base64): String = js.native
-  @JSImport("utility", "sha256")
-  @js.native
-  def sha256_hex(s: String, format: hex): String = js.native
-  @JSImport("utility", "sha256")
-  @js.native
-  def sha256_hex(s: Buffer, format: hex): String = js.native
+  @scala.inline
+  def sha256(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sha256(s: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def sha256_base64(s: String, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sha256_base64(s: Buffer, format: base64): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def sha256_hex(s: String, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sha256_hex(s: Buffer, format: hex): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Remove one exists element from an array
@@ -624,9 +540,8 @@ object mod {
     * @param  {Number} index - remove element index
     * @return {Array} the array instance
     */
-  @JSImport("utility", "spliceOne")
-  @js.native
-  def spliceOne(arr: js.Array[_], index: Double): js.Array[_] = js.native
+  @scala.inline
+  def spliceOne(arr: js.Array[js.Any], index: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("spliceOne")(arr.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /**
     * split string to array
@@ -634,37 +549,30 @@ object mod {
     * @param  {String} [sep] default is ','
     * @return {Array}
     */
-  @JSImport("utility", "split")
-  @js.native
-  def split(str: String): js.Array[String] = js.native
-  @JSImport("utility", "split")
-  @js.native
-  def split(str: String, sep: String): js.Array[String] = js.native
+  @scala.inline
+  def split(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def split(str: String, sep: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(str.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /**
     * always optimized
     */
-  @JSImport("utility", "splitAlwaysOptimized")
-  @js.native
-  def splitAlwaysOptimized(args: js.Any*): js.Array[String] = js.native
+  @scala.inline
+  def splitAlwaysOptimized(args: js.Any*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitAlwaysOptimized")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("utility", "strictJSONParse")
-  @js.native
-  def strictJSONParse(str: String): ObjStatic = js.native
+  @scala.inline
+  def strictJSONParse(str: String): ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("strictJSONParse")(str.asInstanceOf[js.Any]).asInstanceOf[ObjStatic]
   
   /**
     * Get Unix's timestamp in seconds.
     * @return {Number}
     */
-  @JSImport("utility", "timestamp")
-  @js.native
-  def timestamp(): Double | Date = js.native
-  @JSImport("utility", "timestamp")
-  @js.native
-  def timestamp(t: String): Double | Date = js.native
-  @JSImport("utility", "timestamp")
-  @js.native
-  def timestamp(t: Double): Double | Date = js.native
+  @scala.inline
+  def timestamp(): Double | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Double | Date]
+  @scala.inline
+  def timestamp(t: String): Double | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(t.asInstanceOf[js.Any]).asInstanceOf[Double | Date]
+  @scala.inline
+  def timestamp(t: Double): Double | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(t.asInstanceOf[js.Any]).asInstanceOf[Double | Date]
   
   /**
     * Convert string to Number if string in safe Number scope.
@@ -672,12 +580,10 @@ object mod {
     * @param {String} s number format string.
     * @return {Number|String} success will return Number, otherise return the original string.
     */
-  @JSImport("utility", "toSafeNumber")
-  @js.native
-  def toSafeNumber(s: String): Double | String = js.native
-  @JSImport("utility", "toSafeNumber")
-  @js.native
-  def toSafeNumber(s: Double): Double | String = js.native
+  @scala.inline
+  def toSafeNumber(s: String): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSafeNumber")(s.asInstanceOf[js.Any]).asInstanceOf[Double | String]
+  @scala.inline
+  def toSafeNumber(s: Double): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSafeNumber")(s.asInstanceOf[js.Any]).asInstanceOf[Double | String]
   
   /**
     * Unescape the given string from html
@@ -686,45 +592,34 @@ object mod {
     * @return {String}
     * @public
     */
-  @JSImport("utility", "unescape")
-  @js.native
-  def unescape(html: String): String | ObjStatic = js.native
-  @JSImport("utility", "unescape")
-  @js.native
-  def unescape(html: String, `type`: String): String | ObjStatic = js.native
+  @scala.inline
+  def unescape(html: String): String | ObjStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(html.asInstanceOf[js.Any]).asInstanceOf[String | ObjStatic]
+  @scala.inline
+  def unescape(html: String, `type`: String): String | ObjStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(html.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String | ObjStatic]
   
-  @JSImport("utility", "writeJSON")
-  @js.native
-  def writeJSON(filepath: String, str: String): js.Promise[_] = js.native
-  @JSImport("utility", "writeJSON")
-  @js.native
-  def writeJSON(filepath: String, str: String, options: IJSONStaticOptions): js.Promise[_] = js.native
-  @JSImport("utility", "writeJSON")
-  @js.native
-  def writeJSON(filepath: String, str: ObjStatic): js.Promise[_] = js.native
-  @JSImport("utility", "writeJSON")
-  @js.native
-  def writeJSON(filepath: String, str: ObjStatic, options: IJSONStaticOptions): js.Promise[_] = js.native
+  @scala.inline
+  def writeJSON(filepath: String, str: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def writeJSON(filepath: String, str: String, options: IJSONStaticOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def writeJSON(filepath: String, str: ObjStatic): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def writeJSON(filepath: String, str: ObjStatic, options: IJSONStaticOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("utility", "writeJSONSync")
-  @js.native
-  def writeJSONSync(filepath: String, str: String): Unit = js.native
-  @JSImport("utility", "writeJSONSync")
-  @js.native
-  def writeJSONSync(filepath: String, str: String, options: IJSONStaticOptions): Unit = js.native
-  @JSImport("utility", "writeJSONSync")
-  @js.native
-  def writeJSONSync(filepath: String, str: ObjStatic): Unit = js.native
-  @JSImport("utility", "writeJSONSync")
-  @js.native
-  def writeJSONSync(filepath: String, str: ObjStatic, options: IJSONStaticOptions): Unit = js.native
+  @scala.inline
+  def writeJSONSync(filepath: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJSONSync(filepath: String, str: String, options: IJSONStaticOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJSONSync(filepath: String, str: ObjStatic): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJSONSync(filepath: String, str: ObjStatic, options: IJSONStaticOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(filepath.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait IDateStructStaticReturns extends StObject {
     
-    var H: Double = js.native
+    var H: Double
     
-    var YYYYMMDD: Double = js.native
+    var YYYYMMDD: Double
   }
   object IDateStructStaticReturns {
     
@@ -751,12 +646,11 @@ object mod {
     * @see https://github.com/node-modules/utility#json
     * -----------------0^0-----------------------
     */
-  @js.native
   trait IJSONStaticOptions extends StObject {
     
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
     
-    var space: js.UndefOr[Double | String] = js.native
+    var space: js.UndefOr[Double | String] = js.undefined
   }
   object IJSONStaticOptions {
     
@@ -770,7 +664,7 @@ object mod {
     implicit class IJSONStaticOptionsMutableBuilder[Self <: IJSONStaticOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
@@ -789,12 +683,11 @@ object mod {
     * @see https://github.com/node-modules/utility#others
     * -------------------0^0---------------------
     */
-  @js.native
   trait IReplaceInvalidHttpHeaderCharReturns extends StObject {
     
-    var invalid: Boolean = js.native
+    var invalid: Boolean
     
-    var `val`: String = js.native
+    var `val`: String
   }
   object IReplaceInvalidHttpHeaderCharReturns {
     
@@ -822,12 +715,11 @@ object mod {
     * @see https://github.com/node-modules/utility#argumentstoarray
     * -----------------0^0------------------------
     */
-  @js.native
   trait ITryStaticReturns extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ITryStaticReturns {
     
@@ -857,12 +749,11 @@ object mod {
     * @see https://github.com/node-modules/utility#date-utils
     * ---------------0^0------------------
     */
-  @js.native
   trait IYYYYMMDDHHmmssStaticOptions extends StObject {
     
-    var dateSep: js.UndefOr[String] = js.native
+    var dateSep: js.UndefOr[String] = js.undefined
     
-    var timeSep: js.UndefOr[String] = js.native
+    var timeSep: js.UndefOr[String] = js.undefined
   }
   object IYYYYMMDDHHmmssStaticOptions {
     

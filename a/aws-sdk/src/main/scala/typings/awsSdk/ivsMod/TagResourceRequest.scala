@@ -2,21 +2,19 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * ARN of the resource for which tags are to be added or updated.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
   
   /**
     * Array of tags to be added or updated.
     */
-  var tags: Tags = js.native
+  var tags: Tags
 }
 object TagResourceRequest {
   

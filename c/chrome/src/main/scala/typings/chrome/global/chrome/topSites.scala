@@ -3,7 +3,6 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.topSites.MostVisitedURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,7 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object topSites {
   
-  @JSGlobal("chrome.topSites.get")
+  @JSGlobal("chrome.topSites")
   @js.native
-  def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

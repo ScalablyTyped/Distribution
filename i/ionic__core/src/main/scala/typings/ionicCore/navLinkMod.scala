@@ -8,14 +8,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navLinkMod {
   
   @JSImport("@ionic/core/dist/types/components/nav-link/nav-link", "NavLink")
   @js.native
-  class NavLink () extends ComponentInterface {
+  class NavLink ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * Component to navigate to. Only used if the `routerDirection` is `"forward"` or `"root"`.

@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterAttribute extends StObject {
   
   /**
     * The field identifier.
     */
-  var key: attributeNameString = js.native
+  var key: attributeNameString
   
   /**
     * The field value, expressed as a String.
     */
-  var stringValue: attributeValueString = js.native
+  var stringValue: attributeValueString
 }
 object ParameterAttribute {
   

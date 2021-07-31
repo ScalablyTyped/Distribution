@@ -2,17 +2,15 @@ package typings.failOnErrorsWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FailOnErrors extends StObject {
     
-    var failOnErrors: js.UndefOr[Boolean] = js.native
+    var failOnErrors: js.UndefOr[Boolean] = js.undefined
     
-    var failOnWarnings: js.UndefOr[Boolean] = js.native
+    var failOnWarnings: js.UndefOr[Boolean] = js.undefined
   }
   object FailOnErrors {
     

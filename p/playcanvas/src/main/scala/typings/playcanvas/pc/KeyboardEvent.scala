@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,23 +21,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param keyboard - The keyboard object which is firing the event.
   * @param event - The original browser event that was fired.
   */
-@js.native
 trait KeyboardEvent extends StObject {
   
   /**
     * The element that fired the keyboard event.
     */
-  var element: Element = js.native
+  var element: Element
   
   /**
     * The original browser event which was fired.
     */
-  var event: KeyboardEvent = js.native
+  var event: KeyboardEvent
   
   /**
     * The keyCode of the key that has changed. See the pc.KEY_* constants.
     */
-  var key: Double = js.native
+  var key: Double
 }
 object KeyboardEvent {
   

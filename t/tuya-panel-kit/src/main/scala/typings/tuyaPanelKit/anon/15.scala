@@ -4,13 +4,11 @@ import typings.tuyaPanelKit.routersTypesMod.NavigationState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `15` extends StObject {
   
-  var state: js.UndefOr[NavigationState[ParamListBase] | PartialStateNavigationSta] = js.native
+  var state: js.UndefOr[NavigationState[ParamListBase] | PartialStateNavigationSta] = js.undefined
 }
 object `15` {
   

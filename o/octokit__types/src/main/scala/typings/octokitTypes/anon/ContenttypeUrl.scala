@@ -2,15 +2,13 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContenttypeUrl extends StObject {
   
-  var content_type: String = js.native
+  var content_type: String
   
-  var url: String = js.native
+  var url: String
 }
 object ContenttypeUrl {
   

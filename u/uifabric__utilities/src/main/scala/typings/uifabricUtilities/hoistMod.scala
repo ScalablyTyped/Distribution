@@ -2,19 +2,19 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoistMod {
   
-  @JSImport("@uifabric/utilities/lib/hoist", "hoistMethods")
+  @JSImport("@uifabric/utilities/lib/hoist", JSImport.Namespace)
   @js.native
-  def hoistMethods(destination: js.Any, source: js.Any): js.Array[String] = js.native
-  @JSImport("@uifabric/utilities/lib/hoist", "hoistMethods")
-  @js.native
-  def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[String]): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/utilities/lib/hoist", "unhoistMethods")
-  @js.native
-  def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = js.native
+  @scala.inline
+  def hoistMethods(destination: js.Any, source: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -6,14 +6,15 @@ import typings.heremaps.H.ui.base.Container
 import typings.heremaps.H.ui.i18n.Localization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the base class for UI controls on the map.
   */
 @js.native
-trait Control extends Container {
+trait Control
+  extends StObject
+     with Container {
   
   /**
     * This method returns this control&#x27;s layout alignment.

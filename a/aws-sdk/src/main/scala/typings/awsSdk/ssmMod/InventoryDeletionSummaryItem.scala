@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryDeletionSummaryItem extends StObject {
   
   /**
     * A count of the number of deleted items.
     */
-  var Count: js.UndefOr[ResourceCount] = js.native
+  var Count: js.UndefOr[ResourceCount] = js.undefined
   
   /**
     * The remaining number of items to delete.
     */
-  var RemainingCount: js.UndefOr[typings.awsSdk.ssmMod.RemainingCount] = js.native
+  var RemainingCount: js.UndefOr[typings.awsSdk.ssmMod.RemainingCount] = js.undefined
   
   /**
     * The inventory type version.
     */
-  var Version: js.UndefOr[InventoryItemSchemaVersion] = js.native
+  var Version: js.UndefOr[InventoryItemSchemaVersion] = js.undefined
 }
 object InventoryDeletionSummaryItem {
   

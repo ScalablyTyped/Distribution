@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountArtifactsResponse extends StObject {
   
   /** Count metrics of Groups. */
-  var groupsCountResult: js.UndefOr[GroupsCountResult] = js.native
+  var groupsCountResult: js.UndefOr[GroupsCountResult] = js.undefined
   
   /** Count metrics of Mail. */
-  var mailCountResult: js.UndefOr[MailCountResult] = js.native
+  var mailCountResult: js.UndefOr[MailCountResult] = js.undefined
   
   /** Total count of artifacts. For mail and groups, artifacts refers to messages. */
-  var totalCount: js.UndefOr[String] = js.native
+  var totalCount: js.UndefOr[String] = js.undefined
 }
 object CountArtifactsResponse {
   

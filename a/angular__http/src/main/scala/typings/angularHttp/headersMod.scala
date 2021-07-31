@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headersMod {
@@ -80,11 +79,14 @@ object headersMod {
   /* static members */
   object Headers {
     
+    @JSImport("@angular/http/src/headers", "Headers")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a new Headers instance from the given DOMString of Response Headers
       */
-    @JSImport("@angular/http/src/headers", "Headers.fromResponseHeaderString")
-    @js.native
-    def fromResponseHeaderString(headersString: String): Headers = js.native
+    @scala.inline
+    def fromResponseHeaderString(headersString: String): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[Headers]
   }
 }

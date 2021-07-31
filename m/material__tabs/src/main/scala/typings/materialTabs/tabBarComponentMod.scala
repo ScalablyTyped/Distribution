@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarComponentMod {
@@ -16,7 +15,7 @@ object tabBarComponentMod {
   @JSImport("@material/tabs/tab-bar/component", "MDCTabBar")
   @js.native
   class MDCTabBar protected () extends MDCComponent[MDCTabBarFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTabBarFoundation, args: js.Any*) = this()
     
     var activeTab: MDCTab = js.native
@@ -35,9 +34,12 @@ object tabBarComponentMod {
   /* static members */
   object MDCTabBar {
     
-    @JSImport("@material/tabs/tab-bar/component", "MDCTabBar.attachTo")
+    @JSImport("@material/tabs/tab-bar/component", "MDCTabBar")
     @js.native
-    def attachTo(root: Element): MDCTabBar = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabBar]
   }
   
   type MDCTabBarFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCTabBarFoundation], MDCTabBar]

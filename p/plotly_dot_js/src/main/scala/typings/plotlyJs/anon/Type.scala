@@ -4,17 +4,15 @@ import typings.plotlyJs.plotlyJsStrings.constant
 import typings.plotlyJs.plotlyJsStrings.percent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: constant | percent = js.native
+  var `type`: constant | percent
   
-  var value: Double = js.native
+  var value: Double
   
-  var valueminus: js.UndefOr[Double] = js.native
+  var valueminus: js.UndefOr[Double] = js.undefined
 }
 object Type {
   

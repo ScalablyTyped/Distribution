@@ -13,10 +13,13 @@ import typings.angularCompiler.outputAstMod.Statement
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nUtilMod {
+  
+  @JSImport("@angular/compiler/src/render3/view/i18n/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/render3/view/i18n/util", "I18N_ATTR")
   @js.native
@@ -42,109 +45,79 @@ object i18nUtilMod {
   @js.native
   val TRANSLATION_VAR_PREFIX: /* "i18n_" */ String = js.native
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleBoundTextPlaceholders")
-  @js.native
-  def assembleBoundTextPlaceholders(meta: I18nMeta): Map[String, js.Array[_]] = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleBoundTextPlaceholders")
-  @js.native
-  def assembleBoundTextPlaceholders(meta: I18nMeta, bindingStartIndex: js.UndefOr[scala.Nothing], contextId: Double): Map[String, js.Array[_]] = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleBoundTextPlaceholders")
-  @js.native
-  def assembleBoundTextPlaceholders(meta: I18nMeta, bindingStartIndex: Double): Map[String, js.Array[_]] = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleBoundTextPlaceholders")
-  @js.native
-  def assembleBoundTextPlaceholders(meta: I18nMeta, bindingStartIndex: Double, contextId: Double): Map[String, js.Array[_]] = js.native
+  @scala.inline
+  def assembleBoundTextPlaceholders(meta: I18nMeta): Map[String, js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleBoundTextPlaceholders")(meta.asInstanceOf[js.Any]).asInstanceOf[Map[String, js.Array[js.Any]]]
+  @scala.inline
+  def assembleBoundTextPlaceholders(meta: I18nMeta, bindingStartIndex: Double): Map[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleBoundTextPlaceholders")(meta.asInstanceOf[js.Any], bindingStartIndex.asInstanceOf[js.Any])).asInstanceOf[Map[String, js.Array[js.Any]]]
+  @scala.inline
+  def assembleBoundTextPlaceholders(meta: I18nMeta, bindingStartIndex: Double, contextId: Double): Map[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleBoundTextPlaceholders")(meta.asInstanceOf[js.Any], bindingStartIndex.asInstanceOf[js.Any], contextId.asInstanceOf[js.Any])).asInstanceOf[Map[String, js.Array[js.Any]]]
+  @scala.inline
+  def assembleBoundTextPlaceholders(meta: I18nMeta, bindingStartIndex: Unit, contextId: Double): Map[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleBoundTextPlaceholders")(meta.asInstanceOf[js.Any], bindingStartIndex.asInstanceOf[js.Any], contextId.asInstanceOf[js.Any])).asInstanceOf[Map[String, js.Array[js.Any]]]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleI18nBoundString")
-  @js.native
-  def assembleI18nBoundString(strings: js.Array[String]): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleI18nBoundString")
-  @js.native
-  def assembleI18nBoundString(strings: js.Array[String], bindingStartIndex: js.UndefOr[scala.Nothing], contextId: Double): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleI18nBoundString")
-  @js.native
-  def assembleI18nBoundString(strings: js.Array[String], bindingStartIndex: Double): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "assembleI18nBoundString")
-  @js.native
-  def assembleI18nBoundString(strings: js.Array[String], bindingStartIndex: Double, contextId: Double): String = js.native
+  @scala.inline
+  def assembleI18nBoundString(strings: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleI18nBoundString")(strings.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def assembleI18nBoundString(strings: js.Array[String], bindingStartIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleI18nBoundString")(strings.asInstanceOf[js.Any], bindingStartIndex.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def assembleI18nBoundString(strings: js.Array[String], bindingStartIndex: Double, contextId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleI18nBoundString")(strings.asInstanceOf[js.Any], bindingStartIndex.asInstanceOf[js.Any], contextId.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def assembleI18nBoundString(strings: js.Array[String], bindingStartIndex: Unit, contextId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleI18nBoundString")(strings.asInstanceOf[js.Any], bindingStartIndex.asInstanceOf[js.Any], contextId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "declareI18nVariable")
-  @js.native
-  def declareI18nVariable(variable: ReadVarExpr): Statement = js.native
+  @scala.inline
+  def declareI18nVariable(variable: ReadVarExpr): Statement = ^.asInstanceOf[js.Dynamic].applyDynamic("declareI18nVariable")(variable.asInstanceOf[js.Any]).asInstanceOf[Statement]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "formatI18nPlaceholderName")
-  @js.native
-  def formatI18nPlaceholderName(name: String): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "formatI18nPlaceholderName")
-  @js.native
-  def formatI18nPlaceholderName(name: String, useCamelCase: Boolean): String = js.native
+  @scala.inline
+  def formatI18nPlaceholderName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatI18nPlaceholderName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatI18nPlaceholderName(name: String, useCamelCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatI18nPlaceholderName")(name.asInstanceOf[js.Any], useCamelCase.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "getSeqNumberGenerator")
-  @js.native
-  def getSeqNumberGenerator(): js.Function0[Double] = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "getSeqNumberGenerator")
-  @js.native
-  def getSeqNumberGenerator(startsAt: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def getSeqNumberGenerator(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeqNumberGenerator")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def getSeqNumberGenerator(startsAt: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeqNumberGenerator")(startsAt.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "getTranslationConstPrefix")
-  @js.native
-  def getTranslationConstPrefix(extra: String): String = js.native
+  @scala.inline
+  def getTranslationConstPrefix(extra: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationConstPrefix")(extra.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "hasI18nAttrs")
-  @js.native
-  def hasI18nAttrs(element: Element): Boolean = js.native
+  @scala.inline
+  def hasI18nAttrs(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasI18nAttrs")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "hasI18nMeta")
-  @js.native
-  def hasI18nMeta(node: Nodei18nI18nMetaundefined): Boolean = js.native
+  @scala.inline
+  def hasI18nMeta(node: Nodei18nI18nMetaundefined): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasI18nMeta")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "i18nFormatPlaceholderNames")
-  @js.native
-  def i18nFormatPlaceholderNames(params: js.UndefOr[scala.Nothing], useCamelCase: Boolean): StringDictionary[Expression] = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "i18nFormatPlaceholderNames")
-  @js.native
-  def i18nFormatPlaceholderNames(params: StringDictionary[Expression], useCamelCase: Boolean): StringDictionary[Expression] = js.native
+  @scala.inline
+  def i18nFormatPlaceholderNames(params: StringDictionary[Expression], useCamelCase: Boolean): StringDictionary[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nFormatPlaceholderNames")(params.asInstanceOf[js.Any], useCamelCase.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Expression]]
+  @scala.inline
+  def i18nFormatPlaceholderNames(params: Unit, useCamelCase: Boolean): StringDictionary[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nFormatPlaceholderNames")(params.asInstanceOf[js.Any], useCamelCase.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Expression]]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "icuFromI18nMessage")
-  @js.native
-  def icuFromI18nMessage(message: Message): IcuPlaceholder = js.native
+  @scala.inline
+  def icuFromI18nMessage(message: Message): IcuPlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("icuFromI18nMessage")(message.asInstanceOf[js.Any]).asInstanceOf[IcuPlaceholder]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "isI18nAttribute")
-  @js.native
-  def isI18nAttribute(name: String): Boolean = js.native
+  @scala.inline
+  def isI18nAttribute(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isI18nAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "isI18nRootNode")
-  @js.native
-  def isI18nRootNode(): /* is @angular/compiler.@angular/compiler/src/i18n/i18n_ast.Message */ Boolean = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "isI18nRootNode")
-  @js.native
-  def isI18nRootNode(meta: I18nMeta): /* is @angular/compiler.@angular/compiler/src/i18n/i18n_ast.Message */ Boolean = js.native
+  @scala.inline
+  def isI18nRootNode(): /* is @angular/compiler.@angular/compiler/src/i18n/i18n_ast.Message */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isI18nRootNode")().asInstanceOf[/* is @angular/compiler.@angular/compiler/src/i18n/i18n_ast.Message */ Boolean]
+  @scala.inline
+  def isI18nRootNode(meta: I18nMeta): /* is @angular/compiler.@angular/compiler/src/i18n/i18n_ast.Message */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isI18nRootNode")(meta.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler.@angular/compiler/src/i18n/i18n_ast.Message */ Boolean]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "isSingleI18nIcu")
-  @js.native
-  def isSingleI18nIcu(): Boolean = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "isSingleI18nIcu")
-  @js.native
-  def isSingleI18nIcu(meta: I18nMeta): Boolean = js.native
+  @scala.inline
+  def isSingleI18nIcu(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSingleI18nIcu")().asInstanceOf[Boolean]
+  @scala.inline
+  def isSingleI18nIcu(meta: I18nMeta): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSingleI18nIcu")(meta.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "placeholdersToParams")
-  @js.native
-  def placeholdersToParams(placeholders: Map[String, js.Array[String]]): StringDictionary[LiteralExpr] = js.native
+  @scala.inline
+  def placeholdersToParams(placeholders: Map[String, js.Array[String]]): StringDictionary[LiteralExpr] = ^.asInstanceOf[js.Dynamic].applyDynamic("placeholdersToParams")(placeholders.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[LiteralExpr]]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "updatePlaceholderMap")
-  @js.native
-  def updatePlaceholderMap(map: Map[String, js.Array[_]], name: String, values: js.Any*): Unit = js.native
+  @scala.inline
+  def updatePlaceholderMap(map: Map[String, js.Array[js.Any]], name: String, values: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePlaceholderMap")(map.asInstanceOf[js.Any], name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "wrapI18nPlaceholder")
-  @js.native
-  def wrapI18nPlaceholder(content: String): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "wrapI18nPlaceholder")
-  @js.native
-  def wrapI18nPlaceholder(content: String, contextId: Double): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "wrapI18nPlaceholder")
-  @js.native
-  def wrapI18nPlaceholder(content: Double): String = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/util", "wrapI18nPlaceholder")
-  @js.native
-  def wrapI18nPlaceholder(content: Double, contextId: Double): String = js.native
+  @scala.inline
+  def wrapI18nPlaceholder(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapI18nPlaceholder")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def wrapI18nPlaceholder(content: String, contextId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapI18nPlaceholder")(content.asInstanceOf[js.Any], contextId.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def wrapI18nPlaceholder(content: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapI18nPlaceholder")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def wrapI18nPlaceholder(content: Double, contextId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapI18nPlaceholder")(content.asInstanceOf[js.Any], contextId.asInstanceOf[js.Any])).asInstanceOf[String]
 }

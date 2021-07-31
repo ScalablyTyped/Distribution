@@ -2,24 +2,22 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object describing filters to apply to tabs.onUpdated events. */
-@js.native
 trait UpdateFilter extends StObject {
   
   /** A list of property names. Events that do not match any of the names will be filtered out. */
-  var properties: js.UndefOr[js.Array[UpdatePropertyName]] = js.native
+  var properties: js.UndefOr[js.Array[UpdatePropertyName]] = js.undefined
   
-  var tabId: js.UndefOr[Double] = js.native
+  var tabId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of URLs or URL patterns. Events that cannot match any of the URLs will be filtered out. Filtering with urls requires the `"tabs"` or `"activeTab"` permission.
     */
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var windowId: js.UndefOr[Double] = js.native
+  var windowId: js.UndefOr[Double] = js.undefined
 }
 object UpdateFilter {
   

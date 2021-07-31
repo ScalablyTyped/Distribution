@@ -2,11 +2,12 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapSystemProjection extends KVO {
+trait MapSystemProjection
+  extends StObject
+     with KVO {
   
   def factor(zoom: Double): Double = js.native
   

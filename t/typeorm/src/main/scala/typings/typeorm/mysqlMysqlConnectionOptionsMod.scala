@@ -8,14 +8,13 @@ import typings.typeorm.typeormStrings.mariadb
 import typings.typeorm.typeormStrings.mysql
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mysqlMysqlConnectionOptionsMod {
   
-  @js.native
   trait MysqlConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with MysqlConnectionCredentialsOptions
        with ConnectionOptions {
     
@@ -24,7 +23,7 @@ object mysqlMysqlConnectionOptionsMod {
       * This difference between connectTimeout and acquireTimeout is subtle and is described in the mysqljs/mysql docs
       * https://github.com/mysqljs/mysql/tree/master#pool-options
       */
-    val acquireTimeout: js.UndefOr[Double] = js.native
+    val acquireTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Enabling both supportBigNumbers and bigNumberStrings forces big numbers (BIGINT and DECIMAL columns) to be always
@@ -33,83 +32,83 @@ object mysqlMysqlConnectionOptionsMod {
       * [JavaScript Number objects](http://ecma262-5.com/ELS5_HTML.htm#Section_8.5) (which happens when they exceed the [-2^53, +2^53] range),
       * otherwise they will be returned as Number objects. This option is ignored if supportBigNumbers is disabled.
       */
-    val bigNumberStrings: js.UndefOr[Boolean] = js.native
+    val bigNumberStrings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The charset for the connection. This is called "collation" in the SQL-level of MySQL (like utf8_general_ci).
       * If a SQL-level charset is specified (like utf8mb4) then the default collation for that charset is used.
       * Default: 'UTF8_GENERAL_CI'
       */
-    val charset: js.UndefOr[String] = js.native
+    val charset: js.UndefOr[String] = js.undefined
     
     /**
       * The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10000)
       */
-    val connectTimeout: js.UndefOr[Double] = js.native
+    val connectTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Force date types (TIMESTAMP, DATETIME, DATE) to be returned as strings rather then inflated into JavaScript Date objects.
       * Can be true/false or an array of type names to keep as strings.
       */
-    val dateStrings: js.UndefOr[Boolean | js.Array[String]] = js.native
+    val dateStrings: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Prints protocol details to stdout. Can be true/false or an array of packet type names that should be printed.
       * (Default: false)
       */
-    val debug: js.UndefOr[Boolean | js.Array[String]] = js.native
+    val debug: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * List of connection flags to use other than the default ones. It is also possible to blacklist default ones.
       * For more information, check https://github.com/mysqljs/mysql#connection-flags.
       */
-    val flags: js.UndefOr[js.Array[String]] = js.native
+    val flags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Allow connecting to MySQL instances that ask for the old (insecure) authentication method. (Default: false)
       */
-    val insecureAuth: js.UndefOr[Boolean] = js.native
+    val insecureAuth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use spatial functions like GeomFromText and AsText which are removed in MySQL 8.
       * (Default: true)
       */
-    val legacySpatialSupport: js.UndefOr[Boolean] = js.native
+    val legacySpatialSupport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow multiple mysql statements per query. Be careful with this, it could increase the scope of SQL injection attacks.
       * (Default: false)
       */
-    val multipleStatements: js.UndefOr[Boolean] = js.native
+    val multipleStatements: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Replication setup.
       */
-    val replication: js.UndefOr[RemoveNodeErrorCount] = js.native
+    val replication: js.UndefOr[RemoveNodeErrorCount] = js.undefined
     
     /**
       * When dealing with big numbers (BIGINT and DECIMAL columns) in the database, you should enable this option (Default: false)
       */
-    val supportBigNumbers: js.UndefOr[Boolean] = js.native
+    val supportBigNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The timezone configured on the MySQL server.
       * This is used to type cast server date/time values to JavaScript Date object and vice versa.
       * This can be 'local', 'Z', or an offset in the form +HH:MM or -HH:MM. (Default: 'local')
       */
-    val timezone: js.UndefOr[String] = js.native
+    val timezone: js.UndefOr[String] = js.undefined
     
     /**
       * Generates stack traces on Error to include call site of library entrance ("long stack traces").
       * Slight performance penalty for most calls. (Default: true)
       */
-    val trace: js.UndefOr[Boolean] = js.native
+    val trace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_MysqlConnectionOptions: mysql | mariadb = js.native
+    val type_MysqlConnectionOptions: mysql | mariadb
   }
   object MysqlConnectionOptions {
     

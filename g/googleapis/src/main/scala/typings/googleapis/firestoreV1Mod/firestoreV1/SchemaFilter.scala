@@ -2,29 +2,27 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter.
   */
-@js.native
 trait SchemaFilter extends StObject {
   
   /**
     * A composite filter.
     */
-  var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.native
+  var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.undefined
   
   /**
     * A filter on a document field.
     */
-  var fieldFilter: js.UndefOr[SchemaFieldFilter] = js.native
+  var fieldFilter: js.UndefOr[SchemaFieldFilter] = js.undefined
   
   /**
     * A filter that takes exactly one argument.
     */
-  var unaryFilter: js.UndefOr[SchemaUnaryFilter] = js.native
+  var unaryFilter: js.UndefOr[SchemaUnaryFilter] = js.undefined
 }
 object SchemaFilter {
   

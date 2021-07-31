@@ -2,19 +2,17 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashContour extends StObject {
   
-  var fill: FlashFill = js.native
+  var fill: FlashFill
   
-  def getHalfEdge(): FlashHalfEdge = js.native
+  def getHalfEdge(): FlashHalfEdge
   
-  var interior: Boolean = js.native
+  var interior: Boolean
   
-  var orientation: Double = js.native
+  var orientation: Double
 }
 object FlashContour {
   

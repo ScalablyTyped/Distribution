@@ -3,32 +3,31 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSDeclareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSDeclareFunction_
-  extends Declaration
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSDeclareFunction_
+  extends StObject
      with BaseNode
+     with Declaration
      with Statement {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var id: Identifier_ | Null = js.native
+  var id: Identifier_ | Null
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_] = js.native
+  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   
-  var returnType: TSTypeAnnotation_ | Noop_ | Null = js.native
+  var returnType: TSTypeAnnotation_ | Noop_ | Null
   
-  var typeParameters: TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_TSDeclareFunction_ : TSDeclareFunction = js.native
+  var type_TSDeclareFunction_ : TSDeclareFunction
 }
 object TSDeclareFunction_ {
   
@@ -36,11 +35,10 @@ object TSDeclareFunction_ {
   def apply(
     async: Boolean,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: TSDeclareFunction
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   ): TSDeclareFunction_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSDeclareFunction")
     __obj.asInstanceOf[TSDeclareFunction_]
   }
   

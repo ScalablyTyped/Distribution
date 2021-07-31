@@ -2,46 +2,44 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateVersionResponse extends StObject {
   
   /**
     * The date, in ISO 8601 format, when the version of the message template was created.
     */
-  var CreationDate: string = js.native
+  var CreationDate: string
   
   /**
     * A JSON object that specifies the default values that are used for message variables in the version of the message template. This object is a set of key-value pairs. Each key defines a message variable in the template. The corresponding value defines the default value for that variable.
     */
-  var DefaultSubstitutions: js.UndefOr[string] = js.native
+  var DefaultSubstitutions: js.UndefOr[string] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the version of the message template was last modified.
     */
-  var LastModifiedDate: string = js.native
+  var LastModifiedDate: string
   
   /**
     * The custom description of the version of the message template.
     */
-  var TemplateDescription: js.UndefOr[string] = js.native
+  var TemplateDescription: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the message template.
     */
-  var TemplateName: string = js.native
+  var TemplateName: string
   
   /**
     * The type of channel that the message template is designed for. Possible values are: EMAIL, PUSH, SMS, and VOICE.
     */
-  var TemplateType: string = js.native
+  var TemplateType: string
   
   /**
     * The unique identifier for the version of the message template. This value is an integer that Amazon Pinpoint automatically increments and assigns to each new version of a template.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
 }
 object TemplateVersionResponse {
   

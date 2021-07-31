@@ -2,25 +2,23 @@ package typings.chrome.chrome.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestFilter extends StObject {
   
   /** Optional. */
-  var tabId: js.UndefOr[Double] = js.native
+  var tabId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of request types. Requests that cannot match any of the types will be filtered out.
     */
-  var types: js.UndefOr[js.Array[ResourceType]] = js.native
+  var types: js.UndefOr[js.Array[ResourceType]] = js.undefined
   
   /** A list of URLs or URL patterns. Requests that cannot match any of the URLs will be filtered out. */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
   
   /** Optional. */
-  var windowId: js.UndefOr[Double] = js.native
+  var windowId: js.UndefOr[Double] = js.undefined
 }
 object RequestFilter {
   

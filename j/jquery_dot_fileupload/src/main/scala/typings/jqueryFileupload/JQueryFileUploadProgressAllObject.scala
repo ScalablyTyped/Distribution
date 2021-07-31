@@ -2,17 +2,15 @@ package typings.jqueryFileupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryFileUploadProgressAllObject extends StObject {
   
-  var bitrate: js.UndefOr[Double] = js.native
+  var bitrate: js.UndefOr[Double] = js.undefined
   
-  var loaded: js.UndefOr[Double] = js.native
+  var loaded: js.UndefOr[Double] = js.undefined
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object JQueryFileUploadProgressAllObject {
   

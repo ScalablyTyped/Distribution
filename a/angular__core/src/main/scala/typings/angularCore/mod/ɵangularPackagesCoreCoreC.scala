@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275angular_packages_core_core_c")
@@ -32,7 +31,7 @@ class ɵangularPackagesCoreCoreC protected () extends ReflectiveInjector {
   
   var keyIds: js.Array[Double] = js.native
   
-  var objs: js.Array[_] = js.native
+  var objs: js.Array[js.Any] = js.native
   
   @JSName("parent")
   val parent_FɵangularPackagesCoreCoreC: Injector | Null = js.native

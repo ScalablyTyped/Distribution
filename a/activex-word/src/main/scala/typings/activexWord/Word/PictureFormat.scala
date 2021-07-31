@@ -5,44 +5,42 @@ import typings.activexOffice.Office.MsoPictureColorType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PictureFormat extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Brightness: Double = js.native
+  var Brightness: Double
   
-  var ColorType: MsoPictureColorType = js.native
+  var ColorType: MsoPictureColorType
   
-  var Contrast: Double = js.native
+  var Contrast: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Crop: typings.activexOffice.Office.Crop = js.native
+  var Crop: typings.activexOffice.Office.Crop
   
-  var CropBottom: Double = js.native
+  var CropBottom: Double
   
-  var CropLeft: Double = js.native
+  var CropLeft: Double
   
-  var CropRight: Double = js.native
+  var CropRight: Double
   
-  var CropTop: Double = js.native
+  var CropTop: Double
   
-  def IncrementBrightness(Increment: Double): Unit = js.native
+  def IncrementBrightness(Increment: Double): Unit
   
-  def IncrementContrast(Increment: Double): Unit = js.native
+  def IncrementContrast(Increment: Double): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var TransparencyColor: Double = js.native
+  var TransparencyColor: Double
   
-  var TransparentBackground: MsoTriState = js.native
+  var TransparentBackground: MsoTriState
   
   @JSName("Word.PictureFormat_typekey")
-  var WordDotPictureFormat_typekey: PictureFormat = js.native
+  var WordDotPictureFormat_typekey: PictureFormat
 }
 object PictureFormat {
   

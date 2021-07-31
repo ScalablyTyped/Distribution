@@ -2,12 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MobileAppBuilder[MobileApp]
-  extends AdWordsBuilder[MobileApp]
+  extends StObject
+     with AdWordsBuilder[MobileApp]
      with hasMobilePreferredBuilder[MobileAppBuilder[MobileApp]]
      with hasStartAndEndDateBuilder[MobileAppBuilder[MobileApp]]
      with hasSchedulesBuilder[MobileAppBuilder[MobileApp]]

@@ -2,45 +2,43 @@ package typings.datejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sugarpak {
   
-  @js.native
   trait IAddOrientation extends StObject {
     
-    def day(): Date = js.native
+    def day(): Date
     
-    def days(): Date = js.native
+    def days(): Date
     
-    def hour(): Date = js.native
+    def hour(): Date
     
-    def hours(): Date = js.native
+    def hours(): Date
     
-    def millisecond(): Date = js.native
+    def millisecond(): Date
     
-    def milliseconds(): Date = js.native
+    def milliseconds(): Date
     
-    def minute(): Date = js.native
+    def minute(): Date
     
-    def minutes(): Date = js.native
+    def minutes(): Date
     
-    def month(): Date = js.native
+    def month(): Date
     
-    def months(): Date = js.native
+    def months(): Date
     
-    def second(): Date = js.native
+    def second(): Date
     
-    def seconds(): Date = js.native
+    def seconds(): Date
     
-    def week(): Date = js.native
+    def week(): Date
     
-    def weeks(): Date = js.native
+    def weeks(): Date
     
-    def year(): Date = js.native
+    def year(): Date
     
-    def years(): Date = js.native
+    def years(): Date
   }
   object IAddOrientation {
     
@@ -120,40 +118,39 @@ object sugarpak {
     }
   }
   
-  @js.native
   trait IDateElement extends StObject {
     
-    def day(): IDateElementEvaluator = js.native
+    def day(): IDateElementEvaluator
     
-    def days(): IDateElementEvaluator = js.native
+    def days(): IDateElementEvaluator
     
-    def hour(): IDateElementEvaluator = js.native
+    def hour(): IDateElementEvaluator
     
-    def hours(): IDateElementEvaluator = js.native
+    def hours(): IDateElementEvaluator
     
-    def millisecond(): IDateElementEvaluator = js.native
+    def millisecond(): IDateElementEvaluator
     
-    def milliseconds(): IDateElementEvaluator = js.native
+    def milliseconds(): IDateElementEvaluator
     
-    def minute(): IDateElementEvaluator = js.native
+    def minute(): IDateElementEvaluator
     
-    def minutes(): IDateElementEvaluator = js.native
+    def minutes(): IDateElementEvaluator
     
-    def month(): IDateElementEvaluator = js.native
+    def month(): IDateElementEvaluator
     
-    def months(): IDateElementEvaluator = js.native
+    def months(): IDateElementEvaluator
     
-    def second(): IDateElementEvaluator = js.native
+    def second(): IDateElementEvaluator
     
-    def seconds(): IDateElementEvaluator = js.native
+    def seconds(): IDateElementEvaluator
     
-    def week(): IDateElementEvaluator = js.native
+    def week(): IDateElementEvaluator
     
-    def weeks(): IDateElementEvaluator = js.native
+    def weeks(): IDateElementEvaluator
     
-    def year(): IDateElementEvaluator = js.native
+    def year(): IDateElementEvaluator
     
-    def years(): IDateElementEvaluator = js.native
+    def years(): IDateElementEvaluator
   }
   object IDateElement {
     
@@ -233,16 +230,15 @@ object sugarpak {
     }
   }
   
-  @js.native
   trait IDateElementEvaluator extends StObject {
     
-    def after(): Date = js.native
+    def after(): Date
     
-    def ago(): Date = js.native
+    def ago(): Date
     
-    def before(): Date = js.native
+    def before(): Date
     
-    def fromNow(): Date = js.native
+    def fromNow(): Date
   }
   object IDateElementEvaluator {
     
@@ -269,16 +265,17 @@ object sugarpak {
     }
   }
   
-  @js.native
-  trait IDateLiteral extends ITimeLiteral {
+  trait IDateLiteral
+    extends StObject
+       with ITimeLiteral {
     
-    var day: Double = js.native
+    var day: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var week: Double = js.native
+    var week: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object IDateLiteral {
     
@@ -342,83 +339,84 @@ object sugarpak {
     def year(date: Date): Boolean = js.native
   }
   
-  @js.native
-  trait IOrientation extends IAddOrientation {
+  trait IOrientation
+    extends StObject
+       with IAddOrientation {
     
-    def apr(): Date = js.native
+    def apr(): Date
     
-    def april(): Date = js.native
+    def april(): Date
     
-    def aug(): Date = js.native
+    def aug(): Date
     
-    def august(): Date = js.native
+    def august(): Date
     
-    def dec(): Date = js.native
+    def dec(): Date
     
-    def december(): Date = js.native
+    def december(): Date
     
-    def feb(): Date = js.native
+    def feb(): Date
     
-    def february(): Date = js.native
+    def february(): Date
     
-    def fri(): Date = js.native
+    def fri(): Date
     
-    def friday(): Date = js.native
+    def friday(): Date
     
-    def jan(): Date = js.native
+    def jan(): Date
     
-    def january(): Date = js.native
+    def january(): Date
     
-    def jul(): Date = js.native
+    def jul(): Date
     
-    def july(): Date = js.native
+    def july(): Date
     
     // may
-    def jun(): Date = js.native
+    def jun(): Date
     
-    def june(): Date = js.native
+    def june(): Date
     
-    def mar(): Date = js.native
+    def mar(): Date
     
-    def march(): Date = js.native
+    def march(): Date
     
-    def may(): Date = js.native
+    def may(): Date
     
-    def mon(): Date = js.native
+    def mon(): Date
     
-    def monday(): Date = js.native
+    def monday(): Date
     
-    def nov(): Date = js.native
+    def nov(): Date
     
-    def november(): Date = js.native
+    def november(): Date
     
-    def oct(): Date = js.native
+    def oct(): Date
     
-    def october(): Date = js.native
+    def october(): Date
     
-    def sat(): Date = js.native
+    def sat(): Date
     
-    def saturday(): Date = js.native
+    def saturday(): Date
     
-    def sep(): Date = js.native
+    def sep(): Date
     
-    def september(): Date = js.native
+    def september(): Date
     
-    def sun(): Date = js.native
+    def sun(): Date
     
-    def sunday(): Date = js.native
+    def sunday(): Date
     
-    def thu(): Date = js.native
+    def thu(): Date
     
-    def thursday(): Date = js.native
+    def thursday(): Date
     
-    def tue(): Date = js.native
+    def tue(): Date
     
-    def tuesday(): Date = js.native
+    def tuesday(): Date
     
-    def wed(): Date = js.native
+    def wed(): Date
     
-    def wednesday(): Date = js.native
+    def wednesday(): Date
   }
   object IOrientation {
     
@@ -692,16 +690,15 @@ object sugarpak {
     def year(date: Date): Boolean = js.native
   }
   
-  @js.native
   trait ITimeLiteral extends StObject {
     
-    var hour: Double = js.native
+    var hour: Double
     
-    var millisecond: Double = js.native
+    var millisecond: Double
     
-    var minute: Double = js.native
+    var minute: Double
     
-    var second: Double = js.native
+    var second: Double
   }
   object ITimeLiteral {
     

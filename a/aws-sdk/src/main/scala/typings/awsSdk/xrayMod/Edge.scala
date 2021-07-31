@@ -2,41 +2,39 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
   /**
     * Aliases for the edge.
     */
-  var Aliases: js.UndefOr[AliasList] = js.native
+  var Aliases: js.UndefOr[AliasList] = js.undefined
   
   /**
     * The end time of the last segment on the edge.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Identifier of the edge. Unique within a service map.
     */
-  var ReferenceId: js.UndefOr[NullableInteger] = js.native
+  var ReferenceId: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * A histogram that maps the spread of client response times on an edge.
     */
-  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.native
+  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.undefined
   
   /**
     * The start time of the first segment on the edge.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Response statistics for segments on the edge.
     */
-  var SummaryStatistics: js.UndefOr[EdgeStatistics] = js.native
+  var SummaryStatistics: js.UndefOr[EdgeStatistics] = js.undefined
 }
 object Edge {
   

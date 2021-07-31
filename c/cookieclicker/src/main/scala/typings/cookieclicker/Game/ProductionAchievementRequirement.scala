@@ -2,18 +2,16 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductionAchievementRequirement extends StObject {
   
-  var achiev: Achievement = js.native
+  var achiev: Achievement
   
   /**
     * The amount of cookies required to get the achievement
     */
-  var pow: Double = js.native
+  var pow: Double
 }
 object ProductionAchievementRequirement {
   

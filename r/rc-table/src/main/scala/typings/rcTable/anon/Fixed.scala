@@ -3,13 +3,11 @@ package typings.rcTable.anon
 import typings.rcTable.interfaceMod.FixedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fixed extends StObject {
   
-  var fixed: js.UndefOr[FixedType] = js.native
+  var fixed: js.UndefOr[FixedType] = js.undefined
 }
 object Fixed {
   

@@ -49,7 +49,6 @@ import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import typings.tizenTvWebapis.webapisMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -204,7 +203,7 @@ trait AVPlayManager extends StObject {
     * During this async operation, the other API would not be allowed. So, the application needs to wait for one of both callbacks( SuccessCallback, errorCallback) before any other API call.
     */
   def jumpBackward(milliseconds: Double): Unit = js.native
-  def jumpBackward(milliseconds: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+  def jumpBackward(milliseconds: Double, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
   def jumpBackward(milliseconds: Double, onsuccess: SuccessCallback): Unit = js.native
   def jumpBackward(milliseconds: Double, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   
@@ -221,7 +220,7 @@ trait AVPlayManager extends StObject {
     * During this async operation, the other API would not be allowed. So, the application needs to wait for one of both callbacks( SuccessCallback, errorCallback) before any other API call.
     */
   def jumpForward(milliseconds: Double): Unit = js.native
-  def jumpForward(milliseconds: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+  def jumpForward(milliseconds: Double, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
   def jumpForward(milliseconds: Double, onsuccess: SuccessCallback): Unit = js.native
   def jumpForward(milliseconds: Double, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   
@@ -272,7 +271,7 @@ trait AVPlayManager extends StObject {
     * @constraint Can be called in the following states: "IDLE", "READY"
     */
   def prepareAsync(): Unit = js.native
-  def prepareAsync(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+  def prepareAsync(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
   def prepareAsync(onsuccess: SuccessCallback): Unit = js.native
   def prepareAsync(onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   
@@ -291,9 +290,9 @@ trait AVPlayManager extends StObject {
     * @constraint Can be called in the following states: "NONE", "PLAYING", "PAUSED"
     */
   def restore(URL: String): Unit = js.native
-  def restore(URL: String, resumeTime: js.UndefOr[scala.Nothing], bPrepare: Boolean): Unit = js.native
   def restore(URL: String, resumeTime: Double): Unit = js.native
   def restore(URL: String, resumeTime: Double, bPrepare: Boolean): Unit = js.native
+  def restore(URL: String, resumeTime: Unit, bPrepare: Boolean): Unit = js.native
   
   /**
     * During multitasking, restores the player state when the application is resumed. restoreAsync is an asynchronous interface.
@@ -318,66 +317,9 @@ trait AVPlayManager extends StObject {
     * @constraint Can be called in the following states: "NONE", "PLAYING", "PAUSED"
     */
   def restoreAsync(URL: String): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: js.UndefOr[scala.Nothing],
-    bPrepare: js.UndefOr[scala.Nothing],
-    onsuccess: js.UndefOr[scala.Nothing],
-    onerror: ErrorCallback
-  ): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: js.UndefOr[scala.Nothing],
-    bPrepare: js.UndefOr[scala.Nothing],
-    onsuccess: SuccessCallback
-  ): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: js.UndefOr[scala.Nothing],
-    bPrepare: js.UndefOr[scala.Nothing],
-    onsuccess: SuccessCallback,
-    onerror: ErrorCallback
-  ): Unit = js.native
-  def restoreAsync(URL: String, resumeTime: js.UndefOr[scala.Nothing], bPrepare: Boolean): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: js.UndefOr[scala.Nothing],
-    bPrepare: Boolean,
-    onsuccess: js.UndefOr[scala.Nothing],
-    onerror: ErrorCallback
-  ): Unit = js.native
-  def restoreAsync(URL: String, resumeTime: js.UndefOr[scala.Nothing], bPrepare: Boolean, onsuccess: SuccessCallback): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: js.UndefOr[scala.Nothing],
-    bPrepare: Boolean,
-    onsuccess: SuccessCallback,
-    onerror: ErrorCallback
-  ): Unit = js.native
   def restoreAsync(URL: String, resumeTime: Double): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: Double,
-    bPrepare: js.UndefOr[scala.Nothing],
-    onsuccess: js.UndefOr[scala.Nothing],
-    onerror: ErrorCallback
-  ): Unit = js.native
-  def restoreAsync(URL: String, resumeTime: Double, bPrepare: js.UndefOr[scala.Nothing], onsuccess: SuccessCallback): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: Double,
-    bPrepare: js.UndefOr[scala.Nothing],
-    onsuccess: SuccessCallback,
-    onerror: ErrorCallback
-  ): Unit = js.native
   def restoreAsync(URL: String, resumeTime: Double, bPrepare: Boolean): Unit = js.native
-  def restoreAsync(
-    URL: String,
-    resumeTime: Double,
-    bPrepare: Boolean,
-    onsuccess: js.UndefOr[scala.Nothing],
-    onerror: ErrorCallback
-  ): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Double, bPrepare: Boolean, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
   def restoreAsync(URL: String, resumeTime: Double, bPrepare: Boolean, onsuccess: SuccessCallback): Unit = js.native
   def restoreAsync(
     URL: String,
@@ -386,6 +328,28 @@ trait AVPlayManager extends StObject {
     onsuccess: SuccessCallback,
     onerror: ErrorCallback
   ): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Double, bPrepare: Unit, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Double, bPrepare: Unit, onsuccess: SuccessCallback): Unit = js.native
+  def restoreAsync(
+    URL: String,
+    resumeTime: Double,
+    bPrepare: Unit,
+    onsuccess: SuccessCallback,
+    onerror: ErrorCallback
+  ): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Unit, bPrepare: Boolean): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Unit, bPrepare: Boolean, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Unit, bPrepare: Boolean, onsuccess: SuccessCallback): Unit = js.native
+  def restoreAsync(
+    URL: String,
+    resumeTime: Unit,
+    bPrepare: Boolean,
+    onsuccess: SuccessCallback,
+    onerror: ErrorCallback
+  ): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Unit, bPrepare: Unit, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Unit, bPrepare: Unit, onsuccess: SuccessCallback): Unit = js.native
+  def restoreAsync(URL: String, resumeTime: Unit, bPrepare: Unit, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   
   /**
     * Skips playback to a specific timestamp.
@@ -400,7 +364,7 @@ trait AVPlayManager extends StObject {
     * For LIVE stream case, seek position must be within DVR range. DVR range could be retrieved using GET_LIVE_DURATION property in getStreamingProperty API.
     */
   def seekTo(milliseconds: Double): Unit = js.native
-  def seekTo(milliseconds: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+  def seekTo(milliseconds: Double, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
   def seekTo(milliseconds: Double, onsuccess: SuccessCallback): Unit = js.native
   def seekTo(milliseconds: Double, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   

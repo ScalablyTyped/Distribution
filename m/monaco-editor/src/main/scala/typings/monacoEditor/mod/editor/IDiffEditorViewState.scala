@@ -2,21 +2,21 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDiffEditorViewState extends IEditorViewState {
+trait IDiffEditorViewState
+  extends StObject
+     with IEditorViewState {
   
-  var modified: ICodeEditorViewState | Null = js.native
+  var modified: ICodeEditorViewState | Null
   
-  var original: ICodeEditorViewState | Null = js.native
+  var original: ICodeEditorViewState | Null
 }
 object IDiffEditorViewState {
   
   @scala.inline
   def apply(): IDiffEditorViewState = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(modified = null, original = null)
     __obj.asInstanceOf[IDiffEditorViewState]
   }
   

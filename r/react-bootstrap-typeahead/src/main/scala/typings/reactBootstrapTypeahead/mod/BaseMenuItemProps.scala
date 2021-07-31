@@ -4,13 +4,13 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.li
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseMenuItemProps extends HTMLProps[li] {
+trait BaseMenuItemProps
+  extends StObject
+     with HTMLProps[li] {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
 }
 object BaseMenuItemProps {
   

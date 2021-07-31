@@ -3,27 +3,25 @@ package typings.jasmineAjax
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JasmineAjaxResponse extends StObject {
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var response: js.UndefOr[String] = js.native
+  var response: js.UndefOr[String] = js.undefined
   
-  var responseHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var responseHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var responseJSON: js.UndefOr[js.Any] = js.native
+  var responseJSON: js.UndefOr[js.Any] = js.undefined
   
-  var responseText: js.UndefOr[String] = js.native
+  var responseText: js.UndefOr[String] = js.undefined
   
-  var responseURL: js.UndefOr[String] = js.native
+  var responseURL: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
 }
 object JasmineAjaxResponse {
   

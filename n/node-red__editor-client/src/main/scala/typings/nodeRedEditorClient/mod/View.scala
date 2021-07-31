@@ -3,7 +3,6 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,18 +32,18 @@ trait View extends StObject {
     *  - attached to mouse for placing - "IMPORT_DRAGGING"
     */
   def importNodes(newNodesStr: String): Unit = js.native
-  def importNodes(newNodesStr: String, addNewFlow: js.UndefOr[scala.Nothing], touchImport: Boolean): Unit = js.native
   def importNodes(newNodesStr: String, addNewFlow: Boolean): Unit = js.native
   def importNodes(newNodesStr: String, addNewFlow: Boolean, touchImport: Boolean): Unit = js.native
+  def importNodes(newNodesStr: String, addNewFlow: Unit, touchImport: Boolean): Unit = js.native
   
   def init(): Unit = js.native
   
   var navigator: ViewNavigator = js.native
   
   def redraw(): Unit = js.native
-  def redraw(updateActive: js.UndefOr[scala.Nothing], syncRedraw: Boolean): Unit = js.native
   def redraw(updateActive: Boolean): Unit = js.native
   def redraw(updateActive: Boolean, syncRedraw: Boolean): Unit = js.native
+  def redraw(updateActive: Unit, syncRedraw: Boolean): Unit = js.native
   
   def reveal(id: String): Unit = js.native
   def reveal(id: String, triggerHighlight: Boolean): Unit = js.native

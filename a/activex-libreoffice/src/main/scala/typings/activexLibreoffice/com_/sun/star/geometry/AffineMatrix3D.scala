@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,32 +27,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (including projection to 2D) and the device resolution determine the actual measurement unit in 3D.
   * @since OOo 2.0
   */
-@js.native
 trait AffineMatrix3D extends StObject {
   
-  var m00: Double = js.native
+  var m00: Double
   
-  var m01: Double = js.native
+  var m01: Double
   
-  var m02: Double = js.native
+  var m02: Double
   
-  var m03: Double = js.native
+  var m03: Double
   
-  var m10: Double = js.native
+  var m10: Double
   
-  var m11: Double = js.native
+  var m11: Double
   
-  var m12: Double = js.native
+  var m12: Double
   
-  var m13: Double = js.native
+  var m13: Double
   
-  var m20: Double = js.native
+  var m20: Double
   
-  var m21: Double = js.native
+  var m21: Double
   
-  var m22: Double = js.native
+  var m22: Double
   
-  var m23: Double = js.native
+  var m23: Double
 }
 object AffineMatrix3D {
   

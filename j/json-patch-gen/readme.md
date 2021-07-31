@@ -12,7 +12,7 @@ JavaScript library that generates JSON patches (RFC 6902)
 | Keywords           | json-patch, diff, rfc 6902, generate |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 29657 |
+| # downloads        | 40076 |
 | # stars            | 1 |
 
 ## Links

@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsState extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait JSTreeStaticDefaultsState extends StObject {
     * @name $.jstree.defaults.state.events
     * @plugin state
     */
-  var events: String = js.native
+  var events: String
   
   /**
     * A function that will be executed prior to restoring state with one argument - the state object. Can be used to clear unwanted parts of the state.
     * @name $.jstree.defaults.state.filter
     * @plugin state
     */
-  var filter: js.Any = js.native
+  var filter: js.Any
   
   /**
     * A string for the key to use when saving the current tree (change if using multiple trees in your project). Defaults to `jstree`.
     * @name $.jstree.defaults.state.key
     * @plugin state
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Should loaded nodes be restored (setting this to true means that it is possible that the whole tree will be loaded for some users - use with caution). Defaults to `false`
     * @name $.jstree.defaults.state.preserve_loaded
     * @plugin state
     */
-  var preserve_loaded: Boolean = js.native
+  var preserve_loaded: Boolean
   
   /**
     * Time in milliseconds after which the state will expire. Defaults to 'false' meaning - no expire.
     * @name $.jstree.defaults.state.ttl
     * @plugin state
     */
-  var ttl: js.Any = js.native
+  var ttl: js.Any
 }
 object JSTreeStaticDefaultsState {
   

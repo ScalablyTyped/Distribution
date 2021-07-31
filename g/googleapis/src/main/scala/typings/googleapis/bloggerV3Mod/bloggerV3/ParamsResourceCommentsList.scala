@@ -6,62 +6,62 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCommentsList extends StandardParameters {
+trait ParamsResourceCommentsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ID of the blog to fetch comments from.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * Latest date of comment to fetch, a date-time with RFC 3339 formatting.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the body content of the comments is included.
     */
-  var fetchBodies: js.UndefOr[Boolean] = js.native
+  var fetchBodies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of comments to include in the result.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Continuation token if request is paged.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the post to fetch posts from.
     */
-  var postId: js.UndefOr[String] = js.native
+  var postId: js.UndefOr[String] = js.undefined
   
   /**
     * Earliest date of comment to fetch, a date-time with RFC 3339 formatting.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var status: js.UndefOr[js.Array[String]] = js.native
+  var status: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Access level with which to view the returned result. Note that some
     * fields require elevated access.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCommentsList {
   

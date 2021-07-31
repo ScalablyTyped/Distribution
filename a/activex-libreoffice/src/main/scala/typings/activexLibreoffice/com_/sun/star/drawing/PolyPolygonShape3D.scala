@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the coordinates of a 3-dimensional poly polygon. */
-@js.native
 trait PolyPolygonShape3D extends StObject {
   
-  var SequenceX: DoubleSequenceSequence = js.native
+  var SequenceX: DoubleSequenceSequence
   
-  var SequenceY: DoubleSequenceSequence = js.native
+  var SequenceY: DoubleSequenceSequence
   
-  var SequenceZ: DoubleSequenceSequence = js.native
+  var SequenceZ: DoubleSequenceSequence
 }
 object PolyPolygonShape3D {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.ColumnResizing event.
   */
-@js.native
-trait ASPxClientTreeListColumnResizingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListColumnResizingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed client column.
     */
-  var column: ASPxClientTreeListColumn = js.native
+  var column: ASPxClientTreeListColumn
 }
 object ASPxClientTreeListColumnResizingEventArgs {
   

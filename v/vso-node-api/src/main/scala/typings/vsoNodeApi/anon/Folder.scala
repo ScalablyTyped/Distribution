@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Folder extends StObject {
   
-  var folder: scala.Double = js.native
+  var folder: scala.Double
   
-  var invalid: scala.Double = js.native
+  var invalid: scala.Double
   
-  var ref: scala.Double = js.native
+  var ref: scala.Double
 }
 object Folder {
   

@@ -4,34 +4,32 @@ import typings.gapiCalendar.anon.Method
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignevents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events_ extends StObject {
   
   // The user's access role for this calendar. Read-only. Possible values are:
-  var accessRole: AccessRole = js.native
+  var accessRole: AccessRole
   
-  var defaultReminders: js.Array[Method] = js.native
+  var defaultReminders: js.Array[Method]
   
-  var description: String = js.native
+  var description: String
   
-  var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
+  var etag: typings.gapiCalendar.gapi.client.calendar.etag
   
-  var items: js.Array[Event] = js.native
+  var items: js.Array[Event]
   
-  var kind: calendarNumbersignevents = js.native
+  var kind: calendarNumbersignevents
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var nextSyncToken: js.UndefOr[String] = js.native
+  var nextSyncToken: js.UndefOr[String] = js.undefined
   
-  var summary: String = js.native
+  var summary: String
   
-  var timeZone: String = js.native
+  var timeZone: String
   
-  var updated: datetime = js.native
+  var updated: datetime
 }
 object Events_ {
   
@@ -42,12 +40,11 @@ object Events_ {
     description: String,
     etag: etag,
     items: js.Array[Event],
-    kind: calendarNumbersignevents,
     summary: String,
     timeZone: String,
     updated: datetime
   ): Events_ = {
-    val __obj = js.Dynamic.literal(accessRole = accessRole.asInstanceOf[js.Any], defaultReminders = defaultReminders.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accessRole = accessRole.asInstanceOf[js.Any], defaultReminders = defaultReminders.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = "calendar#events", summary = summary.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Events_]
   }
   

@@ -2,43 +2,41 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInvokeAuthorizerResponse extends StObject {
   
-  var authorization: js.UndefOr[MapOfStringToList] = js.native
+  var authorization: js.UndefOr[MapOfStringToList] = js.undefined
   
   /**
     * The open identity claims, with any supported custom attributes, returned from the Cognito Your User Pool configured for the API.
     */
-  var claims: js.UndefOr[MapOfStringToString] = js.native
+  var claims: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * The HTTP status code that the client would have received. Value is 0 if the authorizer succeeded.
     */
-  var clientStatus: js.UndefOr[Integer] = js.native
+  var clientStatus: js.UndefOr[Integer] = js.undefined
   
   /**
     * The execution latency of the test authorizer request.
     */
-  var latency: js.UndefOr[Long] = js.native
+  var latency: js.UndefOr[Long] = js.undefined
   
   /**
     * The API Gateway execution log for the test authorizer request.
     */
-  var log: js.UndefOr[String] = js.native
+  var log: js.UndefOr[String] = js.undefined
   
   /**
     * The JSON policy document returned by the Authorizer
     */
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
   
   /**
     * The principal identity returned by the Authorizer
     */
-  var principalId: js.UndefOr[String] = js.native
+  var principalId: js.UndefOr[String] = js.undefined
 }
 object TestInvokeAuthorizerResponse {
   

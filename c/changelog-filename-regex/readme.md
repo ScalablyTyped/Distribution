@@ -11,8 +11,8 @@ A regular expression that matches a CHANGELOG filename
 | Full name          | changelog-filename-regex |
 | Keywords           | regex, regexp, file, filename, name, log, changelog, change-log, updates, releases, release-history, history, releasenote, match, browser, client-side |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 2334786 |
+| # dependents       | 24 |
+| # downloads        | 2985622 |
 | # stars            | 0 |
 
 ## Links

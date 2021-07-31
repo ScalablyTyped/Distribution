@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPrincipalPoliciesResponse extends StObject {
   
   /**
     * The marker for the next set of results, or null if there are no additional results.
     */
-  var nextMarker: js.UndefOr[Marker] = js.native
+  var nextMarker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The policies.
     */
-  var policies: js.UndefOr[Policies] = js.native
+  var policies: js.UndefOr[Policies] = js.undefined
 }
 object ListPrincipalPoliciesResponse {
   

@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlowNode extends FlowElement {
+trait FlowNode
+  extends StObject
+     with FlowElement {
   
-  var incoming: js.Array[SequenceFlow] = js.native
+  var incoming: js.Array[SequenceFlow]
   
-  var lanes: js.Array[Lane] = js.native
+  var lanes: js.Array[Lane]
   
-  var outgoing: js.Array[SequenceFlow] = js.native
+  var outgoing: js.Array[SequenceFlow]
 }
 object FlowNode {
   

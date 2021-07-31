@@ -1,19 +1,44 @@
 package typings.playable
 
 import typings.playable.anon.EventEmitterIEventEmitter
+import typings.playable.tooltipTypesMod.ITooltipReference
+import typings.playable.tooltipTypesMod.ITooltipReferenceOptions
 import typings.playable.tooltipTypesMod.ITooltipService
+import typings.playable.tooltipTypesMod.ITooltipShowOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipServiceMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-service", JSImport.Default)
   @js.native
-  class default protected () extends TooltipService {
+  class default protected ()
+    extends StObject
+       with TooltipService {
     def this(hasEventEmitter: EventEmitterIEventEmitter) = this()
+    
+    /* CompleteClass */
+    override def createReference(reference: HTMLElement, options: ITooltipReferenceOptions): ITooltipReference = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setText(text: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(options: ITooltipShowOptions): Unit = js.native
+    
+    /* CompleteClass */
+    var tooltipContainerElement: HTMLElement = js.native
   }
   object default {
     
@@ -37,7 +62,9 @@ object tooltipServiceMod {
   }
   
   @js.native
-  trait TooltipService extends ITooltipService {
+  trait TooltipService
+    extends StObject
+       with ITooltipService {
     
     var _bindEvents: js.Any = js.native
     

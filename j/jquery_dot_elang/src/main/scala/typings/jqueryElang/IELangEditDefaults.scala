@@ -2,23 +2,23 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IELangEditDefaults extends IELangBaseDefaults {
+trait IELangEditDefaults
+  extends StObject
+     with IELangBaseDefaults {
   
-  var addButtonHtml: String = js.native
+  var addButtonHtml: String
   
-  var addButtonLabel: String = js.native
+  var addButtonLabel: String
   
-  var editFieldHtml: String = js.native
+  var editFieldHtml: String
   
-  var editFormHtml: String = js.native
+  var editFormHtml: String
   
-  var editKeyLabel: String = js.native
+  var editKeyLabel: String
   
-  var editValueLabel: String = js.native
+  var editValueLabel: String
 }
 object IELangEditDefaults {
   

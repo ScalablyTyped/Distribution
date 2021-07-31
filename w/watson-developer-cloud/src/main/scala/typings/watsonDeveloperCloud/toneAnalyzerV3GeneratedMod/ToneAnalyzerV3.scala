@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 import typings.ibmCloudSdkCore.mod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -62,8 +61,8 @@ trait ToneAnalyzerV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def tone(params: ToneParams): js.Promise[_] | Unit = js.native
-  def tone(params: ToneParams, callback: Callback[ToneAnalysis]): js.Promise[_] | Unit = js.native
+  def tone(params: ToneParams): js.Promise[js.Any] | Unit = js.native
+  def tone(params: ToneParams, callback: Callback[ToneAnalysis]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Analyze customer engagement tone.
@@ -97,6 +96,6 @@ trait ToneAnalyzerV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def toneChat(params: ToneChatParams): js.Promise[_] | Unit = js.native
-  def toneChat(params: ToneChatParams, callback: Callback[UtteranceAnalyses]): js.Promise[_] | Unit = js.native
+  def toneChat(params: ToneChatParams): js.Promise[js.Any] | Unit = js.native
+  def toneChat(params: ToneChatParams, callback: Callback[UtteranceAnalyses]): js.Promise[js.Any] | Unit = js.native
 }

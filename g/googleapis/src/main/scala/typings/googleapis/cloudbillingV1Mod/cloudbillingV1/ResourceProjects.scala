@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbilling/v1", "cloudbilling_v1.Resource$Projects")
@@ -87,7 +86,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getBillingInfo(): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def getBillingInfo(callback: BodyResponseCallback[SchemaProjectBillingInfo]): Unit = js.native
-  def getBillingInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectBillingInfo] = js.native
+  def getBillingInfo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def getBillingInfo(params: ParamsResourceProjectsGetbillinginfo): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def getBillingInfo(
     params: ParamsResourceProjectsGetbillinginfo,
@@ -204,7 +203,7 @@ class ResourceProjects protected () extends StObject {
     */
   def updateBillingInfo(): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def updateBillingInfo(callback: BodyResponseCallback[SchemaProjectBillingInfo]): Unit = js.native
-  def updateBillingInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectBillingInfo] = js.native
+  def updateBillingInfo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def updateBillingInfo(params: ParamsResourceProjectsUpdatebillinginfo): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def updateBillingInfo(
     params: ParamsResourceProjectsUpdatebillinginfo,

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoomList extends Place {
+trait RoomList
+  extends StObject
+     with Place {
   
   // The email address of the room list.
-  var emailAddress: js.UndefOr[NullableOption[String]] = js.native
+  var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable.
-  var rooms: js.UndefOr[NullableOption[js.Array[Room]]] = js.native
+  var rooms: js.UndefOr[NullableOption[js.Array[Room]]] = js.undefined
 }
 object RoomList {
   

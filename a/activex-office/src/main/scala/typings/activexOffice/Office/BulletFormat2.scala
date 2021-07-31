@@ -2,42 +2,40 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulletFormat2 extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Character: Double = js.native
+  var Character: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Font: Font2 = js.native
+  val Font: Font2
   
-  val Number: Double = js.native
+  val Number: Double
   
   @JSName("Office.BulletFormat2_typekey")
-  var OfficeDotBulletFormat2_typekey: BulletFormat2 = js.native
+  var OfficeDotBulletFormat2_typekey: BulletFormat2
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Picture(FileName: String): Unit = js.native
+  def Picture(FileName: String): Unit
   
-  var RelativeSize: Double = js.native
+  var RelativeSize: Double
   
-  var StartValue: Double = js.native
+  var StartValue: Double
   
-  var Style: MsoNumberedBulletStyle = js.native
+  var Style: MsoNumberedBulletStyle
   
-  var Type: MsoBulletType = js.native
+  var Type: MsoBulletType
   
-  var UseTextColor: MsoTriState = js.native
+  var UseTextColor: MsoTriState
   
-  var UseTextFont: MsoTriState = js.native
+  var UseTextFont: MsoTriState
   
-  var Visible: MsoTriState = js.native
+  var Visible: MsoTriState
 }
 object BulletFormat2 {
   

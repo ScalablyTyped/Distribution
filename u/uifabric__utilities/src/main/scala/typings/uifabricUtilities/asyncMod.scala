@@ -6,7 +6,6 @@ import typings.uifabricUtilities.anon.Leading
 import typings.uifabricUtilities.anon.MaxWait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod {
@@ -15,8 +14,8 @@ object asyncMod {
   @js.native
   class Async () extends StObject {
     def this(parent: js.Object) = this()
-    def this(parent: js.UndefOr[scala.Nothing], onError: js.Function1[/* e */ js.Any, Unit]) = this()
     def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
+    def this(parent: Unit, onError: js.Function1[/* e */ js.Any, Unit]) = this()
     
     var _animationFrameIds: js.Any = js.native
     
@@ -74,10 +73,10 @@ object asyncMod {
       * @param options - The options object.
       * @returns The new debounced function.
       */
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): ICancelable[T] with T = js.native
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: js.UndefOr[scala.Nothing], options: MaxWait): ICancelable[T] with T = js.native
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double): ICancelable[T] with T = js.native
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double, options: MaxWait): ICancelable[T] with T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: MaxWait): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: MaxWait): ICancelable[T] & T = js.native
     
     /**
       * Dispose function, clears all async operations.
@@ -126,31 +125,30 @@ object asyncMod {
       * @param options - The options object.
       * @returns The new throttled function.
       */
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T = js.native
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: js.UndefOr[scala.Nothing], options: Leading): T = js.native
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double): T = js.native
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: Double, options: Leading): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: Leading): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: Leading): T = js.native
   }
   
-  @js.native
-  trait ICancelable[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends StObject {
+  trait ICancelable[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def flush(): ReturnType[T] = js.native
+    def flush(): ReturnType[T]
     
-    def pending(): Boolean = js.native
+    def pending(): Boolean
   }
   object ICancelable {
     
     @scala.inline
-    def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](cancel: () => Unit, flush: () => ReturnType[T], pending: () => Boolean): ICancelable[T] = {
+    def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](cancel: () => Unit, flush: () => ReturnType[T], pending: () => Boolean): ICancelable[T] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
       __obj.asInstanceOf[ICancelable[T]]
     }
     
     @scala.inline
-    implicit class ICancelableMutableBuilder[Self <: ICancelable[_], T /* <: js.Function1[/* repeated */ js.Any, _] */] (val x: Self with ICancelable[T]) extends AnyVal {
+    implicit class ICancelableMutableBuilder[Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & ICancelable[T]) extends AnyVal {
       
       @scala.inline
       def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))

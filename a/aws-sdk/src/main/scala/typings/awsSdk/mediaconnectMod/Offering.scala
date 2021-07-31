@@ -2,51 +2,49 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offering extends StObject {
   
   /**
     * The type of currency that is used for billing. The currencyCode used for all reservations is US dollars.
     */
-  var CurrencyCode: string = js.native
+  var CurrencyCode: string
   
   /**
     * The length of time that your reservation would be active.
     */
-  var Duration: integer = js.native
+  var Duration: integer
   
   /**
     * The unit of measurement for the duration of the offering.
     */
-  var DurationUnits: typings.awsSdk.mediaconnectMod.DurationUnits = js.native
+  var DurationUnits: typings.awsSdk.mediaconnectMod.DurationUnits
   
   /**
     * The Amazon Resource Name (ARN) that MediaConnect assigns to the offering.
     */
-  var OfferingArn: string = js.native
+  var OfferingArn: string
   
   /**
     * A description of the offering.
     */
-  var OfferingDescription: string = js.native
+  var OfferingDescription: string
   
   /**
     * The cost of a single unit. This value, in combination with priceUnits, makes up the rate.
     */
-  var PricePerUnit: string = js.native
+  var PricePerUnit: string
   
   /**
     * The unit of measurement that is used for billing. This value, in combination with pricePerUnit, makes up the rate.
     */
-  var PriceUnits: typings.awsSdk.mediaconnectMod.PriceUnits = js.native
+  var PriceUnits: typings.awsSdk.mediaconnectMod.PriceUnits
   
   /**
     * A definition of the amount of outbound bandwidth that you would be reserving if you purchase the offering.
     */
-  var ResourceSpecification: typings.awsSdk.mediaconnectMod.ResourceSpecification = js.native
+  var ResourceSpecification: typings.awsSdk.mediaconnectMod.ResourceSpecification
 }
 object Offering {
   

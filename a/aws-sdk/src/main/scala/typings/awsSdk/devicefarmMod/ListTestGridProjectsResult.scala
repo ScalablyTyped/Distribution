@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestGridProjectsResult extends StObject {
   
   /**
     * Used for pagination. Pass into ListTestGridProjects to get more results in a paginated request.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The list of TestGridProjects, based on a ListTestGridProjectsRequest.
     */
-  var testGridProjects: js.UndefOr[TestGridProjects] = js.native
+  var testGridProjects: js.UndefOr[TestGridProjects] = js.undefined
 }
 object ListTestGridProjectsResult {
   

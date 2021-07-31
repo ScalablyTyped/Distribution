@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.Fps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,6 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.SpriteAnimationClip")
 @js.native
 class SpriteAnimationClip protected ()
-  extends typings.playcanvas.pc.SpriteAnimationClip {
+  extends StObject
+     with typings.playcanvas.pc.SpriteAnimationClip {
   def this(component: typings.playcanvas.pc.SpriteComponent, data: Fps) = this()
 }

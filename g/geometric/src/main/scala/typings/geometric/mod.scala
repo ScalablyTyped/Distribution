@@ -2,159 +2,122 @@ package typings.geometric
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("geometric", "angleReflect")
+  @JSImport("geometric", JSImport.Namespace)
   @js.native
-  def angleReflect(incidenceAngle: Double, surfaceAngle: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("geometric", "angleToDegrees")
-  @js.native
-  def angleToDegrees(angle: Double): Double = js.native
+  @scala.inline
+  def angleReflect(incidenceAngle: Double, surfaceAngle: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleReflect")(incidenceAngle.asInstanceOf[js.Any], surfaceAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geometric", "angleToRadians")
-  @js.native
-  def angleToRadians(angle: Double): Double = js.native
+  @scala.inline
+  def angleToDegrees(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("angleToDegrees")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geometric", "lineAngle")
-  @js.native
-  def lineAngle(line: Line): Double = js.native
+  @scala.inline
+  def angleToRadians(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("angleToRadians")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geometric", "lineInterpolate")
-  @js.native
-  def lineInterpolate(line: Line): LineInterpolator = js.native
+  @scala.inline
+  def lineAngle(line: Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lineAngle")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geometric", "lineIntersectsLine")
-  @js.native
-  def lineIntersectsLine(lineA: Line, lineB: Line): Boolean = js.native
+  @scala.inline
+  def lineInterpolate(line: Line): LineInterpolator = ^.asInstanceOf[js.Dynamic].applyDynamic("lineInterpolate")(line.asInstanceOf[js.Any]).asInstanceOf[LineInterpolator]
   
-  @JSImport("geometric", "lineIntersectsPolygon")
-  @js.native
-  def lineIntersectsPolygon(line: Line, polygon: Polygon): Boolean = js.native
+  @scala.inline
+  def lineIntersectsLine(lineA: Line, lineB: Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lineIntersectsLine")(lineA.asInstanceOf[js.Any], lineB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "lineLength")
-  @js.native
-  def lineLength(line: Line): Double = js.native
+  @scala.inline
+  def lineIntersectsPolygon(line: Line, polygon: Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lineIntersectsPolygon")(line.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "lineMidpoint")
-  @js.native
-  def lineMidpoint(line: Line): Point = js.native
+  @scala.inline
+  def lineLength(line: Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lineLength")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geometric", "pointInPolygon")
-  @js.native
-  def pointInPolygon(point: Point, polygon: Polygon): Boolean = js.native
+  @scala.inline
+  def lineMidpoint(line: Line): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("lineMidpoint")(line.asInstanceOf[js.Any]).asInstanceOf[Point]
   
-  @JSImport("geometric", "pointLeftofLine")
-  @js.native
-  def pointLeftofLine(point: Point, line: Line): Boolean = js.native
+  @scala.inline
+  def pointInPolygon(point: Point, polygon: Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointInPolygon")(point.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "pointOnLine")
-  @js.native
-  def pointOnLine(point: Point, line: Line): Boolean = js.native
+  @scala.inline
+  def pointLeftofLine(point: Point, line: Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointLeftofLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "pointOnPolygon")
-  @js.native
-  def pointOnPolygon(point: Point, polygon: Polygon): Boolean = js.native
+  @scala.inline
+  def pointOnLine(point: Point, line: Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointOnLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "pointRightofLine")
-  @js.native
-  def pointRightofLine(point: Point, line: Line): Boolean = js.native
+  @scala.inline
+  def pointOnPolygon(point: Point, polygon: Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointOnPolygon")(point.asInstanceOf[js.Any], polygon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "pointRotate")
-  @js.native
-  def pointRotate(point: Point, angle: Double): Point = js.native
-  @JSImport("geometric", "pointRotate")
-  @js.native
-  def pointRotate(point: Point, angle: Double, origin: Point): Point = js.native
+  @scala.inline
+  def pointRightofLine(point: Point, line: Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointRightofLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "pointTranslate")
-  @js.native
-  def pointTranslate(point: Point, angle: Double, distance: Double): Point = js.native
+  @scala.inline
+  def pointRotate(point: Point, angle: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointRotate")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Point]
+  @scala.inline
+  def pointRotate(point: Point, angle: Double, origin: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointRotate")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("geometric", "pointWithLine")
-  @js.native
-  def pointWithLine(point: Point, line: Line): Boolean = js.native
+  @scala.inline
+  def pointTranslate(point: Point, angle: Double, distance: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointTranslate")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("geometric", "polygonArea")
-  @js.native
-  def polygonArea(polygon: Polygon): Double = js.native
-  @JSImport("geometric", "polygonArea")
-  @js.native
-  def polygonArea(polygon: Polygon, signed: Boolean): Double = js.native
+  @scala.inline
+  def pointWithLine(point: Point, line: Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointWithLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "polygonBounds")
-  @js.native
-  def polygonBounds(polygon: Polygon): Null | (js.Tuple2[Point, Point]) = js.native
+  @scala.inline
+  def polygonArea(polygon: Polygon): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonArea")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def polygonArea(polygon: Polygon, signed: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonArea")(polygon.asInstanceOf[js.Any], signed.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("geometric", "polygonCentroid")
-  @js.native
-  def polygonCentroid(polygon: Polygon): Point = js.native
+  @scala.inline
+  def polygonBounds(polygon: Polygon): Null | (js.Tuple2[Point, Point]) = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonBounds")(polygon.asInstanceOf[js.Any]).asInstanceOf[Null | (js.Tuple2[Point, Point])]
   
-  @JSImport("geometric", "polygonHull")
-  @js.native
-  def polygonHull(points: js.Array[Point]): Polygon = js.native
+  @scala.inline
+  def polygonCentroid(polygon: Polygon): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonCentroid")(polygon.asInstanceOf[js.Any]).asInstanceOf[Point]
   
-  @JSImport("geometric", "polygonInPolygon")
-  @js.native
-  def polygonInPolygon(polygonA: Polygon, polygonB: Polygon): Boolean = js.native
+  @scala.inline
+  def polygonHull(points: js.Array[Point]): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonHull")(points.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   
-  @JSImport("geometric", "polygonIntersectsPolygon")
-  @js.native
-  def polygonIntersectsPolygon(polygonA: Polygon, polygonB: Polygon): Boolean = js.native
+  @scala.inline
+  def polygonInPolygon(polygonA: Polygon, polygonB: Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonInPolygon")(polygonA.asInstanceOf[js.Any], polygonB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "polygonLength")
-  @js.native
-  def polygonLength(polygon: Polygon): Double = js.native
+  @scala.inline
+  def polygonIntersectsPolygon(polygonA: Polygon, polygonB: Polygon): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonIntersectsPolygon")(polygonA.asInstanceOf[js.Any], polygonB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("geometric", "polygonMean")
-  @js.native
-  def polygonMean(polygon: Polygon): Point = js.native
+  @scala.inline
+  def polygonLength(polygon: Polygon): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonLength")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: js.UndefOr[scala.Nothing], area: js.UndefOr[scala.Nothing], center: Point): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: js.UndefOr[scala.Nothing], area: Double): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: js.UndefOr[scala.Nothing], area: Double, center: Point): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: Double): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: Double, area: js.UndefOr[scala.Nothing], center: Point): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: Double, area: Double): Polygon = js.native
-  @JSImport("geometric", "polygonRegular")
-  @js.native
-  def polygonRegular(sides: Double, area: Double, center: Point): Polygon = js.native
+  @scala.inline
+  def polygonMean(polygon: Polygon): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonMean")(polygon.asInstanceOf[js.Any]).asInstanceOf[Point]
   
-  @JSImport("geometric", "polygonRotate")
-  @js.native
-  def polygonRotate(polygon: Polygon, angle: Double): Polygon = js.native
-  @JSImport("geometric", "polygonRotate")
-  @js.native
-  def polygonRotate(polygon: Polygon, angle: Double, origin: Point): Polygon = js.native
+  @scala.inline
+  def polygonRegular(): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")().asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Double): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Double, area: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any], area.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Double, area: Double, center: Point): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any], area.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Double, area: Unit, center: Point): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any], area.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Unit, area: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any], area.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Unit, area: Double, center: Point): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any], area.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRegular(sides: Unit, area: Unit, center: Point): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRegular")(sides.asInstanceOf[js.Any], area.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
-  @JSImport("geometric", "polygonScale")
-  @js.native
-  def polygonScale(polygon: Polygon, scaleFactor: Double): Polygon = js.native
-  @JSImport("geometric", "polygonScale")
-  @js.native
-  def polygonScale(polygon: Polygon, scaleFactor: Double, origin: Point): Polygon = js.native
+  @scala.inline
+  def polygonRotate(polygon: Polygon, angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRotate")(polygon.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonRotate(polygon: Polygon, angle: Double, origin: Point): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonRotate")(polygon.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
-  @JSImport("geometric", "polygonTranslate")
-  @js.native
-  def polygonTranslate(polygon: Polygon, angle: Double, distance: Double): Polygon = js.native
+  @scala.inline
+  def polygonScale(polygon: Polygon, scaleFactor: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonScale")(polygon.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  @scala.inline
+  def polygonScale(polygon: Polygon, scaleFactor: Double, origin: Point): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonScale")(polygon.asInstanceOf[js.Any], scaleFactor.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  
+  @scala.inline
+  def polygonTranslate(polygon: Polygon, angle: Double, distance: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonTranslate")(polygon.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
   type Line = js.Tuple2[Point, Point]
   

@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionCoverage extends StObject {
   
   /**
     * JavaScript function name.
     */
-  var functionName: String = js.native
+  var functionName: String
   
   /**
     * Whether coverage data for this function has block granularity.
     */
-  var isBlockCoverage: Boolean = js.native
+  var isBlockCoverage: Boolean
   
   /**
     * Source ranges inside the function with coverage data.
     */
-  var ranges: js.Array[CoverageRange] = js.native
+  var ranges: js.Array[CoverageRange]
 }
 object FunctionCoverage {
   

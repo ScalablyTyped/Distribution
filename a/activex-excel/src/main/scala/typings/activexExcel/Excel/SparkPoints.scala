@@ -2,32 +2,30 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparkPoints extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.SparkPoints_typekey")
-  var ExcelDotSparkPoints_typekey: SparkPoints = js.native
+  var ExcelDotSparkPoints_typekey: SparkPoints
   
-  val Firstpoint: SparkColor = js.native
+  val Firstpoint: SparkColor
   
-  val Highpoint: SparkColor = js.native
+  val Highpoint: SparkColor
   
-  val Lastpoint: SparkColor = js.native
+  val Lastpoint: SparkColor
   
-  val Lowpoint: SparkColor = js.native
+  val Lowpoint: SparkColor
   
-  val Markers: SparkColor = js.native
+  val Markers: SparkColor
   
-  val Negative: SparkColor = js.native
+  val Negative: SparkColor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object SparkPoints {
   

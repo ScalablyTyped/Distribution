@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHumanTaskUiResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the human review workflow user interface you create.
     */
-  var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn = js.native
+  var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn
 }
 object CreateHumanTaskUiResponse {
   

@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultsPerPage extends StObject {
   
   /**
     * The number of results included in the API response.
     */
-  var resultsPerPage: Double = js.native
+  var resultsPerPage: Double
   
   /**
     * The total number of results in the result set.
     */
-  var totalResults: Double = js.native
+  var totalResults: Double
 }
 object ResultsPerPage {
   

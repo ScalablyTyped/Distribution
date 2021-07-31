@@ -5,10 +5,13 @@ import typings.node.streamMod.Duplex
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("png-async", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait EDeflateStrategy extends StObject
@@ -17,27 +20,37 @@ object mod {
   object EDeflateStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EDeflateStrategy with Double] = js.native
+    def apply(value: Double): js.UndefOr[EDeflateStrategy & Double] = js.native
     
     @js.native
-    sealed trait DEFAULT_STRATEGY extends EDeflateStrategy
-    /* 0 */ val DEFAULT_STRATEGY: typings.pngAsync.mod.EDeflateStrategy.DEFAULT_STRATEGY with Double = js.native
+    sealed trait DEFAULT_STRATEGY
+      extends StObject
+         with EDeflateStrategy
+    /* 0 */ val DEFAULT_STRATEGY: typings.pngAsync.mod.EDeflateStrategy.DEFAULT_STRATEGY & Double = js.native
     
     @js.native
-    sealed trait FILTERED extends EDeflateStrategy
-    /* 1 */ val FILTERED: typings.pngAsync.mod.EDeflateStrategy.FILTERED with Double = js.native
+    sealed trait FILTERED
+      extends StObject
+         with EDeflateStrategy
+    /* 1 */ val FILTERED: typings.pngAsync.mod.EDeflateStrategy.FILTERED & Double = js.native
     
     @js.native
-    sealed trait FIXED extends EDeflateStrategy
-    /* 4 */ val FIXED: typings.pngAsync.mod.EDeflateStrategy.FIXED with Double = js.native
+    sealed trait FIXED
+      extends StObject
+         with EDeflateStrategy
+    /* 4 */ val FIXED: typings.pngAsync.mod.EDeflateStrategy.FIXED & Double = js.native
     
     @js.native
-    sealed trait HUFFMAN_ONLY extends EDeflateStrategy
-    /* 2 */ val HUFFMAN_ONLY: typings.pngAsync.mod.EDeflateStrategy.HUFFMAN_ONLY with Double = js.native
+    sealed trait HUFFMAN_ONLY
+      extends StObject
+         with EDeflateStrategy
+    /* 2 */ val HUFFMAN_ONLY: typings.pngAsync.mod.EDeflateStrategy.HUFFMAN_ONLY & Double = js.native
     
     @js.native
-    sealed trait RLE extends EDeflateStrategy
-    /* 3 */ val RLE: typings.pngAsync.mod.EDeflateStrategy.RLE with Double = js.native
+    sealed trait RLE
+      extends StObject
+         with EDeflateStrategy
+    /* 3 */ val RLE: typings.pngAsync.mod.EDeflateStrategy.RLE & Double = js.native
   }
   
   @js.native
@@ -47,31 +60,43 @@ object mod {
   object EFilterType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EFilterType with Double] = js.native
+    def apply(value: Double): js.UndefOr[EFilterType & Double] = js.native
     
     @js.native
-    sealed trait Auto extends EFilterType
-    /* -1 */ val Auto: typings.pngAsync.mod.EFilterType.Auto with Double = js.native
+    sealed trait Auto
+      extends StObject
+         with EFilterType
+    /* -1 */ val Auto: typings.pngAsync.mod.EFilterType.Auto & Double = js.native
     
     @js.native
-    sealed trait Average extends EFilterType
-    /* 3 */ val Average: typings.pngAsync.mod.EFilterType.Average with Double = js.native
+    sealed trait Average
+      extends StObject
+         with EFilterType
+    /* 3 */ val Average: typings.pngAsync.mod.EFilterType.Average & Double = js.native
     
     @js.native
-    sealed trait None extends EFilterType
-    /* 0 */ val None: typings.pngAsync.mod.EFilterType.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with EFilterType
+    /* 0 */ val None: typings.pngAsync.mod.EFilterType.None & Double = js.native
     
     @js.native
-    sealed trait Paeth extends EFilterType
-    /* 4 */ val Paeth: typings.pngAsync.mod.EFilterType.Paeth with Double = js.native
+    sealed trait Paeth
+      extends StObject
+         with EFilterType
+    /* 4 */ val Paeth: typings.pngAsync.mod.EFilterType.Paeth & Double = js.native
     
     @js.native
-    sealed trait Sub extends EFilterType
-    /* 1 */ val Sub: typings.pngAsync.mod.EFilterType.Sub with Double = js.native
+    sealed trait Sub
+      extends StObject
+         with EFilterType
+    /* 1 */ val Sub: typings.pngAsync.mod.EFilterType.Sub & Double = js.native
     
     @js.native
-    sealed trait Up extends EFilterType
-    /* 2 */ val Up: typings.pngAsync.mod.EFilterType.Up with Double = js.native
+    sealed trait Up
+      extends StObject
+         with EFilterType
+    /* 2 */ val Up: typings.pngAsync.mod.EFilterType.Up & Double = js.native
   }
   
   @JSImport("png-async", "Image")
@@ -109,31 +134,28 @@ object mod {
     var width: Double = js.native
   }
   
-  @JSImport("png-async", "createImage")
-  @js.native
-  def createImage(): Image = js.native
-  @JSImport("png-async", "createImage")
-  @js.native
-  def createImage(option: IImageOptions): Image = js.native
+  @scala.inline
+  def createImage(): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createImage")().asInstanceOf[Image]
+  @scala.inline
+  def createImage(option: IImageOptions): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createImage")(option.asInstanceOf[js.Any]).asInstanceOf[Image]
   
-  @js.native
   trait IImageOptions extends StObject {
     
-    var checkCRC: js.UndefOr[Boolean] = js.native
+    var checkCRC: js.UndefOr[Boolean] = js.undefined
     
-    var deflateChunkSize: js.UndefOr[Double] = js.native
+    var deflateChunkSize: js.UndefOr[Double] = js.undefined
     
-    var deflateLevel: js.UndefOr[Double] = js.native
+    var deflateLevel: js.UndefOr[Double] = js.undefined
     
-    var deflateStrategy: js.UndefOr[EDeflateStrategy] = js.native
+    var deflateStrategy: js.UndefOr[EDeflateStrategy] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var filterType: js.UndefOr[EFilterType] = js.native
+    var filterType: js.UndefOr[EFilterType] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IImageOptions {
     

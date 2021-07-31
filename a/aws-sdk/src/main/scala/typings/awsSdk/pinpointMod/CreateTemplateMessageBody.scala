@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTemplateMessageBody extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the message template that was created.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The message that's returned from the API for the request to create the message template.
     */
-  var Message: js.UndefOr[string] = js.native
+  var Message: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the request to create the message template.
     */
-  var RequestID: js.UndefOr[string] = js.native
+  var RequestID: js.UndefOr[string] = js.undefined
 }
 object CreateTemplateMessageBody {
   

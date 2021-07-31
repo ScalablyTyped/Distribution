@@ -3,79 +3,79 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object action {
   
-  @js.native
-  trait IAction extends IBase {
+  trait IAction
+    extends StObject
+       with IBase {
     
     /** [Property] (String) */
-    var CLIENT_INVALID: js.UndefOr[String] = js.native
+    var CLIENT_INVALID: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var CONNECT_FAILURE: js.UndefOr[String] = js.native
+    var CONNECT_FAILURE: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var LOAD_FAILURE: js.UndefOr[String] = js.native
+    var LOAD_FAILURE: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var SERVER_INVALID: js.UndefOr[String] = js.native
+    var SERVER_INVALID: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Function) */
-    var failure: js.UndefOr[js.Any] = js.native
+    var failure: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (String) */
-    var failureType: js.UndefOr[String] = js.native
+    var failureType: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Ext.form.Basic) */
-    var form: js.UndefOr[IBasic] = js.native
+    var form: js.UndefOr[IBasic] = js.undefined
     
     /** [Config Option] (Object) */
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object/String) */
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var reset: js.UndefOr[Boolean] = js.native
+    var reset: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Object) */
-    var response: js.UndefOr[js.Any] = js.native
+    var response: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Invokes this action using the current configuration  */
-    var run: js.UndefOr[js.Function0[Unit]] = js.native
+    var run: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var submitEmptyText: js.UndefOr[Boolean] = js.native
+    var submitEmptyText: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var success: js.UndefOr[js.Any] = js.native
+    var success: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** [Property] (String) */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var waitMsg: js.UndefOr[String] = js.native
+    var waitMsg: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var waitTitle: js.UndefOr[String] = js.native
+    var waitTitle: js.UndefOr[String] = js.undefined
   }
   object IAction {
     
@@ -222,8 +222,9 @@ object action {
     }
   }
   
-  @js.native
-  trait IDirectLoad extends ILoad
+  trait IDirectLoad
+    extends StObject
+       with ILoad
   object IDirectLoad {
     
     @scala.inline
@@ -233,8 +234,9 @@ object action {
     }
   }
   
-  @js.native
-  trait IDirectSubmit extends ISubmit
+  trait IDirectSubmit
+    extends StObject
+       with ISubmit
   object IDirectSubmit {
     
     @scala.inline
@@ -244,9 +246,9 @@ object action {
     }
   }
   
-  @js.native
   trait ILoad
-    extends typings.extjs.Ext.form.action.IAction
+    extends StObject
+       with typings.extjs.Ext.form.action.IAction
   object ILoad {
     
     @scala.inline
@@ -256,11 +258,12 @@ object action {
     }
   }
   
-  @js.native
-  trait IStandardSubmit extends ISubmit {
+  trait IStandardSubmit
+    extends StObject
+       with ISubmit {
     
     /** [Config Option] (String) */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object IStandardSubmit {
     
@@ -281,12 +284,12 @@ object action {
     }
   }
   
-  @js.native
   trait ISubmit
-    extends typings.extjs.Ext.form.action.IAction {
+    extends StObject
+       with typings.extjs.Ext.form.action.IAction {
     
     /** [Config Option] (Boolean) */
-    var clientValidation: js.UndefOr[Boolean] = js.native
+    var clientValidation: js.UndefOr[Boolean] = js.undefined
   }
   object ISubmit {
     

@@ -16,7 +16,6 @@ import typings.yandexMetrikaTag.yandexMetrikaTagStrings.setUserID
 import typings.yandexMetrikaTag.yandexMetrikaTagStrings.userParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ym {
@@ -29,32 +28,7 @@ object ym {
     def apply(counterId: Double, eventName: getClientID, cb: js.Function1[/* clientID */ String, Unit]): Unit = js.native
     /** @deprecated */
     def apply(counterId: Double, eventName: hit, url: String): Unit = js.native
-    def apply(
-      counterId: Double,
-      eventName: hit,
-      url: String,
-      title: js.UndefOr[scala.Nothing],
-      referer: js.UndefOr[scala.Nothing],
-      params: VisitParameters
-    ): Unit = js.native
-    def apply(counterId: Double, eventName: hit, url: String, title: js.UndefOr[scala.Nothing], referer: String): Unit = js.native
-    def apply(
-      counterId: Double,
-      eventName: hit,
-      url: String,
-      title: js.UndefOr[scala.Nothing],
-      referer: String,
-      params: VisitParameters
-    ): Unit = js.native
     def apply(counterId: Double, eventName: hit, url: String, title: String): Unit = js.native
-    def apply(
-      counterId: Double,
-      eventName: hit,
-      url: String,
-      title: String,
-      referer: js.UndefOr[scala.Nothing],
-      params: VisitParameters
-    ): Unit = js.native
     def apply(counterId: Double, eventName: hit, url: String, title: String, referer: String): Unit = js.native
     def apply(
       counterId: Double,
@@ -62,6 +36,31 @@ object ym {
       url: String,
       title: String,
       referer: String,
+      params: VisitParameters
+    ): Unit = js.native
+    def apply(
+      counterId: Double,
+      eventName: hit,
+      url: String,
+      title: String,
+      referer: Unit,
+      params: VisitParameters
+    ): Unit = js.native
+    def apply(counterId: Double, eventName: hit, url: String, title: Unit, referer: String): Unit = js.native
+    def apply(
+      counterId: Double,
+      eventName: hit,
+      url: String,
+      title: Unit,
+      referer: String,
+      params: VisitParameters
+    ): Unit = js.native
+    def apply(
+      counterId: Double,
+      eventName: hit,
+      url: String,
+      title: Unit,
+      referer: Unit,
       params: VisitParameters
     ): Unit = js.native
     def apply(counterId: Double, eventName: init, parameters: InitParameters): Unit = js.native
@@ -85,39 +84,24 @@ object ym {
       counterId: Double,
       eventName: reachGoal,
       target: String,
-      params: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      ctx: CTX
-    ): Unit = js.native
-    def apply[CTX](
-      counterId: Double,
-      eventName: reachGoal,
-      target: String,
-      params: js.UndefOr[scala.Nothing],
+      params: Unit,
       callback: js.ThisFunction0[/* this */ CTX, Unit]
     ): Unit = js.native
     def apply[CTX](
       counterId: Double,
       eventName: reachGoal,
       target: String,
-      params: js.UndefOr[scala.Nothing],
+      params: Unit,
       callback: js.ThisFunction0[/* this */ CTX, Unit],
       ctx: CTX
     ): Unit = js.native
+    def apply[CTX](counterId: Double, eventName: reachGoal, target: String, params: Unit, callback: Unit, ctx: CTX): Unit = js.native
     def apply[CTX](counterId: Double, eventName: reachGoal, target: String, params: VisitParameters): Unit = js.native
     def apply[CTX](
       counterId: Double,
       eventName: reachGoal,
       target: String,
       params: VisitParameters,
-      callback: js.UndefOr[scala.Nothing],
-      ctx: CTX
-    ): Unit = js.native
-    def apply[CTX](
-      counterId: Double,
-      eventName: reachGoal,
-      target: String,
-      params: VisitParameters,
       callback: js.ThisFunction0[/* this */ CTX, Unit]
     ): Unit = js.native
     def apply[CTX](
@@ -128,18 +112,25 @@ object ym {
       callback: js.ThisFunction0[/* this */ CTX, Unit],
       ctx: CTX
     ): Unit = js.native
+    def apply[CTX](
+      counterId: Double,
+      eventName: reachGoal,
+      target: String,
+      params: VisitParameters,
+      callback: Unit,
+      ctx: CTX
+    ): Unit = js.native
   }
   
-  @js.native
   trait ExtLinkOptions[CTX] extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.undefined
     
-    var ctx: js.UndefOr[CTX] = js.native
+    var ctx: js.UndefOr[CTX] = js.undefined
     
-    var params: js.UndefOr[VisitParameters] = js.native
+    var params: js.UndefOr[VisitParameters] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ExtLinkOptions {
     
@@ -150,7 +141,7 @@ object ym {
     }
     
     @scala.inline
-    implicit class ExtLinkOptionsMutableBuilder[Self <: ExtLinkOptions[_], CTX] (val x: Self with ExtLinkOptions[CTX]) extends AnyVal {
+    implicit class ExtLinkOptionsMutableBuilder[Self <: ExtLinkOptions[?], CTX] (val x: Self & ExtLinkOptions[CTX]) extends AnyVal {
       
       @scala.inline
       def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
@@ -178,18 +169,17 @@ object ym {
     }
   }
   
-  @js.native
   trait FileOptions[CTX] extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.undefined
     
-    var ctx: js.UndefOr[CTX] = js.native
+    var ctx: js.UndefOr[CTX] = js.undefined
     
-    var params: js.UndefOr[VisitParameters] = js.native
+    var params: js.UndefOr[VisitParameters] = js.undefined
     
-    var referer: js.UndefOr[String] = js.native
+    var referer: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object FileOptions {
     
@@ -200,7 +190,7 @@ object ym {
     }
     
     @scala.inline
-    implicit class FileOptionsMutableBuilder[Self <: FileOptions[_], CTX] (val x: Self with FileOptions[CTX]) extends AnyVal {
+    implicit class FileOptionsMutableBuilder[Self <: FileOptions[?], CTX] (val x: Self & FileOptions[CTX]) extends AnyVal {
       
       @scala.inline
       def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
@@ -234,18 +224,17 @@ object ym {
     }
   }
   
-  @js.native
   trait HitOptions[CTX] extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.undefined
     
-    var ctx: js.UndefOr[CTX] = js.native
+    var ctx: js.UndefOr[CTX] = js.undefined
     
-    var params: js.UndefOr[VisitParameters] = js.native
+    var params: js.UndefOr[VisitParameters] = js.undefined
     
-    var referer: js.UndefOr[String] = js.native
+    var referer: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object HitOptions {
     
@@ -256,7 +245,7 @@ object ym {
     }
     
     @scala.inline
-    implicit class HitOptionsMutableBuilder[Self <: HitOptions[_], CTX] (val x: Self with HitOptions[CTX]) extends AnyVal {
+    implicit class HitOptionsMutableBuilder[Self <: HitOptions[?], CTX] (val x: Self & HitOptions[CTX]) extends AnyVal {
       
       @scala.inline
       def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
@@ -290,36 +279,35 @@ object ym {
     }
   }
   
-  @js.native
   trait InitParameters extends StObject {
     
-    var accurateTrackBounce: js.UndefOr[Boolean | Double] = js.native
+    var accurateTrackBounce: js.UndefOr[Boolean | Double] = js.undefined
     
-    var childIframe: js.UndefOr[Boolean] = js.native
+    var childIframe: js.UndefOr[Boolean] = js.undefined
     
-    var clickmap: js.UndefOr[Boolean] = js.native
+    var clickmap: js.UndefOr[Boolean] = js.undefined
     
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
-    var ecommerce: js.UndefOr[Boolean | String | js.Array[_]] = js.native
+    var ecommerce: js.UndefOr[Boolean | String | js.Array[js.Any]] = js.undefined
     
-    var params: js.UndefOr[VisitParameters | js.Array[VisitParameters]] = js.native
+    var params: js.UndefOr[VisitParameters | js.Array[VisitParameters]] = js.undefined
     
-    var trackHash: js.UndefOr[Boolean] = js.native
+    var trackHash: js.UndefOr[Boolean] = js.undefined
     
-    var trackLinks: js.UndefOr[Boolean] = js.native
+    var trackLinks: js.UndefOr[Boolean] = js.undefined
     
-    var triggerEvent: js.UndefOr[Boolean] = js.native
+    var triggerEvent: js.UndefOr[Boolean] = js.undefined
     
-    var trustedDomains: js.UndefOr[js.Array[String]] = js.native
+    var trustedDomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `type`: js.UndefOr[Double] = js.native
+    var `type`: js.UndefOr[Double] = js.undefined
     
-    var userParams: js.UndefOr[UserParameters] = js.native
+    var userParams: js.UndefOr[UserParameters] = js.undefined
     
-    var ut: js.UndefOr[noindex] = js.native
+    var ut: js.UndefOr[noindex] = js.undefined
     
-    var webvisor: js.UndefOr[Boolean] = js.native
+    var webvisor: js.UndefOr[Boolean] = js.undefined
   }
   object InitParameters {
     
@@ -357,7 +345,7 @@ object ym {
       def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
       @scala.inline
-      def setEcommerce(value: Boolean | String | js.Array[_]): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
+      def setEcommerce(value: Boolean | String | js.Array[js.Any]): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
@@ -427,12 +415,11 @@ object ym {
     }
   }
   
-  @js.native
   trait NotBounceOptions[CTX] extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction0[/* this */ CTX, Unit]] = js.undefined
     
-    var ctx: js.UndefOr[CTX] = js.native
+    var ctx: js.UndefOr[CTX] = js.undefined
   }
   object NotBounceOptions {
     
@@ -443,7 +430,7 @@ object ym {
     }
     
     @scala.inline
-    implicit class NotBounceOptionsMutableBuilder[Self <: NotBounceOptions[_], CTX] (val x: Self with NotBounceOptions[CTX]) extends AnyVal {
+    implicit class NotBounceOptionsMutableBuilder[Self <: NotBounceOptions[?], CTX] (val x: Self & NotBounceOptions[CTX]) extends AnyVal {
       
       @scala.inline
       def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
@@ -459,11 +446,11 @@ object ym {
     }
   }
   
-  @js.native
   trait UserParameters
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var UserID: js.UndefOr[Double] = js.native
+    var UserID: js.UndefOr[Double] = js.undefined
   }
   object UserParameters {
     
@@ -484,13 +471,13 @@ object ym {
     }
   }
   
-  @js.native
   trait VisitParameters
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var order_price: js.UndefOr[Double] = js.native
+    var order_price: js.UndefOr[Double] = js.undefined
   }
   object VisitParameters {
     

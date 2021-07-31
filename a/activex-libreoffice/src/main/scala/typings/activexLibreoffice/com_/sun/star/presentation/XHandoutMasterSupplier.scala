@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** returns the handout master page for this document */
-@js.native
-trait XHandoutMasterSupplier extends XInterface {
+trait XHandoutMasterSupplier
+  extends StObject
+     with XInterface {
   
   /** returns the {@link DrawPage} . */
-  val HandoutMasterPage: XDrawPage = js.native
+  val HandoutMasterPage: XDrawPage
   
   /** returns the {@link DrawPage} . */
-  def getHandoutMasterPage(): XDrawPage = js.native
+  def getHandoutMasterPage(): XDrawPage
 }
 object XHandoutMasterSupplier {
   

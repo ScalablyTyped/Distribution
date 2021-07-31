@@ -3,12 +3,14 @@ package typings.ethereumCryptography
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sha256Mod {
   
-  @JSImport("ethereum-cryptography/pure/sha256", "sha256")
+  @JSImport("ethereum-cryptography/pure/sha256", JSImport.Namespace)
   @js.native
-  def sha256(msg: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sha256(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

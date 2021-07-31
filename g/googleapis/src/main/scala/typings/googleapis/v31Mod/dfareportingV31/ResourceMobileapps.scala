@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Mobileapps")
@@ -31,7 +30,7 @@ class ResourceMobileapps protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMobileApp] = js.native
   def get(callback: BodyResponseCallback[SchemaMobileApp]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileApp] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMobileApp] = js.native
   def get(params: ParamsResourceMobileappsGet): GaxiosPromise[SchemaMobileApp] = js.native
   def get(params: ParamsResourceMobileappsGet, callback: BodyResponseCallback[SchemaMobileApp]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourceMobileapps protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMobileAppsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(params: ParamsResourceMobileappsList): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(params: ParamsResourceMobileappsList, callback: BodyResponseCallback[SchemaMobileAppsListResponse]): Unit = js.native
   def list(

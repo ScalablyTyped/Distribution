@@ -2,13 +2,11 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceIPAddress extends StObject {
   
-  var sourceIPAddress: String = js.native
+  var sourceIPAddress: String
 }
 object SourceIPAddress {
   

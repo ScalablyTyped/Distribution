@@ -3,7 +3,6 @@ package typings.vueComponentCompilerUtils
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleProcessorsMod {
@@ -15,14 +14,13 @@ object styleProcessorsMod {
     def render(source: String, map: Null, options: js.Any): StylePreprocessorResults = js.native
   }
   
-  @js.native
   trait StylePreprocessorResults extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
-    var map: js.UndefOr[js.Any] = js.native
+    var map: js.UndefOr[js.Any] = js.undefined
   }
   object StylePreprocessorResults {
     

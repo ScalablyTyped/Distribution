@@ -2,22 +2,20 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempVar extends StObject {
   
   @JSName("Access.TempVar_typekey")
-  var AccessDotTempVar_typekey: TempVar = js.native
+  var AccessDotTempVar_typekey: TempVar
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  var Value: Double | String | Boolean = js.native
+  var Value: Double | String | Boolean
   
-  var _Value: Double | String | Boolean = js.native
+  var _Value: Double | String | Boolean
 }
 object TempVar {
   

@@ -2,25 +2,23 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: String = js.native
+  var disabled: String
   
-  var item: String = js.native
+  var item: String
   
-  var itemText: String = js.native
+  var itemText: String
   
-  var maxText: String = js.native
+  var maxText: String
   
-  var minText: String = js.native
+  var minText: String
   
-  var root: String = js.native
+  var root: String
   
-  var selected: String = js.native
+  var selected: String
 }
 object Disabled {
   

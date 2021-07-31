@@ -3,17 +3,15 @@ package typings.plugapi.mod
 import typings.plugapi.mod.User.DJ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastPlay extends StObject {
   
-  var dj: DJ = js.native
+  var dj: DJ
   
-  var media: Media = js.native
+  var media: Media
   
-  var score: Score = js.native
+  var score: Score
 }
 object LastPlay {
   

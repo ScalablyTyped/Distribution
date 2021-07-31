@@ -3,22 +3,23 @@ package typings.ow
 import typings.ow.predicatesMod.Predicates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modifiersMod {
   
-  @JSImport("ow/dist/source/modifiers", JSImport.Default)
+  @JSImport("ow/dist/source/modifiers", JSImport.Namespace)
   @js.native
-  def default[T](`object`: T): T with Modifiers = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](`object`: T): T & Modifiers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Modifiers]
+  
   trait Modifiers extends StObject {
     
     /**
       Make the following predicate optional so it doesn't fail when the value is `undefined`.
       */
-    val optional: Predicates = js.native
+    val optional: Predicates
   }
   object Modifiers {
     

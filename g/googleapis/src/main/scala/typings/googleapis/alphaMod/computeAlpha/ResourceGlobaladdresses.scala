@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Globaladdresses")
@@ -32,7 +31,7 @@ class ResourceGlobaladdresses protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGlobaladdressesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGlobaladdressesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceGlobaladdresses protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAddress] = js.native
   def get(callback: BodyResponseCallback[SchemaAddress]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddress] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddress] = js.native
   def get(params: ParamsResourceGlobaladdressesGet): GaxiosPromise[SchemaAddress] = js.native
   def get(params: ParamsResourceGlobaladdressesGet, callback: BodyResponseCallback[SchemaAddress]): Unit = js.native
   def get(
@@ -95,7 +94,7 @@ class ResourceGlobaladdresses protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceGlobaladdressesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceGlobaladdressesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -128,7 +127,7 @@ class ResourceGlobaladdresses protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAddressList] = js.native
   def list(callback: BodyResponseCallback[SchemaAddressList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddressList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddressList] = js.native
   def list(params: ParamsResourceGlobaladdressesList): GaxiosPromise[SchemaAddressList] = js.native
   def list(params: ParamsResourceGlobaladdressesList, callback: BodyResponseCallback[SchemaAddressList]): Unit = js.native
   def list(
@@ -160,7 +159,7 @@ class ResourceGlobaladdresses protected () extends StObject {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceGlobaladdressesSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceGlobaladdressesSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -191,7 +190,7 @@ class ResourceGlobaladdresses protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceGlobaladdressesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceGlobaladdressesTestiampermissions,

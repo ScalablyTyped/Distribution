@@ -2,10 +2,8 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
@@ -34,109 +32,109 @@ trait Options extends StObject {
     }
     ```
     */
-  var animations: js.UndefOr[AnimationOptions] = js.native
+  var animations: js.UndefOr[AnimationOptions] = js.undefined
   
   /**
     * Background image for the screen
     * #### (iOS specific)
     */
-  var backgroundImage: js.UndefOr[ImageResource] = js.native
+  var backgroundImage: js.UndefOr[ImageResource] = js.undefined
   
   /**
     * Enable or disable automatically blurring focused input, dismissing keyboard on unmount
     * #### (Android specific)
     * @default false
     */
-  var blurOnUnmount: js.UndefOr[Boolean] = js.native
+  var blurOnUnmount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configure the bottom tab associated to the screen
     */
-  var bottomTab: js.UndefOr[OptionsBottomTab] = js.native
+  var bottomTab: js.UndefOr[OptionsBottomTab] = js.undefined
   
   /**
     * Configure the bottom tabs
     */
-  var bottomTabs: js.UndefOr[OptionsBottomTabs] = js.native
+  var bottomTabs: js.UndefOr[OptionsBottomTabs] = js.undefined
   
-  var fab: js.UndefOr[OptionsFab] = js.native
+  var fab: js.UndefOr[OptionsFab] = js.undefined
   
   /**
     * Configure the layout
     */
-  var layout: js.UndefOr[OptionsLayout] = js.native
+  var layout: js.UndefOr[OptionsLayout] = js.undefined
   
   /**
     * Configure the modal
     */
-  var modal: js.UndefOr[ModalOptions] = js.native
+  var modal: js.UndefOr[ModalOptions] = js.undefined
   
   /**
     * Configure the presentation style of the modal
     */
-  var modalPresentationStyle: js.UndefOr[OptionsModalPresentationStyle] = js.native
+  var modalPresentationStyle: js.UndefOr[OptionsModalPresentationStyle] = js.undefined
   
   /**
     * Configure the transition style of the modal
     *
     * #### (Android specific)
     */
-  var modalTransitionStyle: js.UndefOr[OptionsModalTransitionStyle] = js.native
+  var modalTransitionStyle: js.UndefOr[OptionsModalTransitionStyle] = js.undefined
   
   /**
     * Configure Android's NavigationBar
     */
-  var navigationBar: js.UndefOr[NavigationBarOptions] = js.native
+  var navigationBar: js.UndefOr[NavigationBarOptions] = js.undefined
   
   /**
     * Configure the overlay
     */
-  var overlay: js.UndefOr[OverlayOptions] = js.native
+  var overlay: js.UndefOr[OverlayOptions] = js.undefined
   
   /**
     * Enable or disable swipe back to pop gesture
     * #### (iOS specific)
     * @default true
     */
-  var popGesture: js.UndefOr[Boolean] = js.native
+  var popGesture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Preview configuration for Peek and Pop
     * #### (iOS specific)
     */
-  var preview: js.UndefOr[OptionsPreview] = js.native
+  var preview: js.UndefOr[OptionsPreview] = js.undefined
   
   /**
     * Background image for the Navigation View
     * #### (iOS specific)
     */
-  var rootBackgroundImage: js.UndefOr[ImageResource] = js.native
+  var rootBackgroundImage: js.UndefOr[ImageResource] = js.undefined
   
   /**
     * Configure the side menu
     */
-  var sideMenu: js.UndefOr[OptionsSideMenu] = js.native
+  var sideMenu: js.UndefOr[OptionsSideMenu] = js.undefined
   
   /**
     * Configure the splitView controller
     */
-  var splitView: js.UndefOr[OptionsSplitView] = js.native
+  var splitView: js.UndefOr[OptionsSplitView] = js.undefined
   
   /**
     * Configure the status bar
     */
-  var statusBar: js.UndefOr[OptionsStatusBar] = js.native
+  var statusBar: js.UndefOr[OptionsStatusBar] = js.undefined
   
   /**
     * Configure the top bar
     */
-  var topBar: js.UndefOr[OptionsTopBar] = js.native
+  var topBar: js.UndefOr[OptionsTopBar] = js.undefined
   
   /**
     * Provides a way to configure the overall presentation of your application's main user interface
     * #### (iOS specific)
     */
-  var window: js.UndefOr[WindowOptions] = js.native
+  var window: js.UndefOr[WindowOptions] = js.undefined
 }
 object Options {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /**
     * The account identifier of the AWS account.
     */
-  var AccountId: typings.awsSdk.detectiveMod.AccountId = js.native
+  var AccountId: typings.awsSdk.detectiveMod.AccountId
   
   /**
     * The AWS account root user email address for the AWS account.
     */
-  var EmailAddress: typings.awsSdk.detectiveMod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.detectiveMod.EmailAddress
 }
 object Account {
   

@@ -2,15 +2,13 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockstrapModalDefaultsFooterData extends StObject {
   
-  var closeLabel: String = js.native
+  var closeLabel: String
   
-  var primaryLabel: String = js.native
+  var primaryLabel: String
 }
 object KnockstrapModalDefaultsFooterData {
   

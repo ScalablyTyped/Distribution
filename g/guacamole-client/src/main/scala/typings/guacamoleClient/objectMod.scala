@@ -6,7 +6,6 @@ import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectMod {

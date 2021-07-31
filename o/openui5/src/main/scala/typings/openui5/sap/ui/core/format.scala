@@ -4,16 +4,17 @@ import typings.openui5.sap.ui.base.Object
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object format {
   
   @js.native
-  trait NumberFormat extends Object {
+  trait NumberFormat
+    extends StObject
+       with Object {
     
-    def format(oValue: js.Array[_]): String = js.native
-    def format(oValue: js.Array[_], sMeasure: String): String = js.native
+    def format(oValue: js.Array[js.Any]): String = js.native
+    def format(oValue: js.Array[js.Any], sMeasure: String): String = js.native
     /**
       * Format a number according to the given format options.
       * @param oValue the number to format or an array which contains the number to format and the sMeasure
@@ -78,7 +79,7 @@ object format {
       * @returns the parsed value or an array which contains the parsed value and the currency code (symbol)
       * when the NumberFormat is a currency instance
       */
-    def parse(sValue: String): Double | js.Array[_] = js.native
+    def parse(sValue: String): Double | js.Array[js.Any] = js.native
   }
   object NumberFormat {
     
@@ -94,28 +95,44 @@ object format {
     object RoundingMode extends StObject {
       
       @js.native
-      sealed trait AWAY_FROM_ZERO extends RoundingMode
+      sealed trait AWAY_FROM_ZERO
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait CEILING extends RoundingMode
+      sealed trait CEILING
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait FLOOR extends RoundingMode
+      sealed trait FLOOR
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait HALF_AWAY_FROM_ZERO extends RoundingMode
+      sealed trait HALF_AWAY_FROM_ZERO
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait HALF_CEILING extends RoundingMode
+      sealed trait HALF_CEILING
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait HALF_FLOOR extends RoundingMode
+      sealed trait HALF_FLOOR
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait HALF_TOWARDS_ZERO extends RoundingMode
+      sealed trait HALF_TOWARDS_ZERO
+        extends StObject
+           with RoundingMode
       
       @js.native
-      sealed trait TOWARDS_ZERO extends RoundingMode
+      sealed trait TOWARDS_ZERO
+        extends StObject
+           with RoundingMode
     }
   }
   
@@ -168,7 +185,9 @@ object format {
   }
   
   @js.native
-  trait FileSizeFormat extends Object {
+  trait FileSizeFormat
+    extends StObject
+       with Object {
     
     def format(oValue: String): String = js.native
     /**

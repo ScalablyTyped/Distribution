@@ -3,25 +3,23 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentsOptions extends StObject {
   
-  var attach: js.UndefOr[String] = js.native
+  var attach: js.UndefOr[String] = js.undefined
   
-  var autoPublish: js.UndefOr[NumericBoolean] = js.native
+  var autoPublish: js.UndefOr[NumericBoolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var norealtime: js.UndefOr[NumericBoolean] = js.native
+  var norealtime: js.UndefOr[NumericBoolean] = js.undefined
   
-  var pageUrl: js.UndefOr[String] = js.native
+  var pageUrl: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CommentsOptions {
   

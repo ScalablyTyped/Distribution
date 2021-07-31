@@ -2,35 +2,33 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClientOptions extends StObject {
   
   /** Maps API for Work channel. */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /** Maps API for Work client ID. */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /** Maps API for Work client secret (a.k.a. private key). */
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
   /** API key (required, unless clientID and clientSecret provided). */
-  var key: String = js.native
+  var key: String
   
   /** Default language for all queries. */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /** Rate options. */
-  var rate: js.UndefOr[RateOptions] = js.native
+  var rate: js.UndefOr[RateOptions] = js.undefined
   
   /** Retry options. */
-  var retryOptions: js.UndefOr[RetryOptions] = js.native
+  var retryOptions: js.UndefOr[RetryOptions] = js.undefined
   
   /** Timeout in milliseconds. (Default: 60 * 1000 ms). */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object CreateClientOptions {
   

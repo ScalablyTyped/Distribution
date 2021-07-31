@@ -11,180 +11,144 @@ import typings.linq.anon.Value
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("linq", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Utils {
     
-    @JSImport("linq", "Utils.createEnumerable")
+    @JSImport("linq", "Utils")
     @js.native
-    def createEnumerable[T](getEnumerator: js.Function0[IEnumerator[T]]): IEnumerable[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("linq", "Utils.createEnumerator")
-    @js.native
-    def createEnumerator[T](initialize: js.Function0[Unit], tryGetNext: js.Function0[Boolean], dispose: js.Function0[Unit]): IEnumerator[T] = js.native
+    @scala.inline
+    def createEnumerable[T](getEnumerator: js.Function0[IEnumerator[T]]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnumerable")(getEnumerator.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     
-    @JSImport("linq", "Utils.createLambda")
-    @js.native
-    def createLambda(expression: js.Any): js.Function1[/* repeated */ js.Any, _] = js.native
+    @scala.inline
+    def createEnumerator[T](initialize: js.Function0[Unit], tryGetNext: js.Function0[Boolean], dispose: js.Function0[Unit]): IEnumerator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumerator")(initialize.asInstanceOf[js.Any], tryGetNext.asInstanceOf[js.Any], dispose.asInstanceOf[js.Any])).asInstanceOf[IEnumerator[T]]
     
-    @JSImport("linq", "Utils.extendTo")
-    @js.native
-    def extendTo(`type`: js.Any): Unit = js.native
+    @scala.inline
+    def createLambda(expression: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLambda")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    @JSImport("linq", "Utils.hasNativeIteratorSupport")
-    @js.native
-    def hasNativeIteratorSupport(): Boolean = js.native
+    @scala.inline
+    def extendTo(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendTo")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("linq", "Utils.recallFrom")
-    @js.native
-    def recallFrom(`type`: js.Any): Unit = js.native
+    @scala.inline
+    def hasNativeIteratorSupport(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasNativeIteratorSupport")().asInstanceOf[Boolean]
+    
+    @scala.inline
+    def recallFrom(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("recallFrom")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("linq", "choice")
-  @js.native
-  def choice[T](params: T*): IEnumerable[T] = js.native
+  @scala.inline
+  def choice[T](params: T*): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(params.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "cycle")
-  @js.native
-  def cycle[T](params: T*): IEnumerable[T] = js.native
+  @scala.inline
+  def cycle[T](params: T*): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cycle")(params.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "defer")
-  @js.native
-  def defer[T](enumerableFactory: js.Function0[IEnumerable[T]]): IEnumerable[T] = js.native
+  @scala.inline
+  def defer[T](enumerableFactory: js.Function0[IEnumerable[T]]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(enumerableFactory.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "empty")
-  @js.native
-  def empty[T](): IEnumerable[T] = js.native
+  @scala.inline
+  def empty[T](): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "from")
-  @js.native
-  def from(): IEnumerable[_] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from(obj: String): IEnumerable[String] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from(obj: js.Any): IEnumerable[Key] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from(obj: Boolean): IEnumerable[Boolean] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from(obj: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from[T](obj: js.Array[T]): IEnumerable[T] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from[T](obj: Dictx[T]): IEnumerable[T] = js.native
-  @JSImport("linq", "from")
-  @js.native
-  def from[T](obj: IEnumerable[T]): IEnumerable[T] = js.native
+  @scala.inline
+  def from(): IEnumerable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[IEnumerable[js.Any]]
+  @scala.inline
+  def from(obj: String): IEnumerable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[String]]
+  @scala.inline
+  def from(obj: js.Any): IEnumerable[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Key]]
+  @scala.inline
+  def from(obj: Boolean): IEnumerable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Boolean]]
+  @scala.inline
+  def from(obj: Double): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def from[T](obj: js.Array[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
+  @scala.inline
+  def from[T](obj: Dictx[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
+  @scala.inline
+  def from[T](obj: IEnumerable[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "generate")
-  @js.native
-  def generate[T](func: js.Function0[T]): IEnumerable[T] = js.native
-  @JSImport("linq", "generate")
-  @js.native
-  def generate[T](func: js.Function0[T], count: Double): IEnumerable[T] = js.native
+  @scala.inline
+  def generate[T](func: js.Function0[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(func.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
+  @scala.inline
+  def generate[T](func: js.Function0[T], count: Double): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(func.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "make")
-  @js.native
-  def make[T](element: T): IEnumerable[T] = js.native
+  @scala.inline
+  def make[T](element: T): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(element.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "matches")
-  @js.native
-  def matches[T](input: String, pattern: String): IEnumerable[T] = js.native
-  @JSImport("linq", "matches")
-  @js.native
-  def matches[T](input: String, pattern: String, flags: String): IEnumerable[T] = js.native
-  @JSImport("linq", "matches")
-  @js.native
-  def matches[T](input: String, pattern: RegExp): IEnumerable[T] = js.native
+  @scala.inline
+  def matches[T](input: String, pattern: String): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
+  @scala.inline
+  def matches[T](input: String, pattern: String, flags: String): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
+  @scala.inline
+  def matches[T](input: String, pattern: RegExp): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "range")
-  @js.native
-  def range(start: Double, count: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "range")
-  @js.native
-  def range(start: Double, count: Double, step: Double): IEnumerable[Double] = js.native
+  @scala.inline
+  def range(start: Double, count: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def range(start: Double, count: Double, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
   
-  @JSImport("linq", "rangeDown")
-  @js.native
-  def rangeDown(start: Double, count: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "rangeDown")
-  @js.native
-  def rangeDown(start: Double, count: Double, step: Double): IEnumerable[Double] = js.native
+  @scala.inline
+  def rangeDown(start: Double, count: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeDown")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def rangeDown(start: Double, count: Double, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeDown")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
   
-  @JSImport("linq", "rangeTo")
-  @js.native
-  def rangeTo(start: Double, to: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "rangeTo")
-  @js.native
-  def rangeTo(start: Double, to: Double, step: Double): IEnumerable[Double] = js.native
+  @scala.inline
+  def rangeTo(start: Double, to: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeTo")(start.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def rangeTo(start: Double, to: Double, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeTo")(start.asInstanceOf[js.Any], to.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
   
-  @JSImport("linq", "repeat")
-  @js.native
-  def repeat[T](element: T): IEnumerable[T] = js.native
-  @JSImport("linq", "repeat")
-  @js.native
-  def repeat[T](element: T, count: Double): IEnumerable[T] = js.native
+  @scala.inline
+  def repeat[T](element: T): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(element.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
+  @scala.inline
+  def repeat[T](element: T, count: Double): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(element.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "repeatWithFinalize")
-  @js.native
-  def repeatWithFinalize[T](initializer: js.Function0[T], finalizer: js.Function1[/* element */ T, Unit]): IEnumerable[T] = js.native
+  @scala.inline
+  def repeatWithFinalize[T](initializer: js.Function0[T], finalizer: js.Function1[/* element */ T, Unit]): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeatWithFinalize")(initializer.asInstanceOf[js.Any], finalizer.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
   
-  @JSImport("linq", "toInfinity")
-  @js.native
-  def toInfinity(): IEnumerable[Double] = js.native
-  @JSImport("linq", "toInfinity")
-  @js.native
-  def toInfinity(start: js.UndefOr[scala.Nothing], step: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "toInfinity")
-  @js.native
-  def toInfinity(start: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "toInfinity")
-  @js.native
-  def toInfinity(start: Double, step: Double): IEnumerable[Double] = js.native
+  @scala.inline
+  def toInfinity(): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toInfinity")().asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def toInfinity(start: Double): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toInfinity")(start.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def toInfinity(start: Double, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toInfinity")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def toInfinity(start: Unit, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toInfinity")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
   
-  @JSImport("linq", "toNegativeInfinity")
-  @js.native
-  def toNegativeInfinity(): IEnumerable[Double] = js.native
-  @JSImport("linq", "toNegativeInfinity")
-  @js.native
-  def toNegativeInfinity(start: js.UndefOr[scala.Nothing], step: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "toNegativeInfinity")
-  @js.native
-  def toNegativeInfinity(start: Double): IEnumerable[Double] = js.native
-  @JSImport("linq", "toNegativeInfinity")
-  @js.native
-  def toNegativeInfinity(start: Double, step: Double): IEnumerable[Double] = js.native
+  @scala.inline
+  def toNegativeInfinity(): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toNegativeInfinity")().asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def toNegativeInfinity(start: Double): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toNegativeInfinity")(start.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def toNegativeInfinity(start: Double, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toNegativeInfinity")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
+  @scala.inline
+  def toNegativeInfinity(start: Unit, step: Double): IEnumerable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toNegativeInfinity")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[Double]]
   
-  @JSImport("linq", "unfold")
-  @js.native
-  def unfold[T](seed: T, func: js.Function1[/* value */ T, T]): IEnumerable[T] = js.native
+  @scala.inline
+  def unfold[T](seed: T, func: js.Function1[/* value */ T, T]): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(seed.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
   
-  @js.native
   trait IDictionary[TKey, TValue] extends StObject {
     
-    def add(key: TKey, value: TValue): Unit = js.native
+    def add(key: TKey, value: TValue): Unit
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def contains(key: TKey): Boolean = js.native
+    def contains(key: TKey): Boolean
     
-    def count(): Double = js.native
+    def count(): Double
     
-    def get(key: TKey): TValue = js.native
+    def get(key: TKey): TValue
     
-    def remove(key: TKey): Unit = js.native
+    def remove(key: TKey): Unit
     
-    def set(key: TKey, value: TValue): Boolean = js.native
+    def set(key: TKey, value: TValue): Boolean
     
-    def toEnumerable(): IEnumerable[Value[TKey, TValue]] = js.native
+    def toEnumerable(): IEnumerable[Value[TKey, TValue]]
   }
   object IDictionary {
     
@@ -204,7 +168,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IDictionaryMutableBuilder[Self <: IDictionary[_, _], TKey, TValue] (val x: Self with (IDictionary[TKey, TValue])) extends AnyVal {
+    implicit class IDictionaryMutableBuilder[Self <: IDictionary[?, ?], TKey, TValue] (val x: Self & (IDictionary[TKey, TValue])) extends AnyVal {
       
       @scala.inline
       def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
@@ -233,7 +197,9 @@ object mod {
   }
   
   @js.native
-  trait IDisposableEnumerable[T] extends IEnumerable[T] {
+  trait IDisposableEnumerable[T]
+    extends StObject
+       with IEnumerable[T] {
     
     def dispose(): Unit = js.native
   }
@@ -312,11 +278,11 @@ object mod {
     
     def firstOrDefault(): js.UndefOr[T] = js.native
     def firstOrDefault(defaultValue: T): js.UndefOr[T] = js.native
-    def firstOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): js.UndefOr[T] = js.native
     def firstOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
     def firstOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): js.UndefOr[T] = js.native
+    def firstOrDefault(predicate: Unit, defaultValue: T): js.UndefOr[T] = js.native
     
-    def flatten(): IEnumerable[_] = js.native
+    def flatten(): IEnumerable[js.Any] = js.native
     
     def forEach(action: js.Function2[/* element */ T, /* index */ Double, Boolean | Unit]): Unit = js.native
     
@@ -444,9 +410,9 @@ object mod {
     
     def lastOrDefault(): js.UndefOr[T] = js.native
     def lastOrDefault(defaultValue: T): js.UndefOr[T] = js.native
-    def lastOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): js.UndefOr[T] = js.native
     def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
     def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): js.UndefOr[T] = js.native
+    def lastOrDefault(predicate: Unit, defaultValue: T): js.UndefOr[T] = js.native
     
     def letBind[TResult](
       func: js.Function1[
@@ -490,7 +456,7 @@ object mod {
     def pairwise[TResult](selector: js.Function2[/* prev */ T, /* current */ T, TResult]): IEnumerable[TResult] = js.native
     
     // :IEnumerable<IGrouping<TKey, T>>
-    def partitionBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): IEnumerable[IGrouping[TKey, _]] = js.native
+    def partitionBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): IEnumerable[IGrouping[TKey, js.Any]] = js.native
     // :IEnumerable<IGrouping<TKey, TElement>>
     def partitionBy[TKey, TElement](
       keySelector: js.Function1[/* element */ T, TKey],
@@ -546,9 +512,9 @@ object mod {
     def single(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): T = js.native
     
     def singleOrDefault(): js.UndefOr[T] = js.native
-    def singleOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): js.UndefOr[T] = js.native
     def singleOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
     def singleOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): js.UndefOr[T] = js.native
+    def singleOrDefault(predicate: Unit, defaultValue: T): js.UndefOr[T] = js.native
     
     def skip(count: Double): IEnumerable[T] = js.native
     
@@ -569,7 +535,7 @@ object mod {
     def toArray(): js.Array[T] = js.native
     
     // :IDictionary<TKey, T>
-    def toDictionary[TKey](keySelector: js.Function1[/* element */ T, TKey]): IDictionary[TKey, _] = js.native
+    def toDictionary[TKey](keySelector: js.Function1[/* element */ T, TKey]): IDictionary[TKey, js.Any] = js.native
     def toDictionary[TKey, TValue](
       keySelector: js.Function1[/* element */ T, TKey],
       elementSelector: js.Function1[/* element */ T, TValue]
@@ -580,10 +546,10 @@ object mod {
       compareSelector: js.Function1[/* key */ TKey, TCompare]
     ): IDictionary[TKey, TValue] = js.native
     
-    def toJSONString(replacer: js.Array[_]): String = js.native
-    def toJSONString(replacer: js.Array[_], space: js.Any): String = js.native
-    def toJSONString(replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
-    def toJSONString(replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: js.Any): String = js.native
+    def toJSONString(replacer: js.Array[js.Any]): String = js.native
+    def toJSONString(replacer: js.Array[js.Any], space: js.Any): String = js.native
+    def toJSONString(replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = js.native
+    def toJSONString(replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: js.Any): String = js.native
     
     def toJoinedString(): String = js.native
     def toJoinedString(separator: String): String = js.native
@@ -600,8 +566,11 @@ object mod {
       compareSelector: js.Function1[/* key */ TKey, TCompare]
     ): ILookup[TKey, TElement] = js.native
     
-    def toObject(keySelector: js.Function1[/* element */ T, _]): js.Object = js.native
-    def toObject(keySelector: js.Function1[/* element */ T, _], elementSelector: js.Function1[/* element */ T, _]): js.Object = js.native
+    def toObject(keySelector: js.Function1[/* element */ T, js.Any]): js.Object = js.native
+    def toObject(
+      keySelector: js.Function1[/* element */ T, js.Any],
+      elementSelector: js.Function1[/* element */ T, js.Any]
+    ): js.Object = js.native
     
     def trace(): IEnumerable[T] = js.native
     def trace(message: String): IEnumerable[T] = js.native
@@ -653,14 +622,13 @@ object mod {
     ): IEnumerable[TResult] = js.native
   }
   
-  @js.native
   trait IEnumerator[T] extends StObject {
     
-    def current(): T = js.native
+    def current(): T
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    def moveNext(): Boolean = js.native
+    def moveNext(): Boolean
   }
   object IEnumerator {
     
@@ -671,7 +639,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IEnumeratorMutableBuilder[Self <: IEnumerator[_], T] (val x: Self with IEnumerator[T]) extends AnyVal {
+    implicit class IEnumeratorMutableBuilder[Self <: IEnumerator[?], T] (val x: Self & IEnumerator[T]) extends AnyVal {
       
       @scala.inline
       def setCurrent(value: () => T): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
@@ -685,23 +653,24 @@ object mod {
   }
   
   @js.native
-  trait IGrouping[TKey, TElement] extends IEnumerable[TElement] {
+  trait IGrouping[TKey, TElement]
+    extends StObject
+       with IEnumerable[TElement] {
     
     def getSource(): js.Array[TElement] = js.native
     
     def key(): TKey = js.native
   }
   
-  @js.native
   trait ILookup[TKey, TElement] extends StObject {
     
-    def contains(key: TKey): Boolean = js.native
+    def contains(key: TKey): Boolean
     
-    def count(): Double = js.native
+    def count(): Double
     
-    def get(key: TKey): IEnumerable[TElement] = js.native
+    def get(key: TKey): IEnumerable[TElement]
     
-    def toEnumerable(): IEnumerable[IGrouping[TKey, TElement]] = js.native
+    def toEnumerable(): IEnumerable[IGrouping[TKey, TElement]]
   }
   object ILookup {
     
@@ -717,7 +686,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ILookupMutableBuilder[Self <: ILookup[_, _], TKey, TElement] (val x: Self with (ILookup[TKey, TElement])) extends AnyVal {
+    implicit class ILookupMutableBuilder[Self <: ILookup[?, ?], TKey, TElement] (val x: Self & (ILookup[TKey, TElement])) extends AnyVal {
       
       @scala.inline
       def setContains(value: TKey => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
@@ -734,14 +703,11 @@ object mod {
   }
   
   @js.native
-  trait IOrderedEnumerable[T] extends IEnumerable[T] {
+  trait IOrderedEnumerable[T]
+    extends StObject
+       with IEnumerable[T] {
     
     def createOrderedEnumerable[TKey](keySelector: js.Function1[/* element */ T, TKey]): IOrderedEnumerable[T] = js.native
-    def createOrderedEnumerable[TKey](
-      keySelector: js.Function1[/* element */ T, TKey],
-      comparer: js.UndefOr[scala.Nothing],
-      descending: Boolean
-    ): IOrderedEnumerable[T] = js.native
     def createOrderedEnumerable[TKey](
       keySelector: js.Function1[/* element */ T, TKey],
       comparer: js.Function2[/* first */ T, /* second */ T, Double]
@@ -751,6 +717,7 @@ object mod {
       comparer: js.Function2[/* first */ T, /* second */ T, Double],
       descending: Boolean
     ): IOrderedEnumerable[T] = js.native
+    def createOrderedEnumerable[TKey](keySelector: js.Function1[/* element */ T, TKey], comparer: Unit, descending: Boolean): IOrderedEnumerable[T] = js.native
     
     def thenBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): IOrderedEnumerable[T] = js.native
     def thenBy[TKey](

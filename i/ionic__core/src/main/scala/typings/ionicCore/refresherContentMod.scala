@@ -6,14 +6,15 @@ import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refresherContentMod {
   
   @JSImport("@ionic/core/dist/types/components/refresher-content/refresher-content", "RefresherContent")
   @js.native
-  class RefresherContent () extends ComponentInterface {
+  class RefresherContent ()
+    extends StObject
+       with ComponentInterface {
     
     @JSName("componentWillLoad")
     def componentWillLoad_MRefresherContent(): Unit = js.native

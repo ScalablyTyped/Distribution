@@ -2,15 +2,15 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGetFileInfoParam extends IAPIParam[IGetFileInfoSuccessResult] {
+trait IGetFileInfoParam
+  extends StObject
+     with IAPIParam[IGetFileInfoSuccessResult] {
   
-  var digestAlgorithm: js.UndefOr[String] = js.native
+  var digestAlgorithm: js.UndefOr[String] = js.undefined
   
-  var filePath: String = js.native
+  var filePath: String
 }
 object IGetFileInfoParam {
   

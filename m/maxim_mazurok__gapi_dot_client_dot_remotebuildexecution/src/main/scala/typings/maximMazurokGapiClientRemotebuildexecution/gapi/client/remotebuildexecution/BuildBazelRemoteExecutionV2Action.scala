@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2Action extends StObject {
   
   /** The digest of the Command to run, which MUST be present in the ContentAddressableStorage. */
-  var commandDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var commandDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /** If true, then the `Action`'s result cannot be cached, and in-flight requests for the same `Action` may not be merged. */
-  var doNotCache: js.UndefOr[Boolean] = js.native
+  var doNotCache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The digest of the root Directory for the input files. The files in the directory tree are available in the correct location on the build machine before the command is executed. The
     * root directory, as well as every subdirectory and content blob referred to, MUST be in the ContentAddressableStorage.
     */
-  var inputRootDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var inputRootDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * List of required supported NodeProperty keys. In order to ensure that equivalent `Action`s always hash to the same value, the supported node properties MUST be lexicographically
     * sorted by name. Sorting of strings is done by code point, equivalently, by the UTF-8 bytes. The interpretation of these properties is server-dependent. If a property is not
     * recognized by the server, the server will return an `INVALID_ARGUMENT` error.
     */
-  var outputNodeProperties: js.UndefOr[js.Array[String]] = js.native
+  var outputNodeProperties: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A timeout after which the execution should be killed. If the timeout is absent, then the client is specifying that the execution should continue as long as the server will let it.
@@ -35,7 +33,7 @@ trait BuildBazelRemoteExecutionV2Action extends StObject {
     * the timeout is too short. By encoding it directly in the `Action`, a lower timeout will result in a cache miss and the execution timeout will fail immediately, rather than whenever
     * the cache entry gets evicted.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object BuildBazelRemoteExecutionV2Action {
   

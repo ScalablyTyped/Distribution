@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RsaKeyGenParams extends Algorithm {
+trait RsaKeyGenParams
+  extends StObject
+     with Algorithm {
   
-  var modulusLength: Double = js.native
+  var modulusLength: Double
   
-  var publicExponent: BigInteger = js.native
+  var publicExponent: BigInteger
 }
 object RsaKeyGenParams {
   

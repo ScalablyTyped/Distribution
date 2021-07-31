@@ -5,33 +5,31 @@ import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectListProps extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var helperText: js.UndefOr[String] = js.native
+  var helperText: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  def onChange(args: Value): Unit = js.native
+  def onChange(args: Value): Unit
   
-  var options: js.Array[typings.gestalt.anon.Label] = js.native
+  var options: js.Array[typings.gestalt.anon.Label]
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[md | lg] = js.native
+  var size: js.UndefOr[md | lg] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SelectListProps {
   

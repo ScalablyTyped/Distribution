@@ -3,24 +3,22 @@ package typings.wechatMiniprogram.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{created (): void, attached (): void, ready (): void, moved (): void, detached (): void, error (err : std.Error): void}> */
-@js.native
 trait Partialcreatedvoidattache extends StObject {
   
-  var attached: js.UndefOr[js.Function0[Unit]] = js.native
+  var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var created: js.UndefOr[js.Function0[Unit]] = js.native
+  var created: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var detached: js.UndefOr[js.Function0[Unit]] = js.native
+  var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
   
-  var moved: js.UndefOr[js.Function0[Unit]] = js.native
+  var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[Unit]] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object Partialcreatedvoidattache {
   

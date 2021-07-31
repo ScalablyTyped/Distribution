@@ -7,23 +7,21 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalMod extends Shortcut {
   
   @JSImport("rc-util/lib/Portal", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PortalProps with RefAttributes[PortalRef]] = js.native
+  val default: ForwardRefExoticComponent[PortalProps & RefAttributes[PortalRef]] = js.native
   
-  @js.native
   trait PortalProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var didUpdate: js.UndefOr[js.Function1[/* prevProps */ this.type, Unit]] = js.native
+    var didUpdate: js.UndefOr[js.Function1[/* prevProps */ this.type, Unit]] = js.undefined
     
-    def getContainer(): HTMLElement = js.native
+    def getContainer(): HTMLElement
   }
   object PortalProps {
     
@@ -55,8 +53,8 @@ object portalMod extends Shortcut {
   
   type PortalRef = js.Object
   
-  type _To = ForwardRefExoticComponent[PortalProps with RefAttributes[PortalRef]]
+  type _To = ForwardRefExoticComponent[PortalProps & RefAttributes[PortalRef]]
   
   /* This means you don't have to write `default`, but can instead just say `portalMod.foo` */
-  override def _to: ForwardRefExoticComponent[PortalProps with RefAttributes[PortalRef]] = default
+  override def _to: ForwardRefExoticComponent[PortalProps & RefAttributes[PortalRef]] = default
 }

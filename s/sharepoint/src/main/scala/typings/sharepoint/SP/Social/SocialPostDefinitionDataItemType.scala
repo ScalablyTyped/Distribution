@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,20 +13,32 @@ sealed trait SocialPostDefinitionDataItemType extends StObject
 object SocialPostDefinitionDataItemType extends StObject {
   
   @js.native
-  sealed trait document extends SocialPostDefinitionDataItemType
+  sealed trait document
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait link extends SocialPostDefinitionDataItemType
+  sealed trait link
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait site extends SocialPostDefinitionDataItemType
+  sealed trait site
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait tag extends SocialPostDefinitionDataItemType
+  sealed trait tag
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait text extends SocialPostDefinitionDataItemType
+  sealed trait text
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait user extends SocialPostDefinitionDataItemType
+  sealed trait user
+    extends StObject
+       with SocialPostDefinitionDataItemType
 }

@@ -2,25 +2,23 @@ package typings.reactNavigationRouters.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var merge: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[scala.Nothing] = js.native
+  var name: Unit
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
 }
 object Key {
   
   @scala.inline
-  def apply(key: String): Key = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  def apply(key: String, name: Unit): Key = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -35,6 +33,9 @@ object Key {
     
     @scala.inline
     def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    
+    @scala.inline
+    def setName(value: Unit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])

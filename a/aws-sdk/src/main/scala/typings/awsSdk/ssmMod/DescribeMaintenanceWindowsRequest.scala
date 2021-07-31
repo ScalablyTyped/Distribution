@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMaintenanceWindowsRequest extends StObject {
   
   /**
     * Optional filters used to narrow down the scope of the returned maintenance windows. Supported filter keys are Name and Enabled.
     */
-  var Filters: js.UndefOr[MaintenanceWindowFilterList] = js.native
+  var Filters: js.UndefOr[MaintenanceWindowFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[MaintenanceWindowMaxResults] = js.native
+  var MaxResults: js.UndefOr[MaintenanceWindowMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeMaintenanceWindowsRequest {
   

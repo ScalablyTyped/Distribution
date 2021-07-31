@@ -3,13 +3,11 @@ package typings.knockout.anon
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `10` extends StObject {
   
-  def init(element: HTMLElement, valueAccessor: js.Function0[Boolean]): Unit = js.native
+  def init(element: HTMLElement, valueAccessor: js.Function0[Boolean]): Unit
 }
 object `10` {
   

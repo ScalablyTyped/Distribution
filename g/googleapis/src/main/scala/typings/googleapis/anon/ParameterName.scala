@@ -2,16 +2,14 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterName extends StObject {
   
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.native
+  var $ref: js.UndefOr[String] = js.undefined
   
-  var parameterName: js.UndefOr[String] = js.native
+  var parameterName: js.UndefOr[String] = js.undefined
 }
 object ParameterName {
   

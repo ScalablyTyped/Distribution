@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.typesStorageClassAnalysisDataExportMod.Storage
 import typings.awsSdkClientS3Node.typesStorageClassAnalysisDataExportMod.UnmarshalledStorageClassAnalysisDataExport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesStorageClassAnalysisMod {
   
-  @js.native
   trait StorageClassAnalysis extends StObject {
     
     /**
       * <p>A container used to describe how data related to the storage class analysis should be exported.</p>
       */
-    var DataExport: js.UndefOr[StorageClassAnalysisDataExport] = js.native
+    var DataExport: js.UndefOr[StorageClassAnalysisDataExport] = js.undefined
   }
   object StorageClassAnalysis {
     
@@ -36,14 +34,15 @@ object typesStorageClassAnalysisMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledStorageClassAnalysis extends StorageClassAnalysis {
+  trait UnmarshalledStorageClassAnalysis
+    extends StObject
+       with StorageClassAnalysis {
     
     /**
       * <p>A container used to describe how data related to the storage class analysis should be exported.</p>
       */
     @JSName("DataExport")
-    var DataExport_UnmarshalledStorageClassAnalysis: js.UndefOr[UnmarshalledStorageClassAnalysisDataExport] = js.native
+    var DataExport_UnmarshalledStorageClassAnalysis: js.UndefOr[UnmarshalledStorageClassAnalysisDataExport] = js.undefined
   }
   object UnmarshalledStorageClassAnalysis {
     

@@ -6,7 +6,6 @@ import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popups {
@@ -18,10 +17,14 @@ object Popups {
   object MessageDialogOptions extends StObject {
     
     @js.native
-    sealed trait acceptUserInputAfterDelay extends MessageDialogOptions
+    sealed trait acceptUserInputAfterDelay
+      extends StObject
+         with MessageDialogOptions
     
     @js.native
-    sealed trait none extends MessageDialogOptions
+    sealed trait none
+      extends StObject
+         with MessageDialogOptions
   }
   
   @js.native
@@ -31,37 +34,46 @@ object Popups {
   object Placement extends StObject {
     
     @js.native
-    sealed trait default extends Placement
+    sealed trait default
+      extends StObject
+         with Placement
     
     @js.native
-    sealed trait above extends Placement
+    sealed trait above
+      extends StObject
+         with Placement
     
     @js.native
-    sealed trait below extends Placement
+    sealed trait below
+      extends StObject
+         with Placement
     
     @js.native
-    sealed trait left extends Placement
+    sealed trait left
+      extends StObject
+         with Placement
     
     @js.native
-    sealed trait right extends Placement
+    sealed trait right
+      extends StObject
+         with Placement
   }
   
-  @js.native
   trait IMessageDialog extends StObject {
     
-    var cancelCommandIndex: Double = js.native
+    var cancelCommandIndex: Double
     
-    var commands: IVector[IUICommand] = js.native
+    var commands: IVector[IUICommand]
     
-    var content: String = js.native
+    var content: String
     
-    var defaultCommandIndex: Double = js.native
+    var defaultCommandIndex: Double
     
-    var options: MessageDialogOptions = js.native
+    var options: MessageDialogOptions
     
-    def showAsync(): IAsyncOperation[IUICommand] = js.native
+    def showAsync(): IAsyncOperation[IUICommand]
     
-    var title: String = js.native
+    var title: String
   }
   object IMessageDialog {
     
@@ -105,12 +117,11 @@ object Popups {
     }
   }
   
-  @js.native
   trait IMessageDialogFactory extends StObject {
     
-    def create(content: String): MessageDialog = js.native
+    def create(content: String): MessageDialog
     
-    def createWithTitle(content: String, title: String): MessageDialog = js.native
+    def createWithTitle(content: String, title: String): MessageDialog
   }
   object IMessageDialogFactory {
     
@@ -142,26 +153,45 @@ object Popups {
     def showForSelectionAsync(selection: Rect, preferredPlacement: Placement): IAsyncOperation[IUICommand] = js.native
   }
   
-  @js.native
   trait IUICommand extends StObject {
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    def invoked(command: IUICommand): Unit = js.native
+    def invoked(command: IUICommand): Unit
     @JSName("invoked")
-    var invoked_Original: UICommandInvokedHandler = js.native
+    var invoked_Original: UICommandInvokedHandler
     
-    var label: String = js.native
+    var label: String
+  }
+  object IUICommand {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IUICommand]
+    }
+    
+    @scala.inline
+    implicit class IUICommandMutableBuilder[Self <: IUICommand] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait IUICommandFactory extends StObject {
     
-    def create(label: String): UICommand = js.native
+    def create(label: String): UICommand
     
-    def createWithHandler(label: String, action: UICommandInvokedHandler): UICommand = js.native
+    def createWithHandler(label: String, action: UICommandInvokedHandler): UICommand
     
-    def createWithHandlerAndId(label: String, action: UICommandInvokedHandler, commandId: js.Any): UICommand = js.native
+    def createWithHandlerAndId(label: String, action: UICommandInvokedHandler, commandId: js.Any): UICommand
   }
   object IUICommandFactory {
     
@@ -189,8 +219,9 @@ object Popups {
     }
   }
   
-  @js.native
-  trait MessageDialog extends IMessageDialog
+  trait MessageDialog
+    extends StObject
+       with IMessageDialog
   object MessageDialog {
     
     @scala.inline
@@ -209,13 +240,33 @@ object Popups {
   }
   
   @js.native
-  trait PopupMenu extends IPopupMenu
+  trait PopupMenu
+    extends StObject
+       with IPopupMenu
   
-  @js.native
-  trait UICommand extends IUICommand
+  trait UICommand
+    extends StObject
+       with IUICommand
+  object UICommand {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UICommand]
+    }
+  }
   
   type UICommandInvokedHandler = js.Function1[/* command */ IUICommand, Unit]
   
-  @js.native
-  trait UICommandSeparator extends IUICommand
+  trait UICommandSeparator
+    extends StObject
+       with IUICommand
+  object UICommandSeparator {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UICommandSeparator]
+    }
+  }
 }

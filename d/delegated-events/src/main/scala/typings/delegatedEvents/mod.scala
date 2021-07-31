@@ -109,1744 +109,1598 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("delegated-events", "fire")
+  @JSImport("delegated-events", JSImport.Namespace)
   @js.native
-  def fire(target: Element, name: String): Boolean = js.native
-  @JSImport("delegated-events", "fire")
-  @js.native
-  def fire(target: Element, name: String, detail: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("delegated-events", "off")
-  @js.native
-  def off(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
-  @JSImport("delegated-events", "off")
-  @js.native
-  def off(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
+  @scala.inline
+  def fire(target: Element, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def fire(target: Element, name: String, detail: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("delegated-events", "on")
-  @js.native
-  def on(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
-  def on(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  @scala.inline
+  def off(name: String, selector: String, listener: DelegatedEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def on(name: String, selector: String, listener: DelegatedEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def on(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_abort(
     name: abort,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_abort(
     name: abort,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_animationcancel(
     name: animationcancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_animationcancel(
     name: animationcancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_animationend(
     name: animationend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_animationend(
     name: animationend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_animationiteration(
     name: animationiteration,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_animationiteration(
     name: animationiteration,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_animationstart(
     name: animationstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_animationstart(
     name: animationstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_auxclick(
     name: auxclick,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_auxclick(
     name: auxclick,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_blur(
     name: blur,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_blur(
     name: blur,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_cancel(
     name: cancel,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_cancel(
     name: cancel,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_canplay(
     name: canplay,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_canplay(
     name: canplay,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_canplaythrough(
     name: canplaythrough,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_canplaythrough(
     name: canplaythrough,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_change(
     name: change,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_change(
     name: change,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_click(
     name: click,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_click(
     name: click,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_close(
     name: close,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_close(
     name: close,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_contextmenu(
     name: contextmenu,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_contextmenu(
     name: contextmenu,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_cuechange(
     name: cuechange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_cuechange(
     name: cuechange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dblclick(
     name: dblclick,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dblclick(
     name: dblclick,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_drag(
     name: drag,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_drag(
     name: drag,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dragend(
     name: dragend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dragend(
     name: dragend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dragenter(
     name: dragenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dragenter(
     name: dragenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dragexit(
     name: dragexit,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dragexit(
     name: dragexit,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dragleave(
     name: dragleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dragleave(
     name: dragleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dragover(
     name: dragover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dragover(
     name: dragover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_dragstart(
     name: dragstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_dragstart(
     name: dragstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_drop(
     name: drop,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_drop(
     name: drop,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with CurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_durationchange(
     name: durationchange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_durationchange(
     name: durationchange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_emptied(
     name: emptied,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_emptied(
     name: emptied,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_ended(
     name: ended,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_ended(
     name: ended,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_error(
     name: error,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ErrorEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ErrorEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_error(
     name: error,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ErrorEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ErrorEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_focus(
     name: focus,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_focus(
     name: focus,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_focusin(
     name: focusin,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_focusin(
     name: focusin,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_focusout(
     name: focusout,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_focusout(
     name: focusout,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FocusEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_gotpointercapture(
     name: gotpointercapture,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_gotpointercapture(
     name: gotpointercapture,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_input(
     name: input,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_input(
     name: input,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_invalid(
     name: invalid,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_invalid(
     name: invalid,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_keydown(
     name: keydown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_keydown(
     name: keydown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_keypress(
     name: keypress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_keypress(
     name: keypress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_keyup(
     name: keyup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_keyup(
     name: keyup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_load(
     name: load,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_load(
     name: load,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_loadeddata(
     name: loadeddata,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_loadeddata(
     name: loadeddata,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_loadedmetadata(
     name: loadedmetadata,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_loadedmetadata(
     name: loadedmetadata,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_loadstart(
     name: loadstart,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_loadstart(
     name: loadstart,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_lostpointercapture(
     name: lostpointercapture,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_lostpointercapture(
     name: lostpointercapture,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mousedown(
     name: mousedown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mousedown(
     name: mousedown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mouseenter(
     name: mouseenter,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mouseenter(
     name: mouseenter,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mouseleave(
     name: mouseleave,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mouseleave(
     name: mouseleave,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mousemove(
     name: mousemove,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mousemove(
     name: mousemove,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mouseout(
     name: mouseout,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mouseout(
     name: mouseout,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mouseover(
     name: mouseover,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mouseover(
     name: mouseover,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_mouseup(
     name: mouseup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_mouseup(
     name: mouseup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ MouseEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pause(
     name: pause,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pause(
     name: pause,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_play(
     name: play,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_play(
     name: play,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_playing(
     name: playing,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_playing(
     name: playing,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointercancel(
     name: pointercancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointercancel(
     name: pointercancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointerdown(
     name: pointerdown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointerdown(
     name: pointerdown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointerenter(
     name: pointerenter,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointerenter(
     name: pointerenter,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointerleave(
     name: pointerleave,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointerleave(
     name: pointerleave,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointermove(
     name: pointermove,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointermove(
     name: pointermove,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointerout(
     name: pointerout,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointerout(
     name: pointerout,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointerover(
     name: pointerover,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointerover(
     name: pointerover,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_pointerup(
     name: pointerup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_pointerup(
     name: pointerup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ PointerEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_progress(
     name: progress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ProgressEvent[EventTarget] with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ProgressEvent[EventTarget] & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_progress(
     name: progress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ProgressEvent[EventTarget] with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ProgressEvent[EventTarget] & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_ratechange(
     name: ratechange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_ratechange(
     name: ratechange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_reset(
     name: reset,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_reset(
     name: reset,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_resize(
     name: resize,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_resize(
     name: resize,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ UIEvent with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_scroll(
     name: scroll,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_scroll(
     name: scroll,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_securitypolicyviolation(
     name: securitypolicyviolation,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ SecurityPolicyViolationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ SecurityPolicyViolationEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_securitypolicyviolation(
     name: securitypolicyviolation,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ SecurityPolicyViolationEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ SecurityPolicyViolationEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_seeked(
     name: seeked,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_seeked(
     name: seeked,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_seeking(
     name: seeking,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_seeking(
     name: seeking,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_select(
     name: select,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_select(
     name: select,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_selectionchange(
     name: selectionchange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_selectionchange(
     name: selectionchange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_selectstart(
     name: selectstart,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_selectstart(
     name: selectstart,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_stalled(
     name: stalled,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_stalled(
     name: stalled,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_submit(
     name: submit,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_submit(
     name: submit,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_suspend(
     name: suspend,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_suspend(
     name: suspend,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_timeupdate(
     name: timeupdate,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_timeupdate(
     name: timeupdate,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_toggle(
     name: toggle,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_toggle(
     name: toggle,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_touchcancel(
     name: touchcancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_touchcancel(
     name: touchcancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_touchend(
     name: touchend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_touchend(
     name: touchend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_touchmove(
     name: touchmove,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_touchmove(
     name: touchmove,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_touchstart(
     name: touchstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_touchstart(
     name: touchstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TouchEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_transitioncancel(
     name: transitioncancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_transitioncancel(
     name: transitioncancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_transitionend(
     name: transitionend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_transitionend(
     name: transitionend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_transitionrun(
     name: transitionrun,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_transitionrun(
     name: transitionrun,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_transitionstart(
     name: transitionstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_transitionstart(
     name: transitionstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_volumechange(
     name: volumechange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_volumechange(
     name: volumechange,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_waiting(
     name: waiting,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_waiting(
     name: waiting,
     selector: String,
-    listener: js.ThisFunction1[/* this */ GlobalEventHandlers with Element, /* ev */ Event with CurrentTarget, _],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def on_wheel(
     name: wheel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ WheelEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ WheelEvent & CurrentTarget, 
+      js.Any
     ]
-  ): Unit = js.native
-  @JSImport("delegated-events", "on")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def on_wheel(
     name: wheel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ WheelEvent with CurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ WheelEvent & CurrentTarget, 
+      js.Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type DelegatedEventListener = js.ThisFunction1[/* this */ Element, /* ev */ CustomEventanycurrentTarg, js.Any]
 }

@@ -8,7 +8,6 @@ import typings.sharepoint.SP.Utilities.Set
 import typings.sharepoint.anon.Begin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -286,175 +285,6 @@ trait JsGridControl extends StObject {
     beforeInitFnArgsObj: js.Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
     optGanttDelegateNames: js.Any
   ): Unit = js.native
   def LaunchPrintView(
@@ -464,86 +294,6 @@ trait JsGridControl extends StObject {
     title: String,
     bEnableGantt: Boolean,
     optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.UndefOr[scala.Nothing],
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
     optInitTableViewParamsFnName: js.Any
   ): Unit = js.native
   def LaunchPrintView(
@@ -554,41 +304,6 @@ trait JsGridControl extends StObject {
     bEnableGantt: Boolean,
     optGanttDelegateNames: js.Any,
     optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
     optInitTableViewParamsFnArgsObj: js.Any
   ): Unit = js.native
   def LaunchPrintView(
@@ -600,18 +315,6 @@ trait JsGridControl extends StObject {
     optGanttDelegateNames: js.Any,
     optInitTableViewParamsFnName: js.Any,
     optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.UndefOr[scala.Nothing],
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
     optInitGanttStylesFnName: js.Any
   ): Unit = js.native
   def LaunchPrintView(
@@ -624,6 +327,302 @@ trait JsGridControl extends StObject {
     optInitTableViewParamsFnName: js.Any,
     optInitTableViewParamsFnArgsObj: js.Any,
     optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: js.Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: js.Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: js.Any,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: js.Any,
+    optInitGanttStylesFnArgsObj: js.Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: js.Any,
+    beforeInitFnName: js.Any,
+    beforeInitFnArgsObj: js.Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Unit,
     optInitGanttStylesFnArgsObj: js.Any
   ): Unit = js.native
   
@@ -677,13 +676,13 @@ trait JsGridControl extends StObject {
     Scrolls to the Returns the id of the found record.
     If there aren't any errors, that satisfy the conditions, method does nothing and returns null. */
   def ScrollToAndExpandNextError(): js.Any = js.native
-  def ScrollToAndExpandNextError(
-    minId: js.UndefOr[scala.Nothing],
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
   def ScrollToAndExpandNextError(minId: Double): js.Any = js.native
   def ScrollToAndExpandNextError(
     minId: Double,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
+  ): js.Any = js.native
+  def ScrollToAndExpandNextError(
+    minId: Unit,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
   ): js.Any = js.native
   
@@ -691,61 +690,8 @@ trait JsGridControl extends StObject {
     recordKey should be not null, otherwise you'll get an exception.
     bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
   def ScrollToAndExpandNextErrorOnRecord(): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: js.UndefOr[scala.Nothing],
-    recordKey: js.UndefOr[scala.Nothing],
-    fnFilter: js.UndefOr[scala.Nothing],
-    bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: js.UndefOr[scala.Nothing],
-    recordKey: js.UndefOr[scala.Nothing],
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: js.UndefOr[scala.Nothing],
-    recordKey: js.UndefOr[scala.Nothing],
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
-    bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: js.UndefOr[scala.Nothing], recordKey: Double): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: js.UndefOr[scala.Nothing],
-    recordKey: Double,
-    fnFilter: js.UndefOr[scala.Nothing],
-    bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: js.UndefOr[scala.Nothing],
-    recordKey: Double,
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: js.UndefOr[scala.Nothing],
-    recordKey: Double,
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
-    bDontExpand: Boolean
-  ): js.Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(minId: Double): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: Double,
-    recordKey: js.UndefOr[scala.Nothing],
-    fnFilter: js.UndefOr[scala.Nothing],
-    bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: Double,
-    recordKey: js.UndefOr[scala.Nothing],
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(
-    minId: Double,
-    recordKey: js.UndefOr[scala.Nothing],
-    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
-    bDontExpand: Boolean
-  ): js.Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double, fnFilter: js.UndefOr[scala.Nothing], bDontExpand: Boolean): js.Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Double,
     recordKey: Double,
@@ -757,6 +703,44 @@ trait JsGridControl extends StObject {
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
     bDontExpand: Boolean
   ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(
+    minId: Double,
+    recordKey: Unit,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
+  ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(
+    minId: Double,
+    recordKey: Unit,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
+    bDontExpand: Boolean
+  ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Unit, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Double): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(
+    minId: Unit,
+    recordKey: Double,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
+  ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(
+    minId: Unit,
+    recordKey: Double,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
+    bDontExpand: Boolean
+  ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Double, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(
+    minId: Unit,
+    recordKey: Unit,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
+  ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(
+    minId: Unit,
+    recordKey: Unit,
+    fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
+    bDontExpand: Boolean
+  ): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Unit, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
   
   def SelectCellRange(rowIdx1: Double, rowIdx2: Double, colIdx1: Double, colIdx2: Double, bAppend: Boolean): Unit = js.native
   def SelectCellRange(
@@ -846,10 +830,9 @@ trait JsGridControl extends StObject {
 }
 object JsGridControl {
   
-  @js.native
   trait GanttParameters extends StObject {
     
-    var columns: ColumnInfoCollection = js.native
+    var columns: ColumnInfoCollection
   }
   object GanttParameters {
     
@@ -867,31 +850,30 @@ object JsGridControl {
     }
   }
   
-  @js.native
   trait Parameters extends StObject {
     
-    var bEnableDiffTracking: Boolean = js.native
+    var bEnableDiffTracking: Boolean
     
     // TODO
-    var bNotificationsEnabled: Boolean = js.native
+    var bNotificationsEnabled: Boolean
     
-    var commandMgr: CommandManager = js.native
+    var commandMgr: CommandManager
     
-    var enabledRowHeaderAutoStates: Set = js.native
+    var enabledRowHeaderAutoStates: Set
     
-    var isRTL: Boolean = js.native
+    var isRTL: Boolean
     
-    var minHeaderHeight: Double = js.native
+    var minHeaderHeight: Double
     
-    var minRowHeight: Double = js.native
+    var minRowHeight: Double
     
-    var name: js.Any = js.native
+    var name: js.Any
     
-    var styleManager: IStyleManager = js.native
+    var styleManager: IStyleManager
     
-    var tableCache: TableCache = js.native
+    var tableCache: TableCache
     
-    var tableViewParams: TableViewParameters = js.native
+    var tableViewParams: TableViewParameters
   }
   object Parameters {
     
@@ -951,37 +933,35 @@ object JsGridControl {
     }
   }
   
-  @js.native
   trait PivotedGridParameters extends StObject
   
-  @js.native
   trait RowViewParameters extends StObject {
     
-    var autoFilterEntries: js.Any = js.native
+    var autoFilterEntries: js.Any
     
-    var autoFilterState: js.Any = js.native
+    var autoFilterState: js.Any
     
-    var filterState: js.Any = js.native
+    var filterState: js.Any
     
-    var filteredDescCounts: js.Any = js.native
+    var filteredDescCounts: js.Any
     
-    var groupingLevel: js.Any = js.native
+    var groupingLevel: js.Any
     
-    var groupingRecordKeyPrefix: js.Any = js.native
+    var groupingRecordKeyPrefix: js.Any
     
-    var hierarchyDelayLoadKeys: js.Any = js.native
+    var hierarchyDelayLoadKeys: js.Any
     
-    var hierarchyMode: HierarchyMode = js.native
+    var hierarchyMode: HierarchyMode
     
-    var hierarchyState: js.Any = js.native
+    var hierarchyState: js.Any
     
-    var sortState: js.Any = js.native
+    var sortState: js.Any
     
-    var topViewIdx: Double = js.native
+    var topViewIdx: Double
     
-    var unfilteredHierarchyMgr: js.Any = js.native
+    var unfilteredHierarchyMgr: js.Any
     
-    var view: js.Any = js.native
+    var view: js.Any
   }
   object RowViewParameters {
     
@@ -1049,58 +1029,57 @@ object JsGridControl {
     }
   }
   
-  @js.native
   trait TableViewParameters extends StObject {
     
-    var allowedSelectionTypes: SelectionTypeFlags = js.native
+    var allowedSelectionTypes: SelectionTypeFlags
     
-    var bAutoFilterableColumns: Boolean = js.native
+    var bAutoFilterableColumns: Boolean
     
-    var bEditingEnabled: Boolean = js.native
+    var bEditingEnabled: Boolean
     
-    var bFillControlEnabled: Boolean = js.native
+    var bFillControlEnabled: Boolean
     
-    var bHidableColumns: Boolean = js.native
+    var bHidableColumns: Boolean
     
-    var bMovableColumns: Boolean = js.native
+    var bMovableColumns: Boolean
     
-    var bNewRowEnabled: Boolean = js.native
+    var bNewRowEnabled: Boolean
     
-    var bRecordIndicatorCheckboxesEnabled: Boolean = js.native
+    var bRecordIndicatorCheckboxesEnabled: Boolean
     
-    var bResizableColumns: Boolean = js.native
+    var bResizableColumns: Boolean
     
-    var bRowHeadersEnabled: Boolean = js.native
+    var bRowHeadersEnabled: Boolean
     
-    var bSortableColumns: Boolean = js.native
+    var bSortableColumns: Boolean
     
-    var checkSelectionCheckboxDisabledRecordKeys: js.Array[String] = js.native
+    var checkSelectionCheckboxDisabledRecordKeys: js.Array[String]
     
-    var checkSelectionCheckboxHiddenRecordKeys: js.Array[String] = js.native
+    var checkSelectionCheckboxHiddenRecordKeys: js.Array[String]
     
-    var checkSelectionCheckedRecordKeys: js.Array[String] = js.native
+    var checkSelectionCheckedRecordKeys: js.Array[String]
     
-    var columns: ColumnInfoCollection = js.native
+    var columns: ColumnInfoCollection
     
-    var defaultEditMode: EditMode = js.native
-    
-    // TODO
-    var ganttParams: GanttParameters = js.native
-    
-    var gridFieldMap: StringDictionary[GridField] = js.native
-    
-    var keyFieldName: String = js.native
-    
-    var messageOverrides: js.Any = js.native
+    var defaultEditMode: EditMode
     
     // TODO
-    var operationalConstantsFieldKeyMap: js.Any = js.native
+    var ganttParams: GanttParameters
     
-    var paneLayout: PaneLayout = js.native
+    var gridFieldMap: StringDictionary[GridField]
     
-    var pivotedGridParams: PivotedGridParameters = js.native
+    var keyFieldName: String
     
-    var rowViewParams: RowViewParameters = js.native
+    var messageOverrides: js.Any
+    
+    // TODO
+    var operationalConstantsFieldKeyMap: js.Any
+    
+    var paneLayout: PaneLayout
+    
+    var pivotedGridParams: PivotedGridParameters
+    
+    var rowViewParams: RowViewParameters
   }
   object TableViewParameters {
     

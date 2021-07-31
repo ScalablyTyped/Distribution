@@ -10,9 +10,9 @@ Typings are for version 4.0.6
 | ------------------ | :-------------: |
 | Full name          | @ant-design/react-native |
 | Keywords           | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
-| # releases         | 47 |
-| # dependents       | 15 |
-| # downloads        | 139651 |
+| # releases         | 32 |
+| # dependents       | 18 |
+| # downloads        | 138620 |
 | # stars            | 0 |
 
 ## Links

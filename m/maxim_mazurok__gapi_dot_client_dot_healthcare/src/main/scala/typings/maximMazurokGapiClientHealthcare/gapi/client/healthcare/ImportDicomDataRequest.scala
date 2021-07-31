@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDicomDataRequest extends StObject {
   
   /**
     * Cloud Storage source data location and import configuration. The Cloud Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud IAM roles on the Cloud Storage
     * location.
     */
-  var gcsSource: js.UndefOr[GoogleCloudHealthcareV1DicomGcsSource] = js.native
+  var gcsSource: js.UndefOr[GoogleCloudHealthcareV1DicomGcsSource] = js.undefined
 }
 object ImportDicomDataRequest {
   

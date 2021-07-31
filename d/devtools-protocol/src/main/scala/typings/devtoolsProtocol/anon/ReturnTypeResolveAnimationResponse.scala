@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Animation.ResolveAnimationRequest
 import typings.devtoolsProtocol.mod.Protocol.Animation.ResolveAnimationResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeResolveAnimationResponse extends StObject {
   
-  var paramsType: js.Array[ResolveAnimationRequest] = js.native
+  var paramsType: js.Array[ResolveAnimationRequest]
   
-  var returnType: ResolveAnimationResponse = js.native
+  var returnType: ResolveAnimationResponse
 }
 object ReturnTypeResolveAnimationResponse {
   

@@ -16,40 +16,38 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-draggable.react-draggable.DraggableCoreProps> */
-  @js.native
   trait PartialDraggableCoreProps extends StObject {
     
-    var allowAnyClick: js.UndefOr[Boolean] = js.native
+    var allowAnyClick: js.UndefOr[Boolean] = js.undefined
     
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var enableUserSelectHack: js.UndefOr[Boolean] = js.native
+    var enableUserSelectHack: js.UndefOr[Boolean] = js.undefined
     
-    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var nodeRef: js.UndefOr[RefObject[HTMLElement]] = js.native
+    var nodeRef: js.UndefOr[RefObject[HTMLElement]] = js.undefined
     
-    var offsetParent: js.UndefOr[HTMLElement] = js.native
+    var offsetParent: js.UndefOr[HTMLElement] = js.undefined
     
-    var onDrag: js.UndefOr[DraggableEventHandler] = js.native
+    var onDrag: js.UndefOr[DraggableEventHandler] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[DraggableEventHandler] = js.native
+    var onStart: js.UndefOr[DraggableEventHandler] = js.undefined
     
-    var onStop: js.UndefOr[DraggableEventHandler] = js.native
+    var onStop: js.UndefOr[DraggableEventHandler] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
   }
   object PartialDraggableCoreProps {
     
@@ -143,50 +141,49 @@ object anon {
   }
   
   /* Inlined std.Partial<react-draggable.react-draggable.DraggableProps> */
-  @js.native
   trait PartialDraggableProps extends StObject {
     
-    var allowAnyClick: js.UndefOr[Boolean] = js.native
+    var allowAnyClick: js.UndefOr[Boolean] = js.undefined
     
-    var axis: js.UndefOr[both | x | y | none] = js.native
+    var axis: js.UndefOr[both | x | y | none] = js.undefined
     
-    var bounds: js.UndefOr[DraggableBounds | String | `false`] = js.native
+    var bounds: js.UndefOr[DraggableBounds | String | `false`] = js.undefined
     
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
-    var defaultClassName: js.UndefOr[String] = js.native
+    var defaultClassName: js.UndefOr[String] = js.undefined
     
-    var defaultClassNameDragged: js.UndefOr[String] = js.native
+    var defaultClassNameDragged: js.UndefOr[String] = js.undefined
     
-    var defaultClassNameDragging: js.UndefOr[String] = js.native
+    var defaultClassNameDragging: js.UndefOr[String] = js.undefined
     
-    var defaultPosition: js.UndefOr[ControlPosition] = js.native
+    var defaultPosition: js.UndefOr[ControlPosition] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var enableUserSelectHack: js.UndefOr[Boolean] = js.native
+    var enableUserSelectHack: js.UndefOr[Boolean] = js.undefined
     
-    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var nodeRef: js.UndefOr[RefObject[HTMLElement]] = js.native
+    var nodeRef: js.UndefOr[RefObject[HTMLElement]] = js.undefined
     
-    var offsetParent: js.UndefOr[HTMLElement] = js.native
+    var offsetParent: js.UndefOr[HTMLElement] = js.undefined
     
-    var onDrag: js.UndefOr[DraggableEventHandler] = js.native
+    var onDrag: js.UndefOr[DraggableEventHandler] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[DraggableEventHandler] = js.native
+    var onStart: js.UndefOr[DraggableEventHandler] = js.undefined
     
-    var onStop: js.UndefOr[DraggableEventHandler] = js.native
+    var onStop: js.UndefOr[DraggableEventHandler] = js.undefined
     
-    var position: js.UndefOr[ControlPosition] = js.native
+    var position: js.UndefOr[ControlPosition] = js.undefined
     
-    var positionOffset: js.UndefOr[PositionOffsetControlPosition] = js.native
+    var positionOffset: js.UndefOr[PositionOffsetControlPosition] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
   }
   object PartialDraggableProps {
     

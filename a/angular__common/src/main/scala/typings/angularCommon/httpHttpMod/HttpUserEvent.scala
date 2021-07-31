@@ -3,13 +3,13 @@ package typings.angularCommon.httpHttpMod
 import typings.angularCommon.httpHttpMod.HttpEventType.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HttpUserEvent[T] extends HttpEvent[T] {
+trait HttpUserEvent[T]
+  extends StObject
+     with HttpEvent[T] {
   
-  var `type`: User = js.native
+  var `type`: User
 }
 object HttpUserEvent {
   
@@ -21,7 +21,7 @@ object HttpUserEvent {
   }
   
   @scala.inline
-  implicit class HttpUserEventMutableBuilder[Self <: HttpUserEvent[_], T] (val x: Self with HttpUserEvent[T]) extends AnyVal {
+  implicit class HttpUserEventMutableBuilder[Self <: HttpUserEvent[?], T] (val x: Self & HttpUserEvent[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: User): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

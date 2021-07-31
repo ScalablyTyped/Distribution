@@ -2,96 +2,94 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subnet extends StObject {
   
   /**
     * Indicates whether a network interface created in this subnet (including a network interface created by RunInstances) receives an IPv6 address.
     */
-  var AssignIpv6AddressOnCreation: js.UndefOr[Boolean] = js.native
+  var AssignIpv6AddressOnCreation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Availability Zone of the subnet.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The AZ ID of the subnet.
     */
-  var AvailabilityZoneId: js.UndefOr[String] = js.native
+  var AvailabilityZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of unused private IPv4 addresses in the subnet. The IPv4 addresses for any stopped instances are considered unavailable.
     */
-  var AvailableIpAddressCount: js.UndefOr[Integer] = js.native
+  var AvailableIpAddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The IPv4 CIDR block assigned to the subnet.
     */
-  var CidrBlock: js.UndefOr[String] = js.native
+  var CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-owned IPv4 address pool associated with the subnet.
     */
-  var CustomerOwnedIpv4Pool: js.UndefOr[CoipPoolId] = js.native
+  var CustomerOwnedIpv4Pool: js.UndefOr[CoipPoolId] = js.undefined
   
   /**
     * Indicates whether this is the default subnet for the Availability Zone.
     */
-  var DefaultForAz: js.UndefOr[Boolean] = js.native
+  var DefaultForAz: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the IPv6 CIDR blocks associated with the subnet.
     */
-  var Ipv6CidrBlockAssociationSet: js.UndefOr[SubnetIpv6CidrBlockAssociationSet] = js.native
+  var Ipv6CidrBlockAssociationSet: js.UndefOr[SubnetIpv6CidrBlockAssociationSet] = js.undefined
   
   /**
     * Indicates whether a network interface created in this subnet (including a network interface created by RunInstances) receives a customer-owned IPv4 address.
     */
-  var MapCustomerOwnedIpOnLaunch: js.UndefOr[Boolean] = js.native
+  var MapCustomerOwnedIpOnLaunch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether instances launched in this subnet receive a public IPv4 address.
     */
-  var MapPublicIpOnLaunch: js.UndefOr[Boolean] = js.native
+  var MapPublicIpOnLaunch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the subnet.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the subnet.
     */
-  var State: js.UndefOr[SubnetState] = js.native
+  var State: js.UndefOr[SubnetState] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the subnet.
     */
-  var SubnetArn: js.UndefOr[String] = js.native
+  var SubnetArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the subnet.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC the subnet is in.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object Subnet {
   

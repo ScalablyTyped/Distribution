@@ -7,18 +7,16 @@ import typings.scriptExtHtmlWebpackPlugin.scriptExtHtmlWebpackPluginStrings.init
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined script-ext-html-webpack-plugin.script-ext-html-webpack-plugin.ScriptMatchingPatternHash & {  chunks :'initial' | 'async' | 'all' | undefined} */
-  @js.native
   trait ScriptMatchingPatternHash extends StObject {
     
-    var chunks: js.UndefOr[initial | async | all] = js.native
+    var chunks: js.UndefOr[initial | async | all] = js.undefined
     
-    var test: ScriptMatchingPatternBase = js.native
+    var test: ScriptMatchingPatternBase
   }
   object ScriptMatchingPatternHash {
     

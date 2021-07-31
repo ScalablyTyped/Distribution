@@ -5,12 +5,13 @@ import typings.ajv.mod.Ajv
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsoneditor", JSImport.Default)
 @js.native
-class default protected () extends JSONEditor {
+class default protected ()
+  extends StObject
+     with JSONEditor {
   /**
     * Constructs a new JSONEditor.
     * @param container An HTML DIV element. The JSONEditor will be created inside this container element.
@@ -20,7 +21,7 @@ class default protected () extends JSONEditor {
     */
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, options: JSONEditorOptions) = this()
-  def this(container: HTMLElement, options: js.UndefOr[scala.Nothing], json: js.Any) = this()
+  def this(container: HTMLElement, options: Unit, json: js.Any) = this()
   def this(container: HTMLElement, options: JSONEditorOptions, json: js.Any) = this()
 }
 /* static members */

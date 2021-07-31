@@ -5,30 +5,30 @@ import typings.pulumiAws.outputMod.imagebuilder.GetDistributionConfigurationDist
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDistributionConfigurationMod {
   
-  @JSImport("@pulumi/aws/imagebuilder/getDistributionConfiguration", "getDistributionConfiguration")
+  @JSImport("@pulumi/aws/imagebuilder/getDistributionConfiguration", JSImport.Namespace)
   @js.native
-  def getDistributionConfiguration(args: GetDistributionConfigurationArgs): js.Promise[GetDistributionConfigurationResult] = js.native
-  @JSImport("@pulumi/aws/imagebuilder/getDistributionConfiguration", "getDistributionConfiguration")
-  @js.native
-  def getDistributionConfiguration(args: GetDistributionConfigurationArgs, opts: InvokeOptions): js.Promise[GetDistributionConfigurationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDistributionConfiguration(args: GetDistributionConfigurationArgs): js.Promise[GetDistributionConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistributionConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDistributionConfigurationResult]]
+  @scala.inline
+  def getDistributionConfiguration(args: GetDistributionConfigurationArgs, opts: InvokeOptions): js.Promise[GetDistributionConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistributionConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDistributionConfigurationResult]]
+  
   trait GetDistributionConfigurationArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the distribution configuration.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Key-value map of resource tags for the distribution configuration.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetDistributionConfigurationArgs {
     
@@ -52,45 +52,44 @@ object getDistributionConfigurationMod {
     }
   }
   
-  @js.native
   trait GetDistributionConfigurationResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Date the distribution configuration was created.
       */
-    val dateCreated: String = js.native
+    val dateCreated: String
     
     /**
       * Date the distribution configuration was updated.
       */
-    val dateUpdated: String = js.native
+    val dateUpdated: String
     
     /**
       * Description to apply to distributed AMI.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Set of distributions.
       */
-    val distributions: js.Array[GetDistributionConfigurationDistribution] = js.native
+    val distributions: js.Array[GetDistributionConfigurationDistribution]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Name of the distribution configuration.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Key-value map of resource tags for the distribution configuration.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetDistributionConfigurationResult {
     

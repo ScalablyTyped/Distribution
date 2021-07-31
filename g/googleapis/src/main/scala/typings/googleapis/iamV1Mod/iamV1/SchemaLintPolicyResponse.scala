@@ -2,14 +2,12 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response of a lint operation. An empty response indicates the operation
   * was able to fully execute and no lint issue was found.
   */
-@js.native
 trait SchemaLintPolicyResponse extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaLintPolicyResponse extends StObject {
     * each of the involved bindings, and the associated debug_message may
     * enumerate the other involved binding ordinal number(s).
     */
-  var lintResults: js.UndefOr[js.Array[SchemaLintResult]] = js.native
+  var lintResults: js.UndefOr[js.Array[SchemaLintResult]] = js.undefined
 }
 object SchemaLintPolicyResponse {
   

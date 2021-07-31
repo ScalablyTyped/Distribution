@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides unified interface for {@link XMLOasisBasicExporter} and {@link XMLBasicExporter} services.
   * @since LibreOffice 4.1
   */
-@js.native
 trait XXMLBasicExporter
-  extends XExporter
+  extends StObject
+     with XExporter
      with XFilter
 object XXMLBasicExporter {
   

@@ -6,11 +6,9 @@ import typings.officeJs.officeJsStrings.VeryHidden
 import typings.officeJs.officeJsStrings.Visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `worksheet.toJSON()`. */
-@js.native
 trait WorksheetData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFilter: js.UndefOr[AutoFilterData] = js.native
+  var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var charts: js.UndefOr[js.Array[ChartData]] = js.native
+  var charts: js.UndefOr[js.Array[ChartData]] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var comments: js.UndefOr[js.Array[CommentData]] = js.native
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var customProperties: js.UndefOr[js.Array[WorksheetCustomPropertyData]] = js.native
+  var customProperties: js.UndefOr[js.Array[WorksheetCustomPropertyData]] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enableCalculation: js.UndefOr[Boolean] = js.native
+  var enableCalculation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.native
+  var horizontalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var names: js.UndefOr[js.Array[NamedItemData]] = js.native
+  var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pageLayout: js.UndefOr[PageLayoutData] = js.native
+  var pageLayout: js.UndefOr[PageLayoutData] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.native
+  var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -116,7 +114,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var protection: js.UndefOr[WorksheetProtectionData] = js.native
+  var protection: js.UndefOr[WorksheetProtectionData] = js.undefined
   
   /**
     *
@@ -124,7 +122,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shapes: js.UndefOr[js.Array[ShapeData]] = js.native
+  var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   
   /**
     *
@@ -132,7 +130,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showGridlines: js.UndefOr[Boolean] = js.native
+  var showGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -140,7 +138,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showHeadings: js.UndefOr[Boolean] = js.native
+  var showHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -148,7 +146,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var slicers: js.UndefOr[js.Array[SlicerData]] = js.native
+  var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   
   /**
     *
@@ -156,7 +154,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardHeight: js.UndefOr[Double] = js.native
+  var standardHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -165,7 +163,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardWidth: js.UndefOr[Double] = js.native
+  var standardWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -175,7 +173,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tabColor: js.UndefOr[String] = js.native
+  var tabColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -183,7 +181,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var tables: js.UndefOr[js.Array[TableData]] = js.native
+  var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
     *
@@ -191,7 +189,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.native
+  var verticalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   
   /**
     *
@@ -199,7 +197,7 @@ trait WorksheetData extends StObject {
     *
     * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
     */
-  var visibility: js.UndefOr[SheetVisibility | Visible | Hidden | VeryHidden] = js.native
+  var visibility: js.UndefOr[SheetVisibility | Visible | Hidden | VeryHidden] = js.undefined
 }
 object WorksheetData {
   

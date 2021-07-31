@@ -15,7 +15,6 @@ import typings.webcl.webclNumbers.`0x10BB`
 import typings.webcl.webclNumbers.`0x10BC`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_channel_order */

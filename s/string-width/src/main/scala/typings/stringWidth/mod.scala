@@ -3,7 +3,6 @@ package typings.stringWidth
 import typings.stringWidth.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,9 +21,8 @@ object mod {
   	//=> 2
   	```
   	*/
-  @JSImport("string-width", JSImport.Namespace)
-  @js.native
-  def apply(string: String): Double = js.native
+  @scala.inline
+  def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("string-width", JSImport.Namespace)
   @js.native
@@ -53,9 +51,8 @@ object mod {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function stringWidth(string: string): number;
   // export = stringWidth;
-  @JSImport("string-width", "default")
-  @js.native
-  def default(string: String): Double = js.native
+  @scala.inline
+  def default(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

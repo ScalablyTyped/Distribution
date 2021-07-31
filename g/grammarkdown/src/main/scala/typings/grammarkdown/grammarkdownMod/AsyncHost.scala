@@ -4,7 +4,6 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "AsyncHost")
@@ -31,16 +30,16 @@ class AsyncHost () extends HostBase {
 /* static members */
 object AsyncHost {
   
-  @JSImport("grammarkdown/dist/grammarkdown", "AsyncHost.forFile")
+  @JSImport("grammarkdown/dist/grammarkdown", "AsyncHost")
   @js.native
-  def forFile(content: String): AsyncSingleFileHost = js.native
-  @JSImport("grammarkdown/dist/grammarkdown", "AsyncHost.forFile")
-  @js.native
-  def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: AsyncHost): AsyncSingleFileHost = js.native
-  @JSImport("grammarkdown/dist/grammarkdown", "AsyncHost.forFile")
-  @js.native
-  def forFile(content: String, file: String): AsyncSingleFileHost = js.native
-  @JSImport("grammarkdown/dist/grammarkdown", "AsyncHost.forFile")
-  @js.native
-  def forFile(content: String, file: String, hostFallback: AsyncHost): AsyncSingleFileHost = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def forFile(content: String): AsyncSingleFileHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[AsyncSingleFileHost]
+  @scala.inline
+  def forFile(content: String, file: String): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
+  @scala.inline
+  def forFile(content: String, file: String, hostFallback: AsyncHost): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
+  @scala.inline
+  def forFile(content: String, file: Unit, hostFallback: AsyncHost): AsyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[AsyncSingleFileHost]
 }

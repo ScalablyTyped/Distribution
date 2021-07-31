@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictindex extends /* index */ NumberDictionary[Node] {
+trait Dictindex
+  extends StObject
+     with /* index */ NumberDictionary[Node] {
   
-  var length: Double = js.native
+  var length: Double
 }
 object Dictindex {
   

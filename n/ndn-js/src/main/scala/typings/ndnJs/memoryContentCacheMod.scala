@@ -9,7 +9,6 @@ import typings.ndnJs.interestMod.Interest
 import typings.ndnJs.nameMod.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryContentCacheMod {
@@ -26,49 +25,49 @@ object memoryContentCacheMod {
     
     def getStorePendingInterest(): OnInterestCallback = js.native
     
-    def registerPrefix(name: Name, onRegisterFailed: js.Function1[/* prefix */ Name, _]): Unit = js.native
+    def registerPrefix(name: Name, onRegisterFailed: js.Function1[/* prefix */ Name, js.Any]): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.UndefOr[scala.Nothing],
-      onDataNotFound: js.UndefOr[scala.Nothing],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any]
+    ): Unit = js.native
+    def registerPrefix(
+      name: Name,
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
+      onDataNotFound: Unit,
       flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.UndefOr[scala.Nothing],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
       onDataNotFound: OnInterestCallback
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.UndefOr[scala.Nothing],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, js.Any],
       onDataNotFound: OnInterestCallback,
       flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _]
-    ): Unit = js.native
-    def registerPrefix(
-      name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _],
-      onDataNotFound: js.UndefOr[scala.Nothing],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: Unit,
+      onDataNotFound: Unit,
       flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: Unit,
       onDataNotFound: OnInterestCallback
     ): Unit = js.native
     def registerPrefix(
       name: Name,
-      onRegisterFailed: js.Function1[/* prefix */ Name, _],
-      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _],
+      onRegisterFailed: js.Function1[/* prefix */ Name, js.Any],
+      onRegisterSuccess: Unit,
       onDataNotFound: OnInterestCallback,
       flags: ForwardingFlags
     ): Unit = js.native

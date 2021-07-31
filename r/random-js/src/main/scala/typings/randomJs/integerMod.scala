@@ -3,12 +3,14 @@ package typings.randomJs
 import typings.randomJs.typesMod.Distribution
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integerMod {
   
-  @JSImport("random-js/dist/distribution/integer", "integer")
+  @JSImport("random-js/dist/distribution/integer", JSImport.Namespace)
   @js.native
-  def integer(min: Double, max: Double): Distribution[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def integer(min: Double, max: Double): Distribution[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("integer")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Distribution[Double]]
 }

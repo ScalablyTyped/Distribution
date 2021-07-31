@@ -2,7 +2,6 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,25 +11,35 @@ sealed trait EClanRank extends StObject
 object EClanRank extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EClanRank with Double] = js.native
+  def apply(value: Double): js.UndefOr[EClanRank & Double] = js.native
   
   @js.native
-  sealed trait Member extends EClanRank
-  /* 3 */ val Member: typings.steamClient.mod.EClanRank.Member with Double = js.native
+  sealed trait Member
+    extends StObject
+       with EClanRank
+  /* 3 */ val Member: typings.steamClient.mod.EClanRank.Member & Double = js.native
   
   @js.native
-  sealed trait Moderator extends EClanRank
-  /* 4 */ val Moderator: typings.steamClient.mod.EClanRank.Moderator with Double = js.native
+  sealed trait Moderator
+    extends StObject
+       with EClanRank
+  /* 4 */ val Moderator: typings.steamClient.mod.EClanRank.Moderator & Double = js.native
   
   @js.native
-  sealed trait None extends EClanRank
-  /* 0 */ val None: typings.steamClient.mod.EClanRank.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with EClanRank
+  /* 0 */ val None: typings.steamClient.mod.EClanRank.None & Double = js.native
   
   @js.native
-  sealed trait Officer extends EClanRank
-  /* 2 */ val Officer: typings.steamClient.mod.EClanRank.Officer with Double = js.native
+  sealed trait Officer
+    extends StObject
+       with EClanRank
+  /* 2 */ val Officer: typings.steamClient.mod.EClanRank.Officer & Double = js.native
   
   @js.native
-  sealed trait Owner extends EClanRank
-  /* 1 */ val Owner: typings.steamClient.mod.EClanRank.Owner with Double = js.native
+  sealed trait Owner
+    extends StObject
+       with EClanRank
+  /* 1 */ val Owner: typings.steamClient.mod.EClanRank.Owner & Double = js.native
 }

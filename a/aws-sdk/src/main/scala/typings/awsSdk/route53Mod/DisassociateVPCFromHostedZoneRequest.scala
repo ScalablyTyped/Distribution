@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateVPCFromHostedZoneRequest extends StObject {
   
   /**
     *  Optional: A comment about the disassociation request.
     */
-  var Comment: js.UndefOr[DisassociateVPCComment] = js.native
+  var Comment: js.UndefOr[DisassociateVPCComment] = js.undefined
   
   /**
     * The ID of the private hosted zone that you want to disassociate a VPC from.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * A complex type that contains information about the VPC that you're disassociating from the specified hosted zone.
     */
-  var VPC: typings.awsSdk.route53Mod.VPC = js.native
+  var VPC: typings.awsSdk.route53Mod.VPC
 }
 object DisassociateVPCFromHostedZoneRequest {
   

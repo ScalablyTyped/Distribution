@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NatGatewayAddress extends StObject {
   
   /**
     * The allocation ID of the Elastic IP address that's associated with the NAT gateway.
     */
-  var AllocationId: js.UndefOr[String] = js.native
+  var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the network interface associated with the NAT gateway.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The private IP address associated with the Elastic IP address.
     */
-  var PrivateIp: js.UndefOr[String] = js.native
+  var PrivateIp: js.UndefOr[String] = js.undefined
   
   /**
     * The Elastic IP address associated with the NAT gateway.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
 }
 object NatGatewayAddress {
   

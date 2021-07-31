@@ -2,7 +2,6 @@ package typings.binVersion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,21 +27,22 @@ object mod {
   })();
   ```
   */
-  @JSImport("bin-version", JSImport.Namespace)
-  @js.native
-  def apply(binary: String): js.Promise[String] = js.native
-  @JSImport("bin-version", JSImport.Namespace)
-  @js.native
-  def apply(binary: String, options: Options): js.Promise[String] = js.native
+  @scala.inline
+  def apply(binary: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(binary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(binary: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(binary.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
+  @JSImport("bin-version", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		The arguments to pass to `binary` so that it will print its version.
     		If not specified, predefined arguments will be used for known binaries, or `['--version']` and `['version']` arguments will be tried.
     		*/
-    val args: js.UndefOr[js.Array[String]] = js.native
+    val args: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

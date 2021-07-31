@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateKeyGroupRequest extends StObject {
   
   /**
     * The identifier of the key group that you are updating.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The version of the key group that you are updating. The version is the key group’s ETag value.
     */
-  var IfMatch: js.UndefOr[String] = js.native
+  var IfMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The key group configuration.
     */
-  var KeyGroupConfig: typings.awsSdk.cloudfrontMod.KeyGroupConfig = js.native
+  var KeyGroupConfig: typings.awsSdk.cloudfrontMod.KeyGroupConfig
 }
 object UpdateKeyGroupRequest {
   

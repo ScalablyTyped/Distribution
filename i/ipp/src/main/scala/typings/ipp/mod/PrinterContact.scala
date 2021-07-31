@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterContact extends StObject {
   
-  var `contact-name`: js.UndefOr[String] = js.native
+  var `contact-name`: js.UndefOr[String] = js.undefined
   
-  var `contact-uri`: js.UndefOr[String] = js.native
+  var `contact-uri`: js.UndefOr[String] = js.undefined
   
-  var `contact-vcard`: js.UndefOr[js.Array[String]] = js.native
+  var `contact-vcard`: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PrinterContact {
   

@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawlerS3Target extends StObject {
   
   /**
     * The name of the connection to use to connect to the JDBC target.
     */
-  var connectionName: js.UndefOr[Input[String]] = js.native
+  var connectionName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A list of glob patterns used to exclude from the crawl.
     */
-  var exclusions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var exclusions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The name of the DynamoDB table to crawl.
     */
-  var path: Input[String] = js.native
+  var path: Input[String]
 }
 object CrawlerS3Target {
   

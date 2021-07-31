@@ -2,13 +2,11 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PriorityChild extends StObject {
   
-  var config: js.Array[LoadBalancingConfig] = js.native
+  var config: js.Array[LoadBalancingConfig]
 }
 object PriorityChild {
   

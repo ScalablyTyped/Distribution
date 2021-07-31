@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApiMappingResponse extends StObject {
   
   /**
     * The API identifier.
     */
-  var ApiId: js.UndefOr[Id] = js.native
+  var ApiId: js.UndefOr[Id] = js.undefined
   
   /**
     * The API mapping identifier.
     */
-  var ApiMappingId: js.UndefOr[Id] = js.native
+  var ApiMappingId: js.UndefOr[Id] = js.undefined
   
   /**
     * The API mapping key.
     */
-  var ApiMappingKey: js.UndefOr[SelectionKey] = js.native
+  var ApiMappingKey: js.UndefOr[SelectionKey] = js.undefined
   
   /**
     * The API stage.
     */
-  var Stage: js.UndefOr[StringWithLengthBetween1And128] = js.native
+  var Stage: js.UndefOr[StringWithLengthBetween1And128] = js.undefined
 }
 object UpdateApiMappingResponse {
   

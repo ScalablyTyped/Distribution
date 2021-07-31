@@ -2,21 +2,19 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BstrUrl extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val bstrUrl: String = js.native
+  val bstrUrl: String
   
-  val bstrUrlContext: String = js.native
+  val bstrUrlContext: String
   
-  val dwFlags: Double = js.native
+  val dwFlags: Double
   
-  var ppDisp: js.Any = js.native
+  var ppDisp: js.Any
 }
 object BstrUrl {
   

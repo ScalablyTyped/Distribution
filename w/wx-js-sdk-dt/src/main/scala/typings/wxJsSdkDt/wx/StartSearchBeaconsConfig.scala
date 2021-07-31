@@ -2,22 +2,22 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StartSearchBeaconsConfig extends WxBaseRequestConfig {
+trait StartSearchBeaconsConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 完成后的回调
     */
   @JSName("complete")
-  def complete_MStartSearchBeaconsConfig(argv: js.Any): Unit = js.native
+  def complete_MStartSearchBeaconsConfig(argv: js.Any): Unit
   
   /**
     * 摇周边的业务ticket, 系统自动添加在摇出来的页面链接后面
     */
-  var ticket: String = js.native
+  var ticket: String
 }
 object StartSearchBeaconsConfig {
   

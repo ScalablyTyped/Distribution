@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A recolor effect applied on an image.
   */
-@js.native
 trait SchemaRecolor extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRecolor extends StObject {
     * `recolor_stops` by matching the gradient against the colors in the
     * page&#39;s current color scheme. This property is read-only.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The recolor effect is represented by a gradient, which is a list of color
@@ -24,7 +22,7 @@ trait SchemaRecolor extends StObject {
     * at the same position in the color palette and apply to the image. This
     * property is read-only.
     */
-  var recolorStops: js.UndefOr[js.Array[SchemaColorStop]] = js.native
+  var recolorStops: js.UndefOr[js.Array[SchemaColorStop]] = js.undefined
 }
 object SchemaRecolor {
   

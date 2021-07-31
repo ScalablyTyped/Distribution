@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * revision must be owned by the configuration provided.  Deprecated and not
   * supported by Cloud Run.
   */
-@js.native
 trait SchemaServiceSpecPinnedType extends StObject {
   
   /**
     * The configuration for this service.
     */
-  var configuration: js.UndefOr[SchemaConfigurationSpec] = js.native
+  var configuration: js.UndefOr[SchemaConfigurationSpec] = js.undefined
   
   /**
     * The revision name to pin this service to until changed to a different
     * service type.
     */
-  var revisionName: js.UndefOr[String] = js.native
+  var revisionName: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceSpecPinnedType {
   

@@ -4,17 +4,21 @@ import typings.rcUpload.anon.RcFilewebkitRelativePaths
 import typings.std.DataTransferItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object traverseFileTreeMod {
   
-  @JSImport("rc-upload/es/traverseFileTree", JSImport.Default)
+  @JSImport("rc-upload/es/traverseFileTree", JSImport.Namespace)
   @js.native
-  def default(files: js.Array[InternalDataTransferItem], callback: js.Any, isAccepted: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(files: js.Array[InternalDataTransferItem], callback: js.Any, isAccepted: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], isAccepted.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
-  trait InternalDataTransferItem extends DataTransferItem {
+  trait InternalDataTransferItem
+    extends StObject
+       with DataTransferItem {
     
     def createReader(): js.Any = js.native
     

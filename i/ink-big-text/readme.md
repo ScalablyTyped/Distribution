@@ -11,8 +11,8 @@ Awesome text component for Ink
 | Full name          | ink-big-text |
 | Keywords           | ink-component, ink, component, text, font, big, large, string, react, jsx, terminal, term, console, command-line |
 | # releases         | 5 |
-| # dependents       | 76 |
-| # downloads        | 62605 |
+| # dependents       | 98 |
+| # downloads        | 83045 |
 | # stars            | 0 |
 
 ## Links

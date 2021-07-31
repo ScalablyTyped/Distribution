@@ -20,18 +20,16 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointUserMod.UnmarshalledEndp
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEndpointRequestMod {
   
-  @js.native
   trait EndpointRequest extends StObject {
     
     /**
       * The destination for messages that you send to this endpoint. The address varies by channel. For mobile push channels, use the token provided by the push notification service, such as the APNs device token or the FCM registration token. For the SMS channel, use a phone number in E.164 format, such as +12065550100. For the email channel, use an email address.
       */
-    var Address: js.UndefOr[String] = js.native
+    var Address: js.UndefOr[String] = js.undefined
     
     /**
       * Custom attributes that describe the endpoint by associating a name with an array of values. For example, an attribute named "interests" might have the values ["science", "politics", "travel"]. You can use these attributes as selection criteria when you create a segment of users to engage with a messaging campaign.
@@ -40,7 +38,7 @@ object typesEndpointRequestMod {
       */
     var Attributes: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The channel type.
@@ -49,32 +47,32 @@ object typesEndpointRequestMod {
       */
     var ChannelType: js.UndefOr[
         GCM | APNS | APNS_SANDBOX | APNS_VOIP | APNS_VOIP_SANDBOX | ADM | SMS | EMAIL | BAIDU | CUSTOM | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Demographic attributes for the endpoint.
       */
-    var Demographic: js.UndefOr[EndpointDemographic] = js.native
+    var Demographic: js.UndefOr[EndpointDemographic] = js.undefined
     
     /**
       * The date and time when the endpoint was updated, shown in ISO 8601 format.
       */
-    var EffectiveDate: js.UndefOr[String] = js.native
+    var EffectiveDate: js.UndefOr[String] = js.undefined
     
     /**
       * Unused.
       */
-    var EndpointStatus: js.UndefOr[String] = js.native
+    var EndpointStatus: js.UndefOr[String] = js.undefined
     
     /**
       * The endpoint location attributes.
       */
-    var Location: js.UndefOr[EndpointLocation] = js.native
+    var Location: js.UndefOr[EndpointLocation] = js.undefined
     
     /**
       * Custom metrics that your app reports to Amazon Pinpoint.
       */
-    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.native
+    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
     
     /**
       * Indicates whether a user has opted out of receiving messages with one of the following values:
@@ -83,17 +81,17 @@ object typesEndpointRequestMod {
       *
       * NONE - Users has not opted out and receives all messages.
       */
-    var OptOut: js.UndefOr[String] = js.native
+    var OptOut: js.UndefOr[String] = js.undefined
     
     /**
       * The unique ID for the most recent request to update the endpoint.
       */
-    var RequestId: js.UndefOr[String] = js.native
+    var RequestId: js.UndefOr[String] = js.undefined
     
     /**
       * Custom user-specific attributes that your app reports to Amazon Pinpoint.
       */
-    var User: js.UndefOr[EndpointUser] = js.native
+    var User: js.UndefOr[EndpointUser] = js.undefined
   }
   object EndpointRequest {
     
@@ -178,8 +176,9 @@ object typesEndpointRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEndpointRequest extends EndpointRequest {
+  trait UnmarshalledEndpointRequest
+    extends StObject
+       with EndpointRequest {
     
     /**
       * Custom attributes that describe the endpoint by associating a name with an array of values. For example, an attribute named "interests" might have the values ["science", "politics", "travel"]. You can use these attributes as selection criteria when you create a segment of users to engage with a messaging campaign.
@@ -187,31 +186,31 @@ object typesEndpointRequestMod {
       * The following characters are not recommended in attribute names: # : ? \ /. The Amazon Pinpoint console does not display attributes that include these characters in the name. This limitation does not apply to attribute values.
       */
     @JSName("Attributes")
-    var Attributes_UnmarshalledEndpointRequest: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Attributes_UnmarshalledEndpointRequest: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
     /**
       * Demographic attributes for the endpoint.
       */
     @JSName("Demographic")
-    var Demographic_UnmarshalledEndpointRequest: js.UndefOr[UnmarshalledEndpointDemographic] = js.native
+    var Demographic_UnmarshalledEndpointRequest: js.UndefOr[UnmarshalledEndpointDemographic] = js.undefined
     
     /**
       * The endpoint location attributes.
       */
     @JSName("Location")
-    var Location_UnmarshalledEndpointRequest: js.UndefOr[UnmarshalledEndpointLocation] = js.native
+    var Location_UnmarshalledEndpointRequest: js.UndefOr[UnmarshalledEndpointLocation] = js.undefined
     
     /**
       * Custom metrics that your app reports to Amazon Pinpoint.
       */
     @JSName("Metrics")
-    var Metrics_UnmarshalledEndpointRequest: js.UndefOr[StringDictionary[Double]] = js.native
+    var Metrics_UnmarshalledEndpointRequest: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
       * Custom user-specific attributes that your app reports to Amazon Pinpoint.
       */
     @JSName("User")
-    var User_UnmarshalledEndpointRequest: js.UndefOr[UnmarshalledEndpointUser] = js.native
+    var User_UnmarshalledEndpointRequest: js.UndefOr[UnmarshalledEndpointUser] = js.undefined
   }
   object UnmarshalledEndpointRequest {
     

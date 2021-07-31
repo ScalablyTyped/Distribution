@@ -2,17 +2,15 @@ package typings.slickgrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CancelCurrentEdit extends StObject {
     
-    def cancelCurrentEdit(): Boolean = js.native
+    def cancelCurrentEdit(): Boolean
     
-    def commitCurrentEdit(): Boolean = js.native
+    def commitCurrentEdit(): Boolean
   }
   object CancelCurrentEdit {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ColumnId extends StObject {
     
-    var columnId: String = js.native
+    var columnId: String
     
-    var sortAsc: Boolean = js.native
+    var sortAsc: Boolean
   }
   object ColumnId {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SelectActiveRow extends StObject {
     
-    var selectActiveRow: Boolean = js.native
+    var selectActiveRow: Boolean
   }
   object SelectActiveRow {
     

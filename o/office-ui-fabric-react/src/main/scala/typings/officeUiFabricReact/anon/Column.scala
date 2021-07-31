@@ -3,17 +3,15 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: IColumn = js.native
+  var column: IColumn
   
-  var index: Double = js.native
+  var index: Double
   
-  def onMeasureDone(measuredWidth: Double): scala.Unit = js.native
+  def onMeasureDone(measuredWidth: Double): scala.Unit
 }
 object Column {
   

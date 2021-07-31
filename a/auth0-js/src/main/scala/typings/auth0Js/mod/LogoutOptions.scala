@@ -2,17 +2,15 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogoutOptions extends StObject {
   
-  var clientID: js.UndefOr[String] = js.native
+  var clientID: js.UndefOr[String] = js.undefined
   
-  var federated: js.UndefOr[Boolean] = js.native
+  var federated: js.UndefOr[Boolean] = js.undefined
   
-  var returnTo: js.UndefOr[String] = js.native
+  var returnTo: js.UndefOr[String] = js.undefined
 }
 object LogoutOptions {
   

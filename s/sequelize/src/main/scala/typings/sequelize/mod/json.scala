@@ -2,17 +2,15 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait json extends StObject {
   
-  var conditions: js.UndefOr[js.Object] = js.native
+  var conditions: js.UndefOr[js.Object] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double | Boolean] = js.native
+  var value: js.UndefOr[String | Double | Boolean] = js.undefined
 }
 object json {
   

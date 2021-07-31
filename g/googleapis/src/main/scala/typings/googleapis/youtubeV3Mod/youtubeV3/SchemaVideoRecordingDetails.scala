@@ -2,30 +2,28 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Recording information associated with the video.
   */
-@js.native
 trait SchemaVideoRecordingDetails extends StObject {
   
   /**
     * The geolocation information associated with the video.
     */
-  var location: js.UndefOr[SchemaGeoPoint] = js.native
+  var location: js.UndefOr[SchemaGeoPoint] = js.undefined
   
   /**
     * The text description of the location where the video was recorded.
     */
-  var locationDescription: js.UndefOr[String] = js.native
+  var locationDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the video was recorded. The value is specified in
     * ISO 8601 (YYYY-MM-DDThh:mm:ss.sssZ) format.
     */
-  var recordingDate: js.UndefOr[String] = js.native
+  var recordingDate: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoRecordingDetails {
   

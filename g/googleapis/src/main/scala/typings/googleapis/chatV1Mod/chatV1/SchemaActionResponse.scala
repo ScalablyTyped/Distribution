@@ -2,25 +2,23 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters that a bot can use to configure how it&#39;s response is posted.
   */
-@js.native
 trait SchemaActionResponse extends StObject {
   
   /**
     * The type of bot response.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * URL for users to auth or config. (Only for REQUEST_CONFIG response
     * types.)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaActionResponse {
   

@@ -5,21 +5,21 @@ import typings.bmapgl.anon.Target
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OverviewMapControl extends Control {
+trait OverviewMapControl
+  extends StObject
+     with Control {
   
-  def changeView(): Unit = js.native
+  def changeView(): Unit
   
-  def getSize(): Size = js.native
+  def getSize(): Size
   
-  def onviewchanged(event: IsOpen): Unit = js.native
+  def onviewchanged(event: IsOpen): Unit
   
-  def onviewchanging(event: Target): Unit = js.native
+  def onviewchanging(event: Target): Unit
   
-  def setSize(size: Size): Unit = js.native
+  def setSize(size: Size): Unit
 }
 object OverviewMapControl {
   

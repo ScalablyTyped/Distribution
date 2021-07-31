@@ -2,13 +2,11 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parseable extends StObject {
   
-  var parse: js.UndefOr[Boolean] = js.native
+  var parse: js.UndefOr[Boolean] = js.undefined
 }
 object Parseable {
   

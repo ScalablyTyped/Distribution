@@ -2,62 +2,60 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /**
     * The address expressed as a byte offset from the start of the addressable region.
     */
-  var absoluteAddress: js.UndefOr[Double] = js.native
+  var absoluteAddress: js.UndefOr[Double] = js.undefined
   
   /**
     * A human-readable fully qualified name that is associated with the address.
     */
-  var fullyQualifiedName: js.UndefOr[String] = js.native
+  var fullyQualifiedName: js.UndefOr[String] = js.undefined
   
   /**
     * The index within run.addresses of the cached object for this address.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * An open-ended string that identifies the address kind. 'data', 'function', 'header','instruction', 'module',
     * 'page', 'section', 'segment', 'stack', 'stackFrame', 'table' are well-known values.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The number of bytes in this range of addresses.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * A name that is associated with the address, e.g., '.text'.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The byte offset of this address from the absolute or relative address of the parent object.
     */
-  var offsetFromParent: js.UndefOr[Double] = js.native
+  var offsetFromParent: js.UndefOr[Double] = js.undefined
   
   /**
     * The index within run.addresses of the parent object.
     */
-  var parentIndex: js.UndefOr[Double] = js.native
+  var parentIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the address.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The address expressed as a byte offset from the absolute address of the top-most parent object.
     */
-  var relativeAddress: js.UndefOr[Double] = js.native
+  var relativeAddress: js.UndefOr[Double] = js.undefined
 }
 object Address {
   

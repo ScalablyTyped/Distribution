@@ -4,35 +4,33 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldValue extends StObject {
   
-  var column: js.UndefOr[this.type] = js.native
+  var column: js.UndefOr[this.type] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var displayValue: js.UndefOr[js.Any] = js.native
+  var displayValue: js.UndefOr[js.Any] = js.undefined
   
-  var oldValue: js.UndefOr[js.Any] = js.native
+  var oldValue: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowType: js.UndefOr[String] = js.native
+  var rowType: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var watch: js.UndefOr[js.Function] = js.native
+  var watch: js.UndefOr[js.Function] = js.undefined
 }
 object OldValue {
   

@@ -12,49 +12,48 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keytipLayerTypesMod {
   
-  @js.native
   trait IKeytipLayer extends StObject
   
-  @js.native
-  trait IKeytipLayerProps extends ClassAttributes[IKeytipLayer] {
+  trait IKeytipLayerProps
+    extends StObject
+       with ClassAttributes[IKeytipLayer] {
     
     /**
       * Optional callback to access the KeytipLayer component. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IKeytipLayer]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IKeytipLayer]] = js.undefined
     
     /**
       * String to put inside the layer to be used for the aria-describedby for the component with the keytip
       * Should be one of the starting sequences
       */
-    var content: String = js.native
+    var content: String
     
     /**
       * List of key sequences that will exit keytips mode
       */
-    var keytipExitSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.native
+    var keytipExitSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.undefined
     
     /**
       * List of key sequences that execute the return functionality in keytips
       * (going back to the previous level of keytips)
       */
-    var keytipReturnSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.native
+    var keytipReturnSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.undefined
     
     /**
       * List of key sequences that will start keytips mode
       */
-    var keytipStartSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.native
+    var keytipStartSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.undefined
     
     /**
       * Callback function triggered when keytip mode is entered
       */
-    var onEnterKeytipMode: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnterKeytipMode: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback function triggered when keytip mode is exited.
@@ -65,12 +64,12 @@ object keytipLayerTypesMod {
           /* ev */ js.UndefOr[KeyboardEvent[HTMLElement] | (MouseEvent[HTMLElement, NativeMouseEvent])], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * (Optional) Call to provide customized styling.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IKeytipLayerStyleProps, IKeytipLayerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IKeytipLayerStyleProps, IKeytipLayerStyles]] = js.undefined
   }
   object IKeytipLayerProps {
     
@@ -147,13 +146,11 @@ object keytipLayerTypesMod {
     }
   }
   
-  @js.native
   trait IKeytipLayerStyleProps extends StObject
   
-  @js.native
   trait IKeytipLayerStyles extends StObject {
     
-    var innerContent: IStyle = js.native
+    var innerContent: IStyle
   }
   object IKeytipLayerStyles {
     

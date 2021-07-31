@@ -2,31 +2,29 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHsmRequest extends StObject {
   
   /**
     * The identifier (ID) of the cluster that contains the HSM that you are deleting.
     */
-  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId
   
   /**
     * The identifier (ID) of the elastic network interface (ENI) of the HSM that you are deleting.
     */
-  var EniId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.EniId] = js.native
+  var EniId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.EniId] = js.undefined
   
   /**
     * The IP address of the elastic network interface (ENI) of the HSM that you are deleting.
     */
-  var EniIp: js.UndefOr[IpAddress] = js.native
+  var EniIp: js.UndefOr[IpAddress] = js.undefined
   
   /**
     * The identifier (ID) of the HSM that you are deleting.
     */
-  var HsmId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.HsmId] = js.native
+  var HsmId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.HsmId] = js.undefined
 }
 object DeleteHsmRequest {
   

@@ -5,73 +5,71 @@ import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait gridlayoutConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var autoplace: js.UndefOr[Boolean] = js.native
+  var autoplace: js.UndefOr[Boolean] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cellHeight: js.UndefOr[Double] = js.native
+  var cellHeight: js.UndefOr[Double] = js.undefined
   
-  var cellWidth: js.UndefOr[Double] = js.native
+  var cellWidth: js.UndefOr[Double] = js.undefined
   
-  var cells: js.UndefOr[js.Array[_]] = js.native
+  var cells: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var cols: js.UndefOr[js.Array[_]] = js.native
+  var cols: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var factory: js.UndefOr[WebixCallback] = js.native
+  var factory: js.UndefOr[WebixCallback] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var gridColumns: js.UndefOr[Double] = js.native
+  var gridColumns: js.UndefOr[Double] = js.undefined
   
-  var gridRows: js.UndefOr[Double] = js.native
+  var gridRows: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var responsive: js.UndefOr[String] = js.native
+  var responsive: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Array[_]] = js.native
+  var rows: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var visibleBatch: js.UndefOr[String] = js.native
+  var visibleBatch: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object gridlayoutConfig {
   
@@ -115,7 +113,7 @@ object gridlayoutConfig {
     def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
     
     @scala.inline
-    def setCells(value: js.Array[_]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
@@ -124,7 +122,7 @@ object gridlayoutConfig {
     def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def setCols(value: js.Array[_]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
@@ -151,7 +149,7 @@ object gridlayoutConfig {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setFactory(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+    def setFactory(value: WebixCallback): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
@@ -253,7 +251,7 @@ object gridlayoutConfig {
     def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

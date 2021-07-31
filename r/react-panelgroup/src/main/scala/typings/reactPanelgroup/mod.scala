@@ -8,7 +8,6 @@ import typings.reactPanelgroup.reactPanelgroupStrings.row
 import typings.reactPanelgroup.reactPanelgroupStrings.stretch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,16 +19,15 @@ object mod {
   
   type PanelGroup = Component[PropTypes, js.Object, js.Any]
   
-  @js.native
   trait PanelWidth extends StObject {
     
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
-    var resize: js.UndefOr[fixed | dynamic | stretch] = js.native
+    var resize: js.UndefOr[fixed | dynamic | stretch] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var snap: js.UndefOr[js.Array[Double]] = js.native
+    var snap: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PanelWidth {
     
@@ -71,20 +69,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PropTypes extends StObject {
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[row | column] = js.native
+    var direction: js.UndefOr[row | column] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* data */ PanelWidth, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* data */ PanelWidth, Unit]] = js.undefined
     
-    var panelColor: js.UndefOr[String] = js.native
+    var panelColor: js.UndefOr[String] = js.undefined
     
-    var panelWidths: js.UndefOr[js.Array[PanelWidth | Null]] = js.native
+    var panelWidths: js.UndefOr[js.Array[PanelWidth | Null]] = js.undefined
     
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
   }
   object PropTypes {
     

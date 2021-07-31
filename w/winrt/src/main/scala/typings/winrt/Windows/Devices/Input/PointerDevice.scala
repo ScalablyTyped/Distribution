@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointerDevice extends IPointerDevice
+trait PointerDevice
+  extends StObject
+     with IPointerDevice
 object PointerDevice {
   
   @scala.inline

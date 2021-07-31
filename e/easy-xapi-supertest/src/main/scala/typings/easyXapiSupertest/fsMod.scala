@@ -18,7 +18,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsMod {
@@ -51,377 +50,286 @@ object fsMod {
   @scala.inline
   def X_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X_OK")(x.asInstanceOf[js.Any])
   
-  @JSImport("fs", "access")
-  @js.native
-  def access(path: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs", "access")
-  @js.native
-  def access(path: String, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def access(path: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def access(path: String, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "accessSync")
-  @js.native
-  def accessSync(path: String): Unit = js.native
-  @JSImport("fs", "accessSync")
-  @js.native
-  def accessSync(path: String, mode: Double): Unit = js.native
+  @scala.inline
+  def accessSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def accessSync(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "appendFile")
-  @js.native
-  def appendFile(filename: String, data: js.Any): Unit = js.native
-  @JSImport("fs", "appendFile")
-  @js.native
-  def appendFile(filename: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs", "appendFile")
-  @js.native
-  def appendFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
-  @JSImport("fs", "appendFile")
-  @js.native
+  @scala.inline
+  def appendFile(filename: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFile(filename: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFile(filename: String, data: js.Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def appendFile(
     filename: String,
     data: js.Any,
     options: EncodingFlag,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs", "appendFile")
-  @js.native
-  def appendFile(filename: String, data: js.Any, options: Mode): Unit = js.native
-  @JSImport("fs", "appendFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFile(filename: String, data: js.Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def appendFile(
     filename: String,
     data: js.Any,
     options: Mode,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "appendFileSync")
-  @js.native
-  def appendFileSync(filename: String, data: js.Any): Unit = js.native
-  @JSImport("fs", "appendFileSync")
-  @js.native
-  def appendFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
-  @JSImport("fs", "appendFileSync")
-  @js.native
-  def appendFileSync(filename: String, data: js.Any, options: Mode): Unit = js.native
+  @scala.inline
+  def appendFileSync(filename: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(filename: String, data: js.Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "chmod")
-  @js.native
-  def chmod(path: String, mode: String): Unit = js.native
-  @JSImport("fs", "chmod")
-  @js.native
-  def chmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "chmod")
-  @js.native
-  def chmod(path: String, mode: Double): Unit = js.native
-  @JSImport("fs", "chmod")
-  @js.native
-  def chmod(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def chmod(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def chmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def chmod(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def chmod(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "chmodSync")
-  @js.native
-  def chmodSync(path: String, mode: String): Unit = js.native
-  @JSImport("fs", "chmodSync")
-  @js.native
-  def chmodSync(path: String, mode: Double): Unit = js.native
+  @scala.inline
+  def chmodSync(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def chmodSync(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "chown")
-  @js.native
-  def chown(path: String, uid: Double, gid: Double): Unit = js.native
-  @JSImport("fs", "chown")
-  @js.native
+  @scala.inline
+  def chown(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def chown(
     path: String,
     uid: Double,
     gid: Double,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "chownSync")
-  @js.native
-  def chownSync(path: String, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def chownSync(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "close")
-  @js.native
-  def close(fd: Double): Unit = js.native
-  @JSImport("fs", "close")
-  @js.native
-  def close(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def close(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def close(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "closeSync")
-  @js.native
-  def closeSync(fd: Double): Unit = js.native
+  @scala.inline
+  def closeSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs", "createReadStream")
-  @js.native
-  def createReadStream(path: String): ReadStream = js.native
-  @JSImport("fs", "createReadStream")
-  @js.native
-  def createReadStream(path: String, options: BufferSize): ReadStream = js.native
-  @JSImport("fs", "createReadStream")
-  @js.native
-  def createReadStream(path: String, options: Fd): ReadStream = js.native
+  @scala.inline
+  def createReadStream(path: String): ReadStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any]).asInstanceOf[ReadStream]
+  @scala.inline
+  def createReadStream(path: String, options: BufferSize): ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
+  @scala.inline
+  def createReadStream(path: String, options: Fd): ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
   
-  @JSImport("fs", "createWriteStream")
-  @js.native
-  def createWriteStream(path: String): WriteStream = js.native
-  @JSImport("fs", "createWriteStream")
-  @js.native
-  def createWriteStream(path: String, options: Flags): WriteStream = js.native
+  @scala.inline
+  def createWriteStream(path: String): WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[WriteStream]
+  @scala.inline
+  def createWriteStream(path: String, options: Flags): WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WriteStream]
   
-  @JSImport("fs", "exists")
-  @js.native
-  def exists(path: String): Unit = js.native
-  @JSImport("fs", "exists")
-  @js.native
-  def exists(path: String, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def exists(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def exists(path: String, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "existsSync")
-  @js.native
-  def existsSync(path: String): Boolean = js.native
+  @scala.inline
+  def existsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fs", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: String): Unit = js.native
-  @JSImport("fs", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: Double): Unit = js.native
-  @JSImport("fs", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def fchmod(fd: Double, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fchmod(fd: Double, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fchmod(fd: Double, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fchmod(fd: Double, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "fchmodSync")
-  @js.native
-  def fchmodSync(fd: Double, mode: String): Unit = js.native
-  @JSImport("fs", "fchmodSync")
-  @js.native
-  def fchmodSync(fd: Double, mode: Double): Unit = js.native
+  @scala.inline
+  def fchmodSync(fd: Double, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fchmodSync(fd: Double, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "fchown")
-  @js.native
-  def fchown(fd: Double, uid: Double, gid: Double): Unit = js.native
-  @JSImport("fs", "fchown")
-  @js.native
+  @scala.inline
+  def fchown(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def fchown(
     fd: Double,
     uid: Double,
     gid: Double,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "fchownSync")
-  @js.native
-  def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def fchownSync(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownSync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "fstat")
-  @js.native
-  def fstat(fd: Double): Unit = js.native
-  @JSImport("fs", "fstat")
-  @js.native
-  def fstat(fd: Double, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+  @scala.inline
+  def fstat(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def fstat(fd: Double, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "fstatSync")
-  @js.native
-  def fstatSync(fd: Double): Stats = js.native
+  @scala.inline
+  def fstatSync(fd: Double): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Stats]
   
-  @JSImport("fs", "fsync")
-  @js.native
-  def fsync(fd: Double): Unit = js.native
-  @JSImport("fs", "fsync")
-  @js.native
-  def fsync(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def fsync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def fsync(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "fsyncSync")
-  @js.native
-  def fsyncSync(fd: Double): Unit = js.native
+  @scala.inline
+  def fsyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double): Unit = js.native
-  @JSImport("fs", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, len: Double): Unit = js.native
-  @JSImport("fs", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, len: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def ftruncate(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncate(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncate(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncate(fd: Double, len: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "ftruncateSync")
-  @js.native
-  def ftruncateSync(fd: Double): Unit = js.native
-  @JSImport("fs", "ftruncateSync")
-  @js.native
-  def ftruncateSync(fd: Double, len: Double): Unit = js.native
+  @scala.inline
+  def ftruncateSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncateSync(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs", "futimes")
-  @js.native
+  @scala.inline
+  def futimes(fd: Double, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def futimes(
     fd: Double,
     atime: Double,
     mtime: Double,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
-  @JSImport("fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Date, mtime: Date): Unit = js.native
-  @JSImport("fs", "futimes")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimes(fd: Double, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def futimes(
     fd: Double,
     atime: Date,
     mtime: Date,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "lchmod")
-  @js.native
-  def lchmod(path: String, mode: String): Unit = js.native
-  @JSImport("fs", "lchmod")
-  @js.native
-  def lchmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "lchmod")
-  @js.native
-  def lchmod(path: String, mode: Double): Unit = js.native
-  @JSImport("fs", "lchmod")
-  @js.native
-  def lchmod(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def lchmod(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lchmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lchmod(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lchmod(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "lchmodSync")
-  @js.native
-  def lchmodSync(path: String, mode: String): Unit = js.native
-  @JSImport("fs", "lchmodSync")
-  @js.native
-  def lchmodSync(path: String, mode: Double): Unit = js.native
+  @scala.inline
+  def lchmodSync(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lchmodSync(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "lchown")
-  @js.native
-  def lchown(path: String, uid: Double, gid: Double): Unit = js.native
-  @JSImport("fs", "lchown")
-  @js.native
+  @scala.inline
+  def lchown(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def lchown(
     path: String,
     uid: Double,
     gid: Double,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "lchownSync")
-  @js.native
-  def lchownSync(path: String, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def lchownSync(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "link")
-  @js.native
-  def link(srcpath: String, dstpath: String): Unit = js.native
-  @JSImport("fs", "link")
-  @js.native
+  @scala.inline
+  def link(srcpath: String, dstpath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def link(
     srcpath: String,
     dstpath: String,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "linkSync")
-  @js.native
-  def linkSync(srcpath: String, dstpath: String): Unit = js.native
+  @scala.inline
+  def linkSync(srcpath: String, dstpath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "lstat")
-  @js.native
-  def lstat(path: String): Unit = js.native
-  @JSImport("fs", "lstat")
-  @js.native
-  def lstat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+  @scala.inline
+  def lstat(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def lstat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "lstatSync")
-  @js.native
-  def lstatSync(path: String): Stats = js.native
+  @scala.inline
+  def lstatSync(path: String): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("lstatSync")(path.asInstanceOf[js.Any]).asInstanceOf[Stats]
   
-  @JSImport("fs", "mkdir")
-  @js.native
-  def mkdir(path: String): Unit = js.native
-  @JSImport("fs", "mkdir")
-  @js.native
-  def mkdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "mkdir")
-  @js.native
-  def mkdir(path: String, mode: String): Unit = js.native
-  @JSImport("fs", "mkdir")
-  @js.native
-  def mkdir(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "mkdir")
-  @js.native
-  def mkdir(path: String, mode: Double): Unit = js.native
-  @JSImport("fs", "mkdir")
-  @js.native
-  def mkdir(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def mkdir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: String): Unit = js.native
-  @JSImport("fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: String, mode: String): Unit = js.native
-  @JSImport("fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: String, mode: Double): Unit = js.native
+  @scala.inline
+  def mkdirSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mkdirSync(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdirSync(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "open")
-  @js.native
-  def open(path: String, flags: String): Unit = js.native
-  @JSImport("fs", "open")
-  @js.native
-  def open(path: String, flags: String, callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]): Unit = js.native
-  @JSImport("fs", "open")
-  @js.native
-  def open(path: String, flags: String, mode: String): Unit = js.native
-  @JSImport("fs", "open")
-  @js.native
+  @scala.inline
+  def open(path: String, flags: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(
+    path: String,
+    flags: String,
+    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(path: String, flags: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def open(
     path: String,
     flags: String,
     mode: String,
-    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]
-  ): Unit = js.native
-  @JSImport("fs", "open")
-  @js.native
-  def open(path: String, flags: String, mode: Double): Unit = js.native
-  @JSImport("fs", "open")
-  @js.native
+    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(path: String, flags: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def open(
     path: String,
     flags: String,
     mode: Double,
-    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "openSync")
-  @js.native
-  def openSync(path: String, flags: String): Double = js.native
-  @JSImport("fs", "openSync")
-  @js.native
-  def openSync(path: String, flags: String, mode: String): Double = js.native
-  @JSImport("fs", "openSync")
-  @js.native
-  def openSync(path: String, flags: String, mode: Double): Double = js.native
+  @scala.inline
+  def openSync(path: String, flags: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def openSync(path: String, flags: String, mode: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def openSync(path: String, flags: String, mode: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fs", "read")
-  @js.native
-  def read(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Unit = js.native
-  @JSImport("fs", "read")
-  @js.native
+  @scala.inline
+  def read(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Buffer,
@@ -429,261 +337,201 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "readFile")
-  @js.native
-  def readFile(filename: String, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
-  @JSImport("fs", "readFile")
-  @js.native
+  @scala.inline
+  def readFile(filename: String, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def readFile(
     filename: String,
     encoding: String,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = js.native
-  @JSImport("fs", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filename.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def readFile(
     filename: String,
     options: Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = js.native
-  @JSImport("fs", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def readFile(
     filename: String,
     options: `1`,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "readFileSync")
-  @js.native
-  def readFileSync(filename: String): Buffer = js.native
-  @JSImport("fs", "readFileSync")
-  @js.native
-  def readFileSync(filename: String, encoding: String): String = js.native
-  @JSImport("fs", "readFileSync")
-  @js.native
-  def readFileSync(filename: String, options: Flag): String = js.native
-  @JSImport("fs", "readFileSync")
-  @js.native
-  def readFileSync(filename: String, options: `1`): Buffer = js.native
+  @scala.inline
+  def readFileSync(filename: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def readFileSync(filename: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(filename: String, options: Flag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(filename: String, options: `1`): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("fs", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
+  @scala.inline
+  def readSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fs", "readdir")
-  @js.native
-  def readdir(path: String): Unit = js.native
-  @JSImport("fs", "readdir")
-  @js.native
-  def readdir(path: String, callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def readdir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def readdir(path: String, callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "readdirSync")
-  @js.native
-  def readdirSync(path: String): js.Array[String] = js.native
+  @scala.inline
+  def readdirSync(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("fs", "readlink")
-  @js.native
-  def readlink(path: String): Unit = js.native
-  @JSImport("fs", "readlink")
-  @js.native
-  def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, _]): Unit = js.native
+  @scala.inline
+  def readlink(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "readlinkSync")
-  @js.native
-  def readlinkSync(path: String): String = js.native
+  @scala.inline
+  def readlinkSync(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fs", "realpath")
-  @js.native
-  def realpath(path: String): Unit = js.native
-  @JSImport("fs", "realpath")
-  @js.native
+  @scala.inline
+  def realpath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def realpath(
     path: String,
     cache: StringDictionary[String],
-    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
-  ): Unit = js.native
-  @JSImport("fs", "realpath")
-  @js.native
-  def realpath(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def realpath(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "realpathSync")
-  @js.native
-  def realpathSync(path: String): String = js.native
-  @JSImport("fs", "realpathSync")
-  @js.native
-  def realpathSync(path: String, cache: StringDictionary[String]): String = js.native
+  @scala.inline
+  def realpathSync(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("realpathSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def realpathSync(path: String, cache: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("realpathSync")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("fs", "rename")
-  @js.native
-  def rename(oldPath: String, newPath: String): Unit = js.native
-  @JSImport("fs", "rename")
-  @js.native
+  @scala.inline
+  def rename(oldPath: String, newPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def rename(
     oldPath: String,
     newPath: String,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "renameSync")
-  @js.native
-  def renameSync(oldPath: String, newPath: String): Unit = js.native
+  @scala.inline
+  def renameSync(oldPath: String, newPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameSync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "rmdir")
-  @js.native
-  def rmdir(path: String): Unit = js.native
-  @JSImport("fs", "rmdir")
-  @js.native
-  def rmdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def rmdir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def rmdir(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "rmdirSync")
-  @js.native
-  def rmdirSync(path: String): Unit = js.native
+  @scala.inline
+  def rmdirSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs", "stat")
-  @js.native
-  def stat(path: String): Unit = js.native
-  @JSImport("fs", "stat")
-  @js.native
-  def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+  @scala.inline
+  def stat(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "statSync")
-  @js.native
-  def statSync(path: String): Stats = js.native
+  @scala.inline
+  def statSync(path: String): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any]).asInstanceOf[Stats]
   
-  @JSImport("fs", "symlink")
-  @js.native
-  def symlink(srcpath: String, dstpath: String): Unit = js.native
-  @JSImport("fs", "symlink")
-  @js.native
-  def symlink(
-    srcpath: String,
-    dstpath: String,
-    `type`: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
-  @JSImport("fs", "symlink")
-  @js.native
-  def symlink(srcpath: String, dstpath: String, `type`: String): Unit = js.native
-  @JSImport("fs", "symlink")
-  @js.native
+  @scala.inline
+  def symlink(srcpath: String, dstpath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symlink(srcpath: String, dstpath: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def symlink(
     srcpath: String,
     dstpath: String,
     `type`: String,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symlink(
+    srcpath: String,
+    dstpath: String,
+    `type`: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "symlinkSync")
-  @js.native
-  def symlinkSync(srcpath: String, dstpath: String): Unit = js.native
-  @JSImport("fs", "symlinkSync")
-  @js.native
-  def symlinkSync(srcpath: String, dstpath: String, `type`: String): Unit = js.native
+  @scala.inline
+  def symlinkSync(srcpath: String, dstpath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symlinkSync(srcpath: String, dstpath: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "truncate")
-  @js.native
-  def truncate(path: String): Unit = js.native
-  @JSImport("fs", "truncate")
-  @js.native
-  def truncate(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
-  @JSImport("fs", "truncate")
-  @js.native
-  def truncate(path: String, len: Double): Unit = js.native
-  @JSImport("fs", "truncate")
-  @js.native
-  def truncate(path: String, len: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def truncate(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def truncate(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def truncate(path: String, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def truncate(path: String, len: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "truncateSync")
-  @js.native
-  def truncateSync(path: String): Unit = js.native
-  @JSImport("fs", "truncateSync")
-  @js.native
-  def truncateSync(path: String, len: Double): Unit = js.native
+  @scala.inline
+  def truncateSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def truncateSync(path: String, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "unlink")
-  @js.native
-  def unlink(path: String): Unit = js.native
-  @JSImport("fs", "unlink")
-  @js.native
-  def unlink(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  @scala.inline
+  def unlink(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unlink(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "unlinkSync")
-  @js.native
-  def unlinkSync(path: String): Unit = js.native
+  @scala.inline
+  def unlinkSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs", "unwatchFile")
-  @js.native
-  def unwatchFile(filename: String): Unit = js.native
-  @JSImport("fs", "unwatchFile")
-  @js.native
-  def unwatchFile(filename: String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
+  @scala.inline
+  def unwatchFile(filename: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unwatchFile(filename: String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "utimes")
-  @js.native
-  def utimes(path: String, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs", "utimes")
-  @js.native
+  @scala.inline
+  def utimes(path: String, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def utimes(
     path: String,
     atime: Double,
     mtime: Double,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
-  @JSImport("fs", "utimes")
-  @js.native
-  def utimes(path: String, atime: Date, mtime: Date): Unit = js.native
-  @JSImport("fs", "utimes")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimes(path: String, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def utimes(
     path: String,
     atime: Date,
     mtime: Date,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "utimesSync")
-  @js.native
-  def utimesSync(path: String, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs", "utimesSync")
-  @js.native
-  def utimesSync(path: String, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def utimesSync(path: String, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: String, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "watch")
-  @js.native
-  def watch(filename: String): FSWatcher = js.native
-  @JSImport("fs", "watch")
-  @js.native
-  def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
-  @JSImport("fs", "watch")
-  @js.native
-  def watch(filename: String, options: Persistent): FSWatcher = js.native
-  @JSImport("fs", "watch")
-  @js.native
+  @scala.inline
+  def watch(filename: String): FSWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: String, options: Persistent): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch(
     filename: String,
     options: Persistent,
-    listener: js.Function2[/* event */ String, /* filename */ String, _]
-  ): FSWatcher = js.native
+    listener: js.Function2[/* event */ String, /* filename */ String, js.Any]
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  @JSImport("fs", "watchFile")
-  @js.native
-  def watchFile(filename: String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
-  @JSImport("fs", "watchFile")
-  @js.native
+  @scala.inline
+  def watchFile(filename: String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def watchFile(
     filename: String,
     options: Interval,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "write")
-  @js.native
-  def write(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Unit = js.native
-  @JSImport("fs", "write")
-  @js.native
+  @scala.inline
+  def write(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Buffer,
@@ -691,50 +539,40 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "writeFile")
-  @js.native
-  def writeFile(filename: String, data: js.Any): Unit = js.native
-  @JSImport("fs", "writeFile")
-  @js.native
-  def writeFile(filename: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs", "writeFile")
-  @js.native
-  def writeFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
-  @JSImport("fs", "writeFile")
-  @js.native
+  @scala.inline
+  def writeFile(filename: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(filename: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(filename: String, data: js.Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def writeFile(
     filename: String,
     data: js.Any,
     options: EncodingFlag,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs", "writeFile")
-  @js.native
-  def writeFile(filename: String, data: js.Any, options: Mode): Unit = js.native
-  @JSImport("fs", "writeFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(filename: String, data: js.Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def writeFile(
     filename: String,
     data: js.Any,
     options: Mode,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "writeFileSync")
-  @js.native
-  def writeFileSync(filename: String, data: js.Any): Unit = js.native
-  @JSImport("fs", "writeFileSync")
-  @js.native
-  def writeFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
-  @JSImport("fs", "writeFileSync")
-  @js.native
-  def writeFileSync(filename: String, data: js.Any, options: Mode): Unit = js.native
+  @scala.inline
+  def writeFileSync(filename: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(filename: String, data: js.Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
+  @scala.inline
+  def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @js.native
   trait FSWatcher extends EventEmitter {
@@ -748,48 +586,47 @@ object fsMod {
     def close(): Unit = js.native
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var atime: Date = js.native
+    var atime: Date
     
-    var blksize: Double = js.native
+    var blksize: Double
     
-    var blocks: Double = js.native
+    var blocks: Double
     
-    var ctime: Date = js.native
+    var ctime: Date
     
-    var dev: Double = js.native
+    var dev: Double
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var ino: Double = js.native
+    var ino: Double
     
-    def isBlockDevice(): Boolean = js.native
+    def isBlockDevice(): Boolean
     
-    def isCharacterDevice(): Boolean = js.native
+    def isCharacterDevice(): Boolean
     
-    def isDirectory(): Boolean = js.native
+    def isDirectory(): Boolean
     
-    def isFIFO(): Boolean = js.native
+    def isFIFO(): Boolean
     
-    def isFile(): Boolean = js.native
+    def isFile(): Boolean
     
-    def isSocket(): Boolean = js.native
+    def isSocket(): Boolean
     
-    def isSymbolicLink(): Boolean = js.native
+    def isSymbolicLink(): Boolean
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var nlink: Double = js.native
+    var nlink: Double
     
-    var rdev: Double = js.native
+    var rdev: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Stats {
     

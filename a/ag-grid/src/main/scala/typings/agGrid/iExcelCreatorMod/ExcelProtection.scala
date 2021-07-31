@@ -2,15 +2,13 @@ package typings.agGrid.iExcelCreatorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelProtection extends StObject {
   
-  var hideFormula: Boolean = js.native
+  var hideFormula: Boolean
   
-  var `protected`: Boolean = js.native
+  var `protected`: Boolean
 }
 object ExcelProtection {
   

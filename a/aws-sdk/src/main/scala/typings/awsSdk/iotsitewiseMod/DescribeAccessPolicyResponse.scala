@@ -2,46 +2,44 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccessPolicyResponse extends StObject {
   
   /**
     * The ARN of the access policy, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId} 
     */
-  var accessPolicyArn: ARN = js.native
+  var accessPolicyArn: ARN
   
   /**
     * The date the access policy was created, in Unix epoch time.
     */
-  var accessPolicyCreationDate: Timestamp = js.native
+  var accessPolicyCreationDate: Timestamp
   
   /**
     * The ID of the access policy.
     */
-  var accessPolicyId: ID = js.native
+  var accessPolicyId: ID
   
   /**
     * The identity (AWS SSO user, AWS SSO group, or IAM user) to which this access policy applies.
     */
-  var accessPolicyIdentity: Identity = js.native
+  var accessPolicyIdentity: Identity
   
   /**
     * The date the access policy was last updated, in Unix epoch time.
     */
-  var accessPolicyLastUpdateDate: Timestamp = js.native
+  var accessPolicyLastUpdateDate: Timestamp
   
   /**
     * The access policy permission. Note that a project ADMINISTRATOR is also known as a project owner.
     */
-  var accessPolicyPermission: Permission = js.native
+  var accessPolicyPermission: Permission
   
   /**
     * The AWS IoT SiteWise Monitor resource (portal or project) to which this access policy provides access.
     */
-  var accessPolicyResource: Resource = js.native
+  var accessPolicyResource: Resource
 }
 object DescribeAccessPolicyResponse {
   

@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "TermQuery")
 @js.native
-class TermQuery protected () extends Query {
+class TermQuery protected ()
+  extends StObject
+     with Query {
   /*
     A Query that matches documents containing a term. This may be
     combined with other terms with a BooleanQuery.

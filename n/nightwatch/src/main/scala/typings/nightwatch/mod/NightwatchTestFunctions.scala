@@ -3,25 +3,24 @@ package typings.nightwatch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchTestFunctions
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[js.Any]
      with NightwatchTests {
   
-  var `@disabled`: js.UndefOr[Boolean] = js.native
+  var `@disabled`: js.UndefOr[Boolean] = js.undefined
   
-  var `@tags`: js.UndefOr[String | js.Array[String]] = js.native
+  var `@tags`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var after: js.UndefOr[NightwatchTestHook] = js.native
+  var after: js.UndefOr[NightwatchTestHook] = js.undefined
   
-  var afterEach: js.UndefOr[NightwatchTestHook] = js.native
+  var afterEach: js.UndefOr[NightwatchTestHook] = js.undefined
   
-  var before: js.UndefOr[NightwatchTestHook] = js.native
+  var before: js.UndefOr[NightwatchTestHook] = js.undefined
   
-  var beforeEach: js.UndefOr[NightwatchTestHook] = js.native
+  var beforeEach: js.UndefOr[NightwatchTestHook] = js.undefined
 }
 object NightwatchTestFunctions {
   

@@ -3,7 +3,6 @@ package typings.typeorm.typingsMod
 import typings.typeorm.platformToolsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser/driver/mongodb/typings", "Server")
@@ -21,5 +20,5 @@ class Server protected () extends EventEmitter {
   /**
     * All raw connections.
     */
-  def connections(): js.Array[_] = js.native
+  def connections(): js.Array[js.Any] = js.native
 }

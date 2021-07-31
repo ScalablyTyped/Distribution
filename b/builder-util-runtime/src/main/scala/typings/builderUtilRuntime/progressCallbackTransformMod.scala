@@ -4,7 +4,6 @@ import typings.builderUtilRuntime.cancellationTokenMod.CancellationToken
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressCallbackTransformMod {
@@ -15,7 +14,7 @@ object progressCallbackTransformMod {
     def this(
       total: Double,
       cancellationToken: CancellationToken,
-      onProgress: js.Function1[/* info */ ProgressInfo, _]
+      onProgress: js.Function1[/* info */ ProgressInfo, js.Any]
     ) = this()
     
     def _flush(callback: js.Any): Unit = js.native
@@ -37,18 +36,17 @@ object progressCallbackTransformMod {
     var transferred: js.Any = js.native
   }
   
-  @js.native
   trait ProgressInfo extends StObject {
     
-    var bytesPerSecond: Double = js.native
+    var bytesPerSecond: Double
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var percent: Double = js.native
+    var percent: Double
     
-    var total: Double = js.native
+    var total: Double
     
-    var transferred: Double = js.native
+    var transferred: Double
   }
   object ProgressInfo {
     

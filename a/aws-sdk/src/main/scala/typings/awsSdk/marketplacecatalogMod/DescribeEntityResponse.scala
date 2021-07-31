@@ -2,36 +2,34 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEntityResponse extends StObject {
   
   /**
     * This stringified JSON object includes the details of the entity.
     */
-  var Details: js.UndefOr[Json] = js.native
+  var Details: js.UndefOr[Json] = js.undefined
   
   /**
     * The ARN associated to the unique identifier for the change set referenced in this request.
     */
-  var EntityArn: js.UndefOr[ARN] = js.native
+  var EntityArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the entity, in the format of EntityId@RevisionId.
     */
-  var EntityIdentifier: js.UndefOr[Identifier] = js.native
+  var EntityIdentifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * The named type of the entity, in the format of EntityType@Version.
     */
-  var EntityType: js.UndefOr[typings.awsSdk.marketplacecatalogMod.EntityType] = js.native
+  var EntityType: js.UndefOr[typings.awsSdk.marketplacecatalogMod.EntityType] = js.undefined
   
   /**
     * The last modified date of the entity, in ISO 8601 format (2018-02-27T13:45:22Z).
     */
-  var LastModifiedDate: js.UndefOr[StringValue] = js.native
+  var LastModifiedDate: js.UndefOr[StringValue] = js.undefined
 }
 object DescribeEntityResponse {
   

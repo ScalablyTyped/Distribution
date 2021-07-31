@@ -2,36 +2,34 @@ package typings.nprogress
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<nprogress.nprogress.NProgressOptions> */
-  @js.native
   trait PartialNProgressOptions extends StObject {
     
-    var barSelector: js.UndefOr[String] = js.native
+    var barSelector: js.UndefOr[String] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
-    var parent: js.UndefOr[String] = js.native
+    var parent: js.UndefOr[String] = js.undefined
     
-    var positionUsing: js.UndefOr[String] = js.native
+    var positionUsing: js.UndefOr[String] = js.undefined
     
-    var showSpinner: js.UndefOr[Boolean] = js.native
+    var showSpinner: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var spinnerSelector: js.UndefOr[String] = js.native
+    var spinnerSelector: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var trickle: js.UndefOr[Boolean] = js.native
+    var trickle: js.UndefOr[Boolean] = js.undefined
     
-    var trickleSpeed: js.UndefOr[Double] = js.native
+    var trickleSpeed: js.UndefOr[Double] = js.undefined
   }
   object PartialNProgressOptions {
     

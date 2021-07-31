@@ -5,10 +5,8 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverProvider extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait HoverProvider extends StObject {
     * position will be merged by the editor. A hover can have a range which defaults
     * to the word range at the position when omitted.
     */
-  def provideHover(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Hover] = js.native
+  def provideHover(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Hover]
 }
 object HoverProvider {
   

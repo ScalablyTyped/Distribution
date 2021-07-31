@@ -7,7 +7,6 @@ import typings.braintreeWeb.coreMod.BraintreeError
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object venmoMod {
@@ -18,7 +17,7 @@ object venmoMod {
     var VERSION: String = js.native
     
     def create(options: AllowNewBrowserTab): Unit = js.native
-    def create(options: AllowNewBrowserTab, callback: callback[_]): Unit = js.native
+    def create(options: AllowNewBrowserTab, callback: callback[js.Any]): Unit = js.native
     /**
       * braintree.venmo.create({
       *   client: clientInstance
@@ -63,7 +62,7 @@ object venmoMod {
     
     def tokenize(): Unit = js.native
     def tokenize(
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[
           /* error */ js.UndefOr[BraintreeError], 
           /* payload */ js.UndefOr[VenmoTokenizePayload], 
@@ -120,14 +119,13 @@ object venmoMod {
     def tokenize_Promise(options: ProcessResultsDelay): js.Promise[VenmoTokenizePayload] = js.native
   }
   
-  @js.native
   trait VenmoTokenizePayload extends StObject {
     
-    var details: Username = js.native
+    var details: Username
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object VenmoTokenizePayload {
     

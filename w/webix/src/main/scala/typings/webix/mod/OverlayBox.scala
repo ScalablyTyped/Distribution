@@ -2,15 +2,13 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlayBox extends StObject {
   
-  def hideOverlay(): Unit = js.native
+  def hideOverlay(): Unit
   
-  def showOverlay(): Unit = js.native
+  def showOverlay(): Unit
 }
 object OverlayBox {
   

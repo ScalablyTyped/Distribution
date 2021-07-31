@@ -3,26 +3,24 @@ package typings.googleCloudKms.mod
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GAX {
   
   /** https://googleapis.github.io/gax-nodejs/global.html#BackoffSettings */
-  @js.native
   trait BackoffSettings extends StObject {
     
-    var initialRetryDelayMillis: Double = js.native
+    var initialRetryDelayMillis: Double
     
-    var initialRpcTimeoutMillis: Double = js.native
+    var initialRpcTimeoutMillis: Double
     
-    var maxRetryDelayMillis: Double = js.native
+    var maxRetryDelayMillis: Double
     
-    var maxRpcTimeoutMillis: Double = js.native
+    var maxRpcTimeoutMillis: Double
     
-    var retryDelayMultiplier: Double = js.native
+    var retryDelayMultiplier: Double
     
-    var totalTimeoutMillis: Double = js.native
+    var totalTimeoutMillis: Double
   }
   object BackoffSettings {
     
@@ -63,22 +61,21 @@ object GAX {
   }
   
   /** https://googleapis.github.io/gax-nodejs/global.html#CallOptions */
-  @js.native
   trait CallOptions extends StObject {
     
-    var autoPaginate: js.UndefOr[Boolean] = js.native
+    var autoPaginate: js.UndefOr[Boolean] = js.undefined
     
-    var isBundling: js.UndefOr[Boolean] = js.native
+    var isBundling: js.UndefOr[Boolean] = js.undefined
     
-    var longrunning: js.UndefOr[BackoffSettings] = js.native
+    var longrunning: js.UndefOr[BackoffSettings] = js.undefined
     
-    var pageToken: js.UndefOr[js.Object] = js.native
+    var pageToken: js.UndefOr[js.Object] = js.undefined
     
-    var promise: js.UndefOr[PromiseConstructor] = js.native
+    var promise: js.UndefOr[PromiseConstructor] = js.undefined
     
-    var retry: js.UndefOr[RetryOptions] = js.native
+    var retry: js.UndefOr[RetryOptions] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object CallOptions {
     
@@ -136,12 +133,11 @@ object GAX {
   }
   
   /** https://googleapis.github.io/gax-nodejs/global.html#RetryOptions */
-  @js.native
   trait RetryOptions extends StObject {
     
-    var backoffSettings: BackoffSettings = js.native
+    var backoffSettings: BackoffSettings
     
-    var retryCodes: js.Array[String] = js.native
+    var retryCodes: js.Array[String]
   }
   object RetryOptions {
     

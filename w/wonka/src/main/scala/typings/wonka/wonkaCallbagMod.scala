@@ -6,18 +6,19 @@ import typings.wonka.wonkaNumbers.`2`
 import typings.wonka.wonkaTypesMod.Source
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wonkaCallbagMod {
   
-  @JSImport("wonka/src/web/wonka_callbag", "fromCallbag")
+  @JSImport("wonka/src/web/wonka_callbag", JSImport.Namespace)
   @js.native
-  def fromCallbag[T](callbag: Callbag[Unit, T]): Source[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wonka/src/web/wonka_callbag", "toCallbag")
-  @js.native
-  def toCallbag[T](source: Source[T]): Callbag[Unit, T] = js.native
+  @scala.inline
+  def fromCallbag[T](callbag: Callbag[Unit, T]): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallbag")(callbag.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
+  
+  @scala.inline
+  def toCallbag[T](source: Source[T]): Callbag[Unit, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCallbag")(source.asInstanceOf[js.Any]).asInstanceOf[Callbag[Unit, T]]
   
   @js.native
   trait Callbag[I, O] extends StObject {

@@ -2,32 +2,30 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGViewElement extends StObject {
   
   @JSName("MSHTML.SVGViewElement_typekey")
-  var MSHTMLDotSVGViewElement_typekey: SVGViewElement = js.native
+  var MSHTMLDotSVGViewElement_typekey: SVGViewElement
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio
   
-  val viewBox: SVGAnimatedRect = js.native
+  val viewBox: SVGAnimatedRect
   
-  var viewTarget: SVGStringList = js.native
+  var viewTarget: SVGStringList
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  val zoomAndPan: Double = js.native
+  val zoomAndPan: Double
 }
 object SVGViewElement {
   

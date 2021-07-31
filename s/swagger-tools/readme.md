@@ -12,7 +12,7 @@ Various tools for using and integrating with Swagger.
 | Keywords           | api, connect, middleware, swagger |
 | # releases         | 0 |
 | # dependents       | 141 |
-| # downloads        | 6716026 |
+| # downloads        | 8883767 |
 | # stars            | 11 |
 
 ## Links

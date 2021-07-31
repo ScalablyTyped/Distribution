@@ -12,7 +12,7 @@ a simple ring buffer data structure
 | Keywords           | ring, buffer, circular, queue, ring buffer, circular buffer, data structure |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 8687819 |
+| # downloads        | 3179710 |
 | # stars            | 0 |
 
 ## Links

@@ -2,30 +2,28 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMShapeVertices extends StObject {
   
   /**
     * The indices.
     */
-  var indices: js.UndefOr[Double] = js.native
+  var indices: js.UndefOr[Double] = js.undefined
   
   /**
     * The shape.
     */
-  var shapes: js.UndefOr[String] = js.native
+  var shapes: js.UndefOr[String] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMShapeVertices = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMShapeVertices
 }
 object CIMShapeVertices {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMShapeVertices): CIMShapeVertices = {
+  def apply(): CIMShapeVertices = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMShapeVertices")
     __obj.asInstanceOf[CIMShapeVertices]
   }
   

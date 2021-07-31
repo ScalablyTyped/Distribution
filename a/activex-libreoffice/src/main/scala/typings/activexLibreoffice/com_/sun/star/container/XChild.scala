@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface normally is only supported if the objects all have exactly one dedicated parent container.
   */
-@js.native
-trait XChild extends XInterface {
+trait XChild
+  extends StObject
+     with XInterface {
   
   /** grants access to the object containing this content. */
-  var Parent: XInterface = js.native
+  var Parent: XInterface
   
   /** grants access to the object containing this content. */
-  def getParent(): XInterface = js.native
+  def getParent(): XInterface
   
   /**
     * sets the parent to this object.
     * @throws com::sun::star::lang::NoSupportException if the name of this object cannot be changed.
     */
-  def setParent(Parent: XInterface): Unit = js.native
+  def setParent(Parent: XInterface): Unit
 }
 object XChild {
   

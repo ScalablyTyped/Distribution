@@ -3,7 +3,6 @@ package typings.stormReactDiagrams
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseWidgetMod {
@@ -23,23 +22,22 @@ object baseWidgetMod {
     def getProps(): js.Any = js.native
   }
   
-  @js.native
   trait BaseWidgetProps extends StObject {
     
     /**
       * Override the base class name
       */
-    var baseClass: js.UndefOr[String] = js.native
+    var baseClass: js.UndefOr[String] = js.undefined
     
     /**
       * append additional classes
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Additional props to add
       */
-    var extraProps: js.UndefOr[js.Any] = js.native
+    var extraProps: js.UndefOr[js.Any] = js.undefined
   }
   object BaseWidgetProps {
     

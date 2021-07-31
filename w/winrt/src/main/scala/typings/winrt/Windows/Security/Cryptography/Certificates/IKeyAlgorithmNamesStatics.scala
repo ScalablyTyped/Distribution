@@ -2,27 +2,25 @@ package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKeyAlgorithmNamesStatics extends StObject {
   
-  var dsa: String = js.native
+  var dsa: String
   
-  var ecdh256: String = js.native
+  var ecdh256: String
   
-  var ecdh384: String = js.native
+  var ecdh384: String
   
-  var ecdh521: String = js.native
+  var ecdh521: String
   
-  var ecdsa256: String = js.native
+  var ecdsa256: String
   
-  var ecdsa384: String = js.native
+  var ecdsa384: String
   
-  var ecdsa521: String = js.native
+  var ecdsa521: String
   
-  var rsa: String = js.native
+  var rsa: String
 }
 object IKeyAlgorithmNamesStatics {
   

@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,43 +13,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * They can also simply be used to represent a point light for your own purposes.
   */
-@js.native
 trait Light extends StObject {
   
   /**
     * The blue color of the light. A value between 0 and 1.
     */
-  var b: Double = js.native
+  var b: Double
   
   /**
     * The green color of the light. A value between 0 and 1.
     */
-  var g: Double = js.native
+  var g: Double
   
   /**
     * The intensity of the light.
     */
-  var intensity: Double = js.native
+  var intensity: Double
   
   /**
     * The red color of the light. A value between 0 and 1.
     */
-  var r: Double = js.native
+  var r: Double
   
   /**
     * The radius of the light.
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * The horizontal scroll factor of the light.
     */
-  var scrollFactorX: Double = js.native
+  var scrollFactorX: Double
   
   /**
     * The vertical scroll factor of the light.
     */
-  var scrollFactorY: Double = js.native
+  var scrollFactorY: Double
   
   /**
     * Set the properties of the light.
@@ -65,49 +63,49 @@ trait Light extends StObject {
     * @param b The blue color. A value between 0 and 1.
     * @param intensity The intensity of the light.
     */
-  def set(x: Double, y: Double, radius: Double, r: Double, g: Double, b: Double, intensity: Double): this.type = js.native
+  def set(x: Double, y: Double, radius: Double, r: Double, g: Double, b: Double, intensity: Double): this.type
   
   /**
     * Set the color of the light from a single integer RGB value.
     * @param rgb The integer RGB color of the light.
     */
-  def setColor(rgb: Double): this.type = js.native
+  def setColor(rgb: Double): this.type
   
   /**
     * Set the intensity of the light.
     * @param intensity The intensity of the light.
     */
-  def setIntensity(intensity: Double): this.type = js.native
+  def setIntensity(intensity: Double): this.type
   
   /**
     * Set the position of the light.
     * @param x The horizontal position of the light.
     * @param y The vertical position of the light.
     */
-  def setPosition(x: Double, y: Double): this.type = js.native
+  def setPosition(x: Double, y: Double): this.type
   
   /**
     * Set the radius of the light.
     * @param radius The radius of the light.
     */
-  def setRadius(radius: Double): this.type = js.native
+  def setRadius(radius: Double): this.type
   
   /**
     * Set the scroll factor of the light.
     * @param x The horizontal scroll factor of the light.
     * @param y The vertical scroll factor of the light.
     */
-  def setScrollFactor(x: Double, y: Double): this.type = js.native
+  def setScrollFactor(x: Double, y: Double): this.type
   
   /**
     * The horizontal position of the light.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The vertical position of the light.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Light {
   

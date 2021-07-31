@@ -2,25 +2,23 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTrack extends StObject {
   
   /**
     * Identifier for this track.
     */
-  var track: js.UndefOr[String] = js.native
+  var track: js.UndefOr[String] = js.undefined
   
-  var userFraction: js.UndefOr[Double] = js.native
+  var userFraction: js.UndefOr[Double] = js.undefined
   
   /**
     * Version codes to make active on this track. Note that this list should
     * contain all versions you wish to be active, including those you wish to
     * retain from previous releases.
     */
-  var versionCodes: js.UndefOr[js.Array[Double]] = js.native
+  var versionCodes: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaTrack {
   

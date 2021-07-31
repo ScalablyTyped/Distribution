@@ -3,21 +3,19 @@ package typings.durandal
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalRouteInstruction extends StObject {
   
-  var config: DurandalRouteConfiguration = js.native
+  var config: DurandalRouteConfiguration
   
-  var fragment: String = js.native
+  var fragment: String
   
-  var params: js.Array[_] = js.native
+  var params: js.Array[js.Any]
   
-  var queryParams: StringDictionary[js.Any] = js.native
+  var queryParams: StringDictionary[js.Any]
   
-  var queryString: String = js.native
+  var queryString: String
 }
 object DurandalRouteInstruction {
   
@@ -25,7 +23,7 @@ object DurandalRouteInstruction {
   def apply(
     config: DurandalRouteConfiguration,
     fragment: String,
-    params: js.Array[_],
+    params: js.Array[js.Any],
     queryParams: StringDictionary[js.Any],
     queryString: String
   ): DurandalRouteInstruction = {
@@ -43,7 +41,7 @@ object DurandalRouteInstruction {
     def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))

@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownItemSelectedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the editable input.
     */
-  var editorInput: js.UndefOr[js.Any] = js.native
+  var editorInput: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the list item which is selected.
     */
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the list container.
     */
-  var list: js.UndefOr[js.Any] = js.native
+  var list: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DropDownItemSelectedEventUIParam {
   

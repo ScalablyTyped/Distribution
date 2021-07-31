@@ -5,24 +5,22 @@ import typings.kurentoClient.mod.IceCandidate
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'IceCandidateFound', {  candidate :kurento-client.kurento-client.IceCandidate}> */
-@js.native
 trait EventIceCandidateFoundcan extends StObject {
   
-  var candidate: IceCandidate = js.native
+  var candidate: IceCandidate
   
-  var source: String = js.native
+  var source: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: IceCandidateFound = js.native
+  var `type`: IceCandidateFound
 }
 object EventIceCandidateFoundcan {
   
@@ -32,11 +30,10 @@ object EventIceCandidateFoundcan {
     source: String,
     tags: js.Array[Tag],
     timestamp: String,
-    timestampMillis: String,
-    `type`: IceCandidateFound
+    timestampMillis: String
   ): EventIceCandidateFoundcan = {
     val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IceCandidateFound")
     __obj.asInstanceOf[EventIceCandidateFoundcan]
   }
   

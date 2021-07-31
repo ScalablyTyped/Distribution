@@ -2,13 +2,11 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Content resource.
   */
-@js.native
 trait SchemaContent extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaContent extends StObject {
     * it must be named &quot;appsscript&quot;, must have type of JSON, and
     * include the manifest configurations for the project.
     */
-  var files: js.UndefOr[js.Array[SchemaFile]] = js.native
+  var files: js.UndefOr[js.Array[SchemaFile]] = js.undefined
   
   /**
     * The script project&#39;s Drive ID.
     */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
 }
 object SchemaContent {
   

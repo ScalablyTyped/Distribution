@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Allowed extends StObject {
   
   /**
     * A list of policies that allowed the authentication.
     */
-  var policies: js.UndefOr[Policies] = js.native
+  var policies: js.UndefOr[Policies] = js.undefined
 }
 object Allowed {
   

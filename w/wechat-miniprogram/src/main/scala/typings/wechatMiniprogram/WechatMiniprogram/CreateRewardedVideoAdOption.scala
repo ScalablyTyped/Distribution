@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRewardedVideoAdOption extends StObject {
   
   /** 广告单元 id */
-  var adUnitId: String = js.native
+  var adUnitId: String
   
   /** 是否启用多例模式，默认为false
     *
     * 最低基础库： `2.8.0` */
-  var multiton: js.UndefOr[Boolean] = js.native
+  var multiton: js.UndefOr[Boolean] = js.undefined
 }
 object CreateRewardedVideoAdOption {
   

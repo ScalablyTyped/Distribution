@@ -2,7 +2,6 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,27 +12,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * corresponding contents of the Build/Products directory that contains all
   * the binaries needed to run the tests.
   */
-@js.native
 trait SchemaIosXcTest extends StObject {
   
   /**
     * Output only. The bundle id for the application under test.
     */
-  var appBundleId: js.UndefOr[String] = js.native
+  var appBundleId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The .zip containing the .xctestrun file and the contents of the
     * DerivedData/Build/Products directory. The .xctestrun file in this zip is
     * ignored if the xctestrun field is specified.
     */
-  var testsZip: js.UndefOr[SchemaFileReference] = js.native
+  var testsZip: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * The Xcode version that should be used for the test. Use the
     * TestEnvironmentDiscoveryService to get supported options. Defaults to the
     * latest Xcode version Firebase Test Lab supports.
     */
-  var xcodeVersion: js.UndefOr[String] = js.native
+  var xcodeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * An .xctestrun file that will override the .xctestrun file in the tests
@@ -41,7 +39,7 @@ trait SchemaIosXcTest extends StObject {
     * with test methods to run and/or ignore, this can be useful for sharding
     * tests. Default is taken from the tests zip.
     */
-  var xctestrun: js.UndefOr[SchemaFileReference] = js.native
+  var xctestrun: js.UndefOr[SchemaFileReference] = js.undefined
 }
 object SchemaIosXcTest {
   

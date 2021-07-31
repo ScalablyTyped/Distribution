@@ -4,20 +4,18 @@ import typings.awsSdk.codedeployMod.DeploymentId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/codedeploy.GetDeploymentInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait GetDeploymentInputwaiterW extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     *  The unique ID of a deployment associated with the IAM user or AWS account. 
     */
-  var deploymentId: DeploymentId = js.native
+  var deploymentId: DeploymentId
 }
 object GetDeploymentInputwaiterW {
   

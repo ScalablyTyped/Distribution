@@ -10,9 +10,9 @@ JSS plugin that ensures style properties extend each other instead of override
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-props-sort |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, sort, props |
-| # releases         | 39 |
-| # dependents       | 12 |
-| # downloads        | 46914397 |
+| # releases         | 30 |
+| # dependents       | 13 |
+| # downloads        | 54429842 |
 | # stars            | 0 |
 
 ## Links

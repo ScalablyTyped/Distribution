@@ -4,13 +4,11 @@ import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.plugins.widget.definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait autoEmbed extends StObject {
   
-  def getWidgetDefinition(editor: editor, url: String): definition = js.native
+  def getWidgetDefinition(editor: editor, url: String): definition
 }
 object autoEmbed {
   

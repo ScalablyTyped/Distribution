@@ -6,15 +6,13 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.minute
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.week
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
-  var fireDate: Double = js.native
+  var fireDate: Double
   
-  var repeatInterval: js.UndefOr[minute | hour | day | week] = js.native
+  var repeatInterval: js.UndefOr[minute | hour | day | week] = js.undefined
 }
 object Schedule {
   

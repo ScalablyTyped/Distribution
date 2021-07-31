@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EstimatedResourceSize extends StObject {
   
   /**
     * The time when the estimate of the size of the resource was made.
     */
-  var estimatedOn: js.UndefOr[Timestamp] = js.native
+  var estimatedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The estimated size of the resource, in bytes.
     */
-  var estimatedSizeInBytes: js.UndefOr[SizeInBytes] = js.native
+  var estimatedSizeInBytes: js.UndefOr[SizeInBytes] = js.undefined
 }
 object EstimatedResourceSize {
   

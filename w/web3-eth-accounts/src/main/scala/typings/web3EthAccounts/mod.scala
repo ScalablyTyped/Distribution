@@ -6,7 +6,6 @@ import typings.web3Core.mod.SignedTransaction
 import typings.web3Core.mod.WalletBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,13 @@ object mod {
     def this(accounts: AccountsBase) = this()
   }
   
-  @js.native
-  trait Sign extends SignedTransaction {
+  trait Sign
+    extends StObject
+       with SignedTransaction {
     
-    var message: String = js.native
+    var message: String
     
-    var signature: String = js.native
+    var signature: String
   }
   object Sign {
     
@@ -50,16 +50,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SignatureObject extends StObject {
     
-    var messageHash: String = js.native
+    var messageHash: String
     
-    var r: String = js.native
+    var r: String
     
-    var s: String = js.native
+    var s: String
     
-    var v: String = js.native
+    var v: String
   }
   object SignatureObject {
     

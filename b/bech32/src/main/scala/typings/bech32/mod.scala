@@ -4,45 +4,38 @@ import typings.bech32.anon.Prefix
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bech32", "decode")
+  @JSImport("bech32", JSImport.Namespace)
   @js.native
-  def decode(str: String): Prefix = js.native
-  @JSImport("bech32", "decode")
-  @js.native
-  def decode(str: String, limit: Double): Prefix = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bech32", "decodeUnsafe")
-  @js.native
-  def decodeUnsafe(str: String): js.UndefOr[Prefix] = js.native
-  @JSImport("bech32", "decodeUnsafe")
-  @js.native
-  def decodeUnsafe(str: String, limit: Double): js.UndefOr[Prefix] = js.native
+  @scala.inline
+  def decode(str: String): Prefix = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[Prefix]
+  @scala.inline
+  def decode(str: String, limit: Double): Prefix = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Prefix]
   
-  @JSImport("bech32", "encode")
-  @js.native
-  def encode(prefix: String, words: js.Array[Double]): String = js.native
-  @JSImport("bech32", "encode")
-  @js.native
-  def encode(prefix: String, words: js.Array[Double], limit: Double): String = js.native
+  @scala.inline
+  def decodeUnsafe(str: String): js.UndefOr[Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsafe")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Prefix]]
+  @scala.inline
+  def decodeUnsafe(str: String, limit: Double): js.UndefOr[Prefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsafe")(str.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Prefix]]
   
-  @JSImport("bech32", "fromWords")
-  @js.native
-  def fromWords(words: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def encode(prefix: String, words: js.Array[Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(prefix.asInstanceOf[js.Any], words.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encode(prefix: String, words: js.Array[Double], limit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(prefix.asInstanceOf[js.Any], words.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("bech32", "fromWordsUnsafe")
-  @js.native
-  def fromWordsUnsafe(words: js.Array[Double]): js.UndefOr[js.Array[Double]] = js.native
+  @scala.inline
+  def fromWords(words: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWords")(words.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("bech32", "toWords")
-  @js.native
-  def toWords(bytes: ArrayLike[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def fromWordsUnsafe(words: js.Array[Double]): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWordsUnsafe")(words.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
   
-  @JSImport("bech32", "toWordsUnsafe")
-  @js.native
-  def toWordsUnsafe(bytes: ArrayLike[Double]): js.UndefOr[js.Array[Double]] = js.native
+  @scala.inline
+  def toWords(bytes: ArrayLike[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toWords")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def toWordsUnsafe(bytes: ArrayLike[Double]): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toWordsUnsafe")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
 }

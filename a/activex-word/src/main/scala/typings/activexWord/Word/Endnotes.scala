@@ -2,16 +2,15 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Endnotes extends StObject {
   
   def Add(Range: Range): Endnote = js.native
-  def Add(Range: Range, Reference: js.UndefOr[scala.Nothing], Text: js.Any): Endnote = js.native
   def Add(Range: Range, Reference: js.Any): Endnote = js.native
   def Add(Range: Range, Reference: js.Any, Text: js.Any): Endnote = js.native
+  def Add(Range: Range, Reference: Unit, Text: js.Any): Endnote = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

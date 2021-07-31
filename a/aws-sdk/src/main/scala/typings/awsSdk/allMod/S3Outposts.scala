@@ -4,7 +4,6 @@ import typings.awsSdk.s3outpostsMod.ClientConfiguration
 import typings.awsSdk.s3outpostsMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "S3Outposts")

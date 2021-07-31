@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsOperation[E] extends StObject {
   
-  def getErrors(): js.Array[String] = js.native
+  def getErrors(): js.Array[String]
   
-  def getResult(): E = js.native
+  def getResult(): E
   
-  def isSuccessful(): Boolean = js.native
+  def isSuccessful(): Boolean
 }
 object AdWordsOperation {
   
@@ -23,7 +21,7 @@ object AdWordsOperation {
   }
   
   @scala.inline
-  implicit class AdWordsOperationMutableBuilder[Self <: AdWordsOperation[_], E] (val x: Self with AdWordsOperation[E]) extends AnyVal {
+  implicit class AdWordsOperationMutableBuilder[Self <: AdWordsOperation[?], E] (val x: Self & AdWordsOperation[E]) extends AnyVal {
     
     @scala.inline
     def setGetErrors(value: () => js.Array[String]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))

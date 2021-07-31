@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersDatasourcesDatasetsDelete extends StandardParameters {
+trait ParamsResourceUsersDatasourcesDatasetsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The client's current time in milliseconds since epoch.
     */
-  var currentTimeMillis: js.UndefOr[String] = js.native
+  var currentTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The data stream ID of the data source that created the dataset.
     */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Dataset identifier that is a composite of the minimum data point start
@@ -33,18 +33,18 @@ trait ParamsResourceUsersDatasourcesDatasetsDelete extends StandardParameters {
     * epoch. The ID is formatted like: "startTime-endTime" where startTime and
     * endTime are 64 bit integers.
     */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /**
     * When the operation was performed on the client.
     */
-  var modifiedTimeMillis: js.UndefOr[String] = js.native
+  var modifiedTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * Delete a dataset for the person identified. Use me to indicate the
     * authenticated user. Only me is supported at this time.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersDatasourcesDatasetsDelete {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestUtilization extends StObject {
   
   /** Target number of concurrent requests. */
-  var targetConcurrentRequests: js.UndefOr[Double] = js.native
+  var targetConcurrentRequests: js.UndefOr[Double] = js.undefined
   
   /** Target requests per second. */
-  var targetRequestCountPerSecond: js.UndefOr[Double] = js.native
+  var targetRequestCountPerSecond: js.UndefOr[Double] = js.undefined
 }
 object RequestUtilization {
   

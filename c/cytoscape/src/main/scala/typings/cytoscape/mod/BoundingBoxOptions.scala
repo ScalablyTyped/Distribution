@@ -2,32 +2,30 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingBoxOptions extends StObject {
   
   /** A boolean indicating whether to include edges in the bounding box (default true). */
-  var includeEdges: js.UndefOr[Boolean] = js.native
+  var includeEdges: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating whether to include labels in the bounding box (default true). */
-  var includeLabels: js.UndefOr[Boolean] = js.native
+  var includeLabels: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating whether to include main (node or edge) labels in the bounding box (default true). */
-  var includeMainLabels: js.UndefOr[Boolean] = js.native
+  var includeMainLabels: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating whether to include nodes in the bounding box (default true). */
-  var includeNodes: js.UndefOr[Boolean] = js.native
+  var includeNodes: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating whether to include overlays (such as the one which appears when a node is clicked) in the bounding box (default true). */
-  var includeOverlays: js.UndefOr[Boolean] = js.native
+  var includeOverlays: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating whether to include (edge) source-labels in the bounding box (default true). */
-  var includeSourceLabels: js.UndefOr[Boolean] = js.native
+  var includeSourceLabels: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating whether to include (edge) target-labels in the bounding box (default true). */
-  var includeTargetLabels: js.UndefOr[Boolean] = js.native
+  var includeTargetLabels: js.UndefOr[Boolean] = js.undefined
 }
 object BoundingBoxOptions {
   

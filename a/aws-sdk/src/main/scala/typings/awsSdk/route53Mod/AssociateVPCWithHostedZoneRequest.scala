@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateVPCWithHostedZoneRequest extends StObject {
   
   /**
     *  Optional: A comment about the association request.
     */
-  var Comment: js.UndefOr[AssociateVPCComment] = js.native
+  var Comment: js.UndefOr[AssociateVPCComment] = js.undefined
   
   /**
     * The ID of the private hosted zone that you want to associate an Amazon VPC with. Note that you can't associate a VPC with a hosted zone that doesn't have an existing VPC association.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * A complex type that contains information about the VPC that you want to associate with a private hosted zone.
     */
-  var VPC: typings.awsSdk.route53Mod.VPC = js.native
+  var VPC: typings.awsSdk.route53Mod.VPC
 }
 object AssociateVPCWithHostedZoneRequest {
   

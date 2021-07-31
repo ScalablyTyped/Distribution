@@ -3,7 +3,6 @@ package typings.jscodeshift
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateMod extends Shortcut {
@@ -15,17 +14,16 @@ object templateMod extends Shortcut {
     Template
   ] = js.native
   
-  @js.native
   trait Template extends StObject {
     
     /** Tagged template function. Parses the string as source and returns an Expression AST node. */
-    def expression(args: js.Any*): js.Any = js.native
+    def expression(args: js.Any*): js.Any
     
     /** Tagged template function. Parses the string as source and returns an Statement AST node. */
-    def statement(args: js.Any*): js.Any = js.native
+    def statement(args: js.Any*): js.Any
     
     /** Tagged template function. Parses the string as source and returns an array of Statement AST nodes. */
-    def statements(args: js.Any*): js.Any = js.native
+    def statements(args: js.Any*): js.Any
   }
   object Template {
     

@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.core
 import typings.openui5.sap.ui.base.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locale extends Object {
+trait Locale
+  extends StObject
+     with Object {
   
   /**
     * Get the locale extension as a single string or null.The extension always consists of a singleton

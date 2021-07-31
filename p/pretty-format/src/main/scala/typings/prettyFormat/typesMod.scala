@@ -4,23 +4,21 @@ import typings.prettyFormat.anon.Close
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Colors extends StObject {
     
-    var comment: Close = js.native
+    var comment: Close
     
-    var content: Close = js.native
+    var content: Close
     
-    var prop: Close = js.native
+    var prop: Close
     
-    var tag: Close = js.native
+    var tag: Close
     
-    var value: Close = js.native
+    var value: Close
   }
   object Colors {
     
@@ -50,30 +48,29 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var callToJSON: Boolean = js.native
+    var callToJSON: Boolean
     
-    var colors: Colors = js.native
+    var colors: Colors
     
-    var escapeRegex: Boolean = js.native
+    var escapeRegex: Boolean
     
-    var escapeString: Boolean = js.native
+    var escapeString: Boolean
     
-    var indent: String = js.native
+    var indent: String
     
-    var maxDepth: Double = js.native
+    var maxDepth: Double
     
-    var min: Boolean = js.native
+    var min: Boolean
     
-    var plugins: Plugins = js.native
+    var plugins: Plugins
     
-    var printFunctionName: Boolean = js.native
+    var printFunctionName: Boolean
     
-    var spacingInner: String = js.native
+    var spacingInner: String
     
-    var spacingOuter: String = js.native
+    var spacingOuter: String
   }
   object Config {
     
@@ -135,12 +132,13 @@ object typesMod {
   
   type Indent = js.Function1[/* arg0 */ String, String]
   
-  @js.native
-  trait NewPlugin extends Plugin {
+  trait NewPlugin
+    extends StObject
+       with Plugin {
     
-    def serialize(`val`: js.Any, config: Config, indentation: String, depth: Double, refs: Refs, printer: Printer): String = js.native
+    def serialize(`val`: js.Any, config: Config, indentation: String, depth: Double, refs: Refs, printer: Printer): String
     
-    var test: Test = js.native
+    var test: Test
   }
   object NewPlugin {
     
@@ -164,12 +162,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait OldPlugin extends Plugin {
+  trait OldPlugin
+    extends StObject
+       with Plugin {
     
-    def print(`val`: js.Any, print: Print, indent: Indent, options: PluginOptions, colors: Colors): String = js.native
+    def print(`val`: js.Any, print: Print, indent: Indent, options: PluginOptions, colors: Colors): String
     
-    var test: Test = js.native
+    var test: Test
   }
   object OldPlugin {
     
@@ -193,28 +192,27 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var callToJSON: Boolean = js.native
+    var callToJSON: Boolean
     
-    var escapeRegex: Boolean = js.native
+    var escapeRegex: Boolean
     
-    var escapeString: Boolean = js.native
+    var escapeString: Boolean
     
-    var highlight: Boolean = js.native
+    var highlight: Boolean
     
-    var indent: Double = js.native
+    var indent: Double
     
-    var maxDepth: Double = js.native
+    var maxDepth: Double
     
-    var min: Boolean = js.native
+    var min: Boolean
     
-    var plugins: Plugins = js.native
+    var plugins: Plugins
     
-    var printFunctionName: Boolean = js.native
+    var printFunctionName: Boolean
     
-    var theme: Theme = js.native
+    var theme: Theme
   }
   object Options {
     
@@ -270,28 +268,27 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OptionsReceived extends StObject {
     
-    var callToJSON: js.UndefOr[Boolean] = js.native
+    var callToJSON: js.UndefOr[Boolean] = js.undefined
     
-    var escapeRegex: js.UndefOr[Boolean] = js.native
+    var escapeRegex: js.UndefOr[Boolean] = js.undefined
     
-    var escapeString: js.UndefOr[Boolean] = js.native
+    var escapeString: js.UndefOr[Boolean] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Boolean] = js.native
+    var min: js.UndefOr[Boolean] = js.undefined
     
-    var plugins: js.UndefOr[Plugins] = js.native
+    var plugins: js.UndefOr[Plugins] = js.undefined
     
-    var printFunctionName: js.UndefOr[Boolean] = js.native
+    var printFunctionName: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[ThemeReceived] = js.native
+    var theme: js.UndefOr[ThemeReceived] = js.undefined
   }
   object OptionsReceived {
     
@@ -392,14 +389,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PluginOptions extends StObject {
     
-    var edgeSpacing: String = js.native
+    var edgeSpacing: String
     
-    var min: Boolean = js.native
+    var min: Boolean
     
-    var spacing: String = js.native
+    var spacing: String
   }
   object PluginOptions {
     
@@ -424,7 +420,9 @@ object typesMod {
   }
   
   @js.native
-  trait Plugins extends Array[Plugin]
+  trait Plugins
+    extends StObject
+       with Array[Plugin]
   
   type Print = js.Function1[/* arg0 */ js.Any, String]
   
@@ -442,18 +440,17 @@ object typesMod {
   
   type Test = js.Function1[/* arg0 */ js.Any, Boolean]
   
-  @js.native
   trait Theme extends StObject {
     
-    var comment: String = js.native
+    var comment: String
     
-    var content: String = js.native
+    var content: String
     
-    var prop: String = js.native
+    var prop: String
     
-    var tag: String = js.native
+    var tag: String
     
-    var value: String = js.native
+    var value: String
   }
   object Theme {
     
@@ -483,18 +480,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ThemeReceived extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var prop: js.UndefOr[String] = js.native
+    var prop: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ThemeReceived {
     

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logSubscriptionFilterMod {
@@ -59,6 +58,10 @@ object logSubscriptionFilterMod {
   /* static members */
   object LogSubscriptionFilter {
     
+    @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LogSubscriptionFilter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,60 +71,54 @@ object logSubscriptionFilterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LogSubscriptionFilter = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogSubscriptionFilter = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogSubscriptionFilterState): LogSubscriptionFilter = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogSubscriptionFilterState, opts: CustomResourceOptions): LogSubscriptionFilter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogSubscriptionFilterState): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogSubscriptionFilterState, opts: CustomResourceOptions): LogSubscriptionFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogSubscriptionFilter]
     
     /**
       * Returns true if the given object is an instance of LogSubscriptionFilter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ Boolean]
   }
   
-  @js.native
   trait LogSubscriptionFilterArgs extends StObject {
     
     /**
       * The ARN of the destination to deliver matching log events to. Kinesis stream or Lambda function ARN.
       */
-    val destinationArn: Input[String] = js.native
+    val destinationArn: Input[String]
     
     /**
       * The method used to distribute log data to the destination. By default log data is grouped by log stream, but the grouping can be set to random for a more even distribution. This property is only applicable when the destination is an Amazon Kinesis stream. Valid values are "Random" and "ByLogStream".
       */
-    val distribution: js.UndefOr[Input[String]] = js.native
+    val distribution: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid CloudWatch Logs filter pattern for subscribing to a filtered stream of log events.
       */
-    val filterPattern: Input[String] = js.native
+    val filterPattern: Input[String]
     
     /**
       * The name of the log group to associate the subscription filter with
       */
-    val logGroup: Input[String | LogGroup] = js.native
+    val logGroup: Input[String | LogGroup]
     
     /**
       * A name for the subscription filter
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to deliver ingested log events to the destination. If you use Lambda as a destination, you should skip this argument and use `aws.lambda.Permission` resource for granting access from CloudWatch logs to the destination Lambda function.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object LogSubscriptionFilterArgs {
     
@@ -163,38 +160,37 @@ object logSubscriptionFilterMod {
     }
   }
   
-  @js.native
   trait LogSubscriptionFilterState extends StObject {
     
     /**
       * The ARN of the destination to deliver matching log events to. Kinesis stream or Lambda function ARN.
       */
-    val destinationArn: js.UndefOr[Input[String]] = js.native
+    val destinationArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The method used to distribute log data to the destination. By default log data is grouped by log stream, but the grouping can be set to random for a more even distribution. This property is only applicable when the destination is an Amazon Kinesis stream. Valid values are "Random" and "ByLogStream".
       */
-    val distribution: js.UndefOr[Input[String]] = js.native
+    val distribution: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid CloudWatch Logs filter pattern for subscribing to a filtered stream of log events.
       */
-    val filterPattern: js.UndefOr[Input[String]] = js.native
+    val filterPattern: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the log group to associate the subscription filter with
       */
-    val logGroup: js.UndefOr[Input[String | LogGroup]] = js.native
+    val logGroup: js.UndefOr[Input[String | LogGroup]] = js.undefined
     
     /**
       * A name for the subscription filter
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to deliver ingested log events to the destination. If you use Lambda as a destination, you should skip this argument and use `aws.lambda.Permission` resource for granting access from CloudWatch logs to the destination Lambda function.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object LogSubscriptionFilterState {
     

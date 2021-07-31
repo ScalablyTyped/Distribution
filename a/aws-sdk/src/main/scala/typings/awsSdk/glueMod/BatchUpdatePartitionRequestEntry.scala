@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdatePartitionRequestEntry extends StObject {
   
   /**
     * The structure used to update a partition.
     */
-  var PartitionInput: typings.awsSdk.glueMod.PartitionInput = js.native
+  var PartitionInput: typings.awsSdk.glueMod.PartitionInput
   
   /**
     * A list of values defining the partitions.
     */
-  var PartitionValueList: BoundedPartitionValueList = js.native
+  var PartitionValueList: BoundedPartitionValueList
 }
 object BatchUpdatePartitionRequestEntry {
   

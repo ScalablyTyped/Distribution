@@ -2,13 +2,12 @@ package typings.shelljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CatFunction extends StObject {
   
-  def apply(files: String*): typings.shelljs.mod.ShellString = js.native
+  def apply(files: String*): ShellString = js.native
   /**
     * Returns a string containing the given file, or a concatenated string
     * containing the files if more than one file is given (a new line character
@@ -19,5 +18,5 @@ trait CatFunction extends StObject {
     *         containing the files if more than one file is given
     *         (a new line character is introduced between each file).
     */
-  def apply(files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+  def apply(files: js.Array[String]): ShellString = js.native
 }

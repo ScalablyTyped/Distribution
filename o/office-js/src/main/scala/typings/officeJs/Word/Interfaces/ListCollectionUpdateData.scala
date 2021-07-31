@@ -2,14 +2,12 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`. */
-@js.native
 trait ListCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[ListData]] = js.native
+  var items: js.UndefOr[js.Array[ListData]] = js.undefined
 }
 object ListCollectionUpdateData {
   

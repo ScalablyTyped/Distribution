@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecimalNumber extends StObject {
   
   /**
     * The scale that determines where the decimal point falls in the unscaled value.
     */
-  var Scale: Integer = js.native
+  var Scale: Integer
   
   /**
     * The unscaled numeric value.
     */
-  var UnscaledValue: _Blob = js.native
+  var UnscaledValue: _Blob
 }
 object DecimalNumber {
   

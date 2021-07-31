@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
   /** The time this snapshot was created. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** User specified description of the snapshot. Maybe empty. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The disk byte size of the snapshot. Only available for snapshots in READY state. */
-  var diskSizeBytes: js.UndefOr[String] = js.native
+  var diskSizeBytes: js.UndefOr[String] = js.undefined
   
   /** The unique ID of this snapshot. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The project this snapshot belongs to. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** PubSub snapshot metadata. */
-  var pubsubMetadata: js.UndefOr[js.Array[PubsubSnapshotMetadata]] = js.native
+  var pubsubMetadata: js.UndefOr[js.Array[PubsubSnapshotMetadata]] = js.undefined
   
   /** The job this snapshot was created from. */
-  var sourceJobId: js.UndefOr[String] = js.native
+  var sourceJobId: js.UndefOr[String] = js.undefined
   
   /** State of the snapshot. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** The time after which this snapshot will be automatically deleted. */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
 }
 object Snapshot {
   

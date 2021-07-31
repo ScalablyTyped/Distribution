@@ -2,8 +2,9 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypeUUIDv1 extends DataTypeAbstractUUID[DataTypeUUIDv1]
+trait DataTypeUUIDv1
+  extends StObject
+     with DataTypeAbstractUUID[DataTypeUUIDv1]

@@ -2,41 +2,39 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivateViews extends StObject {
   
-  var activateViews: js.Function = js.native
+  var activateViews: js.Function
   
-  var addCoreResolves: js.Function = js.native
+  var addCoreResolves: js.Function
   
-  var eagerResolve: js.Function = js.native
+  var eagerResolve: js.Function
   
-  var ignored: js.Function = js.native
+  var ignored: js.Function
   
-  var invalid: js.Function = js.native
+  var invalid: js.Function
   
-  var lazyLoad: js.Function = js.native
+  var lazyLoad: js.Function
   
-  var lazyResolve: js.Function = js.native
+  var lazyResolve: js.Function
   
-  var loadViews: js.Function = js.native
+  var loadViews: js.Function
   
-  var onEnter: js.Function = js.native
+  var onEnter: js.Function
   
-  var onExit: js.Function = js.native
+  var onExit: js.Function
   
-  var onRetain: js.Function = js.native
+  var onRetain: js.Function
   
-  var redirectTo: js.Function = js.native
+  var redirectTo: js.Function
   
-  var resolveAll: js.Function = js.native
+  var resolveAll: js.Function
   
-  var updateGlobals: js.Function = js.native
+  var updateGlobals: js.Function
   
-  var updateUrl: js.Function = js.native
+  var updateUrl: js.Function
 }
 object ActivateViews {
   

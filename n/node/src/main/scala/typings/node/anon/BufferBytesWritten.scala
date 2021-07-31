@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferBytesWritten extends StObject {
   
-  var buffer: String = js.native
+  var buffer: String
   
-  var bytesWritten: Double = js.native
+  var bytesWritten: Double
 }
 object BufferBytesWritten {
   

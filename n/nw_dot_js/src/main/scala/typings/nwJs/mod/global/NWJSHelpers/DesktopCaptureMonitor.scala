@@ -8,7 +8,6 @@ import typings.nwJs.nwJsStrings.removed
 import typings.nwJs.nwJsStrings.thumbnailchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,7 +37,7 @@ trait DesktopCaptureMonitor extends EventEmitter {
       /* order */ js.UndefOr[Double], 
       /* type */ js.UndefOr[String], 
       /* primary */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
   ): this.type = js.native
   /**
@@ -52,7 +51,7 @@ trait DesktopCaptureMonitor extends EventEmitter {
   @JSName("on")
   def on_namechanged(
     event: namechanged,
-    listener: js.Function2[/* id */ js.UndefOr[String], /* name */ js.UndefOr[String], _]
+    listener: js.Function2[/* id */ js.UndefOr[String], /* name */ js.UndefOr[String], js.Any]
   ): this.type = js.native
   /**
     * Emit when the Z-order of a source changed (this may change for windows as others are focused).
@@ -70,7 +69,7 @@ trait DesktopCaptureMonitor extends EventEmitter {
       /* id */ js.UndefOr[String], 
       /* new_order */ js.UndefOr[Double], 
       /* old_order */ js.UndefOr[Double], 
-      _
+      js.Any
     ]
   ): this.type = js.native
   /**
@@ -81,7 +80,7 @@ trait DesktopCaptureMonitor extends EventEmitter {
     * - (optional) order {number} Is the order of the media source that is no longer capturable.
     */
   @JSName("on")
-  def on_removed(event: removed, listener: js.Function1[/* order */ js.UndefOr[Double], _]): this.type = js.native
+  def on_removed(event: removed, listener: js.Function1[/* order */ js.UndefOr[Double], js.Any]): this.type = js.native
   /**
     * Emit when the thumbnail of a source changed.
     *
@@ -93,7 +92,7 @@ trait DesktopCaptureMonitor extends EventEmitter {
   @JSName("on")
   def on_thumbnailchanged(
     event: thumbnailchanged,
-    listener: js.Function2[/* id */ js.UndefOr[String], /* thumbnail */ js.UndefOr[String], _]
+    listener: js.Function2[/* id */ js.UndefOr[String], /* thumbnail */ js.UndefOr[String], js.Any]
   ): this.type = js.native
   
   /**

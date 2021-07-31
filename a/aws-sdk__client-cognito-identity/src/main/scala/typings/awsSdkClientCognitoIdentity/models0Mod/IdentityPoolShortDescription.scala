@@ -2,21 +2,19 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityPoolShortDescription extends StObject {
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A string that you provide.</p>
     */
-  var IdentityPoolName: js.UndefOr[String] = js.native
+  var IdentityPoolName: js.UndefOr[String] = js.undefined
 }
 object IdentityPoolShortDescription {
   
@@ -26,9 +24,12 @@ object IdentityPoolShortDescription {
     __obj.asInstanceOf[IdentityPoolShortDescription]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityPoolShortDescription.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityPoolShortDescription")
   @js.native
-  def filterSensitiveLog(obj: IdentityPoolShortDescription): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: IdentityPoolShortDescription): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class IdentityPoolShortDescriptionMutableBuilder[Self <: IdentityPoolShortDescription] (val x: Self) extends AnyVal {

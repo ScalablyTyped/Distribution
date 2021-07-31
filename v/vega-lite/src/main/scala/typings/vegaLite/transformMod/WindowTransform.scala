@@ -4,40 +4,40 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.sortMod.SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowTransform extends Transform {
+trait WindowTransform
+  extends StObject
+     with Transform {
   
   /**
     * A frame specification as a two-element array indicating how the sliding window should proceed. The array entries should either be a number indicating the offset from the current data object, or null to indicate unbounded rows preceding or following the current data object. The default value is `[null, 0]`, indicating that the sliding window includes the current object and all preceding objects. The value `[-5, 5]` indicates that the window should include five objects preceding and five objects following the current object. Finally, `[null, null]` indicates that the window frame should always include all data objects. If you this frame and want to assign the same value to add objects, you can use the simpler [join aggregate transform](https://vega.github.io/vega-lite/docs/joinaggregate.html). The only operators affected are the aggregation operations and the `first_value`, `last_value`, and `nth_value` window operations. The other window operations are not affected by this.
     *
     * __Default value:__:  `[null, 0]` (includes the current object and all preceding objects)
     */
-  var frame: js.UndefOr[js.Array[Null | Double]] = js.native
+  var frame: js.UndefOr[js.Array[Null | Double]] = js.undefined
   
   /**
     * The data fields for partitioning the data objects into separate windows. If unspecified, all data points will be in a single window.
     */
-  var groupby: js.UndefOr[js.Array[FieldName]] = js.native
+  var groupby: js.UndefOr[js.Array[FieldName]] = js.undefined
   
   /**
     * Indicates if the sliding window frame should ignore peer values (data that are considered identical by the sort criteria). The default is false, causing the window frame to expand to include all peer values. If set to true, the window frame will be defined by offset values only. This setting only affects those operations that depend on the window frame, namely aggregation operations and the first_value, last_value, and nth_value window operations.
     *
     * __Default value:__ `false`
     */
-  var ignorePeers: js.UndefOr[Boolean] = js.native
+  var ignorePeers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A sort field definition for sorting data objects within a window. If two data objects are considered equal by the comparator, they are considered "peer" values of equal rank. If sort is not specified, the order is undefined: data objects are processed in the order they are observed and none are considered peers (the ignorePeers parameter is ignored and treated as if set to `true`).
     */
-  var sort: js.UndefOr[js.Array[SortField]] = js.native
+  var sort: js.UndefOr[js.Array[SortField]] = js.undefined
   
   /**
     * The definition of the fields in the window, and what calculations to use.
     */
-  var window: js.Array[WindowFieldDef] = js.native
+  var window: js.Array[WindowFieldDef]
 }
 object WindowTransform {
   

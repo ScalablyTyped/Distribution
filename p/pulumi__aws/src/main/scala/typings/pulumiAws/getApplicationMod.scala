@@ -4,25 +4,25 @@ import typings.pulumiAws.outputMod.elasticbeanstalk.GetApplicationAppversionLife
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getApplicationMod {
   
-  @JSImport("@pulumi/aws/elasticbeanstalk/getApplication", "getApplication")
+  @JSImport("@pulumi/aws/elasticbeanstalk/getApplication", JSImport.Namespace)
   @js.native
-  def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = js.native
-  @JSImport("@pulumi/aws/elasticbeanstalk/getApplication", "getApplication")
-  @js.native
-  def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetApplicationResult]]
+  @scala.inline
+  def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetApplicationResult]]
+  
   trait GetApplicationArgs extends StObject {
     
     /**
       * The name of the application
       */
-    val name: String = js.native
+    val name: String
   }
   object GetApplicationArgs {
     
@@ -40,27 +40,26 @@ object getApplicationMod {
     }
   }
   
-  @js.native
   trait GetApplicationResult extends StObject {
     
-    val appversionLifecycle: GetApplicationAppversionLifecycle = js.native
+    val appversionLifecycle: GetApplicationAppversionLifecycle
     
     /**
       * The Amazon Resource Name (ARN) of the application.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Short description of the application
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetApplicationResult {
     

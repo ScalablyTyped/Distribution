@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies the location of a streaming side input.
   */
-@js.native
 trait SchemaStreamingSideInputLocation extends StObject {
   
   /**
     * Identifies the state family where this side input is stored.
     */
-  var stateFamily: js.UndefOr[String] = js.native
+  var stateFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the particular side input within the streaming Dataflow job.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaStreamingSideInputLocation {
   

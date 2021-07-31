@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableInsightRulesInput extends StObject {
   
   /**
     * An array of the rule names to enable. If you need to find out the names of your rules, use DescribeInsightRules.
     */
-  var RuleNames: InsightRuleNames = js.native
+  var RuleNames: InsightRuleNames
 }
 object EnableInsightRulesInput {
   

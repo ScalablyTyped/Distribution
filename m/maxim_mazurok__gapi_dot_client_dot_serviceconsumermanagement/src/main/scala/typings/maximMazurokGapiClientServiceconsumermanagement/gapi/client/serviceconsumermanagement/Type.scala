@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /** The list of fields. */
-  var fields: js.UndefOr[js.Array[Field]] = js.native
+  var fields: js.UndefOr[js.Array[Field]] = js.undefined
   
   /** The fully qualified message name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The list of types appearing in `oneof` definitions in this type. */
-  var oneofs: js.UndefOr[js.Array[String]] = js.native
+  var oneofs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The protocol buffer options. */
-  var options: js.UndefOr[js.Array[Option]] = js.native
+  var options: js.UndefOr[js.Array[Option]] = js.undefined
   
   /** The source context. */
-  var sourceContext: js.UndefOr[SourceContext] = js.native
+  var sourceContext: js.UndefOr[SourceContext] = js.undefined
   
   /** The source syntax. */
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
 }
 object Type {
   

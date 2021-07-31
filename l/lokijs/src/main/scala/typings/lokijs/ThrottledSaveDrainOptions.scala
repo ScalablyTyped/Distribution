@@ -2,19 +2,17 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThrottledSaveDrainOptions extends StObject {
   
-  var recursiveWait: Boolean = js.native
+  var recursiveWait: Boolean
   
-  var recursiveWaitLimit: Boolean = js.native
+  var recursiveWaitLimit: Boolean
   
-  var recursiveWaitLimitDuration: Double = js.native
+  var recursiveWaitLimitDuration: Double
   
-  var started: Double = js.native
+  var started: Double
 }
 object ThrottledSaveDrainOptions {
   

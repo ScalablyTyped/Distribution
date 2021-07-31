@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoredResource extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait MonitoredResource extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResource with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResource & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Required. The monitored resource type. This field must match the type field of a MonitoredResourceDescriptor object. For example, the type of a Compute Engine VM instance is
     * gce_instance.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MonitoredResource {
   
@@ -40,7 +38,7 @@ object MonitoredResource {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResource with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResource & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

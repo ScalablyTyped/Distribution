@@ -5,7 +5,6 @@ import typings.canvasRenderer.canvasContextMod.CanvasContext
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasMod {
@@ -42,9 +41,9 @@ object canvasMod {
       * @param contextAttributes Options passed to the context. Currently no options are supported. Provided for compatibility with `HTMLCanvasElement`.
       */
     def getContext(): CanvasContext = js.native
-    def getContext(contextId: js.UndefOr[scala.Nothing], contextAttributes: js.Object): CanvasContext = js.native
     def getContext(contextId: String): CanvasContext = js.native
     def getContext(contextId: String, contextAttributes: js.Object): CanvasContext = js.native
+    def getContext(contextId: Unit, contextAttributes: js.Object): CanvasContext = js.native
     
     /**
       * The height of the canvas in pixels.
@@ -57,9 +56,9 @@ object canvasMod {
       * @param encoderOptions Options passed to the image encoder. Currently no options are recognized. Provided for compatibility with `HTMLCanvasElement`.
       */
     def toDataURL(): String = js.native
-    def toDataURL(`type`: js.UndefOr[scala.Nothing], encoderOptions: js.Any): String = js.native
     def toDataURL(`type`: String): String = js.native
     def toDataURL(`type`: String, encoderOptions: js.Any): String = js.native
+    def toDataURL(`type`: Unit, encoderOptions: js.Any): String = js.native
     
     /**
       * Renders the canvas as a PNG data stream.

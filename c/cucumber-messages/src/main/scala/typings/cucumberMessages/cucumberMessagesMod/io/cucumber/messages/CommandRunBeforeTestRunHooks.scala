@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CommandRunBeforeTestRunHooks. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CommandRunBeforeTestRunHooks.
   * @param [properties] Properties to set
   */
-class CommandRunBeforeTestRunHooks () extends ICommandRunBeforeTestRunHooks {
+class CommandRunBeforeTestRunHooks ()
+  extends StObject
+     with ICommandRunBeforeTestRunHooks {
   def this(properties: ICommandRunBeforeTestRunHooks) = this()
   
   /** CommandRunBeforeTestRunHooks actionId. */
@@ -32,18 +33,20 @@ class CommandRunBeforeTestRunHooks () extends ICommandRunBeforeTestRunHooks {
 }
 object CommandRunBeforeTestRunHooks {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new CommandRunBeforeTestRunHooks instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandRunBeforeTestRunHooks instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.create")
-  @js.native
-  def create(): CommandRunBeforeTestRunHooks = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.create")
-  @js.native
-  def create(properties: ICommandRunBeforeTestRunHooks): CommandRunBeforeTestRunHooks = js.native
+  @scala.inline
+  def create(): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandRunBeforeTestRunHooks]
+  @scala.inline
+  def create(properties: ICommandRunBeforeTestRunHooks): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestRunHooks]
   
   /**
     * Decodes a CommandRunBeforeTestRunHooks message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object CommandRunBeforeTestRunHooks {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.decode")
-  @js.native
-  def decode(reader: Reader): CommandRunBeforeTestRunHooks = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): CommandRunBeforeTestRunHooks = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.decode")
-  @js.native
-  def decode(reader: Uint8Array): CommandRunBeforeTestRunHooks = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): CommandRunBeforeTestRunHooks = js.native
+  @scala.inline
+  def decode(reader: Reader): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestRunHooks]
+  @scala.inline
+  def decode(reader: Reader, length: Double): CommandRunBeforeTestRunHooks = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunBeforeTestRunHooks]
+  @scala.inline
+  def decode(reader: Uint8Array): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestRunHooks]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): CommandRunBeforeTestRunHooks = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunBeforeTestRunHooks]
   
   /**
     * Decodes a CommandRunBeforeTestRunHooks message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object CommandRunBeforeTestRunHooks {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): CommandRunBeforeTestRunHooks = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): CommandRunBeforeTestRunHooks = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestRunHooks]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestRunHooks]
   
   /**
     * Encodes the specified CommandRunBeforeTestRunHooks message. Does not implicitly {@link io.cucumber.messages.CommandRunBeforeTestRunHooks.verify|verify} messages.
@@ -89,12 +86,10 @@ object CommandRunBeforeTestRunHooks {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.encode")
-  @js.native
-  def encode(message: ICommandRunBeforeTestRunHooks): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.encode")
-  @js.native
-  def encode(message: ICommandRunBeforeTestRunHooks, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ICommandRunBeforeTestRunHooks): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ICommandRunBeforeTestRunHooks, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandRunBeforeTestRunHooks message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandRunBeforeTestRunHooks.verify|verify} messages.
@@ -103,12 +98,10 @@ object CommandRunBeforeTestRunHooks {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandRunBeforeTestRunHooks): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandRunBeforeTestRunHooks, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ICommandRunBeforeTestRunHooks): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ICommandRunBeforeTestRunHooks, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandRunBeforeTestRunHooks message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object CommandRunBeforeTestRunHooks {
     * @returns CommandRunBeforeTestRunHooks
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): CommandRunBeforeTestRunHooks = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): CommandRunBeforeTestRunHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestRunHooks]
   
   /**
     * Creates a plain object from a CommandRunBeforeTestRunHooks message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object CommandRunBeforeTestRunHooks {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.toObject")
-  @js.native
-  def toObject(message: CommandRunBeforeTestRunHooks): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.toObject")
-  @js.native
-  def toObject(message: CommandRunBeforeTestRunHooks, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: CommandRunBeforeTestRunHooks): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: CommandRunBeforeTestRunHooks, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandRunBeforeTestRunHooks message.
@@ -140,7 +130,6 @@ object CommandRunBeforeTestRunHooks {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunBeforeTestRunHooks.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

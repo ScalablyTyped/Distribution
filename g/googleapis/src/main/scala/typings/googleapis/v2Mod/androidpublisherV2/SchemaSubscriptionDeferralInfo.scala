@@ -2,14 +2,12 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A SubscriptionDeferralInfo contains the data needed to defer a subscription
   * purchase to a future expiry time.
   */
-@js.native
 trait SchemaSubscriptionDeferralInfo extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaSubscriptionDeferralInfo extends StObject {
     * milliseconds since the Epoch. The given time must be later/greater than
     * the current expiry time for the subscription.
     */
-  var desiredExpiryTimeMillis: js.UndefOr[String] = js.native
+  var desiredExpiryTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The expected expiry time for the subscription. If the current expiry time
     * for the subscription is not the value specified here, the deferral will
     * not occur.
     */
-  var expectedExpiryTimeMillis: js.UndefOr[String] = js.native
+  var expectedExpiryTimeMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscriptionDeferralInfo {
   

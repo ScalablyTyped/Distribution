@@ -2,11 +2,11 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SocketPermission extends Permission {
+trait SocketPermission
+  extends StObject
+     with Permission {
   
   /**
     * **Possible values includes:**
@@ -18,7 +18,7 @@ trait SocketPermission extends Permission {
     * 'resolve-host',
     * 'network-state'
     */
-  var socket: js.Array[String] = js.native
+  var socket: js.Array[String]
 }
 object SocketPermission {
   

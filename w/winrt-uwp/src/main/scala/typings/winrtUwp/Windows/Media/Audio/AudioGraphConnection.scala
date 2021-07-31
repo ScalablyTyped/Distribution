@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a connection within an audio graph. */
-@js.native
 trait AudioGraphConnection extends StObject {
   
   /** Gets the destination node for the connection. */
-  var destination: IAudioNode = js.native
+  var destination: IAudioNode
   
   /** Gets the gain associated with the audio graph connection. */
-  var gain: Double = js.native
+  var gain: Double
 }
 object AudioGraphConnection {
   

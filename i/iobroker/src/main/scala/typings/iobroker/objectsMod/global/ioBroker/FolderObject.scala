@@ -4,27 +4,26 @@ import typings.iobroker.iobrokerStrings.folder
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   // Nothing is set in stone here, so start with allowing every property
   @JSName("common")
-  var common_FolderObject: OtherCommon = js.native
+  var common_FolderObject: OtherCommon
   
   @JSName("type")
-  var type_FolderObject: folder = js.native
+  var type_FolderObject: folder
 }
 object FolderObject {
   
   @scala.inline
-  def apply(_id: String, common: OtherCommon, native: Record[String, _], `type`: folder): FolderObject = {
+  def apply(_id: String, common: OtherCommon, native: Record[String, js.Any]): FolderObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("folder")
     __obj.asInstanceOf[FolderObject]
   }
   

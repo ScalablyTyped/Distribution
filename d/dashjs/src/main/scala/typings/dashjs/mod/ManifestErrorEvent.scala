@@ -4,27 +4,26 @@ import typings.dashjs.dashjsStrings.error
 import typings.dashjs.dashjsStrings.manifestError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManifestErrorEvent
-  extends Event
+  extends StObject
+     with Event
      with ErrorEvent {
   
-  var error: manifestError = js.native
+  var error: manifestError
   
-  var event: typings.dashjs.anon.Event = js.native
+  var event: typings.dashjs.anon.Event
   
   @JSName("type")
-  var type_ManifestErrorEvent: error = js.native
+  var type_ManifestErrorEvent: error
 }
 object ManifestErrorEvent {
   
   @scala.inline
-  def apply(error: manifestError, event: typings.dashjs.anon.Event, `type`: error): ManifestErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(event: typings.dashjs.anon.Event): ManifestErrorEvent = {
+    val __obj = js.Dynamic.literal(error = "manifestError", event = event.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ManifestErrorEvent]
   }
   

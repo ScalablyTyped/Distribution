@@ -4,14 +4,15 @@ import typings.identiconJs.identiconJsStrings.png
 import typings.identiconJs.identiconJsStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("identicon.js", JSImport.Default)
   @js.native
-  class default protected () extends Identicon {
+  class default protected ()
+    extends StObject
+       with Identicon {
     def this(hash: String) = this()
     def this(hash: String, options: IdenticonOptions) = this()
     def this(hash: String, size: Double) = this()
@@ -70,18 +71,17 @@ object mod {
     var size: Double = js.native
   }
   
-  @js.native
   trait IdenticonOptions extends StObject {
     
-    var background: js.UndefOr[Color] = js.native
+    var background: js.UndefOr[Color] = js.undefined
     
-    var foreground: js.UndefOr[Color] = js.native
+    var foreground: js.UndefOr[Color] = js.undefined
     
-    var format: js.UndefOr[svg | png] = js.native
+    var format: js.UndefOr[svg | png] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object IdenticonOptions {
     
@@ -126,31 +126,30 @@ object mod {
     }
   }
   
-  @js.native
   trait PNGlib extends StObject {
     
-    var depth: Double = js.native
+    var depth: Double
     
     /**
       * Returns the image as a base64 encoded string.
       */
-    def getBase64(): String = js.native
+    def getBase64(): String
     
     /**
       * Returns the png as a string.
       */
-    def getDump(): String = js.native
+    def getDump(): String
     
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Returns the index of a given pixel in the image data array.
       * @param x The given x coordinate of the pixel.
       * @param y The given y coordinate of the pixel.
       */
-    def index(x: Double, y: Double): Double = js.native
+    def index(x: Double, y: Double): Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object PNGlib {
     
@@ -190,10 +189,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Svg extends StObject {
     
-    var background: Color = js.native
+    var background: Color
     
     /**
       * Returns a string with the structure 'rgb(r, g, b, a)'.
@@ -202,23 +200,23 @@ object mod {
       * @param blue
       * @param alpha
       */
-    def color(red: Double, green: Double, blue: Double, alpha: Double): String = js.native
+    def color(red: Double, green: Double, blue: Double, alpha: Double): String
     
-    var foreground: Color = js.native
+    var foreground: Color
     
     /**
       * Returns the Svg as a base64 encoded string.
       */
-    def getBase64(): String = js.native
+    def getBase64(): String
     
     /**
       * Returns the Svg as string.
       */
-    def getDump(): String = js.native
+    def getDump(): String
     
-    var rectangles: js.Array[typings.identiconJs.anon.Color] = js.native
+    var rectangles: js.Array[typings.identiconJs.anon.Color]
     
-    var size: Double = js.native
+    var size: Double
   }
   object Svg {
     

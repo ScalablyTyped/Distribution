@@ -6,44 +6,44 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePerformancereportList extends StandardParameters {
+trait ParamsResourcePerformancereportList
+  extends StObject
+     with StandardParameters {
   
   /**
     * The account id to get the reports.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The end time of the report in ISO 8601 timestamp format using UTC.
     */
-  var endDateTime: js.UndefOr[String] = js.native
+  var endDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of entries returned on one result page. If not set, the
     * default is 100. Optional.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * A continuation token, used to page through performance reports. To
     * retrieve the next page, set this parameter to the value of
     * "nextPageToken" from the previous response. Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The start time of the report in ISO 8601 timestamp format using UTC.
     */
-  var startDateTime: js.UndefOr[String] = js.native
+  var startDateTime: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePerformancereportList {
   

@@ -2,7 +2,6 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait ZoomControlStyle extends StObject
 object ZoomControlStyle extends StObject {
   
   @js.native
-  sealed trait LARGE extends ZoomControlStyle
+  sealed trait LARGE
+    extends StObject
+       with ZoomControlStyle
   
   @js.native
-  sealed trait SMALL extends ZoomControlStyle
+  sealed trait SMALL
+    extends StObject
+       with ZoomControlStyle
 }

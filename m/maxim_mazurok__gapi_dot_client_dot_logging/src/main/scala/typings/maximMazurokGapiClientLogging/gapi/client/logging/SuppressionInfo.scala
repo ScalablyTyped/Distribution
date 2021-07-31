@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuppressionInfo extends StObject {
   
   /** The reason that entries were omitted from the session. */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /** A lower bound on the count of entries omitted due to reason. */
-  var suppressedCount: js.UndefOr[Double] = js.native
+  var suppressedCount: js.UndefOr[Double] = js.undefined
 }
 object SuppressionInfo {
   

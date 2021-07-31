@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationOutputLocation extends StObject {
   
   /**
     * The S3 bucket name.
     */
-  var s3BucketName: Input[String] = js.native
+  var s3BucketName: Input[String]
   
   /**
     * The S3 bucket prefix. Results stored in the root if not configured.
     */
-  var s3KeyPrefix: js.UndefOr[Input[String]] = js.native
+  var s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
 }
 object AssociationOutputLocation {
   

@@ -6,11 +6,12 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrimoireMinigame extends Minigame {
+trait GrimoireMinigame
+  extends StObject
+     with Minigame {
   
   /**
     * Casts a spell

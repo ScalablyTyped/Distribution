@@ -2,17 +2,15 @@ package typings.bootbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootboxLocaleValues extends StObject {
   
-  var CANCEL: String = js.native
+  var CANCEL: String
   
-  var CONFIRM: String = js.native
+  var CONFIRM: String
   
-  var OK: String = js.native
+  var OK: String
 }
 object BootboxLocaleValues {
   

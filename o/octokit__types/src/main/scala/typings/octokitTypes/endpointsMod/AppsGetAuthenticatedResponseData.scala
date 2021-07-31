@@ -4,37 +4,35 @@ import typings.octokitTypes.anon.Description
 import typings.octokitTypes.anon.Issues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsGetAuthenticatedResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var description: String = js.native
+  var description: String
   
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
-  var external_url: String = js.native
+  var external_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var installations_count: Double = js.native
+  var installations_count: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var owner: Description = js.native
+  var owner: Description
   
-  var permissions: Issues = js.native
+  var permissions: Issues
   
-  var slug: String = js.native
+  var slug: String
   
-  var updated_at: String = js.native
+  var updated_at: String
 }
 object AppsGetAuthenticatedResponseData {
   

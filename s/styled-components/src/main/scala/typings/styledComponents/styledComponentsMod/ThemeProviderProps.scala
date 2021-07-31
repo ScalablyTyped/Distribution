@@ -3,15 +3,13 @@ package typings.styledComponents.styledComponentsMod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeProviderProps[T /* <: js.Object */, U /* <: js.Object */] extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var theme: T | (js.Function1[/* theme */ U, T]) = js.native
+  var theme: T | (js.Function1[/* theme */ U, T])
 }
 object ThemeProviderProps {
   
@@ -22,7 +20,7 @@ object ThemeProviderProps {
   }
   
   @scala.inline
-  implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps[_, _], T /* <: js.Object */, U /* <: js.Object */] (val x: Self with (ThemeProviderProps[T, U])) extends AnyVal {
+  implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps[?, ?], T /* <: js.Object */, U /* <: js.Object */] (val x: Self & (ThemeProviderProps[T, U])) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

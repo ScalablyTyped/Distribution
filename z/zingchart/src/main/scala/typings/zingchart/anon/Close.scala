@@ -2,21 +2,19 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Close extends StObject {
   
   /**
     * To style the closing context menu button. Use the lineColor attribute to specify the button color. {...}
     */
-  var close: js.UndefOr[js.Any] = js.native
+  var close: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To style the opening context menu button. Use the lineColor attribute to specify the button color. {...}
     */
-  var open: js.UndefOr[js.Any] = js.native
+  var open: js.UndefOr[js.Any] = js.undefined
 }
 object Close {
   

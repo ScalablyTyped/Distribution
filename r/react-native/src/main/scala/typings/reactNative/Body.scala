@@ -4,23 +4,21 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
-  def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+  def arrayBuffer(): js.Promise[ArrayBuffer]
   
-  def blob(): js.Promise[Blob] = js.native
+  def blob(): js.Promise[Blob]
   
-  val bodyUsed: Boolean = js.native
+  val bodyUsed: Boolean
   
-  def formData(): js.Promise[FormData] = js.native
+  def formData(): js.Promise[FormData]
   
-  def json(): js.Promise[_] = js.native
+  def json(): js.Promise[js.Any]
   
-  def text(): js.Promise[String] = js.native
+  def text(): js.Promise[String]
 }
 object Body {
   
@@ -30,7 +28,7 @@ object Body {
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,
     formData: () => js.Promise[FormData],
-    json: () => js.Promise[_],
+    json: () => js.Promise[js.Any],
     text: () => js.Promise[String]
   ): Body = {
     val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
@@ -53,7 +51,7 @@ object Body {
     def setFormData(value: () => js.Promise[FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
     def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))

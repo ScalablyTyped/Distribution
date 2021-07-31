@@ -18,37 +18,35 @@ import typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod.SymbolSchema
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alternatives extends StObject {
     
-    var alternatives: AlternativesSchema = js.native
+    var alternatives: AlternativesSchema
     
-    var any: AnySchema = js.native
+    var any: AnySchema
     
-    var array: ArraySchema = js.native
+    var array: ArraySchema
     
-    var binary: BinarySchema = js.native
+    var binary: BinarySchema
     
-    var boolean: BooleanSchema = js.native
+    var boolean: BooleanSchema
     
-    var date: DateSchema = js.native
+    var date: DateSchema
     
-    var function: FunctionSchema = js.native
+    var function: FunctionSchema
     
-    var link: LinkSchema = js.native
+    var link: LinkSchema
     
-    var number: NumberSchema = js.native
+    var number: NumberSchema
     
-    var `object`: ObjectSchema[_] = js.native
+    var `object`: ObjectSchema[js.Any]
     
-    var string: StringSchema = js.native
+    var string: StringSchema
     
-    var symbol: SymbolSchema = js.native
+    var symbol: SymbolSchema
   }
   object Alternatives {
     
@@ -63,7 +61,7 @@ object anon {
       function: FunctionSchema,
       link: LinkSchema,
       number: NumberSchema,
-      `object`: ObjectSchema[_],
+      `object`: ObjectSchema[js.Any],
       string: StringSchema,
       symbol: SymbolSchema
     ): Alternatives = {
@@ -103,7 +101,7 @@ object anon {
       def setNumber(value: NumberSchema): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: ObjectSchema[_]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: ObjectSchema[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setString(value: StringSchema): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
@@ -113,7 +111,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Array extends StObject {
     
     /**
@@ -121,14 +118,14 @@ object anon {
       *
       * @default '[]'
       */
-    var array: js.UndefOr[String | `false`] = js.native
+    var array: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * the characters used around `{#label}` references. Defaults to `'"'`.
       *
       * @default '"'
       */
-    var label: js.UndefOr[String | `false`] = js.native
+    var label: js.UndefOr[String | `false`] = js.undefined
   }
   object Array {
     
@@ -155,12 +152,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Arrays extends StObject {
     
-    var arrays: js.UndefOr[Boolean] = js.native
+    var arrays: js.UndefOr[Boolean] = js.undefined
     
-    var objects: js.UndefOr[Boolean] = js.native
+    var objects: js.UndefOr[Boolean] = js.undefined
   }
   object Arrays {
     
@@ -187,10 +183,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Build extends StObject {
     
-    var build: js.UndefOr[js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, _], _]] = js.native
+    var build: js.UndefOr[
+        js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any], js.Any]
+      ] = js.undefined
   }
   object Build {
     
@@ -204,19 +201,18 @@ object anon {
     implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, _]) => _): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
+      def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any]) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
       
       @scala.inline
       def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var to: String = js.native
+    var to: String
   }
   object From {
     
@@ -237,7 +233,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Global extends StObject {
     
     /**
@@ -245,21 +240,21 @@ object anon {
       *
       * @default '$'
       */
-    var global: js.UndefOr[String] = js.native
+    var global: js.UndefOr[String] = js.undefined
     
     /**
       * references to error-specific or rule specific context.
       *
       * @default '#'
       */
-    var local: js.UndefOr[String] = js.native
+    var local: js.UndefOr[String] = js.undefined
     
     /**
       * references to the root value being validated.
       *
       * @default '/'
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object Global {
     
@@ -292,10 +287,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Override extends StObject {
     
-    var `override`: Boolean = js.native
+    var `override`: Boolean
   }
   object Override {
     
@@ -314,17 +308,16 @@ object anon {
     }
   }
   
-  @js.native
   trait To extends StObject {
     
-    def from(value: js.Any): js.Any = js.native
+    def from(value: js.Any): js.Any
     
-    def to(value: js.Any, helpers: CustomHelpers[_]): js.Any = js.native
+    def to(value: js.Any, helpers: CustomHelpers[js.Any]): js.Any
   }
   object To {
     
     @scala.inline
-    def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[_]) => js.Any): To = {
+    def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[js.Any]) => js.Any): To = {
       val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
       __obj.asInstanceOf[To]
     }
@@ -336,7 +329,7 @@ object anon {
       def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setTo(value: (js.Any, CustomHelpers[_]) => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+      def setTo(value: (js.Any, CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
     }
   }
 }

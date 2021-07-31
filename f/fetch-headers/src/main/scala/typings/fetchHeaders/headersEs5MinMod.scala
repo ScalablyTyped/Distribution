@@ -4,7 +4,6 @@ import typings.std.HeadersInit
 import typings.std.global.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headersEs5MinMod {

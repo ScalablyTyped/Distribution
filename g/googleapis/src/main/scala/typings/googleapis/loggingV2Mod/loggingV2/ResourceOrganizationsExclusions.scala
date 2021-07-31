@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2", "logging_v2.Resource$Organizations$Exclusions")
@@ -33,7 +32,7 @@ class ResourceOrganizationsExclusions protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaLogExclusion] = js.native
   def create(callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
   def create(params: ParamsResourceOrganizationsExclusionsCreate): GaxiosPromise[SchemaLogExclusion] = js.native
   def create(
     params: ParamsResourceOrganizationsExclusionsCreate,
@@ -65,7 +64,7 @@ class ResourceOrganizationsExclusions protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsExclusionsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsExclusionsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -94,7 +93,7 @@ class ResourceOrganizationsExclusions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaLogExclusion] = js.native
   def get(callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
   def get(params: ParamsResourceOrganizationsExclusionsGet): GaxiosPromise[SchemaLogExclusion] = js.native
   def get(
     params: ParamsResourceOrganizationsExclusionsGet,
@@ -128,7 +127,7 @@ class ResourceOrganizationsExclusions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListExclusionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListExclusionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListExclusionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListExclusionsResponse] = js.native
   def list(params: ParamsResourceOrganizationsExclusionsList): GaxiosPromise[SchemaListExclusionsResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsExclusionsList,
@@ -162,7 +161,7 @@ class ResourceOrganizationsExclusions protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaLogExclusion] = js.native
   def patch(callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
   def patch(params: ParamsResourceOrganizationsExclusionsPatch): GaxiosPromise[SchemaLogExclusion] = js.native
   def patch(
     params: ParamsResourceOrganizationsExclusionsPatch,

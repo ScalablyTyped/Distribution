@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.PivotConfigurator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPivotConfigurator extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): PivotConfigurator = js.native
+  def extend(proto: js.Object): PivotConfigurator
   
   /* static member */
-  var fn: PivotConfigurator = js.native
+  var fn: PivotConfigurator
 }
 object TypeofPivotConfigurator {
   

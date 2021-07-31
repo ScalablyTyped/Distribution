@@ -2,19 +2,19 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetLocationConfig extends WxBaseRequestConfig {
+trait GetLocationConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   @JSName("success")
-  def success_MGetLocationConfig(res: Location): Unit = js.native
+  def success_MGetLocationConfig(res: Location): Unit
   
   /**
     * 默认为 wgs84 的 gps 坐标，如果要返回直接给 openLocation 用的火星坐标，可传入'gcj02'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GetLocationConfig {
   

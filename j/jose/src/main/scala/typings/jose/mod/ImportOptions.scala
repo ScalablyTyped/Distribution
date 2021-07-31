@@ -2,13 +2,11 @@ package typings.jose.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportOptions extends StObject {
   
-  var calculateMissingRSAPrimes: js.UndefOr[Boolean] = js.native
+  var calculateMissingRSAPrimes: js.UndefOr[Boolean] = js.undefined
 }
 object ImportOptions {
   

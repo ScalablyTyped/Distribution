@@ -2,15 +2,13 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPalette extends StObject {
   
-  var colors: js.Array[String] = js.native
+  var colors: js.Array[String]
   
-  def get(index: Double): String = js.native
+  def get(index: Double): String
 }
 object IPalette {
   

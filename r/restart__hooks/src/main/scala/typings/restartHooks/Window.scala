@@ -2,13 +2,11 @@ package typings.restartHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var ResizeObserver: typings.restartHooks.ResizeObserver = js.native
+  var ResizeObserver: typings.restartHooks.ResizeObserver
 }
 object Window {
   

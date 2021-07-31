@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auditSinkMod {
@@ -27,7 +26,7 @@ object auditSinkMod {
       */
     def this(name: String) = this()
     def this(name: String, args: AuditSinkArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AuditSinkArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -50,6 +49,10 @@ object auditSinkMod {
   /* static members */
   object AuditSink {
     
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1/auditSink", "AuditSink")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AuditSink resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,43 +61,39 @@ object auditSinkMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1/auditSink", "AuditSink.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AuditSink = js.native
-    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1/auditSink", "AuditSink.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): AuditSink = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AuditSink]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuditSink]
     
     /**
       * Returns true if the given object is an instance of AuditSink.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1/auditSink", "AuditSink.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean]
   }
   
-  @js.native
   trait AuditSinkArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[auditregistrationDotk8sDotioSlashv1alpha1]] = js.native
+    val apiVersion: js.UndefOr[Input[auditregistrationDotk8sDotioSlashv1alpha1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink]] = js.undefined
     
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Spec defines the audit configuration spec
       */
     val spec: js.UndefOr[
         Input[typings.pulumiKubernetes.inputMod.auditregistration.v1alpha1.AuditSinkSpec]
-      ] = js.native
+      ] = js.undefined
   }
   object AuditSinkArgs {
     

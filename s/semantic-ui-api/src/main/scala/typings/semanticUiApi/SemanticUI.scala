@@ -167,7 +167,6 @@ import typings.semanticUiApi.semanticUiApiStrings.xml
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -191,7 +190,7 @@ object SemanticUI {
     /**
       * Gets promise for current API request
       */
-    def apply(behavior: `get request`): JQueryDeferred[_] | `false` = js.native
+    def apply(behavior: `get request`): JQueryDeferred[js.Any] | `false` = js.native
     /**
       * Returns encodeURIComponent value only if value passed is not already encoded
       */
@@ -264,51 +263,54 @@ object SemanticUI {
       * Removes loading and error state from element
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: action, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
     def apply(behavior: setting, name: action, value: String): JQuery = js.native
+    def apply(behavior: setting, name: action, value: Unit): String | `false` = js.native
     def apply(behavior: setting, name: action, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: api, value: js.UndefOr[scala.Nothing]): StringDictionary[String] = js.native
     def apply(behavior: setting, name: api, value: StringDictionary[String]): JQuery = js.native
-    def apply(behavior: setting, name: beforeSend, value: js.UndefOr[scala.Nothing]): js.Function1[/* settings */ ApiSettings, _] = js.native
-    def apply(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, _]): JQuery = js.native
-    def apply(behavior: setting, name: beforeXHR, value: js.UndefOr[scala.Nothing]): js.Function1[/* xhrObject */ jqXHR[_], _] = js.native
-    def apply(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[_], _]): JQuery = js.native
-    def apply(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): local | Boolean = js.native
+    def apply(behavior: setting, name: api, value: Unit): StringDictionary[String] = js.native
+    def apply(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, js.Any]): JQuery = js.native
+    def apply(behavior: setting, name: beforeSend, value: Unit): js.Function1[/* settings */ ApiSettings, js.Any] = js.native
+    def apply(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any]): JQuery = js.native
+    def apply(behavior: setting, name: beforeXHR, value: Unit): js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any] = js.native
     def apply(behavior: setting, name: cache, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: cache, value: Unit): local | Boolean = js.native
     def apply(behavior: setting, name: cache, value: local): JQuery = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: js.UndefOr[scala.Nothing]): xml | json | jsonp | script | html | text = js.native
+    def apply(behavior: setting, name: dataType, value: Unit): xml | json | jsonp | script | html | text = js.native
     def apply(behavior: setting, name: dataType, value: html): JQuery = js.native
     def apply(behavior: setting, name: dataType, value: json): JQuery = js.native
     def apply(behavior: setting, name: dataType, value: jsonp): JQuery = js.native
     def apply(behavior: setting, name: dataType, value: script): JQuery = js.native
     def apply(behavior: setting, name: dataType, value: text): JQuery = js.native
     def apply(behavior: setting, name: dataType, value: xml): JQuery = js.native
-    def apply(behavior: setting, name: data, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
     def apply(
       behavior: setting,
       name: data,
       value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any
     ): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: data, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: defaultData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: defaultData, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: encodeParameters, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: defaultData, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: encodeParameters, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: errorDuration, value: js.UndefOr[scala.Nothing]): `true` | Double = js.native
+    def apply(behavior: setting, name: encodeParameters, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: errorDuration, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: errorDuration, value: Unit): `true` | Double = js.native
     def apply(behavior: setting, name: errorDuration, value: `true`): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-    def apply(behavior: setting, name: hideError, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
     def apply(behavior: setting, name: hideError, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: hideError, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: hideError, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: interruptRequests, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: interruptRequests, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: loadingDuration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: interruptRequests, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: loadingDuration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-    def apply(behavior: setting, name: method, value: js.UndefOr[scala.Nothing]): post | get | put | delete | head | options | patch = js.native
+    def apply(behavior: setting, name: loadingDuration, value: Unit): Double = js.native
+    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
+    def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
+    def apply(behavior: setting, name: method, value: Unit): post | get | put | delete | head | options | patch = js.native
     def apply(behavior: setting, name: method, value: delete): JQuery = js.native
     def apply(behavior: setting, name: method, value: get): JQuery = js.native
     def apply(behavior: setting, name: method, value: head): JQuery = js.native
@@ -316,11 +318,6 @@ object SemanticUI {
     def apply(behavior: setting, name: method, value: patch): JQuery = js.native
     def apply(behavior: setting, name: method, value: post): JQuery = js.native
     def apply(behavior: setting, name: method, value: put): JQuery = js.native
-    def apply(behavior: setting, name: mockResponseAsync, value: js.UndefOr[scala.Nothing]): (js.Function2[
-        /* settings */ ApiSettings, 
-        /* callback */ js.Function1[/* response */ js.Any, Unit], 
-        Unit
-      ]) | `false` = js.native
     def apply(
       behavior: setting,
       name: mockResponseAsync,
@@ -330,62 +327,63 @@ object SemanticUI {
           Unit
         ]
     ): JQuery = js.native
+    def apply(behavior: setting, name: mockResponseAsync, value: Unit): (js.Function2[
+        /* settings */ ApiSettings, 
+        /* callback */ js.Function1[/* response */ js.Any, Unit], 
+        Unit
+      ]) | `false` = js.native
     def apply(behavior: setting, name: mockResponseAsync, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: mockResponse, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
     def apply(behavior: setting, name: mockResponse, value: js.Any): JQuery = js.native
+    def apply(behavior: setting, name: mockResponse, value: Unit): js.Any | `false` = js.native
     def apply(behavior: setting, name: mockResponse, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onAbort, value: js.UndefOr[scala.Nothing]): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(
       behavior: setting,
       name: onAbort,
-      value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+      value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onComplete, value: js.UndefOr[scala.Nothing]): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    def apply(behavior: setting, name: onAbort, value: Unit): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
     def apply(
       behavior: setting,
       name: onComplete,
-      value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+      value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onError, value: js.UndefOr[scala.Nothing]): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    def apply(behavior: setting, name: onComplete, value: Unit): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
     def apply(
       behavior: setting,
       name: onError,
-      value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+      value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onFailure, value: js.UndefOr[scala.Nothing]): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onError, value: Unit): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
     def apply(
       behavior: setting,
       name: onFailure,
       value: js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onRequest, value: js.UndefOr[scala.Nothing]): js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit] = js.native
+    def apply(behavior: setting, name: onFailure, value: Unit): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onRequest,
-      value: js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit]
+      value: js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onResponse, value: js.UndefOr[scala.Nothing]): js.Function1[/* response */ js.Any, Unit] = js.native
+    def apply(behavior: setting, name: onRequest, value: Unit): js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit] = js.native
     def apply(behavior: setting, name: onResponse, value: js.Function1[/* response */ js.Any, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+    def apply(behavior: setting, name: onResponse, value: Unit): js.Function1[/* response */ js.Any, Unit] = js.native
     def apply(
       behavior: setting,
       name: onSuccess,
-      value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
+      value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: onSuccess, value: Unit): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
     def apply(behavior: setting, name: on, value: String): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: on, value: Unit): String = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
-    def apply(behavior: setting, name: responseAsync, value: js.UndefOr[scala.Nothing]): (js.Function2[
-        /* settings */ ApiSettings, 
-        /* callback */ js.Function1[/* response */ js.Any, Unit], 
-        Unit
-      ]) | `false` = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: regExp, value: Unit): RegExpSettings = js.native
+    def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
     def apply(
       behavior: setting,
       name: responseAsync,
@@ -395,32 +393,38 @@ object SemanticUI {
           Unit
         ]
     ): JQuery = js.native
+    def apply(behavior: setting, name: responseAsync, value: Unit): (js.Function2[
+        /* settings */ ApiSettings, 
+        /* callback */ js.Function1[/* response */ js.Any, Unit], 
+        Unit
+      ]) | `false` = js.native
     def apply(behavior: setting, name: responseAsync, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: response, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
     def apply(behavior: setting, name: response, value: js.Any): JQuery = js.native
+    def apply(behavior: setting, name: response, value: Unit): js.Any | `false` = js.native
     def apply(behavior: setting, name: response, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: serializeForm, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: serializeForm, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: serializeForm, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: stateContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: stateContext, value: String): JQuery = js.native
+    def apply(behavior: setting, name: stateContext, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: stateContext, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: successTest, value: js.UndefOr[scala.Nothing]): js.Function1[/* response */ js.Any, Boolean] = js.native
     def apply(behavior: setting, name: successTest, value: js.Function1[/* response */ js.Any, Boolean]): JQuery = js.native
-    def apply(behavior: setting, name: throttleFirstRequest, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: successTest, value: Unit): js.Function1[/* response */ js.Any, Boolean] = js.native
     def apply(behavior: setting, name: throttleFirstRequest, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: throttle, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: throttleFirstRequest, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: throttle, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: urlData, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
+    def apply(behavior: setting, name: throttle, value: Unit): Double = js.native
     def apply(behavior: setting, name: urlData, value: js.Any): JQuery = js.native
+    def apply(behavior: setting, name: urlData, value: Unit): js.Any | `false` = js.native
     def apply(behavior: setting, name: urlData, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: url, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
     def apply(behavior: setting, name: url, value: String): JQuery = js.native
+    def apply(behavior: setting, name: url, value: Unit): String | `false` = js.native
     def apply(behavior: setting, name: url, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: ApiSettings): JQuery = js.native
     def apply(settings: ApiSettings): JQuery = js.native
     
@@ -430,18 +434,17 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'error'
           */
-        var error: String = js.native
+        var error: String
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
       }
       object Impl {
         
@@ -462,79 +465,78 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplloading | PickImplerrorError) with PartialPickImplkeyofImplError
+      type Param = (PickImplloading | PickImplerrorError) & PartialPickImplkeyofImplError
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'JSON could not be parsed during error handling'
           */
-        var JSONParse: String = js.native
+        var JSONParse: String
         
         /**
           * @default 'The before send function has aborted the request'
           */
-        var beforeSend: String = js.native
+        var beforeSend: String
         
         /**
           * @default 'There was an error with your request'
           */
-        var error: String = js.native
+        var error: String
         
         /**
           * @default 'API Request Aborted. Exit conditions met'
           */
-        var exitConditions: String = js.native
+        var exitConditions: String
         
         /**
           * @default 'You are using legacy API success callback names'
           */
-        var legacyParameters: String = js.native
+        var legacyParameters: String
         
         /**
           * @default 'API action used but no url was defined'
           */
-        var missingAction: String = js.native
+        var missingAction: String
         
         /**
           * @default 'Required dependency jquery-serialize-object missing, using basic serialize'
           */
-        var missingSerialize: String = js.native
+        var missingSerialize: String
         
         /**
           * @default 'No URL specified for API event'
           */
-        var missingURL: String = js.native
+        var missingURL: String
         
         /**
           * @default 'The beforeSend callback must return a settings object, beforeSend ignored.'
           */
-        var noReturnedValue: String = js.native
+        var noReturnedValue: String
         
         /**
           * @default 'There was an error parsing your request'
           */
-        var parseError: String = js.native
+        var parseError: String
         
         /**
           * @default 'Missing a required URL parameter: '
           */
-        var requiredParameter: String = js.native
+        var requiredParameter: String
         
         /**
           * @default 'Server gave an error: '
           */
-        var statusMessage: String = js.native
+        var statusMessage: String
         
         /**
           * @default 'Your request timed out'
           */
-        var timeout: String = js.native
+        var timeout: String
       }
       object Impl {
         
@@ -602,24 +604,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplbeforeSendBeforeSend | PickImplerrorError | PickImplexitConditions | PickImplJSONParse | PickImpllegacyParameters | PickImplmissingAction | PickImplmissingSerialize | PickImplmissingURL | PickImplnoReturnedValue | PickImplparseError | PickImplrequiredParameter | PickImplstatusMessage | PickImpltimeout) with PartialPickImplkeyofImplBeforeSend
+      type Param = (PickImplbeforeSendBeforeSend | PickImplerrorError | PickImplexitConditions | PickImplJSONParse | PickImpllegacyParameters | PickImplmissingAction | PickImplmissingSerialize | PickImplmissingURL | PickImplnoReturnedValue | PickImplparseError | PickImplrequiredParameter | PickImplstatusMessage | PickImpltimeout) & PartialPickImplkeyofImplBeforeSend
     }
     type ErrorSettings = typings.semanticUiApi.SemanticUI.Api.ErrorSettings.Param
     
     object MetadataSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'action'
           */
-        var action: String = js.native
+        var action: String
         
         /**
           * @default 'url'
           */
-        var url: String = js.native
+        var url: String
       }
       object Impl {
         
@@ -640,24 +641,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactionAction | PickImplurlUrl) with PartialPickImplkeyofImplAction
+      type Param = (PickImplactionAction | PickImplurlUrl) & PartialPickImplkeyofImplAction
     }
     type MetadataSettings = typings.semanticUiApi.SemanticUI.Api.MetadataSettings.Param
     
     object RegExpSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default /\{\/\$*[A-z0-9]+\}/g
           */
-        var optional: RegExp = js.native
+        var optional: RegExp
         
         /**
           * @default /\{\$*[A-z0-9]+\}/g
           */
-        var required: RegExp = js.native
+        var required: RegExp
       }
       object Impl {
         
@@ -678,24 +678,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplrequired | PickImploptional) with PartialPickImplkeyofImplOptional
+      type Param = (PickImplrequired | PickImploptional) & PartialPickImplkeyofImplOptional
     }
     type RegExpSettings = typings.semanticUiApi.SemanticUI.Api.RegExpSettings.Param
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.disabled'
           */
-        var disabled: String = js.native
+        var disabled: String
         
         /**
           * @default 'form'
           */
-        var form: String = js.native
+        var form: String
       }
       object Impl {
         
@@ -716,14 +715,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpldisabled | PickImplform) with PartialPickImplkeyofImplDisabled
+      type Param = (PickImpldisabled | PickImplform) & PartialPickImplkeyofImplDisabled
     }
     type SelectorSettings = typings.semanticUiApi.SemanticUI.Api.SelectorSettings.Param
   }
   
   object ApiSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       // endregion
@@ -731,21 +729,21 @@ object SemanticUI {
       /**
         * Named API action for query, originally specified in $.fn.settings.api
         */
-      var action: String | `false` = js.native
+      var action: String | `false`
       
-      var api: StringDictionary[String] = js.native
+      var api: StringDictionary[String]
       
       // endregion
       // region Callbacks
       /**
         * Allows modifying settings before request, or cancelling request
         */
-      def beforeSend(settings: ApiSettings): js.Any = js.native
+      def beforeSend(settings: ApiSettings): js.Any
       
       /**
         * Allows modifying XHR object for request
         */
-      def beforeXHR(xhrObject: jqXHR[_]): js.Any = js.native
+      def beforeXHR(xhrObject: jqXHR[js.Any]): js.Any
       
       /**
         * Can be set to 'local' to cache successful returned AJAX responses when using a JSON API.
@@ -754,45 +752,45 @@ object SemanticUI {
         *
         * @default true
         */
-      var cache: local | Boolean = js.native
+      var cache: local | Boolean
       
       /**
         * Class names used to determine element state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * POST/GET Data to Send with Request
         */
-      var data: js.Any = js.native
+      var data: js.Any
       
       /**
         * Expected data type of response
         */
-      var dataType: xml | json | jsonp | script | html | text = js.native
+      var dataType: xml | json | jsonp | script | html | text
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * Whether to automatically include default data like {value} and {text}
         *
         * @default true
         */
-      var defaultData: Boolean = js.native
+      var defaultData: Boolean
       
       /**
         * Whether to encode parameters with encodeURIComponent before adding into url string
         *
         * @default true
         */
-      var encodeParameters: Boolean = js.native
+      var encodeParameters: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Setting to true, will not remove error.
@@ -800,43 +798,43 @@ object SemanticUI {
         *
         * @default 2000
         */
-      var errorDuration: `true` | Double = js.native
+      var errorDuration: `true` | Double
       
       /**
         * The default auto will automatically remove error state after error duration, unless the element is a form
         *
         * @default 'auto'
         */
-      var hideError: auto | Boolean = js.native
+      var hideError: auto | Boolean
       
       /**
         * Whether an API request can occur while another request is still pending
         *
         * @default false
         */
-      var interruptRequests: Boolean = js.native
+      var interruptRequests: Boolean
       
       /**
         * Minimum duration to show loading indication
         *
         * @default 0
         */
-      var loadingDuration: Double = js.native
+      var loadingDuration: Double
       
       /**
         * Metadata used to store XHR and response promise
         */
-      var metadata: MetadataSettings = js.native
+      var metadata: MetadataSettings
       
       /**
         * Method for transmitting request to server
         */
-      var method: post | get | put | delete | head | options | patch = js.native
+      var method: post | get | put | delete | head | options | patch
       
       /**
         * @see response
         */
-      var mockResponse: js.Any | `false` = js.native
+      var mockResponse: js.Any | `false`
       
       /**
         * @see responseAsync
@@ -845,14 +843,14 @@ object SemanticUI {
             /* settings */ ApiSettings, 
             /* callback */ js.Function1[/* response */ js.Any, Unit], 
             Unit
-          ]) | `false` = js.native
+          ]) | `false`
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -860,7 +858,7 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       // region Behavior
       /**
@@ -868,59 +866,59 @@ object SemanticUI {
         *
         * @default 'auto'
         */
-      var on: String = js.native
+      var on: String
       
       /**
         * Callback on abort caused by user clicking a link or manually cancelling request.
         */
-      def onAbort(errorMessage: String, element: JQuery, xhr: jqXHR[_]): Unit = js.native
+      def onAbort(errorMessage: String, element: JQuery, xhr: jqXHR[js.Any]): Unit
       
       /**
         * Callback on request complete regardless of conditions
         */
-      def onComplete(response: js.Any, element: JQuery, xhr: jqXHR[_]): Unit = js.native
+      def onComplete(response: js.Any, element: JQuery, xhr: jqXHR[js.Any]): Unit
       
       /**
         * Callback on server error from returned status code, or XHR failure.
         */
-      def onError(errorMessage: String, element: JQuery, xhr: jqXHR[_]): Unit = js.native
+      def onError(errorMessage: String, element: JQuery, xhr: jqXHR[js.Any]): Unit
       
       /**
         * Callback on failed response, or JSON response that fails successTest
         */
-      def onFailure(response: js.Any, element: JQuery): Unit = js.native
+      def onFailure(response: js.Any, element: JQuery): Unit
       
       /**
         * Callback that occurs when request is made. Receives both the API success promise and the XHR request promise.
         */
-      def onRequest(promise: Deferred[_, _, _], xhr: jqXHR[_]): Unit = js.native
+      def onRequest(promise: Deferred[js.Any, js.Any, js.Any], xhr: jqXHR[js.Any]): Unit
       
       /**
         * Allows modifying the server's response before parsed by other callbacks to determine API event success
         */
-      def onResponse(response: js.Any): Unit = js.native
+      def onResponse(response: js.Any): Unit
       
       /**
         * Callback after successful response, JSON response must pass successTest
         */
-      def onSuccess(response: js.Any, element: JQuery, xhr: jqXHR[_]): Unit = js.native
+      def onSuccess(response: js.Any, element: JQuery, xhr: jqXHR[js.Any]): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Regular expressions used for template matching
         */
-      var regExp: RegExpSettings = js.native
+      var regExp: RegExpSettings
       
       /**
         * Can be set to a Javascript object which will be returned automatically instead of requesting JSON from server
         */
-      var response: js.Any | `false` = js.native
+      var response: js.Any | `false`
       
       /**
         * When specified, this function can be used to retrieve content from a server and return it asynchronously instead of a standard AJAX call.
@@ -932,65 +930,65 @@ object SemanticUI {
             /* settings */ ApiSettings, 
             /* callback */ js.Function1[/* response */ js.Any, Unit], 
             Unit
-          ]) | `false` = js.native
+          ]) | `false`
       
       /**
         * Selectors used to find parts of a module
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Whether to serialize closest form and include in request
         *
         * @default false
         */
-      var serializeForm: Boolean = js.native
+      var serializeForm: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * UI state will be applied to this element, defaults to triggering element.
         */
-      var stateContext: String | JQuery = js.native
+      var stateContext: String | JQuery
       
       /**
         * Determines whether completed JSON response should be treated as successful
         *
         * @see {@link http://semantic-ui.com/behaviors/api.html#determining-json-success}
         */
-      def successTest(response: js.Any): Boolean = js.native
+      def successTest(response: js.Any): Boolean
       
       /**
         * How long to wait when a request is made before triggering request, useful for rate limiting oninput
         *
         * @default 0
         */
-      var throttle: Double = js.native
+      var throttle: Double
       
       /**
         * When set to false will not delay the first request made, when no others are queued
         *
         * @default true
         */
-      var throttleFirstRequest: Boolean = js.native
+      var throttleFirstRequest: Boolean
       
       /**
         * Templated URL for query, will override specified action
         */
-      var url: String | `false` = js.native
+      var url: String | `false`
       
       /**
         * Variables to use for replacement
         */
-      var urlData: js.Any | `false` = js.native
+      var urlData: js.Any | `false`
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -999,7 +997,7 @@ object SemanticUI {
         action: String | `false`,
         api: StringDictionary[String],
         beforeSend: ApiSettings => js.Any,
-        beforeXHR: jqXHR[_] => js.Any,
+        beforeXHR: jqXHR[js.Any] => js.Any,
         cache: local | Boolean,
         className: ClassNameSettings,
         data: js.Any,
@@ -1023,13 +1021,13 @@ object SemanticUI {
         name: String,
         namespace: String,
         on: String,
-        onAbort: (String, JQuery, jqXHR[_]) => Unit,
-        onComplete: (js.Any, JQuery, jqXHR[_]) => Unit,
-        onError: (String, JQuery, jqXHR[_]) => Unit,
+        onAbort: (String, JQuery, jqXHR[js.Any]) => Unit,
+        onComplete: (js.Any, JQuery, jqXHR[js.Any]) => Unit,
+        onError: (String, JQuery, jqXHR[js.Any]) => Unit,
         onFailure: (js.Any, JQuery) => Unit,
-        onRequest: (Deferred[_, _, _], jqXHR[_]) => Unit,
+        onRequest: (Deferred[js.Any, js.Any, js.Any], jqXHR[js.Any]) => Unit,
         onResponse: js.Any => Unit,
-        onSuccess: (js.Any, JQuery, jqXHR[_]) => Unit,
+        onSuccess: (js.Any, JQuery, jqXHR[js.Any]) => Unit,
         performance: Boolean,
         regExp: RegExpSettings,
         response: js.Any | `false`,
@@ -1066,7 +1064,7 @@ object SemanticUI {
         def setBeforeSend(value: ApiSettings => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
         
         @scala.inline
-        def setBeforeXHR(value: jqXHR[_] => js.Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
+        def setBeforeXHR(value: jqXHR[js.Any] => js.Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
         
         @scala.inline
         def setCache(value: local | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
@@ -1137,25 +1135,25 @@ object SemanticUI {
         def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setOnAbort(value: (String, JQuery, jqXHR[_]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
+        def setOnAbort(value: (String, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
         
         @scala.inline
-        def setOnComplete(value: (js.Any, JQuery, jqXHR[_]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
+        def setOnComplete(value: (js.Any, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
         
         @scala.inline
-        def setOnError(value: (String, JQuery, jqXHR[_]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+        def setOnError(value: (String, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
         
         @scala.inline
         def setOnFailure(value: (js.Any, JQuery) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
         
         @scala.inline
-        def setOnRequest(value: (Deferred[_, _, _], jqXHR[_]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
+        def setOnRequest(value: (Deferred[js.Any, js.Any, js.Any], jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
         
         @scala.inline
         def setOnResponse(value: js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
         
         @scala.inline
-        def setOnSuccess(value: (js.Any, JQuery, jqXHR[_]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+        def setOnSuccess(value: (js.Any, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
         
         @scala.inline
         def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
@@ -1212,7 +1210,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplapi | PickImplon | PickImplcache | PickImplstateContext | PickImplencodeParameters | PickImpldefaultData | PickImplserializeForm | PickImplthrottle | PickImplthrottleFirstRequ | PickImplinterruptRequests | PickImplloadingDuration | PickImplhideError | PickImplerrorDuration | PickImplaction | PickImplurl | PickImplurlData | PickImplresponse | PickImplresponseAsync | PickImplmockResponse | PickImplmockResponseAsync | PickImplmethod | PickImpldataType | PickImpldata | PickImplbeforeSend | PickImplbeforeXHR | PickImplonRequest | PickImplonResponse | PickImplsuccessTest | PickImplonSuccess | PickImplonComplete | PickImplonFailure | PickImplonError | PickImplonAbort | PickImplregExp | PickImplselector | PickImplclassName | PickImplmetadata | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplapi | PickImplon | PickImplcache | PickImplstateContext | PickImplencodeParameters | PickImpldefaultData | PickImplserializeForm | PickImplthrottle | PickImplthrottleFirstRequ | PickImplinterruptRequests | PickImplloadingDuration | PickImplhideError | PickImplerrorDuration | PickImplaction | PickImplurl | PickImplurlData | PickImplresponse | PickImplresponseAsync | PickImplmockResponse | PickImplmockResponseAsync | PickImplmethod | PickImpldataType | PickImpldata | PickImplbeforeSend | PickImplbeforeXHR | PickImplonRequest | PickImplonResponse | PickImplsuccessTest | PickImplonSuccess | PickImplonComplete | PickImplonFailure | PickImplonError | PickImplonAbort | PickImplregExp | PickImplselector | PickImplclassName | PickImplmetadata | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/behaviors/api.html#/settings}

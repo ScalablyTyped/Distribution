@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportTaskProgressInput extends StObject {
   
   /**
     * Key-value pairs that define the properties of the ReportTaskProgressInput object.
     */
-  var fields: js.UndefOr[fieldList] = js.native
+  var fields: js.UndefOr[fieldList] = js.undefined
   
   /**
     * The ID of the task assigned to the task runner. This value is provided in the response for PollForTask.
     */
-  var taskId: typings.awsSdk.datapipelineMod.taskId = js.native
+  var taskId: typings.awsSdk.datapipelineMod.taskId
 }
 object ReportTaskProgressInput {
   

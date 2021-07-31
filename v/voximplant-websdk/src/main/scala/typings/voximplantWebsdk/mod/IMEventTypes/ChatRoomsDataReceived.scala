@@ -4,19 +4,19 @@ import typings.voximplantWebsdk.mod.ChatRoom
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when information about chat rooms where user participates received
   */
-@js.native
-trait ChatRoomsDataReceived extends VoxImplantIMEvent {
+trait ChatRoomsDataReceived
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * Rooms list
     */
-  var rooms: js.Array[ChatRoom] = js.native
+  var rooms: js.Array[ChatRoom]
 }
 object ChatRoomsDataReceived {
   

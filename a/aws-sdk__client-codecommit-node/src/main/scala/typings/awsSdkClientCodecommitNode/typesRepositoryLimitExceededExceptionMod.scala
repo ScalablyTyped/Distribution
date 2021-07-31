@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.createRepositoryExceptionsUnionMod.CreateRepositoryExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryLimitExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryLimitExceededExceptionDetails> * / any */ @js.native
-  trait RepositoryLimitExceededException extends CreateRepositoryExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryLimitExceededExceptionDetails> * / any */ trait RepositoryLimitExceededException
+    extends StObject
+       with CreateRepositoryExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryLimitExceededException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryLimitExceededException
   }
   object RepositoryLimitExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryLimitExceededException
-    ): RepositoryLimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryLimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryLimitExceededException")
       __obj.asInstanceOf[RepositoryLimitExceededException]
     }
     
@@ -34,6 +32,5 @@ object typesRepositoryLimitExceededExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryLimitExceededExceptionDetails extends StObject
 }

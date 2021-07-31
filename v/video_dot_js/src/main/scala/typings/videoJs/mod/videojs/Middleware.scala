@@ -3,10 +3,8 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.Tech.SourceObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Middleware extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Middleware extends StObject {
   def setSource(
     src: SourceObject,
     next: js.Function2[/* err */ js.Any, /* next */ js.Function1[/* src */ SourceObject, Unit], Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Middleware {
   

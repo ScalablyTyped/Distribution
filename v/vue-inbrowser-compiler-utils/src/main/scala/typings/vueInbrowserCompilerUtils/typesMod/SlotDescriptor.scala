@@ -3,21 +3,21 @@ package typings.vueInbrowserCompilerUtils.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlotDescriptor extends Descriptor {
+trait SlotDescriptor
+  extends StObject
+     with Descriptor {
   
-  var bindings: js.UndefOr[js.Array[ParamTag]] = js.native
+  var bindings: js.UndefOr[js.Array[ParamTag]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var scoped: js.UndefOr[Boolean] = js.native
+  var scoped: js.UndefOr[Boolean] = js.undefined
   
-  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.native
+  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.undefined
 }
 object SlotDescriptor {
   

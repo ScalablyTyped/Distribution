@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamsOutput extends StObject {
   
   /**
     * If set to true, there are more streams available to list.
     */
-  var HasMoreStreams: BooleanObject = js.native
+  var HasMoreStreams: BooleanObject
   
   /**
     * The names of the streams that are associated with the AWS account making the ListStreams request.
     */
-  var StreamNames: StreamNameList = js.native
+  var StreamNames: StreamNameList
 }
 object ListStreamsOutput {
   

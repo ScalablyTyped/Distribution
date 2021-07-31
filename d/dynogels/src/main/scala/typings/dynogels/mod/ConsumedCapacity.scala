@@ -2,15 +2,13 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsumedCapacity extends StObject {
   
-  var CapacityUnits: Double = js.native
+  var CapacityUnits: Double
   
-  var TableName: String = js.native
+  var TableName: String
 }
 object ConsumedCapacity {
   

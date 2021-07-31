@@ -3,7 +3,6 @@ package typings.twilsock
 import typings.twilsock.channelMod.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object websocketchannelMod {

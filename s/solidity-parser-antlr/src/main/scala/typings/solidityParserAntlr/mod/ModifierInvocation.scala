@@ -2,27 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifierInvocation
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var arguments: js.Array[Expression] | Null = js.native
+  var arguments: js.Array[Expression] | Null
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_ModifierInvocation: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation = js.native
+  var type_ModifierInvocation: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation
 }
 object ModifierInvocation {
   
   @scala.inline
-  def apply(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation): ModifierInvocation = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): ModifierInvocation = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], arguments = null)
+    __obj.updateDynamic("type")("ModifierInvocation")
     __obj.asInstanceOf[ModifierInvocation]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotDiskContainer extends StObject {
   
   /**
     * The description of the disk image being imported.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the disk image being imported. Valid values: VHD | VMDK 
     */
-  var Format: js.UndefOr[String] = js.native
+  var Format: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to the Amazon S3-based disk image being imported. It can either be a https URL (https://..) or an Amazon S3 URL (s3://..).
     */
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon S3 bucket for the disk image.
     */
-  var UserBucket: js.UndefOr[typings.awsSdk.ec2Mod.UserBucket] = js.native
+  var UserBucket: js.UndefOr[typings.awsSdk.ec2Mod.UserBucket] = js.undefined
 }
 object SnapshotDiskContainer {
   

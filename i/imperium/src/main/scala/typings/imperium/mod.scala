@@ -12,10 +12,13 @@ import typings.imperium.imperiumStrings.query
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("imperium", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("imperium", "Imperium")
   @js.native
@@ -24,23 +27,32 @@ object mod {
     /* private */ def addRole(roleName: String, getAcl: GetAcl): Unit = js.native
     
     // Check if current user can do action(s)
-    def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-    def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-    def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
+    def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
+    def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
     
     var context: js.Array[String] = js.native
     
-    def evaluateRouteAction(req: Request_[ParamsDictionary, _, _, Query], expr: String, key: String, context: Context_): String = js.native
+    def evaluateRouteAction(
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      expr: String,
+      key: String,
+      context: Context_
+    ): String = js.native
     
-    def evaluateRouteActions(req: Request_[ParamsDictionary, _, _, Query], action: js.Array[Action], context: Context_): Actions = js.native
+    def evaluateRouteActions(
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      action: js.Array[Action],
+      context: Context_
+    ): Actions = js.native
     
     def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = js.native
     
-    def evaluateUserActions(req: Request_[ParamsDictionary, _, _, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = js.native
+    def evaluateUserActions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = js.native
     
     // Check if user has role(s) act like as an OR
-    def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-    def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
+    def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
     
     // Add new role with specific ImperiumGetAcl
     def role(roleName: String): Role_ = js.native
@@ -72,62 +84,69 @@ object mod {
   
   @JSImport("imperium", "UnauthorizedError")
   @js.native
-  class UnauthorizedError protected () extends Error {
+  class UnauthorizedError protected ()
+    extends StObject
+       with Error {
     def this(message: String, status: Double, context: js.Any) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @JSImport("imperium", "can")
-  @js.native
-  def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-  @JSImport("imperium", "can")
-  @js.native
-  def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-  @JSImport("imperium", "can")
-  @js.native
-  def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+  @scala.inline
+  def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  @scala.inline
+  def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  @scala.inline
+  def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
   
   @JSImport("imperium", "context")
   @js.native
   val context: js.Array[String] = js.native
   
-  @JSImport("imperium", "evaluateRouteAction")
-  @js.native
-  def evaluateRouteAction(req: Request_[ParamsDictionary, _, _, Query], expr: String, key: String, context: Context_): String = js.native
+  @scala.inline
+  def evaluateRouteAction(
+    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+    expr: String,
+    key: String,
+    context: Context_
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateRouteAction")(req.asInstanceOf[js.Any], expr.asInstanceOf[js.Any], key.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("imperium", "evaluateRouteActions")
-  @js.native
-  def evaluateRouteActions(req: Request_[ParamsDictionary, _, _, Query], action: js.Array[Action], context: Context_): Actions = js.native
+  @scala.inline
+  def evaluateRouteActions(
+    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+    action: js.Array[Action],
+    context: Context_
+  ): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateRouteActions")(req.asInstanceOf[js.Any], action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Actions]
   
-  @JSImport("imperium", "evaluateUserAction")
-  @js.native
-  def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = js.native
+  @scala.inline
+  def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserAction")(action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
   
-  @JSImport("imperium", "evaluateUserActions")
-  @js.native
-  def evaluateUserActions(req: Request_[ParamsDictionary, _, _, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = js.native
+  @scala.inline
+  def evaluateUserActions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserActions")(req.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Action]]]
   
-  @JSImport("imperium", "is")
-  @js.native
-  def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
-  @JSImport("imperium", "is")
-  @js.native
-  def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+  @scala.inline
+  def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  @scala.inline
+  def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
   
-  @JSImport("imperium", "role")
-  @js.native
-  def role(roleName: String): Role_ = js.native
-  @JSImport("imperium", "role")
-  @js.native
-  def role(roleName: String, getAcl: GetAcl): Role_ = js.native
+  @scala.inline
+  def role(roleName: String): Role_ = ^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any]).asInstanceOf[Role_]
+  @scala.inline
+  def role(roleName: String, getAcl: GetAcl): Role_ = (^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any], getAcl.asInstanceOf[js.Any])).asInstanceOf[Role_]
   
   @JSImport("imperium", "roles")
   @js.native
   val roles: Roles_ = js.native
   
-  @js.native
-  trait Action extends /* key */ StringDictionary[String] {
+  trait Action
+    extends StObject
+       with /* key */ StringDictionary[String] {
     
-    var action: String = js.native
+    var action: String
   }
   object Action {
     
@@ -154,12 +173,11 @@ object mod {
     js.Promise[Boolean | js.Object]
   ]
   
-  @js.native
   trait RoleActions extends StObject {
     
-    var actions: js.Array[Action] = js.native
+    var actions: js.Array[Action]
     
-    var getAcl: js.UndefOr[GetAcl] = js.native
+    var getAcl: js.UndefOr[GetAcl] = js.undefined
   }
   object RoleActions {
     

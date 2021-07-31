@@ -30,13 +30,16 @@ import typings.leaflet.mod.TileLayer_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object leafletAugmentingMod {
   
   object esri {
+    
+    @JSImport("leaflet", "esri")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * `L.esri.BasemapLayer` is used to display Esri hosted basemaps and attributes data providers appropriately.
@@ -91,7 +94,7 @@ object leafletAugmentingMod {
       /**
         * Returns the array of visible layers specified in the layer constructor.
         */
-      def getLayers(): js.Array[_] = js.native
+      def getLayers(): js.Array[js.Any] = js.native
       
       /**
         * Returns the current time options being used for rendering.
@@ -123,7 +126,7 @@ object leafletAugmentingMod {
       /**
         * Redraws the layer to show the passed array of layer ids.
         */
-      def setLayers(layers: js.Array[_]): this.type = js.native
+      def setLayers(layers: js.Array[js.Any]): this.type = js.native
       
       /**
         * Sets the current time options being used to render the layer. Corresponds to the layerTimeOptions option
@@ -154,7 +157,7 @@ object leafletAugmentingMod {
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
       def addFeature(feature: js.Any): this.type = js.native
-      def addFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def addFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
       def addFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
       def addFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       
@@ -169,11 +172,11 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeature(id: String): this.type = js.native
-      def deleteFeature(id: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def deleteFeature(id: String, callback: Unit, context: js.Any): this.type = js.native
       def deleteFeature(id: String, callback: ResponseCallbackHandler): this.type = js.native
       def deleteFeature(id: String, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       def deleteFeature(id: Double): this.type = js.native
-      def deleteFeature(id: Double, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def deleteFeature(id: Double, callback: Unit, context: js.Any): this.type = js.native
       def deleteFeature(id: Double, callback: ResponseCallbackHandler): this.type = js.native
       def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       
@@ -188,7 +191,7 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeatures(ids: js.Array[Double | String]): this.type = js.native
-      def deleteFeatures(ids: js.Array[Double | String], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def deleteFeatures(ids: js.Array[Double | String], callback: Unit, context: js.Any): this.type = js.native
       def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler): this.type = js.native
       def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       
@@ -208,7 +211,7 @@ object leafletAugmentingMod {
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
       def updateFeature(feature: js.Any): this.type = js.native
-      def updateFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def updateFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
       def updateFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
       def updateFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
     }
@@ -252,7 +255,7 @@ object leafletAugmentingMod {
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
       def addFeature(feature: js.Any): this.type = js.native
-      def addFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def addFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
       def addFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
       def addFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       
@@ -272,11 +275,11 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeature(id: String): this.type = js.native
-      def deleteFeature(id: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def deleteFeature(id: String, callback: Unit, context: js.Any): this.type = js.native
       def deleteFeature(id: String, callback: ResponseCallbackHandler): this.type = js.native
       def deleteFeature(id: String, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       def deleteFeature(id: Double): this.type = js.native
-      def deleteFeature(id: Double, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def deleteFeature(id: Double, callback: Unit, context: js.Any): this.type = js.native
       def deleteFeature(id: Double, callback: ResponseCallbackHandler): this.type = js.native
       def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       
@@ -291,7 +294,7 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeatures(ids: js.Array[Double | String]): this.type = js.native
-      def deleteFeatures(ids: js.Array[Double | String], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def deleteFeatures(ids: js.Array[Double | String], callback: Unit, context: js.Any): this.type = js.native
       def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler): this.type = js.native
       def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
       
@@ -389,7 +392,7 @@ object leafletAugmentingMod {
         * timeFilterMode is set to 'server'. Also accepts function context as the last argument.
         */
       def setTimeRange(from: Date, to: Date): this.type = js.native
-      def setTimeRange(from: Date, to: Date, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def setTimeRange(from: Date, to: Date, callback: Unit, context: js.Any): this.type = js.native
       def setTimeRange(from: Date, to: Date, callback: FeatureCallbackHandler): this.type = js.native
       def setTimeRange(from: Date, to: Date, callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
       
@@ -398,7 +401,7 @@ object leafletAugmentingMod {
         * callback and function context.
         */
       def setWhere(where: String): this.type = js.native
-      def setWhere(where: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def setWhere(where: String, callback: Unit, context: js.Any): this.type = js.native
       def setWhere(where: String, callback: FeatureCallbackHandler): this.type = js.native
       def setWhere(where: String, callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
       
@@ -413,7 +416,7 @@ object leafletAugmentingMod {
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
       def updateFeature(feature: js.Any): this.type = js.native
-      def updateFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def updateFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
       def updateFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
       def updateFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
     }
@@ -679,7 +682,7 @@ object leafletAugmentingMod {
       /**
         * Return only specific feature IDs if they match other query parameters.
         */
-      def featureIds(ids: js.Array[_]): this.type = js.native
+      def featureIds(ids: js.Array[js.Any]): this.type = js.native
       
       /**
         * An array of associated fields to request for each feature.
@@ -859,18 +862,13 @@ object leafletAugmentingMod {
         * parameters will be serialized to a query string. Accepts an optional function context for the callback.
         */
       def get(url: String): this.type = js.native
-      def get(
-        url: String,
-        params: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Any
-      ): this.type = js.native
-      def get(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler): this.type = js.native
-      def get(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler, context: js.Any): this.type = js.native
       def get(url: String, params: js.Any): this.type = js.native
-      def get(url: String, params: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def get(url: String, params: js.Any, callback: Unit, context: js.Any): this.type = js.native
       def get(url: String, params: js.Any, callback: CallbackHandler): this.type = js.native
       def get(url: String, params: js.Any, callback: CallbackHandler, context: js.Any): this.type = js.native
+      def get(url: String, params: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def get(url: String, params: Unit, callback: CallbackHandler): this.type = js.native
+      def get(url: String, params: Unit, callback: CallbackHandler, context: js.Any): this.type = js.native
       
       /**
         * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
@@ -883,18 +881,13 @@ object leafletAugmentingMod {
         * parameters will be serialized. Accepts an optional function context for the callback.
         */
       def post(url: String): this.type = js.native
-      def post(
-        url: String,
-        params: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Any
-      ): this.type = js.native
-      def post(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler): this.type = js.native
-      def post(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler, context: js.Any): this.type = js.native
       def post(url: String, params: js.Any): this.type = js.native
-      def post(url: String, params: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+      def post(url: String, params: js.Any, callback: Unit, context: js.Any): this.type = js.native
       def post(url: String, params: js.Any, callback: CallbackHandler): this.type = js.native
       def post(url: String, params: js.Any, callback: CallbackHandler, context: js.Any): this.type = js.native
+      def post(url: String, params: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def post(url: String, params: Unit, callback: CallbackHandler): this.type = js.native
+      def post(url: String, params: Unit, callback: CallbackHandler, context: js.Any): this.type = js.native
     }
     
     /**
@@ -914,18 +907,13 @@ object leafletAugmentingMod {
         * parameters will be serialized. Accepts an optional function context for the callback.
         */
       def request(url: String): this.type = js.native
-      def request(
-        url: String,
-        params: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Any
-      ): this.type = js.native
-      def request(url: String, params: js.UndefOr[scala.Nothing], callback: js.Any): this.type = js.native
-      def request(url: String, params: js.UndefOr[scala.Nothing], callback: js.Any, context: js.Any): this.type = js.native
       def request(url: String, params: js.Any): this.type = js.native
-      def request(url: String, params: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
       def request(url: String, params: js.Any, callback: js.Any): this.type = js.native
       def request(url: String, params: js.Any, callback: js.Any, context: js.Any): this.type = js.native
+      def request(url: String, params: js.Any, callback: Unit, context: js.Any): this.type = js.native
+      def request(url: String, params: Unit, callback: js.Any): this.type = js.native
+      def request(url: String, params: Unit, callback: js.Any, context: js.Any): this.type = js.native
+      def request(url: String, params: Unit, callback: Unit, context: js.Any): this.type = js.native
       
       /**
         * Adds a token to this request if the service requires authentication. Will be added automatically if used
@@ -976,12 +964,10 @@ object leafletAugmentingMod {
       * `L.esri.basemapLayer` is used to display Esri hosted basemaps and attributes data providers appropriately.
       * The Terms of Use for Esri hosted services apply to all Leaflet applications.
       */
-    @JSImport("leaflet", "esri.basemapLayer")
-    @js.native
-    def basemapLayer(key: Basemaps): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = js.native
-    @JSImport("leaflet", "esri.basemapLayer")
-    @js.native
-    def basemapLayer(key: Basemaps, options: BasemapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = js.native
+    @scala.inline
+    def basemapLayer(key: Basemaps): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("basemapLayer")(key.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_]
+    @scala.inline
+    def basemapLayer(key: Basemaps, options: BasemapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("basemapLayer")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_]
     
     /**
       * Render and visualize Map Services from ArcGIS Online and ArcGIS Server. L.esri.DynamicMapLayer also supports
@@ -991,9 +977,8 @@ object leafletAugmentingMod {
       * and pass back the image which was generated on the fly. They also expose capabilities for querying and
       * identifying individual features.
       */
-    @JSImport("leaflet", "esri.dynamicMapLayer")
-    @js.native
-    def dynamicMapLayer(options: DynamicMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ = js.native
+    @scala.inline
+    def dynamicMapLayer(options: DynamicMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamicMapLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_]
     
     /**
       * `L.esri.FeatureLayer` is used to visualize, style, query and edit vector geographic data hosted in both
@@ -1017,57 +1002,49 @@ object leafletAugmentingMod {
       * queries to fetch nearby features. This technique is comparable to MODE_ONDEMAND in the ArcGIS API for
       * JavaScript.
       */
-    @JSImport("leaflet", "esri.featureLayer")
-    @js.native
-    def featureLayer(options: FeatureLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ = js.native
+    @scala.inline
+    def featureLayer(options: FeatureLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_]
     
     /**
       * `L.esri.FeatureLayerService` is an abstraction for interacting with Feature Layers running on ArcGIS Online
       * and ArcGIS Server that allows you to make requests to the API, as well as query, add, update and remove
       * features from the service.
       */
-    @JSImport("leaflet", "esri.featureLayerService")
-    @js.native
-    def featureLayerService(options: FeatureLayerServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_ = js.native
+    @scala.inline
+    def featureLayerService(options: FeatureLayerServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerService_]
     
     /**
       * L.esri.Find is an abstraction for the find API included in Map Services. It provides a chainable API for
       * building request parameters and executing find tasks.
       */
-    @JSImport("leaflet", "esri.find")
-    @js.native
-    def find(options: FindOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = js.native
-    @JSImport("leaflet", "esri.find")
-    @js.native
-    def find(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = js.native
+    @scala.inline
+    def find(options: FindOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_]
+    @scala.inline
+    def find(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_]
     
     /**
       * `L.esri.IdentifyFeatures` is an abstraction for the Identify API found in Map Services. It provides a
       * chainable API for building request parameters and executing the request.
       */
-    @JSImport("leaflet", "esri.identifyFeatures")
-    @js.native
-    def identifyFeatures(options: IdentifyFeaturesOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = js.native
-    @JSImport("leaflet", "esri.identifyFeatures")
-    @js.native
-    def identifyFeatures(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = js.native
+    @scala.inline
+    def identifyFeatures(options: IdentifyFeaturesOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyFeatures")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_]
+    @scala.inline
+    def identifyFeatures(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_): typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyFeatures")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_]
     
     /**
       * `L.esri.ImageService` is an abstraction for interacting with Image Services running on ArcGIS Online and
       * ArcGIS Server that allows you to make requests to the API, as well as query and identify features on the
       * service.
       */
-    @JSImport("leaflet", "esri.imageService")
-    @js.native
-    def imageService(options: ImageServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_ = js.native
+    @scala.inline
+    def imageService(options: ImageServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("imageService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_]
     
     /**
       * `L.esri.MapService` is an abstraction for interacting with Map Services running on ArcGIS Online and ArcGIS
       * Server that allows you to make requests to the API, as well as query and identify published features.
       */
-    @JSImport("leaflet", "esri.mapService")
-    @js.native
-    def mapService(options: MapServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_ = js.native
+    @scala.inline
+    def mapService(options: MapServiceOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapService")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_]
     
     /**
       * `L.esri.Query` is an abstraction for the query API included in Feature Layers and Image Services. It provides
@@ -1076,40 +1053,37 @@ object leafletAugmentingMod {
       * Note Depending on the type of service you are querying (Feature Layer, Map Service, Image Service) and the
       * version of ArcGIS Server that hosts the service some of these options may not be available.
       */
-    @JSImport("leaflet", "esri.query")
-    @js.native
-    def query(options: QueryOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_ = js.native
+    @scala.inline
+    def query(options: QueryOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_ = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_]
     
-    @JSImport("leaflet", "esri.task")
-    @js.native
-    def task(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = js.native
+    @scala.inline
+    def task(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_]
     /**
       * `L.esri.Task` is a generic class that provides the foundation for calling operations on ArcGIS Online and
       * ArcGIS Server Services like query, find and identify.
       */
-    @JSImport("leaflet", "esri.task")
-    @js.native
-    def task(options: TaskOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = js.native
+    @scala.inline
+    def task(options: TaskOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ = ^.asInstanceOf[js.Dynamic].applyDynamic("task")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_]
     
     /**
       * Access tiles from ArcGIS Online and ArcGIS Server to visualize and identify features. Copyright text from the
       * service is added to map attribution automatically.
       */
-    @JSImport("leaflet", "esri.tiledMapLayer")
-    @js.native
-    def tiledMapLayer(options: TiledMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_ = js.native
+    @scala.inline
+    def tiledMapLayer(options: TiledMapLayerOptions): typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tiledMapLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_]
     
     /**
       * Options for `L.esri.BasemapLayer`
       */
-    @js.native
-    trait BasemapLayerOptions extends TileLayerOptions {
+    trait BasemapLayerOptions
+      extends StObject
+         with TileLayerOptions {
       
       /**
         *     Will use this token to authenticate all calls to the service.
         *
         */
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
     }
     object BasemapLayerOptions {
       
@@ -1213,27 +1187,27 @@ object leafletAugmentingMod {
     /**
       * Options for `L.esri.DynamicMapLayer`
       */
-    @js.native
     trait DynamicMapLayerOptions
-      extends RasterLayerOptions
+      extends StObject
+         with RasterLayerOptions
          with LayerOptionsBase {
       
       /**
         * If enabled, appends a timestamp to each request to ensure a fresh image is created server-side.
         */
-      var disableCache: js.UndefOr[Boolean] = js.native
+      var disableCache: js.UndefOr[Boolean] = js.undefined
       
       /**
         * JSON object literal used to manipulate the layer symbology defined in the service itself. Requires a 10.1
         * (or above) map service which supports dynamicLayers requests.
         */
-      var dynamicLayers: js.UndefOr[js.Any] = js.native
+      var dynamicLayers: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Output format of the image.
         * @default 'png24'
         */
-      var format: js.UndefOr[String] = js.native
+      var format: js.UndefOr[String] = js.undefined
       
       /**
         *     SQL filters to define what features will be included in the image rendered by the service. An object is
@@ -1241,17 +1215,17 @@ object leafletAugmentingMod {
         *
         * { 3: "STATE_NAME='Kansas'", 9: "POP2007>25000" }
         */
-      var layerDefs: js.UndefOr[js.Any] = js.native
+      var layerDefs: js.UndefOr[js.Any] = js.undefined
       
       /**
         * An array of Layer IDs like [3,4,5] to show from the service.
         */
-      var layers: js.UndefOr[js.Array[_]] = js.native
+      var layers: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * Allow the server to produce transparent images.
         */
-      var transparent: js.UndefOr[Boolean] = js.native
+      var transparent: js.UndefOr[Boolean] = js.undefined
     }
     object DynamicMapLayerOptions {
       
@@ -1289,7 +1263,7 @@ object leafletAugmentingMod {
         def setLayerDefsUndefined: Self = StObject.set(x, "layerDefs", js.undefined)
         
         @scala.inline
-        def setLayers(value: js.Array[_]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        def setLayers(value: js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
@@ -1315,105 +1289,106 @@ object leafletAugmentingMod {
     /**
       * Options for FeatureLayer
       */
-    @js.native
-    trait FeatureLayerOptions extends LayerOptionsBase {
+    trait FeatureLayerOptions
+      extends StObject
+         with LayerOptionsBase {
       
       /**
         * Will remove layers from the internal cache when they are removed from the map.
         */
-      var cacheLayers: js.UndefOr[Boolean] = js.native
+      var cacheLayers: js.UndefOr[Boolean] = js.undefined
       
       /**
         *     An array of fieldnames to pull from the service. Includes all fields by default. You should always
         *     specify the name of the unique id for the service. Usually either `FID` or `OBJECTID`.
         */
-      var fields: js.UndefOr[js.Array[String]] = js.native
+      var fields: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         *     When paired with to defines the time range of features to display. Requires the Feature Layer to be time
         *     enabled.
         */
-      var from: js.UndefOr[Date] = js.native
+      var from: js.UndefOr[Date] = js.undefined
       
       /**
         * When utilizing esri-leaflet-renderers '2.0.2' or above, this option makes it possible to override the
         * symbology defined by the service itself.
         */
-      var ignoreRenderer: js.UndefOr[Boolean] = js.native
+      var ignoreRenderer: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Set this to false if your own service supports GeoJSON as an output format but you'd like to ask for
         * Geoservices JSON instead.
         */
-      var isModern: js.UndefOr[Boolean] = js.native
+      var isModern: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Closest zoom level the layer will be displayed on the map. example: maxZoom:19
         */
-      var maxZoom: js.UndefOr[Double] = js.native
+      var maxZoom: js.UndefOr[Double] = js.undefined
       
       /**
         * Furthest zoom level the layer will be displayed on the map. example: minZoom:3
         */
-      var minZoom: js.UndefOr[Double] = js.native
+      var minZoom: js.UndefOr[Double] = js.undefined
       
       /**
         *     Provides an opportunity to introspect individual GeoJSON features in the layer.
         */
-      var onEachFeature: js.UndefOr[js.Function2[/* feature */ js.Any, /* layer */ Layer, Unit]] = js.native
+      var onEachFeature: js.UndefOr[js.Function2[/* feature */ js.Any, /* layer */ Layer, Unit]] = js.undefined
       
       /**
         * Function that will be used for creating layers for GeoJSON points. If the option is not specified, simple
         * markers will be created). For point layers, custom panes should be passed through pointToLayer (example here).
         */
-      var pointToLayer: js.UndefOr[js.Function2[/* feature */ js.Any, /* latLng */ LatLngExpression, Unit]] = js.native
+      var pointToLayer: js.UndefOr[js.Function2[/* feature */ js.Any, /* latLng */ LatLngExpression, Unit]] = js.undefined
       
       /**
         * How many digits of precision to request from the server. Wikipedia has a great reference of digit
         * precision to meters.
         */
-      var precision: js.UndefOr[Double] = js.native
+      var precision: js.UndefOr[Double] = js.undefined
       
       /**
         * The vector renderer to use to draw the service. Usually L.svg() is preferable but setting to `L.canvas()`
         * can have performance benefits for large polygon layers.
         */
-      var renderer: js.UndefOr[SVG_ | Canvas_] = js.native
+      var renderer: js.UndefOr[SVG_ | Canvas_] = js.undefined
       
       /**
         *     How much to simplify polygons and polylines. A higher value gives better performance, a lower value
         *     gives a more accurate representation.
         */
-      var simplifyFactor: js.UndefOr[Double] = js.native
+      var simplifyFactor: js.UndefOr[Double] = js.undefined
       
       /**
         * Function that will be used to get style options for vector layers created for GeoJSON features.
         */
-      var style: js.UndefOr[js.Function2[/* feature */ js.Any, /* layer */ Layer, Unit]] = js.native
+      var style: js.UndefOr[js.Function2[/* feature */ js.Any, /* layer */ Layer, Unit]] = js.undefined
       
       /**
         * The name of the field to lookup the time of the feature. Can be an object like
         * {start:'startTime', end:'endTime'} or a string like 'created'.
         */
-      var timeField: js.UndefOr[js.Any] = js.native
+      var timeField: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Determines where features are filtered by time. By default features will be filtered by the server. If
         * set to 'client' all features are requested and filtered by the app before display.
         */
-      var timeFilterMode: js.UndefOr[server | client] = js.native
+      var timeFilterMode: js.UndefOr[server | client] = js.undefined
       
       /**
         * When paired with from defines the time range of features to display. Requires the Feature Layer to be
         * time enabled.
         */
-      var to: js.UndefOr[Date] = js.native
+      var to: js.UndefOr[Date] = js.undefined
       
       /**
         * An optional expression to filter features server side. String values should be denoted using single
         * quotes ie: where: "FIELDNAME = 'field value'"; More information about valid SQL syntax can be found here.
         */
-      var where: js.UndefOr[String] = js.native
+      var where: js.UndefOr[String] = js.undefined
     }
     object FeatureLayerOptions {
       
@@ -1557,28 +1532,27 @@ object leafletAugmentingMod {
       */
     type ImageServiceOptions = ServiceOptions
     
-    @js.native
     trait LayerOptionsBase extends StObject {
       
       /**
         * URL of an ArcGIS API for JavaScript proxy or ArcGIS Resource Proxy to use for proxying requests.
         */
-      var proxy: js.UndefOr[String] = js.native
+      var proxy: js.UndefOr[String] = js.undefined
       
       /**
         * Will use this token to authenticate all calls to the service.
         */
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
       
       /**
         * URL of the Map Service
         */
-      var url: String = js.native
+      var url: String
       
       /**
         * Dictates if the service should use CORS when making GET requests.
         */
-      var useCors: js.UndefOr[Boolean] = js.native
+      var useCors: js.UndefOr[Boolean] = js.undefined
     }
     object LayerOptionsBase {
       
@@ -1629,30 +1603,31 @@ object leafletAugmentingMod {
     /**
       * Options for RasterLayer
       */
-    @js.native
-    trait RasterLayerOptions extends ImageOverlayOptions {
+    trait RasterLayerOptions
+      extends StObject
+         with ImageOverlayOptions {
       
       /**
         * Server response content type.
         * @default 'image'
         */
-      var f: js.UndefOr[String] = js.native
+      var f: js.UndefOr[String] = js.undefined
       
       /**
         *     Closest zoom level the layer will be displayed on the map.
         */
-      var maxZoom: js.UndefOr[Double] = js.native
+      var maxZoom: js.UndefOr[Double] = js.undefined
       
       /**
         * Furthest zoom level the layer will be displayed on the map.
         */
-      var minZoom: js.UndefOr[Double] = js.native
+      var minZoom: js.UndefOr[Double] = js.undefined
       
       /**
         * Position of the layer relative to other overlays.
         * @default 'front'
         */
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
     }
     object RasterLayerOptions {
       
@@ -1696,28 +1671,27 @@ object leafletAugmentingMod {
     /**
       * Options for `L.esri.Service`
       */
-    @js.native
     trait ServiceOptions extends StObject {
       
       /**
         * URL of an ArcGIS API for JavaScript proxy or ArcGIS Resource Proxy to use for proxying POST requests.
         */
-      var proxy: js.UndefOr[String] = js.native
+      var proxy: js.UndefOr[String] = js.undefined
       
       /**
         * Operation timeout
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * URL of the ArcGIS service you would like to consume.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
       /**
         * If this service should use CORS when making GET requests.
         */
-      var useCors: js.UndefOr[Boolean] = js.native
+      var useCors: js.UndefOr[Boolean] = js.undefined
     }
     object ServiceOptions {
       
@@ -1756,12 +1730,11 @@ object leafletAugmentingMod {
       }
     }
     
-    @js.native
     trait SpatialReference extends StObject {
       
-      var wkid: js.UndefOr[Double] = js.native
+      var wkid: js.UndefOr[Double] = js.undefined
       
-      var wkt: js.UndefOr[String] = js.native
+      var wkt: js.UndefOr[String] = js.undefined
     }
     object SpatialReference {
       
@@ -1800,9 +1773,9 @@ object leafletAugmentingMod {
     /**
       * Options for `L.esri.TiledMapLayer`
       */
-    @js.native
     trait TiledMapLayerOptions
-      extends TileLayerOptions
+      extends StObject
+         with TileLayerOptions
          with LayerOptionsBase {
       
       /**
@@ -1811,7 +1784,7 @@ object leafletAugmentingMod {
         *
         * Default 0.1
         */
-      var zoomOffsetAllowance: js.UndefOr[Double] = js.native
+      var zoomOffsetAllowance: js.UndefOr[Double] = js.undefined
     }
     object TiledMapLayerOptions {
       

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the face. */
-@js.native
 trait Face extends StObject {
   
   /** Age information about a face. */
-  var age: js.UndefOr[FaceAge] = js.native
+  var age: js.UndefOr[FaceAge] = js.undefined
   
   /** The location of the bounding box around the face. */
-  var face_location: js.UndefOr[FaceLocation] = js.native
+  var face_location: js.UndefOr[FaceLocation] = js.undefined
   
   /** Information about the gender of the face. */
-  var gender: js.UndefOr[FaceGender] = js.native
+  var gender: js.UndefOr[FaceGender] = js.undefined
 }
 object Face {
   

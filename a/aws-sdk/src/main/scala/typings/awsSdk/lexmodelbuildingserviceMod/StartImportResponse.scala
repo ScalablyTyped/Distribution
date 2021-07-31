@@ -2,46 +2,44 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartImportResponse extends StObject {
   
   /**
     * A timestamp for the date and time that the import job was requested.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier for the specific import job.
     */
-  var importId: js.UndefOr[String] = js.native
+  var importId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the import job. If the status is FAILED, you can get the reason for the failure using the GetImport operation.
     */
-  var importStatus: js.UndefOr[ImportStatus] = js.native
+  var importStatus: js.UndefOr[ImportStatus] = js.undefined
   
   /**
     * The action to take when there is a merge conflict.
     */
-  var mergeStrategy: js.UndefOr[MergeStrategy] = js.native
+  var mergeStrategy: js.UndefOr[MergeStrategy] = js.undefined
   
   /**
     * The name given to the import job.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The type of resource to import.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * A list of tags added to the imported bot.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object StartImportResponse {
   

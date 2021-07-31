@@ -7,32 +7,33 @@ import typings.std.ReadonlyArray
 import typings.xmlbuilder.mod.XMLToStringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("plist", "build")
+  @JSImport("plist", JSImport.Namespace)
   @js.native
-  def build(obj: PlistValue): String = js.native
-  @JSImport("plist", "build")
-  @js.native
-  def build(obj: PlistValue, opts: PlistBuildOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("plist", "parse")
-  @js.native
-  def parse(xml: String): PlistValue = js.native
+  @scala.inline
+  def build(obj: PlistValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def build(obj: PlistValue, opts: PlistBuildOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def parse(xml: String): PlistValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[PlistValue]
   
   @js.native
   trait PlistArray
-    extends ReadonlyArray[PlistValue]
+    extends StObject
+       with ReadonlyArray[PlistValue]
        with _PlistValue
   
   type PlistBuildOptions = XMLToStringOptions
   
-  @js.native
   trait PlistObject
-    extends /* x */ StringDictionary[PlistValue]
+    extends StObject
+       with /* x */ StringDictionary[PlistValue]
        with _PlistValue
   object PlistObject {
     

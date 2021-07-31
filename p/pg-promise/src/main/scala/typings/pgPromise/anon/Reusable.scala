@@ -4,19 +4,17 @@ import typings.pgPromise.mod.ITask
 import typings.pgPromise.mod.TransactionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reusable[Ext] extends StObject {
   
-  var cnd: js.UndefOr[Boolean | (js.Function1[/* t */ ITask[Ext] with Ext, Boolean])] = js.native
+  var cnd: js.UndefOr[Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])] = js.undefined
   
-  var mode: js.UndefOr[TransactionMode | Null] = js.native
+  var mode: js.UndefOr[TransactionMode | Null] = js.undefined
   
-  var reusable: js.UndefOr[Boolean | (js.Function1[/* t */ ITask[Ext] with Ext, Boolean])] = js.native
+  var reusable: js.UndefOr[Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])] = js.undefined
   
-  var tag: js.UndefOr[js.Any] = js.native
+  var tag: js.UndefOr[js.Any] = js.undefined
 }
 object Reusable {
   
@@ -27,13 +25,13 @@ object Reusable {
   }
   
   @scala.inline
-  implicit class ReusableMutableBuilder[Self <: Reusable[_], Ext] (val x: Self with Reusable[Ext]) extends AnyVal {
+  implicit class ReusableMutableBuilder[Self <: Reusable[?], Ext] (val x: Self & Reusable[Ext]) extends AnyVal {
     
     @scala.inline
-    def setCnd(value: Boolean | (js.Function1[/* t */ ITask[Ext] with Ext, Boolean])): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
+    def setCnd(value: Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCndFunction1(value: /* t */ ITask[Ext] with Ext => Boolean): Self = StObject.set(x, "cnd", js.Any.fromFunction1(value))
+    def setCndFunction1(value: /* t */ ITask[Ext] & Ext => Boolean): Self = StObject.set(x, "cnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
@@ -48,10 +46,10 @@ object Reusable {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setReusable(value: Boolean | (js.Function1[/* t */ ITask[Ext] with Ext, Boolean])): Self = StObject.set(x, "reusable", value.asInstanceOf[js.Any])
+    def setReusable(value: Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])): Self = StObject.set(x, "reusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReusableFunction1(value: /* t */ ITask[Ext] with Ext => Boolean): Self = StObject.set(x, "reusable", js.Any.fromFunction1(value))
+    def setReusableFunction1(value: /* t */ ITask[Ext] & Ext => Boolean): Self = StObject.set(x, "reusable", js.Any.fromFunction1(value))
     
     @scala.inline
     def setReusableUndefined: Self = StObject.set(x, "reusable", js.undefined)

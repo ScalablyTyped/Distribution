@@ -3,86 +3,84 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightConfig extends StObject {
   
   /**
     * The border highlight fill color (default: transparent).
     */
-  var borderColor: js.UndefOr[RGBA] = js.native
+  var borderColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The color format used to format color styles (default: hex).
     */
-  var colorFormat: js.UndefOr[ColorFormat] = js.native
+  var colorFormat: js.UndefOr[ColorFormat] = js.undefined
   
   /**
     * The content box highlight fill color (default: transparent).
     */
-  var contentColor: js.UndefOr[RGBA] = js.native
+  var contentColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The grid layout color (default: transparent).
     */
-  var cssGridColor: js.UndefOr[RGBA] = js.native
+  var cssGridColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The event target element highlight fill color (default: transparent).
     */
-  var eventTargetColor: js.UndefOr[RGBA] = js.native
+  var eventTargetColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The grid layout highlight configuration (default: all transparent).
     */
-  var gridHighlightConfig: js.UndefOr[GridHighlightConfig] = js.native
+  var gridHighlightConfig: js.UndefOr[GridHighlightConfig] = js.undefined
   
   /**
     * The margin highlight fill color (default: transparent).
     */
-  var marginColor: js.UndefOr[RGBA] = js.native
+  var marginColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The padding highlight fill color (default: transparent).
     */
-  var paddingColor: js.UndefOr[RGBA] = js.native
+  var paddingColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The shape outside fill color (default: transparent).
     */
-  var shapeColor: js.UndefOr[RGBA] = js.native
+  var shapeColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The shape margin fill color (default: transparent).
     */
-  var shapeMarginColor: js.UndefOr[RGBA] = js.native
+  var shapeMarginColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Whether the a11y info should be shown (default: true).
     */
-  var showAccessibilityInfo: js.UndefOr[Boolean] = js.native
+  var showAccessibilityInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the extension lines from node to the rulers should be shown (default: false).
     */
-  var showExtensionLines: js.UndefOr[Boolean] = js.native
+  var showExtensionLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the node info tooltip should be shown (default: false).
     */
-  var showInfo: js.UndefOr[Boolean] = js.native
+  var showInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the rulers should be shown (default: false).
     */
-  var showRulers: js.UndefOr[Boolean] = js.native
+  var showRulers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the node styles in the tooltip (default: false).
     */
-  var showStyles: js.UndefOr[Boolean] = js.native
+  var showStyles: js.UndefOr[Boolean] = js.undefined
 }
 object HighlightConfig {
   

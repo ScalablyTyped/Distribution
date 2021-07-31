@@ -2,15 +2,13 @@ package typings.astTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawRawValue extends StObject {
   
-  var raw: String = js.native
+  var raw: String
   
-  var rawValue: Double = js.native
+  var rawValue: Double
 }
 object RawRawValue {
   

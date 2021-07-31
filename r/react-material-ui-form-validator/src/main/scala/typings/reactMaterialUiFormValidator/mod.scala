@@ -8,7 +8,6 @@ import typings.react.mod.FormEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,13 +15,13 @@ object mod {
   @JSImport("react-material-ui-form-validator", "SelectValidator")
   @js.native
   class SelectValidator protected ()
-    extends Component[ValidatorComponentProps with SelectFieldProps, js.Object, js.Any] {
-    def this(props: ValidatorComponentProps with SelectFieldProps) = this()
+    extends Component[ValidatorComponentProps & SelectFieldProps, js.Object, js.Any] {
+    def this(props: ValidatorComponentProps & SelectFieldProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ValidatorComponentProps with SelectFieldProps, context: js.Any) = this()
+    def this(props: ValidatorComponentProps & SelectFieldProps, context: js.Any) = this()
     
     def getErrorMessage(): String | Boolean = js.native
     
@@ -33,21 +32,21 @@ object mod {
     def makeValid(): Unit = js.native
     
     def validate(value: String): Unit = js.native
-    def validate(value: String, includeRequired: js.UndefOr[scala.Nothing], dryRun: Boolean): Unit = js.native
     def validate(value: String, includeRequired: Boolean): Unit = js.native
     def validate(value: String, includeRequired: Boolean, dryRun: Boolean): Unit = js.native
+    def validate(value: String, includeRequired: Unit, dryRun: Boolean): Unit = js.native
   }
   
   @JSImport("react-material-ui-form-validator", "TextValidator")
   @js.native
   class TextValidator protected ()
-    extends Component[ValidatorComponentProps with TextFieldProps, js.Object, js.Any] {
-    def this(props: ValidatorComponentProps with TextFieldProps) = this()
+    extends Component[ValidatorComponentProps & TextFieldProps, js.Object, js.Any] {
+    def this(props: ValidatorComponentProps & TextFieldProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ValidatorComponentProps with TextFieldProps, context: js.Any) = this()
+    def this(props: ValidatorComponentProps & TextFieldProps, context: js.Any) = this()
     
     def getErrorMessage(): String | Boolean = js.native
     
@@ -58,9 +57,9 @@ object mod {
     def makeValid(): Unit = js.native
     
     def validate(value: String): Unit = js.native
-    def validate(value: String, includeRequired: js.UndefOr[scala.Nothing], dryRun: Boolean): Unit = js.native
     def validate(value: String, includeRequired: Boolean): Unit = js.native
     def validate(value: String, includeRequired: Boolean, dryRun: Boolean): Unit = js.native
+    def validate(value: String, includeRequired: Unit, dryRun: Boolean): Unit = js.native
   }
   
   @JSImport("react-material-ui-form-validator", "ValidatorComponent")
@@ -83,9 +82,9 @@ object mod {
     def makeValid(): Unit = js.native
     
     def validate(value: String): Unit = js.native
-    def validate(value: String, includeRequired: js.UndefOr[scala.Nothing], dryRun: Boolean): Unit = js.native
     def validate(value: String, includeRequired: Boolean): Unit = js.native
     def validate(value: String, includeRequired: Boolean, dryRun: Boolean): Unit = js.native
+    def validate(value: String, includeRequired: Unit, dryRun: Boolean): Unit = js.native
   }
   
   @JSImport("react-material-ui-form-validator", "ValidatorForm")
@@ -106,30 +105,32 @@ object mod {
   /* static members */
   object ValidatorForm {
     
-    @JSImport("react-material-ui-form-validator", "ValidatorForm.addValidationRule")
+    @JSImport("react-material-ui-form-validator", "ValidatorForm")
     @js.native
-    def addValidationRule(name: String, callback: js.Function1[/* value */ js.Any, Boolean | js.Promise[Boolean]]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-material-ui-form-validator", "ValidatorForm.removeValidationRule")
-    @js.native
-    def removeValidationRule(name: String): Unit = js.native
+    @scala.inline
+    def addValidationRule(name: String, callback: js.Function1[/* value */ js.Any, Boolean | js.Promise[Boolean]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidationRule")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def removeValidationRule(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeValidationRule")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait ValidatorComponentProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var errorMessages: js.UndefOr[js.Array[_] | String] = js.native
+    var errorMessages: js.UndefOr[js.Array[js.Any] | String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var validatorListener: js.UndefOr[js.Function1[/* isValid */ Boolean, Unit]] = js.native
+    var validatorListener: js.UndefOr[js.Function1[/* isValid */ Boolean, Unit]] = js.undefined
     
-    var validators: js.UndefOr[js.Array[_]] = js.native
+    var validators: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var withRequiredValidator: js.UndefOr[Boolean] = js.native
+    var withRequiredValidator: js.UndefOr[Boolean] = js.undefined
   }
   object ValidatorComponentProps {
     
@@ -143,7 +144,7 @@ object mod {
     implicit class ValidatorComponentPropsMutableBuilder[Self <: ValidatorComponentProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setErrorMessages(value: js.Array[_] | String): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+      def setErrorMessages(value: js.Array[js.Any] | String): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
@@ -161,7 +162,7 @@ object mod {
       def setValidatorListenerUndefined: Self = StObject.set(x, "validatorListener", js.undefined)
       
       @scala.inline
-      def setValidators(value: js.Array[_]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      def setValidators(value: js.Array[js.Any]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
@@ -180,19 +181,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ValidatorFormProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var debounceTime: js.UndefOr[Double] = js.native
+    var debounceTime: js.UndefOr[Double] = js.undefined
     
-    var instantValidate: js.UndefOr[Boolean] = js.native
+    var instantValidate: js.UndefOr[Boolean] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* errors */ js.Array[_], Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* errors */ js.Array[js.Any], Unit]] = js.undefined
     
-    def onSubmit(event: FormEvent[Element]): Unit = js.native
+    def onSubmit(event: FormEvent[Element]): Unit
   }
   object ValidatorFormProps {
     
@@ -224,7 +225,7 @@ object mod {
       def setInstantValidateUndefined: Self = StObject.set(x, "instantValidate", js.undefined)
       
       @scala.inline
-      def setOnError(value: /* errors */ js.Array[_] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      def setOnError(value: /* errors */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)

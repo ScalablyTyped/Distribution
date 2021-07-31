@@ -2,15 +2,13 @@ package typings.winrt.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHtmlFormatHelperStatics extends StObject {
   
-  def createHtmlFormat(htmlFragment: String): String = js.native
+  def createHtmlFormat(htmlFragment: String): String
   
-  def getStaticFragment(htmlFormat: String): String = js.native
+  def getStaticFragment(htmlFormat: String): String
 }
 object IHtmlFormatHelperStatics {
   

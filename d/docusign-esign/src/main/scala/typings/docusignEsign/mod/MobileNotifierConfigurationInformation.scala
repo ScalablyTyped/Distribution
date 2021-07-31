@@ -2,13 +2,11 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MobileNotifierConfigurationInformation extends StObject {
   
-  var mobileNotifierConfigurations: js.UndefOr[js.Array[MobileNotifierConfiguration]] = js.native
+  var mobileNotifierConfigurations: js.UndefOr[js.Array[MobileNotifierConfiguration]] = js.undefined
 }
 object MobileNotifierConfigurationInformation {
   

@@ -2,63 +2,61 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProcessingJobRequest extends StObject {
   
   /**
     * Configures the processing job to run a specified Docker container image.
     */
-  var AppSpecification: typings.awsSdk.sagemakerMod.AppSpecification = js.native
+  var AppSpecification: typings.awsSdk.sagemakerMod.AppSpecification
   
   /**
     * Sets the environment variables in the Docker container.
     */
-  var Environment: js.UndefOr[ProcessingEnvironmentMap] = js.native
+  var Environment: js.UndefOr[ProcessingEnvironmentMap] = js.undefined
   
-  var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.native
+  var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.undefined
   
   /**
     * Networking options for a processing job.
     */
-  var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.native
+  var NetworkConfig: js.UndefOr[typings.awsSdk.sagemakerMod.NetworkConfig] = js.undefined
   
   /**
     * For each input, data is downloaded from S3 into the processing container before the processing job begins running if "S3InputMode" is set to File.
     */
-  var ProcessingInputs: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingInputs] = js.native
+  var ProcessingInputs: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingInputs] = js.undefined
   
   /**
     *  The name of the processing job. The name must be unique within an AWS Region in the AWS account.
     */
-  var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName = js.native
+  var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName
   
   /**
     * Output configuration for the processing job.
     */
-  var ProcessingOutputConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingOutputConfig] = js.native
+  var ProcessingOutputConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingOutputConfig] = js.undefined
   
   /**
     * Identifies the resources, ML compute instances, and ML storage volumes to deploy for a processing job. In distributed training, you specify more than one instance.
     */
-  var ProcessingResources: typings.awsSdk.sagemakerMod.ProcessingResources = js.native
+  var ProcessingResources: typings.awsSdk.sagemakerMod.ProcessingResources
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * The time limit for how long the processing job is allowed to run.
     */
-  var StoppingCondition: js.UndefOr[ProcessingStoppingCondition] = js.native
+  var StoppingCondition: js.UndefOr[ProcessingStoppingCondition] = js.undefined
   
   /**
     * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateProcessingJobRequest {
   

@@ -10,9 +10,9 @@ Rate-limit any operation, backed by Redis
 | ------------------ | :-------------: |
 | Full name          | redis-rate-limiter |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 179796 |
+| # downloads        | 166547 |
 | # stars            | 4 |
 
 ## Links

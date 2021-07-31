@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TemplateArgument")
@@ -57,9 +56,8 @@ object TemplateArgument {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TemplateArgument.create")
-  @js.native
-  def create(model: IModel): TemplateArgument = js.native
+  @scala.inline
+  def create(model: IModel): TemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TemplateArgument]
   
   /**
     * Creates and returns a new TemplateArgument instance in the SDK and on the server.
@@ -67,9 +65,8 @@ object TemplateArgument {
     * of the parent Template element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TemplateArgument.createIn")
-  @js.native
-  def createIn(container: Template): TemplateArgument = js.native
+  @scala.inline
+  def createIn(container: Template): TemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateArgument]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TemplateArgument.structureTypeName")

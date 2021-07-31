@@ -2,19 +2,17 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object worker {
   
-  @js.native
   trait IMirrorModel extends StObject {
     
-    def getValue(): String = js.native
+    def getValue(): String
     
-    val uri: Uri = js.native
+    val uri: Uri
     
-    val version: Double = js.native
+    val version: Double
   }
   object IMirrorModel {
     
@@ -38,18 +36,17 @@ object worker {
     }
   }
   
-  @js.native
   trait IWorkerContext[H] extends StObject {
     
     /**
       * Get all available mirror models in this worker.
       */
-    def getMirrorModels(): js.Array[IMirrorModel] = js.native
+    def getMirrorModels(): js.Array[IMirrorModel]
     
     /**
       * A proxy to the main thread host object.
       */
-    var host: H = js.native
+    var host: H
   }
   object IWorkerContext {
     
@@ -60,7 +57,7 @@ object worker {
     }
     
     @scala.inline
-    implicit class IWorkerContextMutableBuilder[Self <: IWorkerContext[_], H] (val x: Self with IWorkerContext[H]) extends AnyVal {
+    implicit class IWorkerContextMutableBuilder[Self <: IWorkerContext[?], H] (val x: Self & IWorkerContext[H]) extends AnyVal {
       
       @scala.inline
       def setGetMirrorModels(value: () => js.Array[IMirrorModel]): Self = StObject.set(x, "getMirrorModels", js.Any.fromFunction0(value))

@@ -23,7 +23,6 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -73,28 +72,13 @@ object mod {
     def addFile(file: File): Unit = js.native
     
     def assignBrowse(domNodes: js.Array[HTMLElement]): Unit = js.native
-    def assignBrowse(
-      domNodes: js.Array[HTMLElement],
-      isDirectory: js.UndefOr[scala.Nothing],
-      singleFile: js.UndefOr[scala.Nothing],
-      attributes: js.Object
-    ): Unit = js.native
-    def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: js.UndefOr[scala.Nothing], singleFile: Boolean): Unit = js.native
-    def assignBrowse(
-      domNodes: js.Array[HTMLElement],
-      isDirectory: js.UndefOr[scala.Nothing],
-      singleFile: Boolean,
-      attributes: js.Object
-    ): Unit = js.native
     def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Boolean): Unit = js.native
-    def assignBrowse(
-      domNodes: js.Array[HTMLElement],
-      isDirectory: Boolean,
-      singleFile: js.UndefOr[scala.Nothing],
-      attributes: js.Object
-    ): Unit = js.native
     def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Boolean, singleFile: Boolean): Unit = js.native
     def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Boolean, singleFile: Boolean, attributes: js.Object): Unit = js.native
+    def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Boolean, singleFile: Unit, attributes: js.Object): Unit = js.native
+    def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Unit, singleFile: Boolean): Unit = js.native
+    def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Unit, singleFile: Boolean, attributes: js.Object): Unit = js.native
+    def assignBrowse(domNodes: js.Array[HTMLElement], isDirectory: Unit, singleFile: Unit, attributes: js.Object): Unit = js.native
     
     def assignDrop(node: js.Array[HTMLElement]): Unit = js.native
     def assignDrop(node: HTMLElement): Unit = js.native
@@ -110,7 +94,7 @@ object mod {
     def isUploading(): Boolean = js.native
     
     def off(): Unit = js.native
-    def off(event: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def off(event: Unit, callback: js.Function0[Unit]): Unit = js.native
     def off(event: EventName): Unit = js.native
     def off(event: EventName, callback: js.Function0[Unit]): Unit = js.native
     
@@ -165,52 +149,51 @@ object mod {
     def upload(): Unit = js.native
   }
   
-  @js.native
   trait FlowChunk extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    var chunkSize: Double = js.native
+    var chunkSize: Double
     
-    var endByte: Double = js.native
+    var endByte: Double
     
-    var fileObj: FlowFile = js.native
+    var fileObj: FlowFile
     
-    var flowObj: Flow = js.native
+    var flowObj: Flow
     
-    def getParams(): FlowChunkParams = js.native
+    def getParams(): FlowChunkParams
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    def message(): Unit = js.native
+    def message(): Unit
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var pendingRetry: `false` = js.native
+    var pendingRetry: `false`
     
-    var preprocessState: `0` | `1` | `2` = js.native
+    var preprocessState: `0` | `1` | `2`
     
-    def progress(): Unit = js.native
+    def progress(): Unit
     
-    var readState: `0` | `1` | `2` = js.native
+    var readState: `0` | `1` | `2`
     
-    var retries: Double = js.native
+    var retries: Double
     
-    def send(): Unit = js.native
+    def send(): Unit
     
-    def sizeUploaded(): Double = js.native
+    def sizeUploaded(): Double
     
-    var startByte: Double = js.native
+    var startByte: Double
     
-    def status(): Unit = js.native
+    def status(): Unit
     
-    def test(): Unit = js.native
+    def test(): Unit
     
-    var tested: Boolean = js.native
+    var tested: Boolean
     
-    var total: Double = js.native
+    var total: Double
     
-    var xhr: XMLHttpRequest = js.native
+    var xhr: XMLHttpRequest
   }
   object FlowChunk {
     
@@ -225,7 +208,6 @@ object mod {
       loaded: Double,
       message: () => Unit,
       offset: Double,
-      pendingRetry: `false`,
       preprocessState: `0` | `1` | `2`,
       progress: () => Unit,
       readState: `0` | `1` | `2`,
@@ -239,7 +221,7 @@ object mod {
       total: Double,
       xhr: XMLHttpRequest
     ): FlowChunk = {
-      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), chunkSize = chunkSize.asInstanceOf[js.Any], endByte = endByte.asInstanceOf[js.Any], fileObj = fileObj.asInstanceOf[js.Any], flowObj = flowObj.asInstanceOf[js.Any], getParams = js.Any.fromFunction0(getParams), loaded = loaded.asInstanceOf[js.Any], message = js.Any.fromFunction0(message), offset = offset.asInstanceOf[js.Any], pendingRetry = pendingRetry.asInstanceOf[js.Any], preprocessState = preprocessState.asInstanceOf[js.Any], progress = js.Any.fromFunction0(progress), readState = readState.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], send = js.Any.fromFunction0(send), sizeUploaded = js.Any.fromFunction0(sizeUploaded), startByte = startByte.asInstanceOf[js.Any], status = js.Any.fromFunction0(status), test = js.Any.fromFunction0(test), tested = tested.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), chunkSize = chunkSize.asInstanceOf[js.Any], endByte = endByte.asInstanceOf[js.Any], fileObj = fileObj.asInstanceOf[js.Any], flowObj = flowObj.asInstanceOf[js.Any], getParams = js.Any.fromFunction0(getParams), loaded = loaded.asInstanceOf[js.Any], message = js.Any.fromFunction0(message), offset = offset.asInstanceOf[js.Any], pendingRetry = false, preprocessState = preprocessState.asInstanceOf[js.Any], progress = js.Any.fromFunction0(progress), readState = readState.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], send = js.Any.fromFunction0(send), sizeUploaded = js.Any.fromFunction0(sizeUploaded), startByte = startByte.asInstanceOf[js.Any], status = js.Any.fromFunction0(status), test = js.Any.fromFunction0(test), tested = tested.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlowChunk]
     }
     
@@ -314,24 +296,23 @@ object mod {
     }
   }
   
-  @js.native
   trait FlowChunkParams extends StObject {
     
-    var flowChunkNumber: Double = js.native
+    var flowChunkNumber: Double
     
-    var flowChunkSize: Double = js.native
+    var flowChunkSize: Double
     
-    var flowCurrentChunkSize: Double = js.native
+    var flowCurrentChunkSize: Double
     
-    var flowFilename: String = js.native
+    var flowFilename: String
     
-    var flowIdentifier: js.Any = js.native
+    var flowIdentifier: js.Any
     
-    var flowRelativePath: String = js.native
+    var flowRelativePath: String
     
-    var flowTotalChunks: Double = js.native
+    var flowTotalChunks: Double
     
-    var flowTotalSize: Double = js.native
+    var flowTotalSize: Double
   }
   object FlowChunkParams {
     
@@ -383,34 +364,33 @@ object mod {
   
   type FlowEventFromEventName[T /* <: EventName */] = /* import warning: importer.ImportType#apply Failed type conversion: flowjs.flowjs.FlowEventMap[T] */ js.Any
   
-  @js.native
   trait FlowEventMap extends StObject {
     
-    var catchAll: CatchAllCallbackArguments = js.native
+    var catchAll: CatchAllCallbackArguments
     
-    var complete: CompleteCallbackArguments = js.native
+    var complete: CompleteCallbackArguments
     
-    var error: ErrorCallbackArguments = js.native
+    var error: ErrorCallbackArguments
     
-    var fileAdded: FileAddedCallbackArguments = js.native
+    var fileAdded: FileAddedCallbackArguments
     
-    var fileError: FileErrorCallbackArguments = js.native
+    var fileError: FileErrorCallbackArguments
     
-    var fileProgress: FileProgressCallbackArguments = js.native
+    var fileProgress: FileProgressCallbackArguments
     
-    var fileRemoved: FileRemovedCallbackArguments = js.native
+    var fileRemoved: FileRemovedCallbackArguments
     
-    var fileRetry: FileRetryCallbackArguments = js.native
+    var fileRetry: FileRetryCallbackArguments
     
-    var fileSuccess: FileSuccessCallbackArguments = js.native
+    var fileSuccess: FileSuccessCallbackArguments
     
-    var filesAdded: FilesAddedCallbackArguments = js.native
+    var filesAdded: FilesAddedCallbackArguments
     
-    var filesSubmitted: FilesSubmittedCallbackArguments = js.native
+    var filesSubmitted: FilesSubmittedCallbackArguments
     
-    var progress: ProgressCallbackArguments = js.native
+    var progress: ProgressCallbackArguments
     
-    var uploadStart: UploadStartCallbackArguments = js.native
+    var uploadStart: UploadStartCallbackArguments
   }
   object FlowEventMap {
     
@@ -495,54 +475,53 @@ object mod {
   
   type FlowEventTypeFromFlowEvent[T /* <: FlowEvent */] = js.Any
   
-  @js.native
   trait FlowFile extends StObject {
     
-    var averageSpeed: Double = js.native
+    var averageSpeed: Double
     
-    def bootstrap(): Unit = js.native
+    def bootstrap(): Unit
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    var chunks: js.Array[FlowChunk] = js.native
+    var chunks: js.Array[FlowChunk]
     
-    var currentSpeed: Double = js.native
+    var currentSpeed: Double
     
-    var error: Boolean = js.native
+    var error: Boolean
     
-    var file: File = js.native
+    var file: File
     
-    var flowObj: Flow = js.native
+    var flowObj: Flow
     
-    def getExtension(): String = js.native
+    def getExtension(): String
     
-    def getType(): String = js.native
+    def getType(): String
     
-    def isComplete(): Boolean = js.native
+    def isComplete(): Boolean
     
-    def isUploading(): Boolean = js.native
+    def isUploading(): Boolean
     
-    var name: String = js.native
+    var name: String
     
-    def pause(): Unit = js.native
+    def pause(): Unit
     
-    var paused: Boolean = js.native
+    var paused: Boolean
     
-    def progress(): Double = js.native
+    def progress(): Double
     
-    var relativePath: String = js.native
+    var relativePath: String
     
-    def resume(): Unit = js.native
+    def resume(): Unit
     
-    def retry(): Unit = js.native
+    def retry(): Unit
     
-    var size: Double = js.native
+    var size: Double
     
-    def sizeUploaded(): Double = js.native
+    def sizeUploaded(): Double
     
-    def timeRemaining(): Double = js.native
+    def timeRemaining(): Double
     
-    var uniqueIdentifier: String = js.native
+    var uniqueIdentifier: String
   }
   object FlowFile {
     
@@ -653,38 +632,37 @@ object mod {
     }
   }
   
-  @js.native
   trait FlowOptions extends StObject {
     
-    var allowDuplicateUploads: js.UndefOr[Boolean] = js.native
+    var allowDuplicateUploads: js.UndefOr[Boolean] = js.undefined
     
-    var chunkRetryInterval: js.UndefOr[Double] = js.native
+    var chunkRetryInterval: js.UndefOr[Double] = js.undefined
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var fileParameterName: js.UndefOr[String] = js.native
+    var fileParameterName: js.UndefOr[String] = js.undefined
     
-    var forceChunkSize: js.UndefOr[Boolean] = js.native
+    var forceChunkSize: js.UndefOr[Boolean] = js.undefined
     
-    var generateUniqueIdentifier: js.UndefOr[js.Function1[/* file */ FlowFile, _]] = js.native
+    var generateUniqueIdentifier: js.UndefOr[js.Function1[/* file */ FlowFile, js.Any]] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var initFileFn: js.UndefOr[js.Function2[/* file */ FlowFile, /* chunk */ FlowChunk, Unit]] = js.native
+    var initFileFn: js.UndefOr[js.Function2[/* file */ FlowFile, /* chunk */ FlowChunk, Unit]] = js.undefined
     
-    var maxChunkRetries: js.UndefOr[Double] = js.native
+    var maxChunkRetries: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var permanentErrors: js.UndefOr[js.Array[String]] = js.native
+    var permanentErrors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var preprocess: js.UndefOr[js.Function1[/* chunk */ FlowChunk, Unit]] = js.native
+    var preprocess: js.UndefOr[js.Function1[/* chunk */ FlowChunk, Unit]] = js.undefined
     
-    var prioritizeFirstAndLastChunk: js.UndefOr[Boolean] = js.native
+    var prioritizeFirstAndLastChunk: js.UndefOr[Boolean] = js.undefined
     
-    var progressCallbacksInterval: js.UndefOr[Double] = js.native
+    var progressCallbacksInterval: js.UndefOr[Double] = js.undefined
     
-    var query: js.UndefOr[js.Object] = js.native
+    var query: js.UndefOr[js.Object] = js.undefined
     
     var readFileFn: js.UndefOr[
         js.Function5[
@@ -695,25 +673,25 @@ object mod {
           /* chunk */ FlowChunk, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var simultaneousUploads: js.UndefOr[Double] = js.native
+    var simultaneousUploads: js.UndefOr[Double] = js.undefined
     
-    var singleFile: js.UndefOr[Boolean] = js.native
+    var singleFile: js.UndefOr[Boolean] = js.undefined
     
-    var speedSmoothingFactor: js.UndefOr[Double] = js.native
+    var speedSmoothingFactor: js.UndefOr[Double] = js.undefined
     
-    var successStatuses: js.UndefOr[js.Array[String]] = js.native
+    var successStatuses: js.UndefOr[js.Array[String]] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var testChunks: js.UndefOr[Boolean] = js.native
+    var testChunks: js.UndefOr[Boolean] = js.undefined
     
-    var testMethod: js.UndefOr[String] = js.native
+    var testMethod: js.UndefOr[String] = js.undefined
     
-    var uploadMethod: js.UndefOr[String] = js.native
+    var uploadMethod: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object FlowOptions {
     
@@ -757,7 +735,7 @@ object mod {
       def setForceChunkSizeUndefined: Self = StObject.set(x, "forceChunkSize", js.undefined)
       
       @scala.inline
-      def setGenerateUniqueIdentifier(value: /* file */ FlowFile => _): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction1(value))
+      def setGenerateUniqueIdentifier(value: /* file */ FlowFile => js.Any): Self = StObject.set(x, "generateUniqueIdentifier", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGenerateUniqueIdentifierUndefined: Self = StObject.set(x, "generateUniqueIdentifier", js.undefined)

@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaEncryptedEventInit extends EventInit {
+trait MediaEncryptedEventInit
+  extends StObject
+     with EventInit {
   
-  var initData: js.UndefOr[ArrayBuffer | Null] = js.native
+  var initData: js.UndefOr[ArrayBuffer | Null] = js.undefined
   
-  var initDataType: js.UndefOr[java.lang.String] = js.native
+  var initDataType: js.UndefOr[java.lang.String] = js.undefined
 }
 object MediaEncryptedEventInit {
   

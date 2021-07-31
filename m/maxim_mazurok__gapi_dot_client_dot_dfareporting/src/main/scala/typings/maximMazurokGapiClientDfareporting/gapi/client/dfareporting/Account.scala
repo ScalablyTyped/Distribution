@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /** Account permissions assigned to this account. */
-  var accountPermissionIds: js.UndefOr[js.Array[String]] = js.native
+  var accountPermissionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Profile for this account. This is a read-only field that can be left blank. */
-  var accountProfile: js.UndefOr[String] = js.native
+  var accountProfile: js.UndefOr[String] = js.undefined
   
   /** Whether this account is active. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Maximum number of active ads allowed for this account. */
-  var activeAdsLimitTier: js.UndefOr[String] = js.native
+  var activeAdsLimitTier: js.UndefOr[String] = js.undefined
   
   /** Whether to serve creatives with Active View tags. If disabled, viewability data will not be available for any impressions. */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.native
+  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
   
   /** User role permissions available to the user roles of this account. */
-  var availablePermissionIds: js.UndefOr[js.Array[String]] = js.native
+  var availablePermissionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** ID of the country associated with this account. */
-  var countryId: js.UndefOr[String] = js.native
+  var countryId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of currency associated with this account. This is a required field. Acceptable values are: - "1" for USD - "2" for GBP - "3" for ESP - "4" for SEK - "5" for CAD - "6" for JPY -
@@ -36,44 +34,44 @@ trait Account extends StObject {
     * for ILS - "33" for CHF - "34" for VEF - "35" for COP - "36" for GTQ - "37" for PLN - "39" for INR - "40" for THB - "41" for IDR - "42" for CZK - "43" for RON - "44" for HUF - "45"
     * for RUB - "46" for AED - "47" for BGN - "48" for HRK - "49" for MXN - "50" for NGN - "51" for EGP
     */
-  var currencyId: js.UndefOr[String] = js.native
+  var currencyId: js.UndefOr[String] = js.undefined
   
   /** Default placement dimensions for this account. */
-  var defaultCreativeSizeId: js.UndefOr[String] = js.native
+  var defaultCreativeSizeId: js.UndefOr[String] = js.undefined
   
   /** Description of this account. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** ID of this account. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#account". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Locale of this account. Acceptable values are: - "cs" (Czech) - "de" (German) - "en" (English) - "en-GB" (English United Kingdom) - "es" (Spanish) - "fr" (French) - "it" (Italian) -
     * "ja" (Japanese) - "ko" (Korean) - "pl" (Polish) - "pt-BR" (Portuguese Brazil) - "ru" (Russian) - "sv" (Swedish) - "tr" (Turkish) - "zh-CN" (Chinese Simplified) - "zh-TW" (Chinese
     * Traditional)
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /** Maximum image size allowed for this account, in kilobytes. Value must be greater than or equal to 1. */
-  var maximumImageSize: js.UndefOr[String] = js.native
+  var maximumImageSize: js.UndefOr[String] = js.undefined
   
   /** Name of this account. This is a required field, and must be less than 128 characters long and be globally unique. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Whether campaigns created in this account will be enabled for Nielsen OCR reach ratings by default. */
-  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.native
+  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Reporting configuration of this account. */
-  var reportsConfiguration: js.UndefOr[ReportsConfiguration] = js.native
+  var reportsConfiguration: js.UndefOr[ReportsConfiguration] = js.undefined
   
   /** Share Path to Conversion reports with Twitter. */
-  var shareReportsWithTwitter: js.UndefOr[Boolean] = js.native
+  var shareReportsWithTwitter: js.UndefOr[Boolean] = js.undefined
   
   /** File size limit in kilobytes of Rich Media teaser creatives. Acceptable values are 1 to 10240, inclusive. */
-  var teaserSizeLimit: js.UndefOr[String] = js.native
+  var teaserSizeLimit: js.UndefOr[String] = js.undefined
 }
 object Account {
   

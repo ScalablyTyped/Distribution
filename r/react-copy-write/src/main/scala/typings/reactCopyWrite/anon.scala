@@ -8,21 +8,19 @@ import typings.reactCopyWrite.mod.Provider
 import typings.reactCopyWrite.mod.SelectorFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Consumer[T /* <: js.Object */] extends StObject {
     
-    var Consumer: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]] = js.native
+    var Consumer: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]]
     
-    var Provider: Instantiable0[typings.reactCopyWrite.mod.Provider[T]] = js.native
+    var Provider: Instantiable0[typings.reactCopyWrite.mod.Provider[T]]
     
-    var createSelector: SelectorFn[T] = js.native
+    var createSelector: SelectorFn[T]
     
-    var mutate: Mutator[T] = js.native
+    var mutate: Mutator[T]
   }
   object Consumer {
     
@@ -38,7 +36,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ConsumerMutableBuilder[Self <: Consumer[_], T /* <: js.Object */] (val x: Self with Consumer[T]) extends AnyVal {
+    implicit class ConsumerMutableBuilder[Self <: Consumer[?], T /* <: js.Object */] (val x: Self & Consumer[T]) extends AnyVal {
       
       @scala.inline
       def setConsumer(value: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])

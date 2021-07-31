@@ -2,66 +2,64 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MySQLSettings extends StObject {
   
   /**
     * Specifies a script to run immediately after AWS DMS connects to the endpoint. The migration task continues running regardless if the SQL statement succeeds or fails.
     */
-  var AfterConnectScript: js.UndefOr[String] = js.native
+  var AfterConnectScript: js.UndefOr[String] = js.undefined
   
   /**
     * Database name for the endpoint.
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how often to check the binary log for new changes/events when the database is idle. Example: eventsPollInterval=5;  In the example, AWS DMS checks for changes in the binary logs every five seconds.
     */
-  var EventsPollInterval: js.UndefOr[IntegerOptional] = js.native
+  var EventsPollInterval: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Specifies the maximum size (in KB) of any .csv file used to transfer data to a MySQL-compatible database. Example: maxFileSize=512 
     */
-  var MaxFileSize: js.UndefOr[IntegerOptional] = js.native
+  var MaxFileSize: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Improves performance when loading data into the MySQLcompatible target database. Specifies how many threads to use to load the data into the MySQL-compatible target database. Setting a large number of threads can have an adverse effect on database performance, because a separate connection is required for each thread. Example: parallelLoadThreads=1 
     */
-  var ParallelLoadThreads: js.UndefOr[IntegerOptional] = js.native
+  var ParallelLoadThreads: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Endpoint connection password.
     */
-  var Password: js.UndefOr[SecretString] = js.native
+  var Password: js.UndefOr[SecretString] = js.undefined
   
   /**
     * Endpoint TCP port.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Fully qualified domain name of the endpoint.
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the time zone for the source MySQL database. Example: serverTimezone=US/Pacific;  Note: Do not enclose time zones in single quotes.
     */
-  var ServerTimezone: js.UndefOr[String] = js.native
+  var ServerTimezone: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies where to migrate source tables on the target, either to a single database or multiple databases. Example: targetDbType=MULTIPLE_DATABASES 
     */
-  var TargetDbType: js.UndefOr[typings.awsSdk.dmsMod.TargetDbType] = js.native
+  var TargetDbType: js.UndefOr[typings.awsSdk.dmsMod.TargetDbType] = js.undefined
   
   /**
     * Endpoint connection user name.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object MySQLSettings {
   

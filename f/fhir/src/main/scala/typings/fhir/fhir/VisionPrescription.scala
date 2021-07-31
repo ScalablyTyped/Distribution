@@ -2,70 +2,70 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Prescription for vision correction products for a patient
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait VisionPrescription extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait VisionPrescription
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'dateWritten'.
     */
-  var _dateWritten: js.UndefOr[Element] = js.native
+  var _dateWritten: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * When prescription was authorized
     */
-  var dateWritten: js.UndefOr[dateTime] = js.native
+  var dateWritten: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Vision supply authorization
     */
-  var dispense: js.UndefOr[js.Array[VisionPrescriptionDispense]] = js.native
+  var dispense: js.UndefOr[js.Array[VisionPrescriptionDispense]] = js.undefined
   
   /**
     * Created during encounter / admission / stay
     */
-  var encounter: js.UndefOr[Reference] = js.native
+  var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Who prescription is for
     */
-  var patient: js.UndefOr[Reference] = js.native
+  var patient: js.UndefOr[Reference] = js.undefined
   
   /**
     * Who authorizes the vision product
     */
-  var prescriber: js.UndefOr[Reference] = js.native
+  var prescriber: js.UndefOr[Reference] = js.undefined
   
   /**
     * Reason or indication for writing the prescription
     */
-  var reasonCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var reasonCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Reason or indication for writing the prescription
     */
-  var reasonReference: js.UndefOr[Reference] = js.native
+  var reasonReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
 }
 object VisionPrescription {
   

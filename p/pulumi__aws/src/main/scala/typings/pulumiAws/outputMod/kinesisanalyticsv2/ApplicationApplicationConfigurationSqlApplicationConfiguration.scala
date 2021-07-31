@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends StObject {
   
   /**
     * The input stream used by the application.
     */
-  var input: js.UndefOr[ApplicationApplicationConfigurationSqlApplicationConfigurationInput] = js.native
+  var input: js.UndefOr[ApplicationApplicationConfigurationSqlApplicationConfigurationInput] = js.undefined
   
   /**
     * The destination streams used by the application.
     */
-  var outputs: js.UndefOr[js.Array[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]] = js.native
+  var outputs: js.UndefOr[js.Array[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]] = js.undefined
   
   /**
     * The reference data source used by the application.
     */
   var referenceDataSource: js.UndefOr[
     ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource
-  ] = js.native
+  ] = js.undefined
 }
 object ApplicationApplicationConfigurationSqlApplicationConfiguration {
   

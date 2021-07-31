@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineData extends StObject {
   
   /** Number indicating the zero-indexed buffer index of a line. */
-  var bufferRow: Double = js.native
+  var bufferRow: Double
   
   /** Number indicating the zero-indexed screen index. */
-  var screenRow: Double = js.native
+  var screenRow: Double
 }
 object LineData {
   

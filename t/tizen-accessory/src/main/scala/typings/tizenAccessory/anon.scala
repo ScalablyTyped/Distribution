@@ -4,19 +4,17 @@ import typings.tizenAccessory.tizenAccessoryStrings.AVAILABLE
 import typings.tizenAccessory.tizenAccessoryStrings.UNAVAILABLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Oncomplete extends StObject {
     
-    var oncomplete: js.UndefOr[js.Function2[/* id */ String, /* localPath */ String, Unit]] = js.native
+    var oncomplete: js.UndefOr[js.Function2[/* id */ String, /* localPath */ String, Unit]] = js.undefined
     
-    var onerror: js.UndefOr[js.Function2[/* errorCode */ String, /* id */ String, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function2[/* errorCode */ String, /* id */ String, Unit]] = js.undefined
     
-    var onprogress: js.UndefOr[js.Function2[/* id */ String, /* progress */ Double, Unit]] = js.native
+    var onprogress: js.UndefOr[js.Function2[/* id */ String, /* progress */ Double, Unit]] = js.undefined
   }
   object Oncomplete {
     
@@ -49,14 +47,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Onconnect extends StObject {
     
-    var onconnect: js.UndefOr[js.Function1[/* socket */ SASocket, Unit]] = js.native
+    var onconnect: js.UndefOr[js.Function1[/* socket */ SASocket, Unit]] = js.undefined
     
-    var onerror: js.UndefOr[js.Function2[/* errorCode */ String, /* peerAgent */ SAPeerAgent, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function2[/* errorCode */ String, /* peerAgent */ SAPeerAgent, Unit]] = js.undefined
     
-    var onrequest: js.UndefOr[js.Function1[/* peerAgent */ SAPeerAgent, Unit]] = js.native
+    var onrequest: js.UndefOr[js.Function1[/* peerAgent */ SAPeerAgent, Unit]] = js.undefined
   }
   object Onconnect {
     
@@ -89,16 +86,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Onerror extends StObject {
     
-    var onerror: js.UndefOr[js.Function1[/* errorCode */ String, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function1[/* errorCode */ String, Unit]] = js.undefined
     
-    def onpeeragentfound(peerAgent: SAPeerAgent): Unit = js.native
+    def onpeeragentfound(peerAgent: SAPeerAgent): Unit
     
     var onpeeragentupdated: js.UndefOr[
         js.Function2[/* peerAgent */ SAPeerAgent, /* status */ AVAILABLE | UNAVAILABLE, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Onerror {
     
@@ -128,16 +124,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Onprogress extends StObject {
     
-    var oncomplete: js.UndefOr[js.Function2[/* id */ String, /* localPath */ String, Unit]] = js.native
+    var oncomplete: js.UndefOr[js.Function2[/* id */ String, /* localPath */ String, Unit]] = js.undefined
     
-    var onerror: js.UndefOr[js.Function2[/* errorCode */ String, /* id */ String, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function2[/* errorCode */ String, /* id */ String, Unit]] = js.undefined
     
-    var onprogress: js.UndefOr[js.Function2[/* id */ String, /* progress */ Double, Unit]] = js.native
+    var onprogress: js.UndefOr[js.Function2[/* id */ String, /* progress */ Double, Unit]] = js.undefined
     
-    var onreceive: js.UndefOr[js.Function2[/* id */ String, /* fileName */ String, Unit]] = js.native
+    var onreceive: js.UndefOr[js.Function2[/* id */ String, /* fileName */ String, Unit]] = js.undefined
   }
   object Onprogress {
     
@@ -176,14 +171,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Onsent extends StObject {
     
     var onerror: js.UndefOr[
         js.Function3[/* errorCode */ String, /* peerAgent */ SAPeerAgent, /* id */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onsent: js.UndefOr[js.Function2[/* peerAgent */ SAPeerAgent, /* id */ String, Unit]] = js.native
+    var onsent: js.UndefOr[js.Function2[/* peerAgent */ SAPeerAgent, /* id */ String, Unit]] = js.undefined
   }
   object Onsent {
     

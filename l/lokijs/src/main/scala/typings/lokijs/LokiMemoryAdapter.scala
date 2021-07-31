@@ -6,7 +6,6 @@ import typings.lokijs.anon.Lastsave
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.asyncTimeout=50] - timeout in ms to queue callbacks
   * @constructor LokiMemoryAdapter
   */
-@js.native
-trait LokiMemoryAdapter extends LokiPersistenceAdapter {
+trait LokiMemoryAdapter
+  extends StObject
+     with LokiPersistenceAdapter {
   
   /**
     * Deletes a database from its in-memory store.
@@ -28,11 +28,11 @@ trait LokiMemoryAdapter extends LokiPersistenceAdapter {
     * @param callback - function to call when done
     */
   @JSName("deleteDatabase")
-  def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit
   
-  var hashStore: StringDictionary[Lastsave] = js.native
+  var hashStore: StringDictionary[Lastsave]
   
-  var options: AsyncResponses = js.native
+  var options: AsyncResponses
   
   /**
     * Saves a serialized database to its in-memory store.
@@ -42,7 +42,7 @@ trait LokiMemoryAdapter extends LokiPersistenceAdapter {
     * @param callback - adapter callback to return load result to caller
     */
   @JSName("saveDatabase")
-  def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit
 }
 object LokiMemoryAdapter {
   

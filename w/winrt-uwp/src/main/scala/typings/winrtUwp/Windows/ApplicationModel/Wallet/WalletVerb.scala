@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a wallet verb, which is potentially used for app activation. This is a string suitable for UI that is descriptive of the action. */
-@js.native
 trait WalletVerb extends StObject {
   
   /** Gets or sets the custom verb name. */
-  var name: String = js.native
+  var name: String
 }
 object WalletVerb {
   

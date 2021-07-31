@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaContainer extends StObject {
   
   /** [MediaContainer.addTrack([MediaTrack](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaTrack.html) track)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.addTrack.html)
@@ -18,28 +16,28 @@ trait MediaContainer extends StObject {
     *
     * 要添加的音频或视频轨道 */
   track: MediaTrack
-  ): Unit = js.native
+  ): Unit
   
   /** [MediaContainer.destroy()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.destroy.html)
     *
     * 将容器销毁，释放资源
     *
     * 最低基础库： `2.9.0` */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /** [MediaContainer.export()](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.export.html)
     *
     * 将容器内的轨道合并并导出视频文件
     *
     * 最低基础库： `2.9.0` */
-  def export(): Unit = js.native
+  def `export`(): Unit
   
   /** [MediaContainer.extractDataSource(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.extractDataSource.html)
     *
     * 将传入的视频源分离轨道。不会自动将轨道添加到待合成的容器里。
     *
     * 最低基础库： `2.9.0` */
-  def extractDataSource(option: ExtractDataSourceOption): Unit = js.native
+  def extractDataSource(option: ExtractDataSourceOption): Unit
   
   /** [MediaContainer.removeTrack([MediaTrack](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaTrack.html) track)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.removeTrack.html)
     *
@@ -51,7 +49,7 @@ trait MediaContainer extends StObject {
     *
     * 要移除的音频或视频轨道 */
   track: MediaTrack
-  ): Unit = js.native
+  ): Unit
 }
 object MediaContainer {
   
@@ -59,11 +57,12 @@ object MediaContainer {
   def apply(
     addTrack: MediaTrack => Unit,
     destroy: () => Unit,
-    export: () => Unit,
+    `export`: () => Unit,
     extractDataSource: ExtractDataSourceOption => Unit,
     removeTrack: MediaTrack => Unit
   ): MediaContainer = {
-    val __obj = js.Dynamic.literal(addTrack = js.Any.fromFunction1(addTrack), destroy = js.Any.fromFunction0(destroy), export = js.Any.fromFunction0(export), extractDataSource = js.Any.fromFunction1(extractDataSource), removeTrack = js.Any.fromFunction1(removeTrack))
+    val __obj = js.Dynamic.literal(addTrack = js.Any.fromFunction1(addTrack), destroy = js.Any.fromFunction0(destroy), extractDataSource = js.Any.fromFunction1(extractDataSource), removeTrack = js.Any.fromFunction1(removeTrack))
+    __obj.updateDynamic("export")(js.Any.fromFunction0(`export`))
     __obj.asInstanceOf[MediaContainer]
   }
   

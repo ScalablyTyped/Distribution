@@ -2,19 +2,17 @@ package typings.promisedLdap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Email extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var groups: js.Array[String] = js.native
+    var groups: js.Array[String]
     
-    var name: String = js.native
+    var name: String
   }
   object Email {
     
@@ -41,17 +39,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Entries extends StObject {
     
-    var entries: js.Array[_] = js.native
+    var entries: js.Array[js.Any]
     
-    var references: js.Array[_] = js.native
+    var references: js.Array[js.Any]
   }
   object Entries {
     
     @scala.inline
-    def apply(entries: js.Array[_], references: js.Array[_]): Entries = {
+    def apply(entries: js.Array[js.Any], references: js.Array[js.Any]): Entries = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entries]
     }
@@ -60,23 +57,22 @@ object anon {
     implicit class EntriesMutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEntries(value: js.Array[_]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      def setEntries(value: js.Array[js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
       @scala.inline
-      def setReferences(value: js.Array[_]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      def setReferences(value: js.Array[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReferencesVarargs(value: js.Any*): Self = StObject.set(x, "references", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

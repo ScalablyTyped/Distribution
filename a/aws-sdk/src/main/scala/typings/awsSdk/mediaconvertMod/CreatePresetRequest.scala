@@ -2,36 +2,34 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresetRequest extends StObject {
   
   /**
     * Optional. A category for the preset you are creating.
     */
-  var Category: js.UndefOr[string] = js.native
+  var Category: js.UndefOr[string] = js.undefined
   
   /**
     * Optional. A description of the preset you are creating.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the preset you are creating.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Settings for preset
     */
-  var Settings: PresetSettings = js.native
+  var Settings: PresetSettings
   
   /**
     * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
 }
 object CreatePresetRequest {
   

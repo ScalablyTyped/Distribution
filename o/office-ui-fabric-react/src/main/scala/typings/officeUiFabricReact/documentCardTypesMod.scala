@@ -12,7 +12,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardTypesMod {
@@ -24,30 +23,33 @@ object documentCardTypesMod {
   object DocumentCardType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DocumentCardType with Double] = js.native
+    def apply(value: Double): js.UndefOr[DocumentCardType & Double] = js.native
     
     /**
       * Compact layout. Displays the preview beside the details, rather than above.
       */
     @js.native
-    sealed trait compact extends DocumentCardType
-    /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact with Double = js.native
+    sealed trait compact
+      extends StObject
+         with DocumentCardType
+    /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact & Double = js.native
     
     /**
       * Standard DocumentCard.
       */
     @js.native
-    sealed trait normal extends DocumentCardType
-    /* 0 */ val normal: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.normal with Double = js.native
+    sealed trait normal
+      extends StObject
+         with DocumentCardType
+    /* 0 */ val normal: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.normal & Double = js.native
   }
   
-  @js.native
   trait IDocumentCard extends StObject {
     
     /**
       * Sets focus to the DocumentCard.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IDocumentCard {
     
@@ -65,10 +67,10 @@ object documentCardTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardProps
-    extends HTMLAttributes[HTMLDivElement]
-       with IBaseProps[IDocumentCard] {
+    extends StObject
+       with IBaseProps[IDocumentCard]
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Hex color value of the line below the card, which should correspond to the document type.
@@ -77,40 +79,40 @@ object documentCardTypesMod {
       * Deprecated at v4.17.1, to be removed at \>= v5.0.0.
       * @deprecated To be removed at v5.0.0.
       */
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
     
     /**
       * A URL to navigate to when the card is clicked. If a function has also been provided,
       * it will be used instead of the URL.
       */
-    var onClickHref: js.UndefOr[String] = js.native
+    var onClickHref: js.UndefOr[String] = js.undefined
     
     /**
       * A target browser context for opening the link. If not specified, will open in the same tab/window.
       */
-    var onClickTarget: js.UndefOr[String] = js.native
+    var onClickTarget: js.UndefOr[String] = js.undefined
     
     /**
       * Function to call when the card is clicked or keyboard Enter/Space is pushed.
       */
     @JSName("onClick")
-    var onClick_IDocumentCardProps: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
+    var onClick_IDocumentCardProps: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * The type of DocumentCard to display.
       * @defaultvalue DocumentCardType.normal
       */
-    var `type`: js.UndefOr[DocumentCardType] = js.native
+    var `type`: js.UndefOr[DocumentCardType] = js.undefined
   }
   object IDocumentCardProps {
     
@@ -170,28 +172,27 @@ object documentCardTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardStyleProps extends StObject {
     
     /**
       * True when the card has a click action.
       */
-    var actionable: js.UndefOr[Boolean] = js.native
+    var actionable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Compact variant of the card.
       */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardStyleProps {
     
@@ -227,10 +228,9 @@ object documentCardTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardStyles {
     

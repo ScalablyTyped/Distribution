@@ -7,14 +7,13 @@ import typings.tablesorter.testableOptionsMod.TestableOptions
 import typings.tablesorter.toggleableOptionsMod.ToggleableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html5ColorOptionsMod {
   
-  @js.native
   trait Html5ColorOptions
-    extends DefaultValueOptions[String]
+    extends StObject
+       with DefaultValueOptions[String]
        with ToggleableOptions
        with StrictOptions
        with PreviewableOptions

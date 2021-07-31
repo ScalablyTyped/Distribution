@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.services.mediaHelper
   * @description A helper object used for dealing with media items
   */
-@js.native
 trait IMediaHelper extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait IMediaHelper extends StObject {
     *
     * @param {string} imagePath Image path, ex: /media/1234/my-image.jpg
     */
-  def detectIfImageByExtension(imagePath: String): Boolean = js.native
+  def detectIfImageByExtension(imagePath: String): Boolean
   
   /**
     * @ngdoc function
@@ -37,7 +35,7 @@ trait IMediaHelper extends StObject {
     *
     * @param {string} file types, ex: jpg,png,tiff
     */
-  def formatFileTypes(file: String): String = js.native
+  def formatFileTypes(file: String): String
   
   /**
     * @ngdoc function
@@ -51,7 +49,7 @@ trait IMediaHelper extends StObject {
     * @param {object} options Options object
     * @param {object} options.imageModel The media object to retrieve the image path from
     */
-  def getImagePropertyValue(options: IMediaOptions): String = js.native
+  def getImagePropertyValue(options: IMediaOptions): String
   
   /**
     * @ngdoc function
@@ -66,7 +64,7 @@ trait IMediaHelper extends StObject {
     * @param {object} options.mediaModel The media object to retrieve the image path from
     * @param {object} options.imageOnly Optional, if true then will only return a path if the media item is an image
     */
-  def getMediaPropertyValue(options: IMediaOptions): String = js.native
+  def getMediaPropertyValue(options: IMediaOptions): String
   
   /**
     * @ngdoc function
@@ -80,7 +78,7 @@ trait IMediaHelper extends StObject {
     * @param {object} options Options object
     * @param {object} options.imageModel The media object to retrieve the image path from
     */
-  def getThumbnail(options: IMediaOptions): String = js.native
+  def getThumbnail(options: IMediaOptions): String
   
   /**
     * @ngdoc function
@@ -93,7 +91,7 @@ trait IMediaHelper extends StObject {
     *
     * @param {string} imagePath Image path, ex: /media/1234/my-image.jpg
     */
-  def getThumbnailFromPath(imagePath: String): String = js.native
+  def getThumbnailFromPath(imagePath: String): String
   
   /**
     * @ngdoc function
@@ -107,7 +105,7 @@ trait IMediaHelper extends StObject {
     * @param {object} mediaEntity A media Entity returned from the entityResource
     * @param {boolean} thumbnail Whether to return the thumbnail url or normal url
     */
-  def resolveFile(mediaItem: IMediaEntity, thumbnail: Boolean): String = js.native
+  def resolveFile(mediaItem: IMediaEntity, thumbnail: Boolean): String
   
   /**
     * @ngdoc function
@@ -121,7 +119,7 @@ trait IMediaHelper extends StObject {
     * @param {object} mediaEntity A media Entity returned from the entityResource
     * @param {boolean} thumbnail Whether to return the thumbnail url or normal url
     */
-  def resolveFileFromEntity(mediaEntity: IMediaEntity, thumbnail: Boolean): String = js.native
+  def resolveFileFromEntity(mediaEntity: IMediaEntity, thumbnail: Boolean): String
   
   /**
     * @ngdoc function
@@ -136,7 +134,7 @@ trait IMediaHelper extends StObject {
     * @param {number} width Current width
     * @param {number} height Current height
     */
-  def scaleToMaxSize(maxSize: Double, width: Double, height: Double): js.Any = js.native
+  def scaleToMaxSize(maxSize: Double, width: Double, height: Double): js.Any
 }
 object IMediaHelper {
   

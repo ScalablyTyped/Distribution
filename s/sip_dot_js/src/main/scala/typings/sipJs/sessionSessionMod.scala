@@ -15,7 +15,6 @@ import typings.sipJs.referMod.OutgoingReferRequest
 import typings.sipJs.sessionSessionDelegateMod.SessionDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionSessionMod {
@@ -27,27 +26,37 @@ object sessionSessionMod {
   object SessionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SessionState with String] = js.native
+    def apply(value: String): js.UndefOr[SessionState & String] = js.native
     
     @js.native
-    sealed trait AckWait extends SessionState
-    /* "AckWait" */ val AckWait: typings.sipJs.sessionSessionMod.SessionState.AckWait with String = js.native
+    sealed trait AckWait
+      extends StObject
+         with SessionState
+    /* "AckWait" */ val AckWait: typings.sipJs.sessionSessionMod.SessionState.AckWait & String = js.native
     
     @js.native
-    sealed trait Confirmed extends SessionState
-    /* "Confirmed" */ val Confirmed: typings.sipJs.sessionSessionMod.SessionState.Confirmed with String = js.native
+    sealed trait Confirmed
+      extends StObject
+         with SessionState
+    /* "Confirmed" */ val Confirmed: typings.sipJs.sessionSessionMod.SessionState.Confirmed & String = js.native
     
     @js.native
-    sealed trait Early extends SessionState
-    /* "Early" */ val Early: typings.sipJs.sessionSessionMod.SessionState.Early with String = js.native
+    sealed trait Early
+      extends StObject
+         with SessionState
+    /* "Early" */ val Early: typings.sipJs.sessionSessionMod.SessionState.Early & String = js.native
     
     @js.native
-    sealed trait Initial extends SessionState
-    /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SessionState.Initial with String = js.native
+    sealed trait Initial
+      extends StObject
+         with SessionState
+    /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SessionState.Initial & String = js.native
     
     @js.native
-    sealed trait Terminated extends SessionState
-    /* "Terminated" */ val Terminated: typings.sipJs.sessionSessionMod.SessionState.Terminated with String = js.native
+    sealed trait Terminated
+      extends StObject
+         with SessionState
+    /* "Terminated" */ val Terminated: typings.sipJs.sessionSessionMod.SessionState.Terminated & String = js.native
   }
   
   @js.native
@@ -57,27 +66,37 @@ object sessionSessionMod {
   object SignalingState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SignalingState with String] = js.native
+    def apply(value: String): js.UndefOr[SignalingState & String] = js.native
     
     @js.native
-    sealed trait Closed extends SignalingState
-    /* "Closed" */ val Closed: typings.sipJs.sessionSessionMod.SignalingState.Closed with String = js.native
+    sealed trait Closed
+      extends StObject
+         with SignalingState
+    /* "Closed" */ val Closed: typings.sipJs.sessionSessionMod.SignalingState.Closed & String = js.native
     
     @js.native
-    sealed trait HaveLocalOffer extends SignalingState
-    /* "HaveLocalOffer" */ val HaveLocalOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveLocalOffer with String = js.native
+    sealed trait HaveLocalOffer
+      extends StObject
+         with SignalingState
+    /* "HaveLocalOffer" */ val HaveLocalOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveLocalOffer & String = js.native
     
     @js.native
-    sealed trait HaveRemoteOffer extends SignalingState
-    /* "HaveRemoteOffer" */ val HaveRemoteOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveRemoteOffer with String = js.native
+    sealed trait HaveRemoteOffer
+      extends StObject
+         with SignalingState
+    /* "HaveRemoteOffer" */ val HaveRemoteOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveRemoteOffer & String = js.native
     
     @js.native
-    sealed trait Initial extends SignalingState
-    /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SignalingState.Initial with String = js.native
+    sealed trait Initial
+      extends StObject
+         with SignalingState
+    /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SignalingState.Initial & String = js.native
     
     @js.native
-    sealed trait Stable extends SignalingState
-    /* "Stable" */ val Stable: typings.sipJs.sessionSessionMod.SignalingState.Stable with String = js.native
+    sealed trait Stable
+      extends StObject
+         with SignalingState
+    /* "Stable" */ val Stable: typings.sipJs.sessionSessionMod.SignalingState.Stable & String = js.native
   }
   
   @js.native
@@ -94,7 +113,7 @@ object sessionSessionMod {
       * @param options - Options bucket.
       */
     def bye(): OutgoingByeRequest = js.native
-    def bye(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingByeRequest = js.native
+    def bye(delegate: Unit, options: RequestOptions): OutgoingByeRequest = js.native
     def bye(delegate: OutgoingRequestDelegate): OutgoingByeRequest = js.native
     def bye(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingByeRequest = js.native
     
@@ -120,7 +139,7 @@ object sessionSessionMod {
       * @param options - Options bucket.
       */
     def info(): OutgoingInfoRequest = js.native
-    def info(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingInfoRequest = js.native
+    def info(delegate: Unit, options: RequestOptions): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingInfoRequest = js.native
     
@@ -132,7 +151,7 @@ object sessionSessionMod {
       * @param options - Options bucket.
       */
     def invite(): OutgoingInviteRequest = js.native
-    def invite(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingInviteRequest = js.native
+    def invite(delegate: Unit, options: RequestOptions): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate, options: RequestOptions): OutgoingInviteRequest = js.native
     
@@ -150,11 +169,11 @@ object sessionSessionMod {
       * @param options - Options bucket.
       */
     def message(): OutgoingMessageRequest = js.native
-    def message(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingMessageRequest = js.native
+    def message(delegate: Unit, options: RequestOptions): OutgoingMessageRequest = js.native
     def message(delegate: OutgoingRequestDelegate): OutgoingMessageRequest = js.native
     def message(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingMessageRequest = js.native
     
-    def notify(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingNotifyRequest = js.native
+    def notify(delegate: Unit, options: RequestOptions): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingNotifyRequest = js.native
     
@@ -169,7 +188,7 @@ object sessionSessionMod {
       * @param options - Options bucket.
       */
     def prack(): OutgoingPrackRequest = js.native
-    def prack(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingPrackRequest = js.native
+    def prack(delegate: Unit, options: RequestOptions): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingPrackRequest = js.native
     
@@ -181,7 +200,7 @@ object sessionSessionMod {
       * @param options - Options bucket.
       */
     def refer(): OutgoingReferRequest = js.native
-    def refer(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingReferRequest = js.native
+    def refer(delegate: Unit, options: RequestOptions): OutgoingReferRequest = js.native
     def refer(delegate: OutgoingRequestDelegate): OutgoingReferRequest = js.native
     def refer(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingReferRequest = js.native
     

@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to download the document file, specifying its extension.
   */
 @js.native
-trait FileDownloadCommand extends CommandWithSimpleStateBase {
+trait FileDownloadCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the FileDownloadCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.

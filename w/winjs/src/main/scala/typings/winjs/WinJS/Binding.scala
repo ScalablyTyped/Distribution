@@ -6,7 +6,6 @@ import typings.winjs.WinJS.UI.IListDataSource
 import typings.winjs.anon.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ object Binding {
     * Do not instantiate. A list returned by the createFiltered method.
     **/
   @js.native
-  trait FilteredListProjection[T] extends ListProjection[T] {
+  trait FilteredListProjection[T]
+    extends StObject
+       with ListProjection[T] {
     
     //#region Methods
     /**
@@ -60,7 +61,9 @@ object Binding {
     * Do not instantiate. Sorts the underlying list by group key and within a group respects the position of the item in the underlying list. Returned by createGrouped.
     **/
   @js.native
-  trait GroupedSortedListProjection[T, G] extends SortedListProjection[T] {
+  trait GroupedSortedListProjection[T, G]
+    extends StObject
+       with SortedListProjection[T] {
     
     //#region Properties
     /**
@@ -73,7 +76,9 @@ object Binding {
     * A list of groups.
     **/
   @js.native
-  trait GroupsListProjection[T] extends ListBase[T] {
+  trait GroupsListProjection[T]
+    extends StObject
+       with ListBase[T] {
     
     //#region Methods
     /**
@@ -105,14 +110,15 @@ object Binding {
     var length: Double = js.native
   }
   
-  @js.native
-  trait IGroupKeyDataPair[T] extends IKeyDataPair[T] {
+  trait IGroupKeyDataPair[T]
+    extends StObject
+       with IKeyDataPair[T] {
     
-    var firstItemIndexHint: Double = js.native
+    var firstItemIndexHint: Double
     
-    var firstItemKey: String = js.native
+    var firstItemKey: String
     
-    var groupSize: Double = js.native
+    var groupSize: Double
   }
   object IGroupKeyDataPair {
     
@@ -123,7 +129,7 @@ object Binding {
     }
     
     @scala.inline
-    implicit class IGroupKeyDataPairMutableBuilder[Self <: IGroupKeyDataPair[_], T] (val x: Self with IGroupKeyDataPair[T]) extends AnyVal {
+    implicit class IGroupKeyDataPairMutableBuilder[Self <: IGroupKeyDataPair[?], T] (val x: Self & IGroupKeyDataPair[T]) extends AnyVal {
       
       @scala.inline
       def setFirstItemIndexHint(value: Double): Self = StObject.set(x, "firstItemIndexHint", value.asInstanceOf[js.Any])
@@ -138,12 +144,11 @@ object Binding {
   
   //#endregion Functions
   //#region Interfaces
-  @js.native
   trait IKeyDataPair[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var key: String = js.native
+    var key: String
   }
   object IKeyDataPair {
     
@@ -154,7 +159,7 @@ object Binding {
     }
     
     @scala.inline
-    implicit class IKeyDataPairMutableBuilder[Self <: IKeyDataPair[_], T] (val x: Self with IKeyDataPair[T]) extends AnyVal {
+    implicit class IKeyDataPairMutableBuilder[Self <: IKeyDataPair[?], T] (val x: Self & IKeyDataPair[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -168,7 +173,9 @@ object Binding {
     * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
     **/
   @js.native
-  trait List[T] extends ListBaseWithMutators[T] {
+  trait List[T]
+    extends StObject
+       with ListBaseWithMutators[T] {
     
     /**
       * Gets a key/data pair for the specified list index.
@@ -228,7 +235,6 @@ object Binding {
     def sort(): Unit = js.native
     def sort(sortFunction: js.Function2[/* left */ T, /* right */ T, Double]): Unit = js.native
     
-    def splice(start: Double, howMany: js.UndefOr[scala.Nothing], item: T*): js.Array[T] = js.native
     /**
       * Removes elements from a list and, if necessary, inserts new elements in their place, returning the deleted elements.
       * @param start The zero-based location in the list from which to start removing elements.
@@ -237,6 +243,7 @@ object Binding {
       * @returns The deleted elements.
       **/
     def splice(start: Double, howMany: Double, item: T*): js.Array[T] = js.native
+    def splice(start: Double, howMany: Unit, item: T*): js.Array[T] = js.native
   }
   
   /**
@@ -332,9 +339,9 @@ object Binding {
       * @param thisArg An object to which the this keyword can refer in the callback function. If thisArg is omitted, undefined is used.
       * @returns An array containing the elements that meet the condition specified in the callback function.
       **/
-    def filter(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[T] = js.native
+    def filter(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[T] = js.native
     def filter(
-      callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+      callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
       thisArg: js.Any
     ): js.Array[T] = js.native
     
@@ -401,7 +408,7 @@ object Binding {
       * @param oldValue The old value for the property.
       * @returns A promise that is completed when the notifications are complete.
       **/
-    def notify(name: String, newValue: js.Any, oldValue: js.Any): Promise[_] = js.native
+    def notify(name: String, newValue: js.Any, oldValue: js.Any): Promise[js.Any] = js.native
     
     /**
       * Forces the list to send a reload notification to any listeners.
@@ -413,37 +420,37 @@ object Binding {
       * An item in the list has changed its value.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, newItem, newValue, oldItem, oldValue.
       **/
-    def onitemchanged(eventInfo: CustomEvent[_]): Unit = js.native
+    def onitemchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * A new item has been inserted into the list.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def oniteminserted(eventInfo: CustomEvent[_]): Unit = js.native
+    def oniteminserted(eventInfo: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * An item has been changed locations in the list.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def onitemmoved(eventInfo: CustomEvent[_]): Unit = js.native
+    def onitemmoved(eventInfo: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * An item has been mutated. This event occurs as a result of calling the notifyMutated method.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def onitemmutated(eventInfo: CustomEvent[_]): Unit = js.native
+    def onitemmutated(eventInfo: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * An item has been removed from the list.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def onitemremoved(eventInfo: CustomEvent[_]): Unit = js.native
+    def onitemremoved(eventInfo: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * The list has been refreshed. Any references to items in the list may be incorrect.
       * @param eventInfo An object that contains information about the event. The detail property of this object is null.
       **/
-    def onreload(eventInfo: CustomEvent[_]): Unit = js.native
+    def onreload(eventInfo: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * Accumulates a single result by calling the specified callback function for all elements in a list. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
@@ -540,7 +547,9 @@ object Binding {
     * Represents a base class for normal list modifying operations.
     **/
   @js.native
-  trait ListBaseWithMutators[T] extends ListBase[T] {
+  trait ListBaseWithMutators[T]
+    extends StObject
+       with ListBase[T] {
     
     //#region Methods
     /**
@@ -576,7 +585,9 @@ object Binding {
     * Represents a base class for list projections.
     **/
   @js.native
-  trait ListProjection[T] extends ListBaseWithMutators[T] {
+  trait ListProjection[T]
+    extends StObject
+       with ListBaseWithMutators[T] {
     
     //#region Methods
     /**
@@ -598,7 +609,6 @@ object Binding {
       **/
     def move(index: Double, newIndex: Double): Unit = js.native
     
-    def splice(start: Double, howMany: js.UndefOr[scala.Nothing], item: T*): js.Array[T] = js.native
     /**
       * Removes elements from a list and, if necessary, inserts new elements in their place, returning the deleted elements.
       * @param start The zero-based location in the list from which to start removing elements.
@@ -607,13 +617,16 @@ object Binding {
       * @returns The deleted elements.
       **/
     def splice(start: Double, howMany: Double, item: T*): js.Array[T] = js.native
+    def splice(start: Double, howMany: Unit, item: T*): js.Array[T] = js.native
   }
   
   /**
     * Do not instantiate. Returned by the createSorted method.
     **/
   @js.native
-  trait SortedListProjection[T] extends ListProjection[T] {
+  trait SortedListProjection[T]
+    extends StObject
+       with ListProjection[T] {
     
     //#region Methods
     /**

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/factchecktools/v1alpha1", "factchecktools_v1alpha1.Resource$Claims")
@@ -38,7 +37,7 @@ class ResourceClaims protected () extends StObject {
   def search(
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse]
   ): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] = js.native
   def search(params: ParamsResourceClaimsSearch): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] = js.native
   def search(
     params: ParamsResourceClaimsSearch,

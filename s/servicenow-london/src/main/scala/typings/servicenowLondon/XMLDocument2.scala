@@ -2,29 +2,27 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLDocument2 extends StObject {
   
-  def createElement(name: String): XMLNode = js.native
+  def createElement(name: String): XMLNode
   
-  def createElementWithTextValue(name: String, value: String): XMLNode = js.native
+  def createElementWithTextValue(name: String, value: String): XMLNode
   
-  def getDocumentElement(): XMLNode = js.native
+  def getDocumentElement(): XMLNode
   
-  def getFirstNode(xpath: String): XMLNode = js.native
+  def getFirstNode(xpath: String): XMLNode
   
-  def getNextNode(prev: js.Object): XMLNode = js.native
+  def getNextNode(prev: js.Object): XMLNode
   
-  def getNode(xpath: String): XMLNode = js.native
+  def getNode(xpath: String): XMLNode
   
-  def getNodeText(xpath: String): String = js.native
+  def getNodeText(xpath: String): String
   
-  def parseXML(xmlDoc: String): Unit = js.native
+  def parseXML(xmlDoc: String): Unit
   
-  def setCurrentElement(element: XMLNode): Unit = js.native
+  def setCurrentElement(element: XMLNode): Unit
 }
 object XMLDocument2 {
   

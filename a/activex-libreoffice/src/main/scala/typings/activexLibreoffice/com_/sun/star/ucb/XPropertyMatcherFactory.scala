@@ -5,19 +5,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates an {@link XPropertyMatcher} , given a set of search criteria. */
-@js.native
-trait XPropertyMatcherFactory extends XInterface {
+trait XPropertyMatcherFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Creates an {@link XPropertyMatcher} .
     * @param Criteria The set of search criteria the returned {@link XPropertyMatcher} will use.
     * @returns An {@link XPropertyMatcher} with the given search criteria.
     */
-  def createPropertyMatcher(Criteria: SeqEquiv[SearchCriterium]): XPropertyMatcher = js.native
+  def createPropertyMatcher(Criteria: SeqEquiv[SearchCriterium]): XPropertyMatcher
 }
 object XPropertyMatcherFactory {
   

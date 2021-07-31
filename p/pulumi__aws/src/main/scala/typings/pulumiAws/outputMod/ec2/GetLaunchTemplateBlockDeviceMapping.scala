@@ -2,19 +2,17 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateBlockDeviceMapping extends StObject {
   
-  var deviceName: String = js.native
+  var deviceName: String
   
-  var ebs: js.Array[GetLaunchTemplateBlockDeviceMappingEb] = js.native
+  var ebs: js.Array[GetLaunchTemplateBlockDeviceMappingEb]
   
-  var noDevice: String = js.native
+  var noDevice: String
   
-  var virtualName: String = js.native
+  var virtualName: String
 }
 object GetLaunchTemplateBlockDeviceMapping {
   

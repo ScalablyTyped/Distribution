@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsListSelectedReposForOrgSecretRes
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListSelectedReposForOrgSecretEndpoint extends StObject {
   
-  var parameters: ActionsListSelectedReposForOrgSecretEndpoint = js.native
+  var parameters: ActionsListSelectedReposForOrgSecretEndpoint
   
-  var request: ActionsListSelectedReposForOrgSecretRequestOptions = js.native
+  var request: ActionsListSelectedReposForOrgSecretRequestOptions
   
-  var response: OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] = js.native
+  var response: OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData]
 }
 object ParametersActionsListSelectedReposForOrgSecretEndpoint {
   

@@ -4,7 +4,6 @@ import typings.std.RegExp
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "UrlMatcher")
@@ -45,14 +44,12 @@ object UrlMatcher {
     *
     * The comparison function sorts static segments before dynamic ones.
     */
-  @JSImport("@uirouter/core", "UrlMatcher.compare")
-  @js.native
-  def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = js.native
+  @scala.inline
+  def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** @internal */
-  @JSImport("@uirouter/core", "UrlMatcher.encodeDashes")
-  @js.native
-  def encodeDashes(str: String): String = js.native
+  @scala.inline
+  def encodeDashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** @internal */
   @JSImport("@uirouter/core", "UrlMatcher.nameValidator")
@@ -62,12 +59,10 @@ object UrlMatcher {
   def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
   
   /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-  @JSImport("@uirouter/core", "UrlMatcher.pathSegmentsAndParams")
-  @js.native
-  def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
+  @scala.inline
+  def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** @internal Given a matcher, return an array with the matcher's query params */
-  @JSImport("@uirouter/core", "UrlMatcher.queryParams")
-  @js.native
-  def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  @scala.inline
+  def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
 }

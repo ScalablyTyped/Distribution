@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestOrder extends StObject {
   
   /** Overrides the predefined delivery details if provided. */
-  var deliveryDetails: js.UndefOr[TestOrderDeliveryDetails] = js.native
+  var deliveryDetails: js.UndefOr[TestOrderDeliveryDetails] = js.undefined
   
   /** Whether the orderinvoices service should support this order. */
-  var enableOrderinvoices: js.UndefOr[Boolean] = js.native
+  var enableOrderinvoices: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#testOrder`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Required. Line items that are ordered. At least one line item must be provided. */
-  var lineItems: js.UndefOr[js.Array[TestOrderLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[TestOrderLineItem]] = js.undefined
   
   /** Restricted. Do not use. */
-  var notificationMode: js.UndefOr[String] = js.native
+  var notificationMode: js.UndefOr[String] = js.undefined
   
   /** Overrides the predefined pickup details if provided. */
-  var pickupDetails: js.UndefOr[TestOrderPickupDetails] = js.native
+  var pickupDetails: js.UndefOr[TestOrderPickupDetails] = js.undefined
   
   /** Required. The billing address. Acceptable values are: - "`dwight`" - "`jim`" - "`pam`" */
-  var predefinedBillingAddress: js.UndefOr[String] = js.native
+  var predefinedBillingAddress: js.UndefOr[String] = js.undefined
   
   /** Required. Identifier of one of the predefined delivery addresses for the delivery. Acceptable values are: - "`dwight`" - "`jim`" - "`pam`" */
-  var predefinedDeliveryAddress: js.UndefOr[String] = js.native
+  var predefinedDeliveryAddress: js.UndefOr[String] = js.undefined
   
   /** Required. Email address of the customer. Acceptable values are: - "`pog.dwight.schrute@gmail.com`" - "`pog.jim.halpert@gmail.com`" - "`penpog.pam.beesly@gmail.comding`" */
-  var predefinedEmail: js.UndefOr[String] = js.native
+  var predefinedEmail: js.UndefOr[String] = js.undefined
   
   /** Identifier of one of the predefined pickup details. Required for orders containing line items with shipping type `pickup`. Acceptable values are: - "`dwight`" - "`jim`" - "`pam`" */
-  var predefinedPickupDetails: js.UndefOr[String] = js.native
+  var predefinedPickupDetails: js.UndefOr[String] = js.undefined
   
   /** Promotions associated with the order. */
-  var promotions: js.UndefOr[js.Array[OrderPromotion]] = js.native
+  var promotions: js.UndefOr[js.Array[OrderPromotion]] = js.undefined
   
   /**
     * Required. The price of shipping for all items. Shipping tax is automatically calculated for orders where marketplace facilitator tax laws are applicable. Otherwise, tax settings
     * from Merchant Center are applied. Note that shipping is not taxed in certain states.
     */
-  var shippingCost: js.UndefOr[Price] = js.native
+  var shippingCost: js.UndefOr[Price] = js.undefined
   
   /** Required. The requested shipping option. Acceptable values are: - "`economy`" - "`expedited`" - "`oneDay`" - "`sameDay`" - "`standard`" - "`twoDay`" */
-  var shippingOption: js.UndefOr[String] = js.native
+  var shippingOption: js.UndefOr[String] = js.undefined
 }
 object TestOrder {
   

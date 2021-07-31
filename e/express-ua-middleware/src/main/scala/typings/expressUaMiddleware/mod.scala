@@ -7,7 +7,6 @@ import typings.expressUaMiddleware.anon.Name
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,20 +14,22 @@ object mod {
   /**
     * Express middleware to parse user-agent header
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  
   @JSImport("express-ua-middleware", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait UserAgent extends StObject {
     
-    val browser: Name = js.native
+    val browser: Name
     
-    val device: Model = js.native
+    val device: Model
     
-    val os: Name = js.native
+    val os: Name
     
-    val raw: String = js.native
+    val raw: String
   }
   object UserAgent {
     
@@ -57,10 +58,9 @@ object mod {
   
   // types based on @types/ua-parser-js
   // manually copied due to lack of the proper type exports
-  @js.native
   trait UserAgentRaw extends StObject {
     
-    var raw: String = js.native
+    var raw: String
   }
   object UserAgentRaw {
     
@@ -82,17 +82,16 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var userAgent: UserAgent with UserAgentRaw = js.native
+        var userAgent: UserAgent & UserAgentRaw
         
-        def userAgentFromString(raw: String): UserAgent = js.native
+        def userAgentFromString(raw: String): UserAgent
       }
       object Request {
         
         @scala.inline
-        def apply(userAgent: UserAgent with UserAgentRaw, userAgentFromString: String => UserAgent): Request = {
+        def apply(userAgent: UserAgent & UserAgentRaw, userAgentFromString: String => UserAgent): Request = {
           val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], userAgentFromString = js.Any.fromFunction1(userAgentFromString))
           __obj.asInstanceOf[Request]
         }
@@ -101,7 +100,7 @@ object mod {
         implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setUserAgent(value: UserAgent with UserAgentRaw): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+          def setUserAgent(value: UserAgent & UserAgentRaw): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setUserAgentFromString(value: String => UserAgent): Self = StObject.set(x, "userAgentFromString", js.Any.fromFunction1(value))

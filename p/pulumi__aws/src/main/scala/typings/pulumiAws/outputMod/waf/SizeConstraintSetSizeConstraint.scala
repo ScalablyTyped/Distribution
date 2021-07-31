@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeConstraintSetSizeConstraint extends StObject {
   
   /**
@@ -13,18 +11,18 @@ trait SizeConstraintSetSizeConstraint extends StObject {
     * e.g. `EQ`, `NE`, `LT`, `GT`.
     * See [docs](https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_SizeConstraint.html) for all supported values.
     */
-  var comparisonOperator: String = js.native
+  var comparisonOperator: String
   
   /**
     * Specifies where in a web request to look for the size constraint.
     */
-  var fieldToMatch: SizeConstraintSetSizeConstraintFieldToMatch = js.native
+  var fieldToMatch: SizeConstraintSetSizeConstraintFieldToMatch
   
   /**
     * The size in bytes that you want to compare against the size of the specified `fieldToMatch`.
     * Valid values are between 0 - 21474836480 bytes (0 - 20 GB).
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Text transformations used to eliminate unusual formatting that attackers use in web requests in an effort to bypass AWS WAF.
@@ -34,7 +32,7 @@ trait SizeConstraintSetSizeConstraint extends StObject {
     * for all supported values.
     * **Note:** if you choose `BODY` as `type`, you must choose `NONE` because CloudFront forwards only the first 8192 bytes for inspection.
     */
-  var textTransformation: String = js.native
+  var textTransformation: String
 }
 object SizeConstraintSetSizeConstraint {
   

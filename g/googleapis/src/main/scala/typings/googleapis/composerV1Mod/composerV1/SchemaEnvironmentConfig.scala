@@ -2,13 +2,11 @@ package typings.googleapis.composerV1Mod.composerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration information for an environment.
   */
-@js.native
 trait SchemaEnvironmentConfig extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaEnvironmentConfig extends StObject {
     * environment (see [Airflow web
     * interface](/composer/docs/how-to/accessing/airflow-web-interface)).
     */
-  var airflowUri: js.UndefOr[String] = js.native
+  var airflowUri: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The Cloud Storage prefix of the DAGs for this environment.
@@ -25,28 +23,28 @@ trait SchemaEnvironmentConfig extends StObject {
     * prefixes. DAG objects for this environment reside in a simulated
     * directory with the given prefix.
     */
-  var dagGcsPrefix: js.UndefOr[String] = js.native
+  var dagGcsPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The Kubernetes Engine cluster used to run this environment.
     */
-  var gkeCluster: js.UndefOr[String] = js.native
+  var gkeCluster: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration used for the Kubernetes Engine cluster.
     */
-  var nodeConfig: js.UndefOr[SchemaNodeConfig] = js.native
+  var nodeConfig: js.UndefOr[SchemaNodeConfig] = js.undefined
   
   /**
     * The number of nodes in the Kubernetes Engine cluster that will be used to
     * run this environment.
     */
-  var nodeCount: js.UndefOr[Double] = js.native
+  var nodeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The configuration settings for software inside the environment.
     */
-  var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.native
+  var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.undefined
 }
 object SchemaEnvironmentConfig {
   

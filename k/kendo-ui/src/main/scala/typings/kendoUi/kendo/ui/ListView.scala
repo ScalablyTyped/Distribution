@@ -7,11 +7,12 @@ import typings.kendoUi.kendo.data.ObservableObject
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListView extends Widget {
+trait ListView
+  extends StObject
+     with Widget {
   
   def add(): Unit = js.native
   

@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignalWorkflowExecutionInput extends StObject {
   
   /**
     * The name of the domain containing the workflow execution to signal.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * Data to attach to the WorkflowExecutionSignaled event in the target workflow execution's history.
     */
-  var input: js.UndefOr[Data] = js.native
+  var input: js.UndefOr[Data] = js.undefined
   
   /**
     * The runId of the workflow execution to signal.
     */
-  var runId: js.UndefOr[WorkflowRunIdOptional] = js.native
+  var runId: js.UndefOr[WorkflowRunIdOptional] = js.undefined
   
   /**
     * The name of the signal. This name must be meaningful to the target workflow.
     */
-  var signalName: SignalName = js.native
+  var signalName: SignalName
   
   /**
     * The workflowId of the workflow execution to signal.
     */
-  var workflowId: WorkflowId = js.native
+  var workflowId: WorkflowId
 }
 object SignalWorkflowExecutionInput {
   

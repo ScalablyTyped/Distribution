@@ -2,95 +2,93 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingOption extends StObject {
   
   /** Age range details. */
-  var ageRangeDetails: js.UndefOr[AgeRangeTargetingOptionDetails] = js.native
+  var ageRangeDetails: js.UndefOr[AgeRangeTargetingOptionDetails] = js.undefined
   
   /** App category details. */
-  var appCategoryDetails: js.UndefOr[AppCategoryTargetingOptionDetails] = js.native
+  var appCategoryDetails: js.UndefOr[AppCategoryTargetingOptionDetails] = js.undefined
   
   /** Authorized seller status resource details. */
-  var authorizedSellerStatusDetails: js.UndefOr[AuthorizedSellerStatusTargetingOptionDetails] = js.native
+  var authorizedSellerStatusDetails: js.UndefOr[AuthorizedSellerStatusTargetingOptionDetails] = js.undefined
   
   /** Browser details. */
-  var browserDetails: js.UndefOr[BrowserTargetingOptionDetails] = js.native
+  var browserDetails: js.UndefOr[BrowserTargetingOptionDetails] = js.undefined
   
   /** Carrier and ISP details. */
-  var carrierAndIspDetails: js.UndefOr[CarrierAndIspTargetingOptionDetails] = js.native
+  var carrierAndIspDetails: js.UndefOr[CarrierAndIspTargetingOptionDetails] = js.undefined
   
   /** Category resource details. */
-  var categoryDetails: js.UndefOr[CategoryTargetingOptionDetails] = js.native
+  var categoryDetails: js.UndefOr[CategoryTargetingOptionDetails] = js.undefined
   
   /** Content instream position details. */
-  var contentInstreamPositionDetails: js.UndefOr[ContentInstreamPositionTargetingOptionDetails] = js.native
+  var contentInstreamPositionDetails: js.UndefOr[ContentInstreamPositionTargetingOptionDetails] = js.undefined
   
   /** Content outstream position details. */
-  var contentOutstreamPositionDetails: js.UndefOr[ContentOutstreamPositionTargetingOptionDetails] = js.native
+  var contentOutstreamPositionDetails: js.UndefOr[ContentOutstreamPositionTargetingOptionDetails] = js.undefined
   
   /** Device make and model resource details. */
-  var deviceMakeModelDetails: js.UndefOr[DeviceMakeModelTargetingOptionDetails] = js.native
+  var deviceMakeModelDetails: js.UndefOr[DeviceMakeModelTargetingOptionDetails] = js.undefined
   
   /** Device type details. */
-  var deviceTypeDetails: js.UndefOr[DeviceTypeTargetingOptionDetails] = js.native
+  var deviceTypeDetails: js.UndefOr[DeviceTypeTargetingOptionDetails] = js.undefined
   
   /** Digital content label details. */
-  var digitalContentLabelDetails: js.UndefOr[DigitalContentLabelTargetingOptionDetails] = js.native
+  var digitalContentLabelDetails: js.UndefOr[DigitalContentLabelTargetingOptionDetails] = js.undefined
   
   /** Environment details. */
-  var environmentDetails: js.UndefOr[EnvironmentTargetingOptionDetails] = js.native
+  var environmentDetails: js.UndefOr[EnvironmentTargetingOptionDetails] = js.undefined
   
   /** Exchange details. */
-  var exchangeDetails: js.UndefOr[ExchangeTargetingOptionDetails] = js.native
+  var exchangeDetails: js.UndefOr[ExchangeTargetingOptionDetails] = js.undefined
   
   /** Gender details. */
-  var genderDetails: js.UndefOr[GenderTargetingOptionDetails] = js.native
+  var genderDetails: js.UndefOr[GenderTargetingOptionDetails] = js.undefined
   
   /** Geographic region resource details. */
-  var geoRegionDetails: js.UndefOr[GeoRegionTargetingOptionDetails] = js.native
+  var geoRegionDetails: js.UndefOr[GeoRegionTargetingOptionDetails] = js.undefined
   
   /** Household income details. */
-  var householdIncomeDetails: js.UndefOr[HouseholdIncomeTargetingOptionDetails] = js.native
+  var householdIncomeDetails: js.UndefOr[HouseholdIncomeTargetingOptionDetails] = js.undefined
   
   /** Language resource details. */
-  var languageDetails: js.UndefOr[LanguageTargetingOptionDetails] = js.native
+  var languageDetails: js.UndefOr[LanguageTargetingOptionDetails] = js.undefined
   
   /** Output only. The resource name for this targeting option. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** On screen position details. */
-  var onScreenPositionDetails: js.UndefOr[OnScreenPositionTargetingOptionDetails] = js.native
+  var onScreenPositionDetails: js.UndefOr[OnScreenPositionTargetingOptionDetails] = js.undefined
   
   /** Operating system resources details. */
-  var operatingSystemDetails: js.UndefOr[OperatingSystemTargetingOptionDetails] = js.native
+  var operatingSystemDetails: js.UndefOr[OperatingSystemTargetingOptionDetails] = js.undefined
   
   /** Parental status details. */
-  var parentalStatusDetails: js.UndefOr[ParentalStatusTargetingOptionDetails] = js.native
+  var parentalStatusDetails: js.UndefOr[ParentalStatusTargetingOptionDetails] = js.undefined
   
   /** Sensitive Category details. */
-  var sensitiveCategoryDetails: js.UndefOr[SensitiveCategoryTargetingOptionDetails] = js.native
+  var sensitiveCategoryDetails: js.UndefOr[SensitiveCategoryTargetingOptionDetails] = js.undefined
   
   /** Sub-exchange details. */
-  var subExchangeDetails: js.UndefOr[SubExchangeTargetingOptionDetails] = js.native
+  var subExchangeDetails: js.UndefOr[SubExchangeTargetingOptionDetails] = js.undefined
   
   /** Output only. A unique identifier for this targeting option. The tuple {`targeting_type`, `targeting_option_id`} will be unique. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
   
   /** Output only. The type of this targeting option. */
-  var targetingType: js.UndefOr[String] = js.native
+  var targetingType: js.UndefOr[String] = js.undefined
   
   /** User rewarded content details. */
-  var userRewardedContentDetails: js.UndefOr[UserRewardedContentTargetingOptionDetails] = js.native
+  var userRewardedContentDetails: js.UndefOr[UserRewardedContentTargetingOptionDetails] = js.undefined
   
   /** Video player size details. */
-  var videoPlayerSizeDetails: js.UndefOr[VideoPlayerSizeTargetingOptionDetails] = js.native
+  var videoPlayerSizeDetails: js.UndefOr[VideoPlayerSizeTargetingOptionDetails] = js.undefined
   
   /** Viewability resource details. */
-  var viewabilityDetails: js.UndefOr[ViewabilityTargetingOptionDetails] = js.native
+  var viewabilityDetails: js.UndefOr[ViewabilityTargetingOptionDetails] = js.undefined
 }
 object TargetingOption {
   

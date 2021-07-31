@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classifierMod {
@@ -28,7 +27,7 @@ object classifierMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ClassifierArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ClassifierArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -59,6 +58,10 @@ object classifierMod {
   /* static members */
   object Classifier {
     
+    @JSImport("@pulumi/aws/glue/classifier", "Classifier")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Classifier resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,55 +71,49 @@ object classifierMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/classifier", "Classifier.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Classifier = js.native
-    @JSImport("@pulumi/aws/glue/classifier", "Classifier.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Classifier = js.native
-    @JSImport("@pulumi/aws/glue/classifier", "Classifier.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClassifierState): Classifier = js.native
-    @JSImport("@pulumi/aws/glue/classifier", "Classifier.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClassifierState, opts: CustomResourceOptions): Classifier = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClassifierState): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClassifierState, opts: CustomResourceOptions): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Classifier]
     
     /**
       * Returns true if the given object is an instance of Classifier.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/classifier", "Classifier.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean]
   }
   
-  @js.native
   trait ClassifierArgs extends StObject {
     
     /**
       * A classifier for Csv content. Defined below.
       */
-    val csvClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]] = js.native
+    val csvClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]] = js.undefined
     
     /**
       * A classifier that uses grok patterns. Defined below.
       */
-    val grokClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]] = js.native
+    val grokClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]] = js.undefined
     
     /**
       * A classifier for JSON content. Defined below.
       */
-    val jsonClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]] = js.native
+    val jsonClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]] = js.undefined
     
     /**
       * The name of the classifier.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A classifier for XML content. Defined below.
       */
-    val xmlClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]] = js.native
+    val xmlClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]] = js.undefined
   }
   object ClassifierArgs {
     
@@ -161,33 +158,32 @@ object classifierMod {
     }
   }
   
-  @js.native
   trait ClassifierState extends StObject {
     
     /**
       * A classifier for Csv content. Defined below.
       */
-    val csvClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]] = js.native
+    val csvClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]] = js.undefined
     
     /**
       * A classifier that uses grok patterns. Defined below.
       */
-    val grokClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]] = js.native
+    val grokClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]] = js.undefined
     
     /**
       * A classifier for JSON content. Defined below.
       */
-    val jsonClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]] = js.native
+    val jsonClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]] = js.undefined
     
     /**
       * The name of the classifier.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A classifier for XML content. Defined below.
       */
-    val xmlClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]] = js.native
+    val xmlClassifier: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]] = js.undefined
   }
   object ClassifierState {
     

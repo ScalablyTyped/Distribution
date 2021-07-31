@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIceGatherOptions extends StObject {
   
-  var gatherPolicy: js.UndefOr[RTCIceGatherPolicy] = js.native
+  var gatherPolicy: js.UndefOr[RTCIceGatherPolicy] = js.undefined
   
-  var iceservers: js.UndefOr[js.Array[RTCIceServer]] = js.native
+  var iceservers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
 }
 object RTCIceGatherOptions {
   

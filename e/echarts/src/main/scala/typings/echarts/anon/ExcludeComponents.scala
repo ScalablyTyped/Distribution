@@ -1,24 +1,23 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExcludeComponents extends js.Object {
+trait ExcludeComponents extends StObject {
   
   // Background color of exporting image, use backgroundColor in
   // option by default.
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   // Excluded components list. e.g. ['toolbox']
-  var excludeComponents: js.UndefOr[js.Array[String]] = js.native
+  var excludeComponents: js.UndefOr[js.Array[String]] = js.undefined
   
   // Resolution ratio of exporting image, 1 by default.
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
   // Exporting format, can be either png, or jpeg
-  var `type`: String = js.native
+  var `type`: String
 }
 object ExcludeComponents {
   
@@ -30,36 +29,24 @@ object ExcludeComponents {
   }
   
   @scala.inline
-  implicit class ExcludeComponentsOps[Self <: ExcludeComponents] (val x: Self) extends AnyVal {
+  implicit class ExcludeComponentsMutableBuilder[Self <: ExcludeComponents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeComponents(value: js.Array[String]): Self = StObject.set(x, "excludeComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeComponentsUndefined: Self = StObject.set(x, "excludeComponents", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setExcludeComponentsVarargs(value: String*): Self = StObject.set(x, "excludeComponents", js.Array(value :_*))
     
     @scala.inline
-    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcludeComponentsVarargs(value: String*): Self = this.set("excludeComponents", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcludeComponents(value: js.Array[String]): Self = this.set("excludeComponents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludeComponents: Self = this.set("excludeComponents", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

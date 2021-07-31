@@ -13,10 +13,13 @@ import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Actions {
+  
+  @JSImport("phaser", "Actions")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties, and aligns them next to each other.
@@ -27,18 +30,14 @@ object Actions {
     * @param offsetX Optional horizontal offset from the position. Default 0.
     * @param offsetY Optional vertical offset from the position. Default 0.
     */
-  @JSImport("phaser", "Actions.AlignTo")
-  @js.native
-  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer): G = js.native
-  @JSImport("phaser", "Actions.AlignTo")
-  @js.native
-  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
-  @JSImport("phaser", "Actions.AlignTo")
-  @js.native
-  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = js.native
-  @JSImport("phaser", "Actions.AlignTo")
-  @js.native
-  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = js.native
+  @scala.inline
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("AlignTo")(items.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `angle` property,
@@ -53,36 +52,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.Angle")
-  @js.native
-  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of objects and passes each of them to the given callback.
@@ -90,9 +75,8 @@ object Actions {
     * @param callback The callback to be invoked. It will be passed just one argument: the item from the array.
     * @param context The scope in which the callback will be invoked.
     */
-  @JSImport("phaser", "Actions.Call")
-  @js.native
-  def Call[G /* <: js.Array[GameObject] */](items: G, callback: CallCallback, context: js.Any): G = js.native
+  @scala.inline
+  def Call[G /* <: js.Array[GameObject] */](items: G, callback: CallCallback, context: js.Any): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Call")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of objects and returns the first element in the array that has properties which match
@@ -104,12 +88,10 @@ object Actions {
     * @param compare The comparison object. Each property in this object will be checked against the items of the array.
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
-  @JSImport("phaser", "Actions.GetFirst")
-  @js.native
-  def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = js.native
-  @JSImport("phaser", "Actions.GetFirst")
-  @js.native
-  def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = js.native
+  @scala.inline
+  def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
+  @scala.inline
+  def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
   
   /**
     * Takes an array of objects and returns the last element in the array that has properties which match
@@ -121,12 +103,10 @@ object Actions {
     * @param compare The comparison object. Each property in this object will be checked against the items of the array.
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
-  @JSImport("phaser", "Actions.GetLast")
-  @js.native
-  def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = js.native
-  @JSImport("phaser", "Actions.GetLast")
-  @js.native
-  def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = js.native
+  @scala.inline
+  def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
+  @scala.inline
+  def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: integer): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
@@ -134,9 +114,8 @@ object Actions {
     * @param items The array of items to be updated by this action.
     * @param options The GridAlign Configuration object.
     */
-  @JSImport("phaser", "Actions.GridAlign")
-  @js.native
-  def GridAlign[G /* <: js.Array[GameObject] */](items: G, options: GridAlignConfig): G = js.native
+  @scala.inline
+  def GridAlign[G /* <: js.Array[GameObject] */](items: G, options: GridAlignConfig): G = (^.asInstanceOf[js.Dynamic].applyDynamic("GridAlign")(items.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `alpha` property,
@@ -151,36 +130,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncAlpha")
-  @js.native
-  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `x` property,
@@ -195,36 +160,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncX")
-  @js.native
-  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
@@ -241,250 +192,70 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncXY")
-  @js.native
-  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `y` property,
@@ -499,36 +270,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.IncY")
-  @js.native
-  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("IncY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Circle.
@@ -539,18 +296,14 @@ object Actions {
     * @param startAngle Optional angle to start position from, in radians. Default 0.
     * @param endAngle Optional angle to stop position at, in radians. Default 6.28.
     */
-  @JSImport("phaser", "Actions.PlaceOnCircle")
-  @js.native
-  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnCircle")
-  @js.native
-  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnCircle")
-  @js.native
-  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnCircle")
-  @js.native
-  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double, endAngle: Double): G = js.native
+  @scala.inline
+  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnCircle")(items.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnCircle")(items.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double, endAngle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnCircle")(items.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Unit, endAngle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnCircle")(items.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of an Ellipse.
@@ -561,27 +314,22 @@ object Actions {
     * @param startAngle Optional angle to start position from, in radians. Default 0.
     * @param endAngle Optional angle to stop position at, in radians. Default 6.28.
     */
-  @JSImport("phaser", "Actions.PlaceOnEllipse")
-  @js.native
-  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnEllipse")
-  @js.native
-  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnEllipse")
-  @js.native
-  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnEllipse")
-  @js.native
-  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double, endAngle: Double): G = js.native
+  @scala.inline
+  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnEllipse")(items.asInstanceOf[js.Any], ellipse.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnEllipse")(items.asInstanceOf[js.Any], ellipse.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double, endAngle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnEllipse")(items.asInstanceOf[js.Any], ellipse.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Unit, endAngle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnEllipse")(items.asInstanceOf[js.Any], ellipse.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Positions an array of Game Objects on evenly spaced points of a Line.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param line The Line to position the Game Objects on.
     */
-  @JSImport("phaser", "Actions.PlaceOnLine")
-  @js.native
-  def PlaceOnLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = js.native
+  @scala.inline
+  def PlaceOnLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnLine")(items.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the perimeter of a Rectangle.
@@ -592,12 +340,10 @@ object Actions {
     * @param rect The Rectangle to position the Game Objects on.
     * @param shift An optional positional offset. Default 1.
     */
-  @JSImport("phaser", "Actions.PlaceOnRectangle")
-  @js.native
-  def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnRectangle")
-  @js.native
-  def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, shift: integer): G = js.native
+  @scala.inline
+  def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, shift: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], shift.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them on evenly spaced points around the edges of a Triangle.
@@ -607,12 +353,10 @@ object Actions {
     * @param triangle The Triangle to position the Game Objects on.
     * @param stepRate An optional step rate, to increase or decrease the packing of the Game Objects on the lines. Default 1.
     */
-  @JSImport("phaser", "Actions.PlaceOnTriangle")
-  @js.native
-  def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = js.native
-  @JSImport("phaser", "Actions.PlaceOnTriangle")
-  @js.native
-  def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle, stepRate: Double): G = js.native
+  @scala.inline
+  def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnTriangle")(items.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlaceOnTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle, stepRate: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlaceOnTriangle")(items.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Play an animation with the given key, starting at the given startFrame on all Game Objects in items.
@@ -620,15 +364,12 @@ object Actions {
     * @param key The name of the animation to play.
     * @param startFrame The starting frame of the animation with the given key.
     */
-  @JSImport("phaser", "Actions.PlayAnimation")
-  @js.native
-  def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String): G = js.native
-  @JSImport("phaser", "Actions.PlayAnimation")
-  @js.native
-  def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: String): G = js.native
-  @JSImport("phaser", "Actions.PlayAnimation")
-  @js.native
-  def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: integer): G = js.native
+  @scala.inline
+  def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: String): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PlayAnimation[G /* <: js.Array[GameObject] */](items: G, key: String, startFrame: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PlayAnimation")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], startFrame.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public property as defined in `key`,
@@ -644,51 +385,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](
-    items: G,
-    key: String,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](
-    items: G,
-    key: String,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](
-    items: G,
-    key: String,
-    value: Double,
-    step: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueInc")
-  @js.native
-  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueInc")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public property as defined in `key`,
@@ -704,51 +416,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](
-    items: G,
-    key: String,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](
-    items: G,
-    key: String,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](
-    items: G,
-    key: String,
-    value: Double,
-    step: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.PropertyValueSet")
-  @js.native
-  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("PropertyValueSet")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them at random locations within the Circle.
@@ -757,9 +440,8 @@ object Actions {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param circle The Circle to position the Game Objects within.
     */
-  @JSImport("phaser", "Actions.RandomCircle")
-  @js.native
-  def RandomCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = js.native
+  @scala.inline
+  def RandomCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomCircle")(items.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them at random locations within the Ellipse.
@@ -768,9 +450,8 @@ object Actions {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param ellipse The Ellipse to position the Game Objects within.
     */
-  @JSImport("phaser", "Actions.RandomEllipse")
-  @js.native
-  def RandomEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = js.native
+  @scala.inline
+  def RandomEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomEllipse")(items.asInstanceOf[js.Any], ellipse.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them at random locations on the Line.
@@ -779,18 +460,16 @@ object Actions {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param line The Line to position the Game Objects randomly on.
     */
-  @JSImport("phaser", "Actions.RandomLine")
-  @js.native
-  def RandomLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = js.native
+  @scala.inline
+  def RandomLine[G /* <: js.Array[GameObject] */](items: G, line: Line): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomLine")(items.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them at random locations within the Rectangle.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param rect The Rectangle to position the Game Objects within.
     */
-  @JSImport("phaser", "Actions.RandomRectangle")
-  @js.native
-  def RandomRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
+  @scala.inline
+  def RandomRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and positions them at random locations within the Triangle.
@@ -799,9 +478,8 @@ object Actions {
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     * @param triangle The Triangle to position the Game Objects within.
     */
-  @JSImport("phaser", "Actions.RandomTriangle")
-  @js.native
-  def RandomTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = js.native
+  @scala.inline
+  def RandomTriangle[G /* <: js.Array[GameObject] */](items: G, triangle: Triangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomTriangle")(items.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `rotation` property,
@@ -816,36 +494,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.Rotate")
-  @js.native
-  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Rotates each item around the given point by the given angle.
@@ -853,9 +517,8 @@ object Actions {
     * @param point Any object with public `x` and `y` properties.
     * @param angle The angle to rotate by, in radians.
     */
-  @JSImport("phaser", "Actions.RotateAround")
-  @js.native
-  def RotateAround[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double): G = js.native
+  @scala.inline
+  def RotateAround[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAround")(items.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Rotates an array of Game Objects around a point by the given angle and distance.
@@ -864,9 +527,8 @@ object Actions {
     * @param angle The angle to rotate by, in radians.
     * @param distance The distance from the point of rotation in pixels.
     */
-  @JSImport("phaser", "Actions.RotateAroundDistance")
-  @js.native
-  def RotateAroundDistance[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double, distance: Double): G = js.native
+  @scala.inline
+  def RotateAroundDistance[G /* <: js.Array[GameObject] */](items: G, point: js.Object, angle: Double, distance: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundDistance")(items.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `scaleX` property,
@@ -881,36 +543,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleX")
-  @js.native
-  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `scaleX` and `scaleY` properties,
@@ -927,276 +575,27 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Double,
     stepX: Double,
     stepY: Double,
-    index: js.UndefOr[scala.Nothing],
+    index: Unit,
     direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
-  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleXY")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -1205,7 +604,161 @@ object Actions {
     stepY: Double,
     index: integer,
     direction: integer
-  ): G = js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleXY")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have a public `scaleY` property,
@@ -1220,36 +773,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.ScaleY")
-  @js.native
-  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("ScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `alpha`
@@ -1264,36 +803,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetAlpha")
-  @js.native
-  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAlpha")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `blendMode`
@@ -1307,18 +832,14 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetBlendMode")
-  @js.native
-  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetBlendMode")
-  @js.native
-  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetBlendMode")
-  @js.native
-  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetBlendMode")
-  @js.native
-  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetBlendMode")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `depth`
@@ -1333,36 +854,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetDepth")
-  @js.native
-  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDepth")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Passes all provided Game Objects to the Input Manager to enable them for input with identical areas and callbacks.
@@ -1370,9 +877,8 @@ object Actions {
     * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
     * @param hitAreaCallback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
     */
-  @JSImport("phaser", "Actions.SetHitArea")
-  @js.native
-  def SetHitArea[G /* <: js.Array[GameObject] */](items: G, hitArea: js.Any, hitAreaCallback: HitAreaCallback): G = js.native
+  @scala.inline
+  def SetHitArea[G /* <: js.Array[GameObject] */](items: G, hitArea: js.Any, hitAreaCallback: HitAreaCallback): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetHitArea")(items.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `originX` and `originY`
@@ -1389,276 +895,27 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](
-    items: G,
-    originX: Double,
-    originY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
     originY: Double,
     stepX: Double,
     stepY: Double,
-    index: js.UndefOr[scala.Nothing],
+    index: Unit,
     direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
-  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetOrigin")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
     originX: Double,
@@ -1667,7 +924,169 @@ object Actions {
     stepY: Double,
     index: integer,
     direction: integer
-  ): G = js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Unit,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Unit,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetOrigin")(items.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `rotation`
@@ -1682,36 +1101,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetRotation")
-  @js.native
-  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetRotation")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `scaleX` and `scaleY`
@@ -1728,276 +1133,27 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](
-    items: G,
-    scaleX: Double,
-    scaleY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
     scaleY: Double,
     stepX: Double,
     stepY: Double,
-    index: js.UndefOr[scala.Nothing],
+    index: Unit,
     direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
-  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScale")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
     scaleX: Double,
@@ -2006,7 +1162,161 @@ object Actions {
     stepY: Double,
     index: integer,
     direction: integer
-  ): G = js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Unit,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScale")(items.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scaleX`
@@ -2021,36 +1331,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleX")
-  @js.native
-  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scaleY`
@@ -2065,36 +1361,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScaleY")
-  @js.native
-  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScaleY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `scrollFactorX` and `scrollFactorY`
@@ -2111,285 +1393,25 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](
-    items: G,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
-  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
     scrollFactorY: Double,
     stepX: Double,
     stepY: Double,
-    index: js.UndefOr[scala.Nothing],
+    index: Unit,
     direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -2397,9 +1419,8 @@ object Actions {
     stepX: Double,
     stepY: Double,
     index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactor")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -2408,7 +1429,169 @@ object Actions {
     stepY: Double,
     index: integer,
     direction: integer
-  ): G = js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Double,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Unit,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Unit,
+    stepY: Unit,
+    index: Unit,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Unit,
+    stepX: Unit,
+    stepY: Unit,
+    index: integer,
+    direction: integer
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactor")(items.asInstanceOf[js.Any], scrollFactorX.asInstanceOf[js.Any], scrollFactorY.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scrollFactorX`
@@ -2423,36 +1606,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorX")
-  @js.native
-  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `scrollFactorY`
@@ -2467,36 +1636,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetScrollFactorY")
-  @js.native
-  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetScrollFactorY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public method setTint() and then updates it to the given value(s). You can specify tint color per corner or provide only one color value for `topLeft` parameter, in which case whole item will be tinted with that color.
@@ -2506,48 +1661,22 @@ object Actions {
     * @param bottomLeft The tint to be applied to the bottom-left corner of item.
     * @param bottomRight The tint to be applied to the bottom-right corner of item.
     */
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](
-    items: G,
-    topLeft: Double,
-    topRight: js.UndefOr[scala.Nothing],
-    bottomLeft: js.UndefOr[scala.Nothing],
-    bottomRight: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](
-    items: G,
-    topLeft: Double,
-    topRight: js.UndefOr[scala.Nothing],
-    bottomLeft: Double,
-    bottomRight: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](
-    items: G,
-    topLeft: Double,
-    topRight: Double,
-    bottomLeft: js.UndefOr[scala.Nothing],
-    bottomRight: Double
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double): G = js.native
-  @JSImport("phaser", "Actions.SetTint")
-  @js.native
-  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): G = js.native
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any], bottomLeft.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any], bottomLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Unit, bottomRight: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any], bottomLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Unit, bottomLeft: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any], bottomLeft.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Unit, bottomLeft: Double, bottomRight: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any], bottomLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Unit, bottomLeft: Unit, bottomRight: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTint")(items.asInstanceOf[js.Any], topLeft.asInstanceOf[js.Any], topRight.asInstanceOf[js.Any], bottomLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `visible`
@@ -2559,18 +1688,14 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetVisible")
-  @js.native
-  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean): G = js.native
-  @JSImport("phaser", "Actions.SetVisible")
-  @js.native
-  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetVisible")
-  @js.native
-  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetVisible")
-  @js.native
-  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetVisible")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `x`
@@ -2585,36 +1710,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetX")
-  @js.native
-  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetX")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public properties `x` and `y`
@@ -2631,250 +1742,70 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    stepX: Double,
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: js.UndefOr[scala.Nothing],
-    stepY: Double,
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: Double,
-    stepY: js.UndefOr[scala.Nothing],
-    index: integer,
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](
-    items: G,
-    x: Double,
-    y: Double,
-    stepX: Double,
-    stepY: Double,
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetXY")
-  @js.native
-  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Double, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Unit, stepX: Unit, stepY: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetXY")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], stepX.asInstanceOf[js.Any], stepY.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects, or any objects that have the public property `y`
@@ -2889,36 +1820,22 @@ object Actions {
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](
-    items: G,
-    value: Double,
-    step: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    direction: integer
-  ): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
-  @JSImport("phaser", "Actions.SetY")
-  @js.native
-  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: integer, direction: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Iterate through the items array changing the position of each element to be that of the element that came before
@@ -2933,26 +1850,21 @@ object Actions {
     * @param direction The iteration direction. 0 = first to last and 1 = last to first. Default 0.
     * @param output An optional objec to store the final objects position in.
     */
-  @JSImport("phaser", "Actions.ShiftPosition")
-  @js.native
-  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double): O = js.native
-  @JSImport("phaser", "Actions.ShiftPosition")
-  @js.native
-  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: js.UndefOr[scala.Nothing], output: O): O = js.native
-  @JSImport("phaser", "Actions.ShiftPosition")
-  @js.native
-  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer): O = js.native
-  @JSImport("phaser", "Actions.ShiftPosition")
-  @js.native
-  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer, output: O): O = js.native
+  @scala.inline
+  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: Unit, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
   
   /**
     * Shuffles the array in place. The shuffled array is both modified and returned.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     */
-  @JSImport("phaser", "Actions.Shuffle")
-  @js.native
-  def Shuffle[G /* <: js.Array[GameObject] */](items: G): G = js.native
+  @scala.inline
+  def Shuffle[G /* <: js.Array[GameObject] */](items: G): G = ^.asInstanceOf[js.Dynamic].applyDynamic("Shuffle")(items.asInstanceOf[js.Any]).asInstanceOf[G]
   
   /**
     * Smoothstep is a sigmoid-like interpolation and clamping function.
@@ -2964,12 +1876,10 @@ object Actions {
     * @param max The maximum interpolation value.
     * @param inc Should the values be incremented? `true` or set (`false`) Default false.
     */
-  @JSImport("phaser", "Actions.SmoothStep")
-  @js.native
-  def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
-  @JSImport("phaser", "Actions.SmoothStep")
-  @js.native
-  def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
+  @scala.inline
+  def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothStep")(items.asInstanceOf[js.Any], property.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SmoothStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothStep")(items.asInstanceOf[js.Any], property.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], inc.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Smootherstep is a sigmoid-like interpolation and clamping function.
@@ -2981,12 +1891,10 @@ object Actions {
     * @param max The maximum interpolation value.
     * @param inc Should the values be incremented? `true` or set (`false`) Default false.
     */
-  @JSImport("phaser", "Actions.SmootherStep")
-  @js.native
-  def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
-  @JSImport("phaser", "Actions.SmootherStep")
-  @js.native
-  def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
+  @scala.inline
+  def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SmootherStep")(items.asInstanceOf[js.Any], property.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def SmootherStep[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SmootherStep")(items.asInstanceOf[js.Any], property.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], inc.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and then modifies their `property` so the value equals, or is incremented, by the
@@ -3005,21 +1913,18 @@ object Actions {
     * @param max The maximum value.
     * @param inc Should the values be incremented? `true` or set (`false`) Default false.
     */
-  @JSImport("phaser", "Actions.Spread")
-  @js.native
-  def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = js.native
-  @JSImport("phaser", "Actions.Spread")
-  @js.native
-  def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = js.native
+  @scala.inline
+  def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Spread")(items.asInstanceOf[js.Any], property.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def Spread[G /* <: js.Array[GameObject] */](items: G, property: String, min: Double, max: Double, inc: Boolean): G = (^.asInstanceOf[js.Dynamic].applyDynamic("Spread")(items.asInstanceOf[js.Any], property.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], inc.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
     * Takes an array of Game Objects and toggles the visibility of each one.
     * Those previously `visible = false` will become `visible = true`, and vice versa.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
     */
-  @JSImport("phaser", "Actions.ToggleVisible")
-  @js.native
-  def ToggleVisible[G /* <: js.Array[GameObject] */](items: G): G = js.native
+  @scala.inline
+  def ToggleVisible[G /* <: js.Array[GameObject] */](items: G): G = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleVisible")(items.asInstanceOf[js.Any]).asInstanceOf[G]
   
   /**
     * Wrap each item's coordinates within a rectangle's area.
@@ -3027,10 +1932,8 @@ object Actions {
     * @param rect The rectangle.
     * @param padding An amount added to each side of the rectangle during the operation. Default 0.
     */
-  @JSImport("phaser", "Actions.WrapInRectangle")
-  @js.native
-  def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = js.native
-  @JSImport("phaser", "Actions.WrapInRectangle")
-  @js.native
-  def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, padding: Double): G = js.native
+  @scala.inline
+  def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("WrapInRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
+  def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle, padding: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("WrapInRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[G]
 }

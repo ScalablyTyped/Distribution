@@ -2,7 +2,6 @@ package typings.smartFoxServer.global.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -13,7 +12,8 @@ object Utils {
   @JSGlobal("SFS2X.Utils.ClientDisconnectionReason")
   @js.native
   class ClientDisconnectionReason ()
-    extends typings.smartFoxServer.SFS2X.Utils.ClientDisconnectionReason
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Utils.ClientDisconnectionReason
   /* static members */
   object ClientDisconnectionReason {
     

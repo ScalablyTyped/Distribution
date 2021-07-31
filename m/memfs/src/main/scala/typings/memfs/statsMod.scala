@@ -6,7 +6,6 @@ import typings.memfs.nodeMod.Node
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statsMod {
@@ -17,18 +16,20 @@ object statsMod {
   /* static members */
   object default {
     
-    @JSImport("memfs/lib/Stats", "default.build")
+    @JSImport("memfs/lib/Stats", JSImport.Default)
     @js.native
-    def build(node: Node): Stats[TStatNumber] = js.native
-    @JSImport("memfs/lib/Stats", "default.build")
-    @js.native
-    def build(node: Node, bigint: Boolean): Stats[TStatNumber] = js.native
-    @JSImport("memfs/lib/Stats", "default.build")
-    @js.native
-    def build_false(node: Node, bigint: `false`): Stats[Double] = js.native
-    @JSImport("memfs/lib/Stats", "default.build")
-    @js.native
-    def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def build(node: Node): Stats[TStatNumber] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any]).asInstanceOf[Stats[TStatNumber]]
+    @scala.inline
+    def build(node: Node, bigint: Boolean): Stats[TStatNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any], bigint.asInstanceOf[js.Any])).asInstanceOf[Stats[TStatNumber]]
+    
+    @scala.inline
+    def build_false(node: Node, bigint: `false`): Stats[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any], bigint.asInstanceOf[js.Any])).asInstanceOf[Stats[Double]]
+    
+    @scala.inline
+    def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any], bigint.asInstanceOf[js.Any])).asInstanceOf[Stats[js.BigInt]]
   }
   
   @JSImport("memfs/lib/Stats", "Stats")
@@ -90,18 +91,20 @@ object statsMod {
   /* static members */
   object Stats {
     
-    @JSImport("memfs/lib/Stats", "Stats.build")
+    @JSImport("memfs/lib/Stats", "Stats")
     @js.native
-    def build(node: Node): Stats[TStatNumber] = js.native
-    @JSImport("memfs/lib/Stats", "Stats.build")
-    @js.native
-    def build(node: Node, bigint: Boolean): Stats[TStatNumber] = js.native
-    @JSImport("memfs/lib/Stats", "Stats.build")
-    @js.native
-    def build_false(node: Node, bigint: `false`): Stats[Double] = js.native
-    @JSImport("memfs/lib/Stats", "Stats.build")
-    @js.native
-    def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def build(node: Node): Stats[TStatNumber] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any]).asInstanceOf[Stats[TStatNumber]]
+    @scala.inline
+    def build(node: Node, bigint: Boolean): Stats[TStatNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any], bigint.asInstanceOf[js.Any])).asInstanceOf[Stats[TStatNumber]]
+    
+    @scala.inline
+    def build_false(node: Node, bigint: `false`): Stats[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any], bigint.asInstanceOf[js.Any])).asInstanceOf[Stats[Double]]
+    
+    @scala.inline
+    def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(node.asInstanceOf[js.Any], bigint.asInstanceOf[js.Any])).asInstanceOf[Stats[js.BigInt]]
   }
   
   type TStatNumber = Double | js.BigInt

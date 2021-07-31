@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImportSnapshotTasksResult extends StObject {
   
   /**
     * A list of zero or more import snapshot tasks that are currently active or were completed or canceled in the previous 7 days.
     */
-  var ImportSnapshotTasks: js.UndefOr[ImportSnapshotTaskList] = js.native
+  var ImportSnapshotTasks: js.UndefOr[ImportSnapshotTaskList] = js.undefined
   
   /**
     * The token to use to get the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeImportSnapshotTasksResult {
   

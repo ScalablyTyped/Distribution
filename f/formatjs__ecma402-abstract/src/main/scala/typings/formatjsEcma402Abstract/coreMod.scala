@@ -2,19 +2,17 @@ package typings.formatjsEcma402Abstract
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
   
   type Locale = String
   
-  @js.native
   trait LocaleData[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var locale: Locale = js.native
+    var locale: Locale
   }
   object LocaleData {
     
@@ -25,7 +23,7 @@ object coreMod {
     }
     
     @scala.inline
-    implicit class LocaleDataMutableBuilder[Self <: LocaleData[_], T] (val x: Self with LocaleData[T]) extends AnyVal {
+    implicit class LocaleDataMutableBuilder[Self <: LocaleData[?], T] (val x: Self & LocaleData[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -35,14 +33,13 @@ object coreMod {
     }
   }
   
-  @js.native
   trait LookupMatcherResult extends StObject {
     
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
     
-    var nu: js.UndefOr[String] = js.native
+    var nu: js.UndefOr[String] = js.undefined
   }
   object LookupMatcherResult {
     

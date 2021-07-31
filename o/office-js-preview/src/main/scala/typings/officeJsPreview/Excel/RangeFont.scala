@@ -12,7 +12,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Single
 import typings.officeJsPreview.officeJsPreviewStrings.SingleAccountant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait RangeFont extends ClientObject {
+trait RangeFont
+  extends StObject
+     with ClientObject {
   
   /**
     *

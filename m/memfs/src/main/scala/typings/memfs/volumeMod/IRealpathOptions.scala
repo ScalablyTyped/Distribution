@@ -3,13 +3,11 @@ package typings.memfs.volumeMod
 import typings.memfs.encodingMod.TEncodingExtended
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRealpathOptions extends StObject {
   
-  var encoding: js.UndefOr[TEncodingExtended] = js.native
+  var encoding: js.UndefOr[TEncodingExtended] = js.undefined
 }
 object IRealpathOptions {
   

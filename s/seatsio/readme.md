@@ -10,9 +10,9 @@ Official JavaScript and Node.JS client library for the Seats.io V2 REST API
 | ------------------ | :-------------: |
 | Full name          | seatsio |
 | Keywords           | - |
-| # releases         | 65 |
+| # releases         | 58 |
 | # dependents       | 0 |
-| # downloads        | 21339 |
+| # downloads        | 18379 |
 | # stars            | 0 |
 
 ## Links

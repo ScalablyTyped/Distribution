@@ -2,41 +2,39 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fontfamily extends StObject {
   
   /**
     * To set the font color. 'gray' | '#666699' | ...
     */
-  var `font-color`: js.UndefOr[js.Any] = js.native
+  var `font-color`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the font family. 'Arial' | 'Georgia' | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * To set the font size. 30 | 24 | 16 | ...
     */
-  var `font-size`: js.UndefOr[Double] = js.native
+  var `font-size`: js.UndefOr[Double] = js.undefined
   
   /**
     * To set the font style. 'normal' | 'italic'
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * To set the font weight. 'normal' | 'bold'
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * To set the visibility of the object. true | false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Fontfamily {
   

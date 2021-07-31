@@ -4,13 +4,11 @@ import typings.mangopay2NodejsSdk.mod.address.AddressData
 import typings.mangopay2NodejsSdk.mod.models.Address
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingData extends StObject {
   
-  var Address: typings.mangopay2NodejsSdk.mod.models.Address | AddressData | String = js.native
+  var Address: typings.mangopay2NodejsSdk.mod.models.Address | AddressData | String
 }
 object BillingData {
   

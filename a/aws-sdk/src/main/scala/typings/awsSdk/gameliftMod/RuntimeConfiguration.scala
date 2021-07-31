@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeConfiguration extends StObject {
   
   /**
     * The maximum amount of time (in seconds) that a game session can remain in status ACTIVATING. If the game session is not active before the timeout, activation is terminated and the game session status is changed to TERMINATED.
     */
-  var GameSessionActivationTimeoutSeconds: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionActivationTimeoutSeconds] = js.native
+  var GameSessionActivationTimeoutSeconds: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionActivationTimeoutSeconds] = js.undefined
   
   /**
     * The maximum number of game sessions with status ACTIVATING to allow on an instance simultaneously. This setting limits the amount of instance resources that can be used for new game activations at any one time.
     */
-  var MaxConcurrentGameSessionActivations: js.UndefOr[typings.awsSdk.gameliftMod.MaxConcurrentGameSessionActivations] = js.native
+  var MaxConcurrentGameSessionActivations: js.UndefOr[typings.awsSdk.gameliftMod.MaxConcurrentGameSessionActivations] = js.undefined
   
   /**
     * A collection of server process configurations that describe which server processes to run on each instance in a fleet.
     */
-  var ServerProcesses: js.UndefOr[ServerProcessList] = js.native
+  var ServerProcesses: js.UndefOr[ServerProcessList] = js.undefined
 }
 object RuntimeConfiguration {
   

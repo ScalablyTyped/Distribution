@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the user in a consistent way. ;  This can be reached by using this service.
   * @see com.sun.star.sdb.InteractionHandler
   */
-@js.native
-trait ErrorMessageDialog extends XExecutableDialog {
+trait ErrorMessageDialog
+  extends StObject
+     with XExecutableDialog {
   
   /**
     * allows initializing the dialog
@@ -34,7 +34,7 @@ trait ErrorMessageDialog extends XExecutableDialog {
     * com.sun.star.awt.XWindow} describing the parent window to use for the dialog.**sqlException**; {@link com.sun.star.sdbc.SQLException} describing the
     * error which is being displayed. ;  When initializing this value, you may use any derivative of {@link com.sun.star.sdbc.SQLException} .
     */
-  def create(initialTitle: String, parentWindow: XWindow, sqlException: js.Any): Unit = js.native
+  def create(initialTitle: String, parentWindow: XWindow, sqlException: js.Any): Unit
 }
 object ErrorMessageDialog {
   

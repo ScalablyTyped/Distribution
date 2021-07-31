@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WEBGLLoseContext extends StObject {
   
-  def loseContext(): Unit = js.native
+  def loseContext(): Unit
   
-  def restoreContext(): Unit = js.native
+  def restoreContext(): Unit
 }
 object WEBGLLoseContext {
   

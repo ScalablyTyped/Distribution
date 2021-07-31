@@ -2,15 +2,13 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerateLoadedClassesCallbacks extends StObject {
   
-  def onComplete(): Unit = js.native
+  def onComplete(): Unit
   
-  def onMatch(name: String, owner: String): Unit = js.native
+  def onMatch(name: String, owner: String): Unit
 }
 object EnumerateLoadedClassesCallbacks {
   

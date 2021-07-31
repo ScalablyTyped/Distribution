@@ -3,12 +3,12 @@ package typings.asana.mod.auth
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppStatic
-  extends /**
+  extends StObject
+     with /**
   * An abstraction around an App used with Asana.
   *
   * @options {Object} Options to construct the app
@@ -19,4 +19,4 @@ trait AppStatic
   * @option {String} [asanaBaseUrl] Base URL to use for Asana, for debugging
   * @constructor
   */
-Instantiable1[/* options */ AppOptions, typings.asana.mod.auth.App]
+Instantiable1[/* options */ AppOptions, App]

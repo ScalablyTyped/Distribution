@@ -2,17 +2,17 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConditionalMergeTag extends MergeTag {
+trait ConditionalMergeTag
+  extends StObject
+     with MergeTag {
   
-  val mergeTags: js.UndefOr[js.Array[SimpleMergeTag]] = js.native
+  val mergeTags: js.UndefOr[js.Array[SimpleMergeTag]] = js.undefined
   
-  val name: String = js.native
+  val name: String
   
-  val rules: js.Array[ConditionalMergeTagRule] = js.native
+  val rules: js.Array[ConditionalMergeTagRule]
 }
 object ConditionalMergeTag {
   

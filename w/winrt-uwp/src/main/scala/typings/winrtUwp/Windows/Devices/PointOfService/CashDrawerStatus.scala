@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the current power and availability status of the cash drawer. */
-@js.native
 trait CashDrawerStatus extends StObject {
   
   /** ExtendedStatus provides a way for a Point of Service driver or provider to send custom notifications to the app. */
-  var extendedStatus: Double = js.native
+  var extendedStatus: Double
   
   /** Gets the status kind for the cash drawer status. */
-  var statusKind: CashDrawerStatusKind = js.native
+  var statusKind: CashDrawerStatusKind
 }
 object CashDrawerStatus {
   

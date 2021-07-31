@@ -2,21 +2,19 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avg extends StObject {
   
-  var avg: Double = js.native
+  var avg: Double
   
-  var count: Double = js.native
+  var count: Double
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var sum: Double = js.native
+  var sum: Double
 }
 object Avg {
   

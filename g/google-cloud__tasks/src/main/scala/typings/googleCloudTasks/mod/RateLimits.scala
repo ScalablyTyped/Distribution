@@ -2,17 +2,15 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateLimits extends StObject {
   
-  var maxBurstSize: Double = js.native
+  var maxBurstSize: Double
   
-  var maxConcurrentDispatches: Double = js.native
+  var maxConcurrentDispatches: Double
   
-  var maxDispatchesPerSecond: Double = js.native
+  var maxDispatchesPerSecond: Double
 }
 object RateLimits {
   

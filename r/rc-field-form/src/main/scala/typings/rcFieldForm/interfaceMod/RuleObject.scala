@@ -1,9 +1,7 @@
 package typings.rcFieldForm.interfaceMod
 
-import typings.rcFieldForm.rcFieldFormStrings.array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -20,9 +18,9 @@ object RuleObject {
   }
   
   @scala.inline
-  def ArrayRule(`type`: array): typings.rcFieldForm.interfaceMod.ArrayRule = {
+  def ArrayRule(): typings.rcFieldForm.interfaceMod.ArrayRule = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[typings.rcFieldForm.interfaceMod.ArrayRule]
   }
 }

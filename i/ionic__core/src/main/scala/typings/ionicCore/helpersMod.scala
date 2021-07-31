@@ -11,103 +11,76 @@ import typings.std.ShadowRoot
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "addEventListener")
+  @JSImport("@ionic/core/dist/types/utils/helpers", JSImport.Namespace)
   @js.native
-  def addEventListener(el: js.Any, eventName: String, callback: js.Any): js.Any = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "addEventListener")
-  @js.native
-  def addEventListener(el: js.Any, eventName: String, callback: js.Any, opts: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "assert")
-  @js.native
-  def assert(actual: js.Any, reason: String): Unit = js.native
+  @scala.inline
+  def addEventListener(el: js.Any, eventName: String, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def addEventListener(el: js.Any, eventName: String, callback: js.Any, opts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "clamp")
-  @js.native
-  def clamp(min: Double, n: Double, max: Double): Double = js.native
+  @scala.inline
+  def assert(actual: js.Any, reason: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "debounce")
-  @js.native
-  def debounce(func: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "debounce")
-  @js.native
-  def debounce(func: js.Function1[/* repeated */ js.Any, Unit], wait: Double): js.Function1[/* repeated */ js.Any, _] = js.native
+  @scala.inline
+  def clamp(min: Double, n: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(min.asInstanceOf[js.Any], n.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "debounceEvent")
-  @js.native
-  def debounceEvent(event: EventEmitter[_], wait: Double): EventEmitter[_] = js.native
+  @scala.inline
+  def debounce(func: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  @scala.inline
+  def debounce(func: js.Function1[/* repeated */ js.Any, Unit], wait: Double): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "deferEvent")
-  @js.native
-  def deferEvent(event: EventEmitter[_]): EventEmitter[_] = js.native
+  @scala.inline
+  def debounceEvent(event: EventEmitter[js.Any], wait: Double): EventEmitter[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceEvent")(event.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EventEmitter[js.Any]]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "findItemLabel")
-  @js.native
-  def findItemLabel(componentEl: HTMLElement): HTMLIonLabelElement | Null = js.native
+  @scala.inline
+  def deferEvent(event: EventEmitter[js.Any]): EventEmitter[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deferEvent")(event.asInstanceOf[js.Any]).asInstanceOf[EventEmitter[js.Any]]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "getAriaLabel")
-  @js.native
-  def getAriaLabel(componentEl: HTMLElement, inputId: String): Label = js.native
+  @scala.inline
+  def findItemLabel(componentEl: HTMLElement): HTMLIonLabelElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findItemLabel")(componentEl.asInstanceOf[js.Any]).asInstanceOf[HTMLIonLabelElement | Null]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "getElementRoot")
-  @js.native
-  def getElementRoot(el: HTMLElement): HTMLElement | ShadowRoot = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "getElementRoot")
-  @js.native
-  def getElementRoot(el: HTMLElement, fallback: HTMLElement): HTMLElement | ShadowRoot = js.native
+  @scala.inline
+  def getAriaLabel(componentEl: HTMLElement, inputId: String): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("getAriaLabel")(componentEl.asInstanceOf[js.Any], inputId.asInstanceOf[js.Any])).asInstanceOf[Label]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "hasShadowDom")
-  @js.native
-  def hasShadowDom(el: HTMLElement): Boolean = js.native
+  @scala.inline
+  def getElementRoot(el: HTMLElement): HTMLElement | ShadowRoot = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRoot")(el.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | ShadowRoot]
+  @scala.inline
+  def getElementRoot(el: HTMLElement, fallback: HTMLElement): HTMLElement | ShadowRoot = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementRoot")(el.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | ShadowRoot]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "inheritAttributes")
-  @js.native
-  def inheritAttributes(el: HTMLElement): StringDictionary[js.Any] = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "inheritAttributes")
-  @js.native
-  def inheritAttributes(el: HTMLElement, attributes: js.Array[String]): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def hasShadowDom(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasShadowDom")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "isEndSide")
-  @js.native
-  def isEndSide(side: Side): Boolean = js.native
+  @scala.inline
+  def inheritAttributes(el: HTMLElement): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inheritAttributes")(el.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def inheritAttributes(el: HTMLElement, attributes: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritAttributes")(el.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "now")
-  @js.native
-  def now(ev: UIEvent): Double = js.native
+  @scala.inline
+  def isEndSide(side: Side): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEndSide")(side.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "pointerCoord")
-  @js.native
-  def pointerCoord(ev: js.Any): X = js.native
+  @scala.inline
+  def now(ev: UIEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(ev.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "raf")
-  @js.native
-  def raf(h: js.Any): js.Any = js.native
+  @scala.inline
+  def pointerCoord(ev: js.Any): X = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerCoord")(ev.asInstanceOf[js.Any]).asInstanceOf[X]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "removeEventListener")
-  @js.native
-  def removeEventListener(el: js.Any, eventName: String, callback: js.Any): js.Any = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "removeEventListener")
-  @js.native
-  def removeEventListener(el: js.Any, eventName: String, callback: js.Any, opts: js.Any): js.Any = js.native
+  @scala.inline
+  def raf(h: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("raf")(h.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core/dist/types/utils/helpers", "renderHiddenInput")
-  @js.native
-  def renderHiddenInput(
-    always: Boolean,
-    container: HTMLElement,
-    name: String,
-    value: js.UndefOr[scala.Nothing],
-    disabled: Boolean
-  ): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "renderHiddenInput")
-  @js.native
-  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: String, disabled: Boolean): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/helpers", "renderHiddenInput")
-  @js.native
-  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: Null, disabled: Boolean): Unit = js.native
+  @scala.inline
+  def removeEventListener(el: js.Any, eventName: String, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def removeEventListener(el: js.Any, eventName: String, callback: js.Any, opts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: String, disabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderHiddenInput")(always.asInstanceOf[js.Any], container.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: Null, disabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderHiddenInput")(always.asInstanceOf[js.Any], container.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: Unit, disabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderHiddenInput")(always.asInstanceOf[js.Any], container.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

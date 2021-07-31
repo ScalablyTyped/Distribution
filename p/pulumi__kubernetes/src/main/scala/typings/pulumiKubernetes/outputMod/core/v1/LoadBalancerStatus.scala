@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LoadBalancerStatus represents the status of a load-balancer.
   */
-@js.native
 trait LoadBalancerStatus extends StObject {
   
   /**
     * Ingress is a list containing ingress points for the load-balancer. Traffic intended for the service should be sent to these ingress points.
     */
-  var ingress: js.Array[LoadBalancerIngress] = js.native
+  var ingress: js.Array[LoadBalancerIngress]
 }
 object LoadBalancerStatus {
   

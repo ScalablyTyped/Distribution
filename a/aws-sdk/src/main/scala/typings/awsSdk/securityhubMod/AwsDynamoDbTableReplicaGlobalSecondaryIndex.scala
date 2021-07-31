@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableReplicaGlobalSecondaryIndex extends StObject {
   
   /**
     * The name of the index.
     */
-  var IndexName: js.UndefOr[NonEmptyString] = js.native
+  var IndexName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Replica-specific configuration for the provisioned throughput for the index.
     */
-  var ProvisionedThroughputOverride: js.UndefOr[AwsDynamoDbTableProvisionedThroughputOverride] = js.native
+  var ProvisionedThroughputOverride: js.UndefOr[AwsDynamoDbTableProvisionedThroughputOverride] = js.undefined
 }
 object AwsDynamoDbTableReplicaGlobalSecondaryIndex {
   

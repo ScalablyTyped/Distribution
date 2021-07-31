@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCustomchannelsUpdate extends StandardParameters {
+trait ParamsResourceCustomchannelsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Ad client in which the custom channel will be updated.
     */
-  var adClientId: js.UndefOr[String] = js.native
+  var adClientId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCustomChannel] = js.native
+  var requestBody: js.UndefOr[SchemaCustomChannel] = js.undefined
 }
 object ParamsResourceCustomchannelsUpdate {
   

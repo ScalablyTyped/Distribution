@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchReadException extends StObject {
   
   /**
     * An exception message that is associated with the failure.
     */
-  var Message: js.UndefOr[ExceptionMessage] = js.native
+  var Message: js.UndefOr[ExceptionMessage] = js.undefined
   
   /**
     * A type of exception, such as InvalidArnException.
     */
-  var Type: js.UndefOr[BatchReadExceptionType] = js.native
+  var Type: js.UndefOr[BatchReadExceptionType] = js.undefined
 }
 object BatchReadException {
   

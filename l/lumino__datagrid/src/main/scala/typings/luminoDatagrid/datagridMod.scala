@@ -41,7 +41,6 @@ import typings.std.MouseEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datagridMod {
@@ -964,6 +963,10 @@ object datagridMod {
   }
   object DataGrid {
     
+    @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A generic format function for the copy handler.
       *
@@ -974,9 +977,8 @@ object datagridMod {
       * #### Notes
       * This function uses `String()` to coerce a value to a string.
       */
-    @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid.copyFormatGeneric")
-    @js.native
-    def copyFormatGeneric(args: CopyFormatArgs): String = js.native
+    @scala.inline
+    def copyFormatGeneric(args: CopyFormatArgs): String = ^.asInstanceOf[js.Dynamic].applyDynamic("copyFormatGeneric")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * The default copy config for a data grid.
@@ -1002,28 +1004,27 @@ object datagridMod {
     /**
       * A type alias for the data grid copy config.
       */
-    @js.native
     trait CopyConfig extends StObject {
       
       /**
         * The function for formatting the data values.
         */
-      def format(args: CopyFormatArgs): String = js.native
+      def format(args: CopyFormatArgs): String
       
       /**
         * The headers to included in the copied output.
         */
-      val headers: none | row | column | all = js.native
+      val headers: none | row | column | all
       
       /**
         * The separator to use between values.
         */
-      val separator: String = js.native
+      val separator: String
       
       /**
         * The cell count threshold for a copy to be considered "large".
         */
-      val warningThreshold: Double = js.native
+      val warningThreshold: Double
     }
     object CopyConfig {
       
@@ -1058,33 +1059,32 @@ object datagridMod {
     /**
       * A type alias for the arguments to a copy format function.
       */
-    @js.native
     trait CopyFormatArgs extends StObject {
       
       /**
         * The column index of the value.
         */
-      var column: Double = js.native
+      var column: Double
       
       /**
         * The metadata for the cell.
         */
-      var metadata: Metadata = js.native
+      var metadata: Metadata
       
       /**
         * The cell region for the value.
         */
-      var region: CellRegion = js.native
+      var region: CellRegion
       
       /**
         * The row index of the value.
         */
-      var row: Double = js.native
+      var row: Double
       
       /**
         * The value for the cell.
         */
-      var value: js.Any = js.native
+      var value: js.Any
     }
     object CopyFormatArgs {
       
@@ -1122,28 +1122,27 @@ object datagridMod {
     /**
       * An object which defines the default sizes for a data grid.
       */
-    @js.native
     trait DefaultSizes_ extends StObject {
       
       /**
         * The default height of a column header.
         */
-      val columnHeaderHeight: Double = js.native
+      val columnHeaderHeight: Double
       
       /**
         * The default width of a column.
         */
-      val columnWidth: Double = js.native
+      val columnWidth: Double
       
       /**
         * The default width of a row header.
         */
-      val rowHeaderWidth: Double = js.native
+      val rowHeaderWidth: Double
       
       /**
         * The default height of a row.
         */
-      val rowHeight: Double = js.native
+      val rowHeight: Double
     }
     object DefaultSizes_ {
       
@@ -1198,7 +1197,6 @@ object datagridMod {
     /**
       * An object which holds the result of a grid hit test.
       */
-    @js.native
     trait HitTestResult extends StObject {
       
       /**
@@ -1206,47 +1204,47 @@ object datagridMod {
         *
         * This is `-1` for the `void` region.
         */
-      val column: Double = js.native
+      val column: Double
       
       /**
         * The height of the cell.
         *
         * This is `-1` for the `void` region.
         */
-      val height: Double = js.native
+      val height: Double
       
       /**
         * The region of the data grid that was hit.
         */
-      val region: CellRegion | void = js.native
+      val region: CellRegion | void
       
       /**
         * The row index of the cell that was hit.
         *
         * This is `-1` for the `void` region.
         */
-      val row: Double = js.native
+      val row: Double
       
       /**
         * The width of the cell.
         *
         * This is `-1` for the `void` region.
         */
-      val width: Double = js.native
+      val width: Double
       
       /**
         * The X coordinate of the mouse in cell coordinates.
         *
         * This is `-1` for the `void` region.
         */
-      val x: Double = js.native
+      val x: Double
       
       /**
         * The Y coordinate of the mouse in cell coordinates.
         *
         * This is `-1` for the `void` region.
         */
-      val y: Double = js.native
+      val y: Double
     }
     object HitTestResult {
       
@@ -1293,8 +1291,9 @@ object datagridMod {
     /**
       * An object which handles keydown events for the data grid.
       */
-    @js.native
-    trait IKeyHandler extends IDisposable {
+    trait IKeyHandler
+      extends StObject
+         with IDisposable {
       
       /**
         * Handle the key down event for the data grid.
@@ -1306,7 +1305,7 @@ object datagridMod {
         * #### Notes
         * This will not be called if the mouse button is pressed.
         */
-      def onKeyDown(grid: DataGrid, event: KeyboardEvent): Unit = js.native
+      def onKeyDown(grid: DataGrid, event: KeyboardEvent): Unit
     }
     object IKeyHandler {
       
@@ -1327,8 +1326,9 @@ object datagridMod {
     /**
       * An object which handles mouse events for the data grid.
       */
-    @js.native
-    trait IMouseHandler extends IDisposable {
+    trait IMouseHandler
+      extends StObject
+         with IDisposable {
       
       /**
         * Handle the context menu event for the data grid.
@@ -1337,7 +1337,7 @@ object datagridMod {
         *
         * @param event - The context menu event of interest.
         */
-      def onContextMenu(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onContextMenu(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the mouse double click event for the data grid.
@@ -1346,7 +1346,7 @@ object datagridMod {
         *
         * @param event - The mouse double click event of interest.
         */
-      def onMouseDoubleClick(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onMouseDoubleClick(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the mouse down event for the data grid.
@@ -1355,7 +1355,7 @@ object datagridMod {
         *
         * @param event - The mouse down event of interest.
         */
-      def onMouseDown(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onMouseDown(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the mouse hover event for the data grid.
@@ -1364,7 +1364,7 @@ object datagridMod {
         *
         * @param event - The mouse hover event of interest.
         */
-      def onMouseHover(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onMouseHover(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the mouse leave event for the data grid.
@@ -1373,7 +1373,7 @@ object datagridMod {
         *
         * @param event - The mouse hover event of interest.
         */
-      def onMouseLeave(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onMouseLeave(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the mouse move event for the data grid.
@@ -1382,7 +1382,7 @@ object datagridMod {
         *
         * @param event - The mouse move event of interest.
         */
-      def onMouseMove(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onMouseMove(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the mouse up event for the data grid.
@@ -1391,7 +1391,7 @@ object datagridMod {
         *
         * @param event - The mouse up event of interest.
         */
-      def onMouseUp(grid: DataGrid, event: MouseEvent): Unit = js.native
+      def onMouseUp(grid: DataGrid, event: MouseEvent): Unit
       
       /**
         * Handle the wheel event for the data grid.
@@ -1400,7 +1400,7 @@ object datagridMod {
         *
         * @param event - The wheel event of interest.
         */
-      def onWheel(grid: DataGrid, event: WheelEvent): Unit = js.native
+      def onWheel(grid: DataGrid, event: WheelEvent): Unit
       
       /**
         * Release any resources acquired during a mouse press.
@@ -1409,7 +1409,7 @@ object datagridMod {
         * This method is called when the mouse should be released
         * independent of a mouseup event, such as an early detach.
         */
-      def release(): Unit = js.native
+      def release(): Unit
     }
     object IMouseHandler {
       
@@ -1466,7 +1466,6 @@ object datagridMod {
     /**
       * An options object for initializing a data grid.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -1474,56 +1473,56 @@ object datagridMod {
         *
         * The default is an empty renderer map.
         */
-      var cellRenderers: js.UndefOr[RendererMap] = js.native
+      var cellRenderers: js.UndefOr[RendererMap] = js.undefined
       
       /**
         * The copy configuration data for the grid.
         *
         * The default is `DataGrid.defaultCopyConfig`.
         */
-      var copyConfig: js.UndefOr[CopyConfig] = js.native
+      var copyConfig: js.UndefOr[CopyConfig] = js.undefined
       
       /**
         * The default cell renderer for the data grid.
         *
         * The default is a new `TextRenderer`.
         */
-      var defaultRenderer: js.UndefOr[CellRenderer] = js.native
+      var defaultRenderer: js.UndefOr[CellRenderer] = js.undefined
       
       /**
         * The default sizes for the data grid.
         *
         * The default is `DataGrid.defaultSizes`.
         */
-      var defaultSizes: js.UndefOr[DefaultSizes_] = js.native
+      var defaultSizes: js.UndefOr[DefaultSizes_] = js.undefined
       
       /**
         * The header visibility for the data grid.
         *
         * The default is `'all'`.
         */
-      var headerVisibility: js.UndefOr[HeaderVisibility] = js.native
+      var headerVisibility: js.UndefOr[HeaderVisibility] = js.undefined
       
       /**
         * Whether to stretch the last column of the grid.
         *
         * The default is `false`.
         */
-      var stretchLastColumn: js.UndefOr[Boolean] = js.native
+      var stretchLastColumn: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to stretch the last row of the grid.
         *
         * The default is `false`.
         */
-      var stretchLastRow: js.UndefOr[Boolean] = js.native
+      var stretchLastRow: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The style for the data grid.
         *
         * The default is `DataGrid.defaultStyle`.
         */
-      var style: js.UndefOr[Style] = js.native
+      var style: js.UndefOr[Style] = js.undefined
     }
     object IOptions {
       
@@ -1592,7 +1591,6 @@ object datagridMod {
       * #### Notes
       * All style colors support the full CSS color syntax.
       */
-    @js.native
     trait Style extends StObject {
       
       /**
@@ -1600,7 +1598,7 @@ object datagridMod {
         *
         * This color is layered on top of the `voidColor`.
         */
-      val backgroundColor: js.UndefOr[String] = js.native
+      val backgroundColor: js.UndefOr[String] = js.undefined
       
       /**
         * A function which returns the background color for a column.
@@ -1608,69 +1606,69 @@ object datagridMod {
         * This color is layered on top of the `backgroundColor` and can
         * be used to implement "zebra striping" of the grid columns.
         */
-      val columnBackgroundColor: js.UndefOr[js.Function1[/* index */ Double, String]] = js.native
+      val columnBackgroundColor: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
       
       /**
         * The border color for the cursor.
         */
-      val cursorBorderColor: js.UndefOr[String] = js.native
+      val cursorBorderColor: js.UndefOr[String] = js.undefined
       
       /**
         * The fill color for the cursor.
         */
-      val cursorFillColor: js.UndefOr[String] = js.native
+      val cursorFillColor: js.UndefOr[String] = js.undefined
       
       /**
         * The color for the grid lines of the body cells.
         *
         * The grid lines are draw on top of the cell contents.
         */
-      val gridLineColor: js.UndefOr[String] = js.native
+      val gridLineColor: js.UndefOr[String] = js.undefined
       
       /**
         * The background color for the header cells.
         *
         * This color is layered on top of the `voidColor`.
         */
-      val headerBackgroundColor: js.UndefOr[String] = js.native
+      val headerBackgroundColor: js.UndefOr[String] = js.undefined
       
       /**
         * The color for the grid lines of the header cells.
         *
         * The grid lines are draw on top of the cell contents.
         */
-      val headerGridLineColor: js.UndefOr[String] = js.native
+      val headerGridLineColor: js.UndefOr[String] = js.undefined
       
       /**
         * The color for the horizontal grid lines of the header cells.
         *
         * This overrides the `headerGridLineColor` option.
         */
-      val headerHorizontalGridLineColor: js.UndefOr[String] = js.native
+      val headerHorizontalGridLineColor: js.UndefOr[String] = js.undefined
       
       /**
         * The border color for a header selection.
         */
-      val headerSelectionBorderColor: js.UndefOr[String] = js.native
+      val headerSelectionBorderColor: js.UndefOr[String] = js.undefined
       
       /**
         * The fill color for a header selection.
         */
-      val headerSelectionFillColor: js.UndefOr[String] = js.native
+      val headerSelectionFillColor: js.UndefOr[String] = js.undefined
       
       /**
         * The color for the vertical grid lines of the header cells.
         *
         * This overrides the `headerGridLineColor` option.
         */
-      val headerVerticalGridLineColor: js.UndefOr[String] = js.native
+      val headerVerticalGridLineColor: js.UndefOr[String] = js.undefined
       
       /**
         * The color for the horizontal grid lines of the body cells.
         *
         * This overrides the `gridLineColor` option.
         */
-      val horizontalGridLineColor: js.UndefOr[String] = js.native
+      val horizontalGridLineColor: js.UndefOr[String] = js.undefined
       
       /**
         * A function which returns the background color for a row.
@@ -1678,36 +1676,36 @@ object datagridMod {
         * This color is layered on top of the `backgroundColor` and can
         * be used to implement "zebra striping" of the grid rows.
         */
-      val rowBackgroundColor: js.UndefOr[js.Function1[/* index */ Double, String]] = js.native
+      val rowBackgroundColor: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
       
       /**
         * The drop shadow effect when the grid is scrolled.
         */
-      val scrollShadow: js.UndefOr[Color1] = js.native
+      val scrollShadow: js.UndefOr[Color1] = js.undefined
       
       /**
         * The border color for a selection.
         */
-      val selectionBorderColor: js.UndefOr[String] = js.native
+      val selectionBorderColor: js.UndefOr[String] = js.undefined
       
       /**
         * The fill color for a selection.
         */
-      val selectionFillColor: js.UndefOr[String] = js.native
+      val selectionFillColor: js.UndefOr[String] = js.undefined
       
       /**
         * The color for the vertical grid lines of the body cells.
         *
         * This overrides the `gridLineColor` option.
         */
-      val verticalGridLineColor: js.UndefOr[String] = js.native
+      val verticalGridLineColor: js.UndefOr[String] = js.undefined
       
       /**
         * The void color for the data grid.
         *
         * This is the base fill color for the entire data grid.
         */
-      val voidColor: js.UndefOr[String] = js.native
+      val voidColor: js.UndefOr[String] = js.undefined
     }
     object Style {
       

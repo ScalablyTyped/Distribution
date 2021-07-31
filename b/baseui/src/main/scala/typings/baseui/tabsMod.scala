@@ -14,17 +14,15 @@ import typings.std.KeyboardEvent
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
   
-  @js.native
   trait ORIENTATION extends StObject {
     
-    var horizontal: typings.baseui.baseuiStrings.horizontal = js.native
+    var horizontal: typings.baseui.baseuiStrings.horizontal
     
-    var vertical: typings.baseui.baseuiStrings.vertical = js.native
+    var vertical: typings.baseui.baseuiStrings.vertical
   }
   object ORIENTATION {
     
@@ -43,10 +41,9 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var change: change_ = js.native
+    var change: change_
   }
   object STATE_CHANGE_TYPE {
     
@@ -119,17 +116,16 @@ object tabsMod {
   @js.native
   val Tabs: FC[TabsProps] = js.native
   
-  @js.native
   trait SharedProps extends StObject {
     
     @JSName("$active")
-    var $active: js.UndefOr[Boolean] = js.native
+    var $active: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$disabled")
-    var $disabled: js.UndefOr[Boolean] = js.native
+    var $disabled: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$orientation")
-    var $orientation: js.UndefOr[horizontal | vertical] = js.native
+    var $orientation: js.UndefOr[horizontal | vertical] = js.undefined
   }
   object SharedProps {
     
@@ -162,10 +158,9 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var activeKey: Key = js.native
+    var activeKey: Key
   }
   object State {
     
@@ -185,33 +180,22 @@ object tabsMod {
   
   type StateReducer = js.Function3[change_, /* nextState */ State, /* currentState */ State, State]
   
-  /* Inlined baseui.baseui/tabs.TabsProps & {  activeKey :never | undefined,   renderAll :boolean | undefined,   initialState :baseui.baseui/tabs.State | undefined,   stateReducer :baseui.baseui/tabs.StateReducer | undefined} */
-  @js.native
-  trait StatefulTabsProps extends StObject {
+  trait StatefulTabsProps
+    extends StObject
+       with TabsProps {
     
-    var activeKey: js.UndefOr[Key] with js.UndefOr[scala.Nothing] = js.native
+    @JSName("activeKey")
+    var activeKey_StatefulTabsProps: js.UndefOr[scala.Nothing] = js.undefined
     
-    var children: ReactNode = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
-    
-    var initialState: js.UndefOr[State] = js.native
-    
-    var onChange: js.UndefOr[js.Function1[/* args */ ActiveKey, _]] = js.native
-    
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
-    
-    var overrides: js.UndefOr[TabsOverrides[SharedPropsactivebooleanu]] = js.native
-    
-    var renderAll: js.UndefOr[Boolean] = js.native
-    
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
   }
   object StatefulTabsProps {
     
     @scala.inline
-    def apply(activeKey: js.UndefOr[Key] with js.UndefOr[scala.Nothing]): StatefulTabsProps = {
-      val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any])
+    def apply(): StatefulTabsProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulTabsProps]
     }
     
@@ -219,49 +203,10 @@ object tabsMod {
     implicit class StatefulTabsPropsMutableBuilder[Self <: StatefulTabsProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActiveKey(value: js.UndefOr[Key] with js.UndefOr[scala.Nothing]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      @scala.inline
       def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
-      
-      @scala.inline
-      def setOnChange(value: /* args */ ActiveKey => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
-      
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
-      
-      @scala.inline
-      def setOverrides(value: TabsOverrides[SharedPropsactivebooleanu]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      @scala.inline
-      def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
       
       @scala.inline
       def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
@@ -271,12 +216,11 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabOverrides[T] extends StObject {
     
     var Tab: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TabOverrides {
     
@@ -287,7 +231,7 @@ object tabsMod {
     }
     
     @scala.inline
-    implicit class TabOverridesMutableBuilder[Self <: TabOverrides[_], T] (val x: Self with TabOverrides[T]) extends AnyVal {
+    implicit class TabOverridesMutableBuilder[Self <: TabOverrides[?], T] (val x: Self & TabOverrides[T]) extends AnyVal {
       
       @scala.inline
       def setTab(
@@ -299,31 +243,30 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabProps extends StObject {
     
     @JSName("$orientation")
-    var $orientation: js.UndefOr[horizontal | vertical] = js.native
+    var $orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, _]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, js.Any]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function0[_]] = js.native
+    var onSelect: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[TabOverrides[SharedProps]] = js.native
+    var overrides: js.UndefOr[TabOverrides[SharedProps]] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object TabProps {
     
@@ -373,19 +316,19 @@ object tabsMod {
       def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* e */ Event => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* e */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent => _): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* e */ KeyboardEvent => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       @scala.inline
-      def setOnSelect(value: () => _): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
+      def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
@@ -404,24 +347,23 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabsOverrides[T] extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Tab: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TabBar: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TabContent: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TabsOverrides {
     
@@ -432,7 +374,7 @@ object tabsMod {
     }
     
     @scala.inline
-    implicit class TabsOverridesMutableBuilder[Self <: TabsOverrides[_], T] (val x: Self with TabsOverrides[T]) extends AnyVal {
+    implicit class TabsOverridesMutableBuilder[Self <: TabsOverrides[?], T] (val x: Self & TabsOverrides[T]) extends AnyVal {
       
       @scala.inline
       def setRoot(
@@ -468,22 +410,21 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabsProps extends StObject {
     
-    var activeKey: js.UndefOr[Key] = js.native
+    var activeKey: js.UndefOr[Key] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ ActiveKey, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ ActiveKey, js.Any]] = js.undefined
     
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var overrides: js.UndefOr[TabsOverrides[SharedPropsactivebooleanu]] = js.native
+    var overrides: js.UndefOr[TabsOverrides[SharedPropsactivebooleanu]] = js.undefined
     
-    var renderAll: js.UndefOr[Boolean] = js.native
+    var renderAll: js.UndefOr[Boolean] = js.undefined
   }
   object TabsProps {
     
@@ -515,7 +456,7 @@ object tabsMod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* args */ ActiveKey => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* args */ ActiveKey => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

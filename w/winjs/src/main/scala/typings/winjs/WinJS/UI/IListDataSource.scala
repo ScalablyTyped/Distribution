@@ -4,7 +4,6 @@ import typings.std.CustomEvent
 import typings.winjs.WinJS.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -85,7 +84,7 @@ trait IListDataSource[T] extends StObject {
     * Indicates that all previous data obtained from the IListDataAdapter is invalid and should be refreshed.
     * @returns A Promise that completes when the data has been completely refreshed and all notifications have been sent.
     **/
-  def invalidateAll(): Promise[_] = js.native
+  def invalidateAll(): Promise[js.Any] = js.native
   
   /**
     * Retrieves the item that has the specified description.
@@ -152,5 +151,5 @@ trait IListDataSource[T] extends StObject {
     * Occurs when the status of the IListDataSource changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: status.
     **/
-  def statuschanged(eventInfo: CustomEvent[_]): Unit = js.native
+  def statuschanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
 }

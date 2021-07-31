@@ -2,48 +2,46 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryAccessDetails extends StObject {
   
   /**
     * Address being accessed.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * Address of instruction performing the access.
     */
-  var from: NativePointer = js.native
+  var from: NativePointer
   
   /**
     * The kind of operation that triggered the access.
     */
-  var operation: MemoryOperation = js.native
+  var operation: MemoryOperation
   
   /**
     * Index of the accessed memory page inside the specified range.
     */
-  var pageIndex: Double = js.native
+  var pageIndex: Double
   
   /**
     * Overall number of pages which have been accessed so far, and are thus
     * no longer being monitored.
     */
-  var pagesCompleted: Double = js.native
+  var pagesCompleted: Double
   
   /**
     * Overall number of pages that were initially monitored.
     */
-  var pagesTotal: Double = js.native
+  var pagesTotal: Double
   
   /**
     * Index of the accessed range in the ranges provided to
     * `MemoryAccessMonitor.enable()`.
     */
-  var rangeIndex: Double = js.native
+  var rangeIndex: Double
 }
 object MemoryAccessDetails {
   

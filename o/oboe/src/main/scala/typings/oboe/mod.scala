@@ -6,7 +6,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,16 +21,15 @@ object mod extends Shortcut {
     js.Any
   ]
   
-  @js.native
   trait FailReason extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var jsonBody: js.UndefOr[js.Object] = js.native
+    var jsonBody: js.UndefOr[js.Object] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
-    var thrown: js.UndefOr[Error] = js.native
+    var thrown: js.UndefOr[Error] = js.undefined
   }
   object FailReason {
     
@@ -107,20 +105,19 @@ object mod extends Shortcut {
     var drop: js.Object = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var cached: js.UndefOr[Boolean] = js.native
+    var cached: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

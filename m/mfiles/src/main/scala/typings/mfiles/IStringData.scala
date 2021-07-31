@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFStringDataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStringData extends StObject {
   
-  var AsString: String = js.native
+  var AsString: String
   
-  def Clone(): IStringData = js.native
+  def Clone(): IStringData
   
-  val StringDataType: MFStringDataType = js.native
+  val StringDataType: MFStringDataType
 }
 object IStringData {
   

@@ -3,35 +3,35 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.dd.IDragTracker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IComponentDragger extends IDragTracker {
+trait IComponentDragger
+  extends StObject
+     with IDragTracker {
   
   /** [Config Option] (Boolean) */
-  var constrain: js.UndefOr[Boolean] = js.native
+  var constrain: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var constrainDelegate: js.UndefOr[Boolean] = js.native
+  var constrainDelegate: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Move either the ghost Component or the target Component to its new position on drag
     * @param e Object
     */
   @JSName("onDrag")
-  var onDrag_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+  var onDrag_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Object
     */
   @JSName("onEnd")
-  var onEnd_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+  var onEnd_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Object
     */
   @JSName("onStart")
-  var onStart_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+  var onStart_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IComponentDragger {
   

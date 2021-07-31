@@ -2,45 +2,43 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Corpora extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /**
     * Groupings of files to which the query applies. Supported groupings are: 'user' (files created by, opened by, or shared directly with the user), 'drive' (files in the specified
     * shared drive as indicated by the 'driveId'), 'domain' (files shared to the user's domain), and 'allDrives' (A combination of 'user' and 'drive' for all drives where the user is
     * a member). When able, use 'user' or 'drive', instead of 'allDrives', for efficiency.
     */
-  var corpora: js.UndefOr[String] = js.native
+  var corpora: js.UndefOr[String] = js.undefined
   
   /** The source of files to list. Deprecated: use 'corpora' instead. */
-  var corpus: js.UndefOr[String] = js.native
+  var corpus: js.UndefOr[String] = js.undefined
   
   /** ID of the shared drive to search. */
-  var driveId: js.UndefOr[String] = js.native
+  var driveId: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Whether both My Drive and shared drive items should be included in results. */
-  var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.native
+  var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies which additional view's permissions to include in the response. Only 'published' is supported. */
-  var includePermissionsForView: js.UndefOr[String] = js.native
+  var includePermissionsForView: js.UndefOr[String] = js.undefined
   
   /** Deprecated use includeItemsFromAllDrives instead. */
-  var includeTeamDriveItems: js.UndefOr[Boolean] = js.native
+  var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of sort keys. Valid keys are 'createdTime', 'folder', 'modifiedByMeTime', 'modifiedTime', 'name', 'name_natural', 'quotaBytesUsed', 'recency',
@@ -48,37 +46,37 @@ trait Corpora extends StObject {
     * ?orderBy=folder,modifiedTime desc,name. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is
     * ignored.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /** The maximum number of files to return per page. Partial or empty result pages are possible even before the end of the files list has been reached. */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** The token for continuing a previous list request on the next page. This should be set to the value of 'nextPageToken' from the previous response. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** A query for filtering the file results. See the "Search for Files" guide for supported syntax. */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** A comma-separated list of spaces to query within the corpus. Supported values are 'drive', 'appDataFolder' and 'photos'. */
-  var spaces: js.UndefOr[String] = js.native
+  var spaces: js.UndefOr[String] = js.undefined
   
   /** Whether the requesting application supports both My Drives and shared drives. */
-  var supportsAllDrives: js.UndefOr[Boolean] = js.native
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated use supportsAllDrives instead. */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated use driveId instead. */
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
 }
 object Corpora {
   

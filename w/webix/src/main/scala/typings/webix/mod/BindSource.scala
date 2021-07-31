@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,4 +19,9 @@ trait BindSource extends StObject {
   
   def setBindData(data: js.Any, key: String): Unit = js.native
   def setBindData(data: js.Any, key: Double): Unit = js.native
+}
+object BindSource {
+  
+  @scala.inline
+  def apply: BindSource = ^.asInstanceOf[js.Dynamic].selectDynamic("BindSource").asInstanceOf[BindSource]
 }

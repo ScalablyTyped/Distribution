@@ -3,7 +3,6 @@ package typings.cytoscape.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cytoscape.mod.AbstractEventObject because Already inherited
-- typings.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ @js.native
-trait EventObject extends InputEventObject {
+- typings.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ trait EventObject
+  extends StObject
+     with InputEventObject {
   
   /**
     * layout : indicates the corresponding layout that triggered the event
     * (useful if running multiple layouts simultaneously)
     */
-  var layout: js.Any = js.native
+  var layout: js.Any
 }
 object EventObject {
   

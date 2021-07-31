@@ -10,9 +10,9 @@ Multi dialect ORM for Node.JS
 | ------------------ | :-------------: |
 | Full name          | sequelize |
 | Keywords           | mysql, mariadb, sqlite, postgresql, postgres, mssql, orm, nodejs, object relational mapper |
-| # releases         | 154 |
-| # dependents       | 2058 |
-| # downloads        | 30045319 |
+| # releases         | 143 |
+| # dependents       | 2224 |
+| # downloads        | 37361137 |
 | # stars            | 341 |
 
 ## Links

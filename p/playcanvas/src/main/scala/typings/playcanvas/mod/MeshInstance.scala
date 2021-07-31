@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,7 +52,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "MeshInstance")
 @js.native
 class MeshInstance protected ()
-  extends typings.playcanvas.pc.MeshInstance {
+  extends StObject
+     with typings.playcanvas.pc.MeshInstance {
   def this(
     node: typings.playcanvas.pc.GraphNode,
     mesh: typings.playcanvas.pc.Mesh,

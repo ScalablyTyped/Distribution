@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCardSuccessCallbackResult extends StObject {
   
   /** 卡券添加结果列表 */
-  var cardList: AddCardResponseInfo = js.native
+  var cardList: AddCardResponseInfo
 }
 object AddCardSuccessCallbackResult {
   

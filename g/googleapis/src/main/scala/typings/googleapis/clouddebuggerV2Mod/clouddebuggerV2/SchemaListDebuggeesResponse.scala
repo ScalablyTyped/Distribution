@@ -2,13 +2,11 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for listing debuggees.
   */
-@js.native
 trait SchemaListDebuggeesResponse extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaListDebuggeesResponse extends StObject {
     * `description` field is a human readable field provided by agents and can
     * be displayed to users.
     */
-  var debuggees: js.UndefOr[js.Array[SchemaDebuggee]] = js.native
+  var debuggees: js.UndefOr[js.Array[SchemaDebuggee]] = js.undefined
 }
 object SchemaListDebuggeesResponse {
   

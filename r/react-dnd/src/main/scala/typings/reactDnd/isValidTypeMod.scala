@@ -2,15 +2,16 @@ package typings.reactDnd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isValidTypeMod {
   
-  @JSImport("react-dnd/lib/utils/isValidType", "isValidType")
+  @JSImport("react-dnd/lib/utils/isValidType", JSImport.Namespace)
   @js.native
-  def isValidType(`type`: js.Any): Boolean = js.native
-  @JSImport("react-dnd/lib/utils/isValidType", "isValidType")
-  @js.native
-  def isValidType(`type`: js.Any, allowArray: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isValidType(`type`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidType(`type`: js.Any, allowArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any], allowArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

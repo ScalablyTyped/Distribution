@@ -2,23 +2,21 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListKafkaVersionsRequest extends StObject {
   
   /**
     * 
     The maximum number of results to return in the response. If there are more results, the response includes a NextToken parameter.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.kafkaMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.kafkaMod.MaxResults] = js.undefined
   
   /**
     * 
     The paginated results marker. When the result of the operation is truncated, the call returns NextToken in the response. To get the next batch, provide this token in your next request.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListKafkaVersionsRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeElasticIpsResult extends StObject {
   
   /**
     * An ElasticIps object that describes the specified Elastic IP addresses.
     */
-  var ElasticIps: js.UndefOr[typings.awsSdk.opsworksMod.ElasticIps] = js.native
+  var ElasticIps: js.UndefOr[typings.awsSdk.opsworksMod.ElasticIps] = js.undefined
 }
 object DescribeElasticIpsResult {
   

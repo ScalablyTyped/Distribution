@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What is  in the package
   */
-@js.native
-trait MedicationPackageContent extends BackboneElement {
+trait MedicationPackageContent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Quantity present in the package
     */
-  var amount: js.UndefOr[Quantity] = js.native
+  var amount: js.UndefOr[Quantity] = js.undefined
   
   /**
     * The item in the package
     */
-  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The item in the package
     */
-  var itemReference: js.UndefOr[Reference] = js.native
+  var itemReference: js.UndefOr[Reference] = js.undefined
 }
 object MedicationPackageContent {
   

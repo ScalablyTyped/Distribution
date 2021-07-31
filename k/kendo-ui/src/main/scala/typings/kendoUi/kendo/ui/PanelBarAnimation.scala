@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanelBarAnimation extends StObject {
   
-  var collapse: js.UndefOr[PanelBarAnimationCollapse] = js.native
+  var collapse: js.UndefOr[PanelBarAnimationCollapse] = js.undefined
   
-  var expand: js.UndefOr[PanelBarAnimationExpand] = js.native
+  var expand: js.UndefOr[PanelBarAnimationExpand] = js.undefined
 }
 object PanelBarAnimation {
   

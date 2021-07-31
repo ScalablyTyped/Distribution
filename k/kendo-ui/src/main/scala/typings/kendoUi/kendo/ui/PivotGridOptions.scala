@@ -3,55 +3,53 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.PivotDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGridOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var collapseMember: js.UndefOr[js.Function1[/* e */ PivotGridCollapseMemberEvent, Unit]] = js.native
+  var collapseMember: js.UndefOr[js.Function1[/* e */ PivotGridCollapseMemberEvent, Unit]] = js.undefined
   
-  var columnHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var columnHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ PivotGridDataBindingEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ PivotGridDataBindingEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ PivotGridDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ PivotGridDataBoundEvent, Unit]] = js.undefined
   
-  var dataCellTemplate: js.UndefOr[String | js.Function] = js.native
+  var dataCellTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.undefined
   
-  var excel: js.UndefOr[PivotGridExcel] = js.native
+  var excel: js.UndefOr[PivotGridExcel] = js.undefined
   
-  var excelExport: js.UndefOr[js.Function1[/* e */ PivotGridExcelExportEvent, Unit]] = js.native
+  var excelExport: js.UndefOr[js.Function1[/* e */ PivotGridExcelExportEvent, Unit]] = js.undefined
   
-  var expandMember: js.UndefOr[js.Function1[/* e */ PivotGridExpandMemberEvent, Unit]] = js.native
+  var expandMember: js.UndefOr[js.Function1[/* e */ PivotGridExpandMemberEvent, Unit]] = js.undefined
   
-  var filterable: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var kpiStatusTemplate: js.UndefOr[String | js.Function] = js.native
+  var kpiStatusTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var kpiTrendTemplate: js.UndefOr[String | js.Function] = js.native
+  var kpiTrendTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var messages: js.UndefOr[PivotGridMessages] = js.native
+  var messages: js.UndefOr[PivotGridMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pdf: js.UndefOr[PivotGridPdf] = js.native
+  var pdf: js.UndefOr[PivotGridPdf] = js.undefined
   
-  var pdfExport: js.UndefOr[js.Function1[/* e */ PivotGridPdfExportEvent, Unit]] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ PivotGridPdfExportEvent, Unit]] = js.undefined
   
-  var reorderable: js.UndefOr[Boolean] = js.native
+  var reorderable: js.UndefOr[Boolean] = js.undefined
   
-  var rowHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var rowHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | PivotGridSortable] = js.native
+  var sortable: js.UndefOr[Boolean | PivotGridSortable] = js.undefined
 }
 object PivotGridOptions {
   

@@ -2,32 +2,30 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsInfinityLineOptions extends StObject {
   
-  var controlPointOptions: js.UndefOr[AnnotationsInfinityLineControlPointOptions] = js.native
+  var controlPointOptions: js.UndefOr[AnnotationsInfinityLineControlPointOptions] = js.undefined
   
   /**
     * (Highstock) Options for annotation's labels. Each label inherits options
     * from the labelOptions object. An option from the labelOptions can be
     * overwritten by config for a specific label.
     */
-  var labelOptions: js.UndefOr[AnnotationsInfinityLineLabelOptions] = js.native
+  var labelOptions: js.UndefOr[AnnotationsInfinityLineLabelOptions] = js.undefined
   
   /**
     * (Highstock) Options for annotation's shapes. Each shape inherits options
     * from the shapeOptions object. An option from the shapeOptions can be
     * overwritten by config for a specific shape.
     */
-  var shapeOptions: js.UndefOr[AnnotationsInfinityLineShapeOptions] = js.native
+  var shapeOptions: js.UndefOr[AnnotationsInfinityLineShapeOptions] = js.undefined
   
   /**
     * (Highstock) Additional options for an annotation with the type.
     */
-  var typeOptions: js.UndefOr[AnnotationsInfinityLineTypeOptions] = js.native
+  var typeOptions: js.UndefOr[AnnotationsInfinityLineTypeOptions] = js.undefined
 }
 object AnnotationsInfinityLineOptions {
   

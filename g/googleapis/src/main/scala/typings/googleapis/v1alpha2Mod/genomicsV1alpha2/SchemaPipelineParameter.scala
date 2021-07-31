@@ -2,7 +2,6 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,7 +52,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * outputs that are found on the boot disk, the local path cannot be a glob
   * and must be a file.
   */
-@js.native
 trait SchemaPipelineParameter extends StObject {
   
   /**
@@ -61,12 +59,12 @@ trait SchemaPipelineParameter extends StObject {
     * `localCopy` is present, then this must be a Google Cloud Storage path
     * beginning with `gs://`.
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If present, this parameter is marked for copying to and from the VM.
@@ -74,13 +72,13 @@ trait SchemaPipelineParameter extends StObject {
     * to this parameter (either at runtime or using `defaultValue`) must be the
     * remote path where the file should be.
     */
-  var localCopy: js.UndefOr[SchemaLocalCopy] = js.native
+  var localCopy: js.UndefOr[SchemaLocalCopy] = js.undefined
   
   /**
     * Required. Name of the parameter - the pipeline runner uses this string as
     * the key to the input and output maps in RunPipeline.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaPipelineParameter {
   

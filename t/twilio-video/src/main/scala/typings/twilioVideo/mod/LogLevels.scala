@@ -2,19 +2,17 @@ package typings.twilioVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogLevels extends StObject {
   
-  var default: LogLevel = js.native
+  var default: LogLevel
   
-  var media: LogLevel = js.native
+  var media: LogLevel
   
-  var signaling: LogLevel = js.native
+  var signaling: LogLevel
   
-  var webrtc: LogLevel = js.native
+  var webrtc: LogLevel
 }
 object LogLevels {
   

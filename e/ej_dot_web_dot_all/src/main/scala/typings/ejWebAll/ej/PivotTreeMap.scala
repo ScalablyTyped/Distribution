@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.ej.Pivot.OperationalMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotTreeMap extends Widget_ {
+trait PivotTreeMap
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -29,7 +30,7 @@ trait PivotTreeMap extends Widget_ {
   /** Returns the JSON records formed to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[_] = js.native
+  def getJSONRecords(): js.Array[js.Any] = js.native
   
   /** Returns the OlapReport string maintained along with the axis elements information.
     * @returns {string}
@@ -61,20 +62,19 @@ trait PivotTreeMap extends Widget_ {
 }
 object PivotTreeMap {
   
-  @js.native
   trait AfterServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -107,20 +107,19 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait BeforeServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -153,53 +152,52 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSource extends StObject {
     
     /** In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
       * @Default {â€œâ€}
       */
-    var catalog: js.UndefOr[String] = js.native
+    var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be displayed as series of PivotTreeMap.
       * @Default {[]}
       */
-    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.native
+    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from OLAP database as string type.
       * @Default {â€œâ€}
       */
-    var cube: js.UndefOr[String] = js.native
+    var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw data source for the PivotTreeMap.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI in PivotTreeMap.
       * @Default {[]}
       */
-    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.native
+    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Set the provider name for PivotTreeMap to identify whether the provider is SSAS or Mondrian.
       * @Default {ssas}
       */
-    var providerName: js.UndefOr[String] = js.native
+    var providerName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be displayed as segments of PivotTreeMap.
       * @Default {[]}
       */
-    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.native
+    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** To set the data source name to fetch data from that.
       * @Default {â€œâ€}
       */
-    var sourceInfo: js.UndefOr[String] = js.native
+    var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items supports calculation in PivotTreeMap.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[DataSourceValue]] = js.native
+    var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
   object DataSource {
     
@@ -280,22 +278,21 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceColumn extends StObject {
     
     /** Allows the user to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
     
     /** Allows the user to indicate whether the added item is a named set or not.
       * @Default {false}
       */
-    var isNamedSets: js.UndefOr[Boolean] = js.native
+    var isNamedSets: js.UndefOr[Boolean] = js.undefined
   }
   object DataSourceColumn {
     
@@ -328,13 +325,12 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Contains the collection of items to be excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -348,7 +344,7 @@ object PivotTreeMap {
     implicit class DataSourceColumnsFilterItemsMutableBuilder[Self <: DataSourceColumnsFilterItems] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -358,17 +354,16 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceFilter extends StObject {
     
     /** Allows the user to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
   object DataSourceFilter {
     
@@ -395,13 +390,12 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Contains the collection of items to be excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -415,7 +409,7 @@ object PivotTreeMap {
     implicit class DataSourceFiltersFilterItemsMutableBuilder[Self <: DataSourceFiltersFilterItems] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -425,22 +419,21 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceRow extends StObject {
     
     /** Allows the user to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
     
     /** Allows the user to indicate whether the added item is a named set or not.
       * @Default {false}
       */
-    var isNamedSets: js.UndefOr[Boolean] = js.native
+    var isNamedSets: js.UndefOr[Boolean] = js.undefined
   }
   object DataSourceRow {
     
@@ -473,13 +466,12 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Contains the collection of items to be excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -493,7 +485,7 @@ object PivotTreeMap {
     implicit class DataSourceRowsFilterItemsMutableBuilder[Self <: DataSourceRowsFilterItems] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -503,18 +495,17 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceValue extends StObject {
     
     /** Allows to set the axis name to place the measures items.
       * @Default {rows}
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /** This holds the list of unique names of measures to bind them from the OLAP cube.
       * @Default {[]}
       */
-    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.native
+    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
   }
   object DataSourceValue {
     
@@ -544,12 +535,11 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DataSourceValuesMeasure extends StObject {
     
     /** Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
   }
   object DataSourceValuesMeasure {
     
@@ -570,12 +560,11 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait DrillSuccessEventArgs extends StObject {
     
     /** return the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object DrillSuccessEventArgs {
     
@@ -596,20 +585,19 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -642,81 +630,80 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers when it reaches client-side after any AJAX request.
       */
-    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.native
+    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Triggers before any AJAX request is passed from PivotTreeMap to service methods.
       */
-    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.native
+    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Specifies the CSS class to PivotTreeMap to achieve custom theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object utilized to pass additional information between client-end and service-end.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** Initializes the data source for the PivotTreeMap widget, when it functions completely on client-side.
       * @Default {{}}
       */
-    var dataSource: js.UndefOr[DataSource] = js.native
+    var dataSource: js.UndefOr[DataSource] = js.undefined
     
     /** Triggers when drill up/down happens in PivotTreeMap control. And it returns the outer HTML of PivotTreeMap control.
       */
-    var drillSuccess: js.UndefOr[js.Function1[/* e */ DrillSuccessEventArgs, Unit]] = js.native
+    var drillSuccess: js.UndefOr[js.Function1[/* e */ DrillSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
       * @Default {false}
       */
-    var enableXHRCredentials: js.UndefOr[Boolean] = js.native
+    var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to enable PivotTreeMapâ€™s responsiveness in the browser layout.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when PivotTreeMap starts to render.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the mode for the PivotTreeMap widget for binding data source either in server-side or client-side.
       * @Default {ej.Pivot.OperationalMode.ClientMode}
       */
-    var operationalMode: js.UndefOr[OperationalMode | String] = js.native
+    var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
     /** Triggers when PivotTreeMap widget completes all operations at client-side after any AJAX request.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when any error occurred during AJAX request.
       */
-    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.native
+    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers when PivotTreeMap successfully reaches client-side after any AJAX request.
       */
-    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.native
+    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set custom name for the methods at service-end, communicated on AJAX post.
       * @Default {{}}
       */
-    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.native
+    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Connects the service using the specified URL for any server updates.
       * @Default {â€œâ€}
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -827,20 +814,19 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -873,24 +859,23 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait RenderFailureEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the error stack trace of the original exception.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object RenderFailureEventArgs {
     
@@ -929,20 +914,19 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait RenderSuccessEventArgs extends StObject {
     
     /** returns the current action of PivotTreeMap control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -975,18 +959,17 @@ object PivotTreeMap {
     }
   }
   
-  @js.native
   trait ServiceMethodSettings extends StObject {
     
     /** Allows the user to set the custom name for the service method responsible for drilling up/down operation in PivotTreeMap.
       * @Default {DrillTreeMap}
       */
-    var drillDown: js.UndefOr[String] = js.native
+    var drillDown: js.UndefOr[String] = js.undefined
     
     /** Allows the user to set the custom name for the service method responsible for initializing PivotTreeMap.
       * @Default {InitializeTreemap}
       */
-    var initialize: js.UndefOr[String] = js.native
+    var initialize: js.UndefOr[String] = js.undefined
   }
   object ServiceMethodSettings {
     

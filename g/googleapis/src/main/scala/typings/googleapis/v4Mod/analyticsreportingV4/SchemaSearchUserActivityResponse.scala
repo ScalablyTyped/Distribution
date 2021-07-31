@@ -2,13 +2,11 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response from `userActivity:get` call.
   */
-@js.native
 trait SchemaSearchUserActivityResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaSearchUserActivityResponse extends StObject {
     * [SearchUserActivityRequest](#SearchUserActivityRequest) to retrieve the
     * next page.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * This field represents the [sampling
@@ -25,17 +23,17 @@ trait SchemaSearchUserActivityResponse extends StObject {
     * guide](/analytics/devguides/reporting/core/v4/basics#sampling) for
     * details.
     */
-  var sampleRate: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Each record represents a session (device details, duration, etc).
     */
-  var sessions: js.UndefOr[js.Array[SchemaUserActivitySession]] = js.native
+  var sessions: js.UndefOr[js.Array[SchemaUserActivitySession]] = js.undefined
   
   /**
     * Total rows returned by this query (across different pages).
     */
-  var totalRows: js.UndefOr[Double] = js.native
+  var totalRows: js.UndefOr[Double] = js.undefined
 }
 object SchemaSearchUserActivityResponse {
   

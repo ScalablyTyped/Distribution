@@ -6,7 +6,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadableMod extends Shortcut {
@@ -22,7 +21,7 @@ object loadableMod extends Shortcut {
     
     def Map[P](opts: js.Any): ComponentType[P] = js.native
     
-    def preloadAll(): js.Promise[_] = js.native
+    def preloadAll(): js.Promise[js.Any] = js.native
   }
   
   type _To = ILoadable

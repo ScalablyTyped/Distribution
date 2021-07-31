@@ -4,21 +4,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.RedeemScript
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Check extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean = js.native
+  def canAdd(currentData: js.Any, newData: js.Any): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean
   
-  def decode(keyVal: KeyValue): RedeemScript = js.native
+  def decode(keyVal: KeyValue): RedeemScript
   
-  def encode(data: RedeemScript): KeyValue = js.native
+  def encode(data: RedeemScript): KeyValue
   
-  var expected: String = js.native
+  var expected: String
 }
 object Check {
   

@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorScheme extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def Colors(SchemeColor: PpColorSchemeIndex): RGBColor = js.native
+  def Colors(SchemeColor: PpColorSchemeIndex): RGBColor
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ColorScheme_typekey")
-  var PowerPointDotColorScheme_typekey: ColorScheme = js.native
+  var PowerPointDotColorScheme_typekey: ColorScheme
 }
 object ColorScheme {
   

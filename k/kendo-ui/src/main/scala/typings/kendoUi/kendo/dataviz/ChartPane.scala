@@ -4,11 +4,12 @@ import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.drawing.Group
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartPane extends Observable {
+trait ChartPane
+  extends StObject
+     with Observable {
   
   var chartsVisual: Group = js.native
   

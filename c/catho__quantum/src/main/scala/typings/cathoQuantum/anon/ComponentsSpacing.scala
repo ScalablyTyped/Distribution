@@ -2,19 +2,17 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentsSpacing extends StObject {
   
-  var baseFontSize: js.UndefOr[Double] = js.native
+  var baseFontSize: js.UndefOr[Double] = js.undefined
   
-  var breakpoints: js.UndefOr[js.Object] = js.native
+  var breakpoints: js.UndefOr[js.Object] = js.undefined
   
-  var components: js.UndefOr[TabbedView] = js.native
+  var components: js.UndefOr[TabbedView] = js.undefined
   
-  var spacing: js.UndefOr[js.Object] = js.native
+  var spacing: js.UndefOr[js.Object] = js.undefined
 }
 object ComponentsSpacing {
   

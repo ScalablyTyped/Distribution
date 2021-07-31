@@ -4,7 +4,6 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueMod {
@@ -18,7 +17,9 @@ object queueMod {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class default[T] () extends Queue[T]
+  class default[T] ()
+    extends StObject
+       with Queue[T]
   
   @js.native
   trait Queue[T] extends StObject {

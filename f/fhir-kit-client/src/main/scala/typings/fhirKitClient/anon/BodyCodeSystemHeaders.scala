@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.CodeSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyCodeSystemHeaders extends StObject {
   
-  var body: CodeSystem = js.native
+  var body: CodeSystem
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.CodeSystem = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.CodeSystem
 }
 object BodyCodeSystemHeaders {
   
   @scala.inline
-  def apply(body: CodeSystem, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.CodeSystem): BodyCodeSystemHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: CodeSystem, id: String): BodyCodeSystemHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "CodeSystem")
     __obj.asInstanceOf[BodyCodeSystemHeaders]
   }
   

@@ -16,7 +16,6 @@ import typings.reactNativeFirebase.mod.RNFirebase.perf.Perf
 import typings.reactNativeFirebase.mod.RNFirebase.storage.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "App")
@@ -37,9 +36,9 @@ class App protected () extends StObject {
   def firestore(): Firestore = js.native
   
   def functions(): Functions = js.native
-  def functions(appOrRegion: js.UndefOr[scala.Nothing], region: String): Functions = js.native
   def functions(appOrRegion: String): Functions = js.native
   def functions(appOrRegion: String, region: String): Functions = js.native
+  def functions(appOrRegion: Unit, region: String): Functions = js.native
   def functions(appOrRegion: App): Functions = js.native
   def functions(appOrRegion: App, region: String): Functions = js.native
   

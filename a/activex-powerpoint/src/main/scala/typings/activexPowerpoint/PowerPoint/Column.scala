@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Cells: CellRange = js.native
+  val Cells: CellRange
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Column_typekey")
-  var PowerPointDotColumn_typekey: Column = js.native
+  var PowerPointDotColumn_typekey: Column
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object Column {
   

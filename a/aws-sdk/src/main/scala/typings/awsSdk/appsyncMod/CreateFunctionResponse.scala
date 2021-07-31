@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFunctionResponse extends StObject {
   
   /**
     * The Function object.
     */
-  var functionConfiguration: js.UndefOr[FunctionConfiguration] = js.native
+  var functionConfiguration: js.UndefOr[FunctionConfiguration] = js.undefined
 }
 object CreateFunctionResponse {
   

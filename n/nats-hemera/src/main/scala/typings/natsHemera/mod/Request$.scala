@@ -4,15 +4,13 @@ import typings.natsHemera.natsHemeraStrings.pubsub
 import typings.natsHemera.natsHemeraStrings.request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request$ extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var `type`: pubsub | request = js.native
+  var `type`: pubsub | request
 }
 object Request$ {
   

@@ -2,35 +2,33 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Admin extends StObject {
   
-  var admin: scala.Double = js.native
+  var admin: scala.Double
   
-  var createPublisher: scala.Double = js.native
+  var createPublisher: scala.Double
   
-  var deleteExtension: scala.Double = js.native
+  var deleteExtension: scala.Double
   
-  var deletePublisher: scala.Double = js.native
+  var deletePublisher: scala.Double
   
-  var editSettings: scala.Double = js.native
+  var editSettings: scala.Double
   
-  var managePermissions: scala.Double = js.native
+  var managePermissions: scala.Double
   
-  var privateRead: scala.Double = js.native
+  var privateRead: scala.Double
   
-  var publishExtension: scala.Double = js.native
+  var publishExtension: scala.Double
   
-  var read: scala.Double = js.native
+  var read: scala.Double
   
-  var trustedPartner: scala.Double = js.native
+  var trustedPartner: scala.Double
   
-  var updateExtension: scala.Double = js.native
+  var updateExtension: scala.Double
   
-  var viewPermissions: scala.Double = js.native
+  var viewPermissions: scala.Double
 }
 object Admin {
   

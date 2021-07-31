@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimmerBaseMod {
@@ -41,13 +40,12 @@ object shimmerBaseMod {
     def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IShimmerState extends StObject {
     
     /**
       * Flag for knowing when to remove the shimmerWrapper from the DOM.
       */
-    var contentLoaded: js.UndefOr[Boolean] = js.native
+    var contentLoaded: js.UndefOr[Boolean] = js.undefined
   }
   object IShimmerState {
     

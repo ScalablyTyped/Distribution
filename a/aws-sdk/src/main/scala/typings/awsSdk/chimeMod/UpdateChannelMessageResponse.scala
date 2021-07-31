@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelMessageResponse extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The ID string of the message being updated.
     */
-  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.native
+  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.undefined
 }
 object UpdateChannelMessageResponse {
   

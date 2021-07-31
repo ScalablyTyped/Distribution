@@ -3,36 +3,30 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FunctionType extends Type_ {
+trait FunctionType
+  extends StObject
+     with Type_ {
   
-  var `new`: Type_ = js.native
+  var `new`: Type_
   
-  var params: js.Array[Type_] = js.native
+  var params: js.Array[Type_]
   
-  var result: js.Array[Type_] = js.native
+  var result: js.Array[Type_]
   
-  var `this`: Type_ = js.native
+  var `this`: Type_
   
-  var `type`: typings.doctrine.doctrineStrings.FunctionType = js.native
+  var `type`: typings.doctrine.doctrineStrings.FunctionType
 }
 object FunctionType {
   
   @scala.inline
-  def apply(
-    `new`: Type_,
-    params: js.Array[Type_],
-    result: js.Array[Type_],
-    `this`: Type_,
-    `type`: typings.doctrine.doctrineStrings.FunctionType
-  ): FunctionType = {
+  def apply(`new`: Type_, params: js.Array[Type_], result: js.Array[Type_], `this`: Type_): FunctionType = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionType")
     __obj.asInstanceOf[FunctionType]
   }
   

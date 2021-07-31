@@ -3,16 +3,14 @@ package typings.cordovaPluginFile
 import typings.cordovaPluginFile.anon.ApplicationDirectory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Constants defined in fileSystemPaths
   */
-@js.native
 trait Cordova extends StObject {
   
-  var file: ApplicationDirectory = js.native
+  var file: ApplicationDirectory
 }
 object Cordova {
   

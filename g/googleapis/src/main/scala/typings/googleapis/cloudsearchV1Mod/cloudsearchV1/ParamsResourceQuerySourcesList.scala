@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceQuerySourcesList extends StandardParameters {
+trait ParamsResourceQuerySourcesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Number of sources to return in the response.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the request will enable debugging features of Cloud Search. Only
     * turn on this field, if asked by Google to help with debugging.
     */
   @JSName("requestOptions.debugOptions.enableDebugging")
-  var requestOptionsDotdebugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.native
+  var requestOptionsDotdebugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
@@ -36,13 +36,13 @@ trait ParamsResourceQuerySourcesList extends StandardParameters {
     * translations.
     */
   @JSName("requestOptions.languageCode")
-  var requestOptionsDotlanguageCode: js.UndefOr[String] = js.native
+  var requestOptionsDotlanguageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Id of the application created using SearchApplicationsService.
     */
   @JSName("requestOptions.searchApplicationId")
-  var requestOptionsDotsearchApplicationId: js.UndefOr[String] = js.native
+  var requestOptionsDotsearchApplicationId: js.UndefOr[String] = js.undefined
   
   /**
     * Current user's time zone id, such as "America/Los_Angeles" or
@@ -52,7 +52,7 @@ trait ParamsResourceQuerySourcesList extends StandardParameters {
     * [timezone.xml](http://unicode.org/repos/cldr/trunk/common/bcp47/timezone.xml)
     */
   @JSName("requestOptions.timeZone")
-  var requestOptionsDottimeZone: js.UndefOr[String] = js.native
+  var requestOptionsDottimeZone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceQuerySourcesList {
   

@@ -2,25 +2,23 @@ package typings.giphyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Avatarurl extends StObject {
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var banner_url: String = js.native
+    var banner_url: String
     
-    var display_name: String = js.native
+    var display_name: String
     
-    var profile_url: String = js.native
+    var profile_url: String
     
-    var twitter: String = js.native
+    var twitter: String
     
-    var username: String = js.native
+    var username: String
   }
   object Avatarurl {
     
@@ -61,16 +59,15 @@ object anon {
   }
   
   /* Inlined giphy-api.giphy-api.BaseImage & {  size :string} */
-  @js.native
   trait BaseImagesizestring extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var size: String = js.native
+    var size: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: String = js.native
+    var width: String
   }
   object BaseImagesizestring {
     
@@ -98,26 +95,25 @@ object anon {
   }
   
   /* Inlined giphy-api.giphy-api.BaseImage & {  size :string,   frames :string,   mp4 :string,   mp4_size :string,   webp :string,   webp_size :string} */
-  @js.native
   trait BaseImagesizestringframes extends StObject {
     
-    var frames: String = js.native
+    var frames: String
     
-    var height: String = js.native
+    var height: String
     
-    var mp4: String = js.native
+    var mp4: String
     
-    var mp4_size: String = js.native
+    var mp4_size: String
     
-    var size: String = js.native
+    var size: String
     
-    var url: String = js.native
+    var url: String
     
-    var webp: String = js.native
+    var webp: String
     
-    var webp_size: String = js.native
+    var webp_size: String
     
-    var width: String = js.native
+    var width: String
   }
   object BaseImagesizestringframes {
     
@@ -170,24 +166,23 @@ object anon {
   }
   
   /* Inlined giphy-api.giphy-api.BaseImage & {  size :string,   mp4 :string,   mp4_size :string,   webp :string,   webp_size :string} */
-  @js.native
   trait BaseImagesizestringmp4str extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var mp4: String = js.native
+    var mp4: String
     
-    var mp4_size: String = js.native
+    var mp4_size: String
     
-    var size: String = js.native
+    var size: String
     
-    var url: String = js.native
+    var url: String
     
-    var webp: String = js.native
+    var webp: String
     
-    var webp_size: String = js.native
+    var webp_size: String
     
-    var width: String = js.native
+    var width: String
   }
   object BaseImagesizestringmp4str {
     
@@ -236,20 +231,19 @@ object anon {
   }
   
   /* Inlined giphy-api.giphy-api.BaseImage & {  size :string,   webp :string,   webp_size :string} */
-  @js.native
   trait BaseImagesizestringwebpst extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var size: String = js.native
+    var size: String
     
-    var url: String = js.native
+    var url: String
     
-    var webp: String = js.native
+    var webp: String
     
-    var webp_size: String = js.native
+    var webp_size: String
     
-    var width: String = js.native
+    var width: String
   }
   object BaseImagesizestringwebpst {
     
@@ -282,14 +276,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var total_count: Double = js.native
+    var total_count: Double
   }
   object Count {
     
@@ -313,16 +306,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var mp4: String = js.native
+    var mp4: String
     
-    var mp4_size: String = js.native
+    var mp4_size: String
     
-    var width: String = js.native
+    var width: String
   }
   object Height {
     
@@ -349,10 +341,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Mp4 extends StObject {
     
-    var mp4: String = js.native
+    var mp4: String
   }
   object Mp4 {
     
@@ -370,14 +361,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Msg extends StObject {
     
-    var msg: String = js.native
+    var msg: String
     
-    var response_id: String = js.native
+    var response_id: String
     
-    var status: Double = js.native
+    var status: Double
   }
   object Msg {
     

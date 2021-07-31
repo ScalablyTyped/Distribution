@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transformation to apply to text that is identified as a specific
   * info_type.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InfoTypeTransformation extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaGooglePrivacyDlpV2InfoTypeTransformation extends StObject {
     * transformation to apply to all findings that correspond to infoTypes that
     * were requested in `InspectConfig`.
     */
-  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.native
+  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.undefined
   
   /**
     * Primitive transformation to apply to the infoType. [required]
     */
-  var primitiveTransformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.native
+  var primitiveTransformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InfoTypeTransformation {
   

@@ -2,13 +2,11 @@ package typings.gestalt.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indexable extends StObject {
   
-  def index(): Double = js.native
+  def index(): Double
 }
 object Indexable {
   

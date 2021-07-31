@@ -10,12 +10,10 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Circular extends StObject {
     
     /**
@@ -25,7 +23,7 @@ object anon {
       *
       * If set to `"ignore"`, then circular references will simply be ignored. No error will be thrown, but the `$Refs.circular` property will still be set to `true`.
       */
-    var circular: js.UndefOr[Boolean | ignore] = js.native
+    var circular: js.UndefOr[Boolean | ignore] = js.undefined
   }
   object Circular {
     
@@ -46,15 +44,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.UndefOr[ParserOptions | Boolean]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[ParserOptions | Boolean]] {
     
-    var json: js.UndefOr[ParserOptions | Boolean] = js.native
+    var json: js.UndefOr[ParserOptions | Boolean] = js.undefined
     
-    var text: js.UndefOr[ParserOptionsencodingstri | Boolean] = js.native
+    var text: js.UndefOr[ParserOptionsencodingstri | Boolean] = js.undefined
     
-    var yaml: js.UndefOr[ParserOptions | Boolean] = js.native
+    var yaml: js.UndefOr[ParserOptions | Boolean] = js.undefined
   }
   object Dictkey {
     
@@ -87,17 +85,18 @@ object anon {
     }
   }
   
-  @js.native
-  trait External extends /* key */ StringDictionary[PartialResolverOptions] {
+  trait External
+    extends StObject
+       with /* key */ StringDictionary[PartialResolverOptions] {
     
     /**
       * Determines whether external $ref pointers will be resolved. If this option is disabled, then external `$ref` pointers will simply be ignored.
       */
-    var external: js.UndefOr[Boolean] = js.native
+    var external: js.UndefOr[Boolean] = js.undefined
     
-    var file: js.UndefOr[PartialResolverOptions | Boolean] = js.native
+    var file: js.UndefOr[PartialResolverOptions | Boolean] = js.undefined
     
-    var http: js.UndefOr[HTTPResolverOptions | Boolean] = js.native
+    var http: js.UndefOr[HTTPResolverOptions | Boolean] = js.undefined
   }
   object External {
     
@@ -164,27 +163,26 @@ object anon {
       *
       * Unlike the `canParse` function, the `parse` method can also be asynchronous. This might be important if your parser needs to retrieve data from a database or if it relies on an external HTTP service to return the parsed value.  You can return your asynchronous value via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or a Node.js-style error-first callback.  Here are examples of both approaches:
       */
-    def parse(file: FileInfo): js.Any | js.Promise[_] = js.native
-    def parse(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, _]): js.Any | js.Promise[_] = js.native
+    def parse(file: FileInfo): js.Any | js.Promise[js.Any] = js.native
+    def parse(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): js.Any | js.Promise[js.Any] = js.native
   }
   
   /* Inlined std.Partial<@apidevtools/json-schema-ref-parser.@apidevtools/json-schema-ref-parser.ResolverOptions> */
-  @js.native
   trait PartialResolverOptions extends StObject {
     
     var canRead: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
     var read: js.UndefOr[
         js.Function2[
           /* file */ FileInfo, 
-          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]], 
+          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]], 
           String | Buffer | (js.Promise[String | Buffer])
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialResolverOptions {
     
@@ -217,7 +215,7 @@ object anon {
       
       @scala.inline
       def setRead(
-        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]]) => String | Buffer | (js.Promise[String | Buffer])
+        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
       @scala.inline

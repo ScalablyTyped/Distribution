@@ -5,7 +5,6 @@ import typings.chai.Chai.ChaiPlugin
 import typings.chaiMoment.mod.global.ChaiMoment.Granularity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,13 +31,13 @@ object mod extends Shortcut {
         def afterMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
         
         def beforeMoment(`val`: js.Any, exp: js.Any): Unit = js.native
-        def beforeMoment(`val`: js.Any, exp: js.Any, granularity: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
+        def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Unit, msg: String): Unit = js.native
         def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
         def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
         def beforeMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
         
         def sameMoment(`val`: js.Any, exp: js.Any): Unit = js.native
-        def sameMoment(`val`: js.Any, exp: js.Any, granularity: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
+        def sameMoment(`val`: js.Any, exp: js.Any, granularity: Unit, msg: String): Unit = js.native
         def sameMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
         def sameMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
         def sameMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native

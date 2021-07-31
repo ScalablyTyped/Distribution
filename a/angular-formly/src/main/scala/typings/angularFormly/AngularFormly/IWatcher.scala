@@ -2,7 +2,6 @@ package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * see http://docs.angular-formly.com/docs/field-configuration-object#watcher-objectarray-of-watches
   */
-@js.native
 trait IWatcher extends StObject {
   
-  var deep: js.UndefOr[Boolean] = js.native
+  var deep: js.UndefOr[Boolean] = js.undefined
   
   //Defaults to false
   var expression: js.UndefOr[
     String | (js.Function2[/* field */ IFieldRuntimeObject, /* scope */ ITemplateScope, Boolean])
-  ] = js.native
+  ] = js.undefined
   
   def listener(
     field: IFieldRuntimeObject,
@@ -29,9 +27,9 @@ trait IWatcher extends StObject {
     oldValue: js.Any,
     scope: ITemplateScope,
     stopWatching: js.Function
-  ): Unit = js.native
+  ): Unit
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IWatcher {
   

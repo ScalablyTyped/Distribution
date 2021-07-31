@@ -2,36 +2,34 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFindingsRequest extends StObject {
   
   /**
     * The ARN of the analyzer to retrieve findings from.
     */
-  var analyzerArn: AnalyzerArn = js.native
+  var analyzerArn: AnalyzerArn
   
   /**
     * A filter to match for the findings to return.
     */
-  var filter: js.UndefOr[FilterCriteriaMap] = js.native
+  var filter: js.UndefOr[FilterCriteriaMap] = js.undefined
   
   /**
     * The maximum number of results to return in the response.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * A token used for pagination of results returned.
     */
-  var nextToken: js.UndefOr[Token] = js.native
+  var nextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The sort order for the findings returned.
     */
-  var sort: js.UndefOr[SortCriteria] = js.native
+  var sort: js.UndefOr[SortCriteria] = js.undefined
 }
 object ListFindingsRequest {
   

@@ -4,11 +4,11 @@ import typings.winrt.Windows.Devices.Input.PointerDevice
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointerPoint extends IPointerPoint
+trait PointerPoint
+  extends StObject
+     with IPointerPoint
 object PointerPoint {
   
   @scala.inline

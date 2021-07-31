@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageSource extends StObject {
   
   /**
     * Name of the bucket containing the package.
     */
-  var S3BucketName: js.UndefOr[typings.awsSdk.esMod.S3BucketName] = js.native
+  var S3BucketName: js.UndefOr[typings.awsSdk.esMod.S3BucketName] = js.undefined
   
   /**
     * Key (file name) of the package.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.esMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.esMod.S3Key] = js.undefined
 }
 object PackageSource {
   

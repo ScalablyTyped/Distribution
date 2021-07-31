@@ -12,7 +12,7 @@ Pooled memory for ndarrays
 | Keywords           | ndarray, pool, memory, typedarray, scratch, malloc, free |
 | # releases         | 0 |
 | # dependents       | 32 |
-| # downloads        | 2923153 |
+| # downloads        | 3641485 |
 | # stars            | 1 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait PrintErrorType extends StObject
 object PrintErrorType extends StObject {
   
   @js.native
-  sealed trait asDisplayed extends PrintErrorType
+  sealed trait asDisplayed
+    extends StObject
+       with PrintErrorType
   
   @js.native
-  sealed trait blank extends PrintErrorType
+  sealed trait blank
+    extends StObject
+       with PrintErrorType
   
   @js.native
-  sealed trait dash extends PrintErrorType
+  sealed trait dash
+    extends StObject
+       with PrintErrorType
   
   @js.native
-  sealed trait notAvailable extends PrintErrorType
+  sealed trait notAvailable
+    extends StObject
+       with PrintErrorType
 }

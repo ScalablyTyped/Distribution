@@ -2,14 +2,14 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DocumentOptions extends RequestOptions {
+trait DocumentOptions
+  extends StObject
+     with RequestOptions {
   
   /** Disables the automatic id generation. If id is missing in the body and this option is true, an error will be returned. */
-  var disableAutomaticIdGeneration: js.UndefOr[Boolean] = js.native
+  var disableAutomaticIdGeneration: js.UndefOr[Boolean] = js.undefined
 }
 object DocumentOptions {
   

@@ -3,10 +3,8 @@ package typings.reactNative.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionSheetIOSStatic extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ActionSheetIOSStatic extends StObject {
     * - `title` (string) - a title to show above the action sheet
     * - `message` (string) - a message to show below the title
     */
-  def showActionSheetWithOptions(options: ActionSheetIOSOptions, callback: js.Function1[/* buttonIndex */ Double, Unit]): Unit = js.native
+  def showActionSheetWithOptions(options: ActionSheetIOSOptions, callback: js.Function1[/* buttonIndex */ Double, Unit]): Unit
   
   /**
     * Display the iOS share sheet. The `options` object should contain
@@ -38,7 +36,7 @@ trait ActionSheetIOSStatic extends StObject {
     options: ShareActionSheetIOSOptions,
     failureCallback: js.Function1[/* error */ Error, Unit],
     successCallback: js.Function2[/* success */ Boolean, /* method */ String, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object ActionSheetIOSStatic {
   

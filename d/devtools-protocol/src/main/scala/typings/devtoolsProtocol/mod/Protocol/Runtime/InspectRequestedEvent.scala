@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectRequestedEvent extends StObject {
   
-  var hints: js.Any = js.native
+  var hints: js.Any
   
-  var `object`: RemoteObject = js.native
+  var `object`: RemoteObject
 }
 object InspectRequestedEvent {
   

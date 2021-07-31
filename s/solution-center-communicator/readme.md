@@ -12,7 +12,7 @@ Tool for facilitating communication between the Zalando Solution Center and its 
 | Keywords           | angular, angularjs, solution, center, zalando, brand, solutions |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 758 |
+| # downloads        | 841 |
 | # stars            | 0 |
 
 ## Links

@@ -4,13 +4,13 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileRandomAccessStream extends IRandomAccessStream {
+trait FileRandomAccessStream
+  extends StObject
+     with IRandomAccessStream {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object FileRandomAccessStream {
   

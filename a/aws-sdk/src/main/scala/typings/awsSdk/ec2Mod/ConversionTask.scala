@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversionTask extends StObject {
   
   /**
     * The ID of the conversion task.
     */
-  var ConversionTaskId: js.UndefOr[String] = js.native
+  var ConversionTaskId: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the task expires. If the upload isn't complete before the expiration time, we automatically cancel the task.
     */
-  var ExpirationTime: js.UndefOr[String] = js.native
+  var ExpirationTime: js.UndefOr[String] = js.undefined
   
   /**
     * If the task is for importing an instance, this contains information about the import instance task.
     */
-  var ImportInstance: js.UndefOr[ImportInstanceTaskDetails] = js.native
+  var ImportInstance: js.UndefOr[ImportInstanceTaskDetails] = js.undefined
   
   /**
     * If the task is for importing a volume, this contains information about the import volume task.
     */
-  var ImportVolume: js.UndefOr[ImportVolumeTaskDetails] = js.native
+  var ImportVolume: js.UndefOr[ImportVolumeTaskDetails] = js.undefined
   
   /**
     * The state of the conversion task.
     */
-  var State: js.UndefOr[ConversionTaskState] = js.native
+  var State: js.UndefOr[ConversionTaskState] = js.undefined
   
   /**
     * The status message related to the conversion task.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the task.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ConversionTask {
   

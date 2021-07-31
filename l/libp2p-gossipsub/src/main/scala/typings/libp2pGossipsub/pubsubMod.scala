@@ -8,14 +8,15 @@ import typings.std.Set
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pubsubMod {
   
   @JSImport("libp2p-gossipsub/src/pubsub", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BasicPubSub {
+  class ^ protected ()
+    extends StObject
+       with BasicPubSub {
     /**
       * @param {Object} props
       * @param {String} props.debugName log namespace
@@ -35,7 +36,8 @@ object pubsubMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ @js.native
   trait BasicPubSub
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
     /**
       * Decode a Uint8Array into an RPC object
@@ -125,7 +127,7 @@ object pubsubMod {
       * @param {Array<Message>} msgs
       * @returns {void}
       */
-    def _publish(msgs: js.Array[_]): Unit = js.native
+    def _publish(msgs: js.Array[js.Any]): Unit = js.native
     
     /**
       * Subscribes to topics
@@ -165,7 +167,7 @@ object pubsubMod {
     def getTopics(): js.Array[String] = js.native
     
     def publish(topics: String, messages: js.Any): Unit = js.native
-    def publish(topics: String, messages: js.Array[_]): Unit = js.native
+    def publish(topics: String, messages: js.Array[js.Any]): Unit = js.native
     def publish(topics: js.Array[String], messages: js.Any): Unit = js.native
     /**
       * Publishes messages to all subscribed peers
@@ -174,7 +176,7 @@ object pubsubMod {
       * @param {Array<any>|any} messages
       * @returns {void}
       */
-    def publish(topics: js.Array[String], messages: js.Array[_]): Unit = js.native
+    def publish(topics: js.Array[String], messages: js.Array[js.Any]): Unit = js.native
     
     /**
       * Unmounts the protocol and shuts down every connection
@@ -195,7 +197,7 @@ object pubsubMod {
     /**
       * A set of subscriptions
       */
-    var subscriptions: Set[_] = js.native
+    var subscriptions: Set[js.Any] = js.native
     
     /**
       * Topic validator function
@@ -208,7 +210,10 @@ object pubsubMod {
       * Topic validators are functions with the following input:
       * @type {Map<string, validator>}
       */
-    var topicValidators: Map[String, js.Function3[/* arg0 */ String, /* arg1 */ _, /* arg2 */ _, Boolean]] = js.native
+    var topicValidators: Map[
+        String, 
+        js.Function3[/* arg0 */ String, /* arg1 */ js.Any, /* arg2 */ js.Any, Boolean]
+      ] = js.native
     
     def unsubscribe(topics: String): Unit = js.native
     /**

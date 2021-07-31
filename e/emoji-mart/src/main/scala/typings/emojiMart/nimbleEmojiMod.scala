@@ -7,7 +7,6 @@ import typings.emojiMart.sharedPropsMod.EmojiProps
 import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nimbleEmojiMod extends Shortcut {
@@ -16,10 +15,11 @@ object nimbleEmojiMod extends Shortcut {
   @js.native
   val default: SFC[NimbleEmojiProps] = js.native
   
-  @js.native
-  trait NimbleEmojiProps extends EmojiProps {
+  trait NimbleEmojiProps
+    extends StObject
+       with EmojiProps {
     
-    var data: Data = js.native
+    var data: Data
   }
   object NimbleEmojiProps {
     

@@ -3,7 +3,6 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * redirected request, the response returned by the redirected request is
   * considered.
   */
-@js.native
 trait SchemaHttpTarget extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaHttpTarget extends StObject {
     * POST, PUT, or PATCH. It is an error to set body on a job with an
     * incompatible HttpMethod.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * The user can specify HTTP request headers to send with the job&#39;s HTTP
@@ -37,12 +35,12 @@ trait SchemaHttpTarget extends StObject {
     * `X-Google-*`: Google internal use only. * `X-AppEngine-*`: Google
     * internal use only.  The total size of headers must be less than 80KB.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Which HTTP method to use for the request.
     */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, an [OAuth
@@ -51,7 +49,7 @@ trait SchemaHttpTarget extends StObject {
     * This type of authorization should be used when sending requests to a GCP
     * endpoint.
     */
-  var oauthToken: js.UndefOr[SchemaOAuthToken] = js.native
+  var oauthToken: js.UndefOr[SchemaOAuthToken] = js.undefined
   
   /**
     * If specified, an
@@ -60,7 +58,7 @@ trait SchemaHttpTarget extends StObject {
     * HTTP request.  This type of authorization should be used when sending
     * requests to third party endpoints.
     */
-  var oidcToken: js.UndefOr[SchemaOidcToken] = js.native
+  var oidcToken: js.UndefOr[SchemaOidcToken] = js.undefined
   
   /**
     * Required.  The full URI path that the request will be sent to. This
@@ -70,7 +68,7 @@ trait SchemaHttpTarget extends StObject {
     * encode some characters for safety and compatibility. The maximum allowed
     * URL length is 2083 characters after encoding.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpTarget {
   

@@ -3,33 +3,31 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectClass extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  val AdditionalClassInfo: IAdditionalClassInfo = js.native
+  val AdditionalClassInfo: IAdditionalClassInfo
   
-  var AssociatedPropertyDefs: IAssociatedPropertyDefs = js.native
+  var AssociatedPropertyDefs: IAssociatedPropertyDefs
   
-  var AutomaticPermissionsForObjects: IAutomaticPermissions = js.native
+  var AutomaticPermissionsForObjects: IAutomaticPermissions
   
-  def Clone(): IObjectClass = js.native
+  def Clone(): IObjectClass
   
-  var ForceWorkflow: Boolean = js.native
+  var ForceWorkflow: Boolean
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var NamePropertyDef: Double = js.native
+  var NamePropertyDef: Double
   
-  var ObjectType: MFBuiltInObjectType | Double = js.native
+  var ObjectType: MFBuiltInObjectType | Double
   
-  var Workflow: Double = js.native
+  var Workflow: Double
 }
 object IObjectClass {
   

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionOriginGroupFailoverCriteria extends StObject {
   
   /**
     * A list of HTTP status codes for the origin group
     */
-  var statusCodes: Input[js.Array[Input[Double]]] = js.native
+  var statusCodes: Input[js.Array[Input[Double]]]
 }
 object DistributionOriginGroupFailoverCriteria {
   

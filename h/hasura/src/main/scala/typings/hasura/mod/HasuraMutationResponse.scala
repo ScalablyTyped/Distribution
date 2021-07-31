@@ -3,26 +3,24 @@ package typings.hasura.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HasuraMutationResponse[T /* <: Record[String, _] */] extends StObject {
+trait HasuraMutationResponse[T /* <: Record[String, js.Any] */] extends StObject {
   
-  var affected_rows: js.UndefOr[Double] = js.native
+  var affected_rows: js.UndefOr[Double] = js.undefined
   
-  var returning: js.Array[HasuraDataItem[T]] = js.native
+  var returning: js.Array[HasuraDataItem[T]]
 }
 object HasuraMutationResponse {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](returning: js.Array[HasuraDataItem[T]]): HasuraMutationResponse[T] = {
+  def apply[T /* <: Record[String, js.Any] */](returning: js.Array[HasuraDataItem[T]]): HasuraMutationResponse[T] = {
     val __obj = js.Dynamic.literal(returning = returning.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasuraMutationResponse[T]]
   }
   
   @scala.inline
-  implicit class HasuraMutationResponseMutableBuilder[Self <: HasuraMutationResponse[_], T /* <: Record[String, _] */] (val x: Self with HasuraMutationResponse[T]) extends AnyVal {
+  implicit class HasuraMutationResponseMutableBuilder[Self <: HasuraMutationResponse[?], T /* <: Record[String, js.Any] */] (val x: Self & HasuraMutationResponse[T]) extends AnyVal {
     
     @scala.inline
     def setAffected_rows(value: Double): Self = StObject.set(x, "affected_rows", value.asInstanceOf[js.Any])

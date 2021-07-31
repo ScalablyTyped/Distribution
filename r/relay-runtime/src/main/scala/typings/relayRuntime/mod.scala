@@ -86,69 +86,67 @@ import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("relay-runtime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object ConnectionHandler {
     
-    @JSImport("relay-runtime", "ConnectionHandler.buildConnectionEdge")
+    @JSImport("relay-runtime", "ConnectionHandler")
     @js.native
-    def buildConnectionEdge(store: RecordSourceProxy, connection: RecordProxy[js.Object]): js.UndefOr[RecordProxy[js.Object] | Null] = js.native
-    @JSImport("relay-runtime", "ConnectionHandler.buildConnectionEdge")
-    @js.native
-    def buildConnectionEdge(store: RecordSourceProxy, connection: RecordProxy[js.Object], edge: RecordProxy[js.Object]): js.UndefOr[RecordProxy[js.Object] | Null] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("relay-runtime", "ConnectionHandler.createEdge")
-    @js.native
+    @scala.inline
+    def buildConnectionEdge(store: RecordSourceProxy, connection: RecordProxy[js.Object]): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConnectionEdge")(store.asInstanceOf[js.Any], connection.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    @scala.inline
+    def buildConnectionEdge(store: RecordSourceProxy, connection: RecordProxy[js.Object], edge: RecordProxy[js.Object]): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConnectionEdge")(store.asInstanceOf[js.Any], connection.asInstanceOf[js.Any], edge.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    
+    @scala.inline
     def createEdge(
       store: RecordSourceProxy,
       record: RecordProxy[js.Object],
       node: RecordProxy[js.Object],
       edgeType: String
-    ): RecordProxy[js.Object] = js.native
+    ): RecordProxy[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEdge")(store.asInstanceOf[js.Any], record.asInstanceOf[js.Any], node.asInstanceOf[js.Any], edgeType.asInstanceOf[js.Any])).asInstanceOf[RecordProxy[js.Object]]
     
-    @JSImport("relay-runtime", "ConnectionHandler.deleteNode")
-    @js.native
-    def deleteNode(record: RecordProxy[js.Object], nodeID: DataID): Unit = js.native
+    @scala.inline
+    def deleteNode(record: RecordProxy[js.Object], nodeID: DataID): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteNode")(record.asInstanceOf[js.Any], nodeID.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("relay-runtime", "ConnectionHandler.getConnection")
-    @js.native
-    def getConnection(record: ReadOnlyRecordProxy, key: String): js.UndefOr[RecordProxy[js.Object] | Null] = js.native
-    @JSImport("relay-runtime", "ConnectionHandler.getConnection")
-    @js.native
-    def getConnection(record: ReadOnlyRecordProxy, key: String, filters: Variables): js.UndefOr[RecordProxy[js.Object] | Null] = js.native
+    @scala.inline
+    def getConnection(record: ReadOnlyRecordProxy, key: String): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnection")(record.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    @scala.inline
+    def getConnection(record: ReadOnlyRecordProxy, key: String, filters: Variables): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnection")(record.asInstanceOf[js.Any], key.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
     
-    @JSImport("relay-runtime", "ConnectionHandler.insertEdgeAfter")
-    @js.native
-    def insertEdgeAfter(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object]): Unit = js.native
-    @JSImport("relay-runtime", "ConnectionHandler.insertEdgeAfter")
-    @js.native
-    def insertEdgeAfter(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object], cursor: String): Unit = js.native
+    @scala.inline
+    def insertEdgeAfter(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeAfter")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def insertEdgeAfter(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object], cursor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeAfter")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("relay-runtime", "ConnectionHandler.insertEdgeBefore")
-    @js.native
-    def insertEdgeBefore(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object]): Unit = js.native
-    @JSImport("relay-runtime", "ConnectionHandler.insertEdgeBefore")
-    @js.native
-    def insertEdgeBefore(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object], cursor: String): Unit = js.native
+    @scala.inline
+    def insertEdgeBefore(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeBefore")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def insertEdgeBefore(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object], cursor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeBefore")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("relay-runtime", "ConnectionHandler.update")
-    @js.native
-    def update(store: RecordSourceProxy, payload: HandleFieldPayload): Unit = js.native
+    @scala.inline
+    def update(store: RecordSourceProxy, payload: HandleFieldPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(store.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object ConnectionInterface {
     
-    @JSImport("relay-runtime", "ConnectionInterface.get")
+    @JSImport("relay-runtime", "ConnectionInterface")
     @js.native
-    def get(): CLIENTMUTATIONID = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def get(): CLIENTMUTATIONID = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[CLIENTMUTATIONID]
   }
   
-  @JSImport("relay-runtime", "DefaultHandlerProvider")
-  @js.native
-  def DefaultHandlerProvider(handle: String): Handler = js.native
+  @scala.inline
+  def DefaultHandlerProvider(handle: String): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultHandlerProvider")(handle.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   @JSImport("relay-runtime", "Environment")
   @js.native
@@ -170,12 +168,14 @@ object mod {
   
   object Network {
     
-    @JSImport("relay-runtime", "Network.create")
+    @JSImport("relay-runtime", "Network")
     @js.native
-    def create(fetchFn: FetchFunction): typings.relayRuntime.relayNetworkTypesMod.Network = js.native
-    @JSImport("relay-runtime", "Network.create")
-    @js.native
-    def create(fetchFn: FetchFunction, subscribeFn: SubscribeFunction): typings.relayRuntime.relayNetworkTypesMod.Network = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(fetchFn: FetchFunction): typings.relayRuntime.relayNetworkTypesMod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.Network]
+    @scala.inline
+    def create(fetchFn: FetchFunction, subscribeFn: SubscribeFunction): typings.relayRuntime.relayNetworkTypesMod.Network = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any], subscribeFn.asInstanceOf[js.Any])).asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.Network]
   }
   
   @JSImport("relay-runtime", "Observable")
@@ -187,17 +187,19 @@ object mod {
   /* static members */
   object Observable {
     
-    @JSImport("relay-runtime", "Observable.create")
+    @JSImport("relay-runtime", "Observable")
     @js.native
-    def create[V](source: Source[V]): RelayObservable[V] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create[V](source: Source[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
     
     /**
       * Accepts various kinds of data sources, and always returns a RelayObservable
       * useful for accepting the result of a user-provided FetchFunction.
       */
-    @JSImport("relay-runtime", "Observable.from")
-    @js.native
-    def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = js.native
+    @scala.inline
+    def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
     
     /**
       * When an emitted error event is not handled by an Observer, it is reported
@@ -224,9 +226,8 @@ object mod {
       *    application flow such as network failure, and may not have useful
       *    stack traces.
       */
-    @JSImport("relay-runtime", "Observable.onUnhandledError")
-    @js.native
-    def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("relay-runtime", "QueryResponseCache")
@@ -264,12 +265,14 @@ object mod {
   /* static members */
   object RecordSource {
     
-    @JSImport("relay-runtime", "RecordSource.create")
+    @JSImport("relay-runtime", "RecordSource")
     @js.native
-    def create(): MutableRecordSource = js.native
-    @JSImport("relay-runtime", "RecordSource.create")
-    @js.native
-    def create(records: RecordMap): MutableRecordSource = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): MutableRecordSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MutableRecordSource]
+    @scala.inline
+    def create(records: RecordMap): MutableRecordSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(records.asInstanceOf[js.Any]).asInstanceOf[MutableRecordSource]
   }
   
   object RelayConcreteNode {
@@ -435,6 +438,10 @@ object mod {
   
   object RelayProfiler {
     
+    @JSImport("relay-runtime", "RelayProfiler")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Attaches a handler to all methods instrumented with the supplied name.
       *
@@ -451,31 +458,27 @@ object mod {
       *   RelayProfiler.attachAggregateHandler('render', ...);
       *
       */
-    @JSImport("relay-runtime", "RelayProfiler.attachAggregateHandler")
-    @js.native
-    def attachAggregateHandler(name: String, handler: typings.relayRuntime.relayProfilerMod.Handler): Unit = js.native
+    @scala.inline
+    def attachAggregateHandler(name: String, handler: typings.relayRuntime.relayProfilerMod.Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Attaches a handler to profiles with the supplied name. You can also
       * attach to the special name '*' which is a catch all.
       */
-    @JSImport("relay-runtime", "RelayProfiler.attachProfileHandler")
-    @js.native
-    def attachProfileHandler(name: String, handler: ProfileHandler): Unit = js.native
+    @scala.inline
+    def attachProfileHandler(name: String, handler: ProfileHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachProfileHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detaches a handler attached via `attachAggregateHandler`.
       */
-    @JSImport("relay-runtime", "RelayProfiler.detachAggregateHandler")
-    @js.native
-    def detachAggregateHandler(name: String, handler: typings.relayRuntime.relayProfilerMod.Handler): Unit = js.native
+    @scala.inline
+    def detachAggregateHandler(name: String, handler: typings.relayRuntime.relayProfilerMod.Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detaches a handler attached via `attachProfileHandler`.
       */
-    @JSImport("relay-runtime", "RelayProfiler.detachProfileHandler")
-    @js.native
-    def detachProfileHandler(name: String, handler: ProfileHandler): Unit = js.native
+    @scala.inline
+    def detachProfileHandler(name: String, handler: ProfileHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachProfileHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wraps the supplied function with one that provides the `attachHandler` and
@@ -489,9 +492,8 @@ object mod {
       * NOTE: The instrumentation assumes that no handlers are attached or detached
       * in the course of executing another handler.
       */
-    @JSImport("relay-runtime", "RelayProfiler.instrument")
-    @js.native
-    def instrument[T /* <: js.Function0[Unit] */](name: String, originalFunction: T): T = js.native
+    @scala.inline
+    def instrument[T /* <: js.Function0[Unit] */](name: String, originalFunction: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("instrument")(name.asInstanceOf[js.Any], originalFunction.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Instruments methods on a class or object. This re-assigns the method in
@@ -508,9 +510,8 @@ object mod {
       * As a result, the methods will be replaced by wrappers that provide the
       * `attachHandler` and `detachHandler` methods.
       */
-    @JSImport("relay-runtime", "RelayProfiler.instrumentMethods")
-    @js.native
-    def instrumentMethods(`object`: js.Function0[Unit | js.Object], names: StringDictionary[String]): Unit = js.native
+    @scala.inline
+    def instrumentMethods(`object`: js.Function0[Unit | js.Object], names: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instrumentMethods")(`object`.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Instruments profiling for arbitrarily asynchronous code by a name.
@@ -525,12 +526,10 @@ object mod {
       * Arbitrary state can also be passed into `profile` as a second argument. The
       * attached profile handlers will receive this as the second argument.
       */
-    @JSImport("relay-runtime", "RelayProfiler.profile")
-    @js.native
-    def profile(name: String): Stop = js.native
-    @JSImport("relay-runtime", "RelayProfiler.profile")
-    @js.native
-    def profile(name: String, state: js.Any): Stop = js.native
+    @scala.inline
+    def profile(name: String): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any]).asInstanceOf[Stop]
+    @scala.inline
+    def profile(name: String, state: js.Any): Stop = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(name.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stop]
   }
   
   @JSImport("relay-runtime", "Store")
@@ -549,99 +548,77 @@ object mod {
   @js.native
   val _Internal: Internal = js.native
   
-  @JSImport("relay-runtime", "applyOptimisticMutation")
-  @js.native
-  def applyOptimisticMutation(environment: typings.relayRuntime.relayStoreTypesMod.Environment, config: OptimisticMutationConfig): Disposable = js.native
+  @scala.inline
+  def applyOptimisticMutation(environment: typings.relayRuntime.relayStoreTypesMod.Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("relay-runtime", "areEqualSelectors")
-  @js.native
-  def areEqualSelectors(thisSelector: SingularReaderSelector, thatSelector: SingularReaderSelector): Boolean = js.native
+  @scala.inline
+  def areEqualSelectors(thisSelector: SingularReaderSelector, thatSelector: SingularReaderSelector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEqualSelectors")(thisSelector.asInstanceOf[js.Any], thatSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("relay-runtime", "commitLocalUpdate")
-  @js.native
-  def commitLocalUpdate(environment: typings.relayRuntime.relayStoreTypesMod.Environment, updater: StoreUpdater): Unit = js.native
+  @scala.inline
+  def commitLocalUpdate(environment: typings.relayRuntime.relayStoreTypesMod.Environment, updater: StoreUpdater): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitLocalUpdate")(environment.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("relay-runtime", "commitMutation")
-  @js.native
+  @scala.inline
   def commitMutation[TOperation /* <: MutationParameters */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("relay-runtime", "createFragmentSpecResolver")
-  @js.native
-  def createFragmentSpecResolver(context: RelayContext, containerName: String, fragments: FragmentMap, props: Props): FragmentSpecResolver = js.native
-  @JSImport("relay-runtime", "createFragmentSpecResolver")
-  @js.native
+  @scala.inline
+  def createFragmentSpecResolver(context: RelayContext, containerName: String, fragments: FragmentMap, props: Props): FragmentSpecResolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentSpecResolver")(context.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any], fragments.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[FragmentSpecResolver]
+  @scala.inline
   def createFragmentSpecResolver(
     context: RelayContext,
     containerName: String,
     fragments: FragmentMap,
     props: Props,
     callback: js.Function0[Unit]
-  ): FragmentSpecResolver = js.native
+  ): FragmentSpecResolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentSpecResolver")(context.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any], fragments.asInstanceOf[js.Any], props.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[FragmentSpecResolver]
   
-  @JSImport("relay-runtime", "createNormalizationSelector")
-  @js.native
-  def createNormalizationSelector(node: NormalizationSelectableNode, dataID: DataID, variables: Variables): NormalizationSelector = js.native
+  @scala.inline
+  def createNormalizationSelector(node: NormalizationSelectableNode, dataID: DataID, variables: Variables): NormalizationSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createNormalizationSelector")(node.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[NormalizationSelector]
   
-  @JSImport("relay-runtime", "createOperationDescriptor")
-  @js.native
-  def createOperationDescriptor(request: ConcreteRequest, variables: Variables): OperationDescriptor = js.native
-  @JSImport("relay-runtime", "createOperationDescriptor")
-  @js.native
-  def createOperationDescriptor(
-    request: ConcreteRequest,
-    variables: Variables,
-    cacheConfig: js.UndefOr[scala.Nothing],
-    dataID: DataID
-  ): OperationDescriptor = js.native
-  @JSImport("relay-runtime", "createOperationDescriptor")
-  @js.native
-  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: Null, dataID: DataID): OperationDescriptor = js.native
-  @JSImport("relay-runtime", "createOperationDescriptor")
-  @js.native
-  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: CacheConfig): OperationDescriptor = js.native
-  @JSImport("relay-runtime", "createOperationDescriptor")
-  @js.native
-  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: CacheConfig, dataID: DataID): OperationDescriptor = js.native
+  @scala.inline
+  def createOperationDescriptor(request: ConcreteRequest, variables: Variables): OperationDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createOperationDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[OperationDescriptor]
+  @scala.inline
+  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: Null, dataID: DataID): OperationDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createOperationDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any])).asInstanceOf[OperationDescriptor]
+  @scala.inline
+  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: Unit, dataID: DataID): OperationDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createOperationDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any])).asInstanceOf[OperationDescriptor]
+  @scala.inline
+  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: CacheConfig): OperationDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createOperationDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[OperationDescriptor]
+  @scala.inline
+  def createOperationDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: CacheConfig, dataID: DataID): OperationDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createOperationDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any])).asInstanceOf[OperationDescriptor]
   
-  @JSImport("relay-runtime", "createReaderSelector")
-  @js.native
-  def createReaderSelector(fragment: ReaderFragment, dataID: DataID, variables: Variables, request: RequestDescriptor): SingularReaderSelector = js.native
-  @JSImport("relay-runtime", "createReaderSelector")
-  @js.native
+  @scala.inline
+  def createReaderSelector(fragment: ReaderFragment, dataID: DataID, variables: Variables, request: RequestDescriptor): SingularReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createReaderSelector")(fragment.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[SingularReaderSelector]
+  @scala.inline
   def createReaderSelector(
     fragment: ReaderFragment,
     dataID: DataID,
     variables: Variables,
     request: RequestDescriptor,
     isWithinUnmatchedTypeRefinement: Boolean
-  ): SingularReaderSelector = js.native
+  ): SingularReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createReaderSelector")(fragment.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], request.asInstanceOf[js.Any], isWithinUnmatchedTypeRefinement.asInstanceOf[js.Any])).asInstanceOf[SingularReaderSelector]
   
-  @JSImport("relay-runtime", "createRequestDescriptor")
-  @js.native
-  def createRequestDescriptor(request: ConcreteRequest, variables: Variables): RequestDescriptor = js.native
-  @JSImport("relay-runtime", "createRequestDescriptor")
-  @js.native
-  def createRequestDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: CacheConfig): RequestDescriptor = js.native
+  @scala.inline
+  def createRequestDescriptor(request: ConcreteRequest, variables: Variables): RequestDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createRequestDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[RequestDescriptor]
+  @scala.inline
+  def createRequestDescriptor(request: ConcreteRequest, variables: Variables, cacheConfig: CacheConfig): RequestDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("createRequestDescriptor")(request.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[RequestDescriptor]
   
-  @JSImport("relay-runtime", "deepFreeze")
-  @js.native
-  def deepFreeze[T /* <: js.Object */](value: T): T = js.native
+  @scala.inline
+  def deepFreeze[T /* <: js.Object */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepFreeze")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("relay-runtime", "fetchQuery")
-  @js.native
+  @scala.inline
   def fetchQuery_variables[T /* <: OperationType */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
-  ] = js.native
-  @JSImport("relay-runtime", "fetchQuery")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ]]
+  @scala.inline
   def fetchQuery_variables[T /* <: OperationType */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
@@ -649,221 +626,217 @@ object mod {
     cacheConfig: CacheConfig
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ]]
   
-  @JSImport("relay-runtime", "generateClientID")
-  @js.native
-  def generateClientID(id: DataID, storageKey: String): DataID = js.native
-  @JSImport("relay-runtime", "generateClientID")
-  @js.native
-  def generateClientID(id: DataID, storageKey: String, index: Double): DataID = js.native
+  @scala.inline
+  def generateClientID(id: DataID, storageKey: String): DataID = (^.asInstanceOf[js.Dynamic].applyDynamic("generateClientID")(id.asInstanceOf[js.Any], storageKey.asInstanceOf[js.Any])).asInstanceOf[DataID]
+  @scala.inline
+  def generateClientID(id: DataID, storageKey: String, index: Double): DataID = (^.asInstanceOf[js.Dynamic].applyDynamic("generateClientID")(id.asInstanceOf[js.Any], storageKey.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[DataID]
   
-  @JSImport("relay-runtime", "generateUniqueClientID")
-  @js.native
-  def generateUniqueClientID(): DataID = js.native
+  @scala.inline
+  def generateUniqueClientID(): DataID = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUniqueClientID")().asInstanceOf[DataID]
   
-  @JSImport("relay-runtime", "getDataIDsFromFragment")
-  @js.native
-  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Any): DataID | js.Array[DataID] = js.native
-  @JSImport("relay-runtime", "getDataIDsFromFragment")
-  @js.native
-  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Array[_]): DataID | js.Array[DataID] = js.native
+  @scala.inline
+  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Any): DataID | js.Array[DataID] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataIDsFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[DataID | js.Array[DataID]]
+  @scala.inline
+  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Array[js.Any]): DataID | js.Array[DataID] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataIDsFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[DataID | js.Array[DataID]]
   
-  @JSImport("relay-runtime", "getDataIDsFromObject")
-  @js.native
-  def getDataIDsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[DataID | js.Array[DataID]] = js.native
+  @scala.inline
+  def getDataIDsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[DataID | js.Array[DataID]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataIDsFromObject")(fragments.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[DataID | js.Array[DataID]]]
   
-  @JSImport("relay-runtime", "getDefaultMissingFieldHandlers")
-  @js.native
-  def getDefaultMissingFieldHandlers(): js.Array[MissingFieldHandler] = js.native
+  @scala.inline
+  def getDefaultMissingFieldHandlers(): js.Array[MissingFieldHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMissingFieldHandlers")().asInstanceOf[js.Array[MissingFieldHandler]]
   
-  @JSImport("relay-runtime", "getFragment")
-  @js.native
-  def getFragment(taggedNode: GraphQLTaggedNode): ReaderFragment = js.native
+  @scala.inline
+  def getFragment(taggedNode: GraphQLTaggedNode): ReaderFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("getFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderFragment]
   
-  @JSImport("relay-runtime", "getFragmentIdentifier")
-  @js.native
-  def getFragmentIdentifier(fragmentNode: ReaderFragment, fragmentRef: js.Any): String = js.native
+  @scala.inline
+  def getFragmentIdentifier(fragmentNode: ReaderFragment, fragmentRef: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFragmentIdentifier")(fragmentNode.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("relay-runtime", "getInlineDataFragment")
-  @js.native
-  def getInlineDataFragment(taggedNode: GraphQLTaggedNode): ReaderInlineDataFragment = js.native
+  @scala.inline
+  def getInlineDataFragment(taggedNode: GraphQLTaggedNode): ReaderInlineDataFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("getInlineDataFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderInlineDataFragment]
   
-  @JSImport("relay-runtime", "getModuleComponentKey")
-  @js.native
-  def getModuleComponentKey(documentName: String): String = js.native
+  @scala.inline
+  def getModuleComponentKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleComponentKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("relay-runtime", "getModuleOperationKey")
-  @js.native
-  def getModuleOperationKey(documentName: String): String = js.native
+  @scala.inline
+  def getModuleOperationKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleOperationKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("relay-runtime", "getPaginationFragment")
-  @js.native
-  def getPaginationFragment(taggedNode: GraphQLTaggedNode): ReaderPaginationFragment | Null = js.native
+  @scala.inline
+  def getPaginationFragment(taggedNode: GraphQLTaggedNode): ReaderPaginationFragment | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPaginationFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderPaginationFragment | Null]
   
-  @JSImport("relay-runtime", "getPluralSelector")
-  @js.native
-  def getPluralSelector(fragment: ReaderFragment, items: js.Array[_]): PluralReaderSelector = js.native
+  @scala.inline
+  def getPluralSelector(fragment: ReaderFragment, items: js.Array[js.Any]): PluralReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getPluralSelector")(fragment.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[PluralReaderSelector]
   
-  @JSImport("relay-runtime", "getRefetchableFragment")
-  @js.native
-  def getRefetchableFragment(taggedNode: GraphQLTaggedNode): ReaderRefetchableFragment | Null = js.native
+  @scala.inline
+  def getRefetchableFragment(taggedNode: GraphQLTaggedNode): ReaderRefetchableFragment | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefetchableFragment")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ReaderRefetchableFragment | Null]
   
-  @JSImport("relay-runtime", "getRelayHandleKey")
-  @js.native
-  def getRelayHandleKey(handleName: String): String = js.native
-  @JSImport("relay-runtime", "getRelayHandleKey")
-  @js.native
-  def getRelayHandleKey(handleName: String, key: js.UndefOr[scala.Nothing], fieldName: String): String = js.native
-  @JSImport("relay-runtime", "getRelayHandleKey")
-  @js.native
-  def getRelayHandleKey(handleName: String, key: String): String = js.native
-  @JSImport("relay-runtime", "getRelayHandleKey")
-  @js.native
-  def getRelayHandleKey(handleName: String, key: String, fieldName: String): String = js.native
-  @JSImport("relay-runtime", "getRelayHandleKey")
-  @js.native
-  def getRelayHandleKey(handleName: String, key: Null, fieldName: String): String = js.native
+  @scala.inline
+  def getRelayHandleKey(handleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelayHandleKey")(handleName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getRelayHandleKey(handleName: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelayHandleKey")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getRelayHandleKey(handleName: String, key: String, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelayHandleKey")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getRelayHandleKey(handleName: String, key: Null, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelayHandleKey")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getRelayHandleKey(handleName: String, key: Unit, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelayHandleKey")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("relay-runtime", "getRequest")
-  @js.native
-  def getRequest(taggedNode: GraphQLTaggedNode): ConcreteRequest = js.native
+  @scala.inline
+  def getRequest(taggedNode: GraphQLTaggedNode): ConcreteRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequest")(taggedNode.asInstanceOf[js.Any]).asInstanceOf[ConcreteRequest]
   
-  @JSImport("relay-runtime", "getRequestIdentifier")
-  @js.native
-  def getRequestIdentifier(parameters: RequestParameters, variables: Variables): RequestIdentifier = js.native
+  @scala.inline
+  def getRequestIdentifier(parameters: RequestParameters, variables: Variables): RequestIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestIdentifier")(parameters.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[RequestIdentifier]
   
-  @JSImport("relay-runtime", "getSelector")
-  @js.native
-  def getSelector(fragment: ReaderFragment, item: js.Any): ReaderSelector = js.native
-  @JSImport("relay-runtime", "getSelector")
-  @js.native
-  def getSelector(fragment: ReaderFragment, item: js.Array[_]): ReaderSelector = js.native
+  @scala.inline
+  def getSelector(fragment: ReaderFragment, item: js.Any): ReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[ReaderSelector]
+  @scala.inline
+  def getSelector(fragment: ReaderFragment, item: js.Array[js.Any]): ReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[ReaderSelector]
   
-  @JSImport("relay-runtime", "getSelectorsFromObject")
-  @js.native
-  def getSelectorsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[ReaderSelector] = js.native
+  @scala.inline
+  def getSelectorsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[ReaderSelector] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelectorsFromObject")(fragments.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[ReaderSelector]]
   
-  @JSImport("relay-runtime", "getSingularSelector")
-  @js.native
-  def getSingularSelector(fragment: ReaderFragment, item: js.Any): SingularReaderSelector = js.native
+  @scala.inline
+  def getSingularSelector(fragment: ReaderFragment, item: js.Any): SingularReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getSingularSelector")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[SingularReaderSelector]
   
-  @JSImport("relay-runtime", "getStorageKey")
-  @js.native
-  def getStorageKey(field: NormalizationField, variables: Variables): String = js.native
-  @JSImport("relay-runtime", "getStorageKey")
-  @js.native
-  def getStorageKey(field: NormalizationHandle, variables: Variables): String = js.native
-  @JSImport("relay-runtime", "getStorageKey")
-  @js.native
-  def getStorageKey(field: ReaderField, variables: Variables): String = js.native
+  @scala.inline
+  def getStorageKey(field: NormalizationField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getStorageKey(field: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getStorageKey(field: ReaderField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("relay-runtime", "getVariablesFromFragment")
-  @js.native
-  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Any): Variables = js.native
-  @JSImport("relay-runtime", "getVariablesFromFragment")
-  @js.native
-  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Array[_]): Variables = js.native
+  @scala.inline
+  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Any): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Variables]
+  @scala.inline
+  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Array[js.Any]): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime", "getVariablesFromObject")
-  @js.native
-  def getVariablesFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): Variables = js.native
+  @scala.inline
+  def getVariablesFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromObject")(fragments.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime", "getVariablesFromPluralFragment")
-  @js.native
-  def getVariablesFromPluralFragment(fragment: ReaderFragment, items: js.Array[_]): Variables = js.native
+  @scala.inline
+  def getVariablesFromPluralFragment(fragment: ReaderFragment, items: js.Array[js.Any]): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromPluralFragment")(fragment.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime", "getVariablesFromSingularFragment")
-  @js.native
-  def getVariablesFromSingularFragment(fragment: ReaderFragment, item: js.Any): Variables = js.native
+  @scala.inline
+  def getVariablesFromSingularFragment(fragment: ReaderFragment, item: js.Any): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromSingularFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime", "graphql")
-  @js.native
-  def graphql(strings: js.Any): GraphQLTaggedNode = js.native
+  @scala.inline
+  def graphql(strings: js.Any): GraphQLTaggedNode = ^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(strings.asInstanceOf[js.Any]).asInstanceOf[GraphQLTaggedNode]
   
-  @JSImport("relay-runtime", "isClientID")
-  @js.native
-  def isClientID(id: DataID): Boolean = js.native
+  @scala.inline
+  def isClientID(id: DataID): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClientID")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("relay-runtime", "isPromise")
-  @js.native
-  def isPromise(p: js.Any): /* is std.Promise<any> */ Boolean = js.native
+  @scala.inline
+  def isPromise(p: js.Any): /* is std.Promise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<any> */ Boolean]
   
-  @JSImport("relay-runtime", "isRelayModernEnvironment")
-  @js.native
-  def isRelayModernEnvironment(environment: js.Any): Boolean = js.native
+  @scala.inline
+  def isRelayModernEnvironment(environment: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelayModernEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("relay-runtime", "readInlineData")
-  @js.native
-  def readInlineData[T /* <: RefType[_] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = js.native
-  @JSImport("relay-runtime", "readInlineData")
-  @js.native
-  def readInlineData[T /* <: RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = js.native
-  @JSImport("relay-runtime", "readInlineData")
-  @js.native
-  def readInlineData_T_RefTypeWildcard_T[T /* <: RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = js.native
+  @scala.inline
+  def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
+  @scala.inline
+  def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T | Null]]
   
-  @JSImport("relay-runtime", "requestSubscription")
-  @js.native
+  @scala.inline
+  def readInlineData_T_RefTypeAny_T[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
   def requestSubscription[TSubscription /* <: OperationType */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   type FragmentRef[Fragment] = _FragmentRefs[js.Any]
   
   type FragmentRefs[Refs /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ ref in Refs ]: true}
-    */ typings.relayRuntime.relayRuntimeStrings.FragmentRefs with TopLevel[js.Any]
+    */ typings.relayRuntime.relayRuntimeStrings.FragmentRefs & TopLevel[js.Any]
   
-  @js.native
   trait Internal extends StObject {
     
-    def fetchQuery(environment: typings.relayRuntime.relayStoreTypesMod.Environment, operation: OperationDescriptor): RelayObservable[GraphQLResponse] = js.native
+    def fetchQuery(environment: typings.relayRuntime.relayStoreTypesMod.Environment, operation: OperationDescriptor): RelayObservable[GraphQLResponse]
     
     def fetchQueryDeduped(
       environment: typings.relayRuntime.relayStoreTypesMod.Environment,
       request: RequestDescriptor,
       fetchFn: js.Function0[RelayObservable[GraphQLResponse]]
-    ): RelayObservable[GraphQLResponse] = js.native
+    ): RelayObservable[GraphQLResponse]
     @JSName("fetchQueryDeduped")
     var fetchQueryDeduped_Original: js.Function3[
         /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
         /* request */ RequestDescriptor, 
         /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]], 
         RelayObservable[GraphQLResponse]
-      ] = js.native
+      ]
     
     @JSName("fetchQuery")
     var fetchQuery_Original: js.Function2[
         /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
         /* operation */ OperationDescriptor, 
         RelayObservable[GraphQLResponse]
-      ] = js.native
+      ]
     
-    def getObservableForActiveRequest(environment: typings.relayRuntime.relayStoreTypesMod.Environment, request: RequestDescriptor): RelayObservable[Unit] | Null = js.native
+    def getObservableForActiveRequest(environment: typings.relayRuntime.relayStoreTypesMod.Environment, request: RequestDescriptor): RelayObservable[Unit] | Null
     @JSName("getObservableForActiveRequest")
     var getObservableForActiveRequest_Original: js.Function2[
         /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
         /* request */ RequestDescriptor, 
         RelayObservable[Unit] | Null
-      ] = js.native
+      ]
     
-    def getPromiseForActiveRequest(environment: typings.relayRuntime.relayStoreTypesMod.Environment, request: RequestDescriptor): js.Promise[Unit] | Null = js.native
+    def getPromiseForActiveRequest(environment: typings.relayRuntime.relayStoreTypesMod.Environment, request: RequestDescriptor): js.Promise[Unit] | Null
     @JSName("getPromiseForActiveRequest")
     var getPromiseForActiveRequest_Original: js.Function2[
         /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
         /* request */ RequestDescriptor, 
         js.Promise[Unit] | Null
-      ] = js.native
+      ]
+  }
+  object Internal {
+    
+    @scala.inline
+    def apply(
+      fetchQuery: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse],
+      fetchQueryDeduped: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor, /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]]) => RelayObservable[GraphQLResponse],
+      getObservableForActiveRequest: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => RelayObservable[Unit] | Null,
+      getPromiseForActiveRequest: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => js.Promise[Unit] | Null
+    ): Internal = {
+      val __obj = js.Dynamic.literal(fetchQuery = js.Any.fromFunction2(fetchQuery), fetchQueryDeduped = js.Any.fromFunction3(fetchQueryDeduped), getObservableForActiveRequest = js.Any.fromFunction2(getObservableForActiveRequest), getPromiseForActiveRequest = js.Any.fromFunction2(getPromiseForActiveRequest))
+      __obj.asInstanceOf[Internal]
+    }
+    
+    @scala.inline
+    implicit class InternalMutableBuilder[Self <: Internal] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFetchQuery(
+        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse]
+      ): Self = StObject.set(x, "fetchQuery", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFetchQueryDeduped(
+        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor, /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]]) => RelayObservable[GraphQLResponse]
+      ): Self = StObject.set(x, "fetchQueryDeduped", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setGetObservableForActiveRequest(
+        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => RelayObservable[Unit] | Null
+      ): Self = StObject.set(x, "getObservableForActiveRequest", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setGetPromiseForActiveRequest(
+        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => js.Promise[Unit] | Null
+      ): Self = StObject.set(x, "getPromiseForActiveRequest", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait RefType[Ref /* <: String */] extends StObject {
     
     @JSName(" $refType")
-    var Space$refType: Ref = js.native
+    var Space$refType: Ref
   }
   object RefType {
     
@@ -875,18 +848,17 @@ object mod {
     }
     
     @scala.inline
-    implicit class RefTypeMutableBuilder[Self <: RefType[_], Ref /* <: String */] (val x: Self with RefType[Ref]) extends AnyVal {
+    implicit class RefTypeMutableBuilder[Self <: RefType[?], Ref /* <: String */] (val x: Self & RefType[Ref]) extends AnyVal {
       
       @scala.inline
       def setSpace$refType(value: Ref): Self = StObject.set(x, " $refType", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait _FragmentRefs[Refs /* <: String */] extends StObject {
     
     @JSName(" $fragmentRefs")
-    var Space$fragmentRefs: FragmentRefs[Refs] = js.native
+    var Space$fragmentRefs: FragmentRefs[Refs]
   }
   object _FragmentRefs {
     
@@ -898,7 +870,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class _FragmentRefsMutableBuilder[Self <: _FragmentRefs[_], Refs /* <: String */] (val x: Self with _FragmentRefs[Refs]) extends AnyVal {
+    implicit class _FragmentRefsMutableBuilder[Self <: _FragmentRefs[?], Refs /* <: String */] (val x: Self & _FragmentRefs[Refs]) extends AnyVal {
       
       @scala.inline
       def setSpace$fragmentRefs(value: FragmentRefs[Refs]): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])

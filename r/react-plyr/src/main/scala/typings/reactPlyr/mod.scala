@@ -16,7 +16,6 @@ import typings.reactPlyr.reactPlyrStrings.vimeo
 import typings.reactPlyr.reactPlyrStrings.youtube
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,12 +24,11 @@ object mod {
   @js.native
   class default () extends Plyr
   
-  @js.native
   trait OnVolumeChangeParam extends StObject {
     
-    var muted: Boolean = js.native
+    var muted: Boolean
     
-    var volume: Double = js.native
+    var volume: Double
   }
   object OnVolumeChangeParam {
     
@@ -101,106 +99,105 @@ object mod {
     def togglePlay(): Unit = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var autopause: js.UndefOr[Boolean] = js.native
+    var autopause: js.UndefOr[Boolean] = js.undefined
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var blankVideo: js.UndefOr[String] = js.native
+    var blankVideo: js.UndefOr[String] = js.undefined
     
-    var captions: js.UndefOr[js.Array[Kind]] = js.native
+    var captions: js.UndefOr[js.Array[Kind]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clickToPlay: js.UndefOr[Boolean] = js.native
+    var clickToPlay: js.UndefOr[Boolean] = js.undefined
     
-    var controls: js.UndefOr[js.Array[String]] = js.native
+    var controls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var disableContextMenu: js.UndefOr[Boolean] = js.native
+    var disableContextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var displayDuration: js.UndefOr[Boolean] = js.native
+    var displayDuration: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var fullscreen: js.UndefOr[Enabled] = js.native
+    var fullscreen: js.UndefOr[Enabled] = js.undefined
     
-    var hideControls: js.UndefOr[Boolean] = js.native
+    var hideControls: js.UndefOr[Boolean] = js.undefined
     
-    var iconPrefix: js.UndefOr[String] = js.native
+    var iconPrefix: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var invertTime: js.UndefOr[Boolean] = js.native
+    var invertTime: js.UndefOr[Boolean] = js.undefined
     
-    var keyboard: js.UndefOr[Focused] = js.native
+    var keyboard: js.UndefOr[Focused] = js.undefined
     
-    var loadSprite: js.UndefOr[Boolean] = js.native
+    var loadSprite: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Active] = js.native
+    var loop: js.UndefOr[Active] = js.undefined
     
-    var muted: js.UndefOr[Boolean] = js.native
+    var muted: js.UndefOr[Boolean] = js.undefined
     
-    var onCaptionsDisabled: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCaptionsDisabled: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onCaptionsEnabled: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCaptionsEnabled: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEnterFullscreen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnterFullscreen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExitFullscreen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExitFullscreen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoadedData: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoadedData: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.Function1[/* player */ js.UndefOr[js.Any], Unit]] = js.native
+    var onReady: js.UndefOr[js.Function1[/* player */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onSeeked: js.UndefOr[js.Function1[/* time */ js.UndefOr[Double], Unit]] = js.native
+    var onSeeked: js.UndefOr[js.Function1[/* time */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[js.Function1[/* time */ js.UndefOr[Double], Unit]] = js.native
+    var onTimeUpdate: js.UndefOr[js.Function1[/* time */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[js.Function1[/* params */ OnVolumeChangeParam, Unit]] = js.native
+    var onVolumeChange: js.UndefOr[js.Function1[/* params */ OnVolumeChangeParam, Unit]] = js.undefined
     
-    var poster: js.UndefOr[String] = js.native
+    var poster: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[Default] = js.native
+    var quality: js.UndefOr[Default] = js.undefined
     
-    var ratio: js.UndefOr[String] = js.native
+    var ratio: js.UndefOr[String] = js.undefined
     
-    var resetOnEnd: js.UndefOr[Boolean] = js.native
+    var resetOnEnd: js.UndefOr[Boolean] = js.undefined
     
-    var seekTime: js.UndefOr[Double] = js.native
+    var seekTime: js.UndefOr[Double] = js.undefined
     
-    var settings: js.UndefOr[js.Array[String]] = js.native
+    var settings: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sources: js.UndefOr[js.Array[Size]] = js.native
+    var sources: js.UndefOr[js.Array[Size]] = js.undefined
     
-    var speed: js.UndefOr[Options] = js.native
+    var speed: js.UndefOr[Options] = js.undefined
     
-    var storage: js.UndefOr[Key] = js.native
+    var storage: js.UndefOr[Key] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var toggleInvert: js.UndefOr[Boolean] = js.native
+    var toggleInvert: js.UndefOr[Boolean] = js.undefined
     
-    var tooltips: js.UndefOr[Controls] = js.native
+    var tooltips: js.UndefOr[Controls] = js.undefined
     
-    var `type`: js.UndefOr[youtube | vimeo | video | audio] = js.native
+    var `type`: js.UndefOr[youtube | vimeo | video | audio] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var videoId: js.UndefOr[String] = js.native
+    var videoId: js.UndefOr[String] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object Props {
     

@@ -2,13 +2,11 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a location entry.
   */
-@js.native
 trait SchemaUserLocation extends StObject {
   
   /**
@@ -16,34 +14,34 @@ trait SchemaUserLocation extends StObject {
     * describe the location. For example, &quot;Mountain View, CA&quot;,
     * &quot;Near Seattle&quot;, &quot;US-NYC-9TH 9A209A&quot;.
     */
-  var area: js.UndefOr[String] = js.native
+  var area: js.UndefOr[String] = js.undefined
   
   /**
     * Building Identifier.
     */
-  var buildingId: js.UndefOr[String] = js.native
+  var buildingId: js.UndefOr[String] = js.undefined
   
   /**
     * Custom Type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * Most specific textual code of individual desk location.
     */
-  var deskCode: js.UndefOr[String] = js.native
+  var deskCode: js.UndefOr[String] = js.undefined
   
   /**
     * Floor name/number.
     */
-  var floorName: js.UndefOr[String] = js.native
+  var floorName: js.UndefOr[String] = js.undefined
   
   /**
     * Floor section. More specific location within the floor. For example, if a
     * floor is divided into sections &quot;A&quot;, &quot;B&quot;, and
     * &quot;C&quot;, this field would identify one of those values.
     */
-  var floorSection: js.UndefOr[String] = js.native
+  var floorSection: js.UndefOr[String] = js.undefined
   
   /**
     * Each entry can have a type which indicates standard types of that entry.
@@ -52,7 +50,7 @@ trait SchemaUserLocation extends StObject {
     * Such types should have &quot;custom&quot; as type and also have a
     * customType value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserLocation {
   

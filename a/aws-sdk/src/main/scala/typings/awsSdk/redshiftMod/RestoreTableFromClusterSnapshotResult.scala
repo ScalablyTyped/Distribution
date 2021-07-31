@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreTableFromClusterSnapshotResult extends StObject {
   
-  var TableRestoreStatus: js.UndefOr[typings.awsSdk.redshiftMod.TableRestoreStatus] = js.native
+  var TableRestoreStatus: js.UndefOr[typings.awsSdk.redshiftMod.TableRestoreStatus] = js.undefined
 }
 object RestoreTableFromClusterSnapshotResult {
   

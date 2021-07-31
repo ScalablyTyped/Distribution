@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.BusyIndicator")
 @js.native
 class BusyIndicator protected ()
-  extends typings.openui5.sap.m.BusyIndicator {
+  extends StObject
+     with typings.openui5.sap.m.BusyIndicator {
   /**
     * Constructor for a new BusyIndicator.Accepts an object literal <code>mSettings</code> that defines
     * initialproperty values, aggregated and associated objects as well as event handlers.See {@link

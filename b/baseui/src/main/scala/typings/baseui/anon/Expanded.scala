@@ -2,13 +2,11 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expanded extends StObject {
   
-  var expanded: js.Array[typings.react.mod.Key] = js.native
+  var expanded: js.Array[typings.react.mod.Key]
 }
 object Expanded {
   

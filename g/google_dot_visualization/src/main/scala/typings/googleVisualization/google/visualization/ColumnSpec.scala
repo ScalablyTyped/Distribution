@@ -2,25 +2,23 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnSpec extends StObject {
   
-  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, _]] = js.native
+  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, js.Any]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var properties: js.UndefOr[Properties] = js.native
+  var properties: js.UndefOr[Properties] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var sourceColumn: js.UndefOr[Double] = js.native
+  var sourceColumn: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ColumnSpec {
   
@@ -34,7 +32,7 @@ object ColumnSpec {
   implicit class ColumnSpecMutableBuilder[Self <: ColumnSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCalc(value: (/* data */ DataTable, /* row */ Double) => _): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
+    def setCalc(value: (/* data */ DataTable, /* row */ Double) => js.Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
     
     @scala.inline
     def setCalcUndefined: Self = StObject.set(x, "calc", js.undefined)

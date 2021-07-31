@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Lineitems")
@@ -31,7 +30,7 @@ class ResourceLineitems protected () extends StObject {
     */
   def downloadlineitems(): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
   def downloadlineitems(callback: BodyResponseCallback[SchemaDownloadLineItemsResponse]): Unit = js.native
-  def downloadlineitems(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
+  def downloadlineitems(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
   def downloadlineitems(params: ParamsResourceLineitemsDownloadlineitems): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
   def downloadlineitems(
     params: ParamsResourceLineitemsDownloadlineitems,
@@ -64,7 +63,7 @@ class ResourceLineitems protected () extends StObject {
     */
   def uploadlineitems(): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
   def uploadlineitems(callback: BodyResponseCallback[SchemaUploadLineItemsResponse]): Unit = js.native
-  def uploadlineitems(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
+  def uploadlineitems(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
   def uploadlineitems(params: ParamsResourceLineitemsUploadlineitems): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
   def uploadlineitems(
     params: ParamsResourceLineitemsUploadlineitems,

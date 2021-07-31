@@ -2,10 +2,13 @@ package typings.rcEasyui.mod.DateTimeSpinner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultProps {
+  
+  @JSImport("rc-easyui", "DateTimeSpinner.defaultProps")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.ampm")
   @js.native
@@ -43,17 +46,14 @@ object defaultProps {
   @js.native
   val multiline: Boolean = js.native
   
-  @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.onBlur")
-  @js.native
-  def onBlur(): Unit = js.native
+  @scala.inline
+  def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.onChange")
-  @js.native
-  def onChange(e: js.Any): Unit = js.native
+  @scala.inline
+  def onChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.onFocus")
-  @js.native
-  def onFocus(): Unit = js.native
+  @scala.inline
+  def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.readOnly")
   @js.native
@@ -75,9 +75,8 @@ object defaultProps {
   @js.native
   val spinners: Boolean = js.native
   
-  @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.textFormatter")
-  @js.native
-  def textFormatter(e: js.Any): js.Any = js.native
+  @scala.inline
+  def textFormatter(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textFormatter")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.validateOnBlur")
   @js.native

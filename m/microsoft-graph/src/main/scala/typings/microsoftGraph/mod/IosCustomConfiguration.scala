@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosCustomConfiguration extends DeviceConfiguration {
+trait IosCustomConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Payload. (UTF8 encoded byte array)
-  var payload: js.UndefOr[Double] = js.native
+  var payload: js.UndefOr[Double] = js.undefined
   
   // Payload file name (.mobileconfig
-  var payloadFileName: js.UndefOr[NullableOption[String]] = js.native
+  var payloadFileName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name that is displayed to the user.
-  var payloadName: js.UndefOr[String] = js.native
+  var payloadName: js.UndefOr[String] = js.undefined
 }
 object IosCustomConfiguration {
   

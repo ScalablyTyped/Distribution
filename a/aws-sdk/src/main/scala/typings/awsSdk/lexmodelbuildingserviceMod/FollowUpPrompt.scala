@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FollowUpPrompt extends StObject {
   
   /**
     * Prompts for information from the user. 
     */
-  var prompt: Prompt = js.native
+  var prompt: Prompt
   
   /**
     * If the user answers "no" to the question defined in the prompt field, Amazon Lex responds with this statement to acknowledge that the intent was canceled. 
     */
-  var rejectionStatement: Statement = js.native
+  var rejectionStatement: Statement
 }
 object FollowUpPrompt {
   

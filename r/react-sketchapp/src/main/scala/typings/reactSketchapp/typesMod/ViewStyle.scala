@@ -20,153 +20,151 @@ import typings.reactSketchapp.reactSketchappStrings.visible
 import typings.reactSketchapp.reactSketchappStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewStyle extends StObject {
   
-  var alignItems: js.UndefOr[`flex-start` | `flex-end` | center | stretch] = js.native
+  var alignItems: js.UndefOr[`flex-start` | `flex-end` | center | stretch] = js.undefined
   
-  var alignSelf: js.UndefOr[auto | `flex-start` | `flex-end` | center | stretch] = js.native
+  var alignSelf: js.UndefOr[auto | `flex-start` | `flex-end` | center | stretch] = js.undefined
   
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
-  var backfaceVisibility: js.UndefOr[visible | hidden] = js.native
+  var backfaceVisibility: js.UndefOr[visible | hidden] = js.undefined
   
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
-  var borderBottomColor: js.UndefOr[Color] = js.native
+  var borderBottomColor: js.UndefOr[Color] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[Double] = js.native
+  var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[Double] = js.native
+  var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomStyle: js.UndefOr[BorderStyle] = js.native
+  var borderBottomStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var borderBottomWidth: js.UndefOr[Double] = js.native
+  var borderBottomWidth: js.UndefOr[Double] = js.undefined
   
-  var borderColor: js.UndefOr[Color] = js.native
+  var borderColor: js.UndefOr[Color] = js.undefined
   
-  var borderLeftColor: js.UndefOr[Color] = js.native
+  var borderLeftColor: js.UndefOr[Color] = js.undefined
   
-  var borderLeftStyle: js.UndefOr[BorderStyle] = js.native
+  var borderLeftStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var borderLeftWidth: js.UndefOr[Double] = js.native
+  var borderLeftWidth: js.UndefOr[Double] = js.undefined
   
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
-  var borderRightColor: js.UndefOr[Color] = js.native
+  var borderRightColor: js.UndefOr[Color] = js.undefined
   
-  var borderRightStyle: js.UndefOr[BorderStyle] = js.native
+  var borderRightStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var borderRightWidth: js.UndefOr[Double] = js.native
+  var borderRightWidth: js.UndefOr[Double] = js.undefined
   
-  var borderStyle: js.UndefOr[BorderStyle] = js.native
+  var borderStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var borderTopColor: js.UndefOr[Color] = js.native
+  var borderTopColor: js.UndefOr[Color] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[Double] = js.native
+  var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[Double] = js.native
+  var borderTopRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopStyle: js.UndefOr[BorderStyle] = js.native
+  var borderTopStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var borderTopWidth: js.UndefOr[Double] = js.native
+  var borderTopWidth: js.UndefOr[Double] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var flex: js.UndefOr[Double] = js.native
+  var flex: js.UndefOr[Double] = js.undefined
   
-  var flexBasis: js.UndefOr[Double] = js.native
+  var flexBasis: js.UndefOr[Double] = js.undefined
   
-  var flexDirection: js.UndefOr[row | `row-reverse` | column | `column-reverse`] = js.native
+  var flexDirection: js.UndefOr[row | `row-reverse` | column | `column-reverse`] = js.undefined
   
-  var flexGrow: js.UndefOr[Double] = js.native
+  var flexGrow: js.UndefOr[Double] = js.undefined
   
-  var flexShrink: js.UndefOr[Double] = js.native
+  var flexShrink: js.UndefOr[Double] = js.undefined
   
-  var flexWrap: js.UndefOr[wrap | nowrap] = js.native
+  var flexWrap: js.UndefOr[wrap | nowrap] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var justifyContent: js.UndefOr[`flex-start` | `flex-end` | center | `space-between` | `space-around`] = js.native
+  var justifyContent: js.UndefOr[`flex-start` | `flex-end` | center | `space-between` | `space-around`] = js.undefined
   
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
-  var marginHorizontal: js.UndefOr[Double] = js.native
+  var marginHorizontal: js.UndefOr[Double] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var marginVertical: js.UndefOr[Double] = js.native
+  var marginVertical: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var overflow: js.UndefOr[Overflow] = js.native
+  var overflow: js.UndefOr[Overflow] = js.undefined
   
-  var overflowX: js.UndefOr[Overflow] = js.native
+  var overflowX: js.UndefOr[Overflow] = js.undefined
   
-  var overflowY: js.UndefOr[Overflow] = js.native
+  var overflowY: js.UndefOr[Overflow] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var paddingBottom: js.UndefOr[Double] = js.native
+  var paddingBottom: js.UndefOr[Double] = js.undefined
   
-  var paddingHorizontal: js.UndefOr[Double] = js.native
+  var paddingHorizontal: js.UndefOr[Double] = js.undefined
   
-  var paddingLeft: js.UndefOr[Double] = js.native
+  var paddingLeft: js.UndefOr[Double] = js.undefined
   
-  var paddingRight: js.UndefOr[Double] = js.native
+  var paddingRight: js.UndefOr[Double] = js.undefined
   
-  var paddingTop: js.UndefOr[Double] = js.native
+  var paddingTop: js.UndefOr[Double] = js.undefined
   
-  var paddingVertical: js.UndefOr[Double] = js.native
+  var paddingVertical: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[absolute | relative] = js.native
+  var position: js.UndefOr[absolute | relative] = js.undefined
   
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
-  var shadowColor: js.UndefOr[Color] = js.native
+  var shadowColor: js.UndefOr[Color] = js.undefined
   
-  var shadowInner: js.UndefOr[Boolean] = js.native
+  var shadowInner: js.UndefOr[Boolean] = js.undefined
   
-  var shadowOffset: js.UndefOr[Width] = js.native
+  var shadowOffset: js.UndefOr[Width] = js.undefined
   
-  var shadowOpacity: js.UndefOr[Double] = js.native
+  var shadowOpacity: js.UndefOr[Double] = js.undefined
   
-  var shadowRadius: js.UndefOr[Double] = js.native
+  var shadowRadius: js.UndefOr[Double] = js.undefined
   
-  var shadowSpread: js.UndefOr[Double] = js.native
+  var shadowSpread: js.UndefOr[Double] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object ViewStyle {
   

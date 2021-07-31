@@ -2,25 +2,23 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlternateDataFields extends StObject {
   
-  var alternateDataFields: js.UndefOr[Boolean] = js.native
+  var alternateDataFields: js.UndefOr[Boolean] = js.undefined
   
-  var customizeChart: js.UndefOr[js.Function] = js.native
+  var customizeChart: js.UndefOr[js.Function] = js.undefined
   
-  var customizeSeries: js.UndefOr[js.Function] = js.native
+  var customizeSeries: js.UndefOr[js.Function] = js.undefined
   
-  var dataFieldsDisplayMode: js.UndefOr[String] = js.native
+  var dataFieldsDisplayMode: js.UndefOr[String] = js.undefined
   
-  var inverted: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.undefined
   
-  var processCell: js.UndefOr[js.Function] = js.native
+  var processCell: js.UndefOr[js.Function] = js.undefined
   
-  var putDataFieldsInto: js.UndefOr[String] = js.native
+  var putDataFieldsInto: js.UndefOr[String] = js.undefined
 }
 object AlternateDataFields {
   

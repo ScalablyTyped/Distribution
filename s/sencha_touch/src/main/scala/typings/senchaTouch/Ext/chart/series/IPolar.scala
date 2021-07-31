@@ -3,122 +3,122 @@ package typings.senchaTouch.Ext.chart.series
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPolar extends ISeries {
+trait IPolar
+  extends StObject
+     with ISeries {
   
   /** [Config Option] (Array) */
-  var center: js.UndefOr[Array] = js.native
+  var center: js.UndefOr[Array] = js.undefined
   
   /** [Method] Returns the value of center
     * @returns Array
     */
-  var getCenter: js.UndefOr[js.Function0[Array]] = js.native
+  var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of offsetX
     * @returns Number
     */
-  var getOffsetX: js.UndefOr[js.Function0[Double]] = js.native
+  var getOffsetX: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of offsetY
     * @returns Number
     */
-  var getOffsetY: js.UndefOr[js.Function0[Double]] = js.native
+  var getOffsetY: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of radius
     * @returns Number
     */
-  var getRadius: js.UndefOr[js.Function0[Double]] = js.native
+  var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of rotation
     * @returns Number
     */
-  var getRotation: js.UndefOr[js.Function0[Double]] = js.native
+  var getRotation: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of xAxis
     * @returns Object
     */
-  var getXAxis: js.UndefOr[js.Function0[_]] = js.native
+  var getXAxis: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of xField
     * @returns String
     */
-  var getXField: js.UndefOr[js.Function0[String]] = js.native
+  var getXField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of yAxis
     * @returns Object
     */
-  var getYAxis: js.UndefOr[js.Function0[_]] = js.native
+  var getYAxis: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of yField
     * @returns String
     */
-  var getYField: js.UndefOr[js.Function0[String]] = js.native
+  var getYField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Number) */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /** [Method] Sets the value of center
     * @param center Array The new value.
     */
-  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.native
+  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of offsetX
     * @param offsetX Number The new value.
     */
-  var setOffsetX: js.UndefOr[js.Function1[/* offsetX */ js.UndefOr[Double], Unit]] = js.native
+  var setOffsetX: js.UndefOr[js.Function1[/* offsetX */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of offsetY
     * @param offsetY Number The new value.
     */
-  var setOffsetY: js.UndefOr[js.Function1[/* offsetY */ js.UndefOr[Double], Unit]] = js.native
+  var setOffsetY: js.UndefOr[js.Function1[/* offsetY */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of radius
     * @param radius Number The new value.
     */
-  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.native
+  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of rotation
     * @param rotation Number The new value.
     */
-  var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.native
+  var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of xAxis
     * @param xAxis Object The new value.
     */
-  var setXAxis: js.UndefOr[js.Function1[/* xAxis */ js.UndefOr[js.Any], Unit]] = js.native
+  var setXAxis: js.UndefOr[js.Function1[/* xAxis */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of xField
     * @param xField String The new value.
     */
-  var setXField: js.UndefOr[js.Function1[/* xField */ js.UndefOr[String], Unit]] = js.native
+  var setXField: js.UndefOr[js.Function1[/* xField */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of yAxis
     * @param yAxis Object The new value.
     */
-  var setYAxis: js.UndefOr[js.Function1[/* yAxis */ js.UndefOr[js.Any], Unit]] = js.native
+  var setYAxis: js.UndefOr[js.Function1[/* yAxis */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of yField
     * @param yField String The new value.
     */
-  var setYField: js.UndefOr[js.Function1[/* yField */ js.UndefOr[String], Unit]] = js.native
+  var setYField: js.UndefOr[js.Function1[/* yField */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var xField: js.UndefOr[String] = js.native
+  var xField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var yField: js.UndefOr[String] = js.native
+  var yField: js.UndefOr[String] = js.undefined
 }
 object IPolar {
   
@@ -168,7 +168,7 @@ object IPolar {
     def setGetRotationUndefined: Self = StObject.set(x, "getRotation", js.undefined)
     
     @scala.inline
-    def setGetXAxis(value: () => _): Self = StObject.set(x, "getXAxis", js.Any.fromFunction0(value))
+    def setGetXAxis(value: () => js.Any): Self = StObject.set(x, "getXAxis", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetXAxisUndefined: Self = StObject.set(x, "getXAxis", js.undefined)
@@ -180,7 +180,7 @@ object IPolar {
     def setGetXFieldUndefined: Self = StObject.set(x, "getXField", js.undefined)
     
     @scala.inline
-    def setGetYAxis(value: () => _): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
+    def setGetYAxis(value: () => js.Any): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetYAxisUndefined: Self = StObject.set(x, "getYAxis", js.undefined)

@@ -2,24 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexExpression
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.IndexExpression] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.IndexExpression]
+     with Expression {
   
-  var base: Expression = js.native
+  var base: Expression
   
-  var index: Expression = js.native
+  var index: Expression
 }
 object IndexExpression {
   
   @scala.inline
-  def apply(base: Expression, index: Expression, `type`: typings.luaparse.luaparseStrings.IndexExpression): IndexExpression = {
+  def apply(base: Expression, index: Expression): IndexExpression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IndexExpression")
     __obj.asInstanceOf[IndexExpression]
   }
   

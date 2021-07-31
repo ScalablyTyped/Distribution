@@ -5,36 +5,36 @@ import typings.jweixin.jweixinStrings.music
 import typings.jweixin.jweixinStrings.video或link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IonMenuShareAppMessage extends BaseParams {
+trait IonMenuShareAppMessage
+  extends StObject
+     with BaseParams {
   
   // 用户取消分享后执行的回调函数
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   // 分享类型,music、video或link，不填默认为link
-  var dataUrl: js.UndefOr[String] = js.native
+  var dataUrl: js.UndefOr[String] = js.undefined
   
   // 分享标题
-  var desc: String = js.native
+  var desc: String
   
   // 分享链接
-  var imgUrl: String = js.native
+  var imgUrl: String
   
   // 分享描述
-  var link: String = js.native
+  var link: String
   
   // 如果type是music或video，则要提供数据链接，默认为空
   // 用户确认分享后执行的回调函数
   @JSName("success")
-  def success_MIonMenuShareAppMessage(): Unit = js.native
+  def success_MIonMenuShareAppMessage(): Unit
   
-  var title: String = js.native
+  var title: String
   
   // 分享图标
-  var `type`: js.UndefOr[music | video或link | link] = js.native
+  var `type`: js.UndefOr[music | video或link | link] = js.undefined
 }
 object IonMenuShareAppMessage {
   

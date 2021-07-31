@@ -2,76 +2,74 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobTemplate extends StObject {
   
   /**
     * Accelerated transcoding can significantly speed up jobs with long, visually complex content.
     */
-  var AccelerationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AccelerationSettings] = js.native
+  var AccelerationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AccelerationSettings] = js.undefined
   
   /**
     * An identifier for this resource that is unique within all of AWS.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * An optional category you create to organize your job templates.
     */
-  var Category: js.UndefOr[string] = js.native
+  var Category: js.UndefOr[string] = js.undefined
   
   /**
     * The timestamp in epoch seconds for Job template creation.
     */
-  var CreatedAt: js.UndefOr[timestampUnix] = js.native
+  var CreatedAt: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * An optional description you create for each job template.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * Optional list of hop destinations.
     */
-  var HopDestinations: js.UndefOr[listOfHopDestination] = js.native
+  var HopDestinations: js.UndefOr[listOfHopDestination] = js.undefined
   
   /**
     * The timestamp in epoch seconds when the Job template was last updated.
     */
-  var LastUpdated: js.UndefOr[timestampUnix] = js.native
+  var LastUpdated: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * A name you create for each job template. Each name must be unique within your account.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Relative priority on the job.
     */
-  var Priority: js.UndefOr[integerMinNegative50Max50] = js.native
+  var Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined
   
   /**
     * Optional. The queue that jobs created from this template are assigned to. If you don't specify this, jobs will go to the default queue.
     */
-  var Queue: js.UndefOr[string] = js.native
+  var Queue: js.UndefOr[string] = js.undefined
   
   /**
     * JobTemplateSettings contains all the transcode settings saved in the template that will be applied to jobs created from it.
     */
-  var Settings: JobTemplateSettings = js.native
+  var Settings: JobTemplateSettings
   
   /**
     * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
     */
-  var StatusUpdateInterval: js.UndefOr[typings.awsSdk.mediaconvertMod.StatusUpdateInterval] = js.native
+  var StatusUpdateInterval: js.UndefOr[typings.awsSdk.mediaconvertMod.StatusUpdateInterval] = js.undefined
   
   /**
     * A job template can be of two types: system or custom. System or built-in job templates can't be modified or deleted by the user.
     */
-  var Type: js.UndefOr[typings.awsSdk.mediaconvertMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.mediaconvertMod.Type] = js.undefined
 }
 object JobTemplate {
   

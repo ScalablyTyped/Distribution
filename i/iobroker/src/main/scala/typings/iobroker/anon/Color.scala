@@ -2,19 +2,17 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var img: String = js.native
+  var img: String
   
-  var link: String = js.native
+  var link: String
   
-  var name: String = js.native
+  var name: String
 }
 object Color {
   

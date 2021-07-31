@@ -10,7 +10,6 @@ import typings.amapJsApiStationSearch.amapJsApiStationSearchStrings.error
 import typings.amapJsApiStationSearch.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -19,7 +18,9 @@ object AMap {
     * 公交站点查询服务
     */
   @js.native
-  trait StationSearch extends EventEmitter {
+  trait StationSearch
+    extends StObject
+       with EventEmitter {
     
     /**
       * 根据给定公交站点名称进行公交站点详情查询
@@ -64,33 +65,32 @@ object AMap {
   }
   object StationSearch {
     
-    @js.native
     trait Busline extends StObject {
       
       /**
         * 首发站名称
         */
-      var end_stop: String = js.native
+      var end_stop: String
       
       /**
         * 公交线路id，该id是唯一标识
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * 公交线路途经此站的经纬度
         */
-      var location: LngLat = js.native
+      var location: LngLat
       
       /**
         * 公交线路名称
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * 首发站名称
         */
-      var start_stop: String = js.native
+      var start_stop: String
     }
     object Busline {
       
@@ -120,28 +120,27 @@ object AMap {
       }
     }
     
-    @js.native
     trait CityInfo extends StObject {
       
       /**
         * 行政区编码
         */
-      var adcode: String = js.native
+      var adcode: String
       
       /**
         * 城市编码
         */
-      var citycode: String = js.native
+      var citycode: String
       
       /**
         * 该城市的建议结果数目
         */
-      var count: Double = js.native
+      var count: Double
       
       /**
         * 城市名称
         */
-      var name: String = js.native
+      var name: String
     }
     object CityInfo {
       
@@ -168,15 +167,14 @@ object AMap {
       }
     }
     
-    @js.native
     trait EventMap extends StObject {
       
       var complete: Event_[
             typings.amapJsApiStationSearch.amapJsApiStationSearchStrings.complete, 
             SearchResult
-          ] = js.native
+          ]
       
-      var error: Event_[typings.amapJsApiStationSearch.amapJsApiStationSearchStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiStationSearch.amapJsApiStationSearchStrings.error, Info]
     }
     object EventMap {
       
@@ -197,7 +195,6 @@ object AMap {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -205,19 +202,19 @@ object AMap {
         * 可选值：cityname（中文或中文全拼）、citycode、adcode
         * 默认值：“全国”
         */
-      var city: js.UndefOr[String] = js.native
+      var city: js.UndefOr[String] = js.undefined
       
       /**
         * 页码
         * 默认值：1, 取值范围：1-100
         */
-      var pageIndex: js.UndefOr[Double] = js.native
+      var pageIndex: js.UndefOr[Double] = js.undefined
       
       /**
         * 单页显示结果条数
         * 默认值：20, 取值范围：1-100
         */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -250,28 +247,27 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
       /**
         * 查该城市无此公交站时，返回的建议城市列表
         */
-      var cityList: js.UndefOr[js.Array[CityInfo]] = js.native
+      var cityList: js.UndefOr[js.Array[CityInfo]] = js.undefined
       
       /**
         * 成功状态文字描述
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 查无此公交站时，返回的建议关键字列表，可根据建议关键字查询
         */
-      var keywordList: js.UndefOr[js.Array[String]] = js.native
+      var keywordList: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * 根据查询条件返回公交站点信息
         */
-      var stationInfo: js.Array[StationInfo] = js.native
+      var stationInfo: js.Array[StationInfo]
     }
     object SearchResult {
       
@@ -331,38 +327,37 @@ object AMap {
       def no_data: typings.amapJsApiStationSearch.amapJsApiStationSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiStationSearch.amapJsApiStationSearchStrings.no_data]
     }
     
-    @js.native
     trait StationInfo extends StObject {
       
       /**
         * 区域编码
         */
-      var adcode: String = js.native
+      var adcode: String
       
       /**
         * 途经此站点的公交路线列表
         */
-      var buslines: js.Array[Busline] = js.native
+      var buslines: js.Array[Busline]
       
       /**
         * 城市编码
         */
-      var citycode: String = js.native
+      var citycode: String
       
       /**
         * 公交站点id，该id是唯一标识
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * 公交站点经纬度
         */
-      var location: LngLat = js.native
+      var location: LngLat
       
       /**
         * 公交站点名称
         */
-      var name: String = js.native
+      var name: String
     }
     object StationInfo {
       

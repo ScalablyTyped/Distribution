@@ -2,23 +2,21 @@ package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAccountUsageMod {
   
-  @js.native
   trait AccountUsage extends StObject {
     
     /**
       * <p>The number of your account's existing functions per region.</p>
       */
-    var FunctionCount: js.UndefOr[Double] = js.native
+    var FunctionCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Total size, in bytes, of the account's deployment packages per region.</p>
       */
-    var TotalCodeSize: js.UndefOr[Double] = js.native
+    var TotalCodeSize: js.UndefOr[Double] = js.undefined
   }
   object AccountUsage {
     

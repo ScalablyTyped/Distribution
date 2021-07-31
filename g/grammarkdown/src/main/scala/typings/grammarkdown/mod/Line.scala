@@ -5,7 +5,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.DefaultKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.LineKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Line")
@@ -29,7 +28,7 @@ class Line protected ()
   def this(
     atToken: typings.grammarkdown.nodesMod.Token[AtToken],
     lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword],
-    number: js.UndefOr[scala.Nothing],
+    number: Unit,
     path: typings.grammarkdown.nodesMod.StringLiteral
   ) = this()
   def this(

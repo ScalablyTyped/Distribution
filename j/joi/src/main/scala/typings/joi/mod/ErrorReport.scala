@@ -4,25 +4,25 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorReport extends Error {
+trait ErrorReport
+  extends StObject
+     with Error {
   
-  var code: String = js.native
+  var code: String
   
-  var flags: Record[String, ExtensionFlag] = js.native
+  var flags: Record[String, ExtensionFlag]
   
-  var messages: LanguageMessages = js.native
+  var messages: LanguageMessages
   
-  var path: js.Array[String] = js.native
+  var path: js.Array[String]
   
-  var prefs: ErrorValidationOptions = js.native
+  var prefs: ErrorValidationOptions
   
-  var state: State = js.native
+  var state: State
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ErrorReport {
   

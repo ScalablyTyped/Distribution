@@ -10,8 +10,8 @@ A simple way to extract out all the contents of a .gitconfig file and return as 
 | Full name          | git-config |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 145 |
-| # downloads        | 266556 |
+| # dependents       | 144 |
+| # downloads        | 424726 |
 | # stars            | 0 |
 
 ## Links

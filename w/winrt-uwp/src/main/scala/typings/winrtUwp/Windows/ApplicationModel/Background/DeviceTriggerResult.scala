@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object DeviceTriggerResult extends StObject {
   
   /** The device background task was triggered. */
   @js.native
-  sealed trait allowed extends DeviceTriggerResult
+  sealed trait allowed
+    extends StObject
+       with DeviceTriggerResult
   
   /** The device background task was denied due to system policy. */
   @js.native
-  sealed trait deniedBySystem extends DeviceTriggerResult
+  sealed trait deniedBySystem
+    extends StObject
+       with DeviceTriggerResult
   
   /** The device background task was denied by the user. */
   @js.native
-  sealed trait deniedByUser extends DeviceTriggerResult
+  sealed trait deniedByUser
+    extends StObject
+       with DeviceTriggerResult
   
   /** The device background task cannot run because the battery is low. */
   @js.native
-  sealed trait lowBattery extends DeviceTriggerResult
+  sealed trait lowBattery
+    extends StObject
+       with DeviceTriggerResult
 }

@@ -4,28 +4,28 @@ import typings.request.mod.CoreOptions
 import typings.request.mod.RequiredUriUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("web-resource-inliner", "css")
+  @JSImport("web-resource-inliner", JSImport.Namespace)
   @js.native
-  def css(options: Options, callback: Callback): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("web-resource-inliner", "html")
-  @js.native
-  def html(options: Options, callback: Callback): String = js.native
+  @scala.inline
+  def css(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def html(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Callback = js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * This is the HTML or CSS content to be inlined, you should provide HTML to the html() method and CSS to the css() method or you will get errors or garbage output.
       */
-    var fileContent: String = js.native
+    var fileContent: String
     
     /**
       * When true, inline images unless they have an exclusion attribute (see inlineAttribute option).
@@ -38,7 +38,7 @@ object mod {
       *
       * @default 8
       */
-    var images: js.UndefOr[Boolean | Double] = js.native
+    var images: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Sets the attribute that is used to include/exclude specific resources based on the default behavior for the resource type.
@@ -51,14 +51,14 @@ object mod {
       *
       * @default "data-inline"
       */
-    var inlineAttribute: js.UndefOr[String] = js.native
+    var inlineAttribute: js.UndefOr[String] = js.undefined
     
     /**
       * Allows to make changes to links before they are inlined, such as CSS pre-and-post-processors.
       *
       * Callback is standard node error first, second argument is transformed value.
       */
-    var linkTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, _]] = js.native
+    var linkTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, js.Any]] = js.undefined
     
     /**
       * When true, inline stylesheet links unless they have an exclusion attribute (see inlineAttribute option).
@@ -69,7 +69,7 @@ object mod {
       *
       * @default true
       */
-    var links: js.UndefOr[Boolean | Double] = js.native
+    var links: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Describes the path relationship between CSS content and the context it will be loaded in.
@@ -80,7 +80,7 @@ object mod {
       *
       * @default ""
       */
-    var rebaseRelativeTo: js.UndefOr[String] = js.native
+    var rebaseRelativeTo: js.UndefOr[String] = js.undefined
     
     /**
       * Describes the path relationship between where web-resource-inliner is running and what the relative paths in fileContent or href/src urls refer to.
@@ -91,7 +91,7 @@ object mod {
       *
       * @default ""
       */
-    var relativeTo: js.UndefOr[String] = js.native
+    var relativeTo: js.UndefOr[String] = js.undefined
     
     /**
       * Allows to adjust issued requests.
@@ -105,18 +105,15 @@ object mod {
       * See the [list of available options](https://www.npmjs.com/package/request#request-options-callback).
       */
     var requestTransform: js.UndefOr[
-        js.Function1[
-          /* requestOptions */ RequiredUriUrl with CoreOptions, 
-          RequiredUriUrl with CoreOptions
-        ]
-      ] = js.native
+        js.Function1[/* requestOptions */ RequiredUriUrl & CoreOptions, RequiredUriUrl & CoreOptions]
+      ] = js.undefined
     
     /**
       * Allows to make changes to scripts before they are inlined, such as minifying.
       *
       * Callback is standard node error first, second argument is transformed value.
       */
-    var scriptTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, _]] = js.native
+    var scriptTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, js.Any]] = js.undefined
     
     /**
       * When true, inline scripts unless they have an exclusion attribute (see inlineAttribute option).
@@ -127,7 +124,7 @@ object mod {
       *
       * @default true
       */
-    var scripts: js.UndefOr[Boolean | Double] = js.native
+    var scripts: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * When strict is true, a missing resource will cause the inliner to halt and return an error in the callback.
@@ -136,7 +133,7 @@ object mod {
       *
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, inline SVG <use> unless they have an exclusion attribute (see inlineAttribute option).
@@ -149,7 +146,7 @@ object mod {
       *
       * @default 8
       */
-    var svgs: js.UndefOr[Boolean | Double] = js.native
+    var svgs: js.UndefOr[Boolean | Double] = js.undefined
   }
   object Options {
     
@@ -178,7 +175,7 @@ object mod {
       def setInlineAttributeUndefined: Self = StObject.set(x, "inlineAttribute", js.undefined)
       
       @scala.inline
-      def setLinkTransform(value: (/* content */ String, /* done */ Callback) => _): Self = StObject.set(x, "linkTransform", js.Any.fromFunction2(value))
+      def setLinkTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "linkTransform", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLinkTransformUndefined: Self = StObject.set(x, "linkTransform", js.undefined)
@@ -202,13 +199,13 @@ object mod {
       def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
       
       @scala.inline
-      def setRequestTransform(value: /* requestOptions */ RequiredUriUrl with CoreOptions => RequiredUriUrl with CoreOptions): Self = StObject.set(x, "requestTransform", js.Any.fromFunction1(value))
+      def setRequestTransform(value: /* requestOptions */ RequiredUriUrl & CoreOptions => RequiredUriUrl & CoreOptions): Self = StObject.set(x, "requestTransform", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRequestTransformUndefined: Self = StObject.set(x, "requestTransform", js.undefined)
       
       @scala.inline
-      def setScriptTransform(value: (/* content */ String, /* done */ Callback) => _): Self = StObject.set(x, "scriptTransform", js.Any.fromFunction2(value))
+      def setScriptTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "scriptTransform", js.Any.fromFunction2(value))
       
       @scala.inline
       def setScriptTransformUndefined: Self = StObject.set(x, "scriptTransform", js.undefined)

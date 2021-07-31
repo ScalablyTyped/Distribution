@@ -2,15 +2,13 @@ package typings.hellosignEmbedded.mod.HelloSign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorEventPyload extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var signatureId: String = js.native
+  var signatureId: String
 }
 object ErrorEventPyload {
   

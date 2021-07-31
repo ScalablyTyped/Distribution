@@ -3,18 +3,16 @@ package typings.pubnub.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // APNS2
-@js.native
 trait APNS2Configuration extends StObject {
   
-  var collapseId: js.UndefOr[String] = js.native
+  var collapseId: js.UndefOr[String] = js.undefined
   
-  var expirationDate: js.UndefOr[Date] = js.native
+  var expirationDate: js.UndefOr[Date] = js.undefined
   
-  var targets: js.Array[APNS2Target] = js.native
+  var targets: js.Array[APNS2Target]
 }
 object APNS2Configuration {
   

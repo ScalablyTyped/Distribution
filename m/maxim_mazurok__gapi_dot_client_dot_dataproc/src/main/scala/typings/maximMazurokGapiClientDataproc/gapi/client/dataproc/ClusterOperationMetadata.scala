@@ -3,39 +3,37 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOperationMetadata extends StObject {
   
   /** Output only. Name of the cluster for the operation. */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /** Output only. Cluster UUID for the operation. */
-  var clusterUuid: js.UndefOr[String] = js.native
+  var clusterUuid: js.UndefOr[String] = js.undefined
   
   /** Output only. Short description of operation. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Output only. Labels associated with the operation */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The operation type. */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /** Output only. Current operation status. */
-  var status: js.UndefOr[ClusterOperationStatus] = js.native
+  var status: js.UndefOr[ClusterOperationStatus] = js.undefined
   
   /** Output only. The previous operation status. */
-  var statusHistory: js.UndefOr[js.Array[ClusterOperationStatus]] = js.native
+  var statusHistory: js.UndefOr[js.Array[ClusterOperationStatus]] = js.undefined
   
   /** Output only. Errors encountered during operation execution. */
-  var warnings: js.UndefOr[js.Array[String]] = js.native
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ClusterOperationMetadata {
   
@@ -70,7 +68,7 @@ object ClusterOperationMetadata {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterOperationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

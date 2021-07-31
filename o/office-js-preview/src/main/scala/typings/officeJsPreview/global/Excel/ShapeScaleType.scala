@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShapeScaleType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeScaleType with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeScaleType & String] = js.native
   
-  /* "CurrentSize" */ val currentSize: typings.officeJsPreview.Excel.ShapeScaleType.currentSize with String = js.native
+  /* "CurrentSize" */ val currentSize: typings.officeJsPreview.Excel.ShapeScaleType.currentSize & String = js.native
   
-  /* "OriginalSize" */ val originalSize: typings.officeJsPreview.Excel.ShapeScaleType.originalSize with String = js.native
+  /* "OriginalSize" */ val originalSize: typings.officeJsPreview.Excel.ShapeScaleType.originalSize & String = js.native
 }

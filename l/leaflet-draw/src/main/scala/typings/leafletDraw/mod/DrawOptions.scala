@@ -8,12 +8,10 @@ import typings.leaflet.mod.PathOptions
 import typings.leafletDraw.anon.PolylineOptionsclickableb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DrawOptions {
   
-  @js.native
   trait CircleMarkerOptions extends StObject {
     
     /**
@@ -21,63 +19,63 @@ object DrawOptions {
       *
       * @default true
       */
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The stroke color of the circle marker.
       *
       * @default '#3388ff'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to fill the circle marker with color.
       *
       * @default true
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The fill color of the circle marker. Defaults to the value of the color option.
       *
       * @default null
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /**
       * The opacity of the circle marker.
       *
       * @default 0.2
       */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke opacity of the circle marker.
       *
       * @default 0.5
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to draw stroke around the circle marker.
       *
       * @default true
       */
-    var stroke: js.UndefOr[Boolean] = js.native
+    var stroke: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The stroke width in pixels of the circle marker.
       *
       * @default 4
       */
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
     
     /**
       * This should be a high number to ensure that you can draw over all other layers on the map.
       *
       * @default 2000
       */
-    var zIndexOffset: js.UndefOr[Double] = js.native
+    var zIndexOffset: js.UndefOr[Double] = js.undefined
   }
   object CircleMarkerOptions {
     
@@ -146,43 +144,44 @@ object DrawOptions {
     }
   }
   
-  @js.native
-  trait CircleOptions extends SimpleShapeOptions {
+  trait CircleOptions
+    extends StObject
+       with SimpleShapeOptions {
     
     /**
       * When not metric, use feet instead of yards for display
       *
       * @default true
       */
-    var feet: js.UndefOr[Boolean] = js.native
+    var feet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use the metric measurement system or imperial
       *
       * @default true
       */
-    var metric: js.UndefOr[Boolean] = js.native
+    var metric: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When not metric, not feet use nautic mile for display
       *
       * @default false
       */
-    var nautic: js.UndefOr[Boolean] = js.native
+    var nautic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The options used when drawing the circle on the map.
       *
       * @default { stroke: true, color: '#3388ff', weight: 4, opacity: 0.5, fill: true, fillColor: null, fillOpacity: 0.2, clickable: true }
       */
-    var shapeOptions: js.UndefOr[PathOptions] = js.native
+    var shapeOptions: js.UndefOr[PathOptions] = js.undefined
     
     /**
       * Whether to show the radius in the tooltip
       *
       * @default true
       */
-    var showRadius: js.UndefOr[Boolean] = js.native
+    var showRadius: js.UndefOr[Boolean] = js.undefined
   }
   object CircleOptions {
     
@@ -227,14 +226,13 @@ object DrawOptions {
     }
   }
   
-  @js.native
   trait DrawErrorOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object DrawErrorOptions {
     
@@ -267,7 +265,6 @@ object DrawOptions {
     }
   }
   
-  @js.native
   trait EditHandlerOptions extends StObject {
     
     /**
@@ -276,7 +273,7 @@ object DrawOptions {
       *
       * @default { dashArray: '10, 10', fill: true, fillColor: '#fe57a1', fillOpacity: 0.1, maintainColor: false }
       */
-    var selectedPathOptions: js.UndefOr[PathOptions] = js.native
+    var selectedPathOptions: js.UndefOr[PathOptions] = js.undefined
   }
   object EditHandlerOptions {
     
@@ -297,7 +294,6 @@ object DrawOptions {
     }
   }
   
-  @js.native
   trait EditPolyOptions extends StObject {
     
     /**
@@ -305,28 +301,28 @@ object DrawOptions {
       *
       * @default true
       */
-    var allowIntersection: Boolean = js.native
+    var allowIntersection: Boolean
     
     /**
       * Edit handler options. Set to false to disable handler.
       */
-    var edit: EditHandlerOptions = js.native
+    var edit: EditHandlerOptions
     
     /**
       * This is the FeatureGroup that stores all editable shapes
       * THIS IS REQUIRED FOR THE EDIT TOOLBAR TO WORK
       */
-    var featureGroup: FeatureGroup_[_] = js.native
+    var featureGroup: FeatureGroup_[js.Any]
     
     /**
       * Set polygon editing options
       */
-    var poly: EditPolyOptions = js.native
+    var poly: EditPolyOptions
     
     /**
       * Delete handler options. Set to false to disable handler.
       */
-    var remove: js.Any = js.native
+    var remove: js.Any
   }
   object EditPolyOptions {
     
@@ -334,7 +330,7 @@ object DrawOptions {
     def apply(
       allowIntersection: Boolean,
       edit: EditHandlerOptions,
-      featureGroup: FeatureGroup_[_],
+      featureGroup: FeatureGroup_[js.Any],
       poly: EditPolyOptions,
       remove: js.Any
     ): EditPolyOptions = {
@@ -352,7 +348,7 @@ object DrawOptions {
       def setEdit(value: EditHandlerOptions): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFeatureGroup(value: FeatureGroup_[_]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
+      def setFeatureGroup(value: FeatureGroup_[js.Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPoly(value: EditPolyOptions): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
@@ -362,7 +358,6 @@ object DrawOptions {
     }
   }
   
-  @js.native
   trait MarkerOptions extends StObject {
     
     /**
@@ -370,21 +365,21 @@ object DrawOptions {
       *
       * @default L.Icon.Default()
       */
-    var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
     /**
       * Determines if the draw tool remains enabled after drawing a shape.
       *
       * @default false
       */
-    var repeatMode: js.UndefOr[Boolean] = js.native
+    var repeatMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This should be a high number to ensure that you can draw over all other layers on the map.
       *
       * @default 2000
       */
-    var zIndexOffset: js.UndefOr[Double] = js.native
+    var zIndexOffset: js.UndefOr[Double] = js.undefined
   }
   object MarkerOptions {
     
@@ -417,15 +412,16 @@ object DrawOptions {
     }
   }
   
-  @js.native
-  trait PolygonOptions extends PolylineOptions {
+  trait PolygonOptions
+    extends StObject
+       with PolylineOptions {
     
     /**
       * Defines the precision for each type of unit (e.g. {km: 2, ft: 0}
       *
       * @default {}
       */
-    var precision: js.UndefOr[PrecisionOptions] = js.native
+    var precision: js.UndefOr[PrecisionOptions] = js.undefined
     
     /**
       * Show the area of the drawn polygon in m², ha or km².
@@ -433,7 +429,7 @@ object DrawOptions {
       *
       * @default false
       */
-    var showArea: js.UndefOr[Boolean] = js.native
+    var showArea: js.UndefOr[Boolean] = js.undefined
   }
   object PolygonOptions {
     
@@ -460,96 +456,97 @@ object DrawOptions {
     }
   }
   
-  @js.native
-  trait PolylineOptions extends SimpleShapeOptions {
+  trait PolylineOptions
+    extends StObject
+       with SimpleShapeOptions {
     
     /**
       * Determines if line segments can cross.
       *
       * @default true
       */
-    var allowIntersection: js.UndefOr[Boolean] = js.native
+    var allowIntersection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configuration options for the error that displays if an intersection is detected.
       *
       * @default { color: '#b00b00', timeout: 2500 }
       */
-    var drawError: js.UndefOr[DrawErrorOptions] = js.native
+    var drawError: js.UndefOr[DrawErrorOptions] = js.undefined
     
     /**
       * To change distance calculation
       *
       * @default 1
       */
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
     /**
       * When not metric, to use feet instead of yards for display.
       *
       * @default true
       */
-    var feet: js.UndefOr[Boolean] = js.native
+    var feet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Distance in pixels between each guide dash.
       *
       * @default 20
       */
-    var guidelineDistance: js.UndefOr[Double] = js.native
+    var guidelineDistance: js.UndefOr[Double] = js.undefined
     
-    var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
     /**
       * The maximum length of the guide line
       *
       * @default 4000
       */
-    var maxGuideLineLength: js.UndefOr[Double] = js.native
+    var maxGuideLineLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Once this number of points are placed, finish shape
       *
       * @default 0
       */
-    var maxPoints: js.UndefOr[Double] = js.native
+    var maxPoints: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines which measurement system (metric or imperial) is used.
       *
       * @default true
       */
-    var metric: js.UndefOr[Boolean] = js.native
+    var metric: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When not metric, not feet use nautic mile for display
       *
       * @default false
       */
-    var nautic: js.UndefOr[Boolean] = js.native
+    var nautic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The options used when drawing the polyline/polygon on the map.
       *
       * @default { stroke: true, color: '#3388ff', weight: 4, opacity: 0.5, fill: false, clickable: true }
       */
-    var shapeOptions: js.UndefOr[PolylineOptionsclickableb] = js.native
+    var shapeOptions: js.UndefOr[PolylineOptionsclickableb] = js.undefined
     
     /**
       * Whether to display distance in the tooltip
       *
       * @default true
       */
-    var showLength: js.UndefOr[Boolean] = js.native
+    var showLength: js.UndefOr[Boolean] = js.undefined
     
-    var touchIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var touchIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
     /**
       * This should be a high number to ensure that you can draw over all other layers on the map.
       *
       * @default 2000
       */
-    var zIndexOffset: js.UndefOr[Double] = js.native
+    var zIndexOffset: js.UndefOr[Double] = js.undefined
   }
   object PolylineOptions {
     
@@ -648,22 +645,23 @@ object DrawOptions {
     }
   }
   
-  @js.native
-  trait RectangleOptions extends SimpleShapeOptions {
+  trait RectangleOptions
+    extends StObject
+       with SimpleShapeOptions {
     
     /**
       * Whether to use the metric measurement system or imperial
       *
       * @default true
       */
-    var metric: js.UndefOr[Boolean] = js.native
+    var metric: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The options used when drawing the rectangle on the map.
       *
       * @default {stroke: true, weight: 4, opacity: 0.5, fill: true, fillColor: null, fillOpacity: 0.2, showArea: true, clickable: true }
       */
-    var shapeOptions: js.UndefOr[PathOptions] = js.native
+    var shapeOptions: js.UndefOr[PathOptions] = js.undefined
   }
   object RectangleOptions {
     
@@ -690,7 +688,6 @@ object DrawOptions {
     }
   }
   
-  @js.native
   trait SimpleShapeOptions extends StObject {
     
     /**
@@ -698,7 +695,7 @@ object DrawOptions {
       *
       * @default false
       */
-    var repeatMode: js.UndefOr[Boolean] = js.native
+    var repeatMode: js.UndefOr[Boolean] = js.undefined
   }
   object SimpleShapeOptions {
     

@@ -3,17 +3,15 @@ package typings.iitc.hooksMod.global
 import typings.iitc.inteltypesMod.Intel.ChatLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventPublicChatDataAvailable extends StObject {
   
-  var processed: js.Any = js.native
+  var processed: js.Any
   
-  var raw: js.Any = js.native
+  var raw: js.Any
   
-  var result: js.Array[ChatLine] = js.native
+  var result: js.Array[ChatLine]
 }
 object EventPublicChatDataAvailable {
   

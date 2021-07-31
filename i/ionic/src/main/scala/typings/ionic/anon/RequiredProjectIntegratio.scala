@@ -2,16 +2,14 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<ionic.ionic/definitions.ProjectIntegration> */
-@js.native
 trait RequiredProjectIntegratio extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var root: String = js.native
+  var root: String
 }
 object RequiredProjectIntegratio {
   

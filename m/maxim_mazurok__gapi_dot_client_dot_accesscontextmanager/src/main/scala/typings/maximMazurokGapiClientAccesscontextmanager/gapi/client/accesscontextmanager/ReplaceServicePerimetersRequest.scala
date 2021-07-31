@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceServicePerimetersRequest extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait ReplaceServicePerimetersRequest extends StObject {
     * Access Context Manager is different from the specified etag, then the replace operation will not be performed and the call will fail. This field is not required. If etag is not
     * provided, the operation will be performed as if a valid etag is provided.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Required. The desired Service Perimeters that should replace all existing Service Perimeters in the Access Policy. */
-  var servicePerimeters: js.UndefOr[js.Array[ServicePerimeter]] = js.native
+  var servicePerimeters: js.UndefOr[js.Array[ServicePerimeter]] = js.undefined
 }
 object ReplaceServicePerimetersRequest {
   

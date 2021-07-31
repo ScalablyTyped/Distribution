@@ -2,32 +2,33 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataSetSelectorMod {
   
   @JSImport("amcharts/DataSetSelector", JSImport.Default)
   @js.native
-  class default () extends DataSetSelector
-  
-  @js.native
-  trait DataSetSelector extends StObject {
+  class default ()
+    extends StObject
+       with DataSetSelector {
     
     /**
       * Text displayed in the "compare to" combobox (when position is "top" or "bottom"). Select...
       */
+    /* CompleteClass */
     var comboBoxSelectText: String = js.native
     
     /**
       * Text displayed near "compare to" list. Compare to:
       */
+    /* CompleteClass */
     var compareText: String = js.native
     
     /**
       * The maximum height of the Compare to field in pixels.
       * @default 150
       */
+    /* CompleteClass */
     var listHeight: Double = js.native
     
     /**
@@ -35,18 +36,58 @@ object dataSetSelectorMod {
       * only one data set can be selected for comparing.
       * @default "left"
       */
+    /* CompleteClass */
     var position: String = js.native
     
     /**
       * Text displayed near "Select" dropDown. Select:
       */
+    /* CompleteClass */
     var selectText: String = js.native
     
     /**
       * Width of a Data set selector, when position is "left" or "right".
       * @default 180
       */
+    /* CompleteClass */
     var width: Double = js.native
+  }
+  
+  trait DataSetSelector extends StObject {
+    
+    /**
+      * Text displayed in the "compare to" combobox (when position is "top" or "bottom"). Select...
+      */
+    var comboBoxSelectText: String
+    
+    /**
+      * Text displayed near "compare to" list. Compare to:
+      */
+    var compareText: String
+    
+    /**
+      * The maximum height of the Compare to field in pixels.
+      * @default 150
+      */
+    var listHeight: Double
+    
+    /**
+      * Possible values: "right", "left", "top", "bottom". "top" and "bottom" positions has a limitation -
+      * only one data set can be selected for comparing.
+      * @default "left"
+      */
+    var position: String
+    
+    /**
+      * Text displayed near "Select" dropDown. Select:
+      */
+    var selectText: String
+    
+    /**
+      * Width of a Data set selector, when position is "left" or "right".
+      * @default 180
+      */
+    var width: Double
   }
   object DataSetSelector {
     

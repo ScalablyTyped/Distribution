@@ -6,7 +6,6 @@ import typings.three.materialMod.Material
 import typings.three.webGLPropertiesMod.WebGLProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLClippingMod {
@@ -20,7 +19,7 @@ object webGLClippingMod {
     
     def endShadows(): Unit = js.native
     
-    def init(planes: js.Array[_], enableLocalClipping: Boolean, camera: Camera): Boolean = js.native
+    def init(planes: js.Array[js.Any], enableLocalClipping: Boolean, camera: Camera): Boolean = js.native
     
     /**
     	 * @default 0

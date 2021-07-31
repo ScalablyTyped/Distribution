@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait NumberQuestion[T /* <: Answers */] extends InputQuestionOptions[T] {
+trait NumberQuestion[T /* <: Answers */]
+  extends StObject
+     with InputQuestionOptions[T] {
   
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_NumberQuestion: number = js.native
+  var type_NumberQuestion: number
 }
 object NumberQuestion {
   
   @scala.inline
-  def apply[T /* <: Answers */](`type`: number): NumberQuestion[T] = {
+  def apply[T /* <: Answers */](): NumberQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberQuestion[T]]
   }
   
   @scala.inline
-  implicit class NumberQuestionMutableBuilder[Self <: NumberQuestion[_], T /* <: Answers */] (val x: Self with NumberQuestion[T]) extends AnyVal {
+  implicit class NumberQuestionMutableBuilder[Self <: NumberQuestion[?], T /* <: Answers */] (val x: Self & NumberQuestion[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

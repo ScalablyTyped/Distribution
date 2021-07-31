@@ -2,27 +2,25 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyntaxTrivia extends StObject {
   
-  def fullText(): String = js.native
+  def fullText(): String
   
-  def fullWidth(): Double = js.native
+  def fullWidth(): Double
   
-  def isComment(): Boolean = js.native
+  def isComment(): Boolean
   
-  def isNewLine(): Boolean = js.native
+  def isNewLine(): Boolean
   
-  def isSkippedToken(): Boolean = js.native
+  def isSkippedToken(): Boolean
   
-  def isWhitespace(): Boolean = js.native
+  def isWhitespace(): Boolean
   
-  def kind(): SyntaxKind = js.native
+  def kind(): SyntaxKind
   
-  def skippedToken(): ISyntaxToken = js.native
+  def skippedToken(): ISyntaxToken
 }
 object ISyntaxTrivia {
   

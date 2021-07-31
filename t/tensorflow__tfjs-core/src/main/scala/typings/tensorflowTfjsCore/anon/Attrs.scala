@@ -4,15 +4,13 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.NamedAttrMap
 import typings.tensorflowTfjsCore.kernelRegistryMod.NamedTensorInfoMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attrs extends StObject {
   
-  var attrs: js.UndefOr[NamedAttrMap] = js.native
+  var attrs: js.UndefOr[NamedAttrMap] = js.undefined
   
-  var inputs: NamedTensorInfoMap = js.native
+  var inputs: NamedTensorInfoMap
 }
 object Attrs {
   

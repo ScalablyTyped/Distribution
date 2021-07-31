@@ -5,7 +5,6 @@ import typings.uiBox.typesEnhancersMod.PropTypesMapping
 import typings.uiBox.typesEnhancersMod.PropValidators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bordersMod {

@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewBatchEditTemplateCellFocusedEventArgs extends EventArgs {
+trait GridViewBatchEditTemplateCellFocusedEventArgs
+  extends StObject
+     with EventArgs {
   
-  val column: BootstrapGridViewColumn = js.native
+  val column: BootstrapGridViewColumn
   
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
 object GridViewBatchEditTemplateCellFocusedEventArgs {
   

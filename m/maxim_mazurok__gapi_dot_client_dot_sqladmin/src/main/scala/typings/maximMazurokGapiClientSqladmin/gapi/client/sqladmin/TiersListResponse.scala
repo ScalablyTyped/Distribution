@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TiersListResponse extends StObject {
   
   /** List of tiers. */
-  var items: js.UndefOr[js.Array[Tier]] = js.native
+  var items: js.UndefOr[js.Array[Tier]] = js.undefined
   
   /** This is always *sql#tiersList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object TiersListResponse {
   

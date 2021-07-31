@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
   /** The height of the object. */
-  var height: js.UndefOr[Dimension] = js.native
+  var height: js.UndefOr[Dimension] = js.undefined
   
   /** The width of the object. */
-  var width: js.UndefOr[Dimension] = js.native
+  var width: js.UndefOr[Dimension] = js.undefined
 }
 object Size {
   

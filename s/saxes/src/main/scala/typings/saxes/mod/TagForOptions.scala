@@ -3,7 +3,6 @@ package typings.saxes.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -22,7 +21,7 @@ object TagForOptions {
   
   @scala.inline
   def SaxesTagNS(
-    attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS]),
+    attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS]),
     isSelfClosing: Boolean,
     local: String,
     name: String,
@@ -36,7 +35,7 @@ object TagForOptions {
   
   @scala.inline
   def SaxesTagPlain(
-    attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, String]),
+    attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, String]),
     isSelfClosing: Boolean,
     name: String
   ): typings.saxes.mod.SaxesTagPlain = {

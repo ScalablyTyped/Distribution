@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgTreeGridLocale
     * Specifies the collapse indicator tooltip text.
     *
     */
-  var collapseTooltipText: js.UndefOr[String] = js.native
+  var collapseTooltipText: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the expansion indicator tooltip text.
     *
     */
-  var expandTooltipText: js.UndefOr[String] = js.native
+  var expandTooltipText: js.UndefOr[String] = js.undefined
 }
 object IgTreeGridLocale {
   

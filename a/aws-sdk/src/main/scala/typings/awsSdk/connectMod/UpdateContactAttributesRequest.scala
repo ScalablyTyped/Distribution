@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateContactAttributesRequest extends StObject {
   
   /**
     * The Amazon Connect attributes. These attributes can be accessed in contact flows just like any other contact attributes. You can have up to 32,768 UTF-8 bytes across all attributes for a contact. Attribute keys can include only alphanumeric, dash, and underscore characters.
     */
-  var Attributes: typings.awsSdk.connectMod.Attributes = js.native
+  var Attributes: typings.awsSdk.connectMod.Attributes
   
   /**
     * The identifier of the contact. This is the identifier of the contact associated with the first interaction with the contact center.
     */
-  var InitialContactId: ContactId = js.native
+  var InitialContactId: ContactId
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
 }
 object UpdateContactAttributesRequest {
   

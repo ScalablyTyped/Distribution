@@ -8,7 +8,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object embeddingsSerializationMod {
@@ -20,24 +19,25 @@ object embeddingsSerializationMod {
   /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/embeddings_serialization.EmbeddingLayerSerialization['class_name'] */
   type EmbeddingLayerClassName = Embedding
   
-  @js.native
-  trait EmbeddingLayerConfig extends LayerConfig {
+  trait EmbeddingLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var activity_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var activity_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var embeddings_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var embeddings_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var embeddings_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var embeddings_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var embeddings_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var embeddings_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var input_dim: Double = js.native
+    var input_dim: Double
     
-    var input_length: js.UndefOr[Double | js.Array[Double]] = js.native
+    var input_length: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var mask_zero: js.UndefOr[Boolean] = js.native
+    var mask_zero: js.UndefOr[Boolean] = js.undefined
     
-    var output_dim: Double = js.native
+    var output_dim: Double
   }
   object EmbeddingLayerConfig {
     

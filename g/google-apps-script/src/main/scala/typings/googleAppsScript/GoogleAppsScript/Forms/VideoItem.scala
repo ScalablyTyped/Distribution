@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,34 +26,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setHelpText('Video Caption')
   *         .setVideoUrl('1234abcdxyz');
   */
-@js.native
 trait VideoItem extends StObject {
   
-  def duplicate(): VideoItem = js.native
+  def duplicate(): VideoItem
   
-  def getAlignment(): Alignment = js.native
+  def getAlignment(): Alignment
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def getWidth(): Integer = js.native
+  def getWidth(): Integer
   
-  def setAlignment(alignment: Alignment): VideoItem = js.native
+  def setAlignment(alignment: Alignment): VideoItem
   
-  def setHelpText(text: String): VideoItem = js.native
+  def setHelpText(text: String): VideoItem
   
-  def setTitle(title: String): VideoItem = js.native
+  def setTitle(title: String): VideoItem
   
-  def setVideoUrl(youtubeUrl: String): VideoItem = js.native
+  def setVideoUrl(youtubeUrl: String): VideoItem
   
-  def setWidth(width: Integer): VideoItem = js.native
+  def setWidth(width: Integer): VideoItem
 }
 object VideoItem {
   

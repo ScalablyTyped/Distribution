@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DisconnectButtonClicked event on the DevicePicker object. */
-@js.native
 trait DeviceDisconnectButtonClickedEventArgs extends StObject {
   
   /** The device that the user clicked the disconnect button for. */
-  var device: DeviceInformation = js.native
+  var device: DeviceInformation
 }
 object DeviceDisconnectButtonClickedEventArgs {
   

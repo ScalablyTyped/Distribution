@@ -7,83 +7,83 @@ import typings.elasticsearch.elasticsearchStrings.popular
 import typings.elasticsearch.elasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchParams extends GenericParams {
+trait SearchParams
+  extends StObject
+     with GenericParams {
   
-  var _source: js.UndefOr[NameList] = js.native
+  var _source: js.UndefOr[NameList] = js.undefined
   
-  var _sourceExclude: js.UndefOr[NameList] = js.native
+  var _sourceExclude: js.UndefOr[NameList] = js.undefined
   
-  var _sourceInclude: js.UndefOr[NameList] = js.native
+  var _sourceInclude: js.UndefOr[NameList] = js.undefined
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var analyzeWildcard: js.UndefOr[Boolean] = js.native
+  var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var defaultOperator: js.UndefOr[DefaultOperator] = js.native
+  var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var docvalueFields: js.UndefOr[NameList] = js.native
+  var docvalueFields: js.UndefOr[NameList] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var fielddataFields: js.UndefOr[NameList] = js.native
+  var fielddataFields: js.UndefOr[NameList] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.native
+  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var requestCache: js.UndefOr[Boolean] = js.native
+  var requestCache: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[NameList] = js.native
+  var routing: js.UndefOr[NameList] = js.undefined
   
-  var scroll: js.UndefOr[TimeSpan] = js.native
+  var scroll: js.UndefOr[TimeSpan] = js.undefined
   
-  var searchType: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.native
+  var searchType: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[NameList] = js.native
+  var sort: js.UndefOr[NameList] = js.undefined
   
-  var stats: js.UndefOr[NameList] = js.native
+  var stats: js.UndefOr[NameList] = js.undefined
   
-  var storedFields: js.UndefOr[NameList] = js.native
+  var storedFields: js.UndefOr[NameList] = js.undefined
   
-  var suggestField: js.UndefOr[String] = js.native
+  var suggestField: js.UndefOr[String] = js.undefined
   
-  var suggestMode: js.UndefOr[missing | popular | always] = js.native
+  var suggestMode: js.UndefOr[missing | popular | always] = js.undefined
   
-  var suggestSize: js.UndefOr[Double] = js.native
+  var suggestSize: js.UndefOr[Double] = js.undefined
   
-  var suggestText: js.UndefOr[String] = js.native
+  var suggestText: js.UndefOr[String] = js.undefined
   
-  var terminateAfter: js.UndefOr[Double] = js.native
+  var terminateAfter: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var trackScores: js.UndefOr[Boolean] = js.native
+  var trackScores: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[NameList] = js.native
+  var `type`: js.UndefOr[NameList] = js.undefined
   
-  var version: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[Boolean] = js.undefined
 }
 object SearchParams {
   

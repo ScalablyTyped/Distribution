@@ -3,22 +3,21 @@ package typings.babelCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginPass
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var cwd: String = js.native
+  var cwd: String
   
-  var file: BabelFile = js.native
+  var file: BabelFile
   
-  var filename: String = js.native
+  var filename: String
   
-  var key: String = js.native
+  var key: String
   
-  var opts: PluginOptions = js.native
+  var opts: PluginOptions
 }
 object PluginPass {
   

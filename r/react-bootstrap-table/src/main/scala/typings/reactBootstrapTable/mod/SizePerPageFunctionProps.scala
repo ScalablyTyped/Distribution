@@ -3,41 +3,39 @@ package typings.reactBootstrapTable.mod
 import typings.reactBootstrapTable.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizePerPageFunctionProps extends StObject {
   
   /**
     * Callback function to use to change the current size per page.
     */
-  def changeSizePerPage(newSizePerPage: Double): Unit = js.native
+  def changeSizePerPage(newSizePerPage: Double): Unit
   
   /**
     * Current size per page as a string value.
     */
-  var currSizePerPage: String = js.native
+  var currSizePerPage: String
   
   /**
     * Flag indicating that the sizePerPage dropdown should be hidden.
     */
-  var hideSizePerPage: Boolean = js.native
+  var hideSizePerPage: Boolean
   
   /**
     * Flag to indicate that the sizePerPage dropdown should currently be 'open'.
     */
-  var open: Boolean = js.native
+  var open: Boolean
   
   /**
     * Array of the size per page options to display in the dropdown.
     */
-  var sizePerPageList: SizePerPageList = js.native
+  var sizePerPageList: SizePerPageList
   
   /**
     * On-click toggle function callback to open/close the size per page dropdown list.
     */
-  def toggleDropDown(): Unit = js.native
+  def toggleDropDown(): Unit
 }
 object SizePerPageFunctionProps {
   

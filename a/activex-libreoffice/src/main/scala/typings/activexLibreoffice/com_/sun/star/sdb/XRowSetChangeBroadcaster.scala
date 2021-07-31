@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRowSetChangeListener
   * @since OOo 3.2
   */
-@js.native
 trait XRowSetChangeBroadcaster extends StObject {
   
   /** adds a listener to be notified when the `RowSet` supplied by the component changes. */
-  def addRowSetChangeListener(iListener: XRowSetChangeListener): Unit = js.native
+  def addRowSetChangeListener(iListener: XRowSetChangeListener): Unit
   
   /** removes a previously added listener. */
-  def removeRowSetChangeListener(iListener: XRowSetChangeListener): Unit = js.native
+  def removeRowSetChangeListener(iListener: XRowSetChangeListener): Unit
 }
 object XRowSetChangeBroadcaster {
   

@@ -10,9 +10,9 @@ Static cache for koa
 | ------------------ | :-------------: |
 | Full name          | koa-static-cache |
 | Keywords           | koa, middleware, file, static, cache, gzip, sendfile |
-| # releases         | 5 |
-| # dependents       | 98 |
-| # downloads        | 523779 |
+| # releases         | 3 |
+| # dependents       | 104 |
+| # downloads        | 872132 |
 | # stars            | 7 |
 
 ## Links

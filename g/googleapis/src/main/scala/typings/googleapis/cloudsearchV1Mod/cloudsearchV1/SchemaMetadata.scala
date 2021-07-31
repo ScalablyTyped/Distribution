@@ -2,49 +2,47 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata of a matched search result.
   */
-@js.native
 trait SchemaMetadata extends StObject {
   
   /**
     * The creation time for this document or object in the search result.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Options that specify how to display a structured data search result.
     */
-  var displayOptions: js.UndefOr[SchemaResultDisplayMetadata] = js.native
+  var displayOptions: js.UndefOr[SchemaResultDisplayMetadata] = js.undefined
   
   /**
     * Indexed fields in structured data, returned as a generic named property.
     */
-  var fields: js.UndefOr[js.Array[SchemaNamedProperty]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaNamedProperty]] = js.undefined
   
   /**
     * Mime type of the search result.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Object type of the search result.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * Owner (usually creator) of the document or object of the search result.
     */
-  var owner: js.UndefOr[SchemaPerson] = js.native
+  var owner: js.UndefOr[SchemaPerson] = js.undefined
   
   /**
     * The named source for the result, such as Gmail.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
   
   /**
     * The last modified date for the object in the search result. If not set in
@@ -52,7 +50,7 @@ trait SchemaMetadata extends StObject {
     * calculating freshness and is not set, this value defaults to 2 years from
     * the current time.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaMetadata {
   

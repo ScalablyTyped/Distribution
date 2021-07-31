@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetStatusInput extends StObject {
   
   /**
     * The IDs of the objects. The corresponding objects can be either physical or components, but not a mix of both types.
     */
-  var objectIds: idList = js.native
+  var objectIds: idList
   
   /**
     * The ID of the pipeline that contains the objects.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
   
   /**
     * The status to be set on all the objects specified in objectIds. For components, use PAUSE or RESUME. For instances, use TRY_CANCEL, RERUN, or MARK_FINISHED.
     */
-  var status: String = js.native
+  var status: String
 }
 object SetStatusInput {
   

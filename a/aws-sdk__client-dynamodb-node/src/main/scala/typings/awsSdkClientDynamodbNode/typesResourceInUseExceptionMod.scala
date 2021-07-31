@@ -9,15 +9,14 @@ import typings.awsSdkClientDynamodbNode.updateTableExceptionsUnionMod.UpdateTabl
 import typings.awsSdkClientDynamodbNode.updateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesResourceInUseExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceInUseExceptionDetails> * / any */ @js.native
-  trait ResourceInUseException
-    extends CreateTableExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceInUseExceptionDetails> * / any */ trait ResourceInUseException
+    extends StObject
+       with CreateTableExceptionsUnion
        with DeleteTableExceptionsUnion
        with TagResourceExceptionsUnion
        with UntagResourceExceptionsUnion
@@ -25,13 +24,13 @@ object typesResourceInUseExceptionMod {
        with UpdateTableExceptionsUnion
        with UpdateTimeToLiveExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceInUseException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceInUseException
   }
   object ResourceInUseException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceInUseException): ResourceInUseException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ResourceInUseException = {
+      val __obj = js.Dynamic.literal(name = "ResourceInUseException")
       __obj.asInstanceOf[ResourceInUseException]
     }
     
@@ -43,13 +42,12 @@ object typesResourceInUseExceptionMod {
     }
   }
   
-  @js.native
   trait ResourceInUseExceptionDetails extends StObject {
     
     /**
       * <p>The resource which is being attempted to be changed is in use.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ResourceInUseExceptionDetails {
     

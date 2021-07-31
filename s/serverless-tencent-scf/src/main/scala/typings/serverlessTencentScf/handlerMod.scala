@@ -3,7 +3,6 @@ package typings.serverlessTencentScf
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlerMod {
@@ -14,34 +13,33 @@ object handlerMod {
     Unit
   ]
   
-  @js.native
   trait Context extends StObject {
     
-    var callbackWaitsForEmptyEventLoop: Boolean = js.native
+    var callbackWaitsForEmptyEventLoop: Boolean
     
-    var environ: String = js.native
+    var environ: String
     
-    var environment: String = js.native
+    var environment: String
     
-    var function_name: String = js.native
+    var function_name: String
     
-    var function_version: String = js.native
+    var function_version: String
     
-    def getRemainingTimeInMillis(): Double = js.native
+    def getRemainingTimeInMillis(): Double
     
-    var memory_limit_in_mb: Double = js.native
+    var memory_limit_in_mb: Double
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var request_id: String = js.native
+    var request_id: String
     
-    var tencentcloud_appid: String = js.native
+    var tencentcloud_appid: String
     
-    var tencentcloud_region: String = js.native
+    var tencentcloud_region: String
     
-    var tencentcloud_uin: String = js.native
+    var tencentcloud_uin: String
     
-    var time_limit_in_ms: Double = js.native
+    var time_limit_in_ms: Double
   }
   object Context {
     

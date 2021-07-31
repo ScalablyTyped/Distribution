@@ -8,23 +8,22 @@ import typings.shipitCli.anon.Typeofshipit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("shipit-cli", "blTask")
+  @JSImport("shipit-cli", JSImport.Namespace)
   @js.native
-  def blTask(name: String, depsOrFn: js.Array[String]): js.Any = js.native
-  @JSImport("shipit-cli", "blTask")
-  @js.native
-  def blTask(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): js.Any = js.native
-  @JSImport("shipit-cli", "blTask")
-  @js.native
-  def blTask(name: String, depsOrFn: EmptyCallback): js.Any = js.native
-  @JSImport("shipit-cli", "blTask")
-  @js.native
-  def blTask(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def blTask(name: String, depsOrFn: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("blTask")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def blTask(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("blTask")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def blTask(name: String, depsOrFn: EmptyCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("blTask")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def blTask(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("blTask")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("shipit-cli", "domain")
   @js.native
@@ -34,124 +33,100 @@ object mod {
   @js.native
   val doneCallback: js.Any = js.native
   
-  @JSImport("shipit-cli", "emit")
-  @js.native
-  def emit(name: String): js.Any = js.native
+  @scala.inline
+  def emit(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("shipit-cli", "environment")
   @js.native
   val environment: String = js.native
   
-  @JSImport("shipit-cli", "initConfig")
-  @js.native
-  def initConfig(config: js.Object): Typeofshipit = js.native
+  @scala.inline
+  def initConfig(config: js.Object): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
   
   @JSImport("shipit-cli", "isRunning")
   @js.native
   val isRunning: Boolean = js.native
   
-  @JSImport("shipit-cli", "local")
-  @js.native
-  def local(command: String): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "local")
-  @js.native
+  @scala.inline
+  def local(command: String): js.Thenable[ShipitLocal] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(command.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
   def local(
     command: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
-  ): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "local")
-  @js.native
-  def local(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "local")
-  @js.native
+  ): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
+  def local(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
   def local(
     command: String,
     options: ExecOptions,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
-  ): js.Thenable[ShipitLocal] = js.native
+  ): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
   
-  @JSImport("shipit-cli", "log")
-  @js.native
-  def log(log: js.Any*): Unit = js.native
-  @JSImport("shipit-cli", "log")
-  @js.native
-  def log(log: js.Any): Unit = js.native
+  @scala.inline
+  def log(log: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def log(log: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(log.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("shipit-cli", "on")
-  @js.native
-  def on(name: String, callback: js.Function1[/* e */ js.Any, Unit]): js.Any = js.native
+  @scala.inline
+  def on(name: String, callback: js.Function1[/* e */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("shipit-cli", "remote")
-  @js.native
-  def remote(command: String): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "remote")
-  @js.native
+  @scala.inline
+  def remote(command: String): js.Thenable[ShipitLocal] = ^.asInstanceOf[js.Dynamic].applyDynamic("remote")(command.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
   def remote(
     command: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
-  ): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "remote")
-  @js.native
-  def remote(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "remote")
-  @js.native
+  ): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
+  def remote(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
   def remote(
     command: String,
     options: ExecOptions,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
-  ): js.Thenable[ShipitLocal] = js.native
+  ): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remote")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
   
-  @JSImport("shipit-cli", "remoteCopy")
-  @js.native
-  def remoteCopy(src: String, dest: String): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "remoteCopy")
-  @js.native
+  @scala.inline
+  def remoteCopy(src: String, dest: String): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteCopy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
   def remoteCopy(
     src: String,
     dest: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
-  ): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "remoteCopy")
-  @js.native
-  def remoteCopy(src: String, dest: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
-  @JSImport("shipit-cli", "remoteCopy")
-  @js.native
+  ): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteCopy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
+  def remoteCopy(src: String, dest: String, options: ExecOptions): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteCopy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
+  @scala.inline
   def remoteCopy(
     src: String,
     dest: String,
     options: ExecOptions,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
-  ): js.Thenable[ShipitLocal] = js.native
+  ): js.Thenable[ShipitLocal] = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteCopy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[ShipitLocal]]
   
   @JSImport("shipit-cli", "seq")
   @js.native
   val seq: js.Array[js.Any] = js.native
   
-  @JSImport("shipit-cli", "start")
-  @js.native
-  def start(tasks: String*): Typeofshipit = js.native
-  @JSImport("shipit-cli", "start")
-  @js.native
-  def start(tasks: String): Typeofshipit = js.native
-  @JSImport("shipit-cli", "start")
-  @js.native
-  def start(tasks: js.Array[String]): Typeofshipit = js.native
+  @scala.inline
+  def start(tasks: String*): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(tasks.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
+  @scala.inline
+  def start(tasks: String): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(tasks.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
+  @scala.inline
+  def start(tasks: js.Array[String]): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(tasks.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
   
-  @JSImport("shipit-cli", "task")
-  @js.native
-  def task(name: String, depsOrFn: js.Array[String]): Typeofshipit = js.native
-  @JSImport("shipit-cli", "task")
-  @js.native
-  def task(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): Typeofshipit = js.native
-  @JSImport("shipit-cli", "task")
-  @js.native
-  def task(name: String, depsOrFn: EmptyCallback): Typeofshipit = js.native
-  @JSImport("shipit-cli", "task")
-  @js.native
-  def task(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): Typeofshipit = js.native
+  @scala.inline
+  def task(name: String, depsOrFn: js.Array[String]): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("task")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  @scala.inline
+  def task(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("task")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  @scala.inline
+  def task(name: String, depsOrFn: EmptyCallback): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("task")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  @scala.inline
+  def task(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("task")(name.asInstanceOf[js.Any], depsOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
   
   @JSImport("shipit-cli", "tasks")
   @js.native
@@ -166,14 +141,13 @@ object mod {
     js.Thenable[ShipitLocal]
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var environment: String = js.native
+    var environment: String
     
-    var stderr: WriteStream = js.native
+    var stderr: WriteStream
     
-    var stdout: WriteStream = js.native
+    var stdout: WriteStream
   }
   object Options {
     
@@ -197,14 +171,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ShipitLocal extends StObject {
     
-    var child: ChildProcess = js.native
+    var child: ChildProcess
     
-    var stderr: WriteStream = js.native
+    var stderr: WriteStream
     
-    var stdout: WriteStream = js.native
+    var stdout: WriteStream
   }
   object ShipitLocal {
     
@@ -235,16 +208,15 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait Task_ extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var dep: js.Array[String] = js.native
+    var dep: js.Array[String]
     
-    def fn(): Unit = js.native
+    def fn(): Unit
     
-    var name: String = js.native
+    var name: String
   }
   object Task_ {
     

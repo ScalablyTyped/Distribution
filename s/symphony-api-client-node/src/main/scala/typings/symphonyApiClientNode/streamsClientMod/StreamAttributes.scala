@@ -2,13 +2,11 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamAttributes extends StObject {
   
-  var members: js.Array[Double] = js.native
+  var members: js.Array[Double]
 }
 object StreamAttributes {
   

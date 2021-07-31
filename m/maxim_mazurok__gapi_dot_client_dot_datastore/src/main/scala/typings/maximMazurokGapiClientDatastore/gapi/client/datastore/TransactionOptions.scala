@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionOptions extends StObject {
   
   /** The transaction should only allow reads. */
-  var readOnly: js.UndefOr[js.Any] = js.native
+  var readOnly: js.UndefOr[js.Any] = js.undefined
   
   /** The transaction should allow both reads and writes. */
-  var readWrite: js.UndefOr[ReadWrite] = js.native
+  var readWrite: js.UndefOr[ReadWrite] = js.undefined
 }
 object TransactionOptions {
   

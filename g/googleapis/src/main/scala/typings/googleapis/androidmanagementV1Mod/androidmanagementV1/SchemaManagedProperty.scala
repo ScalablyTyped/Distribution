@@ -2,53 +2,51 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Managed property.
   */
-@js.native
 trait SchemaManagedProperty extends StObject {
   
   /**
     * The default value of the property. BUNDLE_ARRAY properties don&#39;t have
     * a default value.
     */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A longer description of the property, providing more detail of what it
     * affects. Localized.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * For CHOICE or MULTISELECT properties, the list of possible entries.
     */
-  var entries: js.UndefOr[js.Array[SchemaManagedPropertyEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaManagedPropertyEntry]] = js.undefined
   
   /**
     * The unique key that the app uses to identify the property, e.g.
     * &quot;com.google.android.gm.fieldname&quot;.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * For BUNDLE_ARRAY properties, the list of nested properties. A
     * BUNDLE_ARRAY property is at most two levels deep.
     */
-  var nestedProperties: js.UndefOr[js.Array[SchemaManagedProperty]] = js.native
+  var nestedProperties: js.UndefOr[js.Array[SchemaManagedProperty]] = js.undefined
   
   /**
     * The name of the property. Localized.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the property.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedProperty {
   

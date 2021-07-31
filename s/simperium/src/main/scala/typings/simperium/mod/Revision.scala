@@ -2,17 +2,15 @@ package typings.simperium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Revision[T] extends StObject {
   
-  var data: T = js.native
+  var data: T
   
-  var id: EntityId = js.native
+  var id: EntityId
   
-  var version: Double = js.native
+  var version: Double
 }
 object Revision {
   
@@ -23,7 +21,7 @@ object Revision {
   }
   
   @scala.inline
-  implicit class RevisionMutableBuilder[Self <: Revision[_], T] (val x: Self with Revision[T]) extends AnyVal {
+  implicit class RevisionMutableBuilder[Self <: Revision[?], T] (val x: Self & Revision[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

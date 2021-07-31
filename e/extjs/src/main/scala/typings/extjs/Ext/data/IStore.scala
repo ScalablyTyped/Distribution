@@ -4,17 +4,17 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.util.IMixedCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IStore extends IAbstractStore {
+trait IStore
+  extends StObject
+     with IAbstractStore {
   
   /** [Method] Adds Model instance to the Store
     * @param model Ext.data.Model[]/Ext.data.Model.../Object[]/Object... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
     * @returns Ext.data.Model[] The model instances that were added
     */
-  var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.native
+  var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.undefined
   
   /** [Method] Adds a new Filter to this Store s filter set and by default applys the updated filter set to the Store s unfiltered
     * @param filters Object[]/Ext.util.Filter[] The set of filters to add to the current filter set.
@@ -22,12 +22,12 @@ trait IStore extends IAbstractStore {
     */
   var addFilter: js.UndefOr[
     js.Function2[/* filters */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Local sort only Inserts the passed Record into the Store at the index where it should go based on the current sort
     * @param record Ext.data.Record
     */
-  var addSorted: js.UndefOr[js.Function1[/* record */ js.UndefOr[IRecord], Unit]] = js.native
+  var addSorted: js.UndefOr[js.Function1[/* record */ js.UndefOr[IRecord], Unit]] = js.undefined
   
   /** [Method] Runs the aggregate function for all the records in the store
     * @param fn Function The function to execute. The function is called with a single parameter, an array of records for that group.
@@ -42,12 +42,12 @@ trait IStore extends IAbstractStore {
       /* scope */ js.UndefOr[js.Any], 
       /* grouped */ js.UndefOr[Boolean], 
       /* args */ js.UndefOr[Array], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoDestroy: js.UndefOr[Boolean] = js.native
+  var autoDestroy: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Gets the average value in the store
     * @param field String The field in each record
@@ -55,25 +55,25 @@ trait IStore extends IAbstractStore {
     * @returns Object The average value, if no items exist, 0.
     */
   var average: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], _]
-  ] = js.native
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], js.Any]
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var buffered: js.UndefOr[Boolean] = js.native
+  var buffered: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Reverts to a view of the Record cache with no filtering applied
     * @param suppressEvent Boolean If true the filter is cleared silently. For a locally filtered Store, this means that the filter collection is cleared without firing the datachanged event. For a remotely filtered Store, this means that the filter collection is cleared, but the store is not reloaded from the server.
     */
-  var clearFilter: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.native
+  var clearFilter: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Clear any groupers in the store */
-  var clearGrouping: js.UndefOr[js.Function0[Unit]] = js.native
+  var clearGrouping: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var clearOnPageLoad: js.UndefOr[Boolean] = js.native
+  var clearOnPageLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var clearRemovedOnLoad: js.UndefOr[Boolean] = js.native
+  var clearRemovedOnLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Collects unique values for a particular dataIndex from this store
     * @param dataIndex String The property to collect
@@ -88,28 +88,28 @@ trait IStore extends IAbstractStore {
       /* bypassFilter */ js.UndefOr[Boolean], 
       Array
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Commits all Records with outstanding changes  */
-  var commitChanges: js.UndefOr[js.Function0[Unit]] = js.native
+  var commitChanges: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Gets the count of items in the store
     * @param grouped Boolean True to perform the operation for each group in the store. The value returned will be an object literal with the key being the group name and the count for each group being the value. The grouped parameter is only honored if the store has a groupField.
     * @returns Number the count
     */
-  var count: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], Double]] = js.native
+  var count: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], Double]] = js.undefined
   
   /** [Property] (Number) */
-  var currentPage: js.UndefOr[Double] = js.native
+  var currentPage: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object[]/Ext.data.Model[]) */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Calls the specified function for each record in the store
     * @param fn Function The function to call. The Record is passed as the first parameter. Returning false aborts and exits the iteration.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current record in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Filters the loaded set of records by a given set of filters
     * @param filters Object[]/Ext.util.Filter[]/String The set of filters to apply to the data. These are stored internally on the store, but the filtering itself is done on the Store's MixedCollection. See MixedCollection's filter method for filter syntax. Alternatively, pass in a property string. If no parameters are passed, the Store's existing filter set is applied.
@@ -117,13 +117,13 @@ trait IStore extends IAbstractStore {
     */
   var filter: js.UndefOr[
     js.Function2[/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Filters by a function
     * @param fn Function The function to be called. It will be passed the following parameters:
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
     */
-  var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -144,7 +144,7 @@ trait IStore extends IAbstractStore {
       /* exactMatch */ js.UndefOr[Boolean], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Find the index of the first matching Record in this Store by a function
     * @param fn Function The function to be called. It will be passed the following parameters:
@@ -159,7 +159,7 @@ trait IStore extends IAbstractStore {
       /* startIndex */ js.UndefOr[Double], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -174,7 +174,7 @@ trait IStore extends IAbstractStore {
       /* startIndex */ js.UndefOr[Double], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Finds the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -195,48 +195,48 @@ trait IStore extends IAbstractStore {
       /* exactMatch */ js.UndefOr[Boolean], 
       IModel
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Convenience function for getting the first model instance in the store
     * @param grouped Boolean True to perform the operation for each group in the store. The value returned will be an object literal with the key being the group name and the first record being the value. The grouped parameter is only honored if the store has a groupField.
     * @returns Ext.data.Model/undefined The first model instance in the store, or undefined
     */
-  var first: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], _]] = js.native
+  var first: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], js.Any]] = js.undefined
   
   /** [Method] Get the Record at the specified index
     * @param index Number The index of the Record to find.
     * @returns Ext.data.Model The Record at the passed index. Returns undefined if not found.
     */
-  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], IModel]] = js.native
+  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], IModel]] = js.undefined
   
   /** [Method] Get the Record with the specified id
     * @param id Mixed The id of the Record to find.
     * @returns Ext.data.Model The Record with the passed id. Returns null if not found.
     */
-  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], IModel]] = js.native
+  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], IModel]] = js.undefined
   
   /** [Method] Gets the number of records in store
     * @returns Number The number of Records in the Store.
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the string to group on for a given model instance
     * @param instance Ext.data.Model The model instance
     * @returns String The string to compare when forming groups
     */
-  var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], String]] = js.native
+  var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], String]] = js.undefined
   
   /** [Method] Returns an array containing the result of applying grouping to the records in this store
     * @param groupName String Pass in an optional groupName argument to access a specific group as defined by getGroupString.
     * @returns Object/Object[] The grouped data
     */
-  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], _]] = js.native
+  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Determines the page from a record index
     * @param index Number The record index
     * @returns Number The page the record belongs to
     */
-  var getPageFromRecordIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Double]] = js.native
+  var getPageFromRecordIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Double]] = js.undefined
   
   /** [Method] Gathers a range of Records between specified indices
     * @param start Number The starting index. Defaults to zero for non buffered Stores.
@@ -251,12 +251,12 @@ trait IStore extends IAbstractStore {
       /* options */ js.UndefOr[js.Any], 
       Array
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the total number of Model instances that the Proxy indicates exist
     * @returns Number The total number of Model instances available via the Proxy. 0 returned if no value has been set via the reader.
     */
-  var getTotalCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getTotalCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Groups data inside the store
     * @param groupers String/Object[] Either a string name of one of the fields in this Store's configured Model, or an Array of grouper configurations.
@@ -264,16 +264,16 @@ trait IStore extends IAbstractStore {
     */
   var group: js.UndefOr[
     js.Function2[/* groupers */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var groupDir: js.UndefOr[String] = js.native
+  var groupDir: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var groupField: js.UndefOr[String] = js.native
+  var groupField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.util.MixedCollection) */
-  var groupers: js.UndefOr[IMixedCollection] = js.native
+  var groupers: js.UndefOr[IMixedCollection] = js.undefined
   
   /** [Method] Guarantee a specific range this will load the store with a range that must be the pageSize or smaller and take car
     * @param start Object
@@ -291,25 +291,25 @@ trait IStore extends IAbstractStore {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Get the index of the record within the store
     * @param record Ext.data.Model The Ext.data.Model object to find.
     * @returns Number The index of the passed Record. Returns -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.native
+  var indexOf: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.undefined
   
   /** [Method] Get the index within the store of the Record with the passed id
     * @param id String The id of the Record to find.
     * @returns Number The index of the Record. Returns -1 if not found.
     */
-  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.native
+  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
   
   /** [Method] Get the index within the entire dataset
     * @param record Ext.data.Model The Ext.data.Model object to find.
     * @returns Number The index of the passed Record. Returns -1 if not found.
     */
-  var indexOfTotal: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.native
+  var indexOfTotal: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Double]] = js.undefined
   
   /** [Method] Inserts Model instances into the Store at the given index and fires the add event
     * @param index Number The start index at which to insert the passed Records.
@@ -318,26 +318,26 @@ trait IStore extends IAbstractStore {
     */
   var insert: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[Double], /* records */ js.UndefOr[Array], Array]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns true if this store is currently filtered
     * @returns Boolean
     */
-  var isFiltered: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFiltered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Checks if the store is currently grouped
     * @returns Boolean true if the store is grouped.
     */
-  var isGrouped: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isGrouped: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Convenience function for getting the last model instance in the store
     * @param grouped Boolean True to perform the operation for each group in the store. The value returned will be an object literal with the key being the group name and the last record being the value. The grouped parameter is only honored if the store has a groupField.
     * @returns Ext.data.Model/undefined The last model instance in the store, or undefined
     */
-  var last: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], _]] = js.native
+  var last: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], js.Any]] = js.undefined
   
   /** [Config Option] (Number) */
-  var leadingBufferZone: js.UndefOr[Double] = js.native
+  var leadingBufferZone: js.UndefOr[Double] = js.undefined
   
   /** [Method] Loads an array of data straight into the Store
     * @param data Ext.data.Model[]/Object[] Array of data to load. Any non-model instances will be cast into model instances first.
@@ -345,7 +345,7 @@ trait IStore extends IAbstractStore {
     */
   var loadData: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Loads a given page of data by setting the start and limit values appropriately
     * @param page Number The number of the page to load.
@@ -353,7 +353,7 @@ trait IStore extends IAbstractStore {
     */
   var loadPage: js.UndefOr[
     js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Loads data via the bound Proxy s reader Use this method if you are attempting to load data and want to utilize the c
     * @param data Object[] The full JSON object you'd like to load into the Data store.
@@ -361,7 +361,7 @@ trait IStore extends IAbstractStore {
     */
   var loadRawData: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[Array], /* append */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Loads an array of model instances into the store fires the datachanged event
     * @param records Ext.data.Model[] The array of records to load
@@ -369,7 +369,7 @@ trait IStore extends IAbstractStore {
     */
   var loadRecords: js.UndefOr[
     js.Function2[/* records */ js.UndefOr[Array], /* options */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Gets the maximum value in the store
     * @param field String The field in each record
@@ -377,8 +377,8 @@ trait IStore extends IAbstractStore {
     * @returns Object The maximum value, if no items exist, undefined.
     */
   var max: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], _]
-  ] = js.native
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], js.Any]
+  ] = js.undefined
   
   /** [Method] Gets the minimum value in the store
     * @param field String The field in each record
@@ -386,21 +386,21 @@ trait IStore extends IAbstractStore {
     * @returns Object The minimum value, if no items exist, undefined.
     */
   var min: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], _]
-  ] = js.native
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], js.Any]
+  ] = js.undefined
   
   /** [Method] Loads the next page in the current data set
     * @param options Object See options for load
     */
-  var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** [Method] Prefetches data into the store using its configured proxy
     * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
     */
-  var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Prefetches a page of data
     * @param page Number The page to prefetch
@@ -408,21 +408,21 @@ trait IStore extends IAbstractStore {
     */
   var prefetchPage: js.UndefOr[
     js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Ensures that the specified range of rows is present in the cache
     * @param start Object
     * @param end Object
     */
-  var prefetchRange: js.UndefOr[js.Function2[/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any], Unit]] = js.native
+  var prefetchRange: js.UndefOr[js.Function2[/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Loads the previous page in the current data set
     * @param options Object See options for load
     */
-  var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var purgePageCount: js.UndefOr[Double] = js.native
+  var purgePageCount: js.UndefOr[Double] = js.undefined
   
   /** [Method] Query all the cached records in this Store by name value pair
     * @param property String The property to create the filter function for
@@ -441,7 +441,7 @@ trait IStore extends IAbstractStore {
       /* exactMatch */ js.UndefOr[Boolean], 
       IMixedCollection
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Query all the cached records in this Store using a filtering function
     * @param fn Function The function to be called. It will be passed the following parameters:
@@ -450,24 +450,24 @@ trait IStore extends IAbstractStore {
     */
   var queryBy: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Rejects outstanding changes on all modified records and re insert any records that were removed locally  */
-  var rejectChanges: js.UndefOr[js.Function0[Unit]] = js.native
+  var rejectChanges: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var remoteGroup: js.UndefOr[Boolean] = js.native
+  var remoteGroup: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Removes the specified record s from the Store firing the remove event for each instance that is removed
     * @param records Ext.data.Model/Ext.data.Model[]/Number/Number[] Model instance or array of instances to remove or an array of indices from which to remove records.
     */
-  var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Removes all items from the store
     * @param silent Boolean Pass true to prevent the record bulkremove and clear events from being fired.
     */
   @JSName("removeAll")
-  var removeAll_IStore: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+  var removeAll_IStore: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Removes the model instance s at the given index
     * @param index Number The record index
@@ -475,7 +475,7 @@ trait IStore extends IAbstractStore {
     */
   var removeAt: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[Double], /* count */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes an individual Filter from the current filter set using the passed Filter Filter id and by default applys the
     * @param toRemove Mixed The id of a Filter to remove from the filter set, or a Filter instance to remove.
@@ -483,19 +483,19 @@ trait IStore extends IAbstractStore {
     */
   var removeFilter: js.UndefOr[
     js.Function2[/* toRemove */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Ext.util.MixedCollection) */
-  var snapshot: js.UndefOr[IMixedCollection] = js.native
+  var snapshot: js.UndefOr[IMixedCollection] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var sortOnFilter: js.UndefOr[Boolean] = js.native
+  var sortOnFilter: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] because prefetchData is stored by index this invalidates all of the prefetchedData
     * @returns Ext.util.Sorter[]
     */
   @JSName("sort")
-  var sort_IStore: js.UndefOr[js.Function0[Array]] = js.native
+  var sort_IStore: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Sums the value of field for each record in store and returns the result
     * @param field String A field in each record
@@ -504,10 +504,10 @@ trait IStore extends IAbstractStore {
     */
   var sum: js.UndefOr[
     js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], Double]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Number) */
-  var trailingBufferZone: js.UndefOr[Double] = js.native
+  var trailingBufferZone: js.UndefOr[Double] = js.undefined
 }
 object IStore {
   
@@ -540,7 +540,7 @@ object IStore {
     
     @scala.inline
     def setAggregate(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* grouped */ js.UndefOr[Boolean], /* args */ js.UndefOr[Array]) => _
+      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* grouped */ js.UndefOr[Boolean], /* args */ js.UndefOr[Array]) => js.Any
     ): Self = StObject.set(x, "aggregate", js.Any.fromFunction4(value))
     
     @scala.inline
@@ -553,7 +553,7 @@ object IStore {
     def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
     
     @scala.inline
-    def setAverage(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "average", js.Any.fromFunction2(value))
+    def setAverage(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "average", js.Any.fromFunction2(value))
     
     @scala.inline
     def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
@@ -671,7 +671,7 @@ object IStore {
     def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     
     @scala.inline
-    def setFirst(value: /* grouped */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
+    def setFirst(value: /* grouped */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
@@ -701,7 +701,7 @@ object IStore {
     def setGetGroupStringUndefined: Self = StObject.set(x, "getGroupString", js.undefined)
     
     @scala.inline
-    def setGetGroups(value: /* groupName */ js.UndefOr[String] => _): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
+    def setGetGroups(value: /* groupName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
@@ -795,7 +795,7 @@ object IStore {
     def setIsGroupedUndefined: Self = StObject.set(x, "isGrouped", js.undefined)
     
     @scala.inline
-    def setLast(value: /* grouped */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
+    def setLast(value: /* grouped */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
@@ -831,13 +831,13 @@ object IStore {
     def setLoadRecordsUndefined: Self = StObject.set(x, "loadRecords", js.undefined)
     
     @scala.inline
-    def setMax(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+    def setMax(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
     
     @scala.inline
     def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+    def setMin(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
     
     @scala.inline
     def setMinUndefined: Self = StObject.set(x, "min", js.undefined)

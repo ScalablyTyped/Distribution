@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * complete, unless the container process fails, in which case the handler is
   * aborted.
   */
-@js.native
 trait SchemaLifecycle extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaLifecycle extends StObject {
     * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
     * +optional
     */
-  var postStart: js.UndefOr[SchemaHandler] = js.native
+  var postStart: js.UndefOr[SchemaHandler] = js.undefined
   
   /**
     * PreStop is called immediately before a container is terminated. The
@@ -34,7 +32,7 @@ trait SchemaLifecycle extends StObject {
     * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
     * +optional
     */
-  var preStop: js.UndefOr[SchemaHandler] = js.native
+  var preStop: js.UndefOr[SchemaHandler] = js.undefined
 }
 object SchemaLifecycle {
   

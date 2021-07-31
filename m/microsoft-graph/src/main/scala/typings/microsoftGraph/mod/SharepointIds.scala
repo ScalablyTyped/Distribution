@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharepointIds extends StObject {
   
   // The unique identifier (guid) for the item's list in SharePoint.
-  var listId: js.UndefOr[NullableOption[String]] = js.native
+  var listId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // An integer identifier for the item within the containing list.
-  var listItemId: js.UndefOr[NullableOption[String]] = js.native
+  var listItemId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-  var listItemUniqueId: js.UndefOr[NullableOption[String]] = js.native
+  var listItemUniqueId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier (guid) for the item's site collection (SPSite).
-  var siteId: js.UndefOr[NullableOption[String]] = js.native
+  var siteId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The SharePoint URL for the site that contains the item.
-  var siteUrl: js.UndefOr[NullableOption[String]] = js.native
+  var siteUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier (guid) for the tenancy.
-  var tenantId: js.UndefOr[NullableOption[String]] = js.native
+  var tenantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier (guid) for the item's site (SPWeb).
-  var webId: js.UndefOr[NullableOption[String]] = js.native
+  var webId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SharepointIds {
   

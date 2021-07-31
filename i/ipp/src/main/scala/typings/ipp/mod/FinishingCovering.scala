@@ -2,13 +2,11 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingCovering extends StObject {
   
-  var `covering-name`: js.UndefOr[String] = js.native
+  var `covering-name`: js.UndefOr[String] = js.undefined
 }
 object FinishingCovering {
   

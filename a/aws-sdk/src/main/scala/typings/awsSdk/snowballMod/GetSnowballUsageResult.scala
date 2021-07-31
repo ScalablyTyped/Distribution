@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSnowballUsageResult extends StObject {
   
   /**
     * The service limit for number of Snow devices this account can have at once. The default service limit is 1 (one).
     */
-  var SnowballLimit: js.UndefOr[Integer] = js.native
+  var SnowballLimit: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of Snow devices that this account is currently using.
     */
-  var SnowballsInUse: js.UndefOr[Integer] = js.native
+  var SnowballsInUse: js.UndefOr[Integer] = js.undefined
 }
 object GetSnowballUsageResult {
   

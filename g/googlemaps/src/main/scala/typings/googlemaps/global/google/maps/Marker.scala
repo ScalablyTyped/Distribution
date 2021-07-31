@@ -3,7 +3,6 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.ReadonlyMarkerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.constructor Maps JavaScript API}
   */
 class Marker ()
-  extends typings.googlemaps.google.maps.Marker {
+  extends StObject
+     with typings.googlemaps.google.maps.Marker {
   def this(opts: ReadonlyMarkerOptions) = this()
 }
 object Marker {

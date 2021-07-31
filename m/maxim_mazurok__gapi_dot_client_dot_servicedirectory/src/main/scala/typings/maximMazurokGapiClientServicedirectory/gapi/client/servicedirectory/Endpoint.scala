@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
   /** Optional. An IPv4 or IPv6 address. Service Directory will reject bad addresses like: "8.8.8" "8.8.8.8:53" "test:bad:address" "[::1]" "[::1]:8080" Limited to 45 characters. */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Metadata for the endpoint. This data can be consumed by service clients. Restrictions: - The entire metadata dictionary may contain up to 512 characters, spread accoss all
@@ -23,14 +21,14 @@ trait Endpoint extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Immutable. The resource name for the endpoint in the format 'projects/∗/locations/∗/namespaces/∗/services/∗/endpoints/ *'. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Optional. Service Directory will reject values outside of [0, 65535]. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object Endpoint {
   
@@ -53,7 +51,7 @@ object Endpoint {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

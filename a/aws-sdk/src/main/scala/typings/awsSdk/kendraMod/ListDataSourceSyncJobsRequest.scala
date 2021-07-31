@@ -2,41 +2,39 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataSourceSyncJobsRequest extends StObject {
   
   /**
     * The identifier of the data source.
     */
-  var Id: DataSourceId = js.native
+  var Id: DataSourceId
   
   /**
     * The identifier of the index that contains the data source.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * The maximum number of synchronization jobs to return in the response. If there are fewer results in the list, this response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourceSyncJobsRequest] = js.native
+  var MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourceSyncJobsRequest] = js.undefined
   
   /**
     * If the result of the previous request to GetDataSourceSyncJobHistory was truncated, include the NextToken to fetch the next set of jobs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
   
   /**
     * When specified, the synchronization jobs returned in the list are limited to jobs between the specified dates. 
     */
-  var StartTimeFilter: js.UndefOr[TimeRange] = js.native
+  var StartTimeFilter: js.UndefOr[TimeRange] = js.undefined
   
   /**
     * When specified, only returns synchronization jobs with the Status field equal to the specified status.
     */
-  var StatusFilter: js.UndefOr[DataSourceSyncJobStatus] = js.native
+  var StatusFilter: js.UndefOr[DataSourceSyncJobStatus] = js.undefined
 }
 object ListDataSourceSyncJobsRequest {
   

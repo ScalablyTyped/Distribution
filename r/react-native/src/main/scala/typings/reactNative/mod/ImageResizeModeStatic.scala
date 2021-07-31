@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageResizeModeStatic extends StObject {
   
   /**
@@ -13,32 +11,32 @@ trait ImageResizeModeStatic extends StObject {
     * if bigger than the area of the view.
     * The image will not be scaled up.
     */
-  var center: ImageResizeMode = js.native
+  var center: ImageResizeMode
   
   /**
     * contain - The image will be resized such that it will be completely
     * visible, contained within the frame of the View.
     */
-  var contain: ImageResizeMode = js.native
+  var contain: ImageResizeMode
   
   /**
     * cover - The image will be resized such that the entire area of the view
     * is covered by the image, potentially clipping parts of the image.
     */
-  var cover: ImageResizeMode = js.native
+  var cover: ImageResizeMode
   
   /**
     * repeat - The image will be repeated to cover the frame of the View. The
     * image will keep it's size and aspect ratio.
     */
-  var repeat: ImageResizeMode = js.native
+  var repeat: ImageResizeMode
   
   /**
     * stretch - The image will be stretched to fill the entire frame of the
     * view without clipping.  This may change the aspect ratio of the image,
     * distoring it.  Only supported on iOS.
     */
-  var stretch: ImageResizeMode = js.native
+  var stretch: ImageResizeMode
 }
 object ImageResizeModeStatic {
   

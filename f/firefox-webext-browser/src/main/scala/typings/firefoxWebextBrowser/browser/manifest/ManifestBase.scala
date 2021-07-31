@@ -2,30 +2,28 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Common properties for all manifest.json files */
-@js.native
 trait ManifestBase extends StObject {
   
-  var applications: js.UndefOr[ManifestBaseApplications] = js.native
+  var applications: js.UndefOr[ManifestBaseApplications] = js.undefined
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var browser_specific_settings: js.UndefOr[ManifestBaseBrowserSpecificSettings] = js.native
+  var browser_specific_settings: js.UndefOr[ManifestBaseBrowserSpecificSettings] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var homepage_url: js.UndefOr[String] = js.native
+  var homepage_url: js.UndefOr[String] = js.undefined
   
-  var manifest_version: Double = js.native
+  var manifest_version: Double
   
-  var name: String = js.native
+  var name: String
   
-  var short_name: js.UndefOr[String] = js.native
+  var short_name: js.UndefOr[String] = js.undefined
   
-  var version: String = js.native
+  var version: String
 }
 object ManifestBase {
   

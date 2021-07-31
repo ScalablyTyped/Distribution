@@ -4,27 +4,27 @@ import typings.webicon.iconSetOptionsMod.IconSetOptions
 import typings.webicon.webiconBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgCumulativeIconSetOptionsMod {
   
-  @js.native
-  trait SvgCumulativeIconSetOptions extends IconSetOptions {
+  trait SvgCumulativeIconSetOptions
+    extends StObject
+       with IconSetOptions {
     
     @JSName("cumulative")
-    var cumulative_SvgCumulativeIconSetOptions: `true` = js.native
+    var cumulative_SvgCumulativeIconSetOptions: `true`
     
     /**
       * The amount of miliseconds to wait before downloading the icons.
       */
-    var waitDuration: js.UndefOr[Double] = js.native
+    var waitDuration: js.UndefOr[Double] = js.undefined
   }
   object SvgCumulativeIconSetOptions {
     
     @scala.inline
-    def apply(cumulative: `true`): SvgCumulativeIconSetOptions = {
-      val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any])
+    def apply(): SvgCumulativeIconSetOptions = {
+      val __obj = js.Dynamic.literal(cumulative = true)
       __obj.asInstanceOf[SvgCumulativeIconSetOptions]
     }
     

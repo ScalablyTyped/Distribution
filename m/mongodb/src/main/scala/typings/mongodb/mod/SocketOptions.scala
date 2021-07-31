@@ -4,23 +4,21 @@ import typings.mongodb.mongodbNumbers.`4`
 import typings.mongodb.mongodbNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketOptions extends StObject {
   
   /**
     * Reconnect on error.
     * @default true
     */
-  var autoReconnect: js.UndefOr[Boolean] = js.native
+  var autoReconnect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TCP Connection timeout setting.
     * @default 10000
     */
-  var connectTimeoutMS: js.UndefOr[scala.Double] = js.native
+  var connectTimeoutMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Version of IP stack. Can be 4, 6 or null.
@@ -29,31 +27,31 @@ trait SocketOptions extends StObject {
     * If null, will attempt to connect with IPv6, and will fall back to IPv4 on failure
     * refer to http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html
     */
-  var family: js.UndefOr[`4` | `6` | Null] = js.native
+  var family: js.UndefOr[`4` | `6` | Null] = js.undefined
   
   /**
     * TCP KeepAlive enabled on the socket.
     * @default true
     */
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TCP KeepAlive initial delay before sending first keep-alive packet when idle.
     * @default 30000
     */
-  var keepAliveInitialDelay: js.UndefOr[scala.Double] = js.native
+  var keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * TCP Socket NoDelay option.
     * @default true
     */
-  var noDelay: js.UndefOr[Boolean] = js.native
+  var noDelay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TCP Socket timeout setting.
     * @default 360000
     */
-  var socketTimeoutMS: js.UndefOr[scala.Double] = js.native
+  var socketTimeoutMS: js.UndefOr[scala.Double] = js.undefined
 }
 object SocketOptions {
   

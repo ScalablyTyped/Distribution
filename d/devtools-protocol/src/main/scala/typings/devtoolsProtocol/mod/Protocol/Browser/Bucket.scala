@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
   /**
     * Number of samples.
     */
-  var count: integer = js.native
+  var count: integer
   
   /**
     * Maximum value (exclusive).
     */
-  var high: integer = js.native
+  var high: integer
   
   /**
     * Minimum value (inclusive).
     */
-  var low: integer = js.native
+  var low: integer
 }
 object Bucket {
   

@@ -59,33 +59,32 @@ import typings.wepy.wepyStrings.json
 import typings.wepy.wepyStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wxEnhancedMod {
   
-  @js.native
   trait Animation
-    extends RotateAnimation
+    extends StObject
+       with RotateAnimation
        with ScaleAnimation
        with SkewAnimation
        with TranslateAnimation {
     
-    def backgroundColor(x: String): Animation = js.native
+    def backgroundColor(x: String): Animation
     
-    def bottom(x: Double): Animation = js.native
+    def bottom(x: Double): Animation
     
-    def height(x: Double): Animation = js.native
+    def height(x: Double): Animation
     
-    def left(x: Double): Animation = js.native
+    def left(x: Double): Animation
     
-    def opacity(x: Double): Animation = js.native
+    def opacity(x: Double): Animation
     
-    def right(x: Double): Animation = js.native
+    def right(x: Double): Animation
     
-    def top(x: Double): Animation = js.native
+    def top(x: Double): Animation
     
-    def width(x: Double): Animation = js.native
+    def width(x: Double): Animation
   }
   object Animation {
     
@@ -153,10 +152,9 @@ object wxEnhancedMod {
   
   type CallbackFunction[T] = js.Function1[/* callbacks */ Complete[T], Unit]
   
-  @js.native
   trait FilePathParam extends StObject {
     
-    var filePath: String = js.native
+    var filePath: String
   }
   object FilePathParam {
     
@@ -174,12 +172,11 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait LagLng extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object LagLng {
     
@@ -200,40 +197,77 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait MapContext extends StObject {
     
-    def getCenterLocation(callbacks: Complete[LagLng]): Unit = js.native
+    def getCenterLocation(callbacks: Complete[LagLng]): Unit
     @JSName("getCenterLocation")
-    var getCenterLocation_Original: CallbackFunction[LagLng] = js.native
+    var getCenterLocation_Original: CallbackFunction[LagLng]
     
-    def getRegion(callbacks: Complete[Northeast]): Unit = js.native
+    def getRegion(callbacks: Complete[Northeast]): Unit
     @JSName("getRegion")
-    var getRegion_Original: CallbackFunction[Northeast] = js.native
+    var getRegion_Original: CallbackFunction[Northeast]
     
-    def getScale(callbacks: Complete[Scale]): Unit = js.native
+    def getScale(callbacks: Complete[Scale]): Unit
     @JSName("getScale")
-    var getScale_Original: CallbackFunction[Scale] = js.native
+    var getScale_Original: CallbackFunction[Scale]
     
-    def includePoints(params: Padding): Unit = js.native
+    def includePoints(params: Padding): Unit
     
-    def moveToLocation(): Unit = js.native
+    def moveToLocation(): Unit
     
-    def translateMarker(params: AnimationEnd): Unit = js.native
+    def translateMarker(params: AnimationEnd): Unit
+  }
+  object MapContext {
+    
+    @scala.inline
+    def apply(
+      getCenterLocation: /* callbacks */ Complete[LagLng] => Unit,
+      getRegion: /* callbacks */ Complete[Northeast] => Unit,
+      getScale: /* callbacks */ Complete[Scale] => Unit,
+      includePoints: Padding => Unit,
+      moveToLocation: () => Unit,
+      translateMarker: AnimationEnd => Unit
+    ): MapContext = {
+      val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), getRegion = js.Any.fromFunction1(getRegion), getScale = js.Any.fromFunction1(getScale), includePoints = js.Any.fromFunction1(includePoints), moveToLocation = js.Any.fromFunction0(moveToLocation), translateMarker = js.Any.fromFunction1(translateMarker))
+      __obj.asInstanceOf[MapContext]
+    }
+    
+    @scala.inline
+    implicit class MapContextMutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGetCenterLocation(value: /* callbacks */ Complete[LagLng] => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetRegion(value: /* callbacks */ Complete[Northeast] => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetScale(value: /* callbacks */ Complete[Scale] => Unit): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setIncludePoints(value: Padding => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setTranslateMarker(value: AnimationEnd => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
-  trait RequestParam extends UrlParam {
+  trait RequestParam
+    extends StObject
+       with UrlParam {
     
-    var data: js.UndefOr[js.Object | String | ArrayBuffer] = js.native
+    var data: js.UndefOr[js.Object | String | ArrayBuffer] = js.undefined
     
-    var dataType: js.UndefOr[json | text] = js.native
+    var dataType: js.UndefOr[json | text] = js.undefined
     
-    var header: js.UndefOr[js.Object] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
     
-    var method: js.UndefOr[GET | OPTIONS | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.native
+    var method: js.UndefOr[GET | OPTIONS | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.undefined
     
-    var responseType: js.UndefOr[text | arraybuffer] = js.native
+    var responseType: js.UndefOr[text | arraybuffer] = js.undefined
   }
   object RequestParam {
     
@@ -278,18 +312,17 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait RotateAnimation extends StObject {
     
-    def rotate(deg: Double): Animation = js.native
+    def rotate(deg: Double): Animation
     
-    def rotate3d(): Animation = js.native
+    def rotate3d(): Animation
     
-    def rotateX(deg: Double): Animation = js.native
+    def rotateX(deg: Double): Animation
     
-    def rotateY(deg: Double): Animation = js.native
+    def rotateY(deg: Double): Animation
     
-    def rotateZ(deg: Double): Animation = js.native
+    def rotateZ(deg: Double): Animation
   }
   object RotateAnimation {
     
@@ -325,18 +358,17 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait ScaleAnimation extends StObject {
     
-    def scale(sx: Double): Animation = js.native
+    def scale(sx: Double): Animation
     
-    def scale3d(): Animation = js.native
+    def scale3d(): Animation
     
-    def scaleX(sx: Double): Animation = js.native
+    def scaleX(sx: Double): Animation
     
-    def scaleY(sy: Double): Animation = js.native
+    def scaleY(sy: Double): Animation
     
-    def scaleZ(sz: Double): Animation = js.native
+    def scaleZ(sz: Double): Animation
   }
   object ScaleAnimation {
     
@@ -372,14 +404,13 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait SkewAnimation extends StObject {
     
-    def skew(ax: Double): Animation = js.native
+    def skew(ax: Double): Animation
     
-    def skewX(ax: Double): Animation = js.native
+    def skewX(ax: Double): Animation
     
-    def skewY(ay: Double): Animation = js.native
+    def skewY(ay: Double): Animation
   }
   object SkewAnimation {
     
@@ -403,18 +434,17 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait TranslateAnimation extends StObject {
     
-    def translate(tx: Double): Animation = js.native
+    def translate(tx: Double): Animation
     
-    def translate3d(): Animation = js.native
+    def translate3d(): Animation
     
-    def translateX(tx: Double): Animation = js.native
+    def translateX(tx: Double): Animation
     
-    def translateY(ty: Double): Animation = js.native
+    def translateY(ty: Double): Animation
     
-    def translateZ(tz: Double): Animation = js.native
+    def translateZ(tz: Double): Animation
   }
   object TranslateAnimation {
     
@@ -450,10 +480,9 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait UrlParam extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object UrlParam {
     
@@ -471,22 +500,21 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait UserInfo extends StObject {
     
-    var avatarUrl: String = js.native
+    var avatarUrl: String
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var gender: String = js.native
+    var gender: String
     
-    var language: String = js.native
+    var language: String
     
-    var nickName: String = js.native
+    var nickName: String
     
-    var province: String = js.native
+    var province: String
   }
   object UserInfo {
     
@@ -530,50 +558,49 @@ object wxEnhancedMod {
     }
   }
   
-  @js.native
   trait WechatProfileDetails extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var homeAddressCity: js.UndefOr[String] = js.native
+    var homeAddressCity: js.UndefOr[String] = js.undefined
     
-    var homeAddressCountry: js.UndefOr[String] = js.native
+    var homeAddressCountry: js.UndefOr[String] = js.undefined
     
-    var homeAddressPostalCode: js.UndefOr[String] = js.native
+    var homeAddressPostalCode: js.UndefOr[String] = js.undefined
     
-    var homeAddressState: js.UndefOr[String] = js.native
+    var homeAddressState: js.UndefOr[String] = js.undefined
     
-    var homeAddressStreet: js.UndefOr[String] = js.native
+    var homeAddressStreet: js.UndefOr[String] = js.undefined
     
-    var homeFaxNumber: js.UndefOr[String] = js.native
+    var homeFaxNumber: js.UndefOr[String] = js.undefined
     
-    var homePhoneNumber: js.UndefOr[String] = js.native
+    var homePhoneNumber: js.UndefOr[String] = js.undefined
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var middleName: js.UndefOr[String] = js.native
+    var middleName: js.UndefOr[String] = js.undefined
     
-    var mobilePhoneNumber: js.UndefOr[String] = js.native
+    var mobilePhoneNumber: js.UndefOr[String] = js.undefined
     
-    var nickName: js.UndefOr[String] = js.native
+    var nickName: js.UndefOr[String] = js.undefined
     
-    var photoFilePath: js.UndefOr[String] = js.native
+    var photoFilePath: js.UndefOr[String] = js.undefined
     
-    var remark: js.UndefOr[String] = js.native
+    var remark: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var workAddressCity: js.UndefOr[String] = js.native
+    var workAddressCity: js.UndefOr[String] = js.undefined
     
-    var workAddressCountry: js.UndefOr[String] = js.native
+    var workAddressCountry: js.UndefOr[String] = js.undefined
     
-    var workAddressPostalCode: js.UndefOr[String] = js.native
+    var workAddressPostalCode: js.UndefOr[String] = js.undefined
     
-    var workAddressState: js.UndefOr[String] = js.native
+    var workAddressState: js.UndefOr[String] = js.undefined
     
-    var workAddressStreet: js.UndefOr[String] = js.native
+    var workAddressStreet: js.UndefOr[String] = js.undefined
   }
   object WechatProfileDetails {
     
@@ -719,7 +746,7 @@ object wxEnhancedMod {
     
     def addPhoneContact(param: WechatProfileDetails): js.Promise[Unit] = js.native
     
-    def authorize(param: Scope): js.Promise[_] = js.native
+    def authorize(param: Scope): js.Promise[js.Any] = js.native
     
     def canIUse(name: String): js.Promise[Boolean] = js.native
     
@@ -787,8 +814,8 @@ object wxEnhancedMod {
     
     def removeStorage(params: Key): js.Promise[Unit] = js.native
     
-    def request(params: String): js.Promise[_] = js.native
-    def request(params: RequestParam): js.Promise[_] = js.native
+    def request(params: String): js.Promise[js.Any] = js.native
+    def request(params: RequestParam): js.Promise[js.Any] = js.native
     
     def requestPayment(params: NonceStr): js.Promise[Unit] = js.native
     

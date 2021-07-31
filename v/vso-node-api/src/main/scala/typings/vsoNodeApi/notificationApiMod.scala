@@ -22,7 +22,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssNotificationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationApiMod {
@@ -61,17 +60,13 @@ object notificationApiMod {
     def listNotificationReasons(notificationIds: Double): js.Promise[js.Array[NotificationReason]] = js.native
     
     def listSubscriptions(): js.Promise[js.Array[NotificationSubscription]] = js.native
-    def listSubscriptions(
-      targetId: js.UndefOr[scala.Nothing],
-      ids: js.UndefOr[scala.Nothing],
-      queryFlags: SubscriptionQueryFlags
-    ): js.Promise[js.Array[NotificationSubscription]] = js.native
-    def listSubscriptions(targetId: js.UndefOr[scala.Nothing], ids: js.Array[String]): js.Promise[js.Array[NotificationSubscription]] = js.native
-    def listSubscriptions(targetId: js.UndefOr[scala.Nothing], ids: js.Array[String], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
     def listSubscriptions(targetId: String): js.Promise[js.Array[NotificationSubscription]] = js.native
-    def listSubscriptions(targetId: String, ids: js.UndefOr[scala.Nothing], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
     def listSubscriptions(targetId: String, ids: js.Array[String]): js.Promise[js.Array[NotificationSubscription]] = js.native
     def listSubscriptions(targetId: String, ids: js.Array[String], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: String, ids: Unit, queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: Unit, ids: js.Array[String]): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: Unit, ids: js.Array[String], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: Unit, ids: Unit, queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
     
     def performBatchNotificationOperations(operation: BatchNotificationOperation): js.Promise[Unit] = js.native
     

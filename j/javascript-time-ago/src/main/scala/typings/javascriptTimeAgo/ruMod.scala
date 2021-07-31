@@ -9,7 +9,6 @@ import typings.javascriptTimeAgo.javascriptTimeAgoStrings.two
 import typings.javascriptTimeAgo.localeMod.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruMod extends Shortcut {
@@ -18,34 +17,32 @@ object ruMod extends Shortcut {
   @js.native
   val ^ : Locale = js.native
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: ru = js.native
+    var locale: ru
     
-    var long: Duration = js.native
+    var long: Duration
     
-    var `long-convenient`: Duration = js.native
+    var `long-convenient`: Duration
     
-    var `long-time`: Duration = js.native
+    var `long-time`: Duration
     
-    var narrow: Duration = js.native
+    var narrow: Duration
     
-    def quantify(n: Double): one | two | few | other = js.native
+    def quantify(n: Double): one | two | few | other
     
-    var short: Duration = js.native
+    var short: Duration
     
-    var `short-convenient`: Duration = js.native
+    var `short-convenient`: Duration
     
-    var `short-time`: Duration = js.native
+    var `short-time`: Duration
     
-    var tiny: Duration = js.native
+    var tiny: Duration
   }
   object Locale {
     
     @scala.inline
     def apply(
-      locale: ru,
       long: Duration,
       `long-convenient`: Duration,
       `long-time`: Duration,
@@ -56,7 +53,7 @@ object ruMod extends Shortcut {
       `short-time`: Duration,
       tiny: Duration
     ): Locale = {
-      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify), short = short.asInstanceOf[js.Any], tiny = tiny.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(locale = "ru", long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify), short = short.asInstanceOf[js.Any], tiny = tiny.asInstanceOf[js.Any])
       __obj.updateDynamic("long-convenient")(`long-convenient`.asInstanceOf[js.Any])
       __obj.updateDynamic("long-time")(`long-time`.asInstanceOf[js.Any])
       __obj.updateDynamic("short-convenient")(`short-convenient`.asInstanceOf[js.Any])

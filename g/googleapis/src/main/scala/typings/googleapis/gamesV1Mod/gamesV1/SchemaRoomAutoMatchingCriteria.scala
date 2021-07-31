@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a room auto-match criteria object.
   */
-@js.native
 trait SchemaRoomAutoMatchingCriteria extends StObject {
   
   /**
@@ -16,25 +14,25 @@ trait SchemaRoomAutoMatchingCriteria extends StObject {
     * exclusive bitmasks, the result must be zero. Can be used to support
     * exclusive roles within a game.
     */
-  var exclusiveBitmask: js.UndefOr[String] = js.native
+  var exclusiveBitmask: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomAutoMatchingCriteria.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of players that should be added to the room by
     * auto-matching.
     */
-  var maxAutoMatchingPlayers: js.UndefOr[Double] = js.native
+  var maxAutoMatchingPlayers: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum number of players that should be added to the room by
     * auto-matching.
     */
-  var minAutoMatchingPlayers: js.UndefOr[Double] = js.native
+  var minAutoMatchingPlayers: js.UndefOr[Double] = js.undefined
 }
 object SchemaRoomAutoMatchingCriteria {
   

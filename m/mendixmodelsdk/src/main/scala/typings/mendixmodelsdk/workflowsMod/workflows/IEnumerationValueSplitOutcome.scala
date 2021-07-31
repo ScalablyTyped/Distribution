@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.workflowsMod.workflows
 import typings.mendixmodelsdk.enumerationsMod.enumerations.IEnumerationValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 8.15.0: introduced
   */
 @js.native
-trait IEnumerationValueSplitOutcome extends IExclusiveSplitOutcome {
+trait IEnumerationValueSplitOutcome
+  extends StObject
+     with IExclusiveSplitOutcome {
   
   /**
     * This property is required and cannot be set to null.

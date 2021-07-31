@@ -11,8 +11,8 @@ Shapes and calculators for spherical coordinates.
 | Full name          | d3-geo |
 | Keywords           | d3, d3-module, geo, maps, cartography |
 | # releases         | 13 |
-| # dependents       | 158 |
-| # downloads        | 48338662 |
+| # dependents       | 178 |
+| # downloads        | 58138783 |
 | # stars            | 0 |
 
 ## Links

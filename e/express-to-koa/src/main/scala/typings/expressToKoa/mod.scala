@@ -7,13 +7,11 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-to-koa", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     middleware: js.Function3[
       /* req */ IncomingMessage, 
@@ -21,5 +19,9 @@ object mod {
       /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
       Unit
     ]
-  ): Middleware[DefaultState, DefaultContext] = js.native
+  ): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
+  @JSImport("express-to-koa", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

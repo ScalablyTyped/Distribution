@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * contains the routine to check Thai input sequence checking
   * @since OOo 1.1.2
   */
-@js.native
-trait XInputSequenceChecker extends XInterface {
+trait XInputSequenceChecker
+  extends StObject
+     with XInterface {
   
   /**
     * @param aText Text to be checked.
@@ -21,7 +21,7 @@ trait XInputSequenceChecker extends XInterface {
     * @param nInputCheckMode One of {@link InputSequenceCheckMode} constants.
     * @returns true/false for the input check
     */
-  def checkInputSequence(aText: String, nPos: Double, cInputChar: String, nInputCheckMode: Double): Boolean = js.native
+  def checkInputSequence(aText: String, nPos: Double, cInputChar: String, nInputCheckMode: Double): Boolean
 }
 object XInputSequenceChecker {
   

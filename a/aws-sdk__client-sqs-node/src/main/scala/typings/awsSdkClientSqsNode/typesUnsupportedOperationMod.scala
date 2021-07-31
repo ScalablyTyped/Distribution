@@ -4,24 +4,23 @@ import typings.awsSdkClientSqsNode.sendMessageBatchExceptionsUnionMod.SendMessag
 import typings.awsSdkClientSqsNode.sendMessageExceptionsUnionMod.SendMessageExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUnsupportedOperationMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_UnsupportedOperationDetails> * / any */ @js.native
-  trait UnsupportedOperation
-    extends SendMessageBatchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_UnsupportedOperationDetails> * / any */ trait UnsupportedOperation
+    extends StObject
+       with SendMessageBatchExceptionsUnion
        with SendMessageExceptionsUnion {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation
   }
   object UnsupportedOperation {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation): UnsupportedOperation = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): UnsupportedOperation = {
+      val __obj = js.Dynamic.literal(name = "UnsupportedOperation")
       __obj.asInstanceOf[UnsupportedOperation]
     }
     
@@ -33,6 +32,5 @@ object typesUnsupportedOperationMod {
     }
   }
   
-  @js.native
   trait UnsupportedOperationDetails extends StObject
 }

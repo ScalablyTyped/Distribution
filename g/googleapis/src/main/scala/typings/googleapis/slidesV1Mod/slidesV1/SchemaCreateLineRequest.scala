@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a line.
   */
-@js.native
 trait SchemaCreateLineRequest extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait SchemaCreateLineRequest extends StObject {
     * specified `line_category` value is used.  If you do not specify either,
     * then STRAIGHT is used.
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * The element properties for the line.
     */
-  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.native
+  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
     * The category of the line to be created.  &lt;b&gt;Deprecated&lt;/b&gt;:
@@ -34,7 +32,7 @@ trait SchemaCreateLineRequest extends StObject {
     * elements.  If you specify both a `category` and a `line_category`, the
     * `category` takes precedence.
     */
-  var lineCategory: js.UndefOr[String] = js.native
+  var lineCategory: js.UndefOr[String] = js.undefined
   
   /**
     * A user-supplied object ID.  If you specify an ID, it must be unique among
@@ -45,7 +43,7 @@ trait SchemaCreateLineRequest extends StObject {
     * must not be less than 5 or greater than 50.  If you don&#39;t specify an
     * ID, a unique one is generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateLineRequest {
   

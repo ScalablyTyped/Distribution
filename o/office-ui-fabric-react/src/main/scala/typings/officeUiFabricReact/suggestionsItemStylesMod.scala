@@ -4,10 +4,13 @@ import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionsItemStyle
 import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionsItemStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsItemStylesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object SuggestionsItemGlobalClassNames {
     
@@ -40,7 +43,6 @@ object suggestionsItemStylesMod {
     def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.styles", "getStyles")
-  @js.native
-  def getStyles(props: ISuggestionsItemStyleProps): ISuggestionsItemStyles = js.native
+  @scala.inline
+  def getStyles(props: ISuggestionsItemStyleProps): ISuggestionsItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISuggestionsItemStyles]
 }

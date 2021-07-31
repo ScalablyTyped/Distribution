@@ -7,21 +7,22 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object verticalDividerMod {
   
+  @JSImport("@react-md/divider/types/VerticalDivider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/divider/types/VerticalDivider", "VerticalDivider")
   @js.native
-  val VerticalDivider: ForwardRefExoticComponent[VerticalDividerProps with RefAttributes[HTMLDivElement]] = js.native
+  val VerticalDivider: ForwardRefExoticComponent[VerticalDividerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @JSImport("@react-md/divider/types/VerticalDivider", "useVerticalDividerHeight")
-  @js.native
-  def useVerticalDividerHeight(maxHeight: Double): VerticalDividerHeight = js.native
-  @JSImport("@react-md/divider/types/VerticalDivider", "useVerticalDividerHeight")
-  @js.native
-  def useVerticalDividerHeight(maxHeight: Double, forwardedRef: Ref[HTMLDivElement | Null]): VerticalDividerHeight = js.native
+  @scala.inline
+  def useVerticalDividerHeight(maxHeight: Double): VerticalDividerHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(maxHeight.asInstanceOf[js.Any]).asInstanceOf[VerticalDividerHeight]
+  @scala.inline
+  def useVerticalDividerHeight(maxHeight: Double, forwardedRef: Ref[HTMLDivElement | Null]): VerticalDividerHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(maxHeight.asInstanceOf[js.Any], forwardedRef.asInstanceOf[js.Any])).asInstanceOf[VerticalDividerHeight]
   
   @js.native
   trait VerticalDividerHeight extends StObject {
@@ -32,8 +33,9 @@ object verticalDividerMod {
     def ref(instance: HTMLDivElement): Unit = js.native
   }
   
-  @js.native
-  trait VerticalDividerProps extends HTMLAttributes[HTMLDivElement] {
+  trait VerticalDividerProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * The max height for the vertical divider. This number **must** be greater
@@ -43,7 +45,7 @@ object verticalDividerMod {
       * parent element's height. When the value is greater than 1, it will be used
       * in `Math.min(parentElementHeight, maxHeight)`.
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
   }
   object VerticalDividerProps {
     

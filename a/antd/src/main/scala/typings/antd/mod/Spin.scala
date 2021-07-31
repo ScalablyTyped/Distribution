@@ -7,7 +7,6 @@ import typings.antd.spinMod.default
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Spin")
@@ -16,6 +15,10 @@ class Spin protected () extends default {
   def this(props: SpinProps) = this()
 }
 object Spin {
+  
+  @JSImport("antd", "Spin")
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
   object defaultProps {
@@ -44,7 +47,6 @@ object Spin {
   }
   
   /* static member */
-  @JSImport("antd", "Spin.setDefaultIndicator")
-  @js.native
-  def setDefaultIndicator(indicator: ReactNode): Unit = js.native
+  @scala.inline
+  def setDefaultIndicator(indicator: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultIndicator")(indicator.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

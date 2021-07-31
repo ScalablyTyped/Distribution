@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,23 +16,37 @@ sealed trait AccessibleLandmarkRole extends StObject
 object AccessibleLandmarkRole extends StObject {
   
   @js.native
-  sealed trait Banner extends AccessibleLandmarkRole
+  sealed trait Banner
+    extends StObject
+       with AccessibleLandmarkRole
   
   @js.native
-  sealed trait Complementary extends AccessibleLandmarkRole
+  sealed trait Complementary
+    extends StObject
+       with AccessibleLandmarkRole
   
   @js.native
-  sealed trait Main extends AccessibleLandmarkRole
+  sealed trait Main
+    extends StObject
+       with AccessibleLandmarkRole
   
   @js.native
-  sealed trait Navigation extends AccessibleLandmarkRole
+  sealed trait Navigation
+    extends StObject
+       with AccessibleLandmarkRole
   
   @js.native
-  sealed trait None extends AccessibleLandmarkRole
+  sealed trait None
+    extends StObject
+       with AccessibleLandmarkRole
   
   @js.native
-  sealed trait Region extends AccessibleLandmarkRole
+  sealed trait Region
+    extends StObject
+       with AccessibleLandmarkRole
   
   @js.native
-  sealed trait Search extends AccessibleLandmarkRole
+  sealed trait Search
+    extends StObject
+       with AccessibleLandmarkRole
 }

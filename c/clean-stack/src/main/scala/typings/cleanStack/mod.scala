@@ -2,7 +2,6 @@ package typings.cleanStack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,14 +27,15 @@ object mod {
   //     at Object.<anonymous> (/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15)
   ```
   */
-  @JSImport("clean-stack", JSImport.Namespace)
-  @js.native
-  def apply(stack: String): String = js.native
-  @JSImport("clean-stack", JSImport.Namespace)
-  @js.native
-  def apply(stack: String, options: Options): String = js.native
+  @scala.inline
+  def apply(stack: String): String = ^.asInstanceOf[js.Dynamic].apply(stack.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(stack: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(stack.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("clean-stack", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -43,14 +43,14 @@ object mod {
     		Example with `'/Users/sindresorhus/dev/clean-stack/'` as `basePath`:
     		`/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15` → `unicorn.js:2:15`
     		*/
-    val basePath: js.UndefOr[String] = js.native
+    val basePath: js.UndefOr[String] = js.undefined
     
     /**
     		Prettify the file paths in the stack:
     		`/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15` → `~/dev/clean-stack/unicorn.js:2:15`
     		@default false
     		*/
-    val pretty: js.UndefOr[Boolean] = js.native
+    val pretty: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

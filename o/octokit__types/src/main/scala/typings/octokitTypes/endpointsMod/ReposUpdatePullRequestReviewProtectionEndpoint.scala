@@ -2,37 +2,35 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdatePullRequestReviewProtectionEndpoint extends StObject {
   
-  var branch: String = js.native
+  var branch: String
   
   /**
     * Set to `true` if you want to automatically dismiss approving reviews when someone pushes a new commit.
     */
-  var dismiss_stale_reviews: js.UndefOr[Boolean] = js.native
+  var dismiss_stale_reviews: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify which users and teams can dismiss pull request reviews. Pass an empty `dismissal_restrictions` object to disable. User and team `dismissal_restrictions` are only available for organization-owned repositories. Omit this parameter for personal repositories.
     */
-  var dismissal_restrictions: js.UndefOr[ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions] = js.native
+  var dismissal_restrictions: js.UndefOr[ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Blocks merging pull requests until [code owners](https://docs.github.com/articles/about-code-owners/) have reviewed.
     */
-  var require_code_owner_reviews: js.UndefOr[Boolean] = js.native
+  var require_code_owner_reviews: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the number of reviewers required to approve pull requests. Use a number between 1 and 6.
     */
-  var required_approving_review_count: js.UndefOr[Double] = js.native
+  var required_approving_review_count: js.UndefOr[Double] = js.undefined
 }
 object ReposUpdatePullRequestReviewProtectionEndpoint {
   

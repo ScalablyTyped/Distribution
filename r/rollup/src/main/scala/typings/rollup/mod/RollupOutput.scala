@@ -2,13 +2,11 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollupOutput extends StObject {
   
-  var output: Array[OutputChunk | OutputAsset] = js.native
+  var output: Array[OutputChunk | OutputAsset]
 }
 object RollupOutput {
   

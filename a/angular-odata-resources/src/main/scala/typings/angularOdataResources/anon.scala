@@ -3,43 +3,41 @@ package typings.angularOdataResources
 import typings.angularOdataResources.OData.IExecutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Add extends StObject {
     
-    var add: js.Array[String] = js.native
+    var add: js.Array[String]
     
-    var and: js.Array[String] = js.native
+    var and: js.Array[String]
     
-    var div: js.Array[String] = js.native
+    var div: js.Array[String]
     
     @JSName("eq")
-    var eq_FAdd: js.Array[String] = js.native
+    var eq_FAdd: js.Array[String]
     
-    var ge: js.Array[String] = js.native
+    var ge: js.Array[String]
     
-    var gt: js.Array[String] = js.native
+    var gt: js.Array[String]
     
-    var le: js.Array[String] = js.native
+    var le: js.Array[String]
     
-    var lt: js.Array[String] = js.native
+    var lt: js.Array[String]
     
-    var mod: js.Array[String] = js.native
+    var mod: js.Array[String]
     
-    var mul: js.Array[String] = js.native
+    var mul: js.Array[String]
     
     @JSName("ne")
-    var ne_FAdd: js.Array[String] = js.native
+    var ne_FAdd: js.Array[String]
     
-    var not: js.Array[String] = js.native
+    var not: js.Array[String]
     
-    var or: js.Array[String] = js.native
+    var or: js.Array[String]
     
-    var sub: js.Array[String] = js.native
+    var sub: js.Array[String]
   }
   object Add {
     
@@ -155,12 +153,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Method {
     
@@ -195,11 +192,11 @@ object anon {
     
     /* static member */
     def create(propertyOrPredicate: js.Any): IExecutable = js.native
-    def create(propertyOrPredicate: js.Any, operatorOrValue: js.UndefOr[scala.Nothing], value: js.Any): IExecutable = js.native
     def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
     def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
+    def create(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): IExecutable = js.native
     
     /* static member */
-    def or(orStatements: js.Array[_]): IExecutable = js.native
+    def or(orStatements: js.Array[js.Any]): IExecutable = js.native
   }
 }

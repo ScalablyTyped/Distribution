@@ -2,13 +2,11 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorProviderCombo extends StObject {
   
-  def attachErrorEvents(errorShowing: js.Object, errorShown: js.Object, errorHidden: js.Object): Unit = js.native
+  def attachErrorEvents(errorShowing: js.Object, errorShown: js.Object, errorHidden: js.Object): Unit
   
   def createEditor(
     callbacks: js.Object,
@@ -17,37 +15,37 @@ trait EditorProviderCombo extends StObject {
     tabIndex: js.Object,
     format: js.Object,
     element: js.Object
-  ): Unit = js.native
+  ): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def getEditor(): Unit = js.native
+  def getEditor(): Unit
   
-  def getValue(): Unit = js.native
+  def getValue(): Unit
   
-  def internalSelectionChanged(evt: js.Object, ui: js.Object): Unit = js.native
+  def internalSelectionChanged(evt: js.Object, ui: js.Object): Unit
   
-  def isValid(): Unit = js.native
+  def isValid(): Unit
   
-  def keyDown(evt: js.Object, ui: js.Object): Unit = js.native
+  def keyDown(evt: js.Object, ui: js.Object): Unit
   
-  def refreshValue(): Unit = js.native
+  def refreshValue(): Unit
   
-  def removeFromParent(): Unit = js.native
+  def removeFromParent(): Unit
   
-  def requestValidate(evt: js.Object): Unit = js.native
+  def requestValidate(evt: js.Object): Unit
   
-  def selectionChanged(evt: js.Object, ui: js.Object): Unit = js.native
+  def selectionChanged(evt: js.Object, ui: js.Object): Unit
   
-  def setFocus(): Unit = js.native
+  def setFocus(): Unit
   
-  def setSize(width: js.Object, height: js.Object): Unit = js.native
+  def setSize(width: js.Object, height: js.Object): Unit
   
-  def setValue(`val`: js.Object, fire: js.Object): Unit = js.native
+  def setValue(`val`: js.Object, fire: js.Object): Unit
   
-  def validate(): Unit = js.native
+  def validate(): Unit
   
-  def validator(): Unit = js.native
+  def validator(): Unit
 }
 object EditorProviderCombo {
   

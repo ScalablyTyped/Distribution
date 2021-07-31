@@ -3,14 +3,12 @@ package typings.cordovaPluginSplashscreen
 import typings.cordovaPluginSplashscreen.anon.Hide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /** This plugin displays and hides a splash screen during application launch. */
-  var splashscreen: Hide = js.native
+  var splashscreen: Hide
 }
 object Navigator {
   

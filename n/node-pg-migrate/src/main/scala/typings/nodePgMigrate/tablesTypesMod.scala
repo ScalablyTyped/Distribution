@@ -2,16 +2,9 @@ package typings.nodePgMigrate
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodePgMigrate.anon.Options
-import typings.nodePgMigrate.anon.ReverseAddColumnsFn
-import typings.nodePgMigrate.anon.ReverseCreateConstraintFn
-import typings.nodePgMigrate.anon.ReverseCreateTableFn
-import typings.nodePgMigrate.anon.ReverseRenameColumnFn
-import typings.nodePgMigrate.anon.ReverseRenameConstraintFn
-import typings.nodePgMigrate.anon.ReverseRenameTableFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.IfNotExistsOption
 import typings.nodePgMigrate.generalTypesMod.Name
-import typings.nodePgMigrate.generalTypesMod.Type
 import typings.nodePgMigrate.generalTypesMod.Value
 import typings.nodePgMigrate.nodePgMigrateBooleans.`false`
 import typings.nodePgMigrate.nodePgMigrateStrings.ALWAYS
@@ -22,9 +15,9 @@ import typings.nodePgMigrate.nodePgMigrateStrings.FULL
 import typings.nodePgMigrate.nodePgMigrateStrings.SIMPLE
 import typings.nodePgMigrate.nodePgMigrateStrings.`BY DEFAULT`
 import typings.nodePgMigrate.nodePgMigrateStrings.`NO FORCE`
+import typings.nodePgMigrate.sequencesTypesMod.SequenceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesTypesMod {
@@ -55,12 +48,19 @@ object tablesTypesMod {
     def `SET NULL`: typings.nodePgMigrate.nodePgMigrateStrings.`SET NULL` = ("SET NULL").asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`SET NULL`]
   }
   
-  type AddColumns = AddColumnsFn with ReverseAddColumnsFn
+  @js.native
+  trait AddColumns extends AddColumnsFn {
+    
+    def reverse(tableName: Name, newColumns: ColumnDefinitions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, newColumns: ColumnDefinitions, addOptions: IfNotExistsOption & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: AddColumnsFn = js.native
+  }
   
   type AddColumnsFn = js.Function3[
     /* tableName */ Name, 
     /* newColumns */ ColumnDefinitions, 
-    /* addOptions */ js.UndefOr[IfNotExistsOption with DropOptions], 
+    /* addOptions */ js.UndefOr[IfNotExistsOption & DropOptions], 
     String | js.Array[String]
   ]
   
@@ -71,29 +71,28 @@ object tablesTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait AlterColumnOptions extends StObject {
     
-    var default: js.UndefOr[Value] = js.native
+    var default: js.UndefOr[Value] = js.undefined
     
-    var allowNull: js.UndefOr[Boolean] = js.native
+    var allowNull: js.UndefOr[Boolean] = js.undefined
     
-    var collation: js.UndefOr[String] = js.native
+    var collation: js.UndefOr[String] = js.undefined
     
-    var comment: js.UndefOr[String | Null] = js.native
+    var comment: js.UndefOr[String | Null] = js.undefined
     
     /**
       * @deprecated use sequenceGenerated
       */
-    var generated: js.UndefOr[Null | `false` | SequenceGeneratedOptions] = js.native
+    var generated: js.UndefOr[Null | `false` | SequenceGeneratedOptions] = js.undefined
     
-    var notNull: js.UndefOr[Boolean] = js.native
+    var notNull: js.UndefOr[Boolean] = js.undefined
     
-    var sequenceGenerated: js.UndefOr[Null | `false` | SequenceGeneratedOptions] = js.native
+    var sequenceGenerated: js.UndefOr[Null | `false` | SequenceGeneratedOptions] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var using: js.UndefOr[String] = js.native
+    var `using`: js.UndefOr[String] = js.undefined
   }
   object AlterColumnOptions {
     
@@ -185,10 +184,9 @@ object tablesTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait AlterTableOptions extends StObject {
     
-    var levelSecurity: DISABLE | ENABLE | FORCE | (`NO FORCE`) = js.native
+    var levelSecurity: DISABLE | ENABLE | FORCE | (`NO FORCE`)
   }
   object AlterTableOptions {
     
@@ -207,49 +205,48 @@ object tablesTypesMod {
   }
   
   /* Inlined parent std.Partial<node-pg-migrate.node-pg-migrate/dist/operations/tablesTypes.ReferencesOptions> */
-  @js.native
   trait ColumnDefinition extends StObject {
     
-    var default: js.UndefOr[Value] = js.native
+    var default: js.UndefOr[Value] = js.undefined
     
-    var check: js.UndefOr[String] = js.native
+    var check: js.UndefOr[String] = js.undefined
     
-    var collation: js.UndefOr[String] = js.native
+    var collation: js.UndefOr[String] = js.undefined
     
-    var comment: js.UndefOr[String | Null] = js.native
+    var comment: js.UndefOr[String | Null] = js.undefined
     
-    var deferrable: js.UndefOr[Boolean] = js.native
+    var deferrable: js.UndefOr[Boolean] = js.undefined
     
-    var deferred: js.UndefOr[Boolean] = js.native
+    var deferred: js.UndefOr[Boolean] = js.undefined
     
-    var expressionGenerated: js.UndefOr[String] = js.native
+    var expressionGenerated: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated use sequenceGenerated
       */
-    var generated: js.UndefOr[SequenceGeneratedOptions] = js.native
+    var generated: js.UndefOr[SequenceGeneratedOptions] = js.undefined
     
-    var `match`: js.UndefOr[FULL | SIMPLE] = js.native
+    var `match`: js.UndefOr[FULL | SIMPLE] = js.undefined
     
-    var notNull: js.UndefOr[Boolean] = js.native
+    var notNull: js.UndefOr[Boolean] = js.undefined
     
-    var onDelete: js.UndefOr[Action] = js.native
+    var onDelete: js.UndefOr[Action] = js.undefined
     
-    var onUpdate: js.UndefOr[Action] = js.native
+    var onUpdate: js.UndefOr[Action] = js.undefined
     
-    var primaryKey: js.UndefOr[Boolean] = js.native
+    var primaryKey: js.UndefOr[Boolean] = js.undefined
     
-    var references: js.UndefOr[Name] = js.native
+    var references: js.UndefOr[Name] = js.undefined
     
-    var referencesConstraintComment: js.UndefOr[String] = js.native
+    var referencesConstraintComment: js.UndefOr[String] = js.undefined
     
-    var referencesConstraintName: js.UndefOr[String] = js.native
+    var referencesConstraintName: js.UndefOr[String] = js.undefined
     
-    var sequenceGenerated: js.UndefOr[SequenceGeneratedOptions] = js.native
+    var sequenceGenerated: js.UndefOr[SequenceGeneratedOptions] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnDefinition {
     
@@ -389,24 +386,23 @@ object tablesTypesMod {
   
   type ColumnDefinitions = StringDictionary[ColumnDefinition | String]
   
-  @js.native
   trait ConstraintOptions extends StObject {
     
-    var check: js.UndefOr[String | js.Array[String]] = js.native
+    var check: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var deferrable: js.UndefOr[Boolean] = js.native
+    var deferrable: js.UndefOr[Boolean] = js.undefined
     
-    var deferred: js.UndefOr[Boolean] = js.native
+    var deferred: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[String] = js.native
+    var exclude: js.UndefOr[String] = js.undefined
     
-    var foreignKeys: js.UndefOr[ForeignKeyOptions | js.Array[ForeignKeyOptions]] = js.native
+    var foreignKeys: js.UndefOr[ForeignKeyOptions | js.Array[ForeignKeyOptions]] = js.undefined
     
-    var primaryKey: js.UndefOr[Name | js.Array[Name]] = js.native
+    var primaryKey: js.UndefOr[Name | js.Array[Name]] = js.undefined
     
-    var unique: js.UndefOr[Name | (js.Array[Name | js.Array[Name]])] = js.native
+    var unique: js.UndefOr[Name | (js.Array[Name | js.Array[Name]])] = js.undefined
   }
   object ConstraintOptions {
     
@@ -481,21 +477,35 @@ object tablesTypesMod {
     }
   }
   
-  type CreateConstraint = CreateConstraintFn with ReverseCreateConstraintFn
+  @js.native
+  trait CreateConstraint extends CreateConstraintFn {
+    
+    def reverse(tableName: Name, constraintName: String, expression: (String | ConstraintOptions) & DropOptions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, constraintName: Null, expression: (String | ConstraintOptions) & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateConstraintFn = js.native
+  }
   
   type CreateConstraintFn = js.Function3[
     /* tableName */ Name, 
     /* constraintName */ String | Null, 
-    /* expression */ (String | ConstraintOptions) with DropOptions, 
+    /* expression */ (String | ConstraintOptions) & DropOptions, 
     String | js.Array[String]
   ]
   
-  type CreateTable = CreateTableFn with ReverseCreateTableFn
+  @js.native
+  trait CreateTable extends CreateTableFn {
+    
+    def reverse(tableName: Name, columns: ColumnDefinitions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, columns: ColumnDefinitions, options: TableOptions & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateTableFn = js.native
+  }
   
   type CreateTableFn = js.Function3[
     /* tableName */ Name, 
     /* columns */ ColumnDefinitions, 
-    /* options */ js.UndefOr[TableOptions with DropOptions], 
+    /* options */ js.UndefOr[TableOptions & DropOptions], 
     String | js.Array[String]
   ]
   
@@ -519,10 +529,11 @@ object tablesTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
-  trait ForeignKeyOptions extends ReferencesOptions {
+  trait ForeignKeyOptions
+    extends StObject
+       with ReferencesOptions {
     
-    var columns: Name | js.Array[Name] = js.native
+    var columns: Name | js.Array[Name]
   }
   object ForeignKeyOptions {
     
@@ -581,12 +592,11 @@ object tablesTypesMod {
     def STORAGE: typings.nodePgMigrate.nodePgMigrateStrings.STORAGE = "STORAGE".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STORAGE]
   }
   
-  @js.native
   trait LikeOptions extends StObject {
     
-    var excluding: js.UndefOr[Like | js.Array[Like]] = js.native
+    var excluding: js.UndefOr[Like | js.Array[Like]] = js.undefined
     
-    var including: js.UndefOr[Like | js.Array[Like]] = js.native
+    var including: js.UndefOr[Like | js.Array[Like]] = js.undefined
   }
   object LikeOptions {
     
@@ -619,20 +629,19 @@ object tablesTypesMod {
     }
   }
   
-  @js.native
   trait ReferencesOptions extends StObject {
     
-    var `match`: js.UndefOr[FULL | SIMPLE] = js.native
+    var `match`: js.UndefOr[FULL | SIMPLE] = js.undefined
     
-    var onDelete: js.UndefOr[Action] = js.native
+    var onDelete: js.UndefOr[Action] = js.undefined
     
-    var onUpdate: js.UndefOr[Action] = js.native
+    var onUpdate: js.UndefOr[Action] = js.undefined
     
-    var references: Name = js.native
+    var references: Name
     
-    var referencesConstraintComment: js.UndefOr[String] = js.native
+    var referencesConstraintComment: js.UndefOr[String] = js.undefined
     
-    var referencesConstraintName: js.UndefOr[String] = js.native
+    var referencesConstraintName: js.UndefOr[String] = js.undefined
   }
   object ReferencesOptions {
     
@@ -680,7 +689,13 @@ object tablesTypesMod {
     }
   }
   
-  type RenameColumn = RenameColumnFn with ReverseRenameColumnFn
+  @js.native
+  trait RenameColumn extends RenameColumnFn {
+    
+    def reverse(tableName: Name, oldColumnName: String, newColumnName: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameColumnFn = js.native
+  }
   
   type RenameColumnFn = js.Function3[
     /* tableName */ Name, 
@@ -689,7 +704,13 @@ object tablesTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameConstraint = RenameConstraintFn with ReverseRenameConstraintFn
+  @js.native
+  trait RenameConstraint extends RenameConstraintFn {
+    
+    def reverse(tableName: Name, oldConstraintName: String, newConstraintName: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameConstraintFn = js.native
+  }
   
   type RenameConstraintFn = js.Function3[
     /* tableName */ Name, 
@@ -698,31 +719,21 @@ object tablesTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameTable = RenameTableFn with ReverseRenameTableFn
+  @js.native
+  trait RenameTable extends RenameTableFn {
+    
+    def reverse(tableName: Name, newtableName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameTableFn = js.native
+  }
   
   type RenameTableFn = js.Function2[/* tableName */ Name, /* newtableName */ Name, String | js.Array[String]]
   
-  /* Inlined {  precedence :'ALWAYS' | 'BY DEFAULT'} & node-pg-migrate.node-pg-migrate/dist/operations/sequencesTypes.SequenceOptions */
-  @js.native
-  trait SequenceGeneratedOptions extends StObject {
+  trait SequenceGeneratedOptions
+    extends StObject
+       with SequenceOptions {
     
-    var cache: js.UndefOr[Double] = js.native
-    
-    var cycle: js.UndefOr[Boolean] = js.native
-    
-    var increment: js.UndefOr[Double] = js.native
-    
-    var maxvalue: js.UndefOr[Double | Null | `false`] = js.native
-    
-    var minvalue: js.UndefOr[Double | Null | `false`] = js.native
-    
-    var owner: js.UndefOr[String | Null | `false`] = js.native
-    
-    var precedence: ALWAYS | (`BY DEFAULT`) = js.native
-    
-    var start: js.UndefOr[Double] = js.native
-    
-    var `type`: js.UndefOr[Type] = js.native
+    var precedence: ALWAYS | (`BY DEFAULT`)
   }
   object SequenceGeneratedOptions {
     
@@ -736,79 +747,23 @@ object tablesTypesMod {
     implicit class SequenceGeneratedOptionsMutableBuilder[Self <: SequenceGeneratedOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-      
-      @scala.inline
-      def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
-      
-      @scala.inline
-      def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
-      
-      @scala.inline
-      def setMaxvalue(value: Double | `false`): Self = StObject.set(x, "maxvalue", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxvalueNull: Self = StObject.set(x, "maxvalue", null)
-      
-      @scala.inline
-      def setMaxvalueUndefined: Self = StObject.set(x, "maxvalue", js.undefined)
-      
-      @scala.inline
-      def setMinvalue(value: Double | `false`): Self = StObject.set(x, "minvalue", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMinvalueNull: Self = StObject.set(x, "minvalue", null)
-      
-      @scala.inline
-      def setMinvalueUndefined: Self = StObject.set(x, "minvalue", js.undefined)
-      
-      @scala.inline
-      def setOwner(value: String | `false`): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOwnerNull: Self = StObject.set(x, "owner", null)
-      
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
-      
-      @scala.inline
       def setPrecedence(value: ALWAYS | (`BY DEFAULT`)): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
-      
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
-  @js.native
-  trait TableOptions extends IfNotExistsOption {
+  trait TableOptions
+    extends StObject
+       with IfNotExistsOption {
     
-    var comment: js.UndefOr[String | Null] = js.native
+    var comment: js.UndefOr[String | Null] = js.undefined
     
-    var constraints: js.UndefOr[ConstraintOptions] = js.native
+    var constraints: js.UndefOr[ConstraintOptions] = js.undefined
     
-    var inherits: js.UndefOr[Name] = js.native
+    var inherits: js.UndefOr[Name] = js.undefined
     
-    var like: js.UndefOr[Name | Options] = js.native
+    var like: js.UndefOr[Name | Options] = js.undefined
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
   }
   object TableOptions {
     

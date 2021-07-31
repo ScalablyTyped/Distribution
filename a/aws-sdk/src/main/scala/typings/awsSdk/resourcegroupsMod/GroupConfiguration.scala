@@ -2,31 +2,29 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupConfiguration extends StObject {
   
   /**
     * The configuration currently associated with the group and in effect.
     */
-  var Configuration: js.UndefOr[GroupConfigurationList] = js.native
+  var Configuration: js.UndefOr[GroupConfigurationList] = js.undefined
   
   /**
     * If present, the reason why a request to update the group configuration failed.
     */
-  var FailureReason: js.UndefOr[GroupConfigurationFailureReason] = js.native
+  var FailureReason: js.UndefOr[GroupConfigurationFailureReason] = js.undefined
   
   /**
     * If present, the new configuration that is in the process of being applied to the group.
     */
-  var ProposedConfiguration: js.UndefOr[GroupConfigurationList] = js.native
+  var ProposedConfiguration: js.UndefOr[GroupConfigurationList] = js.undefined
   
   /**
     * The current status of an attempt to update the group configuration.
     */
-  var Status: js.UndefOr[GroupConfigurationStatus] = js.native
+  var Status: js.UndefOr[GroupConfigurationStatus] = js.undefined
 }
 object GroupConfiguration {
   

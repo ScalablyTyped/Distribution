@@ -9,66 +9,65 @@ import typings.typeorm.sqlServerConnectionCredentialsOptionsMod.SqlServerConnect
 import typings.typeorm.typeormStrings.mssql
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlServerConnectionOptionsMod {
   
-  @js.native
   trait SqlServerConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with SqlServerConnectionCredentialsOptions
        with ConnectionOptions {
     
     /**
       * Connection timeout in ms (default: 15000).
       */
-    val connectionTimeout: js.UndefOr[Double] = js.native
+    val connectionTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Extra options
       */
-    val options: js.UndefOr[AbortTransactionOnError] = js.native
+    val options: js.UndefOr[AbortTransactionOnError] = js.undefined
     
     /**
       * An optional object/dictionary with the any of the properties
       */
-    val pool: js.UndefOr[AcquireTimeoutMillis] = js.native
+    val pool: js.UndefOr[AcquireTimeoutMillis] = js.undefined
     
     /**
       * Replication setup.
       */
-    val replication: js.UndefOr[MasterSqlServerConnectionCredentialsOptions] = js.native
+    val replication: js.UndefOr[MasterSqlServerConnectionCredentialsOptions] = js.undefined
     
     /**
       * Request timeout in ms (default: 15000). NOTE: msnodesqlv8 driver doesn't support timeouts < 1 second.
       */
-    val requestTimeout: js.UndefOr[Double] = js.native
+    val requestTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Database schema.
       */
-    val schema: js.UndefOr[String] = js.native
+    val schema: js.UndefOr[String] = js.undefined
     
     /**
       * Stream recordsets/rows instead of returning them all at once as an argument of callback (default: false).
       * You can also enable streaming for each request independently (request.stream = true).
       * Always set to true if you plan to work with large amount of rows.
       */
-    val stream: js.UndefOr[Boolean] = js.native
+    val stream: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_SqlServerConnectionOptions: mssql = js.native
+    val type_SqlServerConnectionOptions: mssql
   }
   object SqlServerConnectionOptions {
     
     @scala.inline
-    def apply(`type`: mssql): SqlServerConnectionOptions = {
+    def apply(): SqlServerConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mssql")
       __obj.asInstanceOf[SqlServerConnectionOptions]
     }
     

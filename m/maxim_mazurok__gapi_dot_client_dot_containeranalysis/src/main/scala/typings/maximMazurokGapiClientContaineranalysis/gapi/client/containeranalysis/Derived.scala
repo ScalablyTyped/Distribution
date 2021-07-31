@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Derived extends StObject {
   
   /** Output only. This contains the base image URL for the derived image occurrence. */
-  var baseResourceUrl: js.UndefOr[String] = js.native
+  var baseResourceUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of layers by which this image differs from the associated image basis. */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /** Required. The fingerprint of the derived image. */
-  var fingerprint: js.UndefOr[Fingerprint] = js.native
+  var fingerprint: js.UndefOr[Fingerprint] = js.undefined
   
   /**
     * This contains layer-specific metadata, if populated it has length "distance" and is ordered with [distance] being the layer immediately following the base image and [1] being the
     * final layer.
     */
-  var layerInfo: js.UndefOr[js.Array[Layer]] = js.native
+  var layerInfo: js.UndefOr[js.Array[Layer]] = js.undefined
 }
 object Derived {
   

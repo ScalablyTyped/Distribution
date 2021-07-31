@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Networking.DomainNameType
 import typings.winrtUwp.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The RoutePolicy class is used to represent the traffic routing policy for a special PDP Context/APN. */
-@js.native
 trait RoutePolicy extends StObject {
   
   /** Retrieves the connection profile for an access point connection. */
-  var connectionProfile: ConnectionProfile = js.native
+  var connectionProfile: ConnectionProfile
   
   /** Provides the host name for the route policy to the special PDP context. */
-  var hostName: HostName = js.native
+  var hostName: HostName
   
   /** Indicates if the HostName is a suffix or a fully qualified domain name reference. Possible values are defined by DomainNameType . */
-  var hostNameType: DomainNameType = js.native
+  var hostNameType: DomainNameType
 }
 object RoutePolicy {
   

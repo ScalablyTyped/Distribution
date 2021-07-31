@@ -3,13 +3,11 @@ package typings.nodePgMigrate.distTypesMod
 import typings.pg.mod.ClientBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunnerOptionClient extends StObject {
   
-  var dbClient: ClientBase = js.native
+  var dbClient: ClientBase
 }
 object RunnerOptionClient {
   

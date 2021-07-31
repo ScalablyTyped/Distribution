@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisCrosshairOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A class name for the crosshair,
     * especially as a hook for styling.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the crosshair.
@@ -20,13 +18,13 @@ trait AxisCrosshairOptions extends StObject {
     * `rgba(204,214,235,0.25)` for category axes, where the crosshair by
     * default highlights the whole category.
     */
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The dash style for the
     * crosshair. See plotOptions.series.dashStyle for possible values.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock) A label on the axis next to the crosshair.
@@ -34,27 +32,27 @@ trait AxisCrosshairOptions extends StObject {
     * In styled mode, the label is styled with the
     * `.highcharts-crosshair-label` class.
     */
-  var label: js.UndefOr[AxisCrosshairLabelOptions] = js.native
+  var label: js.UndefOr[AxisCrosshairLabelOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the crosshair should
     * snap to the point or follow the pointer independent of points.
     */
-  var snap: js.UndefOr[Boolean] = js.native
+  var snap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the
     * crosshair. Defaults to 1 for numeric or datetime axes, and for one
     * category width for category axes.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the crosshair.
     * Higher Z indices allow drawing the crosshair on top of the series or
     * behind the grid lines.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object AxisCrosshairOptions {
   

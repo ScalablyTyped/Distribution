@@ -4,43 +4,41 @@ import typings.reactOnsenui.reactOnsenuiStrings.horizontal
 import typings.reactOnsenui.reactOnsenuiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoRefresh extends StObject {
   
-  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.native
+  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.undefined
   
-  var autoRefresh: js.UndefOr[Boolean] = js.native
+  var autoRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
-  var autoScrollRatio: js.UndefOr[Double] = js.native
+  var autoScrollRatio: js.UndefOr[Double] = js.undefined
   
-  var centered: js.UndefOr[Boolean] = js.native
+  var centered: js.UndefOr[Boolean] = js.undefined
   
-  var direction: js.UndefOr[horizontal | vertical] = js.native
+  var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var itemHeight: js.UndefOr[Double | String] = js.native
+  var itemHeight: js.UndefOr[Double | String] = js.undefined
   
-  var itemWidth: js.UndefOr[Double | String] = js.native
+  var itemWidth: js.UndefOr[Double | String] = js.undefined
   
-  var onOverscroll: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOverscroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPostChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onRefresh: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRefresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var overscrollable: js.UndefOr[Boolean] = js.native
+  var overscrollable: js.UndefOr[Boolean] = js.undefined
   
-  var swipeable: js.UndefOr[Boolean] = js.native
+  var swipeable: js.UndefOr[Boolean] = js.undefined
 }
 object AutoRefresh {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerBaseMod {
@@ -49,12 +48,11 @@ object layerBaseMod {
     def defaultProps_=(x: ILayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ILayerBaseState extends StObject {
     
-    var hostId: js.UndefOr[String] = js.native
+    var hostId: js.UndefOr[String] = js.undefined
     
-    var layerElement: js.UndefOr[HTMLElement] = js.native
+    var layerElement: js.UndefOr[HTMLElement] = js.undefined
   }
   object ILayerBaseState {
     

@@ -4,7 +4,6 @@ import typings.firebaseAdmin.firebaseAdminStrings.oidc
 import typings.firebaseAdmin.firebaseAdminStrings.saml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,27 +11,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when specifying how to list configured identity providers via
   * {@link auth.Auth.listProviderConfigs `listProviderConfigs()`}.
   */
-@js.native
 trait AuthProviderConfigFilter extends StObject {
   
   /**
     * The maximum number of results to return per page. The default and maximum is
     * 100.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The next page token. When not specified, the lookup starts from the beginning
     * of the list.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Auth provider configuration filter. This can be either `saml` or `oidc`.
     * The former is used to look up SAML providers only, while the latter is used
     * for OIDC providers.
     */
-  var `type`: saml | oidc = js.native
+  var `type`: saml | oidc
 }
 object AuthProviderConfigFilter {
   

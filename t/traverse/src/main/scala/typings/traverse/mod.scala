@@ -2,90 +2,82 @@ package typings.traverse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](obj: T): Traverse[T] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Traverse[T]]
+  
   @JSImport("traverse", JSImport.Namespace)
   @js.native
-  def apply[T](obj: T): Traverse[T] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a deep clone of the object.
     */
-  @JSImport("traverse", "clone")
-  @js.native
-  def clone_[T](obj: T): T = js.native
+  @scala.inline
+  def clone_[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Execute `fn` for each node in the object but unlike `.map()`, when `this.update()` is called it updates the object in-place.
     */
-  @JSImport("traverse", "forEach")
-  @js.native
-  def forEach(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = js.native
+  @scala.inline
+  def forEach(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Get the element at the array `path`.
     */
-  @JSImport("traverse", "get")
-  @js.native
-  def get(obj: js.Any, path: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def get(obj: js.Any, path: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return whether the element at the array `path` exists.
     */
-  @JSImport("traverse", "has")
-  @js.native
-  def has(obj: js.Any, path: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def has(obj: js.Any, path: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Execute `fn` for each node in the object and return a new object with the results of the walk. To update nodes in the result use `this.update(value)`.
     */
-  @JSImport("traverse", "map")
-  @js.native
-  def map(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = js.native
+  @scala.inline
+  def map(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return an `Array` of every node in the object.
     */
-  @JSImport("traverse", "nodes")
-  @js.native
-  def nodes(obj: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def nodes(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Return an `Array` of every possible non-cyclic path in the object. 
     * Paths are `Array`s of string keys.
     */
-  @JSImport("traverse", "paths")
-  @js.native
-  def paths(obj: js.Any): js.Array[js.Array[String]] = js.native
+  @scala.inline
+  def paths(obj: js.Any): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("paths")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
   
   /**
     * For each node in the object, perform a [left-fold](http://en.wikipedia.org/wiki/Fold_(higher-order_function)) with the return value of `fn(acc, node)`.
     * 
     * If `init` isn't specified, `init` is set to the root object for the first step and the root element is skipped.
     */
-  @JSImport("traverse", "reduce")
-  @js.native
+  @scala.inline
   def reduce(
     obj: js.Any,
     cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, Unit]
-  ): js.Any = js.native
-  @JSImport("traverse", "reduce")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def reduce(
     obj: js.Any,
     cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, Unit],
     init: js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the element at the array `path` to `value`.
     */
-  @JSImport("traverse", "set")
-  @js.native
-  def set(obj: js.Any, path: js.Array[String], value: js.Any): js.Any = js.native
+  @scala.inline
+  def set(obj: js.Any, path: js.Array[String], value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait Traverse[T] extends StObject {
@@ -113,7 +105,7 @@ object mod {
     /**
       * Return an `Array` of every node in the object.
       */
-    def nodes(): js.Array[_] = js.native
+    def nodes(): js.Array[js.Any] = js.native
     
     /**
       * Return an `Array` of every possible non-cyclic path in the object. 

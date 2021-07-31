@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalKeyMod {
@@ -25,7 +24,7 @@ object externalKeyMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ExternalKeyArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ExternalKeyArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -86,6 +85,10 @@ object externalKeyMod {
   /* static members */
   object ExternalKey {
     
+    @JSImport("@pulumi/aws/kms/externalKey", "ExternalKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ExternalKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -95,65 +98,59 @@ object externalKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kms/externalKey", "ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ExternalKey = js.native
-    @JSImport("@pulumi/aws/kms/externalKey", "ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ExternalKey = js.native
-    @JSImport("@pulumi/aws/kms/externalKey", "ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ExternalKeyState): ExternalKey = js.native
-    @JSImport("@pulumi/aws/kms/externalKey", "ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ExternalKeyState, opts: CustomResourceOptions): ExternalKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ExternalKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ExternalKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ExternalKeyState): ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ExternalKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ExternalKeyState, opts: CustomResourceOptions): ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ExternalKey]
     
     /**
       * Returns true if the given object is an instance of ExternalKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kms/externalKey", "ExternalKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ Boolean]
   }
   
-  @js.native
   trait ExternalKeyArgs extends StObject {
     
     /**
       * Duration in days after which the key is deleted after destruction of the resource. Must be between `7` and `30` days. Defaults to `30`.
       */
-    val deletionWindowInDays: js.UndefOr[Input[Double]] = js.native
+    val deletionWindowInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Description of the key.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the key is enabled. Keys pending import can only be `false`. Imported keys default to `true` unless expired.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Base64 encoded 256-bit symmetric encryption key material to import. The CMK is permanently associated with this key material. The same key material can be reimported, but you cannot import different key material.
       */
-    val keyMaterialBase64: js.UndefOr[Input[String]] = js.native
+    val keyMaterialBase64: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A key-value map of tags to assign to the key.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. If not specified, key material does not expire. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
       */
-    val validTo: js.UndefOr[Input[String]] = js.native
+    val validTo: js.UndefOr[Input[String]] = js.undefined
   }
   object ExternalKeyArgs {
     
@@ -210,63 +207,62 @@ object externalKeyMod {
     }
   }
   
-  @js.native
   trait ExternalKeyState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the key.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Duration in days after which the key is deleted after destruction of the resource. Must be between `7` and `30` days. Defaults to `30`.
       */
-    val deletionWindowInDays: js.UndefOr[Input[Double]] = js.native
+    val deletionWindowInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Description of the key.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the key is enabled. Keys pending import can only be `false`. Imported keys default to `true` unless expired.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether the key material expires. Empty when pending key material import, otherwise `KEY_MATERIAL_EXPIRES` or `KEY_MATERIAL_DOES_NOT_EXPIRE`.
       */
-    val expirationModel: js.UndefOr[Input[String]] = js.native
+    val expirationModel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Base64 encoded 256-bit symmetric encryption key material to import. The CMK is permanently associated with this key material. The same key material can be reimported, but you cannot import different key material.
       */
-    val keyMaterialBase64: js.UndefOr[Input[String]] = js.native
+    val keyMaterialBase64: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the CMK.
       */
-    val keyState: js.UndefOr[Input[String]] = js.native
+    val keyState: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The cryptographic operations for which you can use the CMK.
       */
-    val keyUsage: js.UndefOr[Input[String]] = js.native
+    val keyUsage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A key-value map of tags to assign to the key.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. If not specified, key material does not expire. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
       */
-    val validTo: js.UndefOr[Input[String]] = js.native
+    val validTo: js.UndefOr[Input[String]] = js.undefined
   }
   object ExternalKeyState {
     

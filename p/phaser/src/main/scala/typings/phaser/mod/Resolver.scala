@@ -4,7 +4,6 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Resolver")
 @js.native
 class Resolver ()
-  extends typings.phaser.MatterJS.Resolver
+  extends StObject
+     with typings.phaser.MatterJS.Resolver
 object Resolver {
+  
+  @JSImport("matter", "Resolver")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Apply position resolution.
@@ -24,9 +28,8 @@ object Resolver {
     * @param {body[]} bodies
     */
   /* static member */
-  @JSImport("matter", "Resolver.postSolvePosition")
-  @js.native
-  def postSolvePosition(bodies: js.Array[BodyType]): Unit = js.native
+  @scala.inline
+  def postSolvePosition(bodies: js.Array[BodyType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("postSolvePosition")(bodies.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Prepare pairs for position solving.
@@ -34,9 +37,8 @@ object Resolver {
     * @param {pair[]} pairs
     */
   /* static member */
-  @JSImport("matter", "Resolver.preSolvePosition")
-  @js.native
-  def preSolvePosition(pairs: js.Array[IPair]): Unit = js.native
+  @scala.inline
+  def preSolvePosition(pairs: js.Array[IPair]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preSolvePosition")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Prepare pairs for velocity solving.
@@ -44,9 +46,8 @@ object Resolver {
     * @param {pair[]} pairs
     */
   /* static member */
-  @JSImport("matter", "Resolver.preSolveVelocity")
-  @js.native
-  def preSolveVelocity(pairs: js.Array[IPair]): Unit = js.native
+  @scala.inline
+  def preSolveVelocity(pairs: js.Array[IPair]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preSolveVelocity")(pairs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Find a solution for pair positions.
@@ -56,9 +57,8 @@ object Resolver {
     * @param {number} timeScale
     */
   /* static member */
-  @JSImport("matter", "Resolver.solvePosition")
-  @js.native
-  def solvePosition(pairs: js.Array[IPair], bodies: js.Array[BodyType], timeScale: Double): Unit = js.native
+  @scala.inline
+  def solvePosition(pairs: js.Array[IPair], bodies: js.Array[BodyType], timeScale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solvePosition")(pairs.asInstanceOf[js.Any], bodies.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find a solution for pair velocities.
@@ -67,7 +67,6 @@ object Resolver {
     * @param {number} timeScale
     */
   /* static member */
-  @JSImport("matter", "Resolver.solveVelocity")
-  @js.native
-  def solveVelocity(pairs: js.Array[IPair], timeScale: Double): Unit = js.native
+  @scala.inline
+  def solveVelocity(pairs: js.Array[IPair], timeScale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solveVelocity")(pairs.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

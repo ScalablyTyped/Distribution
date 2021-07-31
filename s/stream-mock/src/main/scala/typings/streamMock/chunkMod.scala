@@ -4,17 +4,15 @@ import typings.node.Buffer
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chunkMod {
   
-  @js.native
   trait IChunk extends StObject {
     
-    var chunk: Buffer | String = js.native
+    var chunk: Buffer | String
     
-    var encoding: BufferEncoding = js.native
+    var encoding: BufferEncoding
   }
   object IChunk {
     

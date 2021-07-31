@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCapacityCommitmentsResponse extends StObject {
   
   /** List of capacity commitments visible to the user. */
-  var capacityCommitments: js.UndefOr[js.Array[CapacityCommitment]] = js.native
+  var capacityCommitments: js.UndefOr[js.Array[CapacityCommitment]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCapacityCommitmentsResponse {
   

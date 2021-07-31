@@ -3,15 +3,19 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
   
   @JSImport("carbon-components/components/pagination/pagination", JSImport.Default)
   @js.native
-  class default protected () extends Pagination {
+  class default protected ()
+    extends StObject
+       with Pagination {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _emitEvent(evtName: js.Any, detail: js.Any): Unit = js.native
   }
   object default {
     
@@ -84,10 +88,9 @@ object paginationMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Pagination extends StObject {
+  - Dropped any */ trait Pagination extends StObject {
     
-    def _emitEvent(evtName: js.Any, detail: js.Any): Unit = js.native
+    def _emitEvent(evtName: js.Any, detail: js.Any): Unit
   }
   object Pagination {
     

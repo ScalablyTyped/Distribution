@@ -11,7 +11,7 @@ Makes Knockout and AMD modules work better together
 | Keywords           | knockout, knockout.js, knockoutjs, AMD |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 9416 |
+| # downloads        | 11392 |
 | # stars            | 0 |
 
 ## Links

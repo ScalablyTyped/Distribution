@@ -2,19 +2,17 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaQuery extends StObject {
   
-  def atLeast(size: String): Boolean = js.native
+  def atLeast(size: String): Boolean
   
-  var current: String = js.native
+  var current: String
   
-  def get(size: String): String = js.native
+  def get(size: String): String
   
-  var queries: js.Array[String] = js.native
+  var queries: js.Array[String]
 }
 object MediaQuery {
   

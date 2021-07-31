@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignInLocation extends StObject {
   
   /**
     * Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the
     * sign-in activity.
     */
-  var city: js.UndefOr[NullableOption[String]] = js.native
+  var city: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Provides the country code info (2 letter code) where the sign-in originated. This is calculated using
     * latitude/longitude information from the sign-in activity.
     */
-  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.native
+  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Provides the latitude, longitude and altitude where the sign-in originated.
-  var geoCoordinates: js.UndefOr[NullableOption[GeoCoordinates]] = js.native
+  var geoCoordinates: js.UndefOr[NullableOption[GeoCoordinates]] = js.undefined
   
   /**
     * Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the
     * sign-in activity.
     */
-  var state: js.UndefOr[NullableOption[String]] = js.native
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SignInLocation {
   

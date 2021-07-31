@@ -2,15 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanViewData extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var revision: Double = js.native
+  var revision: Double
 }
 object PlanViewData {
   

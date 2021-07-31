@@ -2,62 +2,60 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flow extends StObject {
   
   /**
     * The Availability Zone that you want to create the flow in. These options are limited to the Availability Zones within the current AWS.
     */
-  var AvailabilityZone: string = js.native
+  var AvailabilityZone: string
   
   /**
     * A description of the flow. This value is not used or seen outside of the current AWS Elemental MediaConnect account.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The IP address from which video will be sent to output destinations.
     */
-  var EgressIp: js.UndefOr[string] = js.native
+  var EgressIp: js.UndefOr[string] = js.undefined
   
   /**
     * The entitlements in this flow.
     */
-  var Entitlements: listOfEntitlement = js.native
+  var Entitlements: listOfEntitlement
   
   /**
     * The Amazon Resource Name (ARN), a unique identifier for any AWS resource, of the flow.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * The name of the flow.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * The outputs in this flow.
     */
-  var Outputs: listOfOutput = js.native
+  var Outputs: listOfOutput
   
-  var Source: typings.awsSdk.mediaconnectMod.Source = js.native
+  var Source: typings.awsSdk.mediaconnectMod.Source
   
-  var SourceFailoverConfig: js.UndefOr[FailoverConfig] = js.native
+  var SourceFailoverConfig: js.UndefOr[FailoverConfig] = js.undefined
   
-  var Sources: js.UndefOr[listOfSource] = js.native
+  var Sources: js.UndefOr[listOfSource] = js.undefined
   
   /**
     * The current status of the flow.
     */
-  var Status: typings.awsSdk.mediaconnectMod.Status = js.native
+  var Status: typings.awsSdk.mediaconnectMod.Status
   
   /**
     * The VPC Interfaces for this flow.
     */
-  var VpcInterfaces: js.UndefOr[listOfVpcInterface] = js.native
+  var VpcInterfaces: js.UndefOr[listOfVpcInterface] = js.undefined
 }
 object Flow {
   

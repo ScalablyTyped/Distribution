@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
-@js.native
 trait TableCellUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableCellUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var shadingColor: js.UndefOr[String] = js.native
+  var shadingColor: js.UndefOr[String] = js.undefined
 }
 object TableCellUpdateData {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangedIdentities extends StObject {
   
   /**
     * Changed Identities
     */
-  var identities: js.Array[Identity] = js.native
+  var identities: js.Array[Identity]
   
   /**
     * Last Identity SequenceId
     */
-  var sequenceContext: ChangedIdentitiesContext = js.native
+  var sequenceContext: ChangedIdentitiesContext
 }
 object ChangedIdentities {
   

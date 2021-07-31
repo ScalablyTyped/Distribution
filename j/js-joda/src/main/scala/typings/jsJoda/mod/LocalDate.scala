@@ -3,7 +3,6 @@ package typings.jsJoda.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "LocalDate")
@@ -16,9 +15,9 @@ class LocalDate protected () extends ChronoLocalDate {
   def atStartOfDayWithZone(zone: ZoneId): ZonedDateTime = js.native
   
   def atTime(hour: Double, minute: Double): LocalDateTime = js.native
-  def atTime(hour: Double, minute: Double, second: js.UndefOr[scala.Nothing], nanoOfSecond: Double): LocalDateTime = js.native
   def atTime(hour: Double, minute: Double, second: Double): LocalDateTime = js.native
   def atTime(hour: Double, minute: Double, second: Double, nanoOfSecond: Double): LocalDateTime = js.native
+  def atTime(hour: Double, minute: Double, second: Unit, nanoOfSecond: Double): LocalDateTime = js.native
   def atTime(time: LocalTime): LocalDateTime = js.native
   
   def chronology(): Chronology = js.native
@@ -132,52 +131,40 @@ object LocalDate {
   def MIN_=(x: LocalDate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "LocalDate.from")
-  @js.native
-  def from(temporal: TemporalAccessor): LocalDate = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("js-joda", "LocalDate.now")
-  @js.native
-  def now(): LocalDate = js.native
-  @JSImport("js-joda", "LocalDate.now")
-  @js.native
-  def now(clockOrZone: Clock): LocalDate = js.native
-  @JSImport("js-joda", "LocalDate.now")
-  @js.native
-  def now(clockOrZone: ZoneId): LocalDate = js.native
+  @scala.inline
+  def now(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalDate]
+  @scala.inline
+  def now(clockOrZone: Clock): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
+  @scala.inline
+  def now(clockOrZone: ZoneId): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
-  @JSImport("js-joda", "LocalDate.of")
-  @js.native
-  def of(year: Double, month: Double, dayOfMonth: Double): LocalDate = js.native
+  @scala.inline
+  def of(year: Double, month: Double, dayOfMonth: Double): LocalDate = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[LocalDate]
   /* static member */
-  @JSImport("js-joda", "LocalDate.of")
-  @js.native
-  def of(year: Double, month: Month, dayOfMonth: Double): LocalDate = js.native
+  @scala.inline
+  def of(year: Double, month: Month, dayOfMonth: Double): LocalDate = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("js-joda", "LocalDate.ofEpochDay")
-  @js.native
-  def ofEpochDay(epochDay: Double): LocalDate = js.native
+  @scala.inline
+  def ofEpochDay(epochDay: Double): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochDay")(epochDay.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("js-joda", "LocalDate.ofInstant")
-  @js.native
-  def ofInstant(instant: Instant): LocalDate = js.native
-  @JSImport("js-joda", "LocalDate.ofInstant")
-  @js.native
-  def ofInstant(instant: Instant, zoneId: ZoneId): LocalDate = js.native
+  @scala.inline
+  def ofInstant(instant: Instant): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
+  @scala.inline
+  def ofInstant(instant: Instant, zoneId: ZoneId): LocalDate = (^.asInstanceOf[js.Dynamic].applyDynamic("ofInstant")(instant.asInstanceOf[js.Any], zoneId.asInstanceOf[js.Any])).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("js-joda", "LocalDate.ofYearDay")
-  @js.native
-  def ofYearDay(year: Double, dayOfYear: Double): LocalDate = js.native
+  @scala.inline
+  def ofYearDay(year: Double, dayOfYear: Double): LocalDate = (^.asInstanceOf[js.Dynamic].applyDynamic("ofYearDay")(year.asInstanceOf[js.Any], dayOfYear.asInstanceOf[js.Any])).asInstanceOf[LocalDate]
   
   /* static member */
-  @JSImport("js-joda", "LocalDate.parse")
-  @js.native
-  def parse(text: String): LocalDate = js.native
-  @JSImport("js-joda", "LocalDate.parse")
-  @js.native
-  def parse(text: String, formatter: DateTimeFormatter): LocalDate = js.native
+  @scala.inline
+  def parse(text: String): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
+  @scala.inline
+  def parse(text: String, formatter: DateTimeFormatter): LocalDate = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[LocalDate]
 }

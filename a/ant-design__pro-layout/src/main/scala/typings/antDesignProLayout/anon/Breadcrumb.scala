@@ -5,17 +5,15 @@ import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Breadcrumb extends StObject {
   
-  var breadcrumb: StringDictionary[MenuDataItem] = js.native
+  var breadcrumb: StringDictionary[MenuDataItem]
   
-  var breadcrumbMap: Map[String, typings.umijsRouteUtils.typesMod.MenuDataItem] = js.native
+  var breadcrumbMap: Map[String, typings.umijsRouteUtils.typesMod.MenuDataItem]
   
-  var menuData: js.Array[typings.umijsRouteUtils.typesMod.MenuDataItem] = js.native
+  var menuData: js.Array[typings.umijsRouteUtils.typesMod.MenuDataItem]
 }
 object Breadcrumb {
   

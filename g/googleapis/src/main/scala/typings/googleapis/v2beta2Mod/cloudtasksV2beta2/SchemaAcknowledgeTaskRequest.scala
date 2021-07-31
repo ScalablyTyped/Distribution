@@ -2,13 +2,11 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for acknowledging a task using AcknowledgeTask.
   */
-@js.native
 trait SchemaAcknowledgeTaskRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaAcknowledgeTaskRequest extends StObject {
     * schedule_time returned by LeaseTasks response or RenewLease response.
     * This restriction is to ensure that your worker currently holds the lease.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
 }
 object SchemaAcknowledgeTaskRequest {
   

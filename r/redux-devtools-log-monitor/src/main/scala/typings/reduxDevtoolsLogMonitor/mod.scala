@@ -4,7 +4,6 @@ import typings.base16.mod.Base16Theme
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,6 @@ object mod {
   class default ()
     extends Component[ILogMonitorProps, js.Object, js.Any]
   
-  @js.native
   trait ILogMonitorProps extends StObject {
     
     /**
@@ -22,14 +20,14 @@ object mod {
       *
       * @default true
       */
-    var expandActionRoot: js.UndefOr[Boolean] = js.native
+    var expandActionRoot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, displays the state object expanded rather than collapsed.
       *
       * @default true
       */
-    var expandStateRoot: js.UndefOr[Boolean] = js.native
+    var expandStateRoot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, records the current scroll top every second so it
@@ -38,7 +36,7 @@ object mod {
       *
       * @default true
       */
-    var preserveScrollTop: js.UndefOr[Boolean] = js.native
+    var preserveScrollTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that selects the slice of the state for DevTools to show.
@@ -46,7 +44,7 @@ object mod {
       * @example state => state.thePart.iCare.about.
       * @default state => state.
       */
-    var select: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+    var select: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
     
     /**
       * Either a string referring to one of the themes provided by
@@ -54,7 +52,7 @@ object mod {
       *
       * @see https://github.com/gaearon/redux-devtools-themes
       */
-    var theme: js.UndefOr[String | Base16Theme] = js.native
+    var theme: js.UndefOr[String | Base16Theme] = js.undefined
   }
   object ILogMonitorProps {
     
@@ -86,7 +84,7 @@ object mod {
       def setPreserveScrollTopUndefined: Self = StObject.set(x, "preserveScrollTop", js.undefined)
       
       @scala.inline
-      def setSelect(value: /* state */ js.Any => _): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      def setSelect(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)

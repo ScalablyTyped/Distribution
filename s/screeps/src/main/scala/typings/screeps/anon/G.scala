@@ -4,36 +4,27 @@ import typings.screeps.screepsStrings.LH
 import typings.screeps.screepsStrings.ZH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait G extends StObject {
   
-  var G: typings.screeps.screepsStrings.GH = js.native
+  var G: typings.screeps.screepsStrings.GH
   
-  var K: typings.screeps.screepsStrings.KH = js.native
+  var K: typings.screeps.screepsStrings.KH
   
-  var L: LH = js.native
+  var L: LH
   
-  var O: typings.screeps.screepsStrings.OH = js.native
+  var O: typings.screeps.screepsStrings.OH
   
-  var U: typings.screeps.screepsStrings.UH = js.native
+  var U: typings.screeps.screepsStrings.UH
   
-  var Z: ZH = js.native
+  var Z: ZH
 }
 object G {
   
   @scala.inline
-  def apply(
-    G: typings.screeps.screepsStrings.GH,
-    K: typings.screeps.screepsStrings.KH,
-    L: LH,
-    O: typings.screeps.screepsStrings.OH,
-    U: typings.screeps.screepsStrings.UH,
-    Z: ZH
-  ): G = {
-    val __obj = js.Dynamic.literal(G = G.asInstanceOf[js.Any], K = K.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], U = U.asInstanceOf[js.Any], Z = Z.asInstanceOf[js.Any])
+  def apply(): G = {
+    val __obj = js.Dynamic.literal(G = "GH", K = "KH", L = "LH", O = "OH", U = "UH", Z = "ZH")
     __obj.asInstanceOf[G]
   }
   

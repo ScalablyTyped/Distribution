@@ -8,7 +8,6 @@ import typings.nodegit.nodegitNumbers.`1`
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterMod {
@@ -30,33 +29,30 @@ object filterMod {
   /* static members */
   object Filter {
     
-    @JSImport("nodegit/filter", "Filter.listContains")
+    @JSImport("nodegit/filter", "Filter")
     @js.native
-    def listContains(filters: js.Any, name: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/filter", "Filter.listLength")
-    @js.native
-    def listLength(fl: js.Any): Double = js.native
+    @scala.inline
+    def listContains(filters: js.Any, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listContains")(filters.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/filter", "Filter.listNew")
-    @js.native
-    def listNew(repo: Repository, mode: Double, options: Double): js.Promise[_] = js.native
+    @scala.inline
+    def listLength(fl: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listLength")(fl.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("nodegit/filter", "Filter.listStreamBlob")
-    @js.native
-    def listStreamBlob(filters: js.Any, blob: Blob, target: WriteStream): Double = js.native
+    @scala.inline
+    def listNew(repo: Repository, mode: Double, options: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listNew")(repo.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("nodegit/filter", "Filter.listStreamData")
-    @js.native
-    def listStreamData(filters: js.Any, data: Buf, target: WriteStream): Double = js.native
+    @scala.inline
+    def listStreamBlob(filters: js.Any, blob: Blob, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamBlob")(filters.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/filter", "Filter.listStreamFile")
-    @js.native
-    def listStreamFile(filters: js.Any, repo: Repository, path: String, target: WriteStream): Double = js.native
+    @scala.inline
+    def listStreamData(filters: js.Any, data: Buf, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamData")(filters.asInstanceOf[js.Any], data.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/filter", "Filter.unregister")
-    @js.native
-    def unregister(name: String): Double = js.native
+    @scala.inline
+    def listStreamFile(filters: js.Any, repo: Repository, path: String, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamFile")(filters.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def unregister(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

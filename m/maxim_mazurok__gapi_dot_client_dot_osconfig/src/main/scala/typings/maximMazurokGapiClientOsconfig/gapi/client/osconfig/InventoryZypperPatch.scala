@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryZypperPatch extends StObject {
   
   /** The category of the patch. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** The name of the patch. */
-  var patchName: js.UndefOr[String] = js.native
+  var patchName: js.UndefOr[String] = js.undefined
   
   /** The severity specified for this patch */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /** Any summary information provided about this patch. */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
 }
 object InventoryZypperPatch {
   

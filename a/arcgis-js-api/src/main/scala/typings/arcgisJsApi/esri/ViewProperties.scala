@@ -2,88 +2,88 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewProperties extends DOMContainerProperties {
+trait ViewProperties
+  extends StObject
+     with DOMContainerProperties {
   
   /**
     * Collection containing a flat list of all the created [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) related to the basemap, operational layers, and group layers in this view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#allLayerViews)
     */
-  var allLayerViews: js.UndefOr[CollectionProperties[LayerViewProperties]] = js.native
+  var allLayerViews: js.UndefOr[CollectionProperties[LayerViewProperties]] = js.undefined
   
   /**
     * Represents an ongoing view animation initialized by [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#animation)
     */
-  var animation: js.UndefOr[ViewAnimationProperties] = js.native
+  var animation: js.UndefOr[ViewAnimationProperties] = js.undefined
   
   /**
     * Represents the view for a single basemap after it has been added to the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#basemapView)
     */
-  var basemapView: js.UndefOr[BasemapViewProperties] = js.native
+  var basemapView: js.UndefOr[BasemapViewProperties] = js.undefined
   
   /**
     * A fatal [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) returned when the view loses its WebGL context.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#fatalError)
     */
-  var fatalError: js.UndefOr[Error] = js.native
+  var fatalError: js.UndefOr[Error] = js.undefined
   
   /**
     * Allows for adding [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) directly to the default graphics in the View.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics)
     */
-  var graphics: js.UndefOr[CollectionProperties[GraphicProperties]] = js.native
+  var graphics: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   
   /**
     * A collection containing a hierarchical list of all the created [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) of the [operational layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#layerViews)
     */
-  var layerViews: js.UndefOr[CollectionProperties[LayerViewProperties]] = js.native
+  var layerViews: js.UndefOr[CollectionProperties[LayerViewProperties]] = js.undefined
   
   /**
     * An instance of a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) object to display in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map)
     */
-  var map: js.UndefOr[MapProperties] = js.native
+  var map: js.UndefOr[MapProperties] = js.undefined
   
   /**
     * Options to configure the navigation behavior of the View.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#navigation)
     */
-  var navigation: js.UndefOr[NavigationProperties] = js.native
+  var navigation: js.UndefOr[NavigationProperties] = js.undefined
   
   /**
     * Use the padding property to make the [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center), and [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent), etc.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
-  var padding: js.UndefOr[ViewPadding] = js.native
+  var padding: js.UndefOr[ViewPadding] = js.undefined
   
   /**
     * The spatial reference of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The view's time extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent)
     */
-  var timeExtent: js.UndefOr[TimeExtentProperties] = js.native
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 object ViewProperties {
   

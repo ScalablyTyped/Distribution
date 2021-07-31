@@ -6,7 +6,6 @@ import typings.polished.sideKeywordMod.SideKeyword
 import typings.polished.timingFunctionMod.TimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polishedStrings {
@@ -82,157 +81,219 @@ object polishedStrings {
   def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
-  sealed trait active extends _InteractionState
+  sealed trait active
+    extends StObject
+       with _InteractionState
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait augFourth extends _ModularScaleRatio
+  sealed trait augFourth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def augFourth: augFourth = "augFourth".asInstanceOf[augFourth]
   
   @js.native
-  sealed trait bottom extends SideKeyword
+  sealed trait bottom
+    extends StObject
+       with SideKeyword
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomLeft extends SideKeyword
+  sealed trait bottomLeft
+    extends StObject
+       with SideKeyword
   @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait bottomRight extends SideKeyword
+  sealed trait bottomRight
+    extends StObject
+       with SideKeyword
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
-  sealed trait doubleOctave extends _ModularScaleRatio
+  sealed trait doubleOctave
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def doubleOctave: doubleOctave = "doubleOctave".asInstanceOf[doubleOctave]
   
   @js.native
-  sealed trait easeInBack extends TimingFunction
+  sealed trait easeInBack
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInBack: easeInBack = "easeInBack".asInstanceOf[easeInBack]
   
   @js.native
-  sealed trait easeInCirc extends TimingFunction
+  sealed trait easeInCirc
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInCirc: easeInCirc = "easeInCirc".asInstanceOf[easeInCirc]
   
   @js.native
-  sealed trait easeInCubic extends TimingFunction
+  sealed trait easeInCubic
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInCubic: easeInCubic = "easeInCubic".asInstanceOf[easeInCubic]
   
   @js.native
-  sealed trait easeInExpo extends TimingFunction
+  sealed trait easeInExpo
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInExpo: easeInExpo = "easeInExpo".asInstanceOf[easeInExpo]
   
   @js.native
-  sealed trait easeInOutBack extends TimingFunction
+  sealed trait easeInOutBack
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutBack: easeInOutBack = "easeInOutBack".asInstanceOf[easeInOutBack]
   
   @js.native
-  sealed trait easeInOutCirc extends TimingFunction
+  sealed trait easeInOutCirc
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutCirc: easeInOutCirc = "easeInOutCirc".asInstanceOf[easeInOutCirc]
   
   @js.native
-  sealed trait easeInOutCubic extends TimingFunction
+  sealed trait easeInOutCubic
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutCubic: easeInOutCubic = "easeInOutCubic".asInstanceOf[easeInOutCubic]
   
   @js.native
-  sealed trait easeInOutExpo extends TimingFunction
+  sealed trait easeInOutExpo
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutExpo: easeInOutExpo = "easeInOutExpo".asInstanceOf[easeInOutExpo]
   
   @js.native
-  sealed trait easeInOutQuad extends TimingFunction
+  sealed trait easeInOutQuad
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutQuad: easeInOutQuad = "easeInOutQuad".asInstanceOf[easeInOutQuad]
   
   @js.native
-  sealed trait easeInOutQuart extends TimingFunction
+  sealed trait easeInOutQuart
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutQuart: easeInOutQuart = "easeInOutQuart".asInstanceOf[easeInOutQuart]
   
   @js.native
-  sealed trait easeInOutQuint extends TimingFunction
+  sealed trait easeInOutQuint
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutQuint: easeInOutQuint = "easeInOutQuint".asInstanceOf[easeInOutQuint]
   
   @js.native
-  sealed trait easeInOutSine extends TimingFunction
+  sealed trait easeInOutSine
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInOutSine: easeInOutSine = "easeInOutSine".asInstanceOf[easeInOutSine]
   
   @js.native
-  sealed trait easeInQuad extends TimingFunction
+  sealed trait easeInQuad
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInQuad: easeInQuad = "easeInQuad".asInstanceOf[easeInQuad]
   
   @js.native
-  sealed trait easeInQuart extends TimingFunction
+  sealed trait easeInQuart
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInQuart: easeInQuart = "easeInQuart".asInstanceOf[easeInQuart]
   
   @js.native
-  sealed trait easeInQuint extends TimingFunction
+  sealed trait easeInQuint
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInQuint: easeInQuint = "easeInQuint".asInstanceOf[easeInQuint]
   
   @js.native
-  sealed trait easeInSine extends TimingFunction
+  sealed trait easeInSine
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeInSine: easeInSine = "easeInSine".asInstanceOf[easeInSine]
   
   @js.native
-  sealed trait easeOutBack extends TimingFunction
+  sealed trait easeOutBack
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutBack: easeOutBack = "easeOutBack".asInstanceOf[easeOutBack]
   
   @js.native
-  sealed trait easeOutCirc extends TimingFunction
+  sealed trait easeOutCirc
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutCirc: easeOutCirc = "easeOutCirc".asInstanceOf[easeOutCirc]
   
   @js.native
-  sealed trait easeOutCubic extends TimingFunction
+  sealed trait easeOutCubic
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutCubic: easeOutCubic = "easeOutCubic".asInstanceOf[easeOutCubic]
   
   @js.native
-  sealed trait easeOutExpo extends TimingFunction
+  sealed trait easeOutExpo
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutExpo: easeOutExpo = "easeOutExpo".asInstanceOf[easeOutExpo]
   
   @js.native
-  sealed trait easeOutQuad extends TimingFunction
+  sealed trait easeOutQuad
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutQuad: easeOutQuad = "easeOutQuad".asInstanceOf[easeOutQuad]
   
   @js.native
-  sealed trait easeOutQuart extends TimingFunction
+  sealed trait easeOutQuart
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutQuart: easeOutQuart = "easeOutQuart".asInstanceOf[easeOutQuart]
   
   @js.native
-  sealed trait easeOutQuint extends TimingFunction
+  sealed trait easeOutQuint
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutQuint: easeOutQuint = "easeOutQuint".asInstanceOf[easeOutQuint]
   
   @js.native
-  sealed trait easeOutSine extends TimingFunction
+  sealed trait easeOutSine
+    extends StObject
+       with TimingFunction
   @scala.inline
   def easeOutSine: easeOutSine = "easeOutSine".asInstanceOf[easeOutSine]
   
   @js.native
-  sealed trait focus extends _InteractionState
+  sealed trait focus
+    extends StObject
+       with _InteractionState
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   
@@ -242,12 +303,16 @@ object polishedStrings {
   def func: func = "func".asInstanceOf[func]
   
   @js.native
-  sealed trait goldenSection extends _ModularScaleRatio
+  sealed trait goldenSection
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def goldenSection: goldenSection = "goldenSection".asInstanceOf[goldenSection]
   
   @js.native
-  sealed trait hover extends _InteractionState
+  sealed trait hover
+    extends StObject
+       with _InteractionState
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   
@@ -257,42 +322,58 @@ object polishedStrings {
   def infix: infix = "infix".asInstanceOf[infix]
   
   @js.native
-  sealed trait left extends SideKeyword
+  sealed trait left
+    extends StObject
+       with SideKeyword
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait majorEleventh extends _ModularScaleRatio
+  sealed trait majorEleventh
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorEleventh: majorEleventh = "majorEleventh".asInstanceOf[majorEleventh]
   
   @js.native
-  sealed trait majorSecond extends _ModularScaleRatio
+  sealed trait majorSecond
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
   
   @js.native
-  sealed trait majorSeventh extends _ModularScaleRatio
+  sealed trait majorSeventh
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorSeventh: majorSeventh = "majorSeventh".asInstanceOf[majorSeventh]
   
   @js.native
-  sealed trait majorSixth extends _ModularScaleRatio
+  sealed trait majorSixth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorSixth: majorSixth = "majorSixth".asInstanceOf[majorSixth]
   
   @js.native
-  sealed trait majorTenth extends _ModularScaleRatio
+  sealed trait majorTenth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorTenth: majorTenth = "majorTenth".asInstanceOf[majorTenth]
   
   @js.native
-  sealed trait majorThird extends _ModularScaleRatio
+  sealed trait majorThird
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
   
   @js.native
-  sealed trait majorTwelfth extends _ModularScaleRatio
+  sealed trait majorTwelfth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def majorTwelfth: majorTwelfth = "majorTwelfth".asInstanceOf[majorTwelfth]
   
@@ -317,37 +398,51 @@ object polishedStrings {
   def minBackslashb: minBackslashb = "min\\b".asInstanceOf[minBackslashb]
   
   @js.native
-  sealed trait minorSecond extends _ModularScaleRatio
+  sealed trait minorSecond
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def minorSecond: minorSecond = "minorSecond".asInstanceOf[minorSecond]
   
   @js.native
-  sealed trait minorSeventh extends _ModularScaleRatio
+  sealed trait minorSeventh
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def minorSeventh: minorSeventh = "minorSeventh".asInstanceOf[minorSeventh]
   
   @js.native
-  sealed trait minorSixth extends _ModularScaleRatio
+  sealed trait minorSixth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def minorSixth: minorSixth = "minorSixth".asInstanceOf[minorSixth]
   
   @js.native
-  sealed trait minorThird extends _ModularScaleRatio
+  sealed trait minorThird
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
   
   @js.native
-  sealed trait octave extends _ModularScaleRatio
+  sealed trait octave
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def octave: octave = "octave".asInstanceOf[octave]
   
   @js.native
-  sealed trait perfectFifth extends _ModularScaleRatio
+  sealed trait perfectFifth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def perfectFifth: perfectFifth = "perfectFifth".asInstanceOf[perfectFifth]
   
   @js.native
-  sealed trait perfectFourth extends _ModularScaleRatio
+  sealed trait perfectFourth
+    extends StObject
+       with _ModularScaleRatio
   @scala.inline
   def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
   
@@ -362,7 +457,9 @@ object polishedStrings {
   def prefix: prefix = "prefix".asInstanceOf[prefix]
   
   @js.native
-  sealed trait right extends SideKeyword
+  sealed trait right
+    extends StObject
+       with SideKeyword
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -377,17 +474,23 @@ object polishedStrings {
   def sqrtBackslashb: sqrtBackslashb = "sqrt\\b".asInstanceOf[sqrtBackslashb]
   
   @js.native
-  sealed trait top extends SideKeyword
+  sealed trait top
+    extends StObject
+       with SideKeyword
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topLeft extends SideKeyword
+  sealed trait topLeft
+    extends StObject
+       with SideKeyword
   @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait topRight extends SideKeyword
+  sealed trait topRight
+    extends StObject
+       with SideKeyword
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
 }

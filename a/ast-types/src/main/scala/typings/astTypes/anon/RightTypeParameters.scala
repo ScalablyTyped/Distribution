@@ -7,27 +7,25 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightTypeParameters extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var right: FlowTypeKind = js.native
+  var right: FlowTypeKind
   
-  var typeParameters: TypeParameterDeclarationKind | Null = js.native
+  var typeParameters: TypeParameterDeclarationKind | Null
 }
 object RightTypeParameters {
   
   @scala.inline
   def apply(id: IdentifierKind, right: FlowTypeKind): RightTypeParameters = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], typeParameters = null)
     __obj.asInstanceOf[RightTypeParameters]
   }
   

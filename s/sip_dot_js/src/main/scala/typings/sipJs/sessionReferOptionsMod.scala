@@ -5,22 +5,20 @@ import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionReferOptionsMod {
   
-  @js.native
   trait SessionReferOptions extends StObject {
     
     /** Called upon receiving an incoming NOTIFY associated with a REFER. */
-    var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.undefined
     
     /** See `core` API. */
-    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.native
+    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.undefined
     
     /** See `core` API. */
-    var requestOptions: js.UndefOr[RequestOptions] = js.native
+    var requestOptions: js.UndefOr[RequestOptions] = js.undefined
   }
   object SessionReferOptions {
     

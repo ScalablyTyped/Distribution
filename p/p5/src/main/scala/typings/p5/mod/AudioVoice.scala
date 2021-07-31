@@ -2,21 +2,19 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioVoice extends StObject {
   
   /**
     *   Connect to p5 objects or Web Audio Nodes
     */
-  def connect(unit: js.Object): Unit = js.native
+  def connect(unit: js.Object): Unit
   
   /**
     *   Disconnect from soundOut
     */
-  def disconnect(): Unit = js.native
+  def disconnect(): Unit
 }
 object AudioVoice {
   

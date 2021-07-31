@@ -10,9 +10,9 @@ Glide.js is a dependency-free JavaScript ES6 slider and carousel. It’s lightwe
 | ------------------ | :-------------: |
 | Full name          | @glidejs/glide |
 | Keywords           | simple, lightweight, fast, slider, carousel, touch, responsive |
-| # releases         | 8 |
-| # dependents       | 32 |
-| # downloads        | 2205996 |
+| # releases         | 7 |
+| # dependents       | 34 |
+| # downloads        | 2960441 |
 | # stars            | 0 |
 
 ## Links

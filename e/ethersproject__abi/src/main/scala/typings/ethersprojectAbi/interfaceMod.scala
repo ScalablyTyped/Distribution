@@ -19,17 +19,20 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectProperties.mod.Description
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
+  
+  @JSImport("@ethersproject/abi/lib/interface", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/abi/lib/interface", "Indexed")
   @js.native
   class Indexed protected () extends Description[Indexed] {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed ]: @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed[K]}
-      */ typings.ethersprojectAbi.ethersprojectAbiStrings.Indexed with TopLevel[Indexed]) = this()
+      */ typings.ethersprojectAbi.ethersprojectAbiStrings.Indexed & TopLevel[Indexed]) = this()
     
     val _isIndexed: Boolean = js.native
     
@@ -38,9 +41,12 @@ object interfaceMod {
   /* static members */
   object Indexed {
     
-    @JSImport("@ethersproject/abi/lib/interface", "Indexed.isIndexed")
+    @JSImport("@ethersproject/abi/lib/interface", "Indexed")
     @js.native
-    def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexed")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/interface", "Interface")
@@ -53,7 +59,7 @@ object interfaceMod {
     
     def _decodeParams(params: js.Array[ParamType], data: BytesLike): Result = js.native
     
-    def _encodeParams(params: js.Array[ParamType], values: js.Array[_]): String = js.native
+    def _encodeParams(params: js.Array[ParamType], values: js.Array[js.Any]): String = js.native
     
     val _isInterface: Boolean = js.native
     
@@ -71,21 +77,21 @@ object interfaceMod {
     val deploy: ConstructorFragment = js.native
     
     def encodeDeploy(): String = js.native
-    def encodeDeploy(values: js.Array[_]): String = js.native
+    def encodeDeploy(values: js.Array[js.Any]): String = js.native
     
-    def encodeEventLog(eventFragment: EventFragment, values: js.Array[_]): Data = js.native
+    def encodeEventLog(eventFragment: EventFragment, values: js.Array[js.Any]): Data = js.native
     
-    def encodeFilterTopics(eventFragment: EventFragment, values: js.Array[_]): js.Array[String | js.Array[String]] = js.native
+    def encodeFilterTopics(eventFragment: EventFragment, values: js.Array[js.Any]): js.Array[String | js.Array[String]] = js.native
     
     def encodeFunctionData(functionFragment: String): String = js.native
-    def encodeFunctionData(functionFragment: String, values: js.Array[_]): String = js.native
+    def encodeFunctionData(functionFragment: String, values: js.Array[js.Any]): String = js.native
     def encodeFunctionData(functionFragment: FunctionFragment): String = js.native
-    def encodeFunctionData(functionFragment: FunctionFragment, values: js.Array[_]): String = js.native
+    def encodeFunctionData(functionFragment: FunctionFragment, values: js.Array[js.Any]): String = js.native
     
     def encodeFunctionResult(functionFragment: String): String = js.native
-    def encodeFunctionResult(functionFragment: String, values: js.Array[_]): String = js.native
+    def encodeFunctionResult(functionFragment: String, values: js.Array[js.Any]): String = js.native
     def encodeFunctionResult(functionFragment: FunctionFragment): String = js.native
-    def encodeFunctionResult(functionFragment: FunctionFragment, values: js.Array[_]): String = js.native
+    def encodeFunctionResult(functionFragment: FunctionFragment, values: js.Array[js.Any]): String = js.native
     
     val errors: StringDictionary[js.Any] = js.native
     
@@ -117,25 +123,24 @@ object interfaceMod {
   /* static members */
   object Interface {
     
-    @JSImport("@ethersproject/abi/lib/interface", "Interface.getAbiCoder")
+    @JSImport("@ethersproject/abi/lib/interface", "Interface")
     @js.native
-    def getAbiCoder(): AbiCoder = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/abi/lib/interface", "Interface.getAddress")
-    @js.native
-    def getAddress(address: String): String = js.native
+    @scala.inline
+    def getAbiCoder(): AbiCoder = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbiCoder")().asInstanceOf[AbiCoder]
     
-    @JSImport("@ethersproject/abi/lib/interface", "Interface.getEventTopic")
-    @js.native
-    def getEventTopic(eventFragment: EventFragment): String = js.native
+    @scala.inline
+    def getAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@ethersproject/abi/lib/interface", "Interface.getSighash")
-    @js.native
-    def getSighash(functionFragment: FunctionFragment): String = js.native
+    @scala.inline
+    def getEventTopic(eventFragment: EventFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventTopic")(eventFragment.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@ethersproject/abi/lib/interface", "Interface.isInterface")
-    @js.native
-    def isInterface(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean = js.native
+    @scala.inline
+    def getSighash(functionFragment: FunctionFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSighash")(functionFragment.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def isInterface(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterface")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/interface", "LogDescription")
@@ -143,7 +148,7 @@ object interfaceMod {
   class LogDescription protected () extends Description[LogDescription] {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.LogDescription ]: @ethersproject/abi.@ethersproject/abi/lib/interface.LogDescription[K]}
-      */ typings.ethersprojectAbi.ethersprojectAbiStrings.LogDescription with TopLevel[LogDescription]) = this()
+      */ typings.ethersprojectAbi.ethersprojectAbiStrings.LogDescription & TopLevel[LogDescription]) = this()
     
     val args: Result = js.native
     
@@ -161,7 +166,7 @@ object interfaceMod {
   class TransactionDescription protected () extends Description[TransactionDescription] {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.TransactionDescription ]: @ethersproject/abi.@ethersproject/abi/lib/interface.TransactionDescription[K]}
-      */ typings.ethersprojectAbi.ethersprojectAbiStrings.TransactionDescription with TopLevel[TransactionDescription]) = this()
+      */ typings.ethersprojectAbi.ethersprojectAbiStrings.TransactionDescription & TopLevel[TransactionDescription]) = this()
     
     val args: Result = js.native
     
@@ -176,7 +181,6 @@ object interfaceMod {
     val value: BigNumber = js.native
   }
   
-  @JSImport("@ethersproject/abi/lib/interface", "checkResultErrors")
-  @js.native
-  def checkResultErrors(result: Result): js.Array[Error] = js.native
+  @scala.inline
+  def checkResultErrors(result: Result): js.Array[Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResultErrors")(result.asInstanceOf[js.Any]).asInstanceOf[js.Array[Error]]
 }

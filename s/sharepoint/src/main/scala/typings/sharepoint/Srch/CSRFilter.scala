@@ -2,19 +2,17 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSRFilter extends StObject {
   
-  var IsSelected: Boolean = js.native
+  var IsSelected: Boolean
   
-  var RefinementCount: Double = js.native
+  var RefinementCount: Double
   
-  var RefinementName: String = js.native
+  var RefinementName: String
   
-  var RefinementToken: String = js.native
+  var RefinementToken: String
 }
 object CSRFilter {
   

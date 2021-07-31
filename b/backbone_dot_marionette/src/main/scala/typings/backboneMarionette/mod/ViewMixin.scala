@@ -2,41 +2,40 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewMixin
-  extends DomMixin
+  extends StObject
+     with DomMixin
      with CommonMixin {
   
-  var bindUIElements: js.Any = js.native
+  var bindUIElements: js.Any
   
-  var childViewEventPrefix: js.Any = js.native
+  var childViewEventPrefix: js.Any
   
-  var delegateEntityEvents: js.Any = js.native
+  var delegateEntityEvents: js.Any
   
-  var delegateEvents: js.Any = js.native
+  var delegateEvents: js.Any
   
-  var destroy: js.Any = js.native
+  var destroy: js.Any
   
-  var getTriggers: js.Any = js.native
+  var getTriggers: js.Any
   
-  var isAttached: js.Any = js.native
+  var isAttached: js.Any
   
-  var isDestroyed: js.Any = js.native
+  var isDestroyed: js.Any
   
-  var isRendered: js.Any = js.native
+  var isRendered: js.Any
   
-  var supportsDestroyLifecycle: js.Any = js.native
+  var supportsDestroyLifecycle: js.Any
   
-  var supportsRenderLifecycle: js.Any = js.native
+  var supportsRenderLifecycle: js.Any
   
-  var triggerMethod: js.Any = js.native
+  var triggerMethod: js.Any
   
-  var unbindUIElements: js.Any = js.native
+  var unbindUIElements: js.Any
   
-  var undelegateEntityEvents: js.Any = js.native
+  var undelegateEntityEvents: js.Any
 }
 object ViewMixin {
   

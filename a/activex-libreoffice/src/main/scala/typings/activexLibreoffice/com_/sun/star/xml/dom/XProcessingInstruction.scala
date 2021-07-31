@@ -3,26 +3,26 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XProcessingInstruction extends XNode {
+trait XProcessingInstruction
+  extends StObject
+     with XNode {
   
   /** The content of this processing instruction. */
-  var Data: String = js.native
+  var Data: String
   
   /** The target of this processing instruction. */
-  val Target: String = js.native
+  val Target: String
   
   /** The content of this processing instruction. */
-  def getData(): String = js.native
+  def getData(): String
   
   /** The target of this processing instruction. */
-  def getTarget(): String = js.native
+  def getTarget(): String
   
   /** The content of this processing instruction. Throws: {@link DOMException} - NO_MODIFICATION_ALLOWED_ERR: Raised when the node is readonly. */
-  def setData(data: String): Unit = js.native
+  def setData(data: String): Unit
 }
 object XProcessingInstruction {
   

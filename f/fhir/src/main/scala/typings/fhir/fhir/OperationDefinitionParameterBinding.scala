@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ValueSet details if this is coded
   */
-@js.native
-trait OperationDefinitionParameterBinding extends BackboneElement {
+trait OperationDefinitionParameterBinding
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'strength'.
     */
-  var _strength: js.UndefOr[Element] = js.native
+  var _strength: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueSetUri'.
     */
-  var _valueSetUri: js.UndefOr[Element] = js.native
+  var _valueSetUri: js.UndefOr[Element] = js.undefined
   
   /**
     * required | extensible | preferred | example
     */
-  var strength: code = js.native
+  var strength: code
   
   /**
     * Source of value set
     */
-  var valueSetReference: js.UndefOr[Reference] = js.native
+  var valueSetReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Source of value set
     */
-  var valueSetUri: js.UndefOr[uri] = js.native
+  var valueSetUri: js.UndefOr[uri] = js.undefined
 }
 object OperationDefinitionParameterBinding {
   

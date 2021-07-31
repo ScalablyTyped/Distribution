@@ -2,29 +2,27 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFunctionIdentifier extends StObject {
   
   /**
     * Final byte, must be in range \x40 .. \x7e for CSI and DCS,
     * \x30 .. \x7e for ESC.
     */
-  var `final`: String = js.native
+  var `final`: String
   
   /**
     * Optional intermediate bytes, must be in range \x20 .. \x2f.
     * Usable in CSI, DCS and ESC.
     */
-  var intermediates: js.UndefOr[String] = js.native
+  var intermediates: js.UndefOr[String] = js.undefined
   
   /**
     * Optional prefix byte, must be in range \x3c .. \x3f.
     * Usable in CSI and DCS.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object IFunctionIdentifier {
   

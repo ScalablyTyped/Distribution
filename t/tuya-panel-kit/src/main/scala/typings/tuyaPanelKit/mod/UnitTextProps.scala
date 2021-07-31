@@ -6,45 +6,43 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.icon
 import typings.tuyaPanelKit.tuyaPanelKitStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitTextProps extends StObject {
   
-  var letterWidth: js.UndefOr[Double] = js.native
+  var letterWidth: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var svgMap: js.UndefOr[js.Object] = js.native
+  var svgMap: js.UndefOr[js.Object] = js.undefined
   
-  var symbolWidth: js.UndefOr[Double] = js.native
+  var symbolWidth: js.UndefOr[Double] = js.undefined
   
-  var symbols: js.UndefOr[js.Array[String]] = js.native
+  var symbols: js.UndefOr[js.Array[String]] = js.undefined
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var unitColor: js.UndefOr[String] = js.native
+  var unitColor: js.UndefOr[String] = js.undefined
   
-  var unitPaddingLeft: js.UndefOr[Double] = js.native
+  var unitPaddingLeft: js.UndefOr[Double] = js.undefined
   
-  var unitPaddingTop: js.UndefOr[Double] = js.native
+  var unitPaddingTop: js.UndefOr[Double] = js.undefined
   
-  var unitSize: js.UndefOr[Double] = js.native
+  var unitSize: js.UndefOr[Double] = js.undefined
   
-  var unitType: js.UndefOr[icon | text] = js.native
+  var unitType: js.UndefOr[icon | text] = js.undefined
   
-  var useART: js.UndefOr[Boolean] = js.native
+  var useART: js.UndefOr[Boolean] = js.undefined
   
-  var value: String | Double = js.native
+  var value: String | Double
   
-  var valueColor: js.UndefOr[String] = js.native
+  var valueColor: js.UndefOr[String] = js.undefined
   
-  var valueColors: js.UndefOr[js.Array[String]] = js.native
+  var valueColors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var valueSize: js.UndefOr[Double] = js.native
+  var valueSize: js.UndefOr[Double] = js.undefined
 }
 object UnitTextProps {
   

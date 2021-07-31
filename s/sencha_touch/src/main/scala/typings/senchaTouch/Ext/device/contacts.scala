@@ -4,39 +4,39 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contacts {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Method] Returns an Array of contact objects
       * @param config Object
       * @returns Object[] An array of contact objects.
       */
-    var getContacts: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Array]] = js.native
+    var getContacts: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Array]] = js.undefined
     
     /** [Method] Returns the value of includeImages
       * @returns Boolean
       */
-    var getIncludeImages: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getIncludeImages: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns localized user readable label for a contact field i e
       * @param config Object
       * @returns String user readable string
       */
-    var getLocalizedLabel: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.native
+    var getLocalizedLabel: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.undefined
     
     /** [Method] Returns base64 encoded image thumbnail for a contact specified in config id This method is for Sencha Native Packager
       * @param config Object
       * @returns String base64 string
       */
-    var getThumbnail: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.native
+    var getThumbnail: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], String]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var includeImages: js.UndefOr[Boolean] = js.native
+    var includeImages: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -46,12 +46,12 @@ object contacts {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of includeImages
       * @param includeImages Boolean The new value.
       */
-    var setIncludeImages: js.UndefOr[js.Function1[/* includeImages */ js.UndefOr[Boolean], Unit]] = js.native
+    var setIncludeImages: js.UndefOr[js.Function1[/* includeImages */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -108,8 +108,9 @@ object contacts {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract
+  trait ICordova
+    extends StObject
+       with IAbstract
   object ICordova {
     
     @scala.inline
@@ -119,8 +120,9 @@ object contacts {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract
+  trait IPhoneGap
+    extends StObject
+       with IAbstract
   object IPhoneGap {
     
     @scala.inline
@@ -130,8 +132,9 @@ object contacts {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract
+  trait ISencha
+    extends StObject
+       with IAbstract
   object ISencha {
     
     @scala.inline

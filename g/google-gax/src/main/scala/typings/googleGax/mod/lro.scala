@@ -4,14 +4,13 @@ import typings.googleGax.grpcMod.GrpcClientOptions
 import typings.googleGax.operationsClientMod.OperationsClientBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lro {
   
-  @JSImport("google-gax", "lro")
-  @js.native
-  def apply(options: GrpcClientOptions): OperationsClientBuilder = js.native
+  @scala.inline
+  def apply(options: GrpcClientOptions): OperationsClientBuilder = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OperationsClientBuilder]
+  
   @JSImport("google-gax", "lro")
   @js.native
   val ^ : js.Any = js.native

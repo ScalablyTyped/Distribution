@@ -24,73 +24,73 @@ import typings.jsreportChromePdf.jsreportChromePdfStrings.screen
 import typings.jsreportCore.mod.ExtensionDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  
   @JSImport("jsreport-chrome-pdf", JSImport.Namespace)
   @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-chrome-pdf", JSImport.Namespace)
-  @js.native
-  def apply(options: PartialOptions): ExtensionDefinition = js.native
+  val ^ : js.Any = js.native
   
   // https://jsreport.net/learn/chrome-pdf
   // https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#pagepdfoptions
-  @js.native
   trait Chrome extends StObject {
     
-    var displayHeaderFooter: Boolean = js.native
+    var displayHeaderFooter: Boolean
     
-    var footerTemplate: String = js.native
+    var footerTemplate: String
     
     // 1-5, 8, 11-13
-    var format: String = js.native
+    var format: String
     
     // https://github.com/jsreport/jsreport-chrome-pdf/blob/master/test/chromeTest.js
-    var header: String = js.native
+    var header: String
     
-    var headerTemplate: String = js.native
+    var headerTemplate: String
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var landscape: Boolean = js.native
+    var landscape: Boolean
     
-    var margin: Bottom = js.native
+    var margin: Bottom
     
-    var marginBottom: String | Double = js.native
+    var marginBottom: String | Double
     
-    var marginLeft: String | Double = js.native
+    var marginLeft: String | Double
     
-    var marginRight: String | Double = js.native
+    var marginRight: String | Double
     
     // https://jsreport.net/learn/chrome-pdf
-    var marginTop: String | Double = js.native
+    var marginTop: String | Double
     
-    var mediaType: screen | print = js.native
+    var mediaType: screen | print
     
-    var pageNumber: Double = js.native
+    var pageNumber: Double
     
-    var pageRanges: String = js.native
+    var pageRanges: String
     
-    var path: String = js.native
+    var path: String
     
-    var preferCSSPageSize: Boolean = js.native
+    var preferCSSPageSize: Boolean
     
-    var printBackground: Boolean = js.native
+    var printBackground: Boolean
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var totalPages: Double = js.native
+    var totalPages: Double
     
-    var url: String = js.native
+    var url: String
     
-    var waitForJS: Boolean = js.native
+    var waitForJS: Boolean
     
-    var waitForNetworkIddle: Boolean = js.native
+    var waitForNetworkIddle: Boolean
     
-    var width: String | Double = js.native
+    var width: String | Double
   }
   object Chrome {
     
@@ -204,23 +204,22 @@ object mod {
   
   // https://jsreport.net/learn/chrome-image
   // https://github.com/puppeteer/puppeteer/blob/v1.11.0/docs/api.md#pagescreenshotoptions
-  @js.native
   trait ChromeImage extends StObject {
     
-    var clip: Height = js.native
+    var clip: Height
     
-    var encoding: base64 | binary = js.native
+    var encoding: base64 | binary
     
     // 0-100
-    var fullPage: Boolean = js.native
+    var fullPage: Boolean
     
-    var omitBackground: Boolean = js.native
+    var omitBackground: Boolean
     
-    var path: String = js.native
+    var path: String
     
-    var quality: Double = js.native
+    var quality: Double
     
-    var `type`: jpeg | png = js.native
+    var `type`: jpeg | png
   }
   object ChromeImage {
     
@@ -266,44 +265,43 @@ object mod {
   }
   
   // https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions
-  @js.native
   trait LaunchOptions extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var defaultViewport: Partialwidthstringheights = js.native
+    var defaultViewport: Partialwidthstringheights
     
-    var devtools: Boolean = js.native
+    var devtools: Boolean
     
-    var dumpio: Boolean = js.native
+    var dumpio: Boolean
     
-    var env: StringDictionary[String] = js.native
+    var env: StringDictionary[String]
     
-    var executablePath: String = js.native
+    var executablePath: String
     
-    var extraPrefsFirefox: StringDictionary[js.Any] = js.native
+    var extraPrefsFirefox: StringDictionary[js.Any]
     
-    var handleSIGHUP: Boolean = js.native
+    var handleSIGHUP: Boolean
     
-    var handleSIGINT: Boolean = js.native
+    var handleSIGINT: Boolean
     
-    var handleSIGTERM: Boolean = js.native
+    var handleSIGTERM: Boolean
     
-    var headless: Boolean = js.native
+    var headless: Boolean
     
-    var ignoreDefaultArgs: Boolean | js.Array[String] = js.native
+    var ignoreDefaultArgs: Boolean | js.Array[String]
     
-    var ignoreHTTPSErrors: Boolean = js.native
+    var ignoreHTTPSErrors: Boolean
     
-    var pipe: Boolean = js.native
+    var pipe: Boolean
     
-    var product: chrome | firefox = js.native
+    var product: chrome | firefox
     
-    var slowMo: Double = js.native
+    var slowMo: Double
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var userDataDir: String = js.native
+    var userDataDir: String
   }
   object LaunchOptions {
     
@@ -398,26 +396,25 @@ object mod {
   }
   
   // https://jsreport.net/learn/configuration
-  @js.native
   trait Options extends StObject {
     
-    var allowLocalFilesAccess: Boolean = js.native
+    var allowLocalFilesAccess: Boolean
     
-    var allowedModules: js.Array[String] = js.native
+    var allowedModules: js.Array[String]
     
-    var host: String = js.native
+    var host: String
     
-    var launchOptions: PartialLaunchOptions = js.native
+    var launchOptions: PartialLaunchOptions
     
-    var numberOfWorkers: Double = js.native
+    var numberOfWorkers: Double
     
-    var portLeftBoundary: Double = js.native
+    var portLeftBoundary: Double
     
-    var portRightBoundary: Double = js.native
+    var portRightBoundary: Double
     
-    var strategy: `dedicated-process` | `http-server` | `in-process` = js.native
+    var strategy: `dedicated-process` | `http-server` | `in-process`
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Options {
     
@@ -475,14 +472,13 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var chrome: js.UndefOr[PartialChrome] = js.native
+      var chrome: js.UndefOr[PartialChrome] = js.undefined
       
-      var chromeImage: js.UndefOr[PartialChromeImage] = js.native
+      var chromeImage: js.UndefOr[PartialChromeImage] = js.undefined
       
-      var recipe: `chrome-pdf` | `chrome-image` | String = js.native
+      var recipe: `chrome-pdf` | `chrome-image` | String
     }
     object Template {
       

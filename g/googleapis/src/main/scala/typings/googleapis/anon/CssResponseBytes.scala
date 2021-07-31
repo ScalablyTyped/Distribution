@@ -2,37 +2,35 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CssResponseBytes extends StObject {
   
-  var cssResponseBytes: js.UndefOr[String] = js.native
+  var cssResponseBytes: js.UndefOr[String] = js.undefined
   
-  var flashResponseBytes: js.UndefOr[String] = js.native
+  var flashResponseBytes: js.UndefOr[String] = js.undefined
   
-  var htmlResponseBytes: js.UndefOr[String] = js.native
+  var htmlResponseBytes: js.UndefOr[String] = js.undefined
   
-  var imageResponseBytes: js.UndefOr[String] = js.native
+  var imageResponseBytes: js.UndefOr[String] = js.undefined
   
-  var javascriptResponseBytes: js.UndefOr[String] = js.native
+  var javascriptResponseBytes: js.UndefOr[String] = js.undefined
   
-  var numberCssResources: js.UndefOr[Double] = js.native
+  var numberCssResources: js.UndefOr[Double] = js.undefined
   
-  var numberHosts: js.UndefOr[Double] = js.native
+  var numberHosts: js.UndefOr[Double] = js.undefined
   
-  var numberJsResources: js.UndefOr[Double] = js.native
+  var numberJsResources: js.UndefOr[Double] = js.undefined
   
-  var numberResources: js.UndefOr[Double] = js.native
+  var numberResources: js.UndefOr[Double] = js.undefined
   
-  var numberStaticResources: js.UndefOr[Double] = js.native
+  var numberStaticResources: js.UndefOr[Double] = js.undefined
   
-  var otherResponseBytes: js.UndefOr[String] = js.native
+  var otherResponseBytes: js.UndefOr[String] = js.undefined
   
-  var textResponseBytes: js.UndefOr[String] = js.native
+  var textResponseBytes: js.UndefOr[String] = js.undefined
   
-  var totalRequestBytes: js.UndefOr[String] = js.native
+  var totalRequestBytes: js.UndefOr[String] = js.undefined
 }
 object CssResponseBytes {
   

@@ -7,28 +7,28 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the settings for number formatting. */
-@js.native
-trait NumberFormatSettings extends XPropertySet {
+trait NumberFormatSettings
+  extends StObject
+     with XPropertySet {
   
   /** is set to indicate that a zero value should be formatted as an empty string. */
-  var NoZero: Boolean = js.native
+  var NoZero: Boolean
   
   /**
     * specifies the date which is represented by the value 0.
     *
     * The most common value for this is 12/30/1899.
     */
-  var NullDate: Date = js.native
+  var NullDate: Date
   
   /** specifies the maximum number of decimals used for the standard number format ("General"). */
-  var StandardDecimals: Double = js.native
+  var StandardDecimals: Double
   
   /** specifies the first year to be generated from a two-digit year input. */
-  var TwoDigitDateStart: Double = js.native
+  var TwoDigitDateStart: Double
 }
 object NumberFormatSettings {
   

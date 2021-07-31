@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusteringMetrics extends StObject {
   
   /** [Beta] Information for all clusters. */
-  var clusters: js.UndefOr[js.Array[Cluster]] = js.native
+  var clusters: js.UndefOr[js.Array[Cluster]] = js.undefined
   
   /** Davies-Bouldin index. */
-  var daviesBouldinIndex: js.UndefOr[Double] = js.native
+  var daviesBouldinIndex: js.UndefOr[Double] = js.undefined
   
   /** Mean of squared distances between each sample to its cluster centroid. */
-  var meanSquaredDistance: js.UndefOr[Double] = js.native
+  var meanSquaredDistance: js.UndefOr[Double] = js.undefined
 }
 object ClusteringMetrics {
   

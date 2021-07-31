@@ -46,7 +46,6 @@ import typings.arcgisJsApi.esri.WebStyleSymbolConstructor
 import typings.arcgisJsApi.esri.WebStyleSymbolProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -69,8 +68,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html)
     */
   class CIMSymbolCls ()
-    extends typings.arcgisJsApi.esri.CIMSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.CIMSymbol {
     def this(properties: CIMSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.ExtrudeSymbol3DLayer")
@@ -86,8 +94,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html)
     */
   class ExtrudeSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.ExtrudeSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.ExtrudeSymbol3DLayer {
     def this(properties: ExtrudeSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.FillSymbol3DLayer")
@@ -103,8 +120,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html)
     */
   class FillSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.FillSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.FillSymbol3DLayer {
     def this(properties: FillSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.Font")
@@ -115,8 +141,17 @@ object symbols {
   @JSGlobal("__esri.symbols.Font")
   @js.native
   class FontCls ()
-    extends typings.arcgisJsApi.esri.Font {
+    extends StObject
+       with typings.arcgisJsApi.esri.Font {
     def this(properties: FontProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.IconSymbol3DLayer")
@@ -132,8 +167,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html)
     */
   class IconSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.IconSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.IconSymbol3DLayer {
     def this(properties: IconSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.LabelSymbol3D")
@@ -149,8 +193,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html)
     */
   class LabelSymbol3DCls ()
-    extends typings.arcgisJsApi.esri.LabelSymbol3D {
+    extends StObject
+       with typings.arcgisJsApi.esri.LabelSymbol3D {
     def this(properties: LabelSymbol3DProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.LineSymbol3D")
@@ -166,8 +219,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html)
     */
   class LineSymbol3DCls ()
-    extends typings.arcgisJsApi.esri.LineSymbol3D {
+    extends StObject
+       with typings.arcgisJsApi.esri.LineSymbol3D {
     def this(properties: LineSymbol3DProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.LineSymbol3DLayer")
@@ -183,8 +245,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html)
     */
   class LineSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.LineSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.LineSymbol3DLayer {
     def this(properties: LineSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.MeshSymbol3D")
@@ -200,8 +271,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html)
     */
   class MeshSymbol3DCls ()
-    extends typings.arcgisJsApi.esri.MeshSymbol3D {
+    extends StObject
+       with typings.arcgisJsApi.esri.MeshSymbol3D {
     def this(properties: MeshSymbol3DProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.ObjectSymbol3DLayer")
@@ -217,8 +297,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html)
     */
   class ObjectSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.ObjectSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.ObjectSymbol3DLayer {
     def this(properties: ObjectSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.PathSymbol3DLayer")
@@ -234,8 +323,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html)
     */
   class PathSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.PathSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.PathSymbol3DLayer {
     def this(properties: PathSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.PictureFillSymbol")
@@ -251,8 +349,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html)
     */
   class PictureFillSymbolCls ()
-    extends typings.arcgisJsApi.esri.PictureFillSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.PictureFillSymbol {
     def this(properties: PictureFillSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.PictureMarkerSymbol")
@@ -268,8 +375,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html)
     */
   class PictureMarkerSymbolCls ()
-    extends typings.arcgisJsApi.esri.PictureMarkerSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.PictureMarkerSymbol {
     def this(properties: PictureMarkerSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.PointSymbol3D")
@@ -285,8 +401,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html)
     */
   class PointSymbol3DCls ()
-    extends typings.arcgisJsApi.esri.PointSymbol3D {
+    extends StObject
+       with typings.arcgisJsApi.esri.PointSymbol3D {
     def this(properties: PointSymbol3DProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.PolygonSymbol3D")
@@ -302,8 +427,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html)
     */
   class PolygonSymbol3DCls ()
-    extends typings.arcgisJsApi.esri.PolygonSymbol3D {
+    extends StObject
+       with typings.arcgisJsApi.esri.PolygonSymbol3D {
     def this(properties: PolygonSymbol3DProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.SimpleFillSymbol")
@@ -319,8 +453,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html)
     */
   class SimpleFillSymbolCls ()
-    extends typings.arcgisJsApi.esri.SimpleFillSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.SimpleFillSymbol {
     def this(properties: SimpleFillSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.SimpleLineSymbol")
@@ -336,8 +479,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html)
     */
   class SimpleLineSymbolCls ()
-    extends typings.arcgisJsApi.esri.SimpleLineSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.SimpleLineSymbol {
     def this(properties: SimpleLineSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.SimpleMarkerSymbol")
@@ -353,8 +505,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html)
     */
   class SimpleMarkerSymbolCls ()
-    extends typings.arcgisJsApi.esri.SimpleMarkerSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.SimpleMarkerSymbol {
     def this(properties: SimpleMarkerSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.TextSymbol")
@@ -374,8 +535,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html)
     */
   class TextSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.TextSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.TextSymbol3DLayer {
     def this(properties: TextSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -387,8 +557,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html)
     */
   class TextSymbolCls ()
-    extends typings.arcgisJsApi.esri.TextSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.TextSymbol {
     def this(properties: TextSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.WaterSymbol3DLayer")
@@ -404,8 +583,17 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html)
     */
   class WaterSymbol3DLayerCls ()
-    extends typings.arcgisJsApi.esri.WaterSymbol3DLayer {
+    extends StObject
+       with typings.arcgisJsApi.esri.WaterSymbol3DLayer {
     def this(properties: WaterSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.symbols.WebStyleSymbol")
@@ -421,7 +609,16 @@ object symbols {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html)
     */
   class WebStyleSymbolCls ()
-    extends typings.arcgisJsApi.esri.WebStyleSymbol {
+    extends StObject
+       with typings.arcgisJsApi.esri.WebStyleSymbol {
     def this(properties: WebStyleSymbolProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
 }

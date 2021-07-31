@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationTemplateMod {
@@ -62,6 +61,10 @@ object configurationTemplateMod {
   /* static members */
   object ConfigurationTemplate {
     
+    @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ConfigurationTemplate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,50 +74,44 @@ object configurationTemplateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ConfigurationTemplate = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConfigurationTemplate = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationTemplateState): ConfigurationTemplate = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): ConfigurationTemplate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationTemplateState): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): ConfigurationTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationTemplate]
     
     /**
       * Returns true if the given object is an instance of ConfigurationTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean]
   }
   
-  @js.native
   trait ConfigurationTemplateArgs extends StObject {
     
     /**
       * name of the application to associate with this configuration template
       */
-    val application: Input[String] = js.native
+    val application: Input[String]
     
     /**
       * Short description of the Template
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the environment used with this configuration template
       */
-    val environmentId: js.UndefOr[Input[String]] = js.native
+    val environmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for this Template.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Option settings to configure the new Environment. These
@@ -125,13 +122,13 @@ object configurationTemplateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A solution stack to base your Template
       * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
       */
-    val solutionStackName: js.UndefOr[Input[String]] = js.native
+    val solutionStackName: js.UndefOr[Input[String]] = js.undefined
   }
   object ConfigurationTemplateArgs {
     
@@ -186,28 +183,27 @@ object configurationTemplateMod {
     }
   }
   
-  @js.native
   trait ConfigurationTemplateState extends StObject {
     
     /**
       * name of the application to associate with this configuration template
       */
-    val application: js.UndefOr[Input[String]] = js.native
+    val application: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Short description of the Template
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the environment used with this configuration template
       */
-    val environmentId: js.UndefOr[Input[String]] = js.native
+    val environmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for this Template.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Option settings to configure the new Environment. These
@@ -218,13 +214,13 @@ object configurationTemplateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.ConfigurationTemplateSetting]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A solution stack to base your Template
       * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
       */
-    val solutionStackName: js.UndefOr[Input[String]] = js.native
+    val solutionStackName: js.UndefOr[Input[String]] = js.undefined
   }
   object ConfigurationTemplateState {
     

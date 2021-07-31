@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEventTrackerResponse extends StObject {
   
   /**
     * The ARN of the event tracker.
     */
-  var eventTrackerArn: js.UndefOr[Arn] = js.native
+  var eventTrackerArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID of the event tracker. Include this ID in requests to the PutEvents API.
     */
-  var trackingId: js.UndefOr[TrackingId] = js.native
+  var trackingId: js.UndefOr[TrackingId] = js.undefined
 }
 object CreateEventTrackerResponse {
   

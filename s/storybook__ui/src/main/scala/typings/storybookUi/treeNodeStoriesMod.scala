@@ -4,10 +4,13 @@ import typings.react.mod.global.JSX.Element
 import typings.storybookUi.anon.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeNodeStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -28,19 +31,15 @@ object treeNodeStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", "Expandable")
-  @js.native
-  def Expandable(): Element = js.native
+  @scala.inline
+  def Expandable(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Expandable")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", "Nested")
-  @js.native
-  def Nested(): Element = js.native
+  @scala.inline
+  def Nested(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Nested")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", "Selection")
-  @js.native
-  def Selection(): Element = js.native
+  @scala.inline
+  def Selection(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Selection")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/TreeNode.stories", "Types")
-  @js.native
-  def Types(): Element = js.native
+  @scala.inline
+  def Types(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Types")().asInstanceOf[Element]
 }

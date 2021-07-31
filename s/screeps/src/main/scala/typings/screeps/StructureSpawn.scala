@@ -3,7 +3,6 @@ package typings.screeps
 import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait StructureSpawn
-  extends OwnedStructure[STRUCTURE_SPAWN]
+  extends StObject
+     with OwnedStructure[STRUCTURE_SPAWN]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {
@@ -55,9 +55,9 @@ trait StructureSpawn
     * ```
     */
   def createCreep(body: js.Array[BodyPartConstant]): ScreepsReturnCode | String = js.native
-  def createCreep(body: js.Array[BodyPartConstant], name: js.UndefOr[scala.Nothing], memory: CreepMemory): ScreepsReturnCode | String = js.native
   def createCreep(body: js.Array[BodyPartConstant], name: String): ScreepsReturnCode | String = js.native
   def createCreep(body: js.Array[BodyPartConstant], name: String, memory: CreepMemory): ScreepsReturnCode | String = js.native
+  def createCreep(body: js.Array[BodyPartConstant], name: Unit, memory: CreepMemory): ScreepsReturnCode | String = js.native
   
   /**
     * The amount of energy containing in the spawn.

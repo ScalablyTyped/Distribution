@@ -4,7 +4,6 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,7 @@ trait IExtJSGrid extends StObject {
   def matchGridCellContent(panel: js.Any, row: Double, column: Double, string: RegExp, description: String): Unit = js.native
   
   def waitForRowsVisible(panel: js.Any, callback: js.Function): Unit = js.native
-  def waitForRowsVisible(panel: js.Any, callback: js.Function, scope: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def waitForRowsVisible(panel: js.Any, callback: js.Function, scope: js.Any): Unit = js.native
   def waitForRowsVisible(panel: js.Any, callback: js.Function, scope: js.Any, timeout: Double): Unit = js.native
+  def waitForRowsVisible(panel: js.Any, callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
 }

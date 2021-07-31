@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ProcessResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyProcessResponse extends StObject {
   
-  var body: ProcessResponse = js.native
+  var body: ProcessResponse
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ProcessResponse = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ProcessResponse
 }
 object BodyProcessResponse {
   
   @scala.inline
-  def apply(body: ProcessResponse, resourceType: typings.fhirKitClient.fhirKitClientStrings.ProcessResponse): BodyProcessResponse = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ProcessResponse): BodyProcessResponse = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ProcessResponse")
     __obj.asInstanceOf[BodyProcessResponse]
   }
   

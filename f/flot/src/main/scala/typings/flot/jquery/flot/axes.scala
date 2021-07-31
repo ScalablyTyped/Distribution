@@ -2,19 +2,17 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait axes extends StObject {
   
-  var x2axis: js.UndefOr[axis] = js.native
+  var x2axis: js.UndefOr[axis] = js.undefined
   
-  var xaxis: axis = js.native
+  var xaxis: axis
   
-  var y2axis: js.UndefOr[axis] = js.native
+  var y2axis: js.UndefOr[axis] = js.undefined
   
-  var yaxis: axis = js.native
+  var yaxis: axis
 }
 object axes {
   

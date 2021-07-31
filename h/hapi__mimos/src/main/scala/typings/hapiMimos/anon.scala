@@ -4,35 +4,34 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mimeDb.mod.MimeSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @hapi/mimos.@hapi/mimos.MimosOptionsValue & {[key: string] : any} */
-  @js.native
   trait MimosOptionsValuekeystrin
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /** The default charset associated with this type, if any. */
-    val charset: js.UndefOr[String] = js.native
+    val charset: js.UndefOr[String] = js.undefined
     
     /** Whether a file of this type can be gzipped. */
-    val compressible: js.UndefOr[Boolean] = js.native
+    val compressible: js.UndefOr[Boolean] = js.undefined
     
     /** Known extensions associated with this mime type. */
-    val extensions: js.UndefOr[js.Array[String]] = js.native
+    val extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Where the mime type is defined.
       * If not set, it's probably a custom media type.
       */
-    val source: js.UndefOr[MimeSource] = js.native
+    val source: js.UndefOr[MimeSource] = js.undefined
     
     /**
       * Specify the type value of result objects, defaults to key.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MimosOptionsValuekeystrin {
     
@@ -81,34 +80,33 @@ object anon {
   }
   
   /* Inlined @hapi/mimos.@hapi/mimos.MimosOptionsValue & {  predicate :(mime : @hapi/mimos.@hapi/mimos.MimosOptionsValue & {[key: string] : any}): @hapi/mimos.@hapi/mimos.MimosOptionsValue & {[key: string] : any} | undefined} */
-  @js.native
   trait MimosOptionsValuepredicat extends StObject {
     
     /** The default charset associated with this type, if any. */
-    val charset: js.UndefOr[String] = js.native
+    val charset: js.UndefOr[String] = js.undefined
     
     /** Whether a file of this type can be gzipped. */
-    val compressible: js.UndefOr[Boolean] = js.native
+    val compressible: js.UndefOr[Boolean] = js.undefined
     
     /** Known extensions associated with this mime type. */
-    val extensions: js.UndefOr[js.Array[String]] = js.native
+    val extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Method with signature function(mime) when this mime type is found in the database,
       * this function will run. This allows you make customizations to mime based on developer criteria.
       */
-    var predicate: js.UndefOr[js.Function1[/* mime */ MimosOptionsValuekeystrin, MimosOptionsValuekeystrin]] = js.native
+    var predicate: js.UndefOr[js.Function1[/* mime */ MimosOptionsValuekeystrin, MimosOptionsValuekeystrin]] = js.undefined
     
     /**
       * Where the mime type is defined.
       * If not set, it's probably a custom media type.
       */
-    val source: js.UndefOr[MimeSource] = js.native
+    val source: js.UndefOr[MimeSource] = js.undefined
     
     /**
       * Specify the type value of result objects, defaults to key.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MimosOptionsValuepredicat {
     

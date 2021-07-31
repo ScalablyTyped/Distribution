@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnConnectionRoute extends StObject {
   
-  var destinationCidrBlock: String = js.native
+  var destinationCidrBlock: String
   
-  var source: String = js.native
+  var source: String
   
-  var state: String = js.native
+  var state: String
 }
 object VpnConnectionRoute {
   

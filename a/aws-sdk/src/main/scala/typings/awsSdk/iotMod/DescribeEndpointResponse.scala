@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointResponse extends StObject {
   
   /**
     * The endpoint. The format of the endpoint is as follows: identifier.iot.region.amazonaws.com.
     */
-  var endpointAddress: js.UndefOr[EndpointAddress] = js.native
+  var endpointAddress: js.UndefOr[EndpointAddress] = js.undefined
 }
 object DescribeEndpointResponse {
   

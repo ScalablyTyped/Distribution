@@ -4,39 +4,37 @@ import typings.mfiles.MFiles.MFDataType
 import typings.mfiles.MFiles.MFOCRDimensionUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOCRZone extends StObject {
   
-  var Barcode: Boolean = js.native
+  var Barcode: Boolean
   
-  def ClearOCROptions(): Unit = js.native
+  def ClearOCROptions(): Unit
   
-  def Clone(): IOCRZone = js.native
+  def Clone(): IOCRZone
   
-  var DataType: MFDataType = js.native
+  var DataType: MFDataType
   
-  var DimensionUnit: MFOCRDimensionUnit = js.native
+  var DimensionUnit: MFOCRDimensionUnit
   
-  val HasOCROptions: Boolean = js.native
+  val HasOCROptions: Boolean
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Left: Double = js.native
+  var Left: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var OCROptions: IOCROptions = js.native
+  var OCROptions: IOCROptions
   
-  def SetOCROptions(OCROptions: IOCROptions): Unit = js.native
+  def SetOCROptions(OCROptions: IOCROptions): Unit
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object IOCRZone {
   

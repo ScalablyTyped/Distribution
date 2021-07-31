@@ -2,20 +2,18 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: rename to StructuredFormatting https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#StructuredFormatting
-@js.native
 trait AutocompleteStructuredFormatting extends StObject {
   
-  var main_text: String = js.native
+  var main_text: String
   
-  var main_text_matched_substrings: js.Array[PredictionSubstring] = js.native
+  var main_text_matched_substrings: js.Array[PredictionSubstring]
   
-  var secondary_text: String = js.native
+  var secondary_text: String
   
-  var secondary_text_matched_substrings: js.UndefOr[js.Array[PredictionSubstring]] = js.native
+  var secondary_text_matched_substrings: js.UndefOr[js.Array[PredictionSubstring]] = js.undefined
 }
 object AutocompleteStructuredFormatting {
   

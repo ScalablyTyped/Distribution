@@ -2,15 +2,13 @@ package typings.awsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var Address: String = js.native
+  var Address: String
   
-  var Expire: Double = js.native
+  var Expire: Double
 }
 object Address {
   

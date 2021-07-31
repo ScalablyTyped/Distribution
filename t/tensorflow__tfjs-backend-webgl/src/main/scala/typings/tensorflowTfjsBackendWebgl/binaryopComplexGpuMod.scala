@@ -3,15 +3,25 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryopComplexGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/binaryop_complex_gpu", "BinaryOpComplexProgram")
   @js.native
-  class BinaryOpComplexProgram protected () extends GPGPUProgram {
+  class BinaryOpComplexProgram protected ()
+    extends StObject
+       with GPGPUProgram {
     def this(op: String, aShape: js.Array[Double], bShape: js.Array[Double]) = this()
+    
+    /* CompleteClass */
+    var outputShape: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var userCode: String = js.native
+    
+    /* CompleteClass */
+    var variableNames: js.Array[String] = js.native
   }
   
   object COMPLEX_MULTIPLY {

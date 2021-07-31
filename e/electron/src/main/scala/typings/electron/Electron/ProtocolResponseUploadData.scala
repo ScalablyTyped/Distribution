@@ -3,22 +3,20 @@ package typings.electron.Electron
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolResponseUploadData extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/protocol-response-upload-data
   /**
     * MIME type of the content.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * Content to be sent.
     */
-  var data: String | Buffer = js.native
+  var data: String | Buffer
 }
 object ProtocolResponseUploadData {
   

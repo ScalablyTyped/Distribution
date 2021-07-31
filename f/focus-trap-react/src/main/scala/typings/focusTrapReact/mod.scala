@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,18 +17,18 @@ object mod {
   
   type FocusTrap = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props
-    extends AllHTMLAttributes[js.Any] {
+    extends StObject
+       with AllHTMLAttributes[js.Any] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     @JSName("children")
-    var children_Props: ReactElement = js.native
+    var children_Props: ReactElement
     
-    var focusTrapOptions: js.UndefOr[Options] = js.native
+    var focusTrapOptions: js.UndefOr[Options] = js.undefined
     
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     

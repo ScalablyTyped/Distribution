@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -94,6 +93,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Layer")
 @js.native
 class Layer protected ()
-  extends typings.playcanvas.pc.Layer {
+  extends StObject
+     with typings.playcanvas.pc.Layer {
   def this(options: js.Any) = this()
 }

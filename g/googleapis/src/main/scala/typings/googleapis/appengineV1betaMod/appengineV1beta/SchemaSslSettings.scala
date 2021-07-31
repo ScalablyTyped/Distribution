@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SSL configuration for a DomainMapping resource.
   */
-@js.native
 trait SchemaSslSettings extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaSslSettings extends StObject {
     * authorized to administer the AuthorizedCertificate resource to manually
     * map it to a DomainMapping resource. Example: 12345.
     */
-  var certificateId: js.UndefOr[String] = js.native
+  var certificateId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the managed AuthorizedCertificate resource currently being
@@ -31,14 +29,14 @@ trait SchemaSslSettings extends StObject {
     * SSL support while there is still a pending managed certificate, clear the
     * certificate_id field with an UpdateDomainMappingRequest.@OutputOnly
     */
-  var pendingManagedCertificateId: js.UndefOr[String] = js.native
+  var pendingManagedCertificateId: js.UndefOr[String] = js.undefined
   
   /**
     * SSL management type for this domain. If AUTOMATIC, a managed certificate
     * is automatically provisioned. If MANUAL, certificate_id must be manually
     * specified in order to configure SSL for this domain.
     */
-  var sslManagementType: js.UndefOr[String] = js.native
+  var sslManagementType: js.UndefOr[String] = js.undefined
 }
 object SchemaSslSettings {
   

@@ -2,18 +2,16 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestRunFinished. */
-@js.native
 trait ITestRunFinished extends StObject {
   
   /** TestRunFinished success */
-  var success: js.UndefOr[Boolean | Null] = js.native
+  var success: js.UndefOr[Boolean | Null] = js.undefined
   
   /** TestRunFinished timestamp */
-  var timestamp: js.UndefOr[ITimestamp | Null] = js.native
+  var timestamp: js.UndefOr[ITimestamp | Null] = js.undefined
 }
 object ITestRunFinished {
   

@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to access the {@link FootnoteSettings} within the context (e.g. document). */
-@js.native
-trait XEndnotesSettingsSupplier extends XInterface {
+trait XEndnotesSettingsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns {@link EndnoteSettings} of the object. */
-  val EndnotesSettings: XPropertySet = js.native
+  val EndnotesSettings: XPropertySet
   
   /** @returns {@link EndnoteSettings} of the object. */
-  def getEndnotesSettings(): XPropertySet = js.native
+  def getEndnotesSettings(): XPropertySet
 }
 object XEndnotesSettingsSupplier {
   

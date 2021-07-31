@@ -3,14 +3,12 @@ package typings.minappEnv.wx
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBeaconsSuccessCallbackResult extends StObject {
   
   /** iBeacon 设备列表 */
-  var beacons: Array[IBeaconInfo] = js.native
+  var beacons: Array[IBeaconInfo]
 }
 object GetBeaconsSuccessCallbackResult {
   

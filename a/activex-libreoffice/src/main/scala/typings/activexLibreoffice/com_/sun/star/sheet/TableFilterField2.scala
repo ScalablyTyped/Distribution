@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see SheetFilterDescriptor
   * @since OOo 3.2
   */
-@js.native
 trait TableFilterField2 extends StObject {
   
   /** specifies how the condition is connected to the previous condition. */
-  var Connection: FilterConnection = js.native
+  var Connection: FilterConnection
   
   /** specifies which field (column) is used for the condition. */
-  var Field: Double = js.native
+  var Field: Double
   
   /** selects whether the {@link TableFilterField2.NumericValue} or the {@link TableFilterField2.StringValue} is used. */
-  var IsNumeric: Boolean = js.native
+  var IsNumeric: Boolean
   
   /** specifies a numeric value for the condition. */
-  var NumericValue: Double = js.native
+  var NumericValue: Double
   
   /** specifies the type of the condition as defined in {@link FilterOperator2} . */
-  var Operator: Double = js.native
+  var Operator: Double
   
   /** specifies a string value for the condition. */
-  var StringValue: String = js.native
+  var StringValue: String
 }
 object TableFilterField2 {
   

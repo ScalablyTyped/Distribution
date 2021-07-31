@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Potential target for the link
   */
-@js.native
-trait GraphDefinitionLinkTarget extends BackboneElement {
+trait GraphDefinitionLinkTarget
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'profile'.
     */
-  var _profile: js.UndefOr[Element] = js.native
+  var _profile: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Compartment Consistency Rules
     */
-  var compartment: js.UndefOr[js.Array[GraphDefinitionLinkTargetCompartment]] = js.native
+  var compartment: js.UndefOr[js.Array[GraphDefinitionLinkTargetCompartment]] = js.undefined
   
   /**
     * Additional links from target resource
     */
-  var link: js.UndefOr[js.Array[GraphDefinitionLink]] = js.native
+  var link: js.UndefOr[js.Array[GraphDefinitionLink]] = js.undefined
   
   /**
     * Profile for the target resource
     */
-  var profile: js.UndefOr[uri] = js.native
+  var profile: js.UndefOr[uri] = js.undefined
   
   /**
     * Type of resource this link refers to
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object GraphDefinitionLinkTarget {
   

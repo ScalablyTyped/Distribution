@@ -11,8 +11,8 @@ Make unhandled promise rejections fail loudly instead of the default silent fail
 | Full name          | loud-rejection |
 | Keywords           | promise, promises, unhandled, uncaught, rejection, loud, fail, catch, throw, handler, exit, debug, debugging, verbose |
 | # releases         | 4 |
-| # dependents       | 166 |
-| # downloads        | 345801568 |
+| # dependents       | 185 |
+| # downloads        | 381100427 |
 | # stars            | 4 |
 
 ## Links

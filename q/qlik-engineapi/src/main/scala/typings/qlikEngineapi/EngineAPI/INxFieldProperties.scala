@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxFieldProperties extends StObject {
   
-  var qOneAndOnlyOne: Boolean = js.native
+  var qOneAndOnlyOne: Boolean
 }
 object INxFieldProperties {
   

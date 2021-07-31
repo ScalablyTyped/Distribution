@@ -2,36 +2,34 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDiskRequest extends StObject {
   
   /**
     * An array of objects that represent the add-ons to enable for the new disk.
     */
-  var addOns: js.UndefOr[AddOnRequestList] = js.native
+  var addOns: js.UndefOr[AddOnRequestList] = js.undefined
   
   /**
     * The Availability Zone where you want to create the disk (e.g., us-east-2a). Use the same Availability Zone as the Lightsail instance to which you want to attach the disk. Use the get regions operation to list the Availability Zones where Lightsail is currently available.
     */
-  var availabilityZone: NonEmptyString = js.native
+  var availabilityZone: NonEmptyString
   
   /**
     * The unique Lightsail disk name (e.g., my-disk).
     */
-  var diskName: ResourceName = js.native
+  var diskName: ResourceName
   
   /**
     * The size of the disk in GB (e.g., 32).
     */
-  var sizeInGb: integer = js.native
+  var sizeInGb: integer
   
   /**
     * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDiskRequest {
   

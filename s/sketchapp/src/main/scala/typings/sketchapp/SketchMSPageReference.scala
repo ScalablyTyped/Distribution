@@ -4,23 +4,21 @@ import typings.sketchapp.sketchappStrings.MSImmutablePage
 import typings.sketchapp.sketchappStrings.MSJSONFileReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSPageReference extends StObject {
   
-  var _class: MSJSONFileReference = js.native
+  var _class: MSJSONFileReference
   
-  var _ref: String = js.native
+  var _ref: String
   
-  var _ref_class: MSImmutablePage = js.native
+  var _ref_class: MSImmutablePage
 }
 object SketchMSPageReference {
   
   @scala.inline
-  def apply(_class: MSJSONFileReference, _ref: String, _ref_class: MSImmutablePage): SketchMSPageReference = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], _ref = _ref.asInstanceOf[js.Any], _ref_class = _ref_class.asInstanceOf[js.Any])
+  def apply(_ref: String): SketchMSPageReference = {
+    val __obj = js.Dynamic.literal(_class = "MSJSONFileReference", _ref = _ref.asInstanceOf[js.Any], _ref_class = "MSImmutablePage")
     __obj.asInstanceOf[SketchMSPageReference]
   }
   

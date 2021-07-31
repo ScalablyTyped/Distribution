@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminGetGithubPackagesBilling
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint = js.native
+  var parameters: EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint
   
-  var request: EnterpriseAdminGetGithubPackagesBillingGheRequestOptions = js.native
+  var request: EnterpriseAdminGetGithubPackagesBillingGheRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminGetGithubPackagesBillingGheResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminGetGithubPackagesBillingGheResponseData]
 }
 object ParametersEnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint {
   

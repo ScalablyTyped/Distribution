@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the styling for all of the paragraphs within a Shape or Table that
   * overlap with the given text index range.
   */
-@js.native
 trait SchemaUpdateParagraphStyleRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaUpdateParagraphStyleRequest extends StObject {
     * style. If `object_id` refers to a table, `cell_location` must have a
     * value. Otherwise, it must not.
     */
-  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The fields that should be updated.  At least one field must be specified.
@@ -28,22 +26,22 @@ trait SchemaUpdateParagraphStyleRequest extends StObject {
     * include its field name in the field mask but leave the field itself
     * unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the shape or table with the text to be styled.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The paragraph&#39;s style.
     */
-  var style: js.UndefOr[SchemaParagraphStyle] = js.native
+  var style: js.UndefOr[SchemaParagraphStyle] = js.undefined
   
   /**
     * The range of text containing the paragraph(s) to style.
     */
-  var textRange: js.UndefOr[SchemaRange] = js.native
+  var textRange: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaUpdateParagraphStyleRequest {
   

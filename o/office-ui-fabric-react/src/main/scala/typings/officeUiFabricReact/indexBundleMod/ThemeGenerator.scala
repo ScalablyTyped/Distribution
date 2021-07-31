@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.ithemerulesMod.IThemeRules
 import typings.officeUiFabricReact.ithemeslotruleMod.IThemeSlotRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator")
@@ -57,18 +56,16 @@ object ThemeGenerator {
     * Only used for the old theme designer, where loadTheme usage is acceptable,
     * unlike in the new theme designer.
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.getThemeAsCode")
-  @js.native
-  def getThemeAsCode(slotRules: IThemeRules): js.Any = js.native
+  @scala.inline
+  def getThemeAsCode(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCode")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets code-formatted load theme blob, specifically for the new theme designer,
     * aka.ms/themedesigner. Shouldn't use loadTheme like the old theme designer since it's deprecated.
     * We want to use the theme object from createTheme and use the Customizations.applySettings API instead.
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.getThemeAsCodeWithCreateTheme")
-  @js.native
-  def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = js.native
+  @scala.inline
+  def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCodeWithCreateTheme")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the JSON-formatted blob that describes the theme, usable with the REST request endpoints:
@@ -79,9 +76,8 @@ object ThemeGenerator {
     *   ... }
     * ```
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.getThemeAsJson")
-  @js.native
-  def getThemeAsJson(slotRules: IThemeRules): js.Any = js.native
+  @scala.inline
+  def getThemeAsJson(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsJson")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the theme as a list of SASS variables that can be used in code
@@ -91,9 +87,8 @@ object ThemeGenerator {
     * ...
     * ```
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.getThemeAsSass")
-  @js.native
-  def getThemeAsSass(slotRules: IThemeRules): js.Any = js.native
+  @scala.inline
+  def getThemeAsSass(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsSass")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the theme formatted for PowerShell scripts
@@ -105,9 +100,8 @@ object ThemeGenerator {
     * }
     * ```
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.getThemeForPowerShell")
-  @js.native
-  def getThemeForPowerShell(slotRules: IThemeRules): js.Any = js.native
+  @scala.inline
+  def getThemeForPowerShell(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeForPowerShell")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Sets the color of each slot based on its rule. Slots that don't inherit must have a color already.
@@ -115,9 +109,8 @@ object ThemeGenerator {
     * setSlot() can be called before this, but this must be called before getThemeAs*().
     * Does not override colors of rules where isCustomized is true (i.e. doesn't override existing customizations).
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.insureSlots")
-  @js.native
-  def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = js.native
+  @scala.inline
+  def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insureSlots")(slotRules.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets an IThemeSlotRule to the given color and cascades it to the rest of the theme, updating other IThemeSlotRules
@@ -129,110 +122,84 @@ object ThemeGenerator {
     * is false), or a custom color based on user input (isCustomized is true). This bool tells us whether to override
     * existing customized colors.
     */
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(rule: IThemeSlotRule, color: String): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(
-    rule: IThemeSlotRule,
-    color: String,
-    isInverted: js.UndefOr[scala.Nothing],
-    isCustomization: js.UndefOr[scala.Nothing],
-    overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(
-    rule: IThemeSlotRule,
-    color: String,
-    isInverted: js.UndefOr[scala.Nothing],
-    isCustomization: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(
-    rule: IThemeSlotRule,
-    color: String,
-    isInverted: js.UndefOr[scala.Nothing],
-    isCustomization: Boolean,
-    overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(
-    rule: IThemeSlotRule,
-    color: String,
-    isInverted: Boolean,
-    isCustomization: js.UndefOr[scala.Nothing],
-    overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setSlot(
     rule: IThemeSlotRule,
     color: String,
     isInverted: Boolean,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(rule: IThemeSlotRule, color: IColor): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setSlot(
     rule: IThemeSlotRule,
-    color: IColor,
-    isInverted: js.UndefOr[scala.Nothing],
-    isCustomization: js.UndefOr[scala.Nothing],
+    color: String,
+    isInverted: Boolean,
+    isCustomization: Unit,
     overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setSlot(
     rule: IThemeSlotRule,
-    color: IColor,
-    isInverted: js.UndefOr[scala.Nothing],
-    isCustomization: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(
-    rule: IThemeSlotRule,
-    color: IColor,
-    isInverted: js.UndefOr[scala.Nothing],
+    color: String,
+    isInverted: Unit,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setSlot(
     rule: IThemeSlotRule,
-    color: IColor,
-    isInverted: Boolean,
-    isCustomization: js.UndefOr[scala.Nothing],
+    color: String,
+    isInverted: Unit,
+    isCustomization: Unit,
     overwriteCustomColor: Boolean
-  ): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
-  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator.setSlot")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: IColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
     isInverted: Boolean,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(
+    rule: IThemeSlotRule,
+    color: IColor,
+    isInverted: Boolean,
+    isCustomization: Unit,
+    overwriteCustomColor: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(
+    rule: IThemeSlotRule,
+    color: IColor,
+    isInverted: Unit,
+    isCustomization: Boolean,
+    overwriteCustomColor: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setSlot(
+    rule: IThemeSlotRule,
+    color: IColor,
+    isInverted: Unit,
+    isCustomization: Unit,
+    overwriteCustomColor: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

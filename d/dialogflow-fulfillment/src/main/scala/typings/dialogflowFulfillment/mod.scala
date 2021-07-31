@@ -11,7 +11,6 @@ import typings.dialogflowFulfillment.anon.Request
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -72,43 +71,61 @@ object mod {
   object Platforms extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Platforms with String] = js.native
+    def apply(value: String): js.UndefOr[Platforms & String] = js.native
     
     @js.native
-    sealed trait ACTIONS_ON_GOOGLE extends Platforms
-    /* "ACTIONS_ON_GOOGLE" */ val ACTIONS_ON_GOOGLE: typings.dialogflowFulfillment.mod.Platforms.ACTIONS_ON_GOOGLE with String = js.native
+    sealed trait ACTIONS_ON_GOOGLE
+      extends StObject
+         with Platforms
+    /* "ACTIONS_ON_GOOGLE" */ val ACTIONS_ON_GOOGLE: typings.dialogflowFulfillment.mod.Platforms.ACTIONS_ON_GOOGLE & String = js.native
     
     @js.native
-    sealed trait FACEBOOK extends Platforms
-    /* "FACEBOOK" */ val FACEBOOK: typings.dialogflowFulfillment.mod.Platforms.FACEBOOK with String = js.native
+    sealed trait FACEBOOK
+      extends StObject
+         with Platforms
+    /* "FACEBOOK" */ val FACEBOOK: typings.dialogflowFulfillment.mod.Platforms.FACEBOOK & String = js.native
     
     @js.native
-    sealed trait KIK extends Platforms
-    /* "KIK" */ val KIK: typings.dialogflowFulfillment.mod.Platforms.KIK with String = js.native
+    sealed trait KIK
+      extends StObject
+         with Platforms
+    /* "KIK" */ val KIK: typings.dialogflowFulfillment.mod.Platforms.KIK & String = js.native
     
     @js.native
-    sealed trait LINE extends Platforms
-    /* "LINE" */ val LINE: typings.dialogflowFulfillment.mod.Platforms.LINE with String = js.native
+    sealed trait LINE
+      extends StObject
+         with Platforms
+    /* "LINE" */ val LINE: typings.dialogflowFulfillment.mod.Platforms.LINE & String = js.native
     
     @js.native
-    sealed trait SKYPE extends Platforms
-    /* "SKYPE" */ val SKYPE: typings.dialogflowFulfillment.mod.Platforms.SKYPE with String = js.native
+    sealed trait SKYPE
+      extends StObject
+         with Platforms
+    /* "SKYPE" */ val SKYPE: typings.dialogflowFulfillment.mod.Platforms.SKYPE & String = js.native
     
     @js.native
-    sealed trait SLACK extends Platforms
-    /* "SLACK" */ val SLACK: typings.dialogflowFulfillment.mod.Platforms.SLACK with String = js.native
+    sealed trait SLACK
+      extends StObject
+         with Platforms
+    /* "SLACK" */ val SLACK: typings.dialogflowFulfillment.mod.Platforms.SLACK & String = js.native
     
     @js.native
-    sealed trait TELEGRAM extends Platforms
-    /* "TELEGRAM" */ val TELEGRAM: typings.dialogflowFulfillment.mod.Platforms.TELEGRAM with String = js.native
+    sealed trait TELEGRAM
+      extends StObject
+         with Platforms
+    /* "TELEGRAM" */ val TELEGRAM: typings.dialogflowFulfillment.mod.Platforms.TELEGRAM & String = js.native
     
     @js.native
-    sealed trait UNSPECIFIED extends Platforms
-    /* "PLATFORM_UNSPECIFIED" */ val UNSPECIFIED: typings.dialogflowFulfillment.mod.Platforms.UNSPECIFIED with String = js.native
+    sealed trait UNSPECIFIED
+      extends StObject
+         with Platforms
+    /* "PLATFORM_UNSPECIFIED" */ val UNSPECIFIED: typings.dialogflowFulfillment.mod.Platforms.UNSPECIFIED & String = js.native
     
     @js.native
-    sealed trait VIBER extends Platforms
-    /* "VIBER" */ val VIBER: typings.dialogflowFulfillment.mod.Platforms.VIBER with String = js.native
+    sealed trait VIBER
+      extends StObject
+         with Platforms
+    /* "VIBER" */ val VIBER: typings.dialogflowFulfillment.mod.Platforms.VIBER & String = js.native
   }
   
   @JSImport("dialogflow-fulfillment", "RichResponse")
@@ -201,7 +218,7 @@ object mod {
     /**
       * Get Actions on Google DialogflowConversation object
       */
-    def conv(): DialogflowConversation[_, JsonObject, Contexts] = js.native
+    def conv(): DialogflowConversation[js.Any, JsonObject, Contexts] = js.native
     
     def end(responses: String): Unit = js.native
     def end(responses: js.Array[RichResponse | String]): Unit = js.native
@@ -222,12 +239,12 @@ object mod {
       */
     def getContext(contextName: String): Lifespan = js.native
     
-    def handleRequest(handler: js.Function1[/* agent */ this.type, Unit]): js.Promise[_] = js.native
+    def handleRequest(handler: js.Function1[/* agent */ this.type, Unit]): js.Promise[js.Any] = js.native
     /**
       * Handles the incoming Dialogflow request using a handler or Map of handlers Each handler must be a function callback.
       * @param handler map of Dialogflow action name to handler function or function to handle all requests (regardless of Dialogflow action).
       */
-    def handleRequest(handler: Map[String, js.Function1[/* agent */ this.type, Unit]]): js.Promise[_] = js.native
+    def handleRequest(handler: Map[String, js.Function1[/* agent */ this.type, Unit]]): js.Promise[js.Any] = js.native
     
     /** Dialogflow intent name or null if no value */
     val intent: String = js.native

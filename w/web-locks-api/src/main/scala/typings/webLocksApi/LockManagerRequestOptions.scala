@@ -5,19 +5,17 @@ import typings.webLocksApi.webLocksApiStrings.exclusive
 import typings.webLocksApi.webLocksApiStrings.shared
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LockManagerRequestOptions extends StObject {
   
-  var ifAvailable: js.UndefOr[Boolean] = js.native
+  var ifAvailable: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[exclusive | shared] = js.native
+  var mode: js.UndefOr[exclusive | shared] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
-  var steal: js.UndefOr[Boolean] = js.native
+  var steal: js.UndefOr[Boolean] = js.undefined
 }
 object LockManagerRequestOptions {
   

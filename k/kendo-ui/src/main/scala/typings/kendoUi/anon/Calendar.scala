@@ -2,19 +2,17 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calendar extends StObject {
   
-  var calendar: _empty = js.native
+  var calendar: _empty
   
-  var calendars: Standard = js.native
+  var calendars: Standard
   
-  var name: String = js.native
+  var name: String
   
-  var numberFormat: Currency = js.native
+  var numberFormat: Currency
 }
 object Calendar {
   

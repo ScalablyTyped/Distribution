@@ -3,7 +3,6 @@ package typings.googleapis.driveV2Mod.driveV2
 import typings.googleapis.anon.Category
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,135 +10,134 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with information about each app&#39;s supported MIME types, file
   * extensions, and other details.
   */
-@js.native
 trait SchemaApp extends StObject {
   
   /**
     * Whether the app is authorized to access data on the user&#39;s Drive.
     */
-  var authorized: js.UndefOr[Boolean] = js.native
+  var authorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The template url to create a new file with this app in a given folder.
     * The template will contain {folderId} to be replaced by the folder to
     * create the new file in.
     */
-  var createInFolderTemplate: js.UndefOr[String] = js.native
+  var createInFolderTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * The url to create a new file with this app.
     */
-  var createUrl: js.UndefOr[String] = js.native
+  var createUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the app has drive-wide scope. An app with drive-wide scope can
     * access all files in the user&#39;s drive.
     */
-  var hasDriveWideScope: js.UndefOr[Boolean] = js.native
+  var hasDriveWideScope: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The various icons for the app.
     */
-  var icons: js.UndefOr[js.Array[Category]] = js.native
+  var icons: js.UndefOr[js.Array[Category]] = js.undefined
   
   /**
     * The ID of the app.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the app is installed.
     */
-  var installed: js.UndefOr[Boolean] = js.native
+  var installed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always drive#app.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A long description of the app.
     */
-  var longDescription: js.UndefOr[String] = js.native
+  var longDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the app.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of object this app creates (e.g. Chart). If empty, the app name
     * should be used instead.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * The template url for opening files with this app. The template will
     * contain {ids} and/or {exportIds} to be replaced by the actual file ids.
     * See  Open Files  for the full documentation.
     */
-  var openUrlTemplate: js.UndefOr[String] = js.native
+  var openUrlTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * The list of primary file extensions.
     */
-  var primaryFileExtensions: js.UndefOr[js.Array[String]] = js.native
+  var primaryFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of primary mime types.
     */
-  var primaryMimeTypes: js.UndefOr[js.Array[String]] = js.native
+  var primaryMimeTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID of the product listing for this app.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the product listing for this app.
     */
-  var productUrl: js.UndefOr[String] = js.native
+  var productUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The list of secondary file extensions.
     */
-  var secondaryFileExtensions: js.UndefOr[js.Array[String]] = js.native
+  var secondaryFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of secondary mime types.
     */
-  var secondaryMimeTypes: js.UndefOr[js.Array[String]] = js.native
+  var secondaryMimeTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A short description of the app.
     */
-  var shortDescription: js.UndefOr[String] = js.native
+  var shortDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this app supports creating new objects.
     */
-  var supportsCreate: js.UndefOr[Boolean] = js.native
+  var supportsCreate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this app supports importing Google Docs.
     */
-  var supportsImport: js.UndefOr[Boolean] = js.native
+  var supportsImport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this app supports opening more than one file.
     */
-  var supportsMultiOpen: js.UndefOr[Boolean] = js.native
+  var supportsMultiOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this app supports creating new files when offline.
     */
-  var supportsOfflineCreate: js.UndefOr[Boolean] = js.native
+  var supportsOfflineCreate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the app is selected as the default handler for the types it
     * supports.
     */
-  var useByDefault: js.UndefOr[Boolean] = js.native
+  var useByDefault: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaApp {
   

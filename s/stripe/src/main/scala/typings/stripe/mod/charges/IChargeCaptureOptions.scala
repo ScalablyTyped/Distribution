@@ -3,11 +3,11 @@ package typings.stripe.mod.charges
 import typings.stripe.mod.IDataOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChargeCaptureOptions extends IDataOptions {
+trait IChargeCaptureOptions
+  extends StObject
+     with IDataOptions {
   
   /**
     * A positive integer in the smallest currency unit (e.g 100 cents to charge
@@ -15,7 +15,7 @@ trait IChargeCaptureOptions extends IDataOptions {
     * charge the card. The minimum amount is £0.50 (or equivalent in charge
     * currency).
     */
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
 }
 object IChargeCaptureOptions {
   

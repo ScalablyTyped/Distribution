@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2PrivacyMetric extends StObject {
   
   /** Categorical stats */
-  var categoricalStatsConfig: js.UndefOr[GooglePrivacyDlpV2CategoricalStatsConfig] = js.native
+  var categoricalStatsConfig: js.UndefOr[GooglePrivacyDlpV2CategoricalStatsConfig] = js.undefined
   
   /** delta-presence */
-  var deltaPresenceEstimationConfig: js.UndefOr[GooglePrivacyDlpV2DeltaPresenceEstimationConfig] = js.native
+  var deltaPresenceEstimationConfig: js.UndefOr[GooglePrivacyDlpV2DeltaPresenceEstimationConfig] = js.undefined
   
   /** K-anonymity */
-  var kAnonymityConfig: js.UndefOr[GooglePrivacyDlpV2KAnonymityConfig] = js.native
+  var kAnonymityConfig: js.UndefOr[GooglePrivacyDlpV2KAnonymityConfig] = js.undefined
   
   /** k-map */
-  var kMapEstimationConfig: js.UndefOr[GooglePrivacyDlpV2KMapEstimationConfig] = js.native
+  var kMapEstimationConfig: js.UndefOr[GooglePrivacyDlpV2KMapEstimationConfig] = js.undefined
   
   /** l-diversity */
-  var lDiversityConfig: js.UndefOr[GooglePrivacyDlpV2LDiversityConfig] = js.native
+  var lDiversityConfig: js.UndefOr[GooglePrivacyDlpV2LDiversityConfig] = js.undefined
   
   /** Numerical stats */
-  var numericalStatsConfig: js.UndefOr[GooglePrivacyDlpV2NumericalStatsConfig] = js.native
+  var numericalStatsConfig: js.UndefOr[GooglePrivacyDlpV2NumericalStatsConfig] = js.undefined
 }
 object GooglePrivacyDlpV2PrivacyMetric {
   

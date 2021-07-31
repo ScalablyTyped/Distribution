@@ -3,24 +3,22 @@ package typings.openlayers.mod
 import typings.openlayers.mod.proj.Projection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SphereMetricOptions extends StObject {
   
   /**
     * Projection of the geometry.  By default, the geometry is assumed to be in
     * EPSG:3857 (Web Mercator).
     */
-  var projection: js.UndefOr[Projection] = js.native
+  var projection: js.UndefOr[Projection] = js.undefined
   
   /**
     * Sphere radius.  By default, the radius of the earth is used (Clarke 1866
     * Authalic Sphere).
     * @api
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object SphereMetricOptions {
   

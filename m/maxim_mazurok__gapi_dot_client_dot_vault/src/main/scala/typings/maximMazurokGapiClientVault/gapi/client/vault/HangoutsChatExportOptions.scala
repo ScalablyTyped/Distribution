@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HangoutsChatExportOptions extends StObject {
   
   /** The export format for hangouts chat export. */
-  var exportFormat: js.UndefOr[String] = js.native
+  var exportFormat: js.UndefOr[String] = js.undefined
 }
 object HangoutsChatExportOptions {
   

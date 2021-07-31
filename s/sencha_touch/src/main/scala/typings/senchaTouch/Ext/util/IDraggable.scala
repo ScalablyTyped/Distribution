@@ -2,68 +2,67 @@ package typings.senchaTouch.Ext.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDraggable
-  extends typings.senchaTouch.Ext.mixin.IObservable {
+  extends StObject
+     with typings.senchaTouch.Ext.mixin.IObservable {
   
   /** [Config Option] (String) */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /** [Method] Disable the Draggable
     * @returns Ext.util.Draggable This Draggable instance
     */
-  var disable: js.UndefOr[js.Function0[this.type]] = js.native
+  var disable: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Enable the Draggable
     * @returns Ext.util.Draggable This Draggable instance
     */
-  var enable: js.UndefOr[js.Function0[this.type]] = js.native
+  var enable: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
     */
-  var getCls: js.UndefOr[js.Function0[String]] = js.native
+  var getCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of constraint
     * @returns String
     */
-  var getConstraint: js.UndefOr[js.Function0[String]] = js.native
+  var getConstraint: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of direction
     * @returns String
     */
-  var getDirection: js.UndefOr[js.Function0[String]] = js.native
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of disabled
     * @returns Object
     */
-  var getDisabled: js.UndefOr[js.Function0[_]] = js.native
+  var getDisabled: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of draggingCls
     * @returns String
     */
-  var getDraggingCls: js.UndefOr[js.Function0[String]] = js.native
+  var getDraggingCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of element
     * @returns Object
     */
-  var getElement: js.UndefOr[js.Function0[_]] = js.native
+  var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of initialOffset
     * @returns Object/Number
     */
-  var getInitialOffset: js.UndefOr[js.Function0[_]] = js.native
+  var getInitialOffset: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of translatable
     * @returns Object
     */
-  var getTranslatable: js.UndefOr[js.Function0[_]] = js.native
+  var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Object/Number) */
-  var initialOffset: js.UndefOr[js.Any] = js.native
+  var initialOffset: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -77,47 +76,47 @@ trait IDraggable
       /* events */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
-  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.native
+  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of constraint
     * @param constraint String The new value.
     */
-  var setConstraint: js.UndefOr[js.Function1[/* constraint */ js.UndefOr[String], Unit]] = js.native
+  var setConstraint: js.UndefOr[js.Function1[/* constraint */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of direction
     * @param direction String The new value.
     */
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of disabled
     * @param disabled Object The new value.
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of draggingCls
     * @param draggingCls String The new value.
     */
-  var setDraggingCls: js.UndefOr[js.Function1[/* draggingCls */ js.UndefOr[String], Unit]] = js.native
+  var setDraggingCls: js.UndefOr[js.Function1[/* draggingCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of element
     * @param element Object The new value.
     */
-  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of initialOffset
     * @param initialOffset Object/Number The new value.
     */
-  var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[js.Any], Unit]] = js.native
+  var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of translatable
     * @param translatable Object The new value.
     */
-  var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IDraggable {
   
@@ -167,7 +166,7 @@ object IDraggable {
     def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
     @scala.inline
-    def setGetDisabled(value: () => _): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
+    def setGetDisabled(value: () => js.Any): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDisabledUndefined: Self = StObject.set(x, "getDisabled", js.undefined)
@@ -179,19 +178,19 @@ object IDraggable {
     def setGetDraggingClsUndefined: Self = StObject.set(x, "getDraggingCls", js.undefined)
     
     @scala.inline
-    def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
     
     @scala.inline
-    def setGetInitialOffset(value: () => _): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
+    def setGetInitialOffset(value: () => js.Any): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetInitialOffsetUndefined: Self = StObject.set(x, "getInitialOffset", js.undefined)
     
     @scala.inline
-    def setGetTranslatable(value: () => _): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+    def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)

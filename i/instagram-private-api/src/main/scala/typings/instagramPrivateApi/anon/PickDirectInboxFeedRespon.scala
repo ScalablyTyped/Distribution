@@ -2,16 +2,14 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<instagram-private-api.instagram-private-api/dist/responses.DirectInboxFeedResponseThreadsItem, 'thread_id' | 'oldest_cursor'> */
-@js.native
 trait PickDirectInboxFeedRespon extends StObject {
   
-  var oldest_cursor: String = js.native
+  var oldest_cursor: String
   
-  var thread_id: String = js.native
+  var thread_id: String
 }
 object PickDirectInboxFeedRespon {
   

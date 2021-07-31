@@ -2,18 +2,16 @@ package typings.vscodeJsonrpc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @js.native
   trait Disposable extends StObject {
     
     /**
       * Dispose this object.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Disposable {
     
@@ -23,9 +21,12 @@ object eventsMod {
       __obj.asInstanceOf[Disposable]
     }
     
-    @JSImport("vscode-jsonrpc/lib/events", "Disposable.create")
+    @JSImport("vscode-jsonrpc/lib/events", "Disposable")
     @js.native
-    def create(func: js.Function0[Unit]): Disposable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(func: js.Function0[Unit]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[Disposable]
     
     @scala.inline
     implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
@@ -87,12 +88,11 @@ object eventsMod {
     Disposable
   ]
   
-  @js.native
   trait EmitterOptions extends StObject {
     
-    var onFirstListenerAdd: js.UndefOr[js.Function] = js.native
+    var onFirstListenerAdd: js.UndefOr[js.Function] = js.undefined
     
-    var onLastListenerRemove: js.UndefOr[js.Function] = js.native
+    var onLastListenerRemove: js.UndefOr[js.Function] = js.undefined
   }
   object EmitterOptions {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJournalS3ExportRequest extends StObject {
   
   /**
     * The unique ID of the journal export job that you want to describe.
     */
-  var ExportId: UniqueId = js.native
+  var ExportId: UniqueId
   
   /**
     * The name of the ledger.
     */
-  var Name: LedgerName = js.native
+  var Name: LedgerName
 }
 object DescribeJournalS3ExportRequest {
   

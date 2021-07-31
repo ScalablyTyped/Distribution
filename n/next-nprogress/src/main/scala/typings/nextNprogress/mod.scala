@@ -4,21 +4,20 @@ import typings.nextNprogress.anon.PartialNProgressOptions
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("next-nprogress", JSImport.Default)
+  @JSImport("next-nprogress", JSImport.Namespace)
   @js.native
-  def default(): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  @JSImport("next-nprogress", JSImport.Default)
-  @js.native
-  def default(delayMs: js.UndefOr[scala.Nothing], options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  @JSImport("next-nprogress", JSImport.Default)
-  @js.native
-  def default(delayMs: Double): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  @JSImport("next-nprogress", JSImport.Default)
-  @js.native
-  def default(delayMs: Double, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  @scala.inline
+  def default(delayMs: Double): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  @scala.inline
+  def default(delayMs: Double, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  @scala.inline
+  def default(delayMs: Unit, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
 }

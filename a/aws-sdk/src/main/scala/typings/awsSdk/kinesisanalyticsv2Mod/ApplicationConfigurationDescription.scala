@@ -2,46 +2,44 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationConfigurationDescription extends StObject {
   
   /**
     * The details about the application code for a Flink-based Kinesis Data Analytics application.
     */
-  var ApplicationCodeConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationCodeConfigurationDescription] = js.native
+  var ApplicationCodeConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationCodeConfigurationDescription] = js.undefined
   
   /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     */
-  var ApplicationSnapshotConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSnapshotConfigurationDescription] = js.native
+  var ApplicationSnapshotConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSnapshotConfigurationDescription] = js.undefined
   
   /**
     * Describes execution properties for a Flink-based Kinesis Data Analytics application.
     */
-  var EnvironmentPropertyDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.EnvironmentPropertyDescriptions] = js.native
+  var EnvironmentPropertyDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.EnvironmentPropertyDescriptions] = js.undefined
   
   /**
     * The details about a Flink-based Kinesis Data Analytics application.
     */
-  var FlinkApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FlinkApplicationConfigurationDescription] = js.native
+  var FlinkApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FlinkApplicationConfigurationDescription] = js.undefined
   
   /**
     * The details about the starting properties for a Kinesis Data Analytics application.
     */
-  var RunConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RunConfigurationDescription] = js.native
+  var RunConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RunConfigurationDescription] = js.undefined
   
   /**
     * The details about inputs, outputs, and reference data sources for a SQL-based Kinesis Data Analytics application.
     */
-  var SqlApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SqlApplicationConfigurationDescription] = js.native
+  var SqlApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SqlApplicationConfigurationDescription] = js.undefined
   
   /**
     * The array of descriptions of VPC configurations available to the application.
     */
-  var VpcConfigurationDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationDescriptions] = js.native
+  var VpcConfigurationDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationDescriptions] = js.undefined
 }
 object ApplicationConfigurationDescription {
   

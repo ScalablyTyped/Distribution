@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowActionSheetOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ShowActionSheetCompleteCallback] = js.native
+  var complete: js.UndefOr[ShowActionSheetCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ShowActionSheetFailCallback] = js.native
+  var fail: js.UndefOr[ShowActionSheetFailCallback] = js.undefined
   
   /** 按钮的文字颜色 */
-  var itemColor: js.UndefOr[String] = js.native
+  var itemColor: js.UndefOr[String] = js.undefined
   
   /** 按钮的文字数组，数组长度最大为 6 */
-  var itemList: js.Array[String] = js.native
+  var itemList: js.Array[String]
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ShowActionSheetSuccessCallback] = js.native
+  var success: js.UndefOr[ShowActionSheetSuccessCallback] = js.undefined
 }
 object ShowActionSheetOption {
   

@@ -4,53 +4,51 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeValidations extends StObject {
   
-  var custom: js.UndefOr[AttributeValidation[js.Function]] = js.native
+  var custom: js.UndefOr[AttributeValidation[js.Function]] = js.undefined
   
-  var isAfter: js.UndefOr[AttributeValidation[Date]] = js.native
+  var isAfter: js.UndefOr[AttributeValidation[Date]] = js.undefined
   
-  var isBefore: js.UndefOr[AttributeValidation[Date]] = js.native
+  var isBefore: js.UndefOr[AttributeValidation[Date]] = js.undefined
   
-  var isBoolean: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isBoolean: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isCreditCard: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isCreditCard: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isEmail: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isEmail: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isHexColor: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isHexColor: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isIP: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isIP: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.native
+  var isIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.undefined
   
-  var isInteger: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isInteger: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isNotEmptyString: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isNotEmptyString: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isNotIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.native
+  var isNotIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.undefined
   
-  var isNumber: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isNumber: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isString: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isString: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isURL: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isURL: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var isUUID: js.UndefOr[AttributeValidation[Boolean]] = js.native
+  var isUUID: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
   
-  var max: js.UndefOr[AttributeValidation[Double]] = js.native
+  var max: js.UndefOr[AttributeValidation[Double]] = js.undefined
   
-  var maxLength: js.UndefOr[AttributeValidation[Double]] = js.native
+  var maxLength: js.UndefOr[AttributeValidation[Double]] = js.undefined
   
-  var min: js.UndefOr[AttributeValidation[Double]] = js.native
+  var min: js.UndefOr[AttributeValidation[Double]] = js.undefined
   
-  var minLength: js.UndefOr[AttributeValidation[Double]] = js.native
+  var minLength: js.UndefOr[AttributeValidation[Double]] = js.undefined
   
-  var regex: js.UndefOr[AttributeValidation[RegExp]] = js.native
+  var regex: js.UndefOr[AttributeValidation[RegExp]] = js.undefined
 }
 object AttributeValidations {
   

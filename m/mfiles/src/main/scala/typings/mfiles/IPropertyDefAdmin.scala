@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyDefAdmin extends StObject {
   
-  var AllowAutomaticPermissions: Boolean = js.native
+  var AllowAutomaticPermissions: Boolean
   
-  var AutomaticValue: IAutomaticValue = js.native
+  var AutomaticValue: IAutomaticValue
   
-  def Clone(): IPropertyDefAdmin = js.native
+  def Clone(): IPropertyDefAdmin
   
-  var NamedValueNamespaces: INamedValueNamespaces = js.native
+  var NamedValueNamespaces: INamedValueNamespaces
   
-  var PropertyDef: IPropertyDef = js.native
+  var PropertyDef: IPropertyDef
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
   
-  var Validation: IValidation = js.native
+  var Validation: IValidation
 }
 object IPropertyDefAdmin {
   

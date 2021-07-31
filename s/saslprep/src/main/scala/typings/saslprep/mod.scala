@@ -2,22 +2,22 @@ package typings.saslprep
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("saslprep", JSImport.Namespace)
-  @js.native
-  def apply(input: String): String = js.native
-  @JSImport("saslprep", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): String = js.native
+  @scala.inline
+  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("saslprep", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var allowUnassigned: js.UndefOr[Boolean] = js.native
+    var allowUnassigned: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,29 +2,27 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageInfo extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var layout: String = js.native
+  var layout: String
   
-  var mediaBox: js.Array[Double] = js.native
+  var mediaBox: js.Array[Double]
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var pageNumber: Double = js.native
+  var pageNumber: Double
   
-  var rotate: Double = js.native
+  var rotate: Double
   
-  var size: js.Array[Double] = js.native
+  var size: js.Array[Double]
   
-  var width: Double = js.native
+  var width: Double
 }
 object PageInfo {
   

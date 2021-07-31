@@ -3,7 +3,6 @@ package typings.nextReactDevOverlay
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leftRightDialogHeaderLeftRightDialogHeaderMod {
@@ -12,22 +11,21 @@ object leftRightDialogHeaderLeftRightDialogHeaderMod {
   @js.native
   val LeftRightDialogHeader: FC[LeftRightDialogHeaderProps] = js.native
   
-  @js.native
   trait LeftRightDialogHeaderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var next: js.Function0[Unit] | Null = js.native
+    var next: js.Function0[Unit] | Null
     
-    var previous: js.Function0[Unit] | Null = js.native
+    var previous: js.Function0[Unit] | Null
   }
   object LeftRightDialogHeaderProps {
     
     @scala.inline
     def apply(): LeftRightDialogHeaderProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(next = null, previous = null)
       __obj.asInstanceOf[LeftRightDialogHeaderProps]
     }
     

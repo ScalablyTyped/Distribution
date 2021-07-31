@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotificationConfigsResponse extends StObject {
   
   /** Token to retrieve the next page of results, or empty if there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Notification configs belonging to the requested parent. */
-  var notificationConfigs: js.UndefOr[js.Array[NotificationConfig]] = js.native
+  var notificationConfigs: js.UndefOr[js.Array[NotificationConfig]] = js.undefined
 }
 object ListNotificationConfigsResponse {
   

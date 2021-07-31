@@ -9,7 +9,6 @@ import typings.p2.anon.ShapeA
 import typings.p2.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "World")
@@ -121,9 +120,9 @@ class World () extends EventEmitter {
   var springs: js.Array[Spring] = js.native
   
   def step(dt: Double): Unit = js.native
-  def step(dt: Double, timeSinceLastCalled: js.UndefOr[scala.Nothing], maxSubSteps: Double): Unit = js.native
   def step(dt: Double, timeSinceLastCalled: Double): Unit = js.native
   def step(dt: Double, timeSinceLastCalled: Double, maxSubSteps: Double): Unit = js.native
+  def step(dt: Double, timeSinceLastCalled: Unit, maxSubSteps: Double): Unit = js.native
   
   var stepping: Boolean = js.native
   

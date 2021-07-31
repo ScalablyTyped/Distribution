@@ -2,21 +2,21 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeItem extends Item {
+trait TimeItem
+  extends StObject
+     with Item {
   
   /**
     * Hour of the day from 0 to 23.
     */
-  var hour: Double = js.native
+  var hour: Double
   
   /**
     * The minutes of the hour from 0 to 59 (based on the interval).
     */
-  var mins: Double = js.native
+  var mins: Double
 }
 object TimeItem {
   

@@ -4,18 +4,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.click
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SegmentDrawActionProperties extends DrawActionProperties {
+trait SegmentDrawActionProperties
+  extends StObject
+     with DrawActionProperties {
   
   /**
     * The drawing mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode)
     */
-  var mode: js.UndefOr[freehand | click] = js.native
+  var mode: js.UndefOr[freehand | click] = js.undefined
 }
 object SegmentDrawActionProperties {
   

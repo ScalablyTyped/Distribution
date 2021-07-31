@@ -7,15 +7,100 @@ import typings.playable.volumeTypesMod.IVolumeViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumeMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/volume/volume", JSImport.Default)
   @js.native
-  class default protected () extends VolumeControl {
+  class default protected ()
+    extends StObject
+       with VolumeControl {
     def this(hasEngineEventEmitterTextMapTooltipServiceTheme: TooltipService) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastDragEnd: js.Any = js.native
+    
+    /* CompleteClass */
+    var _broadcastDragStart: js.Any = js.native
+    
+    /* CompleteClass */
+    var _buttonInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _changeVolumeLevel: js.Any = js.native
+    
+    /* CompleteClass */
+    var _destroyInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _getVolumeLevelFromInput: js.Any = js.native
+    
+    /* CompleteClass */
+    var _getVolumeLevelFromWheel: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _inputInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _setMuteState: js.Any = js.native
+    
+    /* CompleteClass */
+    var _setVolumeLevel: js.Any = js.native
+    
+    /* CompleteClass */
+    var _textMap: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _toggleMuteState: js.Any = js.native
+    
+    /* CompleteClass */
+    var _tooltipService: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateSoundState: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.volumeViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -43,56 +128,57 @@ object volumeMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait VolumeControl extends IVolumeControl {
+  trait VolumeControl
+    extends StObject
+       with IVolumeControl {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _broadcastDragEnd: js.Any = js.native
+    var _broadcastDragEnd: js.Any
     
-    var _broadcastDragStart: js.Any = js.native
+    var _broadcastDragStart: js.Any
     
-    var _buttonInterceptor: js.Any = js.native
+    var _buttonInterceptor: js.Any
     
-    var _changeVolumeLevel: js.Any = js.native
+    var _changeVolumeLevel: js.Any
     
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _getVolumeLevelFromInput: js.Any = js.native
+    var _getVolumeLevelFromInput: js.Any
     
-    var _getVolumeLevelFromWheel: js.Any = js.native
+    var _getVolumeLevelFromWheel: js.Any
     
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _inputInterceptor: js.Any = js.native
+    var _inputInterceptor: js.Any
     
-    var _setMuteState: js.Any = js.native
+    var _setMuteState: js.Any
     
-    var _setVolumeLevel: js.Any = js.native
+    var _setVolumeLevel: js.Any
     
-    var _textMap: js.Any = js.native
+    var _textMap: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _toggleMuteState: js.Any = js.native
+    var _toggleMuteState: js.Any
     
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var _updateSoundState: js.Any = js.native
+    var _updateSoundState: js.Any
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var view: typings.playable.volumeViewMod.default = js.native
+    var view: typings.playable.volumeViewMod.default
   }
   object VolumeControl {
     

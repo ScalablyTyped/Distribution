@@ -5,19 +5,17 @@ import typings.reachRouter.anon.PushState
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistorySource extends StObject {
   
-  def addEventListener(name: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  def addEventListener(name: String, listener: js.Function1[/* event */ Event, Unit]): Unit
   
-  var history: PushState = js.native
+  var history: PushState
   
-  val location: WindowLocation[LocationState] = js.native
+  val location: WindowLocation[LocationState]
   
-  def removeEventListener(name: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
+  def removeEventListener(name: String, listener: js.Function1[/* event */ Event, Unit]): Unit
 }
 object HistorySource {
   

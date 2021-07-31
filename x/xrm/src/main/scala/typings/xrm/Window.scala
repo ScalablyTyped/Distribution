@@ -4,15 +4,13 @@ import typings.xrm.Xrm.GlobalContext
 import typings.xrm.Xrm.XrmStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  def GetGlobalContext(): GlobalContext = js.native
+  def GetGlobalContext(): GlobalContext
   
-  var Xrm: XrmStatic = js.native
+  var Xrm: XrmStatic
 }
 object Window {
   

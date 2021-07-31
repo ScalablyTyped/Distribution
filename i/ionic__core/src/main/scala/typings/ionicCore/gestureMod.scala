@@ -7,18 +7,20 @@ import typings.std.Node
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gestureMod {
+  
+  @JSImport("@ionic/core/dist/types/utils/gesture", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/core/dist/types/utils/gesture", "GESTURE_CONTROLLER")
   @js.native
   val GESTURE_CONTROLLER: GestureController = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/gesture", "createGesture")
-  @js.native
-  def createGesture(config: GestureConfig): Gesture = js.native
+  @scala.inline
+  def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
   
   @js.native
   trait Gesture extends StObject {
@@ -31,38 +33,37 @@ object gestureMod {
   
   type GestureCallback = js.Function1[/* detail */ GestureDetail, Boolean | Unit]
   
-  @js.native
   trait GestureConfig extends StObject {
     
-    var blurOnStart: js.UndefOr[Boolean] = js.native
+    var blurOnStart: js.UndefOr[Boolean] = js.undefined
     
-    var canStart: js.UndefOr[GestureCallback] = js.native
+    var canStart: js.UndefOr[GestureCallback] = js.undefined
     
-    var direction: js.UndefOr[x | y] = js.native
+    var direction: js.UndefOr[x | y] = js.undefined
     
-    var disableScroll: js.UndefOr[Boolean] = js.native
+    var disableScroll: js.UndefOr[Boolean] = js.undefined
     
-    var el: Node = js.native
+    var el: Node
     
-    var gestureName: String = js.native
+    var gestureName: String
     
-    var gesturePriority: js.UndefOr[Double] = js.native
+    var gesturePriority: js.UndefOr[Double] = js.undefined
     
-    var maxAngle: js.UndefOr[Double] = js.native
+    var maxAngle: js.UndefOr[Double] = js.undefined
     
-    var notCaptured: js.UndefOr[GestureCallback] = js.native
+    var notCaptured: js.UndefOr[GestureCallback] = js.undefined
     
-    var onEnd: js.UndefOr[GestureCallback] = js.native
+    var onEnd: js.UndefOr[GestureCallback] = js.undefined
     
-    var onMove: js.UndefOr[GestureCallback] = js.native
+    var onMove: js.UndefOr[GestureCallback] = js.undefined
     
-    var onStart: js.UndefOr[GestureCallback] = js.native
+    var onStart: js.UndefOr[GestureCallback] = js.undefined
     
-    var onWillStart: js.UndefOr[js.Function1[/* _ */ GestureDetail, js.Promise[Unit]]] = js.native
+    var onWillStart: js.UndefOr[js.Function1[/* _ */ GestureDetail, js.Promise[Unit]]] = js.undefined
     
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object GestureConfig {
     
@@ -161,34 +162,33 @@ object gestureMod {
     }
   }
   
-  @js.native
   trait GestureDetail extends StObject {
     
-    var currentTime: Double = js.native
+    var currentTime: Double
     
-    var currentX: Double = js.native
+    var currentX: Double
     
-    var currentY: Double = js.native
+    var currentY: Double
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var event: UIEvent = js.native
+    var event: UIEvent
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var startX: Double = js.native
+    var startX: Double
     
-    var startY: Double = js.native
+    var startY: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var velocityX: Double = js.native
+    var velocityX: Double
     
-    var velocityY: Double = js.native
+    var velocityY: Double
   }
   object GestureDetail {
     

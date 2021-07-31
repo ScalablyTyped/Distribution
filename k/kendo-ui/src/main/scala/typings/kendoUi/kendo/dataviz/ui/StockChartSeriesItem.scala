@@ -2,85 +2,83 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartSeriesItem extends StObject {
   
-  var aggregate: js.UndefOr[String | js.Function] = js.native
+  var aggregate: js.UndefOr[String | js.Function] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[StockChartSeriesItemBorder] = js.native
+  var border: js.UndefOr[StockChartSeriesItemBorder] = js.undefined
   
-  var categoryField: js.UndefOr[String] = js.native
+  var categoryField: js.UndefOr[String] = js.undefined
   
-  var closeField: js.UndefOr[String] = js.native
+  var closeField: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String | js.Function] = js.native
+  var color: js.UndefOr[String | js.Function] = js.undefined
   
-  var colorField: js.UndefOr[String] = js.native
+  var colorField: js.UndefOr[String] = js.undefined
   
-  var currentField: js.UndefOr[String] = js.native
+  var currentField: js.UndefOr[String] = js.undefined
   
-  var dashType: js.UndefOr[String] = js.native
+  var dashType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var downColor: js.UndefOr[String | js.Function] = js.native
+  var downColor: js.UndefOr[String | js.Function] = js.undefined
   
-  var downColorField: js.UndefOr[String] = js.native
+  var downColorField: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var gap: js.UndefOr[Double] = js.native
+  var gap: js.UndefOr[Double] = js.undefined
   
-  var highField: js.UndefOr[String] = js.native
+  var highField: js.UndefOr[String] = js.undefined
   
-  var highlight: js.UndefOr[StockChartSeriesItemHighlight] = js.native
+  var highlight: js.UndefOr[StockChartSeriesItemHighlight] = js.undefined
   
-  var labels: js.UndefOr[StockChartSeriesItemLabels] = js.native
+  var labels: js.UndefOr[StockChartSeriesItemLabels] = js.undefined
   
-  var line: js.UndefOr[String | StockChartSeriesItemLine] = js.native
+  var line: js.UndefOr[String | StockChartSeriesItemLine] = js.undefined
   
-  var lowField: js.UndefOr[String] = js.native
+  var lowField: js.UndefOr[String] = js.undefined
   
-  var markers: js.UndefOr[StockChartSeriesItemMarkers] = js.native
+  var markers: js.UndefOr[StockChartSeriesItemMarkers] = js.undefined
   
-  var missingValues: js.UndefOr[String] = js.native
+  var missingValues: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var negativeColor: js.UndefOr[String] = js.native
+  var negativeColor: js.UndefOr[String] = js.undefined
   
-  var notes: js.UndefOr[StockChartSeriesItemNotes] = js.native
+  var notes: js.UndefOr[StockChartSeriesItemNotes] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var openField: js.UndefOr[String] = js.native
+  var openField: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[StockChartSeriesItemOverlay] = js.native
+  var overlay: js.UndefOr[StockChartSeriesItemOverlay] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[Boolean | String | StockChartSeriesItemStack] = js.native
+  var stack: js.UndefOr[Boolean | String | StockChartSeriesItemStack] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[StockChartSeriesItemTarget] = js.native
+  var target: js.UndefOr[StockChartSeriesItemTarget] = js.undefined
   
-  var targetField: js.UndefOr[String] = js.native
+  var targetField: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[StockChartSeriesItemTooltip] = js.native
+  var tooltip: js.UndefOr[StockChartSeriesItemTooltip] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visibleInLegend: js.UndefOr[Boolean] = js.native
+  var visibleInLegend: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object StockChartSeriesItem {
   

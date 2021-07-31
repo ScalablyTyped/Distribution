@@ -2,17 +2,15 @@ package typings.knuddelsUserappsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferReason extends StObject {
   
-  var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
   
-  var onSuccess: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var transferReason: js.UndefOr[String] = js.native
+  var transferReason: js.UndefOr[String] = js.undefined
 }
 object TransferReason {
   

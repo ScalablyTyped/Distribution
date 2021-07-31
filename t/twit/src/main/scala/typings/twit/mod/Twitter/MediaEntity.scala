@@ -2,35 +2,33 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaEntity extends StObject {
   
-  var display_url: String = js.native
+  var display_url: String
   
-  var expanded_url: String = js.native
+  var expanded_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var id_str: String = js.native
+  var id_str: String
   
-  var indices: js.Tuple2[Double, Double] = js.native
+  var indices: js.Tuple2[Double, Double]
   
-  var media_url: String = js.native
+  var media_url: String
   
-  var media_url_https: String = js.native
+  var media_url_https: String
   
-  var sizes: Sizes = js.native
+  var sizes: Sizes
   
-  var source_status_id: Double = js.native
+  var source_status_id: Double
   
-  var source_status_id_str: String = js.native
+  var source_status_id_str: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object MediaEntity {
   

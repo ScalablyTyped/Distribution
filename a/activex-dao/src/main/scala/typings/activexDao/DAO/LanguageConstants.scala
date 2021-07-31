@@ -24,7 +24,6 @@ import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0424Semic
 import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

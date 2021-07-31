@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimensions extends StObject {
   
   /** List of analytics dimensions. */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /** End date. */
-  var `end-date`: js.UndefOr[String] = js.native
+  var `end-date`: js.UndefOr[String] = js.undefined
   
   /** Comma-separated list of dimension or metric filters. */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /** Unique table ID. */
-  var ids: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.undefined
   
   /** Maximum results per page. */
-  var `max-results`: js.UndefOr[Double] = js.native
+  var `max-results`: js.UndefOr[Double] = js.undefined
   
   /** List of analytics metrics. */
-  var metrics: js.UndefOr[js.Array[String]] = js.native
+  var metrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Desired sampling level */
-  var samplingLevel: js.UndefOr[String] = js.native
+  var samplingLevel: js.UndefOr[String] = js.undefined
   
   /** Analytics advanced segment. */
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
   /** List of dimensions or metrics based on which Analytics data is sorted. */
-  var sort: js.UndefOr[js.Array[String]] = js.native
+  var sort: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Start date. */
-  var `start-date`: js.UndefOr[String] = js.native
+  var `start-date`: js.UndefOr[String] = js.undefined
   
   /** Start index. */
-  var `start-index`: js.UndefOr[Double] = js.native
+  var `start-index`: js.UndefOr[Double] = js.undefined
 }
 object Dimensions {
   

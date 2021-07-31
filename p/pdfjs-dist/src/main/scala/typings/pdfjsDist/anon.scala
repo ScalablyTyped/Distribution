@@ -5,17 +5,15 @@ import typings.pdfjsDist.mod.PDFInfo
 import typings.pdfjsDist.mod.PDFMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseUrl extends StObject {
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var isCompressed: Boolean = js.native
+    var isCompressed: Boolean
   }
   object BaseUrl {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CMapData extends StObject {
     
-    var cMapData: js.Any = js.native
+    var cMapData: js.Any
     
-    var compressionType: CMapCompressionType = js.native
+    var compressionType: CMapCompressionType
   }
   object CMapData {
     
@@ -62,12 +59,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Info extends StObject {
     
-    var info: PDFInfo = js.native
+    var info: PDFInfo
     
-    var metadata: PDFMetadata = js.native
+    var metadata: PDFMetadata
   }
   object Info {
     
@@ -88,10 +84,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     

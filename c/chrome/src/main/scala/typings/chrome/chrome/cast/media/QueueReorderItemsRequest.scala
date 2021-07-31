@@ -2,17 +2,15 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueReorderItemsRequest extends StObject {
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var insertBefore: Double = js.native
+  var insertBefore: Double
   
-  var itemIds: js.Array[Double] = js.native
+  var itemIds: js.Array[Double]
 }
 object QueueReorderItemsRequest {
   

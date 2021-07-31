@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatePicker extends Widget_ {
+trait DatePicker
+  extends StObject
+     with Widget_ {
   
   /**
     * Indicates whether the date gets updated when the user changes the month in the drop-down.

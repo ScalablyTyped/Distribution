@@ -13,19 +13,18 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EggAppConfig
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
   /**
     * The current HOME directory
     */
-  var HOME: String = js.native
+  var HOME: String
   
-  var baseDir: String = js.native
+  var baseDir: String
   
   /**
     * The option of `bodyParser` middleware
@@ -45,42 +44,42 @@ trait EggAppConfig
     * @property {string[]} enableTypes - parser will only parse when request type hits enableTypes, default is ['json', 'form']
     * @property {any} extendTypes - support extend types
     */
-  var bodyParser: Enable = js.native
+  var bodyParser: Enable
   
   /**
     * customLoader config
     */
-  var customLoader: StringDictionary[CustomLoaderConfig] = js.native
+  var customLoader: StringDictionary[CustomLoaderConfig]
   
   /** custom logger of egg */
-  var customLogger: StringDictionary[EggLoggerOptions] = js.native
+  var customLogger: StringDictionary[EggLoggerOptions]
   
-  var development: FastReady = js.native
+  var development: FastReady
   
   /**
     * It will ignore special keys when dumpConfig
     */
-  var dump: Ignore = js.native
+  var dump: Ignore
   
   /**
     * The environment of egg
     */
-  var env: EggEnvType = js.native
+  var env: EggEnvType
   
-  var hostHeaders: String = js.native
+  var hostHeaders: String
   
   /** Configuration of httpclient in egg. */
-  var httpclient: HttpClientConfig = js.native
+  var httpclient: HttpClientConfig
   
   /**
     * I18n options
     */
-  var i18n: CookieField = js.native
+  var i18n: CookieField
   
   /**
     * Detect request' ip from specified headers, not case-sensitive. Only worked when config.proxy set to true.
     */
-  var ipHeaders: String = js.native
+  var ipHeaders: String
   
   /**
     * jsonp options
@@ -90,12 +89,12 @@ trait EggAppConfig
     * @property {Boolean} csrf - enable csrf check or not. default to false
     * @property {String|RegExp|Array} whiteList - referrer white list
     */
-  var jsonp: Callback = js.native
+  var jsonp: Callback
   
   /**
     * The key that signing cookies. It can contain multiple keys seperated by .
     */
-  var keys: String = js.native
+  var keys: String
   
   /**
     * logger options
@@ -113,25 +112,25 @@ trait EggAppConfig
     * @property {Object} coreLogger - custom config of coreLogger
     * @property {Boolean} allowDebugAtProd - allow debug log at prod, defaults to true
     */
-  var logger: EggLoggerConfig = js.native
+  var logger: EggLoggerConfig
   
-  var middleware: js.Array[String] = js.native
+  var middleware: js.Array[String]
   
   /**
     * The name of the application
     */
-  var name: String = js.native
+  var name: String
   
-  def onClientError(err: Error, socket: Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse] = js.native
+  def onClientError(err: Error, socket: Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse]
   
   /**
     * package.json
     */
-  var pkg: js.Any = js.native
+  var pkg: js.Any
   
-  var rundir: String = js.native
+  var rundir: String
   
-  var security: Csp = js.native
+  var security: Csp
   
   /**
     * server timeout in milliseconds, default to 2 minutes.
@@ -140,13 +139,13 @@ trait EggAppConfig
     *
     * @see https://nodejs.org/api/http.html#http_server_timeout
     */
-  var serverTimeout: Double | Null = js.native
+  var serverTimeout: Double | Null
   
-  var siteFile: PlainObject[String | Buffer] = js.native
+  var siteFile: PlainObject[String | Buffer]
   
-  var watcher: PlainObject[_] = js.native
+  var watcher: PlainObject[js.Any]
   
-  var workerStartTimeout: Double = js.native
+  var workerStartTimeout: Double
 }
 object EggAppConfig {
   
@@ -174,10 +173,10 @@ object EggAppConfig {
     rundir: String,
     security: Csp,
     siteFile: PlainObject[String | Buffer],
-    watcher: PlainObject[_],
+    watcher: PlainObject[js.Any],
     workerStartTimeout: Double
   ): EggAppConfig = {
-    val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], bodyParser = bodyParser.asInstanceOf[js.Any], customLoader = customLoader.asInstanceOf[js.Any], customLogger = customLogger.asInstanceOf[js.Any], development = development.asInstanceOf[js.Any], dump = dump.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders.asInstanceOf[js.Any], httpclient = httpclient.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], ipHeaders = ipHeaders.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClientError = js.Any.fromFunction3(onClientError), pkg = pkg.asInstanceOf[js.Any], rundir = rundir.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], siteFile = siteFile.asInstanceOf[js.Any], watcher = watcher.asInstanceOf[js.Any], workerStartTimeout = workerStartTimeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], bodyParser = bodyParser.asInstanceOf[js.Any], customLoader = customLoader.asInstanceOf[js.Any], customLogger = customLogger.asInstanceOf[js.Any], development = development.asInstanceOf[js.Any], dump = dump.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders.asInstanceOf[js.Any], httpclient = httpclient.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], ipHeaders = ipHeaders.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClientError = js.Any.fromFunction3(onClientError), pkg = pkg.asInstanceOf[js.Any], rundir = rundir.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], siteFile = siteFile.asInstanceOf[js.Any], watcher = watcher.asInstanceOf[js.Any], workerStartTimeout = workerStartTimeout.asInstanceOf[js.Any], serverTimeout = null)
     __obj.asInstanceOf[EggAppConfig]
   }
   
@@ -260,7 +259,7 @@ object EggAppConfig {
     def setSiteFile(value: PlainObject[String | Buffer]): Self = StObject.set(x, "siteFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatcher(value: PlainObject[_]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
+    def setWatcher(value: PlainObject[js.Any]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWorkerStartTimeout(value: Double): Self = StObject.set(x, "workerStartTimeout", value.asInstanceOf[js.Any])

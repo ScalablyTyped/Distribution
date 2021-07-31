@@ -2,13 +2,11 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that resolves relative URLs.
   */
-@js.native
 trait IResolver extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait IResolver extends StObject {
     * #### Notes
     * This URL may include a query parameter.
     */
-  def getDownloadUrl(url: String): js.Promise[String] = js.native
+  def getDownloadUrl(url: String): js.Promise[String]
   
   /**
     * Whether the URL should be handled by the resolver
@@ -28,12 +26,12 @@ trait IResolver extends StObject {
     * but can also perform additional checks on whether the
     * resolver should handle a given URL.
     */
-  var isLocal: js.UndefOr[js.Function1[/* url */ String, Boolean]] = js.native
+  var isLocal: js.UndefOr[js.Function1[/* url */ String, Boolean]] = js.undefined
   
   /**
     * Resolve a relative url to an absolute url path.
     */
-  def resolveUrl(url: String): js.Promise[String] = js.native
+  def resolveUrl(url: String): js.Promise[String]
 }
 object IResolver {
   

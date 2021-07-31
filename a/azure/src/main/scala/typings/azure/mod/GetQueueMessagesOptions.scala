@@ -2,15 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetQueueMessagesOptions extends PeekQueueMessagesOptions {
+trait GetQueueMessagesOptions
+  extends StObject
+     with PeekQueueMessagesOptions {
   
-  var peekonly: js.UndefOr[Boolean] = js.native
+  var peekonly: js.UndefOr[Boolean] = js.undefined
   
-  var visibilitytimeout: js.UndefOr[Double] = js.native
+  var visibilitytimeout: js.UndefOr[Double] = js.undefined
 }
 object GetQueueMessagesOptions {
   

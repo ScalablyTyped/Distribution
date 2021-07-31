@@ -2,21 +2,19 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FatalityPromiseCallback extends StObject {
     
-    var fatalityPromiseCallback: js.UndefOr[js.Any] = js.native
+    var fatalityPromiseCallback: js.UndefOr[js.Any] = js.undefined
     
-    var lastSay: js.UndefOr[js.Any] = js.native
+    var lastSay: js.UndefOr[js.Any] = js.undefined
     
-    var redirectRecognizedTextOutput: js.UndefOr[js.Any] = js.native
+    var redirectRecognizedTextOutput: js.UndefOr[js.Any] = js.undefined
     
-    var remoteProcessorHandler: js.UndefOr[js.Any] = js.native
+    var remoteProcessorHandler: js.UndefOr[js.Any] = js.undefined
   }
   object FatalityPromiseCallback {
     

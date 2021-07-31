@@ -2,31 +2,29 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Locations where the results of running the test are stored.
   */
-@js.native
 trait SchemaResultStorage extends StObject {
   
   /**
     * Required.
     */
-  var googleCloudStorage: js.UndefOr[SchemaGoogleCloudStorage] = js.native
+  var googleCloudStorage: js.UndefOr[SchemaGoogleCloudStorage] = js.undefined
   
   /**
     * Output only. The tool results execution that results are written to.
     */
-  var toolResultsExecution: js.UndefOr[SchemaToolResultsExecution] = js.native
+  var toolResultsExecution: js.UndefOr[SchemaToolResultsExecution] = js.undefined
   
   /**
     * The tool results history that contains the tool results execution that
     * results are written to.  If not provided, the service will choose an
     * appropriate value.
     */
-  var toolResultsHistory: js.UndefOr[SchemaToolResultsHistory] = js.native
+  var toolResultsHistory: js.UndefOr[SchemaToolResultsHistory] = js.undefined
 }
 object SchemaResultStorage {
   

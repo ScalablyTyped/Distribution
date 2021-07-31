@@ -2,24 +2,20 @@ package typings.resolvePackagePath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("resolve-package-path", JSImport.Namespace)
-  @js.native
-  def apply(target: String, basedir: String): String | Null = js.native
-  @JSImport("resolve-package-path", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(target: String, basedir: String): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
   def apply(
     target: String,
     basedir: String,
     _cache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any
-  ): String | Null = js.native
-  @JSImport("resolve-package-path", JSImport.Namespace)
-  @js.native
-  def apply(target: String, basedir: String, _cache: Boolean): String | Null = js.native
+  ): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], _cache.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def apply(target: String, basedir: String, _cache: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], _cache.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   @JSImport("resolve-package-path", JSImport.Namespace)
   @js.native

@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A transformation of a field of the document.
   */
-@js.native
 trait SchemaFieldTransform extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait SchemaFieldTransform extends StObject {
     * input contains multiple equivalent values, only the first will be
     * considered.  The corresponding transform_result will be the null value.
     */
-  var appendMissingElements: js.UndefOr[SchemaArrayValue] = js.native
+  var appendMissingElements: js.UndefOr[SchemaArrayValue] = js.undefined
   
   /**
     * The path of the field. See Document.fields for the field path syntax
     * reference.
     */
-  var fieldPath: js.UndefOr[String] = js.native
+  var fieldPath: js.UndefOr[String] = js.undefined
   
   /**
     * Adds the given value to the field&#39;s current value.  This must be an
@@ -38,7 +36,7 @@ trait SchemaFieldTransform extends StObject {
     * If there is positive/negative integer overflow, the field is resolved to
     * the largest magnitude positive/negative integer.
     */
-  var increment: js.UndefOr[SchemaValue] = js.native
+  var increment: js.UndefOr[SchemaValue] = js.undefined
   
   /**
     * Sets the field to the maximum of its current value and the given value.
@@ -52,7 +50,7 @@ trait SchemaFieldTransform extends StObject {
     * value and zero input value is always the stored value. The maximum of any
     * numeric value x and NaN is NaN.
     */
-  var maximum: js.UndefOr[SchemaValue] = js.native
+  var maximum: js.UndefOr[SchemaValue] = js.undefined
   
   /**
     * Sets the field to the minimum of its current value and the given value.
@@ -66,7 +64,7 @@ trait SchemaFieldTransform extends StObject {
     * value and zero input value is always the stored value. The minimum of any
     * numeric value x and NaN is NaN.
     */
-  var minimum: js.UndefOr[SchemaValue] = js.native
+  var minimum: js.UndefOr[SchemaValue] = js.undefined
   
   /**
     * Remove all of the given elements from the array in the field. If the
@@ -77,12 +75,12 @@ trait SchemaFieldTransform extends StObject {
     * all equivalent values if there are duplicates.  The corresponding
     * transform_result will be the null value.
     */
-  var removeAllFromArray: js.UndefOr[SchemaArrayValue] = js.native
+  var removeAllFromArray: js.UndefOr[SchemaArrayValue] = js.undefined
   
   /**
     * Sets the field to the given server value.
     */
-  var setToServerValue: js.UndefOr[String] = js.native
+  var setToServerValue: js.UndefOr[String] = js.undefined
 }
 object SchemaFieldTransform {
   

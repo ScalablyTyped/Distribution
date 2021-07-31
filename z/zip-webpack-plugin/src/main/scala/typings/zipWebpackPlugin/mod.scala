@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,64 +17,71 @@ object mod {
   /**
     * @param options Options for ZipPlugin.
     */
-  class ^ () extends ZipPlugin {
+  class ^ ()
+    extends StObject
+       with ZipPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+    ): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Exclude file paths or patterns. Takes precedence over include. Defaults to no excluding.
       */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * The file extension to use instead of "zip".
       * Defaults to "zip".
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /**
       * File options passed to yazl `addFile`.
       * See https://github.com/thejoshwolfe/yazl#addfilerealpath-metadatapath-options
       */
-    var fileOptions: js.UndefOr[typings.zipWebpackPlugin.mod.fileOptions] = js.native
+    var fileOptions: js.UndefOr[typings.zipWebpackPlugin.mod.fileOptions] = js.undefined
     
     /**
       * Output file name.
       * Defaults to the Webpack output filename or basename of the path.
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Include file paths or patterns.
       * Defaults to including all files in the webpack output path.
       */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Output path. Can be relative (to the webpack output path) or absolute.
       * Defaults to the Webpack output path.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Function to map asset paths to new paths.
       */
-    var pathMapper: js.UndefOr[js.Function1[/* assetPath */ String, String]] = js.native
+    var pathMapper: js.UndefOr[js.Function1[/* assetPath */ String, String]] = js.undefined
     
     /**
       * The path prefix for files included in the zip file.
       * Default to no prefix.
       */
-    var pathPrefix: js.UndefOr[String] = js.native
+    var pathPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * File options passed to yazl `end`.
       * See https://github.com/thejoshwolfe/yazl#endoptions-finalsizecallback
       */
-    var zipOptions: js.UndefOr[typings.zipWebpackPlugin.mod.zipOptions] = js.native
+    var zipOptions: js.UndefOr[typings.zipWebpackPlugin.mod.zipOptions] = js.undefined
   }
   object Options {
     
@@ -154,13 +160,12 @@ object mod {
     * Webpack plugin to zip emitted files. Compresses all assets into a zip file.
     * See https://www.npmjs.com/package/zip-webpack-plugin#usage
     */
-  @js.native
   trait ZipPlugin extends StObject {
     
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object ZipPlugin {
     
@@ -182,7 +187,6 @@ object mod {
     }
   }
   
-  @js.native
   trait fileOptions extends StObject {
     
     /**
@@ -190,24 +194,24 @@ object mod {
       * When true, the file data will be deflated (compression method 8).
       * When false, the file data will be stored (compression method 0).
       */
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Force ZIP64 format. ZIP64 format is enabled by default where necessary.
       * See https://github.com/thejoshwolfe/yazl#regarding-zip64-support
       */
-    var forceZip64Format: js.UndefOr[Boolean] = js.native
+    var forceZip64Format: js.UndefOr[Boolean] = js.undefined
     
     /**
       * UNIX permission bits and file type.
       */
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
     /**
       * Overwrite the last modified time.
       * Defaults to the current date and time.
       */
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
   }
   object fileOptions {
     
@@ -246,14 +250,13 @@ object mod {
     }
   }
   
-  @js.native
   trait zipOptions extends StObject {
     
     /**
       * Force ZIP64 format. ZIP64 format is enabled by default where necessary.
       * See https://github.com/thejoshwolfe/yazl#regarding-zip64-support
       */
-    var forceZip64Format: js.UndefOr[Boolean] = js.native
+    var forceZip64Format: js.UndefOr[Boolean] = js.undefined
   }
   object zipOptions {
     

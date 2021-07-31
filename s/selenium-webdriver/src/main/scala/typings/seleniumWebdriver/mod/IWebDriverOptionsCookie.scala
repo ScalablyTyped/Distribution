@@ -3,17 +3,15 @@ package typings.seleniumWebdriver.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebDriverOptionsCookie extends StObject {
   
   /**
     * The domain the cookie is visible to. Defaults to the current browsing
     * context's document's URL when adding a cookie.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * When the cookie expires.
@@ -27,34 +25,34 @@ trait IWebDriverOptionsCookie extends StObject {
     *
     * @type {(!Date|number|undefined)}
     */
-  var expiry: js.UndefOr[Double | Date] = js.native
+  var expiry: js.UndefOr[Double | Date] = js.undefined
   
   /**
     * Whether the cookie is an HTTP only cookie. Defaults to false when adding a
     * new cookie.
     */
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the cookie.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The cookie path. Defaults to "/" when adding a cookie.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the cookie is a secure cookie. Defaults to false when adding a new
     * cookie.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The cookie value.
     */
-  var value: String = js.native
+  var value: String
 }
 object IWebDriverOptionsCookie {
   

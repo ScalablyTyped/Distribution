@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.ChatOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Chat")
 @js.native
 class Chat protected ()
-  extends typings.kendoUi.kendo.ui.Chat {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Chat {
   def this(element: Element) = this()
   def this(element: Element, options: ChatOptions) = this()
 }
@@ -21,9 +21,8 @@ object Chat {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Chat.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Chat = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Chat = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Chat]
   
   /* static member */
   @JSGlobal("kendo.ui.Chat.fn")

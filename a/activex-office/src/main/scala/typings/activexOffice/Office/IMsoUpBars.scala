@@ -2,34 +2,32 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoUpBars extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Border: IMsoBorder = js.native
+  val Border: IMsoBorder
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: IMsoChartFormat = js.native
+  val Format: IMsoChartFormat
   
-  val Interior: IMsoInterior = js.native
+  val Interior: IMsoInterior
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.IMsoUpBars_typekey")
-  var OfficeDotIMsoUpBars_typekey: IMsoUpBars = js.native
+  var OfficeDotIMsoUpBars_typekey: IMsoUpBars
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object IMsoUpBars {
   

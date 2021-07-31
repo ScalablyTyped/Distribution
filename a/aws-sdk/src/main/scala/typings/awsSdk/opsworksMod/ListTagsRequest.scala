@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsRequest extends StObject {
   
   /**
     * Do not use. A validation exception occurs if you add a MaxResults parameter to a ListTagsRequest call. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.opsworksMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.opsworksMod.MaxResults] = js.undefined
   
   /**
     * Do not use. A validation exception occurs if you add a NextToken parameter to a ListTagsRequest call. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.opsworksMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.opsworksMod.NextToken] = js.undefined
   
   /**
     * The stack or layer's Amazon Resource Number (ARN).
     */
-  var ResourceArn: typings.awsSdk.opsworksMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.opsworksMod.ResourceArn
 }
 object ListTagsRequest {
   

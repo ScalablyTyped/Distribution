@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSchedulerAgendaViewSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgSchedulerAgendaViewSettings
     * Gets/Sets the number of days shown in AgendaView mode.
     *
     */
-  var dateRangeInterval: js.UndefOr[Double] = js.native
+  var dateRangeInterval: js.UndefOr[Double] = js.undefined
 }
 object IgSchedulerAgendaViewSettings {
   

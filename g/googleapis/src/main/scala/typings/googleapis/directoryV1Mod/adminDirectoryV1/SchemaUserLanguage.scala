@@ -2,13 +2,11 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a language entry.
   */
-@js.native
 trait SchemaUserLanguage extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaUserLanguage extends StObject {
     * corresponding Google III language code. If this is set LanguageCode
     * can&#39;t be set
     */
-  var customLanguage: js.UndefOr[String] = js.native
+  var customLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Language Code. Should be used for storing Google III LanguageCode string
     * representation for language. Illegal values cause SchemaException.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
 }
 object SchemaUserLanguage {
   

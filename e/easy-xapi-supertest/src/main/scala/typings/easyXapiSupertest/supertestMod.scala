@@ -5,21 +5,21 @@ import typings.easyXapiSupertest.superagentMod.SuperAgent
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object supertestMod {
   
+  @scala.inline
+  def apply(app: js.Any): SuperTest = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest]
+  
   @JSImport("supertest", JSImport.Namespace)
   @js.native
-  def apply(app: js.Any): SuperTest = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("supertest", "agent")
-  @js.native
-  def agent(): SuperTest = js.native
-  @JSImport("supertest", "agent")
-  @js.native
-  def agent(app: js.Any): SuperTest = js.native
+  @scala.inline
+  def agent(): SuperTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")().asInstanceOf[SuperTest]
+  @scala.inline
+  def agent(app: js.Any): SuperTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest]
   
   type CallbackHandler = (js.Function2[/* err */ js.Any, /* res */ Response, Unit]) | (js.Function1[/* res */ Response, Unit])
   
@@ -28,7 +28,9 @@ object supertestMod {
   type SuperTest = SuperAgent[Test]
   
   @js.native
-  trait Test extends Request[Test] {
+  trait Test
+    extends StObject
+       with Request[Test] {
     
     def expect(body: String): Test = js.native
     def expect(body: String, callback: CallbackHandler): Test = js.native
@@ -36,7 +38,7 @@ object supertestMod {
     def expect(body: js.Object, callback: CallbackHandler): Test = js.native
     def expect(body: RegExp): Test = js.native
     def expect(body: RegExp, callback: CallbackHandler): Test = js.native
-    def expect(checker: js.Function1[/* res */ Response, _]): Test = js.native
+    def expect(checker: js.Function1[/* res */ Response, js.Any]): Test = js.native
     def expect(field: String, `val`: String): Test = js.native
     def expect(field: String, `val`: String, callback: CallbackHandler): Test = js.native
     def expect(field: String, `val`: RegExp): Test = js.native

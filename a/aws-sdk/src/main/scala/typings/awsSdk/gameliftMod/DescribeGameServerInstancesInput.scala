@@ -2,31 +2,29 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGameServerInstancesInput extends StObject {
   
   /**
     * A unique identifier for the game server group. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * The EC2 instance IDs that you want to retrieve status on. EC2 instance IDs use a 17-character format, for example: i-1234567890abcdef0. To retrieve all instances in the game server group, leave this parameter empty. 
     */
-  var InstanceIds: js.UndefOr[GameServerInstanceIds] = js.native
+  var InstanceIds: js.UndefOr[GameServerInstanceIds] = js.undefined
   
   /**
     *  The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential segments. 
     */
-  var Limit: js.UndefOr[PositiveInteger] = js.native
+  var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
     *  A token that indicates the start of the next sequential segment of results. Use the token returned with the previous call to this operation. To start at the beginning of the result set, do not specify a value. 
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object DescribeGameServerInstancesInput {
   

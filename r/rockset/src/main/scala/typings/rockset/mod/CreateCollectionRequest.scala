@@ -2,29 +2,27 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCollectionRequest extends StObject {
   
   // text describing the collection
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   // configuration for event data
-  var event_time_info: js.UndefOr[EventTimeInfo] = js.native
+  var event_time_info: js.UndefOr[EventTimeInfo] = js.undefined
   
   // list of mappings
-  var field_mappings: js.UndefOr[js.Array[FieldMappingV2]] = js.native
+  var field_mappings: js.UndefOr[js.Array[FieldMappingV2]] = js.undefined
   
   // unique identifer for collection, can contain alphanumeric or dash characters
-  var name: String = js.native
+  var name: String
   
   // number of seconds after which data is purged, based on event time
-  var retention_secs: js.UndefOr[Double] = js.native
+  var retention_secs: js.UndefOr[Double] = js.undefined
   
   // list of sources from which to ingest data
-  var sources: js.UndefOr[js.Array[Source]] = js.native
+  var sources: js.UndefOr[js.Array[Source]] = js.undefined
 }
 object CreateCollectionRequest {
   

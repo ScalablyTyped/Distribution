@@ -9,46 +9,44 @@ import typings.react.mod.Validator
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<antd.antd/lib/config-provider.ConfigProviderProps> */
-@js.native
 trait WeakValidationMapConfigPr extends StObject {
   
-  var autoInsertSpaceInButton: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var autoInsertSpaceInButton: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
-  var componentSize: js.UndefOr[Validator[js.UndefOr[Null | SizeType]]] = js.native
+  var componentSize: js.UndefOr[Validator[js.UndefOr[Null | SizeType]]] = js.undefined
   
-  var csp: js.UndefOr[Validator[js.UndefOr[CSPConfig | Null]]] = js.native
+  var csp: js.UndefOr[Validator[js.UndefOr[CSPConfig | Null]]] = js.undefined
   
-  var direction: js.UndefOr[Validator[js.UndefOr[DirectionType | Null]]] = js.native
+  var direction: js.UndefOr[Validator[js.UndefOr[DirectionType | Null]]] = js.undefined
   
-  var dropdownMatchSelectWidth: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var dropdownMatchSelectWidth: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var form: js.UndefOr[Validator[js.UndefOr[Null | ValidateMessages]]] = js.native
+  var form: js.UndefOr[Validator[js.UndefOr[Null | ValidateMessages]]] = js.undefined
   
   var getPopupContainer: js.UndefOr[
     Validator[js.UndefOr[(js.Function1[/* triggerNode */ HTMLElement, HTMLElement]) | Null]]
-  ] = js.native
+  ] = js.undefined
   
-  var getTargetContainer: js.UndefOr[Validator[js.UndefOr[js.Function0[HTMLElement] | Null]]] = js.native
+  var getTargetContainer: js.UndefOr[Validator[js.UndefOr[js.Function0[HTMLElement] | Null]]] = js.undefined
   
-  var input: js.UndefOr[Validator[js.UndefOr[AutoComplete | Null]]] = js.native
+  var input: js.UndefOr[Validator[js.UndefOr[AutoComplete | Null]]] = js.undefined
   
-  var locale: js.UndefOr[Validator[js.UndefOr[typings.antd.localeProviderMod.Locale | Null]]] = js.native
+  var locale: js.UndefOr[Validator[js.UndefOr[typings.antd.localeProviderMod.Locale | Null]]] = js.undefined
   
-  var pageHeader: js.UndefOr[Validator[js.UndefOr[Ghost | Null]]] = js.native
+  var pageHeader: js.UndefOr[Validator[js.UndefOr[Ghost | Null]]] = js.undefined
   
-  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var renderEmpty: js.UndefOr[Validator[js.UndefOr[Null | RenderEmptyHandler]]] = js.native
+  var renderEmpty: js.UndefOr[Validator[js.UndefOr[Null | RenderEmptyHandler]]] = js.undefined
   
-  var space: js.UndefOr[Validator[js.UndefOr[Null | Size]]] = js.native
+  var space: js.UndefOr[Validator[js.UndefOr[Null | Size]]] = js.undefined
   
-  var virtual: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var virtual: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
 object WeakValidationMapConfigPr {
   

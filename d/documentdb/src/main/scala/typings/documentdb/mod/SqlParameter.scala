@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlParameter extends StObject {
   
   /** The name of the parameter. */
-  var name: String = js.native
+  var name: String
   
   /** The value of the parameter. */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object SqlParameter {
   

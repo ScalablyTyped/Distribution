@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterInput extends StObject {
   
   /**
     * The unique identifier of the cluster.
     */
-  var ClusterId: String = js.native
+  var ClusterId: String
   
   /**
     * The number of steps that can be executed concurrently. You can specify a maximum of 256 steps. 
     */
-  var StepConcurrencyLevel: js.UndefOr[Integer] = js.native
+  var StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined
 }
 object ModifyClusterInput {
   

@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies settings for an HTTP redirect.
   */
-@js.native
 trait SchemaHttpRedirectAction extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaHttpRedirectAction extends StObject {
     * that was supplied in the request. The value must be between 1 and 255
     * characters.
     */
-  var hostRedirect: js.UndefOr[String] = js.native
+  var hostRedirect: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, the URL scheme in the redirected request is set to https.
@@ -25,7 +23,7 @@ trait SchemaHttpRedirectAction extends StObject {
     * TargetHttpProxys. Setting this true for TargetHttpsProxy is not
     * permitted. The default is set to false.
     */
-  var httpsRedirect: js.UndefOr[Boolean] = js.native
+  var httpsRedirect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path that will be used in the redirect response instead of the one
@@ -33,14 +31,14 @@ trait SchemaHttpRedirectAction extends StObject {
     * prefixRedirect must be specified. The value must be between 1 and 1024
     * characters.
     */
-  var pathRedirect: js.UndefOr[String] = js.native
+  var pathRedirect: js.UndefOr[String] = js.undefined
   
   /**
     * The prefix that replaces the prefixMatch specified in the
     * HttpRouteRuleMatch, retaining the remaining portion of the URL before
     * redirecting the request.
     */
-  var prefixRedirect: js.UndefOr[String] = js.native
+  var prefixRedirect: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP Status code to use for this RedirectAction. Supported values
@@ -51,14 +49,14 @@ trait SchemaHttpRedirectAction extends StObject {
     * PERMANENT_REDIRECT, which corresponds to 308. In this case, the request
     * method will be retained.
     */
-  var redirectResponseCode: js.UndefOr[String] = js.native
+  var redirectResponseCode: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, any accompanying query portion of the original URL is
     * removed prior to redirecting the request. If set to false, the query
     * portion of the original URL is retained. The default is set to false.
     */
-  var stripQuery: js.UndefOr[Boolean] = js.native
+  var stripQuery: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHttpRedirectAction {
   

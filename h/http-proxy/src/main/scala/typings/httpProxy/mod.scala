@@ -21,7 +21,6 @@ import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,6 +34,9 @@ object mod {
   class ^ () extends Server {
     def this(options: ServerOptions) = this()
   }
+  @JSImport("http-proxy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates the proxy server with specified options.
@@ -42,12 +44,10 @@ object mod {
     * @returns Proxy object with handlers for `ws` and `web` requests
     */
   /* static member */
-  @JSImport("http-proxy", "createProxy")
-  @js.native
-  def createProxy(): Server = js.native
-  @JSImport("http-proxy", "createProxy")
-  @js.native
-  def createProxy(options: ServerOptions): Server = js.native
+  @scala.inline
+  def createProxy(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxy")().asInstanceOf[Server]
+  @scala.inline
+  def createProxy(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxy")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
   /**
     * Creates the proxy server with specified options.
@@ -55,12 +55,10 @@ object mod {
     * @returns Proxy object with handlers for `ws` and `web` requests
     */
   /* static member */
-  @JSImport("http-proxy", "createProxyServer")
-  @js.native
-  def createProxyServer(): Server = js.native
-  @JSImport("http-proxy", "createProxyServer")
-  @js.native
-  def createProxyServer(options: ServerOptions): Server = js.native
+  @scala.inline
+  def createProxyServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxyServer")().asInstanceOf[Server]
+  @scala.inline
+  def createProxyServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxyServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
   /**
     * Creates the proxy server with specified options.
@@ -68,12 +66,10 @@ object mod {
     * @returns Proxy object with handlers for `ws` and `web` requests
     */
   /* static member */
-  @JSImport("http-proxy", "createServer")
-  @js.native
-  def createServer(): Server = js.native
-  @JSImport("http-proxy", "createServer")
-  @js.native
-  def createServer(options: ServerOptions): Server = js.native
+  @scala.inline
+  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
   type ErrorCallback = js.Function4[
     /* err */ Error, 
@@ -85,32 +81,31 @@ object mod {
   
   type ProxyTarget = ProxyTargetUrl | ProxyTargetDetailed
   
-  @js.native
   trait ProxyTargetDetailed extends StObject {
     
-    var ca: js.UndefOr[String] = js.native
+    var ca: js.UndefOr[String] = js.undefined
     
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[Buffer | String] = js.native
+    var pfx: js.UndefOr[Buffer | String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
   }
   object ProxyTargetDetailed {
     
@@ -289,12 +284,7 @@ object mod {
       * @param options - Additionnal options.
       */
     def web(req: IncomingMessage, res: ServerResponse): Unit = js.native
-    def web(
-      req: IncomingMessage,
-      res: ServerResponse,
-      options: js.UndefOr[scala.Nothing],
-      callback: ErrorCallback
-    ): Unit = js.native
+    def web(req: IncomingMessage, res: ServerResponse, options: Unit, callback: ErrorCallback): Unit = js.native
     def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions): Unit = js.native
     def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions, callback: ErrorCallback): Unit = js.native
     
@@ -306,13 +296,7 @@ object mod {
       * @param options - Additionnal options.
       */
     def ws(req: IncomingMessage, socket: js.Any, head: js.Any): Unit = js.native
-    def ws(
-      req: IncomingMessage,
-      socket: js.Any,
-      head: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      callback: ErrorCallback
-    ): Unit = js.native
+    def ws(req: IncomingMessage, socket: js.Any, head: js.Any, options: Unit, callback: ErrorCallback): Unit = js.native
     def ws(req: IncomingMessage, socket: js.Any, head: js.Any, options: ServerOptions): Unit = js.native
     def ws(
       req: IncomingMessage,
@@ -323,83 +307,82 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
     /** Object to be passed to http(s).request. */
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
     /** Basic authentication i.e. 'user:password' to compute an Authorization header. */
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
     /** Rewrites the location host/ port on (301 / 302 / 307 / 308) redirects based on requested host/ port.Default: false. */
-    var autoRewrite: js.UndefOr[Boolean] = js.native
+    var autoRewrite: js.UndefOr[Boolean] = js.undefined
     
     /** Buffer */
-    var buffer: js.UndefOr[Stream] = js.native
+    var buffer: js.UndefOr[Stream] = js.undefined
     
     /** Changes the origin of the host header to the target URL. */
-    var changeOrigin: js.UndefOr[Boolean] = js.native
+    var changeOrigin: js.UndefOr[Boolean] = js.undefined
     
     /** rewrites domain of set-cookie headers. */
-    var cookieDomainRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.native
+    var cookieDomainRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.undefined
     
     /** rewrites path of set-cookie headers. Default: false */
-    var cookiePathRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.native
+    var cookiePathRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.undefined
     
     /** Specify whether you want to follow redirects. Default: false */
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
     /** URL string to be parsed with the url module. */
-    var forward: js.UndefOr[ProxyTargetUrl] = js.native
+    var forward: js.UndefOr[ProxyTargetUrl] = js.undefined
     
     /** object with extra headers to be added to target requests. */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Rewrites the location hostname on (301 / 302 / 307 / 308) redirects, Default: null. */
-    var hostRewrite: js.UndefOr[String] = js.native
+    var hostRewrite: js.UndefOr[String] = js.undefined
     
     /** Specify whether you want to ignore the proxy path of the incoming request. */
-    var ignorePath: js.UndefOr[Boolean] = js.native
+    var ignorePath: js.UndefOr[Boolean] = js.undefined
     
     /** Local interface string to bind for outgoing connections. */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /** Specify whether you want to prepend the target's path to the proxy path. */
-    var prependPath: js.UndefOr[Boolean] = js.native
+    var prependPath: js.UndefOr[Boolean] = js.undefined
     
     /** specify whether you want to keep letter case of response header key */
-    var preserveHeaderKeyCase: js.UndefOr[Boolean] = js.native
+    var preserveHeaderKeyCase: js.UndefOr[Boolean] = js.undefined
     
     /** Rewrites the location protocol on (301 / 302 / 307 / 308) redirects to 'http' or 'https'.Default: null. */
-    var protocolRewrite: js.UndefOr[String] = js.native
+    var protocolRewrite: js.UndefOr[String] = js.undefined
     
     /** Timeout (in milliseconds) when proxy receives no response from target. Default: 120000 (2 minutes) */
-    var proxyTimeout: js.UndefOr[Double] = js.native
+    var proxyTimeout: js.UndefOr[Double] = js.undefined
     
     /** Verify SSL certificate. */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /** If set to true, none of the webOutgoing passes are called and it's your responsibility to appropriately return the response by listening and acting on the proxyRes event */
-    var selfHandleResponse: js.UndefOr[Boolean] = js.native
+    var selfHandleResponse: js.UndefOr[Boolean] = js.undefined
     
     /** Object to be passed to https.createServer(). */
-    var ssl: js.UndefOr[js.Any] = js.native
+    var ssl: js.UndefOr[js.Any] = js.undefined
     
     /** URL string to be parsed with the url module. */
-    var target: js.UndefOr[ProxyTarget] = js.native
+    var target: js.UndefOr[ProxyTarget] = js.undefined
     
     /** Timeout (in milliseconds) for incoming requests */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** Explicitly specify if we are proxying to another proxy. */
-    var toProxy: js.UndefOr[Boolean] = js.native
+    var toProxy: js.UndefOr[Boolean] = js.undefined
     
     /** If you want to proxy websockets. */
-    var ws: js.UndefOr[Boolean] = js.native
+    var ws: js.UndefOr[Boolean] = js.undefined
     
     /** Adds x- forward headers. */
-    var xfwd: js.UndefOr[Boolean] = js.native
+    var xfwd: js.UndefOr[Boolean] = js.undefined
   }
   object ServerOptions {
     

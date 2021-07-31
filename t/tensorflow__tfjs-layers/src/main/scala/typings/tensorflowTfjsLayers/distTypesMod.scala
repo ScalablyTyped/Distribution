@@ -8,15 +8,13 @@ import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypesMod {
   
-  @js.native
   trait HasShape extends StObject {
     
-    var shape: Shape = js.native
+    var shape: Shape
   }
   object HasShape {
     
@@ -41,12 +39,11 @@ object distTypesMod {
   
   type LossOrMetricFn = js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]]
   
-  @js.native
   trait NamedTensor extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var tensor: Tensor[Rank] = js.native
+    var tensor: Tensor[Rank]
   }
   object NamedTensor {
     

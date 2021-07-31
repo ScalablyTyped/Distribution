@@ -2,41 +2,39 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeCoverageStatistics extends StObject {
   
   /**
     * Covered units
     */
-  var covered: Double = js.native
+  var covered: Double
   
   /**
     * Delta of coverage
     */
-  var delta: Double = js.native
+  var delta: Double
   
   /**
     * Is delta valid
     */
-  var isDeltaAvailable: Boolean = js.native
+  var isDeltaAvailable: Boolean
   
   /**
     * Label of coverage data ("Blocks", "Statements", "Modules", etc.)
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Position of label
     */
-  var position: Double = js.native
+  var position: Double
   
   /**
     * Total units
     */
-  var total: Double = js.native
+  var total: Double
 }
 object CodeCoverageStatistics {
   

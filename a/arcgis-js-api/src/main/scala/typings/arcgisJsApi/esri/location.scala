@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html)
   */
-@js.native
 trait location extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait location extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#createRenderer)
     */
-  def createRenderer(params: locationCreateRendererParams): js.Promise[locationRendererResult] = js.native
+  def createRenderer(params: locationCreateRendererParams): js.Promise[locationRendererResult]
 }
 object location {
   

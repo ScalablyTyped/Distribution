@@ -2,25 +2,23 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileProviderMetadata extends StObject {
   
-  var deps: js.UndefOr[js.Array[CompileDiDependencyMetadata]] = js.native
+  var deps: js.UndefOr[js.Array[CompileDiDependencyMetadata]] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var token: CompileTokenMetadata = js.native
+  var token: CompileTokenMetadata
   
-  var useClass: js.UndefOr[CompileTypeMetadata] = js.native
+  var useClass: js.UndefOr[CompileTypeMetadata] = js.undefined
   
-  var useExisting: js.UndefOr[CompileTokenMetadata] = js.native
+  var useExisting: js.UndefOr[CompileTokenMetadata] = js.undefined
   
-  var useFactory: js.UndefOr[CompileFactoryMetadata] = js.native
+  var useFactory: js.UndefOr[CompileFactoryMetadata] = js.undefined
   
-  var useValue: js.UndefOr[js.Any] = js.native
+  var useValue: js.UndefOr[js.Any] = js.undefined
 }
 object CompileProviderMetadata {
   

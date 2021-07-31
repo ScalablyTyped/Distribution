@@ -6,17 +6,15 @@ import typings.webdriverManager.binaryMod.OS
 import typings.webdriverManager.mod.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index extends StObject {
     
-    var index: String = js.native
+    var index: String
     
-    var version: String = js.native
+    var version: String
   }
   object Index {
     
@@ -39,18 +37,18 @@ object anon {
   
   @js.native
   trait TypeofBinary
-    extends Instantiable0[Binary]
+    extends StObject
+       with Instantiable0[Binary]
        with Instantiable1[/* opt_alternativeCdn */ String, Binary] {
     
     var os: js.Array[OS] = js.native
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
     
-    var version: String = js.native
+    var version: String
   }
   object Url {
     

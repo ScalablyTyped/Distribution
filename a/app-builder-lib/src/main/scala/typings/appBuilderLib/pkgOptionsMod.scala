@@ -6,7 +6,6 @@ import typings.appBuilderLib.appBuilderLibStrings.upgrade
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pkgOptionsMod {
@@ -71,7 +70,6 @@ object pkgOptionsMod {
     def tofit: typings.appBuilderLib.appBuilderLibStrings.tofit = "tofit".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.tofit]
   }
   
-  @js.native
   trait PkgBackgroundOptions extends StObject {
     
     /**
@@ -79,19 +77,19 @@ object pkgOptionsMod {
       * Options are: center, left, right, top, bottom, topleft, topright, bottomleft, bottomright
       * @default center
       */
-    var alignment: js.UndefOr[BackgroundAlignment | Null] = js.native
+    var alignment: js.UndefOr[BackgroundAlignment | Null] = js.undefined
     
     /**
       * Path to the image to use as an installer background.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * Scaling of the background image.
       * Options are: tofit, none, proportional
       * @default tofit
       */
-    var scaling: js.UndefOr[BackgroundScaling | Null] = js.native
+    var scaling: js.UndefOr[BackgroundScaling | Null] = js.undefined
   }
   object PkgBackgroundOptions {
     
@@ -130,8 +128,9 @@ object pkgOptionsMod {
     }
   }
   
-  @js.native
-  trait PkgOptions extends TargetSpecificOptions {
+  trait PkgOptions
+    extends StObject
+       with TargetSpecificOptions {
     
     /**
       * Whether can be installed at the root of any volume, including non-system volumes. Otherwise, it cannot be installed at the root of a volume.
@@ -139,7 +138,7 @@ object pkgOptionsMod {
       * Corresponds to [enable_anywhere](https://developer.apple.com/library/content/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW70).
       * @default true
       */
-    val allowAnywhere: js.UndefOr[Boolean | Null] = js.native
+    val allowAnywhere: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Whether can be installed into the current user’s home directory.
@@ -149,7 +148,7 @@ object pkgOptionsMod {
       * Corresponds to [enable_currentUserHome](https://developer.apple.com/library/content/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW70).
       * @default true
       */
-    val allowCurrentUserHome: js.UndefOr[Boolean | Null] = js.native
+    val allowCurrentUserHome: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Whether can be installed into the root directory. Should usually be `true` unless the product can be installed only to the user’s home directory.
@@ -157,57 +156,57 @@ object pkgOptionsMod {
       * Corresponds to [enable_localSystem](https://developer.apple.com/library/content/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW70).
       * @default true
       */
-    val allowRootDirectory: js.UndefOr[Boolean | Null] = js.native
+    val allowRootDirectory: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Options for the background image for the installer.
       */
-    val background: js.UndefOr[PkgBackgroundOptions | Null] = js.native
+    val background: js.UndefOr[PkgBackgroundOptions | Null] = js.undefined
     
     /**
       * The path to the conclusion file. This may be used to customize the text on the final "Summary" page of the installer.
       */
-    val conclusion: js.UndefOr[String | Null] = js.native
+    val conclusion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Require identical bundle identifiers at install path?
       * @default true
       */
-    val hasStrictIdentifier: js.UndefOr[Boolean | Null] = js.native
+    val hasStrictIdentifier: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
       */
-    val identity: js.UndefOr[String | Null] = js.native
+    val identity: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The install location. [Do not use it](https://stackoverflow.com/questions/12863944/how-do-you-specify-a-default-install-location-to-home-with-pkgbuild) to create per-user package.
       * Mostly never you will need to change this option. `/Applications` would install it as expected into `/Applications` if the local system domain is chosen, or into `$HOME/Applications` if the home installation is chosen.
       * @default /Applications
       */
-    val installLocation: js.UndefOr[String | Null] = js.native
+    val installLocation: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Install bundle over previous version if moved by user?
       * @default true
       */
-    val isRelocatable: js.UndefOr[Boolean | Null] = js.native
+    val isRelocatable: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Don't install bundle if newer version on disk?
       * @default true
       */
-    val isVersionChecked: js.UndefOr[Boolean | Null] = js.native
+    val isVersionChecked: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). In addition to `txt, `rtf` and `html` supported (don't forget to use `target="_blank"` for links).
       */
-    val license: js.UndefOr[String | Null] = js.native
+    val license: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Identifies applications that must be closed before the package is installed.\n\nCorresponds to [must-close](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW77)
       */
-    val mustClose: js.UndefOr[js.Array[String] | Null] = js.native
+    val mustClose: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * Specifies how an existing version of the bundle on disk should be handled when the version in
@@ -227,13 +226,13 @@ object pkgOptionsMod {
       *
       * @default upgrade
       */
-    val overwriteAction: js.UndefOr[upgrade | update | Null] = js.native
+    val overwriteAction: js.UndefOr[upgrade | update | Null] = js.undefined
     
     /**
       * should be not documented, only to experiment
       * @private
       */
-    val productbuild: js.UndefOr[js.Array[String] | Null] = js.native
+    val productbuild: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The scripts directory, relative to `build` (build resources directory).
@@ -242,12 +241,12 @@ object pkgOptionsMod {
       * @default build/pkg-scripts
       * @see [Scripting in installer packages](http://macinstallers.blogspot.de/2012/07/scripting-in-installer-packages.html).
       */
-    val scripts: js.UndefOr[String | Null] = js.native
+    val scripts: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to the welcome file. This may be used to customize the text on the Introduction page of the installer.
       */
-    val welcome: js.UndefOr[String | Null] = js.native
+    val welcome: js.UndefOr[String | Null] = js.undefined
   }
   object PkgOptions {
     

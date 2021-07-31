@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalPolicy extends StObject {
   
-  var assignments: js.UndefOr[js.Array[SasPortalAssignment]] = js.native
+  var assignments: js.UndefOr[js.Array[SasPortalAssignment]] = js.undefined
   
   /**
     * The [etag] is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other. It is strongly suggested that systems
@@ -16,7 +14,7 @@ trait SasPortalPolicy extends StObject {
     * are expected to put that etag in the request to [SetPolicy] to ensure that their change will be applied to the same version of the policy. If no [etag] is provided in the call to
     * [SetPolicy], then the existing policy is overwritten blindly.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object SasPortalPolicy {
   

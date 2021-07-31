@@ -18,18 +18,43 @@ import typings.std.Node
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("popper.js", JSImport.Default)
   @js.native
-  class default protected () extends Popper {
+  class default protected ()
+    extends StObject
+       with Popper {
     def this(reference: ReferenceObject, popper: Element) = this()
     def this(reference: Element, popper: Element) = this()
     def this(reference: ReferenceObject, popper: Element, options: PopperOptions) = this()
     def this(reference: Element, popper: Element, options: PopperOptions) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disableEventListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enableEventListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    var options: PopperOptions = js.native
+    
+    /* CompleteClass */
+    var popper: Element = js.native
+    
+    /* CompleteClass */
+    var reference: Element | ReferenceObject = js.native
+    
+    /* CompleteClass */
+    override def scheduleUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def update(): Unit = js.native
   }
   object default {
     
@@ -77,24 +102,23 @@ object mod {
   
   type Placement = typings.popperJs.mod.Popper.Placement
   
-  @js.native
   trait Popper extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disableEventListeners(): Unit = js.native
+    def disableEventListeners(): Unit
     
-    def enableEventListeners(): Unit = js.native
+    def enableEventListeners(): Unit
     
-    var options: PopperOptions = js.native
+    var options: PopperOptions
     
-    var popper: Element = js.native
+    var popper: Element
     
-    var reference: Element | ReferenceObject = js.native
+    var reference: Element | ReferenceObject
     
-    def scheduleUpdate(): Unit = js.native
+    def scheduleUpdate(): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Popper {
     
@@ -113,12 +137,11 @@ object mod {
       __obj.asInstanceOf[Popper]
     }
     
-    @js.native
     trait Attributes extends StObject {
       
-      var `x-out-of-boundaries`: _empty | `false` = js.native
+      var `x-out-of-boundaries`: _empty | `false`
       
-      var `x-placement`: typings.popperJs.mod.Popper.Placement = js.native
+      var `x-placement`: typings.popperJs.mod.Popper.Placement
     }
     object Attributes {
       
@@ -141,14 +164,13 @@ object mod {
       }
     }
     
-    @js.native
     trait BaseModifier extends StObject {
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
       
-      var fn: js.UndefOr[typings.popperJs.mod.Popper.ModifierFn] = js.native
+      var fn: js.UndefOr[typings.popperJs.mod.Popper.ModifierFn] = js.undefined
       
-      var order: js.UndefOr[Double] = js.native
+      var order: js.UndefOr[Double] = js.undefined
     }
     object BaseModifier {
       
@@ -219,30 +241,29 @@ object mod {
       def window: typings.popperJs.popperJsStrings.window = "window".asInstanceOf[typings.popperJs.popperJsStrings.window]
     }
     
-    @js.native
     trait Data extends StObject {
       
-      var arrowElement: Element = js.native
+      var arrowElement: Element
       
-      var arrowStyles: CSSStyleDeclaration = js.native
+      var arrowStyles: CSSStyleDeclaration
       
-      var attributes: Attributes = js.native
+      var attributes: Attributes
       
-      var boundaries: js.Object = js.native
+      var boundaries: js.Object
       
-      var flipped: Boolean = js.native
+      var flipped: Boolean
       
-      var hide: Boolean = js.native
+      var hide: Boolean
       
-      var instance: Popper = js.native
+      var instance: Popper
       
-      var offsets: Arrow = js.native
+      var offsets: Arrow
       
-      var originalPlacement: typings.popperJs.mod.Popper.Placement = js.native
+      var originalPlacement: typings.popperJs.mod.Popper.Placement
       
-      var placement: typings.popperJs.mod.Popper.Placement = js.native
+      var placement: typings.popperJs.mod.Popper.Placement
       
-      var styles: CSSStyleDeclaration = js.native
+      var styles: CSSStyleDeclaration
     }
     object Data {
       
@@ -308,29 +329,29 @@ object mod {
         typings.popperJs.mod.Popper.Data
       ]
     
-    @js.native
     trait Modifiers
-      extends /* name */ StringDictionary[js.UndefOr[typings.popperJs.mod.Popper.BaseModifier with (Record[String, _])]] {
+      extends StObject
+         with /* name */ StringDictionary[js.UndefOr[typings.popperJs.mod.Popper.BaseModifier & (Record[String, js.Any])]] {
       
-      var applyStyle: js.UndefOr[BaseModifieronLoadFunctio] = js.native
+      var applyStyle: js.UndefOr[BaseModifieronLoadFunctio] = js.undefined
       
-      var arrow: js.UndefOr[BaseModifierelementstring] = js.native
+      var arrow: js.UndefOr[BaseModifierelementstring] = js.undefined
       
-      var computeStyle: js.UndefOr[BaseModifiergpuAccelerati] = js.native
+      var computeStyle: js.UndefOr[BaseModifiergpuAccelerati] = js.undefined
       
-      var flip: js.UndefOr[BaseModifierbehaviorBehav] = js.native
+      var flip: js.UndefOr[BaseModifierbehaviorBehav] = js.undefined
       
-      var hide: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.native
+      var hide: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.undefined
       
-      var inner: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.native
+      var inner: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.undefined
       
-      var keepTogether: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.native
+      var keepTogether: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.undefined
       
-      var offset: js.UndefOr[BaseModifieroffsetnumbers] = js.native
+      var offset: js.UndefOr[BaseModifieroffsetnumbers] = js.undefined
       
-      var preventOverflow: js.UndefOr[BaseModifierpriorityArray] = js.native
+      var preventOverflow: js.UndefOr[BaseModifierpriorityArray] = js.undefined
       
-      var shift: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.native
+      var shift: js.UndefOr[typings.popperJs.mod.Popper.BaseModifier] = js.undefined
     }
     object Modifiers {
       
@@ -405,16 +426,15 @@ object mod {
       }
     }
     
-    @js.native
     trait Offset extends StObject {
       
-      var height: Double = js.native
+      var height: Double
       
-      var left: Double = js.native
+      var left: Double
       
-      var top: Double = js.native
+      var top: Double
       
-      var width: Double = js.native
+      var width: Double
     }
     object Offset {
       
@@ -441,16 +461,15 @@ object mod {
       }
     }
     
-    @js.native
     trait Padding extends StObject {
       
-      var bottom: js.UndefOr[Double] = js.native
+      var bottom: js.UndefOr[Double] = js.undefined
       
-      var left: js.UndefOr[Double] = js.native
+      var left: js.UndefOr[Double] = js.undefined
       
-      var right: js.UndefOr[Double] = js.native
+      var right: js.UndefOr[Double] = js.undefined
       
-      var top: js.UndefOr[Double] = js.native
+      var top: js.UndefOr[Double] = js.undefined
     }
     object Padding {
       
@@ -583,22 +602,21 @@ object mod {
       def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
     
-    @js.native
     trait PopperOptions extends StObject {
       
-      var eventsEnabled: js.UndefOr[Boolean] = js.native
+      var eventsEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var modifiers: js.UndefOr[typings.popperJs.mod.Popper.Modifiers] = js.native
+      var modifiers: js.UndefOr[typings.popperJs.mod.Popper.Modifiers] = js.undefined
       
-      var onCreate: js.UndefOr[js.Function1[/* data */ typings.popperJs.mod.Popper.Data, Unit]] = js.native
+      var onCreate: js.UndefOr[js.Function1[/* data */ typings.popperJs.mod.Popper.Data, Unit]] = js.undefined
       
-      var onUpdate: js.UndefOr[js.Function1[/* data */ typings.popperJs.mod.Popper.Data, Unit]] = js.native
+      var onUpdate: js.UndefOr[js.Function1[/* data */ typings.popperJs.mod.Popper.Data, Unit]] = js.undefined
       
-      var placement: js.UndefOr[typings.popperJs.mod.Popper.Placement] = js.native
+      var placement: js.UndefOr[typings.popperJs.mod.Popper.Placement] = js.undefined
       
-      var positionFixed: js.UndefOr[Boolean] = js.native
+      var positionFixed: js.UndefOr[Boolean] = js.undefined
       
-      var removeOnDestroy: js.UndefOr[Boolean] = js.native
+      var removeOnDestroy: js.UndefOr[Boolean] = js.undefined
     }
     object PopperOptions {
       
@@ -677,16 +695,15 @@ object mod {
       def top: typings.popperJs.popperJsStrings.top = "top".asInstanceOf[typings.popperJs.popperJsStrings.top]
     }
     
-    @js.native
     trait ReferenceObject extends StObject {
       
-      var clientHeight: Double = js.native
+      var clientHeight: Double
       
-      var clientWidth: Double = js.native
+      var clientWidth: Double
       
-      def getBoundingClientRect(): ClientRect = js.native
+      def getBoundingClientRect(): ClientRect
       
-      var referenceNode: js.UndefOr[Node] = js.native
+      var referenceNode: js.UndefOr[Node] = js.undefined
     }
     object ReferenceObject {
       

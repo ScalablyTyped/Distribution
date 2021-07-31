@@ -2,16 +2,14 @@ package typings.awsSdk.stsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecodeAuthorizationMessageRequest extends StObject {
   
   /**
     * The encoded message that was returned with the response.
     */
-  var EncodedMessage: encodedMessageType = js.native
+  var EncodedMessage: encodedMessageType
 }
 object DecodeAuthorizationMessageRequest {
   

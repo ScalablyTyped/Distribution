@@ -2,24 +2,23 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
   @JSName("type")
-  var type_BreakStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement = js.native
+  var type_BreakStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement
 }
 object BreakStatement {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement): BreakStatement = {
+  def apply(): BreakStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[BreakStatement]
   }
   

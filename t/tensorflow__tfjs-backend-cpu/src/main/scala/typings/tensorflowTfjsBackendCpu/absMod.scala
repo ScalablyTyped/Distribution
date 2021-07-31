@@ -8,20 +8,21 @@ import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object absMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Abs", "abs")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Abs", JSImport.Namespace)
   @js.native
-  def abs(args: Backend): Tensor[Rank] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def abs(args: Backend): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(args.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Abs", "absConfig")
   @js.native
   val absConfig: KernelConfig = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Abs", "simpleAbsImpl")
-  @js.native
-  def simpleAbsImpl(vals: TypedArray): Float32Array = js.native
+  @scala.inline
+  def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
 }

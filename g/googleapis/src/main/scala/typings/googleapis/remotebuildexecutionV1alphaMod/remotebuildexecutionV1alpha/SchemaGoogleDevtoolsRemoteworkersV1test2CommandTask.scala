@@ -2,30 +2,28 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a shell-style task to execute, suitable for providing as the Bots
   * interface&#39;s `Lease.payload` field.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask extends StObject {
   
   /**
     * The expected outputs from the task.
     */
-  var expectedOutputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] = js.native
+  var expectedOutputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] = js.undefined
   
   /**
     * The inputs to the task.
     */
-  var inputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] = js.native
+  var inputs: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] = js.undefined
   
   /**
     * The timeouts of this task.
     */
-  var timeouts: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] = js.native
+  var timeouts: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask {
   

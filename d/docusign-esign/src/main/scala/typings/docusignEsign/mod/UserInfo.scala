@@ -2,67 +2,65 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserInfo extends StObject {
   
   /**
     * The external account number (int) or account ID GUID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The name on the account.
     */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /**
     * Access code provided to the user to activate the account.
     */
-  var activationAccessCode: js.UndefOr[String] = js.native
+  var activationAccessCode: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Boolean value that indicates whether the user is currently logged in or not.
     */
-  var loginStatus: js.UndefOr[String] = js.native
+  var loginStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The user's membership ID.
     */
-  var membershipId: js.UndefOr[String] = js.native
+  var membershipId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that an activation email be sent to the user.
     */
-  var sendActivationEmail: js.UndefOr[String] = js.native
+  var sendActivationEmail: js.UndefOr[String] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
     * `userId` can represent another user whom the Administrator is accessing.
     *
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the user's account. One of:
@@ -74,12 +72,12 @@ trait UserInfo extends StObject {
     * - `Disabled`
     *
     */
-  var userStatus: js.UndefOr[String] = js.native
+  var userStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The type of user, for example `CompanyUser`.
     */
-  var userType: js.UndefOr[String] = js.native
+  var userType: js.UndefOr[String] = js.undefined
 }
 object UserInfo {
   

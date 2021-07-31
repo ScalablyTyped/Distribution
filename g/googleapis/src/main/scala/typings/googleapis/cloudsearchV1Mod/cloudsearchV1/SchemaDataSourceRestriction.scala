@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Restriction on Datasource.
   */
-@js.native
 trait SchemaDataSourceRestriction extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaDataSourceRestriction extends StObject {
     * object type are joined conjunctively, then the resulting expressions are
     * joined disjunctively.  The maximum number of elements is 20.
     */
-  var filterOptions: js.UndefOr[js.Array[SchemaFilterOptions]] = js.native
+  var filterOptions: js.UndefOr[js.Array[SchemaFilterOptions]] = js.undefined
   
   /**
     * The source of restriction.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
 }
 object SchemaDataSourceRestriction {
   

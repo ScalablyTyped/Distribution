@@ -3,27 +3,25 @@ package typings.downshift.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseSelectDispatchAction[Item] extends StObject {
   
-  var getItemNodeFromIndex: js.UndefOr[js.Function1[/* index */ Double, HTMLElement]] = js.native
+  var getItemNodeFromIndex: js.UndefOr[js.Function1[/* index */ Double, HTMLElement]] = js.undefined
   
-  var highlightedIndex: js.UndefOr[Double] = js.native
+  var highlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var shiftKey: js.UndefOr[Boolean] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: UseSelectStateChangeTypes = js.native
+  var `type`: UseSelectStateChangeTypes
 }
 object UseSelectDispatchAction {
   
@@ -35,7 +33,7 @@ object UseSelectDispatchAction {
   }
   
   @scala.inline
-  implicit class UseSelectDispatchActionMutableBuilder[Self <: UseSelectDispatchAction[_], Item] (val x: Self with UseSelectDispatchAction[Item]) extends AnyVal {
+  implicit class UseSelectDispatchActionMutableBuilder[Self <: UseSelectDispatchAction[?], Item] (val x: Self & UseSelectDispatchAction[Item]) extends AnyVal {
     
     @scala.inline
     def setGetItemNodeFromIndex(value: /* index */ Double => HTMLElement): Self = StObject.set(x, "getItemNodeFromIndex", js.Any.fromFunction1(value))

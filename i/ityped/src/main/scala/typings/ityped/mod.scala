@@ -2,25 +2,26 @@ package typings.ityped
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ityped", "init")
+  @JSImport("ityped", JSImport.Namespace)
   @js.native
-  def init(element: String, config: Configuration): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def init(element: String, config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Configuration extends StObject {
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var pause: js.UndefOr[Double] = js.native
+    var pause: js.UndefOr[Double] = js.undefined
     
-    var strings: js.UndefOr[js.Array[String]] = js.native
+    var strings: js.UndefOr[js.Array[String]] = js.undefined
     
-    var typeSpeed: js.UndefOr[Double] = js.native
+    var typeSpeed: js.UndefOr[Double] = js.undefined
   }
   object Configuration {
     

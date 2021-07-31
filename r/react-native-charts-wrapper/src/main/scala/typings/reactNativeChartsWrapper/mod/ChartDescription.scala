@@ -2,21 +2,19 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartDescription extends StObject {
   
-  var positionX: js.UndefOr[Double] = js.native
+  var positionX: js.UndefOr[Double] = js.undefined
   
-  var positionY: js.UndefOr[Double] = js.native
+  var positionY: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textColor: js.UndefOr[Color] = js.native
+  var textColor: js.UndefOr[Color] = js.undefined
   
-  var textSize: js.UndefOr[Double] = js.native
+  var textSize: js.UndefOr[Double] = js.undefined
 }
 object ChartDescription {
   

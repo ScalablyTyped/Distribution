@@ -3,19 +3,17 @@ package typings.awsSdkTypes
 import typings.awsSdkTypes.httpMod.HeaderBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseMod {
   
-  @js.native
   trait MetadataBearer extends StObject {
     
     /**
       * Metadata pertaining to this request.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
   }
   object MetadataBearer {
     
@@ -33,45 +31,44 @@ object responseMod {
     }
   }
   
-  @js.native
   trait ResponseMetadata extends StObject {
     
     /**
       * The number of times this operation was attempted.
       */
-    var attempts: js.UndefOr[Double] = js.native
+    var attempts: js.UndefOr[Double] = js.undefined
     
     /**
       * A tertiary identifier for the last request sent. Used for debugging.
       */
-    var cfId: js.UndefOr[String] = js.native
+    var cfId: js.UndefOr[String] = js.undefined
     
     /**
       * A secondary identifier for the last request sent. Used for debugging.
       */
-    var extendedRequestId: js.UndefOr[String] = js.native
+    var extendedRequestId: js.UndefOr[String] = js.undefined
     
     /**
       * The headers of the last HTTP response received for this operation.
       */
-    var httpHeaders: js.UndefOr[HeaderBag] = js.native
+    var httpHeaders: js.UndefOr[HeaderBag] = js.undefined
     
     /**
       * The status code of the last HTTP response received for this operation.
       */
-    var httpStatusCode: js.UndefOr[Double] = js.native
+    var httpStatusCode: js.UndefOr[Double] = js.undefined
     
     /**
       * A unique identifier for the last request sent for this operation. Often
       * requested by AWS service teams to aid in debugging.
       */
-    var requestId: js.UndefOr[String] = js.native
+    var requestId: js.UndefOr[String] = js.undefined
     
     /**
       * The total amount of time (in milliseconds) that was spent waiting between
       * retry attempts.
       */
-    var totalRetryDelay: js.UndefOr[Double] = js.native
+    var totalRetryDelay: js.UndefOr[Double] = js.undefined
   }
   object ResponseMetadata {
     

@@ -11,8 +11,8 @@ Pack/Unpack multibyte binary values from/to buffers
 | Full name          | struct |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 23062 |
+| # dependents       | 20 |
+| # downloads        | 22779 |
 | # stars            | 3 |
 
 ## Links

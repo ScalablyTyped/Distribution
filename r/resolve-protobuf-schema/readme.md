@@ -12,7 +12,7 @@ Read a protobuf schema from the disk, parse it and resolve all imports
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 18543763 |
+| # downloads        | 22832259 |
 | # stars            | 0 |
 
 ## Links

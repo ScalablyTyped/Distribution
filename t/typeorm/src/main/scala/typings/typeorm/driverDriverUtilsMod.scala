@@ -4,7 +4,6 @@ import typings.typeorm.anon.UseSid
 import typings.typeorm.driverDriverMod.Driver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driverDriverUtilsMod {
@@ -31,20 +30,17 @@ object driverDriverUtilsMod {
       *
       * @return An alias allowing to select/transform the target `column`.
       */
-    @JSImport("typeorm/driver/DriverUtils", "DriverUtils.buildColumnAlias")
-    @js.native
-    def buildColumnAlias(hasMaxAliasLength: Driver, alias: String, column: String): String = js.native
+    @scala.inline
+    def buildColumnAlias(hasMaxAliasLength: Driver, alias: String, column: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumnAlias")(hasMaxAliasLength.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Normalizes and builds a new driver options.
       * Extracts settings from connection url and sets to a new options object.
       */
-    @JSImport("typeorm/driver/DriverUtils", "DriverUtils.buildDriverOptions")
-    @js.native
-    def buildDriverOptions(options: js.Any): js.Any = js.native
-    @JSImport("typeorm/driver/DriverUtils", "DriverUtils.buildDriverOptions")
-    @js.native
-    def buildDriverOptions(options: js.Any, buildOptions: UseSid): js.Any = js.native
+    @scala.inline
+    def buildDriverOptions(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDriverOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def buildDriverOptions(options: js.Any, buildOptions: UseSid): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDriverOptions")(options.asInstanceOf[js.Any], buildOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Extracts connection data from the connection url.

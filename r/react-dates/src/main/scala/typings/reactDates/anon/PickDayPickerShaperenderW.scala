@@ -2,88 +2,86 @@ package typings.reactDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.DayPickerShape, 'renderWeekHeaderElement' | 'enableOutsideDays' | 'numberOfMonths' | 'withPortal' | 'hideKeyboardShortcutsPanel' | 'daySize' | 'noBorder' | 'verticalBorderSpacing' | 'horizontalMonthPadding' | 'dayPickerNavigationInlineStyles' | 'navPosition' | 'navPrev' | 'navNext' | 'renderNavPrevButton' | 'renderNavNextButton' | 'noNavButtons' | 'noNavNextButton' | 'noNavPrevButton' | 'onOutsideClick' | 'renderCalendarDay' | 'renderDayContents' | 'renderCalendarInfo' | 'renderKeyboardShortcutsButton' | 'renderKeyboardShortcutsPanel' | 'calendarInfoPosition' | 'firstDayOfWeek' | 'verticalHeight' | 'transitionDuration' | 'onBlur' | 'isFocused' | 'showKeyboardShortcuts' | 'onTab' | 'onShiftTab' | 'monthFormat' | 'weekDayFormat' | 'phrases' | 'dayAriaLabelFormat' | 'isRTL'> */
-@js.native
 trait PickDayPickerShaperenderW extends StObject {
   
-  var calendarInfoPosition: js.UndefOr[js.Any] = js.native
+  var calendarInfoPosition: js.UndefOr[js.Any] = js.undefined
   
-  var dayAriaLabelFormat: js.UndefOr[js.Any] = js.native
+  var dayAriaLabelFormat: js.UndefOr[js.Any] = js.undefined
   
-  var dayPickerNavigationInlineStyles: js.UndefOr[js.Any] = js.native
+  var dayPickerNavigationInlineStyles: js.UndefOr[js.Any] = js.undefined
   
-  var daySize: js.UndefOr[js.Any] = js.native
+  var daySize: js.UndefOr[js.Any] = js.undefined
   
-  var enableOutsideDays: js.UndefOr[js.Any] = js.native
+  var enableOutsideDays: js.UndefOr[js.Any] = js.undefined
   
-  var firstDayOfWeek: js.UndefOr[js.Any] = js.native
+  var firstDayOfWeek: js.UndefOr[js.Any] = js.undefined
   
-  var hideKeyboardShortcutsPanel: js.UndefOr[js.Any] = js.native
+  var hideKeyboardShortcutsPanel: js.UndefOr[js.Any] = js.undefined
   
-  var horizontalMonthPadding: js.UndefOr[js.Any] = js.native
+  var horizontalMonthPadding: js.UndefOr[js.Any] = js.undefined
   
-  var isFocused: js.UndefOr[js.Any] = js.native
+  var isFocused: js.UndefOr[js.Any] = js.undefined
   
-  var isRTL: js.UndefOr[js.Any] = js.native
+  var isRTL: js.UndefOr[js.Any] = js.undefined
   
-  var monthFormat: js.UndefOr[js.Any] = js.native
+  var monthFormat: js.UndefOr[js.Any] = js.undefined
   
-  var navNext: js.UndefOr[js.Any] = js.native
+  var navNext: js.UndefOr[js.Any] = js.undefined
   
-  var navPosition: js.UndefOr[js.Any] = js.native
+  var navPosition: js.UndefOr[js.Any] = js.undefined
   
-  var navPrev: js.UndefOr[js.Any] = js.native
+  var navPrev: js.UndefOr[js.Any] = js.undefined
   
-  var noBorder: js.UndefOr[js.Any] = js.native
+  var noBorder: js.UndefOr[js.Any] = js.undefined
   
-  var noNavButtons: js.UndefOr[js.Any] = js.native
+  var noNavButtons: js.UndefOr[js.Any] = js.undefined
   
-  var noNavNextButton: js.UndefOr[js.Any] = js.native
+  var noNavNextButton: js.UndefOr[js.Any] = js.undefined
   
-  var noNavPrevButton: js.UndefOr[js.Any] = js.native
+  var noNavPrevButton: js.UndefOr[js.Any] = js.undefined
   
-  var numberOfMonths: js.UndefOr[js.Any] = js.native
+  var numberOfMonths: js.UndefOr[js.Any] = js.undefined
   
-  var onBlur: js.UndefOr[js.Any] = js.native
+  var onBlur: js.UndefOr[js.Any] = js.undefined
   
-  var onOutsideClick: js.UndefOr[js.Any] = js.native
+  var onOutsideClick: js.UndefOr[js.Any] = js.undefined
   
-  var onShiftTab: js.UndefOr[js.Any] = js.native
+  var onShiftTab: js.UndefOr[js.Any] = js.undefined
   
-  var onTab: js.UndefOr[js.Any] = js.native
+  var onTab: js.UndefOr[js.Any] = js.undefined
   
-  var phrases: js.UndefOr[js.Any] = js.native
+  var phrases: js.UndefOr[js.Any] = js.undefined
   
-  var renderCalendarDay: js.UndefOr[js.Any] = js.native
+  var renderCalendarDay: js.UndefOr[js.Any] = js.undefined
   
-  var renderCalendarInfo: js.UndefOr[js.Any] = js.native
+  var renderCalendarInfo: js.UndefOr[js.Any] = js.undefined
   
-  var renderDayContents: js.UndefOr[js.Any] = js.native
+  var renderDayContents: js.UndefOr[js.Any] = js.undefined
   
-  var renderKeyboardShortcutsButton: js.UndefOr[js.Any] = js.native
+  var renderKeyboardShortcutsButton: js.UndefOr[js.Any] = js.undefined
   
-  var renderKeyboardShortcutsPanel: js.UndefOr[js.Any] = js.native
+  var renderKeyboardShortcutsPanel: js.UndefOr[js.Any] = js.undefined
   
-  var renderNavNextButton: js.UndefOr[js.Any] = js.native
+  var renderNavNextButton: js.UndefOr[js.Any] = js.undefined
   
-  var renderNavPrevButton: js.UndefOr[js.Any] = js.native
+  var renderNavPrevButton: js.UndefOr[js.Any] = js.undefined
   
-  var renderWeekHeaderElement: js.UndefOr[js.Any] = js.native
+  var renderWeekHeaderElement: js.UndefOr[js.Any] = js.undefined
   
-  var showKeyboardShortcuts: js.UndefOr[js.Any] = js.native
+  var showKeyboardShortcuts: js.UndefOr[js.Any] = js.undefined
   
-  var transitionDuration: js.UndefOr[js.Any] = js.native
+  var transitionDuration: js.UndefOr[js.Any] = js.undefined
   
-  var verticalBorderSpacing: js.UndefOr[js.Any] = js.native
+  var verticalBorderSpacing: js.UndefOr[js.Any] = js.undefined
   
-  var verticalHeight: js.UndefOr[js.Any] = js.native
+  var verticalHeight: js.UndefOr[js.Any] = js.undefined
   
-  var weekDayFormat: js.UndefOr[js.Any] = js.native
+  var weekDayFormat: js.UndefOr[js.Any] = js.undefined
   
-  var withPortal: js.UndefOr[js.Any] = js.native
+  var withPortal: js.UndefOr[js.Any] = js.undefined
 }
 object PickDayPickerShaperenderW {
   

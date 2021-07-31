@@ -2,7 +2,6 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2orize", "TokenError")
@@ -20,36 +19,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class TokenError () extends OAuth2Error {
   def this(message: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: TokenErrorCode) = this()
   def this(message: String, code: String) = this()
   def this(message: String, code: TokenErrorCode) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: js.UndefOr[scala.Nothing], uri: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String, uri: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: TokenErrorCode, uri: String) = this()
-  def this(message: String, code: js.UndefOr[scala.Nothing], uri: String) = this()
+  def this(message: Unit, code: String) = this()
+  def this(message: Unit, code: TokenErrorCode) = this()
   def this(message: String, code: String, uri: String) = this()
+  def this(message: String, code: Unit, uri: String) = this()
   def this(message: String, code: TokenErrorCode, uri: String) = this()
-  def this(
-    message: js.UndefOr[scala.Nothing],
-    code: js.UndefOr[scala.Nothing],
-    uri: js.UndefOr[scala.Nothing],
-    status: Double
-  ) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: js.UndefOr[scala.Nothing], uri: String, status: Double) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String, uri: String, status: Double) = this()
-  def this(
-    message: js.UndefOr[scala.Nothing],
-    code: TokenErrorCode,
-    uri: js.UndefOr[scala.Nothing],
-    status: Double
-  ) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: TokenErrorCode, uri: String, status: Double) = this()
-  def this(message: String, code: js.UndefOr[scala.Nothing], uri: js.UndefOr[scala.Nothing], status: Double) = this()
-  def this(message: String, code: js.UndefOr[scala.Nothing], uri: String, status: Double) = this()
-  def this(message: String, code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
+  def this(message: Unit, code: String, uri: String) = this()
+  def this(message: Unit, code: Unit, uri: String) = this()
+  def this(message: Unit, code: TokenErrorCode, uri: String) = this()
   def this(message: String, code: String, uri: String, status: Double) = this()
-  def this(message: String, code: TokenErrorCode, uri: js.UndefOr[scala.Nothing], status: Double) = this()
+  def this(message: String, code: String, uri: Unit, status: Double) = this()
+  def this(message: String, code: Unit, uri: String, status: Double) = this()
+  def this(message: String, code: Unit, uri: Unit, status: Double) = this()
   def this(message: String, code: TokenErrorCode, uri: String, status: Double) = this()
+  def this(message: String, code: TokenErrorCode, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: String, uri: String, status: Double) = this()
+  def this(message: Unit, code: String, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: Unit, uri: String, status: Double) = this()
+  def this(message: Unit, code: Unit, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: TokenErrorCode, uri: String, status: Double) = this()
+  def this(message: Unit, code: TokenErrorCode, uri: Unit, status: Double) = this()
 }

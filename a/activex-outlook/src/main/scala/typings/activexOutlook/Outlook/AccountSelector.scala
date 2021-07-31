@@ -2,24 +2,22 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSelector extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
   @JSName("Outlook.AccountSelector_typekey")
-  var OutlookDotAccountSelector_typekey: AccountSelector = js.native
+  var OutlookDotAccountSelector_typekey: AccountSelector
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SelectedAccount: Account = js.native
+  val SelectedAccount: Account
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object AccountSelector {
   

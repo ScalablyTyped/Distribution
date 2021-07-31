@@ -3,17 +3,15 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.anon.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRulerControlParameters extends StObject {
   
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
-  var options: js.UndefOr[Position] = js.native
+  var options: js.UndefOr[Position] = js.undefined
   
-  var state: js.UndefOr[js.Object] = js.native
+  var state: js.UndefOr[js.Object] = js.undefined
 }
 object IRulerControlParameters {
   

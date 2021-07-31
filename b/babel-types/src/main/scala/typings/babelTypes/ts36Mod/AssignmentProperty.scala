@@ -3,24 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ObjectProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AssignmentProperty extends Node {
+trait AssignmentProperty
+  extends StObject
+     with Node {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var decorators: js.UndefOr[js.Array[Decorator_]] = js.native
+  var decorators: js.UndefOr[js.Array[Decorator_]] = js.undefined
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var shorthand: Boolean = js.native
+  var shorthand: Boolean
   
   @JSName("type")
-  var type_AssignmentProperty: ObjectProperty = js.native
+  var type_AssignmentProperty: ObjectProperty
   
-  var value: Pattern = js.native
+  var value: Pattern
 }
 object AssignmentProperty {
   
@@ -32,11 +32,10 @@ object AssignmentProperty {
     loc: SourceLocation,
     shorthand: Boolean,
     start: Double,
-    `type`: ObjectProperty,
     value: Pattern
   ): AssignmentProperty = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectProperty")
     __obj.asInstanceOf[AssignmentProperty]
   }
   

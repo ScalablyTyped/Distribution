@@ -2,15 +2,13 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaValueMapValEntry extends StObject {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[SchemaMapValue] = js.native
+  var value: js.UndefOr[SchemaMapValue] = js.undefined
 }
 object SchemaValueMapValEntry {
   

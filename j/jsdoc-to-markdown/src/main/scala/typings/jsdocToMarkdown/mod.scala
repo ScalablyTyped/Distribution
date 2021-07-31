@@ -2,75 +2,67 @@ package typings.jsdocToMarkdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsdoc-to-markdown", "clear")
+  @JSImport("jsdoc-to-markdown", JSImport.Namespace)
   @js.native
-  def clear(): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsdoc-to-markdown", "getJsdocData")
-  @js.native
-  def getJsdocData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = js.native
+  @scala.inline
+  def clear(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("jsdoc-to-markdown", "getJsdocDataSync")
-  @js.native
-  def getJsdocDataSync(options: JsdocOptions): js.Array[js.Object] = js.native
+  @scala.inline
+  def getJsdocData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsdocData")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @JSImport("jsdoc-to-markdown", "getNamepaths")
-  @js.native
-  def getNamepaths(options: JsdocOptions): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getJsdocDataSync(options: JsdocOptions): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsdocDataSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
-  @JSImport("jsdoc-to-markdown", "getTemplateData")
-  @js.native
-  def getTemplateData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = js.native
+  @scala.inline
+  def getNamepaths(options: JsdocOptions): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamepaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("jsdoc-to-markdown", "getTemplateDataSync")
-  @js.native
-  def getTemplateDataSync(options: JsdocOptions): js.Array[js.Object] = js.native
+  @scala.inline
+  def getTemplateData(options: JsdocOptions): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateData")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @JSImport("jsdoc-to-markdown", "render")
-  @js.native
-  def render(options: JsdocOptions): js.Promise[String] = js.native
-  @JSImport("jsdoc-to-markdown", "render")
-  @js.native
-  def render(options: RenderOptions): js.Promise[String] = js.native
+  @scala.inline
+  def getTemplateDataSync(options: JsdocOptions): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateDataSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
-  @JSImport("jsdoc-to-markdown", "renderSync")
-  @js.native
-  def renderSync(options: JsdocOptions): String = js.native
-  @JSImport("jsdoc-to-markdown", "renderSync")
-  @js.native
-  def renderSync(options: RenderOptions): String = js.native
+  @scala.inline
+  def render(options: JsdocOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def render(options: RenderOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def renderSync(options: JsdocOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderSync(options: RenderOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait JsdocOptions extends StObject {
     
     /**
       * The path to the jsdoc configuration file.
       *  Default: path/to/jsdoc/conf.json.
       */
-    var configure: js.UndefOr[String] = js.native
+    var configure: js.UndefOr[String] = js.undefined
     
     /**
       * One or more filenames to process.
       * Accepts globs (e.g. *.js). Either files, source or data must be supplied.
       */
-    var files: String | js.Array[String] = js.native
+    var files: String | js.Array[String]
     
     /**
       * By default results are cached to speed up repeat invocations.
       * Set to true to disable this.
       */
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string containing source code to process.
       * Either files, source or data must be supplied.
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object JsdocOptions {
     
@@ -137,14 +129,13 @@ object mod {
     def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
   }
   
-  @js.native
   trait RenderOptions extends StObject {
     
     /**
       * Raw template data to use. Useful when you already have template data, obtained from .getTemplateData.
       * Either files, source or data must be supplied.
       */
-    var data: js.UndefOr[js.Array[js.Object]] = js.native
+    var data: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     /**
       * Specifies the default language used in '@example' blocks (for syntax-highlighting purposes).
@@ -154,30 +145,30 @@ object mod {
       * for any '@example' by specifying the @lang subtag,
       * e.g @example @lang hbs. Specifying @example @lang off will disable code blocks for that example.
       */
-    var exampleLang: js.UndefOr[String] = js.native
+    var exampleLang: js.UndefOr[String] = js.undefined
     
-    var globalIndexFormat: js.UndefOr[StyleListFormat] = js.native
+    var globalIndexFormat: js.UndefOr[StyleListFormat] = js.undefined
     
     /**
       * The initial heading depth.
       * For example, with a value of 2 the top-level markdown headings look like "## The heading".
       */
-    var headingDepth: js.UndefOr[Double] = js.native
+    var headingDepth: js.UndefOr[Double] = js.undefined
     
     /**
       * handlebars helper files to override or extend the default set.
       */
-    var helper: js.UndefOr[String | js.Array[String]] = js.native
+    var helper: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var memberIndexFormat: js.UndefOr[MemberIndexFormat] = js.native
+    var memberIndexFormat: js.UndefOr[MemberIndexFormat] = js.undefined
     
-    var moduleIndexFormat: js.UndefOr[StyleListFormat] = js.native
+    var moduleIndexFormat: js.UndefOr[StyleListFormat] = js.undefined
     
     /**
       * Format identifier names in the code style,
       * (i.e. format using backticks or <code></code>).
       */
-    var nameFormat: js.UndefOr[String] = js.native
+    var nameFormat: js.UndefOr[String] = js.undefined
     
     /**
       * By default, dmd generates github-flavoured markdown.
@@ -185,36 +176,36 @@ object mod {
       * If your generated docs look incorrect on sites other than Github
       * (e.g. npmjs.org) try enabling this option to disable Github-specific syntax.
       */
-    var noGfm: js.UndefOr[Boolean] = js.native
+    var noGfm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Two options to render parameter lists: 'list' or 'table' (default).
       * Table format works well in most cases but switch to list if things begin to look crowded / squashed.
       */
-    var paramListFormat: js.UndefOr[RenderListFormat] = js.native
+    var paramListFormat: js.UndefOr[RenderListFormat] = js.undefined
     
     /**
       * handlebars partial files to override or extend the default set.
       */
-    var partial: js.UndefOr[String | js.Array[String]] = js.native
+    var partial: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Use an installed package containing helper and/or partial overrides.
       */
-    var plugin: js.UndefOr[String | js.Array[String]] = js.native
+    var plugin: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var propertyListFormat: js.UndefOr[RenderListFormat] = js.native
+    var propertyListFormat: js.UndefOr[RenderListFormat] = js.undefined
     
     /**
       * Put <hr> breaks between identifiers. Improves readability on bulky docs.
       */
-    var seperators: js.UndefOr[Boolean] = js.native
+    var seperators: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The template the supplied documentation will be rendered into.
       * Use the default or supply your own template for full control over the output.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object RenderOptions {
     

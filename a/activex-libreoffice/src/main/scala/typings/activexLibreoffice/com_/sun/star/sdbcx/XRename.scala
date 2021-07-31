@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This is a very desirable feature which is not supported by all databases. There is no standard SQL statement provided for this feature.
   */
-@js.native
-trait XRename extends XInterface {
+trait XRename
+  extends StObject
+     with XInterface {
   
   /**
     * is intended to alter the name of a object.
     * @param newName the new name
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def rename(newName: String): Unit = js.native
+  def rename(newName: String): Unit
 }
 object XRename {
   

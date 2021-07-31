@@ -20,33 +20,31 @@ import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PogProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var bgColor: js.UndefOr[transparent | darkGray | transparentDarkGray | gray | lightGray | white | red] = js.native
+  var bgColor: js.UndefOr[transparent | darkGray | transparentDarkGray | gray | lightGray | white | red] = js.undefined
   
-  var dangerouslySetSvgPath: js.UndefOr[Path] = js.native
+  var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
   
-  var focused: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.undefined
   
-  var hovered: js.UndefOr[Boolean] = js.native
+  var hovered: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Icons] = js.native
+  var icon: js.UndefOr[Icons] = js.undefined
   
-  var iconColor: js.UndefOr[gray | darkGray | red | white] = js.native
+  var iconColor: js.UndefOr[gray | darkGray | red | white] = js.undefined
   
-  var padding: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.native
+  var padding: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[xs | sm | md | lg | xl] = js.native
+  var size: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
 }
 object PogProps {
   

@@ -2,68 +2,66 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base type for all the objects included in the client-side object model.
   */
-@js.native
 trait ASPxClientControlBase extends StObject {
   
   /** @deprecated Use the GetVisible method instead. */
   /**
     * Returns a value specifying whether a control is displayed.
     */
-  def GetClientVisible(): Boolean = js.native
+  def GetClientVisible(): Boolean
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
-  def GetMainElement(): js.Any = js.native
+  def GetMainElement(): js.Any
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
-  def GetParentControl(): js.Any = js.native
+  def GetParentControl(): js.Any
   
   /**
     * Returns a value specifying whether a control is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Returns a value that determines whether a callback request sent by a web control is being currently processed on the server side.
     */
-  def InCallback(): Boolean = js.native
+  def InCallback(): Boolean
   
   /**
     * Occurs on the client side after the control has been initialized.
     */
-  var Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]] = js.native
+  var Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]]
   
   /**
     * Specifies the text that Assistive Technologies (screen readers or braille display, for example) will provide to a user.
     * @param message A String value that specifies a text.
     */
-  def SendMessageToAssistiveTechnology(message: String): Unit = js.native
+  def SendMessageToAssistiveTechnology(message: String): Unit
   
   /** @deprecated Use the SetVisible method instead. */
   /**
     * Specifies whether a control is displayed.
     */
-  def SetClientVisible(visible: Boolean): Unit = js.native
+  def SetClientVisible(visible: Boolean): Unit
   
   /**
     * Specifies whether a control is displayed.
     * @param visible true to make a control visible; false to make it hidden.
     */
-  def SetVisible(visible: Boolean): Unit = js.native
+  def SetVisible(visible: Boolean): Unit
   
   /**
     * Gets the unique, hierarchically-qualified identifier for the control.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientControlBase {
   

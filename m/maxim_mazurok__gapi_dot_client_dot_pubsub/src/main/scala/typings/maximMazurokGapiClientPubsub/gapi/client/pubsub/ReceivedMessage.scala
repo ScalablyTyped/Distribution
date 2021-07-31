@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReceivedMessage extends StObject {
   
   /** This ID can be used to acknowledge the received message. */
-  var ackId: js.UndefOr[String] = js.native
+  var ackId: js.UndefOr[String] = js.undefined
   
   /**
     * The approximate number of times that Cloud Pub/Sub has attempted to deliver the associated message to a subscriber. More precisely, this is 1 + (number of NACKs) + (number of
@@ -17,10 +15,10 @@ trait ReceivedMessage extends StObject {
     * ack_deadline. Note that ack_deadline is initially Subscription.ackDeadlineSeconds, but may get extended automatically by the client library. Upon the first delivery of a given
     * message, `delivery_attempt` will have a value of 1. The value is calculated at best effort and is approximate. If a DeadLetterPolicy is not set on the subscription, this will be 0.
     */
-  var deliveryAttempt: js.UndefOr[Double] = js.native
+  var deliveryAttempt: js.UndefOr[Double] = js.undefined
   
   /** The message. */
-  var message: js.UndefOr[PubsubMessage] = js.native
+  var message: js.UndefOr[PubsubMessage] = js.undefined
 }
 object ReceivedMessage {
   

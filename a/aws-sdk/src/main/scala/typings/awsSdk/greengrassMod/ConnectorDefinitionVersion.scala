@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorDefinitionVersion extends StObject {
   
   /**
     * A list of references to connectors in this version, with their corresponding configuration settings.
     */
-  var Connectors: js.UndefOr[listOfConnector] = js.native
+  var Connectors: js.UndefOr[listOfConnector] = js.undefined
 }
 object ConnectorDefinitionVersion {
   

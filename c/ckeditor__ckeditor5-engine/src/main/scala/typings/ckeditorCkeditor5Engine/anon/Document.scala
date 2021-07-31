@@ -2,23 +2,21 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  var document: typings.ckeditorCkeditor5Engine.mod.model.Document | Null = js.native
+  var document: typings.ckeditorCkeditor5Engine.mod.model.Document | Null
   
-  var padWithNoOps: Boolean = js.native
+  var padWithNoOps: Boolean
   
-  var useRelations: Boolean = js.native
+  var useRelations: Boolean
 }
 object Document {
   
   @scala.inline
   def apply(padWithNoOps: Boolean, useRelations: Boolean): Document = {
-    val __obj = js.Dynamic.literal(padWithNoOps = padWithNoOps.asInstanceOf[js.Any], useRelations = useRelations.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(padWithNoOps = padWithNoOps.asInstanceOf[js.Any], useRelations = useRelations.asInstanceOf[js.Any], document = null)
     __obj.asInstanceOf[Document]
   }
   

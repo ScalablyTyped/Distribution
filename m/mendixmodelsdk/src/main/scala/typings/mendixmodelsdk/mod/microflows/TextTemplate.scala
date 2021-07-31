@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.pagesMod.pages.PageSettings
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.TextTemplate")
@@ -38,9 +37,8 @@ object TextTemplate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.TextTemplate.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate]
   
   /**
     * Creates and returns a new TextTemplate instance in the SDK and on the server.
@@ -51,9 +49,8 @@ object TextTemplate {
     *  8.12.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.TextTemplate.createInPageSettingsUnderTitleOverride")
-  @js.native
-  def createInPageSettingsUnderTitleOverride(container: PageSettings): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = js.native
+  @scala.inline
+  def createInPageSettingsUnderTitleOverride(container: PageSettings): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageSettingsUnderTitleOverride")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate]
   
   /**
     * Creates and returns a new TextTemplate instance in the SDK and on the server.
@@ -61,9 +58,8 @@ object TextTemplate {
     * of the parent ShowMessageAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.TextTemplate.createInShowMessageActionUnderTemplate")
-  @js.native
-  def createInShowMessageActionUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageAction): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = js.native
+  @scala.inline
+  def createInShowMessageActionUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.ShowMessageAction): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInShowMessageActionUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate]
   
   /**
     * Creates and returns a new TextTemplate instance in the SDK and on the server.
@@ -71,9 +67,8 @@ object TextTemplate {
     * of the parent ValidationFeedbackAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.TextTemplate.createInValidationFeedbackActionUnderFeedbackTemplate")
-  @js.native
-  def createInValidationFeedbackActionUnderFeedbackTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.ValidationFeedbackAction): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = js.native
+  @scala.inline
+  def createInValidationFeedbackActionUnderFeedbackTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.ValidationFeedbackAction): typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValidationFeedbackActionUnderFeedbackTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.TextTemplate.structureTypeName")

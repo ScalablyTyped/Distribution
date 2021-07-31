@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,38 +16,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait Contact extends StObject {
   
   /**
     * An array of strings containing the mailing and street addresses associated with the contact. Nullable.
     */
-  var addresses: js.Array[String] = js.native
+  var addresses: js.Array[String]
   
   /**
     * A string containing the name of the business associated with the contact. Nullable.
     */
-  var businessName: String = js.native
+  var businessName: String
   
   /**
     * An array of strings containing the SMTP email addresses associated with the contact. Nullable.
     */
-  var emailAddresses: js.Array[String] = js.native
+  var emailAddresses: js.Array[String]
   
   /**
     * A string containing the name of the person associated with the contact. Nullable.
     */
-  var personName: String = js.native
+  var personName: String
   
   /**
     * An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
     */
-  var phoneNumbers: js.Array[PhoneNumber] = js.native
+  var phoneNumbers: js.Array[PhoneNumber]
   
   /**
     * An array of strings containing the Internet URLs associated with the contact. Nullable.
     */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object Contact {
   

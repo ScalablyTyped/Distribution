@@ -3,13 +3,11 @@ package typings.swiftclick
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwiftClickStatic extends StObject {
   
-  def attach(contextEl: Element): SwiftClickObject = js.native
+  def attach(contextEl: Element): SwiftClickObject
 }
 object SwiftClickStatic {
   

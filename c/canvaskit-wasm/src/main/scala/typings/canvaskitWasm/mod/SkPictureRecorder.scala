@@ -2,23 +2,23 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkPictureRecorder extends EmbindObject[SkPicture] {
+trait SkPictureRecorder
+  extends StObject
+     with EmbindObject[SkPicture] {
   
   /**
     * Returns a canvas on which to draw. When done drawing, call finishRecordingAsPicture()
     *
     * @param bounds - a rect to cull the results.
     */
-  def beginRecording(bounds: InputRect): SkCanvas = js.native
+  def beginRecording(bounds: InputRect): SkCanvas
   
   /**
     * Returns the captured draw commands as a picture and invalidates the canvas returned earlier.
     */
-  def finishRecordingAsPicture(): SkPicture = js.native
+  def finishRecordingAsPicture(): SkPicture
 }
 object SkPictureRecorder {
   

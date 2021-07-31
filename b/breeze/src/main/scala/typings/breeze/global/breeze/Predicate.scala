@@ -4,13 +4,13 @@ import typings.breeze.breeze.IRecursiveArray
 import typings.breeze.breeze.PredicateMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("breeze.Predicate")
 @js.native
 class Predicate ()
-  extends typings.breeze.breeze.Predicate {
+  extends StObject
+     with typings.breeze.breeze.Predicate {
   def this(anArray: IRecursiveArray[
         String | Double | typings.breeze.breeze.FilterQueryOpSymbol | typings.breeze.breeze.Predicate
       ]) = this()
@@ -34,6 +34,82 @@ class Predicate ()
     filterop2: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any
   ) = this()
+  
+  /* CompleteClass */
+  override def and(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def and(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = js.native
+  // for any/all clauses
+  /* CompleteClass */
+  override def and(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def and(
+    property: String,
+    filterop: typings.breeze.breeze.FilterQueryOpSymbol,
+    property2: String,
+    filterop2: typings.breeze.breeze.FilterQueryOpSymbol,
+    value: js.Any
+  ): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def and(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def and(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def and(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def and(
+    property: String,
+    operator: typings.breeze.breeze.FilterQueryOpSymbol,
+    value: js.Any,
+    valueIsLiteral: Boolean
+  ): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  @JSName("and")
+  var and_Original: PredicateMethod = js.native
+  
+  /* CompleteClass */
+  override def not(): typings.breeze.breeze.Predicate = js.native
+  
+  /* CompleteClass */
+  override def or(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def or(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = js.native
+  // for any/all clauses
+  /* CompleteClass */
+  override def or(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def or(
+    property: String,
+    filterop: typings.breeze.breeze.FilterQueryOpSymbol,
+    property2: String,
+    filterop2: typings.breeze.breeze.FilterQueryOpSymbol,
+    value: js.Any
+  ): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def or(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def or(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def or(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  override def or(
+    property: String,
+    operator: typings.breeze.breeze.FilterQueryOpSymbol,
+    value: js.Any,
+    valueIsLiteral: Boolean
+  ): typings.breeze.breeze.Predicate = js.native
+  /* CompleteClass */
+  @JSName("or")
+  var or_Original: PredicateMethod = js.native
+  
+  /* CompleteClass */
+  override def toFunction(): js.Function = js.native
+  
+  /* CompleteClass */
+  override def toJSON(): String = js.native
+  
+  /* CompleteClass */
+  override def validate(entityType: typings.breeze.breeze.EntityType): Unit = js.native
 }
 /* static members */
 object Predicate {
@@ -45,134 +121,108 @@ object Predicate {
   @JSGlobal("breeze.Predicate.and")
   @js.native
   def and: PredicateMethod = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
-  def and(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
-  def and(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = js.native
+  @scala.inline
+  def and(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(predicates.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def and(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(predicates.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
   // for any/all clauses
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
-  def and(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
+  @scala.inline
+  def and(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(property.asInstanceOf[js.Any], filterop.asInstanceOf[js.Any], property2.asInstanceOf[js.Any], filterop2.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
   def and(
     property: String,
     filterop: typings.breeze.breeze.FilterQueryOpSymbol,
     property2: String,
     filterop2: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any
-  ): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
-  def and(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
-  def and(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
-  def and(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.and")
-  @js.native
+  ): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(property.asInstanceOf[js.Any], filterop.asInstanceOf[js.Any], property2.asInstanceOf[js.Any], filterop2.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def and(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def and(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], valueIsLiteral.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def and(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
   def and(
     property: String,
     operator: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any,
     valueIsLiteral: Boolean
-  ): typings.breeze.breeze.Predicate = js.native
+  ): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], valueIsLiteral.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
   @scala.inline
   def and_=(x: PredicateMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("and")(x.asInstanceOf[js.Any])
   
   @JSGlobal("breeze.Predicate.create")
   @js.native
   def create: PredicateMethod = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
-  def create(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
-  def create(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = js.native
+  @scala.inline
+  def create(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(predicates.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def create(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(predicates.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
   // for any/all clauses
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
-  def create(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
+  @scala.inline
+  def create(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(property.asInstanceOf[js.Any], filterop.asInstanceOf[js.Any], property2.asInstanceOf[js.Any], filterop2.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
   def create(
     property: String,
     filterop: typings.breeze.breeze.FilterQueryOpSymbol,
     property2: String,
     filterop2: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any
-  ): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
-  def create(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
-  def create(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
-  def create(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.create")
-  @js.native
+  ): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(property.asInstanceOf[js.Any], filterop.asInstanceOf[js.Any], property2.asInstanceOf[js.Any], filterop2.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def create(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def create(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], valueIsLiteral.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def create(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
   def create(
     property: String,
     operator: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any,
     valueIsLiteral: Boolean
-  ): typings.breeze.breeze.Predicate = js.native
+  ): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], valueIsLiteral.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
   @scala.inline
   def create_=(x: PredicateMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("breeze.Predicate.isPredicate")
-  @js.native
-  def isPredicate(o: js.Any): Boolean = js.native
+  @scala.inline
+  def isPredicate(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredicate")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("breeze.Predicate.not")
-  @js.native
-  def not(predicate: typings.breeze.breeze.Predicate): typings.breeze.breeze.Predicate = js.native
+  @scala.inline
+  def not(predicate: typings.breeze.breeze.Predicate): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(predicate.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
   
   @JSGlobal("breeze.Predicate.or")
   @js.native
   def or: PredicateMethod = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
-  def or(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
-  def or(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = js.native
+  @scala.inline
+  def or(predicates: typings.breeze.breeze.Predicate*): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(predicates.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def or(predicates: js.Array[typings.breeze.breeze.Predicate]): typings.breeze.breeze.Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(predicates.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.Predicate]
   // for any/all clauses
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
-  def or(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
+  @scala.inline
+  def or(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(property.asInstanceOf[js.Any], filterop.asInstanceOf[js.Any], property2.asInstanceOf[js.Any], filterop2.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
   def or(
     property: String,
     filterop: typings.breeze.breeze.FilterQueryOpSymbol,
     property2: String,
     filterop2: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any
-  ): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
-  def or(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
-  def or(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
-  def or(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = js.native
-  @JSGlobal("breeze.Predicate.or")
-  @js.native
+  ): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(property.asInstanceOf[js.Any], filterop.asInstanceOf[js.Any], property2.asInstanceOf[js.Any], filterop2.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def or(property: String, operator: String, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def or(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], valueIsLiteral.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
+  def or(property: String, operator: typings.breeze.breeze.FilterQueryOpSymbol, value: js.Any): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
+  @scala.inline
   def or(
     property: String,
     operator: typings.breeze.breeze.FilterQueryOpSymbol,
     value: js.Any,
     valueIsLiteral: Boolean
-  ): typings.breeze.breeze.Predicate = js.native
+  ): typings.breeze.breeze.Predicate = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(property.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], valueIsLiteral.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.Predicate]
   @scala.inline
   def or_=(x: PredicateMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("or")(x.asInstanceOf[js.Any])
 }

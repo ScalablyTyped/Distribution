@@ -6,91 +6,73 @@ import typings.wordpressEditPost.mod.MetaboxDescriptor
 import typings.wordpressEditPost.mod.MetaboxLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getActiveGeneralSidebarName")
+  @JSImport("@wordpress/edit-post/store/selectors", JSImport.Namespace)
   @js.native
-  def getActiveGeneralSidebarName(): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getActiveMetaBoxLocations")
-  @js.native
-  def getActiveMetaBoxLocations(): js.Array[MetaboxLocation] = js.native
+  @scala.inline
+  def getActiveGeneralSidebarName(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveGeneralSidebarName")().asInstanceOf[String | Null]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getAllMetaBoxes")
-  @js.native
-  def getAllMetaBoxes(): js.Array[MetaboxDescriptor] = js.native
+  @scala.inline
+  def getActiveMetaBoxLocations(): js.Array[MetaboxLocation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveMetaBoxLocations")().asInstanceOf[js.Array[MetaboxLocation]]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getEditorMode")
-  @js.native
-  def getEditorMode(): EditorMode = js.native
+  @scala.inline
+  def getAllMetaBoxes(): js.Array[MetaboxDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllMetaBoxes")().asInstanceOf[js.Array[MetaboxDescriptor]]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getMetaBoxesPerLocation")
-  @js.native
-  def getMetaBoxesPerLocation(location: MetaboxLocation): js.UndefOr[js.Array[MetaboxDescriptor]] = js.native
+  @scala.inline
+  def getEditorMode(): EditorMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorMode")().asInstanceOf[EditorMode]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getPreference")
-  @js.native
-  def getPreference[T](preferenceKey: String): js.UndefOr[T] = js.native
-  @JSImport("@wordpress/edit-post/store/selectors", "getPreference")
-  @js.native
-  def getPreference[T](preferenceKey: String, defaultValue: T): T | Double | String = js.native
+  @scala.inline
+  def getMetaBoxesPerLocation(location: MetaboxLocation): js.UndefOr[js.Array[MetaboxDescriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaBoxesPerLocation")(location.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[MetaboxDescriptor]]]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "getPreferences")
-  @js.native
-  def getPreferences(): Record[String, _] = js.native
+  @scala.inline
+  def getPreference[T](preferenceKey: String): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreference")(preferenceKey.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def getPreference[T](preferenceKey: String, defaultValue: T): T | Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreference")(preferenceKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T | Double | String]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "hasMetaBoxes")
-  @js.native
-  def hasMetaBoxes(): Boolean = js.native
+  @scala.inline
+  def getPreferences(): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreferences")().asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isEditorPanelEnabled")
-  @js.native
-  def isEditorPanelEnabled(panelName: String): Boolean = js.native
+  @scala.inline
+  def hasMetaBoxes(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMetaBoxes")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isEditorPanelOpened")
-  @js.native
-  def isEditorPanelOpened(panelName: String): Boolean = js.native
+  @scala.inline
+  def isEditorPanelEnabled(panelName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorPanelEnabled")(panelName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isEditorPanelRemoved")
-  @js.native
-  def isEditorPanelRemoved(panelName: String): Boolean = js.native
+  @scala.inline
+  def isEditorPanelOpened(panelName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorPanelOpened")(panelName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isEditorSidebarOpened")
-  @js.native
-  def isEditorSidebarOpened(): Boolean = js.native
+  @scala.inline
+  def isEditorPanelRemoved(panelName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorPanelRemoved")(panelName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isFeatureActive")
-  @js.native
-  def isFeatureActive(feature: String): Boolean = js.native
+  @scala.inline
+  def isEditorSidebarOpened(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorSidebarOpened")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isMetaBoxLocationActive")
-  @js.native
-  def isMetaBoxLocationActive(location: MetaboxLocation): Boolean = js.native
+  @scala.inline
+  def isFeatureActive(feature: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFeatureActive")(feature.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isMetaBoxLocationVisible")
-  @js.native
-  def isMetaBoxLocationVisible(location: MetaboxLocation): Boolean = js.native
+  @scala.inline
+  def isMetaBoxLocationActive(location: MetaboxLocation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMetaBoxLocationActive")(location.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isModalActive")
-  @js.native
-  def isModalActive(modalName: String): Boolean = js.native
+  @scala.inline
+  def isMetaBoxLocationVisible(location: MetaboxLocation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMetaBoxLocationVisible")(location.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isPluginItemPinned")
-  @js.native
-  def isPluginItemPinned(pluginName: String): Boolean = js.native
+  @scala.inline
+  def isModalActive(modalName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModalActive")(modalName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isPluginSidebarOpened")
-  @js.native
-  def isPluginSidebarOpened(): Boolean = js.native
+  @scala.inline
+  def isPluginItemPinned(pluginName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPluginItemPinned")(pluginName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isPublishSidebarOpened")
-  @js.native
-  def isPublishSidebarOpened(): Boolean = js.native
+  @scala.inline
+  def isPluginSidebarOpened(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPluginSidebarOpened")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/edit-post/store/selectors", "isSavingMetaBoxes")
-  @js.native
-  def isSavingMetaBoxes(): Boolean = js.native
+  @scala.inline
+  def isPublishSidebarOpened(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPublishSidebarOpened")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSavingMetaBoxes(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSavingMetaBoxes")().asInstanceOf[Boolean]
 }

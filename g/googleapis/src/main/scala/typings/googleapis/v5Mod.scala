@@ -24,7 +24,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v5Mod {
@@ -86,7 +85,7 @@ object v5Mod {
         */
       def runpagespeed(): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV5] = js.native
       def runpagespeed(callback: BodyResponseCallback[SchemaPagespeedApiPagespeedResponseV5]): Unit = js.native
-      def runpagespeed(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV5] = js.native
+      def runpagespeed(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV5] = js.native
       def runpagespeed(params: ParamsResourcePagespeedapiRunpagespeed): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV5] = js.native
       def runpagespeed(
         params: ParamsResourcePagespeedapiRunpagespeed,
@@ -105,16 +104,17 @@ object v5Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v5 = js.native
+      var version: v5
     }
     object Options {
       
       @scala.inline
-      def apply(version: v5): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v5")
         __obj.asInstanceOf[Options]
       }
       
@@ -126,45 +126,46 @@ object v5Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourcePagespeedapiRunpagespeed extends StandardParameters {
+    trait ParamsResourcePagespeedapiRunpagespeed
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * A Lighthouse category to run; if none are given, only Performance
         * category will be run
         */
-      var category: js.UndefOr[js.Array[String]] = js.native
+      var category: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The locale used to localize formatted results
         */
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
       /**
         * The analysis strategy (desktop or mobile) to use, and desktop is the
         * default
         */
-      var strategy: js.UndefOr[String] = js.native
+      var strategy: js.UndefOr[String] = js.undefined
       
       /**
         * The URL to fetch and analyze
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
       /**
         * Campaign name for analytics.
         */
-      var utm_campaign: js.UndefOr[String] = js.native
+      var utm_campaign: js.UndefOr[String] = js.undefined
       
       /**
         * Campaign source for analytics.
         */
-      var utm_source: js.UndefOr[String] = js.native
+      var utm_source: js.UndefOr[String] = js.undefined
     }
     object ParamsResourcePagespeedapiRunpagespeed {
       
@@ -224,55 +225,53 @@ object v5Mod {
       }
     }
     
-    @js.native
     trait SchemaGoogleprotobufValue extends StObject
     
-    @js.native
     trait SchemaLighthouseAuditResultV5 extends StObject {
       
       /**
         * The description of the audit.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * Freeform details section of the audit.
         */
-      var details: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var details: js.UndefOr[StringDictionary[js.Any]] = js.undefined
       
       /**
         * The value that should be displayed on the UI for this audit.
         */
-      var displayValue: js.UndefOr[String] = js.native
+      var displayValue: js.UndefOr[String] = js.undefined
       
       /**
         * An error message from a thrown error inside the audit.
         */
-      var errorMessage: js.UndefOr[String] = js.native
+      var errorMessage: js.UndefOr[String] = js.undefined
       
       /**
         * An explanation of the errors in the audit.
         */
-      var explanation: js.UndefOr[String] = js.native
+      var explanation: js.UndefOr[String] = js.undefined
       
       /**
         * The audit&#39;s id.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var score: js.UndefOr[js.Any] = js.native
+      var score: js.UndefOr[js.Any] = js.undefined
       
       /**
         * The enumerated score display mode.
         */
-      var scoreDisplayMode: js.UndefOr[String] = js.native
+      var scoreDisplayMode: js.UndefOr[String] = js.undefined
       
       /**
         * The human readable title.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var warnings: js.UndefOr[js.Any] = js.native
+      var warnings: js.UndefOr[js.Any] = js.undefined
     }
     object SchemaLighthouseAuditResultV5 {
       
@@ -347,35 +346,34 @@ object v5Mod {
       }
     }
     
-    @js.native
     trait SchemaLighthouseCategoryV5 extends StObject {
       
       /**
         * An array of references to all the audit members of this category.
         */
-      var auditRefs: js.UndefOr[js.Array[Group]] = js.native
+      var auditRefs: js.UndefOr[js.Array[Group]] = js.undefined
       
       /**
         * A more detailed description of the category and its importance.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * The string identifier of the category.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * A description for the manual audits in the category.
         */
-      var manualDescription: js.UndefOr[String] = js.native
+      var manualDescription: js.UndefOr[String] = js.undefined
       
-      var score: js.UndefOr[js.Any] = js.native
+      var score: js.UndefOr[js.Any] = js.undefined
       
       /**
         * The human-friendly name of the category.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SchemaLighthouseCategoryV5 {
       
@@ -429,79 +427,78 @@ object v5Mod {
       }
     }
     
-    @js.native
     trait SchemaLighthouseResultV5 extends StObject {
       
       /**
         * Map of audits in the LHR.
         */
-      var audits: js.UndefOr[StringDictionary[SchemaLighthouseAuditResultV5]] = js.native
+      var audits: js.UndefOr[StringDictionary[SchemaLighthouseAuditResultV5]] = js.undefined
       
       /**
         * Map of categories in the LHR.
         */
-      var categories: js.UndefOr[Accessibility] = js.native
+      var categories: js.UndefOr[Accessibility] = js.undefined
       
       /**
         * Map of category groups in the LHR.
         */
-      var categoryGroups: js.UndefOr[StringDictionary[DescriptionTitle]] = js.native
+      var categoryGroups: js.UndefOr[StringDictionary[DescriptionTitle]] = js.undefined
       
       /**
         * The configuration settings for this LHR.
         */
-      var configSettings: js.UndefOr[EmulatedFormFactor] = js.native
+      var configSettings: js.UndefOr[EmulatedFormFactor] = js.undefined
       
       /**
         * Environment settings that were used when making this LHR.
         */
-      var environment: js.UndefOr[BenchmarkIndex] = js.native
+      var environment: js.UndefOr[BenchmarkIndex] = js.undefined
       
       /**
         * The time that this run was fetched.
         */
-      var fetchTime: js.UndefOr[String] = js.native
+      var fetchTime: js.UndefOr[String] = js.undefined
       
       /**
         * The final resolved url that was audited.
         */
-      var finalUrl: js.UndefOr[String] = js.native
+      var finalUrl: js.UndefOr[String] = js.undefined
       
       /**
         * The internationalization strings that are required to render the LHR.
         */
-      var i18n: js.UndefOr[RendererFormattedStrings] = js.native
+      var i18n: js.UndefOr[RendererFormattedStrings] = js.undefined
       
       /**
         * The lighthouse version that was used to generate this LHR.
         */
-      var lighthouseVersion: js.UndefOr[String] = js.native
+      var lighthouseVersion: js.UndefOr[String] = js.undefined
       
       /**
         * The original requested url.
         */
-      var requestedUrl: js.UndefOr[String] = js.native
+      var requestedUrl: js.UndefOr[String] = js.undefined
       
       /**
         * List of all run warnings in the LHR. Will always output to at least `[]`.
         */
-      var runWarnings: js.UndefOr[js.Array[_]] = js.native
+      var runWarnings: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * A top-level error message that, if present, indicates a serious enough
         * problem that this Lighthouse result may need to be discarded.
         */
-      var runtimeError: js.UndefOr[CodeMessage] = js.native
+      var runtimeError: js.UndefOr[CodeMessage] = js.undefined
       
       /**
         * Timing information for this LHR.
         */
-      var timing: js.UndefOr[Total] = js.native
+      var timing: js.UndefOr[Total] = js.undefined
       
       /**
         * The user agent that was used to run this LHR.
         */
-      var userAgent: js.UndefOr[String] = js.native
+      var userAgent: js.UndefOr[String] = js.undefined
     }
     object SchemaLighthouseResultV5 {
       
@@ -575,7 +572,7 @@ object v5Mod {
         def setRequestedUrlUndefined: Self = StObject.set(x, "requestedUrl", js.undefined)
         
         @scala.inline
-        def setRunWarnings(value: js.Array[_]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
+        def setRunWarnings(value: js.Array[js.Any]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setRunWarningsUndefined: Self = StObject.set(x, "runWarnings", js.undefined)
@@ -603,19 +600,18 @@ object v5Mod {
       }
     }
     
-    @js.native
     trait SchemaPagespeedApiLoadingExperienceV5 extends StObject {
       
       /**
         * The url, pattern or origin which the metrics are on.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var initial_url: js.UndefOr[String] = js.native
+      var initial_url: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[StringDictionary[Percentile]] = js.native
+      var metrics: js.UndefOr[StringDictionary[Percentile]] = js.undefined
       
-      var overall_category: js.UndefOr[String] = js.native
+      var overall_category: js.UndefOr[String] = js.undefined
     }
     object SchemaPagespeedApiLoadingExperienceV5 {
       
@@ -654,49 +650,48 @@ object v5Mod {
       }
     }
     
-    @js.native
     trait SchemaPagespeedApiPagespeedResponseV5 extends StObject {
       
       /**
         * The UTC timestamp of this analysis.
         */
-      var analysisUTCTimestamp: js.UndefOr[String] = js.native
+      var analysisUTCTimestamp: js.UndefOr[String] = js.undefined
       
       /**
         * The captcha verify result
         */
-      var captchaResult: js.UndefOr[String] = js.native
+      var captchaResult: js.UndefOr[String] = js.undefined
       
       /**
         * Canonicalized and final URL for the document, after following page
         * redirects (if any).
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * Kind of result.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Lighthouse response for the audit url as an object.
         */
-      var lighthouseResult: js.UndefOr[SchemaLighthouseResultV5] = js.native
+      var lighthouseResult: js.UndefOr[SchemaLighthouseResultV5] = js.undefined
       
       /**
         * Metrics of end users&#39; page loading experience.
         */
-      var loadingExperience: js.UndefOr[SchemaPagespeedApiLoadingExperienceV5] = js.native
+      var loadingExperience: js.UndefOr[SchemaPagespeedApiLoadingExperienceV5] = js.undefined
       
       /**
         * Metrics of the aggregated page loading experience of the origin
         */
-      var originLoadingExperience: js.UndefOr[SchemaPagespeedApiLoadingExperienceV5] = js.native
+      var originLoadingExperience: js.UndefOr[SchemaPagespeedApiLoadingExperienceV5] = js.undefined
       
       /**
         * The version of PageSpeed used to generate these results.
         */
-      var version: js.UndefOr[Major] = js.native
+      var version: js.UndefOr[Major] = js.undefined
     }
     object SchemaPagespeedApiPagespeedResponseV5 {
       
@@ -759,46 +754,45 @@ object v5Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

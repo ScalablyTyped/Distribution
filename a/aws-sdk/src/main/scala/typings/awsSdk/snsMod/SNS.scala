@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,7 +37,7 @@ trait SNS extends Service {
   ): Request[CheckIfPhoneNumberIsOptedOutResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_SNS: ConfigBase with ClientConfiguration = js.native
+  var config_SNS: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Verifies an endpoint owner's intent to receive messages by validating the token sent to the endpoint by an earlier Subscribe action. If the token is valid, the action creates a new subscription and returns its Amazon Resource Name (ARN). This call requires an AWS signature only when the AuthenticateOnUnsubscribe flag is set to "true".

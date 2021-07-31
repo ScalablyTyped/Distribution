@@ -2,12 +2,13 @@ package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
 @js.native
-trait Select extends Widget {
+trait Select
+  extends StObject
+     with Widget {
   
   // string (maybe)
   def addChild(widget: Widget): Unit = js.native

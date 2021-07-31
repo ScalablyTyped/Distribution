@@ -2,7 +2,6 @@ package typings.teddy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,28 +10,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("teddy", "cacheRenders")
-  @js.native
-  def cacheRenders(b: Boolean): Unit = js.native
+  @scala.inline
+  def cacheRenders(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheRenders")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "compile")
-  @js.native
-  def compile(template: String): String = js.native
+  @scala.inline
+  def compile(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("teddy", "compileAtEveryRender")
-  @js.native
-  def compileAtEveryRender(b: Boolean): Unit = js.native
+  @scala.inline
+  def compileAtEveryRender(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compileAtEveryRender")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "flushCache")
-  @js.native
-  def flushCache(template: String): Unit = js.native
-  @JSImport("teddy", "flushCache")
-  @js.native
-  def flushCache(template: String, model: js.Object): Unit = js.native
+  @scala.inline
+  def flushCache(template: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushCache")(template.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def flushCache(template: String, model: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flushCache")(template.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teddy", "minify")
-  @js.native
-  def minify(b: Boolean): Unit = js.native
+  @scala.inline
+  def minify(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("teddy", "params")
   @js.native
@@ -40,9 +33,8 @@ object mod {
   @scala.inline
   def params_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("params")(x.asInstanceOf[js.Any])
   
-  @JSImport("teddy", "render")
-  @js.native
-  def render(template: String, model: js.Object): String = js.native
+  @scala.inline
+  def render(template: String, model: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("teddy", "renderedTemplates")
   @js.native
@@ -50,40 +42,31 @@ object mod {
   @scala.inline
   def renderedTemplates_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderedTemplates")(x.asInstanceOf[js.Any])
   
-  @JSImport("teddy", "setCacheBlacklist")
-  @js.native
-  def setCacheBlacklist(templateArray: js.Array[String]): Unit = js.native
+  @scala.inline
+  def setCacheBlacklist(templateArray: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheBlacklist")(templateArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "setCacheWhitelist")
-  @js.native
-  def setCacheWhitelist(o: js.Object): Unit = js.native
+  @scala.inline
+  def setCacheWhitelist(o: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheWhitelist")(o.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "setDefaultCaches")
-  @js.native
-  def setDefaultCaches(n: Double): Unit = js.native
+  @scala.inline
+  def setDefaultCaches(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultCaches")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "setDefaultParams")
-  @js.native
-  def setDefaultParams(): Unit = js.native
+  @scala.inline
+  def setDefaultParams(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultParams")().asInstanceOf[Unit]
   
-  @JSImport("teddy", "setMaxCaches")
-  @js.native
-  def setMaxCaches(template: String, n: Double): Unit = js.native
+  @scala.inline
+  def setMaxCaches(template: String, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMaxCaches")(template.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("teddy", "setMaxPasses")
-  @js.native
-  def setMaxPasses(n: Double): Unit = js.native
+  @scala.inline
+  def setMaxPasses(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxPasses")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "setTemplateRoot")
-  @js.native
-  def setTemplateRoot(path: String): Unit = js.native
+  @scala.inline
+  def setTemplateRoot(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateRoot")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("teddy", "setVerbosity")
-  @js.native
-  def setVerbosity(n: String): Unit = js.native
-  @JSImport("teddy", "setVerbosity")
-  @js.native
-  def setVerbosity(n: Double): Unit = js.native
+  @scala.inline
+  def setVerbosity(n: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbosity")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setVerbosity(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbosity")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("teddy", "templates")
   @js.native

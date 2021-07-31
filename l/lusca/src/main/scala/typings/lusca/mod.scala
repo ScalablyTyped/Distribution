@@ -9,86 +9,74 @@ import typings.lusca.luscaBooleans.`false`
 import typings.lusca.luscaBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: LuscaOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("lusca", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("lusca", JSImport.Namespace)
-  @js.native
-  def apply(options: LuscaOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lusca", "csp")
-  @js.native
-  def csp(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("lusca", "csp")
-  @js.native
-  def csp(options: cspOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def csp(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def csp(options: cspOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "csrf")
-  @js.native
-  def csrf(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("lusca", "csrf")
-  @js.native
-  def csrf(options: csrfOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def csrf(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def csrf(options: csrfOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "hsts")
-  @js.native
-  def hsts(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("lusca", "hsts")
-  @js.native
-  def hsts(options: hstsOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def hsts(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def hsts(options: hstsOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "nosniff")
-  @js.native
-  def nosniff(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def nosniff(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("nosniff")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "p3p")
-  @js.native
-  def p3p(value: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def p3p(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("p3p")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "referrerPolicy")
-  @js.native
-  def referrerPolicy(value: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def referrerPolicy(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "xframe")
-  @js.native
-  def xframe(value: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def xframe(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xframe")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("lusca", "xssProtection")
-  @js.native
-  def xssProtection(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("lusca", "xssProtection")
-  @js.native
-  def xssProtection(options: xssProtectionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("lusca", "xssProtection")
-  @js.native
-  def xssProtection_true(options: `true`): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def xssProtection(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def xssProtection(options: xssProtectionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
+  @scala.inline
+  def xssProtection_true(options: `true`): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   /*~ Documentation declares that:
     *~ Setting any value to false will disable it.
     */
-  @js.native
   trait LuscaOptions extends StObject {
     
-    var csp: js.UndefOr[cspOptions | `false`] = js.native
+    var csp: js.UndefOr[cspOptions | `false`] = js.undefined
     
-    var csrf: js.UndefOr[csrfOptions | Boolean] = js.native
+    var csrf: js.UndefOr[csrfOptions | Boolean] = js.undefined
     
-    var hsts: js.UndefOr[hstsOptions | `false`] = js.native
+    var hsts: js.UndefOr[hstsOptions | `false`] = js.undefined
     
-    var nosniff: js.UndefOr[Boolean] = js.native
+    var nosniff: js.UndefOr[Boolean] = js.undefined
     
-    var p3p: js.UndefOr[String | `false`] = js.native
+    var p3p: js.UndefOr[String | `false`] = js.undefined
     
-    var referrerPolicy: js.UndefOr[String | `false`] = js.native
+    var referrerPolicy: js.UndefOr[String | `false`] = js.undefined
     
-    var xframe: js.UndefOr[String | `false`] = js.native
+    var xframe: js.UndefOr[String | `false`] = js.undefined
     
-    var xssProtection: js.UndefOr[xssProtectionOptions | Boolean] = js.native
+    var xssProtection: js.UndefOr[xssProtectionOptions | Boolean] = js.undefined
   }
   object LuscaOptions {
     
@@ -151,18 +139,17 @@ object mod {
     }
   }
   
-  @js.native
   trait cspOptions extends StObject {
     
-    var policy: js.UndefOr[String | js.Object | (js.Array[js.Object | String])] = js.native
+    var policy: js.UndefOr[String | js.Object | (js.Array[js.Object | String])] = js.undefined
     
-    var reportOnly: js.UndefOr[Boolean] = js.native
+    var reportOnly: js.UndefOr[Boolean] = js.undefined
     
-    var reportUri: js.UndefOr[String] = js.native
+    var reportUri: js.UndefOr[String] = js.undefined
     
-    var scriptNonce: js.UndefOr[Boolean] = js.native
+    var scriptNonce: js.UndefOr[Boolean] = js.undefined
     
-    var styleNonce: js.UndefOr[Boolean] = js.native
+    var styleNonce: js.UndefOr[Boolean] = js.undefined
   }
   object cspOptions {
     
@@ -210,20 +197,21 @@ object mod {
     }
   }
   
-  type csrfOptions = csrfOptionsBase with csrfOptionsAngularOrNonAngular with csrfOptionsBlacklistOrWhitelist
+  type csrfOptions = csrfOptionsBase & csrfOptionsAngularOrNonAngular & csrfOptionsBlacklistOrWhitelist
   
-  @js.native
-  trait csrfOptionsAngular extends csrfOptionsAngularOrNonAngular {
+  trait csrfOptionsAngular
+    extends StObject
+       with csrfOptionsAngularOrNonAngular {
     
-    var angular: `true` = js.native
+    var angular: `true`
     
-    var cookie: js.UndefOr[String | Options] = js.native
+    var cookie: js.UndefOr[String | Options] = js.undefined
   }
   object csrfOptionsAngular {
     
     @scala.inline
-    def apply(angular: `true`): csrfOptionsAngular = {
-      val __obj = js.Dynamic.literal(angular = angular.asInstanceOf[js.Any])
+    def apply(): csrfOptionsAngular = {
+      val __obj = js.Dynamic.literal(angular = true)
       __obj.asInstanceOf[csrfOptionsAngular]
     }
     
@@ -249,8 +237,8 @@ object mod {
   object csrfOptionsAngularOrNonAngular {
     
     @scala.inline
-    def csrfOptionsAngular(angular: `true`): typings.lusca.mod.csrfOptionsAngular = {
-      val __obj = js.Dynamic.literal(angular = angular.asInstanceOf[js.Any])
+    def csrfOptionsAngular(): typings.lusca.mod.csrfOptionsAngular = {
+      val __obj = js.Dynamic.literal(angular = true)
       __obj.asInstanceOf[typings.lusca.mod.csrfOptionsAngular]
     }
     
@@ -261,30 +249,29 @@ object mod {
     }
   }
   
-  @js.native
   trait csrfOptionsBase extends StObject {
     
     /**
       * The name of the response header containing the CSRF token
       * @default 'x-csrf-token'
       */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /**
       *  An object with create/validate methods for custom tokens
       */
-    var impl: js.UndefOr[js.Function0[_]] = js.native
+    var impl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * The name of the CSRF token in the model.
       * @default '_csrf'
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * @default '_csrfSecret'
       */
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
   }
   object csrfOptionsBase {
     
@@ -304,7 +291,7 @@ object mod {
       def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
       @scala.inline
-      def setImpl(value: () => _): Self = StObject.set(x, "impl", js.Any.fromFunction0(value))
+      def setImpl(value: () => js.Any): Self = StObject.set(x, "impl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setImplUndefined: Self = StObject.set(x, "impl", js.undefined)
@@ -323,12 +310,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait csrfOptionsBlacklist extends csrfOptionsBlacklistOrWhitelist {
+  trait csrfOptionsBlacklist
+    extends StObject
+       with csrfOptionsBlacklistOrWhitelist {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var whitelist: js.UndefOr[scala.Nothing] = js.native
+    var whitelist: js.UndefOr[scala.Nothing] = js.undefined
   }
   object csrfOptionsBlacklist {
     
@@ -372,12 +360,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait csrfOptionsNonAngular extends csrfOptionsAngularOrNonAngular {
+  trait csrfOptionsNonAngular
+    extends StObject
+       with csrfOptionsAngularOrNonAngular {
     
-    var angular: js.UndefOr[`false`] = js.native
+    var angular: js.UndefOr[`false`] = js.undefined
     
-    var cookie: js.UndefOr[String | Name] = js.native
+    var cookie: js.UndefOr[String | Name] = js.undefined
   }
   object csrfOptionsNonAngular {
     
@@ -404,12 +393,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait csrfOptionsWhitelist extends csrfOptionsBlacklistOrWhitelist {
+  trait csrfOptionsWhitelist
+    extends StObject
+       with csrfOptionsBlacklistOrWhitelist {
     
-    var blacklist: js.UndefOr[scala.Nothing] = js.native
+    var blacklist: js.UndefOr[scala.Nothing] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object csrfOptionsWhitelist {
     
@@ -433,14 +423,13 @@ object mod {
     }
   }
   
-  @js.native
   trait hstsOptions extends StObject {
     
-    var includeSubDomains: js.UndefOr[Boolean] = js.native
+    var includeSubDomains: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var preload: js.UndefOr[Boolean] = js.native
+    var preload: js.UndefOr[Boolean] = js.undefined
   }
   object hstsOptions {
     
@@ -473,12 +462,11 @@ object mod {
     }
   }
   
-  @js.native
   trait xssProtectionOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
   }
   object xssProtectionOptions {
     

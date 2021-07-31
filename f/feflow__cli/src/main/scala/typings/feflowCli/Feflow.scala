@@ -3,7 +3,6 @@ package typings.feflowCli
 import typings.feflowCli.anon._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,64 +13,63 @@ object Feflow {
   /**
     * feflow context
     */
-  @js.native
   trait ctx extends StObject {
     
     /**
       * Feflow context params
       */
-    var args: _empty = js.native
+    var args: _empty
     
     /**
       * Feflow command includes: (register)
       */
-    var commander: Command = js.native
+    var commander: Command
     
     /**
       * feflow config
       */
-    var config: String = js.native
+    var config: String
     
     /**
       * feflow config path
       */
-    var configPath: String = js.native
+    var configPath: String
     
     /**
       * Feflow hook includes: (hook)
       */
-    var hook: Hook = js.native
+    var hook: Hook
     
     /**
       * Feflow logger includes: (trace、debug、info、warn、error、fatal)
       */
-    var logger: Logger = js.native
+    var logger: Logger
     
     /**
       * Feflow configuration file in the current directory
       * ( .feflowrc.json/.feflowrc.js/.feflowrc.yml )
       */
-    var projectConfig: String = js.native
+    var projectConfig: String
     
     /**
       * Current project path
       */
-    var projectPath: String = js.native
+    var projectPath: String
     
     /**
       * Feflow home directory path
       */
-    var root: String = js.native
+    var root: String
     
     /**
       * Feflow home directory package.json path
       */
-    var rootPkg: String = js.native
+    var rootPkg: String
     
     /**
       * Feflow version
       */
-    var version: String = js.native
+    var version: String
   }
   object ctx {
     

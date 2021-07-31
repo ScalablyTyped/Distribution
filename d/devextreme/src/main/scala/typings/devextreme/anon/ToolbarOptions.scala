@@ -4,19 +4,17 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxToolbarOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarOptions[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var toolbarOptions: js.UndefOr[dxToolbarOptions] = js.native
+  var toolbarOptions: js.UndefOr[dxToolbarOptions] = js.undefined
 }
 object ToolbarOptions {
   
@@ -27,7 +25,7 @@ object ToolbarOptions {
   }
   
   @scala.inline
-  implicit class ToolbarOptionsMutableBuilder[Self <: ToolbarOptions[_], T] (val x: Self with ToolbarOptions[T]) extends AnyVal {
+  implicit class ToolbarOptionsMutableBuilder[Self <: ToolbarOptions[?], T] (val x: Self & ToolbarOptions[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

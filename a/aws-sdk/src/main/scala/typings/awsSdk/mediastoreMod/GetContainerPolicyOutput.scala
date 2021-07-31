@@ -2,16 +2,14 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContainerPolicyOutput extends StObject {
   
   /**
     * The contents of the access policy.
     */
-  var Policy: ContainerPolicy = js.native
+  var Policy: ContainerPolicy
 }
 object GetContainerPolicyOutput {
   

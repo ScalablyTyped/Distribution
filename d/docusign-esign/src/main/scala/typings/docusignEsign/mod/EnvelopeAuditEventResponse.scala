@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeAuditEventResponse extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var auditEvents: js.UndefOr[js.Array[EnvelopeAuditEvent]] = js.native
+  var auditEvents: js.UndefOr[js.Array[EnvelopeAuditEvent]] = js.undefined
 }
 object EnvelopeAuditEventResponse {
   

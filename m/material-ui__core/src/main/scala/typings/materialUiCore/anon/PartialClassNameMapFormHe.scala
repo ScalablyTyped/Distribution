@@ -2,28 +2,26 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/FormHelperText/FormHelperText.FormHelperTextClassKey>> */
-@js.native
 trait PartialClassNameMapFormHe extends StObject {
   
-  var contained: js.UndefOr[String] = js.native
+  var contained: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var filled: js.UndefOr[String] = js.native
+  var filled: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[String] = js.native
+  var focused: js.UndefOr[String] = js.undefined
   
-  var marginDense: js.UndefOr[String] = js.native
+  var marginDense: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[String] = js.native
+  var required: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapFormHe {
   

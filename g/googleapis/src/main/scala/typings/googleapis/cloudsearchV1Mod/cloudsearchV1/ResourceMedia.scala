@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Media")
@@ -41,7 +40,7 @@ class ResourceMedia protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaMedia] = js.native
   def upload(callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMedia] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMedia] = js.native
   def upload(params: ParamsResourceMediaUpload): GaxiosPromise[SchemaMedia] = js.native
   def upload(params: ParamsResourceMediaUpload, callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
   def upload(

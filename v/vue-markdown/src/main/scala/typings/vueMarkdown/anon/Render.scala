@@ -2,23 +2,21 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Render extends StObject {
   
-  var render: js.Any = js.native
+  var render: js.Any
   
-  var renderAttrs: js.Any = js.native
+  var renderAttrs: js.Any
   
-  var renderInline: js.Any = js.native
+  var renderInline: js.Any
   
-  var renderInlineAsText: js.Any = js.native
+  var renderInlineAsText: js.Any
   
-  var renderToken: js.Any = js.native
+  var renderToken: js.Any
   
-  var rules: Codeblock = js.native
+  var rules: Codeblock
 }
 object Render {
   

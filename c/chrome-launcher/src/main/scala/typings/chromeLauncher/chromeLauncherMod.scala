@@ -11,43 +11,47 @@ import typings.node.childProcessMod.ChildProcess
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeLauncherMod {
+  
+  @JSImport("chrome-launcher/dist/chrome-launcher", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("chrome-launcher/dist/chrome-launcher", JSImport.Default)
   @js.native
   class default () extends Launcher {
     def this(opts: Options) = this()
-    def this(opts: js.UndefOr[scala.Nothing], moduleOverrides: ModuleOverrides) = this()
+    def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
   }
   object default {
     
-    /* static member */
-    @JSImport("chrome-launcher/dist/chrome-launcher", "default.defaultFlags")
+    @JSImport("chrome-launcher/dist/chrome-launcher", JSImport.Default)
     @js.native
-    def defaultFlags(): js.Array[String] = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
     
     /** Returns the highest priority chrome installation. */
     /* static member */
-    @JSImport("chrome-launcher/dist/chrome-launcher", "default.getFirstInstallation")
-    @js.native
-    def getFirstInstallation(): js.UndefOr[String] = js.native
+    @scala.inline
+    def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
     
     /** Returns all available chrome installations in decreasing priority order. */
     /* static member */
-    @JSImport("chrome-launcher/dist/chrome-launcher", "default.getInstallations")
-    @js.native
-    def getInstallations(): js.Array[String] = js.native
+    @scala.inline
+    def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
   @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher")
   @js.native
   class Launcher () extends StObject {
     def this(opts: Options) = this()
-    def this(opts: js.UndefOr[scala.Nothing], moduleOverrides: ModuleOverrides) = this()
+    def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
     
     var chrome: js.UndefOr[ChildProcess] = js.native
@@ -60,7 +64,7 @@ object chromeLauncherMod {
     
     var connectionPollInterval: js.Any = js.native
     
-    def destroyTmp(): js.Promise[_] = js.native
+    def destroyTmp(): js.Promise[js.Any] = js.native
     
     var envVars: js.Any = js.native
     
@@ -110,49 +114,46 @@ object chromeLauncherMod {
     
     var userDataDir: js.UndefOr[String] = js.native
     
-    def waitUntilReady(): js.Promise[_] = js.native
+    def waitUntilReady(): js.Promise[js.Any] = js.native
   }
   object Launcher {
     
-    /* static member */
-    @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher.defaultFlags")
+    @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher")
     @js.native
-    def defaultFlags(): js.Array[String] = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
     
     /** Returns the highest priority chrome installation. */
     /* static member */
-    @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher.getFirstInstallation")
-    @js.native
-    def getFirstInstallation(): js.UndefOr[String] = js.native
+    @scala.inline
+    def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
     
     /** Returns all available chrome installations in decreasing priority order. */
     /* static member */
-    @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher.getInstallations")
-    @js.native
-    def getInstallations(): js.Array[String] = js.native
+    @scala.inline
+    def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
-  @JSImport("chrome-launcher/dist/chrome-launcher", "killAll")
-  @js.native
-  def killAll(): js.Promise[js.Array[Error]] = js.native
+  @scala.inline
+  def killAll(): js.Promise[js.Array[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Promise[js.Array[Error]]]
   
-  @JSImport("chrome-launcher/dist/chrome-launcher", "launch")
-  @js.native
-  def launch(): js.Promise[LaunchedChrome] = js.native
-  @JSImport("chrome-launcher/dist/chrome-launcher", "launch")
-  @js.native
-  def launch(opts: Options): js.Promise[LaunchedChrome] = js.native
+  @scala.inline
+  def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
+  @scala.inline
+  def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
   
-  @js.native
   trait LaunchedChrome extends StObject {
     
-    def kill(): js.Promise[js.Object] = js.native
+    def kill(): js.Promise[js.Object]
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var port: Double = js.native
+    var port: Double
     
-    var process: ChildProcess = js.native
+    var process: ChildProcess
   }
   object LaunchedChrome {
     
@@ -179,14 +180,13 @@ object chromeLauncherMod {
     }
   }
   
-  @js.native
   trait ModuleOverrides extends StObject {
     
-    var fs: js.UndefOr[Typeoffs] = js.native
+    var fs: js.UndefOr[Typeoffs] = js.undefined
     
-    var rimraf: js.UndefOr[RimrafModule] = js.native
+    var rimraf: js.UndefOr[RimrafModule] = js.undefined
     
-    var spawn: js.UndefOr[FnCall] = js.native
+    var spawn: js.UndefOr[FnCall] = js.undefined
   }
   object ModuleOverrides {
     
@@ -219,30 +219,29 @@ object chromeLauncherMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var chromeFlags: js.UndefOr[js.Array[String]] = js.native
+    var chromeFlags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var chromePath: js.UndefOr[String] = js.native
+    var chromePath: js.UndefOr[String] = js.undefined
     
-    var connectionPollInterval: js.UndefOr[Double] = js.native
+    var connectionPollInterval: js.UndefOr[Double] = js.undefined
     
-    var envVars: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    var envVars: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
-    var handleSIGINT: js.UndefOr[Boolean] = js.native
+    var handleSIGINT: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreDefaultFlags: js.UndefOr[Boolean] = js.native
+    var ignoreDefaultFlags: js.UndefOr[Boolean] = js.undefined
     
-    var logLevel: js.UndefOr[verbose | info | error | silent] = js.native
+    var logLevel: js.UndefOr[verbose | info | error | silent] = js.undefined
     
-    var maxConnectionRetries: js.UndefOr[Double] = js.native
+    var maxConnectionRetries: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var startingUrl: js.UndefOr[String] = js.native
+    var startingUrl: js.UndefOr[String] = js.undefined
     
-    var userDataDir: js.UndefOr[String | Boolean] = js.native
+    var userDataDir: js.UndefOr[String | Boolean] = js.undefined
   }
   object Options {
     

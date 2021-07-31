@@ -2,15 +2,13 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INetworkSecuritySettings extends StObject {
   
-  var networkAuthenticationType: NetworkAuthenticationType = js.native
+  var networkAuthenticationType: NetworkAuthenticationType
   
-  var networkEncryptionType: NetworkEncryptionType = js.native
+  var networkEncryptionType: NetworkEncryptionType
 }
 object INetworkSecuritySettings {
   

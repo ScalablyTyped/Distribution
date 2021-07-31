@@ -3,15 +3,13 @@ package typings.aframe.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultComponents extends StObject {
   
-  var defaultComponents: Material = js.native
+  var defaultComponents: Material
   
-  var mappings: StringDictionary[js.Any] = js.native
+  var mappings: StringDictionary[js.Any]
 }
 object DefaultComponents {
   

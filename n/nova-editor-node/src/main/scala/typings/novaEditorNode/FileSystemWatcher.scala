@@ -2,14 +2,14 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/file-system-watcher/
-@js.native
-trait FileSystemWatcher extends Disposable {
+trait FileSystemWatcher
+  extends StObject
+     with Disposable {
   
-  def onDidChange(callback: js.Function1[/* path */ String, Unit]): Unit = js.native
+  def onDidChange(callback: js.Function1[/* path */ String, Unit]): Unit
 }
 object FileSystemWatcher {
   

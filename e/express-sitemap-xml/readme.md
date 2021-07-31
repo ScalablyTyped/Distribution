@@ -10,9 +10,9 @@ Express middleware to serve `sitemap.xml` from a list of URLs
 | ------------------ | :-------------: |
 | Full name          | express-sitemap-xml |
 | Keywords           | express, google, serve sitemap, serve sitemap.xml, site map, site map xml, sitemap, sitemap generator, sitemap xml, sitemap.xml, sitemaps, xml |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 84299 |
+| # downloads        | 134955 |
 | # stars            | 0 |
 
 ## Links

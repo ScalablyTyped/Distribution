@@ -2,16 +2,14 @@ package typings.feflowCli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("_")
-    var _underscore: js.Array[Double | String] = js.native
+    var _underscore: js.Array[Double | String]
   }
   object _empty {
     

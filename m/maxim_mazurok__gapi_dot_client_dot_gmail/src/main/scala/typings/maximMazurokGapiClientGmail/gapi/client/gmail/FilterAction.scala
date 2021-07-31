@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterAction extends StObject {
   
   /** List of labels to add to the message. */
-  var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+  var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Email address that the message should be forwarded to. */
-  var forward: js.UndefOr[String] = js.native
+  var forward: js.UndefOr[String] = js.undefined
   
   /** List of labels to remove from the message. */
-  var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+  var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FilterAction {
   

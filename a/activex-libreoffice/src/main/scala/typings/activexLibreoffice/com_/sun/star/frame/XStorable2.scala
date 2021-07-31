@@ -5,12 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends {@link XStorable} . */
-@js.native
-trait XStorable2 extends XStorable {
+trait XStorable2
+  extends StObject
+     with XStorable {
   
   /**
     * stores the data to the URL from which it was loaded.
@@ -23,7 +23,7 @@ trait XStorable2 extends XStorable {
     * @throws com::sun::star::lang::IllegalArgumentException the optional parameters contain unacceptable for save entry
     * @throws com::sun::star::io::IOException if an IO error occurred during save operation
     */
-  def storeSelf(lArguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def storeSelf(lArguments: SeqEquiv[PropertyValue]): Unit
 }
 object XStorable2 {
   

@@ -3,7 +3,6 @@ package typings.gulpPug
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,45 +10,47 @@ object mod {
   /**
     * Returns a stream that compiles Vinyl files as Pug.
     */
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("gulp-pug", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-pug", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Any options from [Pug's API](https://pugjs.org/api/reference.html) in addition to `pug`'s own options.
     */
-  @js.native
   trait Options
-    extends typings.pug.mod.Options {
+    extends StObject
+       with typings.pug.mod.Options {
     
     /**
       * Compile Pug to JavaScript code.
       */
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Same as `opts.locals`.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Locals to compile the Pug with. You can also provide locals through the `data` field of the file object,
       * e.g. with [`gulp-data`](https://npmjs.com/gulp-data). They will be merged with `opts.locals`.
       */
-    var locals: js.UndefOr[js.Any] = js.native
+    var locals: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A custom instance of Pug for `gulp-pug` to use.
       */
-    var pug: js.UndefOr[js.Any] = js.native
+    var pug: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Display name of file from stream that is being compiled.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

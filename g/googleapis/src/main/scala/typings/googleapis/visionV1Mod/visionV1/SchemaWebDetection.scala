@@ -2,48 +2,46 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Relevant information for the image from the Internet.
   */
-@js.native
 trait SchemaWebDetection extends StObject {
   
   /**
     * The service&#39;s best guess as to the topic of the request image.
     * Inferred from similar images on the open web.
     */
-  var bestGuessLabels: js.UndefOr[js.Array[SchemaWebLabel]] = js.native
+  var bestGuessLabels: js.UndefOr[js.Array[SchemaWebLabel]] = js.undefined
   
   /**
     * Fully matching images from the Internet. Can include resized copies of
     * the query image.
     */
-  var fullMatchingImages: js.UndefOr[js.Array[SchemaWebImage]] = js.native
+  var fullMatchingImages: js.UndefOr[js.Array[SchemaWebImage]] = js.undefined
   
   /**
     * Web pages containing the matching images from the Internet.
     */
-  var pagesWithMatchingImages: js.UndefOr[js.Array[SchemaWebPage]] = js.native
+  var pagesWithMatchingImages: js.UndefOr[js.Array[SchemaWebPage]] = js.undefined
   
   /**
     * Partial matching images from the Internet. Those images are similar
     * enough to share some key-point features. For example an original image
     * will likely have partial matching for its crops.
     */
-  var partialMatchingImages: js.UndefOr[js.Array[SchemaWebImage]] = js.native
+  var partialMatchingImages: js.UndefOr[js.Array[SchemaWebImage]] = js.undefined
   
   /**
     * The visually similar image results.
     */
-  var visuallySimilarImages: js.UndefOr[js.Array[SchemaWebImage]] = js.native
+  var visuallySimilarImages: js.UndefOr[js.Array[SchemaWebImage]] = js.undefined
   
   /**
     * Deduced entities from similar images on the Internet.
     */
-  var webEntities: js.UndefOr[js.Array[SchemaWebEntity]] = js.native
+  var webEntities: js.UndefOr[js.Array[SchemaWebEntity]] = js.undefined
 }
 object SchemaWebDetection {
   

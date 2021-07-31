@@ -3,17 +3,17 @@ package typings.wechatMiniprogram.ICloud
 import typings.wechatMiniprogram.IAPISuccessParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // === end ===
 // === API: downloadFile ===
-@js.native
-trait DownloadFileResult extends IAPISuccessParam {
+trait DownloadFileResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object DownloadFileResult {
   

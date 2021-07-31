@@ -2,21 +2,21 @@ package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoHTMLAttributes[T] extends MediaHTMLAttributes[T] {
+trait VideoHTMLAttributes[T]
+  extends StObject
+     with MediaHTMLAttributes[T] {
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var playsInline: js.UndefOr[Boolean] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.undefined
   
-  var playsinline: js.UndefOr[Boolean | String] = js.native
+  var playsinline: js.UndefOr[Boolean | String] = js.undefined
   
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object VideoHTMLAttributes {
   
@@ -27,7 +27,7 @@ object VideoHTMLAttributes {
   }
   
   @scala.inline
-  implicit class VideoHTMLAttributesMutableBuilder[Self <: VideoHTMLAttributes[_], T] (val x: Self with VideoHTMLAttributes[T]) extends AnyVal {
+  implicit class VideoHTMLAttributesMutableBuilder[Self <: VideoHTMLAttributes[?], T] (val x: Self & VideoHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

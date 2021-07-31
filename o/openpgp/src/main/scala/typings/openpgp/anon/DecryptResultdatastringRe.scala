@@ -5,24 +5,22 @@ import typings.openpgp.mod.ReadableStream
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openpgp.openpgp.DecryptResult & {  data :string | openpgp.openpgp.ReadableStream<std.String> | openpgp.openpgp.NodeStream} */
-@js.native
 trait DecryptResultdatastringRe extends StObject {
   
-  var data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) with (String | ReadableStream[String] | NodeStream) = js.native
+  var data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (String | ReadableStream[String] | NodeStream)
   
-  var filename: String = js.native
+  var filename: String
   
-  var signatures: js.Array[Valid] = js.native
+  var signatures: js.Array[Valid]
 }
 object DecryptResultdatastringRe {
   
   @scala.inline
   def apply(
-    data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) with (String | ReadableStream[String] | NodeStream),
+    data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (String | ReadableStream[String] | NodeStream),
     filename: String,
     signatures: js.Array[Valid]
   ): DecryptResultdatastringRe = {
@@ -35,7 +33,7 @@ object DecryptResultdatastringRe {
     
     @scala.inline
     def setData(
-      value: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) with (String | ReadableStream[String] | NodeStream)
+      value: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (String | ReadableStream[String] | NodeStream)
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline

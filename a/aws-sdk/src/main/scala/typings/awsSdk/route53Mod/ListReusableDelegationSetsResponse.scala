@@ -2,36 +2,34 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReusableDelegationSetsResponse extends StObject {
   
   /**
     * A complex type that contains one DelegationSet element for each reusable delegation set that was created by the current AWS account.
     */
-  var DelegationSets: typings.awsSdk.route53Mod.DelegationSets = js.native
+  var DelegationSets: typings.awsSdk.route53Mod.DelegationSets
   
   /**
     * A flag that indicates whether there are more reusable delegation sets to be listed.
     */
-  var IsTruncated: PageTruncated = js.native
+  var IsTruncated: PageTruncated
   
   /**
     * For the second and subsequent calls to ListReusableDelegationSets, Marker is the value that you specified for the marker parameter in the request that produced the current response.
     */
-  var Marker: PageMarker = js.native
+  var Marker: PageMarker
   
   /**
     * The value that you specified for the maxitems parameter in the call to ListReusableDelegationSets that produced the current response.
     */
-  var MaxItems: PageMaxItems = js.native
+  var MaxItems: PageMaxItems
   
   /**
     * If IsTruncated is true, the value of NextMarker identifies the next reusable delegation set that Amazon Route 53 will return if you submit another ListReusableDelegationSets request and specify the value of NextMarker in the marker parameter.
     */
-  var NextMarker: js.UndefOr[PageMarker] = js.native
+  var NextMarker: js.UndefOr[PageMarker] = js.undefined
 }
 object ListReusableDelegationSetsResponse {
   

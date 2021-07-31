@@ -2,13 +2,11 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementCSSInlineStyle extends StObject {
   
-  val attributeStyleMap: StylePropertyMap = js.native
+  val attributeStyleMap: StylePropertyMap
 }
 object ElementCSSInlineStyle {
   

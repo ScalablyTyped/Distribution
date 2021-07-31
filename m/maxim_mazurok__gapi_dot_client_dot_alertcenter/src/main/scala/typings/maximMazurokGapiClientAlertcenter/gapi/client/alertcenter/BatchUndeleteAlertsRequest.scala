@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUndeleteAlertsRequest extends StObject {
   
   /** Required. list of alert IDs. */
-  var alertId: js.UndefOr[js.Array[String]] = js.native
+  var alertId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. The unique identifier of the G Suite organization account of the customer the alerts are associated with. */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
 }
 object BatchUndeleteAlertsRequest {
   

@@ -2,36 +2,34 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRouteTableAssociation extends StObject {
   
   /**
     * The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
     */
-  var gatewayId: String = js.native
+  var gatewayId: String
   
   /**
     * If the Association due to the Main Route Table.
     */
-  var main: Boolean = js.native
+  var main: Boolean
   
   /**
     * The Association ID.
     */
-  var routeTableAssociationId: String = js.native
+  var routeTableAssociationId: String
   
   /**
     * The id of the specific Route Table to retrieve.
     */
-  var routeTableId: String = js.native
+  var routeTableId: String
   
   /**
     * The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
     */
-  var subnetId: String = js.native
+  var subnetId: String
 }
 object GetRouteTableAssociation {
   

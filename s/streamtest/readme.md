@@ -12,7 +12,7 @@ Streams test library
 | Keywords           | test, streams, stream1, stream2 |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 191532 |
+| # downloads        | 209162 |
 | # stars            | 3 |
 
 ## Links

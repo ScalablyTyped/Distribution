@@ -14,7 +14,6 @@ import typings.officeJs.officeJsStrings.Polynomial
 import typings.officeJs.officeJsStrings.Power
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait ChartTrendline extends ClientObject {
+trait ChartTrendline
+  extends StObject
+     with ClientObject {
   
   /**
     *

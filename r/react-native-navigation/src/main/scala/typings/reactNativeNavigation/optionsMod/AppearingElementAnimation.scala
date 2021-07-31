@@ -2,13 +2,13 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppearingElementAnimation extends ElementAnimation {
+trait AppearingElementAnimation
+  extends StObject
+     with ElementAnimation {
   
-  var from: Double = js.native
+  var from: Double
 }
 object AppearingElementAnimation {
   

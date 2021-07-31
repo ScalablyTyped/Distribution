@@ -4,24 +4,22 @@ import typings.rbx.responsiveMod.LimitedResponsiveBreakpointProps
 import typings.rbx.responsiveMod.ResponsiveBreakpointProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ B in rbx.rbx/base/helpers/variables.Variables['breakpointsLimited'] ]:? rbx.rbx/base/helpers/responsive.LimitedResponsiveBreakpointProps} & {[ B in std.Exclude<rbx.rbx/base/helpers/variables.Variables['breakpoints'], rbx.rbx/base/helpers/variables.Variables['breakpointsLimited']> ]:? rbx.rbx/base/helpers/responsive.ResponsiveBreakpointProps} */
-@js.native
 trait BinVariablesbreakpointsLi extends StObject {
   
-  var desktop: js.UndefOr[ResponsiveBreakpointProps] = js.native
+  var desktop: js.UndefOr[ResponsiveBreakpointProps] = js.undefined
   
-  var fullhd: js.UndefOr[LimitedResponsiveBreakpointProps] = js.native
+  var fullhd: js.UndefOr[LimitedResponsiveBreakpointProps] = js.undefined
   
-  var mobile: js.UndefOr[LimitedResponsiveBreakpointProps] = js.native
+  var mobile: js.UndefOr[LimitedResponsiveBreakpointProps] = js.undefined
   
-  var tablet: js.UndefOr[ResponsiveBreakpointProps] = js.native
+  var tablet: js.UndefOr[ResponsiveBreakpointProps] = js.undefined
   
-  var touch: js.UndefOr[LimitedResponsiveBreakpointProps] = js.native
+  var touch: js.UndefOr[LimitedResponsiveBreakpointProps] = js.undefined
   
-  var widescreen: js.UndefOr[ResponsiveBreakpointProps] = js.native
+  var widescreen: js.UndefOr[ResponsiveBreakpointProps] = js.undefined
 }
 object BinVariablesbreakpointsLi {
   

@@ -7,21 +7,21 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TYSectionListProps extends SectionListProps[SectionDataProps, DefaultSectionT] {
+trait TYSectionListProps
+  extends StObject
+     with SectionListProps[SectionDataProps, DefaultSectionT] {
   
-  var contentContainStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentContainStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var sectionListRef: js.UndefOr[js.Function0[Unit]] = js.native
+  var sectionListRef: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var separatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var separatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var useART: js.UndefOr[Boolean] = js.native
+  var useART: js.UndefOr[Boolean] = js.undefined
 }
 object TYSectionListProps {
   

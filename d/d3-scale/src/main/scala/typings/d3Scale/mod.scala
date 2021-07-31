@@ -10,83 +10,64 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-scale", "scaleBand")
+  @JSImport("d3-scale", JSImport.Namespace)
   @js.native
-  def scaleBand[Domain /* <: ToString */](): ScaleBand_[Domain] = js.native
-  @JSImport("d3-scale", "scaleBand")
-  @js.native
-  def scaleBand[Domain /* <: ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScaleBand_[Domain] = js.native
-  @JSImport("d3-scale", "scaleBand")
-  @js.native
-  def scaleBand[Domain /* <: ToString */](range: Iterable[NumberValue]): ScaleBand_[Domain] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-scale", "scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleBand[Domain /* <: ToString */](): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")().asInstanceOf[ScaleBand_[Domain]]
+  @scala.inline
+  def scaleBand[Domain /* <: ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScaleBand_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleBand_[Domain]]
+  @scala.inline
+  def scaleBand[Domain /* <: ToString */](range: Iterable[NumberValue]): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleBand_[Domain]]
   
-  @JSImport("d3-scale", "scaleDivergingLog")
-  @js.native
-  def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingLog")
-  @js.native
-  def scaleDivergingLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingLog")
-  @js.native
-  def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleDivergingPow")
-  @js.native
-  def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingPow")
-  @js.native
-  def scaleDivergingPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingPow")
-  @js.native
-  def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleDivergingSqrt")
-  @js.native
-  def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingSqrt")
-  @js.native
-  def scaleDivergingSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingSqrt")
-  @js.native
-  def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleDivergingSymlog")
-  @js.native
-  def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingSymlog")
-  @js.native
-  def scaleDivergingSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleDivergingSymlog")
-  @js.native
-  def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleIdentity")
-  @js.native
-  def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = js.native
-  @JSImport("d3-scale", "scaleIdentity")
-  @js.native
-  def scaleIdentity[Unknown](range: Iterable[NumberValue]): ScaleIdentity_[Unknown] = js.native
+  @scala.inline
+  def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  
+  @scala.inline
+  def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")().asInstanceOf[ScaleIdentity_[Unknown]]
+  @scala.inline
+  def scaleIdentity[Unknown](range: Iterable[NumberValue]): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleIdentity_[Unknown]]
   
   object scaleImplicit {
     
@@ -101,214 +82,152 @@ object mod {
     def name_=(x: `implicit`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("d3-scale", "scaleLinear")
-  @js.native
-  def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleLinear")
-  @js.native
-  def scaleLinear[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleLinear")
-  @js.native
-  def scaleLinear[Range, Output, Unknown](range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")().asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLinear[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLinear[Range, Output, Unknown](range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleLog")
-  @js.native
-  def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleLog")
-  @js.native
-  def scaleLog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleLog")
-  @js.native
-  def scaleLog[Range, Output, Unknown](range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")().asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLog[Range, Output, Unknown](range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleOrdinal")
-  @js.native
-  def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = js.native
-  @JSImport("d3-scale", "scaleOrdinal")
-  @js.native
-  def scaleOrdinal[Range](range: Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = js.native
-  @JSImport("d3-scale", "scaleOrdinal")
-  @js.native
-  def scaleOrdinal[Domain /* <: ToString */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleOrdinal")
-  @js.native
-  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleOrdinal")
-  @js.native
-  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: ToString */, Range, Unknown](range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = js.native
+  @scala.inline
+  def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+  @scala.inline
+  def scaleOrdinal[Range](range: Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+  @scala.inline
+  def scaleOrdinal[Domain /* <: ToString */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
   
-  @JSImport("d3-scale", "scalePoint")
-  @js.native
-  def scalePoint[Domain /* <: ToString */](): ScalePoint_[Domain] = js.native
-  @JSImport("d3-scale", "scalePoint")
-  @js.native
-  def scalePoint[Domain /* <: ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScalePoint_[Domain] = js.native
-  @JSImport("d3-scale", "scalePoint")
-  @js.native
-  def scalePoint[Domain /* <: ToString */](range: Iterable[NumberValue]): ScalePoint_[Domain] = js.native
+  @scala.inline
+  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  @scala.inline
+  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: ToString */, Range, Unknown](range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
   
-  @JSImport("d3-scale", "scalePow")
-  @js.native
-  def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scalePow")
-  @js.native
-  def scalePow[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scalePow")
-  @js.native
-  def scalePow[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scalePoint[Domain /* <: ToString */](): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")().asInstanceOf[ScalePoint_[Domain]]
+  @scala.inline
+  def scalePoint[Domain /* <: ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScalePoint_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePoint_[Domain]]
+  @scala.inline
+  def scalePoint[Domain /* <: ToString */](range: Iterable[NumberValue]): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePoint_[Domain]]
   
-  @JSImport("d3-scale", "scaleQuantile")
-  @js.native
-  def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleQuantile")
-  @js.native
-  def scaleQuantile[Range, Unknown](domain: Iterable[js.UndefOr[NumberValue | Null]], range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleQuantile")
-  @js.native
-  def scaleQuantile[Range, Unknown](range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = js.native
+  @scala.inline
+  def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")().asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scalePow[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scalePow[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleQuantize")
-  @js.native
-  def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleQuantize")
-  @js.native
-  def scaleQuantize[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleQuantize")
-  @js.native
-  def scaleQuantize[Range, Unknown](range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = js.native
+  @scala.inline
+  def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")().asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantile[Range, Unknown](domain: Iterable[js.UndefOr[NumberValue | Null]], range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantile[Range, Unknown](range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantile_[Range, Unknown]]
   
-  @JSImport("d3-scale", "scaleRadial")
-  @js.native
-  def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleRadial")
-  @js.native
-  def scaleRadial[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleRadial")
-  @js.native
-  def scaleRadial[Range, Unknown](range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = js.native
+  @scala.inline
+  def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")().asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantize[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantize[Range, Unknown](range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantize_[Range, Unknown]]
   
-  @JSImport("d3-scale", "scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")().asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  @scala.inline
+  def scaleRadial[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  @scala.inline
+  def scaleRadial[Range, Unknown](range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
   
-  @JSImport("d3-scale", "scaleSequentialLog")
-  @js.native
-  def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialLog")
-  @js.native
-  def scaleSequentialLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialLog")
-  @js.native
-  def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleSequentialPow")
-  @js.native
-  def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialPow")
-  @js.native
-  def scaleSequentialPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialPow")
-  @js.native
-  def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleSequentialQuantile")
-  @js.native
-  def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialQuantile")
-  @js.native
-  def scaleSequentialQuantile[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialQuantile")
-  @js.native
-  def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleSequentialSqrt")
-  @js.native
-  def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialSqrt")
-  @js.native
-  def scaleSequentialSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialSqrt")
-  @js.native
-  def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")().asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialQuantile[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleSequentialSymlog")
-  @js.native
-  def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialSymlog")
-  @js.native
-  def scaleSequentialSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSequentialSymlog")
-  @js.native
-  def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleSqrt")
-  @js.native
-  def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSqrt")
-  @js.native
-  def scaleSqrt[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSqrt")
-  @js.native
-  def scaleSqrt[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleSymlog")
-  @js.native
-  def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSymlog")
-  @js.native
-  def scaleSymlog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleSymlog")
-  @js.native
-  def scaleSymlog[Range, Output, Unknown](range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")().asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSqrt[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSqrt[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleThreshold")
-  @js.native
-  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleThreshold")
-  @js.native
-  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = js.native
-  @JSImport("d3-scale", "scaleThreshold")
-  @js.native
-  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = js.native
+  @scala.inline
+  def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")().asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSymlog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSymlog[Range, Output, Unknown](range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
   
-  @JSImport("d3-scale", "scaleTime")
-  @js.native
-  def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleTime")
-  @js.native
-  def scaleTime[Range, Output, Unknown](domain: Iterable[Date | NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleTime")
-  @js.native
-  def scaleTime[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")().asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  @scala.inline
+  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  @scala.inline
+  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
   
-  @JSImport("d3-scale", "scaleUtc")
-  @js.native
-  def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleUtc")
-  @js.native
-  def scaleUtc[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("d3-scale", "scaleUtc")
-  @js.native
-  def scaleUtc[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleTime[Range, Output, Unknown](domain: Iterable[Date | NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleTime[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
   
-  @JSImport("d3-scale", "tickFormat")
-  @js.native
-  def tickFormat(start: Double, stop: Double, count: Double): js.Function1[/* d */ NumberValue, String] = js.native
-  @JSImport("d3-scale", "tickFormat")
-  @js.native
-  def tickFormat(start: Double, stop: Double, count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+  @scala.inline
+  def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleUtc[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleUtc[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  
+  @scala.inline
+  def tickFormat(start: Double, stop: Double, count: Double): js.Function1[/* d */ NumberValue, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tickFormat")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* d */ NumberValue, String]]
+  @scala.inline
+  def tickFormat(start: Double, stop: Double, count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tickFormat")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any], specifier.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* d */ NumberValue, String]]
   
   type InterpolatorFactory[T, U] = js.Function2[/* a */ T, /* b */ T, js.Function1[/* t */ Double, U]]
   
@@ -566,9 +485,9 @@ object mod {
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
     def tickFormat(): js.Function1[/* d */ NumberValue, String] = js.native
-    def tickFormat(count: js.UndefOr[scala.Nothing], specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
     def tickFormat(count: Double): js.Function1[/* d */ NumberValue, String] = js.native
     def tickFormat(count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
     
     /**
       * Returns approximately count representative values from the scale’s domain.
@@ -665,7 +584,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -767,9 +686,9 @@ object mod {
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
     def tickFormat(): js.Function1[/* d */ NumberValue, String] = js.native
-    def tickFormat(count: js.UndefOr[scala.Nothing], specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
     def tickFormat(count: Double): js.Function1[/* d */ NumberValue, String] = js.native
     def tickFormat(count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
     
     /**
       * Returns approximately count representative values from the scale’s domain.
@@ -788,7 +707,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -798,12 +717,14 @@ object mod {
   }
   
   @js.native
-  trait ScaleLinear_[Range, Output, Unknown] extends ScaleContinuousNumeric[Range, Output, Unknown] {
+  trait ScaleLinear_[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
     
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[js.Any, js.Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -837,7 +758,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -847,7 +768,9 @@ object mod {
   }
   
   @js.native
-  trait ScaleLogarithmic[Range, Output, Unknown] extends ScaleContinuousNumeric[Range, Output, Unknown] {
+  trait ScaleLogarithmic[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
     
     /**
       * Returns the current base, which defaults to 10.
@@ -861,7 +784,7 @@ object mod {
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[js.Any, js.Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -895,7 +818,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1084,7 +1007,9 @@ object mod {
   }
   
   @js.native
-  trait ScalePower[Range, Output, Unknown] extends ScaleContinuousNumeric[Range, Output, Unknown] {
+  trait ScalePower[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
     
     /**
       * If exponent is not specified, returns the current exponent, which defaults to 1.
@@ -1100,7 +1025,7 @@ object mod {
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[js.Any, js.Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -1134,7 +1059,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1205,7 +1130,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1285,9 +1210,9 @@ object mod {
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
     def tickFormat(): js.Function1[/* d */ NumberValue, String] = js.native
-    def tickFormat(count: js.UndefOr[scala.Nothing], specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
     def tickFormat(count: Double): js.Function1[/* d */ NumberValue, String] = js.native
     def tickFormat(count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
     
     /**
       * Returns approximately count representative values from the scale’s domain.
@@ -1306,7 +1231,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1316,12 +1241,14 @@ object mod {
   }
   
   @js.native
-  trait ScaleRadial_[Range, Output, Unknown] extends ScaleContinuousNumeric[Range, Output, Unknown] {
+  trait ScaleRadial_[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
     
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1395,7 +1322,9 @@ object mod {
   }
   
   @js.native
-  trait ScaleSequentialQuantile_[Output, Unknown] extends ScaleSequentialBase[Output, Unknown] {
+  trait ScaleSequentialQuantile_[Output, Unknown]
+    extends StObject
+       with ScaleSequentialBase[Output, Unknown] {
     
     /**
       * Returns the current interpolator underlying the scale.
@@ -1426,7 +1355,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1436,7 +1365,9 @@ object mod {
   }
   
   @js.native
-  trait ScaleSequential_[Output, Unknown] extends ScaleSequentialBase[Output, Unknown] {
+  trait ScaleSequential_[Output, Unknown]
+    extends StObject
+       with ScaleSequentialBase[Output, Unknown] {
     
     /**
       * Returns the current interpolator underlying the scale.
@@ -1461,7 +1392,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1471,7 +1402,9 @@ object mod {
   }
   
   @js.native
-  trait ScaleSymLog_[Range, Output, Unknown] extends ScaleContinuousNumeric[Range, Output, Unknown] {
+  trait ScaleSymLog_[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
     
     /**
       * Returns the current constant, which defaults to 1.
@@ -1486,7 +1419,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1549,7 +1482,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *
@@ -1612,7 +1545,7 @@ object mod {
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[js.Any, js.Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -1799,7 +1732,7 @@ object mod {
     /**
       * Returns the current unknown value, which defaults to undefined.
       */
-    def unknown(): UnknownReturnType[Unknown, js.UndefOr[scala.Nothing]] = js.native
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
     /**
       * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
       *

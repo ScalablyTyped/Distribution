@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Sys.Observer")
 @js.native
 class Observer ()
-  extends typings.microsoftAjax.Sys.Observer
+  extends StObject
+     with typings.microsoftAjax.Sys.Observer
 object Observer {
+  
+  @JSGlobal("Sys.Observer")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#region Methods
   /**
@@ -27,9 +31,8 @@ object Observer {
     *           The item to add.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.add")
-  @js.native
-  def add(target: js.Array[_], item: js.Any): Unit = js.native
+  @scala.inline
+  def add(target: js.Array[js.Any], item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(target.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds an event handler to the target.
@@ -37,9 +40,8 @@ object Observer {
     * @param handler The event handler.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.addCollectionChanged")
-  @js.native
-  def addCollectionChanged(target: js.Any, handler: js.Function): Unit = js.native
+  @scala.inline
+  def addCollectionChanged(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCollectionChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds an observable event handler to the target.
@@ -47,9 +49,8 @@ object Observer {
     * @param handler The added function.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.addEventHandler")
-  @js.native
-  def addEventHandler(target: js.Any, eventName: String, handler: js.Function): Unit = js.native
+  @scala.inline
+  def addEventHandler(target: js.Any, eventName: String, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds a propertyChanged event handler to the target.
@@ -57,9 +58,8 @@ object Observer {
     * @param handler The function handler to add.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.addPropertyChanged")
-  @js.native
-  def addPropertyChanged(target: js.Any, handler: js.Function): Unit = js.native
+  @scala.inline
+  def addPropertyChanged(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds items to the collection in an observable manner.
@@ -67,36 +67,32 @@ object Observer {
     * @param items The array of items to add.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.addRange")
-  @js.native
-  def addRange(target: js.Array[_], items: js.Array[_]): Unit = js.native
+  @scala.inline
+  def addRange(target: js.Array[js.Any], items: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRange")(target.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Begins the process of updating the target object.
     * @param target The object to update.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.beginUpdate")
-  @js.native
-  def beginUpdate(target: js.Any): Unit = js.native
+  @scala.inline
+  def beginUpdate(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginUpdate")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Clears the array of its elements in an observable manner.
     * @param target The array to clear.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.clear")
-  @js.native
-  def clear(target: js.Any): Unit = js.native
+  @scala.inline
+  def clear(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Ends the process of updating the target object.
     * @param target The object being updated.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.endUpdate")
-  @js.native
-  def endUpdate(target: js.Any): Unit = js.native
+  @scala.inline
+  def endUpdate(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endUpdate")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Inserts an item at the specified index in an observable manner.
@@ -105,9 +101,8 @@ object Observer {
     * @param item The item to insert.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.insert")
-  @js.native
-  def insert(target: js.Any, index: Double, item: js.Any): Unit = js.native
+  @scala.inline
+  def insert(target: js.Any, index: Double, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //#endregion
   //#region Properties
@@ -117,9 +112,8 @@ object Observer {
     * @return true if given target argument is currently updating; otherwise false.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.isUpdating")
-  @js.native
-  def isUpdating(target: js.Any): Boolean = js.native
+  @scala.inline
+  def isUpdating(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUpdating")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Makes an object directly observable by adding observable methods to it.
@@ -128,9 +122,8 @@ object Observer {
     * @see {@link http://msdn.microsoft.com/en-us/library/dd393633(v=vs.100).aspx}
     */
   /* static member */
-  @JSGlobal("Sys.Observer.makeObservable")
-  @js.native
-  def makeObservable(target: js.Any): js.Any = js.native
+  @scala.inline
+  def makeObservable(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Raises the collectionChanged event.
@@ -138,9 +131,8 @@ object Observer {
     * @param changes A Sys.CollectionChange object that contains the list of changes that were performed on the collection since the last event.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.raiseCollectionChanged")
-  @js.native
-  def raiseCollectionChanged(target: js.Array[_], changes: typings.microsoftAjax.Sys.CollectionChange): Unit = js.native
+  @scala.inline
+  def raiseCollectionChanged(target: js.Array[js.Any], changes: typings.microsoftAjax.Sys.CollectionChange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseCollectionChanged")(target.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Raises an observable event on the target.
@@ -149,9 +141,8 @@ object Observer {
     * @param eventArgs A Sys.EventArgs object used to pass event argument information.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.raiseEvent")
-  @js.native
-  def raiseEvent(target: js.Any, eventName: String, eventArgs: typings.microsoftAjax.Sys.EventArgs): Unit = js.native
+  @scala.inline
+  def raiseEvent(target: js.Any, eventName: String, eventArgs: typings.microsoftAjax.Sys.EventArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Raises a propertyChanged notification event.
@@ -159,9 +150,8 @@ object Observer {
     * @param propertyName The name of the property that changed.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.raisePropertyChanged")
-  @js.native
-  def raisePropertyChanged(target: js.Any, propertyName: String): Unit = js.native
+  @scala.inline
+  def raisePropertyChanged(target: js.Any, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("raisePropertyChanged")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes the first occurrence of an item from the array in an observable manner.
@@ -170,9 +160,8 @@ object Observer {
     * @return true if the item is found in the array. Otherwise false.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.remove")
-  @js.native
-  def remove(target: js.Array[_], item: js.Any): Boolean = js.native
+  @scala.inline
+  def remove(target: js.Array[js.Any], item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(target.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Removes the item at the specified index from the array in an observable manner.
@@ -180,9 +169,8 @@ object Observer {
     * @param index A number that represents the index of the item to remove.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.removeAt")
-  @js.native
-  def removeAt(target: js.Array[_], index: Double): Unit = js.native
+  @scala.inline
+  def removeAt(target: js.Array[js.Any], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAt")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes the collectionChanged event handler from the target.
@@ -190,9 +178,8 @@ object Observer {
     * @param handler The function to remove.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.removeCollectionChanged")
-  @js.native
-  def removeCollectionChanged(target: js.Any, handler: js.Function): Unit = js.native
+  @scala.inline
+  def removeCollectionChanged(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCollectionChanged")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes a propertyChanged event handler from the target.
@@ -200,9 +187,8 @@ object Observer {
     * @param handler The event handler to remove.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.removeEventHandler")
-  @js.native
-  def removeEventHandler(target: js.Any, handler: js.Function): Unit = js.native
+  @scala.inline
+  def removeEventHandler(target: js.Any, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventHandler")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets a property or field on the target in an observable manner.
@@ -212,7 +198,6 @@ object Observer {
     * @param value The value to set.
     */
   /* static member */
-  @JSGlobal("Sys.Observer.setValue")
-  @js.native
-  def setValue(target: js.Any, propertyName: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def setValue(target: js.Any, propertyName: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

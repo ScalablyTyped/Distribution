@@ -3,13 +3,11 @@ package typings.qiniuJs.mod
 import typings.qiniuJs.anon.Loaded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Next extends StObject {
   
-  var total: Loaded = js.native
+  var total: Loaded
 }
 object Next {
   

@@ -6,31 +6,32 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointerEventsMod {
   
-  @JSImport("@ionic/core/dist/types/utils/gesture/pointer-events", "createPointerEvents")
+  @JSImport("@ionic/core/dist/types/utils/gesture/pointer-events", JSImport.Namespace)
   @js.native
-  def createPointerEvents(el: Node, pointerDown: js.Any, pointerMove: js.Any, pointerUp: js.Any, options: Capture): Destroy = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createPointerEvents(el: Node, pointerDown: js.Any, pointerMove: js.Any, pointerUp: js.Any, options: Capture): Destroy = (^.asInstanceOf[js.Dynamic].applyDynamic("createPointerEvents")(el.asInstanceOf[js.Any], pointerDown.asInstanceOf[js.Any], pointerMove.asInstanceOf[js.Any], pointerUp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Destroy]
+  
   trait PointerEventsConfig extends StObject {
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
     
-    def pointerDown(ev: js.Any): Boolean = js.native
+    def pointerDown(ev: js.Any): Boolean
     
-    var pointerMove: js.UndefOr[js.Function1[/* ev */ js.Any, Unit]] = js.native
+    var pointerMove: js.UndefOr[js.Function1[/* ev */ js.Any, Unit]] = js.undefined
     
-    var pointerUp: js.UndefOr[js.Function1[/* ev */ js.Any, Unit]] = js.native
+    var pointerUp: js.UndefOr[js.Function1[/* ev */ js.Any, Unit]] = js.undefined
     
-    var zone: js.UndefOr[Boolean] = js.native
+    var zone: js.UndefOr[Boolean] = js.undefined
   }
   object PointerEventsConfig {
     

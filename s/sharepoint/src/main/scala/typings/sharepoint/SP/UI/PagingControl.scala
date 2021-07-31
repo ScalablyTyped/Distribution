@@ -3,30 +3,28 @@ package typings.sharepoint.SP.UI
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagingControl extends StObject {
   
-  def getButtonState(buttonId: Double): Double = js.native
+  def getButtonState(buttonId: Double): Double
   
-  def get_innerContent(): HTMLSpanElement = js.native
+  def get_innerContent(): HTMLSpanElement
   
-  def get_innerContentClass(): String = js.native
+  def get_innerContentClass(): String
   
-  def onNext(): Unit = js.native
+  def onNext(): Unit
   
   /**Should override*/
-  def onPrev(): Unit = js.native
+  def onPrev(): Unit
   
-  def onWindowResized(): Unit = js.native
+  def onWindowResized(): Unit
   
-  def postRender(): Unit = js.native
+  def postRender(): Unit
   
-  def render(innerContent: String): String = js.native
+  def render(innerContent: String): String
   
-  def setButtonState(buttonId: Double, state: Double): Unit = js.native
+  def setButtonState(buttonId: Double, state: Double): Unit
 }
 object PagingControl {
   

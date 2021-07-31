@@ -4,31 +4,29 @@ import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
   /**
     * Name of the runner group.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of the self-hosted runner group.
     */
-  var runner_group_id: Double = js.native
+  var runner_group_id: Double
   
   /**
     * Visibility of a runner group. You can select all organizations or select individual organizations. Can be one of: `all` or `selected`
     */
-  var visibility: js.UndefOr[selected | all] = js.native
+  var visibility: js.UndefOr[selected | all] = js.undefined
 }
 object EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint {
   

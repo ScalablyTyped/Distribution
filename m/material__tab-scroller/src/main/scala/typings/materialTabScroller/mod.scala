@@ -5,7 +5,6 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,7 @@ object mod {
   @js.native
   class MDCTabScroller protected ()
     extends typings.materialTabScroller.componentMod.MDCTabScroller {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTabScroller.foundationMod.MDCTabScrollerFoundation,
@@ -24,9 +23,12 @@ object mod {
   /* static members */
   object MDCTabScroller {
     
-    @JSImport("@material/tab-scroller", "MDCTabScroller.attachTo")
+    @JSImport("@material/tab-scroller", "MDCTabScroller")
     @js.native
-    def attachTo(root: Element): typings.materialTabScroller.componentMod.MDCTabScroller = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTabScroller.componentMod.MDCTabScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabScroller.componentMod.MDCTabScroller]
   }
   
   @JSImport("@material/tab-scroller", "MDCTabScrollerFoundation")
@@ -104,11 +106,13 @@ object mod {
   
   object util {
     
-    @JSImport("@material/tab-scroller", "util.computeHorizontalScrollbarHeight")
+    @JSImport("@material/tab-scroller", "util")
     @js.native
-    def computeHorizontalScrollbarHeight(documentObj: Document): Double = js.native
-    @JSImport("@material/tab-scroller", "util.computeHorizontalScrollbarHeight")
-    @js.native
-    def computeHorizontalScrollbarHeight(documentObj: Document, shouldCacheResult: Boolean): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def computeHorizontalScrollbarHeight(documentObj: Document): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHorizontalScrollbarHeight")(documentObj.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def computeHorizontalScrollbarHeight(documentObj: Document, shouldCacheResult: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeHorizontalScrollbarHeight")(documentObj.asInstanceOf[js.Any], shouldCacheResult.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

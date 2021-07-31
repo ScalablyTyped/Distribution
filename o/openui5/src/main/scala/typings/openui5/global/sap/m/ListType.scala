@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.ListType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.ListType & Double] = js.native
   
-  /* 0 */ val Active: typings.openui5.sap.m.ListType.Active with Double = js.native
+  /* 0 */ val Active: typings.openui5.sap.m.ListType.Active & Double = js.native
   
-  /* 1 */ val Detail: typings.openui5.sap.m.ListType.Detail with Double = js.native
+  /* 1 */ val Detail: typings.openui5.sap.m.ListType.Detail & Double = js.native
   
-  /* 2 */ val DetailAndActive: typings.openui5.sap.m.ListType.DetailAndActive with Double = js.native
+  /* 2 */ val DetailAndActive: typings.openui5.sap.m.ListType.DetailAndActive & Double = js.native
   
-  /* 3 */ val Inactive: typings.openui5.sap.m.ListType.Inactive with Double = js.native
+  /* 3 */ val Inactive: typings.openui5.sap.m.ListType.Inactive & Double = js.native
   
-  /* 4 */ val Navigation: typings.openui5.sap.m.ListType.Navigation with Double = js.native
+  /* 4 */ val Navigation: typings.openui5.sap.m.ListType.Navigation & Double = js.native
 }

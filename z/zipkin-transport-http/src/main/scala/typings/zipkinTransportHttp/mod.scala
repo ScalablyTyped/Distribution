@@ -1,16 +1,18 @@
 package typings.zipkinTransportHttp
 
 import typings.zipkin.mod.Logger
+import typings.zipkin.mod.model.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("zipkin-transport-http", "HttpLogger")
   @js.native
-  class HttpLogger protected () extends Logger {
+  class HttpLogger protected ()
+    extends StObject
+       with Logger {
     /**
       * @constructor
       * @param {Object} options
@@ -24,14 +26,16 @@ object mod {
       * @param {ErrorLogger} options.log Internal error logger used within the transport.
       */
     def this(options: typings.zipkinTransportHttp.anon.Agent) = this()
+    
+    /* CompleteClass */
+    override def logSpan(span: Span): Unit = js.native
   }
   
   type Agent = typings.node.httpMod.Agent | typings.node.httpsMod.Agent
   
-  @js.native
   trait ErrorLogger extends StObject {
     
-    def error(args: js.Any*): Unit = js.native
+    def error(args: js.Any*): Unit
   }
   object ErrorLogger {
     

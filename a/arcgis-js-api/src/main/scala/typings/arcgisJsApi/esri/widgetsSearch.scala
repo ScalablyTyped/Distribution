@@ -15,12 +15,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.suggestion
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait widgetsSearch
-  extends Widget_
+  extends StObject
+     with Widget_
      with GoTo {
   
   /**
@@ -199,7 +199,7 @@ trait widgetsSearch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#results)
     */
-  val results: js.Array[_] = js.native
+  val results: js.Array[js.Any] = js.native
   
   /**
     * Depending on the sources specified, search() queries the feature layer(s) and/or performs address matching using any specified [Locator(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html) and returns any applicable results.

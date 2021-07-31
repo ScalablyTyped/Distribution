@@ -18,10 +18,34 @@ import typings.playable.titleTypesMod.ITitleAPI
 import typings.playable.topBlockTypesMod.ITopBlockAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultModulesMod {
   
-  type IPlayer = IRootContainerAPI with IEventEmitterAPI with IPlaybackEngineAPI with IThemeAPI with IFullScreenAPI with IPictureInPictureAPI with IScreenAPI with IOverlayAPI with IMainUIBlockAPI with ITopBlockAPI with ITitleAPI with IBottomBlockAPI with IProgressControlAPI with ILogoAPI with IDownloadButtonAPI with IPreviewAPI
+  trait IPlayer
+    extends StObject
+       with IRootContainerAPI
+       with IEventEmitterAPI
+       with IPlaybackEngineAPI
+       with IThemeAPI
+       with IFullScreenAPI
+       with IPictureInPictureAPI
+       with IScreenAPI
+       with IOverlayAPI
+       with IMainUIBlockAPI
+       with ITopBlockAPI
+       with ITitleAPI
+       with IBottomBlockAPI
+       with IProgressControlAPI
+       with ILogoAPI
+       with IDownloadButtonAPI
+       with IPreviewAPI
+  object IPlayer {
+    
+    @scala.inline
+    def apply(): IPlayer = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IPlayer]
+    }
+  }
 }

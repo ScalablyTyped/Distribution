@@ -2,15 +2,13 @@ package typings.iitc.hooksMod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventArtifactsUpdated extends StObject {
   
-  var `new`: js.Any = js.native
+  var `new`: js.Any
   
-  var old: js.Any = js.native
+  var old: js.Any
 }
 object EventArtifactsUpdated {
   

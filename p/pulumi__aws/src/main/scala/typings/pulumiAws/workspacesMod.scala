@@ -20,10 +20,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspacesMod {
+  
+  @JSImport("@pulumi/aws/workspaces", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/workspaces", "Directory")
   @js.native
@@ -42,6 +45,10 @@ object workspacesMod {
   /* static members */
   object Directory {
     
+    @JSImport("@pulumi/aws/workspaces", "Directory")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Directory resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -51,26 +58,21 @@ object workspacesMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/workspaces", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.workspacesDirectoryMod.Directory = js.native
-    @JSImport("@pulumi/aws/workspaces", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.workspacesDirectoryMod.Directory = js.native
-    @JSImport("@pulumi/aws/workspaces", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DirectoryState): typings.pulumiAws.workspacesDirectoryMod.Directory = js.native
-    @JSImport("@pulumi/aws/workspaces", "Directory.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): typings.pulumiAws.workspacesDirectoryMod.Directory = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.workspacesDirectoryMod.Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspacesDirectoryMod.Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.workspacesDirectoryMod.Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspacesDirectoryMod.Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DirectoryState): typings.pulumiAws.workspacesDirectoryMod.Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspacesDirectoryMod.Directory]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): typings.pulumiAws.workspacesDirectoryMod.Directory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspacesDirectoryMod.Directory]
     
     /**
       * Returns true if the given object is an instance of Directory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/workspaces", "Directory.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/directory.Directory */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/directory.Directory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/directory.Directory */ Boolean]
   }
   
   @JSImport("@pulumi/aws/workspaces", "IpGroup")
@@ -86,11 +88,15 @@ object workspacesMod {
       */
     def this(name: String) = this()
     def this(name: String, args: IpGroupArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: IpGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object IpGroup {
+    
+    @JSImport("@pulumi/aws/workspaces", "IpGroup")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing IpGroup resource's state with the given name, ID, and optional extra
@@ -101,26 +107,21 @@ object workspacesMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/workspaces", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ipGroupMod.IpGroup = js.native
-    @JSImport("@pulumi/aws/workspaces", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ipGroupMod.IpGroup = js.native
-    @JSImport("@pulumi/aws/workspaces", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpGroupState): typings.pulumiAws.ipGroupMod.IpGroup = js.native
-    @JSImport("@pulumi/aws/workspaces", "IpGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpGroupState, opts: CustomResourceOptions): typings.pulumiAws.ipGroupMod.IpGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ipGroupMod.IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipGroupMod.IpGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ipGroupMod.IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipGroupMod.IpGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpGroupState): typings.pulumiAws.ipGroupMod.IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipGroupMod.IpGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpGroupState, opts: CustomResourceOptions): typings.pulumiAws.ipGroupMod.IpGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipGroupMod.IpGroup]
     
     /**
       * Returns true if the given object is an instance of IpGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/workspaces", "IpGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/ipGroup.IpGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/ipGroup.IpGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/ipGroup.IpGroup */ Boolean]
   }
   
   @JSImport("@pulumi/aws/workspaces", "Workspace")
@@ -140,6 +141,10 @@ object workspacesMod {
   /* static members */
   object Workspace {
     
+    @JSImport("@pulumi/aws/workspaces", "Workspace")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Workspace resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -149,65 +154,48 @@ object workspacesMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/workspaces", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.workspaceMod.Workspace = js.native
-    @JSImport("@pulumi/aws/workspaces", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.workspaceMod.Workspace = js.native
-    @JSImport("@pulumi/aws/workspaces", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkspaceState): typings.pulumiAws.workspaceMod.Workspace = js.native
-    @JSImport("@pulumi/aws/workspaces", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkspaceState, opts: CustomResourceOptions): typings.pulumiAws.workspaceMod.Workspace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.workspaceMod.Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspaceMod.Workspace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.workspaceMod.Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspaceMod.Workspace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkspaceState): typings.pulumiAws.workspaceMod.Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspaceMod.Workspace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkspaceState, opts: CustomResourceOptions): typings.pulumiAws.workspaceMod.Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.workspaceMod.Workspace]
     
     /**
       * Returns true if the given object is an instance of Workspace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/workspaces", "Workspace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/workspaces", "getBundle")
-  @js.native
-  def getBundle(): js.Promise[GetBundleResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getBundle")
-  @js.native
-  def getBundle(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetBundleResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getBundle")
-  @js.native
-  def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getBundle")
-  @js.native
-  def getBundle(args: GetBundleArgs, opts: InvokeOptions): js.Promise[GetBundleResult] = js.native
+  @scala.inline
+  def getBundle(): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")().asInstanceOf[js.Promise[GetBundleResult]]
+  @scala.inline
+  def getBundle(args: Unit, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
+  @scala.inline
+  def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBundleResult]]
+  @scala.inline
+  def getBundle(args: GetBundleArgs, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
   
-  @JSImport("@pulumi/aws/workspaces", "getDirectory")
-  @js.native
-  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getDirectory")
-  @js.native
-  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = js.native
+  @scala.inline
+  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectoryResult]]
+  @scala.inline
+  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectoryResult]]
   
-  @JSImport("@pulumi/aws/workspaces", "getImage")
-  @js.native
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getImage")
-  @js.native
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
+  @scala.inline
+  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
+  @scala.inline
+  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
   
-  @JSImport("@pulumi/aws/workspaces", "getWorkspace")
-  @js.native
-  def getWorkspace(): js.Promise[GetWorkspaceResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getWorkspace")
-  @js.native
-  def getWorkspace(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetWorkspaceResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getWorkspace")
-  @js.native
-  def getWorkspace(args: GetWorkspaceArgs): js.Promise[GetWorkspaceResult] = js.native
-  @JSImport("@pulumi/aws/workspaces", "getWorkspace")
-  @js.native
-  def getWorkspace(args: GetWorkspaceArgs, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = js.native
+  @scala.inline
+  def getWorkspace(): js.Promise[GetWorkspaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")().asInstanceOf[js.Promise[GetWorkspaceResult]]
+  @scala.inline
+  def getWorkspace(args: Unit, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWorkspaceResult]]
+  @scala.inline
+  def getWorkspace(args: GetWorkspaceArgs): js.Promise[GetWorkspaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWorkspaceResult]]
+  @scala.inline
+  def getWorkspace(args: GetWorkspaceArgs, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWorkspaceResult]]
 }

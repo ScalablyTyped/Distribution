@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterVpcConfig extends StObject {
   
   /**
     * The cluster security group that was created by Amazon EKS for the cluster.
     */
-  var clusterSecurityGroupId: String = js.native
+  var clusterSecurityGroupId: String
   
   /**
     * Indicates whether or not the Amazon EKS private API server endpoint is enabled. Default is `false`.
     */
-  var endpointPrivateAccess: js.UndefOr[Boolean] = js.native
+  var endpointPrivateAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether or not the Amazon EKS public API server endpoint is enabled. Default is `true`.
     */
-  var endpointPublicAccess: js.UndefOr[Boolean] = js.native
+  var endpointPublicAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of CIDR blocks. Indicates which CIDR blocks can access the Amazon EKS public API server endpoint when enabled. EKS defaults this to a list with `0.0.0.0/0`. This provider will only perform drift detection of its value when present in a configuration.
     */
-  var publicAccessCidrs: js.Array[String] = js.native
+  var publicAccessCidrs: js.Array[String]
   
   /**
     * List of security group IDs for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.
     */
-  var securityGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var securityGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of subnet IDs. Must be in at least two different availability zones. Amazon EKS creates cross-account elastic network interfaces in these subnets to allow communication between your worker nodes and the Kubernetes control plane.
     */
-  var subnetIds: js.Array[String] = js.native
+  var subnetIds: js.Array[String]
   
   /**
     * The VPC associated with your cluster.
     */
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object ClusterVpcConfig {
   

@@ -3,34 +3,41 @@ package typings.jsmediatags
 import typings.jsmediatags.typesMod.ByteArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flactagcontentsMod {
   
   @JSImport("jsmediatags/build2/FLACTagContents", JSImport.Default)
   @js.native
-  class default () extends FLACTagContents {
+  class default ()
+    extends StObject
+       with FLACTagContents {
     def this(blocks: js.Array[MetadataBlock]) = this()
+    
+    /* CompleteClass */
+    var blocks: js.Array[MetadataBlock] = js.native
+    
+    /* CompleteClass */
+    override def toArray(): ByteArray = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/FLACTagContents", "default.createBlock")
+    @JSImport("jsmediatags/build2/FLACTagContents", JSImport.Default)
     @js.native
-    def createBlock(`type`: Double, data: ByteArray): MetadataBlock = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jsmediatags/build2/FLACTagContents", "default.createCommentBlock")
-    @js.native
-    def createCommentBlock(data: js.Array[String]*): MetadataBlock = js.native
+    @scala.inline
+    def createBlock(`type`: Double, data: ByteArray): MetadataBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[MetadataBlock]
     
-    @JSImport("jsmediatags/build2/FLACTagContents", "default.createPictureBlock")
-    @js.native
-    def createPictureBlock(): Unit = js.native
+    @scala.inline
+    def createCommentBlock(data: js.Array[String]*): MetadataBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommentBlock")(data.asInstanceOf[js.Any]).asInstanceOf[MetadataBlock]
     
-    @JSImport("jsmediatags/build2/FLACTagContents", "default.createStreamBlock")
-    @js.native
-    def createStreamBlock(): MetadataBlock = js.native
+    @scala.inline
+    def createPictureBlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPictureBlock")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def createStreamBlock(): MetadataBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createStreamBlock")().asInstanceOf[MetadataBlock]
   }
   
   @JSImport("jsmediatags/build2/FLACTagContents", "MetadataBlock")
@@ -49,12 +56,11 @@ object flactagcontentsMod {
     def toArray(): Unit = js.native
   }
   
-  @js.native
   trait FLACTagContents extends StObject {
     
-    var blocks: js.Array[MetadataBlock] = js.native
+    var blocks: js.Array[MetadataBlock]
     
-    def toArray(): ByteArray = js.native
+    def toArray(): ByteArray
   }
   object FLACTagContents {
     

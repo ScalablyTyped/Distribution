@@ -2,19 +2,17 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional details for multiple-choice questions.
   */
-@js.native
 trait SchemaMultipleChoiceQuestion extends StObject {
   
   /**
     * Possible choices.
     */
-  var choices: js.UndefOr[js.Array[String]] = js.native
+  var choices: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaMultipleChoiceQuestion {
   

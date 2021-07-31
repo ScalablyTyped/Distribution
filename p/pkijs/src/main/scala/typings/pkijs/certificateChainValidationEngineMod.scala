@@ -3,7 +3,6 @@ package typings.pkijs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certificateChainValidationEngineMod {
@@ -15,7 +14,9 @@ object certificateChainValidationEngineMod {
     * @param {*} [parameters={}]
     * @property {any} [schema] asn1js parsed value
     */
-  class default () extends CertificateChainValidationEngine {
+  class default ()
+    extends StObject
+       with CertificateChainValidationEngine {
     def this(parameters: js.Any) = this()
   }
   
@@ -39,7 +40,7 @@ object certificateChainValidationEngineMod {
       * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
       * @returns {PromiseLike<any>}
       */
-    def verify(): js.Thenable[_] = js.native
-    def verify(parameters: js.Any): js.Thenable[_] = js.native
+    def verify(): js.Thenable[js.Any] = js.native
+    def verify(parameters: js.Any): js.Thenable[js.Any] = js.native
   }
 }

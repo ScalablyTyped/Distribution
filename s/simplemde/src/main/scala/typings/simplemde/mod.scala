@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("simplemde", JSImport.Namespace)
   @js.native
-  class ^ () extends SimpleMDE {
+  class ^ ()
+    extends StObject
+       with SimpleMDE {
     def this(options: Options) = this()
   }
   @JSImport("simplemde", JSImport.Namespace)
@@ -172,14 +173,13 @@ object mod {
   @scala.inline
   def undo_=(x: js.Function1[/* editor */ SimpleMDE, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undo")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AutoSaveOptions extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var uniqueId: String = js.native
+    var uniqueId: String
   }
   object AutoSaveOptions {
     
@@ -209,14 +209,13 @@ object mod {
     }
   }
   
-  @js.native
   trait BlockStyleOptions extends StObject {
     
-    var bold: js.UndefOr[String] = js.native
+    var bold: js.UndefOr[String] = js.undefined
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var italic: js.UndefOr[String] = js.native
+    var italic: js.UndefOr[String] = js.undefined
   }
   object BlockStyleOptions {
     
@@ -249,16 +248,15 @@ object mod {
     }
   }
   
-  @js.native
   trait InsertTextOptions extends StObject {
     
-    var horizontalRule: js.UndefOr[js.Array[String]] = js.native
+    var horizontalRule: js.UndefOr[js.Array[String]] = js.undefined
     
-    var image: js.UndefOr[js.Array[String]] = js.native
+    var image: js.UndefOr[js.Array[String]] = js.undefined
     
-    var link: js.UndefOr[js.Array[String]] = js.native
+    var link: js.UndefOr[js.Array[String]] = js.undefined
     
-    var table: js.UndefOr[js.Array[String]] = js.native
+    var table: js.UndefOr[js.Array[String]] = js.undefined
   }
   object InsertTextOptions {
     
@@ -309,58 +307,57 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var autoDownloadFontAwesome: js.UndefOr[Boolean] = js.native
+    var autoDownloadFontAwesome: js.UndefOr[Boolean] = js.undefined
     
-    var autofocus: js.UndefOr[Boolean] = js.native
+    var autofocus: js.UndefOr[Boolean] = js.undefined
     
-    var autosave: js.UndefOr[AutoSaveOptions] = js.native
+    var autosave: js.UndefOr[AutoSaveOptions] = js.undefined
     
-    var blockStyles: js.UndefOr[BlockStyleOptions] = js.native
+    var blockStyles: js.UndefOr[BlockStyleOptions] = js.undefined
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var forceSync: js.UndefOr[Boolean] = js.native
+    var forceSync: js.UndefOr[Boolean] = js.undefined
     
-    var hideIcons: js.UndefOr[js.Array[String]] = js.native
+    var hideIcons: js.UndefOr[js.Array[String]] = js.undefined
     
-    var indentWithTabs: js.UndefOr[Boolean] = js.native
+    var indentWithTabs: js.UndefOr[Boolean] = js.undefined
     
-    var initialValue: js.UndefOr[String] = js.native
+    var initialValue: js.UndefOr[String] = js.undefined
     
-    var insertTexts: js.UndefOr[InsertTextOptions] = js.native
+    var insertTexts: js.UndefOr[InsertTextOptions] = js.undefined
     
-    var lineWrapping: js.UndefOr[Boolean] = js.native
+    var lineWrapping: js.UndefOr[Boolean] = js.undefined
     
-    var parsingConfig: js.UndefOr[ParsingOptions] = js.native
+    var parsingConfig: js.UndefOr[ParsingOptions] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     var previewRender: js.UndefOr[
         js.Function2[/* markdownPlaintext */ String, /* previewElement */ js.UndefOr[HTMLElement], String]
-      ] = js.native
+      ] = js.undefined
     
-    var promptURLs: js.UndefOr[Boolean] = js.native
+    var promptURLs: js.UndefOr[Boolean] = js.undefined
     
-    var renderingConfig: js.UndefOr[RenderingOptions] = js.native
+    var renderingConfig: js.UndefOr[RenderingOptions] = js.undefined
     
-    var shortcuts: js.UndefOr[ShortcutsArray] = js.native
+    var shortcuts: js.UndefOr[ShortcutsArray] = js.undefined
     
-    var showIcons: js.UndefOr[js.Array[String]] = js.native
+    var showIcons: js.UndefOr[js.Array[String]] = js.undefined
     
-    var spellChecker: js.UndefOr[Boolean] = js.native
+    var spellChecker: js.UndefOr[Boolean] = js.undefined
     
-    var status: js.UndefOr[Boolean | (js.Array[String | StatusBarItem])] = js.native
+    var status: js.UndefOr[Boolean | (js.Array[String | StatusBarItem])] = js.undefined
     
-    var styleSelectedText: js.UndefOr[Boolean] = js.native
+    var styleSelectedText: js.UndefOr[Boolean] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
-    var toolbar: js.UndefOr[Boolean | (js.Array[String | ToolbarIcon])] = js.native
+    var toolbar: js.UndefOr[Boolean | (js.Array[String | ToolbarIcon])] = js.undefined
     
-    var toolbarTips: js.UndefOr[Boolean] = js.native
+    var toolbarTips: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -531,14 +528,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsingOptions extends StObject {
     
-    var allowAtxHeaderWithoutSpace: js.UndefOr[Boolean] = js.native
+    var allowAtxHeaderWithoutSpace: js.UndefOr[Boolean] = js.undefined
     
-    var strikethrough: js.UndefOr[Boolean] = js.native
+    var strikethrough: js.UndefOr[Boolean] = js.undefined
     
-    var underscoresBreakWords: js.UndefOr[Boolean] = js.native
+    var underscoresBreakWords: js.UndefOr[Boolean] = js.undefined
   }
   object ParsingOptions {
     
@@ -571,12 +567,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RenderingOptions extends StObject {
     
-    var codeSyntaxHighlighting: Boolean = js.native
+    var codeSyntaxHighlighting: Boolean
     
-    var singleLineBreaks: js.UndefOr[Boolean] = js.native
+    var singleLineBreaks: js.UndefOr[Boolean] = js.undefined
   }
   object RenderingOptions {
     
@@ -600,37 +595,37 @@ object mod {
     }
   }
   
-  @js.native
   trait ShortcutsArray
-    extends /* action */ StringDictionary[js.UndefOr[String]] {
+    extends StObject
+       with /* action */ StringDictionary[js.UndefOr[String]] {
     
-    var cleanBlock: js.UndefOr[String] = js.native
+    var cleanBlock: js.UndefOr[String] = js.undefined
     
-    var drawImage: js.UndefOr[String] = js.native
+    var drawImage: js.UndefOr[String] = js.undefined
     
-    var drawLink: js.UndefOr[String] = js.native
+    var drawLink: js.UndefOr[String] = js.undefined
     
-    var toggleBlockquote: js.UndefOr[String] = js.native
+    var toggleBlockquote: js.UndefOr[String] = js.undefined
     
-    var toggleBold: js.UndefOr[String] = js.native
+    var toggleBold: js.UndefOr[String] = js.undefined
     
-    var toggleCodeBlock: js.UndefOr[String] = js.native
+    var toggleCodeBlock: js.UndefOr[String] = js.undefined
     
-    var toggleFullScreen: js.UndefOr[String] = js.native
+    var toggleFullScreen: js.UndefOr[String] = js.undefined
     
-    var toggleHeadingBigger: js.UndefOr[String] = js.native
+    var toggleHeadingBigger: js.UndefOr[String] = js.undefined
     
-    var toggleHeadingSmaller: js.UndefOr[String] = js.native
+    var toggleHeadingSmaller: js.UndefOr[String] = js.undefined
     
-    var toggleItalic: js.UndefOr[String] = js.native
+    var toggleItalic: js.UndefOr[String] = js.undefined
     
-    var toggleOrderedList: js.UndefOr[String] = js.native
+    var toggleOrderedList: js.UndefOr[String] = js.undefined
     
-    var togglePreview: js.UndefOr[String] = js.native
+    var togglePreview: js.UndefOr[String] = js.undefined
     
-    var toggleSideBySide: js.UndefOr[String] = js.native
+    var toggleSideBySide: js.UndefOr[String] = js.undefined
     
-    var toggleUnorderedList: js.UndefOr[String] = js.native
+    var toggleUnorderedList: js.UndefOr[String] = js.undefined
   }
   object ShortcutsArray {
     
@@ -748,14 +743,13 @@ object mod {
     def value(`val`: String): Unit = js.native
   }
   
-  @js.native
   trait StatusBarItem extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    def defaultValue(element: HTMLElement): Unit = js.native
+    def defaultValue(element: HTMLElement): Unit
     
-    def onUpdate(element: HTMLElement): Unit = js.native
+    def onUpdate(element: HTMLElement): Unit
   }
   object StatusBarItem {
     
@@ -779,16 +773,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ToolbarIcon extends StObject {
     
-    var action: String | (js.Function1[/* editor */ SimpleMDE, Unit]) = js.native
+    var action: String | (js.Function1[/* editor */ SimpleMDE, Unit])
     
-    var className: String = js.native
+    var className: String
     
-    var name: String = js.native
+    var name: String
     
-    var title: String = js.native
+    var title: String
   }
   object ToolbarIcon {
     

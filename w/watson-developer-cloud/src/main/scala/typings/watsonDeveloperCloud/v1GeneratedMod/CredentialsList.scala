@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** CredentialsList. */
-@js.native
 trait CredentialsList extends StObject {
   
   /** An array of credential definitions that were created for this instance. */
-  var credentials: js.UndefOr[js.Array[Credentials]] = js.native
+  var credentials: js.UndefOr[js.Array[Credentials]] = js.undefined
 }
 object CredentialsList {
   

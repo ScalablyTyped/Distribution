@@ -3,26 +3,24 @@ package typings.jwplayer.jwplayer
 import typings.jwplayer.jwplayerStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorParam extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var message: String = js.native
+  var message: String
   
-  var sourceError: js.Object | Null = js.native
+  var sourceError: js.Object | Null
   
-  var `type`: error = js.native
+  var `type`: error
 }
 object ErrorParam {
   
   @scala.inline
-  def apply(code: Double, message: String, `type`: error): ErrorParam = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(code: Double, message: String): ErrorParam = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sourceError = null)
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ErrorParam]
   }
   

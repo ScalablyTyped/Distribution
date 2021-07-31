@@ -3,20 +3,20 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VoidLiteral extends Type_ {
+trait VoidLiteral
+  extends StObject
+     with Type_ {
   
-  var `type`: typings.doctrine.doctrineStrings.VoidLiteral = js.native
+  var `type`: typings.doctrine.doctrineStrings.VoidLiteral
 }
 object VoidLiteral {
   
   @scala.inline
-  def apply(`type`: typings.doctrine.doctrineStrings.VoidLiteral): VoidLiteral = {
+  def apply(): VoidLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VoidLiteral")
     __obj.asInstanceOf[VoidLiteral]
   }
   

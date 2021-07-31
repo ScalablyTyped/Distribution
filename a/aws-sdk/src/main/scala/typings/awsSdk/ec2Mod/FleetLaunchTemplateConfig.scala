@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetLaunchTemplateConfig extends StObject {
   
   /**
     * The launch template.
     */
-  var LaunchTemplateSpecification: js.UndefOr[FleetLaunchTemplateSpecification] = js.native
+  var LaunchTemplateSpecification: js.UndefOr[FleetLaunchTemplateSpecification] = js.undefined
   
   /**
     * Any parameters that you specify override the same parameters in the launch template.
     */
-  var Overrides: js.UndefOr[FleetLaunchTemplateOverridesList] = js.native
+  var Overrides: js.UndefOr[FleetLaunchTemplateOverridesList] = js.undefined
 }
 object FleetLaunchTemplateConfig {
   

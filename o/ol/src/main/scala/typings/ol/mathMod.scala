@@ -2,48 +2,41 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathMod {
   
-  @JSImport("ol/math", "clamp")
+  @JSImport("ol/math", JSImport.Namespace)
   @js.native
-  def clamp(value: Double, min: Double, max: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/math", "cosh")
-  @js.native
-  def cosh(x: Double): Double = js.native
+  @scala.inline
+  def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/math", "lerp")
-  @js.native
-  def lerp(a: Double, b: Double, x: Double): Double = js.native
+  @scala.inline
+  def cosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/math", "log2")
-  @js.native
-  def log2(x: Double): Double = js.native
+  @scala.inline
+  def lerp(a: Double, b: Double, x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/math", "modulo")
-  @js.native
-  def modulo(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def log2(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/math", "solveLinearSystem")
-  @js.native
-  def solveLinearSystem(mat: js.Array[js.Array[Double]]): js.Array[Double] = js.native
+  @scala.inline
+  def modulo(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("modulo")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/math", "squaredDistance")
-  @js.native
-  def squaredDistance(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  @scala.inline
+  def solveLinearSystem(mat: js.Array[js.Array[Double]]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("solveLinearSystem")(mat.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/math", "squaredSegmentDistance")
-  @js.native
-  def squaredSegmentDistance(x: Double, y: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  @scala.inline
+  def squaredDistance(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDistance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/math", "toDegrees")
-  @js.native
-  def toDegrees(angleInRadians: Double): Double = js.native
+  @scala.inline
+  def squaredSegmentDistance(x: Double, y: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredSegmentDistance")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/math", "toRadians")
-  @js.native
-  def toRadians(angleInDegrees: Double): Double = js.native
+  @scala.inline
+  def toDegrees(angleInRadians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegrees")(angleInRadians.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def toRadians(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRadians")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

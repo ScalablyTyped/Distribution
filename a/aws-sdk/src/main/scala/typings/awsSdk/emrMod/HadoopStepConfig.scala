@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HadoopStepConfig extends StObject {
   
   /**
     * The list of command line arguments to pass to the JAR file's main function for execution.
     */
-  var Args: js.UndefOr[StringList] = js.native
+  var Args: js.UndefOr[StringList] = js.undefined
   
   /**
     * The path to the JAR file that runs during the step.
     */
-  var Jar: js.UndefOr[String] = js.native
+  var Jar: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the main class in the specified Java file. If not specified, the JAR file should specify a main class in its manifest file.
     */
-  var MainClass: js.UndefOr[String] = js.native
+  var MainClass: js.UndefOr[String] = js.undefined
   
   /**
     * The list of Java properties that are set when the step runs. You can use these properties to pass key value pairs to your main function.
     */
-  var Properties: js.UndefOr[StringMap] = js.native
+  var Properties: js.UndefOr[StringMap] = js.undefined
 }
 object HadoopStepConfig {
   

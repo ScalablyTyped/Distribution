@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analog extends StObject {
   
-  var analog: js.UndefOr[Hour] = js.native
+  var analog: js.UndefOr[Hour] = js.undefined
   
-  var digital: js.UndefOr[Text] = js.native
+  var digital: js.UndefOr[Text] = js.undefined
 }
 object Analog {
   

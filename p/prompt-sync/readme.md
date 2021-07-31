@@ -11,8 +11,8 @@ a synchronous prompt for node.js
 | Full name          | prompt-sync |
 | Keywords           | prompt, sync, blocking, readline, input, getline, repl, history |
 | # releases         | 3 |
-| # dependents       | 189 |
-| # downloads        | 954694 |
+| # dependents       | 228 |
+| # downloads        | 1353395 |
 | # stars            | 9 |
 
 ## Links

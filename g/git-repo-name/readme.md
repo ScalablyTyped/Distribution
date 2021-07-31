@@ -10,9 +10,9 @@ Get the repository name from the git remote origin URL.
 | ------------------ | :-------------: |
 | Full name          | git-repo-name |
 | Keywords           | gh, git, git repo, repo, repo name, repository |
-| # releases         | 3 |
-| # dependents       | 32 |
-| # downloads        | 1809449 |
+| # releases         | 0 |
+| # dependents       | 34 |
+| # downloads        | 2126338 |
 | # stars            | 1 |
 
 ## Links

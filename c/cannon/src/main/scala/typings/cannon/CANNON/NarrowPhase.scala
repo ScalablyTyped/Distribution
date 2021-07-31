@@ -2,15 +2,13 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NarrowPhase extends StObject {
   
-  var contactPointPool: js.Array[Pool] = js.native
+  var contactPointPool: js.Array[Pool]
   
-  var v3pool: Vec3Pool = js.native
+  var v3pool: Vec3Pool
 }
 object NarrowPhase {
   

@@ -3,77 +3,77 @@ package typings.sharp.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Metadata extends WriteableMetadata {
+trait Metadata
+  extends StObject
+     with WriteableMetadata {
   
   /** Number of bands e.g. 3 for sRGB, 4 for CMYK */
-  var channels: js.UndefOr[Channels] = js.native
+  var channels: js.UndefOr[Channels] = js.undefined
   
   /** String containing JPEG chroma subsampling, 4:2:0 or 4:4:4 for RGB, 4:2:0:4 or 4:4:4:4 for CMYK */
-  var chromaSubsampling: String = js.native
+  var chromaSubsampling: String
   
   /** Delay in ms between each page in an animated image, provided as an array of integers. */
-  var delay: js.UndefOr[js.Array[Double]] = js.native
+  var delay: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Number of pixels per inch (DPI), if present */
-  var density: js.UndefOr[Double] = js.native
+  var density: js.UndefOr[Double] = js.undefined
   
   /** Name of pixel depth format e.g. uchar, char, ushort, float ... */
-  var depth: js.UndefOr[String] = js.native
+  var depth: js.UndefOr[String] = js.undefined
   
   /** Buffer containing raw EXIF data, if present */
-  var exif: js.UndefOr[Buffer] = js.native
+  var exif: js.UndefOr[Buffer] = js.undefined
   
   /** Name of decoder used to decompress image data e.g. jpeg, png, webp, gif, svg */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** Boolean indicating the presence of an alpha transparency channel */
-  var hasAlpha: js.UndefOr[Boolean] = js.native
+  var hasAlpha: js.UndefOr[Boolean] = js.undefined
   
   /** Boolean indicating the presence of an embedded ICC profile */
-  var hasProfile: js.UndefOr[Boolean] = js.native
+  var hasProfile: js.UndefOr[Boolean] = js.undefined
   
   /** Number of pixels high (EXIF orientation is not taken into consideration) */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** Buffer containing raw ICC profile data, if present */
-  var icc: js.UndefOr[Buffer] = js.native
+  var icc: js.UndefOr[Buffer] = js.undefined
   
   /** Buffer containing raw IPTC data, if present */
-  var iptc: js.UndefOr[Buffer] = js.native
+  var iptc: js.UndefOr[Buffer] = js.undefined
   
   /** Boolean indicating whether the image is interlaced using a progressive scan */
-  var isProgressive: js.UndefOr[Boolean] = js.native
+  var isProgressive: js.UndefOr[Boolean] = js.undefined
   
   /** Number of times to loop an animated image, zero refers to a continuous loop. */
-  var loop: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Double] = js.undefined
   
   /** Number of pixels high each page in a multi-page image will be. */
-  var pageHeight: js.UndefOr[Double] = js.native
+  var pageHeight: js.UndefOr[Double] = js.undefined
   
   /**  Number of the primary page in a HEIF image */
-  var pagePrimary: js.UndefOr[Double] = js.native
+  var pagePrimary: js.UndefOr[Double] = js.undefined
   
   /** Number of pages/frames contained within the image, with support for TIFF, HEIF, PDF, animated GIF and animated WebP */
-  var pages: js.UndefOr[Double] = js.native
+  var pages: js.UndefOr[Double] = js.undefined
   
   /** Total size of image in bytes, for Stream and Buffer input only */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /** Name of colour space interpretation e.g. srgb, rgb, cmyk, lab, b-w ... */
-  var space: js.UndefOr[String] = js.native
+  var space: js.UndefOr[String] = js.undefined
   
   /** Buffer containing raw TIFFTAG_PHOTOSHOP data, if present */
-  var tifftagPhotoshop: js.UndefOr[Buffer] = js.native
+  var tifftagPhotoshop: js.UndefOr[Buffer] = js.undefined
   
   /** Number of pixels wide (EXIF orientation is not taken into consideration) */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** Buffer containing raw XMP data, if present */
-  var xmp: js.UndefOr[Buffer] = js.native
+  var xmp: js.UndefOr[Buffer] = js.undefined
 }
 object Metadata {
   

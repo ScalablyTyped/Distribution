@@ -12,7 +12,7 @@ Base view plugin for egg
 | Keywords           | egg, eggPlugin, egg-plugin, egg-view, view |
 | # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 312971 |
+| # downloads        | 589391 |
 | # stars            | 0 |
 
 ## Links

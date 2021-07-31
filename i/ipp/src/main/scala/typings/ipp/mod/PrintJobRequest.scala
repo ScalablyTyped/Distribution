@@ -3,17 +3,15 @@ package typings.ipp.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintJobRequest extends StObject {
   
-  var data: Buffer = js.native
+  var data: Buffer
   
-  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.native
+  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.undefined
   
-  var `operation-attributes-tag`: typings.ipp.anon.Compression = js.native
+  var `operation-attributes-tag`: typings.ipp.anon.Compression
 }
 object PrintJobRequest {
   

@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetPoolInstanceHealth extends StObject {
   
-  var healthStatus: js.UndefOr[js.Array[HealthStatus]] = js.native
+  var healthStatus: js.UndefOr[js.Array[HealthStatus]] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#targetPoolInstanceHealth when checking the health of an instance. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object TargetPoolInstanceHealth {
   

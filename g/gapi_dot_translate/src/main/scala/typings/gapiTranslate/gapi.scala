@@ -6,7 +6,6 @@ import typings.gapiTranslate.anon.Fields
 import typings.gapiTranslate.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,13 +14,12 @@ object gapi {
     
     object language {
       
-      @js.native
       trait detections extends StObject {
         
         /**
           * Detect the language of text.
           */
-        def list(`object`: Fields): HttpRequest[GoogleApiTranslateDetectionListResponse] = js.native
+        def list(`object`: Fields): HttpRequest[GoogleApiTranslateDetectionListResponse]
       }
       object detections {
         
@@ -39,13 +37,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait languages extends StObject {
         
         /**
           * List the source/target languages supported by the API
           */
-        def list(`object`: Target): HttpRequest[GoogleApiTranslateLanguageListResponse] = js.native
+        def list(`object`: Target): HttpRequest[GoogleApiTranslateLanguageListResponse]
       }
       object languages {
         
@@ -63,13 +60,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait translations extends StObject {
         
         /**
           * Returns text translations from one language to another.
           */
-        def list(`object`: Cid): HttpRequest[GoogleApiTranslateTranslationListResponse] = js.native
+        def list(`object`: Cid): HttpRequest[GoogleApiTranslateTranslationListResponse]
       }
       object translations {
         

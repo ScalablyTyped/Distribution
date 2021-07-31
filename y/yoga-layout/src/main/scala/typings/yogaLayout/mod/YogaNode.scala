@@ -3,20 +3,19 @@ package typings.yogaLayout.mod
 import typings.yogaLayout.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait YogaNode extends StObject {
   
   def calculateLayout(): Unit = js.native
-  def calculateLayout(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], direction: YogaDirection): Unit = js.native
-  def calculateLayout(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def calculateLayout(width: js.UndefOr[scala.Nothing], height: Double, direction: YogaDirection): Unit = js.native
   def calculateLayout(width: Double): Unit = js.native
-  def calculateLayout(width: Double, height: js.UndefOr[scala.Nothing], direction: YogaDirection): Unit = js.native
   def calculateLayout(width: Double, height: Double): Unit = js.native
   def calculateLayout(width: Double, height: Double, direction: YogaDirection): Unit = js.native
+  def calculateLayout(width: Double, height: Unit, direction: YogaDirection): Unit = js.native
+  def calculateLayout(width: Unit, height: Double): Unit = js.native
+  def calculateLayout(width: Unit, height: Double, direction: YogaDirection): Unit = js.native
+  def calculateLayout(width: Unit, height: Unit, direction: YogaDirection): Unit = js.native
   
   def copyStyle(node: YogaNode): Unit = js.native
   

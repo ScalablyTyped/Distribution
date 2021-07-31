@@ -2,39 +2,37 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a provisioned payment card for Apple Pay payments.
   */
-@js.native
 trait ApplePayPaymentPass extends StObject {
   
   /**
     * The activation state of the pass.
     */
-  var activationState: ApplePayPaymentPassActivationState = js.native
+  var activationState: ApplePayPaymentPassActivationState
   
   /**
     * The unique identifier for the device-specific account number.
     */
-  var deviceAccountIdentifier: js.UndefOr[String] = js.native
+  var deviceAccountIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * A version of the device account number suitable for display in your UI.
     */
-  var deviceAccountNumberSuffix: js.UndefOr[String] = js.native
+  var deviceAccountNumberSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the primary account number for the payment card.
     */
-  var primaryAccountIdentifier: String = js.native
+  var primaryAccountIdentifier: String
   
   /**
     * A version of the primary account number suitable for display in your UI.
     */
-  var primaryAccountNumberSuffix: String = js.native
+  var primaryAccountNumberSuffix: String
 }
 object ApplePayPaymentPass {
   

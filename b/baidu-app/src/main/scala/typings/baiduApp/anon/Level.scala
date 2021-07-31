@@ -2,10 +2,8 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Level extends StObject {
     * TRIM_MEMORY_RUNNING_LOW = 10
     * TRIM_MEMORY_RUNNING_CRITICAL = 15
     */
-  var level: Double = js.native
+  var level: Double
 }
 object Level {
   

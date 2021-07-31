@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 图片的本地临时文件列表
   *
   * 最低基础库： `1.2.0` */
-@js.native
 trait ImageFile extends StObject {
   
   /** 本地临时文件路径 (本地路径) */
-  var path: String = js.native
+  var path: String
   
   /** 本地临时文件大小，单位 B */
-  var size: Double = js.native
+  var size: Double
 }
 object ImageFile {
   

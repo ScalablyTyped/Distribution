@@ -9,7 +9,6 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,20 +37,19 @@ object mod {
   @js.native
   val StickyContainer: ComponentClass[HTMLAttributes[HTMLDivElement], ComponentState] = js.native
   
-  @js.native
   trait StickyChildArgs extends StObject {
     
-    var calculatedHeight: Double = js.native
+    var calculatedHeight: Double
     
-    var distanceFromBottom: Double = js.native
+    var distanceFromBottom: Double
     
-    var distanceFromTop: Double = js.native
+    var distanceFromTop: Double
     
-    var isSticky: Boolean = js.native
+    var isSticky: Boolean
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var wasSticky: Boolean = js.native
+    var wasSticky: Boolean
   }
   object StickyChildArgs {
     
@@ -91,32 +89,31 @@ object mod {
     }
   }
   
-  @js.native
   trait StickyProps extends StObject {
     
-    var bottomOffset: js.UndefOr[Double] = js.native
+    var bottomOffset: js.UndefOr[Double] = js.undefined
     
-    def children(args: StickyChildArgs): ReactElement = js.native
+    def children(args: StickyChildArgs): ReactElement
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableCompensation: js.UndefOr[Boolean] = js.native
+    var disableCompensation: js.UndefOr[Boolean] = js.undefined
     
-    var disableHardwareAcceleration: js.UndefOr[Boolean] = js.native
+    var disableHardwareAcceleration: js.UndefOr[Boolean] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var onStickyStateChange: js.UndefOr[js.Function1[/* isSticky */ Boolean, Unit]] = js.native
+    var onStickyStateChange: js.UndefOr[js.Function1[/* isSticky */ Boolean, Unit]] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var stickyClassName: js.UndefOr[String] = js.native
+    var stickyClassName: js.UndefOr[String] = js.undefined
     
-    var stickyStyle: js.UndefOr[js.Any] = js.native
+    var stickyStyle: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var topOffset: js.UndefOr[Double] = js.native
+    var topOffset: js.UndefOr[Double] = js.undefined
   }
   object StickyProps {
     

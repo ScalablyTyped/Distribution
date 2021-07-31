@@ -16,23 +16,21 @@ import typings.coinbaseCommerceNode.mod.Price
 import typings.coinbaseCommerceNode.mod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Block extends StObject {
     
-    var block: Confirmationsaccumulated = js.native
+    var block: Confirmationsaccumulated
     
-    var network: CryptoName = js.native
+    var network: CryptoName
     
-    var status: PaymentStatus = js.native
+    var status: PaymentStatus
     
-    var transaction_id: String = js.native
+    var transaction_id: String
     
-    var value: Crypto = js.native
+    var value: Crypto
   }
   object Block {
     
@@ -68,16 +66,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Confirmationsaccumulated extends StObject {
     
-    var confirmations_accumulated: Double = js.native
+    var confirmations_accumulated: Double
     
-    var confirmations_required: Double = js.native
+    var confirmations_required: Double
     
-    var hash: String = js.native
+    var hash: String
     
-    var height: Double = js.native
+    var height: Double
   }
   object Confirmationsaccumulated {
     
@@ -104,23 +101,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
     /**
       * Timeline entry context.
       */
-    var context: js.UndefOr[UNDERPAID | OVERPAID | DELAYED | MULTIPLE | MANUAL | OTHER] = js.native
+    var context: js.UndefOr[UNDERPAID | OVERPAID | DELAYED | MULTIPLE | MANUAL | OTHER] = js.undefined
     
     /**
       * Timeline entry status.
       */
-    var status: PaymentStatus = js.native
+    var status: PaymentStatus
     
     /**
       * Timeline entry timestamp.
       */
-    var time: Timestamp = js.native
+    var time: Timestamp
   }
   object Context {
     
@@ -147,12 +143,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Crypto extends StObject {
     
-    var crypto: Price[CryptoCurrency] = js.native
+    var crypto: Price[CryptoCurrency]
     
-    var local: Price[FiatCurrency] = js.native
+    var local: Price[FiatCurrency]
   }
   object Crypto {
     
@@ -173,32 +168,26 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var Accept: applicationSlashjson = js.native
+    var Accept: applicationSlashjson
     
-    var `Content-Type`: applicationSlashjson = js.native
+    var `Content-Type`: applicationSlashjson
     
-    var `User-Agent`: String = js.native
+    var `User-Agent`: String
     
-    var `X-CC-Api-Key`: String = js.native
+    var `X-CC-Api-Key`: String
     
-    var `X-CC-Version`: String = js.native
+    var `X-CC-Version`: String
   }
   object Dictkey {
     
     @scala.inline
-    def apply(
-      Accept: applicationSlashjson,
-      `Content-Type`: applicationSlashjson,
-      `User-Agent`: String,
-      `X-CC-Api-Key`: String,
-      `X-CC-Version`: String
-    ): Dictkey = {
-      val __obj = js.Dynamic.literal(Accept = Accept.asInstanceOf[js.Any])
-      __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
+    def apply(`User-Agent`: String, `X-CC-Api-Key`: String, `X-CC-Version`: String): Dictkey = {
+      val __obj = js.Dynamic.literal(Accept = "application/json")
+      __obj.updateDynamic("Content-Type")("application/json")
       __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
       __obj.updateDynamic("X-CC-Api-Key")(`X-CC-Api-Key`.asInstanceOf[js.Any])
       __obj.updateDynamic("X-CC-Version")(`X-CC-Version`.asInstanceOf[js.Any])
@@ -225,10 +214,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -247,18 +235,17 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<coinbase-commerce-node.coinbase-commerce-node.CryptoName, string>> */
-  @js.native
   trait PartialRecordCryptoNamest extends StObject {
     
-    var bitcoin: js.UndefOr[String] = js.native
+    var bitcoin: js.UndefOr[String] = js.undefined
     
-    var bitcoincash: js.UndefOr[String] = js.native
+    var bitcoincash: js.UndefOr[String] = js.undefined
     
-    var ethereum: js.UndefOr[String] = js.native
+    var ethereum: js.UndefOr[String] = js.undefined
     
-    var litecoin: js.UndefOr[String] = js.native
+    var litecoin: js.UndefOr[String] = js.undefined
     
-    var usdc: js.UndefOr[String] = js.native
+    var usdc: js.UndefOr[String] = js.undefined
   }
   object PartialRecordCryptoNamest {
     

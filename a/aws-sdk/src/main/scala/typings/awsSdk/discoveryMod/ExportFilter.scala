@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportFilter extends StObject {
   
   /**
     * Supported condition: EQUALS 
     */
-  var condition: Condition = js.native
+  var condition: Condition
   
   /**
     * A single ExportFilter name. Supported filters: agentId.
     */
-  var name: FilterName = js.native
+  var name: FilterName
   
   /**
     * A single agentId for a Discovery Agent. An agentId can be found using the DescribeAgents action. Typically an ADS agentId is in the form o-0123456789abcdef0.
     */
-  var values: FilterValues = js.native
+  var values: FilterValues
 }
 object ExportFilter {
   

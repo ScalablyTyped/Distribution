@@ -3,18 +3,22 @@
 
 Typings are for version 1.0.0-rc.7
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/credential-provider-cognito-identity/latest.svg)](https://www.npmjs.com/package/@aws-sdk/credential-provider-cognito-identity) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/credential-provid
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-cognito-identity |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 2 |
-| # downloads        | 1855597 |
+| # releases         | 69 |
+| # dependents       | 5 |
+| # downloads        | 5789269 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-cognito-identity)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fcredential-provider-cognito-identity)
     
 

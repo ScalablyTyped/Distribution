@@ -3,11 +3,12 @@ package typings.firebaseAuthTypes.mod
 import typings.firebaseAuthTypes.anon.DisplayName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends UserInfo {
+trait User
+  extends StObject
+     with UserInfo {
   
   def delete(): js.Promise[Unit] = js.native
   

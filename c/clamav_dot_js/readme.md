@@ -12,7 +12,7 @@ A node.js library for ClamAV.
 | Keywords           | clamav.js, clamav, clamd, daemon, virus, scan, node.js |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 40925 |
+| # downloads        | 48461 |
 | # stars            | 0 |
 
 ## Links

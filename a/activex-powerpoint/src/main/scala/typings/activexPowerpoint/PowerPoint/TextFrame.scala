@@ -6,46 +6,44 @@ import typings.activexOffice.Office.MsoTriState
 import typings.activexOffice.Office.MsoVerticalAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFrame extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoSize: PpAutoSize = js.native
+  var AutoSize: PpAutoSize
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def DeleteText(): Unit = js.native
+  def DeleteText(): Unit
   
-  val HasText: MsoTriState = js.native
+  val HasText: MsoTriState
   
-  var HorizontalAnchor: MsoHorizontalAnchor = js.native
+  var HorizontalAnchor: MsoHorizontalAnchor
   
-  var MarginBottom: Double = js.native
+  var MarginBottom: Double
   
-  var MarginLeft: Double = js.native
+  var MarginLeft: Double
   
-  var MarginRight: Double = js.native
+  var MarginRight: Double
   
-  var MarginTop: Double = js.native
+  var MarginTop: Double
   
-  var Orientation: MsoTextOrientation = js.native
+  var Orientation: MsoTextOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.TextFrame_typekey")
-  var PowerPointDotTextFrame_typekey: TextFrame = js.native
+  var PowerPointDotTextFrame_typekey: TextFrame
   
-  val Ruler: typings.activexPowerpoint.PowerPoint.Ruler = js.native
+  val Ruler: typings.activexPowerpoint.PowerPoint.Ruler
   
-  val TextRange: typings.activexPowerpoint.PowerPoint.TextRange = js.native
+  val TextRange: typings.activexPowerpoint.PowerPoint.TextRange
   
-  var VerticalAnchor: MsoVerticalAnchor = js.native
+  var VerticalAnchor: MsoVerticalAnchor
   
-  var WordWrap: MsoTriState = js.native
+  var WordWrap: MsoTriState
 }
 object TextFrame {
   

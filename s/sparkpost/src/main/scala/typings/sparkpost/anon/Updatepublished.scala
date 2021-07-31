@@ -2,13 +2,11 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Updatepublished extends StObject {
   
-  var update_published: js.UndefOr[Boolean] = js.native
+  var update_published: js.UndefOr[Boolean] = js.undefined
 }
 object Updatepublished {
   

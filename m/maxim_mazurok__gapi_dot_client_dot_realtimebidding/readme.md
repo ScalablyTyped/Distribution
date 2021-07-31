@@ -10,9 +10,9 @@ TypeScript typings for Real-time Bidding API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.realtimebidding |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 50 |
 | # dependents       | 1 |
-| # downloads        | 176 |
+| # downloads        | 3555 |
 | # stars            | 0 |
 
 ## Links

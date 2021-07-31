@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplatePlacementRequest extends StObject {
   
   /**
     * The affinity setting for an instance on a Dedicated Host.
     */
-  var Affinity: js.UndefOr[String] = js.native
+  var Affinity: js.UndefOr[String] = js.undefined
   
   /**
     * The Availability Zone for the instance.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the placement group for the instance.
     */
-  var GroupName: js.UndefOr[PlacementGroupName] = js.native
+  var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
   
   /**
     * The ID of the Dedicated Host for the instance.
     */
-  var HostId: js.UndefOr[DedicatedHostId] = js.native
+  var HostId: js.UndefOr[DedicatedHostId] = js.undefined
   
   /**
     * The ARN of the host resource group in which to launch the instances. If you specify a host resource group ARN, omit the Tenancy parameter or set it to host.
     */
-  var HostResourceGroupArn: js.UndefOr[String] = js.native
+  var HostResourceGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * The number of the partition the instance should launch in. Valid only if the placement group strategy is set to partition.
     */
-  var PartitionNumber: js.UndefOr[Integer] = js.native
+  var PartitionNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var SpreadDomain: js.UndefOr[String] = js.native
+  var SpreadDomain: js.UndefOr[String] = js.undefined
   
   /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware.
     */
-  var Tenancy: js.UndefOr[typings.awsSdk.ec2Mod.Tenancy] = js.native
+  var Tenancy: js.UndefOr[typings.awsSdk.ec2Mod.Tenancy] = js.undefined
 }
 object LaunchTemplatePlacementRequest {
   

@@ -2,35 +2,33 @@ package typings.logg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
-  def error(var_args: js.Any*): Unit = js.native
+  def error(var_args: js.Any*): Unit
   
-  def fine(var_args: js.Any*): Unit = js.native
+  def fine(var_args: js.Any*): Unit
   
-  def getLogLevel(): Double = js.native
+  def getLogLevel(): Double
   
-  def getParent(): Logger = js.native
+  def getParent(): Logger
   
-  def getWatchers(): js.Array[js.Function] = js.native
+  def getWatchers(): js.Array[js.Function]
   
-  def info(var_args: js.Any*): Unit = js.native
+  def info(var_args: js.Any*): Unit
   
-  def isLoggable(level: Double): Boolean = js.native
+  def isLoggable(level: Double): Boolean
   
-  def log(level: Double, var_args: js.Any*): Unit = js.native
+  def log(level: Double, var_args: js.Any*): Unit
   
-  def registerWatcher(watcher: js.Function1[/* logRecord */ String, Unit]): Unit = js.native
+  def registerWatcher(watcher: js.Function1[/* logRecord */ String, Unit]): Unit
   
-  def setLogLevel(level: Double): Unit = js.native
+  def setLogLevel(level: Double): Unit
   
-  def setParent(logger: Logger): Unit = js.native
+  def setParent(logger: Logger): Unit
   
-  def warn(var_args: js.Any*): Unit = js.native
+  def warn(var_args: js.Any*): Unit
 }
 object Logger {
   

@@ -2,19 +2,17 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoCodecSettings extends StObject {
   
-  var FrameCaptureSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureSettings] = js.native
+  var FrameCaptureSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureSettings] = js.undefined
   
-  var H264Settings: js.UndefOr[typings.awsSdk.medialiveMod.H264Settings] = js.native
+  var H264Settings: js.UndefOr[typings.awsSdk.medialiveMod.H264Settings] = js.undefined
   
-  var H265Settings: js.UndefOr[typings.awsSdk.medialiveMod.H265Settings] = js.native
+  var H265Settings: js.UndefOr[typings.awsSdk.medialiveMod.H265Settings] = js.undefined
   
-  var Mpeg2Settings: js.UndefOr[typings.awsSdk.medialiveMod.Mpeg2Settings] = js.native
+  var Mpeg2Settings: js.UndefOr[typings.awsSdk.medialiveMod.Mpeg2Settings] = js.undefined
 }
 object VideoCodecSettings {
   

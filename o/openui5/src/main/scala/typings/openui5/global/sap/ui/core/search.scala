@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object search {
@@ -10,7 +9,8 @@ object search {
   @JSGlobal("sap.ui.core.search.OpenSearchProvider")
   @js.native
   class OpenSearchProvider protected ()
-    extends typings.openui5.sap.ui.core.search.OpenSearchProvider {
+    extends StObject
+       with typings.openui5.sap.ui.core.search.OpenSearchProvider {
     /**
       * Constructor for a new search/OpenSearchProvider.Accepts an object literal <code>mSettings</code>
       * that defines initialproperty values, aggregated and associated objects as well as event handlers.See
@@ -26,7 +26,8 @@ object search {
   @JSGlobal("sap.ui.core.search.SearchProvider")
   @js.native
   class SearchProvider protected ()
-    extends typings.openui5.sap.ui.core.search.SearchProvider {
+    extends StObject
+       with typings.openui5.sap.ui.core.search.SearchProvider {
     /**
       * Constructor for a new search/SearchProvider.Accepts an object literal <code>mSettings</code> that
       * defines initialproperty values, aggregated and associated objects as well as event handlers.See

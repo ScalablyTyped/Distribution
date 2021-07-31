@@ -12,7 +12,7 @@ A Node.js module to convert text files with DOS line breaks to Unix line breaks,
 | Keywords           | dos2unix, unix2dos, crlf, lf, carriage return, line feed, newline, new line, line endings |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6364 |
+| # downloads        | 4952 |
 | # stars            | 2 |
 
 ## Links
